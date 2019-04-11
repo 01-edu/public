@@ -18,3 +18,9 @@ A clear and concise description of any alternative solutions or features you've 
 
 **Additional context**
 Add any other context or screenshots about the feature request here.
+
+**Priority**
+Add the correct label to your request: high, normal, low
+
+**Subject**
+Add the correct labels to your request: toad, onboarding, admin, intra, design
