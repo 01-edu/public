@@ -4,8 +4,6 @@
 
 Write a function `ListRemoveIf` that removes all elements that are equal to the `data_ref` introduced in the argument of the function.
 
-- In case the list is empty print the message `no data on list`.
-
 - Use pointers wen ever you can.
 
 
@@ -55,9 +53,6 @@ func main() {
 	link2 := &List{}
 	link3 := &List{}
 
-	fmt.Println("------answer-----")
-	ListRemoveIf(link3, 1)
-	fmt.Println()
 
 	fmt.Println("----normal state----")
 	student.ListPushBack(link2, 1)
@@ -93,9 +88,6 @@ And its output :
 ```console
 student@ubuntu:~/student/test$ go build
 student@ubuntu:~/student/test$ ./test
-------answer-----
-no data on list
-
 ----normal state----
 1 -> <nil>
 ------answer-----
