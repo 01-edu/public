@@ -1,27 +1,39 @@
-# How to create onboarding steps
+# Sign up & onboarding's Administration section - Modular steps management
 
 ## Usage
-> This documentation explains how to create steps in your onboarding. 2 kind of steps can be generated in a modular way:
-> * forms
-> * documents to sign
+> After their first authentication in the app, every candidate has to effectuate his **sign up** and his **onboarding**. The steps that compose the **sign up** and the **administration** section of the onboarding are: 
+> * Of two kinds: 
+>   * forms (identification, medical information, etc.)
+>   * documents to sign (general conditions, charts, regulations, etc.)
+> * Modular: you can add, update, delete and order it as you wish. 
 
-These steps are used for the "sign up" phase, and for the "administrative" part of the onboarding.
+> This documentation explains how to manage these steps. 
 
-## Description & examples
-The sign up phase and the administration part of the onboarding are related to major objects in the admin. all the steps for each of these two sections are children of these two big objects, that you can create, update, or delete, and order as you wish. 
-* The objects contained in the sign up phase are object of type **sign up**.
-* The objects contained in the administration part of the onboarding phase are object of type **onboarding**.
+## Create a step
 
-### Relate a step to a major object
-Every step is related to the major object you want to costum as a child. To create a child, you must:
+Every step that you want to create must :
+* Be related as a child to the correct parent object in the *Admin*
+  * Steps related to the Sign up -> *Admin* > *Objects* > *SignUp* > ***Sign Up*** 
+  * Steps related to the onboarding's Administration section -> *Admin* > *Objects* > *Onboarding* > ***Administration*** 
+* Be defined with the correct object **type**
+  * Steps related to the Sign up -> type **sign up**
+  * Steps related to the onboarding's Administration section -> type **onboarding**
+
+---
+
+To create a step, you must:
 1. Create a new object for your step in the admin (in *Admin* > *Add new object*)
    <img width="664" alt="Capture d’écran 2019-04-22 à 15 57 37" src="https://user-images.githubusercontent.com/35296671/56507169-6505a500-6518-11e9-89bb-04c7fd9b41ca.png">
    <img width="450" alt="Capture d’écran 2019-04-22 à 15 58 21" src="https://user-images.githubusercontent.com/35296671/56507180-6afb8600-6518-11e9-97a5-4dcff8f0a069.png">
    * The title of your object will be the title displayed for the step you're creating. Use a intellegible title for your user.
    * This object must have the same type as your major object ("signup" for the sign up phase, "onboarding" for the administration part of the onboarding)
+
+> Your step is then available in the *Admin*. You can find it in the section of its type (*SignUp* or *Onboarding*) or thanks to the search bar of the cursus object's page.
    
-2. Add this new object as a child of your major object
-   1. Edit the major object
+2. Add this new object as a child of your parent object
+   1. Edit the parent object (*Sign up* or *Administration*)
+      <img width="640" alt="Capture d’écran 2019-04-22 à 19 24 23" src="https://user-images.githubusercontent.com/35296671/56517407-cb98bc00-6534-11e9-98d6-a2b1c0193a38.png">
+      <img width="640" alt="Capture d’écran 2019-04-22 à 19 24 10" src="https://user-images.githubusercontent.com/35296671/56517421-d0f60680-6534-11e9-86ef-97fb9e59786e.png">
    2. Go to *Children* > *Add a child*
       ![add child to major object](https://user-images.githubusercontent.com/35296671/56506977-de50c800-6517-11e9-9c71-d19a1ec4e5cd.png)
    3. Set up the new child:
@@ -29,17 +41,23 @@ Every step is related to the major object you want to costum as a child. To crea
       * Select you child in the select input
       * Click on "ADD"
 
-### Settings for a form step
-> In the child object you've created, 2 attributes must be filled:
+> Your step is then related to its parent. You can see it in the *Children* section of the parent object. There, you can now : 
+> * Delete the step as a child of its parent (the actual object of your step won't be deleted)
+> * Reorder it in the children's list, by dragging it to the place you cant
+> * Go to update its settings by clicking on the eye of its reference (it will redirect you to the actual object of your step).
+<img width="1229" alt="Capture d’écran 2019-04-22 à 19 51 12" src="https://user-images.githubusercontent.com/35296671/56518936-a1e19400-6538-11e9-81c7-520ffd365cff.png">
+
+## Settings for a form step
+> In the step object you've created, 2 attributes must be filled:
 > 1. subtype
 > 2. form
 
-To set up the child object you've created with these elements:
-1. Edit you child object
-2. Go to *Object attributes*
+### Description
+###### Edit the step object you've created :
+1. Go to *Object attributes*
    <img width="1073" alt="Capture d’écran 2019-04-22 à 15 59 33" src="https://user-images.githubusercontent.com/35296671/56507445-3936ef00-6519-11e9-90c8-d85056e9330b.png">
-3. Add the attributes:
-   * Add a new key **subtype** of type `String` with the value 'onb-adm-form-generator'
+2. Add the attributes:
+   * Add a new key **subtype** of type `String` with the exact value 'onb-adm-form-generator'
    * Add a new key **form** of type `Object` 
      * The form you're creating can have several sections. Each section is displayed with a title, and its inputs. 
        * The submission of the form will check the required inputs of all the sections you've created. 
@@ -48,103 +66,14 @@ To set up the child object you've created with these elements:
        * An **inputs** key of type `Object`, which will contain all the inputs of the section. For each input you want to add, you must set up the input as this :
          * Add a new `Object` element in the "inputs" object. The key of this object will be used as the "name" attribute of your input. The values will be considered as the props of your input.
 
-Set up of an input props:
+###### Set up of an input props:
 * You must declare a **type** key of type `String`, wich define the type of your input : `tel`, `text`, `date`, `select`, `radio`, `switch`, `checkbox`, `textarea`. 
 * Then you can fill the props you need for your input, according to its type : `placeholder`, `id`, `required`, `label`, `items`, `emptyItems`, `index`, etc.
 
-Here are examples of the structure the form attribute could have, with two sections and an example of set up for every kind of input type:
-
-```javascript
-const formStepAttributes = {
-  subtype: "onb-adm-form",
-  form: {
-    section1: {
-      title: "My section title",
-      inputs: {
-        firstName: {
-          index: 0,
-          placeholder: 'First name',
-          type: 'text',
-          required: true,
-        },
-        tel: {
-          index: 1,
-          required: true,
-          type: 'tel',
-          label: 'Phone number',
-          placeholder: '+333 33 33 33 33',
-          pattern: '[+][3][0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}',
-        },
-        medicalInfo: {
-          label: 'Medical informations',
-          index: 6,
-          placeholder: 'Medical Informations',
-          type: 'textarea',
-        },
-        dateOfBirth: {
-          index: 2,
-          required: true,
-          type: 'date',
-          label: 'Date of birth',
-          value: '2000-01-01',
-        },
-        gender: {
-          index: 3,
-          type: 'select',
-          id: 'genders',
-          required: true,
-          emptyItem: { label: 'Select your gender' },
-          items: [
-            { label: 'Male', data: 'male' },
-            { label: 'Female', data: 'female' },
-          ],
-        },
-        environment: {
-          index: 4,
-          type: 'radio',
-          required: true,
-          label: 'Which environment do you live in ?',
-          inlineBlock: true,
-          items: [
-            { label: 'City', data: 'city' },
-            { label: 'Countryside', data: 'countryside' },
-          ],
-        },
-        programmingAbilities: {
-          index: 5,
-          type: 'switch',
-          label: 'I am new in programming',
-          value: true,
-        },
-        generalContions: {
-          index: 7,
-          type: 'checkbox',
-          label: 'I have read and I accept the general conditions',
-          value: false,
-        },
-      },
-    },
-    section2: {
-      title: "My second section title",
-      inputs: {
-        firstName: {
-          index: 0,
-          placeholder: 'First name',
-          type: 'text',
-          required: true,
-        }
-      }
-    }
-  }
-}
-```
-
-This form step would look like this:
-![form step example](https://user-images.githubusercontent.com/35296671/56503976-012aae80-650f-11e9-82c8-dd7d026b6eb1.png)
-
-NB: 
+###### Important indication: 
 * The **index** property is used to order your inputs. It won't be spread in the input.
 * The **type** property is resquired. It will be used to determine the kind of input we must generate. It is spread in the input only if the input type attribute is required (type 'tel' or 'text' for example, but not for type 'select' - in this case, we will generate a select element)
+  * We're creating a special type 'countries' (select displaying all the countries). Documentation will be updated as soon as it's available.
 * Don't declare an **onChange**, it's handled by the app
 * Each input type has its own attributes. You can check how to set up your inputs hey : 
   * [textInput documentation](https://alem.01-edu.org/design/Components/FormInputs/TextInput) - used for inputs type 'text', 'tel', and 'date'
@@ -155,14 +84,110 @@ NB:
   * [checkbox documentation](https://alem.01-edu.org/design/Components/FormControls/Checkbox)
 * For switch and checkbox inputs type, you have to set the default value as a boolean property named **value**.
 
-### Settings for a document to sign step
+### Examples
+
+Here is an example of the form step's attributes. It presents a form with two sections, and an example of each kind of input type. 
+NB : this example object will soon be provided in the admin.
+
+```json
+{
+  "subtype": "onb-adm-form",
+  "form": {
+    "section1": {
+      "title": "My section title",
+      "inputs": {
+        "firstName": {
+          "index": 0,
+          "placeholder": "First name",
+          "type": "text",
+          "required": true
+        },
+        "tel": {
+          "index": 1,
+          "required": true,
+          "type": "tel",
+          "label": "Phone number",
+          "placeholder": "+333 33 33 33 33",
+          "pattern": "[+][3][0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}"
+        },
+        "medicalInfo": {
+          "label": "Medical informations",
+          "index": 6,
+          "placeholder": "Medical Informations",
+          "type": "textarea"
+        },
+        "dateOfBirth": {
+          "index": 2,
+          "required": true,
+          "type": "date",
+          "label": "Date of birth",
+          "value": "2000-01-01"
+        },
+        "gender": {
+          "index": 3,
+          "type": "select",
+          "id": "genders",
+          "required": true,
+          "emptyItem": { "label": "Select your gender" },
+          "items": [
+            { "label": "Male", "data": "male" },
+            { "label": "Female", "data": "female" }
+          ]
+        },
+        "environment": {
+          "index": 4,
+          "type": "radio",
+          "required": true,
+          "label": "Which environment do you live in ?",
+          "inlineBlock": true,
+          "items": [
+            { "label": "City", "data": "city" },
+            { "label": "Countryside", "data": "countryside" }
+          ]
+        },
+        "programmingAbilities": {
+          "index": 5,
+          "type": "switch",
+          "label": "I am new in programming",
+          "value": true
+        },
+        "generalContions": {
+          "index": 7,
+          "type": "checkbox",
+          "label": "I have read and I accept the general conditions",
+          "value": false
+        }
+      }
+    },
+    "section2": {
+      "title": "My second section title",
+      "inputs": {
+        "firstName": {
+          "index": 0,
+          "placeholder": "First name",
+          "type": "text",
+          "required": true
+        }
+      }
+    }
+  }
+}
+```
+
+This 'form' step would look like this:
+
+![form step example](https://user-images.githubusercontent.com/35296671/56503976-012aae80-650f-11e9-82c8-dd7d026b6eb1.png)
+
+## Settings for a document to sign step
 > In the child object you've created, 2 attributes must be filled:
 > 1. subtype
 > 2. text
 > 3. buttonText (facultative)
 > 4. checkbox (facultative)
 
-To set up the child object you've created with these elements:
+### Description
+
+###### To set up the child object you've created with these elements:
 1. Edit you child object
 2. Go to *Object attributes*
 3. Add the attributes:
@@ -175,21 +200,24 @@ To set up the child object you've created with these elements:
      * A **name** key of type `String`
      * Then you can add all the properties you want to your checkbox.
 
+### Example
+
 Here is an example of the structure a 'document to sign' step could have:
 
-```javascript
-const signStepExample = {
-  subtype: "onb-adm-sign",
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare non sem eu pretium. Integer porttitor risus eget nibh iaculis, ac lacinia orci dictum. Nunc ullamcorper consequat enim in posuere. Aliquam volutpat est odio, vel maximus arcu maximus sit amet. Donec ultricies faucibus magna id luctus. Duis et dapibus elit. In vestibulum ipsum erat, at commodo tortor convallis vel. Nunc ut ultrices nulla. Etiam lorem justo, consequat a consectetur a, porttitor non turpis. Mauris eu mollis nisl, id dignissim quam. Curabitur condimentum sollicitudin rutrum. Aenean blandit, arcu nec ullamcorper rhoncus, lectus sem lacinia lorem, venenatis dignissim velit mi et sapien. Nullam posuere augue ut magna ullamcorper dignissim. Ut rhoncus sapien vel nulla commodo finibus. Cras non leo vel urna finibus volutpat. Praesent et ex eget diam tincidunt suscipit. Phasellus bibendum neque vel placerat iaculis. Vestibulum bibendum ultrices ipsum, non sodales lectus. Cras eget orci eget elit blandit scelerisque at ut nulla. Integer ligula eros, eleifend quis sodales a, porttitor sit amet neque. Fusce mollis magna at lectus varius, quis suscipit mi cursus. Etiam id imperdiet metus, in malesuada quam. Aliquam facilisis nunc non sapien condimentum, quis iaculis nisl auctor. Nunc lorem sapien, interdum vel efficitur ac, dapibus a diam. Ut ante urna, sodales in bibendum vel, lacinia ut mauris. In vel placerat leo. In libero dui, tincidunt at sem id, faucibus sollicitudin elit.",
-  buttonText: "Sign chart",
-  checkbox: {
-    name:"acceptChart",
-    label:"I have read and accepted the Chart 01",
-    required:true
-  },
+```json
+{
+  "subtype": "onb-adm-sign",
+  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare non sem eu pretium. Integer porttitor risus eget nibh iaculis, ac lacinia orci dictum. Nunc ullamcorper consequat enim in posuere. Aliquam volutpat est odio, vel maximus arcu maximus sit amet. Donec ultricies faucibus magna id luctus. Duis et dapibus elit. In vestibulum ipsum erat, at commodo tortor convallis vel. Nunc ut ultrices nulla. Etiam lorem justo, consequat a consectetur a, porttitor non turpis. Mauris eu mollis nisl, id dignissim quam. Curabitur condimentum sollicitudin rutrum. Aenean blandit, arcu nec ullamcorper rhoncus, lectus sem lacinia lorem, venenatis dignissim velit mi et sapien. Nullam posuere augue ut magna ullamcorper dignissim. Ut rhoncus sapien vel nulla commodo finibus. Cras non leo vel urna finibus volutpat. Praesent et ex eget diam tincidunt suscipit. Phasellus bibendum neque vel placerat iaculis. Vestibulum bibendum ultrices ipsum, non sodales lectus. Cras eget orci eget elit blandit scelerisque at ut nulla. Integer ligula eros, eleifend quis sodales a, porttitor sit amet neque. Fusce mollis magna at lectus varius, quis suscipit mi cursus. Etiam id imperdiet metus, in malesuada quam. Aliquam facilisis nunc non sapien condimentum, quis iaculis nisl auctor. Nunc lorem sapien, interdum vel efficitur ac, dapibus a diam. Ut ante urna, sodales in bibendum vel, lacinia ut mauris. In vel placerat leo. In libero dui, tincidunt at sem id, faucibus sollicitudin elit.",
+  "buttonText": "Sign chart",
+  "checkbox": {
+    "name":"acceptChart",
+    "label":"I have read and accepted the Chart 01",
+    "required":true
+  }
 }
 ```
 
 This 'document to sign' step would look like this:
+
 ![document to sign step example](https://user-images.githubusercontent.com/35296671/56504782-8f079900-6511-11e9-9a0e-bb638b6d7d03.png)
 
