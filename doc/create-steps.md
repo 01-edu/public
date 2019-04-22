@@ -21,21 +21,28 @@ Every step that you want to create must :
 
 ---
 
-To create a step, you must:
+#### To create a step, you must:
 1. Create a new object for your step in the admin (in *Admin* > *Add new object*)
+
    <img width="664" alt="Capture d’écran 2019-04-22 à 15 57 37" src="https://user-images.githubusercontent.com/35296671/56507169-6505a500-6518-11e9-89bb-04c7fd9b41ca.png">
    <img width="450" alt="Capture d’écran 2019-04-22 à 15 58 21" src="https://user-images.githubusercontent.com/35296671/56507180-6afb8600-6518-11e9-97a5-4dcff8f0a069.png">
+
    * The title of your object will be the title displayed for the step you're creating. Use a intellegible title for your user.
    * This object must have the same type as your major object ("signup" for the sign up phase, "onboarding" for the administration part of the onboarding)
 
 > Your step is then available in the *Admin*. You can find it in the section of its type (*SignUp* or *Onboarding*) or thanks to the search bar of the cursus object's page.
-   
+ 
+
 2. Add this new object as a child of your parent object
+
    1. Edit the parent object (*Sign up* or *Administration*)
+
       <img width="640" alt="Capture d’écran 2019-04-22 à 19 24 23" src="https://user-images.githubusercontent.com/35296671/56517407-cb98bc00-6534-11e9-98d6-a2b1c0193a38.png">
       <img width="640" alt="Capture d’écran 2019-04-22 à 19 24 10" src="https://user-images.githubusercontent.com/35296671/56517421-d0f60680-6534-11e9-86ef-97fb9e59786e.png">
+   
    2. Go to *Children* > *Add a child*
       ![add child to major object](https://user-images.githubusercontent.com/35296671/56506977-de50c800-6517-11e9-9c71-d19a1ec4e5cd.png)
+   
    3. Set up the new child:
       * Enter its name in the input "Add a child name"
       * Select you child in the select input
@@ -53,10 +60,14 @@ To create a step, you must:
 > 2. form
 
 ### Description
-###### Edit the step object you've created :
+
+#### Edit the step object you've created :
 1. Go to *Object attributes*
+
    <img width="1073" alt="Capture d’écran 2019-04-22 à 15 59 33" src="https://user-images.githubusercontent.com/35296671/56507445-3936ef00-6519-11e9-90c8-d85056e9330b.png">
+
 2. Add the attributes:
+
    * Add a new key **subtype** of type `String` with the exact value 'onb-adm-form-generator'
    * Add a new key **form** of type `Object` 
      * The form you're creating can have several sections. Each section is displayed with a title, and its inputs. 
@@ -66,11 +77,11 @@ To create a step, you must:
        * An **inputs** key of type `Object`, which will contain all the inputs of the section. For each input you want to add, you must set up the input as this :
          * Add a new `Object` element in the "inputs" object. The key of this object will be used as the "name" attribute of your input. The values will be considered as the props of your input.
 
-###### Set up of an input props:
+#### Set up of an input props:
 * You must declare a **type** key of type `String`, wich define the type of your input : `tel`, `text`, `date`, `select`, `radio`, `switch`, `checkbox`, `textarea`. 
 * Then you can fill the props you need for your input, according to its type : `placeholder`, `id`, `required`, `label`, `items`, `emptyItems`, `index`, etc.
 
-###### Important indication: 
+#### Important indication: 
 * The **index** property is used to order your inputs. It won't be spread in the input.
 * The **type** property is resquired. It will be used to determine the kind of input we must generate. It is spread in the input only if the input type attribute is required (type 'tel' or 'text' for example, but not for type 'select' - in this case, we will generate a select element)
   * We're creating a special type 'countries' (select displaying all the countries). Documentation will be updated as soon as it's available.
