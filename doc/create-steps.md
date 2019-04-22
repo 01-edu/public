@@ -27,6 +27,7 @@ Every step that you want to create must :
    <img width="664" alt="Capture d’écran 2019-04-22 à 15 57 37" src="https://user-images.githubusercontent.com/35296671/56507169-6505a500-6518-11e9-89bb-04c7fd9b41ca.png">
    <img width="450" alt="Capture d’écran 2019-04-22 à 15 58 21" src="https://user-images.githubusercontent.com/35296671/56507180-6afb8600-6518-11e9-97a5-4dcff8f0a069.png">
 
+
    * The title of your object will be the title displayed for the step you're creating. Use a intellegible title for your user.
    * This object must have the same type as your major object ("signup" for the sign up phase, "onboarding" for the administration part of the onboarding)
 
@@ -41,6 +42,7 @@ Every step that you want to create must :
       <img width="640" alt="Capture d’écran 2019-04-22 à 19 24 10" src="https://user-images.githubusercontent.com/35296671/56517421-d0f60680-6534-11e9-86ef-97fb9e59786e.png">
    
    2. Go to *Children* > *Add a child*
+
       ![add child to major object](https://user-images.githubusercontent.com/35296671/56506977-de50c800-6517-11e9-9c71-d19a1ec4e5cd.png)
    
    3. Set up the new child:
@@ -198,10 +200,11 @@ This 'form' step would look like this:
 
 ### Description
 
-###### To set up the child object you've created with these elements:
-1. Edit you child object
+#### To set up the child object you've created with these elements:
+
+1. Edit you step object
 2. Go to *Object attributes*
-3. Add the attributes:
+3. Add the following attributes:
    * Add a new key **subtype** of type `String` with the value 'onb-adm-sign'
    * Add a new key **text** of type `String` with all the text of your document to sign as value
    * Add a new key **buttonText** of type `String` with the text you want to display in the submit button of your step
@@ -211,7 +214,7 @@ This 'form' step would look like this:
      * A **name** key of type `String`
      * Then you can add all the properties you want to your checkbox.
 
-### Example
+### Examples
 
 Here is an example of the structure a 'document to sign' step could have:
 
