@@ -34,7 +34,7 @@ To set up the child object you've created with these elements :
 1. Edit you child object
 2. Go to "Object attributes"
 3. Add the attributes :
-  1. Add a new key "subtype" of type `<String>` with the value 'onb-adm-form'
+  1. Add a new key "subtype" of type `<String>` with the value 'onb-adm-form-generator'
   2. Add a new key "form" of type `<Object>` 
     * The form you're creating can have several sections. Each section is displayed with a title, and its inputs. 
     NB : The submission of the form will check the required inputs of all the sections you've created. 
