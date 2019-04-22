@@ -61,12 +61,7 @@ func hasura(query string, variables interface{}, data interface{}) (err error) {
 		return errors.New(http.StatusText(resp.StatusCode))
 	}
 
-	gqlQuery := GraphqlQuery{Data: data}
-	err = json.Unmarshal(b, &gqlQuery)
-	if err != nil {
-		return
-	}
-	return
+	return json.Unmarshal(b, &GraphqlQuery{Data: data})
 }
 
 type User struct {
