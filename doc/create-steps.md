@@ -26,9 +26,9 @@ Every step is related to the major object you want to costum as a child. To crea
      * Click on "ADD"
 
 ### Settings for a form step
-In the child object you've created, 2 attributes must be filled:
-1. subtype
-2. form
+> In the child object you've created, 2 attributes must be filled:
+> 1. subtype
+> 2. form
 
 To set up the child object you've created with these elements:
 1. Edit you child object
@@ -150,11 +150,11 @@ NB:
 * For switch and checkbox inputs type, you have to set the default value as a boolean property named "value".
 
 ### Settings for a document to sign step
-In the child object you've created, 2 attributes must be filled:
-1. subtype
-2. text
-3. buttonText (facultative)
-4. checkbox (facultative)
+> In the child object you've created, 2 attributes must be filled:
+> 1. subtype
+> 2. text
+> 3. buttonText (facultative)
+> 4. checkbox (facultative)
 
 To set up the child object you've created with these elements:
 1. Edit you child object
