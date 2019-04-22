@@ -135,7 +135,7 @@ const formStepAttributes = {
 ```
 
 This for step would look like this :
-
+![form step example](https://user-images.githubusercontent.com/35296671/56503976-012aae80-650f-11e9-82c8-dd7d026b6eb1.png)
 
 NB : 
 * The index property is used to order your inputs. It won't be spread in the input.
