@@ -134,7 +134,7 @@ const formStepAttributes = {
 }
 ```
 
-This for step would look like this :
+This form step would look like this :
 ![form step example](https://user-images.githubusercontent.com/35296671/56503976-012aae80-650f-11e9-82c8-dd7d026b6eb1.png)
 
 NB : 
@@ -150,3 +150,40 @@ NB :
 * For switch and checkbox inputs type, you have to set the default value as a boolean property named "value".
 
 ### Settings for a document to sign step
+In the child object you've created, 2 attributes must be filled:
+1. subtype
+2. text
+3. buttonText
+4. checkbox (facultative)
+
+To set up the child object you've created with these elements :
+1. Edit you child object
+2. Go to "Object attributes"
+3. Add the attributes :
+  1. Add a new key "subtype" of type `<String>` with the value 'onb-adm-sign'
+  2. Add a new key "text" of type `<String>` with all the text of your document to sign as value
+  3. Add a new key "buttonText" of type `<String>` with the text you want to display in the submit button of your step
+  4. Add a new key "checkbox" of type `<Object>` if you want to force your user to click on a checkbox (ex: 'I have read and accepted the conditions') before validating his document. In the checkbox object, you should define :
+    * A "label" key of type `<String>`, with the text you want to associate to the checkbox
+    * A "required" key of type `<Boolean>`, set at true if you want to force the user to check it
+    * A "name" key of type `<String>`
+    * Then you can add all the properties you want to your checkbox.
+
+Here is an example of the structure a 'document to sign' step could have :
+
+```javascript
+const signStepExample = {
+  subtype: "onb-adm-sign",
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare non sem eu pretium. Integer porttitor risus eget nibh iaculis, ac lacinia orci dictum. Nunc ullamcorper consequat enim in posuere. Aliquam volutpat est odio, vel maximus arcu maximus sit amet. Donec ultricies faucibus magna id luctus. Duis et dapibus elit. In vestibulum ipsum erat, at commodo tortor convallis vel. Nunc ut ultrices nulla. Etiam lorem justo, consequat a consectetur a, porttitor non turpis. Mauris eu mollis nisl, id dignissim quam. Curabitur condimentum sollicitudin rutrum. Aenean blandit, arcu nec ullamcorper rhoncus, lectus sem lacinia lorem, venenatis dignissim velit mi et sapien. Nullam posuere augue ut magna ullamcorper dignissim. Ut rhoncus sapien vel nulla commodo finibus. Cras non leo vel urna finibus volutpat. Praesent et ex eget diam tincidunt suscipit. Phasellus bibendum neque vel placerat iaculis. Vestibulum bibendum ultrices ipsum, non sodales lectus. Cras eget orci eget elit blandit scelerisque at ut nulla. Integer ligula eros, eleifend quis sodales a, porttitor sit amet neque. Fusce mollis magna at lectus varius, quis suscipit mi cursus. Etiam id imperdiet metus, in malesuada quam. Aliquam facilisis nunc non sapien condimentum, quis iaculis nisl auctor. Nunc lorem sapien, interdum vel efficitur ac, dapibus a diam. Ut ante urna, sodales in bibendum vel, lacinia ut mauris. In vel placerat leo. In libero dui, tincidunt at sem id, faucibus sollicitudin elit.",
+  buttonText: "Sign chart",
+  checkbox: {
+    name:"acceptChart",
+    label:"I have read and accepted the Chart 01",
+    required:true
+  },
+}
+```
+
+This 'document to sign' step would look like this :
+![document to sign step example](https://user-images.githubusercontent.com/35296671/56504782-8f079900-6511-11e9-9a0e-bb638b6d7d03.png)
+
