@@ -15,15 +15,19 @@ The objects contained in the administration part of the onboarding phase are obj
 ### Relate a step to a major object
 Every step is related to the major object you want to costum as a child. To create a child, you must:
 1. Create a new object for your step in the admin (in Admin > "Add new object")
+   <img width="664" alt="Capture d’écran 2019-04-22 à 15 57 37" src="https://user-images.githubusercontent.com/35296671/56507169-6505a500-6518-11e9-89bb-04c7fd9b41ca.png">
+   <img width="450" alt="Capture d’écran 2019-04-22 à 15 58 21" src="https://user-images.githubusercontent.com/35296671/56507180-6afb8600-6518-11e9-97a5-4dcff8f0a069.png">
    * The title of your object will be the title displayed for the step you're creating. Use a intellegible title for your user.
    * This object must have the same type as your major object ("signup" for the sign up phase, "onboarding" for the administration part of the onboarding)
+   
 2. Add this new object as a child of your major object
-  1. Edit the major object
-  2. Go to "Children" > "Add a child"
-  3. Set up the new child:
-     * Enter its name in the input "Add a child name"
-     * Select you child in the select input
-     * Click on "ADD"
+   1. Edit the major object
+   2. Go to "Children" > "Add a child"
+      ![add child to major object](https://user-images.githubusercontent.com/35296671/56506977-de50c800-6517-11e9-9c71-d19a1ec4e5cd.png)
+   3. Set up the new child:
+      * Enter its name in the input "Add a child name"
+      * Select you child in the select input
+      * Click on "ADD"
 
 ### Settings for a form step
 > In the child object you've created, 2 attributes must be filled:
@@ -33,6 +37,7 @@ Every step is related to the major object you want to costum as a child. To crea
 To set up the child object you've created with these elements:
 1. Edit you child object
 2. Go to "Object attributes"
+   <img width="1073" alt="Capture d’écran 2019-04-22 à 15 59 33" src="https://user-images.githubusercontent.com/35296671/56507445-3936ef00-6519-11e9-90c8-d85056e9330b.png">
 3. Add the attributes:
    * Add a new key **"subtype"** of type `String` with the value 'onb-adm-form-generator'
    * Add a new key **"form"** of type `Object` 
