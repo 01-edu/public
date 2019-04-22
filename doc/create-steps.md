@@ -28,8 +28,9 @@ Every step that you want to create must :
    <img width="450" alt="Capture d’écran 2019-04-22 à 15 58 21" src="https://user-images.githubusercontent.com/35296671/56507180-6afb8600-6518-11e9-97a5-4dcff8f0a069.png">
 
 
-   * The title of your object will be the title displayed for the step you're creating. Use a intellegible title for your user.
-   * This object must have the same type as your major object ("signup" for the sign up phase, "onboarding" for the administration part of the onboarding)
+   * The title of your object will be the title displayed to your candidates (for the step you're creating). Use a intellegible title for your user.
+     * NB : you can always edit it in the *Admin*
+   * This object must have the same type as its future parent object ("signup" or "onboarding").
 
 > Your step is then available in the *Admin*. You can find it in the section of its type (*SignUp* or *Onboarding*) or thanks to the search bar of the cursus object's page.
  
@@ -47,7 +48,7 @@ Every step that you want to create must :
    
    3. Set up the new child:
       * Enter its name in the input "Add a child name"
-      * Select you child in the select input
+      * Select your step object in the select input
       * Click on "ADD"
 
 > Your step is then related to its parent. You can see it in the *Children* section of the parent object. There, you can now : 
@@ -73,29 +74,30 @@ Every step that you want to create must :
    * Add a new key **subtype** of type `String` with the exact value 'onb-adm-form-generator'
    * Add a new key **form** of type `Object` 
      * The form you're creating can have several sections. Each section is displayed with a title, and its inputs. 
-       * The submission of the form will check the required inputs of all the sections you've created. 
+       * NB : The submission of the form will check the required inputs of all the sections you've created for the form. 
      * To create a section, add a new key to your form object, of type `Object`, that contains :
-       * A **title** key of type `String`. The value of this property will be the title displayed in the top of your form section. If you have only one section in your form step, and you don't need a section title, you don't have to set up this property.
+       * A **title** key of type `String`. The value of this property will be the title displayed in the top of your form section. 
+         * If you have only one section in your form step, and you don't need a section title, you don't have to set up this property.
        * An **inputs** key of type `Object`, which will contain all the inputs of the section. For each input you want to add, you must set up the input as this :
          * Add a new `Object` element in the "inputs" object. The key of this object will be used as the "name" attribute of your input. The values will be considered as the props of your input.
 
 #### Set up of an input props:
-* You must declare a **type** key of type `String`, wich define the type of your input : `tel`, `text`, `date`, `select`, `radio`, `switch`, `checkbox`, `textarea`. 
+* You must declare a **type** key of type `String`, wich define the type of your input : `tel`, `text`, `date`, `select`, `radio`, `switch`, `checkbox`, `textarea` (and soon a special type `countries`). 
 * Then you can fill the props you need for your input, according to its type : `placeholder`, `id`, `required`, `label`, `items`, `emptyItems`, `index`, etc.
 
 #### Important indication: 
-* The **index** property is used to order your inputs. It won't be spread in the input.
+* The **index** property is used to order your inputs. It won't be spread in the input. But be careful not to set the same index two times.
 * The **type** property is resquired. It will be used to determine the kind of input we must generate. It is spread in the input only if the input type attribute is required (type 'tel' or 'text' for example, but not for type 'select' - in this case, we will generate a select element)
-  * We're creating a special type 'countries' (select displaying all the countries). Documentation will be updated as soon as it's available.
-* Don't declare an **onChange**, it's handled by the app
-* Each input type has its own attributes. You can check how to set up your inputs hey : 
+  * At the moment, we're creating a special type 'countries' (select displaying all the countries). Documentation will be updated as soon as it's available.
+* Don't declare an **onChange** in your props, the event is handled by the app. It would break the functioning of the form.
+* For switch and checkbox inputs type, you have to set the default value as a boolean property named **value**.
+* For more informations, each input type has its own attributes. You can check how to set up your inputs in the design documentation : 
   * [textInput documentation](https://alem.01-edu.org/design/Components/FormInputs/TextInput) - used for inputs type 'text', 'tel', and 'date'
   * [textArea documentation](https://alem.01-edu.org/design/Components/FormInputs/TextArea)
   * [select documentation](https://alem.01-edu.org/design/Components/FormControls/Select)
   * [radio button documentation](https://alem.01-edu.org/design/Components/FormControls/Radio)
   * [switch documentation](https://alem.01-edu.org/design/Components/FormControls/Switch)
   * [checkbox documentation](https://alem.01-edu.org/design/Components/FormControls/Checkbox)
-* For switch and checkbox inputs type, you have to set the default value as a boolean property named **value**.
 
 ### Examples
 
@@ -205,14 +207,14 @@ This 'form' step would look like this:
 1. Edit you step object
 2. Go to *Object attributes*
 3. Add the following attributes:
-   * Add a new key **subtype** of type `String` with the value 'onb-adm-sign'
-   * Add a new key **text** of type `String` with all the text of your document to sign as value
-   * Add a new key **buttonText** of type `String` with the text you want to display in the submit button of your step
-   * Add a new key **checkbox** of type `Object` if you want to force your user to click on a checkbox (ex: 'I have read and accepted the conditions') before validating his document. In the checkbox object, you should define:
+   * Add a new key **subtype** of type `String` with the exact value 'onb-adm-sign'
+   * Add a new key **text** of type `String` with the text of your document to sign as value
+   * Add a new key **buttonText** of type `String` with the text you want to display in the submit button of your step. If you don't fill this property, the default value if 'Sign'.
+   * Add a new key **checkbox** of type `Object`, if you want to force your user to click on a checkbox before validating his document (ex: 'I have read and accepted the conditions'). In the checkbox object, you should define:
      * A **label** key of type `String`, with the text you want to associate to the checkbox
      * A **required** key of type `Boolean`, set at true if you want to force the user to check it
      * A **name** key of type `String`
-     * Then you can add all the properties you want to your checkbox.
+     * Then you can add all other properties you want to your checkbox.
 
 ### Examples
 
