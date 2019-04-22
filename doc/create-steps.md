@@ -34,18 +34,18 @@ To set up the child object you've created with these elements :
 1. Edit you child object
 2. Go to "Object attributes"
 3. Add the attributes :
-  1. Add a new key "subtype" of type `<String>` with the value 'onb-adm-form-generator'
-  2. Add a new key "form" of type `<Object>` 
+  1. Add a new key "subtype" of type `String` with the value 'onb-adm-form-generator'
+  2. Add a new key "form" of type `Object` 
     * The form you're creating can have several sections. Each section is displayed with a title, and its inputs. 
     NB : The submission of the form will check the required inputs of all the sections you've created. 
-    * To create a section, add a new key to your form object, of type `<Object>`, that contains :
-      1. A key "title" of type `<String>`. The value of this property will be the title displayed in the top of your form section. If you have only one section in your form step, and you don't need a section title, you don't have to set up this property.
-      2. An "inputs" key of type `<Object>`, which will contain all the inputs of the section. For each input you want to add, you must set up the input as this :
-        * Add a new `<Object>` element in the "inputs" object. The key of this object will be used as the "name" attribute of your input. The values will be considered as the props of your input.
+    * To create a section, add a new key to your form object, of type `Object`, that contains :
+      1. A key "title" of type `String`. The value of this property will be the title displayed in the top of your form section. If you have only one section in your form step, and you don't need a section title, you don't have to set up this property.
+      2. An "inputs" key of type `Object`, which will contain all the inputs of the section. For each input you want to add, you must set up the input as this :
+        * Add a new `Object` element in the "inputs" object. The key of this object will be used as the "name" attribute of your input. The values will be considered as the props of your input.
 
 Set up of an input props :
-* You must declare a "type" key of type `<String>`, wich define the type of your input : `<tel>`, `<text>`, `<date>`, `<select>`, `<radio>`, `<switch>`, `<checkbox>`, `<textarea>`. 
-* Then you can fill the props you need for your input, according to its type : `<placeholder>`, `<id>`, `<required>`, `<label>`, `<items>`, `<emptyItems>`, `<index>`, etc.
+* You must declare a "type" key of type `String`, wich define the type of your input : `tel`, `text`, `date`, `select`, `radio`, `switch`, `checkbox`, `textarea`. 
+* Then you can fill the props you need for your input, according to its type : `placeholder`, `id`, `required`, `label`, `items`, `emptyItems`, `index`, etc.
 
 Here are examples of the structure the form attribute could have, with two sections and an example of set up for every kind of input type :
 
@@ -153,20 +153,20 @@ NB :
 In the child object you've created, 2 attributes must be filled:
 1. subtype
 2. text
-3. buttonText
+3. buttonText (facultative)
 4. checkbox (facultative)
 
 To set up the child object you've created with these elements :
 1. Edit you child object
 2. Go to "Object attributes"
 3. Add the attributes :
-  1. Add a new key "subtype" of type `<String>` with the value 'onb-adm-sign'
-  2. Add a new key "text" of type `<String>` with all the text of your document to sign as value
-  3. Add a new key "buttonText" of type `<String>` with the text you want to display in the submit button of your step
-  4. Add a new key "checkbox" of type `<Object>` if you want to force your user to click on a checkbox (ex: 'I have read and accepted the conditions') before validating his document. In the checkbox object, you should define :
-    * A "label" key of type `<String>`, with the text you want to associate to the checkbox
-    * A "required" key of type `<Boolean>`, set at true if you want to force the user to check it
-    * A "name" key of type `<String>`
+  1. Add a new key "subtype" of type `String` with the value 'onb-adm-sign'
+  2. Add a new key "text" of type `String` with all the text of your document to sign as value
+  3. Add a new key "buttonText" of type `String` with the text you want to display in the submit button of your step
+  4. Add a new key "checkbox" of type `Object` if you want to force your user to click on a checkbox (ex: 'I have read and accepted the conditions') before validating his document. In the checkbox object, you should define :
+    * A "label" key of type `String`, with the text you want to associate to the checkbox
+    * A "required" key of type `Boolean`, set at true if you want to force the user to check it
+    * A "name" key of type `String`
     * Then you can add all the properties you want to your checkbox.
 
 Here is an example of the structure a 'document to sign' step could have :
