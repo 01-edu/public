@@ -1,20 +1,20 @@
 # How to create onboarding steps
 
 ## Usage
-This documentation explains how to create steps in your onboarding. 2 kind of steps can be generated in a modular way:
-* forms
-* documents to sign
+> This documentation explains how to create steps in your onboarding. 2 kind of steps can be generated in a modular way:
+> * forms
+> * documents to sign
 
-These steps are used for the "sign up" phase, and for the administrative part of the onboarding.
+These steps are used for the "sign up" phase, and for the "administrative" part of the onboarding.
 
 ## Description & examples
 The sign up phase and the administration part of the onboarding are related to major objects in the admin. all the steps for each of these two sections are children of these two big objects, that you can create, update, or delete, and order as you wish. 
-The objects contained in the sign up phase are object of type "sign up".
-The objects contained in the administration part of the onboarding phase are object of type "onboarding".
+* The objects contained in the sign up phase are object of type **sign up**.
+* The objects contained in the administration part of the onboarding phase are object of type **onboarding**.
 
 ### Relate a step to a major object
 Every step is related to the major object you want to costum as a child. To create a child, you must:
-1. Create a new object for your step in the admin (in Admin > "Add new object")
+1. Create a new object for your step in the admin (in *Admin* > *Add new object*)
    <img width="664" alt="Capture d’écran 2019-04-22 à 15 57 37" src="https://user-images.githubusercontent.com/35296671/56507169-6505a500-6518-11e9-89bb-04c7fd9b41ca.png">
    <img width="450" alt="Capture d’écran 2019-04-22 à 15 58 21" src="https://user-images.githubusercontent.com/35296671/56507180-6afb8600-6518-11e9-97a5-4dcff8f0a069.png">
    * The title of your object will be the title displayed for the step you're creating. Use a intellegible title for your user.
@@ -22,7 +22,7 @@ Every step is related to the major object you want to costum as a child. To crea
    
 2. Add this new object as a child of your major object
    1. Edit the major object
-   2. Go to "Children" > "Add a child"
+   2. Go to *Children* > *Add a child*
       ![add child to major object](https://user-images.githubusercontent.com/35296671/56506977-de50c800-6517-11e9-9c71-d19a1ec4e5cd.png)
    3. Set up the new child:
       * Enter its name in the input "Add a child name"
@@ -36,20 +36,20 @@ Every step is related to the major object you want to costum as a child. To crea
 
 To set up the child object you've created with these elements:
 1. Edit you child object
-2. Go to "Object attributes"
+2. Go to *Object attributes*
    <img width="1073" alt="Capture d’écran 2019-04-22 à 15 59 33" src="https://user-images.githubusercontent.com/35296671/56507445-3936ef00-6519-11e9-90c8-d85056e9330b.png">
 3. Add the attributes:
-   * Add a new key **"subtype"** of type `String` with the value 'onb-adm-form-generator'
-   * Add a new key **"form"** of type `Object` 
+   * Add a new key **subtype** of type `String` with the value 'onb-adm-form-generator'
+   * Add a new key **form** of type `Object` 
      * The form you're creating can have several sections. Each section is displayed with a title, and its inputs. 
        * The submission of the form will check the required inputs of all the sections you've created. 
      * To create a section, add a new key to your form object, of type `Object`, that contains :
-       * A **"title"** key of type `String`. The value of this property will be the title displayed in the top of your form section. If you have only one section in your form step, and you don't need a section title, you don't have to set up this property.
-       * An **"inputs"** key of type `Object`, which will contain all the inputs of the section. For each input you want to add, you must set up the input as this :
+       * A **title** key of type `String`. The value of this property will be the title displayed in the top of your form section. If you have only one section in your form step, and you don't need a section title, you don't have to set up this property.
+       * An **inputs** key of type `Object`, which will contain all the inputs of the section. For each input you want to add, you must set up the input as this :
          * Add a new `Object` element in the "inputs" object. The key of this object will be used as the "name" attribute of your input. The values will be considered as the props of your input.
 
 Set up of an input props:
-* You must declare a "type" key of type `String`, wich define the type of your input : `tel`, `text`, `date`, `select`, `radio`, `switch`, `checkbox`, `textarea`. 
+* You must declare a **type** key of type `String`, wich define the type of your input : `tel`, `text`, `date`, `select`, `radio`, `switch`, `checkbox`, `textarea`. 
 * Then you can fill the props you need for your input, according to its type : `placeholder`, `id`, `required`, `label`, `items`, `emptyItems`, `index`, etc.
 
 Here are examples of the structure the form attribute could have, with two sections and an example of set up for every kind of input type:
@@ -143,8 +143,9 @@ This form step would look like this:
 ![form step example](https://user-images.githubusercontent.com/35296671/56503976-012aae80-650f-11e9-82c8-dd7d026b6eb1.png)
 
 NB: 
-* The index property is used to order your inputs. It won't be spread in the input.
-* The type property is resquired. It will be used to determine the kind of input we must generate. It is spread in the input only if the input type attribute is required (type 'tel' or 'text' for example, but not for type 'select' - in this case, we will generate a select element)
+* The **index** property is used to order your inputs. It won't be spread in the input.
+* The **type** property is resquired. It will be used to determine the kind of input we must generate. It is spread in the input only if the input type attribute is required (type 'tel' or 'text' for example, but not for type 'select' - in this case, we will generate a select element)
+* Don't declare an **onChange**, it's handled by the app
 * Each input type has its own attributes. You can check how to set up your inputs hey : 
   * [textInput documentation](https://alem.01-edu.org/design/Components/FormInputs/TextInput) - used for inputs type 'text', 'tel', and 'date'
   * [textArea documentation](https://alem.01-edu.org/design/Components/FormInputs/TextArea)
@@ -152,7 +153,7 @@ NB:
   * [radio button documentation](https://alem.01-edu.org/design/Components/FormControls/Radio)
   * [switch documentation](https://alem.01-edu.org/design/Components/FormControls/Switch)
   * [checkbox documentation](https://alem.01-edu.org/design/Components/FormControls/Checkbox)
-* For switch and checkbox inputs type, you have to set the default value as a boolean property named "value".
+* For switch and checkbox inputs type, you have to set the default value as a boolean property named **value**.
 
 ### Settings for a document to sign step
 > In the child object you've created, 2 attributes must be filled:
@@ -163,15 +164,15 @@ NB:
 
 To set up the child object you've created with these elements:
 1. Edit you child object
-2. Go to "Object attributes"
+2. Go to *Object attributes*
 3. Add the attributes:
-   * Add a new key **"subtype"** of type `String` with the value 'onb-adm-sign'
-   * Add a new key **"text"** of type `String` with all the text of your document to sign as value
-   * Add a new key **"buttonText"** of type `String` with the text you want to display in the submit button of your step
-   * Add a new key **"checkbox"** of type `Object` if you want to force your user to click on a checkbox (ex: 'I have read and accepted the conditions') before validating his document. In the checkbox object, you should define:
-     * A **"label"** key of type `String`, with the text you want to associate to the checkbox
-     * A **"required"** key of type `Boolean`, set at true if you want to force the user to check it
-     * A **"name"** key of type `String`
+   * Add a new key **subtype** of type `String` with the value 'onb-adm-sign'
+   * Add a new key **text** of type `String` with all the text of your document to sign as value
+   * Add a new key **buttonText** of type `String` with the text you want to display in the submit button of your step
+   * Add a new key **checkbox** of type `Object` if you want to force your user to click on a checkbox (ex: 'I have read and accepted the conditions') before validating his document. In the checkbox object, you should define:
+     * A **label** key of type `String`, with the text you want to associate to the checkbox
+     * A **required** key of type `Boolean`, set at true if you want to force the user to check it
+     * A **name** key of type `String`
      * Then you can add all the properties you want to your checkbox.
 
 Here is an example of the structure a 'document to sign' step could have:
