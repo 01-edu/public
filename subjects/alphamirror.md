@@ -1,20 +1,20 @@
-# alphamirror
-## Instructions
+## alphamirror
+### Instructions
 
-Write a program called alpha_mirror that takes a string and displays this string
-after replacing each alphabetical character by the opposite alphabetical
-character, followed by a newline.
+Write a program called alphamirror that takes a string as argument and displays this string
+after replacing each alphabetical character with the opposite alphabetical
+character. 
+
+The case of the letter stays the same, for example :
 
 'a' becomes 'z', 'Z' becomes 'A'
 'd' becomes 'w', 'M' becomes 'N'
 
-and so on.
+The final result will be followed by a newline.
 
-Case is not changed.
+If the number of arguments is not 1, the program will display only a newline.
 
-If the number of arguments is not 1, display only a newline.
-
-And its output :
+Example of output :
 
 ```console
 student@ubuntu:~/student/alphamirror$ go build
