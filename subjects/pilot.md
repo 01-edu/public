@@ -1,9 +1,9 @@
-# pilot
-## Instructions
+## pilot
+### Instructions
 
 Write a go file so that the following program compile
 
-## Usage
+### Usage
 
 ```go
 package main

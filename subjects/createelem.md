@@ -1,10 +1,10 @@
-# createelem
+## createelem
 
-## Instructions
+### Instructions
 
 Write a function `CreateElem` that creates a new element of type`Node`. 
 
-## Expected function and structure
+### Expected function and structure
 
 ```go
 type Node struct {
@@ -17,7 +17,7 @@ func CreateElem(n *Node, value int) {
 
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

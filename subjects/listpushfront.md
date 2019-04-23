@@ -1,10 +1,10 @@
-# listpushback
+## listpushback
 
-## Instructions
+### Instructions
 
 Write a function `ListPushBack` that inserts a new element `node` at the beginning of the list using `list`
 
-## Expected function and structure
+### Expected function and structure
 
 ```go
 type Node struct {
@@ -21,7 +21,7 @@ func ListPushFront(l *list, data interface{}) {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

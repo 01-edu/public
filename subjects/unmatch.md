@@ -1,11 +1,11 @@
-# join
-## Instructions
+## join
+### Instructions
 
 Write a function, Unmatch, that returns the element of the slice (arr) that does not have a correspondent pair.
 
 The function must have the next signature.
 
-## Expected function
+### Expected function
 
 ```go
 
@@ -15,7 +15,7 @@ func Unmatch(arr []int) int {
 
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

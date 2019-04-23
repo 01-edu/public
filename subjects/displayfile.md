@@ -1,6 +1,6 @@
-# Display File
+## Display File
 
-## Instructions
+### Instructions
 
 Write a program that displays, on the standard output, only the content of the file given as argument.
 
@@ -12,7 +12,7 @@ Write a program that displays, on the standard output, only the content of the f
     - `File name missing`.
     - `Too many arguments`.
 
-## Output:
+### Output:
 
 ```console
 student@ubuntu:~/student/test$ go build

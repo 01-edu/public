@@ -1,11 +1,11 @@
-# collatzcountdown
-## Instructions
+## collatzcountdown
+### Instructions
 
 Write a function, CollatzCountdown, that returns the number of steps to reach 1 using the collatz countdown.
 
 The function must have the following signature.
 
-## Expected function
+### Expected function
 
 ```go
 func CollatzCountdown(start int) int {
@@ -14,7 +14,7 @@ func CollatzCountdown(start int) int {
 
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

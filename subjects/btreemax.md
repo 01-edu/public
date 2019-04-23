@@ -1,11 +1,11 @@
-# btreemax
-## Instructions
+## btreemax
+### Instructions
 
 Write a function, BTreeMax, that returns the node with the maximum value in the tree given by root
 
 This function must have the following signature.
 
-## Expected function
+### Expected function
 
 ```go
 func BTreeMax(root *TreeNode) *TreeNode {
@@ -14,7 +14,7 @@ func BTreeMax(root *TreeNode) *TreeNode {
 
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

@@ -1,5 +1,5 @@
-# ztail
-## Instructions
+## ztail
+### Instructions
 
 Write a program called ztail that does the same thing as the system command tail, but witch takes at least one file as argument.
 

@@ -1,12 +1,12 @@
-# listpushback
+## listpushback
 
-## Instructions
+### Instructions
 
 Write a function `ListForEach` that applies a function given as argument to the information within each of the list's links.
 
 - The function given as argument must have a pointer as argument: `l *list`
 
-## Expected function and structure
+### Expected function and structure
 
 ```go
 type Node struct {
@@ -23,7 +23,7 @@ func ListForEach(l *list, f func(l *list)) {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

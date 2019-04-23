@@ -1,10 +1,10 @@
-# listpushback
+## listpushback
 
-## Instructions
+### Instructions
 
 Write a function `ListPushBack` that inserts a new element `Node` at the end of the list, using the structure `List`
 
-## Expected function and structure
+### Expected function and structure
 
 ```go
 type Node struct {
@@ -21,7 +21,7 @@ func ListPushBack(l *List, data interface{}) {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

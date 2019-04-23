@@ -1,6 +1,6 @@
  # Boolean
 
-## Instructions
+### Instructions
 
 Create a `.go` file and copy the code below into our file
 
@@ -36,11 +36,11 @@ func main() {
 }
 ```
 
-## Expected output
+### Expected output
 ```go 
 I have an even number of arguments
 ```
-## Or
+### Or
 ```go
 I have an odd number of arguments
 ```

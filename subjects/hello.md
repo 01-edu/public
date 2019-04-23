@@ -1,12 +1,12 @@
-# hello
+## hello
 
-## Instructions
+### Instructions
 
 Write a program that displays "Hello World!".
 
-## Expected main and function for the program
+### Expected main and function for the program
 
-## Expected output
+### Expected output
 
 ```console
 student@ubuntu:~/piscine/test$ go build

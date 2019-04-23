@@ -1,11 +1,11 @@
-# max
-## Instructions
+## max
+### Instructions
 
 Write a function, Max, that returns the maximum value in a slice of integers
 
 The function must have the next signature.
 
-## Expected function
+### Expected function
 
 ```go
 
@@ -15,7 +15,7 @@ func Max(arr []int) int {
 
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

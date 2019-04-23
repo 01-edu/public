@@ -1,5 +1,5 @@
-# lastword
-## Instructions
+## lastword
+### Instructions
 
 Write a program that takes a string and displays its last word, followed by a
 newline.

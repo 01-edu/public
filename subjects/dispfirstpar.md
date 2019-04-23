@@ -1,10 +1,10 @@
-# dispfirstpar
+## dispfirstpar
 
-## Instructions
+### Instructions
 
 Write a program that takes strings as arguments, and displays its first argument.
 
-## Expected output
+### Expected output
 
 ```console
 student@ubuntu:~/piscine/test$ go build

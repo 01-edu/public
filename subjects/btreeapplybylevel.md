@@ -1,11 +1,11 @@
-# btreeapplybylevel
-## Instructions
+## btreeapplybylevel
+### Instructions
 
 Write a function, BTreeApplyByLevel, that applies the function given by fn to each node of the tree given by root.
 
 This function must have the following signature.
 
-## Expected function
+### Expected function
 
 ```go
 func BTreeApplyByLevel(root *TreeNode, fn interface{})  {
@@ -14,7 +14,7 @@ func BTreeApplyByLevel(root *TreeNode, fn interface{})  {
 
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

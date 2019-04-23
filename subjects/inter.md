@@ -1,6 +1,6 @@
-# switchcase
+## switchcase
 
-## Instructions
+### Instructions
 
 
 Write a program that takes two strings and displays, without doubles, the characters that appear in both strings, in the order they appear in the first one.
@@ -9,7 +9,7 @@ Write a program that takes two strings and displays, without doubles, the charac
 
 - If the number of arguments is not 2, the program displays `\n`.
 
-## Expected output
+### Expected output
 
 ```console
 student@ubuntu:~/piscine/test$ go build

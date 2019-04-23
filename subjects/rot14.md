@@ -1,19 +1,19 @@
-# ROT 14
+## ROT 14
 
-## Instructions
+### Instructions
 
 Write a function `rot14` that returns the string within the parameter but transformed into a rot14 string.
 
 - If you not certain what we are talking about, there is a rot13 already.
 
-## Expected function
+### Expected function
 
 ```go
 func rot14(str string) string {
 
 }
 ```
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

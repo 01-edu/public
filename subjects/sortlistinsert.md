@@ -1,6 +1,6 @@
-# listpushback
+## listpushback
 
-## Instructions
+### Instructions
 
 Write a function `SortListInsert` that inserts `Data_ref` in the linked list, but it as to remain sorted in ascending order.
 
@@ -8,7 +8,7 @@ Write a function `SortListInsert` that inserts `Data_ref` in the linked list, bu
 
 - Use pointers when ever you can.
 
-## Expected function and structure
+### Expected function and structure
 
 ```go
 type Nodee struct {
@@ -21,7 +21,7 @@ func SortListInsert(l *Nodee, Data_ref int) *Nodee{
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

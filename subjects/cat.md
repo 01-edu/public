@@ -1,6 +1,6 @@
-# Cat
+## Cat
 
-## Instructions
+### Instructions
 
 Write a program that does the same thing as the system's `cat` command-line.
 
@@ -20,7 +20,7 @@ Write a program that does the same thing as the system's `cat` command-line.
 
 - In case of error it should print the error.
 
-## Output:
+### Output:
 
 ```console
 student@ubuntu:~/student/test$ go build

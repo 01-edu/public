@@ -1,13 +1,13 @@
-# countdown
+## countdown
 
-## Instructions
+### Instructions
 
 Write a program that displays all digits in descending order, followed by a
 newline.
 
-## Expected main and function for the program
+### Expected main and function for the program
 
-## Expected output
+### Expected output
 
 ```console
 student@ubuntu:~/piscine/test$ go build

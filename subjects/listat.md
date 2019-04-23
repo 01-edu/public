@@ -1,12 +1,12 @@
-# listpushback
+## listpushback
 
-## Instructions
+### Instructions
 
 Write a function `ListAt` that haves one pointer to the list, `l`, and an `int` as parameters. This function should print a `Node` of the linked list, depending on the number, `nbr`.
 
 - In case of error it should print `nil` 
 
-## Expected function and structure
+### Expected function and structure
 
 ```go
 type Node struct {
@@ -20,7 +20,7 @@ func ListAt(l *Node, nbr int) *Node{
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

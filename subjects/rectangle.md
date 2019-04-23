@@ -1,6 +1,6 @@
-# Rectangle
+## Rectangle
 
-## Instructions
+### Instructions
 
 Consider that a point is defined by its coordinates and that a rectangle
 is defined by the points of the upper left and lower right corners.
@@ -17,7 +17,7 @@ is defined by the points of the upper left and lower right corners.
 
     - And calculates and prints the area of that rectangle you define.
 
-## Expected main and function for the program
+### Expected main and function for the program
 
 ```go
 func defineRectangle(ptr *point, n int) *rectangle {
@@ -46,7 +46,7 @@ func main() {
 ```
 
 
-## Expected output
+### Expected output
 
 ```console
 student@ubuntu:~/piscine/test$ go build

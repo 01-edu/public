@@ -1,5 +1,5 @@
-# btreedeletenode
-## Instructions
+## btreedeletenode
+### Instructions
 
 Write a function, BTreeDeleteNode, that deletes 'node' from the tree given by root.
 
@@ -7,7 +7,7 @@ The resulting tree should still follow the binary search tree rules.
 
 This function must have the following signature.
 
-## Expected function
+### Expected function
 
 ```go
 func BTreeDeleteNode(root, node *TreeNode) *TreeNode {
@@ -16,7 +16,7 @@ func BTreeDeleteNode(root, node *TreeNode) *TreeNode {
 
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

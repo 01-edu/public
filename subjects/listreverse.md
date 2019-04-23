@@ -1,12 +1,12 @@
-# listpushback
+## listpushback
 
-## Instructions
+### Instructions
 
 Write a function `ListReverse` that reverses the elements order of a given linked list.
 
 - Use pointers when ever you can 
 
-## Expected function and structure
+### Expected function and structure
 
 ```go
 type Node struct {
@@ -23,7 +23,7 @@ func ListReverse(l *list) {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

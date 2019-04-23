@@ -1,10 +1,10 @@
-# displastpar
+## displastpar
 
-## Instructions
+### Instructions
 
 Write a program that takes strings as arguments, and displays its last argument.
 
-## Expected output
+### Expected output
 
 ```console
 student@ubuntu:~/piscine/test$ go build

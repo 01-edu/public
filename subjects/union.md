@@ -1,5 +1,5 @@
-# union
-## Instructions
+## union
+### Instructions
 
 Write a program that takes two strings and displays, without doubles, the
 characters that appear in either one of the strings.

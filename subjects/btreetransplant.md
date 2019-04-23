@@ -1,11 +1,11 @@
-# btreetransplant
-## Instructions
+## btreetransplant
+### Instructions
 
 In order to move subtrees around within the binary search tree, write a function, BTreeTransplant, which replaces the subtree started by node with the node called 'rplc' in the tree given by root.
 
 This function must have the following signature.
 
-## Expected function
+### Expected function
 
 ```go
 func BTreeTransplant(root, node, rplc *TreeNode) *TreeNode {
@@ -14,7 +14,7 @@ func BTreeTransplant(root, node, rplc *TreeNode) *TreeNode {
 
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 
