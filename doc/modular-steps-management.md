@@ -44,7 +44,7 @@
 > * Go to update its settings by clicking on the eye of its reference (it will redirect you to the actual object of your step).
 <img width="1229" alt="Capture d’écran 2019-04-22 à 19 51 12" src="https://user-images.githubusercontent.com/35296671/56518936-a1e19400-6538-11e9-81c7-520ffd365cff.png">
 
-## Settings for a form step
+## Settings for a `form` step
 > In the step object you have created, 2 attributes must be filled:
 > 1. Subtype
 > 2. Form
@@ -152,7 +152,7 @@ Here is an example of the form step's attributes. It presents a form with two se
           "label": "I am new in programming",
           "value": true
         },
-        "generalContions": {
+        "generalConditions": {
           "index": 7,
           "type": "checkbox",
           "label": "I have read and I accept the general conditions",
@@ -179,23 +179,26 @@ This 'form' step would look like this:
 
 ![form step example](https://user-images.githubusercontent.com/35296671/56503976-012aae80-650f-11e9-82c8-dd7d026b6eb1.png)
 
-## Settings for a document to sign step
-> In the child object you've created, 2 attributes must be filled:
-> 1. subtype
-> 2. text
-> 3. buttonText (facultative)
-> 4. checkbox (facultative)
+## Settings for a `document to sign` step
+The newly created child can be customized with these attributes :
+
+| name       | fullfillment |
+| ---------- | ---------    |
+| subtype    | **required** |
+| text       | **required** |
+| buttonText | optionnal    |
+| checkbox   | optionnal    |
 
 ### Description
 
-#### To set up the child object you've created with these elements:
+#### To set up the child object you have created with these elements:
 
 1. Edit you step object
 2. Go to *Object attributes*
 3. Add the following attributes:
    * Add a new key **subtype** of type `String` with the exact value 'onb-adm-sign'
    * Add a new key **text** of type `String` with the text of your document to sign as value
-   * Add a new key **buttonText** of type `String` with the text you want to display in the submit button of your step. If you don't fill this property, the default value if 'Sign'.
+   * Add a new key **buttonText** of type `String` with the text that you want to display in the submit button of your step. If you do not fill this property, the default value is 'Sign'.
    * Add a new key **checkbox** of type `Object`, if you want to force your user to click on a checkbox before validating his document (ex: 'I have read and accepted the conditions'). In the checkbox object, you should define:
      * A **label** key of type `String`, with the text you want to associate to the checkbox
      * A **required** key of type `Boolean`, set at true if you want to force the user to check it
