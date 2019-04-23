@@ -1,10 +1,10 @@
-# Fix the Main 
+## Fix the Main 
 
-## Instructions
+### Instructions
 
 Write and fix the folloing functions.
 
-## Expected functions
+### Expected functions
 
 ```go
 func PutStr(str string) {
@@ -29,7 +29,7 @@ func IsDoorClose(ptrDoor *Door) bool {
 	PutStr("Door is close ?")
 }
 ```
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

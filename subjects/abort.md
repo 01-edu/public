@@ -1,11 +1,11 @@
-# abort
-## Instructions
+## abort
+### Instructions
 
 Write a function that returns the the value in the middle of 5 five arguments.
 
 This function must have the following signature.
 
-## Expected function
+### Expected function
 
 ```go
 func Abort(a, b, c, d, e int) int {
@@ -14,7 +14,7 @@ func Abort(a, b, c, d, e int) int {
 
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

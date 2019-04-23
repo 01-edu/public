@@ -1,6 +1,6 @@
-# listpushback
+## listpushback
 
-## Instructions
+### Instructions
 
 Write a function `SortedListMerge` that mereges two lists, `l1` and `l2`, but you have to join them in ascending order.
 
@@ -8,7 +8,7 @@ Write a function `SortedListMerge` that mereges two lists, `l1` and `l2`, but yo
 
 - Use pointers when ever you can.
 
-## Expected function and structure
+### Expected function and structure
 
 ```go
 type Nodee struct {
@@ -21,7 +21,7 @@ func SortedListMerge(l1 *Nodee, l2 *Nodee) *Nodee {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

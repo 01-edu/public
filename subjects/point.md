@@ -1,6 +1,6 @@
  # Point
 
-## Instructions
+### Instructions
 
 Create a `.go` file and copy the code below into our file
 
@@ -24,7 +24,7 @@ func main() {
 }
 ```
 
-## Expected output
+### Expected output
 
 ```console
 student@ubuntu:~/piscine/test$ go build

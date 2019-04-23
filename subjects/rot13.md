@@ -1,6 +1,6 @@
-# rot13
+## rot13
 
-## Instructions
+### Instructions
 
 Write a program that takes a string and displays it, replacing each of its
 letters by the letter 13 spaces ahead in alphabetical order.
@@ -11,7 +11,7 @@ letters by the letter 13 spaces ahead in alphabetical order.
 
 - If the number of arguments is not 1, the program displays a newline.
 
-## Expected output
+### Expected output
 
 ```console
 student@ubuntu:~/piscine/test$ go build

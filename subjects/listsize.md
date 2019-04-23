@@ -1,10 +1,10 @@
-# listpushback
+## listpushback
 
-## Instructions
+### Instructions
 
 Write a function `ListSize` that returns the number of elements in the list.
 
-## Expected function and structure
+### Expected function and structure
 
 ```go
 type Node struct {
@@ -22,7 +22,7 @@ func ListSize(l *List) int {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

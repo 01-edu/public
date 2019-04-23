@@ -1,12 +1,12 @@
-# strlen
+## strlen
 
-## Instructions
+### Instructions
 
 Write a function that returns the length of a string.
 
  - `len` is forbidden
 
-## Expected function and structure
+### Expected function and structure
 
 ```go
 func Strlen(str string) int {

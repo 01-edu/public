@@ -1,11 +1,11 @@
-# btreeisbinary
-## Instructions
+## btreeisbinary
+### Instructions
 
 Write a function, BTreeIsBinary, that returns true only if the tree given by root follows the binary search tree properties.
 
 This function must have the following signature.
 
-## Expected function
+### Expected function
 
 ```go
 func BTreeIsBinary(root *TreeNode) bool {
@@ -14,7 +14,7 @@ func BTreeIsBinary(root *TreeNode) bool {
 
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

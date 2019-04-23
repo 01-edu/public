@@ -1,5 +1,5 @@
-# repeatalpha
-## Instructions
+## repeatalpha
+### Instructions
 
 Write a program called repeat_alpha that takes a string and display it
 repeating each alphabetical character as many times as its alphabetical index,

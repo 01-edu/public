@@ -1,12 +1,12 @@
-# listpushback
+## listpushback
 
-## Instructions
+### Instructions
 
 Write a function `ListClear` that delets all `nodes` from a linked list, deleting the link between the list.
 
 - Tip: assign the list's pointer to nil 
 
-## Expected function and structure
+### Expected function and structure
 
 ```go
 type Node struct {
@@ -24,7 +24,7 @@ func ListClear(l *List) {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

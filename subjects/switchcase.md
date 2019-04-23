@@ -1,6 +1,6 @@
-# switchcase
+## switchcase
 
-## Instructions
+### Instructions
 
 Write a program that takes a string and reverses the case of all its  letters.
 
@@ -10,7 +10,7 @@ Write a program that takes a string and reverses the case of all its  letters.
 
 - If the number of arguments is not 1, the program displays '\n'.
 
-## Expected output
+### Expected output
 
 ```console
 student@ubuntu:~/piscine/test$ go build

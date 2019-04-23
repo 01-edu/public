@@ -1,6 +1,6 @@
-# listpushback
+## listpushback
 
-## Instructions
+### Instructions
 
 Write a function `ListFind` that returns the value of the first link that the function in the arguments its equal.
 
@@ -8,7 +8,7 @@ Write a function `ListFind` that returns the value of the first link that the fu
 
 - Use pointers when ever you can.
 
-## Expected function and structure
+### Expected function and structure
 
 ```go
 type Node struct {
@@ -30,7 +30,7 @@ func ListFind(l *List, comp func(l *List) bool) *interface{} {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

@@ -1,9 +1,9 @@
-# btreelevelcount
-## Instructions
+## btreelevelcount
+### Instructions
 
 Write a function, BTreeLevelCount, that return the number of levels of the tree (height of the tree) 
 
-## Expected function
+### Expected function
 
 ```go
 func BTreeLevelCount(root *piscine.TreeNode) int {
@@ -12,7 +12,7 @@ func BTreeLevelCount(root *piscine.TreeNode) int {
 
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

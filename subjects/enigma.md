@@ -1,5 +1,5 @@
-# enigma
-## Instructions
+## enigma
+### Instructions
 
 Write a function called `Enigma` that receives poiters to functions and move its values around to hide them
 
@@ -7,7 +7,7 @@ This function will put a into c; c into d; d into b and b into a
 
 This function must have the following signature.
 
-## Expected function
+### Expected function
 
 ```go
 func Enigma(a ***int, b *int, c *******int, d ****int) {
@@ -16,7 +16,7 @@ func Enigma(a ***int, b *int, c *******int, d ****int) {
 
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 
