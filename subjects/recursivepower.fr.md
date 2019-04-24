@@ -1,6 +1,6 @@
-# recursivepower
+## recursivepower
 
-## Intructions
+### Intructions
 
 Écrire une fonction **récursive** qui renvoie la puissance de deux `int` passés en paramètre.
 
@@ -8,7 +8,7 @@ Les puissances négatives renverront `0`. Les overflows **ne doivent pas** être
 
 `for` est **interdit** pour cet exercice.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func RecursivePower(int nb, int power) int {
@@ -16,7 +16,7 @@ func RecursivePower(int nb, int power) int {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

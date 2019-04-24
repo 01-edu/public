@@ -1,10 +1,10 @@
-# join
+## join
 
-## Instructions
+### Instructions
 
 Write a function that returns the concatenation of all the `string` of a table of `string` **separated** by the separator passed in argument.
 
-## Expected function
+### Expected function
 
 ```go
 func Join(strs []string, sep string) string {
@@ -12,7 +12,7 @@ func Join(strs []string, sep string) string {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

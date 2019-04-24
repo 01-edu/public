@@ -1,10 +1,10 @@
-# firstrune
+## firstrune
 
-## Instructions
+### Instructions
 
 Écrire une fonction qui retourne la première `rune` d'une `string`.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func FirstRune(s string) rune {
@@ -12,7 +12,7 @@ func FirstRune(s string) rune {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

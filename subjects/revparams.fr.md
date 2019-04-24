@@ -1,6 +1,6 @@
-# revparams
+## revparams
 
-## Instructions
+### Instructions
 
 Écrire un **programme** qui affiche les arguments en ligne de commande en ordre inverse.
 

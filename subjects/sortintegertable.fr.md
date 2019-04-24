@@ -1,10 +1,10 @@
-# sortintegertable
+## sortintegertable
 
-## Instructions
+### Instructions
 
 - Écrire une fonction qui trie un tableau d'`int` (entier) par ordre croissant.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func SortIntegerTable(table []int) {
@@ -12,7 +12,7 @@ func SortIntegerTable(table []int) {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

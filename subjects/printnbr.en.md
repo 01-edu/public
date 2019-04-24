@@ -1,12 +1,12 @@
-# printnbr
+## printnbr
 
-## Instructions
+### Instructions
 
 Write a function that prints an `int` passed in parameter.
 All possible values of type `int` have to go through.
 You cannot convert to `int64`.
 
-## Expected function
+### Expected function
 
 ```go
 func PrintNbr(int n) {
@@ -14,7 +14,7 @@ func PrintNbr(int n) {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

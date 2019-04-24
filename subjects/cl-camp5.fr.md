@@ -1,6 +1,6 @@
-# cl-camp5
+## cl-camp5
 
-## Instructions
+### Instructions
 
 "continues à chercher..."
 
@@ -10,7 +10,7 @@ Créer un fichier `lookagain.sh`, qui cherchera et montrera, dans le répertoire
 
 Cette commande montrera le nom des fichiers sans le`.sh`.
 
-## Utilisation
+### Utilisation
 
 ```console
 student@ubuntu:~/piscine/test$ export HERO_ID=1
@@ -21,6 +21,6 @@ file3$
 student@ubuntu:~/piscine/test$
 ```
 
-## Indice
+### Indice
 
 Un petit `cut`ter pourrait être utile...

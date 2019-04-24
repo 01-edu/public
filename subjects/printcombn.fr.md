@@ -1,6 +1,6 @@
-# printcombn
+## printcombn
 
-## Instructions
+### Instructions
 
 - Écrire une fonction qui affiche toutes les combinaisons possibles de **n** chiffres différents en ordre croissant.
 
@@ -12,7 +12,7 @@ ci-dessous vos références pour le **format d'affichage** attendu.
 
 - (pour n = 3) '012, 013, 014, 015, 016, 017, 018, 019, 023,...689, 789'
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func PrintCombN(n int) {

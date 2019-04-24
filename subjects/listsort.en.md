@@ -1,6 +1,6 @@
-# listpushback
+## listpushback
 
-## Instructions
+### Instructions
 
 Write a function `ListSort` that sorts the linked list by ascending order.
 
@@ -10,7 +10,7 @@ Write a function `ListSort` that sorts the linked list by ascending order.
 
 - Use pointers when ever you can.
 
-## Expected function and structure
+### Expected function and structure
 
 ```go
 type node struct {
@@ -23,7 +23,7 @@ func ListSort(l *node) *node {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

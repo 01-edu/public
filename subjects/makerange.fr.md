@@ -1,6 +1,6 @@
-# makerange
+## makerange
 
-## Instructions
+### Instructions
 
 Écrire une fonction qui prend un `int` minimum et un `int` maximum comme paramètres. Cette fonction retournes une slice d'`int` avec toutes les valeurs comprises entre le minimum et le maximum.
 
@@ -10,14 +10,14 @@ Si le minimum est supérieur ou égal au maximum, une slice `nil` est retournée
 
 `append` n'est pas autorisé pour cet exercice.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func MakeRange(min, max int) []int {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

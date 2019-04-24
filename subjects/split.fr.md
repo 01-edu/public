@@ -1,19 +1,19 @@
-# split
+## split
 
-## Instructions
+### Instructions
 
 Écrire une fonction qui sépare les mots d'une `string` et les met dans un tableau de `string`.
 
 Les séparateurs sont les charactéres de la `string` charset donnée en paramétre.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func Split(str, charset string) []string {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

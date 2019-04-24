@@ -1,12 +1,12 @@
-# printroot
+## printroot
 
-## Instructions
+### Instructions
 
 Write a function to print the value of the root node of a binary tree.
 You have to create a new number and print the value of data
 The nodes must be defined as follows:
 
-## Expected function
+### Expected function
 
 ```go
 type TreeNode struct {
@@ -19,7 +19,7 @@ func PrintRoot(root *TreeNode){
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

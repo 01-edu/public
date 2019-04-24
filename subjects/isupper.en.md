@@ -1,10 +1,10 @@
-# isupper
+## isupper
 
-## Instructions
+### Instructions
 
 Write a function that returns `true` if the `string` passed in parameter only contains uppercase characters, and that returns `false` otherwise.
 
-## Expected function
+### Expected function
 
 ```go
 func IsUpper(str string) bool {
@@ -12,7 +12,7 @@ func IsUpper(str string) bool {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

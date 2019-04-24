@@ -1,10 +1,10 @@
-# sqrt
+## sqrt
 
-## Intructions
+### Intructions
 
 Écrire une fonction qui renvoie la racine carré d'un `int` passé en paramètre as parameter si cette racine carré est un nombre entier. Autrement elle renvoie `0`.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func Sqrt(int nb) int {
@@ -12,7 +12,7 @@ func Sqrt(int nb) int {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

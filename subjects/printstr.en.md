@@ -1,10 +1,10 @@
-# printstr
+## printstr
 
-## Instructions
+### Instructions
 
 - Write a function that prints one by one the characters of a string on the screen.
 
-## Expected function
+### Expected function
 
 ```go
 func PrintStr(str string) {
@@ -12,7 +12,7 @@ func PrintStr(str string) {
 }
 ```
 
-## Hints
+### Hints
 
 Here is a possible [program](TODO-LINK) to test your function :
 

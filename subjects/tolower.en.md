@@ -1,10 +1,10 @@
-# tolower
+## tolower
 
-## Instructions
+### Instructions
 
 Write a function that lowercases each letter of `string`.
 
-## Expected function
+### Expected function
 
 ```go
 func ToLower(s string) string {
@@ -12,7 +12,7 @@ func ToLower(s string) string {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

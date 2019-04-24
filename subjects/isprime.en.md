@@ -1,10 +1,10 @@
-# isprime
+## isprime
 
-## Intructions
+### Intructions
 
 Write a function that returns `true` if the `int` passed as parameter is a prime number. Otherwise it returns `false`.
 
-## Expected function
+### Expected function
 
 ```go
 func IsPrime(int nb) bool {
@@ -12,7 +12,7 @@ func IsPrime(int nb) bool {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

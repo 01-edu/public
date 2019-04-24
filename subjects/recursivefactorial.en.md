@@ -1,6 +1,6 @@
-# recursivefactorial
+## recursivefactorial
 
-## Intructions
+### Intructions
 
 Write a **recursive** function that returns the factorial of the `int` passed as parameter.
 
@@ -8,7 +8,7 @@ Errors (non possible values or overflows) will return `0`.
 
 `for` is **forbidden** for this exercise.
 
-## Expected function
+### Expected function
 
 ```go
 func RecursiveFactorial(int nb) int {
@@ -16,7 +16,7 @@ func RecursiveFactorial(int nb) int {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

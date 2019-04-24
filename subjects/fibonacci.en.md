@@ -1,6 +1,6 @@
-# fibonacci
+## fibonacci
 
-## Intructions
+### Intructions
 
 Write an **recursive** function that returns the value of fibonacci sequence matching the index passed as parameter.
 
@@ -12,7 +12,7 @@ A negative index will return `-1`.
 
 `for` is **forbidden** for this exercise.
 
-## Expected function
+### Expected function
 
 ```go
 package main
@@ -22,7 +22,7 @@ func Fibonacci(int index) int {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

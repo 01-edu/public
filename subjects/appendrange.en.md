@@ -1,6 +1,6 @@
-# appendrange
+## appendrange
 
-## Instructions
+### Instructions
 
 Write a function that takes an `int` min and an `int` max as parameters.
 That function returns a slice of `int` with all the values between min and max.
@@ -11,7 +11,7 @@ If min is superior or equal to max, a `nil` slice is returned.
 
 `make` is not allowed for this exercise.
 
-## Expected function
+### Expected function
 
 ```go
 func AppendRange(min, max int) []int {
@@ -19,7 +19,7 @@ func AppendRange(min, max int) []int {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

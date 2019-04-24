@@ -1,6 +1,6 @@
-# atoibase
+## atoibase
 
-## Instructions
+### Instructions
 
 Écrire une fonction qui prend un nombre `string` et sa base `string` en paramètres et retournes sa convertion en `int`.
 
@@ -16,7 +16,7 @@ Seuls des nombres en `string` valides seront testés.
 
 La fonction **ne doit pas** gérer les nombres négatifs.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func AtoiBase(s string, base string) int {
@@ -24,7 +24,7 @@ func AtoiBase(s string, base string) int {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

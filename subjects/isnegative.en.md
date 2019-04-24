@@ -1,10 +1,10 @@
-# isnegative
+## isnegative
 
-## Instructions
+### Instructions
 
 Write a [function](TODO-LINK) that prints `'T'` (true) on a single line if the `int` passed as parameter is negative, otherwise it prints `'F'` (false).
 
-## Expected function
+### Expected function
 
 ```go
 func IsNegative(nb int) {
@@ -12,7 +12,7 @@ func IsNegative(nb int) {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

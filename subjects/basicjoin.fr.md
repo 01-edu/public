@@ -1,10 +1,10 @@
-# basicjoin
+## basicjoin
 
-## Instructions
+### Instructions
 
 Écrire une fonction qui retourne la concaténation de toutes les `string` d'un slice de `string` passées en paramètres.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func BasicJoin(strs []string) string {
@@ -12,7 +12,7 @@ func BasicJoin(strs []string) string {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

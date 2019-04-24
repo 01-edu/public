@@ -1,10 +1,10 @@
-# islower
+## islower
 
-## Instructions
+### Instructions
 
 Write a function that returns `true` if the `string` passed in parameter only contains lowercase characters, and that returns `false` otherwise.
 
-## Expected function
+### Expected function
 
 ```go
 func IsLower(str string) bool {
@@ -12,7 +12,7 @@ func IsLower(str string) bool {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

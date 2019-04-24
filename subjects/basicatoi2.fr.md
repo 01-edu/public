@@ -1,6 +1,6 @@
-# basicatoi2
+## basicatoi2
 
-## Instructions
+### Instructions
 
 - Écrire une fonction qui reproduit le comportement de la fonction atoi en Go. Atoi transforme un nombre représenté en `string` (chaîne de caractères) en `int` (entier).
 
@@ -10,7 +10,7 @@
 
 - Cette fonction aura **seulement** à retourner l'`int` (entier) `nbr`. Pour cet exercice le retour d'erreur d'atoi de go n'est pas demandé.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func BasicAtoi2(s string) int {
@@ -18,7 +18,7 @@ func BasicAtoi2(s string) int {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

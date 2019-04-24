@@ -1,10 +1,10 @@
-# islower
+## islower
 
-## Instructions
+### Instructions
 
 Écrire une fonction qui retourne `true` si la `string` passée en paramètre contient seulement des caractères minuscules, et qui retourne `false` autrement.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func IsLower(str string) bool {
@@ -12,7 +12,7 @@ func IsLower(str string) bool {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

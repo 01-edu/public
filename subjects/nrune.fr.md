@@ -1,10 +1,10 @@
-# nrune
+## nrune
 
-## Instructions
+### Instructions
 
 Écrire une fonction qui retourne la énième `rune` d'une `string`.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func NRune(s string, n int) rune {
@@ -12,7 +12,7 @@ func NRune(s string, n int) rune {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

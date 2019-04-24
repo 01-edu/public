@@ -1,17 +1,17 @@
-# foreach
+## foreach
 
-## Instructions
+### Instructions
 
 Write a function `ForEach` that, for an `int` array, applies a function on each elements of that array.
 
-## Expected function
+### Expected function
 
 ```go
 func ForEach(f func(int), arr []int) {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

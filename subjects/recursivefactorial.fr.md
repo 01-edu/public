@@ -1,6 +1,6 @@
-# recursivefactorial
+## recursivefactorial
 
-## Intructions
+### Intructions
 
 Écrire une fonction **récursive** qui renvoie la factorielle d'un `int` passé en paramètre.
 
@@ -8,7 +8,7 @@ Les erreurs (valeurs non possibles ou overflows) renverront `0`.
 
 `for` est **interdit** pour cet exercice.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func RecursiveFactorial(int nb) int {
@@ -16,7 +16,7 @@ func RecursiveFactorial(int nb) int {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

@@ -1,10 +1,10 @@
-# sqrt
+## sqrt
 
-## Intructions
+### Intructions
 
 Write a function that returns the square root of the `int` passed as parameter if that square root is a whole number. Otherwise it returns `0`.
 
-## Expected function
+### Expected function
 
 ```go
 func Sqrt(int nb) int {
@@ -12,7 +12,7 @@ func Sqrt(int nb) int {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

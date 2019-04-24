@@ -1,10 +1,10 @@
-# lastrune
+## lastrune
 
-## Instructions
+### Instructions
 
 Écrire une fonction qui retourne la dernière `rune` d'une `string`.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func LastRune(s string) rune {
@@ -12,7 +12,7 @@ func LastRune(s string) rune {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

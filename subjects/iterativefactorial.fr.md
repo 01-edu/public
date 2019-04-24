@@ -1,12 +1,12 @@
-# iterativefactorial
+## iterativefactorial
 
-## Intructions
+### Intructions
 
 Écrire une fonction **itérative** qui renvoie la factorielle d'un `int` passé en paramètre.
 
 Les erreurs (valeurs non possibles ou overflows) renverront `0`.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func IterativeFactorial(int nb) int {
@@ -14,7 +14,7 @@ func IterativeFactorial(int nb) int {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

@@ -1,6 +1,6 @@
-# cl-camp1
+## cl-camp1
 
-## Instructions
+### Instructions
 
 Une petite voix dans votre esprit vous dit:
 
@@ -16,6 +16,6 @@ Mettez dans un fichier `mastertheLS` la ligne de commande qui:
 - Les triera pas ordre croissant de date de création.
 - Placera un `/` en face des dossiers.
 
-## Indice
+### Indice
 
 Lisez le man...

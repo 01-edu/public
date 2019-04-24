@@ -1,10 +1,10 @@
-# findnextprime
+## findnextprime
 
-## Intructions
+### Intructions
 
 Write a function that returns the first prime number that is equal or superior to the `int` passed as parameter.
 
-## Expected function
+### Expected function
 
 ```go
 func FindNextPrime(int nb) int {
@@ -12,7 +12,7 @@ func FindNextPrime(int nb) int {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

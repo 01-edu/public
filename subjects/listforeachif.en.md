@@ -1,6 +1,6 @@
-# listpushback
+## listpushback
 
-## Instructions
+### Instructions
 
 Write a function `ListForEachIf` that applies a function given as argument to the information within some links of the list.
 
@@ -10,7 +10,7 @@ Write a function `ListForEachIf` that applies a function given as argument to th
 
 - Use pointers wen ever you can.
 
-## Expected function and structure
+### Expected function and structure
 
 ```go
 type node struct {
@@ -32,7 +32,7 @@ func ListForEachIf(l *list, f func(l *list), comp func(l *list) bool) {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

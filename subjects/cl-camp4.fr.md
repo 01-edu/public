@@ -1,6 +1,6 @@
-# cl-camp4
+## cl-camp4
 
-## Instructions
+### Instructions
 
 "quelqu'un de familier"
 
@@ -14,7 +14,7 @@ Créer un fichier `myfamily.sh`, qui montrera qui affichera la famille d'un indi
 
 * Quoi utiliser : `curl`, `jq` et d'autres...
 
-## Utilisation
+### Utilisation
 
 ```console
 student@ubuntu:~/piscine/test$ export HERO_ID=1

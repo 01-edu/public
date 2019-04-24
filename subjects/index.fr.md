@@ -1,10 +1,10 @@
-# index
+## index
 
-## Instructions
+### Instructions
 
 Écrire une fonction qui se comporte comme la fonction [`Index`](https://golang.org/pkg/strings/#Index).
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func Index(s string, toFind string) int {
@@ -12,7 +12,7 @@ func Index(s string, toFind string) int {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

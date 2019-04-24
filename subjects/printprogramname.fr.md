@@ -1,6 +1,6 @@
-# printprogramname
+## printprogramname
 
-## Instructions
+### Instructions
 
 Écrire un **programme** qui affiche le nom du programme.
 

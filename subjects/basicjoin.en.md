@@ -1,10 +1,10 @@
-# basicjoin
+## basicjoin
 
-## Instructions
+### Instructions
 
 Write a function that returns the concatenation of all the `string` of a table of `string` passed in argument.
 
-## Expected function
+### Expected function
 
 ```go
 func basicJoin(strs []string) string {
@@ -12,7 +12,7 @@ func basicJoin(strs []string) string {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

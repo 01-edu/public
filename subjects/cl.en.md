@@ -1,6 +1,6 @@
-# cl-camp1
+## cl-camp1
 
-## Instructions
+### Instructions
 
 A little voice speaks in your head:
 
@@ -16,6 +16,6 @@ Put in a file `mastertheLS` the command line that will:
 - Order them by ascending order of creation date.
 - Have the folders have a `/` in front of them.
 
-## Hint
+### Hint
 
 Read the man...

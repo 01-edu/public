@@ -1,10 +1,10 @@
-# compare
+## compare
 
-## Instructions
+### Instructions
 
 Écrire une fonction qui se comporte comme la fonction [`Compare`](https://golang.org/pkg/strings/#Compare).
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func Compare(a, b string) int {
@@ -12,7 +12,7 @@ func Compare(a, b string) int {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

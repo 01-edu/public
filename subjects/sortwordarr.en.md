@@ -1,17 +1,17 @@
-# sortwordarr
+## sortwordarr
 
-## Instructions
+### Instructions
 
 Write a function `SortWordArr` that sorts by `ascii` a `string` array.
 
-## Expected function
+### Expected function
 
 ```go
 func SortWordArr(array []string) {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

@@ -1,6 +1,6 @@
-# fibonacci
+## fibonacci
 
-## Intructions
+### Intructions
 
 Écrire une fonction **récursive** qui renvoie la valeur de la suite de fibonacci correspondant à l'index passé en paramètre.
 
@@ -12,7 +12,7 @@ Un index négatif renvoie `-1`.
 
 `for` est **interdit** pour cet exercice.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 package main
@@ -22,7 +22,7 @@ func Fibonacci(int index) int {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel `main.go` :
 

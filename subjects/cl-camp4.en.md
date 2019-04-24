@@ -1,6 +1,6 @@
-# cl-camp4
+## cl-camp4
 
-## Instructions
+### Instructions
 
 "someone familiar"
 
@@ -14,7 +14,7 @@ Create a file `myfamily.sh`, which will show a subject's family (key: relatives)
 
 * What to use : curl, jq and others...
 
-## Usage
+### Usage
 
 ```console
 student@ubuntu:~/piscine/test$ export HERO_ID=1

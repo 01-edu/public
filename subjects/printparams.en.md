@@ -1,6 +1,6 @@
-# printparams
+## printparams
 
-## Instructions
+### Instructions
 
 Write a **program** that prints the arguments received in the command line.
 

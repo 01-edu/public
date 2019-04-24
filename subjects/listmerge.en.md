@@ -1,6 +1,6 @@
-# listpushback
+## listpushback
 
-## Instructions
+### Instructions
 
 Write a function `ListMerge` that places elements of a list `l2` at the end of an other list `l1`.
 
@@ -8,7 +8,7 @@ Write a function `ListMerge` that places elements of a list `l2` at the end of a
 
 - Use pointers when ever you can.
 
-## Expected function and structure
+### Expected function and structure
 
 ```go
 type node struct {
@@ -26,7 +26,7 @@ func ListMerge(l1 *list, l2 *list) {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

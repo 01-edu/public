@@ -1,6 +1,6 @@
-# listpushback
+## listpushback
 
-## Instructions
+### Instructions
 
 Write a function `ListRemoveIf` that removes all elements that are equal to the `data_ref` introduced in the argument of the function.
 
@@ -8,7 +8,7 @@ Write a function `ListRemoveIf` that removes all elements that are equal to the 
 
 - Use pointers wen ever you can.
 
-## Expected function and structure
+### Expected function and structure
 
 ```go
 type node struct {
@@ -26,7 +26,7 @@ func ListRemoveIf(l *list, data_ref interface{}) {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

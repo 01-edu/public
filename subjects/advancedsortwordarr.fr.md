@@ -1,17 +1,17 @@
-# advancedsortwordarr
+## advancedsortwordarr
 
-## Instructions
+### Instructions
 
 Écrire une fonction `AdvancedSortWordArr` qui trie un tableau de `string`, basé sur la fonction `f` passée en paramètre.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func AdvancedSortWordTab(array []string, f func(a, b string) int) {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

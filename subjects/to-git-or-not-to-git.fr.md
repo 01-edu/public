@@ -1,11 +1,11 @@
-# to-git-or-not-to-git-?
+## to-git-or-not-to-git-?
 
-## Instructions
+### Instructions
 
 Écrire dans un fichier `to-git-or-not-to-git.sh` la commande qui isoles votre `gitHub id`.
 Seulement les chiffres apparaitront.
 
-## Utilisation
+### Utilisation
 
 ```console
 $ ./to-git-or-not-to-git.sh

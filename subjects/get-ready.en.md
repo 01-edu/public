@@ -1,6 +1,6 @@
-# get-ready
+## get-ready
 
-## Instructions
+### Instructions
 
 Subscribe to [Discord](Discord-invite-link) and send a private message to the bot (TODO: find a name for the bot).
 

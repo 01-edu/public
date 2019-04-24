@@ -1,10 +1,10 @@
-# sortintegertable
+## sortintegertable
 
-## Instructions
+### Instructions
 
 - Write a function that reorder an array of `int` in ascending order.
 
-## Expected function
+### Expected function
 
 ```go
 func SortIntegerTable(table []int) {
@@ -12,7 +12,7 @@ func SortIntegerTable(table []int) {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

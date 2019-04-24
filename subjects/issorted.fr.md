@@ -1,6 +1,6 @@
-# issorted
+## issorted
 
-## Instructions
+### Instructions
 
 Écrire une fonction `IsSorted` qui retourne `true` si la slice d'`int` est triée, et qui retourne `false` autrement.
 
@@ -8,14 +8,14 @@ La fonction passée en paramètre retourne un `int` positive si `a` (le premier 
 
 Pour faire vos tests, vous devez coder votre propre fonction `f`.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func IsSorted(f func(a, b int) int, tab []int) int {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction (sans `f`) :
 

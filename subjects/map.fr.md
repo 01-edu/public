@@ -1,17 +1,17 @@
-# map
+## map
 
-## Instructions
+### Instructions
 
 Écrire une fonction `Map` qui, pour un tableau d'`int`, applique une fonction de type `func(int) bool` sur chaque éléments de ce tableau et retournes un tableau de toutes les valeurs de retour.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func Map(f func(int) bool, arr []int) []bool {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

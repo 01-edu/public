@@ -1,19 +1,19 @@
-# split
+## split
 
-## Instructions
+### Instructions
 
 Write a function that seperates the words of a `string` and puts them in a `string` array.
 
 The separators are the characters of the charset `string` given in parameter.
 
-## Expected function
+### Expected function
 
 ```go
 func Split(str, charset string) []string {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

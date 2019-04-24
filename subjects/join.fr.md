@@ -1,10 +1,10 @@
-# join
+## join
 
-## Instructions
+### Instructions
 
 Écrire une fonction qui retourne la concaténation de deux `string` **séparées** par le séparateur passées en paramètres.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func Join(strs []string, sep string) string{
@@ -12,7 +12,7 @@ func Join(strs []string, sep string) string{
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

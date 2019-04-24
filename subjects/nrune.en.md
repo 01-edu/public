@@ -1,10 +1,10 @@
-# nrune
+## nrune
 
-## Instructions
+### Instructions
 
 Write a function that returns the nth `rune` of a `string`.
 
-## Expected function
+### Expected function
 
 ```go
 func NRune(s string, n int) rune {
@@ -12,7 +12,7 @@ func NRune(s string, n int) rune {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

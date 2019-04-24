@@ -1,10 +1,10 @@
-# toupper
+## toupper
 
-## Instructions
+### Instructions
 
 Écrire une fonction qui met en majuscule chaque lettre d'une `string`.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func ToUpper(s string) string {
@@ -12,7 +12,7 @@ func ToUpper(s string) string {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

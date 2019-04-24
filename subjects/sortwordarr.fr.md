@@ -1,17 +1,17 @@
-# sortwordarr
+## sortwordarr
 
-## Instructions
+### Instructions
 
 Écrire une fonction `SortWordArr` qui trie par ordre `ascii` un tableau de `string`.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func SortWordArr(array []string) {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

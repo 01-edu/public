@@ -1,12 +1,12 @@
-# strrev
+## strrev
 
-## Instructions
+### Instructions
 
 - Écrire une fonction qui inverse une chaîne de caractères(`string`).
 
 - Cette fonction **retournera** la chaîne de caractères s(`string`).
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func StrRev(s string) string {
@@ -14,7 +14,7 @@ func StrRev(s string) string {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

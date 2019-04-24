@@ -1,19 +1,19 @@
-# concatparams
+## concatparams
 
-## Instructions
+### Instructions
 
 Écrire une fonction qui prend les arguments en paramètres et les retournes dans une `string`.
 
 Les arguments doivent être **séparés** par un `\n`.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func ConcatParams(args []string) string {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
