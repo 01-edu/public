@@ -1,15 +1,15 @@
 ## btreelevelcount
+
 ### Instructions
 
-Write a function, BTreeLevelCount, that return the number of levels of the tree (height of the tree) 
+Write a function, BTreeLevelCount, that return the number of levels of the tree (height of the tree)
 
 ### Expected function
 
 ```go
 func BTreeLevelCount(root *piscine.TreeNode) int {
-	
-}
 
+}
 ```
 
 ### Usage
@@ -20,8 +20,8 @@ Here is a possible [program](TODO-LINK) to test your function :
 package main
 
 import (
-       "fmt"
-       student ".."
+  "fmt"
+  student ".."
 )
 
 func main() {

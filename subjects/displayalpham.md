@@ -1,4 +1,5 @@
 ## displayalpham
+
 ### Instructions
 
 Write a program that displays the alphabet, with even letters in uppercase, and
@@ -12,5 +13,5 @@ Example :
 student@ubuntu:~/student/displayalpham$ go build
 student@ubuntu:~/student/displayalpham$ ./displayalpham | cat -e
 aBcDeFgHiJkLmNoPqRsTuVwXyZ$
-student@ubuntu:~/student/displayalpham$ 
+student@ubuntu:~/student/displayalpham$
 ```

@@ -2,7 +2,6 @@
 
 ### Instructions
 
-
 Write a program that takes two strings and checks whether it's possible to write the first string with characters from the second string, while respecting the order in which these characters appear in the second string.
 
 - If it's possible, the program displays the string followed by a `\n`, otherwise it simply displays a `\n`.
@@ -21,5 +20,5 @@ student@ubuntu:~/piscine/test$ ./test "error"
 
 student@ubuntu:~/piscine/test$ ./test
 
-student@ubuntu:~/piscine/test$ 
+student@ubuntu:~/piscine/test$
 ```

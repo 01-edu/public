@@ -1,4 +1,5 @@
 ## btreeapplybylevel
+
 ### Instructions
 
 Write a function, BTreeApplyByLevel, that applies the function given by fn to each node of the tree given by root.
@@ -11,7 +12,6 @@ This function must have the following signature.
 func BTreeApplyByLevel(root *TreeNode, fn interface{})  {
 	
 }
-
 ```
 
 ### Usage
@@ -22,8 +22,8 @@ Here is a possible [program](TODO-LINK) to test your function :
 package main
 
 import (
-       "fmt"
-       student ".."
+  "fmt"
+  student ".."
 )
 
 func main() {

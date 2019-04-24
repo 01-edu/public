@@ -21,5 +21,5 @@ student@ubuntu:~/piscine/test$ ./test "hello there"
 uryyb gurer
 student@ubuntu:~/piscine/test$ ./test
 
-student@ubuntu:~/piscine/test$ 
+student@ubuntu:~/piscine/test$
 ```

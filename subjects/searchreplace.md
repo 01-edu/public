@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a program that takes 3 arguments, the first  arguments is a string in which to replace a letter (2nd argument) by another one (3rd argument).
+Write a program that takes 3 arguments, the first arguments is a string in which to replace a letter (2nd argument) by another one (3rd argument).
 
 - If the number of arguments is not 3, just display a newline.
 
@@ -18,5 +18,5 @@ student@ubuntu:~/piscine/test$ ./test "abcd" "z" "l"
 abcd
 student@ubuntu:~/piscine/test$ ./test "something" "a" "o" "b" "c"
 
-student@ubuntu:~/piscine/test$ 
+student@ubuntu:~/piscine/test$
 ```

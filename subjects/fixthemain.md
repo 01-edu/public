@@ -1,4 +1,4 @@
-## Fix the Main 
+## Fix the Main
 
 ### Instructions
 
@@ -29,6 +29,7 @@ func IsDoorClose(ptrDoor *Door) bool {
 	PutStr("Door is close ?")
 }
 ```
+
 ### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :

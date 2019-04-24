@@ -1,4 +1,5 @@
 ## displayalrevm
+
 ### Instructions
 
 Write a program that displays the alphabet in reverse, with even letters in
@@ -12,5 +13,5 @@ Example :
 student@ubuntu:~/student/displayalrevm$ go build
 student@ubuntu:~/student/displayalrevm$ ./displayalrevm | cat -e
 aBcDeFgHiJkLmNoPqRsTuVwXyZ$
-student@ubuntu:~/student/displayalrevm$ 
+student@ubuntu:~/student/displayalrevm$
 ```

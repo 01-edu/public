@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function `CreateElem` that creates a new element of type`Node`. 
+Write a function `CreateElem` that creates a new element of type`Node`.
 
 ### Expected function and structure
 
@@ -14,7 +14,6 @@ type Node struct {
 func CreateElem(n *Node, value int) {
 
 }
-
 ```
 
 ### Usage

@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a program that takes a string and reverses the case of all its  letters.
+Write a program that takes a string and reverses the case of all its letters.
 
 - Other characters remain unchanged.
 
@@ -16,7 +16,7 @@ Write a program that takes a string and reverses the case of all its  letters.
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test "SometHingS iS WronG"
 sOMEThINGs Is wRONg
-student@ubuntu:~/piscine/test$ ./test 
+student@ubuntu:~/piscine/test$ ./test
 
-student@ubuntu:~/piscine/test$ 
+student@ubuntu:~/piscine/test$
 ```

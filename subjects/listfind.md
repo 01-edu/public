@@ -49,7 +49,7 @@ func main() {
 	piscine.ListPushBack(link, "hello")
 	piscine.ListPushBack(link, "hello2")
 	piscine.ListPushBack(link, "hello3")
-	
+
 	fmt.Println(piscine.ListFind(link, CompStr))
 }
 ```

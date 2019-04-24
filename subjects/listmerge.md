@@ -22,7 +22,7 @@ type List struct {
 }
 
 func listMerge(l1 *List, l2 *List) {
-	
+
 }
 ```
 

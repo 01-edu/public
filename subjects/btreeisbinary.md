@@ -1,4 +1,5 @@
 ## btreeisbinary
+
 ### Instructions
 
 Write a function, BTreeIsBinary, that returns true only if the tree given by root follows the binary search tree properties.
@@ -9,9 +10,8 @@ This function must have the following signature.
 
 ```go
 func BTreeIsBinary(root *TreeNode) bool {
-	
-}
 
+}
 ```
 
 ### Usage
@@ -22,8 +22,8 @@ Here is a possible [program](TODO-LINK) to test your function :
 package main
 
 import (
-       "fmt"
-       student ".."
+  "fmt"
+  student ".."
 )
 
 func main() {

@@ -1,4 +1,5 @@
 ## btreemin
+
 ### Instructions
 
 Write a function, BTreeMin, that returns the node with the minimum value in the tree given by root
@@ -9,9 +10,8 @@ This function must have the following signature.
 
 ```go
 func BTreeMin(root *TreeNode) *TreeNode {
-	
-}
 
+}
 ```
 
 ### Usage
@@ -22,8 +22,8 @@ Here is a possible [program](TODO-LINK) to test your function :
 package main
 
 import (
-       "fmt"
-       student ".."
+  "fmt"
+  student ".."
 )
 
 func main() {
@@ -42,5 +42,5 @@ And its output :
 student@ubuntu:~/student/btreemin$ go build
 student@ubuntu:~/student/btreemin$ ./btreemin
 1
-student@ubuntu:~/student/btreemin$ 
+student@ubuntu:~/student/btreemin$
 ```

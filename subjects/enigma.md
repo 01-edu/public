@@ -1,4 +1,5 @@
 ## enigma
+
 ### Instructions
 
 Write a function called `Enigma` that receives poiters to functions and move its values around to hide them
@@ -11,9 +12,8 @@ This function must have the following signature.
 
 ```go
 func Enigma(a ***int, b *int, c *******int, d ****int) {
-	
-}
 
+}
 ```
 
 ### Usage
@@ -24,8 +24,8 @@ Here is a possible [program](TODO-LINK) to test your function :
 package main
 
 import (
-       "fmt"
-       student ".."
+	"fmt"
+	student ".."
 )
 
 func main() {
@@ -82,5 +82,5 @@ After using Enigma
 6
 5
 7
-student@ubuntu:~/student/enigma$ 
+student@ubuntu:~/student/enigma$
 ```

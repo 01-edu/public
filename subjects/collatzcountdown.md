@@ -1,4 +1,5 @@
 ## collatzcountdown
+
 ### Instructions
 
 Write a function, CollatzCountdown, that returns the number of steps to reach 1 using the collatz countdown.
@@ -9,9 +10,8 @@ The function must have the following signature.
 
 ```go
 func CollatzCountdown(start int) int {
-	
-}
 
+}
 ```
 
 ### Usage
@@ -22,8 +22,8 @@ Here is a possible [program](TODO-LINK) to test your function :
 package main
 
 import (
-       "fmt"
-       student ".."
+  "fmt"
+  student ".."
 )
 
 func main() {
@@ -38,5 +38,5 @@ And its output :
 student@ubuntu:~/student/collatzcountdown$ go build
 student@ubuntu:~/student/collatzcountdown$ ./collatzcountdown
 10
-student@ubuntu:~/student/collatzcountdown$ 
+student@ubuntu:~/student/collatzcountdown$
 ```

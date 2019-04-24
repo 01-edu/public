@@ -1,4 +1,5 @@
 ## btreedeletenode
+
 ### Instructions
 
 Write a function, BTreeDeleteNode, that deletes 'node' from the tree given by root.
@@ -24,8 +25,8 @@ Here is a possible [program](TODO-LINK) to test your function :
 package main
 
 import (
-       "fmt"
-       student ".."
+	"fmt"
+	student ".."
 )
 
 func main() {

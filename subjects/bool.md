@@ -1,4 +1,4 @@
- # Boolean
+## Boolean
 
 ### Instructions
 
@@ -7,7 +7,6 @@ Create a `.go` file and copy the code below into our file
 - The main task is to return a working program.
 
 ```go
-
 func printStr(str string) {
 	arrayStr := []rune(str)
 
@@ -18,7 +17,6 @@ func printStr(str string) {
 }
 
 func isEven(nbr int) boolean {
-
 	if even(nbr) == 1 {
 		return yes
 	} else {
@@ -27,7 +25,6 @@ func isEven(nbr int) boolean {
 }
 
 func main() {
-
 	if isEven(lengthOfArg) == 1 {
 		printStr(EvenMsg)
 	} else {
@@ -37,10 +34,13 @@ func main() {
 ```
 
 ### Expected output
-```go 
+
+```console
 I have an even number of arguments
 ```
+
 ### Or
-```go
+
+```console
 I have an odd number of arguments
 ```

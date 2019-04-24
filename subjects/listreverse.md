@@ -4,7 +4,7 @@
 
 Write a function `ListReverse` that reverses the elements order of a given linked list.
 
-- Use pointers when ever you can 
+- Use pointers when ever you can
 
 ### Expected function and structure
 

@@ -1,4 +1,5 @@
 ## btreemax
+
 ### Instructions
 
 Write a function, BTreeMax, that returns the node with the maximum value in the tree given by root
@@ -11,7 +12,6 @@ This function must have the following signature.
 func BTreeMax(root *TreeNode) *TreeNode {
 	
 }
-
 ```
 
 ### Usage
@@ -22,8 +22,8 @@ Here is a possible [program](TODO-LINK) to test your function :
 package main
 
 import (
-       "fmt"
-       student ".."
+  "fmt"
+  student ".."
 )
 
 func main() {

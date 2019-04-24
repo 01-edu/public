@@ -2,7 +2,6 @@
 
 ### Instructions
 
-
 Write a program that takes two strings and displays, without doubles, the characters that appear in both strings, in the order they appear in the first one.
 
 - The display will be followed by a `\n`.
@@ -17,5 +16,5 @@ student@ubuntu:~/piscine/test$ ./test "padinton" "paqefwtdjetyiytjneytjoeyjnejey
 padinto
 student@ubuntu:~/piscine/test$ ./test ddf6vewg64f  twthgdwthdwfteewhrtag6h4ffdhsd
 df6ewg4
-student@ubuntu:~/piscine/test$ 
+student@ubuntu:~/piscine/test$
 ```

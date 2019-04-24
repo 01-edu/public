@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function `ListForEachIf` that applies a function given as argument to the information within some links of the list. 
+Write a function `ListForEachIf` that applies a function given as argument to the information within some links of the list.
 
 - For this you will have to create a function `CompStr`, that returns a `bool`, to compare each elemente of the linked list, to see if it is a string, and than apply the function in the argument of `ListForEachIf`.
 
@@ -62,6 +62,7 @@ func PrintList(l *list) {
 
 	fmt.Print(l.tail)
 }
+
 func main() {
 	link := &list{}
 
