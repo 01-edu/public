@@ -9,40 +9,20 @@
 >
 > This documentation explains how to manage these steps. 
 
-## Creating a step:
+## Create your step child object
 ### Create a new object for your step in the admin
-> (in *Admin* > *Add new object*)
+> Information is available for object's creation: [Object creation](https://github.com/01-edu/public/blob/master/doc/object-creation.md)
 
-<img width="664" alt="Capture d’écran 2019-04-22 à 15 57 37" src="https://user-images.githubusercontent.com/35296671/56507169-6505a500-6518-11e9-89bb-04c7fd9b41ca.png">
-<img width="450" alt="Capture d’écran 2019-04-22 à 15 58 21" src="https://user-images.githubusercontent.com/35296671/56507180-6afb8600-6518-11e9-97a5-4dcff8f0a069.png">
-
-
-* The title of your object will be the title displayed to your candidates (for the step you are creating). Use an intellegible title for your user.
-  > NB: you can always edit it in the *Admin*
-* This object must have the same type as its future parent object ("signup" or "onboarding").
+* This object must have the same type as its future parent object (*signup* or *onboarding*).
 
 > Your step is then available in the *Admin*. You can find it in the section of its type (*SignUp* or *Onboarding*) or thanks to the search bar of the cursus object's page.
  
 
 ### Add this new object as a child of your parent's object
 
-#### 1. Edit the parent object (*Sign up* or *Administration*)
-<img width="640" alt="Capture d’écran 2019-04-22 à 19 24 23" src="https://user-images.githubusercontent.com/35296671/56517407-cb98bc00-6534-11e9-98d6-a2b1c0193a38.png">
-<img width="640" alt="Capture d’écran 2019-04-22 à 19 24 10" src="https://user-images.githubusercontent.com/35296671/56517421-d0f60680-6534-11e9-86ef-97fb9e59786e.png">
+* Edit the parent object: *Sign up* or *Administration*
 
-#### 2. Go to *Children* > *Add a child*
-![add child to major object](https://user-images.githubusercontent.com/35296671/56506977-de50c800-6517-11e9-9c71-d19a1ec4e5cd.png)
-
-#### 3. Set up the new child:
-* Enter its name in the input "Add a child name"
-* Select your step object in the select input
-* Click on "ADD"
-
-> Your step is then related to its parent. You can see it in the *Children* section of the parent's object. There, you can now: 
-> * Delete the step as a child of its parent (the actual object of your step will not be deleted).
-> * Reorder it in the children's list, by dragging it to the place you want.
-> * Go to update its settings by clicking on the eye of its reference (it will redirect you to the actual object of your step).
-<img width="1229" alt="Capture d’écran 2019-04-22 à 19 51 12" src="https://user-images.githubusercontent.com/35296671/56518936-a1e19400-6538-11e9-81c7-520ffd365cff.png">
+> Information is available for object's creation: [Child object creation](https://github.com/01-edu/public/blob/master/doc/child-object-creation.md)
 
 ## Settings for a `form` step
 > In the step object you have created, 2 attributes must be filled:
