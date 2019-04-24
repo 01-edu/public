@@ -1,12 +1,12 @@
-# capitalize
+## capitalize
 
-## Instructions
+### Instructions
 
 Write a function that capitalizes the first letter of each word **and** lowercases the rest of each word of a `string`.
 
 A word is a sequence of **alphanumerical** characters.
 
-## Expected function
+### Expected function
 
 ```go
 func Capitalize(s string) string {
@@ -14,7 +14,7 @@ func Capitalize(s string) string {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

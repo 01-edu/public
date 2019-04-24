@@ -1,10 +1,10 @@
-# listpushback
+## listpushback
 
-## Instructions
+### Instructions
 
 Write a function `ListLast` that returns the last element of the linked list.
 
-## Expected function and structure
+### Expected function and structure
 
 ```go
 type Node struct {
@@ -21,7 +21,7 @@ func ListLast(l *list) *list {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

@@ -1,10 +1,10 @@
-# tolower
+## tolower
 
-## Instructions
+### Instructions
 
 Écrire une fonction qui met en minuscule chaque lettre d'une `string`.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func ToLower(s string) string {
@@ -12,7 +12,7 @@ func ToLower(s string) string {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

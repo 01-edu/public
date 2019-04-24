@@ -1,10 +1,10 @@
-# isprime
+## isprime
 
-## Intructions
+### Intructions
 
 Écrire une fonction qui renvoie `true` si l'`int` passé en paramètre est un nombre premier. Autrement elle renvoie `false`.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func IsPrime(int nb) bool {
@@ -12,7 +12,7 @@ func IsPrime(int nb) bool {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

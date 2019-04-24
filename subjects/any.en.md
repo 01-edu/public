@@ -1,19 +1,19 @@
-# any
+## any
 
-## Instructions
+### Instructions
 
 Write a function `Any` that returns `true`, for a `string` array:
 
 - if, when that `string` array is passed through an `f` function, at least one element returns `true`.
 
-## Expected function
+### Expected function
 
 ```go
 func Any(f func(string) bool, arr []string) bool {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

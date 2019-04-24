@@ -1,19 +1,19 @@
-# concatparams
+## concatparams
 
-## Instructions
+### Instructions
 
 Write a function that takes the arguments reveived in parameters and returns them as a `string`.
 
 The arguments must be **separated** by a `\n`.
 
-## Expected function
+### Expected function
 
 ```go
 func ConcatParams(args []string) string {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

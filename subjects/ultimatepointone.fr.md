@@ -1,10 +1,10 @@
-# ultimatepointone
+## ultimatepointone
 
-## Instructions
+### Instructions
 
 - Écrire une fonction qui prend un **pointeur sur pointeur sur pointeur sur int** en argument et qui assignes à cet int la valeur 1.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func UltimatePointOne(n ***int) {
@@ -12,7 +12,7 @@ func UltimatePointOne(n ***int) {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

@@ -1,6 +1,6 @@
-# recursivepower
+## recursivepower
 
-## Intructions
+### Intructions
 
 Write an **recursive** function that returns the power of the `int` passed as parameter.
 
@@ -8,7 +8,7 @@ Negative powers will return `0`. Overflows do **not** have to be dealt with.
 
 `for` is **forbidden** for this exercise.
 
-## Expected function
+### Expected function
 
 ```go
 func RecursivePower(int nb, int power) int {
@@ -16,7 +16,7 @@ func RecursivePower(int nb, int power) int {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

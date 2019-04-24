@@ -1,6 +1,6 @@
-# eightqueens
+## eightqueens
 
-## Intructions
+### Intructions
 
 Write a function that prints the solutions to the [eight queens puzzle](https://en.wikipedia.org/wiki/Eight_queens_puzzle).
 
@@ -22,7 +22,7 @@ The index of the placement of a queen starts at 1.
 It reads from left to right and each digit is the position for each column.
 The solutions will be printed in ascending order.
 
-## Expected function
+### Expected function
 
 ```go
 package main

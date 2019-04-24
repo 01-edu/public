@@ -1,17 +1,17 @@
-# advancedsortwordarr
+## advancedsortwordarr
 
-## Instructions
+### Instructions
 
 Write a function `AdvancedSortWordArr` that sorts a `string` array, based on the function `f` passed in parameter.
 
-## Expected function
+### Expected function
 
 ```go
 func AdvancedSortWordTab(array []string, f func(a, b string) int) {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

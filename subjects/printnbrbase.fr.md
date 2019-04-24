@@ -1,6 +1,6 @@
-# putnbrbase
+## putnbrbase
 
-## Instructions
+### Instructions
 
 Écrire une fonction qui affiche un `int` dans une base en `string` passés en paramètres.
 
@@ -14,7 +14,7 @@ Régles de validité d'une base :
 
 La fonction doit gérer les nombres négatifs. (comme montré sur l'exemple)
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func PrintNbrBase(nbr int, base string) () {
@@ -22,7 +22,7 @@ func PrintNbrBase(nbr int, base string) () {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

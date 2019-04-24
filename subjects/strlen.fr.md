@@ -1,10 +1,10 @@
-# strlen
+## strlen
 
-## Instructions
+### Instructions
 
 - Écrire une fonction qui compte le nombre de caractères d'une chaîne et qui retourne le nombre trouvé.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func StrLen(str string) int {
@@ -12,7 +12,7 @@ func StrLen(str string) int {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

@@ -1,12 +1,12 @@
-# printcomb
+## printcomb
 
-## Instructions
+### Instructions
 
 Write a [function](TODO-LINK) that prints in ascending order on a single line all unique combinations of three different digits so that the first digit is less than the second and the second is less than the third.
 
 These combinations are separated by a comma and a space.
 
-## Expected function
+### Expected function
 
 ```go
 func PrintComb() {
@@ -14,7 +14,7 @@ func PrintComb() {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

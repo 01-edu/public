@@ -1,6 +1,6 @@
-# sortparams
+## sortparams
 
-## Instructions
+### Instructions
 
 Write a **program** that prints the arguments received in the command line in ASCII order.
 

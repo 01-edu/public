@@ -1,19 +1,19 @@
-# any
+## any
 
-## Instructions
+### Instructions
 
 Écrire une fonction `Any` qui retournes `true`, pour un tableau de `string`:
 
 - si, lorsque ce tableau de `string` est passé à travers une fonction `f`, au moins un element retournes `true`.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func Any(f func(string) bool, arr []string) bool {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

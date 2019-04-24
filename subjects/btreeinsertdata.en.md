@@ -1,12 +1,12 @@
-# btreeinsertdata
+## btreeinsertdata
 
-## Instructions
+### Instructions
 
 Write a function that inserts new data in a binary search tree
 following the properties of binary search trees.
 The nodes must be defined as follows:
 
-## Expected function
+### Expected function
 
 ```go
 type TreeNode struct {
@@ -19,7 +19,7 @@ func BTreeInsertData(root *TreeNode, data string) *TreeNode {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

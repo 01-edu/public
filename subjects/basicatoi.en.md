@@ -1,6 +1,6 @@
-# basicatoi
+## basicatoi
 
-## Instructions
+### Instructions
 
 - Write a function that simulates the behaviour of the atoi function in Go. Atoi transforms a number defined as a `string` in a number defined as an `int`.
 
@@ -10,7 +10,7 @@
 
 - This function will **only** have to return the `int` `nbr`. For this exercise the `error` return of atoi is not required.
 
-## Expected function
+### Expected function
 
 ```go
 func BasicAtoi(s string) int {
@@ -18,7 +18,7 @@ func BasicAtoi(s string) int {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

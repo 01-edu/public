@@ -1,6 +1,6 @@
-# cl-camp3
+## cl-camp3
 
-## Instructions
+### Instructions
 
 "start looking ..."
 
@@ -10,6 +10,6 @@ Create a file `look`, which will look for and show, in the current directory and
 - all the files ending with a `z` and,
 - all files starting with `z` and ending with `a!`.
 
-## Hint
+### Hint
 
 Read the `find` man...

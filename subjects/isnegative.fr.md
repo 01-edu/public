@@ -1,10 +1,10 @@
-# isnegative
+## isnegative
 
-## Instructions
+### Instructions
 
 Écrire une [fonction](TODO-LINK) qui affiche `'T'` (true) sur une seule ligne si l'`int` passé en paramètre est négatif, sinon elle affiche `'F'` (false).
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func IsNegative(nb int) {
@@ -12,7 +12,7 @@ func IsNegative(nb int) {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

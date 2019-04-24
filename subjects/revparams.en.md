@@ -1,6 +1,6 @@
-# revparams
+## revparams
 
-## Instructions
+### Instructions
 
 Write a **program** that prints the arguments received in the command line in a reverse order.
 

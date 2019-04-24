@@ -1,12 +1,12 @@
-# capitalize
+## capitalize
 
-## Instructions
+### Instructions
 
 Écrire une fonction qui met en majuscule la premiere lettre de chaque mot et en minuscule les autres lettres du reste du mot d'une `string`.
 
 Un mot est une suite de caractères **alphanumériques**.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func Capitalize(s string) string {
@@ -14,7 +14,7 @@ func Capitalize(s string) string {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

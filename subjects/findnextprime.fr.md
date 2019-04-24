@@ -1,10 +1,10 @@
-# findnextprime
+## findnextprime
 
-## Intructions
+### Intructions
 
 Écrire une fonction qui renvoie le premier nombre premier qui est égal ou supérieur à l'`int` passé en paramètre.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func FindNextPrime(int nb) int {
@@ -12,7 +12,7 @@ func FindNextPrime(int nb) int {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

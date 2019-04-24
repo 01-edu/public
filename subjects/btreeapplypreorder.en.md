@@ -1,10 +1,10 @@
-# btreeinsertdata
+## btreeinsertdata
 
-## Instructions
+### Instructions
 
 Write a function that applies a function using a preorder walk to each element in the tree
 
-## Expected function
+### Expected function
 
 ```go
 func BTreeApplyPreorder(root *piscine.TreeNode, f func(...interface{}) (int, error)) {
@@ -12,7 +12,7 @@ func BTreeApplyPreorder(root *piscine.TreeNode, f func(...interface{}) (int, err
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

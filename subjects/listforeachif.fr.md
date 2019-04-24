@@ -1,17 +1,17 @@
-# countif
+## countif
 
-## Instructions
+### Instructions
 
 Écrire une fonction `CountIf` qui retournes le nombre d'éléments d'un tableau de `string` pour lesquels la fonction `f` retourne `true`.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func CountIf(f func(string) bool, tab []string) int {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

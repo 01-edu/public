@@ -1,6 +1,6 @@
-# doop
+## doop
 
-## Instructions
+### Instructions
 
 Write a [program](TODO-LINK) that is called `doop`.
 
@@ -16,7 +16,7 @@ In case of an invalid number of arguments the program prints nothing.
 
 `fmt.Print` is authorized.
 
-## Usage
+### Usage
 
 ```console
 student@ubuntu:~/piscine/test$ go build doop.go

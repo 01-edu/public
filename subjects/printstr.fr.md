@@ -1,10 +1,10 @@
-# putstr
+## putstr
 
-## Instructions
+### Instructions
 
 - Écrire une fonction qui affiche un à un les caractères d'une chaîne à l'écran.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func PrintStr(str string) {
@@ -12,7 +12,7 @@ func PrintStr(str string) {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

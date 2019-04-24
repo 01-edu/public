@@ -1,19 +1,19 @@
-# splitwhitespaces
+## splitwhitespaces
 
-## Instructions
+### Instructions
 
 Écrire une fonction qui sépare les mots d'une `string` et les met dans un tableau de `string`.
 
 Les séparateurs sont les espaces, les tabulations et les retours à la ligne.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func SplitWhiteSpaces(str string) []string {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

@@ -1,10 +1,10 @@
-# concat
+## concat
 
-## Instructions
+### Instructions
 
 Write a function that returns the concatenation of two `string` passed in arguments.
 
-## Expected function
+### Expected function
 
 ```go
 func Concat(str1 string, str2 string) string {
@@ -12,7 +12,7 @@ func Concat(str1 string, str2 string) string {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

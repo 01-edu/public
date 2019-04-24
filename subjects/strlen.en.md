@@ -1,10 +1,10 @@
-# strlen
+## strlen
 
-## Instructions
+### Instructions
 
 - Write a function that counts the characters of a string and that returns that count.
 
-## Expected function
+### Expected function
 
 ```go
 func StrLen(str string) int {
@@ -12,7 +12,7 @@ func StrLen(str string) int {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

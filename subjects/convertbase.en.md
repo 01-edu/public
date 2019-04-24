@@ -1,6 +1,6 @@
-# convertbase
+## convertbase
 
-## Instructions
+### Instructions
 
 Write a function that returns the convertion of a `string` number from one `string` baseFrom to one `string` baseTo.
 
@@ -8,14 +8,14 @@ Only valid bases will be tested.
 
 Negative numbers will not be tested.
 
-## Expected function
+### Expected function
 
 ```go
 func ConvertBase(nbr, baseFrom, baseTo string) string {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

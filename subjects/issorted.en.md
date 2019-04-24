@@ -1,6 +1,6 @@
-# issorted
+## issorted
 
-## Instructions
+### Instructions
 
 Write a function `IsSorted` that returns `true` if the slice of `int` is sorted, and that returns `false` otherwise.
 
@@ -9,14 +9,14 @@ it returns `0` if they are equal and it returns a negative `int` otherwise.
 
 To do your testing you have to write your own `f` function.
 
-## Expected function
+### Expected function
 
 ```go
 func IsSorted(f func(a, b int) int, tab []int) int {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function (without `f`):
 

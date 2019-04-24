@@ -1,6 +1,6 @@
-# cl-camp5
+## cl-camp5
 
-## Instructions
+### Instructions
 
 "keep looking..."
 
@@ -10,7 +10,7 @@ Create a file `lookagain.sh`, which will look for, from the current directory an
 
 That command will only show the name of the files without the `.sh`.
 
-## Usage
+### Usage
 
 ```console
 student@ubuntu:~/piscine/test$ export HERO_ID=1
@@ -21,6 +21,6 @@ file3$
 student@ubuntu:~/piscine/test$
 ```
 
-## Hint
+### Hint
 
 A little `cut`ing might be useful...

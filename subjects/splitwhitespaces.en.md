@@ -1,19 +1,19 @@
-# splitwhitespaces
+## splitwhitespaces
 
-## Instructions
+### Instructions
 
 Write a function that separates the words of a `string` and puts them in a `string` array.
 
 The separators are spaces, tabs and newlines.
 
-## Expected function
+### Expected function
 
 ```go
 func SplitWhiteSpaces(str string) []string {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

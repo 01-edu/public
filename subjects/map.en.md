@@ -1,17 +1,17 @@
-# map
+## map
 
-## Instructions
+### Instructions
 
 Write a function `Map` that, for an `int` array, applies a function of this type `func(int) bool` on each elements of that array and returns an array of all the return values.
 
-## Expected function
+### Expected function
 
 ```go
 func Map(f func(int) bool, arr []int) []bool {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

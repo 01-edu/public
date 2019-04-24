@@ -1,6 +1,6 @@
-# eightqueens
+## eightqueens
 
-## Intructions
+### Intructions
 
 Écrire une [fonction](TODO-LINK) qui affiche toutes les solutions du [problème des huit dames](https://en.wikipedia.org/wiki/Eight_queens_puzzle).
 
@@ -22,7 +22,7 @@ L'index du placement d'une reine commence à 1.
 Elle se lit de gauche à droite et chaque chiffre est la position pour chacune des colonnes.
 Les solutions seront affichées dans l'ordre croissant.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 package main

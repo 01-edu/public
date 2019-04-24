@@ -1,6 +1,6 @@
-# putnbrbase
+## putnbrbase
 
-## Instructions
+### Instructions
 
 Write a function that prints an `int` in a `string` base passed in parameters.
 
@@ -14,7 +14,7 @@ Validity rules for a base :
 
 The function has to manage negative numbers. (as shown in the example)
 
-## Expected function
+### Expected function
 
 ```go
 func PrintNbrBase(nbr int, base string) () {
@@ -22,7 +22,7 @@ func PrintNbrBase(nbr int, base string) () {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

@@ -1,10 +1,10 @@
-# btreeinsertdata
+## btreeinsertdata
 
-## Instructions
+### Instructions
 
 Write a function that searches for an item with a data element equal to elem and return that node
 
-## Expected function
+### Expected function
 
 ```go
 func BTreeSearchItem(root *piscine_test.TreeNode, elem string) *piscine_test.TreeNode {
@@ -13,7 +13,7 @@ func BTreeSearchItem(root *piscine_test.TreeNode, elem string) *piscine_test.Tre
 
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

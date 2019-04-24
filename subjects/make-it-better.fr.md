@@ -1,6 +1,6 @@
-# make-it-better
+## make-it-better
 
-## Instructions
+### Instructions
 
 Créer les fichiers et dossiers de tel sorte que lorsque cette commande `ls` ci-dessous est utilisée, l'`output` ressemble à cela :
 

@@ -1,12 +1,12 @@
-# printcomb
+## printcomb
 
-## Instructions
+### Instructions
 
 Écrire une [fonction](TODO-LINK) qui affiche sur une seule ligne dans l'ordre croissant toutes les combinaisons possibles de trois chiffres différents tels que le premier est inférieur au second et le second est inférieur au troisième.
 
 Les combinaisons sont séparées par une virgule et un espace.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func PrintComb() {
@@ -14,7 +14,7 @@ func PrintComb() {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

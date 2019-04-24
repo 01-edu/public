@@ -1,10 +1,10 @@
-# swap
+## swap
 
-## Instructions
+### Instructions
 
 - Write a function that swaps the contents of two **pointers to an int** (`*int`).
 
-## Expected function
+### Expected function
 
 ```go
 func Swap(a *int, b *int) {
@@ -12,7 +12,7 @@ func Swap(a *int, b *int) {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

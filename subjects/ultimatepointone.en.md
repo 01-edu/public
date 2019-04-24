@@ -1,10 +1,10 @@
-# ultimatepointone
+## ultimatepointone
 
-## Instructions
+### Instructions
 
 - Write a function that takes a **pointer to a pointer to a pointer to an int** as argument and gives to this int the value of 1.
 
-## Expected function
+### Expected function
 
 ```go
 func UltimatePointOne(n ***int) {
@@ -12,7 +12,7 @@ func UltimatePointOne(n ***int) {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

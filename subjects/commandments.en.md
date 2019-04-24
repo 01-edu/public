@@ -6,7 +6,7 @@ objectives: reading the rules
 skills: git, github, reading
 ---
 
-# commandments
+## commandments
 
 A few basic principles to follow
 
@@ -14,7 +14,7 @@ A few basic principles to follow
   <img width="476" height="600" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/MCC-31231_Mozes_toont_de_wetstafelen_%281%29.tif/lossy-page1-476px-MCC-31231_Mozes_toont_de_wetstafelen_%281%29.tif.jpg">
 </p>
 
-## The Commandements _(read them)_
+### The Commandements _(read them)_
 
 - Le numérique est ta passion.
 
@@ -100,7 +100,7 @@ A few basic principles to follow
 
 - Si tu t’interroges ou ne comprends pas nos choix pédagogiques, demande nous. On ne fait généralement rien au hasard.
 
-## Required
+### Required
 
 You [clone](http://lmgtfy.com/?q=git+clone) your [fork](http://lmgtfy.com/?q=github+fork) of this [repository](http://lmgtfy.com/?q=git+repository)
 and in it, you must create a file named `turn_in` () in which you write EXACTLY the following sentence ending by a line break.
@@ -109,6 +109,6 @@ and in it, you must create a file named `turn_in` () in which you write EXACTLY 
   <img width="600" height="300" src="https://i.imgur.com/2PPQ2iZ.png">
 </p>
 
-## Submiting your solution
+### Submiting your solution
 
 Your work should be commited and pushed in the master branch of your own fork of this repository.

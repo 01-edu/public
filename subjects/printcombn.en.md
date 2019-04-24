@@ -1,6 +1,6 @@
-# printcombn
+## printcombn
 
-## Instructions
+### Instructions
 
 - Write a function that prints all possible combinations of **n** different digits in ascending order.
 
@@ -12,7 +12,7 @@ below are your references for the **printing format** expected.
 
 - (for n = 3) '012, 013, 014, 015, 016, 017, 018, 019, 023,...689, 789'
 
-## Expected function
+### Expected function
 
 ```go
 func PrintCombN(n int) {
@@ -20,7 +20,7 @@ func PrintCombN(n int) {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

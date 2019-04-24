@@ -1,10 +1,10 @@
-# divmod
+## divmod
 
-## Instructions
+### Instructions
 
 - Écrire une fonction qui aura le format ci-dessous.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func DivMod(a int, b int, div *int, mod *int) {
@@ -16,7 +16,7 @@ func DivMod(a int, b int, div *int, mod *int) {
 - Le résultat de la division sera stocké dans l'int pointé par **div**.
 - Le reste de cette division sera stocké dans l'int pointé par **mod**.
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

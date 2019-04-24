@@ -1,6 +1,6 @@
-# make-it-better
+## make-it-better
 
-## Instructions
+### Instructions
 
 Create the files and directories so that when you use the command `ls` below the output will looks like this :
 

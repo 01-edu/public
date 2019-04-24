@@ -1,6 +1,6 @@
-# printwordstables
+## printwordstables
 
-## Instructions
+### Instructions
 
 Write a function that prints the words of a `string` array that will be returned a function `SplitWhiteSpaces`. (the testing will be done with ours)
 
@@ -8,14 +8,14 @@ Each word is on a single line.
 
 Each word ends with a `\n`.
 
-## Expected function
+### Expected function
 
 ```go
 func PrintWordsTables(table []string) {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

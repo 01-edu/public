@@ -1,12 +1,12 @@
-# strrev
+## strrev
 
-## Instructions
+### Instructions
 
 - Write a function that reverses a `string`.
 
 - This function will **return** the s `string`.
 
-## Expected function
+### Expected function
 
 ```go
 func StrRev(s string) string {
@@ -14,7 +14,7 @@ func StrRev(s string) string {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

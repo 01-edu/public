@@ -1,10 +1,10 @@
-# isnumeric
+## isnumeric
 
-## Instructions
+### Instructions
 
 Écrire une fonction qui retourne `true` si la `string` passée en paramètre contient seulement des caractères numériques, et qui retourne `false` autrement.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func IsNumeric(str string) bool {
@@ -12,7 +12,7 @@ func IsNumeric(str string) bool {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

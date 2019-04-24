@@ -1,12 +1,12 @@
-# printnbr
+## printnbr
 
-## Instructions
+### Instructions
 
 Écrire une fonction qui affiche un `int` passé en paramètre.
 Toutes les valeurs de type `int` doivent être affichables.
 Vous ne pouvez pas convertir en `int64`.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func PrintNbr(int n) {
@@ -14,7 +14,7 @@ func PrintNbr(int n) {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

@@ -1,10 +1,10 @@
-# swap
+## swap
 
-## Instructions
+### Instructions
 
 - Écrire une fonction qui échange les contenus de deux **pointeurs sur entier** (`*int`).
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func Swap(a *int, b *int) {
@@ -12,7 +12,7 @@ func Swap(a *int, b *int) {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

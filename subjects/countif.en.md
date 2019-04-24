@@ -1,17 +1,17 @@
-# countif
+## countif
 
-## Instructions
+### Instructions
 
 Write a function `CountIf` that returns the number of elements of a `string` array for which the `f` function returns `true`.
 
-## Expected function
+### Expected function
 
 ```go
 func CountIf(f func(string) bool, tab []string) int {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

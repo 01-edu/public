@@ -1,10 +1,10 @@
-# isprintable
+## isprintable
 
-## Instructions
+### Instructions
 
 Write a function that returns `true` if the `string` passed in parameter only contains printable characters, and that returns `false` otherwise.
 
-## Expected function
+### Expected function
 
 ```go
 package main
@@ -13,7 +13,7 @@ func IsPrintable(str string) bool {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

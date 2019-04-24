@@ -1,10 +1,10 @@
-# toupper
+## toupper
 
-## Instructions
+### Instructions
 
 Write a function that capitalizes each letter of `string`.
 
-## Expected function
+### Expected function
 
 ```go
 func ToUpper(s string) string {
@@ -12,7 +12,7 @@ func ToUpper(s string) string {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

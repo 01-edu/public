@@ -1,10 +1,10 @@
-# ultimatedivmod
+## ultimatedivmod
 
-## Instructions
+### Instructions
 
 - Write a function that will be formatted as below.
 
-## Expected function
+### Expected function
 
 ```go
 func UltimateDivMod(a *int, b *int) {
@@ -16,7 +16,7 @@ func UltimateDivMod(a *int, b *int) {
 - The result of this division will be stored in the int pointed by **a**.
 - The remainder of this division will be stored in the int pointed by **b**.
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

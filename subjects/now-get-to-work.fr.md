@@ -1,6 +1,6 @@
-# now-get-to-work
+## now-get-to-work
 
-## Instructions
+### Instructions
 
 "Quelque chose de terrible est arrivé"
 
@@ -8,7 +8,7 @@ Faîtes un clone de repo : https://github.com/01-edu/the-final-cl-test
 
 Rendez votre solution dans un fichier `my_answer.sh` qui l'affichera quand exécuté.
 
-## Usage
+### Usage
 
 ```console
 student@ubuntu:~/piscine/test$ ./my_answer.sh | cat -e
@@ -16,6 +16,6 @@ John Doe$
 student@ubuntu:~/piscine/test$
 ```
 
-## Hint
+### Hint
 
 "Vous pouvez combinez `head` et `tail`s..."

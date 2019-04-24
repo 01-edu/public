@@ -1,12 +1,12 @@
-# iterativefactorial
+## iterativefactorial
 
-## Intructions
+### Intructions
 
 Write an **iterative** function that returns the factorial of the `int` passed as parameter.
 
 Errors (non possible values or overflows) will return `0`.
 
-## Expected function
+### Expected function
 
 ```go
 func IterativeFactorial(int nb) int {
@@ -14,7 +14,7 @@ func IterativeFactorial(int nb) int {
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 

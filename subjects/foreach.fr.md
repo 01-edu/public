@@ -1,17 +1,17 @@
-# foreach
+## foreach
 
-## Instructions
+### Instructions
 
 Écrire une fonction `ForEach` qui, pour un tableau d'`int`, applique une fonction sur chaque éléments de ce tableau.
 
-## Fonction attendue
+### Fonction attendue
 
 ```go
 func ForEach(f func(int), arr []int) {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 

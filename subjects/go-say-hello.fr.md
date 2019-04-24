@@ -1,10 +1,10 @@
-# gosayhello
+## gosayhello
 
-## Instructions
+### Instructions
 
 Écrire un [programme](TODO-LINK) qui vous dis `hello` à votre GitHub username.
 
-## Utilisation
+### Utilisation
 
 Ici `{username}` est votre GitHub username:
 

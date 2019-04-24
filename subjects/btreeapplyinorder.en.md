@@ -1,11 +1,11 @@
-# btreeinsertdata
+## btreeinsertdata
 
-## Instructions
+### Instructions
 
 Write a function that applies a function in order to each element in the tree
 (see in order tree walks)
 
-## Expected function
+### Expected function
 
 ```go
 func BTreeApplyInorder(root *piscine.TreeNode, f func(...interface{}) (int, error)) {
@@ -13,7 +13,7 @@ func BTreeApplyInorder(root *piscine.TreeNode, f func(...interface{}) (int, erro
 }
 ```
 
-## Usage
+### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
 
