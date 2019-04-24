@@ -4,13 +4,13 @@
 > Elements of the app are managed threw objects in *Admin*.
 
 > Objects of the Admin are first created and defined:
->   * By their **title**,
->   * By their **type**.
+> * By their **title**,
+> * By their **type**.
 
 > Then it can be configured threw:
-  * Attributes,
-  * Children.
->
+> * Attributes,
+> * Children.
+
 > This documentation explains how to create an object. 
 
 ### Create a new object in the admin
@@ -48,6 +48,6 @@
 > The child object is then available in the *Admin*. It can be found in the section of its type or thanks to the search bar of the cursus object's page.
 
 > More information is available:
-  * for setting attributes of an object: (soon available)
-  * for setting children of an object: [Child object creation](https://github.com/01-edu/public/blob/master/doc/child-object-creation.md) 
-  * for creation of modular steps in Sign up and onboarding's Administration object: [Modular step management](https://github.com/01-edu/public/blob/master/doc/modular-steps-management.md)
+> * for setting attributes of an object: (soon available)
+> * for setting children of an object: [Child object creation](https://github.com/01-edu/public/blob/master/doc/child-object-creation.md) 
+> * for creation of modular steps in Sign up and onboarding's Administration object: [Modular step management](https://github.com/01-edu/public/blob/master/doc/modular-steps-management.md)
