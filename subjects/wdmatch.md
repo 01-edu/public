@@ -12,11 +12,11 @@ Write a program that takes two strings and checks whether it's possible to write
 
 ```console
 student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test "faya"  "fgvvfdxcacpolhyghbreda" 
+student@ubuntu:~/piscine/test$ ./test "faya"  "fgvvfdxcacpolhyghbreda"
 faya
 student@ubuntu:~/piscine/test$ ./test "faya" "fgvvfdxcacpolhyghbred"
 
-student@ubuntu:~/piscine/test$ ./test "error" 
+student@ubuntu:~/piscine/test$ ./test "error"
 
 student@ubuntu:~/piscine/test$ ./test
 

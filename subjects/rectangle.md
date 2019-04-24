@@ -13,9 +13,9 @@ is defined by the points of the upper left and lower right corners.
 
 - Our main task is to make a program that:
 
-	- Given a slice of points of size `n` returns the smallest rectangle that contains all the points in the vector of points. The name of that function is `defineRectangle`
+      	- Given a slice of points of size `n` returns the smallest rectangle that contains all the points in the vector of points. The name of that function is `defineRectangle`
 
-	- And calculates and prints the area of that rectangle you define.
+      	- And calculates and prints the area of that rectangle you define.
 
 ### Expected main and function for the program
 

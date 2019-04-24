@@ -39,7 +39,7 @@ And its output :
 
 ```console
 student@ubuntu:~/student/btreeisbinary$ go build
-student@ubuntu:~/student/btreeisbinary$ ./btreeisbinary 
+student@ubuntu:~/student/btreeisbinary$ ./btreeisbinary
 true
-student@ubuntu:~/student/btreeisbinary$ 
+student@ubuntu:~/student/btreeisbinary$
 ```

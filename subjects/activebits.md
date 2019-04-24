@@ -9,7 +9,7 @@ The function must have the next signature.
 ### Expected function
 
 ```go
-func ActiveBits(n int) uint {	
+func ActiveBits(n int) uint {
 
 }
 ```
@@ -38,5 +38,5 @@ And its output :
 student@ubuntu:~/student/activebits$ go build
 student@ubuntu:~/student/activebits$ ./activebits
 10
-student@ubuntu:~/student/activebits$ 
+student@ubuntu:~/student/activebits$
 ```

@@ -10,7 +10,7 @@ This function must have the following signature.
 
 ```go
 func BTreeMax(root *TreeNode) *TreeNode {
-	
+
 }
 ```
 
@@ -42,5 +42,5 @@ And its output :
 student@ubuntu:~/student/btreemax$ go build
 student@ubuntu:~/student/btreemax$ ./btreemax
 7
-student@ubuntu:~/student/btreemax$ 
+student@ubuntu:~/student/btreemax$
 ```

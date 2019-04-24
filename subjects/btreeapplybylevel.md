@@ -10,7 +10,7 @@ This function must have the following signature.
 
 ```go
 func BTreeApplyByLevel(root *TreeNode, fn interface{})  {
-	
+
 }
 ```
 
@@ -44,5 +44,5 @@ student@ubuntu:~/student/btreeapplybylevel$ ./btreeapplybylevel
 1
 7
 5
-student@ubuntu:~/student/btreeapplybylevel$ 
+student@ubuntu:~/student/btreeapplybylevel$
 ```

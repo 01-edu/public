@@ -12,7 +12,7 @@ This function must have the following signature.
 
 ```go
 func BTreeDeleteNode(root, node *TreeNode) *TreeNode {
-	
+
 }
 
 ```
@@ -57,5 +57,5 @@ After delete:
 1
 5
 7
-student@ubuntu:~/student/btreedeletenode$ 
+student@ubuntu:~/student/btreedeletenode$
 ```
