@@ -4,7 +4,7 @@
 
 Write a function that will take a pointer to a array as parameter and overwrites any element that points to `nil`.
 
--  If you not sure what the function does. It exists in Ruby. 
+- If you not sure what the function does. It exists in Ruby.
 
 ### Expected functions
 
@@ -13,6 +13,7 @@ func Compact(ptr *[]string, length int) int {
 
 }
 ```
+
 ### Usage
 
 Here is a possible [program](TODO-LINK) to test your function :
@@ -28,7 +29,6 @@ func main() {
 	ptr := &array
 	fmt.Println(Compact(ptr, len(array)))
 }
-
 ```
 
 And its output :

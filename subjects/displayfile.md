@@ -9,8 +9,8 @@ Write a program that displays, on the standard output, only the content of the f
 - The argument of the program should be the name of the file, in this case, `quest8.txt`.
 
 - In case of error it should print:
-    - `File name missing`.
-    - `Too many arguments`.
+  - `File name missing`.
+  - `Too many arguments`.
 
 ### Output:
 

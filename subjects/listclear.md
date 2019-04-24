@@ -4,7 +4,7 @@
 
 Write a function `ListClear` that delets all `nodes` from a linked list, deleting the link between the list.
 
-- Tip: assign the list's pointer to nil 
+- Tip: assign the list's pointer to nil
 
 ### Expected function and structure
 
@@ -62,7 +62,6 @@ func main() {
 	fmt.Println("------updated list------")
 	PrintList(link)
 }
-
 ```
 
 And its output :

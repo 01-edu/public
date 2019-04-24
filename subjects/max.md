@@ -1,4 +1,5 @@
 ## max
+
 ### Instructions
 
 Write a function, Max, that returns the maximum value in a slice of integers
@@ -8,11 +9,9 @@ The function must have the next signature.
 ### Expected function
 
 ```go
-
 func Max(arr []int) int {
 
 }
-
 ```
 
 ### Usage
@@ -23,8 +22,8 @@ Here is a possible [program](TODO-LINK) to test your function :
 package main
 
 import (
-       "fmt"
-       student ".."
+	"fmt"
+	student ".."
 )
 
 func main() {
@@ -40,5 +39,5 @@ And its output :
 student@ubuntu:~/student/max$ go build
 student@ubuntu:~/student/max$ ./max
 123
-student@ubuntu:~/student/max$ 
+student@ubuntu:~/student/max$
 ```

@@ -1,4 +1,5 @@
 ## pilot
+
 ### Instructions
 
 Write a go file so that the following program compile
@@ -9,8 +10,8 @@ Write a go file so that the following program compile
 package main
 
 import (
-       "fmt"
-       student ".."
+	"fmt"
+	student ".."
 )
 
 func main() {
@@ -23,4 +24,3 @@ func main() {
 	fmt.Println(donnie)
 }
 ```
-

@@ -18,6 +18,7 @@ type List struct {
 }
 
 func ListPushFront(l *list, data interface{}) {
+
 }
 ```
 
@@ -34,7 +35,6 @@ import (
 )
 
 func main() {
-	
 	link := &list{}
 
 	piscine.ListPushFront(link, "Hello")

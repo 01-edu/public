@@ -18,7 +18,7 @@ type List struct {
 }
 
 func ListSize(l *List) int {
-	
+
 }
 ```
 
@@ -44,7 +44,6 @@ func main() {
 
 	fmt.Println(piscine.ListSize(link))
 }
-
 ```
 
 And its output :
