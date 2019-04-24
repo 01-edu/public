@@ -1,4 +1,5 @@
 ## alphamirror
+
 ### Instructions
 
 Write a program called alphamirror that takes a string as argument and displays this string
