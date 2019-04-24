@@ -4,7 +4,7 @@
 
 Write a program called alphamirror that takes a string as argument and displays this string
 after replacing each alphabetical character with the opposite alphabetical
-character. 
+character.
 
 The case of the letter stays the same, for example :
 
@@ -25,5 +25,5 @@ student@ubuntu:~/student/alphamirror$ ./alphamirror "My horse is Amazing." | cat
 Nb slihv rh Znzarmt.$
 student@ubuntu:~/student/alphamirror$ ./alphamirror | cat -e
 $
-student@ubuntu:~/student/alphamirror$ 
+student@ubuntu:~/student/alphamirror$
 ```
