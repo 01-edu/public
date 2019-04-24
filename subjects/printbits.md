@@ -1,18 +1,19 @@
-# printbits
-## Instructions
+## printbits
 
-Write a function that takes a byte, and prints it in binary WITHOUT A NEWLINE
-AT THE END.
+### Instructions
 
-The function must have the next signature.
+Write a function that takes a byte, and prints it in binary value **without a newline at the end**.
 
-## Expected function
+### Expected function
 
 ```go
-
 func PrintBits(octe byte) {
 
 }
-
 ```
-Example, if you pass 2 to PrintBits, it will print "00000010"
+
+### Usage
+
+Example of output:
+
+If 2 is passed to the function PrintBits, it will print "00000010".
