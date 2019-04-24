@@ -9,7 +9,7 @@ This function returns true if the given number is a power of 2, otherwise it ret
 ## Expected function
 
 ```go
-func Ispowerof2(n uint) bool {
+func IsPowerOf2(n uint) bool {
 
 }
 ```
