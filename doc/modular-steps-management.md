@@ -11,7 +11,7 @@
 
 ## Create your step child object
 ### Create a new object for your step in the admin
-> Information is available for object's creation: [Modular step management](https://github.com/01-edu/public/blob/master/doc/object-creation.md)
+> Information is available for object's creation: [Object creation](https://github.com/01-edu/public/blob/master/doc/object-creation.md)
 
 * This object must have the same type as its future parent object (*signup* or *onboarding*).
 
@@ -22,7 +22,7 @@
 
 * Edit the parent object: *Sign up* or *Administration*
 
-> Information is available for object's creation: [Modular step management](https://github.com/01-edu/public/blob/master/doc/child-object-creation.md)
+> Information is available for object's creation: [Child object creation](https://github.com/01-edu/public/blob/master/doc/child-object-creation.md)
 
 ## Settings for a `form` step
 > In the step object you have created, 2 attributes must be filled:
