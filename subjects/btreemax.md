@@ -22,8 +22,8 @@ Here is a possible [program](TODO-LINK) to test your function :
 package main
 
 import (
-  "fmt"
-  student ".."
+	"fmt"
+	student ".."
 )
 
 func main() {
