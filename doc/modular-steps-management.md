@@ -38,23 +38,23 @@
 
 * Add a new key **subtype** of type `String` with the exact value 'onb-adm-form-generator'
 * Add a new key **form** of type `Object` 
-  * The form you are creating can have several sections. Each section is displayed with a title, and its inputs. 
-    > NB: The submission of the form will check the required inputs of all the sections you have created for the form. 
-  * To create a section, add a new key to your form object, of type `Object`, that contains:
-    * A **title** key of type `String`. The value of this property will be the title displayed in the top of your form section. 
-      > If you have only one section in your form step, and you don't need a section title, you do not have to set up this property.
+  * Form can have several sections. Each section is displayed with a title, and its inputs. 
+    > NB: The submission of the form will check the required inputs of all the sections created for the form. 
+  * To create a section, add a new key to the form object, of type `Object`, that contains:
+    * A **title** key of type `String`. The value of this property will be the title displayed in the top of the form section. 
+      > If there is only one section in the form step, and no section title is needed, this property can be ignored.
     * An **inputs** key of type `Object`, which will contain all the inputs of the section. For each wanted input, add a new `Object` element in the "inputs" object.
       > The key of this object will be used as the "name" attribute of your input.  
       > The values will be considered as the properties of your input.
 
 #### Defining an input:
-* You must declare a **type** key of type `String`, which define the type of your input : `tel`, `text`, `date`, `select`, `radio`, `switch`, `checkbox`, `textarea` (and soon a special type `countries`). 
-* Then you can fill the props you need for your input, according to its type: `placeholder`, `id`, `required`, `label`, `items`, `emptyItems`, `index`, etc...
+* A **type** key of type `String` must be declared. It defines the type of the input : `tel`, `text`, `date`, `select`, `radio`, `switch`, `checkbox`, `textarea` (and soon a special type `countries`). 
+* All other attributes needed for the input can be added to the object, according to the input type: `placeholder`, `id`, `required`, `label`, `items`, `emptyItems`, `index`, etc...
 
 #### Important indication: 
-* The **index** property is used to order your inputs. It will not be passed onto the input. Be mindful not to set the same index twice.
-* The **type** property is required. It will be used to determine the kind of input we must generate. It is passed onto the input only if the input type attribute is required (type 'tel' or 'text' for example, but not for type 'select' - in this case, we will generate a select element)
-  * At the moment, we are creating a special type 'countries' (a `Select` displaying all the countries). Documentation will be updated as soon as it is available.
+* The **index** property is used to order the inputs. It will not be passed onto the input. Be mindful not to set the same index twice.
+* The **type** property is required. It will be used to determine the kind of input should be generated. It is passed onto the input only if the input type attribute is required (type 'tel' or 'text' for example, but not for type 'select' - in this case, we will generate a select element)
+  * At the moment, our team is creating a special type 'countries' (a `Select` displaying all the countries). Documentation will be updated as soon as it is available.
 * `onChange` prop are ignored as the event is handled by the app.
 * For `switch` and `checkbox` input types, the default value has to be set as a boolean property named **value**.
 * More information for each inputs is available in the design documentation: 
@@ -178,12 +178,12 @@ The newly created child can be customized with these attributes :
 3. Add the following attributes:
    * Add a new key **subtype** of type `String` with the exact value 'onb-adm-sign'
    * Add a new key **text** of type `String` with the text of your document to sign as value
-   * Add a new key **buttonText** of type `String` with the text that you want to display in the submit button of your step. If you do not fill this property, the default value is 'Sign'.
-   * Add a new key **checkbox** of type `Object`, if you want to force your user to click on a checkbox before validating his document (ex: 'I have read and accepted the conditions'). In the checkbox object, you should define:
-     * A **label** key of type `String`, with the text you want to associate to the checkbox
-     * A **required** key of type `Boolean`, set at true if you want to force the user to check it
+   * Add a new key **buttonText** of type `String` with the text that you want to display in the submit button of your step. Default value for this attribute is 'Sign'.
+   * Add a new key **checkbox** of type `Object`, if the user has to be forced to click on a checkbox before validating his document (ex: 'I have read and accepted the conditions'). In the checkbox object, the following attributes should be defined:
+     * A **label** key of type `String`, for the text associated to the checkbox
+     * A **required** key of type `Boolean`, set at true if the user has to check it
      * A **name** key of type `String`
-     * Then you can add all other properties you want to your checkbox.
+     * All other attributes wanted for the checkbox.
 
 ### Examples
 

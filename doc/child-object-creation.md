@@ -29,5 +29,5 @@
 > Your step is then related to its parent. You can see it in the *Children* section of the parent's object. There, you can now: 
 > * Delete the child from its parent (the actual object of your child will not be deleted).
 > * Reorder it in the children's list, by dragging it to the place you want.
-> * Go to update its settings by clicking on the eye of its reference (it will redirect you to the actual object of your step).
+> * Update its original settings by clicking on the eye icon of its reference (redirection to object edit page of the child).
 <img width="1229" alt="Capture d’écran 2019-04-22 à 19 51 12" src="https://user-images.githubusercontent.com/35296671/56518936-a1e19400-6538-11e9-81c7-520ffd365cff.png">

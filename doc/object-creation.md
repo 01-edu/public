@@ -1,13 +1,13 @@
 # Admin object's management - create an object
 
 ## Usage
-> Elements of the app are managed threw objects in *Admin*.
+> Elements of the app are managed through objects in *Admin*.
 
 > Objects of the Admin are first created and defined:
 > * By their **title**,
 > * By their **type**.
 
-> Then it can be configured threw:
+> Then it can be configured through:
 > * Attributes,
 > * Children.
 
