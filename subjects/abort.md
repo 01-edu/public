@@ -10,7 +10,7 @@ This function must have the following signature.
 
 ```go
 func Abort(a, b, c, d, e int) int {
-	
+
 }
 ```
 
@@ -38,5 +38,5 @@ And its output :
 student@ubuntu:~/student/abort$ go build
 student@ubuntu:~/student/abort$ ./abort
 5
-student@ubuntu:~/student/abort$ 
+student@ubuntu:~/student/abort$
 ```
