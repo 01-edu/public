@@ -1,3 +1,4 @@
+
 # switchcase
 
 ## Instructions
@@ -20,6 +21,7 @@ student@ubuntu:~/piscine/test$ ./test "error" rrerrrfiiljdfxjyuifrrvcoojh
 
 student@ubuntu:~/piscine/test$ ./test "quarante deux" "qfqfsudf arzgsayns tsregfdgs sjytdekuoixq "
 quarante deux
+
 student@ubuntu:~/piscine/test$ ./test
 
 student@ubuntu:~/piscine/test$
