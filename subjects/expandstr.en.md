@@ -3,16 +3,16 @@
 ### Instructions
 
 Write a program that takes a string and displays it with exactly three spaces
-between each word, with no spaces or tabs either at the beginning or the end,
-followed by a newline.
+between each word, with no spaces or tabs at either the beginning nor the end.
 
-A word is a section of string delimited either by spaces/tabs, or by the
-start/end of the string.
+The string will be followed by a newline.
 
-If the number of parameters is not 1, or if there are no words, simply display
+A word is a sequence of alphanumerical characters.
+
+If the number of parameters is not 1, or if there are no words, the program displays
 a newline.
 
-Example of output :
+Examples of outputs :
 
 ```console
 student@ubuntu:~/student/expandstr$ go build
