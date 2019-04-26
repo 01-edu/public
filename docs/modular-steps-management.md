@@ -54,7 +54,8 @@
 #### Important indication: 
 * The **index** property is used to order the inputs. It will not be passed onto the input. Be mindful not to set the same index twice.
 * The **type** property is required. It will be used to determine the kind of input should be generated. It is passed onto the input only if the input type attribute is required (type 'tel' or 'text' for example, but not for type 'select' - in this case, we will generate a select element)
-  * A special type 'countries' has been added to the classicals. It generate a `Select` (containing all the countries) with a search bar. 'Items' property is handled by the app. 
+  * A special type 'countries' has been added to the classicals. It generate a `Select` (containing all the countries) with a search bar. 'Items' property is handled by the app.
+  * It's recommended to add 'min' and 'max' properties to input type 'date' (no default value are set).
 * `onChange` prop are ignored as the event is handled by the app.
 * For `switch` and `checkbox` input types, the default value has to be set as a boolean property named **value**.
 * More information for each inputs is available in the design documentation: 
@@ -103,6 +104,8 @@ Here is an example of the form step's attributes. It presents a form with two se
           "index": 2,
           "required": true,
           "type": "date",
+          "min": "1621-07-08",
+          "max": "2019-01-01",
           "label": "Date label",
           "value": "2000-01-01"
         },
