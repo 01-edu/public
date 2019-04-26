@@ -169,7 +169,7 @@ Here is an example of the form step's attributes. It presents a form with two se
 
 This 'form' step would look like this:
 
-![form step example](https://user-images.githubusercontent.com/35296671/56800060-1a36a680-6812-11e9-9357-28311046641e.png)
+![form step example](https://user-images.githubusercontent.com/35296671/56816457-7cf06800-683b-11e9-9003-6f83b4545033.png)
 
 ## Settings for a `document to sign` step
 The newly created child can be customized with these attributes :
