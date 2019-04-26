@@ -75,7 +75,7 @@ Here is an example of the form step's attributes. It presents a form with two se
 {
   "subtype": "form-step",
   "form": {
-    "section1": {
+    "identification": {
       "title": "Identification",
       "inputs": {
         "firstName": {
@@ -95,7 +95,7 @@ Here is an example of the form step's attributes. It presents a form with two se
         },
         "medicalInfo": {
           "label": "Medical informations",
-          "placeholder": "Medical Informations",
+          "placeholder": "Your medical Informations",
           "index": 7,
           "maxLength": 250,
           "type": "textarea"
@@ -125,8 +125,6 @@ Here is an example of the form step's attributes. It presents a form with two se
           "items": [
             { "label": "Male", "data": "male" },
             { "label": "Female", "data": "female" }
-            { "label": "Item 1", "data": "item1" },
-            { "label": "Item 2", "data": "item2" }
           ]
         },
         "environment": {
@@ -138,8 +136,6 @@ Here is an example of the form step's attributes. It presents a form with two se
           "items": [
             { "label": "City", "data": "city" },
             { "label": "Countryside", "data": "countryside" }
-            { "label": "Radio 1", "data": "radio1" },
-            { "label": "Radio 2", "data": "radio2" }
           ]
         },
         "programmingAbilities": {
@@ -156,7 +152,7 @@ Here is an example of the form step's attributes. It presents a form with two se
         }
       }
     },
-    "section2": {
+    "moreAboutYou": {
       "title": "More about you",
       "inputs": {
         "favoriteColor": {
