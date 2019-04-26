@@ -76,88 +76,92 @@ Here is an example of the form step's attributes. It presents a form with two se
   "subtype": "form-step",
   "form": {
     "section1": {
-      "title": "My section title",
+      "title": "Identification",
       "inputs": {
-        "typeText": {
+        "firstName": {
           "index": 0,
-          "placeholder": "Text placeholder",
+          "placeholder": "First name",
           "maxLength": 50,
           "type": "text",
           "required": true
         },
-        "typeTel": {
+        "tel": {
           "index": 1,
           "required": true,
           "type": "tel",
-          "label": "Tel label",
+          "label": "Phone number",
           "placeholder": "+333 33 33 33 33",
           "pattern": "[+][3][0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}"
         },
-        "typeTextArea": {
-          "label": "Textarea label",
+        "medicalInfo": {
+          "label": "Medical informations",
+          "placeholder": "Medical Informations",
           "index": 7,
           "maxLength": 250,
-          "placeholder": "Textarea placeholder",
           "type": "textarea"
         },
-        "typeDate": {
+        "dateOfBirth": {
           "index": 2,
           "required": true,
           "type": "date",
+          "label": "Date of birth",
           "min": "1621-07-08",
-          "max": "2019-01-01",
-          "label": "Date label",
+          "max": "1900-01-01",
           "value": "2000-01-01"
         },
-        "typeCountries": {
+        "country": {
           "index": 4,
           "id": "countries",
           "type": "countries",
           "required": true,
           "emptyItem": { "label": "Select your country label" }
         },
-        "typeSelect": {
+        "gender": {
           "index": 3,
           "type": "select",
-          "id": "typeSelect",
+          "id": "genders",
           "required": true,
-          "emptyItem": { "label": "Special emply item" },
+          "emptyItem": { "label": "Select your gender" },
           "items": [
+            { "label": "Male", "data": "male" },
+            { "label": "Female", "data": "female" }
             { "label": "Item 1", "data": "item1" },
             { "label": "Item 2", "data": "item2" }
           ]
         },
-        "typeRadio": {
+        "environment": {
           "index": 5,
           "type": "radio",
           "required": true,
-          "label": "Radio label - choose your radio",
+          "label": "Which environment do you live in ?",
           "inlineBlock": true,
           "items": [
+            { "label": "City", "data": "city" },
+            { "label": "Countryside", "data": "countryside" }
             { "label": "Radio 1", "data": "radio1" },
             { "label": "Radio 2", "data": "radio2" }
           ]
         },
-        "typeSwitch": {
+        "programmingAbilities": {
           "index": 6,
           "type": "switch",
-          "label": "Switch label",
+          "label": "I am new in programming",
           "value": true
         },
-        "typeCheckbox": {
+        "generalConditions": {
           "index": 8,
           "type": "checkbox",
-          "label": "Checkbox label",
+          "label": "I have read and I accept the general conditions",
           "value": false
         }
       }
     },
     "section2": {
-      "title": "My second section title",
+      "title": "More about you",
       "inputs": {
-        "typeText": {
+        "favoriteColor": {
           "index": 0,
-          "placeholder": "Text placeholder",
+          "placeholder": "Your favorite color",
           "type": "text",
           "required": true
         }
