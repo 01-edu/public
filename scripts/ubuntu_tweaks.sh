@@ -60,6 +60,7 @@ orca
 popularity-contest
 python3-update-manager
 secureboot-db
+snapd
 spice-vdagent
 ubuntu-report
 ubuntu-software
