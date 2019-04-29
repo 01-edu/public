@@ -1,0 +1,1 @@
+KERNEL=="::DISK::*", ENV{UDISKS_IGNORE}="1"

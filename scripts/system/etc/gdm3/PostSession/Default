@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Log stdout & stderr
+exec > >(tee -i /tmp/gdm3_postsession.log)
+exec 2>&1
+
+# Exit immediately if a command exits with a non-zero status.
+set -e
+
+# The value of this parameter is expanded like PS1 and the expanded value is the
+# prompt printed before the command line is echoed when the -x option is set
+# (see The Set Builtin). The first character of the expanded value is replicated
+# multiple times, as necessary, to indicate multiple levels of indirection.
+# \D{%F %T} prints date like this : 2019-12-31 23:59:59
+PS4='-\D{%F %T} '
+
+# Print commands and their arguments as they are executed.
+set -x
+
+passwd -d $USER
+sync
+sleep 0.5
+lsof -t $HOME | xargs kill || true
+umount -l $HOME
+umount -l /mnt

@@ -1,0 +1,20 @@
+#!/bin/sh
+
+PREREQ=""
+prereqs()
+{
+        echo "$PREREQ"
+}
+
+case $1 in
+prereqs)
+        prereqs
+        exit 0
+        ;;
+esac
+
+. /scripts/functions
+
+/bin/mke2fs -F -t ext4 -O ^has_journal ::PART:: > /dev/null 2>&1
+
+exit 0
