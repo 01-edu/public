@@ -84,6 +84,4 @@ rm -rf /tmp/system
 
 update-initramfs -u
 
-apt-get -y purge sudo
-
 . clean.sh
