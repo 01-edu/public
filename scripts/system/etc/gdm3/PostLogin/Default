@@ -30,7 +30,7 @@ sleep 0.5
 
 # Find the first removable F2FS partition
 PART=$(lsblk -o tran,kname,hotplug,type,fstype -pr |
-	grep '1 part f2fs' |
+	grep -e '1 part f2fs' -e '1 disk f2fs' |
 	cut -d' ' -f2 |
 	sort |
 	head -n1)
