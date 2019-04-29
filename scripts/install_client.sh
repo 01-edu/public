@@ -71,7 +71,7 @@ PART=$(lsblk -o tran,kname,hotplug,type,fstype -pr |
 sed -i -e "s|::PART::|$PART|g" usr/share/initramfs-tools/scripts/init-premount/reformat
 
 apt-get -y install overlayroot
-echo overlayroot=\"device:dev=$DISK,recurse=0\" >> /etc/overlayroot.conf
+echo overlayroot=\"device:dev=$PART,recurse=0\" >> /etc/overlayroot.conf
 
 # Fix permissions
 find . -type d -exec chmod 755 {} \;
