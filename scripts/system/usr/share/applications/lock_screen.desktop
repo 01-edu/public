@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Lock Screen
+Comment=Sets a password if needed and then lock screen
+Exec=/usr/local/bin/lock_screen
+Icon=system-lock-screen
+Terminal=false
+Type=Application
+StartupNotify=true
