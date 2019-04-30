@@ -49,6 +49,7 @@ bind9
 bolt
 cups*
 exim*
+fprintd
 friendly-recovery
 gnome-initial-setup
 gnome-online-accounts
