@@ -70,4 +70,5 @@ USER_PATH=/mnt/.01/$USER
 TEMP_PATH=/mnt/.01/tmp
 
 mkdir -p $USER_PATH $TEMP_PATH
+chown -R $USER:$USER $USER_PATH $TEMP_PATH
 mount -t overlay -o lowerdir=$HOME,upperdir=$USER_PATH,workdir=$TEMP_PATH overlay $HOME
