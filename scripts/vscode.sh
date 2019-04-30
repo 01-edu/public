@@ -13,7 +13,7 @@ apt-get update && apt-get -y install vscodium
 # Set-up all users
 for DIR in $(ls -1d /home/* 2>/dev/null || true)
 do
-	# Add convenient aliases & behaviors
+	# Disable most of the telemetry and auto-updates
 	mkdir -p $DIR/.config/VSCodium/User
 	cat <<-'EOF'> $DIR/.config/VSCodium/User/settings.json
 	{
