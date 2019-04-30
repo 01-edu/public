@@ -31,5 +31,5 @@ do
 
 	# Fix rights
 	USR=$(echo "$DIR" | rev | cut -d/ -f1 | rev)
-	chown -R $USR:$USR $DIR
+	chown -R $USR:$USR $DIR || true
 done
