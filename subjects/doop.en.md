@@ -2,27 +2,37 @@
 
 ### Instructions
 
-Write a program that takes three strings:
+Write a [program](TODO-LINK) that is called `doop`.
 
-- The first and the third one are representations of base-10 signed integers that fit in an int.
+The program has to be used with three arguments:
 
-- The second one is an arithmetic operator chosen from: `+ - * / %`
+- A value
+- An operator
+- Another value
 
-- The program must display the result of the requested arithmetic operation, followed by a newline. If the number of parameters is not 3, the program just displays a newline.
+In case of an invalid entry the programs prints `0`.
 
-- During tests the strings will have no mistakes or extraneous characters. Negative numbers, in input or output, will have one and only one leading `-`. The result of the operation will fit in an int.
+In case of an invalid number of arguments the program prints nothing.
 
-Examples of outputs :
+`fmt.Print` is authorized.
+
+### Usage
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test "123" "*" 456
-56088
-student@ubuntu:~/piscine/test$ ./test "9828" "/" 234
-42
-student@ubuntu:~/piscine/test$ ./test "10" "+" "-43"
-33
-student@ubuntu:~/piscine/test$ ./test
-
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine/test$ go build doop.go
+student@ubuntu:~/piscine/test$ ./doop
+student@ubuntu:~/piscine/test$ ./doop 1 + 1
+2
+student@ubuntu:~/piscine/test$ ./doop hello + 1
+0
+student@ubuntu:~/piscine/test$ ./doop 1 p 1
+0
+student@ubuntu:~/piscine/test$ ./doop 1 + 1
+2
+student@ubuntu:~/piscine/test$ ./doop 1 / 0
+No division by 0
+student@ubuntu:~/piscine/test$ ./doop 1 % 0
+No modulo by 0
+student@ubuntu:~/piscine/test$ ./doop 1 * 1
+1
 ```

@@ -1,0 +1,28 @@
+## hiddenp
+
+### Instructions
+
+Write a program named hiddenp that takes two strings and that, if the first string is hidden in the second one, displays 1
+followed by a newline, otherwise it displays 0 followed by a newline.
+
+Let s1 and s2 be strings. It is considered that s1 is hidden in s2 if it is possible to
+find each character from s1 in s2, **in the same order as they appear in s1.**
+
+If s1 is an empty string it is considered hidden in any string.
+
+If the number of parameters is not 2, the program displays a newline.
+
+Example of output :
+
+```console
+student@ubuntu:~/student/hiddenp$ go build
+student@ubuntu:~/student/hiddenp$ ./hiddenp "fgex.;" "tyf34gdgf;'ektufjhgdgex.;.;rtjynur6" | cat -e
+1$
+student@ubuntu:~/student/hiddenp$ ./hiddenp "abc" "2altrb53c.sse" | cat -e
+1$
+student@ubuntu:~/student/hiddenp$ ./hiddenp "abc" "btarc" | cat -e
+0$
+student@ubuntu:~/student/hiddenp$ ./hiddenp | cat -e
+$
+student@ubuntu:~/student/hiddenp$
+```

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Suspend session
+Comment=Sets a password if needed and then suspend session
+Exec=/usr/local/bin/suspend_session
+Icon=media-playback-pause
+Terminal=false
+Type=Application
+StartupNotify=true
