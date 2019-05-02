@@ -35,5 +35,4 @@ student@ubuntu:~/piscine/test$ ./doop 1 % 0
 No modulo by 0
 student@ubuntu:~/piscine/test$ ./doop 1 * 1
 1
-
 ```
