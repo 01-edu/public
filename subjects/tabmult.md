@@ -6,7 +6,7 @@ Write a program that displays a number's multiplication table.
 
 - The parameter will always be a strictly positive number that fits in an int, and said number times 9 will also fit in an int.
 
-Example of output :
+Examples of outputs :
 
 ```console
 student@ubuntu:~/piscine/test$ go build
