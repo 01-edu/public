@@ -6,9 +6,9 @@ Write a program that takes a positive `int` and displays its prime factors on th
 
 - Factors must be displayed in ascending order and separated by `*`, so that the expression in the output gives the right result.
 
-- If the number of parameters is not 1, simply display a newline.
+- If the number of parameters is not 1, the program displays a newline.
 
-- The input, when there's one, will be valid.
+- The input, when there is one, will always be valid.
 
 Example of output :
 
