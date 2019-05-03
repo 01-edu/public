@@ -29,11 +29,7 @@ set -x
 sleep 0.5
 
 # Find the first removable F2FS partition
-PART=$(lsblk -o tran,kname,hotplug,type,fstype -pr |
-	grep -e '1 part f2fs' -e '1 disk f2fs' |
-	cut -d' ' -f2 |
-	sort |
-	head -n1)
+PART=$(lsblk -pro kname,partlabel | grep 01-home)
 
 # Make sure the mountpoints are free
 (
@@ -47,13 +43,7 @@ then
 	mount -o noatime "$PART" /mnt
 else
 	# No removable F2FS partition found, use the third local partition instead
-	PART=$(lsblk -o tran,kname,hotplug,type,fstype -pr |
-		grep -v usb |
-		grep '0 part' |
-		cut -d' ' -f2 |
-		sort |
-		head -n3 |
-		tail -n1)
+	PART=$(lsblk -pro kname,partlabel | grep 01-tmp-home)
 
 	if test -z "$PART"
 	then
