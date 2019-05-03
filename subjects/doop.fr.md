@@ -10,6 +10,7 @@ Le programme doit être utilisé avec trois arguments:
 - Un opérateur
 - Une autre valeur
 
+
 En cas d'opérateur invalide le programme affiche `0`.
 
 En cas de nombre invalide d'arguments le programme affiche rien.
