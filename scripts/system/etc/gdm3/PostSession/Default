@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Log stdout & stderr
-exec > >(tee -i /tmp/gdm3_postsession.log)
-exec 2>&1
+exec > >(tee -i /tmp/gdm3_postsession.log) 2>&1
 
 # Exit immediately if a command exits with a non-zero status.
 set -e
