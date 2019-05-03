@@ -10,6 +10,7 @@ Brainfuck is a minimalist language. It consists of an array of bytes
 and a pointer to its first byte.
 
 Every operator consists of a single character :
+
 - '>' increment the pointer ;
 - '<' decrement the pointer ;
 - '+' increment the pointed byte ;
@@ -20,7 +21,7 @@ Every operator consists of a single character :
 
 Any other character is a comment.
 
-And its output :
+Examples of outputs :
 
 ```console
 student@ubuntu:~/student/brainfuck$ go build
@@ -28,6 +29,8 @@ student@ubuntu:~/student/brainfuck$ ./brainfuck "++++++++++[>+++++++>++++++++++>
 Hello World!$
 student@ubuntu:~/student/brainfuck$ ./brainfuck "+++++[>++++[>++++H>+++++i<<-]>>>++\n<<<<-]>>--------.>+++++.>." | cat -e
 Hi$
+student@ubuntu:~/student/brainfuck$ ./brainfuck "++++++++++[>++++++++++>++++++++++>++++++++++<<<-]>---.>--.>-.>++++++++++." | cat -e
+abc$
 student@ubuntu:~/student/brainfuck$ ./brainfuck | cat -e
 $
 student@ubuntu:~/student/brainfuck$
