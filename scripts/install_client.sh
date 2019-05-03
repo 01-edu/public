@@ -60,7 +60,6 @@ cp -r system /tmp
 cd /tmp/system
 sed -i -e "s|::DISK::|$DISK|g" etc/udev/rules.d/10-local.rules
 
-# Fourth local partition
 PART=$(lsblk -pro kname,partlabel | grep 01-tmp-system | cut -d' ' -f1)
 sed -i -e "s|::PART::|$PART|g" usr/share/initramfs-tools/scripts/init-premount/reformat
 
