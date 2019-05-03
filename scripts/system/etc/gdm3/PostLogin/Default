@@ -28,7 +28,7 @@ set -x
 sleep 0.5
 
 # Find the removable F2FS partition
-PART=$(lsblk -pro kname,partlabel | grep 01-home)
+PART=$(lsblk -pro kname,partlabel | grep 01-home | cut -d' ' -f1)
 
 # Make sure the mountpoints are free
 (
@@ -42,7 +42,7 @@ then
 	mount -o noatime "$PART" /mnt
 else
 	# No removable F2FS partition found
-	PART=$(lsblk -pro kname,partlabel | grep 01-tmp-home)
+	PART=$(lsblk -pro kname,partlabel | grep 01-tmp-home | cut -d' ' -f1)
 
 	if test -z "$PART"
 	then
