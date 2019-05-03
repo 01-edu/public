@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Exits if a command fails
+set -e
+
+if passwd -S | grep NP
+then
+	# No password set, so ask user to set one
+	gnome-terminal.real -t "⁣" --geometry=40x10 --wait -- passwd
+	sleep 1
+fi
+
+systemctl suspend

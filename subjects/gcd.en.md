@@ -10,6 +10,8 @@ strictly positive integer).
 
 If the number of parameters is not 2, display a newline.
 
+All arguments tested will be valid positive `int` values.
+
 Example of output :
 
 ```console
@@ -23,6 +25,8 @@ student@ubuntu:~/student/gcd$ ./gcd 14 77 | cat -e
 student@ubuntu:~/student/gcd$ ./gcd 17 3 | cat -e
 1$
 student@ubuntu:~/student/gcd$ ./gcd | cat -e
+$
+student@ubuntu:~/student/gcd$ ./gcd 50 12 4 | cat -e
 $
 student@ubuntu:~/student/gcd$
 ```
