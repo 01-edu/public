@@ -51,6 +51,9 @@ xfsprogs
 
 apt-get -y install $PKGS
 
+# Install additional drivers
+ubuntu-drivers install
+
 # Remove fsck because the system partition will be read-only (overlayroot)
 rm /usr/share/initramfs-tools/hooks/fsck
 
