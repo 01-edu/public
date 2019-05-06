@@ -11,6 +11,11 @@ delay=uint32 350
 unicode-hotkey=@as []
 hotkey=@as []
 
+[apps/update-manager]
+launch-time=int64 1557136088
+launch-count=1
+first-run=false
+
 [org/gnome/desktop/peripherals/touchpad]
 two-finger-scrolling-enabled=true
 disable-while-typing=false
