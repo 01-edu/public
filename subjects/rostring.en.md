@@ -7,21 +7,20 @@ one word to the left.
 
 Thus, the first word becomes the last, and others stay in the same order.
 
-A "word" is defined as a part of a string delimited either by spaces/tabs, or
-by the start/end of the string.
+A word is a sequence of **alphanumerical** characters.
 
 Words will be separated by only one space in the output.
 
-If the number of arguments is not one, the program displays \n.
+If the number of arguments is not one, the program displays a newline.
 
-And its output :
+Examples of outputs :
 
 ```console
 student@ubuntu:~/piscine/rostring$ go build
 student@ubuntu:~/piscine/rostring$ ./rostring "abc   " | cat -e
 abc$
-student@ubuntu:~/piscine/rostring$ ./rostring "Que la     lumiere soit et la lumiere fut"
-la lumiere soit et la lumiere fut Que
+student@ubuntu:~/piscine/rostring$ ./rostring "Let there     be light"
+there be light There
 student@ubuntu:~/piscine/rostring$ ./rostring "     AkjhZ zLKIJz , 23y"
 zLKIJz , 23y AkjhZ
 student@ubuntu:~/piscine/rostring$ ./rostring | cat -e
