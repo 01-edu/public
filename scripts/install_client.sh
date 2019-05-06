@@ -3,8 +3,7 @@
 # Configure Z01 client
 
 # Log stdout & stderr
-exec > >(tee -i /tmp/install_client.log)
-exec 2>&1
+exec > >(tee -i /tmp/install_client.log) 2>&1
 
 SCRIPT_DIR="$(cd -P "$(dirname "$BASH_SOURCE")" && pwd)"
 cd $SCRIPT_DIR
