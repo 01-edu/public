@@ -38,6 +38,7 @@ disable-external=true
 
 [org/gnome/desktop/interface]
 gtk-im-module='gtk-im-context-simple'
+show-battery-percentage=true
 clock-show-seconds=true
 enable-animations=false
 cursor-blink=false
@@ -105,8 +106,12 @@ active=false
 active=false
 
 [org/gnome/settings-daemon/plugins/power]
+sleep-inactive-battery-type='nothing'
 sleep-inactive-ac-type='nothing'
+idle-dim=false
+sleep-inactive-battery-timeout=0
 sleep-inactive-ac-timeout=0
+ambient-enabled=false
 
 [org/gnome/shell]
 enable-hot-corners=true
