@@ -39,9 +39,6 @@ swapoff /swapfile || true
 rm -f /swapfile
 sed -i '/swapfile/d' /etc/fstab
 
-# Prevent gnome-shell segfault from happening
-sed -i 's/#WaylandEnable=false/WaylandEnable=false/g' /etc/gdm3/custom.conf
-
 # Purge unused Ubuntu packages
 PKGS="
 apport
