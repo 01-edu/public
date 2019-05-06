@@ -17,8 +17,10 @@ launch-count=1
 first-run=false
 
 [org/gnome/desktop/peripherals/touchpad]
+natural-scroll=false
 two-finger-scrolling-enabled=true
 disable-while-typing=false
+click-method='none'
 
 [org/gnome/login-screen]
 enable-smartcard-authentication=false
