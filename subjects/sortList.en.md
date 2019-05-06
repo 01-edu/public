@@ -19,6 +19,11 @@ Functions passed as `cmp` will always return `true` if `a` and `b` are in the ri
 ### Expected function
 
 ```go
+type Nodelist struct {
+	Data int
+	Next *Nodelist
+}
+
 func SortList (l *NodeList, cmp func(a,b int) bool) *NodeList{
 
 }
