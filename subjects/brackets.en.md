@@ -19,15 +19,15 @@ If there is no arguments, the program must print only a newline.
 And its output :
 
 ```console
-student@ubuntu:~/student/test$ go build
-student@ubuntu:~/student/test$ ./test '(johndoe)' | cat -e
+student@ubuntu:~/student/brackets$ go build
+student@ubuntu:~/student/brackets$ ./brackets '(johndoe)' | cat -e
 OK$
-student@ubuntu:~/student/test$ ./test '([)]' | cat -e
+student@ubuntu:~/student/brackets$ ./brackets '([)]' | cat -e
 Error$
-student@ubuntu:~/student/test$ ./test '' '{[(0 + 0)(1 + 1)](3*(-1)){()}}' | cat -e
+student@ubuntu:~/student/brackets$ ./brackets '' '{[(0 + 0)(1 + 1)](3*(-1)){()}}' | cat -e
 OK$
 OK$
-student@ubuntu:~/student/test$ ./test | cat -e
+student@ubuntu:~/student/brackets$ ./brackets | cat -e
 $
-student@ubuntu:~/student/test$
+student@ubuntu:~/student/brackets$
 ```
