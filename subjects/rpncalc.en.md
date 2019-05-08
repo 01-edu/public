@@ -42,7 +42,7 @@ Or:
 6 4 -
 2
 ```
-And its output :
+Examples of outputs :
 
 ```console
 student@ubuntu:~/student/rpncalc$ go build
