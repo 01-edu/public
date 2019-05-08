@@ -103,7 +103,7 @@ import (
 )
 
 func main() {
-	student.Raid1a(5,3)
+	student.Raid1a(1,5)
 }
 ```
 
