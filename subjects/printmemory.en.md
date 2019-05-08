@@ -4,17 +4,17 @@
 
 Write a function that takes `(arr [10]int, size int)`, and displays the memory as in the example.
 
-Your function must be declared as follows :
+### Expected function
 
 ```go
 func PrintMemory(arr [10]int, size int) {
-	
+
 }
 ```
 
-### Usege
+### Usage
 
-Here is a possible program to test your function and it's output :
+Here is a possible program to test your function :
 
 ```go
 func main() {
@@ -23,11 +23,13 @@ func main() {
 }
 ```
 
+And its output :
+
 ```console
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test
 0000 0000 1700 0000 9600 0000 ff00 0000 ................
 0c00 0000 1000 0000 1500 0000 2a00 0000 ............*...
-0000 0000 0000 0000 					........
+0000 0000 0000 0000 			........
 student@ubuntu:~/piscine/test$
 ```
