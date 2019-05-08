@@ -7,16 +7,18 @@ argument, the program prints on the standard output "OK" followed by a newline
 if the expression is correctly bracketed, otherwise it prints "Error" followed by
 a newline.
 
-Symbols considered as 'brackets' are brackets '(' and ')', square brackets '['
-and ']'and braces '{' and '}'. Every other symbols are simply ignored.
+
+Symbols considered as `brackets` are brackets `(` and `)`, square brackets `[`
+and `]`and braces `{` and `}`. Every other symbols are simply ignored.
 
 An opening bracket must always be closed by the good closing bracket in the
-correct order. A string which not contains any bracket is considered as a
+correct order. A string which do not contains any bracket is considered as a
 correctly bracketed string.
 
 If there is no arguments, the program must print only a newline.
 
-And its output :
+
+Examples of outputs :
 
 ```console
 student@ubuntu:~/student/brackets$ go build
@@ -30,4 +32,5 @@ OK$
 student@ubuntu:~/student/brackets$ ./brackets | cat -e
 $
 student@ubuntu:~/student/brackets$
+
 ```

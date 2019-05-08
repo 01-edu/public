@@ -60,14 +60,7 @@ cp -r system /tmp
 cd /tmp/system
 sed -i -e "s|::DISK::|$DISK|g" etc/udev/rules.d/10-local.rules
 
-# Fourth local partition
-PART=$(lsblk -o tran,kname,hotplug,type,fstype -pr |
-	grep -v usb |
-	grep '0 part' |
-	cut -d' ' -f2 |
-	sort |
-	head -n4 |
-	tail -n1)
+PART=$(lsblk -pro kname,partlabel | grep 01-tmp-system | cut -d' ' -f1)
 sed -i -e "s|::PART::|$PART|g" usr/share/initramfs-tools/scripts/init-premount/reformat
 
 apt-get -y install overlayroot

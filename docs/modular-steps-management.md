@@ -36,6 +36,7 @@
 
 <img width="1073" alt="Capture d’écran 2019-04-22 à 15 59 33" src="https://user-images.githubusercontent.com/35296671/56507445-3936ef00-6519-11e9-90c8-d85056e9330b.png">
 
+
 * Add a new key **subtype** of type `String` with the exact value 'form-step'
 * Add a new key **form** of type `Object` 
   * Form can have several sections. Each section is displayed with a title, and its inputs. 
@@ -48,12 +49,14 @@
       > The values will be considered as the properties of your input.
 
 #### Defining an input:
+
 * A **type** key of type `String` must be declared. It defines the type of the input : `tel`, `text`, `date`, `select`, `radio`, `switch`, `checkbox`, `textarea`, `countries`. 
 * All other attributes needed for the input can be added to the object, according to the input type: `placeholder`, `id`, `required`, `label`, `items`, `emptyItems`, `index`, etc...
 
 #### Important indication: 
 * The **index** property is used to order the inputs. It will not be passed onto the input. Be mindful not to set the same index twice.
 * The **type** property is required. It will be used to determine the kind of input should be generated. It is passed onto the input only if the input type attribute is required (type 'tel' or 'text' for example, but not for type 'select' - in this case, we will generate a select element)
+
   * A special type 'countries' has been added to the classicals. It generate a `Select` (containing all the countries) with a search bar. 'Items' property is handled by the app.
   * It's recommended to add 'min' and 'max' properties to input type 'date' (no default value are set).
 * `onChange` prop are ignored as the event is handled by the app.
@@ -69,6 +72,7 @@
 ### Examples
 
 Here is an example of the form step's attributes. It presents a form with two sections, and an example of each kind of input type. 
+
 > NB : this example object is provided in the admin, in the onboarding section: 'Form step example'.
 
 ```json
@@ -169,6 +173,7 @@ Here is an example of the form step's attributes. It presents a form with two se
 
 This 'form' step would look like this:
 
+
 ![form step example](https://user-images.githubusercontent.com/35296671/56816457-7cf06800-683b-11e9-9003-6f83b4545033.png)
 
 ## Settings for a `document to sign` step
@@ -188,6 +193,7 @@ The newly created child can be customized with these attributes :
 1. Edit you step object
 2. Go to *Object attributes*
 3. Add the following attributes:
+
    * Add a new key **subtype** of type `String` with the exact value 'sign-step'
    * Add a new key **text** of type `String` with the text of your document to sign as value
    * Add a new key **buttonText** of type `String` with the text that you want to display in the submit button of your step. Default value for this attribute is 'Sign'.

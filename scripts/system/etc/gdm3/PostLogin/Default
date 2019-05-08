@@ -3,8 +3,7 @@
 # Mount home as an overlay filesystem
 
 # Log stdout & stderr
-exec > >(tee -i /tmp/gdm3_postlogin.log)
-exec 2>&1
+exec > >(tee -i /tmp/gdm3_postlogin.log) 2>&1
 
 # Treat unset variables as an error when substituting.
 set -u
@@ -28,12 +27,8 @@ set -x
 
 sleep 0.5
 
-# Find the first removable F2FS partition
-PART=$(lsblk -o tran,kname,hotplug,type,fstype -pr |
-	grep -e '1 part f2fs' -e '1 disk f2fs' |
-	cut -d' ' -f2 |
-	sort |
-	head -n1)
+# Find the removable F2FS partition
+PART=$(lsblk -pro kname,partlabel | grep 01-home | cut -d' ' -f1)
 
 # Make sure the mountpoints are free
 (
@@ -46,14 +41,8 @@ if test "$PART"
 then
 	mount -o noatime "$PART" /mnt
 else
-	# No removable F2FS partition found, use the third local partition instead
-	PART=$(lsblk -o tran,kname,hotplug,type,fstype -pr |
-		grep -v usb |
-		grep '0 part' |
-		cut -d' ' -f2 |
-		sort |
-		head -n3 |
-		tail -n1)
+	# No removable F2FS partition found
+	PART=$(lsblk -pro kname,partlabel | grep 01-tmp-home | cut -d' ' -f1)
 
 	if test -z "$PART"
 	then
