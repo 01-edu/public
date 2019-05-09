@@ -1,6 +1,9 @@
 # Piscine Go curriculum
 
+---
+
 # Week One
+
 
 ## Quest 1
 ### Introduction to shell
@@ -65,12 +68,15 @@ Exercices:
 - sortintegerable | https://github.com/01-edu/public/blob/master/subjects/sortintegertable.en.md
 
 ## Exam 1 (4hours)
-### Basic functions and programs skills evaluation, based on Quest 2 and Quest 3
+#### Basic functions and programs skills evaluation, based on Quest 2 and Quest 3
 
 ## Raid 1 - Square Drawing
-### First Group project. Problem resolution. Usage of first knowledges (loop and if/else)
+#### First Group project. Problem resolution. Usage of first knowledges (loop and if/else)
+
+---
 
 # Week Two
+
 
 ## Quest 4
 ### Algorithmia concepts
@@ -120,6 +126,7 @@ Exercices:
 - printnbrbase | https://github.com/01-edu/public/blob/master/subjects/printnbrbase.en.md
 - atoibase | https://github.com/01-edu/public/blob/master/subjects/atoibase.en.md
 
+
 ## Quest 6
 ### Usage of OS.Args
 
@@ -133,6 +140,7 @@ Exercices:
 - printparams | https://github.com/01-edu/public/blob/master/subjects/printparams.en.md
 - revparams | https://github.com/01-edu/public/blob/master/subjects/revparams.en.md
 - sortparams | https://github.com/01-edu/public/blob/master/subjects/sortparams.en.md
+
 
 ## Quest 7
 ### The Memory Allocation in GoLang
@@ -152,12 +160,15 @@ Exercices:
 - split | https://github.com/01-edu/public/blob/master/subjects/split.en.md
 
 ## Exam 2 (4hours)
-### Basic functions and programs skills evaluation, based on Quest 2 and Quest 6
+#### Basic functions and programs skills evaluation, based on Quest 2 and Quest 6
 
 ## Raid 2 - Sudoku
-### Second Group project. Problem resolution. Usage of Memory manipulation tools
+#### Second Group project. Problem resolution. Usage of Memory manipulation tools
+
+---
 
 # Week Three
+
 
 ## Quest 8
 ### Introduction to Structures and advence tyoe in GoLang
@@ -169,6 +180,7 @@ Videos:
 - 08-02-File Manipulation in go | https://www.youtube.com/watch?v=8vUgchQGhcQ
 
 Exercices:
+
 
 ## Quest 9
 ### Functions as argument
@@ -190,13 +202,15 @@ Notions: All previously viewed concepts in team work
 Exercices:
 
 ## Exam 3 (4hours)
-### Basic functions and programs skills evaluation, based on Quest 2 and Quest 8
+#### Basic functions and programs skills evaluation, based on Quest 2 and Quest 8
 
 ## Raid 3 - File Reader
-### Second Group project. Problem resolution. File manipulation based on Raid 1
+#### Second Group project. Problem resolution. File manipulation based on Raid 1
 
+---
 
 # Week Four
+
 
 ## Quest 11
 ### Linked lists in GoLang
@@ -207,6 +221,22 @@ Videos:
 - 11-01-Linked Lists Introduction | https://www.youtube.com/watch?v=R2sZsZ7Z9OQ
 
 Exercices:
+- listpushback | https://github.com/01-edu/public/blob/master/subjects/listpushback.en.md
+- listpushfront | https://github.com/01-edu/public/blob/master/subjects/listpushfront.en.md
+- listsize | https://github.com/01-edu/public/blob/master/subjects/listsize.en.md
+- listlast | https://github.com/01-edu/public/blob/master/subjects/listlast.en.md
+- listclear | https://github.com/01-edu/public/blob/master/subjects/listclear.en.md
+- listat | https://github.com/01-edu/public/blob/master/subjects/listat.en.md
+- listreverse | https://github.com/01-edu/public/blob/master/subjects/listreverse.en.md
+- listforeach | https://github.com/01-edu/public/blob/master/subjects/listforeach.en.md
+- listforeachif | https://github.com/01-edu/public/blob/master/subjects/listforeachif.en.md
+- listfind | https://github.com/01-edu/public/blob/master/subjects/listfind.en.md
+- listremoveif | https://github.com/01-edu/public/blob/master/subjects/listremoveif.en.md
+- listmerge | https://github.com/01-edu/public/blob/master/subjects/listmerge.en.md
+- listsort | https://github.com/01-edu/public/blob/master/subjects/listsort.en.md
+- sortlistinsert | https://github.com/01-edu/public/blob/master/subjects/sortlistinsert.en.md
+- sortedlistmerge | https://github.com/01-edu/public/blob/master/subjects/sortedlistmerge.en.md
+
 
 ## Quest 12
 ### Binary Trees
@@ -217,6 +247,18 @@ Videos:
 - 12-01-Introduction to Binary Trees | https://www.youtube.com/watch?v=3g2WCqWNIVs
 
 Exercices:
+- btreeinsertdata | https://github.com/01-edu/public/blob/master/subjects/btreeinsertdata.en.md
+- btreeapplyinorder | https://github.com/01-edu/public/blob/master/subjects/btreeapplyinorder.en.md
+- btreeapplypreorder | https://github.com/01-edu/public/blob/master/subjects/btreeapplypreorder.en.md
+- btreesearchitem | https://github.com/01-edu/public/blob/master/subjects/btreesearchitem.en.md
+- btreelevelcount | https://github.com/01-edu/public/blob/master/subjects/btreelevelcount.en.md
+- btreeisbinary | https://github.com/01-edu/public/blob/master/subjects/btreeisbinary.en.md
+- btreeapplylevel | https://github.com/01-edu/public/blob/master/subjects/btreeapplylevel.en.md
+- btreemax | https://github.com/01-edu/public/blob/master/subjects/btreemax.en.md
+- btreemin | https://github.com/01-edu/public/blob/master/subjects/btreemin.en.md
+- btreetransplant | https://github.com/01-edu/public/blob/master/subjects/btreetransplant.en.md
+- btreedeletenode | https://github.com/01-edu/public/blob/master/subjects/btreedeletenode.en.md
+
 
 ## Exam 4 - Fianal Exam (8hours)
-### Functions and programs skills evaluation, based on Quest 2 and Quest 11
+#### Functions and programs skills evaluation, based on Quest 2 and Quest 11
