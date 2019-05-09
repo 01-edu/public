@@ -59,6 +59,7 @@ popularity-contest
 python3-update-manager
 secureboot-db
 snapd
+speech-dispatcher*
 spice-vdagent
 ubuntu-report
 ubuntu-software
