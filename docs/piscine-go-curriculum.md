@@ -57,8 +57,10 @@ Exercices:
 - ultimatedivmod
 - printstr
 - strlen
+- swap
 - strrev
 - basicatoi
+- basicatoi2
 - atoi
 - sortintegerable
 
@@ -110,6 +112,7 @@ Exercices:
 - isalpha
 - isnumeric
 - islower
+- isupper
 - isprintable
 - concat
 - basicjoin
@@ -141,6 +144,7 @@ Videos:
 
 Exercices:
 - appendrange
+- makerange
 - concatparams
 - splitwhitespaces
 - printwordstables
