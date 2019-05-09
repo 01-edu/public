@@ -51,6 +51,16 @@ Videos:
 - 03-04-Modulo and Division | https://www.youtube.com/watch?v=NVan-9-Ioec
 
 Exercices:
+- pointone
+- ultimatepointone
+- divmod
+- ultimatedivmod
+- printstr
+- strlen
+- strrev
+- basicatoi
+- atoi
+- sortintegerable
 
 ## Exam 1 (4hours)
 ### Basic functions and programs skills evaluation, based on Quest 2 and Quest 3
@@ -69,6 +79,16 @@ Videos:
 - 04-01-Iterativity and Recursivity | https://www.youtube.com/watch?v=oCZDdAID5Ik
 
 Exercices:
+- iterativefactorial
+- recursivefactorial
+- iterativepower
+- recursivepower
+- fibonacci
+- sqrt
+- isprime
+- findnextprime
+- eightqueens
+
 
 ## Quest 5
 ### Application of previously viewed concepts.
@@ -79,6 +99,23 @@ Videos:
 - 05-01-Runes, Bytes and Strings | https://www.youtube.com/watch?v=-eIU5ISID64
 
 Exercices:
+- firstrune
+- nrune
+- lastrune
+- index
+- compare
+- toupper
+- tolower
+- capitalize
+- isalpha
+- isnumeric
+- islower
+- isprintable
+- concat
+- basicjoin
+- join
+- printnbrbase
+- atoibase
 
 ## Quest 6
 ### Usage of OS.Args
@@ -89,6 +126,10 @@ Videos:
 - 06-01-Os.Args | https://www.youtube.com/watch?v=I1xt_TLRhF0
 
 Exercices:
+- printprogramname
+- printparams
+- revparams
+- sortparams
 
 ## Quest 7
 ### The Memory Allocation in GoLang
@@ -99,6 +140,12 @@ Videos:
 - 07-01-Make and Append methods | https://www.youtube.com/watch?v=2HHVUM0YQuI
 
 Exercices:
+- appendrange
+- concatparams
+- splitwhitespaces
+- printwordstables
+- convertbase
+- split
 
 ## Exam 2 (4hours)
 ### Basic functions and programs skills evaluation, based on Quest 2 and Quest 6
