@@ -29,14 +29,14 @@ Videos:
 - 02-04-Variables Declaration and ascii | https://www.youtube.com/watch?v=RCNOV8m0hJQ
 
 Exercices:
-- printalphabet
-- printreversealphabet
-- prindigits
-- isnegative
-- printcomb
-- printcomb2
-- printnbr
-- printcombn
+- printalphabet | https://github.com/01-edu/public/blob/master/subjects/printalphabet.en.md
+- printreversealphabet | https://github.com/01-edu/public/blob/master/subjects/printreversealphabet.en.md
+- prindigits | https://github.com/01-edu/public/blob/master/subjects/printdigits.en.md
+- isnegative | https://github.com/01-edu/public/blob/master/subjects/isnegative.en.md
+- printcomb | https://github.com/01-edu/public/blob/master/subjects/printcomb.en.md
+- printcomb2 | https://github.com/01-edu/public/blob/master/subjects/printcomb2.en.md
+- printnbr | https://github.com/01-edu/public/blob/master/subjects/printnbr.en.md
+- printcombn | https://github.com/01-edu/public/blob/master/subjects/printcombn.en.md
 
 
 ## Quest 3
@@ -51,18 +51,18 @@ Videos:
 - 03-04-Modulo and Division | https://www.youtube.com/watch?v=NVan-9-Ioec
 
 Exercices:
-- pointone
-- ultimatepointone
-- divmod
-- ultimatedivmod
-- printstr
-- strlen
-- swap
-- strrev
-- basicatoi
-- basicatoi2
-- atoi
-- sortintegerable
+- pointone | https://github.com/01-edu/public/blob/master/subjects/pointone.en.md
+- ultimatepointone | https://github.com/01-edu/public/blob/master/subjects/ultimatepointone.en.md
+- divmod | https://github.com/01-edu/public/blob/master/subjects/divmod.en.md
+- ultimatedivmod | https://github.com/01-edu/public/blob/master/subjects/ultimatedivmod.en.md
+- printstr | https://github.com/01-edu/public/blob/master/subjects/printstr.en.md
+- strlen | https://github.com/01-edu/public/blob/master/subjects/strlen.en.md
+- swap | https://github.com/01-edu/public/blob/master/subjects/swap.en.md
+- strrev | https://github.com/01-edu/public/blob/master/subjects/strrev.en.md
+- basicatoi | https://github.com/01-edu/public/blob/master/subjects/basicatoi.en.md
+- basicatoi2 | https://github.com/01-edu/public/blob/master/subjects/basicatoi2.en.md
+- atoi | https://github.com/01-edu/public/blob/master/subjects/atoi.en.md
+- sortintegerable | https://github.com/01-edu/public/blob/master/subjects/sortintegertable.en.md
 
 ## Exam 1 (4hours)
 ### Basic functions and programs skills evaluation, based on Quest 2 and Quest 3
@@ -81,15 +81,15 @@ Videos:
 - 04-01-Iterativity and Recursivity | https://www.youtube.com/watch?v=oCZDdAID5Ik
 
 Exercices:
-- iterativefactorial
-- recursivefactorial
-- iterativepower
-- recursivepower
-- fibonacci
-- sqrt
-- isprime
-- findnextprime
-- eightqueens
+- iterativefactorial | https://github.com/01-edu/public/blob/master/subjects/iterativefactorial.en.md
+- recursivefactorial | https://github.com/01-edu/public/blob/master/subjects/recursivefactorial.en.md
+- iterativepower | https://github.com/01-edu/public/blob/master/subjects/iterativepower.en.md
+- recursivepower | https://github.com/01-edu/public/blob/master/subjects/recursivepower.en.md
+- fibonacci | https://github.com/01-edu/public/blob/master/subjects/fibonacci.en.md
+- sqrt | https://github.com/01-edu/public/blob/master/subjects/sqrt.en.md
+- isprime | https://github.com/01-edu/public/blob/master/subjects/isprime.en.md
+- findnextprime | https://github.com/01-edu/public/blob/master/subjects/findnextprime.en.md
+- eightqueens | https://github.com/01-edu/public/blob/master/subjects/eightqueens.en.md
 
 
 ## Quest 5
@@ -101,24 +101,24 @@ Videos:
 - 05-01-Runes, Bytes and Strings | https://www.youtube.com/watch?v=-eIU5ISID64
 
 Exercices:
-- firstrune
-- nrune
-- lastrune
-- index
-- compare
-- toupper
-- tolower
-- capitalize
-- isalpha
-- isnumeric
-- islower
-- isupper
-- isprintable
-- concat
-- basicjoin
-- join
-- printnbrbase
-- atoibase
+- firstrune | https://github.com/01-edu/public/blob/master/subjects/firstrune.en.md
+- nrune | https://github.com/01-edu/public/blob/master/subjects/nrune.en.md
+- lastrune | https://github.com/01-edu/public/blob/master/subjects/lastrune.en.md
+- index | https://github.com/01-edu/public/blob/master/subjects/index.en.md
+- compare | https://github.com/01-edu/public/blob/master/subjects/compare.en.md
+- toupper | https://github.com/01-edu/public/blob/master/subjects/toupper.en.md
+- tolower | https://github.com/01-edu/public/blob/master/subjects/tolower.en.md
+- capitalize | https://github.com/01-edu/public/blob/master/subjects/capitalize.en.md
+- isalpha | https://github.com/01-edu/public/blob/master/subjects/isalpha.en.md
+- isnumeric | https://github.com/01-edu/public/blob/master/subjects/isnumeric.en.md
+- islower | https://github.com/01-edu/public/blob/master/subjects/islower.en.md
+- isupper | https://github.com/01-edu/public/blob/master/subjects/isupper.en.md
+- isprintable | https://github.com/01-edu/public/blob/master/subjects/isprintable.en.md
+- concat | https://github.com/01-edu/public/blob/master/subjects/concat.en.md
+- basicjoin | https://github.com/01-edu/public/blob/master/subjects/basicjoin.en.md
+- join | https://github.com/01-edu/public/blob/master/subjects/join.en.md
+- printnbrbase | https://github.com/01-edu/public/blob/master/subjects/printnbrbase.en.md
+- atoibase | https://github.com/01-edu/public/blob/master/subjects/atoibase.en.md
 
 ## Quest 6
 ### Usage of OS.Args
@@ -129,10 +129,10 @@ Videos:
 - 06-01-Os.Args | https://www.youtube.com/watch?v=I1xt_TLRhF0
 
 Exercices:
-- printprogramname
-- printparams
-- revparams
-- sortparams
+- printprogramname | https://github.com/01-edu/public/blob/master/subjects/printprogramname.en.md
+- printparams | https://github.com/01-edu/public/blob/master/subjects/printparams.en.md
+- revparams | https://github.com/01-edu/public/blob/master/subjects/revparams.en.md
+- sortparams | https://github.com/01-edu/public/blob/master/subjects/sortparams.en.md
 
 ## Quest 7
 ### The Memory Allocation in GoLang
@@ -143,13 +143,13 @@ Videos:
 - 07-01-Make and Append methods | https://www.youtube.com/watch?v=2HHVUM0YQuI
 
 Exercices:
-- appendrange
-- makerange
-- concatparams
-- splitwhitespaces
-- printwordstables
-- convertbase
-- split
+- appendrange | https://github.com/01-edu/public/blob/master/subjects/apprendrange.en.md
+- makerange | https://github.com/01-edu/public/blob/master/subjects/makerange.en.md
+- concatparams | https://github.com/01-edu/public/blob/master/subjects/concatparams.en.md
+- splitwhitespaces | https://github.com/01-edu/public/blob/master/subjects/splitwhitespaces.en.md
+- printwordstables | https://github.com/01-edu/public/blob/master/subjects/printwordstables.en.md
+- convertbase | https://github.com/01-edu/public/blob/master/subjects/converbase.en.md
+- split | https://github.com/01-edu/public/blob/master/subjects/split.en.md
 
 ## Exam 2 (4hours)
 ### Basic functions and programs skills evaluation, based on Quest 2 and Quest 6
