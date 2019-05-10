@@ -2,11 +2,11 @@
 
 ---
 
-# Week One
+## Week One
 
 
-## Quest 1
-### Introduction to shell
+### Quest 1
+#### Introduction to shell
 
 Notions: basic usage and interaction with a command line terminal.
 
@@ -15,13 +15,13 @@ Videos:
 - 1-3 Touch , Chmod and Echo | https://www.youtube.com/watch?v=21h-vsuXgDU
 - 1-4 find and grep | https://www.youtube.com/watch?v=7a1JSWHhJlM
 - 1-5 cut sed and tr | https://www.youtube.com/watch?v=Nil7rVP3eMI
-- 1-6 jq and wc | https://www.youtube.com/watch?v=cQmcaOseuiA&t=49s
+- 1-6 jq and wc | https://www.youtube.com/watch?v=cQmcaOseuiA&
 
 Exercices:
 
 
-## Quest 2
-### Introduction to Go Lang and basic programmation concepts
+### Quest 2
+#### Introduction to Go Lang and basic programmation concepts
 
 Notions: Variables declaration, Loops, if and else statement, usage of z01.PrintRune function.
 
@@ -32,18 +32,18 @@ Videos:
 - 02-04-Variables Declaration and ascii | https://www.youtube.com/watch?v=RCNOV8m0hJQ
 
 Exercices:
-- printalphabet | https://github.com/01-edu/public/blob/master/subjects/printalphabet.en.md
-- printreversealphabet | https://github.com/01-edu/public/blob/master/subjects/printreversealphabet.en.md
-- prindigits | https://github.com/01-edu/public/blob/master/subjects/printdigits.en.md
-- isnegative | https://github.com/01-edu/public/blob/master/subjects/isnegative.en.md
-- printcomb | https://github.com/01-edu/public/blob/master/subjects/printcomb.en.md
-- printcomb2 | https://github.com/01-edu/public/blob/master/subjects/printcomb2.en.md
-- printnbr | https://github.com/01-edu/public/blob/master/subjects/printnbr.en.md
-- printcombn | https://github.com/01-edu/public/blob/master/subjects/printcombn.en.md
+- printalphabet | https://public.01-edu.org/subjects/printalphabet.en
+- printreversealphabet | https://public.01-edu.org/subjects/printreversealphabet.en
+- prindigits | https://public.01-edu.org/subjects/printdigits.en
+- isnegative | https://public.01-edu.org/subjects/isnegative.en
+- printcomb | https://public.01-edu.org/subjects/printcomb.en
+- printcomb2 | https://public.01-edu.org/subjects/printcomb2.en
+- printnbr | https://public.01-edu.org/subjects/printnbr.en
+- printcombn | https://public.01-edu.org/subjects/printcombn.en
 
 
-## Quest 3
-### Introduction to Go Lang and basic programmation concepts II
+### Quest 3
+#### Introduction to Go Lang and basic programmation concepts II
 
 Notions: String Manupulation, Range Loops, Pointers, Modulo and Division relative to computer science.
 
@@ -54,32 +54,32 @@ Videos:
 - 03-04-Modulo and Division | https://www.youtube.com/watch?v=NVan-9-Ioec
 
 Exercices:
-- pointone | https://github.com/01-edu/public/blob/master/subjects/pointone.en.md
-- ultimatepointone | https://github.com/01-edu/public/blob/master/subjects/ultimatepointone.en.md
-- divmod | https://github.com/01-edu/public/blob/master/subjects/divmod.en.md
-- ultimatedivmod | https://github.com/01-edu/public/blob/master/subjects/ultimatedivmod.en.md
-- printstr | https://github.com/01-edu/public/blob/master/subjects/printstr.en.md
-- strlen | https://github.com/01-edu/public/blob/master/subjects/strlen.en.md
-- swap | https://github.com/01-edu/public/blob/master/subjects/swap.en.md
-- strrev | https://github.com/01-edu/public/blob/master/subjects/strrev.en.md
-- basicatoi | https://github.com/01-edu/public/blob/master/subjects/basicatoi.en.md
-- basicatoi2 | https://github.com/01-edu/public/blob/master/subjects/basicatoi2.en.md
-- atoi | https://github.com/01-edu/public/blob/master/subjects/atoi.en.md
-- sortintegerable | https://github.com/01-edu/public/blob/master/subjects/sortintegertable.en.md
+- pointone | https://public.01-edu.org/subjects/pointone.en
+- ultimatepointone | https://public.01-edu.org/subjects/ultimatepointone.en
+- divmod | https://public.01-edu.org/subjects/divmod.en
+- ultimatedivmod | https://public.01-edu.org/subjects/ultimatedivmod.en
+- printstr | https://public.01-edu.org/subjects/printstr.en
+- strlen | https://public.01-edu.org/subjects/strlen.en
+- swap | https://public.01-edu.org/subjects/swap.en
+- strrev | https://public.01-edu.org/subjects/strrev.en
+- basicatoi | https://public.01-edu.org/subjects/basicatoi.en
+- basicatoi2 | https://public.01-edu.org/subjects/basicatoi2.en
+- atoi | https://public.01-edu.org/subjects/atoi.en
+- sortintegerable | https://public.01-edu.org/subjects/sortintegertable.en
 
-## Exam 1 (4hours)
+### Exam 1 (4hours)
 #### Basic functions and programs skills evaluation, based on Quest 2 and Quest 3
 
-## Raid 1 - Square Drawing
+### Raid 1 - Square Drawing
 #### First Group project. Problem resolution. Usage of first knowledges (loop and if/else)
 
 ---
 
-# Week Two
+## Week Two
 
 
-## Quest 4
-### Algorithmia concepts
+### Quest 4
+#### Algorithmia concepts
 
 Notions: Iterative and recursive programmation
 
@@ -87,19 +87,19 @@ Videos:
 - 04-01-Iterativity and Recursivity | https://www.youtube.com/watch?v=oCZDdAID5Ik
 
 Exercices:
-- iterativefactorial | https://github.com/01-edu/public/blob/master/subjects/iterativefactorial.en.md
-- recursivefactorial | https://github.com/01-edu/public/blob/master/subjects/recursivefactorial.en.md
-- iterativepower | https://github.com/01-edu/public/blob/master/subjects/iterativepower.en.md
-- recursivepower | https://github.com/01-edu/public/blob/master/subjects/recursivepower.en.md
-- fibonacci | https://github.com/01-edu/public/blob/master/subjects/fibonacci.en.md
-- sqrt | https://github.com/01-edu/public/blob/master/subjects/sqrt.en.md
-- isprime | https://github.com/01-edu/public/blob/master/subjects/isprime.en.md
-- findnextprime | https://github.com/01-edu/public/blob/master/subjects/findnextprime.en.md
-- eightqueens | https://github.com/01-edu/public/blob/master/subjects/eightqueens.en.md
+- iterativefactorial | https://public.01-edu.org/subjects/iterativefactorial.en
+- recursivefactorial | https://public.01-edu.org/subjects/recursivefactorial.en
+- iterativepower | https://public.01-edu.org/subjects/iterativepower.en
+- recursivepower | https://public.01-edu.org/subjects/recursivepower.en
+- fibonacci | https://public.01-edu.org/subjects/fibonacci.en
+- sqrt | https://public.01-edu.org/subjects/sqrt.en
+- isprime | https://public.01-edu.org/subjects/isprime.en
+- findnextprime | https://public.01-edu.org/subjects/findnextprime.en
+- eightqueens | https://public.01-edu.org/subjects/eightqueens.en
 
 
-## Quest 5
-### Application of previously viewed concepts.
+### Quest 5
+#### Application of previously viewed concepts.
 
 Notions: String Manipulation and medium-advence algorithmia
 
@@ -107,28 +107,28 @@ Videos:
 - 05-01-Runes, Bytes and Strings | https://www.youtube.com/watch?v=-eIU5ISID64
 
 Exercices:
-- firstrune | https://github.com/01-edu/public/blob/master/subjects/firstrune.en.md
-- nrune | https://github.com/01-edu/public/blob/master/subjects/nrune.en.md
-- lastrune | https://github.com/01-edu/public/blob/master/subjects/lastrune.en.md
-- index | https://github.com/01-edu/public/blob/master/subjects/index.en.md
-- compare | https://github.com/01-edu/public/blob/master/subjects/compare.en.md
-- toupper | https://github.com/01-edu/public/blob/master/subjects/toupper.en.md
-- tolower | https://github.com/01-edu/public/blob/master/subjects/tolower.en.md
-- capitalize | https://github.com/01-edu/public/blob/master/subjects/capitalize.en.md
-- isalpha | https://github.com/01-edu/public/blob/master/subjects/isalpha.en.md
-- isnumeric | https://github.com/01-edu/public/blob/master/subjects/isnumeric.en.md
-- islower | https://github.com/01-edu/public/blob/master/subjects/islower.en.md
-- isupper | https://github.com/01-edu/public/blob/master/subjects/isupper.en.md
-- isprintable | https://github.com/01-edu/public/blob/master/subjects/isprintable.en.md
-- concat | https://github.com/01-edu/public/blob/master/subjects/concat.en.md
-- basicjoin | https://github.com/01-edu/public/blob/master/subjects/basicjoin.en.md
-- join | https://github.com/01-edu/public/blob/master/subjects/join.en.md
-- printnbrbase | https://github.com/01-edu/public/blob/master/subjects/printnbrbase.en.md
-- atoibase | https://github.com/01-edu/public/blob/master/subjects/atoibase.en.md
+- firstrune | https://public.01-edu.org/subjects/firstrune.en
+- nrune | https://public.01-edu.org/subjects/nrune.en
+- lastrune | https://public.01-edu.org/subjects/lastrune.en
+- index | https://public.01-edu.org/subjects/index.en
+- compare | https://public.01-edu.org/subjects/compare.en
+- toupper | https://public.01-edu.org/subjects/toupper.en
+- tolower | https://public.01-edu.org/subjects/tolower.en
+- capitalize | https://public.01-edu.org/subjects/capitalize.en
+- isalpha | https://public.01-edu.org/subjects/isalpha.en
+- isnumeric | https://public.01-edu.org/subjects/isnumeric.en
+- islower | https://public.01-edu.org/subjects/islower.en
+- isupper | https://public.01-edu.org/subjects/isupper.en
+- isprintable | https://public.01-edu.org/subjects/isprintable.en
+- concat | https://public.01-edu.org/subjects/concat.en
+- basicjoin | https://public.01-edu.org/subjects/basicjoin.en
+- join | https://public.01-edu.org/subjects/join.en
+- printnbrbase | https://public.01-edu.org/subjects/printnbrbase.en
+- atoibase | https://public.01-edu.org/subjects/atoibase.en
 
 
-## Quest 6
-### Usage of OS.Args
+### Quest 6
+#### Usage of OS.Args
 
 Notions: Arguments manipulation in programs
 
@@ -136,14 +136,14 @@ Videos:
 - 06-01-Os.Args | https://www.youtube.com/watch?v=I1xt_TLRhF0
 
 Exercices:
-- printprogramname | https://github.com/01-edu/public/blob/master/subjects/printprogramname.en.md
-- printparams | https://github.com/01-edu/public/blob/master/subjects/printparams.en.md
-- revparams | https://github.com/01-edu/public/blob/master/subjects/revparams.en.md
-- sortparams | https://github.com/01-edu/public/blob/master/subjects/sortparams.en.md
+- printprogramname | https://public.01-edu.org/subjects/printprogramname.en
+- printparams | https://public.01-edu.org/subjects/printparams.en
+- revparams | https://public.01-edu.org/subjects/revparams.en
+- sortparams | https://public.01-edu.org/subjects/sortparams.en
 
 
-## Quest 7
-### The Memory Allocation in GoLang
+### Quest 7
+#### The Memory Allocation in GoLang
 
 Notions: Usage of Make and Append
 
@@ -151,27 +151,27 @@ Videos:
 - 07-01-Make and Append methods | https://www.youtube.com/watch?v=2HHVUM0YQuI
 
 Exercices:
-- appendrange | https://github.com/01-edu/public/blob/master/subjects/apprendrange.en.md
-- makerange | https://github.com/01-edu/public/blob/master/subjects/makerange.en.md
-- concatparams | https://github.com/01-edu/public/blob/master/subjects/concatparams.en.md
-- splitwhitespaces | https://github.com/01-edu/public/blob/master/subjects/splitwhitespaces.en.md
-- printwordstables | https://github.com/01-edu/public/blob/master/subjects/printwordstables.en.md
-- convertbase | https://github.com/01-edu/public/blob/master/subjects/converbase.en.md
-- split | https://github.com/01-edu/public/blob/master/subjects/split.en.md
+- appendrange | https://public.01-edu.org/subjects/apprendrange.en
+- makerange | https://public.01-edu.org/subjects/makerange.en
+- concatparams | https://public.01-edu.org/subjects/concatparams.en
+- splitwhitespaces | https://public.01-edu.org/subjects/splitwhitespaces.en
+- printwordstables | https://public.01-edu.org/subjects/printwordstables.en
+- convertbase | https://public.01-edu.org/subjects/converbase.en
+- split | https://public.01-edu.org/subjects/split.en
 
-## Exam 2 (4hours)
+### Exam 2 (4hours)
 #### Basic functions and programs skills evaluation, based on Quest 2 and Quest 6
 
-## Raid 2 - Sudoku
+### Raid 2 - Sudoku
 #### Second Group project. Problem resolution. Usage of Memory manipulation tools
 
 ---
 
-# Week Three
+## Week Three
 
 
-## Quest 8
-### Introduction to Structures and advence tyoe in GoLang
+### Quest 8
+#### Introduction to Structures and advence tyoe in GoLang
 
 Notions: Creation of struct types and file manipulation (Open, Read, Close methods)
 
@@ -182,8 +182,8 @@ Videos:
 Exercices:
 
 
-## Quest 9
-### Functions as argument
+### Quest 9
+#### Functions as argument
 
 Notions: Advance function protoyping
 
@@ -193,27 +193,27 @@ Videos:
 Exercices:
 
 
-## Quest 10
-### Hackathon
+### Quest 10
+#### Hackathon
 
 Notions: All previously viewed concepts in team work
 
 
 Exercices:
 
-## Exam 3 (4hours)
+### Exam 3 (4hours)
 #### Basic functions and programs skills evaluation, based on Quest 2 and Quest 8
 
-## Raid 3 - File Reader
+### Raid 3 - File Reader
 #### Second Group project. Problem resolution. File manipulation based on Raid 1
 
 ---
 
-# Week Four
+## Week Four
 
 
-## Quest 11
-### Linked lists in GoLang
+### Quest 11
+#### Linked lists in GoLang
 
 Notions: Pointers manipulation and data structure
 
@@ -221,25 +221,25 @@ Videos:
 - 11-01-Linked Lists Introduction | https://www.youtube.com/watch?v=R2sZsZ7Z9OQ
 
 Exercices:
-- listpushback | https://github.com/01-edu/public/blob/master/subjects/listpushback.en.md
-- listpushfront | https://github.com/01-edu/public/blob/master/subjects/listpushfront.en.md
-- listsize | https://github.com/01-edu/public/blob/master/subjects/listsize.en.md
-- listlast | https://github.com/01-edu/public/blob/master/subjects/listlast.en.md
-- listclear | https://github.com/01-edu/public/blob/master/subjects/listclear.en.md
-- listat | https://github.com/01-edu/public/blob/master/subjects/listat.en.md
-- listreverse | https://github.com/01-edu/public/blob/master/subjects/listreverse.en.md
-- listforeach | https://github.com/01-edu/public/blob/master/subjects/listforeach.en.md
-- listforeachif | https://github.com/01-edu/public/blob/master/subjects/listforeachif.en.md
-- listfind | https://github.com/01-edu/public/blob/master/subjects/listfind.en.md
-- listremoveif | https://github.com/01-edu/public/blob/master/subjects/listremoveif.en.md
-- listmerge | https://github.com/01-edu/public/blob/master/subjects/listmerge.en.md
-- listsort | https://github.com/01-edu/public/blob/master/subjects/listsort.en.md
-- sortlistinsert | https://github.com/01-edu/public/blob/master/subjects/sortlistinsert.en.md
-- sortedlistmerge | https://github.com/01-edu/public/blob/master/subjects/sortedlistmerge.en.md
+- listpushback | https://public.01-edu.org/subjects/listpushback.en
+- listpushfront | https://public.01-edu.org/subjects/listpushfront.en
+- listsize | https://public.01-edu.org/subjects/listsize.en
+- listlast | https://public.01-edu.org/subjects/listlast.en
+- listclear | https://public.01-edu.org/subjects/listclear.en
+- listat | https://public.01-edu.org/subjects/listat.en
+- listreverse | https://public.01-edu.org/subjects/listreverse.en
+- listforeach | https://public.01-edu.org/subjects/listforeach.en
+- listforeachif | https://public.01-edu.org/subjects/listforeachif.en
+- listfind | https://public.01-edu.org/subjects/listfind.en
+- listremoveif | https://public.01-edu.org/subjects/listremoveif.en
+- listmerge | https://public.01-edu.org/subjects/listmerge.en
+- listsort | https://public.01-edu.org/subjects/listsort.en
+- sortlistinsert | https://public.01-edu.org/subjects/sortlistinsert.en
+- sortedlistmerge | https://public.01-edu.org/subjects/sortedlistmerge.en
 
 
-## Quest 12
-### Binary Trees
+### Quest 12
+#### Binary Trees
 
 Notions: Advance Data Structure using binary trees
 
@@ -247,18 +247,18 @@ Videos:
 - 12-01-Introduction to Binary Trees | https://www.youtube.com/watch?v=3g2WCqWNIVs
 
 Exercices:
-- btreeinsertdata | https://github.com/01-edu/public/blob/master/subjects/btreeinsertdata.en.md
-- btreeapplyinorder | https://github.com/01-edu/public/blob/master/subjects/btreeapplyinorder.en.md
-- btreeapplypreorder | https://github.com/01-edu/public/blob/master/subjects/btreeapplypreorder.en.md
-- btreesearchitem | https://github.com/01-edu/public/blob/master/subjects/btreesearchitem.en.md
-- btreelevelcount | https://github.com/01-edu/public/blob/master/subjects/btreelevelcount.en.md
-- btreeisbinary | https://github.com/01-edu/public/blob/master/subjects/btreeisbinary.en.md
-- btreeapplylevel | https://github.com/01-edu/public/blob/master/subjects/btreeapplylevel.en.md
-- btreemax | https://github.com/01-edu/public/blob/master/subjects/btreemax.en.md
-- btreemin | https://github.com/01-edu/public/blob/master/subjects/btreemin.en.md
-- btreetransplant | https://github.com/01-edu/public/blob/master/subjects/btreetransplant.en.md
-- btreedeletenode | https://github.com/01-edu/public/blob/master/subjects/btreedeletenode.en.md
+- btreeinsertdata | https://public.01-edu.org/subjects/btreeinsertdata.en
+- btreeapplyinorder | https://public.01-edu.org/subjects/btreeapplyinorder.en
+- btreeapplypreorder | https://public.01-edu.org/subjects/btreeapplypreorder.en
+- btreesearchitem | https://public.01-edu.org/subjects/btreesearchitem.en
+- btreelevelcount | https://public.01-edu.org/subjects/btreelevelcount.en
+- btreeisbinary | https://public.01-edu.org/subjects/btreeisbinary.en
+- btreeapplylevel | https://public.01-edu.org/subjects/btreeapplylevel.en
+- btreemax | https://public.01-edu.org/subjects/btreemax.en
+- btreemin | https://public.01-edu.org/subjects/btreemin.en
+- btreetransplant | https://public.01-edu.org/subjects/btreetransplant.en
+- btreedeletenode | https://public.01-edu.org/subjects/btreedeletenode.en
 
 
-## Exam 4 - Fianal Exam (8hours)
+### Exam 4 - Fianal Exam (8hours)
 #### Functions and programs skills evaluation, based on Quest 2 and Quest 11
