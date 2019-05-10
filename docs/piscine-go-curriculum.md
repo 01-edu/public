@@ -11,7 +11,7 @@
 Notions: basic usage and interaction with a command line terminal.
 
 Videos:
-- 1-2 Curl with the GitHub api adn Example of Sh file | https://www.youtube.com/watch?v=A0Mqc215igw
+- 1-2 Curl with the GitHub api and Example of Sh file | https://www.youtube.com/watch?v=A0Mqc215igw
 - 1-3 Touch , Chmod and Echo | https://www.youtube.com/watch?v=21h-vsuXgDU
 - 1-4 find and grep | https://www.youtube.com/watch?v=7a1JSWHhJlM
 - 1-5 cut sed and tr | https://www.youtube.com/watch?v=Nil7rVP3eMI
