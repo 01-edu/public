@@ -28,8 +28,8 @@ sed -i 's/NoDisplay=true/NoDisplay=false/g' /etc/xdg/autostart/*.desktop
 # Remove password complexity constraints
 sed -i 's/ obscure / minlen=1 /g' /etc/pam.d/common-password
 
-# Remove splash screen (plymouth) and hide kernel output
-sed -i 's/quiet splash/quiet vt.global_cursor_default=0 console=ttyS0/g' /etc/default/grub
+# Remove splash screen (plymouth)
+sed -i 's/quiet splash/quiet/g' /etc/default/grub
 
 update-initramfs -u
 update-grub
