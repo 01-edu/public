@@ -17,6 +17,7 @@ do
 	PATH=$PATH:$GOPATH/bin
 	alias gobuild='CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags="-s -w"'
 	EOF
+	echo 'GOPATH=$HOME/go' >> $DIR/.profile
 
 	# Fix rights
 	USR=$(echo "$DIR" | rev | cut -d/ -f1 | rev)
