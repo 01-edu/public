@@ -16,17 +16,17 @@ lrwxrwxrwx 1990-02-16 00:11 3 -> 0
 -r-x--x--- 1991-03-08 01:11 7
 -rw----r-- 1994-05-20 10:00 8
 -r------w- 1994-06-10 10:01 9
-dr-------x 1995-04-10 11:11 A
+dr-------x 1995-04-10 10:10 A
 user@host:~/piscine/d01/make-it-better$
 ```
 
 Une fois fini, utilisez la commande ci-dessous pour créer le fichier `done.tar` de rendu.
 
 ```console
-user@host:~/piscine/d01/make-it-better$ tar -cf done.tar *
-user@host:~/piscine/d01/make-it-better$ ls
+user@host:~/piscine/make-it-better$ tar -cf done.tar *
+user@host:~/piscine/make-it-better$ ls
 0  1  2  3  4  5  6  7  8  9  A  done.tar
-user@host:~/piscine/d01/make-it-better$
+user@host:~/piscine/make-it-better$
 ```
 
 **Seulement `done.tar` doit être rendu.**
