@@ -92,7 +92,7 @@ Exercices:
 
 ### Raid 1 - Square Drawing
 
-#### First Group project. Problem resolution. Usage of first knowledges (loop and if/else)
+#### First Group project. Problem resolution. Usage of first knowledge (loop and if/else)
 
 ---
 
@@ -124,7 +124,7 @@ Exercices:
 
 #### Application of previously viewed concepts.
 
-Notions: String Manipulation and medium-advence algorithmia
+Notions: String Manipulation and medium-advanced algorithmia
 
 Videos:
 
@@ -202,7 +202,7 @@ Exercices:
 
 ### Quest 8
 
-#### Introduction to Structures and advence tyoe in GoLang
+#### Introduction to Structures and advanced types in GoLang
 
 Notions: Creation of struct types and file manipulation (Open, Read, Close methods)
 
@@ -305,7 +305,7 @@ Exercices:
 
 #### Binary Trees
 
-Notions: Advance Data Structure using binary trees
+Notions: Advanced Data Structure using binary trees
 
 Videos:
 
@@ -325,6 +325,6 @@ Exercices:
 - btreetransplant | https://public.01-edu.org/subjects/btreetransplant.en
 - btreedeletenode | https://public.01-edu.org/subjects/btreedeletenode.en
 
-### Exam 4 - Fianal Exam (8hours)
+### Exam 4 - Final Exam (8hours)
 
 #### Functions and programs skills evaluation, based on Quest 2 and Quest 11
