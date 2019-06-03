@@ -20,19 +20,19 @@ Videos:
 
 Exercices:
 
-- introduction | https://public.01-edu.org/subjects/introduction.en.md
-- make-it-better | https://public.01-edu.org/subjects/make-it-better.en.md
-- to-git-or-not-to-git | https://public.01-edu.org/subjects/to-git-or-not-to-git.en.md
-- who-are-you | https://public.01-edu.org/subjects/who-are-you.en.md
-- cl-camp1 | https://public.01-edu.org/subjects/cl-camp1.en.md
-- cl-camp2 | https://public.01-edu.org/subjects/cl-camp2.en.md
-- cl-camp3 | https://public.01-edu.org/subjects/cl-camp3.en.md
-- cl-camp4 | https://public.01-edu.org/subjects/cl-camp4.en.md
-- cl-camp5 | https://public.01-edu.org/subjects/cl-camp5.en.md
-- cl-camp6 | https://public.01-edu.org/subjects/cl-camp6.en.md
-- cl-camp7 | https://public.01-edu.org/subjects/cl-camp7.en.md
-- cl-camp8 | https://public.01-edu.org/subjects/cl-camp8.en.md
-- now-get-to-work | https://public.01-edu.org/subjects/now-get-to-work.en.md
+- introduction | https://public.01-edu.org/subjects/introduction.en
+- make-it-better | https://public.01-edu.org/subjects/make-it-better.en
+- to-git-or-not-to-git | https://public.01-edu.org/subjects/to-git-or-not-to-git.en
+- who-are-you | https://public.01-edu.org/subjects/who-are-you.en
+- cl-camp1 | https://public.01-edu.org/subjects/cl-camp1.en
+- cl-camp2 | https://public.01-edu.org/subjects/cl-camp2.en
+- cl-camp3 | https://public.01-edu.org/subjects/cl-camp3.en
+- cl-camp4 | https://public.01-edu.org/subjects/cl-camp4.en
+- cl-camp5 | https://public.01-edu.org/subjects/cl-camp5.en
+- cl-camp6 | https://public.01-edu.org/subjects/cl-camp6.en
+- cl-camp7 | https://public.01-edu.org/subjects/cl-camp7.en
+- cl-camp8 | https://public.01-edu.org/subjects/cl-camp8.en
+- now-get-to-work | https://public.01-edu.org/subjects/now-get-to-work.en
 
 ### Quest 2
 
@@ -213,17 +213,32 @@ Videos:
 
 Exercices:
 
+- bool | https://public.01-edu.org/subjects/bool.en
+- point | https://public.01-edu.org/subjects/point.en
+- display | https://public.01-edu.org/subjects/display.en
+- cat | https://public.01-edu.org/subjects/cat.en
+- ztail | https://public.01-edu.org/subjects/ztail.en
+
 ### Quest 9
 
 #### Functions as argument
 
-Notions: Advance function protoyping
+Notions: Advance function prototyping
 
 Videos:
 
 - 09-01-Functions as Arguments | https://www.youtube.com/watch?v=lw8jUwsluAE
 
 Exercices:
+
+- foreach | https://public.01-edu.org/subjects/foreach.en
+- map | https://public.01-edu.org/subjects/map.en
+- any | https://public.01-edu.org/subjects/any.en
+- countif | https://public.01-edu.org/subjects/countif.en
+- issorted | https://public.01-edu.org/subjects/issorted.en
+- doop | https://public.01-edu.org/subjects/doop.en
+- sortwordarr | https://public.01-edu.org/subjects/sortwordarr.en
+- advancedsortwordarr | https://public.01-edu.org/subjects/advancedsortwordarr.en
 
 ### Quest 10
 
@@ -232,6 +247,19 @@ Exercices:
 Notions: All previously viewed concepts in team work
 
 Exercices:
+
+- rot14 | https://public.01-edu.org/subjects/rot14.en
+- abort | https://public.01-edu.org/subjects/abort.en
+- collatzcountdown | https://public.01-edu.org/subjects/collatzcountdown.en
+- comcheck | https://public.01-edu.org/subjects/comcheck.en
+- enigma | https://public.01-edu.org/subjects/enigma.en
+- pilot | https://public.01-edu.org/subjects/pilot.en
+- fixthemain | https://public.01-edu.org/subjects/fixthemain.en
+- compact | https://public.01-edu.org/subjects/compact.en
+- activebits | https://public.01-edu.org/subjects/activebits.en
+- max | https://public.01-edu.org/subjects/max.en
+- join | https://public.01-edu.org/subjects/join.en
+- unmatch | https://public.01-edu.org/subjects/unmatch.en
 
 ### Exam 3 (4hours)
 
