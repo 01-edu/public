@@ -215,7 +215,7 @@ Exercices:
 
 - bool | https://public.01-edu.org/subjects/bool.en
 - point | https://public.01-edu.org/subjects/point.en
-- display | https://public.01-edu.org/subjects/display.en
+- displayfile | https://public.01-edu.org/subjects/displayfile.en
 - cat | https://public.01-edu.org/subjects/cat.en
 - ztail | https://public.01-edu.org/subjects/ztail.en
 
