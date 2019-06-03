@@ -20,6 +20,20 @@ Videos:
 
 Exercices:
 
+- introduction | https://public.01-edu.org/subjects/introduction.en.md
+- make-it-better | https://public.01-edu.org/subjects/make-it-better.en.md
+- to-git-or-not-to-git | https://public.01-edu.org/subjects/to-git-or-not-to-git.en.md
+- who-are-you | https://public.01-edu.org/subjects/who-are-you.en.md
+- cl-camp1 | https://public.01-edu.org/subjects/cl-camp1.en.md
+- cl-camp2 | https://public.01-edu.org/subjects/cl-camp2.en.md
+- cl-camp3 | https://public.01-edu.org/subjects/cl-camp3.en.md
+- cl-camp4 | https://public.01-edu.org/subjects/cl-camp4.en.md
+- cl-camp5 | https://public.01-edu.org/subjects/cl-camp5.en.md
+- cl-camp6 | https://public.01-edu.org/subjects/cl-camp6.en.md
+- cl-camp7 | https://public.01-edu.org/subjects/cl-camp7.en.md
+- cl-camp8 | https://public.01-edu.org/subjects/cl-camp8.en.md
+- now-get-to-work | https://public.01-edu.org/subjects/now-get-to-work.en.md
+
 ### Quest 2
 
 #### Introduction to Go Lang and basic programmation concepts
