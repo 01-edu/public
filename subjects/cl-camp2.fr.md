@@ -4,7 +4,7 @@
 
 "Continue l'entrainement ..."
 
-Créez un fichier `r`, qui affiche `R` sur une ligne quand la commande `cat` command est exécutée.
+Créez un fichier `r`, qui affiche `R` sur une ligne quand la commande `cat` est exécutée.
 
 Une ligne est une suite de caractères précédant le caractère [fin de ligne](https://en.wikipedia.org/wiki/Newline) (`'\n'`).
 

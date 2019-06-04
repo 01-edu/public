@@ -5,7 +5,7 @@
 Créer les fichiers et dossiers de tel sorte que lorsque cette commande `ls` ci-dessous est utilisée, l'`output` ressemble à cela :
 
 ```console
-user@host:~/piscine/d01/make-it-better$ ls -l --time-style='+%F %R' | sed 1d | awk '{print $1, $6, $7, $8, $9, $10}'
+user@host:~/piscine/d01/make-it-better$ TZ=utc ls -l --time-style='+%F %R' | sed 1d | awk '{print $1, $6, $7, $8, $9, $10}'
 dr-------x 1986-01-05 00:00 0
 -r------w- 1986-11-13 00:01 1
 -rw----r-- 1988-03-05 00:10 2

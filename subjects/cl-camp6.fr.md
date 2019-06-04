@@ -4,7 +4,7 @@
 
 "Maintenant, fais ton inventaire"
 
-Créer un fichier `countfiles.sh`, qui affichera will lenombre **(et seulement le nombre)** de fichiers réguliers et répertoires contenu dans le répertoire courant et ses sous-répertoires :
+Créer un fichier `countfiles.sh`, qui affichera le nombre **(et seulement le nombre)** de fichiers réguliers et répertoires contenu dans le répertoire courant et ses sous-répertoires :
 
 ### Utilisation
 

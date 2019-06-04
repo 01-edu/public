@@ -19,7 +19,7 @@ Ce repository sera le dossier où tous les exercises doivent être uploadés.
 
 Une fois que le répository est créé, écrire votre premier programme shell nommé `hello.sh`
 
-Quand ce programme est éxécuté il doit afficher `hello {username}!`
+Quand ce programme est éxécuté il doit afficher `Hello {username}!`
 Où `{username}` est votre `github username`
 
 ##### Utilisation

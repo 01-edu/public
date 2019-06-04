@@ -19,7 +19,7 @@ This repository will be the folder where all the exercices must be uploaded.
 
 Once the repository is created, write your first shell program called `hello.sh`
 
-When executed this program must print `hello {username}!`
+When executed this program must print `Hello {username}!`
 Where `{username}` is your `github username`
 
 ##### Usage
