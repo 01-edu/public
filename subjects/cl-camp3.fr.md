@@ -8,8 +8,8 @@ Créer un fichier `look`, qui cherchera et montrera, dans le répertoire courant
 
 - commence avec `a` et,
 - tous les fichiers qui se terminent avec `z` et,
-- tous les fichiers qui commencent avec `z` et qui se finissenLisezele man dea!`.
+- tous les fichiers qui commencent avec `z` et qui se finissent avec `a!`.
 
-#Indice
+### Indice
 
 Lisez le man de `find`...
