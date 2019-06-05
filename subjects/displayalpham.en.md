@@ -3,11 +3,9 @@
 ### Instructions
 
 Write a program that displays the alphabet, with even letters in uppercase, and
-odd letters in lowercase, followed by a newline.
+odd letters in lowercase, followed by a newline(`'\n'`).
 
-The function must have the next signature.
-
-Example :
+### Usage
 
 ```console
 student@ubuntu:~/student/displayalpham$ go build

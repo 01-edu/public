@@ -1,0 +1,18 @@
+## displayz
+
+### Instructions
+
+Écrire un programme qui prend une `string`, et qui affiche le premier caractère `z` qu'il trouve dedans, suivi par un newline(`'\n'`). Si il n'y a pas de caractère `z` dans la `string`, le programme affiche juste un `z` suivi d'un newline(`'\n'`). Si le nombre de paramètres n'est pas 1, le programme affiche un `z` suivi d'un newline(`'\n'`).
+
+### Utilisation
+
+```console
+student@ubuntu:~/piscine/test$ go build
+student@ubuntu:~/piscine/test$ ./test "xyz"
+z
+student@ubuntu:~/piscine/test$ ./test "bcvbvZ"
+z
+student@ubuntu:~/piscine/test$ ./test "nbv"
+z
+student@ubuntu:~/piscine/test$ ./test
+```
