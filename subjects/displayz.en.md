@@ -2,21 +2,20 @@
 
 ### Instructions
 
-Write a program that takes a string, and displays the first 'a' character it
-encounters in it, followed by a newline. If there are no 'a' characters in the
-string, the program just writes a newline. If the number of parameters is not
-1, the program displays 'a' followed by a newline.
+Write a program that takes a `string`, and displays the first `z` character it
+encounters in it, followed by a newline(`'\n'`). If there are no `z` characters in the
+string, the program just writes `z` followed by a newline(`'\n'`). If the number of parameters is not
+1, the program displays an `z` followed by a newline(`'\n'`).
 
-### Expected output
+### Usage
 
 ```console
 student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test "abc"
+student@ubuntu:~/piscine/test$ ./test "xyz"
 z
 student@ubuntu:~/piscine/test$ ./test "bcvbvZ"
 z
-student@ubuntu:~/piscine/test$ ./test "nbz"
+student@ubuntu:~/piscine/test$ ./test "nbv"
 z
 student@ubuntu:~/piscine/test$ ./test
-z
 ```

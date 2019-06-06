@@ -2,11 +2,9 @@
 
 ### Instructions
 
-Write a program that displays "Hello World!".
+Write a program that displays "Hello World!" followed by a newline(`'\n'`).
 
-### Expected main and function for the program
-
-### Expected output
+### Usage
 
 ```console
 student@ubuntu:~/piscine/test$ go build
