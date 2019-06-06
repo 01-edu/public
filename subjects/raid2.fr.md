@@ -2,15 +2,15 @@
 
 ### Instructions
 
-- Create a program that resolves a sudoku.
+- Créer un programme qui résout un sudoku.
 
-- A valid sudoku has only one possible solution.
+- Un sudoku valide a seulement une solution possible.
 
 ### Usage
 
 #### Example 1:
 
-Example of output for one valid sudoku :
+Exemple d'output pour un sudoku valide :
 
 ```console
 student@ubuntu:~/student/raid2$ go build
@@ -29,7 +29,7 @@ student@ubuntu:~/student/raid2$
 
 #### Example 2:
 
-Examples of output for invalid input or sudokus :
+Examples d'outputs pour des inputs ou un sudoku invalides :
 
 ```console
 student@ubuntu:~/student/raid2$ ./raid2 1 2 3 4 +" | cat -e
