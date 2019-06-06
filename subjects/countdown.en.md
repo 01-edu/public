@@ -3,11 +3,9 @@
 ### Instructions
 
 Write a program that displays all digits in descending order, followed by a
-newline.
+newline(`'\n'`).
 
-### Expected main and function for the program
-
-### Expected output
+### Usage
 
 ```console
 student@ubuntu:~/piscine/test$ go build

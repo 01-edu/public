@@ -3,15 +3,13 @@
 ### Instructions
 
 Write a program that displays the alphabet in reverse, with even letters in
-uppercase, and odd letters in lowercase, followed by a newline.
+uppercase, and odd letters in lowercase, followed by a newline(`'\n'`).
 
-The function must have the next signature.
-
-Example :
+### Usage
 
 ```console
 student@ubuntu:~/student/displayalrevm$ go build
 student@ubuntu:~/student/displayalrevm$ ./displayalrevm | cat -e
-aBcDeFgHiJkLmNoPqRsTuVwXyZ$
+zYxWvUtSrQpOnMlKjIhGfEdCbA$
 student@ubuntu:~/student/displayalrevm$
 ```
