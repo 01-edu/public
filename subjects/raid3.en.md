@@ -2,28 +2,22 @@
 
 ### Instructions
 
-Creare a program that takes a string as argument and displays the name of the raid in question, as well as its dimensions.
+This raid is based on the `raid1` functions.
 
-- Executable name : `raid3`.
+Create a program `raid3` that takes a `string` as an argument and displays the name of the matching `raid1` and its dimensions.
 
-- If the argument isn't a raid should print `Not a Raid function`.
+- If the argument is not a `raid1` the program should print `Not a Raid function`.
 
-Example of this output :
+- All answers must end with a newline('`\n`').
+
+- If there is more than one `raid1` matches, the program must display them all alphabetically ordered and separated by a `|`.
+
+### Usage
 
 ```console
 student@ubuntu:~/student/test$ go build
 student@ubuntu:~/student/test$ echo HELLO | ./raid3
 Not a Raid function
-student@ubuntu:~/student/test$
-```
-
-- Whatever the answer, your line must be ended by a `\n`.
-
-- If there is more than one raid1, you must display them all alphabetically.
-
-Examples of output :
-
-```console
 student@ubuntu:~/student/test$ ./raid1a 4 4
 o--o
 |  |
