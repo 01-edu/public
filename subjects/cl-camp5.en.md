@@ -13,7 +13,6 @@ That command will only show the name of the files without the `.sh`.
 ### Usage
 
 ```console
-student@ubuntu:~/piscine/test$ export HERO_ID=1
 student@ubuntu:~/piscine/test$ ./lookagain.sh | cat -e
 file1$
 file2$
