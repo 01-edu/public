@@ -7,8 +7,8 @@
 Exemple de résultat :
 
 ```console
-student@ubuntu:~/piscine/test$ go build main.go
-student@ubuntu:~/piscine/test$ ./main
+student@ubuntu:~/piscine-go/printprogramname$ go build main.go
+student@ubuntu:~/piscine-go/printprogramname$ ./main
 ./main
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/printprogramname$
 ```
