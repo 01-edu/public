@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Écrire un programme nommé `alphamirror` qui prend une `string` come argument et qui affiche cette `string` après remplacement de chaque charactère alphabétique avec son opposé.
+Écrire un programme nommé `alphamirror` qui prend une `string` come argument et qui affiche cette `string` après remplacement de chaque caractère alphabétique avec son opposé.
 
 Les majuscules restent des majuscules, de même pour le minuscules, par exemple :
 
