@@ -4,7 +4,7 @@
 
 Écrire un programme qui prend une `string` et qui inverses les majuscules en minuscules et vice-versa.
 
-- Tout autre charactère reste inchangé.
+- Tout autre caractère reste inchangé.
 
 - Le résultat doit être suivi d'un newline(`'\n'`).
 
