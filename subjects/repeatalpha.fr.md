@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Écrire un programme `repeat_alpha` qui prend une `string` et qui affiche la répétition de chaque charactère de l'alpabet autant de fois que l'index de cette lettre.
+Écrire un programme `repeat_alpha` qui prend une `string` et qui affiche la répétition de chaque caractère de l'alphabet autant de fois que l'index de cette lettre.
 
 Le résultat doit être suivi d'un newline(`'\n'`).
 
