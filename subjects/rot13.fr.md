@@ -2,16 +2,15 @@
 
 ### Instructions
 
-Write a program that takes a string and displays it, replacing each of its
-letters by the letter 13 spaces ahead in alphabetical order.
+Écrire un programme qui prend une `string` et qui l'affiche, en remplaçant chacune de ses lettres par la lettre 13 positions après dans l'ordre alphabétique.
 
-- 'z' becomes 'm' and 'Z' becomes 'M'. Case remains unaffected.
+- 'z' devient 'm' et 'Z' devient 'M'. Les majuscules restent des majuscules, de même pour les minuscules.
 
-- The output will be followed by a newline.
+- l'output sera suivi d'un newline(`'\n'`).
 
-- If the number of arguments is not 1, the program displays a newline.
+- Si le nombre d'arguments n'est pas 1, le programme affiche un newline(`'\n'`).
 
-### Expected output
+### Utilisation
 
 ```console
 student@ubuntu:~/piscine/test$ go build

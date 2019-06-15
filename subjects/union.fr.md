@@ -2,15 +2,13 @@
 
 ### Instructions
 
-Write a program that takes two strings and displays, without doubles, the
-characters that appear in either one of the strings.
+Écrire un programme qui prend deux `strings` et affiche, sans doublons, les caractères qui apparaissent dans l'une ou l'autre des `strings`.
 
-The display will be in the order characters appear in the command line, and
-will be followed by a \n.
+L'affichage se fera dans l'ordre d'apparition des caractères de la ligne de commande, et il sera suivi d'un newline(`'\n'`).
 
-If the number of arguments is not 2, the program displays \n.
+Si le nombre d'arguments n'est pas 2, le programme affiche un newline(`'\n'`).
 
-Example :
+### Utilisation
 
 ```console
 student@ubuntu:~/student/union$ go build

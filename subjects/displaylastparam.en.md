@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a program that takes strings as arguments, and displays its last argument.
+Write a program that takes `strings` as arguments, and displays its last argument.
 
 ### Expected output
 

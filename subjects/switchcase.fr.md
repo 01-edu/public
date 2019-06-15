@@ -2,15 +2,15 @@
 
 ### Instructions
 
-Write a program that takes a string and reverses the case of all its letters.
+Écrire un programme qui prend une `string` et qui inverses les majuscules en minuscules et vice-versa.
 
-- Other characters remain unchanged.
+- Tout autre charactère reste inchangé.
 
-- You must display the result followed by a '\n'.
+- Le résultat doit être suivi d'un newline(`'\n'`).
 
-- If the number of arguments is not 1, the program displays '\n'.
+- Si le nombre d'arguments n'est pas 1, le programme affiche program un newline(`'\n'`).
 
-### Expected output
+### Utilisation
 
 ```console
 student@ubuntu:~/piscine/test$ go build

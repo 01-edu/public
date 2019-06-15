@@ -2,20 +2,18 @@
 
 ### Instructions
 
-Write a program called alphamirror that takes a string as argument and displays this string
-after replacing each alphabetical character with the opposite alphabetical
-character.
+Écrire un programme nommé `alphamirror` qui prend une `string` come argument et qui affiche cette `string` après remplacement de chaque charactère alphabétique avec son opposé.
 
-The case of the letter stays the same, for example :
+Les majuscules restent des majuscules, de même pour le minuscules, par exemple :
 
-'a' becomes 'z', 'Z' becomes 'A'
-'d' becomes 'w', 'M' becomes 'N'
+'a' devient 'z', 'Z' devient 'A'
+'d' devient 'w', 'M' devient 'N'
 
-The final result will be followed by a newline.
+Le résultat final sera suivi d'un newline(`'\n'`).
 
-If the number of arguments is not 1, the program will display only a newline.
+Si le nombre d'arguments n'est pas 1, le programme affiche seulement un newline(`'\n'`).
 
-Example of output :
+### Utilisation
 
 ```console
 student@ubuntu:~/student/alphamirror$ go build

@@ -2,15 +2,15 @@
 
 ### Instructions
 
-Write a program that takes a string and displays its first word, followed by a newline.
+Écrire un programme qui prend une `string` et qui affiche son premier mot, suivi d'un newline(`'\n'`).
 
-- A word is a section of string delimited by spaces or by the start/end of the string.
+- Un mot est une section de `string` délimité par des espace ou par le début/fin d'une `string`.
 
-- The output will be followed by a newline.
+- L'output sera suivi d'un newline(`'\n'`).
 
-- If the number of parameters is not 1, or if there are no words, simply display a newline.
+- Si le nombre de paramètres n'est pas 1, ou si il n'y a pas de mots, le programme affiche un newline(`'\n'`).
 
-### Expected output
+### Utilisation
 
 ```console
 student@ubuntu:~/piscine/test$ go build

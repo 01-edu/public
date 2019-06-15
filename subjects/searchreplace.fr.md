@@ -2,13 +2,13 @@
 
 ### Instructions
 
-Write a program that takes 3 arguments, the first arguments is a string in which to replace a letter (2nd argument) by another one (3rd argument).
+Écrire un programme qui prends 3 arguments, le premier argument est une `string` dans laquelle une lettre (le 2éme argument) est remplacée par une autre (3éme argument).
 
-- If the number of arguments is not 3, just display a newline.
+- Si le nombre d'aruments n'est pas 3, le programme affiche un newline(`'\n'`).
 
-- If the second argument is not contained in the first one (the string) then the program simply rewrites the string followed by a newline.
+- Si le second argument n'est pas contenu dans le premier (la `string`) alors le programme réécris la `string` suivi d'un newline(`'\n'`).
 
-### Expected output
+### Utilisation
 
 ```console
 student@ubuntu:~/piscine/test$ go build

@@ -2,15 +2,15 @@
 
 ### Instructions
 
-Write a program that takes a string and reverses the case of all its letters.
+Write a program that takes a `string` and reverses the case of all its letters.
 
 - Other characters remain unchanged.
 
-- You must display the result followed by a '\n'.
+- The result must be followed by a newline(`'\n'`).
 
-- If the number of arguments is not 1, the program displays '\n'.
+- If the number of arguments is not 1, the program displays a newline(`'\n'`).
 
-### Expected output
+### Usage
 
 ```console
 student@ubuntu:~/piscine/test$ go build
