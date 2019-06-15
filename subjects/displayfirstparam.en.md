@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a program that takes strings as arguments, and displays its first argument.
+Write a program that takes `strings` as arguments, and displays its first argument.
 
-### Expected output
+### Usage
 
 ```console
 student@ubuntu:~/piscine/test$ go build

@@ -1,14 +1,14 @@
-## switchcase
+## inter
 
 ### Instructions
 
-Write a program that takes two strings and displays, without doubles, the characters that appear in both strings, in the order they appear in the first one.
+Écrire un programme qui prend deux `strings` et qui affiche, sans doublons, les caractères qui apparaissent dans les deux `strings`, dans l'ordre dans lequel ils apparaissent dans la première.
 
-- The display will be followed by a `\n`.
+- L'affichage sera suivi d'un newline(`'\n'`).
 
-- If the number of arguments is not 2, the program displays `\n`.
+- Si le nombre d'arguments n'est pas 2, le programme affiche un newline(`'\n'`).
 
-### Expected output
+### Utilisation
 
 ```console
 student@ubuntu:~/piscine/test$ go build

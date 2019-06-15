@@ -2,17 +2,17 @@
 
 ### Instructions
 
-Write a program called repeat_alpha that takes a string and display it
-repeating each alphabetical character as many times as its alphabetical index,
-followed by a newline.
+Écrire un programme `repeat_alpha` qui prend une `string` et qui affiche la répétition de chaque charactère de l'alpabet autant de fois que l'index de cette lettre.
 
-`'a'` becomes `'a'`, `'b'` becomes `'bb'`, `'e'` becomes `'eeeee'`, etc...
+Le résultat doit être suivi d'un newline(`'\n'`).
 
-Case remains unchanged.
+`'a'` deviens `'a'`, `'b'` deviens `'bb'`, `'e'` deviens `'eeeee'`, etc...
 
-If the number of arguments is not 1, just display a newline.
+Si une lettre est majuscule, elle reste majuscule, de même si elle est minuscule.
 
-Examples:
+Si le nombre d'arguments n'est pas 1, le programme affiche un newline(`'\n'`).
+
+### Utilisation
 
 ```console
 student@ubuntu:~/student/repeatalpha$ go build

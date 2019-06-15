@@ -2,10 +2,10 @@
 
 ### Instructions
 
-Write a function that takes a byte, swaps its halves (like the example) and
-returns the result.
+Write a function that takes a `byte`, swaps its halfs (like the
+example) and returns the result.
 
-Your function must be declared as follows:
+### Expected function
 
 ```go
 func SwapBits(octet byte) byte {

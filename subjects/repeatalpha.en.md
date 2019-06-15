@@ -2,17 +2,18 @@
 
 ### Instructions
 
-Write a program called repeat_alpha that takes a string and display it
-repeating each alphabetical character as many times as its alphabetical index,
-followed by a newline.
+Write a program called `repeat_alpha` that takes a `string` and displays it
+repeating each alphabetical character as many times as its alphabetical index.
+
+The result must be followed by a newline(`'\n'`).
 
 `'a'` becomes `'a'`, `'b'` becomes `'bb'`, `'e'` becomes `'eeeee'`, etc...
 
-Case remains unchanged.
+The case remains unchanged.
 
-If the number of arguments is not 1, just display a newline.
+If the number of arguments is not 1, the program displays a newline(`'\n'`).
 
-Examples:
+### Usage
 
 ```console
 student@ubuntu:~/student/repeatalpha$ go build

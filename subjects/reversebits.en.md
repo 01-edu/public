@@ -2,10 +2,10 @@
 
 ### Instructions
 
-Write a function that takes a byte, reverses it, bit by bit (like the
+Write a function that takes a `byte`, reverses it `bit` by `bit` (like the
 example) and returns the result.
 
-Your function must be declared as follows:
+### Expected function
 
 ```go
 func ReverseBits(octet byte) byte {
