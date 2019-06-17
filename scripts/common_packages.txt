@@ -46,6 +46,7 @@ pciutils
 psmisc
 python
 python3
+rar
 rsync
 rsyslog
 ssh
@@ -57,6 +58,7 @@ tig
 traceroute
 tree
 tzdata
+unrar
 unzip
 usbutils
 wget
