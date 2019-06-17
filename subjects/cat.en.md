@@ -20,16 +20,18 @@ Write a program that does the same thing as the system's `cat` command-line.
 
 - In case of error it should print the error.
 
+- The program must be submitted inside a folder with the name `cat`.
+
 ### Output:
 
 ```console
-student@ubuntu:~/student/test$ go build
-student@ubuntu:~/student/test$ ./test
+student@ubuntu:~/student/cat$ go build
+student@ubuntu:~/student/cat$ ./cat
 Hello
 Hello
-student@ubuntu:~/student/test$ ./test quest8.txt
+student@ubuntu:~/student/cat$ ./cat quest8.txt
 "Programming is a skill best acquired by pratice and example rather than from books" by Alan Turing
-student@ubuntu:~/student/test$ ./test quest8.txt quest8T.txt
+student@ubuntu:~/student/cat$ ./cat quest8.txt quest8T.txt
 "Programming is a skill best acquired by pratice and example rather than from books" by Alan Turing
 
 "Alan Mathison Turing was an English mathematician, computer scientist, logician, cryptanalyst. Turing was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer. Turing is widely considered to be the father of theoretical computer science and artificial intelligence."
