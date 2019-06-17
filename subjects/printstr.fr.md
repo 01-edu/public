@@ -1,4 +1,4 @@
-## putstr
+## prinstr
 
 ### Instructions
 
@@ -23,7 +23,7 @@ import piscine ".."
 
 func main() {
 	str := "Hello World!"
-	piscine.Putstr(str)
+	piscine.PrintStr(str)
 }
 ```
 

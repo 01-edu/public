@@ -7,7 +7,7 @@ Write and fix the folloing functions.
 ### Expected functions
 
 ```go
-func PutStr(str string) {
+func PrintStr(str string) {
 	arrayRune := []rune(str)
 	for _, s := range arrayRune {
 		z01.PrintRune(s)
@@ -15,18 +15,18 @@ func PutStr(str string) {
 }
 
 func CloseDoor(ptrDoor *Door) bool {
-	PutStr("Door closing...")
+	PrintStr("Door closing...")
 	state = CLOSE
 	return true
 }
 
 func IsDoorOpen(Door Door) {
-	PutStr("Door is open ?")
+	PrintStr("Door is open ?")
 	return Door.state = OPEN
 }
 
 func IsDoorClose(ptrDoor *Door) bool {
-	PutStr("Door is close ?")
+	PrintStr("Door is close ?")
 }
 ```
 
