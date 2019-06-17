@@ -1,4 +1,4 @@
-## Boolean
+## boolean
 
 ### Instructions
 
