@@ -3,8 +3,9 @@
 ### Instructions
 
 Create a `.go` file and copy the code below into our file
+and add the code necessary so the program works.
 
-- The main task is to return a working program.
+- The program must be submitted inside a folder with the name `point`.
 
 ```go
 func setPoint(ptr *point) {
