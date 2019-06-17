@@ -2,17 +2,17 @@
 
 ### Instructions
 
-Write a program that displays, on the standard output, only the content of the file given as argument.
+Write a program that displays, on the standard output, the content of a file given as argument.
 
 - Create a file `quest8.txt` and write into the file `Almost there!!`
 
 - The argument of the program should be the name of the file, in this case, `quest8.txt`.
 
-- In case of error it should print:
+- In case of error it should print one the below messages accordingly:
   - `File name missing`.
   - `Too many arguments`.
 
-### Output:
+### Usage:
 
 ```console
 student@ubuntu:~/student/displayfile$ go build
