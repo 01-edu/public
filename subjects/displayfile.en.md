@@ -1,4 +1,4 @@
-## Display File
+## displayfile
 
 ### Instructions
 
@@ -15,11 +15,11 @@ Write a program that displays, on the standard output, only the content of the f
 ### Output:
 
 ```console
-student@ubuntu:~/student/test$ go build
-student@ubuntu:~/student/test$ ./test
+student@ubuntu:~/student/displayfile$ go build
+student@ubuntu:~/student/displayfile$ ./displayfile
 File name missing
-student@ubuntu:~/student/test$ ./test quest8.txt main.go
+student@ubuntu:~/student/displayfile$ ./displayfile quest8.txt main.go
 Too many arguments
-student@ubuntu:~/student/test$ ./test quest8.txt
+student@ubuntu:~/student/displayfile$ ./displayfile quest8.txt
 Almost there!!
 ```
