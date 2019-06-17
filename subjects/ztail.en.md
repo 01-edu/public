@@ -12,4 +12,4 @@ Write a program called ztail that does the same thing as the system command tail
 
 - For more information consult the man page for tail.
 
-- The program must be submitted inside a folder with the name `ztai`
+- The program must be submitted inside a folder with the name `ztail`
