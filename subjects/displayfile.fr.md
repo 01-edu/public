@@ -2,17 +2,17 @@
 
 ### Instructions
 
-Write a program that displays, on the standard output, only the content of the file given as argument.
+Écrire un programme qui affiche, sur la sortie standard, le contenu d'un fichier donné en argument.
 
-- Create a file `quest8.txt` and write into the file `Almost there!!`
+- Créer un fichier `quest8.txt` et écrire dedans la phrase `Almost there!!`
 
-- The argument of the program should be the name of the file, in this case, `quest8.txt`.
+- L'argument pour ce programme sera, dans ce cas, `quest8.txt`.
 
-- In case of error it should print:
+- En cas d'erreur le programme doit afficher un des deux messages suivants de manière approprié:
   - `File name missing`.
   - `Too many arguments`.
 
-### Output:
+### Utilisation:
 
 ```console
 student@ubuntu:~/student/test$ go build
