@@ -4,8 +4,6 @@
 
 Write a function, CollatzCountdown, that returns the number of steps to reach 1 using the collatz countdown.
 
-The function must have the following signature.
-
 ### Expected function
 
 ```go
@@ -35,8 +33,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/student/collatzcountdown$ go build
-student@ubuntu:~/student/collatzcountdown$ ./collatzcountdown
+student@ubuntu:~/student/test$ go build
+student@ubuntu:~/student/test$ ./test
 10
-student@ubuntu:~/student/collatzcountdown$
+student@ubuntu:~/student/test$
 ```
