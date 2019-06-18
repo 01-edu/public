@@ -3,8 +3,7 @@
 # Configure Z01 client
 
 # Log stdout & stderr
-exec > >(tee -i /tmp/install_client.log)
-exec 2>&1
+exec > >(tee -i /tmp/install_client.log) 2>&1
 
 SCRIPT_DIR="$(cd -P "$(dirname "$BASH_SOURCE")" && pwd)"
 cd $SCRIPT_DIR
@@ -50,6 +49,9 @@ xfsprogs
 "
 
 apt-get -y install $PKGS
+
+# Install additional drivers
+ubuntu-drivers install
 
 # Remove fsck because the system partition will be read-only (overlayroot)
 rm /usr/share/initramfs-tools/hooks/fsck

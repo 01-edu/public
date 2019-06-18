@@ -2,12 +2,12 @@
 
 ### Instructions
 
-Write a program called ztail that does the same thing as the system command tail, but witch takes at least one file as argument.
+Écrire un programme `ztail` qui a le même comportement que la ligne de commande `tail`, mais qui prend au moins 1 fichier comme argument.
 
-The only option you have to handle is -c. This option will be used in all tests.
+- La seule option qui doit être géré est `-c`. Cette option sera utilisé dans tous les tests.
 
-For this program you can use the "os" package.
+- Pour ce programme le package "os" peut être utilisé.
 
-For the program to pass the test you should follow the convention for the return code of program in Unix sistems (see os.Exit)
+- Pour que le programme passe les tests la convention pour le retour code de programme en systémes Unix devra être suivi(voir os.Exit).
 
-For more information consult the man page for tail.
+- Pour plus d'informtations consulter la page du man de `tail`.

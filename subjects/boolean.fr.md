@@ -1,10 +1,17 @@
-## Boolean
+## boolean
 
 ### Instructions
 
-Create a `.go` file and copy the code below into our file
+Créer un fichier `.go`.
 
-- The main task is to return a working program.
+- Le code ci-dessous doit être copié dans ce fichier.
+
+- Les changements nécéssaires doivent être appliquer et the code below into that file
+  and do the necessary changes so that the program works.
+
+- Le programme doit être rendu dans un dossier nommé `boolean`.
+
+### Code à copier
 
 ```go
 func printStr(str string) {
@@ -33,14 +40,12 @@ func main() {
 }
 ```
 
-### Expected output
+### Usage
 
 ```console
+student@ubuntu:~/student/boolean$ go build
+student@ubuntu:~/student/boolean$ ./boolean "not" "odd"
 I have an even number of arguments
-```
-
-### Or
-
-```console
+student@ubuntu:~/student/boolean$ ./boolean "not even"
 I have an odd number of arguments
 ```

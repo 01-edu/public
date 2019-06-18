@@ -1,11 +1,16 @@
-## Point
+## point
 
 ### Instructions
 
-Create a `.go` file and copy the code below into our file
-and add the code necessary so the program works.
+Create a `.go` file.
+
+- The code below has to be copied in that file.
+
+- The necessary changes have to be applied so that the program works.
 
 - The program must be submitted inside a folder with the name `point`.
+
+### Code to be copied
 
 ```go
 func setPoint(ptr *point) {
