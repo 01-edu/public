@@ -20,7 +20,7 @@ Write a program that has the same behaviour as the system's `cat` command-line.
 
 - In case of error the program should print the error.
 
-- The program must be submitted inside a folder with the name `cat`.
+- The program must be submitted inside a folder named `cat`.
 
 ```console
 student@ubuntu:~/student/cat$ go build
