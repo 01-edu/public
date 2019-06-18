@@ -7,7 +7,7 @@ Write a function `AdvancedSortWordArr` that sorts a `string` array, based on the
 ### Expected function
 
 ```go
-func AdvancedSortWordTab(array []string, f func(a, b string) int) {
+func AdvancedSortWordArr(array []string, f func(a, b string) int) {
 }
 ```
 
@@ -26,7 +26,7 @@ import (
 func main() {
 
 	result := []string{"a", "A", "1", "b", "B", "2", "c", "C", "3"}
-	piscine.AdvancedSortWordTab(result, piscine.Compare)
+	piscine.AdvancedSortWordArr(result, piscine.Compare)
 
 	fmt.Println(result)
 }
