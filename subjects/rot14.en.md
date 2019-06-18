@@ -9,7 +9,7 @@ Write a function `rot14` that returns the string within the parameter but transf
 ### Expected function
 
 ```go
-func rot14(str string) string {
+func Rot14(str string) string {
 
 }
 ```
@@ -22,11 +22,12 @@ Here is a possible [program](TODO-LINK) to test your function :
 package main
 
 import (
+	piscine ".."
 	"github.com/01-edu/z01"
 )
 
 func main() {
-	result := rot14("Hello How are You")
+	result := piscine.Rot14("Hello How are You")
 	arrayRune := []rune(result)
 
 	for _, s := range arrayRune {
