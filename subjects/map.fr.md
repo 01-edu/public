@@ -25,8 +25,9 @@ import (
 
 func main() {
 	arr := []int{1, 2, 3, 4, 5, 6}
-	arr = Map(piscine.IsPrime, arr)
-	fmt.Println(arr)
+	result := []bool{}
+	result = piscine.Map(piscine.IsPrime, arr)
+	fmt.Println(result)
 }
 ```
 
