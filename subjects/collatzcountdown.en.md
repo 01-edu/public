@@ -21,11 +21,11 @@ package main
 
 import (
 	"fmt"
-	student ".."
+	piscine ".."
 )
 
 func main() {
-	steps := student.CollatzCountdown(12)
+	steps := piscine.CollatzCountdown(12)
 	fmt.Println(steps)
 }
 ```
@@ -33,8 +33,15 @@ func main() {
 And its output :
 
 ```console
+<<<<<<< HEAD
 student@ubuntu:~/student/test$ go build
 student@ubuntu:~/student/test$ ./test
 10
 student@ubuntu:~/student/test$
+=======
+student@ubuntu:~/piscine/test$ go build
+student@ubuntu:~/piscine/test$ ./test
+10
+student@ubuntu:~/piscine/test$
+>>>>>>> 3fe258c999f5918c6b750a6cbe511a7874883d25
 ```

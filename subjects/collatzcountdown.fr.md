@@ -21,11 +21,11 @@ package main
 
 import (
 	"fmt"
-	student ".."
+	piscine ".."
 )
 
 func main() {
-	steps := student.CollatzCountdown(12)
+	steps := piscine.CollatzCountdown(12)
 	fmt.Println(steps)
 }
 ```
