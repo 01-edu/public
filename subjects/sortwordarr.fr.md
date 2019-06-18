@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Écrire une fonction `SortWordArr` qui trie par ordre `ascii` un tableau de `string`.
+Écrire une fonction `SortWordArr` qui trie par ordre `ascii` (dans l'ordre croissant) un tableau de `string`.
 
 ### Fonction attendue
 
