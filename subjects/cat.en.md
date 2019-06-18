@@ -1,4 +1,4 @@
-## Cat
+## cat
 
 ### Instructions
 
