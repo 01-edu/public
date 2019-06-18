@@ -40,8 +40,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
-Vszzc Vck ofs Mci
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine/comcheck$ go build
+student@ubuntu:~/piscine/comcheck$ ./comcheck "I" "Will" "Enter" "the" "galaxy"
+Alert!!!
+student@ubuntu:~/piscine/comcheck$ ./comcheck "galaxy 01" "do" "you" "hear" "me"
+Alert!!!
+student@ubuntu:~/piscine/comcheck$
 ```
