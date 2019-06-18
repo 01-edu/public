@@ -1,4 +1,4 @@
-## ROT 14
+## rot14
 
 ### Instructions
 
