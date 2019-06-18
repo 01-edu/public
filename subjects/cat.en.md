@@ -2,25 +2,25 @@
 
 ### Instructions
 
-Write a program that does the same thing as the system's `cat` command-line.
+Write a program that has the same behaviour as the system's `cat` command-line.
 
-- You don't have to handle options.
+- The `options` do not have to be handled.
 
-- But if just call the program with out arguments it should take a input and print it back
+- If the program is called without arguments it should take the `input` and print it back.
 
 - In the program folder create two files named `quest8.txt` and `quest8T.txt`.
 
-- Copy to the `quest8.txt` file this :
+- Copy to the `quest8.txt` file the following sentence :
 
-  - "Programming is a skill best acquired by pratice and example rather than from books" by Alan Turing
+`"Programming is a skill best acquired by pratice and example rather than from books" by Alan Turing`
 
-- Copy to the `quest8T.txt` file this :
+- Copy to the `quest8T.txt` file the following sentence :
 
-  - "Alan Mathison Turing was an English mathematician, computer scientist, logician, cryptanalyst. Turing was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer. Turing is widely considered to be the father of theoretical computer science and artificial intelligence."
+`"Alan Mathison Turing was an English mathematician, computer scientist, logician, cryptanalyst. Turing was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer. Turing is widely considered to be the father of theoretical computer science and artificial intelligence."`
 
-- In case of error it should print the error.
+- In case of error the program should print the error.
 
-### Output:
+### Usage:
 
 ```console
 student@ubuntu:~/student/test$ go build
