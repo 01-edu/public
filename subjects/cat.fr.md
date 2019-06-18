@@ -2,25 +2,25 @@
 
 ### Instructions
 
-Write a program that does the same thing as the system's `cat` command-line.
+Écrire un programme qui a le même comportement que la ligne de commande `cat`.
 
-- You don't have to handle options.
+- Les `options` ne doivent pas être gérés.
 
-- But if just call the program with out arguments it should take a input and print it back
+- Si le programme est éxécuté sans arguments il doit prendre l'`input` et l'afficher.
 
-- In the program folder create two files named `quest8.txt` and `quest8T.txt`.
+- Dans le dossier du programme créer deux fichiers nommés `quest8.txt` et `quest8T.txt`.
 
-- Copy to the `quest8.txt` file this :
+- Copier dans le fichier `quest8.txt` la phrase suivante :
 
-  - "Programming is a skill best acquired by pratice and example rather than from books" by Alan Turing
+`"Programming is a skill best acquired by pratice and example rather than from books" by Alan Turing`
 
-- Copy to the `quest8T.txt` file this :
+- Copier dans le fichier `quest8T.txt` la phrase suivante :
 
-  - "Alan Mathison Turing was an English mathematician, computer scientist, logician, cryptanalyst. Turing was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer. Turing is widely considered to be the father of theoretical computer science and artificial intelligence."
+`"Alan Mathison Turing was an English mathematician, computer scientist, logician, cryptanalyst. Turing was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer. Turing is widely considered to be the father of theoretical computer science and artificial intelligence."`
 
-- In case of error it should print the error.
+- En cas d'erreur le programme doit imprimer l'erreur.
 
-### Output:
+### Utilisation:
 
 ```console
 student@ubuntu:~/student/test$ go build
