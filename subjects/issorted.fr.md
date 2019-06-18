@@ -11,7 +11,7 @@ Pour faire vos tests, vous devez coder votre propre fonction `f`.
 ### Fonction attendue
 
 ```go
-func IsSorted(f func(a, b int) int, tab []int) int {
+func IsSorted(f func(a, b int) int, tab []int) bool {
 }
 ```
 

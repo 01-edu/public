@@ -12,7 +12,7 @@ To do your testing you have to write your own `f` function.
 ### Expected function
 
 ```go
-func IsSorted(f func(a, b int) int, tab []int) int {
+func IsSorted(f func(a, b int) int, tab []int) bool {
 }
 ```
 
