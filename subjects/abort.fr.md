@@ -36,7 +36,7 @@ And its output :
 
 ```console
 student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./abort
+student@ubuntu:~/piscine/test$ ./test
 5
 student@ubuntu:~/piscine/test$
 ```
