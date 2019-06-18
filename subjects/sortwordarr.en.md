@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function `SortWordArr` that sorts by `ascii` a `string` array.
+Write a function `SortWordArr` that sorts by `ascii` (in ascending order) a `string` array.
 
 ### Expected function
 
