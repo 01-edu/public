@@ -2,11 +2,13 @@
 
 ### Instructions
 
-Write and fix the folloing functions.
+Write and fix the following program.
 
 ### Expected functions
 
 ```go
+package piscine
+
 func PrintStr(str string) {
 	arrayRune := []rune(str)
 	for _, s := range arrayRune {
@@ -28,14 +30,6 @@ func IsDoorOpen(Door Door) {
 func IsDoorClose(ptrDoor *Door) bool {
 	PrintStr("Door is close ?")
 }
-```
-
-### Usage
-
-Here is a possible [program](TODO-LINK) to test your function :
-
-```go
-package main
 
 func main() {
 	door := &Door{}
@@ -51,16 +45,4 @@ func main() {
 		CloseDoor(door)
 	}
 }
-```
-
-And its output :
-
-```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
-Door Opening...
-Door is close ?
-Door is open ?
-Door closing...
-student@ubuntu:~/piscine/test$
 ```
