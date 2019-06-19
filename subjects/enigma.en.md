@@ -10,8 +10,6 @@ Write a function called `Enigma` that receives poiters to functions and move its
 	- `d` into `b`;
 	- `b` into `a`.
 
-- This function must have the following signature.
-
 ### Expected function
 
 ```go
