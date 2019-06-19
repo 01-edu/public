@@ -61,7 +61,7 @@ func main() {
 	fmt.Println(*******c)
 	fmt.Println(****d)
 
-	student.Enigma(a, b, c, d)
+	piscine.Enigma(a, b, c, d)
 
 	fmt.Println("After using Enigma")
 	fmt.Println(***a)
