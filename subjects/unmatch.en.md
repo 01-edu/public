@@ -4,6 +4,8 @@
 
 Write a function, Unmatch, that returns the element of the slice (arr) that does not have a correspondent pair.
 
+- If there no number with a correspondent pair, it shoud return `-1`.
+
 ### Expected function
 
 ```go
