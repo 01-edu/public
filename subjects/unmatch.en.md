@@ -4,8 +4,6 @@
 
 Write a function, Unmatch, that returns the element of the slice (arr) that does not have a correspondent pair.
 
-The function must have the next signature.
-
 ### Expected function
 
 ```go
@@ -23,12 +21,12 @@ package main
 
 import (
 	"fmt"
-	student ".."
+	piscine ".."
 )
 
 func main() {
 	arr := []int{1, 2, 3, 1, 2, 3, 4}
-	unmatch := student.Unmatch(arr)
+	unmatch := piscine.Unmatch(arr)
 	fmt.Println(unmatch)
 }
 ```
@@ -36,8 +34,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/student/unmatch$ go build
-student@ubuntu:~/student/unmatch$ ./unmatch
+student@ubuntu:~/piscine/test$ go build
+student@ubuntu:~/piscine/test$ ./test
 4
-student@ubuntu:~/student/unmatch$
+student@ubuntu:~/piscine/test$
 ```
