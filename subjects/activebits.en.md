@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function, ActiveBitsthat, that returns the number of active bits (bits with the value 1) in the binary representation of an integer number.
+Write a function, `ActiveBits`, that returns the number of active bits (bits with the value 1) in the binary representation of an integer number.
 
 The function must have the next signature.
 
@@ -23,11 +23,11 @@ package main
 
 import (
 	"fmt"
-	student ".."
+	piscine ".."
 )
 
 func main() {
-	nbits := student.ActiveBits(7)
+	nbits := piscine.ActiveBits(7)
 	fmt.Println(nbits)
 }
 ```
@@ -35,8 +35,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/student/activebits$ go build
-student@ubuntu:~/student/activebits$ ./activebits
+student@ubuntu:~/piscine/test$ go build
+student@ubuntu:~/piscine/test$ ./test
 10
-student@ubuntu:~/student/activebits$
+student@ubuntu:~/piscine/test$
 ```
