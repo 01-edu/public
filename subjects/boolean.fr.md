@@ -6,8 +6,7 @@ Créer un fichier `.go`.
 
 - Le code ci-dessous doit être copié dans ce fichier.
 
-- Les changements nécéssaires doivent être appliquer et the code below into that file
-  and do the necessary changes so that the program works.
+- Les changements nécéssaires doivent être appliquer pour que le programme fonctionne.
 
 - Le programme doit être rendu dans un dossier nommé `boolean`.
 
