@@ -37,6 +37,6 @@ And its output :
 ```console
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test
-10
+3
 student@ubuntu:~/piscine/test$
 ```
