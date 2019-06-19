@@ -2,11 +2,15 @@
 
 ### Instructions
 
-Write a function called `Enigma` that receives poiters to functions and move its values around to hide them
+Write a function called `Enigma` that receives poiters to functions and move its values around to hide them.
 
-This function will put a into c; c into d; d into b and b into a
+- This function will put :
+	- `a` into `c`;
+	- `c` into `d`;
+	- `d` into `b`;
+	- `b` into `a`.
 
-This function must have the following signature.
+- This function must have the following signature.
 
 ### Expected function
 
@@ -25,7 +29,7 @@ package main
 
 import (
 	"fmt"
-	student ".."
+	piscine ".."
 )
 
 func main() {
@@ -71,8 +75,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/student/enigma$ go build
-student@ubuntu:~/student/enigma$ ./enigma
+student@ubuntu:~/piscine/test$ go build
+student@ubuntu:~/piscine/test$ ./test
 5
 2
 7
@@ -82,5 +86,5 @@ After using Enigma
 6
 5
 7
-student@ubuntu:~/student/enigma$
+student@ubuntu:~/piscine/test$
 ```
