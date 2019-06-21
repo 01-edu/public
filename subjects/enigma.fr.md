@@ -2,13 +2,15 @@
 
 ### Instructions
 
-Write a function called `Enigma` that receives poiters to functions and move its values around to hide them
+Écrire une fonction nommé `Enigma` qui prends des pointeurs comme arguments et qui interchanges leurs valeurs pour les cacher.
+Cette fonction déplacera :
 
-This function will put a into c; c into d; d into b and b into a
+- `a` dans `c`.
+- `c` dans `d`.
+- `d` dans `b`.
+- `b` dans `a`.
 
-This function must have the following signature.
-
-### Expected function
+### Fonction attendue
 
 ```go
 func Enigma(a ***int, b *int, c *******int, d ****int) {
@@ -16,16 +18,16 @@ func Enigma(a ***int, b *int, c *******int, d ****int) {
 }
 ```
 
-### Usage
+### Utilisation
 
-Here is a possible [program](TODO-LINK) to test your function :
+Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
 ```go
 package main
 
 import (
 	"fmt"
-	student ".."
+	piscine ".."
 )
 
 func main() {
@@ -68,11 +70,11 @@ func main() {
 }
 ```
 
-And its output :
+Et son résultat :
 
 ```console
-student@ubuntu:~/student/enigma$ go build
-student@ubuntu:~/student/enigma$ ./enigma
+student@ubuntu:~/piscine/test$ go build
+student@ubuntu:~/piscine/test$ ./test
 5
 2
 7
@@ -82,5 +84,5 @@ After using Enigma
 6
 5
 7
-student@ubuntu:~/student/enigma$
+student@ubuntu:~/piscine/test$
 ```
