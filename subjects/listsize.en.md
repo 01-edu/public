@@ -7,14 +7,14 @@ Write a function `ListSize` that returns the number of elements in the list.
 ### Expected function and structure
 
 ```go
-type Node struct {
+type NodeL struct {
 	Data interface{}
-	Next *Node
+	Next *NodeL
 }
 
 type List struct {
-	Head *Node
-	Tail *Node
+	Head *NodeL
+	Tail *NodeL
 }
 
 func ListSize(l *List) int {
