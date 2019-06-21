@@ -9,7 +9,7 @@ You cannot convert to `int64`.
 ### Expected function
 
 ```go
-func PrintNbr(int n) {
+func PrintNbr(n int) {
 
 }
 ```
