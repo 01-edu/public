@@ -2,19 +2,19 @@
 
 ### Instructions
 
-Write a function `ListPushBack` that inserts a new element `Node` at the end of the list, using the structure `List`
+Write a function `ListPushBack` that inserts a new element `NodeL` at the end of the list, using the structure `List`
 
 ### Expected function and structure
 
 ```go
-type Node struct {
+type NodeL struct {
 	Data interface{}
-	Next *Node
+	Next *NodeL
 }
 
 type List struct {
-	Head *Node
-	Tail *Node
+	Head *NodeL
+	Tail *NodeL
 }
 
 func ListPushBack(l *List, data interface{}) {
