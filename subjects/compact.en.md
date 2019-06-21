@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function `Compact` that takes a pointer to an array as parameter and overwrites any element that points to `nil`.
+Write a function `Compact` that takes a pointer to an array as parameter and overwrites the elements that points to `nil`.
 
 - Hint: This fonction exists in Ruby.
 
