@@ -32,14 +32,14 @@ import (
 )
 
 func main() {
-     root := &piscine.TreeNode{data: "4"}
+     root := &piscine.TreeNode{Data: "4"}
      piscine.BTreeInsertData(root, "1")
      piscine.BTreeInsertData(root, "7")
      piscine.BTreeInsertData(root, "5")
-     fmt.Println(root.left.data)
-     fmt.Println(root.data)
-     fmt.Println(root.right.left.data)
-     fmt.Println(root.right.data)
+     fmt.Println(root.Left.Data)
+     fmt.Println(root.Data)
+     fmt.Println(root.Right.Left.Data)
+     fmt.Println(root.Right.Data)
 
 }
 ```
