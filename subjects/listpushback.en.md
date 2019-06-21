@@ -35,7 +35,7 @@ import (
 
 func main() {
 
-	link := &List{}
+	link := &piscine.List{}
 
 	piscine.ListPushBack(link, "Hello")
 	piscine.ListPushBack(link, "man")
