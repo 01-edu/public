@@ -8,7 +8,7 @@ Write a function that applies a function in order to each element in the tree
 ### Expected function
 
 ```go
-func BTreeApplyInorder(root *piscine.TreeNode, f func(...interface{}) (int, error)) {
+func BTreeApplyInorder(root *TreeNode, f func(...interface{}) (int, error)) {
 
 }
 ```
@@ -22,7 +22,7 @@ package main
 
 import (
        "fmt"
-       piscine "."
+       piscine ".."
 )
 
 func main() {
@@ -30,7 +30,7 @@ func main() {
 	piscine.BTreeInsertData(root, "1")
 	piscine.BTreeInsertData(root, "7")
 	piscine.BTreeInsertData(root, "5")
-	BTreeApplyInorder(root, fmt.Println)
+	piscine.BTreeApplyInorder(root, fmt.Println)
 
 }
 ```
@@ -38,11 +38,11 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/piscine/btreeinsertdata$ go build
-student@ubuntu:~/piscine/btreeinsertdata$ ./btreeinsertdata
+student@ubuntu:~/piscine/test$ go build
+student@ubuntu:~/piscine/test$ ./test
 1
 4
 5
 7
-student@ubuntu:~/piscine/btreeinsertdata$
+student@ubuntu:~/piscine/test$
 ```
