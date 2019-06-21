@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a go file so that the following program compile
+Write a `go` file so that the following program compiles.
 
 ### Usage
 
