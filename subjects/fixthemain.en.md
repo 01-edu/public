@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write and fix the following program.
+Fix the following program.
 
-### Expected functions
+### Program to fix
 
 ```go
 package piscine
@@ -17,18 +17,18 @@ func PrintStr(str string) {
 }
 
 func CloseDoor(ptrDoor *Door) bool {
-	PrintStr("Door closing...")
+	PrintStr("Door Closing...")
 	state = CLOSE
 	return true
 }
 
 func IsDoorOpen(Door Door) {
-	PrintStr("Door is open ?")
+	PrintStr("is the Door opened ?")
 	return Door.state = OPEN
 }
 
 func IsDoorClose(ptrDoor *Door) bool {
-	PrintStr("Door is close ?")
+	PrintStr("is the Door closed ?")
 }
 
 func main() {

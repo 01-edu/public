@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a go file so that the following program compile
+Écrire un fichier `go` de manière à ce que le programme ci-dessous compile.
 
-### Usage
+### Utilisation
 
 ```go
 package main
