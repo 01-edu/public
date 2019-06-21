@@ -1,12 +1,12 @@
-## Compact
+## compact
 
 ### Instructions
 
-Write a function that will take a pointer to a array as parameter and overwrites any element that points to `nil`.
+Écrire une fonction `Compact` qui prend un pointeur sur tableau comme paramètre et qui réécris sur les éléments qui pointent sur `nil`.
 
-- If you not sure what the function does. It exists in Ruby.
+- Indice: Cette fonction existe in Ruby.
 
-### Expected functions
+### Fonction attendue
 
 ```go
 func Compact(ptr *[]string, length int) int {
@@ -14,9 +14,9 @@ func Compact(ptr *[]string, length int) int {
 }
 ```
 
-### Usage
+### Utilisation
 
-Here is a possible [program](TODO-LINK) to test your function :
+Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
 ```go
 package main
@@ -31,7 +31,7 @@ func main() {
 }
 ```
 
-And its output :
+Et son résultat :
 
 ```console
 student@ubuntu:~/piscine/test$ go build

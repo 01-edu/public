@@ -1,12 +1,12 @@
-## Compact
+## compact
 
 ### Instructions
 
-Write a function that will take a pointer to a array as parameter and overwrites any element that points to `nil`.
+Write a function `Compact` that takes a pointer to an array as parameter and overwrites any element that points to `nil`.
 
-- If you not sure what the function does. It exists in Ruby.
+- Hint: This fonction exists in Ruby.
 
-### Expected functions
+### Expected function
 
 ```go
 func Compact(ptr *[]string, length int) int {
