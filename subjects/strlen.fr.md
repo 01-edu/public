@@ -26,7 +26,7 @@ import (
 
 func main() {
 	str := "Hello World!"
-	nb := Piscine.StrLen(str)
+	nb := piscine.StrLen(str)
 	fmt.Println(nb)
 }
 ```
