@@ -1,43 +1,14 @@
-## ROT 14
+## comcheck
 
 ### Instructions
 
-Write a function `rot14` that returns the string within the parameter but transformed into a rot14 string.
+écrire un programme `comcheck` qui affiche sur la sortie standard `Alert!!!` suivi d'un newline(`'\n'`) si au moins un des arguments passé ne paramètre correspond aux `strings`:
 
-- If you not certain what we are talking about, there is a rot13 already.
+- `01`, `galaxy` ou `galaxy 01`.
 
-### Expected function
-
-```go
-func rot14(str string) string {
-
-}
-```
+- If none of the parameters match, the program displays a newline(`'\n'`).
 
 ### Usage
-
-Here is a possible [program](TODO-LINK) to test your function :
-
-```go
-package main
-
-import (
-	"github.com/01-edu/z01"
-)
-
-func main() {
-	result := rot14("Hello How are You")
-	arrayRune := []rune(result)
-
-	for _, s := range arrayRune {
-		z01.PrintRune(s)
-	}
-	z01.PrintRune('\n')
-}
-
-```
-
-And its output :
 
 ```console
 student@ubuntu:~/piscine/comcheck$ go build

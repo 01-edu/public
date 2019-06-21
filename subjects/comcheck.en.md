@@ -2,11 +2,13 @@
 
 ### Instructions
 
-Write a program `comcheck` that displays on the standard output `Alert!!!` followed by `\n`.
+Write a program `comcheck` that displays on the standard output `Alert!!!` followed by newline(`'\n'`) if at least one of the arguments passed in parameter matches the `strings`:
 
-- If one of the arguments passed in parameter corresponds to the words `01`, `galaxy`, `galaxy 01`.
+- `01`, `galaxy` or `galaxy 01`.
 
-Examples of outputs :
+- If none of the parameters match, the program displays a newline(`'\n'`).
+
+### Usage
 
 ```console
 student@ubuntu:~/piscine/comcheck$ go build
