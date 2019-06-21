@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function, CollatzCountdown, that returns the number of steps to reach 1 using the collatz countdown.
+Write a function, `CollatzCountdown`, that returns the number of steps necessary to reach 1 using the collatz countdown.
 
 ### Expected function
 

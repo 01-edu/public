@@ -2,11 +2,9 @@
 
 ### Instructions
 
-Write a function that returns the the value in the middle of 5 five arguments.
+Écrire une fonction qui retournes la médiane de 5 arguments.
 
-This function must have the following signature.
-
-### Expected function
+### Fonction attendue
 
 ```go
 func Abort(a, b, c, d, e int) int {
@@ -14,9 +12,9 @@ func Abort(a, b, c, d, e int) int {
 }
 ```
 
-### Usage
+### Utilisation
 
-Here is a possible [program](TODO-LINK) to test your function :
+Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
 ```go
 package main
@@ -32,7 +30,7 @@ func main() {
 }
 ```
 
-And its output :
+Et son résultat :
 
 ```console
 student@ubuntu:~/piscine/test$ go build

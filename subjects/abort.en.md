@@ -2,9 +2,7 @@
 
 ### Instructions
 
-Write a function that returns the value in the middle of 5 five arguments.
-
-This function must have the following signature.
+Write a function that returns the median of 5 five arguments.
 
 ### Expected function
 

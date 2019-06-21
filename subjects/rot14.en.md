@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a function `rot14` that returns the string within the parameter but transformed into a rot14 string.
+Write a function `rot14` that returns the `string` within the parameter transformed into a `rot14 string`.
 
-- If you not certain what we are talking about, there is a rot13 already.
+- For more information look what `rot13` stands for.
 
 ### Expected function
 

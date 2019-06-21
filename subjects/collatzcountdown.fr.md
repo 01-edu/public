@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a function, CollatzCountdown, that returns the number of steps to reach 1 using the collatz countdown.
+Écrire une fonction, `CollatzCountdown`, qui retournes le nombre d'étapes nécéssaires pour atteindre 1 en utilisant le comptage de collatz.
 
-### Expected function
+### FOnction attendue
 
 ```go
 func CollatzCountdown(start int) int {
@@ -12,9 +12,9 @@ func CollatzCountdown(start int) int {
 }
 ```
 
-### Usage
+### Utilisation
 
-Here is a possible [program](TODO-LINK) to test your function :
+Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
 ```go
 package main
@@ -30,7 +30,7 @@ func main() {
 }
 ```
 
-And its output :
+Et son résultat :
 
 ```console
 student@ubuntu:~/student/test$ go build
