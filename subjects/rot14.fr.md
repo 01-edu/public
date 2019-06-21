@@ -1,32 +1,33 @@
-## ROT 14
+## rot14
 
 ### Instructions
 
-Write a function `rot14` that returns the string within the parameter but transformed into a rot14 string.
+Écrire une fonction `rot14` qui retournes la `string` en paramètre transformée en `string rot14`.
 
-- If you not certain what we are talking about, there is a rot13 already.
+- Pour plus d'informations chercher ce que `rot13` signifie.
 
-### Expected function
+### Fonction attendue
 
 ```go
-func rot14(str string) string {
+func Rot14(str string) string {
 
 }
 ```
 
-### Usage
+### Utilisation
 
-Here is a possible [program](TODO-LINK) to test your function :
+Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
 ```go
 package main
 
 import (
+	piscine ".."
 	"github.com/01-edu/z01"
 )
 
 func main() {
-	result := rot14("Hello How are You")
+	result := piscine.Rot14("Hello How are You")
 	arrayRune := []rune(result)
 
 	for _, s := range arrayRune {
@@ -36,7 +37,7 @@ func main() {
 }
 ```
 
-And its output :
+Et son résultat :
 
 ```console
 student@ubuntu:~/piscine/test$ go build
