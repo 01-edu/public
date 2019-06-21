@@ -4,7 +4,7 @@
 
 Écrire une fonction `Compact` qui prend un pointeur sur tableau comme paramètre et qui réécris sur les éléments qui pointent sur `nil`.
 
-- Indice: Cette fonction existe in Ruby.
+- Indice : Cette fonction existe in Ruby.
 
 ### Fonction attendue
 
