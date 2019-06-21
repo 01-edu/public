@@ -7,14 +7,14 @@ Write a function `ListPushBack` that inserts a new element `node` at the beginni
 ### Expected function and structure
 
 ```go
-type Node struct {
+type NodeL struct {
 	Data interface{}
-	Next *Node
+	Next *NodeL
 }
 
 type List struct {
-	Head *Node
-	Tail *Node
+	Head *NodeL
+	Tail *NodeL
 }
 
 func ListPushFront(l *List, data interface{}) {
