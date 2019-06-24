@@ -26,15 +26,20 @@ Here is a possible [program](TODO-LINK) to test your function :
 ```go
 package main
 
+import (
+    "fmt"
+    piscine ".."
+)
+
 func main() {
-     root := &TreeNode{data: "4"}
-     BTreeInsertData(root, "1")
-     BTreeInsertData(root, "7")
-     BTreeInsertData(root, "5")
-     fmt.Println(root.left.data)
-     fmt.Println(root.data)
-     fmt.Println(root.right.left.data)
-     fmt.Println(root.right.data)
+     root := &piscine.TreeNode{Data: "4"}
+     piscine.BTreeInsertData(root, "1")
+     piscine.BTreeInsertData(root, "7")
+     piscine.BTreeInsertData(root, "5")
+     fmt.Println(root.Left.Data)
+     fmt.Println(root.Data)
+     fmt.Println(root.Right.Left.Data)
+     fmt.Println(root.Right.Data)
 
 }
 ```
