@@ -9,18 +9,7 @@ Write a function `ListClear` that delets all `nodes` from a linked list, deletin
 ### Expected function and structure
 
 ```go
-type Node struct {
-	Data interface{}
-	Next *Node
-}
-
-type List struct {
-	Head *Node
-	Tail *Node
-}
-
 func ListClear(l *List) {
-
 }
 ```
 
@@ -33,11 +22,12 @@ package main
 
 import (
 	"fmt"
+
 	piscine ".."
 )
 
 type List = piscine.List
-type Node = piscine.Node
+type Node = piscine.NodeL
 
 func PrintList(l *List) {
 	link := l.Head
@@ -64,6 +54,7 @@ func main() {
 }
 
 ```
+
 
 And its output :
 
