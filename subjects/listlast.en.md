@@ -17,7 +17,7 @@ type List struct {
 	Tail *Node
 }
 
-func ListLast(l *List) *List {
+func ListLast(l *List) interface{} {
 }
 ```
 
