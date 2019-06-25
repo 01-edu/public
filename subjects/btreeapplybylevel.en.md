@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function, BTreeApplyByLevel, that applies the function given by fn to each node of the tree given by root.
+Write a function, `BTreeApplyByLevel`, that applies the function given by fn to each node of the tree given by root.
 
 This function must have the following signature.
 
@@ -23,26 +23,26 @@ package main
 
 import (
 	"fmt"
-	student ".."
+	piscine ".."
 )
 
 func main() {
-	root := &student.TreeNode{Data: "4"}
-	student.BTreeInsertData(root, "1")
-	student.BTreeInsertData(root, "7")
-	student.BTreeInsertData(root, "5")
-	student.BTreeApplyByLevel(root, fmt.Println)
+	root := &piscine.TreeNode{Data: "4"}
+	piscine.BTreeInsertData(root, "1")
+	piscine.BTreeInsertData(root, "7")
+	piscine.BTreeInsertData(root, "5")
+	piscine.BTreeApplyByLevel(root, fmt.Println)
 }
 ```
 
 And its output :
 
 ```console
-student@ubuntu:~/student/btreeapplybylevel$ go build
-student@ubuntu:~/student/btreeapplybylevel$ ./btreeapplybylevel
+student@ubuntu:~/student/test$ go build
+student@ubuntu:~/student/test$ ./test
 4
 1
 7
 5
-student@ubuntu:~/student/btreeapplybylevel$
+student@ubuntu:~/student/test$
 ```
