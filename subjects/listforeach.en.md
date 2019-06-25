@@ -4,22 +4,42 @@
 
 Write a function `ListForEach` that applies a function given as argument to the information within each of the list's links.
 
-- The function given as argument must have a pointer as argument: `l *list`
+- The function given as argument must have a pointer as argument: `l *List`
+
+- Copy the functions `Add2_node` and `Subtract3_node` in the same file you defined the function `ListForEach`.
 
 ### Expected function and structure
 
 ```go
-type node struct {
-	data interface{}
-	next *node
+type NodeL struct {
+	Data interface{}
+	Next *NodeL
 }
 
-type list struct {
-	head *node
-	tail *node
+type List struct {
+	Head *NodeL
+	Tail *NodeL
 }
 
-func ListForEach(l *list, f func(l *list)) {
+func ListForEach(l *List, f func(*NodeL)) {
+}
+
+func Add2_node(node *NodeL) {
+	switch node.Data.(type) {
+	case int:
+		node.Data = node.Data.(int) + 2
+	case string:
+		node.Data = node.Data.(string) + "2"
+	}
+}
+
+func Subtract3_node(node *NodeL) {
+	switch node.Data.(type) {
+	case int:
+		node.Data = node.Data.(int) - 3
+	case string:
+		node.Data = node.Data.(string) + "-3"
+	}
 }
 ```
 
@@ -36,18 +56,19 @@ import (
 )
 
 func main() {
-	link := &list{}
+	link := &piscine.List{}
 
-	piscine.ListPushBack(link, 1)
-	piscine.ListPushBack(link, 2)
-	piscine.ListPushBack(link, 3)
-	piscine.ListPushBack(link, 4)
+	piscine.ListPushBack(link, "1")
+	piscine.ListPushBack(link, "2")
+	piscine.ListPushBack(link, "3")
+	piscine.ListPushBack(link, "5")
 
-	piscine.ListForEach(link, piscine.ListReverse)
+	piscine.ListForEach(link, piscine.Add2)
 
-	for link.head != nil {
-		fmt.Println(link.head.data)
-		link.head = link.head.next
+	it := link.Head
+	for it != nil {
+		fmt.Println(it.Data)
+		it = it.Next
 	}
 }
 ```
@@ -57,9 +78,9 @@ And its output :
 ```console
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test
-4
-3
-2
-1
+12
+22
+32
+52
 student@ubuntu:~/piscine/test$
 ```
