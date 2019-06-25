@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function `ListClear` that delets all `nodes` from a linked list, deleting the link between the list.
+Write a function `ListClear` that deletes all `nodes` from a linked list, deleting the link between the list.
 
 - Tip: assign the list's pointer to nil
 
