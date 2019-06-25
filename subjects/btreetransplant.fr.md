@@ -2,7 +2,7 @@
 
 ### Instructions
 
-In order to move subtrees around within the binary search tree, write a function, BTreeTransplant, which replaces the subtree started by node with the node called 'rplc' in the tree given by root.
+In order to move subtrees around within the binary search tree, write a function, `BTreeTransplant`, which replaces the subtree started by `node` with the node called `rplc` in the tree given by `root`.
 
 This function must have the following signature.
 
@@ -23,29 +23,29 @@ package main
 
 import (
 	"fmt"
-	student ".."
+	piscine ".."
 )
 
 func main() {
-	root := &student.TreeNode{Data: "4"}
-	student.BTreeInsertData(root, "1")
-	student.BTreeInsertData(root, "7")
-	student.BTreeInsertData(root, "5")
-	node := student.BTreeSearchItem(root, "1")
-	replacement := &student.TreeNode{Data: "3"}
-	root = student.BTreeTransplant(root, node, replacement)
-	student.BTreeApplyInorder(root, fmt.Println)
+	root := &piscine.TreeNode{Data: "4"}
+	piscine.BTreeInsertData(root, "1")
+	piscine.BTreeInsertData(root, "7")
+	piscine.BTreeInsertData(root, "5")
+	node := piscine.BTreeSearchItem(root, "1")
+	replacement := &piscine.TreeNode{Data: "3"}
+	root = piscine.BTreeTransplant(root, node, replacement)
+	piscine.BTreeApplyInorder(root, fmt.Println)
 }
 ```
 
 And its output :
 
 ```console
-student@ubuntu:~/student/btreetransplant$ go build
-student@ubuntu:~/student/btreetrandsplant$ ./btreetransplant
+student@ubuntu:~/student/test$ go build
+student@ubuntu:~/student/test$ ./test
 3
 4
 5
 7
-student@ubuntu:~/student/btreetrandsplant$
+student@ubuntu:~/student/test$
 ```
