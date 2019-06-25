@@ -45,10 +45,15 @@ func main() {
 
 	piscine.ListReverse(link)
 
-	for link.Head != nil {
-		fmt.Println(link.Head.Data)
-		link.Head = link.Head.Next
+	it := link.Head
+
+	for it != nil {
+		fmt.Println(it.Data)
+		it = it.Next
 	}
+
+	fmt.Println("Tail", link.Tail)
+	fmt.Println("Head", link.Head)
 }
 ```
 
@@ -61,5 +66,7 @@ student@ubuntu:~/piscine/test$ ./test
 3
 2
 1
+Tail &{1 <nil>}
+Head &{4 0xc42000a140}
 student@ubuntu:~/piscine/test$
 ```
