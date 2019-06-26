@@ -1,31 +1,29 @@
-## listpushback
+## listfind
 
 ### Instructions
 
-Write a function `ListFind` that returns the address of the first link that the function in the arguments its equal.
+Write a function `ListFind` that returns the address of the first node in the list that is determined to be equal to `ref` by the functions `CompStr`.
 
 - For this you shoud use the function `CompStr`.
-
-- Use pointers wen ever you can.
 
 ### Expected function and structure
 
 ```go
-type node struct {
-	data interface{}
-	next *node
+type NodeL struct {
+	Data interface{}
+	Next *NodeL
 }
 
-type list struct {
-	head *node
-	tail *node
+type List struct {
+	Head *NodeL
+	Tail *NodeL
 }
 
-func CompStr(l *list) bool {
-
+func CompStr(a, b interface{}) bool {
+	return a == b
 }
 
-func ListFind(l *list, comp func(l *list) bool) *interface{} {
+func ListFind(l *List, ref interface{}, comp func(a, b interface{}) bool) *interface{} {
 
 }
 ```
@@ -43,14 +41,14 @@ import (
 )
 
 func main() {
-	link := &list{}
+	link := &piscine.List{}
 
 	piscine.ListPushBack(link, "hello")
 	piscine.ListPushBack(link, "hello1")
 	piscine.ListPushBack(link, "hello2")
 	piscine.ListPushBack(link, "hello3")
 
-	fmt.Println(piscine.ListFind(link, compStr))
+	fmt.Println(piscine.ListFind(link, interface{}("hello2"), piscine.CompStr))
 }
 ```
 
@@ -62,3 +60,6 @@ student@ubuntu:~/piscine/test$ ./test
 0xc42000a0a0
 student@ubuntu:~/piscine/test$
 ```
+### Note
+
+- The address may be different in each execution of the program.
