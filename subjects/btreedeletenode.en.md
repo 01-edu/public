@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function, BTreeDeleteNode, that deletes 'node' from the tree given by root.
+Write a function, `BTreeDeleteNode`, that deletes a `node` from the tree given by root.
 
 The resulting tree should still follow the binary search tree rules.
 
@@ -26,28 +26,28 @@ package main
 
 import (
 	"fmt"
-	student ".."
+	piscine ".."
 )
 
 func main() {
-	root := &student.TreeNode{Data: "4"}
-	student.BTreeInsertData(root, "1")
-	student.BTreeInsertData(root, "7")
-	student.BTreeInsertData(root, "5")
-	node := student.BTreeSearchItem(root, "4")
+	root := &piscine.TreeNode{Data: "4"}
+	piscine.BTreeInsertData(root, "1")
+	piscine.BTreeInsertData(root, "7")
+	piscine.BTreeInsertData(root, "5")
+	node := piscine.BTreeSearchItem(root, "4")
 	fmt.Println("Before delete:")
-	student.BTreeApplyInorder(root, fmt.Println)
-	root = student.BTreeDeleteNode(root, node)
+	piscine.BTreeApplyInorder(root, fmt.Println)
+	root = piscine.BTreeDeleteNode(root, node)
 	fmt.Println("After delete:")
-	student.BTreeApplyInorder(root, fmt.Println)
+	piscine.BTreeApplyInorder(root, fmt.Println)
 }
 ```
 
 And its output :
 
 ```console
-student@ubuntu:~/student/btreedeletenode$ go build
-student@ubuntu:~/student/btreedeletenode$ ./btreedeletenode
+student@ubuntu:~/student/test$ go build
+student@ubuntu:~/student/test$ ./test
 Before delete:
 1
 4
@@ -57,5 +57,5 @@ After delete:
 1
 5
 7
-student@ubuntu:~/student/btreedeletenode$
+student@ubuntu:~/student/test$
 ```
