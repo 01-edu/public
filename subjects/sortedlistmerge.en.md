@@ -1,4 +1,4 @@
-## listpushback
+## sortedlistmerge
 
 ### Instructions
 
@@ -11,7 +11,7 @@ Write a function `SortedListMerge` that mereges two lists, `n1` and `n2`, but it
 ### Expected function and structure
 
 ```go
-func SortedListMerge(n1 *Nodee, n2 *Nodee) *Nodee {
+func SortedListMerge(n1 *NodeI, n2 *NodeI) *NodeI {
 
 }
 ```
@@ -29,10 +29,10 @@ import (
 	piscine ".."
 )
 
-type node = piscine.Nodee
-type nodes = piscine.Nodee
+type node = piscine.NodeI
+type nodes = piscine.NodeI
 
-func PrintList(l *piscine.Nodee) {
+func PrintList(l *piscine.NodeI) {
 	m := l
 	for m != nil {
 		fmt.Print(m.Data, " -> ")
@@ -42,8 +42,8 @@ func PrintList(l *piscine.Nodee) {
 	fmt.Println()
 }
 
-func listPushBack(l *piscine.Nodee, data int) *piscine.Nodee {
-	n := &piscine.Nodee{Data: data}
+func listPushBack(l *piscine.NodeI, data int) *piscine.NodeI {
+	n := &piscine.NodeI{Data: data}
 
 	if l == nil {
 		return n
