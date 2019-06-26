@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function, BTreeMin, that returns the node with the minimum value in the tree given by root
+Write a function, `BTreeMin`, that returns the node with the minimum value in the tree given by root
 
 This function must have the following signature.
 
@@ -23,15 +23,16 @@ package main
 
 import (
 	"fmt"
-	student ".."
+
+	piscine ".."
 )
 
 func main() {
-	root := &student.TreeNode{Data: "4"}
-	student.BTreeInsertData(root, "1")
-	student.BTreeInsertData(root, "7")
-	student.BTreeInsertData(root, "5")
-	min := student.BTreeMin(root)
+	root := &piscine.TreeNode{Data: "4"}
+	piscine.BTreeInsertData(root, "1")
+	piscine.BTreeInsertData(root, "7")
+	piscine.BTreeInsertData(root, "5")
+	min := piscine.BTreeMin(root)
 	fmt.Println(min.Data)
 }
 ```
@@ -39,8 +40,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/student/btreemin$ go build
-student@ubuntu:~/student/btreemin$ ./btreemin
+student@ubuntu:~/student/test$ go build
+student@ubuntu:~/student/test$ ./test
 1
-student@ubuntu:~/student/btreemin$
+student@ubuntu:~/student/test$
 ```
