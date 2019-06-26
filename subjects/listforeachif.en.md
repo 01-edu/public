@@ -2,32 +2,34 @@
 
 ### Instructions
 
-Write a function `ListForEachIf` that applies a function given as argument to the information within some links of the list.
+Write a function `ListForEachIf` that applies a function given as argument to the information within some nodes of the list.
 
-- For this you will have to create a function `CompStr`, that returns a `bool`, to compare each elemente of the linked list, to see if it is a string, and than apply the function in the argument of `ListForEachIf`.
+- This functions receives two functions:
 
-- The function given as argument as to have a pointer as argument: `l *list`.
+  - `f` is a functions that is applied to the node.
 
-- Use pointers wen ever you can.
+  - `comp` is a predicate (a function that returns true or false) and will be use to determine if the function `f` would be applied to the node.
+
+- The function given as argument must have a pointer as argument: `*NodeL`.
 
 ### Expected function and structure
 
 ```go
-type node struct {
-	data interface{}
-	next *node
+type NodeL struct {
+	Data interface{}
+	Next *NodeL
 }
 
-type list struct {
-	head *node
-	tail *node
+type List struct {
+	Head *NodeL
+	Tail *NodeL
 }
 
-func CompStr(l *list) bool {
+func CompStr(l *NodeL) bool {
 
 }
 
-func ListForEachIf(l *list, f func(l *list), comp func(l *list) bool) {
+func ListForEachIf(l *List, f func(*NodeL), comp func(*NodeL) bool) {
 
 }
 ```
@@ -44,26 +46,26 @@ import (
 	piscine ".."
 )
 
-func PrintElem(l *list) {
-	fmt.Println(l.head.data)
+func PrintElem(l *List) {
+	fmt.Println(l.Head.Data)
 }
 
-func StringToInt(l *list) {
+func StringToInt(l *List) {
 	count := 1
-	l.head.data = count
+	l.Head.Data = count
 }
 
-func PrintList(l *list) {
-	m := l.head
+func PrintList(l *List) {
+	m := l.Head
 	for m != nil {
-		fmt.Print(m.data, " -> ")
-		m = m.next
+		fmt.Print(m.Data, " -> ")
+		m = m.Next
 	}
 
-	fmt.Print(l.tail)
+	fmt.Print(l.Tail)
 }
 func main() {
-	link := &list{}
+	link := &List{}
 
 	piscine.ListPushBack(link, 1)
 	piscine.ListPushBack(link, "hello")
