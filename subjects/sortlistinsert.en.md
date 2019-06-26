@@ -11,12 +11,7 @@ Write a function `SortListInsert` that inserts `data_ref` in the linked list, bu
 ### Expected function and structure
 
 ```go
-type node struct {
-	data int
-	next *node
-}
-
-func SortListInsert(l *node, data_ref int) *node{
+func SortListInsert(l *Nodee, data_ref int) *Nodee{
 
 }
 ```
@@ -30,50 +25,48 @@ package main
 
 import (
 	"fmt"
+
 	piscine ".."
 )
 
-//Prints the list
-func PrintList(l *node) {
+func PrintList(l *piscine.Nodee) {
 	m := l
 	for m != nil {
-		fmt.Print(m.data, " -> ")
-		m = m.next
+		fmt.Print(m.Data, " -> ")
+		m = m.Next
 	}
 	fmt.Print(nil)
 	fmt.Println()
 }
-//insert elements
-func listPushBack(l *node, data int) {
-	n := &node{}
-	n.data = data
-	n.next = nil
+
+func listPushBack(l *piscine.Nodee, data int) *piscine.Nodee {
+	n := &piscine.Nodee{Data: data}
+
 	if l == nil {
-		l = n
-		return
+		return n
 	}
 	iterator := l
-	for iterator.next != nil {
-		iterator = iterator.next
+	for iterator.Next != nil {
+		iterator = iterator.Next
 	}
-	iterator.next = n
+	iterator.Next = n
+	return l
 }
 
 func main() {
 
-	link := &node{}
+	var link *piscine.Nodee
 
-	listPushBack(link, 1)
-	listPushBack(link, 4)
-	listPushBack(link, 9)
+	link = listPushBack(link, 1)
+	link = listPushBack(link, 4)
+	link = listPushBack(link, 9)
 
 	PrintList(link)
 
-	link = sortListInsert(link, -2)
-	link = sortListInsert(link, 2)
+	link = piscine.SortListInsert(link, -2)
+	link = piscine.SortListInsert(link, 2)
 	PrintList(link)
 }
-
 ```
 
 And its output :
@@ -81,7 +74,7 @@ And its output :
 ```console
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test
--2 -> 0 -> 1 -> 2 -> 4 -> 9 -> <nil>
-lee@lee:~/Documents/work/day11/11-16-sortlistinsert/so
+1 -> 4 -> 9 -> <nil>
+-2 -> 1 -> 2 -> 4 -> 9 -> <nil>
 student@ubuntu:~/piscine/test$
 ```
