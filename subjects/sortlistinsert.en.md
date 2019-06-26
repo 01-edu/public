@@ -1,4 +1,4 @@
-## listpushback
+## sortlistinsert
 
 ### Instructions
 
@@ -11,7 +11,7 @@ Write a function `SortListInsert` that inserts `data_ref` in the linked list, bu
 ### Expected function and structure
 
 ```go
-func SortListInsert(l *Nodee, data_ref int) *Nodee{
+func SortListInsert(l *NodeI, data_ref int) *NodeI{
 
 }
 ```
@@ -29,7 +29,7 @@ import (
 	piscine ".."
 )
 
-func PrintList(l *piscine.Nodee) {
+func PrintList(l *piscine.NodeI) {
 	m := l
 	for m != nil {
 		fmt.Print(m.Data, " -> ")
@@ -39,8 +39,8 @@ func PrintList(l *piscine.Nodee) {
 	fmt.Println()
 }
 
-func listPushBack(l *piscine.Nodee, data int) *piscine.Nodee {
-	n := &piscine.Nodee{Data: data}
+func listPushBack(l *piscine.NodeI, data int) *piscine.NodeI {
+	n := &piscine.NodeI{Data: data}
 
 	if l == nil {
 		return n
@@ -55,7 +55,7 @@ func listPushBack(l *piscine.Nodee, data int) *piscine.Nodee {
 
 func main() {
 
-	var link *piscine.Nodee
+	var link *piscine.NodeI
 
 	link = listPushBack(link, 1)
 	link = listPushBack(link, 4)
