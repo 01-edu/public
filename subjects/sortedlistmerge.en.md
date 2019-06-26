@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function `SortedListMerge` that mereges two lists, `l1` and `l2`, but it as to join them in ascending order.
+Write a function `SortedListMerge` that mereges two lists, `n1` and `n2`, but it as to join them in ascending order.
 
 - Tip each list as to be already sorted.
 
@@ -11,12 +11,7 @@ Write a function `SortedListMerge` that mereges two lists, `l1` and `l2`, but it
 ### Expected function and structure
 
 ```go
-type node struct {
-	data interface{}
-	next *node
-}
-
-func SortedListMerge(l1 *node, l2 *node) *node {
+func SortedListMerge(n1 *Nodee, n2 *Nodee) *Nodee {
 
 }
 ```
@@ -30,35 +25,51 @@ package main
 
 import (
 	"fmt"
+
 	piscine ".."
 )
 
-func PrintList(l *list) {
-	m := l.head
-	for m != nil {
-		fmt.Print(m.data, " -> ")
-		m = m.next
-	}
+type node = piscine.Nodee
+type nodes = piscine.Nodee
 
+func PrintList(l *piscine.Nodee) {
+	m := l
+	for m != nil {
+		fmt.Print(m.Data, " -> ")
+		m = m.Next
+	}
 	fmt.Print(nil)
 	fmt.Println()
 }
 
-func main() {
-	link := &list{}
-	link2 := &list{}
+func listPushBack(l *piscine.Nodee, data int) *piscine.Nodee {
+	n := &piscine.Nodee{Data: data}
 
-	piscine.ListPushBack(link, "5")
-	piscine.ListPushBack(link, "3")
-	piscine.ListPushBack(link, "7")
-
-	piscine.ListPushBack(link2, "1")
-	piscine.ListPushBack(link2, "-2")
-	piscine.ListPushBack(link2, "4")
-	piscine.ListPushBack(link2, "6")
-
-	PrintList(SortedListMerge(link, link2))
+	if l == nil {
+		return n
+	}
+	iterator := l
+	for iterator.Next != nil {
+		iterator = iterator.Next
+	}
+	iterator.Next = n
+	return l
 }
+
+func main() {
+	var link *node
+	var link2 *nodes
+
+	link = listPushBack(link, 5)
+	link = listPushBack(link, 3)
+	link = listPushBack(link, 7)
+
+	link2 = listPushBack(link2, -2)
+	link2 = listPushBack(link2, 4)
+
+	PrintList(piscine.SortedListMerge(link2, link))
+}
+
 ```
 
 And its output :
@@ -66,6 +77,6 @@ And its output :
 ```console
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test
--2 -> 0 -> 0 -> 1 -> 3 -> 4 -> 5 -> 6 -> 7 -> <nil>
+-2 -> 3 -> 4 -> 5 -> 7 -> <nil>
 student@ubuntu:~/piscine/test$
 ```

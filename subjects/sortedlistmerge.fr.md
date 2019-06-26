@@ -1,44 +1,82 @@
-## countif
+## listpushback
 
 ### Instructions
 
-Écrire une fonction `CountIf` qui retournes le nombre d'éléments d'un tableau de `string` pour lesquels la fonction `f` retourne `true`.
+Write a function `SortedListMerge` that mereges two lists, `n1` and `n2`, but it as to join them in ascending order.
 
-### Fonction attendue
+- Tip each list as to be already sorted.
+
+- Use pointers when ever you can.
+
+### Expected function and structure
 
 ```go
-func CountIf(f func(string) bool, tab []string) int {
+func SortedListMerge(n1 *Nodee, n2 *Nodee) *Nodee {
+
 }
 ```
 
-### Utilisation
+### Usage
 
-Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
+Here is a possible [program](TODO-LINK) to test your function :
 
 ```go
 package main
 
 import (
 	"fmt"
+
 	piscine ".."
 )
 
-func main() {
-	tab1 := []string{"Hello", "how", "are", "you"}
-	tab2 := []string{"This","1", "is", "4", "you"}
-	answer1 := piscine.CountIf(piscine.IsNumeric, tab1)
-	answer2 := piscine.CountIf(piscine.IsNumeric, tab2)
-	fmt.Println(answer1)
-	fmt.Println(answer2)
+type node = piscine.Nodee
+type nodes = piscine.Nodee
+
+func PrintList(l *piscine.Nodee) {
+	m := l
+	for m != nil {
+		fmt.Print(m.Data, " -> ")
+		m = m.Next
+	}
+	fmt.Print(nil)
+	fmt.Println()
 }
+
+func listPushBack(l *piscine.Nodee, data int) *piscine.Nodee {
+	n := &piscine.Nodee{Data: data}
+
+	if l == nil {
+		return n
+	}
+	iterator := l
+	for iterator.Next != nil {
+		iterator = iterator.Next
+	}
+	iterator.Next = n
+	return l
+}
+
+func main() {
+	var link *node
+	var link2 *nodes
+
+	link = listPushBack(link, 5)
+	link = listPushBack(link, 3)
+	link = listPushBack(link, 7)
+
+	link2 = listPushBack(link2, -2)
+	link2 = listPushBack(link2, 4)
+
+	PrintList(piscine.SortedListMerge(link2, link))
+}
+
 ```
 
-Et son résultat :
+And its output :
 
 ```console
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test
-0
-2
+-2 -> 3 -> 4 -> 5 -> 7 -> <nil>
 student@ubuntu:~/piscine/test$
 ```
