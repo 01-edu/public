@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function, BTreeMax, that returns the node with the maximum value in the tree given by root
+Write a function, `BTreeMax`, that returns the node with the maximum value in the tree given by root
 
 This function must have the following signature.
 
@@ -23,15 +23,16 @@ package main
 
 import (
 	"fmt"
-	student ".."
+
+	piscine ".."
 )
 
 func main() {
-	root := &student.TreeNode{Data: "4"}
-	student.BTreeInsertData(root, "1")
-	student.BTreeInsertData(root, "7")
-	student.BTreeInsertData(root, "5")
-	max := student.BTreeMax(root)
+	root := &piscine.TreeNode{Data: "4"}
+	piscine.BTreeInsertData(root, "1")
+	piscine.BTreeInsertData(root, "7")
+	piscine.BTreeInsertData(root, "5")
+	max := piscine.BTreeMax(root)
 	fmt.Println(max.Data)
 }
 ```
@@ -39,8 +40,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/student/btreemax$ go build
-student@ubuntu:~/student/btreemax$ ./btreemax
+student@ubuntu:~/student/test$ go build
+student@ubuntu:~/student/test$ ./test
 7
-student@ubuntu:~/student/btreemax$
+student@ubuntu:~/student/test$
 ```

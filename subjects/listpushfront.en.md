@@ -7,17 +7,17 @@ Write a function `ListPushBack` that inserts a new element `node` at the beginni
 ### Expected function and structure
 
 ```go
-type Node struct {
+type NodeL struct {
 	Data interface{}
-	Next *Node
+	Next *NodeL
 }
 
 type List struct {
-	Head *Node
-	Tail *Node
+	Head *NodeL
+	Tail *NodeL
 }
 
-func ListPushFront(l *list, data interface{}) {
+func ListPushFront(l *List, data interface{}) {
 }
 ```
 
@@ -29,21 +29,22 @@ Here is a possible [program](TODO-LINK) to test your function :
 package main
 
 import (
-	"fmt"
 	piscine ".."
+	"fmt"
 )
 
 func main() {
 
-	link := &list{}
+	link := &piscine.List{}
 
 	piscine.ListPushFront(link, "Hello")
 	piscine.ListPushFront(link, "man")
 	piscine.ListPushFront(link, "how are you")
 
-	for link.head != nil {
-		fmt.Println(link.head.data)
-		link.head = link.head.next
+	it := link.Head
+	for it != nil {
+		fmt.Println(it.Data)
+		it = it.Next
 	}
 }
 ```
