@@ -6,10 +6,6 @@ Write a function `ListSort` that sorts the linked list by ascending order.
 
 - This time you only will have the `node` structure.
 
-- Try to use recursive.
-
-- Use pointers when ever you can.
-
 ### Expected function and structure
 
 ```go
@@ -37,13 +33,12 @@ import (
 )
 
 func PrintList(l *piscine.NodeI) {
-	m := l
-	for m != nil {
-		fmt.Print(m.Data, " -> ")
-		m = m.Next
+	it := l
+	for it != nil {
+		fmt.Print(it.Data, " -> ")
+		it = it.Next
 	}
-	fmt.Print(nil)
-	fmt.Println()
+	fmt.Print(nil, "\n")
 }
 
 func listPushBack(l *piscine.NodeI, data int) *piscine.NodeI {
