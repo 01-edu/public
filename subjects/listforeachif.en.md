@@ -8,7 +8,7 @@ Write a function `ListForEachIf` that applies a function given as argument to th
 
   - `f` is a functions that is applied to the node.
 
-  - `` is a predicate (a function that returns true or false) and will be use to determine if the function `f` would be applied to the node.
+  - `Comp` is a predicate (a function that returns true or false) and will be use to determine if the function `f` would be applied to the node.
 
 - The function given as argument must have a pointer as argument: `*NodeL`.
 
