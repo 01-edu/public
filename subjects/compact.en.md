@@ -2,14 +2,17 @@
 
 ### Instructions
 
-Write a function that will take a pointer to a array as parameter and overwrites any element that points to `nil`.
+Write a function `Compact` that takes a pointer to a slice of strings as the argument.
+This function must:
 
-- If you not sure what the function does. It exists in Ruby.
+- Return the number of elements with non-`nil`.
+
+- Compact, i.e., delete the elements with `nil` in the slice.
 
 ### Expected functions
 
 ```go
-func Compact(ptr *[]string, length int) int {
+func Compact(ptr *[]string) int {
 
 }
 ```
@@ -21,13 +24,29 @@ Here is a possible [program](TODO-LINK) to test your function :
 ```go
 package main
 
-import fmt
+import (
+       "fmt"
+
+       piscine ".."
+)
+
+const N = 6
 
 func main() {
-	array := []string{"hello", " ", "there", " ", "bye"}
+	arr := make([]string, N)
+	arr[0] = "a"
+	arr[2] = "b"
+	arr[4] = "c"
 
-	ptr := &array
-	fmt.Println(Compact(ptr, len(array)))
+	for _, v := range arr {
+		fmt.Println(v)
+	}
+
+	fmt.Println("Size after compacting:", piscine.Compact(&arr))
+
+	for _, v := range arr {
+		fmt.Println(v)
+	}
 }
 ```
 
@@ -36,6 +55,15 @@ And its output :
 ```console
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test
-3
+a
+
+b
+
+c
+
+Size after compacting: 3
+a
+b
+c
 student@ubuntu:~/piscine/test$
 ```
