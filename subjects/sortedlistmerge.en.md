@@ -6,8 +6,6 @@ Write a function `SortedListMerge` that mereges two lists, `n1` and `n2`, but it
 
 - Tip each list as to be already sorted.
 
-- Use pointers when ever you can.
-
 ### Expected function and structure
 
 ```go
@@ -33,13 +31,12 @@ type node = piscine.NodeI
 type nodes = piscine.NodeI
 
 func PrintList(l *piscine.NodeI) {
-	m := l
-	for m != nil {
-		fmt.Print(m.Data, " -> ")
-		m = m.Next
+	it := l
+	for it != nil {
+		fmt.Print(it.Data, " -> ")
+		it = it.Next
 	}
-	fmt.Print(nil)
-	fmt.Println()
+	fmt.Print(nil, "\n")
 }
 
 func listPushBack(l *piscine.NodeI, data int) *piscine.NodeI {

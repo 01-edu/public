@@ -6,8 +6,6 @@ Write a function `SortListInsert` that inserts `data_ref` in the linked list, bu
 
 - The list as to be alredy sorted.
 
-- Use pointers when ever you can.
-
 ### Expected function and structure
 
 ```go
@@ -30,13 +28,12 @@ import (
 )
 
 func PrintList(l *piscine.NodeI) {
-	m := l
-	for m != nil {
-		fmt.Print(m.Data, " -> ")
-		m = m.Next
+	it := l
+	for it != nil {
+		fmt.Print(it.Data, " -> ")
+		it = it.Next
 	}
-	fmt.Print(nil)
-	fmt.Println()
+	fmt.Print(nil, "\n")
 }
 
 func listPushBack(l *piscine.NodeI, data int) *piscine.NodeI {
