@@ -48,7 +48,10 @@ func main() {
 	piscine.ListPushBack(link, "hello2")
 	piscine.ListPushBack(link, "hello3")
 
-	fmt.Println(piscine.ListFind(link, interface{}("hello2"), piscine.CompStr))
+	found := piscine.ListFind(link, interface{}("hello2"), piscine.CompStr)
+
+	fmt.Println(found)
+	fmt.Println(*found)
 }
 ```
 
@@ -58,6 +61,7 @@ And its output :
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test
 0xc42000a0a0
+hello2
 student@ubuntu:~/piscine/test$
 ```
 ### Note
