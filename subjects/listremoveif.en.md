@@ -83,8 +83,6 @@ And its output :
 ```console
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test
-------answer-----
-
 ----normal state----
 1 -> <nil>
 ------answer-----
