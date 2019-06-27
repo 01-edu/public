@@ -27,9 +27,6 @@ import (
 	piscine ".."
 )
 
-type node = piscine.NodeI
-type nodes = piscine.NodeI
-
 func PrintList(l *piscine.NodeI) {
 	it := l
 	for it != nil {
@@ -54,8 +51,8 @@ func listPushBack(l *piscine.NodeI, data int) *piscine.NodeI {
 }
 
 func main() {
-	var link *node
-	var link2 *nodes
+	var link *NodeI
+	var link2 *NodeI
 
 	link = listPushBack(link, 5)
 	link = listPushBack(link, 3)
