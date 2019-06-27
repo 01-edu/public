@@ -1,4 +1,4 @@
-## sortList
+## sortlist
 
 ### Instructions
 

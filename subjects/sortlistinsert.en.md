@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a function `SortListInsert` that inserts `data_ref` in the linked list, but it as to remain sorted in ascending order.
+Write a function `SortListInsert` that inserts `data_ref` in the linked list, but keeping the list sorted in ascending order.
 
-- The list as to be alredy sorted.
+- You can assume that the list passed as an argument is already sorted.
 
 ### Expected function and structure
 
