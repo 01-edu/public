@@ -1,4 +1,4 @@
-## listpushback
+## listremoveif
 
 ### Instructions
 
@@ -8,8 +8,8 @@ Write a function `ListRemoveIf` that removes all elements that are equal to the 
 
 ```go
 type NodeL struct {
-	data interface{}
-	next *NodeL
+	Data interface{}
+	Next *NodeL
 }
 
 type List struct {
