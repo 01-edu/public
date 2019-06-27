@@ -4,8 +4,6 @@
 
 Write a function `ListRemoveIf` that removes all elements that are equal to the `data_ref` introduced in the argument of the function.
 
-- In case the list is empty print the message present a new line `\n`.
-
 ### Expected function and structure
 
 ```go
@@ -86,7 +84,6 @@ And its output :
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test
 ------answer-----
-
 
 ----normal state----
 1 -> <nil>
