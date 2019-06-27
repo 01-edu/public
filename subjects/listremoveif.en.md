@@ -54,7 +54,7 @@ func main() {
 	PrintList(link2)
 	piscine.ListRemoveIf(link2, 1)
 	fmt.Println("------answer-----")
-	PrintList(link)
+	PrintList(link2)
 	fmt.Println()
 
 	fmt.Println("----normal state----")
