@@ -2,7 +2,7 @@
 
 ### Instructions
 
-In order to move subtrees around within the binary search tree, write a function, `BTreeTransplant`, which replaces the subtree started by node with the node called `rplc` in the tree given by root.
+In order to move subtrees around within the binary search tree, write a function, `BTreeTransplant`, which replaces the subtree started by `node` with the node called `rplc` in the tree given by `root`.
 
 This function must have the following signature.
 
