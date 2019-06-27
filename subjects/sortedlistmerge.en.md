@@ -51,19 +51,18 @@ func listPushBack(l *piscine.NodeI, data int) *piscine.NodeI {
 }
 
 func main() {
-	var link *NodeI
-	var link2 *NodeI
+	var link *piscine.NodeI
+	var link2 *piscine.NodeI
 
-	link = listPushBack(link, 5)
 	link = listPushBack(link, 3)
+	link = listPushBack(link, 5)
 	link = listPushBack(link, 7)
 
 	link2 = listPushBack(link2, -2)
-	link2 = listPushBack(link2, 4)
+	link2 = listPushBack(link2, 9)
 
 	PrintList(piscine.SortedListMerge(link2, link))
 }
-
 ```
 
 And its output :
@@ -71,6 +70,6 @@ And its output :
 ```console
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test
--2 -> 3 -> 4 -> 5 -> 7 -> <nil>
+-2 -> 3 -> 5 -> 7 -> 9 -> <nil>
 student@ubuntu:~/piscine/test$
 ```
