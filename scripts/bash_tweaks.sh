@@ -9,6 +9,7 @@ cd $SCRIPT_DIR
 # Makes bash case-insensitive
 cat <<EOF>> /etc/inputrc
 set completion-ignore-case On
+set show-all-if-ambiguous on
 EOF
 
 # Enhance Linux prompt
