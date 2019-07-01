@@ -2,12 +2,12 @@
 
 ### Instructions
 
-Write a function, BTreeLevelCount, that return the number of levels of the tree (height of the tree)
+Write a function, `BTreeLevelCount`, that return the number of levels of the tree (height of the tree)
 
 ### Expected function
 
 ```go
-func BTreeLevelCount(root *piscine.TreeNode) int {
+func BTreeLevelCount(root *TreeNode) int {
 
 }
 ```
@@ -21,23 +21,24 @@ package main
 
 import (
 	"fmt"
-	student ".."
+
+	piscine ".."
 )
 
 func main() {
-	root := &student.TreeNode{Data: "4"}
-	student.BTreeInsertData(root, "1")
-	student.BTreeInsertData(root, "7")
-	student.BTreeInsertData(root, "5")
-	fmt.Println(BTreeLevelCount(root))
+	root := &piscine.TreeNode{Data: "4"}
+	piscine.BTreeInsertData(root, "1")
+	piscine.BTreeInsertData(root, "7")
+	piscine.BTreeInsertData(root, "5")
+	fmt.Println(piscine.BTreeLevelCount(root))
 }
 ```
 
 And its output :
 
 ```console
-student@ubuntu:~/student/btreesearchitem$ go build
-student@ubuntu:~/student/btreesearchitem$ ./btreesearchitem
+student@ubuntu:~/student/test$ go build
+student@ubuntu:~/student/test$ ./test
 3
-student@ubuntu:~/student/btreesearchitem$
+student@ubuntu:~/student/test$
 ```

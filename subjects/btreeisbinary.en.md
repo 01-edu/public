@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function, BTreeIsBinary, that returns true only if the tree given by root follows the binary search tree properties.
+Write a function, `BTreeIsBinary`, that returns true only if the tree given by root follows the binary search tree properties.
 
 This function must have the following signature.
 
@@ -23,23 +23,23 @@ package main
 
 import (
 	"fmt"
-	student ".."
+	piscine ".."
 )
 
 func main() {
-	root := &student.TreeNode{Data: "4"}
-	student.BTreeInsertData(root, "1")
-	student.BTreeInsertData(root, "7")
-	student.BTreeInsertData(root, "5")
-	fmt.Println(student.BTreeIsBinary(root))
+	root := &piscine.TreeNode{Data: "4"}
+	piscine.BTreeInsertData(root, "1")
+	piscine.BTreeInsertData(root, "7")
+	piscine.BTreeInsertData(root, "5")
+	fmt.Println(piscine.BTreeIsBinary(root))
 }
 ```
 
 And its output :
 
 ```console
-student@ubuntu:~/student/btreeisbinary$ go build
-student@ubuntu:~/student/btreeisbinary$ ./btreeisbinary
+student@ubuntu:~/student/test$ go build
+student@ubuntu:~/student/test$ ./test
 true
-student@ubuntu:~/student/btreeisbinary$
+student@ubuntu:~/student/test$
 ```

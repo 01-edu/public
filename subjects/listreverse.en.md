@@ -9,17 +9,17 @@ Write a function `ListReverse` that reverses the elements order of a given linke
 ### Expected function and structure
 
 ```go
-type node struct {
-	data interface{}
-	next *node
+type NodeL struct {
+	Data interface{}
+	Next *NodeL
 }
 
-type list struct {
-	head *node
-	tail *node
+type List struct {
+	Head *NodeL
+	Tail *NodeL
 }
 
-func ListReverse(l *list) {
+func ListReverse(l *List) {
 }
 ```
 
@@ -36,19 +36,24 @@ import (
 )
 
 func main() {
-	link := &list{}
+	link := &piscine.List{}
 
-	listPushBack(link, 1)
-	listPushBack(link, 2)
-	listPushBack(link, 3)
-	listPushBack(link, 4)
+	piscine.ListPushBack(link, 1)
+	piscine.ListPushBack(link, 2)
+	piscine.ListPushBack(link, 3)
+	piscine.ListPushBack(link, 4)
 
-	listReverse(link)
+	piscine.ListReverse(link)
 
-	for link.head != nil {
-		fmt.Println(link.head.data)
-		link.head = link.head.next
+	it := link.Head
+
+	for it != nil {
+		fmt.Println(it.Data)
+		it = it.Next
 	}
+
+	fmt.Println("Tail", link.Tail)
+	fmt.Println("Head", link.Head)
 }
 ```
 
@@ -61,5 +66,7 @@ student@ubuntu:~/piscine/test$ ./test
 3
 2
 1
+Tail &{1 <nil>}
+Head &{4 0xc42000a140}
 student@ubuntu:~/piscine/test$
 ```

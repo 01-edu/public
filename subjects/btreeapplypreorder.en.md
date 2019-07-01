@@ -1,4 +1,4 @@
-## btreeinsertdata
+## btreeapplypreorder
 
 ### Instructions
 
@@ -7,7 +7,7 @@ Write a function that applies a function using a preorder walk to each element i
 ### Expected function
 
 ```go
-func BTreeApplyPreorder(root *piscine.TreeNode, f func(...interface{}) (int, error)) {
+func BTreeApplyPreorder(root *TreeNode, f func(...interface{}) (int, error)) {
 
 }
 ```
@@ -20,8 +20,8 @@ Here is a possible [program](TODO-LINK) to test your function :
 package main
 
 import (
-       "fmt"
-       piscine "."
+	"fmt"
+	piscine ".."
 )
 
 func main() {
@@ -29,7 +29,7 @@ func main() {
 	piscine.BTreeInsertData(root, "1")
 	piscine.BTreeInsertData(root, "7")
 	piscine.BTreeInsertData(root, "5")
-	BTreeApplyPreorder(root, fmt.Println)
+	piscine.BTreeApplyPreorder(root, fmt.Println)
 
 }
 ```
@@ -37,11 +37,11 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/piscine/btreeinsertdata$ go build
-student@ubuntu:~/piscine/btreeinsertdata$ ./btreeinsertdata
+student@ubuntu:~/piscine/test$ go build
+student@ubuntu:~/piscine/test$ ./test
 4
 1
 7
 5
-student@ubuntu:~/piscine/btreeinsertdata$
+student@ubuntu:~/piscine/test$
 ```

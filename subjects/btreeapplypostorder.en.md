@@ -1,4 +1,4 @@
-## btreeinsertdata
+## btreeapplypostorder
 
 ### Instructions
 
@@ -7,7 +7,7 @@ Write a function that applies a function using a postorder walk to each element 
 ### Expected function
 
 ```go
-func BTreeApplyPostorder(root *piscine.TreeNode, f func(...interface{}) (int, error)) {
+func BTreeApplyPostorder(root *TreeNode, f func(...interface{}) (int, error)) {
 
 }
 ```
@@ -21,7 +21,7 @@ package main
 
 import (
        "fmt"
-       piscine "."
+       piscine ".."
 )
 
 func main() {
@@ -29,7 +29,7 @@ func main() {
 	piscine.BTreeInsertData(root, "1")
 	piscine.BTreeInsertData(root, "7")
 	piscine.BTreeInsertData(root, "5")
-	BTreeApplyPostorder(root, fmt.Println)
+	piscine.BTreeApplyPostorder(root, fmt.Println)
 
 }
 ```
@@ -37,11 +37,11 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/piscine/btreeinsertdata$ go build
-student@ubuntu:~/piscine/btreeinsertdata$ ./btreeinsertdata
+student@ubuntu:~/piscine/test$ go build
+student@ubuntu:~/piscine/test$ ./test
 1
 5
 7
 4
-student@ubuntu:~/piscine/btreeinsertdata$
+student@ubuntu:~/piscine/test$
 ```

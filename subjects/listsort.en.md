@@ -1,4 +1,4 @@
-## listpushback
+## listsort
 
 ### Instructions
 
@@ -6,19 +6,15 @@ Write a function `ListSort` that sorts the linked list by ascending order.
 
 - This time you only will have the `node` structure.
 
-- Try to use recursive.
-
-- Use pointers when ever you can.
-
 ### Expected function and structure
 
 ```go
-type node struct {
-	data int
-	next *node
+type NodeI struct {
+	Data int
+	Next *NodeI
 }
 
-func ListSort(l *node) *node {
+func ListSort(l *NodeI) *NodeI {
 
 }
 ```
@@ -32,53 +28,44 @@ package main
 
 import (
 	"fmt"
+
 	piscine ".."
 )
 
-//Prints the list
-func PrintList(l *node) {
-	m := l
-	for m != nil {
-		fmt.Print(m.data, " -> ")
-		m = m.next
+func PrintList(l *piscine.NodeI) {
+	it := l
+	for it != nil {
+		fmt.Print(it.Data, " -> ")
+		it = it.Next
 	}
-
-	fmt.Print(nil)
-	fmt.Println()
+	fmt.Print(nil, "\n")
 }
 
-//insert elements
-func listPushBack(l *node, data int) {
-
-	n := &node{}
-	n.data = data
-	n.next = nil
+func listPushBack(l *piscine.NodeI, data int) *piscine.NodeI {
+	n := &piscine.NodeI{Data: data}
 
 	if l == nil {
-		l = n
-		return
+		return n
 	}
-
 	iterator := l
-	for iterator.next != nil {
-		iterator = iterator.next
+	for iterator.Next != nil {
+		iterator = iterator.Next
 	}
-	iterator.next = n
+	iterator.Next = n
+	return l
 }
 
 func main() {
-	link := &node{}
+	var link *piscine.NodeI
 
-	listPushBack(link, 5)
-	listPushBack(link, 4)
-	listPushBack(link, 3)
-	listPushBack(link, 2)
-	listPushBack(link, 1)
+	link = listPushBack(link, 5)
+	link = listPushBack(link, 4)
+	link = listPushBack(link, 3)
+	link = listPushBack(link, 2)
+	link = listPushBack(link, 1)
 
 	PrintList(piscine.ListSort(link))
-
 }
-
 ```
 
 And its output :
@@ -86,6 +73,6 @@ And its output :
 ```console
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test
-0 -> 1 -> 2 -> 3 -> 4 -> 5 -> <nil>
+1 -> 2 -> 3 -> 4 -> 5 -> <nil>
 student@ubuntu:~/piscine/test$
 ```

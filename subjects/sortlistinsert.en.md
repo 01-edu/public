@@ -1,22 +1,15 @@
-## listpushback
+## sortlistinsert
 
 ### Instructions
 
-Write a function `SortListInsert` that inserts `data_ref` in the linked list, but it as to remain sorted in ascending order.
+Write a function `SortListInsert` that inserts `data_ref` in the linked list, but keeping the list sorted in ascending order.
 
-- The list as to be alredy sorted.
-
-- Use pointers when ever you can.
+- You can assume that the list passed as an argument is already sorted.
 
 ### Expected function and structure
 
 ```go
-type node struct {
-	data int
-	next *node
-}
-
-func SortListInsert(l *node, data_ref int) *node{
+func SortListInsert(l *NodeI, data_ref int) *NodeI{
 
 }
 ```
@@ -30,50 +23,47 @@ package main
 
 import (
 	"fmt"
+
 	piscine ".."
 )
 
-//Prints the list
-func PrintList(l *node) {
-	m := l
-	for m != nil {
-		fmt.Print(m.data, " -> ")
-		m = m.next
+func PrintList(l *piscine.NodeI) {
+	it := l
+	for it != nil {
+		fmt.Print(it.Data, " -> ")
+		it = it.Next
 	}
-	fmt.Print(nil)
-	fmt.Println()
+	fmt.Print(nil, "\n")
 }
-//insert elements
-func listPushBack(l *node, data int) {
-	n := &node{}
-	n.data = data
-	n.next = nil
+
+func listPushBack(l *piscine.NodeI, data int) *piscine.NodeI {
+	n := &piscine.NodeI{Data: data}
+
 	if l == nil {
-		l = n
-		return
+		return n
 	}
 	iterator := l
-	for iterator.next != nil {
-		iterator = iterator.next
+	for iterator.Next != nil {
+		iterator = iterator.Next
 	}
-	iterator.next = n
+	iterator.Next = n
+	return l
 }
 
 func main() {
 
-	link := &node{}
+	var link *piscine.NodeI
 
-	listPushBack(link, 1)
-	listPushBack(link, 4)
-	listPushBack(link, 9)
+	link = listPushBack(link, 1)
+	link = listPushBack(link, 4)
+	link = listPushBack(link, 9)
 
 	PrintList(link)
 
-	link = sortListInsert(link, -2)
-	link = sortListInsert(link, 2)
+	link = piscine.SortListInsert(link, -2)
+	link = piscine.SortListInsert(link, 2)
 	PrintList(link)
 }
-
 ```
 
 And its output :
@@ -81,7 +71,7 @@ And its output :
 ```console
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test
--2 -> 0 -> 1 -> 2 -> 4 -> 9 -> <nil>
-lee@lee:~/Documents/work/day11/11-16-sortlistinsert/so
+1 -> 4 -> 9 -> <nil>
+-2 -> 1 -> 2 -> 4 -> 9 -> <nil>
 student@ubuntu:~/piscine/test$
 ```

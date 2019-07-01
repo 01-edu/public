@@ -1,4 +1,4 @@
-## btreeinsertdata
+## btreesearchitem
 
 ### Instructions
 
@@ -7,10 +7,9 @@ Write a function that searches for an item with a data element equal to elem and
 ### Expected function
 
 ```go
-func BTreeSearchItem(root *piscine_test.TreeNode, elem string) *piscine_test.TreeNode {
+func BTreeSearchItem(root *TreeNode, elem string) *TreeNode {
 
 }
-
 ```
 
 ### Usage
@@ -21,16 +20,16 @@ Here is a possible [program](TODO-LINK) to test your function :
 package main
 
 import (
-       "fmt"
-       piscine "."
+	"fmt"
+	piscine ".."
 )
 
 func main() {
-	root := &piscine_test.TreeNode{Data: "4"}
-	piscine_test.BTreeInsertData(root, "1")
-	piscine_test.BTreeInsertData(root, "7")
-	piscine_test.BTreeInsertData(root, "5")
-	selected := BTreeSearchItem(root, "7")
+	root := &piscine.TreeNode{Data: "4"}
+	piscine.BTreeInsertData(root, "1")
+	piscine.BTreeInsertData(root, "7")
+	piscine.BTreeInsertData(root, "5")
+	selected := piscine.BTreeSearchItem(root, "7")
 	fmt.Print("Item selected -> ")
 	if selected != nil {
 		fmt.Println(selected.Data)
@@ -64,11 +63,11 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/piscine/btreesearchitem$ go build
-student@ubuntu:~/piscine/btreesearchitem$ ./btreesearchitem
+student@ubuntu:~/piscine/test$ go build
+student@ubuntu:~/piscine/test$ ./test
 Item selected -> 7
 Parent of selected item -> 4
 Left child of selected item -> 5
 Right child of selected item -> nil
-student@ubuntu:~/piscine/btreesearchitem$
+student@ubuntu:~/piscine/test$
 ```

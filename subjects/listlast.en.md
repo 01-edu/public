@@ -17,7 +17,7 @@ type List struct {
 	Tail *Node
 }
 
-func ListLast(l *list) *list {
+func ListLast(l *List) interface{} {
 }
 ```
 
@@ -30,20 +30,20 @@ package main
 
 import (
 	"fmt"
+
 	piscine ".."
 )
 
-
 func main() {
-	link := &list{}
-	link2 := &list{}
+	link := &piscine.List{}
+	link2 := &piscine.List{}
 
 	piscine.ListPushBack(link, "three")
 	piscine.ListPushBack(link, 3)
 	piscine.ListPushBack(link, "1")
 
-	fmt.Println(piscine.ListLast(link).head)
-	fmt.Println(piscine.ListLast(link2).head)
+	fmt.Println(piscine.ListLast(link))
+	fmt.Println(piscine.ListLast(link2))
 }
 
 ```
@@ -53,7 +53,7 @@ And its output :
 ```console
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test
-&{1 <nil>}
+1
 <nil>
 student@ubuntu:~/piscine/test$
 ```

@@ -23,12 +23,12 @@ package main
 
 import (
 	"fmt"
-	student ".."
+	piscine ".."
 )
 
 func main() {
 	arrInt := []int{23, 123, 1, 11, 55, 93}
-	max := student.Max(arrInt)
+	max := piscine.Max(arrInt)
 	fmt.Println(max
 }
 ```
@@ -36,8 +36,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/student/max$ go build
-student@ubuntu:~/student/max$ ./max
+student@ubuntu:~/piscine/test$ go build
+student@ubuntu:~/piscine/test$ ./test
 123
-student@ubuntu:~/student/max$
+student@ubuntu:~/piscine/test$
 ```

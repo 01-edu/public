@@ -1,27 +1,23 @@
-## listpushback
+## listremoveif
 
 ### Instructions
 
 Write a function `ListRemoveIf` that removes all elements that are equal to the `data_ref` introduced in the argument of the function.
 
-- In case the list is empty print the message `no data on list`.
-
-- Use pointers wen ever you can.
-
 ### Expected function and structure
 
 ```go
-type node struct {
-	data interface{}
-	next *node
+type NodeL struct {
+	Data interface{}
+	Next *NodeL
 }
 
-type list struct {
-	head *node
-	tail *node
+type List struct {
+	Head *NodeL
+	Tail *NodeL
 }
 
-func ListRemoveIf(l *list, data_ref interface{}) {
+func ListRemoveIf(l *List, data_ref interface{}) {
 
 }
 ```
@@ -35,35 +31,30 @@ package main
 
 import (
 	"fmt"
+
 	piscine ".."
 )
 
-func PrintList(l *list) {
-	m := l.head
-	for m != nil {
-		fmt.Print(m.data, " -> ")
-		m = m.next
+func PrintList(l *piscine.List) {
+	it := l.Head
+	for it != nil {
+		fmt.Print(it.Data, " -> ")
+		it = it.Next
 	}
 
-	fmt.Print(l.tail)
-	fmt.Println()
+	fmt.Print(nil, "\n")
 }
 
 func main() {
-	link := &list{}
-	link2 := &list{}
-	link3 := &list{}
-
-	fmt.Println("------answer-----")
-	ListRemoveIf(link3, 1)
-	fmt.Println()
+	link := &piscine.List{}
+	link2 := &piscine.List{}
 
 	fmt.Println("----normal state----")
 	piscine.ListPushBack(link2, 1)
 	PrintList(link2)
-	ListRemoveIf(link2, 1)
+	piscine.ListRemoveIf(link2, 1)
 	fmt.Println("------answer-----")
-	PrintList(link)
+	PrintList(link2)
 	fmt.Println()
 
 	fmt.Println("----normal state----")
@@ -80,7 +71,7 @@ func main() {
 	piscine.ListPushBack(link, 1)
 	PrintList(link)
 
-	ListRemoveIf(link, 1)
+	piscine.ListRemoveIf(link, 1)
 	fmt.Println("------answer-----")
 	PrintList(link)
 }
@@ -92,9 +83,6 @@ And its output :
 ```console
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test
-------answer-----
-no data on list
-
 ----normal state----
 1 -> <nil>
 ------answer-----

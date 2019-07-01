@@ -1,44 +1,80 @@
-## countif
+## sortlistinsert
 
 ### Instructions
 
-Écrire une fonction `CountIf` qui retournes le nombre d'éléments d'un tableau de `string` pour lesquels la fonction `f` retourne `true`.
+Write a function `SortListInsert` that inserts `data_ref` in the linked list, but it as to remain sorted in ascending order.
 
-### Fonction attendue
+- The list as to be alredy sorted.
+
+- Use pointers when ever you can.
+
+### Expected function and structure
 
 ```go
-func CountIf(f func(string) bool, tab []string) int {
+func SortListInsert(l *NodeI, data_ref int) *NodeI{
+
 }
 ```
 
-### Utilisation
+### Usage
 
-Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
+Here is a possible [program](TODO-LINK) to test your function :
 
 ```go
 package main
 
 import (
 	"fmt"
+
 	piscine ".."
 )
 
+func PrintList(l *piscine.NodeI) {
+	m := l
+	for m != nil {
+		fmt.Print(m.Data, " -> ")
+		m = m.Next
+	}
+	fmt.Print(nil)
+	fmt.Println()
+}
+
+func listPushBack(l *piscine.NodeI, data int) *piscine.NodeI {
+	n := &piscine.NodeI{Data: data}
+
+	if l == nil {
+		return n
+	}
+	iterator := l
+	for iterator.Next != nil {
+		iterator = iterator.Next
+	}
+	iterator.Next = n
+	return l
+}
+
 func main() {
-	tab1 := []string{"Hello", "how", "are", "you"}
-	tab2 := []string{"This","1", "is", "4", "you"}
-	answer1 := piscine.CountIf(piscine.IsNumeric, tab1)
-	answer2 := piscine.CountIf(piscine.IsNumeric, tab2)
-	fmt.Println(answer1)
-	fmt.Println(answer2)
+
+	var link *piscine.NodeI
+
+	link = listPushBack(link, 1)
+	link = listPushBack(link, 4)
+	link = listPushBack(link, 9)
+
+	PrintList(link)
+
+	link = piscine.SortListInsert(link, -2)
+	link = piscine.SortListInsert(link, 2)
+	PrintList(link)
 }
 ```
 
-Et son résultat :
+And its output :
 
 ```console
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test
-0
-2
+1 -> 4 -> 9 -> <nil>
+-2 -> 1 -> 2 -> 4 -> 9 -> <nil>
 student@ubuntu:~/piscine/test$
 ```

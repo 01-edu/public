@@ -1,33 +1,61 @@
-## listpushback
+## listforeachif
 
 ### Instructions
 
-Write a function `ListForEachIf` that applies a function given as argument to the information within some links of the list.
+Write a function `ListForEachIf` that applies a function given as argument to the information within some nodes of the list.
 
-- For this you will have to create a function `CompStr`, that returns a `bool`, to compare each elemente of the linked list, to see if it is a string, and than apply the function in the argument of `ListForEachIf`.
+- This functions receives two functions:
 
-- The function given as argument as to have a pointer as argument: `l *list`.
+  - `f` is a functions that is applied to the node.
 
-- Use pointers wen ever you can.
+  - `cond` is a predicate (a function that returns true or false) and will be use to determine if the function `f` would be applied to the node.
+
+- The function given as argument must have a pointer as argument: `*NodeL`.
 
 ### Expected function and structure
 
 ```go
-type node struct {
-	data interface{}
-	next *node
+type NodeL struct {
+	Data interface{}
+	Next *NodeL
 }
 
-type list struct {
-	head *node
-	tail *node
+type List struct {
+	Head *NodeL
+	Tail *NodeL
 }
 
-func CompStr(l *list) bool {
-
+func IsPositive_node(node *NodeL) bool {
+	switch node.Data.(type) {
+	case int, float32, float64, byte:
+		return node.Data.(int) > 0
+	case string, rune:
+		return false
+	}
+	return false
 }
 
-func ListForEachIf(l *list, f func(l *list), comp func(l *list) bool) {
+func IsNegative_node(node *NodeL) bool {
+	switch node.Data.(type) {
+	case int, float32, float64, byte:
+		return node.Data.(int) > 0
+	case string, rune:
+		return false
+	}
+	return false
+}
+
+func IsNotNumeric_node(node *NodeL) bool {
+	switch node.Data.(type) {
+	case int, float32, float64, byte:
+		return false
+	case string, rune:
+		return true
+	}
+	return true
+}
+
+func ListForEachIf(l *List, f func(*NodeL), cond func(*NodeL) bool) {
 
 }
 ```
@@ -40,30 +68,29 @@ Here is a possible [program](TODO-LINK) to test your function :
 package main
 
 import (
-	"fmt"
 	piscine ".."
+	"fmt"
 )
 
-func PrintElem(l *list) {
-	fmt.Println(l.head.data)
+func PrintElem(node *piscine.NodeL) {
+	fmt.Println(node.Data)
 }
 
-func StringToInt(l *list) {
-	count := 1
-	l.head.data = count
+func StringToInt(node *piscine.NodeL) {
+	node.Data = 2
 }
 
-func PrintList(l *list) {
-	m := l.head
-	for m != nil {
-		fmt.Print(m.data, " -> ")
-		m = m.next
+func PrintList(l *piscine.List) {
+	it := l.Head
+	for it != nil {
+		fmt.Print(it.Data, "->")
+		it = it.Next
 	}
-
-	fmt.Print(l.tail)
+	fmt.Println()
 }
+
 func main() {
-	link := &list{}
+	link := &piscine.List{}
 
 	piscine.ListPushBack(link, 1)
 	piscine.ListPushBack(link, "hello")
@@ -73,16 +100,16 @@ func main() {
 	piscine.ListPushBack(link, "!")
 	piscine.ListPushBack(link, 54)
 
-	PrintAllList(link)
+	PrintList(link)
 
 	fmt.Println()
 	fmt.Println("--------function applied--------")
-	piscine.ListForEachIf(link, PrintElem, CompStr)
+	piscine.ListForEachIf(link, PrintElem, piscine.IsPositive_node)
 
-	piscine.ListForEachIf(link, StringToInt, CompStr)
+	piscine.ListForEachIf(link, StringToInt, piscine.IsNotNumeric_node)
 
 	fmt.Println("--------function applied--------")
-	PrintAllList(link)
+	PrintList(link)
 
 	fmt.Println()
 }

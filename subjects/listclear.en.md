@@ -2,25 +2,14 @@
 
 ### Instructions
 
-Write a function `ListClear` that delets all `nodes` from a linked list, deleting the link between the list.
+Write a function `ListClear` that deletes all `nodes` from a linked list, deleting the link between the list.
 
 - Tip: assign the list's pointer to nil
 
 ### Expected function and structure
 
 ```go
-type Node struct {
-	Data interface{}
-	Next *Node
-}
-
-type List struct {
-	Head *Node
-	Tail *Node
-}
-
 func ListClear(l *List) {
-
 }
 ```
 
@@ -33,11 +22,12 @@ package main
 
 import (
 	"fmt"
+
 	piscine ".."
 )
 
 type List = piscine.List
-type Node = piscine.Node
+type Node = piscine.NodeL
 
 func PrintList(l *List) {
 	link := l.Head
@@ -64,6 +54,7 @@ func main() {
 }
 
 ```
+
 
 And its output :
 

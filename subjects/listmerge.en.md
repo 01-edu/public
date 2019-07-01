@@ -1,4 +1,4 @@
-## listpushback
+## listmerge
 
 ### Instructions
 
@@ -6,22 +6,20 @@ Write a function `ListMerge` that places elements of a list `l2` at the end of a
 
 - You can't create new elements!
 
-- Use pointers when ever you can.
-
 ### Expected function and structure
 
 ```go
-type node struct {
-	data interface{}
-	next *node
+type NodeL struct {
+	Data interface{}
+	Next *NodeL
 }
 
-type list struct {
-	head *node
-	tail *node
+type List struct {
+	Head *NodeL
+	Tail *NodeL
 }
 
-func ListMerge(l1 *list, l2 *list) {
+func ListMerge(l1 *List, l2 *List) {
 
 }
 ```
@@ -35,34 +33,38 @@ package main
 
 import (
 	"fmt"
+
 	piscine ".."
 )
 
-func PrintList(l *list) {
-	m := l.head
-	for m != nil {
-		fmt.Print(m.data, " -> ")
-		m = m.next
+func PrintList(l *piscine.List) {
+	it := l.Head
+	for it != nil {
+		fmt.Print(it.Data, " -> ")
+		it = it.Next
 	}
-
-	fmt.Print(l.tail)
-	fmt.Println()
+	fmt.Print(nil, "\n")
 }
 
 func main() {
-	link := &list{}
-	link2 := &list{}
+	link := &piscine.List{}
+	link2 := &piscine.List{}
 
 	piscine.ListPushBack(link, "a")
 	piscine.ListPushBack(link, "b")
 	piscine.ListPushBack(link, "c")
 	piscine.ListPushBack(link, "d")
+	fmt.Println("-----first List------")
+	PrintList(link)
 
 	piscine.ListPushBack(link2, "e")
 	piscine.ListPushBack(link2, "f")
 	piscine.ListPushBack(link2, "g")
 	piscine.ListPushBack(link2, "h")
+	fmt.Println("-----second List------")
+	PrintList(link2)
 
+	fmt.Println("-----Merged List-----")
 	piscine.ListMerge(link, link2)
 	PrintList(link)
 }
