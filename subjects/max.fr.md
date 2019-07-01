@@ -2,11 +2,9 @@
 
 ### Instructions
 
-Write a function, Max, that returns the maximum value in a slice of integers
+Écrire une fonction, `Max`, qui retourne la valeur maximum dans une slice d'entiers.
 
-The function must have the next signature.
-
-### Expected function
+### Fonction attendue
 
 ```go
 func Max(arr []int) int {
@@ -14,9 +12,9 @@ func Max(arr []int) int {
 }
 ```
 
-### Usage
+### Utilisation
 
-Here is a possible [program](TODO-LINK) to test your function :
+Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
 ```go
 package main
@@ -33,7 +31,7 @@ func main() {
 }
 ```
 
-And its output :
+Et son résultat :
 
 ```console
 student@ubuntu:~/piscine/test$ go build
