@@ -1,10 +1,12 @@
-## listpushback
+## listsize
 
 ### Instructions
 
-Write a function `ListSize` that returns the number of elements in the list.
+Write a function `ListSize` that returns the number of elements in a linked list `l`.
 
 ### Expected function and structure
+
+1
 
 ```go
 type NodeL struct {

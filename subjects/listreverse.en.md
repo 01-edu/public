@@ -1,10 +1,8 @@
-## listpushback
+## listreverse
 
 ### Instructions
 
-Write a function `ListReverse` that reverses the elements order of a given linked list.
-
-- Use pointers when ever you can
+Write a function `ListReverse` that reverses the order of the elements of a given linked list `l`.
 
 ### Expected function and structure
 

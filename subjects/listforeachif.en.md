@@ -2,15 +2,15 @@
 
 ### Instructions
 
-Write a function `ListForEachIf` that applies a function given as argument to the information within some nodes of the list.
+Write a function `ListForEachIf` that applies a function given as argument to the data within some of the nodes of the list `l`.
 
-- This functions receives two functions:
+- This function receives two functions:
 
-  - `f` is a functions that is applied to the node.
+  - `f` is a function that is applied to the node.
 
-  - `cond` is a predicate (a function that returns true or false) and will be use to determine if the function `f` would be applied to the node.
+  - `cond` is a function that returns a `boolean` and it will be used to determine if the function `f` should be applied to the node.
 
-- The function given as argument must have a pointer as argument: `*NodeL`.
+- The function given as argument must have a pointer `*NodeL` as argument.
 
 ### Expected function and structure
 

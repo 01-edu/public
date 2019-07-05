@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function `ListPushBack` that inserts a new element `node` at the beginning of the list using `list`
+Write a function `ListPushBack` that inserts a new element `NodeL` at the beginning of the list `l` while using the structure `List`
 
 ### Expected function and structure
 

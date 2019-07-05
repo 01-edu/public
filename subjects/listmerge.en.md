@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a function `ListMerge` that places elements of a list `l2` at the end of an other list `l1`.
+Write a function `ListMerge` that places elements of a list `l2` at the end of another list `l1`.
 
-- You can't create new elements!
+- New elements should not be created!
 
 ### Expected function and structure
 

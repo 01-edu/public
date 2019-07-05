@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a function `ListSort` that sorts the linked list by ascending order.
+Write a function `ListSort` that sorts the nodes of a linked list by ascending order.
 
-- This time you only will have the `node` structure.
+- The `NodeI` structure will be the only one used.
 
 ### Expected function and structure
 
