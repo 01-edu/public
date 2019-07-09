@@ -1,10 +1,10 @@
-## btreeinsertdata
+## btreesearchitem
 
 ### Instructions
 
-Write a function that searches for an item with a data element equal to elem and return that node
+Écrire une fonction qui cherche une node avec un élément de data égal à `elem` et qui retourne cette node.
 
-### Expected function
+### Fonction attendue
 
 ```go
 func BTreeSearchItem(root *TreeNode, elem string) *TreeNode {
@@ -12,9 +12,9 @@ func BTreeSearchItem(root *TreeNode, elem string) *TreeNode {
 }
 ```
 
-### Usage
+### Utilisation
 
-Here is a possible [program](TODO-LINK) to test your function :
+Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
 ```go
 package main
@@ -60,7 +60,7 @@ func main() {
 }
 ```
 
-And its output :
+Et son résultat :
 
 ```console
 student@ubuntu:~/piscine/test$ go build

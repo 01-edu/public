@@ -1,13 +1,23 @@
-## countif
+## listpushback
 
 ### Instructions
 
-Écrire une fonction `CountIf` qui retournes le nombre d'éléments d'un tableau de `string` pour lesquels la fonction `f` retourne `true`.
+Écrire une fonction `ListPushBack` qui insère un nouvel élément `NodeL` à la fin de la liste `l` en utilisant la structure `List`.
 
-### Fonction attendue
+### Fonction et structure attendues
 
 ```go
-func CountIf(f func(string) bool, tab []string) int {
+type NodeL struct {
+	Data interface{}
+	Next *NodeL
+}
+
+type List struct {
+	Head *NodeL
+	Tail *NodeL
+}
+
+func ListPushBack(l *List, data interface{}) {
 }
 ```
 
@@ -24,12 +34,17 @@ import (
 )
 
 func main() {
-	tab1 := []string{"Hello", "how", "are", "you"}
-	tab2 := []string{"This","1", "is", "4", "you"}
-	answer1 := piscine.CountIf(piscine.IsNumeric, tab1)
-	answer2 := piscine.CountIf(piscine.IsNumeric, tab2)
-	fmt.Println(answer1)
-	fmt.Println(answer2)
+
+	link := &piscine.List{}
+
+	piscine.ListPushBack(link, "Hello")
+	piscine.ListPushBack(link, "man")
+	piscine.ListPushBack(link, "how are you")
+
+	for link.Head != nil {
+		fmt.Println(link.Head.Data)
+		link.Head = link.Head.Next
+	}
 }
 ```
 
@@ -38,7 +53,8 @@ Et son résultat :
 ```console
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test
-0
-2
+Hello
+man
+how are you
 student@ubuntu:~/piscine/test$
 ```

@@ -2,11 +2,10 @@
 
 ### Instructions
 
-Write a function that inserts new data in a binary search tree
-following the properties of binary search trees.
-The nodes must be defined as follows:
+Écrire une fonction qui insère de la nouvelle data dans un arbre binaire en suivant les propriétés des arbres de recherche binaires.
+Les nodes doivent être définies comme ci-dessous:
 
-### Expected function
+### Fonction attendue
 
 ```go
 type TreeNode struct {
@@ -19,9 +18,9 @@ func BTreeInsertData(root *TreeNode, data string) *TreeNode {
 }
 ```
 
-### Usage
+### Utilisation
 
-Here is a possible [program](TODO-LINK) to test your function :
+Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
 ```go
 package main
@@ -44,7 +43,7 @@ func main() {
 }
 ```
 
-And its output :
+Et son résultat :
 
 ```console
 student@ubuntu:~/piscine/btreeinsertdata$ go build

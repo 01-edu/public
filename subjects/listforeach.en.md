@@ -1,12 +1,12 @@
-## listpushback
+## listforeach
 
 ### Instructions
 
-Write a function `ListForEach` that applies a function given as argument to the information within each of the list's links.
+Write a function `ListForEach` that applies a function given as argument to the data within each node of the list `l`.
 
 - The function given as argument must have a pointer as argument: `l *List`
 
-- Copy the functions `Add2_node` and `Subtract3_node` in the same file you defined the function `ListForEach`.
+- Copy the functions `Add2_node` and `Subtract3_node` in the same file as the function `ListForEach` is defined.
 
 ### Expected function and structure
 

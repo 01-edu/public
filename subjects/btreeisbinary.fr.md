@@ -2,11 +2,9 @@
 
 ### Instructions
 
-Write a function, BTreeIsBinary, that returns true only if the tree given by root follows the binary search tree properties.
+Écrire une fonction, `BTreeIsBinary`, qui retourne `true` seulement si l'arbre donné par `root` suit les propriétés des arbres de recherche binaires.
 
-This function must have the following signature.
-
-### Expected function
+### Fonction attendue
 
 ```go
 func BTreeIsBinary(root *TreeNode) bool {
@@ -14,9 +12,9 @@ func BTreeIsBinary(root *TreeNode) bool {
 }
 ```
 
-### Usage
+### Utilisation
 
-Here is a possible [program](TODO-LINK) to test your function :
+Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
 ```go
 package main
@@ -35,7 +33,7 @@ func main() {
 }
 ```
 
-And its output :
+Et son résultat :
 
 ```console
 student@ubuntu:~/student/test$ go build

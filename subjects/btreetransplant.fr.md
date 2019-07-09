@@ -2,11 +2,9 @@
 
 ### Instructions
 
-In order to move subtrees around within the binary search tree, write a function, `BTreeTransplant`, which replaces the subtree started by `node` with the node called `rplc` in the tree given by `root`.
+Afin de déplacer les sous-arbres dans l'arbre de recherche binaire, écrire une fonction, `BTreeTransplant`, qui remplace le sous-arbre commencé par `node` avec la node `rplc` dans l'arbre donné par `root`.
 
-This function must have the following signature.
-
-### Expected function
+### Fonction attendue
 
 ```go
 func BTreeTransplant(root, node, rplc *TreeNode) *TreeNode {
@@ -14,9 +12,9 @@ func BTreeTransplant(root, node, rplc *TreeNode) *TreeNode {
 }
 ```
 
-### Usage
+### Utilisation
 
-Here is a possible [program](TODO-LINK) to test your function :
+Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
 ```go
 package main
@@ -38,7 +36,7 @@ func main() {
 }
 ```
 
-And its output :
+Et son résultat :
 
 ```console
 student@ubuntu:~/student/test$ go build

@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function, `BTreeLevelCount`, that return the number of levels of the tree (height of the tree)
+Write a function, `BTreeLevelCount`, that returns the number of levels of the binary tree (height of the tree)
 
 ### Expected function
 

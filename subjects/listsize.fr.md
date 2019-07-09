@@ -1,13 +1,24 @@
-## countif
+## listsize
 
 ### Instructions
 
-Écrire une fonction `CountIf` qui retournes le nombre d'éléments d'un tableau de `string` pour lesquels la fonction `f` retourne `true`.
+Écrire une fonction `ListSize` qui retourne le nombre d'éléments dans une liste chaînée `l`.
 
-### Fonction attendue
+### Fonction et structure attendues
 
 ```go
-func CountIf(f func(string) bool, tab []string) int {
+type NodeL struct {
+	Data interface{}
+	Next *NodeL
+}
+
+type List struct {
+	Head *NodeL
+	Tail *NodeL
+}
+
+func ListSize(l *List) int {
+
 }
 ```
 
@@ -24,13 +35,16 @@ import (
 )
 
 func main() {
-	tab1 := []string{"Hello", "how", "are", "you"}
-	tab2 := []string{"This","1", "is", "4", "you"}
-	answer1 := piscine.CountIf(piscine.IsNumeric, tab1)
-	answer2 := piscine.CountIf(piscine.IsNumeric, tab2)
-	fmt.Println(answer1)
-	fmt.Println(answer2)
+	link := &piscine.List{}
+
+	piscine.ListPushFront(link, "Hello")
+	piscine.ListPushFront(link, "2")
+	piscine.ListPushFront(link, "you")
+	piscine.ListPushFront(link, "man")
+
+	fmt.Println(piscine.ListSize(link))
 }
+
 ```
 
 Et son résultat :
@@ -38,7 +52,6 @@ Et son résultat :
 ```console
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test
-0
-2
+4
 student@ubuntu:~/piscine/test$
 ```

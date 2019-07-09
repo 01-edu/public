@@ -1,13 +1,62 @@
-## countif
+## listforeachif
 
 ### Instructions
 
-Écrire une fonction `CountIf` qui retournes le nombre d'éléments d'un tableau de `string` pour lesquels la fonction `f` retourne `true`.
+Écrire une fonction `ListForEachIf` qui applique un fonction donnée en argument à la data contenue dans certaines des nodes d'une liste `l`.
 
-### Fonction attendue
+- Cette fonction reçoit deux fonctions:
+
+  - `f` est la fonction qui est appliqué à la node.
+
+  - `cond` est une fonction qui retourne un `boolean` et qui sera utilisée pour déterminer si la fonction`f` doit être appliquée à la node.
+
+- La fonction donnée en argument doit avoir un pointeur `*NodeL` comme argument.
+
+### Fonction et structure attendues
 
 ```go
-func CountIf(f func(string) bool, tab []string) int {
+type NodeL struct {
+	Data interface{}
+	Next *NodeL
+}
+
+type List struct {
+	Head *NodeL
+	Tail *NodeL
+}
+
+func IsPositive_node(node *NodeL) bool {
+	switch node.Data.(type) {
+	case int, float32, float64, byte:
+		return node.Data.(int) > 0
+	case string, rune:
+		return false
+	}
+	return false
+}
+
+func IsNegative_node(node *NodeL) bool {
+	switch node.Data.(type) {
+	case int, float32, float64, byte:
+		return node.Data.(int) > 0
+	case string, rune:
+		return false
+	}
+	return false
+}
+
+func IsNotNumeric_node(node *NodeL) bool {
+	switch node.Data.(type) {
+	case int, float32, float64, byte:
+		return false
+	case string, rune:
+		return true
+	}
+	return true
+}
+
+func ListForEachIf(l *List, f func(*NodeL), cond func(*NodeL) bool) {
+
 }
 ```
 
@@ -19,17 +68,50 @@ Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 package main
 
 import (
-	"fmt"
 	piscine ".."
+	"fmt"
 )
 
+func PrintElem(node *piscine.NodeL) {
+	fmt.Println(node.Data)
+}
+
+func StringToInt(node *piscine.NodeL) {
+	node.Data = 2
+}
+
+func PrintList(l *piscine.List) {
+	it := l.Head
+	for it != nil {
+		fmt.Print(it.Data, "->")
+		it = it.Next
+	}
+	fmt.Println()
+}
+
 func main() {
-	tab1 := []string{"Hello", "how", "are", "you"}
-	tab2 := []string{"This","1", "is", "4", "you"}
-	answer1 := piscine.CountIf(piscine.IsNumeric, tab1)
-	answer2 := piscine.CountIf(piscine.IsNumeric, tab2)
-	fmt.Println(answer1)
-	fmt.Println(answer2)
+	link := &piscine.List{}
+
+	piscine.ListPushBack(link, 1)
+	piscine.ListPushBack(link, "hello")
+	piscine.ListPushBack(link, 3)
+	piscine.ListPushBack(link, "there")
+	piscine.ListPushBack(link, 23)
+	piscine.ListPushBack(link, "!")
+	piscine.ListPushBack(link, 54)
+
+	PrintList(link)
+
+	fmt.Println()
+	fmt.Println("--------function applied--------")
+	piscine.ListForEachIf(link, PrintElem, piscine.IsPositive_node)
+
+	piscine.ListForEachIf(link, StringToInt, piscine.IsNotNumeric_node)
+
+	fmt.Println("--------function applied--------")
+	PrintList(link)
+
+	fmt.Println()
 }
 ```
 
@@ -38,7 +120,12 @@ Et son résultat :
 ```console
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test
-0
-2
+1 -> hello -> 3 -> there -> 23 -> ! -> 54 -> <nil>
+--------function applied--------
+hello
+there
+!
+--------function applied--------
+1 -> 1 -> 3 -> 1 -> 23 -> 1 -> 54 -> <nil>
 student@ubuntu:~/piscine/test$
 ```

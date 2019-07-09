@@ -1,9 +1,8 @@
-## printroot
+## btreeprintroot
 
 ### Instructions
 
 Write a function to print the value of the root node of a binary tree.
-You have to create a new number and print the value of data
 The nodes must be defined as follows:
 
 ### Expected function

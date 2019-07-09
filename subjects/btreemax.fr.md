@@ -2,11 +2,9 @@
 
 ### Instructions
 
-Write a function, `BTreeMax`, that returns the node with the maximum value in the tree given by root
+Écrire une fonction, `BTreeMax`, qui retourne la node avec la valeur maximum de l'arbre donné par `root`.
 
-This function must have the following signature.
-
-### Expected function
+### Fonction attendue
 
 ```go
 func BTreeMax(root *TreeNode) *TreeNode {
@@ -14,9 +12,9 @@ func BTreeMax(root *TreeNode) *TreeNode {
 }
 ```
 
-### Usage
+### Utilisation
 
-Here is a possible [program](TODO-LINK) to test your function :
+Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
 ```go
 package main
@@ -37,7 +35,7 @@ func main() {
 }
 ```
 
-And its output :
+Et son résultat :
 
 ```console
 student@ubuntu:~/student/test$ go build

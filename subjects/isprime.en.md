@@ -4,6 +4,8 @@
 
 Write a function that returns `true` if the `int` passed as parameter is a prime number. Otherwise it returns `false`.
 
+The function must be optimized in order to avoid time-outs with the tester.
+
 ### Expected function
 
 ```go

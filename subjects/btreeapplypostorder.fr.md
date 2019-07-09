@@ -1,10 +1,10 @@
-## btreeinsertdata
+## btreeapplypostorder
 
 ### Instructions
 
-Write a function that applies a function using a postorder walk to each element in the tree
+Écrire une fonction qui applique une fonction en post-ordre (`postorder walk`) à chaque élément de l'arbre.
 
-### Expected function
+### Fonction attendue
 
 ```go
 func BTreeApplyPostorder(root *piscine.TreeNode, f func(...interface{}) (int, error)) {
@@ -12,9 +12,9 @@ func BTreeApplyPostorder(root *piscine.TreeNode, f func(...interface{}) (int, er
 }
 ```
 
-### Usage
+### Utilisation
 
-Here is a possible [program](TODO-LINK) to test your function :
+Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
 ```go
 package main
@@ -34,7 +34,7 @@ func main() {
 }
 ```
 
-And its output :
+Et son résultat :
 
 ```console
 student@ubuntu:~/piscine/btreeinsertdata$ go build

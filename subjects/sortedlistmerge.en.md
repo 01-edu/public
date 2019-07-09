@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a function `SortedListMerge` that merges two lists, `n1` and `n2`, but it has to join them in ascending order.
+Write a function `SortedListMerge` that merges two lists `n1` and `n2` in ascending order.
 
-- Assume that `n1` and `n2` are already sorted
+- During the tests `n1` and `n2` will already be initially sorted.
 
 ### Expected function and structure
 

@@ -1,10 +1,10 @@
-## listpushback
+## listlast
 
 ### Instructions
 
-Write a function `ListLast` that returns the last element of the linked list.
+Écrire une fonction `ListLast` qui retourne le dernier élément d'une liste chaînée `l`.
 
-### Expected function and structure
+### Fonction et structure attendue
 
 ```go
 type Node struct {
@@ -21,9 +21,9 @@ func ListLast(l *List) interface{} {
 }
 ```
 
-### Usage
+### Utilisation
 
-Here is a possible [program](TODO-LINK) to test your function :
+Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
 ```go
 package main
@@ -48,7 +48,7 @@ func main() {
 
 ```
 
-And its output :
+Et son résultat :
 
 ```console
 student@ubuntu:~/piscine/test$ go build

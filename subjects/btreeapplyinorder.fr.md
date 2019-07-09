@@ -1,11 +1,11 @@
-## btreeinsertdata
+## btreeapplyinorder
 
 ### Instructions
 
-Write a function that applies a function in order to each element in the tree
-(see in order tree walks)
+Écrire une fonction qui applique une fonction en ordre (in order) a chaque élément de l'arbre.
+(voir les `in order tree walks`)
 
-### Expected function
+### Fonction attendue
 
 ```go
 func BTreeApplyInorder(root *TreeNode, f func(...interface{}) (int, error)) {
@@ -13,9 +13,9 @@ func BTreeApplyInorder(root *TreeNode, f func(...interface{}) (int, error)) {
 }
 ```
 
-### Usage
+### Utilisation
 
-Here is a possible [program](TODO-LINK) to test your function :
+Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
 ```go
 package main
@@ -35,7 +35,7 @@ func main() {
 }
 ```
 
-And its output :
+Et son résultat :
 
 ```console
 student@ubuntu:~/piscine/test$ go build

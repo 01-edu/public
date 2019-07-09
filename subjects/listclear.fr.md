@@ -1,13 +1,15 @@
-## countif
+## listclear
 
 ### Instructions
 
-Écrire une fonction `CountIf` qui retournes le nombre d'éléments d'un tableau de `string` pour lesquels la fonction `f` retourne `true`.
+Écrire une fonction `ListClear` qui efface toutes les `nodes` d'une liste chaînée `l`.
 
-### Fonction attendue
+- Indice: assigner le pointeur de la liste à `nil`.
+
+### Fonction et structure attendues
 
 ```go
-func CountIf(f func(string) bool, tab []string) int {
+func ListClear(l *List) {
 }
 ```
 
@@ -20,17 +22,37 @@ package main
 
 import (
 	"fmt"
+
 	piscine ".."
 )
 
-func main() {
-	tab1 := []string{"Hello", "how", "are", "you"}
-	tab2 := []string{"This","1", "is", "4", "you"}
-	answer1 := piscine.CountIf(piscine.IsNumeric, tab1)
-	answer2 := piscine.CountIf(piscine.IsNumeric, tab2)
-	fmt.Println(answer1)
-	fmt.Println(answer2)
+type List = piscine.List
+type Node = piscine.NodeL
+
+func PrintList(l *List) {
+	link := l.Head
+	for link != nil {
+		fmt.Print(link.Data, " -> ")
+		link = link.Next
+	}
+	fmt.Println(nil)
 }
+
+func main() {
+	link := &List{}
+
+	piscine.ListPushBack(link, "I")
+	piscine.ListPushBack(link, 1)
+	piscine.ListPushBack(link, "something")
+	piscine.ListPushBack(link, 2)
+
+	fmt.Println("------list------")
+	PrintList(link)
+	piscine.ListClear(link)
+	fmt.Println("------updated list------")
+	PrintList(link)
+}
+
 ```
 
 Et son résultat :
@@ -38,7 +60,9 @@ Et son résultat :
 ```console
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test
-0
-2
+------list------
+I -> 1 -> something -> 2 -> <nil>
+------updated list------
+<nil>
 student@ubuntu:~/piscine/test$
 ```

@@ -4,8 +4,6 @@
 
 Write a function, `BTreeMin`, that returns the node with the minimum value in the tree given by root
 
-This function must have the following signature.
-
 ### Expected function
 
 ```go

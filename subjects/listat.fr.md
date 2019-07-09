@@ -1,13 +1,22 @@
-## countif
+## listat
 
 ### Instructions
 
-Écrire une fonction `CountIf` qui retournes le nombre d'éléments d'un tableau de `string` pour lesquels la fonction `f` retourne `true`.
+Écrire une fonction `ListAt` qui prend un pointeur sur la liste `l` et un `int pos` comme paramètres. Cette fonction devra afficher la `NodeL` à la position `pos` de la liste chaînée `l`.
 
-### Fonction attendue
+- En cas d'erreur la fonction affichera `nil`.
+
+### Fonction et structure attendues
 
 ```go
-func CountIf(f func(string) bool, tab []string) int {
+type NodeL struct {
+	Data interface{}
+	Next *NodeL
+}
+
+
+func ListAt(l *NodeL, pos int) *NodeL{
+
 }
 ```
 
@@ -24,13 +33,18 @@ import (
 )
 
 func main() {
-	tab1 := []string{"Hello", "how", "are", "you"}
-	tab2 := []string{"This","1", "is", "4", "you"}
-	answer1 := piscine.CountIf(piscine.IsNumeric, tab1)
-	answer2 := piscine.CountIf(piscine.IsNumeric, tab2)
-	fmt.Println(answer1)
-	fmt.Println(answer2)
+	link := &piscine.List{}
+
+	piscine.ListPushBack(link, "hello")
+	piscine.ListPushBack(link, "how are")
+	piscine.ListPushBack(link, "you")
+	piscine.ListPushBack(link, 1)
+
+	fmt.Println(piscine.ListAt(link.Head, 3).Data)
+	fmt.Println(piscine.ListAt(link.Head, 1).Data)
+	fmt.Println(piscine.ListAt(link.Head, 7))
 }
+
 ```
 
 Et son résultat :
@@ -38,7 +52,8 @@ Et son résultat :
 ```console
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test
-0
-2
+1
+how are
+<nil>
 student@ubuntu:~/piscine/test$
 ```
