@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Écrire une fonction `ListLast` qui retourne le dernier élément d'une liste chaîné `l`.
+Écrire une fonction `ListLast` qui retourne le dernier élément d'une liste chaînée `l`.
 
 ### Fonction et structure attendue
 
