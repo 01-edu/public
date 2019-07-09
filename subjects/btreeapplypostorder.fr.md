@@ -1,8 +1,8 @@
-## btreeapplyportorder
+## btreeapplypostorder
 
 ### Instructions
 
-Écrire une fonction qui applique une fonction en post-ordre (`postorder walk`) a chaque élément de l'arbre.
+Écrire une fonction qui applique une fonction en post-ordre (`postorder walk`) à chaque élément de l'arbre.
 
 ### Fonction attendue
 
