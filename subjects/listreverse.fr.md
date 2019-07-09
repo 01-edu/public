@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Écrire une fonction `ListReverse` qui inverse l'ordre des éléments d'une liste chaîné `l` donnée.
+Écrire une fonction `ListReverse` qui inverse l'ordre des éléments d'une liste chaînée `l` donnée.
 
 ### Fonction et structure attendues
 
