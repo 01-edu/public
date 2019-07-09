@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function `ListForEach` that applies a function given as argument to the data within each nodes of the list `l`.
+Write a function `ListForEach` that applies a function given as argument to the data within each node of the list `l`.
 
 - The function given as argument must have a pointer as argument: `l *List`
 
