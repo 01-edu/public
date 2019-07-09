@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Écrire une fonction, `BTreeLevelCount`, qui retourne le nombre de niveaux de l'arbre binaire. (l'hauteur de l'arbre)
+Écrire une fonction, `BTreeLevelCount`, qui retourne le nombre de niveaux de l'arbre binaire. (la hauteur de l'arbre)
 
 ### Fonction attendue
 
