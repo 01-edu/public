@@ -2,8 +2,8 @@
 
 ### Instructions
 
-Écrire une focntion qui affiche la valeur de node `root` d'un arbre binaire.
-Les nodes doivent être défini comme ci-dessous:
+Écrire une fonction qui affiche la valeur de node `root` d'un arbre binaire.
+Les nodes doivent être définies comme ci-dessous:
 
 ### Fonction attendue
 
