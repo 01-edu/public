@@ -67,4 +67,4 @@ student@ubuntu:~/piscine/test$
 
 ### Note
 
-- L'addresse peut être différente à chaque éxécution du programme.
+- L'addresse peut être différente à chaque exécution du programme.
