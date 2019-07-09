@@ -4,7 +4,7 @@
 
 Écrire une fonction, `BTreeDeleteNode`, qui efface `node` d'un arbre donné par `root`.
 
-L'arbre en résultant devra toujours suivre les régles des arbres de recherche binaires.
+L'arbre en résultant devra toujours suivre les règles des arbres de recherche binaires.
 
 ### Fonction attendue
 
