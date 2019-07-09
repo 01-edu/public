@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Écrire une fonction `ListRemoveIf` qui supprime tous les éléments qui sont égaux à m la `data_ref` introduite dans l'argument de la fonction.
+Écrire une fonction `ListRemoveIf` qui supprime tous les éléments qui sont égaux à la `data_ref` introduite dans l'argument de la fonction.
 
 ### Fonction et structure attendues
 
