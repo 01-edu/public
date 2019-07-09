@@ -2,11 +2,11 @@
 
 ### Instructions
 
-Écrire une fonction `ListSort` qui trie les nodes d'une liste chaîné par ordre croissant.
+Écrire une fonction `ListSort` qui trie les nodes d'une liste chaînée par ordre croissant.
 
-- La structure`NodeI` sera la seule utilisé.
+- La structure`NodeI` sera la seule utilisée.
 
-### Expected function and structure
+### Fonction et structure attendues
 
 ```go
 type NodeI struct {
