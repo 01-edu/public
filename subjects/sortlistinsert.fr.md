@@ -2,12 +2,12 @@
 
 ### Instructions
 
-Écrire une fonction `SortListInsert` qui insére `data_ref` dans la liste chaîné `l`
-tout en gardant cette liste trié en ordre croissant.
+Écrire une fonction `SortListInsert` qui insère `data_ref` dans la liste chaînée `l`
+tout en gardant cette liste triée par ordre croissant.
 
-- Pendant les tests la liste passé en argument sera déjà trié.
+- Pendant les tests la liste passée en argument sera déjà triée.
 
-### Fonction et structure attendue
+### Fonction et structure attendues
 
 ```go
 func SortListInsert(l *NodeI, data_ref int) *NodeI{
