@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Écrire une fonction `ListClear` qui efface toutes les `nodes` d'une liste chaîné `l`.
+Écrire une fonction `ListClear` qui efface toutes les `nodes` d'une liste chaînée `l`.
 
 - Indice: assigner le pointeur de la liste à `nil`.
 
