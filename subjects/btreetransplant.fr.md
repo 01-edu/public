@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Afin de déplacer les sous-arbres dans l'arbre de recherche binaire, écrire une fonction, `BTreeTransplant`, qui remplace le sous-arbre commençé par `node` avec la node `rplc` dans l'arbre donné par `root`.
+Afin de déplacer les sous-arbres dans l'arbre de recherche binaire, écrire une fonction, `BTreeTransplant`, qui remplace le sous-arbre commencé par `node` avec la node `rplc` dans l'arbre donné par `root`.
 
 ### Fonction attendue
 
