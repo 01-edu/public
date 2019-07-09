@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a function, `ActiveBits`, that returns the number of active bits (bits with the value 1) in the binary representation of an integer number.
+Écrire une fonction, `ActiveBits`, qui retourne le nombre de `bits` actifs (`bits` ayant la valeur 1) dans la représentation binaire d'un nombre entier.
 
-### Expected function
+### Fonction attendue
 
 ```go
 func ActiveBits(n int) uint {
@@ -12,9 +12,9 @@ func ActiveBits(n int) uint {
 }
 ```
 
-### Usage
+### Utilisation
 
-Here is a possible [program](TODO-LINK) to test your function :
+Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
 ```go
 package main
@@ -30,7 +30,7 @@ func main() {
 }
 ```
 
-And its output :
+Et son résultat :
 
 ```console
 student@ubuntu:~/piscine/test$ go build

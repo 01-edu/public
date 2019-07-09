@@ -1,8 +1,8 @@
-## join
+## unmatch
 
 ### Instructions
 
-Write a function, Unmatch, that returns the element of the slice (arr) that does not have a correspondent pair.
+Write a function, `Unmatch`, that returns the element of the slice (arr) that does not have a correspondent pair.
 
 - If all the number have a correspondent pair, it shoud return `-1`.
 
