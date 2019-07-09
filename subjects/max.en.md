@@ -2,9 +2,7 @@
 
 ### Instructions
 
-Write a function, Max, that returns the maximum value in a slice of integers
-
-The function must have the next signature.
+Write a function, `Max`, that returns the maximum value in a slice of integers.
 
 ### Expected function
 

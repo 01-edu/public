@@ -1,10 +1,10 @@
-## join
+## unmatch
 
 ### Instructions
 
-Write a function, Unmatch, that returns the element of the slice (arr) that does not have a correspondent pair.
+Écrire une fonction, `Unmatch`, qui retourne l'élément de la slice (arr) qui n'a pas de paire correspondante.
 
-### Expected function
+### Fonction attendue
 
 ```go
 func Unmatch(arr []int) int {
@@ -12,9 +12,9 @@ func Unmatch(arr []int) int {
 }
 ```
 
-### Usage
+### Utilisation
 
-Here is a possible [program](TODO-LINK) to test your function :
+Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
 ```go
 package main
@@ -31,7 +31,7 @@ func main() {
 }
 ```
 
-And its output :
+Et son résultat :
 
 ```console
 student@ubuntu:~/piscine/test$ go build
