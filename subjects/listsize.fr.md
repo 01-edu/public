@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Écrire une fonction `ListSize` qui retourne le nombre d'éléments dans une liste chaîné `l`.
+Écrire une fonction `ListSize` qui retourne le nombre d'éléments dans une liste chaînée `l`.
 
-### Fonction et structure attendue
+### Fonction et structure attendues
 
 ```go
 type NodeL struct {
