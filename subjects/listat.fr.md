@@ -2,11 +2,11 @@
 
 ### Instructions
 
-Écrire une fonction `ListAt` qui prend un pointeur sue la liste `l` et un `int pos` comme paramètres. Cette fonction devra afficher la `NodeL` à la position `pos` de la liste chaîné `l`.
+Écrire une fonction `ListAt` qui prend un pointeur sur la liste `l` et un `int pos` comme paramètres. Cette fonction devra afficher la `NodeL` à la position `pos` de la liste chaînée `l`.
 
 - En cas d'erreur la fonction affichera `nil`.
 
-### Fonction et structure attendue
+### Fonction et structure attendues
 
 ```go
 type NodeL struct {
