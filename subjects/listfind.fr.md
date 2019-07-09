@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Écrire une fonction `ListFind` qui retourne l'adresse de la première node dans la liste `l` qui est déterminé comme étant égale à `ref` par la fonction `CompStr`.
+Écrire une fonction `ListFind` qui retourne l'adresse de la première node dans la liste `l` qui est déterminée comme étant égale à `ref` par la fonction `CompStr`.
 
-- For this exercice the function `CompStr` must be used.
+- Pour cet exercice la fonction `CompStr` doit être utilisée.
 
 ### Fonction et structure attendues
 
