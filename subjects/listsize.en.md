@@ -6,8 +6,6 @@ Write a function `ListSize` that returns the number of elements in a linked list
 
 ### Expected function and structure
 
-1
-
 ```go
 type NodeL struct {
 	Data interface{}

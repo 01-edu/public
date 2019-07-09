@@ -2,9 +2,7 @@
 
 ### Instructions
 
-Write a function, `BTreeMax`, that returns the node with the maximum value in the tree given by root
-
-This function must have the following signature.
+Write a function, `BTreeMax`, that returns the node with the maximum value in the tree given by `root`.
 
 ### Expected function
 

@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that applies a function using a postorder walk to each element in the tree
+Write a function that applies a function using a postorder walk to each element in the tree.
 
 ### Expected function
 

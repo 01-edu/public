@@ -2,11 +2,9 @@
 
 ### Instructions
 
-Write a function, `BTreeApplyByLevel`, that applies the function given by fn to each node of the tree given by root.
+Écrire une fonction, `BTreeApplyByLevel`, qui applique la fonction donnée par `fn` à chacune des nodes de l'arbre donné par `root`.
 
-This function must have the following signature.
-
-### Expected function
+### Fonction attendue
 
 ```go
 func BTreeApplyByLevel(root *TreeNode, fn interface{})  {
@@ -14,9 +12,9 @@ func BTreeApplyByLevel(root *TreeNode, fn interface{})  {
 }
 ```
 
-### Usage
+### Utilisation
 
-Here is a possible [program](TODO-LINK) to test your function :
+Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
 ```go
 package main
@@ -35,7 +33,7 @@ func main() {
 }
 ```
 
-And its output :
+Et son résultat :
 
 ```console
 student@ubuntu:~/student/test$ go build
