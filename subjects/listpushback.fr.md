@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Écrire une fonction `ListPushBack` qui insére un nouvel élément `NodeL` a la fin de la liste `l` en utilisant la structure `List`.
+Écrire une fonction `ListPushBack` qui insère un nouvel élément `NodeL` à la fin de la liste `l` en utilisant la structure `List`.
 
 ### Fonction et structure attendues
 
