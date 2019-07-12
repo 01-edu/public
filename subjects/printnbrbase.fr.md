@@ -8,9 +8,9 @@ Si la base n'est pas valide, la fonction affiche `NV` (Not Valid):
 
 Régles de validité d'une base :
 
-- Une base doit contenir au moins 2 charactères.
+- Une base doit contenir au moins 2 caractères.
 - Chaque charactère d'une base doit être unique.
-- Une base ne doit pas contenir les charactères `+` ou `-`.
+- Une base ne doit pas contenir les caractères `+` ou `-`.
 
 La fonction doit gérer les nombres négatifs. (comme montré sur l'exemple)
 

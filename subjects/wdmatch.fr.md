@@ -1,14 +1,14 @@
-# wdmatch
+## wdmatch
 
-## Instructions
+### Instructions
 
-Write a program that takes two strings and checks whether it is possible to write the first string with characters from the second string, while respecting the order in which these characters appear in the second string.
+Écrire un programme qui prend deux `strings` et vérifie si il est possible d'écrire la première `string` avec des caractères de la deuxième `string`, tout en respectant l'ordre dans lequel ces caractères apparaissent dans la deuxième `string`.
 
-- If it is possible, the program displays the string followed by a `\n`, otherwise it simply displays a `\n`.
+- Si cela est possible, le programme affiche la `string` suivie par un newline(`'\n'`), autrement le programme affiche un newline.
 
-- If the number of arguments is not 2, the program displays `\n`.
+- Si le nombre d'arguments est différent de 2, le programme affiche un newline.
 
-Example of output :
+### Utilisation
 
 ```console
 student@ubuntu:~/piscine/test$ go build

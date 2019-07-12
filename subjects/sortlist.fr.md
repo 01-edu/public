@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that must:
+Écrire une fonction that must:
 
 - Sort the list given as a parameter, using the function cmp to select the order to apply,
 
@@ -16,7 +16,7 @@ The `type NodeList` must be used.
 
 Functions passed as `cmp` will always return `true` if `a` and `b` are in the right order, otherwise it will return `false`.
 
-### Expected function
+### Fonction attendue
 
 ```go
 type Nodelist struct {

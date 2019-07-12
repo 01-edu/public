@@ -8,7 +8,7 @@ characters that appear in either one of the `strings`.
 The display will be in the order characters appear in the command line, and
 will be followed by a newline(`'\n'`).
 
-If the number of arguments is not 2, the program displays newline(`'\n'`).
+If the number of arguments is different from 2, the program displays newline(`'\n'`).
 
 ### Usage
 

@@ -2,17 +2,16 @@
 
 ### Instructions
 
-Write a program that takes two strings representing two strictly positive
-integers that fit in an int.
+Write a program that takes two `strings` representing two strictly positive
+integers that fit in an `int`.
 
-Display their greatest common divisor followed by a newline (It is always a
-strictly positive integer).
+The program displays their greatest common divisor followed by a newline('`\n`').
 
-If the number of parameters is not 2, display a newline.
+If the number of parameters is different from 2, the program displays a newline.
 
-All arguments tested will be valid positive `int` values.
+All arguments tested will be positive `int` values.
 
-Example of output :
+### Usage
 
 ```console
 student@ubuntu:~/student/gcd$ go build

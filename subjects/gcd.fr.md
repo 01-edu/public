@@ -2,17 +2,15 @@
 
 ### Instructions
 
-Write a program that takes two strings representing two strictly positive
-integers that fit in an int.
+Écrire un programme qui prend deux `strings` qui représente deux entiers strictement positifs qui rentrent dans un `int`.
 
-Display their greatest common divisor followed by a newline (It is always a
-strictly positive integer).
+Display their greatest common divisor followed by a newline('`\n`').
 
-If the number of parameters is not 2, display a newline.
+Si le nombre de paramètres est différent de 2, le programme affiche un newline.
 
-All arguments tested will be valid positive `int` values.
+Tous les arguments testés seront des `int` positifs.
 
-Example of output :
+### Utilisation
 
 ```console
 student@ubuntu:~/student/gcd$ go build

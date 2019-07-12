@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a function `CreateElem` that creates a new element of type`Node`.
+Écrire une fonction `CreateElem` that creates a new element of type`Node`.
 
-### Expected function and structure
+### Fonction attendue and structure
 
 ```go
 type Node struct {

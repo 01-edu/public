@@ -4,7 +4,7 @@
 
 Write a function `rot14` that returns the `string` within the parameter transformed into a `rot14 string`.
 
-- For more information look what `rot13` stands for.
+- There is the need to know what `rot13` stands for.
 
 ### Expected function
 

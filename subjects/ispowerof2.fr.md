@@ -2,11 +2,11 @@
 
 ### Instructions
 
-Write a function that determines if a given number is a power of 2.
+Écrire une fonction qui détermine si un nombre donné est une puissance de 2.
 
-This function returns true if the given number is a power of 2, otherwise it returns false.
+Cette fonction retourne `true` si le nombre donné est une puissance de 2, autrement elle retourne `false`.
 
-## Expected function
+### Fonction attendue
 
 ```go
 func IsPowerOf2(n uint) bool {
