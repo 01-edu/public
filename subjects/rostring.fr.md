@@ -4,11 +4,11 @@
 
 Écrire un programme qui prend une `string` et affiche cette `string` après avoir déplacé un mot vers la gauche.
 
-Le premier mot deviens donc le dernier, et le reste des mots restent dans le même ordre.
+Le premier mot devient donc le dernier, et le reste des mots reste dans le même ordre.
 
 Un mot est une suite de caractères **alphanumériques.**
 
-Les mots devront être séparé par un seul espace dans l'output.
+Les mots devront être séparés par un seul espace dans l'output.
 
 Si le nombre d'arguments est différent de 1, le programme affiche un newline.
 
