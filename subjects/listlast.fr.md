@@ -2,15 +2,9 @@
 
 ### Instructions
 
-<<<<<<< HEAD
 Écrire une fonction `ListLast` qui retourne le dernier élément d'une liste chaînée `l`.
 
 ### Fonction et structure attendue
-=======
-Écrire une fonction `ListLast` that returns the last element of the linked list.
-
-### Fonction attendue and structure
->>>>>>> fin de la traduction papaaa
 
 ```go
 type Node struct {
