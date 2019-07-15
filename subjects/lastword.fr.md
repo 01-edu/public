@@ -6,9 +6,9 @@
 
 - Un mot est une section de `string` délimité par des espaces ou par le début/fin d'une `string`.
 
-- L'output sera suivi d'un newline(`'\n'`).
+- L'output sera suivi d'un newline (`'\n'`).
 
-- Si le nombre de paramètres est différent de 1, ou si il n'y a pas de mots, le programme affiche un newline(`'\n'`).
+- Si le nombre de paramètres est différent de 1, ou si il n'y a pas de mot, le programme affiche un newline(`'\n'`).
 
 ### Utilisation
 
