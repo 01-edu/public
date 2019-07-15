@@ -2,13 +2,13 @@
 
 ### Instructions
 
-Écrire un programme une ou plusieurs `strings` comme arguments et qui, **pour chaque arguments**:
+Écrire un programme avec une ou plusieurs `strings` comme arguments et qui, **pour chaque argument**:
 -place le dernier caractère de chaque mot (si c'est une lettre) en majuscule et le reste en minuscule.
--il affiche ensuite le résultat suivi d'un newline(`'\n'`).
+-affiche ensuite le résultat suivi d'un newline(`'\n'`).
 
 Un mot est une suite de caractères alphanumériques.
 
-Si il n'y a pas de paramètres, le programme affiche un newline.
+Si il n'y a pas de paramètre, le programme affiche un newline.
 
 ### Utilisation
 
