@@ -9,7 +9,7 @@ in lowercase
 
 A word is a sequence of alphanumerical characters.
 
-If there are no parameters, the program displays a newline.
+If there are no parameter, the program displays a newline.
 
 ### Usage
 
