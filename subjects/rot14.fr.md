@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Écrire une fonction `rot14` qui retournes la `string` en paramètre transformée en `string rot14`.
+Écrire une fonction `rot14` qui retourne la `string` en paramètre transformée en `string rot14`.
 
 - Il faut savoir ce que `rot13` signifie.
 
