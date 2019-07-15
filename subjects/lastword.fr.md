@@ -4,7 +4,7 @@
 
 Écrire un programme qui prend une `string` et qui affiche son dernier mot, suivi d'un newline(`'\n'`).
 
-- Un mot est une section de `string` délimité par des espaces ou par le début/fin d'une `string`.
+- Un mot est une section de `string` délimitée par des espaces ou par le début/fin d'une `string`.
 
 - L'output sera suivi d'un newline(`'\n'`).
 
