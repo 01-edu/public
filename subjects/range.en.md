@@ -6,7 +6,7 @@ Write the function `Range` which must:
 
 - allocate (with make()) an array of integers.
 - fill it with consecutive values that begin at `start` and end at `end` (Including `start` and `end` !)
-- and that return that array.
+- and that returns that array.
 
 ### Expected function
 
