@@ -6,7 +6,7 @@
 
 Le résultat doit être suivi d'un newline(`'\n'`).
 
-`'a'` deviens `'a'`, `'b'` deviens `'bb'`, `'e'` deviens `'eeeee'`, etc...
+`'a'` devient `'a'`, `'b'` devient `'bb'`, `'e'` devient `'eeeee'`, etc...
 
 Si une lettre est en majuscule, elle reste en majuscule, de même si elle est en minuscule.
 
