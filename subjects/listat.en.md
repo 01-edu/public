@@ -1,10 +1,10 @@
-## listpushback
+## listat
 
 ### Instructions
 
-Write a function `ListAt` that takes one pointer to the list, `l`, and an `int` as parameters. This function should print a `NodeL` in the position `pos` in the linked list.
+Write a function `ListAt` that takes a pointer to the list `l` and an `int pos` as parameters. This function should print the `NodeL` in the position `pos` of the linked list `l`.
 
-- In case of error it should print `nil`
+- In case of error the fonction should print `nil`.
 
 ### Expected function and structure
 

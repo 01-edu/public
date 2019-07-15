@@ -1,8 +1,8 @@
-## listpushback
+## listlast
 
 ### Instructions
 
-Write a function `ListLast` that returns the last element of the linked list.
+Write a function `ListLast` that returns the last element of a linked list `l`.
 
 ### Expected function and structure
 

@@ -2,11 +2,11 @@
 
 ### Instructions
 
-Write a function, `BTreeDeleteNode`, that deletes `node` from the tree given by root.
+Écrire une fonction, `BTreeDeleteNode`, qui efface `node` d'un arbre donné par `root`.
 
-The resulting tree should still follow the binary search tree rules.
+L'arbre en résultant devra toujours suivre les règles des arbres de recherche binaires.
 
-### Expected function
+### Fonction attendue
 
 ```go
 func BTreeDeleteNode(root, node *TreeNode) *TreeNode {
@@ -15,9 +15,9 @@ func BTreeDeleteNode(root, node *TreeNode) *TreeNode {
 
 ```
 
-### Usage
+### Utilisation
 
-Here is a possible [program](TODO-LINK) to test your function :
+Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
 ```go
 package main
@@ -41,7 +41,7 @@ func main() {
 }
 ```
 
-And its output :
+Et son résultat :
 
 ```console
 student@ubuntu:~/student/test$ go build

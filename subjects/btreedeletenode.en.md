@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function, `BTreeDeleteNode`, that deletes `node` from the tree given by root.
+Write a function, `BTreeDeleteNode`, that deletes `node` from the tree given by `root`.
 
 The resulting tree should still follow the binary search tree rules.
 

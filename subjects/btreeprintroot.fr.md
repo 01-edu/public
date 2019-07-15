@@ -1,12 +1,11 @@
-## printroot
+## btreeprintroot
 
 ### Instructions
 
-Write a function to print the value of the root node of a binary tree.
-You have to create a new number and print the value of data
-The nodes must be defined as follows:
+Écrire une fonction qui affiche la valeur de node `root` d'un arbre binaire.
+Les nodes doivent être définies comme ci-dessous:
 
-### Expected function
+### Fonction attendue
 
 ```go
 type TreeNode struct {
@@ -19,9 +18,9 @@ func PrintRoot(root *TreeNode){
 }
 ```
 
-### Usage
+### Utilisation
 
-Here is a possible [program](TODO-LINK) to test your function :
+Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
 ```go
 package main
@@ -36,7 +35,7 @@ func main() {
 }
 ```
 
-And its output :
+Et son résultat :
 
 ```console
 student@ubuntu:~/piscine/printroot$ go build

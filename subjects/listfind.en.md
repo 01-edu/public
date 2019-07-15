@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a function `ListFind` that returns the address of the first node in the list that is determined to be equal to `ref` by the functions `CompStr`.
+Write a function `ListFind` that returns the address of the first node in the list `l` that is determined to be equal to `ref` by the function `CompStr`.
 
-- For this you shoud use the function `CompStr`.
+- For this exercise the function `CompStr` must be used.
 
 ### Expected function and structure
 
@@ -64,6 +64,7 @@ student@ubuntu:~/piscine/test$ ./test
 hello2
 student@ubuntu:~/piscine/test$
 ```
+
 ### Note
 
 - The address may be different in each execution of the program.

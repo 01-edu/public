@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that searches for an item with a data element equal to elem and return that node
+Write a function that searches for a node with a data element equal to `elem`and that returns that node.
 
 ### Expected function
 

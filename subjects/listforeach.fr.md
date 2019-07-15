@@ -1,13 +1,45 @@
-## countif
+## listforeach
 
 ### Instructions
 
-Écrire une fonction `CountIf` qui retournes le nombre d'éléments d'un tableau de `string` pour lesquels la fonction `f` retourne `true`.
+Écrire une fonction `ListForEach` qui applique un fonction donnée en argument à la data contenue dans chacune des nodes d'une liste `l`.
 
-### Fonction attendue
+- La fonction donnée en argument doit avoir un pointeur comme argument: `l *List`
+
+- Copier les fonctions `Add2_node` et `Subtract3_node` dans le même fichier où la fonction `ListForEach` est définie.
+
+### Fonction et struture attendues
 
 ```go
-func CountIf(f func(string) bool, tab []string) int {
+type NodeL struct {
+	Data interface{}
+	Next *NodeL
+}
+
+type List struct {
+	Head *NodeL
+	Tail *NodeL
+}
+
+func ListForEach(l *List, f func(*NodeL)) {
+}
+
+func Add2_node(node *NodeL) {
+	switch node.Data.(type) {
+	case int:
+		node.Data = node.Data.(int) + 2
+	case string:
+		node.Data = node.Data.(string) + "2"
+	}
+}
+
+func Subtract3_node(node *NodeL) {
+	switch node.Data.(type) {
+	case int:
+		node.Data = node.Data.(int) - 3
+	case string:
+		node.Data = node.Data.(string) + "-3"
+	}
 }
 ```
 
@@ -24,12 +56,20 @@ import (
 )
 
 func main() {
-	tab1 := []string{"Hello", "how", "are", "you"}
-	tab2 := []string{"This","1", "is", "4", "you"}
-	answer1 := piscine.CountIf(piscine.IsNumeric, tab1)
-	answer2 := piscine.CountIf(piscine.IsNumeric, tab2)
-	fmt.Println(answer1)
-	fmt.Println(answer2)
+	link := &piscine.List{}
+
+	piscine.ListPushBack(link, "1")
+	piscine.ListPushBack(link, "2")
+	piscine.ListPushBack(link, "3")
+	piscine.ListPushBack(link, "5")
+
+	piscine.ListForEach(link, piscine.Add2)
+
+	it := link.Head
+	for it != nil {
+		fmt.Println(it.Data)
+		it = it.Next
+	}
 }
 ```
 
@@ -38,7 +78,9 @@ Et son résultat :
 ```console
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test
-0
-2
+12
+22
+32
+52
 student@ubuntu:~/piscine/test$
 ```

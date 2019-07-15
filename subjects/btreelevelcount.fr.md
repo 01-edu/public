@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a function, BTreeLevelCount, that return the number of levels of the tree (height of the tree)
+Écrire une fonction, `BTreeLevelCount`, qui retourne le nombre de niveaux de l'arbre binaire. (la hauteur de l'arbre)
 
-### Expected function
+### Fonction attendue
 
 ```go
 func BTreeLevelCount(root *TreeNode) int {
@@ -12,9 +12,9 @@ func BTreeLevelCount(root *TreeNode) int {
 }
 ```
 
-### Usage
+### Utilisation
 
-Here is a possible [program](TODO-LINK) to test your function :
+Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
 ```go
 package main
@@ -34,7 +34,7 @@ func main() {
 }
 ```
 
-And its output :
+Et son résultat :
 
 ```console
 student@ubuntu:~/student/test$ go build

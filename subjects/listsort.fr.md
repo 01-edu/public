@@ -1,16 +1,12 @@
-## listpushback
+## listsort
 
 ### Instructions
 
-Write a function `ListSort` that sorts the linked list by ascending order.
+Écrire une fonction `ListSort` qui trie les nodes d'une liste chaînée par ordre croissant.
 
-- This time you only will have the `node` structure.
+- La structure `NodeI` sera la seule utilisée.
 
-- Try to use recursive.
-
-- Use pointers when ever you can.
-
-### Expected function and structure
+### Fonction et structure attendues
 
 ```go
 type NodeI struct {
@@ -23,9 +19,9 @@ func ListSort(l *NodeI) *NodeI {
 }
 ```
 
-### Usage
+### Utilisation
 
-Here is a possible [program](TODO-LINK) to test your function :
+Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
 ```go
 package main
@@ -37,13 +33,12 @@ import (
 )
 
 func PrintList(l *piscine.NodeI) {
-	m := l
-	for m != nil {
-		fmt.Print(m.Data, " -> ")
-		m = m.Next
+	it := l
+	for it != nil {
+		fmt.Print(it.Data, " -> ")
+		it = it.Next
 	}
-	fmt.Print(nil)
-	fmt.Println()
+	fmt.Print(nil, "\n")
 }
 
 func listPushBack(l *piscine.NodeI, data int) *piscine.NodeI {
@@ -73,7 +68,7 @@ func main() {
 }
 ```
 
-And its output :
+Et son résultat :
 
 ```console
 student@ubuntu:~/piscine/test$ go build
