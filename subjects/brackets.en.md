@@ -7,13 +7,13 @@ argument, if the expression is correctly bracketed, the program prints on the st
 a newline.
 
 Symbols considered as `brackets` are parentheses `(` and `)`, square brackets `[`
-and `]`and curly braces `{` and `}`. Every other symbols are simply ignored.
+and `]` and curly braces `{` and `}`. Every other symbols are simply ignored.
 
 An opening bracket must always be closed by the good closing bracket in the
-correct order. A `string` which do not contains any bracket is considered as a
+correct order. A `string` which does not contain any bracket is considered as a
 correctly bracketed `string`.
 
-If there is no arguments, the program must print only a newline.
+If there is no argument, the program must print only a newline.
 
 ### Usage
 
