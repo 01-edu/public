@@ -4,7 +4,7 @@
 
 Write a function that:
 
-- converts an `int` value to a `string` using the specified base in the argument.
+- converts an `int` value to a `string` using the specified base in the argument
 - and that returns this `string`
 
 The base is expressed as an `int`, from 2 to 16. The characters comprising
