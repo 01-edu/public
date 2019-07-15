@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Écrire un programme qui prend un `int` positif et qui affiche ses facteurs premiers sur la sortie standard and displays its prime factors, suivi d'un newline(`'\n'`).
+Écrire un programme qui prend un `int` positif et qui affiche ses facteurs premiers sur la sortie standard, suivi d'un newline(`'\n'`).
 
-- Les facteurs doivent être affichés en ordre croissant et séparé par `*`.
+- Les facteurs doivent être affichés en ordre croissant et séparés par `*`.
 
 - Si le nombre de paramètres est différent de 1, le programme affiche un newline.
 
