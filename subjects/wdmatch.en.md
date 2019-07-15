@@ -6,7 +6,7 @@ Write a program that takes two `strings` and checks whether it is possible to wr
 
 - If it is possible, the program displays the `string` followed by a newline(`'\n'`), otherwise it simply displays a newline.
 
-- If the number of arguments is different from 2, the program displays newline.
+- If the number of arguments is different from 2, the program displays a newline.
 
 ### Usage
 
