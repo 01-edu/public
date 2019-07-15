@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Écrire un programme qui prend deux `strings` qui représente deux entiers strictement positifs qui rentrent dans un `int`.
+Écrire un programme qui prend deux `strings` représentant deux entiers strictement positifs qui rentrent dans un `int`.
 
-Display their greatest common divisor followed by a newline('`\n`').
+Afficher leur plus grand diviseur commun suivi d'un newline('`\n`').
 
 Si le nombre de paramètres est différent de 2, le programme affiche un newline.
 
