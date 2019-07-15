@@ -4,7 +4,7 @@
 
 Écrire un programme qui affiche le nombre d'arguments passés à ce programme. Ce nombre sera suivi d'un newline(`'\n'`).
 
-Si il n'y a pas d'arguments, le programme affiche un `0` suivi d'un newline.
+Si il n'y a pas d'argument, le programme affiche `0` suivi d'un newline.
 
 ### Utilisation
 
