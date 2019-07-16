@@ -2,11 +2,11 @@
 
 ### Instructions
 
-Write a program that displays a number's multiplication table.
+Écrire un programme qui affiche la table de multiplication d'un nombre.
 
-- The parameter will always be a strictly positive number that fits in an int, and said number times 9 will also fit in an int.
+- Le paramètre sera toujours un nombre strictement positif qui rentre dans un `int`. Ce paramètre multiplié par 9 rentrera aussi dans un `int`.
 
-Examples of outputs :
+### Utilisation
 
 ```console
 student@ubuntu:~/piscine/test$ go build

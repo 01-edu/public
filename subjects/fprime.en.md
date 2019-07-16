@@ -2,15 +2,15 @@
 
 ### Instructions
 
-Write a program that takes a positive `int` and displays its prime factors on the standard output, followed by a newline.
+Write a program that takes a positive `int` and displays its prime factors, followed by a newline(`'\n'`).
 
-- Factors must be displayed in ascending order and separated by `*`, so that the expression in the output gives the right result.
+- Factors must be displayed in ascending order and separated by `*`.
 
-- If the number of parameters is not 1, the program displays a newline.
+- If the number of parameters is different from 1, the program displays a newline.
 
 - The input, when there is one, will always be valid.
 
-Example of output :
+### Usage
 
 ```console
 student@ubuntu:~/piscine/test$ go build

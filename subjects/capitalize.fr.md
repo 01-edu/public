@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Écrire une fonction qui met en majuscule la premiere lettre de chaque mot et en minuscule les autres lettres du reste du mot d'une `string`.
+Écrire une fonction qui met en majuscule la première lettre de chaque mot et en minuscule les autres lettres du reste du mot d'une `string`.
 
 Un mot est une suite de caractères **alphanumériques**.
 

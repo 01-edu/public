@@ -2,11 +2,11 @@
 
 ### Instructions
 
-Write a program that takes a positive integer as argument and displays the sum of all prime numbers inferior or equal to it followed by a newline.
+Écrire un programme qui prend un entier positif comme argument et qui affiche la somme de tous les nombres premiers inférieurs ou égaux à celui-ci, suivie d'un newline(`'\n`').
 
-- If the number of arguments is not 1, or if the argument is not a positive number, the program displays 0 followed by a newline.
+- Si le nombre d'arguments est différent de 1, ou si l'argument n'est pas un nombre positif, le programme affiche `0` suivi d'un newline.
 
-Examples of outputs :
+### Utilisation
 
 ```console
 student@ubuntu:~/piscine/test$ go build

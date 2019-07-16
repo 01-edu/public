@@ -14,11 +14,11 @@ In case of an invalid operator the programs prints `0`.
 
 In case of an invalid number of arguments the program prints nothing.
 
-The program has to handle the modulo and division operations by 0 as shown on the output examples below. 
+The program has to handle the modulo and division operations by 0 as shown on the output examples below.
 
 `fmt.Print` is authorized.
 
-Examples of outputs :
+### Usage
 
 ```console
 student@ubuntu:~/piscine/test$ go build doop.go

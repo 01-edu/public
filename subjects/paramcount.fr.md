@@ -2,12 +2,11 @@
 
 ### Instructions
 
-Write a program that displays the number of arguments passed to it. This number will be followed by
-a newline.
+Écrire un programme qui affiche le nombre d'arguments passés à ce programme. Ce nombre sera suivi d'un newline(`'\n'`).
 
-If there are no arguments, just display a 0 followed by a newline.
+Si il n'y a pas d'argument, le programme affiche `0` suivi d'un newline.
 
-Examples of outputs :
+### Utilisation
 
 ```console
 student@ubuntu:~/student/paramcount$ go build

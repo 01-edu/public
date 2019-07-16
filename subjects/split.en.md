@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a function that seperates the words of a `string` and puts them in a `string` array.
+Write a function that separates the words of a `string` and puts them in a `string` array.
 
-The separators are the characters of the charset `string` given in parameter.
+The separators are the characters of the `charset string` given in parameter.
 
 ### Expected function
 

@@ -2,20 +2,18 @@
 
 ### Instructions
 
-Write a function that:
+Écrire une fonction qui:
 
-- converts an integer value to a string using the specified base in the argument
-- and then returns this string
+- convertit une valeur `int` en `string` en utilisant la base spécifiée en argument
+- et qui retourne cette `string`
 
-The base is expressed as an integer, from 2 to 16. The characters comprising
-the base are the digits from 0 to 9, followed by uppercase letters from A to F.
+Cette base est exprimée comme un `int`, de 2 à 16. Les caractères compris dans la base sont les chiffres de 0 à 9, suivis des lettres majuscules de A à F.
 
-For example, the base `4` would be the equivalent of "0123" and the base `16` would be the equivalent of "0123456789ABCDEF".
+Par exemple, la base `4` sera équivalente à "0123" et la base `16` sera équivalente à "0123456789ABCDEF".
 
-If the value is negative, the resulting string has to be preceded with a
-minus sign `-`.
+Si la valeur est négative, la `string` résultante doit être précédée d'un signe moins `-`.
 
-### Expected function
+### Fonction attendue
 
 ```go
 func ItoaBase(value, base int) string {

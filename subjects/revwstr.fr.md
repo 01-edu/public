@@ -2,15 +2,15 @@
 
 ### Instructions
 
-Write a program that takes a string as a parameter, and prints its words in reverse.
+Écrire un programme qui prend une `string` comme paramètre, et affiche ses mots en sens inverse.
 
-- A word is a sequence of **alphanumerical** characters.
+- Un mot est une suite de caractères **alphanumériques.**
 
-- If the number of parameters is different from 1, the program will display `\n`.
+- Si le nombre de paramètres est différent de 1, le programme affiche un newline(`'\n'`).
 
-- In the parameters that are going to be tested, there will not be any additional spaces. (meaning that there will not be additionnal spaces at the beginning or at the end of the string, and words will always be separated by exactly one space).
+- Dans les paramètres qui seront testés, il n'y aura pas d'espaces extra. (ce qui signifie qu'il n'y aura pas d'espaces additionnels, ni au début, ni à la fin de la `string` et que les mots seront toujours séparés par un seul espace).
 
-Examples of outputs :
+### Utilisation
 
 ```console
 student@ubuntu:~/piscine/test$ go build

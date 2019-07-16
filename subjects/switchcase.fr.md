@@ -8,7 +8,7 @@
 
 - Le résultat doit être suivi d'un newline(`'\n'`).
 
-- Si le nombre d'arguments n'est pas 1, le programme affiche program un newline(`'\n'`).
+- Si le nombre d'arguments est différent de 1, le programme affiche un newline(`'\n'`).
 
 ### Utilisation
 

@@ -2,13 +2,13 @@
 
 ### Instructions
 
-Write the function Range which must:
+Écrire la fonction `Range` qui doit:
 
-- allocate (with make()) an array of integers.
-- fill it with consecutive values that begin at `start` and end at `end` (Including `start` and `end` !)
-- finally return that array.
+- allouer (avec make()) une slice d'entiers.
+- le remplir avec des valeurs consécutives qui commencent à `start` et qui finissent à `end` (En incluant `start` et `end` !)
+- et qui retourne cette slice.
 
-### Expected function
+### Fonction attendue
 
 ```go
 func Range(start, end int) []int {
@@ -16,9 +16,9 @@ func Range(start, end int) []int {
 }
 ```
 
-Examples of outputs :
+### Utilisation
 
-- With (1, 3) you will return an array containing 1, 2 and 3.
-- With (-1, 2) you will return an array containing -1, 0, 1 and 2.
-- With (0, 0) you will return an array containing 0.
-- With (0, -3) you will return an array containing 0, -1, -2 and -3.
+- Avec (1, 3) la fonction devra retourner une slice contenant 1, 2 et 3.
+- Avec (-1, 2) la fonction devra retourner une slice contenant -1, 0, 1 et 2.
+- Avec (0, 0) la fonction devra retourner une slice contenant 0.
+- Avec (0, -3) la fonction devra retourner une slice contenant 0, -1, -2 et -3.

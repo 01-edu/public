@@ -2,16 +2,16 @@
 
 ### Instructions
 
-Write a program that takes one or more strings and that, **for each argument**:
+Write a program that takes one or more `strings` as arguments and that, **for each argument**:
 -puts the last character of each word (if it is a letter) in uppercase and the rest
 in lowercase
--then it displays the result followed by a `\n`.
+-then it displays the result followed by a newline(`'\n'`).
 
 A word is a sequence of alphanumerical characters.
 
-If there are no parameters, the program displays a `\n`.
+If there are no parameter, the program displays a newline.
 
-Examples of outputs :
+### Usage
 
 ```console
 student@ubuntu:~/student/reversestrcap$ go build

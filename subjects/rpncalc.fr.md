@@ -2,31 +2,26 @@
 
 ### Instructions
 
-Write a program that takes a string which contains an equation written in
-Reverse Polish notation (RPN) as its first argument, evaluates the equation, and
-prints the result on the standard output followed by a newline.
+Écrire un programme qui prend une `string` qui contient une équation écrite en `Reverse Polish Notation` (RPN) comme premier argument, qui évalue l'équation, et qui affiche le résultat sur la sortie standard suivi d'un newline(`'\n'`).
 
-Reverse Polish Notation is a mathematical notation in which every operator
-follows all of its operands. In RPN, every operator encountered evaluates the
-previous 2 operands, and the result of this operation then becomes the first of
-the two operands for the subsequent operator. Operands and operators must be
-spaced by at least one space.
+La `Reverse Polish Notation` est une notation mathématique dans laquelle chaque opérateur devance les valeurs qu'il va opérer.
+En RPN, chaque opérateur évalue les deux précédentes valeurs, et le résultat de cette opération devient ensuite la première des valeurs de l'opérateur. Les valeurs et les opérateurs doivent être espacés d'au moins un espace.
 
-The following operators must be implemented : `+`, `-`, `*`, `/`, and `%`.
+Les opérateurs suivants doivent être implémentés : `+`, `-`, `*`, `/`, et `%`.
 
-If the string is not valid or if there is not exactly one argument, `Error` must be printed
-on the standard output followed by a newline.
-If the string has extra spaces it is still valid.
+Si la `string` n'est pas valide ou si il n'y pas exactement un argument, le mot `Error` doit être affiché
+sur la sortie standard suivi d'un newline.
+Si la `string` a des espaces extra elle est toujours considérée valide.
 
-All the given operands must fit in a `int`.
+Toutes les valeurs données doivent rentrer dans un `int`.
 
-Examples of formulas converted in RPN:
+Exemples de formules converties en RPN:
 
-3 + 4                   >>    3 4 +
-((1 * 2) * 3) - 4       >>    1 2 * 3 * 4 -  ou  3 1 2 * * 4 -
-50 * (5 - (10 / 9))     >>    5 10 9 / - 50 *
+3 + 4 >> 3 4 +
+((1 _ 2) _ 3) - 4 >> 1 2 _ 3 _ 4 - ou 3 1 2 \* _ 4 -
+50 _ (5 - (10 / 9)) >> 5 10 9 / - 50 \*
 
-Here is how to evaluate a formula in RPN:
+Voici comment évaluer une formule en RPN:
 
 ```
 1 2 * 3 * 4 -
@@ -34,7 +29,8 @@ Here is how to evaluate a formula in RPN:
 6 4 -
 2
 ```
-Or:
+
+ou:
 
 ```
 3 1 2 * * 4 -
@@ -42,7 +38,8 @@ Or:
 6 4 -
 2
 ```
-Examples of outputs :
+
+### Utilisation
 
 ```console
 student@ubuntu:~/student/rpncalc$ go build

@@ -2,9 +2,9 @@
 
 ### Instructions
 
-- Écrire une fonction qui reproduit le comportement de la fonction atoi en Go. Atoi transforme un nombre représenté en `string` (chaîne de caractères) en `int` (entier).
+- Écrire une fonction qui reproduit le comportement de la fonction `Atoi` en Go. `Atoi` transforme un nombre représenté en `string` (chaîne de caractères) en `int` (entier).
 
-- Atoi retourne `0` si la `string` n'est pas considéré un nombre valide. Pour cet exercice des **`string` non valides seront testées!**. Certaines contiendront d'autres charactères que des chiffres.
+- `Atoi` retourne `0` si la `string` n'est pas considéré un nombre valide. Pour cet exercice des **`string` non valides seront testées!**. Certaines contiendront d'autres caractères que des chiffres.
 
 - Pour cet exercice la gestion des signes + ou - **doit être** prise en compte.
 

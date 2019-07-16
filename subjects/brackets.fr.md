@@ -2,23 +2,17 @@
 
 ### Instructions
 
-Write a program that takes an undefined number of strings in arguments. For each
-argument, the program prints on the standard output "OK" followed by a newline
-if the expression is correctly bracketed, otherwise it prints "Error" followed by
-a newline.
+Écrire un programme qui prend un nombre indéfini de `strings` en arguments. Pour chaque
+argument, si l'expression est correctement "entre parenthèses" (bracketed), le programme affiche sur la sortie standard `OK` suivi d'un newline(`'\n'`), autrement il affiche `Error` suivi d'un newline.
 
+Les symboles considérés comme des `parenthèses` sont les parenthèses `(` et `)`, les crochets `[`
+et `]` et les accolades `{` et `}`. Tout autre symbole est simplement ignoré.
 
-Symbols considered as `brackets` are brackets `(` and `)`, square brackets `[`
-and `]`and braces `{` and `}`. Every other symbols are simply ignored.
+Une parenthèse ouvrante doit toujours être fermée par la parenthèse correspondante dans l'ordre correct. Une `string` qui ne contient aucune parenthèse est considérée comme une `string` correctement "entre parenthèses".
 
-An opening bracket must always be closed by the good closing bracket in the
-correct order. A string which do not contains any bracket is considered as a
-correctly bracketed string.
+Si il n'y a pas d'argument, le programme affiche seulement un newline.
 
-If there is no arguments, the program must print only a newline.
-
-
-Examples of outputs :
+### Utilisation
 
 ```console
 student@ubuntu:~/student/brackets$ go build

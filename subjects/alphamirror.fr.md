@@ -11,7 +11,7 @@ Les majuscules restent des majuscules, de même pour le minuscules, par exemple 
 
 Le résultat final sera suivi d'un newline(`'\n'`).
 
-Si le nombre d'arguments n'est pas 1, le programme affiche seulement un newline(`'\n'`).
+Si le nombre d'arguments est différent de 1, le programme affiche seulement un newline(`'\n'`).
 
 ### Utilisation
 

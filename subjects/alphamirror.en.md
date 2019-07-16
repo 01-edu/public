@@ -13,7 +13,7 @@ The case of the letter stays the same, for example :
 
 The final result will be followed by a newline(`'\n'`).
 
-If the number of arguments is not 1, the program displays only a newline(`'\n'`).
+If the number of arguments is different from 1, the program displays only a newline(`'\n'`).
 
 ### Usage
 

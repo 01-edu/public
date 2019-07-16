@@ -9,7 +9,7 @@ letters by the letter 13 spaces ahead in alphabetical order.
 
 - The output will be followed by a newline(`'\n'`).
 
-- If the number of arguments is not 1, the program displays a newline(`'\n'`).
+- If the number of arguments is different from 1, the program displays a newline(`'\n'`).
 
 ### Usage
 

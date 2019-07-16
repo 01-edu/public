@@ -11,7 +11,7 @@ The result must be followed by a newline(`'\n'`).
 
 The case remains unchanged.
 
-If the number of arguments is not 1, the program displays a newline(`'\n'`).
+If the number of arguments is different from 1, the program displays a newline(`'\n'`).
 
 ### Usage
 

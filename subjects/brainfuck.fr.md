@@ -2,26 +2,26 @@
 
 ### Instructions
 
-Write a Brainfuck interpreter program.
-The source code will be given as first parameter.
-The code will always be valid, with no more than 4096 operations.
-Brainfuck is a minimalist language. It consists of an array of bytes
-(in our case, let's say 2048 bytes) initialized to zero,
-and a pointer to its first byte.
+Écrire un program interpréteur du `Brainfuck`.
+Le code source sera donné en premier paramètre.
+Le code sera toujours valide, avec moins de 4096 operations.
+Le `Brainfuck` est un langage minimaliste. Il consiste en un slice de bytes (octet)
+(dans cet exercise 2048 bytes) tous initialisés à zéro,
+et avec un pointeur sur le premier byte.
 
-Every operator consists of a single character :
+Chaque opérateur consiste en un seul caractère :
 
-- '>' increment the pointer ;
-- '<' decrement the pointer ;
-- '+' increment the pointed byte ;
-- '-' decrement the pointed byte ;
-- '.' print the pointed byte on standard output ;
-- '[' go to the matching ']' if the pointed byte is 0 (while start) ;
-- ']' go to the matching '[' if the pointed byte is not 0 (while end).
+- '>' incrémente le pointeur ;
+- '<' décrémente le pointeur ;
+- '+' incrémente le byte pointé ;
+- '-' décrémente le byte pointé ;
+- '.' affiche le byte pointé sur la sortie standard ;
+- '[' se rend à son ']' correspondant si le byte pointé est 0 (début de la boucle) ;
+- ']' se rend à son '[' correspondant si le byte pointé n'est pas 0 (fin de la boucle).
 
-Any other character is a comment.
+Tout autre caractère est un commentaire.
 
-Examples of outputs :
+### Utilisation
 
 ```console
 student@ubuntu:~/student/brainfuck$ go build
