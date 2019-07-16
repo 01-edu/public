@@ -2,11 +2,11 @@
 
 ### Instructions
 
-Écrire un programme that creates a new linked list and includes each command-line argument in to the list.
+Écrire un programme qui crée une nouvelle liste chainée et inclut chaque argument en ligne de commande dans la liste.
 
-- The first argument should be at the end of the list
+- Le premier argument devra être à la fin de la liste.
 
-And its output :
+Et son résultat :
 
 ```console
 student@ubuntu:~/piscine/test$ go build
