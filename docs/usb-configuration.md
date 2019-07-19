@@ -32,6 +32,7 @@ Follow the steps :
 ![img6](img/usb/6.png)
 
 > Choose F2FS
+
 ![img7](img/usb/7.png)
 
 > Format created partition
