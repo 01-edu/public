@@ -7,7 +7,7 @@ Requirements :
 
 Follow the steps :
 
-> Run the program disks
+> Execute the "disks" program
 
 ![img1](img/usb/1.png)
 
