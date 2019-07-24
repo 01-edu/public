@@ -202,6 +202,10 @@ The newly created child can be customized with these attributes :
      * A **required** key of type `Boolean`, set at true if the user has to check it
      * A **name** key of type `String`
      * All other attributes wanted for the checkbox.
+   * Add a new key **link** of type `Object`, if a link must be added to the step (ex: download of a .pdf version of the document to sign). In the link object, the following attributes should be defined:
+     * A **href** key of type `String`, with the link you want to add to the step
+     * A **label** key of type `String`, for the text displayed for the link (by default, '> Link to the document' is displayed)
+     * All other attributes wanted for the link.
 
 ### Examples
 
@@ -216,11 +220,19 @@ Here is an example of the structure a 'document to sign' step could have:
     "name":"acceptChart",
     "label":"I have read and accepted the Chart 01",
     "required":true
+  },
+  "link": {
+    "label":"Download Chart 01",
+    "href":"https://help.github.com/en/articles/creating-an-issue",
+    "download":true,
+    "target":"_blank"
   }
 }
 ```
 
+NB : ```target``` & ```download``` are forwarded to the a html element as they are valid html properties
+
 This 'document to sign' step would look like this:
 
-![document to sign step example](https://user-images.githubusercontent.com/35296671/56504782-8f079900-6511-11e9-9a0e-bb638b6d7d03.png)
+![document to sign step example](https://user-images.githubusercontent.com/35296671/61788887-29c28d00-ae0b-11e9-872c-71a7d1ddbe09.png)
 
