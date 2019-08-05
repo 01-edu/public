@@ -38,6 +38,7 @@ apt-get -y autoremove --purge
 . fx.sh
 . sublime.sh
 . vscode.sh
+. libreoffice.sh
 
 # Install additional packages
 PKGS="
