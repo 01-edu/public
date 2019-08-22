@@ -7,11 +7,11 @@
 
 > Event management require:
 >   * Edition of the attributes of the object on which the event is based
->   * Creation and settings of the event associated to the initial object
+>   * Creation and settings of the event associated to the reference object
 
 > Events are used for: `piscines`, `check-in`, `exams`, `rushes`, `hackatons`, `conferences`.
 
-## Settings for the initial object
+## Settings for the reference object
 
 > Important indications:
 >   * Objects that doesn't have required attributes for event creation will not be open to event creation. 
@@ -24,8 +24,8 @@
 > | description          | optionnal    |
 > | eventStartDelay      | optionnal    |
 
->   * All the attributes filled in the object are used as values by default for event's creation; it can be overloaded for each event related to the initial object.
->   * If the initial object has a child or children which are events itself, settings are also required for each event child.
+>   * All the attributes filled in the object are used as values by default for event's creation; it can be overloaded for each event related to the reference object.
+>   * If the reference object has a child or children which are events itself, settings are also required for each event child.
 
 #### Edit the object attributes:
 > in *Object attributes*
