@@ -13,6 +13,7 @@
 
 > Important indications:
 >   * Objects that doesn't have required attributes for event creation will not be open to event creation. 
+
 > | name                 | fullfillment |
 > | -------------------- | ---------    |
 > | capacity             | **required** |
@@ -20,6 +21,7 @@
 > | registrationDuration | **required** |
 > | description          | optionnal    |
 > | eventStartDelay      | optionnal    |
+
 >   * All the attributes filled in the object are used as values by default for event's creation; it can be overloaded for each event related to the initial object.
 >   * If the initial object has a child or children which are events itself, settings are also required for each event child.
 
@@ -43,11 +45,12 @@
 
 ##### Example
 
-Here is an example of the `piscine-go` settings. It presents the settings of the object attributes `piscine-go`, the settings of one of its child which is an event and the settings of the child object attributes itself. 
+Here is an example of the `Piscine Go` settings. It presents the settings of the object attributes `Piscine Go`, the settings of one of its child which is an event and the settings of the child object attributes itself. 
 
 > NB : this object settings are provided in the admin, in the curses section: 'Piscine Go' and in the exams section 'Exam 01'.
 
 **Piscine Go**
+
 *Object attributes*
 ```json
 {
@@ -58,16 +61,24 @@ Here is an example of the `piscine-go` settings. It presents the settings of the
 }
 ```
 
-*Children*
-> In the `piscine-go`, children of type *exam* and *rush* have events itself. 
+This piscine object attributes look like this:
 
-> A **startAfter** key has to be defined for each of them, in their parent object `piscine-go`. For example, the exam-01 gets this key:
+![piscine object attributes](https://user-images.githubusercontent.com/35296671/63526946-239dfa00-c4f8-11e9-8272-270c578f3fb8.png)
+
+*Children*
+> In the `Piscine Go`, children of type *exam* and *rush* have events itself. 
+
+> A **startAfter** key has to be defined for each of them, in their parent object `Piscine Go`. For example, the exam-01 gets this key:
 
 ```json
 {
   "startAfter": 400
 }
 ```
+
+This child attributes look like this:
+
+![piscine children attributes](https://user-images.githubusercontent.com/35296671/63525543-c86b0800-c4f5-11e9-8820-60d9ff33994f.png)
 
 **Exam 01**
 > The object `Exam 01`, which is a child of `Piscine Go`, has its own *Object Attributes* filled in the child object.
@@ -80,7 +91,11 @@ Here is an example of the `piscine-go` settings. It presents the settings of the
   "eventStartDelay": 60
 }
 ```
-> NB: the **capacity** attribute is herited from the parent object `Piscine Go here`
+> NB: the **capacity** attribute is herited from the parent object `Piscine Go` here.
+
+This exam object attributes look like this:
+
+![exam object attributes](https://user-images.githubusercontent.com/35296671/63527315-c3f41e80-c4f8-11e9-82da-d27c4c367323.png)
 
 ## Create the event
 
