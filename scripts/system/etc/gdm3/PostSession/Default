@@ -17,8 +17,8 @@ PS4='-\D{%F %T} '
 set -x
 
 passwd -d $USER
-sync
-sleep 0.5
-lsof -t $HOME | xargs kill || true
-umount -l $HOME
-umount -l /mnt
+systemctl stop user@1000.service
+
+# Make sure the mountpoints are free
+kill $(lsof -t "$HOME" /mnt) $(ps --no-headers -u student -o pid)
+umount "$HOME" /mnt

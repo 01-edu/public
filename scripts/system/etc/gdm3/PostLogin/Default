@@ -25,39 +25,24 @@ PS4='-\D{%F %T} '
 # Print commands and their arguments as they are executed.
 set -x
 
-sleep 0.5
-
-# Find the removable F2FS partition
-PART=$(lsblk -pro kname,partlabel | grep 01-home | cut -d' ' -f1)
-
 # Make sure the mountpoints are free
-(
-	lsof -t $HOME | xargs kill -9
-	umount $HOME
-	umount /mnt
-) || true
+kill $(lsof -t "$HOME" /mnt) ||:
+umount "$HOME" /mnt ||:
 
-if test "$PART"
-then
-	mount -o noatime "$PART" /mnt
+if test -e /dev/disk/by-partlabel/01-home; then
+	mount -o noatime /dev/disk/by-partlabel/01-home /mnt
 else
-	# No removable F2FS partition found
-	PART=$(lsblk -pro kname,partlabel | grep 01-tmp-home | cut -d' ' -f1)
+	# Fails if no local partition is found
+	test -e /dev/disk/by-partlabel/01-tmp-home || exit 1
 
-	if test -z "$PART"
-	then
-		# No local partition found, error
-		exit 1
-	fi
-
-	# We don't care about data consistency since the partition is temporary
-	/sbin/mke2fs -t ext4 -O ^has_journal -F "$PART"
-	mount -o noatime,nobarrier "$PART" /mnt
+	# We don't care about data consistency since the partition is temporary so disable journaling
+	/sbin/mke2fs -t ext4 -O ^has_journal -F /dev/disk/by-partlabel/01-tmp-home
+	mount -o noatime,nobarrier /dev/disk/by-partlabel/01-tmp-home /mnt
 fi
 
-USER_PATH=/mnt/.01/$USER
-TEMP_PATH=/mnt/.01/tmp
+user_path=/mnt/.01/"$USER"
+temp_path=/mnt/.01/tmp
 
-mkdir -p $USER_PATH $TEMP_PATH
-chown -R $USER:$USER $USER_PATH $TEMP_PATH
-mount -t overlay -o lowerdir=$HOME,upperdir=$USER_PATH,workdir=$TEMP_PATH overlay $HOME
+mkdir -p "$user_path" "$temp_path"
+chown -R "$USER":"$USER" "$user_path" "$temp_path"
+mount -t overlay -o lowerdir="$HOME",upperdir="$user_path",workdir="$temp_path" overlay "$HOME"
