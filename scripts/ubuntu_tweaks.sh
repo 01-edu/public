@@ -42,7 +42,7 @@ sed -i '/swapfile/d' /etc/fstab
 # Network configuration
 interface=$(ip route get 1.1.1.1 | head -1 | cut -d' ' -f5)
 
-cat <<EOF> /etc/network/interfaces
+cat <<EOF>> /etc/network/interfaces
 allow-hotplug $interface
 iface $interface inet dhcp
 EOF
