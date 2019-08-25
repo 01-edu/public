@@ -15,6 +15,6 @@ esac
 
 . /scripts/functions
 
-/bin/mke2fs -F -t ext4 -O ^has_journal ::PART:: > /dev/null 2>&1
+/bin/mke2fs -F -t ext4 -O ^has_journal /dev/disk/by-partlabel/01-tmp-system > /dev/null 2>&1
 
 exit 0

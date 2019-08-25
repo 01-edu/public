@@ -63,11 +63,8 @@ cp -r system /tmp
 cd /tmp/system
 sed -i -e "s|::DISK::|$DISK|g" etc/udev/rules.d/10-local.rules
 
-PART=$(lsblk -pro kname,partlabel | grep 01-tmp-system | cut -d' ' -f1)
-sed -i -e "s|::PART::|$PART|g" usr/share/initramfs-tools/scripts/init-premount/reformat
-
 apt-get -y install overlayroot
-echo overlayroot=\"device:dev=$PART,recurse=0\" >> /etc/overlayroot.conf
+echo overlayroot=\"device:dev=/dev/disk/by-partlabel/01-tmp-system,recurse=0\" >> /etc/overlayroot.conf
 
 # Fix permissions
 find . -type d -exec chmod 755 {} \;
