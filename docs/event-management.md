@@ -117,6 +117,7 @@ This exam object attributes look like this:
 > NB:
 >   * End of registration can't be before its beginning. 
 >   * Start of event can't be before end of registration. 
+>   * Date and Time input is not yet working in firefox but should be added soon by mozilla. In the mean while use chrome for adding events
 
 ### Settings for you event
 
