@@ -133,7 +133,7 @@ This exam object attributes look like this:
 General settings of your event can be set after creation of the event. By default, it is the values indicated in the **reference object**. 
 
 * **Capacity** 
-  * An unlimited number of person can register to the event, during the regitration duration. When registration ends, only the firsts N persons defined by the **capacity** will be definitly registered to the event, and have access to it. 
+  * During the regitration, the capacity doesn't apply. When registration ends, we register the amount defined by the **capacity** to the event *(ordered by registration date)*. 
     * If someone unregister to the event, it release one place. 
     * During registration duration, users can see if their place is provided or if they are in waiting list. 
   * If the event has children which are event itself, the capacity of its children will be:
