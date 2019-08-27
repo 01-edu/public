@@ -134,13 +134,12 @@ General settings of your event can be set after creation of the event. By defaul
 
 * **Capacity** 
   * During the regitration, the capacity doesn't apply. When registration ends, we register the amount defined by the **capacity** to the event *(ordered by registration date)*. 
-    * If someone unregister to the event, it release one place. 
-    * During registration duration, users can see if their place is provided or if they are in waiting list. 
-  * If the event has children which are event itself, the capacity of its children will be:
-    * The **capacity** set for each child object. 
-    * Or the capacity of the parent event by default. 
+    * If someone unregister to the event during a registration, it release one place. 
+    * During a registration, users can see if their place is guaranteed or if they are in waiting list. 
+  * If the event has children which are event themselves, they will use by default the capacity of the parent event
+    if no capacity was defined on this child.
 * **Description** (facultative) 
-  * It can be used to describe the subject of the event, or to add some practical informations: location, documents to provide, accessibility, etc.
+  * It can be used to describe the topic of the event, or to add some practical informations: location, documents to provide, accessibility, etc.
 
 #### Registration
 
@@ -149,8 +148,8 @@ General settings of your event can be set after creation of the event. By defaul
 * End of registration can't be after start of registration.
 * Dates can't be updated after it's passed.
 * The **registration duration** indicated in the **reference object** is reminded under the inputs to help you fill the informations.
-* If it exists, the recommended **delay betaween end of registration and start of event** indicated in the **reference object** is reminded under the inputs to help you fill the informations.
-* The list of users who wants to participate to the event and asked for registration is accessible by clicking on the link 'N users registered', at the left bottom of this categrory.
+* Same for the **event start delay**.
+* The list of users in the registration, pending or accepeted, is accessible by clicking on the link 'N users registered', at the left bottom of this categrory.
 
 #### Event
 
@@ -159,10 +158,10 @@ General settings of your event can be set after creation of the event. By defaul
 * End of event can't be after start of event.
 * Dates can't be updated after it's passed.
 * The **end of event** is calculated by default by adding the **event duration** indicated in the **reference object** to the **start of event** date.
-  * If the event has children which are events itself, the **end of event** can't be before the end of the last child event.
+  * If the event contains other events, the **end of event** can't be before the end of the last child event.
 * The **event duration** indicated in the **reference object** is reminded under the inputs to help you fill the informations.
-  * If the event has children which are events itself, the **minimum end of event** is indicated under the inputs to help you fill the informations.
-* The list of users actualy registered to the event at its creation is accessible by clicking on the link 'N users registered', at the left bottom of this categrory.
+  * If the event contains other events, the **minimum end of event** is indicated under the inputs to help you fill the informations.
+* The list of users selected for the event at its creation is accessible by clicking on the link 'N users registered', at the left bottom of this categrory.
 
 #### Children (facultative)
 
