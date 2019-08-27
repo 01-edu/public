@@ -1,8 +1,8 @@
-## listpushback
+## listpushfront
 
 ### Instructions
 
-Écrire une fonction `ListPushBack` qui insère un nouvel élément `NodeL` au début de la liste `l` en utilisant la structure `List`.
+Écrire une fonction `ListPushFront` qui insère un nouvel élément `NodeL` au début de la liste `l` en utilisant la structure `List`.
 
 ### Fonction et structue attendues
 
@@ -29,8 +29,9 @@ Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 package main
 
 import (
-	piscine ".."
 	"fmt"
+
+	piscine ".."
 )
 
 func main() {
@@ -43,9 +44,10 @@ func main() {
 
 	it := link.Head
 	for it != nil {
-		fmt.Println(it.Data)
+		fmt.Print(it.Data, " ")
 		it = it.Next
 	}
+	fmt.Println()
 }
 ```
 
@@ -54,8 +56,6 @@ Et son résultat :
 ```console
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test
-how are you
-man
-Hello
+how are you man Hello
 student@ubuntu:~/piscine/test$
 ```
