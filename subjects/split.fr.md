@@ -10,6 +10,7 @@ Les séparateurs sont les caractères de la `string charset` donnée en paramét
 
 ```go
 func Split(str, charset string) []string {
+
 }
 ```
 
@@ -27,7 +28,8 @@ import (
 
 func main() {
 	str := "HelloHAhowHAareHAyou?"
-	fmt.Println(piscine.Split(str, "HA")}
+	fmt.Println(piscine.Split(str, "HA"))
+}
 ```
 
 Et son résultat :
