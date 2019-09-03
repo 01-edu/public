@@ -6,20 +6,20 @@ Download and boot the [last Ubuntu release](http://releases.ubuntu.com/19.04/ubu
 
 Follow the steps :
 
-![img1](img/1.png)
-![img2](img/2.png)
-![img3](img/3.png)
+![img1](img/ubuntu-installation/1.png)
+![img2](img/ubuntu-installation/2.png)
+![img3](img/ubuntu-installation/3.png)
 
 The partitioning is :
 
-1) 256 MB : EFI partition
-2) 20 GB : system partition
-3) 32 GB : unused partition (will be used later)
-4) rest : unused partition (will be used later)
+1. 256 MB : EFI partition
+2. 20 GB : system partition
+3. 32 GB : unused partition (will be used later)
+4. rest : unused partition (will be used later)
 
-![img4](img/4.png)
-![img5](img/5.png)
-![img6](img/6.png)
+![img4](img/ubuntu-installation/4.png)
+![img5](img/ubuntu-installation/5.png)
+![img6](img/ubuntu-installation/6.png)
 
 Remove the installation disk and then reboot.
 
@@ -29,14 +29,14 @@ Don't install updates if Ubuntu asks to. The scripts will.
 
 Start the disk utility to name partitions so that OverlayFS can identify them.
 
-3) 32 GB - **Partition 3** : `01-tmp-home`
-4) rest - **Partition 4** : `01-tmp-system`
+3. 32 GB - **Partition 3** : `01-tmp-home`
+4. rest - **Partition 4** : `01-tmp-system`
 
 The same procedure is required to make USB disk usable for the students, the partition name must be : `01-home`
 
-![img7](img/7.png)
-![img8](img/8.png)
-![img9](img/9.png)
+![img7](img/ubuntu-installation/7.png)
+![img8](img/ubuntu-installation/8.png)
+![img9](img/ubuntu-installation/9.png)
 
 ## OS configuration
 
