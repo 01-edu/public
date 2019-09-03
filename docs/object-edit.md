@@ -4,7 +4,7 @@
 
 ## Page Composition
 
-![object-edit-overview](https://user-images.githubusercontent.com/15313830/56667480-ceff8500-66a5-11e9-98c7-792d598f2394.png)
+![object-edit-overview](img/object-edit-overview.png)
 
 ### Pin 1
 

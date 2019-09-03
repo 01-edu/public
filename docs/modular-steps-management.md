@@ -180,7 +180,7 @@ Here is an example of the form step's attributes. It presents a form with two se
 
 This 'form' step would look like this:
 
-![form step example](https://user-images.githubusercontent.com/35296671/56816457-7cf06800-683b-11e9-9003-6f83b4545033.png)
+![form-step-example](img/form-step-example.png)
 
 ## Settings for a `document to sign` step
 
@@ -241,4 +241,4 @@ NB : `target` & `download` are forwarded to the a html element as they are valid
 
 This 'document to sign' step would look like this:
 
-![document to sign step example](https://user-images.githubusercontent.com/35296671/61788887-29c28d00-ae0b-11e9-872c-71a7d1ddbe09.png)
+![document-to-sign-step-example](img/document-to-sign-step-example.png)

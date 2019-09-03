@@ -65,7 +65,7 @@ Here is an example of the `Piscine Go` settings. It presents the settings of the
 
 This piscine object attributes look like this:
 
-![piscine object attributes](https://user-images.githubusercontent.com/35296671/63526946-239dfa00-c4f8-11e9-8272-270c578f3fb8.png)
+![piscine-object-attributes](img/piscine-object-attributes.png)
 
 *Children*
 > In the `Piscine Go`, children of type *exam* and *rush* have events itself. 
@@ -97,7 +97,7 @@ This child attributes look like this:
 
 This exam object attributes look like this:
 
-![exam object attributes](https://user-images.githubusercontent.com/35296671/63527315-c3f41e80-c4f8-11e9-82da-d27c4c367323.png)
+![exam-object-attributes](img/exam-object-attributes.png)
 
 ## Create the event
 

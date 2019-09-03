@@ -22,8 +22,8 @@ This is the minimal structure of an object:
 
 To access your Objects, go to the admin dashboard and then click on the _manage object_ link within the "Object" card.
 
-![go-to-objects](https://user-images.githubusercontent.com/15313830/56653756-46bdb780-6686-11e9-98ba-18e382987e9c.png)
+![go-to-objects](img/go-to-objects.png)
 
 Objects are sorted by type in different sections. This page offer a search bar that allow you query the objects by name. In the top-right corner, click the _add a new object_ button to create a new object. Fill a name, select a type and click _create_ to validate your creation. You will be redirected to the Object Edition page (document is here).
 
-![all-object-page](https://user-images.githubusercontent.com/15313830/56654475-137c2800-6688-11e9-880b-75092397890d.png)
+![all-object-page](img/all-object-page.png)

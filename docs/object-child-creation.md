@@ -24,7 +24,7 @@ This documentation explains how to associate a child to a parent object.
 
 #### 2. Go to _Children_ > _Add a child_
 
-![add child to parent object](https://user-images.githubusercontent.com/35296671/56506977-de50c800-6517-11e9-9c71-d19a1ec4e5cd.png)
+![add-child-to-parent-object](img/add-child-to-parent-object.png)
 
 #### 3. Set up the new child:
 
