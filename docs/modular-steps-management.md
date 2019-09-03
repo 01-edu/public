@@ -69,12 +69,12 @@ In the step object you have created, 2 attributes must be filled:
 - `onChange` prop are ignored as the event is handled by the app.
 - For `switch` and `checkbox` input types, the default value has to be set as a boolean property named **value**.
 - More information for each inputs is available in the design documentation:
-  - [textInput documentation](https://alem.01-edu.org/design/Components/FormInputs/TextInput) - used for inputs type 'text', 'tel', and 'date'
-  - [textArea documentation](https://alem.01-edu.org/design/Components/FormInputs/TextArea)
-  - [select documentation](https://alem.01-edu.org/design/Components/FormControls/Select)
-  - [radio button documentation](https://alem.01-edu.org/design/Components/FormControls/Radio)
-  - [switch documentation](https://alem.01-edu.org/design/Components/FormControls/Switch)
-  - [checkbox documentation](https://alem.01-edu.org/design/Components/FormControls/Checkbox)
+  - [textInput documentation](https://01.alem.school/design/Components/FormInputs/TextInput) - used for inputs type 'text', 'tel', and 'date'
+  - [textArea documentation](https://01.alem.school/design/Components/FormInputs/TextArea)
+  - [select documentation](https://01.alem.school/design/Components/FormControls/Select)
+  - [radio button documentation](https://01.alem.school/design/Components/FormControls/Radio)
+  - [switch documentation](https://01.alem.school/design/Components/FormControls/Switch)
+  - [checkbox documentation](https://01.alem.school/design/Components/FormControls/Checkbox)
 
 ### Examples
 
