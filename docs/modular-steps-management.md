@@ -2,14 +2,14 @@
 
 ## Usage
 
-> After their first authentication in the app, every candidate has to do his **sign up** and his **onboarding**. The steps that compose the **sign up** and the **administration** section of the onboarding are either:
->
-> - Forms (identification, medical information, etc.)
-> - Documents to sign (general conditions, charts, regulations, etc.)
->
-> All the sections are modular: you can add, update, delete and order them as you wish.
->
-> This documentation explains how to manage these steps.
+After their first authentication in the app, every candidate has to do his **sign up** and his **onboarding**. The steps that compose the **sign up** and the **administration** section of the onboarding are either:
+
+- Forms (identification, medical information, etc.)
+- Documents to sign (general conditions, charts, regulations, etc.)
+
+All the sections are modular: you can add, update, delete and order them as you wish.
+
+This documentation explains how to manage these steps.
 
 ## Create your step child object
 
@@ -29,10 +29,10 @@
 
 ## Settings for a `form` step
 
-> In the step object you have created, 2 attributes must be filled:
->
-> 1. Subtype
-> 2. Form
+In the step object you have created, 2 attributes must be filled:
+
+1.  Subtype
+2.  Form
 
 ### Description
 

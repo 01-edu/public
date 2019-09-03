@@ -2,17 +2,17 @@
 
 ## Usage
 
-> Elements of the app are managed through objects in _Admin_.
+Elements of the app are managed through objects in _Admin_.
 
-> Objects of the Admin are first created and defined:
->
-> - By their **title**,
-> - By their **type**.
+Objects of the Admin are first created and defined:
 
-> Then it can be configured through:
->
-> - Attributes,
-> - Children.
+- By their **title**,
+- By their **type**.
+
+Then it can be configured through:
+
+- Attributes,
+- Children.
 
 > This documentation explains how to create an object.
 
@@ -49,10 +49,10 @@
     - Three main objects define the major steps of the onboarding : _Toad_, _Administration_, _Piscine_.
     - _Administration_ contains modular steps: _Additional Informations_, _Chart 01_, etc.
 
-> The child object is then available in the _Admin_. It can be found in the section of its type or thanks to the search bar of the cursus object's page.
+The child object is then available in the _Admin_. It can be found in the section of its type or thanks to the search bar of the cursus object's page.
 
-> More information is available:
->
-> - for setting attributes of an object: (soon available)
-> - for setting children of an object: [Child object creation](object-child-creation.md)
-> - for creation of modular steps in Sign up and onboarding's Administration object: [Modular step management](modular-steps-management.md)
+More information is available:
+
+- for setting attributes of an object: (soon available)
+- for setting children of an object: [Child object creation](object-child-creation.md)
+- for creation of modular steps in Sign up and onboarding's Administration object: [Modular step management](modular-steps-management.md)
