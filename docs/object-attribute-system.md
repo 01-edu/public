@@ -151,12 +151,15 @@ All done, now when rendering an object, attributes are merged like so:
 ```
 
 First we apply the **default attributes** from the referenced object.
+
 > Here `duration` and `language` are applied.
 
 Then we apply the **children attributes** to every child.
+
 > In this case we override every `duration` to 4800 and add the new `xp` attribute.
 
 After that we apply the **relation attributes**, that are the most specific and as such,
 override all others attributes.
+
 > In this case only the `printalphabet` relation had attributes and so we apply
-the given `duration` to the final merged object.
+> the given `duration` to the final merged object.
