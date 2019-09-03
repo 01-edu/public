@@ -35,7 +35,7 @@ Important indications:
 
 > in _Object attributes_
 
-<img width="1073" alt="Capture d’écran 2019-08-22 à 11 40 34" src="https://user-images.githubusercontent.com/35296671/63525316-64e0da80-c4f5-11e9-9e61-57d5a73da9b1.png">
+<img width="1073" alt="Capture d’écran 2019-08-22 à 11 40 34" src="img/63525316-64e0da80-c4f5-11e9-9e61-57d5a73da9b1.png">
 
 - Add a new key **capacity** of type `Number` with the maximum number of persons you want for events related to the object by default
 - Add a new key **eventDuration** of type `Number` with the duration in minutes you want for events related to the object by default
@@ -47,7 +47,7 @@ Important indications:
 
 > in _Children_
 
-<img width="609" alt="Capture d’écran 2019-08-22 à 15 43 43" src="https://user-images.githubusercontent.com/35296671/63525543-c86b0800-c4f5-11e9-8820-60d9ff33994f.png">
+<img width="609" alt="Capture d’écran 2019-08-22 à 15 43 43" src="img/63525543-c86b0800-c4f5-11e9-8820-60d9ff33994f.png">
 
 - Add a new key **startAfter** of type `Number`, with the default delay you want between the beginning of the event and the beginning of the child event. This duration is expressed in minutes.
 
@@ -88,7 +88,7 @@ _Children_
 
 This child attributes look like this:
 
-![piscine children attributes](https://user-images.githubusercontent.com/35296671/63525543-c86b0800-c4f5-11e9-8820-60d9ff33994f.png)
+![piscine children attributes](img/63525543-c86b0800-c4f5-11e9-8820-60d9ff33994f.png)
 
 **Exam 01**
 
@@ -116,9 +116,9 @@ This exam object attributes look like this:
 
 > (in _Admin_ > _Manage events_ > _Add new event_)
 
-<img width="788" alt="Capture d’écran 2019-08-22 à 11 37 13" src="https://user-images.githubusercontent.com/35296671/63532891-9d87b080-c503-11e9-8ff2-46c7a5b19c12.png">
-<img width="789" alt="Capture d’écran 2019-08-22 à 11 37 35" src="https://user-images.githubusercontent.com/35296671/63533088-02430b00-c504-11e9-9675-bcab7bec825c.png">
-<img width="787" alt="Capture d’écran 2019-08-22 à 11 38 07" src="https://user-images.githubusercontent.com/35296671/63533145-21419d00-c504-11e9-8e80-fb4f53d93b00.png">
+<img width="788" alt="Capture d’écran 2019-08-22 à 11 37 13" src="img/63532891-9d87b080-c503-11e9-8ff2-46c7a5b19c12.png">
+<img width="789" alt="Capture d’écran 2019-08-22 à 11 37 35" src="img/63533088-02430b00-c504-11e9-9675-bcab7bec825c.png">
+<img width="787" alt="Capture d’écran 2019-08-22 à 11 38 07" src="img/63533145-21419d00-c504-11e9-8e80-fb4f53d93b00.png">
 
 - The **reference object** of your event is the object for which you need to create an event: `Check`, `Piscine Go`, etc.
 - The **registration starts at** indicates when registration of the event begins.
@@ -141,7 +141,7 @@ This exam object attributes look like this:
 
 #### General settings
 
-<img width="785" alt="Capture d’écran 2019-08-22 à 11 39 26" src="https://user-images.githubusercontent.com/35296671/63533589-015ea900-c505-11e9-8b77-b45b620cd171.png">
+<img width="785" alt="Capture d’écran 2019-08-22 à 11 39 26" src="img/63533589-015ea900-c505-11e9-8b77-b45b620cd171.png">
 
 General settings of your event can be set after creation of the event. By default, it is the values indicated in the **reference object**.
 
@@ -156,7 +156,7 @@ General settings of your event can be set after creation of the event. By defaul
 
 #### Registration
 
-<img width="761" alt="Capture d’écran 2019-08-22 à 11 39 37" src="https://user-images.githubusercontent.com/35296671/63533613-0facc500-c505-11e9-90e8-94254cef5ce3.png">
+<img width="761" alt="Capture d’écran 2019-08-22 à 11 39 37" src="img/63533613-0facc500-c505-11e9-90e8-94254cef5ce3.png">
 
 - End of registration can't be after start of registration.
 - Dates can't be updated after it's passed.
@@ -166,7 +166,7 @@ General settings of your event can be set after creation of the event. By defaul
 
 #### Event
 
-<img width="740" alt="Capture d’écran 2019-08-22 à 11 39 49" src="https://user-images.githubusercontent.com/35296671/63533641-1d624a80-c505-11e9-9cd1-e1d156dd7fc4.png">
+<img width="740" alt="Capture d’écran 2019-08-22 à 11 39 49" src="img/63533641-1d624a80-c505-11e9-9cd1-e1d156dd7fc4.png">
 
 - End of event can't be after start of event.
 - Dates can't be updated after it's passed.
@@ -178,7 +178,7 @@ General settings of your event can be set after creation of the event. By defaul
 
 #### Children (facultative)
 
-<img width="1009" alt="Capture d’écran 2019-08-22 à 18 24 49" src="https://user-images.githubusercontent.com/35296671/63535788-29044000-c50a-11e9-835c-f8378558962c.png">
+<img width="1009" alt="Capture d’écran 2019-08-22 à 18 24 49" src="img/63535788-29044000-c50a-11e9-835c-f8378558962c.png">
 
 This category appears only if the event has children which are events itself.
 

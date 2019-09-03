@@ -20,8 +20,8 @@ Then it can be configured through:
 
 > (in _Admin_ > _Add new object_)
 
-<img width="664" alt="Capture d’écran 2019-04-22 à 15 57 37" src="https://user-images.githubusercontent.com/35296671/56507169-6505a500-6518-11e9-89bb-04c7fd9b41ca.png">
-<img width="450" alt="Capture d’écran 2019-04-22 à 15 58 21" src="https://user-images.githubusercontent.com/35296671/56507180-6afb8600-6518-11e9-97a5-4dcff8f0a069.png">
+<img width="664" alt="Capture d’écran 2019-04-22 à 15 57 37" src="img/56507169-6505a500-6518-11e9-89bb-04c7fd9b41ca.png">
+<img width="450" alt="Capture d’écran 2019-04-22 à 15 58 21" src="img/56507180-6afb8600-6518-11e9-97a5-4dcff8f0a069.png">
 
 - The **title** of your object will be the title displayed to your candidates. Use an intellegible title for your user.
 

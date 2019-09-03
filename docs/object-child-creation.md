@@ -19,8 +19,8 @@ This documentation explains how to associate a child to a parent object.
 
 #### 1. Edit the parent object
 
-<img width="640" alt="Capture d’écran 2019-04-22 à 19 24 23" src="https://user-images.githubusercontent.com/35296671/56517407-cb98bc00-6534-11e9-98d6-a2b1c0193a38.png">
-<img width="640" alt="Capture d’écran 2019-04-22 à 19 24 10" src="https://user-images.githubusercontent.com/35296671/56517421-d0f60680-6534-11e9-86ef-97fb9e59786e.png">
+<img width="640" alt="Capture d’écran 2019-04-22 à 19 24 23" src="img/56517407-cb98bc00-6534-11e9-98d6-a2b1c0193a38.png">
+<img width="640" alt="Capture d’écran 2019-04-22 à 19 24 10" src="img/56517421-d0f60680-6534-11e9-86ef-97fb9e59786e.png">
 
 #### 2. Go to _Children_ > _Add a child_
 
@@ -37,4 +37,4 @@ Your step is then related to its parent. You can see it in the _Children_ sectio
 -   Delete the child from its parent (the actual object of your child will not be deleted).
 -   Reorder it in the children's list, by dragging it to the place you want.
 -   Update its original settings by clicking on the eye icon of its reference (redirection to object edit page of the child).
-    <img width="1229" alt="Capture d’écran 2019-04-22 à 19 51 12" src="https://user-images.githubusercontent.com/35296671/56518936-a1e19400-6538-11e9-81c7-520ffd365cff.png">
+    <img width="1229" alt="Capture d’écran 2019-04-22 à 19 51 12" src="img/56518936-a1e19400-6538-11e9-81c7-520ffd365cff.png">

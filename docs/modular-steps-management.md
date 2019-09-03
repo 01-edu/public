@@ -40,7 +40,7 @@ In the step object you have created, 2 attributes must be filled:
 
 > in _Object attributes_
 
-<img width="1073" alt="Capture d’écran 2019-04-22 à 15 59 33" src="https://user-images.githubusercontent.com/35296671/56507445-3936ef00-6519-11e9-90c8-d85056e9330b.png">
+<img width="1073" alt="Capture d’écran 2019-04-22 à 15 59 33" src="img/56507445-3936ef00-6519-11e9-90c8-d85056e9330b.png">
 
 - Add a new key **subtype** of type `String` with the exact value 'form-step'
 - Add a new key **form** of type `Object`
