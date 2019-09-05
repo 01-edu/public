@@ -34,3 +34,4 @@ Rationale :
 -   It is better to make them aware of their situation than to try to stop them
 -   A student's motivation is very much influenced by his or her environment
     -   An environment with limitations will limit the spectrum of things that stimulate the student's curiosity
+-   A focus will made on increasing student's empowerement in order to make them feel accountable for their own actions. If the student cheats, he has to understand that he is only hindering his own progress.
