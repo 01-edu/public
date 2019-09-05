@@ -7,7 +7,7 @@ Rationale :
 -   Reduce the number of potential bugs and problems
 -   The remaining bugs will be easier to identify/isolate & fix
 -   Easier maintenance
--   Less people to recruit
+-   Lower human capital required
 
 ## Limit security & filtering mechanisms
 
