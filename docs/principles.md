@@ -4,7 +4,7 @@
 
 Rationale :
 
--   Reduce the numbers of potential bugs
+-   Reduce the number of potential bugs and problems
 -   The remaining bugs will be easier to identify/isolate & fix
 -   Easier maintenance
 -   Less people to recruit
