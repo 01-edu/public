@@ -13,9 +13,10 @@ Rationale :
 
 Especially during the launch, rationale :
 
+-   Reduce complexity (see above)
 -   Alem is a school, not a bank, so the security requirements are lower
 -   Some students will be able to bypass security systems in all cases
--   Reduce complexity (see above)
+    -   And they will spread the word quickly
 -   The only reliable way to identify students will be security cameras and staff attention
     -   Students will share accounts and USB drives
     -   They will open connections to the outside and there is no definitive way to prevent this
