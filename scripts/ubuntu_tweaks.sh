@@ -112,6 +112,7 @@ gnome-calculator
 gnome-system-monitor
 gnome-tweaks
 i3lock
+imagemagick
 mpv
 zenity
 "
