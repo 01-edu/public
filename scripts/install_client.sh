@@ -9,13 +9,6 @@ SCRIPT_DIR="$(cd -P "$(dirname "$BASH_SOURCE")" && pwd)"
 cd $SCRIPT_DIR
 . set.sh
 
-# Set root password
-passwd root
-
-# Remove user password
-passwd -d student
-cp /etc/shadow /etc/shadow-
-
 SSH_PORT=521
 DISK=$(lsblk -o tran,kname,hotplug,type,fstype -pr |
 	grep -e nvme -e sata |
@@ -77,5 +70,10 @@ cd $SCRIPT_DIR
 rm -rf /tmp/system
 
 update-initramfs -u
+
+# Remove root & user password
+passwd -d root
+passwd -d student
+cp /etc/shadow /etc/shadow-
 
 . clean.sh
