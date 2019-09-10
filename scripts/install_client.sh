@@ -70,6 +70,7 @@ echo overlayroot=\"device:dev=/dev/disk/by-partlabel/01-tmp-system,recurse=0\" >
 find . -type d -exec chmod 755 {} \;
 find . -type f -exec chmod 644 {} \;
 find . -type f -exec /bin/sh -c "file {} | grep -q 'shell script' && chmod +x {}" \;
+find . -type f -exec /bin/sh -c "file {} | grep -q 'public key' && chmod 400 {}" \;
 cp --preserve=mode -RT . /
 
 cd $SCRIPT_DIR
