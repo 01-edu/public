@@ -17,6 +17,14 @@ DISK=$(lsblk -o tran,kname,hotplug,type,fstype -pr |
 	sort |
 	head -n1)
 
+systemctl stop unattended-upgrades.service
+gsettings set org.gnome.desktop.screensaver lock-enabled false
+
+sgdisk -n0:0:+32G "$DISK"
+sgdisk -N0 "$DISK"
+sgdisk -c3:01-tmp-home "$DISK"
+sgdisk -c4:01-tmp-system "$DISK"
+
 apt-get update
 apt-get -y upgrade
 apt-get -y autoremove --purge
