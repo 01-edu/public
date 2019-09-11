@@ -62,6 +62,25 @@ rm /usr/share/initramfs-tools/hooks/fsck
 
 cp -r system /tmp
 cd /tmp/system
+
+# Overwrite with custom files from Git repository
+if test -v OVERWRITE; then
+	IFS=,
+	for item in $OVERWRITE; do
+		folder=$(echo "$item" | cut -d';' -f1)
+		url=$(echo "$item" | cut -d';' -f2)
+		if git ls-remote -q "$url" &>/dev/null; then
+			tmp=$(mktemp -d)
+			git clone --depth 1 "$url" "$tmp"
+			rm -rf "$tmp"/.git
+			cp -aT "$tmp" "$folder"
+			rm -rf "$tmp"
+		fi
+	done
+	IFS='
+'
+fi
+
 sed -i -e "s|::DISK::|$DISK|g" etc/udev/rules.d/10-local.rules
 
 apt-get -y install overlayroot
