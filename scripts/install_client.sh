@@ -103,4 +103,7 @@ passwd -d root
 passwd -d student
 cp /etc/shadow /etc/shadow-
 
+# Remove user ability to use sudo
+gpasswd -d student sudo
+
 . clean.sh
