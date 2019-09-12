@@ -29,7 +29,7 @@ apt-get -y upgrade
 apt-get -y autoremove --purge
 
 # Remove outdated kernels
-old_kernels=$(ls -1 /boot/config-* | xargs -n1 basename | grep -v "$(uname -r)" | cut -d- -f2,3)
+old_kernels=$(ls -1 /boot/config-* | sed '$d' | xargs -n1 basename | cut -d- -f2,3)
 
 for old_kernel in $old_kernels; do
 	dpkg -P $(dpkg-query -f '${binary:Package}\n' -W *"$old_kernel"*)
