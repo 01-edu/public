@@ -81,11 +81,6 @@ if test -v OVERWRITE; then
 '
 fi
 
-sed -i -e "s|::DISK::|$DISK|g" etc/udev/rules.d/10-local.rules
-
-apt-get -y install overlayroot
-echo overlayroot=\"device:dev=/dev/disk/by-partlabel/01-tmp-system,recurse=0\" >> /etc/overlayroot.conf
-
 # Fix permissions
 find . -type d -exec chmod 755 {} \;
 find . -type f -exec chmod 644 {} \;
@@ -95,6 +90,11 @@ cp --preserve=mode -RT . /
 
 cd $SCRIPT_DIR
 rm -rf /tmp/system
+
+sed -i -e "s|::DISK::|$DISK|g" etc/udev/rules.d/10-local.rules
+
+apt-get -y install overlayroot
+echo overlayroot=\"device:dev=/dev/disk/by-partlabel/01-tmp-system,recurse=0\" >> /etc/overlayroot.conf
 
 update-initramfs -u
 
