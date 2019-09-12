@@ -35,6 +35,8 @@ for old_kernel in $old_kernels; do
 	dpkg -P $(dpkg-query -f '${binary:Package}\n' -W *"$old_kernel"*)
 done
 
+apt-get -yf install
+
 . bash_tweaks.sh
 . ssh.sh
 . firewall.sh
