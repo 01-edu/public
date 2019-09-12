@@ -31,7 +31,7 @@ Run a terminal and type :
 
 ```console
 student@ubuntu:~$ unset HISTFILE
-student@ubuntu:~$ apt-get -y install curl
+student@ubuntu:~$ sudo apt-get -y install curl
 student@ubuntu:~$ bash <(curl -sSL raw.githubusercontent.com/01-edu/public/master/scripts/kickstart.sh)
 [...]
 Ask for student user password (will be removed later)
