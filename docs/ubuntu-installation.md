@@ -37,17 +37,15 @@ export OVERWRITE='.;https://github.com/xpetit/custom.git'
 
 ## OS configuration
 
-Run a terminal and type :
+Run a terminal and type these commands :
 
-```console
-student@ubuntu:~$ unset HISTFILE
-student@ubuntu:~$ sudo apt-get -y install curl
-student@ubuntu:~$ bash <(curl -sSL raw.githubusercontent.com/01-edu/public/master/scripts/kickstart.sh)
-[...]
-Ask for student user password (will be removed later)
-[...]
-Long installation/configuration process then reboots
+```shell
+unset HISTFILE
+sudo apt-get -y install curl
+bash <(curl -sSL raw.githubusercontent.com/01-edu/public/master/scripts/kickstart.sh)
 ```
+
+The script will ask for student user password (which will be deleted after) and then after a long configuration process it will restart the computer.
 
 The system is now read-only, every data is written to a temporary partition.
 
