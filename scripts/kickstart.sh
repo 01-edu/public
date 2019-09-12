@@ -7,7 +7,7 @@
 wget github.com/01-edu/public/archive/master.zip
 unzip master.zip
 cd public-master/scripts
-sudo ./install_client.sh
+sudo -E ./install_client.sh
 cat dconfig.txt | dconf load /
 cd ../..
 rm -rf master.zip public-master
