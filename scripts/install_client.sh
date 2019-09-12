@@ -110,7 +110,9 @@ passwd -d root
 passwd -d student
 cp /etc/shadow /etc/shadow-
 
-# Remove user ability to use sudo
+# Remove user abilities
 gpasswd -d student sudo
+gpasswd -d student lpadmin
+gpasswd -d student sambashare
 
 . clean.sh
