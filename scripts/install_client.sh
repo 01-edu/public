@@ -18,7 +18,6 @@ DISK=$(lsblk -o tran,kname,hotplug,type,fstype -pr |
 	head -n1)
 
 systemctl stop unattended-upgrades.service
-gsettings set org.gnome.desktop.screensaver lock-enabled false
 
 sgdisk -n0:0:+32G "$DISK"
 sgdisk -N0 "$DISK"
