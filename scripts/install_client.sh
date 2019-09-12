@@ -65,20 +65,15 @@ cd /tmp/system
 
 # Overwrite with custom files from Git repository
 if test -v OVERWRITE; then
-	IFS=,
-	for item in $OVERWRITE; do
-		folder=$(echo "$item" | cut -d';' -f1)
-		url=$(echo "$item" | cut -d';' -f2)
-		if git ls-remote -q "$url" &>/dev/null; then
-			tmp=$(mktemp -d)
-			git clone --depth 1 "$url" "$tmp"
-			rm -rf "$tmp"/.git
-			cp -aT "$tmp" "$folder"
-			rm -rf "$tmp"
-		fi
-	done
-	IFS='
-'
+	folder=$(echo "$OVERWRITE" | cut -d';' -f1)
+	url=$(echo "$OVERWRITE" | cut -d';' -f2)
+	if git ls-remote -q "$url" &>/dev/null; then
+		tmp=$(mktemp -d)
+		git clone --depth 1 "$url" "$tmp"
+		rm -rf "$tmp"/.git
+		cp -aT "$tmp" "$folder"
+		rm -rf "$tmp"
+	fi
 fi
 
 # Fix permissions
