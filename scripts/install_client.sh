@@ -83,6 +83,11 @@ find . -type f -exec /bin/sh -c "file {} | grep -q 'public key' && chmod 400 {}"
 
 sed -i -e "s|::DISK::|$DISK|g" etc/udev/rules.d/10-local.rules
 
+# Generate wallpaper
+cd usr/share/backgrounds/01
+test ! -e wallpaper.png && composite logo.png background.png wallpaper.png
+cd /tmp/system
+
 cp --preserve=mode -RT . /
 
 cd $SCRIPT_DIR

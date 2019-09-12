@@ -67,6 +67,7 @@ default-size-columns=160
 
 [org/gnome/desktop/background]
 show-desktop-icons=false
+picture-uri='file:///usr/share/backgrounds/01/wallpaper.png'
 
 [org/gnome/desktop/peripherals/mouse]
 accel-profile='flat'
