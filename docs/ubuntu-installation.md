@@ -29,7 +29,7 @@ Don't install updates if Ubuntu asks to. The scripts will.
 
 You can overwrite the files of the folder `system` by setting an environment variable named `OVERWRITE` with the format : `Destination folder;Git URL`.
 
-For example to write the content of the repository [github.com/xpetit/custom](github.com/xpetit/custom) in the system folder :
+For example to write the content of the repository [github.com/xpetit/custom](https://github.com/xpetit/custom) in the system folder :
 
 ```shell
 export OVERWRITE='.;https://github.com/xpetit/custom.git'
