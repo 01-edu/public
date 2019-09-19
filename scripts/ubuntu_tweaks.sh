@@ -62,7 +62,6 @@ gnome-power-manager
 gnome-software
 gnome-software-common
 memtest86+
-network-manager*
 orca
 popularity-contest
 python3-update-manager
