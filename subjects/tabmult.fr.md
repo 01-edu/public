@@ -9,8 +9,8 @@
 ### Utilisation
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test 9
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test 9
 1 x 9 = 9
 2 x 9 = 18
 3 x 9 = 27
@@ -20,7 +20,7 @@ student@ubuntu:~/piscine/test$ ./test 9
 7 x 9 = 63
 8 x 9 = 72
 9 x 9 = 81
-student@ubuntu:~/piscine/test$ ./test 19
+student@ubuntu:~/piscine-go/test$ ./test 19
 1 x 19 = 19
 2 x 19 = 38
 3 x 19 = 57
@@ -30,7 +30,7 @@ student@ubuntu:~/piscine/test$ ./test 19
 7 x 19 = 133
 8 x 19 = 152
 9 x 19 = 171
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 
-student@ubuntu:~/piscine/
+student@ubuntu:~/piscine-go/
 ```

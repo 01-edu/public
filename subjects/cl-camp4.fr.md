@@ -17,8 +17,8 @@ Créer un fichier `myfamily.sh`, qui affichera la famille d'un individu (clef: r
 ### Utilisation
 
 ```console
-student@ubuntu:~/piscine/test$ export HERO_ID=1
-student@ubuntu:~/piscine/test$ ./myfamily.sh
+student@ubuntu:~/piscine-go/test$ export HERO_ID=1
+student@ubuntu:~/piscine-go/test$ ./myfamily.sh
 Marlo Chandler-Jones (wife); Polly (aunt); Mrs. Chandler (mother-in-law); Keith Chandler, Ray Chandler, three unidentified others (brothers-in-law); unidentified father (deceased); Jackie Shorr (alleged mother; unconfirmed)
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

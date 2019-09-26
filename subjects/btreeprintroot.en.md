@@ -38,10 +38,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/piscine/printroot$ go build
-student@ubuntu:~/piscine/printroot$ ./printroot
+student@ubuntu:~/piscine-go/printroot$ go build
+student@ubuntu:~/piscine-go/printroot$ ./printroot
 who
 are
 you
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

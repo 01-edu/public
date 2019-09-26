@@ -13,14 +13,14 @@ Write a program that takes a `string` as a parameter, and prints its words in re
 ### Usage
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test "the time of contempt precedes that of indifference"
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test "the time of contempt precedes that of indifference"
 indifference of that precedes contempt of time the
-student@ubuntu:~/piscine/test$ ./test "abcdefghijklm"
+student@ubuntu:~/piscine-go/test$ ./test "abcdefghijklm"
 abcdefghijklm
-student@ubuntu:~/piscine/test$ ./test "he stared at the mountain"
+student@ubuntu:~/piscine-go/test$ ./test "he stared at the mountain"
 mountain the at stared he
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ ./test
 
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

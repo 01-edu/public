@@ -13,11 +13,11 @@ That command will only show the name of the files without the `.sh`.
 ### Usage
 
 ```console
-student@ubuntu:~/piscine/test$ ./lookagain.sh | cat -e
+student@ubuntu:~/piscine-go/test$ ./lookagain.sh | cat -e
 file1$
 file2$
 file3$
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```
 
 ### Hint
