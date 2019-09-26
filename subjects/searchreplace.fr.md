@@ -11,12 +11,12 @@
 ### Utilisation
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test "hella there" "a" "o"
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test "hella there" "a" "o"
 hello there
-student@ubuntu:~/piscine/test$ ./test "abcd" "z" "l"
+student@ubuntu:~/piscine-go/test$ ./test "abcd" "z" "l"
 abcd
-student@ubuntu:~/piscine/test$ ./test "something" "a" "o" "b" "c"
+student@ubuntu:~/piscine-go/test$ ./test "something" "a" "o" "b" "c"
 
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

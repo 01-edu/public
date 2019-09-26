@@ -39,10 +39,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 012, 013, 014, 015, 016, 017, 018, ... 679, 689, 789
 012345678, 012345679, ..., 123456789
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

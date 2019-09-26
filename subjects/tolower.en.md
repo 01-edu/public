@@ -32,8 +32,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 hello! how are you?
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

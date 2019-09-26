@@ -8,8 +8,8 @@ newline(`'\n'`).
 ### Usage
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 9876543210
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

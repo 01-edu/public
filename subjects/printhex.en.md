@@ -9,14 +9,14 @@ Write a program that takes a positive (or zero) number expressed in base 10, and
 ### Usage
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test "10"
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test "10"
 a
-student@ubuntu:~/piscine/test$ ./test "255"
+student@ubuntu:~/piscine-go/test$ ./test "255"
 ff
-student@ubuntu:~/piscine/test$ ./test "5156454"
+student@ubuntu:~/piscine-go/test$ ./test "5156454"
 4eae66
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 
-student@ubuntu:~/piscine/
+student@ubuntu:~/piscine-go/
 ```
