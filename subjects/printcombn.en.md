@@ -32,7 +32,7 @@ import piscine ".."
 func main() {
 	piscine.PrintCombN(1)
 	piscine.PrintCombN(2)
-	piscine.PrintCombN(123)
+	piscine.PrintCombN(9)
 }
 ```
 
@@ -41,6 +41,8 @@ And its output :
 ```console
 student@ubuntu:~/piscine/test$ go build
 student@ubuntu:~/piscine/test$ ./test
--1230123
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+012, 013, 014, 015, 016, 017, 018, ... 679, 689, 789
+012345678, 012345679, ..., 123456789
 student@ubuntu:~/piscine/test$
 ```
