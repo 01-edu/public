@@ -10,6 +10,6 @@ Create a file `"\?$*'ChouMi'*$?\"` that will contain "01" and **nothing else**.
 
 ```console
 student@ubuntu:~/piscine-go/test$ ls | cat -e
-"\?$*'ChouMi'*$?\" $
+"\?$*'ChouMi'*$?\"$
 student@ubuntu:~/piscine-go/test$
 ```
