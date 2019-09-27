@@ -9,7 +9,7 @@ La fonction devra être optimisée pour éviter les time-outs avec le testeur.
 ### Fonction attendue
 
 ```go
-func IsPrime(int nb) bool {
+func IsPrime(nb int) bool {
 
 }
 ```

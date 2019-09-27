@@ -17,7 +17,7 @@ Un index négatif renvoie `-1`.
 ```go
 package main
 
-func Fibonacci(int index) int {
+func Fibonacci(index int) int {
 
 }
 ```

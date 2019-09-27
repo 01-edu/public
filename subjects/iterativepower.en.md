@@ -9,7 +9,7 @@ Negative powers will return `0`. Overflows do **not** have to be dealt with.
 ### Expected function
 
 ```go
-func IterativePower(int nb, int power) int {
+func IterativePower(nb int, power int) int {
 
 }
 ```

@@ -9,7 +9,7 @@ Les puissances négatives renverront `0`. Les overflows **ne doivent pas** être
 ### Fonction attendue
 
 ```go
-func IterativePower(int nb, int power) int {
+func IterativePower(nb int, power int) int {
 
 }
 ```

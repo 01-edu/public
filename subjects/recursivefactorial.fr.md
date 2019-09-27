@@ -11,7 +11,7 @@ Les erreurs (valeurs non possibles ou overflows) renverront `0`.
 ### Fonction attendue
 
 ```go
-func RecursiveFactorial(int nb) int {
+func RecursiveFactorial(nb int) int {
 
 }
 ```

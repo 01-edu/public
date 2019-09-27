@@ -11,7 +11,7 @@ Negative powers will return `0`. Overflows do **not** have to be dealt with.
 ### Expected function
 
 ```go
-func RecursivePower(int nb, int power) int {
+func RecursivePower(nb int, power int) int {
 
 }
 ```

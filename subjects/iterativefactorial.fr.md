@@ -9,7 +9,7 @@ Les erreurs (valeurs non possibles ou overflows) renverront `0`.
 ### Fonction attendue
 
 ```go
-func IterativeFactorial(int nb) int {
+func IterativeFactorial(nb int) int {
 
 }
 ```
