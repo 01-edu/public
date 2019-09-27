@@ -1,6 +1,6 @@
 ## iterativefactorial
 
-### Intructions
+### Instructions
 
 Write an **iterative** function that returns the factorial of the `int` passed as parameter.
 

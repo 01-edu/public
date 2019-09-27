@@ -1,6 +1,6 @@
 ## sqrt
 
-### Intructions
+### Instructions
 
 Écrire une fonction qui renvoie la racine carré d'un `int` passé en paramètre as parameter si cette racine carré est un nombre entier. Autrement elle renvoie `0`.
 

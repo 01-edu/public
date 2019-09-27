@@ -1,6 +1,6 @@
 ## recursivepower
 
-### Intructions
+### Instructions
 
 Écrire une fonction **récursive** qui renvoie la puissance de deux `int` passés en paramètre.
 

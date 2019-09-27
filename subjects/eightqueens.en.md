@@ -1,6 +1,6 @@
 ## eightqueens
 
-### Intructions
+### Instructions
 
 Write a function that prints the solutions to the [eight queens puzzle](https://en.wikipedia.org/wiki/Eight_queens_puzzle).
 

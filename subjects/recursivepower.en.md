@@ -1,6 +1,6 @@
 ## recursivepower
 
-### Intructions
+### Instructions
 
 Write an **recursive** function that returns the power of the `int` passed as parameter.
 

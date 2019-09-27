@@ -1,6 +1,6 @@
 ## findnextprime
 
-### Intructions
+### Instructions
 
 Write a function that returns the first prime number that is equal or superior to the `int` passed as parameter.
 

@@ -1,6 +1,6 @@
 ## isprime
 
-### Intructions
+### Instructions
 
 Write a function that returns `true` if the `int` passed as parameter is a prime number. Otherwise it returns `false`.
 

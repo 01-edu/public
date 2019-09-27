@@ -1,6 +1,6 @@
 ## findnextprime
 
-### Intructions
+### Instructions
 
 Écrire une fonction qui renvoie le premier nombre premier qui est égal ou supérieur à l'`int` passé en paramètre.
 
