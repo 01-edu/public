@@ -1,6 +1,6 @@
 ## isprime
 
-### Intructions
+### Instructions
 
 Écrire une fonction qui renvoie `true` si l'`int` passé en paramètre est un nombre premier. Autrement elle renvoie `false`.
 
@@ -9,7 +9,7 @@ La fonction devra être optimisée pour éviter les time-outs avec le testeur.
 ### Fonction attendue
 
 ```go
-func IsPrime(int nb) bool {
+func IsPrime(nb int) bool {
 
 }
 ```
@@ -35,9 +35,9 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 true
 false
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

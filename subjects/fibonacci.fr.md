@@ -1,6 +1,6 @@
 ## fibonacci
 
-### Intructions
+### Instructions
 
 Écrire une fonction **récursive** qui renvoie la valeur de la suite de fibonacci correspondant à l'index passé en paramètre.
 
@@ -17,7 +17,7 @@ Un index négatif renvoie `-1`.
 ```go
 package main
 
-func Fibonacci(int index) int {
+func Fibonacci(index int) int {
 
 }
 ```
@@ -43,9 +43,9 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/piscine/test$go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$go build
+student@ubuntu:~/piscine-go/test$ ./test
 3
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 
 ```

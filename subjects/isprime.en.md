@@ -1,6 +1,6 @@
 ## isprime
 
-### Intructions
+### Instructions
 
 Write a function that returns `true` if the `int` passed as parameter is a prime number. Otherwise it returns `false`.
 
@@ -9,7 +9,7 @@ The function must be optimized in order to avoid time-outs with the tester.
 ### Expected function
 
 ```go
-func IsPrime(int nb) bool {
+func IsPrime(nb int) bool {
 
 }
 ```
@@ -35,9 +35,9 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 true
 false
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

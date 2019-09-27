@@ -11,9 +11,9 @@ Submit your solution in the file `my_answer.sh` that will print it when executed
 ### Utilisation
 
 ```console
-student@ubuntu:~/piscine/test$ ./my_answer.sh | cat -e
+student@ubuntu:~/piscine-go/test$ ./my_answer.sh | cat -e
 John Doe$
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```
 
 ### Hint

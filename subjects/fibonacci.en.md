@@ -1,6 +1,6 @@
 ## fibonacci
 
-### Intructions
+### Instructions
 
 Write an **recursive** function that returns the value of fibonacci sequence matching the index passed as parameter.
 
@@ -17,7 +17,7 @@ A negative index will return `-1`.
 ```go
 package main
 
-func Fibonacci(int index) int {
+func Fibonacci(index int) int {
 
 }
 ```
@@ -43,8 +43,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 3
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

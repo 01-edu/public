@@ -23,7 +23,7 @@ Once created, the new attributes appears right bellow and the ability to associa
 Any attribute can be delete by clicking on the 'trash' icon on the right hand of it.
 
 Here an example of how the section looks like.
-![object-attributes](https://user-images.githubusercontent.com/15313830/56677487-88675600-66b8-11e9-9781-26dc0ee6301d.png)
+![object-attributes](img/object-attributes.png)
 
 ## Attributes and RelationShips
 
@@ -49,10 +49,10 @@ The following json shows how the object would be represented:
 ```
 
 Children
-![children](https://user-images.githubusercontent.com/15313830/56679319-b189e580-66bc-11e9-8f2a-3d51eb1486d4.png)
+![children](img/children.png)
 
 Child
-![chilld-capture](https://user-images.githubusercontent.com/15313830/56679320-b189e580-66bc-11e9-90ab-c8f69f531876.png)
+![child-capture](img/child-capture.png)
 
 ## Detailed example
 
@@ -151,12 +151,15 @@ All done, now when rendering an object, attributes are merged like so:
 ```
 
 First we apply the **default attributes** from the referenced object.
+
 > Here `duration` and `language` are applied.
 
 Then we apply the **children attributes** to every child.
+
 > In this case we override every `duration` to 4800 and add the new `xp` attribute.
 
 After that we apply the **relation attributes**, that are the most specific and as such,
 override all others attributes.
+
 > In this case only the `printalphabet` relation had attributes and so we apply
-the given `duration` to the final merged object.
+> the given `duration` to the final merged object.

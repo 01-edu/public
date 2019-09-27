@@ -7,7 +7,7 @@ Write a function, `BTreeApplyByLevel`, that applies the function given by `fn` t
 ### Expected function
 
 ```go
-func BTreeApplyByLevel(root *TreeNode, fn interface{})  {
+func BTreeApplyByLevel(root *TreeNode, f func(...interface{}) (int, error))  {
 
 }
 ```

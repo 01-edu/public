@@ -70,9 +70,9 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 1 -> 4 -> 9 -> <nil>
 -2 -> 1 -> 2 -> 4 -> 9 -> <nil>
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

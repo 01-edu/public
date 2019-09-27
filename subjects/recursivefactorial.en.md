@@ -1,6 +1,6 @@
 ## recursivefactorial
 
-### Intructions
+### Instructions
 
 Write a **recursive** function that returns the factorial of the `int` passed as parameter.
 
@@ -11,7 +11,7 @@ Errors (non possible values or overflows) will return `0`.
 ### Expected function
 
 ```go
-func RecursiveFactorial(int nb) int {
+func RecursiveFactorial(nb int) int {
 
 }
 ```
@@ -35,8 +35,8 @@ func main() {
 ```
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 24
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

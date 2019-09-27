@@ -1,6 +1,6 @@
 ## findnextprime
 
-### Intructions
+### Instructions
 
 Écrire une fonction qui renvoie le premier nombre premier qui est égal ou supérieur à l'`int` passé en paramètre.
 
@@ -9,7 +9,7 @@ La fonction devra être optimisée pour éviter les time-outs avec le testeur.
 ### Fonction attendue
 
 ```go
-func FindNextPrime(int nb) int {
+func FindNextPrime(nb int) int {
 
 }
 ```
@@ -37,9 +37,9 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 5
 5
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

@@ -39,13 +39,6 @@ swapoff /swapfile || true
 rm -f /swapfile
 sed -i '/swapfile/d' /etc/fstab
 
-# Network configuration
-interface=$(ip route get 1.1.1.1 | head -1 | cut -d' ' -f5)
-
-cat <<EOF>> /etc/network/interfaces
-allow-hotplug $interface
-iface $interface inet dhcp
-EOF
 
 # Purge unused Ubuntu packages
 PKGS="
@@ -62,7 +55,6 @@ gnome-power-manager
 gnome-software
 gnome-software-common
 memtest86+
-network-manager*
 orca
 popularity-contest
 python3-update-manager
@@ -112,6 +104,7 @@ gnome-calculator
 gnome-system-monitor
 gnome-tweaks
 i3lock
+imagemagick
 mpv
 zenity
 "

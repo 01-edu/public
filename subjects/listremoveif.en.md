@@ -81,8 +81,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 ----normal state----
 1 -> <nil>
 ------answer-----
@@ -92,5 +92,5 @@ student@ubuntu:~/piscine/test$ ./test
 1 -> Hello -> 1 -> There -> 1 -> 1 -> How -> 1 -> are -> you -> 1 -> <nil>
 ------answer-----
 Hello -> There -> How -> are -> you -> <nil>
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

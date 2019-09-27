@@ -7,12 +7,12 @@
 Exemple de résultat :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./revparams choumi is the best cat
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./revparams choumi is the best cat
 cat
 best
 the
 is
 choumi
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

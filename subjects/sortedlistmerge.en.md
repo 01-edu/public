@@ -68,8 +68,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 -2 -> 3 -> 5 -> 7 -> 9 -> <nil>
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```
