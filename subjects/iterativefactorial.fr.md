@@ -1,6 +1,6 @@
 ## iterativefactorial
 
-### Intructions
+### Instructions
 
 Écrire une fonction **itérative** qui renvoie la factorielle d'un `int` passé en paramètre.
 

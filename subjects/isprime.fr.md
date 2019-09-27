@@ -1,6 +1,6 @@
 ## isprime
 
-### Intructions
+### Instructions
 
 Écrire une fonction qui renvoie `true` si l'`int` passé en paramètre est un nombre premier. Autrement elle renvoie `false`.
 

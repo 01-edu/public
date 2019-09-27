@@ -1,6 +1,6 @@
 ## iterativepower
 
-### Intructions
+### Instructions
 
 Écrire une fonction **itérative** qui renvoie la puissance de deux `int` passés en paramètre.
 

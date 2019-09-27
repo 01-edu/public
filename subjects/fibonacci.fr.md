@@ -1,6 +1,6 @@
 ## fibonacci
 
-### Intructions
+### Instructions
 
 Écrire une fonction **récursive** qui renvoie la valeur de la suite de fibonacci correspondant à l'index passé en paramètre.
 

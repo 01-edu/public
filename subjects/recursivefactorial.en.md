@@ -1,6 +1,6 @@
 ## recursivefactorial
 
-### Intructions
+### Instructions
 
 Write a **recursive** function that returns the factorial of the `int` passed as parameter.
 

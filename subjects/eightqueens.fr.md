@@ -1,6 +1,6 @@
 ## eightqueens
 
-### Intructions
+### Instructions
 
 Écrire une [fonction](TODO-LINK) qui affiche toutes les solutions du [problème des huit dames](https://en.wikipedia.org/wiki/Eight_queens_puzzle).
 

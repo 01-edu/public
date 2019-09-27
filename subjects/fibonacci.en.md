@@ -1,6 +1,6 @@
 ## fibonacci
 
-### Intructions
+### Instructions
 
 Write an **recursive** function that returns the value of fibonacci sequence matching the index passed as parameter.
 

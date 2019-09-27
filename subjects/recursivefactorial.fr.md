@@ -1,6 +1,6 @@
 ## recursivefactorial
 
-### Intructions
+### Instructions
 
 Écrire une fonction **récursive** qui renvoie la factorielle d'un `int` passé en paramètre.
 
