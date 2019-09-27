@@ -75,6 +75,11 @@ And its output :
 ```console
 student@ubuntu:~/piscine-go/test$ go build
 student@ubuntu:~/piscine-go/test$ ./test
+-----first List------
+a -> b -> c -> d -> <nil>
+-----second List------
+e -> f -> g -> h -> <nil>
+-----Merged List-----
 a -> b -> c -> d -> e -> f -> g -> h -> <nil>
 student@ubuntu:~/piscine-go/test$
 ```

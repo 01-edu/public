@@ -63,7 +63,7 @@ func main() {
 	piscine.ListPushBack(link, "3")
 	piscine.ListPushBack(link, "5")
 
-	piscine.ListForEach(link, piscine.Add2)
+	piscine.ListForEach(link, piscine.Add2_node)
 
 	it := link.Head
 	for it != nil {
