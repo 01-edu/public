@@ -40,7 +40,7 @@ else
 	mount -o noatime,nobarrier /dev/disk/by-partlabel/01-tmp-home /mnt
 fi
 
-user_path=/mnt/.01/"$USER"
+user_path=/mnt/.01/user
 temp_path=/mnt/.01/tmp
 
 mkdir -p "$user_path" "$temp_path"

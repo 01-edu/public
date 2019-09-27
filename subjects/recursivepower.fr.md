@@ -1,6 +1,6 @@
 ## recursivepower
 
-### Intructions
+### Instructions
 
 Écrire une fonction **récursive** qui renvoie la puissance de deux `int` passés en paramètre.
 
@@ -11,7 +11,7 @@ Les puissances négatives renverront `0`. Les overflows **ne doivent pas** être
 ### Fonction attendue
 
 ```go
-func RecursivePower(int nb, int power) int {
+func RecursivePower(nb int, power int) int {
 
 }
 ```

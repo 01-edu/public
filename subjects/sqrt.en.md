@@ -1,13 +1,13 @@
 ## sqrt
 
-### Intructions
+### Instructions
 
 Write a function that returns the square root of the `int` passed as parameter if that square root is a whole number. Otherwise it returns `0`.
 
 ### Expected function
 
 ```go
-func Sqrt(int nb) int {
+func Sqrt(nb int) int {
 
 }
 ```
@@ -36,9 +36,9 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 2
 0
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

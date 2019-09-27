@@ -1,6 +1,6 @@
 ## recursivepower
 
-### Intructions
+### Instructions
 
 Write an **recursive** function that returns the power of the `int` passed as parameter.
 
@@ -11,7 +11,7 @@ Negative powers will return `0`. Overflows do **not** have to be dealt with.
 ### Expected function
 
 ```go
-func RecursivePower(int nb, int power) int {
+func RecursivePower(nb int, power int) int {
 
 }
 ```
@@ -38,8 +38,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 64
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```
