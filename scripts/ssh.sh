@@ -16,10 +16,3 @@ Port $SSH_PORT
 PasswordAuthentication no
 AllowUsers root
 EOF
-
-mkdir -p /root/.ssh
-chmod -f 700 /root/.ssh
-# echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIH30lZP4V26RVWWvAW91jM7UBSN68+xkuJc5cRionpMc' >> /root/.ssh/authorized_keys
-chmod -f 600 /root/.ssh/authorized_keys || true
-
-systemctl restart sshd.service

@@ -8,8 +8,6 @@ cd $SCRIPT_DIR
 
 DISK=$1
 
-apt-get -y install grub-efi-amd64
-
 sed -i -e 's/message=/message_null=/g' /etc/grub.d/10_linux
 
 cat <<EOF>> /etc/default/grub

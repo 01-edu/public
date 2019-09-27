@@ -13,12 +13,12 @@
 ### Utilisation
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test "abc"
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test "abc"
 nop
-student@ubuntu:~/piscine/test$ ./test "hello there"
+student@ubuntu:~/piscine-go/test$ ./test "hello there"
 uryyb gurer
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ ./test
 
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

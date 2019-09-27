@@ -58,13 +58,13 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 4
 3
 2
 1
 Tail &{1 <nil>}
 Head &{4 0xc42000a140}
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

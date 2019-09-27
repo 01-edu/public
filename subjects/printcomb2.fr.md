@@ -31,8 +31,8 @@ func main() {
 Voici la sortie tronquée :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 00 01, 00 02, 00 03, ..., 00 98, 00 99, 01 02, 01 03, ..., 97 98, 97 99, 98 99
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

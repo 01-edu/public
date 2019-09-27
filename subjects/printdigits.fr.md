@@ -9,8 +9,8 @@ Une ligne est une suite de caractères précédant le caractère [fin de ligne](
 ### Utilisation
 
 ```console
-student@ubuntu:~/piscine/printdigits$ go build
-student@ubuntu:~/piscine/printdigits$ ./printdigits
+student@ubuntu:~/piscine-go/printdigits$ go build
+student@ubuntu:~/piscine-go/printdigits$ ./printdigits
 0123456789
-student@ubuntu:~/piscine/printdigits$
+student@ubuntu:~/piscine-go/printdigits$
 ```

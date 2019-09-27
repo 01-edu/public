@@ -63,11 +63,11 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 Item selected -> 7
 Parent of selected item -> 4
 Left child of selected item -> 5
 Right child of selected item -> nil
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

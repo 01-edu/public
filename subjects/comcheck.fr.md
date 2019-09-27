@@ -11,10 +11,10 @@
 ### Usage
 
 ```console
-student@ubuntu:~/piscine/comcheck$ go build
-student@ubuntu:~/piscine/comcheck$ ./comcheck "I" "Will" "Enter" "the" "galaxy"
+student@ubuntu:~/piscine-go/comcheck$ go build
+student@ubuntu:~/piscine-go/comcheck$ ./comcheck "I" "Will" "Enter" "the" "galaxy"
 Alert!!!
-student@ubuntu:~/piscine/comcheck$ ./comcheck "galaxy 01" "do" "you" "hear" "me"
+student@ubuntu:~/piscine-go/comcheck$ ./comcheck "galaxy 01" "do" "you" "hear" "me"
 Alert!!!
-student@ubuntu:~/piscine/comcheck$
+student@ubuntu:~/piscine-go/comcheck$
 ```

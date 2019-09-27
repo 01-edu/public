@@ -10,5 +10,5 @@ Example of output :
 student@ubuntu:~/piscine-go/printprogramname$ go build main.go
 student@ubuntu:~/piscine-go/printprogramname$ ./main
 ./main
-student@ubuntu:~/piscine-g0/printprogramname$
+student@ubuntu:~/piscine-go/printprogramname$
 ```

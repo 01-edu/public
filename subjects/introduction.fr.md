@@ -27,9 +27,9 @@ Où `{username}` est votre `github username`
 Si l'`{username}` est `kigiri` :
 
 ```console
-user@host:~/piscine$ ./hello.sh
+user@host:~/piscine-go$ ./hello.sh
 Hello kigiri!
-user@host:~/piscine$
+user@host:~/piscine-go$
 ```
 
 #### 3- go-say-hello
