@@ -7,7 +7,7 @@ Write a function that returns the square root of the `int` passed as parameter i
 ### Expected function
 
 ```go
-func Sqrt(int nb) int {
+func Sqrt(nb int) int {
 
 }
 ```

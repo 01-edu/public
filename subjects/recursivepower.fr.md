@@ -11,7 +11,7 @@ Les puissances négatives renverront `0`. Les overflows **ne doivent pas** être
 ### Fonction attendue
 
 ```go
-func RecursivePower(int nb, int power) int {
+func RecursivePower(nb int, power int) int {
 
 }
 ```

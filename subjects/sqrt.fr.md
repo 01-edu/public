@@ -7,7 +7,7 @@
 ### Fonction attendue
 
 ```go
-func Sqrt(int nb) int {
+func Sqrt(nb int) int {
 
 }
 ```

@@ -11,7 +11,7 @@ Errors (non possible values or overflows) will return `0`.
 ### Expected function
 
 ```go
-func RecursiveFactorial(int nb) int {
+func RecursiveFactorial(nb int) int {
 
 }
 ```
