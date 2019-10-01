@@ -2,16 +2,15 @@
 
 ### Instructions
 
-Write a program that takes one or more strings and that, **for each argument**:
--puts the last character of each word (if it is a letter) in uppercase and the rest
-in lowercase
--then it displays the result followed by a `\n`.
+Écrire un programme avec une ou plusieurs `strings` comme arguments et qui, **pour chaque argument**:
+-place le dernier caractère de chaque mot (si c'est une lettre) en majuscule et le reste en minuscule.
+-affiche ensuite le résultat suivi d'un newline(`'\n'`).
 
-A word is a sequence of alphanumerical characters.
+Un mot est une suite de caractères alphanumériques.
 
-If there are no parameters, the program displays a `\n`.
+Si il n'y a pas de paramètre, le programme affiche un newline.
 
-Examples of outputs :
+### Utilisation
 
 ```console
 student@ubuntu:~/student/reversestrcap$ go build

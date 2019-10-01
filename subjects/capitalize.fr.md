@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Écrire une fonction qui met en majuscule la premiere lettre de chaque mot et en minuscule les autres lettres du reste du mot d'une `string`.
+Écrire une fonction qui met en majuscule la première lettre de chaque mot et en minuscule les autres lettres du reste du mot d'une `string`.
 
 Un mot est une suite de caractères **alphanumériques**.
 
@@ -34,8 +34,8 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 Hello! How Are You? How+Are+Things+4you?
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

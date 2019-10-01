@@ -2,8 +2,8 @@
 
 ### Instructions
 
-Write a function that takes a `byte`, reverses it `bit` by `bit` (like the
-example) and returns the result.
+Write a function that takes a `byte`, that reverses it `bit` by `bit` (like the
+example) and that returns the result.
 
 ### Expected function
 

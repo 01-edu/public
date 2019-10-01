@@ -2,21 +2,21 @@
 
 ### Instructions
 
-Write a program that takes a positive (or zero) number expressed in base 10, and displays it in base 16 ( with lowercase letters) followed by a newline.
+Écrire un programme qui prend un nombre positif (ou zéro) écrit en base 10, et qui l'affiche en base 16 (avec les lettres en minuscule) suivi d'un newline(`'\n`').
 
-- If the number of parameters is not 1, the program displays a newline.
+- Si le nombre de paramètres est différent de 1, le programme affiche un newline.
 
-Examples of outputs :
+### Utilisation
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test "10"
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test "10"
 a
-student@ubuntu:~/piscine/test$ ./test "255"
+student@ubuntu:~/piscine-go/test$ ./test "255"
 ff
-student@ubuntu:~/piscine/test$ ./test "5156454"
+student@ubuntu:~/piscine-go/test$ ./test "5156454"
 4eae66
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 
-student@ubuntu:~/piscine/
+student@ubuntu:~/piscine-go/
 ```

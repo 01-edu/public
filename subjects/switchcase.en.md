@@ -8,15 +8,15 @@ Write a program that takes a `string` and reverses the case of all its letters.
 
 - The result must be followed by a newline(`'\n'`).
 
-- If the number of arguments is not 1, the program displays a newline(`'\n'`).
+- If the number of arguments is different from 1, the program displays a newline(`'\n'`).
 
 ### Usage
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test "SometHingS iS WronG"
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test "SometHingS iS WronG"
 sOMEThINGs Is wRONg
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ ./test
 
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

@@ -4,7 +4,7 @@
 
 - Écrire une fonction qui reproduit le comportement de la fonction atoi en Go. Atoi transforme un nombre représenté en `string` (chaîne de caractères) en `int` (entier).
 
-- Atoi retourne `0` si la `string` n'est pas considéré un nombre valide. Pour cet exercice des **`string` non valides seront testées!**. Certaines contiendront d'autres charactères que des chiffres.
+- Atoi retourne `0` si la `string` n'est pas considérée comme un nombre valide. Pour cet exercice des **`string` non valides seront testées!**. Certaines contiendront d'autres caractères que des chiffres.
 
 - Pour cet exercice la gestion des signes + ou - ne doit pas être prise en compte.
 
@@ -52,11 +52,11 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 12345
 12345
 0
 0
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

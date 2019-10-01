@@ -31,10 +31,10 @@ func main() {
 This is the incomplete output :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 012, 013, 014, 015, 016, 017, 018, 019, 023, ..., 689, 789
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```
 
 `000` or `999` are not valid combinations because the digits are not different.

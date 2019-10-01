@@ -6,20 +6,18 @@ Download and boot the [last Ubuntu release](http://releases.ubuntu.com/19.04/ubu
 
 Follow the steps :
 
-![img1](img/1.png)
-![img2](img/2.png)
-![img3](img/3.png)
+![img1](img/ubuntu-installation/1.png)
+![img2](img/ubuntu-installation/2.png)
+![img3](img/ubuntu-installation/3.png)
 
 The partitioning is :
 
-1) 256 MB : EFI partition
-2) 20 GB : system partition
-3) 32 GB : unused partition (will be used later)
-4) rest : unused partition (will be used later)
+1. 256 MB : EFI partition
+2. 20 GB : system partition
 
-![img4](img/4.png)
-![img5](img/5.png)
-![img6](img/6.png)
+![img4](img/ubuntu-installation/4.png)
+![img5](img/ubuntu-installation/5.png)
+![img6](img/ubuntu-installation/6.png)
 
 Remove the installation disk and then reboot.
 
@@ -27,43 +25,42 @@ Skip the welcoming window.
 
 Don't install updates if Ubuntu asks to. The scripts will.
 
-Start the disk utility to name partitions so that OverlayFS can identify them.
+## OS customization
 
-3) 32 GB - **Partition 3** : `01-tmp-home`
-4) rest - **Partition 4** : `01-tmp-system`
+You can overwrite the files of the folder `system` by setting an environment variable named `OVERWRITE` with the format : `Destination folder;Git URL`.
 
-The same procedure is required to make USB disk usable for the students, the partition name must be : `01-home`
+For example to write the content of the repository [github.com/xpetit/custom](https://github.com/xpetit/custom) in the system folder :
 
-![img7](img/7.png)
-![img8](img/8.png)
-![img9](img/9.png)
+```shell
+export OVERWRITE='.;https://github.com/xpetit/custom.git'
+```
 
 ## OS configuration
 
+Run a terminal and type these commands :
+
 ```shell
-student@tmp-hostname:~$ wget github.com/01-edu/public/archive/master.zip
-student@tmp-hostname:~$ unzip master.zip
-student@tmp-hostname:~$ cd public-master/scripts
-student@tmp-hostname:~$ sudo ./install_client.sh
-[...]
-Ask for student user password (will be removed later)
-[...]
-Ask to set the root password
-[...]
-Long installation/configuration process
-[...]
-student@tmp-hostname:~$ cat dconfig.txt | dconf load /
-student@tmp-hostname:~$ reboot
+unset HISTFILE
+sudo apt-get -y install curl
+bash <(curl -sSL raw.githubusercontent.com/01-edu/public/master/scripts/kickstart.sh)
 ```
+
+The script will ask for student user password (which will be deleted after) and then after a long configuration process it will restart the computer.
 
 The system is now read-only, every data is written to a temporary partition.
 
 The session is password-less.
 
-To gain a superuser terminal with read/write access to the filesystem, type these commands:
+To gain a superuser terminal, use SSH :
 
-```shell
-student@tmp-hostname:~$ su -
-Password:
-root@tmp-hostname:~# overlayroot-chroot
+```console
+user@remote:~$ ssh -p521 root@IP_ADDRESS
+```
+
+To gain access with read/write access to the filesystem, use this command :
+
+```console
+root@ubuntu:~# overlayroot-chroot
+INFO: Chrooting into [/media/root-ro]
+root@ubuntu:/#
 ```

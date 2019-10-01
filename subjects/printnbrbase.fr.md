@@ -6,13 +6,13 @@
 
 Si la base n'est pas valide, la fonction affiche `NV` (Not Valid):
 
-Régles de validité d'une base :
+Règles de validité d'une base :
 
-- Une base doit contenir au moins 2 charactères.
-- Chaque charactère d'une base doit être unique.
-- Une base ne doit pas contenir les charactères `+` ou `-`.
+- Une base doit contenir au moins 2 caractères.
+- Chaque caractère d'une base doit être unique.
+- Une base ne doit pas contenir les caractères `+` ou `-`.
 
-La fonction doit gérer les nombres négatifs. (comme montré sur l'exemple)
+La fonction doit gérer les nombres négatifs (comme montré sur l'exemple).
 
 ### Fonction attendue
 
@@ -52,12 +52,12 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 125
 -1111101
 7D
 -uoi
 NV
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

@@ -2,33 +2,33 @@
 
 ## Instructions
 
-Write a program that takes an undefined number of arguments which could be considered as options and writes on the standard output a representation of those options as groups of bytes followed by a newline.
+Écrire un programme qui prend un nombre indéfini d'arguments qui peuvent être considérés comme des `options` et qui affiche sur la sortie standard une représentation de ces `options` comme groupes de `bytes`(octets) suivi d'un newline(`'\n'`).
 
-- An option is an argument that begins by a `-` and have multiple characters which could be :
-	- abcdefghijklmnopqrstuvwxyz
+- Une `option` est un argument qui commence avec un `-` et qui peux avoir de multiples caractères qui peuvent être :
+  -abcdefghijklmnopqrstuvwxyz
 
-- All options are stocked in a single int and each options represents a bit of that int, and should be stocked like this :
+- Toutes les `options` sont stockées dans un seul `int` et chaque `option` représente un bit de cet `int`, et doit être stocké comme ci-dessous :
 
-	- 00000000 00000000 00000000 00000000
-	- ******zy xwvutsrq ponmlkji hgfedcba
+      	- 00000000 00000000 00000000 00000000
+      	- ******zy xwvutsrq ponmlkji hgfedcba
 
-- Launching the program without arguments or with the `-h` flag activated must print all the valid options on the standard output, as shown on one of the following examples.
+- L'éxécution du programme sans argument ou avec l'option `-h` activée doit afficher toutes les `options` valides sur la sortie standard, comme montré dans un des exemples ci-dessous.
 
-- A wrong option must print "Invalid Option" followed by a newline.
+- Une mauvaise `option` doit afficher `Invalid Option` suivi d'un newline.
 
-## Expected output
+## Utilisation
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test | cat -e
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test | cat -e
 options: abcdefghijklmnopqrstuvwxyz$
-student@ubuntu:~/piscine/test$ ./test -abc -ijk | cat -e
+student@ubuntu:~/piscine-go/test$ ./test -abc -ijk | cat -e
 00000000 00000000 00000111 00000111$
-student@ubuntu:~/piscine/test$ ./test -z | cat -e
+student@ubuntu:~/piscine-go/test$ ./test -z | cat -e
 00000010 00000000 00000000 00000000$
-student@ubuntu:~/piscine/test$ ./test -abc -hijk | cat -e
+student@ubuntu:~/piscine-go/test$ ./test -abc -hijk | cat -e
 options: abcdefghijklmnopqrstuvwxyz$
-student@ubuntu:~/piscine/test$ ./test -% | cat -e
+student@ubuntu:~/piscine-go/test$ ./test -% | cat -e
 Invalid Option$
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

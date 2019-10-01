@@ -4,13 +4,13 @@
 
 - Write a [function](TODO-LINK) that simulates the behaviour of the `Atoi` function in Go. `Atoi` transforms a number represented as a `string` in a number represented as an `int`.
 
-- Atoi returns `0` if the `string` is not considered as a valid number. For this exercise **non-valid `string` chains will be tested**. Some will contain non-digits characters.
+- `Atoi` returns `0` if the `string` is not considered as a valid number. For this exercise **non-valid `string` chains will be tested**. Some will contain non-digits characters.
 
 - For this exercise the handling of the signs + or - **does have** to be taken into account.
 
 - This function will **only** have to return the `int` `nbr`. For this exercise the `error` return of atoi is not required.
 
-### Format required
+### Expected function
 
 ```go
 func Atoi(s string) int {
@@ -63,8 +63,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 12345
 12345
 0
@@ -73,5 +73,5 @@ student@ubuntu:~/piscine/test$ ./test
 -1234
 0
 0
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

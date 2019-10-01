@@ -48,10 +48,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 12345
 12345
 0
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

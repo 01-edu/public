@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a function that takes `(arr [10]int)`, and displays the memory as in the example.
+Écrire une fonction qui prend `(arr [10]int)`, et qui affiche la mémoire comme dans l'exemple.
 
-### Expected function
+### Fonction attendue
 
 ```go
 func PrintMemory(arr [10]int) {
@@ -12,9 +12,9 @@ func PrintMemory(arr [10]int) {
 }
 ```
 
-### Usage
+### Utilisation
 
-Here is a possible program to test your function :
+Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
 ```go
 func main() {
@@ -23,14 +23,14 @@ func main() {
 }
 ```
 
-And its output :
+Et son résultat :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test | cat -e
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test | cat -e
 6800 0000 6500 0000 6c00 0000 6c00 0000 $
 6f00 0000 1000 0000 1500 0000 2a00 0000 $
 0000 0000 0000 0000 $
 hello..*..$
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

@@ -39,6 +39,7 @@ swapoff /swapfile || true
 rm -f /swapfile
 sed -i '/swapfile/d' /etc/fstab
 
+
 # Purge unused Ubuntu packages
 PKGS="
 apport
@@ -87,7 +88,6 @@ systemctl disable $SERVICES
 
 SERVICES="
 grub-common.service
-NetworkManager-wait-online.service
 plymouth-quit-wait.service
 "
 systemctl mask $SERVICES
@@ -104,6 +104,7 @@ gnome-calculator
 gnome-system-monitor
 gnome-tweaks
 i3lock
+imagemagick
 mpv
 zenity
 "

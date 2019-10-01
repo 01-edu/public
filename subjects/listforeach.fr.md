@@ -63,7 +63,7 @@ func main() {
 	piscine.ListPushBack(link, "3")
 	piscine.ListPushBack(link, "5")
 
-	piscine.ListForEach(link, piscine.Add2)
+	piscine.ListForEach(link, piscine.Add2_node)
 
 	it := link.Head
 	for it != nil {
@@ -76,11 +76,11 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 12
 22
 32
 52
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

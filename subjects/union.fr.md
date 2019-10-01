@@ -6,7 +6,7 @@
 
 L'affichage se fera dans l'ordre d'apparition des caractères de la ligne de commande, et il sera suivi d'un newline(`'\n'`).
 
-Si le nombre d'arguments n'est pas 2, le programme affiche un newline(`'\n'`).
+Si le nombre d'arguments est différent de 2, le programme affiche un newline(`'\n'`).
 
 ### Utilisation
 

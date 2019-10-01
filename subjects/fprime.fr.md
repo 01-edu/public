@@ -2,29 +2,29 @@
 
 ### Instructions
 
-Write a program that takes a positive `int` and displays its prime factors on the standard output, followed by a newline.
+Écrire un programme qui prend un `int` positif et qui affiche ses facteurs premiers sur la sortie standard, suivi d'un newline(`'\n'`).
 
-- Factors must be displayed in ascending order and separated by `*`, so that the expression in the output gives the right result.
+- Les facteurs doivent être affichés en ordre croissant et séparés par `*`.
 
-- If the number of parameters is not 1, the program displays a newline.
+- Si le nombre de paramètres est différent de 1, le programme affiche un newline.
 
-- The input, when there is one, will always be valid.
+- L'input (l'entrée), quand il y en a un, sera toujours valide.
 
-Example of output :
+### Utilisation
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test 225225
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test 225225
 3*3*5*5*7*11*13
-student@ubuntu:~/piscine/test$ ./test 8333325
+student@ubuntu:~/piscine-go/test$ ./test 8333325
 3*3*5*5*7*11*13*37
-student@ubuntu:~/piscine/test$ ./test 9539
+student@ubuntu:~/piscine-go/test$ ./test 9539
 9539
-student@ubuntu:~/piscine/test$ ./test 804577
+student@ubuntu:~/piscine-go/test$ ./test 804577
 804577
-student@ubuntu:~/piscine/test$ ./test 42
+student@ubuntu:~/piscine-go/test$ ./test 42
 2*3*7
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ ./test
 
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

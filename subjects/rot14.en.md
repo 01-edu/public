@@ -4,7 +4,7 @@
 
 Write a function `rot14` that returns the `string` within the parameter transformed into a `rot14 string`.
 
-- For more information look what `rot13` stands for.
+- There is the need to know what `rot13` stands for.
 
 ### Expected function
 
@@ -40,8 +40,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 Vszzc Vck ofs Mci
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

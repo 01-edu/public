@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a function `CreateElem` that creates a new element of type`Node`.
+Écrire une fonction `CreateElem` qui crée un nouvel élément de type `Node`.
 
-### Expected function and structure
+### Fonction attendue et structure
 
 ```go
 type Node struct {
@@ -16,9 +16,9 @@ func CreateElem(n *Node, value int) {
 }
 ```
 
-### Usage
+### Utilisation
 
-Here is a possible [program](TODO-LINK) to test your function :
+Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
 ```go
 package main
@@ -35,11 +35,11 @@ func main() {
 }
 ```
 
-And its output :
+Et son résultat :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 &{1234}
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

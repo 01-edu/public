@@ -8,7 +8,7 @@ Write a program that takes a `string` and displays its last word, followed by a 
 
 - The output will be followed by a newline(`'\n'`).
 
-- If the number of parameters is not 1, or if there are no words, the program displays a newline(`'\n'`).
+- If the number of parameters is different from 1, or if there are no word, the program displays a newline(`'\n'`).
 
 ### Usage
 

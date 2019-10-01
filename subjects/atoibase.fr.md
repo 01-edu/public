@@ -2,15 +2,15 @@
 
 ### Instructions
 
-Écrire une fonction qui prend un nombre `string` et sa base `string` en paramètres et retournes sa convertion en `int`.
+Écrire une fonction qui prend un nombre `string` et sa base `string` en paramètres et retourne sa conversion en `int`.
 
-Si la base n'est pas valide elle retournes `0`:
+Si la base n'est pas valide elle retourne `0`:
 
-Régles de validité d'une base :
+Règles de validité d'une base :
 
-- Une base doit contenir au moins 2 charactères.
-- Chaque charactère d'une base doit être unique.
-- Une base ne doit pas contenir les charactères `+` ou `-`.
+- Une base doit contenir au moins 2 caractères.
+- Chaque caractère d'une base doit être unique.
+- Une base ne doit pas contenir les caractères `+` ou `-`.
 
 Seuls des nombres en `string` valides seront testés.
 
@@ -48,12 +48,12 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 125
 125
 125
 125
 0
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

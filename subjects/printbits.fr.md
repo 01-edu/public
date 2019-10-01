@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a function that takes a byte, and prints it in binary value **without a newline at the end**.
+Écrire une fonction qui prend un `byte`, et qui l'affiche en valeur binaire **sans newline à la fin**.
 
-### Expected function
+### Fonction attendue
 
 ```go
 func PrintBits(octe byte) {
@@ -14,6 +14,6 @@ func PrintBits(octe byte) {
 
 ### Usage
 
-Example of output:
+Exemple d'output:
 
-If 2 is passed to the function PrintBits, it will print "00000010".
+Si 2 est passé à la fonction `PrintBits`, elle affichera "00000010".

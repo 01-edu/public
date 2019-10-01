@@ -1,13 +1,13 @@
 ## sqrt
 
-### Intructions
+### Instructions
 
 Écrire une fonction qui renvoie la racine carré d'un `int` passé en paramètre as parameter si cette racine carré est un nombre entier. Autrement elle renvoie `0`.
 
 ### Fonction attendue
 
 ```go
-func Sqrt(int nb) int {
+func Sqrt(nb int) int {
 
 }
 ```
@@ -36,9 +36,9 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 2
 0
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

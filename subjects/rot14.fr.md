@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Écrire une fonction `rot14` qui retournes la `string` en paramètre transformée en `string rot14`.
+Écrire une fonction `rot14` qui retourne la `string` en paramètre transformée en `string rot14`.
 
-- Pour plus d'informations chercher ce que `rot13` signifie.
+- Il faut savoir ce que `rot13` signifie.
 
 ### Fonction attendue
 
@@ -40,8 +40,8 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 Vszzc Vck ofs Mci
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

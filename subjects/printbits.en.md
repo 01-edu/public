@@ -16,4 +16,4 @@ func PrintBits(octe byte) {
 
 Example of output:
 
-If 2 is passed to the function PrintBits, it will print "00000010".
+If 2 is passed to the function `PrintBits`, it will print "00000010".

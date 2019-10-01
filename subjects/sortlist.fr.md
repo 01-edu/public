@@ -2,21 +2,21 @@
 
 ### Instructions
 
-Write a function that must:
+Écrire une fonction qui doit :
 
-- Sort the list given as a parameter, using the function cmp to select the order to apply,
+- Trier la liste donnée en paramètre en utilisant la fonction cmp pour sélectionner l'ordre à appliquer,
 
-- Return a pointer to the first element of the sorted list.
+- Retourner un pointeur au premier élément de la liste triée.
 
-Duplications must remain.
+Les duplications doivent rester.
 
-Inputs will always be consistent.
+Les inputs seront toujours valides.
 
-The `type NodeList` must be used.
+Le `type NodeList` doit être utilisé.
 
-Functions passed as `cmp` will always return `true` if `a` and `b` are in the right order, otherwise it will return `false`.
+Les fonctions passées comme `cmp` retourneront toujours `true` si `a` et `b` sont dans le bon ordre, sinon elles retourneront `false`.
 
-### Expected function
+### Fonction et structure attendues
 
 ```go
 type Nodelist struct {
@@ -29,7 +29,7 @@ func SortList (l *NodeList, cmp func(a,b int) bool) *NodeList{
 }
 ```
 
-- For example, the following function used as `cmp` will sort the list in ascending order :
+- Par exemple, la fonction suivante utilisée comme `cmp` triera la liste dans l'ordre croissant :
 
 ```go
 func ascending(a, b int) bool{

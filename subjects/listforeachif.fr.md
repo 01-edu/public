@@ -86,7 +86,7 @@ func PrintList(l *piscine.List) {
 		fmt.Print(it.Data, "->")
 		it = it.Next
 	}
-	fmt.Println()
+	fmt.Print("nil","\n")
 }
 
 func main() {
@@ -118,14 +118,15 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
-1 -> hello -> 3 -> there -> 23 -> ! -> 54 -> <nil>
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
+1->hello->3->there->23->!->54->nil
 --------function applied--------
-hello
-there
-!
+1
+3
+23
+54
 --------function applied--------
-1 -> 1 -> 3 -> 1 -> 23 -> 1 -> 54 -> <nil>
-student@ubuntu:~/piscine/test$
+1->2->3->2->23->2->54->nil
+student@ubuntu:~/piscine-go/test$
 ```

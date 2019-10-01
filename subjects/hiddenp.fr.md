@@ -2,17 +2,16 @@
 
 ### Instructions
 
-Write a program named hiddenp that takes two strings and that, if the first string is hidden in the second one, displays 1
-followed by a newline, otherwise it displays 0 followed by a newline.
+Écrire un programme nommé `hiddenp` qui prend deux `strings` et qui, si la première `string` est cachée dans la deuxième, affiche `1`
+suivi d'un newline(`'\n'`), autrement il affiche `0` suivi d'un newline.
 
-Let s1 and s2 be strings. It is considered that s1 is hidden in s2 if it is possible to
-find each character from s1 in s2, **in the same order as they appear in s1.**
+Considérons s1 et s2 comme étant des `strings`. Il est considéré que s1 est cachée dans s2 si il est possbile de trouver chaque caractère de s1 dans s2, **dans le même ordre d'apparence que s1.**
 
-If s1 is an empty string it is considered hidden in any string.
+Si s1 est une `string` vide elle est considérée cachée dans n'importe quelle `string`.
 
-If the number of parameters is not 2, the program displays a newline.
+Si le nombre de paramètres est différent de 2, le programme affiche un newline.
 
-Example of output :
+### Utilisation
 
 ```console
 student@ubuntu:~/student/hiddenp$ go build

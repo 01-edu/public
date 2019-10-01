@@ -9,17 +9,17 @@ letters by the letter 13 spaces ahead in alphabetical order.
 
 - The output will be followed by a newline(`'\n'`).
 
-- If the number of arguments is not 1, the program displays a newline(`'\n'`).
+- If the number of arguments is different from 1, the program displays a newline(`'\n'`).
 
 ### Usage
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test "abc"
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test "abc"
 nop
-student@ubuntu:~/piscine/test$ ./test "hello there"
+student@ubuntu:~/piscine-go/test$ ./test "hello there"
 uryyb gurer
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ ./test
 
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

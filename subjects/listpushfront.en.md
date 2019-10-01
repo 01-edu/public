@@ -1,8 +1,8 @@
-## listpushback
+## listpushfront
 
 ### Instructions
 
-Write a function `ListPushBack` that inserts a new element `NodeL` at the beginning of the list `l` while using the structure `List`
+Write a function `ListPushFront` that inserts a new element `NodeL` at the beginning of the list `l` while using the structure `List`
 
 ### Expected function and structure
 
@@ -29,8 +29,9 @@ Here is a possible [program](TODO-LINK) to test your function :
 package main
 
 import (
-	piscine ".."
 	"fmt"
+
+	piscine ".."
 )
 
 func main() {
@@ -43,19 +44,18 @@ func main() {
 
 	it := link.Head
 	for it != nil {
-		fmt.Println(it.Data)
+		fmt.Print(it.Data, " ")
 		it = it.Next
 	}
+	fmt.Println()
 }
 ```
 
 And its output :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
-how are you
-man
-Hello
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
+how are you man Hello
+student@ubuntu:~/piscine-go/test$
 ```

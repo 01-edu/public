@@ -2,17 +2,15 @@
 
 ### Instructions
 
-Write a program that takes a string and displays it with exactly three spaces
-between each word, with no spaces or tabs at either the beginning nor the end.
+Écrire un programme qui prend une `string` et qui l'affiche avec exactement 3 espaces entre chaque mot, sans espace ou tabulation ni au début ni à la fin.
 
-The string will be followed by a newline.
+La `string` sera suivie d'un newline(`'\n'`).
 
-A word is a sequence of alphanumerical characters.
+Un mot est une suite de caractères alphanumériques.
 
-If the number of parameters is not 1, or if there are no words, the program displays
-a newline.
+Si le nombre de paramètres n'est pas 1, ou si il n'y a pas de mot, le programme affiche un newline.
 
-Examples of outputs :
+### Utilisation
 
 ```console
 student@ubuntu:~/student/expandstr$ go build

@@ -4,7 +4,7 @@
 
 Écrire une fonction qui sépare les mots d'une `string` et les met dans un tableau de `string`.
 
-Les séparateurs sont les charactéres de la `string` charset donnée en paramétre.
+Les séparateurs sont les caractères de la `string charset` donnée en paramétre.
 
 ### Fonction attendue
 
@@ -33,8 +33,8 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 [Hello how are you?]
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

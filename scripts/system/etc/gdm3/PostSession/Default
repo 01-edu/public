@@ -16,9 +16,11 @@ PS4='-\D{%F %T} '
 # Print commands and their arguments as they are executed.
 set -x
 
-passwd -d $USER
-sync
-sleep 0.5
-lsof -t $HOME | xargs kill || true
-umount -l $HOME
-umount -l /mnt
+passwd -d "$USER" ||:
+systemctl stop user@1000.service
+
+# Make sure the mountpoints are free
+kill $(lsof -t "$HOME" /mnt) $(ps --no-headers -u "$USER" -o pid)
+umount "$HOME" /mnt
+umount /dev/disk/by-partlabel/01-home ||:
+wipefs -a /dev/disk/by-partlabel/01-tmp-home

@@ -1,6 +1,6 @@
 ## iterativepower
 
-### Intructions
+### Instructions
 
 Écrire une fonction **itérative** qui renvoie la puissance de deux `int` passés en paramètre.
 
@@ -9,7 +9,7 @@ Les puissances négatives renverront `0`. Les overflows **ne doivent pas** être
 ### Fonction attendue
 
 ```go
-func IterativePower(int nb, int power) int {
+func IterativePower(nb int, power int) int {
 
 }
 ```
@@ -37,8 +37,8 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 64
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```

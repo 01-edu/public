@@ -6,15 +6,15 @@
 
 - L'affichage sera suivi d'un newline(`'\n'`).
 
-- Si le nombre d'arguments n'est pas 2, le programme affiche un newline(`'\n'`).
+- Si le nombre d'arguments est différent de 2, le programme affiche un newline(`'\n'`).
 
 ### Utilisation
 
 ```console
-student@ubuntu:~/piscine/test$ go build
-student@ubuntu:~/piscine/test$ ./test "padinton" "paqefwtdjetyiytjneytjoeyjnejeyj"
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test "padinton" "paqefwtdjetyiytjneytjoeyjnejeyj"
 padinto
-student@ubuntu:~/piscine/test$ ./test ddf6vewg64f  twthgdwthdwfteewhrtag6h4ffdhsd
+student@ubuntu:~/piscine-go/test$ ./test ddf6vewg64f  twthgdwthdwfteewhrtag6h4ffdhsd
 df6ewg4
-student@ubuntu:~/piscine/test$
+student@ubuntu:~/piscine-go/test$
 ```
