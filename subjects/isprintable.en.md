@@ -7,7 +7,6 @@ Write a function that returns `true` if the `string` passed in parameter only co
 ### Expected function
 
 ```go
-package main
 func IsPrintable(str string) bool {
 
 }

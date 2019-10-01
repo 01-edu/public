@@ -7,7 +7,6 @@
 ### Fonction attendue
 
 ```go
-package main
 func IsPrintable(str string) bool {
 
 }
