@@ -32,6 +32,6 @@ And its output :
 ```console
 student@ubuntu:~/piscine-go/test$ go build
 student@ubuntu:~/piscine-go/test$ ./test
-Hello World!%
+Hello World!
 student@ubuntu:~/piscine-go/test$
 ```
