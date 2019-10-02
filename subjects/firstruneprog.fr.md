@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a program that receives a `string` and returns the first `rune` of that `string`.
+Écrire un programme qui reçoit une `string` et qui retourne la première `rune` de cette `string`.
 
-### Expected output :
+### Utilisation :
 
 ```console
 student@ubuntu:~/piscine-go/firstruneprog$ go build
