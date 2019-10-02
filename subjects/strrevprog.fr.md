@@ -2,9 +2,9 @@
 
 ### Instructions
 
-- Write a program that reverses a `string` and prints it in the standard output.
+- Écrire un programme qui inverse une `string` et qui l'affiche dans la sortie standard.
 
-### Expected output :
+### Utilisation :
 
 ```console
 student@ubuntu:~/piscine-go/strrevprog$ go build
