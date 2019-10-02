@@ -17,12 +17,12 @@ Write the program which must:
 ### Expected output :
 
 ```console
-student@ubuntu:~/reverserange$ go build
-student@ubuntu:~/reverserange$ ./reverserange 1 3
+student@ubuntu:~/range$ go build
+student@ubuntu:~/range$ ./range 1 3
 [1 2 3]
-student@ubuntu:~/reverserange$ ./reverserange -1 2
+student@ubuntu:~/range$ ./range -1 2
 [-1 0 1 2]
-student@ubuntu:~/reverserange$ ./reverserange 0 0
+student@ubuntu:~/range$ ./range 0 0
 [0]
-student@ubuntu:~/reverserange$
+student@ubuntu:~/range$
 ```
