@@ -2,14 +2,27 @@
 
 ### Instructions
 
-Write a function that determines if a given number is a power of 2.
+Write a program that determines if a given number is a power of 2.
 
-This function returns `true` if the given number is a power of 2, otherwise it returns `false`.
+This program must print `true` if the given number is a power of 2, otherwise it prints `false`.
 
-### Expected function
+- If there's no arguments passed to the program or there's more that one it shohuld print `\n`.
 
-```go
-func IsPowerOf2(n uint) bool {
+- In case of error you shoud handle it.
 
-}
+### Expected output :
+
+```console
+student@ubuntu:~/ispowerof2$ go build
+student@ubuntu:~/ispowerof2$ ./ispowerof2 2 | cat -e
+true$
+student@ubuntu:~/ispowerof2$ ./ispowerof2 64 | cat -e
+true$
+student@ubuntu:~/ispowerof2$ ./ispowerof2 513 | cat -e
+false$
+student@ubuntu:~/ispowerof2$ ./ispowerof2
+
+student@ubuntu:~/ispowerof2$ ./ispowerof2 64 1024
+
+student@ubuntu:~/ispowerof2$
 ```
