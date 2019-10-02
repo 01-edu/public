@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a program that receives a `string` and returns the last `rune` of a `string`.
+Écrire un programme qui reçoit une `string` en paramètre et qui retourne la dernière `rune` de la `string`.
 
-### Expected output :
+### Utilisation :
 
 ```console
 student@ubuntu:~/piscine-go/firstruneprog$ go build
