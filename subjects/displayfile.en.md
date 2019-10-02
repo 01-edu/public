@@ -4,7 +4,7 @@
 
 Write a program that displays, on the standard output, the content of a file given as argument.
 
-- Create a file `quest8.txt` and write nito it the sentence `Almost there!!`
+- Create a file `quest8.txt` and write into it the sentence `Almost there!!`
 
 - The argument of the program in this case should be, `quest8.txt`.
 
@@ -12,7 +12,7 @@ Write a program that displays, on the standard output, the content of a file giv
   - `File name missing`.
   - `Too many arguments`.
 
-### Usage:
+### Usage :
 
 ```console
 student@ubuntu:~/student/displayfile$ go build

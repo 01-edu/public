@@ -10,6 +10,7 @@ The separators are spaces, tabs and newlines.
 
 ```go
 func SplitWhiteSpaces(str string) []string {
+
 }
 ```
 
@@ -27,7 +28,8 @@ import (
 
 func main() {
 	str := "Hello how are you?"
-	fmt.Println(piscine.SplitWhiteSpaces(str)}
+	fmt.Println(piscine.SplitWhiteSpaces(str))
+}
 ```
 
 And its output :

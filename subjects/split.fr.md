@@ -4,12 +4,13 @@
 
 Écrire une fonction qui sépare les mots d'une `string` et les met dans un tableau de `string`.
 
-Les séparateurs sont les caractères de la `string charset` donnée en paramétre.
+Les séparateurs sont les caractères de la `string charset` donnée en paramètre.
 
 ### Fonction attendue
 
 ```go
 func Split(str, charset string) []string {
+
 }
 ```
 
@@ -27,7 +28,8 @@ import (
 
 func main() {
 	str := "HelloHAhowHAareHAyou?"
-	fmt.Println(piscine.Split(str, "HA")}
+	fmt.Println(piscine.Split(str, "HA"))
+}
 ```
 
 Et son résultat :

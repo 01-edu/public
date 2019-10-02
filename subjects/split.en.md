@@ -10,6 +10,7 @@ The separators are the characters of the `charset string` given in parameter.
 
 ```go
 func Split(str, charset string) []string {
+
 }
 ```
 
@@ -27,7 +28,8 @@ import (
 
 func main() {
 	str := "HelloHAhowHAareHAyou?"
-	fmt.Println(piscine.Split(str, charset, "HA")}
+	fmt.Println(piscine.Split(str, "HA"))
+}
 ```
 
 And its output :

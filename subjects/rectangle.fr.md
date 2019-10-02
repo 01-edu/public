@@ -2,22 +2,19 @@
 
 ### Instructions
 
-Consider that a point is defined by its coordinates and that a rectangle
-is defined by the points of the upper left and lower right corners.
+Considérer qu'un point est défini par ses coordonnées et qu'un rectangle est défini par les points de son coin du haut à gauche et son coin du bas à droite.
 
-- Define two structures named, `point` and `rectangle`.
+- Définir deux structures nommées, `point` et `rectangle`.
 
-- The struct `point` has to have two variables, `x` and `y`, type `int`.
+- La structure `point` doit avoir deux variables, `x` et `y`, de type `int`.
 
-- The struct `rectangle` has to have two variables, `upLeft` and `downRight` type `point`.
+- La structure `rectangle` doit avoir deux variables, `upLeft` et `downRight` de type `point`.
 
-- Our main task is to make a program that:
+- Le but est de faire un programme qui:
+  - Avec une slice de points donnée de taille `n` retournes le plus petit rectangle qui contient tous les points dans le vecteur de points0. Le nom de cette fonction est `defineRectangle`.
+  - Et qui calcules et affiche l'airethe de ce rectangle défini.
 
-      	- Given a slice of points of size `n` returns the smallest rectangle that contains all the points in the vector of points. The name of that function is `defineRectangle`
-
-      	- And calculates and prints the area of that rectangle you define.
-
-### Expected main and function for the program
+### Main et fonctions attendues pour ce programme
 
 ```go
 func defineRectangle(ptr *point, n int) *rectangle {

@@ -3,7 +3,7 @@
 ### Instructions
 
 Write in a file `to-git-or-not-to-git.sh` the command that isolates your `gitHub id`.
-Only the numbers will appears.
+Only the numbers will appear.
 
 ### Usage
 
