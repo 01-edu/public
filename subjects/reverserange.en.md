@@ -2,23 +2,27 @@
 
 ### Instructions
 
-Write the function `ReverseRange` which must:
+Write the program which must:
 
-- allocate (with make()) an array of integers.
-- fill it with consecutive values that begin at `end` and end at `start` (Including `start` and `end` !)
-- and that returns that array.
+- **Allocate (with make())** an array of integers.
 
-### Expected function
+- Fill it with consecutive values that begins at the second argument and end at the first argument (Including the first and second argument !).
 
-```go
-func ReverseRange(start, end int) []int {
+- That prints the array.
 
-}
+- In case of error you should handle it.
+
+- And if the number of arguments is bigger or lower than 2 it should print `\n`.
+
+### Expected output :
+
+```console
+student@ubuntu:~/reverserange$ go build
+student@ubuntu:~/reverserange$ ./reverserange 1 3
+[3 2 1]
+student@ubuntu:~/reverserange$ ./reverserange -1 2
+[2 1 0 -1]
+student@ubuntu:~/reverserange$ ./reverserange 0 0
+[0]
+student@ubuntu:~/reverserange$
 ```
-
-### Usage :
-
-- With (1, 3) the function will return an array containing 3, 2 and 1.
-- With (-1, 2) the function will return an array containing 2, 1, 0 and -1.
-- With (0, 0) the function will return an array containing 0.
-- With (0, -3) the function will return an array containing -3, -2, -1 and 0.
