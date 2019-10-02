@@ -4,7 +4,7 @@
 
 Écrire une fonction qui sépare les mots d'une `string` et les met dans un tableau de `string`.
 
-Les séparateurs sont les caractères de la `string charset` donnée en paramétre.
+Les séparateurs sont les caractères de la `string charset` donnée en paramètre.
 
 ### Fonction attendue
 
