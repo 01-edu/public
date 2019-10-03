@@ -2,35 +2,20 @@
 
 ### Instructions
 
-Write a function that takes `(arr [10]int)`, and displays the memory as in the example.
+Write a program that takes as arguments a set of 10 numbers and displays the memory as in the example.
 
-### Expected function
+- If the number of arguments 0 or bigger than 10 in should print a newline `\n`.
 
-```go
-func PrintMemory(arr [10]int) {
+- In case one of the arguments is not a number you should handle the error.
 
-}
-```
-
-### Usage
-
-Here is a possible program to test your function :
-
-```go
-func main() {
-	arr := [10]int{104, 101, 108, 108, 111, 16, 21, 42}
-	PrintMemory(arr)
-}
-```
-
-And its output :
+### Expected output :
 
 ```console
-student@ubuntu:~/piscine-go/test$ go build
-student@ubuntu:~/piscine-go/test$ ./test | cat -e
+student@ubuntu:~/foreachprog$ go build
+student@ubuntu:~/foreachprog$ ./foreachprog 104 101 108 108 111 16 21 42 | cat -e
 6800 0000 6500 0000 6c00 0000 6c00 0000 $
 6f00 0000 1000 0000 1500 0000 2a00 0000 $
 0000 0000 0000 0000 $
 hello..*..$
-student@ubuntu:~/piscine-go/test$
+student@ubuntu:~/foreachprog$
 ```
