@@ -10,6 +10,7 @@ Les séparateurs sont les espaces, les tabulations et les retours à la ligne.
 
 ```go
 func SplitWhiteSpaces(str string) []string {
+
 }
 ```
 
@@ -27,7 +28,8 @@ import (
 
 func main() {
 	str := "Hello how are you?"
-	fmt.Println(piscine.SplitWhiteSpaces(str)}
+	fmt.Println(piscine.SplitWhiteSpaces(str))
+}
 ```
 
 Et son résultat :

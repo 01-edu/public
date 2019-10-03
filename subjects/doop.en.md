@@ -23,14 +23,12 @@ The program has to handle the modulo and division operations by 0 as shown on th
 ```console
 student@ubuntu:~/piscine-go/test$ go build doop.go
 student@ubuntu:~/piscine-go/test$ ./doop
-student@ubuntu:~/piscine-go/test$ ./doop 1 + 1
-2
+student@ubuntu:~/piscine-go/test$ ./doop 1 + 1 | cat -e
+2$
 student@ubuntu:~/piscine-go/test$ ./doop hello + 1 | cat -e
 0$
-student@ubuntu:~/piscine-go/test$ ./doop 1 p 1
-0
-student@ubuntu:~/piscine-go/test$ ./doop 1 + 1
-2
+student@ubuntu:~/piscine-go/test$ ./doop 1 p 1 | cat -e
+0$
 student@ubuntu:~/piscine-go/test$ ./doop 1 / 0 | cat -e
 No division by 0$
 student@ubuntu:~/piscine-go/test$ ./doop 1 % 0 | cat -e

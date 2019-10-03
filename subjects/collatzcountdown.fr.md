@@ -4,7 +4,9 @@
 
 Écrire une fonction, `CollatzCountdown`, qui retournes le nombre d'étapes nécéssaires pour atteindre 1 en utilisant le comptage de collatz.
 
-### FOnction attendue
+- Elle doit renvoyer `-1` si `start` est égal à 0 ou négatif.
+
+### Fonction attendue
 
 ```go
 func CollatzCountdown(start int) int {
@@ -33,8 +35,8 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/student/test$ go build
-student@ubuntu:~/student/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 10
-student@ubuntu:~/student/test$
+student@ubuntu:~/piscine-go/test$
 ```

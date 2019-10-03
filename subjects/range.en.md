@@ -2,23 +2,29 @@
 
 ### Instructions
 
-Write the function `Range` which must:
+Write a program which must:
 
-- allocate (with make()) an array of integers.
-- fill it with consecutive values that begin at `start` and end at `end` (Including `start` and `end` !)
-- and that returns that array.
+- **Allocate (with make())** an array of integers.
 
-### Expected function
+- Fill it with consecutive values that begins at the first argument and end at the second argument (Including the values of thoses arguments !).
 
-```go
-func Range(start, end int) []int {
+- That prints the array.
 
-}
+Errors should be handled.
+
+If the number of arguments is different from 2 the program prints a newline ("`\n`").
+
+### Expected output :
+
+```console
+student@ubuntu:~/range$ go build
+student@ubuntu:~/range$ ./range 1 3
+[1 2 3]
+student@ubuntu:~/range$ ./range -1 2 | cat -e
+[-1 0 1 2]$
+student@ubuntu:~/range$ ./range 0 0
+[0]
+student@ubuntu:~/reverserange$ ./reverserange 0 nan | cat -e
+strconv.Atoi: parsing "nan": invalid syntax$
+student@ubuntu:~/range$
 ```
-
-### Usage
-
-- With (1, 3) you will return an array containing 1, 2 and 3.
-- With (-1, 2) you will return an array containing -1, 0, 1 and 2.
-- With (0, 0) you will return an array containing 0.
-- With (0, -3) you will return an array containing 0, -1, -2 and -3.

@@ -2,18 +2,21 @@
 
 ### Instructions
 
-Write a function that takes a byte, and prints it in binary value **without a newline at the end**.
+Write a program that takes a number as argument, and prints it in binary value **without a newline at the end**.
 
-### Expected function
+- If the the argument is not a number the program should print `00000000`.
 
-```go
-func PrintBits(octe byte) {
+### Expected output :
 
-}
+```console
+student@ubuntu:~/printbits$ go build
+student@ubuntu:~/printbits$ ./printbits 1
+00000001student@ubuntu:~/printbits$
+student@ubuntu:~/printbits$ ./printbits 192
+11000000student@ubuntu:~/printbits$
+student@ubuntu:~/printbits$ ./printbits a
+00000000student@ubuntu:~/printbits$
+student@ubuntu:~/printbits$ ./printbits 1 1
+student@ubuntu:~/printbits$ ./printbits
+student@ubuntu:~/printbits$
 ```
-
-### Usage
-
-Example of output:
-
-If 2 is passed to the function `PrintBits`, it will print "00000010".

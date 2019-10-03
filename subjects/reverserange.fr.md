@@ -2,23 +2,31 @@
 
 ### Instructions
 
-Écrire la fonction `ReverseRange` qui doit:
+Écrire un programme qui doit:
 
-- allouer (avec make()) une slice d'entiers.
-- le remplir avec des valeurs consécutives qui commencent à `end` et qui finissent à `start` (En incluant `start` et `end` !)
-- et qui retourne cette slice.
+- Allouer (avec make()) une slice d'entiers.
 
-### Fonction attendue
+- Le remplir avec des valeurs consécutives qui commencent au deuxième argument et qui finissent au premier (En incluant les valeurs des deux arguments !)
 
-```go
-func ReverseRange(start, end int) []int {
+- Et qui affiche cette slice.
 
-}
-```
+Les erreurs doivent être gérées.
+
+Si le nombre d'arguments est différent de 2 le programme affiche un newline ("`\n`").
 
 ### Utilisation :
 
-- Avec (1, 3) la fonction devra retourner une slice contenant 3, 2 et 1.
-- Avec (-1, 2) la fonction devra retourner une slice contenant 2, 1, 0 et -1.
-- Avec (0, 0) la fonction devra retourner une slice contenant 0.
-- Avec (0, -3) la fonction devra retourner une slice contenant -3, -2, -1 et 0.
+```console
+student@ubuntu:~/reverserange$ go build
+student@ubuntu:~/reverserange$ ./reverserange 1 3
+[3 2 1]
+student@ubuntu:~/reverserange$ ./reverserange -1 2 | cat -e
+[2 1 0 -1]$
+student@ubuntu:~/reverserange$ ./reverserange 0 0
+[0]
+student@ubuntu:~/reverserange$ ./reverserange 0 -3
+[-3 -2 -1 0]
+student@ubuntu:~/reverserange$ ./reverserange 0 nan | cat -e
+strconv.Atoi: parsing "nan": invalid syntax$
+student@ubuntu:~/reverserange$
+```
