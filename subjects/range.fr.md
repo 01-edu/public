@@ -2,23 +2,29 @@
 
 ### Instructions
 
-Écrire la fonction `Range` qui doit:
+Écrire un programme qui doit:
 
-- allouer (avec make()) une slice d'entiers.
-- le remplir avec des valeurs consécutives qui commencent à `start` et qui finissent à `end` (En incluant `start` et `end` !)
-- et qui retourne cette slice.
+- Allouer (avec make()) une slice d'entiers.
 
-### Fonction attendue
+- Le remplir avec des valeurs consécutives qui commencent au premier argument et qui finissent au deuxième (En incluant les valeurs des deux arguments !)
 
-```go
-func Range(start, end int) []int {
+- Et qui affiche cette slice.
 
-}
-```
+Les erreurs doivent être gérées.
+
+Si le nombre d'arguments est différent de 2 le programme affiche un newline ("`\n`").
 
 ### Utilisation
 
-- Avec (1, 3) la fonction devra retourner une slice contenant 1, 2 et 3.
-- Avec (-1, 2) la fonction devra retourner une slice contenant -1, 0, 1 et 2.
-- Avec (0, 0) la fonction devra retourner une slice contenant 0.
-- Avec (0, -3) la fonction devra retourner une slice contenant 0, -1, -2 et -3.
+```console
+student@ubuntu:~/range$ go build
+student@ubuntu:~/range$ ./range 1 3
+[1 2 3]
+student@ubuntu:~/range$ ./range -1 2 | cat -e
+[-1 0 1 2]$
+student@ubuntu:~/range$ ./range 0 0
+[0]
+student@ubuntu:~/reverserange$ ./reverserange 0 nan | cat -e
+strconv.Atoi: parsing "nan": invalid syntax$
+student@ubuntu:~/range$
+```
