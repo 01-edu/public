@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write the program which must:
+Write a program which must:
 
 - **Allocate (with make())** an array of integers.
 
@@ -10,9 +10,9 @@ Write the program which must:
 
 - That prints the array.
 
-- In case of error you should handle it.
+Errors should be handled.
 
-- And if the number of arguments is bigger or lower than 2 it should print `\n`.
+If the number of arguments is different from 2 the program prints a newline ("`\n`").
 
 ### Expected output :
 
@@ -20,9 +20,13 @@ Write the program which must:
 student@ubuntu:~/reverserange$ go build
 student@ubuntu:~/reverserange$ ./reverserange 1 3
 [3 2 1]
-student@ubuntu:~/reverserange$ ./reverserange -1 2
-[2 1 0 -1]
+student@ubuntu:~/reverserange$ ./reverserange -1 2 | cat -e
+[2 1 0 -1]$
 student@ubuntu:~/reverserange$ ./reverserange 0 0
 [0]
+student@ubuntu:~/reverserange$ ./reverserange 0 -3
+[-3 -2 -1 0]
+student@ubuntu:~/reverserange$ ./reverserange 0 nan | cat -e
+strconv.Atoi: parsing "nan": invalid syntax$
 student@ubuntu:~/reverserange$
 ```
