@@ -2,7 +2,7 @@
 
 ### Instructions
 
-- Écrire une fonction qui affiche un à un les caractères d'une chaîne à l'écran.
+- Écrire une fonction qui affiche un à un les caractères d'une `string` à l'écran.
 
 ### Fonction attendue
 
@@ -31,7 +31,7 @@ Et son résultat :
 
 ```console
 student@ubuntu:~/piscine-go/test$ go build
-student@ubuntu:~/piscine-go/test$ ./test
+student@ubuntu:~/piscine-go/test$ ./test | cat -e
 Hello World!%
 student@ubuntu:~/piscine-go/test$
 ```
