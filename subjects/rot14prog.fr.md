@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a program that prints the `string` passed as argument, transformed into a `rot14 string`.
+Écrire un programme qui retourne la `string` en paramètre transformée en `string rot14`..
 
-### Usage
+### Utilisation
 
 ```console
 student@ubuntu:~/rot14prog$ go build
