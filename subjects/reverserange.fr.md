@@ -6,7 +6,7 @@
 
 - Allouer (avec make()) une slice d'entiers.
 
-- Le remplir avec des valeurs consécutives qui commencent à `end` et qui finissent à `start` (En incluant `start` et `end` !)
+- Le remplir avec des valeurs consécutives qui commencent au deuxième argument et qui finissent au premier (En incluant les valeurs des deux arguments !)
 
 - Et qui affiche cette slice.
 
