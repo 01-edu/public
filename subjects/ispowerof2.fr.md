@@ -2,14 +2,29 @@
 
 ### Instructions
 
-Écrire une fonction qui détermine si un nombre donné est une puissance de 2.
+Écrire un programme fonction qui détermine si un nombre donné est une puissance de 2.
 
-Cette fonction retourne `true` si le nombre donné est une puissance de 2, autrement elle retourne `false`.
+Ce programme doit afficher `true` si le nombre donné est une puissance de 2, autrement il affiche `false`.
 
-### Fonction attendue
+- Si il y a plus d'un ou aucun argument le programme doit afficher un newline ("`\n`").
 
-```go
-func IsPowerOf2(n uint) bool {
+- Les cas d'erreurs doivent être gérés.
 
-}
+### Utilisation :
+
+```console
+student@ubuntu:~/ispowerof2$ go build
+student@ubuntu:~/ispowerof2$ ./ispowerof2 2 | cat -e
+true$
+student@ubuntu:~/ispowerof2$ ./ispowerof2 64 | cat -e
+true$
+student@ubuntu:~/ispowerof2$ ./ispowerof2 513 | cat -e
+false$
+student@ubuntu:~/ispowerof2$ ./ispowerof2
+
+student@ubuntu:~/ispowerof2$ ./ispowerof2 64 1024
+
+student@ubuntu:~/ispowerof2$ ./ispowerof2 notanumber | cat -e
+strconv.Atoi: parsing "a": invalid syntax$
+student@ubuntu:~/ispowerof2$
 ```
