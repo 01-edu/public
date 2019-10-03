@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Écrire un programme fonction qui détermine si un nombre donné est une puissance de 2.
+Écrire un programme qui détermine si un nombre donné est une puissance de 2.
 
 Ce programme doit afficher `true` si le nombre donné est une puissance de 2, autrement il affiche `false`.
 
