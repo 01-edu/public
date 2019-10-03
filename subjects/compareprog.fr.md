@@ -2,11 +2,11 @@
 
 ### Instructions
 
-Write a program that behaves like the `Compare` function.
+Écrire un programme qui se comporte comme la fonction `Compare`.
 
-This program prints a number after comparing two `strings` lexicographically.
+Ce programme affiche un nombre après avoir comparé deux `strings` lexicalement.
 
-### Usage :
+### Utilisation :
 
 ```console
 student@ubuntu:~/compareprog$ go build
