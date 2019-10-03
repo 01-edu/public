@@ -2,12 +2,12 @@
 
 ### Instructions
 
-Write a program which separates the words of a `string`, which puts them in a `string` array and which then prints it to standard output.
+Écrire une fonction qui sépare les mots d'une `string`, qui les met dans un tableau de `string` et qui les affichent sur la sortie standard.
 
-The program receives two parameters:
+Le programme reçoit deux paramètres:
 
-- The first is the `string`
-- The second is the separator
+- Le premier est la `string`
+- Le deuxième est le séparateur
 
 ### Expected output :
 
