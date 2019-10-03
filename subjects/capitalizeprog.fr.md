@@ -2,15 +2,15 @@
 
 ### Instructions
 
-Write a program that capitalizes the first letter of each word **and** lowercases the rest of each word of a `string`.
+Écrire un programme qui met en majuscule la première lettre de chaque mot et en minuscule les autres lettres du reste du mot d'une `string`.
 
-- A word is a sequence of **alphanumerical** characters.
+- Un mot est une suite de caractères **alphanumériques**.
 
-- If there is more than one argument the program should print `Too many arguments`.
+- Si il y a plus d'un argument le programme doit afficher `Too many arguments`.
 
-- If there is no arguments given the program should print a newline ("`\n`").
+- Si il n'y a pas d'arguments le programme doit afficher un newline ("`\n`").
 
-### Usage :
+### Utilisation :
 
 ```console
 student@ubuntu:~/capitalizeprog$ go build
