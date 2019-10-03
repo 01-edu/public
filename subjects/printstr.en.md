@@ -2,7 +2,7 @@
 
 ### Instructions
 
-- Write a function that prints one by one the characters of a string on the screen.
+- Write a function that prints one by one the characters of a `string` on the screen.
 
 ### Expected function
 
@@ -31,7 +31,7 @@ And its output :
 
 ```console
 student@ubuntu:~/piscine-go/test$ go build
-student@ubuntu:~/piscine-go/test$ ./test
-Hello World!
+student@ubuntu:~/piscine-go/test$ ./test | cat -e
+Hello World!%
 student@ubuntu:~/piscine-go/test$
 ```

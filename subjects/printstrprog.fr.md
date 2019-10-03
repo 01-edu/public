@@ -2,9 +2,9 @@
 
 ### Instructions
 
-- Write a program that prints one by one the characters of a `string` passed as an argument of the program.
+- Écrire un programme qui affiche un à un les caractères d'une `string` passée en argument du programme.
 
-### Expected output :
+### Utilisation :
 
 ```console
 student@ubuntu:~/piscine-go/printstrprog$ go build
