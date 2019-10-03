@@ -10,8 +10,8 @@
 
 ```console
 student@ubuntu:~/piscine-go/strlenprog$ go build
-student@ubuntu:~/piscine-go/strlenprog$ ./strlenprog "hello"
-5
+student@ubuntu:~/piscine-go/strlenprog$ ./strlenprog "hello" | cat -e
+5$
 student@ubuntu:~/piscine-go/strlenprog$ ./strlenprog
 student@ubuntu:~/piscine-go/strlenprog$
 student@ubuntu:~/piscine-go/strlenprog$ ./strlenprog "hello" "how are you"
