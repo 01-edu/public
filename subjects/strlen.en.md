@@ -2,7 +2,7 @@
 
 ### Instructions
 
-- Write a function that counts the characters of a string and that returns that count.
+- Write a function that counts the characters of a `string` and that returns that count.
 
 ### Expected function
 

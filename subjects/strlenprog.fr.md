@@ -2,11 +2,11 @@
 
 ### Instructions
 
-- Write a program that counts the characters of a `string` and that returns that value.
+- Écrire un programme qui compte le nombre de caractères d'une `string` et qui retourne le nombre trouvé.
 
-- If the program receives more than one or no arguments it must not print anything.
+- Si le programme reçoit plusieurs ou aucun arguments il ne doit rien afficher.
 
-### Expected output :
+### Utilisation :
 
 ```console
 student@ubuntu:~/piscine-go/strlenprog$ go build
