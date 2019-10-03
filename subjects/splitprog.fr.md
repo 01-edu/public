@@ -9,7 +9,7 @@ Le programme reçoit deux paramètres:
 - Le premier est la `string`
 - Le deuxième est le séparateur
 
-### Expected output :
+### Utilisation :
 
 ```console
 student@ubuntu:~/piscine-go/splitprog$ go build
