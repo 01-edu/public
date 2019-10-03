@@ -22,6 +22,7 @@ func add2(nbr rune) {
 }
 
 ```
+
 ### Expected output :
 
 ```console
