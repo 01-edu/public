@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a function that returns the nth `rune` of a `string`.
+Écrire un programme qui reçoit une `string` en paramètre et qui retourne la énième `rune` de la `string`.
 
-### Expected output :
+### Utilisation :
 
 ```console
 student@ubuntu:~/piscine-go/nruneprog$ ./nruneprog "hello" 2
