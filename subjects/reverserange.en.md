@@ -6,7 +6,7 @@ Write a program which must:
 
 - **Allocate (with make())** an array of integers.
 
-- Fill it with consecutive values that begins at the second argument and end at the first argument (Including the first and second argument !).
+- Fill it with consecutive values that begins at the second argument and end at the first argument (Including the values of thoses arguments !).
 
 - That prints the array.
 
