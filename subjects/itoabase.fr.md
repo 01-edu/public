@@ -13,6 +13,8 @@ Par exemple, la base `4` sera équivalente à "0123" et la base `16` sera équiv
 
 Si la valeur est négative, la `string` résultante doit être précédée d'un signe moins `-`.
 
+Seuls des arguments valables seront testés.
+
 ### Fonction attendue
 
 ```go

@@ -2,22 +2,20 @@
 
 ### Instructions
 
-Write a program that:
+Écrire un programme qui:
 
-- converts a number in base 10 into the number in the specified base
-- receives two parameters:
-  - the first is the value
-  - the second is the base
+- convertit un nombre en base 10 en nombre dans la base spécifiée
+- reçoit deux paramètres:
+  - le premier est la valeur
+  - le deuxième est la base
 
-The base is expressed as an `int`, from 2 to 16. The characters comprising
-the base are the digits from 0 to 9, followed by uppercase letters from A to F.
+Cette base est exprimée comme un `int`, de 2 à 16. Les caractères compris dans la base sont les chiffres de 0 à 9, suivis des lettres majuscules de A à F.
 
-For example, the base `4` would be the equivalent of "0123" and the base `16` would be the equivalent of "0123456789ABCDEF".
+Par exemple, la base `4` sera équivalente à "0123" et la base `16` sera équivalente à "0123456789ABCDEF".
 
-If the value is negative, the resulting `string` has to be preceded with a
-minus sign `-`.
+Si la valeur est négative, la `string` résultante doit être précédée d'un signe moins `-`.
 
-### Expected output
+### Utilisation
 
 ```console
 student@ubuntu:~/piscine-go/itoabaseprog$ go build
