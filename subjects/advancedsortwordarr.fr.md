@@ -8,6 +8,7 @@
 
 ```go
 func AdvancedSortWordArr(array []string, f func(a, b string) int) {
+
 }
 ```
 

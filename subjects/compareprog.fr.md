@@ -4,7 +4,7 @@
 
 Écrire un programme qui se comporte comme la fonction `Compare`.
 
-Ce programme affiche un nombre après avoir comparé deux `strings` lexicalement.
+Ce programme affiche un nombre après avoir comparé deux `string` lexicalement.
 
 ### Utilisation :
 

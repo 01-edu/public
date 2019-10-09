@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Écrire une fonction qui applique une fonction en pré-ordre (`preorder walk`) a chaque élément de l'arbre.
+Écrire une fonction qui applique une fonction en pré-ordre ("preorder walk") à chaque élément de l'arbre.
 
 ### Fonction attendue
 

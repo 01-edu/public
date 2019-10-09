@@ -6,9 +6,9 @@
 
 Ce programme doit afficher `true` si le nombre donné est une puissance de 2, autrement il affiche `false`.
 
-- Si il y a plus d'un ou aucun argument le programme doit afficher un newline ("`\n`").
+-   Si il y a plus d'un ou aucun argument le programme doit afficher un retour à la ligne (`'\n'`).
 
-- Les cas d'erreurs doivent être gérés.
+-   Les cas d'erreurs doivent être gérés.
 
 ### Utilisation :
 

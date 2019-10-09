@@ -12,6 +12,7 @@ Les nombres négatifs ne seront pas testés.
 
 ```go
 func ConvertBase(nbr, baseFrom, baseTo string) string {
+
 }
 ```
 

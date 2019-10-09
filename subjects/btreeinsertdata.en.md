@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a function that inserts new data in a binary search tree
-following the properties of binary search trees.
-The nodes must be defined as follows:
+Write a function that inserts new data in a binary search tree following the properties of binary search trees.
+
+The nodes must be defined as follows :
 
 ### Expected function
 

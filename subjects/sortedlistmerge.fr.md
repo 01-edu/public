@@ -4,7 +4,7 @@
 
 Écrire une fonction `SortedListMerge` qui merge deux listes `n1` et `n2` en ordre ascendant.
 
-- Pendant les tests `n1` et `n2` seront déjà triées.
+-   Pendant les tests `n1` et `n2` seront déjà triées.
 
 ### Fonction et structure attendues
 

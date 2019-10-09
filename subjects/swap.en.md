@@ -2,7 +2,7 @@
 
 ### Instructions
 
-- Write a function that swaps the contents of two **pointers to an int** (`*int`).
+-   Write a function that swaps the contents of two **pointers to an int** (`*int`).
 
 ### Expected function
 

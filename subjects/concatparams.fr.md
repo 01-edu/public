@@ -10,6 +10,7 @@ Les arguments doivent être **séparés** par un `\n`.
 
 ```go
 func ConcatParams(args []string) string {
+
 }
 ```
 

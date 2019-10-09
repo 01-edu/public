@@ -12,6 +12,7 @@ Each word ends with a `\n`.
 
 ```go
 func PrintWordsTables(table []string) {
+
 }
 ```
 

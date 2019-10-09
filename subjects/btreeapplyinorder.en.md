@@ -2,8 +2,7 @@
 
 ### Instructions
 
-Write a function that applies a function in order to each element in the tree.
-(see `in order tree walks`)
+Write a function that applies a function in order to each element in the tree (see "in order tree walks").
 
 ### Expected function
 

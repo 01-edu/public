@@ -8,6 +8,7 @@ Write a function `SortWordArr` that sorts by `ascii` (in ascending order) a `str
 
 ```go
 func SortWordArr(array []string) {
+
 }
 ```
 

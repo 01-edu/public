@@ -4,7 +4,7 @@
 
 Write a function `SortListInsert` that inserts `data_ref` in the linked list `l` while keeping the list sorted in ascending order.
 
-- During the tests the list passed as an argument will be already sorted.
+-   During the tests the list passed as an argument will be already sorted.
 
 ### Expected function and structure
 

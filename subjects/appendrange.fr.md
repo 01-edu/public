@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Écrire une fonction qui prend un `int` minimum et un `int` maximum comme paramètres. Cette fonction retournes une slice d'`int` avec toutes les valeurs comprises entre le minimum et le maximum.
+Écrire une fonction qui prend un `int` minimum et un `int` maximum comme paramètres. Cette fonction retourne une slice d'`int` avec toutes les valeurs comprises entre le minimum et le maximum.
 
 Le minimum est inclus, le maximum est exclu.
 

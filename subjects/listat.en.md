@@ -4,7 +4,7 @@
 
 Write a function `ListAt` that takes a pointer to the list `l` and an `int pos` as parameters. This function should print the `NodeL` in the position `pos` of the linked list `l`.
 
-- In case of error the fonction should print `nil`.
+-   In case of error the fonction should print `nil`.
 
 ### Expected function and structure
 
@@ -44,7 +44,6 @@ func main() {
 	fmt.Println(piscine.ListAt(link.Head, 1).Data)
 	fmt.Println(piscine.ListAt(link.Head, 7))
 }
-
 ```
 
 And its output :

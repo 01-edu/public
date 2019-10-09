@@ -4,11 +4,11 @@
 
 Create a `.go` file.
 
-- The code below has to be copied in that file.
+-   The code below has to be copied in that file.
 
-- The necessary changes have to be applied so that the program works.
+-   The necessary changes have to be applied so that the program works.
 
-- The program must be submitted inside a folder with the name `boolean`.
+-   The program must be submitted inside a folder with the name `boolean`.
 
 ### Code to be copied
 
@@ -39,12 +39,12 @@ func main() {
 }
 ```
 
-### Expected output
+### Usage
 
 ```console
-student@ubuntu:~/student/boolean$ go build
-student@ubuntu:~/student/boolean$ ./boolean "not" "odd"
+student@ubuntu:~/piscine-go/boolean$ go build
+student@ubuntu:~/piscine-go/boolean$ ./boolean "not" "odd"
 I have an even number of arguments
-student@ubuntu:~/student/boolean$ ./boolean "not even"
+student@ubuntu:~/piscine-go/boolean$ ./boolean "not even"
 I have an odd number of arguments
 ```

@@ -4,7 +4,7 @@
 
 Write a function, `CollatzCountdown`, that returns the number of steps necessary to reach 1 using the collatz countdown.
 
-- It must return `-1` if `start` is equal to `0` or negative.
+-   It must return `-1` if `start` is equal to `0` or negative.
 
 ### Expected function
 

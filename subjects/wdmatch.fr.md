@@ -2,11 +2,11 @@
 
 ### Instructions
 
-Écrire un programme qui prend deux `strings` et vérifie si il est possible d'écrire la première `string` avec des caractères de la deuxième `string`, tout en respectant l'ordre dans lequel ces caractères apparaissent dans la deuxième `string`.
+Écrire un programme qui prend deux `string` et vérifie si il est possible d'écrire la première `string` avec des caractères de la deuxième `string`, tout en respectant l'ordre dans lequel ces caractères apparaissent dans la deuxième `string`.
 
-- Si cela est possible, le programme affiche la `string` suivie par un newline(`'\n'`), autrement le programme affiche un newline.
+Si cela est possible, le programme affiche la `string` suivie par un retour à la ligne (`'\n'`), autrement le programme affiche un retour à la ligne.
 
-- Si le nombre d'arguments est différent de 2, le programme affiche un newline.
+Si le nombre d'arguments est différent de 2, le programme affiche un retour à la ligne.
 
 ### Utilisation
 
