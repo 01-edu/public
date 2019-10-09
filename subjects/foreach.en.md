@@ -8,6 +8,7 @@ Write a function `ForEach` that, for an `int` array, applies a function on each 
 
 ```go
 func ForEach(f func(int), arr []int) {
+
 }
 ```
 

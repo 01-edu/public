@@ -14,6 +14,7 @@ Si le minimum est supérieur ou égal au maximum, une slice `nil` est retournée
 
 ```go
 func MakeRange(min, max int) []int {
+
 }
 ```
 

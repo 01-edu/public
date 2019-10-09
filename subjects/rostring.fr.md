@@ -10,7 +10,7 @@ Un mot est une suite de caractères **alphanumériques.**
 
 Les mots devront être séparés par un seul espace dans l'output.
 
-Si le nombre d'arguments est différent de 1, le programme affiche un newline.
+Si le nombre d'arguments est différent de 1, le programme affiche un retour à la ligne.
 
 ### Utilisation
 

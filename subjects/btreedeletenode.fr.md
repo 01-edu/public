@@ -12,7 +12,6 @@ L'arbre en résultant devra toujours suivre les règles des arbres de recherche 
 func BTreeDeleteNode(root, node *TreeNode) *TreeNode {
 
 }
-
 ```
 
 ### Utilisation
@@ -44,8 +43,8 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/student/test$ go build
-student@ubuntu:~/student/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 Before delete:
 1
 4
@@ -55,5 +54,5 @@ After delete:
 1
 5
 7
-student@ubuntu:~/student/test$
+student@ubuntu:~/piscine-go/test$
 ```

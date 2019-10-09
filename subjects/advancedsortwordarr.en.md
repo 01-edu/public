@@ -8,6 +8,7 @@ Write a function `AdvancedSortWordArr` that sorts a `string` array, based on the
 
 ```go
 func AdvancedSortWordArr(array []string, f func(a, b string) int) {
+
 }
 ```
 

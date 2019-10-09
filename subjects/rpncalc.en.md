@@ -4,7 +4,7 @@
 
 Write a program that takes a `string` which contains an equation written in
 `Reverse Polish Notation` (RPN) as its first argument, that evaluates the equation, and that
-prints the result on the standard output followed by a newline(`'\n'`).
+prints the result on the standard output followed by a newline (`'\n'`).
 
 `Reverse Polish Notation` is a mathematical notation in which every operator
 follows all of its operands. In RPN, every operator encountered evaluates the
@@ -47,16 +47,16 @@ Or:
 ### Usage
 
 ```console
-student@ubuntu:~/student/rpncalc$ go build
-student@ubuntu:~/student/rpncalc$ ./rpncalc "1 2 * 3 * 4 +" | cat -e
+student@ubuntu:~/piscine-go/rpncalc$ go build
+student@ubuntu:~/piscine-go/rpncalc$ ./rpncalc "1 2 * 3 * 4 +" | cat -e
 10$
-student@ubuntu:~/student/rpncalc$ ./rpncalc 1 2 3 4 +" | cat -e
+student@ubuntu:~/piscine-go/rpncalc$ ./rpncalc 1 2 3 4 +" | cat -e
 Error$
-student@ubuntu:~/student/rpncalc$ ./rpncalc | cat -e
+student@ubuntu:~/piscine-go/rpncalc$ ./rpncalc | cat -e
 Error$
-student@ubuntu:~/student/rpncalc$ ./rpncalc "     1      3 * 2 -" | cat -e
+student@ubuntu:~/piscine-go/rpncalc$ ./rpncalc "     1      3 * 2 -" | cat -e
 1
-student@ubuntu:~/student/rpncalc$ ./rpncalc "     1      3 * ksd 2 -" | cat -e
+student@ubuntu:~/piscine-go/rpncalc$ ./rpncalc "     1      3 * ksd 2 -" | cat -e
 Error$
-student@ubuntu:~/student/rpncalc$
+student@ubuntu:~/piscine-go/rpncalc$
 ```

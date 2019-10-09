@@ -4,7 +4,7 @@
 
 Write a function `ListFind` that returns the address of the first node in the list `l` that is determined to be equal to `ref` by the function `CompStr`.
 
-- For this exercise the function `CompStr` must be used.
+-   For this exercise the function `CompStr` must be used.
 
 ### Expected function and structure
 
@@ -67,4 +67,4 @@ student@ubuntu:~/piscine-go/test$
 
 ### Note
 
-- The address may be different in each execution of the program.
+-   The address may be different in each execution of the program.

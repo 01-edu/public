@@ -18,6 +18,7 @@ type List struct {
 }
 
 func ListPushFront(l *List, data interface{}) {
+
 }
 ```
 

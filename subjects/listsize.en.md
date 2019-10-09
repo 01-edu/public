@@ -44,7 +44,6 @@ func main() {
 
 	fmt.Println(piscine.ListSize(link))
 }
-
 ```
 
 And its output :

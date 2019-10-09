@@ -4,7 +4,7 @@
 
 Écrire une fonction `ListSort` qui trie les nodes d'une liste chaînée par ordre croissant.
 
-- La structure `NodeI` sera la seule utilisée.
+-   La structure `NodeI` sera la seule utilisée.
 
 ### Fonction et structure attendues
 

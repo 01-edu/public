@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Écrire un programme qui prend une `string`, et qui affiche le premier caractère `a` qu'il trouve dedans, suivi par un newline(`'\n'`). Si il n'y a pas de caractère `a` dans la `string`, le programme affiche juste un `a` suivi d'un newline(`'\n'`). Si le nombre de paramètres n'est pas 1, le programme affiche un `a` suivi d'un newline(`'\n'`).
+Écrire un programme qui prend une `string`, et qui affiche le premier caractère `a` qu'il trouve dedans, suivi par un retour à la ligne (`'\n'`). Si il n'y a pas de caractère `a` dans la `string`, le programme affiche juste un `a` suivi d'un retour à la ligne (`'\n'`). Si le nombre de paramètres n'est pas 1, le programme affiche un `a` suivi d'un retour à la ligne (`'\n'`).
 
 ### Utilisation
 

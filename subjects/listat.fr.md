@@ -4,7 +4,7 @@
 
 Écrire une fonction `ListAt` qui prend un pointeur sur la liste `l` et un `int pos` comme paramètres. Cette fonction devra afficher la `NodeL` à la position `pos` de la liste chaînée `l`.
 
-- En cas d'erreur la fonction affichera `nil`.
+-   En cas d'erreur la fonction affichera `nil`.
 
 ### Fonction et structure attendues
 
@@ -44,7 +44,6 @@ func main() {
 	fmt.Println(piscine.ListAt(link.Head, 1).Data)
 	fmt.Println(piscine.ListAt(link.Head, 7))
 }
-
 ```
 
 Et son résultat :

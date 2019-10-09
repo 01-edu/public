@@ -2,11 +2,11 @@
 
 ### Instructions
 
-Write a program that takes two `strings` and checks whether it is possible to write the first `string` with characters from the second `string`, while respecting the order in which these characters appear in the second `string`.
+Write a program that takes two `string` and checks whether it is possible to write the first `string` with characters from the second `string`, while respecting the order in which these characters appear in the second `string`.
 
-- If it is possible, the program displays the `string` followed by a newline(`'\n'`), otherwise it simply displays a newline.
+If it is possible, the program displays the `string` followed by a newline (`'\n'`), otherwise it simply displays a newline.
 
-- If the number of arguments is different from 2, the program displays a newline.
+If the number of arguments is different from 2, the program displays a newline.
 
 ### Usage
 

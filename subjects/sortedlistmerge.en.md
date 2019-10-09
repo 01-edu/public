@@ -4,7 +4,7 @@
 
 Write a function `SortedListMerge` that merges two lists `n1` and `n2` in ascending order.
 
-- During the tests `n1` and `n2` will already be initially sorted.
+-   During the tests `n1` and `n2` will already be initially sorted.
 
 ### Expected function and structure
 

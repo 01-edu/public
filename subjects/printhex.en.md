@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a program that takes a positive (or zero) number expressed in base 10, and displays it in base 16 (with lowercase letters) followed by a newline(`'\n'`).
+Write a program that takes a positive (or zero) number expressed in base 10, and displays it in base 16 (with lowercase letters) followed by a newline (`'\n'`).
 
-- If the number of parameters is different from 1, the program displays a newline.
+-   If the number of parameters is different from 1, the program displays a newline.
 
 ### Usage
 

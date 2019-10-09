@@ -8,6 +8,7 @@
 
 ```go
 func ForEach(f func(int), arr []int) {
+
 }
 ```
 

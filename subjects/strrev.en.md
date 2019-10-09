@@ -2,9 +2,9 @@
 
 ### Instructions
 
-- Write a function that reverses a `string`.
+-   Write a function that reverses a `string`.
 
-- This function will **return** the s `string`.
+-   This function will **return** the s `string`.
 
 ### Expected function
 

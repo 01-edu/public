@@ -8,6 +8,7 @@ Write a function `CountIf` that returns the number of elements of a `string` arr
 
 ```go
 func CountIf(f func(string) bool, tab []string) int {
+
 }
 ```
 

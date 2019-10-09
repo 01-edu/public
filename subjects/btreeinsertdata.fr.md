@@ -2,8 +2,9 @@
 
 ### Instructions
 
-Écrire une fonction qui insère de la nouvelle data dans un arbre binaire en suivant les propriétés des arbres de recherche binaires.
-Les nodes doivent être définies comme ci-dessous:
+Écrire une fonction qui insère de la nouvelle donnée dans un arbre binaire en suivant les propriétés des arbres de recherche binaires.
+
+Les nodes doivent être définies comme ci-dessous :
 
 ### Fonction attendue
 
