@@ -1,4 +1,4 @@
-## atoibase
+## atoibaseprog
 
 ### Instructions
 
@@ -6,7 +6,7 @@ Write a program that takes a `string` number and its `string` base as arguments 
 
 - If the base or the `string` number is not valid it returns `0`.
 
-- If the number of arguments is bigger or lower that two it should print a newline `\n`.
+- If the number of arguments is bigger or lower that two it should print a newline ("`\n`").
 
 Validity rules for a base :
 
@@ -28,10 +28,10 @@ student@ubuntu:~/atoibaseprog$ ./atoibaseprog 1111101 01
 125
 student@ubuntu:~/atoibaseprog$ ./atoibaseprog 7D 0123456789ABCDEF
 125
-student@ubuntu:~/atoibaseprog$ ./atoibaseprog uoi choumi
-125
-student@ubuntu:~/atoibaseprog$ ./atoibaseprog bbbbbab -ab
-0
+student@ubuntu:~/atoibaseprog$ ./atoibaseprog uoi choumi | cat -e
+125$
+student@ubuntu:~/atoibaseprog$ ./atoibaseprog bbbbbab -ab | cat -e
+0$
 student@ubuntu:~/atoibaseprog$ ./atoibaseprog 1111101
 
 student@ubuntu:~/atoibaseprog$
