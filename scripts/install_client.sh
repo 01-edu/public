@@ -48,6 +48,7 @@ apt-get -yf install
 . sublime.sh
 . vscode.sh
 . libreoffice.sh
+. exam.sh
 
 # Install additional packages
 PKGS="
