@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Log stdout & stderr
 exec > >(tee -i /tmp/gdm3_postsession.log) 2>&1

@@ -1,12 +1,12 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Configure Z01 client
 
 # Log stdout & stderr
 exec > >(tee -i /tmp/install_client.log) 2>&1
 
-SCRIPT_DIR="$(cd -P "$(dirname "$BASH_SOURCE")" && pwd)"
-cd $SCRIPT_DIR
+script_dir="$(cd -P "$(dirname "$BASH_SOURCE")" && pwd)"
+cd $script_dir
 . set.sh
 
 SSH_PORT=521
@@ -99,7 +99,7 @@ cd /tmp/system
 
 cp --preserve=mode -RT . /
 
-cd $SCRIPT_DIR
+cd $script_dir
 rm -rf /tmp/system
 
 apt-get -y install overlayroot

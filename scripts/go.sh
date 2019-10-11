@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Install Go
 
-SCRIPT_DIR="$(cd -P "$(dirname "$BASH_SOURCE")" && pwd)"
-cd $SCRIPT_DIR
+script_dir="$(cd -P "$(dirname "$BASH_SOURCE")" && pwd)"
+cd $script_dir
 . set.sh
 
 apt-get -y install golang
