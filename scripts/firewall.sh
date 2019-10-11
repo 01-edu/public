@@ -12,5 +12,6 @@ apt-get -y install ufw
 
 ufw logging off
 ufw allow in "$SSH_PORT"/tcp
-ufw allow in 27960:27969
+ufw allow in 27960:27969/tcp
+ufw allow in 27960:27969/udp
 ufw --force enable
