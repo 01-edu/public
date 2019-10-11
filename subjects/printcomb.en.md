@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a [function](TODO-LINK) that prints in ascending order on a single line all unique combinations of three different digits so that the first digit is less than the second and the second is less than the third.
+Write a [function](TODO-LINK) that prints in ascending order on a single line all unique combinations of three different digits so that the first digit is lower than the second and the second is lower than the third.
 
 These combinations are separated by a comma and a space.
 
