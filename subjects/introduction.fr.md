@@ -4,14 +4,14 @@
 
 #### 1- get-ready
 
-Créer dans votre `compte github` le répository nommé `piscine-go`.
+Créer dans votre `compte git` le répository nommé `piscine-go`.
 
 Une fois créé, cloner ce répository sur votre desktop.
-Si votre `github username` était `kigiri` voici la commande qui devrait être utilisé :
+Si votre `git username` était `kigiri` voici la commande qui devrait être utilisé :
 
-`git clone https://github.com/kigiri/piscine-go`
+`git clone https://01.alem.school/git/kigiri/piscine-go`
 
-Cette commande doit être adaptée avec **votre propre github username**.
+Cette commande doit être adaptée avec **votre propre username**.
 
 Ce repository sera le dossier où tous les exercises doivent être uploadés.
 
@@ -20,7 +20,7 @@ Ce repository sera le dossier où tous les exercises doivent être uploadés.
 Une fois que le répository est créé, écrire votre premier programme shell nommé `hello.sh`
 
 Quand ce programme est éxécuté il doit afficher `Hello {username}!`
-Où `{username}` est votre `github username`
+Où `{username}` est votre `username`
 
 ##### Utilisation
 

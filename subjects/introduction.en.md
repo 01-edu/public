@@ -4,14 +4,14 @@
 
 #### 1- get-ready
 
-Create in your `github account` the repository named `piscine-go`.
+Create in your `git account` the repository named `piscine-go`.
 
 Once created, clone that repository on your desktop.
-If your `github username` was `kigiri` this is the command that will need to be used :
+If your `username` was `kigiri` this is the command that will need to be used :
 
-`git clone https://github.com/kigiri/piscine-go`
+`git clone https://01.alem.school/git/kigiri/piscine-go`
 
-This command needs to be adapted with **your own github username**.
+This command needs to be adapted with **your own username**.
 
 This repository will be the folder where all the exercices must be uploaded.
 
@@ -20,7 +20,7 @@ This repository will be the folder where all the exercices must be uploaded.
 Once the repository is created, write your first shell program called `hello.sh`
 
 When executed this program must print `Hello {username}!`
-Where `{username}` is your `github username`
+Where `{username}` is your `username`
 
 ##### Usage
 
