@@ -8,6 +8,6 @@ Tout ce qui vous vient à l'esprit est une étiquette sur laquelle est écrite: 
 
 Créer le fichier `who-are-you.sh` qui vous rappellera qui vous êtes en affichant votre Nom seulement.
 
--   Où chercher : https://raw.githubusercontent.com/kigiri/superhero-api/master/api/all.json
+-   Où chercher : https://01.alem.school/assets/superhero/all.json
 
 -   Quoi utiliser : `curl` et `jq`

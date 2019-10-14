@@ -2,12 +2,16 @@
 
 ### Instructions
 
-Write in a file `to-git-or-not-to-git.sh` the command that isolates your `gitHub id`.
+Write in a file `to-git-or-not-to-git.sh` the command that isolates your Gitea `id`.
+
 Only the numbers will appear.
 
-adapt this command 
+> Local API documentation: https://git.01.alem.school/api/swagger
 
-```curl -s "https://01.alem.school/api/graphql-engine/v1/graphql" --data '{"query":"{user(where:{githubLogin:{_eq:\"'$USERNAME'\"}}){id}}"}'
+Adapt & complete this command :
+
+```
+curl -s https://01.alem.school/api/graphql-engine/v1/graphql --data '{"query":"{user(where:{githubLogin:{_eq:\"choumi\"}}){id}}"}'
 ```
 
 ### Usage

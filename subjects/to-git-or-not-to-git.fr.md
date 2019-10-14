@@ -2,8 +2,10 @@
 
 ### Instructions
 
-Écrire dans un fichier `to-git-or-not-to-git.sh` la commande qui isoles votre `gitHub id`.
+Écrire dans un fichier `to-git-or-not-to-git.sh` la commande qui isoles votre `id git`.
 Seulement les chiffres apparaitront.
+
+> Documentation de l'API locale https://01.alem.school/git/api/swagger
 
 ### Utilisation
 

@@ -10,7 +10,7 @@ Create a file `myfamily.sh`, which will show a subject's family (key: relatives)
 
 -   The subject will be decided depending on his ID which will be contained in the environment variable HERO_ID.
 
-*   Where to look : https://raw.githubusercontent.com/kigiri/superhero-api/master/api/all.json
+*   Where to look : https://01.alem.school/assets/superhero/all.json
 
 *   What to use : curl, jq and others...
 
