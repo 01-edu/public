@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Install VSCode
 
-SCRIPT_DIR="$(cd -P "$(dirname "$BASH_SOURCE")" && pwd)"
-cd $SCRIPT_DIR
+script_dir="$(cd -P "$(dirname "$BASH_SOURCE")" && pwd)"
+cd $script_dir
 . set.sh
 
 wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | apt-key add -

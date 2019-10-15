@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Écrire un programme qui prend des `strings` comme arguments, et qui affiche le premier argument.
+Écrire un programme qui prend des `string` comme arguments, et qui affiche le premier argument.
 
 ### Utilisation
 

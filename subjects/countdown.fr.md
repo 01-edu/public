@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Écrire un programme qui affiche les chiffres dans l'ordre décroissant sur une seule ligne, suivi par un newline(`'\n'`).
+Écrire un programme qui affiche les chiffres dans l'ordre décroissant sur une seule ligne, suivi par un retour à la ligne (`'\n'`).
 
 ### Utilisation
 

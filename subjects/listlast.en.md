@@ -18,6 +18,7 @@ type List struct {
 }
 
 func ListLast(l *List) interface{} {
+
 }
 ```
 
@@ -45,7 +46,6 @@ func main() {
 	fmt.Println(piscine.ListLast(link))
 	fmt.Println(piscine.ListLast(link2))
 }
-
 ```
 
 And its output :

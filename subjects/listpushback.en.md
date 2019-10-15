@@ -18,6 +18,7 @@ type List struct {
 }
 
 func ListPushBack(l *List, data interface{}) {
+
 }
 ```
 

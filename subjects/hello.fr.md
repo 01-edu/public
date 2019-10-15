@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Écrire un programme qui affiche "Hello World!" suivi d'un newline(`'\n'`).
+Écrire un programme qui affiche "Hello World!" suivi d'un retour à la ligne (`'\n'`).
 
 ### Utilisation
 

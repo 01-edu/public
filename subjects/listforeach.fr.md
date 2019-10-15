@@ -4,9 +4,9 @@
 
 Écrire une fonction `ListForEach` qui applique un fonction donnée en argument à la data contenue dans chacune des nodes d'une liste `l`.
 
-- La fonction donnée en argument doit avoir un pointeur comme argument: `l *List`
+-   La fonction donnée en argument doit avoir un pointeur comme argument: `l *List`
 
-- Copier les fonctions `Add2_node` et `Subtract3_node` dans le même fichier où la fonction `ListForEach` est définie.
+-   Copier les fonctions `Add2_node` et `Subtract3_node` dans le même fichier où la fonction `ListForEach` est définie.
 
 ### Fonction et struture attendues
 

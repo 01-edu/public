@@ -2,9 +2,9 @@
 
 ### Instructions
 
-- Écrire un programme qui compte le nombre de caractères d'une `string` et qui retourne le nombre trouvé.
+-   Écrire un programme qui compte le nombre de caractères d'une `string` et qui retourne le nombre trouvé.
 
-- Si le programme reçoit plusieurs ou aucun arguments il ne doit rien afficher.
+-   Si le programme reçoit plusieurs ou aucun arguments il ne doit rien afficher.
 
 ### Utilisation :
 

@@ -4,12 +4,13 @@
 
 Write a function `ListClear` that deletes all `nodes` from a linked list `l`.
 
-- Tip: assign the list's pointer to `nil`.
+-   Tip: assign the list's pointer to `nil`.
 
 ### Expected function and structure
 
 ```go
 func ListClear(l *List) {
+
 }
 ```
 
@@ -52,7 +53,6 @@ func main() {
 	fmt.Println("------updated list------")
 	PrintList(link)
 }
-
 ```
 
 And its output :

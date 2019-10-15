@@ -4,13 +4,13 @@
 
 Écrire une fonction `ListForEachIf` qui applique un fonction donnée en argument à la data contenue dans certaines des nodes d'une liste `l`.
 
-- Cette fonction reçoit deux fonctions:
+-   Cette fonction reçoit deux fonctions:
 
-  - `f` est la fonction qui est appliqué à la node.
+    -   `f` est la fonction qui est appliqué à la node.
 
-  - `cond` est une fonction qui retourne un `boolean` et qui sera utilisée pour déterminer si la fonction`f` doit être appliquée à la node.
+    -   `cond` est une fonction qui retourne un `boolean` et qui sera utilisée pour déterminer si la fonction`f` doit être appliquée à la node.
 
-- La fonction donnée en argument doit avoir un pointeur `*NodeL` comme argument.
+-   La fonction donnée en argument doit avoir un pointeur `*NodeL` comme argument.
 
 ### Fonction et structure attendues
 

@@ -8,9 +8,9 @@ If the base or the `string` number is not valid it returns `0`:
 
 Validity rules for a base :
 
-- A base must contain at least 2 characters.
-- Each character of a base must be unique.
-- A base should not contain `+` or `-` characters.
+-   A base must contain at least 2 characters.
+-   Each character of a base must be unique.
+-   A base should not contain `+` or `-` characters.
 
 Only valid `string` numbers will be tested.
 

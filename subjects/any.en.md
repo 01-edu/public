@@ -2,14 +2,15 @@
 
 ### Instructions
 
-Write a function `Any` that returns `true`, for a `string` array:
+Write a function `Any` that returns `true`, for a `string` array :
 
-- if, when that `string` array is passed through an `f` function, at least one element returns `true`.
+-   if, when that `string` array is passed through an `f` function, at least one element returns `true`.
 
 ### Expected function
 
 ```go
 func Any(f func(string) bool, arr []string) bool {
+
 }
 ```
 

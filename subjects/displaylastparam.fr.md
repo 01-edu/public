@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Écrire un programme qui prend des `strings` comme arguments, et qui affiche le dernier argument.
+Écrire un programme qui prend des `string` comme arguments, et qui affiche le dernier argument.
 
 ### Expected output
 

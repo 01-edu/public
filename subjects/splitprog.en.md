@@ -6,8 +6,8 @@ Write a program which separates the words of a `string`, which puts them in a `s
 
 The program receives two parameters:
 
-- The first is the `string`
-- The second is the separator
+-   The first is the `string`
+-   The second is the separator
 
 ### Usage :
 

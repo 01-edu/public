@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Mount home as an overlay filesystem
 
@@ -46,3 +46,5 @@ temp_path=/mnt/.01/tmp
 mkdir -p "$user_path" "$temp_path"
 chown -R "$USER":"$USER" "$user_path" "$temp_path"
 mount -t overlay -o lowerdir="$HOME",upperdir="$user_path",workdir="$temp_path" overlay "$HOME"
+mkdir -p "$HOME"/.cache
+mount -t tmpfs -o size=2G tmpfs "$HOME"/.cache

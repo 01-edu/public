@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Log stdout & stderr
 exec > >(tee -i /tmp/gdm3_postsession.log) 2>&1
@@ -21,6 +21,6 @@ systemctl stop user@1000.service
 
 # Make sure the mountpoints are free
 kill $(lsof -t "$HOME" /mnt) $(ps --no-headers -u "$USER" -o pid)
-umount "$HOME" /mnt
+umount "$HOME"/.cache "$HOME" /mnt
 umount /dev/disk/by-partlabel/01-home ||:
-wipefs -a /dev/disk/by-partlabel/01-tmp-home
+/usr/sbin/wipefs -a /dev/disk/by-partlabel/01-tmp-home

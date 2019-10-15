@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a program that displays "Hello World!" followed by a newline(`'\n'`).
+Write a program that displays "Hello World!" followed by a newline (`'\n'`).
 
 ### Usage
 

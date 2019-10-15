@@ -6,8 +6,8 @@
 
 Le programme reçoit deux paramètres:
 
-- Le premier est la `string`
-- Le deuxième est le séparateur
+-   Le premier est la `string`
+-   Le deuxième est le séparateur
 
 ### Utilisation :
 

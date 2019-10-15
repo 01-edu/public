@@ -4,15 +4,15 @@
 
 Écrire un programme qui doit:
 
-- Allouer (avec make()) une slice d'entiers.
+-   Allouer (avec `make`) une slice d'entiers.
 
-- Le remplir avec des valeurs consécutives qui commencent au deuxième argument et qui finissent au premier (En incluant les valeurs des deux arguments !)
+-   Le remplir avec des valeurs consécutives qui commencent au deuxième argument et qui finissent au premier (en incluant les valeurs des deux arguments !)
 
-- Et qui affiche cette slice.
+-   Et qui affiche cette slice.
 
 Les erreurs doivent être gérées.
 
-Si le nombre d'arguments est différent de 2 le programme affiche un newline ("`\n`").
+Si le nombre d'arguments est différent de 2 le programme affiche un retour à la ligne (`'\n'`).
 
 ### Utilisation :
 

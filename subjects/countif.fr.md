@@ -8,6 +8,7 @@
 
 ```go
 func CountIf(f func(string) bool, tab []string) int {
+
 }
 ```
 
