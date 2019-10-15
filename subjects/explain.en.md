@@ -6,7 +6,7 @@
 
 "How did you do it?"
 
-The commissioner thanks you for delivering the suspect. He now asks you how did you get into his trail.
+The commissioner thanks you for delivering the suspect. He now asks you how did you get onto his trail.
 
 Write an `explain.sh` file that:
 
