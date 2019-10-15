@@ -29,3 +29,4 @@ EOF
 chown student:student /home/student/.local/share/applications/appimagekit-exam.desktop
 
 sudo -iu student xdg-mime default appimagekit-exam.desktop x-scheme-handler/exam
+sudo -iu student go get github.com/01-edu/z01
