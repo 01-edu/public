@@ -2,15 +2,15 @@
 
 ## Context
 
-Only unblocked bonus exercises can be reviewed, which are the last items of a quest.
+Only unblocked bonus exercises can be reviewed, which are usually the last items of a quest.
 Bonus exercises are available in quests 02 / 03 / 04 / 05 / 07 / 08 / 09.
 <img width="1073" alt="Screenshot 2019-10-17 at 02.43.31" src="img/reviews/Screenshot 2019-10-17 at 02.43.31.png">
 
-Making a review involves 2 students who are gonna review each other's exercise.
+Making a review involves 2 students who are goning to review each other's exercise.
 Each user has to :
 
 - **check** the code of the other one on Github
-- **bet** if it's gonna fail or succeed in the Review interface
+- **bet** if it is going to fail or succeed in the Review interface
 - **run** his own exercise in the Review interface to give a result to compare with the bet, and state if it was right or wrong
 
 ## Usage
@@ -19,7 +19,7 @@ To submit an exercise to review and be reviewed, go to the `Review panel` on the
 
 <img width="1073" alt="Screenshot 2019-10-17 at 01.59.32" src="img/reviews/Screenshot 2019-10-17 at 01.59.32.png">
 
-Then, when a match with another student who also wants to review is found, you'll be notified :
+Then, when a match with another student who also wants to review is found, you will be notified :
 
 <img width="1073" alt="Screenshot 2019-10-17 at 02.03.11" src="img/reviews/Screenshot 2019-10-17 at 02.03.11.png">
 
@@ -27,7 +27,7 @@ Once you and the other student have confirmed the match, you can go and check th
 
 <img width="1073" alt="Screenshot 2019-10-17 at 02.05.46" src="img/reviews/Screenshot 2019-10-17 at 02.05.46.png">
 
-When you've checked his code, those 4 steps will have to be completed to achieve the review :
+When you have checked his code, those 4 steps will have to be completed to achieve the review :
 
 - You have to bet if the exercise of the other student will fail or succeed after running the tester
 - The other student has to do the same with your exercise and make his own bet, that you will see on the component `Review of your exercise`
@@ -37,7 +37,7 @@ When you've checked his code, those 4 steps will have to be completed to achieve
 - The other student also has to run the tester on his exercise to determine his result and so if your bet was wrong or right
   <img width="1073" alt="Screenshot 2019-10-17 at 02.22.30" src="img/reviews/Screenshot 2019-10-17 at 02.22.30.png">
 
-In fact, a bet is succeeded if it's equal as the tester output :
+In fact, a bet is succeeded if it is equal to the tester output :
 <img width="1073" alt="Screenshot 2019-10-17 at 02.24.04" src="img/reviews/Screenshot 2019-10-17 at 02.24.04.png">
 
 You can have those 4 cases :
