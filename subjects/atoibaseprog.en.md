@@ -1,38 +1,58 @@
-## atoibaseprog
+## atoibase
 
 ### Instructions
 
-Write a program that takes a `string` number and its `string` base as arguments and prints its conversion as an `int`.
+Write a function that takes a `string` number and its `string` base in parameters and returns its conversion as an `int`.
 
-- If the base or the `string` number is not valid it returns `0`.
-
-- If the number of arguments is bigger or lower that two it should print a newline ("`\n`").
+If the base or the `string` number is not valid it returns `0`:
 
 Validity rules for a base :
 
-- A base must contain at least 2 characters.
-- Each character of a base must be unique.
-- A base should not contain `+` or `-` characters.
+-   A base must contain at least 2 characters.
+-   Each character of a base must be unique.
+-   A base should not contain `+` or `-` characters.
 
 Only valid `string` numbers will be tested.
 
-The program **does not have** to manage negative numbers.
+The function **does not have** to manage negative numbers.
 
-### Expected output :
+### Expected function
+
+```go
+func AtoiBase(s string, base string) int {
+
+}
+```
+
+### Usage
+
+Here is a possible [program](TODO-LINK) to test your function :
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	fmt.Println(AtoiBase("125", "0123456789"))
+	fmt.Println(AtoiBase("1111101", "01"))
+	fmt.Println(AtoiBase("7D", "0123456789ABCDEF"))
+	fmt.Println(AtoiBase("uoi", "choumi"))
+	fmt.Println(AtoiBase("bbbbbab", "-ab"))
+}
+```
+
+And its output :
 
 ```console
-student@ubuntu:~/atoibaseprog$ go build
-student@ubuntu:~/atoibaseprog$ ./atoibaseprog 125 0123456789
+student@ubuntu:~/test$ go build
+student@ubuntu:~/test$ ./test
 125
-student@ubuntu:~/atoibaseprog$ ./atoibaseprog 1111101 01
 125
-student@ubuntu:~/atoibaseprog$ ./atoibaseprog 7D 0123456789ABCDEF
 125
-student@ubuntu:~/atoibaseprog$ ./atoibaseprog uoi choumi | cat -e
-125$
-student@ubuntu:~/atoibaseprog$ ./atoibaseprog bbbbbab -ab | cat -e
-0$
-student@ubuntu:~/atoibaseprog$ ./atoibaseprog 1111101
-
-student@ubuntu:~/atoibaseprog$
+125
+0
+student@ubuntu:~/test$
 ```

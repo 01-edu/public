@@ -17,9 +17,15 @@ func PrintMemory(arr [10]int) {
 Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 
 ```go
+package main
+
+import (
+	piscine ".."
+)
+
 func main() {
 	arr := [10]int{104, 101, 108, 108, 111, 16, 21, 42}
-	PrintMemory(arr)
+	piscine.PrintMemory(arr)
 }
 ```
 
