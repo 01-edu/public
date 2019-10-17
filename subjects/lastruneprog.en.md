@@ -1,19 +1,17 @@
-## lastruneprog
+## lastrune
 
 ### Instructions
 
-Write a program that receives a `string` and returns the last `rune` of a `string`.
+Write a function that returns the last `rune` of a `string`.
 
-### Expected output :
+### Expected function
 
-```console
-student@ubuntu:~/piscine-go/firstruneprog$ go build
-student@ubuntu:~/piscine-go/firstruneprog$ ./firstruneprog "this is not happening"
-g
-student@ubuntu:~/piscine-go/firstruneprog$ ./firstruneprog "hello" | cat -e
-o$
-student@ubuntu:~/piscine-go/firstruneprog$ ./firstruneprog "this" "is" "not" "happening"
-student@ubuntu:~/piscine-go/firstruneprog$
-student@ubuntu:~/piscine-go/firstruneprog$ ./firstruneprog
-student@ubuntu:~/piscine-go/firstruneprog$
+```go
+func LastRune(s string) rune {
+
+}
 ```
+
+### Note
+
+Remember to submit a main function testing the function

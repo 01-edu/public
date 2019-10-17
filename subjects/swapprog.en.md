@@ -1,13 +1,13 @@
-## nrune
+## swap
 
 ### Instructions
 
-Write a function that returns the nth `rune` of a `string`.
+-   Write a function that swaps the contents of two **pointers to an int** (`*int`).
 
 ### Expected function
 
 ```go
-func NRune(s string, n int) rune {
+func Swap(a *int, b *int) {
 
 }
 ```

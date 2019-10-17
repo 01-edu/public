@@ -1,19 +1,17 @@
-## firstruneprog
+## firstrune
 
 ### Instructions
 
-Write a program that receives a `string` and returns the first `rune` of that `string`.
+Write a function that returns the first `rune` of a `string`.
 
-### Expected output :
+### Expected function
 
-```console
-student@ubuntu:~/piscine-go/firstruneprog$ go build
-student@ubuntu:~/piscine-go/firstruneprog$ ./firstruneprog "this is not happening"
-t
-student@ubuntu:~/piscine-go/firstruneprog$ ./firstruneprog "hello" | cat-e
-h$
-student@ubuntu:~/piscine-go/firstruneprog$ ./firstruneprog "this" "is" "not" "happening"
-student@ubuntu:~/piscine-go/firstruneprog$
-student@ubuntu:~/piscine-go/firstruneprog$ ./firstruneprog
-student@ubuntu:~/piscine-go/firstruneprog$
+```go
+func FirstRune(s string) rune {
+
+}
 ```
+
+### Note
+
+Remember to submit a main function testing the function
