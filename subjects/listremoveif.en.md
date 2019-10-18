@@ -75,7 +75,6 @@ func main() {
 	fmt.Println("------answer-----")
 	PrintList(link)
 }
-
 ```
 
 And its output :

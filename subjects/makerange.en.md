@@ -15,6 +15,7 @@ If min is superior or equal to max, a `nil` slice is returned.
 
 ```go
 func MakeRange(min, max int) []int {
+
 }
 ```
 

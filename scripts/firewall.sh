@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Install firewall
 
-SCRIPT_DIR="$(cd -P "$(dirname "$BASH_SOURCE")" && pwd)"
-cd $SCRIPT_DIR
+script_dir="$(cd -P "$(dirname "$BASH_SOURCE")" && pwd)"
+cd $script_dir
 . set.sh
 
 SSH_PORT=${1:-521}
@@ -12,4 +12,6 @@ apt-get -y install ufw
 
 ufw logging off
 ufw allow in "$SSH_PORT"/tcp
+ufw allow in 27960:27969/tcp
+ufw allow in 27960:27969/udp
 ufw --force enable

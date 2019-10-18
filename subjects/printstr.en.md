@@ -2,7 +2,7 @@
 
 ### Instructions
 
-- Write a function that prints one by one the characters of a `string` on the screen.
+-   Write a function that prints one by one the characters of a `string` on the screen.
 
 ### Expected function
 

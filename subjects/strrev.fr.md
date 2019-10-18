@@ -2,9 +2,9 @@
 
 ### Instructions
 
-- Écrire une fonction qui inverse une chaîne de caractères(`string`).
+-   Écrire une fonction qui inverse une chaîne de caractères(`string`).
 
-- Cette fonction **retournera** la chaîne de caractères s(`string`).
+-   Cette fonction **retournera** la chaîne de caractères s(`string`).
 
 ### Fonction attendue
 

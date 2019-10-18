@@ -6,9 +6,9 @@ Write a [program](TODO-LINK) that is called `doop`.
 
 The program has to be used with three arguments:
 
-- A value
-- An operator
-- Another value
+-   A value
+-   An operator
+-   Another value
 
 In case of an invalid operator the programs prints `0`.
 
@@ -32,7 +32,7 @@ student@ubuntu:~/piscine-go/test$ ./doop 1 p 1 | cat -e
 student@ubuntu:~/piscine-go/test$ ./doop 1 / 0 | cat -e
 No division by 0$
 student@ubuntu:~/piscine-go/test$ ./doop 1 % 0 | cat -e
-No modulo by 0$
+No Modulo by 0$
 student@ubuntu:~/piscine-go/test$ ./doop 1 "*" 1
 1
 ```

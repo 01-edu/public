@@ -8,6 +8,7 @@ Write a function `Map` that, for an `int` array, applies a function of this type
 
 ```go
 func Map(f func(int) bool, arr []int) []bool {
+
 }
 ```
 

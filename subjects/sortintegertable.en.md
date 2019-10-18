@@ -2,7 +2,7 @@
 
 ### Instructions
 
-- Write a function that reorder an array of `int` in ascending order.
+-   Write a function that reorder an array of `int` in ascending order.
 
 ### Expected function
 

@@ -36,12 +36,12 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/student/test$ go build
-student@ubuntu:~/student/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 ABBBA
 B   B
 CBBBC
-student@ubuntu:~/student/test$
+student@ubuntu:~/piscine-go/test$
 ```
 
 Programme #2
@@ -62,10 +62,10 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/student/test$ go build
-student@ubuntu:~/student/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 ABBBA
-student@ubuntu:~/student/test$
+student@ubuntu:~/piscine-go/test$
 ```
 
 Programme #3
@@ -86,10 +86,10 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/student/test$ go build
-student@ubuntu:~/student/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 A
-student@ubuntu:~/student/test$
+student@ubuntu:~/piscine-go/test$
 ```
 
 Programme #4
@@ -110,12 +110,12 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/student/test$ go build
-student@ubuntu:~/student/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 A
 B
 B
 B
 C
-student@ubuntu:~/student/test$
+student@ubuntu:~/piscine-go/test$
 ```

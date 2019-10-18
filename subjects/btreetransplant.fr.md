@@ -39,11 +39,11 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/student/test$ go build
-student@ubuntu:~/student/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 3
 4
 5
 7
-student@ubuntu:~/student/test$
+student@ubuntu:~/piscine-go/test$
 ```

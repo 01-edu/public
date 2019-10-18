@@ -2,7 +2,7 @@
 
 ### Instructions
 
-- Écrire une fonction qui aura le format ci-dessous.
+-   Écrire une fonction qui aura le format ci-dessous.
 
 ### Fonction attendue
 
@@ -12,9 +12,9 @@ func DivMod(a int, b int, div *int, mod *int) {
 }
 ```
 
-- Cette fonction divisera les int **a** et **b**.
-- Le résultat de la division sera stocké dans l'int pointé par **div**.
-- Le reste de cette division sera stocké dans l'int pointé par **mod**.
+-   Cette fonction divisera les int **a** et **b**.
+-   Le résultat de la division sera stocké dans l'int pointé par **div**.
+-   Le reste de cette division sera stocké dans l'int pointé par **mod**.
 
 ### Utilisation
 

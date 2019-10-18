@@ -2,8 +2,7 @@
 
 ### Instructions
 
-Écrire une fonction qui applique une fonction en ordre (in order) a chaque élément de l'arbre.
-(voir les `in order tree walks`)
+Écrire une fonction qui applique une fonction en ordre (in order) à chaque élément de l'arbre (voir les "in order tree walks").
 
 ### Fonction attendue
 

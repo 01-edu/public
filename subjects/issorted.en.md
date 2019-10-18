@@ -13,6 +13,7 @@ To do your testing you have to write your own `f` function.
 
 ```go
 func IsSorted(f func(a, b int) int, tab []int) bool {
+
 }
 ```
 

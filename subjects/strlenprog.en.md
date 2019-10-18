@@ -2,9 +2,9 @@
 
 ### Instructions
 
-- Write a program that counts the characters of a `string` and that returns that value.
+-   Write a program that counts the characters of a `string` and that returns that value.
 
-- If the program receives more than one or no arguments it must not print anything.
+-   If the program receives more than one or no arguments it must not print anything.
 
 ### Expected output :
 

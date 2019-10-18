@@ -2,13 +2,13 @@
 
 ### Instructions
 
-Write a program that takes a positive `int` and displays its prime factors, followed by a newline(`'\n'`).
+Write a program that takes a positive `int` and displays its prime factors, followed by a newline (`'\n'`).
 
-- Factors must be displayed in ascending order and separated by `*`.
+-   Factors must be displayed in ascending order and separated by `*`.
 
-- If the number of parameters is different from 1, the program displays a newline.
+-   If the number of parameters is different from 1, the program displays a newline.
 
-- The input, when there is one, will always be valid.
+-   The input, when there is one, will always be valid.
 
 ### Usage
 

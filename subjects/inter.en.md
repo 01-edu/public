@@ -2,11 +2,11 @@
 
 ### Instructions
 
-Write a program that takes two `strings` and displays, without doubles, the characters that appear in both `strings`, in the order they appear in the first one.
+Write a program that takes two `string` and displays, without doubles, the characters that appear in both `string`, in the order they appear in the first one.
 
-- The display will be followed by a newline(`'\n'`).
+-   The display will be followed by a newline (`'\n'`).
 
-- If the number of arguments is different from 2, the program displays a newline(`'\n'`).
+-   If the number of arguments is different from 2, the program displays a newline (`'\n'`).
 
 ### Usage
 

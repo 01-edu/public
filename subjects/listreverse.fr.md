@@ -18,6 +18,7 @@ type List struct {
 }
 
 func ListReverse(l *List) {
+
 }
 ```
 

@@ -47,5 +47,4 @@ student@ubuntu:~/piscine-go/test$go build
 student@ubuntu:~/piscine-go/test$ ./test
 3
 student@ubuntu:~/piscine-go/test$
-
 ```

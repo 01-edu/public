@@ -4,7 +4,7 @@
 
 Write a program that behaves like the `Compare` function.
 
-This program prints a number after comparing two `strings` lexicographically.
+This program prints a number after comparing two `string` lexicographically.
 
 ### Usage :
 

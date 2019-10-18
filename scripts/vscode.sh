@@ -1,21 +1,16 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Install VSCode
 
-SCRIPT_DIR="$(cd -P "$(dirname "$BASH_SOURCE")" && pwd)"
-cd $SCRIPT_DIR
+script_dir="$(cd -P "$(dirname "$BASH_SOURCE")" && pwd)"
+cd $script_dir
 . set.sh
 
 wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | apt-key add -
 echo 'deb https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/repos/debs/ vscodium main' > /etc/apt/sources.list.d/vscodium.list
 apt-get update && apt-get -y install codium
 
-cat <<EOF> /usr/local/bin/code
-#!/usr/bin/env bash
-
-/usr/share/codium/codium &>/dev/null &
-EOF
-chmod +x /usr/local/bin/code
+ln -s /usr/bin/codium /usr/local/bin/code
 
 # Set-up all users
 for DIR in $(ls -1d /home/* 2>/dev/null || true)

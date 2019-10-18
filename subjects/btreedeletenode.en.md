@@ -12,7 +12,6 @@ The resulting tree should still follow the binary search tree rules.
 func BTreeDeleteNode(root, node *TreeNode) *TreeNode {
 
 }
-
 ```
 
 ### Usage
@@ -44,8 +43,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/student/test$ go build
-student@ubuntu:~/student/test$ ./test
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 Before delete:
 1
 4
@@ -55,5 +54,5 @@ After delete:
 1
 5
 7
-student@ubuntu:~/student/test$
+student@ubuntu:~/piscine-go/test$
 ```

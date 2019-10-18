@@ -4,7 +4,7 @@
 
 Write a function `ListMerge` that places elements of a list `l2` at the end of another list `l1`.
 
-- New elements should not be created!
+-   New elements should not be created!
 
 ### Expected function and structure
 
