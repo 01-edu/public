@@ -15,7 +15,7 @@ A negative index will return `-1`.
 ### Expected function
 
 ```go
-package main
+package piscine
 
 func Fibonacci(index int) int {
 
