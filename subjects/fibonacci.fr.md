@@ -15,7 +15,7 @@ Un index négatif renvoie `-1`.
 ### Fonction attendue
 
 ```go
-package main
+package piscine
 
 func Fibonacci(index int) int {
 
