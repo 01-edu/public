@@ -44,7 +44,7 @@ func main() {
 	n4 := piscine.TrimAtoi(s4)
 	n5 := piscine.TrimAtoi(s5)
 	n6 := piscine.TrimAtoi(s6)
-	n7 := piscine.TrimAtoi(s6)
+	n7 := piscine.TrimAtoi(s7)
 
 	fmt.Println(n)
 	fmt.Println(n2)
