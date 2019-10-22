@@ -28,7 +28,7 @@ student@ubuntu:~/piscine-go/flags$ ./flags
     This flag inserts the string into the string passed as argument.
 --order
   -o
-    This flag will behave like a boolean, if its called it will order the argument.
+    This flag will behave like a boolean, if it is called it will order the argument.
 student@ubuntu:~/piscine-go/flags$
 student@ubuntu:~/piscine-go/flags$ ./flags -h
 --insert
@@ -36,7 +36,7 @@ student@ubuntu:~/piscine-go/flags$ ./flags -h
     This flag inserts the string into the string passed as argument.
 --order
   -o
-    This flag will behave like a boolean, if its called it will order the argument.
+    This flag will behave like a boolean, if it is called it will order the argument.
 student@ubuntu:~/piscine-go/flags$
 student@ubuntu:~/piscine-go/flags$ ./flags --help
 --insert
@@ -44,6 +44,6 @@ student@ubuntu:~/piscine-go/flags$ ./flags --help
     This flag inserts the string into the string passed as argument.
 --order
   -o
-    This flag will behave like a boolean, if its called it will order the argument.
+    This flag will behave like a boolean, if it is called it will order the argument.
 student@ubuntu:~/piscine-go/flags$
 ```
