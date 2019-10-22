@@ -7,7 +7,7 @@ Write a function that returns the concatenation of all the `string` of a table o
 ### Expected function
 
 ```go
-func basicJoin(strs []string) string {
+func BasicJoin(strs []string) string {
 
 }
 ```
