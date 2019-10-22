@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that prints an `int` passed in parameter.
+Write a function that prints digits of an `int` passed in parameter in ascending order.
 All possible values of type `int` have to go through, besides negative numbers.
 Convertion to `int64` is not allowed.
 
