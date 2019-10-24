@@ -1,4 +1,4 @@
-## max
+## maxprog
 
 ##**WARNING! VERY IMPORTANT!**
 
