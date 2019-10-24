@@ -108,10 +108,19 @@ echo overlayroot=\"device:dev=/dev/disk/by-partlabel/01-tmp-system,recurse=0\" >
 
 update-initramfs -u
 
-# Remove root & user password
-passwd -d root
+# Lock root password
+passwd -l root
+
+# Disable user password
 passwd -d student
+
 cp /etc/shadow /etc/shadow-
+
+# Remove tty
+cat <<EOF>> /etc/systemd/logind.conf
+NAutoVTs=0
+ReserveVT=N
+EOF
 
 # Remove user abilities
 gpasswd -d student sudo
