@@ -22,7 +22,3 @@ func LastRune(s string) rune {
 
 }
 ```
-
-### Note
-
-Remember to submit a main function testing the function
