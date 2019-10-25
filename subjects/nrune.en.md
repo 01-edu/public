@@ -4,6 +4,8 @@
 
 Write a function that returns the nth `rune` of a `string`.
 
+- In case of impossibilities, the function returns `0`.
+
 ### Expected function
 
 ```go
@@ -27,6 +29,8 @@ import (
 func main() {
 	z01.PrintRune(piscine.NRune("Hello!", 3))
 	z01.PrintRune(piscine.NRune("Salut!", 2))
+	z01.PrintRune(piscine.NRune("Bye!", -1))
+	z01.PrintRune(piscine.NRune("Bye!", 5))
 	z01.PrintRune(piscine.NRune("Ola!", 4))
 	z01.PrintRune('\n')
 }
