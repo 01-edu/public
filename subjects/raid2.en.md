@@ -32,11 +32,11 @@ student@ubuntu:~/piscine-go/raid2$
 Examples of output for invalid input or sudokus :
 
 ```console
-student@ubuntu:~/piscine-go/raid2$ ./raid2 1 2 3 4 +" | cat -e
+student@ubuntu:~/piscine-go/raid2$ ./raid2 1 2 3 4 | cat -e
 Error$
 student@ubuntu:~/piscine-go/raid2$ ./raid2 | cat -e
 Error$
-student@ubuntu:~/piscine-go/raid2$ ./raid2 ".96.4...1" "1...6.1.4" "5.481.39." "..795..43" ".3..8...." "4.5.23.18" ".1.63..59" ".59.7.83." "..359...7" | cat -e"
+student@ubuntu:~/piscine-go/raid2$ ./raid2 ".96.4...1" "1...6.1.4" "5.481.39." "..795..43" ".3..8...." "4.5.23.18" ".1.63..59" ".59.7.83." "..359...7" | cat -e
 Error$
 student@ubuntu:~/piscine-go/raid2$
 ```
