@@ -27,7 +27,7 @@ import (
 func main() {
 	arrInt := []int{23, 123, 1, 11, 55, 93}
 	max := piscine.Max(arrInt)
-	fmt.Println(max
+	fmt.Println(max)
 }
 ```
 
