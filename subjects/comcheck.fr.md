@@ -6,7 +6,7 @@
 
 -   `01`, `galaxy` ou `galaxy 01`.
 
--   si aucun des paramètres correspond, le programme affiche un retour à la ligne (`'\n'`).
+-   si aucun des paramètres correspond, le programme affiche rien.
 
 ### Usage
 
