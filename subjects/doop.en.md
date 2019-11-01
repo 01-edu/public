@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a [program](TODO-LINK) that is called `doop`.
+Write a program that is called `doop`.
 
 The program has to be used with three arguments:
 
