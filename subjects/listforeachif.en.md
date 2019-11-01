@@ -102,7 +102,6 @@ func main() {
 
 	PrintList(link)
 
-	fmt.Println()
 	fmt.Println("--------function applied--------")
 	piscine.ListForEachIf(link, PrintElem, piscine.IsPositive_node)
 
