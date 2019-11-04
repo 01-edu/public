@@ -9,12 +9,12 @@
 ```go
 type Node struct {
 	Data interface{}
-	Next *Node
+	Next *NodeL
 }
 
 type List struct {
-	Head *Node
-	Tail *Node
+	Head *NodeL
+	Tail *NodeL
 }
 
 func ListLast(l *List) interface{} {

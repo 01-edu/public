@@ -7,14 +7,14 @@ Write a function `ListLast` that returns the last element of a linked list `l`.
 ### Expected function and structure
 
 ```go
-type Node struct {
+type NodeL struct {
 	Data interface{}
-	Next *Node
+	Next *NodeL
 }
 
 type List struct {
-	Head *Node
-	Tail *Node
+	Head *NodeL
+	Tail *NodeL
 }
 
 func ListLast(l *List) interface{} {
