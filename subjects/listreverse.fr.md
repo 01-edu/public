@@ -65,7 +65,7 @@ student@ubuntu:~/piscine-go/test$ ./test
 3
 2
 1
-Tail &{1 <nil>}
+Tail <nil>
 Head &{4 0xc42000a140}
 student@ubuntu:~/piscine-go/test$
 ```
