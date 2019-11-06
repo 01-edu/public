@@ -6,7 +6,7 @@ Write a program that takes two `string` and displays, without doubles, the chara
 
 The display will be in the order characters appear in the command line, and will be followed by a newline (`'\n'`).
 
-If the number of arguments is different from 2, the program displays newline (`'\n'`).
+If the number of arguments is different from 2, then the program displays newline (`'\n'`).
 
 ### Usage
 
