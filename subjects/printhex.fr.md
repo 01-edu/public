@@ -16,7 +16,9 @@ student@ubuntu:~/piscine-go/test$ ./test "255"
 ff
 student@ubuntu:~/piscine-go/test$ ./test "5156454"
 4eae66
-student@ubuntu:~/piscine-go/test$
+student@ubuntu:~/piscine-go/test$ ./test
 
-student@ubuntu:~/piscine-go/
+student@ubuntu:~/piscine-go/test$ ./test "123 132 1" | cat -e
+0$
+student@ubuntu:~/piscine-go/test$ 
 ```
