@@ -32,8 +32,8 @@ Voici la sortie tronquée :
 
 ```console
 student@ubuntu:~/piscine-go/test$ go build
-student@ubuntu:~/piscine-go/test$ ./test
-012, 013, 014, 015, 016, 017, 018, 019, 023, ..., 689, 789
+student@ubuntu:~/piscine-go/test$ ./test | cat -e
+012, 013, 014, 015, 016, 017, 018, 019, 023, ..., 689, 789$
 student@ubuntu:~/piscine-go/test$
 ```
 
