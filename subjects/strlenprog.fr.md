@@ -1,6 +1,6 @@
 ## strlenprog
 
-###**AVERTISSEMENT! TRÈS IMPORTANT!**
+##**AVERTISSEMENT! TRÈS IMPORTANT!**
 
 Pour cet exercice une fonction sera testée **avec le main de l'examen**. Cependant l'étudiant **doit quand même** rendre un programme structuré:
 
