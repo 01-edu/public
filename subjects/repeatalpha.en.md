@@ -19,10 +19,10 @@ If the number of arguments is different from 1, the program displays a newline (
 student@ubuntu:~/piscine-go/repeatalpha$ go build
 student@ubuntu:~/piscine-go/repeatalpha$ ./repeatalpha "abc" | cat -e
 abbccc
-student@ubuntu:~/piscine-go/repeatalpha$ ./repeatalpha "Alex." | cat -e
-Alllllllllllleeeeexxxxxxxxxxxxxxxxxxxxxxxx.$
-student@ubuntu:~/piscine-go/repeatalpha$ ./repeatalpha "abacadaba 42!" | cat -e
-abbacccaddddabba 42!$
+student@ubuntu:~/piscine-go/repeatalpha$ ./repeatalpha "Choumi." | cat -e
+CCChhhhhhhhooooooooooooooouuuuuuuuuuuuuuuuuuuuummmmmmmmmmmmmiiiiiiiii.$
+student@ubuntu:~/piscine-go/repeatalpha$ ./repeatalpha "abacadaba 01!" | cat -e
+abbacccaddddabba 01!$
 student@ubuntu:~/piscine-go/repeatalpha$ ./repeatalpha | cat -e
 $
 student@ubuntu:~/piscine-go/repeatalpha$ ./repeatalpha "" | cat -e
