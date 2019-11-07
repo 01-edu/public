@@ -23,7 +23,7 @@ All the given operands must fit in a `int`.
 Examples of formulas converted in RPN:
 
 3 + 4 >> 3 4 +
-((1 _ 2) _ 3) - 4 >> 1 2 _ 3 _ 4 - ou 3 1 2 \* _ 4 -
+((1 _ 2) _ 3) - 4 >> 1 2 _ 3 _ 4 - or 3 1 2 \* _ 4 -
 50 _ (5 - (10 / 9)) >> 5 10 9 / - 50 \*
 
 Here is how to evaluate a formula in RPN:

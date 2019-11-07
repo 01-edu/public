@@ -24,7 +24,9 @@ student@ubuntu:~/piscine-go/test$ ./test 804577
 804577
 student@ubuntu:~/piscine-go/test$ ./test 42
 2*3*7
-student@ubuntu:~/piscine-go/test$ ./test
+student@ubuntu:~/piscine-go/test$ ./test a
+
+student@ubuntu:~/piscine-go/test$ ./test 0
 
 student@ubuntu:~/piscine-go/test$
 ```

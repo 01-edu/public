@@ -18,10 +18,10 @@ Si le nombre d'arguments est différent de 1, le programme affiche un retour à 
 student@ubuntu:~/piscine-go/repeatalpha$ go build
 student@ubuntu:~/piscine-go/repeatalpha$ ./repeatalpha "abc" | cat -e
 abbccc
-student@ubuntu:~/piscine-go/repeatalpha$ ./repeatalpha "Alex." | cat -e
-Alllllllllllleeeeexxxxxxxxxxxxxxxxxxxxxxxx.$
-student@ubuntu:~/piscine-go/repeatalpha$ ./repeatalpha "abacadaba 42!" | cat -e
-abbacccaddddabba 42!$
+student@ubuntu:~/piscine-go/repeatalpha$ ./repeatalpha "Choumi." | cat -e
+CCChhhhhhhhooooooooooooooouuuuuuuuuuuuuuuuuuuuummmmmmmmmmmmmiiiiiiiii.$
+student@ubuntu:~/piscine-go/repeatalpha$ ./repeatalpha "abacadaba 01!" | cat -e
+abbacccaddddabba 01!$
 student@ubuntu:~/piscine-go/repeatalpha$ ./repeatalpha | cat -e
 $
 student@ubuntu:~/piscine-go/repeatalpha$ ./repeatalpha "" | cat -e

@@ -1,19 +1,52 @@
 ## strlenprog
 
+##**AVERTISSEMENT! TRÈS IMPORTANT!**
+
+Pour cet exercice une fonction sera testée **avec le main de l'examen**. Cependant l'étudiant **doit quand même** rendre un programme structuré:
+
+Cela signifie que:
+
+- Le package doit être nommé `package main`.
+- Le code rendu doit avoir une fonction main déclarée(```func main()```) même si elle est vide.
+- La fonction main déclarée doit **aussi passer** le `Restrictions Checker`(le testeur de fonctions illégales). Il est conseillé à l'étudiant de rendre une fonction main vide après ses tests finis.
+- Toutes les autres régles sont les mêmes que pour un `programme`.
+
 ### Instructions
 
--   Écrire un programme qui compte le nombre de caractères d'une `string` et qui retourne le nombre trouvé.
+-   Écrire une fonction qui compte le nombre de caractères d'une `string` et qui retourne le nombre trouvé.
 
--   Si le programme reçoit plusieurs ou aucun arguments il ne doit rien afficher.
+### Fonction attendue
 
-### Utilisation :
+```go
+func StrLen(str string) int {
+
+}
+```
+
+### Utilisation
+
+Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
+
+```go
+package main
+
+import (
+	"fmt"
+	piscine ".."
+)
+
+func main() {
+	str := "Hello World!"
+	nb := piscine.StrLen(str)
+	fmt.Println(nb)
+}
+```
+
+Et son résultat :
 
 ```console
-student@ubuntu:~/piscine-go/strlenprog$ go build
-student@ubuntu:~/piscine-go/strlenprog$ ./strlenprog "hello" | cat -e
-5$
-student@ubuntu:~/piscine-go/strlenprog$ ./strlenprog
-student@ubuntu:~/piscine-go/strlenprog$
-student@ubuntu:~/piscine-go/strlenprog$ ./strlenprog "hello" "how are you"
-student@ubuntu:~/piscine-go/strlenprog$
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
+12
+student@ubuntu:~/piscine-go/test$
 ```

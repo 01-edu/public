@@ -20,7 +20,7 @@ student@ubuntu:~/piscine-go/test$ ./test "abcdefghijklm"
 abcdefghijklm
 student@ubuntu:~/piscine-go/test$ ./test "he stared at the mountain"
 mountain the at stared he
-student@ubuntu:~/piscine-go/test$ ./test
-
-student@ubuntu:~/piscine-go/test$
+student@ubuntu:~/piscine-go/test$ ./test "" | cat-e
+$
+student@ubuntu:~/piscine-go/test$ 
 ```
