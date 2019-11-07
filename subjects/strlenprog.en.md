@@ -1,6 +1,6 @@
 ## strlenprog
 
-##**WARNING! VERY IMPORTANT!**
+## **WARNING! VERY IMPORTANT!**
 
 For this exercise a function will be tested **with the exam own main**. However the student **still needs** to submit a structured program:
 
@@ -13,7 +13,7 @@ This means that:
 
 ### Instructions
 
--   Write a function that counts the characters of a `string` and that returns that count.
+- Write a function that counts the `runes` of a `string` and that returns that count.
 
 ### Expected function
 
@@ -32,12 +32,11 @@ package main
 
 import (
 	"fmt"
-	piscine ".."
 )
 
 func main() {
 	str := "Hello World!"
-	nb := piscine.StrLen(str)
+	nb := StrLen(str)
 	fmt.Println(nb)
 }
 ```

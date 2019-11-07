@@ -30,7 +30,7 @@ student@ubuntu:~/piscine-go/test$ ./test 19
 7 x 19 = 133
 8 x 19 = 152
 9 x 19 = 171
-student@ubuntu:~/piscine-go/test$
+student@ubuntu:~/piscine-go/test$ ./test
 
-student@ubuntu:~/piscine-go/
+student@ubuntu:~/piscine-go/test$
 ```

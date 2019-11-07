@@ -13,7 +13,7 @@ Cela signifie que:
 
 ### Instructions
 
--   Écrire une fonction qui compte le nombre de caractères d'une `string` et qui retourne le nombre trouvé.
+- Écrire une fonction qui compte le nombre de `runes` d'une `string` et qui retourne le nombre trouvé.
 
 ### Fonction attendue
 
