@@ -6,9 +6,9 @@ Write a program that is called `doop`.
 
 The program has to be used with three arguments:
 
--   A value
--   An operator
--   Another value
+- A value
+- An operator
+- Another value
 
 In case of an invalid operator the programs prints `0`.
 

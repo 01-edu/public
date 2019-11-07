@@ -1,6 +1,6 @@
 ## printmemory
 
-##**WARNING! VERY IMPORTANT!**
+## **WARNING! VERY IMPORTANT!**
 
 For this exercise a function will be tested **with the exam own main**. However the student **still needs** to submit a structured program:
 
@@ -30,13 +30,9 @@ Here is a possible program to test your function :
 ```go
 package main
 
-import (
-	piscine ".."
-)
-
 func main() {
 	arr := [10]int{104, 101, 108, 108, 111, 16, 21, 42}
-	piscine.Memory(arr)
+	PrintMemory(arr)
 }
 ```
 

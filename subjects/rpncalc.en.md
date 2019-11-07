@@ -50,7 +50,7 @@ Or:
 student@ubuntu:~/piscine-go/rpncalc$ go build
 student@ubuntu:~/piscine-go/rpncalc$ ./rpncalc "1 2 * 3 * 4 +" | cat -e
 10$
-student@ubuntu:~/piscine-go/rpncalc$ ./rpncalc 1 2 3 4 +" | cat -e
+student@ubuntu:~/piscine-go/rpncalc$ ./rpncalc "1 2 3 4 +" | cat -e
 Error$
 student@ubuntu:~/piscine-go/rpncalc$ ./rpncalc | cat -e
 Error$

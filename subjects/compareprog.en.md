@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a program that behaves like the `Compare` function.
+Write a program that behaves like the `Compare` function from the `Go` package `strings`.
 
 This program prints a number after comparing two `string` lexicographically.
 

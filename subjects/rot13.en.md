@@ -19,6 +19,8 @@ student@ubuntu:~/piscine-go/test$ ./test "abc"
 nop
 student@ubuntu:~/piscine-go/test$ ./test "hello there"
 uryyb gurer
+student@ubuntu:~/piscine-go/test$ ./test "HELLO, HELP"
+URYYB, URYC
 student@ubuntu:~/piscine-go/test$ ./test
 
 student@ubuntu:~/piscine-go/test$
