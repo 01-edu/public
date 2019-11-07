@@ -8,9 +8,9 @@ Ce programme doit afficher `true` si le nombre donné est une puissance de 2, au
 
 -   Si il y a plus d'un ou aucun argument le programme doit afficher un retour à la ligne (`'\n'`).
 
--   Les cas d'erreurs doivent être gérés.
+-   WSi il n'y a qu'un seul argument, ce sera toujours un int positif.
 
-### Utilisation :
+### Usage :
 
 ```console
 student@ubuntu:~/ispowerof2$ go build
@@ -24,7 +24,5 @@ student@ubuntu:~/ispowerof2$ ./ispowerof2
 
 student@ubuntu:~/ispowerof2$ ./ispowerof2 64 1024
 
-student@ubuntu:~/ispowerof2$ ./ispowerof2 notanumber | cat -e
-strconv.Atoi: parsing "a": invalid syntax$
 student@ubuntu:~/ispowerof2$
 ```
