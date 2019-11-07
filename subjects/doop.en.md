@@ -35,4 +35,6 @@ student@ubuntu:~/piscine-go/test$ ./doop 1 % 0 | cat -e
 No Modulo by 0$
 student@ubuntu:~/piscine-go/test$ ./doop 1 "*" 1
 1
+student@ubuntu:~/piscine-go/test$ ./doop 1 "*" -1
+-1
 ```
