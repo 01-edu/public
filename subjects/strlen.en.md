@@ -2,7 +2,7 @@
 
 ### Instructions
 
--   Write a function that counts the characters of a `string` and that returns that count.
+-   Write a function that counts the `runes` of a `string` and that returns that count.
 
 ### Expected function
 
@@ -21,12 +21,11 @@ package main
 
 import (
 	"fmt"
-	piscine ".."
 )
 
 func main() {
 	str := "Hello World!"
-	nb := piscine.StrLen(str)
+	nb := StrLen(str)
 	fmt.Println(nb)
 }
 ```
