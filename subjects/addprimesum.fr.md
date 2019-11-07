@@ -14,7 +14,7 @@ student@ubuntu:~/piscine-go/test$ ./test 5
 10
 student@ubuntu:~/piscine-go/test$ ./test 7
 17
-student@ubuntu:~/piscine-go/test$ ./test 57
+student@ubuntu:~/piscine-go/test$ ./test 5 7
 0
 student@ubuntu:~/piscine-go/test$
 ```
