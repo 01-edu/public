@@ -9,18 +9,19 @@ Create in your `git account` the repository named `piscine-go`.
 This repository will be the folder where all the exercices must be uploaded.
 
 Once created, clone that repository on your desktop.
-If your `username` was `kigiri` this is the command that will need to be used :
 
-`git clone https://01.alem.school/kigiri/piscine-go.git`
+If your username was `choumi` this is the command that will need to be used :
+
+`git clone git@git.alem.school:choumi/piscine-go.git`
 
 This command needs to be adapted with **your own username**.
 
-If the `git clone` gives you an authenticity of host error, your SSH key nmust be configured. 
-Follow the steps below. 
+If the `git clone` gives you an authenticity of host error, your SSH key must be configured.
+Follow the steps below.
 
-#### SSH Configuration 
+#### SSH Configuration
 
-**With the USB key plugged in!!**
+**With the USB drive plugged in!!**
 
 Execute the following commands:
 
@@ -29,27 +30,29 @@ mkdir -p ~/.ssh
 ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -N ''
 cat ~/.ssh/id_ed25519.pub
 ```
--Copy the result and paste it in the content field of adding an ssh key in your settings (adapt the link with your username).
-https://git.01.alem.school/{username}/settings/keys
 
--Confirm by clicking on the add key button. 
+-   Copy the result and paste it in the content field of adding an ssh key in your settings (adapt the link with your username).
 
-Once this is done the git clone command should work now. 
+https://git.01.alem.school/choumi/settings/keys
+
+-   Confirm by clicking on the add key button.
+
+Once this is done the git clone command should work now.
 
 #### 2- set
 
 Once the repository is created, write your first shell program called `hello.sh`
 
-When executed this program must print `Hello {username}!`
-Where `{username}` is your `username`
+When executed this program must print `Hello choumi!`
+Where `choumi` is your username
 
 ##### Usage
 
-If the `{username}` is `kigiri` :
+If the username is `choumi` :
 
 ```console
 user@host:~/piscine-go$ ./hello.sh
-Hello kigiri!
+Hello choumi!
 user@host:~/piscine-go$
 ```
 
