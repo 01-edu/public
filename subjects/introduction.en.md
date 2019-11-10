@@ -6,6 +6,8 @@
 
 Create in your `git account` the repository named `piscine-go`.
 
+This repository will be the folder where all the exercices must be uploaded.
+
 Once created, clone that repository on your desktop.
 If your `username` was `kigiri` this is the command that will need to be used :
 
@@ -13,7 +15,26 @@ If your `username` was `kigiri` this is the command that will need to be used :
 
 This command needs to be adapted with **your own username**.
 
-This repository will be the folder where all the exercices must be uploaded.
+If the `git clone` gives you an authenticity of host error, your SSH key nmust be configured. 
+Follow the steps below. 
+
+#### SSH Configuration 
+
+**With the USB key plugged in!!**
+
+Execute the following commands:
+
+```console
+mkdir -p ~/.ssh
+ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -N ''
+cat ~/.ssh/id_ed25519.pub
+```
+-Copy the result and paste it in the content field of adding an ssh key in your settings (adapt the link with your username).
+https://git.01.alem.school/{username}/settings/keys
+
+-Confirm by clicking on the add key button. 
+
+Once this is done the git clone command should work now. 
 
 #### 2- set
 
