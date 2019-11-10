@@ -8,7 +8,7 @@ Only the numbers will appear.
 
 > Local API documentation: https://git.01.alem.school/api/swagger
 
-Adapt & complete this command :
+Here is the base command that needs to be adapted with your username and more :
 
 ```
 curl -s https://01.alem.school/api/graphql-engine/v1/graphql --data '{"query":"{user(where:{githubLogin:{_eq:\"choumi\"}}){id}}"}'
