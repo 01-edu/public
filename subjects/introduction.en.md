@@ -9,7 +9,7 @@ Create in your `git account` the repository named `piscine-go`.
 Once created, clone that repository on your desktop.
 If your `username` was `kigiri` this is the command that will need to be used :
 
-`git clone https://01.alem.school/git/kigiri/piscine-go`
+`git clone https://01.alem.school/kigiri/piscine-go.git`
 
 This command needs to be adapted with **your own username**.
 
