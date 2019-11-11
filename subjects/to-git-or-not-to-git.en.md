@@ -6,8 +6,6 @@ Write in a file `to-git-or-not-to-git.sh` the command that isolates your Gitea `
 
 Only the numbers will appear.
 
-> [Local API documentation](https://git.01.alem.school/api/swagger)
-
 Here is the base command that needs to be adapted with your username and more :
 
 ```
