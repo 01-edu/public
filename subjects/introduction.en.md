@@ -4,7 +4,7 @@
 
 #### 1- get-ready
 
-Create in your `git account` the repository named `piscine-go`.
+Create in your [Gitea](https://git.01.alem.school) account the repository named `piscine-go`.
 
 This repository will be the folder where all the exercices must be uploaded.
 
@@ -62,8 +62,8 @@ After that the `hello.sh` is executing correctly, it needs to be uploaded to the
 
 1. `git add hello.sh`
 2. `git commit -m "My very first commit"`
-3. `git push origin master`
+3. `git push`
 
-Once these steps are applied, the file can now be submitted for grading on the platform by clicking on the `submit` button.
+Once these steps are applied, the file can now be submitted for grading on the platform by clicking on the "RUN INTRODUCTION TEST..." button.
 
 This action will run the tests on your submitted `hello.sh` file.
