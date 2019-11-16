@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a function `Raid1d` that prints a **valid** square of width `x` and of height `y`.
+Write a function `Raid1d` that prints a **valid** rectangle of width `x` and of height `y`.
 
-The function must draw the squares as in the examples.
+The function must draw the rectangles as in the examples.
 
 ### Expected function
 

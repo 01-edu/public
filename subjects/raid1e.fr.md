@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Écrire une fonction `Raid1e` qui affiche un carré **valide** de largeur `x` et de hauteur `y`.
+Écrire une fonction `Raid1e` qui affiche un rectangle **valide** de largeur `x` et de hauteur `y`.
 
-Cette fonction doit dessiner les carrés comme sur les examples.
+Cette fonction doit dessiner les rectangles comme sur les examples.
 
 ### Fonction attendue
 
