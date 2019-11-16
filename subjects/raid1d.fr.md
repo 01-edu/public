@@ -24,7 +24,6 @@ Programme #1
 package main
 
 import (
-	"fmt"
 	student "./student"
 )
 
@@ -50,7 +49,6 @@ Programme #2
 package main
 
 import (
-	"fmt"
 	student "./student"
 )
 
@@ -74,7 +72,6 @@ Programme #3
 package main
 
 import (
-	"fmt"
 	student "./student"
 )
 
@@ -98,7 +95,6 @@ Programme #4
 package main
 
 import (
-	"fmt"
 	student "./student"
 )
 
