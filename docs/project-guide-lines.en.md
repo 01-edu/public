@@ -4,7 +4,7 @@
 
 - create a new table for the questions of review
 
-```
+```js
 const project = {
   // take the exercise structure
   id: 3001,
