@@ -2,22 +2,22 @@
 
 ### Objectives
 
-Ascii-art consists on receiving a `string` has an argument and outputing the `string` in a graphic representation of ascii letters and numbers.
+Ascii-art consists on receiving a `string` has an argument and outputing the `string` in a graphic representation of ASCII letters and numbers.
 
 This project will help you learn about :
 
-- Client utilities;
-- The go file system(**fs**) API;
-- Ways to receive data;
-- Ways to output data;
-- Manipulation of strings;
+- Client utilities.
+- The Go file system(**fs**) API.
+- Ways to receive data.
+- Ways to output data.
+- Manipulation of strings.
 - Manipulation of structures.
 
 ### Instructions
 
-- Your project must be written in **GO**;
-- The code must respect the **good practices**;
-- It is recommended that the code should present a **test file**;
+- Your project must be written in **Go**.
+- The code must respect the **good practices**.
+- It is recommended that the code should present a **test file**.
 - It will be given a `banner` file with a specific graphical template representation of ascii letters and numbers.
 
 ### Usage

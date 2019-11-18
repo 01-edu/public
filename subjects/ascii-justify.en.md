@@ -2,7 +2,7 @@
 
 ### Objectives
 
-Ascii-art-justify consistes one receiving two `string` has arguments and outputing the `string` in a graphic representation of ascii letters and numbers. This representation should be formated using the second argument, that can be:
+You must follow the same [instructions](https://github.com/01-edu/public/ascii-art.en.md) as the first subject but the representation should be formated using the second argument, that can be:
 
 - center
 - justify
@@ -11,18 +11,18 @@ Ascii-art-justify consistes one receiving two `string` has arguments and outputi
 
 This project will help you learn about :
 
-- Client utilities;
-- The go file system(**fs**) API;
-- Ways to receive data;
-- Ways to output data;
-- Manipulation of strings;
+- Client utilities.
+- The Go file system(**fs**) API.
+- Ways to receive data.
+- Ways to output data.
+- Manipulation of strings.
 - Manipulation of structures.
 
 ### Instructions
 
-- Your project must be written in **GO**;
-- The code must respect the **good practices**;
-- It is recommended that the code should present a **test file**;
+- Your project must be written in **Go**.
+- The code must respect the **good practices**.
+- It is recommended that the code should present a **test file**.
 - You should build your one files with the templates you desire.
 
 ### Usage

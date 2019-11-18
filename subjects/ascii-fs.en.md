@@ -2,23 +2,22 @@
 
 ### Objectives
 
-Ascii-art-fs consists on receiving two `strings` has arguments. The first string being a random phrase and the second string being the template for the graphic representation in ascii of the first argument.
+You must follow the same [instructions](https://github.com/01-edu/public/ascii-art.en.md) as the first subject but the second argument must be the name of the template.
 
 This project will help you learn about :
 
-- Client utilities;
-- The go file system(**fs**) API;
-- Ways to receive data;
-- Ways to output data;
-- Manipulation of strings;
+- Client utilities.
+- The Go file system(**fs**) API.
+- Ways to receive data.
+- Ways to output data.
+- Manipulation of strings.
 - Manipulation of structures.
 
 ### Instructions
 
-- Your project must be written in **GO**;
-- The code must respect the **good practices**;
-- It is recommended that the code should present a **test file**;
-- You should build your own files with the templates you desire.
+- Your project must be written in **Go**.
+- The code must respect the **good practices**.
+- It is recommended that the code should present a **test file**.
 
 ### Usage
 
