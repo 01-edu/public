@@ -25,7 +25,7 @@ The solutions will be printed in ascending order.
 ### Expected function
 
 ```go
-package main
+package piscine
 
 func EightQueens() {
 
