@@ -1,6 +1,6 @@
 ## atoiprog
 
-##**WARNING! VERY IMPORTANT!**
+## **WARNING! VERY IMPORTANT!**
 
 For this exercise a function will be tested **with the exam own main**. However the student **still needs** to submit a structured program:
 
