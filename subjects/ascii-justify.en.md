@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [instructions](https://github.com/01-edu/public/ascii-art.en.md) as the first subject but the representation should be formated using the second argument, that can be:
+You must follow the same [instructions](https://github.com/01-edu/public/ascii-art.en.md) as the first subject but the representation should be formatted using the second argument, that can be:
 
 - center
 - justify
