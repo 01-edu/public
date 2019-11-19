@@ -21,7 +21,7 @@ This project will help you learn about :
 ### Instructions
 
 - Your project must be written in **Go**.
-- The code must respect the **good practices**.
+- The code must respect the [**good practices**](https://github.com/01-edu/public/good-practices.en.md).
 - It is recommended that the code should present a **test file**.
 - You should build your one files with the templates you desire.
 
