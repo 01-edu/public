@@ -2,23 +2,41 @@
 
 ### Instructions
 
-Écrire une fonction qui sépare les mots d'une `string`, qui les met dans un tableau de `string` et qui les affichent sur la sortie standard.
+Écrire une fonction qui sépare les mots d'une `string`, qui les met dans un tableau de `string`.
 
-Le programme reçoit deux paramètres:
+Les séparateurs sont les caractères de la `charset string` donnée en paramètre.
 
--   Le premier est la `string`
--   Le deuxième est le séparateur
+### Fonction attendue
 
-### Utilisation :
+```go
+func Split(str, charset string) []string {
+
+}
+```
+
+### Utilsation
+
+Voici un programme possible pour tester votre fonction :
+
+```go
+package main
+
+import (
+	"fmt"
+	piscine ".."
+)
+
+func main() {
+	str := "HelloHAhowHAareHAyou?"
+	fmt.Println(piscine.Split(str, "HA"))
+}
+```
+
+Et son résultat :
 
 ```console
-student@ubuntu:~/piscine-go/splitprog$ go build
-student@ubuntu:~/piscine-go/splitprog$ ./splitprog "HelloHAhowHAareHAyou?" HA | cat -e
-[Hello how are you?]$
-student@ubuntu:~/piscine-go/splitprog$ ./splitprog "Hello,how,are,you?" ","
+student@ubuntu:~/piscine-go/test$ go build
+student@ubuntu:~/piscine-go/test$ ./test
 [Hello how are you?]
-student@ubuntu:~/piscine-go/splitprog$ ./splitprog "HelloHAhowHAareHAyou?"
-student@ubuntu:~/piscine-go/splitprog$
-student@ubuntu:~/piscine-go/splitprog$ ./splitprog
-student@ubuntu:~/piscine-go/splitprog$
+student@ubuntu:~/piscine-go/test$
 ```
