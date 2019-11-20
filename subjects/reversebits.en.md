@@ -13,20 +13,22 @@ This means that:
 
 ### Instructions
 
-Write a function that takes a byte, reverses it, bit by bit (like the
+Write a function that takes a `byte`, reverses it, `bit` by `bit` (like the
 example) and returns the result.
 
-Your function must be declared as follows:
+### Expected function
 
-fuc ReverseBits(oct byte) byte {
+```go
+func ReverseBits(oct byte) byte {
 
 }
+```
 
 Example:
 
   1 byte
 _____________
  0010  0110
-	 ||
-	 \/
+     ||
+     \/
  0110  0100
