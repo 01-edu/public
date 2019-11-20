@@ -37,7 +37,11 @@ Select :
 
 The network is automatically configured with DHCP, you can also configure it manually.
 
-At the prompt "Location of initial preconfiguration file:", enter the url : `raw.githubusercontent.com/01-edu/public/master/scripts/preseed.cfg` and select "Continue"
+At the prompt "Location of initial preconfiguration file:", enter the url :
 
-Let us know when the server's remote access is ready, we will configure it.
+```
+raw.githubusercontent.com/01-edu/public/master/scripts/preseed.cfg
+```
+
+and select "Continue", let us know when the server's remote access is ready, we will configure it.
 
