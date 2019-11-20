@@ -2,7 +2,7 @@
 
 ### Objectives
 
-Ascii-art-output consists on receiving two strings. The first argument will be converted into a graphic representation of ASCII letters and numbers and written into a file named by using the second argument.
+Ascii-art-output consists on receiving two strings. The first argument will be converted into a graphic representation of ASCII and written into a file named by using the second argument.
 
 - In case the second argument is not present it should print the graphic representation.
 

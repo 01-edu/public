@@ -2,7 +2,7 @@
 
 ### Objectives
 
-Ascii-art consists on receiving a `string` has an argument and outputing the `string` in a graphic representation of ASCII letters and numbers.
+Ascii-art consists on receiving a `string` has an argument and outputting the `string` in a graphic representation of ASCII.
 
 This project will help you learn about :
 
@@ -18,7 +18,7 @@ This project will help you learn about :
 - Your project must be written in **Go**.
 - The code must respect the **good practices**.
 - It is recommended that the code should present a **test file**.
-- It will be given a `banner` file with a specific graphical template representation of ascii letters and numbers.
+- It will be given a `banner` file with a specific graphical template representation of ASCII.
 
 ### Usage
 
