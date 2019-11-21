@@ -13,7 +13,7 @@ This means that:
 
 ### Instructions
 
-Write a function that takes a `byte` in binary format, that reverses it `bit` by `bit` (as shown in the example) and returns the result
+Write a function that takes a `byte`, reverses it `bit` by `bit` (as shown in the example) and returns the result.
 
 ### Expected function
 
@@ -24,7 +24,7 @@ func ReverseBits(by byte) byte {
 ```
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main
@@ -40,7 +40,7 @@ func main() {
 }
 ```
 
-### Expected output
+and its output :
 
 ```console
 student@ubuntu:~/piscine-go/reversebits$ go build
