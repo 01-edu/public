@@ -2,9 +2,7 @@
 
 ### Instructions
 
-Write a function `rot14` that returns the `string` within the parameter transformed into a `rot14 string`.
-
--   There is the need to know what `rot13` stands for.
+Write a function `rot14` that returns the `string` within the parameter transformed into a `rot14 string`, that replaces a letter with the 14th letter after it, in the alphabet.
 
 ### Expected function
 
@@ -16,7 +14,7 @@ func Rot14(str string) string {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main
