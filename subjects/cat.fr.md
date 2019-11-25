@@ -26,9 +26,9 @@
 
 ```console
 student@ubuntu:~/piscine-go/cat$ go build
-student@ubuntu:~/piscine-go/cat$ ./cat
+student@ubuntu:~/piscine-go/cat$ ./cat Hello There
 Hello
-Hello
+There
 student@ubuntu:~/piscine-go/cat$ ./cat quest8.txt
 "Programming is a skill best acquired by pratice and example rather than from books" by Alan Turing
 student@ubuntu:~/piscine-go/cat$ ./cat quest8.txt quest8T.txt
