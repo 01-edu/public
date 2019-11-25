@@ -18,8 +18,6 @@
 
 `"Alan Mathison Turing was an English mathematician, computer scientist, logician, cryptanalyst. Turing was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer. Turing is widely considered to be the father of theoretical computer science and artificial intelligence."`
 
--   En cas d'erreur le programme doit imprimer l'erreur.
-
 -   L eprogramme doit être rendu dans un dossier nommé `cat`.
 
 ### Utilisation:
