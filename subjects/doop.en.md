@@ -22,8 +22,6 @@ In case the result gives overflow the program prints `Overflow`.
 
 The program has to handle the module and division operations by 0 as shown on the output examples below.
 
-`fmt.Print` is authorized.
-
 ### Usage
 
 ```console
