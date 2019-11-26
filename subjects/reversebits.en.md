@@ -18,34 +18,17 @@ Write a function that takes a `byte`, reverses it `bit` by `bit` (as shown in th
 ### Expected function
 
 ```go
-func ReverseBits(by byte) byte {
+
+func ReverseBits(oct byte) byte {
 
 }
 ```
-### Usage
 
-Here is a possible program to test your function :
+Example:
 
-```go
-package main
-
-import (
-	"fmt"
-)
-
-func main() {
-	a := byte(0x26)
-	fmt.Printf("%08b\n", a)
-	fmt.Printf("%08b\n", ReverseBits(a))
-}
-```
-
-and its output :
-
-```console
-student@ubuntu:~/piscine-go/reversebits$ go build
-student@ubuntu:~/piscine-go/reversebits$ ./reversebits
-00100110
-01100100
-student@ubuntu:~/piscine-go/reversebits$
-```
+  1 byte
+_____________
+ 0010  0110
+     ||
+     \/
+ 0110  0100

@@ -26,9 +26,9 @@ func Split(str, charset string) []string {
 }
 ```
 
-### Usage
+### Utilsation
 
-VOici un programm possible pour tester votre fonction :
+Voici un programme possible pour tester votre fonction :
 
 ```go
 package main
@@ -43,6 +43,7 @@ func main() {
 	fmt.Println(piscine.Split(str, "HA"))
 }
 ```
+
 
 Et son résultat :
 
