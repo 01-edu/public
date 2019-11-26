@@ -10,6 +10,8 @@ The program has to be used with three arguments:
 - An operator
 - Another value
 
+You should use `Int64`.
+
 The following operators are considered valid: "+", "-", "/", "*", "%".
 
 In case of an invalid operator the programs prints `0`.
@@ -38,6 +40,10 @@ No division by 0$
 student@ubuntu:~/piscine-go/test$ ./doop 1 % 0 | cat -e
 No Modulo by 0$
 student@ubuntu:~/piscine-go/test$ ./doop 9223372036854775807 + 1
+Overflow
+student@ubuntu:~/piscine-go/test$ ./doop -9223372036854775809 "*" 3
+Overflow
+student@ubuntu:~/piscine-go/test$ ./doop 9223372036854775807 "*" 3
 Overflow
 student@ubuntu:~/piscine-go/test$ ./doop 1 "*" 1
 1
