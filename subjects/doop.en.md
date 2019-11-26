@@ -12,13 +12,13 @@ The program has to be used with three arguments:
 
 You should use `int64`.
 
-The following operators are considered valid: "+", "-", "/", "*", "%".
+The following operators are considered valid: `+`, `-`, `/`, `*`, `%`.
 
 In case of an invalid operator the programs prints `0`.
 
 In case of an invalid number of arguments the program prints nothing.
 
-In case of overflow the program prints **Overflow**.
+In case of overflow the program prints `Overflow`.
 
 The program has to handle the modulo and division operations by 0 as shown on the output examples below.
 
