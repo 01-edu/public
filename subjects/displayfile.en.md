@@ -22,4 +22,6 @@ student@ubuntu:~/piscine-go/displayfile$ ./displayfile quest8.txt main.go
 Too many arguments
 student@ubuntu:~/piscine-go/displayfile$ ./displayfile quest8.txt
 Almost there!!
+
+student@ubuntu:~/piscine-go/displayfile$
 ```
