@@ -37,7 +37,7 @@ student@ubuntu:~/piscine-go/test$ ./doop 1 % 0 | cat -e
 No Modulo by 0$
 student@ubuntu:~/piscine-go/test$ ./doop 9223372036854775807 + 1
 0
-student@ubuntu:~/piscine-go/test$ ./doop -9223372036854775809 "*" 3
+student@ubuntu:~/piscine-go/test$ ./doop -9223372036854775809 - 3
 0
 student@ubuntu:~/piscine-go/test$ ./doop 9223372036854775807 "*" 3
 0
