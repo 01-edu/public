@@ -24,13 +24,15 @@ Write a program that has the same behaviour as the system's `cat` command-line.
 
 ```console
 student@ubuntu:~/piscine-go/cat$ go build
-student@ubuntu:~/piscine-go/cat$ ./cat
-Hello
+student@ubuntu:~/piscine-go/cat$ ./cat abc
+open abc: no such file or directory
 Hello
 student@ubuntu:~/piscine-go/cat$ ./cat quest8.txt
 "Programming is a skill best acquired by pratice and example rather than from books" by Alan Turing
+student@ubuntu:~/piscine-go/cat$ ./cat
+Hello
 student@ubuntu:~/piscine-go/cat$ ./cat quest8.txt quest8T.txt
 "Programming is a skill best acquired by pratice and example rather than from books" by Alan Turing
-
 "Alan Mathison Turing was an English mathematician, computer scientist, logician, cryptanalyst. Turing was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer. Turing is widely considered to be the father of theoretical computer science and artificial intelligence."
+student@ubuntu:~/piscine-go/cat$
 ```
