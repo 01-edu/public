@@ -18,9 +18,9 @@ In case of an invalid operator the programs prints `0`.
 
 In case of an invalid number of arguments the program prints nothing.
 
-In case of overflow the program prints `Overflow`.
+In case the result gives overflow the program prints `Overflow`.
 
-The program has to handle the modulo and division operations by 0 as shown on the output examples below.
+The program has to handle the module and division operations by 0 as shown on the output examples below.
 
 `fmt.Print` is authorized.
 
@@ -42,7 +42,7 @@ No Modulo by 0$
 student@ubuntu:~/piscine-go/test$ ./doop 9223372036854775807 + 1
 Overflow
 student@ubuntu:~/piscine-go/test$ ./doop -9223372036854775809 "*" 3
-Overflow
+0
 student@ubuntu:~/piscine-go/test$ ./doop 9223372036854775807 "*" 3
 Overflow
 student@ubuntu:~/piscine-go/test$ ./doop 1 "*" 1
