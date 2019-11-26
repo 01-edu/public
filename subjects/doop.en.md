@@ -10,7 +10,7 @@ The program has to be used with three arguments:
 - An operator
 - Another value
 
-You should use `Int64`.
+You should use `int64`.
 
 The following operators are considered valid: "+", "-", "/", "*", "%".
 
