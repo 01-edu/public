@@ -12,7 +12,7 @@ Once created, clone that repository on your desktop.
 
 If your username was `choumi` this is the command that will need to be used :
 
-`git clone git@git.alem.school:choumi/piscine-go.git`
+`git clone git@git.01.alem.school:choumi/piscine-go.git`
 
 This command needs to be adapted with **your own username**.
 

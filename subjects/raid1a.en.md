@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a function `Raid1a` that prints a **valid** square of width `x` and of height `y`.
+Write a function `Raid1a` that prints a **valid** rectangle of width `x` and of height `y`.
 
-The function must draw the squares as in the examples.
+The function must draw the rectangles as in the examples.
 
 ### Expected function
 
@@ -24,7 +24,6 @@ Program #1
 package main
 
 import (
-	"fmt"
 	student "./student"
 )
 
@@ -50,7 +49,6 @@ Program #2
 package main
 
 import (
-	"fmt"
 	student "./student"
 )
 
@@ -74,7 +72,6 @@ Program #3
 package main
 
 import (
-	"fmt"
 	student "./student"
 )
 
@@ -98,7 +95,6 @@ Program #4
 package main
 
 import (
-	"fmt"
 	student "./student"
 )
 

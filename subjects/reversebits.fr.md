@@ -21,6 +21,7 @@ Cela signifie que:
 func ReverseBits(oct byte) byte {
 
 }
+
 ```
 
 Exemple:

@@ -13,12 +13,12 @@ This means that:
 
 ### Instructions
 
-Write a function that takes a `byte`, reverses it, `bit` by `bit` (like the
-example) and returns the result.
+Write a function that takes a `byte`, reverses it `bit` by `bit` (as shown in the example) and returns the result.
 
 ### Expected function
 
 ```go
+
 func ReverseBits(oct byte) byte {
 
 }

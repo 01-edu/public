@@ -13,7 +13,7 @@ Write an `explain.sh` file that:
 - displays the first and last name of your key witness
 - displays the interview number of this witness
 - displays the colour and the make of the car of the suspects
-- displays the names of the 3 other main suspects that were not arrested (in the order that they should have appeared during the investigation)
+- displays the names of the 3 other main suspects that were not arrested (in alphabetical order of their last name)
 
 ### Usage
 

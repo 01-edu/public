@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Écrire une fonction `Raid1a` qui affiche un carré **valide** de largeur `x` et de hauteur `y`.
+Écrire une fonction `Raid1a` qui affiche un rectangle **valide** de largeur `x` et de hauteur `y`.
 
-Cette fonction doit dessiner les carrés comme sur les examples.
+Cette fonction doit dessiner les rectangles comme sur les examples.
 
 ### Fonction attendue
 
@@ -24,7 +24,6 @@ Programme #1
 package main
 
 import (
-	"fmt"
 	student "./student"
 )
 
@@ -50,7 +49,6 @@ Programme #2
 package main
 
 import (
-	"fmt"
 	student "./student"
 )
 
@@ -74,7 +72,6 @@ Programme #3
 package main
 
 import (
-	"fmt"
 	student "./student"
 )
 
@@ -98,7 +95,6 @@ Programme #4
 package main
 
 import (
-	"fmt"
 	student "./student"
 )
 

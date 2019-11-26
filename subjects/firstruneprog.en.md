@@ -1,8 +1,8 @@
 ## firstruneprog
 
-## **WARNING! VERY IMPORTANT!**
-
-For this exercise a function will be tested **with the exam own main**. However the student **still needs** to submit a structured program:
+> ### **WARNING! VERY IMPORTANT!**
+>
+> For this exercise a function will be tested **with the exam own main**. However the student **still needs** to submit a structured program
 
 This means that:
 

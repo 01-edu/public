@@ -10,8 +10,6 @@ Write a program that takes a positive `int` and displays its prime factors, foll
 
 -   The input, when there is one, will always be valid.
 
--   In this exercise the primes factor of 1 is considered as 1.
-
 ### Usage
 
 ```console
@@ -31,6 +29,6 @@ student@ubuntu:~/piscine-go/test$ ./test a
 student@ubuntu:~/piscine-go/test$ ./test 0
 
 student@ubuntu:~/piscine-go/test$ ./test 1
-1
+
 student@ubuntu:~/piscine-go/test$
 ```
