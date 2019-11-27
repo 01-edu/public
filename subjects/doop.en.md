@@ -45,4 +45,5 @@ student@ubuntu:~/piscine-go/test$ ./doop 1 "*" 1
 1
 student@ubuntu:~/piscine-go/test$ ./doop 1 "*" -1
 -1
+student@ubuntu:~/piscine-go/test$
 ```
