@@ -96,7 +96,6 @@ systemctl mask $SERVICES
 PKGS="$(cat common_packages.txt)
 baobab
 blender
-chromium-browser
 dconf-editor
 firefox
 gimp
