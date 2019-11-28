@@ -104,7 +104,7 @@ cd $script_dir
 rm -rf /tmp/system
 
 apt-get -y install overlayroot
-echo overlayroot=\"device:dev=/dev/disk/by-partlabel/01-tmp-system,recurse=0\" >> /etc/overlayroot.conf
+echo 'overlayroot="device:dev=/dev/disk/by-partlabel/01-tmp-system,recurse=0"' >> /etc/overlayroot.conf
 
 update-initramfs -u
 
