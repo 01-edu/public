@@ -8,8 +8,9 @@ cd $script_dir
 
 # Makes bash case-insensitive
 cat <<EOF>> /etc/inputrc
-set completion-ignore-case On
-set show-all-if-ambiguous on
+set completion-ignore-case
+set show-all-if-ambiguous On
+set show-all-if-unmodified On
 EOF
 
 # Enhance Linux prompt
@@ -36,25 +37,32 @@ fi
 EOF
 
 # Set-up all users
-for DIR in $(ls -1d /root /home/* 2>/dev/null || true)
+for DIR in $(ls -1d /root /home/* 2>/dev/null ||:)
 do
 	# Hide login informations
 	touch $DIR/.hushlogin
 
 	# Add convenient aliases & behaviors
 	cat <<-'EOF'>> $DIR/.bashrc
-	HISTCONTROL=ignoreboth
-	export HISTFILESIZE=
-	export HISTSIZE=
-	export HISTTIMEFORMAT="%F %T "
-	alias l="ls $LS_OPTIONS -al --si"
+	export LS_OPTIONS="--color=auto"
+	eval "`dircolors`"
+
 	alias df="df --si"
 	alias du="du -cs --si"
 	alias free="free -h --si"
+	alias l="ls $LS_OPTIONS -al --si"
+	alias less="less -i"
+	alias nano="nano -clDOST4"
 	alias pstree="pstree -palU"
+
+	GOPATH=$HOME/go
+	HISTCONTROL=ignoreboth
+	HISTFILESIZE=
+	HISTSIZE=
+	HISTTIMEFORMAT="%F %T "
 	EOF
 
 	# Fix rights
 	USR=$(echo "$DIR" | rev | cut -d/ -f1 | rev)
-	chown -R $USR:$USR $DIR || true
+	chown -R $USR:$USR $DIR ||:
 done
