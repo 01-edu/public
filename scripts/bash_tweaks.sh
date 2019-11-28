@@ -37,13 +37,13 @@ fi
 EOF
 
 # Set-up all users
-for DIR in $(ls -1d /root /home/* 2>/dev/null ||:)
+for dir in $(ls -1d /root /home/* 2>/dev/null ||:)
 do
 	# Hide login informations
-	touch $DIR/.hushlogin
+	touch $dir/.hushlogin
 
 	# Add convenient aliases & behaviors
-	cat <<-'EOF'>> $DIR/.bashrc
+	cat <<-'EOF'>> $dir/.bashrc
 	export LS_OPTIONS="--color=auto"
 	eval "`dircolors`"
 
@@ -63,6 +63,6 @@ do
 	EOF
 
 	# Fix rights
-	USR=$(echo "$DIR" | rev | cut -d/ -f1 | rev)
-	chown -R $USR:$USR $DIR ||:
+	usr=$(echo "$dir" | rev | cut -d/ -f1 | rev)
+	chown -R $usr:$usr $dir ||:
 done

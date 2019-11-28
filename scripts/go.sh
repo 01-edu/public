@@ -9,17 +9,17 @@ cd $script_dir
 apt-get -y install golang
 
 # Set-up all users
-for DIR in $(ls -1d /root /home/* 2>/dev/null ||:)
+for dir in $(ls -1d /root /home/* 2>/dev/null ||:)
 do
 	# Add convenient aliases & behaviors
-	cat <<-'EOF'>> $DIR/.bashrc
+	cat <<-'EOF'>> $dir/.bashrc
 	GOPATH=$HOME/go
 	PATH=$PATH:$GOPATH/bin
 	alias gobuild='CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags="-s -w"'
 	EOF
-	echo 'GOPATH=$HOME/go' >> $DIR/.profile
+	echo 'GOPATH=$HOME/go' >> $dir/.profile
 
 	# Fix rights
-	USR=$(echo "$DIR" | rev | cut -d/ -f1 | rev)
-	chown -R $USR:$USR $DIR ||:
+	usr=$(echo "$dir" | rev | cut -d/ -f1 | rev)
+	chown -R $usr:$usr $dir ||:
 done

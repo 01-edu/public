@@ -6,7 +6,7 @@ script_dir="$(cd -P "$(dirname "$BASH_SOURCE")" && pwd)"
 cd $script_dir
 . set.sh
 
-DISK=$1
+disk=$1
 
 sed -i -e 's/message=/message_null=/g' /etc/grub.d/10_linux
 
@@ -20,4 +20,4 @@ GRUB_DISABLE_SUBMENU=y
 EOF
 
 update-grub
-grub-install $DISK
+grub-install $disk

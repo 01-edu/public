@@ -9,8 +9,7 @@ script_dir="$(cd -P "$(dirname "$BASH_SOURCE")" && pwd)"
 cd $script_dir
 . set.sh
 
-SSH_PORT=521
-DISK=$(lsblk -o tran,kname,hotplug,type,fstype -pr |
+disk=$(lsblk -o tran,kname,hotplug,type,fstype -pr |
 	grep -e nvme -e sata |
 	grep '0 disk' |
 	cut -d' ' -f2 |
@@ -19,10 +18,10 @@ DISK=$(lsblk -o tran,kname,hotplug,type,fstype -pr |
 
 systemctl stop unattended-upgrades.service
 
-sgdisk -n0:0:+32G "$DISK"
-sgdisk -N0 "$DISK"
-sgdisk -c3:01-tmp-home "$DISK"
-sgdisk -c4:01-tmp-system "$DISK"
+sgdisk -n0:0:+32G "$disk"
+sgdisk -N0 "$disk"
+sgdisk -c3:01-tmp-home "$disk"
+sgdisk -c4:01-tmp-system "$disk"
 
 apt-get update
 apt-get -y upgrade
@@ -41,7 +40,7 @@ apt-get -yf install
 . ssh.sh
 . firewall.sh
 . ubuntu_tweaks.sh
-. grub.sh "$DISK"
+. grub.sh "$disk"
 . go.sh
 . nodejs.sh
 . fx.sh
@@ -51,7 +50,7 @@ apt-get -yf install
 . exam.sh
 
 # Install additional packages
-PKGS="
+pkgs="
 emacs
 f2fs-tools
 golang-mode
@@ -59,7 +58,7 @@ vim
 xfsprogs
 "
 
-apt-get -y install $PKGS
+apt-get -y install $pkgs
 
 # Install additional drivers
 ubuntu-drivers install
@@ -91,7 +90,7 @@ find . -type f -exec chmod 644 {} \;
 find . -type f -exec /bin/sh -c "file {} | grep -q 'shell script' && chmod +x {}" \;
 find . -type f -exec /bin/sh -c "file {} | grep -q 'public key' && chmod 400 {}" \;
 
-sed -i -e "s|::DISK::|$DISK|g" etc/udev/rules.d/10-local.rules
+sed -i -e "s|::DISK::|$disk|g" etc/udev/rules.d/10-local.rules
 
 # Generate wallpaper
 cd usr/share/backgrounds/01

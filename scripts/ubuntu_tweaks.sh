@@ -41,7 +41,7 @@ sed -i '/swapfile/d' /etc/fstab
 
 
 # Purge unused Ubuntu packages
-PKGS="
+pkgs="
 apport
 bind9
 bolt
@@ -73,10 +73,10 @@ whoopsie
 xdg-desktop-portal
 "
 
-apt-get -y purge $PKGS
+apt-get -y purge $pkgs
 apt-get -y autoremove --purge
 
-SERVICES="
+services="
 apt-daily-upgrade.timer
 apt-daily.timer
 console-setup.service
@@ -84,16 +84,16 @@ keyboard-setup.service
 motd-news.timer
 remote-fs.target
 "
-systemctl disable $SERVICES
+systemctl disable $services
 
-SERVICES="
+services="
 grub-common.service
 plymouth-quit-wait.service
 "
-systemctl mask $SERVICES
+systemctl mask $services
 
 # Install packages
-PKGS="$(cat common_packages.txt)
+pkgs="$(cat common_packages.txt)
 baobab
 blender
 dconf-editor
@@ -109,8 +109,8 @@ zenity
 "
 
 # Replace debian packages with ubuntu's
-PKGS=${PKGS/linux-image-amd64/linux-image-generic}
-PKGS=${PKGS/linux-headers-amd64/linux-headers-generic}
-PKGS=${PKGS/firmware-linux-nonfree}
+pkgs=${pkgs/linux-image-amd64/linux-image-generic}
+pkgs=${pkgs/linux-headers-amd64/linux-headers-generic}
+pkgs=${pkgs/firmware-linux-nonfree}
 
-apt-get -y install $PKGS
+apt-get -y install $pkgs
