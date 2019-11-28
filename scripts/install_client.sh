@@ -56,7 +56,7 @@ xfsprogs
 apt-get -y install $pkgs
 
 # Install additional drivers
-ubuntu-drivers install
+ubuntu-drivers install ||:
 
 # Copy system files
 
