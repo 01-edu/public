@@ -6,6 +6,8 @@ Write a function `Raid1c` that prints a **valid** rectangle of width `x` and of 
 
 The function must draw the rectangles as in the examples.
 
+`x` and `y` will always be positive numbers.
+
 ### Expected function
 
 ```go
@@ -24,11 +26,11 @@ Program #1
 package main
 
 import (
-	student "./student"
+	piscine ".."
 )
 
 func main() {
-	student.Raid1c(5,3)
+	piscine.Raid1c(5,3)
 }
 ```
 
@@ -49,11 +51,11 @@ Program #2
 package main
 
 import (
-	student "./student"
+	piscine ".."
 )
 
 func main() {
-	student.Raid1c(5,1)
+	piscine.Raid1c(5,1)
 }
 ```
 
@@ -72,11 +74,11 @@ Program #3
 package main
 
 import (
-	student "./student"
+	piscine ".."
 )
 
 func main() {
-	student.Raid1c(1,1)
+	piscine.Raid1c(1,1)
 }
 ```
 
@@ -95,11 +97,11 @@ Program #4
 package main
 
 import (
-	student "./student"
+	piscine ".."
 )
 
 func main() {
-	student.Raid1c(1,5)
+	piscine.Raid1c(1,5)
 }
 ```
 
