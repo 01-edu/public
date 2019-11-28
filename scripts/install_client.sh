@@ -117,7 +117,7 @@ if ! test -v PERSISTENT; then
 	passwd -d student
 
 	# Remove tty
-	cat <<EOF>> /etc/systemd/logind.conf
+	cat <<-EOF>> /etc/systemd/logind.conf
 	NAutoVTs=0
 	ReserveVT=N
 	EOF
