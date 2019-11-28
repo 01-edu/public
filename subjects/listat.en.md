@@ -51,8 +51,8 @@ And its output :
 ```console
 student@ubuntu:~/piscine-go/test$ go build
 student@ubuntu:~/piscine-go/test$ ./test
-1
-how are
+you
+hello
 <nil>
 student@ubuntu:~/piscine-go/test$
 ```
