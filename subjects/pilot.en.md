@@ -4,6 +4,12 @@
 
 Write a `go` file so that the following program compiles.
 
+### Note:
+
+- The code bellow must be submitted.
+
+- Be careful with the expected files.
+
 ### Usage
 
 ```go
