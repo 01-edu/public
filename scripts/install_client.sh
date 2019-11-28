@@ -9,6 +9,13 @@ script_dir="$(cd -P "$(dirname "$BASH_SOURCE")" && pwd)"
 cd $script_dir
 . set.sh
 
+disk=$(lsblk -o tran,kname,hotplug,type,fstype -pr |
+	grep -e nvme -e sata -e sas |
+	grep '0 disk' |
+	cut -d' ' -f2 |
+	sort |
+	head -n1)
+
 systemctl stop unattended-upgrades.service
 
 apt-get update
@@ -86,13 +93,6 @@ cp --preserve=mode -RT . /
 
 cd $script_dir
 rm -rf /tmp/system
-
-disk=$(lsblk -o tran,kname,hotplug,type,fstype -pr |
-	grep -e nvme -e sata |
-	grep '0 disk' |
-	cut -d' ' -f2 |
-	sort |
-	head -n1)
 
 sgdisk -n0:0:+32G "$disk"
 sgdisk -N0 "$disk"
