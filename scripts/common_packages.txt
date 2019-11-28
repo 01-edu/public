@@ -32,6 +32,7 @@ locales
 lsb-release
 lshw
 lsof
+lz4
 lzop
 man
 mc
