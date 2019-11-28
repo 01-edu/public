@@ -9,19 +9,7 @@ script_dir="$(cd -P "$(dirname "$BASH_SOURCE")" && pwd)"
 cd $script_dir
 . set.sh
 
-disk=$(lsblk -o tran,kname,hotplug,type,fstype -pr |
-	grep -e nvme -e sata |
-	grep '0 disk' |
-	cut -d' ' -f2 |
-	sort |
-	head -n1)
-
 systemctl stop unattended-upgrades.service
-
-sgdisk -n0:0:+32G "$disk"
-sgdisk -N0 "$disk"
-sgdisk -c3:01-tmp-home "$disk"
-sgdisk -c4:01-tmp-system "$disk"
 
 apt-get update
 apt-get -y upgrade
@@ -63,9 +51,6 @@ apt-get -y install $pkgs
 # Install additional drivers
 ubuntu-drivers install
 
-# Remove fsck because the system partition will be read-only (overlayroot)
-rm /usr/share/initramfs-tools/hooks/fsck
-
 # Copy system files
 
 cp -r system /tmp
@@ -102,6 +87,21 @@ cp --preserve=mode -RT . /
 cd $script_dir
 rm -rf /tmp/system
 
+disk=$(lsblk -o tran,kname,hotplug,type,fstype -pr |
+	grep -e nvme -e sata |
+	grep '0 disk' |
+	cut -d' ' -f2 |
+	sort |
+	head -n1)
+
+sgdisk -n0:0:+32G "$disk"
+sgdisk -N0 "$disk"
+sgdisk -c3:01-tmp-home "$disk"
+sgdisk -c4:01-tmp-system "$disk"
+
+# Remove fsck because the system partition will be read-only (overlayroot)
+rm /usr/share/initramfs-tools/hooks/fsck
+
 apt-get -y install overlayroot
 echo 'overlayroot="device:dev=/dev/disk/by-partlabel/01-tmp-system,recurse=0"' >> /etc/overlayroot.conf
 
@@ -113,8 +113,6 @@ passwd -l root
 # Disable user password
 passwd -d student
 
-cp /etc/shadow /etc/shadow-
-
 # Remove tty
 cat <<EOF>> /etc/systemd/logind.conf
 NAutoVTs=0
@@ -125,5 +123,7 @@ EOF
 gpasswd -d student sudo
 gpasswd -d student lpadmin
 gpasswd -d student sambashare
+
+cp /etc/shadow /etc/shadow-
 
 . clean.sh
