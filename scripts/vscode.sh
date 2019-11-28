@@ -6,9 +6,8 @@ script_dir="$(cd -P "$(dirname "$BASH_SOURCE")" && pwd)"
 cd $script_dir
 . set.sh
 
-wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | apt-key add -
-echo 'deb https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/repos/debs/ vscodium main' > /etc/apt/sources.list.d/vscodium.list
-apt-get update && apt-get -y install codium
+wget https://github.com/VSCodium/vscodium/releases/download/1.40.2/codium_1.40.2-1574798581_amd64.deb
+dpkg -i codium_1.40.2-1574798581_amd64.deb
 
 ln -s /usr/bin/codium /usr/local/bin/code
 
