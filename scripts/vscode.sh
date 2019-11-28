@@ -12,7 +12,7 @@ dpkg -i codium_1.40.2-1574798581_amd64.deb
 ln -s /usr/bin/codium /usr/local/bin/code
 
 # Set-up all users
-for DIR in $(ls -1d /home/* 2>/dev/null || true)
+for DIR in $(ls -1d /home/* 2>/dev/null ||:)
 do
 	# Disable most of the telemetry and auto-updates
 	mkdir -p $DIR/.config/VSCodium/User
@@ -32,5 +32,5 @@ do
 
 	# Fix rights
 	USR=$(echo "$DIR" | rev | cut -d/ -f1 | rev)
-	chown -R $USR:$USR $DIR || true
+	chown -R $USR:$USR $DIR ||:
 done

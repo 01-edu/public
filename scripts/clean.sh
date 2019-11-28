@@ -52,4 +52,4 @@ rm -rf /home/student/.cache
 rm -rf /home/student/.sudo_as_admin_successful /home/student/.bash_logout
 
 rm -rf /tmp/*
-rm -rf /tmp/.* || true
+rm -rf /tmp/.* ||:

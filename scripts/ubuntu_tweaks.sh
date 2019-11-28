@@ -35,7 +35,7 @@ update-initramfs -u
 update-grub
 
 # Disable swapfile
-swapoff /swapfile || true
+swapoff /swapfile ||:
 rm -f /swapfile
 sed -i '/swapfile/d' /etc/fstab
 

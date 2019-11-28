@@ -9,7 +9,7 @@ cd $script_dir
 apt-get -y install golang
 
 # Set-up all users
-for DIR in $(ls -1d /root /home/* 2>/dev/null || true)
+for DIR in $(ls -1d /root /home/* 2>/dev/null ||:)
 do
 	# Add convenient aliases & behaviors
 	cat <<-'EOF'>> $DIR/.bashrc
@@ -21,5 +21,5 @@ do
 
 	# Fix rights
 	USR=$(echo "$DIR" | rev | cut -d/ -f1 | rev)
-	chown -R $USR:$USR $DIR || true
+	chown -R $USR:$USR $DIR ||:
 done
