@@ -10,19 +10,19 @@ Screenshots of the installation of Ubuntu in Virtual Box are [here](https://gith
 
 Download and boot the [last Ubuntu release](http://releases.ubuntu.com/19.10/ubuntu-19.10-desktop-amd64.iso).
 
-- Create a new virtual machine named "Ubuntu" with at least 4096 MB of RAM
-- Use the fixed size storage allocation (to have more performance)
-- In the settings of the VM
-    - System -> Motherboard : check "Enable EFI"
-    - System -> Processor : Select at least 2 processors
-    - Display -> Screen : Put "Video Memory" to the maximum
-        - Enable 3D acceleration
-    - Storage
-        - Remove IDE controller
-        - Add Optical Drive to the SATA controller
-            - Choose your Ubuntu ISO image
-    - Close the settings (click OK)
-- Run the VM
+-   Create a new virtual machine named "Ubuntu" with at least 4096 MB of RAM
+-   Use the fixed size storage allocation (to have more performance)
+-   In the settings of the VM
+    -   System -> Motherboard : check "Enable EFI"
+    -   System -> Processor : Select at least 2 processors
+    -   Display -> Screen : Put "Video Memory" to the maximum
+        -   Enable 3D acceleration
+    -   Storage
+        -   Remove IDE controller
+        -   Add Optical Drive to the SATA controller
+            -   Choose your Ubuntu ISO image
+    -   Close the settings (click OK)
+-   Run the VM
 
 Follow the screenshots (some settings can be personalized, such as keyboard layout, location, password, login automatically, but **do not change the username**)
 
