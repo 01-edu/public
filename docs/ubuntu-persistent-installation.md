@@ -44,7 +44,7 @@ bash <(curl -sSL raw.githubusercontent.com/01-edu/public/master/scripts/kickstar
 After reboot you should install Virtual Box additions (and reboot again) :
 
 ```shell
-apt -y install virtualbox-guest-x11
+sudo apt -y install virtualbox-guest-x11
 ```
 
 Then it is advised to use the virtual machine in full screen mode (Host key - F)
