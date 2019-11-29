@@ -21,8 +21,6 @@ Follow the steps below.
 
 #### SSH Configuration
 
-**With the USB drive plugged in!!**
-
 Execute the following commands:
 
 ```console
