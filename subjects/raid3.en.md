@@ -48,7 +48,7 @@ A
 student@ubuntu:~/piscine-go/raid3$ ./raid1e 1 1
 A
 student@ubuntu:~/piscine-go/raid3$ ./raid1c 1 1 | ./raid3
-[raid1c] [2] [1] || [raid1d] [2] [1] || [raid1e] [2] [1]
+[raid1c] [1] [1] || [raid1d] [1] [1] || [raid1e] [1] [1]
 student@ubuntu:~/piscine-go/raid3$
 ```
 
