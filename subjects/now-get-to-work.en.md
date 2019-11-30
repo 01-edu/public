@@ -19,3 +19,4 @@ student@ubuntu:~/piscine-go/test$
 ### Hint
 
 "You could combine `head` and `tail`s..."
+
