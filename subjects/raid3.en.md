@@ -19,7 +19,7 @@ Create a program `raid3` that takes a `string` as an argument and displays the n
 ```console
 student@ubuntu:~/piscine-go/raid3$ ls -l
 -rw-r--r-- 1 student student  nov 23 14:30 raid3.go
--rwxr-xr-x 1 student student  nov 23 19:18 raid3
+drwxr-xr-x 1 student student  nov 23 19:18 raid3
 -rwxr-xr-x 1 student student  nov 23 19:50 raid1a
 drwxr-xr-x 2 student student  nov 23 19:02 raid1aProg
 -rwxr-xr-x 1 student student  nov 23 19:50 raid1b
