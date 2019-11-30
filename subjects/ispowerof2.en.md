@@ -15,7 +15,7 @@ This program must print `true` if the given number is a power of 2, otherwise it
 ```console
 student@ubuntu:~/ispowerof2$ go build
 student@ubuntu:~/ispowerof2$ ./ispowerof2 2 | cat -e
-true$
+false$
 student@ubuntu:~/ispowerof2$ ./ispowerof2 64 | cat -e
 true$
 student@ubuntu:~/ispowerof2$ ./ispowerof2 513 | cat -e
