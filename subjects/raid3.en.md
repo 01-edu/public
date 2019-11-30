@@ -18,18 +18,13 @@ Create a program `raid3` that takes a `string` as an argument and displays the n
 
 ```console
 student@ubuntu:~/piscine-go/raid3$ ls -l
--rw-r--r-- 1 student student  nov 23 14:30 raid3.go
+-rw-r--r-- 1 student student  nov 23 14:30 main.go
 -rwxr-xr-x 1 student student  nov 23 19:18 raid3
 -rwxr-xr-x 1 student student  nov 23 19:50 raid1a
-drwxr-xr-x 2 student student  nov 23 19:02 raid1aProg
 -rwxr-xr-x 1 student student  nov 23 19:50 raid1b
-drwxr-xr-x 2 student student  nov 22 23:36 raid1bProg
 -rwxr-xr-x 1 student student  nov 23 19:50 raid1c
-drwxr-xr-x 2 student student  nov 23 19:02 raid1cProg
 -rwxr-xr-x 1 student student  nov 23 19:50 raid1d
-drwxr-xr-x 2 student student  nov 23 00:40 raid1dProg
 -rwxr-xr-x 1 student student  nov 23 19:50 raid1e
-drwxr-xr-x 2 student student  nov 23 19:02 raid1eProg
 student@ubuntu:~/piscine-go/raid3$ ./raid1a 3 3 | ./raid3
 [raid1a] [3] [3]
 student@ubuntu:~/piscine-go/raid3$
