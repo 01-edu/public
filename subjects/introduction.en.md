@@ -4,7 +4,7 @@
 
 #### 1- get-ready
 
-Create in your [Gitea](https://git.01.alem.school) account the repository named `piscine-go`.
+Create in your [Gitea](https://git.[[DOMAIN]]) account the repository named `[[ROOT]]`.
 
 This repository will be the folder where all the exercices must be uploaded.
 
@@ -12,7 +12,7 @@ Once created, clone that repository on your desktop.
 
 If your username was `choumi` this is the command that will need to be used :
 
-`git clone git@git.01.alem.school:choumi/piscine-go.git`
+`git clone git@git.[[DOMAIN]]:choumi/[[ROOT]].git`
 
 This command needs to be adapted with **your own username**.
 
@@ -31,7 +31,7 @@ cat ~/.ssh/id_ed25519.pub
 
 -   Copy the result and paste it in the content field of adding an ssh key in your settings (adapt the link with your username).
 
-[https://git.01.alem.school/choumi/settings/keys](https://git.01.alem.school/choumi/settings/keys)
+[https://git.[[DOMAIN]]/choumi/settings/keys](https://git.[[DOMAIN]]/choumi/settings/keys)
 
 -   Confirm by clicking on the add key button.
 
@@ -49,9 +49,9 @@ Where `choumi` is your username
 If the username is `choumi` :
 
 ```console
-user@host:~/piscine-go$ ./hello.sh
+user@host:~/[[ROOT]]$ ./hello.sh
 Hello choumi!
-user@host:~/piscine-go$
+user@host:~/[[ROOT]]$
 ```
 
 #### 3- go-say-hello

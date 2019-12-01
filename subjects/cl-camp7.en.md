@@ -9,7 +9,7 @@ Create a file `"\?$*'ChouMi'*$?\"` that will contain "01" and **nothing else**.
 ### Usage
 
 ```console
-student@ubuntu:~/piscine-go/test$ ls | cat -e
+student@ubuntu:~/[[ROOT]]/test$ ls | cat -e
 "\?$*'ChouMi'*$?\"$
-student@ubuntu:~/piscine-go/test$
+student@ubuntu:~/[[ROOT]]/test$
 ```

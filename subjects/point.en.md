@@ -30,8 +30,8 @@ func main() {
 ### Expected output
 
 ```console
-student@ubuntu:~/piscine-go/point$ go build
-student@ubuntu:~/piscine-go/point$ ./point
+student@ubuntu:~/[[ROOT]]/point$ go build
+student@ubuntu:~/[[ROOT]]/point$ ./point
 x = 42, y = 21
-student@ubuntu:~/piscine-go/point$
+student@ubuntu:~/[[ROOT]]/point$
 ```

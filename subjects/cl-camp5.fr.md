@@ -13,11 +13,11 @@ Cette commande montrera le nom des fichiers sans le`.sh`.
 ### Utilisation
 
 ```console
-student@ubuntu:~/piscine-go/test$ ./lookagain.sh | cat -e
+student@ubuntu:~/[[ROOT]]/test$ ./lookagain.sh | cat -e
 file1$
 file2$
 file3$
-student@ubuntu:~/piscine-go/test$
+student@ubuntu:~/[[ROOT]]/test$
 ```
 
 ### Indice

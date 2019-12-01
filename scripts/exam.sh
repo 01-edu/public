@@ -6,7 +6,7 @@ script_dir="$(cd -P "$(dirname "$BASH_SOURCE")" && pwd)"
 cd $script_dir
 . set.sh
 
-wget https://01.alem.school/assets/files/exam.AppImage -O /usr/local/bin/exam.AppImage
+wget https://[[DOMAIN]]/assets/files/exam.AppImage -O /usr/local/bin/exam.AppImage
 chmod +x /usr/local/bin/exam.AppImage
 
 cat <<EOF> /home/student/.local/share/applications/appimagekit-exam.desktop

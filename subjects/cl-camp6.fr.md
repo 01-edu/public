@@ -9,7 +9,7 @@ Créer un fichier `countfiles.sh`, qui affichera le nombre **(et seulement le no
 ### Utilisation
 
 ```console
-student@ubuntu:~/piscine-go/test$ ./countfiles.sh | cat -e
+student@ubuntu:~/[[ROOT]]/test$ ./countfiles.sh | cat -e
 12$
-student@ubuntu:~/piscine-go/test$
+student@ubuntu:~/[[ROOT]]/test$
 ```

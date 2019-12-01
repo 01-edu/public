@@ -11,10 +11,10 @@ Les combinaisons sont séparées par une virgule et un espace.
 Voici une sortie **tronquée** :
 
 ```console
-student@ubuntu:~/piscine-go/printcombprog$ go build
-student@ubuntu:~/piscine-go/printcombprog$ ./printcombprog | cat -e
+student@ubuntu:~/[[ROOT]]/printcombprog$ go build
+student@ubuntu:~/[[ROOT]]/printcombprog$ ./printcombprog | cat -e
 987, 986, 985, 984, 983, 982, 981, 980, 976, ..., 310, 210$
-student@ubuntu:~/piscine-go/printcombprog$
+student@ubuntu:~/[[ROOT]]/printcombprog$
 ```
 
 `999` et `000` ne sont pas des combinations valides parce que les chiffres ne sont pas différents.

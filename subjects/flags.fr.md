@@ -13,37 +13,37 @@ This program should :
 Example of output :
 
 ```console
-student@ubuntu:~/piscine-go/flags$ go build
-student@ubuntu:~/piscine-go/flags$ ./flags --insert=4321 --order asdad
+student@ubuntu:~/[[ROOT]]/flags$ go build
+student@ubuntu:~/[[ROOT]]/flags$ ./flags --insert=4321 --order asdad
 1234aadds
-student@ubuntu:~/piscine-go/flags$ ./flags --insert=4321 asdad
+student@ubuntu:~/[[ROOT]]/flags$ ./flags --insert=4321 asdad
 asdad4321
-student@ubuntu:~/piscine-go/flags$ ./flags asdad
+student@ubuntu:~/[[ROOT]]/flags$ ./flags asdad
 asdad
-student@ubuntu:~/piscine-go/flags$ ./flags --order 43a21
+student@ubuntu:~/[[ROOT]]/flags$ ./flags --order 43a21
 1234a
-student@ubuntu:~/piscine-go/flags$ ./flags
+student@ubuntu:~/[[ROOT]]/flags$ ./flags
 --insert
   -i
     This flag inserts the string into the string passed as argument.
 --order
   -o
     This flag will behave like a boolean, if it is called it will order the argument.
-student@ubuntu:~/piscine-go/flags$
-student@ubuntu:~/piscine-go/flags$ ./flags -h
+student@ubuntu:~/[[ROOT]]/flags$
+student@ubuntu:~/[[ROOT]]/flags$ ./flags -h
 --insert
   -i
     This flag inserts the string into the string passed as argument.
 --order
   -o
     This flag will behave like a boolean, if it is called it will order the argument.
-student@ubuntu:~/piscine-go/flags$
-student@ubuntu:~/piscine-go/flags$ ./flags --help
+student@ubuntu:~/[[ROOT]]/flags$
+student@ubuntu:~/[[ROOT]]/flags$ ./flags --help
 --insert
   -i
     This flag inserts the string into the string passed as argument.
 --order
   -o
     This flag will behave like a boolean, if it is called it will order the argument.
-student@ubuntu:~/piscine-go/flags$
+student@ubuntu:~/[[ROOT]]/flags$
 ```

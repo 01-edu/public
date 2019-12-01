@@ -22,14 +22,14 @@ Tout autre caractère est un commentaire.
 ### Utilisation
 
 ```console
-student@ubuntu:~/piscine-go/brainfuck$ go build
-student@ubuntu:~/piscine-go/brainfuck$ ./brainfuck "++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>." | cat -e
+student@ubuntu:~/[[ROOT]]/brainfuck$ go build
+student@ubuntu:~/[[ROOT]]/brainfuck$ ./brainfuck "++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>." | cat -e
 Hello World!$
-student@ubuntu:~/piscine-go/brainfuck$ ./brainfuck "+++++[>++++[>++++H>+++++i<<-]>>>++\n<<<<-]>>--------.>+++++.>." | cat -e
+student@ubuntu:~/[[ROOT]]/brainfuck$ ./brainfuck "+++++[>++++[>++++H>+++++i<<-]>>>++\n<<<<-]>>--------.>+++++.>." | cat -e
 Hi$
-student@ubuntu:~/piscine-go/brainfuck$ ./brainfuck "++++++++++[>++++++++++>++++++++++>++++++++++<<<-]>---.>--.>-.>++++++++++." | cat -e
+student@ubuntu:~/[[ROOT]]/brainfuck$ ./brainfuck "++++++++++[>++++++++++>++++++++++>++++++++++<<<-]>---.>--.>-.>++++++++++." | cat -e
 abc$
-student@ubuntu:~/piscine-go/brainfuck$ ./brainfuck | cat -e
+student@ubuntu:~/[[ROOT]]/brainfuck$ ./brainfuck | cat -e
 $
-student@ubuntu:~/piscine-go/brainfuck$
+student@ubuntu:~/[[ROOT]]/brainfuck$
 ```

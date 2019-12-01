@@ -13,10 +13,10 @@ Write a program that takes a `string` and reverses the case of all its letters.
 ### Usage
 
 ```console
-student@ubuntu:~/piscine-go/test$ go build
-student@ubuntu:~/piscine-go/test$ ./test "SometHingS iS WronG"
+student@ubuntu:~/[[ROOT]]/test$ go build
+student@ubuntu:~/[[ROOT]]/test$ ./test "SometHingS iS WronG"
 sOMEThINGs Is wRONg
-student@ubuntu:~/piscine-go/test$ ./test
+student@ubuntu:~/[[ROOT]]/test$ ./test
 
-student@ubuntu:~/piscine-go/test$
+student@ubuntu:~/[[ROOT]]/test$
 ```

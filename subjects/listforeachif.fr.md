@@ -118,8 +118,8 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/piscine-go/test$ go build
-student@ubuntu:~/piscine-go/test$ ./test
+student@ubuntu:~/[[ROOT]]/test$ go build
+student@ubuntu:~/[[ROOT]]/test$ ./test
 1->hello->3->there->23->!->54->nil
 --------function applied--------
 1
@@ -128,5 +128,5 @@ student@ubuntu:~/piscine-go/test$ ./test
 54
 --------function applied--------
 1->2->3->2->23->2->54->nil
-student@ubuntu:~/piscine-go/test$
+student@ubuntu:~/[[ROOT]]/test$
 ```

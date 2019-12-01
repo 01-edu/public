@@ -4,12 +4,12 @@
 
 #### 1- get-ready
 
-Créer dans votre compte `git` le repository nommé `piscine-go`.
+Créer dans votre compte `git` le repository nommé `[[ROOT]]`.
 
 Une fois créé, cloner ce repository sur votre desktop.
 Si votre nom d'utilisateur `git` était `choumi` voici la commande qui devrait être utilisé :
 
-`git clone https://01.alem.school/git/choumi/piscine-go`
+`git clone https://[[DOMAIN]]/git/choumi/[[ROOT]]`
 
 Cette commande doit être adaptée avec **votre propre username**.
 
@@ -27,9 +27,9 @@ Où `{username}` est votre `username`
 Si l'`{username}` est `choumi` :
 
 ```console
-user@host:~/piscine-go$ ./hello.sh
+user@host:~/[[ROOT]]$ ./hello.sh
 Hello choumi!
-user@host:~/piscine-go$
+user@host:~/[[ROOT]]$
 ```
 
 #### 3- go-say-hello

@@ -13,14 +13,14 @@ Si le nombre de paramètres est différent de 2, le programme affiche un retour 
 ### Utilisation
 
 ```console
-student@ubuntu:~/piscine-go/hiddenp$ go build
-student@ubuntu:~/piscine-go/hiddenp$ ./hiddenp "fgex.;" "tyf34gdgf;'ektufjhgdgex.;.;rtjynur6" | cat -e
+student@ubuntu:~/[[ROOT]]/hiddenp$ go build
+student@ubuntu:~/[[ROOT]]/hiddenp$ ./hiddenp "fgex.;" "tyf34gdgf;'ektufjhgdgex.;.;rtjynur6" | cat -e
 1$
-student@ubuntu:~/piscine-go/hiddenp$ ./hiddenp "abc" "2altrb53c.sse" | cat -e
+student@ubuntu:~/[[ROOT]]/hiddenp$ ./hiddenp "abc" "2altrb53c.sse" | cat -e
 1$
-student@ubuntu:~/piscine-go/hiddenp$ ./hiddenp "abc" "btarc" | cat -e
+student@ubuntu:~/[[ROOT]]/hiddenp$ ./hiddenp "abc" "btarc" | cat -e
 0$
-student@ubuntu:~/piscine-go/hiddenp$ ./hiddenp | cat -e
+student@ubuntu:~/[[ROOT]]/hiddenp$ ./hiddenp | cat -e
 $
-student@ubuntu:~/piscine-go/hiddenp$
+student@ubuntu:~/[[ROOT]]/hiddenp$
 ```

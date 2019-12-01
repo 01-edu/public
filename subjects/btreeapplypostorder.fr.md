@@ -37,11 +37,11 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/piscine-go/btreeinsertdata$ go build
-student@ubuntu:~/piscine-go/btreeinsertdata$ ./btreeinsertdata
+student@ubuntu:~/[[ROOT]]/btreeinsertdata$ go build
+student@ubuntu:~/[[ROOT]]/btreeinsertdata$ ./btreeinsertdata
 1
 5
 7
 4
-student@ubuntu:~/piscine-go/btreeinsertdata$
+student@ubuntu:~/[[ROOT]]/btreeinsertdata$
 ```

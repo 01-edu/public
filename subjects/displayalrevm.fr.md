@@ -7,8 +7,8 @@
 ### Utilisation
 
 ```console
-student@ubuntu:~/piscine-go/displayalrevm$ go build
-student@ubuntu:~/piscine-go/displayalrevm$ ./displayalrevm | cat -e
+student@ubuntu:~/[[ROOT]]/displayalrevm$ go build
+student@ubuntu:~/[[ROOT]]/displayalrevm$ ./displayalrevm | cat -e
 zYxWvUtSrQpOnMlKjIhGfEdCbA$
-student@ubuntu:~/piscine-go/displayalrevm$
+student@ubuntu:~/[[ROOT]]/displayalrevm$
 ```

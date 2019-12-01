@@ -9,8 +9,8 @@ A line is a sequence of characters preceding the [end of line](https://en.wikipe
 ### Usage
 
 ```console
-student@ubuntu:~/piscine-go/printalphabet$ go build
-student@ubuntu:~/piscine-go/printalphabet$ ./printalphabet
+student@ubuntu:~/[[ROOT]]/printalphabet$ go build
+student@ubuntu:~/[[ROOT]]/printalphabet$ ./printalphabet
 abcdefghijklmnopqrstuvwxyz
-student@ubuntu:~/piscine-go/printalphabet$
+student@ubuntu:~/[[ROOT]]/printalphabet$
 ```

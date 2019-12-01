@@ -7,9 +7,9 @@
 ### Expected output :
 
 ```console
-student@ubuntu:~/piscine-go/strrevprog$ go build
-student@ubuntu:~/piscine-go/strrevprog$ ./strrevprog "Hello World!" | cat -e
+student@ubuntu:~/[[ROOT]]/strrevprog$ go build
+student@ubuntu:~/[[ROOT]]/strrevprog$ ./strrevprog "Hello World!" | cat -e
 !dlroW olleH$
-student@ubuntu:~/piscine-go/strrevprog$ ./strrevprog
-student@ubuntu:~/piscine-go/strrevprog$
+student@ubuntu:~/[[ROOT]]/strrevprog$ ./strrevprog
+student@ubuntu:~/[[ROOT]]/strrevprog$
 ```

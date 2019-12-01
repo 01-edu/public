@@ -36,11 +36,11 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/piscine-go/test$ go build main.go
-student@ubuntu:~/piscine-go/test$ ./main
+student@ubuntu:~/[[ROOT]]/test$ go build main.go
+student@ubuntu:~/[[ROOT]]/test$ ./main
 Hello
 how
 are
 you?
-student@ubuntu:~/piscine-go/test$
+student@ubuntu:~/[[ROOT]]/test$
 ```

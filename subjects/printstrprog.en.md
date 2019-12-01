@@ -7,11 +7,11 @@
 ### Expected output :
 
 ```console
-student@ubuntu:~/piscine-go/printstrprog$ go build
-student@ubuntu:~/piscine-go/printstrprog$ ./printstrprog "Hello World!" | cat -e
+student@ubuntu:~/[[ROOT]]/printstrprog$ go build
+student@ubuntu:~/[[ROOT]]/printstrprog$ ./printstrprog "Hello World!" | cat -e
 Hello World!$
-student@ubuntu:~/piscine-go/printstrprog$ ./printstrprog
-student@ubuntu:~/piscine-go/printstrprog$
-student@ubuntu:~/piscine-go/printstrprog$ ./printstrprog "Hello" "World"
-student@ubuntu:~/piscine-go/printstrprog$
+student@ubuntu:~/[[ROOT]]/printstrprog$ ./printstrprog
+student@ubuntu:~/[[ROOT]]/printstrprog$
+student@ubuntu:~/[[ROOT]]/printstrprog$ ./printstrprog "Hello" "World"
+student@ubuntu:~/[[ROOT]]/printstrprog$
 ```

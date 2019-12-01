@@ -9,8 +9,8 @@ A line is a sequence of characters preceding the end of line character (`'\n'`).
 ### Usage
 
 ```console
-student@ubuntu:~/piscine-go/printdigits$ go build
-student@ubuntu:~/piscine-go/printdigits$ ./printdigits
+student@ubuntu:~/[[ROOT]]/printdigits$ go build
+student@ubuntu:~/[[ROOT]]/printdigits$ ./printdigits
 0123456789
-student@ubuntu:~/piscine-go/printdigits$
+student@ubuntu:~/[[ROOT]]/printdigits$
 ```

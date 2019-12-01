@@ -7,8 +7,8 @@ Write a **program** that prints the name of the program.
 Example of output :
 
 ```console
-student@ubuntu:~/piscine-go/printprogramname$ go build main.go
-student@ubuntu:~/piscine-go/printprogramname$ ./main
+student@ubuntu:~/[[ROOT]]/printprogramname$ go build main.go
+student@ubuntu:~/[[ROOT]]/printprogramname$ ./main
 ./main
-student@ubuntu:~/piscine-go/printprogramname$
+student@ubuntu:~/[[ROOT]]/printprogramname$
 ```

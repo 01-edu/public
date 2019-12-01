@@ -10,12 +10,12 @@ string, the program just writes `a` followed by a newline (`'\n'`). If the numbe
 ### Usage
 
 ```console
-student@ubuntu:~/piscine-go/test$ go build
-student@ubuntu:~/piscine-go/test$ ./test "abc"
+student@ubuntu:~/[[ROOT]]/test$ go build
+student@ubuntu:~/[[ROOT]]/test$ ./test "abc"
 a
-student@ubuntu:~/piscine-go/test$ ./test "bcvbvA"
+student@ubuntu:~/[[ROOT]]/test$ ./test "bcvbvA"
 a
-student@ubuntu:~/piscine-go/test$ ./test "nbv"
+student@ubuntu:~/[[ROOT]]/test$ ./test "nbv"
 a
-student@ubuntu:~/piscine-go/test$
+student@ubuntu:~/[[ROOT]]/test$
 ```

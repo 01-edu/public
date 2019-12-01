@@ -11,17 +11,17 @@ If the number of arguments is different from 2, the program displays a newline.
 ### Usage
 
 ```console
-student@ubuntu:~/piscine-go/test$ go build
-student@ubuntu:~/piscine-go/test$ ./test "faya" "fgvvfdxcacpolhyghbreda"
+student@ubuntu:~/[[ROOT]]/test$ go build
+student@ubuntu:~/[[ROOT]]/test$ ./test "faya" "fgvvfdxcacpolhyghbreda"
 faya
-student@ubuntu:~/piscine-go/test$ ./test "faya" "fgvvfdxcacpolhyghbred"
+student@ubuntu:~/[[ROOT]]/test$ ./test "faya" "fgvvfdxcacpolhyghbred"
 
-student@ubuntu:~/piscine-go/test$ ./test "error" rrerrrfiiljdfxjyuifrrvcoojh
+student@ubuntu:~/[[ROOT]]/test$ ./test "error" rrerrrfiiljdfxjyuifrrvcoojh
 
-student@ubuntu:~/piscine-go/test$ ./test "quarante deux" "qfqfsudf arzgsayns tsregfdgs sjytdekuoixq "
+student@ubuntu:~/[[ROOT]]/test$ ./test "quarante deux" "qfqfsudf arzgsayns tsregfdgs sjytdekuoixq "
 quarante deux
 
-student@ubuntu:~/piscine-go/test$ ./test
+student@ubuntu:~/[[ROOT]]/test$ ./test
 
-student@ubuntu:~/piscine-go/test$
+student@ubuntu:~/[[ROOT]]/test$
 ```

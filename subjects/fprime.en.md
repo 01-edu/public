@@ -13,22 +13,22 @@ Write a program that takes a positive `int` and displays its prime factors, foll
 ### Usage
 
 ```console
-student@ubuntu:~/piscine-go/test$ go build
-student@ubuntu:~/piscine-go/test$ ./test 225225
+student@ubuntu:~/[[ROOT]]/test$ go build
+student@ubuntu:~/[[ROOT]]/test$ ./test 225225
 3*3*5*5*7*11*13
-student@ubuntu:~/piscine-go/test$ ./test 8333325
+student@ubuntu:~/[[ROOT]]/test$ ./test 8333325
 3*3*5*5*7*11*13*37
-student@ubuntu:~/piscine-go/test$ ./test 9539
+student@ubuntu:~/[[ROOT]]/test$ ./test 9539
 9539
-student@ubuntu:~/piscine-go/test$ ./test 804577
+student@ubuntu:~/[[ROOT]]/test$ ./test 804577
 804577
-student@ubuntu:~/piscine-go/test$ ./test 42
+student@ubuntu:~/[[ROOT]]/test$ ./test 42
 2*3*7
-student@ubuntu:~/piscine-go/test$ ./test a
+student@ubuntu:~/[[ROOT]]/test$ ./test a
 
-student@ubuntu:~/piscine-go/test$ ./test 0
+student@ubuntu:~/[[ROOT]]/test$ ./test 0
 
-student@ubuntu:~/piscine-go/test$ ./test 1
+student@ubuntu:~/[[ROOT]]/test$ ./test 1
 
-student@ubuntu:~/piscine-go/test$
+student@ubuntu:~/[[ROOT]]/test$
 ```

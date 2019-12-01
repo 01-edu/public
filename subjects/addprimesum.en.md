@@ -9,12 +9,12 @@ Write a program that takes a positive integer as argument and displays the sum o
 ### Usage
 
 ```console
-student@ubuntu:~/piscine-go/test$ go build
-student@ubuntu:~/piscine-go/test$ ./test 5
+student@ubuntu:~/[[ROOT]]/test$ go build
+student@ubuntu:~/[[ROOT]]/test$ ./test 5
 10
-student@ubuntu:~/piscine-go/test$ ./test 7
+student@ubuntu:~/[[ROOT]]/test$ ./test 7
 17
-student@ubuntu:~/piscine-go/test$ ./test 5 7
+student@ubuntu:~/[[ROOT]]/test$ ./test 5 7
 0
-student@ubuntu:~/piscine-go/test$
+student@ubuntu:~/[[ROOT]]/test$
 ```

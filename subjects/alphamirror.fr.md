@@ -16,12 +16,12 @@ Si le nombre d'arguments est différent de 1, le programme affiche seulement un 
 ### Utilisation
 
 ```console
-student@ubuntu:~/piscine-go/alphamirror$ go build
-student@ubuntu:~/piscine-go/alphamirror$ ./alphamirror "abc"
+student@ubuntu:~/[[ROOT]]/alphamirror$ go build
+student@ubuntu:~/[[ROOT]]/alphamirror$ ./alphamirror "abc"
 zyx
-student@ubuntu:~/piscine-go/alphamirror$ ./alphamirror "My horse is Amazing." | cat -e
+student@ubuntu:~/[[ROOT]]/alphamirror$ ./alphamirror "My horse is Amazing." | cat -e
 Nb slihv rh Znzarmt.$
-student@ubuntu:~/piscine-go/alphamirror$ ./alphamirror | cat -e
+student@ubuntu:~/[[ROOT]]/alphamirror$ ./alphamirror | cat -e
 $
-student@ubuntu:~/piscine-go/alphamirror$
+student@ubuntu:~/[[ROOT]]/alphamirror$
 ```
