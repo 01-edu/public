@@ -43,8 +43,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/piscine-go/test$ go build
-student@ubuntu:~/piscine-go/test$ ./test
+student@ubuntu:~/[[ROOT]]/test$ go build
+student@ubuntu:~/[[ROOT]]/test$ ./test
 Before delete:
 1
 4
@@ -54,5 +54,5 @@ After delete:
 1
 5
 7
-student@ubuntu:~/piscine-go/test$
+student@ubuntu:~/[[ROOT]]/test$
 ```

@@ -11,16 +11,16 @@
 ### Utilisation
 
 ```console
-student@ubuntu:~/piscine-go/test$ go build
-student@ubuntu:~/piscine-go/test$ ./test "10"
+student@ubuntu:~/[[ROOT]]/test$ go build
+student@ubuntu:~/[[ROOT]]/test$ ./test "10"
 a
-student@ubuntu:~/piscine-go/test$ ./test "255"
+student@ubuntu:~/[[ROOT]]/test$ ./test "255"
 ff
-student@ubuntu:~/piscine-go/test$ ./test "5156454"
+student@ubuntu:~/[[ROOT]]/test$ ./test "5156454"
 4eae66
-student@ubuntu:~/piscine-go/test$ ./test
+student@ubuntu:~/[[ROOT]]/test$ ./test
 
-student@ubuntu:~/piscine-go/test$ ./test "123 132 1" | cat -e
+student@ubuntu:~/[[ROOT]]/test$ ./test "123 132 1" | cat -e
 0$
-student@ubuntu:~/piscine-go/test$ 
+student@ubuntu:~/[[ROOT]]/test$ 
 ```

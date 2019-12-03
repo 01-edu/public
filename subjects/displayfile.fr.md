@@ -15,11 +15,11 @@
 ### Utilisation:
 
 ```console
-student@ubuntu:~/piscine-go/test$ go build
-student@ubuntu:~/piscine-go/test$ ./test
+student@ubuntu:~/[[ROOT]]/test$ go build
+student@ubuntu:~/[[ROOT]]/test$ ./test
 File name missing
-student@ubuntu:~/piscine-go/test$ ./test quest8.txt main.go
+student@ubuntu:~/[[ROOT]]/test$ ./test quest8.txt main.go
 Too many arguments
-student@ubuntu:~/piscine-go/test$ ./test quest8.txt
+student@ubuntu:~/[[ROOT]]/test$ ./test quest8.txt
 Almost there!!
 ```

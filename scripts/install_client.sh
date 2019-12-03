@@ -63,6 +63,8 @@ ubuntu-drivers install ||:
 cp -r system /tmp
 cd /tmp/system
 
+test -v PERSISTENT && rm -rf etc/gdm3 usr/share/initramfs-tools
+
 # Overwrite with custom files from Git repository
 if test -v OVERWRITE; then
 	folder=$(echo "$OVERWRITE" | cut -d';' -f1)
@@ -94,36 +96,38 @@ cp --preserve=mode -RT . /
 cd $script_dir
 rm -rf /tmp/system
 
-sgdisk -n0:0:+32G "$disk"
-sgdisk -N0 "$disk"
-sgdisk -c3:01-tmp-home "$disk"
-sgdisk -c4:01-tmp-system "$disk"
+if ! test -v PERSISTENT; then
+	sgdisk -n0:0:+32G "$disk"
+	sgdisk -N0 "$disk"
+	sgdisk -c3:01-tmp-home "$disk"
+	sgdisk -c4:01-tmp-system "$disk"
 
-# Remove fsck because the system partition will be read-only (overlayroot)
-rm /usr/share/initramfs-tools/hooks/fsck
+	# Remove fsck because the system partition will be read-only (overlayroot)
+	rm /usr/share/initramfs-tools/hooks/fsck
 
-apt-get -y install overlayroot
-echo 'overlayroot="device:dev=/dev/disk/by-partlabel/01-tmp-system,recurse=0"' >> /etc/overlayroot.conf
+	apt-get -y install overlayroot
+	echo 'overlayroot="device:dev=/dev/disk/by-partlabel/01-tmp-system,recurse=0"' >> /etc/overlayroot.conf
 
-update-initramfs -u
+	update-initramfs -u
 
-# Lock root password
-passwd -l root
+	# Lock root password
+	passwd -l root
 
-# Disable user password
-passwd -d student
+	# Disable user password
+	passwd -d student
 
-# Remove tty
-cat <<EOF>> /etc/systemd/logind.conf
-NAutoVTs=0
-ReserveVT=N
-EOF
+	# Remove tty
+	cat <<-EOF>> /etc/systemd/logind.conf
+	NAutoVTs=0
+	ReserveVT=N
+	EOF
 
-# Remove user abilities
-gpasswd -d student sudo
-gpasswd -d student lpadmin
-gpasswd -d student sambashare
+	# Remove user abilities
+	gpasswd -d student sudo
+	gpasswd -d student lpadmin
+	gpasswd -d student sambashare
 
-cp /etc/shadow /etc/shadow-
+	cp /etc/shadow /etc/shadow-
+fi
 
 . clean.sh

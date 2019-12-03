@@ -15,16 +15,16 @@ Si le nombre d'arguments est différent de 1, le programme affiche un retour à 
 ### Utilisation
 
 ```console
-student@ubuntu:~/piscine-go/repeatalpha$ go build
-student@ubuntu:~/piscine-go/repeatalpha$ ./repeatalpha "abc" | cat -e
+student@ubuntu:~/[[ROOT]]/repeatalpha$ go build
+student@ubuntu:~/[[ROOT]]/repeatalpha$ ./repeatalpha "abc" | cat -e
 abbccc
-student@ubuntu:~/piscine-go/repeatalpha$ ./repeatalpha "Choumi." | cat -e
+student@ubuntu:~/[[ROOT]]/repeatalpha$ ./repeatalpha "Choumi." | cat -e
 CCChhhhhhhhooooooooooooooouuuuuuuuuuuuuuuuuuuuummmmmmmmmmmmmiiiiiiiii.$
-student@ubuntu:~/piscine-go/repeatalpha$ ./repeatalpha "abacadaba 01!" | cat -e
+student@ubuntu:~/[[ROOT]]/repeatalpha$ ./repeatalpha "abacadaba 01!" | cat -e
 abbacccaddddabba 01!$
-student@ubuntu:~/piscine-go/repeatalpha$ ./repeatalpha | cat -e
+student@ubuntu:~/[[ROOT]]/repeatalpha$ ./repeatalpha | cat -e
 $
-student@ubuntu:~/piscine-go/repeatalpha$ ./repeatalpha "" | cat -e
+student@ubuntu:~/[[ROOT]]/repeatalpha$ ./repeatalpha "" | cat -e
 $
-student@ubuntu:~/piscine-go/repeatalpha$
+student@ubuntu:~/[[ROOT]]/repeatalpha$
 ```

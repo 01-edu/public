@@ -34,8 +34,8 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/piscine-go/test$ go build
-student@ubuntu:~/piscine-go/test$ ./test
+student@ubuntu:~/[[ROOT]]/test$ go build
+student@ubuntu:~/[[ROOT]]/test$ ./test
 true
 false
 stude0t@ubuntu:~$

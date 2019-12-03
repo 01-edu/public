@@ -9,7 +9,7 @@ Create a file `countfiles.sh`, which will print the number **(and only the numbe
 ### Usage
 
 ```console
-student@ubuntu:~/piscine-go/test$ ./countfiles.sh | cat -e
+student@ubuntu:~/[[ROOT]]/test$ ./countfiles.sh | cat -e
 12$
-student@ubuntu:~/piscine-go/test$
+student@ubuntu:~/[[ROOT]]/test$
 ```

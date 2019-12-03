@@ -11,8 +11,8 @@ Attention il faut bien noter que le `casting` n'est pas autorisé pour cet exerc
 ### Utilisation
 
 ```console
-student@ubuntu:~/piscine-go/printreversealphabet$ go build
-student@ubuntu:~/piscine-go/printreversealphabet$ ./printreversealphabet
+student@ubuntu:~/[[ROOT]]/printreversealphabet$ go build
+student@ubuntu:~/[[ROOT]]/printreversealphabet$ ./printreversealphabet
 zyxwvutsrqponmlkjihgfedcba
-student@ubuntu:~/piscine-go/printreversealphabet$
+student@ubuntu:~/[[ROOT]]/printreversealphabet$
 ```

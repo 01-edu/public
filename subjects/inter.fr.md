@@ -11,10 +11,10 @@
 ### Utilisation
 
 ```console
-student@ubuntu:~/piscine-go/test$ go build
-student@ubuntu:~/piscine-go/test$ ./test "padinton" "paqefwtdjetyiytjneytjoeyjnejeyj"
+student@ubuntu:~/[[ROOT]]/test$ go build
+student@ubuntu:~/[[ROOT]]/test$ ./test "padinton" "paqefwtdjetyiytjneytjoeyjnejeyj"
 padinto
-student@ubuntu:~/piscine-go/test$ ./test ddf6vewg64f  twthgdwthdwfteewhrtag6h4ffdhsd
+student@ubuntu:~/[[ROOT]]/test$ ./test ddf6vewg64f  twthgdwthdwfteewhrtag6h4ffdhsd
 df6ewg4
-student@ubuntu:~/piscine-go/test$
+student@ubuntu:~/[[ROOT]]/test$
 ```

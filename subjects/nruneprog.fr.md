@@ -7,16 +7,16 @@
 ### Utilisation :
 
 ```console
-student@ubuntu:~/piscine-go/nruneprog$ ./nruneprog "hello" 2
+student@ubuntu:~/[[ROOT]]/nruneprog$ ./nruneprog "hello" 2
 e
-student@ubuntu:~/piscine-go/nruneprog$ ./nruneprog "hello" 4 | cat -e
+student@ubuntu:~/[[ROOT]]/nruneprog$ ./nruneprog "hello" 4 | cat -e
 l$
-student@ubuntu:~/piscine-go/nruneprog$ ./nruneprog "hello" 5
+student@ubuntu:~/[[ROOT]]/nruneprog$ ./nruneprog "hello" 5
 o
-student@ubuntu:~/piscine-go/nruneprog$ ./nruneprog "hello"
-student@ubuntu:~/piscine-go/nruneprog$ ./nruneprog "hello" f | cat -e
+student@ubuntu:~/[[ROOT]]/nruneprog$ ./nruneprog "hello"
+student@ubuntu:~/[[ROOT]]/nruneprog$ ./nruneprog "hello" f | cat -e
 "f" is not an integer value$
-student@ubuntu:~/piscine-go/nruneprog$ ./nruneprog "hello" 9
+student@ubuntu:~/[[ROOT]]/nruneprog$ ./nruneprog "hello" 9
 Invalid position: "9" in "hello"
-student@ubuntu:~/piscine-go/nruneprog$
+student@ubuntu:~/[[ROOT]]/nruneprog$
 ```

@@ -7,11 +7,11 @@ Write a program that takes `string` as arguments, and displays its first argumen
 ### Usage
 
 ```console
-student@ubuntu:~/piscine-go/test$ go build
-student@ubuntu:~/piscine-go/test$ ./test hello there
+student@ubuntu:~/[[ROOT]]/test$ go build
+student@ubuntu:~/[[ROOT]]/test$ ./test hello there
 hello
-student@ubuntu:~/piscine-go/test$ ./test "hello there" how are you
+student@ubuntu:~/[[ROOT]]/test$ ./test "hello there" how are you
 hello there
-student@ubuntu:~/piscine-go/test$ ./test
-student@ubuntu:~/piscine-go/test$
+student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/[[ROOT]]/test$
 ```

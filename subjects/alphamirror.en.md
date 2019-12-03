@@ -16,12 +16,12 @@ If the number of arguments is different from 1, the program displays only a newl
 ### Usage
 
 ```console
-student@ubuntu:~/piscine-go/alphamirror$ go build
-student@ubuntu:~/piscine-go/alphamirror$ ./alphamirror "abc"
+student@ubuntu:~/[[ROOT]]/alphamirror$ go build
+student@ubuntu:~/[[ROOT]]/alphamirror$ ./alphamirror "abc"
 zyx
-student@ubuntu:~/piscine-go/alphamirror$ ./alphamirror "My horse is Amazing." | cat -e
+student@ubuntu:~/[[ROOT]]/alphamirror$ ./alphamirror "My horse is Amazing." | cat -e
 Nb slihv rh Znzarmt.$
-student@ubuntu:~/piscine-go/alphamirror$ ./alphamirror | cat -e
+student@ubuntu:~/[[ROOT]]/alphamirror$ ./alphamirror | cat -e
 $
-student@ubuntu:~/piscine-go/alphamirror$
+student@ubuntu:~/[[ROOT]]/alphamirror$
 ```

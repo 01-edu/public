@@ -7,13 +7,13 @@
 ### Utilisation :
 
 ```console
-student@ubuntu:~/piscine-go/firstruneprog$ go build
-student@ubuntu:~/piscine-go/firstruneprog$ ./firstruneprog "this is not happening"
+student@ubuntu:~/[[ROOT]]/firstruneprog$ go build
+student@ubuntu:~/[[ROOT]]/firstruneprog$ ./firstruneprog "this is not happening"
 g
-student@ubuntu:~/piscine-go/firstruneprog$ ./firstruneprog "hello" | cat -e
+student@ubuntu:~/[[ROOT]]/firstruneprog$ ./firstruneprog "hello" | cat -e
 o$
-student@ubuntu:~/piscine-go/firstruneprog$ ./firstruneprog "this" "is" "not" "happening"
-student@ubuntu:~/piscine-go/firstruneprog$
-student@ubuntu:~/piscine-go/firstruneprog$ ./firstruneprog
-student@ubuntu:~/piscine-go/firstruneprog$
+student@ubuntu:~/[[ROOT]]/firstruneprog$ ./firstruneprog "this" "is" "not" "happening"
+student@ubuntu:~/[[ROOT]]/firstruneprog$
+student@ubuntu:~/[[ROOT]]/firstruneprog$ ./firstruneprog
+student@ubuntu:~/[[ROOT]]/firstruneprog$
 ```

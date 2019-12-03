@@ -43,11 +43,11 @@ func main() {
 Et son résultat :
 
 ```console
-student@ubuntu:~/piscine-go/test$ go build
-student@ubuntu:~/piscine-go/test$ ./test | cat -e
+student@ubuntu:~/[[ROOT]]/test$ go build
+student@ubuntu:~/[[ROOT]]/test$ ./test | cat -e
 6800 0000 6500 0000 6c00 0000 6c00 0000 $
 6f00 0000 1000 0000 1500 0000 2a00 0000 $
 0000 0000 0000 0000 $
 hello..*..$
-student@ubuntu:~/piscine-go/test$
+student@ubuntu:~/[[ROOT]]/test$
 ```

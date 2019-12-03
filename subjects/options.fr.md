@@ -19,16 +19,16 @@
 ## Utilisation
 
 ```console
-student@ubuntu:~/piscine-go/test$ go build
-student@ubuntu:~/piscine-go/test$ ./test | cat -e
+student@ubuntu:~/[[ROOT]]/test$ go build
+student@ubuntu:~/[[ROOT]]/test$ ./test | cat -e
 options: abcdefghijklmnopqrstuvwxyz$
-student@ubuntu:~/piscine-go/test$ ./test -abc -ijk | cat -e
+student@ubuntu:~/[[ROOT]]/test$ ./test -abc -ijk | cat -e
 00000000 00000000 00000111 00000111$
-student@ubuntu:~/piscine-go/test$ ./test -z | cat -e
+student@ubuntu:~/[[ROOT]]/test$ ./test -z | cat -e
 00000010 00000000 00000000 00000000$
-student@ubuntu:~/piscine-go/test$ ./test -abc -hijk | cat -e
+student@ubuntu:~/[[ROOT]]/test$ ./test -abc -hijk | cat -e
 options: abcdefghijklmnopqrstuvwxyz$
-student@ubuntu:~/piscine-go/test$ ./test -% | cat -e
+student@ubuntu:~/[[ROOT]]/test$ ./test -% | cat -e
 Invalid Option$
-student@ubuntu:~/piscine-go/test$
+student@ubuntu:~/[[ROOT]]/test$
 ```

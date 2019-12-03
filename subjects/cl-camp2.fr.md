@@ -11,7 +11,7 @@ Une ligne est une suite de caractères précédant le caractère [fin de ligne](
 ### Utilisation
 
 ```console
-student@ubuntu:~/piscine-go/test$ cat -e r
+student@ubuntu:~/[[ROOT]]/test$ cat -e r
 R$
-student@ubuntu:~/piscine-go/test$
+student@ubuntu:~/[[ROOT]]/test$
 ```

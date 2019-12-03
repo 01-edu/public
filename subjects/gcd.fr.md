@@ -13,18 +13,18 @@ Tous les arguments testés seront des `int` positifs.
 ### Utilisation
 
 ```console
-student@ubuntu:~/piscine-go/gcd$ go build
-student@ubuntu:~/piscine-go/gcd$ ./gcd 42 10 | cat -e
+student@ubuntu:~/[[ROOT]]/gcd$ go build
+student@ubuntu:~/[[ROOT]]/gcd$ ./gcd 42 10 | cat -e
 2$
-student@ubuntu:~/piscine-go/gcd$ ./gcd 42 12 | cat -e
+student@ubuntu:~/[[ROOT]]/gcd$ ./gcd 42 12 | cat -e
 6$
-student@ubuntu:~/piscine-go/gcd$ ./gcd 14 77 | cat -e
+student@ubuntu:~/[[ROOT]]/gcd$ ./gcd 14 77 | cat -e
 7$
-student@ubuntu:~/piscine-go/gcd$ ./gcd 17 3 | cat -e
+student@ubuntu:~/[[ROOT]]/gcd$ ./gcd 17 3 | cat -e
 1$
-student@ubuntu:~/piscine-go/gcd$ ./gcd | cat -e
+student@ubuntu:~/[[ROOT]]/gcd$ ./gcd | cat -e
 $
-student@ubuntu:~/piscine-go/gcd$ ./gcd 50 12 4 | cat -e
+student@ubuntu:~/[[ROOT]]/gcd$ ./gcd 50 12 4 | cat -e
 $
-student@ubuntu:~/piscine-go/gcd$
+student@ubuntu:~/[[ROOT]]/gcd$
 ```

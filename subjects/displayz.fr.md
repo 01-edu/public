@@ -7,12 +7,12 @@
 ### Utilisation
 
 ```console
-student@ubuntu:~/piscine-go/test$ go build
-student@ubuntu:~/piscine-go/test$ ./test "xyz"
+student@ubuntu:~/[[ROOT]]/test$ go build
+student@ubuntu:~/[[ROOT]]/test$ ./test "xyz"
 z
-student@ubuntu:~/piscine-go/test$ ./test "bcvbvZ"
+student@ubuntu:~/[[ROOT]]/test$ ./test "bcvbvZ"
 z
-student@ubuntu:~/piscine-go/test$ ./test "nbv"
+student@ubuntu:~/[[ROOT]]/test$ ./test "nbv"
 z
-student@ubuntu:~/piscine-go/test$ ./test
+student@ubuntu:~/[[ROOT]]/test$ ./test
 ```

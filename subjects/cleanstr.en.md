@@ -16,14 +16,14 @@ program displays a newline ("`\n`").
 ### Usage :
 
 ```console
-student@ubuntu:~/piscine-go/cleanstr$ go build
-student@ubuntu:~/piscine-go/cleanstr$ ./cleanstr "you see it's easy to display the same thing" | cat -e
+student@ubuntu:~/[[ROOT]]/cleanstr$ go build
+student@ubuntu:~/[[ROOT]]/cleanstr$ ./cleanstr "you see it's easy to display the same thing" | cat -e
 you see it's easy to display the same thing$
-student@ubuntu:~/piscine-go/cleanstr$ ./cleanstr " only    it's  harder   "
+student@ubuntu:~/[[ROOT]]/cleanstr$ ./cleanstr " only    it's  harder   "
 only it's harder$
-student@ubuntu:~/piscine-go/cleanstr$ ./cleanstr " how funny" "Did you   hear Mathilde ?"
+student@ubuntu:~/[[ROOT]]/cleanstr$ ./cleanstr " how funny" "Did you   hear Mathilde ?"
 $
-student@ubuntu:~/piscine-go/cleanstr$ ./cleanstr "" | cat -e
+student@ubuntu:~/[[ROOT]]/cleanstr$ ./cleanstr "" | cat -e
 $
-student@ubuntu:~/piscine-go/cleanstr$
+student@ubuntu:~/[[ROOT]]/cleanstr$
 ```

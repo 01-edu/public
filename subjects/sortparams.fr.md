@@ -7,8 +7,8 @@
 Exemple de résultat :
 
 ```console
-student@ubuntu:~/piscine-go/test$ go build
-student@ubuntu:~/piscine-go/test$ ./sortparams 1 a 2 A 3 b 4 C
+student@ubuntu:~/[[ROOT]]/test$ go build
+student@ubuntu:~/[[ROOT]]/test$ ./sortparams 1 a 2 A 3 b 4 C
 1
 2
 3
@@ -17,5 +17,5 @@ A
 C
 a
 b
-student@ubuntu:~/piscine-go/test$
+student@ubuntu:~/[[ROOT]]/test$
 ```

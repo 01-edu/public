@@ -11,12 +11,12 @@ Write a program that takes 3 arguments, the first argument is a `string` in whic
 ### Usage
 
 ```console
-student@ubuntu:~/piscine-go/test$ go build
-student@ubuntu:~/piscine-go/test$ ./test "hella there" "a" "o"
+student@ubuntu:~/[[ROOT]]/test$ go build
+student@ubuntu:~/[[ROOT]]/test$ ./test "hella there" "a" "o"
 hello there
-student@ubuntu:~/piscine-go/test$ ./test "abcd" "z" "l"
+student@ubuntu:~/[[ROOT]]/test$ ./test "abcd" "z" "l"
 abcd
-student@ubuntu:~/piscine-go/test$ ./test "something" "a" "o" "b" "c"
+student@ubuntu:~/[[ROOT]]/test$ ./test "something" "a" "o" "b" "c"
 
-student@ubuntu:~/piscine-go/test$
+student@ubuntu:~/[[ROOT]]/test$
 ```

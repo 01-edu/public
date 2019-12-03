@@ -15,13 +15,13 @@ Write a program that displays, on the standard output, the content of a file giv
 ### Usage :
 
 ```console
-student@ubuntu:~/piscine-go/displayfile$ go build
-student@ubuntu:~/piscine-go/displayfile$ ./displayfile
+student@ubuntu:~/[[ROOT]]/displayfile$ go build
+student@ubuntu:~/[[ROOT]]/displayfile$ ./displayfile
 File name missing
-student@ubuntu:~/piscine-go/displayfile$ ./displayfile quest8.txt main.go
+student@ubuntu:~/[[ROOT]]/displayfile$ ./displayfile quest8.txt main.go
 Too many arguments
-student@ubuntu:~/piscine-go/displayfile$ ./displayfile quest8.txt
+student@ubuntu:~/[[ROOT]]/displayfile$ ./displayfile quest8.txt
 Almost there!!
 
-student@ubuntu:~/piscine-go/displayfile$
+student@ubuntu:~/[[ROOT]]/displayfile$
 ```

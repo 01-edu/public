@@ -15,14 +15,14 @@ a newline.
 ### Usage
 
 ```console
-student@ubuntu:~/piscine-go/expandstr$ go build
-student@ubuntu:~/piscine-go/expandstr$ ./expandstr "you   see   it's   easy   to   display   the   same   thing" | cat -e
+student@ubuntu:~/[[ROOT]]/expandstr$ go build
+student@ubuntu:~/[[ROOT]]/expandstr$ ./expandstr "you   see   it's   easy   to   display   the   same   thing" | cat -e
 you   see   it's   easy   to   display   the   same   thing$
-student@ubuntu:~/piscine-go/expandstr$ ./expandstr "   only  it's harder   " | cat -e
+student@ubuntu:~/[[ROOT]]/expandstr$ ./expandstr "   only  it's harder   " | cat -e
 only   it's   harder$
-student@ubuntu:~/piscine-go/expandstr$ ./expandstr " how funny it is" "did you  hear, Mathilde ?" | cat -e
+student@ubuntu:~/[[ROOT]]/expandstr$ ./expandstr " how funny it is" "did you  hear, Mathilde ?" | cat -e
 $
-student@ubuntu:~/piscine-go/expandstr$ ./expandstr | cat -e
+student@ubuntu:~/[[ROOT]]/expandstr$ ./expandstr | cat -e
 $
-student@ubuntu:~/piscine-go/expandstr$
+student@ubuntu:~/[[ROOT]]/expandstr$
 ```

@@ -13,15 +13,15 @@ If there is no argument, the program must print only a newline.
 ### Usage
 
 ```console
-student@ubuntu:~/piscine-go/brackets$ go build
-student@ubuntu:~/piscine-go/brackets$ ./brackets '(johndoe)' | cat -e
+student@ubuntu:~/[[ROOT]]/brackets$ go build
+student@ubuntu:~/[[ROOT]]/brackets$ ./brackets '(johndoe)' | cat -e
 OK$
-student@ubuntu:~/piscine-go/brackets$ ./brackets '([)]' | cat -e
+student@ubuntu:~/[[ROOT]]/brackets$ ./brackets '([)]' | cat -e
 Error$
-student@ubuntu:~/piscine-go/brackets$ ./brackets '' '{[(0 + 0)(1 + 1)](3*(-1)){()}}' | cat -e
+student@ubuntu:~/[[ROOT]]/brackets$ ./brackets '' '{[(0 + 0)(1 + 1)](3*(-1)){()}}' | cat -e
 OK$
 OK$
-student@ubuntu:~/piscine-go/brackets$ ./brackets | cat -e
+student@ubuntu:~/[[ROOT]]/brackets$ ./brackets | cat -e
 $
-student@ubuntu:~/piscine-go/brackets$
+student@ubuntu:~/[[ROOT]]/brackets$
 ```

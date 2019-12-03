@@ -11,10 +11,10 @@ These combinations are separated by a comma and a space.
 Here is an **incomplete** output :
 
 ```console
-student@ubuntu:~/piscine-go/printcombprog$ go build
-student@ubuntu:~/piscine-go/printcombprog$ ./printcombprog | cat -e
+student@ubuntu:~/[[ROOT]]/printcombprog$ go build
+student@ubuntu:~/[[ROOT]]/printcombprog$ ./printcombprog | cat -e
 987, 986, 985, 984, 983, 982, 981, 980, 976, ..., 310, 210$
-student@ubuntu:~/piscine-go/printcombprog$
+student@ubuntu:~/[[ROOT]]/printcombprog$
 ```
 
 `999` or `000` are not valid combinations because the digits are not different.
