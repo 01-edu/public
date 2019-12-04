@@ -65,7 +65,7 @@ student@ubuntu:~/[[ROOT]]/test$ ./test
 3
 2
 1
-Tail <nil>
+Tail &{1 <nil>}
 Head &{4 0xc42000a140}
 student@ubuntu:~/[[ROOT]]/test$
 ```
