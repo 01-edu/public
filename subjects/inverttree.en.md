@@ -3,10 +3,10 @@
 ### Instructions:
 Write a function that takes tree and inverts(flips) and returns it.
 ```
-type Node struct {
+type TNode struct {
     Val     int
-    Left    *Node
-    Right   *Node
+    Left    *TNode
+    Right   *TNode
 }
 ```
 Example:
@@ -27,6 +27,6 @@ Output:
 ```
 Expected function:
 ```
-func InvertTree(root *Node) *Node {
+func InvertTree(root *TNode) *TNode {
 }
 ```
