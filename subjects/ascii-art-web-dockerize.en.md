@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [instructions](https://github.com/01-edu/public/ascii-art-web.en.md) as the first subject, ascii-art-web.
+You must follow the same [instructions](https://github.com/01-edu/public/ascii-art-web.en.md) as the first subject.
 
 - For this project you must create at least :
   - one image/Dockerfile
