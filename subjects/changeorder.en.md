@@ -8,7 +8,7 @@ This means that:
 
 - The package needs to be named `package main`.
 - The submitted code needs one declared function main(```func main()```) even if empty.
-- The function main declared needs to **also pass** the `Restrictions Checker`(illegal functions tester). It is advised for the student to just empty the function main after its own testings are done.
+- The function main declared needs to **also pass** the `Restrictions Checker`(illegal functions tester). It is advised for the student to just empty the function main after its own testing are done.
 - Every other rules are obviously the same than for a `program`.
 
 ### Instructions
@@ -18,10 +18,10 @@ Change order of linked list so that elements with odd index come first, elements
 with even index come afterwards.
 You have to return pointer/reference to the beginning of new list
 
-### Expected function and struct
+### Expected function and structure
 
 ```go
-package piscine
+package main
 
 type Node struct {
 	Next *Node
@@ -34,26 +34,26 @@ func Changeorder(node *Node) *Node {
 ```
 
 ### Usage
+
 Here is a possible program to test your function:
 
 ```go
 package main
 
 import (
-	piscine ".."
 	"fmt"
 )
 
 // I implemented pushBack for this
 
 func main() {
-	num1 := &piscine.Node{Num: 1}
+	num1 := &Node{Num: 1}
 	num1 = pushBack(num1, 2)
 	num1 = pushBack(num1, 3)
 	num1 = pushBack(num1, 4)
 	num1 = pushBack(num1, 5)
 
-	result := piscine.Changeorder(num1)
+	result := Changeorder(num1)
 	for tmp := result; tmp != nil; tmp = tmp.Next {
 		fmt.Print(tmp.Num)
 		if tmp.Next != nil {

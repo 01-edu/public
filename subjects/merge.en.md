@@ -1,4 +1,4 @@
-## Merge
+## merge
 
 ## **WARNING! VERY IMPORTANT!**
 
@@ -8,9 +8,8 @@ This means that:
 
 - The package needs to be named `package main`.
 - The submitted code needs one declared function main(```func main()```) even if empty.
-- The function main declared needs to **also pass** the `Restrictions Checker`(illegal functions tester). It is advised for the student to just empty the function main after its own testings are done.
+- The function main declared needs to **also pass** the `Restrictions Checker`(illegal functions tester). It is advised for the student to just empty the function main after its own testing are done.
 - Every other rules are obviously the same than for a `program`.
-
 
 ### Instructions
 
@@ -21,7 +20,7 @@ You need to merge them into a new binary tree. The merge rule is that if two nod
 Write a function, `MergeTrees`, that returns merged tree .
 Note: The merging process must start from the root nodes of both trees.
 
-Example 1:  
+Example 1:
 
 Input:
   
@@ -37,7 +36,7 @@ Input:
        
        [1,2,3]  
 
-Merged Tree:   
+Merged Tree:
 
           2      
          / \  
@@ -67,9 +66,6 @@ Here is a possible program to test your function :
 ```go
 package main
 
-import (
-  piscine ".."
-)
 
 func main() {
   mergedTree := &TreeNode{}
@@ -81,9 +77,7 @@ func main() {
 }
 ```
 
-
 ### Output
-
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ go build
