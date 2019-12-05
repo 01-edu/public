@@ -22,14 +22,14 @@ Write a function, `IsSameTree`, that returns `bool`.
 ### Expected function
 
 ```go
-type TreeNodeL struct {
-    Left    *TreeNodeL
+type TreeNodeM struct {
+    Left    *TreeNodeM
     Val     int
-    Right   *TreeNodeL
+    Right   *TreeNodeM
 }
 
 
-func IsSameTree(p *TreeNodeL, q *TreeNodeL) bool {
+func IsSameTree(p *TreeNodeM, q *TreeNodeM) bool {
 
 }
 ```
