@@ -47,14 +47,14 @@ Merged Tree:
 ### Expected function
 
 ```go
-type TreeNode struct {
-    Left    *TreeNodeL
+type TreeNodeM struct {
+    Left    *TreeNodeM
     Val     int
-    Right   *TreeNodeL
+    Right   *TreeNodeM
 }
 
 
-func MergeTrees(t1 *TreeNode, t2 *TreeNode) *TreeNode {
+func MergeTrees(t1 *TreeNodeM, t2 *TreeNodeM) *TreeNodeM {
 
 }
 ```
@@ -68,7 +68,7 @@ package main
 
 
 func main() {
-  mergedTree := &TreeNode{}
+  mergedTree := &TreeNodeM{}
   t1 := NewRandTree()
   t2 := NewRandTree()
 
