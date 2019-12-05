@@ -16,10 +16,9 @@ This means that:
 You are given a linked list, where each node contains a single digit.
 Write a function that reverses the list and returns pointer/reference to new linked list
 
-### Expected function and struct
+### Expected function and structure
 
 ```go
-package piscine
 
 type Node struct {
 	Next *Node
@@ -32,26 +31,23 @@ func Reverse(node *Node) *Node {
 ```
 
 ### Usage
-Here is a possible program to test your function:
+Here is a possible program to test your function :
 
 ```go
 package main
 
 import (
     "fmt"
-    piscine ".."
 )
 
-// I implemented pushBack for this
-
 func main() {
-	num1 := &piscine.Node{Num: 1}
+	num1 := &Node{Num: 1}
 	num1 = pushBack(num1, 3)
 	num1 = pushBack(num1, 2)
 	num1 = pushBack(num1, 4)
 	num1 = pushBack(num1, 5)
 
-	result := piscine.Reverse(num1)
+	result := Reverse(num1)
 	for tmp := result; tmp != nil; tmp = tmp.Next {
 		fmt.Print(tmp.Num)
 		if tmp.Next != nil {
@@ -63,10 +59,11 @@ func main() {
 
 ```
 
-Its output:
+And its output:
 
 ```console
-$> go build
-$> ./main
+student@ubuntu:~/[[ROOT]]/test$ go build
+student@ubuntu:~/[[ROOT]]/test$ ./test
 5 -> 4 -> 2 -> 3 -> 1
+student@ubuntu:~/[[ROOT]]/test$
 ```

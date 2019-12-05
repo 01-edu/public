@@ -1,6 +1,6 @@
 ## anagram
 
-## **WARNING! VERY IMPORTANT!**
+##**WARNING! VERY IMPORTANT!**
 
 For this exercise a function will be tested **with the exam own main**. However the student **still needs** to submit a structured program:
 
@@ -21,8 +21,6 @@ Only lower case characters will be given.
 ### Expected function
 
 ```go
-package piscine
-
 func IsAnagram(str1, str2 string) bool {
 
 }
@@ -30,37 +28,38 @@ func IsAnagram(str1, str2 string) bool {
 
 ### Usage
 
-Here is a possible program to test your function:
+Here is a possible [program] to test your function:
 
 ```go
 package main
+
 import (
-    piscine ".."
     "fmt"
 )
 
 func main() {
-    test1 := piscine.IsAnagram("listen", "silent")
+    test1 := IsAnagram("listen", "silent")
     fmt.Println(test1)
 
-    test2 := piscine.IsAnagram("alem", "school")
+    test2 := IsAnagram("alem", "school")
     fmt.Println(test2)
 
-    test3 := piscine.IsAnagram("neat", "a net")
+    test3 := IsAnagram("neat", "a net")
     fmt.Println(test3)
 
-    test4 := piscine.IsAnagram("anna madrigal", "a man and a girl")
+    test4 := IsAnagram("anna madrigal", "a man and a girl")
     fmt.Println(test4)
 }
 ```
 
-Its output:
+And its output:
 
-```bash
-$> go build
-$> ./main
+```console
+student@ubuntu:~/test$ go build
+student@ubuntu:~/test$ ./test
 true
 false
 true
 true
+student@ubuntu:~/test$
 ```
