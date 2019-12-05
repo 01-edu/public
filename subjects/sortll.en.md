@@ -21,12 +21,12 @@ Write a function that sorts the list in descending order and return pointer/refe
 ```go
 package piscine
 
-type Node struct {
-	Next *Node
+type NodeAddL struct {
+	Next *NodeAddL
 	Num  int
 }
 
-func Sortll(node *Node) *Node {
+func Sortll(node *NodeAddL) *NodeAddL {
 
 }
 ```
@@ -45,7 +45,7 @@ import (
 // I implemented pushBack for this
 
 func main() {
-	num1 := &piscine.Node{Num: 5}
+	num1 := &piscine.NodeAddL{Num: 5}
 	num1 = pushBack(num1, 1)
 	num1 = pushBack(num1, 3)
 	num1 = pushBack(num1, 1)

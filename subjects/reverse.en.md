@@ -21,12 +21,12 @@ Write a function that reverses the list and returns pointer/reference to new lin
 ```go
 package main
 
-type Node struct {
-	Next *Node
+type NodeAddL struct {
+	Next *NodeAddL
 	Num  int
 }
 
-func Reverse(node *Node) *Node {
+func Reverse(node *NodeAddL) *NodeAddL {
 
 }
 ```
@@ -42,12 +42,12 @@ import (
     "fmt"
 )
 
-func pushBack(n *Node, num int) *Node{
+func pushBack(n *NodeAddL, num int) *NodeAddL{
 
 }
 
 func main() {
-	num1 := &piscine.Node{Num: 1}
+	num1 := &piscine.NodeAddL{Num: 1}
 	num1 = pushBack(num1, 3)
 	num1 = pushBack(num1, 2)
 	num1 = pushBack(num1, 4)

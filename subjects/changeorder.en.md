@@ -23,12 +23,12 @@ You have to return pointer/reference to the beginning of new list
 ```go
 package main
 
-type Node struct {
-	Next *Node
+type NodeAddL struct {
+	Next *NodeAddL
 	Num  int
 }
 
-func Changeorder(node *Node) *Node {
+func Changeorder(node *NodeAddL) *NodeAddL {
 
 }
 ```
@@ -47,7 +47,7 @@ import (
 // I implemented pushBack for this
 
 func main() {
-	num1 := &Node{Num: 1}
+	num1 := &NodeAddL{Num: 1}
 	num1 = pushBack(num1, 2)
 	num1 = pushBack(num1, 3)
 	num1 = pushBack(num1, 4)
