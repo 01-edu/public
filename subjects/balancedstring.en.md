@@ -6,20 +6,21 @@ Balanced string is a string that has equal quantity of 'C' and 'D' characters.
 
 Write a program that takes a string and outputs maximum amount of balanced strings with `\n` at the end of line.
 
-If the number of arguments is not 1, display `\n`.S
+If the number of arguments is not 1, display `\n`.
 
+It will only be tested strings containing the characters 'C' and 'D'.
 
 ### Usage
 
 ```console
-$> go build
-$> ./main "CDCCDDCDCD"
+student@ubuntu:~/[[ROOT]]/balancedstring$ go build
+student@ubuntu:~/[[ROOT]]/balancedstring$ ./balancedstring "CDCCDDCDCD"
 4
-$> ./main "CDDDDCCCDC"
+student@ubuntu:~/[[ROOT]]/balancedstring$ ./balancedstring "CDDDDCCCDC"
 3
-$> ./main "DDDDCCCC"
+student@ubuntu:~/[[ROOT]]/balancedstring$ ./balancedstring "DDDDCCCC"
 1
-$> ./main "CDCCCDDCDD"
+student@ubuntu:~/[[ROOT]]/balancedstring$ ./balancedstring "CDCCCDDCDD"
 2
 ```
 
