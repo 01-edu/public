@@ -1,10 +1,23 @@
 ## nauuo
 
+## **WARNING! VERY IMPORTANT!**
+
+For this exercise a function will be tested **with the exam own main**. However the student **still needs** to submit a structured program:
+
+This means that:
+
+- The package needs to be named `package main`.
+- The submitted code needs one declared function main(```func main()```) even if empty.
+- The function main declared needs to **also pass** the `Restrictions Checker`(illegal functions tester). It is advised for the student to just empty the function main after its own testings are done.
+- Every other rules are obviously the same than for a `program`.
+
 ### Instructions
 
 There was a vote. There are people who voted positively, negatively, and randomly. 
 Figure out if the final answer depends on random people or not.
-If it does print '?'
+If it does, return '?', otherwise the result must be either '+', '-', or '0'
+Previous characters stand for outcome of the vote: positive/negative/draw.
+Input is always positive.
 
 Write a function, `Nauuo`, that returns final result of voting.
 
