@@ -20,6 +20,8 @@ student@ubuntu:~/[[ROOT]]/hiddenp$ ./hiddenp "abc" "2altrb53c.sse" | cat -e
 1$
 student@ubuntu:~/[[ROOT]]/hiddenp$ ./hiddenp "abc" "btarc" | cat -e
 0$
+student@ubuntu:~/[[ROOT]]/hiddenp$ ./hiddenp "DD" "DABC" | cat -e
+0$
 student@ubuntu:~/[[ROOT]]/hiddenp$ ./hiddenp | cat -e
 $
 student@ubuntu:~/[[ROOT]]/hiddenp$
