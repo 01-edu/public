@@ -10,7 +10,7 @@ cd $script_dir
 . set.sh
 
 disk=$(lsblk -o tran,kname,hotplug,type,fstype -pr |
-	grep -e nvme -e sata -e sas |
+	grep -e nvme -e sata -e sas -e ata |
 	grep '0 disk' |
 	cut -d' ' -f2 |
 	sort |
