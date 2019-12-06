@@ -11,14 +11,13 @@ Only lower case characters will be given.
 ### Usage
 
 ```console
-$> go build
-$> ./main "abbaac"
+student@ubuntu:~/[[ROOT]]/test$ go build
+student@ubuntu:~/[[ROOT]]/test$ ./main "abbaac"
 true
-$> ./main "ab"
+student@ubuntu:~/[[ROOT]]/test$ ./main "ab"
 false
-$> ./main "abcacccazb"
+student@ubuntu:~/[[ROOT]]/test$ ./main "abcacccazb"
 true
 ```
 
 In first example, character 'a' has 3 occurrences, 'b' has 2 and 'c' has 1. No two characters have the same number of occurrences.
-

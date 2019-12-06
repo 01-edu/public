@@ -1,4 +1,4 @@
-## reverselinkedlist
+## reverse
 
 ## **WARNING! VERY IMPORTANT!**
 
@@ -8,7 +8,7 @@ This means that:
 
 - The package needs to be named `package main`.
 - The submitted code needs one declared function main(```func main()```) even if empty.
-- The function main declared needs to **also pass** the `Restrictions Checker`(illegal functions tester). It is advised for the student to just empty the function main after its own testings are done.
+- The function main declared needs to **also pass** the `Restrictions Checker`(illegal functions tester). It is advised for the student to just empty the function main after its own testing are done.
 - Every other rules are obviously the same than for a `program`.
 
 ### Instructions
@@ -16,36 +16,38 @@ This means that:
 You are given a linked list, where each node contains a single digit.
 Write a function that reverses the list and returns pointer/reference to new linked list
 
-### Expected function and struct
+### Expected function and structure
 
 ```go
-package piscine
+package main
 
-type Node struct {
-	Next *Node
+type NodeAddL struct {
+	Next *NodeAddL
 	Num  int
 }
 
-func Reverse(node *Node) *Node {
+func Reverse(node *NodeAddL) *NodeAddL {
 
 }
 ```
 
 ### Usage
-Here is a possible program to test your function:
+
+Here is a possible program to test your function :
 
 ```go
 package main
 
 import (
     "fmt"
-    piscine ".."
 )
 
-// I implemented pushBack for this
+func pushBack(n *NodeAddL, num int) *NodeAddL{
+
+}
 
 func main() {
-	num1 := &piscine.Node{Num: 1}
+	num1 := &piscine.NodeAddL{Num: 1}
 	num1 = pushBack(num1, 3)
 	num1 = pushBack(num1, 2)
 	num1 = pushBack(num1, 4)
@@ -66,7 +68,8 @@ func main() {
 Its output:
 
 ```console
-$> go build
-$> ./main
+student@ubuntu:~/[[ROOT]]/test$ go build
+student@ubuntu:~/[[ROOT]]/test$ ./main
 5 -> 4 -> 2 -> 3 -> 1
+student@ubuntu:~/[[ROOT]]/test$
 ```
