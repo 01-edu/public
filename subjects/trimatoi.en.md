@@ -8,6 +8,8 @@
 
 -   This function will **only** have to return the `int`. In case of invalid input, the function should return `0`.
 
+-   Note: There will never be more than one sign by string in the tests.
+
 ### Expected function
 
 ```go
