@@ -13,7 +13,6 @@ The program must :
 - Be written in Go
 - Compile successfully
 - Assemble all of the Tetrominoes in order to create the smallest square possible
-- Make the smallest square with the Tetrominoes
 - Identify each Tetromino in the solution, by assigning different letters to different Tetrominoes
 - Expect at least 2 tetrominoes in the text file
 
