@@ -6,8 +6,6 @@ Develop a program that receives only one argument, a path to a text file which w
 
 ### Instructions
 
-All files referring to the project must be in the same folder.
-
 The program must :
 
 -   Be written in Go
@@ -15,6 +13,7 @@ The program must :
 -   Assemble all of the tetrominoes in order to create the smallest square possible
 -   Identify each tetromino in the solution, by assigning different letters to different tetrominoes
 -   Expect at least 2 tetrominoes in the text file
+-   In case of bad format on the tetrominoes or bad file format it should print `ERROR`
 
 #### Example of a text File
 
