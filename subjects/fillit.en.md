@@ -2,19 +2,19 @@
 
 ### Objectives
 
-Develop a program that receives only one argument, a txt file which will contain a list of [Tetrominoes](https://en.wikipedia.org/wiki/Tetromino) to assemble them in order to create the smallest square possible.
+Develop a program that receives only one argument, a path to a text file which will contain a list of [tetrominoes](https://en.wikipedia.org/wiki/Tetromino) to assemble them in order to create the smallest square possible.
 
 ### Instructions
 
-All files referring to the project, must be in the same folder.
+All files referring to the project must be in the same folder.
 
 The program must :
 
-- Be written in Go
-- Compile successfully
-- Assemble all of the Tetrominoes in order to create the smallest square possible
-- Identify each Tetromino in the solution, by assigning different letters to different Tetrominoes
-- Expect at least 2 tetrominoes in the text file
+-   Be written in Go
+-   Compile successfully
+-   Assemble all of the tetrominoes in order to create the smallest square possible
+-   Identify each tetromino in the solution, by assigning different letters to different tetrominoes
+-   Expect at least 2 tetrominoes in the text file
 
 #### Example of a text File
 
@@ -30,7 +30,7 @@ The program must :
 ..##
 ```
 
-- If it isn't possible to form a complete square, the program should leave spaces between the Tetrominoes. For example:
+-   If it isn't possible to form a complete square, the program should leave spaces between the tetrominoes. For example:
 
 ```console
 ABB.
