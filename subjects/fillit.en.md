@@ -1,4 +1,4 @@
-## fill it
+## tetrisoptimizer
 
 ### Objectives
 
@@ -41,7 +41,7 @@ A...
 ## Usage
 
 ```
-student@ubuntu:~/fill-it$ cat -e sample.txt
+student@ubuntu:~/tetrisoptimizer$ cat -e sample.txt
 ...#$
 ...#$
 ...#$
@@ -81,12 +81,12 @@ $
 ###.$
 .#..$
 ....$
-student@ubuntu:~/fill-it$ ./fillit sample.txt | cat -e
+student@ubuntu:~/tetrisoptimizer$ ./tetrisoptimizer sample.txt | cat -e
 ABBBB.$
 ACCCEE$
 AFFCEE$
 A.FFGG$
 HHHDDG$
 .HDD.G$
-student@ubuntu:~/fill-it$
+student@ubuntu:~/tetrisoptimizer$
 ```
