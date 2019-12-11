@@ -1,20 +1,19 @@
-## tetrisoptimizre
+## tetrisoptimizer
 
 ### Objectives
 
-Develop a program that receives only one argument, a text file which will contain a list of [Tetrominoes](https://en.wikipedia.org/wiki/Tetromino) to assemble them in order to create the smallest square possible.
+Develop a program that receives only one argument, a path to a text file which will contain a list of [tetrominoes](https://en.wikipedia.org/wiki/Tetromino) to assemble them in order to create the smallest square possible.
 
 ### Instructions
 
-- Your program will be tested using our solution, you don't need to submit your text files
-
 The program must :
 
-- Expect at least 2 Tetrominoes in the text file
-- Identify each Tetromino in the solution, by assigning different letters to different Tetrominoes
-- Assemble all of the Tetrominoes in order to create the smallest square possible
-- Print the solution where Tetrominoes are placed on their most upper left position, if there are more than one solution it
-- In case of bad format on the Tetrominoes or bad file format it should print `ERROR`
+-   Be written in Go
+-   Compile successfully
+-   Assemble all of the tetrominoes in order to create the smallest square possible
+-   Identify each tetromino in the solution, by assigning different letters to different tetrominoes
+-   Expect at least 2 tetrominoes in the text file
+-   In case of bad format on the tetrominoes or bad file format it should print `ERROR`
 
 #### Example of a text File
 
@@ -30,7 +29,7 @@ The program must :
 ..##
 ```
 
-- If it isn't possible to form a complete square, the program should leave spaces between the Tetrominoes. For example:
+-   If it isn't possible to form a complete square, the program should leave spaces between the tetrominoes. For example:
 
 ```console
 ABB.
@@ -42,7 +41,7 @@ A...
 ## Usage
 
 ```
-student@ubuntu:~/tetrisoptimizre$ cat -e sample.txt
+student@ubuntu:~/tetrisoptimizer$ cat -e sample.txt
 ...#$
 ...#$
 ...#$
@@ -82,12 +81,12 @@ $
 ###.$
 .#..$
 ....$
-student@ubuntu:~/tetrisoptimizre$ ./tetrisoptimizre sample.txt | cat -e
+student@ubuntu:~/tetrisoptimizer$ ./tetrisoptimizer sample.txt | cat -e
 ABBBB.$
 ACCCEE$
 AFFCEE$
 A.FFGG$
 HHHDDG$
 .HDD.G$
-student@ubuntu:~/tetrisoptimizre$
+student@ubuntu:~/tetrisoptimizer$
 ```
