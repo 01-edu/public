@@ -3,6 +3,13 @@
 # exits if a command fails
 set -e
 
+if passwd -S | grep NP
+then
+	# No password set, so ask user to set one
+	gnome-terminal.real -t "⁣" --geometry=40x10 --wait -- passwd
+	sleep 1
+fi
+
 # launch new terminal and prompt afk phrase
 gnome-terminal.real -t "" --geometry=10x10 --wait -- bash -c "echo 'Write afk phrase, max: 50 sym:'; read test; echo \$test > /tmp/phrase;"
 
