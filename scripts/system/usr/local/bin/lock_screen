@@ -11,7 +11,7 @@ then
 fi
 
 # launch new terminal and prompt afk phrase
-gnome-terminal.real -t "" --geometry=10x10 --wait -- bash -c "echo 'Write afk phrase, max: 50 sym:'; read test; echo \$test > /tmp/phrase;"
+gnome-terminal.real -t "" --geometry=10x10 --wait -- bash -c "echo 'Write the adk message, max: 50 sym:'; read test; echo \$test > /tmp/phrase;"
 
 # read phrase from file
 message=""
