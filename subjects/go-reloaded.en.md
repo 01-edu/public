@@ -1,3 +1,20 @@
+## go-reloaded
+
+### Introduction
+
+- Welcome back. Congratulations on your admission. 
+
+This subject is a selection of the best exercises of the piscine-go.
+This selection was made to get back smoothly to programming in go after the pause period.
+All the exercises have to be done and they must all pass each and every tests. 
+
+The goal of this project is to realize what you know and what you still need to perfectionate.
+We strongly advise you to resist the temptation of looking at your old repository.
+
+To really learn programming, you must practice programming, so copy and pasting some old code will not help the learning process.
+
+One more detail. This time the project will be corrected by auditors. The auditors will be others students. 
+
 ## atoi
 
 ### Instructions
