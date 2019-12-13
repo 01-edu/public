@@ -12,9 +12,9 @@ mkdir /etc/dconf/db/local.d/
 
 cat <<EOF> /etc/dconf/db/local.d/00-autologout
 [org/gnome/settings-daemon/plugins/power]
-# Set the timeout to 900 seconds when on mains power
-sleep-inactive-ac-timeout=10
-# Set action after timeout to be logout when on mains power
+# Set the timeout to 1 hour
+sleep-inactive-ac-timeout=3600
+# Set action after timeout
 sleep-inactive-ac-type='logout'
 
 EOF

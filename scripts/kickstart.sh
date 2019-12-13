@@ -36,14 +36,13 @@ gsettings set org.gnome.desktop.session idle-delay 0
 gsettings set org.gnome.desktop.screensaver lock-enabled false
 
 cd
-wget "github.com/01-edu/public/archive/logout,background,text.zip"
-#wget github.com/01-edu/public/archive/master.zip
-unzip "logout,background,text.zip"
+wget github.com/01-edu/public/archive/master.zip
+unzip master.zip
 
-cd public-logout-background-text/scripts
+cd public-master/scripts
 sudo -E ./install_client.sh
 cat dconfig.txt | dconf load /
 
 cd
-rm -rf "logout,background,text.zip" public-logout-background-text
+rm -rf master.zip public-master
 reboot
