@@ -5,7 +5,7 @@
 Ascii-art-reverse consists on reversing the process, converting the graphic representation into a text.
 
 - You will have to create a text file with a graphic representation of a random phrase.
-- The program will have **one** argument being the name of the file created.
+- The argument will be a **flags**, `--reverse=<fileName>`, in which `--reverse` is the flag and `<fileName>` is the file name.
 - The program must print this phrase in **normal text**.
 
 This project will help you learn about :
@@ -36,7 +36,7 @@ student@ubuntu:~/ascii-art$ cat file.txt
  |_| |_|   \___|  |_|  |_|   \___/  
                                     
                                     
-student@ubuntu:~/ascii-art$ ./ascii-art file.txt
+student@ubuntu:~/ascii-art$ ./ascii-art --reverse=file.txt
 hello
 student@ubuntu:~/ascii-art$
 ```

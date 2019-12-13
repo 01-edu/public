@@ -4,6 +4,7 @@
 
 Ascii-art-output consists on receiving two strings. The first argument will be converted into a graphic representation of ASCII and written into a file named by using the second argument.
 
+- The second argument will be a **flags**, `--output=<fileName.txt>`, in which `--output` is the flag and `<fileName.txt>` is the file name.
 - In case the second argument is not present it should print the graphic representation.
 
 This project will help you learn about :
@@ -14,7 +15,6 @@ This project will help you learn about :
 - Ways to output data.
 - Manipulation of strings.
 - Learning about the choice of outputs.
-- Manipulation of structures.
 
 ### Instructions
 
@@ -27,7 +27,7 @@ This project will help you learn about :
 
 ```console
 student@ubuntu:~/ascii-art$ go build
-student@ubuntu:~/ascii-art$ ./ascii-art "hello" banner.txt
+student@ubuntu:~/ascii-art$ ./ascii-art "hello" --output=banner.txt
 student@ubuntu:~/ascii-art$ cat banner.txt
   _                _    _           
  | |              | |  | |          
@@ -37,7 +37,7 @@ student@ubuntu:~/ascii-art$ cat banner.txt
  |_| |_|   \___|  |_|  |_|   \___/  
                                     
                                     
-student@ubuntu:~/ascii-art$ ./ascii-art "Hello There" banner.txt
+student@ubuntu:~/ascii-art$ ./ascii-art "Hello There" --output=banner.txt
 student@ubuntu:~/ascii-art$ cat banner.txt
   _    _           _    _                 _______   _                              
  | |  | |         | |  | |               |__   __| | |                             
