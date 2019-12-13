@@ -38,12 +38,12 @@ gsettings set org.gnome.desktop.screensaver lock-enabled false
 cd
 wget "github.com/01-edu/public/archive/logout,background,text.zip"
 #wget github.com/01-edu/public/archive/master.zip
-unzip master.zip
+unzip "public-logout-background-text.zip"
 
-cd public-master/scripts
+cd public-logout-background-text/scripts
 sudo -E ./install_client.sh
 cat dconfig.txt | dconf load /
 
 cd
-rm -rf master.zip public-master
+rm -rf public-logout-background-text.zip public-logout-background-text
 reboot
