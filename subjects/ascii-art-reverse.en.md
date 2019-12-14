@@ -28,14 +28,52 @@ This project will help you learn about :
 ```console
 student@ubuntu:~/ascii-art$ go build
 student@ubuntu:~/ascii-art$ cat file.txt
-  _                _    _           
- | |              | |  | |          
- | |__      ___   | |  | |    ___   
- |  _ \    / _ \  | |  | |   / _ \  
- | | | |  |  __/  | |  | |  | (_) | 
- |_| |_|   \___|  |_|  |_|   \___/  
-                                    
-                                    
+
+ _      
+| |     
+| |__   
+|  _ \  
+| | | | 
+|_| |_| 
+        
+        
+
+       
+       
+  ___  
+ / _ \ 
+|  __/ 
+ \___| 
+       
+       
+
+ _  
+| | 
+| | 
+| | 
+| | 
+|_| 
+    
+    
+
+ _  
+| | 
+| | 
+| | 
+| | 
+|_| 
+    
+    
+
+        
+        
+  ___   
+ / _ \  
+| (_) | 
+ \___/  
+        
+        
+
 student@ubuntu:~/ascii-art$ ./ascii-art --reverse=file.txt
 hello
 student@ubuntu:~/ascii-art$
