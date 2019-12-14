@@ -42,17 +42,8 @@ import (
     "fmt"
 )
 
-func pushBack(n *NodeAddL, num int) *NodeAddL{
-
-}
-
 func main() {
-	num1 := &piscine.NodeAddL{Num: 1}
-	num1 = pushBack(num1, 3)
-	num1 = pushBack(num1, 2)
-	num1 = pushBack(num1, 4)
-	num1 = pushBack(num1, 5)
-
+	// num1 = 1 -> 2 -> 3 -> 4 -> 5
 	result := piscine.Reverse(num1)
 	for tmp := result; tmp != nil; tmp = tmp.Next {
 		fmt.Print(tmp.Num)
