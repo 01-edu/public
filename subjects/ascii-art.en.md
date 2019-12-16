@@ -4,6 +4,9 @@
 
 Ascii-art consists on receiving a `string` has an argument and outputting the `string` in a graphic representation of ASCII.
 
+- This project should handle numbers, letters, spaces, special characters and `\n`.
+- Take a look on the ASCII manual.
+
 This project will help you learn about :
 
 - Client utilities.
@@ -60,5 +63,14 @@ student@ubuntu:~/ascii-art$ ./ascii-art "1Hello 2There"
 |_| |_|  |_|  \___|  |_|  |_|   \___/      |_____|   |_|    |_| |_|   \___|  |_|      \___| 
                                                                                             
                                                                                             
+student@ubuntu:~/ascii-art$ ./ascii-art "{Hello There}"
+   __   _    _           _    _                 _______   _                              __    
+  / /  | |  | |         | |  | |               |__   __| | |                             \ \   
+ | |   | |__| |   ___   | |  | |    ___           | |    | |__      ___    _ __     ___   | |  
+/ /    |  __  |  / _ \  | |  | |   / _ \          | |    |  _ \    / _ \  | '__|   / _ \   \ \ 
+\ \    | |  | | |  __/  | |  | |  | (_) |         | |    | | | |  |  __/  | |     |  __/   / / 
+ | |   |_|  |_|  \___|  |_|  |_|   \___/          |_|    |_| |_|   \___|  |_|      \___|  | |  
+  \_\                                                                                    /_/   
+                                                                                               
 student@ubuntu:~/ascii-art$
 ```
