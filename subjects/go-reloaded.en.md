@@ -19,6 +19,10 @@ We advise you to create your own tests for yourself and for when you will correc
 
 ## atoi
 
+### Allowed functions
+
+
+
 ### Instructions
 
 -   Write a [function](TODO-LINK) that simulates the behaviour of the `Atoi` function in Go. `Atoi` transforms a number represented as a `string` in a number represented as an `int`.
