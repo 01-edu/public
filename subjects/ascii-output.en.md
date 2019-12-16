@@ -27,7 +27,7 @@ This project will help you learn about :
 
 ```console
 student@ubuntu:~/ascii-art$ go build
-student@ubuntu:~/ascii-art$ ./ascii-art "hello" --output=banner.txt
+student@ubuntu:~/ascii-art$ ./ascii-art "hello" standard --output=banner.txt
 student@ubuntu:~/ascii-art$ cat banner.txt
   _                _    _           
  | |              | |  | |          
@@ -37,7 +37,7 @@ student@ubuntu:~/ascii-art$ cat banner.txt
  |_| |_|   \___|  |_|  |_|   \___/  
                                     
                                     
-student@ubuntu:~/ascii-art$ ./ascii-art "Hello There" --output=banner.txt
+student@ubuntu:~/ascii-art$ ./ascii-art "Hello There" standard --output=banner.txt
 student@ubuntu:~/ascii-art$ cat banner.txt
   _    _           _    _                 _______   _                              
  | |  | |         | |  | |               |__   __| | |                             
