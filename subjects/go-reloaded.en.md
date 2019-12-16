@@ -2,11 +2,11 @@
 
 ### Introduction
 
-- Welcome back. Congratulations on your admission. 
+- Welcome back. Congratulations on your admission.
 
 This subject is a selection of the best exercises of the piscine-go.
 This selection was made to get back smoothly to programming in go after the pause period.
-All the exercises have to be done and they must all pass each and every tests. 
+All the exercises have to be done and they must all pass each and every tests.
 
 The goal of this project is to realize what you know and what you still need to practice on.
 We strongly advise you to resist the temptation of looking at your old repository.
@@ -15,13 +15,15 @@ To really learn programming, you must practice programming, so copy and pasting 
 
 One more detail. This time the project will be corrected by auditors. The auditors will be others students and you will be an auditor as well.
 
-We advise you to create your own tests for yourself and for when you will correct your students. 
+We advise you to create your own tests for yourself and for when you will correct your students.
+
+---
 
 ## atoi
 
 ### Allowed functions
 
-
+- `"--cast"`
 
 ### Instructions
 
@@ -99,7 +101,13 @@ student@ubuntu:~/[[ROOT]]/test$ ./test
 student@ubuntu:~/[[ROOT]]/test$
 ```
 
+---
+
 ## recursivepower
+
+### Allowed functions
+
+- `"--cast"`
 
 ### Instructions
 
@@ -145,7 +153,14 @@ student@ubuntu:~/[[ROOT]]/test$ ./test
 student@ubuntu:~/[[ROOT]]/test$
 ```
 
+---
+
 ## printcombn
+
+### Allowed functions
+
+- `"--cast"`
+- `"github.com/01-edu/z01.PrintRune"`
 
 ### Instructions
 
@@ -194,7 +209,14 @@ student@ubuntu:~/[[ROOT]]/test$ ./test
 student@ubuntu:~/[[ROOT]]/test$
 ```
 
+---
+
 ## printnbrbase
+
+### Allowed functions
+
+- `"--cast"`
+- `"github.com/01-edu/z01.PrintRune"`
 
 ### Instructions
 
@@ -258,7 +280,16 @@ NV
 student@ubuntu:~/[[ROOT]]/test$
 ```
 
+---
+
 ## doop
+
+### Allowed functions
+
+- `"--cast"`
+- `"github.com/01-edu/z01.PrintRune"`
+- `"os.*"`
+- `".."`
 
 ### Instructions
 
@@ -308,7 +339,14 @@ student@ubuntu:~/[[ROOT]]/test$ ./doop 1 "*" -1
 student@ubuntu:~/[[ROOT]]/test$
 ```
 
+---
+
 ## atoibase
+
+### Allowed functions
+
+- `"--cast"`
+- `"make"`
 
 ### Instructions
 
@@ -367,7 +405,14 @@ student@ubuntu:~/[[ROOT]]/test$ ./test
 0
 student@ubuntu:~/[[ROOT]]/test$
 ```
+---
+
 ## splitwhitespaces
+
+### Allowed functions
+
+- `"--cast"`
+- `"make"`
 
 ### Instructions
 
@@ -410,7 +455,14 @@ student@ubuntu:~/[[ROOT]]/test$ ./test
 student@ubuntu:~/[[ROOT]]/test$
 ```
 
+---
+
 ## split
+
+### Allowed functions
+
+- `"--cast"`
+- `"make"`
 
 ### Instructions
 
@@ -453,7 +505,14 @@ student@ubuntu:~/[[ROOT]]/test$ ./test
 student@ubuntu:~/[[ROOT]]/test$
 ```
 
+---
+
 ## convertbase
+
+### Allowed functions
+
+- `"--cast"`
+- `".."`
 
 ### Instructions
 
@@ -498,7 +557,16 @@ student@ubuntu:~/[[ROOT]]/test$ ./test
 student@ubuntu:~/[[ROOT]]/test$
 ```
 
+---
+
 ## rotatevowels
+
+### Allowed functions
+
+- `"os.*"`
+- `"--cast"`
+- `"github.com/01-edu/z01.PrintRune"`
+- `"make"`
 
 ### Instructions
 
@@ -527,7 +595,14 @@ student@ubuntu:~/[[ROOT]]/test$ ./rotatevowels
 student@ubuntu:~/[[ROOT]]/test$
 ```
 
+---
+
 ## advancedsortwordarr
+
+### Allowed functions
+
+- `".."`
+- `"len"`
 
 ### Instructions
 
@@ -571,7 +646,18 @@ student@ubuntu:~/[[ROOT]]/test$ ./test
 student@ubuntu:~/[[ROOT]]/test$
 ```
 
+---
+
 ## cat
+
+### Allowed functions
+
+- `"os.*"`
+- `"--cast"`
+- `"github.com/01-edu/z01.PrintRune"`
+- `".."`
+- `"ioutil.*"`
+- `"io.*"`
 
 ### Instructions
 
@@ -611,7 +697,18 @@ student@ubuntu:~/[[ROOT]]/cat$ ./cat quest8.txt quest8T.txt
 student@ubuntu:~/[[ROOT]]/cat$
 ```
 
+---
+
 ## ztail
+
+### Allowed functions
+
+- `"os.*"`
+- `"--cast"`
+- `"github.com/01-edu/z01.PrintRune"`
+- `"append"`
+- `"fmt.Printf"`
+- `".."`
 
 ### Instructions
 
@@ -631,7 +728,13 @@ Write a program called `ztail` that has the same behaviour as the system command
 
 This program is gonna be tested against `tail`, be sure to check all the different error messages with different permutations of the arguments.
 
+---
+
 ## activebits
+
+### Allowed functions
+
+- `"--cast"`
 
 ### Instructions
 
@@ -672,7 +775,13 @@ student@ubuntu:~/[[ROOT]]/test$ ./test
 student@ubuntu:~/[[ROOT]]/test$
 ```
 
+---
+
 ## sortlistinsert
+
+### Allowed functions
+
+- `"--no-array"`
 
 ### Instructions
 
@@ -750,7 +859,13 @@ student@ubuntu:~/[[ROOT]]/test$ ./test
 student@ubuntu:~/[[ROOT]]/test$
 ```
 
+---
+
 ## sortedlistmerge
+
+### Allowed functions
+
+- `"--no-array"`
 
 ### Instructions
 
@@ -826,7 +941,13 @@ student@ubuntu:~/[[ROOT]]/test$ ./test
 student@ubuntu:~/[[ROOT]]/test$
 ```
 
+---
+
 ## listremoveif
+
+### Allowed functions
+
+- `"--no-array"`
 
 ### Instructions
 
@@ -922,6 +1043,8 @@ Hello -> There -> How -> are -> you -> <nil>
 student@ubuntu:~/[[ROOT]]/test$
 ```
 
+---
+
 ## btreetransplant
 
 ### Instructions
@@ -972,6 +1095,8 @@ student@ubuntu:~/[[ROOT]]/test$ ./test
 student@ubuntu:~/[[ROOT]]/test$
 ```
 
+---
+
 ## btreeapplybylevel
 
 ### Instructions
@@ -1018,6 +1143,8 @@ student@ubuntu:~/[[ROOT]]/test$ ./test
 5
 student@ubuntu:~/[[ROOT]]/test$
 ```
+
+---
 
 ## btreedeletenode
 
