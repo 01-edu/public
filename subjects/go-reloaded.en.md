@@ -13,7 +13,9 @@ We strongly advise you to resist the temptation of looking at your old repositor
 
 To really learn programming, you must practice programming, so copy and pasting some old code will not help the learning process.
 
-One more detail. This time the project will be corrected by auditors. The auditors will be others students. 
+One more detail. This time the project will be corrected by auditors. The auditors will be others students and you will be an auditor as well.
+
+We advise you to create your own tests for yourself and for when you will correct your students. 
 
 ## atoi
 
