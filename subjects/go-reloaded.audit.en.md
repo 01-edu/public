@@ -1,47 +1,47 @@
-## Atoi
+#### Atoi
 
-### Try with the argument: ""
-#### does the function Atoi returns 0?(1)
-### Try with the argument: "-"
-#### does the function Atoi returns 0?(1)
-### Try with the argument: "+"
-#### does the function Atoi returns 0?(1)
-### Try with the argument: "0"
-#### does the function Atoi returns 0?(1)
-### Try with the argument: "+0"
-#### does the function Atoi returns 0?(1)
-### Try with the argument: "-Invalid123"
-#### does the function Atoi returns 0?(1)
-### Try with the argument: "--123"
-#### does the function Atoi returns 0?(1)
-### Try with the argument: "-+123"
-#### does the function Atoi returns 0?(1)
-### Try with the argument: "++123"
-#### does the function Atoi returns 0?(1)
-### Try with the argument: "123-"
-#### does the function Atoi returns 0?(1)
-### Try with the argument: "123+"
-#### does the function Atoi returns 0?(1)
-### Try with the argument: "123."
-#### does the function Atoi returns 0?(1)
-### Try with the argument: "123.0"
-#### does the function Atoi returns 0?(1)
-### Try with the argument: "123a45"
-#### does the function Atoi returns 0?(1)
-### Try with the argument: "1"
-#### does the function Atoi returns 1?(1)
-### Try with the argument: "-3"
-#### does the function Atoi returns -3?(1)
-### Try with the argument: "8292"
-#### does the function Atoi returns 8292?(1)
-### Try with the argument: "-2321"
-#### does the function Atoi returns -2321?(1)
-### Try with the argument: "3478234203"
-#### does the function Atoi returns 3478234203?(1)
-### Try with the argument: "9223372036854775807"
-#### does the function Atoi returns 9223372036854775807(1)
-### Try with the argument: "-9223372036854775808"
-#### does the function Atoi returns -9223372036854775808(1)
+##### Try with the argument: ""
+###### does the function Atoi returns 0?(1)
+##### Try with the argument: "-"
+###### does the function Atoi returns 0?(1)
+##### Try with the argument: "+"
+###### does the function Atoi returns 0?(1)
+##### Try with the argument: "0"
+###### does the function Atoi returns 0?(1)
+##### Try with the argument: "+0"
+###### does the function Atoi returns 0?(1)
+##### Try with the argument: "-Invalid123"
+###### does the function Atoi returns 0?(1)
+##### Try with the argument: "--123"
+###### does the function Atoi returns 0?(1)
+##### Try with the argument: "-+123"
+###### does the function Atoi returns 0?(1)
+##### Try with the argument: "++123"
+###### does the function Atoi returns 0?(1)
+##### Try with the argument: "123-"
+###### does the function Atoi returns 0?(1)
+##### Try with the argument: "123+"
+###### does the function Atoi returns 0?(1)
+##### Try with the argument: "123."
+###### does the function Atoi returns 0?(1)
+##### Try with the argument: "123.0"
+###### does the function Atoi returns 0?(1)
+##### Try with the argument: "123a45"
+###### does the function Atoi returns 0?(1)
+##### Try with the argument: "1"
+###### does the function Atoi returns 1?(1)
+##### Try with the argument: "-3"
+###### does the function Atoi returns -3?(1)
+##### Try with the argument: "8292"
+###### does the function Atoi returns 8292?(1)
+##### Try with the argument: "-2321"
+###### does the function Atoi returns -2321?(1)
+##### Try with the argument: "3478234203"
+###### does the function Atoi returns 3478234203?(1)
+##### Try with the argument: "9223372036854775807"
+###### does the function Atoi returns 9223372036854775807(1)
+##### Try with the argument: "-9223372036854775808"
+###### does the function Atoi returns -9223372036854775808(1)
 
 ## RecursivePower
 
