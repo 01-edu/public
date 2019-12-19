@@ -2,11 +2,11 @@
 
 ### Objectives
 
-You must follow the same [instructions](https://github.com/01-edu/public/ascii-art.en.md) as the first subject but with colors.
+You must follow the same [instructions](https://github.com/01-edu/public/ascii-art.en.md) as in the first subject but with colors.
 
-- The output should manipulate colors using **flags**, `-c=<color>`, in which `-c` is the flag and `<color>` is the color of choice.
-- You should be able to specify which letter you want to be colored (use your imagination for this one).
-- If the letter isn't specified, the whole phrase should be colored.
+- The output should manipulate colors using the **flag** `--color=<color>`, in which `--color` is the flag and `<color>` is the color of choice.
+- You should be able to specify a single or a set of letters you want to be colored (use your imagination for this one).
+- If the letter isn't specified, the whole `string` should be colored.
 
 This project will help you learn about :
 
@@ -23,4 +23,3 @@ This project will help you learn about :
 - Your project must be written in **Go**.
 - The code must respect the [**good practices**](https://github.com/01-edu/public/good-practices.en.md).
 - It is recommended that the code should present a **test file**.
-- You may use the same `banner` file.
