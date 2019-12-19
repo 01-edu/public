@@ -25,7 +25,7 @@ This project will help you learn about :
 
 ### Banner Format
 
-- Each character as an height of 8 lines.
+- Each character has an height of 8 lines.
 - Characters are separate by a new line `\n`.
 - Here is an example (one dot represents one space) :
 
