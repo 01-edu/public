@@ -27,7 +27,7 @@ This project will help you learn about :
 
 - Each character has an height of 8 lines.
 - Characters are separate by a new line `\n`.
-- Here is an example (one dot represents one space) :
+- Here is an example of ' ', '!' and '"'(one dot represents one space) :
 
 ```console
 
