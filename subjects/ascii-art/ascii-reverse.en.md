@@ -5,7 +5,7 @@
 Ascii-reverse consists on reversing the process, converting the graphic representation into a text.
 
 - You will have to create a text file containing a graphic representation of a random `string`.
-- The argument will be a **flags**, `--reverse=<fileName>`, in which `--reverse` is the flag and `<fileName>` is the file name.
+- The argument will be a **flag**, `--reverse=<fileName>`, in which `--reverse` is the flag and `<fileName>` is the file name.
 - The program must print this `string` in **normal text**.
 
 This project will help you learn about :
