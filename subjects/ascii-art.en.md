@@ -21,30 +21,68 @@ This project will help you learn about :
 - Your project must be written in **Go**.
 - The code must respect the [**good practices**](https://github.com/01-edu/public/good-practices.en.md).
 - It is recommended that the code should present a **test file**.
-- It will be given a `banner` file with a specific graphical template representation of ASCII.
+- It will be given some [**banner**](https://github.com/01-edu/public/ascii-banners) files with a specific graphical template representation of ASCII. The files are formatted in a way that it is not necessary to change them.
+
+### Banner Format
+
+- Each character as an height of 8 lines.
+- Characters are separate by a new line `\n`.
+- Here is an example (one dot represents one space) :
+
+```console
+
+......
+......
+......
+......
+......
+......
+......
+......
+
+._..
+|.|.
+|.|.
+|.|.
+|_|.
+(_).
+....
+....
+
+._._..
+(.|.).
+.V.V..
+......
+......
+......
+......
+......
+
+etc
+```
 
 ### Usage
 
 ```console
 student@ubuntu:~/ascii-art$ go build
 student@ubuntu:~/ascii-art$ ./ascii-art "hello"
-  _                _    _           
- | |              | |  | |          
- | |__      ___   | |  | |    ___   
- |  _ \    / _ \  | |  | |   / _ \  
- | | | |  |  __/  | |  | |  | (_) | 
- |_| |_|   \___|  |_|  |_|   \___/  
-                                    
-                                    
+  _              _   _          
+ | |            | | | |         
+ | |__     ___  | | | |   ___   
+ |  _ \   / _ \ | | | |  / _ \  
+ | | | | |  __/ | | | | | (_) | 
+ |_| |_|  \___| |_| |_|  \___/  
+                                
+                                
 student@ubuntu:~/ascii-art$ ./ascii-art "HeLlO"
-  _    _           _        _     ____   
- | |  | |         | |      | |   / __ \  
- | |__| |   ___   | |      | |  | |  | | 
- |  __  |  / _ \  | |      | |  | |  | | 
- | |  | | |  __/  | |____  | |  | |__| | 
- |_|  |_|  \___|  |______| |_|   \____/  
-                                         
-                                         
+  _    _          _        _    ____   
+ | |  | |        | |      | |  / __ \  
+ | |__| |   ___  | |      | | | |  | | 
+ |  __  |  / _ \ | |      | | | |  | | 
+ | |  | | |  __/ | |____  | | | |__| | 
+ |_|  |_|  \___| |______| |_|  \____/  
+                                       
+                                       
 student@ubuntu:~/ascii-art$ ./ascii-art "Hello There"
   _    _           _    _                 _______   _                              
  | |  | |         | |  | |               |__   __| | |                             

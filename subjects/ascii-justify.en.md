@@ -1,12 +1,13 @@
-## ascii-art-align
+## ascii-art-justify
 
 ### Objectives
 
-You must follow the same [instructions](https://github.com/01-edu/public/ascii-art.en.md) as the first subject but the representation should be formatted using a flag `--align=<type>`, in which `type` can be :
+You must follow the same [instructions](https://github.com/01-edu/public/ascii-art.en.md) as in the first subject but the representation should be formatted using a **flag** `--align=<type>`, in which `type` can be :
 
 - center
 - left
 - right
+- justify
 
 This project will help you learn about :
 
@@ -22,7 +23,6 @@ This project will help you learn about :
 - Your project must be written in **Go**.
 - The code must respect the [**good practices**](https://github.com/01-edu/public/good-practices.en.md).
 - It is recommended that the code should present a **test file**.
-- You should build your one files with the templates you desire.
 
 ### Usage
 
@@ -47,13 +47,22 @@ This project will help you learn about :
 |                                                                                                                           |
 |                                                                                                                           |
 |student@ubuntu:~/ascii-art$ ./ascii-art "hello" shadow --align=right                                                       |
-|                                                                          oooo                    oooo   oooo              |
-|                                                                          `888                    `888   `888              |
-|                                                                           888 .oo.     .ooooo.    888    888    .ooooo.   |
-|                                                                           888P"Y88b   d88' `88b   888    888   d88' `88b  |
-|                                                                           888   888   888ooo888   888    888   888   888  |
-|                                                                           888   888   888    .o   888    888   888   888  |
-|                                                                          o888o o888o  `Y8bod8P'  o888o  o888o  `Y8bod8P'  |
 |                                                                                                                           |
+|                                                                                          _|                _| _|          |
+|                                                                                          _|_|_|     _|_|   _| _|   _|_|   |
+|                                                                                          _|    _| _|_|_|_| _| _| _|    _| |
+|                                                                                          _|    _| _|       _| _| _|    _| |
+|                                                                                          _|    _|   _|_|_| _| _|   _|_|   |
+|                                                                                                                           |
+|                                                                                                                           |
+|student@ubuntu:~/ascii-art$ ./ascii-art "hello" shadow --align=justify                                                     |
+|                                                                                                                           |
+|_|                                                                                                                         |
+|_|_|_|     _|_|   _|      _|      _|                  _|_|_| _|  _|_|   _|_|                    _|    _|   _|_|   _|    _| |
+|_|    _| _|    _| _|      _|      _|                _|    _| _|_|     _|_|_|_|                  _|    _| _|    _| _|    _| |
+|_|    _| _|    _|   _|  _|  _|  _|                  _|    _| _|       _|                        _|    _| _|    _| _|    _| |
+|_|    _|   _|_|       _|      _|                      _|_|_| _|         _|_|_|                    _|_|_|   _|_|     _|_|_| |
+|                                                                                                      _|                   |
+|                                                                                                  _|_|                     |
 |student@ubuntu:~/ascii-art$                                                                                                |
 ```

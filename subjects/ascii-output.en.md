@@ -2,10 +2,9 @@
 
 ### Objectives
 
-Ascii-art-output consists on receiving two strings. The first argument will be converted into a graphic representation of ASCII and written into a file named by using the second argument.
+- You must follow the same [instructions](https://github.com/01-edu/public/ascii-art.en.md) as in the first subject but writing the result into a file.
 
-- The second argument will be a **flags**, `--output=<fileName.txt>`, in which `--output` is the flag and `<fileName.txt>` is the file name.
-- In case the second argument is not present it should print the graphic representation.
+- The file must be named by using the flag `--output=<fileName.txt>`, in which `--output` is the flag and `<fileName.txt>` is the file name.
 
 This project will help you learn about :
 
@@ -21,7 +20,6 @@ This project will help you learn about :
 - Your project must be written in **Go**.
 - The code must respect the [**good practices**](https://github.com/01-edu/public/good-practices.en.md).
 - It is recommended that the code should present a **test file**.
-- You may use the same `banner` file.
 
 ### Usage
 
@@ -29,23 +27,23 @@ This project will help you learn about :
 student@ubuntu:~/ascii-art$ go build
 student@ubuntu:~/ascii-art$ ./ascii-art "hello" standard --output=banner.txt
 student@ubuntu:~/ascii-art$ cat banner.txt
-  _                _    _           
- | |              | |  | |          
- | |__      ___   | |  | |    ___   
- |  _ \    / _ \  | |  | |   / _ \  
- | | | |  |  __/  | |  | |  | (_) | 
- |_| |_|   \___|  |_|  |_|   \___/  
-                                    
-                                    
-student@ubuntu:~/ascii-art$ ./ascii-art "Hello There" standard --output=banner.txt
+ _              _   _          
+| |            | | | |         
+| |__     ___  | | | |   ___   
+|  _ \   / _ \ | | | |  / _ \  
+| | | | |  __/ | | | | | (_) | 
+|_| |_|  \___| |_| |_|  \___/  
+                               
+                               
+student@ubuntu:~/ascii-art$ ./ascii-art "Hello There!" shadow --output=banner.txt
 student@ubuntu:~/ascii-art$ cat banner.txt
-  _    _           _    _                 _______   _                              
- | |  | |         | |  | |               |__   __| | |                             
- | |__| |   ___   | |  | |    ___           | |    | |__      ___    _ __     ___  
- |  __  |  / _ \  | |  | |   / _ \          | |    |  _ \    / _ \  | '__|   / _ \ 
- | |  | | |  __/  | |  | |  | (_) |         | |    | | | |  |  __/  | |     |  __/ 
- |_|  |_|  \___|  |_|  |_|   \___/          |_|    |_| |_|   \___|  |_|      \___| 
-                                                                                   
-                                                                                   
+                                                                                         
+_|    _|          _| _|                _|_|_|_|_| _|                                  _| 
+_|    _|   _|_|   _| _|   _|_|             _|     _|_|_|     _|_|   _|  _|_|   _|_|   _| 
+_|_|_|_| _|_|_|_| _| _| _|    _|           _|     _|    _| _|_|_|_| _|_|     _|_|_|_| _| 
+_|    _| _|       _| _| _|    _|           _|     _|    _| _|       _|       _|          
+_|    _|   _|_|_| _| _|   _|_|             _|     _|    _|   _|_|_| _|         _|_|_| _| 
+                                                                                         
+                                                                                         
 student@ubuntu:~/ascii-art$
 ```

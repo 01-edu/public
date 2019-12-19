@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [instructions](https://github.com/01-edu/public/ascii-art.en.md) as the first subject but the second argument must be the name of the template.
+You must follow the same [instructions](https://github.com/01-edu/public/ascii-art.en.md) as in the first subject but the second argument must be the name of the template.
 
 This project will help you learn about :
 
@@ -18,6 +18,7 @@ This project will help you learn about :
 - Your project must be written in **Go**.
 - The code must respect the [**good practices**](https://github.com/01-edu/public/good-practices.en.md).
 - It is recommended that the code should present a **test file**.
+- You can see all about the **banners** [here](https://github.com/01-edu/public/ascii-art.en.md).
 
 ### Usage
 
@@ -32,15 +33,23 @@ student@ubuntu:~/ascii-art$ ./ascii-art "hello" standard
  |_| |_|   \___|  |_|  |_|   \___/  
                                     
                                     
-student@ubuntu:~/ascii-art$ ./ascii-art "hello" shadow
- oooo                    oooo   oooo             
- `888                    `888   `888             
-  888 .oo.     .ooooo.    888    888    .ooooo.  
-  888P"Y88b   d88' `88b   888    888   d88' `88b 
-  888   888   888ooo888   888    888   888   888 
-  888   888   888    .o   888    888   888   888 
- o888o o888o  `Y8bod8P'  o888o  o888o  `Y8bod8P' 
-                                                 
-student@ubuntu:~/ascii-art$
+student@ubuntu:~/ascii-art$ ./ascii-art "Hello There" shadow
+                                                                                         
+_|    _|          _| _|                _|_|_|_|_| _|                                  _| 
+_|    _|   _|_|   _| _|   _|_|             _|     _|_|_|     _|_|   _|  _|_|   _|_|   _| 
+_|_|_|_| _|_|_|_| _| _| _|    _|           _|     _|    _| _|_|_|_| _|_|     _|_|_|_| _| 
+_|    _| _|       _| _| _|    _|           _|     _|    _| _|       _|       _|          
+_|    _|   _|_|_| _| _|   _|_|             _|     _|    _|   _|_|_| _|         _|_|_| _| 
+                                                                                         
+                                                                                         
+student@ubuntu:~/ascii-art$ ./ascii-art "Hello There" thinkertoy
+                                                
+o  o     o o           o-O-o o                  
+|  |     | |             |   |                o 
+O--O o-o | | o-o         |   O--o o-o o-o o-o | 
+|  | |-' | | | |         |   |  | |-' |   |-' o 
+o  o o-o o o o-o         o   o  o o-o o   o-o   
+                                              O 
+                                                
 student@ubuntu:~/ascii-art$
 ```
