@@ -1,8 +1,8 @@
-## ascii-art-reverse
+## ascii-reverse
 
 ### Objectives
 
-Ascii-art-reverse consists on reversing the process, converting the graphic representation into a text.
+Ascii-reverse consists on reversing the process, converting the graphic representation into a text.
 
 - You will have to create a text file with a graphic representation of a random `string`.
 - The argument will be a **flags**, `--reverse=<fileName>`, in which `--reverse` is the flag and `<fileName>` is the file name.
