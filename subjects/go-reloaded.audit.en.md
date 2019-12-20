@@ -11,7 +11,7 @@
 ##### Try with the argument: "+0"
 ###### Does the function Atoi returns 0?•1
 ##### Try with the argument: "-Invalid123"
-###### Does the function Atoi returns 0?•7389
+###### *Does the function Atoi returns 0?•7389
 ##### Try with the argument: "--123"
 ###### Does the function Atoi returns 0?•1
 ##### Try with the argument: "1"
