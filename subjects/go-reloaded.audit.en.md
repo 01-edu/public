@@ -1,47 +1,29 @@
 #### Atoi
 
 ##### Try with the argument: ""
-###### Does the function Atoi returns 0?(1)
+###### Does the function Atoi returns 0?•1
 ##### Try with the argument: "-"
-###### Does the function Atoi returns 0?(1)
+###### Does the function Atoi returns 0?•1
 ##### Try with the argument: "+"
-###### Does the function Atoi returns 0?(1)
+###### Does the function Atoi returns 0?•1
 ##### Try with the argument: "0"
-###### Does the function Atoi returns 0?(1)
+###### Does the function Atoi returns 0?•1
 ##### Try with the argument: "+0"
-###### Does the function Atoi returns 0?(1)
+###### Does the function Atoi returns 0?•1
 ##### Try with the argument: "-Invalid123"
-###### Does the function Atoi returns 0?(1)
+###### Does the function Atoi returns 0?•1
 ##### Try with the argument: "--123"
-###### Does the function Atoi returns 0?(1)
-##### Try with the argument: "-+123"
-###### Does the function Atoi returns 0?(1)
-##### Try with the argument: "++123"
-###### Does the function Atoi returns 0?(1)
-##### Try with the argument: "123-"
-###### Does the function Atoi returns 0?(1)
-##### Try with the argument: "123+"
-###### Does the function Atoi returns 0?(1)
-##### Try with the argument: "123."
-###### Does the function Atoi returns 0?(1)
-##### Try with the argument: "123.0"
-###### Does the function Atoi returns 0?(1)
-##### Try with the argument: "123a45"
-###### Does the function Atoi returns 0?(1)
+###### Does the function Atoi returns 0?•1
 ##### Try with the argument: "1"
-###### Does the function Atoi returns 1?(1)
+###### Does the function Atoi returns 1?•1
 ##### Try with the argument: "-3"
-###### Does the function Atoi returns -3?(1)
+###### Does the function Atoi returns -3?•1
 ##### Try with the argument: "8292"
-###### Does the function Atoi returns 8292?(1)
-##### Try with the argument: "-2321"
-###### Does the function Atoi returns -2321?(1)
-##### Try with the argument: "3478234203"
-###### Does the function Atoi returns 3478234203?(1)
+###### Does the function Atoi returns 8292?•1
 ##### Try with the argument: "9223372036854775807"
-###### Does the function Atoi returns 9223372036854775807(1)
+###### Does the function Atoi returns 9223372036854775807•1
 ##### Try with the argument: "-9223372036854775808"
-###### Does the function Atoi returns -9223372036854775808(1)
+###### Does the function Atoi returns -9223372036854775808•1
 
 ## RecursivePower
 
@@ -51,46 +33,10 @@
 #### Does the function returns 0?(1)
 ### Try with the arguments: nb = 4 and power = 8
 #### Does the function returns 65536?(1)
-### Try with the arguments: nb = -8 and power = -10
-#### Does the function returns 0?(1)
-### Try with the arguments: nb = 8 and power = 2
-#### Does the function returns 64?(1)
-### Try with the arguments: nb = -6 and power = -4
-#### Does the function returns 0?(1)
-### Try with the arguments: nb = 0 and power = -4
-#### Does the function returns 0?(1)
-### Try with the arguments: nb = -1 and power = -6
-#### Does the function returns 0?(1)
-### Try with the arguments: nb = -8 and power = -7
-#### Does the function returns 0?(1)
-### Try with the arguments: nb = -5 and power = -9
-#### Does the function returns 0?(1)
-### Try with the arguments: nb = -4 and power = -9
-#### Does the function returns 0?(1)
-### Try with the arguments: nb = 7 and power = 10
-#### Does the function returns 282475249?(1)
-### Try with the arguments: nb = 0 and power = -1
-#### Does the function returns 0?(1)
-### Try with the arguments: nb = -5 and power = -5
-#### Does the function returns 0?(1)
-### Try with the arguments: nb = -1 and power = -7
-#### Does the function returns 0?(1)
 ### Try with the arguments: nb = 1 and power = 3
 #### Does the function returns 1?(1)
 ### Try with the arguments: nb = -1 and power = 1
 #### Does the function returns -1?(1)
-### Try with the arguments: nb = 4 and power = -6
-#### Does the function returns 0?(1)
-### Try with the arguments: nb = -2 and power = -8
-#### Does the function returns 0?(1)
-### Try with the arguments: nb = -7 and power = 2
-#### Does the function returns 49?(1)
-### Try with the arguments: nb = 8 and power = -9
-#### Does the function returns 0?(1)
-### Try with the arguments: nb = 3 and power = 6
-#### Does the function returns 729?(1)
-### Try with the arguments: nb = -4 and power = -10
-#### Does the function returns 0?(1)
 ### Try with the arguments: nb = -6 and power = 5
 #### Does the function returns -7776?(1)
 ### Try with the arguments: nb = 0 and power = 9
