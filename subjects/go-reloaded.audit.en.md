@@ -1,29 +1,29 @@
 #### Atoi
 
 ##### Try with the argument: ""
-###### Does the function Atoi returns 0?•1
+###### 0 is the ouput?•1
 ##### Try with the argument: "-"
-###### Does the function Atoi returns 0?•1
+###### `0` is the returned value of the function?•1
 ##### Try with the argument: "+"
-###### Does the function Atoi returns 0?•1
+###### `0` is the returned value of the function?•1
 ##### Try with the argument: "0"
-###### Does the function Atoi returns 0?•1
+###### `0` is the returned value of the function?•1
 ##### Try with the argument: "+0"
-###### Does the function Atoi returns 0?•1
+###### `0` is the returned value of the function?•1
 ##### Try with the argument: "-Invalid123"
-###### *Does the function Atoi returns 0?•7389
+###### *`0` is the returned value of the function?•7389
 ##### Try with the argument: "--123"
-###### Does the function Atoi returns 0?•1
+###### `0` is the returned value of the function?•1
 ##### Try with the argument: "1"
-###### Does the function Atoi returns 1?•1
+###### `1` is the returned value of the function?•1
 ##### Try with the argument: "-3"
-###### Does the function Atoi returns -3?•1
+###### `-3` is the returned value of the function?•1
 ##### Try with the argument: "8292"
-###### Does the function Atoi returns 8292?•1
+###### `8292` is the returned value of the function?•1
 ##### Try with the argument: "9223372036854775807"
-###### Does the function Atoi returns `9223372036854775807`?•1
+###### `9223372036854775807` is the returned value of the function?•1
 ##### Try with the argument: "-9223372036854775808"
-###### Does the function Atoi returns `-9223372036854775808`?•1
+###### `-9223372036854775808` is the returned value of the function?•1
 
 #### RecursivePower
 
