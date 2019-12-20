@@ -21,9 +21,9 @@
 ##### Try with the argument: "8292"
 ###### Does the function Atoi returns 8292?•1
 ##### Try with the argument: "9223372036854775807"
-###### Does the function Atoi returns 9223372036854775807•1
+###### Does the function Atoi returns `9223372036854775807`?•1
 ##### Try with the argument: "-9223372036854775808"
-###### Does the function Atoi returns -9223372036854775808•1
+###### Does the function Atoi returns `-9223372036854775808`?•1
 
 #### RecursivePower
 
