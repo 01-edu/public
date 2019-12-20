@@ -1,29 +1,41 @@
 #### Atoi
 
 ##### Try with the argument: ""
-###### `0` Is the ouput?•1
+`0`
+###### Is it this the value returned by the function?•1
 ##### Try with the argument: "-"
-###### `0` Is the returned value of the function?•1
+`0`
+###### Is it this the value returned by the function?•1
 ##### Try with the argument: "+"
-###### `0` Is the returned value of the function?•1
+`0`
+###### Is it this the value returned by the function?•1
 ##### Try with the argument: "0"
-###### `0` Is the returned value of the function?•1
+`0`
+###### Is it this the value returned by the function?•1
 ##### Try with the argument: "+0"
-###### `0` Is the returned value of the function?•1
+`0`
+###### Does the function returns the value above?•1
 ##### Try with the argument: "-Invalid123"
-###### *`0` Is the returned value of the function?•7389
+`0`
+###### *Is the returned value of the function?•7389
 ##### Try with the argument: "--123"
-###### `0` Is the returned value of the function?•1
+`0`
+###### Is it this the value returned by the function?•1
 ##### Try with the argument: "1"
-###### `1` Is the returned value of the function?•1
+###### Does the function returns the following value?•1
+`1`
 ##### Try with the argument: "-3"
-###### `-3` Is the returned value of the function?•1
+###### Does the function returns the following value?•1
+`-3`
 ##### Try with the argument: "8292"
-###### `8292` Is the returned value of the function?•1
+###### Does the function returns the following value?•1
+`8292`
 ##### Try with the argument: "9223372036854775807"
-###### `9223372036854775807` Is the returned value of the function?•1
+###### Does the function returns the following value?•1
+`9223372036854775807`
 ##### Try with the argument: "-9223372036854775808"
-###### `-9223372036854775808` Is the returned value of the function?•1
+###### Does the function returns the following value?•1
+`-9223372036854775808`
 
 #### RecursivePower
 
