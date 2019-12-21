@@ -20,7 +20,7 @@
 ###### *Does the function returns the value above?•432
 ##### Try with the argument: `"--123"`
 `0`
-###### Does the function returns the value above?•1
+###### Does the function returns the value above?
 ##### Try with the argument: `"1"`
 `1`
 ###### Does the function returns the value above?•1
