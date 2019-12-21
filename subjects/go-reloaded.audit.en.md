@@ -1,41 +1,41 @@
 #### Atoi
 
-##### Try with the argument: ""
-`0`
-###### Is it this the value returned by the function?•1
-##### Try with the argument: "-"
-`0`
-###### Is it this the value returned by the function?•1
-##### Try with the argument: "+"
-`0`
-###### Is it this the value returned by the function?•1
-##### Try with the argument: "0"
-`0`
-###### Is it this the value returned by the function?•1
-##### Try with the argument: "+0"
+##### Try with the argument: `""`
 `0`
 ###### Does the function returns the value above?•1
-##### Try with the argument: "-Invalid123"
-`0`
-###### *Is the returned value of the function?•7389
-##### Try with the argument: "--123"
+##### Try with the argument: `"-"`
 `0`
 ###### Is it this the value returned by the function?•1
-##### Try with the argument: "1"
-###### Does the function returns the following value?•1
+##### Try with the argument: `"+"`
+`0`
+###### Does the function returns the value above?•1
+##### Try with the argument: `"0"`
+`0`
+###### Does the function returns the value above?•1
+##### Try with the argument: `"+0"`
+`0`
+###### Does the function returns the value above?•1
+##### Try with the argument: `"-Invalid123"`
+`0`
+###### *Does the function returns the value above?•432
+##### Try with the argument: `"--123"`
+`0`
+###### Does the function returns the value above?•1
+##### Try with the argument: `"1"`
 `1`
-##### Try with the argument: "-3"
-###### Does the function returns the following value?•1
+###### Does the function returns the value above?•1
+##### Try with the argument: `"-3"`
 `-3`
-##### Try with the argument: "8292"
-###### Does the function returns the following value?•1
+###### Does the function returns the value above?•1
+##### Try with the argument: `"8292"`
 `8292`
-##### Try with the argument: "9223372036854775807"
-###### Does the function returns the following value?•1
+###### Does the function returns the value above?•1
+##### Try with the argument: `"9223372036854775807"`
 `9223372036854775807`
-##### Try with the argument: "-9223372036854775808"
-###### Does the function returns the following value?•1
+###### Does the function returns the value above?•1
+##### Try with the argument: `"-9223372036854775808"`
 `-9223372036854775808`
+###### Does the function returns the value above?•1
 
 #### RecursivePower
 
