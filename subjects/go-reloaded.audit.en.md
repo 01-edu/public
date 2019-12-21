@@ -554,8 +554,7 @@ ry with the arguments: `l = fZfX1 r  G9hG->  VRcbreYo4cM -> <nil> and and data_r
 
 #### btreetransplant
 
-##### Try with the arguments: `root = `
-```
+##### Try with the arguments: ```root =
 01
 └── 07
     ├── 12
@@ -584,8 +583,7 @@ repla =
             └── 03
 ```
 ###### Does the function returns the value above?
-##### Try with the arguments: `root = `
-```
+##### Try with the arguments: ```root =
 33
 ├── 5
 │   └── 52
@@ -612,8 +610,7 @@ repla =
             └── 15
 ```
 ###### Does the function returns the value above?
-##### Try with the arguments: `root = `
-```
+##### Try with the arguments: ```root =
 03
 └── 39
     ├── 99
@@ -642,8 +639,7 @@ repla =
                 └── 15
 ```
 ###### Does the function returns the value above?
-##### Try with the arguments: `root = `
-```
+##### Try with the arguments: ```root =
 03
 ├── 03
 │   └── 94
@@ -671,7 +667,7 @@ repla =
 └── 01
 ```
 ###### Does the function returns the value above?
-##### Try with the arguments: `root = `
+##### Try with the arguments: ```root =
 02
 ├── 03
 │   └── 92
@@ -686,8 +682,9 @@ repla =
 └── 33
     └── 12
         └── 15
-
+```
 ###### Does the function returns(1)
+```
 02
 ├── 03
 │   └── 55
@@ -696,7 +693,7 @@ repla =
 │           └── 12
 │               └── 15
 └── 01
-?
+```
 ##### Try with the arguments: `root = `
 00
 └── 02
