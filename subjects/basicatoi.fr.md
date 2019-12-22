@@ -4,7 +4,7 @@
 
 -   Écrire une fonction qui reproduit le comportement de la fonction atoi en Go. Atoi transforme un nombre représenté en `string` (chaîne de caractères) en `int` (entier).
 
--   Atoi retourne `0` si la `string` n'est pas considéré un nombre valide. Pour cet exercice **seulement des** `string` **valides** seront testé. Elles ne contiendront que un ou plusieurs chiffres comme charact.
+-   Atoi retourne `0` si la `string` n'est pas considéré un nombre valide. Pour cet exercice **seulement des** `string` **valides** seront testées. Elles ne contiendront que un ou plusieurs chiffres comme charact.
 
 -   Pour cet exercice la gestion des signes `+` ou `-` ne doit pas être prise en compte.
 
