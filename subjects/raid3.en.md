@@ -14,7 +14,7 @@ Create a program `raid3` that takes a `string` as an argument and displays the n
 
 ### Usage
 
-- If it's `radi1a`
+- If it's `raid1a`
 
 ```console
 student@ubuntu:~/[[ROOT]]/raid3$ ls -l
