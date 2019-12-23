@@ -38,7 +38,7 @@ func IsPositive_node(node *NodeL) bool {
 func IsNegative_node(node *NodeL) bool {
 	switch node.Data.(type) {
 	case int, float32, float64, byte:
-		return node.Data.(int) > 0
+		return node.Data.(int) < 0
 	case string, rune:
 		return false
 	}
