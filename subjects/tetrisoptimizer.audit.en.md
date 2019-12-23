@@ -45,8 +45,8 @@
 ###### *Does the code have a consistent naming scheme (camelCase, under_scores)?
 ###### *Does the code obey the principles "DRY" (Don't Repeat Yourself) or "DIE" (Duplication is Evil)?
 ###### *Does the code obey the principal "KISS" (Keep It Simple, Stupid)?
-###### *Does the code obey the principle YAGNI (You Aren’t Gonna Need It)?
-###### *Does the code obey the principle SOC (Separation of Concerns)?
+###### *Does the code obey the principle "YAGNI" (You Aren’t Gonna Need It)?
+###### *Does the code obey the principle "SOC" (Separation of Concerns)?
 ###### *Does the code avoid deep nesting (if in ifs, forest of ifs)?
 ###### *Does the code present a good file and folder organization?
 ###### *Does it present a good separation of Code and Data?
