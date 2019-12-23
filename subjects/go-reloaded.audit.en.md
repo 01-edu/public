@@ -316,32 +316,50 @@
 ##### Try with the arguments array = `[SqIY alP ap s Tk8pzkNob T E  2VL7j RwSiBO CFYtXOF7 Zom7 He K BIPFjx66 1aSM KmGUikVO P CeC2Jzf24zS RYt8vbzmwRJVO lJKAxZ20mN Nq Lgec4HOsQ8ZOl  6ZExl3cG4f09 og7ny  HmWg K u H7pHDcClDLo] and f = strings.Compare`
 `[ 2VL7j RwSiBO  6ZExl3cG4f09 1aSM KmGUikVO CFYtXOF7 Zom7 He K BIPFjx66 Lgec4HOsQ8ZOl P CeC2Jzf24zS RYt8vbzmwRJVO SqIY alP ap s Tk8pzkNob T E lJKAxZ20mN Nq og7ny  HmWg K u H7pHDcClDLo]`
 ###### Does the function returns the value above?
-##### Try with the arguments array = `[8UW WGOHl8IE  M RZg2Q5h56Tw yUL sCa 4 mcc TA buEFbpWwNL  N5p8tO Z w9H P6 WE6fu kO4O  e7 RaOu8rt4o   B 71u bY H2 KM5 kQlRASJ    J mlBG25F 1j g5EOm5is PUOv yV q91Utk2wZu H KFCSi fYe21] and f = strings.Compare
+##### Try with the arguments array =
+```
+[8UW WGOHl8IE  M RZg2Q5h56Tw yUL sCa 4 mcc TA buEFbpWwNL  N5p8tO Z w9H P6 WE6fu kO4O  e7 RaOu8rt4o   B 71u bY H2 KM5 kQlRASJ    J mlBG25F 1j g5EOm5is PUOv yV q91Utk2wZu H KFCSi fYe21] and f = strings.Compare
+```
 `[  B 71u bY H2  J mlBG25F 1j  N5p8tO Z w9H  e7 RaOu8rt4o 8UW WGOHl8IE  H KFCSi fYe21 KM5 kQlRASJ   M RZg2Q5h56Tw P6 WE6fu kO4O TA buEFbpWwNL g5EOm5is PUOv yUL sCa 4 mcc yV q91Utk2wZu]`
 ###### Does the function returns the value above?
-##### Try with the arguments array = `[ 4  WcVVBJc K  HQ O0 Ncmg z 3WLJcrbLB7LoY 4ox8TWUD  inv 5Be2id5AY G a 9pkpByJ Ebbia MkOITgWoS SFv RR bTVi iO  3 X3RvpTTOo  b1 ci97     r W  lVce8L XWgMsw q3 jPYp7g av  t9J4 NP mJoJM] and f = func(a, b string) int {
+##### Try with the arguments array =
+```
+[ 4  WcVVBJc K  HQ O0 Ncmg z 3WLJcrbLB7LoY 4ox8TWUD  inv 5Be2id5AY G a 9pkpByJ Ebbia MkOITgWoS SFv RR bTVi iO  3 X3RvpTTOo  b1 ci97     r W  lVce8L XWgMsw q3 jPYp7g av  t9J4 NP mJoJM] and f = func(a, b string) int {
 		 return strings.Compare(b, a)
-	}`
+	}
+```
 `[t9J4 NP mJoJM q3 jPYp7g av  lVce8L XWgMsw ci97     r W  X3RvpTTOo  b1 RR bTVi iO  3 MkOITgWoS SFv 9pkpByJ Ebbia 5Be2id5AY G a 4ox8TWUD  inv 3WLJcrbLB7LoY  HQ O0 Ncmg z  4  WcVVBJc K]`
 ###### Does the function returns the value above?
-##### Try with the arguments array = [ 54kMdO5 E 1p  GA6oRAyLtQZ6  H ew V kDqyA  bE  PNnGhcR  8hN i eR 8n 6 CKLLpKer bQmH DfUL Dw1 DgDz PMorGlQ dPx3F SwMSZHN oKqiZ aL0JonQwm BZ9 g qRLGp OsCIK qIhPYu  ws Tq tQa9geTu jbO1] and f = func(a, b string) int {
+##### Try with the arguments array =
+```
+[ 54kMdO5 E 1p  GA6oRAyLtQZ6  H ew V kDqyA  bE  PNnGhcR  8hN i eR 8n 6 CKLLpKer bQmH DfUL Dw1 DgDz PMorGlQ dPx3F SwMSZHN oKqiZ aL0JonQwm BZ9 g qRLGp OsCIK qIhPYu  ws Tq tQa9geTu jbO1] and f = func(a, b string) int {
 		 return strings.Compare(b, a)
-	}`
+	}
+```
 `[tQa9geTu jbO1 qIhPYu  ws Tq g qRLGp OsCIK aL0JonQwm BZ9 SwMSZHN oKqiZ PMorGlQ dPx3F DfUL Dw1 DgDz CKLLpKer bQmH 8hN i eR 8n 6  bE  PNnGhcR   H ew V kDqyA  GA6oRAyLtQZ6  54kMdO5 E 1p]`
 ###### Does the function returns the value above?
-##### Try with the arguments array = `[ 2VL7j RwSiBO  6ZExl3cG4f09 1aSM KmGUikVO CFYtXOF7 Zom7 He K BIPFjx66 Lgec4HOsQ8ZOl P CeC2Jzf24zS RYt8vbzmwRJVO SqIY alP ap s Tk8pzkNob T E lJKAxZ20mN Nq og7ny  HmWg K u H7pHDcClDLo] and f = func(a, b string) int {
+##### Try with the arguments array =
+```
+[ 2VL7j RwSiBO  6ZExl3cG4f09 1aSM KmGUikVO CFYtXOF7 Zom7 He K BIPFjx66 Lgec4HOsQ8ZOl P CeC2Jzf24zS RYt8vbzmwRJVO SqIY alP ap s Tk8pzkNob T E lJKAxZ20mN Nq og7ny  HmWg K u H7pHDcClDLo] and f = func(a, b string) int {
 		 return strings.Compare(b, a)
-	}`
+	}
+```
 `[u H7pHDcClDLo og7ny  HmWg K lJKAxZ20mN Nq Tk8pzkNob T E SqIY alP ap s RYt8vbzmwRJVO P CeC2Jzf24zS Lgec4HOsQ8ZOl He K BIPFjx66 CFYtXOF7 Zom7 1aSM KmGUikVO  6ZExl3cG4f09  2VL7j RwSiBO]`
 ###### Does the function returns the value above?
-##### Try with the arguments array = `[  B 71u bY H2  J mlBG25F 1j  N5p8tO Z w9H  e7 RaOu8rt4o 8UW WGOHl8IE  H KFCSi fYe21 KM5 kQlRASJ   M RZg2Q5h56Tw P6 WE6fu kO4O TA buEFbpWwNL g5EOm5is PUOv yUL sCa 4 mcc yV q91Utk2wZu] and f = func(a, b string) int {
+##### Try with the arguments array =
+```
+[  B 71u bY H2  J mlBG25F 1j  N5p8tO Z w9H  e7 RaOu8rt4o 8UW WGOHl8IE  H KFCSi fYe21 KM5 kQlRASJ   M RZg2Q5h56Tw P6 WE6fu kO4O TA buEFbpWwNL g5EOm5is PUOv yUL sCa 4 mcc yV q91Utk2wZu] and f = func(a, b string) int {
 		 return strings.Compare(b, a)
-	}`
+	}
+```
 `[yV q91Utk2wZu yUL sCa 4 mcc g5EOm5is PUOv TA buEFbpWwNL P6 WE6fu kO4O M RZg2Q5h56Tw KM5 kQlRASJ   H KFCSi fYe21 8UW WGOHl8IE   e7 RaOu8rt4o  N5p8tO Z w9H  J mlBG25F 1j   B 71u bY H2]`
 ###### Does the function returns the value above?
-##### Try with the arguments array = `[  P0K4ol6K Wh  1zoXnSzLqCk   vy   eDI  D  0 0kEpG leAg3 HJ46 Ub2 SwfL KU zIBYD WLqY Q0h 8DYlXruE5 Ub1SC rq8 EFQ c6TtKUylSrbcy e2r r  C8 cJ3 obR s0lcvL MA pi8y  7QJbwLq w4 0nY TWgHUo] and f = func(a, b string) int {
+##### Try with the arguments array =
+```
+[  P0K4ol6K Wh  1zoXnSzLqCk   vy   eDI  D  0 0kEpG leAg3 HJ46 Ub2 SwfL KU zIBYD WLqY Q0h 8DYlXruE5 Ub1SC rq8 EFQ c6TtKUylSrbcy e2r r  C8 cJ3 obR s0lcvL MA pi8y  7QJbwLq w4 0nY TWgHUo] and f = func(a, b string) int {
 		 return strings.Compare(b, a)
-	}`
+	}
+```
 `[w4 0nY TWgHUo pi8y  7QJbwLq obR s0lcvL MA e2r r  C8 cJ3 c6TtKUylSrbcy Ub1SC rq8 EFQ Q0h 8DYlXruE5 KU zIBYD WLqY HJ46 Ub2 SwfL 0 0kEpG leAg3  vy   eDI  D   1zoXnSzLqCk    P0K4ol6K Wh]`
 ###### Does the function returns the value above?
 
@@ -766,7 +784,8 @@ and f = fmt.Print
 #### btreedeletenode
 
 ##### Try with the arguments:
-```root =
+```
+root =
 01
 └── 07
     ├── 12
@@ -784,7 +803,8 @@ and f = fmt.Print
         └── 03
 ###### Does the function returns the value above?
 ##### Try with the arguments:
-```root =
+```
+root =
 33
 ├── 5
 │   └── 52
@@ -802,7 +822,8 @@ and f = fmt.Print
         └── 11
 ###### Does the function returns the value above?
 ##### Try with the arguments:
-```root =
+```
+root =
 03
 └── 39
     ├── 99
@@ -839,7 +860,8 @@ root =
 └── 01
 ###### Does the function returns the value above?
 ##### Try with the arguments:
-```root =
+```
+root =
 02
 ├── 03
 │   └── 92
@@ -857,7 +879,8 @@ root =
             └── 111
 ###### Does the function returns the value above?
 ##### Try with the arguments:
-```root =
+```
+root =
 00
 └── 02
     └── 04
