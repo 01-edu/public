@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a program that takes a two integer as argument and displays the chess desk, where white cells `' '` and black cells `'#'`.
+Write a program that takes two integers as arguments and displays the chess desk, in which white cells are represented by `' '` and black cells by `'#'`.
 
--   If the number of arguments is different from 2, or if the argument is not a positive number, the program displays `Error` followed by a newline (`'\n'`).
+- If the number of arguments is different from 2, or if the argument is not a positive number, the program displays `Error` followed by a newline (`'\n'`).
 
 ### Usage
 
