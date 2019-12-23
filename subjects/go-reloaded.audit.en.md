@@ -793,14 +793,16 @@ root =
     └── 05
         └── 02
             └── 03
- and node = 02
-###### Does the function returns
+and node = 02
+```
+```
 01
 └── 07
     ├── 12
     │   └── 10
     └── 05
         └── 03
+```
 ###### Does the function returns the value above?
 ##### Try with the arguments:
 ```
@@ -812,14 +814,16 @@ root =
     ├── 31
     └── 13
         └── 11
- and node = 20
-###### Does the function returns
+and node = 20
+```
+```
 33
 ├── 5
 │   └── 52
 └── 31
     └── 13
         └── 11
+```
 ###### Does the function returns the value above?
 ##### Try with the arguments:
 ```
@@ -832,13 +836,15 @@ root =
         └── 14
             └── 11
  and node = 03
-###### Does the function returns
+```
+```
 39
 ├── 99
 │   └── 44
 └── 11
     └── 14
         └── 11
+```
 ###### Does the function returns the value above?
 ##### Try with the arguments:
 ```
@@ -850,14 +856,16 @@ root =
 │           ├── 24
 │           └── 111
 └── 01
- and node = 03
-###### Does the function returns
+and node = 03
+```
+```
 03
 ├── 94
 │   └── 19
 │       ├── 24
 │       └── 111
 └── 01
+```
 ###### Does the function returns the value above?
 ##### Try with the arguments:
 ```
@@ -870,13 +878,15 @@ root =
 │           └── 111
 └── 01
  and node = 01
-###### Does the function returns the value above?
+ ```
+```
 02
 └── 03
     └── 92
         └── 19
             ├── 22
             └── 111
+```
 ###### Does the function returns the value above?
 ##### Try with the arguments:
 ```
@@ -889,13 +899,15 @@ root =
             └── 23
                 └── 21
  and node = 00
-###### Does the function returns the value above?
+```
+```
 02
 └── 04
     └── 53
         ├── 66
         └── 23
             └── 21
+```
 ###### Does the function returns the value above?
 ##### Try with the arguments:
 ```
@@ -907,14 +919,16 @@ root =
             └── 83
                 └── 28
                     └── 24
- and node = 03
-
+and node = 03
+```
+```
 02
 └── 06
     └── 09
         └── 83
             └── 28
                 └── 24
+```
 ###### Does the function returns the value above?
 ##### Try with the arguments:
 ```
