@@ -14,6 +14,7 @@
 - [**YAGNI**](https://thefullstack.xyz/dry-yagni-kiss-tdd-soc-bdfu) (You Aren’t Gonna Need It)
 - [**SOC**](https://thefullstack.xyz/dry-yagni-kiss-tdd-soc-bdfu) (Separation of Concerns)
 - Avoid Deep Nesting
+- Handling errors
 - Limit Line Length
 - File and Folder Organization
 - Consistent Temporary Names
