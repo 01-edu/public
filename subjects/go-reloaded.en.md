@@ -671,7 +671,7 @@ Write a program that has the same behaviour as the system's `cat` command-line.
 
 -   Copy to the `quest8.txt` file the following sentence :
 
-`"Programming is a skill best acquired by pratice and example rather than from books" by Alan Turing`
+`"Programming is a skill best acquired by practice and example rather than from books" by Alan Turing`
 
 -   Copy to the `quest8T.txt` file the following sentence :
 
