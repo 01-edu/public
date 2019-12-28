@@ -285,25 +285,26 @@
 ##### Try the program without any arguments
 ###### Does the program displays a new line?
 ##### Try executing the program passing as argument: `"Hello World"`
-###### Does the program returns: `Hollo Werld`
+`Hollo Werld`
+###### Does the program returns the value above?
 ##### Try executing the program passing as arguments: `"HEllO World" "problem solved"`
-###### Does the program returns: `Hello Werld problom sOlvEd`
+`Hello Werld problom sOlvEd`
+###### Does the program returns the value above?
 ##### Try executing the program passing as argument: `"str" "shh" "psst"`
-###### Does the program returns: `str shh psst`
+`str shh psst`
+###### Does the program returns the value above?
 ##### Try executing the program passing as argument: `"happy thoughts" "good luck"`
-###### Does the program returns: `happy thoughts good luck`
-##### Try executing the program passing as argument: `"al's elEphAnt is overly underweight!"`
-###### Does the program returns: 
+`happy thoughts good luck`
+###### Does the program returns the value above?
+##### Try executing the program passing as argument: `"al's elEphAnt is overly underweight!"
+`il's elephunt es ovirly AndErweaght!`
+###### Does the program returns the value above?
 ##### Try executing the program passing as arguments: `Machines for calculating fixed numerical tasks such as the abacus`
-###### Does the program returns: Muchanas fer calculatang fixed numericil tasks such as tho ebicas
+`Muchanas fer calculatang fixed numericil tasks such as tho ebicas`
+###### Does the program returns the value above?
 ##### Try executing the program passing as arguments: `have existed since antiquity, aiding in computations such as multiplication and division`
-###### Does the program returns: hovi ixistad sonci antiqiuty, audong in camputotiins sich as miltuplicatein end divesean
-##### Try executing the program passing as arguments: `Algorithms for performing computations have existed since antiquity, even before the development of sophisticated computing equipment`
-###### Does the program returns: elgiruthms fer pirfurmong cempatitions hove oxested sence onteqeety, ivun bifare thi devilepment af sophistacutod cimpoteng oqiopmAnt
-##### Try executing the program passing as arguments: `Wilhelm Schickard designed and constructed the first working mechanical calculator in 1623. In 1673, Gottfried Leibniz demonstrated a digital mechanical calculator, called the Stepped Reckoner`
-###### Does the program returns: Welholm Scheckerd desegned and constractud tha farst wirkang mechanicil calcelator en 1623i in 1673, Gettfreid LoIbn.z dimonstratud a dagital mechinocil celcelutor, called thi Steppad Rickenir
-##### Try executing the program passing as arguments: `A crucial step was the adoption of a punched card system derived from the Jacquard loom`
-###### Does the program returns: o crocaul stap wes tho edipteen af e punchad cord systom dirovad frem tha Jecqaird luAm
+`hovi ixistad sonci antiqiuty, audong in camputotiins sich as miltuplicatein end divesean`
+###### Does the program returns the value above?
 
 #### advancedsortwordarr
 
@@ -367,12 +368,15 @@
 
 ##### Run the program without arguments:
 ##### write: `Hello`
-###### Does the program returns: `Hello`
+`Hello`
+###### Does the program returns the value above?
 ##### write: jaflsdfj
-###### Does the program returns: `jaflsdfj`
-###### write: Computer science (sometimes called computation science or computing science
-###### Does the program returns: Computer science (sometimes called computation science or computing science
-##### Run the program passing the file: quest8.txt as an argument of execution of the program (as shown in the subject)
+`jaflsdfj`
+###### Does the program returns the value above?
+##### write: `Computer science (sometimes called computation science or computing science`
+`Computer science (sometimes called computation science or computing science`
+###### Does the program returns the value above?
+##### Run the program passing the file: `quest8.txt` as an argument of execution of the program (as shown in the subject)
 ###### Does the the program displays the same output as in the readme?
 ##### Run the program with the file: quest8T.txt
 ###### Does the program displays the content of the file?
@@ -385,12 +389,16 @@
 
 #### ztail
 
-##### Run both ztail and the system command `tail` with the following arguments. Substitute <filename> for the name of a file
-##### -c 20 <filename> 
-##### <filename> -c 23
-##### -c jelrjq 15
-##### -c 11 <filename> jfdklsa 
-##### 11 -c <filename>
+##### Run both ztail and the system command `tail` with the arguments: `-c 20 <filename> `
+###### Are the outputs exactly the same?
+##### Run both ztail and the system command `tail` with the arguments: `<filename> -c 23`
+###### Are the outputs exactly the same?
+. Substitute <filename> for the name of a file
+##### Run both ztail and the system command `tail` with the arguments: `-c jelrjq 15`
+###### Are the outputs exactly the same?
+##### Run both ztail and the system command `tail` with the arguments: `-c 11 <filename> jfdklsa`
+###### Are the outputs exactly the same?
+##### Run both ztail and the system command `tail` with the arguments: `11 -c <filename>`
 ###### Are the outputs exactly the same?
 
 #### activebits
@@ -482,22 +490,22 @@
 ##### Try with the arguments: `l = <nil> and data_ref = 96`
 `(<nil>)`
 ###### Does the function returns the list above?
-##### Try with the arguments: `l = 98-> 98-> 33-> 34-> 33-> 34-> 33-> 89-> 33-> <nil> and data_ref = 34
+##### Try with the arguments: `l = 98-> 98-> 33-> 34-> 33-> 34-> 33-> 89-> 33-> <nil> and data_ref = 34`
 `(98-> 98-> 33-> 33-> 33-> 89-> 33-> <nil>)`
 ###### Does the function returns the list above?
-##### Try with the arguments: `l = 79-> 74-> 99-> 79-> 7-> <nil> and data_ref = 99
+##### Try with the arguments: `l = 79-> 74-> 99-> 79-> 7-> <nil> and data_ref = 99`
 `(79-> 74-> 79-> 7-> <nil>)`
 ###### Does the function returns the list above?
-##### Try with the arguments: `l = 56-> 93-> 68-> 56-> 87-> 68-> 56-> 68-> <nil> and data_ref = 68
+##### Try with the arguments: `l = 56-> 93-> 68-> 56-> 87-> 68-> 56-> 68-> <nil> and data_ref = 68`
 `(56-> 93-> 56-> 87-> 56-> <nil>)`
 ###### Does the function returns the list above?
-##### Try with the arguments: `l = mvkUxbqhQve4l-> 4Zc4t  hnf SQ-> q2If E8BPuX  -> <nil> and data_ref = 4Zc4t  hnf SQ,
+##### Try with the arguments: `l = mvkUxbqhQve4l-> 4Zc4t  hnf SQ-> q2If E8BPuX  -> <nil> and data_ref = 4Zc4t  hnf SQ`
 `(mvkUxbqhQve4l-> q2If E8BPuX  -> <nil>)`
 ###### Does the function returns the list above?
-##### Try with the arguments: `l = hello1-> hello2-> hello-> hello3-> <nil> and data_ref = hello,
+##### Try with the arguments: `l = hello1-> hello2-> hello-> hello3-> <nil> and data_ref = hello`
 `(hello1-> hello2-> hello3-> <nil>)`
 ###### Does the function returns the list above?
-##### Try with the arguments: `l = fZfX1 r  G9hG->  VRcbreYo4cM -> <nil> and data_ref =  VRcbreYo4cM ,`
+##### Try with the arguments: `l = fZfX1 r  G9hG->  VRcbreYo4cM -> <nil> and data_ref =  VRcbreYo4cM`
 `(fZfX1 r  G9hG-> <nil>)`
 ###### Does the function returns the list above?
 
@@ -655,7 +663,7 @@ repla =
 ###### Does the function returns the value above?
 ##### Try with the arguments:
 ```
-root = 
+root =
 00
 └── 02
     └── 04
@@ -687,7 +695,7 @@ repla =
 ###### Does the function returns the value above?
 ##### Try with the arguments:
 ```
-root = 
+root =
 02
 └── 03
     └── 06
@@ -715,7 +723,7 @@ repla =
 ###### Does the function returns the value above?
 ##### Try with the arguments:
 ```
-root = 
+root =
 06
 ├── 07
 │   └── 09
@@ -932,7 +940,7 @@ and node = 03
 ###### Does the function returns the value above?
 ##### Try with the arguments:
 ```
-root = 
+root =
 06
 ├── 07
 │   └── 09
