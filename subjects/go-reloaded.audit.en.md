@@ -6,18 +6,6 @@
 ##### Try with the argument: `"-"`
 `0`
 ###### Does the function returns the value above?
-##### Try with the argument: `"+"`
-`0`
-###### Does the function returns the value above?
-##### Try with the argument: `"0"`
-`0`
-###### Does the function returns the value above?
-##### Try with the argument: `"+0"`
-`0`
-###### Does the function returns the value above?
-##### Try with the argument: `"-Invalid123"`
-`0`
-###### Does the function returns the value above?
 ##### Try with the argument: `"--123"`
 `0`
 ###### Does the function returns the value above?
@@ -57,18 +45,6 @@
 ##### Try with the arguments: `nb = -6 and power = 5`
 `-7776`
 ###### Does the function returns the value above?
-##### Try with the arguments: `nb = 0 and power = 9`
-`0`
-###### Does the function returns the value above?
-##### Try with the arguments: `nb = -6 and power = 6`
-`46656`
-###### Does the function returns the value above?
-##### Try with the arguments: `nb = 0 and power = 0`
-`1`
-###### Does the function returns the value above?
-##### Try with the arguments: `nb = 0 and power = 1`
-`0`
-###### Does the function returns the value above?
 
 #### PrintCombN
 
@@ -103,83 +79,101 @@
 #### PrintNbrBase
 
 ##### Try with the argument: `nbr = 919617 and base = 01`
-###### Does the function prints `11100000100001000001`?
+`11100000100001000001`
+###### Does the function prints the value?
 ##### Try with the argument: `nbr = 753639 and base = CHOUMIisDAcat!`
-###### Does the function prints `HIDAHI`?
+`HIDAHI`
+###### Does the function prints the value above?
 ##### Try with the argument: `nbr = -174336 and base = CHOUMIisDAcat!`
-###### Does the function prints `-MssiD`?
+`-MssiD`
+###### Does the function prints the value above?
 ##### Try with the argument: `nbr = -661165 and base = 1`
-###### Does the function prints `NV`?
-##### Try with the argument: `nbr = -839376 and base = choumiChoumi`
-###### Does the function prints `NV`?
+`NV`
+###### Does the function prints the value above?
 ##### Try with the argument: `nbr = -861737 and base = Zone01Zone01`
-###### Does the function prints `-1111101`?
+`-1111101`
+###### Does the function prints the value above?
 ##### Try with the argument: `nbr = 125 and base = 0123456789ABCDEF`
-###### Does the function prints `7D`?
+`7D`
+###### Does the function prints the value above?
 ##### Try with the argument: `nbr = -125 and base = choumi`
-###### Does the function prints `-uoi`?
+`-uoi`
+###### Does the function prints the value above?
 ##### Try with the argument: `nbr = 125 and base = -ab`
-###### Does the function prints `NV`?
+`NV`
+###### Does the function prints the value above?
 ##### Try with the argument: `nbr = -9223372036854775808 and base = 0123456789`
-###### Does the function prints `-9223372036854775808`?
+`-9223372036854775808`
+###### Does the function prints the value above?
 
 #### doop
 
 ##### Try with the arguments: `861 + 870`
-###### Does the program prints `1731`?
+`1731`
+###### Does the program prints the value above?
 ##### Try with the arguments: `861 - 870`
-###### Does the program prints `-9`?
+`-9`
+###### Does the program prints the value above?
 ##### Try with the arguments: `861 * 870`
-###### Does the program prints `749070`?
-##### Try with the arguments: `861 / 870`
-###### Does the program prints `0`?
+`749070`
+###### Does the program prints the value above?
 ##### Try with the arguments: `861 % 870`
-###### Does the program prints `861`?
+`861`
+###### Does the program prints the value above?
 ##### Try with the arguments: `hello + 1`
-###### Does the program prints `0`?
+`0`
+###### Does the program prints the value above?
 ##### Try with the arguments: `1 p 1`
-###### Does the program prints `0`?
+`0`
+###### Does the program prints the value above?
 ##### Try with the arguments: `1 / 0`
-###### Does the program prints `No division by 0`?
+`No division by 0`
+###### Does the program prints the value above?
 ##### Try with the arguments: `1 % 0`
-###### Does the program prints `No remainder of division by 0`?
+`No remainder of division by 0`
+###### Does the program prints the value above?
 ##### Try with the arguments: `1 * 1`
-###### Does the program prints `1`?
-##### Try with the arguments: `2 arguments`
-###### Does the program prints ``?
-##### Try with the arguments: `4 arguments so invalid`
-###### Does the program prints ``?
+`1`
+###### Does the program prints the value above?
 ##### Try with the arguments: `9223372036854775807 + 1`
-###### Does the program prints `0`?
+`0`
+###### Does the program prints the value above?
 ##### Try with the arguments: `9223372036854775809 - 3`
-###### Does the program prints `0`?
+`0`
+###### Does the program prints the value above?
 ##### Try with the arguments: `9223372036854775807 * 3`
-###### Does the program prints `0`?
+`0`
+###### Does the program prints the value above?
 
 #### Atoibase
 
 ##### Try with the arguments: `s = bcbbbbaab and base = abc`
-###### Does the function returns `12016`?
+`12016`
+###### Does the function returns the value above?
 ##### Try with the arguments: `s = 0001 and base = 01`
-###### Does the function returns `1`?
+`1`
+###### Does the function returns the value above?
 ##### Try with the arguments: `s = 00 and base = 01`
-###### Does the function returns `0`?
+`0`
+###### Does the function returns the value above?
 ##### Try with the arguments: `s = saDt!I!sI and base = CHOUMIisDAcat!`
-###### Does the function returns `11557277891`?
+`11557277891`
+###### Does the function returns the value above?
 ##### Try with the arguments: `s = AAho?Ao and base = WhoAmI?`
-###### Does the function returns `406772`?
+`406772`
+###### Does the function returns the value above?
 ##### Try with the arguments: `s = thisinputshouldnotmatter and base = abca`
-###### Does the function returns `0`?
+`0`
+###### Does the function returns the value above?
 ##### Try with the arguments: `s = 125 and base = 0123456789`
-###### Does the function returns `125`?
-##### Try with the arguments: `s = 1111101 and base = 01`
-###### Does the function returns `125`?
-##### Try with the arguments: `s = 7D and base = 0123456789ABCDEF`
-###### Does the function returns `125`?
+`125`
+###### Does the function returns the value above?
 ##### Try with the arguments: `s = uoi and base = choumi`
-###### Does the function returns `125`?
+`125`
+###### Does the function returns the value above?
 ##### Try with the arguments: `s = bbbbbab and base = -ab`
-###### Does the function returns `0`?
+`0`
+###### Does the function returns the value above?
 
 #### splitwhitespaces
 
@@ -201,83 +195,50 @@
 ##### Try with the argument: `str =  In 1673, Gottfried Leibniz demonstrated a digital mechanical calculator,`
 `[In 1673, Gottfried Leibniz demonstrated a digital mechanical calculator,]`
 ###### Does the function returns the value above?
-##### Try with the argument: `str = called the Stepped Reckoner.[5] He may be considered the first computer scientist and information theorist`
-`[called the Stepped Reckoner.[5] He may be considered the first computer scientist and information theorist]`
-###### Does the function returns the value above?
-##### Try with the argument: `str = , for, among other reasons, documenting the binary number system.`
-`[, for, among other reasons, documenting the binary number system.]`
-###### Does the function returns the value above?
-##### Try with the argument: `str =  In 1820, Thomas de Colmar launched the mechanical calculator industry[note 1] when he released his simplified arithmometer,`
-`[In 1820, Thomas de Colmar launched the mechanical calculator industry[note 1] when he released his simplified arithmometer,]`
-###### Does the function returns the value above?
-##### Try with the argument: `str =  which was the first calculating machine strong enough and reliable enough to be used daily in an office environment.`
-`[which was the first calculating machine strong enough and reliable enough to be used daily in an office environment.]`
-###### Does the function returns the value above?
 
 #### split
 
-##### Try with the arguments: `str = |=choumi=|which|=choumi=|itself|=choumi=|used|=choumi=|cards|=choumi=|and|=choumi=|a|=choumi=|central|=choumi=|computing|=choumi=|unit.|=choumi=|When|=choumi=|the|=choumi=|machine|=choumi=|was|=choumi=|finished, and charset = |=choumi=|`
+##### Try with the arguments:
+```
+str = |=choumi=|which|=choumi=|itself|=choumi=|used|=choumi=|cards|=choumi=|and|=choumi=|a|=choumi=|central|=choumi=|computing|=choumi=|unit.|=choumi=|When|=choumi=|the|=choumi=|machine|=choumi=|was|=choumi=|finished, and charset = |=choumi=|
+```
 `[ which itself used cards and a central computing unit. When the machine was finished,]`
 ###### Does the function returns the value above?
-##### Try with the arguments: `str = !==!which!==!was!==!making!==!all!==!kinds!==!of!==!punched!==!card!==!equipment!==!and!==!was!==!also!==!in!==!the!==!calculator!==!business[10]!==!to!==!develop!==!his!==!giant!==!programmable!==!calculator, and charset = !==!`
+##### Try with the arguments:
+```
+str = !==!which!==!was!==!making!==!all!==!kinds!==!of!==!punched!==!card!==!equipment!==!and!==!was!==!also!==!in!==!the!==!calculator!==!business[10]!==!to!==!develop!==!his!==!giant!==!programmable!==!calculator, and charset = !==!
+```
 `[ which was making all kinds of punched card equipment and was also in the calculator business[10] to develop his giant programmable calculator,]`
 ###### Does the function returns the value above?
-##### Try with the arguments: `str = AFJCharlesAFJBabbageAFJstartedAFJtheAFJdesignAFJofAFJtheAFJfirstAFJautomaticAFJmechanicalAFJcalculator, and charset = AFJ`
+##### Try with the arguments:
+```
+str = AFJCharlesAFJBabbageAFJstartedAFJtheAFJdesignAFJofAFJtheAFJfirstAFJautomaticAFJmechanicalAFJcalculator, and charset = AFJ
+```
 `[ Charles Babbage started the design of the first automatic mechanical calculator,]`
 ###### Does the function returns the value above?
-##### Try with the arguments: `str = |=choumi=|Ada|=choumi=|Lovelace|=choumi=|wrote, and charset = |=choumi=|`
-`[ Ada Lovelace wrote,]`
-###### Does the function returns the value above?
-##### Try with the arguments: `str = !==!the!==!term!==!computer!==!came!==!to!==!refer!==!to!==!the!==!machines!==!rather!==!than!==!their!==!human!==!predecessors.[12]!==!As!==!it!==!became!==!clear!==!that!==!computers!==!could!==!be!==!used!==!for!==!more!==!than!==!just!==!mathematical!==!calculations, and charset = !==!`
-`[ the term computer came to refer to the machines rather than their human predecessors.[12] As it became clear that computers could be used for more than just mathematical calculations,]`
-###### Does the function returns the value above?
-##### Try with the arguments: `str = <<==123==>>In<<==123==>>1820,<<==123==>>Thomas<<==123==>>de<<==123==>>Colmar<<==123==>>launched<<==123==>>the<<==123==>>mechanical<<==123==>>calculator<<==123==>>industry[note<<==123==>>1]<<==123==>>when<<==123==>>he<<==123==>>released<<==123==>>his<<==123==>>simplified<<==123==>>arithmometer, and charset = <<==123==>>`
+##### Try with the arguments:
+```
+str = <<==123==>>In<<==123==>>1820,<<==123==>>Thomas<<==123==>>de<<==123==>>Colmar<<==123==>>launched<<==123==>>the<<==123==>>mechanical<<==123==>>calculator<<==123==>>industry[note<<==123==>>1]<<==123==>>when<<==123==>>he<<==123==>>released<<==123==>>his<<==123==>>simplified<<==123==>>arithmometer, and charset = <<==123==>>
+```
 `[ In 1820, Thomas de Colmar launched the mechanical calculator industry[note 1] when he released his simplified arithmometer,]`
-###### Does the function returns the value above?
-##### Try with the arguments: `str = The!==!earliest!==!foundations!==!of!==!what!==!would!==!become!==!computer!==!science!==!predate!==!the!==!invention!==!of!==!the!==!modern!==!digital!==!computer and charset = !==!`
-`[The earliest foundations of what would become computer science predate the invention of the modern digital computer]`
-###### Does the function returns the value above?
-##### Try with the arguments: `str = !==!the!==!field!==!of!==!computer!==!science!==!broadened!==!to!==!study!==!computation!==!in!==!general.!==!In!==!1945, and charset = !==!`
-`[ the field of computer science broadened to study computation in general. In 1945,]`
-###### Does the function returns the value above?
-##### Try with the arguments: `str = !==!which!==!is!==!considered!==!to!==!be!==!the!==!first!==!published!==!algorithm!==!ever!==!specifically!==!tailored!==!for!==!implementation!==!on!==!a!==!computer.[8]!==!Around!==!1885, and charset = !==!`
-`[ which is considered to be the first published algorithm ever specifically tailored for implementation on a computer.[8] Around 1885,]`
-###### Does the function returns the value above?
-##### Try with the arguments: `str = !=HA=!which!=HA=!is!=HA=!considered!=HA=!to!=HA=!be!=HA=!the!=HA=!first!=HA=!published!=HA=!algorithm!=HA=!ever!=HA=!specifically!=HA=!tailored!=HA=!for!=HA=!implementation!=HA=!on!=HA=!a!=HA=!computer.[8]!=HA=!Around!=HA=!1885, and charset = !=HA=!`
-`[ which is considered to be the first published algorithm ever specifically tailored for implementation on a computer.[8] Around 1885,]`
 ###### Does the function returns the value above?
 
 #### convertbase
 
-##### Try with the arguments: `nbr = "10010001000011010000", baseFrom = "01" and baseTo = "0123456789ABCDEF"`
-`"910D0"`
+##### Try with the arguments `nbr = "4506C", baseFrom = "0123456789ABCDEF" and baseTo = "choumi"`
+`"hccocimc"`
 ###### Does the function returns the value above?
-##### Try with the arguments: `nbr = "4CDC", baseFrom = "0123456789ABCDEF" and baseTo = "WhoAmI?"`
-`"hhhoA`
-###### Does the function returns the value above?"?
-##### Try with the arguments: `nbr = "o1nonZ0e", baseFrom = "Zone01" and baseTo = "Zone01"`
-`"o1nonZ0e"`
+##### Try with the arguments `nbr = "babcbaaaaabcb", baseFrom = "abc" and baseTo = "0123456789ABCDEF"`
+`"9B611"`
 ###### Does the function returns the value above?
-##### Try with the arguments: `nbr = "719462", baseFrom = "0123456789" and baseTo = "choumi"`
-`"ououcico"`
+##### Try with the arguments `nbr = "256850", baseFrom = "0123456789" and baseTo = "01"`
+`"111110101101010010"`
 ###### Does the function returns the value above?
-##### Try with the arguments: `nbr = "ococcuho", baseFrom = "choumi" and baseTo = "choumi"`
-`"ococcuho"`
+##### Try with the arguments `nbr = "uuhoumo", baseFrom = "choumi" and baseTo = "Zone01"`
+`"eeone0n"`
 ###### Does the function returns the value above?
-##### Try with the arguments: `nbr = "382230", baseFrom = "0123456789" and baseTo = "abc"`
-`"cabbacacccaa"`
-###### Does the function returns the value above?
-##### Try with the arguments: `nbr = "2CE0C", baseFrom = "0123456789ABCDEF" and baseTo = "choumi"`
-`"uiuiccm"`
-###### Does the function returns the value above?
-##### Try with the arguments: `nbr = "uhcoccm", baseFrom = "choumi" and baseTo = "0123456789"`
-`"148180"`
-###### Does the function returns the value above?
-##### Try with the arguments: `nbr = "IhoWo?I", baseFrom = "WhoAmI?" and baseTo = "abc"`
-`"babaccccacbca"`
-###### Does the function returns the value above?
-##### Try with the arguments: `nbr = "bababbabaabcb", baseFrom = "abc" and baseTo = "WhoAmI?"`
-`"IWmmImA"`
+##### Try with the arguments `nbr = "683241", baseFrom = "0123456789" and baseTo = "0123456789"`
+`"683241"`
 ###### Does the function returns the value above?
 
 #### rotatevowels
@@ -299,81 +260,61 @@
 ##### Try executing the program passing as argument: `"al's elEphAnt is overly underweight!"
 `il's elephunt es ovirly AndErweaght!`
 ###### Does the program returns the value above?
-##### Try executing the program passing as arguments: `Machines for calculating fixed numerical tasks such as the abacus`
-`Muchanas fer calculatang fixed numericil tasks such as tho ebicas`
-###### Does the program returns the value above?
-##### Try executing the program passing as arguments: `have existed since antiquity, aiding in computations such as multiplication and division`
-`hovi ixistad sonci antiqiuty, audong in camputotiins sich as miltuplicatein end divesean`
-###### Does the program returns the value above?
 
 #### advancedsortwordarr
 
-##### Try with the arguments array = `[X3RvpTTOo  b1 RR bTVi iO  3 5Be2id5AY G a t9J4 NP mJoJM ci97     r W   4  WcVVBJc K 9pkpByJ Ebbia 4ox8TWUD  inv q3 jPYp7g av   HQ O0 Ncmg z 3WLJcrbLB7LoY lVce8L XWgMsw MkOITgWoS SFv] and f = strings.Compare`
-`[ 4  WcVVBJc K  HQ O0 Ncmg z 3WLJcrbLB7LoY 4ox8TWUD  inv 5Be2id5AY G a 9pkpByJ Ebbia MkOITgWoS SFv RR bTVi iO  3 X3RvpTTOo  b1 ci97     r W  lVce8L XWgMsw q3 jPYp7g av  t9J4 NP mJoJM]`
-###### Does the function returns the value above?
-##### Try with the arguments array = `[g qRLGp OsCIK SwMSZHN oKqiZ PMorGlQ dPx3F  GA6oRAyLtQZ6 aL0JonQwm BZ9 DfUL Dw1 DgDz  H ew V kDqyA 8hN i eR 8n 6 tQa9geTu jbO1 qIhPYu  ws Tq  54k
-`[ 54kMdO5 E 1p  GA6oRAyLtQZ6  H ew V kDqyA  bE  PNnGhcR  8hN i eR 8n 6 CKLLpKer bQmH DfUL Dw1 DgDz PMorGlQ dPx3F SwMSZHN oKqiZ aL0JonQwm BZ9 g qRLGp OsCIK qIhPYu  ws Tq tQa9geTu jbO1]`
-###### O5 E 1p  bE  PNnGhcR  CKLLpKer bQmH] and f = strings.Compare, Does the function returns the value above?
-##### Try with the arguments array = `[SqIY alP ap s Tk8pzkNob T E  2VL7j RwSiBO CFYtXOF7 Zom7 He K BIPFjx66 1aSM KmGUikVO P CeC2Jzf24zS RYt8vbzmwRJVO lJKAxZ20mN Nq Lgec4HOsQ8ZOl  6ZExl3cG4f09 og7ny  HmWg K u H7pHDcClDLo] and f = strings.Compare`
-`[ 2VL7j RwSiBO  6ZExl3cG4f09 1aSM KmGUikVO CFYtXOF7 Zom7 He K BIPFjx66 Lgec4HOsQ8ZOl P CeC2Jzf24zS RYt8vbzmwRJVO SqIY alP ap s Tk8pzkNob T E lJKAxZ20mN Nq og7ny  HmWg K u H7pHDcClDLo]`
-###### Does the function returns the value above?
-##### Try with the arguments array =
+##### Try with the arguments
+ ```
+array = [The earliest computing device undoubtedly consisted of the five fingers of each hand] and f = strings.Compare
 ```
-[8UW WGOHl8IE  M RZg2Q5h56Tw yUL sCa 4 mcc TA buEFbpWwNL  N5p8tO Z w9H P6 WE6fu kO4O  e7 RaOu8rt4o   B 71u bY H2 KM5 kQlRASJ    J mlBG25F 1j g5EOm5is PUOv yV q91Utk2wZu H KFCSi fYe21] and f = strings.Compare
+`[The computing consisted device each earliest fingers five hand of of the undoubtedly]`
+##### Does the function returns the value above?
+##### Try with the arguments
+ ```
+array = [The word digital comesfrom "digits" or fingers] and f = strings.Compare
 ```
-`[  B 71u bY H2  J mlBG25F 1j  N5p8tO Z w9H  e7 RaOu8rt4o 8UW WGOHl8IE  H KFCSi fYe21 KM5 kQlRASJ   M RZg2Q5h56Tw P6 WE6fu kO4O TA buEFbpWwNL g5EOm5is PUOv yUL sCa 4 mcc yV q91Utk2wZu]`
-###### Does the function returns the value above?
-##### Try with the arguments array =
+`["digits" The comesfrom digital fingers or word]`
+##### Does the function returns the value above?
+##### Try with the arguments
+ ```
+array = [a A 1 b B 2 c C 3] and f = strings.Compare
 ```
-[ 4  WcVVBJc K  HQ O0 Ncmg z 3WLJcrbLB7LoY 4ox8TWUD  inv 5Be2id5AY G a 9pkpByJ Ebbia MkOITgWoS SFv RR bTVi iO  3 X3RvpTTOo  b1 ci97     r W  lVce8L XWgMsw q3 jPYp7g av  t9J4 NP mJoJM] and f = func(a, b string) int {
+`[1 2 3 A B C a b c]`
+##### Does the function returns the value above?
+##### Try with the arguments
+ ```
+array = [The computing consisted device each earliest fingers five hand of of the undoubtedly] and f = func(a, b string) int {
 		 return strings.Compare(b, a)
 	}
 ```
-`[t9J4 NP mJoJM q3 jPYp7g av  lVce8L XWgMsw ci97     r W  X3RvpTTOo  b1 RR bTVi iO  3 MkOITgWoS SFv 9pkpByJ Ebbia 5Be2id5AY G a 4ox8TWUD  inv 3WLJcrbLB7LoY  HQ O0 Ncmg z  4  WcVVBJc K]`
-###### Does the function returns the value above?
-##### Try with the arguments array =
-```
-[ 54kMdO5 E 1p  GA6oRAyLtQZ6  H ew V kDqyA  bE  PNnGhcR  8hN i eR 8n 6 CKLLpKer bQmH DfUL Dw1 DgDz PMorGlQ dPx3F SwMSZHN oKqiZ aL0JonQwm BZ9 g qRLGp OsCIK qIhPYu  ws Tq tQa9geTu jbO1] and f = func(a, b string) int {
+`[undoubtedly the of of hand five fingers earliest each device consisted computing The]`
+##### Does the function returns the value above?
+##### Try with the arguments
+ ```
+array = ["digits" The comesfrom digital fingers or word] and f = func(a, b string) int {
 		 return strings.Compare(b, a)
 	}
 ```
-`[tQa9geTu jbO1 qIhPYu  ws Tq g qRLGp OsCIK aL0JonQwm BZ9 SwMSZHN oKqiZ PMorGlQ dPx3F DfUL Dw1 DgDz CKLLpKer bQmH 8hN i eR 8n 6  bE  PNnGhcR   H ew V kDqyA  GA6oRAyLtQZ6  54kMdO5 E 1p]`
-###### Does the function returns the value above?
-##### Try with the arguments array =
-```
-[ 2VL7j RwSiBO  6ZExl3cG4f09 1aSM KmGUikVO CFYtXOF7 Zom7 He K BIPFjx66 Lgec4HOsQ8ZOl P CeC2Jzf24zS RYt8vbzmwRJVO SqIY alP ap s Tk8pzkNob T E lJKAxZ20mN Nq og7ny  HmWg K u H7pHDcClDLo] and f = func(a, b string) int {
+`[word or fingers digital comesfrom The "digits"]`
+##### Does the function returns the value above?
+##### Try with the arguments
+ ```
+array = [1 2 3 A B C a b c] and f = func(a, b string) int {
 		 return strings.Compare(b, a)
 	}
 ```
-`[u H7pHDcClDLo og7ny  HmWg K lJKAxZ20mN Nq Tk8pzkNob T E SqIY alP ap s RYt8vbzmwRJVO P CeC2Jzf24zS Lgec4HOsQ8ZOl He K BIPFjx66 CFYtXOF7 Zom7 1aSM KmGUikVO  6ZExl3cG4f09  2VL7j RwSiBO]`
-###### Does the function returns the value above?
-##### Try with the arguments array =
-```
-[  B 71u bY H2  J mlBG25F 1j  N5p8tO Z w9H  e7 RaOu8rt4o 8UW WGOHl8IE  H KFCSi fYe21 KM5 kQlRASJ   M RZg2Q5h56Tw P6 WE6fu kO4O TA buEFbpWwNL g5EOm5is PUOv yUL sCa 4 mcc yV q91Utk2wZu] and f = func(a, b string) int {
-		 return strings.Compare(b, a)
-	}
-```
-`[yV q91Utk2wZu yUL sCa 4 mcc g5EOm5is PUOv TA buEFbpWwNL P6 WE6fu kO4O M RZg2Q5h56Tw KM5 kQlRASJ   H KFCSi fYe21 8UW WGOHl8IE   e7 RaOu8rt4o  N5p8tO Z w9H  J mlBG25F 1j   B 71u bY H2]`
-###### Does the function returns the value above?
-##### Try with the arguments array =
-```
-[  P0K4ol6K Wh  1zoXnSzLqCk   vy   eDI  D  0 0kEpG leAg3 HJ46 Ub2 SwfL KU zIBYD WLqY Q0h 8DYlXruE5 Ub1SC rq8 EFQ c6TtKUylSrbcy e2r r  C8 cJ3 obR s0lcvL MA pi8y  7QJbwLq w4 0nY TWgHUo] and f = func(a, b string) int {
-		 return strings.Compare(b, a)
-	}
-```
-`[w4 0nY TWgHUo pi8y  7QJbwLq obR s0lcvL MA e2r r  C8 cJ3 c6TtKUylSrbcy Ub1SC rq8 EFQ Q0h 8DYlXruE5 KU zIBYD WLqY HJ46 Ub2 SwfL 0 0kEpG leAg3  vy   eDI  D   1zoXnSzLqCk    P0K4ol6K Wh]`
-###### Does the function returns the value above?
+`[c b a C B A 3 2 1]`
+##### Does the function returns the value above?
 
 #### cat
 
-##### Run the program without arguments:
-##### write: `Hello`
+##### Run the program without arguments and then write: `Hello`
 `Hello`
 ###### Does the program returns the value above?
-##### write: jaflsdfj
+##### Write: jaflsdfj
 `jaflsdfj`
 ###### Does the program returns the value above?
-##### write: `Computer science (sometimes called computation science or computing science`
+##### Write: `Computer science (sometimes called computation science or computing science`
 `Computer science (sometimes called computation science or computing science`
 ###### Does the program returns the value above?
 ##### Run the program passing the file: `quest8.txt` as an argument of execution of the program (as shown in the subject)
@@ -409,9 +350,6 @@
 ##### Try with the argument: `n = 17`
 `2`
 ###### Does the function returns the value above?
-##### Try with the argument: `n = 17`
-`2`
-###### Does the function returns the value above?
 ##### Try with the argument: `n = 4`
 `1`
 ###### Does the function returns the value above?
@@ -424,14 +362,8 @@
 ##### Try with the argument: `n = 12`
 `2`
 ###### Does the function returns the value above?
-##### Try with the argument: `n = 11`
-`3`
-###### Does the function returns the value above?
 ##### Try with the argument: `n = 2`
 `1`
-###### Does the function returns the value above?
-##### Try with the argument: `n = 15`
-`4`
 ###### Does the function returns the value above?
 
 #### sortlistinsert
@@ -450,15 +382,6 @@
 ###### Does the function returns the value above?
 ##### Try with the arguments: `l = 0-> 12-> 20-> 23-> 23-> 24-> 30-> 41-> 53-> 57-> 59-> <nil> and data_ref = 38`
 `(0-> 12-> 20-> 23-> 23-> 24-> 30-> 38-> 41-> 53-> 57-> 59-> <nil>)`
-###### Does the function returns the value above?
-##### Try with the arguments: `l = 0-> 4-> 11-> 15-> 19-> 22-> 23-> 56-> 58-> <nil> and data_ref = 29`
-`(0-> 4-> 11-> 15-> 19-> 22-> 23-> 29-> 56-> 58-> <nil>)`
-###### Does the function returns the value above?
-##### Try with the arguments: `l = 0-> 18-> 23-> 25-> 33-> 34-> 35-> 37-> 40-> 57-> <nil> and data_ref = 47`
-`(0-> 18-> 23-> 25-> 33-> 34-> 35-> 37-> 40-> 47-> 57-> <nil>)`
-###### Does the function returns the value above?
-##### Try with the arguments: `l = 0-> 7-> 14-> 17-> 18-> 24-> 28-> 34-> 34-> 37-> 42-> 46-> 49-> <nil> and data_ref = 3`
-`(0-> 3-> 7-> 14-> 17-> 18-> 24-> 28-> 34-> 34-> 37-> 42-> 46-> 49-> <nil>)`
 ###### Does the function returns the value above?
 
 #### sortedlistmerge
@@ -501,12 +424,6 @@
 ###### Does the function returns the list above?
 ##### Try with the arguments: `l = mvkUxbqhQve4l-> 4Zc4t  hnf SQ-> q2If E8BPuX  -> <nil> and data_ref = 4Zc4t  hnf SQ`
 `(mvkUxbqhQve4l-> q2If E8BPuX  -> <nil>)`
-###### Does the function returns the list above?
-##### Try with the arguments: `l = hello1-> hello2-> hello-> hello3-> <nil> and data_ref = hello`
-`(hello1-> hello2-> hello3-> <nil>)`
-###### Does the function returns the list above?
-##### Try with the arguments: `l = fZfX1 r  G9hG->  VRcbreYo4cM -> <nil> and data_ref =  VRcbreYo4cM`
-`(fZfX1 r  G9hG-> <nil>)`
 ###### Does the function returns the list above?
 
 #### btreetransplant
@@ -600,151 +517,6 @@ repla =
         └── 33
             └── 12
                 └── 15
-```
-###### Does the function returns the value above?
-##### Try with the arguments:
-```
-root =
-03
-├── 03
-│   └── 94
-│       └── 19
-│           ├── 24
-│           └── 111
-└── 01
-, node = 19 and
-repla =
-55
-├── 60
-└── 33
-    └── 12
-        └── 15
-```
-```
-03
-├── 03
-│   └── 94
-│       └── 55
-│           ├── 60
-│           └── 33
-│               └── 12
-│                   └── 15
-└── 01
-```
-###### Does the function returns the value above?
-##### Try with the arguments:
-```
-root =
-02
-├── 03
-│   └── 92
-│       └── 19
-│           ├── 22
-│           └── 111
-└── 01
-, node = 92 and
-repla =
-55
-├── 60
-└── 33
-    └── 12
-        └── 15
-```
-```
-02
-├── 03
-│   └── 55
-│       ├── 60
-│       └── 33
-│           └── 12
-│               └── 15
-└── 01
-```
-###### Does the function returns the value above?
-##### Try with the arguments:
-```
-root =
-00
-└── 02
-    └── 04
-        └── 53
-            ├── 66
-            └── 23
-                └── 21
-, node = 21 and
-repla =
-55
-├── 60
-└── 33
-    └── 12
-        └── 15
-```
-```
-00
-└── 02
-    └── 04
-        └── 53
-            ├── 66
-            └── 23
-                └── 55
-                    ├── 60
-                    └── 33
-                        └── 12
-                            └── 15
-```
-###### Does the function returns the value above?
-##### Try with the arguments:
-```
-root =
-02
-└── 03
-    └── 06
-        └── 09
-            └── 83
-                └── 28
-                    └── 24
-, node = 06 and
-repla =
-55
-├── 60
-└── 33
-    └── 12
-        └── 15
-```
-```
-02
-└── 03
-    └── 55
-        ├── 60
-        └── 33
-            └── 12
-                └── 15
-```
-###### Does the function returns the value above?
-##### Try with the arguments:
-```
-root =
-06
-├── 07
-│   └── 09
-│       └── 83
-│           └── 68
-│               └── 64
-└── 01
-, node = 06 and
-repla =
-55
-├── 60
-└── 33
-    └── 12
-        └── 15
-```
-```
-55
-├── 60
-└── 33
-    └── 12
-        └── 15
 ```
 ###### Does the function returns the value above?
 
@@ -872,90 +644,6 @@ and node = 03
 │   └── 19
 │       ├── 24
 │       └── 111
-└── 01
-```
-###### Does the function returns the value above?
-##### Try with the arguments:
-```
-root =
-02
-├── 03
-│   └── 92
-│       └── 19
-│           ├── 22
-│           └── 111
-└── 01
- and node = 01
- ```
-```
-02
-└── 03
-    └── 92
-        └── 19
-            ├── 22
-            └── 111
-```
-###### Does the function returns the value above?
-##### Try with the arguments:
-```
-root =
-00
-└── 02
-    └── 04
-        └── 53
-            ├── 66
-            └── 23
-                └── 21
- and node = 00
-```
-```
-02
-└── 04
-    └── 53
-        ├── 66
-        └── 23
-            └── 21
-```
-###### Does the function returns the value above?
-##### Try with the arguments:
-```
-root =
-02
-└── 03
-    └── 06
-        └── 09
-            └── 83
-                └── 28
-                    └── 24
-and node = 03
-```
-```
-02
-└── 06
-    └── 09
-        └── 83
-            └── 28
-                └── 24
-```
-###### Does the function returns the value above?
-##### Try with the arguments:
-```
-root =
-06
-├── 07
-│   └── 09
-│       └── 83
-│           └── 68
-│               └── 64
-└── 01
- and node = 09
-```
-```
-06
-├── 07
-│   └── 83
-│       └── 68
-│           └── 64
 └── 01
 ```
 ###### Does the function returns the value above?
