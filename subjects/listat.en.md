@@ -51,8 +51,8 @@ And its output :
 ```console
 student@ubuntu:~/[[ROOT]]/test$ go build
 student@ubuntu:~/[[ROOT]]/test$ ./test
-1
-how are
+you
+hello
 <nil>
 student@ubuntu:~/[[ROOT]]/test$
 ```

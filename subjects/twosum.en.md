@@ -11,18 +11,23 @@ This means that:
 - The function main declared needs to **also pass** the `Restrictions Checker`(illegal functions tester). It is advised for the student to just empty the function main after its own testings are done.
 - Every other rules are obviously the same than for a `program`.
 
-### Instructions:
-Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+### Instructions
+
+Given an array of integers, return indexes of the two numbers such that they add up to a specific target.
+
 If there are more than one solution, return the first one.
+
 If there are no solutions, return nil.
 
-Expected function:
+Expected function :
+
 ```go
 func TwoSum(nums []int, target int) []int {
 }
 ```
 
 Here is a possible [program](TODO-LINK) to test your function :
+
 ```go
 package main
 
