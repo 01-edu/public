@@ -1,0 +1,125 @@
+#### Functional Project Questions
+
+##### Try passing as arguments `"hello" standard`
+```
+ _              _   _          
+| |            | | | |         
+| |__     ___  | | | |   ___   
+|  _ \   / _ \ | | | |  / _ \  
+| | | | |  __/ | | | | | (_) | 
+|_| |_|  \___| |_| |_|  \___/  
+                               
+                               
+```
+
+###### Does it display the string in the right template as an ASCII art representation as above?  
+##### Try passing as arguments `"hello world" shadow`
+```
+                                                                                        
+_|                _| _|                                                     _|       _| 
+_|_|_|     _|_|   _| _|   _|_|         _|      _|      _|   _|_|   _|  _|_| _|   _|_|_| 
+_|    _| _|_|_|_| _| _| _|    _|       _|      _|      _| _|    _| _|_|     _| _|    _| 
+_|    _| _|       _| _| _|    _|         _|  _|  _|  _|   _|    _| _|       _| _|    _| 
+_|    _|   _|_|_| _| _|   _|_|             _|      _|       _|_|   _|       _|   _|_|_| 
+                                                                                        
+                                                                                        
+```
+###### Does it display the string in the right template as an ASCII art representation as above?  
+##### Try passing as arguments `"nice 2 meet you" thinkertoy`
+```
+                                                                       
+                       --                       o                      
+     o                o  o                      |                      
+o-o     o-o o-o         /        o-O-o o-o o-o -o-       o  o o-o o  o 
+|  | | |    |-'        /         | | | |-' |-'  |        |  | | | |  | 
+o  o |  o-o o-o       o--o       o o o o-o o-o  o        o--O o-o o--o 
+                                                            |          
+                                                         o--o          
+```
+###### Does it display the string in the right template as an ASCII art representation as above?  
+##### Try passing as arguments `"you & me" standard`
+```
+                                                                
+                                ___                             
+ _   _    ___    _   _         ( _ )          _ __ ___     ___  
+| | | |  / _ \  | | | |        / _ \/\       | '_ ` _ \   / _ \ 
+| |_| | | (_) | | |_| |       | (_>  <       | | | | | | |  __/ 
+ \__, |  \___/   \__,_|        \___/\/       |_| |_| |_|  \___| 
+ __/ /                                                          
+|___/                                                           
+```
+###### Does it display the string in the right template as an ASCII art representation as above?  
+##### Try passing as arguments `"123" shadow`
+```
+                       
+  _|   _|_|   _|_|_|   
+_|_| _|    _|       _| 
+  _|     _|     _|_|   
+  _|   _|           _| 
+  _| _|_|_|_| _|_|_|   
+                       
+                       
+```
+###### Does it display the stirng in the right template as an ASCII art representation as above?
+##### Try passing as arguments `"/(\")" thinkertoy`
+```
+         o o    
+    o  / | | \  
+   /  o       o 
+  o   |       | 
+ /    o       o 
+o      \     /  
+                
+                
+```
+###### Does it display the stirng in the right template as an ASCII art representation as above?
+##### Try passing as arguments `"ABCDEFGHIJKLMNOPQRSTUVWXYZ" shadow`
+```
+                                                                                                                                                                                                                                                               
+  _|_|   _|_|_|     _|_|_| _|_|_|   _|_|_|_| _|_|_|_|   _|_|_| _|    _| _|_|_|       _| _|    _| _|       _|      _| _|      _|   _|_|   _|_|_|     _|_|     _|_|_|     _|_|_| _|_|_|_|_| _|    _| _|      _| _|          _| _|      _| _|      _| _|_|_|_|_|  
+_|    _| _|    _| _|       _|    _| _|       _|       _|       _|    _|   _|         _| _|  _|   _|       _|_|  _|_| _|_|    _| _|    _| _|    _| _|    _|   _|    _| _|           _|     _|    _| _|      _| _|          _|   _|  _|     _|  _|         _|    
+_|_|_|_| _|_|_|   _|       _|    _| _|_|_|   _|_|_|   _|  _|_| _|_|_|_|   _|         _| _|_|     _|       _|  _|  _| _|  _|  _| _|    _| _|_|_|   _|  _|_|   _|_|_|     _|_|       _|     _|    _| _|      _| _|    _|    _|     _|         _|         _|      
+_|    _| _|    _| _|       _|    _| _|       _|       _|    _| _|    _|   _|   _|    _| _|  _|   _|       _|      _| _|    _|_| _|    _| _|       _|    _|   _|    _|       _|     _|     _|    _|   _|  _|     _|  _|  _|     _|  _|       _|       _|        
+_|    _| _|_|_|     _|_|_| _|_|_|   _|_|_|_| _|         _|_|_| _|    _| _|_|_|   _|_|   _|    _| _|_|_|_| _|      _| _|      _|   _|_|   _|         _|_|  _| _|    _| _|_|_|       _|       _|_|       _|         _|  _|     _|      _|     _|     _|_|_|_|_|  
+                                                                                                                                                                                                                                                               
+                                                                                                                                                                                                                                                               
+```
+###### Does it display the stirng in the right template as an ASCII art representation as above?
+##### Try passing as arguments `"\"#$%&/()*+,-./" thinkertoy`
+```
+o o         | |                                                  
+| |  | |   -O-O-      O          o  / \  o | o                 o 
+    -O-O- o | |   o  /    o     /  o   o  \|/   |             /  
+     | |   -O-O-    /    /|    o   |   | --O-- -o-           o   
+    -O-O-   | | o  /  o o-O-  /    o   o  /|\   |    o-o    /    
+     | |   -O-O-  O       |  o      \ /  o | o     o     O o     
+            | |                                    |             
+                                                                 
+```
+###### Does it display the stirng in the right template as an ASCII art representation as above?
+##### Try passing as arguments `"It's Working" thinkertoy`
+```
+          o                                              
+o-O-o  o  |           o       o         o                
+  |    |              |       |         | /  o           
+  |   -o-   o-o       o   o   o o-o o-o OO     o-o  o--o 
+  |    |     \         \ / \ /  | | |   | \  | |  | |  | 
+o-O-o  o    o-o         o   o   o-o o   o  o | o  o o--O 
+                                                       | 
+                                                    o--o 
+```
+###### Does it display the stirng in the right template as an ASCII art representation as above?
+###### Is the file system well organized?
+
+#### Basic
+
+###### +Does the project runs quickly and effectively (Favoring of recursive, no unnecessary data requests, etc.)?
+###### +Is the output of the program well structured? Does any letter seems to be out of line?
+###### +Is there a test file for this code?
+###### +Are the tests checking each possible case?
+###### +Does the code obey the [good practices](https://github.com/01-edu/public/blob/master/subjects/good-practices.en.md)?
+
+#### Social
+
+###### +Did you learn anything from this project?
+###### +Would you recommend/nominate this program as an example for the rest of the school?
