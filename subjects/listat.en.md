@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a function `ListAt` that takes a pointer to the list `l` and an `int pos` as parameters. This function should print the `NodeL` in the position `pos` of the linked list `l`.
+Write a function `ListAt` that takes a pointer to the list `l` and an `int pos` as parameters. This function should return the `NodeL` in the position `pos` of the linked list `l`.
 
--   In case of error the fonction should print `nil`.
+-   In case of error the function should return `nil`.
 
 ### Expected function and structure
 
@@ -51,8 +51,8 @@ And its output :
 ```console
 student@ubuntu:~/[[ROOT]]/test$ go build
 student@ubuntu:~/[[ROOT]]/test$ ./test
-1
-how are
+you
+hello
 <nil>
 student@ubuntu:~/[[ROOT]]/test$
 ```
