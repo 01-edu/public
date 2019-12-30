@@ -90,8 +90,8 @@
 ##### Try with the argument: `nbr = -661165 and base = 1`
 `NV`
 ###### Does the function prints the value above?
-##### Try with the argument: `nbr = -861737 and base = Zone01Zone01`
-`-1111101`
+##### Try with the argument: `nbr = -861737 and base = Zone01`
+`-eZn01eZ1`
 ###### Does the function prints the value above?
 ##### Try with the argument: `nbr = 125 and base = 0123456789ABCDEF`
 `7D`
