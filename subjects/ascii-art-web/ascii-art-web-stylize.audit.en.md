@@ -1,12 +1,13 @@
 #### Functional Project Questions
 
-##### Does the colors used allow you to see the text properly?
-##### Is the design consistent? (examples: every page follows the same pallete of colors, is all centered or is it everything aligned to the right, etc.)
-##### Is the design responsive? (when you change the width/ height of the page, is the site consistent?)
-##### Is the design interactive? (does it interact with the actions of the user?)
+###### Does the colors used allow you to see the text properly (ex: you can't see yellow text in a white background that well)?
+###### Is the design [consistent](https://digitalcommunications.wp.st-andrews.ac.uk/2016/04/07/why-is-consistency-important-in-web-design/)? (examples: every page follows the same palette of colors, is all centered or is it everything aligned to the right, etc.)
+###### Is the design [responsive](https://smallbiztrends.com/2013/05/what-is-responsive-web-design.html)? (when you change the width/ height of the page, is the site consistent?)
+###### Is the design [interactive](https://en.m.wikipedia.org/wiki/Interactive_design)? (does it interact with the actions of the user?)
 
-##### +Is it easy to use the web site?
-##### +Does it have a background?
+
+###### +Is it easy to use the web site?
+###### +Does it have a background?
 
 #### Basic
 
