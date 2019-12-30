@@ -2,11 +2,16 @@
 
 ### Objectives
 
-You must follow the same [instructions](https://github.com/01-edu/public/ascii-art-web.en.md) as the first subject.
+You must follow the same [principles](https://github.com/01-edu/public/blob/master/subjects/ascii-art-web/ascii-art-web.en.md) as the first subject.
 
 - For this project you must create at least :
-  - one image/Dockerfile
+  - one Dockerfile
+  - one image
   - one container
+
+- You must apply [metadata](https://docs.docker.com/config/labels-custom-metadata/) to Docker objects.
+
+- You have to take caution of unused object (often referred to as "garbage collection").
 
 This project will help you learn about :
 
@@ -27,9 +32,9 @@ This project will help you learn about :
 ### Instructions
 
 - The web server must be created in **Go**.
-- The code must respect the [good practices](https://github.com/01-edu/public/good-practices.en.md).
+- The code must respect the [good practices](https://github.com/01-edu/public/blob/master/subjects/good-practices.en.md).
+- The project must have a **Dockerfile**.
 - Your Dockerfile must respect the [Dockerfile good practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/).
-- The project must have files written in **HTML**.
 - You must use Docker.
 
 ### Usage
