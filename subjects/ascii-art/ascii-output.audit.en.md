@@ -121,8 +121,7 @@ student$ cat test07.txt
 ```
 ###### Does it save the right output in the right file?
 
-###### Does it save the right output in the right file?
-###### Are all the test files saved?
+###### Are all the test files tested saved?
 
 #### Basic
 

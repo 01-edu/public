@@ -92,7 +92,7 @@
                                                                                                                             
 ```
 ###### Does it display the right graphical representation in ASCII as above?
-##### Try passing "MaD3IrA&LiSboN" as argument. 
+##### Try passing "MaD3IrA&LiSboN" as argument.
 ```
  __  __           _____            _____                              _        _    _____   _               _   _  
 |  \/  |         |  __ \   _____  |_   _|            /\       ___    | |      (_)  / ____| | |             | \ | | 

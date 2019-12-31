@@ -1,27 +1,27 @@
 #### Functional Project Questions
 
-##### Try passing to the reverse flag (--reverse=example00.txt) the example 00 (github.com/public/subject/ascii-art/ascii-reverse-example.md).
+##### Try passing to the reverse flag (--reverse=example00.txt) the [example 00](github.com/public/subject/ascii-art/ascii-reverse-example.md).
 `Hello World`
 ###### Does it display the value above?
-##### Try passing to the reverse flag (--reverse=example01.txt) the example 01 (github.com/public/subject/ascii-art/ascii-reverse-example.md).
+##### Try passing to the reverse flag (--reverse=example01.txt) the [example 01](github.com/public/subject/ascii-art/ascii-reverse-example.md).
 `123`
 ###### Does it display the value above?
-##### Try passing to the reverse flag (--reverse=example02.txt) the example 02 (github.com/public/subject/ascii-art/ascii-reverse-example.md).
+##### Try passing to the reverse flag (--reverse=example02.txt) the [example 02](github.com/public/subject/ascii-art/ascii-reverse-example.md).
 `#=\[`
 ###### Does it display the value above?
-##### Try passing to the reverse flag (--reverse=example03.txt) the example 03 (github.com/public/subject/ascii-art/ascii-reverse-example.md).
+##### Try passing to the reverse flag (--reverse=example03.txt) the [example 03](github.com/public/subject/ascii-art/ascii-reverse-example.md).
 `(somthing&234)`
 ###### Does it display the value above?
-##### Try passing to the reverse flag (--reverse=example04.txt) the example 04 (github.com/public/subject/ascii-art/ascii-reverse-example.md).
+##### Try passing to the reverse flag (--reverse=example04.txt) the [example 04](github.com/public/subject/ascii-art/ascii-reverse-example.md).
 `abcdefghijklmnopqrstuvwxyz`
 ###### Does it display the value above?
-##### Try passing to the reverse flag (--reverse=example05.txt) the example 05 (github.com/public/subject/ascii-art/ascii-reverse-example.md).
+##### Try passing to the reverse flag (--reverse=example05.txt) the [example 05](github.com/public/subject/ascii-art/ascii-reverse-example.md).
 `\!" #$%&'()*+,-./`
 ###### Does it display the value above?
-##### Try passing to the reverse flag (--reverse=example06.txt) the example 06 (github.com/public/subject/ascii-art/ascii-reverse-example.md).
+##### Try passing to the reverse flag (--reverse=example06.txt) the [example 06](github.com/public/subject/ascii-art/ascii-reverse-example.md).
 `:;<=>?@`
 ###### Does it display the value above?
-##### Try passing to the reverse flag (--reverse=example07.txt) the example 07 (github.com/public/subject/ascii-art/ascii-reverse-example.md).
+##### Try passing to the reverse flag (--reverse=example07.txt) the [example 07](github.com/public/subject/ascii-art/ascii-reverse-example.md).
 `ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 ###### Does it display the value above?
 
