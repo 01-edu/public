@@ -1,8 +1,8 @@
-#### Functional Project Questions
+#### Functional
 
 ###### Does the project contain HTML files?
 
-##### Try inputting "{123}\n<Hello> (World)!" with the standard template/banner.
+##### Try inputting `"{123}\n<Hello> (World)!"` with the standard template/banner.
 ```
    __                     __    
   / /  _   ____    _____  \ \   
@@ -23,7 +23,7 @@
 ```
 ###### Does it display the right result as above?
 
-##### Try to input "123??" using the template/banner standard.
+##### Try to input `"123??"` using the template/banner standard.
 ```
                      ___    ___   
  _   ____    _____  |__ \  |__ \  
@@ -36,7 +36,7 @@
 ```
 ###### Does it display the right result as above?
 
-##### Try to input "$% \"=" using the template/banner shadow.
+##### Try to input `"$% \"="` using the template/banner shadow.
 ```
                         _|  _|            
   _|   _|_|    _|       _|  _|            
@@ -49,7 +49,7 @@ _|_|_| _|    _|_|
 ```
 ###### Does it display the right result as above?
 
-##### Try to input "123 T/fs#R" using the template/banner thinkertoy.
+##### Try to input `"123 T/fs#R"` using the template/banner thinkertoy.
 ```
                                                        
   0    --  o-o        o-O-o     o  o-o      | |  o--o  
