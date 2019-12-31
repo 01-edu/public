@@ -1,10 +1,10 @@
-#### Ascii-Color
+#### Functional
 
-##### Try passing as arguments "hello world" --color=red.
+##### Try passing as arguments `""hello world" --color=red"`.
 ###### Does it displays the expected result?
-##### Try passing as arguments "1 + 1 = 2" --color=green.
+##### Try passing as arguments `""1 + 1 = 2" --color=green".
 ###### Does it display the expected result?
-##### Try passing as arguments "(%&) ??" --color=yellow.
+##### Try passing as arguments `""(%&) ??" --color=yellow"`.
 ###### Does it display the expected result?
 ##### Try specifying a set of letters to be colored (the second until the last letter).
 ###### Does it displays the expected result (the corresponding set of letters with that color)?
@@ -12,9 +12,9 @@
 ###### Does it displays the expected result (the corresponding letter with that color)?
 ##### Try specifying letter to be colored(just two letter).
 ###### Does it displays the expected result (the corresponding letters with that color)?
-##### Try passing as arguments "HeY GuYs" --color=orange, in order to color "GuYs".
+##### Try passing as arguments `""HeY GuYs" --color=orange"`, in order to color `GuYs`.
 ###### Does it display the expected result?
-##### Try passing as arguments "RGB()" --color=blue, in order to color just the B.
+##### Try passing as arguments `""RGB()" --color=blue"`, in order to color just the B.
 ###### Does it display the expected result?
 
 #### General Requirements

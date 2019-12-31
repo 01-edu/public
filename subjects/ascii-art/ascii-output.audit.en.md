@@ -1,6 +1,6 @@
 #### Functional Project Questions
 
-##### Try passing as arguments `"First\nTest" shadow --output=test00.txt`
+##### Try passing as arguments `"First\nTest shadow --output=test00.txt"`
 ```
 student$ cat test00.txt
                                        
@@ -22,7 +22,7 @@ _|_|_|_|_|                     _|
 
 ```
 ###### Does it save the right output in the right file?
-##### Try passing as arguments `"hello" standard --output=test01.txt`
+##### Try passing as arguments `"hello standard --output=test01.txt"`
 ```
 student$ cat test01.txt
  _              _   _          
@@ -36,7 +36,7 @@ student$ cat test01.txt
 
 ```
 ###### Does it save the right output in the right file?
-##### Try passing as arguments `"123 -> #$%" standard --output=test02.txt`
+##### Try passing as arguments `""123 -> #$%" standard --output=test02.txt"`
 ```
 student$ cat test02.txt
                                    __             _  _      _     _   __ 
@@ -50,7 +50,7 @@ student$ cat test02.txt
 
 ```
 ###### Does it save the right output in the right file?
-##### Try passing as arguments `"432 -> #$%&@" shadow --output=test03.txt`
+##### Try passing as arguments `""432 -> #$%&@" shadow --output=test03.txt"`
 ```
 student$ cat test03.txt
                                                                                                                   
@@ -64,7 +64,7 @@ _|_|_|_|   _|_|       _|         _|_|_|_|_|     _|         _|  _|   _|_|       _
 
 ```
 ###### Does it save the right output in the right file?
-##### Try passing as arguments `"There" shadow --output=test04.txt`
+##### Try passing as arguments `"There shadow --output=test04.txt"`
 ```
 student$ cat test04.txt
                                                
@@ -78,7 +78,7 @@ _|_|_|_|_| _|
 
 ```
 ###### Does it save the right output in the right file?
-##### Try passing as arguments `"123 -> \"#$%@" thinkertoy --output=test05.txt`
+##### Try passing as arguments `""123 -> \"#$%@" thinkertoy --output=test05.txt"`
 ```
 student$ cat test05.txt
                                     o o         | |               
@@ -92,7 +92,7 @@ o-o-o o--o o-o            o              | |   -O-O-  O       o-
 
 ```
 ###### Does it save the right output in the right file?
-##### Try passing as arguments `"2 you" thinkertoy --output=test06.txt`
+##### Try passing as arguments `""2 you" thinkertoy --output=test06.txt"`
 ```
 student$ cat test06.txt
                          
@@ -106,7 +106,7 @@ o--o       o--O o-o o--o
 
 ```
 ###### Does it save the right output in the right file?
-##### Try passing as arguments `"Testing      long      output!" standard --output=test07.txt`
+##### Try passing as arguments `""Testing      long      output!" standard --output=test07.txt"`
 ```
 student$ cat test07.txt
  _______                _     _                                                       _                                                                               _                     _     _  
