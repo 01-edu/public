@@ -1,4 +1,5 @@
-#### Functional Project Questions
+#### Functional
+
 
 ##### Try to export the file.
 ###### Does the exported file matches the output?
@@ -6,10 +7,13 @@
 ##### Try to open and change the exported file.
 ###### Are the exported files read and write for the user only?
 
-###### Does the site has a clear buton/link to download/export the file?
+###### Does the project use the HTTP header [Content-Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) to indicate the media type of the resource?
 
-##### Try to export a file with multiple lines.
-###### Can you export a file with multiple lines?
+###### Does the project use the HTTP header [Content-Length](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Length) to indicate the size of the entity-body, in bytes, sent to the recipient?
+
+###### Does the project use the HTTP header [Content-Disposition](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) to download the files?
+
+###### Does the site has a clear button/link to download/export the file?
 
 #### Basic
 
