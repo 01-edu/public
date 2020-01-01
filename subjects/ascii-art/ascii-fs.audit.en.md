@@ -1,6 +1,6 @@
 #### Functional Project Questions
 
-##### Try passing as arguments `""hello" standard"`
+##### Try passing as arguments `"hello" standard`
 ```
  _              _   _          
 | |            | | | |         
@@ -13,7 +13,7 @@
 ```
 
 ###### Does it display the string in the right template as an ASCII art representation as above?  
-##### Try passing as arguments `""hello world" shadow"`
+##### Try passing as arguments `"hello world" shadow`
 ```
                                                                                         
 _|                _| _|                                                     _|       _| 
@@ -25,7 +25,7 @@ _|    _|   _|_|_| _| _|   _|_|             _|      _|       _|_|   _|       _|  
                                                                                         
 ```
 ###### Does it display the string in the right template as an ASCII art representation as above?  
-##### Try passing as arguments `""nice 2 meet you" thinkertoy"`
+##### Try passing as arguments `"nice 2 meet you" thinkertoy`
 ```
                                                                        
                        --                       o                      
@@ -37,7 +37,7 @@ o  o |  o-o o-o       o--o       o o o o-o o-o  o        o--O o-o o--o
                                                          o--o          
 ```
 ###### Does it display the string in the right template as an ASCII art representation as above?  
-##### Try passing as arguments `""you & me" standard"`
+##### Try passing as arguments `"you & me" standard`
 ```
                                                                 
                                 ___                             
@@ -49,7 +49,7 @@ o  o |  o-o o-o       o--o       o o o o-o o-o  o        o--O o-o o--o
 |___/                                                           
 ```
 ###### Does it display the string in the right template as an ASCII art representation as above?  
-##### Try passing as arguments `""123" shadow"`
+##### Try passing as arguments `"123" shadow`
 ```
                        
   _|   _|_|   _|_|_|   
@@ -61,7 +61,7 @@ _|_| _|    _|       _|
                        
 ```
 ###### Does it display the stirng in the right template as an ASCII art representation as above?
-##### Try passing as arguments `"/(\") thinkertoy"`
+##### Try passing as arguments `/(\") thinkertoy`
 ```
          o o    
     o  / | | \  
@@ -73,7 +73,7 @@ o      \     /
                 
 ```
 ###### Does it display the stirng in the right template as an ASCII art representation as above?
-##### Try passing as arguments `"ABCDEFGHIJKLMNOPQRSTUVWXYZ shadow"`
+##### Try passing as arguments `ABCDEFGHIJKLMNOPQRSTUVWXYZ shadow`
 ```
                                                                                                                                                                                                                                                                
   _|_|   _|_|_|     _|_|_| _|_|_|   _|_|_|_| _|_|_|_|   _|_|_| _|    _| _|_|_|       _| _|    _| _|       _|      _| _|      _|   _|_|   _|_|_|     _|_|     _|_|_|     _|_|_| _|_|_|_|_| _|    _| _|      _| _|          _| _|      _| _|      _| _|_|_|_|_|  
@@ -85,7 +85,7 @@ _|    _| _|_|_|     _|_|_| _|_|_|   _|_|_|_| _|         _|_|_| _|    _| _|_|_|  
                                                                                                                                                                                                                                                                
 ```
 ###### Does it display the stirng in the right template as an ASCII art representation as above?
-##### Try passing as arguments `"\"#$%&/()*+,-./ thinkertoy"`
+##### Try passing as arguments `\"#$%&/()*+,-./ thinkertoy`
 ```
 o o         | |                                                  
 | |  | |   -O-O-      O          o  / \  o | o                 o 
@@ -97,7 +97,7 @@ o o         | |
                                                                  
 ```
 ###### Does it display the stirng in the right template as an ASCII art representation as above?
-##### Try passing as arguments `""It's Working" thinkertoy"`
+##### Try passing as arguments `"It's Working" thinkertoy`
 ```
           o                                              
 o-O-o  o  |           o       o         o                
