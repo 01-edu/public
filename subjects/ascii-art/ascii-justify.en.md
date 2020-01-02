@@ -9,6 +9,8 @@ You must follow the same [instructions](https://github.com/01-edu/public/blob/ma
 - right
 - justify
 
+- You must adapt your representation to the terminal size. If you reduce the terminal window the graphical representation should be adapted to the terminal size.
+
 This project will help you learn about :
 
 - Client utilities.
@@ -55,7 +57,7 @@ This project will help you learn about :
 |                                                                                          _|    _|   _|_|_| _| _|   _|_|   |
 |                                                                                                                           |
 |                                                                                                                           |
-|student@ubuntu:~/ascii-art$ ./ascii-art "hello" shadow --align=justify                                                     |
+|student@ubuntu:~/ascii-art$ ./ascii-art "how are you" shadow --align=justify                                               |
 |                                                                                                                           |
 |_|                                                                                                                         |
 |_|_|_|     _|_|   _|      _|      _|                  _|_|_| _|  _|_|   _|_|                    _|    _|   _|_|   _|    _| |

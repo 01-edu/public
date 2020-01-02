@@ -1,4 +1,4 @@
-#### Functional Project Questions
+#### Functional
 
 ##### Try bad example 00 (https://github.com/01-edu/public/blob/master/subjects/tetrisoptimizer/badexample00.md).
 `ERROR`

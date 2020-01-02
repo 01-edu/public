@@ -1,4 +1,4 @@
-#### Functional Project Questions
+#### Functional
 
 ##### Try passing as arguments `"First\nTest" shadow --output=test00.txt`
 ```
@@ -50,7 +50,7 @@ student$ cat test02.txt
 
 ```
 ###### Does it save the right output in the right file?
-##### Try passing as arguments `"432 -> #$%&@" shadow --output=test03.txt`
+##### Try passing as arguments `"32 -> #$%&@" shadow --output=test03.txt`
 ```
 student$ cat test03.txt
                                                                                                                   
@@ -78,7 +78,7 @@ _|_|_|_|_| _|
 
 ```
 ###### Does it save the right output in the right file?
-##### Try passing as arguments `"123 -> \"#$%@" thinkertoy --output=test05.txt`
+##### Try passing as arguments `"23 -> \"#$%@" thinkertoy --output=test05.txt`
 ```
 student$ cat test05.txt
                                     o o         | |               
@@ -121,8 +121,7 @@ student$ cat test07.txt
 ```
 ###### Does it save the right output in the right file?
 
-###### Does it save the right output in the right file?
-###### Are all the test files saved?
+###### Are all the test files tested saved?
 
 #### Basic
 
