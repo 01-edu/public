@@ -1,6 +1,6 @@
-#### Functional Project Questions
+#### Functional
 
-##### Try passing as argument "hello".
+##### Try passing as argument `"hello"`.
 ```
  _              _   _          
 | |            | | | |         
@@ -12,7 +12,7 @@
                                
 ```
 ###### Does it display the right graphical representation in ASCII as above?
-##### Try passing as argument "HELLO".
+##### Try passing as argument `"HELLO"`.
 ```
  _    _   ______   _        _         ____   
 | |  | | |  ____| | |      | |       / __ \  
@@ -24,7 +24,7 @@
                                              
 ```
 ###### Does it display the right graphical representation in ASCII as above?
-##### Try passing as argument "HeLlo HuMaN".
+##### Try passing as argument `"HeLlo HuMaN"`.
 ```
  _    _          _        _                 _    _           __  __           _   _  
 | |  | |        | |      | |               | |  | |         |  \/  |         | \ | | 
@@ -36,7 +36,7 @@
                                                                                      
 ```
 ###### Does it display the right graphical representation in ASCII as above?
-##### Try passing as argument "1Hello 2There".
+##### Try passing as argument `"1Hello 2There"`.
 ```
      _    _          _   _                         _______   _                           
  _  | |  | |        | | | |                ____   |__   __| | |                          
@@ -48,7 +48,7 @@
                                                                                          
 ```
 ###### Does it display the right graphical representation in ASCII as above?
-##### Try passing as argument "Hello\nThere".
+##### Try passing as argument `"Hello\nThere"`.
 ```
  _    _          _   _          
 | |  | |        | | | |         
@@ -68,7 +68,7 @@
                                        
 ```
 ###### Does it display the right graphical representation in ASCII as above?
-##### Try passing "{Hello & There #}" as argument.
+##### Try passing `"{Hello & There #}"` as argument.
 ```
    __  _    _          _   _                                _______   _                                    _  _    __    
   / / | |  | |        | | | |                 ___          |__   __| | |                                 _| || |_  \ \   
@@ -80,7 +80,7 @@
                                                                                                                          
 ```
 ###### Does it display the right graphical representation in ASCII as above?
-##### Try passing "hello There 1 to 2!" as argument.
+##### Try passing `"hello There 1 to 2!"` as argument.
 ```
  _              _   _                 _______   _                                            _                           _  
 | |            | | | |               |__   __| | |                                 _        | |                  ____   | | 
@@ -92,7 +92,7 @@
                                                                                                                             
 ```
 ###### Does it display the right graphical representation in ASCII as above?
-##### Try passing "MaD3IrA&LiSboN" as argument. 
+##### Try passing `"MaD3IrA&LiSboN"` as argument.
 ```
  __  __           _____            _____                              _        _    _____   _               _   _  
 |  \/  |         |  __ \   _____  |_   _|            /\       ___    | |      (_)  / ____| | |             | \ | | 
@@ -104,7 +104,7 @@
                                                                                                                    
 ```
 ###### Does it display the right graphical representation in ASCII as above?
-##### Try passing "1a\"#FdwHywR&/()=" as argument.
+##### Try passing `"1a\"#FdwHywR&/()="` as argument.
 ```
              _ _     _  _     ______       _              _    _                      _____                  __   __ __            
  _          ( | )  _| || |_  |  ____|     | |            | |  | |                    |  __ \    ___         / /  / / \ \   ______  
@@ -116,7 +116,7 @@
                                                                   |___/                                                            
 ```
 ###### Does it display the right graphical representation in ASCII as above?
-##### Try passing "{|}~" as argument.
+##### Try passing `"{|}~"` as argument.
 ```
    __  _  __     /\/|
   / / | | \ \   |/\/ 
@@ -128,7 +128,7 @@
       |_|            
 ```
 ###### Does it display the right graphical representation in ASCII as above?
-##### Try passing "[\]^_ \`a" as argument.
+##### Try passing `"[\]^_ \`a"` as argument.
 ```
  ___  __       ___   /\                  _         
 |  _| \ \     |_  | |/\|                ( )        
@@ -140,7 +140,7 @@
                          |______|                  
 ```
 ###### Does it display the right graphical representation in ASCII as above?
-##### Try passing "RGB" as argument.
+##### Try passing `"RGB"` as argument.
 ```
  _____     _____   ____   
 |  __ \   / ____| |  _ \  
@@ -152,7 +152,7 @@
                           
 ```
 ###### Does it display the right graphical representation in ASCII as above?
-##### Try passing ":;<=>?@" as argument.
+##### Try passing `":;<=>?@"` as argument.
 ```
            __          __     ___            
  _   _    / /  ______  \ \   |__ \     ____  
@@ -164,7 +164,7 @@
                                              
 ```
 ###### Does it display the right graphical representation in ASCII as above?
-##### Try passing "\!\" #$%&'()*+,-./" as argument.
+##### Try passing `"\!\" #$%&'()*+,-./"` as argument.
 ```
 __       _   _ _           _  _      _     _   __           _    __ __       _                                    __ 
 \ \     | | ( | )        _| || |_   | |   (_) / /   ___    ( )  / / \ \   /\| |/\     _                          / / 
@@ -176,7 +176,7 @@ __       _   _ _           _  _      _     _   __           _    __ __       _  
                                                                                                                      
 ```
 ###### Does it display the right graphical representation in ASCII as above?
-##### Try passing "ABCDEFGHIJKLMNOQPRSTUVWXYZ" as argument.
+##### Try passing `"ABCDEFGHIJKLMNOQPRSTUVWXYZ"` as argument.
 ```
             ____     _____   _____    ______   ______    _____   _    _   _____        _   _  __  _        __  __   _   _    ____    _____     ____    _____     _____   _______   _    _  __      __ __          __ __   __ __     __  ______ 
     /\     |  _ \   / ____| |  __ \  |  ____| |  ____|  / ____| | |  | | |_   _|      | | | |/ / | |      |  \/  | | \ | |  / __ \  |  __ \   / __ \  |  __ \   / ____| |__   __| | |  | | \ \    / / \ \        / / \ \ / / \ \   / / |___  / 
@@ -189,7 +189,7 @@ __       _   _ _           _  _      _     _   __           _    __ __       _  
 
 ```
 ###### Does it display the right graphical representation in ASCII as above?
-##### Try passing "abcdefghijklmnopqrstuvwxyz" as argument.
+##### Try passing `"abcdefghijklmnopqrstuvwxyz"` as argument.
 ```
          _                  _           __           _       _     _          _                                                            _                                                    
         | |                | |         / _|   __ _  | |     (_)   (_)  _     | |                                                          | |                                                   
