@@ -15,6 +15,7 @@ This project will help you learn about :
   - Portable Document Format (pdf)
   - Text File (txt)
   - [Here are some more examples](https://en.wikipedia.org/wiki/Document_file_format)
+- HTTP headers
 - Ways to receive data.
 - Ways to output data.
 
