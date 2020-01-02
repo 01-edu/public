@@ -181,7 +181,7 @@
 `[The earliest foundations of what would become computer science predate the invention of the modern digital computer]`
 ###### Does the function returns the value above?
 ##### Try with the argument: `str = Machines for calculating fixed numerical tasks such as the abacus have existed since antiquity,`
-[Machines for calculating fixed numerical tasks such as the abacus have existed since antiquity,]
+`[Machines for calculating fixed numerical tasks such as the abacus have existed since antiquity,]`
 ###### Does the function returns the value above?
 ##### Try with the argument: `str =  aiding in computations such as multiplication and division .`
 `[aiding in computations such as multiplication and division .]`
@@ -190,7 +190,7 @@
 `[Algorithms for performing computations have existed since antiquity, even before the development of sophisticated computing equipment.]`
 ###### Does the function returns the value above?
 ##### Try with the argument: `str = Wilhelm Schickard designed and constructed the first working mechanical calculator in 1623.[4]`
-[Wilhelm Schickard designed and constructed the first working mechanical calculator in 1623.[4]]
+`[Wilhelm Schickard designed and constructed the first working mechanical calculator in 1623.[4]]`
 ###### Does the function returns the value above?
 ##### Try with the argument: `str =  In 1673, Gottfried Leibniz demonstrated a digital mechanical calculator,`
 `[In 1673, Gottfried Leibniz demonstrated a digital mechanical calculator,]`
