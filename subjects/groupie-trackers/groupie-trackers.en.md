@@ -4,13 +4,13 @@
 
 Groupie Trackers consists on receiving a given API and manipulate the data contained in it, in order to create a site.
 
-- It will be given an [API](http://api_name.org/api), that consists in four parts:
+- It will be given an [API](http://groupietrackers.org/api), that consists in four parts:
   - The first one, `artists`, containing information about some bands and artists like their name(s), image, in which year they began their activity and the date of their first album.
 
     ```json
      {
         "id": 1,
-        "image": "http://localhost:8080/api/images/queen.jpeg",
+        "image": "http://groupietrackers/api/images/queen.jpeg",
         "name": "Queen",
         "members": [
             "Freddie Mercury",
@@ -23,9 +23,9 @@ Groupie Trackers consists on receiving a given API and manipulate the data conta
         ],
         "creationDate": 1970,
         "firstAlbum": "13-07-1973",
-        "locations": "http://localhost:8080/api/locations/1",
-        "consertDates": "http://localhost:8080/api/dates/1",
-        "relations": "http://localhost:8080/api/relation/1"
+        "locations": "http://groupietrackers/api/locations/1",
+        "consertDates": "http://groupietrackers/api/dates/1",
+        "relations": "http://groupietrackers/api/relation/1"
     }
     ```
 
