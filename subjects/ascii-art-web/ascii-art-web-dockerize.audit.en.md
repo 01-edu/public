@@ -1,6 +1,6 @@
 #### Functional
 
-###### Does the project present a DockerFile?
+###### Does the project have a DockerFile?
 
 ##### Try running the [command](https://docs.docker.com/engine/reference/commandline/image_build/) `"docker image build [OPTIONS] PATH | URL | -"` to build the image. (example : `"docker image build -f Dockerfile -t <name_of_the_image> ."`).
 ```
@@ -27,6 +27,7 @@ drwxr-xr-x   1 root root 4096 Dec 28 15:31 bin
 drwxr-xr-x   2 root root 4096 Sep  8 10:51 templates
 I have no name!@51c2efe2d366:/$ exit
 exit
+student$
 ```
 ###### Is the file system for the containers well organized?
 

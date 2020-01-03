@@ -33,9 +33,9 @@ This project will help you learn about :
 
 - The web server must be created in **Go**.
 - The code must respect the [good practices](https://github.com/01-edu/public/blob/master/subjects/good-practices.en.md).
+- You must use Docker.
 - The project must have a **Dockerfile**.
 - Your Dockerfile must respect the [Dockerfile good practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/).
-- You must use Docker.
 
 ### Usage
 
