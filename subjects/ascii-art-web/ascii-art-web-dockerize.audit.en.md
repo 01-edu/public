@@ -35,7 +35,7 @@ student$
 
 ###### Does the project present no [unused object](https://docs.docker.com/config/pruning/)?
 
-#### General Requirements
+#### General
 
 ###### +Does the project present a script to build the images and containers? (using a script to simplify the build)
 

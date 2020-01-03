@@ -77,7 +77,7 @@ o-o-o o--o o-o          o   o      o   o-o  | |  o   o
 ###### Has the website runned without crashing at anytime?
 ###### Is the server written in Go?
 
-#### General Requirements
+#### General
 
 ###### +Does the server present all the needed [handlers and patterns](https://golang.org/pkg/net/http/#HandleFunc) for the http requests?
 
