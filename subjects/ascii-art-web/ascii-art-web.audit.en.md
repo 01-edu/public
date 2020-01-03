@@ -73,8 +73,9 @@ o-o-o o--o o-o          o   o      o   o-o  | |  o   o
 ##### Try making a request to the server (clicking a button to generate the ascii-art representation on the website)
 ###### Is the communication between [server and client](https://www.geeksforgeeks.org/client-server-model/) well established?
 
-###### Does the server present the right [HTTP methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)?
+###### Does the server use the right [HTTP method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)?
 ###### Has the website runned without crashing at anytime?
+###### Is the server written in Go?
 
 #### General Requirements
 
