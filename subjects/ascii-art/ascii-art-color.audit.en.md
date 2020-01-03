@@ -17,7 +17,7 @@
 ##### Try passing as arguments `"RGB()" --color=blue`, in order to color just the B.
 ###### Does it display the expected result?
 
-#### General Requirements
+#### General
 
 ##### +Is it easy/intuitive to specify letter(s) to be coloured?
 ##### +Can you use more than one color in the same string?
