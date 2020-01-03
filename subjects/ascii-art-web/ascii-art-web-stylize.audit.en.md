@@ -5,7 +5,7 @@
 ###### Is the design [responsive](https://smallbiztrends.com/2013/05/what-is-responsive-web-design.html)? (when you change the width/ height of the page, is the site consistent?)
 ###### Is the design [interactive](https://en.m.wikipedia.org/wiki/Interactive_design)? (does it interact with the actions of the user?)
 
-#### General Requirements
+#### General
 
 ###### +Is it easy to use the web site?
 ###### +Does it have a background?
