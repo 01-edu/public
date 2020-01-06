@@ -105,7 +105,7 @@ This project will help you learn about :
 - In case of there are no arguments the program displays nothing (0 instructions).
 
 ```console
-student$ ./push_swap 2 1 3 6 5 8
+student$ ./push_swap "2 1 3 6 5 8"
 sa
 pb
 pb
@@ -114,7 +114,7 @@ sa
 pa
 pa
 pa
-student$ ./push_swap 0 one 2 3
+student$ ./push_swap "0 one 2 3"
 Error
 student$
 ```
@@ -134,15 +134,15 @@ pb
 sa
 rra
 pa
-student$ echo -e "rra\npb\nsa\nrra\npa\n" | ./checker 3 2 1 0
+student$ echo -e "rra\npb\nsa\nrra\npa\n" | ./checker "3 2 1 0"
 OK
 student$ echo -e "sa\n\nrra\npb"
 sa
 rra
 pb
-student$ echo -e "sa\n\nrra\npb\n" | ./checker 3 2 1 0
+student$ echo -e "sa\n\nrra\npb\n" | ./checker "3 2 1 0"
 KO
-student$ ./checker 3 2 one 0
+student$ echo -e "sa\n\nrra\npb\n" | ./checker "3 2 one 0"
 Error
 student$
 ```
@@ -158,9 +158,9 @@ student$
 ### Usage
 
 ```console
-student$ ARG="4 67 3 87 23"; ./push_swap $ARG | wc -l
+student$ ARG="4 67 3 87 23"; ./push_swap "$ARG" | wc -l
        6
-student$ ARG="4 67 3 87 23"; ./push_swap $ARG | ./checker $ARG
+student$ ARG="4 67 3 87 23"; ./push_swap "$ARG" | ./checker "$ARG"
 OK
 ```
 
