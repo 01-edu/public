@@ -1,29 +1,10 @@
 #### Functional
 
-###### Is the solution of the push_swap the simplest possible? (with the fewer instructions)
-###### Is the program sorting the stack correctly?
-
 ##### Try to run `"./push_swap"`.
-```
-
-```
 ###### Does it display nothing?
 ##### Try to run `"./push_swap 2 1 3 6 5 8"`.
-```
-sa
-pb
-pb
-pb
-sa
-pa
-pa
-pa
-```
-###### Does it display the right result as above?
+###### Does it display a valid solution and less than 9 instructions?
 ##### Try to run `"./push_swap 0 1 2 3 4 5"`.
-```
-
-```
 ###### Does it display nothing?
 ##### Try to run `"./push_swap 0 one 2 3"`.
 ```
@@ -36,11 +17,8 @@ Error
 ```
 ###### Does it display the right result as above?
 ##### Try to run `"./push_swap <5 random numbers>"` with 5 random numbers instead of the tag.
-###### Does it displays less than 12 commands?
+###### Does it displays a valid solution and less than 12 instructions?
 ##### Try to run `"echo -e " " | ./checker "`.
-```
-
-```
 ###### Does it display the right result as above?
 ##### Try to run `"./checker 0 one 2 3"`.
 ```
