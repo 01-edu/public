@@ -33,3 +33,4 @@ This project will help you learn about:
 - The backend must be written in **Go**.
 - You must handle website errors.
 - The code must respect the [good practices](https://github.com/01-edu/public/blob/master/subjects/good-practices.en.md)
+- It is recommended that the code should present a **test file**.
