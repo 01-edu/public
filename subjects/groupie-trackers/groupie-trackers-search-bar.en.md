@@ -15,7 +15,7 @@ Groupie-trackers-search-bar consists of creating a functional program that searc
 - The program must handle case sensitive.
 - The search bar must have typing suggestions as you write.
   - The search bar must identify and display in each suggestion the individual type of the search cases. (ex: Freddie Mercury -> member)
-  - Example if you start writing `"phil"` it should appear as suggestions `Phil Collins -> member` and `Phil Collins -> artist/band`. This is just an example of display.
+  - Example if you start writing `"phil"` it should appear as suggestions `Phil Collins -> member` and `Phil Collins -> artist/band`. This is just an example of a display.
 
 This project will help you learn about :
 

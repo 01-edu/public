@@ -29,7 +29,6 @@
 ###### +Does the search bar have typing suggestions as you write?
 ###### +Is there a search icon and button?
 ###### +Is the search bar or button Animated?
-###### +Can you search for a specific first album date?*****
 
 #### Basic
 
