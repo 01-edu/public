@@ -1,5 +1,11 @@
 #### Functional
 
+##### Try to start typing in the search bar `"Billie Joe"`.
+###### Does it present as suggestions the member "Billie Joe Armstrong"?
+
+##### Try to start typing in the search bar `"Japan"`.
+###### Does it present as suggestions "saitama-japan", "osaka-japan" and "nagoya-japan"?
+
 ##### Try to search for the artist/band `"Scorpions"`.
 ###### Does it present as result "Scorpions"?
 
