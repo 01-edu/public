@@ -255,7 +255,7 @@ str = <<==123==>>In<<==123==>>1820,<<==123==>>Thomas<<==123==>>de<<==123==>>Colm
 `str shh psst`
 ###### Does the program returns the value above?
 ##### Try executing the program passing as argument: `"happy thoughts" "good luck"`
-`happy thoughts good luck`
+`huppy thooghts guod lack`
 ###### Does the program returns the value above?
 ##### Try executing the program passing as argument: `"al's elEphAnt is overly underweight!"
 `il's elephunt es ovirly AndErweaght!`
