@@ -12,7 +12,6 @@ You must follow the same [principles](https://github.com/01-edu/public/blob/mast
   - filter by number of members
   - filter by locations of concerts
 
-
 - You must use at least these two types of filters:
   - a range filter
   - a check box filter

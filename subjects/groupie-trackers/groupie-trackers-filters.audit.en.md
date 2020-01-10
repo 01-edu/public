@@ -1,16 +1,11 @@
 #### Functional
 
-###### Does the project have a filter for the creation date?
-###### Does the project have a filter for the first album date?
-###### Does the project have a filter for the number of members?
-###### Does the project have a filter for the locations of concerts?
-
 ###### Does the project have a range [filter](https://dribbble.com/shots/1751801-Ui-Elements-Social-Network-Analytics/attachments/284260)?
 
 ###### Does the project have a check box [filter](https://dribbble.com/shots/1751801-Ui-Elements-Social-Network-Analytics/attachments/284260)?
 
-##### Try to filter the artists/bands which the creation date is between `"1990"` and `"2000"`. 
-###### Did it appear  as a result SOJA, Mamonas Assassinas, Thirty Seconds to Mars, Nickleback, NWA, Gorillaz, Linkin Park, Eminem  and Coldplay?
+##### Try to filter the artists/bands which the creation date is between `"1995"` and `"2000"`. 
+###### Did it appear  as a result SOJA, Mamonas Assassinas, Thirty Seconds to Mars, Nickleback, NWA, Gorillaz, Linkin Park, Eminem and Coldplay?
 
 ##### Try to filter the artists/bands that recorded their first album between `"1990"` and `"1992"`.
 ###### Did it appear as a result Pearl Jam and Red Hot Chili Peppers?"
@@ -24,7 +19,7 @@
 ##### Try to filter the artists/bands which the creation date is between `"1970"` and `"2000"` and have only `"1"` member (solo artists).
 ###### Did it appear as a result Bobby McFerrins and Eminem?
 
-##### Try to filter the artists/bands which the creation date is and recorded their first album after `"2010"`.
+##### Try to filter the artists/bands which the creation date is after `"2010"` and recorded their first album after `"2010"`.
 ###### Did it appear as a result XXXTentacion, Juice Wrld, Alec Benjamin and Post Malone?
 
 ##### Try to filter the artists/bands that have/had concerts in `"Washington, USA"` and have more than 3 members.
@@ -37,7 +32,7 @@
 
 #### General
 
-###### +Does the result of the filters change while you are changing the filters (is it synchronous)?·2
+###### +Does the result of the filters change while you are changing the filters (is it asynchronous)?
 
 #### Basic
 
