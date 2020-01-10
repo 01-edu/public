@@ -22,7 +22,7 @@ This project will help you learn about :
 - The code must respect the [**good practices**](https://github.com/01-edu/public/blob/master/subjects/good-practices.en.md).
 - It is recommended that the code should present a **test file**.
 
-- It will be given some [**banner**](https://github.com/01-edu/public/blob/master/subjects/ascii-art/standard.txt) files with a specific graphical template representation of ASCII. The files are formatted in a way that it is not necessary to change them.
+- It will be given some [**banner**](https://github.com/01-edu/public/blob/master/subjects/ascii-art) files with a specific graphical template representation of ASCII. The files are formatted in a way that it is not necessary to change them.
 
 ### Banner Format
 

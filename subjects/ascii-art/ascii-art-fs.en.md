@@ -18,7 +18,7 @@ This project will help you learn about :
 - Your project must be written in **Go**.
 - The code must respect the [**good practices**](https://github.com/01-edu/public/blob/master/subjects/good-practices.en.md).
 - It is recommended that the code should present a **test file**.
-- You can see all about the **banners** [here](https://github.com/01-edu/public/tree/master/subjects/ascii-art).
+- You can see all about the **banners** [here](https://github.com/01-edu/public/tree/master/subjects/ascii-art/ascii-art.en.md).
 
 ### Usage
 
