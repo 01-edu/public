@@ -2,19 +2,19 @@
 
 ### Objectives
 
-Groupie Trackers consists on receiving a given API and manipulate the data contained in it, in order to create a site, displaying all or part of the information.
+Groupie Trackers consists on receiving a given API and manipulate the data contained in it, in order to create a site, displaying the information.
 
 - It will be given an [API](https://groupietrackers.herokuapp.com/api), that consists in four parts:
 
-  - The first one, `artists`, containing information about some bands and artists like their name(s), image, in which year they began their activity and the date of their first album.
+  - The first one, `artists`, containing information about some bands and artists like their name(s), image, in which year they began their activity, the date of their first album and the members.
 
   - The second one, `locations`, consists in their last and/or upcoming concert locations.
 
   - The third one, `dates`, consists in their last and/or upcoming concert dates.
 
-  - And the last one, `relations`, does the link between all the other parts, `artists`, `dates` and `locations`.
+  - And the last one, `relation`, does the link between all the other parts, `artists`, `dates` and `locations`.
 
-- It should be used at least the `artists` and `relations` parts given in the API.
+- It should be used at least the `artists` and the `relation` parts given in the API.
 
 - Given all this you should build a user friendly website where you can display the bands info through several data visualizations (examples : blocks, cards, tables, list, pages, graphics, etc). It is up to you to decide which info you will present and how you will display it.
 
@@ -38,4 +38,4 @@ This project will help you learn about :
 
 ### Usage
 
-- You can see an example of a RESTapi [here](https://rickandmortyapi.com/)
+- You can see an example of a RESTful API [here](https://rickandmortyapi.com/)

@@ -4,7 +4,7 @@
 
 ###### Is data from the relations being used?
 
-##### Try to see the "members" for the band `"Queen"`
+##### Try to see the "members" for the artist/band `"Queen"`
 ```
     "Freddie Mercury",
     "Brian May",
@@ -16,13 +16,13 @@
 ```
 ###### Does it present the right "member", as above?
 
-##### Try to see the "firstAlbum" for the band `"Gorillaz"`
+##### Try to see the "firstAlbum" for the artist/band `"Gorillaz"`
 ```
     "26-03-2001"
 ```
 ###### Does it present the right date for the "firstAlbum", as above?
 
-##### Try to see the "locations" for the band `"Travis Scott"`
+##### Try to see the "locations" for the artist/band `"Travis Scott"`
 ```
     "las_vegas-usa"
     "brooklyn-usa"
@@ -35,7 +35,7 @@
 ```
 ###### Does it present the right "locations" as above?
 
-##### Try to see the ""members"" for the band `"Foo Fighters"`.
+##### Try to see the ""members"" for the artist/band `"Foo Fighters"`.
 ```
     "Dave Grohl"
     "Nate Mendel"
@@ -46,9 +46,9 @@
 ```
 ###### Does it present the right members as above?
 
-##### Try to trigger an event using some kind of action, (ex: Clicking the mouse over a certain element, hovering the cursor over a certain element. Pressing a key on the keyboard. Resizing or closing the browser window. A form being submitted. A video being played, or paused, or finishing play. An error occurring. Etc)
-
+##### Try to trigger an event using some kind of action (ex: Clicking the mouse over a certain element, pressing a key on the keyboard, resizing or closing the browser window, a form being submitted, an error occurring, etc).
 ###### Does the event responds as expected?
+
 ###### Did the server crashed?
 ###### Does the server use the right [HTTP method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)?
 ###### Has the website runned without crashing at anytime?
@@ -60,15 +60,12 @@
 
 #### General
 
-###### +Does the event system run as asynchronous? Does the code present go routines or channels?
-###### +Is the  site hosted or deployed? Can you access the website through a DNS (Domain Name System)?
+###### +Does the event system run as asynchronous? (usage of go routines and channels)
+###### +Is the site hosted or deployed? Can you access the website through a DNS (Domain Name System)?
 
 #### Basic
 
 ###### +Does the code obey the [good practices](https://github.com/01-edu/public/blob/master/subjects/good-practices.en.md)?
-###### +Are the instructions in the website clear?
-###### +Does the project run using an API?
-###### +Can you export in multiple formats?
 
 #### Social
 
