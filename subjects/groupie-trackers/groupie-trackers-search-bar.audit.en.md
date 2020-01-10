@@ -1,22 +1,22 @@
 #### Functional
 
-##### Try to start typing in the search bar `"Billie Joe"`.
+##### Start typing in the search bar `"Billie Joe"`.
 ###### Does it present as suggestions the member "Billie Joe Armstrong"?
 
-##### Try to start typing in the search bar `"Japan"`.
-###### Does it present as suggestions "saitama-japan", "osaka-japan" and "nagoya-japan"?
+##### Start typing in the search bar `"Japan"`.
+###### Does it present as suggestions the locations "saitama-japan", "osaka-japan" and "nagoya-japan"?
 
 ##### Try to search for the artist/band `"Scorpions"`.
 ###### Does it present as result "Scorpions"?
 
 ##### Try to search for the member `"Jimi Hendrix"`.
-###### Does it present as result "The Jimi Hendrix Experience"?
+###### Does it present as result the artist/band "The Jimi Hendrix Experience"?
 
 ##### Try to search for the member `"Phil Collins"`.
 ###### Does it present as result "Phil Collins" and "Genesis"?
 
 ##### Try to search for the location `"london-uk"`.
-###### Does it present as result "Pink Floyd", "Led Zeppelin", 	"Aerosmith", "Alec Benjamin", 	"Nickelback", 	"Eagles", 	"Linkin Park" and 	"Coldplay"?
+###### Does it present as result "Pink Floyd", "Led Zeppelin", "Aerosmith", "Alec Benjamin", "Nickelback", "Eagles", "Linkin Park" and "Coldplay"?
 
 ##### Try to search for the artist/band `"queen"`.
 ###### Does it handle the case sensitive and presents as result "Queen"?
@@ -29,12 +29,6 @@
 
 ##### Try to search for the creation date `"1965"`.
 ###### Does it present as result "Scorpions" and "Pink Floyd"?
-
-#### General
-
-###### +Does the search bar have typing suggestions as you write?
-###### +Is there a search icon and button?
-###### +Is the search bar or button Animated?
 
 #### Basic
 
