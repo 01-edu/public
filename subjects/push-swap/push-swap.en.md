@@ -4,7 +4,7 @@
 
 Push_swap is a very simple and highly effective algorithm.You have at your disposal a list of `int` values, two stacks (`a` and `b`) and a set of instructions.
 
-You will have two write 2 programs:
+You will have to write 2 programs:
 
 - **push_swap**, which calculates and displays on the standard output the smallest program using push_swap instruction language that sorts integer arguments received.
 - **checker**, which takes integer arguments and reads instructions on the standard output. Once read, checker executes them and displays `OK` if integers are sorted. Otherwise, it will display `KO`.
@@ -28,7 +28,6 @@ These are the instructions that you can use to sort the stack :
 #### Example
 
 ```console
----------------------------------------
 Init a and b :
 2
 1
@@ -86,7 +85,6 @@ Exec pa pa pa:
 8
 = =
 a b
----------------------------------------
 ```
 
 This project will help you learn about :
@@ -116,6 +114,7 @@ pa
 pa
 student$ ./push_swap "0 one 2 3"
 Error
+student$ ./push_swap
 student$
 ```
 
@@ -128,6 +127,13 @@ student$
 - In case of there are no arguments the program displays nothing.
 
 ```console
+student$ ./checker "3 2 1 0"
+sa
+rra
+pb
+KO
+student$  echo -e "rra\npb\nsa\n" | ./checker "3 2 one 0"
+Error
 student$ echo -e "rra\npb\nsa\nrra\npa\n"
 rra
 pb
@@ -136,14 +142,7 @@ rra
 pa
 student$ echo -e "rra\npb\nsa\nrra\npa\n" | ./checker "3 2 1 0"
 OK
-student$ echo -e "sa\n\nrra\npb"
-sa
-rra
-pb
-student$ echo -e "sa\n\nrra\npb\n" | ./checker "3 2 1 0"
-KO
-student$ echo -e "sa\n\nrra\npb\n" | ./checker "3 2 one 0"
-Error
+student$ ./checker
 student$
 ```
 
