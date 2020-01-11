@@ -128,7 +128,7 @@
       |_|            
 ```
 ###### Does it display the right graphical representation in ASCII as above?
-##### Try passing `"[\]^_ \`a"` as argument.
+##### Try passing `"[\]^_ 'a"` as argument.
 ```
  ___  __       ___   /\                  _         
 |  _| \ \     |_  | |/\|                ( )        
