@@ -326,7 +326,7 @@ array = [1 2 3 A B C a b c] and f = func(a, b string) int {
 ##### Run the program with a diferent file and then run the system program `cat` with the same file.
 ###### Are the outputs identical?
 ##### Run both this program and the system program `cat` passing as an argument a random string that is not the name of a file
-###### Are the outputs identical?
+###### Are the outputs identical (ignoring the first word of and the capitalization of the output)?
 
 #### ztail
 
