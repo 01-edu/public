@@ -8,6 +8,7 @@ Ascii-art-web consists in creating and running a server, in which it will be pos
 - You can run your server **locally** (localhost) or using an **API**.
 - You must use the different [banners](https://github.com/01-edu/public/tree/master/subjects/ascii-art) for the website.
 - It should be available to choose between the banners.
+- You have to use the right [HTTP methods](https://www.tutorialspoint.com/http/http_methods.htm).
 - You need to have a well established connection between server and client.
 
 This project will help you learn about :

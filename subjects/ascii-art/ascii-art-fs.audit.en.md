@@ -60,7 +60,7 @@ _|_| _|    _|       _|
                        
                        
 ```
-###### Does it display the stirng in the right template as an ASCII art representation as above?
+###### Does it display the string in the right template as an ASCII art representation as above?
 ##### Try passing as arguments `/(\") thinkertoy`
 ```
          o o    
@@ -72,7 +72,7 @@ o      \     /
                 
                 
 ```
-###### Does it display the stirng in the right template as an ASCII art representation as above?
+###### Does it display the string in the right template as an ASCII art representation as above?
 ##### Try passing as arguments `ABCDEFGHIJKLMNOPQRSTUVWXYZ shadow`
 ```
                                                                                                                                                                                                                                                                
@@ -84,7 +84,7 @@ _|    _| _|_|_|     _|_|_| _|_|_|   _|_|_|_| _|         _|_|_| _|    _| _|_|_|  
                                                                                                                                                                                                                                                                
                                                                                                                                                                                                                                                                
 ```
-###### Does it display the stirng in the right template as an ASCII art representation as above?
+###### Does it display the string in the right template as an ASCII art representation as above?
 ##### Try passing as arguments `\"#$%&/()*+,-./ thinkertoy`
 ```
 o o         | |                                                  
@@ -96,7 +96,7 @@ o o         | |
             | |                                    |             
                                                                  
 ```
-###### Does it display the stirng in the right template as an ASCII art representation as above?
+###### Does it display the string in the right template as an ASCII art representation as above?
 ##### Try passing as arguments `"It's Working" thinkertoy`
 ```
           o                                              
@@ -108,7 +108,7 @@ o-O-o  o    o-o         o   o   o-o o   o  o | o  o o--O
                                                        | 
                                                     o--o 
 ```
-###### Does it display the stirng in the right template as an ASCII art representation as above?
+###### Does it display the string in the right template as an ASCII art representation as above?
 ###### Is the file system well organized?
 
 #### Basic
