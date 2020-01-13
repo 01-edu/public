@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [instructions](https://public.01-edu.org/subjects/ascii-art/ascii-art.en.md) as in the first subject but with colors.
+You must follow the same [instructions](https://public.01-edu.org/subjects/ascii-art/ascii-art.en) as in the first subject but with colors.
 
 - The output should manipulate colors using the **flag** `--color=<color>`, in which `--color` is the flag and `<color>` is the color of choice.
 - The colors must respect the [RGB](https://en.wikipedia.org/wiki/RGB_color_model) concept.
