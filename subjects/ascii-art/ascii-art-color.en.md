@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [instructions](https://github.com/01-edu/public/blob/master/subjects/ascii-art/ascii-art.en.md) as in the first subject but with colors.
+You must follow the same [instructions](https://public.01-edu.org/subjects/ascii-art/ascii-art.en.md) as in the first subject but with colors.
 
 - The output should manipulate colors using the **flag** `--color=<color>`, in which `--color` is the flag and `<color>` is the color of choice.
 - The colors must respect the [RGB](https://en.wikipedia.org/wiki/RGB_color_model) concept.
@@ -23,5 +23,5 @@ This project will help you learn about :
 ### Instructions
 
 - Your project must be written in **Go**.
-- The code must respect the [**good practices**](https://github.com/01-edu/public/blob/master/subjects/good-practices.en.md).
+- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices.en).
 - It is recommended that the code should present a **test file**.

@@ -37,7 +37,7 @@
 ###### +Does the project runs quickly and effectively (Favoring of recursive, no unnecessary data requests, etc.)?
 ###### +Is there a test file for this code?
 ###### +Are the tests checking each possible case?
-###### +Does the code obey the [good practices](https://github.com/01-edu/public/blob/master/subjects/good-practices.en.md)?
+###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
 
 #### Social
 

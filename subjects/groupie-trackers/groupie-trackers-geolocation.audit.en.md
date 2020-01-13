@@ -92,7 +92,7 @@ gulf shores alabama usa
 
 #### Basic
 
-###### +Does the code obey the [good practices](https://github.com/01-edu/public/blob/master/subjects/good-practices.en.md)?
+###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
 ###### +Are the instructions in the website clear?
 ###### +Does the project run using an API?
 
