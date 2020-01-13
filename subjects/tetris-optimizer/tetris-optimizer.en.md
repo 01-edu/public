@@ -8,12 +8,14 @@ Develop a program that receives only one argument, a path to a text file which w
 
 The program must :
 
--   Be written in Go
--   Compile successfully
--   Assemble all of the tetrominoes in order to create the smallest square possible
--   Identify each tetromino in the solution by printing them with uppercase latin letters (`A` for the first one, `B` for the second, etc)
--   Expect at least one tetromino in the text file
--   In case of bad format on the tetrominoes or bad file format it should print `ERROR`
+- Compile successfully
+- Assemble all of the tetrominoes in order to create the smallest square possible
+- Identify each tetromino in the solution by printing them with uppercase latin letters (`A` for the first one, `B` for the second, etc)
+- Expect at least one tetromino in the text file
+- In case of bad format on the tetrominoes or bad file format it should print `ERROR`
+- The project must be written in **Go**.
+- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices.en).
+- It is recommended that the code should present a **test file**.
 
 #### Example of a text File
 

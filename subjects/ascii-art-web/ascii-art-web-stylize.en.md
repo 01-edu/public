@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [principles](https://github.com/01-edu/public/blob/master/subjects/ascii-art-web/ascii-art-web.en.md) as the first subject.
+You must follow the same [principles](https://public.01-edu.org/subjects/ascii-art-web/ascii-art-web.en) as the first subject.
 
 Ascii-art-stylize consists on making your site :
 
@@ -19,7 +19,7 @@ This project will help you learn about:
 ### Instructions
 
 - Your project must contain **CSS**.
-- The code must respect the [**good practices**](https://github.com/01-edu/public/blob/master/subjects/good-practices.en.md).
+- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices.en).
 - We suggest you to search for the principles of a good website design.
 
 - It must be possible to see the text properly despite the colors used.
