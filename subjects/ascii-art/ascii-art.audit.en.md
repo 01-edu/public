@@ -130,14 +130,14 @@
 ###### Does it display the right graphical representation in ASCII as above?
 ##### Try passing `"[\]^_ 'a"` as argument.
 ```
- ___  __       ___   /\                  _         
-|  _| \ \     |_  | |/\|                ( )        
-| |    \ \      | |                      \|  __ _  
-| |     \ \     | |                         / _` | 
-| |      \ \    | |                        | (_| | 
-| |_      \_\  _| |                         \__,_| 
-|___|         |___|       ______                   
-                         |______|                  
+ ___  __       ___   /\                  _          
+|  _| \ \     |_  | |/\|                ( )         
+| |    \ \      | |                     |/    __ _  
+| |     \ \     | |                          / _` | 
+| |      \ \    | |                         | (_| | 
+| |_      \_\  _| |                          \__,_| 
+|___|         |___|       ______                    
+                         |______|                   
 ```
 ###### Does it display the right graphical representation in ASCII as above?
 ##### Try passing `"RGB"` as argument.
@@ -176,7 +176,7 @@ __       _   _ _           _  _      _     _   __           _    __ __       _  
                                                                                                                      
 ```
 ###### Does it display the right graphical representation in ASCII as above?
-##### Try passing `"ABCDEFGHIJKLMNOQPRSTUVWXYZ"` as argument.
+##### Try passing `"ABCDEFGHIJKLMNOPQRSTUVWXYZ"` as argument.
 ```
             ____     _____   _____    ______   ______    _____   _    _   _____        _   _  __  _        __  __   _   _    ____    _____     ____    _____     _____   _______   _    _  __      __ __          __ __   __ __     __  ______ 
     /\     |  _ \   / ____| |  __ \  |  ____| |  ____|  / ____| | |  | | |_   _|      | | | |/ / | |      |  \/  | | \ | |  / __ \  |  __ \   / __ \  |  __ \   / ____| |__   __| | |  | | \ \    / / \ \        / / \ \ / / \ \   / / |___  / 
