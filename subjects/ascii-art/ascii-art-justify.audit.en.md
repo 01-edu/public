@@ -30,11 +30,24 @@
 ##### Try passing as arguments `"a -> A b -> B c -> C" shadow --align=right`
 ###### Does it displays the correct result at the right side?
 
-###### Try reducing the terminal window and run `abcd shadow --align=right`
+##### Try reducing the terminal window and run `abcd shadow --align=right`
 ###### Does the representation adapt to the terminal size displaying the right result in the right side?
 
-###### Try reducing the terminal window and run `ola standard --align=center`
+##### Try reducing the terminal window and run `ola standard --align=center`
 ###### Does the representation adapt to the terminal size displaying the right result in the right side?
+
+
+##### Try passing as arguments a random string with lower and upper case letters, and the align flag ("--align=") followed by a random alignment (left, right, center or justify).
+###### Does it display the expected result?
+
+##### Try passing as arguments a random string with lower case letters, numbers and spaces, and the align flag ("--align=") followed by a random alignment (left, right, center or justify).
+###### Does it display the expected result?
+
+##### Try passing as arguments a random string with special characters, and the align flag ("--align=") followed by a random alignment (left, right, center or justify).
+###### Does it display the expected result?
+
+##### Try passing as arguments a random string with lower, upper case, spaces and numbers letters, and the align flag ("--align=") followed by a random alignment (left, right, center or justify).
+###### Does it display the expected result?
 
 #### Basic
 

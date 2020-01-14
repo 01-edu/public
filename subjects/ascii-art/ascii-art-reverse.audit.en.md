@@ -25,6 +25,18 @@
 `ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 ###### Does it display the value above?
 
+##### Try passing to the reverse flag a file containing a graphical representation in ASCII of a random string with lower and upper case letters.
+###### Does it display the expected result?
+
+##### Try passing to the reverse flag a file containing a graphical representation in ASCII of a random string with lower case letters, numbers and spaces.
+###### Does it display the expected result?
+
+##### Try passing to the reverse flag a file containing a graphical representation in ASCII of a random string with special characters.
+###### Does it display the expected result?
+
+##### Try passing to the reverse flag a file containing a graphical representation in ASCII of a random string with lower, upper case, spaces and numbers letters.
+###### Does it display the expected result?
+
 #### Basic
 
 ###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
