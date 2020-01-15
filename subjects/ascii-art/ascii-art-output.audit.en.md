@@ -50,7 +50,7 @@ student$ cat test02.txt
 
 ```
 ###### Does it save the right output in the right file?
-##### Try passing as arguments `"32 -> #$%&@" shadow --output=test03.txt`
+##### Try passing as arguments `"432 -> #$%&@" shadow --output=test03.txt`
 ```
 student$ cat test03.txt
                                                                                                                   
