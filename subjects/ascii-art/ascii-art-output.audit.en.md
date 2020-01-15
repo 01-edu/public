@@ -78,7 +78,7 @@ _|_|_|_|_| _|
 
 ```
 ###### Does it save the right output in the right file?
-##### Try passing as arguments `"23 -> \"#$%@" thinkertoy --output=test05.txt`
+##### Try passing as arguments `"123 -> \"#$%@" thinkertoy --output=test05.txt`
 ```
 student$ cat test05.txt
                                     o o         | |               
