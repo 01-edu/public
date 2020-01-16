@@ -36,11 +36,10 @@
 ##### Run both my-ls-1 and the system command `ls` with the flag: `-la`.
 ###### Does it displays the same files and/or folders in the same order?
 
-##### Try running the program with `-l -t` and a directory as arguments 
 ##### Run both my-ls-1 and the system command `ls` with the arguments: `-l -t <directory name>`.
 ###### Does it displays the same files and/or folders in the same order?
 
-##### Run both my-ls-1 and the system command `ls` with the arguments: `-lRr <direcory name`, in which the directory chosen conatins folders.
+##### Run both my-ls-1 and the system command `ls` with the arguments: `-lRr <directory name>`, in which the directory chosen contains folders.
 ###### Does it displays the same files and/or folders in the same order?
 
 #### General

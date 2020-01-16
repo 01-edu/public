@@ -13,6 +13,7 @@
     - `-a`
     - `-r`
     - `-t`
+  - Note that you can use various flags, in various ways, just like in `ls`.
   - When it comes to the `ls -l` display, it must be identical to the system command.
   - Other flags displays are up to you.
 
