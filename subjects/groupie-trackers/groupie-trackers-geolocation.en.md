@@ -6,9 +6,9 @@ You must follow the same [principles](https://public.01-edu.org/subjects/groupie
 
 - Groupie Trackers Geolocation consists on mapping the different concerts locations of a certain artist/band given by the Client.
 
-- You must use a process of converting addresses (ex: Germany Mainz) into geographic coordinates (ex: 49,59380 8,15052) which you must use to place markers for the concerts locations of a certain artist/band on a map
+- You must use a process of converting addresses (ex: Germany Mainz) into geographic coordinates (ex: 49,59380 8,15052) which you must use to place markers for the concerts locations of a certain artist/band on a map.
 
-- You are free to use the [Map API](https://rapidapi.com/blog/top-map-apis/) you found more appropriate
+- You are free to use the [Map API](https://rapidapi.com/blog/top-map-apis/) you found more appropriate.
 
 This project will help you learn about :
 
