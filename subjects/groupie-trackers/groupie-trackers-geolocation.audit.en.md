@@ -6,7 +6,7 @@
 ```
 los angeles usa,
 nagoya japan,
-osaka japon,
+osaka japan,
 penrose new zealand,
 saitama japan,
 dunedin new zealand,
@@ -18,7 +18,7 @@ georgia usa
 ```
 dusseldorf germany,
 manchester uk,
-new yourk usa,
+new york usa,
 aarhus denmark
 ```
 ###### Are the markers displayed in the locations above?
@@ -29,10 +29,10 @@ napoca germany,
 quebec canada,
 del mar usa,
 mexico city mexico,
-las vagas usa,
+las vegas usa,
 lisbon portugal,
 monterrey mexico,
-new yourk usa,
+new york usa,
 rio de janeiro brazil,
 riyadh saudi arabia,
 california usa,
@@ -59,14 +59,14 @@ philadelphia usa,
 uniondale usa,
 columbia usa,
 hershey usa,
-pittburgh usa,
+pittsburgh usa,
 rosemont usa,
-washigdon usa,
+washington usa,
 toronto usa,
 grand rapids usa,
 indianapolis usa,
 kansas city usa,
-montreals usa,
+montreal usa,
 omaha usa,
 st louis usa,
 newark usa
@@ -78,7 +78,7 @@ newark usa
 landgraaf netherlands,
 los angeles california usa,
 rio de janeiro brazil,
-athens grece,
+athens greece,
 boston massachusetts,
 dana point california usa,
 florence italia,
@@ -88,7 +88,7 @@ gulf shores alabama usa
 
 #### General
 
-###### +Does the markers connect in an historical order, using lines to see the path?
+###### +Does the markers connect in a historical order, using lines to see the path?
 
 #### Basic
 
