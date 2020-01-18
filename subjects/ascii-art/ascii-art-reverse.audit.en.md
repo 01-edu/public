@@ -10,7 +10,7 @@
 `#=\[`
 ###### Does it display the value above?
 ##### Try passing to the reverse flag `"--reverse=example03.txt"` the [example 03](https://public.01-edu.org/subjects/ascii-art/ascii-art-reverse-example).
-`(somthing&234)`
+`(somthimg&234)`
 ###### Does it display the value above?
 ##### Try passing to the reverse flag `"--reverse=example04.txt"` the [example 04](https://public.01-edu.org/subjects/ascii-art/ascii-art-reverse-example).
 `abcdefghijklmnopqrstuvwxyz`
