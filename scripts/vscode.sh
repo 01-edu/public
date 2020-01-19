@@ -7,7 +7,8 @@ cd $script_dir
 . set.sh
 
 wget https://github.com/VSCodium/vscodium/releases/download/1.41.1/codium_1.41.1-1576787344_amd64.deb
-dpkg -i codium_1.40.2-1574798581_amd64.deb
+dpkg -i codium_1.41.1-1576787344_amd64.deb
+rm codium_1.41.1-1576787344_amd64.deb
 
 ln -s /usr/bin/codium /usr/local/bin/code
 
