@@ -15,10 +15,10 @@
 ##### Try passing as arguments `23/32 standard --align=right`
 ###### Does it displays the correct result at the right side?
 
-##### Try passing as arguments `ABCabc123 thinkertoy--align=right`
+##### Try passing as arguments `ABCabc123 thinkertoy --align=right`
 ###### Does it displays the correct result at the right side?
 
-##### Try passing as arguments `!#$%&" thinkertoy --align=cente`
+##### Try passing as arguments `'!#$%&"' thinkertoy --align=center`
 ###### Does it displays the correct result at the center?
 
 ##### Try passing as arguments `"23Hello World!" standard --align=left`
@@ -30,10 +30,10 @@
 ##### Try passing as arguments `"a -> A b -> B c -> C" shadow --align=right`
 ###### Does it displays the correct result at the right side?
 
-###### Try reducing the terminal window and run `abcd shadow --align=right`
+##### Try reducing the terminal window and run `abcd shadow --align=right`
 ###### Does the representation adapt to the terminal size displaying the right result in the right side?
 
-###### Try reducing the terminal window and run `ola standard --align=center`
+##### Try reducing the terminal window and run `ola standard --align=center`
 ###### Does the representation adapt to the terminal size displaying the right result in the right side?
 
 #### Basic
