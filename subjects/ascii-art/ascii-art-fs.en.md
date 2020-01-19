@@ -33,7 +33,7 @@ student@ubuntu:~/ascii-art$ ./ascii-art "hello" standard
  |_| |_|   \___|  |_|  |_|   \___/  
                                     
                                     
-student@ubuntu:~/ascii-art$ ./ascii-art "Hello There" shadow
+student@ubuntu:~/ascii-art$ ./ascii-art "Hello There!" shadow
                                                                                          
 _|    _|          _| _|                _|_|_|_|_| _|                                  _| 
 _|    _|   _|_|   _| _|   _|_|             _|     _|_|_|     _|_|   _|  _|_|   _|_|   _| 
@@ -42,7 +42,7 @@ _|    _| _|       _| _| _|    _|           _|     _|    _| _|       _|       _|
 _|    _|   _|_|_| _| _|   _|_|             _|     _|    _|   _|_|_| _|         _|_|_| _| 
                                                                                          
                                                                                          
-student@ubuntu:~/ascii-art$ ./ascii-art "Hello There" thinkertoy
+student@ubuntu:~/ascii-art$ ./ascii-art "Hello There!" thinkertoy
                                                 
 o  o     o o           o-O-o o                  
 |  |     | |             |   |                o 
