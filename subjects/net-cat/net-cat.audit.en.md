@@ -4,7 +4,10 @@
 ###### Is the server listening for connections on the default port?
 
 ##### Try running `"./TCPChat" 2525 localhost`.
-###### Did server respond with usage?
+```
+[USAGE]: ./TCPChat $port
+```
+###### Did server respond with usage, as above?
 
 ##### Try running `"./TCPChat 2525"`.
 ###### Is the server listening for connections on the port 2525?
@@ -13,7 +16,7 @@
 ###### Does both clients connect to the server with success?
 
 ##### Try creating a server and 2 Clients.
-###### Did server respond you with linux logo and asked for the name?
+###### Did the server responded with a linux logo and asked for the name?
 
 ##### Try creating a server and 2 Clients.
 ###### Do all Clients receive a message informing that the Client joined the chat?
