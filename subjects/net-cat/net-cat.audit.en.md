@@ -1,13 +1,19 @@
 #### Functional
 
-##### Try running `"./net-cat -p 8080"`.
-###### Is the server listening for connections?
+##### Try running `"./TCPChat"`.
+###### Is the server listening for connections on the default port?
 
-##### Try opening 3 terminals, run on the first terminal the command `"./net-cat -p <port>"` and on the second and third terminal run the command `"./net-cat <host ip> <port>"`.
+##### Try running `"./TCPChat" 2525 localhost`.
+###### Did server respond with usage?
+
+##### Try running `"./TCPChat 2525"`.
+###### Is the server listening for connections on the port 2525?
+
+##### Try opening 3 terminals, run on the first terminal the command `"./TCPChat <port>"` and on the second and third terminal run the command `"nc <host ip> <port>"`.
 ###### Does both clients connect to the server with success?
 
-##### Try opening 4 terminals, run on the first terminal the command `"./net-cat -u -p <port>"` and on the second, third and fourth terminal run the command `"./net-cat -u <host ip> <port>"`.
-###### Does all clients connect to the server with [UDP](https://www.privateinternetaccess.com/blog/2018/12/tcp-vs-udp-understanding-the-difference/) connection?
+##### Try creating a server and 2 Clients.
+###### Did server respond you with linux logo and asked for the name?
 
 ##### Try creating a server and 2 Clients.
 ###### Do all Clients receive a message informing that the Client joined the chat?
@@ -31,16 +37,27 @@
 ###### Does the rest of the Clients receive a message notifying that the Client left?
 
 ##### Try creating a server and 3 Clients. Then send messages between the Clients.
-###### Are the messages identified by the name of each Client and the time that the messages was sent?
+```
+[2020-01-20 15:48:41][client.name]:[client.message]
+```
+###### Are the messages identified by the name of each Client and the time that the messages was sent, as above?
 
 ###### Is the connections between server and Clients well established?
+
+###### Does the project present go routines?
+
+###### Does the project use channels or mutexe?
+
+##### Are the students using just the allowed functions?
 
 #### General
 
 ###### +Can the Clients change their names?
 ###### +Is the chat group informed if a Client changes his name?
 ###### +Does the server produce logs about Clients activities?
+###### +Does the server logs saved into a file?
 ###### +Is there more NetCat flags implemented?
+###### +Does the project present a Terminal UI using JUST this package : https://github.com/jroimartin/gocui?
 
 #### Basic
 
