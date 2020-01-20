@@ -2,13 +2,13 @@
 
 ### Objectives
 
-You must follow the same [principles](https://github.com/01-edu/public/blob/master/subjects/groupie-trackers/groupie-trackers.en.md) as the first subject.
+You must follow the same [principles](https://public.01-edu.org/subjects/groupie-trackers/groupie-trackers.en) as the first subject.
 
 - Groupie Trackers Geolocation consists on mapping the different concerts locations of a certain artist/band given by the Client.
 
-- You must use a process of converting addresses (ex: Germany Mainz) into geographic coordinates (ex: 49,59380 8,15052) which you must use to place markers for the concerts locations of a certain artist/band on a map
+- You must use a process of converting addresses (ex: Germany Mainz) into geographic coordinates (ex: 49,59380 8,15052) which you must use to place markers for the concerts locations of a certain artist/band on a map.
 
-- You are free to use the [Map API](https://rapidapi.com/blog/top-map-apis/) you found more appropriate
+- You are free to use the [Map API](https://rapidapi.com/blog/top-map-apis/) you found more appropriate.
 
 This project will help you learn about :
 
@@ -23,7 +23,7 @@ This project will help you learn about :
 
 - The backend must be written in **Go**
 - You must handle website errors
-- The code must respect the [good practices](https://github.com/01-edu/public/blob/master/subjects/good-practices.en.md)
+- The code must respect the [good practices](https://public.01-edu.org/subjects/good-practices.en)
 - It is recommended that the code should present a **test file**
 
 ### Usage

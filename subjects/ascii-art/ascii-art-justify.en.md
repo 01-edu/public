@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [instructions](https://github.com/01-edu/public/blob/master/subjects/ascii-art/ascii-art.en.md) as in the first subject but the representation should be formatted using a **flag** `--align=<type>`, in which `type` can be :
+You must follow the same [instructions](https://public.01-edu.org/subjects/ascii-art/ascii-art.en) as in the first subject but the representation should be formatted using a **flag** `--align=<type>`, in which `type` can be :
 
 - center
 - left
@@ -23,7 +23,7 @@ This project will help you learn about :
 ### Instructions
 
 - Your project must be written in **Go**.
-- The code must respect the [**good practices**](https://github.com/01-edu/public/blob/master/subjects/good-practices.en.md).
+- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices.en).
 - It is recommended that the code should present a **test file**.
 
 ### Usage

@@ -50,7 +50,7 @@ student$ cat test02.txt
 
 ```
 ###### Does it save the right output in the right file?
-##### Try passing as arguments `"32 -> #$%&@" shadow --output=test03.txt`
+##### Try passing as arguments `"432 -> #$%&@" shadow --output=test03.txt`
 ```
 student$ cat test03.txt
                                                                                                                   
@@ -78,7 +78,7 @@ _|_|_|_|_| _|
 
 ```
 ###### Does it save the right output in the right file?
-##### Try passing as arguments `"23 -> \"#$%@" thinkertoy --output=test05.txt`
+##### Try passing as arguments `"123 -> \"#$%@" thinkertoy --output=test05.txt`
 ```
 student$ cat test05.txt
                                     o o         | |               
@@ -141,7 +141,7 @@ student$ cat test07.txt
 ###### +Is the output of the program well structured? Does any letter seems to be out of line?
 ###### +Is there a test file for this code?
 ###### +Are the tests checking each possible case?
-###### +Does the code obey the [good practices](https://github.com/01-edu/public/blob/master/subjects/good-practices.en.md)?
+###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
 
 #### Social
 

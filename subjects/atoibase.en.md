@@ -4,13 +4,15 @@
 
 Write a function that takes a `string` number and its `string` base in parameters and returns its conversion as an `int`.
 
-If the base or the `string` number is not valid it returns `0`:
+If the base is not valid it returns `0`.
 
 Validity rules for a base :
 
--   A base must contain at least 2 characters.
--   Each character of a base must be unique.
--   A base should not contain `+` or `-` characters.
+- A base must contain at least 2 characters.
+- Each character of a base must be unique.
+- A base should not contain `+` or `-` characters.
+
+String number must contain only elements that are in base.
 
 Only valid `string` numbers will be tested.
 

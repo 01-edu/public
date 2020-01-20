@@ -62,7 +62,7 @@ OK
 
 #### Basic
 
-###### +Does the code obey the [good practices](https://github.com/01-edu/public/blob/master/subjects/good-practices.en.md)?
+###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
 ###### +Is there a test file for this code?
 ###### +Are the tests checking each possible case?
 

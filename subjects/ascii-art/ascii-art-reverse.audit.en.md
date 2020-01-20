@@ -1,27 +1,27 @@
 #### Functional Project Questions
 
-##### Try passing to the reverse flag `"--reverse=example00.txt"` the [example 00](https://github.com/01-edu/public/blob/master/subjects/ascii-art/ascii-art-reverse-example.md).
+##### Try passing to the reverse flag `"--reverse=example00.txt"` the [example 00](https://public.01-edu.org/subjects/ascii-art/ascii-art-reverse-example).
 `Hello World`
 ###### Does it display the value above?
-##### Try passing to the reverse flag `"--reverse=example01.txt"` the [example 01](https://github.com/01-edu/public/blob/master/subjects/ascii-art/ascii-art-reverse-example.md).
+##### Try passing to the reverse flag `"--reverse=example01.txt"` the [example 01](https://public.01-edu.org/subjects/ascii-art/ascii-art-reverse-example).
 `123`
 ###### Does it display the value above?
-##### Try passing to the reverse flag `"--reverse=example02.txt"` the [example 02](https://github.com/01-edu/public/blob/master/subjects/ascii-art/ascii-art-reverse-example.md).
+##### Try passing to the reverse flag `"--reverse=example02.txt"` the [example 02](https://public.01-edu.org/subjects/ascii-art/ascii-art-reverse-example).
 `#=\[`
 ###### Does it display the value above?
-##### Try passing to the reverse flag `"--reverse=example03.txt"` the [example 03](https://github.com/01-edu/public/blob/master/subjects/ascii-art/ascii-art-reverse-example.md).
+##### Try passing to the reverse flag `"--reverse=example03.txt"` the [example 03](https://public.01-edu.org/subjects/ascii-art/ascii-art-reverse-example).
 `(somthing&234)`
 ###### Does it display the value above?
-##### Try passing to the reverse flag `"--reverse=example04.txt"` the [example 04](https://github.com/01-edu/public/blob/master/subjects/ascii-art/ascii-art-reverse-example.md).
+##### Try passing to the reverse flag `"--reverse=example04.txt"` the [example 04](https://public.01-edu.org/subjects/ascii-art/ascii-art-reverse-example).
 `abcdefghijklmnopqrstuvwxyz`
 ###### Does it display the value above?
-##### Try passing to the reverse flag `"--reverse=example05.txt"` the [example 05](https://github.com/01-edu/public/blob/master/subjects/ascii-art/ascii-art-reverse-example.md).
+##### Try passing to the reverse flag `"--reverse=example05.txt"` the [example 05](https://public.01-edu.org/subjects/ascii-art/ascii-art-reverse-example).
 `\!" #$%&'()*+,-./`
 ###### Does it display the value above?
-##### Try passing to the reverse flag `"--reverse=example06.txt"` the [example 06](https://github.com/01-edu/public/blob/master/subjects/ascii-art/ascii-art-reverse-example.md).
+##### Try passing to the reverse flag `"--reverse=example06.txt"` the [example 06](https://public.01-edu.org/subjects/ascii-art/ascii-art-reverse-example).
 `:;<=>?@`
 ###### Does it display the value above?
-##### Try passing to the reverse flag `"--reverse=example07.txt"` the [example 07](https://github.com/01-edu/public/blob/master/subjects/ascii-art/ascii-art-reverse-example.md).
+##### Try passing to the reverse flag `"--reverse=example07.txt"` the [example 07](https://public.01-edu.org/subjects/ascii-art/ascii-art-reverse-example).
 `ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 ###### Does it display the value above?
 
@@ -40,7 +40,7 @@
 #### Basic
 
 ###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
-###### +Does the code obey the [good practices](https://github.com/01-edu/public/blob/master/subjects/good-practices.en.md)?
+###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
 
 ###### +Is there a test file for this code?
 ###### +Are the tests checking each possible case?
