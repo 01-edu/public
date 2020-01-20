@@ -4,7 +4,7 @@
 
 You must follow the same [instructions](https://public.01-edu.org/subjects/ascii-art/ascii-art.en) as in the first subject but with colors.
 
-- The output should manipulate colors using the **flag** `--color=<color>`, in which `--color` is the flag and `<color>` is the color of choice.
+- The output should manipulate colors using the **flag** `--color=<color>`, in which `--color` is the flag and `<color>` is the color name of choice (ex: orange, green, blue).
 - The colors must respect the [RGB](https://en.wikipedia.org/wiki/RGB_color_model) concept.
 - You should be able to specify a single or a set of letters you want to be colored (use your imagination for this one).
 - If the letter isn't specified, the whole `string` should be colored.

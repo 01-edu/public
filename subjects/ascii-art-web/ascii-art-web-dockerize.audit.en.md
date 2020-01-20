@@ -2,7 +2,7 @@
 
 ###### Does the project have a DockerFile?
 
-##### Try running the [command](https://docs.docker.com/engine/reference/commandline/image_build/) `"docker image build [OPTIONS] PATH | URL | -"` to build the image. (example : `"docker image build -f Dockerfile -t <name_of_the_image> ."`).
+##### Try running the [command](https://docs.docker.com/engine/reference/commandline/image_build/) `"docker image build [OPTIONS] PATH | URL | -"` to build the image using the project Dockerfile. (example : `"docker image build -f Dockerfile -t <name_of_the_image> ."`).
 ```
 student$ docker images
 REPOSITORY              TAG                             IMAGE ID            CREATED             SIZE
@@ -10,7 +10,7 @@ REPOSITORY              TAG                             IMAGE ID            CREA
 ```
 ###### Run the command `"docker images"` to see all images. Does the docker image build as above?
 
-##### Try running the [command](https://docs.docker.com/engine/reference/commandline/container_run/) `"docker container run [OPTIONS] IMAGE [COMMAND] [ARG...]"` to start the container. (example : `"docker container run -p <port_you_what_to_run> --detach --name <name_of_the_container> <name_of_the_image>"`)
+##### Try running the [command](https://docs.docker.com/engine/reference/commandline/container_run/) `"docker container run [OPTIONS] IMAGE [COMMAND] [ARG...]"` to start the container using the image just created. (example : `"docker container run -p <port_you_what_to_run> --detach --name <name_of_the_container> <name_of_the_image>"`)
 ```
 student$ docker ps -a
 CONTAINER ID        IMAGE                  COMMAND                  CREATED             STATUS              PORTS                    NAMES
