@@ -16,10 +16,10 @@
 ###### Does the second Client receive the message?
 
 ##### Try creating a server and 1 Client and send some messages using this Client. Then create a new Client.
-###### Can the new Client see all the messages?
+###### Can the new Client see all the previous messages?
 
 ##### Try creating a server and 3 Clients and send a message using the second Client.
-###### Does all the Clients(first, second and third) received the same message?
+###### Does all the Clients (first, second and third) received the same message?
 
 ##### Try creating a server and use 2 or 3 different computers and create for each computer one Client.
 ###### Did the server/Clients connected with success?
