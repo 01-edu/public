@@ -2,7 +2,7 @@
 
 ### Objectives
 
-Ascii-art consists on receiving a `string` has an argument and outputting the `string` in a graphic representation of ASCII.
+Ascii-art consists on receiving a `string` as an argument and outputting the `string` in a graphic representation of ASCII.
 
 - This project should handle numbers, letters, spaces, special characters and `\n`.
 - Take a look on the ASCII manual.
