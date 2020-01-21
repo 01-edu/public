@@ -43,6 +43,7 @@ apt-get -yf install
 . vscode.sh
 . libreoffice.sh
 . exam.sh
+. docker.sh
 
 # Install additional packages
 pkgs="
