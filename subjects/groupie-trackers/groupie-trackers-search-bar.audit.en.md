@@ -30,6 +30,18 @@
 ##### Try to search for the creation date `"1965"`.
 ###### Does it present as result "Scorpions" and "Pink Floyd"?
 
+##### Start typing an artist/band beginning with `"G"`.
+###### Does it present as suggestion the band you were looking for?
+
+##### Start typing a location of one of the concerts.
+###### Does it present as suggestion the location you were looking for?
+
+##### Try to search for an artist/band member beginning with `"R"`.
+###### Does it present the artist/band you were looking for?
+
+##### Try to search for a creation date of an artist/band.
+###### Does it present the artist/band you were looking for?
+
 #### Basic
 
 ###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
