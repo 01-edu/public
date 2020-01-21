@@ -22,7 +22,7 @@ _|_|_|_|_|                     _|
 
 ```
 ###### Does it save the right output in the right file?
-##### Try passing as arguments `"hello" standard --output=test01.txt`
+##### Try passing as arguments `"hello" standart --output=test01.txt`
 ```
 student$ cat test01.txt
  _              _   _          
@@ -36,7 +36,7 @@ student$ cat test01.txt
 
 ```
 ###### Does it save the right output in the right file?
-##### Try passing as arguments `"123 -> #$%" standard --output=test02.txt`
+##### Try passing as arguments `"123 -> #$%" standart --output=test02.txt`
 ```
 student$ cat test02.txt
                                    __             _  _      _     _   __ 
@@ -106,7 +106,7 @@ o--o       o--O o-o o--o
 
 ```
 ###### Does it save the right output in the right file?
-##### Try passing as arguments `"Testing      long      output!" standard --output=test07.txt`
+##### Try passing as arguments `"Testing      long      output!" standart --output=test07.txt`
 ```
 student$ cat test07.txt
  _______                _     _                                                       _                                                                               _                     _     _  
