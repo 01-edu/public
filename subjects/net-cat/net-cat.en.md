@@ -8,29 +8,6 @@ This project consists on recreating the **NetCat in a Server-Client Architecture
 
 - To see more information about NetCat inspect the manual `man nc`.
 
-Here is a simple example of connection and transmission between Server-Client by creating a TCP socket between server and client.
-
-- Open two terminals, one for the server and the other for Client.
-  - Use the following commands for the server side :
-
-    ```console
-    stuednt$ mawk -W interactive '$0="\033[1;32mServer: \033[0m"$0' | nc -l -p <port>
-    Client: Hello it's the CLIENT talking
-    hello there
-
-    ```
-
-  - Use the following commands for the client side :
-
-    ```console
-    stuednt$ mawk -W interactive '$0="\033[1;32mClient: \033[0m"$0' | nc <host ip> <port>
-    Hello it's the CLIENT talking
-    Server: Hello there
-
-    ```
-
-  - To see the host IP use the command `ifconfig` on the server host machine.
-
 Your project must work in a similar way that NetCat works, in other words, you must create a group chat. The project must have the following features :
 
 - TCP connection between server and multiple clients (relation of 1 to many).
