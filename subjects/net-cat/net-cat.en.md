@@ -44,7 +44,7 @@ Your project must work in a similar way that NetCat works, in other words, you m
 - If a Client exits the chat, the rest of the Clients must be informed by the server that the Client left.
 - All Clients must receive the messages sent by other Clients.
 - If a Client leaves the chat, the rest of the Clients must not disconnect.
-- If there is no port specified, then set as default the port 8080. Otherwise, program must respond with usage message: `[USAGE]: ./TCPChat $port`
+- If there is no port specified, then set as default the port 8989. Otherwise, program must respond with usage message: `[USAGE]: ./TCPChat $port`
 
 This project will help you learn about :
 
@@ -88,7 +88,7 @@ This project will help you learn about :
 ```console
 student$ go build
 student$ ./TCPChat
-Listening on the port :8080
+Listening on the port :8989
 student$ ./TCPChat 2525
 Listening on the port :2525
 student$ ./TCPChat 2525 localhost
