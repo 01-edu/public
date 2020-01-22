@@ -32,6 +32,9 @@ Error
 
 ###### Does it display a valid solution and less than 12 instructions?
 
+##### Try to run `"./push_swap <5 random numbers>"` with 5 different random numbers instead of the tag.
+###### Does it still displays a valid solution and less than 12 instructions?
+
 ##### Try to run `"./checker "` and input nothing.
 
 ###### Does it display nothing?

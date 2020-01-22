@@ -201,6 +201,18 @@ __       _   _ _           _  _      _    _   __           _    __ __       _   
 ```
 ###### Does it display the right graphical representation in ASCII as above?
 
+##### Try passing `<a random string>` with at least four lower case letters and three upper case letters.
+###### Does it display the right graphical representation in ASCII as expected?
+
+##### Try passing `<a random string>` with at least five lower case letters, a space and two numbers.
+###### Does it display the right graphical representation in ASCII as expected?
+
+##### Try passing `<a random string>` with at least one upper case letters and 3 special characters.
+###### Does it display the right graphical representation in ASCII as expected?
+
+##### Try passing `<a random string>` with at least two lower case letters, two spaces, one number, two special characters and three upper case letters.
+###### Does it display the right graphical representation in ASCII as expected?
+
 #### Basic
 
 ###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)

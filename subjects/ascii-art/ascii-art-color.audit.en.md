@@ -17,6 +17,18 @@
 ##### Try passing as arguments `"RGB()" --color=blue`, in order to color just the B.
 ###### Does it display the expected result?
 
+##### Try passing as arguments a random string with lower and upper case letters, and a random color in the color flag ("--color=").
+###### Does it display the expected result?
+
+##### Try passing as arguments a random string with lower case letters, numbers and spaces, and a random color in the color flag ("--color=").
+###### Does it display the expected result?
+
+##### Try passing as arguments a random string with special characters, and a random color in the color flag ("--color="), specifying one letter to be coloured.
+###### Does it display the expected result?
+
+##### Try passing as arguments a random string with lower, upper case, spaces and numbers letters and a random color in the color flag ("--color="), specifying a set of letters to be coloured.
+###### Does it display the expected result?
+
 #### General
 
 ###### +Is it easy/intuitive to specify letter(s) to be colored?

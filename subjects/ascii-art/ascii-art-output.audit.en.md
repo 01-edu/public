@@ -121,6 +121,18 @@ student$ cat test07.txt
 ```
 ###### Does it save the right output in the right file?
 
+##### Try passing as arguments a random string with lower and upper case letters, and the output flag ("--output=") followed by a random file name.
+###### Does it save the right output in the right file?
+
+##### Try passing as arguments a random string with lower case letters, numbers and spaces, and the output flag ("--output=") followed by a random file name.
+###### Does it save the right output in the right file?
+
+##### Try passing as arguments a random string with special characters, and the output flag ("--output=") followed by a random file name.
+###### Does it save the right output in the right file?
+
+##### Try passing as arguments a random string with lower, upper case, spaces and numbers letters, and the output flag ("--output=") followed by a random file name.
+###### Does it save the right output in the right file?
+
 ###### Are all the test files tested saved?
 
 #### Basic
