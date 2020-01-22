@@ -10,7 +10,7 @@ cd $script_dir
 . set.sh
 
 disk=$(lsblk -o tran,kname,hotplug,type,fstype -pr |
-	grep -e nvme -e sata -e sas -e ata |
+	grep -e nvme -e sata -e sas -e ata -e vda |
 	grep '0 disk' |
 	cut -d' ' -f2 |
 	sort |
@@ -43,6 +43,7 @@ apt-get -yf install
 . vscode.sh
 . libreoffice.sh
 . exam.sh
+. docker.sh
 
 # Install additional packages
 pkgs="
