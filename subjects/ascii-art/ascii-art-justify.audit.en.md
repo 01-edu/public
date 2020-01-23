@@ -20,11 +20,11 @@
 
 ###### Does it display the correct result at the right side?
 
-##### Try passing as arguments `"ABCabc123 thinkertoy--align=right"`
+##### Try passing as arguments `"ABCabc123 thinkertoy --align=right"`
 
 ###### Does it display the correct result at the right side?
 
-##### Try passing as arguments `"!#$%&" thinkertoy --align=cente"`
+##### Try passing as arguments `"#$%&" thinkertoy --align=center"`
 
 ###### Does it display the correct result at the center?
 
