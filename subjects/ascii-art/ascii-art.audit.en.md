@@ -106,26 +106,26 @@
 ###### Does it display the right graphical representation in ASCII as above?
 ##### Try passing `"1a\"#FdwHywR&/()="` as argument.
 ```
-             _ _     _  _     ______       _              _    _                      _____                  __   __ __            
- _          ( | )  _| || |_  |  ____|     | |            | |  | |                    |  __ \    ___         / /  / / \ \   ______  
-/ |   __ _   V V  |_  __  _| | |__      __| | __      __ | |__| |  _   _  __      __ | |__) |  ( _ )       / /  | |   | | |______| 
-| |  / _` |        _| || |_  |  __|    / _` | \ \ /\ / / |  __  | | | | | \ \ /\ / / |  _  /   / _ \/\    / /   | |   | |  ______  
-| | | (_| |       |_  __  _| | |      | (_| |  \ V  V /  | |  | | | |_| |  \ V  V /  | | \ \  | (_>  <   / /    | |   | | |______| 
-|_|  \__,_|         |_||_|   |_|       \__,_|   \_/\_/   |_|  |_|  \__, |   \_/\_/   |_|  \_\  \___/\/  /_/     | |   | |          
-                                                                   __/ /                                         \_\ /_/           
-                                                                  |___/                                                            
+             _ _     _  _     ______       _              _    _                      _____                 __   __ __            
+ _          ( | )  _| || |_  |  ____|     | |            | |  | |                    |  __ \    ___        / /  / / \ \   ______  
+/ |   __ _   V V  |_  __  _| | |__      __| | __      __ | |__| |  _   _  __      __ | |__) |  ( _ )      / /  | |   | | |______| 
+| |  / _` |        _| || |_  |  __|    / _` | \ \ /\ / / |  __  | | | | | \ \ /\ / / |  _  /   / _ \/\   / /   | |   | |  ______  
+| | | (_| |       |_  __  _| | |      | (_| |  \ V  V /  | |  | | | |_| |  \ V  V /  | | \ \  | (_>  <  / /    | |   | | |______| 
+|_|  \__,_|         |_||_|   |_|       \__,_|   \_/\_/   |_|  |_|  \__, |   \_/\_/   |_|  \_\  \___/\/ /_/     | |   | |          
+                                                                   __/ /                                        \_\ /_/           
+                                                                  |___/                                                           
 ```
 ###### Does it display the right graphical representation in ASCII as above?
 ##### Try passing `"{|}~"` as argument.
 ```
-   __  _  __     /\/|
-  / / | | \ \   |/\/ 
- | |  | |  | |       
-/ /   | |   \ \      
-\ \   | |   / /      
- | |  | |  | |       
-  \_\ | | /_/        
-      |_|            
+   __  _  __     /\/| 
+  / / | | \ \   |/\/  
+ | |  | |  | |        
+/ /   | |   \ \       
+\ \   | |   / /       
+ | |  | |  | |        
+  \_\ | | /_/         
+      |_|             
 ```
 ###### Does it display the right graphical representation in ASCII as above?
 ##### Try passing `"[\]^_ 'a"` as argument.
@@ -154,26 +154,26 @@
 ###### Does it display the right graphical representation in ASCII as above?
 ##### Try passing `":;<=>?@"` as argument.
 ```
-           __          __     ___            
- _   _    / /  ______  \ \   |__ \     ____  
-(_) (_)  / /  |______|  \ \     ) |   / __ \ 
-        < <    ______    > >   / /   / / _` |
- _   _   \ \  |______|  / /   |_|   | | (_| |
-(_) ( )   \_\          /_/    (_)    \ \__,_|
-    |/                                \____/ 
-                                             
+           __          __     ___             
+ _   _    / /  ______  \ \   |__ \     ____   
+(_) (_)  / /  |______|  \ \     ) |   / __ \  
+        < <    ______    > >   / /   / / _` | 
+ _   _   \ \  |______|  / /   |_|   | | (_| | 
+(_) ( )   \_\          /_/    (_)    \ \__,_| 
+    |/                                \____/  
+                                              
 ```
 ###### Does it display the right graphical representation in ASCII as above?
 ##### Try passing `"\!\" #$%&'()*+,-./"` as argument.
 ```
-__       _   _ _           _  _      _     _   __           _    __ __       _                                    __ 
-\ \     | | ( | )        _| || |_   | |   (_) / /   ___    ( )  / / \ \   /\| |/\     _                          / / 
- \ \    | |  V V        |_  __  _| / __)     / /   ( _ )   |/  | |   | |  \ ` ' /   _| |_       ______          / /  
-  \ \   | |              _| || |_  \__ \    / /    / _ \/\     | |   | | |_     _| |_   _|     |______|        / /   
-   \ \  |_|             |_  __  _| (   /   / / _  | (_>  <     | |   | |  / , . \    |_|    _            _    / /    
-    \_\ (_)               |_||_|    |_|   /_/ (_)  \___/\/     | |   | |  \/|_|\/          ( )          (_)  /_/     
-                                                                \_\ /_/                    |/                        
-                                                                                                                     
+__       _   _ _           _  _      _    _   __           _    __ __       _                                   __ 
+\ \     | | ( | )        _| || |_   | |  (_) / /   ___    ( )  / / \ \   /\| |/\     _                         / / 
+ \ \    | |  V V        |_  __  _| / __)    / /   ( _ )   |/  | |   | |  \ ` ' /   _| |_       ______         / /  
+  \ \   | |              _| || |_  \__ \   / /    / _ \/\     | |   | | |_     _| |_   _|     |______|       / /   
+   \ \  |_|             |_  __  _| (   /  / / _  | (_>  <     | |   | |  / , . \    |_|    _            _   / /    
+    \_\ (_)               |_||_|    |_|  /_/ (_)  \___/\/     | |   | |  \/|_|\/          ( )          (_) /_/     
+                                                               \_\ /_/                    |/                       
+                                                                                                                   
 ```
 ###### Does it display the right graphical representation in ASCII as above?
 ##### Try passing `"ABCDEFGHIJKLMNOPQRSTUVWXYZ"` as argument.
@@ -186,7 +186,6 @@ __       _   _ _           _  _      _     _   __           _    __ __       _  
 /_/    \_\ |____/   \_____| |_____/  |______| |_|       \_____| |_|  |_| |_____|  \____/  |_|\_\ |______| |_|  |_| |_| \_|  \____/  |_|       \___\_\ |_|  \_\ |_____/     |_|     \____/      \/         \/  \/     /_/ \_\    |_|    /_____| 
                                                                                                                                                                                                                                                
                                                                                                                                                                                                                                                
-
 ```
 ###### Does it display the right graphical representation in ASCII as above?
 ##### Try passing `"abcdefghijklmnopqrstuvwxyz"` as argument.
@@ -201,6 +200,18 @@ __       _   _ _           _  _      _     _   __           _    __ __       _  
                                                                 |__/                                         |_|         |_|                                                      |___/         
 ```
 ###### Does it display the right graphical representation in ASCII as above?
+
+##### Try passing `<a random string>` with at least four lower case letters and three upper case letters.
+###### Does it display the right graphical representation in ASCII as expected?
+
+##### Try passing `<a random string>` with at least five lower case letters, a space and two numbers.
+###### Does it display the right graphical representation in ASCII as expected?
+
+##### Try passing `<a random string>` with at least one upper case letters and 3 special characters.
+###### Does it display the right graphical representation in ASCII as expected?
+
+##### Try passing `<a random string>` with at least two lower case letters, two spaces, one number, two special characters and three upper case letters.
+###### Does it display the right graphical representation in ASCII as expected?
 
 #### Basic
 

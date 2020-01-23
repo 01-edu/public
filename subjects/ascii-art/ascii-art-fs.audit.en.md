@@ -75,14 +75,14 @@ o      \     /
 ###### Does it display the string in the right template as an ASCII art representation as above?
 ##### Try passing as arguments `ABCDEFGHIJKLMNOPQRSTUVWXYZ shadow`
 ```
-                                                                                                                                                                                                                                                               
-  _|_|   _|_|_|     _|_|_| _|_|_|   _|_|_|_| _|_|_|_|   _|_|_| _|    _| _|_|_|       _| _|    _| _|       _|      _| _|      _|   _|_|   _|_|_|     _|_|     _|_|_|     _|_|_| _|_|_|_|_| _|    _| _|      _| _|          _| _|      _| _|      _| _|_|_|_|_|  
-_|    _| _|    _| _|       _|    _| _|       _|       _|       _|    _|   _|         _| _|  _|   _|       _|_|  _|_| _|_|    _| _|    _| _|    _| _|    _|   _|    _| _|           _|     _|    _| _|      _| _|          _|   _|  _|     _|  _|         _|    
-_|_|_|_| _|_|_|   _|       _|    _| _|_|_|   _|_|_|   _|  _|_| _|_|_|_|   _|         _| _|_|     _|       _|  _|  _| _|  _|  _| _|    _| _|_|_|   _|  _|_|   _|_|_|     _|_|       _|     _|    _| _|      _| _|    _|    _|     _|         _|         _|      
-_|    _| _|    _| _|       _|    _| _|       _|       _|    _| _|    _|   _|   _|    _| _|  _|   _|       _|      _| _|    _|_| _|    _| _|       _|    _|   _|    _|       _|     _|     _|    _|   _|  _|     _|  _|  _|     _|  _|       _|       _|        
-_|    _| _|_|_|     _|_|_| _|_|_|   _|_|_|_| _|         _|_|_| _|    _| _|_|_|   _|_|   _|    _| _|_|_|_| _|      _| _|      _|   _|_|   _|         _|_|  _| _|    _| _|_|_|       _|       _|_|       _|         _|  _|     _|      _|     _|     _|_|_|_|_|  
-                                                                                                                                                                                                                                                               
-                                                                                                                                                                                                                                                               
+                                                                                                                                                                                                                                                              
+  _|_|   _|_|_|     _|_|_| _|_|_|   _|_|_|_| _|_|_|_|   _|_|_| _|    _| _|_|_|       _| _|    _| _|       _|      _| _|      _|   _|_|   _|_|_|     _|_|     _|_|_|     _|_|_| _|_|_|_|_| _|    _| _|      _| _|          _| _|      _| _|      _| _|_|_|_|_| 
+_|    _| _|    _| _|       _|    _| _|       _|       _|       _|    _|   _|         _| _|  _|   _|       _|_|  _|_| _|_|    _| _|    _| _|    _| _|    _|   _|    _| _|           _|     _|    _| _|      _| _|          _|   _|  _|     _|  _|         _|   
+_|_|_|_| _|_|_|   _|       _|    _| _|_|_|   _|_|_|   _|  _|_| _|_|_|_|   _|         _| _|_|     _|       _|  _|  _| _|  _|  _| _|    _| _|_|_|   _|  _|_|   _|_|_|     _|_|       _|     _|    _| _|      _| _|    _|    _|     _|         _|         _|     
+_|    _| _|    _| _|       _|    _| _|       _|       _|    _| _|    _|   _|   _|    _| _|  _|   _|       _|      _| _|    _|_| _|    _| _|       _|    _|   _|    _|       _|     _|     _|    _|   _|  _|     _|  _|  _|     _|  _|       _|       _|       
+_|    _| _|_|_|     _|_|_| _|_|_|   _|_|_|_| _|         _|_|_| _|    _| _|_|_|   _|_|   _|    _| _|_|_|_| _|      _| _|      _|   _|_|   _|         _|_|  _| _|    _| _|_|_|       _|       _|_|       _|         _|  _|     _|      _|     _|     _|_|_|_|_| 
+                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                              
 ```
 ###### Does it display the string in the right template as an ASCII art representation as above?
 ##### Try passing as arguments `\"#$%&/()*+,-./ thinkertoy`
@@ -109,7 +109,24 @@ o-O-o  o    o-o         o   o   o-o o   o  o | o  o o--O
                                                     o--o 
 ```
 ###### Does it display the string in the right template as an ASCII art representation as above?
+
+##### Try passing as arguments a random string with upper and lower case letters followed by one of the templates names (standard, shadow, thinkertoy, or other).
+###### Does it display the expected string in the right template as an ASCII art representation?
+
+##### Try passing as arguments a random string with numbers followed by one of the templates names (standard, shadow, thinkertoy, or other).
+###### Does it display the expected string in the right template as an ASCII art representation?
+
+##### Try passing as arguments a random string with special characters followed by one of the templates names (standard, shadow, thinkertoy, or other).
+###### Does it display the expected string in the right template as an ASCII art representation?
+
+##### Try passing as arguments a random string with numbers, spaces, special characters, upper and lower case letters followed by one of the templates names (standard, shadow, thinkertoy, or other).
+###### Does it display the expected string in the right template as an ASCII art representation?
+
 ###### Is the file system well organized?
+
+#### General
+
+###### +Does the project contain their own templates?
 
 #### Basic
 

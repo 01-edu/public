@@ -31,6 +31,18 @@ This project will help you learn about :
 - The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices.en).
 - It is recommended that the code should present a **test file**.
 
+### Allowed packages
+
+- fmt
+- os
+- os/user
+- strconv
+- strings
+- syscall
+- time
+- math/rand
+- errors
+
 ### Hint
 
 - We strongly recommend that you account for the implications of the option `-R` from the very beginning of your code.

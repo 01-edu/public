@@ -80,6 +80,7 @@ services="
 apt-daily-upgrade.timer
 apt-daily.timer
 console-setup.service
+e2scrub_reap.service
 keyboard-setup.service
 motd-news.timer
 remote-fs.target
