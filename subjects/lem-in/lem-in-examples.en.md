@@ -4,7 +4,7 @@
 
 ### example00
 
-```console
+```
 4
 ##start
 0 0 3
@@ -19,7 +19,7 @@
 
 ### example01
 
-```console
+```
 10
 ##start
 start 1 6
@@ -58,8 +58,8 @@ h-n
 
 ### example02
 
-```console
-30
+```
+20
 ##start
 0 2 0
 1 4 1
@@ -74,7 +74,7 @@ h-n
 
 ### example03
 
-```console
+```
 4
 4 5 4
 ##start
@@ -93,7 +93,7 @@ h-n
 4-3
 ```
 
-### example03
+### example04
 
 ```
 9
@@ -115,7 +115,7 @@ erlich-jimYoung
 jimYoung-peter
 ```
 
-### example04
+### example05
 
 ```
 9
@@ -186,7 +186,51 @@ I4-I5
 I5-end
 ```
 
-### example05(err)
+### example06
+
+```
+100
+##start
+richard 0 6
+gilfoyle 6 3
+erlich 9 6
+dinish 6 9
+jimYoung 11 7
+##end
+peter 14 6
+richard-dinish
+dinish-jimYoung
+richard-gilfoyle
+gilfoyle-peter
+gilfoyle-erlich
+richard-erlich
+erlich-jimYoung
+jimYoung-peter
+```
+
+### example07
+
+```
+1000
+##start
+richard 0 6
+gilfoyle 6 3
+erlich 9 6
+dinish 6 9
+jimYoung 11 7
+##end
+peter 14 6
+richard-dinish
+dinish-jimYoung
+richard-gilfoyle
+gilfoyle-peter
+gilfoyle-erlich
+richard-erlich
+erlich-jimYoung
+jimYoung-peter
+```
+
+### badexample00
 
 ```
 0
@@ -207,7 +251,7 @@ I5-end
 4-3
 ```
 
-### example06(err)
+### badexample01
 
 ```
 20

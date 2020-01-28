@@ -26,6 +26,7 @@ You must display your results on the standard output in the following format :
 number_of_ants
 the_rooms
 the_links
+
 Lx-y Lz-w Lr-o ...
 ```
 
