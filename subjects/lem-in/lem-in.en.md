@@ -10,15 +10,15 @@ Upon successfully finding the quickest path, `lem-in` will display the content o
 
 How does it work?
 
- - You make an ant farm with tunnels and rooms.
- - You place the ants on one side and look at how they find the exit.
+- You make an ant farm with tunnels and rooms.
+- You place the ants on one side and look at how they find the exit.
 
 You need to find the quickest way to get `n` ants across a colony (composed of rooms and tunnels).
 
 - At the beginning of the game, all the ants are in the room `##start`. The goal is to bring them to the room `##end` with as few moves as possible.
 - The shortest path is not necessarily the simplest.
-- Some colonies  will have many rooms and many links, but no path between `##start` and `##end`.
-- Some will have rooms that link to themselves, sending your path-search spinning in circles, and some will have too many/too few ants, no `##start` or `##end`, duplicated rooms, links to unknown rooms, rooms with invalid coordinates, and a variety of other invalid or poorly-formatted input. In this cases the program will return an error message `ERROR: invalid data format`.
+- Some colonies will have many rooms and many links, but no path between `##start` and `##end`.
+- Some will have rooms that link to themselves, sending your path-search spinning in circles, some will have too many/too few ants, no `##start` or `##end`, duplicated rooms, links to unknown rooms, rooms with invalid coordinates and a variety of other invalid or poorly-formatted input. In this cases the program will return an error message `ERROR: invalid data format`.
 
 You must display your results on the standard output in the following format :
 
@@ -143,7 +143,7 @@ student$
 Example 2 :
 
 ```
-student$ ./lem-in < test1.txt
+student$ ./lem-in test1.txt
 3
 ##start
 0 1 0
@@ -166,7 +166,7 @@ student$
 Example 3 :
 
 ```
-student$ ./lem-in < test1.txt
+student$ ./lem-in test1.txt
 3
 2 5 0
 ##start
@@ -180,8 +180,8 @@ student$ ./lem-in < test1.txt
 3-1
 2-3
 
-L1-3 L2-2
-L1-1 L2-1 L3-3
-L3-1
+L1- 2 L2- 3
+L1- 1 L2- 1 L3- 2
+L3- 1
 student$
 ```
