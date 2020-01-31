@@ -1,5 +1,7 @@
 #### Functional
 
+###### Has the requirement for the allowed packages been respected?
+
 ##### Run both my-ls-1 and the system command `ls` with no arguments.
 
 ###### Does it display the same files and/or folders in the same order?

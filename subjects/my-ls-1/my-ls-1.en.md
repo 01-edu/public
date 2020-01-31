@@ -51,6 +51,10 @@ This project will help you learn about :
 
 - We suggest that you consult the `ls` command manual.
 
+### Allowed packages
+
+- Only the [standard go](https://golang.org/pkg/) packages are allowed
+
 ### Usage
 
 You can see how the `ls` command works, by using it on your terminal.

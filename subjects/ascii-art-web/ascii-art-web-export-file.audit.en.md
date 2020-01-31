@@ -1,9 +1,13 @@
 #### Functional
 
+###### Has the requirement for the allowed packages been respected?
+
 ##### Try to export the file.
+
 ###### Does the exported file matches the output?
 
 ##### Try to open and change the exported file.
+
 ###### Are the exported files read and write for the user only?
 
 ###### Does the project use the HTTP header [Content-Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) to indicate the media type of the resource?
@@ -17,12 +21,17 @@
 #### Basic
 
 ###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
+
 ###### +Are the instructions in the website clear?
+
 ###### +Does the project run using an API?
+
 ###### +Can you export in multiple formats?
 
 #### Social
 
 ###### +Did you learn anything from this project?
+
 ###### +Can it be open-sourced / be used for other sources?
+
 ###### +Would you recommend/nominate this program as an example for the rest of the school?

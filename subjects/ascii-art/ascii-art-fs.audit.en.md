@@ -1,4 +1,6 @@
-#### Functional Project Questions
+#### Functional
+
+###### Has the requirement for the allowed packages been respected?
 
 ##### Try passing as arguments `"hello" standard`
 ```

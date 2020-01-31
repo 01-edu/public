@@ -26,6 +26,10 @@ This project will help you learn about :
 - The code must respect the [good practices](https://public.01-edu.org/subjects/good-practices.en)
 - It is recommended that the code should present a **test file**
 
+### Allowed packages
+
+- Only the [standard go](https://golang.org/pkg/) packages are allowed
+
 ### Usage
 
 - Here is a simple [example](https://www.google.com/maps/place/Henderson+Island/@-24.3990887,-128.3627872,13.5z/data=!4m5!3m4!1s0x9e43f2cfaa5822c5:0x58ba891a3ed4565f!8m2!3d-24.3743846!4d-128.3270931) of the process of giving a address and returning a marker to the location.

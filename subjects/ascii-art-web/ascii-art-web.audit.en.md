@@ -1,5 +1,7 @@
 #### Functional
 
+###### Has the requirement for the allowed packages been respected?
+
 ###### Does the project contain HTML files?
 
 ##### Try inputting `"{123}\n<Hello> (World)!"` with the standard template/banner.
