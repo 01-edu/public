@@ -20,6 +20,10 @@ This project will help you learn about :
 - Manipulation of colors on the terminal.
 - Manipulation of structures.
 
+### Allowed packages
+
+- Only the [standard go](https://golang.org/pkg/) packages are allowed
+
 ### Instructions
 
 - Your project must be written in **Go**.

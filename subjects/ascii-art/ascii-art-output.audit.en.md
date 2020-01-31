@@ -1,5 +1,7 @@
 #### Functional
 
+###### Has the requirement for the allowed packages been respected?
+
 ##### Try passing as arguments `"First\nTest" shadow --output=test00.txt`
 ```
 student$ cat test00.txt

@@ -1,5 +1,7 @@
 #### Functional
 
+###### Has the requirement for the allowed packages been respected?
+
 ##### Try to run `"./lem-in example00.txt"`.
 
 ###### Is the program able to read the ant farm in this standard input?

@@ -1,5 +1,7 @@
 #### Functional
 
+###### Has the requirement for the allowed packages been respected?
+
 ###### Is the data from the artists being used?
 
 ###### Is data from the relations being used?
@@ -50,27 +52,39 @@
 ###### Does the event responds as expected?
 
 ###### Did the server crashed?
+
 ###### Does the server use the right [HTTP method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)?
+
 ###### Has the website runned without crashing at anytime?
+
 ###### Are all the pages working? (Absence of 404 page?)
+
 ###### Does the project avoid [HTTP status 400](https://kinsta.com/knowledgebase/400-bad-request/#causes)?
+
 ###### Does the project avoid [HTTP status 500](https://www.restapitutorial.com/httpstatuscodes.html)?
+
 ###### Is the communication between server and client well established?
+
 ###### Does the server present all the needed handlers and patterns for the http requests?
 
 #### General
 
 ###### +Does the event system run as asynchronous? (usage of go routines and channels)
+
 ###### +Is the site hosted or deployed? Can you access the website through a DNS (Domain Name System)?
 
 #### Basic
 
 ###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
+
 ###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
+
 ###### +Is there a test file for this code?
 
 #### Social
 
 ###### +Did you learn anything from this project?
+
 ###### +Can it be open-sourced / be used for other sources?
+
 ###### +Would you recommend/nominate this program as an example for the rest of the school?

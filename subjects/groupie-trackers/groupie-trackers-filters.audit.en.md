@@ -1,5 +1,7 @@
 #### Functional
 
+###### Has the requirement for the allowed packages been respected?
+
 ###### Does the project have a range [filter](https://dribbble.com/shots/1751801-Ui-Elements-Social-Network-Analytics/attachments/284260)?
 
 ###### Does the project have a check box [filter](https://dribbble.com/shots/1751801-Ui-Elements-Social-Network-Analytics/attachments/284260)?
@@ -37,9 +39,11 @@
 #### Basic
 
 ###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
+
 ###### +Are the instructions in the website clear?
 
 #### Social
 
 ###### +Did you learn anything from this project?
+
 ###### +Would you recommend/nominate this program as an example for the rest of the school?

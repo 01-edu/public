@@ -1,5 +1,7 @@
 #### Functional
 
+###### Has the requirement for the allowed packages been respected?
+
 ##### Try to run `"./push_swap"`.
 
 ###### Does it display nothing?

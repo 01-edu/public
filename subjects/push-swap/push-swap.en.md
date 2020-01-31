@@ -147,6 +147,10 @@ student$
 - The first executable file must be named **checker** and the second **push_swap**.
 - You have to be able to handle the errors.
 
+### Allowed packages
+
+- Only the [standard go](https://golang.org/pkg/) packages are allowed
+
 ### Usage
 
 ```console
