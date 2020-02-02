@@ -23,9 +23,9 @@ Write a function, `IsSameTree`, that returns `bool`.
 
 ```go
 type TreeNodeL struct {
-    Left    *TreeNodeM
+    Left    *TreeNodeL
     Val     int
-    Right   *TreeNodeM
+    Right   *TreeNodeL
 }
 
 
