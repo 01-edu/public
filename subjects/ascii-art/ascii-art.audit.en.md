@@ -1,7 +1,5 @@
 #### Functional
 
-###### Has the requirement for the allowed packages been respected?
-
 ##### Try passing as argument `"hello"`.
 ```
  _              _   _          

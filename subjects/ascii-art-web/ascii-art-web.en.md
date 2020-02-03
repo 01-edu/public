@@ -31,10 +31,6 @@ This project will help you learn about :
 - The code must respect the [good practices](https://public.01-edu.org/subjects/good-practices.en).
 - The project must have files written in **HTML**.
 
-### Allowed packages
-
-- Only the [standard go](https://golang.org/pkg/) packages are allowed
-
 ### Usage
 
 - [Here's an example](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20).
