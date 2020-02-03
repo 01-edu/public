@@ -2,7 +2,7 @@
 
 # Run me with:
 #
-# bash <(curl -Ss raw.githubusercontent.com/01-edu/public/master/scripts/kickstart.sh)
+# bash <(curl -Ss raw.githubusercontent.com/01-edu/public/master/scripts/kickstart.sh) [branch-name]
 
 # Treat unset variables as an error when substituting.
 set -u
@@ -35,14 +35,16 @@ export DEBIAN_FRONTEND=noninteractive # DEBIAN_PRIORITY=critical
 gsettings set org.gnome.desktop.session idle-delay 0
 gsettings set org.gnome.desktop.screensaver lock-enabled false
 
-cd
-wget github.com/01-edu/public/archive/master.zip
-unzip master.zip
+branch=${1:-master}
 
-cd public-master/scripts
+cd
+wget github.com/01-edu/public/archive/"$branch".zip
+unzip "$branch".zip
+
+cd public-"$branch"/scripts
 sudo -E ./install_client.sh
 cat dconfig.txt | dconf load /
 
 cd
-rm -rf master.zip public-master
+rm -rf "$branch".zip public-"$branch"
 reboot
