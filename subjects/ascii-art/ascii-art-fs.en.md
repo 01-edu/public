@@ -20,10 +20,6 @@ This project will help you learn about :
 - It is recommended that the code should present a **test file**.
 - You can see all about the **banners** [here](https://github.com/01-edu/public/tree/master/subjects/ascii-art).
 
-### Allowed packages
-
-- Only the [standard go](https://golang.org/pkg/) packages are allowed
-
 ### Usage
 
 ```console

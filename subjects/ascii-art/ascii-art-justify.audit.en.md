@@ -1,6 +1,4 @@
-#### Functional
-
-###### Has the requirement for the allowed packages been respected?
+#### Functional Project Questions
 
 ##### Try passing as arguments `"left standard --align=right"`
 

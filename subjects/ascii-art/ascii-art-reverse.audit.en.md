@@ -1,6 +1,4 @@
-#### Functional
-
-###### Has the requirement for the allowed packages been respected?
+#### Functional Project Questions
 
 ##### Try passing to the reverse flag `"--reverse=example00.txt"` the [example 00](https://public.01-edu.org/subjects/ascii-art/ascii-art-reverse-example).
 `Hello World`

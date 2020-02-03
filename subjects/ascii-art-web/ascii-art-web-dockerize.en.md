@@ -37,10 +37,6 @@ This project will help you learn about :
 - The project must have a **Dockerfile**.
 - Your Dockerfile must respect the [Dockerfile good practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/).
 
-### Allowed packages
-
-- Only the [standard go](https://golang.org/pkg/) packages are allowed
-
 ### Usage
 
 - You can see all about Docker on [docker docs](https://docs.docker.com/).
