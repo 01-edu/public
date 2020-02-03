@@ -1,6 +1,6 @@
 #### Functional
 
-###### Has the requirement for the allowed packages been respected?
+###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
 
 ##### Try to run `"./lem-in example00.txt"`.
 
