@@ -107,6 +107,7 @@ gnome-tweaks
 i3lock
 imagemagick
 mpv
+virtualbox
 zenity
 "
 
