@@ -42,6 +42,7 @@ sed -i '/swapfile/d' /etc/fstab
 
 # Purge unused Ubuntu packages
 pkgs="
+apparmor
 apport
 bind9
 bolt
