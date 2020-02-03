@@ -116,6 +116,9 @@ if ! test -v PERSISTENT; then
 	# Disable user password
 	passwd -d student
 
+	# Enable docker relocation
+	systemctl enable mount-docker
+
 	# Remove tty
 	cat <<-EOF>> /etc/systemd/logind.conf
 	NAutoVTs=0
