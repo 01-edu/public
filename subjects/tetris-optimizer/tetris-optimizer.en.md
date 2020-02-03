@@ -4,6 +4,10 @@
 
 Develop a program that receives only one argument, a path to a text file which will contain a list of [tetrominoes](https://en.wikipedia.org/wiki/Tetromino) to assemble them in order to create the smallest square possible.
 
+### Allowed packages
+
+- Only the [standard go](https://golang.org/pkg/) packages are allowed
+
 ### Instructions
 
 The program must :

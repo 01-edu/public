@@ -16,6 +16,10 @@ This project will help you learn about:
 - The basics of CSS.
 - Linking CSS and HTML.
 
+### Allowed packages
+
+- Only the [standard go](https://golang.org/pkg/) packages are allowed
+
 ### Instructions
 
 - Your project must contain **CSS**.

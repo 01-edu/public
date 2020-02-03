@@ -139,6 +139,10 @@ student$ ./checker
 student$
 ```
 
+### Allowed packages
+
+- Only the [standard go](https://golang.org/pkg/) packages are allowed
+
 ### Instructions
 
 - Your project must be written in **Go**.

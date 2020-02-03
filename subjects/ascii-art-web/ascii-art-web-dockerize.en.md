@@ -29,6 +29,10 @@ This project will help you learn about :
   - Compatibility/Dependency.
   - Creating images.
 
+### Allowed packages
+
+- Only the [standard go](https://golang.org/pkg/) packages are allowed
+
 ### Instructions
 
 - The web server must be created in **Go**.
