@@ -1,6 +1,6 @@
 #### Functional
 
-###### Has the requirement for the allowed packages been respected?
+###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
 
 ###### Is [geocoding](https://developers.google.com/maps/documentation/geocoding/intro) API being used to converting addresses into geographic coordinates?
 
