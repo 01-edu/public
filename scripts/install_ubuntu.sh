@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-# Configure Z01 client
+# Configure Z01 Ubuntu
 
 # Log stdout & stderr
-exec > >(tee -i /tmp/install_client.log) 2>&1
+exec > >(tee -i /tmp/install_ubuntu.log) 2>&1
 
 script_dir="$(cd -P "$(dirname "$BASH_SOURCE")" && pwd)"
 cd $script_dir
@@ -33,7 +33,6 @@ apt-get -yf install
 . bash_tweaks.sh
 . ssh.sh
 . firewall.sh
-. ubuntu_tweaks.sh
 . grub.sh "$disk"
 . go.sh
 . nodejs.sh
@@ -43,6 +42,7 @@ apt-get -yf install
 . libreoffice.sh
 . exam.sh
 . docker.sh
+. ubuntu_tweaks.sh
 
 # Install additional packages
 pkgs="
