@@ -44,6 +44,7 @@ apt-get -yf install
 . libreoffice.sh
 . exam.sh
 . docker.sh
+. student_logger.sh
 
 # Purge unused Ubuntu packages
 pkgs="
@@ -219,6 +220,9 @@ if ! test -v PERSISTENT; then
 
 	# Enable docker relocation
 	systemctl enable mount-docker
+
+	# Enable student logger service
+	systemctl enable student-logger.service
 
 	# Remove tty
 	cat <<-EOF>> /etc/systemd/logind.conf

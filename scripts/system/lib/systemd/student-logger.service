@@ -1,0 +1,16 @@
+[Unit]
+Description=Student logger
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 -u /usr/local/bin/student-logger/active_logger.py
+Type=idle
+KillMode=process
+
+SyslogIdentifier=student-logger
+SyslogFacility=daemon
+
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
