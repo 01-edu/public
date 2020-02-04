@@ -21,6 +21,8 @@ apt-get update
 apt-get -y upgrade
 apt-get -y autoremove --purge
 
+apt-get -y install curl
+
 # Remove outdated kernels
 # old_kernels=$(ls -1 /boot/config-* | sed '$d' | xargs -n1 basename | cut -d- -f2,3)
 
