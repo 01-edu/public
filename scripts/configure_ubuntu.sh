@@ -44,6 +44,7 @@ apt-get -yf install
 . libreoffice.sh
 . exam.sh
 . docker.sh
+. auto_logout.sh
 
 # Purge unused Ubuntu packages
 pkgs="
