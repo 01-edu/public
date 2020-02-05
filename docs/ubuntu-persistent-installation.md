@@ -36,9 +36,10 @@ Run a terminal and type these commands :
 
 ```shell
 unset HISTFILE
-sudo apt-get -y install curl
+sudo apt-get -y install git
 export PERSISTENT=
-bash <(curl -sSL raw.githubusercontent.com/01-edu/public/master/scripts/kickstart.sh)
+git clone https://github.com/01-edu/public.git
+public/scripts/setup.sh
 ```
 
 After reboot you should install Virtual Box additions (and reboot again) :
