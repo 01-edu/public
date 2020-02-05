@@ -13,7 +13,6 @@ dialog
 dmidecode
 dnsutils
 file
-firmware-linux-nonfree
 git
 hdparm
 iftop
@@ -25,13 +24,14 @@ isc-dhcp-client
 isc-dhcp-common
 jq
 less
-linux-headers-amd64
-linux-image-amd64
+linux-headers-generic
+linux-image-generic
 lm-sensors
 locales
 lsb-release
 lshw
 lsof
+lz4
 lz4
 lzop
 man
