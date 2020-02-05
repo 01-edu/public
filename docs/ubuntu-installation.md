@@ -41,8 +41,9 @@ Run a terminal and type these commands :
 
 ```shell
 unset HISTFILE
-sudo apt-get -y install curl
-bash <(curl -sSL raw.githubusercontent.com/01-edu/public/master/scripts/kickstart.sh)
+sudo apt-get -y install git
+git clone https://github.com/01-edu/public.git
+public/scripts/setup.sh
 ```
 
 The script will ask for student user password (which will be deleted after) and then after a long configuration process it will restart the computer.
