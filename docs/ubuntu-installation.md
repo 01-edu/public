@@ -2,7 +2,7 @@
 
 ## OS Installation
 
-Download and boot the [last Ubuntu release](http://releases.ubuntu.com/19.04/ubuntu-19.04-desktop-amd64.iso).
+Download and boot the [last Ubuntu release](http://releases.ubuntu.com/19.10/ubuntu-19.10-desktop-amd64.iso).
 
 Follow the steps :
 
