@@ -14,6 +14,8 @@ Write a program that takes an undefined number of arguments which could be consi
 
 -   Launching the program without arguments or with the `-h` flag activated must print all the valid `options` on the standard output, as shown on one of the following examples.
 
+-   Please note the `-h` flag has priority over the others flags when it is called first in one of the arguments. (See the examples)
+
 -   A wrong `option` must print `Invalid Option` followed by a newline.
 
 ## Usage
@@ -31,7 +33,7 @@ options: abcdefghijklmnopqrstuvwxyz$
 student@ubuntu:~/[[ROOT]]/test$ ./test -h | cat -e
 options: abcdefghijklmnopqrstuvwxyz$
 student@ubuntu:~/[[ROOT]]/test$ ./test -zh | cat -e
-options: abcdefghijklmnopqrstuvwxyz$
+00000010 00000000 00000000 10000000$
 student@ubuntu:~/[[ROOT]]/test$ ./test -z -h | cat -e
 options: abcdefghijklmnopqrstuvwxyz$
 student@ubuntu:~/[[ROOT]]/test$ ./test -hhhhhh | cat -e
