@@ -34,6 +34,10 @@ student@ubuntu:~/[[ROOT]]/test$ ./test -zh | cat -e
 options: abcdefghijklmnopqrstuvwxyz$
 student@ubuntu:~/[[ROOT]]/test$ ./test -z -h | cat -e
 options: abcdefghijklmnopqrstuvwxyz$
+student@ubuntu:~/[[ROOT]]/test$ ./test -hhhhhh | cat -e
+options: abcdefghijklmnopqrstuvwxyz$
+student@ubuntu:~/[[ROOT]]/test$ ./test -eeeeee | cat -e
+00000000 00000000 00000000 00010000$
 student@ubuntu:~/[[ROOT]]/test$ ./test -% | cat -e
 Invalid Option$
 student@ubuntu:~/[[ROOT]]/test$
