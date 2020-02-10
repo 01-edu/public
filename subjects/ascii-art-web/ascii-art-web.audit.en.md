@@ -2,7 +2,11 @@
 
 ###### Does the project contain HTML files?
 
-##### Try inputting `"{123}\n<Hello> (World)!"` with the standard template/banner.
+##### Try inputting with the standard template/banner the following example:
+In the first line `{123}`
+
+In the second line `<Hello> (World)!`
+
 ```
    __                     __    
   / /  _   ____    _____  \ \   
@@ -36,7 +40,7 @@
 ```
 ###### Does it display the right result as above?
 
-##### Try to input `"$% \"="` using the template/banner shadow.
+##### Try to input `"$% "="` using the template/banner shadow.
 ```
                         _|  _|            
   _|   _|_|    _|       _|  _|            
@@ -65,10 +69,10 @@ o-o-o o--o o-o          o   o      o   o-o  | |  o   o
 ###### Does it display an understandable graphical representation of the result?
 
 ##### Try to navigate between all the available pages in the website.
-###### Are all the pages working? Does the project avoid [404 status](https://www.restapitutorial.com/httpstatuscodes.html)?
+###### Are all the pages working? Does the project implement [404 status](https://www.restapitutorial.com/httpstatuscodes.html)?
 
-###### Does the project avoid HTTP status [400 bad request](https://kinsta.com/knowledgebase/400-bad-request/#causes)?
-###### Does the project avoid HTTP status [500 internal server error](https://www.restapitutorial.com/httpstatuscodes.html)?
+###### Does the project implement HTTP status [400 bad request](https://kinsta.com/knowledgebase/400-bad-request/#causes)?
+###### Does the project implement HTTP status [500 internal server error](https://www.restapitutorial.com/httpstatuscodes.html)?
 
 ##### Try making a request to the server (clicking a button to generate the ascii-art representation on the website)
 ###### Is the communication between [server and client](https://www.geeksforgeeks.org/client-server-model/) well established?
