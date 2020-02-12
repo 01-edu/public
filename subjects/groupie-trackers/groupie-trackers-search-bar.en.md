@@ -28,3 +28,7 @@ This project will help you learn about :
 
 - The program must be written in **Go**.
 - The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices.en).
+
+### Allowed packages
+
+- Only the [standard go](https://golang.org/pkg/) packages are allowed

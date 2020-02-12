@@ -33,3 +33,7 @@ This project will help you learn about:
 - You must handle website errors.
 - The code must respect the [good practices](https://public.01-edu.org/subjects/good-practices.en)
 - It is recommended that the code should present a **test file**.
+
+### Allowed packages
+
+- Only the [standard go](https://golang.org/pkg/) packages are allowed

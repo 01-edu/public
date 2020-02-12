@@ -30,15 +30,26 @@ Skip the welcoming window.
 
 Don't install updates if Ubuntu asks to. The scripts will.
 
+## OS customization
+
+You can overwrite the files of the folder `system` by setting an environment variable named `OVERWRITE` with the format : `Destination folder;Git URL`.
+
+For example to write the content of the repository [github.com/xpetit/custom](https://github.com/xpetit/custom) in the system folder :
+
+```shell
+export OVERWRITE='.;https://github.com/xpetit/custom.git'
+```
+
 ## OS configuration
 
 Run a terminal and type these commands :
 
 ```shell
 unset HISTFILE
-sudo apt-get -y install curl
+sudo apt-get -y install git
 export PERSISTENT=
-bash <(curl -sSL raw.githubusercontent.com/01-edu/public/master/scripts/kickstart.sh)
+git clone https://github.com/01-edu/public.git
+public/scripts/setup.sh
 ```
 
 After reboot you should install Virtual Box additions (and reboot again) :

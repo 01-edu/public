@@ -1,5 +1,7 @@
 #### Functional
 
+###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
+
 ###### Is [geocoding](https://developers.google.com/maps/documentation/geocoding/intro) API being used to converting addresses into geographic coordinates?
 
 ##### Try to input `"Queen"` to see the concerts locations.
@@ -93,11 +95,15 @@ gulf shores alabama usa
 #### Basic
 
 ###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
+
 ###### +Are the instructions in the website clear?
+
 ###### +Does the project run using an API?
 
 #### Social
 
 ###### +Did you learn anything from this project?
+
 ###### +Can it be open-sourced or be used for other sources?
+
 ###### +Would you recommend/nominate this program as an example for the rest of the school?

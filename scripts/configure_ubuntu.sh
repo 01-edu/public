@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-# Configure Z01 client
+# Configure Z01 Ubuntu
 
 # Log stdout & stderr
-exec > >(tee -i /tmp/install_client.log) 2>&1
+exec > >(tee -i /tmp/install_ubuntu.log) 2>&1
 
 script_dir="$(cd -P "$(dirname "$BASH_SOURCE")" && pwd)"
 cd $script_dir
@@ -21,6 +21,8 @@ apt-get update
 apt-get -y upgrade
 apt-get -y autoremove --purge
 
+apt-get -y install curl
+
 # Remove outdated kernels
 # old_kernels=$(ls -1 /boot/config-* | sed '$d' | xargs -n1 basename | cut -d- -f2,3)
 
@@ -33,7 +35,6 @@ apt-get -yf install
 . bash_tweaks.sh
 . ssh.sh
 . firewall.sh
-. ubuntu_tweaks.sh
 . grub.sh "$disk"
 . go.sh
 . nodejs.sh
@@ -44,16 +45,116 @@ apt-get -yf install
 . exam.sh
 . docker.sh
 
-# Install additional packages
+# Purge unused Ubuntu packages
 pkgs="
-emacs
-f2fs-tools
-golang-mode
-vim
-xfsprogs
+apparmor
+apport
+bind9
+bolt
+cups*
+exim*
+fprintd
+friendly-recovery
+gnome-initial-setup
+gnome-online-accounts
+gnome-power-manager
+gnome-software
+gnome-software-common
+memtest86+
+orca
+popularity-contest
+python3-update-manager
+secureboot-db
+snapd
+speech-dispatcher*
+spice-vdagent
+ubuntu-report
+ubuntu-software
+unattended-upgrades
+update-inetd
+update-manager-core
+update-notifier
+update-notifier-common
+whoopsie
+xdg-desktop-portal
 "
 
+apt-get -y purge $pkgs
+apt-get -y autoremove --purge
+
+# Install packages
+pkgs="$(cat common_packages.txt)
+baobab
+blender
+dconf-editor
+emacs
+f2fs-tools
+firefox
+gimp
+gnome-calculator
+gnome-system-monitor
+gnome-tweaks
+golang-mode
+i3lock
+imagemagick
+mpv
+vim
+virtualbox
+xfsprogs
+zenity
+"
 apt-get -y install $pkgs
+
+# Disable services
+services="
+apt-daily-upgrade.timer
+apt-daily.timer
+console-setup.service
+e2scrub_reap.service
+keyboard-setup.service
+motd-news.timer
+remote-fs.target
+"
+systemctl disable $services
+
+services="
+grub-common.service
+plymouth-quit-wait.service
+"
+systemctl mask $services
+
+# Disable GTK hidden scroll bars
+echo GTK_OVERLAY_SCROLLING=0 >> /etc/environment
+
+# Reveal boot messages
+sed -i -e 's/TTYVTDisallocate=yes/TTYVTDisallocate=no/g' /etc/systemd/system/getty.target.wants/getty@tty1.service
+
+# Speedup boot
+sed -i 's/MODULES=most/MODULES=dep/g' /etc/initramfs-tools/initramfs.conf
+sed -i 's/COMPRESS=gzip/COMPRESS=lz4/g' /etc/initramfs-tools/initramfs.conf
+
+# Reveal autostart services
+sed -i 's/NoDisplay=true/NoDisplay=false/g' /etc/xdg/autostart/*.desktop
+
+# Remove password complexity constraints
+sed -i 's/ obscure / minlen=1 /g' /etc/pam.d/common-password
+
+# Remove splash screen (plymouth)
+sed -i 's/quiet splash/quiet/g' /etc/default/grub
+
+update-initramfs -u
+update-grub
+
+# Change ext4 default mount options
+sed -i -e 's/ errors=remount-ro/ noatime,nodelalloc,errors=remount-ro/g' /etc/fstab
+
+# Disable swapfile
+swapoff /swapfile ||:
+rm -f /swapfile
+sed -i '/swapfile/d' /etc/fstab
+
+# Put temporary and cache folders as tmpfs
+echo 'tmpfs /tmp tmpfs defaults,noatime,rw,nosuid,nodev,noexec,mode=1777,size=1G 0 0' >> /etc/fstab
 
 # Install additional drivers
 ubuntu-drivers install ||:
@@ -115,6 +216,9 @@ if ! test -v PERSISTENT; then
 
 	# Disable user password
 	passwd -d student
+
+	# Enable docker relocation
+	systemctl enable mount-docker
 
 	# Remove tty
 	cat <<-EOF>> /etc/systemd/logind.conf

@@ -2,7 +2,7 @@
 
 ## OS Installation
 
-Download and boot the [last Ubuntu release](http://releases.ubuntu.com/19.04/ubuntu-19.04-desktop-amd64.iso).
+Download and boot the [last Ubuntu release](http://releases.ubuntu.com/19.10/ubuntu-19.10-desktop-amd64.iso).
 
 Follow the steps :
 
@@ -41,8 +41,9 @@ Run a terminal and type these commands :
 
 ```shell
 unset HISTFILE
-sudo apt-get -y install curl
-bash <(curl -sSL raw.githubusercontent.com/01-edu/public/master/scripts/kickstart.sh)
+sudo apt-get -y install git
+git clone https://github.com/01-edu/public.git
+public/scripts/setup.sh
 ```
 
 The script will ask for student user password (which will be deleted after) and then after a long configuration process it will restart the computer.

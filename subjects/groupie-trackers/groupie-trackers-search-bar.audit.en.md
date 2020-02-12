@@ -1,5 +1,7 @@
 #### Functional
 
+###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
+
 ##### Start typing in the search bar `"Billie Joe"`.
 ###### Does it present as suggestions the member "Billie Joe Armstrong"?
 
@@ -45,11 +47,15 @@
 #### Basic
 
 ###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
+
 ###### +Are the instructions in the website clear?
+
 ###### +Does the project run using an API?
 
 #### Social
 
 ###### +Did you learn anything from this project?
+
 ###### +Can it be open-sourced / be used for other sources?
+
 ###### +Would you recommend/nominate this program as an example for the rest of the school?
