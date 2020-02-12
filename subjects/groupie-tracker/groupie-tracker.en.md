@@ -1,4 +1,4 @@
-## groupie-trackers
+## groupie-tracker
 
 ### Objectives
 

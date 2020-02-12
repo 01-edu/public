@@ -1,10 +1,10 @@
-## groupie-trackers-geolocation
+## groupie-tracker-geolocation
 
 ### Objectives
 
-You must follow the same [principles](https://public.01-edu.org/subjects/groupie-trackers/groupie-trackers.en) as the first subject.
+You must follow the same [principles](https://public.01-edu.org/subjects/groupie-tracker/groupie-tracker.en) as the first subject.
 
-- Groupie Trackers Geolocation consists on mapping the different concerts locations of a certain artist/band given by the Client.
+- Groupie Tracker Geolocation consists on mapping the different concerts locations of a certain artist/band given by the Client.
 
 - You must use a process of converting addresses (ex: Germany Mainz) into geographic coordinates (ex: 49,59380 8,15052) which you must use to place markers for the concerts locations of a certain artist/band on a map.
 

@@ -1,10 +1,10 @@
-## groupie-trackers-search-bar
+## groupie-tracker-search-bar
 
 ### Objectives
 
-You must follow the same [principles](https://public.01-edu.org/subjects/groupie-trackers/groupie-trackers.en) as the first subject.
+You must follow the same [principles](https://public.01-edu.org/subjects/groupie-tracker/groupie-tracker.en) as the first subject.
 
-Groupie-trackers-search-bar consists of creating a functional program that searches, inside your website, for a specific input text.
+Groupie-tracker-search-bar consists of creating a functional program that searches, inside your website, for a specific input text.
 
 - The program should handle at least these search cases :
   - artist/band name
