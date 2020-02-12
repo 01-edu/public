@@ -154,7 +154,7 @@ rm -f /swapfile
 sed -i '/swapfile/d' /etc/fstab
 
 # Put temporary and cache folders as tmpfs
-echo 'tmpfs /tmp tmpfs defaults,noatime,rw,nosuid,nodev,noexec,mode=1777,size=1G 0 0' >> /etc/fstab
+echo 'tmpfs /tmp tmpfs defaults,noatime,rw,nosuid,nodev,mode=1777,size=1G 0 0' >> /etc/fstab
 
 # Install additional drivers
 ubuntu-drivers install ||:
