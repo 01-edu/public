@@ -51,7 +51,7 @@
 ##### Try to trigger an event using some kind of action (ex: Clicking the mouse over a certain element, pressing a key on the keyboard, resizing or closing the browser window, a form being submitted, an error occurring, etc).
 ###### Does the event responds as expected?
 
-###### Did the server crashed?
+###### Did the server behaved as expected?(did not crashed)
 
 ###### Does the server use the right [HTTP method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)?
 
