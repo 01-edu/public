@@ -11,18 +11,27 @@ This means that:
 - The function main declared needs to **also pass** the `Restrictions Checker`(illegal functions tester). It is advised for the student to just empty the function main after its own testings are done.
 - Every other rules are obviously the same than for a `program`.
 
+### Instructions
 
-### Instructions:
 Write a function that takes tree and inverts(flips) and returns it.
-```
+
+### Expected function and structure
+
+```go
 type TNode struct {
     Val     int
     Left    *TNode
     Right   *TNode
 }
+
+func InvertTree(root *TNode) *TNode {
+
+}
 ```
+
 Example:
-```
+
+```shell
 Input:
       7
     /   \
@@ -36,9 +45,4 @@ Output:
    10      5
   / \     / \
 13   9   6   3
-```
-Expected function:
-```
-func InvertTree(root *TNode) *TNode {
-}
 ```
