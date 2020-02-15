@@ -26,14 +26,16 @@
 
 ##### Try to see the "locations" for the artist/band `"Travis Scott"`
 ```
-    "las_vegas-usa"
-    "brooklyn-usa"
-    "boston-usa"
-    "washington-usa"
+    "santiago-chile"
+    "sao_paulo-usa"
+    "los_angeles-usa"
+    "houston-usa"
+    "atlanta-usa"
+    "new_orleans-usa"
     "philadelphia-usa"
-    "montreal-canada"
-    "toronto-usa"
-    "new_york-usa"
+    "london-uk"
+    "frauenfeld-switzerland"
+    "turku-finland"
 ```
 ###### Does it present the right "locations" as above?
 
