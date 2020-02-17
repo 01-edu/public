@@ -1,4 +1,4 @@
-## groupie-tracker-geolocation
+## groupie-tracker-geolocalization
 
 ### Objectives
 
