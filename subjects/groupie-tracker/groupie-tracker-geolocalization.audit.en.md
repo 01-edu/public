@@ -84,7 +84,7 @@ athens greece,
 massachusetts usa,
 california usa,
 florence italia,
-gulf shores alabama usa
+alabama usa
 ```
 ###### Are the markers displayed in the locations above?
 
