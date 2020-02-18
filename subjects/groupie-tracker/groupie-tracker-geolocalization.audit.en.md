@@ -78,11 +78,11 @@ newark usa
 ##### Try to input `"Red Hot Chili Peppers"` to see the concerts locations.
 ```
 landgraaf netherlands,
-los angeles california usa,
+los angeles usa,
 rio de janeiro brazil,
 athens greece,
-boston massachusetts,
-dana point california usa,
+massachusetts usa,
+california usa,
 florence italia,
 gulf shores alabama usa
 ```
