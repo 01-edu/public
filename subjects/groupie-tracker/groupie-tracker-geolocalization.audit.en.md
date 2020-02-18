@@ -25,20 +25,20 @@ aarhus denmark
 ```
 ###### Are the markers displayed in the locations above?
 
-##### Try to input `"Imagine Dragon"` to see the concerts locations.
+##### Try to input `"Imagine Dragons"` to see the concerts locations.
 ```
-napoca germany,
+riyadh saudi_arabia,
+rio de janeiro-brazil,
+canton usa,
 quebec canada,
-del mar usa,
-mexico city mexico,
-las vegas usa,
-lisbon portugal,
-monterrey mexico,
 new york usa,
-rio de janeiro brazil,
-riyadh saudi arabia,
 california usa,
-canton usa
+las vegas usa,
+mexico city mexico,
+monterrey mexico,
+del mar usa,
+berlin germany,
+lisbon portugal
 ```
 ###### Are the markers displayed in the locations above?
 
