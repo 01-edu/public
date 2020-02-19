@@ -4,7 +4,7 @@
 ###### Does the exported file matches the output?
 
 ##### Try to open and change the exported file.
-###### Are the exported files read and write for the user only?
+###### Are the exported files read and write for the user?
 
 ###### Does the project use the HTTP header [Content-Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) to indicate the media type of the resource?
 
