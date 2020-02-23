@@ -15,7 +15,7 @@ This means that:
 
 Write a function, `lcm`, that returns least common multiple.
 
-All arguments tested will be positive `int` values.
+It will be tested with positive `int` values and `0`.
 
 ### Expected function
 
@@ -32,13 +32,9 @@ Here is a possible program to test your function :
 ```go
 package main
 
-import (
-	"fmt"
-	piscine ".."
-)
-
 func main() {
-	fmt.Println(piscine.Lcm(2, 7))
+    fmt.Println(Lcm(2, 7))
+    fmt.Println(Lcm(0, 4))
 }
 ```
 
@@ -48,5 +44,6 @@ func main() {
 student@ubuntu:~/[[ROOT]]/test$ go build
 student@ubuntu:~/[[ROOT]]/test$ ./test
 14
+0
 student@ubuntu:~/[[ROOT]]/test$
 ```
