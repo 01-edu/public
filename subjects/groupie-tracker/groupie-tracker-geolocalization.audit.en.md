@@ -25,9 +25,9 @@ aarhus denmark
 ```
 ###### Are the markers displayed in the locations above?
 
-##### Try to input `"Imagine Dragon"` to see the concerts locations.
+##### Try to input `"Imagine Dragons"` to see the concerts locations.
 ```
-napoca germany,
+berlin germany,
 quebec canada,
 del mar usa,
 mexico city mexico,
