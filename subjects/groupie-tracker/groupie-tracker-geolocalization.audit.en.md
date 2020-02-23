@@ -6,6 +6,7 @@
 
 ##### Try to input `"Queen"` to see the concerts locations.
 ```
+north carolina usa
 los angeles usa,
 nagoya japan,
 osaka japan,
