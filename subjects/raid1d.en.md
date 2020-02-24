@@ -6,7 +6,7 @@ Write a function `Raid1d` that prints a **valid** rectangle of width `x` and of 
 
 The function must draw the rectangles as in the examples.
 
-`x` and `y` will always be positive numbers.
+`x` and `y` will always be positive numbers. Otherwise, the function should print nothing.
 
 ### Expected function
 
