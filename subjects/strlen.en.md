@@ -2,7 +2,7 @@
 
 ### Instructions
 
--   Write a function that counts the `runes` of a `string` and that returns that count.
+- Write a function that counts the `runes` of a `string` and that returns that count.
 
 ### Expected function
 
@@ -14,7 +14,7 @@ func StrLen(str string) int {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main

@@ -14,7 +14,7 @@ func BTreeApplyPreorder(root *TreeNode, f func(...interface{}) (int, error)) {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main

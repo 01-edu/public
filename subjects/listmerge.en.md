@@ -4,7 +4,7 @@
 
 Write a function `ListMerge` that places elements of a list `l2` at the end of another list `l1`.
 
--   New elements should not be created!
+- New elements should not be created!
 
 ### Expected function and structure
 
@@ -26,7 +26,7 @@ func ListMerge(l1 *List, l2 *List) {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main

@@ -2,11 +2,11 @@
 
 ### Instructions
 
--   'Écrire une [function](TODO-LINK) qui transforme un nombre dans une `string` en un nombre représenté en `int`(entier).
+- 'Écrire une function qui transforme un nombre dans une `string` en un nombre représenté en `int`(entier).
 
--   Pour cet exercice la gestion des signes + ou - **doit être** prise en compte. Si un des signes se situe avant un chiffre alors il déterminera le signe de l'`int` retourné.
+- Pour cet exercice la gestion des signes + ou - **doit être** prise en compte. Si un des signes se situe avant un chiffre alors il déterminera le signe de l'`int` retourné.
 
--   Cette fonction aura **seulement** à retourner l'`int` (entier). En cas d'input invalide, la fonction devra retourné `0`.
+- Cette fonction aura **seulement** à retourner l'`int` (entier). En cas d'input invalide, la fonction devra retourné `0`.
 
 ### Fonction attendue
 
@@ -18,8 +18,7 @@ func TrimAtoi(s string) int {
 
 ### Utilisation
 
-Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
-
+Voici un éventuel programme pour tester votre fonction :
 
 ```go
 package main
@@ -35,8 +34,8 @@ func main() {
 	s3 := "012 345"
 	s4 := "Hello World!"
 	s5 := "sd+x1fa2W3s4"
-        s6 := "sd-x1fa2W3s4"
-        s7 := "sdx1-fa2W3s4"
+	s6 := "sd-x1fa2W3s4"
+	s7 := "sdx1-fa2W3s4"
 
 	n := piscine.TrimAtoi(s)
 	n2 := piscine.TrimAtoi(s2)

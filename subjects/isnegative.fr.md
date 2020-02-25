@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Écrire une [fonction](TODO-LINK) qui affiche `'T'` (true) sur une seule ligne si l'`int` passé en paramètre est négatif, sinon elle affiche `'F'` (false).
+Écrire une fonction qui affiche `'T'` (true) sur une seule ligne si l'`int` passé en paramètre est négatif, sinon elle affiche `'F'` (false).
 
 ### Fonction attendue
 
@@ -14,7 +14,7 @@ func IsNegative(nb int) {
 
 ### Utilisation
 
-Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
+Voici un éventuel programme pour tester votre fonction :
 
 ```go
 package main

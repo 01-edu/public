@@ -6,10 +6,10 @@ Write a function called `Enigma` that receives pointers to as arguments and move
 
 This function will put :
 
--   `a` into `c`.
--   `c` into `d`.
--   `d` into `b`.
--   `b` into `a`.
+- `a` into `c`.
+- `c` into `d`.
+- `d` into `b`.
+- `b` into `a`.
 
 ### Expected function
 
@@ -21,7 +21,7 @@ func Enigma(a ***int, b *int, c *******int, d ****int) {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main

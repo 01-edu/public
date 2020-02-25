@@ -4,7 +4,7 @@
 
 Write a function `Any` that returns `true`, for a `string` array :
 
--   if, when that `string` array is passed through an `f` function, at least one element returns `true`.
+- if, when that `string` array is passed through an `f` function, at least one element returns `true`.
 
 ### Expected function
 
@@ -16,7 +16,7 @@ func Any(f func(string) bool, arr []string) bool {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main

@@ -5,9 +5,9 @@
 Write a function `Compact` that takes a pointer to a slice of strings as the argument.
 This function must:
 
--   Return the number of elements with non-`nil`.
+- Return the number of elements with non-`nil`.
 
--   Compact, i.e., delete the elements with `nil` in the slice.
+- Compact, i.e., delete the elements with `nil` in the slice.
 
 ### Expected functions
 
@@ -19,15 +19,15 @@ func Compact(ptr *[]string) int {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main
 
 import (
-       "fmt"
+	"fmt"
 
-       piscine ".."
+	piscine ".."
 )
 
 const N = 6

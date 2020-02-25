@@ -4,7 +4,7 @@
 
 Write a program that displays a number's multiplication table.
 
--   The parameter will always be a strictly positive number that fits in an `int`. Said number multiplied by 9 will also fit in an `int`.
+- The parameter will always be a strictly positive number that fits in an `int`. Said number multiplied by 9 will also fit in an `int`.
 
 ### Usage
 

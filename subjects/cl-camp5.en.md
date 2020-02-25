@@ -6,7 +6,7 @@
 
 Create a file `lookagain.sh`, which will look for, from the current directory and its sub-folders all the files:
 
--   all the files ending with `.sh`.
+- all the files ending with `.sh`.
 
 That command will only show the name of the files without the `.sh`.
 

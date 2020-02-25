@@ -4,7 +4,7 @@
 
 Écrire une fonction `ListAt` qui prend un pointeur sur la liste `l` et un `int pos` comme paramètres. Cette fonction devra afficher la `NodeL` à la position `pos` de la liste chaînée `l`.
 
--   En cas d'erreur la fonction affichera `nil`.
+- En cas d'erreur la fonction affichera `nil`.
 
 ### Fonction et structure attendues
 
@@ -22,7 +22,7 @@ func ListAt(l *NodeL, pos int) *NodeL{
 
 ### Utilisation
 
-Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
+Voici un éventuel programme pour tester votre fonction :
 
 ```go
 package main

@@ -6,11 +6,11 @@ Ce raid est basé sur les fonctions du `raid1`.
 
 Créer un programme `raid3` qui prend une `string` comme argument et qui affiche le nom du `raid1` correspondant et ses dimensions.
 
--   Si l'argument n'est pas un des `raid1` le programme affiche `Not a Raid function`.
+- Si l'argument n'est pas un des `raid1` le programme affiche `Not a Raid function`.
 
--   Toutes les réponses doivent se terminer avec un retour à la ligne (`'\n'`).
+- Toutes les réponses doivent se terminer avec un retour à la ligne (`'\n'`).
 
--   Si il y a plus d'un `raid1` correspondant, le programme doit les afficher tous en ordre alphabétique et séparé par un `||`.
+- Si il y a plus d'un `raid1` correspondant, le programme doit les afficher tous en ordre alphabétique et séparé par un `||`.
 
 ### Utilisation
 

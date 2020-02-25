@@ -4,9 +4,9 @@
 
 Écrire une fonction qui doit :
 
--   Trier la liste donnée en paramètre en utilisant la fonction cmp pour sélectionner l'ordre à appliquer,
+- Trier la liste donnée en paramètre en utilisant la fonction cmp pour sélectionner l'ordre à appliquer,
 
--   Retourner un pointeur au premier élément de la liste triée.
+- Retourner un pointeur au premier élément de la liste triée.
 
 Les duplications doivent rester.
 
@@ -29,7 +29,7 @@ func SortList (l *NodeList, cmp func(a,b int) bool) *NodeList{
 }
 ```
 
--   Par exemple, la fonction suivante utilisée comme `cmp` triera la liste dans l'ordre croissant :
+- Par exemple, la fonction suivante utilisée comme `cmp` triera la liste dans l'ordre croissant :
 
 ```go
 func ascending(a, b int) bool{

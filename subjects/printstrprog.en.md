@@ -2,7 +2,7 @@
 
 ### Instructions
 
--   Write a program that prints one by one the characters of a `string` passed as an argument of the program.
+- Write a program that prints one by one the characters of a `string` passed as an argument of the program.
 
 ### Expected output :
 

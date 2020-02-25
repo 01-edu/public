@@ -4,11 +4,11 @@
 
 Écrire un programme qui prend un `int` positif et qui affiche ses facteurs premiers sur la sortie standard, suivi d'un retour à la ligne (`'\n'`).
 
--   Les facteurs doivent être affichés en ordre croissant et séparés par `*`.
+- Les facteurs doivent être affichés en ordre croissant et séparés par `*`.
 
--   Si le nombre de paramètres est différent de 1, le programme affiche un retour à la ligne.
+- Si le nombre de paramètres est différent de 1, le programme affiche un retour à la ligne.
 
--   L'input (l'entrée), quand il y en a un, sera toujours valide.
+- L'input (l'entrée), quand il y en a un, sera toujours valide.
 
 ### Utilisation
 

@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a [function](TODO-LINK) that prints `'T'` (true) on a single line if the `int` passed as parameter is negative, otherwise it prints `'F'` (false).
+Write a function that prints `'T'` (true) on a single line if the `int` passed as parameter is negative, otherwise it prints `'F'` (false).
 
 ### Expected function
 
@@ -14,7 +14,7 @@ func IsNegative(nb int) {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main

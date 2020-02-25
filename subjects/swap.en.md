@@ -2,7 +2,7 @@
 
 ### Instructions
 
--   Write a function that swaps the contents of two **pointers to an int** (`*int`).
+- Write a function that swaps the contents of two **pointers to an int** (`*int`).
 
 ### Expected function
 
@@ -14,7 +14,7 @@ func Swap(a *int, b *int) {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main

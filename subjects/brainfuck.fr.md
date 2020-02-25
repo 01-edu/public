@@ -9,13 +9,13 @@ Le `Brainfuck` est un langage minimaliste. Il consiste en un slice de `byte` (oc
 
 Chaque opérateur consiste en un seul caractère :
 
--   '>' incrémente le pointeur
--   '<' décrémente le pointeur
--   '+' incrémente le byte pointé
--   '-' décrémente le byte pointé
--   '.' affiche le byte pointé sur la sortie standard
--   '[' se rend à son ']' correspondant si le byte pointé est 0 (début de la boucle)
--   ']' se rend à son '[' correspondant si le byte pointé n'est pas 0 (fin de la boucle)
+- '>' incrémente le pointeur
+- '<' décrémente le pointeur
+- '+' incrémente le byte pointé
+- '-' décrémente le byte pointé
+- '.' affiche le byte pointé sur la sortie standard
+- '[' se rend à son ']' correspondant si le byte pointé est 0 (début de la boucle)
+- ']' se rend à son '[' correspondant si le byte pointé n'est pas 0 (fin de la boucle)
 
 Tout autre caractère est un commentaire.
 

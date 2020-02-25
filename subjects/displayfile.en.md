@@ -4,13 +4,13 @@
 
 Write a program that displays, on the standard output, the content of a file given as argument.
 
--   Create a file `quest8.txt` and write into it the sentence `Almost there!!`
+- Create a file `quest8.txt` and write into it the sentence `Almost there!!`
 
--   The argument of the program in this case should be, `quest8.txt`.
+- The argument of the program in this case should be, `quest8.txt`.
 
--   In case of error the program should print one the below messages accordingly:
-    -   `File name missing`.
-    -   `Too many arguments`.
+- In case of error the program should print one the below messages accordingly:
+  - `File name missing`.
+  - `Too many arguments`.
 
 ### Usage :
 

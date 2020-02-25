@@ -18,7 +18,7 @@ func IsSorted(f func(a, b int) int, tab []int) bool {
 
 ### Utilisation
 
-Voici un éventuel [programme](TODO-LINK) pour tester votre fonction (sans `f`) :
+Voici un éventuel programme pour tester votre fonction (sans `f`) :
 
 ```go
 package main

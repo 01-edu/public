@@ -14,7 +14,7 @@ func CountIf(f func(string) bool, tab []string) int {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main

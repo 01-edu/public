@@ -4,11 +4,11 @@
 
 Écrire un programme qui prend une `string` et qui affiche son dernier mot, suivi d'un retour à la ligne (`'\n'`).
 
--   Un mot est une section de `string` délimitée par des espaces ou par le début/fin d'une `string`.
+- Un mot est une section de `string` délimitée par des espaces ou par le début/fin d'une `string`.
 
--   L'output sera suivi d'un retour à la ligne (`'\n'`).
+- L'output sera suivi d'un retour à la ligne (`'\n'`).
 
--   Si le nombre de paramètres est différent de 1, ou si il n'y a pas de mot, le programme affiche un retour à la ligne (`'\n'`).
+- Si le nombre de paramètres est différent de 1, ou si il n'y a pas de mot, le programme affiche un retour à la ligne (`'\n'`).
 
 ### Utilisation
 
