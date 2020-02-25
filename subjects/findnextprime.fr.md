@@ -16,21 +16,21 @@ func FindNextPrime(nb int) int {
 
 ### Utilisation
 
-Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
+Voici un éventuel programme pour tester votre fonction :
 
 ```go
 package main
 
 import (
-        "fmt"
-        piscine ".."
+    "fmt"
+    piscine ".."
 )
 
 func main() {
-	arg1 := 5
-	arg2 := 4
-	fmt.Println(piscine.FindNextPrime(arg1))
-	fmt.Println(piscine.FindNextPrime(arg2))
+    arg1 := 5
+    arg2 := 4
+    fmt.Println(piscine.FindNextPrime(arg1))
+    fmt.Println(piscine.FindNextPrime(arg2))
 }
 ```
 

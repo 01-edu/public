@@ -24,14 +24,14 @@ func Fibonacci(index int) int {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main
 
 import (
-        "fmt"
-        piscine ".."
+	"fmt"
+	piscine ".."
 )
 
 func main() {

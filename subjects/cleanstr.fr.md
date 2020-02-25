@@ -3,6 +3,7 @@
 ### Instructions
 
 Écrire un programme qui prend une `string`, et qui affiche cette `string` avec exactement:
+
 - un espace entre les mots.
 - aucun espace ni de tabulation ni au début ni à la fin.
 - le résultat avecsuivi d'un saut de ligne("`\n`").

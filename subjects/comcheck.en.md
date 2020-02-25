@@ -4,9 +4,9 @@
 
 Write a program `comcheck` that displays on the standard output `Alert!!!` followed by newline (`'\n'`) if at least one of the arguments passed in parameter matches the `string`:
 
--   `01`, `galaxy` or `galaxy 01`.
+- `01`, `galaxy` or `galaxy 01`.
 
--   If none of the parameters match, the program displays a nothing.
+- If none of the parameters match, the program displays a nothing.
 
 ### Usage
 

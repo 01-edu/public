@@ -4,11 +4,11 @@
 
 Écrire un programme qui met en majuscule la première lettre de chaque mot et en minuscule les autres lettres du reste du mot d'une `string`.
 
--   Un mot est une suite de caractères **alphanumériques**.
+- Un mot est une suite de caractères **alphanumériques**.
 
--   Si il y a plus d'un argument le programme doit afficher `Too many arguments`.
+- Si il y a plus d'un argument le programme doit afficher `Too many arguments`.
 
--   Si il n'y a pas d'arguments le programme doit afficher un retour à la ligne (`'\n'`).
+- Si il n'y a pas d'arguments le programme doit afficher un retour à la ligne (`'\n'`).
 
 ### Utilisation :
 

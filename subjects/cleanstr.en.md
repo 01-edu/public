@@ -3,6 +3,7 @@
 ### Instructions
 
 Write a **program** that takes a `string`, and displays this `string` with exactly:
+
 - one space between words.
 - without spaces nor tabs at the beginning nor at the end.
 - with the result followed by a newline ("`\n`").

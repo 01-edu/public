@@ -4,11 +4,11 @@
 
 Créer un fichier `.go`.
 
--   Le code ci-dessous doit être copié dans ce fichier.
+- Le code ci-dessous doit être copié dans ce fichier.
 
--   Les changements nécéssaires doivent être appliqués pour que le programme fonctionne.
+- Les changements nécéssaires doivent être appliqués pour que le programme fonctionne.
 
--   Le programme doit être rendu dans un dossier nommé `boolean`.
+- Le programme doit être rendu dans un dossier nommé `boolean`.
 
 ### Code à copier
 

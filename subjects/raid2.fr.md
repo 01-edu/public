@@ -2,9 +2,9 @@
 
 ### Instructions
 
--   Créer un programme qui résout un sudoku.
+- Créer un programme qui résout un sudoku.
 
--   Un sudoku valide a seulement une solution possible.
+- Un sudoku valide a seulement une solution possible.
 
 ### Usage
 

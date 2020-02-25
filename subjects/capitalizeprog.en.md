@@ -4,11 +4,11 @@
 
 Write a program that capitalizes the first letter of each word **and** lowercases the rest of each word of a `string`.
 
--   A word is a sequence of **alphanumerical** characters.
+- A word is a sequence of **alphanumerical** characters.
 
--   If there is more than one argument the program should print `Too many arguments`.
+- If there is more than one argument the program should print `Too many arguments`.
 
--   If there is no arguments given the program should print a newline ("`\n`").
+- If there is no arguments given the program should print a newline ("`\n`").
 
 ### Usage :
 

@@ -6,13 +6,13 @@
 
 Create a file `myfamily.sh`, which will show a subject's family (key: relatives).
 
--   The quotes have to be removed.
+- The quotes have to be removed.
 
--   The subject will be decided depending on his ID which will be contained in the environment variable HERO_ID.
+- The subject will be decided depending on his ID which will be contained in the environment variable HERO_ID.
 
-*   Where to look : https://[[DOMAIN]]/assets/superhero/all.json
+* Where to look : https://[[DOMAIN]]/assets/superhero/all.json
 
-*   What to use : curl, jq and others...
+* What to use : curl, jq and others...
 
 ### Usage
 

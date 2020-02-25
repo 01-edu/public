@@ -4,13 +4,13 @@
 
 Write a function `ListForEachIf` that applies a function given as argument to the data within some of the nodes of the list `l`.
 
--   This function receives two functions:
+- This function receives two functions:
 
-    -   `f` is a function that is applied to the node.
+  - `f` is a function that is applied to the node.
 
-    -   `cond` is a function that returns a `boolean` and it will be used to determine if the function `f` should be applied to the node.
+  - `cond` is a function that returns a `boolean` and it will be used to determine if the function `f` should be applied to the node.
 
--   The function given as argument must have a pointer `*NodeL` as argument.
+- The function given as argument must have a pointer `*NodeL` as argument.
 
 ### Expected function and structure
 
@@ -62,7 +62,7 @@ func ListForEachIf(l *List, f func(*NodeL), cond func(*NodeL) bool) {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main

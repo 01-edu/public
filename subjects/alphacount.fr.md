@@ -17,20 +17,20 @@ func AlphaCount(str string) int {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main
 
 import (
-	"fmt"
-	piscine ".."
+    "fmt"
+    piscine ".."
 )
 
 func main() {
-	str := "Hello 78 World!    4455 /"
-	nb := piscine.AlphaCount(str)
-	fmt.Println(nb)
+    str := "Hello 78 World!    4455 /"
+    nb := piscine.AlphaCount(str)
+    fmt.Println(nb)
 }
 ```
 

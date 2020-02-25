@@ -6,13 +6,13 @@
 
 Créer un fichier `myfamily.sh`, qui affichera la famille d'un individu (clef: relatives).
 
--   Les guillemets doivent être enlevés.
+- Les guillemets doivent être enlevés.
 
--   L'individu sera choisi en fonction de son ID qui sera contenu dans la variable d'environment HERO_ID.
+- L'individu sera choisi en fonction de son ID qui sera contenu dans la variable d'environment HERO_ID.
 
-*   Où chercher : https://[[DOMAIN]]/assets/superhero/all.json
+* Où chercher : https://[[DOMAIN]]/assets/superhero/all.json
 
-*   Quoi utiliser : `curl`, `jq` et d'autres...
+* Quoi utiliser : `curl`, `jq` et d'autres...
 
 ### Utilisation
 

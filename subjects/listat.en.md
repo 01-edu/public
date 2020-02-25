@@ -4,7 +4,7 @@
 
 Write a function `ListAt` that takes a pointer to the list `l` and an `int pos` as parameters. This function should return the `NodeL` in the position `pos` of the linked list `l`.
 
--   In case of error the function should return `nil`.
+- In case of error the function should return `nil`.
 
 ### Expected function and structure
 
@@ -22,7 +22,7 @@ func ListAt(l *NodeL, pos int) *NodeL{
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main

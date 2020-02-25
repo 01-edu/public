@@ -20,19 +20,19 @@ func AppendRange(min, max int) []int {
 
 ### Utilisation
 
-Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
+Voici un éventuel programme pour tester votre fonction :
 
 ```go
 package main
 
 import (
-	"fmt"
-	piscine ".."
+    "fmt"
+    piscine ".."
 )
 
 func main() {
-	fmt.Println(piscine.AppendRange(5, 10))
-	fmt.Println(piscine.AppendRange(10, 5))
+    fmt.Println(piscine.AppendRange(5, 10))
+    fmt.Println(piscine.AppendRange(10, 5))
 }
 ```
 

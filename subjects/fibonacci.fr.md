@@ -30,8 +30,8 @@ Voici un éventuel `main.go` :
 package main
 
 import (
-        "fmt"
-        piscine ".."
+	"fmt"
+	piscine ".."
 )
 
 func main() {

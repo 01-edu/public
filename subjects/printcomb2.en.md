@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a [function](TODO-LINK) that prints in ascending order on a single line all possible combinations of two different two-digit numbers.
+Write a function that prints in ascending order on a single line all possible combinations of two different two-digit numbers.
 
 These combinations are separated by a comma and a space.
 
@@ -16,7 +16,7 @@ func PrintComb2() {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main

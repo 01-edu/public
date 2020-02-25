@@ -6,11 +6,11 @@ This raid is based on the `raid1` functions.
 
 Create a program `raid3` that takes a `string` as an argument and displays the name of the matching `raid1` and its dimensions.
 
--   If the argument is not a `raid1` the program should print `Not a Raid function`.
+- If the argument is not a `raid1` the program should print `Not a Raid function`.
 
--   All answers must end with a newline (`'\n'`).
+- All answers must end with a newline (`'\n'`).
 
--   If there is more than one `raid1` matches, the program must display them all alphabetically ordered and separated by a `||`.
+- If there is more than one `raid1` matches, the program must display them all alphabetically ordered and separated by a `||`.
 
 ### Usage
 

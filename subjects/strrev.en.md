@@ -2,9 +2,9 @@
 
 ### Instructions
 
--   Write a function that reverses a `string`.
+- Write a function that reverses a `string`.
 
--   This function will **return** the s `string`.
+- This function will **return** the s `string`.
 
 ### Expected function
 
@@ -16,7 +16,7 @@ func StrRev(s string) string {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main

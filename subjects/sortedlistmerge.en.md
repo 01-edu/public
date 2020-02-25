@@ -4,7 +4,7 @@
 
 Write a function `SortedListMerge` that merges two lists `n1` and `n2` in ascending order.
 
--   During the tests `n1` and `n2` will already be initially sorted.
+- During the tests `n1` and `n2` will already be initially sorted.
 
 ### Expected function and structure
 
@@ -16,7 +16,7 @@ func SortedListMerge(n1 *NodeI, n2 *NodeI) *NodeI {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main

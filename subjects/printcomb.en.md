@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a [function](TODO-LINK) that prints in ascending order on a single line all unique combinations of three different digits so that the first digit is lower than the second and the second is lower than the third.
+Write a function that prints in ascending order on a single line all unique combinations of three different digits so that the first digit is lower than the second and the second is lower than the third.
 
 These combinations are separated by a comma and a space.
 
@@ -16,7 +16,7 @@ func PrintComb() {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main

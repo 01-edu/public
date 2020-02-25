@@ -2,7 +2,7 @@
 
 ### Instructions
 
--   Écrire une fonction qui compte le nombre de `runes` d'une `string` et qui retourne le nombre trouvé.
+- Écrire une fonction qui compte le nombre de `runes` d'une `string` et qui retourne le nombre trouvé.
 
 ### Fonction attendue
 
@@ -14,7 +14,7 @@ func StrLen(str string) int {
 
 ### Utilisation
 
-Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
+Voici un éventuel programme pour tester votre fonction :
 
 ```go
 package main

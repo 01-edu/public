@@ -2,9 +2,9 @@
 
 ### Instructions
 
--   Create a program that resolves a sudoku.
+- Create a program that resolves a sudoku.
 
--   A valid sudoku has only one possible solution.
+- A valid sudoku has only one possible solution.
 
 ### Usage
 

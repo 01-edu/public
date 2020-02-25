@@ -4,11 +4,11 @@
 
 Write a program which must:
 
--   **Allocate (with `make`)** an array of integers.
+- **Allocate (with `make`)** an array of integers.
 
--   Fill it with consecutive values that begins at the first argument and end at the second argument (Including the values of thoses arguments !).
+- Fill it with consecutive values that begins at the first argument and end at the second argument (Including the values of thoses arguments !).
 
--   That prints the array.
+- That prints the array.
 
 Errors should be handled.
 

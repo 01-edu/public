@@ -4,7 +4,7 @@
 
 Write a function, `Unmatch`, that returns the element of the slice (arr) that does not have a correspondent pair.
 
--   If all the number have a correspondent pair, it shoud return `-1`.
+- If all the number have a correspondent pair, it shoud return `-1`.
 
 ### Expected function
 
@@ -16,7 +16,7 @@ func Unmatch(arr []int) int {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main

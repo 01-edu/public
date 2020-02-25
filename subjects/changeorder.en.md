@@ -24,8 +24,8 @@ You have to return pointer/reference to the beginning of new list
 package main
 
 type NodeAddL struct {
-    Next *NodeAddL
-    Num  int
+	Next *NodeAddL
+	Num  int
 }
 
 func Changeorder(node *NodeAddL) *NodeAddL {
@@ -41,26 +41,26 @@ Here is a possible program to test your function:
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 // I implemented pushBack for this
 
 func main() {
-    num1 := &NodeAddL{Num: 1}
-    num1 = pushBack(num1, 2)
-    num1 = pushBack(num1, 3)
-    num1 = pushBack(num1, 4)
-    num1 = pushBack(num1, 5)
+	num1 := &NodeAddL{Num: 1}
+	num1 = pushBack(num1, 2)
+	num1 = pushBack(num1, 3)
+	num1 = pushBack(num1, 4)
+	num1 = pushBack(num1, 5)
 
-    result := Changeorder(num1)
-    for tmp := result; tmp != nil; tmp = tmp.Next {
-        fmt.Print(tmp.Num)
-        if tmp.Next != nil {
-            fmt.Print(" -> ")
-        }
-    }
-    fmt.Println()
+	result := Changeorder(num1)
+	for tmp := result; tmp != nil; tmp = tmp.Next {
+		fmt.Print(tmp.Num)
+		if tmp.Next != nil {
+			fmt.Print(" -> ")
+		}
+	}
+	fmt.Println()
 }
 
 ```

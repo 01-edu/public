@@ -4,15 +4,15 @@
 
 Considérer qu'un point est défini par ses coordonnées et qu'un rectangle est défini par les points de son coin du haut à gauche et son coin du bas à droite.
 
--   Définir deux structures nommées, `point` et `rectangle`.
+- Définir deux structures nommées, `point` et `rectangle`.
 
--   La structure `point` doit avoir deux variables, `x` et `y`, de type `int`.
+- La structure `point` doit avoir deux variables, `x` et `y`, de type `int`.
 
--   La structure `rectangle` doit avoir deux variables, `upLeft` et `downRight` de type `point`.
+- La structure `rectangle` doit avoir deux variables, `upLeft` et `downRight` de type `point`.
 
--   Le but est de faire un programme qui:
-    -   Avec une slice de points donnée de taille `n` retournes le plus petit rectangle qui contient tous les points dans le vecteur de points0. Le nom de cette fonction est `defineRectangle`.
-    -   Et qui calcules et affiche l'airethe de ce rectangle défini.
+- Le but est de faire un programme qui:
+  - Avec une slice de points donnée de taille `n` retournes le plus petit rectangle qui contient tous les points dans le vecteur de points0. Le nom de cette fonction est `defineRectangle`.
+  - Et qui calcules et affiche l'airethe de ce rectangle défini.
 
 ### Main et fonctions attendues pour ce programme
 
