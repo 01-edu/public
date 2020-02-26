@@ -94,10 +94,10 @@ Here is a possible program to test your function :
 package main
 
 func main() {
-  t1 := NewRandTree()
-  t2 := NewRandTree()
+	t1 := NewRandTree()
+	t2 := NewRandTree()
 
-  fmt.Println(IsSameTree(t1, t2))
+	fmt.Println(IsSameTree(t1, t2))
 }
 ```
 

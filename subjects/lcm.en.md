@@ -33,8 +33,8 @@ Here is a possible program to test your function :
 package main
 
 func main() {
-    fmt.Println(Lcm(2, 7))
-    fmt.Println(Lcm(0, 4))
+	fmt.Println(Lcm(2, 7))
+	fmt.Println(Lcm(0, 4))
 }
 ```
 

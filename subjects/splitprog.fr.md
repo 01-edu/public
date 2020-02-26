@@ -11,7 +11,6 @@ Cela signifie que:
 - La fonction main déclarée doit **aussi passer** le `Restrictions Checker`(le testeur de fonctions illégales). Il est conseillé à l'étudiant de rendre une fonction main vide après ses tests finis.
 - Toutes les autres régles sont les mêmes que pour un `programme`.
 
-
 ### Instructions
 
 Écrire une fonction qui sépare les mots d'une `string`, qui les met dans un tableau de `string`.
@@ -43,7 +42,6 @@ func main() {
 	fmt.Println(piscine.Split(str, "HA"))
 }
 ```
-
 
 Et son résultat :
 

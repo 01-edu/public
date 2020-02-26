@@ -2,7 +2,7 @@
 
 ### Instructions
 
--   Write a function that will be formatted as below.
+- Write a function that will be formatted as below.
 
 ### Expected function
 

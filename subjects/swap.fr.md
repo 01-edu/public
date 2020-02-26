@@ -2,7 +2,7 @@
 
 ### Instructions
 
--   Écrire une fonction qui échange les contenus de deux **pointeurs sur entier** (`*int`).
+- Écrire une fonction qui échange les contenus de deux **pointeurs sur entier** (`*int`).
 
 ### Fonction attendue
 

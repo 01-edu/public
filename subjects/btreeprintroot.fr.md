@@ -9,8 +9,8 @@ Les nodes doivent être définies comme ci-dessous:
 
 ```go
 type TreeNode struct {
-    left, right *TreeNode
-    data        string
+	left, right *TreeNode
+	data        string
 }
 
 func PrintRoot(root *TreeNode){

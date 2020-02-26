@@ -7,8 +7,8 @@
 - Avoid Obvious Comments
 - Code Grouping
 - Consistent Naming Scheme
-    - camelCase
-    - under_scores
+  - camelCase
+  - under_scores
 - [**DRY**](https://thefullstack.xyz/dry-yagni-kiss-tdd-soc-bdfu) (Don't Repeat Yourself) or [**DIE**](https://thefullstack.xyz/dry-yagni-kiss-tdd-soc-bdfu) (Duplication is Evil) principle
 - [**KISS**](https://thefullstack.xyz/dry-yagni-kiss-tdd-soc-bdfu) (Keep It Simple Stupid)
 - [**YAGNI**](https://thefullstack.xyz/dry-yagni-kiss-tdd-soc-bdfu) (You Aren’t Gonna Need It)

@@ -2,7 +2,7 @@
 
 ### Instructions
 
--   Écrire un programme qui affiche un à un les caractères d'une `string` passée en argument du programme.
+- Écrire un programme qui affiche un à un les caractères d'une `string` passée en argument du programme.
 
 ### Utilisation :
 
