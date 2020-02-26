@@ -2,7 +2,7 @@
 
 ### Instructions
 
--   Écrire une fonction qui prend un **pointeur sur pointeur sur pointeur sur int** en argument et qui assignes à cet int la valeur 1.
+- Écrire une fonction qui prend un **pointeur sur pointeur sur pointeur sur int** en argument et qui assignes à cet int la valeur 1.
 
 ### Fonction attendue
 
@@ -20,8 +20,8 @@ Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 package main
 
 import (
-    "fmt"
-    piscine ".."
+	"fmt"
+	piscine ".."
 )
 
 func main() {

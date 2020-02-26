@@ -2,7 +2,7 @@
 
 ### Instructions
 
--   Écrire une fonction qui aura le format ci-dessous.
+- Écrire une fonction qui aura le format ci-dessous.
 
 ### Fonction attendue
 

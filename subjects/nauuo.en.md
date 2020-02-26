@@ -37,15 +37,15 @@ Here is a possible program to test your function :
 package main
 
 import (
-    "fmt"
-    piscine ".."
+	"fmt"
+	piscine ".."
 )
 
 func main() {
-    fmt.Println(piscine.Nauuo(50, 43, 20))
-    fmt.Println(piscine.Nauuo(13, 13, 0))
-    fmt.Println(piscine.Nauuo(10, 9, 0))
-    fmt.Println(piscine.Nauuo(5, 9, 2))
+	fmt.Println(piscine.Nauuo(50, 43, 20))
+	fmt.Println(piscine.Nauuo(13, 13, 0))
+	fmt.Println(piscine.Nauuo(10, 9, 0))
+	fmt.Println(piscine.Nauuo(5, 9, 2))
 }
 ```
 

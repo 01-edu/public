@@ -2,7 +2,7 @@
 
 ### Instructions
 
--   Write a function that takes a **pointer to an int** as argument and gives to this int the value of 1.
+- Write a function that takes a **pointer to an int** as argument and gives to this int the value of 1.
 
 ### Expected function
 
@@ -20,14 +20,14 @@ Here is a possible program to test your function :
 package main
 
 import (
-    "fmt"
-    piscine ".."
+	"fmt"
+	piscine ".."
 )
 
 func main() {
-    n := 0
-    piscine.PointOne(&n)
-    fmt.Println(n)
+	n := 0
+	piscine.PointOne(&n)
+	fmt.Println(n)
 }
 ```
 

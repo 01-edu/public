@@ -10,8 +10,8 @@ The nodes must be defined as follows :
 
 ```go
 type TreeNode struct {
-    Left, Right, Parent *TreeNode
-    Data                 string
+	Left, Right, Parent *TreeNode
+	Data                 string
 }
 
 func BTreeInsertData(root *TreeNode, data string) *TreeNode {
