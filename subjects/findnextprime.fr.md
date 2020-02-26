@@ -22,15 +22,15 @@ Voici un éventuel programme pour tester votre fonction :
 package main
 
 import (
-    "fmt"
-    piscine ".."
+	"fmt"
+	piscine ".."
 )
 
 func main() {
-    arg1 := 5
-    arg2 := 4
-    fmt.Println(piscine.FindNextPrime(arg1))
-    fmt.Println(piscine.FindNextPrime(arg2))
+	arg1 := 5
+	arg2 := 4
+	fmt.Println(piscine.FindNextPrime(arg1))
+	fmt.Println(piscine.FindNextPrime(arg2))
 }
 ```
 

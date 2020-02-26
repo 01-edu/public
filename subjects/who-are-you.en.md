@@ -8,6 +8,6 @@ The only though that comes to your mind is a tag that says: `subject Id: 70`"
 
 Create the file `who-are-you.sh` which will remind you who you are by showing your name only.
 
--   Where to look : https://[[DOMAIN]]/assets/superhero/all.json
+- Where to look : https://[[DOMAIN]]/assets/superhero/all.json
 
--   What to use : `curl` and `jq`
+- What to use : `curl` and `jq`
