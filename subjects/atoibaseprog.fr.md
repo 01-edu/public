@@ -43,15 +43,15 @@ Voici un éventuel programme pour tester votre fonction :
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 func main() {
-    fmt.Println(AtoiBase("125", "0123456789"))
-    fmt.Println(AtoiBase("1111101", "01"))
-    fmt.Println(AtoiBase("7D", "0123456789ABCDEF"))
-    fmt.Println(AtoiBase("uoi", "choumi"))
-    fmt.Println(AtoiBase("bbbbbab", "-ab"))
+	fmt.Println(AtoiBase("125", "0123456789"))
+	fmt.Println(AtoiBase("1111101", "01"))
+	fmt.Println(AtoiBase("7D", "0123456789ABCDEF"))
+	fmt.Println(AtoiBase("uoi", "choumi"))
+	fmt.Println(AtoiBase("bbbbbab", "-ab"))
 }
 ```
 

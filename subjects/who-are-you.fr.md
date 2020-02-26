@@ -8,6 +8,6 @@ Tout ce qui vous vient à l'esprit est une étiquette sur laquelle est écrite: 
 
 Créer le fichier `who-are-you.sh` qui vous rappellera qui vous êtes en affichant votre Nom seulement.
 
--   Où chercher : https://[[DOMAIN]]/assets/superhero/all.json
+- Où chercher : https://[[DOMAIN]]/assets/superhero/all.json
 
--   Quoi utiliser : `curl` et `jq`
+- Quoi utiliser : `curl` et `jq`
