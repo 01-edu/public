@@ -22,8 +22,8 @@ Write a function that reverses the list and returns pointer/reference to new lin
 package main
 
 type NodeAddL struct {
-    Next *NodeAddL
-    Num  int
+	Next *NodeAddL
+	Num  int
 }
 
 func Reverse(node *NodeAddL) *NodeAddL {
