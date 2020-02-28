@@ -18,7 +18,7 @@ Write a program that takes an undefined number of arguments which could be consi
 
 - A wrong `option` must print `Invalid Option` followed by a newline.
 
-## Usage
+### Usage
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ go build

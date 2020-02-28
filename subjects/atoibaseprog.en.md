@@ -15,7 +15,7 @@ This means that:
 
 Write a function that takes a `string` number and its `string` base in parameters and returns its conversion as an `int`.
 
-If the base or the `string` number is not valid it returns `0`:
+If the base or the `string` number is not valid it returns `0`
 
 Validity rules for a base :
 

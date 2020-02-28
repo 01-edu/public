@@ -6,7 +6,7 @@ Write a program that behaves like the `Compare` function from the `Go` package `
 
 This program prints a number after comparing two `string` lexicographically.
 
-### Usage :
+### Usage:
 
 ```console
 student@ubuntu:~/compareprog$ go build
