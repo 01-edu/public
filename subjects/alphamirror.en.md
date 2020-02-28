@@ -18,7 +18,7 @@ If the number of arguments is different from 1, the program displays only a newl
 ```console
 student@ubuntu:~/[[ROOT]]/alphamirror$ go build
 student@ubuntu:~/[[ROOT]]/alphamirror$ ./alphamirror "abc"
-zyx
+zyx$
 student@ubuntu:~/[[ROOT]]/alphamirror$ ./alphamirror "My horse is Amazing." | cat -e
 Nb slihv rh Znzarmt.$
 student@ubuntu:~/[[ROOT]]/alphamirror$ ./alphamirror | cat -e
