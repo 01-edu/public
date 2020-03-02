@@ -2,57 +2,17 @@
 
 ### Objectives
 
-This project consists in creating a web forum that allows communication between users through the creation of posts and comments. It also allows non-registered users to only see posts and comments.
+This project consists in creating a web forum that allows :
 
-- Your forum should work based on services. Using services to create a project means that instead of having all of your project in one location, you actually divide it in smaller "projects".
-- For example if you want to create a gym application you can split it in: login/register, workouts, stats (weight, muscle mass, etc.), and so on.
+- communication between users and the community through the creation of posts/comments.
+- non-registered users to only see posts/comments.
+- registered users to like or dislike posts/comments.
+- associate posts to categories.
 
-You can learn more about services [here](https://medium.com/myntra-engineering/my-journey-with-golang-web-services-4d922a8c9897).
+Your forum should work based on services. Using services to create a project means that instead of having a monolith architecture, you actually have the various components distributed across a cluster of instances. In other words, dividing the project in smaller "projects", this way it becomes easier to understand and your project will become more scalable.
+- For example for a taxi like application you can divide it in : passenger management, billing, notifications, payments, trip management and driver management.
 
-#### Docker
-
-For the Forum project you must use Docker, you can see all about docker basics on the [ascii-art-web-dockerize](https://public.01-edu.org/subjects/ascii-art-web/ascii-art-web-dockerize.en) subject.
-
-You must build a network using containers, in docker you can create your own network of containers through network drivers. Docker provides two network drivers, being `bridge` and `overlay`.
-
-Your objective is to use the [`bridge` network](https://docs.docker.com/engine/tutorials/networkingcontainers/) to create your own network for the services created for the forum project. Docker connected to this network by default, so docker creates a subnet and a gateway for the `bridge` network, the command `docker run` automatically adds containers to it. To inspect the network for more details you can just run `docker network inspect <network>`.
-
-- You can see the default network :
-
-```console
-student$ docker network ls
-NETWORK ID          NAME                DRIVER              SCOPE
-b64130fc5aae        bridge              bridge              local
-033f3a191908        host                host                local
-159cdc8d8083        none                null                local
-```
-
-- Each service will have to run in a container that will be associated to a docker host, a docker host must contain at least two containers/services, the containers must be connected to a bridge.
-
-- You must be carful, bridges are a private network, so it is restricted to a single Docker host, for instance containers can communicate within networks but not across networks.
-  - You may have to use [Port Mapping](https://docker-k8s-lab.readthedocs.io/en/latest/docker/port-mapping.html).
-  - Or attaching containers to multiple networks, that way connecting with all of the containers on all networks creating a "hub".
-
-#### Authentication
-
-In this segment you will have to create a page that allows you to `register` new users for the forum, by inputting their credentials. You also have to create a `login session` to access te forum and be able to add posts or comments.
-
-Instructions for user register:
-
-- Must ask for email
-- Must ask for password
-- When the user is taken return an error response.
-- The password must be encrypted
-
-After the registrations the new users must be able to login into the forum. For that they will fill their credentials in the login page.
-
-This page must be able to check if the email provided is present in our database and if all credentials are correct. It will check if the password is the same with the one provided and if the password is not the same return an error response.
-
-If there is an error in the login it must be handled properly:
-
-- If there is an error when casting, return an error response.
-- If the email is not present or incorrect return an error response.
-- If the password is not present or incorrect return an error response.
+You can learn more about this [here](https://www.nginx.com/blog/introduction-to-microservices/).
 
 #### SQLite
 
@@ -60,8 +20,9 @@ In order to store the data in your forum (like users, posts, comments, etc.) you
 
 SQLite is a popular choice as embedded database software for local/client storage in application software such as web browsers. It enables you to create a database as well as controlling it by using queries.
 
-- To interact with the database you should use http requests between the server and the database.
-- You must use at least one SELECT, one CREATE and one INSERT query.
+To structure your database and to achieve better performance we highly advise you to take a look at the [entity relationship diagram](https://www.smartdraw.com/entity-relationship-diagram/) and build one based on your own database. 
+
+- You must use at least one SELECT, one CREATE, one INSERT and one DELETE query.
 
 To know more about SQLite you can check the [SQLite page](https://www.sqlite.org/index.html).
 
@@ -91,6 +52,46 @@ sqlite> ^C^C^Cstudent$
 
 ```
 
+#### Authentication
+
+In this segment the client must be able to `register` as a new user for the forum, by inputting their credentials. You also have to create a `login session` to access the forum and be able to add posts and/or comments.
+
+You should use cookies to allow each user to have only one open session. Each of this sessions must contain an expiration date. It's up to you to decide what time the cookie stays "alive".
+
+Instructions for user registration:
+
+- Must ask for email
+- When the email is taken return an error response.
+- Must ask for username
+- Must ask for password
+- The password must be encrypted
+
+The forum must be able to check if the email provided is present in the database and if all credentials are correct. It will check if the password is the same with the one provided and if the password is not the same return an error response.
+
+#### Docker
+
+For the forum project you must use Docker. You can see all about docker basics on the [ascii-art-web-dockerize](https://public.01-edu.org/subjects/ascii-art-web/ascii-art-web-dockerize.en) subject.
+
+You must build a network using containers. In docker you can create your own network of containers through network drivers. Docker provides two network drivers : `bridge` and `overlay`.
+
+- You can see the default network :
+
+```console
+student$ docker network ls
+NETWORK ID          NAME                DRIVER              SCOPE
+b64130fc5aae        bridge              bridge              local
+033f3a191908        host                host                local
+159cdc8d8083        none                null                local
+```
+
+Your objective is to use the [`bridge` network](https://docs.docker.com/engine/tutorials/networkingcontainers/) to create your own network for the services. Docker connects to this network by default, creating a subnet and a gateway for the `bridge` network. The command `docker run` automatically adds containers to it. To inspect the network for more details you can just run `docker network inspect <network>`.
+
+- Each service will have to run in a container that will be associated to a docker host, which must contain at least two containers/services and these must be connected to a bridge.
+
+- You must be careful, bridges are a private network, so it is restricted to a single Docker host, for instance containers can communicate within networks but not across networks.
+  - You may have to use [Port Mapping](https://docker-k8s-lab.readthedocs.io/en/latest/docker/port-mapping.html).
+  - Or attaching containers to multiple networks connecting with all containers on all networks creating a ["hub"](https://docs.docker.com/engine/tutorials/bridge3.png).
+
 This project will help you learn about:
 
 - Client utilities.
@@ -99,17 +100,17 @@ This project will help you learn about:
   - HTML
   - HTTP
   - Services
-- Learning what is [docker](https://docs.docker.com).
+  - Sessions and cookies
 - Docker network bridge
 - Using and [setting up Docker](https://docs.docker.com/get-started/) :
   - Services and dependencies.
   - Containerizing an application.
   - Compatibility/Dependency.
   - Creating images.
-  - Docker network.
 - SQLite language.
   - Manipulation of databases.
 - How to manage dependencies in Go.
+- The basics of encryption.
 
 ### Instructions
 
@@ -117,6 +118,7 @@ This project will help you learn about:
 - You must use **SQLite** queries.
 - You must use HTML files.
 - You must handle website errors, HTTP status.
+- You must handle all sort of technical errors.
 - The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices.en).
 - It is recommend that the code should present a **test file**.
 
@@ -124,3 +126,5 @@ This project will help you learn about:
 
 - All [standard go](https://golang.org/pkg/) packages are allowed.
 - github.com/mattn/go-sqlite3
+- golang.org/x/crypto/bcrypt
+- github.com/satori/go.uuid
