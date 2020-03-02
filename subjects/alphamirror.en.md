@@ -13,7 +13,7 @@ The final result will be followed by a newline (`'\n'`).
 
 If the number of arguments is different from 1, the program displays only a newline (`'\n'`).
 
-### Usage:
+### Usage
 
 ```console
 student@ubuntu:~/[[ROOT]]/alphamirror$ go build
