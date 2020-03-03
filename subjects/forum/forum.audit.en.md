@@ -46,9 +46,15 @@
 
 ###### Is it possible to register?
 
+##### Try opening two different browsers and login into one of them. Then create a new post or just add a comment. Refresh the other browser.
+
+###### Can you confirm that the browser non logged remains unregistered?
+
 ##### Try to login with the user you created.
 
 ###### Can you login and have all the rights of a registered user?
+
+##### Are sessions present in the project?
 
 ##### Try to login without any credentials.
 
