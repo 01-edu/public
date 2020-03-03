@@ -9,7 +9,8 @@ This project consists in creating a web forum that allows :
 - registered users to like or dislike posts/comments.
 - associate posts to categories.
 
-Your forum should work based on services. Using services to create a project means that instead of having a monolith architecture, you actually have the various components distributed across a cluster of instances. In other words, dividing the project in smaller "projects", this way it becomes easier to understand and your project will become more scalable.
+Your forum should work based on services. Using services to create a project means that instead of having a monolith architecture, you actually have various components distributed across a cluster of instances. In other words, dividing the project in smaller "projects", this way it becomes easier to understand and your project will become more scalable.
+
 - For example for a taxi like application you can divide it in : passenger management, billing, notifications, payments, trip management and driver management.
 
 You can learn more about this [here](https://www.nginx.com/blog/introduction-to-microservices/).
@@ -20,7 +21,7 @@ In order to store the data in your forum (like users, posts, comments, etc.) you
 
 SQLite is a popular choice as embedded database software for local/client storage in application software such as web browsers. It enables you to create a database as well as controlling it by using queries.
 
-To structure your database and to achieve better performance we highly advise you to take a look at the [entity relationship diagram](https://www.smartdraw.com/entity-relationship-diagram/) and build one based on your own database. 
+To structure your database and to achieve better performance we highly advise you to take a look at the [entity relationship diagram](https://www.smartdraw.com/entity-relationship-diagram/) and build one based on your own database.
 
 - You must use at least one SELECT, one CREATE, one INSERT and one DELETE query.
 
