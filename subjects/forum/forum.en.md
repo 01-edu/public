@@ -12,7 +12,7 @@ Your forum should work based on services. Using services to create a project mea
 
 - For example for a taxi like application you can divide it in the following services : passenger management, billing, notifications, payments, trip management and driver management.
 
-You can learn more about this [here](https://www.nginx.com/blog/introduction-to-microservices/).
+- Services can [communicate](https://medium.com/@nathankpeck/microservice-principles-smart-endpoints-and-dumb-pipes-5691d410700f) using : **Request-Response**, this being that one service invokes another service by making an request, usually to store or retrieve data. Or **Observer**, this is a event base communication, so one or more services are listening for an event and wen triggered they respond to the event.
 
 #### SQLite
 
@@ -85,7 +85,7 @@ b64130fc5aae        bridge              bridge              local
 
 Your objective is to use the [`bridge` network](https://docs.docker.com/engine/tutorials/networkingcontainers/) to create your own network for the services. Docker connects to this network by default, creating a subnet and a gateway for the `bridge` network. The command `docker run` automatically adds containers to it. To inspect the network for more details you can just run `docker network inspect <network>`.
 
-- Each service will have to run in a container that will be associated to a docker host, which must contain at least two containers/services and these must be connected to a bridge.
+- Each service will have to run in a container that will be associated to a docker host, which must contain at least two containers/services and these must be connected to a bridge, creating a network for [example](https://docs.docker.com/engine/tutorials/bridge3.png).
 
 - You must be careful, bridges are a private network, so it is restricted to a single Docker host, for instance containers can communicate within networks but not across networks.
   - You may have to use [Port Mapping](https://docker-k8s-lab.readthedocs.io/en/latest/docker/port-mapping.html).
