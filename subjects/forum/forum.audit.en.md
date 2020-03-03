@@ -42,6 +42,30 @@
 
 #### Authentication
 
+##### Try to register as a new user in the forum.
+
+###### Is it possible to register?
+
+##### Try to login with the user you created.
+
+###### Can you login and have all the rights of a registered user?
+
+##### Try to login without any credentials.
+
+###### Does it show a warning message?
+
+##### Try opening two different browsers and login into one of them. Then create a new post or just add a comment. Refresh the other browser.
+
+###### Does it present the changes made in the logged in browser?
+
+###### Can you confirm that it is not possible to do it?
+
+###### Is it asked in the register for an email and a password?
+
+###### Does the project detects if the email or password are wrong?
+
+###### Does the project detects if the email or user name is already taken in the register?
+
 #### Docker
 
 ###### Does the project have Dockerfiles?
