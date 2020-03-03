@@ -5,13 +5,12 @@
 This project consists in creating a web forum that allows :
 
 - communication between users and the community through the creation of posts/comments.
-- non-registered users to only see posts/comments.
-- registered users to like or dislike posts/comments.
 - associate posts to categories.
+- non-registered users to only see posts/comments.
 
 Your forum should work based on services. Using services to create a project means that instead of having a monolith architecture, you actually have various components distributed across a cluster of instances. In other words, dividing the project in smaller "projects", this way it becomes easier to understand and your project will become more scalable.
 
-- For example for a taxi like application you can divide it in : passenger management, billing, notifications, payments, trip management and driver management.
+- For example for a taxi like application you can divide it in the following services : passenger management, billing, notifications, payments, trip management and driver management.
 
 You can learn more about this [here](https://www.nginx.com/blog/introduction-to-microservices/).
 
@@ -37,18 +36,17 @@ To know more about SQLite you can check the [SQLite page](https://www.sqlite.org
 student$ sqlite3 database.db
 SQLite version 3.29.0 2019-07-10 17:32:03
 Enter ".help" for usage hints.
-sqlite> CREATE TABLE people (id INTEGER PRIMARY KEY, first_name TEXT, age INTEGER, gender TEXT);
-sqlite> INSERT INTO people (first_name, age, gender) VALUES ("John", 23, "m");
-sqlite> INSERT INTO people (first_name, age, gender) VALUES ("Jade", 36, "f");
-sqlite> INSERT INTO people (first_name, age, gender) VALUES ("Kim", 49, "f");
-sqlite> SELECT * FROM people;
-1|John|23|m
-2|Jade|36|f
-3|Kim|49|f
-sqlite> DELETE FROM people WHERE gender="m";
-sqlite> SELECT * FROM people;
-2|Jade|36|f
-3|Kim|49|f
+sqlite> CREATE TABLE car (id INTEGER PRIMARY KEY, brand TEXT, year INTEGER);
+sqlite> INSERT INTO car (brand, year) VALUES ("Mercedes", 2010);
+sqlite> INSERT INTO car (brand, year) VALUES ("Volvo", 2018);
+sqlite> INSERT INTO car (brand, year) VALUES ("Nissan", 1999);
+sqlite> SELECT * FROM car;
+1|Mercedes|2010
+2|Volvo|2018
+3|Nissan|1999
+sqlite> DELETE FROM car WHERE year>2000;
+sqlite> SELECT * FROM car;
+3|Nissan|1999
 sqlite> ^C^C^Cstudent$
 
 ```
@@ -116,7 +114,6 @@ This project will help you learn about:
 ### Instructions
 
 - You must use **SQLite**.
-- You must use **SQLite** queries.
 - You must use HTML files.
 - You must handle website errors, HTTP status.
 - You must handle all sort of technical errors.
