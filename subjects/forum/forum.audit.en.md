@@ -64,8 +64,6 @@
 
 ###### Does it present the changes made in the logged in browser?
 
-###### Can you confirm that it is not possible to do it?
-
 ###### Is it asked in the register for an email and a password?
 
 ###### Does the project detects if the email or password are wrong?
