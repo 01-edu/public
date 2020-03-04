@@ -27,7 +27,7 @@ type NodeAddL struct {
 	Num  int
 }
 
-func AddLinkedNumbers(num1, num1 *NodeAddL) *NodeAddL {
+func AddLinkedNumbers(num1, num2 *NodeAddL) *NodeAddL {
 
 }
 ```
