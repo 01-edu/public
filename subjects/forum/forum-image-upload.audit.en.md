@@ -20,9 +20,11 @@
 
 ###### Can you still see the image associated to that post?
 
-#### Basic
+#### General
 
 ###### +Can you create a post with a different image type?
+
+#### Basic
 
 ###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
 
