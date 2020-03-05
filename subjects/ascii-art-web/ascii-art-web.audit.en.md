@@ -71,8 +71,8 @@ o-o-o o--o o-o          o   o      o   o-o  | |  o   o
 ##### Try to navigate between all the available pages in the website.
 ###### Are all the pages working? Does the project implement [404 status](https://www.restapitutorial.com/httpstatuscodes.html)?
 
-###### Does the project implement HTTP status [400 bad request](https://kinsta.com/knowledgebase/400-bad-request/#causes)?
-###### Does the project implement HTTP status [500 internal server error](https://www.restapitutorial.com/httpstatuscodes.html)?
+###### Does the project handle [HTTP status 400 - Bad Request](https://kinsta.com/knowledgebase/400-bad-request/#causes)?
+###### Does the project handle [HTTP status 500 - Internal Server Errors](https://www.restapitutorial.com/httpstatuscodes.html)?
 
 ##### Try making a request to the server (clicking a button to generate the ascii-art representation on the website)
 ###### Is the communication between [server and client](https://www.geeksforgeeks.org/client-server-model/) well established?

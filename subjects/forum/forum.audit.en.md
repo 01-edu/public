@@ -114,9 +114,9 @@ NETWORK ID          NAME                DRIVER              SCOPE
 
 ###### Are all the pages working? (Absence of 404 page?)
 
-###### Does the project avoid [HTTP status 400](https://kinsta.com/knowledgebase/400-bad-request/#causes)?
+###### Does the project handle [HTTP status 400 - Bad Requests](https://kinsta.com/knowledgebase/400-bad-request/#causes)?
 
-###### Does the project avoid [HTTP status 500](https://www.restapitutorial.com/httpstatuscodes.html)?
+###### Does the project handle [HTTP status 500 - Internal Server Errors](https://www.restapitutorial.com/httpstatuscodes.html)?
 
 ###### Are the libraries used allowed?
 
