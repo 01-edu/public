@@ -16,9 +16,26 @@
 
 ###### Are you able to choose a category for that post?
 
-###### Is the forum composed of services?
+###### Can you like or dislike a post?
 
-###### The communication between the services well stablish? Does the communication use [smart EndPoints](https://medium.com/@nathankpeck/microservice-principles-smart-endpoints-and-dumb-pipes-5691d410700f)(ex: Request-Response, Observer)?
+###### Can you like or dislike a comment?
+
+##### Try liking a post, then refresh the page.
+###### Does the number of likes increase?
+
+##### Try desliking a post, then refresh the page.
+###### Does the number of dislikes increase?
+
+##### Try to like and then dislike the same post.
+###### Can you confirm that it is not possible to like and dislike the same post at the same time?
+
+##### Try seeing all posts from one category using the search engine.
+
+###### Are all posts displayed from that category?
+
+##### Try searching for a specific post.
+
+###### Does it present the expected post?
 
 #### SQLite
 
@@ -90,27 +107,11 @@ cc8f5dcf760f        ascii-art-web-docker   "./server"               6 seconds ag
 ```
 ###### Run the command `"docker ps -a"` to see containers. Is the docker containers running as above?
 
-##### Try running the comment `"docker network ls"`
-```
-NETWORK ID          NAME                DRIVER              SCOPE
-24560f95a216        <network-name>      bridge              local
-24560f95a216        bridge              bridge              local
-3f12239adb4f        host                host                local
-159cdc8d8083        none                null                local
-```
-###### Is the network a bridge driver and does it appear in the list of networks as above?
-
-##### Try openning a shell to the running container, using the [command](https://docs.docker.com/engine/reference/commandline/exec/) `"docker exec [OPTIONS] CONTAINER COMMAND [ARG...]"` (ex: `"docker exec -it <container-name> /bin/bash"`) and ping the other container that are connected to the same network, for [example](https://docs.docker.com/engine/tutorials/networkingcontainers/).
-
-###### Did it ping with success? Are the multiple services/containers communicating between each other?
-
 ###### Does the project present no [unused object](https://docs.docker.com/config/pruning/)?
 
 ###### Did the server behaved as expected?(did not crashed)
 
 ###### Does the server use the right [HTTP method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)?
-
-###### Has the website runned without crashing at anytime?
 
 ###### Are all the pages working? (Absence of 404 page?)
 
@@ -118,11 +119,9 @@ NETWORK ID          NAME                DRIVER              SCOPE
 
 ###### Does the project handle [HTTP status 500 - Internal Server Errors](https://www.restapitutorial.com/httpstatuscodes.html)?
 
-###### Are the libraries used allowed?
+###### Are the allowed packages being respected?
 
 #### General
-
-###### +Is the database a service?
 
 ###### +Does the project present a script to build the images and containers? (using a script to simplify the build)
 

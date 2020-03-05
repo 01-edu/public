@@ -7,12 +7,9 @@ This project consists in creating a web forum that allows :
 - communication between users and the community through the creation of posts/comments.
 - associate posts to categories.
 - non-registered users to only see posts/comments.
-
-Your forum should work based on services. Using services to create a project means that instead of having a monolith architecture, you actually have various components distributed across a cluster of instances. In other words, dividing the project in smaller "projects", this way it becomes easier to understand and your project will become more scalable.
-
-- For example for a taxi like application you can divide it in the following services : passenger management, billing, notifications, payments, trip management and driver management.
-
-- Services can [communicate](https://medium.com/@nathankpeck/microservice-principles-smart-endpoints-and-dumb-pipes-5691d410700f) using : **Request-Response**, this being that one service invokes another service by making an request, usually to store or retrieve data. Or **Observer**, this is a event base communication, so one or more services are listening for an event and wen triggered they respond to the event.
+- likes and dislikes in posts and comments, you must take in consideration that the number of likes and dislikes must be accounted.
+- searching, inside your forum, for a specific category or post
+  - The search bar must have typing suggestions as you write.
 
 #### SQLite
 
@@ -71,36 +68,13 @@ The forum must be able to check if the email provided is present in the database
 
 For the forum project you must use Docker. You can see all about docker basics on the [ascii-art-web-dockerize](https://public.01-edu.org/subjects/ascii-art-web/ascii-art-web-dockerize.en) subject.
 
-You must build a network using containers. In docker you can create your own network of containers through network drivers. Docker provides two network drivers : `bridge` and `overlay`.
-
-- You can see the default network :
-
-```console
-student$ docker network ls
-NETWORK ID          NAME                DRIVER              SCOPE
-b64130fc5aae        bridge              bridge              local
-033f3a191908        host                host                local
-159cdc8d8083        none                null                local
-```
-
-Your objective is to use the [`bridge` network](https://docs.docker.com/engine/tutorials/networkingcontainers/) to create your own network for the services. Docker connects to this network by default, creating a subnet and a gateway for the `bridge` network. The command `docker run` automatically adds containers to it. To inspect the network for more details you can just run `docker network inspect <network>`.
-
-- Each service will have to run in a container that will be associated to a docker host, which must contain at least two containers/services and these must be connected to a bridge, creating a network for [example](https://docs.docker.com/engine/tutorials/bridge3.png).
-
-- You must be careful, bridges are a private network, so it is restricted to a single Docker host, for instance containers can communicate within networks but not across networks.
-  - You may have to use [Port Mapping](https://docker-k8s-lab.readthedocs.io/en/latest/docker/port-mapping.html).
-  - Or attaching containers to multiple networks connecting with all containers on all networks creating a ["hub"](https://docs.docker.com/engine/tutorials/bridge3.png).
-
 This project will help you learn about:
 
 - Client utilities.
 - The basics of web :
-  - Server
   - HTML
   - HTTP
-  - Services
   - Sessions and cookies
-- Docker network bridge
 - Using and [setting up Docker](https://docs.docker.com/get-started/) :
   - Services and dependencies.
   - Containerizing an application.
@@ -108,7 +82,6 @@ This project will help you learn about:
   - Creating images.
 - SQLite language.
   - Manipulation of databases.
-- How to manage dependencies in Go.
 - The basics of encryption.
 
 ### Instructions
