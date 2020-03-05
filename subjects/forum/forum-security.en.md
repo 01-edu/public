@@ -17,8 +17,8 @@ For this project you must take into account the security of your forum.
 This project will help you learn about :
 
 - HTTPS
+- [Cipher suites](https://www.iana.org/assignments/tls-parameters/tls-parameters.xml)
 - Encryption
-  - Database
   - password
   - session/cookies
   - Universal Unique Identifier (UUID)

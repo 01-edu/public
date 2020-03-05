@@ -1,20 +1,28 @@
 #### Functional
 
 ##### Try opening the forum.
+
 ###### Does the URL contain HTTPS?
+
+###### Is the project implementing [cipher suites](https://www.iana.org/assignments/tls-parameters/tls-parameters.xml)?
 
 ###### Is the Go TLS structure well configured?
 
+###### Is the [server](https://golang.org/pkg/net/http/#Server) timeout reduced (Read, write and IdleTimeout)? (enabling attackers to take their time)
+
 ##### Try to access the database.
+
 ###### Does the database present a password for protection?
 
 ##### Try creating a user. Go to the database using the command `"sqlite3 <database-name>"` and run `"SELECT * FROM <user-table>;"` to select all users.
+
 ###### Are the passwords encrypted?
 
 ##### Try to login into the forum and open the inspector(CTRL+SHIFT+i) and go to the storage to see the cookies(this can be different depending on the [browser](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)).
+
 ###### Does the session cookie present a unique identifier?
 
-###### Can you configure the certificates information, either via env or config file?
+###### Does the project present a way to configure the certificates information, either via .env or config files or other method?
 
 ###### Are the allowed packages being respected?
 
