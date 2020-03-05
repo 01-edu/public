@@ -1,6 +1,32 @@
 ### Functional
 
+##### Try to like any post at your choice.
 
+###### Does the liked post appear on the activity page?
+
+##### Try to dislike any post at your choice.
+
+###### Does the disliked post appear on the activity page?
+
+##### Try to comment any post at your choice.
+
+###### Does the commented post appear on the activity page along with the comment you made?
+
+##### Try to create a new post.
+
+###### Does new post appear on the activity page?
+
+##### Try login as other user and make a comment on the post you created above. Then return to the user that created the post.
+
+###### Does the user who created the post received a notification saying that the post has been commented?
+
+##### Try login as other user and like the post you created above. Then return to the user that created the post.
+
+###### Does the user who created the post received a notification saying that the post has been liked?
+
+##### Try login as other user and dislike the post you created above. Then return to the user that created the post.
+
+###### Does the user who created the post received a notification saying that the post has been disliked?
 
 #### General
 

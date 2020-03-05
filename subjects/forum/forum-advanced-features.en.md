@@ -6,17 +6,18 @@ You must follow the same [principles](https://public.01-edu.org/subjects/forum/f
 
 In forum advanced features, you will have to implement the following features :
 
-- Every type of users except guests can like and dislike posts/comments
-- Implementation of websockets to:
-  - see creation of posts/comments in real time
-  - see likes and dislikes in real time
-- Filter displayed posts by category
+- You will have to create a way to notify users when their posts are :
+  - liked/disliked
+  - commented
+- You have to create an activity page that tracks the user own activity
+  - Shows the user created posts
+  - Shows where the user left a like/disliked
+  - Shows where the user has been commenting and the comment as well
 
 We encourage you to add any other additional features that you find relevant.
 
 This project will help you learn about :
 
-- Websockets communication
 - Data manipulation and storage
 
 ### Instructions
@@ -29,4 +30,3 @@ This project will help you learn about :
 ### Allowed packages
 
 - The [standard go](https://golang.org/pkg/) packages are allowed
-- github.com/gorilla/websocket
