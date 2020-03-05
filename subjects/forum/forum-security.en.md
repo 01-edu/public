@@ -11,7 +11,7 @@ For this project you must take into account the security of your forum.
 
 - You should encrypt :
   - Clients passwords
-  - Database
+  - Database, for this will have to create a password for your database and encrypt the communication channel.
   - Clients session cookies should be unique. For instance, the session state is stored on the server and the session should present an unique identifier. This way the client has no direct access to it. Therefore, there is no way for attackers to read or tamper with session state.
 
 This project will help you learn about :
@@ -21,12 +21,12 @@ This project will help you learn about :
   - Database
   - password
   - session/cookies
-  - Universal Unique Identifier (UUI)
+  - Universal Unique Identifier (UUID)
 
 ### Hints
 
 - You can take a look at the `openssl` manual.
-- For the session cookies you can take a look at the [Universal Unique Identifier (UUI)](https://en.wikipedia.org/wiki/Universally_unique_identifier)
+- For the session cookies you can take a look at the [Universal Unique Identifier (UUID)](https://en.wikipedia.org/wiki/Universally_unique_identifier)
 
 ### Instructions
 
@@ -40,3 +40,5 @@ This project will help you learn about :
 - All [standard go](https://golang.org/pkg/) packages are allowed.
 - golang.org/x/crypto/bcrypt
 - github.com/satori/go.uuid
+- github.com/mattn/go-sqlite3
+- golang.org/x/crypto/acme/autocert

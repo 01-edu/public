@@ -5,7 +5,8 @@
 
 ###### Is the Go TLS structure well configured?
 
-###### Is the database encrypt?
+##### Try to access the database.
+###### Does the database present a password for protection?
 
 ##### Try creating a user. Go to the database using the command `"sqlite3 <database-name>"` and run `"SELECT * FROM <user-table>;"` to select all users.
 ###### Are the passwords encrypted?
@@ -13,13 +14,15 @@
 ##### Try to login into the forum and open the inspector(CTRL+SHIFT+i) and go to the storage to see the cookies(this can be different depending on the [browser](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)).
 ###### Does the session cookie present a unique identifier?
 
+###### Can you configure the certificates information, either via env or config file?
+
+###### Are the allowed packages being respected?
+
 #### General
 
 ###### +Does the project implement their own certificates for the HTTPS protocol?
 
-###### +Does the project implement UUI(Universal Unique Identifier) for the user session?
-
-###### +Does the project implement [environment variables](https://en.wikipedia.org/wiki/Environment_variable) (.env file), for the TLS certificates?
+###### +Does the project implement UUID(Universal Unique Identifier) for the user session?
 
 #### Basic
 
