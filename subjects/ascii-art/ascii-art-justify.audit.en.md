@@ -1,4 +1,4 @@
-#### Functional Project Questions
+#### Functional
 
 ##### Try passing as arguments `"left standard --align=right"`
 
