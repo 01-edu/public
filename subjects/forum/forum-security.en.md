@@ -14,10 +14,15 @@ For this project you must take into account the security of your forum.
   - Database, for this will have to create a password for your database and encrypt the communication channel.
   - Clients session cookies should be unique. For instance, the session state is stored on the server and the session should present an unique identifier. This way the client has no direct access to it. Therefore, there is no way for attackers to read or tamper with session state.
 
+- The implementation of [Rate Limiting](https://en.wikipedia.org/wiki/Rate_limiting) must be present on this project
+
 This project will help you learn about :
 
 - HTTPS
 - [Cipher suites](https://www.iana.org/assignments/tls-parameters/tls-parameters.xml)
+- Goroutines
+- Channels
+- Rate Limiting
 - Encryption
   - password
   - session/cookies

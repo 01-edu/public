@@ -10,6 +10,8 @@
 
 ###### Is the [server](https://golang.org/pkg/net/http/#Server) timeout reduced (Read, write and IdleTimeout)? (enabling attackers to take their time)
 
+###### Does the project implement [Rate limiting](https://en.wikipedia.org/wiki/Rate_limiting) (avoiding [DoS attacks](https://en.wikipedia.org/wiki/Denial-of-service_attack))?
+
 ##### Try to access the database.
 
 ###### Does the database present a password for protection?
