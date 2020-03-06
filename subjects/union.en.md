@@ -17,7 +17,7 @@ zpadintoqefwjy$
 student@ubuntu:~/[[ROOT]]/union$ ./union ddf6vewg64f gtwthgdwthdwfteewhrtag6h4ffdhsd | cat -e
 df6vewg4thras$
 student@ubuntu:~/[[ROOT]]/union$ ./union rien "cette phrase ne cache rien" | cat -e
-riencthas$
+rienct phas$
 student@ubuntu:~/[[ROOT]]/union$ ./union | cat -e
 $
 student@ubuntu:~/[[ROOT]]/union$ ./union rien | cat -e
