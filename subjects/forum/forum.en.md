@@ -80,7 +80,7 @@ This project will help you learn about:
   - Containerizing an application.
   - Compatibility/Dependency.
   - Creating images.
-- SQLite language.
+- SQL language.
   - Manipulation of databases.
 - The basics of encryption.
 
