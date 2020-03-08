@@ -14,9 +14,13 @@ student@ubuntu:~/[[ROOT]]/test$ ./test 5
 10
 student@ubuntu:~/[[ROOT]]/test$ ./test 7
 17
-student@ubuntu:~/[[ROOT]]/test$ ./test 5 7
+student@ubuntu:~/[[ROOT]]/test$ ./test -2
+0
+student@ubuntu:~/[[ROOT]]/test$ ./test 0
 0
 student@ubuntu:~/[[ROOT]]/test$ ./test
+0
+student@ubuntu:~/[[ROOT]]/test$ ./test 5 7
 0
 student@ubuntu:~/[[ROOT]]/test$
 ```
