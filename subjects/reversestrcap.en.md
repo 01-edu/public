@@ -7,8 +7,6 @@ Write a program that takes one or more `string` as arguments and that, **for eac
 in lowercase
 -then it displays the result followed by a newline (`'\n'`).
 
-A word is a sequence of alphanumerical characters.
-
 If there are no parameter, the program displays a newline.
 
 ### Usage
