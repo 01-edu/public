@@ -76,13 +76,14 @@ This project will help you learn about:
   - HTML
   - HTTP
   - Sessions and cookies
-- Using and [setting up Docker](https://docs.docker.com/get-started/) :
-  - Containerizing an application.
-  - Compatibility/Dependency.
-  - Creating images.
-- SQLite language.
-  - Manipulation of databases.
-- The basics of encryption.
+- Using and [setting up Docker](https://docs.docker.com/get-started/)
+  - Containerizing an application
+  - Compatibility/Dependency
+  - Creating images
+- SQLite
+  - Manipulation of databases
+  - SQL
+- The basics of encryption
 
 ### Instructions
 
