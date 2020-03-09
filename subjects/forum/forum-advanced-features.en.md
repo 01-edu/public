@@ -13,6 +13,7 @@ In forum advanced features, you will have to implement the following features :
   - Shows the user created posts
   - Shows where the user left a like/disliked
   - Shows where the user has been commenting and the comment as well
+- You have to create a section where you wil be able to Edit/Remove posts and comments.
 
 We encourage you to add any other additional features that you find relevant.
 
@@ -23,7 +24,6 @@ This project will help you learn about :
 ### Instructions
 
 - The backend must be written in **Go**
-- You must handle website errors
 - The code must respect the [good practices](https://public.01-edu.org/subjects/good-practices.en)
 - It is recommended that the code should present a **test file**
 
