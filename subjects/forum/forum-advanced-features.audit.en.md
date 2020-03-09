@@ -28,6 +28,14 @@
 
 ###### Does the user who created the post received a notification saying that the post has been disliked?
 
+##### Try to edit a post and a comment at your choice.
+
+###### Is it allowed to edit posts and comments?
+
+##### Try to remove a post and a comment at your choice.
+
+###### Is it allowed to remove posts and comments?
+
 #### General
 
 ##### +Are there any other feature not mentioned in the [subject](https://public.01-edu.org/subjects/forum/forum-advanced-features.en)?
