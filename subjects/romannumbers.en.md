@@ -9,6 +9,7 @@ The program should have a limit of `4000`. In case of an invalid number, for exa
 Roman Numerals reminder:
 
 | I |   1  |
+|:-:|:----:|
 | V |   5  |
 | X |  10  |
 | L |  50  |
@@ -21,6 +22,7 @@ For example, the number 1732 would be denoted MDCCXXXII in Roman numerals. Howev
 The following table gives the Roman numerals for the first few positive integers. 
 
 |  1 |   I  | 11 |   XI  | 21 |   XXI  |
+|:--:|:----:|:--:|:-----:|:--:|:------:|
 |  2 |  II  | 12 |  XII  | 22 |  XXII  |
 |  3 |  III | 13 |  XIII | 23 |  XXIII |
 |  4 |  IV  | 14 |  XIV  | 24 |  XXIV  |
