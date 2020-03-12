@@ -13,7 +13,7 @@ This means that:
 
 ### Instructions
 
-Write a **program** that replicates the javascript functions `slice`.
+Write a **program** that replicates the javascript function `slice`.
 
 The program receives an array of strings and one or more integers, and returns an array of strings. The returned array is part of the received one but cut from the position indicated in the first int, until the position indicated by the second int. 
 
