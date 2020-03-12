@@ -13,9 +13,6 @@ Some examples are:
 This project will help you learn about:
 
 - Sessions and cookies.
-- Encryption.
-- How to manage dependencies.
-- How to create middleware
 - How to protect routes.
 
 ### Instructions
