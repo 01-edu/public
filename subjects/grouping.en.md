@@ -1,0 +1,40 @@
+## grouping
+
+### Instructions
+
+Write a program that receives two strings and replicates the use of brackets in regular expressions. Brackets in regular expressions returns the words that contain the expression inside of it.
+
+The program should handle the "`|`" operator, that searches for both strings on each side of the operator.
+
+The output of the program should be the results of the regular expression by order of appearence in the string, being themselves identified by a number.
+
+In case the regular expression is not valid, the last argument is empty or there are no matches the program returns a newline ("`\n`").
+
+If there are more than 2 or no arguments the program should print a newline ("`\n`").
+
+### Usage
+
+```console
+student@ubuntu:~/[[ROOT]]/test$ go build
+student@ubuntu:~/[[ROOT]]/test$ ./regbrackets "(a)" "I'm heavy, jumpsuit is on steady, Lighter when I'm lower, higher when I'm heavy"
+1: heavy
+2: steady
+3: heavy
+student@ubuntu:~/[[ROOT]]/test$ ./regbrackets "(e|n)"f "I currently have 4 windows open up… and I don’t know why."
+1: currently
+2: currently
+3: have
+4: windows
+5: open
+6: open
+7: and
+8: don’t
+9: know
+student@ubuntu:~/[[ROOT]]/test$ ./regbrackets "(hi)" "He swore he just saw his sushi move."
+1: his
+2: sushi
+student@ubuntu:~/[[ROOT]]/test$ ./regbrackets "(s)" ""
+
+student@ubuntu:~/[[ROOT]]/test$ ./regbrackets "i" "Something in the air"
+
+student@ubuntu:~/[[ROOT]]/test$
