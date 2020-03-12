@@ -10,7 +10,7 @@ The output of the program should be the results of the regular expression by ord
 
 In case the regular expression is not valid, the last argument is empty or there are no matches the program returns a newline ("`\n`").
 
-If there are more than 2 or no arguments the program should print a newline ("`\n`").
+If the number of arguments is different from 2 the program should print a newline ("`\n`").
 
 ### Usage
 
@@ -20,7 +20,7 @@ student@ubuntu:~/[[ROOT]]/test$ ./regbrackets "(a)" "I'm heavy, jumpsuit is on s
 1: heavy
 2: steady
 3: heavy
-student@ubuntu:~/[[ROOT]]/test$ ./regbrackets "(e|n)"f "I currently have 4 windows open up… and I don’t know why."
+student@ubuntu:~/[[ROOT]]/test$ ./regbrackets "(e|n)" "I currently have 4 windows open up… and I don’t know why."
 1: currently
 2: currently
 3: have
