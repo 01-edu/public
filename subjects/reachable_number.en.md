@@ -7,7 +7,7 @@ Let us define a function f(x) by the following: first we add 1 to x, and then wh
 ### Expected function
 
 ```go
-func Reachable_number(n int) int {
+func Reachablenumber(n int) int {
 
 }
 ```
@@ -24,9 +24,9 @@ import (
 )
 
 func main() {
-	fmt.Println(Reachable_number(1))
-	fmt.Println(Reachable_number(10))
-	fmt.Println(Reachable_number(1001))
+	fmt.Println(Reachablenumber(1))
+	fmt.Println(Reachablenumber(10))
+	fmt.Println(Reachablenumber(1001))
 }
 ```
 
