@@ -54,7 +54,7 @@ student@ubuntu:~/student/test$ go build
 student@ubuntu:~/student/test$ ./test
 [algorithm ascii package golang]
 [ascii package]
-[algorithm ascii package golang]
+[ascii package golang]
 [package]
 []
 ```
