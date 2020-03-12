@@ -1,4 +1,4 @@
-## volume_changer
+## volumechanger
 
 ### Instructions
 
@@ -14,7 +14,7 @@ Input and output should be displayed in standard input and output respectively.
 ### Expected function
 
 ```go
-func Revive_three_nums(a, b int) int {
+func Volumechanger(a, b int) int {
 
 }
 ```
@@ -31,9 +31,9 @@ import (
 )
 
 func main() {
-	fmt.Println(Volume_changer(4, 0))
-	fmt.Println(Volume_changer(5, 14))
-	fmt.Println(Volume_changer(3, 9))
+	fmt.Println(Volumechanger(4, 0))
+	fmt.Println(Volumechanger(5, 14))
+	fmt.Println(Volumechanger(3, 9))
 }
 ```
 
