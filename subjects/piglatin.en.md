@@ -11,7 +11,7 @@ The rules used by Pig Latin are as follows:
 
 If the word has no vowels the program should print "No vowels".
 
-If the number of arguments is different from one, the program prints a new line.
+If the number of arguments is different from one, the program prints a newline ("`\n`").
 
 ### Usage
 
