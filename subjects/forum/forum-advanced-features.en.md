@@ -13,7 +13,7 @@ In forum advanced features, you will have to implement the following features :
   - Shows the user created posts
   - Shows where the user left a like/disliked
   - Shows where the user has been commenting and the comment as well
-- You have to create a section where you wil be able to Edit/Remove posts and comments.
+- You have to create a section where you will be able to Edit/Remove posts and comments.
 
 We encourage you to add any other additional features that you find relevant.
 
