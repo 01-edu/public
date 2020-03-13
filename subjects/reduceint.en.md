@@ -15,12 +15,12 @@ This means that:
 
 Write a function called `reduceint` that simulates the behaviour of reduce from JavaScript.
 
-The function should have as parameters a function, `f func(int, int) int` and a slice of integers, `slice []int`. You should apply for each element of the slice the arithmetic function, saving it and printing.
+The function should have as parameters a function, `f func(int, int) int` and a slice of integers, `arr []int`. You should apply for each element of the slice the arithmetic function, saving it and printing.
 
 ### Expected function
 
 ```go
-func ReduceInt(f func(int, int) int, slice []int) {
+func ReduceInt(f func(int, int) int, arr []int) {
 
 }
 ```
