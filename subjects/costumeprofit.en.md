@@ -14,6 +14,8 @@ What is the maximum amount of dollars that shop can earn by selling costumes?
 
 Input will be given as 6 arguments, your output should be displayed as standard output.
 
+In the output put '\n' at the end.
+
 Input: `./main **a** **b** **c** **d** **e** **f**`
 
 ```console
