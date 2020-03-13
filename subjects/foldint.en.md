@@ -20,7 +20,7 @@ The function should have as parameters a function, `f func(int, int) int` a slic
 ### Expected function
 
 ```go
-func FoldInt(f func(int, int) int, slice []int, acc int) {
+func FoldInt(f func(int, int) int, arr []int, n int) {
 
 }
 ```
@@ -33,14 +33,14 @@ Here is a possible program to test your function:
 package main
 
 func main() {
-  table := []int{1, 2, 3}
-  ac := 93
-  FoldInt(Add, table, ac)
-  FoldInt(Mul, table, ac)
-  FoldInt(Sub, table, ac)
-  fmt.Println()
-  
-  table = []int{0}
+	table := []int{1, 2, 3}
+	ac := 93
+	FoldInt(Add, table, ac)
+	FoldInt(Mul, table, ac)
+	FoldInt(Sub, table, ac)
+	fmt.Println()
+
+	table = []int{0}
 	FoldInt(Add, table, ac)
 	FoldInt(Mul, table, ac)
 	FoldInt(Sub, table, ac)
