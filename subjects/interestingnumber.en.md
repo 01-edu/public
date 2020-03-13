@@ -23,7 +23,7 @@ Saken thinks that number is interesting if sum of its digits is divisible by 7. 
 ### Expected function
 
 ```go
-func Interesting_number(n int) int {
+func InterestingNumber(n int) int {
 
 }
 ```
