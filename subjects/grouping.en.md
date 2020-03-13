@@ -6,7 +6,7 @@ Write a program that receives two strings and replicates the use of brackets in 
 
 The program should handle the "`|`" operator, that searches for both strings on each side of the operator.
 
-The output of the program should be the results of the regular expression by order of appearence in the string, being themselves identified by a number.
+The output of the program should be the results of the regular expression by order of appearance in the string, being themselves identified by a number.
 
 In case the regular expression is not valid, the last argument is empty or there are no matches the program returns a newline ("`\n`").
 
