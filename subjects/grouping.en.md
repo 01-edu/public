@@ -20,7 +20,7 @@ student@ubuntu:~/[[ROOT]]/test$ ./regbrackets "(a)" "I'm heavy, jumpsuit is on s
 1: heavy
 2: steady
 3: heavy
-student@ubuntu:~/[[ROOT]]/test$ ./regbrackets "(e|n)" "I currently have 4 windows open up… and I don’t know why."
+student@ubuntu:~/[[ROOT]]/test$ ./regbrackets "(e|n)" "I currently have 4 windows opened up… and I don’t know why."
 1: currently
 2: currently
 3: have
