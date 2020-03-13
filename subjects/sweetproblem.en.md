@@ -23,7 +23,7 @@ Madina loves sweets, but she only has 3 types of sweets: red, green, blue. Her d
 ### Expected function
 
 ```go
-func Sweet_problem(red, green, blue int) int {
+func Sweetproblem(red, green, blue int) int {
 
 }
 ```
