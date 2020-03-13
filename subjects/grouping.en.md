@@ -25,8 +25,8 @@ student@ubuntu:~/[[ROOT]]/test$ ./regbrackets "(e|n)" "I currently have 4 window
 2: currently
 3: have
 4: windows
-5: open
-6: open
+5: opened
+6: opened
 7: and
 8: don’t
 9: know
