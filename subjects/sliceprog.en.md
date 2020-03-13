@@ -13,9 +13,9 @@ This means that:
 
 ### Instructions
 
-Write a **program** that replicates the javascript function `slice`.
+Write a **function** that replicates the javascript function `slice`.
 
-The program receives an array of strings and one or more integers, and returns an array of strings. The returned array is part of the received one but cut from the position indicated in the first int, until the position indicated by the second int. 
+The function receives an array of strings and one or more integers, and returns an array of strings. The returned array is part of the received one but cut from the position indicated in the first int, until the position indicated by the second int. 
 
 In case there only exists one int, the resulting array begins in the position indicated by the int and ends at the end of the received array.  
 
@@ -41,11 +41,11 @@ import "fmt"
 
 func main(){
     arr := []string{"coding", "algorithm", "ascii", "package", "golang"}
-    fmt.Println(arr, 1)
-    fmt.Println(arr, 2, 4)
-    fmt.Println(arr, -3)
-    fmt.Println(arr, -2, -1)
-    fmt.Println(arr, 2, 0)
+    fmt.Println(Slice(arr, 1))
+    fmt.Println(Slice(arr, 2, 4))
+    fmt.Println(Slice(arr, -3))
+    fmt.Println(Slice(arr, -2, -1))
+    fmt.Println(Slice(arr, 2, 0))
 }
 ```
 
