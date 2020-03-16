@@ -2,9 +2,9 @@
 
 ### Objectives
 
-The goal of this project is to implement, into your forum, new ways of authentication. Github and google are mandatory.
+The goal of this project is to implement, into your forum, new ways of authentication. You have to be able to register and to login using at least Google and Github authentification tools.
 
-Some examples are:
+Some examples of authentication ways are:
 
 - Facebook
 - GitHub
@@ -13,7 +13,7 @@ Some examples are:
 This project will help you learn about:
 
 - Sessions and cookies.
-- How to protect routes.
+- Protecting routes.
 
 ### Instructions
 
