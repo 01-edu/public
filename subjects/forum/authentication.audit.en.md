@@ -6,8 +6,8 @@
 ##### Try to login with Google.
 ###### Is it possible to enter the forum?
 
-##### Try to register as a new user in the forum.
-###### Is it possible to register?
+##### Try login with Github or Google, creating a post with that user and logout.
+###### Is the post created visible?
 
 ##### Try to login with the user you created.
 ###### Can you login and have all the rights of a registered user?
