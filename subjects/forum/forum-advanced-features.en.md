@@ -7,12 +7,16 @@ You must follow the same [principles](https://public.01-edu.org/subjects/forum/f
 In forum advanced features, you will have to implement the following features :
 
 - You will have to create a way to notify users when their posts are :
+
   - liked/disliked
   - commented
+
 - You have to create an activity page that tracks the user own activity
+
   - Shows the user created posts
   - Shows where the user left a like/disliked
-  - Shows where the user has been commenting and the comment as well
+  - Shows where and what the user has been commenting. For this will have to show the comment and what post did he commented
+
 - You have to create a section where you will be able to Edit/Remove posts and comments.
 
 We encourage you to add any other additional features that you find relevant.

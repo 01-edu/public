@@ -10,7 +10,7 @@
 
 ##### Try to comment any post at your choice.
 
-###### Does the commented post appear on the activity page along with the comment you made?
+###### Does the comment appear on the activity page along with the commented post you made?
 
 ##### Try to create a new post.
 
