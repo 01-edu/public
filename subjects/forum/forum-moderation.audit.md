@@ -14,7 +14,7 @@
 
 ###### Can you like or dislike a post?
 
-##### Try registering has a moderator, and see if the admin user has received the request.
+##### Try registering as a moderator. Then login to a admin account and see if the admin user has received the request.
 
 ###### Can you confirm that the admin received the request?
 

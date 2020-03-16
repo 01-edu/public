@@ -22,7 +22,7 @@ You should implement at least 4 types of users :
 
 #### Moderators
 
-- Moderators, as explained above are users that are granted access to special functions :
+- Moderators, as explained above are users that have granted access to special functions :
   - They should monitor the content in the forum by deleting or reporting post to the admin
 - To create a moderator the user should request an admin for that role
 
