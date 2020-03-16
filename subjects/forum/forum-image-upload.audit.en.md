@@ -12,9 +12,9 @@
 
 ###### Was the post created successfully?
 
-##### If is not restricted, try to create a post with a [large image](https://effigis.com/wp-content/themes/effigis_2014/img/RapidEye_RapidEye_5m_RGB_Altotting_Germany_Agriculture_and_Forestry_2009MAY17_8bits_sub_r_2.jpg). If it is restricted search for image with a size slightly below that limit.
+##### Try to create a post with an [image](https://effigis.com/wp-content/themes/effigis_2014/img/RapidEye_RapidEye_5m_RGB_Altotting_Germany_Agriculture_and_Forestry_2009MAY17_8bits_sub_r_2.jpg) bigger than 20mb.
 
-###### Was the post created successfully?
+###### Were you warned that this was not possible?
 
 ##### Try navigating through the site and come back to one of the created posts.
 
