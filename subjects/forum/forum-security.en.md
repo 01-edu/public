@@ -9,12 +9,13 @@ For this project you must take into account the security of your forum.
 - You should implement a Hypertext Transfer Protocol Secure ([HTTPS](https://www.globalsign.com/en/blog/the-difference-between-http-and-https)) protocol :
   - Encrypted connection : for this you will have to generate an SSL certificate, you can think of this like a identity card for your website. You can create your certificates or use "Certificate Authorities"(CA's)
 
-- You should encrypt :
-  - Clients passwords
-  - Database, for this will have to create a password for your database and encrypt the communication channel.
-  - Clients session cookies should be unique. For instance, the session state is stored on the server and the session should present an unique identifier. This way the client has no direct access to it. Therefore, there is no way for attackers to read or tamper with session state.
+- Clients session cookies should be unique. For instance, the session state is stored on the server and the session should present an unique identifier. This way the client has no direct access to it. Therefore, there is no way for attackers to read or tamper with session state.
 
 - The implementation of [Rate Limiting](https://en.wikipedia.org/wiki/Rate_limiting) must be present on this project
+
+- You should encrypt :
+  - Clients passwords
+  - Database, for this you will have to create a password for your database.
 
 This project will help you learn about :
 

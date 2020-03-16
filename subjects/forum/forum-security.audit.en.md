@@ -8,7 +8,7 @@
 
 ###### Is the Go TLS structure well configured?
 
-###### Is the [server](https://golang.org/pkg/net/http/#Server) timeout reduced (Read, write and IdleTimeout)? (enabling attackers to take their time)
+###### Is the [server](https://golang.org/pkg/net/http/#Server) timeout reduced (Read, write and IdleTimeout)?
 
 ###### Does the project implement [Rate limiting](https://en.wikipedia.org/wiki/Rate_limiting) (avoiding [DoS attacks](https://en.wikipedia.org/wiki/Denial-of-service_attack))?
 
@@ -22,7 +22,7 @@
 
 ##### Try to login into the forum and open the inspector(CTRL+SHIFT+i) and go to the storage to see the cookies(this can be different depending on the [browser](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)).
 
-###### Does the session cookie present a unique identifier?
+###### Does the session cookie present a UUID(Universal Unique Identifier)?
 
 ###### Does the project present a way to configure the certificates information, either via .env or config files or other method?
 
