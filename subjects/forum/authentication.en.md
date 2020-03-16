@@ -2,7 +2,7 @@
 
 ### Objectives
 
-The goal of this project is to implement, into your forum, new ways of authentication. You have to be able to register and to login using at least Google and Github authentification tools.
+The goal of this project is to implement, into your forum, new ways of authentication. You have to be able to register and to login using at least Google and Github authentication tools.
 
 Some examples of authentication ways are:
 
