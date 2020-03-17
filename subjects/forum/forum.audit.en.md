@@ -24,9 +24,9 @@
 
 ###### Can you confirm that the browser non logged remains unregistered?
 
-##### Try opening two different browsers and login into one of them. Then create a new post or just add a comment. Refresh the other browser.
+##### Try opening two different browsers and login into one of them. Then create a new post or just add a comment. Refresh both browsers.
 
-###### Does it present the changes made in the logged browser?
+###### Does it present the comment/post on both browsers?
 
 #### SQLite
 
