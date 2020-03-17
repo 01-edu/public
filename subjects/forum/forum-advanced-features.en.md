@@ -11,7 +11,7 @@ In forum advanced features, you will have to implement the following features :
   - liked/disliked
   - commented
 
-- You have to create an activity page that tracks the user own activity
+- You have to create an activity page that tracks the user own activity. In other words, a page that :
 
   - Shows the user created posts
   - Shows where the user left a like/disliked
