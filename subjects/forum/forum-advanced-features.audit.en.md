@@ -1,14 +1,14 @@
 ### Functional
 
-##### Try to like any post at your choice.
+##### Try to like any post of your choice.
 
 ###### Does the liked post appear on the activity page?
 
-##### Try to dislike any post at your choice.
+##### Try to dislike any post of your choice.
 
 ###### Does the disliked post appear on the activity page?
 
-##### Try to comment any post at your choice.
+##### Try to comment any post of your choice.
 
 ###### Does the comment appear on the activity page along with the commented post you made?
 
@@ -16,23 +16,23 @@
 
 ###### Does new post appear on the activity page?
 
-##### Try login as other user and make a comment on the post you created above. Then return to the user that created the post.
+##### Try to login as another user and make a comment on the post you created above. Then return to the user that created the post.
 
-###### Does the user who created the post received a notification saying that the post has been commented?
+###### Did the user who created the post received a notification saying that the post has been commented?
 
-##### Try login as other user and like the post you created above. Then return to the user that created the post.
+##### Try to login as another user and like the post you created above. Then return to the user that created the post.
 
-###### Does the user who created the post received a notification saying that the post has been liked?
+###### Did the user who created the post received a notification saying that the post has been liked?
 
-##### Try login as other user and dislike the post you created above. Then return to the user that created the post.
+##### Try to login as another user and dislike the post you created above. Then return to the user that created the post.
 
-###### Does the user who created the post received a notification saying that the post has been disliked?
+###### Did the user who created the post received a notification saying that the post has been disliked?
 
-##### Try to edit a post and a comment at your choice.
+##### Try to edit a post and a comment of your choice.
 
 ###### Is it allowed to edit posts and comments?
 
-##### Try to remove a post and a comment at your choice.
+##### Try to remove a post and a comment of your choice.
 
 ###### Is it allowed to remove posts and comments?
 
@@ -42,7 +42,7 @@
 
 #### Basic
 
-###### +Does the project runs quickly and effectively (Favoring of recursive, no unnecessary data requests, etc.)?
+###### +Does the project runs quickly and effectively (Favoring of recursion, no unnecessary data requests, etc.)?
 
 ###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
 
