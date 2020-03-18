@@ -21,7 +21,7 @@ These are the instructions that you can use to sort the stack :
 - `ra` rotate stack `a` (shift up all elements of stack `a` by 1, the first element becomes the last one)
 - `rb` rotate stack `b`
 - `rr`execute `ra` and `rb`
-- `rra` reverse rotate `a` (shift down all elements of stack `a` by 1, the first element becomes the last one)
+- `rra` reverse rotate `a` (shift down all elements of stack `a` by 1, the last element becomes the first one)
 - `rrb` reverse rotate `b`
 - `rrr` execute `rra` and `rrb`
 
