@@ -24,15 +24,15 @@
 
 ###### Does it present an error and an error message?
 
-###### Is it asked in the register for an email and a password?
+###### Does the registration ask for an email and a password?
 
 #### General
 
-###### +Does the project presents more than two different authentication methods?
+###### +Does the project present more than two different authentication methods?
 
 #### Basic
 
-###### +Does the project run quickly and effectively (favoring of recursive, no unnecessary data requests, etc.)?
+###### +Does the project run quickly and effectively (favoring of recursion, no unnecessary data requests, etc.)?
 
 ###### +Does the code obey the [good practices](https://github.com/01-edu/public/blob/master/subjects/good-practices.en.md)?
 
