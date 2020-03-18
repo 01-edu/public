@@ -24,9 +24,9 @@
 
 ###### Does the session cookie present a UUID(Universal Unique Identifier)?
 
-###### Does the project present a way to configure the certificates information, either via .env or config files or other method?
+###### Does the project present a way to configure the certificates information, either via .env or config files or another method?
 
-###### Are the allowed packages being respected?
+###### Are only the allowed packages being used?
 
 #### General
 
