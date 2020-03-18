@@ -17,7 +17,7 @@ SQLite is a popular choice as embedded database software for local/client storag
 
 To structure your database and to achieve better performance we highly advise you to take a look at the [entity relationship diagram](https://www.smartdraw.com/entity-relationship-diagram/) and build one based on your own database.
 
-- You must use at least one SELECT, one CREATE and one INSERT.
+- You must use at least one SELECT, one CREATE and one INSERT queries.
 
 To know more about SQLite you can check the [SQLite page](https://www.sqlite.org/index.html).
 
