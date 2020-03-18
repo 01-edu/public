@@ -5,7 +5,7 @@
 This project consists in creating a web forum that allows :
 
 - communication between users.
-- associate categories to posts.
+- associating categories to posts.
 - liking and disliking posts and comments.
 - filtering posts.
 
@@ -25,7 +25,7 @@ To know more about SQLite you can check the [SQLite page](https://www.sqlite.org
 
 In this segment the client must be able to `register` as a new user on the forum, by inputting their credentials. You also have to create a `login session` to access the forum and be able to add posts and comments.
 
-You should use cookies to allow each user to have only one open session. Each of this sessions must contain an expiration date. It's up to you to decide what time the cookie stays "alive".
+You should use cookies to allow each user to have only one opened session. Each of this sessions must contain an expiration date. It is up to you to decide how long the cookie stays "alive".
 
 Instructions for user registration:
 
@@ -35,7 +35,7 @@ Instructions for user registration:
 - Must ask for password
   - The password must be encrypted when stored
 
-The forum must be able to check if the email provided is present in the database and if all credentials are correct. It will check if the password is the same with the one provided and if the password is not the same return an error response.
+The forum must be able to check if the email provided is present in the database and if all credentials are correct. It will check if the password is the same with the one provided and, if the password is not the same, it will return an error response.
 
 #### Communication
 
@@ -49,7 +49,7 @@ In order for users to communicate between each other, they will have to be able 
 
 #### Likes and Dislikes
 
-Only registered users will be able to like or dislike posts and comments. 
+Only registered users will be able to like or dislike posts and comments.
 
 The number of likes and dislikes should be visible by all users (registered or not).
 
@@ -90,7 +90,7 @@ This project will help you learn about:
 - You must handle website errors, HTTP status.
 - You must handle all sort of technical errors.
 - The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices.en).
-- It is recommend that the code should present a **test file**.
+- It is recommended that the code should present a **test file**.
 
 ### Allowed packages
 
