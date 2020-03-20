@@ -18,6 +18,119 @@ import (
 
 type strBoolMap map[string]bool
 
+func (a *strBoolMap) String() string {
+	var res string
+	for k, _ := range *a {
+		res += k
+	}
+	return res
+}
+
+func (a *strBoolMap) Set(str string) error {
+	if *a == nil {
+		*a = make(map[string]bool)
+	}
+	s := strings.Split(str, " ")
+	for _, v := range s {
+		(*a)[v] = true
+	}
+	return nil
+}
+
+type arrFlag struct {
+	active  bool
+	content []string
+}
+
+func (a *arrFlag) String() string {
+	return strings.Join(a.content, " ")
+}
+
+func (a *arrFlag) Set(s string) error {
+	a.active = true
+	a.content = strings.Split(s, " ")
+	return nil
+}
+
+// flag that groups a boolean value and a regular expression
+type regexpFlag struct {
+	active bool
+	reg    *regexp.Regexp
+}
+
+func (r *regexpFlag) String() string {
+	if r.reg != nil {
+		return r.reg.String()
+	}
+	return ""
+}
+
+func (r *regexpFlag) Set(s string) error {
+	re := regexp.MustCompile(s)
+	r.active = true
+	r.reg = re
+	return nil
+}
+
+var (
+	allowedImp map[string]map[string]bool // Map of the allowed imports
+	allowedFun map[string]bool            // Map of the allowed built-in functions
+	// Is necessary an array to keep all the call instances.
+	callX []nodePos // Keeps the name of the called functions and the position in the file.
+	// A map is enough for function declarations because they are unique.
+	funcDeclPkg      map[string]*funcBody // Keeps the name of the function associated to its body and its position in the file.
+	allArrayTypes    = true
+	arraysInstances  []nodePos
+	forStmts         []nodePos
+	basicLits        []nodePos
+	illegals         []illegal
+	notAllowedArrayT []string
+	predeclaredTypes = []string{"bool", "byte", "complex64", "complex128",
+		"error", "float32", "float64", "int", "int8",
+		"int16", "int32", "int64", "rune", "string",
+		"uint", "uint8", "uint16", "uint32", "uint64",
+		"uintptr",
+	}
+	relativeImports []string
+	importPkg       map[string]*pkgFunc
+	pkgName         []string
+	allImports      map[string]bool
+	openImports     []string
+	funcOccurrences map[string]int
+	// Flags
+	noArrays          bool
+	noRelativeImports bool
+	noTheseArrays     strBoolMap
+	casting           bool
+	noFor             bool
+	noLit             regexpFlag
+)
+
+//pkgFunc for all the functions of a given package
+type pkgFunc struct {
+	functions []string
+	path      string
+}
+
+type funcImp struct {
+	pkg, fun string
+	pos      token.Pos
+}
+
+// All visitors
+type callVisitor struct {
+	Calls []string
+	Fset  *token.FileSet
+}
+
+type fileVisitor struct {
+	funcDecl   []string
+	funcCalls  []string
+	selectExpr []string
+	arrayType  []nodePos
+	Fset       *token.FileSet
+}
+
 // Implementation of the flag.Value interface
 func (a *strBoolMap) String() (res string) {
 	for k, _ := range *a {
@@ -203,11 +316,22 @@ func isContained(block *ast.BlockStmt, blocks []*ast.BlockStmt) bool {
 	return false
 }
 
-// Creates all the scopes in the package
-func createScopes(l *loadVisitor, pkgScope *ast.Scope) map[*ast.BlockStmt]*ast.Scope {
-	scopes := make(map[*ast.BlockStmt]*ast.Scope)
-	if l.blocks == nil {
-		return nil
+func init() {
+	flag.Var(&noTheseArrays, "no-these-arrays", "unallowes the array types passed in the flag")
+	flag.Var(&noLit, "no-lit",
+		`The use of string literals matching the pattern --no-lit="{PATTERN}"`+
+			`passed to the program would not be allowed`,
+	)
+	flag.BoolVar(&noRelativeImports, "no-relative-imports", false, `No disallowes the use of relative imports`)
+	flag.BoolVar(&noFor, "no-for", false, `The "for" instruction is not allowed`)
+	flag.BoolVar(&casting, "cast", false, "allowes casting")
+	flag.BoolVar(&noArrays, "no-arrays", false, "unallowes the array types passed in the flag")
+}
+
+func main() {
+	if len(os.Args) < 2 {
+		fmt.Println("No file or directory")
+		return
 	}
 	for _, b := range l.blocks {
 		if !isContained(b, l.blocks) {
