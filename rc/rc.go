@@ -420,12 +420,67 @@ func loadProgram(path string, load loadedSource) error {
 		l.files = pkg.Files
 	}
 
-	for _, relativePath := range l.relImports {
-		if load[relativePath.name] == nil {
-			newPath := filepath.Clean(path + "/" + relativePath.name)
-			err = loadProgram(newPath, load)
-			if err != nil {
-				return err
+func loadProgram(path string, functions map[string]*loadVisitor) {
+	l := &loadVisitor{
+		functions:  make(map[string]ast.Node),
+		relImports: make(map[string]string),
+		fset:       token.NewFileSet(),
+	}
+
+	pkgs, err := parser.ParseDir(l.fset, path, nil, parser.AllErrors)
+
+	if err != nil {
+		panic(err)
+	}
+
+	for _, pkg := range pkgs {
+		ast.Walk(l, pkg)
+		functions[path] = l
+		fmt.Println(l.relImports)
+	}
+
+	for _, v := range l.relImports {
+		if functions[v] == nil {
+			newPath, _ := filepath.Abs(path + "/" + v)
+			loadProgram(newPath, functions)
+		}
+	}
+}
+
+type loadVisitor struct {
+	relImports map[string]string
+	functions  map[string]ast.Node
+	fset       *token.FileSet
+}
+
+func (l *loadVisitor) Visit(n ast.Node) ast.Visitor {
+	if spec, ok := n.(*ast.ImportSpec); ok {
+		path, _ := strconv.Unquote(spec.Path.Value)
+		if isRelativeImport(path) {
+			var name string
+			if spec.Name != nil {
+				name = spec.Name.Name
+			} else {
+				name = filepath.Base(path)
+			}
+			l.relImports[name] = path
+		}
+	}
+	if decl, ok := n.(*ast.FuncDecl); ok {
+		l.functions[decl.Name.Name] = n
+	}
+	return l
+}
+
+func (f flags) unallowLits() {
+	if f.l.noLit {
+		for _, v := range basicLits {
+			if !f.isLitAllowed(v.name) {
+				illegals = append(illegals, illegal{
+					T:    "illegal-literal",
+					Name: v.name,
+					Pos:  v.position,
+				})
 			}
 		}
 	}
