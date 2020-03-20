@@ -1026,3 +1026,16 @@ func (l *loadVisitor) Visit(n ast.Node) ast.Visitor {
 func isRelativeImport(s string) bool {
 	return strings.HasPrefix(s, ".")
 }
+
+func funcs(s *ast.Scope) []string {
+	scopeStr := s.String()
+	scp := strings.Split(scopeStr, "\n")
+	var funcs []string
+	for _, v := range scp {
+		nv := strings.TrimSpace(v)
+		if strings.HasPrefix(nv, "func ") {
+			funcs = append(funcs, strings.TrimPrefix(nv, "func "))
+		}
+	}
+	return funcs
+}
