@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"go/ast"
 	"go/parser"
@@ -15,6 +16,62 @@ import (
 const (
 	identation = "  "
 )
+
+type strBoolMap map[string]bool
+
+func (a *strBoolMap) String() string {
+	var res string
+	for k, _ := range *a {
+		res += k
+	}
+	return res
+}
+
+func (a *strBoolMap) Set(str string) error {
+	if *a == nil {
+		*a = make(map[string]bool)
+	}
+	s := strings.Split(str, " ")
+	for _, v := range s {
+		(*a)[v] = true
+	}
+	return nil
+}
+
+type arrFlag struct {
+	active  bool
+	content []string
+}
+
+func (a *arrFlag) String() string {
+	return strings.Join(a.content, " ")
+}
+
+func (a *arrFlag) Set(s string) error {
+	a.active = true
+	a.content = strings.Split(s, " ")
+	return nil
+}
+
+// flag that groups a boolean value and a regular expression
+type regexpFlag struct {
+	active bool
+	reg    *regexp.Regexp
+}
+
+func (r *regexpFlag) String() string {
+	if r.reg != nil {
+		return r.reg.String()
+	}
+	return ""
+}
+
+func (r *regexpFlag) Set(s string) error {
+	re := regexp.MustCompile(s)
+	r.active = true
+	r.reg = re
+	return nil
+}
 
 var (
 	allowedImp map[string]map[string]bool // Map of the allowed imports
@@ -41,6 +98,13 @@ var (
 	allImports      map[string]bool
 	openImports     []string
 	funcOccurrences map[string]int
+	// Flags
+	noArrays          bool
+	noRelativeImports bool
+	noTheseArrays     strBoolMap
+	casting           bool
+	noFor             bool
+	noLit             regexpFlag
 )
 
 // pkgFunc for all the functions of a given package
@@ -227,6 +291,18 @@ func allowedAmount(occurrences map[string]int, allowedImports []string) {
 			}
 		}
 	}
+}
+
+func init() {
+	flag.Var(&noTheseArrays, "no-these-arrays", "unallowes the array types passed in the flag")
+	flag.Var(&noLit, "no-lit",
+		`The use of string literals matching the pattern --no-lit="{PATTERN}"`+
+			`passed to the program would not be allowed`,
+	)
+	flag.BoolVar(&noRelativeImports, "no-relative-imports", false, `No disallowes the use of relative imports`)
+	flag.BoolVar(&noFor, "no-for", false, `The "for" instruction is not allowed`)
+	flag.BoolVar(&casting, "cast", false, "allowes casting")
+	flag.BoolVar(&noArrays, "no-arrays", false, "unallowes the array types passed in the flag")
 }
 
 func main() {
