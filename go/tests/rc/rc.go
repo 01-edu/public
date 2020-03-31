@@ -50,7 +50,7 @@ func (a *arrFlag) String() string {
 
 func (a *arrFlag) Set(s string) error {
 	a.active = true
-	a.content = strings.Split(s, " ")
+	a.content = strings.Split(s, ",")
 	return nil
 }
 
@@ -201,7 +201,168 @@ func getPkgFunc(path string, fsetPkg *token.FileSet) {
 
 }
 
-// reformat from the data base
+// Returns the smallest block containing the position pos. It can
+// return nil if `pos` is not inside any ast.BlockStmt
+func smallestBlock(pos token.Pos, blocks []*ast.BlockStmt) *ast.BlockStmt {
+	var minBlk *ast.BlockStmt
+	var minSize token.Pos
+	for _, v := range blocks {
+		if pos > v.Pos() && pos < v.End() {
+			size := v.End() - v.Pos()
+			if minBlk == nil || size < minSize {
+				minBlk = v
+				minSize = size
+			}
+		}
+	}
+	return minBlk
+}
+
+type data struct {
+	argument bool
+}
+
+func fillScope(funcDefs []*fDefInfo, scope *ast.Scope, scopes map[*ast.BlockStmt]*ast.Scope) {
+	for _, fun := range funcDefs {
+		scope.Insert(fun.obj)
+		for _, name := range fun.paramsFunc {
+			obj := ast.NewObj(ast.Fun, name)
+
+			data := data{
+				argument: true,
+			}
+			obj.Data = data
+			scopes[fun.body].Insert(obj)
+		}
+	}
+}
+
+// Create the scopes for a BlockStmt contained inside another BlockStmt
+func createChildScope(block *ast.BlockStmt, l *loadVisitor, scopes map[*ast.BlockStmt]*ast.Scope) {
+	blocks := l.blocks
+	// The smalles block containing the beggining of the block
+	parentBlock := smallestBlock(block.Pos(), blocks)
+	if scopes[parentBlock] == nil {
+		createChildScope(parentBlock, l, scopes)
+	}
+	scopes[block] = ast.NewScope(scopes[parentBlock])
+}
+
+// Returns true `block` is contained inside another block
+func isContained(block *ast.BlockStmt, blocks []*ast.BlockStmt) bool {
+	for _, v := range blocks {
+		if block == v {
+			continue
+		}
+		if block.Pos() > v.Pos() && block.End() < v.End() {
+			return true
+		}
+	}
+	return false
+}
+
+// Creates all the scopes in the package
+func createScopes(l *loadVisitor, pkgScope *ast.Scope) map[*ast.BlockStmt]*ast.Scope {
+	blocks := l.blocks
+	scopes := make(map[*ast.BlockStmt]*ast.Scope)
+	if blocks == nil {
+		return nil
+	}
+	for _, b := range blocks {
+		if !isContained(b, blocks) {
+			scopes[b] = ast.NewScope(pkgScope)
+			continue
+		}
+	}
+	for _, b := range blocks {
+		if scopes[b] != nil {
+			continue
+		}
+		createChildScope(b, l, scopes)
+	}
+	return scopes
+}
+
+type blockVisitor struct {
+	fdef []*fDefInfo // All functions defined in the scope in any
+	// way: as a funcDecl, GenDecl or AssigmentStmt
+	oneBlock bool // Indicates if the visitor already encounter a
+	// blockStmt
+}
+
+func (b *blockVisitor) Visit(n ast.Node) ast.Visitor {
+	switch t := n.(type) {
+	case *ast.BlockStmt:
+		if b.oneBlock {
+			return nil
+		}
+		return b
+	case *ast.FuncDecl, *ast.GenDecl, *ast.AssignStmt:
+		def := funcInfo(t)
+		if def == nil || def.obj == nil {
+			return b
+		}
+		b.fdef = append(b.fdef, def)
+		return nil
+	default:
+		return b
+	}
+}
+
+type loadedSource map[string]*loadVisitor
+
+// Returns information about the function defined in the block node
+func defs(block ast.Node) []*fDefInfo {
+	b := &blockVisitor{}
+	ast.Walk(b, block)
+	return b.fdef
+}
+
+func loadProgram(path string, load loadedSource) error {
+	l := &loadVisitor{
+		functions:  make(map[string]ast.Node),
+		absImports: make(map[string]*element),
+		relImports: make(map[string]*element),
+		objFunc:    make(map[*ast.Object]ast.Node),
+		fset:       token.NewFileSet(),
+		scopes:     make(map[*ast.BlockStmt]*ast.Scope),
+	}
+
+	pkgs, err := parser.ParseDir(l.fset, path, nil, parser.AllErrors)
+
+	if err != nil {
+		return err
+	}
+
+	for _, pkg := range pkgs {
+		ast.Walk(l, pkg)
+		l.pkgScope = ast.NewScope(nil)
+		def := defs(pkg)
+		for _, v := range def {
+			l.pkgScope.Insert(v.obj)
+		}
+		l.scopes = createScopes(l, l.pkgScope)
+		fillScope(def, l.pkgScope, l.scopes)
+		for block, scope := range l.scopes {
+			defs := defs(block)
+			fillScope(defs, scope, l.scopes)
+		}
+		load[path] = l
+	}
+
+	for _, v := range l.relImports {
+		if load[v.name] == nil {
+			newPath, _ := filepath.Abs(path + "/" + v.name)
+			err = loadProgram(newPath, load)
+			if err != nil {
+				return err
+			}
+		}
+	}
+	return err
+}
+
+//reformat from the data base
 func splitArgs(args string) []string {
 	result := strings.Split(args, " ")
 	return result
@@ -368,54 +529,108 @@ func main() {
 	}
 }
 
-func loadProgram(path string, functions map[string]*loadVisitor) {
-	l := &loadVisitor{
-		functions:  make(map[string]ast.Node),
-		relImports: make(map[string]string),
-		fset:       token.NewFileSet(),
-	}
-
-	pkgs, err := parser.ParseDir(l.fset, path, nil, parser.AllErrors)
-
-	if err != nil {
-		panic(err)
-	}
-
-	for _, pkg := range pkgs {
-		ast.Walk(l, pkg)
-		functions[path] = l
-		fmt.Println(l.relImports)
-	}
-
-	for _, v := range l.relImports {
-		if functions[v] == nil {
-			newPath, _ := filepath.Abs(path + "/" + v)
-			loadProgram(newPath, functions)
-		}
-	}
+type element struct {
+	name string
+	pos  token.Pos
 }
 
 type loadVisitor struct {
-	relImports map[string]string
+	relImports map[string]*element
+	absImports map[string]*element
 	functions  map[string]ast.Node
 	fset       *token.FileSet
+	objFunc    map[*ast.Object]ast.Node
+	blocks     []*ast.BlockStmt
+	scopes     map[*ast.BlockStmt]*ast.Scope // nil after the visit
+	// used to keep the result of the createScope function
+	pkgScope *ast.Scope
 }
 
-func (l *loadVisitor) Visit(n ast.Node) ast.Visitor {
-	if spec, ok := n.(*ast.ImportSpec); ok {
-		path, _ := strconv.Unquote(spec.Path.Value)
-		if isRelativeImport(path) {
-			var name string
-			if spec.Name != nil {
-				name = spec.Name.Name
-			} else {
-				name = filepath.Base(path)
+// Returns all the parameter of a function that identify a function
+func listParamFunc(params *ast.FieldList) []string {
+	var funcs []string
+	for _, param := range params.List {
+		if _, ok := param.Type.(*ast.FuncType); ok {
+			for _, name := range param.Names {
+				funcs = append(funcs, name.Name)
 			}
-			l.relImports[name] = path
 		}
 	}
-	if decl, ok := n.(*ast.FuncDecl); ok {
-		l.functions[decl.Name.Name] = n
+	return funcs
+}
+
+type fDefInfo struct {
+	obj        *ast.Object // the object that represents a function
+	paramsFunc []string    // the name of the parameter that represent
+	// functions
+	body *ast.BlockStmt
+}
+
+// Returns information about a node representing a function declaration
+func funcInfo(n ast.Node) *fDefInfo {
+	fdef := &fDefInfo{}
+	switch t := n.(type) {
+	case *ast.FuncDecl:
+		fdef.obj = t.Name.Obj
+		fdef.paramsFunc = listParamFunc(t.Type.Params)
+		fdef.body = t.Body
+		return fdef
+	case *ast.GenDecl:
+		for _, v := range t.Specs {
+			if val, ok := v.(*ast.ValueSpec); ok {
+				for i, value := range val.Values {
+					if funcLit, ok := value.(*ast.FuncLit); ok {
+						fdef.obj = val.Names[i].Obj
+						fdef.paramsFunc = listParamFunc(funcLit.Type.Params)
+						fdef.body = funcLit.Body
+					}
+				}
+			}
+		}
+		return fdef
+	case *ast.AssignStmt:
+		for i, right := range t.Rhs {
+			if funcLit, ok := right.(*ast.FuncLit); ok {
+				if ident, ok := t.Lhs[i].(*ast.Ident); ok {
+					fdef.obj = ident.Obj
+					fdef.paramsFunc = listParamFunc(funcLit.Type.Params)
+				}
+			}
+			return fdef
+		}
+	default:
+		return fdef
+	}
+	return fdef
+}
+func (l *loadVisitor) Visit(n ast.Node) ast.Visitor {
+	switch t := n.(type) {
+	case *ast.ImportSpec:
+		path, _ := strconv.Unquote(t.Path.Value)
+		var name string
+		if t.Name != nil {
+			name = t.Name.Name
+		} else {
+			name = filepath.Base(path)
+		}
+		el := &element{
+			name: path,
+			pos:  n.Pos(),
+		}
+
+		if isRelativeImport(path) {
+			l.relImports[name] = el
+			break
+		}
+		l.absImports[name] = el
+	case *ast.FuncDecl, *ast.GenDecl, *ast.AssignStmt:
+		fdef := funcInfo(t)
+		if fdef == nil || fdef.obj == nil {
+			return l
+		}
+		l.objFunc[fdef.obj] = n
+	case *ast.BlockStmt:
+		l.blocks = append(l.blocks, t)
 	}
 	return l
 }
@@ -496,8 +711,8 @@ func allow(s string, casted bool) bool {
 
 // Returns true if the string matches the format of a relative import
 func isRelativeImport(s string) bool {
-	relativeImport, _ := regexp.MatchString(`\.\.\\??`, s)
-	return relativeImport
+	reg := regexp.MustCompile(`^\.`)
+	return reg.Match([]byte(s))
 }
 
 // Returns true if the string represents an import package
