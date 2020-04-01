@@ -85,28 +85,6 @@ var (
 	allowBuiltin      bool
 )
 
-//pkgFunc for all the functions of a given package
-type pkgFunc struct {
-	functions []string
-	path      string
-}
-
-type funcImp struct {
-	pkg, fun string
-	pos      token.Pos
-}
-
-// All visitors
-type callVisitor struct {
-	Calls []string
-	Fset  *token.FileSet
-}
-
-// Get the position of the node in the file
-type locate interface {
-	getPos(ast.Node) string
-}
-
 type illegal struct {
 	T    string
 	Name string
@@ -320,6 +298,10 @@ func (v *visitor) Visit(n ast.Node) ast.Visitor {
 	case *ast.FuncDecl, *ast.GenDecl, *ast.AssignStmt:
 		//Avoids analysing a declaration inside a declaration
 		//Since this is handle by the functions `isAllowed`
+		fdef := funcInfo(t)
+		if fdef == nil || fdef.obj == nil {
+			return v
+		}
 		if v.oneTime {
 			return nil
 		}
@@ -509,21 +491,6 @@ func analyseProgram(functions []*fDefInfo, path string, load loadedSource) *info
 
 	info.illegals = removeRepetitions(info.illegals)
 	return info
-}
-
-//reformat from the data base
-func splitArgs(args string) []string {
-	result := strings.Split(args, " ")
-	return result
-}
-
-func goFile(args []string) string {
-	for _, v := range args {
-		if strings.HasSuffix(v, ".go") {
-			return v
-		}
-	}
-	return ""
 }
 
 type flags struct {
@@ -874,16 +841,6 @@ func (l *loadVisitor) Visit(n ast.Node) ast.Visitor {
 		l.blocks = append(l.blocks, t)
 	}
 	return l
-}
-
-func (f flags) isLitAllowed(s string) bool {
-	matched, err := regexp.Match(f.l.pattern, []byte(s))
-
-	if err != nil {
-		return true
-	}
-
-	return pack.scopes[sm]
 }
 
 // Returns true if the string matches the format of a relative import
