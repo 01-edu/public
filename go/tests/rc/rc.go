@@ -512,15 +512,15 @@ func removeAmount(s string) string {
 }
 
 func init() {
-	flag.Var(&noTheseArrays, "no-these-arrays", "unallowes the array types passed in the flag")
+	flag.Var(&noTheseArrays, "no-these-arrays", "Disallowes the array types passed in the flag as a list separeted by comma with out spaces\nLike so: -no-these-arrays=int,string,bool")
 	flag.Var(&noLit, "no-lit",
 		`The use of string literals matching the pattern --no-lit="{PATTERN}"`+
 			`passed to the program would not be allowed`,
 	)
-	flag.BoolVar(&noRelativeImports, "no-relative-imports", false, `No disallowes the use of relative imports`)
+	flag.BoolVar(&noRelativeImports, "no-relative-imports", false, `Disallowes the use of relative imports`)
 	flag.BoolVar(&noFor, "no-for", false, `The "for" instruction is not allowed`)
-	flag.BoolVar(&casting, "cast", false, "allowes casting")
-	flag.BoolVar(&noArrays, "no-arrays", false, "unallowes the array types passed in the flag")
+	flag.BoolVar(&casting, "cast", false, "Allowes casting")
+	flag.BoolVar(&noArrays, "no-arrays", false, "Disallowes all array types")
 	flag.BoolVar(&allowBuiltin, "allow-builtin", false, "Allowes all builtin functions and casting")
 }
 
