@@ -29,25 +29,10 @@ func (a *strBoolMap) Set(str string) error {
 	if *a == nil {
 		*a = make(map[string]bool)
 	}
-	s := strings.Split(str, " ")
+	s := strings.Split(str, ",")
 	for _, v := range s {
 		(*a)[v] = true
 	}
-	return nil
-}
-
-type arrFlag struct {
-	active  bool
-	content []string
-}
-
-func (a *arrFlag) String() string {
-	return strings.Join(a.content, " ")
-}
-
-func (a *arrFlag) Set(s string) error {
-	a.active = true
-	a.content = strings.Split(s, ",")
 	return nil
 }
 
@@ -641,7 +626,6 @@ func main() {
 			info.illegals = append(info.illegals, il)
 		}
 	}
-
 	for _, v := range info.arrays {
 		if noArrays || noTheseArrays[v.name] {
 			il := &illegal{
