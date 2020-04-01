@@ -514,8 +514,8 @@ func createChildScope(
 func init() {
 	flag.Var(&noTheseArrays, "no-these-arrays", "Disallowes the array types passed in the flag as a list separeted by comma with out spaces\nLike so: -no-these-arrays=int,string,bool")
 	flag.Var(&noLit, "no-lit",
-		`The use of string literals matching the pattern --no-lit="{PATTERN}"`+
-			`passed to the program would not be allowed`,
+		`The use of basic literals (strings or characters) matching the pattern -no-lit="{PATTERN}"
+passed to the program would not be allowed`,
 	)
 	flag.BoolVar(&noRelativeImports, "no-relative-imports", false, `Disallowes the use of relative imports`)
 	flag.BoolVar(&noFor, "no-for", false, `The "for" instruction is not allowed`)
