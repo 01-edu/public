@@ -2,13 +2,17 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"go/ast"
 	"go/parser"
 	"go/token"
+	"os"
 	"path/filepath"
 	"regexp"
 	"strconv"
 	"strings"
+
+	table "github.com/tatsushid/go-prettytable"
 )
 
 type strBoolMap map[string]bool
@@ -570,7 +574,202 @@ func init() {
 	flag.BoolVar(&allowBuiltin, "allow-builtin", false, "Allowes all builtin functions and casting")
 }
 
+func parseArgs(toAllow []string, builtins bool, casting bool) error {
+	allowedFun["builtin"] = make(map[string]bool)
+	predeclaredTypes := []string{"bool", "byte", "complex64", "complex128",
+		"error", "float32", "float64", "int", "int8",
+		"int16", "int32", "int64", "rune", "string",
+		"uint", "uint8", "uint16", "uint32", "uint64",
+		"uintptr",
+	}
+
+	if builtins {
+		allowedFun["builtin"]["*"] = true
+	}
+
+	if casting {
+		for _, v := range predeclaredTypes {
+			allowedFun["builtin"][v] = true
+		}
+	}
+	for _, v := range toAllow {
+		var path, funcName string
+		if strings.ContainsRune(v, '/') {
+			path = filepath.Dir(v)
+			funcName = filepath.Base(v)
+			spl := strings.Split(funcName, ".")
+			path = path + "/" + spl[0]
+			funcName = spl[1]
+		} else if strings.ContainsRune(v, '.') {
+			spl := strings.Split(v, ".")
+			path = spl[0]
+			funcName = spl[1]
+		} else {
+			path = "builtin"
+			funcName = v
+		}
+		if strings.ContainsRune(funcName, '#') {
+			spl := strings.Split(funcName, "#")
+			funcName = spl[0]
+			n, err := strconv.Atoi(spl[1])
+			if err != nil {
+				return fmt.Errorf("After the '#' there should be a integer" +
+					" representing the maximum number of allowed occurrences")
+			}
+			var prefix string
+			if path != "" {
+				prefix = filepath.Base(path)
+			}
+			allowedRep[prefix+"."+funcName] = n
+		}
+		if allowedFun[path] == nil {
+			allowedFun[path] = make(map[string]bool)
+		}
+		allowedFun[path][funcName] = true
+	}
+	return nil
+}
+
 func main() {
+	flag.Parse()
+	if flag.NArg() < 1 {
+		fmt.Println("Not enough arguments: missing file")
+		os.Exit(1)
+	}
+	fmt.Println("Parsing:")
+
+	err := parseArgs(flag.Args()[1:], allowBuiltin, casting)
+
+	if err != nil {
+		panic(err)
+	}
+	FileSet := token.NewFileSet()
+	file, err := parser.ParseFile(FileSet, flag.Arg(0), nil, parser.AllErrors)
+
+	if err != nil {
+		panic(err)
+	}
+
+	load := make(loadedSource)
+
+	currentPath := filepath.Dir(flag.Arg(0))
+
+	err = loadProgram(currentPath, load)
+
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println("\tOk")
+
+	fmt.Println("Cheating:")
+	// Functions defined in the file
+	fileFunc := defs(file)
+	info := analyseProgram(fileFunc, currentPath, load)
+	info.illegals = append(analyseImports(file, FileSet, noRelativeImports), info.illegals...)
+	if noFor {
+		for _, v := range info.fors {
+			il := &illegal{
+				T:    "illegal-loop",
+				Name: v.name,
+				Pos:  v.pos,
+			}
+			info.illegals = append(info.illegals, il)
+		}
+	}
+
+	for _, v := range info.arrays {
+		if noArrays || noTheseArrays[v.name] {
+			il := &illegal{
+				T:    "illegal-array",
+				Name: v.name,
+				Pos:  v.pos,
+			}
+			info.illegals = append(info.illegals, il)
+		}
+	}
+
+	if noLit.active {
+		for _, v := range info.lits {
+			if noLit.reg.Match([]byte(v.name)) {
+				il := &illegal{
+					T:    "illegal-lit",
+					Name: v.name,
+					Pos:  v.pos,
+				}
+				info.illegals = append(info.illegals, il)
+			}
+		}
+	}
+	for name, rep := range allowedRep {
+		if info.callRep[name] > rep {
+			diff := info.callRep[name] - rep
+			il := &illegal{
+				T:    "illegal-amount",
+				Name: name + " exeding max repetitions by " + strconv.Itoa(diff),
+				Pos:  "all the project",
+			}
+			info.illegals = append(info.illegals, il)
+		}
+	}
+	info.illegals = removeRepetitions(info.illegals)
+	if info.illegals != nil {
+		tbl, err := table.NewTable([]table.Column{
+			{Header: "\tTYPE:"},
+			{Header: "NAME:", MinWidth: 7},
+			{Header: "LOCATION:"},
+		}...)
+		if err != nil {
+			panic(err)
+		}
+		tbl.Separator = "\t"
+		for _, v := range info.illegals {
+			tbl.AddRow("\t"+v.T, v.Name, v.Pos)
+		}
+		tbl.Print()
+		os.Exit(1)
+	}
+	fmt.Println("\tOk")
+}
+
+type importVisitor struct {
+	imports map[string]*element
+}
+
+func (i *importVisitor) Visit(n ast.Node) ast.Visitor {
+	if imp, ok := n.(*ast.ImportSpec); ok {
+		path, _ := strconv.Unquote(imp.Path.Value)
+		var name string
+		if imp.Name != nil {
+			name = imp.Name.Name
+		} else {
+			name = filepath.Base(path)
+		}
+		el := &element{
+			name: path,
+			pos:  n.Pos(),
+		}
+		i.imports[name] = el
+	}
+	return i
+}
+
+func analyseImports(n ast.Node, fset *token.FileSet, noRelImp bool) []*illegal {
+	var il []*illegal
+	i := &importVisitor{
+		imports: make(map[string]*element),
+	}
+	ast.Walk(i, n)
+	for _, path := range i.imports {
+		isRelativeImport := isRelativeImport(path.name)
+		if (noRelativeImports && isRelativeImport) || (allowedFun[path.name] == nil && !isRelativeImport) {
+			il = append(il, &illegal{
+				T:    "illegal-import",
+				Name: path.name,
+				Pos:  fset.Position(path.pos).String(),
+			})
+		}
+	}
+	return il
 }
 
 type element struct {
