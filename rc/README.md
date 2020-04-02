@@ -9,6 +9,7 @@ This program analyses a go source file and displays in standard output the impor
   - Array of all types are allowed
   - Loops are allowed
   - Relative imports are allowed
+
 - Disallowed
   - NO imports are allowed
   - NO built-in functions are allowed.
@@ -27,7 +28,7 @@ This program analyses a go source file and displays in standard output the impor
 
 ### Arguments:
 
-- Flags must be passed passed first, before any other argument
+- Flags must be passed first, before any other argument
 
 - After the flags the first argument must be the file to be analysed
 
@@ -58,10 +59,10 @@ This program analyses a go source file and displays in standard output the impor
         ```console
         _$ rc -no-arrays --no-lit=[b-yB-Y] main.go fmt.* github.com/01-edu/z01.PrintRune len 
         ```
+
 ### Example:
 
 - To allow the import of the whole `fmt` package, `z01.PrintRune` and the built-in functions `len` for the file `main.go`
-
    Note: The imports must be writen exactly the way they are writen inside the source code, example:
 
 ```console
