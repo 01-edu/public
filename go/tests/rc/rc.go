@@ -79,6 +79,57 @@ func (i *illegal) String() string {
 	return i.T + " " + i.Name + " " + i.Pos
 }
 
+func init() {
+	flag.Var(&noTheseArrays, "no-these-arrays", "Disallowes the array types passed in the flag as a list separeted by comma with out spaces\nLike so: -no-these-arrays=int,string,bool")
+	flag.Var(&noLit, "no-lit",
+		`The use of basic literals (strings or characters) matching the pattern -no-lit="{PATTERN}"
+passed to the program would not be allowed`,
+	)
+	flag.BoolVar(&noRelativeImports, "no-relative-imports", false, `Disallowes the use of relative imports`)
+	flag.BoolVar(&noFor, "no-for", false, `The "for" instruction is not allowed`)
+	flag.BoolVar(&casting, "cast", false, "Allowes casting")
+	flag.BoolVar(&noArrays, "no-arrays", false, "Disallowes all array types")
+	flag.BoolVar(&allowBuiltin, "allow-builtin", false, "Allowes all builtin functions and casting")
+}
+
+func main() {
+	flag.Parse()
+	if flag.NArg() < 1 {
+		fmt.Println("Not enough arguments: missing file")
+		os.Exit(1)
+	}
+	fmt.Println("Parsing:")
+
+	err := parseArgs(flag.Args()[1:], allowBuiltin, casting)
+
+	if err != nil {
+		panic(err)
+	}
+
+	filename := flag.Arg(0)
+
+	load := make(loadedSource)
+
+	currentPath := filepath.Dir(flag.Arg(0))
+
+	err = loadProgram(currentPath, load)
+
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println("\tOk")
+
+	fmt.Println("Cheating:")
+
+	info := analyseProgram(filename, currentPath, load)
+
+	if info.illegals != nil {
+		printIllegals(info.illegals)
+		os.Exit(1)
+	}
+	fmt.Println("\tOk")
+}
+
 // Returns the smallest block containing the position pos. It can
 // return nil if `pos` is not inside any ast.BlockStmt
 func smallestBlock(pos token.Pos, blocks []*ast.BlockStmt) *ast.BlockStmt {
@@ -226,6 +277,7 @@ func loadProgram(path string, load loadedSource) error {
 			fillScope(defs, scope, l.scopes)
 		}
 		load[path] = l
+		l.files = pkg.Files
 	}
 
 	for _, v := range l.relImports {
@@ -250,7 +302,7 @@ func smallestScopeContaining(pos token.Pos, path string, load loadedSource) *ast
 	return pack.scopes[sm]
 }
 
-func lookupDefinitionObj(el element, path string, load loadedSource) *ast.Object {
+func lookupDefinitionObj(el *element, path string, load loadedSource) *ast.Object {
 	scope := smallestScopeContaining(el.pos, path, load)
 	for scope != nil {
 		obj := scope.Lookup(el.name)
@@ -264,7 +316,7 @@ func lookupDefinitionObj(el element, path string, load loadedSource) *ast.Object
 
 type visitor struct {
 	fset       *token.FileSet
-	uses       []element
+	uses       []*element
 	selections map[string][]*element
 	arrays     []*occurrence
 	lits       []*occurrence
@@ -311,7 +363,7 @@ func (v *visitor) Visit(n ast.Node) ast.Visitor {
 		})
 	case *ast.CallExpr:
 		if fun, ok := t.Fun.(*ast.Ident); ok {
-			v.uses = append(v.uses, element{
+			v.uses = append(v.uses, &element{
 				name: fun.Name,
 				pos:  fun.Pos(),
 			})
@@ -332,7 +384,7 @@ func (v *visitor) Visit(n ast.Node) ast.Visitor {
 
 // Returns the info structure with all the ocurrences of the element
 // of the analised in the project
-func isAllowed(function element, path string, load loadedSource, walked map[ast.Node]bool, info *info) bool {
+func isAllowed(function *element, path string, load loadedSource, walked map[ast.Node]bool, info *info) bool {
 	if walked == nil {
 		walked = make(map[ast.Node]bool)
 	}
@@ -407,10 +459,7 @@ func isAllowed(function element, path string, load loadedSource, walked map[ast.
 			if err != nil {
 				panic(err)
 			}
-			newEl := element{
-				name: fun.name,
-				pos:  token.Pos(0),
-			}
+			newEl := newElement(fun.name)
 			allowedSel := isAllowed(newEl, newPath, load, walked, info)
 			if !allowedSel {
 				info.illegals = append(info.illegals, &illegal{
@@ -458,22 +507,36 @@ type info struct {
 	illegals []*illegal // functions, selections that are not allowed
 }
 
-func analyseProgram(functions []*fDefInfo, path string, load loadedSource) *info {
+func newElement(name string) *element {
+	return &element{
+		name: name,
+		pos:  token.Pos(0),
+	}
+
+}
+
+func analyseProgram(filename, path string, load loadedSource) *info {
+	fset := load[path].fset
+	file := load[path].files[filename]
+	// Functions defined in the file
+	functions := defs(file)
 	info := &info{
 		callRep: make(map[string]int),
 	}
 
+	info.illegals = append(info.illegals, analyseImports(file, fset, noRelativeImports)...)
+
 	walked := make(map[ast.Node]bool)
 
 	for _, v := range functions {
-		f := element{
-			name: v.obj.Name,
-			pos:  token.Pos(0),
-		}
+		f := newElement(v.obj.Name)
 		isAllowed(f, path, load, walked, info)
 	}
 
-	info.illegals = removeRepetitions(info.illegals)
+	info.illegals = append(info.illegals, analyseLoops(info.fors, noFor)...)
+	info.illegals = append(info.illegals, analyseArrayTypes(info.arrays, noArrays, noTheseArrays)...)
+	info.illegals = append(info.illegals, analyseLits(info.lits, noLit)...)
+	info.illegals = append(info.illegals, analyseRepetition(info.callRep, allowedRep)...)
 	return info
 }
 
@@ -509,19 +572,6 @@ func removeAmount(s string) string {
 		return c >= '0' && c <= '9' || c == '#'
 	})
 	return strRm
-}
-
-func init() {
-	flag.Var(&noTheseArrays, "no-these-arrays", "Disallowes the array types passed in the flag as a list separeted by comma with out spaces\nLike so: -no-these-arrays=int,string,bool")
-	flag.Var(&noLit, "no-lit",
-		`The use of basic literals (strings or characters) matching the pattern -no-lit="{PATTERN}"
-passed to the program would not be allowed`,
-	)
-	flag.BoolVar(&noRelativeImports, "no-relative-imports", false, `Disallowes the use of relative imports`)
-	flag.BoolVar(&noFor, "no-for", false, `The "for" instruction is not allowed`)
-	flag.BoolVar(&casting, "cast", false, "Allowes casting")
-	flag.BoolVar(&noArrays, "no-arrays", false, "Disallowes all array types")
-	flag.BoolVar(&allowBuiltin, "allow-builtin", false, "Allowes all builtin functions and casting")
 }
 
 func parseArgs(toAllow []string, builtins bool, casting bool) error {
@@ -580,104 +630,83 @@ func parseArgs(toAllow []string, builtins bool, casting bool) error {
 	return nil
 }
 
-func main() {
-	flag.Parse()
-	if flag.NArg() < 1 {
-		fmt.Println("Not enough arguments: missing file")
-		os.Exit(1)
-	}
-	fmt.Println("Parsing:")
-
-	err := parseArgs(flag.Args()[1:], allowBuiltin, casting)
-
+func printIllegals(illegals []*illegal) {
+	tbl, err := table.NewTable([]table.Column{
+		{Header: "\tTYPE:"},
+		{Header: "NAME:", MinWidth: 7},
+		{Header: "LOCATION:"},
+	}...)
 	if err != nil {
 		panic(err)
 	}
-	FileSet := token.NewFileSet()
-	file, err := parser.ParseFile(FileSet, flag.Arg(0), nil, parser.AllErrors)
-
-	if err != nil {
-		panic(err)
+	tbl.Separator = "\t"
+	for _, v := range illegals {
+		tbl.AddRow("\t"+v.T, v.Name, v.Pos)
 	}
+	tbl.Print()
+}
 
-	load := make(loadedSource)
-
-	currentPath := filepath.Dir(flag.Arg(0))
-
-	err = loadProgram(currentPath, load)
-
-	if err != nil {
-		panic(err)
-	}
-	fmt.Println("\tOk")
-
-	fmt.Println("Cheating:")
-	// Functions defined in the file
-	fileFunc := defs(file)
-	info := analyseProgram(fileFunc, currentPath, load)
-	info.illegals = append(analyseImports(file, FileSet, noRelativeImports), info.illegals...)
-	if noFor {
-		for _, v := range info.fors {
+func analyseRepetition(callRep map[string]int, allowRep map[string]int) []*illegal {
+	var illegals []*illegal
+	for name, rep := range allowedRep {
+		if callRep[name] > rep {
+			diff := callRep[name] - rep
 			il := &illegal{
-				T:    "illegal-loop",
-				Name: v.name,
-				Pos:  v.pos,
+				T:    "illegal-amount",
+				Name: name + " exeding max repetitions by " + strconv.Itoa(diff),
+				Pos:  "all the project",
 			}
-			info.illegals = append(info.illegals, il)
+			illegals = append(illegals, il)
 		}
 	}
-	for _, v := range info.arrays {
-		if noArrays || noTheseArrays[v.name] {
-			il := &illegal{
-				T:    "illegal-array",
-				Name: v.name,
-				Pos:  v.pos,
-			}
-			info.illegals = append(info.illegals, il)
-		}
-	}
+	return illegals
+}
 
+func analyseLits(litOccu []*occurrence, noLit regexpFlag) []*illegal {
+	var illegals []*illegal
 	if noLit.active {
-		for _, v := range info.lits {
+		for _, v := range litOccu {
 			if noLit.reg.Match([]byte(v.name)) {
 				il := &illegal{
 					T:    "illegal-lit",
 					Name: v.name,
 					Pos:  v.pos,
 				}
-				info.illegals = append(info.illegals, il)
+				illegals = append(illegals, il)
 			}
 		}
 	}
-	for name, rep := range allowedRep {
-		if info.callRep[name] > rep {
-			diff := info.callRep[name] - rep
+	return illegals
+}
+
+func analyseArrayTypes(arrays []*occurrence, noArrays bool, noTheseArrays map[string]bool) []*illegal {
+	var illegals []*illegal
+	for _, v := range arrays {
+		if noArrays || noTheseArrays[v.name] {
 			il := &illegal{
-				T:    "illegal-amount",
-				Name: name + " exeding max repetitions by " + strconv.Itoa(diff),
-				Pos:  "all the project",
+				T:    "illegal-array",
+				Name: v.name,
+				Pos:  v.pos,
 			}
-			info.illegals = append(info.illegals, il)
+			illegals = append(illegals, il)
 		}
 	}
-	info.illegals = removeRepetitions(info.illegals)
-	if info.illegals != nil {
-		tbl, err := table.NewTable([]table.Column{
-			{Header: "\tTYPE:"},
-			{Header: "NAME:", MinWidth: 7},
-			{Header: "LOCATION:"},
-		}...)
-		if err != nil {
-			panic(err)
+	return illegals
+}
+func analyseLoops(fors []*occurrence, noFor bool) []*illegal {
+	var illegals []*illegal
+	if noFor {
+		for _, v := range fors {
+			il := &illegal{
+				T:    "illegal-loop",
+				Name: v.name,
+				Pos:  v.pos,
+			}
+			illegals = append(illegals, il)
 		}
-		tbl.Separator = "\t"
-		for _, v := range info.illegals {
-			tbl.AddRow("\t"+v.T, v.Name, v.Pos)
-		}
-		tbl.Print()
-		os.Exit(1)
 	}
-	fmt.Println("\tOk")
+	return illegals
+
 }
 
 type importVisitor struct {
@@ -702,12 +731,12 @@ func (i *importVisitor) Visit(n ast.Node) ast.Visitor {
 	return i
 }
 
-func analyseImports(n ast.Node, fset *token.FileSet, noRelImp bool) []*illegal {
+func analyseImports(file ast.Node, fset *token.FileSet, noRelImp bool) []*illegal {
 	var il []*illegal
 	i := &importVisitor{
 		imports: make(map[string]*element),
 	}
-	ast.Walk(i, n)
+	ast.Walk(i, file)
 	for _, path := range i.imports {
 		isRelativeImport := isRelativeImport(path.name)
 		if (noRelativeImports && isRelativeImport) || (allowedFun[path.name] == nil && !isRelativeImport) {
@@ -736,6 +765,7 @@ type loadVisitor struct {
 	scopes     map[*ast.BlockStmt]*ast.Scope // nil after the visit
 	// used to keep the result of the createScope function
 	pkgScope *ast.Scope
+	files    map[string]*ast.File
 }
 
 // Returns all the parameter of a function that identify a function
