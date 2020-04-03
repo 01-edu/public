@@ -538,6 +538,7 @@ func analyseProgram(filename, path string, load loadedSource) *info {
 	info.illegals = append(info.illegals, analyseArrayTypes(info.arrays, noArrays, noTheseArrays)...)
 	info.illegals = append(info.illegals, analyseLits(info.lits, noLit)...)
 	info.illegals = append(info.illegals, analyseRepetition(info.callRep, allowedRep)...)
+	info.illegals = removeRepetitions(info.illegals)
 	return info
 }
 
