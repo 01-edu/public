@@ -283,7 +283,7 @@ func loadProgram(path string, load loadedSource) error {
 
 	for _, v := range l.relImports {
 		if load[v.name] == nil {
-			newPath, _ := filepath.Abs(path + "/" + v.name)
+			newPath := filepath.Clean(path + "/" + v.name)
 			err = loadProgram(newPath, load)
 			if err != nil {
 				return err
@@ -455,11 +455,7 @@ func isAllowed(function *element, path string, load loadedSource, walked map[ast
 				continue
 			}
 
-			newPath, err := filepath.Abs(path + "/" + importRelPath.name)
-
-			if err != nil {
-				panic(err)
-			}
+			newPath := filepath.Clean(path + "/" + importRelPath.name)
 			newEl := newElement(fun.name)
 			allowedSel := isAllowed(newEl, newPath, load, walked, info)
 			if !allowedSel {

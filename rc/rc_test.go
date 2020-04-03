@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"runtime"
 	"strings"
 	"testing"
 
@@ -107,15 +106,30 @@ Cheating:
 Cheating:
 	Ok
 `,
+		`test/testingWrapping.go`: `Parsing:
+	Ok
+Cheating:
+	TYPE:             	NAME:           	LOCATION:
+	illegal-call      	len             	tests/utilDepth2/wrapper.go:4:9
+	illegal-definition	LenWrapper      	tests/utilDepth2/wrapper.go:3:1
+	illegal-access    	util2.LenWrapper	tests/util/util.go:10:9
+	illegal-definition	LenWrapperU     	tests/util/util.go:9:1
+	illegal-access    	util.LenWrapperU	tests/testingWrapping.go:8:9
+	illegal-definition	Length          	tests/testingWrapping.go:7:1
+`,
+		`test/testingWrapping.go len`: `Parsing:
+	Ok
+Cheating:
+	Ok
+`,
 	}
-	_, filename, _, _ := runtime.Caller(1)
-	fmt.Println("Filename:", filename)
 	Compare(t, argsAndSolution)
 }
 
 func Compare(t *testing.T, argsAndSol map[string]string) {
 	for args, sol := range argsAndSol {
-		out, err := z01.MainOut("../rc", strings.Split(args, " ")...)
+		a := strings.Split(args, " ")
+		out, err := z01.MainOut("../rc", a...)
 		if EqualResult(out, sol) && err != nil && EqualResult(err.Error(), sol) {
 			fmt.Println(args, "\nError:", err)
 			fmt.Println("Solution:", sol)
@@ -132,4 +146,13 @@ func EqualResult(out, sol string) bool {
 		}
 	}
 	return false
+}
+
+func ExtractFile(args []string) string {
+	for _, v := range args {
+		if strings.HasSuffix(v, ".go") {
+			return v
+		}
+	}
+	return ""
 }
