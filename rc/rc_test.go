@@ -116,11 +116,20 @@ Cheating:
 func Compare(t *testing.T, argsAndSol map[string]string) {
 	for args, sol := range argsAndSol {
 		out, err := z01.MainOut("../rc", strings.Split(args, " ")...)
-		if out != sol && err != nil && err.Error() != sol {
+		if EqualResult(out, sol) && err != nil && EqualResult(err.Error(), sol) {
 			fmt.Println(args, "\nError:", err)
 			fmt.Println("Solution:", sol)
 			// fmt.Println("Out:", out)
 			t.Errorf("./rc %s prints %q\n instead of %q\n", args, out, sol)
 		}
 	}
+}
+
+func EqualResult(out, sol string) bool {
+	for _, v := range strings.Split(out, "\n") {
+		if strings.Contains(v, sol) {
+			return true
+		}
+	}
+	return false
 }
