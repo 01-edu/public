@@ -9,6 +9,7 @@ import (
 	"os"
 	"path/filepath"
 	"regexp"
+	"sort"
 	"strconv"
 	"strings"
 
@@ -90,32 +91,41 @@ passed to the program would not be allowed`,
 	flag.BoolVar(&casting, "cast", false, "Allowes casting")
 	flag.BoolVar(&noArrays, "no-arrays", false, "Disallowes all array types")
 	flag.BoolVar(&allowBuiltin, "allow-builtin", false, "Allowes all builtin functions and casting")
+	sort.Sort(sort.StringSlice(os.Args[1:]))
 }
 
 func main() {
 	flag.Parse()
+	filename := goFile(flag.Args())
+
+	if filename == "" {
+		fmt.Println("No file to analyse")
+		os.Exit(1)
+	}
+
 	if flag.NArg() < 1 {
 		fmt.Println("Not enough arguments: missing file")
 		os.Exit(1)
 	}
+
 	fmt.Println("Parsing:")
 
-	err := parseArgs(flag.Args()[1:], allowBuiltin, casting)
+	err := parseArgs(flag.Args(), allowBuiltin, casting)
 
 	if err != nil {
-		panic(err)
+		fmt.Println(err)
+		os.Exit(1)
 	}
-
-	filename := flag.Arg(0)
 
 	load := make(loadedSource)
 
-	currentPath := filepath.Dir(flag.Arg(0))
+	currentPath := filepath.Dir(filename)
 
 	err = loadProgram(currentPath, load)
 
 	if err != nil {
-		panic(err)
+		fmt.Println(err)
+		os.Exit(1)
 	}
 	fmt.Println("\tOk")
 
@@ -128,6 +138,15 @@ func main() {
 		os.Exit(1)
 	}
 	fmt.Println("\tOk")
+}
+
+func goFile(args []string) string {
+	for _, v := range args {
+		if strings.HasSuffix(v, ".go") {
+			return v
+		}
+	}
+	return ""
 }
 
 // Returns the smallest block containing the position pos. It can
