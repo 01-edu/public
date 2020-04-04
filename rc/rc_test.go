@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+	"sort"
 	"strings"
 	"testing"
 
@@ -106,7 +106,7 @@ Cheating:
 Cheating:
 	Ok
 `,
-		`test/testingWrapping.go`: `Parsing:
+		`tests/testingWrapping.go`: `Parsing:
 	Ok
 Cheating:
 	TYPE:             	NAME:           	LOCATION:
@@ -117,10 +117,12 @@ Cheating:
 	illegal-access    	util.LenWrapperU	tests/testingWrapping.go:8:9
 	illegal-definition	Length          	tests/testingWrapping.go:7:1
 `,
-		`test/testingWrapping.go len`: `Parsing:
+		`tests/testingWrapping.go len`: `Parsing:
 	Ok
 Cheating:
 	Ok
+`,
+		`tests/empty len`: `No file to analyse
 `,
 	}
 	Compare(t, argsAndSolution)
@@ -130,29 +132,27 @@ func Compare(t *testing.T, argsAndSol map[string]string) {
 	for args, sol := range argsAndSol {
 		a := strings.Split(args, " ")
 		out, err := z01.MainOut("../rc", a...)
-		if EqualResult(out, sol) && err != nil && EqualResult(err.Error(), sol) {
-			fmt.Println(args, "\nError:", err)
-			fmt.Println("Solution:", sol)
-			// fmt.Println("Out:", out)
-			t.Errorf("./rc %s prints %q\n instead of %q\n", args, out, sol)
+		if !EqualResult(sol, out) {
+			if err == nil {
+				t.Errorf("./rc %s prints %q\n instead of %q\n", args, out, sol)
+			}
+			if err != nil && !EqualResult(sol, err.Error()) {
+				t.Errorf("./rc %s prints %q\n instead of %q\n", args, err.Error(), sol)
+			}
 		}
 	}
 }
 
-func EqualResult(out, sol string) bool {
-	for _, v := range strings.Split(out, "\n") {
-		if strings.Contains(v, sol) {
-			return true
-		}
-	}
-	return false
-}
-
-func ExtractFile(args []string) string {
-	for _, v := range args {
-		if strings.HasSuffix(v, ".go") {
-			return v
-		}
-	}
-	return ""
+func EqualResult(sol, out string) bool {
+	// split
+	solSli := strings.Split(sol, "\n")
+	outSli := strings.Split(out, "\n")
+	// sort
+	sort.Sort(sort.StringSlice(solSli))
+	sort.Sort(sort.StringSlice(outSli))
+	// join
+	sol = strings.Join(solSli, "\n")
+	out = strings.Join(outSli, "\n")
+	// compare
+	return sol == out
 }
