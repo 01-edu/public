@@ -63,7 +63,7 @@ OK
 
 ###### Does it display the right result as above?
 
-##### Try to run `"ARG = "4 67 3 87 23"; ./push_swap $ARG | ./checker $ARG"`.
+##### Try to run `"ARG=("4 67 3 87 23"); ./push_swap $ARG | ./checker $ARG"`.
 
 ```
 OK
@@ -73,11 +73,11 @@ OK
 
 #### General
 
-##### Try to run `"$ARG= "<100 random numbers>"; ./push_swap $ARG"` with 100 random different numbers instead of the tag.
+##### Try to run `"$ARG=("<100 random numbers>"); ./push_swap $ARG"` with 100 random different numbers instead of the tag.
 
 ###### +Does it display less than 700 commands?
 
-##### Try to run `"$ARG= "<100 random numbers>; ./push_swap $ARG | ./checker $ARG"` with the same 100 random different numbers as before instead of the tag.
+##### Try to run `"$ARG=("<100 random numbers>"); ./push_swap $ARG | ./checker $ARG"` with the same 100 random different numbers as before instead of the tag.
 
 ```
 OK
