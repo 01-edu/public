@@ -99,7 +99,7 @@ func main() {
 	filename := goFile(flag.Args())
 
 	if filename == "" {
-		fmt.Println("No file to analyse")
+		fmt.Println("\tNo file to analyse")
 		os.Exit(1)
 	}
 
@@ -108,7 +108,7 @@ func main() {
 	err := parseArgs(flag.Args(), allowBuiltin, casting)
 
 	if err != nil {
-		fmt.Println(err)
+		fmt.Printf("\t%s\n", err)
 		os.Exit(1)
 	}
 
@@ -119,7 +119,7 @@ func main() {
 	err = loadProgram(currentPath, load)
 
 	if err != nil {
-		fmt.Println(err)
+		fmt.Printf("\t%s\n", err)
 		os.Exit(1)
 	}
 	fmt.Println("\tOk")
@@ -609,11 +609,15 @@ func parseArgs(toAllow []string, builtins bool, casting bool) error {
 			funcName = filepath.Base(v)
 			spl := strings.Split(funcName, ".")
 			path = path + "/" + spl[0]
-			funcName = spl[1]
+			if len(spl) > 1 {
+				funcName = spl[1]
+			}
 		} else if strings.ContainsRune(v, '.') {
 			spl := strings.Split(v, ".")
 			path = spl[0]
-			funcName = spl[1]
+			if len(spl) > 1 {
+				funcName = spl[1]
+			}
 		} else {
 			path = "builtin"
 			funcName = v

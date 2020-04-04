@@ -122,10 +122,10 @@ Cheating:
 Cheating:
 	Ok
 `,
-		`tests/empty/empty len`: `No file to analyse
+		`tests/empty/empty len`: `	No file to analyse
 `,
 		`tests/empty/empty.go`: `Parsing:
-tests/empty/empty.go:1:1: expected ';', found 'EOF' (and 2 more errors)
+	tests/empty/empty.go:1:1: expected ';', found 'EOF' (and 2 more errors)
 `,
 	}
 	Compare(t, argsAndSolution)
