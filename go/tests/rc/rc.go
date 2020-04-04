@@ -103,11 +103,6 @@ func main() {
 		os.Exit(1)
 	}
 
-	if flag.NArg() < 1 {
-		fmt.Println("Not enough arguments: missing file")
-		os.Exit(1)
-	}
-
 	fmt.Println("Parsing:")
 
 	err := parseArgs(flag.Args(), allowBuiltin, casting)
