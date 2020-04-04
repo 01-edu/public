@@ -127,13 +127,13 @@ pb
 KO
 student$  echo -e "rra\npb\nsa\n" | ./checker "3 2 one 0"
 Error
-student$ echo -e "rra\npb\nsa\nrra\npa\n"
+student$ echo -e "rra\npb\nsa\nrra\npa"
 rra
 pb
 sa
 rra
 pa
-student$ echo -e "rra\npb\nsa\nrra\npa\n" | ./checker "3 2 1 0"
+student$ echo -e "rra\npb\nsa\nrra\npa" | ./checker "3 2 1 0"
 OK
 student$ ./checker
 student$
@@ -151,7 +151,7 @@ student$
 
 ```console
 student$ ARG="4 67 3 87 23"; ./push_swap "$ARG" | wc -l
-       6
+6
 student$ ARG="4 67 3 87 23"; ./push_swap "$ARG" | ./checker "$ARG"
 OK
 ```
