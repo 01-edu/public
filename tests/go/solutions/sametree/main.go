@@ -23,7 +23,7 @@ func checkIfEq(t1 *TreeNodeL, t2 *TreeNodeL) bool {
 	if t1 == nil || t2 == nil {
 		return false
 	}
-	return (t1.Val == t2.Val && checkIfEq(t1.Right, t2.Right) && checkIfEq(t1.Left, t2.Left))
+	return t1.Val == t2.Val && checkIfEq(t1.Right, t2.Right) && checkIfEq(t1.Left, t2.Left)
 }
 
 func main() {
