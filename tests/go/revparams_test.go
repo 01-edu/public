@@ -1,8 +1,9 @@
 package student_test
 
 import (
-	"github.com/01-edu/z01"
 	"testing"
+
+	"github.com/01-edu/z01"
 )
 
 func TestRevParams(t *testing.T) {

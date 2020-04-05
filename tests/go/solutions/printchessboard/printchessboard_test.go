@@ -1,9 +1,10 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
 	"strconv"
 	"testing"
+
+	"github.com/01-edu/z01"
 )
 
 func TestPrintChessBoard(t *testing.T) {

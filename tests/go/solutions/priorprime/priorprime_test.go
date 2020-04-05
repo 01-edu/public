@@ -15,7 +15,7 @@ func TestPriorprime(t *testing.T) {
 	// (note: a node is not always necessary but in this case it makes the writing of the test easier)
 
 	type node struct {
-		first  int
+		first int
 	}
 
 	// Declaration of  an empty array of type node{}
@@ -31,8 +31,8 @@ func TestPriorprime(t *testing.T) {
 		node{13},
 		node{10},
 		node{0},
-		node{1},		
-		node{2},		
+		node{1},
+		node{2},
 	)
 
 	// If we were to leave the table as it is, a student could just do a program with 4 ifs and get
@@ -40,7 +40,7 @@ func TestPriorprime(t *testing.T) {
 
 	for i := 0; i < 15; i++ {
 		value := node{
-			first:  z01.RandIntBetween(0, 1000),
+			first: z01.RandIntBetween(0, 1000),
 			//this z01.RandIntBetween function allows the randomization of
 			//the int for each value in a desired range.
 			//Note that they are many others of those functions for other types of data

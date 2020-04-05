@@ -5,9 +5,10 @@ import (
 
 	"github.com/01-edu/z01"
 
+	"fmt"
+
 	solutions "./solutions"
 	student "./student"
-	"fmt"
 )
 
 func parentListTransp(root *student.TreeNode) string {

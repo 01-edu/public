@@ -1,10 +1,11 @@
 package student_test
 
 import (
+	"testing"
+
 	solutions "./solutions"
 	student "./student"
 	"github.com/01-edu/z01"
-	"testing"
 )
 
 func TestActiveBits(t *testing.T) {

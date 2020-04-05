@@ -1,9 +1,10 @@
 package student_test
 
 import (
-	"github.com/01-edu/z01"
 	"strings"
 	"testing"
+
+	"github.com/01-edu/z01"
 )
 
 func TestPrintProgramName(t *testing.T) {

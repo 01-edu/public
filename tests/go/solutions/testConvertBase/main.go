@@ -1,8 +1,9 @@
 package main
 
 import (
-	solutions "../../solutions"
 	"fmt"
+
+	solutions "../../solutions"
 )
 
 func main() {

@@ -1,8 +1,9 @@
 package main
 
 import (
-	student ".."
 	"fmt"
+
+	student ".."
 )
 
 func main() {

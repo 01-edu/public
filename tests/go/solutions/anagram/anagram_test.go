@@ -36,7 +36,7 @@ func TestIsAnagram(t *testing.T) {
 	)
 
 	for i := 0; i < 15; i++ {
-		value := node {
+		value := node{
 			s: z01.RandStr(z01.RandIntBetween(15, 20), "qwertyuiopasdfghjklzxcvbnm "),
 			t: z01.RandStr(z01.RandIntBetween(15, 20), "qwertyuiopasdfghjklzxcvbnm "),
 		}
@@ -44,7 +44,7 @@ func TestIsAnagram(t *testing.T) {
 		table = append(table, value)
 	}
 
-	for _, arg := range(table) {
+	for _, arg := range table {
 		z01.Challenge(t, IsAnagram, solutions.IsAnagram, arg.s, arg.t)
 	}
 }

@@ -1,9 +1,10 @@
 package main
 
 import (
-	solutions ".."
 	"fmt"
 	"os"
+
+	solutions ".."
 )
 
 func main() {
