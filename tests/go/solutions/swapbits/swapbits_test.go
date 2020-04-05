@@ -1,9 +1,10 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
 	"reflect"
 	"testing"
+
+	"github.com/01-edu/z01"
 
 	solutions "../../solutions"
 )

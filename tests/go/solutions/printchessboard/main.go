@@ -1,9 +1,10 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
 	"os"
 	"strconv"
+
+	"github.com/01-edu/z01"
 )
 
 func printLine(str string) {

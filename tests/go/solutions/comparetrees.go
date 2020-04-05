@@ -3,8 +3,9 @@
 package solutions
 
 import (
-	student "../student"
 	"testing"
+
+	student "../student"
 )
 
 func CompareTrees(root *solutions.TreeNode, rootS *student.TreeNode, t *testing.T) {

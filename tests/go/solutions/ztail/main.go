@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/01-edu/z01"
 	"os"
 	"strconv"
+
+	"github.com/01-edu/z01"
 )
 
 func numberOfBytes(args []string) (int, []string) {

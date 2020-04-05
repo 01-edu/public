@@ -1,9 +1,10 @@
 package student_test
 
 import (
-	"github.com/01-edu/z01"
 	"reflect"
 	"testing"
+
+	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"

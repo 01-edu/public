@@ -1,9 +1,10 @@
 package solutions
 
 import (
-	"github.com/01-edu/z01"
 	"os"
 	"strconv"
+
+	"github.com/01-edu/z01"
 )
 
 func printLineCh(str string) {

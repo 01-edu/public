@@ -5,9 +5,10 @@ import (
 
 	"github.com/01-edu/z01"
 
+	"fmt"
+
 	solutions "./solutions"
 	student "./student"
-	"fmt"
 )
 
 func errorMessage_search(t *testing.T, fn interface{}, root, a *solutions.TreeNode, b *student.TreeNode,

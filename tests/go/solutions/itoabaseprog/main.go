@@ -2,11 +2,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/01-edu/z01"
 	"strconv"
 
-	student "../../student"
+	"github.com/01-edu/z01"
+
 	"strings"
+
+	student "../../student"
 )
 
 func ItoaBase(value, base int) string {
