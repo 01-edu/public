@@ -5,7 +5,7 @@
 Write a program that takes an undefined number of arguments which could be considered as `options` and writes on the standard output a representation of those `options` as groups of `bytes` followed by a newline (`'\n'`).
 
 - An `option` is an argument that begins with a `-` and that can have multiple characters which could be :
-    -abcdefghijklmnopqrstuvwxyz
+  -abcdefghijklmnopqrstuvwxyz
 
 - All `options` are stocked in a single `int` and each `options` represents a bit of that `int`, and should be stocked like this :
 

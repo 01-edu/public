@@ -31,7 +31,7 @@ Lx-y Lz-w Lr-o ...
 ```
 
 - x, z, r represents the ants numbers (going from 1 to number_of_ants) and y,
-w, o represents the rooms names.
+  w, o represents the rooms names.
 
 - A room is defined by `"name coord_x coord_y"`, and will usually look like `"Room 1 2", "nameoftheroom 1 6", "4 6 7"`.
 

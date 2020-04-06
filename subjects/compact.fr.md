@@ -5,9 +5,9 @@
 Écrire une fonction `Compact` qui prend un pointeur sur slice de `string` comme paramètre.
 Cette fonction doit:
 
--   Retourner le nombre d'éléments avec des valeurs non-`nil`
+- Retourner le nombre d'éléments avec des valeurs non-`nil`
 
--   Comprimer, c.à.d., effacer les éléments qui ont une valeur `nil` dans la slice.
+- Comprimer, c.à.d., effacer les éléments qui ont une valeur `nil` dans la slice.
 
 ### Fonction attendue
 

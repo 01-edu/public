@@ -39,6 +39,7 @@ student@ubuntu:~/ascii-art$ cat banner.txt
 |_| |_|  \___| |_| |_|  \___/  
                                
                                
+
 student@ubuntu:~/ascii-art$ ./ascii-art "Hello There!" shadow --output=banner.txt
 student@ubuntu:~/ascii-art$ cat banner.txt
                                                                                          
@@ -49,5 +50,6 @@ _|    _| _|       _| _| _|    _|           _|     _|    _| _|       _|       _|
 _|    _|   _|_|_| _| _|   _|_|             _|     _|    _|   _|_|_| _|         _|_|_| _| 
                                                                                          
                                                                                          
+
 student@ubuntu:~/ascii-art$
 ```

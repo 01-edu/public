@@ -67,4 +67,4 @@ student@ubuntu:~/[[ROOT]]/test$
 
 ### Note
 
--   L'addresse peut être différente à chaque exécution du programme.
+- L'addresse peut être différente à chaque exécution du programme.

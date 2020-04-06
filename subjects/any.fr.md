@@ -4,7 +4,7 @@
 
 Écrire une fonction `Any` qui retourne `true`, pour un tableau de `string` :
 
--   si, lorsque ce tableau de `string` est passé à travers une fonction `f`, au moins un element retourne `true`.
+- si, lorsque ce tableau de `string` est passé à travers une fonction `f`, au moins un element retourne `true`.
 
 ### Fonction attendue
 

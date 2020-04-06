@@ -8,7 +8,7 @@ Write a program that takes a `string` as a parameter, and prints its words in re
 
 - If the number of parameters is different from 1, the program will display newline (`'\n'`).
 
--   In the parameters that are going to be tested, there will not be any extra spaces. (meaning that there will not be additional spaces at the beginning or at the end of the `string` and that words will always be separated by exactly one space).
+- In the parameters that are going to be tested, there will not be any extra spaces. (meaning that there will not be additional spaces at the beginning or at the end of the `string` and that words will always be separated by exactly one space).
 
 ### Usage
 
@@ -22,5 +22,5 @@ student@ubuntu:~/[[ROOT]]/test$ ./test "he stared at the mountain"
 mountain the at stared he
 student@ubuntu:~/[[ROOT]]/test$ ./test "" | cat-e
 $
-student@ubuntu:~/[[ROOT]]/test$ 
+student@ubuntu:~/[[ROOT]]/test$
 ```

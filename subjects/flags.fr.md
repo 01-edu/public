@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a **program** that can have as arguments `--insert` (or `-i`),  `--order` (or `-o`) and a `string`.
+Write a **program** that can have as arguments `--insert` (or `-i`), `--order` (or `-o`) and a `string`.
 
 This program should :
 

@@ -7,6 +7,7 @@ You must follow the same [principles](https://public.01-edu.org/subjects/groupie
 - Groupie Tracker Filters consists on letting the user filter the artists/bands that will be shown.
 
 - Your project must incorporate at least these four filters:
+
   - filter by creation date
   - filter by first album date
   - filter by number of members
