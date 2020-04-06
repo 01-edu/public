@@ -280,6 +280,7 @@ student$ ./lem-in badexample00.txt
 ERROR: invalid data format
 student$
 ```
+
 ###### Does it present the right result as above?
 
 ##### Try running the program with [badexample01](https://public.01-edu.org/subjects/lem-in/lem-in-examples.en).
@@ -315,6 +316,8 @@ student$
 ###### Does the program handles all the error cases with a message?
 
 ###### Is the solution making the ants cross the farm from `##start` to `##end` properly?
+
+###### As an auditor, is this project up to every standard? If not, why are you failing the project?(Empty Work, Incomplete Work, Invalid compilation, Cheating, Crashing, Leaks)
 
 #### General
 

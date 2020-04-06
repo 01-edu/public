@@ -12,6 +12,8 @@
 
 ###### Is the design for the 404 HTTP status covered?
 
+###### As an auditor, is this project up to every standard? If not, why are you failing the project?(Empty Work, Incomplete Work, Invalid compilation, Cheating, Crashing, Leaks)
+
 #### General
 
 ###### +Is it easy to use the web site?

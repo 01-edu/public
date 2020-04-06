@@ -26,6 +26,8 @@
 
 ###### Does the registration ask for an email and a password?
 
+###### As an auditor, is this project up to every standard? If not, why are you failing the project?(Empty Work, Incomplete Work, Invalid compilation, Cheating, Crashing, Leaks)
+
 #### General
 
 ###### +Does the project present more than two different authentication methods?

@@ -36,6 +36,8 @@
 
 ###### Is it allowed to remove posts and comments?
 
+###### As an auditor, is this project up to every standard? If not, why are you failing the project?(Empty Work, Incomplete Work, Invalid compilation, Cheating, Crashing, Leaks)
+
 #### General
 
 ##### +Are there any other feature not mentioned in the [subject](https://public.01-edu.org/subjects/forum/forum-advanced-features.en)?

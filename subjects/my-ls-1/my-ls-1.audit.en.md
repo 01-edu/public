@@ -94,6 +94,8 @@
 
 ###### Is the displayed output the same?
 
+###### As an auditor, is this project up to every standard? If not, why are you failing the project?(Empty Work, Incomplete Work, Invalid compilation, Cheating, Crashing, Leaks)
+
 #### General
 
 ###### +Does the program runs with colors as in the ls command?

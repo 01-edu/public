@@ -28,6 +28,8 @@
 
 ###### Are only the allowed packages being used?
 
+###### As an auditor, is this project up to every standard? If not, why are you failing the project?(Empty Work, Incomplete Work, Invalid compilation, Cheating, Crashing, Leaks)
+
 #### General
 
 ###### +Does the project implement their own certificates for the HTTPS protocol?

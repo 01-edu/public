@@ -8,6 +8,8 @@
 
 ###### Is the design [interactive](https://en.m.wikipedia.org/wiki/Interactive_design)? (does it interact with the actions of the user?)
 
+###### As an auditor, is this project up to every standard? If not, why are you failing the project?(Empty Work, Incomplete Work, Invalid compilation, Cheating, Crashing, Leaks)
+
 #### General
 
 ###### +Is it easy to use the web site?
