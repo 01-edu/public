@@ -27,13 +27,13 @@ We advise you to create your own tests for yourself and for when you will correc
 
 ### Instructions
 
--   Write a [function](TODO-LINK) that simulates the behaviour of the `Atoi` function in Go. `Atoi` transforms a number represented as a `string` in a number represented as an `int`.
+- Write a [function](TODO-LINK) that simulates the behaviour of the `Atoi` function in Go. `Atoi` transforms a number represented as a `string` in a number represented as an `int`.
 
--   `Atoi` returns `0` if the `string` is not considered as a valid number. For this exercise **non-valid `string` chains will be tested**. Some will contain non-digits characters.
+- `Atoi` returns `0` if the `string` is not considered as a valid number. For this exercise **non-valid `string` chains will be tested**. Some will contain non-digits characters.
 
--   For this exercise the handling of the signs + or - **does have** to be taken into account.
+- For this exercise the handling of the signs + or - **does have** to be taken into account.
 
--   This function will **only** have to return the `int`. For this exercise the `error` result of atoi is not required.
+- This function will **only** have to return the `int`. For this exercise the `error` result of atoi is not required.
 
 ### Expected function
 
@@ -164,15 +164,15 @@ student@ubuntu:~/[[ROOT]]/test$
 
 ### Instructions
 
--   Write a function that prints all possible combinations of **n** different digits in ascending order.
+- Write a function that prints all possible combinations of **n** different digits in ascending order.
 
--   n will be defined as : 0 < n < 10
+- n will be defined as : 0 < n < 10
 
 below are your references for the **printing format** expected.
 
--   (for n = 1) '0, 1, 2, 3, ...8, 9'
+- (for n = 1) '0, 1, 2, 3, ...8, 9'
 
--   (for n = 3) '012, 013, 014, 015, 016, 017, 018, 019, 023,...689, 789'
+- (for n = 3) '012, 013, 014, 015, 016, 017, 018, 019, 023,...689, 789'
 
 ### Expected function
 
@@ -226,9 +226,9 @@ If the base is not valid, the function prints `NV` (Not Valid):
 
 Validity rules for a base :
 
--   A base must contain at least 2 characters.
--   Each character of a base must be unique.
--   A base should not contain `+` or `-` characters.
+- A base must contain at least 2 characters.
+- Each character of a base must be unique.
+- A base should not contain `+` or `-` characters.
 
 The function has to manage negative numbers. (as shown in the example)
 
@@ -356,9 +356,9 @@ If the base or the `string` number is not valid it returns `0`:
 
 Validity rules for a base :
 
--   A base must contain at least 2 characters.
--   Each character of a base must be unique.
--   A base should not contain `+` or `-` characters.
+- A base must contain at least 2 characters.
+- Each character of a base must be unique.
+- A base should not contain `+` or `-` characters.
 
 Only valid `string` numbers will be tested.
 
@@ -405,6 +405,7 @@ student@ubuntu:~/[[ROOT]]/test$ ./test
 0
 student@ubuntu:~/[[ROOT]]/test$
 ```
+
 ---
 
 ## splitwhitespaces
@@ -662,23 +663,23 @@ student@ubuntu:~/[[ROOT]]/test$
 
 Write a program that has the same behaviour as the system's `cat` command-line.
 
--   The `options` do not have to be handled.
+- The `options` do not have to be handled.
 
--   If the program is called without arguments it should take the `input` and print it back (as shown with the "Hello" example below).
+- If the program is called without arguments it should take the `input` and print it back (as shown with the "Hello" example below).
 
--   In the program folder create two files named `quest8.txt` and `quest8T.txt`.
+- In the program folder create two files named `quest8.txt` and `quest8T.txt`.
 
--   Copy to the `quest8.txt` file the following sentence :
+- Copy to the `quest8.txt` file the following sentence :
 
 `"Programming is a skill best acquired by practice and example rather than from books" by Alan Turing`
 
--   Copy to the `quest8T.txt` file the following sentence :
+- Copy to the `quest8T.txt` file the following sentence :
 
 `"Alan Mathison Turing was an English mathematician, computer scientist, logician, cryptanalyst. Turing was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer. Turing is widely considered to be the father of theoretical computer science and artificial intelligence."`
 
--   In case of error the program should print the error.
+- In case of error the program should print the error.
 
--   The program must be submitted inside a folder named `cat`.
+- The program must be submitted inside a folder named `cat`.
 
 ```console
 student@ubuntu:~/[[ROOT]]/cat$ go build
@@ -713,15 +714,15 @@ student@ubuntu:~/[[ROOT]]/cat$
 
 Write a program called `ztail` that has the same behaviour as the system command `tail`, but which takes at least one file as argument.
 
--   The only option to be handled is `-c`. This option will be used in all tests.
+- The only option to be handled is `-c`. This option will be used in all tests.
 
--   For this program the "os" package can be used.
+- For this program the "os" package can be used.
 
--   For the program to pass the tests the convention for the return code of program in Unix systems should be followed (see os.Exit).
+- For the program to pass the tests the convention for the return code of program in Unix systems should be followed.
 
--   Handle the errors and output the same error messages as `tail`.
+- Handle the errors and output the same error messages as `tail`.
 
--   For more information consult the man page for `tail`.
+- For more information consult the man page for `tail`.
 
 ### Note:
 
@@ -786,7 +787,7 @@ student@ubuntu:~/[[ROOT]]/test$
 
 Write a function `SortListInsert` that inserts `data_ref` in the linked list `l` while keeping the list sorted in ascending order.
 
--   During the tests the list passed as an argument will be already sorted.
+- During the tests the list passed as an argument will be already sorted.
 
 ### Expected function and structure
 
@@ -870,7 +871,7 @@ student@ubuntu:~/[[ROOT]]/test$
 
 Write a function `SortedListMerge` that merges two lists `n1` and `n2` in ascending order.
 
--   During the tests `n1` and `n2` will already be initially sorted.
+- During the tests `n1` and `n2` will already be initially sorted.
 
 ### Expected function and structure
 

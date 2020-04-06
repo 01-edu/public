@@ -4,7 +4,7 @@
 
 Write a program called `rn`. The objective is to convert a number, given as an argument, into a roman number and print it with its roman number calculation.
 
-The program should have a limit of `4000`. In case of an invalid number, for example `"hello"` or  `0` the program should print `ERROR: can not convert to roman digit`.
+The program should have a limit of `4000`. In case of an invalid number, for example `"hello"` or `0` the program should print `ERROR: can not convert to roman digit`.
 
 Roman Numerals reminder:
 

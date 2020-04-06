@@ -7,7 +7,7 @@ For this exercise a function will be tested **with the exam own main**. However 
 This means that:
 
 - The package needs to be named `package main`.
-- The submitted code needs one declared function main(```func main()```) even if empty.
+- The submitted code needs one declared function main(`func main()`) even if empty.
 - The function main declared needs to **also pass** the `Restrictions Checker`(illegal functions tester). It is advised for the student to just empty the function main after its own testings are done.
 - Every other rules are obviously the same than for a `program`.
 
@@ -15,9 +15,9 @@ This means that:
 
 Write a **function** that replicates the javascript function `slice`.
 
-The function receives an array of strings and one or more integers, and returns an array of strings. The returned array is part of the received one but cut from the position indicated in the first int, until the position indicated by the second int. 
+The function receives an array of strings and one or more integers, and returns an array of strings. The returned array is part of the received one but cut from the position indicated in the first int, until the position indicated by the second int.
 
-In case there only exists one int, the resulting array begins in the position indicated by the int and ends at the end of the received array.  
+In case there only exists one int, the resulting array begins in the position indicated by the int and ends at the end of the received array.
 
 The ints can be lower than 0.
 
@@ -29,8 +29,7 @@ func Slice(arr []string, nbrs... int) []string{
 }
 ```
 
-
-### Usage 
+### Usage
 
 Here is a possible program to test your function :
 

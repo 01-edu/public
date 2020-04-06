@@ -5,6 +5,7 @@
 You must follow the same [principles](https://public.01-edu.org/subjects/ascii-art-web/ascii-art-web.en) as the first subject.
 
 - For this project you must create at least :
+
   - one Dockerfile
   - one image
   - one container

@@ -4,7 +4,7 @@
 
 Écrire une fonction `ListMerge` qui place les éléments d'une liste `l2` à la fin d'une autre liste `l1`.
 
--   Des nouveaux éléments ne doivent pas être créés!
+- Des nouveaux éléments ne doivent pas être créés!
 
 ### Fonction et structure attendues
 
