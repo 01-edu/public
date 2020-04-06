@@ -35,6 +35,7 @@ Error
 ###### Does it display a valid solution and less than 12 instructions?
 
 ##### Try to run `"./push_swap <5 random numbers>"` with 5 different random numbers instead of the tag.
+
 ###### Does it still displays a valid solution and less than 12 instructions?
 
 ##### Try to run `"./checker "` and input nothing.
@@ -72,6 +73,8 @@ OK
 ```
 
 ###### Does it display the right result as above?
+
+###### As an auditor, is this project up to every standard? If not, why are you failing the project?(Empty Work, Incomplete Work, Invalid compilation, Cheating, Crashing, Leaks)
 
 #### General
 

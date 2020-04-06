@@ -7,6 +7,7 @@
 ###### Is data from the relations being used?
 
 ##### Try to see the "members" for the artist/band `"Queen"`
+
 ```
     "Freddie Mercury",
     "Brian May",
@@ -16,15 +17,19 @@
     "Barry Mitchell",
     "Doug Fogie"
 ```
+
 ###### Does it present the right "member", as above?
 
 ##### Try to see the "firstAlbum" for the artist/band `"Gorillaz"`
+
 ```
     "26-03-2001"
 ```
+
 ###### Does it present the right date for the "firstAlbum", as above?
 
 ##### Try to see the "locations" for the artist/band `"Travis Scott"`
+
 ```
     "santiago-chile"
     "sao_paulo-usa"
@@ -37,9 +42,11 @@
     "frauenfeld-switzerland"
     "turku-finland"
 ```
+
 ###### Does it present the right "locations" as above?
 
 ##### Try to see the ""members"" for the artist/band `"Foo Fighters"`.
+
 ```
     "Dave Grohl"
     "Nate Mendel"
@@ -48,9 +55,11 @@
     "Pat Smear"
     "Rami Jaffee"
 ```
+
 ###### Does it present the right members as above?
 
 ##### Try to trigger an event using some kind of action (ex: Clicking the mouse over a certain element, pressing a key on the keyboard, resizing or closing the browser window, a form being submitted, an error occurring, etc).
+
 ###### Does the event responds as expected?
 
 ###### Did the server behaved as expected?(did not crashed)
@@ -68,6 +77,8 @@
 ###### Is the communication between server and client well established?
 
 ###### Does the server present all the needed handlers and patterns for the http requests?
+
+###### As an auditor, is this project up to every standard? If not, why are you failing the project?(Empty Work, Incomplete Work, Invalid compilation, Cheating, Crashing, Leaks)
 
 #### General
 

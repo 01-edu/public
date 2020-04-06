@@ -38,6 +38,8 @@
 
 ###### Can you confirm that it is possible?
 
+##### As an auditor, is this project up to every standard? If not, why are you failing the project?(Empty Work, Incomplete Work, Invalid compilation, Cheating, Crashing, Leaks)
+
 #### General
 
 ###### +Does the project present more then 4 types of users?

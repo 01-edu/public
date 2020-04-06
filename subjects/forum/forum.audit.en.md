@@ -156,6 +156,8 @@ cc8f5dcf760f        <name of the image>    "./server"               6 seconds ag
 
 ###### Are only the allowed packages being used?
 
+###### As an auditor, is this project up to every standard? If not, why are you failing the project?(Empty Work, Incomplete Work, Invalid compilation, Cheating, Crashing, Leaks)
+
 #### General
 
 ###### +Does the project present a script to build the images and containers? (using a script to simplify the build)

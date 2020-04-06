@@ -3,9 +3,11 @@
 ###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
 
 ##### Try to export the file.
+
 ###### Does the exported file matches the output?
 
 ##### Try to open and change the exported file.
+
 ###### Are the exported files read and write for the user?
 
 ###### Does the project use the HTTP header [Content-Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) to indicate the media type of the resource?
@@ -15,6 +17,8 @@
 ###### Does the project use the HTTP header [Content-Disposition](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) to download the files?
 
 ###### Does the site has a clear button/link to download/export the file?
+
+###### As an auditor, is this project up to every standard? If not, why are you failing the project?(Empty Work, Incomplete Work, Invalid compilation, Cheating, Crashing, Leaks)
 
 #### Basic
 

@@ -5,6 +5,7 @@
 ###### Is [geocoding](https://developers.google.com/maps/documentation/geocoding/intro) API being used to converting addresses into geographic coordinates?
 
 ##### Try to input `"Queen"` to see the concerts locations.
+
 ```
 north carolina usa
 los angeles usa,
@@ -15,18 +16,22 @@ saitama japan,
 dunedin new zealand,
 georgia usa
 ```
+
 ###### Are the markers displayed in the locations above?
 
 ##### Try to input `"ACDC"` to see the concerts locations.
+
 ```
 dusseldorf germany,
 manchester uk,
 new york usa,
 aarhus denmark
 ```
+
 ###### Are the markers displayed in the locations above?
 
 ##### Try to input `"Imagine Dragons"` to see the concerts locations.
+
 ```
 berlin germany,
 quebec canada,
@@ -41,9 +46,11 @@ riyadh saudi arabia,
 california usa,
 canton usa
 ```
+
 ###### Are the markers displayed in the locations above?
 
 ##### Try to input `"Guns N' Roses"` to see the concerts locations.
+
 ```
 inglewood usa
 los angeles usa,
@@ -54,9 +61,11 @@ charlotte usa,
 chicago usa,
 houston usa
 ```
+
 ###### Are the markers displayed in the locations above?
 
 ##### Try to input `"Post Malone"` to see the concerts locations.
+
 ```
 philadelphia usa,
 uniondale usa,
@@ -74,9 +83,11 @@ omaha usa,
 st louis usa,
 newark usa
 ```
+
 ###### Are the markers displayed in the locations above?
 
 ##### Try to input `"Red Hot Chili Peppers"` to see the concerts locations.
+
 ```
 landgraaf netherlands,
 los angeles usa,
@@ -87,7 +98,10 @@ california usa,
 florence italia,
 alabama usa
 ```
+
 ###### Are the markers displayed in the locations above?
+
+###### As an auditor, is this project up to every standard? If not, why are you failing the project?(Empty Work, Incomplete Work, Invalid compilation, Cheating, Crashing, Leaks)
 
 #### General
 

@@ -66,6 +66,8 @@
 
 ###### Does it display the expected result?
 
+###### As an auditor, is this project up to every standard? If not, why are you failing the project?(Empty Work, Incomplete Work, Invalid compilation, Cheating, Crashing, Leaks)
+
 #### Basic
 
 ###### +Does the project runs quickly and effectively (Favoring of recursive, no unnecessary data requests, etc.)?
