@@ -8,6 +8,6 @@
 
 - Pour ce programme le package "os" peut être utilisé.
 
-- Pour que le programme passe les tests la convention pour le retour code de programme en systémes Unix devra être suivi(voir os.Exit).
+- Pour que le programme passe les tests la convention pour le retour code de programme en systémes Unix devra être suivi.
 
 - Pour plus d'informtations consulter la page du man de `tail`.
