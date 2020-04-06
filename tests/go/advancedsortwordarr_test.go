@@ -32,7 +32,7 @@ func TestAdvancedSortWordArr(t *testing.T) {
 		student.AdvancedSortWordArr(cp_stu, solutions.CompArray)
 
 		if !reflect.DeepEqual(cp_stu, cp_sol) {
-			t.Errorf("%s(%v) == %v instead of %v\n",
+			t.Fatalf("%s(%v) == %v instead of %v\n",
 				"AdvancedSortWordArr",
 				org,
 				cp_stu,

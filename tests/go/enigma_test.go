@@ -45,25 +45,25 @@ func TestEnigma(t *testing.T) {
 	solutions.Decript(a, b, c, d)
 
 	if aval != ***a {
-		t.Errorf("Expected ***a = %d instead of %d\n",
+		t.Fatalf("Expected ***a = %d instead of %d\n",
 			aval,
 			***a,
 		)
 	}
 	if bval != *b {
-		t.Errorf("Expected *b = %d instead of %d\n",
+		t.Fatalf("Expected *b = %d instead of %d\n",
 			bval,
 			*b,
 		)
 	}
 	if cval != *******c {
-		t.Errorf("Expected *******c = %d instead of %d\n",
+		t.Fatalf("Expected *******c = %d instead of %d\n",
 			cval,
 			*******c,
 		)
 	}
 	if dval != ****d {
-		t.Errorf("Expected ****d = %d instead of %d\n",
+		t.Fatalf("Expected ****d = %d instead of %d\n",
 			dval,
 			****d,
 		)

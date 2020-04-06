@@ -64,17 +64,17 @@ func compareNodes(t *testing.T, stuResult *stuNode, solResult *solNode, num1 int
 
 	} else if stuResult != nil && solResult == nil {
 		stuNum := stuListToNum(stuResult)
-		t.Errorf("\nReverse(%d) == %v instead of %v\n\n",
+		t.Fatalf("\nReverse(%d) == %v instead of %v\n\n",
 			num1, stuNum, "")
 	} else if stuResult == nil && solResult != nil {
 		solNum := solListToNum(solResult)
-		t.Errorf("\nReverse(%d) == %v instead of %v\n\n",
+		t.Fatalf("\nReverse(%d) == %v instead of %v\n\n",
 			num1, "", solNum)
 	} else {
 		stuNum := stuListToNum(stuResult)
 		solNum := solListToNum(solResult)
 		if stuNum != solNum {
-			t.Errorf("\nReverse(%d) == %v instead of %v\n\n",
+			t.Fatalf("\nReverse(%d) == %v instead of %v\n\n",
 				num1, stuNum, solNum)
 		}
 	}

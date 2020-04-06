@@ -12,19 +12,19 @@ func TestPrintProgramName(t *testing.T) {
 		strings.TrimPrefix(t.Name(), "Test"))
 	out, err1 := z01.MainOut("./student/printprogramname")
 	if err1 != nil {
-		t.Errorf(err1.Error())
+		t.Fatalf(err1.Error())
 	}
 
 	correct, err2 := z01.MainOut("./solutions/printprogramname")
 
 	if err2 != nil {
-		t.Errorf(err2.Error())
+		t.Fatalf(err2.Error())
 	}
 
 	arrOut := strings.Split(out, "/")
 	ArrCor := strings.Split(correct, "/")
 	if ArrCor[len(ArrCor)-1] != arrOut[len(arrOut)-1] {
-		t.Errorf("./%s prints %q instead of %q\n",
+		t.Fatalf("./%s prints %q instead of %q\n",
 			exercise, arrOut[len(arrOut)-1], ArrCor[len(ArrCor)-1])
 	}
 }

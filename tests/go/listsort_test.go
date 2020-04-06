@@ -51,11 +51,11 @@ func nodePushBackListInt12(l *NodeI12, l1 *NodeIS12, data int) {
 func comparFuncNodeInt12(l *NodeI12, l1 *NodeIS12, t *testing.T) {
 	for l != nil || l1 != nil {
 		if (l == nil && l1 != nil) || (l != nil && l1 == nil) {
-			t.Errorf("\nstudent list:%s\nlist:%s\n\nListSort() == %v instead of %v\n\n",
+			t.Fatalf("\nstudent list:%s\nlist:%s\n\nListSort() == %v instead of %v\n\n",
 				printListStudent(l), solution.PrintList(l1), l, l1)
 			return
 		} else if l.Data != l1.Data {
-			t.Errorf("\nstudent list:%s\nlist:%s\n\nListSort() == %v instead of %v\n\n",
+			t.Fatalf("\nstudent list:%s\nlist:%s\n\nListSort() == %v instead of %v\n\n",
 				printListStudent(l), solution.PrintList(l1), l.Data, l1.Data)
 			return
 		}

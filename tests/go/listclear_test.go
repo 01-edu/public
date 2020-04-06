@@ -77,7 +77,7 @@ func TestListClear(t *testing.T) {
 		student.ListClear(link2)
 
 		if link2.Head != nil {
-			t.Errorf("\nstudent list:%s\nlist:%s\n\nListClear() == %v instead of %v\n\n",
+			t.Fatalf("\nstudent list:%s\nlist:%s\n\nListClear() == %v instead of %v\n\n",
 				listToStringStu5(link2), solution.ListToString(link.Head), link2.Head, link.Head)
 		}
 	}

@@ -55,11 +55,11 @@ func nodepushback2(l *NodeIS14, data int) *NodeIS14 {
 func comparFuncNodeInt14(l *NodeI14, l1 *NodeIS14, t *testing.T, data []int) {
 	for l != nil || l1 != nil {
 		if (l == nil && l1 != nil) || (l != nil && l1 == nil) {
-			t.Errorf("\ndata used to insert: %d\nstudent list:%s\nlist:%s\n\nSortListInsert() == %v instead of %v\n\n",
+			t.Fatalf("\ndata used to insert: %d\nstudent list:%s\nlist:%s\n\nSortListInsert() == %v instead of %v\n\n",
 				data, listToStringStu3(l), solution.PrintList(l1), l, l1)
 			return
 		} else if l.Data != l1.Data {
-			t.Errorf("\ndata used to insert: %d\nstudent list:%s\nlist:%s\n\nSortListInsert() == %v instead of %v\n\n",
+			t.Fatalf("\ndata used to insert: %d\nstudent list:%s\nlist:%s\n\nSortListInsert() == %v instead of %v\n\n",
 				data, listToStringStu3(l), solution.PrintList(l1), l.Data, l1.Data)
 			return
 		}

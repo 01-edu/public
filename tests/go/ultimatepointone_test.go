@@ -12,6 +12,6 @@ func TestUltimatePointOne(t *testing.T) {
 	n := &b
 	student.UltimatePointOne(&n)
 	if a != 1 {
-		t.Errorf("UltimatePointOne(&n), a == %d instead of 1", a)
+		t.Fatalf("UltimatePointOne(&n), a == %d instead of 1", a)
 	}
 }

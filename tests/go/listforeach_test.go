@@ -56,11 +56,11 @@ func comparFuncList7(l *List7, l1 *ListS7, t *testing.T, f func(*Node7)) {
 	funcName := solution.GetName(f)
 	for l.Head != nil || l1.Head != nil {
 		if (l.Head == nil && l1.Head != nil) || (l.Head != nil && l1.Head == nil) {
-			t.Errorf("\nstudent list: %s\nlist: %s\nfunction used: %s\n\nListForEach() == %v instead of %v\n\n",
+			t.Fatalf("\nstudent list: %s\nlist: %s\nfunction used: %s\n\nListForEach() == %v instead of %v\n\n",
 				listToStringStu8(l1), solution.ListToString(l.Head), funcName, l1.Head, l.Head)
 			return
 		} else if l.Head.Data != l1.Head.Data {
-			t.Errorf("\nstudent list: %s\nlist: %s\nfunction used: %s\n\nListForEach() == %v instead of %v\n\n",
+			t.Fatalf("\nstudent list: %s\nlist: %s\nfunction used: %s\n\nListForEach() == %v instead of %v\n\n",
 				listToStringStu8(l1), solution.ListToString(l.Head), funcName, l1.Head.Data, l.Head.Data)
 			return
 		}

@@ -83,7 +83,7 @@ func formatSubTree_rotleft(root *student.TreeNode, prefix string) string {
 }
 
 func errorMessage_rotleft(t *testing.T, fn interface{}, rootOr, root *solutions.TreeNode, rootS *student.TreeNode) {
-	t.Errorf("%s(\n%s\n)\n == \n%s instead of \n%s\n",
+	t.Fatalf("%s(\n%s\n)\n == \n%s instead of \n%s\n",
 		z01.NameOfFunc(fn),
 		solutions.FormatTree(rootOr),
 		FormatTree_rotleft(rootS),
@@ -96,7 +96,7 @@ func CompareTreesRotLeft(t *testing.T, fn interface{}, root, rootA *solutions.Tr
 	parentStu := parentListRotLeft(rootAS)
 	solTree := solutions.FormatTree(root)
 	if parentSol != parentStu {
-		t.Errorf("Tree:\n%s\nExpected\n%s instead of\n%s\n", solTree, parentSol, parentStu)
+		t.Fatalf("Tree:\n%s\nExpected\n%s instead of\n%s\n", solTree, parentSol, parentStu)
 	}
 }
 
@@ -122,7 +122,7 @@ func CompareReturn_rotleft(t *testing.T, fn1, fn2, rootOr, arg1, arg2 interface{
 			CompareNode_rotleft(t, fn1, rootOr.(*solutions.TreeNode), str, out2.Results[i].(*student.TreeNode))
 		default:
 			if !reflect.DeepEqual(str, out2.Results[i]) {
-				t.Errorf("%s(%s) == %s instead of %s\n",
+				t.Fatalf("%s(%s) == %s instead of %s\n",
 					z01.NameOfFunc(fn1),
 					z01.Format(arg1),
 					z01.Format(out2.Results...),

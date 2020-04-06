@@ -87,17 +87,17 @@ func compareNodes(t *testing.T, stuResult *stuNode, solResult *solNode, num1, nu
 
 	} else if stuResult != nil && solResult == nil {
 		stuNum := stuNodeString(stuResult)
-		t.Errorf("\nAddLinkedNumbers(%v, %v) == %v instead of %v\n\n",
+		t.Fatalf("\nAddLinkedNumbers(%v, %v) == %v instead of %v\n\n",
 			num1, num2, stuNum, "")
 	} else if stuResult == nil && solResult != nil {
 		solNum := solNodeString(solResult)
-		t.Errorf("\nAddLinkedNumbers(%v, %v) == %v instead of %v\n\n",
+		t.Fatalf("\nAddLinkedNumbers(%v, %v) == %v instead of %v\n\n",
 			num1, num2, "", solNum)
 	} else {
 		stuNum := stuNodeString(stuResult)
 		solNum := solNodeString(solResult)
 		if stuNum != solNum {
-			t.Errorf("\nAddLinkedNumbers(%v, %v) == %v instead of %v\n\n",
+			t.Fatalf("\nAddLinkedNumbers(%v, %v) == %v instead of %v\n\n",
 				num1, num2, stuNum, solNum)
 		}
 	}

@@ -70,7 +70,7 @@ func TestListLast(t *testing.T) {
 		aux1 := student.ListLast(link2)
 
 		if aux != aux1 {
-			t.Errorf("\nlist:%s\n\nListLast() == %v instead of %v\n\n",
+			t.Fatalf("\nlist:%s\n\nListLast() == %v instead of %v\n\n",
 				listToStringStu9(link2), aux1, aux)
 		}
 		link = &List3{}

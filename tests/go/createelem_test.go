@@ -44,7 +44,7 @@ func TestCreateElem(t *testing.T) {
 		}
 
 		if n.Data != n1.Data {
-			t.Errorf("CreateElem == %d instead of %d\n", n, n1)
+			t.Fatalf("CreateElem == %d instead of %d\n", n, n1)
 		}
 	}
 }

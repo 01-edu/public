@@ -86,7 +86,7 @@ func compareResults(t *testing.T, stuResult, solResult bool, solTree1, solTree2 
 	if stuResult != solResult {
 		tree1 := returnSolTree(solTree1)
 		tree2 := returnSolTree(solTree2)
-		t.Errorf("\nIsSameTree(\"%v\", \"%v\") == \"%v\" instead of \"%v\"\n\n", tree1, tree2, stuResult, solResult)
+		t.Fatalf("\nIsSameTree(\"%v\", \"%v\") == \"%v\" instead of \"%v\"\n\n", tree1, tree2, stuResult, solResult)
 	}
 }
 

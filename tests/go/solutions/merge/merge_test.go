@@ -147,7 +147,7 @@ func compareTrees(t *testing.T, stuResult *stuTreeNode, solResult, solTree1, sol
 		tree2 := returnSolTree(solTree2)
 		stuTree := returnStuTree(stuResult)
 		solTree := returnSolTree(solResult)
-		t.Errorf("\nMergeTrees(\"%v\", \"%v\") == \"%v\" instead of \"%v\"\n\n", tree1, tree2, stuTree, solTree)
+		t.Fatalf("\nMergeTrees(\"%v\", \"%v\") == \"%v\" instead of \"%v\"\n\n", tree1, tree2, stuTree, solTree)
 	}
 }
 

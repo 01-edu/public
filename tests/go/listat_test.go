@@ -42,10 +42,10 @@ func nodePushBackList5(l *Node5, l1 *NodeS5, data interface{}) (*Node5, *NodeS5)
 func comparFuncNode5(solutionList *NodeS5, l *Node5, l1 *NodeS5, t *testing.T, arg int) {
 	if l == nil && l1 == nil {
 	} else if l != nil && l1 == nil {
-		t.Errorf("\nListAt(%s, %d) == %v instead of %v\n\n",
+		t.Fatalf("\nListAt(%s, %d) == %v instead of %v\n\n",
 			solution.ListToString(solutionList), arg, l, l1)
 	} else if l.Data != l1.Data {
-		t.Errorf("\nListAt(%s, %d) == %v instead of %v\n\n",
+		t.Fatalf("\nListAt(%s, %d) == %v instead of %v\n\n",
 			solution.ListToString(solutionList), arg, l.Data, l1.Data)
 	}
 }

@@ -61,11 +61,11 @@ func listPushBackTest11(l *ListS11, l1 *List11, data interface{}) {
 func comparFuncList11(l *List11, l1 *ListS11, t *testing.T) {
 	for l.Head != nil || l1.Head != nil {
 		if (l.Head == nil && l1.Head != nil) || (l.Head != nil && l1.Head == nil) {
-			t.Errorf("\nstudent list:%s\nlist:%s\n\nListMerge() == %v instead of %v\n\n",
+			t.Fatalf("\nstudent list:%s\nlist:%s\n\nListMerge() == %v instead of %v\n\n",
 				listToStringStu(l1), solution.ListToString(l.Head), l1.Head, l.Head)
 			return
 		} else if l.Head.Data != l1.Head.Data {
-			t.Errorf("\nstudent list:%s\nlist:%s\n\nListMerge() == %v instead of %v\n\n",
+			t.Fatalf("\nstudent list:%s\nlist:%s\n\nListMerge() == %v instead of %v\n\n",
 				listToStringStu(l1), solution.ListToString(l.Head), l1.Head.Data, l.Head.Data)
 			return
 		}

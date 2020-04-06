@@ -24,7 +24,7 @@ func CompareReturn(t *testing.T, fn1, fn2, arg1, arg2 interface{}) {
 			CompareNode(t, str, out2.Results[i].(*student.TreeNode))
 		default:
 			if !reflect.DeepEqual(str, out2.Results[i]) {
-				t.Errorf("%s(%s) == %s instead of %s\n",
+				t.Fatalf("%s(%s) == %s instead of %s\n",
 					z01.NameOfFunc(fn1),
 					z01.Format(arg1),
 					z01.Format(out1.Results...),

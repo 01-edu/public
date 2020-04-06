@@ -31,7 +31,7 @@ func TestSortWordArrProg(t *testing.T) {
 		SortWordArr(cp_stu)
 
 		if !reflect.DeepEqual(cp_stu, cp_sol) {
-			t.Errorf("%s(%v) == %v instead of %v\n",
+			t.Fatalf("%s(%v) == %v instead of %v\n",
 				"SortWordArr",
 				org,
 				cp_stu,
