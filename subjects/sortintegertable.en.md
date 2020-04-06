@@ -2,7 +2,7 @@
 
 ### Instructions
 
--   Write a function that reorder an array of `int` in ascending order.
+- Write a function that reorder an array of `int` in ascending order.
 
 ### Expected function
 
@@ -14,7 +14,7 @@ func SortIntegerTable(table []int) {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main

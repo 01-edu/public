@@ -2,9 +2,9 @@
 
 ### Instructions
 
--   Écrire une fonction qui inverse une chaîne de caractères(`string`).
+- Écrire une fonction qui inverse une chaîne de caractères(`string`).
 
--   Cette fonction **retournera** la chaîne de caractères s(`string`).
+- Cette fonction **retournera** la chaîne de caractères s(`string`).
 
 ### Fonction attendue
 
@@ -16,7 +16,7 @@ func StrRev(s string) string {
 
 ### Utilisation
 
-Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
+Voici un éventuel programme pour tester votre fonction :
 
 ```go
 package main

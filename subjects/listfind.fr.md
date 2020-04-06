@@ -4,7 +4,7 @@
 
 Écrire une fonction `ListFind` qui retourne l'adresse de la première node dans la liste `l` qui est déterminée comme étant égale à `ref` par la fonction `CompStr`.
 
--   Pour cet exercice la fonction `CompStr` doit être utilisée.
+- Pour cet exercice la fonction `CompStr` doit être utilisée.
 
 ### Fonction et structure attendues
 
@@ -30,7 +30,7 @@ func ListFind(l *List, ref interface{}, comp func(a, b interface{}) bool) *inter
 
 ### Utilisation
 
-Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
+Voici un éventuel programme pour tester votre fonction :
 
 ```go
 package main

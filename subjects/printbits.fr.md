@@ -4,7 +4,7 @@
 
 Écrire un programme qui prend un nombre en argument, et qui l'affiche en valeur binaire **sans newline à la fin**.
 
--   Si l'argument n'est pas un nombre le programme doit afficher `00000000`.
+- Si l'argument n'est pas un nombre le programme doit afficher `00000000`.
 
 ### Expected output :
 

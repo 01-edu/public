@@ -27,7 +27,7 @@ type NodeAddL struct {
 	Num  int
 }
 
-func AddLinkedNumbers(num1, num1 *NodeAddL) *NodeAddL {
+func AddLinkedNumbers(num1, num2 *NodeAddL) *NodeAddL {
 
 }
 ```
@@ -40,12 +40,11 @@ Here is a possible program to test your function:
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 func pushFront(node *NodeAddL, num int) *NodeAddL {
-	// ...
-	// Write yourself
+
 }
 
 func main() {

@@ -6,9 +6,9 @@
 
 Ce programme doit afficher `true` si le nombre donné est une puissance de 2, autrement il affiche `false`.
 
--   Si il y a plus d'un ou aucun argument le programme doit afficher un retour à la ligne (`'\n'`).
+- Si il y a plus d'un ou aucun argument le programme doit afficher un retour à la ligne (`'\n'`).
 
--   WSi il n'y a qu'un seul argument, ce sera toujours un int positif.
+- WSi il n'y a qu'un seul argument, ce sera toujours un int positif.
 
 ### Usage :
 

@@ -14,7 +14,7 @@ func AdvancedSortWordArr(array []string, f func(a, b string) int) {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main

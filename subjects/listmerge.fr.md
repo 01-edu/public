@@ -26,7 +26,7 @@ func ListMerge(l1 *List, l2 *List) {
 
 ### Utilisation
 
-Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
+Voici un éventuel programme pour tester votre fonction :
 
 ```go
 package main

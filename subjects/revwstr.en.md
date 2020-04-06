@@ -4,11 +4,11 @@
 
 Write a program that takes a `string` as a parameter, and prints its words in reverse.
 
--   A word is a sequence of **alphanumerical** characters.
+- A word is a sequence of **alphanumerical** characters.
 
--   If the number of parameters is different from 1, the program will display newline (`'\n'`).
+- If the number of parameters is different from 1, the program will display newline (`'\n'`).
 
--   In the parameters that are going to be tested, there will not be any extra spaces. (meaning that there will not be additionnal spaces at the beginning or at the end of the `string`and that words will always be separated by exactly one space).
+-   In the parameters that are going to be tested, there will not be any extra spaces. (meaning that there will not be additional spaces at the beginning or at the end of the `string` and that words will always be separated by exactly one space).
 
 ### Usage
 

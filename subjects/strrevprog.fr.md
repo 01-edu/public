@@ -2,7 +2,7 @@
 
 ### Instructions
 
--   Écrire un programme qui inverse une `string` et qui l'affiche dans la sortie standard.
+- Écrire un programme qui inverse une `string` et qui l'affiche dans la sortie standard.
 
 ### Utilisation :
 

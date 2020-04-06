@@ -26,19 +26,18 @@ func TwoSum(nums []int, target int) []int {
 }
 ```
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main
 
 import (
 	"fmt"
-	piscine ".."
 )
 
 func main() {
 	case1 := []int{1, 2, 3, 4}
-	out := piscine.TwoSum(case1, 5)
+	out := TwoSum(case1, 5)
 	fmt.Println(out)
 }
 ```

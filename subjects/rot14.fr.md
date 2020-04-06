@@ -4,7 +4,7 @@
 
 Écrire une fonction `rot14` qui retourne la `string` en paramètre transformée en `string rot14`.
 
--   Il faut savoir ce que `rot13` signifie.
+- Il faut savoir ce que `rot13` signifie.
 
 ### Fonction attendue
 
@@ -16,7 +16,7 @@ func Rot14(str string) string {
 
 ### Utilisation
 
-Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
+Voici un éventuel programme pour tester votre fonction :
 
 ```go
 package main

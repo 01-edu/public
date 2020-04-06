@@ -4,9 +4,9 @@
 
 Écrire un programme qui prend deux `string` et qui affiche, sans doublons, les caractères qui apparaissent dans les deux `string`, dans l'ordre dans lequel ils apparaissent dans la première.
 
--   L'affichage sera suivi d'un retour à la ligne (`'\n'`).
+- L'affichage sera suivi d'un retour à la ligne (`'\n'`).
 
--   Si le nombre d'arguments est différent de 2, le programme affiche un retour à la ligne (`'\n'`).
+- Si le nombre d'arguments est différent de 2, le programme affiche un retour à la ligne (`'\n'`).
 
 ### Utilisation
 

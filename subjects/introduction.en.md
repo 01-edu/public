@@ -29,11 +29,11 @@ ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -N ''
 cat ~/.ssh/id_ed25519.pub
 ```
 
--   Copy the result and paste it in the content field of adding an ssh key in your settings (adapt the link with your username).
+- Copy the result and paste it in the content field of adding an ssh key in your settings (adapt the link with your username).
 
 [https://git.[[DOMAIN]]/choumi/settings/keys](https://git.[[DOMAIN]]/choumi/settings/keys)
 
--   Confirm by clicking on the add key button.
+- Confirm by clicking on the add key button.
 
 Once this is done the git clone command should work now.
 

@@ -4,9 +4,9 @@
 
 Write a function `ListForEach` that applies a function given as argument to the data within each node of the list `l`.
 
--   The function given as argument must have a pointer as argument: `l *List`
+- The function given as argument must have a pointer as argument: `l *List`
 
--   Copy the functions `Add2_node` and `Subtract3_node` in the same file as the function `ListForEach` is defined.
+- Copy the functions `Add2_node` and `Subtract3_node` in the same file as the function `ListForEach` is defined.
 
 ### Expected function and structure
 
@@ -45,7 +45,7 @@ func Subtract3_node(node *NodeL) {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main

@@ -4,7 +4,7 @@
 
 Write a function `ListClear` that deletes all `nodes` from a linked list `l`.
 
--   Tip: assign the list's pointer to `nil`.
+- Tip: assign the list's pointer to `nil`.
 
 ### Expected function and structure
 
@@ -16,7 +16,7 @@ func ListClear(l *List) {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main

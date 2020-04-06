@@ -2,7 +2,7 @@
 
 ### Instructions
 
--   Écrire une fonction qui prend un **pointeur sur int** en argument et qui assignes à cet int la valeur 1.
+- Écrire une fonction qui prend un **pointeur sur int** en argument et qui assignes à cet int la valeur 1.
 
 ### Fonction attendue
 
@@ -14,20 +14,20 @@ func PointOne(n *int) {
 
 ### Utilisation
 
-Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
+Voici un éventuel programme pour tester votre fonction :
 
 ```go
 package main
 
 import (
-    "fmt"
-    piscine ".."
+	"fmt"
+	piscine ".."
 )
 
 func main() {
-    n := 0
-    piscine.PointOne(&n)
-    fmt.Println(n)
+	n := 0
+	piscine.PointOne(&n)
+	fmt.Println(n)
 }
 ```
 

@@ -8,9 +8,9 @@ Si la base n'est pas valide elle retourne `0`:
 
 Règles de validité d'une base :
 
--   Une base doit contenir au moins 2 caractères.
--   Chaque caractère d'une base doit être unique.
--   Une base ne doit pas contenir les caractères `+` ou `-`.
+- Une base doit contenir au moins 2 caractères.
+- Chaque caractère d'une base doit être unique.
+- Une base ne doit pas contenir les caractères `+` ou `-`.
 
 Seuls des nombres en `string` valides seront testés.
 
@@ -26,7 +26,7 @@ func AtoiBase(s string, base string) int {
 
 ### Utilisation
 
-Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
+Voici un éventuel programme pour tester votre fonction :
 
 ```go
 package main

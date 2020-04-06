@@ -2,7 +2,7 @@
 
 ### Instructions
 
--   Write a function that prints one by one the characters of a `string` on the screen.
+- Write a function that prints one by one the characters of a `string` on the screen.
 
 ### Expected function
 
@@ -14,7 +14,7 @@ func PrintStr(str string) {
 
 ### Hints
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main

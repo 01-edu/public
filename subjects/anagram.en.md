@@ -34,23 +34,24 @@ Here is a possible program to test your function:
 
 ```go
 package main
+
 import (
-    piscine ".."
-    "fmt"
+	piscine ".."
+	"fmt"
 )
 
 func main() {
-    test1 := piscine.IsAnagram("listen", "silent")
-    fmt.Println(test1)
+	test1 := piscine.IsAnagram("listen", "silent")
+	fmt.Println(test1)
 
-    test2 := piscine.IsAnagram("alem", "school")
-    fmt.Println(test2)
+	test2 := piscine.IsAnagram("alem", "school")
+	fmt.Println(test2)
 
-    test3 := piscine.IsAnagram("neat", "a net")
-    fmt.Println(test3)
+	test3 := piscine.IsAnagram("neat", "a net")
+	fmt.Println(test3)
 
-    test4 := piscine.IsAnagram("anna madrigal", "a man and a girl")
-    fmt.Println(test4)
+	test4 := piscine.IsAnagram("anna madrigal", "a man and a girl")
+	fmt.Println(test4)
 }
 ```
 

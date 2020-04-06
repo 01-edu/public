@@ -68,7 +68,7 @@ func main() {
 Its output:
 
 ```console
-$> go build
-$> ./main
+$ go build
+$ ./main
 1 -> 3 -> 5 -> 2 -> 4
 ```

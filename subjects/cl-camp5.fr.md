@@ -6,7 +6,7 @@
 
 Créer un fichier `lookagain.sh`, qui cherchera et montrera, dans le répertoire courant et ses sous-répertoires, tous les fichiers qui:
 
--   qui finissent avec `.sh`.
+- qui finissent avec `.sh`.
 
 Cette commande montrera le nom des fichiers sans le`.sh`.
 

@@ -4,7 +4,7 @@
 
 Écrire une fonction `ListClear` qui efface toutes les `nodes` d'une liste chaînée `l`.
 
--   Indice: assigner le pointeur de la liste à `nil`.
+- Indice: assigner le pointeur de la liste à `nil`.
 
 ### Fonction et structure attendues
 
@@ -16,7 +16,7 @@ func ListClear(l *List) {
 
 ### Utilisation
 
-Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
+Voici un éventuel programme pour tester votre fonction :
 
 ```go
 package main

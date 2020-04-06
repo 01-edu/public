@@ -4,7 +4,7 @@
 
 Écrire une fonction `SortedListMerge` qui merge deux listes `n1` et `n2` en ordre ascendant.
 
--   Pendant les tests `n1` et `n2` seront déjà triées.
+- Pendant les tests `n1` et `n2` seront déjà triées.
 
 ### Fonction et structure attendues
 
@@ -16,7 +16,7 @@ func SortedListMerge(n1 *NodeI, n2 *NodeI) *NodeI {
 
 ### Utilisation
 
-Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
+Voici un éventuel programme pour tester votre fonction :
 
 ```go
 package main

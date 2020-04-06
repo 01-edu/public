@@ -24,8 +24,8 @@ Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
 package main
 
 import (
-    "fmt"
-    piscine ".."
+	"fmt"
+	piscine ".."
 )
 
 func main() {

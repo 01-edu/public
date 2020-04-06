@@ -2,7 +2,7 @@
 
 ### Instructions
 
--   Write a program that reverses a `string` and prints it in the standard output.
+- Write a program that reverses a `string` and prints it in the standard output.
 
 ### Expected output :
 

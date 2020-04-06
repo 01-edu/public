@@ -4,11 +4,11 @@
 
 Écrire un programme qui doit:
 
--   Allouer (avec `make`) une slice d'entiers.
+- Allouer (avec `make`) une slice d'entiers.
 
--   Le remplir avec des valeurs consécutives qui commencent au premier argument et qui finissent au deuxième (En incluant les valeurs des deux arguments !)
+- Le remplir avec des valeurs consécutives qui commencent au premier argument et qui finissent au deuxième (En incluant les valeurs des deux arguments !)
 
--   Et qui affiche cette slice.
+- Et qui affiche cette slice.
 
 Les erreurs doivent être gérées.
 

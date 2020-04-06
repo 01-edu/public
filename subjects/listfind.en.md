@@ -4,7 +4,7 @@
 
 Write a function `ListFind` that returns the address of the first node in the list `l` that is determined to be equal to `ref` by the function `CompStr`.
 
--   For this exercise the function `CompStr` must be used.
+- For this exercise the function `CompStr` must be used.
 
 ### Expected function and structure
 
@@ -30,7 +30,7 @@ func ListFind(l *List, ref interface{}, comp func(a, b interface{}) bool) *inter
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main

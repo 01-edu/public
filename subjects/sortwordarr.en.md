@@ -14,7 +14,7 @@ func SortWordArr(array []string) {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main

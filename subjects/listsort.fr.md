@@ -4,7 +4,7 @@
 
 Écrire une fonction `ListSort` qui trie les nodes d'une liste chaînée par ordre croissant.
 
--   La structure `NodeI` sera la seule utilisée.
+- La structure `NodeI` sera la seule utilisée.
 
 ### Fonction et structure attendues
 
@@ -21,7 +21,7 @@ func ListSort(l *NodeI) *NodeI {
 
 ### Utilisation
 
-Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
+Voici un éventuel programme pour tester votre fonction :
 
 ```go
 package main

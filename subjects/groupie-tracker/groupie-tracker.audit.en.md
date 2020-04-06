@@ -26,14 +26,16 @@
 
 ##### Try to see the "locations" for the artist/band `"Travis Scott"`
 ```
-    "las_vegas-usa"
-    "brooklyn-usa"
-    "boston-usa"
-    "washington-usa"
+    "santiago-chile"
+    "sao_paulo-usa"
+    "los_angeles-usa"
+    "houston-usa"
+    "atlanta-usa"
+    "new_orleans-usa"
     "philadelphia-usa"
-    "montreal-canada"
-    "toronto-usa"
-    "new_york-usa"
+    "london-uk"
+    "frauenfeld-switzerland"
+    "turku-finland"
 ```
 ###### Does it present the right "locations" as above?
 
@@ -51,7 +53,7 @@
 ##### Try to trigger an event using some kind of action (ex: Clicking the mouse over a certain element, pressing a key on the keyboard, resizing or closing the browser window, a form being submitted, an error occurring, etc).
 ###### Does the event responds as expected?
 
-###### Did the server crashed?
+###### Did the server behaved as expected?(did not crashed)
 
 ###### Does the server use the right [HTTP method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)?
 
@@ -59,9 +61,9 @@
 
 ###### Are all the pages working? (Absence of 404 page?)
 
-###### Does the project avoid [HTTP status 400](https://kinsta.com/knowledgebase/400-bad-request/#causes)?
+###### Does the project handle [HTTP status 400 - Bad Requests](https://kinsta.com/knowledgebase/400-bad-request/#causes)?
 
-###### Does the project avoid [HTTP status 500](https://www.restapitutorial.com/httpstatuscodes.html)?
+###### Does the project handle [HTTP status 500 - Internal Server Errors](https://www.restapitutorial.com/httpstatuscodes.html)?
 
 ###### Is the communication between server and client well established?
 

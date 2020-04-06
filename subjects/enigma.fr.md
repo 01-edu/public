@@ -5,10 +5,10 @@
 Écrire une fonction nommé `Enigma` qui prends des pointeurs comme arguments et qui interchanges leurs valeurs pour les cacher.
 Cette fonction déplacera :
 
--   `a` dans `c`.
--   `c` dans `d`.
--   `d` dans `b`.
--   `b` dans `a`.
+- `a` dans `c`.
+- `c` dans `d`.
+- `d` dans `b`.
+- `b` dans `a`.
 
 ### Fonction attendue
 
@@ -20,7 +20,7 @@ func Enigma(a ***int, b *int, c *******int, d ****int) {
 
 ### Utilisation
 
-Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
+Voici un éventuel programme pour tester votre fonction :
 
 ```go
 package main

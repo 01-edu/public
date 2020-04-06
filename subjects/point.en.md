@@ -4,11 +4,11 @@
 
 Create a `.go` file.
 
--   The code below has to be copied in that file.
+- The code below has to be copied in that file.
 
--   The necessary changes have to be applied so that the program works.
+- The necessary changes have to be applied so that the program works.
 
--   The program must be submitted inside a folder with the name `point`.
+- The program must be submitted inside a folder with the name `point`.
 
 ### Code to be copied
 

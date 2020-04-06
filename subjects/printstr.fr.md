@@ -2,7 +2,7 @@
 
 ### Instructions
 
--   Écrire une fonction qui affiche un à un les caractères d'une `string` à l'écran.
+- Écrire une fonction qui affiche un à un les caractères d'une `string` à l'écran.
 
 ### Fonction attendue
 
@@ -14,7 +14,7 @@ func PrintStr(str string) {
 
 ### Utilisation
 
-Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
+Voici un éventuel programme pour tester votre fonction :
 
 ```go
 package main

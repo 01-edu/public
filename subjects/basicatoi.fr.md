@@ -2,13 +2,13 @@
 
 ### Instructions
 
--   Écrire une fonction qui reproduit le comportement de la fonction atoi en Go. Atoi transforme un nombre représenté en `string` (chaîne de caractères) en `int` (entier).
+- Écrire une fonction qui reproduit le comportement de la fonction atoi en Go. Atoi transforme un nombre représenté en `string` (chaîne de caractères) en `int` (entier).
 
--   Atoi retourne `0` si la `string` n'est pas considéré un nombre valide. Pour cet exercice **seulement des** `string` **valides** seront testées. Elles ne contiendront que un ou plusieurs chiffres comme charact.
+- Atoi retourne `0` si la `string` n'est pas considéré un nombre valide. Pour cet exercice **seulement des** `string` **valides** seront testées. Elles ne contiendront que un ou plusieurs chiffres comme charact.
 
--   Pour cet exercice la gestion des signes `+` ou `-` ne doit pas être prise en compte.
+- Pour cet exercice la gestion des signes `+` ou `-` ne doit pas être prise en compte.
 
--   Cette fonction aura **seulement** à retourner l'`int` (entier). Pour cet exercice le retour d'erreur d'atoi de go n'est pas demandé.
+- Cette fonction aura **seulement** à retourner l'`int` (entier). Pour cet exercice le retour d'erreur d'atoi de go n'est pas demandé.
 
 ### Fonction attendue
 
@@ -20,7 +20,7 @@ func BasicAtoi(s string) int {
 
 ### Utilisation
 
-Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
+Voici un éventuel programme pour tester votre fonction :
 
 ```go
 package main

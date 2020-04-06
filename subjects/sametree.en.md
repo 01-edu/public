@@ -38,51 +38,52 @@ Example 1:
 
 Input:
 
-          1      
-         / \  
-        2   3  
+          1
+         / \
+        2   3
        
-       [1,2,3]  
+       [1,2,3]
 
-          1      
-         / \  
-        2   3  
-       
-       [1,2,3]  
+          1
+         / \
+        2   3
+
+       [1,2,3]
 
 Output: true
 
 Input:
 
-           1                      
-          /                          
-         2                            
-      
-      [1,2],    
+           1
+          /
+         2
 
-            1  
-             \  
-              2  
-      
-      [1,null,2]  
+      [1,2]
+
+            1
+             \
+              2
+
+      [1,null,2]
 
 Output: false
 
 Input:
 ```
 
-           1  
-          / \                     
-         2   1                  
-        
-        [1,2,1],  
+           1
+          / \
+         2   1
 
-            1  
-           / \  
-          1   2  
-        
-         [1,1,2]  
+        [1,2,1]
+
+            1
+           / \
+          1   2
+
+         [1,1,2]
 ```
+
 Output: false
 
 ### Usage
@@ -93,10 +94,10 @@ Here is a possible program to test your function :
 package main
 
 func main() {
-  t1 := NewRandTree()
-  t2 := NewRandTree()
+	t1 := NewRandTree()
+	t2 := NewRandTree()
 
-  fmt.Println(IsSameTree(t1, t2))
+	fmt.Println(IsSameTree(t1, t2))
 }
 ```
 

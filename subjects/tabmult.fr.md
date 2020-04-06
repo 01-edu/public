@@ -4,7 +4,7 @@
 
 Écrire un programme qui affiche la table de multiplication d'un nombre.
 
--   Le paramètre sera toujours un nombre strictement positif qui rentre dans un `int`. Ce paramètre multiplié par 9 rentrera aussi dans un `int`.
+- Le paramètre sera toujours un nombre strictement positif qui rentre dans un `int`. Ce paramètre multiplié par 9 rentrera aussi dans un `int`.
 
 ### Utilisation
 

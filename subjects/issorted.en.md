@@ -19,7 +19,7 @@ func IsSorted(f func(a, b int) int, tab []int) bool {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function (without `f`):
+Here is a possible program to test your function (without `f`):
 
 ```go
 package main

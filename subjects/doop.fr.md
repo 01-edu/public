@@ -6,9 +6,9 @@
 
 Le programme doit être utilisé avec trois arguments:
 
--   Une valeur
--   Un opérateur
--   Une autre valeur
+- Une valeur
+- Un opérateur
+- Une autre valeur
 
 En cas d'opérateur invalide le programme affiche `0`.
 

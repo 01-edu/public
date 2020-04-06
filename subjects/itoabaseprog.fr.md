@@ -15,8 +15,8 @@ Cela signifie que:
 
 Écrire une fonction qui:
 
--   convertit une valeur `int` en `string` en utilisant la base spécifiée en argument
--   et qui retourne cette `string`
+- convertit une valeur `int` en `string` en utilisant la base spécifiée en argument
+- et qui retourne cette `string`
 
 Cette base est exprimée comme un `int`, de 2 à 16. Les caractères compris dans la base sont les chiffres de 0 à 9, suivis des lettres majuscules de A à F.
 

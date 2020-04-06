@@ -9,13 +9,13 @@ The code will always be valid, with less than 4096 operations.
 
 Every operator consists of a single character :
 
--   '>' increment the pointer
--   '<' decrement the pointer
--   '+' increment the pointed byte
--   '-' decrement the pointed byte
--   '.' print the pointed byte on standard output
--   '[' go to the matching ']' if the pointed byte is 0 (loop start)
--   ']' go to the matching '[' if the pointed byte is not 0 (loop end)
+- '>' increment the pointer
+- '<' decrement the pointer
+- '+' increment the pointed byte
+- '-' decrement the pointed byte
+- '.' print the pointed byte on standard output
+- '[' go to the matching ']' if the pointed byte is 0 (loop start)
+- ']' go to the matching '[' if the pointed byte is not 0 (loop end)
 
 Any other character is a comment.
 

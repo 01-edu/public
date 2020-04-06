@@ -20,18 +20,18 @@ func PrintRoot(root *TreeNode){
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main
 
 func main() {
-     //rootNode initialized with the value "who"
-     //rootNode1 initialized with the value "are"
-     //rootNode2 initialized with the value "you"
-     printRoot(rootNode)
-     printRoot(rootNode1)
-     printRoot(rootNode2)
+	//rootNode initialized with the value "who"
+	//rootNode1 initialized with the value "are"
+	//rootNode2 initialized with the value "you"
+	printRoot(rootNode)
+	printRoot(rootNode1)
+	printRoot(rootNode2)
 }
 ```
 

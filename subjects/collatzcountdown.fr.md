@@ -4,7 +4,7 @@
 
 Écrire une fonction, `CollatzCountdown`, qui retournes le nombre d'étapes nécéssaires pour atteindre 1 en utilisant le comptage de collatz.
 
--   Elle doit renvoyer `-1` si `start` est égal à 0 ou négatif.
+- Elle doit renvoyer `-1` si `start` est égal à 0 ou négatif.
 
 ### Fonction attendue
 
@@ -16,7 +16,7 @@ func CollatzCountdown(start int) int {
 
 ### Utilisation
 
-Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
+Voici un éventuel programme pour tester votre fonction :
 
 ```go
 package main

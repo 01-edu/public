@@ -25,19 +25,18 @@ func StrLen(str string) int {
 
 ### Utilisation
 
-Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
+Voici un éventuel programme pour tester votre fonction :
 
 ```go
 package main
 
 import (
 	"fmt"
-	piscine ".."
 )
 
 func main() {
 	str := "Hello World!"
-	nb := piscine.StrLen(str)
+	nb := StrLen(str)
 	fmt.Println(nb)
 }
 ```

@@ -4,7 +4,7 @@
 
 Write a function `ListSort` that sorts the nodes of a linked list by ascending order.
 
--   The `NodeI` structure will be the only one used.
+- The `NodeI` structure will be the only one used.
 
 ### Expected function and structure
 
@@ -21,7 +21,7 @@ func ListSort(l *NodeI) *NodeI {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main

@@ -66,7 +66,6 @@ Here is a possible program to test your function :
 ```go
 package main
 
-
 func main() {
   mergedTree := &TreeNodeM{}
   t1 := NewRandTree()

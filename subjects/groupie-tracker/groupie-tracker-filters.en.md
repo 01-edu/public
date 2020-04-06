@@ -1,10 +1,10 @@
-## groupie-trackers-filters
+## groupie-tracker-filters
 
 ### Objectives
 
-You must follow the same [principles](https://public.01-edu.org/subjects/groupie-trackers/groupie-trackers.en) as the first subject.
+You must follow the same [principles](https://public.01-edu.org/subjects/groupie-tracker/groupie-tracker.en) as the first subject.
 
-- Groupie Trackers Filters consists on letting the user filter the artists/bands that will be shown.
+- Groupie Tracker Filters consists on letting the user filter the artists/bands that will be shown.
 
 - Your project must incorporate at least these four filters:
   - filter by creation date

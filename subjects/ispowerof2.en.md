@@ -6,9 +6,9 @@ Write a program that determines if a given number is a power of 2.
 
 This program must print `true` if the given number is a power of 2, otherwise it prints `false`.
 
--   If there is more than one or no argument the program should print a newline ("`\n`").
+- If there is more than one or no argument the program should print a newline ("`\n`").
 
--   When there is only 1 argument, it will always be a positive valid int.
+- When there is only 1 argument, it will always be a positive valid int.
 
 ### Usage :
 

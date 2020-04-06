@@ -18,12 +18,12 @@ func PrintWordsTables(table []string) {
 
 ### Utilisation
 
-Voici un éventuel [programme](TODO-LINK) pour tester votre fonction :
+Voici un éventuel programme pour tester votre fonction :
 
 ```go
 package main
 
-import 	piscine ".."
+import piscine ".."
 
 func main() {
 
