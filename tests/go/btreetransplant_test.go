@@ -84,7 +84,7 @@ func formatSubTree_transp(root *student.TreeNode, prefix string) string {
 }
 
 func errorMessage_transp(t *testing.T, fn interface{}, root, sel, repl *solutions.TreeNode, rootA *solutions.TreeNode, rootAS *student.TreeNode) {
-	t.Errorf("%s(\nRoot:\n %s, Selected:\n%s, Replacement:\n%s\n) ==\n%s instead of\n%s\n",
+	t.Fatalf("%s(\nRoot:\n %s, Selected:\n%s, Replacement:\n%s\n) ==\n%s instead of\n%s\n",
 		z01.NameOfFunc(fn),
 		solutions.FormatTree(root),
 		solutions.FormatTree(sel),
@@ -106,7 +106,7 @@ func CompareTrees_transp(t *testing.T, fn interface{}, root, sel, repl *solution
 
 	if parentSol != parentStu {
 		fmt.Println("Tree:\n", solTree)
-		t.Errorf("Expected\n%s instead of\n%s\n", parentSol, parentStu)
+		t.Fatalf("Expected\n%s instead of\n%s\n", parentSol, parentStu)
 	}
 }
 

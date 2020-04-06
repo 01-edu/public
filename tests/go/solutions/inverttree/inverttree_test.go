@@ -160,8 +160,8 @@ func TestInvertTree(t *testing.T) {
 		if ret != 1 {
 			tree1 := returnSolTree(temp)
 			tree2 := returnStuTree(tmp)
-			t.Errorf("\n\"%v\" instead of \"%v\"\n\n", tree1, tree2)
-			// t.Errorf("\nError\n\n")
+			t.Fatalf("\n\"%v\" instead of \"%v\"\n\n", tree1, tree2)
+			// t.Fatalf("\nError\n\n")
 		}
 	}
 }

@@ -58,7 +58,7 @@ func TestListFind(t *testing.T) {
 
 			if aux != nil || aux1 != nil {
 				if *aux != *aux1 {
-					t.Errorf("ListFind(ref: %s) == %s instead of %s\n", arg.Data[(len(arg.Data)-1)/2], *aux, *aux1)
+					t.Fatalf("ListFind(ref: %s) == %s instead of %s\n", arg.Data[(len(arg.Data)-1)/2], *aux, *aux1)
 				}
 			}
 		}
@@ -74,7 +74,7 @@ func TestListFind(t *testing.T) {
 	aux1 := solution.ListFind(link, "lksdf", solution.CompStr)
 	if aux != nil && aux1 != nil {
 		if *aux != *aux1 {
-			t.Errorf("ListFind(ref: lksdf) == %s instead of %s\n", *aux, *aux1)
+			t.Fatalf("ListFind(ref: lksdf) == %s instead of %s\n", *aux, *aux1)
 		}
 	}
 

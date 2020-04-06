@@ -82,7 +82,7 @@ func formatSubTree_insert(root *student.TreeNode, prefix string) string {
 }
 
 func errorMessage_insert(t *testing.T, fn interface{}, inserted string, root *solutions.TreeNode, rootS *student.TreeNode) {
-	t.Errorf("%s(\n%s, %s\n) ==\n%s instead of\n%s\n",
+	t.Fatalf("%s(\n%s, %s\n) ==\n%s instead of\n%s\n",
 		z01.NameOfFunc(fn),
 		solutions.FormatTree(root),
 		inserted,

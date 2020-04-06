@@ -24,7 +24,7 @@ func TestSortIntegerTable(t *testing.T) {
 		student.SortIntegerTable(table)
 		solutions.SortIntegerTable(table2)
 		if !reflect.DeepEqual(table, table2) {
-			t.Errorf("SortIntegerTable(%v), table == %v instead of %v ", tableCopyBefore, table, table2)
+			t.Fatalf("SortIntegerTable(%v), table == %v instead of %v ", tableCopyBefore, table, table2)
 		}
 		i++
 	}

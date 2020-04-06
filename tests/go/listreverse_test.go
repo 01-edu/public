@@ -32,11 +32,11 @@ func listToStringStu13(l *ListS6) string {
 func comparFuncList6(l *List6, l1 *ListS6, t *testing.T) {
 	for l.Head != nil || l1.Head != nil {
 		if (l.Head == nil && l1.Head != nil) || (l.Head != nil && l1.Head == nil) {
-			t.Errorf("\nstudent list:%s\nlist:%s\n\nListReverse() == %v instead of %v\n\n",
+			t.Fatalf("\nstudent list:%s\nlist:%s\n\nListReverse() == %v instead of %v\n\n",
 				listToStringStu13(l1), solution.ListToString(l.Head), l1.Head, l.Head)
 			return
 		} else if l.Head.Data != l1.Head.Data {
-			t.Errorf("\nstudent list:%s\nlist:%s\n\nListReverse() == %v instead of %v\n\n",
+			t.Fatalf("\nstudent list:%s\nlist:%s\n\nListReverse() == %v instead of %v\n\n",
 				listToStringStu13(l1), solution.ListToString(l.Head), l1.Head.Data, l.Head.Data)
 			return
 		}

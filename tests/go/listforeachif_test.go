@@ -87,11 +87,11 @@ func comparFuncList8(l *List8, l1 *ListS8, t *testing.T, f func(*Node8) bool, co
 	funcComp := solution.GetName(comp)
 	for l.Head != nil || l1.Head != nil {
 		if (l.Head == nil && l1.Head != nil) || (l.Head != nil && l1.Head == nil) {
-			t.Errorf("\nstudent list:%s\nlist:%s\nfunction f used: %s\nfunction comp: %s\n\nListForEachIf() == %v instead of %v\n\n",
+			t.Fatalf("\nstudent list:%s\nlist:%s\nfunction f used: %s\nfunction comp: %s\n\nListForEachIf() == %v instead of %v\n\n",
 				listToStringStu7(l1), solution.ListToString(l.Head), funcComp, funcFName, l1.Head, l.Head)
 			return
 		} else if l.Head.Data != l1.Head.Data {
-			t.Errorf("\nstudent list:%s\nlist:%s\nfunction f used: %s\nfunction comp: %s\n\nListForEachIf() == %v instead of %v\n\n",
+			t.Fatalf("\nstudent list:%s\nlist:%s\nfunction f used: %s\nfunction comp: %s\n\nListForEachIf() == %v instead of %v\n\n",
 				listToStringStu7(l1), solution.ListToString(l.Head), funcComp, funcFName, l1.Head.Data, l.Head.Data)
 			return
 		}

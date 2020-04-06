@@ -31,11 +31,11 @@ func listToStringStu11(l *Lista) string {
 func comparFuncList1(l *Lista, l1 *ListSa, t *testing.T, data []interface{}) {
 	for l.Head != nil || l1.Head != nil {
 		if (l.Head == nil && l1.Head != nil) || (l.Head != nil && l1.Head == nil) {
-			t.Errorf("\ndata used: %v\nstudent list:%s\nlist:%s\n\nListPushFront()== %v instead of %v\n\n",
+			t.Fatalf("\ndata used: %v\nstudent list:%s\nlist:%s\n\nListPushFront()== %v instead of %v\n\n",
 				data, listToStringStu11(l), solution.ListToString(l1.Head), l.Head, l1.Head)
 			return
 		} else if l.Head.Data != l1.Head.Data {
-			t.Errorf("\ndata used: %v\nstudent list:%s\nlist:%s\n\nListPushFront()== %v instead of %v\n\n",
+			t.Fatalf("\ndata used: %v\nstudent list:%s\nlist:%s\n\nListPushFront()== %v instead of %v\n\n",
 				data, listToStringStu11(l), solution.ListToString(l1.Head), l.Head, l1.Head)
 			return
 		}

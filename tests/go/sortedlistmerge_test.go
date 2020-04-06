@@ -97,10 +97,10 @@ func TestSortedListMerge(t *testing.T) {
 
 		if aux == nil && aux2 == nil {
 		} else if aux != nil && aux2 == nil {
-			t.Errorf("\nstudent merged lists:%s\nmerged lists:%s\n\nSortListMerge() == %v instead of %v\n\n",
+			t.Fatalf("\nstudent merged lists:%s\nmerged lists:%s\n\nSortListMerge() == %v instead of %v\n\n",
 				printListStudent1(aux), solution.PrintList(aux2), aux, aux2)
 		} else if aux.Data != aux2.Data {
-			t.Errorf("\nstudent merged lists:%s\nmerged lists:%s\n\nSortListMerge() == %v instead of %v\n\n",
+			t.Fatalf("\nstudent merged lists:%s\nmerged lists:%s\n\nSortListMerge() == %v instead of %v\n\n",
 				printListStudent1(aux), solution.PrintList(aux2), aux, aux2)
 		}
 

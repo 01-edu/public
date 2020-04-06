@@ -14,7 +14,7 @@ func challengeBytes(t *testing.T, fn1, fn2 interface{}, args ...interface{}) {
 	st1 := z01.Monitor(fn1, args)
 	st2 := z01.Monitor(fn2, args)
 	if !reflect.DeepEqual(st1.Results, st2.Results) {
-		t.Errorf("%s(%08b) == %08b instead of %08b\n",
+		t.Fatalf("%s(%08b) == %08b instead of %08b\n",
 			z01.NameOfFunc(fn1),
 			args[0].(byte),
 			st1.Results[0].(byte),

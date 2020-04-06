@@ -76,17 +76,17 @@ func compareNodes(t *testing.T, stuResult *stuNode, solResult *solNode, num1 int
 	if stuResult == nil && solResult == nil {
 	} else if stuResult != nil && solResult == nil {
 		stuNum := stuListToNum(stuResult)
-		t.Errorf("\nChangeorder(%s) == %v instead of %v\n\n",
+		t.Fatalf("\nChangeorder(%s) == %v instead of %v\n\n",
 			solList, stuNum, "")
 	} else if stuResult == nil && solResult != nil {
 		solNum := solListToNum(solResult)
-		t.Errorf("\nChangeorder(%s) == %v instead of %v\n\n",
+		t.Fatalf("\nChangeorder(%s) == %v instead of %v\n\n",
 			solList, "", solNum)
 	} else {
 		stuNum := stuListToNum(stuResult)
 		solNum := solListToNum(solResult)
 		if stuNum != solNum {
-			t.Errorf("\nChangeorder(%s) == %v instead of %v\n\n",
+			t.Fatalf("\nChangeorder(%s) == %v instead of %v\n\n",
 				solList, stuNum, solNum)
 		}
 	}

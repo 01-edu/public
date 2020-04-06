@@ -19,7 +19,7 @@ func BTreeMinStu(root *student.TreeNode) *student.TreeNode {
 }
 
 func errorMessage_isbin(t *testing.T, fn interface{}, root, a *solutions.TreeNode, b *student.TreeNode) {
-	t.Errorf("%s(\n%s\n) == %s instead of %s\n",
+	t.Fatalf("%s(\n%s\n) == %s instead of %s\n",
 		z01.NameOfFunc(fn),
 		solutions.FormatTree(root),
 		b.Data,
@@ -29,7 +29,7 @@ func errorMessage_isbin(t *testing.T, fn interface{}, root, a *solutions.TreeNod
 
 func CompareNode_isbin(t *testing.T, fn interface{}, arg1, a *solutions.TreeNode, b *student.TreeNode) {
 	if a == nil || b == nil {
-		t.Errorf("Expected %v instead of %v\n", a, b)
+		t.Fatalf("Expected %v instead of %v\n", a, b)
 		return
 	}
 
@@ -40,28 +40,28 @@ func CompareNode_isbin(t *testing.T, fn interface{}, arg1, a *solutions.TreeNode
 	if a.Parent != nil && b.Parent != nil {
 		if a.Parent.Data != b.Parent.Data {
 			errorMessage_isbin(t, fn, arg1, a, b)
-			t.Errorf("Expected parent value %v instead of %v\n", a.Parent.Data, b.Parent.Data)
+			t.Fatalf("Expected parent value %v instead of %v\n", a.Parent.Data, b.Parent.Data)
 		}
 	} else if (a.Parent == nil && b.Parent != nil) || (a.Parent != nil && b.Parent == nil) {
-		t.Errorf("Expected parent value %v instead of %v\n", a.Parent, b.Parent)
+		t.Fatalf("Expected parent value %v instead of %v\n", a.Parent, b.Parent)
 	}
 
 	if a.Right != nil && b.Right != nil {
 		if a.Right.Data != b.Right.Data {
 			errorMessage_isbin(t, fn, arg1, a, b)
-			t.Errorf("Expected right child value %v instead of %v\n", a.Right.Data, b.Right.Data)
+			t.Fatalf("Expected right child value %v instead of %v\n", a.Right.Data, b.Right.Data)
 		}
 	} else if (a.Right == nil && b.Right != nil) || (a.Right != nil && b.Right == nil) {
-		t.Errorf("Expected right child value %v instead of %v\n", a.Right, b.Right)
+		t.Fatalf("Expected right child value %v instead of %v\n", a.Right, b.Right)
 	}
 
 	if a.Left != nil && b.Left != nil {
 		if a.Left.Data != b.Left.Data {
 			errorMessage_isbin(t, fn, arg1, a, b)
-			t.Errorf("Expected left child value %v instead of %v\n", a.Left, b.Left)
+			t.Fatalf("Expected left child value %v instead of %v\n", a.Left, b.Left)
 		}
 	} else if (a.Left == nil && b.Left != nil) || (a.Left != nil && b.Left == nil) {
-		t.Errorf("Expected left child value %v instead of %v\n", a, b)
+		t.Fatalf("Expected left child value %v instead of %v\n", a, b)
 	}
 }
 
@@ -78,7 +78,7 @@ func CompareReturn_isbin(t *testing.T, fn1, fn2 interface{}, arg1 *solutions.Tre
 			CompareNode_isbin(t, fn1, arg1, str, out2.Results[i].(*student.TreeNode))
 		default:
 			if !reflect.DeepEqual(str, out2.Results[i]) {
-				t.Errorf("%s(\n%s) == %s instead of %s\n",
+				t.Fatalf("%s(\n%s) == %s instead of %s\n",
 					z01.NameOfFunc(fn1),
 					solutions.FormatTree(arg1),
 					z01.Format(out2.Results...),

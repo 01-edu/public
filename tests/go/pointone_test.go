@@ -10,6 +10,6 @@ func TestPointOne(t *testing.T) {
 	n := 0
 	student.PointOne(&n)
 	if n != 1 {
-		t.Errorf("PointOne(&n), n == %d instead of 1", n)
+		t.Fatalf("PointOne(&n), n == %d instead of 1", n)
 	}
 }

@@ -50,7 +50,7 @@ func TestCat(t *testing.T) {
 	pwd, err := os.Getwd()
 
 	if err != nil {
-		t.Errorf(err.Error())
+		t.Fatalf(err.Error())
 	}
 
 	for i := 0; i < 2; i++ {
@@ -61,7 +61,7 @@ func TestCat(t *testing.T) {
 		studentResult := execStdin(cmdS, randStdin)
 
 		if solutionResult != studentResult {
-			t.Errorf("./cat prints %s instead of %s\n", studentResult, solutionResult)
+			t.Fatalf("./cat prints %s instead of %s\n", studentResult, solutionResult)
 		}
 	}
 	execC("rm", "cat_student", "cat_solution")

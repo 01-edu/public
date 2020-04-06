@@ -10,6 +10,6 @@ func CheckFile(t *testing.T, path string) {
 	_, err := os.Stat(path)
 
 	if err != nil {
-		t.Errorf(err.Error())
+		t.Fatalf(err.Error())
 	}
 }

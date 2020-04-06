@@ -41,14 +41,14 @@ func TestCompact(t *testing.T) {
 		stu_size := student.Compact(&sli_stu)
 
 		if !reflect.DeepEqual(sli_stu, sli_sol) {
-			t.Errorf("Produced slice: %v, instead of %v\n",
+			t.Fatalf("Produced slice: %v, instead of %v\n",
 				sli_stu,
 				sli_sol,
 			)
 		}
 
 		if sol_size != stu_size {
-			t.Errorf("%s(%v) == %v instead of %v\n",
+			t.Fatalf("%s(%v) == %v instead of %v\n",
 				"Compact",
 				v,
 				sli_stu,

@@ -17,10 +17,10 @@ func TestDivMod(t *testing.T) {
 		var mod int
 		student.DivMod(a, b, &div, &mod)
 		if div != a/b {
-			t.Errorf("DivMod(%d, %d, &div, &mod), div == %d instead of %d", a, b, div, a/b)
+			t.Fatalf("DivMod(%d, %d, &div, &mod), div == %d instead of %d", a, b, div, a/b)
 		}
 		if mod != a%b {
-			t.Errorf("DivMod(%d, %d, &div, &mod), mod == %d instead of %d", a, b, mod, a%b)
+			t.Fatalf("DivMod(%d, %d, &div, &mod), mod == %d instead of %d", a, b, mod, a%b)
 		}
 		i++
 	}

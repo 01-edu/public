@@ -74,7 +74,7 @@ func compare(t *testing.T, l *solution.Nodelist, l1 *student.Nodelist, f func(a,
 
 	for l1 != nil && l != nil {
 		if l1.Data != l.Data {
-			t.Errorf("\nstudent list:%s\nlist:%s\nfunction cmp:%s\n\nSortListInsert() == %v instead of %v\n\n",
+			t.Fatalf("\nstudent list:%s\nlist:%s\nfunction cmp:%s\n\nSortListInsert() == %v instead of %v\n\n",
 				listToStringStu4(l1), listToString4(l), cmp, l1.Data, l.Data)
 			return
 		}

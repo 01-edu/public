@@ -53,7 +53,7 @@ func TestListSizeProg(t *testing.T) {
 		aux := solution.ListSize(link)
 		aux2 := ListSize(link2)
 		if aux != aux2 {
-			t.Errorf("ListSize(%v) == %d instead of %d\n", solution.ListToString(link.Head), aux2, aux)
+			t.Fatalf("ListSize(%v) == %d instead of %d\n", solution.ListToString(link.Head), aux2, aux)
 		}
 		link = &List2{}
 		link2 = &ListS2{}

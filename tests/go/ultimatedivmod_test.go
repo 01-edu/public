@@ -18,10 +18,10 @@ func TestUltimateDivMod(t *testing.T) {
 		mod := a % b
 		student.UltimateDivMod(&a, &b)
 		if a != div {
-			t.Errorf("DivMod(%d, %d), a == %d instead of %d", aCopy, bCopy, a, div)
+			t.Fatalf("DivMod(%d, %d), a == %d instead of %d", aCopy, bCopy, a, div)
 		}
 		if b != mod {
-			t.Errorf("DivMod(%d, %d), b == %d instead of %d", aCopy, bCopy, b, mod)
+			t.Fatalf("DivMod(%d, %d), b == %d instead of %d", aCopy, bCopy, b, mod)
 		}
 		i++
 	}

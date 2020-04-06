@@ -100,7 +100,7 @@ func ChallengeTree(t *testing.T,
 	st2 := z01.Monitor(fn2, args2)
 
 	if st1.Stdout != st2.Stdout {
-		t.Errorf("%s(\n%s)\n prints %s instead of %s\n",
+		t.Fatalf("%s(\n%s)\n prints %s instead of %s\n",
 			z01.NameOfFunc(fn2),
 			FormatTree(arg1),
 			z01.Format(st2.Stdout),
@@ -124,7 +124,7 @@ func Challenge(t *testing.T, fn1, fn2 interface{}, arg1, arg2 interface{}, args 
 	st2 := z01.Monitor(fn2, args2)
 
 	if st1.Stdout != st2.Stdout {
-		t.Errorf("%s(%s) prints %s instead of %s\n",
+		t.Fatalf("%s(%s) prints %s instead of %s\n",
 			z01.NameOfFunc(fn2),
 			z01.Format(arg2),
 			z01.Format(st2.Stdout),
