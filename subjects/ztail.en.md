@@ -8,7 +8,7 @@ Write a program called `ztail` that has the same behaviour as the system command
 
 - For this program the "os" package can be used.
 
-- For the program to pass the tests the convention for the return code of program in Unix systems should be followed (see os.Exit).
+- For the program to pass the tests the convention for the return code of program in Unix systems should be followed.
 
 - Handle the errors and output the same error messages as `tail`.
 
