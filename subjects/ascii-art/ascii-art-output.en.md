@@ -21,6 +21,10 @@ This project will help you learn about :
 - The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices.en).
 - It is recommended that the code presents a **test file**.
 
+### Allowed packages
+
+- Only the [standard go](https://golang.org/pkg/) packages are allowed
+
 ### Usage
 
 ```console

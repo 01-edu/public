@@ -19,6 +19,10 @@ This project will help you learn about :
 - Ways to receive data.
 - Ways to output data.
 
+### Allowed packages
+
+- Only the [standard go](https://golang.org/pkg/) packages are allowed
+
 ### Instructions
 
 - The web server must export at least in one export format.

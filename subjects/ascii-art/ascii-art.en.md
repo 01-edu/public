@@ -62,6 +62,10 @@ This project will help you learn about :
 etc
 ```
 
+### Allowed packages
+
+- Only the [standard go](https://golang.org/pkg/) packages are allowed
+
 ### Usage
 
 ```console

@@ -1,5 +1,7 @@
 #### Functional
 
+###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
+
 ##### Try passing as argument `"hello"`.
 ```
  _              _   _          
@@ -12,6 +14,7 @@
                                
 ```
 ###### Does it display the right graphical representation in ASCII as above?
+
 ##### Try passing as argument `"HELLO"`.
 ```
  _    _   ______   _        _         ____   
@@ -24,6 +27,7 @@
                                              
 ```
 ###### Does it display the right graphical representation in ASCII as above?
+
 ##### Try passing as argument `"HeLlo HuMaN"`.
 ```
  _    _          _        _                 _    _           __  __           _   _  
@@ -36,6 +40,7 @@
                                                                                      
 ```
 ###### Does it display the right graphical representation in ASCII as above?
+
 ##### Try passing as argument `"1Hello 2There"`.
 ```
      _    _          _   _                         _______   _                           
@@ -48,6 +53,7 @@
                                                                                          
 ```
 ###### Does it display the right graphical representation in ASCII as above?
+
 ##### Try passing as argument `"Hello\nThere"`.
 ```
  _    _          _   _          
@@ -68,6 +74,7 @@
                                        
 ```
 ###### Does it display the right graphical representation in ASCII as above?
+
 ##### Try passing `"{Hello & There #}"` as argument.
 ```
    __  _    _          _   _                                _______   _                                    _  _    __    
@@ -80,6 +87,7 @@
                                                                                                                          
 ```
 ###### Does it display the right graphical representation in ASCII as above?
+
 ##### Try passing `"hello There 1 to 2!"` as argument.
 ```
  _              _   _                 _______   _                                            _                           _  
@@ -92,6 +100,7 @@
                                                                                                                             
 ```
 ###### Does it display the right graphical representation in ASCII as above?
+
 ##### Try passing `"MaD3IrA&LiSboN"` as argument.
 ```
  __  __           _____            _____                              _        _    _____   _               _   _  
@@ -104,6 +113,7 @@
                                                                                                                    
 ```
 ###### Does it display the right graphical representation in ASCII as above?
+
 ##### Try passing `"1a\"#FdwHywR&/()="` as argument.
 ```
              _ _     _  _     ______       _              _    _                      _____                 __   __ __            
@@ -116,6 +126,7 @@
                                                                   |___/                                                           
 ```
 ###### Does it display the right graphical representation in ASCII as above?
+
 ##### Try passing `"{|}~"` as argument.
 ```
    __  _  __     /\/| 
@@ -128,6 +139,7 @@
       |_|             
 ```
 ###### Does it display the right graphical representation in ASCII as above?
+
 ##### Try passing `"[\]^_ 'a"` as argument.
 ```
  ___  __       ___   /\                  _          
@@ -140,6 +152,7 @@
                          |______|                   
 ```
 ###### Does it display the right graphical representation in ASCII as above?
+
 ##### Try passing `"RGB"` as argument.
 ```
  _____     _____   ____   
@@ -152,6 +165,7 @@
                           
 ```
 ###### Does it display the right graphical representation in ASCII as above?
+
 ##### Try passing `":;<=>?@"` as argument.
 ```
            __          __     ___             
@@ -164,6 +178,7 @@
                                               
 ```
 ###### Does it display the right graphical representation in ASCII as above?
+
 ##### Try passing `"\!\" #$%&'()*+,-./"` as argument.
 ```
 __       _   _ _           _  _      _    _   __           _    __ __       _                                   __ 
@@ -176,6 +191,7 @@ __       _   _ _           _  _      _    _   __           _    __ __       _   
                                                                                                                    
 ```
 ###### Does it display the right graphical representation in ASCII as above?
+
 ##### Try passing `"ABCDEFGHIJKLMNOPQRSTUVWXYZ"` as argument.
 ```
             ____     _____   _____    ______   ______    _____   _    _   _____        _   _  __  _        __  __   _   _    ____    _____     ____    _____     _____   _______   _    _  __      __ __          __ __   __ __     __  ______ 
@@ -188,6 +204,7 @@ __       _   _ _           _  _      _    _   __           _    __ __       _   
                                                                                                                                                                                                                                                
 ```
 ###### Does it display the right graphical representation in ASCII as above?
+
 ##### Try passing `"abcdefghijklmnopqrstuvwxyz"` as argument.
 ```
          _                  _           __           _       _     _          _                                                            _                                                    
@@ -216,14 +233,19 @@ __       _   _ _           _  _      _    _   __           _    __ __       _   
 #### Basic
 
 ###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
+
 ###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
 
 ###### +Is there a test file for this code?
+
 ###### +Are the tests checking each possible case?
+
 ###### +Is the output of the program well structured? Does any letter seems to be out of line?
 
 #### Social
 
 ###### +Did you learn anything from this project?
+
 ###### +Can it be open-sourced / be used for other sources?
+
 ###### +Would you recommend/nominate this program as an example for the rest of the school?

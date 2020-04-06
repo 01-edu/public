@@ -1,5 +1,7 @@
 #### Functional
 
+###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
+
 ##### Try to export the file.
 ###### Does the exported file matches the output?
 
@@ -17,12 +19,17 @@
 #### Basic
 
 ###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
+
 ###### +Are the instructions in the website clear?
+
 ###### +Does the project run using an API?
+
 ###### +Can you export in multiple formats?
 
 #### Social
 
 ###### +Did you learn anything from this project?
+
 ###### +Can it be open-sourced / be used for other sources?
+
 ###### +Would you recommend/nominate this program as an example for the rest of the school?

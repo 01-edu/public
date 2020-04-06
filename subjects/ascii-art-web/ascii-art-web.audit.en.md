@@ -1,5 +1,7 @@
 #### Functional
 
+###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
+
 ###### Does the project contain HTML files?
 
 ##### Try inputting with the standard template/banner the following example:
@@ -78,7 +80,9 @@ o-o-o o--o o-o          o   o      o   o-o  | |  o   o
 ###### Is the communication between [server and client](https://www.geeksforgeeks.org/client-server-model/) well established?
 
 ###### Does the server use the right [HTTP method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)?
+
 ###### Has the website runned without crashing at anytime?
+
 ###### Is the server written in Go?
 
 #### General
@@ -88,16 +92,21 @@ o-o-o o--o o-o          o   o      o   o-o  | |  o   o
 #### Basic
 
 ###### +Does the server run quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
+
 ###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
 
 ###### +Is there a test file for this code?
+
 ###### +Are the tests checking each possible case?
 
 ###### +Are the instructions in the website clear?
+
 ###### +Does the project run using an API?
 
 #### Social
 
 ###### +Did you learn anything from this project?
+
 ###### +Can it be open-sourced / be used for other sources?
+
 ###### +Would you recommend/nominate this program as an example for the rest of the school?

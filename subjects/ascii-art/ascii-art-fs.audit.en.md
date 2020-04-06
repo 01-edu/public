@@ -1,5 +1,7 @@
 #### Functional
 
+###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
+
 ##### Try passing as arguments `"hello" standard`
 ```
  _              _   _          

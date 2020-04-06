@@ -1,5 +1,7 @@
 #### Functional
 
+###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
+
 ##### Try to run `"./push_swap"`.
 
 ###### Does it display nothing?
@@ -14,7 +16,7 @@
 
 ##### Try to run `"./push_swap 0 one 2 3"`.
 
-```
+```console
 Error
 ```
 
@@ -22,7 +24,7 @@ Error
 
 ##### Try to run `"./push_swap 1 2 2 3"`.
 
-```
+```console
 Error
 ```
 
@@ -41,7 +43,7 @@ Error
 
 ##### Try to run `"./checker 0 one 2 3"`.
 
-```
+```console
 Error
 ```
 
@@ -49,7 +51,7 @@ Error
 
 ##### Try to run `"echo -e "sa\npb\nrrr\n" | ./checker 0 9 1 8 2 7 3 6 4 5"`.
 
-```
+```console
 KO
 ```
 
@@ -57,7 +59,7 @@ KO
 
 ##### Try to run `"echo -e "pb\nra\npb\nra\nsa\nra\npa\npa\n" | ./checker 0 9 1 8 2"`.
 
-```
+```console
 OK
 ```
 
@@ -65,7 +67,7 @@ OK
 
 ##### Try to run `"ARG = "4 67 3 87 23"; ./push_swap $ARG | ./checker $ARG"`.
 
-```
+```console
 OK
 ```
 
@@ -79,7 +81,7 @@ OK
 
 ##### Try to run `"$ARG= "<100 random numbers>; ./push_swap $ARG | ./checker $ARG"` with the same 100 random different numbers as before instead of the tag.
 
-```
+```console
 OK
 ```
 

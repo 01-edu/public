@@ -1,5 +1,7 @@
 #### Functional
 
+###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
+
 ##### Try passing as arguments `"First\nTest" shadow --output=test00.txt`
 ```
 student$ cat test00.txt
@@ -138,12 +140,17 @@ student$ cat test07.txt
 #### Basic
 
 ###### +Does the project runs quickly and effectively (Favoring of recursive, no unnecessary data requests, etc.)?
+
 ###### +Is the output of the program well structured? Does any letter seems to be out of line?
+
 ###### +Is there a test file for this code?
+
 ###### +Are the tests checking each possible case?
+
 ###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
 
 #### Social
 
 ###### +Did you learn anything from this project?
+
 ###### +Would you recommend/nominate this program as an example for the rest of the school?
