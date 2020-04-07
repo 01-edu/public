@@ -123,7 +123,7 @@ o--o       o--O o-o o--o
 
 ###### Does it save the right output in the right file?
 
-##### Try passing as arguments `"Testing long output!" standard --output=test07.txt`
+##### Try passing as arguments `"Testing      long      output!" standard --output=test07.txt`
 
 ```
 student$ cat test07.txt
