@@ -34,5 +34,4 @@ func Nauuo(plus, minus, rand int) string {
 }
 
 func main() {
-
 }

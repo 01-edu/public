@@ -8,7 +8,6 @@ import (
 )
 
 func TestRotateVowels(t *testing.T) {
-
 	Lower := z01.RuneRange('a', 'z')
 	Upper := z01.RuneRange('A', 'Z')
 	letters := Lower + Upper + " "
@@ -28,5 +27,4 @@ func TestRotateVowels(t *testing.T) {
 	z01.ChallengeMain(t, "happy thoughts", "good luck")
 	z01.ChallengeMain(t, "al's elEphAnt is overly underweight!")
 	z01.ChallengeMain(t, "aEi", "Ou")
-
 }

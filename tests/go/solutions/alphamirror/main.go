@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-
 	if len(os.Args) == 2 {
 		arg := []rune(os.Args[1])
 		for i, ch := range arg {

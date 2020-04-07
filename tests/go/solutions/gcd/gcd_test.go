@@ -16,7 +16,6 @@ func TestGCD(t *testing.T) {
 	args := [][]string{arg1, arg2, arg3, arg4, arg5}
 
 	for i := 0; i < 25; i++ {
-
 		number1 := strconv.Itoa(z01.RandIntBetween(1, 100000))
 		number2 := strconv.Itoa(z01.RandIntBetween(1, 100))
 		args = append(args, []string{number1, number2})

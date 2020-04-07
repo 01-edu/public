@@ -7,6 +7,5 @@ import (
 )
 
 func TestRectangle(t *testing.T) {
-
 	z01.ChallengeMain(t, "")
 }

@@ -11,7 +11,6 @@ type node struct {
 }
 
 func TestNenokku(t *testing.T) {
-
 	table := []node{}
 
 	table = append(table,

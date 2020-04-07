@@ -86,7 +86,6 @@ func ChallengeTree(t *testing.T,
 	fn1, fn2 interface{},
 	arg1 *TreeNode, arg2 interface{},
 	args ...interface{}) {
-
 	args1 := []interface{}{arg1}
 	args2 := []interface{}{arg2}
 
@@ -107,7 +106,6 @@ func ChallengeTree(t *testing.T,
 			z01.Format(st1.Stdout),
 		)
 	}
-
 }
 
 func Challenge(t *testing.T, fn1, fn2 interface{}, arg1, arg2 interface{}, args ...interface{}) {
@@ -131,7 +129,6 @@ func Challenge(t *testing.T, fn1, fn2 interface{}, arg1, arg2 interface{}, args 
 			z01.Format(st1.Stdout),
 		)
 	}
-
 }
 
 func PrintList(n *NodeI) string {

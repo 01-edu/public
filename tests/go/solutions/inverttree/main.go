@@ -23,5 +23,4 @@ func InvertTree(root *TNode) *TNode {
 }
 
 func main() {
-
 }

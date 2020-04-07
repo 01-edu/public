@@ -22,7 +22,6 @@ func drawLineRaid1d(x int, str string) {
 }
 
 func Raid1d(x, y int) {
-
 	if x < 1 || y < 1 {
 		return
 	}

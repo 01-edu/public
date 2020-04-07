@@ -69,7 +69,6 @@ func TestListClear(t *testing.T) {
 	)
 
 	for _, arg := range table {
-
 		for i := 0; i < len(arg.Data); i++ {
 			listPushBackTest4(link2, link, arg.Data[i])
 		}

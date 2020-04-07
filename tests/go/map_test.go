@@ -20,14 +20,12 @@ func TestMap(t *testing.T) {
 	table := []node{}
 
 	for i := 0; i < 15; i++ {
-
 		functionSelected := functionsArray[z01.RandIntBetween(0, len(functionsArray)-1)]
 		val := node{
 			f:   functionSelected,
 			arr: z01.MultRandIntBetween(-1000000, 1000000),
 		}
 		table = append(table, val)
-
 	}
 
 	table = append(table, node{

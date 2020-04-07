@@ -9,7 +9,6 @@ import (
 )
 
 func TestDisplayfile(t *testing.T) {
-
 	var table []string
 	pathFileName := "./student/displayfile/quest8.txt"
 

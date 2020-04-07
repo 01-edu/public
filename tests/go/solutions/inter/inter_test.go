@@ -23,7 +23,6 @@ func TestInter(t *testing.T) {
 
 		table = append(table, strings.Join([]string{str1, str2}, " "))
 		table = append(table, strings.Join([]string{z01.RandAlnum(), z01.RandAlnum()}, " "))
-
 	}
 
 	for _, s := range table {

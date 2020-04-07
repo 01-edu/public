@@ -50,5 +50,4 @@ func TestHalf_contest(t *testing.T) {
 	for _, arg := range table {
 		z01.Challenge(t, Halfcontest, solutions.Halfcontest, arg.h1, arg.m1, arg.h2, arg.m2)
 	}
-
 }

@@ -4,11 +4,10 @@ func CompArray(a, b string) int {
 	if a < b {
 		return -1
 	}
-	if a == b {
-		return 0
-	} else {
+	if a > b {
 		return 1
 	}
+	return 0
 }
 
 func AdvancedSortWordArr(array []string, f func(a, b string) int) {
@@ -17,7 +16,5 @@ func AdvancedSortWordArr(array []string, f func(a, b string) int) {
 			array[i], array[i-1] = array[i-1], array[i]
 			i = 0
 		}
-
 	}
-
 }

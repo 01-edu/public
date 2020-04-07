@@ -7,6 +7,5 @@ import (
 )
 
 func TestFixthemain(t *testing.T) {
-
 	z01.ChallengeMain(t)
 }

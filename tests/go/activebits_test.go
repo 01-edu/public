@@ -18,5 +18,4 @@ func TestActiveBits(t *testing.T) {
 	for _, v := range args {
 		z01.Challenge(t, student.ActiveBits, solutions.ActiveBits, v)
 	}
-
 }

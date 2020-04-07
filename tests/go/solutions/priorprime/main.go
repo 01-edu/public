@@ -24,5 +24,4 @@ func Priorprime(x int) int {
 }
 
 func main() {
-
 }

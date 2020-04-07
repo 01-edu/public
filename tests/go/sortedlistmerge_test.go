@@ -71,7 +71,6 @@ func TestSortedListMerge(t *testing.T) {
 			data2: z01.MultRandInt(),
 		}
 		table = append(table, val)
-
 	}
 	table = append(table,
 		nodeTest{
@@ -108,6 +107,5 @@ func TestSortedListMerge(t *testing.T) {
 		link2 = &NodeI13{}
 		linkTest = &NodeIS13{}
 		linkTest2 = &NodeIS13{}
-
 	}
 }

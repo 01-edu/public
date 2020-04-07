@@ -7,7 +7,6 @@ import (
 )
 
 func result(str1 string, str2 string) string {
-
 	arraystr1 := []rune(str1)
 	arraystr2 := []rune(str2)
 	sizeStr1 := len(arraystr1)
@@ -25,7 +24,6 @@ func result(str1 string, str2 string) string {
 }
 
 func main() {
-
 	if len(os.Args) == 3 {
 		fmt.Println(result(os.Args[1], os.Args[2]))
 	} else {

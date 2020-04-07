@@ -57,7 +57,6 @@ func listToStringStu7(l *ListS8) string {
 }
 
 func listPushBackTest8(l *ListS8, l1 *List8, data interface{}) {
-
 	n := &Node8{Data: data}
 	n1 := &NodeS8{Data: data}
 
@@ -119,7 +118,6 @@ func TestListForEachIf(t *testing.T) {
 			Data: solution.ConvertIntToInterface(z01.MultRandInt()),
 		}
 		table = append(table, val)
-
 	}
 	// just strings
 	for i := 0; i < 3; i++ {

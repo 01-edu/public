@@ -33,5 +33,4 @@ func Fib(n int) int {
 }
 
 func main() {
-
 }

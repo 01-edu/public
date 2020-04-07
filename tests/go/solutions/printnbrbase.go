@@ -19,7 +19,6 @@ func PrintNbrBase(n int, base string) {
 			PrintNbrBase(sign*(n/length), base)
 			z01.PrintRune(rbase[sign*(n%length)])
 		}
-
 	} else {
 		z01.PrintRune('N')
 		z01.PrintRune('V')

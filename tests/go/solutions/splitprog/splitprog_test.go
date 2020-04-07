@@ -11,7 +11,6 @@ import (
 )
 
 func TestSplitProg(t *testing.T) {
-
 	separators := []string{"!=HA=!",
 		"!==!",
 		"    ",

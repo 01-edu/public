@@ -7,7 +7,6 @@ import (
 )
 
 func TestGrouping(t *testing.T) {
-
 	type args struct {
 		first  string
 		second string

@@ -35,7 +35,6 @@ func TestVolumechanger(t *testing.T) {
 		//Once the random node created, this iteration is added to the earlier declared table
 		//along with the 4 specific examples taken from the examples of the readme.
 		table = append(table, value)
-
 	}
 
 	//The table with 4 specific exercises and 15 randoms is now ready to be "challenged"

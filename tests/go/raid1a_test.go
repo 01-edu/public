@@ -9,7 +9,6 @@ import (
 )
 
 func TestRaid1a(t *testing.T) {
-
 	// testing examples of subjects
 	table := []int{
 		5, 3,

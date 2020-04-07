@@ -8,5 +8,4 @@ func FindPrevPrime(nbr int) int {
 		return nbr
 	}
 	return FindPrevPrime(nbr - 1)
-
 }

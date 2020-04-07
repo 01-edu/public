@@ -24,7 +24,6 @@ func errorMessage_search(t *testing.T, fn interface{}, root, a *solutions.TreeNo
 
 func CompareNode_search(t *testing.T, fn interface{}, arg1, a *solutions.TreeNode, b *student.TreeNode,
 	seaVal string) {
-
 	if a == nil && b == nil {
 		return
 	}
@@ -87,5 +86,4 @@ func TestBTreeSearchItem(t *testing.T) {
 		selectedStu := student.BTreeSearchItem(rootS, v)
 		CompareNode_search(t, fn, root, selectedSol, selectedStu, v)
 	}
-
 }

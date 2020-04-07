@@ -12,5 +12,4 @@ func DoppelGanger(big, little string) int {
 }
 
 func main() {
-
 }

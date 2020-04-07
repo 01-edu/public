@@ -9,5 +9,4 @@ func SortWordArr(array []string) {
 }
 
 func main() {
-
 }

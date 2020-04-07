@@ -18,5 +18,4 @@ func Reachablenumber(n int) int {
 }
 
 func main() {
-
 }

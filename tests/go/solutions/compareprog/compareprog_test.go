@@ -35,7 +35,6 @@ func TestCompareProg(t *testing.T) {
 			toCompare: wrongMatch,
 		}
 		table = append(table, val)
-
 	}
 	// those are the test values from the README examples
 	table = append(table,

@@ -23,7 +23,6 @@ func TestIsPrintable(t *testing.T) {
 			r[i] = letters[rand.Intn(len(letters))]
 		}
 		table = append(table, string(r))
-
 	}
 
 	// Special cases added to table

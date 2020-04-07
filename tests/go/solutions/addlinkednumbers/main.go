@@ -36,5 +36,4 @@ func AddLinkedNumbers(num1, num2 *NodeAddL) *NodeAddL {
 }
 
 func main() {
-
 }

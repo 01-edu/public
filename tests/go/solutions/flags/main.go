@@ -59,7 +59,6 @@ func main() {
 			fmt.Println(" ", v.shortenFlag)
 			fmt.Println("	", v.handler)
 		}
-
 	} else if size <= 4 {
 		var str []rune
 		strToInsert := ""

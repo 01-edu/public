@@ -10,7 +10,6 @@ import (
 )
 
 func TestToUpper(t *testing.T) {
-
 	table := z01.MultRandASCII()
 
 	table = append(table,

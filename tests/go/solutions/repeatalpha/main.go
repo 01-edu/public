@@ -15,7 +15,6 @@ func toLowerCase(a rune) rune {
 }
 
 func main() {
-
 	if len(os.Args) > 1 {
 		arg := []rune(os.Args[1])
 		for _, c := range arg {

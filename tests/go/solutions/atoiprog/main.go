@@ -10,5 +10,4 @@ func Atoi(s string) int {
 }
 
 func main() {
-
 }

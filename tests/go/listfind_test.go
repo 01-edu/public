@@ -77,5 +77,4 @@ func TestListFind(t *testing.T) {
 			t.Fatalf("ListFind(ref: lksdf) == %s instead of %s\n", *aux, *aux1)
 		}
 	}
-
 }

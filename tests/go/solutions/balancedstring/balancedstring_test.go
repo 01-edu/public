@@ -7,7 +7,6 @@ import (
 )
 
 func TestBalancedString(t *testing.T) {
-
 	// Declaration of an empty array of type string
 	table := []string{}
 

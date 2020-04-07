@@ -8,7 +8,6 @@ import (
 )
 
 func TestRange(t *testing.T) {
-
 	for i := 0; i < 10; i++ {
 		start := z01.RandIntBetween(-20, 20)
 		end := z01.RandIntBetween(-20, 20)

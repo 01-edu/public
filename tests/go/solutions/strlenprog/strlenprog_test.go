@@ -8,7 +8,6 @@ import (
 )
 
 func TestStrLenProg(t *testing.T) {
-
 	randomStringCharset := "a b c d e f g h ijklmnopqrstuvwxyz A B C D E FGHIJKLMNOPRSTUVWXYZ"
 
 	table := []string{}

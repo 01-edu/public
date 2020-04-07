@@ -35,5 +35,4 @@ func main() {
 		par, _ := strconv.Atoi(os.Args[1])
 		fprime(par)
 	}
-
 }

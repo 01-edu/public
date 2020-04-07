@@ -20,5 +20,4 @@ func MergeTrees(t1 *TreeNodeM, t2 *TreeNodeM) *TreeNodeM {
 }
 
 func main() {
-
 }

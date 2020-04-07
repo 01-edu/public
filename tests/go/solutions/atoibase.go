@@ -22,7 +22,6 @@ func UniqueChar(s string) bool {
 		if InStr(r[i], s[i+1:n]) {
 			return false
 		}
-
 	}
 	return true
 }
@@ -48,7 +47,6 @@ func Power(nbr int, pwr int) int {
 		return nbr
 	}
 	return nbr * Power(nbr, pwr-1)
-
 }
 
 func AtoiBase(s string, base string) int {

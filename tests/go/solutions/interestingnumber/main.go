@@ -23,5 +23,4 @@ func InterestingNumber(n int) int {
 }
 
 func main() {
-
 }

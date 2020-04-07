@@ -86,5 +86,4 @@ func PrintMemory(arr [10]int) {
 }
 
 func main() {
-
 }

@@ -25,6 +25,5 @@ func TestAlphaCount(t *testing.T) {
 
 	for i := 0; i < len(arr); i++ {
 		z01.Challenge(t, student.AlphaCount, solutions.AlphaCount, arr[i])
-
 	}
 }

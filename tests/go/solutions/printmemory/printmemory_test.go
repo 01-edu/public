@@ -19,5 +19,4 @@ func TestPrintMemory(t *testing.T) {
 	}
 	table2 := [10]int{104, 101, 108, 108, 111, 16, 21, 42}
 	z01.Challenge(t, PrintMemory, solutions.PrintMemory, table2)
-
 }

@@ -19,5 +19,4 @@ func TestPrintNbrInOrder(t *testing.T) {
 	for _, arg := range table {
 		z01.Challenge(t, student.PrintNbrInOrder, solutions.PrintNbrInOrder, arg)
 	}
-
 }

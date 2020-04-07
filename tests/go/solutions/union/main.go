@@ -15,7 +15,6 @@ func isIn(a rune, arr []rune) bool {
 }
 
 func main() {
-
 	if len(os.Args) == 3 {
 		var res []rune
 		str1 := []rune(os.Args[1])
