@@ -118,7 +118,6 @@ func TestSortListInsert(t *testing.T) {
 }
 
 func sortStudentsList(l *NodeI14) *NodeI14 {
-
 	Head := l
 	if Head == nil {
 		return nil

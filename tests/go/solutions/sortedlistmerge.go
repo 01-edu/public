@@ -13,5 +13,4 @@ func SortedListMerge(l1 *NodeI, l2 *NodeI) *NodeI {
 	}
 	l2.Next = SortedListMerge(l1, l2.Next)
 	return l2
-
 }

@@ -14,7 +14,6 @@ func isAPrime(nb int) bool {
 	}
 	if nb <= 3 {
 		return true
-
 	} else if nb%2 == 0 || nb%3 == 0 {
 		return false
 	}
@@ -30,7 +29,6 @@ func isAPrime(nb int) bool {
 }
 
 func TestAddPrimeSum(t *testing.T) {
-
 	var table []string
 
 	// fill with all rpime numbers between 0 and 100

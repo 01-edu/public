@@ -10,5 +10,4 @@ func FoldInt(f func(int, int) int, arr []int, n int) {
 	fmt.Println(result)
 }
 func main() {
-
 }

@@ -18,7 +18,6 @@ func main() {
 			return
 		}
 		fmt.Println(rangeOf(firstArg, secondArg))
-
 	} else {
 		fmt.Println()
 	}

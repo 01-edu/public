@@ -34,7 +34,6 @@ func TestInterestingNumber(t *testing.T) {
 		//Once the random node created, this iteration is added to the earlier declared table
 		//along with the 4 specific examples taken from the examples of the readme.
 		table = append(table, value)
-
 	}
 
 	for _, arg := range table {

@@ -26,7 +26,6 @@ func nd(a, b int) int {
 }
 
 func TestGame23(t *testing.T) {
-
 	// Declaration of the node that is going to take the group of arguments that are going to
 	// inputed during each iteration of a Challenge between the student and the staff solution.
 	// (note: a node is not always necessary but in this case it makes the writing of the test easier)
@@ -117,5 +116,4 @@ func TestGame23(t *testing.T) {
 	// When both are satisfied with the coherence between the subject and its tests. The code can be commited
 	// and redeployed by the team-01.
 	// We then advised the staff team to test the new exercise invidually with their current build of the exam
-
 }

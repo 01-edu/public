@@ -97,7 +97,6 @@ func CompareTrees_delete(t *testing.T, fn interface{}, deleted string, rootOr, r
 	if !student.BTreeIsBinary(rootS) || sel != nil {
 		errorMessage_delete(t, fn, deleted, rootOr, root, rootS)
 	}
-
 }
 
 func TestBTreeDeleteNode(t *testing.T) {

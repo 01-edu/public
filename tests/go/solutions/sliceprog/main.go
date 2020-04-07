@@ -4,7 +4,6 @@ func main() {
 }
 
 func Slice(arr []string, nbr ...int) []string {
-
 	if len(nbr) == 0 {
 		return arr
 	}

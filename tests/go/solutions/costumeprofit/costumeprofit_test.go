@@ -12,7 +12,6 @@ type node struct {
 }
 
 func TestCostumeProfit(t *testing.T) {
-
 	table := []node{}
 
 	for i := 0; i < 25; i++ {

@@ -9,7 +9,6 @@ import (
 )
 
 func TestLcm(t *testing.T) {
-
 	type node struct {
 		first  int
 		second int

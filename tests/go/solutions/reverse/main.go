@@ -32,5 +32,4 @@ func Reverse(node *NodeAddL) *NodeAddL {
 }
 
 func main() {
-
 }

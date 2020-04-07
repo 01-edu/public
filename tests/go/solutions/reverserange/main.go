@@ -18,7 +18,6 @@ func main() {
 			return
 		}
 		fmt.Println(reverseRange(firstArg, secondArg))
-
 	} else {
 		fmt.Println()
 	}

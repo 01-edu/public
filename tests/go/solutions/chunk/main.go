@@ -20,5 +20,4 @@ func Chunk(slice []int, size int) {
 }
 
 func main() {
-
 }

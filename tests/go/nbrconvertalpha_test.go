@@ -9,7 +9,6 @@ import (
 )
 
 func TestNbrConvertAlpha(t *testing.T) {
-
 	type node struct {
 		array []string
 	}

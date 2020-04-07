@@ -6,7 +6,6 @@ type Nodelist struct {
 }
 
 func SortList(l *Nodelist, cmp func(a, b int) bool) *Nodelist {
-
 	head := l
 	if head == nil {
 		return nil

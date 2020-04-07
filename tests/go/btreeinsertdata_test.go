@@ -125,5 +125,4 @@ func TestBTreeInsertData(t *testing.T) {
 		rootS = student.BTreeInsertData(rootS, arg)
 		CompareTrees_insert(t, fn, arg, root, rootS)
 	}
-
 }

@@ -30,5 +30,4 @@ func ListRemoveIf(l *List, data_ref interface{}) {
 }
 
 func main() {
-
 }

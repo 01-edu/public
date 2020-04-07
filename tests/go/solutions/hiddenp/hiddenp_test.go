@@ -22,7 +22,6 @@ func TestHiddenP(t *testing.T) {
 
 		args = append(args, extraArg)
 		args = append(args, extraArg2)
-
 	}
 	for i := 0; i < 10; i++ {
 		randomLowerLetter := z01.RandStr(2, z01.RuneRange('a', 'z'))
@@ -32,10 +31,8 @@ func TestHiddenP(t *testing.T) {
 
 		args = append(args, extraArg)
 		args = append(args, extraArg2)
-
 	}
 	for i := 0; i < 10; i++ {
-
 		randomLowerLetter := z01.RandStr(1, z01.RuneRange('a', 'z'))
 		randomUpperLetter := z01.RandStr(1, z01.RuneRange('A', 'Z'))
 		extraArg := []string{randomLowerLetter, z01.RandLower()}
@@ -43,7 +40,6 @@ func TestHiddenP(t *testing.T) {
 
 		args = append(args, extraArg)
 		args = append(args, extraArg2)
-
 	}
 
 	for _, v := range args {

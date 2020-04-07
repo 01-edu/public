@@ -49,10 +49,8 @@ func main() {
 
 	if count == len(first) {
 		z01.PrintRune('1')
-
 	} else {
 		z01.PrintRune('0')
 	}
 	z01.PrintRune('\n')
-
 }

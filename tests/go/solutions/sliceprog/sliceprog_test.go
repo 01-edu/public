@@ -9,7 +9,6 @@ import (
 )
 
 func TestSlice(t *testing.T) {
-
 	arr := [][]interface{}{
 		{
 			[]string{"coding", "algorithm", "ascii", "package", "golang"},

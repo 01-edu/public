@@ -34,7 +34,6 @@ func numberOfBytes(args []string) (int, []string) {
 		if err != nil {
 			files = append(files, v)
 		}
-
 	}
 	return nbytes, files
 }
@@ -51,7 +50,6 @@ func fileSize(fi *os.File) int64 {
 }
 
 func main() {
-
 	n := len(os.Args)
 	if n < 4 {
 		fmt.Println("Not enough arguments")

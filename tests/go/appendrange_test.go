@@ -10,7 +10,6 @@ import (
 )
 
 func TestAppendRange(t *testing.T) {
-
 	type node struct {
 		min int
 		max int
@@ -20,7 +19,6 @@ func TestAppendRange(t *testing.T) {
 	//15 random pairs of ints for a Valid Range
 
 	for i := 0; i < 15; i++ {
-
 		minVal := z01.RandIntBetween(-10000000, 1000000)
 		gap := z01.RandIntBetween(1, 20)
 		val := node{
@@ -31,7 +29,6 @@ func TestAppendRange(t *testing.T) {
 	}
 	//15 random pairs of ints with ||invalid range||
 	for i := 0; i < 15; i++ {
-
 		minVal := z01.RandIntBetween(-10000000, 1000000)
 		gap := z01.RandIntBetween(1, 20)
 		val := node{

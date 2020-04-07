@@ -10,5 +10,4 @@ func Halfcontest(h1, m1, h2, m2 int) int {
 }
 
 func main() {
-
 }

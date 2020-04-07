@@ -84,7 +84,6 @@ func solNodeString(node *solNode) string {
 
 func compareNodes(t *testing.T, stuResult *stuNode, solResult *solNode, num1, num2 int) {
 	if stuResult == nil && solResult == nil {
-
 	} else if stuResult != nil && solResult == nil {
 		stuNum := stuNodeString(stuResult)
 		t.Fatalf("\nAddLinkedNumbers(%v, %v) == %v instead of %v\n\n",

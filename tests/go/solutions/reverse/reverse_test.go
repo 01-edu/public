@@ -60,8 +60,13 @@ func solListToNum(node *solNode) int {
 }
 
 func compareNodes(t *testing.T, stuResult *stuNode, solResult *solNode, num1 int) {
-	if stuResult == nil && solResult == nil {
-
+	if stuResult != nil && solResult != nil {
+		stuNum := stuListToNum(stuResult)
+		solNum := solListToNum(solResult)
+		if stuNum != solNum {
+			t.Fatalf("\nReverse(%d) == %v instead of %v\n\n",
+				num1, stuNum, solNum)
+		}
 	} else if stuResult != nil && solResult == nil {
 		stuNum := stuListToNum(stuResult)
 		t.Fatalf("\nReverse(%d) == %v instead of %v\n\n",
@@ -70,18 +75,10 @@ func compareNodes(t *testing.T, stuResult *stuNode, solResult *solNode, num1 int
 		solNum := solListToNum(solResult)
 		t.Fatalf("\nReverse(%d) == %v instead of %v\n\n",
 			num1, "", solNum)
-	} else {
-		stuNum := stuListToNum(stuResult)
-		solNum := solListToNum(solResult)
-		if stuNum != solNum {
-			t.Fatalf("\nReverse(%d) == %v instead of %v\n\n",
-				num1, stuNum, solNum)
-		}
 	}
 }
 
 func TestReverse(t *testing.T) {
-
 	// Declaration of the node that is going to take the group of arguments that are going to
 	// inputed during each iteration of a Challenge between the student and the staff solution.
 	// (note: a node is not always necessary but in this case it makes the writing of the test easier)
@@ -117,7 +114,6 @@ func TestReverse(t *testing.T) {
 		//Once the random node created, this iteration is added to the earlier declared table
 		//along with the 4 specific examples taken from the examples of the readme.
 		table = append(table, value)
-
 	}
 
 	//The table with 4 specific exercises and 15 randoms is now ready to be "challenged"
@@ -150,5 +146,4 @@ func TestReverse(t *testing.T) {
 	// When both are satisfied with the coherence between the subject and its tests. The code can be commited
 	// and redeployed by the team-01.
 	// We then advised the staff team to test the new exercise invidually with their current build of the exam
-
 }

@@ -10,5 +10,4 @@ func Max(arr []int) int {
 }
 
 func main() {
-
 }

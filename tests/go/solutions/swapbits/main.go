@@ -5,5 +5,4 @@ func SwapBits(n byte) byte {
 }
 
 func main() {
-
 }

@@ -27,5 +27,4 @@ func checkIfEq(t1 *TreeNodeL, t2 *TreeNodeL) bool {
 }
 
 func main() {
-
 }

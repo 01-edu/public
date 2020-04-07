@@ -1,7 +1,6 @@
 package solutions
 
 func ListSort(l *NodeI) *NodeI {
-
 	Head := l
 	if Head == nil {
 		return nil

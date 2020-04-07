@@ -1,7 +1,6 @@
 package solutions
 
 func SplitWhiteSpaces(str string) []string {
-
 	answer := []string{}
 	word := ""
 	for _, r := range str {

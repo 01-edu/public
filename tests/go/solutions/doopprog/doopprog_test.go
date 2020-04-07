@@ -10,7 +10,6 @@ import (
 )
 
 func TestDoopProg(t *testing.T) {
-
 	operatorsTable := []string{"+", "-", "*", "/", "%"}
 
 	table := []string{}

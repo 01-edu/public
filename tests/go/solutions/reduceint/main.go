@@ -11,5 +11,4 @@ func ReduceInt(f func(int, int) int, arr []int) {
 }
 
 func main() {
-
 }

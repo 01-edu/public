@@ -5,9 +5,8 @@ func IsSortedBy1(a, b int) int {
 		return -1
 	} else if a-b > 0 {
 		return 1
-	} else {
-		return 0
 	}
+	return 0
 }
 
 func IsSortedBy10(a, b int) int {
@@ -15,9 +14,8 @@ func IsSortedBy10(a, b int) int {
 		return -10
 	} else if a-b > 0 {
 		return 10
-	} else {
-		return 0
 	}
+	return 0
 }
 
 func IsSortedByDiff(a, b int) int {
@@ -25,7 +23,6 @@ func IsSortedByDiff(a, b int) int {
 }
 
 func IsSorted(f func(int, int) int, arr []int) bool {
-
 	ascendingOrdered := true
 	descendingOrdered := true
 
@@ -42,5 +39,4 @@ func IsSorted(f func(int, int) int, arr []int) bool {
 	}
 
 	return ascendingOrdered || descendingOrdered
-
 }

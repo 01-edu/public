@@ -7,7 +7,6 @@ import (
 )
 
 func TestSearchReplace(t *testing.T) {
-
 	type nodeTest struct {
 		dataSearched    string
 		letterLookedFor string
@@ -17,7 +16,6 @@ func TestSearchReplace(t *testing.T) {
 	table := []nodeTest{}
 
 	for i := 0; i < 20; i++ {
-
 		letter1 := []rune(z01.RandAlnum())
 		letter2 := []rune(z01.RandAlnum())
 
@@ -27,7 +25,6 @@ func TestSearchReplace(t *testing.T) {
 				letterLookedFor: string(letter1[0]),
 				letterReplacing: string(letter2[0]),
 			})
-
 	}
 
 	table = append(table,

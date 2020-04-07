@@ -22,19 +22,16 @@ func TestIsSorted(t *testing.T) {
 
 	//5 unordered slices
 	for i := 0; i < 5; i++ {
-
 		functionSelected := functionsArray[z01.RandIntBetween(0, len(functionsArray)-1)]
 		val := node{
 			f:   functionSelected,
 			arr: z01.MultRandIntBetween(-1000000, 1000000),
 		}
 		table = append(table, val)
-
 	}
 
 	//5 slices ordered in ascending order
 	for i := 0; i < 5; i++ {
-
 		functionSelected := functionsArray[z01.RandIntBetween(0, len(functionsArray)-1)]
 		orderedArr := z01.MultRandIntBetween(-1000000, 1000000)
 		sort.Ints(orderedArr)
@@ -44,12 +41,10 @@ func TestIsSorted(t *testing.T) {
 			arr: orderedArr,
 		}
 		table = append(table, val)
-
 	}
 
 	//5 slices ordered in descending order
 	for i := 0; i < 5; i++ {
-
 		functionSelected := functionsArray[z01.RandIntBetween(0, len(functionsArray)-1)]
 		reverseArr := z01.MultRandIntBetween(-1000000, 1000000)
 		sort.Sort(sort.Reverse(sort.IntSlice(reverseArr)))
@@ -58,7 +53,6 @@ func TestIsSorted(t *testing.T) {
 			arr: reverseArr,
 		}
 		table = append(table, val)
-
 	}
 
 	table = append(table, node{

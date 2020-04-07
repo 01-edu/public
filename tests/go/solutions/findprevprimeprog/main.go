@@ -1,7 +1,6 @@
 package main
 
 func main() {
-
 }
 
 func FindPrevPrime(nbr int) int {
@@ -12,11 +11,9 @@ func FindPrevPrime(nbr int) int {
 		return nbr
 	}
 	return FindPrevPrime(nbr - 1)
-
 }
 
 func IsPrime(nb int) bool {
-
 	if nb <= 0 || nb == 1 {
 		return false
 	}

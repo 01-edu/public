@@ -8,7 +8,6 @@ import (
 )
 
 func TestBrainFuck(t *testing.T) {
-
 	// individual tests 1)Hello World! 2)Hi 3)abc 4)ABC
 
 	args := []string{"++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.",

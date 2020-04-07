@@ -29,7 +29,6 @@ func execC(name string, args ...string) (string, error) {
 }
 
 func TestCat(t *testing.T) {
-
 	var table []string
 	pathFileName := "./student/cat/quest8.txt"
 	pathFileName2 := "./student/cat/quest8T.txt"

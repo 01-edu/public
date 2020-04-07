@@ -7,5 +7,4 @@ func Swap(a, b *int) {
 }
 
 func main() {
-
 }

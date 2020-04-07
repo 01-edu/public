@@ -41,5 +41,4 @@ func Revive_three_nums(a, b, c, d int) int {
 }
 
 func main() {
-
 }

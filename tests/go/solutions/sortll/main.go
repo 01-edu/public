@@ -42,5 +42,4 @@ func Sortll(node *NodeAddL) *NodeAddL {
 	return node
 }
 func main() {
-
 }

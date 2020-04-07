@@ -10,7 +10,6 @@ import (
 )
 
 func TestConcatParams(t *testing.T) {
-
 	table := [][]string{}
 	//30 random slice of strings
 

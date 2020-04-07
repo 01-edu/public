@@ -22,5 +22,4 @@ func ListSize(l *List) int {
 }
 
 func main() {
-
 }

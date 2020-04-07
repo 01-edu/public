@@ -22,7 +22,6 @@ func drawLine(x int, str string) {
 }
 
 func printTheLines(x, y int, strBeg, strMed, strEnd string) {
-
 	if y >= 1 {
 		drawLine(x, strBeg)
 	}

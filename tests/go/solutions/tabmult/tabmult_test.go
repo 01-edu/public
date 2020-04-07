@@ -19,5 +19,4 @@ func TestTabMult(t *testing.T) {
 	for _, arg := range table {
 		z01.ChallengeMainExam(t, arg)
 	}
-
 }

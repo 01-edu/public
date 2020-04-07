@@ -60,5 +60,4 @@ func Changeorder(node *NodeAddL) *NodeAddL {
 }
 
 func main() {
-
 }

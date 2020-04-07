@@ -10,7 +10,6 @@ import (
 )
 
 func TestConvertBase(t *testing.T) {
-
 	type node struct {
 		nbr      string
 		baseFrom string
