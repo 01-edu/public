@@ -1,6 +1,5 @@
-FROM debian
+FROM alpine
 
-RUN apt-get update
-RUN apt-get install -y jq curl git
+RUN apk add jq curl git
 COPY . /app
-ENTRYPOINT ["/bin/bash", "/app/entrypoint.sh"]
+ENTRYPOINT ["/bin/sh", "/app/entrypoint.sh"]
