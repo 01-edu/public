@@ -48,15 +48,15 @@
 
 ##### Try good example 02 (https://public.01-edu.org/subjects/tetris-optimizer/goodexample02).
 
-###### Does the result contain 4 empty spaces (4 '.') and a time limit lesser or equal to 0,018s?
+###### Does the result contain 4 empty spaces (4 '.') and a time limit lesser or equal to the one in the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
 
 ##### Try good example 03 (https://public.01-edu.org/subjects/tetris-optimizer/goodexample03).
 
-###### Does the result contain 5 empty spaces (5 '.') and a time limit lesser or equal to 0,090s?
+###### Does the result contain 5 empty spaces (5 '.') and a time limit lesser or equal to the one in the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
 
 ##### Try hard example (https://public.01-edu.org/subjects/tetris-optimizer/hardexam).
 
-###### Does the result contain 1 empty spaces (1 '.') and a time limit lesser or equal to 51,600s?
+###### Does the result contain 1 empty spaces (1 '.') and a time limit lesser or equal to the one in the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
 
 ###### Are all of the Tetrominos contained in the test file, present in the output?
 

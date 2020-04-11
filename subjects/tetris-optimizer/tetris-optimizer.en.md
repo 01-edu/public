@@ -20,7 +20,6 @@ The program must :
 - The project must be written in **Go**.
 - The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices.en).
 - It is recommended that the code should present a **test file**.
-- You must work for the best performance possible, the time limit for the project will be tested.
 
 #### Example of a text File
 
