@@ -1,30 +1,19 @@
 package student_test
 
 import (
-	"strings"
+	"bytes"
+	"os/exec"
 	"testing"
-
-	"github.com/01-edu/z01"
 )
 
 func TestPrintProgramName(t *testing.T) {
-	exercise := strings.ToLower(
-		strings.TrimPrefix(t.Name(), "Test"))
-	out, err1 := z01.MainOut("./student/printprogramname")
-	if err1 != nil {
-		t.Fatalf(err1.Error())
+	b, err := exec.Command("go", "run", "./student/printprogramname").Output()
+	if err != nil {
+		t.Fatal(err)
 	}
-
-	correct, err2 := z01.MainOut("./solutions/printprogramname")
-
-	if err2 != nil {
-		t.Fatalf(err2.Error())
-	}
-
-	arrOut := strings.Split(out, "/")
-	ArrCor := strings.Split(correct, "/")
-	if ArrCor[len(ArrCor)-1] != arrOut[len(arrOut)-1] {
-		t.Fatalf("./%s prints %q instead of %q\n",
-			exercise, arrOut[len(arrOut)-1], ArrCor[len(ArrCor)-1])
+	if string(bytes.TrimSpace(b)) != "printprogramname" {
+		t.Fatal("Failed to print the program name")
 	}
 }
+
+// TODO: add more test cases (different program names), to do so compile then rename and test the binary several times

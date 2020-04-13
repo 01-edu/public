@@ -9,6 +9,9 @@ Example of output :
 ```console
 student@ubuntu:~/[[ROOT]]/printprogramname$ go build main.go
 student@ubuntu:~/[[ROOT]]/printprogramname$ ./main
-./main
+main
+student@ubuntu:~/[[ROOT]]/printprogramname$ go build
+student@ubuntu:~/[[ROOT]]/printprogramname$ ./printprogramname
+printprogramname
 student@ubuntu:~/[[ROOT]]/printprogramname$
 ```
