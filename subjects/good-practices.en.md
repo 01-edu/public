@@ -35,3 +35,7 @@
 ### Dockerfile
 
 - [**Dockerfile**](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+
+### Time Limitation
+
+- Every computing programs should execute in a time limit of 5 minutes.

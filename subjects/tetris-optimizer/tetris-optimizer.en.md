@@ -35,7 +35,7 @@ The program must :
 ..##
 ```
 
--   If it isn't possible to form a complete square, the program should leave spaces between the tetrominoes. For example:
+- If it isn't possible to form a complete square, the program should leave spaces between the tetrominoes. For example:
 
 ```console
 ABB.

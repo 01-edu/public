@@ -295,11 +295,11 @@ student$
 
 ##### Try running the program with example06.txt and with 100 ants.
 
-###### Is the real time less than 0.5 seconds?
+###### Is the real time less than 1.5 minutes?
 
 ##### Try running the program with example07.txt and with 1000 ants.
 
-###### Is the real time less than 1.5 seconds?
+###### Is the real time less than 2.5 minutes?
 
 ##### Try running the program with a valid example of your choice.
 
