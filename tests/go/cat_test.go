@@ -49,7 +49,7 @@ func TestCat(t *testing.T) {
 	pwd, err := os.Getwd()
 
 	if err != nil {
-		t.Fatalf(err.Error())
+		t.Fatalf(err)
 	}
 
 	for i := 0; i < 2; i++ {

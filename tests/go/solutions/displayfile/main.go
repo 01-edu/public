@@ -20,7 +20,7 @@ func main() {
 	data, err := ioutil.ReadFile(fileName)
 
 	if err != nil {
-		fmt.Println(err.Error())
+		fmt.Println(err)
 		return
 	}
 
