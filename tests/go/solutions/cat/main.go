@@ -7,18 +7,17 @@ import (
 )
 
 func main() {
-	size := len(os.Args)
-	if size == 1 {
+	if len(os.Args) == 1 {
 		if _, err := io.Copy(os.Stdout, os.Stdin); err != nil {
 			panic(err)
 		}
 	} else {
-		for i := 1; i < size; i++ {
-			data, err := ioutil.ReadFile(os.Args[i])
+		for _, arg := range os.Args[1:] {
+			data, err := ioutil.ReadFile(arg)
 			if err != nil {
 				panic(err)
 			}
-			fmt.Print(string(data))
+			os.Stdout.Write(data)
 		}
 	}
 }
