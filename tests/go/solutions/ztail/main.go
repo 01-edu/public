@@ -42,7 +42,7 @@ func fileSize(fi *os.File) int64 {
 	fil, err := fi.Stat()
 
 	if err != nil {
-		fmt.Println(err.Error())
+		fmt.Println(err)
 		return 0
 	}
 

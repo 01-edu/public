@@ -14,7 +14,7 @@ func main() {
 		secundArg, err2 := strconv.Atoi(os.Args[2])
 
 		if err != nil || err2 != nil {
-			fmt.Println(err.Error())
+			fmt.Println(err)
 		}
 		solutions.Raid1d(firstArg, secundArg)
 	} else {

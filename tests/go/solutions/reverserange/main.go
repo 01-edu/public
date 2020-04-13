@@ -14,7 +14,7 @@ func main() {
 			secondArg, err = strconv.Atoi(os.Args[2])
 		}
 		if err != nil {
-			fmt.Println(err.Error())
+			fmt.Println(err)
 			return
 		}
 		fmt.Println(reverseRange(firstArg, secondArg))
