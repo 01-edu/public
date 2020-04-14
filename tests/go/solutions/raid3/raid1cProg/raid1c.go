@@ -11,12 +11,12 @@ import (
 func main() {
 	if len(os.Args) == 3 {
 		firstArg, err := strconv.Atoi(os.Args[1])
-		secundArg, err2 := strconv.Atoi(os.Args[2])
+		secondArg, err2 := strconv.Atoi(os.Args[2])
 
 		if err != nil || err2 != nil {
 			fmt.Println(err)
 		}
-		solutions.Raid1c(firstArg, secundArg)
+		solutions.Raid1c(firstArg, secondArg)
 	} else {
 		fmt.Println("to much arguments")
 	}
