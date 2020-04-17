@@ -22,6 +22,5 @@ student@ubuntu:~/[[ROOT]]/displayfile$ ./displayfile quest8.txt main.go
 Too many arguments
 student@ubuntu:~/[[ROOT]]/displayfile$ ./displayfile quest8.txt
 Almost there!!
-
 student@ubuntu:~/[[ROOT]]/displayfile$
 ```
