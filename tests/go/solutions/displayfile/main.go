@@ -16,13 +16,9 @@ func main() {
 		return
 	}
 	fileName := os.Args[1]
-
 	data, err := ioutil.ReadFile(fileName)
-
 	if err != nil {
-		fmt.Println(err)
-		return
+		panic(err)
 	}
-
-	fmt.Println(string(data))
+	os.Stdout.Write(data)
 }
