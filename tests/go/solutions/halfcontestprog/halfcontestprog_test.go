@@ -8,7 +8,7 @@ import (
 	solutions "../../solutions" // This line is not necessary when testing an exercise with a program
 )
 
-func TestHalf_contest(t *testing.T) {
+func TestHalfContestProg(t *testing.T) {
 	type node struct {
 		h1 int
 		m1 int

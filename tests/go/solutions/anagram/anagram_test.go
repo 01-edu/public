@@ -8,7 +8,7 @@ import (
 	solutions "../../solutions" // This line is not necessary when testing an exercise with a program
 )
 
-func TestIsAnagram(t *testing.T) {
+func TestAnagram(t *testing.T) {
 	type node struct {
 		s string
 		t string

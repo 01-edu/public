@@ -11,7 +11,7 @@ type node struct {
 	big, little string
 }
 
-func TestDoppelGanger(t *testing.T) {
+func TestDoppelGangerProg(t *testing.T) {
 	table := []node{}
 
 	table = append(table,

@@ -9,7 +9,7 @@ import (
 	solutions "../../solutions"
 )
 
-func TestNRune(t *testing.T) {
+func TestNRuneProg(t *testing.T) {
 	type node struct {
 		word string
 		n    int

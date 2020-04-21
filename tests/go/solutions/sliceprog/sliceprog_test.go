@@ -8,7 +8,7 @@ import (
 	solutions "../../solutions"
 )
 
-func TestSlice(t *testing.T) {
+func TestSliceProg(t *testing.T) {
 	arr := [][]interface{}{
 		{
 			[]string{"coding", "algorithm", "ascii", "package", "golang"},

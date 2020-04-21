@@ -7,7 +7,7 @@ import (
 	"github.com/01-edu/z01"
 )
 
-func TestFindPrevPrime(t *testing.T) {
+func TestFindPrevPrimeProg(t *testing.T) {
 	array := []int{5, 4, 1}
 	for i := 0; i < 7; i++ {
 		array = append(array, z01.RandIntBetween(0, 99999))
