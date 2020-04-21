@@ -1,12 +1,10 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 )
 
-func TestRaid2(t *testing.T) {
+func main() {
 	// Valid sudokus
 	arg1 := []string{".96.4...1", "1...6...4", "5.481.39.",
 		"..795..43", ".3..8....", "4.5.23.18",
@@ -199,15 +197,15 @@ func TestRaid2(t *testing.T) {
 	invalid := [][]string{argin1, argin2, argin3, argin4, argin5}
 
 	for _, v := range valid {
-		z01.ChallengeMain(t, v...)
+		z01.ChallengeMain(v...)
 	}
 
 	for _, i := range invalid {
-		z01.ChallengeMain(t, i...)
+		z01.ChallengeMain(i...)
 	}
 
 	// No arguments
-	z01.ChallengeMain(t)
+	z01.ChallengeMain()
 	// Wrong number of arguments
-	z01.ChallengeMain(t, "not", "a", "sudoku")
+	z01.ChallengeMain("not", "a", "sudoku")
 }

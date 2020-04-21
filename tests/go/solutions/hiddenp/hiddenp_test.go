@@ -1,12 +1,10 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 )
 
-func TestHiddenP(t *testing.T) {
+func main() {
 	arg1 := []string{"fgex.;", "tyf34gdgf;'ektufjhgdgex.;.;rtjynur6"}
 	arg2 := []string{"abc", "2altrb53c.sse"}
 	arg3 := []string{"abc", "btarc"}
@@ -43,6 +41,6 @@ func TestHiddenP(t *testing.T) {
 	}
 
 	for _, v := range args {
-		z01.ChallengeMainExam(t, v...)
+		z01.ChallengeMain(v...)
 	}
 }

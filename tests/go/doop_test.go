@@ -1,15 +1,14 @@
-package student_test
+package main
 
 import (
 	"strings"
-	"testing"
 
 	"strconv"
 
 	"github.com/01-edu/z01"
 )
 
-func TestDoop(t *testing.T) {
+func main() {
 	operatorsTable := []string{"+", "-", "*", "/", "%"}
 
 	table := []string{}
@@ -38,6 +37,6 @@ func TestDoop(t *testing.T) {
 	table = append(table, "9223372036854775809 - 3")
 	table = append(table, "9223372036854775807 * 3")
 	for _, s := range table {
-		z01.ChallengeMain(t, strings.Fields(s)...)
+		z01.ChallengeMain(strings.Fields(s)...)
 	}
 }

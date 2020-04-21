@@ -1,12 +1,10 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 )
 
-func TestGrouping(t *testing.T) {
+func main() {
 	type args struct {
 		first  string
 		second string
@@ -33,7 +31,7 @@ func TestGrouping(t *testing.T) {
 	arr = append(arr, helper)
 
 	for _, s := range arr {
-		z01.ChallengeMainExam(t, s.first, s.second)
+		z01.ChallengeMain(s.first, s.second)
 	}
 }
 

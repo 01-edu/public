@@ -1,12 +1,10 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 )
 
-func TestExpandStr(t *testing.T) {
+func main() {
 	arg1 := []string{"hello", "you"}
 	arg2 := []string{"   only  it's harder   "}
 	arg3 := []string{"you   see   it's   easy   to   display    the     same  thing"}
@@ -19,7 +17,7 @@ func TestExpandStr(t *testing.T) {
 	}
 
 	for _, v := range args {
-		z01.ChallengeMainExam(t, v...)
+		z01.ChallengeMain(v...)
 	}
-	z01.ChallengeMainExam(t)
+	z01.ChallengeMain()
 }

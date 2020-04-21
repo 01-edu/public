@@ -1,15 +1,14 @@
-package student_test
+package main
 
 import (
 	"strings"
-	"testing"
 
 	"github.com/01-edu/z01"
 )
 
-func TestPrintParams(t *testing.T) {
+func main() {
 	table := append(z01.MultRandWords(), "choumi is the best cat")
 	for _, s := range table {
-		z01.ChallengeMain(t, strings.Fields(s)...)
+		z01.ChallengeMain(strings.Fields(s)...)
 	}
 }

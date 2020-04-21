@@ -3,7 +3,6 @@ package main
 import (
 	"strconv"
 	"strings"
-	"testing"
 
 	"github.com/01-edu/z01"
 )
@@ -28,7 +27,7 @@ func isAPrime(nb int) bool {
 	return true
 }
 
-func TestAddPrimeSum(t *testing.T) {
+func main() {
 	var table []string
 
 	// fill with all rpime numbers between 0 and 100
@@ -50,6 +49,6 @@ func TestAddPrimeSum(t *testing.T) {
 	table = append(table, "1 2")
 
 	for _, s := range table {
-		z01.ChallengeMainExam(t, strings.Fields(s)...)
+		z01.ChallengeMain(strings.Fields(s)...)
 	}
 }

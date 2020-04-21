@@ -1,11 +1,9 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 )
 
-func TestPrintAlphabet(t *testing.T) {
-	z01.ChallengeMain(t)
+func main() {
+	z01.ChallengeMain()
 }

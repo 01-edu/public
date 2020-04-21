@@ -2,12 +2,11 @@ package main
 
 import (
 	"strconv"
-	"testing"
 
 	"github.com/01-edu/z01"
 )
 
-func TestRomanNumbers(t *testing.T) {
+func main() {
 	rand := []string{
 		"0",
 		"4000",
@@ -20,6 +19,6 @@ func TestRomanNumbers(t *testing.T) {
 		rand = append(rand, strconv.Itoa(z01.RandIntBetween(0, 4000)))
 	}
 	for _, v := range rand {
-		z01.ChallengeMainExam(t, v)
+		z01.ChallengeMain(v)
 	}
 }

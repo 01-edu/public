@@ -1,8 +1,6 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 )
 
@@ -13,7 +11,7 @@ type node struct {
 	randArg        []string
 }
 
-func TestFlags(t *testing.T) {
+func main() {
 	str := []string{"--insert=", "--order"}
 	strShorthand := []string{"-i=", "-o"}
 	var randflag []string
@@ -32,20 +30,20 @@ func TestFlags(t *testing.T) {
 
 	node.randArg = append(node.randArg, "")
 
-	z01.ChallengeMain(t, node.flagsShorthand[0]+"v2", "v1")
-	z01.ChallengeMain(t, node.flagsShorthand[1], "v1")
-	z01.ChallengeMain(t, "-h")
-	z01.ChallengeMain(t, "--help")
-	z01.ChallengeMain(t)
+	z01.ChallengeMain(node.flagsShorthand[0]+"v2", "v1")
+	z01.ChallengeMain(node.flagsShorthand[1], "v1")
+	z01.ChallengeMain("-h")
+	z01.ChallengeMain("--help")
+	z01.ChallengeMain()
 
 	for _, v2 := range node.randArgFlag {
 		for _, v1 := range node.randArg {
-			z01.ChallengeMain(t, node.flags[0]+v2, node.flags[1], v1)
+			z01.ChallengeMain(node.flags[0]+v2, node.flags[1], v1)
 		}
 	}
 	for _, v2 := range node.randArgFlag {
 		for _, v1 := range node.randArg {
-			z01.ChallengeMain(t, node.flagsShorthand[0]+v2, node.flagsShorthand[1], v1)
+			z01.ChallengeMain(node.flagsShorthand[0]+v2, node.flagsShorthand[1], v1)
 		}
 	}
 }

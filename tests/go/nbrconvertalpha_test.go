@@ -1,14 +1,13 @@
-package student_test
+package main
 
 import (
 	"strconv"
 	"strings"
-	"testing"
 
 	"github.com/01-edu/z01"
 )
 
-func TestNbrConvertAlpha(t *testing.T) {
+func main() {
 	type node struct {
 		array []string
 	}
@@ -40,7 +39,7 @@ func TestNbrConvertAlpha(t *testing.T) {
 
 	for _, i := range table {
 		for _, a := range i.array {
-			z01.ChallengeMain(t, strings.Fields((a))...)
+			z01.ChallengeMain(strings.Fields((a))...)
 		}
 	}
 }

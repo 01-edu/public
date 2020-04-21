@@ -1,12 +1,10 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 )
 
-func TestRevWstr(t *testing.T) {
+func main() {
 	table := []string{}
 
 	table = append(table,
@@ -28,9 +26,9 @@ func TestRevWstr(t *testing.T) {
 	}
 
 	for _, s := range table {
-		z01.ChallengeMainExam(t, s)
+		z01.ChallengeMain(s)
 	}
 
-	z01.ChallengeMainExam(t)
-	z01.ChallengeMainExam(t, "1param", "2param", "3param", "4param")
+	z01.ChallengeMain()
+	z01.ChallengeMain("1param", "2param", "3param", "4param")
 }

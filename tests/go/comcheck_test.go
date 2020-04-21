@@ -1,13 +1,12 @@
-package student_test
+package main
 
 import (
 	"strings"
-	"testing"
 
 	"github.com/01-edu/z01"
 )
 
-func TestComCheck(t *testing.T) {
+func main() {
 	table := append(z01.MultRandWords(),
 		"01",
 		"galaxy",
@@ -18,6 +17,6 @@ func TestComCheck(t *testing.T) {
 		"as ds galaxy 01 asd")
 
 	for _, s := range table {
-		z01.ChallengeMain(t, strings.Fields(s)...)
+		z01.ChallengeMain(strings.Fields(s)...)
 	}
 }

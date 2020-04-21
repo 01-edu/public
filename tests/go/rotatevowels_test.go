@@ -1,13 +1,12 @@
-package student_test
+package main
 
 import (
 	"strings"
-	"testing"
 
 	"github.com/01-edu/z01"
 )
 
-func TestRotateVowels(t *testing.T) {
+func main() {
 	Lower := z01.RuneRange('a', 'z')
 	Upper := z01.RuneRange('A', 'Z')
 	letters := Lower + Upper + " "
@@ -19,12 +18,12 @@ func TestRotateVowels(t *testing.T) {
 	arr = append(arr, "")
 
 	for _, v := range arr {
-		z01.ChallengeMain(t, strings.Fields(v)...)
+		z01.ChallengeMain(strings.Fields(v)...)
 	}
-	z01.ChallengeMain(t, "Hello World")
-	z01.ChallengeMain(t, "HEllO World", "problem solved")
-	z01.ChallengeMain(t, "str", "shh", "psst")
-	z01.ChallengeMain(t, "happy thoughts", "good luck")
-	z01.ChallengeMain(t, "al's elEphAnt is overly underweight!")
-	z01.ChallengeMain(t, "aEi", "Ou")
+	z01.ChallengeMain("Hello World")
+	z01.ChallengeMain("HEllO World", "problem solved")
+	z01.ChallengeMain("str", "shh", "psst")
+	z01.ChallengeMain("happy thoughts", "good luck")
+	z01.ChallengeMain("al's elEphAnt is overly underweight!")
+	z01.ChallengeMain("aEi", "Ou")
 }

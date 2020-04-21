@@ -1,12 +1,10 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 )
 
-func TestCapitalizeProg(t *testing.T) {
+func main() {
 	table := append(
 		z01.MultRandASCII(),
 		"Hello! How are you? How+are+things+4you?",
@@ -18,8 +16,8 @@ func TestCapitalizeProg(t *testing.T) {
 		"9a LALALA!",
 	)
 	for _, arg := range table {
-		z01.ChallengeMainExam(t, arg)
+		z01.ChallengeMain(arg)
 	}
-	z01.ChallengeMainExam(t, "hello", "hihihi")
-	z01.ChallengeMainExam(t)
+	z01.ChallengeMain("hello", "hihihi")
+	z01.ChallengeMain()
 }

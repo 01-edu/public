@@ -2,12 +2,11 @@ package main
 
 import (
 	"strconv"
-	"testing"
 
 	"github.com/01-edu/z01"
 )
 
-func TestTabMult(t *testing.T) {
+func main() {
 	var table []string
 	for i := 1; i < 10; i++ {
 		table = append(table, strconv.Itoa(i))
@@ -17,6 +16,6 @@ func TestTabMult(t *testing.T) {
 	}
 
 	for _, arg := range table {
-		z01.ChallengeMainExam(t, arg)
+		z01.ChallengeMain(arg)
 	}
 }

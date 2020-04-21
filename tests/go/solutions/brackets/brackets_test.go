@@ -1,12 +1,10 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 )
 
-func TestBrackets(t *testing.T) {
+func main() {
 	oneArgs := []string{"(johndoe)", ")()", "([)]", "{2*[d - 3]/(12)}"}
 
 	// 18 random tests ( at least half are valid)
@@ -20,10 +18,10 @@ func TestBrackets(t *testing.T) {
 	}
 
 	// No args testig
-	z01.ChallengeMainExam(t)
+	z01.ChallengeMain()
 
 	for _, v := range oneArgs {
-		z01.ChallengeMainExam(t, v)
+		z01.ChallengeMain(v)
 	}
 
 	arg1 := []string{"", "{[(0 + 0)(1 + 1)](3*(-1)){()}}"}
@@ -32,6 +30,6 @@ func TestBrackets(t *testing.T) {
 	multArg := [][]string{arg1, arg2, arg3}
 
 	for _, v := range multArg {
-		z01.ChallengeMainExam(t, v...)
+		z01.ChallengeMain(v...)
 	}
 }

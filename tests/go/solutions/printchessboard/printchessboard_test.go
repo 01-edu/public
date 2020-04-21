@@ -2,12 +2,11 @@ package main
 
 import (
 	"strconv"
-	"testing"
 
 	"github.com/01-edu/z01"
 )
 
-func TestPrintChessBoard(t *testing.T) {
+func main() {
 	table := [][]string{}
 
 	table = append(table,
@@ -28,6 +27,6 @@ func TestPrintChessBoard(t *testing.T) {
 	}
 
 	for _, v := range table {
-		z01.ChallengeMainExam(t, v...)
+		z01.ChallengeMain(v...)
 	}
 }

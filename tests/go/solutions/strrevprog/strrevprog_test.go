@@ -1,12 +1,10 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 )
 
-func TestStrRevProg(t *testing.T) {
+func main() {
 	table := append(
 		z01.MultRandASCII(),
 		"Hello!",
@@ -14,6 +12,6 @@ func TestStrRevProg(t *testing.T) {
 		"Hola!",
 	)
 	for _, arg := range table {
-		z01.ChallengeMainExam(t, arg)
+		z01.ChallengeMain(arg)
 	}
 }

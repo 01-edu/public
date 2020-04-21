@@ -3,12 +3,11 @@ package main
 import (
 	"strconv"
 	"strings"
-	"testing"
 
 	"github.com/01-edu/z01"
 )
 
-func TestPrintHex(t *testing.T) {
+func main() {
 	var table []string
 	table = append(table,
 		" ",
@@ -25,6 +24,6 @@ func TestPrintHex(t *testing.T) {
 	}
 
 	for _, s := range table {
-		z01.ChallengeMainExam(t, strings.Fields(s)...)
+		z01.ChallengeMain(strings.Fields(s)...)
 	}
 }

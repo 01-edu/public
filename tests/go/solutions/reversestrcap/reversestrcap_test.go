@@ -1,12 +1,10 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 )
 
-func TestReverseStrCap(t *testing.T) {
+func main() {
 	arg1 := []string{"First SMALL TesT"}
 	arg2 := []string{"SEconD Test IS a LItTLE EasIEr", "bEwaRe IT'S NoT HARd WhEN ", " Go a dernier 0123456789 for the road e"}
 	args := [][]string{arg1, arg2}
@@ -18,7 +16,7 @@ func TestReverseStrCap(t *testing.T) {
 	args = append(args, []string{""})
 
 	for _, v := range args {
-		z01.ChallengeMainExam(t, v...)
+		z01.ChallengeMain(v...)
 	}
-	z01.ChallengeMainExam(t)
+	z01.ChallengeMain()
 }

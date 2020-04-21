@@ -2,12 +2,11 @@ package main
 
 import (
 	"strings"
-	"testing"
 
 	"github.com/01-edu/z01"
 )
 
-func TestOptions(t *testing.T) {
+func main() {
 	var table []string
 
 	table = append(table, "-"+z01.RandLower(),
@@ -30,6 +29,6 @@ func TestOptions(t *testing.T) {
 	)
 
 	for _, s := range table {
-		z01.ChallengeMainExam(t, strings.Fields(s)...)
+		z01.ChallengeMain(strings.Fields(s)...)
 	}
 }

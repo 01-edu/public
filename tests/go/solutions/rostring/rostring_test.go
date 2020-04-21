@@ -1,12 +1,10 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 )
 
-func TestRoString(t *testing.T) {
+func main() {
 	corrArgs := []string{"abc   ",
 		"Let there     be light",
 		"     AkjhZ zLKIJz , 23y",
@@ -19,13 +17,13 @@ func TestRoString(t *testing.T) {
 	}
 
 	for _, v := range corrArgs {
-		z01.ChallengeMainExam(t, v)
+		z01.ChallengeMain(v)
 	}
 
 	//without parameter
-	z01.ChallengeMainExam(t)
+	z01.ChallengeMain()
 
 	//with more than one parameter
-	z01.ChallengeMainExam(t, "this", "is")
-	z01.ChallengeMainExam(t, "not", "good", "for  you")
+	z01.ChallengeMain("this", "is")
+	z01.ChallengeMain("not", "good", "for  you")
 }

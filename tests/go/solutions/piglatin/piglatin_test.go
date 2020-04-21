@@ -1,12 +1,10 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 )
 
-func TestPigLatin(t *testing.T) {
+func main() {
 	type args struct {
 		first []string
 	}
@@ -17,6 +15,6 @@ func TestPigLatin(t *testing.T) {
 	}
 
 	for _, v := range arr {
-		z01.ChallengeMainExam(t, v.first...)
+		z01.ChallengeMain(v.first...)
 	}
 }
