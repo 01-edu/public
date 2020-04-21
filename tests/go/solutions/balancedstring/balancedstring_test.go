@@ -1,12 +1,10 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 )
 
-func TestBalancedString(t *testing.T) {
+func main() {
 	// Declaration of an empty array of type string
 	table := []string{}
 
@@ -62,6 +60,6 @@ func TestBalancedString(t *testing.T) {
 	//We can use the ChallengeMainExam function.
 
 	for _, arg := range table {
-		z01.ChallengeMainExam(t, arg)
+		z01.ChallengeMain(arg)
 	}
 }

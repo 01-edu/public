@@ -1,12 +1,10 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 )
 
-func TestRepeatAlpha(t *testing.T) {
+func main() {
 	args := []string{"Hello",
 		"World",
 		"Home",
@@ -21,6 +19,6 @@ func TestRepeatAlpha(t *testing.T) {
 	}
 
 	for _, v := range args {
-		z01.ChallengeMainExam(t, v)
+		z01.ChallengeMain(v)
 	}
 }

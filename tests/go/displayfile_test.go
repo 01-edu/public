@@ -1,14 +1,13 @@
-package student_test
+package main
 
 import (
 	"os"
 	"strings"
-	"testing"
 
 	"github.com/01-edu/z01"
 )
 
-func TestDisplayfile(t *testing.T) {
+func main() {
 	pathFileName := "./student/displayfile/quest8.txt"
 	_, err := os.Stat(pathFileName)
 	if err != nil {
@@ -16,6 +15,6 @@ func TestDisplayfile(t *testing.T) {
 	}
 	table := []string{"", pathFileName, "quest8.txt asdsada"}
 	for _, s := range table {
-		z01.ChallengeMain(t, strings.Fields(s)...)
+		z01.ChallengeMain(strings.Fields(s)...)
 	}
 }

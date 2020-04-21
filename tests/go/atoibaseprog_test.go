@@ -1,8 +1,7 @@
-package student_test
+package main
 
 import (
 	"math/rand"
-	"testing"
 
 	"github.com/01-edu/z01"
 )
@@ -51,7 +50,7 @@ func randomStringFromBase(base string) string {
 }
 
 // this is the function that creates the TESTS
-func TestAtoiBaseProg(t *testing.T) {
+func main() {
 	type node struct {
 		s    string
 		base string
@@ -85,8 +84,8 @@ func TestAtoiBaseProg(t *testing.T) {
 		node{s: "bbbbbab", base: "-ab"},
 	)
 	for _, arg := range table {
-		z01.ChallengeMain(t, arg.s, arg.base)
+		z01.ChallengeMain(arg.s, arg.base)
 	}
-	z01.ChallengeMain(t)
-	z01.ChallengeMain(t, "125", "0123456789", "something")
+	z01.ChallengeMain()
+	z01.ChallengeMain("125", "0123456789", "something")
 }

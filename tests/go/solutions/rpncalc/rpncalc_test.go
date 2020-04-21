@@ -1,12 +1,10 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 )
 
-func TestRpnCalc(t *testing.T) {
+func main() {
 	args := []string{
 		"1 2 * 3 * 4 +",
 		"3 1 2 * * 4 %",
@@ -25,8 +23,8 @@ func TestRpnCalc(t *testing.T) {
 	}
 
 	for _, v := range args {
-		z01.ChallengeMainExam(t, v)
+		z01.ChallengeMain(v)
 	}
-	z01.ChallengeMainExam(t)
-	z01.ChallengeMainExam(t, "1 2 * 3 * 4 +", "10 33 - 12 %")
+	z01.ChallengeMain()
+	z01.ChallengeMain("1 2 * 3 * 4 +", "10 33 - 12 %")
 }

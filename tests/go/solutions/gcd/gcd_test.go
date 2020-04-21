@@ -2,12 +2,11 @@ package main
 
 import (
 	"strconv"
-	"testing"
 
 	"github.com/01-edu/z01"
 )
 
-func TestGCD(t *testing.T) {
+func main() {
 	arg1 := []string{"23"}
 	arg2 := []string{"12", "23"}
 	arg3 := []string{"25", "15"}
@@ -22,6 +21,6 @@ func TestGCD(t *testing.T) {
 	}
 
 	for _, v := range args {
-		z01.ChallengeMainExam(t, v...)
+		z01.ChallengeMain(v...)
 	}
 }

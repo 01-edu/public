@@ -1,13 +1,12 @@
-package student_test
+package main
 
 import (
 	"strconv"
-	"testing"
 
 	"github.com/01-edu/z01"
 )
 
-func TestParamCount(t *testing.T) {
+func main() {
 	arg1 := []string{"2", "5", "u", "19"}
 	arg2 := []string{"2"}
 	arg3 := []string{"1", "2", "3", "5", "7", "24"}
@@ -29,8 +28,8 @@ func TestParamCount(t *testing.T) {
 	}
 
 	for _, v := range args {
-		z01.ChallengeMain(t, v...)
+		z01.ChallengeMain(v...)
 	}
 
-	z01.ChallengeMain(t)
+	z01.ChallengeMain()
 }

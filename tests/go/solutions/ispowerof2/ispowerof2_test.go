@@ -3,12 +3,11 @@ package main
 import (
 	"strconv"
 	"strings"
-	"testing"
 
 	"github.com/01-edu/z01"
 )
 
-func TestIsPowerOf2(t *testing.T) {
+func main() {
 	var args []string
 	for i := 1; i < 5; i++ {
 		args = append(args, strconv.Itoa(i))
@@ -24,7 +23,7 @@ func TestIsPowerOf2(t *testing.T) {
 	args = append(args, "8388608")
 
 	for _, v := range args {
-		z01.ChallengeMainExam(t, strings.Fields(v)...)
+		z01.ChallengeMain(strings.Fields(v)...)
 	}
-	z01.ChallengeMainExam(t, "1", "2")
+	z01.ChallengeMain("1", "2")
 }

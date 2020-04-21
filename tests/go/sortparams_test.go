@@ -1,12 +1,10 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 )
 
-func TestSortParams(t *testing.T) {
+func main() {
 	args := []string{"1", "a", "2", "A", "3", "b", "4", "C"}
-	z01.ChallengeMain(t, args...)
+	z01.ChallengeMain(args...)
 }

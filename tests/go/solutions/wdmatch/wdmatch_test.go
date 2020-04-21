@@ -2,12 +2,11 @@ package main
 
 import (
 	"strings"
-	"testing"
 
 	"github.com/01-edu/z01"
 )
 
-func TestWdMatch(t *testing.T) {
+func main() {
 	table := append(z01.MultRandWords(),
 		" ",
 		"faya fgvvfdxcacpolhyghbreda",
@@ -17,6 +16,6 @@ func TestWdMatch(t *testing.T) {
 	)
 
 	for _, s := range table {
-		z01.ChallengeMainExam(t, strings.Fields(s)...)
+		z01.ChallengeMain(strings.Fields(s)...)
 	}
 }

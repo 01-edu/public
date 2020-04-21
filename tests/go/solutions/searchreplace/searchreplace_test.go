@@ -1,12 +1,10 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 )
 
-func TestSearchReplace(t *testing.T) {
+func main() {
 	type nodeTest struct {
 		dataSearched    string
 		letterLookedFor string
@@ -46,6 +44,6 @@ func TestSearchReplace(t *testing.T) {
 	)
 
 	for _, arg := range table {
-		z01.ChallengeMainExam(t, arg.dataSearched, arg.letterLookedFor, arg.letterReplacing)
+		z01.ChallengeMain(arg.dataSearched, arg.letterLookedFor, arg.letterReplacing)
 	}
 }

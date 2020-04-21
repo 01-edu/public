@@ -1,12 +1,10 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 )
 
-func TestRot14Prog(t *testing.T) {
+func main() {
 	type nodeTest struct {
 		data []string
 	}
@@ -21,8 +19,8 @@ func TestRot14Prog(t *testing.T) {
 
 	for _, arg := range table {
 		for _, s := range arg.data {
-			z01.ChallengeMainExam(t, ""+s+"")
+			z01.ChallengeMain("" + s + "")
 		}
 	}
-	z01.ChallengeMainExam(t, "", "something", "something1")
+	z01.ChallengeMain("", "something", "something1")
 }

@@ -1,8 +1,6 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 )
 
@@ -10,7 +8,7 @@ type node struct {
 	operations []string
 }
 
-func TestNenokku(t *testing.T) {
+func main() {
 	table := []node{}
 
 	table = append(table,
@@ -50,6 +48,6 @@ func TestNenokku(t *testing.T) {
 	}
 
 	for _, arg := range table {
-		z01.ChallengeMainExam(t, arg.operations...)
+		z01.ChallengeMain(arg.operations...)
 	}
 }

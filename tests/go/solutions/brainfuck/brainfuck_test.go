@@ -2,12 +2,11 @@ package main
 
 import (
 	"strings"
-	"testing"
 
 	"github.com/01-edu/z01"
 )
 
-func TestBrainFuck(t *testing.T) {
+func main() {
 	// individual tests 1)Hello World! 2)Hi 3)abc 4)ABC
 
 	args := []string{"++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.",
@@ -17,6 +16,6 @@ func TestBrainFuck(t *testing.T) {
 		strings.Join([]string{"ld++++++++++++++++++++++++++++++++++++++++++++this+is++a++++comment++++++++++++++[>d+<-]>.+", z01.RandStr(z01.RandIntBetween(1, 10), ".+"), ".+.>++++++++++."}, ""),
 	}
 	for _, v := range args {
-		z01.ChallengeMainExam(t, v)
+		z01.ChallengeMain(v)
 	}
 }

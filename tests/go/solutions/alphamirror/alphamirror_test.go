@@ -1,12 +1,10 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 )
 
-func TestAlphaMirror(t *testing.T) {
+func main() {
 	arg1 := []string{""}
 	arg2 := []string{"One", "ring!"}
 	arg3 := []string{"testing spaces and #!*"}
@@ -16,6 +14,6 @@ func TestAlphaMirror(t *testing.T) {
 	args := [][]string{arg1, arg2, arg3, arg4, arg5, arg6}
 
 	for _, v := range args {
-		z01.ChallengeMainExam(t, v...)
+		z01.ChallengeMain(v...)
 	}
 }

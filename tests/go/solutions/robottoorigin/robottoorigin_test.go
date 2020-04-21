@@ -1,12 +1,10 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 )
 
-func TestRobotToOrigin(t *testing.T) {
+func main() {
 	table := []string{}
 
 	table = append(table,
@@ -20,6 +18,6 @@ func TestRobotToOrigin(t *testing.T) {
 	}
 
 	for _, arg := range table {
-		z01.ChallengeMainExam(t, arg)
+		z01.ChallengeMain(arg)
 	}
 }

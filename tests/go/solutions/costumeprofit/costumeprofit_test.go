@@ -2,7 +2,6 @@ package main
 
 import (
 	"strconv"
-	"testing"
 
 	"github.com/01-edu/z01"
 )
@@ -11,7 +10,7 @@ type node struct {
 	A, B, C, D, E, F int
 }
 
-func TestCostumeProfit(t *testing.T) {
+func main() {
 	table := []node{}
 
 	for i := 0; i < 25; i++ {
@@ -31,6 +30,6 @@ func TestCostumeProfit(t *testing.T) {
 		d := strconv.Itoa(arg.D)
 		e := strconv.Itoa(arg.E)
 		f := strconv.Itoa(arg.F)
-		z01.ChallengeMainExam(t, a, b, c, d, e, f)
+		z01.ChallengeMain(a, b, c, d, e, f)
 	}
 }

@@ -1,12 +1,10 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 )
 
-func TestLastWord(t *testing.T) {
+func main() {
 	args := []string{
 		"FOR PONY",
 		"this ... is sparta, then again, maybe not",
@@ -19,9 +17,9 @@ func TestLastWord(t *testing.T) {
 	}
 
 	for _, v := range args {
-		z01.ChallengeMainExam(t, v)
+		z01.ChallengeMain(v)
 	}
 
-	z01.ChallengeMainExam(t, "a", "b")
-	z01.ChallengeMainExam(t)
+	z01.ChallengeMain("a", "b")
+	z01.ChallengeMain()
 }

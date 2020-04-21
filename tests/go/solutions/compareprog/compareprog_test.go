@@ -1,12 +1,10 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 )
 
-func TestCompareProg(t *testing.T) {
+func main() {
 	type node struct {
 		s         string
 		toCompare string
@@ -43,8 +41,8 @@ func TestCompareProg(t *testing.T) {
 		node{s: "Ola!", toCompare: "Ol"},
 	)
 	for _, arg := range table {
-		z01.ChallengeMainExam(t, arg.s, arg.toCompare)
+		z01.ChallengeMain(arg.s, arg.toCompare)
 	}
-	z01.ChallengeMainExam(t)
-	z01.ChallengeMainExam(t, "1 arg", "2args", "3args")
+	z01.ChallengeMain()
+	z01.ChallengeMain("1 arg", "2args", "3args")
 }
