@@ -8,7 +8,7 @@ import (
 	solutions "../../solutions" // This line is not necessary when testing an exercise with a program
 )
 
-func TestSweerproblem(t *testing.T) {
+func TestSweetProblem(t *testing.T) {
 	type node struct {
 		red   int
 		green int
