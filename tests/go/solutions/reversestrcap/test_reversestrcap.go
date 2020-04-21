@@ -16,7 +16,7 @@ func main() {
 	args = append(args, []string{""})
 
 	for _, v := range args {
-		z01.ChallengeMain(v...)
+		z01.ChallengeMain("reversestrcap", v...)
 	}
-	z01.ChallengeMain()
+	z01.ChallengeMain("reversestrcap")
 }

@@ -17,13 +17,13 @@ func main() {
 	}
 
 	for _, v := range corrArgs {
-		z01.ChallengeMain(v)
+		z01.ChallengeMain("rostring", v)
 	}
 
 	//without parameter
-	z01.ChallengeMain()
+	z01.ChallengeMain("rostring")
 
 	//with more than one parameter
-	z01.ChallengeMain("this", "is")
-	z01.ChallengeMain("not", "good", "for  you")
+	z01.ChallengeMain("rostring", "this", "is")
+	z01.ChallengeMain("rostring", "not", "good", "for  you")
 }

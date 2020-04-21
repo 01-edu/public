@@ -10,6 +10,6 @@ func main() {
 	table = append(table, "abcdefghi jklmnop qrstuvwxyz ABCDEFGHI JKLMNOPQR STUVWXYZ ! ")
 
 	for _, s := range table {
-		z01.ChallengeMain(s)
+		z01.ChallengeMain("switchcase", s)
 	}
 }

@@ -23,8 +23,8 @@ func main() {
 	}
 
 	for _, v := range args {
-		z01.ChallengeMain(v)
+		z01.ChallengeMain("rpncalc", v)
 	}
-	z01.ChallengeMain()
-	z01.ChallengeMain("1 2 * 3 * 4 +", "10 33 - 12 %")
+	z01.ChallengeMain("rpncalc")
+	z01.ChallengeMain("rpncalc", "1 2 * 3 * 4 +", "10 33 - 12 %")
 }

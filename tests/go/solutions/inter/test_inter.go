@@ -25,6 +25,6 @@ func main() {
 	}
 
 	for _, s := range table {
-		z01.ChallengeMain(strings.Fields(s)...)
+		z01.ChallengeMain("inter", strings.Fields(s)...)
 	}
 }

@@ -9,6 +9,6 @@ import (
 func main() {
 	table := append(z01.MultRandWords(), "choumi is the best cat")
 	for _, s := range table {
-		z01.ChallengeMain(strings.Fields(s)...)
+		z01.ChallengeMain("printparams", strings.Fields(s)...)
 	}
 }

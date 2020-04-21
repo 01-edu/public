@@ -49,6 +49,6 @@ func main() {
 	table = append(table, "1 2")
 
 	for _, s := range table {
-		z01.ChallengeMain(strings.Fields(s)...)
+		z01.ChallengeMain("addprimesum", strings.Fields(s)...)
 	}
 }

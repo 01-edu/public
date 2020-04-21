@@ -16,8 +16,8 @@ func main() {
 		"9a LALALA!",
 	)
 	for _, arg := range table {
-		z01.ChallengeMain(arg)
+		z01.ChallengeMain("capitalizeprog", arg)
 	}
-	z01.ChallengeMain("hello", "hihihi")
-	z01.ChallengeMain()
+	z01.ChallengeMain("capitalizeprog", "hello", "hihihi")
+	z01.ChallengeMain("capitalizeprog")
 }

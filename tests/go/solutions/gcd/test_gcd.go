@@ -21,6 +21,6 @@ func main() {
 	}
 
 	for _, v := range args {
-		z01.ChallengeMain(v...)
+		z01.ChallengeMain("gcd", v...)
 	}
 }

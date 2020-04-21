@@ -15,6 +15,6 @@ func main() {
 	}
 	table := []string{"", pathFileName, "quest8.txt asdsada"}
 	for _, s := range table {
-		z01.ChallengeMain(strings.Fields(s)...)
+		z01.ChallengeMain("displayfile", strings.Fields(s)...)
 	}
 }

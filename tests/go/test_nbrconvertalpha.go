@@ -39,7 +39,7 @@ func main() {
 
 	for _, i := range table {
 		for _, a := range i.array {
-			z01.ChallengeMain(strings.Fields((a))...)
+			z01.ChallengeMain("nbrconvertalpha", strings.Fields((a))...)
 		}
 	}
 }

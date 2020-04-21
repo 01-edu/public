@@ -18,10 +18,10 @@ func main() {
 	}
 
 	// No args testig
-	z01.ChallengeMain()
+	z01.ChallengeMain("brackets")
 
 	for _, v := range oneArgs {
-		z01.ChallengeMain(v)
+		z01.ChallengeMain("brackets", v)
 	}
 
 	arg1 := []string{"", "{[(0 + 0)(1 + 1)](3*(-1)){()}}"}
@@ -30,6 +30,6 @@ func main() {
 	multArg := [][]string{arg1, arg2, arg3}
 
 	for _, v := range multArg {
-		z01.ChallengeMain(v...)
+		z01.ChallengeMain("brackets", v...)
 	}
 }

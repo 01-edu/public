@@ -37,6 +37,6 @@ func main() {
 	table = append(table, "9223372036854775809 - 3")
 	table = append(table, "9223372036854775807 * 3")
 	for _, s := range table {
-		z01.ChallengeMain(strings.Fields(s)...)
+		z01.ChallengeMain("doop", strings.Fields(s)...)
 	}
 }

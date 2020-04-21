@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	z01.ChallengeMain()
+	z01.ChallengeMain("printalphabetprog")
 }

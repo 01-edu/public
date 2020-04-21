@@ -13,10 +13,10 @@ func main() {
 	}
 
 	for _, v := range args {
-		z01.ChallengeMain(v)
+		z01.ChallengeMain("cleanstr", v)
 	}
 
 	arg1 := []string{"this is   not", "happening"}
 
-	z01.ChallengeMain(arg1...)
+	z01.ChallengeMain("cleanstr", arg1...)
 }

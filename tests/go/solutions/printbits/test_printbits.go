@@ -20,6 +20,6 @@ func main() {
 	arg = append(arg, z01.RandBasic())
 
 	for _, v := range arg {
-		z01.ChallengeMain(strings.Fields(v)...)
+		z01.ChallengeMain("printbits", strings.Fields(v)...)
 	}
 }

@@ -48,6 +48,6 @@ func main() {
 	}
 
 	for _, arg := range table {
-		z01.ChallengeMain(arg.operations...)
+		z01.ChallengeMain("nenokku", arg.operations...)
 	}
 }

@@ -84,8 +84,8 @@ func main() {
 		node{s: "bbbbbab", base: "-ab"},
 	)
 	for _, arg := range table {
-		z01.ChallengeMain(arg.s, arg.base)
+		z01.ChallengeMain("atoibaseprog", arg.s, arg.base)
 	}
-	z01.ChallengeMain()
-	z01.ChallengeMain("125", "0123456789", "something")
+	z01.ChallengeMain("atoibaseprog")
+	z01.ChallengeMain("atoibaseprog", "125", "0123456789", "something")
 }

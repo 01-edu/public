@@ -22,6 +22,6 @@ func main() {
 	args := [][]string{arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8}
 
 	for _, v := range args {
-		z01.ChallengeMain(v...)
+		z01.ChallengeMain("union", v...)
 	}
 }

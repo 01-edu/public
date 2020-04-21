@@ -60,6 +60,6 @@ func main() {
 	//We can use the ChallengeMainExam function.
 
 	for _, arg := range table {
-		z01.ChallengeMain(arg)
+		z01.ChallengeMain("balancedstring", arg)
 	}
 }

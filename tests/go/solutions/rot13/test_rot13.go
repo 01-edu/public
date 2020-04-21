@@ -10,8 +10,8 @@ func main() {
 	table = append(table, "a b c d e f g h ijklmnopqrstuvwxyz A B C D E FGHIJKLMNOPRSTUVWXYZ")
 
 	for _, s := range table {
-		z01.ChallengeMain(s)
+		z01.ChallengeMain("rot13", s)
 	}
-	z01.ChallengeMain("1 argument", "2 arguments")
-	z01.ChallengeMain("1 argument", "2 arguments", "3 arguments")
+	z01.ChallengeMain("rot13", "1 argument", "2 arguments")
+	z01.ChallengeMain("rot13", "1 argument", "2 arguments", "3 arguments")
 }
