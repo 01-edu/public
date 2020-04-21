@@ -1,4 +1,4 @@
-## anagram
+## isanagram
 
 ## **WARNING! VERY IMPORTANT!**
 
@@ -14,7 +14,7 @@ This means that:
 ### Instructions
 
 Write a function that returns `true` if two strings are anagrams, otherwise returns `false`.
-Anagram is a string made by using the letters of another string in a different order.
+An anagram is a string made by using the letters of another string in a different order.
 
 Only lower case characters will be given.
 
@@ -58,8 +58,8 @@ func main() {
 Its output:
 
 ```bash
-$> go build
-$> ./main
+$ go build
+$ ./main
 true
 false
 true
