@@ -18,6 +18,6 @@ func main() {
 		}
 		solutions.Raid1d(firstArg, secondArg)
 	} else {
-		fmt.Println("to much arguments")
+		fmt.Println("too much arguments")
 	}
 }
