@@ -13,8 +13,8 @@ func main() {
 	table = append(table, "1")
 
 	for _, s := range table {
-		z01.ChallengeMain(strings.Fields(s)...)
+		z01.ChallengeMain("displaya", strings.Fields(s)...)
 	}
 
-	z01.ChallengeMain("1", "a")
+	z01.ChallengeMain("displaya", "1", "a")
 }

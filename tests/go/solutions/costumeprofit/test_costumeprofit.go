@@ -30,6 +30,6 @@ func main() {
 		d := strconv.Itoa(arg.D)
 		e := strconv.Itoa(arg.E)
 		f := strconv.Itoa(arg.F)
-		z01.ChallengeMain(a, b, c, d, e, f)
+		z01.ChallengeMain("costumeprofit", a, b, c, d, e, f)
 	}
 }

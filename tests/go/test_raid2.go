@@ -197,15 +197,15 @@ func main() {
 	invalid := [][]string{argin1, argin2, argin3, argin4, argin5}
 
 	for _, v := range valid {
-		z01.ChallengeMain(v...)
+		z01.ChallengeMain("raid2", v...)
 	}
 
 	for _, i := range invalid {
-		z01.ChallengeMain(i...)
+		z01.ChallengeMain("raid2", i...)
 	}
 
 	// No arguments
-	z01.ChallengeMain()
+	z01.ChallengeMain("raid2")
 	// Wrong number of arguments
-	z01.ChallengeMain("not", "a", "sudoku")
+	z01.ChallengeMain("raid2", "not", "a", "sudoku")
 }

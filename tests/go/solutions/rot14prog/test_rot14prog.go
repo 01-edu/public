@@ -19,8 +19,8 @@ func main() {
 
 	for _, arg := range table {
 		for _, s := range arg.data {
-			z01.ChallengeMain("" + s + "")
+			z01.ChallengeMain("rot14prog", "" + s + "")
 		}
 	}
-	z01.ChallengeMain("", "something", "something1")
+	z01.ChallengeMain("rot14prog", "", "something", "something1")
 }

@@ -24,6 +24,6 @@ func main() {
 	}
 
 	for _, s := range table {
-		z01.ChallengeMain(strings.Fields(s)...)
+		z01.ChallengeMain("printhex", strings.Fields(s)...)
 	}
 }

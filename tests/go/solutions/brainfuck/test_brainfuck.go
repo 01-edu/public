@@ -16,6 +16,6 @@ func main() {
 		strings.Join([]string{"ld++++++++++++++++++++++++++++++++++++++++++++this+is++a++++comment++++++++++++++[>d+<-]>.+", z01.RandStr(z01.RandIntBetween(1, 10), ".+"), ".+.>++++++++++."}, ""),
 	}
 	for _, v := range args {
-		z01.ChallengeMain(v)
+		z01.ChallengeMain("brainfuck", v)
 	}
 }

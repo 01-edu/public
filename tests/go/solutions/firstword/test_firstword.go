@@ -16,6 +16,6 @@ func main() {
 	table = append(table, "salut ! !")
 
 	for _, s := range table {
-		z01.ChallengeMain(s)
+		z01.ChallengeMain("firstword", s)
 	}
 }

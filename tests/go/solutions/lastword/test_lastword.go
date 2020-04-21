@@ -17,9 +17,9 @@ func main() {
 	}
 
 	for _, v := range args {
-		z01.ChallengeMain(v)
+		z01.ChallengeMain("lastword", v)
 	}
 
-	z01.ChallengeMain("a", "b")
-	z01.ChallengeMain()
+	z01.ChallengeMain("lastword", "a", "b")
+	z01.ChallengeMain("lastword")
 }

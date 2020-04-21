@@ -15,6 +15,6 @@ func main() {
 	}
 
 	for _, v := range arr {
-		z01.ChallengeMain(v.first...)
+		z01.ChallengeMain("piglatin", v.first...)
 	}
 }

@@ -38,6 +38,6 @@ func main() {
 	table = append(table, "9223372036854775807 * 3")
 
 	for _, s := range table {
-		z01.ChallengeMain(strings.Fields(s)...)
+		z01.ChallengeMain("doopprog", strings.Fields(s)...)
 	}
 }

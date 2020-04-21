@@ -19,6 +19,6 @@ func main() {
 		rand = append(rand, strconv.Itoa(z01.RandIntBetween(0, 4000)))
 	}
 	for _, v := range rand {
-		z01.ChallengeMain(v)
+		z01.ChallengeMain("romannumbers", v)
 	}
 }

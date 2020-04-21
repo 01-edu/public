@@ -23,7 +23,7 @@ func main() {
 	args = append(args, "8388608")
 
 	for _, v := range args {
-		z01.ChallengeMain(strings.Fields(v)...)
+		z01.ChallengeMain("ispowerof2", strings.Fields(v)...)
 	}
-	z01.ChallengeMain("1", "2")
+	z01.ChallengeMain("ispowerof2", "1", "2")
 }

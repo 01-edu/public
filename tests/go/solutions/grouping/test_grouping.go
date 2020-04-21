@@ -31,7 +31,7 @@ func main() {
 	arr = append(arr, helper)
 
 	for _, s := range arr {
-		z01.ChallengeMain(s.first, s.second)
+		z01.ChallengeMain("grouping", s.first, s.second)
 	}
 }
 

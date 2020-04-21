@@ -16,6 +16,6 @@ func main() {
 	)
 
 	for _, s := range table {
-		z01.ChallengeMain(strings.Fields(s)...)
+		z01.ChallengeMain("wdmatch", strings.Fields(s)...)
 	}
 }

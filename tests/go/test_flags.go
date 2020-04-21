@@ -30,20 +30,20 @@ func main() {
 
 	node.randArg = append(node.randArg, "")
 
-	z01.ChallengeMain(node.flagsShorthand[0]+"v2", "v1")
-	z01.ChallengeMain(node.flagsShorthand[1], "v1")
-	z01.ChallengeMain("-h")
-	z01.ChallengeMain("--help")
-	z01.ChallengeMain()
+	z01.ChallengeMain("flags", node.flagsShorthand[0]+"v2", "v1")
+	z01.ChallengeMain("flags", node.flagsShorthand[1], "v1")
+	z01.ChallengeMain("flags", "-h")
+	z01.ChallengeMain("flags", "--help")
+	z01.ChallengeMain("flags")
 
 	for _, v2 := range node.randArgFlag {
 		for _, v1 := range node.randArg {
-			z01.ChallengeMain(node.flags[0]+v2, node.flags[1], v1)
+			z01.ChallengeMain("flags", node.flags[0]+v2, node.flags[1], v1)
 		}
 	}
 	for _, v2 := range node.randArgFlag {
 		for _, v1 := range node.randArg {
-			z01.ChallengeMain(node.flagsShorthand[0]+v2, node.flagsShorthand[1], v1)
+			z01.ChallengeMain("flags", node.flagsShorthand[0]+v2, node.flagsShorthand[1], v1)
 		}
 	}
 }

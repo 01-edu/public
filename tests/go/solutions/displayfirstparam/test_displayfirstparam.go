@@ -13,6 +13,6 @@ func main() {
 	table = append(table, "1 2 3")
 
 	for _, s := range table {
-		z01.ChallengeMain(strings.Fields(s)...)
+		z01.ChallengeMain("displayfirstparam", strings.Fields(s)...)
 	}
 }

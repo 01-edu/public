@@ -27,6 +27,6 @@ func main() {
 	table = append(table, "1000003")
 
 	for _, s := range table {
-		z01.ChallengeMain(strings.Fields(s)...)
+		z01.ChallengeMain("fprime", strings.Fields(s)...)
 	}
 }

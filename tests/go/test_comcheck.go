@@ -17,6 +17,6 @@ func main() {
 		"as ds galaxy 01 asd")
 
 	for _, s := range table {
-		z01.ChallengeMain(strings.Fields(s)...)
+		z01.ChallengeMain("comcheck", strings.Fields(s)...)
 	}
 }

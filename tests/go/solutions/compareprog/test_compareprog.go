@@ -41,8 +41,8 @@ func main() {
 		node{s: "Ola!", toCompare: "Ol"},
 	)
 	for _, arg := range table {
-		z01.ChallengeMain(arg.s, arg.toCompare)
+		z01.ChallengeMain("compareprog", arg.s, arg.toCompare)
 	}
-	z01.ChallengeMain()
-	z01.ChallengeMain("1 arg", "2args", "3args")
+	z01.ChallengeMain("compareprog")
+	z01.ChallengeMain("compareprog", "1 arg", "2args", "3args")
 }

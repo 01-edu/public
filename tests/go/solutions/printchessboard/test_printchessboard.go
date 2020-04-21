@@ -27,6 +27,6 @@ func main() {
 	}
 
 	for _, v := range table {
-		z01.ChallengeMain(v...)
+		z01.ChallengeMain("printchessboard", v...)
 	}
 }

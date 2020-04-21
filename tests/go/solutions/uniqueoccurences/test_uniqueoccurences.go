@@ -20,6 +20,6 @@ func main() {
 	}
 
 	for _, arg := range table {
-		z01.ChallengeMain(arg)
+		z01.ChallengeMain("uniqueoccurences", arg)
 	}
 }

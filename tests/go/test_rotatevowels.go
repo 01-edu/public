@@ -18,12 +18,12 @@ func main() {
 	arr = append(arr, "")
 
 	for _, v := range arr {
-		z01.ChallengeMain(strings.Fields(v)...)
+		z01.ChallengeMain("rotatevowels", strings.Fields(v)...)
 	}
-	z01.ChallengeMain("Hello World")
-	z01.ChallengeMain("HEllO World", "problem solved")
-	z01.ChallengeMain("str", "shh", "psst")
-	z01.ChallengeMain("happy thoughts", "good luck")
-	z01.ChallengeMain("al's elEphAnt is overly underweight!")
-	z01.ChallengeMain("aEi", "Ou")
+	z01.ChallengeMain("rotatevowels", "Hello World")
+	z01.ChallengeMain("rotatevowels", "HEllO World", "problem solved")
+	z01.ChallengeMain("rotatevowels", "str", "shh", "psst")
+	z01.ChallengeMain("rotatevowels", "happy thoughts", "good luck")
+	z01.ChallengeMain("rotatevowels", "al's elEphAnt is overly underweight!")
+	z01.ChallengeMain("rotatevowels", "aEi", "Ou")
 }

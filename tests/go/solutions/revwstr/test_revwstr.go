@@ -26,9 +26,9 @@ func main() {
 	}
 
 	for _, s := range table {
-		z01.ChallengeMain(s)
+		z01.ChallengeMain("revwstr", s)
 	}
 
-	z01.ChallengeMain()
-	z01.ChallengeMain("1param", "2param", "3param", "4param")
+	z01.ChallengeMain("revwstr")
+	z01.ChallengeMain("revwstr", "1param", "2param", "3param", "4param")
 }
