@@ -1,14 +1,12 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "../../solutions" // This line is not necessary when testing an exercise with a program
 )
 
-func TestSweetProblem(t *testing.T) {
+func main() {
 	type node struct {
 		red   int
 		green int
@@ -54,6 +52,6 @@ func TestSweetProblem(t *testing.T) {
 	// be the ChallengeMainExam function)
 
 	for _, arg := range table {
-		z01.Challenge(t, Sweetproblem, solutions.Sweetproblem, arg.red, arg.green, arg.blue)
+		z01.Challenge("SweetProblem", Sweetproblem, solutions.Sweetproblem, arg.red, arg.green, arg.blue)
 	}
 }

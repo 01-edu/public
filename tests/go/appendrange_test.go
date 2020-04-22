@@ -1,15 +1,13 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestAppendRange(t *testing.T) {
+func main() {
 	type node struct {
 		min int
 		max int
@@ -46,6 +44,6 @@ func TestAppendRange(t *testing.T) {
 	)
 
 	for _, arg := range table {
-		z01.Challenge(t, student.AppendRange, solutions.AppendRange, arg.min, arg.max)
+		z01.Challenge("AppendRange", student.AppendRange, solutions.AppendRange, arg.min, arg.max)
 	}
 }

@@ -1,15 +1,13 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solution "./solutions"
 	student "./student"
 )
 
-func TestRot14(t *testing.T) {
+func main() {
 	type nodeTest struct {
 		data []string
 	}
@@ -24,7 +22,7 @@ func TestRot14(t *testing.T) {
 
 	for _, arg := range table {
 		for _, s := range arg.data {
-			z01.Challenge(t, solution.Rot14, student.Rot14, s)
+			z01.Challenge("Rot14", solution.Rot14, student.Rot14, s)
 		}
 	}
 }

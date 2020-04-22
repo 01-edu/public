@@ -1,15 +1,13 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestForEach(t *testing.T) {
+func main() {
 	functionsArray := []func(int){solutions.Add0, solutions.Add1, solutions.Add2, solutions.Add3}
 
 	type node struct {
@@ -36,6 +34,6 @@ func TestForEach(t *testing.T) {
 	})
 
 	for _, arg := range table {
-		z01.Challenge(t, student.ForEach, solutions.ForEach, arg.f, arg.arr)
+		z01.Challenge("ForEach", student.ForEach, solutions.ForEach, arg.f, arg.arr)
 	}
 }

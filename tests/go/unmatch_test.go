@@ -1,14 +1,12 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	solutions "./solutions"
 	student "./student"
 	"github.com/01-edu/z01"
 )
 
-func TestUnmatch(t *testing.T) {
+func main() {
 	arg1 := []int{1, 1, 2, 3, 4, 3, 4}
 	arg2 := []int{1, 1, 2, 4, 3, 4, 2, 3, 4}
 	arg3 := []int{1, 2, 1, 1, 4, 5, 5, 4, 1, 7}
@@ -26,6 +24,6 @@ func TestUnmatch(t *testing.T) {
 	args := [][]int{arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8}
 
 	for _, v := range args {
-		z01.Challenge(t, student.Unmatch, solutions.Unmatch, v)
+		z01.Challenge("Unmatch", student.Unmatch, solutions.Unmatch, v)
 	}
 }

@@ -1,14 +1,12 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "../../solutions" // This line is not necessary when testing an exercise with a program
 )
 
-func TestReachableNumber(t *testing.T) {
+func main() {
 	type node struct {
 		n int
 	}
@@ -41,6 +39,6 @@ func TestReachableNumber(t *testing.T) {
 	// be the ChallengeMainExam function)
 
 	for _, arg := range table {
-		z01.Challenge(t, Reachablenumber, solutions.Reachablenumber, arg.n)
+		z01.Challenge("ReachableNumber", Reachablenumber, solutions.Reachablenumber, arg.n)
 	}
 }

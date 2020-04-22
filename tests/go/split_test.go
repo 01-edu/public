@@ -1,9 +1,8 @@
-package student_test
+package main
 
 import (
 	"math/rand"
 	"strings"
-	"testing"
 
 	"github.com/01-edu/z01"
 
@@ -11,7 +10,7 @@ import (
 	student "./student"
 )
 
-func TestSplit(t *testing.T) {
+func main() {
 	separators := []string{"!=HA=!",
 		"!==!",
 		"    ",
@@ -41,6 +40,6 @@ func TestSplit(t *testing.T) {
 		node{str: "HelloHAhowHAareHAyou?", sep: "HA"})
 
 	for _, arg := range table {
-		z01.Challenge(t, student.Split, solutions.Split, arg.str, arg.sep)
+		z01.Challenge("Split", student.Split, solutions.Split, arg.str, arg.sep)
 	}
 }

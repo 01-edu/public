@@ -1,8 +1,6 @@
 package main
 
 import (
-	"testing"
-
 	solutions "../../solutions"
 	"github.com/01-edu/z01"
 )
@@ -15,7 +13,7 @@ func randomSize() []int {
 	return randSlice
 }
 
-func TestChunk(t *testing.T) {
+func main() {
 	type node struct {
 		slice []int
 		ch    int
@@ -37,6 +35,6 @@ func TestChunk(t *testing.T) {
 		ch:    0,
 	})
 	for _, args := range table {
-		z01.Challenge(t, Chunk, solutions.Chunk, args.slice, args.ch)
+		z01.Challenge("Chunk", Chunk, solutions.Chunk, args.slice, args.ch)
 	}
 }

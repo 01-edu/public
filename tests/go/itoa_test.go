@@ -1,16 +1,14 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	solutions "./solutions"
 	student "./student"
 	"github.com/01-edu/z01"
 )
 
-func TestItoa(t *testing.T) {
+func main() {
 	for i := 0; i < 50; i++ {
 		arg := z01.RandIntBetween(-2000000000, 2000000000)
-		z01.Challenge(t, student.Itoa, solutions.Itoa, arg)
+		z01.Challenge("Itoa", student.Itoa, solutions.Itoa, arg)
 	}
 }

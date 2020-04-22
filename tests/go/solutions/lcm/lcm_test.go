@@ -1,14 +1,12 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "../../solutions" // This line is not necessary when testing an exercise with a program
 )
 
-func TestLcm(t *testing.T) {
+func main() {
 	type node struct {
 		first  int
 		second int
@@ -36,6 +34,6 @@ func TestLcm(t *testing.T) {
 	}
 
 	for _, arg := range table {
-		z01.Challenge(t, Lcm, solutions.Lcm, arg.first, arg.second)
+		z01.Challenge("Lcm", Lcm, solutions.Lcm, arg.first, arg.second)
 	}
 }

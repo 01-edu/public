@@ -1,14 +1,12 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	solutions "./solutions"
 	student "./student"
 	"github.com/01-edu/z01"
 )
 
-func TestTrimAtoi(t *testing.T) {
+func main() {
 	array := []string{"",
 		"12345",
 		"str123ing45",
@@ -20,7 +18,7 @@ func TestTrimAtoi(t *testing.T) {
 		z01.RandAlnum()}
 	array = stringsToTrimAtoi(array)
 	for i := range array {
-		z01.Challenge(t, student.TrimAtoi, solutions.TrimAtoi, array[i])
+		z01.Challenge("TrimAtoi", student.TrimAtoi, solutions.TrimAtoi, array[i])
 	}
 }
 

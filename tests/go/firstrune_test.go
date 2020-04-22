@@ -1,15 +1,13 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestFirstRune(t *testing.T) {
+func main() {
 	table := append(
 		z01.MultRandASCII(),
 		"Hello!",
@@ -18,6 +16,6 @@ func TestFirstRune(t *testing.T) {
 		"♥01",
 	)
 	for _, arg := range table {
-		z01.Challenge(t, student.FirstRune, solutions.FirstRune, arg)
+		z01.Challenge("FirstRune", student.FirstRune, solutions.FirstRune, arg)
 	}
 }

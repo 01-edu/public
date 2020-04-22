@@ -1,15 +1,13 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestBasicJoin(t *testing.T) {
+func main() {
 	table := [][]string{}
 
 	// 30 valid pair of ramdom slice of strings to concatenate
@@ -20,6 +18,6 @@ func TestBasicJoin(t *testing.T) {
 		[]string{"Hello!", " How are you?", "well and yourself?"},
 	)
 	for _, arg := range table {
-		z01.Challenge(t, student.BasicJoin, solutions.BasicJoin, arg)
+		z01.Challenge("BasicJoin", student.BasicJoin, solutions.BasicJoin, arg)
 	}
 }

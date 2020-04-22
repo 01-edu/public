@@ -1,20 +1,18 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestToLower(t *testing.T) {
+func main() {
 	table := append(
 		z01.MultRandASCII(),
 		"Hello! How are you?",
 	)
 	for _, arg := range table {
-		z01.Challenge(t, student.ToLower, solutions.ToLower, arg)
+		z01.Challenge("ToLower", student.ToLower, solutions.ToLower, arg)
 	}
 }

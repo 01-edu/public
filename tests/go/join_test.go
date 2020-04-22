@@ -1,14 +1,12 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	solutions "./solutions"
 	student "./student"
 	"github.com/01-edu/z01"
 )
 
-func TestJoin(t *testing.T) {
+func main() {
 	arg1 := []string{"hello", "how", "are", "you", "doing"}
 	arg2 := []string{"fine", "and", "you"}
 	arg3 := []string{"I'm", "O.K."}
@@ -22,6 +20,6 @@ func TestJoin(t *testing.T) {
 		//random position for the array of separators
 		posS := z01.RandIntBetween(0, len(seps)-1)
 
-		z01.Challenge(t, student.Join, solutions.Join, args[posA], seps[posS])
+		z01.Challenge("Join", student.Join, solutions.Join, args[posA], seps[posS])
 	}
 }

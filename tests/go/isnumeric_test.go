@@ -1,8 +1,7 @@
-package student_test
+package main
 
 import (
 	"strconv"
-	"testing"
 
 	"github.com/01-edu/z01"
 
@@ -10,7 +9,7 @@ import (
 	student "./student"
 )
 
-func TestIsNumeric(t *testing.T) {
+func main() {
 	// 15 unvalid strings in the table
 	table := z01.MultRandASCII()
 
@@ -35,6 +34,6 @@ func TestIsNumeric(t *testing.T) {
 		"01,02,03",
 	)
 	for _, arg := range table {
-		z01.Challenge(t, student.IsNumeric, solutions.IsNumeric, arg)
+		z01.Challenge("IsNumeric", student.IsNumeric, solutions.IsNumeric, arg)
 	}
 }

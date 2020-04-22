@@ -1,15 +1,13 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestStrRev(t *testing.T) {
+func main() {
 	table := append(
 		z01.MultRandASCII(),
 		"Hello!",
@@ -17,6 +15,6 @@ func TestStrRev(t *testing.T) {
 		"Hola!",
 	)
 	for _, arg := range table {
-		z01.Challenge(t, student.StrRev, solutions.StrRev, arg)
+		z01.Challenge("StrRev", student.StrRev, solutions.StrRev, arg)
 	}
 }

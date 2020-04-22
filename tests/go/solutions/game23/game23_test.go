@@ -1,8 +1,6 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "../../solutions" // This line is not necessary when testing an exercise with a program
@@ -25,7 +23,7 @@ func nd(a, b int) int {
 	return -1
 }
 
-func TestGame23(t *testing.T) {
+func main() {
 	// Declaration of the node that is going to take the group of arguments that are going to
 	// inputed during each iteration of a Challenge between the student and the staff solution.
 	// (note: a node is not always necessary but in this case it makes the writing of the test easier)
@@ -94,7 +92,7 @@ func TestGame23(t *testing.T) {
 	// be the ChallengeMainExam function)
 
 	for _, arg := range table {
-		z01.Challenge(t, Game23, solutions.Game23, arg.init, arg.fin)
+		z01.Challenge("Game23", Game23, solutions.Game23, arg.init, arg.fin)
 	}
 
 	// the z01.Challenge function is here applied to each argument of the table. It musts contains:

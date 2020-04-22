@@ -1,8 +1,6 @@
 package main
 
 import (
-	"testing"
-
 	solutions "../../solutions"
 	"github.com/01-edu/z01"
 )
@@ -11,7 +9,7 @@ type node struct {
 	big, little string
 }
 
-func TestDoppelGangerProg(t *testing.T) {
+func main() {
 	table := []node{}
 
 	table = append(table,
@@ -48,6 +46,6 @@ func TestDoppelGangerProg(t *testing.T) {
 	}
 
 	for _, arg := range table {
-		z01.Challenge(t, DoppelGanger, solutions.DoppelGanger, arg.big, arg.little)
+		z01.Challenge("DoppelGangerProg", DoppelGanger, solutions.DoppelGanger, arg.big, arg.little)
 	}
 }

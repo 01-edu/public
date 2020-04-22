@@ -1,15 +1,13 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestCountIf(t *testing.T) {
+func main() {
 	functionsArray := []func(string) bool{solutions.IsNumeric, solutions.IsLower, solutions.IsUpper}
 
 	type node struct {
@@ -62,6 +60,6 @@ func TestCountIf(t *testing.T) {
 	)
 
 	for _, arg := range table {
-		z01.Challenge(t, student.CountIf, solutions.CountIf, arg.f, arg.arr)
+		z01.Challenge("CountIf", student.CountIf, solutions.CountIf, arg.f, arg.arr)
 	}
 }

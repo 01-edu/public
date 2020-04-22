@@ -1,14 +1,12 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	solutions "./solutions"
 	student "./student"
 	"github.com/01-edu/z01"
 )
 
-func TestStrLen(t *testing.T) {
+func main() {
 	randomStringCharset := "a b c d e f g h ijklmnopqrstuvwxyz A B C D E FGHIJKLMNOPRSTUVWXYZ"
 
 	table := []string{}
@@ -21,6 +19,6 @@ func TestStrLen(t *testing.T) {
 	table = append(table, randomStringCharset)
 
 	for _, s := range table {
-		z01.Challenge(t, solutions.StrLen, student.StrLen, s)
+		z01.Challenge("StrLen", solutions.StrLen, student.StrLen, s)
 	}
 }

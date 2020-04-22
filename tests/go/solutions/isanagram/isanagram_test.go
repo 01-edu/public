@@ -1,14 +1,12 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "../../solutions" // This line is not necessary when testing an exercise with a program
 )
 
-func TestAnagram(t *testing.T) {
+func main() {
 	type node struct {
 		s string
 		t string
@@ -45,6 +43,6 @@ func TestAnagram(t *testing.T) {
 	}
 
 	for _, arg := range table {
-		z01.Challenge(t, IsAnagram, solutions.IsAnagram, arg.s, arg.t)
+		z01.Challenge("IsAnagram", IsAnagram, solutions.IsAnagram, arg.s, arg.t)
 	}
 }

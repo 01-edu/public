@@ -1,8 +1,7 @@
-package student_test
+package main
 
 import (
 	"math/rand"
-	"testing"
 
 	"github.com/01-edu/z01"
 
@@ -10,7 +9,7 @@ import (
 	student "./student"
 )
 
-func TestIsPrintable(t *testing.T) {
+func main() {
 	// 15 unvalid strings in the table
 	table := z01.MultRandASCII()
 
@@ -45,6 +44,6 @@ func TestIsPrintable(t *testing.T) {
 		"\n",
 	)
 	for _, arg := range table {
-		z01.Challenge(t, student.IsPrintable, solutions.IsPrintable, arg)
+		z01.Challenge("IsPrintable", student.IsPrintable, solutions.IsPrintable, arg)
 	}
 }

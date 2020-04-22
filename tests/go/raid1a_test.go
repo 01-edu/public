@@ -1,14 +1,12 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	solutions "./solutions"
 	student "./student"
 	"github.com/01-edu/z01"
 )
 
-func TestRaid1a(t *testing.T) {
+func main() {
 	// testing examples of subjects
 	table := []int{
 		5, 3,
@@ -28,7 +26,7 @@ func TestRaid1a(t *testing.T) {
 	//Tests all possibilities including 0 0, -x y, x -y
 	for i := 0; i < len(table); i = i + 2 {
 		if i != len(table)-1 {
-			z01.Challenge(t, solutions.Raid1a, student.Raid1a, table[i], table[i+1])
+			z01.Challenge("Raid1a", solutions.Raid1a, student.Raid1a, table[i], table[i+1])
 		}
 	}
 }

@@ -1,8 +1,7 @@
-package student_test
+package main
 
 import (
 	"sort"
-	"testing"
 
 	"github.com/01-edu/z01"
 
@@ -10,7 +9,7 @@ import (
 	student "./student"
 )
 
-func TestIsSorted(t *testing.T) {
+func main() {
 	functionsArray := []func(int, int) int{solutions.IsSortedByDiff, solutions.IsSortedBy1, solutions.IsSortedBy10}
 
 	type node struct {
@@ -76,6 +75,6 @@ func TestIsSorted(t *testing.T) {
 	})
 
 	for _, arg := range table {
-		z01.Challenge(t, student.IsSorted, solutions.IsSorted, arg.f, arg.arr)
+		z01.Challenge("IsSorted", student.IsSorted, solutions.IsSorted, arg.f, arg.arr)
 	}
 }

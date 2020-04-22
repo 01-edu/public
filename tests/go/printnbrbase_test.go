@@ -1,15 +1,13 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestPrintNbrBase(t *testing.T) {
+func main() {
 	type node struct {
 		n    int
 		base string
@@ -46,6 +44,6 @@ func TestPrintNbrBase(t *testing.T) {
 		node{n: z01.MinInt, base: "0123456789"},
 	)
 	for _, arg := range table {
-		z01.Challenge(t, student.PrintNbrBase, solutions.PrintNbrBase, arg.n, arg.base)
+		z01.Challenge("PrintNbrBase", student.PrintNbrBase, solutions.PrintNbrBase, arg.n, arg.base)
 	}
 }

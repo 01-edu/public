@@ -1,8 +1,7 @@
-package student_test
+package main
 
 import (
 	"math/bits"
-	"testing"
 
 	"github.com/01-edu/z01"
 
@@ -10,7 +9,7 @@ import (
 	student "./student"
 )
 
-func TestIterativeFactorial(t *testing.T) {
+func main() {
 	table := append(
 		z01.MultRandInt(),
 		z01.IntRange(0, 12)...,
@@ -19,6 +18,6 @@ func TestIterativeFactorial(t *testing.T) {
 		table = append(table, z01.IntRange(13, 20)...)
 	}
 	for _, arg := range table {
-		z01.Challenge(t, student.IterativeFactorial, solutions.IterativeFactorial, arg)
+		z01.Challenge("IterativeFactorial", student.IterativeFactorial, solutions.IterativeFactorial, arg)
 	}
 }

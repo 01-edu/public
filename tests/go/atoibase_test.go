@@ -1,8 +1,6 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
@@ -10,7 +8,7 @@ import (
 )
 
 // this is the function that creates the TESTS
-func TestAtoiBase(t *testing.T) {
+func main() {
 	type node struct {
 		s    string
 		base string
@@ -44,6 +42,6 @@ func TestAtoiBase(t *testing.T) {
 		node{s: "bbbbbab", base: "-ab"},
 	)
 	for _, arg := range table {
-		z01.Challenge(t, student.AtoiBase, solutions.AtoiBase, arg.s, arg.base)
+		z01.Challenge("AtoiBase", student.AtoiBase, solutions.AtoiBase, arg.s, arg.base)
 	}
 }

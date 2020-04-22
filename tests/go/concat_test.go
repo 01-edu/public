@@ -1,15 +1,13 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestConcat(t *testing.T) {
+func main() {
 	table := [][]string{}
 
 	// 30 valid pair of ramdom strings to concatenate
@@ -21,6 +19,6 @@ func TestConcat(t *testing.T) {
 		[]string{"Hello!", " How are you?"},
 	)
 	for _, arg := range table {
-		z01.Challenge(t, student.Concat, solutions.Concat, arg[0], arg[1])
+		z01.Challenge("Concat", student.Concat, solutions.Concat, arg[0], arg[1])
 	}
 }

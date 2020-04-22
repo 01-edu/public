@@ -1,8 +1,7 @@
-package student_test
+package main
 
 import (
 	"math/bits"
-	"testing"
 
 	"github.com/01-edu/z01"
 
@@ -10,7 +9,7 @@ import (
 	student "./student"
 )
 
-func TestRecursiveFactorial(t *testing.T) {
+func main() {
 	table := append(
 		z01.MultRandInt(),
 		z01.IntRange(0, 12)...,
@@ -19,6 +18,6 @@ func TestRecursiveFactorial(t *testing.T) {
 		table = append(table, z01.IntRange(13, 20)...)
 	}
 	for _, arg := range table {
-		z01.Challenge(t, student.RecursiveFactorial, solutions.RecursiveFactorial, arg)
+		z01.Challenge("RecursiveFactorial", student.RecursiveFactorial, solutions.RecursiveFactorial, arg)
 	}
 }
