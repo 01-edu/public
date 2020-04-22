@@ -1,15 +1,13 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestFibonacci(t *testing.T) {
+func main() {
 	table := append(
 		z01.MultRandIntBetween(0, 25),
 		4,
@@ -17,6 +15,6 @@ func TestFibonacci(t *testing.T) {
 		-5,
 	)
 	for _, arg := range table {
-		z01.Challenge(t, student.Fibonacci, solutions.Fibonacci, arg)
+		z01.Challenge("Fibonacci", student.Fibonacci, solutions.Fibonacci, arg)
 	}
 }

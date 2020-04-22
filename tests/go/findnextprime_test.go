@@ -1,15 +1,13 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestFindNextPrime(t *testing.T) {
+func main() {
 	table := append(
 		z01.MultRandIntBetween(-1000000, 1000000),
 		0,
@@ -31,6 +29,6 @@ func TestFindNextPrime(t *testing.T) {
 		1000000088,
 	)
 	for _, arg := range table {
-		z01.Challenge(t, student.FindNextPrime, solutions.FindNextPrime, arg)
+		z01.Challenge("FindNextPrime", student.FindNextPrime, solutions.FindNextPrime, arg)
 	}
 }

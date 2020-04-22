@@ -1,14 +1,12 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "../../solutions" // This line is not necessary when testing an exercise with a program
 )
 
-func TestHalfContestProg(t *testing.T) {
+func main() {
 	type node struct {
 		h1 int
 		m1 int
@@ -48,6 +46,6 @@ func TestHalfContestProg(t *testing.T) {
 	// be the ChallengeMainExam function)
 
 	for _, arg := range table {
-		z01.Challenge(t, Halfcontest, solutions.Halfcontest, arg.h1, arg.m1, arg.h2, arg.m2)
+		z01.Challenge("HalfContestProg", Halfcontest, solutions.Halfcontest, arg.h1, arg.m1, arg.h2, arg.m2)
 	}
 }

@@ -1,15 +1,13 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestIsAlpha(t *testing.T) {
+func main() {
 	table := append(
 		z01.MultRandASCII(),
 		"Hello! €How are you?",
@@ -23,6 +21,6 @@ func TestIsAlpha(t *testing.T) {
 		"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!",
 	)
 	for _, arg := range table {
-		z01.Challenge(t, student.IsAlpha, solutions.IsAlpha, arg)
+		z01.Challenge("IsAlpha", student.IsAlpha, solutions.IsAlpha, arg)
 	}
 }

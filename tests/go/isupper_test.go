@@ -1,15 +1,13 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestIsUpper(t *testing.T) {
+func main() {
 	// 15 unvalid strings in the table
 	table := z01.MultRandASCII()
 
@@ -44,6 +42,6 @@ func TestIsUpper(t *testing.T) {
 		"HELLO!",
 	)
 	for _, arg := range table {
-		z01.Challenge(t, student.IsUpper, solutions.IsUpper, arg)
+		z01.Challenge("IsUpper", student.IsUpper, solutions.IsUpper, arg)
 	}
 }

@@ -1,14 +1,12 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "../../solutions" // This line is not necessary when testing an exercise with a program
 )
 
-func TestVolumechanger(t *testing.T) {
+func main() {
 	type node struct {
 		init int
 		fin  int
@@ -42,6 +40,6 @@ func TestVolumechanger(t *testing.T) {
 	// be the ChallengeMainExam function)
 
 	for _, arg := range table {
-		z01.Challenge(t, Volumechanger, solutions.Volumechanger, arg.init, arg.fin)
+		z01.Challenge("Volumechanger", Volumechanger, solutions.Volumechanger, arg.init, arg.fin)
 	}
 }

@@ -1,14 +1,12 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestEightQueens(t *testing.T) {
-	z01.Challenge(t, student.EightQueens, solutions.EightQueens)
+func main() {
+	z01.Challenge("EightQueens", student.EightQueens, solutions.EightQueens)
 }

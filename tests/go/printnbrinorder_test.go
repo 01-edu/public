@@ -1,14 +1,12 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	solutions "./solutions"
 	student "./student"
 	"github.com/01-edu/z01"
 )
 
-func TestPrintNbrInOrder(t *testing.T) {
+func main() {
 	table := append(
 		z01.MultRandIntBetween(0, z01.MaxInt),
 		z01.MaxInt,
@@ -17,6 +15,6 @@ func TestPrintNbrInOrder(t *testing.T) {
 		0,
 	)
 	for _, arg := range table {
-		z01.Challenge(t, student.PrintNbrInOrder, solutions.PrintNbrInOrder, arg)
+		z01.Challenge("PrintNbrInOrder", student.PrintNbrInOrder, solutions.PrintNbrInOrder, arg)
 	}
 }

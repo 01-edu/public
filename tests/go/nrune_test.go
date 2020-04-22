@@ -1,8 +1,7 @@
-package student_test
+package main
 
 import (
 	"math/rand"
-	"testing"
 
 	"github.com/01-edu/z01"
 
@@ -10,7 +9,7 @@ import (
 	student "./student"
 )
 
-func TestNRune(t *testing.T) {
+func main() {
 	type node struct {
 		word string
 		n    int
@@ -40,6 +39,6 @@ func TestNRune(t *testing.T) {
 	)
 
 	for _, arg := range table {
-		z01.Challenge(t, student.NRune, solutions.NRune, arg.word, arg.n)
+		z01.Challenge("NRune", student.NRune, solutions.NRune, arg.word, arg.n)
 	}
 }

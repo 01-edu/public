@@ -1,14 +1,12 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "../../solutions" // This line is not necessary when testing an exercise with a program
 )
 
-func TestRevivethreenums(t *testing.T) {
+func main() {
 	type node struct {
 		a int
 		b int
@@ -48,6 +46,6 @@ func TestRevivethreenums(t *testing.T) {
 	// be the ChallengeMainExam function)
 
 	for _, arg := range table {
-		z01.Challenge(t, Revive_three_nums, solutions.Revive_three_nums, arg.a, arg.b, arg.c, arg.d)
+		z01.Challenge("Revivethreenums", Revive_three_nums, solutions.Revive_three_nums, arg.a, arg.b, arg.c, arg.d)
 	}
 }

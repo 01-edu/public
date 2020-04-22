@@ -1,14 +1,12 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "../../solutions"
 )
 
-func TestSliceProg(t *testing.T) {
+func main() {
 	arr := [][]interface{}{
 		{
 			[]string{"coding", "algorithm", "ascii", "package", "golang"},
@@ -42,6 +40,6 @@ func TestSliceProg(t *testing.T) {
 	}
 
 	for _, a := range arr {
-		z01.Challenge(t, Slice, solutions.Slice, a...)
+		z01.Challenge("SliceProg", Slice, solutions.Slice, a...)
 	}
 }

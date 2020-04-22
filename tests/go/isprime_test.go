@@ -1,15 +1,13 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestIsPrime(t *testing.T) {
+func main() {
 	table := append(
 		z01.MultRandIntBetween(-1000000, 1000000),
 		0,
@@ -30,6 +28,6 @@ func TestIsPrime(t *testing.T) {
 		1000000087,
 	)
 	for _, arg := range table {
-		z01.Challenge(t, student.IsPrime, solutions.IsPrime, arg)
+		z01.Challenge("IsPrime", student.IsPrime, solutions.IsPrime, arg)
 	}
 }

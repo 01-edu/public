@@ -1,13 +1,11 @@
 package main
 
 import (
-	"testing"
-
 	solutions "../../solutions"
 	"github.com/01-edu/z01"
 )
 
-func TestFoldInt(t *testing.T) {
+func main() {
 	f := []func(int, int) int{Add, Sub, Mul}
 
 	type node struct {
@@ -42,7 +40,7 @@ func TestFoldInt(t *testing.T) {
 
 	for _, v := range table {
 		for _, f := range v.functions {
-			z01.Challenge(t, FoldInt, solutions.FoldInt, f, v.arr, v.n)
+			z01.Challenge("FoldInt", FoldInt, solutions.FoldInt, f, v.arr, v.n)
 		}
 	}
 }

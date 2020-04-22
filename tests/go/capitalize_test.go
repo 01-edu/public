@@ -1,15 +1,13 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestCapitalize(t *testing.T) {
+func main() {
 	table := append(
 		z01.MultRandASCII(),
 		"Hello! How are you? How+are+things+4you?",
@@ -21,6 +19,6 @@ func TestCapitalize(t *testing.T) {
 		"9a LALALA!",
 	)
 	for _, arg := range table {
-		z01.Challenge(t, student.Capitalize, solutions.Capitalize, arg)
+		z01.Challenge("Capitalize", student.Capitalize, solutions.Capitalize, arg)
 	}
 }

@@ -1,14 +1,12 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	solutions "./solutions"
 	student "./student"
 	"github.com/01-edu/z01"
 )
 
-func TestActiveBits(t *testing.T) {
+func main() {
 	args := []int{z01.RandIntBetween(2, 20)}
 
 	for i := 0; i < 20; i++ {
@@ -16,6 +14,6 @@ func TestActiveBits(t *testing.T) {
 	}
 
 	for _, v := range args {
-		z01.Challenge(t, student.ActiveBits, solutions.ActiveBits, v)
+		z01.Challenge("ActiveBits", student.ActiveBits, solutions.ActiveBits, v)
 	}
 }

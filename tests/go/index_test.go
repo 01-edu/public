@@ -1,15 +1,13 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestIndex(t *testing.T) {
+func main() {
 	type node struct {
 		s      string
 		toFind string
@@ -49,6 +47,6 @@ func TestIndex(t *testing.T) {
 	)
 
 	for _, arg := range table {
-		z01.Challenge(t, student.Index, solutions.Index, arg.s, arg.toFind)
+		z01.Challenge("Index", student.Index, solutions.Index, arg.s, arg.toFind)
 	}
 }

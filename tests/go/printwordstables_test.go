@@ -1,8 +1,7 @@
-package student_test
+package main
 
 import (
 	"strings"
-	"testing"
 
 	"github.com/01-edu/z01"
 
@@ -10,7 +9,7 @@ import (
 	student "./student"
 )
 
-func TestPrintWordsTables(t *testing.T) {
+func main() {
 	table := [][]string{}
 	//30 random slice of slice of strings
 
@@ -23,6 +22,6 @@ func TestPrintWordsTables(t *testing.T) {
 		[]string{"Hello", "how", "are", "you?"})
 
 	for _, arg := range table {
-		z01.Challenge(t, student.PrintWordsTables, solutions.PrintWordsTables, arg)
+		z01.Challenge("PrintWordsTables", student.PrintWordsTables, solutions.PrintWordsTables, arg)
 	}
 }

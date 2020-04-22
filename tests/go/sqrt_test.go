@@ -1,15 +1,13 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestSqrt(t *testing.T) {
+func main() {
 	table := append(
 		z01.MultRandIntBetween(-1000000, 1000000),
 		0,
@@ -28,6 +26,6 @@ func TestSqrt(t *testing.T) {
 		100,
 	)
 	for _, arg := range table {
-		z01.Challenge(t, student.Sqrt, solutions.Sqrt, arg)
+		z01.Challenge("Sqrt", student.Sqrt, solutions.Sqrt, arg)
 	}
 }

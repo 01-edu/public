@@ -1,14 +1,12 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestPrintComb2(t *testing.T) {
-	z01.Challenge(t, student.PrintComb2, solutions.PrintComb2)
+func main() {
+	z01.Challenge("PrintComb2", student.PrintComb2, solutions.PrintComb2)
 }

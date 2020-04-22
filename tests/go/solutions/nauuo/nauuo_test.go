@@ -1,14 +1,12 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "../../solutions" // This line is not necessary when testing an exercise with a program
 )
 
-func TestNauuo(t *testing.T) {
+func main() {
 	// Declaration of the node that is going to take the group of arguments that are going to
 	// inputed during each iteration of a Challenge between the student and the staff solution.
 	// (note: a node is not always necessary but in this case it makes the writing of the test easier)
@@ -58,7 +56,7 @@ func TestNauuo(t *testing.T) {
 	// be the ChallengeMainExam function)
 
 	for _, arg := range table {
-		z01.Challenge(t, Nauuo, solutions.Nauuo, arg.plus, arg.minus, arg.rand)
+		z01.Challenge("Nauuo", Nauuo, solutions.Nauuo, arg.plus, arg.minus, arg.rand)
 	}
 
 	// the z01.Challenge function is here applied to each argument of the table. It musts contains:

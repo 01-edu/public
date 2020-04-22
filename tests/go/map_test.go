@@ -1,15 +1,13 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestMap(t *testing.T) {
+func main() {
 	functionsArray := []func(int) bool{solutions.IsPositive, solutions.IsNegative0, solutions.IsPrime}
 
 	type node struct {
@@ -34,6 +32,6 @@ func TestMap(t *testing.T) {
 	})
 
 	for _, arg := range table {
-		z01.Challenge(t, student.Map, solutions.Map, arg.f, arg.arr)
+		z01.Challenge("Map", student.Map, solutions.Map, arg.f, arg.arr)
 	}
 }

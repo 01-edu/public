@@ -1,15 +1,13 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestConcatParams(t *testing.T) {
+func main() {
 	table := [][]string{}
 	//30 random slice of strings
 
@@ -23,6 +21,6 @@ func TestConcatParams(t *testing.T) {
 	)
 
 	for _, arg := range table {
-		z01.Challenge(t, student.ConcatParams, solutions.ConcatParams, arg)
+		z01.Challenge("ConcatParams", student.ConcatParams, solutions.ConcatParams, arg)
 	}
 }

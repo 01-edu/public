@@ -1,8 +1,7 @@
-package student_test
+package main
 
 import (
 	"strconv"
-	"testing"
 
 	"github.com/01-edu/z01"
 
@@ -10,7 +9,7 @@ import (
 	student "./student"
 )
 
-func TestBasicAtoi(t *testing.T) {
+func main() {
 	table := make([]string, 30)
 	for i := range table {
 		table[i] = strconv.Itoa(z01.RandPosZ())
@@ -24,6 +23,6 @@ func TestBasicAtoi(t *testing.T) {
 		"000000",
 	)
 	for _, arg := range table {
-		z01.Challenge(t, student.BasicAtoi, solutions.BasicAtoi, arg)
+		z01.Challenge("BasicAtoi", student.BasicAtoi, solutions.BasicAtoi, arg)
 	}
 }

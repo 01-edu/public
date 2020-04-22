@@ -1,15 +1,13 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestLastRune(t *testing.T) {
+func main() {
 	table := z01.MultRandASCII()
 	table = append(table,
 		"Hello!",
@@ -18,6 +16,6 @@ func TestLastRune(t *testing.T) {
 		z01.RandStr(z01.RandIntBetween(1, 15), z01.RandAlnum()),
 	)
 	for _, arg := range table {
-		z01.Challenge(t, student.LastRune, solutions.LastRune, arg)
+		z01.Challenge("LastRune", student.LastRune, solutions.LastRune, arg)
 	}
 }

@@ -1,13 +1,11 @@
 package main
 
 import (
-	"testing"
-
 	solutions "../../solutions"
 	"github.com/01-edu/z01"
 )
 
-func TestReduceInt(t *testing.T) {
+func main() {
 	f := []func(int, int) int{Add, Sub, Mul}
 	argInt := []int{}
 
@@ -28,7 +26,7 @@ func TestReduceInt(t *testing.T) {
 
 	for _, v := range table {
 		for _, f := range v.functions {
-			z01.Challenge(t, ReduceInt, solutions.ReduceInt, f, v.arr)
+			z01.Challenge("ReduceInt", ReduceInt, solutions.ReduceInt, f, v.arr)
 		}
 	}
 }

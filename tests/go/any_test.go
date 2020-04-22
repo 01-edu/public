@@ -1,14 +1,12 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	solutions "./solutions"
 	student "./student"
 	"github.com/01-edu/z01"
 )
 
-func TestAny(t *testing.T) {
+func main() {
 	functionsArray := []func(string) bool{solutions.IsNumeric, solutions.IsLower, solutions.IsUpper}
 
 	type node struct {
@@ -61,6 +59,6 @@ func TestAny(t *testing.T) {
 	)
 
 	for _, arg := range table {
-		z01.Challenge(t, student.Any, solutions.Any, arg.f, arg.arr)
+		z01.Challenge("Any", student.Any, solutions.Any, arg.f, arg.arr)
 	}
 }

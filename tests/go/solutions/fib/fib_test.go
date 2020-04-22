@@ -1,14 +1,12 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "../../solutions" // This line is not necessary when testing an exercise with a program
 )
 
-func TestFib(t *testing.T) {
+func main() {
 	// Declaration of the node that is going to take the group of arguments that are going to
 	// inputed during each iteration of a Challenge between the student and the staff solution.
 	// (note: a node is not always necessary but in this case it makes the writing of the test easier)
@@ -54,7 +52,7 @@ func TestFib(t *testing.T) {
 	// be the ChallengeMainExam function)
 
 	for _, arg := range table {
-		z01.Challenge(t, Fib, solutions.Fib, arg.n)
+		z01.Challenge("Fib", Fib, solutions.Fib, arg.n)
 	}
 
 	// the z01.Challenge function is here applied to each argument of the table. It musts contains:

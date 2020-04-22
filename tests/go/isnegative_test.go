@@ -1,15 +1,13 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestIsNegative(t *testing.T) {
+func main() {
 	table := append(
 		z01.MultRandInt(),
 		z01.MinInt,
@@ -17,6 +15,6 @@ func TestIsNegative(t *testing.T) {
 		0,
 	)
 	for _, arg := range table {
-		z01.Challenge(t, student.IsNegative, solutions.IsNegative, arg)
+		z01.Challenge("IsNegative", student.IsNegative, solutions.IsNegative, arg)
 	}
 }
