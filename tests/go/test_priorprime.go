@@ -4,6 +4,7 @@ import (
 	"github.com/01-edu/z01"
 
 	correct "./correct"
+	student "./student"
 )
 
 func main() {
@@ -17,6 +18,6 @@ func main() {
 	}
 	table = append(table, z01.MultRandIntBetween(0, 1000))
 	for _, arg := range table {
-		z01.Challenge("PriorPrime", PriorPrime, correct.PriorPrime, arg)
+		z01.Challenge("PriorPrime", student.PriorPrime, correct.PriorPrime, arg)
 	}
 }

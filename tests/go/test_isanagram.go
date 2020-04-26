@@ -4,6 +4,7 @@ import (
 	"github.com/01-edu/z01"
 
 	correct "./correct"
+	student "./student"
 )
 
 func main() {
@@ -33,6 +34,6 @@ func main() {
 	}
 
 	for _, arg := range table {
-		z01.Challenge("IsAnagram", IsAnagram, correct.IsAnagram, arg[0], arg[1])
+		z01.Challenge("IsAnagram", student.IsAnagram, correct.IsAnagram, arg[0], arg[1])
 	}
 }

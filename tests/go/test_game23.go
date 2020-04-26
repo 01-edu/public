@@ -4,6 +4,7 @@ import (
 	"github.com/01-edu/z01"
 
 	correct "./correct"
+	student "./student"
 )
 
 func nd(a, b int) int {
@@ -55,6 +56,6 @@ func main() {
 		table = append(table, value)
 	}
 	for _, arg := range table {
-		z01.Challenge("Game23", Game23, correct.Game23, arg.init, arg.fin)
+		z01.Challenge("Game23", student.Game23, correct.Game23, arg.init, arg.fin)
 	}
 }
