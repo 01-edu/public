@@ -3,10 +3,9 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 type Node4 = student.NodeL
@@ -76,7 +75,7 @@ func main() {
 		student.ListClear(link2)
 
 		if link2.Head != nil {
-			z01.Fatalf("\nstudent list:%s\nlist:%s\n\nListClear() == %v instead of %v\n\n",
+			lib.Fatalf("\nstudent list:%s\nlist:%s\n\nListClear() == %v instead of %v\n\n",
 				listToStringStu5(link2), correct.ListToString(link1.Head), link2.Head, link1.Head)
 		}
 	}

@@ -3,11 +3,11 @@ package main
 import (
 	"strings"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 func main() {
-	table := append(z01.MultRandWords(),
+	table := append(lib.MultRandWords(),
 		" ",
 		"faya fgvvfdxcacpolhyghbreda",
 		"faya fgvvfdxcacpolhyghbred",
@@ -16,6 +16,6 @@ func main() {
 	)
 
 	for _, s := range table {
-		z01.ChallengeMain("wdmatch", strings.Fields(s)...)
+		lib.ChallengeMain("wdmatch", strings.Fields(s)...)
 	}
 }

@@ -17,16 +17,16 @@ func main() {
 		// b, errC := exec.Command("tail", args...).CombinedOutput()
 		// correct := string(b)
 		// b, err := exec.Command
-		// out, err := z01.MainOut("student/ztail", args...)
+		// out, err := lib.MainOut("student/ztail", args...)
 		// if out != correct {
-		// 	z01.Fatalf("./ztail \"%s\" prints %q instead of %q\n",
+		// 	lib.Fatalf("./ztail \"%s\" prints %q instead of %q\n",
 		// 		strings.Join(args, " "), out, correct)
 		// }
 		// if errC != nil && err == nil {
-		// 	z01.Fatalf("./ztail \"%s\" prints %q instead of %q\n", strings.Join(args, " "), "", errC)
+		// 	lib.Fatalf("./ztail \"%s\" prints %q instead of %q\n", strings.Join(args, " "), "", errC)
 		// }
 		// if err != nil && errC != nil && err != errC.Error() {
-		// 	z01.Fatalf("./ztail %s prints %q instead of %q\n", strings.Join(args, " "), err, errC)
+		// 	lib.Fatalf("./ztail %s prints %q instead of %q\n", strings.Join(args, " "), err, errC)
 		// }
 	}
 }

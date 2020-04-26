@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 func main() {
@@ -17,7 +17,7 @@ func main() {
 		"",
 	}}
 	for i := 0; i < 5; i++ {
-		m := z01.MultRandIntBetween(1, 46)
+		m := lib.MultRandIntBetween(1, 46)
 		s := ""
 		for _, j := range m {
 			s += strconv.Itoa(j) + " "
@@ -26,6 +26,6 @@ func main() {
 	}
 
 	for _, args := range table {
-		z01.ChallengeMain("nbrconvertalpha", strings.Fields(args)...)
+		lib.ChallengeMain("nbrconvertalpha", strings.Fields(args)...)
 	}
 }

@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
@@ -28,12 +27,12 @@ func main() {
 	}
 	for i := 0; i < 15; i++ {
 		table = append(table, [2]string{
-			z01.RandStr(z01.RandIntBetween(15, 20), "qwertyuiopasdfghjklzxcvbnm "),
-			z01.RandStr(z01.RandIntBetween(15, 20), "qwertyuiopasdfghjklzxcvbnm "),
+			lib.RandStr(lib.RandIntBetween(15, 20), "qwertyuiopasdfghjklzxcvbnm "),
+			lib.RandStr(lib.RandIntBetween(15, 20), "qwertyuiopasdfghjklzxcvbnm "),
 		})
 	}
 
 	for _, arg := range table {
-		z01.Challenge("IsAnagram", student.IsAnagram, correct.IsAnagram, arg[0], arg[1])
+		lib.Challenge("IsAnagram", student.IsAnagram, correct.IsAnagram, arg[0], arg[1])
 	}
 }

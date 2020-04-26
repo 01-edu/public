@@ -3,20 +3,19 @@ package main
 import (
 	"math/rand"
 
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
 	// 15 unvalid strings in the table
-	table := z01.MultRandASCII()
+	table := lib.MultRandASCII()
 
 	// 15 valid lowercase strings of random size between 1 and 20 letters in the table
 	for i := 0; i < 15; i++ {
 		letters := []rune("\a\b\f\r\n\v\t")
-		size := z01.RandIntBetween(1, 20)
+		size := lib.RandIntBetween(1, 20)
 		r := make([]rune, size)
 		for i := range r {
 			r[i] = letters[rand.Intn(len(letters))]
@@ -44,6 +43,6 @@ func main() {
 		"\n",
 	)
 	for _, arg := range table {
-		z01.Challenge("IsPrintable", student.IsPrintable, correct.IsPrintable, arg)
+		lib.Challenge("IsPrintable", student.IsPrintable, correct.IsPrintable, arg)
 	}
 }

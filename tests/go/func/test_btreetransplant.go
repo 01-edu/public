@@ -1,12 +1,11 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
 	"fmt"
 
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func parentListTransp(root *student.TreeNode) string {
@@ -82,7 +81,7 @@ func formatSubTree_transp(root *student.TreeNode, prefix string) string {
 }
 
 func errorMessage_transp(fn interface{}, root, sel, repl *correct.TreeNode, rootA *correct.TreeNode, rootAS *student.TreeNode) {
-	z01.Fatalf("%s(\nRoot:\n %s, Selected:\n%s, Replacement:\n%s\n) ==\n%s instead of\n%s\n",
+	lib.Fatalf("%s(\nRoot:\n %s, Selected:\n%s, Replacement:\n%s\n) ==\n%s instead of\n%s\n",
 		"BTreeTransplant",
 		correct.FormatTree(root),
 		correct.FormatTree(sel),
@@ -104,7 +103,7 @@ func CompareTrees_transp(fn interface{}, root, sel, repl *correct.TreeNode, root
 
 	if parentSol != parentStu {
 		fmt.Println("Tree:\n", solTree)
-		z01.Fatalf("Expected\n%s instead of\n%s\n", parentSol, parentStu)
+		lib.Fatalf("Expected\n%s instead of\n%s\n", parentSol, parentStu)
 	}
 }
 

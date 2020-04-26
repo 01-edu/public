@@ -1,6 +1,6 @@
 package main
 
-import "github.com/01-edu/z01"
+import "../lib"
 
 func main() {
 	args := [][]string{
@@ -9,10 +9,10 @@ func main() {
 	}
 
 	for i := 0; i < 4; i++ {
-		args = append(args, z01.MultRandBasic())
+		args = append(args, lib.MultRandBasic())
 	}
 
 	for _, v := range args {
-		z01.ChallengeMain("piglatin", v...)
+		lib.ChallengeMain("piglatin", v...)
 	}
 }

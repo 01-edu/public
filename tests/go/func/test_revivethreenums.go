@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
@@ -15,9 +14,9 @@ func main() {
 	}
 
 	for i := 0; i < 25; i++ {
-		first := z01.RandIntBetween(0, 877)
-		second := z01.RandIntBetween(0, 877)
-		third := z01.RandIntBetween(0, 877)
+		first := lib.RandIntBetween(0, 877)
+		second := lib.RandIntBetween(0, 877)
+		third := lib.RandIntBetween(0, 877)
 		table = append(table, [4]int{
 			first + second,
 			second + third,
@@ -26,6 +25,6 @@ func main() {
 		})
 	}
 	for _, arg := range table {
-		z01.Challenge("Revivethreenums", student.ReviveThreeNums, correct.ReviveThreeNums, arg[0], arg[1], arg[2], arg[3])
+		lib.Challenge("Revivethreenums", student.ReviveThreeNums, correct.ReviveThreeNums, arg[0], arg[1], arg[2], arg[3])
 	}
 }

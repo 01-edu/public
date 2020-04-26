@@ -3,7 +3,7 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 func main() {
@@ -12,10 +12,10 @@ func main() {
 		table = append(table, strconv.Itoa(i))
 	}
 	for i := 0; i < 5; i++ {
-		table = append(table, strconv.Itoa(z01.RandIntBetween(1, 1000)))
+		table = append(table, strconv.Itoa(lib.RandIntBetween(1, 1000)))
 	}
 
 	for _, arg := range table {
-		z01.ChallengeMain("tabmult", arg)
+		lib.ChallengeMain("tabmult", arg)
 	}
 }

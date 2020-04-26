@@ -6,9 +6,8 @@ import (
 	"math/rand"
 	"strconv"
 
-	"github.com/01-edu/z01"
-
-	correct "./correct"
+	"../lib"
+	"./correct"
 )
 
 type stuNode = TNode
@@ -156,8 +155,8 @@ func main() {
 		if !IsIdentical(tree, TestTree) {
 			tree1 := returnSolTree(temp)
 			tree2 := returnStuTree(tmp)
-			z01.Fatalf("\n\"%v\" instead of \"%v\"\n\n", tree1, tree2)
-			// z01.Fatalf("\nError\n\n")
+			lib.Fatalf("\n\"%v\" instead of \"%v\"\n\n", tree1, tree2)
+			// lib.Fatalf("\nError\n\n")
 		}
 	}
 }

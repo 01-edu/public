@@ -1,6 +1,6 @@
 package main
 
-import "github.com/01-edu/z01"
+import "../lib"
 
 func main() {
 	args := []string{
@@ -21,8 +21,8 @@ func main() {
 	}
 
 	for _, v := range args {
-		z01.ChallengeMain("rpncalc", v)
+		lib.ChallengeMain("rpncalc", v)
 	}
-	z01.ChallengeMain("rpncalc")
-	z01.ChallengeMain("rpncalc", "1 2 * 3 * 4 +", "10 33 - 12 %")
+	lib.ChallengeMain("rpncalc")
+	lib.ChallengeMain("rpncalc", "1 2 * 3 * 4 +", "10 33 - 12 %")
 }

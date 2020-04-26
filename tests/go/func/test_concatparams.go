@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
@@ -12,9 +11,9 @@ func main() {
 
 	// 30 random slice of strings
 	for i := 0; i < 30; i++ {
-		table = append(table, z01.MultRandASCII())
+		table = append(table, lib.MultRandASCII())
 	}
 	for _, arg := range table {
-		z01.Challenge("ConcatParams", student.ConcatParams, correct.ConcatParams, arg)
+		lib.Challenge("ConcatParams", student.ConcatParams, correct.ConcatParams, arg)
 	}
 }

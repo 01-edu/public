@@ -1,6 +1,6 @@
 package main
 
-import "github.com/01-edu/z01"
+import "../lib"
 
 func main() {
 	args := []string{
@@ -8,11 +8,11 @@ func main() {
 		" only  it's   harder  ",
 		"how   funny",
 		"",
-		z01.RandSpace(),
+		lib.RandSpace(),
 	}
 
 	for _, v := range args {
-		z01.ChallengeMain("cleanstr", v)
+		lib.ChallengeMain("cleanstr", v)
 	}
-	z01.ChallengeMain("cleanstr", "this is   not", "happening")
+	lib.ChallengeMain("cleanstr", "this is   not", "happening")
 }

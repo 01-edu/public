@@ -1,9 +1,8 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
+	"../lib"
+	"./correct"
 )
 
 type stuNode = NodeAddL
@@ -63,25 +62,25 @@ func compareNodes(stuResult *stuNode, solResult *solNode, num1 int) {
 	}
 	if stuResult != nil && solResult == nil {
 		stuNum := stuListToNum(stuResult)
-		z01.Fatalf("\nSortll(%d) == %v instead of %v\n\n",
+		lib.Fatalf("\nSortll(%d) == %v instead of %v\n\n",
 			num1, stuNum, "")
 	}
 	if stuResult == nil && solResult != nil {
 		solNum := solListToNum(solResult)
-		z01.Fatalf("\nSortll(%d) == %v instead of %v\n\n",
+		lib.Fatalf("\nSortll(%d) == %v instead of %v\n\n",
 			num1, "", solNum)
 	}
 	stuNum := stuListToNum(stuResult)
 	solNum := solListToNum(solResult)
 	if stuNum != solNum {
-		z01.Fatalf("\nSortll(%d) == %v instead of %v\n\n",
+		lib.Fatalf("\nSortll(%d) == %v instead of %v\n\n",
 			num1, stuNum, solNum)
 	}
 }
 
 func main() {
 	table := []int{123456}
-	table = append(table, z01.MultRandIntBetween(0, 1000000000)...)
+	table = append(table, lib.MultRandIntBetween(0, 1000000000)...)
 	for _, arg := range table {
 		stuResult := Sortll(stuNumToList(arg))
 		solResult := correct.Sortll(solNumToList(arg))

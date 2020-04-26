@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func parentListDelete(root *student.TreeNode) string {
@@ -80,7 +79,7 @@ func formatSubTree_delete(root *student.TreeNode, prefix string) string {
 }
 
 func errorMessage_delete(fn interface{}, deleted string, rootOr, root *correct.TreeNode, rootS *student.TreeNode) {
-	z01.Fatalf("%s(\n%s, %s\n) ==\n%s instead of\n%s\n",
+	lib.Fatalf("%s(\n%s, %s\n) ==\n%s instead of\n%s\n",
 		"BTreeDeleteNode",
 		correct.FormatTree(rootOr),
 		deleted,

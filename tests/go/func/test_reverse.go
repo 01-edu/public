@@ -1,9 +1,8 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
+	"../lib"
+	"./correct"
 )
 
 type stuNode = NodeAddL
@@ -62,16 +61,16 @@ func compareNodes(stuResult *stuNode, solResult *solNode, num1 int) {
 		stuNum := stuListToNum(stuResult)
 		solNum := solListToNum(solResult)
 		if stuNum != solNum {
-			z01.Fatalf("\nReverse(%d) == %v instead of %v\n\n",
+			lib.Fatalf("\nReverse(%d) == %v instead of %v\n\n",
 				num1, stuNum, solNum)
 		}
 	} else if stuResult != nil && solResult == nil {
 		stuNum := stuListToNum(stuResult)
-		z01.Fatalf("\nReverse(%d) == %v instead of %v\n\n",
+		lib.Fatalf("\nReverse(%d) == %v instead of %v\n\n",
 			num1, stuNum, "")
 	} else if stuResult == nil && solResult != nil {
 		solNum := solListToNum(solResult)
-		z01.Fatalf("\nReverse(%d) == %v instead of %v\n\n",
+		lib.Fatalf("\nReverse(%d) == %v instead of %v\n\n",
 			num1, "", solNum)
 	}
 }
@@ -79,7 +78,7 @@ func compareNodes(stuResult *stuNode, solResult *solNode, num1 int) {
 func main() {
 	table := []int{123456543}
 
-	table = append(table, z01.MultRandIntBetween(0, 1000000000)...)
+	table = append(table, lib.MultRandIntBetween(0, 1000000000)...)
 	for _, arg := range table {
 		stuResult := Reverse(stuNumToList(arg))
 		solResult := correct.Reverse(solNumToList(arg))

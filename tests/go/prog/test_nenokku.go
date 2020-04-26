@@ -1,6 +1,6 @@
 package main
 
-import "github.com/01-edu/z01"
+import "../lib"
 
 func main() {
 	table := [][]string{{
@@ -25,17 +25,17 @@ func main() {
 
 	for i := 0; i < 6; i++ {
 		result := []string{}
-		nOps := z01.RandIntBetween(3, 15)
-		index := z01.RandIntBetween(0, len(sets)-1)
+		nOps := lib.RandIntBetween(3, 15)
+		index := lib.RandIntBetween(0, len(sets)-1)
 		for j := 0; j < nOps; j++ {
-			k := z01.RandIntBetween(0, len(ops)-1)
-			s := z01.RandIntBetween(0, len(sets[index])-1)
+			k := lib.RandIntBetween(0, len(ops)-1)
+			s := lib.RandIntBetween(0, len(sets[index])-1)
 			result = append(result, ops[k]+" "+sets[index][s])
 		}
 		table = append(table, result)
 	}
 
 	for _, arg := range table {
-		z01.ChallengeMain("nenokku", arg...)
+		lib.ChallengeMain("nenokku", arg...)
 	}
 }

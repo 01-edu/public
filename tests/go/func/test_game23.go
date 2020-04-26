@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func nd(a, b int) int {
@@ -37,8 +36,8 @@ func main() {
 
 	for i := 0; i < 20; i++ {
 		table = append(table, node{
-			init: z01.RandIntBetween(1, 1000),
-			fin:  z01.RandIntBetween(1, 1000),
+			init: lib.RandIntBetween(1, 1000),
+			fin:  lib.RandIntBetween(1, 1000),
 		})
 	}
 
@@ -56,6 +55,6 @@ func main() {
 		table = append(table, value)
 	}
 	for _, arg := range table {
-		z01.Challenge("Game23", student.Game23, correct.Game23, arg.init, arg.fin)
+		lib.Challenge("Game23", student.Game23, correct.Game23, arg.init, arg.fin)
 	}
 }

@@ -1,6 +1,6 @@
 package main
 
-import "github.com/01-edu/z01"
+import "../lib"
 
 func main() {
 	valid := [][]string{
@@ -284,13 +284,13 @@ func main() {
 	}
 
 	for _, v := range valid {
-		z01.ChallengeMain("raid2", v...)
+		lib.ChallengeMain("raid2", v...)
 	}
 
 	for _, v := range invalid {
-		z01.ChallengeMain("raid2", v...)
+		lib.ChallengeMain("raid2", v...)
 	}
 
-	z01.ChallengeMain("raid2")
-	z01.ChallengeMain("raid2", "not", "a", "sudoku")
+	lib.ChallengeMain("raid2")
+	lib.ChallengeMain("raid2", "not", "a", "sudoku")
 }

@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 func main() {
@@ -16,7 +16,7 @@ func main() {
 		"0",
 	)
 	for i := 0; i < 10; i++ {
-		table = append(table, strconv.Itoa(z01.RandIntBetween(-1000, 2000000000)))
+		table = append(table, strconv.Itoa(lib.RandIntBetween(-1000, 2000000000)))
 	}
 
 	for i := 0; i < 15; i++ {
@@ -24,6 +24,6 @@ func main() {
 	}
 
 	for _, s := range table {
-		z01.ChallengeMain("printhex", strings.Fields(s)...)
+		lib.ChallengeMain("printhex", strings.Fields(s)...)
 	}
 }

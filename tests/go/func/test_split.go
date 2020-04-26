@@ -4,10 +4,9 @@ import (
 	"math/rand"
 	"strings"
 
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
@@ -16,7 +15,7 @@ func main() {
 		"    ",
 		"|=choumi=|",
 		"|<=>|",
-		z01.RandStr(3, z01.RuneRange('A', 'Z')),
+		lib.RandStr(3, lib.RuneRange('A', 'Z')),
 		"<<==123==>>",
 		"[<>abc<>]"}
 
@@ -30,7 +29,7 @@ func main() {
 	for i := 0; i < 15; i++ {
 		separator := separators[rand.Intn(len(separators))]
 		val := node{
-			str: strings.Join(z01.MultRandAlnum(), separator),
+			str: strings.Join(lib.MultRandAlnum(), separator),
 			sep: separator,
 		}
 		table = append(table, val)
@@ -40,6 +39,6 @@ func main() {
 		node{str: "HelloHAhowHAareHAyou?", sep: "HA"})
 
 	for _, arg := range table {
-		z01.Challenge("Split", student.Split, correct.Split, arg.str, arg.sep)
+		lib.Challenge("Split", student.Split, correct.Split, arg.str, arg.sep)
 	}
 }

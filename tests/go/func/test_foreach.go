@@ -3,10 +3,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func add0(i int) {
@@ -34,10 +33,10 @@ func main() {
 
 	// 15 random slice of random ints with a random function from selection
 	for i := 0; i < 15; i++ {
-		function := functions[z01.RandIntBetween(0, len(functions)-1)]
+		function := functions[lib.RandIntBetween(0, len(functions)-1)]
 		table = append(table, node{
 			f: function,
-			a: z01.MultRandIntBetween(-1000000, 1000000),
+			a: lib.MultRandIntBetween(-1000000, 1000000),
 		})
 	}
 
@@ -47,6 +46,6 @@ func main() {
 	})
 
 	for _, arg := range table {
-		z01.Challenge("ForEach", student.ForEach, correct.ForEach, arg.f, arg.a)
+		lib.Challenge("ForEach", student.ForEach, correct.ForEach, arg.f, arg.a)
 	}
 }

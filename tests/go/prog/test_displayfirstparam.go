@@ -3,16 +3,16 @@ package main
 import (
 	"strings"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 func main() {
-	table := append(z01.MultRandWords(), " ")
+	table := append(lib.MultRandWords(), " ")
 	table = append(table, "1")
 	table = append(table, "1 2")
 	table = append(table, "1 2 3")
 
 	for _, s := range table {
-		z01.ChallengeMain("displayfirstparam", strings.Fields(s)...)
+		lib.ChallengeMain("displayfirstparam", strings.Fields(s)...)
 	}
 }

@@ -4,7 +4,7 @@ import (
 	"os/exec"
 	"strconv"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 func main() {
@@ -12,7 +12,7 @@ func main() {
 		b, err := exec.Command(name, arg...).CombinedOutput()
 		s := string(b)
 		if err != nil {
-			z01.Fatal(s)
+			lib.Fatal(s)
 		}
 		return s
 	}
@@ -29,7 +29,7 @@ func main() {
 			correct = execFatal("sh", "-c", "./"+args+" "+strconv.Itoa(x)+" "+strconv.Itoa(y)+" | ./raid3")
 		}
 		if output != correct {
-			z01.Fatalf("./%s %d %d | ./raid3 prints %q instead of %q\n",
+			lib.Fatalf("./%s %d %d | ./raid3 prints %q instead of %q\n",
 				args, x, y, output, correct)
 		}
 	}
@@ -46,8 +46,8 @@ func main() {
 	// testing all raids1
 	table := []string{"raid1a", "raid1b", "raid1c", "raid1d", "raid1e"}
 	for _, s := range table {
-		x := z01.RandIntBetween(1, 50)
-		y := z01.RandIntBetween(1, 50)
+		x := lib.RandIntBetween(1, 50)
+		y := lib.RandIntBetween(1, 50)
 		executeTest(s, x, y)
 	}
 

@@ -1,6 +1,6 @@
 package main
 
-import "github.com/01-edu/z01"
+import "../lib"
 
 func main() {
 	type nodeTest struct {
@@ -12,12 +12,12 @@ func main() {
 	table := []nodeTest{}
 
 	for i := 0; i < 20; i++ {
-		letter1 := []rune(z01.RandAlnum())
-		letter2 := []rune(z01.RandAlnum())
+		letter1 := []rune(lib.RandAlnum())
+		letter2 := []rune(lib.RandAlnum())
 
 		table = append(table,
 			nodeTest{
-				dataSearched:    z01.RandWords(),
+				dataSearched:    lib.RandWords(),
 				letterLookedFor: string(letter1[0]),
 				letterReplacing: string(letter2[0]),
 			})
@@ -42,6 +42,6 @@ func main() {
 	)
 
 	for _, arg := range table {
-		z01.ChallengeMain("searchreplace", arg.dataSearched, arg.letterLookedFor, arg.letterReplacing)
+		lib.ChallengeMain("searchreplace", arg.dataSearched, arg.letterLookedFor, arg.letterReplacing)
 	}
 }

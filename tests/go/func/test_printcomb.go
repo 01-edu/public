@@ -1,12 +1,11 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
-	z01.Challenge("PrintComb", student.PrintComb, correct.PrintComb)
+	lib.Challenge("PrintComb", student.PrintComb, correct.PrintComb)
 }

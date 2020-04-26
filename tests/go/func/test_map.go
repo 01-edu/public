@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
@@ -18,10 +17,10 @@ func main() {
 	table := []node{}
 
 	for i := 0; i < 15; i++ {
-		function := functions[z01.RandIntBetween(0, len(functions)-1)]
+		function := functions[lib.RandIntBetween(0, len(functions)-1)]
 		val := node{
 			f:   function,
-			arr: z01.MultRandIntBetween(-1000000, 1000000),
+			arr: lib.MultRandIntBetween(-1000000, 1000000),
 		}
 		table = append(table, val)
 	}
@@ -32,6 +31,6 @@ func main() {
 	})
 
 	for _, arg := range table {
-		z01.Challenge("Map", student.Map, correct.Map, arg.f, arg.arr)
+		lib.Challenge("Map", student.Map, correct.Map, arg.f, arg.arr)
 	}
 }

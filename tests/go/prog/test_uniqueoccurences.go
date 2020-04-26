@@ -1,6 +1,6 @@
 package main
 
-import "github.com/01-edu/z01"
+import "../lib"
 
 func main() {
 	table := []string{
@@ -11,10 +11,10 @@ func main() {
 	}
 
 	for i := 0; i < 15; i++ {
-		table = append(table, z01.RandStr(z01.RandIntBetween(5, 10), z01.Lower))
+		table = append(table, lib.RandStr(lib.RandIntBetween(5, 10), lib.Lower))
 	}
 
 	for _, arg := range table {
-		z01.ChallengeMain("uniqueoccurences", arg)
+		lib.ChallengeMain("uniqueoccurences", arg)
 	}
 }

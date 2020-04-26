@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
@@ -17,8 +16,8 @@ func main() {
 
 	// 15 random pairs of ints for a Valid Range
 	for i := 0; i < 15; i++ {
-		minVal := z01.RandIntBetween(-10000000, 1000000)
-		gap := z01.RandIntBetween(1, 20)
+		minVal := lib.RandIntBetween(-10000000, 1000000)
+		gap := lib.RandIntBetween(1, 20)
 		val := node{
 			min: minVal,
 			max: minVal + gap,
@@ -27,8 +26,8 @@ func main() {
 	}
 	// 15 random pairs of ints with ||invalid range||
 	for i := 0; i < 15; i++ {
-		minVal := z01.RandIntBetween(-10000000, 1000000)
-		gap := z01.RandIntBetween(1, 20)
+		minVal := lib.RandIntBetween(-10000000, 1000000)
+		gap := lib.RandIntBetween(1, 20)
 		val := node{
 			min: minVal,
 			max: minVal - gap,
@@ -43,6 +42,6 @@ func main() {
 		node{min: 10, max: 5},
 	)
 	for _, arg := range table {
-		z01.Challenge("MakeRange", student.MakeRange, correct.MakeRange, arg.min, arg.max)
+		lib.Challenge("MakeRange", student.MakeRange, correct.MakeRange, arg.min, arg.max)
 	}
 }

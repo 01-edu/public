@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
@@ -18,17 +17,17 @@ func main() {
 	table := []node{}
 
 	for i := 0; i < 5; i++ {
-		function := functions[z01.RandIntBetween(0, len(functions)-1)]
+		function := functions[lib.RandIntBetween(0, len(functions)-1)]
 		val := node{
 			f:   function,
-			arr: z01.MultRandWords(),
+			arr: lib.MultRandWords(),
 		}
 		table = append(table, val)
 	}
 	for i := 0; i < 5; i++ {
 		val := node{
 			f:   correct.IsNumeric,
-			arr: z01.MultRandDigit(),
+			arr: lib.MultRandDigit(),
 		}
 		table = append(table, val)
 	}
@@ -36,14 +35,14 @@ func main() {
 	for i := 0; i < 5; i++ {
 		val := node{
 			f:   correct.IsLower,
-			arr: z01.MultRandLower(),
+			arr: lib.MultRandLower(),
 		}
 		table = append(table, val)
 	}
 	for i := 0; i < 5; i++ {
 		val := node{
 			f:   correct.IsUpper,
-			arr: z01.MultRandUpper(),
+			arr: lib.MultRandUpper(),
 		}
 		table = append(table, val)
 	}
@@ -60,6 +59,6 @@ func main() {
 	)
 
 	for _, arg := range table {
-		z01.Challenge("CountIf", student.CountIf, correct.CountIf, arg.f, arg.arr)
+		lib.Challenge("CountIf", student.CountIf, correct.CountIf, arg.f, arg.arr)
 	}
 }

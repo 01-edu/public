@@ -1,6 +1,6 @@
 package main
 
-import "github.com/01-edu/z01"
+import "../lib"
 
 type node struct {
 	flags          []string
@@ -15,8 +15,8 @@ func main() {
 	var randflag []string
 	var randflagarg []string
 	for i := 0; i < 2; i++ {
-		randflagarg = append(randflagarg, z01.RandWords())
-		randflag = append(randflag, z01.RandWords())
+		randflagarg = append(randflagarg, lib.RandWords())
+		randflag = append(randflag, lib.RandWords())
 	}
 
 	node := &node{
@@ -28,20 +28,20 @@ func main() {
 
 	node.randArg = append(node.randArg, "")
 
-	z01.ChallengeMain("flags", node.flagsShorthand[0]+"v2", "v1")
-	z01.ChallengeMain("flags", node.flagsShorthand[1], "v1")
-	z01.ChallengeMain("flags", "-h")
-	z01.ChallengeMain("flags", "--help")
-	z01.ChallengeMain("flags")
+	lib.ChallengeMain("flags", node.flagsShorthand[0]+"v2", "v1")
+	lib.ChallengeMain("flags", node.flagsShorthand[1], "v1")
+	lib.ChallengeMain("flags", "-h")
+	lib.ChallengeMain("flags", "--help")
+	lib.ChallengeMain("flags")
 
 	for _, v2 := range node.randArgFlag {
 		for _, v1 := range node.randArg {
-			z01.ChallengeMain("flags", node.flags[0]+v2, node.flags[1], v1)
+			lib.ChallengeMain("flags", node.flags[0]+v2, node.flags[1], v1)
 		}
 	}
 	for _, v2 := range node.randArgFlag {
 		for _, v1 := range node.randArg {
-			z01.ChallengeMain("flags", node.flagsShorthand[0]+v2, node.flagsShorthand[1], v1)
+			lib.ChallengeMain("flags", node.flagsShorthand[0]+v2, node.flagsShorthand[1], v1)
 		}
 	}
 }

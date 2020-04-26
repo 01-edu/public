@@ -1,6 +1,6 @@
 package main
 
-import "github.com/01-edu/z01"
+import "../lib"
 
 func main() {
 	args := [][2]string{
@@ -12,11 +12,11 @@ func main() {
 	}
 	for i := 0; i < 30; i++ {
 		args = append(args,
-			[2]string{z01.RandStr(1, z01.Lower), z01.RandLower()},
-			[2]string{z01.RandStr(1, z01.Upper), z01.RandUpper()},
+			[2]string{lib.RandStr(1, lib.Lower), lib.RandLower()},
+			[2]string{lib.RandStr(1, lib.Upper), lib.RandUpper()},
 		)
 	}
 	for _, v := range args {
-		z01.ChallengeMain("hiddenp", v[0], v[1])
+		lib.ChallengeMain("hiddenp", v[0], v[1])
 	}
 }

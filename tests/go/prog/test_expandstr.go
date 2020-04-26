@@ -1,6 +1,6 @@
 package main
 
-import "github.com/01-edu/z01"
+import "../lib"
 
 func main() {
 	args := [][]string{
@@ -9,10 +9,10 @@ func main() {
 		{"you   see   it's   easy   to   display    the     same  thing"},
 	}
 
-	args = append(args, z01.MultRandWords())
+	args = append(args, lib.MultRandWords())
 
 	for _, v := range args {
-		z01.ChallengeMain("expandstr", v...)
+		lib.ChallengeMain("expandstr", v...)
 	}
-	z01.ChallengeMain("expandstr")
+	lib.ChallengeMain("expandstr")
 }

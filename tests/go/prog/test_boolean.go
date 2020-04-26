@@ -3,13 +3,13 @@ package main
 import (
 	"strings"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 func main() {
-	table := append(z01.MultRandWords(), "1 2 3 4 5")
+	table := append(lib.MultRandWords(), "1 2 3 4 5")
 
 	for _, s := range table {
-		z01.ChallengeMain("boolean", strings.Fields(s)...)
+		lib.ChallengeMain("boolean", strings.Fields(s)...)
 	}
 }

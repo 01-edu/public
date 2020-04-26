@@ -3,7 +3,7 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 func main() {
@@ -22,9 +22,9 @@ func main() {
 		"1000003",
 	}
 	for i := 0; i < 10; i++ {
-		table = append(table, strconv.Itoa(z01.RandIntBetween(1, 100)))
+		table = append(table, strconv.Itoa(lib.RandIntBetween(1, 100)))
 	}
 	for _, s := range table {
-		z01.ChallengeMain("fprime", s)
+		lib.ChallengeMain("fprime", s)
 	}
 }

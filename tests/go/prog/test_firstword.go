@@ -1,9 +1,9 @@
 package main
 
-import "github.com/01-edu/z01"
+import "../lib"
 
 func main() {
-	table := append(z01.MultRandWords(),
+	table := append(lib.MultRandWords(),
 		"",
 		"             a as",
 		"   f     d",
@@ -13,6 +13,6 @@ func main() {
 		"salut ! !",
 	)
 	for _, s := range table {
-		z01.ChallengeMain("firstword", s)
+		lib.ChallengeMain("firstword", s)
 	}
 }

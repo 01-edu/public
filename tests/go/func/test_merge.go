@@ -4,9 +4,8 @@ import (
 	"math/rand"
 	"strconv"
 
-	"github.com/01-edu/z01"
-
-	correct "./correct"
+	"../lib"
+	"./correct"
 )
 
 type stuTreeNode = TreeNodeM
@@ -147,7 +146,7 @@ func compareTrees(stuResult *stuTreeNode, solResult, solTree1, solTree2 *solTree
 		tree2 := returnSolTree(solTree2)
 		stuTree := returnStuTree(stuResult)
 		solTree := returnSolTree(solResult)
-		z01.Fatalf("\nMergeTrees(\"%v\", \"%v\") == \"%v\" instead of \"%v\"\n\n", tree1, tree2, stuTree, solTree)
+		lib.Fatalf("\nMergeTrees(\"%v\", \"%v\") == \"%v\" instead of \"%v\"\n\n", tree1, tree2, stuTree, solTree)
 	}
 }
 
@@ -159,7 +158,7 @@ func main() {
 
 	table := []node{}
 	for i := 0; i < 15; i++ {
-		value := node{z01.RandIntBetween(10, 15), z01.RandIntBetween(1, 10)}
+		value := node{lib.RandIntBetween(10, 15), lib.RandIntBetween(1, 10)}
 		table = append(table, value)
 	}
 	for _, arg := range table {

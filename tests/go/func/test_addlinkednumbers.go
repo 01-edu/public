@@ -3,9 +3,8 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/z01"
-
-	correct "./correct"
+	"../lib"
+	"./correct"
 )
 
 type stuNode = NodeAddL
@@ -87,18 +86,18 @@ func compareNodes(stuResult *stuNode, solResult *solNode, num1, num2 int) {
 	}
 	if stuResult != nil && solResult == nil {
 		stuNum := stuNodeString(stuResult)
-		z01.Fatalf("\nAddLinkedNumbers(%v, %v) == %v instead of %v\n\n",
+		lib.Fatalf("\nAddLinkedNumbers(%v, %v) == %v instead of %v\n\n",
 			num1, num2, stuNum, "")
 	}
 	if stuResult == nil && solResult != nil {
 		solNum := solNodeString(solResult)
-		z01.Fatalf("\nAddLinkedNumbers(%v, %v) == %v instead of %v\n\n",
+		lib.Fatalf("\nAddLinkedNumbers(%v, %v) == %v instead of %v\n\n",
 			num1, num2, "", solNum)
 	}
 	stuNum := stuNodeString(stuResult)
 	solNum := solNodeString(solResult)
 	if stuNum != solNum {
-		z01.Fatalf("\nAddLinkedNumbers(%v, %v) == %v instead of %v\n\n",
+		lib.Fatalf("\nAddLinkedNumbers(%v, %v) == %v instead of %v\n\n",
 			num1, num2, stuNum, solNum)
 	}
 }
@@ -107,7 +106,7 @@ func main() {
 	args := [][2]int{{315, 592}}
 
 	for i := 0; i < 15; i++ {
-		args = append(args, [2]int{z01.RandPosZ(), z01.RandPosZ()})
+		args = append(args, [2]int{lib.RandPosZ(), lib.RandPosZ()})
 	}
 
 	for _, arg := range args {

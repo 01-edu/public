@@ -1,16 +1,15 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func randomSize() []int {
 	randSlice := []int{}
-	for i := 0; i <= z01.RandIntBetween(0, 20); i++ {
-		randSlice = append(randSlice, z01.RandInt())
+	for i := 0; i <= lib.RandIntBetween(0, 20); i++ {
+		randSlice = append(randSlice, lib.RandInt())
 	}
 	return randSlice
 }
@@ -25,7 +24,7 @@ func main() {
 	for i := 0; i <= 7; i++ {
 		value := node{
 			slice: randomSize(),
-			ch:    z01.RandIntBetween(0, 10),
+			ch:    lib.RandIntBetween(0, 10),
 		}
 		table = append(table, value)
 	}
@@ -37,6 +36,6 @@ func main() {
 		ch:    0,
 	})
 	for _, args := range table {
-		z01.Challenge("Chunk", student.Chunk, correct.Chunk, args.slice, args.ch)
+		lib.Challenge("Chunk", student.Chunk, correct.Chunk, args.slice, args.ch)
 	}
 }

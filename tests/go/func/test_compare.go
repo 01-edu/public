@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
@@ -17,7 +16,7 @@ func main() {
 
 	// the first 15 values are returning 0 for this test
 	for i := 0; i < 15; i++ {
-		wordToTest := z01.RandASCII()
+		wordToTest := lib.RandASCII()
 
 		val := node{
 			s:         wordToTest,
@@ -28,8 +27,8 @@ func main() {
 
 	// the next 15 values are supposed to return 1 or -1 for this test
 	for i := 0; i < 15; i++ {
-		wordToTest := z01.RandASCII()
-		wrongMatch := z01.RandASCII()
+		wordToTest := lib.RandASCII()
+		wrongMatch := lib.RandASCII()
 
 		val := node{
 			s:         wordToTest,
@@ -45,6 +44,6 @@ func main() {
 	)
 
 	for _, arg := range table {
-		z01.Challenge("Compare", student.Compare, correct.Compare, arg.s, arg.toCompare)
+		lib.Challenge("Compare", student.Compare, correct.Compare, arg.s, arg.toCompare)
 	}
 }

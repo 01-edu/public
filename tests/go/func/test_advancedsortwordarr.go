@@ -4,16 +4,15 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
 	table := [][]string{{"a", "A", "1", "b", "B", "2", "c", "C", "3"}}
 
-	table = append(table, z01.MultMultRandWords()...)
+	table = append(table, lib.MultMultRandWords()...)
 
 	for _, org := range table {
 		// copy for using the solution function
@@ -28,7 +27,7 @@ func main() {
 		student.AdvancedSortWordArr(cp_stu, strings.Compare)
 
 		if !reflect.DeepEqual(cp_stu, cp_sol) {
-			z01.Fatalf("%s(%v) == %v instead of %v\n",
+			lib.Fatalf("%s(%v) == %v instead of %v\n",
 				"AdvancedSortWordArr",
 				org,
 				cp_stu,

@@ -3,7 +3,7 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 func main() {
@@ -16,20 +16,20 @@ func main() {
 
 	for i := 0; i < 10; i++ {
 		var arg []string
-		init := z01.RandIntBetween(0, 10)
-		for i := init; i < init+z01.RandIntBetween(5, 10); i++ {
+		init := lib.RandIntBetween(0, 10)
+		for i := init; i < init+lib.RandIntBetween(5, 10); i++ {
 			arg = append(arg, strconv.Itoa(i))
 		}
 		args = append(args, arg)
 	}
 
 	for i := 0; i < 1; i++ {
-		args = append(args, z01.MultRandWords())
+		args = append(args, lib.MultRandWords())
 	}
 
 	for _, v := range args {
-		z01.ChallengeMain("paramcount", v...)
+		lib.ChallengeMain("paramcount", v...)
 	}
 
-	z01.ChallengeMain("paramcount")
+	lib.ChallengeMain("paramcount")
 }

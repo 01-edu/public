@@ -3,7 +3,7 @@ package main
 import (
 	"strings"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 func main() {
@@ -14,14 +14,14 @@ func main() {
 	arg5 := []string{" this is ", " wait shr"}
 	arg6 := []string{" more ", "then", "two", "arguments"}
 
-	str1 := z01.RandAlnum()
-	str2 := strings.Join([]string{z01.RandAlnum(), str1, z01.RandAlnum()}, "")
+	str1 := lib.RandAlnum()
+	str2 := strings.Join([]string{lib.RandAlnum(), str1, lib.RandAlnum()}, "")
 
 	arg7 := []string{str1, str2}
-	arg8 := []string{z01.RandAlnum(), z01.RandAlnum()}
+	arg8 := []string{lib.RandAlnum(), lib.RandAlnum()}
 	args := [][]string{arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8}
 
 	for _, v := range args {
-		z01.ChallengeMain("union", v...)
+		lib.ChallengeMain("union", v...)
 	}
 }

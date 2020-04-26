@@ -3,10 +3,9 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 type NodeI12 = student.NodeI
@@ -51,11 +50,11 @@ func nodePushBackListInt12(l1 *NodeI12, l2 *NodeIS12, data int) {
 func comparFuncNodeInt12(l1 *NodeI12, l2 *NodeIS12) {
 	for l1 != nil || l2 != nil {
 		if (l1 == nil && l2 != nil) || (l1 != nil && l2 == nil) {
-			z01.Fatalf("\nstudent list:%s\nlist:%s\n\nListSort() == %v instead of %v\n\n",
+			lib.Fatalf("\nstudent list:%s\nlist:%s\n\nListSort() == %v instead of %v\n\n",
 				printListStudent(l1), correct.PrintList(l2), l1, l2)
 		}
 		if l1.Data != l2.Data {
-			z01.Fatalf("\nstudent list:%s\nlist:%s\n\nListSort() == %v instead of %v\n\n",
+			lib.Fatalf("\nstudent list:%s\nlist:%s\n\nListSort() == %v instead of %v\n\n",
 				printListStudent(l1), correct.PrintList(l2), l1.Data, l2.Data)
 		}
 		l1 = l1.Next
@@ -75,7 +74,7 @@ func main() {
 
 	// just numbers/ints
 	for i := 0; i < 2; i++ {
-		table = append(table, nodeTest{z01.MultRandInt()})
+		table = append(table, nodeTest{lib.MultRandInt()})
 	}
 	table = append(table, nodeTest{[]int{5, 4, 3, 2, 1}})
 

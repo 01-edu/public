@@ -1,12 +1,10 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
+	"../lib"
 	"./base"
-
-	correct "./correct"
-	student "./student"
+	"./correct"
+	"./student"
 )
 
 func main() {
@@ -20,7 +18,7 @@ func main() {
 	for i := 0; i < 30; i++ {
 		validBaseToInput1 := base.Valid()
 		validBaseToInput2 := base.Valid()
-		str := base.ConvertNbr(z01.RandIntBetween(0, 1000000), validBaseToInput1)
+		str := base.ConvertNbr(lib.RandIntBetween(0, 1000000), validBaseToInput1)
 		val := node{
 			nbr:      str,
 			baseFrom: validBaseToInput1,
@@ -36,7 +34,7 @@ func main() {
 	)
 
 	for _, arg := range table {
-		z01.Challenge("ConvertBase", student.ConvertBase, correct.ConvertBase, arg.nbr, arg.baseFrom, arg.baseTo)
+		lib.Challenge("ConvertBase", student.ConvertBase, correct.ConvertBase, arg.nbr, arg.baseFrom, arg.baseTo)
 	}
 }
 

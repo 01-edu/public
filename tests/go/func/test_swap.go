@@ -1,24 +1,23 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	student "./student"
+	"../lib"
+	"./student"
 )
 
 func main() {
 	i := 0
 	for i < 30 {
-		a := z01.RandInt()
-		b := z01.RandInt()
+		a := lib.RandInt()
+		b := lib.RandInt()
 		aCopy := a
 		bCopy := b
 		student.Swap(&a, &b)
 		if a != bCopy {
-			z01.Fatalf("Swap(%d, %d), a == %d instead of %d", aCopy, bCopy, a, bCopy)
+			lib.Fatalf("Swap(%d, %d), a == %d instead of %d", aCopy, bCopy, a, bCopy)
 		}
 		if b != aCopy {
-			z01.Fatalf("Swap(%d, %d), b == %d instead of %d", aCopy, bCopy, b, aCopy)
+			lib.Fatalf("Swap(%d, %d), b == %d instead of %d", aCopy, bCopy, b, aCopy)
 		}
 		i++
 	}

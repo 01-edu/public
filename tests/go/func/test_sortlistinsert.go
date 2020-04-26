@@ -3,10 +3,9 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 type NodeI14 = student.NodeI
@@ -54,11 +53,11 @@ func nodepushback2(l *NodeIS14, data int) *NodeIS14 {
 func comparFuncNodeInt14(l1 *NodeI14, l2 *NodeIS14, data []int) {
 	for l1 != nil || l2 != nil {
 		if (l1 == nil && l2 != nil) || (l1 != nil && l2 == nil) {
-			z01.Fatalf("\ndata used to insert: %d\nstudent list:%s\nlist:%s\n\nSortListInsert() == %v instead of %v\n\n",
+			lib.Fatalf("\ndata used to insert: %d\nstudent list:%s\nlist:%s\n\nSortListInsert() == %v instead of %v\n\n",
 				data, listToStringStu3(l1), correct.PrintList(l2), l1, l2)
 		}
 		if l1.Data != l2.Data {
-			z01.Fatalf("\ndata used to insert: %d\nstudent list:%s\nlist:%s\n\nSortListInsert() == %v instead of %v\n\n",
+			lib.Fatalf("\ndata used to insert: %d\nstudent list:%s\nlist:%s\n\nSortListInsert() == %v instead of %v\n\n",
 				data, listToStringStu3(l1), correct.PrintList(l2), l1.Data, l2.Data)
 		}
 		l1 = l1.Next
@@ -108,14 +107,14 @@ func main() {
 
 	for i := 0; i < 2; i++ {
 		table = append(table, nodeTest{
-			data:     z01.MultRandInt(),
-			data_ref: z01.MultRandInt(),
+			data:     lib.MultRandInt(),
+			data_ref: lib.MultRandInt(),
 		})
 	}
 	table = append(table,
 		nodeTest{
 			data:     []int{5, 4, 3, 2, 1},
-			data_ref: z01.MultRandInt(),
+			data_ref: lib.MultRandInt(),
 		},
 	)
 	for _, arg := range table {

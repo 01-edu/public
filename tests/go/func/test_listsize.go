@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 type Node2 = student.NodeL
@@ -53,7 +52,7 @@ func main() {
 		aux := correct.ListSize(link)
 		aux2 := student.ListSize(link2)
 		if aux != aux2 {
-			z01.Fatalf("ListSize(%v) == %d instead of %d\n", correct.ListToString(link.Head), aux2, aux)
+			lib.Fatalf("ListSize(%v) == %d instead of %d\n", correct.ListToString(link.Head), aux2, aux)
 		}
 		link = &List2{}
 		link2 = &ListS2{}

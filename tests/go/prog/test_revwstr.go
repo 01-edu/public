@@ -1,6 +1,6 @@
 package main
 
-import "github.com/01-edu/z01"
+import "../lib"
 
 func main() {
 	table := []string{
@@ -13,19 +13,19 @@ func main() {
 
 	// 3 valid random sentences with no spaces at the beginning nor the end and only one space for separator.
 	for i := 0; i < 3; i++ {
-		numberOfWords := z01.RandIntBetween(1, 6)
-		sentence := z01.RandAlnum()
+		numberOfWords := lib.RandIntBetween(1, 6)
+		sentence := lib.RandAlnum()
 		for j := 0; j < numberOfWords; j++ {
-			sentence += " " + z01.RandAlnum()
+			sentence += " " + lib.RandAlnum()
 		}
-		sentence += z01.RandAlnum()
+		sentence += lib.RandAlnum()
 		table = append(table, sentence)
 	}
 
 	for _, s := range table {
-		z01.ChallengeMain("revwstr", s)
+		lib.ChallengeMain("revwstr", s)
 	}
 
-	z01.ChallengeMain("revwstr")
-	z01.ChallengeMain("revwstr", "1param", "2param", "3param", "4param")
+	lib.ChallengeMain("revwstr")
+	lib.ChallengeMain("revwstr", "1param", "2param", "3param", "4param")
 }

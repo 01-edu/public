@@ -3,10 +3,9 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func listToString4(n *correct.Nodelist) (res string) {
@@ -72,7 +71,7 @@ func compare(l2 *correct.Nodelist, l1 *student.Nodelist, f func(a, b int) bool) 
 
 	for l1 != nil && l2 != nil {
 		if l1.Data != l2.Data {
-			z01.Fatalf("\nstudent list:%s\nlist:%s\nfunction cmp:%s\n\nSortListInsert() == %v instead of %v\n\n",
+			lib.Fatalf("\nstudent list:%s\nlist:%s\nfunction cmp:%s\n\nSortListInsert() == %v instead of %v\n\n",
 				listToStringStu4(l1), listToString4(l2), cmp, l1.Data, l2.Data)
 			return
 		}
@@ -94,7 +93,7 @@ func main() {
 
 	for i := 0; i < 4; i++ {
 		table = append(table, nodeTest{
-			data:      z01.MultRandIntBetween(1, 1234),
+			data:      lib.MultRandIntBetween(1, 1234),
 			functions: []func(a, b int) bool{ascending, descending},
 		})
 	}

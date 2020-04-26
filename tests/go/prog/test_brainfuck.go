@@ -3,7 +3,7 @@ package main
 import (
 	"strings"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 func main() {
@@ -13,9 +13,9 @@ func main() {
 		"+++++[>++++[>++++H>+++++i<<-]>>>++\n<<<<-]>>--------.>+++++.>.",
 		"++++++++++[>++++++++++>++++++++++>++++++++++<<<-]>---.>--.>-.>++++++++++.",
 		"ld++++++++++++++++++++++++++++++++++++++++++++this+is++a++++comment++++++++++++++[>d+<-]>.+.+.>++++++++++.",
-		strings.Join([]string{"ld++++++++++++++++++++++++++++++++++++++++++++this+is++a++++comment++++++++++++++[>d+<-]>.+", z01.RandStr(z01.RandIntBetween(1, 10), ".+"), ".+.>++++++++++."}, ""),
+		strings.Join([]string{"ld++++++++++++++++++++++++++++++++++++++++++++this+is++a++++comment++++++++++++++[>d+<-]>.+", lib.RandStr(lib.RandIntBetween(1, 10), ".+"), ".+.>++++++++++."}, ""),
 	}
 	for _, v := range args {
-		z01.ChallengeMain("brainfuck", v)
+		lib.ChallengeMain("brainfuck", v)
 	}
 }

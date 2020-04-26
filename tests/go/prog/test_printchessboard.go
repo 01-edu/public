@@ -3,7 +3,7 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 func main() {
@@ -21,12 +21,12 @@ func main() {
 	)
 
 	for i := 0; i < 2; i++ {
-		number1 := strconv.Itoa(z01.RandIntBetween(1, 200))
-		number2 := strconv.Itoa(z01.RandIntBetween(1, 200))
+		number1 := strconv.Itoa(lib.RandIntBetween(1, 200))
+		number2 := strconv.Itoa(lib.RandIntBetween(1, 200))
 		table = append(table, []string{number1, number2})
 	}
 
 	for _, v := range table {
-		z01.ChallengeMain("printchessboard", v...)
+		lib.ChallengeMain("printchessboard", v...)
 	}
 }

@@ -3,19 +3,18 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
 	// 15 unvalid strings in the table
-	table := z01.MultRandASCII()
+	table := lib.MultRandASCII()
 
 	// 15 valid strings in the table
 	for i := 0; i < 15; i++ {
-		table = append(table, strconv.Itoa(z01.RandIntBetween(0, 1000000)))
+		table = append(table, strconv.Itoa(lib.RandIntBetween(0, 1000000)))
 	}
 
 	// Special cases added to table
@@ -34,6 +33,6 @@ func main() {
 		"01,02,03",
 	)
 	for _, arg := range table {
-		z01.Challenge("IsNumeric", student.IsNumeric, correct.IsNumeric, arg)
+		lib.Challenge("IsNumeric", student.IsNumeric, correct.IsNumeric, arg)
 	}
 }

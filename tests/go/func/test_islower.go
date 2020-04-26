@@ -1,20 +1,19 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
 	// 15 unvalid strings in the table
-	table := z01.MultRandASCII()
+	table := lib.MultRandASCII()
 
 	// 15 valid lowercase strings of random size between 1 and 20 letters in the table
 	for i := 0; i < 15; i++ {
-		size := z01.RandIntBetween(1, 20)
-		randLow := z01.RandLower()
+		size := lib.RandIntBetween(1, 20)
+		randLow := lib.RandLower()
 		if len(randLow) <= size {
 			table = append(table, randLow)
 		} else {
@@ -40,6 +39,6 @@ func main() {
 		"hello!",
 	)
 	for _, arg := range table {
-		z01.Challenge("IsLower", student.IsLower, correct.IsLower, arg)
+		lib.Challenge("IsLower", student.IsLower, correct.IsLower, arg)
 	}
 }

@@ -3,10 +3,9 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 type Node7 = student.NodeL
@@ -57,11 +56,11 @@ func comparFuncList7(l1 *List7, l2 *ListS7, f func(*Node7)) {
 	funcName := correct.GetName(f)
 	for l1.Head != nil || l2.Head != nil {
 		if (l1.Head == nil && l2.Head != nil) || (l1.Head != nil && l2.Head == nil) {
-			z01.Fatalf("\nstudent list: %s\nlist: %s\nfunction used: %s\n\nListForEach() == %v instead of %v\n\n",
+			lib.Fatalf("\nstudent list: %s\nlist: %s\nfunction used: %s\n\nListForEach() == %v instead of %v\n\n",
 				listToStringStu8(l2), correct.ListToString(l1.Head), funcName, l2.Head, l1.Head)
 		}
 		if l1.Head.Data != l2.Head.Data {
-			z01.Fatalf("\nstudent list: %s\nlist: %s\nfunction used: %s\n\nListForEach() == %v instead of %v\n\n",
+			lib.Fatalf("\nstudent list: %s\nlist: %s\nfunction used: %s\n\nListForEach() == %v instead of %v\n\n",
 				listToStringStu8(l2), correct.ListToString(l1.Head), funcName, l2.Head.Data, l1.Head.Data)
 		}
 		l1.Head = l1.Head.Next

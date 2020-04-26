@@ -1,9 +1,8 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	student "./student"
+	"../lib"
+	"./student"
 )
 
 func main() {
@@ -12,6 +11,6 @@ func main() {
 	n := &b
 	student.UltimatePointOne(&n)
 	if a != 1 {
-		z01.Fatalf("UltimatePointOne(&n), a == %d instead of 1", a)
+		lib.Fatalf("UltimatePointOne(&n), a == %d instead of 1", a)
 	}
 }

@@ -3,11 +3,11 @@ package main
 import (
 	"strings"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 func main() {
-	args := append(z01.MultRandWords(),
+	args := append(lib.MultRandWords(),
 		"padinton paqefwtdjetyiytjneytjoeyjnejeyj",
 		"ddf6vewg64f  twthgdwthdwfteewhrtag6h4ffdhsd",
 		"abcdefghij efghijlmnopq",
@@ -17,15 +17,15 @@ func main() {
 	)
 
 	for i := 0; i < 5; i++ {
-		s1 := z01.RandAlnum()
-		s2 := z01.RandAlnum() + s1 + z01.RandAlnum()
+		s1 := lib.RandAlnum()
+		s2 := lib.RandAlnum() + s1 + lib.RandAlnum()
 		args = append(args,
 			s1+" "+s2,
-			z01.RandAlnum()+" "+z01.RandAlnum(),
+			lib.RandAlnum()+" "+lib.RandAlnum(),
 		)
 	}
 
 	for _, s := range args {
-		z01.ChallengeMain("inter", strings.Fields(s)...)
+		lib.ChallengeMain("inter", strings.Fields(s)...)
 	}
 }

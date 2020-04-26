@@ -3,7 +3,7 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 func isAPrime(nb int) bool {
@@ -29,7 +29,7 @@ func isAPrime(nb int) bool {
 
 func main() {
 	// adds random numbers
-	table := z01.MultRandIntBetween(1, 10000)
+	table := lib.MultRandIntBetween(1, 10000)
 
 	// fill with all prime numbers between 0 and 100
 	for i := 0; i < 100; i++ {
@@ -39,10 +39,10 @@ func main() {
 	}
 
 	for _, i := range table {
-		z01.ChallengeMain("addprimesum", strconv.Itoa(i))
+		lib.ChallengeMain("addprimesum", strconv.Itoa(i))
 	}
 	// special cases
-	z01.ChallengeMain("addprimesum")
-	z01.ChallengeMain("addprimesum", `""`)
-	z01.ChallengeMain("addprimesum", "1", "2")
+	lib.ChallengeMain("addprimesum")
+	lib.ChallengeMain("addprimesum", `""`)
+	lib.ChallengeMain("addprimesum", "1", "2")
 }

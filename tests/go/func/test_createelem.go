@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 // the structs from the other packages
@@ -20,7 +19,7 @@ func main() {
 	table := [][]int{{{132423}}}
 
 	for i := 0; i < 5; i++ {
-		table = append(table, z01.MultRandIntBetween(-1000000, 10000000))
+		table = append(table, lib.MultRandIntBetween(-1000000, 10000000))
 	}
 
 	for _, items := range table {
@@ -30,7 +29,7 @@ func main() {
 		}
 
 		if n1.Data != n2.Data {
-			z01.Fatalf("CreateElem == %d instead of %d\n", n1, n2)
+			lib.Fatalf("CreateElem == %d instead of %d\n", n1, n2)
 		}
 	}
 }

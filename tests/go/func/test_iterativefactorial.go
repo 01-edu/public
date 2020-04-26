@@ -3,21 +3,20 @@ package main
 import (
 	"math/bits"
 
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
 	table := append(
-		z01.MultRandInt(),
-		z01.IntRange(0, 12)...,
+		lib.MultRandInt(),
+		lib.IntRange(0, 12)...,
 	)
 	if bits.UintSize == 64 {
-		table = append(table, z01.IntRange(13, 20)...)
+		table = append(table, lib.IntRange(13, 20)...)
 	}
 	for _, arg := range table {
-		z01.Challenge("IterativeFactorial", student.IterativeFactorial, correct.IterativeFactorial, arg)
+		lib.Challenge("IterativeFactorial", student.IterativeFactorial, correct.IterativeFactorial, arg)
 	}
 }

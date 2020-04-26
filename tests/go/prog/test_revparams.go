@@ -1,8 +1,8 @@
 package main
 
-import "github.com/01-edu/z01"
+import "../lib"
 
 func main() {
-	z01.ChallengeMain("revparams", "choumi", "is", "the", "best", "cat")
-	z01.ChallengeMain("revparams", z01.MultRandWords()...)
+	lib.ChallengeMain("revparams", "choumi", "is", "the", "best", "cat")
+	lib.ChallengeMain("revparams", lib.MultRandWords()...)
 }
