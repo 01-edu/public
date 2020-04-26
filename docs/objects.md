@@ -11,12 +11,12 @@ It structure can be visualized in two parts. The first one is the definition of 
 
 This is the minimal structure of an object:
 
--   name
--   type (`organisation`, `campus`, `onboarding`, `cursus`, `quest`, `exercise`)
--   status (`draft`, `online`, `offline`)
--   attrs {}
--   childrenAttrs {}
--   children {}
+- name
+- type (`organisation`, `campus`, `onboarding`, `cursus`, `quest`, `exercise`)
+- status (`draft`, `online`, `offline`)
+- attrs {}
+- childrenAttrs {}
+- children {}
 
 ## Browse Objects:
 

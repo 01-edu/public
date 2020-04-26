@@ -12,7 +12,7 @@ A "word" is defined as a part of a `string` delimited either by spaces/tabs, or
 by the start/end of the `string`.
 
 If the number of arguments is not 1, or if there are no words to display, the
-program displays a newline ("`\n`").
+program displays nothing.
 
 ### Usage :
 
@@ -24,7 +24,6 @@ student@ubuntu:~/[[ROOT]]/cleanstr$ ./cleanstr " only    it's  harder   "
 only it's harder$
 student@ubuntu:~/[[ROOT]]/cleanstr$ ./cleanstr " how funny" "Did you   hear Mathilde ?"
 $
-student@ubuntu:~/[[ROOT]]/cleanstr$ ./cleanstr "" | cat -e
-$
+student@ubuntu:~/[[ROOT]]/cleanstr$ ./cleanstr ""
 student@ubuntu:~/[[ROOT]]/cleanstr$
 ```

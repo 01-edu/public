@@ -2,12 +2,12 @@
 
 ### Instructions
 
-Write a function `SortWordArr` that sorts by `ascii` (in ascending order) a `string` array.
+Write a function `SortWordArr` that sorts by `ascii` (in ascending order) a `string` slice.
 
 ### Expected function
 
 ```go
-func SortWordArr(array []string) {
+func SortWordArr(a []string) {
 
 }
 ```
@@ -25,7 +25,6 @@ import (
 )
 
 func main() {
-
 	result := []string{"a", "A", "1", "b", "B", "2", "c", "C", "3"}
 	piscine.SortWordArr(result)
 

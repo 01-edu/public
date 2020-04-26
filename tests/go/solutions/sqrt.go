@@ -1,8 +1,6 @@
 package solutions
 
-import (
-	"math"
-)
+import "math"
 
 func Sqrt(value int) int {
 	sr := math.Sqrt(float64(value))

@@ -2,11 +2,9 @@
 
 ### Instructions
 
-Write a function that prints the words of a `string` array that will be returned a function `SplitWhiteSpaces`. (the testing will be done with ours)
+Write a function that prints the words of a `string` slice that will be returned a function `SplitWhiteSpaces`.
 
-Each word is on a single line.
-
-Each word ends with a `\n`.
+Each word is on a single line (each word ends with a `\n`).
 
 ### Expected function
 

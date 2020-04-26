@@ -1,9 +1,7 @@
 package solutions
 
-import (
-	"strings"
-)
+import "strings"
 
-func DoppelGanger(big, little string) int {
-	return strings.LastIndex(big, little)
+func DoppelGanger(s, substr string) int {
+	return strings.LastIndex(s, substr)
 }

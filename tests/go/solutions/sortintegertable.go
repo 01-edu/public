@@ -1,9 +1,7 @@
 package solutions
 
-import (
-	"sort"
-)
+import "sort"
 
-func SortIntegerTable(table []int) {
-	sort.Ints(table)
+func SortIntegerTable(a []int) {
+	sort.Ints(a)
 }

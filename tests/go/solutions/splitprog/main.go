@@ -1,11 +1,9 @@
 package main
 
-import (
-	"strings"
-)
+import "strings"
 
-func Split(str, charset string) []string {
-	return strings.Split(str, charset)
+func Split(s, sep string) []string {
+	return strings.Split(s, sep)
 }
 
 func main() {

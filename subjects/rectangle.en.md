@@ -2,8 +2,7 @@
 
 ### Instructions
 
-Consider that a point is defined by its coordinates and that a rectangle
-is defined by the points of the upper left and lower right corners.
+Consider that a point is defined by its coordinates and that a rectangle is defined by the points of the upper left and lower right corners.
 
 - Define two structures named, `point` and `rectangle`.
 

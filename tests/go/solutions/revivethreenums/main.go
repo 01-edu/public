@@ -23,7 +23,7 @@ func max(a, b, c, d int) int {
 	return -1
 }
 
-func Revive_three_nums(a, b, c, d int) int {
+func ReviveThreeNums(a, b, c, d int) int {
 	maxi := -111
 	if a != max(a, b, c, d) {
 		maxi = more(maxi, max(a, b, c, d)-a)

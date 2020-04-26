@@ -25,9 +25,7 @@ Program #1
 ```go
 package main
 
-import (
-	piscine ".."
-)
+import piscine ".."
 
 func main() {
 	piscine.Raid1b(5,3)
@@ -50,9 +48,7 @@ Program #2
 ```go
 package main
 
-import (
-	piscine ".."
-)
+import piscine ".."
 
 func main() {
 	piscine.Raid1b(5,1)
@@ -73,9 +69,7 @@ Program #3
 ```go
 package main
 
-import (
-	piscine ".."
-)
+import piscine ".."
 
 func main() {
 	piscine.Raid1b(1,1)
@@ -96,9 +90,7 @@ Program #4
 ```go
 package main
 
-import (
-	piscine ".."
-)
+import piscine ".."
 
 func main() {
 	piscine.Raid1b(1,5)

@@ -1,10 +1,7 @@
 package solutions
 
-import (
-	"strings"
-)
+import "strings"
 
-func Index(s string, toFind string) int {
-	result := strings.Index(s, toFind)
-	return result
+func Index(s string, substr string) int {
+	return strings.Index(s, substr)
 }

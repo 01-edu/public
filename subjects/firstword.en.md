@@ -8,7 +8,7 @@ Write a program that takes a `string` and displays its first word, followed by a
 
 - The output will be followed by a newline (`'\n'`).
 
-- If the number of parameters is not 1, or if there are no words, the program displays a newline (`'\n'`).
+- If the number of parameters is not 1, or if there are no words, the program displays nothing.
 
 ### Usage
 
@@ -19,8 +19,6 @@ hello
 student@ubuntu:~/[[ROOT]]/test$ ./test "hello   .........  bye"
 hello
 student@ubuntu:~/[[ROOT]]/test$ ./test
-
 student@ubuntu:~/[[ROOT]]/test$ ./test "hello" "there"
-
 student@ubuntu:~/[[ROOT]]/test$
 ```

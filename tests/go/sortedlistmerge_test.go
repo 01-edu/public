@@ -1,8 +1,7 @@
-package student_test
+package main
 
 import (
 	"strconv"
-	"testing"
 
 	solution "./solutions"
 	student "./student"
@@ -49,63 +48,61 @@ func nodePushBackListInt13(l *NodeI13, l1 *NodeIS13, data int) {
 	}
 }
 
-func TestSortedListMerge(t *testing.T) {
-	var link *NodeI13
+func main() {
+	var link1 *NodeI13
 	var link2 *NodeI13
-	var linkTest *NodeIS13
+	var linkTest1 *NodeIS13
 	var linkTest2 *NodeIS13
 	type nodeTest struct {
-		data  []int
+		data1 []int
 		data2 []int
 	}
 
-	table := []nodeTest{}
+	table := []nodeTest{{
+		data1: []int{},
+	}}
 
-	table = append(table,
-		nodeTest{
-			data: []int{},
-		})
 	for i := 0; i < 3; i++ {
 		val := nodeTest{
-			data:  z01.MultRandInt(),
+			data1: z01.MultRandInt(),
 			data2: z01.MultRandInt(),
 		}
 		table = append(table, val)
 	}
 	table = append(table,
 		nodeTest{
-			data:  []int{3, 5, 7},
+			data1: []int{3, 5, 7},
 			data2: []int{1, -2, 4, 6},
 		},
 	)
 	for _, arg := range table {
-		for i := 0; i < len(arg.data); i++ {
-			nodePushBackListInt13(link, linkTest, arg.data[i])
+		for i := 0; i < len(arg.data1); i++ {
+			nodePushBackListInt13(link1, linkTest1, arg.data1[i])
 		}
 		for i := 0; i < len(arg.data2); i++ {
 			nodePushBackListInt13(link2, linkTest2, arg.data2[i])
 		}
 
-		link = student.ListSort(link)
+		link1 = student.ListSort(link1)
 		link2 = student.ListSort(link2)
-		linkTest = solution.ListSort(linkTest)
+		linkTest1 = solution.ListSort(linkTest1)
 		linkTest2 = solution.ListSort(linkTest2)
 
-		aux := student.SortedListMerge(link, link2)
-		aux2 := solution.SortedListMerge(linkTest, linkTest2)
+		aux1 := student.SortedListMerge(link1, link2)
+		aux2 := solution.SortedListMerge(linkTest1, linkTest2)
 
-		if aux == nil && aux2 == nil {
-		} else if aux != nil && aux2 == nil {
-			t.Fatalf("\nstudent merged lists:%s\nmerged lists:%s\n\nSortListMerge() == %v instead of %v\n\n",
-				printListStudent1(aux), solution.PrintList(aux2), aux, aux2)
-		} else if aux.Data != aux2.Data {
-			t.Fatalf("\nstudent merged lists:%s\nmerged lists:%s\n\nSortListMerge() == %v instead of %v\n\n",
-				printListStudent1(aux), solution.PrintList(aux2), aux, aux2)
+		if aux1 == nil && aux2 == nil {
+		} else if aux1 != nil && aux2 == nil {
+			z01.Fatalf("\nstudent merged lists:%s\nmerged lists:%s\n\nSortListMerge() == %v instead of %v\n\n",
+				printListStudent1(aux1), solution.PrintList(aux2), aux1, aux2)
+		} else if aux1.Data != aux2.Data {
+			z01.Fatalf("\nstudent merged lists:%s\nmerged lists:%s\n\nSortListMerge() == %v instead of %v\n\n",
+				printListStudent1(aux1), solution.PrintList(aux2), aux1, aux2)
 		}
 
-		link = &NodeI13{}
+		link1 = &NodeI13{}
 		link2 = &NodeI13{}
-		linkTest = &NodeIS13{}
+		linkTest1 = &NodeIS13{}
 		linkTest2 = &NodeIS13{}
 	}
 }

@@ -1,12 +1,6 @@
 package main
 
-//This solution is the placeholder of the student solution
-// for an exercise in the exam asking for a Function
-//Remember the disclaimer!!!!
-//1) here the package is main
-//2) It does need an empty func main(){}
-
-func Priorprime(x int) int {
+func PriorPrime(x int) int {
 	ans := 0
 	ok := 0
 	for i := 2; i < x; i++ {

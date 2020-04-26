@@ -1,14 +1,13 @@
 package main
 
 import (
-	"io"
-	// "os"
 	"fmt"
+	"io"
 	"math/rand"
 	"strconv"
-	"testing"
 
-	// "github.com/01-edu/z01"
+	"github.com/01-edu/z01"
+
 	solutions "../../solutions"
 )
 
@@ -18,7 +17,8 @@ type solNode = solutions.TNode
 func solInsert(N *solNode, newVal int) {
 	if N == nil {
 		return
-	} else if newVal <= N.Val {
+	}
+	if newVal <= N.Val {
 		if N.Left == nil {
 			N.Left = &solNode{Val: newVal, Left: nil, Right: nil}
 		} else {
@@ -36,7 +36,8 @@ func solInsert(N *solNode, newVal int) {
 func stuInsert(N *stuNode, newVal int) {
 	if N == nil {
 		return
-	} else if newVal <= N.Val {
+	}
+	if newVal <= N.Val {
 		if N.Left == nil {
 			N.Left = &stuNode{Val: newVal, Left: nil, Right: nil}
 		} else {
@@ -51,21 +52,17 @@ func stuInsert(N *stuNode, newVal int) {
 	}
 }
 
-func IsIdentical(root1 *solNode, root2 *stuNode) int {
+func IsIdentical(root1 *solNode, root2 *stuNode) bool {
 	if root1 == nil && root2 == nil {
-		return 1
-	} else if root1 == nil && root2 != nil {
-		return 0
-	} else if root2 == nil && root1 != nil {
-		return 0
-	} else {
-		if root1.Val == root2.Val && IsIdentical(root1.Left, root2.Left) == 1 && IsIdentical(root1.Right, root2.Right) == 1 {
-			return 1
-		} else {
-			return 0
-		}
+		return true
 	}
-	return 1
+	if root1 == nil && root2 != nil {
+		return false
+	}
+	if root2 == nil && root1 != nil {
+		return false
+	}
+	return root1.Val == root2.Val && IsIdentical(root1.Left, root2.Left) && IsIdentical(root1.Right, root2.Right)
 }
 
 func stuPrint(w io.Writer, node *stuNode, ns int, ch rune) {
@@ -128,7 +125,7 @@ func returnSolTree(root *solNode) string {
 	return ans
 }
 
-func TestInvertTree(t *testing.T) {
+func main() {
 	root, val1, val2, val3, val4 := 0, 0, 0, 0, 0
 
 	root = rand.Intn(30)
@@ -156,12 +153,11 @@ func TestInvertTree(t *testing.T) {
 		InvertTree(TestTree)
 		// stuPrint(os.Stdout, TestTree, 0, 'M')
 
-		ret := IsIdentical(tree, TestTree)
-		if ret != 1 {
+		if !IsIdentical(tree, TestTree) {
 			tree1 := returnSolTree(temp)
 			tree2 := returnStuTree(tmp)
-			t.Fatalf("\n\"%v\" instead of \"%v\"\n\n", tree1, tree2)
-			// t.Fatalf("\nError\n\n")
+			z01.Fatalf("\n\"%v\" instead of \"%v\"\n\n", tree1, tree2)
+			// z01.Fatalf("\nError\n\n")
 		}
 	}
 }

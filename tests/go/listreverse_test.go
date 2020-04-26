@@ -1,8 +1,9 @@
-package student_test
+package main
 
 import (
 	"strconv"
-	"testing"
+
+	"github.com/01-edu/z01"
 
 	solution "./solutions"
 	student "./student"
@@ -29,21 +30,21 @@ func listToStringStu13(l *ListS6) string {
 	return res
 }
 
-func comparFuncList6(l *List6, l1 *ListS6, t *testing.T) {
+func comparFuncList6(l *List6, l1 *ListS6) {
 	for l.Head != nil || l1.Head != nil {
 		if (l.Head == nil && l1.Head != nil) || (l.Head != nil && l1.Head == nil) {
-			t.Fatalf("\nstudent list:%s\nlist:%s\n\nListReverse() == %v instead of %v\n\n",
+			z01.Fatalf("\nstudent list:%s\nlist:%s\n\nListReverse() == %v instead of %v\n\n",
 				listToStringStu13(l1), solution.ListToString(l.Head), l1.Head, l.Head)
-			return
-		} else if l.Head.Data != l1.Head.Data {
-			t.Fatalf("\nstudent list:%s\nlist:%s\n\nListReverse() == %v instead of %v\n\n",
+		}
+		if l.Head.Data != l1.Head.Data {
+			z01.Fatalf("\nstudent list:%s\nlist:%s\n\nListReverse() == %v instead of %v\n\n",
 				listToStringStu13(l1), solution.ListToString(l.Head), l1.Head.Data, l.Head.Data)
-			return
 		}
 		l.Head = l.Head.Next
 		l1.Head = l1.Head.Next
 	}
 }
+
 func listPushBackTest6(l *ListS6, l1 *List6, data interface{}) {
 	n := &Node6{Data: data}
 	n1 := &NodeS6{Data: data}
@@ -67,25 +68,21 @@ func listPushBackTest6(l *ListS6, l1 *List6, data interface{}) {
 	}
 }
 
-// exercise 8
-func TestListReverse(t *testing.T) {
-	link := &List6{}
+func main() {
+	link1 := &List6{}
 	link2 := &ListS6{}
-	table := []solution.NodeTest{}
+	table := []solution.NodeTest{{
+		Data: []interface{}{"I", 1, "something", 2},
+	}}
 	table = solution.ElementsToTest(table)
-	table = append(table,
-		solution.NodeTest{
-			Data: []interface{}{"I", 1, "something", 2},
-		},
-	)
 	for _, arg := range table {
-		for i := 0; i < len(arg.Data); i++ {
-			listPushBackTest6(link2, link, arg.Data[i])
+		for _, item := range arg.Data {
+			listPushBackTest6(link2, link1, item)
 		}
 		student.ListReverse(link2)
-		solution.ListReverse(link)
-		comparFuncList6(link, link2, t)
-		link = &List6{}
+		solution.ListReverse(link1)
+		comparFuncList6(link1, link2)
+		link1 = &List6{}
 		link2 = &ListS6{}
 	}
 }

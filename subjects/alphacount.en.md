@@ -10,7 +10,7 @@ The letters are only the ones from the latin alphabet.
 ### Expected function
 
 ```go
-func AlphaCount(str string) int {
+func AlphaCount(s string) int {
 
 }
 ```
@@ -28,8 +28,8 @@ import (
 )
 
 func main() {
-	str := "Hello 78 World!    4455 /"
-	nb := piscine.AlphaCount(str)
+	s := "Hello 78 World!    4455 /"
+	nb := piscine.AlphaCount(s)
 	fmt.Println(nb)
 }
 ```

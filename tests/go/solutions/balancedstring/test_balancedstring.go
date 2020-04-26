@@ -1,15 +1,9 @@
 package main
 
-import (
-	"github.com/01-edu/z01"
-)
+import "github.com/01-edu/z01"
 
 func main() {
-	// Declaration of an empty array of type string
-	table := []string{}
-
-	// Filing of this array with the tests array provided.
-	table = append(table,
+	table := []string{
 		"CDCCDDCDCD",
 		"CDDDDCCCDC",
 		"DDDDCCCC",
@@ -18,10 +12,10 @@ func main() {
 		"CCCDDDCDCCCCDC",
 		"DDDDDDDDDDDDDDDDDDDDDDDDCCCCCCCCCCCCCCCCCCCCCCCC",
 		"DDDDCDDDDCDDDCCC",
-	)
+	}
 
 	for i := 0; i < 15; i++ {
-		value := ""
+		s := ""
 		chunks := z01.RandIntBetween(5, 10)
 		for j := 0; j < chunks; j++ {
 			countC := z01.RandIntBetween(1, 5)
@@ -32,10 +26,10 @@ func main() {
 				letter := z01.RandStr(1, "CD")
 				if tmpC > 0 && letter == "C" {
 					tmpC--
-					value += letter
+					s += letter
 				} else if tmpD > 0 && letter == "D" {
 					tmpD--
-					value += letter
+					s += letter
 				}
 			}
 
@@ -45,19 +39,15 @@ func main() {
 				letter := z01.RandStr(1, "CD")
 				if tmpC > 0 && letter == "D" {
 					tmpC--
-					value += letter
+					s += letter
 				} else if tmpD > 0 && letter == "C" {
 					tmpD--
-					value += letter
+					s += letter
 				}
 			}
 		}
-		table = append(table, value)
+		table = append(table, s)
 	}
-
-	//The table with 8 specific exercises and 15 randoms is now ready to be "challenged"
-	//This time, contrary to the nauuo exercise,
-	//We can use the ChallengeMainExam function.
 
 	for _, arg := range table {
 		z01.ChallengeMain("balancedstring", arg)

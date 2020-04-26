@@ -3,10 +3,10 @@ package main
 import (
 	"math/rand"
 	"strconv"
-	"testing"
+
+	"github.com/01-edu/z01"
 
 	solutions "../../solutions"
-	"github.com/01-edu/z01"
 )
 
 type stuTreeNode = TreeNodeL
@@ -82,15 +82,15 @@ func returnStuTree(root *stuTreeNode) string {
 	return ans
 }
 
-func compareResults(t *testing.T, stuResult, solResult bool, solTree1, solTree2 *solTreeNode) {
+func compareResults(stuResult, solResult bool, solTree1, solTree2 *solTreeNode) {
 	if stuResult != solResult {
 		tree1 := returnSolTree(solTree1)
 		tree2 := returnSolTree(solTree2)
-		t.Fatalf("\nIsSameTree(\"%v\", \"%v\") == \"%v\" instead of \"%v\"\n\n", tree1, tree2, stuResult, solResult)
+		z01.Fatalf("\nIsSameTree(\"%v\", \"%v\") == \"%v\" instead of \"%v\"\n\n", tree1, tree2, stuResult, solResult)
 	}
 }
 
-func TestMerge(t *testing.T) {
+func main() {
 	type node struct {
 		n int
 		k int
@@ -109,7 +109,7 @@ func TestMerge(t *testing.T) {
 		stuResult := IsSameTree(stuTree1, stuTree2)
 		solResult := solutions.IsSameTree(solTree1, solTree2)
 
-		compareResults(t, stuResult, solResult, cop1, cop2)
+		compareResults(stuResult, solResult, cop1, cop2)
 	}
 
 	// Check for same trees
@@ -118,6 +118,6 @@ func TestMerge(t *testing.T) {
 		stuResult := IsSameTree(stuTree1, stuTree1)
 		solResult := solutions.IsSameTree(solTree1, solTree1)
 
-		compareResults(t, stuResult, solResult, cop1, cop1)
+		compareResults(stuResult, solResult, cop1, cop1)
 	}
 }

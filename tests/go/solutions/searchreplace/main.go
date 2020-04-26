@@ -1,25 +1,18 @@
 package main
 
 import (
+	"fmt"
 	"os"
-
-	"github.com/01-edu/z01"
+	"strings"
 )
 
 func main() {
-	if len(os.Args) <= 1 || len(os.Args) > 4 {
-		z01.PrintRune('\n')
-	} else if len(os.Args) == 4 {
-		array := []rune(os.Args[1])
-		search := []rune(os.Args[2])
-		replace := []rune(os.Args[3])
-		for _, val := range array {
-			if val == search[0] {
-				z01.PrintRune(replace[0])
-			} else {
-				z01.PrintRune(val)
+	if len(os.Args) == 4 {
+		fmt.Println(strings.Map(func(r rune) rune {
+			if r == []rune(os.Args[2])[0] {
+				return []rune(os.Args[3])[0]
 			}
-		}
-		z01.PrintRune('\n')
+			return r
+		}, os.Args[1]))
 	}
 }

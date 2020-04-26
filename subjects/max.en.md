@@ -2,12 +2,12 @@
 
 ### Instructions
 
-Write a function, `Max`, that returns the maximum value in a slice of integers.
+Write a function, `Max`, that returns the maximum value in a slice of integers. If the slice is empty, returns 0.
 
 ### Expected function
 
 ```go
-func Max(arr []int) int {
+func Max(a []int) int {
 
 }
 ```
@@ -25,8 +25,8 @@ import (
 )
 
 func main() {
-	arrInt := []int{23, 123, 1, 11, 55, 93}
-	max := piscine.Max(arrInt)
+	a := []int{23, 123, 1, 11, 55, 93}
+	max := piscine.Max(a)
 	fmt.Println(max)
 }
 ```

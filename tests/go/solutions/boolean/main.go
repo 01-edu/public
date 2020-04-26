@@ -25,7 +25,7 @@ func main() {
 
 	lenOfArg := len(os.Args) - 1
 
-	if isEven(lenOfArg) == true {
+	if isEven(lenOfArg) {
 		printStr(EvenMsg)
 	} else {
 		printStr(OddMsg)

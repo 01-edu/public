@@ -1,8 +1,10 @@
 package solutions
 
+import "unicode"
+
 func IsNumeric(s string) bool {
 	for _, r := range s {
-		if !(r >= '0' && r <= '9') {
+		if !unicode.IsDigit(r) {
 			return false
 		}
 	}

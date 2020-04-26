@@ -1,15 +1,15 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	student "./student"
+
+	"github.com/01-edu/z01"
 )
 
-func TestPointOne(t *testing.T) {
+func main() {
 	n := 0
 	student.PointOne(&n)
 	if n != 1 {
-		t.Fatalf("PointOne(&n), n == %d instead of 1", n)
+		z01.Fatalf("PointOne(&n), n == %d instead of 1\n", n)
 	}
 }

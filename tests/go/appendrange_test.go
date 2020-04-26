@@ -12,10 +12,9 @@ func main() {
 		min int
 		max int
 	}
-
 	table := []node{}
-	//15 random pairs of ints for a Valid Range
 
+	// 15 random pairs of ints for a Valid Range
 	for i := 0; i < 15; i++ {
 		minVal := z01.RandIntBetween(-10000000, 1000000)
 		gap := z01.RandIntBetween(1, 20)
@@ -25,7 +24,8 @@ func main() {
 		}
 		table = append(table, val)
 	}
-	//15 random pairs of ints with ||invalid range||
+
+	// 15 random pairs of ints with ||invalid range||
 	for i := 0; i < 15; i++ {
 		minVal := z01.RandIntBetween(-10000000, 1000000)
 		gap := z01.RandIntBetween(1, 20)

@@ -1,8 +1,7 @@
-package student_test
+package main
 
 import (
 	"reflect"
-	"testing"
 
 	"github.com/01-edu/z01"
 
@@ -10,8 +9,8 @@ import (
 	student "./student"
 )
 
-func TestCompact(t *testing.T) {
-	var arg [][]string
+func main() {
+	arg := [][]string{{"hello", "", "hi", "", "salut", "", ""}}
 
 	for i := 0; i < 20; i++ {
 		n := z01.RandIntBetween(5, 20) // random size of the slice
@@ -28,8 +27,6 @@ func TestCompact(t *testing.T) {
 		arg = append(arg, orig)
 	}
 
-	arg = append(arg, []string{"hello", "", "hi", "", "salut", "", ""})
-
 	for _, v := range arg {
 		sli_sol := make([]string, len(arg)) // slice to apply the solution function
 		sli_stu := make([]string, len(arg)) // slice to apply the student function
@@ -41,14 +38,14 @@ func TestCompact(t *testing.T) {
 		stu_size := student.Compact(&sli_stu)
 
 		if !reflect.DeepEqual(sli_stu, sli_sol) {
-			t.Fatalf("Produced slice: %v, instead of %v\n",
+			z01.Fatalf("Produced slice: %v, instead of %v\n",
 				sli_stu,
 				sli_sol,
 			)
 		}
 
 		if sol_size != stu_size {
-			t.Fatalf("%s(%v) == %v instead of %v\n",
+			z01.Fatalf("%s(%v) == %v instead of %v\n",
 				"Compact",
 				v,
 				sli_stu,

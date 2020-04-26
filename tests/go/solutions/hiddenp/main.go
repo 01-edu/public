@@ -8,7 +8,6 @@ import (
 
 func main() {
 	if len(os.Args) != 3 {
-		z01.PrintRune('\n')
 		return
 	}
 

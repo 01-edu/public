@@ -1,34 +1,32 @@
-package student_test
+package main
 
 import (
 	"strconv"
-	"testing"
+
+	"github.com/01-edu/z01"
 
 	solution "./solutions"
 	student "./student"
-	"github.com/01-edu/z01"
 )
 
-func listToString4(n *solution.Nodelist) string {
-	var res string
+func listToString4(n *solution.Nodelist) (res string) {
 	it := n
 	for it != nil {
 		res += strconv.Itoa(it.Data) + "-> "
 		it = it.Next
 	}
 	res += "<nil>"
-	return res
+	return
 }
 
-func listToStringStu4(n *student.Nodelist) string {
-	var res string
+func listToStringStu4(n *student.Nodelist) (res string) {
 	it := n
 	for it != nil {
 		res += strconv.Itoa(it.Data) + "-> "
 		it = it.Next
 	}
 	res += "<nil>"
-	return res
+	return
 }
 
 func ascending(a, b int) bool {
@@ -69,21 +67,21 @@ func insertNodeListStudent(l1 *student.Nodelist, data int) *student.Nodelist {
 	return it
 }
 
-func compare(t *testing.T, l *solution.Nodelist, l1 *student.Nodelist, f func(a, b int) bool) {
+func compare(l2 *solution.Nodelist, l1 *student.Nodelist, f func(a, b int) bool) {
 	cmp := solution.GetName(f)
 
-	for l1 != nil && l != nil {
-		if l1.Data != l.Data {
-			t.Fatalf("\nstudent list:%s\nlist:%s\nfunction cmp:%s\n\nSortListInsert() == %v instead of %v\n\n",
-				listToStringStu4(l1), listToString4(l), cmp, l1.Data, l.Data)
+	for l1 != nil && l2 != nil {
+		if l1.Data != l2.Data {
+			z01.Fatalf("\nstudent list:%s\nlist:%s\nfunction cmp:%s\n\nSortListInsert() == %v instead of %v\n\n",
+				listToStringStu4(l1), listToString4(l2), cmp, l1.Data, l2.Data)
 			return
 		}
 		l1 = l1.Next
-		l = l.Next
+		l2 = l2.Next
 	}
 }
 
-func TestSortList(t *testing.T) {
+func main() {
 	var linkSolutions *solution.Nodelist
 	var linkStudent *student.Nodelist
 
@@ -95,11 +93,10 @@ func TestSortList(t *testing.T) {
 	table := []nodeTest{}
 
 	for i := 0; i < 4; i++ {
-		val := nodeTest{
+		table = append(table, nodeTest{
 			data:      z01.MultRandIntBetween(1, 1234),
 			functions: []func(a, b int) bool{ascending, descending},
-		}
-		table = append(table, val)
+		})
 	}
 
 	table = append(table,
@@ -109,16 +106,15 @@ func TestSortList(t *testing.T) {
 		})
 
 	for _, arg := range table {
-		for i := 0; i < len(arg.data); i++ {
-			linkStudent = insertNodeListStudent(linkStudent, arg.data[i])
-			linkSolutions = insertNodeListSolution(linkSolutions, arg.data[i])
+		for _, item := range arg.data {
+			linkStudent = insertNodeListStudent(linkStudent, item)
+			linkSolutions = insertNodeListSolution(linkSolutions, item)
 		}
 
-		for i := 0; i < len(arg.functions); i++ {
-			studentResult := student.SortList(linkStudent, arg.functions[i])
-			solutionResult := solution.SortList(linkSolutions, arg.functions[i])
-
-			compare(t, solutionResult, studentResult, arg.functions[i])
+		for _, fn := range arg.functions {
+			studentResult := student.SortList(linkStudent, fn)
+			solutionResult := solution.SortList(linkSolutions, fn)
+			compare(solutionResult, studentResult, fn)
 		}
 		linkSolutions = &solution.Nodelist{}
 		linkStudent = &student.Nodelist{}

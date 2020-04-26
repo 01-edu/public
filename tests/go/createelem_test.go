@@ -1,50 +1,36 @@
-package student_test
+package main
 
 import (
-	"testing"
+	"github.com/01-edu/z01"
 
 	solution "./solutions"
 	student "./student"
-	"github.com/01-edu/z01"
 )
 
-//the structs from the other packages
-//struct just for the first exercise
+// the structs from the other packages
+// struct just for the first exercise
 type NodeF = student.Node
 type NodeFS = solution.Node
 
-//exercise 1
-//simple struct, just insert a element in the struct
-func TestCreateElem(t *testing.T) {
-	n := &NodeFS{}
-	n1 := &NodeF{}
+// simple struct, just insert a element in the struct
+func main() {
+	n1 := &NodeFS{}
+	n2 := &NodeF{}
 
-	type nodeTest struct {
-		data []int
-	}
-
-	table := []nodeTest{}
+	table := [][]int{{{132423}}}
 
 	for i := 0; i < 5; i++ {
-		val := nodeTest{
-			data: z01.MultRandIntBetween(-1000000, 10000000),
-		}
-		table = append(table, val)
+		table = append(table, z01.MultRandIntBetween(-1000000, 10000000))
 	}
 
-	table = append(table,
-		nodeTest{
-			data: []int{132423},
-		},
-	)
-	for _, arg := range table {
-		for i := 0; i < len(arg.data); i++ {
-			solution.CreateElem(n, arg.data[i])
-			student.CreateElem(n1, arg.data[i])
+	for _, items := range table {
+		for _, item := range items {
+			solution.CreateElem(n1, item)
+			student.CreateElem(n2, item)
 		}
 
-		if n.Data != n1.Data {
-			t.Fatalf("CreateElem == %d instead of %d\n", n, n1)
+		if n1.Data != n2.Data {
+			z01.Fatalf("CreateElem == %d instead of %d\n", n1, n2)
 		}
 	}
 }

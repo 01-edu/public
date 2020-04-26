@@ -1,8 +1,9 @@
-package student_test
+package main
 
 import (
 	"strconv"
-	"testing"
+
+	"github.com/01-edu/z01"
 
 	solution "./solutions"
 	student "./student"
@@ -27,27 +28,25 @@ func listToStringStu11(l *Lista) string {
 	return res
 }
 
-//makes the test, compares 2 lists one from the solutions and the other from the student
-func comparFuncList1(l *Lista, l1 *ListSa, t *testing.T, data []interface{}) {
+// makes the test, compares 2 lists one from the solutions and the other from the student
+func comparFuncList1(l *Lista, l1 *ListSa, data []interface{}) {
 	for l.Head != nil || l1.Head != nil {
 		if (l.Head == nil && l1.Head != nil) || (l.Head != nil && l1.Head == nil) {
-			t.Fatalf("\ndata used: %v\nstudent list:%s\nlist:%s\n\nListPushFront()== %v instead of %v\n\n",
+			z01.Fatalf("\ndata used: %v\nstudent list:%s\nlist:%s\n\nListPushFront()== %v instead of %v\n\n",
 				data, listToStringStu11(l), solution.ListToString(l1.Head), l.Head, l1.Head)
-			return
-		} else if l.Head.Data != l1.Head.Data {
-			t.Fatalf("\ndata used: %v\nstudent list:%s\nlist:%s\n\nListPushFront()== %v instead of %v\n\n",
+		}
+		if l.Head.Data != l1.Head.Data {
+			z01.Fatalf("\ndata used: %v\nstudent list:%s\nlist:%s\n\nListPushFront()== %v instead of %v\n\n",
 				data, listToStringStu11(l), solution.ListToString(l1.Head), l.Head, l1.Head)
-			return
 		}
 		l1.Head = l1.Head.Next
 		l.Head = l.Head.Next
 	}
 }
 
-//exercise 3
-//to insert a value in the first position of the list
-func TestListPushFront(t *testing.T) {
-	link := &Lista{}
+// to insert a value in the first position of the list
+func main() {
+	link1 := &Lista{}
 	link2 := &ListSa{}
 	table := []solution.NodeTest{}
 	table = solution.ElementsToTest(table)
@@ -57,12 +56,12 @@ func TestListPushFront(t *testing.T) {
 		},
 	)
 	for _, arg := range table {
-		for i := 0; i < len(arg.Data); i++ {
-			student.ListPushFront(link, arg.Data[i])
-			solution.ListPushFront(link2, arg.Data[i])
+		for _, item := range arg.Data {
+			student.ListPushFront(link1, item)
+			solution.ListPushFront(link2, item)
 		}
-		comparFuncList1(link, link2, t, arg.Data)
-		link = &Lista{}
+		comparFuncList1(link1, link2, arg.Data)
+		link1 = &Lista{}
 		link2 = &ListSa{}
 	}
 }

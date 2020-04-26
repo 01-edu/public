@@ -1,12 +1,12 @@
-package student_test
+package main
 
 import (
 	"strconv"
-	"testing"
+
+	"github.com/01-edu/z01"
 
 	solution "./solutions"
 	student "./student"
-	"github.com/01-edu/z01"
 )
 
 type NodeI12 = student.NodeI
@@ -23,19 +23,9 @@ func printListStudent(n *NodeI12) string {
 	return res
 }
 
-func nodePushBackListInt12(l *NodeI12, l1 *NodeIS12, data int) {
-	n := &NodeI12{Data: data}
-	n1 := &NodeIS12{Data: data}
-
-	if l == nil {
-		l = n
-	} else {
-		iterator := l
-		for iterator.Next != nil {
-			iterator = iterator.Next
-		}
-		iterator.Next = n
-	}
+func nodePushBackListInt12(l1 *NodeI12, l2 *NodeIS12, data int) {
+	n1 := &NodeI12{Data: data}
+	n2 := &NodeIS12{Data: data}
 
 	if l1 == nil {
 		l1 = n1
@@ -46,61 +36,59 @@ func nodePushBackListInt12(l *NodeI12, l1 *NodeIS12, data int) {
 		}
 		iterator1.Next = n1
 	}
-}
 
-func comparFuncNodeInt12(l *NodeI12, l1 *NodeIS12, t *testing.T) {
-	for l != nil || l1 != nil {
-		if (l == nil && l1 != nil) || (l != nil && l1 == nil) {
-			t.Fatalf("\nstudent list:%s\nlist:%s\n\nListSort() == %v instead of %v\n\n",
-				printListStudent(l), solution.PrintList(l1), l, l1)
-			return
-		} else if l.Data != l1.Data {
-			t.Fatalf("\nstudent list:%s\nlist:%s\n\nListSort() == %v instead of %v\n\n",
-				printListStudent(l), solution.PrintList(l1), l.Data, l1.Data)
-			return
+	if l2 == nil {
+		l2 = n2
+	} else {
+		iterator2 := l2
+		for iterator2.Next != nil {
+			iterator2 = iterator2.Next
 		}
-		l = l.Next
-		l1 = l1.Next
+		iterator2.Next = n2
 	}
 }
 
-//exercise 15
-func TestListSort(t *testing.T) {
-	var link *NodeI12
+func comparFuncNodeInt12(l1 *NodeI12, l2 *NodeIS12) {
+	for l1 != nil || l2 != nil {
+		if (l1 == nil && l2 != nil) || (l1 != nil && l2 == nil) {
+			z01.Fatalf("\nstudent list:%s\nlist:%s\n\nListSort() == %v instead of %v\n\n",
+				printListStudent(l1), solution.PrintList(l2), l1, l2)
+		}
+		if l1.Data != l2.Data {
+			z01.Fatalf("\nstudent list:%s\nlist:%s\n\nListSort() == %v instead of %v\n\n",
+				printListStudent(l1), solution.PrintList(l2), l1.Data, l2.Data)
+		}
+		l1 = l1.Next
+		l2 = l2.Next
+	}
+}
+
+func main() {
+	var link1 *NodeI12
 	var link2 *NodeIS12
 
 	type nodeTest struct {
 		data []int
 	}
 	table := []nodeTest{}
+	table = append(table, nodeTest{[]int{}})
 
-	table = append(table,
-		nodeTest{
-			data: []int{},
-		})
-	//just numbers/ints
+	// just numbers/ints
 	for i := 0; i < 2; i++ {
-		val := nodeTest{
-			data: z01.MultRandInt(),
-		}
-		table = append(table, val)
+		table = append(table, nodeTest{z01.MultRandInt()})
 	}
+	table = append(table, nodeTest{[]int{5, 4, 3, 2, 1}})
 
-	table = append(table,
-		nodeTest{
-			data: []int{5, 4, 3, 2, 1},
-		},
-	)
 	for _, arg := range table {
 		for i := 0; i < len(arg.data); i++ {
-			nodePushBackListInt12(link, link2, arg.data[i])
+			nodePushBackListInt12(link1, link2, arg.data[i])
 		}
-		aux := solution.ListSort(link2)
-		aux2 := student.ListSort(link)
+		aux1 := solution.ListSort(link2)
+		aux2 := student.ListSort(link1)
 
-		comparFuncNodeInt12(aux2, aux, t)
+		comparFuncNodeInt12(aux2, aux1)
 
-		link = &NodeI12{}
+		link1 = &NodeI12{}
 		link2 = &NodeIS12{}
 	}
 }

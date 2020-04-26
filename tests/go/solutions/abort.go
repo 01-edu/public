@@ -1,12 +1,10 @@
 package solutions
 
-import (
-	"sort"
-)
+import "sort"
 
-//Receives 5 ints and returns the number in the middle
+// Receives 5 ints and returns the number in the middle
 func Abort(a, b, c, d, e int) int {
 	arg := []int{a, b, c, d, e}
-	sort.Sort(sort.IntSlice(arg))
+	sort.Ints(arg)
 	return arg[2]
 }

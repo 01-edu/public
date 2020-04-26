@@ -1,48 +1,28 @@
 package main
 
-import (
-	"os"
+import "fmt"
 
-	"github.com/01-edu/z01"
-)
-
-func solve(str string) bool {
+func solve(s string) bool {
 	x := 0
 	y := 0
 
-	for _, c := range str {
-		if c == 'L' {
+	for _, r := range s {
+		switch r {
+		case 'L':
 			x--
-		} else if c == 'R' {
+		case 'R':
 			x++
-		} else if c == 'U' {
+		case 'U':
 			y++
-		} else if c == 'D' {
+		case 'D':
 			y--
 		}
 	}
-	if x == 0 && y == 0 {
-		return true
-	}
-	return false
-}
-
-func print(str string) {
-	for _, v := range str {
-		z01.PrintRune(v)
-	}
+	return x == 0 && y == 0
 }
 
 func main() {
-	args := os.Args[1:]
-	if len(args) != 1 {
-		z01.PrintRune('\n')
-		return
-	}
-	result := solve(args[0])
-	if result {
-		print("true\n")
-	} else {
-		print("false\n")
+	if len(args) == 2 {
+		fmt.Println(solve(args[1]))
 	}
 }

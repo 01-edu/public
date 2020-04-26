@@ -7,7 +7,7 @@ Write a function `rot14` that returns the `string` within the parameter transfor
 ### Expected function
 
 ```go
-func Rot14(str string) string {
+func Rot14(s string) string {
 
 }
 ```
@@ -26,10 +26,9 @@ import (
 
 func main() {
 	result := piscine.Rot14("Hello How are You")
-	arrayRune := []rune(result)
 
-	for _, s := range arrayRune {
-		z01.PrintRune(s)
+	for _, r := range result {
+		z01.PrintRune(r)
 	}
 	z01.PrintRune('\n')
 }

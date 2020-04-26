@@ -1,8 +1,6 @@
 package solutions
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func PrintComb2() {
 	a := 0

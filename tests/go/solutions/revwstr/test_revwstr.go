@@ -1,27 +1,24 @@
 package main
 
-import (
-	"github.com/01-edu/z01"
-)
+import "github.com/01-edu/z01"
 
 func main() {
-	table := []string{}
-
-	table = append(table,
+	table := []string{
 		"",
 		"abcdefghijklm",
 		"the time of contempt precedes that of indifference",
 		"he stared at the mountain",
-		"qw qw e qwsa d")
+		"qw qw e qwsa d",
+	}
 
-	//3 valid random sentences with no spaces at the beginning nor the end and only one space for separator.
+	// 3 valid random sentences with no spaces at the beginning nor the end and only one space for separator.
 	for i := 0; i < 3; i++ {
 		numberOfWords := z01.RandIntBetween(1, 6)
 		sentence := z01.RandAlnum()
 		for j := 0; j < numberOfWords; j++ {
-			sentence = sentence + " " + z01.RandAlnum()
+			sentence += " " + z01.RandAlnum()
 		}
-		sentence = sentence + z01.RandAlnum()
+		sentence += z01.RandAlnum()
 		table = append(table, sentence)
 	}
 

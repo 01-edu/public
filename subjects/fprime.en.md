@@ -6,9 +6,7 @@ Write a program that takes a positive `int` and displays its prime factors, foll
 
 - Factors must be displayed in ascending order and separated by `*`.
 
-- If the number of parameters is different from 1, the program displays a newline.
-
-- The input, when there is one, will always be valid.
+- If the number of arguments is different from 1, if the argument is invalid or if the integer doesn't have a prime factor, the program displays nothing.
 
 ### Usage
 
@@ -25,10 +23,7 @@ student@ubuntu:~/[[ROOT]]/test$ ./test 804577
 student@ubuntu:~/[[ROOT]]/test$ ./test 42
 2*3*7
 student@ubuntu:~/[[ROOT]]/test$ ./test a
-
 student@ubuntu:~/[[ROOT]]/test$ ./test 0
-
 student@ubuntu:~/[[ROOT]]/test$ ./test 1
-
 student@ubuntu:~/[[ROOT]]/test$
 ```

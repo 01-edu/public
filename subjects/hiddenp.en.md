@@ -8,7 +8,7 @@ Let s1 and s2 be `string`. It is considered that s1 is hidden in s2 if it is pos
 
 If s1 is an empty `string` it is considered hidden in any `string`.
 
-If the number of parameters is different from 2, the program displays a newline.
+If the number of parameters is different from 2, the program displays nothing.
 
 ### Usage
 
@@ -22,7 +22,6 @@ student@ubuntu:~/[[ROOT]]/hiddenp$ ./hiddenp "abc" "btarc" | cat -e
 0$
 student@ubuntu:~/[[ROOT]]/hiddenp$ ./hiddenp "DD" "DABC" | cat -e
 0$
-student@ubuntu:~/[[ROOT]]/hiddenp$ ./hiddenp | cat -e
-$
+student@ubuntu:~/[[ROOT]]/hiddenp$ ./hiddenp
 student@ubuntu:~/[[ROOT]]/hiddenp$
 ```

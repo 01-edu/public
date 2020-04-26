@@ -1,8 +1,6 @@
 package solutions
 
-import (
-	"strconv"
-)
+import "strconv"
 
 func BasicAtoi2(s string) int {
 	n, _ := strconv.Atoi(s)

@@ -6,22 +6,6 @@ import (
 	"strings"
 )
 
-func contains(big, small string) bool {
-	for i := 0; i <= len(big)-len(small); i++ {
-		if big[i] == small[0] {
-			for j := 0; j < len(small); j++ {
-				if big[i+j] != small[j] {
-					break
-				}
-				if j == len(small)-1 {
-					return true
-				}
-			}
-		}
-	}
-	return false
-}
-
 func main() {
 	var big string
 	args := os.Args[1:]
@@ -35,10 +19,10 @@ func main() {
 			break
 		}
 		if ch == "A" {
-			big = big + small
+			big += small
 		}
 		if ch == "?" {
-			if contains(big, small) == true {
+			if strings.Contains(big, small) {
 				fmt.Println("YES")
 			} else {
 				fmt.Println("NO")

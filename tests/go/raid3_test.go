@@ -1,19 +1,18 @@
-package student_test
+package main
 
 import (
 	"os/exec"
 	"strconv"
-	"testing"
 
 	"github.com/01-edu/z01"
 )
 
-func TestRaid3(t *testing.T) {
+func main() {
 	execFatal := func(name string, arg ...string) string {
 		b, err := exec.Command(name, arg...).CombinedOutput()
 		s := string(b)
 		if err != nil {
-			t.Fatal(s)
+			z01.Fatal(s)
 		}
 		return s
 	}
@@ -30,7 +29,7 @@ func TestRaid3(t *testing.T) {
 			correct = execFatal("sh", "-c", "./"+args+" "+strconv.Itoa(x)+" "+strconv.Itoa(y)+" | ./raid3")
 		}
 		if output != correct {
-			t.Fatalf("./%s %d %d | ./raid3 prints %q instead of %q\n",
+			z01.Fatalf("./%s %d %d | ./raid3 prints %q instead of %q\n",
 				args, x, y, output, correct)
 		}
 	}
@@ -53,7 +52,7 @@ func TestRaid3(t *testing.T) {
 	}
 
 	// testing special case AA, AC, A, A
-	//								A  C
+	// 								A  C
 	executeTest("raid1e", 2, 1)
 	executeTest("raid1c", 2, 1)
 	executeTest("raid1d", 1, 2)

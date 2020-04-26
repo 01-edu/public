@@ -2,12 +2,12 @@
 
 ### Instructions
 
-Write a function `Map` that, for an `int` array, applies a function of this type `func(int) bool` on each elements of that array and returns an array of all the return values.
+Write a function `Map` that, for an `int` slice, applies a function of this type `func(int) bool` on each elements of that slice and returns a slice of all the return values.
 
 ### Expected function
 
 ```go
-func Map(f func(int) bool, arr []int) []bool {
+func Map(f func(int) bool, a []int) []bool {
 
 }
 ```
@@ -25,8 +25,8 @@ import (
 )
 
 func main() {
-	arr := []int{1, 2, 3, 4, 5, 6}
-	result := piscine.Map(piscine.IsPrime, arr)
+	a := []int{1, 2, 3, 4, 5, 6}
+	result := piscine.Map(piscine.IsPrime, a)
 	fmt.Println(result)
 }
 ```

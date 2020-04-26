@@ -4,15 +4,15 @@
 
 Write a program which must:
 
-- **Allocate (with `make`)** an array of integers.
+- **Allocate (with `make`)** a slice of integers.
 
 - Fill it with consecutive values that begins at the first argument and end at the second argument (Including the values of thoses arguments !).
 
-- That prints the array.
+- That prints the slice.
 
 Errors should be handled.
 
-If the number of arguments is different from 2 the program prints a newline ("`\n`").
+If the number of arguments is different from 2 the program prints nothing.
 
 ### Expected output :
 

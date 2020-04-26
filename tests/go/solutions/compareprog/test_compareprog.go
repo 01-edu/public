@@ -1,8 +1,6 @@
 package main
 
-import (
-	"github.com/01-edu/z01"
-)
+import "github.com/01-edu/z01"
 
 func main() {
 	type node struct {
@@ -28,11 +26,10 @@ func main() {
 		wordToTest := z01.RandASCII()
 		wrongMatch := z01.RandASCII()
 
-		val := node{
+		table = append(table, node{
 			s:         wordToTest,
 			toCompare: wrongMatch,
-		}
-		table = append(table, val)
+		})
 	}
 	// those are the test values from the README examples
 	table = append(table,

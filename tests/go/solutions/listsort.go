@@ -1,16 +1,16 @@
 package solutions
 
 func ListSort(l *NodeI) *NodeI {
-	Head := l
-	if Head == nil {
+	head := l
+	if head == nil {
 		return nil
 	}
-	Head.Next = ListSort(Head.Next)
+	head.Next = ListSort(head.Next)
 
-	if Head.Next != nil && Head.Data > Head.Next.Data {
-		Head = move(Head)
+	if head.Next != nil && head.Data > head.Next.Data {
+		head = move(head)
 	}
-	return Head
+	return head
 }
 
 func move(l *NodeI) *NodeI {

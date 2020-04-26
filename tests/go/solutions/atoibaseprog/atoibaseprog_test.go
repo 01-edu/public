@@ -3,6 +3,8 @@ package main
 import (
 	"github.com/01-edu/z01"
 
+	"./base"
+
 	solutions "../../solutions"
 )
 
@@ -17,16 +19,16 @@ func main() {
 
 	// 15 random pairs of string numbers with valid bases
 	for i := 0; i < 15; i++ {
-		validBaseToInput := solutions.RandomValidBase()
+		validBaseToInput := base.Valid()
 		val := node{
-			s:    solutions.RandomStringFromBase(validBaseToInput),
+			s:    base.StringFrom(validBaseToInput),
 			base: validBaseToInput,
 		}
 		table = append(table, val)
 	}
 	// 15 random pairs of string numbers with invalid bases
 	for i := 0; i < 15; i++ {
-		invalidBaseToInput := solutions.RandomInvalidBase()
+		invalidBaseToInput := base.Invalid()
 		val := node{
 			s:    "thisinputshouldnotmatter",
 			base: invalidBaseToInput,
@@ -44,3 +46,5 @@ func main() {
 		z01.Challenge("AtoiBaseProg", AtoiBase, solutions.AtoiBase, arg.s, arg.base)
 	}
 }
+
+// TODO: fix base exercises

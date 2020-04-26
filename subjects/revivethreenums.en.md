@@ -1,15 +1,4 @@
-## revive_three_nums
-
-## **WARNING! VERY IMPORTANT!**
-
-For this exercise a function will be tested **with the exam own main**. However the student **still needs** to submit a structured program:
-
-This means that:
-
-- The package needs to be named `package main`.
-- The submitted code needs one declared function main(`func main()`) even if empty.
-- The function main declared needs to **also pass** the `Restrictions Checker`(illegal functions tester). It is advised for the student to just empty the function main after its own testings are done.
-- Every other rules are obviously the same than for a `program`.
+## revivethreenums
 
 ### Instructions
 
@@ -23,7 +12,7 @@ There are basically three integers: **a**, **b**, **c**. You are given 4 integer
 ### Expected function
 
 ```go
-func Revive_three_nums(a, b, c, d int) int {
+func ReviveThreeNums(a, b, c, d int) int {
 
 }
 ```
@@ -35,14 +24,12 @@ Here is a possible program to test your function :
 ```go
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	fmt.Println(Revive_three_nums(3, 6, 5, 4))
-	fmt.Println(Revive_three_nums(40, 40, 40, 60))
-	fmt.Println(Revive_three_nums(201, 101, 101, 200))
+	fmt.Println(ReviveThreeNums(3, 6, 5, 4))
+	fmt.Println(ReviveThreeNums(40, 40, 40, 60))
+	fmt.Println(ReviveThreeNums(201, 101, 101, 200))
 }
 ```
 

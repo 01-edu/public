@@ -1,8 +1,6 @@
 package solutions
 
-import (
-	"math"
-)
+import "math"
 
 func IterativePower(nb int, power int) int {
 	if power < 0 {

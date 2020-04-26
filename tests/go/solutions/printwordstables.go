@@ -1,15 +1,9 @@
 package solutions
 
-import (
-	"fmt"
-)
+import "fmt"
 
-func PrintWordsTables(table []string) {
-	for _, t := range table {
-		fmt.Println(t)
+func PrintWordsTables(a []string) {
+	for _, s := range a {
+		fmt.Println(s)
 	}
-}
-
-func isSeparator(r rune) bool {
-	return r == ' ' || r == '\t' || r == '\n'
 }

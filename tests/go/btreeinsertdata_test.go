@@ -1,8 +1,6 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
@@ -81,9 +79,9 @@ func formatSubTree_insert(root *student.TreeNode, prefix string) string {
 	return res
 }
 
-func errorMessage_insert(t *testing.T, fn interface{}, inserted string, root *solutions.TreeNode, rootS *student.TreeNode) {
-	t.Fatalf("%s(\n%s, %s\n) ==\n%s instead of\n%s\n",
-		z01.NameOfFunc(fn),
+func errorMessage_insert(fn interface{}, inserted string, root *solutions.TreeNode, rootS *student.TreeNode) {
+	z01.Fatalf("%s(\n%s, %s\n) ==\n%s instead of\n%s\n",
+		"BTreeInsertData",
 		solutions.FormatTree(root),
 		inserted,
 		FormatTree_insert(rootS),
@@ -91,16 +89,16 @@ func errorMessage_insert(t *testing.T, fn interface{}, inserted string, root *so
 	)
 }
 
-func CompareTrees_insert(t *testing.T, fn interface{}, inserted string, root *solutions.TreeNode, rootS *student.TreeNode) {
+func CompareTrees_insert(fn interface{}, inserted string, root *solutions.TreeNode, rootS *student.TreeNode) {
 	solTree := solutions.FormatTree(root)
 	stuTree := FormatTree_insert(rootS)
 
 	if solTree != stuTree {
-		errorMessage_insert(t, fn, inserted, root, rootS)
+		errorMessage_insert(fn, inserted, root, rootS)
 	}
 }
 
-func TestBTreeInsertData(t *testing.T) {
+func main() {
 	root := &solutions.TreeNode{Data: "08"}
 	rootS := &student.TreeNode{Data: "08"}
 
@@ -123,6 +121,6 @@ func TestBTreeInsertData(t *testing.T) {
 	for _, arg := range pos {
 		root = solutions.BTreeInsertData(root, arg)
 		rootS = student.BTreeInsertData(rootS, arg)
-		CompareTrees_insert(t, fn, arg, root, rootS)
+		CompareTrees_insert(fn, arg, root, rootS)
 	}
 }

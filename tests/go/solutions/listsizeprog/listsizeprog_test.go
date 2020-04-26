@@ -1,9 +1,8 @@
 package main
 
 import (
-	"testing"
-
 	solution "../../solutions"
+	"github.com/01-edu/z01"
 )
 
 type Node2 = NodeL
@@ -35,8 +34,7 @@ func listPushBackTest2(l *ListS2, l1 *List2, data interface{}) {
 	}
 }
 
-//exercise 4
-func TestListSizeProg(t *testing.T) {
+func main() {
 	link := &List2{}
 	link2 := &ListS2{}
 	table := []solution.NodeTest{}
@@ -53,7 +51,7 @@ func TestListSizeProg(t *testing.T) {
 		aux := solution.ListSize(link)
 		aux2 := ListSize(link2)
 		if aux != aux2 {
-			t.Fatalf("ListSize(%v) == %d instead of %d\n", solution.ListToString(link.Head), aux2, aux)
+			z01.Fatalf("ListSize(%v) == %d instead of %d\n", solution.ListToString(link.Head), aux2, aux)
 		}
 		link = &List2{}
 		link2 = &ListS2{}

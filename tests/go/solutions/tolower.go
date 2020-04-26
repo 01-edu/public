@@ -1,10 +1,7 @@
 package solutions
 
-import (
-	"strings"
-)
+import "strings"
 
 func ToLower(s string) string {
-	s = strings.ToLower(s)
-	return s
+	return strings.ToLower(s)
 }

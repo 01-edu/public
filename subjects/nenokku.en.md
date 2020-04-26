@@ -12,7 +12,7 @@ Intersection of words is counted as if it is in your dictionary (see example).
 Write a program that takes as arguments operations.
 
 ```console
-$> ./main "? love" "? is" "A loveis" "? love" "? Who" "A Whoareyou" "? is"
+$ ./main "? love" "? is" "A loveis" "? love" "? Who" "A Whoareyou" "? is"
 NO
 NO
 YES

@@ -13,22 +13,6 @@ type helpMs struct {
 	handler     string
 }
 
-type sortRunes []rune
-
-//to implement the sort for a []rune it is necessary to
-//implement Lessm, Swap and Len functions for the sort interface
-func (s sortRunes) Less(i, j int) bool {
-	return s[i] < s[j]
-}
-
-func (s sortRunes) Swap(i, j int) {
-	s[i], s[j] = s[j], s[i]
-}
-
-func (s sortRunes) Len() int {
-	return len(s)
-}
-
 func obtainValues(value, strsplit string) string {
 	values := strings.Split(value, "=")
 	return values[len(values)-1]
@@ -60,7 +44,7 @@ func main() {
 			fmt.Println("	", v.handler)
 		}
 	} else if size <= 4 {
-		var str []rune
+		var runes []rune
 		strToInsert := ""
 		var order bool
 
@@ -70,17 +54,19 @@ func main() {
 			} else if strings.Contains(os.Args[i], "--order") || strings.Contains(os.Args[i], "-o") {
 				order = true
 			} else {
-				str = []rune(os.Args[i])
+				runes = []rune(os.Args[i])
 			}
 		}
 		if strToInsert != "" {
-			concatStr := string(str) + strToInsert
-			str = []rune(concatStr)
+			concatStr := string(runes) + strToInsert
+			runes = []rune(concatStr)
 		}
-		if order == true {
-			sort.Sort(sortRunes(str))
+		if order {
+			sort.Slice(runes, func(i, j int) bool {
+				return runes[i] < runes[j]
+			})
 		}
 
-		fmt.Println(string(str))
+		fmt.Println(string(runes))
 	}
 }

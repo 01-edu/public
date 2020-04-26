@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that separates the words of a `string` and puts them in a `string` array.
+Write a function that separates the words of a `string` and puts them in a `string` slice.
 
 The separators are spaces, tabs and newlines.
 
@@ -27,8 +27,8 @@ import (
 )
 
 func main() {
-	str := "Hello how are you?"
-	fmt.Println(piscine.SplitWhiteSpaces(str))
+	s := "Hello how are you?"
+	fmt.Printf("%#v\n", piscine.SplitWhiteSpaces(s))
 }
 ```
 
@@ -37,6 +37,6 @@ And its output :
 ```console
 student@ubuntu:~/[[ROOT]]/test$ go build
 student@ubuntu:~/[[ROOT]]/test$ ./test
-[Hello how are you?]
+[]string{"Hello", "how", "are", "you?"}
 student@ubuntu:~/[[ROOT]]/test$
 ```

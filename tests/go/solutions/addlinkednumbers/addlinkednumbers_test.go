@@ -2,7 +2,6 @@ package main
 
 import (
 	"strconv"
-	"testing"
 
 	"github.com/01-edu/z01"
 
@@ -82,51 +81,39 @@ func solNodeString(node *solNode) string {
 	return result
 }
 
-func compareNodes(t *testing.T, stuResult *stuNode, solResult *solNode, num1, num2 int) {
+func compareNodes(stuResult *stuNode, solResult *solNode, num1, num2 int) {
 	if stuResult == nil && solResult == nil {
-	} else if stuResult != nil && solResult == nil {
+		return
+	}
+	if stuResult != nil && solResult == nil {
 		stuNum := stuNodeString(stuResult)
-		t.Fatalf("\nAddLinkedNumbers(%v, %v) == %v instead of %v\n\n",
+		z01.Fatalf("\nAddLinkedNumbers(%v, %v) == %v instead of %v\n\n",
 			num1, num2, stuNum, "")
-	} else if stuResult == nil && solResult != nil {
+	}
+	if stuResult == nil && solResult != nil {
 		solNum := solNodeString(solResult)
-		t.Fatalf("\nAddLinkedNumbers(%v, %v) == %v instead of %v\n\n",
+		z01.Fatalf("\nAddLinkedNumbers(%v, %v) == %v instead of %v\n\n",
 			num1, num2, "", solNum)
-	} else {
-		stuNum := stuNodeString(stuResult)
-		solNum := solNodeString(solResult)
-		if stuNum != solNum {
-			t.Fatalf("\nAddLinkedNumbers(%v, %v) == %v instead of %v\n\n",
-				num1, num2, stuNum, solNum)
-		}
+	}
+	stuNum := stuNodeString(stuResult)
+	solNum := solNodeString(solResult)
+	if stuNum != solNum {
+		z01.Fatalf("\nAddLinkedNumbers(%v, %v) == %v instead of %v\n\n",
+			num1, num2, stuNum, solNum)
 	}
 }
 
-func TestAddLinkedNumbers(t *testing.T) {
-	type node struct {
-		num1 int
-		num2 int
-	}
-
-	table := []node{}
-
-	table = append(table,
-		node{315, 592},
-	)
+func main() {
+	args := [][2]int{{315, 592}}
 
 	for i := 0; i < 15; i++ {
-		value := node{
-			num1: z01.RandIntBetween(0, 1000000000),
-			num2: z01.RandIntBetween(0, 1000000000),
-		}
-
-		table = append(table, value)
+		args = append(args, [2]int{z01.RandPosZ(), z01.RandPosZ()})
 	}
 
-	for _, arg := range table {
-		stuResult := AddLinkedNumbers(stuNumToList(arg.num1), stuNumToList(arg.num2))
-		solResult := solutions.AddLinkedNumbers(solNumToList(arg.num1), solNumToList(arg.num2))
+	for _, arg := range args {
+		stuResult := AddLinkedNumbers(stuNumToList(arg[0]), stuNumToList(arg[1]))
+		solResult := solutions.AddLinkedNumbers(solNumToList(arg[0]), solNumToList(arg[1]))
 
-		compareNodes(t, stuResult, solResult, arg.num1, arg.num2)
+		compareNodes(stuResult, solResult, arg[0], arg[1])
 	}
 }

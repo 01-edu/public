@@ -1,8 +1,9 @@
 package main
 
 import (
-	solutions "../../solutions"
 	"github.com/01-edu/z01"
+
+	solutions "../../solutions"
 )
 
 type node struct {

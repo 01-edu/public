@@ -5,7 +5,6 @@ import (
 	"runtime"
 	"strconv"
 	"strings"
-	"testing"
 
 	"github.com/01-edu/z01"
 )
@@ -82,10 +81,12 @@ func ParentList(root *TreeNode) string {
 	return r
 }
 
-func ChallengeTree(t *testing.T,
+func ChallengeTree(
+	name string,
 	fn1, fn2 interface{},
 	arg1 *TreeNode, arg2 interface{},
-	args ...interface{}) {
+	args ...interface{},
+) {
 	args1 := []interface{}{arg1}
 	args2 := []interface{}{arg2}
 
@@ -99,32 +100,9 @@ func ChallengeTree(t *testing.T,
 	st2 := z01.Monitor(fn2, args2)
 
 	if st1.Stdout != st2.Stdout {
-		t.Fatalf("%s(\n%s)\n prints %s instead of %s\n",
-			z01.NameOfFunc(fn2),
+		z01.Fatalf("%s(\n%s)\n prints %s instead of %s\n",
+			name,
 			FormatTree(arg1),
-			z01.Format(st2.Stdout),
-			z01.Format(st1.Stdout),
-		)
-	}
-}
-
-func Challenge(t *testing.T, fn1, fn2 interface{}, arg1, arg2 interface{}, args ...interface{}) {
-	args1 := []interface{}{arg1}
-	args2 := []interface{}{arg2}
-
-	if args != nil {
-		for _, v := range args {
-			args1 = append(args1, v)
-			args2 = append(args2, v)
-		}
-	}
-	st1 := z01.Monitor(fn1, args1)
-	st2 := z01.Monitor(fn2, args2)
-
-	if st1.Stdout != st2.Stdout {
-		t.Fatalf("%s(%s) prints %s instead of %s\n",
-			z01.NameOfFunc(fn2),
-			z01.Format(arg2),
 			z01.Format(st2.Stdout),
 			z01.Format(st1.Stdout),
 		)

@@ -1,8 +1,6 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	solutions "./solutions"
@@ -81,9 +79,9 @@ func formatSubTree_delete(root *student.TreeNode, prefix string) string {
 	return res
 }
 
-func errorMessage_delete(t *testing.T, fn interface{}, deleted string, rootOr, root *solutions.TreeNode, rootS *student.TreeNode) {
-	t.Fatalf("%s(\n%s, %s\n) ==\n%s instead of\n%s\n",
-		z01.NameOfFunc(fn),
+func errorMessage_delete(fn interface{}, deleted string, rootOr, root *solutions.TreeNode, rootS *student.TreeNode) {
+	z01.Fatalf("%s(\n%s, %s\n) ==\n%s instead of\n%s\n",
+		"BTreeDeleteNode",
 		solutions.FormatTree(rootOr),
 		deleted,
 		FormatTree_delete(rootS),
@@ -91,15 +89,15 @@ func errorMessage_delete(t *testing.T, fn interface{}, deleted string, rootOr, r
 	)
 }
 
-func CompareTrees_delete(t *testing.T, fn interface{}, deleted string, rootOr, root *solutions.TreeNode, rootS *student.TreeNode) {
+func CompareTrees_delete(fn interface{}, deleted string, rootOr, root *solutions.TreeNode, rootS *student.TreeNode) {
 	sel := student.BTreeSearchItem(rootS, deleted)
 
 	if !student.BTreeIsBinary(rootS) || sel != nil {
-		errorMessage_delete(t, fn, deleted, rootOr, root, rootS)
+		errorMessage_delete(fn, deleted, rootOr, root, rootS)
 	}
 }
 
-func TestBTreeDeleteNode(t *testing.T) {
+func main() {
 	root := &solutions.TreeNode{Data: "04"}
 	rootS := &student.TreeNode{Data: "04"}
 	rootOr := &solutions.TreeNode{Data: "04"}
@@ -118,5 +116,5 @@ func TestBTreeDeleteNode(t *testing.T) {
 	root = solutions.BTreeDeleteNode(root, selected)
 	rootS = student.BTreeDeleteNode(rootS, selectedS)
 	fn := interface{}(solutions.BTreeDeleteNode)
-	CompareTrees_delete(t, fn, selected.Data, rootOr, root, rootS)
+	CompareTrees_delete(fn, selected.Data, rootOr, root, rootS)
 }

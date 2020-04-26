@@ -1,8 +1,6 @@
 package solutions
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func IsNegative(n int) {
 	if n < 0 {

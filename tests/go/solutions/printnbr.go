@@ -1,8 +1,6 @@
 package solutions
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func PrintNbr(n int) {
 	fmt.Print(n)

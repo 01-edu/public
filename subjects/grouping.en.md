@@ -8,9 +8,7 @@ The program should handle the "`|`" operator, that searches for both strings on 
 
 The output of the program should be the results of the regular expression by order of appearance in the string, being themselves identified by a number.
 
-In case the regular expression is not valid, the last argument is empty or there are no matches the program returns a newline ("`\n`").
-
-If the number of arguments is different from 2 the program should print a newline ("`\n`").
+If the number of arguments is different from 2, if the regular expression is not valid, if the last argument is empty or there are no matches the program should print nothing.
 
 ### Usage
 
@@ -34,8 +32,6 @@ student@ubuntu:~/[[ROOT]]/test$ ./regbrackets "(hi)" "He swore he just saw his s
 1: his
 2: sushi
 student@ubuntu:~/[[ROOT]]/test$ ./regbrackets "(s)" ""
-
 student@ubuntu:~/[[ROOT]]/test$ ./regbrackets "i" "Something in the air"
-
 student@ubuntu:~/[[ROOT]]/test$
 ```

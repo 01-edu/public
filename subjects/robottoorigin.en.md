@@ -13,7 +13,7 @@ Sequence of moves is a string, which characters state for movement direction:
 - R - right
 - L - left
 
-If the number of arguments is not 1, output `\n`.
+If the number of arguments is not 1, output nothing.
 
 ### Usage
 

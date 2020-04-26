@@ -1,15 +1,14 @@
 # THE ADDITION OF EXERCISE PROCEDURE
 
-
 ##### This is for a go exercise in the piscine-go
 
 ## **1. Writing the subject and / or writing the solution**
- 
+
 Always address each exceptional cases.
 
-Example:  [fprime](https://github.com/01-edu/public/blob/master/subjects/fprime.en.md).
+Example: [fprime](https://github.com/01-edu/public/blob/master/subjects/fprime.en.md).
 
-The exceptional cases in the `usage` part. 
+The exceptional cases in the `usage` part.
 
 ```console
 student@ubuntu:~/piscine-go/test$ go build
@@ -39,22 +38,21 @@ Some students found this mistake. An update of the subject during the exam treat
 
 2. Always check the formating md
 
-------
+---
 
-### fprime  <span style="color:#ff3234">(Title of the exercise)</span>
+### fprime <span style="color:#ff3234">(Title of the exercise)</span>
 
 #### Instructions <span style="color:#ff3234">(Instructions of the exercise)</span>
 
-
 Write a program that takes a positive `int` and displays its prime factors, followed by a newline (`'\n'`). <span style="color:#ff3234">(general guidelines, notice the imperative style tense and the avoidance of “you”. “You” is authorized in the case of a presence of a back story where the player is immersed)</span>
 
-- Factors must be displayed in ascending order and separated by `*`.  <span style="color:#ff3234">(formating requirement) </span>
+- Factors must be displayed in ascending order and separated by `*`. <span style="color:#ff3234">(formating requirement) </span>
 
-- If the number of parameters is different from 1, the program displays a newline.  <span style="color:#ff3234">(special case requirement, this case will need to be tested)</span>
+- If the number of parameters is different from 1, the program displays a newline. <span style="color:#ff3234">(special case requirement, this case will need to be tested)</span>
 
-- The input, when there is one, will always be valid.  <span style="color:#ff3234">(Clarification on what the tester will do, hence giving the student guidelines on the cases to be handled, the tests have to reflect this instruction as well)</span>
+- The input, when there is one, will always be valid. <span style="color:#ff3234">(Clarification on what the tester will do, hence giving the student guidelines on the cases to be handled, the tests have to reflect this instruction as well)</span>
 
-- In this exercise the primes factor of 1 is considered as 1.  <span style="color:#ff3234">(Handling of exceptional case: THIS Happens to be a mistake, we will see uses this example for the “UPDATING A SUBJECT/TEST PROCEDURE”)</sapn>
+- In this exercise the primes factor of 1 is considered as 1. <span style="color:#ff3234">(Handling of exceptional case: THIS Happens to be a mistake, we will see uses this example for the “UPDATING A SUBJECT/TEST PROCEDURE”)</sapn>
 
 ### Usage
 
@@ -79,11 +77,11 @@ student@ubuntu:~/piscine-go/test$ ./test 1
 student@ubuntu:~/piscine-go/test$
 ```
 
-------
+---
 
 ## **2. Creating the files for tests (4 main cases)**
 
-### always in -> *all/tests/go/*
+### always in -> _all/tests/go/_
 
 ### **Folder organization**
 
@@ -98,7 +96,7 @@ go
 |
 | __ solutions
 |     |-strlen.go (package solutions)
-| 
+|
 | __ student (the same thing as the solutions, just run "cp -aT solutions/ student/")
 ```
 
@@ -149,12 +147,12 @@ go
 |     |-atoi.go (package solutions)
 |     |__atoiprog
 |            |-main.go (package main)(func main(){} stays empty)
-|            |-atoiprog_test.go 
+|            |-atoiprog_test.go
 |
 | __ student (the same thing as the solutions, just run "cp -aT solutions/ student/")
 ```
 
-------
+---
 
 ## **3. Writing a file_test.go (test file for go)**
 
@@ -164,8 +162,8 @@ go
 
 - **If** the source is not in the import section, copy and paste the function, with **lowercase** for the first letter of its name.
 
-- Example: addprimesum_test.go 
-  
+- Example: addprimesum_test.go
+
 ![isaprime](isaprime.png)
 
 The func isAPrime is fully copied to the file.
@@ -176,19 +174,19 @@ Every special case in the subject should be tested. Preferably first. Before the
 
 ### <span style="color:#00bae6">**RULE 3**</span>
 
-Whenever possible do at least 1 random test!  This is to avoid cheating by predictability of the tests. If the tests are fixed, then the student may create a forest of ifs program to bypass the tester.
+Whenever possible do at least 1 random test! This is to avoid cheating by predictability of the tests. If the tests are fixed, then the student may create a forest of ifs program to bypass the tester.
 
 ### z01.functions to be used by tester
 
-- Function exercise in a Quest (strlen)   ![z01sl](strlenz01.png)
-  
+- Function exercise in a Quest (strlen) ![z01sl](strlenz01.png)
+
 ```go
 z01.Challenge(t, studentSol, studentStu) // if the program doesn’t have arguments
 
 z01.Challenge(t, studentSol, studentStu, args...) //if the program has arguments
 ```
 
-- Program exercise in a Quest (doop)  ![z01doop](doopz01.png)<-  Screenshots to be added.
+- Program exercise in a Quest (doop) ![z01doop](doopz01.png)<- Screenshots to be added.
 
 ```go
 z01.ChallengeMain(t) // if the program doesn’t have arguments
@@ -212,7 +210,7 @@ z01.Challenge(t, studentSol, studentStu) // if the program doesn’t have argume
 z01.Challenge(t, studentSol, studentStu, args...) //if the program has arguments
 ```
 
-------
+---
 
 ## **4. Testing locally (`go test` or `go test -run=Test\<nameOfTheFunction\>`)**
 
@@ -229,7 +227,7 @@ cp -aT solutions/ student
 
 ### Execute a go test in the appropriate folder
 
-- Function exercise in a Quest `(strlen)` ![](image.png) 
+- Function exercise in a Quest `(strlen)` ![](image.png)
 
 `all/test/go`
 
@@ -237,7 +235,7 @@ cp -aT solutions/ student
 go test -run=TestStrlen
 ```
 
-- Program exercise in a Quest `(doop)`  ![](image.png)<-  Screenshots to be added.
+- Program exercise in a Quest `(doop)` ![](image.png)<- Screenshots to be added.
 
 `all/test/go/`
 
@@ -247,7 +245,7 @@ go test -run=TestDoop
 
 - Program exercise in the exam `(dooprog)` Screenshots to be added.
 
-Here you can do just *go test*, because there's only one test file
+Here you can do just _go test_, because there's only one test file
 
 `all/test/go/student/dooprog`
 
@@ -263,16 +261,15 @@ go test
 go test
 ```
 
+### **NOTE:** If a go test gives a (cached) result, use this type of command (example with raid3):
 
-### **NOTE:** If a go test gives a (cached) result, use this type of command (example with raid3): 
-
-```go test count=1 raid3_test.go``` 
+`go test count=1 raid3_test.go`
 
 The result should be an OK message:
 
-- This means that the test is running correctly when the correct solution is given. If this does not work, the test file is likely to have errors inside. 
+- This means that the test is running correctly when the correct solution is given. If this does not work, the test file is likely to have errors inside.
 
-- Time should be under 5-6 seconds. If longer, remove some of the iteration of the random tests  (for example, less random tests)
+- Time should be under 5-6 seconds. If longer, remove some of the iteration of the random tests (for example, less random tests)
 
 - Be watchful of exercises with challenge function: Always test a copy of the variable and not the same variable for both the student and the solution function.
 

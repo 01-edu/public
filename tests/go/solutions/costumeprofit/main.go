@@ -6,31 +6,24 @@ import (
 	"strconv"
 )
 
-//This solution is the comparing file of the staff
-// Because the solution is a function,
-//
-//1) here the package is solutions
-//2) it does not need an empty func main(){}
-//3) its location is 1 level below the folder of the nauuo_test.go file
-
 func min(numbers ...int) int {
-	minVal := numbers[0]
-	for i := 0; i < len(numbers); i++ {
-		if numbers[i] < minVal {
-			minVal = numbers[i]
+	min := numbers[0]
+	for _, i := range numbers {
+		if i < min {
+			min = i
 		}
 	}
-	return minVal
+	return min
 }
 
 func max(numbers ...int) int {
-	maxVal := numbers[0]
-	for i := 0; i < len(numbers); i++ {
-		if numbers[i] > maxVal {
-			maxVal = numbers[i]
+	max := numbers[0]
+	for _, i := range numbers {
+		if i > max {
+			max = i
 		}
 	}
-	return maxVal
+	return max
 }
 
 func Costume_profit(a, b, c, d, e, f int) int {

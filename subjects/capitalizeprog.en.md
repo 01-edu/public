@@ -8,7 +8,7 @@ Write a program that capitalizes the first letter of each word **and** lowercase
 
 - If there is more than one argument the program should print `Too many arguments`.
 
-- If there is no arguments given the program should print a newline ("`\n`").
+- If there is no arguments given the program should print nothing.
 
 ### Usage :
 
@@ -19,6 +19,5 @@ Hello! How Are You? How+Are+Things+4you?$
 student@ubuntu:~/capitalizeprog$ ./capitalizeprog Hello! How are you? | cat -e
 Too many arguments$
 student@ubuntu:~/capitalizeprog$ ./capitalizeprog
-
 student@ubuntu:~/capitalizeprog$
 ```

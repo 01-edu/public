@@ -3,6 +3,8 @@ package main
 import (
 	"github.com/01-edu/z01"
 
+	"./base"
+
 	solutions "./solutions"
 	student "./student"
 )
@@ -16,9 +18,9 @@ func main() {
 	table := []node{}
 
 	for i := 0; i < 30; i++ {
-		validBaseToInput1 := solutions.RandomValidBase()
-		validBaseToInput2 := solutions.RandomValidBase()
-		str := solutions.ConvertNbrBase(z01.RandIntBetween(0, 1000000), validBaseToInput1)
+		validBaseToInput1 := base.Valid()
+		validBaseToInput2 := base.Valid()
+		str := base.ConvertNbr(z01.RandIntBetween(0, 1000000), validBaseToInput1)
 		val := node{
 			nbr:      str,
 			baseFrom: validBaseToInput1,

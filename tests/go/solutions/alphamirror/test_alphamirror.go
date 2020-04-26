@@ -1,17 +1,16 @@
 package main
 
-import (
-	"github.com/01-edu/z01"
-)
+import "github.com/01-edu/z01"
 
 func main() {
-	arg1 := []string{""}
-	arg2 := []string{"One", "ring!"}
-	arg3 := []string{"testing spaces and #!*"}
-	arg4 := []string{"more", "than", "three", "arguments"}
-	arg5 := []string{"Upper anD LoWer cAsE"}
-	arg6 := []string{z01.RandWords()}
-	args := [][]string{arg1, arg2, arg3, arg4, arg5, arg6}
+	args := [][]string{
+		{""},
+		{"One", "ring!"},
+		{"testing spaces and #!*"},
+		{"more", "than", "three", "arguments"},
+		{"Upper anD LoWer cAsE"},
+		{z01.RandWords()},
+	}
 
 	for _, v := range args {
 		z01.ChallengeMain("alphamirror", v...)

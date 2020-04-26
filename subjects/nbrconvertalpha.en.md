@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a **program** that prints the corresponding letter in the `n` position of the classic latin alphabet, where `n` is each argument received.
+Write a **program** that prints the corresponding letter in the `n` position of the latin alphabet, where `n` is each argument received.
 
 For example `1` matches `a`, `2` matches `b`, etc. If `n` does not match a valid position of the alphabet or if the argument is not an integer, the **program** should print a space (" ").
 

@@ -1,8 +1,6 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	"fmt"
@@ -11,10 +9,10 @@ import (
 	student "./student"
 )
 
-func errorMessage_search(t *testing.T, fn interface{}, root, a *solutions.TreeNode, b *student.TreeNode,
+func errorMessage_search(fn interface{}, root, a *solutions.TreeNode, b *student.TreeNode,
 	seaVal string) {
-	t.Fatalf("%s(\n%s\n, %s) == %s instead of %s\n",
-		z01.NameOfFunc(fn),
+	z01.Fatalf("%s(\n%s\n, %s) == %s instead of %s\n",
+		"BTreeSearchItem",
 		solutions.FormatTree(root),
 		seaVal,
 		b.Data,
@@ -22,53 +20,53 @@ func errorMessage_search(t *testing.T, fn interface{}, root, a *solutions.TreeNo
 	)
 }
 
-func CompareNode_search(t *testing.T, fn interface{}, arg1, a *solutions.TreeNode, b *student.TreeNode,
+func CompareNode_search(fn interface{}, arg1, a *solutions.TreeNode, b *student.TreeNode,
 	seaVal string) {
 	if a == nil && b == nil {
 		return
 	}
 
 	if (a == nil && b != nil) || (b == nil && a != nil) {
-		t.Fatalf("Expected %v instead of %v\n", a, b)
+		z01.Fatalf("Expected %v instead of %v\n", a, b)
 		return
 	}
 
 	if a.Data != b.Data {
-		errorMessage_search(t, fn, arg1, a, b, seaVal)
+		errorMessage_search(fn, arg1, a, b, seaVal)
 	}
 
 	if a.Parent != nil && b.Parent != nil {
 		if a.Parent.Data != b.Parent.Data {
-			errorMessage_search(t, fn, arg1, a, b, seaVal)
-			t.Fatalf("Expected parent value %v instead of %v\n", a.Parent.Data, b.Parent.Data)
+			errorMessage_search(fn, arg1, a, b, seaVal)
+			z01.Fatalf("Expected parent value %v instead of %v\n", a.Parent.Data, b.Parent.Data)
 			fmt.Println("Parent.Data", a.Parent.Data, b.Parent.Data)
 		}
 	} else if (a.Parent == nil && b.Parent != nil) || (a.Parent != nil && b.Parent == nil) {
-		t.Fatalf("Expected parent value %v instead of %v\n", a.Parent, b.Parent)
+		z01.Fatalf("Expected parent value %v instead of %v\n", a.Parent, b.Parent)
 	}
 
 	if a.Right != nil && b.Right != nil {
 		if a.Right.Data != b.Right.Data {
-			errorMessage_search(t, fn, arg1, a, b, seaVal)
-			t.Fatalf("Expected right child value %v instead of %v\n", a.Right.Data, b.Right.Data)
+			errorMessage_search(fn, arg1, a, b, seaVal)
+			z01.Fatalf("Expected right child value %v instead of %v\n", a.Right.Data, b.Right.Data)
 			fmt.Println("Right.Data", a.Right.Data, b.Right.Data)
 		}
 	} else if (a.Right == nil && b.Right != nil) || (a.Right != nil && b.Right == nil) {
-		t.Fatalf("Expected right child value %v instead of %v\n", a.Right, b.Right)
+		z01.Fatalf("Expected right child value %v instead of %v\n", a.Right, b.Right)
 	}
 
 	if a.Left != nil && b.Left != nil {
 		if a.Left.Data != b.Left.Data {
-			errorMessage_search(t, fn, arg1, a, b, seaVal)
-			t.Fatalf("Expected left child value %v instead of %v\n", a.Left, b.Left)
+			errorMessage_search(fn, arg1, a, b, seaVal)
+			z01.Fatalf("Expected left child value %v instead of %v\n", a.Left, b.Left)
 			fmt.Println("Left.Data", a.Left.Data, b.Left.Data)
 		}
 	} else if (a.Left == nil && b.Left != nil) || (a.Left != nil && b.Left == nil) {
-		t.Fatalf("Expected left child value %v instead of %v\n", a, b)
+		z01.Fatalf("Expected left child value %v instead of %v\n", a, b)
 	}
 }
 
-func TestBTreeSearchItem(t *testing.T) {
+func main() {
 	root := &solutions.TreeNode{Data: "04"}
 	rootS := &student.TreeNode{Data: "04"}
 
@@ -84,6 +82,6 @@ func TestBTreeSearchItem(t *testing.T) {
 	for _, v := range ins {
 		selectedSol := solutions.BTreeSearchItem(root, v)
 		selectedStu := student.BTreeSearchItem(rootS, v)
-		CompareNode_search(t, fn, root, selectedSol, selectedStu, v)
+		CompareNode_search(fn, root, selectedSol, selectedStu, v)
 	}
 }

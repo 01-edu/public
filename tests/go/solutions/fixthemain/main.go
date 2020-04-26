@@ -9,10 +9,9 @@ type Door struct {
 	State int
 }
 
-func PrintStr(str string) {
-	arrayRune := []rune(str)
-	for _, s := range arrayRune {
-		z01.PrintRune(s)
+func PrintStr(s string) {
+	for _, r := range s {
+		z01.PrintRune(r)
 	}
 	z01.PrintRune('\n')
 }
@@ -29,18 +28,12 @@ func OpenDoor(ptrdoor *Door) {
 
 func IsDoorOpened(ptrDoor *Door) bool {
 	PrintStr("is the Door opened ?")
-	if ptrDoor.State == OPEN {
-		return true
-	}
-	return false
+	return ptrDoor.State == OPEN
 }
 
 func IsDoorClosed(ptrDoor *Door) bool {
 	PrintStr("is the Door closed ?")
-	if ptrDoor.State == CLOSE {
-		return true
-	}
-	return false
+	return ptrDoor.State == CLOSE
 }
 
 func main() {

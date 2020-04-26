@@ -6,7 +6,7 @@ Write a program that takes two `string` and displays, without doubles, the chara
 
 - The display will be followed by a newline (`'\n'`).
 
-- If the number of arguments is different from 2, the program displays a newline (`'\n'`).
+- If the number of arguments is different from 2, the program displays nothing.
 
 ### Usage
 

@@ -1,8 +1,10 @@
 package solutions
 
+import "unicode"
+
 func IsLower(s string) bool {
 	for _, r := range s {
-		if !(r >= 'a' && r <= 'z') {
+		if !unicode.IsLower(r) {
 			return false
 		}
 	}

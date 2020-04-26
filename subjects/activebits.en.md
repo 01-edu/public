@@ -7,7 +7,7 @@ Write a function, `ActiveBits`, that returns the number of active `bits` (bits w
 ### Expected function
 
 ```go
-func ActiveBits(n int) uint {
+func ActiveBits(n int) int {
 
 }
 ```

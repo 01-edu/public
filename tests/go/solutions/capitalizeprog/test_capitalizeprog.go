@@ -1,12 +1,9 @@
 package main
 
-import (
-	"github.com/01-edu/z01"
-)
+import "github.com/01-edu/z01"
 
 func main() {
-	table := append(
-		z01.MultRandASCII(),
+	table := append(z01.MultRandASCII(),
 		"Hello! How are you? How+are+things+4you?",
 		"Hello! How are you?",
 		"a",

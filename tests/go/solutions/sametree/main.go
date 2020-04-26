@@ -10,10 +10,7 @@ func IsSameTree(p *TreeNodeL, q *TreeNodeL) bool {
 	if p == nil && q == nil {
 		return true
 	}
-	if checkIfEq(p, q) == true {
-		return true
-	}
-	return false
+	return checkIfEq(p, q)
 }
 
 func checkIfEq(t1 *TreeNodeL, t2 *TreeNodeL) bool {

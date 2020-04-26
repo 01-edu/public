@@ -11,7 +11,7 @@ import (
 
 func main() {
 	table := []string{}
-	//30 random slice of strings
+	// 30 random slice of strings
 
 	for i := 0; i < 30; i++ {
 		val := strings.Join(z01.MultRandASCII(), " ")

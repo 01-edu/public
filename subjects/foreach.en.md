@@ -2,12 +2,12 @@
 
 ### Instructions
 
-Write a function `ForEach` that, for an `int` array, applies a function on each elements of that array.
+Write a function `ForEach` that, for an `int` slice, applies a function on each elements of that slice.
 
 ### Expected function
 
 ```go
-func ForEach(f func(int), arr []int) {
+func ForEach(f func(int), a []int) {
 
 }
 ```
@@ -22,8 +22,8 @@ package main
 import piscine ".."
 
 func main() {
-	arr := []int{1, 2, 3, 4, 5, 6}
-	piscine.ForEach(piscine.PrintNbr, arr)
+	a := []int{1, 2, 3, 4, 5, 6}
+	piscine.ForEach(piscine.PrintNbr, a)
 }
 ```
 
