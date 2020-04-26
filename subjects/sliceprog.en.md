@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a **function** that replicates the javascript function `slice`.
+Write a **function** that replicates the JavaScript function `slice`.
 
 The function receives a slice of strings and one or more integers, and returns a slice of strings. The returned slice is part of the received one but cut from the position indicated in the first int, until the position indicated by the second int.
 
@@ -25,24 +25,28 @@ Here is a possible program to test your function :
 ```go
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	piscine ".."
+)
 
 func main(){
     a := []string{"coding", "algorithm", "ascii", "package", "golang"}
-    fmt.Println(Slice(a, 1))
-    fmt.Println(Slice(a, 2, 4))
-    fmt.Println(Slice(a, -3))
-    fmt.Println(Slice(a, -2, -1))
-    fmt.Println(Slice(a, 2, 0))
+    fmt.Printf("%#v\n", piscine.Slice(a, 1))
+    fmt.Printf("%#v\n", piscine.Slice(a, 2, 4))
+    fmt.Printf("%#v\n", piscine.Slice(a, -3))
+    fmt.Printf("%#v\n", piscine.Slice(a, -2, -1))
+    fmt.Printf("%#v\n", piscine.Slice(a, 2, 0))
 }
 ```
 
 ```console
 student@ubuntu:~/student/test$ go build
 student@ubuntu:~/student/test$ ./test
-[algorithm ascii package golang]
-[ascii package]
-[ascii package golang]
-[package]
-[]
+[]string{"algorithm", "ascii", "package", "golang"}
+[]string{"ascii", "package"}
+[]string{"ascii", "package", "golang"}
+[]string{"package"}
+[]string(nil)
 ```

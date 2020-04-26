@@ -17,18 +17,22 @@ func DoppelGanger(s, substr string) int {
 ```go
 package main
 
-import "fmt"
+import (
+	piscine ".."
+
+	"fmt"
+)
 
 func main() {
 	var result int
 
-	result = DoppelGanger("aaaaaaa", "a")
+	result = piscine.DoppelGanger("aaaaaaa", "a")
 	fmt.Println(result) // 6
 
-	result = DoppelGanger("qwerty", "t")
+	result = piscine.DoppelGanger("qwerty", "t")
 	fmt.Println(result) // 4
 
-	result = DoppelGanger("a", "b")
+	result = piscine.DoppelGanger("a", "b")
 	fmt.Println(result) // -1
 }
 ```
