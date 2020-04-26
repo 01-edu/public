@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func CollatzCountdown(start int) int {
 	if start <= 0 {

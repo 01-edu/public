@@ -3,8 +3,6 @@ package main
 import (
 	"fmt"
 	"os"
-
-	solutions ".."
 )
 
 func main() {
@@ -12,5 +10,5 @@ func main() {
 		return
 	}
 
-	fmt.Println(solutions.StrRev(os.Args[1]))
+	fmt.Println(correct.StrRev(os.Args[1]))
 }

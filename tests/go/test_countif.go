@@ -3,12 +3,12 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
 func main() {
-	functionsArray := []func(string) bool{solutions.IsNumeric, solutions.IsLower, solutions.IsUpper}
+	functions := []func(string) bool{correct.IsNumeric, correct.IsLower, correct.IsUpper}
 
 	type node struct {
 		f   func(string) bool
@@ -18,16 +18,16 @@ func main() {
 	table := []node{}
 
 	for i := 0; i < 5; i++ {
-		functionSelected := functionsArray[z01.RandIntBetween(0, len(functionsArray)-1)]
+		function := functions[z01.RandIntBetween(0, len(functions)-1)]
 		val := node{
-			f:   functionSelected,
+			f:   function,
 			arr: z01.MultRandWords(),
 		}
 		table = append(table, val)
 	}
 	for i := 0; i < 5; i++ {
 		val := node{
-			f:   solutions.IsNumeric,
+			f:   correct.IsNumeric,
 			arr: z01.MultRandDigit(),
 		}
 		table = append(table, val)
@@ -35,14 +35,14 @@ func main() {
 
 	for i := 0; i < 5; i++ {
 		val := node{
-			f:   solutions.IsLower,
+			f:   correct.IsLower,
 			arr: z01.MultRandLower(),
 		}
 		table = append(table, val)
 	}
 	for i := 0; i < 5; i++ {
 		val := node{
-			f:   solutions.IsUpper,
+			f:   correct.IsUpper,
 			arr: z01.MultRandUpper(),
 		}
 		table = append(table, val)
@@ -50,16 +50,16 @@ func main() {
 
 	table = append(table,
 		node{
-			f:   solutions.IsNumeric,
+			f:   correct.IsNumeric,
 			arr: []string{"Hello", "how", "are", "you"},
 		},
 		node{
-			f:   solutions.IsNumeric,
+			f:   correct.IsNumeric,
 			arr: []string{"This", "is", "4", "you"},
 		},
 	)
 
 	for _, arg := range table {
-		z01.Challenge("CountIf", student.CountIf, solutions.CountIf, arg.f, arg.arr)
+		z01.Challenge("CountIf", student.CountIf, correct.CountIf, arg.f, arg.arr)
 	}
 }

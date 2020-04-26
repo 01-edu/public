@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func PriorPrime(x int) int {
 	ans := 0

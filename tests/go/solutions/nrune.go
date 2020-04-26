@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func NRune(s string, n int) rune {
 	if n > len(s) || n < 1 {

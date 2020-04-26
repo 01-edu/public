@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	solutions "../../solutions"
+	correct "./correct"
 )
 
 func main() {
-	fmt.Println(solutions.AtoiBase("111", "01"))
+	fmt.Println(correct.AtoiBase("111", "01"))
 }

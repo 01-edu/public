@@ -5,13 +5,13 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solution "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
 type Node4 = student.NodeL
-type List4 = solution.List
-type NodeS4 = solution.NodeL
+type List4 = correct.List
+type NodeS4 = correct.NodeL
 type ListS4 = student.List
 
 func listToStringStu5(l *ListS4) string {
@@ -53,17 +53,17 @@ func listPushBackTest4(l1 *ListS4, l2 *List4, data interface{}) {
 	}
 }
 
-// simply cleans the linked solution.ListS
+// simply cleans the linked correct.ListS
 func main() {
 	link1 := &List4{}
 	link2 := &ListS4{}
 
-	table := []solution.NodeTest{}
+	table := []correct.NodeTest{}
 
-	table = solution.ElementsToTest(table)
+	table = correct.ElementsToTest(table)
 
 	table = append(table,
-		solution.NodeTest{
+		correct.NodeTest{
 			Data: []interface{}{"I", 1, "something", 2},
 		},
 	)
@@ -72,12 +72,12 @@ func main() {
 		for i := 0; i < len(arg.Data); i++ {
 			listPushBackTest4(link2, link1, arg.Data[i])
 		}
-		solution.ListClear(link1)
+		correct.ListClear(link1)
 		student.ListClear(link2)
 
 		if link2.Head != nil {
 			z01.Fatalf("\nstudent list:%s\nlist:%s\n\nListClear() == %v instead of %v\n\n",
-				listToStringStu5(link2), solution.ListToString(link1.Head), link2.Head, link1.Head)
+				listToStringStu5(link2), correct.ListToString(link1.Head), link2.Head, link1.Head)
 		}
 	}
 }

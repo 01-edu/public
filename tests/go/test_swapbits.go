@@ -5,7 +5,7 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -31,6 +31,6 @@ func main() {
 	}
 
 	for _, v := range args {
-		challengeBytes(student.SwapBits, solutions.SwapBits, v)
+		challengeBytes(student.SwapBits, correct.SwapBits, v)
 	}
 }

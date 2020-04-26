@@ -5,7 +5,7 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -18,6 +18,6 @@ func main() {
 		table = append(table, z01.IntRange(13, 20)...)
 	}
 	for _, arg := range table {
-		z01.Challenge("IterativeFactorial", student.IterativeFactorial, solutions.IterativeFactorial, arg)
+		z01.Challenge("IterativeFactorial", student.IterativeFactorial, correct.IterativeFactorial, arg)
 	}
 }

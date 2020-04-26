@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func Compact(slice *[]string) int {
 	count := 0

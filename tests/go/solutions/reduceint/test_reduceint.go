@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "../../solutions"
+	correct "./correct"
 )
 
 func main() {
@@ -27,7 +27,7 @@ func main() {
 
 	for _, v := range table {
 		for _, f := range v.functions {
-			z01.Challenge("ReduceInt", ReduceInt, solutions.ReduceInt, f, v.arr)
+			z01.Challenge("ReduceInt", ReduceInt, correct.ReduceInt, f, v.arr)
 		}
 	}
 }

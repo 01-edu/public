@@ -6,11 +6,11 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solutions "../../solutions"
+	correct "./correct"
 )
 
 type stuTreeNode = TreeNodeL
-type solTreeNode = solutions.TreeNodeL
+type solTreeNode = correct.TreeNodeL
 
 func insertStu(t *stuTreeNode, v int) *stuTreeNode {
 	if t == nil {
@@ -107,7 +107,7 @@ func main() {
 		cop1, stuTree1, solTree1 := New(arg.n, arg.k)
 		cop2, stuTree2, solTree2 := New(arg.n, arg.k)
 		stuResult := IsSameTree(stuTree1, stuTree2)
-		solResult := solutions.IsSameTree(solTree1, solTree2)
+		solResult := correct.IsSameTree(solTree1, solTree2)
 
 		compareResults(stuResult, solResult, cop1, cop2)
 	}
@@ -116,7 +116,7 @@ func main() {
 	for _, arg := range table {
 		cop1, stuTree1, solTree1 := New(arg.n, arg.k)
 		stuResult := IsSameTree(stuTree1, stuTree1)
-		solResult := solutions.IsSameTree(solTree1, solTree1)
+		solResult := correct.IsSameTree(solTree1, solTree1)
 
 		compareResults(stuResult, solResult, cop1, cop1)
 	}

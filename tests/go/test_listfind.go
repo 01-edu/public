@@ -3,13 +3,13 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solution "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
 type Node9 = student.NodeL
-type List9 = solution.List
-type NodeS9 = solution.NodeL
+type List9 = correct.List
+type NodeS9 = correct.NodeL
 type ListS9 = student.List
 
 func listPushBackTest9(l1 *ListS9, l2 *List9, data interface{}) {
@@ -39,10 +39,10 @@ func main() {
 	link1 := &List9{}
 	link2 := &ListS9{}
 
-	table := []solution.NodeTest{}
-	table = solution.ElementsToTest(table)
+	table := []correct.NodeTest{}
+	table = correct.ElementsToTest(table)
 	table = append(table,
-		solution.NodeTest{
+		correct.NodeTest{
 			Data: []interface{}{"hello", "hello1", "hello2", "hello3"},
 		},
 	)
@@ -53,7 +53,7 @@ func main() {
 		}
 		if len(arg.Data) != 0 {
 			aux1 := student.ListFind(link2, arg.Data[(len(arg.Data)-1)/2], student.CompStr)
-			aux2 := solution.ListFind(link1, arg.Data[(len(arg.Data)-1)/2], solution.CompStr)
+			aux2 := correct.ListFind(link1, arg.Data[(len(arg.Data)-1)/2], correct.CompStr)
 
 			if aux1 != nil || aux2 != nil {
 				if *aux1 != *aux2 {
@@ -70,7 +70,7 @@ func main() {
 	}
 
 	aux1 := student.ListFind(link2, "lksdf", student.CompStr)
-	aux2 := solution.ListFind(link1, "lksdf", solution.CompStr)
+	aux2 := correct.ListFind(link1, "lksdf", correct.CompStr)
 	if aux1 != nil && aux2 != nil {
 		if *aux1 != *aux2 {
 			z01.Fatalf("ListFind(ref: lksdf) == %s instead of %s\n", *aux1, *aux2)

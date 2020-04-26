@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -12,9 +12,9 @@ func main() {
 	for i < 30 {
 		nb := z01.RandIntBetween(-8, 8)
 		power := z01.RandIntBetween(-10, 10)
-		z01.Challenge("RecursivePower", student.RecursivePower, solutions.RecursivePower, nb, power)
+		z01.Challenge("RecursivePower", student.RecursivePower, correct.RecursivePower, nb, power)
 		i++
 	}
-	z01.Challenge("RecursivePower", student.RecursivePower, solutions.RecursivePower, 0, 0)
-	z01.Challenge("RecursivePower", student.RecursivePower, solutions.RecursivePower, 0, 1)
+	z01.Challenge("RecursivePower", student.RecursivePower, correct.RecursivePower, 0, 0)
+	z01.Challenge("RecursivePower", student.RecursivePower, correct.RecursivePower, 0, 1)
 }

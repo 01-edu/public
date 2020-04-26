@@ -3,14 +3,14 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solution "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
 // the structs from the other packages
 // struct just for the first exercise
 type NodeF = student.Node
-type NodeFS = solution.Node
+type NodeFS = correct.Node
 
 // simple struct, just insert a element in the struct
 func main() {
@@ -25,7 +25,7 @@ func main() {
 
 	for _, items := range table {
 		for _, item := range items {
-			solution.CreateElem(n1, item)
+			correct.CreateElem(n1, item)
 			student.CreateElem(n2, item)
 		}
 

@@ -5,12 +5,12 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
 type NodeI14 = student.NodeI
-type NodeIS14 = solutions.NodeI
+type NodeIS14 = correct.NodeI
 
 func listToStringStu3(n *NodeI14) string {
 	var res string
@@ -55,11 +55,11 @@ func comparFuncNodeInt14(l1 *NodeI14, l2 *NodeIS14, data []int) {
 	for l1 != nil || l2 != nil {
 		if (l1 == nil && l2 != nil) || (l1 != nil && l2 == nil) {
 			z01.Fatalf("\ndata used to insert: %d\nstudent list:%s\nlist:%s\n\nSortListInsert() == %v instead of %v\n\n",
-				data, listToStringStu3(l1), solutions.PrintList(l2), l1, l2)
+				data, listToStringStu3(l1), correct.PrintList(l2), l1, l2)
 		}
 		if l1.Data != l2.Data {
 			z01.Fatalf("\ndata used to insert: %d\nstudent list:%s\nlist:%s\n\nSortListInsert() == %v instead of %v\n\n",
-				data, listToStringStu3(l1), solutions.PrintList(l2), l1.Data, l2.Data)
+				data, listToStringStu3(l1), correct.PrintList(l2), l1.Data, l2.Data)
 		}
 		l1 = l1.Next
 		l2 = l2.Next
@@ -124,11 +124,11 @@ func main() {
 			link1 = nodepushback1(link1, item)
 		}
 
-		link2 = solutions.ListSort(link2)
+		link2 = correct.ListSort(link2)
 		link1 = sortStudentsList(link1)
 
 		for _, item := range arg.data_ref {
-			link2 = solutions.SortListInsert(link2, item)
+			link2 = correct.SortListInsert(link2, item)
 			link1 = student.SortListInsert(link1, item)
 		}
 

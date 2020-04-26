@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func ListReverse(l *List) {
 	current := l.Head

@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func Nauuo(plus, minus, rand int) string {
 	if rand == 0 {

@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -38,7 +38,7 @@ func main() {
 	d := &n
 
 	student.Enigma(a, b, c, d)
-	solutions.Decript(a, b, c, d)
+	correct.Decript(a, b, c, d)
 
 	if aval != ***a {
 		z01.Fatalf("Expected ***a = %d instead of %d\n",

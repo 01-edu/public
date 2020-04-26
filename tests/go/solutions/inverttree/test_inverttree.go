@@ -8,11 +8,11 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solutions "../../solutions"
+	correct "./correct"
 )
 
 type stuNode = TNode
-type solNode = solutions.TNode
+type solNode = correct.TNode
 
 func solInsert(N *solNode, newVal int) {
 	if N == nil {
@@ -140,7 +140,7 @@ func main() {
 		solInsert(tree, val3)
 		solInsert(tree, val4)
 		// solPrint(os.Stdout, tree, 0, 'M')
-		solutions.InvertTree(tree)
+		correct.InvertTree(tree)
 		// solPrint(os.Stdout, tree, 0, 'M')
 
 		TestTree = &stuNode{Val: root, Left: nil, Right: nil}

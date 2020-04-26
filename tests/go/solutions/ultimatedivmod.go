@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func UltimateDivMod(a, b *int) {
 	temp := *a

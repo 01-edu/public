@@ -5,7 +5,7 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -14,7 +14,7 @@ func main() {
 	// 30 random slice of slice of strings
 
 	for i := 0; i < 30; i++ {
-		val := solutions.SplitWhiteSpaces(strings.Join(z01.MultRandASCII(), " "))
+		val := correct.SplitWhiteSpaces(strings.Join(z01.MultRandASCII(), " "))
 		table = append(table, val)
 	}
 
@@ -22,6 +22,6 @@ func main() {
 		[]string{"Hello", "how", "are", "you?"})
 
 	for _, arg := range table {
-		z01.Challenge("PrintWordsTables", student.PrintWordsTables, solutions.PrintWordsTables, arg)
+		z01.Challenge("PrintWordsTables", student.PrintWordsTables, correct.PrintWordsTables, arg)
 	}
 }

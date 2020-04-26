@@ -5,7 +5,7 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -21,7 +21,7 @@ func main() {
 		copy(table2, table1)
 
 		student.SortIntegerTable(table1)
-		solutions.SortIntegerTable(table2)
+		correct.SortIntegerTable(table2)
 		if !reflect.DeepEqual(table1, table2) {
 			z01.Fatalf("SortIntegerTable(%v), table1 == %v instead of %v ", tableCopyBefore, table1, table2)
 		}

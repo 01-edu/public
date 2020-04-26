@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "../../solutions"
+	correct "./correct"
 )
 
 func main() {
@@ -40,6 +40,6 @@ func main() {
 	}
 
 	for _, a := range arr {
-		z01.Challenge("SliceProg", Slice, solutions.Slice, a...)
+		z01.Challenge("SliceProg", Slice, correct.Slice, a...)
 	}
 }

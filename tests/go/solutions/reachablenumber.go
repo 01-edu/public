@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func ReachableNumber(n int) int {
 	cnt := 0

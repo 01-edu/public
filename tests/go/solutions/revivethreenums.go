@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func more(a, b int) int {
 	if a < b {

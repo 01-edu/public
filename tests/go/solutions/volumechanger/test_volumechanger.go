@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "../../solutions"
+	correct "./correct"
 )
 
 func main() {
@@ -20,6 +20,6 @@ func main() {
 		})
 	}
 	for _, arg := range table {
-		z01.Challenge("Volumechanger", Volumechanger, solutions.Volumechanger, arg[0], arg[1])
+		z01.Challenge("Volumechanger", Volumechanger, correct.Volumechanger, arg[0], arg[1])
 	}
 }

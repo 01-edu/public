@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func Halfcontest(h1, m1, h2, m2 int) int {
 	t1 := h1*60 + m1

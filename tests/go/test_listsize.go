@@ -3,13 +3,13 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solution "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
 type Node2 = student.NodeL
-type List2 = solution.List
-type NodeS2 = solution.NodeL
+type List2 = correct.List
+type NodeS2 = correct.NodeL
 type ListS2 = student.List
 
 func listPushBackTest2(l *ListS2, l1 *List2, data interface{}) {
@@ -39,10 +39,10 @@ func listPushBackTest2(l *ListS2, l1 *List2, data interface{}) {
 func main() {
 	link := &List2{}
 	link2 := &ListS2{}
-	table := []solution.NodeTest{}
-	table = solution.ElementsToTest(table)
+	table := []correct.NodeTest{}
+	table = correct.ElementsToTest(table)
 	table = append(table,
-		solution.NodeTest{
+		correct.NodeTest{
 			Data: []interface{}{"Hello", "man", "how are you"},
 		},
 	)
@@ -50,10 +50,10 @@ func main() {
 		for i := 0; i < len(arg.Data); i++ {
 			listPushBackTest2(link2, link, arg.Data[i])
 		}
-		aux := solution.ListSize(link)
+		aux := correct.ListSize(link)
 		aux2 := student.ListSize(link2)
 		if aux != aux2 {
-			z01.Fatalf("ListSize(%v) == %d instead of %d\n", solution.ListToString(link.Head), aux2, aux)
+			z01.Fatalf("ListSize(%v) == %d instead of %d\n", correct.ListToString(link.Head), aux2, aux)
 		}
 		link = &List2{}
 		link2 = &ListS2{}

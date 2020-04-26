@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -15,6 +15,6 @@ func main() {
 	}
 
 	for _, v := range args {
-		z01.Challenge("CollatzCountdown", student.CollatzCountdown, solutions.CollatzCountdown, v)
+		z01.Challenge("CollatzCountdown", student.CollatzCountdown, correct.CollatzCountdown, v)
 	}
 }

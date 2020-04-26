@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "../../solutions"
+	correct "./correct"
 )
 
 func main() {
@@ -41,7 +41,7 @@ func main() {
 
 	for _, v := range table {
 		for _, f := range v.functions {
-			z01.Challenge("FoldInt", FoldInt, solutions.FoldInt, f, v.arr, v.n)
+			z01.Challenge("FoldInt", FoldInt, correct.FoldInt, f, v.arr, v.n)
 		}
 	}
 }

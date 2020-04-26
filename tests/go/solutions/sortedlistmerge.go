@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func SortedListMerge(l1 *NodeI, l2 *NodeI) *NodeI {
 	if l1 == nil {

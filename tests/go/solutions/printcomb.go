@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 import "github.com/01-edu/z01"
 

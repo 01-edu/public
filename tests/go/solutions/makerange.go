@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func MakeRange(min, max int) []int {
 	size := max - min

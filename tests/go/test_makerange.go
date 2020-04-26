@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -43,6 +43,6 @@ func main() {
 		node{min: 10, max: 5},
 	)
 	for _, arg := range table {
-		z01.Challenge("MakeRange", student.MakeRange, solutions.MakeRange, arg.min, arg.max)
+		z01.Challenge("MakeRange", student.MakeRange, correct.MakeRange, arg.min, arg.max)
 	}
 }

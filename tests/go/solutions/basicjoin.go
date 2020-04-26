@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func BasicJoin(a []string) (b string) {
 	for _, s := range a {

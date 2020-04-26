@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func min3(a, b, c int) int {
 	if a <= b && a <= c {

@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func IsSorted(f func(int, int) int, arr []int) bool {
 	ascendingOrdered := true

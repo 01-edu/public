@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func StrLen(str string) int {
 	len := 0

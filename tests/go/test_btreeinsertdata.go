@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -79,18 +79,18 @@ func formatSubTree_insert(root *student.TreeNode, prefix string) string {
 	return res
 }
 
-func errorMessage_insert(fn interface{}, inserted string, root *solutions.TreeNode, rootS *student.TreeNode) {
+func errorMessage_insert(fn interface{}, inserted string, root *correct.TreeNode, rootS *student.TreeNode) {
 	z01.Fatalf("%s(\n%s, %s\n) ==\n%s instead of\n%s\n",
 		"BTreeInsertData",
-		solutions.FormatTree(root),
+		correct.FormatTree(root),
 		inserted,
 		FormatTree_insert(rootS),
-		solutions.FormatTree(root),
+		correct.FormatTree(root),
 	)
 }
 
-func CompareTrees_insert(fn interface{}, inserted string, root *solutions.TreeNode, rootS *student.TreeNode) {
-	solTree := solutions.FormatTree(root)
+func CompareTrees_insert(fn interface{}, inserted string, root *correct.TreeNode, rootS *student.TreeNode) {
+	solTree := correct.FormatTree(root)
 	stuTree := FormatTree_insert(rootS)
 
 	if solTree != stuTree {
@@ -99,7 +99,7 @@ func CompareTrees_insert(fn interface{}, inserted string, root *solutions.TreeNo
 }
 
 func main() {
-	root := &solutions.TreeNode{Data: "08"}
+	root := &correct.TreeNode{Data: "08"}
 	rootS := &student.TreeNode{Data: "08"}
 
 	var pos []string
@@ -117,9 +117,9 @@ func main() {
 		"a",
 		"d",
 	)
-	fn := interface{}(solutions.BTreeInsertData)
+	fn := interface{}(correct.BTreeInsertData)
 	for _, arg := range pos {
-		root = solutions.BTreeInsertData(root, arg)
+		root = correct.BTreeInsertData(root, arg)
 		rootS = student.BTreeInsertData(rootS, arg)
 		CompareTrees_insert(fn, arg, root, rootS)
 	}

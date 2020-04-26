@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func FirstRune(s string) rune {
 	runes := []rune(s)

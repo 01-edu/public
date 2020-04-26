@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func ifNegative(a []string, n int) int {
 	if n < 0 {

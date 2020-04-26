@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -21,6 +21,6 @@ func main() {
 		"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!",
 	)
 	for _, arg := range table {
-		z01.Challenge("IsAlpha", student.IsAlpha, solutions.IsAlpha, arg)
+		z01.Challenge("IsAlpha", student.IsAlpha, correct.IsAlpha, arg)
 	}
 }

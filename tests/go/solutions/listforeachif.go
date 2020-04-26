@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 // compare each element of the linked list to see if it is a String
 func IsPositive_node(node *NodeL) bool {

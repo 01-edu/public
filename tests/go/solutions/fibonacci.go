@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func Fibonacci(value int) int {
 	if value < 0 {

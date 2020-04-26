@@ -5,7 +5,7 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -23,6 +23,6 @@ func main() {
 		"000000",
 	)
 	for _, arg := range table {
-		z01.Challenge("BasicAtoi", student.BasicAtoi, solutions.BasicAtoi, arg)
+		z01.Challenge("BasicAtoi", student.BasicAtoi, correct.BasicAtoi, arg)
 	}
 }

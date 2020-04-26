@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -47,6 +47,6 @@ func main() {
 	)
 
 	for _, arg := range table {
-		z01.Challenge("Index", student.Index, solutions.Index, arg.s, arg.toFind)
+		z01.Challenge("Index", student.Index, correct.Index, arg.s, arg.toFind)
 	}
 }

@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "../../solutions"
+	correct "./correct"
 )
 
 func main() {
@@ -19,6 +19,6 @@ func main() {
 	table = append(table, randomStringCharset)
 
 	for _, s := range table {
-		z01.Challenge("StrLenProg", StrLen, solutions.StrLen, s)
+		z01.Challenge("StrLenProg", StrLen, correct.StrLen, s)
 	}
 }

@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 // gives the last element of the list
 func ListLast(l *List) interface{} {

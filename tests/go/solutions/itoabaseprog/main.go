@@ -3,10 +3,9 @@ package main
 import (
 	"fmt"
 	"strconv"
+	"strings"
 
 	"github.com/01-edu/z01"
-
-	"strings"
 
 	student "../../student"
 )

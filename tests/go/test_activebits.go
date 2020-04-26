@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -13,6 +13,6 @@ func main() {
 	args = append(args, z01.MultRandIntBetween(2, 20)...)
 
 	for _, v := range args {
-		z01.Challenge("ActiveBits", student.ActiveBits, solutions.ActiveBits, v)
+		z01.Challenge("ActiveBits", student.ActiveBits, correct.ActiveBits, v)
 	}
 }

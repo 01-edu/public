@@ -5,7 +5,7 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -45,9 +45,9 @@ func main() {
 
 	// 5 unordered slices
 	for i := 0; i < 5; i++ {
-		functionSelected := functions[z01.RandIntBetween(0, len(functions)-1)]
+		function := functions[z01.RandIntBetween(0, len(functions)-1)]
 		val := node{
-			f: functionSelected,
+			f: function,
 			a: z01.MultRandIntBetween(-1000000, 1000000),
 		}
 		table = append(table, val)
@@ -55,12 +55,12 @@ func main() {
 
 	// 5 slices ordered in ascending order
 	for i := 0; i < 5; i++ {
-		functionSelected := functions[z01.RandIntBetween(0, len(functions)-1)]
+		function := functions[z01.RandIntBetween(0, len(functions)-1)]
 		ordered := z01.MultRandIntBetween(-1000000, 1000000)
 		sort.Ints(ordered)
 
 		val := node{
-			f: functionSelected,
+			f: function,
 			a: ordered,
 		}
 		table = append(table, val)
@@ -68,37 +68,37 @@ func main() {
 
 	// 5 slices ordered in descending order
 	for i := 0; i < 5; i++ {
-		functionSelected := functions[z01.RandIntBetween(0, len(functions)-1)]
+		function := functions[z01.RandIntBetween(0, len(functions)-1)]
 		reversed := z01.MultRandIntBetween(-1000000, 1000000)
 		sort.Sort(sort.Reverse(sort.IntSlice(reversed)))
 		val := node{
-			f: functionSelected,
+			f: function,
 			a: reversed,
 		}
 		table = append(table, val)
 	}
 
 	table = append(table, node{
-		f: solutions.IsSortedByDiff,
+		f: correct.IsSortedByDiff,
 		a: []int{1, 2, 3, 4, 5, 6},
 	})
 
 	table = append(table, node{
-		f: solutions.IsSortedByDiff,
+		f: correct.IsSortedByDiff,
 		a: []int{6, 5, 4, 3, 2, 1},
 	})
 
 	table = append(table, node{
-		f: solutions.IsSortedByDiff,
+		f: correct.IsSortedByDiff,
 		a: []int{0, 0, 0, 0, 0, 0, 0},
 	})
 
 	table = append(table, node{
-		f: solutions.IsSortedByDiff,
+		f: correct.IsSortedByDiff,
 		a: []int{0},
 	})
 
 	for _, arg := range table {
-		z01.Challenge("IsSorted", student.IsSorted, solutions.IsSorted, arg.f, arg.a)
+		z01.Challenge("IsSorted", student.IsSorted, correct.IsSorted, arg.f, arg.a)
 	}
 }

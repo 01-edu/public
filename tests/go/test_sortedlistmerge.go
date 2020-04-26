@@ -3,13 +3,14 @@ package main
 import (
 	"strconv"
 
-	solution "./solutions"
-	student "./student"
 	"github.com/01-edu/z01"
+
+	correct "./correct"
+	student "./student"
 )
 
 type NodeI13 = student.NodeI
-type NodeIS13 = solution.NodeI
+type NodeIS13 = correct.NodeI
 
 func printListStudent1(n *NodeI13) string {
 	var res string
@@ -85,19 +86,19 @@ func main() {
 
 		link1 = student.ListSort(link1)
 		link2 = student.ListSort(link2)
-		linkTest1 = solution.ListSort(linkTest1)
-		linkTest2 = solution.ListSort(linkTest2)
+		linkTest1 = correct.ListSort(linkTest1)
+		linkTest2 = correct.ListSort(linkTest2)
 
 		aux1 := student.SortedListMerge(link1, link2)
-		aux2 := solution.SortedListMerge(linkTest1, linkTest2)
+		aux2 := correct.SortedListMerge(linkTest1, linkTest2)
 
 		if aux1 == nil && aux2 == nil {
 		} else if aux1 != nil && aux2 == nil {
 			z01.Fatalf("\nstudent merged lists:%s\nmerged lists:%s\n\nSortListMerge() == %v instead of %v\n\n",
-				printListStudent1(aux1), solution.PrintList(aux2), aux1, aux2)
+				printListStudent1(aux1), correct.PrintList(aux2), aux1, aux2)
 		} else if aux1.Data != aux2.Data {
 			z01.Fatalf("\nstudent merged lists:%s\nmerged lists:%s\n\nSortListMerge() == %v instead of %v\n\n",
-				printListStudent1(aux1), solution.PrintList(aux2), aux1, aux2)
+				printListStudent1(aux1), correct.PrintList(aux2), aux1, aux2)
 		}
 
 		link1 = &NodeI13{}

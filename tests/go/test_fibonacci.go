@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -15,6 +15,6 @@ func main() {
 		-5,
 	)
 	for _, arg := range table {
-		z01.Challenge("Fibonacci", student.Fibonacci, solutions.Fibonacci, arg)
+		z01.Challenge("Fibonacci", student.Fibonacci, correct.Fibonacci, arg)
 	}
 }

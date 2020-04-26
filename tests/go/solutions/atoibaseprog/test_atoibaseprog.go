@@ -5,7 +5,7 @@ import (
 
 	"./base"
 
-	solutions "../../solutions"
+	correct "./correct"
 )
 
 // this is the function that creates the TESTS
@@ -43,7 +43,7 @@ func main() {
 		node{s: "bbbbbab", base: "-ab"},
 	)
 	for _, arg := range table {
-		z01.Challenge("AtoiBaseProg", AtoiBase, solutions.AtoiBase, arg.s, arg.base)
+		z01.Challenge("AtoiBaseProg", AtoiBase, correct.AtoiBase, arg.s, arg.base)
 	}
 }
 

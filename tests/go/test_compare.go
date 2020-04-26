@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -45,6 +45,6 @@ func main() {
 	)
 
 	for _, arg := range table {
-		z01.Challenge("Compare", student.Compare, solutions.Compare, arg.s, arg.toCompare)
+		z01.Challenge("Compare", student.Compare, correct.Compare, arg.s, arg.toCompare)
 	}
 }

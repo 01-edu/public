@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func gcd(first, second int) int {
 	if second == 0 {

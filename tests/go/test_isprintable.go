@@ -5,7 +5,7 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -44,6 +44,6 @@ func main() {
 		"\n",
 	)
 	for _, arg := range table {
-		z01.Challenge("IsPrintable", student.IsPrintable, solutions.IsPrintable, arg)
+		z01.Challenge("IsPrintable", student.IsPrintable, correct.IsPrintable, arg)
 	}
 }

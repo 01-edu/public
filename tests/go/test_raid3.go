@@ -60,3 +60,5 @@ func main() {
 	executeTest("raid1e", 1, 1)
 	executeTest("echo", 0, 0)
 }
+
+// TODO: fix paths

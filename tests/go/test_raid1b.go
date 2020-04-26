@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -27,7 +27,7 @@ func main() {
 	// Tests all possibilities including 0 0, -x y, x -y
 	for i := 0; i < len(table); i += 2 {
 		if i != len(table)-1 {
-			z01.Challenge("Raid1b", solutions.Raid1b, student.Raid1b, table[i], table[i+1])
+			z01.Challenge("Raid1b", correct.Raid1b, student.Raid1b, table[i], table[i+1])
 		}
 	}
 }

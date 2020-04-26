@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 type TNode struct {
 	Val   int

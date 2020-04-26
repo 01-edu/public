@@ -5,7 +5,7 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solutions "../../solutions"
+	correct "./correct"
 )
 
 func add0(i int) {
@@ -46,6 +46,6 @@ func main() {
 	})
 
 	for _, arg := range table {
-		z01.Challenge("ForEachProg", ForEach, solutions.ForEach, arg.f, arg.a)
+		z01.Challenge("ForEachProg", ForEach, correct.ForEach, arg.f, arg.a)
 	}
 }

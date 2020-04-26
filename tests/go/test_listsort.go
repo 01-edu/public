@@ -5,12 +5,12 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solution "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
 type NodeI12 = student.NodeI
-type NodeIS12 = solution.NodeI
+type NodeIS12 = correct.NodeI
 
 func printListStudent(n *NodeI12) string {
 	var res string
@@ -52,11 +52,11 @@ func comparFuncNodeInt12(l1 *NodeI12, l2 *NodeIS12) {
 	for l1 != nil || l2 != nil {
 		if (l1 == nil && l2 != nil) || (l1 != nil && l2 == nil) {
 			z01.Fatalf("\nstudent list:%s\nlist:%s\n\nListSort() == %v instead of %v\n\n",
-				printListStudent(l1), solution.PrintList(l2), l1, l2)
+				printListStudent(l1), correct.PrintList(l2), l1, l2)
 		}
 		if l1.Data != l2.Data {
 			z01.Fatalf("\nstudent list:%s\nlist:%s\n\nListSort() == %v instead of %v\n\n",
-				printListStudent(l1), solution.PrintList(l2), l1.Data, l2.Data)
+				printListStudent(l1), correct.PrintList(l2), l1.Data, l2.Data)
 		}
 		l1 = l1.Next
 		l2 = l2.Next
@@ -83,7 +83,7 @@ func main() {
 		for i := 0; i < len(arg.data); i++ {
 			nodePushBackListInt12(link1, link2, arg.data[i])
 		}
-		aux1 := solution.ListSort(link2)
+		aux1 := correct.ListSort(link2)
 		aux2 := student.ListSort(link1)
 
 		comparFuncNodeInt12(aux2, aux1)

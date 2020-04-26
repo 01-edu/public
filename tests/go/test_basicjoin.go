@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -18,6 +18,6 @@ func main() {
 		[]string{"Hello!", " How are you?", "well and yourself?"},
 	)
 	for _, arg := range table {
-		z01.Challenge("BasicJoin", student.BasicJoin, solutions.BasicJoin, arg)
+		z01.Challenge("BasicJoin", student.BasicJoin, correct.BasicJoin, arg)
 	}
 }

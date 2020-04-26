@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func ListSize(l *List) int {
 	count := 0

@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -14,5 +14,5 @@ func main() {
 		args = append(args, z01.RandInt())
 	}
 
-	z01.Challenge("Max", student.Max, solutions.Max, args)
+	z01.Challenge("Max", student.Max, correct.Max, args)
 }

@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func IsUpper(s string) bool {
 	for _, r := range s {

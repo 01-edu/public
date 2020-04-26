@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func IsAnagram(s, t string) bool {
 	alph := make([]int, 26)

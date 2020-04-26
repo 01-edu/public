@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func abs(a int) int {
 	if a < 0 {
