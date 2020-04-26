@@ -4,6 +4,7 @@ import (
 	"github.com/01-edu/z01"
 
 	correct "./correct"
+	student "./student"
 )
 
 func main() {
@@ -40,6 +41,6 @@ func main() {
 	}
 
 	for _, a := range arr {
-		z01.Challenge("SliceProg", Slice, correct.Slice, a...)
+		z01.Challenge("SliceProg", student.Slice, correct.Slice, a...)
 	}
 }
