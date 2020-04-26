@@ -1,5 +1,7 @@
 # THE ADDITION OF EXERCISE PROCEDURE
 
+**Needs to be updated since the refactor**
+
 ##### This is for a go exercise in the piscine-go
 
 ## **1. Writing the subject and / or writing the solution**

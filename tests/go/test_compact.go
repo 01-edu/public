@@ -15,7 +15,7 @@ func main() {
 	for i := 0; i < 20; i++ {
 		n := z01.RandIntBetween(5, 20) // random size of the slice
 
-		orig := make([]string, n) //slice with the original value
+		orig := make([]string, n) // slice with the original value
 
 		num_pos := z01.RandIntBetween(1, n-1) // random number of positions to be written
 

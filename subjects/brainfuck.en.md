@@ -29,7 +29,6 @@ student@ubuntu:~/[[ROOT]]/brainfuck$ ./brainfuck "+++++[>++++[>++++H>+++++i<<-]>
 Hi$
 student@ubuntu:~/[[ROOT]]/brainfuck$ ./brainfuck "++++++++++[>++++++++++>++++++++++>++++++++++<<<-]>---.>--.>-.>++++++++++." | cat -e
 abc$
-student@ubuntu:~/[[ROOT]]/brainfuck$ ./brainfuck | cat -e
-$
+student@ubuntu:~/[[ROOT]]/brainfuck$ ./brainfuck
 student@ubuntu:~/[[ROOT]]/brainfuck$
 ```
