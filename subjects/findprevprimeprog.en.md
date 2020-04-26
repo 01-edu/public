@@ -21,11 +21,15 @@ Here is a possible [program](TODO-LINK) to test your function :
 ```go
 package main
 
-import "fmt"
+import (
+	piscine ".."
+
+	"fmt"
+)
 
 func main() {
-	fmt.Println(FindPrevPrime(5))
-	fmt.Println(FindPrevPrime(4))
+	fmt.Println(piscine.FindPrevPrime(5))
+	fmt.Println(piscine.FindPrevPrime(4))
 }
 ```
 

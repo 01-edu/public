@@ -41,6 +41,6 @@ func main() {
 	}
 
 	for _, a := range arr {
-		z01.Challenge("SliceProg", student.Slice, correct.Slice, a...)
+		z01.Challenge("Slice", student.Slice, correct.Slice, a...)
 	}
 }
