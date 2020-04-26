@@ -39,3 +39,5 @@ func main() {
 		z01.Challenge("ConvertBase", student.ConvertBase, correct.ConvertBase, arg.nbr, arg.baseFrom, arg.baseTo)
 	}
 }
+
+// TODO: fix base exercises
