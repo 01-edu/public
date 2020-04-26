@@ -1,21 +1,5 @@
 package correct
 
-func rec(a, b, cnt int) int {
-	if a > b {
-		return -1
-	}
-	if a == b {
-		return cnt
-	}
-	if rec(a*2, b, cnt+1) != -1 {
-		return rec(a*2, b, cnt+1)
-	}
-	if rec(a*3, b, cnt+1) != -1 {
-		return rec(a*3, b, cnt+1)
-	}
-	return -1
-}
-
 func Fib(n int) int {
 	if n <= 0 {
 		return 0
