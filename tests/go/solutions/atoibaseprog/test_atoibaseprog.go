@@ -1,11 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
 	"./base"
 
-	correct "./correct"
+	"github.com/01-edu/z01"
 )
 
 // this is the function that creates the TESTS
@@ -17,8 +15,8 @@ func main() {
 
 	table := []node{}
 
-	// 15 random pairs of string numbers with valid bases
-	for i := 0; i < 15; i++ {
+	// 5 random pairs of string numbers with valid bases
+	for i := 0; i < 5; i++ {
 		validBaseToInput := base.Valid()
 		val := node{
 			s:    base.StringFrom(validBaseToInput),
@@ -26,8 +24,8 @@ func main() {
 		}
 		table = append(table, val)
 	}
-	// 15 random pairs of string numbers with invalid bases
-	for i := 0; i < 15; i++ {
+	// 5 random pairs of string numbers with invalid bases
+	for i := 0; i < 5; i++ {
 		invalidBaseToInput := base.Invalid()
 		val := node{
 			s:    "thisinputshouldnotmatter",
@@ -43,8 +41,10 @@ func main() {
 		node{s: "bbbbbab", base: "-ab"},
 	)
 	for _, arg := range table {
-		z01.Challenge("AtoiBaseProg", AtoiBase, correct.AtoiBase, arg.s, arg.base)
+		z01.ChallengeMain("atoibaseprog", arg.s, arg.base)
 	}
+	z01.ChallengeMain("atoibaseprog")
+	z01.ChallengeMain("atoibaseprog", "125", "0123456789", "something")
 }
 
 // TODO: fix base exercises
