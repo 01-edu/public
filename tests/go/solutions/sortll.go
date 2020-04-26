@@ -1,5 +1,24 @@
 package correct
 
+type NodeAddL struct {
+	Next *NodeAddL
+	Num  int
+}
+
+func pushBack(node *NodeAddL, num int) *NodeAddL {
+	nw := &NodeAddL{Num: num}
+	if node == nil {
+		return nw
+	}
+	for tmp := node; tmp != nil; tmp = tmp.Next {
+		if tmp.Next == nil {
+			tmp.Next = nw
+			return node
+		}
+	}
+	return node
+}
+
 func Sortll(node *NodeAddL) *NodeAddL {
 	if node == nil {
 		return node

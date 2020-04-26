@@ -1,5 +1,19 @@
 package correct
 
+type NodeAddL struct {
+	Next *NodeAddL
+	Num  int
+}
+
+func pushFront(node *NodeAddL, num int) *NodeAddL {
+	tmp := &NodeAddL{Num: num}
+	if node == nil {
+		return tmp
+	}
+	tmp.Next = node
+	return tmp
+}
+
 func Reverse(node *NodeAddL) *NodeAddL {
 	if node == nil {
 		return node

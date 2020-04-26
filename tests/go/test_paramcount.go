@@ -7,12 +7,12 @@ import (
 )
 
 func main() {
-	arg1 := []string{"2", "5", "u", "19"}
-	arg2 := []string{"2"}
-	arg3 := []string{"1", "2", "3", "5", "7", "24"}
-	arg4 := []string{"6", "12", "24"}
-
-	args := [][]string{arg1, arg2, arg3, arg4}
+	args := [][]string{
+		{"2", "5", "u", "19"},
+		{"2"},
+		{"1", "2", "3", "5", "7", "24"},
+		{"6", "12", "24"},
+	}
 
 	for i := 0; i < 10; i++ {
 		var arg []string
