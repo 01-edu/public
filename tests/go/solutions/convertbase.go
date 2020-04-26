@@ -20,3 +20,5 @@ func ConvertBase(nbr, baseFrom, baseTo string) string {
 
 	return resultFinal
 }
+
+// TODO: fix base exercises
