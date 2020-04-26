@@ -13,7 +13,7 @@ Contest cannot finish before it was started.
 ### Expected function
 
 ```go
-func Halfcontest(h1, m1, h2, m2 int) int {
+func HalfContest(h1, m1, h2, m2 int) int {
 
 }
 ```
@@ -25,12 +25,16 @@ Here is a possible program to test your function :
 ```go
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	piscine ".."
+)
 
 func main() {
-	fmt.Println(Halfcontest(1, 15, 3, 33))
-	fmt.Println(Halfcontest(10, 3, 11, 55))
-	fmt.Println(Halfcontest(9, 2, 11, 3))
+	fmt.Println(piscine.HalfContest(1, 15, 3, 33))
+	fmt.Println(piscine.HalfContest(10, 3, 11, 55))
+	fmt.Println(piscine.HalfContest(9, 2, 11, 3))
 }
 ```
 

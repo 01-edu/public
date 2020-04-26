@@ -18,9 +18,9 @@ func DoppelGanger(s, substr string) int {
 package main
 
 import (
-	piscine ".."
-
 	"fmt"
+
+	piscine ".."
 )
 
 func main() {
