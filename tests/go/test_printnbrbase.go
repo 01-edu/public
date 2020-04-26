@@ -5,7 +5,7 @@ import (
 
 	"./base"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -46,7 +46,7 @@ func main() {
 		node{n: z01.MinInt, base: "0123456789"},
 	)
 	for _, arg := range table {
-		z01.Challenge("PrintNbrBase", student.PrintNbrBase, solutions.PrintNbrBase, arg.n, arg.base)
+		z01.Challenge("PrintNbrBase", student.PrintNbrBase, correct.PrintNbrBase, arg.n, arg.base)
 	}
 }
 

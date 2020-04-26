@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "../../solutions"
+	correct "./correct"
 )
 
 func main() {
@@ -15,6 +15,6 @@ func main() {
 		z01.RandStr(z01.RandIntBetween(1, 15), z01.RandAlnum()),
 	)
 	for _, arg := range table {
-		z01.Challenge("LastRuneProg", LastRune, solutions.LastRune, arg)
+		z01.Challenge("LastRuneProg", LastRune, correct.LastRune, arg)
 	}
 }

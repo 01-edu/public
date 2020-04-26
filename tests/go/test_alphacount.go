@@ -1,10 +1,10 @@
 package main
 
 import (
-	solutions "./solutions"
-
-	student "./student"
 	"github.com/01-edu/z01"
+
+	correct "./correct"
+	student "./student"
 )
 
 func main() {
@@ -19,6 +19,6 @@ func main() {
 	}
 
 	for _, arg := range table {
-		z01.Challenge("AlphaCount", student.AlphaCount, solutions.AlphaCount, arg)
+		z01.Challenge("AlphaCount", student.AlphaCount, correct.AlphaCount, arg)
 	}
 }

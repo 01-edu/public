@@ -5,7 +5,7 @@ import (
 	"os"
 	"strconv"
 
-	solutions ".."
+	correct ".."
 )
 
 func NRune(s string, n int) rune {
@@ -27,7 +27,7 @@ func main() {
 		return
 	}
 
-	rune := solutions.NRune(os.Args[1], val)
+	rune := correct.NRune(os.Args[1], val)
 
 	if rune == 0 {
 		fmt.Printf("Invalid position: \"%d\" in \"%s\"\n", val, os.Args[1])

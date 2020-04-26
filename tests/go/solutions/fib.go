@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func rec(a, b, cnt int) int {
 	if a > b {

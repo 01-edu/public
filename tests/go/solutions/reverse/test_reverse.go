@@ -3,11 +3,11 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "../../solutions"
+	correct "./correct"
 )
 
 type stuNode = NodeAddL
-type solNode = solutions.NodeAddL
+type solNode = correct.NodeAddL
 
 func stuPushFront(node *stuNode, num int) *stuNode {
 	tmp := &stuNode{Num: num}
@@ -82,7 +82,7 @@ func main() {
 	table = append(table, z01.MultRandIntBetween(0, 1000000000)...)
 	for _, arg := range table {
 		stuResult := Reverse(stuNumToList(arg))
-		solResult := solutions.Reverse(solNumToList(arg))
+		solResult := correct.Reverse(solNumToList(arg))
 
 		compareNodes(stuResult, solResult, arg)
 	}

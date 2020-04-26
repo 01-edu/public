@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func ListSort(l *NodeI) *NodeI {
 	head := l

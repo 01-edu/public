@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func pushBack(node *NodeAddL, num int) *NodeAddL {
 	nw := &NodeAddL{Num: num}

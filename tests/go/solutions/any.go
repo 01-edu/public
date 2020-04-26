@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func Any(f func(string) bool, arr []string) bool {
 	for _, el := range arr {

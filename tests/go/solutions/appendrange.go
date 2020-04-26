@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func AppendRange(min, max int) []int {
 	size := max - min

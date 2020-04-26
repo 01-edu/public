@@ -5,11 +5,11 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solution "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
-func listToString4(n *solution.Nodelist) (res string) {
+func listToString4(n *correct.Nodelist) (res string) {
 	it := n
 	for it != nil {
 		res += strconv.Itoa(it.Data) + "-> "
@@ -37,8 +37,8 @@ func descending(a, b int) bool {
 	return a >= b
 }
 
-func insertNodeListSolution(l *solution.Nodelist, data int) *solution.Nodelist {
-	n := &solution.Nodelist{Data: data}
+func insertNodeListSolution(l *correct.Nodelist, data int) *correct.Nodelist {
+	n := &correct.Nodelist{Data: data}
 	it := l
 	if it == nil {
 		it = n
@@ -67,8 +67,8 @@ func insertNodeListStudent(l1 *student.Nodelist, data int) *student.Nodelist {
 	return it
 }
 
-func compare(l2 *solution.Nodelist, l1 *student.Nodelist, f func(a, b int) bool) {
-	cmp := solution.GetName(f)
+func compare(l2 *correct.Nodelist, l1 *student.Nodelist, f func(a, b int) bool) {
+	cmp := correct.GetName(f)
 
 	for l1 != nil && l2 != nil {
 		if l1.Data != l2.Data {
@@ -82,7 +82,7 @@ func compare(l2 *solution.Nodelist, l1 *student.Nodelist, f func(a, b int) bool)
 }
 
 func main() {
-	var linkSolutions *solution.Nodelist
+	var linkSolutions *correct.Nodelist
 	var linkStudent *student.Nodelist
 
 	type nodeTest struct {
@@ -113,10 +113,10 @@ func main() {
 
 		for _, fn := range arg.functions {
 			studentResult := student.SortList(linkStudent, fn)
-			solutionResult := solution.SortList(linkSolutions, fn)
+			solutionResult := correct.SortList(linkSolutions, fn)
 			compare(solutionResult, studentResult, fn)
 		}
-		linkSolutions = &solution.Nodelist{}
+		linkSolutions = &correct.Nodelist{}
 		linkStudent = &student.Nodelist{}
 	}
 }

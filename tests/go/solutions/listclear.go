@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func ListClear(l *List) {
 	temp := l.Head

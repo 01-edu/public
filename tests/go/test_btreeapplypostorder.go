@@ -3,12 +3,12 @@ package main
 import (
 	"fmt"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
 func main() {
-	root := &solutions.TreeNode{Data: "08"}
+	root := &correct.TreeNode{Data: "08"}
 	rootS := &student.TreeNode{Data: "08"}
 	pos := []string{
 		"x",
@@ -25,9 +25,9 @@ func main() {
 	}
 
 	for _, arg := range pos {
-		root = solutions.BTreeInsertData(root, arg)
+		root = correct.BTreeInsertData(root, arg)
 		rootS = student.BTreeInsertData(rootS, arg)
 	}
 
-	solutions.ChallengeTree("BTreeApplyPostorder", solutions.BTreeApplyPostorder, student.BTreeApplyPostorder, root, rootS, fmt.Println)
+	correct.ChallengeTree("BTreeApplyPostorder", correct.BTreeApplyPostorder, student.BTreeApplyPostorder, root, rootS, fmt.Println)
 }

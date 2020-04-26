@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func TrimAtoi(str string) int {
 	chars := []rune(str)

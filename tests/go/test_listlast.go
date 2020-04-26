@@ -5,13 +5,13 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solution "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
 type Node3 = student.NodeL
-type List3 = solution.List
-type NodeS3 = solution.NodeL
+type List3 = correct.List
+type NodeS3 = correct.NodeL
 type ListS3 = student.List
 
 func listToStringStu9(l *ListS3) string {
@@ -50,15 +50,15 @@ func listPushBackTest3(l *ListS3, l1 *List3, data interface{}) {
 	}
 }
 
-// last element of the solution.ListS
+// last element of the correct.ListS
 func main() {
 	link1 := &List3{}
 	link2 := &ListS3{}
-	table := []solution.NodeTest{}
+	table := []correct.NodeTest{}
 
-	table = solution.ElementsToTest(table)
+	table = correct.ElementsToTest(table)
 	table = append(table,
-		solution.NodeTest{
+		correct.NodeTest{
 			Data: []interface{}{3, 2, 1},
 		},
 	)
@@ -66,7 +66,7 @@ func main() {
 		for i := 0; i < len(arg.Data); i++ {
 			listPushBackTest3(link2, link1, arg.Data[i])
 		}
-		aux1 := solution.ListLast(link1)
+		aux1 := correct.ListLast(link1)
 		aux2 := student.ListLast(link2)
 
 		if aux1 != aux2 {

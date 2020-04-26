@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -19,6 +19,6 @@ func main() {
 		[]string{"Hello!", " How are you?"},
 	)
 	for _, arg := range table {
-		z01.Challenge("Concat", student.Concat, solutions.Concat, arg[0], arg[1])
+		z01.Challenge("Concat", student.Concat, correct.Concat, arg[0], arg[1])
 	}
 }

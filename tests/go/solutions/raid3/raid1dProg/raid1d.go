@@ -5,7 +5,7 @@ import (
 	"os"
 	"strconv"
 
-	solutions "../.."
+	correct "../.."
 )
 
 func main() {
@@ -16,7 +16,7 @@ func main() {
 		if err != nil || err2 != nil {
 			fmt.Println(err)
 		}
-		solutions.Raid1d(firstArg, secondArg)
+		correct.Raid1d(firstArg, secondArg)
 	} else {
 		fmt.Println("too much arguments")
 	}

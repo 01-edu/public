@@ -5,7 +5,7 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -18,6 +18,6 @@ func main() {
 		table = append(table, z01.IntRange(13, 20)...)
 	}
 	for _, arg := range table {
-		z01.Challenge("RecursiveFactorial", student.RecursiveFactorial, solutions.RecursiveFactorial, arg)
+		z01.Challenge("RecursiveFactorial", student.RecursiveFactorial, correct.RecursiveFactorial, arg)
 	}
 }

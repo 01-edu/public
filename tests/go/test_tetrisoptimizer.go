@@ -162,6 +162,7 @@ func main() {
 }
 
 // TODO:
+// Fix path
 // Add error cases :
 //   wrong arguments
 //   bad file types (links, folders)

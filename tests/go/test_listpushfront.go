@@ -5,11 +5,11 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solution "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
-type ListSa = solution.List
+type ListSa = correct.List
 type Lista = student.List
 
 func listToStringStu11(l *Lista) string {
@@ -33,11 +33,11 @@ func comparFuncList1(l *Lista, l1 *ListSa, data []interface{}) {
 	for l.Head != nil || l1.Head != nil {
 		if (l.Head == nil && l1.Head != nil) || (l.Head != nil && l1.Head == nil) {
 			z01.Fatalf("\ndata used: %v\nstudent list:%s\nlist:%s\n\nListPushFront()== %v instead of %v\n\n",
-				data, listToStringStu11(l), solution.ListToString(l1.Head), l.Head, l1.Head)
+				data, listToStringStu11(l), correct.ListToString(l1.Head), l.Head, l1.Head)
 		}
 		if l.Head.Data != l1.Head.Data {
 			z01.Fatalf("\ndata used: %v\nstudent list:%s\nlist:%s\n\nListPushFront()== %v instead of %v\n\n",
-				data, listToStringStu11(l), solution.ListToString(l1.Head), l.Head, l1.Head)
+				data, listToStringStu11(l), correct.ListToString(l1.Head), l.Head, l1.Head)
 		}
 		l1.Head = l1.Head.Next
 		l.Head = l.Head.Next
@@ -48,17 +48,17 @@ func comparFuncList1(l *Lista, l1 *ListSa, data []interface{}) {
 func main() {
 	link1 := &Lista{}
 	link2 := &ListSa{}
-	table := []solution.NodeTest{}
-	table = solution.ElementsToTest(table)
+	table := []correct.NodeTest{}
+	table = correct.ElementsToTest(table)
 	table = append(table,
-		solution.NodeTest{
+		correct.NodeTest{
 			Data: []interface{}{"Hello", "man", "how are you"},
 		},
 	)
 	for _, arg := range table {
 		for _, item := range arg.Data {
 			student.ListPushFront(link1, item)
-			solution.ListPushFront(link2, item)
+			correct.ListPushFront(link2, item)
 		}
 		comparFuncList1(link1, link2, arg.Data)
 		link1 = &Lista{}

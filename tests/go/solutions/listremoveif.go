@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 // removes all elements that are equal to the data_ref
 func ListRemoveIf(l *List, data_ref interface{}) {

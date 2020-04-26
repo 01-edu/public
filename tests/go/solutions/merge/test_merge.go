@@ -6,11 +6,11 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solutions "../../solutions"
+	correct "./correct"
 )
 
 type stuTreeNode = TreeNodeM
-type solTreeNode = solutions.TreeNodeM
+type solTreeNode = correct.TreeNodeM
 
 func New(n, k int) (*solTreeNode, *stuTreeNode, *solTreeNode) {
 	var cop *solTreeNode
@@ -166,7 +166,7 @@ func main() {
 		cop1, stuTree1, solTree1 := New(arg.n, arg.k)
 		cop2, stuTree2, solTree2 := New(arg.n, arg.k)
 		stuResult := MergeTrees(stuTree1, stuTree2)
-		solResult := solutions.MergeTrees(solTree1, solTree2)
+		solResult := correct.MergeTrees(solTree1, solTree2)
 
 		compareTrees(stuResult, solResult, cop1, cop2)
 	}

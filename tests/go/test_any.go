@@ -3,63 +3,59 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
 func main() {
-	functionsArray := []func(string) bool{solutions.IsNumeric, solutions.IsLower, solutions.IsUpper}
+	functions := []func(string) bool{correct.IsNumeric, correct.IsLower, correct.IsUpper}
 
 	type node struct {
-		f   func(string) bool
-		arr []string
+		f func(string) bool
+		a []string
 	}
 
 	table := []node{}
 
 	for i := 0; i < 5; i++ {
-		functionSelected := functionsArray[z01.RandIntBetween(0, len(functionsArray)-1)]
-		val := node{
-			f:   functionSelected,
-			arr: z01.MultRandWords(),
-		}
-		table = append(table, val)
+		function := functions[z01.RandIntBetween(0, len(functions)-1)]
+		table = append(table, node{
+			f: function,
+			a: z01.MultRandWords(),
+		})
 	}
 	for i := 0; i < 5; i++ {
-		val := node{
-			f:   solutions.IsNumeric,
-			arr: z01.MultRandDigit(),
-		}
-		table = append(table, val)
+		table = append(table, node{
+			f: correct.IsNumeric,
+			a: z01.MultRandDigit(),
+		})
 	}
 
 	for i := 0; i < 5; i++ {
-		val := node{
-			f:   solutions.IsLower,
-			arr: z01.MultRandLower(),
-		}
-		table = append(table, val)
+		table = append(table, node{
+			f: correct.IsLower,
+			a: z01.MultRandLower(),
+		})
 	}
 	for i := 0; i < 5; i++ {
-		val := node{
-			f:   solutions.IsUpper,
-			arr: z01.MultRandUpper(),
-		}
-		table = append(table, val)
+		table = append(table, node{
+			f: correct.IsUpper,
+			a: z01.MultRandUpper(),
+		})
 	}
 
 	table = append(table,
 		node{
-			f:   solutions.IsNumeric,
-			arr: []string{"Hello", "how", "are", "you"},
+			f: correct.IsNumeric,
+			a: []string{"Hello", "how", "are", "you"},
 		},
 		node{
-			f:   solutions.IsNumeric,
-			arr: []string{"This", "is", "4", "you"},
+			f: correct.IsNumeric,
+			a: []string{"This", "is", "4", "you"},
 		},
 	)
 
 	for _, arg := range table {
-		z01.Challenge("Any", student.Any, solutions.Any, arg.f, arg.arr)
+		z01.Challenge("Any", student.Any, correct.Any, arg.f, arg.a)
 	}
 }

@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -15,6 +15,6 @@ func main() {
 		table = append(table, z01.MultRandASCII())
 	}
 	for _, arg := range table {
-		z01.Challenge("ConcatParams", student.ConcatParams, solutions.ConcatParams, arg)
+		z01.Challenge("ConcatParams", student.ConcatParams, correct.ConcatParams, arg)
 	}
 }

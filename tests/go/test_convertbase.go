@@ -5,7 +5,7 @@ import (
 
 	"./base"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -36,6 +36,6 @@ func main() {
 	)
 
 	for _, arg := range table {
-		z01.Challenge("ConvertBase", student.ConvertBase, solutions.ConvertBase, arg.nbr, arg.baseFrom, arg.baseTo)
+		z01.Challenge("ConvertBase", student.ConvertBase, correct.ConvertBase, arg.nbr, arg.baseFrom, arg.baseTo)
 	}
 }

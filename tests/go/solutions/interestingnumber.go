@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func isInteresting(n int) bool {
 	s := 0

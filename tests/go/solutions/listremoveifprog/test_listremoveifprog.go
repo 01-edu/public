@@ -5,12 +5,12 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solution "../../solutions"
+	correct "./correct"
 )
 
 type Node10 = NodeL
-type List10 = solution.List
-type NodeS10 = solution.NodeL
+type List10 = correct.List
+type NodeS10 = correct.NodeL
 type ListS10 = List
 
 func listToStringStu12(l *ListS10) string {
@@ -56,11 +56,11 @@ func comparFuncList10(l1 *List10, l2 *ListS10, data interface{}) {
 	for l1.Head != nil || l2.Head != nil {
 		if (l1.Head == nil && l2.Head != nil) || (l1.Head != nil && l2.Head == nil) {
 			z01.Fatalf("\ndata used: %v\nstudent list:%s\nlist:%s\n\nListRemoveIf() == %v instead of %v\n\n",
-				data, listToStringStu12(l2), solution.ListToString(l1.Head), l2.Head, l1.Head)
+				data, listToStringStu12(l2), correct.ListToString(l1.Head), l2.Head, l1.Head)
 		}
 		if l1.Head.Data != l2.Head.Data {
 			z01.Fatalf("\ndata used: %v\nstudent list:%s\nlist:%s\n\nListRemoveIf() == %v instead of %v\n\n",
-				data, listToStringStu12(l2), solution.ListToString(l1.Head), l2.Head.Data, l1.Head.Data)
+				data, listToStringStu12(l2), correct.ListToString(l1.Head), l2.Head.Data, l1.Head.Data)
 		}
 		l1.Head = l1.Head.Next
 		l2.Head = l2.Head.Next
@@ -71,12 +71,12 @@ func comparFuncList10(l1 *List10, l2 *ListS10, data interface{}) {
 func main() {
 	link1 := &List10{}
 	link2 := &ListS10{}
-	table := []solution.NodeTest{}
+	table := []correct.NodeTest{}
 
-	table = solution.ElementsToTest(table)
+	table = correct.ElementsToTest(table)
 
 	table = append(table,
-		solution.NodeTest{
+		correct.NodeTest{
 			Data: []interface{}{"hello", "hello1", "hello2", "hello3"},
 		},
 	)
@@ -91,11 +91,11 @@ func main() {
 		if link1.Head != nil && link2.Head != nil {
 			cho := arg.Data[index]
 			ListRemoveIf(link2, cho)
-			solution.ListRemoveIf(link1, cho)
+			correct.ListRemoveIf(link1, cho)
 			comparFuncList10(link1, link2, cho)
 		} else {
 			ListRemoveIf(link2, 1)
-			solution.ListRemoveIf(link1, 1)
+			correct.ListRemoveIf(link1, 1)
 			comparFuncList10(link1, link2, 1)
 		}
 

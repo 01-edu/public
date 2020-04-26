@@ -6,7 +6,7 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -40,6 +40,6 @@ func main() {
 		node{str: "HelloHAhowHAareHAyou?", sep: "HA"})
 
 	for _, arg := range table {
-		z01.Challenge("Split", student.Split, solutions.Split, arg.str, arg.sep)
+		z01.Challenge("Split", student.Split, correct.Split, arg.str, arg.sep)
 	}
 }

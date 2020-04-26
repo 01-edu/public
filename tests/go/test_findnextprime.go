@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -29,6 +29,6 @@ func main() {
 		1000000088,
 	)
 	for _, arg := range table {
-		z01.Challenge("FindNextPrime", student.FindNextPrime, solutions.FindNextPrime, arg)
+		z01.Challenge("FindNextPrime", student.FindNextPrime, correct.FindNextPrime, arg)
 	}
 }

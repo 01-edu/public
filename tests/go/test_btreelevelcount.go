@@ -3,22 +3,22 @@ package main
 import (
 	"reflect"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 
 	"github.com/01-edu/z01"
 )
 
-func errorMessage_level(fn interface{}, root, a *solutions.TreeNode, b *student.TreeNode) {
+func errorMessage_level(fn interface{}, root, a *correct.TreeNode, b *student.TreeNode) {
 	z01.Fatalf("%s(\n%s\n) == %s instead of %s\n",
 		"BTreeLevelCount",
-		solutions.FormatTree(root),
+		correct.FormatTree(root),
 		b.Data,
 		a.Data,
 	)
 }
 
-func CompareNode_level(fn interface{}, arg1, a *solutions.TreeNode, b *student.TreeNode) {
+func CompareNode_level(fn interface{}, arg1, a *correct.TreeNode, b *student.TreeNode) {
 	if a == nil || b == nil {
 		z01.Fatalf("Expected %v instead of %v\n", a, b)
 		return
@@ -56,7 +56,7 @@ func CompareNode_level(fn interface{}, arg1, a *solutions.TreeNode, b *student.T
 	}
 }
 
-func CompareReturn_level(fn1, fn2 interface{}, arg1 *solutions.TreeNode, arg2 interface{}) {
+func CompareReturn_level(fn1, fn2 interface{}, arg1 *correct.TreeNode, arg2 interface{}) {
 	arar1 := []interface{}{arg1}
 	arar2 := []interface{}{arg2}
 
@@ -65,13 +65,13 @@ func CompareReturn_level(fn1, fn2 interface{}, arg1 *solutions.TreeNode, arg2 in
 
 	for i, v := range out1.Results {
 		switch str := v.(type) {
-		case *solutions.TreeNode:
+		case *correct.TreeNode:
 			CompareNode_level(fn1, arg1, str, out2.Results[i].(*student.TreeNode))
 		default:
 			if !reflect.DeepEqual(str, out2.Results[i]) {
 				z01.Fatalf("%s(\n%s) == %s instead of %s\n",
 					"BTreeLevelCount",
-					solutions.FormatTree(arg1),
+					correct.FormatTree(arg1),
 					z01.Format(out2.Results...),
 					z01.Format(out1.Results...),
 				)
@@ -81,14 +81,14 @@ func CompareReturn_level(fn1, fn2 interface{}, arg1 *solutions.TreeNode, arg2 in
 }
 
 func main() {
-	root := &solutions.TreeNode{Data: "04"}
+	root := &correct.TreeNode{Data: "04"}
 	rootS := &student.TreeNode{Data: "04"}
 
 	ins := []string{"01", "07", "05", "12", "02", "03", "10"}
 
 	for _, v := range ins {
-		root = solutions.BTreeInsertData(root, v)
+		root = correct.BTreeInsertData(root, v)
 		rootS = student.BTreeInsertData(rootS, v)
-		CompareReturn_level(solutions.BTreeLevelCount, student.BTreeLevelCount, root, rootS)
+		CompareReturn_level(correct.BTreeLevelCount, student.BTreeLevelCount, root, rootS)
 	}
 }

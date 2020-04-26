@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -37,6 +37,6 @@ func main() {
 	}
 	a = stringsToTrimAtoi(a)
 	for _, elem := range a {
-		z01.Challenge("TrimAtoi", student.TrimAtoi, solutions.TrimAtoi, elem)
+		z01.Challenge("TrimAtoi", student.TrimAtoi, correct.TrimAtoi, elem)
 	}
 }

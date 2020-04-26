@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func Game23(a, b int) int {
 	if a > b {

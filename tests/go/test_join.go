@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -22,6 +22,6 @@ func main() {
 		// random position for the slice of separators
 		posS := z01.RandIntBetween(0, len(seps)-1)
 
-		z01.Challenge("Join", student.Join, solutions.Join, args[posA], seps[posS])
+		z01.Challenge("Join", student.Join, correct.Join, args[posA], seps[posS])
 	}
 }

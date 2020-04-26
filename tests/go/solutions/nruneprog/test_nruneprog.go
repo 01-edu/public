@@ -5,7 +5,7 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solutions "../../solutions"
+	correct "./correct"
 )
 
 func main() {
@@ -38,6 +38,6 @@ func main() {
 	)
 
 	for _, arg := range table {
-		z01.Challenge("NRuneProg", NRune, solutions.NRune, arg.word, arg.n)
+		z01.Challenge("NRuneProg", NRune, correct.NRune, arg.word, arg.n)
 	}
 }

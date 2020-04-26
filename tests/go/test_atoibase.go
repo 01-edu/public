@@ -5,7 +5,7 @@ import (
 
 	"./base"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -44,7 +44,7 @@ func main() {
 		node{s: "bbbbbab", base: "-ab"},
 	)
 	for _, arg := range table {
-		z01.Challenge("AtoiBase", student.AtoiBase, solutions.AtoiBase, arg.s, arg.base)
+		z01.Challenge("AtoiBase", student.AtoiBase, correct.AtoiBase, arg.s, arg.base)
 	}
 }
 

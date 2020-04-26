@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 // Function that return the number of active bits in the number passed as the argument
 func ActiveBits(n int) (total int) {

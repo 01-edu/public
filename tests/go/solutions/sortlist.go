@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 type Nodelist struct {
 	Data int

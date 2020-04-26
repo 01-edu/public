@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "../../solutions"
+	correct "./correct"
 )
 
 func main() {
@@ -15,6 +15,6 @@ func main() {
 		"♥01",
 	)
 	for _, arg := range table {
-		z01.Challenge("FirstRuneProg", FirstRune, solutions.FirstRune, arg)
+		z01.Challenge("FirstRuneProg", FirstRune, correct.FirstRune, arg)
 	}
 }

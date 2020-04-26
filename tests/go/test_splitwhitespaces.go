@@ -5,7 +5,7 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -22,6 +22,6 @@ func main() {
 		"Hello how are you?")
 
 	for _, arg := range table {
-		z01.Challenge("SplitWhiteSpaces", student.SplitWhiteSpaces, solutions.SplitWhiteSpaces, arg)
+		z01.Challenge("SplitWhiteSpaces", student.SplitWhiteSpaces, correct.SplitWhiteSpaces, arg)
 	}
 }

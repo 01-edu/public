@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 type TreeNodeM struct {
 	Left  *TreeNodeM

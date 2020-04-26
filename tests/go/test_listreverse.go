@@ -5,13 +5,13 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solution "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
 type Node6 = student.NodeL
-type List6 = solution.List
-type NodeS6 = solution.NodeL
+type List6 = correct.List
+type NodeS6 = correct.NodeL
 type ListS6 = student.List
 
 func listToStringStu13(l *ListS6) string {
@@ -34,11 +34,11 @@ func comparFuncList6(l *List6, l1 *ListS6) {
 	for l.Head != nil || l1.Head != nil {
 		if (l.Head == nil && l1.Head != nil) || (l.Head != nil && l1.Head == nil) {
 			z01.Fatalf("\nstudent list:%s\nlist:%s\n\nListReverse() == %v instead of %v\n\n",
-				listToStringStu13(l1), solution.ListToString(l.Head), l1.Head, l.Head)
+				listToStringStu13(l1), correct.ListToString(l.Head), l1.Head, l.Head)
 		}
 		if l.Head.Data != l1.Head.Data {
 			z01.Fatalf("\nstudent list:%s\nlist:%s\n\nListReverse() == %v instead of %v\n\n",
-				listToStringStu13(l1), solution.ListToString(l.Head), l1.Head.Data, l.Head.Data)
+				listToStringStu13(l1), correct.ListToString(l.Head), l1.Head.Data, l.Head.Data)
 		}
 		l.Head = l.Head.Next
 		l1.Head = l1.Head.Next
@@ -71,16 +71,16 @@ func listPushBackTest6(l *ListS6, l1 *List6, data interface{}) {
 func main() {
 	link1 := &List6{}
 	link2 := &ListS6{}
-	table := []solution.NodeTest{{
+	table := []correct.NodeTest{{
 		Data: []interface{}{"I", 1, "something", 2},
 	}}
-	table = solution.ElementsToTest(table)
+	table = correct.ElementsToTest(table)
 	for _, arg := range table {
 		for _, item := range arg.Data {
 			listPushBackTest6(link2, link1, item)
 		}
 		student.ListReverse(link2)
-		solution.ListReverse(link1)
+		correct.ListReverse(link1)
 		comparFuncList6(link1, link2)
 		link1 = &List6{}
 		link2 = &ListS6{}

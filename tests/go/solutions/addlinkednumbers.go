@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 type NodeAddL struct {
 	Next *NodeAddL

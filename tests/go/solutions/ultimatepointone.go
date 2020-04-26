@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func UltimatePointOne(n ***int) {
 	***n = 1

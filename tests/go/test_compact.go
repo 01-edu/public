@@ -5,7 +5,7 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -34,7 +34,7 @@ func main() {
 		copy(sli_sol, v)
 		copy(sli_stu, v)
 
-		sol_size := solutions.Compact(&sli_sol)
+		sol_size := correct.Compact(&sli_sol)
 		stu_size := student.Compact(&sli_stu)
 
 		if !reflect.DeepEqual(sli_stu, sli_sol) {

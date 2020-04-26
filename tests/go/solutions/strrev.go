@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func StrRev(s string) string {
 	runes := []rune(s)

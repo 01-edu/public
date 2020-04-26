@@ -5,11 +5,11 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solutions "../../solutions"
+	correct "./correct"
 )
 
 type stuNode = NodeAddL
-type solNode = solutions.NodeAddL
+type solNode = correct.NodeAddL
 
 func stuPushFront(node *stuNode, num int) *stuNode {
 	tmp := &stuNode{Num: num}
@@ -112,7 +112,7 @@ func main() {
 
 	for _, arg := range args {
 		stuResult := AddLinkedNumbers(stuNumToList(arg[0]), stuNumToList(arg[1]))
-		solResult := solutions.AddLinkedNumbers(solNumToList(arg[0]), solNumToList(arg[1]))
+		solResult := correct.AddLinkedNumbers(solNumToList(arg[0]), solNumToList(arg[1]))
 
 		compareNodes(stuResult, solResult, arg[0], arg[1])
 	}

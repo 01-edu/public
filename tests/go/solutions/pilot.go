@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 type Pilot struct {
 	Name     string

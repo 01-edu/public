@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func Reverse(node *NodeAddL) *NodeAddL {
 	if node == nil {

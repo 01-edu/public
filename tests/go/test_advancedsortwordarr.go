@@ -6,7 +6,7 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solutions "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
@@ -24,7 +24,7 @@ func main() {
 		copy(cp_sol, org)
 		copy(cp_stu, org)
 
-		solutions.AdvancedSortWordArr(cp_sol, strings.Compare)
+		correct.AdvancedSortWordArr(cp_sol, strings.Compare)
 		student.AdvancedSortWordArr(cp_stu, strings.Compare)
 
 		if !reflect.DeepEqual(cp_stu, cp_sol) {

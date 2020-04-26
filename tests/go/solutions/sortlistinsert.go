@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 // structures for the linked lists
 type NodeI struct {

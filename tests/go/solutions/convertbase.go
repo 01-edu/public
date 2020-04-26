@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func ConvertNbrBase(n int, base string) string {
 	var result string

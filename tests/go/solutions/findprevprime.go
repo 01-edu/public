@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func FindPrevPrime(nbr int) int {
 	if nbr < 2 {

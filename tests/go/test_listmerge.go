@@ -5,13 +5,13 @@ import (
 
 	"github.com/01-edu/z01"
 
-	solution "./solutions"
+	correct "./correct"
 	student "./student"
 )
 
 type Node11 = student.NodeL
-type List11 = solution.List
-type NodeS11 = solution.NodeL
+type List11 = correct.List
+type NodeS11 = correct.NodeL
 type ListS11 = student.List
 
 func listToStringStu(l *ListS11) string {
@@ -61,11 +61,11 @@ func comparFuncList11(l1 *List11, l2 *ListS11) {
 	for l1.Head != nil || l2.Head != nil {
 		if (l1.Head == nil && l2.Head != nil) || (l1.Head != nil && l2.Head == nil) {
 			z01.Fatalf("\nstudent list:%s\nlist:%s\n\nListMerge() == %v instead of %v\n\n",
-				listToStringStu(l2), solution.ListToString(l1.Head), l2.Head, l1.Head)
+				listToStringStu(l2), correct.ListToString(l1.Head), l2.Head, l1.Head)
 		}
 		if l1.Head.Data != l2.Head.Data {
 			z01.Fatalf("\nstudent list:%s\nlist:%s\n\nListMerge() == %v instead of %v\n\n",
-				listToStringStu(l2), solution.ListToString(l1.Head), l2.Head.Data, l1.Head.Data)
+				listToStringStu(l2), correct.ListToString(l1.Head), l2.Head.Data, l1.Head.Data)
 		}
 		l1.Head = l1.Head.Next
 		l2.Head = l2.Head.Next
@@ -91,22 +91,22 @@ func main() {
 		})
 	table = append(table,
 		nodeTest{
-			data1: solution.ConvertIntToInterface(z01.MultRandInt()),
+			data1: correct.ConvertIntToInterface(z01.MultRandInt()),
 			data2: []interface{}{},
 		})
 	// jut ints
 	for i := 0; i < 3; i++ {
 		val := nodeTest{
-			data1: solution.ConvertIntToInterface(z01.MultRandInt()),
-			data2: solution.ConvertIntToInterface(z01.MultRandInt()),
+			data1: correct.ConvertIntToInterface(z01.MultRandInt()),
+			data2: correct.ConvertIntToInterface(z01.MultRandInt()),
 		}
 		table = append(table, val)
 	}
 	// just strings
 	for i := 0; i < 2; i++ {
 		val := nodeTest{
-			data1: solution.ConvertIntToStringface(z01.MultRandWords()),
-			data2: solution.ConvertIntToStringface(z01.MultRandWords()),
+			data1: correct.ConvertIntToStringface(z01.MultRandWords()),
+			data2: correct.ConvertIntToStringface(z01.MultRandWords()),
 		}
 		table = append(table, val)
 	}
@@ -124,7 +124,7 @@ func main() {
 			listPushBackTest11(link2Test, linkTest, arg.data2[i])
 		}
 
-		solution.ListMerge(link1, linkTest)
+		correct.ListMerge(link1, linkTest)
 		student.ListMerge(link2, link2Test)
 		comparFuncList11(link1, link2)
 

@@ -1,4 +1,4 @@
-package solutions
+package correct
 
 func Rot14(s string) (result string) {
 	for _, r := range s {
