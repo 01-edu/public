@@ -3,10 +3,10 @@ package main
 import (
 	"reflect"
 
+	"github.com/01-edu/z01"
+
 	correct "./correct"
 	student "./student"
-
-	"github.com/01-edu/z01"
 )
 
 func errorMessage_level(fn interface{}, root, a *correct.TreeNode, b *student.TreeNode) {
