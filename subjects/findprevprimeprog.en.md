@@ -22,9 +22,9 @@ Here is a possible [program](TODO-LINK) to test your function :
 package main
 
 import (
-	piscine ".."
-
 	"fmt"
+
+	piscine ".."
 )
 
 func main() {

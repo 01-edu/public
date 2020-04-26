@@ -1,6 +1,6 @@
 package correct
 
-func Halfcontest(h1, m1, h2, m2 int) int {
+func HalfContest(h1, m1, h2, m2 int) int {
 	t1 := h1*60 + m1
 	t2 := h2*60 + m2
 	t2 = (t2 + t1) / 2
