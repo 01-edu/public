@@ -1,11 +1,12 @@
 package solutions
 
-import (
-	"regexp"
-)
+import "unicode"
 
-func AlphaCount(str string) int {
-	re := regexp.MustCompile(`[a-zA-Z]`)
-	found := re.FindAll([]byte(str), -1)
-	return len(found)
+func AlphaCount(s string) (i int) {
+	for _, r := range s {
+		if unicode.IsLetter(r) {
+			i++
+		}
+	}
+	return i
 }

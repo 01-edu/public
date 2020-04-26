@@ -1,8 +1,6 @@
 package solutions
 
-import (
-	"math"
-)
+import "math"
 
 func IsPrime(value int) bool {
 	if value < 2 {

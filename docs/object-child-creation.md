@@ -4,8 +4,8 @@
 
 Objects of the Admin can be configured :
 
--   By setting particular **attributes** to the object
--   By associating **children** to the object
+- By setting particular **attributes** to the object
+- By associating **children** to the object
 
 Children can be added, deleted, reordered in the list. Also, it's possible to configure it in a special way for the parent object, by setting children attributes for all the children.
 
@@ -28,13 +28,13 @@ This documentation explains how to associate a child to a parent object.
 
 #### 3. Set up the new child:
 
--   Enter its name in the input "Add a child name"
--   Select your step object in the select input
--   Click on "ADD"
+- Enter its name in the input "Add a child name"
+- Select your step object in the select input
+- Click on "ADD"
 
 Your step is then related to its parent. You can see it in the _Children_ section of the parent's object. There, you can now:
 
--   Delete the child from its parent (the actual object of your child will not be deleted).
--   Reorder it in the children's list, by dragging it to the place you want.
--   Update its original settings by clicking on the eye icon of its reference (redirection to object edit page of the child).
-    <img width="1229" alt="Capture d’écran 2019-04-22 à 19 51 12" src="img/56518936-a1e19400-6538-11e9-81c7-520ffd365cff.png">
+- Delete the child from its parent (the actual object of your child will not be deleted).
+- Reorder it in the children's list, by dragging it to the place you want.
+- Update its original settings by clicking on the eye icon of its reference (redirection to object edit page of the child).
+  <img width="1229" alt="Capture d’écran 2019-04-22 à 19 51 12" src="img/56518936-a1e19400-6538-11e9-81c7-520ffd365cff.png">

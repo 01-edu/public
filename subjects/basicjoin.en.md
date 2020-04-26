@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that returns the concatenation of all the `string` of a table of `string` passed in argument.
+Write a function that returns the concatenation of all the `string` of a slice of `string` passed in argument.
 
 ### Expected function
 

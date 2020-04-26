@@ -5,7 +5,6 @@ func rec(a, b, cnt int) int {
 		return -1
 	}
 	if a == b {
-		// fmt.Printf("%d\n", cnt)
 		return cnt
 	}
 	if rec(a*2, b, cnt+1) != -1 {
@@ -24,7 +23,7 @@ func Fib(n int) int {
 	t1 := 0
 	t2 := 1
 	for i := 2; i <= n; i++ {
-		t1 = t1 + t2
+		t1 += t2
 		tmp := t1
 		t1 = t2
 		t2 = tmp

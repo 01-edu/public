@@ -19,22 +19,22 @@ func main() {
 		for i >= 0 && i < N {
 			switch progpoint[i] {
 			case '>':
-				//Increment the pointer
+				// Increment the pointer
 				pos++
 			case '<':
-				//decrement the pointes
+				// decrement the pointes
 				pos--
 			case '+':
-				//increment the pointed byte
+				// increment the pointed byte
 				arby[pos]++
 			case '-':
-				//decrement the pointed byte
+				// decrement the pointed byte
 				arby[pos]--
 			case '.':
-				//print the pointed byte on std output
+				// print the pointed byte on std output
 				z01.PrintRune(rune(arby[pos]))
 			case '[':
-				//go to the matching ']' if the pointed byte is 0 (while start)
+				// go to the matching ']' if the pointed byte is 0 (while start)
 				openBr = 0
 				if arby[pos] == 0 {
 					for i < N && (progpoint[i] != byte(']') || openBr > 1) {
@@ -47,7 +47,7 @@ func main() {
 					}
 				}
 			case ']':
-				//go to the matching '[' if the pointed byte is not 0 (while end)
+				// go to the matching '[' if the pointed byte is not 0 (while end)
 				openBr = 0
 				if arby[pos] != 0 {
 					for i >= 0 && (progpoint[i] != byte('[') || openBr > 1) {

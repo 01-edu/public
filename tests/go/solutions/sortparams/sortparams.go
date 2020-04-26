@@ -8,7 +8,7 @@ import (
 
 func main() {
 	args := os.Args[1:]
-	sort.Sort(sort.StringSlice(args))
+	sort.Strings(args)
 	for _, v := range args {
 		fmt.Println(v)
 	}

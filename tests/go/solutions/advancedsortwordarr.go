@@ -1,20 +1,10 @@
 package solutions
 
-func CompArray(a, b string) int {
-	if a < b {
-		return -1
-	}
-	if a > b {
-		return 1
-	}
-	return 0
-}
+import "sort"
 
-func AdvancedSortWordArr(array []string, f func(a, b string) int) {
-	for i := 1; i < len(array); i++ {
-		if f(array[i], array[i-1]) < 0 {
-			array[i], array[i-1] = array[i-1], array[i]
-			i = 0
-		}
-	}
+func AdvancedSortWordArr(a []string, f func(a, b string) int) {
+	sort.Slice(a, func(i, j int) bool {
+		return f(a[i], a[j]) < 0
+	})
+	return a
 }

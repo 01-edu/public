@@ -6,20 +6,16 @@ func isInteresting(n int) bool {
 		s += n % 10
 		n /= 10
 	}
-	if s%7 == 0 {
-		return true
-	}
-	return false
+	return s%7 == 0
 }
 
 func InterestingNumber(n int) int {
-	for n > 0 {
-		if isInteresting(n) == true {
+	for {
+		if isInteresting(n) {
 			return n
 		}
 		n++
 	}
-	return -1
 }
 
 func main() {

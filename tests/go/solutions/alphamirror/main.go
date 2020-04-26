@@ -14,7 +14,6 @@ func main() {
 			} else if ch >= 'A' && ch <= 'Z' {
 				arg[i] = 'Z' - ch + 'A'
 			}
-
 		}
 		fmt.Print(string(arg))
 	}

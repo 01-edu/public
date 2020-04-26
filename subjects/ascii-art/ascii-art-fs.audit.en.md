@@ -5,14 +5,14 @@
 ##### Try passing as arguments `"hello" standard`
 
 ```
- _              _   _          
-| |            | | | |         
-| |__     ___  | | | |   ___   
-|  _ \   / _ \ | | | |  / _ \  
-| | | | |  __/ | | | | | (_) | 
-|_| |_|  \___| |_| |_|  \___/  
-                               
-                               
+ _              _   _
+| |            | | | |
+| |__     ___  | | | |   ___
+|  _ \   / _ \ | | | |  / _ \
+| | | | |  __/ | | | | | (_) |
+|_| |_|  \___| |_| |_|  \___/
+
+
 ```
 
 ###### Does it display the string in the right template as an ASCII art representation as above?
@@ -20,14 +20,14 @@
 ##### Try passing as arguments `"hello world" shadow`
 
 ```
-                                                                                        
-_|                _| _|                                                     _|       _| 
-_|_|_|     _|_|   _| _|   _|_|         _|      _|      _|   _|_|   _|  _|_| _|   _|_|_| 
-_|    _| _|_|_|_| _| _| _|    _|       _|      _|      _| _|    _| _|_|     _| _|    _| 
-_|    _| _|       _| _| _|    _|         _|  _|  _|  _|   _|    _| _|       _| _|    _| 
-_|    _|   _|_|_| _| _|   _|_|             _|      _|       _|_|   _|       _|   _|_|_| 
-                                                                                        
-                                                                                        
+
+_|                _| _|                                                     _|       _|
+_|_|_|     _|_|   _| _|   _|_|         _|      _|      _|   _|_|   _|  _|_| _|   _|_|_|
+_|    _| _|_|_|_| _| _| _|    _|       _|      _|      _| _|    _| _|_|     _| _|    _|
+_|    _| _|       _| _| _|    _|         _|  _|  _|  _|   _|    _| _|       _| _|    _|
+_|    _|   _|_|_| _| _|   _|_|             _|      _|       _|_|   _|       _|   _|_|_|
+
+
 ```
 
 ###### Does it display the string in the right template as an ASCII art representation as above?
@@ -35,14 +35,14 @@ _|    _|   _|_|_| _| _|   _|_|             _|      _|       _|_|   _|       _|  
 ##### Try passing as arguments `"nice 2 meet you" thinkertoy`
 
 ```
-                                                                       
-                       --                       o                      
-     o                o  o                      |                      
-o-o     o-o o-o         /        o-O-o o-o o-o -o-       o  o o-o o  o 
-|  | | |    |-'        /         | | | |-' |-'  |        |  | | | |  | 
-o  o |  o-o o-o       o--o       o o o o-o o-o  o        o--O o-o o--o 
-                                                            |          
-                                                         o--o          
+
+                       --                       o
+     o                o  o                      |
+o-o     o-o o-o         /        o-O-o o-o o-o -o-       o  o o-o o  o
+|  | | |    |-'        /         | | | |-' |-'  |        |  | | | |  |
+o  o |  o-o o-o       o--o       o o o o-o o-o  o        o--O o-o o--o
+                                                            |
+                                                         o--o
 ```
 
 ###### Does it display the string in the right template as an ASCII art representation as above?
@@ -50,14 +50,14 @@ o  o |  o-o o-o       o--o       o o o o-o o-o  o        o--O o-o o--o
 ##### Try passing as arguments `"you & me" standard`
 
 ```
-                                                                
-                                ___                             
- _   _    ___    _   _         ( _ )          _ __ ___     ___  
-| | | |  / _ \  | | | |        / _ \/\       | '_ ` _ \   / _ \ 
-| |_| | | (_) | | |_| |       | (_>  <       | | | | | | |  __/ 
- \__, |  \___/   \__,_|        \___/\/       |_| |_| |_|  \___| 
- __/ /                                                          
-|___/                                                           
+
+                                ___
+ _   _    ___    _   _         ( _ )          _ __ ___     ___
+| | | |  / _ \  | | | |        / _ \/\       | '_ ` _ \   / _ \
+| |_| | | (_) | | |_| |       | (_>  <       | | | | | | |  __/
+ \__, |  \___/   \__,_|        \___/\/       |_| |_| |_|  \___|
+ __/ /
+|___/
 ```
 
 ###### Does it display the string in the right template as an ASCII art representation as above?
@@ -65,14 +65,14 @@ o  o |  o-o o-o       o--o       o o o o-o o-o  o        o--O o-o o--o
 ##### Try passing as arguments `"123" shadow`
 
 ```
-                       
-  _|   _|_|   _|_|_|   
-_|_| _|    _|       _| 
-  _|     _|     _|_|   
-  _|   _|           _| 
-  _| _|_|_|_| _|_|_|   
-                       
-                       
+
+  _|   _|_|   _|_|_|
+_|_| _|    _|       _|
+  _|     _|     _|_|
+  _|   _|           _|
+  _| _|_|_|_| _|_|_|
+
+
 ```
 
 ###### Does it display the string in the right template as an ASCII art representation as above?
@@ -80,14 +80,14 @@ _|_| _|    _|       _|
 ##### Try passing as arguments `/(\") thinkertoy`
 
 ```
-         o o    
-    o  / | | \  
-   /  o       o 
-  o   |       | 
- /    o       o 
-o      \     /  
-                
-                
+         o o
+    o  / | | \
+   /  o       o
+  o   |       |
+ /    o       o
+o      \     /
+
+
 ```
 
 ###### Does it display the string in the right template as an ASCII art representation as above?
@@ -95,14 +95,14 @@ o      \     /
 ##### Try passing as arguments `ABCDEFGHIJKLMNOPQRSTUVWXYZ shadow`
 
 ```
-                                                                                                                                                                                                                                                              
-  _|_|   _|_|_|     _|_|_| _|_|_|   _|_|_|_| _|_|_|_|   _|_|_| _|    _| _|_|_|       _| _|    _| _|       _|      _| _|      _|   _|_|   _|_|_|     _|_|     _|_|_|     _|_|_| _|_|_|_|_| _|    _| _|      _| _|          _| _|      _| _|      _| _|_|_|_|_| 
-_|    _| _|    _| _|       _|    _| _|       _|       _|       _|    _|   _|         _| _|  _|   _|       _|_|  _|_| _|_|    _| _|    _| _|    _| _|    _|   _|    _| _|           _|     _|    _| _|      _| _|          _|   _|  _|     _|  _|         _|   
-_|_|_|_| _|_|_|   _|       _|    _| _|_|_|   _|_|_|   _|  _|_| _|_|_|_|   _|         _| _|_|     _|       _|  _|  _| _|  _|  _| _|    _| _|_|_|   _|  _|_|   _|_|_|     _|_|       _|     _|    _| _|      _| _|    _|    _|     _|         _|         _|     
-_|    _| _|    _| _|       _|    _| _|       _|       _|    _| _|    _|   _|   _|    _| _|  _|   _|       _|      _| _|    _|_| _|    _| _|       _|    _|   _|    _|       _|     _|     _|    _|   _|  _|     _|  _|  _|     _|  _|       _|       _|       
-_|    _| _|_|_|     _|_|_| _|_|_|   _|_|_|_| _|         _|_|_| _|    _| _|_|_|   _|_|   _|    _| _|_|_|_| _|      _| _|      _|   _|_|   _|         _|_|  _| _|    _| _|_|_|       _|       _|_|       _|         _|  _|     _|      _|     _|     _|_|_|_|_| 
-                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                              
+
+  _|_|   _|_|_|     _|_|_| _|_|_|   _|_|_|_| _|_|_|_|   _|_|_| _|    _| _|_|_|       _| _|    _| _|       _|      _| _|      _|   _|_|   _|_|_|     _|_|     _|_|_|     _|_|_| _|_|_|_|_| _|    _| _|      _| _|          _| _|      _| _|      _| _|_|_|_|_|
+_|    _| _|    _| _|       _|    _| _|       _|       _|       _|    _|   _|         _| _|  _|   _|       _|_|  _|_| _|_|    _| _|    _| _|    _| _|    _|   _|    _| _|           _|     _|    _| _|      _| _|          _|   _|  _|     _|  _|         _|
+_|_|_|_| _|_|_|   _|       _|    _| _|_|_|   _|_|_|   _|  _|_| _|_|_|_|   _|         _| _|_|     _|       _|  _|  _| _|  _|  _| _|    _| _|_|_|   _|  _|_|   _|_|_|     _|_|       _|     _|    _| _|      _| _|    _|    _|     _|         _|         _|
+_|    _| _|    _| _|       _|    _| _|       _|       _|    _| _|    _|   _|   _|    _| _|  _|   _|       _|      _| _|    _|_| _|    _| _|       _|    _|   _|    _|       _|     _|     _|    _|   _|  _|     _|  _|  _|     _|  _|       _|       _|
+_|    _| _|_|_|     _|_|_| _|_|_|   _|_|_|_| _|         _|_|_| _|    _| _|_|_|   _|_|   _|    _| _|_|_|_| _|      _| _|      _|   _|_|   _|         _|_|  _| _|    _| _|_|_|       _|       _|_|       _|         _|  _|     _|      _|     _|     _|_|_|_|_|
+
+
 
 ```
 
@@ -111,14 +111,14 @@ _|    _| _|_|_|     _|_|_| _|_|_|   _|_|_|_| _|         _|_|_| _|    _| _|_|_|  
 ##### Try passing as arguments `\"#$%&/()*+,-./ thinkertoy`
 
 ```
-o o         | |                                                  
-| |  | |   -O-O-      O          o  / \  o | o                 o 
-    -O-O- o | |   o  /    o     /  o   o  \|/   |             /  
-     | |   -O-O-    /    /|    o   |   | --O-- -o-           o   
-    -O-O-   | | o  /  o o-O-  /    o   o  /|\   |    o-o    /    
-     | |   -O-O-  O       |  o      \ /  o | o     o     O o     
-            | |                                    |             
-                                                                 
+o o         | |
+| |  | |   -O-O-      O          o  / \  o | o                 o
+    -O-O- o | |   o  /    o     /  o   o  \|/   |             /
+     | |   -O-O-    /    /|    o   |   | --O-- -o-           o
+    -O-O-   | | o  /  o o-O-  /    o   o  /|\   |    o-o    /
+     | |   -O-O-  O       |  o      \ /  o | o     o     O o
+            | |                                    |
+
 ```
 
 ###### Does it display the string in the right template as an ASCII art representation as above?
@@ -126,14 +126,14 @@ o o         | |
 ##### Try passing as arguments `"It's Working" thinkertoy`
 
 ```
-          o                                              
-o-O-o  o  |           o       o         o                
-  |    |              |       |         | /  o           
-  |   -o-   o-o       o   o   o o-o o-o OO     o-o  o--o 
-  |    |     \         \ / \ /  | | |   | \  | |  | |  | 
-o-O-o  o    o-o         o   o   o-o o   o  o | o  o o--O 
-                                                       | 
-                                                    o--o 
+          o
+o-O-o  o  |           o       o         o
+  |    |              |       |         | /  o
+  |   -o-   o-o       o   o   o o-o o-o OO     o-o  o--o
+  |    |     \         \ / \ /  | | |   | \  | |  | |  |
+o-O-o  o    o-o         o   o   o-o o   o  o | o  o o--O
+                                                       |
+                                                    o--o
 ```
 
 ###### Does it display the string in the right template as an ASCII art representation as above?

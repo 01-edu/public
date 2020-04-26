@@ -1,53 +1,10 @@
 package main
 
 import (
-	"math/rand"
+	"./base"
 
 	"github.com/01-edu/z01"
 )
-
-//randomValidBase function is used to create the tests (input VALID bases here)
-func randomValidBase() string {
-	validBases := []string{
-		"01",
-		"CHOUMIisDAcat!",
-		"choumi",
-		"0123456789",
-		"abc", "Zone01",
-		"0123456789ABCDEF",
-		"WhoAmI?",
-	}
-	index := rand.Intn(len(validBases))
-	return validBases[index]
-}
-
-//randomInvalidBase function is used to create the tests (input INVALID bases here)
-func randomInvalidBase() string {
-	invalidBases := []string{
-		"0",
-		"1",
-		"CHOUMIisdacat!",
-		"choumiChoumi",
-		"01234567890",
-		"abca",
-		"Zone01Zone01",
-		"0123456789ABCDEF0",
-		"WhoAmI?IamWhoIam",
-	}
-	index := z01.RandIntBetween(0, len(invalidBases)-1)
-	return invalidBases[index]
-}
-
-//randomStringFromBase function is used to create the random STRING number from VALID BASES
-func randomStringFromBase(base string) string {
-	letters := []rune(base)
-	size := z01.RandIntBetween(1, 10)
-	r := make([]rune, size)
-	for i := range r {
-		r[i] = letters[rand.Intn(len(letters))]
-	}
-	return string(r)
-}
 
 // this is the function that creates the TESTS
 func main() {
@@ -60,16 +17,16 @@ func main() {
 
 	// 5 random pairs of string numbers with valid bases
 	for i := 0; i < 5; i++ {
-		validBaseToInput := randomValidBase()
+		validBaseToInput := base.Valid()
 		val := node{
-			s:    randomStringFromBase(validBaseToInput),
+			s:    base.StringFrom(validBaseToInput),
 			base: validBaseToInput,
 		}
 		table = append(table, val)
 	}
 	// 5 random pairs of string numbers with invalid bases
 	for i := 0; i < 5; i++ {
-		invalidBaseToInput := randomInvalidBase()
+		invalidBaseToInput := base.Invalid()
 		val := node{
 			s:    "thisinputshouldnotmatter",
 			base: invalidBaseToInput,
@@ -89,3 +46,5 @@ func main() {
 	z01.ChallengeMain("atoibaseprog")
 	z01.ChallengeMain("atoibaseprog", "125", "0123456789", "something")
 }
+
+// TODO: fix base exercises

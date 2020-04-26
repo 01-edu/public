@@ -25,7 +25,7 @@ func main() {
 		sep string
 	}
 	table := []node{}
-	//15 random slice of strings
+	// 15 random slice of strings
 
 	for i := 0; i < 15; i++ {
 		separator := separators[rand.Intn(len(separators))]

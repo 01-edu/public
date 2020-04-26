@@ -10,21 +10,23 @@ import (
 )
 
 func main() {
-	separators := []string{"!=HA=!",
+	separators := []string{
+		"!=HA=!",
 		"!==!",
 		"    ",
 		"|=choumi=|",
 		"|<=>|",
 		z01.RandStr(3, z01.RuneRange('A', 'Z')),
 		"<<==123==>>",
-		"[<>abc<>]"}
+		"[<>abc<>]",
+	}
 
 	type node struct {
 		str string
 		sep string
 	}
 	table := []node{}
-	//15 random slice of strings
+	// 15 random slice of strings
 
 	for i := 0; i < 15; i++ {
 		separator := separators[rand.Intn(len(separators))]

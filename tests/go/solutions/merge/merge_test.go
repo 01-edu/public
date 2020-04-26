@@ -3,10 +3,10 @@ package main
 import (
 	"math/rand"
 	"strconv"
-	"testing"
+
+	"github.com/01-edu/z01"
 
 	solutions "../../solutions"
-	"github.com/01-edu/z01"
 )
 
 type stuTreeNode = TreeNodeM
@@ -141,17 +141,17 @@ func returnStuTree(root *stuTreeNode) string {
 	return ans
 }
 
-func compareTrees(t *testing.T, stuResult *stuTreeNode, solResult, solTree1, solTree2 *solTreeNode) {
+func compareTrees(stuResult *stuTreeNode, solResult, solTree1, solTree2 *solTreeNode) {
 	if !compare(stuResult, solResult) {
 		tree1 := returnSolTree(solTree1)
 		tree2 := returnSolTree(solTree2)
 		stuTree := returnStuTree(stuResult)
 		solTree := returnSolTree(solResult)
-		t.Fatalf("\nMergeTrees(\"%v\", \"%v\") == \"%v\" instead of \"%v\"\n\n", tree1, tree2, stuTree, solTree)
+		z01.Fatalf("\nMergeTrees(\"%v\", \"%v\") == \"%v\" instead of \"%v\"\n\n", tree1, tree2, stuTree, solTree)
 	}
 }
 
-func TestMerge(t *testing.T) {
+func main() {
 	type node struct {
 		n int
 		k int
@@ -168,6 +168,6 @@ func TestMerge(t *testing.T) {
 		stuResult := MergeTrees(stuTree1, stuTree2)
 		solResult := solutions.MergeTrees(solTree1, solTree2)
 
-		compareTrees(t, stuResult, solResult, cop1, cop2)
+		compareTrees(stuResult, solResult, cop1, cop2)
 	}
 }

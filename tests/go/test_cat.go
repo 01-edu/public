@@ -1,55 +1,38 @@
-package student_test
+package main
 
 import (
-	"errors"
 	"io/ioutil"
-	"log"
 	"os"
 	"os/exec"
 	"strings"
-	"testing"
-
-	solutions "./solutions"
 
 	"github.com/01-edu/z01"
 )
 
-//executes commands
-func execC(name string, args ...string) (string, error) {
-	out, err := exec.Command(name, args...).Output()
-
-	output := string(out)
-	if err == nil {
-		return output, nil
-	}
-	if output == "" {
-		return "", z01.Wrap(err, "Command failed")
-	}
-	return "", errors.New(output)
-}
-
-func TestCat(t *testing.T) {
-	var table []string
-	pathFileName := "./student/cat/quest8.txt"
+func main() {
+	pathFileName1 := "./student/cat/quest8.txt"
 	pathFileName2 := "./student/cat/quest8T.txt"
 
-	solutions.CheckFile(t, pathFileName)
-	solutions.CheckFile(t, pathFileName2)
-
-	table = append(table, pathFileName, pathFileName+" "+pathFileName2, "asd")
+	if _, err := os.Stat(pathFileName1); err != nil {
+		z01.Fatalln(err)
+	}
+	if _, err := os.Stat(pathFileName2); err != nil {
+		z01.Fatalln(err)
+	}
+	table := []string{pathFileName1, pathFileName1 + " " + pathFileName2, "asd"}
 
 	for _, s := range table {
-		z01.ChallengeMain(t, strings.Fields(s)...)
+		z01.ChallengeMain("cat", strings.Fields(s)...)
 	}
-	_, err := execC("go", "build", "-o", "cat_student", "./student/cat/main.go")
-	_, err = execC("go", "build", "-o", "cat_solution", "./solutions/cat/main.go")
-	if err != nil {
-		log.Fatal(err.Error())
+	if _, err := exec.Command("go", "build", "-o", "cat_student", "./student/cat/main.go").Output(); err != nil {
+		z01.Fatal(string(err.(*exec.ExitError).Stderr))
+	}
+	if _, err := exec.Command("go", "build", "-o", "cat_solution", "./solutions/cat/main.go").Output(); err != nil {
+		z01.Fatal(string(err.(*exec.ExitError).Stderr))
 	}
 	pwd, err := os.Getwd()
-
 	if err != nil {
-		t.Fatalf(err)
+		z01.Fatalln(err)
 	}
 
 	for i := 0; i < 2; i++ {
@@ -60,33 +43,34 @@ func TestCat(t *testing.T) {
 		studentResult := execStdin(cmdS, randStdin)
 
 		if solutionResult != studentResult {
-			t.Fatalf("./cat prints %s instead of %s\n", studentResult, solutionResult)
+			z01.Fatalf("./cat prints %s instead of %s\n", studentResult, solutionResult)
 		}
 	}
-	execC("rm", "cat_student", "cat_solution")
 }
 
 func execStdin(cmd *exec.Cmd, randomStdin string) string {
 	stdin, err := cmd.StdinPipe()
 	if err != nil {
-		log.Fatal(err)
+		z01.Fatalln(err)
 	}
 	stdout, err := cmd.StdoutPipe()
 	if err != nil {
-		log.Fatal(err)
+		z01.Fatalln(err)
 	}
 	if err := cmd.Start(); err != nil {
-		log.Fatal(err)
+		z01.Fatalln(err)
 	}
 	_, err = stdin.Write([]byte(randomStdin))
 	if err != nil {
-		log.Fatal(err)
+		z01.Fatalln(err)
 	}
 	stdin.Close()
 
 	out, _ := ioutil.ReadAll(stdout)
 	if err := cmd.Wait(); err != nil {
-		log.Fatal(err)
+		z01.Fatalln(err)
 	}
 	return string(out)
 }
+
+// TODO: handle stdin in ChallengeMain

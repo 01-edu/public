@@ -3,6 +3,8 @@ package main
 import (
 	"github.com/01-edu/z01"
 
+	"./base"
+
 	solutions "./solutions"
 	student "./student"
 )
@@ -17,7 +19,7 @@ func main() {
 
 	// 15 random pairs of ints with valid bases
 	for i := 0; i < 15; i++ {
-		validBaseToInput := solutions.RandomValidBase()
+		validBaseToInput := base.Valid()
 		val := node{
 			n:    z01.RandIntBetween(-1000000, 1000000),
 			base: validBaseToInput,
@@ -27,7 +29,7 @@ func main() {
 
 	// 15 random pairs of ints with invalid bases
 	for i := 0; i < 15; i++ {
-		invalidBaseToInput := solutions.RandomInvalidBase()
+		invalidBaseToInput := base.Invalid()
 		val := node{
 			n:    z01.RandIntBetween(-1000000, 1000000),
 			base: invalidBaseToInput,
@@ -47,3 +49,5 @@ func main() {
 		z01.Challenge("PrintNbrBase", student.PrintNbrBase, solutions.PrintNbrBase, arg.n, arg.base)
 	}
 }
+
+// TODO: fix base exercises

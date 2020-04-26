@@ -9,72 +9,96 @@ import (
 	student "./student"
 )
 
+func isSortedBy1(a, b int) int {
+	if a-b < 0 {
+		return -1
+	}
+	if a-b > 0 {
+		return 1
+	}
+	return 0
+}
+
+func isSortedBy10(a, b int) int {
+	if a-b < 0 {
+		return -10
+	}
+	if a-b > 0 {
+		return 10
+	}
+	return 0
+}
+
+func isSortedByDiff(a, b int) int {
+	return a - b
+}
+
 func main() {
-	functionsArray := []func(int, int) int{solutions.IsSortedByDiff, solutions.IsSortedBy1, solutions.IsSortedBy10}
+	functions := []func(int, int) int{isSortedByDiff, isSortedBy1, isSortedBy10}
 
 	type node struct {
-		f   func(int, int) int
-		arr []int
+		f func(int, int) int
+		a []int
 	}
 
 	table := []node{}
 
-	//5 unordered slices
+	// 5 unordered slices
 	for i := 0; i < 5; i++ {
-		functionSelected := functionsArray[z01.RandIntBetween(0, len(functionsArray)-1)]
+		functionSelected := functions[z01.RandIntBetween(0, len(functions)-1)]
 		val := node{
-			f:   functionSelected,
-			arr: z01.MultRandIntBetween(-1000000, 1000000),
+			f: functionSelected,
+			a: z01.MultRandIntBetween(-1000000, 1000000),
 		}
 		table = append(table, val)
 	}
 
-	//5 slices ordered in ascending order
+	// 5 slices ordered in ascending order
 	for i := 0; i < 5; i++ {
-		functionSelected := functionsArray[z01.RandIntBetween(0, len(functionsArray)-1)]
-		orderedArr := z01.MultRandIntBetween(-1000000, 1000000)
-		sort.Ints(orderedArr)
+		functionSelected := functions[z01.RandIntBetween(0, len(functions)-1)]
+		ordered := z01.MultRandIntBetween(-1000000, 1000000)
+		sort.Ints(ordered)
 
 		val := node{
-			f:   functionSelected,
-			arr: orderedArr,
+			f: functionSelected,
+			a: ordered,
 		}
 		table = append(table, val)
 	}
 
-	//5 slices ordered in descending order
+	// 5 slices ordered in descending order
 	for i := 0; i < 5; i++ {
-		functionSelected := functionsArray[z01.RandIntBetween(0, len(functionsArray)-1)]
-		reverseArr := z01.MultRandIntBetween(-1000000, 1000000)
-		sort.Sort(sort.Reverse(sort.IntSlice(reverseArr)))
+		functionSelected := functions[z01.RandIntBetween(0, len(functions)-1)]
+		reversed := z01.MultRandIntBetween(-1000000, 1000000)
+		sort.Sort(sort.Reverse(sort.IntSlice(reversed)))
 		val := node{
-			f:   functionSelected,
-			arr: reverseArr,
+			f: functionSelected,
+			a: reversed,
 		}
 		table = append(table, val)
 	}
 
 	table = append(table, node{
-		f:   solutions.IsSortedByDiff,
-		arr: []int{1, 2, 3, 4, 5, 6},
+		f: solutions.IsSortedByDiff,
+		a: []int{1, 2, 3, 4, 5, 6},
 	})
 
 	table = append(table, node{
-		f:   solutions.IsSortedByDiff,
-		arr: []int{6, 5, 4, 3, 2, 1},
+		f: solutions.IsSortedByDiff,
+		a: []int{6, 5, 4, 3, 2, 1},
 	})
 
 	table = append(table, node{
-		f:   solutions.IsSortedByDiff,
-		arr: []int{0, 0, 0, 0, 0, 0, 0},
+		f: solutions.IsSortedByDiff,
+		a: []int{0, 0, 0, 0, 0, 0, 0},
 	})
 
 	table = append(table, node{
-		f:   solutions.IsSortedByDiff,
-		arr: []int{0},
+		f: solutions.IsSortedByDiff,
+		a: []int{0},
 	})
 
 	for _, arg := range table {
-		z01.Challenge("IsSorted", student.IsSorted, solutions.IsSorted, arg.f, arg.arr)
+		z01.Challenge("IsSorted", student.IsSorted, solutions.IsSorted, arg.f, arg.a)
 	}
 }

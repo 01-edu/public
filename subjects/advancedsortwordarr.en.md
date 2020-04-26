@@ -2,12 +2,12 @@
 
 ### Instructions
 
-Write a function `AdvancedSortWordArr` that sorts a `string` array, based on the function `f` passed in parameter.
+Write a function `AdvancedSortWordArr` that sorts a slice of `string`, based on the function `f` passed in parameter.
 
 ### Expected function
 
 ```go
-func AdvancedSortWordArr(array []string, f func(a, b string) int) {
+func AdvancedSortWordArr(a []string, f func(a, b string) int) {
 
 }
 ```

@@ -1,6 +1,8 @@
 package solutions
 
 import (
+	"unicode"
+
 	"github.com/01-edu/z01"
 )
 
@@ -32,21 +34,12 @@ func printBase(nbr int) int {
 	return a
 }
 
-func printascii(a int) {
-	if a > 31 && a < 127 {
-		z01.PrintRune(rune(a))
-	} else {
-		z01.PrintRune('.')
-	}
-}
+func printLine(arr [10]int, start int) {
+	size := len(arr)
+	a := start
+	var aux, b int
 
-func printLine(arr [10]int, start int, max int) {
-	a := 0
-	a = start
-	aux := 0
-	var b int
-
-	for a < start+16 && a < max {
+	for a < start+16 && a < size {
 		if a%4 == 0 && a != 0 {
 			z01.PrintRune('\n')
 		}
@@ -69,8 +62,12 @@ func printLine(arr [10]int, start int, max int) {
 	}
 	z01.PrintRune('\n')
 	c := start
-	for c < start+16 && c < max {
-		printascii(arr[c])
+	for c < start+16 && c < size {
+		if unicode.IsPrint() {
+			z01.PrintRune(rune(arr[c]))
+		} else {
+			z01.PrintRune('.')
+		}
 		c++
 	}
 	z01.PrintRune('\n')
@@ -78,9 +75,8 @@ func printLine(arr [10]int, start int, max int) {
 
 func PrintMemory(arr [10]int) {
 	i := 0
-	size := len(arr)
-	for i < size {
-		printLine(arr, i, size)
+	for i < len(arr) {
+		printLine(arr, i)
 		i += 16
 	}
 }

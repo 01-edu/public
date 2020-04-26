@@ -1,8 +1,7 @@
-package student_test
+package main
 
 import (
 	"reflect"
-	"testing"
 
 	"github.com/01-edu/z01"
 
@@ -10,21 +9,21 @@ import (
 	student "./student"
 )
 
-func TestSortIntegerTable(t *testing.T) {
+func main() {
 	i := 0
 	for i < z01.SliceLen {
-		table := z01.MultRandIntBetween(-100, 100)
+		table1 := z01.MultRandIntBetween(-100, 100)
 
-		tableCopyBefore := make([]int, len(table))
-		copy(tableCopyBefore, table)
+		tableCopyBefore := make([]int, len(table1))
+		copy(tableCopyBefore, table1)
 
-		table2 := make([]int, len(table))
-		copy(table2, table)
+		table2 := make([]int, len(table1))
+		copy(table2, table1)
 
-		student.SortIntegerTable(table)
+		student.SortIntegerTable(table1)
 		solutions.SortIntegerTable(table2)
-		if !reflect.DeepEqual(table, table2) {
-			t.Fatalf("SortIntegerTable(%v), table == %v instead of %v ", tableCopyBefore, table, table2)
+		if !reflect.DeepEqual(table1, table2) {
+			z01.Fatalf("SortIntegerTable(%v), table1 == %v instead of %v ", tableCopyBefore, table1, table2)
 		}
 		i++
 	}

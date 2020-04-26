@@ -13,11 +13,9 @@ Create a `.go` file.
 ### Code to be copied
 
 ```go
-func printStr(str string) {
-	arrayStr := []rune(str)
-
-	for i := 0; i < len(arrayStr); i++ {
-		z01.PrintRune(arrayStr[i])
+func printStr(s string) {
+	for _, r := range s {
+		z01.PrintRune(r)
 	}
 	z01.PrintRune('\n')
 }

@@ -14,7 +14,8 @@ func isPrime(nb int) bool {
 	}
 	if nb <= 3 {
 		return true
-	} else if nb%2 == 0 || nb%3 == 0 {
+	}
+	if nb%2 == 0 || nb%3 == 0 {
 		return false
 	}
 
@@ -23,7 +24,7 @@ func isPrime(nb int) bool {
 		if nb%i == 0 || nb%(i+2) == 0 {
 			return false
 		}
-		i = i + 6
+		i += 6
 	}
 	return true
 }
@@ -41,10 +42,9 @@ func main() {
 		} else {
 			result := 0
 			for ; argument >= 0; argument-- {
-				if isPrime(argument) == true {
-					result = result + argument
+				if isPrime(argument) {
+					result += argument
 				}
-
 			}
 			fmt.Println(result)
 		}

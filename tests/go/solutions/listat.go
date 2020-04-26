@@ -1,6 +1,6 @@
 package solutions
 
-//returs the node in a given position
+// returs the node in a given position
 func ListAt(l *NodeL, nbr int) *NodeL {
 	index := 0
 	count := 0

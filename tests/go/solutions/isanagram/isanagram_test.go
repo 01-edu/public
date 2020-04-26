@@ -3,46 +3,36 @@ package main
 import (
 	"github.com/01-edu/z01"
 
-	solutions "../../solutions" // This line is not necessary when testing an exercise with a program
+	solutions "../../solutions"
 )
 
 func main() {
-	type node struct {
-		s string
-		t string
+	table := [][2]string{
+		{"listen", "silent"},
+		{"alem", "school"},
+		{"neat", "a net"},
+		{"anna madrigal", "a man and a girl"},
+		{"abcc", "abcd"},
+		{"aaaac", "caaaa"},
+		{"", ""},
+		{"       ", ""},
+		{"lyam", "meow"},
+		{"golang", "lang go"},
+		{"verylongword", "v e r y l o n g w o r d"},
+		{"chess", "ches"},
+		{"anagram", "nnagram"},
+		{"chess", "board"},
+		{"mmm", "m"},
+		{"pulp", "fiction"},
 	}
-
-	table := []node{}
-
-	table = append(table,
-		node{"listen", "silent"},
-		node{"alem", "school"},
-		node{"neat", "a net"},
-		node{"anna madrigal", "a man and a girl"},
-		node{"abcc", "abcd"},
-		node{"aaaac", "caaaa"},
-		node{"", ""},
-		node{"       ", ""},
-		node{"lyam", "meow"},
-		node{"golang", "lang go"},
-		node{"verylongword", "v e r y l o n g w o r d"},
-		node{"chess", "ches"},
-		node{"anagram", "nnagram"},
-		node{"chess", "board"},
-		node{"mmm", "m"},
-		node{"pulp", "fiction"},
-	)
-
 	for i := 0; i < 15; i++ {
-		value := node{
-			s: z01.RandStr(z01.RandIntBetween(15, 20), "qwertyuiopasdfghjklzxcvbnm "),
-			t: z01.RandStr(z01.RandIntBetween(15, 20), "qwertyuiopasdfghjklzxcvbnm "),
-		}
-
-		table = append(table, value)
+		table = append(table, [2]string{
+			z01.RandStr(z01.RandIntBetween(15, 20), "qwertyuiopasdfghjklzxcvbnm "),
+			z01.RandStr(z01.RandIntBetween(15, 20), "qwertyuiopasdfghjklzxcvbnm "),
+		})
 	}
 
 	for _, arg := range table {
-		z01.Challenge("IsAnagram", IsAnagram, solutions.IsAnagram, arg.s, arg.t)
+		z01.Challenge("IsAnagram", IsAnagram, solutions.IsAnagram, arg[0], arg[1])
 	}
 }

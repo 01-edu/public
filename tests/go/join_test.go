@@ -1,23 +1,25 @@
 package main
 
 import (
+	"github.com/01-edu/z01"
+
 	solutions "./solutions"
 	student "./student"
-	"github.com/01-edu/z01"
 )
 
 func main() {
-	arg1 := []string{"hello", "how", "are", "you", "doing"}
-	arg2 := []string{"fine", "and", "you"}
-	arg3 := []string{"I'm", "O.K."}
 	seps := []string{" ", "-", " ,", "_", "SPC", " . "}
 
-	args := [][]string{arg1, arg2, arg3}
+	args := [][]string{
+		{"hello", "how", "are", "you", "doing"},
+		{"fine", "and", "you"},
+		{"I'm", "O.K."},
+	}
 
 	for i := 0; i < 5; i++ {
-		//random position for the array of arguments
+		// random position for the slice of arguments
 		posA := z01.RandIntBetween(0, len(args)-1)
-		//random position for the array of separators
+		// random position for the slice of separators
 		posS := z01.RandIntBetween(0, len(seps)-1)
 
 		z01.Challenge("Join", student.Join, solutions.Join, args[posA], seps[posS])

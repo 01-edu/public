@@ -1,17 +1,16 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	student "./student"
+	"github.com/01-edu/z01"
 )
 
-func TestUltimatePointOne(t *testing.T) {
+func main() {
 	a := 0
 	b := &a
 	n := &b
 	student.UltimatePointOne(&n)
 	if a != 1 {
-		t.Fatalf("UltimatePointOne(&n), a == %d instead of 1", a)
+		z01.Fatalf("UltimatePointOne(&n), a == %d instead of 1", a)
 	}
 }

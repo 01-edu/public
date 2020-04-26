@@ -1,9 +1,7 @@
 package solutions
 
-import (
-	"strings"
-)
+import "strings"
 
-func Compare(s string, toCompare string) int {
-	return strings.Compare(s, toCompare)
+func Compare(a, b string) int {
+	return strings.Compare(a, b)
 }

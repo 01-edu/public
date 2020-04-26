@@ -1,9 +1,10 @@
 package main
 
 import (
+	"github.com/01-edu/z01"
+
 	solutions "./solutions"
 	student "./student"
-	"github.com/01-edu/z01"
 )
 
 func main() {
@@ -23,8 +24,8 @@ func main() {
 		z01.RandIntBetween(1, 20), z01.RandIntBetween(1, 20),
 	)
 
-	//Tests all possibilities including 0 0, -x y, x -y
-	for i := 0; i < len(table); i = i + 2 {
+	// Tests all possibilities including 0 0, -x y, x -y
+	for i := 0; i < len(table); i += 2 {
 		if i != len(table)-1 {
 			z01.Challenge("Raid1e", solutions.Raid1e, student.Raid1e, table[i], table[i+1])
 		}

@@ -1,12 +1,12 @@
-package student_test
+package main
 
 import (
 	"strconv"
-	"testing"
+
+	"github.com/01-edu/z01"
 
 	solution "./solutions"
 	student "./student"
-	"github.com/01-edu/z01"
 )
 
 type Node8 = student.NodeL
@@ -56,53 +56,51 @@ func listToStringStu7(l *ListS8) string {
 	return res
 }
 
-func listPushBackTest8(l *ListS8, l1 *List8, data interface{}) {
-	n := &Node8{Data: data}
-	n1 := &NodeS8{Data: data}
-
-	if l.Head == nil {
-		l.Head = n
-	} else {
-		iterator := l.Head
-		for iterator.Next != nil {
-			iterator = iterator.Next
-		}
-		iterator.Next = n
-	}
+func listPushBackTest8(l1 *ListS8, l2 *List8, data interface{}) {
+	n1 := &Node8{Data: data}
+	n2 := &NodeS8{Data: data}
 
 	if l1.Head == nil {
 		l1.Head = n1
 	} else {
-		iterator1 := l1.Head
+		iterator := l1.Head
+		for iterator.Next != nil {
+			iterator = iterator.Next
+		}
+		iterator.Next = n1
+	}
+
+	if l2.Head == nil {
+		l2.Head = n2
+	} else {
+		iterator1 := l2.Head
 		for iterator1.Next != nil {
 			iterator1 = iterator1.Next
 		}
-		iterator1.Next = n1
+		iterator1.Next = n2
 	}
 }
 
-func comparFuncList8(l *List8, l1 *ListS8, t *testing.T, f func(*Node8) bool, comp func(*Node8)) {
+func comparFuncList8(l1 *List8, l2 *ListS8, f func(*Node8) bool, comp func(*Node8)) {
 	funcFName := solution.GetName(f)
 	funcComp := solution.GetName(comp)
-	for l.Head != nil || l1.Head != nil {
-		if (l.Head == nil && l1.Head != nil) || (l.Head != nil && l1.Head == nil) {
-			t.Fatalf("\nstudent list:%s\nlist:%s\nfunction f used: %s\nfunction comp: %s\n\nListForEachIf() == %v instead of %v\n\n",
-				listToStringStu7(l1), solution.ListToString(l.Head), funcComp, funcFName, l1.Head, l.Head)
-			return
-		} else if l.Head.Data != l1.Head.Data {
-			t.Fatalf("\nstudent list:%s\nlist:%s\nfunction f used: %s\nfunction comp: %s\n\nListForEachIf() == %v instead of %v\n\n",
-				listToStringStu7(l1), solution.ListToString(l.Head), funcComp, funcFName, l1.Head.Data, l.Head.Data)
-			return
+	for l1.Head != nil || l2.Head != nil {
+		if (l1.Head == nil && l2.Head != nil) || (l1.Head != nil && l2.Head == nil) {
+			z01.Fatalf("\nstudent list:%s\nlist:%s\nfunction f used: %s\nfunction comp: %s\n\nListForEachIf() == %v instead of %v\n\n",
+				listToStringStu7(l2), solution.ListToString(l1.Head), funcComp, funcFName, l2.Head, l1.Head)
 		}
-		l.Head = l.Head.Next
+		if l1.Head.Data != l2.Head.Data {
+			z01.Fatalf("\nstudent list:%s\nlist:%s\nfunction f used: %s\nfunction comp: %s\n\nListForEachIf() == %v instead of %v\n\n",
+				listToStringStu7(l2), solution.ListToString(l1.Head), funcComp, funcFName, l2.Head.Data, l1.Head.Data)
+		}
 		l1.Head = l1.Head.Next
+		l2.Head = l2.Head.Next
 	}
 }
 
-// exercise 10
 // applies a function to an element of the linked solution.ListS
-func TestListForEachIf(t *testing.T) {
-	link := &ListS8{}
+func main() {
+	link1 := &ListS8{}
 	link2 := &List8{}
 
 	table := []solution.NodeTest{}
@@ -133,17 +131,17 @@ func TestListForEachIf(t *testing.T) {
 	)
 	for _, arg := range table {
 		for i := 0; i < len(arg.Data); i++ {
-			listPushBackTest8(link, link2, arg.Data[i])
+			listPushBackTest8(link1, link2, arg.Data[i])
 		}
 		solution.ListForEachIf(link2, addOneS, solution.IsPositive_node)
-		student.ListForEachIf(link, addOne, student.IsPositive_node)
-		comparFuncList8(link2, link, t, student.IsPositive_node, addOne)
+		student.ListForEachIf(link1, addOne, student.IsPositive_node)
+		comparFuncList8(link2, link1, student.IsPositive_node, addOne)
 
 		solution.ListForEachIf(link2, subtract1_sol, solution.IsPositive_node)
-		student.ListForEachIf(link, subtractOne, student.IsPositive_node)
-		comparFuncList8(link2, link, t, student.IsPositive_node, subtractOne)
+		student.ListForEachIf(link1, subtractOne, student.IsPositive_node)
+		comparFuncList8(link2, link1, student.IsPositive_node, subtractOne)
 
-		link = &ListS8{}
+		link1 = &ListS8{}
 		link2 = &List8{}
 	}
 }

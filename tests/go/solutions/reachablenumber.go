@@ -1,6 +1,6 @@
 package solutions
 
-func Reachablenumber(n int) int {
+func ReachableNumber(n int) int {
 	cnt := 0
 	for n > 0 {
 		cnt++

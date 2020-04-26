@@ -4,49 +4,25 @@ import (
 	"fmt"
 	"os"
 	"strings"
+	"unicode"
 )
 
-func main() {
-	//brackets("al|b", "ale atg bar sim nao pro par impar") In JS it's used without brackets
-	if len(os.Args) == 3 {
-		brackets(os.Args[1], os.Args[2])
-	} else {
-		fmt.Println()
-	}
-}
+func singleSearch(exp []string, text string) []string {
+	items := strings.Split(text, " ")
+	var result []string
 
-func brackets(regexp, text string) {
-	if len(text) == 0 || len(regexp) == 0 {
-		fmt.Println()
-		return
-	}
-	reArr := []rune(regexp)
-
-	if len(reArr) != 0 && reArr[0] == '(' && reArr[len(reArr)-1] == ')' {
-		reArr = reArr[1 : len(reArr)-1]
-		result := simpleSearch(reArr, text)
-		for i, results := range result {
-			if !isAlphaNum(results[len(results)-1]) {
-				results = results[:len(results)-1]
+	for _, item := range items {
+		for _, word := range exp {
+			if strings.Contains(item, word) {
+				result = append(result, item)
 			}
-			if !isAlphaNum(results[0]) {
-				results = results[1:]
-			}
-			fmt.Printf("%d: %s\n", i+1, results)
 		}
-	} else {
-		fmt.Println()
 	}
+	return result
 }
 
-func isAlphaNum(r byte) bool {
-	return (r >= 'a' && r <= 'z') ||
-		(r >= 'A' && r <= 'Z') ||
-		(r >= '0' && r <= '9')
-}
-
-func simpleSearch(reArr []rune, text string) []string {
-	exp := string(reArr)
+func simpleSearch(runes []rune, text string) []string {
+	exp := string(runes)
 
 	var result []string
 	if !(strings.ContainsRune(exp, '|')) {
@@ -59,16 +35,30 @@ func simpleSearch(reArr []rune, text string) []string {
 	return result
 }
 
-func singleSearch(exp []string, text string) []string {
-	tArr := strings.Split(text, " ")
-	var result []string
+func brackets(regexp, text string) {
+	if text == "" || regexp == "" {
+		return
+	}
+	runes := []rune(regexp)
 
-	for _, elem := range tArr {
-		for _, word := range exp {
-			if strings.Contains(elem, word) {
-				result = append(result, elem)
+	if runes[0] == '(' && runes[len(runes)-1] == ')' {
+		runes = runes[1 : len(runes)-1]
+		result := simpleSearch(runes, text)
+		for i, s := range result {
+			if !unicode.Is(unicode.Hex_Digit, s[len(s)-1]) {
+				s = s[:len(s)-1]
 			}
+			if !unicode.Is(unicode.Hex_Digit, s[0]) {
+				s = s[1:]
+			}
+			fmt.Printf("%d: %s\n", i+1, s)
 		}
 	}
-	return result
+}
+
+func main() {
+	// brackets("al|b", "ale atg bar sim nao pro par impar") In JS it's used without brackets
+	if len(os.Args) == 3 {
+		brackets(os.Args[1], os.Args[2])
+	}
 }

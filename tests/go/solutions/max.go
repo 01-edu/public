@@ -1,10 +1,11 @@
 package solutions
 
-import (
-	"sort"
-)
+import "sort"
 
-func Max(arr []int) int {
-	sort.Sort(sort.IntSlice(arr))
-	return arr[len(arr)-1]
+func Max(a []int) int {
+	if len(a) == 0 {
+		return 0
+	}
+	sort.Ints(a)
+	return a[len(a)-1]
 }

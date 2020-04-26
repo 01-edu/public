@@ -1,16 +1,5 @@
 ## game23
 
-## **WARNING! VERY IMPORTANT!**
-
-For this exercise a function will be tested **with the exam own main**. However the student **still needs** to submit a structured program:
-
-This means that:
-
-- The package needs to be named `package main`.
-- The submitted code needs one declared function main(`func main()`) even if empty.
-- The function main declared needs to **also pass** the `Restrictions Checker`(illegal functions tester). It is advised for the student to just empty the function main after its own testings are done.
-- Every other rules are obviously the same than for a `program`.
-
 ### Instructions
 
 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
@@ -35,9 +24,7 @@ Here is a possible program to test your function :
 ```go
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
 	fmt.Println(Game23(1, 3))

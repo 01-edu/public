@@ -1,8 +1,9 @@
-package student_test
+package main
 
 import (
 	"strconv"
-	"testing"
+
+	"github.com/01-edu/z01"
 
 	solution "./solutions"
 	student "./student"
@@ -29,22 +30,22 @@ func listToStringStu5(l *ListS4) string {
 	return res
 }
 
-func listPushBackTest4(l *ListS4, l1 *List4, data interface{}) {
+func listPushBackTest4(l1 *ListS4, l2 *List4, data interface{}) {
 	n := &Node4{Data: data}
 	n1 := &NodeS4{Data: data}
-	if l.Head == nil {
-		l.Head = n
+	if l1.Head == nil {
+		l1.Head = n
 	} else {
-		iterator := l.Head
+		iterator := l1.Head
 		for iterator.Next != nil {
 			iterator = iterator.Next
 		}
 		iterator.Next = n
 	}
-	if l1.Head == nil {
-		l1.Head = n1
+	if l2.Head == nil {
+		l2.Head = n1
 	} else {
-		iterator1 := l1.Head
+		iterator1 := l2.Head
 		for iterator1.Next != nil {
 			iterator1 = iterator1.Next
 		}
@@ -52,10 +53,9 @@ func listPushBackTest4(l *ListS4, l1 *List4, data interface{}) {
 	}
 }
 
-//exercise 6
-//simply cleans the linked solution.ListS
-func TestListClear(t *testing.T) {
-	link := &List4{}
+// simply cleans the linked solution.ListS
+func main() {
+	link1 := &List4{}
 	link2 := &ListS4{}
 
 	table := []solution.NodeTest{}
@@ -70,14 +70,14 @@ func TestListClear(t *testing.T) {
 
 	for _, arg := range table {
 		for i := 0; i < len(arg.Data); i++ {
-			listPushBackTest4(link2, link, arg.Data[i])
+			listPushBackTest4(link2, link1, arg.Data[i])
 		}
-		solution.ListClear(link)
+		solution.ListClear(link1)
 		student.ListClear(link2)
 
 		if link2.Head != nil {
-			t.Fatalf("\nstudent list:%s\nlist:%s\n\nListClear() == %v instead of %v\n\n",
-				listToStringStu5(link2), solution.ListToString(link.Head), link2.Head, link.Head)
+			z01.Fatalf("\nstudent list:%s\nlist:%s\n\nListClear() == %v instead of %v\n\n",
+				listToStringStu5(link2), solution.ListToString(link1.Head), link2.Head, link1.Head)
 		}
 	}
 }

@@ -1,6 +1,6 @@
 package solutions
 
-//inserts node on the first position of the list
+// inserts node on the first position of the list
 func ListPushFront(l *List, data interface{}) {
 	n := &NodeL{Data: data}
 

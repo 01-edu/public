@@ -8,13 +8,9 @@ import (
 
 func main() {
 	if len(os.Args) == 2 {
-		words := strings.Split(os.Args[1], " ")
-		for i := len(words) - 1; i >= 0; i-- {
-			if words[i] != "" {
-				fmt.Println(words[i])
-				return
-			}
+		words := strings.Fields(os.Args[1])
+		if len(words) > 0 {
+			fmt.Println(words[len(words)-1])
 		}
 	}
-	fmt.Println()
 }

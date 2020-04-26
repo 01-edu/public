@@ -11,7 +11,7 @@ student@ubuntu:~/[[ROOT]]/printprogramname$ go build main.go
 student@ubuntu:~/[[ROOT]]/printprogramname$ ./main
 main
 student@ubuntu:~/[[ROOT]]/printprogramname$ go build
-student@ubuntu:~/[[ROOT]]/printprogramname$ ./printprogramname
-printprogramname
+student@ubuntu:~/[[ROOT]]/printprogramname$ ./printprogramname | cat -e
+printprogramname$
 student@ubuntu:~/[[ROOT]]/printprogramname$
 ```

@@ -1,11 +1,9 @@
 package main
 
-import (
-	"sort"
-)
+import "sort"
 
-func SortWordArr(array []string) {
-	sort.Sort(sort.StringSlice(array))
+func SortWordArr(a []string) {
+	sort.Strings(a)
 }
 
 func main() {

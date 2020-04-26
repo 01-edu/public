@@ -1,14 +1,12 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	student "./student"
 )
 
-func TestDivMod(t *testing.T) {
+func main() {
 	i := 0
 	for i < z01.SliceLen {
 		a := z01.RandInt()
@@ -17,10 +15,10 @@ func TestDivMod(t *testing.T) {
 		var mod int
 		student.DivMod(a, b, &div, &mod)
 		if div != a/b {
-			t.Fatalf("DivMod(%d, %d, &div, &mod), div == %d instead of %d", a, b, div, a/b)
+			z01.Fatalf("DivMod(%d, %d, &div, &mod), div == %d instead of %d", a, b, div, a/b)
 		}
 		if mod != a%b {
-			t.Fatalf("DivMod(%d, %d, &div, &mod), mod == %d instead of %d", a, b, mod, a%b)
+			z01.Fatalf("DivMod(%d, %d, &div, &mod), mod == %d instead of %d", a, b, mod, a%b)
 		}
 		i++
 	}

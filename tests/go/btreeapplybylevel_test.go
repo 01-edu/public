@@ -1,14 +1,13 @@
-package student_test
+package main
 
 import (
 	"fmt"
-	"testing"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestBTreeApplyByLevel(t *testing.T) {
+func main() {
 	root := &solutions.TreeNode{Data: "04"}
 	rootS := &student.TreeNode{Data: "04"}
 
@@ -19,5 +18,5 @@ func TestBTreeApplyByLevel(t *testing.T) {
 		rootS = student.BTreeInsertData(rootS, v)
 	}
 
-	solutions.ChallengeTree(t, solutions.BTreeApplyByLevel, student.BTreeApplyByLevel, root, rootS, fmt.Print)
+	solutions.ChallengeTree("BTreeApplyByLevel", solutions.BTreeApplyByLevel, student.BTreeApplyByLevel, root, rootS, fmt.Print)
 }

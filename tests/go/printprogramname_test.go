@@ -1,19 +1,31 @@
-package student_test
+package main
 
 import (
-	"bytes"
+	"os"
 	"os/exec"
-	"testing"
+
+	"github.com/01-edu/z01"
 )
 
-func TestPrintProgramName(t *testing.T) {
-	b, err := exec.Command("go", "run", "./student/printprogramname").Output()
+var name = "student"
+
+func test(newName string) {
+	if err := os.Rename(name, newName); err != nil {
+		z01.Fatalln(err)
+	}
+	b, err := exec.Command("./" + name).CombinedOutput()
 	if err != nil {
-		t.Fatal(err)
+		z01.Fatalln(b)
 	}
-	if string(bytes.TrimSpace(b)) != "printprogramname" {
-		t.Fatal("Failed to print the program name")
+	if string(b) != name+"\n" {
+		z01.Fatalln("Failed to print the program name")
 	}
+	name = newName
 }
 
-// TODO: add more test cases (different program names), to do so compile then rename and test the binary several times
+func main() {
+	test("student")
+	test("choumi")
+	test("🤦🏻‍♀️")
+	test("€")
+}

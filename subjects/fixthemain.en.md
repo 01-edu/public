@@ -10,9 +10,8 @@ Fix the following program.
 package piscine
 
 func PrintStr(str string) {
-	arrayRune := []rune(str)
-	for _, s := range arrayRune {
-		z01.PrintRune(s)
+	for _, r := range str {
+		z01.PrintRune(r)
 	}
 }
 

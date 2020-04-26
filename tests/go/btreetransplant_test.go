@@ -1,8 +1,6 @@
-package student_test
+package main
 
 import (
-	"testing"
-
 	"github.com/01-edu/z01"
 
 	"fmt"
@@ -83,9 +81,9 @@ func formatSubTree_transp(root *student.TreeNode, prefix string) string {
 	return res
 }
 
-func errorMessage_transp(t *testing.T, fn interface{}, root, sel, repl *solutions.TreeNode, rootA *solutions.TreeNode, rootAS *student.TreeNode) {
-	t.Fatalf("%s(\nRoot:\n %s, Selected:\n%s, Replacement:\n%s\n) ==\n%s instead of\n%s\n",
-		z01.NameOfFunc(fn),
+func errorMessage_transp(fn interface{}, root, sel, repl *solutions.TreeNode, rootA *solutions.TreeNode, rootAS *student.TreeNode) {
+	z01.Fatalf("%s(\nRoot:\n %s, Selected:\n%s, Replacement:\n%s\n) ==\n%s instead of\n%s\n",
+		"BTreeTransplant",
 		solutions.FormatTree(root),
 		solutions.FormatTree(sel),
 		solutions.FormatTree(repl),
@@ -94,23 +92,23 @@ func errorMessage_transp(t *testing.T, fn interface{}, root, sel, repl *solution
 	)
 }
 
-func CompareTrees_transp(t *testing.T, fn interface{}, root, sel, repl *solutions.TreeNode, rootA *solutions.TreeNode, rootAS *student.TreeNode) {
+func CompareTrees_transp(fn interface{}, root, sel, repl *solutions.TreeNode, rootA *solutions.TreeNode, rootAS *student.TreeNode) {
 	solTree := solutions.FormatTree(rootA)
 	stuTree := FormatTree_transp(rootAS)
 
 	if solTree != stuTree {
-		errorMessage_transp(t, fn, root, sel, repl, rootA, rootAS)
+		errorMessage_transp(fn, root, sel, repl, rootA, rootAS)
 	}
 	parentSol := solutions.ParentList(rootA)
 	parentStu := parentListTransp(rootAS)
 
 	if parentSol != parentStu {
 		fmt.Println("Tree:\n", solTree)
-		t.Fatalf("Expected\n%s instead of\n%s\n", parentSol, parentStu)
+		z01.Fatalf("Expected\n%s instead of\n%s\n", parentSol, parentStu)
 	}
 }
 
-func TestBTreeTransplant(t *testing.T) {
+func main() {
 	root := &solutions.TreeNode{Data: "04"}
 	rootS := &student.TreeNode{Data: "04"}
 	rootOr := &solutions.TreeNode{Data: "04"}
@@ -139,5 +137,5 @@ func TestBTreeTransplant(t *testing.T) {
 	rootS = student.BTreeTransplant(rootS, selectedS, replacementS)
 	fn := interface{}(solutions.BTreeTransplant)
 
-	CompareTrees_transp(t, fn, rootOr, selected, replacement, root, rootS)
+	CompareTrees_transp(fn, rootOr, selected, replacement, root, rootS)
 }

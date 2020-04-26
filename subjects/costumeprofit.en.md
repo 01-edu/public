@@ -19,6 +19,6 @@ In the output put '\n' at the end.
 Input: `./main **a** **b** **c** **d** **e** **f**`
 
 ```console
-$> ./main 12 11 13 20 4 6
+$ ./main 12 11 13 20 4 6
 102
 ```

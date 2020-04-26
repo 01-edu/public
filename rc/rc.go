@@ -43,7 +43,7 @@ var (
 	funcOccurrences map[string]int
 )
 
-//pkgFunc for all the functions of a given package
+// pkgFunc for all the functions of a given package
 type pkgFunc struct {
 	functions []string
 	path      string
@@ -93,6 +93,7 @@ func (fv *fileVisitor) getPos(n ast.Node) string {
 func (p *pkgVisitor) getPos(n ast.Node) string {
 	return p.Fset.Position(n.Pos()).String()
 }
+
 func (c *callVisitor) getPos(n ast.Node) string {
 	return c.Fset.Position(n.Pos()).String()
 }
@@ -135,7 +136,7 @@ func getPkgFunc(path string, fsetPkg *token.FileSet) {
 
 }
 
-//reformat from the data base
+// reformat from the data base
 func splitArgs(args string) []string {
 	result := strings.Split(args, " ")
 	return result
@@ -198,12 +199,12 @@ func removeAmount(s string) string {
 	return strRm
 }
 
-//compares if the function is used a certain amount of times allowed
+// compares if the function is used a certain amount of times allowed
 func allowedAmount(occurrences map[string]int, allowedImports []string) {
 	function := ""
 	funcSelector := ""
 	for _, v := range allowedImports {
-		//pkg in case it's a build in function and slice in case it's a selector function
+		// pkg in case it's a build in function and slice in case it's a selector function
 		pkg, slice := trimRelativeImport(v)
 		if slice != nil {
 			function = strings.Join(slice, ".")
@@ -531,7 +532,7 @@ func (fv *fileVisitor) Visit(n ast.Node) ast.Visitor {
 		if x, ok := expr.X.(*ast.Ident); ok {
 			fv.selectExpr = append(fv.selectExpr, x.Name+"."+expr.Sel.Name)
 
-			//saves the function in to the map, from the package
+			// saves the function in to the map, from the package
 			if importPkg[x.Name] != nil {
 				importPkg[x.Name].functions = append(importPkg[x.Name].functions, x.Name+"."+expr.Sel.Name)
 			}
@@ -549,7 +550,6 @@ func (fv *fileVisitor) Visit(n ast.Node) ast.Visitor {
 				position: fv.getPos(n),
 			})
 		}
-
 	}
 
 	if exp, ok := n.(*ast.FuncDecl); ok {

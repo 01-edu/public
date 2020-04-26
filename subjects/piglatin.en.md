@@ -11,14 +11,13 @@ The rules used by Pig Latin are as follows:
 
 If the word has no vowels the program should print "No vowels".
 
-If the number of arguments is different from one, the program prints a newline ("`\n`").
+If the number of arguments is different from one, the program prints nothing.
 
 ### Usage
 
 ```console
 student@ubuntu:~/student/test$ go build
 student@ubuntu:~/student/test$ ./piglatin
-
 student@ubuntu:~/student/test$ ./piglatin pig | cat -e
 igpay$
 student@ubuntu:~/student/test$ ./piglatin Is | cat -e

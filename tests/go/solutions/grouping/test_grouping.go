@@ -1,52 +1,14 @@
 package main
 
-import (
-	"github.com/01-edu/z01"
-)
-
-func main() {
-	type args struct {
-		first  string
-		second string
-	}
-
-	arr := []args{
-		{first: "(a)",
-			second: "I'm heavyjumpsuit is on steady, Lighter when I'm lower, higher when I'm heavy"},
-
-		{first: "(e|n)", second: "I currently have 4 windows opened up… and I don’t know why."},
-		{first: "(hi)", second: "He swore he just saw his sushi move."},
-		{first: "(s)", second: ""},
-		{first: "i", second: "Something in the air"},
-	}
-
-	for i := 0; i < 2; i++ {
-		helper := args{first: validRegExp(2), second: validString(60)}
-		arr = append(arr, helper)
-	}
-	helper := args{first: validRegExp(6), second: validString(60)}
-	arr = append(arr, helper)
-
-	helper = args{first: z01.RandStr(1, "axyz"), second: z01.RandStr(10, "axyzdassbzzxxxyy cdq     ")}
-	arr = append(arr, helper)
-
-	for _, s := range arr {
-		z01.ChallengeMain("grouping", s.first, s.second)
-	}
-}
-
-func validString(len int) string {
-	s := z01.RandStr(len, "abcdefijklmnopqrstyz           ")
-	return s
-}
+import "github.com/01-edu/z01"
 
 func validRegExp(n int) string {
 	result := "("
 
 	for i := 0; i < n; i++ {
-		result += string(z01.RandStr(1, "abcdefijklmnopqrstyz"))
+		result += z01.RandStr(1, z01.Lower)
 		if z01.RandInt()%2 == 0 {
-			result += string(z01.RandStr(1, "abcdefijklmnopqrstyz"))
+			result += z01.RandStr(1, z01.Lower)
 		}
 		if i != n-1 {
 			result += "|"
@@ -55,4 +17,21 @@ func validRegExp(n int) string {
 
 	result += ")"
 	return result
+}
+
+func main() {
+	args := [][2]string{
+		{"(a)", "I'm heavyjumpsuit is on steady, Lighter when I'm lower, higher when I'm heavy"},
+		{"(e|n)", "I currently have 4 windows opened up… and I don’t know why."},
+		{"(hi)", "He swore he just saw his sushi move."},
+		{"(s)", ""},
+		{"i", "Something in the air"},
+		{validRegExp(2), z01.RandStr(60, z01.Lower+z01.Space)},
+		{validRegExp(2), z01.RandStr(60, z01.Lower+z01.Space)},
+		{validRegExp(6), z01.RandStr(60, z01.Lower+z01.Space)},
+		{z01.RandStr(1, "axyz"), z01.RandStr(10, "axyzdassbzzxxxyy cdq     ")},
+	}
+	for _, s := range args {
+		z01.ChallengeMain("grouping", s[0], s[1])
+	}
 }

@@ -7,26 +7,22 @@ import (
 )
 
 func main() {
-	if len(os.Args) != 2 {
-		z01.PrintRune('\n')
-	} else {
-		arrayRune := []byte(os.Args[1])
-
-		for i := 0; i < len(arrayRune); i++ {
-			if arrayRune[i] >= 'a' && arrayRune[i] <= 'z' {
-				if arrayRune[i] >= ('a' + 13) {
-					arrayRune[i] = arrayRune[i] - 13
+	if len(os.Args) == 2 {
+		for _, r := range os.Args[1] {
+			if r >= 'a' && r <= 'z' {
+				if r >= 'a'+13 {
+					r -= 13
 				} else {
-					arrayRune[i] = arrayRune[i] + 13
+					r += 13
 				}
-			} else if arrayRune[i] >= 'A' && arrayRune[i] <= 'Z' {
-				if arrayRune[i] >= ('A' + 13) {
-					arrayRune[i] = arrayRune[i] - 13
+			} else if r >= 'A' && r <= 'Z' {
+				if r >= 'A'+13 {
+					r -= 13
 				} else {
-					arrayRune[i] = arrayRune[i] + 13
+					r += 13
 				}
 			}
-			z01.PrintRune(rune(arrayRune[i]))
+			z01.PrintRune(r)
 		}
 		z01.PrintRune('\n')
 	}

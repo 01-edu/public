@@ -1,9 +1,7 @@
 package solutions
 
-import (
-	"fmt"
-)
+import "fmt"
 
-func PrintStr(str string) {
-	fmt.Print(str)
+func PrintStr(s string) {
+	fmt.Print(s)
 }

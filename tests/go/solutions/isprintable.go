@@ -1,8 +1,10 @@
 package solutions
 
+import "unicode"
+
 func IsPrintable(s string) bool {
 	for _, r := range s {
-		if !(r >= 32 && r <= 127) {
+		if !unicode.IsPrint(r) {
 			return false
 		}
 	}

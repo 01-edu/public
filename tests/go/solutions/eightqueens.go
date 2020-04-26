@@ -1,8 +1,6 @@
 package solutions
 
-import (
-	"github.com/01-edu/z01"
-)
+import "github.com/01-edu/z01"
 
 const size = 8
 
@@ -20,8 +18,8 @@ func goodDirection(x, y, vx, vy int) bool {
 			// Not a good line : the square is already occupied
 			return false
 		}
-		x = x + vx // Move x in the right direction
-		y = y + vy // Move y in the right direction
+		x += vx // Move x in the right direction
+		y += vy // Move y in the right direction
 	}
 	// All clear
 	return true

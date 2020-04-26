@@ -1,20 +1,15 @@
 package main
 
-import (
-	"github.com/01-edu/z01"
-)
+import "github.com/01-edu/z01"
 
 func main() {
-	table := []string{}
-
-	table = append(table,
+	table := []string{
 		"UD",
 		"LL",
-	)
+	}
 
 	for i := 0; i < 15; i++ {
-		value := z01.RandStr(z01.RandIntBetween(5, 1000), "UDLR")
-		table = append(table, value)
+		table = append(table, z01.RandStr(z01.RandIntBetween(5, 1000), "UDLR"))
 	}
 
 	for _, arg := range table {

@@ -1,9 +1,10 @@
 package main
 
 import (
+	"github.com/01-edu/z01"
+
 	solutions "./solutions"
 	student "./student"
-	"github.com/01-edu/z01"
 )
 
 func main() {

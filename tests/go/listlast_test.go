@@ -1,8 +1,9 @@
-package student_test
+package main
 
 import (
 	"strconv"
-	"testing"
+
+	"github.com/01-edu/z01"
 
 	solution "./solutions"
 	student "./student"
@@ -29,7 +30,7 @@ func listToStringStu9(l *ListS3) string {
 	return res
 }
 
-//inserts node on two lists
+// inserts node on two lists
 func listPushBackTest3(l *ListS3, l1 *List3, data interface{}) {
 	n := &Node3{Data: data}
 	n1 := &NodeS3{Data: data}
@@ -49,10 +50,9 @@ func listPushBackTest3(l *ListS3, l1 *List3, data interface{}) {
 	}
 }
 
-//exercise 5
-//last element of the solution.ListS
-func TestListLast(t *testing.T) {
-	link := &List3{}
+// last element of the solution.ListS
+func main() {
+	link1 := &List3{}
 	link2 := &ListS3{}
 	table := []solution.NodeTest{}
 
@@ -64,16 +64,16 @@ func TestListLast(t *testing.T) {
 	)
 	for _, arg := range table {
 		for i := 0; i < len(arg.Data); i++ {
-			listPushBackTest3(link2, link, arg.Data[i])
+			listPushBackTest3(link2, link1, arg.Data[i])
 		}
-		aux := solution.ListLast(link)
-		aux1 := student.ListLast(link2)
+		aux1 := solution.ListLast(link1)
+		aux2 := student.ListLast(link2)
 
-		if aux != aux1 {
-			t.Fatalf("\nlist:%s\n\nListLast() == %v instead of %v\n\n",
-				listToStringStu9(link2), aux1, aux)
+		if aux1 != aux2 {
+			z01.Fatalf("\nlist:%s\n\nListLast() == %v instead of %v\n\n",
+				listToStringStu9(link2), aux2, aux1)
 		}
-		link = &List3{}
+		link1 = &List3{}
 		link2 = &ListS3{}
 	}
 }

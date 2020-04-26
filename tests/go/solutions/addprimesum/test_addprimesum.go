@@ -2,7 +2,6 @@ package main
 
 import (
 	"strconv"
-	"strings"
 
 	"github.com/01-edu/z01"
 )
@@ -13,7 +12,8 @@ func isAPrime(nb int) bool {
 	}
 	if nb <= 3 {
 		return true
-	} else if nb%2 == 0 || nb%3 == 0 {
+	}
+	if nb%2 == 0 || nb%3 == 0 {
 		return false
 	}
 
@@ -22,33 +22,27 @@ func isAPrime(nb int) bool {
 		if nb%i == 0 || nb%(i+2) == 0 {
 			return false
 		}
-		i = i + 6
+		i += 6
 	}
 	return true
 }
 
 func main() {
-	var table []string
+	// adds random numbers
+	table := z01.MultRandIntBetween(1, 10000)
 
-	// fill with all rpime numbers between 0 and 100
-
+	// fill with all prime numbers between 0 and 100
 	for i := 0; i < 100; i++ {
 		if isAPrime(i) {
-			str := strconv.Itoa(i)
-			table = append(table, str)
+			table = append(table, i)
 		}
 	}
 
-	// adds 15 random numbers
-	for i := 0; i < 15; i++ {
-		table = append(table, strconv.Itoa(z01.RandIntBetween(1, 10000)))
+	for _, i := range table {
+		z01.ChallengeMain("addprimesum", strconv.Itoa(i))
 	}
-
 	// special cases
-	table = append(table, "\"\"")
-	table = append(table, "1 2")
-
-	for _, s := range table {
-		z01.ChallengeMain("addprimesum", strings.Fields(s)...)
-	}
+	z01.ChallengeMain("addprimesum")
+	z01.ChallengeMain("addprimesum", `""`)
+	z01.ChallengeMain("addprimesum", "1", "2")
 }

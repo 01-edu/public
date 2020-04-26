@@ -26,9 +26,9 @@ Here is a possible program to test your function :
 package main
 
 func main() {
-	//rootNode initialized with the value "who"
-	//rootNode1 initialized with the value "are"
-	//rootNode2 initialized with the value "you"
+	// rootNode initialized with the value "who"
+	// rootNode1 initialized with the value "are"
+	// rootNode2 initialized with the value "you"
 	printRoot(rootNode)
 	printRoot(rootNode1)
 	printRoot(rootNode2)

@@ -1,8 +1,6 @@
 package solutions
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func show(n int, table [9]int, tmax [9]int) {
 	i := 0

@@ -3,8 +3,9 @@ package main
 import (
 	"math/rand"
 
-	solutions "../../solutions"
 	"github.com/01-edu/z01"
+
+	solutions "../../solutions"
 )
 
 func main() {

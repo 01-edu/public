@@ -2,12 +2,12 @@
 
 ### Instructions
 
-Write a function `Compact` that takes a pointer to a slice of strings as the argument.
+Write a function `Compact` that takes a pointer to a slice of `string` as the argument.
 This function must:
 
-- Return the number of elements with non-`nil`.
+- Return the number of elements with non-zero value.
 
-- Compact, i.e., delete the elements with `nil` in the slice.
+- Compact, i.e., delete the elements with zero-values in the slice.
 
 ### Expected functions
 
@@ -33,18 +33,18 @@ import (
 const N = 6
 
 func main() {
-	arr := make([]string, N)
-	arr[0] = "a"
-	arr[2] = "b"
-	arr[4] = "c"
+	a := make([]string, N)
+	a[0] = "a"
+	a[2] = "b"
+	a[4] = "c"
 
-	for _, v := range arr {
+	for _, v := range a {
 		fmt.Println(v)
 	}
 
-	fmt.Println("Size after compacting:", piscine.Compact(&arr))
+	fmt.Println("Size after compacting:", piscine.Compact(&a))
 
-	for _, v := range arr {
+	for _, v := range a {
 		fmt.Println(v)
 	}
 }

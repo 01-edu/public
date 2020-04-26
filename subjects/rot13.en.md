@@ -9,7 +9,7 @@ letters by the letter 13 spaces ahead in alphabetical order.
 
 - The output will be followed by a newline (`'\n'`).
 
-- If the number of arguments is different from 1, the program displays a newline (`'\n'`).
+- If the number of arguments is different from 1, the program displays nothing.
 
 ### Usage
 
@@ -22,6 +22,5 @@ uryyb gurer
 student@ubuntu:~/[[ROOT]]/test$ ./test "HELLO, HELP"
 URYYB, URYC
 student@ubuntu:~/[[ROOT]]/test$ ./test
-
 student@ubuntu:~/[[ROOT]]/test$
 ```

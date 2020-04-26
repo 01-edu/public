@@ -1,8 +1,6 @@
 package main
 
-import (
-	"github.com/01-edu/z01"
-)
+import "github.com/01-edu/z01"
 
 func printBase(nbr int) int {
 	var result []rune

@@ -16,31 +16,30 @@ func matchBrackets(exp string) bool {
 		} else if c == ')' {
 			if ptr < 0 || opened[ptr] != '(' {
 				return false
-			} else {
-				opened = opened[:len(opened)-1]
-				ptr--
 			}
+			opened = opened[:len(opened)-1]
+			ptr--
 		} else if c == ']' {
 			if ptr < 0 || opened[ptr] != '[' {
 				return false
-			} else {
-				opened = opened[:len(opened)-1]
-				ptr--
 			}
+			opened = opened[:len(opened)-1]
+			ptr--
 		} else if c == '}' {
 			if ptr < 0 || opened[ptr] != '{' {
 				return false
-			} else {
-				opened = opened[:len(opened)-1]
-				ptr--
 			}
+			opened = opened[:len(opened)-1]
+			ptr--
 		}
 	}
 	return len(opened) == 0
 }
 
 func main() {
-	if len(os.Args) > 1 {
+	if len(os.Args) == 1 {
+		fmt.Println()
+	} else {
 		for _, v := range os.Args[1:] {
 			if matchBrackets(v) {
 				fmt.Println("OK")
@@ -48,7 +47,5 @@ func main() {
 				fmt.Println("Error")
 			}
 		}
-	} else {
-		fmt.Println()
 	}
 }

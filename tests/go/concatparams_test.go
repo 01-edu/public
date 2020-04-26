@@ -8,18 +8,12 @@ import (
 )
 
 func main() {
-	table := [][]string{}
-	//30 random slice of strings
+	table := [][]string{{"Hello", "how", "are", "you?"}}
 
+	// 30 random slice of strings
 	for i := 0; i < 30; i++ {
-		val := z01.MultRandASCII()
-		table = append(table, val)
+		table = append(table, z01.MultRandASCII())
 	}
-
-	table = append(table,
-		[]string{"Hello", "how", "are", "you?"},
-	)
-
 	for _, arg := range table {
 		z01.Challenge("ConcatParams", student.ConcatParams, solutions.ConcatParams, arg)
 	}

@@ -1,11 +1,5 @@
 package main
 
-//This solution is the placeholder of the student solution
-// for an exercise in the exam asking for a Function
-//Remember the disclaimer!!!!
-//1) here the package is main
-//2) It does need an empty func main(){}
-
 type NodeAddL struct {
 	Next *NodeAddL
 	Num  int

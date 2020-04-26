@@ -1,6 +1,6 @@
 package solutions
 
-//gives the last element of the list
+// gives the last element of the list
 func ListLast(l *List) interface{} {
 	if l.Head == nil {
 		return nil

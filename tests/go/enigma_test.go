@@ -1,18 +1,14 @@
-package student_test
+package main
 
 import (
-	"testing"
+	"github.com/01-edu/z01"
 
 	solutions "./solutions"
 	student "./student"
-	"github.com/01-edu/z01"
 )
 
-func TestEnigma(t *testing.T) {
-	args := []int{z01.RandIntBetween(2, 20)}
-	for i := 0; i < 3; i++ {
-		args = append(args, z01.RandIntBetween(2, 20))
-	}
+func main() {
+	args := append([]int, z01.MultRandIntBetween(2, 20)...)
 
 	aval := args[0]
 	x := args[0]
@@ -45,27 +41,29 @@ func TestEnigma(t *testing.T) {
 	solutions.Decript(a, b, c, d)
 
 	if aval != ***a {
-		t.Fatalf("Expected ***a = %d instead of %d\n",
+		z01.Fatalf("Expected ***a = %d instead of %d\n",
 			aval,
 			***a,
 		)
 	}
 	if bval != *b {
-		t.Fatalf("Expected *b = %d instead of %d\n",
+		z01.Fatalf("Expected *b = %d instead of %d\n",
 			bval,
 			*b,
 		)
 	}
 	if cval != *******c {
-		t.Fatalf("Expected *******c = %d instead of %d\n",
+		z01.Fatalf("Expected *******c = %d instead of %d\n",
 			cval,
 			*******c,
 		)
 	}
 	if dval != ****d {
-		t.Fatalf("Expected ****d = %d instead of %d\n",
+		z01.Fatalf("Expected ****d = %d instead of %d\n",
 			dval,
 			****d,
 		)
 	}
 }
+
+// TODO: remove all those pointers...

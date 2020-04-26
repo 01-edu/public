@@ -1,13 +1,31 @@
 package main
 
 import (
+	"github.com/01-edu/z01"
+
 	solutions "./solutions"
 	student "./student"
-	"github.com/01-edu/z01"
 )
 
+func stringsToTrimAtoi(a []string) []string {
+	alpha := "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789012345678901234567890123456789"
+
+	for index := 0; index < 4; index++ {
+		s := ""
+		s += z01.RandStr(z01.RandIntBetween(0, 2), alpha)
+		x := z01.RandIntBetween(0, 14)
+		if x <= 4 {
+			s += "-"
+		}
+		s += z01.RandStr(z01.RandIntBetween(0, 10), alpha)
+		a = append(a, s)
+	}
+	return a
+}
+
 func main() {
-	array := []string{"",
+	a := []string{
+		"",
 		"12345",
 		"str123ing45",
 		"012 345",
@@ -15,25 +33,10 @@ func main() {
 		"sd+x1fa2W3s4",
 		"sd-x1fa2W3s4",
 		"sdx1-fa2W3s4",
-		z01.RandAlnum()}
-	array = stringsToTrimAtoi(array)
-	for i := range array {
-		z01.Challenge("TrimAtoi", student.TrimAtoi, solutions.TrimAtoi, array[i])
+		z01.RandAlnum(),
 	}
-}
-
-func stringsToTrimAtoi(arr []string) []string {
-	alpha := "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789012345678901234567890123456789"
-
-	for index := 0; index < 4; index++ {
-		str := ""
-		str += z01.RandStr(z01.RandIntBetween(0, 2), alpha)
-		x := z01.RandIntBetween(0, 14)
-		if x <= 4 {
-			str += "-"
-		}
-		str += z01.RandStr(z01.RandIntBetween(0, 10), alpha)
-		arr = append(arr, str)
+	a = stringsToTrimAtoi(a)
+	for _, elem := range a {
+		z01.Challenge("TrimAtoi", student.TrimAtoi, solutions.TrimAtoi, elem)
 	}
-	return arr
 }

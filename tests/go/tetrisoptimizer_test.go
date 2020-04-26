@@ -1,4 +1,4 @@
-package student_test
+package main
 
 import (
 	"context"
@@ -10,8 +10,9 @@ import (
 	"sort"
 	"strconv"
 	"strings"
-	"testing"
 	"time"
+
+	"github.com/01-edu/z01"
 )
 
 type (
@@ -39,14 +40,15 @@ type (
 // `,
 //     'X',
 // ) == tetromino{{-2, 1}, {-1, 1}, {0, 1}}
+
 func read(s string, r rune) (t tetromino) {
 	var origin vect
 	i := 0
 	first := true
 	lines := strings.Split(s, "\n")
 	for y, line := range lines {
-		for x := range line {
-			if []rune(line)[x] == r {
+		for x, rr := range line {
+			if rr == r {
 				if first {
 					first = false
 					origin = vect{x, y}
@@ -63,7 +65,7 @@ func read(s string, r rune) (t tetromino) {
 	return
 }
 
-func TestTetrisOptimizer(t *testing.T) {
+func main() {
 	var (
 		timeout = 30 * time.Second
 		samples = "./solutions/tetrisoptimizer/samples"
@@ -73,12 +75,12 @@ func TestTetrisOptimizer(t *testing.T) {
 	// load samples
 	f, err := os.Open(samples)
 	if err != nil {
-		t.Fatal("Cannot open directory", err)
+		z01.Fatal("Cannot open directory", err)
 	}
 	defer f.Close()
 	filenames, err := f.Readdirnames(0)
 	if err != nil {
-		t.Fatal("Cannot read directory", err)
+		z01.Fatal("Cannot read directory", err)
 	}
 
 	// separate samples into good (valid) and bad (invalid) files
@@ -97,7 +99,7 @@ func TestTetrisOptimizer(t *testing.T) {
 	cmd := exec.Command("go", "build", "-o", exe, "-trimpath", "-ldflags", "-s -w", student)
 	cmd.Env = append(os.Environ(), "CGO_ENABLED=0", "GOARCH=amd64")
 	if out, err := cmd.CombinedOutput(); err != nil {
-		t.Fatal("Cannot compile :", string(out))
+		z01.Fatal("Cannot compile :", string(out))
 	}
 
 	ctx, cancel := context.WithTimeout(context.Background(), timeout)
@@ -107,7 +109,7 @@ func TestTetrisOptimizer(t *testing.T) {
 	for _, badFile := range badFiles {
 		b, _ := exec.CommandContext(ctx, exe, badFile).CombinedOutput()
 		if string(b) != "ERROR\n" {
-			t.Fatal(`Failed to handle bad format, should output : "ERROR\n"`)
+			z01.Fatal(`Failed to handle bad format, should output : "ERROR\n"`)
 		}
 	}
 
@@ -123,35 +125,35 @@ func TestTetrisOptimizer(t *testing.T) {
 			return
 		}
 		if err != nil {
-			t.Fatal("Failed to process a valid map : execution failed")
+			z01.Fatal("Failed to process a valid map : execution failed")
 		}
 		s := string(b)
 		lines := strings.Split(s, "\n")
 		if lines[len(lines)-1] != "" {
-			t.Fatal(`Failed to process a valid map : missing final '\n'`)
+			z01.Fatal(`Failed to process a valid map : missing final '\n'`)
 		}
 		lines = lines[:len(lines)-1]
 		for _, line := range lines {
 			if len(line) != len(lines) {
-				t.Fatal("Failed to process a valid map : invalid square, it is expected as many lines as characters")
+				z01.Fatal("Failed to process a valid map : invalid square, it is expected as many lines as characters")
 			}
 		}
 		if len(lines) < size {
-			t.Fatal("Failed to process a valid map : the square cannot be that small")
+			z01.Fatal("Failed to process a valid map : the square cannot be that small")
 		}
 		b, err = ioutil.ReadFile(goodFile)
 		if err != nil {
-			t.Fatal("Failed to read a valid map")
+			z01.Fatal("Failed to read a valid map")
 		}
 		pieces := strings.Split(string(b), "\n\n")
 		surface := len(lines) * len(lines)
 		if strings.Count(s, ".") != surface-len(pieces)*4 {
-			t.Fatal("Failed to process a valid map : the number of holes (character '.') is not correct")
+			z01.Fatal("Failed to process a valid map : the number of holes (character '.') is not correct")
 		}
 		letter := 'A'
 		for _, piece := range pieces {
 			if read(s, letter) != read(piece, '#') {
-				t.Fatal("Failed to process a valid map : a tetromino is missing")
+				z01.Fatal("Failed to process a valid map : a tetromino is missing")
 			}
 			letter += 1
 		}
@@ -160,6 +162,6 @@ func TestTetrisOptimizer(t *testing.T) {
 }
 
 // TODO:
-// Ajouter des cas d'erreurs :
-//   mauvais arguments
-//   mauvais types de fichiers (liens, dossiers)
+// Add error cases :
+//   wrong arguments
+//   bad file types (links, folders)

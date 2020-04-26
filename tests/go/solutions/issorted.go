@@ -1,27 +1,5 @@
 package solutions
 
-func IsSortedBy1(a, b int) int {
-	if a-b < 0 {
-		return -1
-	} else if a-b > 0 {
-		return 1
-	}
-	return 0
-}
-
-func IsSortedBy10(a, b int) int {
-	if a-b < 0 {
-		return -10
-	} else if a-b > 0 {
-		return 10
-	}
-	return 0
-}
-
-func IsSortedByDiff(a, b int) int {
-	return a - b
-}
-
 func IsSorted(f func(int, int) int, arr []int) bool {
 	ascendingOrdered := true
 	descendingOrdered := true

@@ -1,19 +1,16 @@
-package student_test
+package main
 
 import (
 	"fmt"
-	"testing"
 
 	solutions "./solutions"
 	student "./student"
 )
 
-func TestBTreeApplyInorder(t *testing.T) {
+func main() {
 	root := &solutions.TreeNode{Data: "08"}
 	rootS := &student.TreeNode{Data: "08"}
-	var pos []string
-
-	pos = append(pos,
+	pos := []string{
 		"x",
 		"z",
 		"y",
@@ -25,12 +22,12 @@ func TestBTreeApplyInorder(t *testing.T) {
 		"c",
 		"a",
 		"d",
-	)
+	}
 
 	for _, arg := range pos {
 		root = solutions.BTreeInsertData(root, arg)
 		rootS = student.BTreeInsertData(rootS, arg)
 	}
 
-	solutions.ChallengeTree(t, solutions.BTreeApplyInorder, student.BTreeApplyInorder, root, rootS, fmt.Println)
+	solutions.ChallengeTree("BTreeApplyInorder", solutions.BTreeApplyInorder, student.BTreeApplyInorder, root, rootS, fmt.Println)
 }

@@ -3,8 +3,7 @@
 ### Instructions
 
 Write a function that takes the arguments received in parameters and returns them as a `string`.
-
-The arguments must be **separated** by a `\n`.
+The `string` is the result of all the arguments concatenated with a newline (`\n`) between.
 
 ### Expected function
 

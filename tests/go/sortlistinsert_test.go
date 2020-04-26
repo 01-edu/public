@@ -1,17 +1,16 @@
-package student_test
+package main
 
 import (
 	"strconv"
-	"testing"
 
-	solution "./solutions"
+	"github.com/01-edu/z01"
+
 	solutions "./solutions"
 	student "./student"
-	"github.com/01-edu/z01"
 )
 
 type NodeI14 = student.NodeI
-type NodeIS14 = solution.NodeI
+type NodeIS14 = solutions.NodeI
 
 func listToStringStu3(n *NodeI14) string {
 	var res string
@@ -52,82 +51,19 @@ func nodepushback2(l *NodeIS14, data int) *NodeIS14 {
 	return l
 }
 
-func comparFuncNodeInt14(l *NodeI14, l1 *NodeIS14, t *testing.T, data []int) {
-	for l != nil || l1 != nil {
-		if (l == nil && l1 != nil) || (l != nil && l1 == nil) {
-			t.Fatalf("\ndata used to insert: %d\nstudent list:%s\nlist:%s\n\nSortListInsert() == %v instead of %v\n\n",
-				data, listToStringStu3(l), solution.PrintList(l1), l, l1)
-			return
-		} else if l.Data != l1.Data {
-			t.Fatalf("\ndata used to insert: %d\nstudent list:%s\nlist:%s\n\nSortListInsert() == %v instead of %v\n\n",
-				data, listToStringStu3(l), solution.PrintList(l1), l.Data, l1.Data)
-			return
+func comparFuncNodeInt14(l1 *NodeI14, l2 *NodeIS14, data []int) {
+	for l1 != nil || l2 != nil {
+		if (l1 == nil && l2 != nil) || (l1 != nil && l2 == nil) {
+			z01.Fatalf("\ndata used to insert: %d\nstudent list:%s\nlist:%s\n\nSortListInsert() == %v instead of %v\n\n",
+				data, listToStringStu3(l1), solutions.PrintList(l2), l1, l2)
 		}
-		l = l.Next
+		if l1.Data != l2.Data {
+			z01.Fatalf("\ndata used to insert: %d\nstudent list:%s\nlist:%s\n\nSortListInsert() == %v instead of %v\n\n",
+				data, listToStringStu3(l1), solutions.PrintList(l2), l1.Data, l2.Data)
+		}
 		l1 = l1.Next
+		l2 = l2.Next
 	}
-}
-
-// exercise 16
-func TestSortListInsert(t *testing.T) {
-	var link *NodeI14
-	var link2 *NodeIS14
-
-	type nodeTest struct {
-		data     []int
-		data_ref []int
-	}
-	table := []nodeTest{}
-
-	table = append(table,
-		nodeTest{
-			data:     []int{},
-			data_ref: []int{},
-		})
-	for i := 0; i < 2; i++ {
-		val := nodeTest{
-			data:     z01.MultRandInt(),
-			data_ref: z01.MultRandInt(),
-		}
-		table = append(table, val)
-	}
-	table = append(table,
-		nodeTest{
-			data:     []int{5, 4, 3, 2, 1},
-			data_ref: z01.MultRandInt(),
-		},
-	)
-	for _, arg := range table {
-		for i := 0; i < len(arg.data); i++ {
-			link2 = nodepushback2(link2, arg.data[i])
-			link = nodepushback1(link, arg.data[i])
-		}
-
-		link2 = solutions.ListSort(link2)
-		link = sortStudentsList(link)
-
-		for i := 0; i < len(arg.data_ref); i++ {
-			link2 = solution.SortListInsert(link2, arg.data_ref[i])
-			link = student.SortListInsert(link, arg.data_ref[i])
-		}
-
-		comparFuncNodeInt14(link, link2, t, arg.data_ref)
-		link = &NodeI14{}
-		link2 = &NodeIS14{}
-	}
-}
-
-func sortStudentsList(l *NodeI14) *NodeI14 {
-	Head := l
-	if Head == nil {
-		return nil
-	}
-	Head.Next = sortStudentsList(Head.Next)
-
-	if Head.Next != nil && Head.Data > Head.Next.Data {
-		Head = move(Head)
-	}
-	return Head
 }
 
 func move(l *NodeI14) *NodeI14 {
@@ -142,4 +78,62 @@ func move(l *NodeI14) *NodeI14 {
 	p.Next = l
 	l.Next = n
 	return ret
+}
+
+func sortStudentsList(l *NodeI14) *NodeI14 {
+	head := l
+	if head == nil {
+		return nil
+	}
+	head.Next = sortStudentsList(head.Next)
+
+	if head.Next != nil && head.Data > head.Next.Data {
+		head = move(head)
+	}
+	return head
+}
+
+func main() {
+	var link1 *NodeI14
+	var link2 *NodeIS14
+
+	type nodeTest struct {
+		data     []int
+		data_ref []int
+	}
+	table := []nodeTest{{
+		data:     []int{},
+		data_ref: []int{},
+	}}
+
+	for i := 0; i < 2; i++ {
+		table = append(table, nodeTest{
+			data:     z01.MultRandInt(),
+			data_ref: z01.MultRandInt(),
+		})
+	}
+	table = append(table,
+		nodeTest{
+			data:     []int{5, 4, 3, 2, 1},
+			data_ref: z01.MultRandInt(),
+		},
+	)
+	for _, arg := range table {
+		for _, item := range arg.data {
+			link2 = nodepushback2(link2, item)
+			link1 = nodepushback1(link1, item)
+		}
+
+		link2 = solutions.ListSort(link2)
+		link1 = sortStudentsList(link1)
+
+		for _, item := range arg.data_ref {
+			link2 = solutions.SortListInsert(link2, item)
+			link1 = student.SortListInsert(link1, item)
+		}
+
+		comparFuncNodeInt14(link1, link2, arg.data_ref)
+		link1 = &NodeI14{}
+		link2 = &NodeIS14{}
+	}
 }

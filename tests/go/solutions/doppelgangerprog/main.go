@@ -1,14 +1,9 @@
 package main
 
-import (
-	"strings"
-)
+import "strings"
 
-func DoppelGanger(big, little string) int {
-	if little == "" {
-		return -1
-	}
-	return strings.LastIndex(big, little)
+func DoppelGanger(s, substr string) int {
+	return strings.LastIndex(s, substr)
 }
 
 func main() {

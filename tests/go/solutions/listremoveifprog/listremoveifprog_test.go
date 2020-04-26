@@ -2,10 +2,10 @@ package main
 
 import (
 	"strconv"
-	"testing"
+
+	"github.com/01-edu/z01"
 
 	solution "../../solutions"
-	"github.com/01-edu/z01"
 )
 
 type Node10 = NodeL
@@ -29,22 +29,22 @@ func listToStringStu12(l *ListS10) string {
 	return res
 }
 
-func listPushBackTest10(l *ListS10, l1 *List10, data interface{}) {
+func listPushBackTest10(l1 *ListS10, l2 *List10, data interface{}) {
 	n := &Node10{Data: data}
 	n1 := &NodeS10{Data: data}
-	if l.Head == nil {
-		l.Head = n
+	if l1.Head == nil {
+		l1.Head = n
 	} else {
-		iterator := l.Head
+		iterator := l1.Head
 		for iterator.Next != nil {
 			iterator = iterator.Next
 		}
 		iterator.Next = n
 	}
-	if l1.Head == nil {
-		l1.Head = n1
+	if l2.Head == nil {
+		l2.Head = n1
 	} else {
-		iterator1 := l1.Head
+		iterator1 := l2.Head
 		for iterator1.Next != nil {
 			iterator1 = iterator1.Next
 		}
@@ -52,28 +52,25 @@ func listPushBackTest10(l *ListS10, l1 *List10, data interface{}) {
 	}
 }
 
-func comparFuncList10(l *List10, l1 *ListS10, t *testing.T, data interface{}) {
-	for l.Head != nil || l1.Head != nil {
-		if (l.Head == nil && l1.Head != nil) || (l.Head != nil && l1.Head == nil) {
-			t.Fatalf("\ndata used: %v\nstudent list:%s\nlist:%s\n\nListRemoveIf() == %v instead of %v\n\n",
-				data, listToStringStu12(l1), solution.ListToString(l.Head), l1.Head, l.Head)
-			return
-		} else if l.Head.Data != l1.Head.Data {
-			t.Fatalf("\ndata used: %v\nstudent list:%s\nlist:%s\n\nListRemoveIf() == %v instead of %v\n\n",
-				data, listToStringStu12(l1), solution.ListToString(l.Head), l1.Head.Data, l.Head.Data)
-			return
+func comparFuncList10(l1 *List10, l2 *ListS10, data interface{}) {
+	for l1.Head != nil || l2.Head != nil {
+		if (l1.Head == nil && l2.Head != nil) || (l1.Head != nil && l2.Head == nil) {
+			z01.Fatalf("\ndata used: %v\nstudent list:%s\nlist:%s\n\nListRemoveIf() == %v instead of %v\n\n",
+				data, listToStringStu12(l2), solution.ListToString(l1.Head), l2.Head, l1.Head)
 		}
-		l.Head = l.Head.Next
+		if l1.Head.Data != l2.Head.Data {
+			z01.Fatalf("\ndata used: %v\nstudent list:%s\nlist:%s\n\nListRemoveIf() == %v instead of %v\n\n",
+				data, listToStringStu12(l2), solution.ListToString(l1.Head), l2.Head.Data, l1.Head.Data)
+		}
 		l1.Head = l1.Head.Next
+		l2.Head = l2.Head.Next
 	}
 }
 
-//exercise 13
-//removes all the elements that are equal to a value
-func TestListRemoveIfProg(t *testing.T) {
-	link := &List10{}
+// removes all the elements that are equal to a value
+func main() {
+	link1 := &List10{}
 	link2 := &ListS10{}
-	var index int
 	table := []solution.NodeTest{}
 
 	table = solution.ElementsToTest(table)
@@ -86,23 +83,23 @@ func TestListRemoveIfProg(t *testing.T) {
 
 	for _, arg := range table {
 		for i := 0; i < len(arg.Data); i++ {
-			listPushBackTest10(link2, link, arg.Data[i])
+			listPushBackTest10(link2, link1, arg.Data[i])
 		}
 		aux := len(arg.Data) - 1
 
-		index = z01.RandIntBetween(0, aux)
-		if link.Head != nil && link2.Head != nil {
+		index := z01.RandIntBetween(0, aux)
+		if link1.Head != nil && link2.Head != nil {
 			cho := arg.Data[index]
 			ListRemoveIf(link2, cho)
-			solution.ListRemoveIf(link, cho)
-			comparFuncList10(link, link2, t, cho)
+			solution.ListRemoveIf(link1, cho)
+			comparFuncList10(link1, link2, cho)
 		} else {
 			ListRemoveIf(link2, 1)
-			solution.ListRemoveIf(link, 1)
-			comparFuncList10(link, link2, t, 1)
+			solution.ListRemoveIf(link1, 1)
+			comparFuncList10(link1, link2, 1)
 		}
 
-		link = &List10{}
+		link1 = &List10{}
 		link2 = &ListS10{}
 	}
 }

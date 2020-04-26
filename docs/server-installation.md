@@ -32,8 +32,8 @@ Download and boot the ISO image `amd64` of [Debian](https://www.debian.org/distr
 
 Select :
 
--   "Advanced options ..."
--   "... Automated install"
+- "Advanced options ..."
+- "... Automated install"
 
 The network is automatically configured with DHCP, you can also configure it manually.
 
@@ -44,4 +44,3 @@ raw.githubusercontent.com/01-edu/public/master/scripts/preseed.cfg
 ```
 
 and select "Continue", let us know when the server's remote access is ready, we will configure it.
-

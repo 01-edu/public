@@ -1,24 +1,21 @@
 package solutions
 
-func Rot14(str string) string {
-	arrayRune := []rune(str)
-	var result string
-
-	for i := 0; i < len(arrayRune); i++ {
-		if arrayRune[i] >= 'a' && arrayRune[i] <= 'z' {
-			if arrayRune[i] >= 'm' {
-				arrayRune[i] = arrayRune[i] - 12
+func Rot14(s string) (result string) {
+	for _, r := range s {
+		if r >= 'a' && r <= 'z' {
+			if r >= 'm' {
+				r -= 12
 			} else {
-				arrayRune[i] = arrayRune[i] + 14
+				r += 14
 			}
-		} else if arrayRune[i] >= 'A' && arrayRune[i] <= 'Z' {
-			if arrayRune[i] >= 'M' {
-				arrayRune[i] = arrayRune[i] - 12
+		} else if r >= 'A' && r <= 'Z' {
+			if r >= 'M' {
+				r -= 12
 			} else {
-				arrayRune[i] = arrayRune[i] + 14
+				r += 14
 			}
 		}
-		result += string(arrayRune[i])
+		result += string(r)
 	}
 	return result
 }

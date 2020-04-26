@@ -2,15 +2,13 @@
 
 ### Instructions
 
-Write a program that takes a `string` and displays it with exactly three spaces
-between each word, with no spaces or tabs at either the beginning nor the end.
+Write a program that takes a `string` and displays it with exactly three spaces between each word, with no spaces or tabs at either the beginning nor the end.
 
 The `string` will be followed by a newline (`'\n'`).
 
 A word is a sequence of alphanumerical characters.
 
-If the number of parameters is not 1, or if there are no word, the program displays
-a newline.
+If the number of parameters is not 1, or if there are no word, the program displays nothing.
 
 ### Usage
 
@@ -22,7 +20,6 @@ student@ubuntu:~/[[ROOT]]/expandstr$ ./expandstr "   only  it's harder   " | cat
 only   it's   harder$
 student@ubuntu:~/[[ROOT]]/expandstr$ ./expandstr " how funny it is" "did you  hear, Mathilde ?" | cat -e
 $
-student@ubuntu:~/[[ROOT]]/expandstr$ ./expandstr | cat -e
-$
+student@ubuntu:~/[[ROOT]]/expandstr$ ./expandstr
 student@ubuntu:~/[[ROOT]]/expandstr$
 ```
