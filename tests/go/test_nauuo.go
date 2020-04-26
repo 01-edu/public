@@ -4,6 +4,7 @@ import (
 	"github.com/01-edu/z01"
 
 	correct "./correct"
+	student "./student"
 )
 
 func main() {
@@ -27,6 +28,6 @@ func main() {
 		})
 	}
 	for _, arg := range table {
-		z01.Challenge("Nauuo", Nauuo, correct.Nauuo, arg.plus, arg.minus, arg.rand)
+		z01.Challenge("Nauuo", student.Nauuo, correct.Nauuo, arg.plus, arg.minus, arg.rand)
 	}
 }

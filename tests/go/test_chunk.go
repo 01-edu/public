@@ -4,6 +4,7 @@ import (
 	"github.com/01-edu/z01"
 
 	correct "./correct"
+	student "./student"
 )
 
 func randomSize() []int {
@@ -36,6 +37,6 @@ func main() {
 		ch:    0,
 	})
 	for _, args := range table {
-		z01.Challenge("Chunk", Chunk, correct.Chunk, args.slice, args.ch)
+		z01.Challenge("Chunk", student.Chunk, correct.Chunk, args.slice, args.ch)
 	}
 }

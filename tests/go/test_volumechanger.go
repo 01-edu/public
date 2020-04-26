@@ -4,6 +4,7 @@ import (
 	"github.com/01-edu/z01"
 
 	correct "./correct"
+	student "./student"
 )
 
 func main() {
@@ -20,6 +21,6 @@ func main() {
 		})
 	}
 	for _, arg := range table {
-		z01.Challenge("Volumechanger", Volumechanger, correct.Volumechanger, arg[0], arg[1])
+		z01.Challenge("Volumechanger", student.Volumechanger, correct.Volumechanger, arg[0], arg[1])
 	}
 }
