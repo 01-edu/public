@@ -1,6 +1,6 @@
 package main
 
-import "github.com/01-edu/z01"
+import "../lib"
 
 func main() {
 	args := []string{
@@ -10,12 +10,12 @@ func main() {
 		" lorem,ipsum ",
 	}
 
-	args = append(args, z01.MultRandWords())
+	args = append(args, lib.MultRandWords())
 
 	for _, v := range args {
-		z01.ChallengeMain("lastword", v)
+		lib.ChallengeMain("lastword", v)
 	}
 
-	z01.ChallengeMain("lastword", "a", "b")
-	z01.ChallengeMain("lastword")
+	lib.ChallengeMain("lastword", "a", "b")
+	lib.ChallengeMain("lastword")
 }

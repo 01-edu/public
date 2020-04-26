@@ -1,17 +1,16 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
 	"fmt"
 
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func errorMessage_search(fn interface{}, root, a *correct.TreeNode, b *student.TreeNode,
 	seaVal string) {
-	z01.Fatalf("%s(\n%s\n, %s) == %s instead of %s\n",
+	lib.Fatalf("%s(\n%s\n, %s) == %s instead of %s\n",
 		"BTreeSearchItem",
 		correct.FormatTree(root),
 		seaVal,
@@ -27,7 +26,7 @@ func CompareNode_search(fn interface{}, arg1, a *correct.TreeNode, b *student.Tr
 	}
 
 	if (a == nil && b != nil) || (b == nil && a != nil) {
-		z01.Fatalf("Expected %v instead of %v\n", a, b)
+		lib.Fatalf("Expected %v instead of %v\n", a, b)
 		return
 	}
 
@@ -38,31 +37,31 @@ func CompareNode_search(fn interface{}, arg1, a *correct.TreeNode, b *student.Tr
 	if a.Parent != nil && b.Parent != nil {
 		if a.Parent.Data != b.Parent.Data {
 			errorMessage_search(fn, arg1, a, b, seaVal)
-			z01.Fatalf("Expected parent value %v instead of %v\n", a.Parent.Data, b.Parent.Data)
+			lib.Fatalf("Expected parent value %v instead of %v\n", a.Parent.Data, b.Parent.Data)
 			fmt.Println("Parent.Data", a.Parent.Data, b.Parent.Data)
 		}
 	} else if (a.Parent == nil && b.Parent != nil) || (a.Parent != nil && b.Parent == nil) {
-		z01.Fatalf("Expected parent value %v instead of %v\n", a.Parent, b.Parent)
+		lib.Fatalf("Expected parent value %v instead of %v\n", a.Parent, b.Parent)
 	}
 
 	if a.Right != nil && b.Right != nil {
 		if a.Right.Data != b.Right.Data {
 			errorMessage_search(fn, arg1, a, b, seaVal)
-			z01.Fatalf("Expected right child value %v instead of %v\n", a.Right.Data, b.Right.Data)
+			lib.Fatalf("Expected right child value %v instead of %v\n", a.Right.Data, b.Right.Data)
 			fmt.Println("Right.Data", a.Right.Data, b.Right.Data)
 		}
 	} else if (a.Right == nil && b.Right != nil) || (a.Right != nil && b.Right == nil) {
-		z01.Fatalf("Expected right child value %v instead of %v\n", a.Right, b.Right)
+		lib.Fatalf("Expected right child value %v instead of %v\n", a.Right, b.Right)
 	}
 
 	if a.Left != nil && b.Left != nil {
 		if a.Left.Data != b.Left.Data {
 			errorMessage_search(fn, arg1, a, b, seaVal)
-			z01.Fatalf("Expected left child value %v instead of %v\n", a.Left, b.Left)
+			lib.Fatalf("Expected left child value %v instead of %v\n", a.Left, b.Left)
 			fmt.Println("Left.Data", a.Left.Data, b.Left.Data)
 		}
 	} else if (a.Left == nil && b.Left != nil) || (a.Left != nil && b.Left == nil) {
-		z01.Fatalf("Expected left child value %v instead of %v\n", a, b)
+		lib.Fatalf("Expected left child value %v instead of %v\n", a, b)
 	}
 }
 

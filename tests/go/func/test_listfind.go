@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 type Node9 = student.NodeL
@@ -57,7 +56,7 @@ func main() {
 
 			if aux1 != nil || aux2 != nil {
 				if *aux1 != *aux2 {
-					z01.Fatalf("ListFind(ref: %s) == %s instead of %s\n", arg.Data[(len(arg.Data)-1)/2], *aux1, *aux2)
+					lib.Fatalf("ListFind(ref: %s) == %s instead of %s\n", arg.Data[(len(arg.Data)-1)/2], *aux1, *aux2)
 				}
 			}
 		}
@@ -73,7 +72,7 @@ func main() {
 	aux2 := correct.ListFind(link1, "lksdf", correct.CompStr)
 	if aux1 != nil && aux2 != nil {
 		if *aux1 != *aux2 {
-			z01.Fatalf("ListFind(ref: lksdf) == %s instead of %s\n", *aux1, *aux2)
+			lib.Fatalf("ListFind(ref: lksdf) == %s instead of %s\n", *aux1, *aux2)
 		}
 	}
 }

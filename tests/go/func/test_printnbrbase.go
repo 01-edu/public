@@ -1,12 +1,10 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
+	"../lib"
 	"./base"
-
-	correct "./correct"
-	student "./student"
+	"./correct"
+	"./student"
 )
 
 func main() {
@@ -21,7 +19,7 @@ func main() {
 	for i := 0; i < 15; i++ {
 		validBaseToInput := base.Valid()
 		val := node{
-			n:    z01.RandIntBetween(-1000000, 1000000),
+			n:    lib.RandIntBetween(-1000000, 1000000),
 			base: validBaseToInput,
 		}
 		table = append(table, val)
@@ -31,7 +29,7 @@ func main() {
 	for i := 0; i < 15; i++ {
 		invalidBaseToInput := base.Invalid()
 		val := node{
-			n:    z01.RandIntBetween(-1000000, 1000000),
+			n:    lib.RandIntBetween(-1000000, 1000000),
 			base: invalidBaseToInput,
 		}
 		table = append(table, val)
@@ -43,10 +41,10 @@ func main() {
 		node{n: 125, base: "0123456789ABCDEF"},
 		node{n: -125, base: "choumi"},
 		node{n: 125, base: "-ab"},
-		node{n: z01.MinInt, base: "0123456789"},
+		node{n: lib.MinInt, base: "0123456789"},
 	)
 	for _, arg := range table {
-		z01.Challenge("PrintNbrBase", student.PrintNbrBase, correct.PrintNbrBase, arg.n, arg.base)
+		lib.Challenge("PrintNbrBase", student.PrintNbrBase, correct.PrintNbrBase, arg.n, arg.base)
 	}
 }
 

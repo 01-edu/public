@@ -1,15 +1,14 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
 	table := append(
-		z01.MultRandASCII(),
+		lib.MultRandASCII(),
 		"Hello! €How are you?",
 		"a",
 		"z",
@@ -21,6 +20,6 @@ func main() {
 		"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!",
 	)
 	for _, arg := range table {
-		z01.Challenge("IsAlpha", student.IsAlpha, correct.IsAlpha, arg)
+		lib.Challenge("IsAlpha", student.IsAlpha, correct.IsAlpha, arg)
 	}
 }

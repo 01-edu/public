@@ -4,22 +4,22 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 func main() {
 	var arg []string
 	for i := 0; i < 20; i++ {
-		arg = append(arg, strconv.Itoa(z01.RandIntBetween(0, 255)))
+		arg = append(arg, strconv.Itoa(lib.RandIntBetween(0, 255)))
 	}
 	arg = append(arg, "")
 	arg = append(arg, "a")
 	arg = append(arg, "bc")
 	arg = append(arg, "def")
 	arg = append(arg, "notanumber")
-	arg = append(arg, z01.RandBasic())
+	arg = append(arg, lib.RandBasic())
 
 	for _, v := range arg {
-		z01.ChallengeMain("printbits", strings.Fields(v)...)
+		lib.ChallengeMain("printbits", strings.Fields(v)...)
 	}
 }

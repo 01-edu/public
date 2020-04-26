@@ -3,10 +3,9 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 type Node3 = student.NodeL
@@ -70,7 +69,7 @@ func main() {
 		aux2 := student.ListLast(link2)
 
 		if aux1 != aux2 {
-			z01.Fatalf("\nlist:%s\n\nListLast() == %v instead of %v\n\n",
+			lib.Fatalf("\nlist:%s\n\nListLast() == %v instead of %v\n\n",
 				listToStringStu9(link2), aux2, aux1)
 		}
 		link1 = &List3{}

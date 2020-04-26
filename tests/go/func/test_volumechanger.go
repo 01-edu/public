@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
@@ -16,11 +15,11 @@ func main() {
 	}
 	for i := 0; i < 15; i++ {
 		table = append(table, [2]int{
-			z01.RandIntBetween(0, 30),
-			z01.RandIntBetween(0, 100),
+			lib.RandIntBetween(0, 30),
+			lib.RandIntBetween(0, 100),
 		})
 	}
 	for _, arg := range table {
-		z01.Challenge("Volumechanger", student.Volumechanger, correct.Volumechanger, arg[0], arg[1])
+		lib.Challenge("Volumechanger", student.Volumechanger, correct.Volumechanger, arg[0], arg[1])
 	}
 }

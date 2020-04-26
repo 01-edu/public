@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
@@ -22,12 +21,12 @@ func main() {
 
 	for i := 0; i < 15; i++ {
 		table = append(table, node{
-			plus:  z01.RandIntBetween(0, 10),
-			minus: z01.RandIntBetween(0, 10),
-			rand:  z01.RandIntBetween(0, 10),
+			plus:  lib.RandIntBetween(0, 10),
+			minus: lib.RandIntBetween(0, 10),
+			rand:  lib.RandIntBetween(0, 10),
 		})
 	}
 	for _, arg := range table {
-		z01.Challenge("Nauuo", student.Nauuo, correct.Nauuo, arg.plus, arg.minus, arg.rand)
+		lib.Challenge("Nauuo", student.Nauuo, correct.Nauuo, arg.plus, arg.minus, arg.rand)
 	}
 }

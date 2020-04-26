@@ -3,7 +3,7 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 type node struct {
@@ -14,12 +14,12 @@ func main() {
 	table := []node{}
 
 	for i := 0; i < 25; i++ {
-		a := z01.RandIntBetween(0, 1000)
-		b := z01.RandIntBetween(0, 1000)
-		c := z01.RandIntBetween(0, 1000)
-		d := z01.RandIntBetween(0, 1000)
-		e := z01.RandIntBetween(0, 1000)
-		f := z01.RandIntBetween(0, 1000)
+		a := lib.RandIntBetween(0, 1000)
+		b := lib.RandIntBetween(0, 1000)
+		c := lib.RandIntBetween(0, 1000)
+		d := lib.RandIntBetween(0, 1000)
+		e := lib.RandIntBetween(0, 1000)
+		f := lib.RandIntBetween(0, 1000)
 		table = append(table, node{a, b, c, d, e, f})
 	}
 
@@ -30,6 +30,6 @@ func main() {
 		d := strconv.Itoa(arg.D)
 		e := strconv.Itoa(arg.E)
 		f := strconv.Itoa(arg.F)
-		z01.ChallengeMain("costumeprofit", a, b, c, d, e, f)
+		lib.ChallengeMain("costumeprofit", a, b, c, d, e, f)
 	}
 }

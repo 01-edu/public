@@ -3,13 +3,13 @@ package main
 import (
 	"strings"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 func main() {
 	var table []string
 
-	table = append(table, "-"+z01.RandLower(),
+	table = append(table, "-"+lib.RandLower(),
 		" ",
 		"-%",
 		"-?",
@@ -25,10 +25,10 @@ func main() {
 		"-hz",
 		"-zh",
 		"-z -h",
-		strings.Join([]string{"-", z01.RandStr(10, z01.RuneRange('a', 'z'))}, ""),
+		strings.Join([]string{"-", lib.RandStr(10, lib.RuneRange('a', 'z'))}, ""),
 	)
 
 	for _, s := range table {
-		z01.ChallengeMain("options", strings.Fields(s)...)
+		lib.ChallengeMain("options", strings.Fields(s)...)
 	}
 }

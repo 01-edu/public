@@ -1,6 +1,6 @@
 package main
 
-import "github.com/01-edu/z01"
+import "../lib"
 
 func main() {
 	args := []string{
@@ -15,11 +15,11 @@ func main() {
 		"MaTheMatiCs",
 	}
 
-	args = append(args, z01.MultRandAlnum()...)
+	args = append(args, lib.MultRandAlnum()...)
 
 	for _, v := range args {
-		z01.ChallengeMain("repeatalpha", v)
+		lib.ChallengeMain("repeatalpha", v)
 	}
-	z01.ChallengeMain("repeatalpha")
-	z01.ChallengeMain("repeatalpha", "", "")
+	lib.ChallengeMain("repeatalpha")
+	lib.ChallengeMain("repeatalpha", "", "")
 }

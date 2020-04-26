@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func stringsToTrimAtoi(a []string) []string {
@@ -12,12 +11,12 @@ func stringsToTrimAtoi(a []string) []string {
 
 	for index := 0; index < 4; index++ {
 		s := ""
-		s += z01.RandStr(z01.RandIntBetween(0, 2), alpha)
-		x := z01.RandIntBetween(0, 14)
+		s += lib.RandStr(lib.RandIntBetween(0, 2), alpha)
+		x := lib.RandIntBetween(0, 14)
 		if x <= 4 {
 			s += "-"
 		}
-		s += z01.RandStr(z01.RandIntBetween(0, 10), alpha)
+		s += lib.RandStr(lib.RandIntBetween(0, 10), alpha)
 		a = append(a, s)
 	}
 	return a
@@ -33,10 +32,10 @@ func main() {
 		"sd+x1fa2W3s4",
 		"sd-x1fa2W3s4",
 		"sdx1-fa2W3s4",
-		z01.RandAlnum(),
+		lib.RandAlnum(),
 	}
 	a = stringsToTrimAtoi(a)
 	for _, elem := range a {
-		z01.Challenge("TrimAtoi", student.TrimAtoi, correct.TrimAtoi, elem)
+		lib.Challenge("TrimAtoi", student.TrimAtoi, correct.TrimAtoi, elem)
 	}
 }

@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
@@ -17,9 +16,9 @@ func main() {
 
 	// the first 15 values are valid for this test
 	for i := 0; i < 15; i++ {
-		wordToTest := z01.RandASCII()
-		firstLetterIndex := z01.RandIntBetween(0, (len(wordToTest)-1)/2)
-		lastLetterIndex := z01.RandIntBetween(firstLetterIndex, len(wordToTest)-1)
+		wordToTest := lib.RandASCII()
+		firstLetterIndex := lib.RandIntBetween(0, (len(wordToTest)-1)/2)
+		lastLetterIndex := lib.RandIntBetween(firstLetterIndex, len(wordToTest)-1)
 
 		val := node{
 			s:      wordToTest,
@@ -30,8 +29,8 @@ func main() {
 
 	// the next 15 values are supposed to be invalid for this test
 	for i := 0; i < 15; i++ {
-		wordToTest := z01.RandASCII()
-		wrongMatch := z01.RandASCII()
+		wordToTest := lib.RandASCII()
+		wrongMatch := lib.RandASCII()
 
 		val := node{
 			s:      wordToTest,
@@ -47,6 +46,6 @@ func main() {
 	)
 
 	for _, arg := range table {
-		z01.Challenge("Index", student.Index, correct.Index, arg.s, arg.toFind)
+		lib.Challenge("Index", student.Index, correct.Index, arg.s, arg.toFind)
 	}
 }

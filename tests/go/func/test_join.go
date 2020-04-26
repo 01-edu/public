@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
@@ -18,10 +17,10 @@ func main() {
 
 	for i := 0; i < 5; i++ {
 		// random position for the slice of arguments
-		posA := z01.RandIntBetween(0, len(args)-1)
+		posA := lib.RandIntBetween(0, len(args)-1)
 		// random position for the slice of separators
-		posS := z01.RandIntBetween(0, len(seps)-1)
+		posS := lib.RandIntBetween(0, len(seps)-1)
 
-		z01.Challenge("Join", student.Join, correct.Join, args[posA], seps[posS])
+		lib.Challenge("Join", student.Join, correct.Join, args[posA], seps[posS])
 	}
 }

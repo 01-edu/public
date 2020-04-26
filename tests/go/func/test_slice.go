@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
@@ -31,16 +30,16 @@ func main() {
 		},
 	}
 
-	s := z01.MultRandWords()
+	s := lib.MultRandWords()
 
 	arr = append(arr, []interface{}{s, -len(s) - 10, -len(s) - 5})
 
 	for i := 0; i < 3; i++ {
-		s = z01.MultRandWords()
-		arr = append(arr, []interface{}{s, z01.RandIntBetween(-len(s)-10, len(s)+10), z01.RandIntBetween(-len(s)-8, len(s)+10)})
+		s = lib.MultRandWords()
+		arr = append(arr, []interface{}{s, lib.RandIntBetween(-len(s)-10, len(s)+10), lib.RandIntBetween(-len(s)-8, len(s)+10)})
 	}
 
 	for _, a := range arr {
-		z01.Challenge("Slice", student.Slice, correct.Slice, a...)
+		lib.Challenge("Slice", student.Slice, correct.Slice, a...)
 	}
 }

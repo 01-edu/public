@@ -3,10 +3,9 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 type Node10 = student.NodeL
@@ -56,11 +55,11 @@ func listPushBackTest10(l *ListS10, l1 *List10, data interface{}) {
 func comparFuncList10(l *List10, l1 *ListS10, data interface{}) {
 	for l.Head != nil || l1.Head != nil {
 		if (l.Head == nil && l1.Head != nil) || (l.Head != nil && l1.Head == nil) {
-			z01.Fatalf("\ndata used: %v\nstudent list:%s\nlist:%s\n\nListRemoveIf() == %v instead of %v\n\n",
+			lib.Fatalf("\ndata used: %v\nstudent list:%s\nlist:%s\n\nListRemoveIf() == %v instead of %v\n\n",
 				data, listToStringStu12(l1), correct.ListToString(l.Head), l1.Head, l.Head)
 		}
 		if l.Head.Data != l1.Head.Data {
-			z01.Fatalf("\ndata used: %v\nstudent list:%s\nlist:%s\n\nListRemoveIf() == %v instead of %v\n\n",
+			lib.Fatalf("\ndata used: %v\nstudent list:%s\nlist:%s\n\nListRemoveIf() == %v instead of %v\n\n",
 				data, listToStringStu12(l1), correct.ListToString(l.Head), l1.Head.Data, l.Head.Data)
 		}
 		l.Head = l.Head.Next
@@ -89,7 +88,7 @@ func main() {
 		}
 		aux := len(arg.Data) - 1
 
-		index = z01.RandIntBetween(0, aux)
+		index = lib.RandIntBetween(0, aux)
 		if link1.Head != nil && link2.Head != nil {
 			cho := arg.Data[index]
 			student.ListRemoveIf(link2, cho)

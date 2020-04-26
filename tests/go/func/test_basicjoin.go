@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
@@ -12,12 +11,12 @@ func main() {
 
 	// 30 valid pair of ramdom slice of strings to concatenate
 	for i := 0; i < 30; i++ {
-		table = append(table, z01.MultRandASCII())
+		table = append(table, lib.MultRandASCII())
 	}
 	table = append(table,
 		[]string{"Hello!", " How are you?", "well and yourself?"},
 	)
 	for _, arg := range table {
-		z01.Challenge("BasicJoin", student.BasicJoin, correct.BasicJoin, arg)
+		lib.Challenge("BasicJoin", student.BasicJoin, correct.BasicJoin, arg)
 	}
 }

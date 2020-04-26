@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
@@ -15,9 +14,9 @@ func main() {
 	arg5 := []int{0, 20, 91, 23, 10, 34}
 	arg6 := []int{1, 1, 2, 2, 3, 4, 3, 4, 5, 5, 8, 9, 8, 9}
 
-	randInt1 := z01.RandIntBetween(-100, 100)
-	randInt2 := z01.RandIntBetween(-1000, 1000)
-	randInt3 := z01.RandIntBetween(-10, 10)
+	randInt1 := lib.RandIntBetween(-100, 100)
+	randInt2 := lib.RandIntBetween(-1000, 1000)
+	randInt3 := lib.RandIntBetween(-10, 10)
 
 	arg7 := []int{randInt1, randInt2, randInt1, randInt2, randInt1 + randInt3, randInt1 + randInt3}
 	arg8 := []int{randInt1, randInt2, randInt1, randInt2, randInt1 + randInt3, randInt2 - randInt3}
@@ -25,6 +24,6 @@ func main() {
 	args := [][]int{arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8}
 
 	for _, v := range args {
-		z01.Challenge("Unmatch", student.Unmatch, correct.Unmatch, v)
+		lib.Challenge("Unmatch", student.Unmatch, correct.Unmatch, v)
 	}
 }

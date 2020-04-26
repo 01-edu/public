@@ -1,7 +1,7 @@
 package main
 
-import "github.com/01-edu/z01"
+import "../lib"
 
 func main() {
-	z01.ChallengeMain("onlya")
+	lib.ChallengeMain("onlya")
 }

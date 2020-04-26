@@ -1,15 +1,14 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
 	table := append(
-		z01.MultRandIntBetween(-1000000, 1000000),
+		lib.MultRandIntBetween(-1000000, 1000000),
 		0,
 		1,
 		2,
@@ -28,6 +27,6 @@ func main() {
 		1000000087,
 	)
 	for _, arg := range table {
-		z01.Challenge("IsPrime", student.IsPrime, correct.IsPrime, arg)
+		lib.Challenge("IsPrime", student.IsPrime, correct.IsPrime, arg)
 	}
 }

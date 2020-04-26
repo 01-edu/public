@@ -1,6 +1,6 @@
 package main
 
-import "github.com/01-edu/z01"
+import "../lib"
 
 func main() {
 	table := []string{
@@ -9,10 +9,10 @@ func main() {
 	}
 
 	for i := 0; i < 15; i++ {
-		table = append(table, z01.RandStr(z01.RandIntBetween(5, 1000), "UDLR"))
+		table = append(table, lib.RandStr(lib.RandIntBetween(5, 1000), "UDLR"))
 	}
 
 	for _, arg := range table {
-		z01.ChallengeMain("robottoorigin", arg)
+		lib.ChallengeMain("robottoorigin", arg)
 	}
 }

@@ -3,10 +3,9 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 type Node8 = student.NodeL
@@ -86,11 +85,11 @@ func comparFuncList8(l1 *List8, l2 *ListS8, f func(*Node8) bool, comp func(*Node
 	funcComp := correct.GetName(comp)
 	for l1.Head != nil || l2.Head != nil {
 		if (l1.Head == nil && l2.Head != nil) || (l1.Head != nil && l2.Head == nil) {
-			z01.Fatalf("\nstudent list:%s\nlist:%s\nfunction f used: %s\nfunction comp: %s\n\nListForEachIf() == %v instead of %v\n\n",
+			lib.Fatalf("\nstudent list:%s\nlist:%s\nfunction f used: %s\nfunction comp: %s\n\nListForEachIf() == %v instead of %v\n\n",
 				listToStringStu7(l2), correct.ListToString(l1.Head), funcComp, funcFName, l2.Head, l1.Head)
 		}
 		if l1.Head.Data != l2.Head.Data {
-			z01.Fatalf("\nstudent list:%s\nlist:%s\nfunction f used: %s\nfunction comp: %s\n\nListForEachIf() == %v instead of %v\n\n",
+			lib.Fatalf("\nstudent list:%s\nlist:%s\nfunction f used: %s\nfunction comp: %s\n\nListForEachIf() == %v instead of %v\n\n",
 				listToStringStu7(l2), correct.ListToString(l1.Head), funcComp, funcFName, l2.Head.Data, l1.Head.Data)
 		}
 		l1.Head = l1.Head.Next
@@ -113,14 +112,14 @@ func main() {
 	// just numbers/ints
 	for i := 0; i < 3; i++ {
 		val := correct.NodeTest{
-			Data: correct.ConvertIntToInterface(z01.MultRandInt()),
+			Data: correct.ConvertIntToInterface(lib.MultRandInt()),
 		}
 		table = append(table, val)
 	}
 	// just strings
 	for i := 0; i < 3; i++ {
 		val := correct.NodeTest{
-			Data: correct.ConvertIntToStringface(z01.MultRandWords()),
+			Data: correct.ConvertIntToStringface(lib.MultRandWords()),
 		}
 		table = append(table, val)
 	}

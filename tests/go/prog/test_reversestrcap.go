@@ -1,6 +1,6 @@
 package main
 
-import "github.com/01-edu/z01"
+import "../lib"
 
 func main() {
 	args := [][]string{
@@ -9,13 +9,13 @@ func main() {
 	}
 
 	for i := 0; i < 15; i++ {
-		args = append(args, z01.MultRandAlnum())
+		args = append(args, lib.MultRandAlnum())
 	}
 
 	args = append(args, []string{""})
 
 	for _, v := range args {
-		z01.ChallengeMain("reversestrcap", v...)
+		lib.ChallengeMain("reversestrcap", v...)
 	}
-	z01.ChallengeMain("reversestrcap")
+	lib.ChallengeMain("reversestrcap")
 }

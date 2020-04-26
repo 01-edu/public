@@ -1,6 +1,6 @@
 package main
 
-import "github.com/01-edu/z01"
+import "../lib"
 
 func main() {
 	args := []string{
@@ -9,12 +9,12 @@ func main() {
 		"     AkjhZ zLKIJz , 23y",
 		"",
 	}
-	args = append(args, z01.MultRandWords()...)
+	args = append(args, lib.MultRandWords()...)
 
 	for _, arg := range args {
-		z01.ChallengeMain("rostring", arg)
+		lib.ChallengeMain("rostring", arg)
 	}
-	z01.ChallengeMain("rostring")
-	z01.ChallengeMain("rostring", "this", "is")
-	z01.ChallengeMain("rostring", "not", "good", "for  you")
+	lib.ChallengeMain("rostring")
+	lib.ChallengeMain("rostring", "this", "is")
+	lib.ChallengeMain("rostring", "not", "good", "for  you")
 }

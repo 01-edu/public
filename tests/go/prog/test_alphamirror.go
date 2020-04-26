@@ -1,6 +1,6 @@
 package main
 
-import "github.com/01-edu/z01"
+import "../lib"
 
 func main() {
 	args := [][]string{
@@ -9,10 +9,10 @@ func main() {
 		{"testing spaces and #!*"},
 		{"more", "than", "three", "arguments"},
 		{"Upper anD LoWer cAsE"},
-		{z01.RandWords()},
+		{lib.RandWords()},
 	}
 
 	for _, v := range args {
-		z01.ChallengeMain("alphamirror", v...)
+		lib.ChallengeMain("alphamirror", v...)
 	}
 }

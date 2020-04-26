@@ -3,10 +3,9 @@ package main
 import (
 	"math/rand"
 
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
@@ -18,7 +17,7 @@ func main() {
 	table := []node{}
 
 	for i := 0; i < 30; i++ {
-		wordToInput := z01.RandASCII()
+		wordToInput := lib.RandASCII()
 		val := node{
 			word: wordToInput,
 			n:    rand.Intn(len(wordToInput)) + 1,
@@ -39,6 +38,6 @@ func main() {
 	)
 
 	for _, arg := range table {
-		z01.Challenge("NRune", student.NRune, correct.NRune, arg.word, arg.n)
+		lib.Challenge("NRune", student.NRune, correct.NRune, arg.word, arg.n)
 	}
 }

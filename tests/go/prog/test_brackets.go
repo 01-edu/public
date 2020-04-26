@@ -1,6 +1,6 @@
 package main
 
-import "github.com/01-edu/z01"
+import "../lib"
 
 func main() {
 	oneArgs := []string{
@@ -13,19 +13,19 @@ func main() {
 	// 18 random tests ( at least half are valid)
 	for i := 0; i < 3; i++ {
 		oneArgs = append(oneArgs,
-			"("+z01.RandASCII()+")",
-			"["+z01.RandASCII()+"]",
-			"{"+z01.RandASCII()+"}",
-			"("+z01.RandAlnum()+")",
-			"["+z01.RandAlnum()+"]",
-			"{"+z01.RandAlnum()+"}",
+			"("+lib.RandASCII()+")",
+			"["+lib.RandASCII()+"]",
+			"{"+lib.RandASCII()+"}",
+			"("+lib.RandAlnum()+")",
+			"["+lib.RandAlnum()+"]",
+			"{"+lib.RandAlnum()+"}",
 		)
 	}
 
-	z01.ChallengeMain("brackets")
+	lib.ChallengeMain("brackets")
 
 	for _, v := range oneArgs {
-		z01.ChallengeMain("brackets", v)
+		lib.ChallengeMain("brackets", v)
 	}
 
 	multArg := [][]string{
@@ -35,6 +35,6 @@ func main() {
 	}
 
 	for _, v := range multArg {
-		z01.ChallengeMain("brackets", v...)
+		lib.ChallengeMain("brackets", v...)
 	}
 }

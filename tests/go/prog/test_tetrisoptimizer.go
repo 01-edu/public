@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 type (
@@ -75,12 +75,12 @@ func main() {
 	// load samples
 	f, err := os.Open(samples)
 	if err != nil {
-		z01.Fatal("Cannot open directory", err)
+		lib.Fatal("Cannot open directory", err)
 	}
 	defer f.Close()
 	filenames, err := f.Readdirnames(0)
 	if err != nil {
-		z01.Fatal("Cannot read directory", err)
+		lib.Fatal("Cannot read directory", err)
 	}
 
 	// separate samples into good (valid) and bad (invalid) files
@@ -99,7 +99,7 @@ func main() {
 	cmd := exec.Command("go", "build", "-o", exe, "-trimpath", "-ldflags", "-s -w", student)
 	cmd.Env = append(os.Environ(), "CGO_ENABLED=0", "GOARCH=amd64")
 	if out, err := cmd.CombinedOutput(); err != nil {
-		z01.Fatal("Cannot compile :", string(out))
+		lib.Fatal("Cannot compile :", string(out))
 	}
 
 	ctx, cancel := context.WithTimeout(context.Background(), timeout)
@@ -109,7 +109,7 @@ func main() {
 	for _, badFile := range badFiles {
 		b, _ := exec.CommandContext(ctx, exe, badFile).CombinedOutput()
 		if string(b) != "ERROR\n" {
-			z01.Fatal(`Failed to handle bad format, should output : "ERROR\n"`)
+			lib.Fatal(`Failed to handle bad format, should output : "ERROR\n"`)
 		}
 	}
 
@@ -125,35 +125,35 @@ func main() {
 			return
 		}
 		if err != nil {
-			z01.Fatal("Failed to process a valid map : execution failed")
+			lib.Fatal("Failed to process a valid map : execution failed")
 		}
 		s := string(b)
 		lines := strings.Split(s, "\n")
 		if lines[len(lines)-1] != "" {
-			z01.Fatal(`Failed to process a valid map : missing final '\n'`)
+			lib.Fatal(`Failed to process a valid map : missing final '\n'`)
 		}
 		lines = lines[:len(lines)-1]
 		for _, line := range lines {
 			if len(line) != len(lines) {
-				z01.Fatal("Failed to process a valid map : invalid square, it is expected as many lines as characters")
+				lib.Fatal("Failed to process a valid map : invalid square, it is expected as many lines as characters")
 			}
 		}
 		if len(lines) < size {
-			z01.Fatal("Failed to process a valid map : the square cannot be that small")
+			lib.Fatal("Failed to process a valid map : the square cannot be that small")
 		}
 		b, err = ioutil.ReadFile(goodFile)
 		if err != nil {
-			z01.Fatal("Failed to read a valid map")
+			lib.Fatal("Failed to read a valid map")
 		}
 		pieces := strings.Split(string(b), "\n\n")
 		surface := len(lines) * len(lines)
 		if strings.Count(s, ".") != surface-len(pieces)*4 {
-			z01.Fatal("Failed to process a valid map : the number of holes (character '.') is not correct")
+			lib.Fatal("Failed to process a valid map : the number of holes (character '.') is not correct")
 		}
 		letter := 'A'
 		for _, piece := range pieces {
 			if read(s, letter) != read(piece, '#') {
-				z01.Fatal("Failed to process a valid map : a tetromino is missing")
+				lib.Fatal("Failed to process a valid map : a tetromino is missing")
 			}
 			letter += 1
 		}

@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
@@ -15,9 +14,9 @@ func main() {
 		2,
 	}
 	for i := 0; i < 25; i++ {
-		table = append(table, z01.MultRandIntBetween(1, 877))
+		table = append(table, lib.MultRandIntBetween(1, 877))
 	}
 	for _, arg := range table {
-		z01.Challenge("ReachableNumber", student.ReachableNumber, correct.ReachableNumber, arg)
+		lib.Challenge("ReachableNumber", student.ReachableNumber, correct.ReachableNumber, arg)
 	}
 }

@@ -3,12 +3,12 @@ package main
 import (
 	"strings"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 func main() {
-	table := append(z01.MultRandWords(), "choumi is the best cat")
+	table := append(lib.MultRandWords(), "choumi is the best cat")
 	for _, s := range table {
-		z01.ChallengeMain("printparams", strings.Fields(s)...)
+		lib.ChallengeMain("printparams", strings.Fields(s)...)
 	}
 }

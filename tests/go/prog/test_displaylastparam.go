@@ -3,15 +3,15 @@ package main
 import (
 	"strings"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 func main() {
-	table := append(z01.MultRandWords(), " ")
+	table := append(lib.MultRandWords(), " ")
 	table = append(table, "1")
 	table = append(table, "1 2")
 
 	for _, s := range table {
-		z01.ChallengeMain("displaylastparam", strings.Fields(s)...)
+		lib.ChallengeMain("displaylastparam", strings.Fields(s)...)
 	}
 }

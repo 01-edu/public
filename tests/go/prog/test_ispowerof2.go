@@ -3,7 +3,7 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 func main() {
@@ -19,9 +19,9 @@ func main() {
 		{},
 	}
 	for i := 0; i < 12; i++ {
-		args = append(args, []string{strconv.Itoa(z01.RandIntBetween(1, 2048))})
+		args = append(args, []string{strconv.Itoa(lib.RandIntBetween(1, 2048))})
 	}
 	for _, v := range args {
-		z01.ChallengeMain("ispowerof2", v...)
+		lib.ChallengeMain("ispowerof2", v...)
 	}
 }

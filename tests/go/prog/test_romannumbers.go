@@ -3,7 +3,7 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 func main() {
@@ -16,9 +16,9 @@ func main() {
 		"good luck",
 	}
 	for i := 0; i < 7; i++ {
-		rand = append(rand, strconv.Itoa(z01.RandIntBetween(0, 4000)))
+		rand = append(rand, strconv.Itoa(lib.RandIntBetween(0, 4000)))
 	}
 	for _, v := range rand {
-		z01.ChallengeMain("romannumbers", v)
+		lib.ChallengeMain("romannumbers", v)
 	}
 }

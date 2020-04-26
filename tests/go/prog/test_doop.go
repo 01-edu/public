@@ -5,7 +5,7 @@ import (
 
 	"strconv"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 func main() {
@@ -14,8 +14,8 @@ func main() {
 	table := []string{}
 
 	for i := 0; i < 4; i++ {
-		firstArg := strconv.Itoa(z01.RandIntBetween(-1000, 1000))
-		secondArg := strconv.Itoa(z01.RandIntBetween(0, 1000))
+		firstArg := strconv.Itoa(lib.RandIntBetween(-1000, 1000))
+		secondArg := strconv.Itoa(lib.RandIntBetween(0, 1000))
 
 		for _, operator := range operatorsTable {
 			table = append(table, firstArg+" "+operator+" "+secondArg)
@@ -37,6 +37,6 @@ func main() {
 	table = append(table, "9223372036854775809 - 3")
 	table = append(table, "9223372036854775807 * 3")
 	for _, s := range table {
-		z01.ChallengeMain("doop", strings.Fields(s)...)
+		lib.ChallengeMain("doop", strings.Fields(s)...)
 	}
 }

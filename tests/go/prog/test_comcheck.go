@@ -3,11 +3,11 @@ package main
 import (
 	"strings"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 func main() {
-	table := append(z01.MultRandWords(),
+	table := append(lib.MultRandWords(),
 		"01",
 		"galaxy",
 		"galaxy01",
@@ -17,6 +17,6 @@ func main() {
 		"as ds galaxy 01 asd")
 
 	for _, s := range table {
-		z01.ChallengeMain("comcheck", strings.Fields(s)...)
+		lib.ChallengeMain("comcheck", strings.Fields(s)...)
 	}
 }

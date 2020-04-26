@@ -3,10 +3,9 @@ package main
 import (
 	"strings"
 
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
@@ -14,7 +13,7 @@ func main() {
 	// 30 random slice of slice of strings
 
 	for i := 0; i < 30; i++ {
-		val := correct.SplitWhiteSpaces(strings.Join(z01.MultRandASCII(), " "))
+		val := correct.SplitWhiteSpaces(strings.Join(lib.MultRandASCII(), " "))
 		table = append(table, val)
 	}
 
@@ -22,6 +21,6 @@ func main() {
 		[]string{"Hello", "how", "are", "you?"})
 
 	for _, arg := range table {
-		z01.Challenge("PrintWordsTables", student.PrintWordsTables, correct.PrintWordsTables, arg)
+		lib.Challenge("PrintWordsTables", student.PrintWordsTables, correct.PrintWordsTables, arg)
 	}
 }

@@ -1,6 +1,6 @@
 package main
 
-import "github.com/01-edu/z01"
+import "../lib"
 
 func main() {
 	table := []string{
@@ -16,14 +16,14 @@ func main() {
 
 	for i := 0; i < 15; i++ {
 		s := ""
-		chunks := z01.RandIntBetween(5, 10)
+		chunks := lib.RandIntBetween(5, 10)
 		for j := 0; j < chunks; j++ {
-			countC := z01.RandIntBetween(1, 5)
-			countD := z01.RandIntBetween(1, 5)
+			countC := lib.RandIntBetween(1, 5)
+			countD := lib.RandIntBetween(1, 5)
 			tmpC := countC
 			tmpD := countD
 			for tmpC > 0 || tmpD > 0 {
-				letter := z01.RandStr(1, "CD")
+				letter := lib.RandStr(1, "CD")
 				if tmpC > 0 && letter == "C" {
 					tmpC--
 					s += letter
@@ -36,7 +36,7 @@ func main() {
 			tmpC = countC
 			tmpD = countD
 			for tmpC > 0 || tmpD > 0 {
-				letter := z01.RandStr(1, "CD")
+				letter := lib.RandStr(1, "CD")
 				if tmpC > 0 && letter == "D" {
 					tmpC--
 					s += letter
@@ -50,6 +50,6 @@ func main() {
 	}
 
 	for _, arg := range table {
-		z01.ChallengeMain("balancedstring", arg)
+		lib.ChallengeMain("balancedstring", arg)
 	}
 }

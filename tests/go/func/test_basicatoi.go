@@ -3,19 +3,18 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
 	table := make([]string, 30)
 	for i := range table {
-		table[i] = strconv.Itoa(z01.RandPosZ())
+		table[i] = strconv.Itoa(lib.RandPosZ())
 	}
 	table = append(table,
-		strconv.Itoa(z01.MaxInt),
+		strconv.Itoa(lib.MaxInt),
 		"",
 		"0",
 		"12345",
@@ -23,6 +22,6 @@ func main() {
 		"000000",
 	)
 	for _, arg := range table {
-		z01.Challenge("BasicAtoi", student.BasicAtoi, correct.BasicAtoi, arg)
+		lib.Challenge("BasicAtoi", student.BasicAtoi, correct.BasicAtoi, arg)
 	}
 }

@@ -3,10 +3,9 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 type ListSa = correct.List
@@ -32,11 +31,11 @@ func listToStringStu11(l *Lista) string {
 func comparFuncList1(l *Lista, l1 *ListSa, data []interface{}) {
 	for l.Head != nil || l1.Head != nil {
 		if (l.Head == nil && l1.Head != nil) || (l.Head != nil && l1.Head == nil) {
-			z01.Fatalf("\ndata used: %v\nstudent list:%s\nlist:%s\n\nListPushFront()== %v instead of %v\n\n",
+			lib.Fatalf("\ndata used: %v\nstudent list:%s\nlist:%s\n\nListPushFront()== %v instead of %v\n\n",
 				data, listToStringStu11(l), correct.ListToString(l1.Head), l.Head, l1.Head)
 		}
 		if l.Head.Data != l1.Head.Data {
-			z01.Fatalf("\ndata used: %v\nstudent list:%s\nlist:%s\n\nListPushFront()== %v instead of %v\n\n",
+			lib.Fatalf("\ndata used: %v\nstudent list:%s\nlist:%s\n\nListPushFront()== %v instead of %v\n\n",
 				data, listToStringStu11(l), correct.ListToString(l1.Head), l.Head, l1.Head)
 		}
 		l1.Head = l1.Head.Next

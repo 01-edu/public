@@ -4,9 +4,8 @@ import (
 	"math/rand"
 	"strconv"
 
-	"github.com/01-edu/z01"
-
-	correct "./correct"
+	"../lib"
+	"./correct"
 )
 
 type stuTreeNode = TreeNodeL
@@ -86,7 +85,7 @@ func compareResults(stuResult, solResult bool, solTree1, solTree2 *solTreeNode) 
 	if stuResult != solResult {
 		tree1 := returnSolTree(solTree1)
 		tree2 := returnSolTree(solTree2)
-		z01.Fatalf("\nIsSameTree(\"%v\", \"%v\") == \"%v\" instead of \"%v\"\n\n", tree1, tree2, stuResult, solResult)
+		lib.Fatalf("\nIsSameTree(\"%v\", \"%v\") == \"%v\" instead of \"%v\"\n\n", tree1, tree2, stuResult, solResult)
 	}
 }
 
@@ -98,7 +97,7 @@ func main() {
 
 	table := []node{}
 	for i := 0; i < 15; i++ {
-		value := node{z01.RandIntBetween(10, 15), z01.RandIntBetween(1, 10)}
+		value := node{lib.RandIntBetween(10, 15), lib.RandIntBetween(1, 10)}
 		table = append(table, value)
 	}
 

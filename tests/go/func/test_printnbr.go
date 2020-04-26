@@ -1,20 +1,19 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
 	table := append(
-		z01.MultRandInt(),
-		z01.MinInt,
-		z01.MaxInt,
+		lib.MultRandInt(),
+		lib.MinInt,
+		lib.MaxInt,
 		0,
 	)
 	for _, arg := range table {
-		z01.Challenge("PrintNbr", student.PrintNbr, correct.PrintNbr, arg)
+		lib.Challenge("PrintNbr", student.PrintNbr, correct.PrintNbr, arg)
 	}
 }

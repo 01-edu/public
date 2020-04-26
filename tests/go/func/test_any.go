@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
@@ -18,29 +17,29 @@ func main() {
 	table := []node{}
 
 	for i := 0; i < 5; i++ {
-		function := functions[z01.RandIntBetween(0, len(functions)-1)]
+		function := functions[lib.RandIntBetween(0, len(functions)-1)]
 		table = append(table, node{
 			f: function,
-			a: z01.MultRandWords(),
+			a: lib.MultRandWords(),
 		})
 	}
 	for i := 0; i < 5; i++ {
 		table = append(table, node{
 			f: correct.IsNumeric,
-			a: z01.MultRandDigit(),
+			a: lib.MultRandDigit(),
 		})
 	}
 
 	for i := 0; i < 5; i++ {
 		table = append(table, node{
 			f: correct.IsLower,
-			a: z01.MultRandLower(),
+			a: lib.MultRandLower(),
 		})
 	}
 	for i := 0; i < 5; i++ {
 		table = append(table, node{
 			f: correct.IsUpper,
-			a: z01.MultRandUpper(),
+			a: lib.MultRandUpper(),
 		})
 	}
 
@@ -56,6 +55,6 @@ func main() {
 	)
 
 	for _, arg := range table {
-		z01.Challenge("Any", student.Any, correct.Any, arg.f, arg.a)
+		lib.Challenge("Any", student.Any, correct.Any, arg.f, arg.a)
 	}
 }

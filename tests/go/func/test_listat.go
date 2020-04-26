@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 type Node5 = student.NodeL
@@ -41,11 +40,11 @@ func comparFuncNode5(solutionList *NodeS5, l1 *Node5, l2 *NodeS5, arg int) {
 		return
 	}
 	if l1 != nil && l2 == nil {
-		z01.Fatalf("\nListAt(%s, %d) == %v instead of %v\n\n",
+		lib.Fatalf("\nListAt(%s, %d) == %v instead of %v\n\n",
 			correct.ListToString(solutionList), arg, l1, l2)
 	}
 	if l1.Data != l2.Data {
-		z01.Fatalf("\nListAt(%s, %d) == %v instead of %v\n\n",
+		lib.Fatalf("\nListAt(%s, %d) == %v instead of %v\n\n",
 			correct.ListToString(solutionList), arg, l1.Data, l2.Data)
 	}
 }
@@ -64,21 +63,21 @@ func main() {
 
 	for i := 0; i < 4; i++ {
 		table = append(table, nodeTest{
-			data: correct.ConvertIntToInterface(z01.MultRandInt()),
-			pos:  z01.RandIntBetween(1, 12),
+			data: correct.ConvertIntToInterface(lib.MultRandInt()),
+			pos:  lib.RandIntBetween(1, 12),
 		})
 	}
 
 	for i := 0; i < 4; i++ {
 		table = append(table, nodeTest{
-			data: correct.ConvertIntToStringface(z01.MultRandWords()),
-			pos:  z01.RandIntBetween(1, 12),
+			data: correct.ConvertIntToStringface(lib.MultRandWords()),
+			pos:  lib.RandIntBetween(1, 12),
 		})
 	}
 
 	table = append(table, nodeTest{
 		data: []interface{}{"I", 1, "something", 2},
-		pos:  z01.RandIntBetween(1, 4),
+		pos:  lib.RandIntBetween(1, 4),
 	})
 
 	for _, arg := range table {

@@ -3,19 +3,19 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/z01"
+	"../lib"
 )
 
 func main() {
 	for i := 0; i < 10; i++ {
-		start := z01.RandIntBetween(-20, 20)
-		end := z01.RandIntBetween(-20, 20)
-		z01.ChallengeMain("range", strconv.Itoa(start), strconv.Itoa(end))
+		start := lib.RandIntBetween(-20, 20)
+		end := lib.RandIntBetween(-20, 20)
+		lib.ChallengeMain("range", strconv.Itoa(start), strconv.Itoa(end))
 	}
-	z01.ChallengeMain("range", "2", "1", "3")
-	z01.ChallengeMain("range", "a", "1")
-	z01.ChallengeMain("range", "1", "b")
-	z01.ChallengeMain("range", "1", "nan")
-	z01.ChallengeMain("range", "nan", "b")
-	z01.ChallengeMain("range")
+	lib.ChallengeMain("range", "2", "1", "3")
+	lib.ChallengeMain("range", "a", "1")
+	lib.ChallengeMain("range", "1", "b")
+	lib.ChallengeMain("range", "1", "nan")
+	lib.ChallengeMain("range", "nan", "b")
+	lib.ChallengeMain("range")
 }

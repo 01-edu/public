@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 func main() {
@@ -12,14 +11,14 @@ func main() {
 
 	table := []string{}
 	for i := 0; i < 10; i++ {
-		randomLenghtOfWord := z01.RandIntBetween(1, 20)
-		randomStrRandomLenght := z01.RandStr(randomLenghtOfWord, randomStringCharset)
+		randomLenghtOfWord := lib.RandIntBetween(1, 20)
+		randomStrRandomLenght := lib.RandStr(randomLenghtOfWord, randomStringCharset)
 		table = append(table, randomStrRandomLenght)
 	}
 	table = append(table, "Héllo!")
 	table = append(table, randomStringCharset)
 
 	for _, s := range table {
-		z01.Challenge("StrLen", correct.StrLen, student.StrLen, s)
+		lib.Challenge("StrLen", correct.StrLen, student.StrLen, s)
 	}
 }

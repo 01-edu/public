@@ -3,10 +3,9 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 type NodeI13 = student.NodeI
@@ -65,8 +64,8 @@ func main() {
 
 	for i := 0; i < 3; i++ {
 		val := nodeTest{
-			data1: z01.MultRandInt(),
-			data2: z01.MultRandInt(),
+			data1: lib.MultRandInt(),
+			data2: lib.MultRandInt(),
 		}
 		table = append(table, val)
 	}
@@ -94,10 +93,10 @@ func main() {
 
 		if aux1 == nil && aux2 == nil {
 		} else if aux1 != nil && aux2 == nil {
-			z01.Fatalf("\nstudent merged lists:%s\nmerged lists:%s\n\nSortListMerge() == %v instead of %v\n\n",
+			lib.Fatalf("\nstudent merged lists:%s\nmerged lists:%s\n\nSortListMerge() == %v instead of %v\n\n",
 				printListStudent1(aux1), correct.PrintList(aux2), aux1, aux2)
 		} else if aux1.Data != aux2.Data {
-			z01.Fatalf("\nstudent merged lists:%s\nmerged lists:%s\n\nSortListMerge() == %v instead of %v\n\n",
+			lib.Fatalf("\nstudent merged lists:%s\nmerged lists:%s\n\nSortListMerge() == %v instead of %v\n\n",
 				printListStudent1(aux1), correct.PrintList(aux2), aux1, aux2)
 		}
 

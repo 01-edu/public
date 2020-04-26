@@ -1,12 +1,10 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
-
+	"../lib"
 	"./base"
-
-	correct "./correct"
-	student "./student"
+	"./correct"
+	"./student"
 )
 
 // this is the function that creates the TESTS
@@ -44,7 +42,7 @@ func main() {
 		node{s: "bbbbbab", base: "-ab"},
 	)
 	for _, arg := range table {
-		z01.Challenge("AtoiBase", student.AtoiBase, correct.AtoiBase, arg.s, arg.base)
+		lib.Challenge("AtoiBase", student.AtoiBase, correct.AtoiBase, arg.s, arg.base)
 	}
 }
 

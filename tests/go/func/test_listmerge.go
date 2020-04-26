@@ -3,10 +3,9 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/z01"
-
-	correct "./correct"
-	student "./student"
+	"../lib"
+	"./correct"
+	"./student"
 )
 
 type Node11 = student.NodeL
@@ -60,11 +59,11 @@ func listPushBackTest11(l1 *ListS11, l2 *List11, data interface{}) {
 func comparFuncList11(l1 *List11, l2 *ListS11) {
 	for l1.Head != nil || l2.Head != nil {
 		if (l1.Head == nil && l2.Head != nil) || (l1.Head != nil && l2.Head == nil) {
-			z01.Fatalf("\nstudent list:%s\nlist:%s\n\nListMerge() == %v instead of %v\n\n",
+			lib.Fatalf("\nstudent list:%s\nlist:%s\n\nListMerge() == %v instead of %v\n\n",
 				listToStringStu(l2), correct.ListToString(l1.Head), l2.Head, l1.Head)
 		}
 		if l1.Head.Data != l2.Head.Data {
-			z01.Fatalf("\nstudent list:%s\nlist:%s\n\nListMerge() == %v instead of %v\n\n",
+			lib.Fatalf("\nstudent list:%s\nlist:%s\n\nListMerge() == %v instead of %v\n\n",
 				listToStringStu(l2), correct.ListToString(l1.Head), l2.Head.Data, l1.Head.Data)
 		}
 		l1.Head = l1.Head.Next
@@ -91,22 +90,22 @@ func main() {
 		})
 	table = append(table,
 		nodeTest{
-			data1: correct.ConvertIntToInterface(z01.MultRandInt()),
+			data1: correct.ConvertIntToInterface(lib.MultRandInt()),
 			data2: []interface{}{},
 		})
 	// jut ints
 	for i := 0; i < 3; i++ {
 		val := nodeTest{
-			data1: correct.ConvertIntToInterface(z01.MultRandInt()),
-			data2: correct.ConvertIntToInterface(z01.MultRandInt()),
+			data1: correct.ConvertIntToInterface(lib.MultRandInt()),
+			data2: correct.ConvertIntToInterface(lib.MultRandInt()),
 		}
 		table = append(table, val)
 	}
 	// just strings
 	for i := 0; i < 2; i++ {
 		val := nodeTest{
-			data1: correct.ConvertIntToStringface(z01.MultRandWords()),
-			data2: correct.ConvertIntToStringface(z01.MultRandWords()),
+			data1: correct.ConvertIntToStringface(lib.MultRandWords()),
+			data2: correct.ConvertIntToStringface(lib.MultRandWords()),
 		}
 		table = append(table, val)
 	}
