@@ -19,12 +19,16 @@ Here is a possible program to test your function :
 ```go
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	piscine ".."
+)
 
 func main() {
-	fmt.Println(ReachableNumber(1))
-	fmt.Println(ReachableNumber(10))
-	fmt.Println(ReachableNumber(1001))
+	fmt.Println(piscine.ReachableNumber(1))
+	fmt.Println(piscine.ReachableNumber(10))
+	fmt.Println(piscine.ReachableNumber(1001))
 }
 ```
 

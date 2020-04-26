@@ -4,6 +4,7 @@ import (
 	"github.com/01-edu/z01"
 
 	correct "./correct"
+	student "./student"
 )
 
 func main() {
@@ -17,6 +18,6 @@ func main() {
 		table = append(table, z01.MultRandIntBetween(1, 877))
 	}
 	for _, arg := range table {
-		z01.Challenge("ReachableNumber", ReachableNumber, correct.ReachableNumber, arg)
+		z01.Challenge("ReachableNumber", student.ReachableNumber, correct.ReachableNumber, arg)
 	}
 }

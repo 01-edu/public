@@ -4,6 +4,7 @@ import (
 	"github.com/01-edu/z01"
 
 	correct "./correct"
+	student "./student"
 )
 
 func main() {
@@ -28,6 +29,6 @@ func main() {
 	}
 
 	for _, arg := range table {
-		z01.Challenge("HalfContestProg", Halfcontest, correct.Halfcontest, arg.h1, arg.m1, arg.h2, arg.m2)
+		z01.Challenge("HalfContestProg", student.Halfcontest, correct.Halfcontest, arg.h1, arg.m1, arg.h2, arg.m2)
 	}
 }
