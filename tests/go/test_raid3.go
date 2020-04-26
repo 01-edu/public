@@ -37,11 +37,11 @@ func main() {
 	// builds all the files for testing, student, solution and relevant files
 	execFatal("go", "build", "-o", "raid3", "solutions/raid3/main.go")
 	execFatal("go", "build", "-o", "raid3_student", "student/raid3/main.go")
-	execFatal("go", "build", "solutions/raid3/raid1aProg/raid1a.go")
-	execFatal("go", "build", "solutions/raid3/raid1bProg/raid1b.go")
-	execFatal("go", "build", "solutions/raid3/raid1cProg/raid1c.go")
-	execFatal("go", "build", "solutions/raid3/raid1dProg/raid1d.go")
-	execFatal("go", "build", "solutions/raid3/raid1eProg/raid1e.go")
+	execFatal("go", "build", "solutions/raid3/raid1aprog/raid1a.go")
+	execFatal("go", "build", "solutions/raid3/raid1bprog/raid1b.go")
+	execFatal("go", "build", "solutions/raid3/raid1cprog/raid1c.go")
+	execFatal("go", "build", "solutions/raid3/raid1dprog/raid1d.go")
+	execFatal("go", "build", "solutions/raid3/raid1eprog/raid1e.go")
 
 	// testing all raids1
 	table := []string{"raid1a", "raid1b", "raid1c", "raid1d", "raid1e"}
