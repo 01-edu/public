@@ -2,10 +2,10 @@ package correct
 
 import "fmt"
 
-func ReduceInt(f func(int, int) int, arr []int) {
-	acc := arr[0]
-	for i := 1; i < len(arr); i++ {
-		acc = f(acc, arr[i])
+func ReduceInt(f func(int, int) int, a []int) {
+	acc := a[0]
+	for i := 1; i < len(a); i++ {
+		acc = f(acc, a[i])
 	}
 	fmt.Println(acc)
 }
