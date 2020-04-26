@@ -7,5 +7,4 @@ IFS='
 
 cd -P "$(dirname "$0")"
 
-rm -rf student
 find . -type f -executable ! -name '*.sh' -delete
