@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"os"
 	"strconv"
-
-	"github.com/01-edu/z01"
 )
 
 func printBase(nbr int, base string) {
@@ -19,18 +17,18 @@ func printBase(nbr int, base string) {
 		nbr = nbr / baseSize
 	}
 	for j := len(result) - 1; j >= 0; j-- {
-		z01.PrintRune(result[j])
+		fmt.Printf("%c", result[j])
 	}
 }
 
 func main() {
 	if len(os.Args) != 2 {
-		z01.PrintRune('\n')
+		fmt.Println()
 	} else {
 		nbr, _ := strconv.Atoi(os.Args[1])
 		if nbr != 0 {
 			printBase(nbr, "0123456789abcdef")
-			z01.PrintRune('\n')
+			fmt.Println()
 		} else {
 			fmt.Println(0)
 		}

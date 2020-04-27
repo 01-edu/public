@@ -1,15 +1,15 @@
 package main
 
-import "github.com/01-edu/z01"
+import "fmt"
 
 func main() {
 	diff := 'a' - 'A'
 	for c := 'a'; c <= 'z'; c++ {
 		if c%2 == 0 {
-			z01.PrintRune(c - diff)
+			fmt.Printf("%c", c-diff)
 		} else {
-			z01.PrintRune(c)
+			fmt.Printf("%c", c)
 		}
 	}
-	z01.PrintRune('\n')
+	fmt.Println()
 }

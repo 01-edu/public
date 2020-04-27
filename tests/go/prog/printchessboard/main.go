@@ -1,18 +1,10 @@
 package main
 
 import (
+	"fmt"
 	"os"
 	"strconv"
-
-	"github.com/01-edu/z01"
 )
-
-func printLine(str string) {
-	for _, c := range str {
-		z01.PrintRune(c)
-	}
-	z01.PrintRune('\n')
-}
 
 func solve(x, y int) {
 	for i := 0; i < x; i++ {
@@ -28,20 +20,20 @@ func solve(x, y int) {
 				line += " "
 			}
 		}
-		printLine(line)
+		fmt.Println(line)
 	}
 }
 
 func main() {
 	args := os.Args[1:]
 	if len(args) != 2 {
-		printLine("Error")
+		fmt.Println("Error")
 		return
 	}
 	x, _ := strconv.Atoi(args[1])
 	y, _ := strconv.Atoi(args[0])
 	if x <= 0 || y <= 0 {
-		printLine("Error")
+		fmt.Println("Error")
 		return
 	}
 	solve(x, y)

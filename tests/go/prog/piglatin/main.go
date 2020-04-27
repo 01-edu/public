@@ -3,13 +3,23 @@ package main
 import (
 	"fmt"
 	"os"
-
-	"github.com/01-edu/z01"
 )
+
+func firstNotVowel(letters []rune) int {
+	index := 0
+	for i := 0; i < len(letters); i++ {
+		if letters[i] == 'a' || letters[i] == 'e' || letters[i] == 'i' || letters[i] == 'o' || letters[i] == 'u' ||
+			letters[i] == 'A' || letters[i] == 'E' || letters[i] == 'I' || letters[i] == 'O' || letters[i] == 'U' {
+			return index
+		}
+		index++
+	}
+	return 0
+}
 
 func main() {
 	if len(os.Args) != 2 || os.Args[1] == "" {
-		z01.PrintRune('\n')
+		fmt.Println()
 		return
 	}
 	letters := []rune(os.Args[1])
@@ -24,16 +34,4 @@ func main() {
 			fmt.Print(string(letters[start:]) + string(letters[:start]) + "ay\n")
 		}
 	}
-}
-
-func firstNotVowel(letters []rune) int {
-	index := 0
-	for i := 0; i < len(letters); i++ {
-		if letters[i] == 'a' || letters[i] == 'e' || letters[i] == 'i' || letters[i] == 'o' || letters[i] == 'u' ||
-			letters[i] == 'A' || letters[i] == 'E' || letters[i] == 'I' || letters[i] == 'O' || letters[i] == 'U' {
-			return index
-		}
-		index++
-	}
-	return 0
 }
