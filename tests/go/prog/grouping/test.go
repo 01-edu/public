@@ -1,6 +1,6 @@
 package main
 
-import "../lib"
+import "../../lib"
 
 func validRegExp(n int) string {
 	result := "("

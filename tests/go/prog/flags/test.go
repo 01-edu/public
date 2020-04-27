@@ -1,6 +1,6 @@
 package main
 
-import "../lib"
+import "../../lib"
 
 type node struct {
 	flags          []string

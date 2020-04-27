@@ -4,7 +4,7 @@ import (
 	"os"
 	"os/exec"
 
-	"../lib"
+	"../../lib"
 )
 
 var name = "student"

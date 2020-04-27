@@ -3,7 +3,7 @@ package main
 import (
 	"strconv"
 
-	"../lib"
+	"../../lib"
 )
 
 type node struct {
