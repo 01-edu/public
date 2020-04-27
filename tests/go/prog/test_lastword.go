@@ -10,7 +10,7 @@ func main() {
 		" lorem,ipsum ",
 	}
 
-	args = append(args, lib.MultRandWords())
+	args = append(args, lib.MultRandWords()...)
 
 	for _, v := range args {
 		lib.ChallengeMain("lastword", v)
