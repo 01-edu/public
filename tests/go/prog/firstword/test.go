@@ -1,6 +1,6 @@
 package main
 
-import "../lib"
+import "../../lib"
 
 func main() {
 	table := append(lib.MultRandWords(),

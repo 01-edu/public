@@ -3,7 +3,7 @@ package main
 import (
 	"strings"
 
-	"../lib"
+	"../../lib"
 )
 
 func main() {

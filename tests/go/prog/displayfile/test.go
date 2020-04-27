@@ -4,7 +4,7 @@ import (
 	"os"
 	"strings"
 
-	"../lib"
+	"../../lib"
 )
 
 func main() {
