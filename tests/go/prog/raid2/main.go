@@ -3,20 +3,18 @@ package main
 import (
 	"fmt"
 	"os"
-
-	"github.com/01-edu/z01"
 )
 
 // Prints in standard output the sudoku board
 func printBoard(board [][]rune) {
 	for _, row := range board {
 		for i, e := range row {
-			z01.PrintRune(e)
+			fmt.Printf("%c", e)
 			if i != len(row)-1 {
-				z01.PrintRune(' ')
+				fmt.Print(" ")
 			}
 		}
-		z01.PrintRune('\n')
+		fmt.Println()
 	}
 }
 

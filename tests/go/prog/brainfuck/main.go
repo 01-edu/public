@@ -1,9 +1,8 @@
 package main
 
 import (
+	"fmt"
 	"os"
-
-	"github.com/01-edu/z01"
 )
 
 const SIZE = 2048
@@ -34,7 +33,7 @@ func main() {
 			arby[pos]--
 		case '.':
 			// print the pointed byte on std output
-			z01.PrintRune(rune(arby[pos]))
+			fmt.Printf("%c", rune(arby[pos]))
 		case '[':
 			// go to the matching ']' if the pointed byte is 0 (while start)
 			openBr = 0

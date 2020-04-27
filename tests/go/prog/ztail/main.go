@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"os"
 	"strconv"
-
-	"github.com/01-edu/z01"
 )
 
 func numberOfBytes(args []string) (int, []string) {
@@ -77,11 +75,11 @@ func main() {
 		}
 
 		for _, c := range read {
-			z01.PrintRune(rune(c))
+			fmt.Printf("%c", rune(c))
 		}
 
 		if j < len(files)-1 {
-			z01.PrintRune('\n')
+			fmt.Println()
 		}
 
 		fi.Close()

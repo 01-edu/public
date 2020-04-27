@@ -1,9 +1,8 @@
 package main
 
 import (
+	"fmt"
 	"os"
-
-	"github.com/01-edu/z01"
 )
 
 func main() {
@@ -15,13 +14,11 @@ func main() {
 	second := os.Args[2]
 
 	if first == "" {
-		z01.PrintRune('1')
-		z01.PrintRune('\n')
+		fmt.Println("1")
 		return
 	}
 	if second == "" {
-		z01.PrintRune('0')
-		z01.PrintRune('\n')
+		fmt.Println("0")
 		return
 	}
 
@@ -47,9 +44,8 @@ func main() {
 	}
 
 	if count == len(first) {
-		z01.PrintRune('1')
+		fmt.Println("1")
 	} else {
-		z01.PrintRune('0')
+		fmt.Println("0")
 	}
-	z01.PrintRune('\n')
 }

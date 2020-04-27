@@ -1,9 +1,8 @@
 package main
 
 import (
+	"fmt"
 	"os"
-
-	"github.com/01-edu/z01"
 )
 
 func main() {
@@ -22,8 +21,8 @@ func main() {
 					r += 13
 				}
 			}
-			z01.PrintRune(r)
+			fmt.Printf("%c", r)
 		}
-		z01.PrintRune('\n')
+		fmt.Println()
 	}
 }

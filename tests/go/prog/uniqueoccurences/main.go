@@ -1,9 +1,8 @@
 package main
 
 import (
+	"fmt"
 	"os"
-
-	"github.com/01-edu/z01"
 )
 
 func solve(str string) bool {
@@ -23,14 +22,14 @@ func solve(str string) bool {
 
 func print(str string) {
 	for _, v := range str {
-		z01.PrintRune(v)
+		fmt.Printf("%c", v)
 	}
 }
 
 func main() {
 	args := os.Args[1:]
 	if len(args) != 1 {
-		z01.PrintRune('\n')
+		fmt.Println()
 		return
 	}
 	result := solve(args[0])

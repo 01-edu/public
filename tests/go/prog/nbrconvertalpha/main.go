@@ -1,15 +1,15 @@
 package main
 
 import (
+	"fmt"
 	"os"
 	"strconv"
-
-	"github.com/01-edu/z01"
+	"unicode"
 )
 
-func IsNumeric(str string) bool {
-	for i := 0; i < len(str); i++ {
-		if !(str[i] >= '0' && str[i] <= '9') {
+func IsNumeric(s string) bool {
+	for _, r := range s {
+		if !unicode.IsDigit(r) {
 			return false
 		}
 	}
@@ -28,18 +28,18 @@ func main() {
 
 			if number <= 26 && number >= 1 && !boole {
 				number += 96
-				z01.PrintRune(rune(number))
+				fmt.Printf("%c", rune(number))
 			} else if number <= 26 && number >= 1 && boole {
 				number += 64
-				z01.PrintRune(rune(number))
+				fmt.Printf("%c", rune(number))
 			} else {
-				z01.PrintRune(' ')
+				fmt.Print(" ")
 			}
 		} else {
 			if !(arguments[i] == "--upper" && i == 0) {
-				z01.PrintRune(' ')
+				fmt.Print(" ")
 			}
 		}
 	}
-	z01.PrintRune('\n')
+	fmt.Println()
 }

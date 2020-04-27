@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"os"
 	"strconv"
-
-	"github.com/01-edu/z01"
 )
 
 func isPrime(nb int) bool {
@@ -31,14 +29,12 @@ func isPrime(nb int) bool {
 
 func main() {
 	if len(os.Args) != 2 {
-		z01.PrintRune('0')
-		z01.PrintRune('\n')
+		fmt.Println("0")
 	} else {
 		argument, _ := strconv.Atoi(os.Args[1])
 
 		if argument < 0 {
-			z01.PrintRune('0')
-			z01.PrintRune('\n')
+			fmt.Println("0")
 		} else {
 			result := 0
 			for ; argument >= 0; argument-- {

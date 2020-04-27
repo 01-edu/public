@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"os"
 	"strconv"
-
-	"github.com/01-edu/z01"
 )
 
 func fprime(value int) {
@@ -19,13 +17,13 @@ func fprime(value int) {
 			value = value / divisionIterator
 
 			if value > 1 {
-				z01.PrintRune('*')
+				fmt.Print("*")
 			}
 			divisionIterator--
 		}
 		divisionIterator++
 	}
-	z01.PrintRune('\n')
+	fmt.Println()
 }
 
 func main() {
