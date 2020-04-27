@@ -8,14 +8,14 @@ import (
 )
 
 func main() {
-	table := []string{{
+	table := []string{
 		"--upper 8 5 25",
 		"8 5 12 12 15",
 		"12 5 7 5 14 56 4 1 18 25",
 		"12 5 7 5 14 56 4 1 18 25 32 86 h",
 		"32 86 h",
 		"",
-	}}
+	}
 	for i := 0; i < 5; i++ {
 		m := lib.MultRandIntBetween(1, 46)
 		s := ""
