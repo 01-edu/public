@@ -1,19 +1,16 @@
 package correct
 
-import "github.com/01-edu/z01"
+import "fmt"
 
 func PrintComb() {
 	for i := '0'; i <= '7'; i++ {
 		for j := i + 1; j <= '8'; j++ {
 			for k := j + 1; k <= '9'; k++ {
-				z01.PrintRune(rune(i))
-				z01.PrintRune(rune(j))
-				z01.PrintRune(rune(k))
+				fmt.Printf("%c%c%c", i, j, k)
 				if i < '7' {
-					z01.PrintRune(rune(','))
-					z01.PrintRune(rune(' '))
+					fmt.Printf(", ")
 				} else {
-					z01.PrintRune(rune('\n'))
+					fmt.Println()
 				}
 			}
 		}

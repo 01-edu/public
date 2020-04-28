@@ -1,9 +1,8 @@
 package correct
 
 import (
+	"fmt"
 	"sort"
-
-	"github.com/01-edu/z01"
 )
 
 func intToDigits(n int) (digits []int) {
@@ -20,12 +19,13 @@ func intToDigits(n int) (digits []int) {
 
 func PrintNbrInOrder(n int) {
 	if n == 0 {
-		z01.PrintRune('0')
+		fmt.Print("0")
 		return
 	}
 	digits := intToDigits(n)
 	sort.Ints(digits)
 	for _, i := range digits {
-		z01.PrintRune(rune(i) + '0')
+		fmt.Printf("%c", rune(i)+'0')
 	}
+	fmt.Println()
 }

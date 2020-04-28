@@ -1,6 +1,6 @@
 package correct
 
-import "github.com/01-edu/z01"
+import "fmt"
 
 func PrintNbrBase(n int, base string) {
 	if validBase(base) {
@@ -8,17 +8,16 @@ func PrintNbrBase(n int, base string) {
 		sign := 1
 		rbase := []rune(base)
 		if n < 0 {
-			z01.PrintRune('-')
+			fmt.Print("-")
 			sign = -1
 		}
 		if n < length && n >= 0 {
-			z01.PrintRune(rbase[n])
+			fmt.Printf("%c", rbase[n])
 		} else {
 			PrintNbrBase(sign*(n/length), base)
-			z01.PrintRune(rbase[sign*(n%length)])
+			fmt.Printf("%c", rbase[sign*(n%length)])
 		}
 	} else {
-		z01.PrintRune('N')
-		z01.PrintRune('V')
+		fmt.Print("NV")
 	}
 }

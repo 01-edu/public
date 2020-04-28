@@ -1,18 +1,10 @@
 package correct
 
 import (
+	"fmt"
 	"os"
 	"strconv"
-
-	"github.com/01-edu/z01"
 )
-
-func printLineCh(str string) {
-	for _, c := range str {
-		z01.PrintRune(c)
-	}
-	z01.PrintRune('\n')
-}
 
 func solve(x, y int) {
 	for i := 0; i < x; i++ {
@@ -28,20 +20,20 @@ func solve(x, y int) {
 				line += " "
 			}
 		}
-		printLineCh(line)
+		fmt.Println(line)
 	}
 }
 
 func main() {
 	args := os.Args[1:]
 	if len(args) != 2 {
-		printLineCh("Error")
+		fmt.Println("Error")
 		return
 	}
 	x, _ := strconv.Atoi(args[1])
 	y, _ := strconv.Atoi(args[0])
 	if x <= 0 || y <= 0 {
-		printLineCh("Error")
+		fmt.Println("Error")
 		return
 	}
 	solve(x, y)

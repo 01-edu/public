@@ -34,7 +34,7 @@ And its output :
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
-1230123
+student@ubuntu:~/[[ROOT]]/test$ ./test | cat -e
+1230123$
 student@ubuntu:~/[[ROOT]]/test$
 ```

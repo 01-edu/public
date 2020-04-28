@@ -28,8 +28,7 @@ type (
 	tetromino [3]vect
 )
 
-// load a tetromino composed of the rune r in the map s
-// example :
+// load a tetromino composed of the rune r in the map s, example :
 //
 // read(`......
 // ......
@@ -40,7 +39,6 @@ type (
 // `,
 //     'X',
 // ) == tetromino{{-2, 1}, {-1, 1}, {0, 1}}
-
 func read(s string, r rune) (t tetromino) {
 	var origin vect
 	i := 0

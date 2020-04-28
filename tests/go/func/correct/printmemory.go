@@ -1,9 +1,8 @@
 package correct
 
 import (
+	"fmt"
 	"unicode"
-
-	"github.com/01-edu/z01"
 )
 
 func printBase(nbr int) int {
@@ -28,7 +27,7 @@ func printBase(nbr int) int {
 		i = 2
 	}
 	for j := i - 1; j >= 0; j-- {
-		z01.PrintRune(result[j])
+		fmt.Printf("%c", result[j])
 		a++
 	}
 	return a
@@ -41,42 +40,42 @@ func printLine(arr [10]int, start int) {
 
 	for a < start+16 && a < size {
 		if a%4 == 0 && a != 0 {
-			z01.PrintRune('\n')
+			fmt.Println()
 		}
 		b = 8 - printBase(arr[a])
 		for aux != b {
 			if b == 6 {
-				z01.PrintRune('0')
+				fmt.Print("0")
 			}
 			if aux == 1 {
-				z01.PrintRune(' ')
+				fmt.Print(" ")
 			}
 			if b < 6 {
-				z01.PrintRune('0')
+				fmt.Print("0")
 			}
 			aux++
 		}
-		z01.PrintRune(' ')
+		fmt.Print(" ")
 		aux = 0
 		a++
 	}
-	z01.PrintRune('\n')
+	fmt.Println()
 	c := start
 	for c < start+16 && c < size {
 		if unicode.IsPrint(rune(arr[c])) {
-			z01.PrintRune(rune(arr[c]))
+			fmt.Printf("%c", rune(arr[c]))
 		} else {
-			z01.PrintRune('.')
+			fmt.Print(".")
 		}
 		c++
 	}
-	z01.PrintRune('\n')
+	fmt.Println()
 }
 
-func PrintMemory(arr [10]int) {
+func PrintMemory(a [10]int) {
 	i := 0
-	for i < len(arr) {
-		printLine(arr, i)
+	for i < len(a) {
+		printLine(a, i)
 		i += 16
 	}
 }
