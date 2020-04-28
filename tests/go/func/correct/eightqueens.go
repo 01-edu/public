@@ -1,6 +1,6 @@
 package correct
 
-import "github.com/01-edu/z01"
+import "fmt"
 
 const size = 8
 
@@ -44,13 +44,13 @@ func printQueens() {
 		for y < size {
 			if board[x][y] {
 				// We have found a queen, let's print her y
-				z01.PrintRune(rune(y) + '1')
+				fmt.Printf("%c", rune(y)+'1')
 			}
 			y++
 		}
 		x++
 	}
-	z01.PrintRune('\n')
+	fmt.Println()
 }
 
 // tryX tries, for a given x (column) to find a y (row) so that the queen on (x, y) is a part

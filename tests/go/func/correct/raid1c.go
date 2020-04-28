@@ -1,24 +1,23 @@
 package correct
 
-import "github.com/01-edu/z01"
+import "fmt"
 
-func drawLineRaid1c(x int, str string) {
-	strConverted := []rune(str)
-	beg := strConverted[0]
-	med := strConverted[1]
-	end := strConverted[2]
+func drawLineRaid1c(x int, s string) {
+	beg := s[0]
+	med := s[1]
+	end := s[2]
 	if x >= 1 {
-		z01.PrintRune(beg)
+		fmt.Printf("%c", beg)
 	}
 	if x > 2 {
 		for i := 0; i < (x - 2); i++ {
-			z01.PrintRune(med)
+			fmt.Printf("%c", med)
 		}
 	}
 	if x > 1 {
-		z01.PrintRune(end)
+		fmt.Printf("%c", end)
 	}
-	z01.PrintRune('\n')
+	fmt.Println()
 }
 
 func Raid1c(x, y int) {
