@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"../../lib"
+	"../lib"
 )
 
 type (

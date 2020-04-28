@@ -1,6 +1,6 @@
 package main
 
-import "../../lib"
+import "../lib"
 
 func main() {
 	lib.ChallengeMain("revparams", "choumi", "is", "the", "best", "cat")
