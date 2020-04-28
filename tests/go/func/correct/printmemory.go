@@ -63,7 +63,7 @@ func printLine(arr [10]int, start int) {
 	z01.PrintRune('\n')
 	c := start
 	for c < start+16 && c < size {
-		if unicode.IsPrint() {
+		if unicode.IsPrint(rune(arr[c])) {
 			z01.PrintRune(rune(arr[c]))
 		} else {
 			z01.PrintRune('.')
