@@ -1,24 +1,8 @@
 package correct
 
-import "math"
-
-func isPrime(value int) bool {
-	if value < 2 {
-		return false
+func FindNextPrime(nb int) int {
+	if isPrime(nb) {
+		return nb
 	}
-	limit := int(math.Floor(math.Sqrt(float64(value))))
-	i := 2
-	for i <= limit {
-		if value%i == 0 {
-			return false
-		}
-		i++
-	}
-	return true
-}
-func FindNextPrime(value int) int {
-	if isPrime(value) {
-		return value
-	}
-	return FindNextPrime(value + 1)
+	return FindNextPrime(nb + 1)
 }

@@ -13,12 +13,12 @@ func isPrime(nb int) bool {
 	return true
 }
 
-func FindPrevPrime(nbr int) int {
-	if nbr < 2 {
+func FindPrevPrime(nb int) int {
+	if nb < 2 {
 		return 0
 	}
-	if isPrime(nbr) {
-		return nbr
+	if isPrime(nb) {
+		return nb
 	}
-	return FindPrevPrime(nbr - 1)
+	return FindPrevPrime(nb - 1)
 }

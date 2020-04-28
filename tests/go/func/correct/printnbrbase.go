@@ -3,7 +3,7 @@ package correct
 import "github.com/01-edu/z01"
 
 func PrintNbrBase(n int, base string) {
-	if ValidBase(base) {
+	if validBase(base) {
 		length := len(base)
 		sign := 1
 		rbase := []rune(base)
