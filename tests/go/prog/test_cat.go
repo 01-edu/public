@@ -6,7 +6,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"../../lib"
+	"../lib"
 )
 
 func main() {

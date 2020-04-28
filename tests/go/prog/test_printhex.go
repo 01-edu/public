@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"strings"
 
-	"../../lib"
+	"../lib"
 )
 
 func main() {

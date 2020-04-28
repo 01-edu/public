@@ -3,7 +3,7 @@ package main
 import (
 	"strconv"
 
-	"../../lib"
+	"../lib"
 )
 
 func isAPrime(nb int) bool {
