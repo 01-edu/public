@@ -340,6 +340,14 @@ array = [1 2 3 A B C a b c] and f = func(a, b string) int {
 ###### Are the outputs exactly the same?
 ##### Run both ztail and the system command `tail` with the arguments: `11 -c <filename>`
 ###### Are the outputs exactly the same?
+##### Run both ztail and the system command `tail` with the arguments: `<filename> -c23`
+###### Are the outputs exactly the same?
+##### Run both ztail and the system command `tail` with the arguments: `<filename> -c +10000`
+###### Are the outputs exactly the same?
+##### Run both ztail and the system command `tail` with the arguments: `<filename> -c 18446744073709551615`
+###### Are the outputs exactly the same?
+##### Run both ztail and the system command `tail` with the arguments: `<filename> -c 18446744073709551616`
+###### Are the outputs exactly the same?
 
 #### activebits
 
