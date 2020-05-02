@@ -1,38 +1,33 @@
 package main
 
-import "github.com/01-edu/z01"
+import "fmt"
 
-const CLOSE = 0
-const OPEN = 1
+const (
+	CLOSE = iota
+	OPEN
+)
 
 type Door struct {
 	State int
 }
 
-func PrintStr(s string) {
-	for _, r := range s {
-		z01.PrintRune(r)
-	}
-	z01.PrintRune('\n')
-}
-
 func CloseDoor(ptrDoor *Door) {
-	PrintStr("Door Closing...")
+	fmt.Println("Door Closing...")
 	ptrDoor.State = CLOSE
 }
 
 func OpenDoor(ptrdoor *Door) {
-	PrintStr("Door Opening...")
+	fmt.Println("Door Opening...")
 	ptrdoor.State = OPEN
 }
 
 func IsDoorOpened(ptrDoor *Door) bool {
-	PrintStr("is the Door opened ?")
+	fmt.Println("is the Door opened ?")
 	return ptrDoor.State == OPEN
 }
 
 func IsDoorClosed(ptrDoor *Door) bool {
-	PrintStr("is the Door closed ?")
+	fmt.Println("is the Door closed ?")
 	return ptrDoor.State == CLOSE
 }
 

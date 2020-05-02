@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func solve(s string) bool {
 	x := 0
@@ -22,7 +25,7 @@ func solve(s string) bool {
 }
 
 func main() {
-	if len(args) == 2 {
-		fmt.Println(solve(args[1]))
+	if len(os.Args) == 2 {
+		fmt.Println(solve(os.Args[1]))
 	}
 }

@@ -9,13 +9,14 @@ import (
 func main() {
 	if len(os.Args) == 2 {
 		s := os.Args[1]
+		runes := []rune(s)
 		for i, r := range s {
 			if unicode.IsLower(r) {
-				s[i] = unicode.ToUpper(r)
+				runes[i] = unicode.ToUpper(r)
 			} else if unicode.IsUpper(r) {
-				s[i] = unicode.ToLower(r)
+				runes[i] = unicode.ToLower(r)
 			}
 		}
-		fmt.Println(s)
+		fmt.Println(string(runes))
 	}
 }
