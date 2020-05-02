@@ -45,10 +45,10 @@ func brackets(regexp, text string) {
 		runes = runes[1 : len(runes)-1]
 		result := simpleSearch(runes, text)
 		for i, s := range result {
-			if !unicode.Is(unicode.Hex_Digit, s[len(s)-1]) {
+			if !unicode.Is(unicode.Hex_Digit, rune(s[len(s)-1])) {
 				s = s[:len(s)-1]
 			}
-			if !unicode.Is(unicode.Hex_Digit, s[0]) {
+			if !unicode.Is(unicode.Hex_Digit, rune(s[0])) {
 				s = s[1:]
 			}
 			fmt.Printf("%d: %s\n", i+1, s)
