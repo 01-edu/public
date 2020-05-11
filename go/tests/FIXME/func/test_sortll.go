@@ -1,8 +1,8 @@
 package main
 
 import (
-	"../lib"
 	"./correct"
+	"github.com/01-edu/public/go/lib"
 )
 
 type stuNode = NodeAddL

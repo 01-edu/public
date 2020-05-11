@@ -4,7 +4,7 @@ import (
 	"os"
 	"strings"
 
-	"../lib"
+	"github.com/01-edu/public/go/lib"
 )
 
 func main() {

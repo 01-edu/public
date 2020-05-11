@@ -1,6 +1,9 @@
 package main
 
-import "./student"
+import (
+	"./student"
+	"github.com/01-edu/public/go/lib"
+)
 
 // Returns the element of the slice that doesn't have a correspondant pair
 func unmatch(arr []int) int {

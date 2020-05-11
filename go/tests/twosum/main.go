@@ -4,6 +4,7 @@ import (
 	"math/rand"
 
 	"./student"
+	"github.com/01-edu/public/go/lib"
 )
 
 func twoSum(nums []int, target int) []int {

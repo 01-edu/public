@@ -4,6 +4,7 @@ import (
 	"sort"
 
 	"./student"
+	"github.com/01-edu/public/go/lib"
 )
 
 func isSorted(f func(int, int) int, arr []int) bool {

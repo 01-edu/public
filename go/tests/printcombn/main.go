@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"./student"
+	"github.com/01-edu/public/go/lib"
 )
 
 func show(n int, table [9]int, tmax [9]int) {

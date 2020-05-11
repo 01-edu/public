@@ -5,6 +5,7 @@ import (
 	"sort"
 
 	"./student"
+	"github.com/01-edu/public/go/lib"
 )
 
 func sortIntegerTable(a []int) {

@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	"../lib"
 	"./correct"
 	"./student"
+	"github.com/01-edu/public/go/lib"
 )
 
 func parentListTransp(root *student.TreeNode) string {

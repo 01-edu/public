@@ -1,6 +1,9 @@
 package main
 
-import "./student"
+import (
+	"./student"
+	"github.com/01-edu/public/go/lib"
+)
 
 func halfContest(h1, m1, h2, m2 int) int {
 	t1 := h1*60 + m1

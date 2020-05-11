@@ -4,6 +4,7 @@ import (
 	"math"
 
 	"./student"
+	"github.com/01-edu/public/go/lib"
 )
 
 func recursivePower(nb, power int) int {

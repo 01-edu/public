@@ -1,6 +1,9 @@
 package main
 
-import "./student"
+import (
+	"./student"
+	"github.com/01-edu/public/go/lib"
+)
 
 // this function will put a in c; c in d; d in b and b in a
 func Enigma(a ***int, b *int, c *******int, d ****int) {

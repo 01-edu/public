@@ -3,6 +3,7 @@ package main
 import (
 	"../common"
 	"./student"
+	"github.com/01-edu/public/go/lib"
 )
 
 func isPositive(i int) bool {

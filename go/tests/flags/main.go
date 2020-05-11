@@ -1,6 +1,8 @@
 package main
 
-import "../lib"
+import (
+	"github.com/01-edu/public/go/lib"
+)
 
 type node struct {
 	flags          []string

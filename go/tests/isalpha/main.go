@@ -4,6 +4,7 @@ import (
 	"unicode"
 
 	"./student"
+	"github.com/01-edu/public/go/lib"
 )
 
 func isAlpha(s string) bool {

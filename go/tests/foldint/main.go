@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"./student"
+	"github.com/01-edu/public/go/lib"
 )
 
 func foldInt(f func(int, int) int, a []int, n int) {

@@ -5,6 +5,7 @@ import (
 	"unicode"
 
 	"./student"
+	"github.com/01-edu/public/go/lib"
 )
 
 func capitalize(s string) string {

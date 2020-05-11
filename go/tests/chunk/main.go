@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"./student"
+	"github.com/01-edu/public/go/lib"
 )
 
 func chunk(a []int, ch int) {

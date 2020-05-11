@@ -4,6 +4,7 @@ import (
 	"reflect"
 
 	"./student"
+	"github.com/01-edu/public/go/lib"
 )
 
 func swapBits(n byte) byte {
