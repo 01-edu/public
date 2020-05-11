@@ -5,6 +5,9 @@ set -euo pipefail
 IFS='
 '
 
+# Fix Debian 10 bug (https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=905409)
+PATH=/sbin:/usr/sbin:$PATH
+
 # Debian stable OS
 apt-get update
 apt-get -y upgrade
@@ -60,7 +63,7 @@ fi
 EOF
 
 # Basic packages
-apt-get -y install man bash-completion git ufw jq curl build-essential netcat wget psmisc lz4 file net-tools brotli unzip zip moreutils xauth sysfsutils rsync iperf pv tree mc screen ssh
+apt-get -y install man bash-completion git ufw jq curl build-essential netcat wget psmisc lz4 file net-tools brotli unzip zip moreutils xauth sysfsutils rsync iperf pv tree mc screen ssh iotop whois
 
 # Configure screen
 cat <<'EOF'>> /etc/screenrc
@@ -77,7 +80,7 @@ PasswordAuthentication no
 AllowUsers root
 X11UseLocalhost no
 EOF
-service ssh restart
+systemctl restart ssh
 
 touch /root/.Xauthority
 
@@ -93,13 +96,12 @@ ufw --force delete 4
 
 # Optimize
 systemctl disable unattended-upgrades.service apt-daily.timer apt-daily-upgrade.timer console-setup.service keyboard-setup.service remote-fs.target man-db.timer systemd-timesyncd.service
-apt-get -y purge apparmor
 sed -i 's/MODULES=most/MODULES=dep/g' /etc/initramfs-tools/initramfs.conf
 sed -i 's/COMPRESS=gzip/COMPRESS=lz4/g' /etc/initramfs-tools/initramfs.conf
 update-initramfs -u
 echo 'GRUB_TIMEOUT=0' >> /etc/default/grub
 update-grub
-apt-get -y purge exim\*
+apt-get -y purge apparmor exim\*
 
 for i in $(seq 0 $(nproc --ignore 1)); do
   echo "devices/system/cpu/cpu${i}/cpufreq/scaling_governor = performance" >> /etc/sysfs.conf
@@ -131,14 +133,14 @@ apt-get update
 apt-get -y install docker-ce docker-ce-cli containerd.io
 
 # ripgrep
-curl -LO https://github.com/BurntSushi/ripgrep/releases/download/11.0.2/ripgrep_11.0.2_amd64.deb
-dpkg -i ripgrep_11.0.2_amd64.deb
-rm ripgrep_11.0.2_amd64.deb
+curl -LO https://github.com/BurntSushi/ripgrep/releases/download/12.0.1/ripgrep_12.0.1_amd64.deb
+dpkg -i ripgrep_12.0.1_amd64.deb
+rm ripgrep_12.0.1_amd64.deb
 
 # Go
-wget https://dl.google.com/go/go1.14.1.linux-amd64.tar.gz
-tar -C /usr/local -xzf go1.14.1.linux-amd64.tar.gz
-rm go1.14.1.linux-amd64.tar.gz
+wget https://dl.google.com/go/go1.14.2.linux-amd64.tar.gz
+tar -C /usr/local -xzf go1.14.2.linux-amd64.tar.gz
+rm go1.14.2.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin' >> /etc/profile
 
 # Netdata
