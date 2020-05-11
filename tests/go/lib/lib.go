@@ -16,13 +16,15 @@ import (
 	"unicode/utf8"
 )
 
-const (
-	IntSize = bits.UintSize - 1 // 31 or 63
+func init() {
+	if bits.UintSize != 64 {
+		panic("only works on 64 bits CPU")
+	}
+}
 
-	//                                  32 bits           64 bits
-	MinInt  = -1 << IntSize        // -2147483648  -9223372036854775808
-	MaxInt  = 1<<IntSize - 1       //  2147483647   9223372036854775807
-	MaxUint = 1<<bits.UintSize - 1 //  4294967295   18446744073709551615
+const (
+	MinInt = ^MaxInt
+	MaxInt = 1<<63 - 1
 
 	StrLen   = 13 // Default length of random strings
 	SliceLen = 8  // Default length of slices
@@ -362,7 +364,7 @@ func ChallengeMain(exercise string, args ...string) {
 		return fmt.Sprintf("echo $?\n%d\n$", code)
 	}
 	student, studentCode := run("./student")
-	solution, solutionCode := run("./solution")
+	solution, solutionCode := run("test_" + exercise)
 	if solutionCode != 0 {
 		if studentCode == 0 {
 			Fatalln("Your program does not fail when it should (with a non-zero exit status) :" + "\n" +
