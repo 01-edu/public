@@ -33,6 +33,6 @@ func main() {
 		"01,02,03",
 	)
 	for _, arg := range table {
-		lib.Challenge("IsNumeric", student.IsNumeric, common.IsNumeric, arg)
+		lib.Challenge("IsNumeric", student.IsNumeric, common.IsDigit, arg)
 	}
 }
