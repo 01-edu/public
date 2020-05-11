@@ -3,9 +3,8 @@ package main
 import (
 	"sort"
 
-	"github.com/01-edu/public/tests/go/lib"
-
 	"./student"
+	"github.com/01-edu/public/go/lib"
 )
 
 // Receives 5 ints and returns the number in the middle

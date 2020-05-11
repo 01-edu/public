@@ -1,10 +1,10 @@
 package main
 
 import (
-	"../lib"
 	"./base"
 	"./correct"
 	"./student"
+	"github.com/01-edu/public/go/lib"
 )
 
 // this is the function that creates the TESTS

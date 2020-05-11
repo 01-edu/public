@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	"../lib"
 	"./correct"
 	"./student"
+	"github.com/01-edu/public/go/lib"
 )
 
 func errorMessage_search(fn interface{}, root, a *correct.TreeNode, b *student.TreeNode,

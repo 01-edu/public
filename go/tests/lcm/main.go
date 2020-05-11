@@ -1,6 +1,9 @@
 package main
 
-import "./student"
+import (
+	"./student"
+	"github.com/01-edu/public/go/lib"
+)
 
 func gcd(first, second int) int {
 	if second == 0 {

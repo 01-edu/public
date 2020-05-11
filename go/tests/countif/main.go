@@ -3,6 +3,7 @@ package main
 import (
 	"../common"
 	"./student"
+	"github.com/01-edu/public/go/lib"
 )
 
 func countIf(f func(string) bool, arr []string) int {

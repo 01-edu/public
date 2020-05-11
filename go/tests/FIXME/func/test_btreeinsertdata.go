@@ -1,9 +1,9 @@
 package main
 
 import (
-	"../lib"
 	"./correct"
 	"./student"
+	"github.com/01-edu/public/go/lib"
 )
 
 func parentListInsert(root *student.TreeNode) string {

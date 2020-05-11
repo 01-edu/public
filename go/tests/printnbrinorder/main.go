@@ -5,6 +5,7 @@ import (
 	"sort"
 
 	"./student"
+	"github.com/01-edu/public/go/lib"
 )
 
 func intToDigits(n int) (digits []int) {

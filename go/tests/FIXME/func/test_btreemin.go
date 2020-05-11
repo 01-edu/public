@@ -3,9 +3,9 @@ package main
 import (
 	"reflect"
 
-	"../lib"
 	"./correct"
 	"./student"
+	"github.com/01-edu/public/go/lib"
 )
 
 func errorMessage_min(fn interface{}, root, a *correct.TreeNode, b *student.TreeNode) {

@@ -3,9 +3,9 @@ package main
 import (
 	"reflect"
 
-	"../lib"
 	"./correct"
 	"./student"
+	"github.com/01-edu/public/go/lib"
 )
 
 func BTreeMinStu(root *student.TreeNode) *student.TreeNode {

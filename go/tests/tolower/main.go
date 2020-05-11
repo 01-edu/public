@@ -4,6 +4,7 @@ import (
 	"strings"
 
 	"./student"
+	"github.com/01-edu/public/go/lib"
 )
 
 func toLower(s string) string {

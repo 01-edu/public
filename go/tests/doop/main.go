@@ -1,11 +1,10 @@
 package main
 
 import (
+	"strconv"
 	"strings"
 
-	"strconv"
-
-	"../lib"
+	"github.com/01-edu/public/go/lib"
 )
 
 func main() {

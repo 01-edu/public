@@ -1,6 +1,9 @@
 package main
 
-import "./student"
+import (
+	"./student"
+	"github.com/01-edu/public/go/lib"
+)
 
 // Function that return the number of active bits in the number passed as the argument
 func activeBits(n int) (total int) {
