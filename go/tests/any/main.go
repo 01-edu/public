@@ -1,9 +1,9 @@
 package main
 
 import (
-	"../common"
 	"./student"
 	"github.com/01-edu/public/go/lib"
+	"github.com/01-edu/public/go/lib/is"
 )
 
 func any(f func(string) bool, arr []string) bool {
@@ -17,7 +17,7 @@ func any(f func(string) bool, arr []string) bool {
 }
 
 func main() {
-	functions := []func(string) bool{common.IsDigit, common.IsLower, common.IsUpper}
+	functions := []func(string) bool{is.Digit, is.Lower, is.Upper}
 
 	type node struct {
 		f func(string) bool
@@ -35,31 +35,31 @@ func main() {
 	}
 	for i := 0; i < 5; i++ {
 		table = append(table, node{
-			f: common.IsDigit,
+			f: is.Digit,
 			a: lib.MultRandDigit(),
 		})
 	}
 
 	for i := 0; i < 5; i++ {
 		table = append(table, node{
-			f: common.IsLower,
+			f: is.Lower,
 			a: lib.MultRandLower(),
 		})
 	}
 	for i := 0; i < 5; i++ {
 		table = append(table, node{
-			f: common.IsUpper,
+			f: is.Upper,
 			a: lib.MultRandUpper(),
 		})
 	}
 
 	table = append(table,
 		node{
-			f: common.IsDigit,
+			f: is.Digit,
 			a: []string{"Hello", "how", "are", "you"},
 		},
 		node{
-			f: common.IsDigit,
+			f: is.Digit,
 			a: []string{"This", "is", "4", "you"},
 		},
 	)

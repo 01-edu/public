@@ -1,9 +1,9 @@
 package main
 
 import (
-	"../common"
 	"./student"
 	"github.com/01-edu/public/go/lib"
+	"github.com/01-edu/public/go/lib/is"
 )
 
 func countIf(f func(string) bool, arr []string) int {
@@ -18,7 +18,7 @@ func countIf(f func(string) bool, arr []string) int {
 }
 
 func main() {
-	functions := []func(string) bool{common.IsDigit, common.IsLower, common.IsUpper}
+	functions := []func(string) bool{is.Digit, is.Lower, is.Upper}
 
 	type node struct {
 		f   func(string) bool
@@ -37,7 +37,7 @@ func main() {
 	}
 	for i := 0; i < 5; i++ {
 		val := node{
-			f:   common.IsDigit,
+			f:   is.Digit,
 			arr: lib.MultRandDigit(),
 		}
 		table = append(table, val)
@@ -45,14 +45,14 @@ func main() {
 
 	for i := 0; i < 5; i++ {
 		val := node{
-			f:   common.IsLower,
+			f:   is.Lower,
 			arr: lib.MultRandLower(),
 		}
 		table = append(table, val)
 	}
 	for i := 0; i < 5; i++ {
 		val := node{
-			f:   common.IsUpper,
+			f:   is.Upper,
 			arr: lib.MultRandUpper(),
 		}
 		table = append(table, val)
@@ -60,11 +60,11 @@ func main() {
 
 	table = append(table,
 		node{
-			f:   common.IsDigit,
+			f:   is.Digit,
 			arr: []string{"Hello", "how", "are", "you"},
 		},
 		node{
-			f:   common.IsDigit,
+			f:   is.Digit,
 			arr: []string{"This", "is", "4", "you"},
 		},
 	)

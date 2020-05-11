@@ -1,9 +1,9 @@
 package main
 
 import (
-	"../common"
 	"./student"
 	"github.com/01-edu/public/go/lib"
+	"github.com/01-edu/public/go/lib/is"
 )
 
 func main() {
@@ -41,6 +41,6 @@ func main() {
 		"HELLO!",
 	)
 	for _, arg := range table {
-		lib.Challenge("IsUpper", student.IsUpper, common.IsUpper, arg)
+		lib.Challenge("IsUpper", student.IsUpper, is.Upper, arg)
 	}
 }

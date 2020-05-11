@@ -1,11 +1,11 @@
-package common
+package is
 
 import (
 	"math/big"
 	"unicode"
 )
 
-func IsDigit(s string) bool {
+func Digit(s string) bool {
 	for _, r := range s {
 		if !unicode.IsDigit(r) {
 			return false
@@ -14,7 +14,7 @@ func IsDigit(s string) bool {
 	return true
 }
 
-func IsLower(s string) bool {
+func Lower(s string) bool {
 	for _, r := range s {
 		if !unicode.IsLower(r) {
 			return false
@@ -23,7 +23,7 @@ func IsLower(s string) bool {
 	return true
 }
 
-func IsUpper(s string) bool {
+func Upper(s string) bool {
 	for _, r := range s {
 		if !(r >= 'A' && r <= 'Z') {
 			return false
@@ -32,6 +32,6 @@ func IsUpper(s string) bool {
 	return true
 }
 
-func IsPrime(i int) bool {
+func Prime(i int) bool {
 	return big.NewInt(int64(i)).ProbablyPrime(0)
 }

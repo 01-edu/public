@@ -1,16 +1,16 @@
 package main
 
 import (
-	"../common"
 	"./student"
 	"github.com/01-edu/public/go/lib"
+	"github.com/01-edu/public/go/lib/is"
 )
 
 func findPrevPrime(nb int) int {
 	if nb < 2 {
 		return 0
 	}
-	if common.IsPrime(nb) {
+	if is.Prime(nb) {
 		return nb
 	}
 	return findPrevPrime(nb - 1)

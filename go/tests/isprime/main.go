@@ -1,9 +1,9 @@
 package main
 
 import (
-	"../common"
 	"./student"
 	"github.com/01-edu/public/go/lib"
+	"github.com/01-edu/public/go/lib/is"
 )
 
 func main() {
@@ -27,6 +27,6 @@ func main() {
 		1000000087,
 	)
 	for _, arg := range table {
-		lib.Challenge("IsPrime", student.IsPrime, common.IsPrime, arg)
+		lib.Challenge("IsPrime", student.IsPrime, is.Prime, arg)
 	}
 }
