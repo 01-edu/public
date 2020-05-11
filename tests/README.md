@@ -22,9 +22,3 @@ No command or arguments are used, the entrypoint has to run the tests.
 The exit status of the container will determine whether or not the test has passed.
 Any output will be printed in the platform but not interpreted.
 
-### Building
-
-```console
-docker build go -t tests-go
-docker build sh -t tests-sh
-```
