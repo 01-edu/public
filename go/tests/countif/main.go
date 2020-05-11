@@ -18,7 +18,7 @@ func countIf(f func(string) bool, arr []string) int {
 }
 
 func main() {
-	functions := []func(string) bool{common.IsNumeric, common.IsLower, common.IsUpper}
+	functions := []func(string) bool{common.IsDigit, common.IsLower, common.IsUpper}
 
 	type node struct {
 		f   func(string) bool
@@ -37,7 +37,7 @@ func main() {
 	}
 	for i := 0; i < 5; i++ {
 		val := node{
-			f:   common.IsNumeric,
+			f:   common.IsDigit,
 			arr: lib.MultRandDigit(),
 		}
 		table = append(table, val)
@@ -60,11 +60,11 @@ func main() {
 
 	table = append(table,
 		node{
-			f:   common.IsNumeric,
+			f:   common.IsDigit,
 			arr: []string{"Hello", "how", "are", "you"},
 		},
 		node{
-			f:   common.IsNumeric,
+			f:   common.IsDigit,
 			arr: []string{"This", "is", "4", "you"},
 		},
 	)

@@ -5,7 +5,7 @@ import (
 	"unicode"
 )
 
-func IsNumeric(s string) bool {
+func IsDigit(s string) bool {
 	for _, r := range s {
 		if !unicode.IsDigit(r) {
 			return false

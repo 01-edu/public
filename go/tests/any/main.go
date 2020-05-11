@@ -17,7 +17,7 @@ func any(f func(string) bool, arr []string) bool {
 }
 
 func main() {
-	functions := []func(string) bool{common.IsNumeric, common.IsLower, common.IsUpper}
+	functions := []func(string) bool{common.IsDigit, common.IsLower, common.IsUpper}
 
 	type node struct {
 		f func(string) bool
@@ -35,7 +35,7 @@ func main() {
 	}
 	for i := 0; i < 5; i++ {
 		table = append(table, node{
-			f: common.IsNumeric,
+			f: common.IsDigit,
 			a: lib.MultRandDigit(),
 		})
 	}
@@ -55,11 +55,11 @@ func main() {
 
 	table = append(table,
 		node{
-			f: common.IsNumeric,
+			f: common.IsDigit,
 			a: []string{"Hello", "how", "are", "you"},
 		},
 		node{
-			f: common.IsNumeric,
+			f: common.IsDigit,
 			a: []string{"This", "is", "4", "you"},
 		},
 	)
