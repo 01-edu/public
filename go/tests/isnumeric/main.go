@@ -3,9 +3,9 @@ package main
 import (
 	"strconv"
 
-	"../common"
 	"./student"
 	"github.com/01-edu/public/go/lib"
+	"github.com/01-edu/public/go/lib/is"
 )
 
 func main() {
@@ -33,6 +33,6 @@ func main() {
 		"01,02,03",
 	)
 	for _, arg := range table {
-		lib.Challenge("IsNumeric", student.IsNumeric, common.IsDigit, arg)
+		lib.Challenge("IsNumeric", student.IsNumeric, is.Digit, arg)
 	}
 }

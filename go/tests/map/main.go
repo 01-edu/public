@@ -1,9 +1,9 @@
 package main
 
 import (
-	"../common"
 	"./student"
 	"github.com/01-edu/public/go/lib"
+	"github.com/01-edu/public/go/lib/is"
 )
 
 func isPositive(i int) bool {
@@ -25,7 +25,7 @@ func _map(f func(int) bool, a []int) []bool {
 }
 
 func main() {
-	functions := []func(int) bool{isPositive, isNegative0, common.IsPrime}
+	functions := []func(int) bool{isPositive, isNegative0, is.Prime}
 
 	type node struct {
 		f   func(int) bool
@@ -44,7 +44,7 @@ func main() {
 	}
 
 	table = append(table, node{
-		f:   common.IsPrime,
+		f:   is.Prime,
 		arr: []int{1, 2, 3, 4, 5, 6},
 	})
 

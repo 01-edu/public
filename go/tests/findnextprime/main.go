@@ -1,13 +1,13 @@
 package main
 
 import (
-	"../common"
 	"./student"
 	"github.com/01-edu/public/go/lib"
+	"github.com/01-edu/public/go/lib/is"
 )
 
 func findNextPrime(nb int) int {
-	if common.IsPrime(nb) {
+	if is.Prime(nb) {
 		return nb
 	}
 	return findNextPrime(nb + 1)
