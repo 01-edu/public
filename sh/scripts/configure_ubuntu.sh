@@ -32,18 +32,224 @@ apt-get -y install curl
 
 apt-get -yf install
 
-. bash_tweaks.sh
-. ssh.sh
-. firewall.sh
-. grub.sh "$disk"
-. go.sh
-. nodejs.sh
-. fx.sh
-. sublime.sh
-. vscode.sh
-. libreoffice.sh
-. exam.sh
-. docker.sh
+# Configure Terminal
+
+# Makes bash case-insensitive
+cat <<EOF>> /etc/inputrc
+set completion-ignore-case
+set show-all-if-ambiguous On
+set show-all-if-unmodified On
+EOF
+
+# Enhance Linux prompt
+cat <<EOF> /etc/issue
+Kernel build: \v
+Kernel package: \r
+Date: \d \t
+IP address: \4
+Terminal: \l@\n.\O
+
+EOF
+
+# Enable Bash completion
+apt-get -y install bash-completion
+
+cat <<EOF>> /etc/bash.bashrc
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+EOF
+
+# Set-up all users
+for dir in $(ls -1d /root /home/* 2>/dev/null ||:)
+do
+	# Hide login informations
+	touch $dir/.hushlogin
+
+	# Add convenient aliases & behaviors
+	cat <<-'EOF'>> $dir/.bashrc
+	export LS_OPTIONS="--color=auto"
+	eval "`dircolors`"
+
+	alias df="df --si"
+	alias du="du -cs --si"
+	alias free="free -h --si"
+	alias l="ls $LS_OPTIONS -al --si --group-directories-first"
+	alias less="less -i"
+	alias nano="nano -clDOST4"
+	alias pstree="pstree -palU"
+
+	GOPATH=$HOME/go
+	HISTCONTROL=ignoreboth
+	HISTFILESIZE=
+	HISTSIZE=
+	HISTTIMEFORMAT="%F %T "
+	EOF
+
+	# Fix rights
+	usr=$(echo "$dir" | rev | cut -d/ -f1 | rev)
+	chown -R $usr:$usr $dir ||:
+done
+
+# Install OpenSSH
+
+ssh_port=512
+
+# Install dependencies
+apt-get -y install ssh
+
+cat <<EOF>> /etc/ssh/sshd_config
+Port $ssh_port
+PasswordAuthentication no
+AllowUsers root
+EOF
+
+# Install firewall
+
+apt-get -y install ufw
+
+ufw logging off
+ufw allow in "$ssh_port"/tcp
+ufw allow in 27960:27969/tcp
+ufw allow in 27960:27969/udp
+ufw --force enable
+
+# Install Grub
+
+sed -i -e 's/message=/message_null=/g' /etc/grub.d/10_linux
+
+cat <<EOF>> /etc/default/grub
+GRUB_TIMEOUT=0
+GRUB_RECORDFAIL_TIMEOUT=0
+GRUB_TERMINAL=console
+GRUB_DISTRIBUTOR=``
+GRUB_DISABLE_OS_PROBER=true
+GRUB_DISABLE_SUBMENU=y
+EOF
+
+update-grub
+grub-install "$disk"
+
+# Install Go
+
+wget https://dl.google.com/go/go1.14.2.linux-amd64.tar.gz
+tar -C /usr/local -xzf go1.14.2.linux-amd64.tar.gz
+rm go1.14.2.linux-amd64.tar.gz
+echo 'export PATH=$PATH:/usr/local/go/bin' >> /etc/profile
+
+# Set-up all users
+for dir in $(ls -1d /root /home/* 2>/dev/null ||:)
+do
+	# Add convenient aliases & behaviors
+	cat <<-'EOF'>> $dir/.bashrc
+	GOPATH=$HOME/go
+	PATH=$PATH:$GOPATH/bin
+	alias gobuild='CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -trimpath -ldflags="-s -w"'
+	EOF
+	echo 'GOPATH=$HOME/go' >> $dir/.profile
+
+	# Fix rights
+	usr=$(echo "$dir" | rev | cut -d/ -f1 | rev)
+	chown -R $usr:$usr $dir ||:
+done
+
+# Install Node.js
+
+curl -sL https://deb.nodesource.com/setup_12.x | bash -
+apt-get -y install nodejs
+
+# Install FX: command-line JSON processing tool (https://github.com/antonmedv/fx)
+
+npm install -g fx
+
+# Install Sublime Text & Sublime Merge
+
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add -
+apt-get install -y apt-transport-https
+
+cat <<EOF> /etc/apt/sources.list.d/sublime-text.list
+deb https://download.sublimetext.com/ apt/stable/
+EOF
+
+apt-get update
+apt-get install -y sublime-text sublime-merge libgtk2.0-0
+
+# Install VSCode
+
+wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | apt-key add -
+echo 'deb https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/repos/debs/ vscodium main' >> /etc/apt/sources.list.d/vscodium.list
+
+apt-get update
+apt-get install -y codium
+
+ln -s /usr/bin/codium /usr/local/bin/code ||:
+
+# Set-up all users
+for dir in $(ls -1d /home/* 2>/dev/null ||:)
+do
+	# Disable most of the telemetry and auto-updates
+	mkdir -p $dir/.config/VSCodium/User
+	cat <<-'EOF'> $dir/.config/VSCodium/User/settings.json
+	{
+	    "telemetry.enableCrashReporter": false,
+	    "update.enableWindowsBackgroundUpdates": false,
+	    "update.mode": "none",
+	    "update.showReleaseNotes": false,
+	    "extensions.autoCheckUpdates": false,
+	    "extensions.autoUpdate": false,
+	    "workbench.enableExperiments": false,
+	    "workbench.settings.enableNaturalLanguageSearch": false,
+	    "npm.fetchOnlinePackageInfo": false
+	}
+	EOF
+
+	# Fix rights
+	usr=$(echo "$dir" | rev | cut -d/ -f1 | rev)
+	chown -R $usr:$usr $dir ||:
+done
+
+# Install LibreOffice
+
+apt-get -y install libreoffice
+
+# Install Exam app
+
+wget https://01.alem.school/assets/files/exam.AppImage -O /usr/local/bin/exam.AppImage
+chmod +x /usr/local/bin/exam.AppImage
+
+cat <<EOF> /home/student/.local/share/applications/appimagekit-exam.desktop
+[Desktop Entry]
+Name=exam
+Comment=the exam client
+Exec="/usr/local/bin/exam.AppImage" %U
+Terminal=false
+Type=Application
+Icon=appimagekit-exam
+StartupWMClass=exam
+X-AppImage-Version=1.0.0
+MimeType=x-scheme-handler/exam;
+Categories=Utility;
+X-AppImage-BuildId=1RHp8aPhkSgD1PXGL1NW5QDsbFF
+X-Desktop-File-Install-Version=0.23
+X-AppImage-Comment=Generated by /tmp/.mount_exam.1PqfsDP/AppRun
+TryExec=/usr/local/bin/exam.AppImage
+EOF
+chown student:student /home/student/.local/share/applications/appimagekit-exam.desktop
+
+sudo -iu student xdg-mime default appimagekit-exam.desktop x-scheme-handler/exam
+
+# Install Go library
+
+sudo -iu student go get github.com/01-edu/z01
+
+# Install Docker
+
+apt-get -y install docker.io
+adduser student docker
 
 # Purge unused Ubuntu packages
 pkgs="
@@ -234,4 +440,52 @@ if ! test -v PERSISTENT; then
 	cp /etc/shadow /etc/shadow-
 fi
 
-. clean.sh
+# Clean system
+
+# Purge useless packages
+apt-get -y autoremove --purge
+apt-get autoclean
+apt-get clean
+apt-get install
+
+rm -rf /root/.local
+
+# Remove connection logs
+> /var/log/lastlog
+> /var/log/wtmp
+> /var/log/btmp
+
+# Remove machine ID
+> /etc/machine-id
+
+# Remove logs
+cd /var/log
+rm -rf alternatives.log*
+rm -rf apt/*
+rm -rf auth.log
+rm -rf dpkg.log*
+rm -rf gpu-manager.log
+rm -rf installer
+rm -rf journal/d6e982aa8c9d4c1dbcbdcff195642300
+rm -rf kern.log
+rm -rf syslog
+rm -rf sysstat
+
+# Remove random seeds
+rm -rf /var/lib/systemd/random-seed
+rm -rf /var/lib/NetworkManager/secret_key
+
+# Remove network configs
+rm -rf /etc/NetworkManager/system-connections/*
+rm -rf /var/lib/bluetooth/*
+rm -rf /var/lib/NetworkManager/*
+
+# Remove caches
+rm -rf /var/lib/gdm3/.cache/*
+rm -rf /root/.cache
+rm -rf /home/student/.cache
+
+rm -rf /home/student/.sudo_as_admin_successful /home/student/.bash_logout
+
+rm -rf /tmp/*
+rm -rf /tmp/.* ||:
