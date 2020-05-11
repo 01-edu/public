@@ -41,7 +41,7 @@ Run a terminal and type these commands :
 
 ```shell
 unset HISTFILE
-sudo apt-get -y install git
+sudo apt -y install git
 git clone https://github.com/01-edu/public.git
 public/scripts/setup.sh
 ```
