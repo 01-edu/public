@@ -11,7 +11,7 @@ repo_dir=$(git rev-parse --show-toplevel)
 gsettings set org.gnome.desktop.session idle-delay 0
 gsettings set org.gnome.desktop.screensaver lock-enabled false
 
-sudo -E ./configure_ubuntu.sh
+sudo -E ./configure.sh
 cat dconfig.txt | dconf load /
 rm -rf "$repo_dir"
 reboot
