@@ -32,7 +32,6 @@ lsb-release
 lshw
 lsof
 lz4
-lz4
 lzop
 man
 mc
