@@ -1,13 +1,11 @@
 package main
 
 import (
+	"fmt"
+
 	"./student"
 	"github.com/01-edu/public/go/lib"
 )
-
-func concat(a, b string) string {
-	return a + b
-}
 
 func main() {
 	table := [][]string{}
@@ -21,6 +19,6 @@ func main() {
 		[]string{"Hello!", " How are you?"},
 	)
 	for _, arg := range table {
-		lib.Challenge("Concat", student.Concat, concat, arg[0], arg[1])
+		lib.Challenge("Concat", student.Concat, fmt.Sprint, arg[0], arg[1])
 	}
 }

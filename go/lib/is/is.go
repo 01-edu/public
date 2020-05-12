@@ -25,7 +25,7 @@ func Lower(s string) bool {
 
 func Upper(s string) bool {
 	for _, r := range s {
-		if !(r >= 'A' && r <= 'Z') {
+		if !unicode.IsUpper(r) {
 			return false
 		}
 	}

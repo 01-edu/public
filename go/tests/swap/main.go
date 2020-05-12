@@ -5,10 +5,6 @@ import (
 	"github.com/01-edu/public/go/lib"
 )
 
-func Swap(a, b *int) {
-	*a, *b = *b, *a
-}
-
 func main() {
 	i := 0
 	for i < 30 {

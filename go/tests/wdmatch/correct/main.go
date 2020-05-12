@@ -5,30 +5,27 @@ import (
 	"os"
 )
 
-func result(str1 string, str2 string) string {
-	arraystr1 := []rune(str1)
-	arraystr2 := []rune(str2)
+func ok(s1 string, s2 string) bool {
+	runes1 := []rune(s1)
+	runes2 := []rune(s2)
 	var rest string
 	count := 0
-	for i := 0; i < len(arraystr1); i++ {
-		for j := count; j < len(arraystr2); j++ {
-			if arraystr1[i] == arraystr2[j] {
-				rest += string(arraystr1[i])
-				j = len(arraystr2) - 1
+	for i := 0; i < len(runes1); i++ {
+		for j := count; j < len(runes2); j++ {
+			if runes1[i] == runes2[j] {
+				rest += string(runes1[i])
+				j = len(runes2) - 1
 			}
 			count++
 		}
 	}
-	if rest != str1 {
-		return ""
-	}
-	return rest
+	return s1 == rest
 }
 
 func main() {
 	if len(os.Args) == 3 {
-		fmt.Println(result(os.Args[1], os.Args[2]))
-	} else {
-		fmt.Println()
+		if ok(os.Args[1], os.Args[2]) {
+			fmt.Println(os.Args[1])
+		}
 	}
 }

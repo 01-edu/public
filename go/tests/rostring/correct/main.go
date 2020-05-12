@@ -6,9 +6,9 @@ import (
 	"strings"
 )
 
-func deleteExtraSpaces(arr []string) []string {
+func deleteExtraSpaces(a []string) []string {
 	var res []string
-	for _, v := range arr {
+	for _, v := range a {
 		if v != "" {
 			res = append(res, v)
 		}

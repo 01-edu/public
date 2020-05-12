@@ -26,7 +26,7 @@ func max(numbers ...int) int {
 	return max
 }
 
-func Costume_profit(a, b, c, d, e, f int) int {
+func costumeProfit(a, b, c, d, e, f int) int {
 	if d == min(a, b, c, d) {
 		return d * max(e, f)
 	}
@@ -51,5 +51,5 @@ func main() {
 	e, _ := strconv.Atoi(args[4])
 	f, _ := strconv.Atoi(args[5])
 
-	fmt.Println(Costume_profit(a, b, c, d, e, f))
+	fmt.Println(costumeProfit(a, b, c, d, e, f))
 }

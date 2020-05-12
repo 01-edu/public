@@ -25,7 +25,7 @@ func simpleSearch(runes []rune, text string) []string {
 	exp := string(runes)
 
 	var result []string
-	if !(strings.ContainsRune(exp, '|')) {
+	if !strings.ContainsRune(exp, '|') {
 		helper := []string{exp}
 		result = append(singleSearch(helper, text))
 	} else {

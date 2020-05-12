@@ -6,29 +6,19 @@ import (
 	"strings"
 )
 
-func deleteExtraSpaces(arr []string) []string {
-	var res []string
-	for _, v := range arr {
+func deleteExtraSpaces(a []string) (res []string) {
+	for _, v := range a {
 		if v != "" {
 			res = append(res, v)
 		}
 	}
-	return res
+	return
 }
 
 func main() {
-	if len(os.Args) != 2 {
-		fmt.Println()
-		os.Exit(0)
+	if len(os.Args) == 2 {
+		arg := strings.Split(os.Args[1], " ")
+		arg = deleteExtraSpaces(arg)
+		fmt.Println(strings.Join(arg, "   "))
 	}
-
-	arg := strings.Split(os.Args[1], " ")
-	arg = deleteExtraSpaces(arg)
-	for i, v := range arg {
-		fmt.Print(v)
-		if i < len(arg)-1 {
-			fmt.Print("   ")
-		}
-	}
-	fmt.Println()
 }

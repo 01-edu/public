@@ -5,15 +5,15 @@ import (
 	"github.com/01-edu/public/go/lib"
 )
 
-func trimAtoi(str string) int {
-	chars := []rune(str)
-	for i := range str {
-		chars[i] = rune(str[i])
+func trimAtoi(s string) int {
+	runes := []rune(s)
+	for i := range s {
+		runes[i] = rune(s[i])
 	}
 	var numbers []rune
-	for i := range chars {
-		if (chars[i] >= '0' && chars[i] <= '9') || (len(numbers) == 0 && (chars[i]) == '-' || chars[i] == '+') {
-			numbers = append(numbers, chars[i])
+	for _, r := range runes {
+		if (r >= '0' && r <= '9') || (len(numbers) == 0 && (r) == '-' || r == '+') {
+			numbers = append(numbers, r)
 		}
 	}
 	if len(numbers) == 0 || (len(numbers) == 1 && (numbers[0] == '-' || numbers[0] == '+')) {
@@ -68,3 +68,5 @@ func main() {
 		lib.Challenge("TrimAtoi", student.TrimAtoi, trimAtoi, elem)
 	}
 }
+
+// TODO: refactor, including the subject

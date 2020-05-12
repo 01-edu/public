@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a program that outputs `true` if the number of occurrences of each character is unique, otherwise `false`. `\n` should be at the of line.
+Write a program that outputs `true` if the number of occurrences of each character is unique, otherwise `false`. `\n` should be at the end of the line.
 
-If number of arguments is not 1 output `\n`.
+If number of arguments is not 1 output nothing.
 
 Only lower case characters will be given.
 
@@ -12,11 +12,11 @@ Only lower case characters will be given.
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./main "abbaac"
+student@ubuntu:~/[[ROOT]]/test$ ./main abbaac
 true
-student@ubuntu:~/[[ROOT]]/test$ ./main "ab"
+student@ubuntu:~/[[ROOT]]/test$ ./main ab
 false
-student@ubuntu:~/[[ROOT]]/test$ ./main "abcacccazb"
+student@ubuntu:~/[[ROOT]]/test$ ./main abcacccazb
 true
 ```
 

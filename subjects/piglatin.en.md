@@ -27,5 +27,5 @@ unchcray$
 student@ubuntu:~/student/test$ ./piglatin crnch | cat -e
 No vowels$
 student@ubuntu:~/student/test$ ./piglatin something else | cat -e
-$
+student@ubuntu:~/student/test$
 ```

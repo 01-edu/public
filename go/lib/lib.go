@@ -150,11 +150,10 @@ func RandRune() rune {
 		r := table.R32[rand.Intn(len(table.R32))]
 		n := uint32(rand.Intn(int((r.Hi-r.Lo)/r.Stride) + 1))
 		return rune(r.Lo + n*r.Stride)
-	} else {
-		r := table.R16[rand.Intn(len(table.R16))]
-		n := uint16(rand.Intn(int((r.Hi-r.Lo)/r.Stride) + 1))
-		return rune(r.Lo + n*r.Stride)
 	}
+	r := table.R16[rand.Intn(len(table.R16))]
+	n := uint16(rand.Intn(int((r.Hi-r.Lo)/r.Stride) + 1))
+	return rune(r.Lo + n*r.Stride)
 }
 
 // RandStr returns a string with l random characters taken from chars.
@@ -407,4 +406,17 @@ func ChallengeMain(exercise string, args ...string) {
 	}
 }
 
+// GCD returns greatest common divisor of a and b.
+func GCD(a, b int) int {
+	for a != b {
+		if a > b {
+			a -= b
+		} else {
+			b -= a
+		}
+	}
+	return a
+}
+
 // TODO: check unhandled errors on all solutions (it should contains "ERROR" on the first line to prove we correctly handle the error)
+// TODO: remove the number of rand functions, refactor test cases (aka "table")

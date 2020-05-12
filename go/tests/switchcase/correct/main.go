@@ -8,9 +8,8 @@ import (
 
 func main() {
 	if len(os.Args) == 2 {
-		s := os.Args[1]
-		runes := []rune(s)
-		for i, r := range s {
+		runes := []rune(os.Args[1])
+		for i, r := range runes {
 			if unicode.IsLower(r) {
 				runes[i] = unicode.ToUpper(r)
 			} else if unicode.IsUpper(r) {

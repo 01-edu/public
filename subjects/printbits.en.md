@@ -6,7 +6,7 @@ Write a program that takes a number as argument, and prints it in binary value *
 
 - If the the argument is not a number the program should print `00000000`.
 
-### Expected output :
+### Usage :
 
 ```console
 student@ubuntu:~/printbits$ go build

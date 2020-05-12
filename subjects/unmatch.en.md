@@ -2,14 +2,14 @@
 
 ### Instructions
 
-Write a function, `Unmatch`, that returns the element of the slice (arr) that does not have a correspondent pair.
+Write a function, `Unmatch`, that returns the element of the slice that does not have a correspondent pair.
 
 - If all the number have a correspondent pair, it shoud return `-1`.
 
 ### Expected function
 
 ```go
-func Unmatch(arr []int) int {
+func Unmatch(a []int) int {
 
 }
 ```
@@ -27,8 +27,8 @@ import (
 )
 
 func main() {
-	arr := []int{1, 2, 3, 1, 2, 3, 4}
-	unmatch := piscine.Unmatch(arr)
+	a := []int{1, 2, 3, 1, 2, 3, 4}
+	unmatch := piscine.Unmatch(a)
 	fmt.Println(unmatch)
 }
 ```

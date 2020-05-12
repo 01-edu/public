@@ -8,18 +8,13 @@ import (
 )
 
 func printComb2() {
-	a := 0
-	b := 1
-	for a <= 98 {
-		b = a + 1
-		for b <= 99 {
+	for a := 0; a <= 98; a++ {
+		for b := a + 1; b <= 99; b++ {
 			fmt.Printf("%.2d %.2d", a, b)
-			if !(a == 98 && b == 99) {
+			if a != 98 || b != 99 {
 				fmt.Print(", ")
 			}
-			b++
 		}
-		a++
 	}
 	fmt.Println()
 }

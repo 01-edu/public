@@ -6,7 +6,7 @@ import (
 	"strconv"
 )
 
-func Tabmul(nbr int) {
+func tabmul(nbr int) {
 	i := 1
 	for i < 10 {
 		result := nbr * i
@@ -18,7 +18,7 @@ func Tabmul(nbr int) {
 func main() {
 	if len(os.Args) == 2 {
 		number, _ := strconv.Atoi(os.Args[1])
-		Tabmul(number)
+		tabmul(number)
 	} else {
 		fmt.Println()
 	}

@@ -17,8 +17,8 @@ func findPrevPrime(nb int) int {
 }
 
 func main() {
-	a := append(lib.MultRandIntBetween(0, 99999), 5, 4, 1)
-	for _, elem := range a {
+	elems := append(lib.MultRandIntBetween(0, 99999), 5, 4, 1)
+	for _, elem := range elems {
 		lib.Challenge("FindPrevPrime", student.FindPrevPrime, findPrevPrime, elem)
 	}
 }

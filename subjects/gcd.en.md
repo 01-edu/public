@@ -6,7 +6,7 @@ Write a program that takes two `string` representing two strictly positive integ
 
 The program displays their greatest common divisor followed by a newline (`'\n'`).
 
-If the number of parameters is different from 2, the program displays nothing.
+If the number of arguments is different from 2, the program displays nothing.
 
 All arguments tested will be positive `int` values.
 

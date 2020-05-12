@@ -5,12 +5,6 @@ import (
 	"github.com/01-edu/public/go/lib"
 )
 
-func UltimateDivMod(a, b *int) {
-	temp := *a
-	*a = *a / *b
-	*b = temp % *b
-}
-
 func main() {
 	i := 0
 	for i < lib.SliceLen {

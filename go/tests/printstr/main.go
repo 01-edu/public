@@ -7,14 +7,9 @@ import (
 	"github.com/01-edu/public/go/lib"
 )
 
-func printStr(s string) {
-	fmt.Print(s)
-}
-
 func main() {
-	table := lib.MultRandASCII()
-	table = append(table, "Hello World!")
+	table := append(lib.MultRandASCII(), "Hello World!")
 	for _, arg := range table {
-		lib.Challenge("PrintStr", student.PrintStr, printStr, arg)
+		lib.Challenge("PrintStr", student.PrintStr, fmt.Print, arg)
 	}
 }

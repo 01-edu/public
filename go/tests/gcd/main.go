@@ -15,9 +15,9 @@ func main() {
 		{"11", "77"},
 	}
 	for i := 0; i < 25; i++ {
-		number1 := strconv.Itoa(lib.RandIntBetween(1, 100000))
-		number2 := strconv.Itoa(lib.RandIntBetween(1, 100))
-		args = append(args, []string{number1, number2})
+		a := strconv.Itoa(lib.RandIntBetween(1, 100000))
+		b := strconv.Itoa(lib.RandIntBetween(1, 100))
+		args = append(args, []string{a, b})
 	}
 	for _, v := range args {
 		lib.ChallengeMain("gcd", v...)

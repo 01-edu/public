@@ -5,11 +5,6 @@ import (
 	"github.com/01-edu/public/go/lib"
 )
 
-func DivMod(a, b int, div, mod *int) {
-	*div = a / b
-	*mod = a % b
-}
-
 func main() {
 	i := 0
 	for i < lib.SliceLen {

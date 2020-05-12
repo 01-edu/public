@@ -4,12 +4,12 @@
 
 Write a function called `reduceint` that simulates the behaviour of reduce from JavaScript.
 
-The function should have as parameters a function, `f func(int, int) int` and a slice of integers, `arr []int`. You should apply for each element of the slice the arithmetic function, saving it and printing.
+The function should have as parameters a slice of integers, `a []int` and a function `f func(int, int) int`. You should apply for each element of the slice the arithmetic function, saving it and printing.
 
 ### Expected function
 
 ```go
-func ReduceInt(f func(int, int) int, arr []int) {
+func ReduceInt(a []int, f func(int, int) int) {
 
 }
 ```
@@ -32,9 +32,9 @@ func main() {
 		return acc / cur
 	}
 	as := []int{500, 2}
-	ReduceInt(mul, as)
-	ReduceInt(sum, as)
-	ReduceInt(div, as)
+	ReduceInt(as, mul)
+	ReduceInt(as, sum)
+	ReduceInt(as, div)
 }
 
 ```

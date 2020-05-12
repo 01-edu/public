@@ -8,7 +8,7 @@ Let s1 and s2 be `string`. It is considered that s1 is hidden in s2 if it is pos
 
 If s1 is an empty `string` it is considered hidden in any `string`.
 
-If the number of parameters is different from 2, the program displays nothing.
+If the number of arguments is different from 2, the program displays nothing.
 
 ### Usage
 

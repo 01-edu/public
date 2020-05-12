@@ -42,7 +42,7 @@ func defineRectangle(vPoint []point, n int) *rectangle {
 	return ptr
 }
 
-func calArea(ptr *rectangle) int {
+func calcArea(ptr *rectangle) int {
 	return (ptr.upLeft.x - ptr.downRight.x) * (ptr.downRight.y - ptr.upLeft.y)
 }
 
@@ -60,5 +60,5 @@ func main() {
 	}
 
 	rectangle = defineRectangle(vPoint, n)
-	fmt.Println("area of the rectangle:", calArea(rectangle))
+	fmt.Println("area of the rectangle:", calcArea(rectangle))
 }

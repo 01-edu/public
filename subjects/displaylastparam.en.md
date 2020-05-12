@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a program that takes `string` as arguments, and displays its last argument.
+Write a program that displays its last argument, if there is one.
 
-### Expected output
+### Usage
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ go build

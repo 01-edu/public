@@ -7,7 +7,7 @@ Balanced string is a string that has equal quantity of 'C' and 'D' characters.
 Write a program that takes a string and outputs maximum amount of balanced strings without ignoring any letters.
 Display output with `\n` at the end of line.
 
-If the number of arguments is not 1, display `\n`.
+If the number of arguments is not 1, display nothing.
 
 It will only be tested strings containing the characters 'C' and 'D'.
 

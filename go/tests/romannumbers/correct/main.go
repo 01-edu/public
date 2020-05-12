@@ -17,7 +17,7 @@ func main() {
 		nbr, err := strconv.Atoi(os.Args[1])
 		if err != nil || nbr >= 4000 || nbr == 0 {
 			fmt.Println("ERROR: can not convert to roman digit")
-			os.Exit(0)
+			return
 		}
 		patter := []roman{
 			{num: 1000, romanDigit: "M"},

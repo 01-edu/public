@@ -47,7 +47,7 @@ func slice(a []string, nbr ...int) []string {
 }
 
 func main() {
-	arr := [][]interface{}{
+	elems := [][]interface{}{
 		{
 			[]string{"coding", "algorithm", "ascii", "package", "golang"},
 			1,
@@ -72,14 +72,14 @@ func main() {
 
 	s := lib.MultRandWords()
 
-	arr = append(arr, []interface{}{s, -len(s) - 10, -len(s) - 5})
+	elems = append(elems, []interface{}{s, -len(s) - 10, -len(s) - 5})
 
 	for i := 0; i < 3; i++ {
 		s = lib.MultRandWords()
-		arr = append(arr, []interface{}{s, lib.RandIntBetween(-len(s)-10, len(s)+10), lib.RandIntBetween(-len(s)-8, len(s)+10)})
+		elems = append(elems, []interface{}{s, lib.RandIntBetween(-len(s)-10, len(s)+10), lib.RandIntBetween(-len(s)-8, len(s)+10)})
 	}
 
-	for _, a := range arr {
+	for _, a := range elems {
 		lib.Challenge("Slice", student.Slice, slice, a...)
 	}
 }
