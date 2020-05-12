@@ -6,13 +6,12 @@ import (
 	"github.com/01-edu/public/go/lib/is"
 )
 
-func any(f func(string) bool, arr []string) bool {
-	for _, el := range arr {
+func any(f func(string) bool, a []string) bool {
+	for _, el := range a {
 		if f(el) {
 			return true
 		}
 	}
-
 	return false
 }
 

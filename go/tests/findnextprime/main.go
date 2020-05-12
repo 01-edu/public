@@ -14,8 +14,7 @@ func findNextPrime(nb int) int {
 }
 
 func main() {
-	table := append(
-		lib.MultRandIntBetween(-1000000, 1000000),
+	table := append(lib.MultRandIntBetween(-1000000, 1000000),
 		0,
 		1,
 		2,

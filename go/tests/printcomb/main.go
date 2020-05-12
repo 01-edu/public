@@ -13,13 +13,12 @@ func printComb() {
 			for k := j + 1; k <= '9'; k++ {
 				fmt.Printf("%c%c%c", i, j, k)
 				if i < '7' {
-					fmt.Printf(", ")
-				} else {
-					fmt.Println()
+					fmt.Print(", ")
 				}
 			}
 		}
 	}
+	fmt.Println()
 }
 
 func main() {

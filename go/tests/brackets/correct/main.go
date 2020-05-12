@@ -6,10 +6,10 @@ import (
 )
 
 func matchBrackets(exp string) bool {
-	rn := []rune(exp)
+	runes := []rune(exp)
 	var opened []rune
 	ptr := -1
-	for _, c := range rn {
+	for _, c := range runes {
 		if c == '(' || c == '[' || c == '{' {
 			opened = append(opened, c)
 			ptr++

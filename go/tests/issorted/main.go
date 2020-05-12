@@ -7,18 +7,18 @@ import (
 	"github.com/01-edu/public/go/lib"
 )
 
-func isSorted(f func(int, int) int, arr []int) bool {
+func isSorted(f func(int, int) int, a []int) bool {
 	ascendingOrdered := true
 	descendingOrdered := true
 
-	for i := 1; i < len(arr); i++ {
-		if !(f(arr[i-1], arr[i]) >= 0) {
+	for i := 1; i < len(a); i++ {
+		if f(a[i-1], a[i]) < 0 {
 			ascendingOrdered = false
 		}
 	}
 
-	for i := 1; i < len(arr); i++ {
-		if !(f(arr[i-1], arr[i]) <= 0) {
+	for i := 1; i < len(a); i++ {
+		if f(a[i-1], a[i]) > 0 {
 			descendingOrdered = false
 		}
 	}

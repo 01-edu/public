@@ -8,18 +8,19 @@ import (
 )
 
 func main() {
-	var arg []string
+	var args []string
 	for i := 0; i < 20; i++ {
-		arg = append(arg, strconv.Itoa(lib.RandIntBetween(0, 255)))
+		args = append(args, strconv.Itoa(lib.RandIntBetween(0, 255)))
 	}
-	arg = append(arg, "")
-	arg = append(arg, "a")
-	arg = append(arg, "bc")
-	arg = append(arg, "def")
-	arg = append(arg, "notanumber")
-	arg = append(arg, lib.RandBasic())
-
-	for _, v := range arg {
+	args = append(args,
+		"",
+		"a",
+		"bc",
+		"def",
+		"notanumber",
+		lib.RandBasic(),
+	)
+	for _, v := range args {
 		lib.ChallengeMain("printbits", strings.Fields(v)...)
 	}
 }

@@ -4,34 +4,21 @@ import (
 	"fmt"
 	"os"
 	"strconv"
-)
 
-func rangeOf(start, end int) []int {
-	var ran []int
-	if start >= end {
-		for i := start; i >= end; i-- {
-			ran = append(ran, i)
-		}
-		return ran
-	}
-	for i := start; i <= end; i++ {
-		ran = append(ran, i)
-	}
-	return ran
-}
+	"github.com/01-edu/public/go/lib"
+)
 
 func main() {
 	if len(os.Args) != 3 {
 		return
 	}
-	secondArg := 0
-	firstArg, err := strconv.Atoi(os.Args[1])
-	if err == nil {
-		secondArg, err = strconv.Atoi(os.Args[2])
-	}
+	a, err := strconv.Atoi(os.Args[1])
 	if err != nil {
-		fmt.Println(err)
-		return
+		panic("ERROR: " + err.Error())
 	}
-	fmt.Println(rangeOf(firstArg, secondArg))
+	b, err := strconv.Atoi(os.Args[2])
+	if err != nil {
+		panic("ERROR: " + err.Error())
+	}
+	fmt.Println(lib.IntRange(a, b))
 }

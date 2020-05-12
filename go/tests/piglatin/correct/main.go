@@ -3,35 +3,18 @@ package main
 import (
 	"fmt"
 	"os"
+	"strings"
 )
-
-func firstNotVowel(letters []rune) int {
-	index := 0
-	for i := 0; i < len(letters); i++ {
-		if letters[i] == 'a' || letters[i] == 'e' || letters[i] == 'i' || letters[i] == 'o' || letters[i] == 'u' ||
-			letters[i] == 'A' || letters[i] == 'E' || letters[i] == 'I' || letters[i] == 'O' || letters[i] == 'U' {
-			return index
-		}
-		index++
-	}
-	return 0
-}
 
 func main() {
 	if len(os.Args) != 2 || os.Args[1] == "" {
-		fmt.Println()
 		return
 	}
-	letters := []rune(os.Args[1])
-	switch letters[0] {
-	case 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U':
-		fmt.Print(os.Args[1] + "ay\n")
-	default:
-		start := firstNotVowel(letters)
-		if start == 0 {
-			fmt.Println("No vowels")
-		} else {
-			fmt.Print(string(letters[start:]) + string(letters[:start]) + "ay\n")
-		}
+	s := os.Args[1]
+	vowel := strings.IndexAny(s, "aeiouAEIOU")
+	if vowel == -1 {
+		fmt.Println("No vowels")
+	} else {
+		fmt.Println(string(s[vowel:]) + string(s[:vowel]) + "ay")
 	}
 }

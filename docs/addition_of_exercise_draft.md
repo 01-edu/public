@@ -50,7 +50,7 @@ Write a program that takes a positive `int` and displays its prime factors, foll
 
 - Factors must be displayed in ascending order and separated by `*`. <span style="color:#ff3234">(formating requirement) </span>
 
-- If the number of parameters is different from 1, the program displays a newline. <span style="color:#ff3234">(special case requirement, this case will need to be tested)</span>
+- If the number of arguments is different from 1, the program displays a newline. <span style="color:#ff3234">(special case requirement, this case will need to be tested)</span>
 
 - The input, when there is one, will always be valid. <span style="color:#ff3234">(Clarification on what the tester will do, hence giving the student guidelines on the cases to be handled, the tests have to reflect this instruction as well)</span>
 

@@ -10,7 +10,7 @@ func isPositive(i int) bool {
 	return i > 0
 }
 
-func isNegative0(i int) bool {
+func isNegative(i int) bool {
 	return i < 0
 }
 
@@ -25,11 +25,11 @@ func _map(f func(int) bool, a []int) []bool {
 }
 
 func main() {
-	functions := []func(int) bool{isPositive, isNegative0, is.Prime}
+	functions := []func(int) bool{isPositive, isNegative, is.Prime}
 
 	type node struct {
-		f   func(int) bool
-		arr []int
+		f func(int) bool
+		a []int
 	}
 
 	table := []node{}
@@ -37,18 +37,18 @@ func main() {
 	for i := 0; i < 15; i++ {
 		function := functions[lib.RandIntBetween(0, len(functions)-1)]
 		val := node{
-			f:   function,
-			arr: lib.MultRandIntBetween(-1000000, 1000000),
+			f: function,
+			a: lib.MultRandIntBetween(-1000000, 1000000),
 		}
 		table = append(table, val)
 	}
 
 	table = append(table, node{
-		f:   is.Prime,
-		arr: []int{1, 2, 3, 4, 5, 6},
+		f: is.Prime,
+		a: []int{1, 2, 3, 4, 5, 6},
 	})
 
 	for _, arg := range table {
-		lib.Challenge("Map", student.Map, _map, arg.f, arg.arr)
+		lib.Challenge("Map", student.Map, _map, arg.f, arg.a)
 	}
 }

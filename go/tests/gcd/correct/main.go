@@ -4,23 +4,14 @@ import (
 	"fmt"
 	"os"
 	"strconv"
+
+	"github.com/01-edu/public/go/lib"
 )
 
-// Greatest common divisor
-func gcd(num1, num2 int) int {
-	for i := num1; i > 0; i-- {
-		if num1%i == 0 && num2%i == 0 {
-			return i
-		}
-	}
-	return 1
-}
-
 func main() {
-	if len(os.Args) != 3 {
-		return
+	if len(os.Args) == 3 {
+		a, _ := strconv.Atoi(os.Args[1])
+		b, _ := strconv.Atoi(os.Args[2])
+		fmt.Println(lib.GCD(a, b))
 	}
-	v1, _ := strconv.Atoi(os.Args[1])
-	v2, _ := strconv.Atoi(os.Args[2])
-	fmt.Println(gcd(v1, v2))
 }

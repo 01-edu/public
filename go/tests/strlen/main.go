@@ -5,14 +5,8 @@ import (
 	"github.com/01-edu/public/go/lib"
 )
 
-func strLen(str string) int {
-	len := 0
-
-	strConverted := []rune(str)
-	for i, _ := range strConverted {
-		len = i + 1
-	}
-	return len
+func strLen(s string) int {
+	return len([]rune(s))
 }
 
 func main() {
@@ -31,3 +25,5 @@ func main() {
 		lib.Challenge("StrLen", strLen, student.StrLen, s)
 	}
 }
+
+// TODO: refactor, simplify, no need for specifiy charset : check lib

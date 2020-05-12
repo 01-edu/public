@@ -27,7 +27,7 @@ func main() {
 }
 ```
 
-### Expected output
+### Usage
 
 ```console
 student@ubuntu:~/[[ROOT]]/point$ go build

@@ -7,10 +7,6 @@ import (
 	"github.com/01-edu/public/go/lib"
 )
 
-func compare(a, b string) int {
-	return strings.Compare(a, b)
-}
-
 func main() {
 	type node struct {
 		s         string
@@ -49,6 +45,6 @@ func main() {
 	)
 
 	for _, arg := range table {
-		lib.Challenge("Compare", student.Compare, compare, arg.s, arg.toCompare)
+		lib.Challenge("Compare", student.Compare, strings.Compare, arg.s, arg.toCompare)
 	}
 }

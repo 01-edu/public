@@ -4,41 +4,28 @@ import (
 	"fmt"
 	"os"
 	"strconv"
-	"unicode"
 )
 
-func IsNumeric(s string) bool {
-	for _, r := range s {
-		if !unicode.IsDigit(r) {
-			return false
-		}
-	}
-	return true
-}
-
 func main() {
-	arguments := os.Args[1:]
-	for i := range arguments {
-		if IsNumeric(arguments[i]) {
-			number, _ := strconv.Atoi(arguments[i])
-			boole := false
-			if os.Args[1] == "--upper" {
-				boole = true
-			}
-
-			if number <= 26 && number >= 1 && !boole {
-				number += 96
-				fmt.Printf("%c", rune(number))
-			} else if number <= 26 && number >= 1 && boole {
-				number += 64
-				fmt.Printf("%c", rune(number))
-			} else {
-				fmt.Print(" ")
-			}
+	args := os.Args[1:]
+	if len(args) == 0 {
+		return
+	}
+	var upper bool
+	if args[0] == "--upper" {
+		upper = true
+		args = args[1:]
+	}
+	for _, arg := range args {
+		if nb, err := strconv.Atoi(arg); err != nil || nb < 1 || nb > 26 {
+			fmt.Print(" ")
 		} else {
-			if !(arguments[i] == "--upper" && i == 0) {
-				fmt.Print(" ")
+			if upper {
+				nb += 'A' - 1
+			} else {
+				nb += 'a' - 1
 			}
+			fmt.Printf("%c", rune(nb))
 		}
 	}
 	fmt.Println()

@@ -7,17 +7,13 @@ import (
 )
 
 func main() {
-	Lower := lib.RuneRange('a', 'z')
-	Upper := lib.RuneRange('A', 'Z')
-	letters := Lower + Upper + " "
-	var arr []string
+	letters := lib.Lower + lib.Upper + " "
+	a := []string{""}
 	for i := 0; i < 10; i++ {
-		str := lib.RandStr(lib.RandIntBetween(2, 20), letters)
-		arr = append(arr, str)
+		a = append(a, lib.RandStr(lib.RandIntBetween(2, 20), letters))
 	}
-	arr = append(arr, "")
 
-	for _, v := range arr {
+	for _, v := range a {
 		lib.ChallengeMain("rotatevowels", strings.Fields(v)...)
 	}
 	lib.ChallengeMain("rotatevowels", "Hello World")

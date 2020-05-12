@@ -3,37 +3,26 @@ package main
 import (
 	"fmt"
 	"os"
+	"strings"
 )
-
-func isIn(a rune, arr []rune) bool {
-	for _, v := range arr {
-		if a == v {
-			return true
-		}
-	}
-	return false
-}
 
 func main() {
 	if len(os.Args) == 3 {
-		var res []rune
-		str1 := []rune(os.Args[1])
-		str2 := []rune(os.Args[2])
+		var res string
+		s1 := os.Args[1]
+		s2 := os.Args[2]
 
-		for _, v := range str1 {
-			if !isIn(v, res) {
-				res = append(res, v)
+		for _, v := range s1 {
+			if !strings.ContainsRune(res, v) {
+				res += string(v)
 			}
 		}
-
-		for _, v := range str2 {
-			if !isIn(v, res) {
-				res = append(res, v)
+		for _, v := range s2 {
+			if !strings.ContainsRune(res, v) {
+				res += string(v)
 			}
 		}
-
-		fmt.Print(string(res))
+		fmt.Print(res)
 	}
-
 	fmt.Println()
 }

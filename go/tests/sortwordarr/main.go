@@ -8,10 +8,6 @@ import (
 	"github.com/01-edu/public/go/lib"
 )
 
-func sortWordArr(a []string) {
-	sort.Strings(a)
-}
-
 func main() {
 	table := [][]string{{"a", "A", "1", "b", "B", "2", "c", "C", "3"}}
 
@@ -21,22 +17,22 @@ func main() {
 
 	for _, org := range table {
 		// copy for using the solution function
-		cp_sol := make([]string, len(org))
+		copySol := make([]string, len(org))
 		// copy for using the student function
-		cp_stu := make([]string, len(org))
+		copyStu := make([]string, len(org))
 
-		copy(cp_sol, org)
-		copy(cp_stu, org)
+		copy(copySol, org)
+		copy(copyStu, org)
 
-		sortWordArr(cp_sol)
-		student.SortWordArr(cp_stu)
+		sort.Strings(copySol)
+		student.SortWordArr(copyStu)
 
-		if !reflect.DeepEqual(cp_stu, cp_sol) {
+		if !reflect.DeepEqual(copyStu, copySol) {
 			lib.Fatalf("%s(%v) == %v instead of %v\n",
 				"SortWordArr",
 				org,
-				cp_stu,
-				cp_sol,
+				copyStu,
+				copySol,
 			)
 		}
 	}

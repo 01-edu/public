@@ -34,7 +34,7 @@ func main() {
 	y, _ := strconv.Atoi(args[0])
 	if x <= 0 || y <= 0 {
 		fmt.Println("Error")
-		return
+	} else {
+		solve(x, y)
 	}
-	solve(x, y)
 }

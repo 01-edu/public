@@ -4,28 +4,8 @@ import (
 	"strconv"
 
 	"github.com/01-edu/public/go/lib"
+	"github.com/01-edu/public/go/lib/is"
 )
-
-func isAPrime(nb int) bool {
-	if nb <= 0 || nb == 1 {
-		return false
-	}
-	if nb <= 3 {
-		return true
-	}
-	if nb%2 == 0 || nb%3 == 0 {
-		return false
-	}
-
-	i := 5
-	for i*i <= nb {
-		if nb%i == 0 || nb%(i+2) == 0 {
-			return false
-		}
-		i += 6
-	}
-	return true
-}
 
 func main() {
 	// adds random numbers
@@ -33,7 +13,7 @@ func main() {
 
 	// fill with all prime numbers between 0 and 100
 	for i := 0; i < 100; i++ {
-		if isAPrime(i) {
+		if is.Prime(i) {
 			table = append(table, i)
 		}
 	}

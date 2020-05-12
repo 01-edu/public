@@ -7,7 +7,7 @@ import (
 	"github.com/01-edu/public/go/lib"
 )
 
-func reduceInt(f func(int, int) int, a []int) {
+func reduceInt(a []int, f func(int, int) int) {
 	acc := a[0]
 	for i := 1; i < len(a); i++ {
 		acc = f(acc, a[i])
@@ -45,7 +45,7 @@ func main() {
 
 	for _, v := range table {
 		for _, f := range v.functions {
-			lib.Challenge("ReduceInt", student.ReduceInt, reduceInt, f, v.a)
+			lib.Challenge("ReduceInt", student.ReduceInt, reduceInt, v.a, f)
 		}
 	}
 }

@@ -6,12 +6,11 @@ import (
 )
 
 func solve(str string) int {
-	var count int = 0
-	var countC, countD int
-	for i := 0; i < len(str); i++ {
-		if str[i] == 'C' {
+	var count, countC, countD int
+	for _, r := range str {
+		if r == 'C' {
 			countC++
-		} else if str[i] == 'D' {
+		} else if r == 'D' {
 			countD++
 		}
 		if countC == countD {
@@ -25,10 +24,8 @@ func solve(str string) int {
 
 func main() {
 	args := os.Args[1:]
-	if len(args) != 1 {
-		fmt.Println()
-		return
+	if len(args) == 1 {
+		result := solve(args[0])
+		fmt.Println(result)
 	}
-	result := solve(args[0])
-	fmt.Println(result)
 }

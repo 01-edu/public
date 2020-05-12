@@ -8,50 +8,51 @@ import (
 
 func main() {
 	if len(os.Args) == 4 {
-		var result int
-		firstArg, err := strconv.Atoi(os.Args[1])
+		a, err := strconv.Atoi(os.Args[1])
 		if err != nil {
 			fmt.Println(0)
 			return
 		}
-
-		operator := os.Args[2]
-		secondArg, err1 := strconv.Atoi(os.Args[3])
-
-		if err1 != nil {
+		b, err := strconv.Atoi(os.Args[3])
+		if err != nil {
 			fmt.Println(0)
 			return
 		}
-
-		if secondArg == 0 && operator == "/" {
-			fmt.Println("No division by 0")
-			return
-		} else if secondArg == 0 && operator == "%" {
-			fmt.Println("No modulo by 0")
-			return
-		} else if operator == "+" {
-			result = firstArg + secondArg
-			if !((result > firstArg) == (secondArg > 0)) {
+		operator := os.Args[2]
+		switch operator {
+		case "+":
+			result := a + b
+			if (result > a) != (b > 0) {
 				fmt.Println(0)
-				return
+			} else {
+				fmt.Println(result)
 			}
-		} else if operator == "-" {
-			result = firstArg - secondArg
-			if !((result < firstArg) == (secondArg > 0)) {
+		case "-":
+			result := a - b
+			if (result < a) != (b > 0) {
 				fmt.Println(0)
-				return
+			} else {
+				fmt.Println(result)
 			}
-		} else if operator == "/" {
-			result = firstArg / secondArg
-		} else if operator == "*" {
-			result = firstArg * secondArg
-			if firstArg != 0 && (result/firstArg != secondArg) {
+		case "*":
+			result := a * b
+			if a != 0 && (result/a != b) {
 				fmt.Println(0)
-				return
+			} else {
+				fmt.Println(result)
 			}
-		} else if operator == "%" {
-			result = firstArg % secondArg
+		case "/":
+			if b == 0 {
+				fmt.Println("No division by 0")
+			} else {
+				fmt.Println(a / b)
+			}
+		case "%":
+			if b == 0 {
+				fmt.Println("No modulo by 0")
+			} else {
+				fmt.Println(a % b)
+			}
 		}
-		fmt.Println(result)
 	}
 }

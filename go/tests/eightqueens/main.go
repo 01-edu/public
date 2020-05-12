@@ -43,17 +43,13 @@ func goodSquare(x, y int) bool {
 }
 
 func printQueens() {
-	x := 0
-	for x < size {
-		y := 0
-		for y < size {
+	for x := 0; x < size; x++ {
+		for y := 0; y < size; y++ {
 			if board[x][y] {
 				// We have found a queen, let's print her y
 				fmt.Printf("%c", rune(y)+'1')
 			}
-			y++
 		}
-		x++
 	}
 	fmt.Println()
 }
@@ -61,8 +57,7 @@ func printQueens() {
 // tryX tries, for a given x (column) to find a y (row) so that the queen on (x, y) is a part
 // of the solution to the problem
 func tryX(x int) {
-	y := 0
-	for y < size {
+	for y := 0; y < size; y++ {
 		if goodSquare(x, y) {
 			// Since the square is good for the queen, let's put one on it:
 			board[x][y] = true
@@ -79,7 +74,6 @@ func tryX(x int) {
 			// remove the queen of the board, to try other y values
 			board[x][y] = false
 		}
-		y++
 	}
 }
 

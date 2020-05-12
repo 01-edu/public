@@ -5,19 +5,8 @@ import (
 	"github.com/01-edu/public/go/lib"
 )
 
-// this function will put a in c; c in d; d in b and b in a
-func Enigma(a ***int, b *int, c *******int, d ****int) {
-	valc := *******c
-	*******c = ***a
-	vald := ****d
-	****d = valc
-	valb := *b
-	*b = vald
-	***a = valb
-}
-
 // Helper function used in the test for checking the function Enigma()
-func decript(a ***int, b *int, c *******int, d ****int) {
+func decrypt(a ***int, b *int, c *******int, d ****int) {
 	vala := ***a
 	***a = *******c
 	valb := *b
@@ -28,7 +17,7 @@ func decript(a ***int, b *int, c *******int, d ****int) {
 }
 
 func main() {
-	args := append([]int, lib.MultRandIntBetween(2, 20)...)
+	args := lib.MultRandIntBetween(2, 20)
 
 	aval := args[0]
 	x := args[0]
@@ -58,7 +47,7 @@ func main() {
 	d := &n
 
 	student.Enigma(a, b, c, d)
-	decript(a, b, c, d)
+	decrypt(a, b, c, d)
 
 	if aval != ***a {
 		lib.Fatalf("Expected ***a = %d instead of %d\n",
@@ -85,5 +74,3 @@ func main() {
 		)
 	}
 }
-
-// TODO: remove all those pointers...

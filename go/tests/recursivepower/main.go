@@ -22,6 +22,6 @@ func main() {
 		lib.Challenge("RecursivePower", student.RecursivePower, recursivePower, nb, power)
 		i++
 	}
-	lib.Challenge("RecursivePower", student.RecursivePower, correct.RecursivePower, 0, 0)
-	lib.Challenge("RecursivePower", student.RecursivePower, correct.RecursivePower, 0, 1)
+	lib.Challenge("RecursivePower", student.RecursivePower, recursivePower, 0, 0)
+	lib.Challenge("RecursivePower", student.RecursivePower, recursivePower, 0, 1)
 }

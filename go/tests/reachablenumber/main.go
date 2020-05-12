@@ -30,7 +30,7 @@ func main() {
 		2,
 	}
 	for i := 0; i < 25; i++ {
-		table = append(table, lib.MultRandIntBetween(1, 877))
+		table = append(table, lib.MultRandIntBetween(1, 877)...)
 	}
 	for _, arg := range table {
 		lib.Challenge("ReachableNumber", student.ReachableNumber, reachableNumber, arg)

@@ -7,11 +7,12 @@ import (
 )
 
 func main() {
-	table := append(lib.MultRandWords(), "dsfdz")
-	table = append(table, "")
-	table = append(table, "1")
-	table = append(table, "1")
-
+	table := append(lib.MultRandWords(),
+		"dsfdz",
+		"",
+		"1",
+		"1",
+	)
 	for _, s := range table {
 		lib.ChallengeMain("displayz", strings.Fields(s)...)
 	}

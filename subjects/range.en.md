@@ -14,7 +14,7 @@ Errors should be handled.
 
 If the number of arguments is different from 2 the program prints nothing.
 
-### Expected output :
+### Usage :
 
 ```console
 student@ubuntu:~/range$ go build

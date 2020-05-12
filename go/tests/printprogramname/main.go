@@ -15,7 +15,7 @@ func test(newName string) {
 	}
 	b, err := exec.Command("./" + name).CombinedOutput()
 	if err != nil {
-		lib.Fatalln(b)
+		lib.Fatalln(string(b))
 	}
 	if string(b) != name+"\n" {
 		lib.Fatalln("Failed to print the program name")

@@ -1,15 +1,14 @@
 package main
 
 import (
+	"strings"
+
 	"./student"
 	"github.com/01-edu/public/go/lib"
 )
 
-func basicJoin(a []string) (b string) {
-	for _, s := range a {
-		b += s
-	}
-	return b
+func basicJoin(elems []string) string {
+	return strings.Join(elems, "")
 }
 
 func main() {

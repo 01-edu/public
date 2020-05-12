@@ -6,9 +6,9 @@ import (
 	"github.com/01-edu/public/go/lib/is"
 )
 
-func countIf(f func(string) bool, arr []string) int {
+func countIf(f func(string) bool, a []string) int {
 	counter := 0
-	for _, el := range arr {
+	for _, el := range a {
 		if f(el) {
 			counter++
 		}
@@ -21,8 +21,8 @@ func main() {
 	functions := []func(string) bool{is.Digit, is.Lower, is.Upper}
 
 	type node struct {
-		f   func(string) bool
-		arr []string
+		f func(string) bool
+		a []string
 	}
 
 	table := []node{}
@@ -30,46 +30,46 @@ func main() {
 	for i := 0; i < 5; i++ {
 		function := functions[lib.RandIntBetween(0, len(functions)-1)]
 		val := node{
-			f:   function,
-			arr: lib.MultRandWords(),
+			f: function,
+			a: lib.MultRandWords(),
 		}
 		table = append(table, val)
 	}
 	for i := 0; i < 5; i++ {
 		val := node{
-			f:   is.Digit,
-			arr: lib.MultRandDigit(),
+			f: is.Digit,
+			a: lib.MultRandDigit(),
 		}
 		table = append(table, val)
 	}
 
 	for i := 0; i < 5; i++ {
 		val := node{
-			f:   is.Lower,
-			arr: lib.MultRandLower(),
+			f: is.Lower,
+			a: lib.MultRandLower(),
 		}
 		table = append(table, val)
 	}
 	for i := 0; i < 5; i++ {
 		val := node{
-			f:   is.Upper,
-			arr: lib.MultRandUpper(),
+			f: is.Upper,
+			a: lib.MultRandUpper(),
 		}
 		table = append(table, val)
 	}
 
 	table = append(table,
 		node{
-			f:   is.Digit,
-			arr: []string{"Hello", "how", "are", "you"},
+			f: is.Digit,
+			a: []string{"Hello", "how", "are", "you"},
 		},
 		node{
-			f:   is.Digit,
-			arr: []string{"This", "is", "4", "you"},
+			f: is.Digit,
+			a: []string{"This", "is", "4", "you"},
 		},
 	)
 
 	for _, arg := range table {
-		lib.Challenge("CountIf", student.CountIf, countIf, arg.f, arg.arr)
+		lib.Challenge("CountIf", student.CountIf, countIf, arg.f, arg.a)
 	}
 }

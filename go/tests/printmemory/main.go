@@ -36,8 +36,8 @@ func printBase(nbr int) int {
 	return a
 }
 
-func printLine(arr [10]int, start int) {
-	size := len(arr)
+func printLine(elems [10]int, start int) {
+	size := len(elems)
 	a := start
 	var aux, b int
 
@@ -45,7 +45,7 @@ func printLine(arr [10]int, start int) {
 		if a%4 == 0 && a != 0 {
 			fmt.Println()
 		}
-		b = 8 - printBase(arr[a])
+		b = 8 - printBase(elems[a])
 		for aux != b {
 			if b == 6 {
 				fmt.Print("0")
@@ -65,8 +65,8 @@ func printLine(arr [10]int, start int) {
 	fmt.Println()
 	c := start
 	for c < start+16 && c < size {
-		if unicode.IsPrint(rune(arr[c])) {
-			fmt.Printf("%c", rune(arr[c]))
+		if unicode.IsPrint(rune(elems[c])) {
+			fmt.Printf("%c", rune(elems[c]))
 		} else {
 			fmt.Print(".")
 		}
@@ -93,7 +93,7 @@ func main() {
 		lib.Challenge("PrintMemory", student.PrintMemory, printMemory, table)
 	}
 	table2 := [10]int{104, 101, 108, 108, 111, 16, 21, 42}
-	lib.Challenge("PrintMemory", student.PrintMemory, correct.PrintMemory, table2)
+	lib.Challenge("PrintMemory", student.PrintMemory, printMemory, table2)
 }
 
 // TODO: this can be simplified a lot

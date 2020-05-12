@@ -24,43 +24,43 @@ func main() {
 	arg := [][]string{{"hello", "", "hi", "", "salut", "", ""}}
 
 	for i := 0; i < 20; i++ {
-		n := lib.RandIntBetween(5, 20) // random size of the slice
+		n := lib.RandIntBetween(5, 20)
 
-		orig := make([]string, n) // slice with the original value
+		orig := make([]string, n)
 
-		num_pos := lib.RandIntBetween(1, n-1) // random number of positions to be written
+		numPos := lib.RandIntBetween(1, n-1)
 
-		for i := 0; i < num_pos; i++ {
-			word := lib.RandWords()                // random string value
-			rand_pos := lib.RandIntBetween(0, n-1) // random position in the slice
-			orig[rand_pos] = word
+		for i := 0; i < numPos; i++ {
+			word := lib.RandWords()
+			randPos := lib.RandIntBetween(0, n-1)
+			orig[randPos] = word
 		}
 		arg = append(arg, orig)
 	}
 
 	for _, v := range arg {
-		sli_sol := make([]string, len(arg)) // slice to apply the solution function
-		sli_stu := make([]string, len(arg)) // slice to apply the student function
+		solSlice := make([]string, len(arg))
+		stuSlice := make([]string, len(arg))
 
-		copy(sli_sol, v)
-		copy(sli_stu, v)
+		copy(solSlice, v)
+		copy(stuSlice, v)
 
-		sol_size := compact(&sli_sol)
-		stu_size := student.Compact(&sli_stu)
+		solSize := compact(&solSlice)
+		stuSize := student.Compact(&stuSlice)
 
-		if !reflect.DeepEqual(sli_stu, sli_sol) {
+		if !reflect.DeepEqual(stuSlice, solSlice) {
 			lib.Fatalf("Produced slice: %v, instead of %v\n",
-				sli_stu,
-				sli_sol,
+				stuSlice,
+				solSlice,
 			)
 		}
 
-		if sol_size != stu_size {
+		if solSize != stuSize {
 			lib.Fatalf("%s(%v) == %v instead of %v\n",
 				"Compact",
 				v,
-				sli_stu,
-				sli_sol,
+				stuSlice,
+				solSlice,
 			)
 		}
 	}

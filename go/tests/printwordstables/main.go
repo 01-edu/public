@@ -14,15 +14,12 @@ func printWordsTables(a []string) {
 }
 
 func main() {
-	table := [][]string{}
-	// 30 random slice of slice of strings
+	table := [][]string{{"Hello", "how", "are", "you?"}}
 
+	// 30 random slice of slice of strings
 	for i := 0; i < 30; i++ {
 		table = append(table, lib.MultRandASCII())
 	}
-
-	table = append(table,
-		[]string{"Hello", "how", "are", "you?"})
 
 	for _, arg := range table {
 		lib.Challenge("PrintWordsTables", student.PrintWordsTables, printWordsTables, arg)

@@ -5,22 +5,21 @@ import (
 	"github.com/01-edu/public/go/lib"
 )
 
-func fibonacci(value int) int {
-	if value < 0 {
+func fibonacci(i int) int {
+	if i < 0 {
 		return -1
 	}
-	if value == 0 {
+	if i == 0 {
 		return 0
 	}
-	if value == 1 {
+	if i == 1 {
 		return 1
 	}
-	return Fibonacci(value-1) + Fibonacci(value-2)
+	return fibonacci(i-1) + fibonacci(i-2)
 }
 
 func main() {
-	table := append(
-		lib.MultRandIntBetween(0, 25),
+	table := append(lib.MultRandIntBetween(0, 25),
 		4,
 		5,
 		-5,

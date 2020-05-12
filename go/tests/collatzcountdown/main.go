@@ -25,12 +25,11 @@ func collatzCountdown(start int) int {
 }
 
 func main() {
-	args := []int{lib.RandIntBetween(-6, 20)}
-	args = append(args, -5, 0)
-	for i := 0; i < 20; i++ {
-		args = append(args, lib.RandIntBetween(2, 20))
-	}
-
+	args := append(lib.MultRandIntBetween(2, 20),
+		lib.RandIntBetween(-6, 20),
+		-5,
+		0,
+	)
 	for _, v := range args {
 		lib.Challenge("CollatzCountdown", student.CollatzCountdown, collatzCountdown, v)
 	}

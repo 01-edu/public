@@ -3,41 +3,35 @@ package main
 import (
 	"fmt"
 	"os"
-	"regexp"
+	"strings"
 )
 
 func main() {
-	var arr []rune
-	var revarr []rune
-	vowels := regexp.MustCompile(`[aeiouAEIOU]`)
-	for i := 1; i < len(os.Args); i++ {
-		for _, k := range os.Args[i] {
-			mached := vowels.MatchString(string(k))
-
-			if mached {
-				arr = append(arr, rune(k))
+	var a1, a2, rev []rune
+	for _, arg := range os.Args[1:] {
+		for _, k := range arg {
+			if strings.ContainsRune("aeiouAEIOU", k) {
+				a1 = append(a1, k)
 			}
 		}
 	}
-	for i := len(arr) - 1; i >= 0; i-- {
-		revarr = append(revarr, arr[i])
+	for i := len(a1) - 1; i >= 0; i-- {
+		rev = append(rev, a1[i])
 	}
-	arr2 := []rune{}
 
 	m := 0
-	for i := 1; i < len(os.Args); i++ {
-		for _, j := range os.Args[i] {
-			mached := vowels.MatchString(string(j))
-			if mached {
-				arr2 = append(arr2, rune(revarr[m]))
+	for i, arg := range os.Args[1:] {
+		for _, j := range arg {
+			if strings.ContainsRune("aeiouAEIOU", j) {
+				a2 = append(a2, rev[m])
 				m++
 			} else {
-				arr2 = append(arr2, rune(j))
+				a2 = append(a2, j)
 			}
 		}
 		if i != len(os.Args)-1 {
-			arr2 = append(arr2, ' ')
+			a2 = append(a2, ' ')
 		}
 	}
-	fmt.Println(string(arr2))
+	fmt.Println(string(a2))
 }

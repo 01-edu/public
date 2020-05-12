@@ -7,10 +7,6 @@ import (
 	"github.com/01-edu/public/go/lib"
 )
 
-func doppelGanger(s, substr string) int {
-	return strings.LastIndex(s, substr)
-}
-
 type node struct {
 	big, little string
 }
@@ -52,6 +48,6 @@ func main() {
 	}
 
 	for _, arg := range table {
-		lib.Challenge("DoppelGanger", student.DoppelGanger, doppelGanger, arg.big, arg.little)
+		lib.Challenge("DoppelGanger", student.DoppelGanger, strings.LastIndex, arg.big, arg.little)
 	}
 }

@@ -5,10 +5,6 @@ import (
 	"github.com/01-edu/public/go/lib"
 )
 
-func UltimatePointOne(n ***int) {
-	***n = 1
-}
-
 func main() {
 	a := 0
 	b := &a

@@ -8,10 +8,6 @@ import (
 	"github.com/01-edu/public/go/lib"
 )
 
-func split(s, sep string) []string {
-	return strings.Split(s, sep)
-}
-
 func main() {
 	separators := []string{"!=HA=!",
 		"!==!",
@@ -42,6 +38,6 @@ func main() {
 		node{str: "HelloHAhowHAareHAyou?", sep: "HA"})
 
 	for _, arg := range table {
-		lib.Challenge("Split", student.Split, split, arg.str, arg.sep)
+		lib.Challenge("Split", student.Split, strings.Split, arg.str, arg.sep)
 	}
 }

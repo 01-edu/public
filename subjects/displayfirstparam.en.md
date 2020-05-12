@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a program that takes `string` as arguments, and displays its first argument.
+Write a program that displays its first argument, if there is one.
 
 ### Usage
 

@@ -5,42 +5,32 @@ import (
 	"github.com/01-edu/public/go/lib"
 )
 
-func more(a, b int) int {
-	if a < b {
-		return b
+func max(ints ...int) int {
+	if len(ints) == 0 {
+		panic("max() is invalid")
 	}
-	return a
-}
-
-func max(a, b, c, d int) int {
-	if a >= b && a >= c && a >= d {
-		return a
+	max := ints[0]
+	for _, i := range ints[1:] {
+		if i > max {
+			max = i
+		}
 	}
-	if b >= a && b >= c && b >= d {
-		return b
-	}
-	if c >= a && c >= b && c >= d {
-		return c
-	}
-	if d >= a && d >= b && d >= c {
-		return d
-	}
-	return -1
+	return max
 }
 
 func reviveThreeNums(a, b, c, d int) int {
 	maxi := -111
 	if a != max(a, b, c, d) {
-		maxi = more(maxi, max(a, b, c, d)-a)
+		maxi = max(maxi, max(a, b, c, d)-a)
 	}
 	if b != max(a, b, c, d) {
-		maxi = more(maxi, max(a, b, c, d)-b)
+		maxi = max(maxi, max(a, b, c, d)-b)
 	}
 	if c != max(a, b, c, d) {
-		maxi = more(maxi, max(a, b, c, d)-c)
+		maxi = max(maxi, max(a, b, c, d)-c)
 	}
 	if d != max(a, b, c, d) {
-		maxi = more(maxi, max(a, b, c, d)-d)
+		maxi = max(maxi, max(a, b, c, d)-d)
 	}
 	return maxi
 }
