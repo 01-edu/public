@@ -3,8 +3,9 @@ package main
 import (
 	"reflect"
 
-	"./student"
-	"github.com/01-edu/public/go/lib"
+	student "student"
+
+	"lib"
 )
 
 func compact(slice *[]string) int {

@@ -4,8 +4,9 @@ import (
 	"strconv"
 	"strings"
 
-	"./student"
-	"github.com/01-edu/public/go/lib"
+	student "student"
+
+	"lib"
 )
 
 func itoaBase(value, base int) string {

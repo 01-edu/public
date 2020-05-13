@@ -4,8 +4,9 @@ import (
 	"math/rand"
 	"unicode"
 
-	"./student"
-	"github.com/01-edu/public/go/lib"
+	student "student"
+
+	"lib"
 )
 
 func isPrintable(s string) bool {

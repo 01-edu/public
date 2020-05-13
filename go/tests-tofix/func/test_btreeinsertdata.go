@@ -1,8 +1,9 @@
 package main
 
 import (
+	student "student"
+
 	"./correct"
-	"./student"
 	"github.com/01-edu/public/go/lib"
 )
 

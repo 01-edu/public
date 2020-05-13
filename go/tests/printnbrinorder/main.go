@@ -4,8 +4,9 @@ import (
 	"fmt"
 	"sort"
 
-	"./student"
-	"github.com/01-edu/public/go/lib"
+	student "student"
+
+	"lib"
 )
 
 func intToDigits(n int) (digits []int) {

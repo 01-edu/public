@@ -4,8 +4,9 @@ import (
 	"fmt"
 	"unicode"
 
-	"./student"
-	"github.com/01-edu/public/go/lib"
+	student "student"
+
+	"lib"
 )
 
 func printBase(nbr int) int {

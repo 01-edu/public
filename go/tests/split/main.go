@@ -4,8 +4,9 @@ import (
 	"math/rand"
 	"strings"
 
-	"./student"
-	"github.com/01-edu/public/go/lib"
+	student "student"
+
+	"lib"
 )
 
 func main() {

@@ -3,8 +3,9 @@ package main
 import (
 	"sort"
 
-	"./student"
-	"github.com/01-edu/public/go/lib"
+	student "student"
+
+	"lib"
 )
 
 func max(a []int) int {

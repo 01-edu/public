@@ -5,8 +5,9 @@ import (
 	"sort"
 	"strings"
 
-	"./student"
-	"github.com/01-edu/public/go/lib"
+	student "student"
+
+	"lib"
 )
 
 func advancedSortWordArr(a []string, f func(a, b string) int) {

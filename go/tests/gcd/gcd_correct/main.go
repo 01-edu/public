@@ -5,7 +5,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/01-edu/public/go/lib"
+	"lib"
 )
 
 func main() {
