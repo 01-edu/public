@@ -3,8 +3,9 @@ package main
 import (
 	"math/rand"
 
-	"./student"
-	"github.com/01-edu/public/go/lib"
+	student "student"
+
+	"lib"
 )
 
 func nRune(s string, n int) rune {

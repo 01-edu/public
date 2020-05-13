@@ -1,8 +1,9 @@
 package main
 
 import (
-	"./student"
-	"github.com/01-edu/public/go/lib"
+	student "student"
+
+	"lib"
 )
 
 // Function that return the number of active bits in the number passed as the argument

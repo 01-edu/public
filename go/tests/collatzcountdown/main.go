@@ -1,8 +1,9 @@
 package main
 
 import (
-	"./student"
-	"github.com/01-edu/public/go/lib"
+	student "student"
+
+	"lib"
 )
 
 func collatzCountdown(start int) int {

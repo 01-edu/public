@@ -3,8 +3,9 @@ package main
 import (
 	"sort"
 
-	"./student"
-	"github.com/01-edu/public/go/lib"
+	student "student"
+
+	"lib"
 )
 
 func isSorted(f func(int, int) int, a []int) bool {

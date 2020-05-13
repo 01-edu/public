@@ -3,8 +3,9 @@ package main
 import (
 	"reflect"
 
+	student "student"
+
 	"./correct"
-	"./student"
 	"github.com/01-edu/public/go/lib"
 )
 

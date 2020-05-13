@@ -1,9 +1,10 @@
 package main
 
 import (
-	"./student"
-	"github.com/01-edu/public/go/lib"
-	"github.com/01-edu/public/go/lib/is"
+	student "student"
+
+	"lib"
+	"lib/is"
 )
 
 func findPrevPrime(nb int) int {

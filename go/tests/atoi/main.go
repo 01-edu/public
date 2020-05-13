@@ -3,8 +3,9 @@ package main
 import (
 	"strconv"
 
-	"./student"
-	"github.com/01-edu/public/go/lib"
+	student "student"
+
+	"lib"
 )
 
 func atoi(s string) int {

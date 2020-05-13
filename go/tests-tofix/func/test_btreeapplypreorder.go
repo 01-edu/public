@@ -3,8 +3,9 @@ package main
 import (
 	"fmt"
 
+	student "student"
+
 	"./correct"
-	"./student"
 )
 
 func main() {

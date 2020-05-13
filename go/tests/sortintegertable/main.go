@@ -4,8 +4,9 @@ import (
 	"reflect"
 	"sort"
 
-	"./student"
-	"github.com/01-edu/public/go/lib"
+	student "student"
+
+	"lib"
 )
 
 func sortIntegerTable(a []int) {

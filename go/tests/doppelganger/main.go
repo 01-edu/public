@@ -3,8 +3,9 @@ package main
 import (
 	"strings"
 
-	"./student"
-	"github.com/01-edu/public/go/lib"
+	student "student"
+
+	"lib"
 )
 
 type node struct {

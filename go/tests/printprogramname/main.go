@@ -4,7 +4,7 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/01-edu/public/go/lib"
+	"lib"
 )
 
 var name = "student"

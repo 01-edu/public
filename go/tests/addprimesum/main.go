@@ -3,8 +3,8 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/public/go/lib"
-	"github.com/01-edu/public/go/lib/is"
+	"lib"
+	"lib/is"
 )
 
 func main() {

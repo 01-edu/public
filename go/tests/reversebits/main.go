@@ -4,8 +4,9 @@ import (
 	"math/bits"
 	"reflect"
 
-	"./student"
-	"github.com/01-edu/public/go/lib"
+	student "student"
+
+	"lib"
 )
 
 func reverseBits(octet byte) byte {

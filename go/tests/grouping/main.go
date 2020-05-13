@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/01-edu/public/go/lib"
+	"lib"
 )
 
 func validRegExp(n int) string {

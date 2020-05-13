@@ -1,9 +1,10 @@
 package main
 
 import (
+	student "student"
+
 	"./base"
 	"./correct"
-	"./student"
 	"github.com/01-edu/public/go/lib"
 )
 

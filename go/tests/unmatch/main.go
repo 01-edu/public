@@ -1,8 +1,9 @@
 package main
 
 import (
-	"./student"
-	"github.com/01-edu/public/go/lib"
+	student "student"
+
+	"lib"
 )
 
 // Returns the element of the slice that doesn't have a correspondant pair
