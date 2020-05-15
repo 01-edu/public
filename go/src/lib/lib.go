@@ -362,8 +362,8 @@ func ChallengeMain(exercise string, args ...string) {
 	code := func(code int) string {
 		return fmt.Sprintf("echo $?\n%d\n$", code)
 	}
-	student, studentCode := run("./student")
-	solution, solutionCode := run("test_" + exercise)
+	student, studentCode := run("./" + exercise)
+	solution, solutionCode := run(exercise + "_correct")
 	if solutionCode != 0 {
 		if studentCode == 0 {
 			Fatalln("Your program does not fail when it should (with a non-zero exit status) :" + "\n" +
