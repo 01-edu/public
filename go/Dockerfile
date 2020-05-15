@@ -2,6 +2,7 @@ FROM golang:1-alpine
 
 RUN apk add --no-cache git nano
 RUN go get golang.org/x/tools/cmd/goimports
+RUN go get github.com/01-edu/z01
 WORKDIR src
 COPY entrypoint.sh /usr/local/bin
 COPY src .
