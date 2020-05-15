@@ -5,30 +5,36 @@ set -o pipefail
 IFS='
 '
 
-cp -rT /app /jail
+mkdir -p src/student
+cd src/student
 
-if test "$EXPECTED_FILES"; then
-	echo -n 'Formatting (with `goimports -d .`) ... '
-	cd /jail/student
-	s=$(goimports -d .)
-	if test "$s"; then
-		echo
-		echo "$s"
-		exit 1
-	fi
-	echo OK
-	if test "$ALLOWED_FUNCTIONS"; then
-		rc "$EXPECTED_FILES" $ALLOWED_FUNCTIONS
-	fi
+if test "$REPOSITORY"; then
+	git clone --depth=1 --shallow-submodules "$REPOSITORY" .
 fi
 
-cd /jail
-
-if ! test -f ${EXERCISE}_test.go; then
-	echo No test file found for the exercise : "$EXERCISE"
+# Check formatting
+s=$(goimports -d .)
+if test "$s"; then
+	echo '$ goimports -d .'
+	echo "$s"
 	exit 1
 fi
 
-# TODO: maybe change btree exercises so that they work without student code and then delete this line
-find . -name '*_test.go' ! -name ${EXERCISE}_test.go -delete
-go test -failfast '-run=(?i)'test${EXERCISE}
+# Check restrictions
+if test "$ALLOWED_FUNCTIONS"; then
+	for file in $EXPECTED_FILES; do
+		rc "$file" $ALLOWED_FUNCTIONS
+	done
+fi
+
+# Compile test
+cd
+GOPATH=$GOPATH:$HOME
+if command -v "$EXERCISE"_test &>/dev/null; then
+	# The exercise is a program
+	go build "student/$EXERCISE"
+	"$EXERCISE"_test
+else
+	# The exercise is a function
+	go run "$EXERCISE"_test
+fi
