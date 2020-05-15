@@ -2,14 +2,22 @@
 
 set -o errexit
 set -o pipefail
+set -o nounset
 IFS='
 '
-
 mkdir -p src/student
 cd src/student
 
 if test "$REPOSITORY"; then
-	git clone --depth=1 --shallow-submodules "$REPOSITORY" .
+	password=$(cat)
+	if ! git clone --depth=1 --shallow-submodules https://root:"${password}"@"$REPOSITORY" . 2>/dev/null; then
+		echo Could not clone your repository
+		exit 1
+	fi
+else
+	first_file=$(echo "$EXPECTED_FILES" | cut -d' ' -f1)
+	mkdir -p "$(dirname $first_file)"
+	cat > "$first_file"
 fi
 
 # Check formatting
@@ -27,9 +35,9 @@ if test "$ALLOWED_FUNCTIONS"; then
 	done
 fi
 
-# Compile test
+# Compile and run test
 cd
-GOPATH=$GOPATH:$HOME
+GOPATH=$HOME:$GOPATH
 if command -v "$EXERCISE"_test &>/dev/null; then
 	# The exercise is a program
 	go build "student/$EXERCISE"
