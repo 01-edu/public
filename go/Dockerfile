@@ -1,11 +1,12 @@
 FROM golang:1-alpine
 
+ENV GIT_TERMINAL_PROMPT=0
 RUN apk add --no-cache git nano
 RUN go get golang.org/x/tools/cmd/goimports
 RUN go get github.com/01-edu/z01
 WORKDIR src
 COPY entrypoint.sh /usr/local/bin
-COPY src .
+COPY tests .
 RUN go install rc
 RUN find -mindepth 2 -maxdepth 2 -name '*_correct' -type d|xargs go install
 RUN find -mindepth 2 -maxdepth 2 -name '*_correct' -type d|cut -d/ -f1-2|xargs go install
