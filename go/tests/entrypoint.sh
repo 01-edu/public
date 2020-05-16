@@ -5,7 +5,8 @@ set -o pipefail
 set -o nounset
 IFS='
 '
-mkdir -p src/student
+
+mkdir src/student
 cd src/student
 
 if test "$REPOSITORY"; then
@@ -16,7 +17,7 @@ if test "$REPOSITORY"; then
 	fi
 else
 	first_file=$(echo "$EXPECTED_FILES" | cut -d' ' -f1)
-	mkdir -p "$(dirname $first_file)"
+	mkdir "$(dirname $first_file)"
 	cat > "$first_file"
 fi
 
