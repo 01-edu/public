@@ -11,7 +11,7 @@ cd src/student
 
 if test "$REPOSITORY"; then
 	password=$(cat)
-	if ! git clone --depth=1 --shallow-submodules https://root:"${password}"@"$REPOSITORY" . 2>/dev/null; then
+	if ! git clone --depth=1 --shallow-submodules http://root:"${password}"@"$REPOSITORY" . 2>/dev/null; then
 		echo Could not clone your repository
 		exit 1
 	fi

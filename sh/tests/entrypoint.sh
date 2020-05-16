@@ -1,15 +1,30 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-set -o errexit
-set -o pipefail
+# Unofficial Bash Strict Mode
+set -euo pipefail
 IFS='
 '
 
-cp -rT /app /jail
-cd /jail
+mkdir student
+cd student
+
+if test "$REPOSITORY"; then
+	password=$(cat)
+	if ! git clone --depth=1 --shallow-submodules http://root:"${password}"@"$REPOSITORY" . 2>/dev/null; then
+		echo Could not clone your repository
+		exit 1
+	fi
+else
+	first_file=$(echo "$EXPECTED_FILES" | cut -d' ' -f1)
+	mkdir "$(dirname $first_file)"
+	cat > "$first_file"
+fi
+
+cd
+cp -rT /app .
+
 if ! test -f ${EXERCISE}_test.sh; then
 	echo No test file found for the exercise : "$EXERCISE"
 	exit 1
 fi
-sh ${EXERCISE}_test.sh
-echo PASS
+bash ${EXERCISE}_test.sh
