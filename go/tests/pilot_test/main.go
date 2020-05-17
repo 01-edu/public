@@ -1,6 +1,6 @@
 package main
 
-import "github.com/01-edu/public/go/lib"
+import "lib"
 
 func main() {
 	lib.ChallengeMain("pilot")
