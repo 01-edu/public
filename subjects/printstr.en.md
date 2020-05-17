@@ -7,7 +7,7 @@
 ### Expected function
 
 ```go
-func PrintStr(str string) {
+func PrintStr(s string) {
 
 }
 ```
@@ -22,8 +22,7 @@ package main
 import piscine ".."
 
 func main() {
-	str := "Hello World!"
-	piscine.PrintStr(str)
+	piscine.PrintStr("Hello World!")
 }
 ```
 
