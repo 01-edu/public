@@ -9,7 +9,7 @@ The separators are spaces, tabs and newlines.
 ### Expected function
 
 ```go
-func SplitWhiteSpaces(str string) []string {
+func SplitWhiteSpaces(s string) []string {
 
 }
 ```
@@ -27,8 +27,7 @@ import (
 )
 
 func main() {
-	s := "Hello how are you?"
-	fmt.Printf("%#v\n", piscine.SplitWhiteSpaces(s))
+	fmt.Printf("%#v\n", piscine.SplitWhiteSpaces("Hello how are you?"))
 }
 ```
 

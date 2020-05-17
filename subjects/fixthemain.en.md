@@ -9,8 +9,8 @@ Fix the following program.
 ```go
 package piscine
 
-func PrintStr(str string) {
-	for _, r := range str {
+func PrintStr(s string) {
+	for _, r := range s {
 		z01.PrintRune(r)
 	}
 }

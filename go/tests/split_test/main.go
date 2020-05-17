@@ -20,7 +20,7 @@ func main() {
 		"[<>abc<>]"}
 
 	type node struct {
-		str string
+		s   string
 		sep string
 	}
 	table := []node{}
@@ -29,16 +29,16 @@ func main() {
 	for i := 0; i < 15; i++ {
 		separator := separators[rand.Intn(len(separators))]
 		val := node{
-			str: strings.Join(lib.MultRandAlnum(), separator),
+			s:   strings.Join(lib.MultRandAlnum(), separator),
 			sep: separator,
 		}
 		table = append(table, val)
 	}
 
 	table = append(table,
-		node{str: "HelloHAhowHAareHAyou?", sep: "HA"})
+		node{s: "HelloHAhowHAareHAyou?", sep: "HA"})
 
 	for _, arg := range table {
-		lib.Challenge("Split", student.Split, strings.Split, arg.str, arg.sep)
+		lib.Challenge("Split", student.Split, strings.Split, arg.s, arg.sep)
 	}
 }
