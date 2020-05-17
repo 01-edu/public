@@ -8,6 +8,10 @@ import (
 	"lib"
 )
 
+func printNbr(n int) {
+	fmt.Print(n)
+}
+
 func main() {
 	table := append(lib.MultRandInt(),
 		lib.MinInt,
@@ -15,6 +19,6 @@ func main() {
 		0,
 	)
 	for _, arg := range table {
-		lib.Challenge("PrintNbr", student.PrintNbr, fmt.Print, arg)
+		lib.Challenge("PrintNbr", student.PrintNbr, printNbr, arg)
 	}
 }
