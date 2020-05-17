@@ -1,5 +1,6 @@
-FROM alpine
+FROM debian:stable-slim
 
-RUN apk add jq curl git
+RUN apt-get update
+RUN apt-get -y install jq curl git
 COPY . /app
-ENTRYPOINT ["/bin/sh", "/app/entrypoint.sh"]
+ENTRYPOINT ["/bin/bash", "/app/entrypoint.sh"]
