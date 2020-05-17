@@ -7,7 +7,7 @@ import (
 	"lib"
 )
 
-var name = "student"
+var name = "printprogramname"
 
 func test(newName string) {
 	if err := os.Rename(name, newName); err != nil {
@@ -24,7 +24,6 @@ func test(newName string) {
 }
 
 func main() {
-	test("student")
 	test("choumi")
 	test("🤦🏻‍♀️")
 	test("€")
