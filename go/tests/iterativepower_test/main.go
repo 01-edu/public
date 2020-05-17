@@ -24,6 +24,6 @@ func main() {
 		lib.Challenge("IterativePower", student.IterativePower, iterativePower, nb, power)
 		i++
 	}
-	lib.Challenge("IterativePower", student.IterativePower, correct.IterativePower, 0, 0)
-	lib.Challenge("IterativePower", student.IterativePower, correct.IterativePower, 0, 1)
+	lib.Challenge("IterativePower", student.IterativePower, iterativePower, 0, 0)
+	lib.Challenge("IterativePower", student.IterativePower, iterativePower, 0, 1)
 }
