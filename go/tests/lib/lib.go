@@ -1,6 +1,7 @@
 package lib
 
 import (
+	"bytes"
 	"fmt"
 	"io"
 	"math/big"
@@ -341,9 +342,13 @@ func Fatalf(format string, a ...interface{}) {
 	os.Exit(1)
 }
 
-func ChallengeMain(exercise string, args ...string) {
+func ChallengeMainStdin(exercise, input string, args ...string) {
 	run := func(name string) (string, int) {
-		b, err := exec.Command(name, args...).CombinedOutput()
+		cmd := exec.Command(name, args...)
+		if input != "" {
+			cmd.Stdin = bytes.NewBufferString(input)
+		}
+		b, err := cmd.CombinedOutput()
 		if err != nil {
 			if ee, ok := err.(*exec.ExitError); ok {
 				return string(b), ee.ExitCode()
@@ -357,14 +362,27 @@ func ChallengeMain(exercise string, args ...string) {
 		for _, arg := range args {
 			quotedArgs = append(quotedArgs, strconv.Quote(arg))
 		}
-		return fmt.Sprintf("\n$ ./%s %s\n%s$ ", exercise, strings.Join(quotedArgs, " "), out)
+		s := "\n$ "
+		if input != "" {
+			s += "echo -ne " + strconv.Quote(input) + " | "
+		}
+		return fmt.Sprintf(s+"./%s %s\n%s$ ", exercise, strings.Join(quotedArgs, " "), out)
 	}
 	code := func(code int) string {
 		return fmt.Sprintf("echo $?\n%d\n$", code)
 	}
 	student, studentCode := run("./" + exercise)
 	solution, solutionCode := run(exercise + "_correct")
-	if solutionCode != 0 {
+	if solutionCode == 0 {
+		if studentCode != 0 {
+			Fatalln("Your program fails (non-zero exit status) when it should not :\n" +
+				console(student) +
+				code(studentCode) + "\n\n" +
+				"Expected :\n" +
+				console(solution) +
+				code(solutionCode))
+		}
+	} else {
 		if studentCode == 0 {
 			Fatalln("Your program does not fail when it should (with a non-zero exit status) :" + "\n" +
 				console(student) +
@@ -390,14 +408,6 @@ func ChallengeMain(exercise string, args ...string) {
 				code(1))
 		}
 	}
-	if studentCode != 0 {
-		Fatalln("Your program fails (non-zero exit status) when it should not :\n" +
-			console(student) +
-			code(studentCode) + "\n\n" +
-			"Expected :\n" +
-			console(solution) +
-			code(solutionCode))
-	}
 	if student != solution {
 		Fatalln("Your program output is not correct :\n" +
 			console(student) + "\n\n" +
@@ -416,6 +426,10 @@ func GCD(a, b int) int {
 		}
 	}
 	return a
+}
+
+func ChallengeMain(exercise string, args ...string) {
+	ChallengeMainStdin(exercise, "", args...)
 }
 
 // TODO: check unhandled errors on all solutions (it should contains "ERROR" on the first line to prove we correctly handle the error)
