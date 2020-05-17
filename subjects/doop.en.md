@@ -7,16 +7,10 @@ Write a program that is called `doop`.
 The program has to be used with three arguments:
 
 - A value
-- An operator
+- An operator, one of : `+`, `-`, `/`, `*`, `%`
 - Another value
 
-You should use `int64`.
-
-The following operators are considered valid: `+`, `-`, `/`, `*`, `%`.
-
-In case of an invalid operator or overflow the programs prints `0`.
-
-In case of an invalid number of arguments the program prints nothing.
+In case of an invalid operator, value, number of arguments or an overflow the programs prints nothing.
 
 The program has to handle the modulo and division operations by 0 as shown on the output examples below.
 
@@ -27,10 +21,8 @@ student@ubuntu:~/[[ROOT]]/test$ go build doop.go
 student@ubuntu:~/[[ROOT]]/test$ ./doop
 student@ubuntu:~/[[ROOT]]/test$ ./doop 1 + 1 | cat -e
 2$
-student@ubuntu:~/[[ROOT]]/test$ ./doop hello + 1 | cat -e
-0$
-student@ubuntu:~/[[ROOT]]/test$ ./doop 1 p 1 | cat -e
-0$
+student@ubuntu:~/[[ROOT]]/test$ ./doop hello + 1
+student@ubuntu:~/[[ROOT]]/test$ ./doop 1 p 1
 student@ubuntu:~/[[ROOT]]/test$ ./doop 1 / 0 | cat -e
 No division by 0$
 student@ubuntu:~/[[ROOT]]/test$ ./doop 1 % 0 | cat -e

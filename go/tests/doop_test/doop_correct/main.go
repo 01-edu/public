@@ -10,35 +10,27 @@ func main() {
 	if len(os.Args) == 4 {
 		a, err := strconv.Atoi(os.Args[1])
 		if err != nil {
-			fmt.Println(0)
 			return
 		}
 		b, err := strconv.Atoi(os.Args[3])
 		if err != nil {
-			fmt.Println(0)
 			return
 		}
 		operator := os.Args[2]
 		switch operator {
 		case "+":
 			result := a + b
-			if (result > a) != (b > 0) {
-				fmt.Println(0)
-			} else {
+			if (result > a) == (b > 0) {
 				fmt.Println(result)
 			}
 		case "-":
 			result := a - b
-			if (result < a) != (b > 0) {
-				fmt.Println(0)
-			} else {
+			if (result < a) == (b > 0) {
 				fmt.Println(result)
 			}
 		case "*":
 			result := a * b
-			if a != 0 && (result/a != b) {
-				fmt.Println(0)
-			} else {
+			if a == 0 || (result/a == b) {
 				fmt.Println(result)
 			}
 		case "/":
