@@ -425,7 +425,7 @@ The separators are spaces, tabs and newlines.
 ### Expected function
 
 ```go
-func SplitWhiteSpaces(str string) []string {
+func SplitWhiteSpaces(s string) []string {
 
 }
 ```
@@ -443,8 +443,7 @@ import (
 )
 
 func main() {
-	str := "Hello how are you?"
-	fmt.Println(student.SplitWhiteSpaces(str))
+	fmt.Println(student.SplitWhiteSpaces("Hello how are you?"))
 }
 ```
 
@@ -492,8 +491,8 @@ import (
 )
 
 func main() {
-	str := "HelloHAhowHAareHAyou?"
-	fmt.Println(student.Split(str, "HA"))
+	s := "HelloHAhowHAareHAyou?"
+	fmt.Println(student.Split(s, "HA"))
 }
 ```
 

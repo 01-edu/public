@@ -7,7 +7,7 @@
 ### Expected function
 
 ```go
-func StrLen(str string) int {
+func StrLen(s string) int {
 
 }
 ```
@@ -25,9 +25,8 @@ import (
 )
 
 func main() {
-	str := "Hello World!"
-	nb := piscine.StrLen(str)
-	fmt.Println(nb)
+	l := piscine.StrLen("Hello World!")
+	fmt.Println(l)
 }
 ```
 

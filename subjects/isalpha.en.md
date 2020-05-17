@@ -7,7 +7,7 @@ Write a function that returns `true` if the `string` passed in parameter only co
 ### Expected function
 
 ```go
-func IsAlpha(str string) bool {
+func IsAlpha(s string) bool {
 
 }
 ```

@@ -9,7 +9,7 @@ Each word is on a single line (each word ends with a `\n`).
 ### Expected function
 
 ```go
-func PrintWordsTables(table []string) {
+func PrintWordsTables(a []string) {
 
 }
 ```
@@ -24,9 +24,8 @@ package main
 import piscine ".."
 
 func main() {
-	str := "Hello how are you?"
-	table := piscine.SplitWhiteSpaces(str)
-	piscine.PrintWordsTables(table)
+	a := piscine.SplitWhiteSpaces("Hello how are you?")
+	piscine.PrintWordsTables(a)
 }
 ```
 
