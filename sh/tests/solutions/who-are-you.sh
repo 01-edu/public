@@ -5,6 +5,9 @@ set -euo pipefail
 IFS='
 '
 
-r=$(curl --compressed -sSm10 https://01.alem.school/assets/superhero/all.json)
+f=""
+# --insecure flag to make it work with dev environment (self-signed certificate)
+test "$DOMAIN" = "localhost" && f="--insecure"
 
-echo "$r" | jq '.[] | select(.id == 70) | .name'
+curl $f --compressed --silent --show-error --max-time 10 https://$DOMAIN/assets/superhero/all.json |
+    jq '.[] | select(.id == 70) | .name'
