@@ -4,6 +4,8 @@ import (
 	"io"
 	"io/ioutil"
 	"os"
+
+	"lib"
 )
 
 func main() {
@@ -13,11 +15,11 @@ func main() {
 		}
 	} else {
 		for _, arg := range os.Args[1:] {
-			data, err := ioutil.ReadFile(arg)
+			b, err := ioutil.ReadFile(arg)
 			if err != nil {
-				panic(err)
+				lib.Fatalln("ERROR:", err)
 			}
-			os.Stdout.Write(data)
+			os.Stdout.Write(b)
 		}
 	}
 }

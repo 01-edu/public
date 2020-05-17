@@ -6,7 +6,7 @@ Write a program that behaves like a simplified `cat` command.
 
 - The options do not have to be handled.
 
-- If the program is called without arguments it should take the standard input (stdin) and print it back (as shown with the "Hello" example below).
+- If the program is called without arguments it should take the standard input (stdin) and print it back on the standard output (stdout).
 
 ```console
 student@ubuntu:~/[[ROOT]]/cat$ echo '"Programming is a skill best acquired by practice and example rather than from books" by Alan Turing' > quest8.txt
@@ -18,6 +18,9 @@ student@ubuntu:~/[[ROOT]]/cat$ ./cat abc
 ERROR: abc: No such file or directory
 student@ubuntu:~/[[ROOT]]/cat$ ./cat quest8.txt
 "Programming is a skill best acquired by pratice and example rather than from books" by Alan Turing
+student@ubuntu:~/[[ROOT]]/cat$ ./cat quest8.txt abc
+"Programming is a skill best acquired by pratice and example rather than from books" by Alan Turing
+ERROR: abc: No such file or directory
 student@ubuntu:~/[[ROOT]]/cat$ cat quest8.txt | ./cat
 "Programming is a skill best acquired by pratice and example rather than from books" by Alan Turing
 student@ubuntu:~/[[ROOT]]/cat$ ./cat

@@ -3,74 +3,25 @@ package main
 import (
 	"io/ioutil"
 	"os"
-	"os/exec"
 	"strings"
 
-	"github.com/01-edu/public/go/lib"
+	"lib"
 )
 
 func main() {
-	pathFileName1 := "./student/cat/quest8.txt"
-	pathFileName2 := "./student/cat/quest8T.txt"
+	file1 := "quest8.txt"
+	file2 := "quest8T.txt"
+	if err := ioutil.WriteFile(file1, []byte(lib.RandWords()+"\n"), os.ModePerm); err != nil {
+		panic(err)
+	}
+	if err := ioutil.WriteFile(file2, []byte(lib.RandWords()+"\n"), os.ModePerm); err != nil {
+		panic(err)
+	}
 
-	if _, err := os.Stat(pathFileName1); err != nil {
-		lib.Fatalln(err)
-	}
-	if _, err := os.Stat(pathFileName2); err != nil {
-		lib.Fatalln(err)
-	}
-	table := []string{pathFileName1, pathFileName1 + " " + pathFileName2, "asd"}
+	table := []string{file1, file1 + " " + file2, "asd", "", file1 + " abc", "abc " + file2}
 
 	for _, s := range table {
 		lib.ChallengeMain("cat", strings.Fields(s)...)
 	}
-	if _, err := exec.Command("go", "build", "-o", "cat_student", "./student/cat/main.go").Output(); err != nil {
-		lib.Fatal(string(err.(*exec.ExitError).Stderr))
-	}
-	if _, err := exec.Command("go", "build", "-o", "cat_solution", "./solutions/cat/main.go").Output(); err != nil {
-		lib.Fatal(string(err.(*exec.ExitError).Stderr))
-	}
-	pwd, err := os.Getwd()
-	if err != nil {
-		lib.Fatalln(err)
-	}
-
-	for i := 0; i < 2; i++ {
-		randStdin := lib.RandAlnum()
-		cmd := exec.Command("sh", "-c", pwd+"/cat_solution")
-		solutionResult := execStdin(cmd, randStdin)
-		cmdS := exec.Command(pwd + "/cat_student")
-		studentResult := execStdin(cmdS, randStdin)
-
-		if solutionResult != studentResult {
-			lib.Fatalf("./cat prints %s instead of %s\n", studentResult, solutionResult)
-		}
-	}
+	lib.ChallengeMainStdin("cat", lib.RandWords()+"\n")
 }
-
-func execStdin(cmd *exec.Cmd, randomStdin string) string {
-	stdin, err := cmd.StdinPipe()
-	if err != nil {
-		lib.Fatalln(err)
-	}
-	stdout, err := cmd.StdoutPipe()
-	if err != nil {
-		lib.Fatalln(err)
-	}
-	if err := cmd.Start(); err != nil {
-		lib.Fatalln(err)
-	}
-	_, err = stdin.Write([]byte(randomStdin))
-	if err != nil {
-		lib.Fatalln(err)
-	}
-	stdin.Close()
-
-	out, _ := ioutil.ReadAll(stdout)
-	if err := cmd.Wait(); err != nil {
-		lib.Fatalln(err)
-	}
-	return string(out)
-}
-
-// TODO: handle stdin in ChallengeMain
