@@ -31,7 +31,6 @@ func printNbrInOrder(n int) {
 	for _, i := range digits {
 		fmt.Printf("%c", rune(i)+'0')
 	}
-	fmt.Println()
 }
 
 func main() {

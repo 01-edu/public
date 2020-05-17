@@ -10,7 +10,7 @@ import (
 
 func isAlpha(s string) bool {
 	for _, r := range s {
-		if !unicode.Is(unicode.Hex_Digit, r) {
+		if !unicode.IsDigit(r) && !unicode.Is(unicode.Latin, r) {
 			return false
 		}
 	}
