@@ -5,9 +5,9 @@ import (
 	"os"
 )
 
-func solve(str string) int {
+func solve(s string) int {
 	var count, countC, countD int
-	for _, r := range str {
+	for _, r := range s {
 		if r == 'C' {
 			countC++
 		} else if r == 'D' {

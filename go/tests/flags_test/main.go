@@ -12,7 +12,7 @@ type node struct {
 }
 
 func main() {
-	str := []string{"--insert=", "--order"}
+	s := []string{"--insert=", "--order"}
 	strShorthand := []string{"-i=", "-o"}
 	var randflag []string
 	var randflagarg []string
@@ -22,7 +22,7 @@ func main() {
 	}
 
 	node := &node{
-		flags:          str,
+		flags:          s,
 		flagsShorthand: strShorthand,
 		randArgFlag:    randflagarg,
 		randArg:        randflag,

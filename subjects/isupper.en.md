@@ -7,7 +7,7 @@ Write a function that returns `true` if the `string` passed in parameter only co
 ### Expected function
 
 ```go
-func IsUpper(str string) bool {
+func IsUpper(s string) bool {
 
 }
 ```
