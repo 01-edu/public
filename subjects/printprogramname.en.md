@@ -13,5 +13,8 @@ main
 student@ubuntu:~/[[ROOT]]/printprogramname$ go build
 student@ubuntu:~/[[ROOT]]/printprogramname$ ./printprogramname | cat -e
 printprogramname$
+student@ubuntu:~/[[ROOT]]/printprogramname$ go build -o Nessy
+student@ubuntu:~/[[ROOT]]/printprogramname$ ./Nessy
+Nessy
 student@ubuntu:~/[[ROOT]]/printprogramname$
 ```
