@@ -25,8 +25,7 @@ import (
 )
 
 func main() {
-	nbits := piscine.ActiveBits(7)
-	fmt.Println(nbits)
+	fmt.Println(piscine.ActiveBits(7))
 }
 ```
 
