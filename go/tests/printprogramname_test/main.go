@@ -7,20 +7,20 @@ import (
 	"lib"
 )
 
-var name = "printprogramname"
+var oldName = "printprogramname"
 
-func test(newName string) {
-	if err := os.Rename(name, newName); err != nil {
+func test(name string) {
+	if err := os.Rename(oldName, name); err != nil {
 		lib.Fatalln(err)
 	}
 	b, err := exec.Command("./" + name).CombinedOutput()
 	if err != nil {
-		lib.Fatalln(string(b))
+		lib.Fatalln(err)
 	}
 	if string(b) != name+"\n" {
-		lib.Fatalln("Failed to print the program name")
+		lib.Fatalln("Failed to print the program name :", string(b))
 	}
-	name = newName
+	oldName = name
 }
 
 func main() {
