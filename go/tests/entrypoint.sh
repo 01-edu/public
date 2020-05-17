@@ -6,7 +6,7 @@ set -o nounset
 IFS='
 '
 
-mkdir src/student
+mkdir -p src/student
 cd src/student
 
 if test "$REPOSITORY"; then
