@@ -7,7 +7,7 @@ Write a function that returns the concatenation of all the `string` of a slice o
 ### Expected function
 
 ```go
-func BasicJoin(strs []string) string {
+func BasicJoin(elems []string) string {
 
 }
 ```
@@ -25,8 +25,8 @@ import (
 )
 
 func main() {
-	toConcat := []string{"Hello!", " How", " are", " you?"}
-	fmt.Println(piscine.BasicJoin(toConcat))
+	elems := []string{"Hello!", " How", " are", " you?"}
+	fmt.Println(piscine.BasicJoin(elems))
 }
 ```
 
