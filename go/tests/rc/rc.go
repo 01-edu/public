@@ -255,10 +255,10 @@ func main() {
 	fsetFile := token.NewFileSet()
 	fsetPkg := token.NewFileSet()
 
-	fmt.Println("Parsing")
 	file, err := parser.ParseFile(fsetFile, filename, nil, parser.AllErrors)
 
 	if err != nil {
+		fmt.Println("Parsing")
 		fmt.Println(err.Error())
 		os.Exit(1)
 	}
@@ -282,17 +282,12 @@ func main() {
 	analyzeArrayT()
 	analyzeForStmt(allowedImports)
 
-	fmt.Println(identation + "OK")
-
-	fmt.Println("Cheating")
-
 	if len(illegals) > 0 {
+		fmt.Println("Cheating")
 		for _, i := range illegals {
 			fmt.Println(identation + i.String())
 		}
 		os.Exit(1)
-	} else {
-		fmt.Println(identation + "OK")
 	}
 }
 
