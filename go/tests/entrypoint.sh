@@ -10,13 +10,10 @@ cd src/student
 
 if test "$REPOSITORY"; then
 	password=$(cat)
-	if ! git clone --depth=1 --shallow-submodules http://root:"${password}"@"$REPOSITORY" . 2>/dev/null; then
-		echo Could not clone your repository
-		exit 1
-	fi
+	git clone --quiet --depth=1 --shallow-submodules http://root:"${password}"@"$REPOSITORY" .
 else
 	first_file=$(echo "$EXPECTED_FILES" | cut -d' ' -f1)
-	mkdir "$(dirname $first_file)"
+	mkdir -p "$(dirname $first_file)"
 	cat > "$first_file"
 fi
 
