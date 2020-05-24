@@ -1,6 +1,6 @@
 FROM golang:1-alpine
 
-RUN apk add --no-cache git nano
+RUN apk add --no-cache git
 RUN go get golang.org/x/tools/cmd/goimports
 RUN go get github.com/01-edu/z01
 WORKDIR src
