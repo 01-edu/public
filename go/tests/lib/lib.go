@@ -372,7 +372,7 @@ func ChallengeMainStdin(exercise, input string, args ...string) {
 		return fmt.Sprintf("echo $?\n%d\n$", code)
 	}
 	student, studentCode := run("./" + exercise)
-	solution, solutionCode := run(exercise + "_correct")
+	solution, solutionCode := run(exercise + "_prog")
 	if solutionCode == 0 {
 		if studentCode != 0 {
 			Fatalln("Your program fails (non-zero exit status) when it should not :\n" +
