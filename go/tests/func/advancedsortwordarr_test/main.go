@@ -19,7 +19,7 @@ func advancedSortWordArr(a []string, f func(a, b string) int) {
 func main() {
 	table := [][]string{{"a", "A", "1", "b", "B", "2", "c", "C", "3"}}
 
-	table = append(table, lib.MultMultRandWords()...)
+	table = append(table, lib.MultRandWords())
 
 	for _, org := range table {
 		// copy for using the solution function
