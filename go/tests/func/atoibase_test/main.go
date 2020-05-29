@@ -3,9 +3,8 @@ package main
 import (
 	student "student"
 
-	"./base"
-	"./correct"
-	"github.com/01-edu/public/go/lib"
+	"base"
+	"lib"
 )
 
 // this is the function that creates the TESTS
@@ -43,7 +42,7 @@ func main() {
 		node{s: "bbbbbab", base: "-ab"},
 	)
 	for _, arg := range table {
-		lib.Challenge("AtoiBase", student.AtoiBase, correct.AtoiBase, arg.s, arg.base)
+		lib.Challenge("AtoiBase", student.AtoiBase, base.Atoi, arg.s, arg.base)
 	}
 }
 

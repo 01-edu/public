@@ -25,7 +25,7 @@ func main() {
 	}
 	for i := 0; i < 5; i++ {
 		base := lib.RandIntBetween(2, 16)
-		lib.Challenge("ItoaBase", student.ItoaBase, correct.ItoaBase, lib.MaxInt, base)
-		lib.Challenge("ItoaBase", student.ItoaBase, correct.ItoaBase, lib.MinInt, base)
+		lib.Challenge("ItoaBase", student.ItoaBase, itoaBase, lib.MaxInt, base)
+		lib.Challenge("ItoaBase", student.ItoaBase, itoaBase, lib.MinInt, base)
 	}
 }

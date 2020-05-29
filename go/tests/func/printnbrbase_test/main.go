@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"strings"
 
 	student "student"
 
@@ -10,27 +9,11 @@ import (
 	"lib"
 )
 
-var m = map[rune]struct{}{}
-
-func uniqueChar(s string) bool {
-	for _, r := range s {
-		if _, ok := m[r]; ok {
-			return false
-		}
-		m[r] = struct{}{}
-	}
-	return true
-}
-
-func validBase(base string) bool {
-	return len(base) >= 2 && !strings.ContainsAny(base, "+-") && uniqueChar(base)
-}
-
-func printNbrBase(n int, base string) {
-	if validBase(base) {
-		length := len(base)
+func printNbrBase(n int, b string) {
+	if base.IsValid(b) {
+		length := len(b)
 		sign := 1
-		rbase := []rune(base)
+		rbase := []rune(b)
 		if n < 0 {
 			fmt.Print("-")
 			sign = -1
@@ -38,7 +21,7 @@ func printNbrBase(n int, base string) {
 		if n < length && n >= 0 {
 			fmt.Printf("%c", rbase[n])
 		} else {
-			printNbrBase(sign*(n/length), base)
+			printNbrBase(sign*(n/length), b)
 			fmt.Printf("%c", rbase[sign*(n%length)])
 		}
 	} else {
