@@ -20,13 +20,7 @@ global.fetch = (url) => {
 }
 
 const wait = delay => new Promise(s => setTimeout(s, delay))
-const fail = fn => {
-  try {
-    fn()
-  } catch (err) {
-    return true
-  }
-}
+const fail = fn => { try { fn() } catch (err) { return true } }
 
 const name = process.argv[2]
 const fatal = (...args) => {
@@ -47,18 +41,12 @@ const read = (filename, description) =>
     ifNoEnt(() => fatal(`Missing ${description} for ${name}`)),
   )
 
-const { filter, map, join } = []
-const { includes, split } = ''
+const { join } = []
+const { split } = ''
 const stackFmt = (err, url) => {
-  Object.assign(String.prototype, { includes, split })
-  Object.assign(Array.prototype, { filter, map, join })
-  return [
-    err.message,
-    ...err.stack
-      .split('\n')
-      .filter(l => l.includes(url))
-      .map(l => l.split(url).join(`${name}.js`)),
-  ].join('\n')
+  String.prototype.split = split
+  Array.prototype.join = join
+  return err.stack.split(url).join(`${name}.js`)
 }
 
 const main = async () => {
