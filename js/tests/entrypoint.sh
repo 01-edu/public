@@ -20,4 +20,4 @@ fi
 
 cd
 
-node test "${EXERCISE}"
+node /app/test.mjs "${EXERCISE}"
