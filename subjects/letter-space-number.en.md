@@ -1,4 +1,4 @@
-## Letter Space Number
+## Letter-space-number
 
 ### Instruction
 

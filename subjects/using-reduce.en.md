@@ -1,4 +1,4 @@
-## Using Reduce
+## Using-reduce
 
 ### Instruction
 

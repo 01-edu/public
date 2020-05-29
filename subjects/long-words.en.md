@@ -1,4 +1,4 @@
-## Long Words
+## Long-words
 
 ### Instructions
 

@@ -1,4 +1,4 @@
-## flags
+## Flagger
 
 ### Instruction
 

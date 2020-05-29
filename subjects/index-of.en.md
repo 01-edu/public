@@ -1,4 +1,4 @@
-## Index Of
+## Index-of
 
 ### Instructions
 

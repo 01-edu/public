@@ -1,4 +1,4 @@
-## manipulate-entries
+## Manipulate-entries
 
 ### Instructions
 

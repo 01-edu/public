@@ -1,4 +1,4 @@
-## Group Price
+## Group-price
 
 ### Instructions
 

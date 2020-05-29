@@ -1,4 +1,4 @@
-## Abs(olute)
+## Abs
 
 ### Instruction
 

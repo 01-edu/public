@@ -1,4 +1,4 @@
-## Map
+## Mapper
 
 ### Instructions
 

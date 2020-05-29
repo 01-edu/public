@@ -1,4 +1,4 @@
-## Keep Cut
+## Keep-cut
 
 ### Instructions
 

@@ -1,4 +1,4 @@
-## series
+## Series
 
 ### Instructions
 

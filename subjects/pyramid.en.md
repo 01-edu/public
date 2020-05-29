@@ -1,4 +1,4 @@
-## pyramid
+## Pyramid
 
 ### Instructions
 

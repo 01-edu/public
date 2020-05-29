@@ -1,4 +1,4 @@
-## Day of the Year
+## Day-of-the-year
 
 ### Instructions
 

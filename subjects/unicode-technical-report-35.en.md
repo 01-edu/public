@@ -1,4 +1,4 @@
-## Unicode Technical Report 35
+## Unicode-technical-report-35
 
 ### Subject
 

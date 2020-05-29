@@ -1,4 +1,4 @@
-## Method Man
+## Method-man
 
 ### Instructions
 

@@ -1,4 +1,4 @@
-## Last First Kiss
+## Last-first-kiss
 
 ### Instructions
 

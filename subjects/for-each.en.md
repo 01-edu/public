@@ -1,4 +1,4 @@
-## For-Each
+## For-each
 
 ### Instructions
 

@@ -1,4 +1,4 @@
-## Min Max
+## Min-max
 
 ### Instructions
 

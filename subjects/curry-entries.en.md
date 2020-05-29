@@ -1,4 +1,4 @@
-## curry entries
+## Curry-entries
 
 ### Instruction
 

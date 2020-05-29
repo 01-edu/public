@@ -1,4 +1,4 @@
-## Count Leap Years
+## Count-leap-years
 
 ### Instructions
 

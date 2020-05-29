@@ -1,4 +1,4 @@
-## same-amount
+## Same-amount
 
 ### Instruction
 

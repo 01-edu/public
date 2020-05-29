@@ -1,4 +1,4 @@
-## pronoun
+## Pronoun
 
 ### Instruction
 

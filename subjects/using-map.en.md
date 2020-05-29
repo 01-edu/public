@@ -1,4 +1,4 @@
-## Using Map
+## Using-map
 
 ### Instructions
 

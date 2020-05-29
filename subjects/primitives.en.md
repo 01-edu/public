@@ -1,4 +1,4 @@
-## Primitive
+## Primitives
 
 ### Instructions
 

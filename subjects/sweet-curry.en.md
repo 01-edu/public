@@ -1,4 +1,4 @@
-## Curry Easy
+## Sweet-curry
 
 ### Instructions
 

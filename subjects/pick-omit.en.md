@@ -1,4 +1,4 @@
-## Pick-Omit
+## Pick-omit
 
 ### Instructions
 

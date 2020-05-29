@@ -1,4 +1,4 @@
-## Biggie Smalls
+## Biggie-smalls
 
 ### Instructions
 

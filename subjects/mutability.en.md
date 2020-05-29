@@ -11,7 +11,7 @@ Increase by one the property age of `person`
 and set his contry to `'FR'`.
 
 
-## Notions
+### Notions
 
 - https://nan-academy.github.io/js-training/examples/set.js
 - https://nan-academy.github.io/js-training/examples/get.js

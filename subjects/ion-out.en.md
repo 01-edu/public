@@ -1,4 +1,4 @@
-## Ion Out
+## Ion-out
 
 ### Instruction
 
