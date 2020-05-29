@@ -43,5 +43,6 @@ if command -v "${EXERCISE}_test" >/dev/null 2>&1; then
 	"${EXERCISE}_test"
 else
 	# The exercise is a function
-	go run "func/${EXERCISE}_test"
+	go build "func/${EXERCISE}_test"
+	"./${EXERCISE}_test"
 fi
