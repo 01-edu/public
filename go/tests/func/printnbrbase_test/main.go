@@ -1,12 +1,50 @@
 package main
 
 import (
+	"fmt"
+	"strings"
+
 	student "student"
 
-	"./base"
-	"./correct"
-	"github.com/01-edu/public/go/lib"
+	"base"
+	"lib"
 )
+
+var m = map[rune]struct{}{}
+
+func uniqueChar(s string) bool {
+	for _, r := range s {
+		if _, ok := m[r]; ok {
+			return false
+		}
+		m[r] = struct{}{}
+	}
+	return true
+}
+
+func validBase(base string) bool {
+	return len(base) >= 2 && !strings.ContainsAny(base, "+-") && uniqueChar(base)
+}
+
+func printNbrBase(n int, base string) {
+	if validBase(base) {
+		length := len(base)
+		sign := 1
+		rbase := []rune(base)
+		if n < 0 {
+			fmt.Print("-")
+			sign = -1
+		}
+		if n < length && n >= 0 {
+			fmt.Printf("%c", rbase[n])
+		} else {
+			printNbrBase(sign*(n/length), base)
+			fmt.Printf("%c", rbase[sign*(n%length)])
+		}
+	} else {
+		fmt.Print("NV")
+	}
+}
 
 func main() {
 	type node struct {
@@ -45,8 +83,6 @@ func main() {
 		node{n: lib.MinInt, base: "0123456789"},
 	)
 	for _, arg := range table {
-		lib.Challenge("PrintNbrBase", student.PrintNbrBase, correct.PrintNbrBase, arg.n, arg.base)
+		lib.Challenge("PrintNbrBase", student.PrintNbrBase, printNbrBase, arg.n, arg.base)
 	}
 }
-
-// TODO: fix base exercises
