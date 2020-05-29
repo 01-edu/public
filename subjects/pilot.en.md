@@ -2,31 +2,24 @@
 
 ### Instructions
 
-Write a `go` file so that the following program compiles.
-
-### Note:
-
-- The code bellow must be submitted.
-
-- Be careful with the expected files.
+Append to the code below what's needed so that the program compiles.
 
 ### Usage
 
 ```go
 package main
 
-import (
-	"fmt"
-	student ".."
-)
+import "fmt"
 
 func main() {
-	var donnie student.Pilot
+	var donnie Pilot
 	donnie.Name = "Donnie"
 	donnie.Life = 100.0
 	donnie.Age = 24
-	donnie.Aircraft = student.AIRCRAFT1
+	donnie.Aircraft = AIRCRAFT1
 
 	fmt.Println(donnie)
 }
+
+const AIRCRAFT1 = 1
 ```
