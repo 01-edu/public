@@ -1,0 +1,13 @@
+## throttling
+
+### Instructions
+
+Create two functions that will work like `_.throttle` from lodash
+- `throttle`, this function doesn't need to take care of the options
+- `opThrottle`, this function will take care of
+  the `trailing` and `leading` options
+
+
+### Notions
+
+- https://lodash.com/docs/4.17.15#throttle
