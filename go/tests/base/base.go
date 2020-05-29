@@ -1,9 +1,7 @@
-package correct
-
 import (
 	"math/rand"
 
-	"github.com/01-edu/z01"
+	"lib"
 )
 
 func Valid() string {
@@ -39,7 +37,7 @@ func Invalid() string {
 
 func StringFrom(base string) string {
 	letters := []rune(base)
-	size := z01.RandIntBetween(1, 10)
+	size := lib.RandIntBetween(1, 10)
 	runes := make([]rune, size)
 	for i := range runes {
 		runes[i] = letters[rand.Intn(len(letters))]
@@ -67,5 +65,3 @@ func Convert(nbr, baseFrom, baseTo string) string {
 
 	return resultFinal
 }
-
-// TODO: fix base exercises
