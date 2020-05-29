@@ -10,12 +10,12 @@ In the "Object Attributes" section of the "Object Edit" Page, the first row is a
 
 > Within a same Object, each attribute's name must be unique.
 
-Once created, the new attributes appears right bellow and the ability to associate a value to it is now available. Depending on the type of the attribute, the interface will vary.
+Once created, the new attributes appears right below and the ability to associate a value to it is now available. Depending on the type of the attribute, the interface will vary.
 
 - String value input is type String.
 - Number value input is type Number.
 - Booleans value input appears as a switch, true by default.
-- Arrays and Objects content are hideable / showable via the "Show/Hide content" button on the right of the attribute. There is no limit on the depth of Object/Array, however, after a certain level, the interface will start to feel narrow.
+- Arrays and Objects content are hidable / showable via the "Show/Hide content" button on the right of the attribute. There is no limit on the depth of Object/Array, however, after a certain level, the interface will start to feel narrow.
 - String value input is type String.
 - Null will not display any input.
 - Function will offer to select from all available functions, save on select.
@@ -86,7 +86,7 @@ Let's create a few `exercises` objects
 
 We can now create a parent object that will reference them and link them.
 
-This allow you to specify the structuration of your pedagocial content.
+This allow you to specify the structuration of your pedagogical content.
 
 I'll make a quest that regroup those 2 exercises:
 
