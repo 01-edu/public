@@ -1,7 +1,8 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
-# Unofficial Bash Strict Mode
-set -euo pipefail
+set -o noglob
+set -o errexit
+set -o nounset
 IFS='
 '
 
@@ -15,7 +16,6 @@ else
   first_file=$(echo "$EXPECTED_FILES" | cut -d' ' -f1)
   mkdir -p "$(dirname "$first_file")"
   cat > "$first_file"
-  chmod +x "$first_file"
 fi
 
 cd
