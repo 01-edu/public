@@ -3,6 +3,22 @@ import { fileURLToPath } from 'url'
 import { deepStrictEqual as eq } from 'assert'
 import * as fs from 'fs'
 const { readFile, writeFile } = fs.promises
+
+global.window = global
+global.fetch = (url) => {
+  // this is a fake implementation of fetch for the tester
+  // -> refer to https://devdocs.io/javascript/global_objects/fetch
+  const accessBody = async () => { throw Error('body unavailable') }
+  return {
+    ok: false,
+    type: 'basic',
+    status: 500,
+    statusText: 'Internal Server Error',
+    json: accessBody,
+    text: accessBody,
+  }
+}
+
 const wait = delay => new Promise(s => setTimeout(s, delay))
 const fail = fn => {
   try {
@@ -27,7 +43,7 @@ const ifNoEnt = fn => err => {
 
 const root = dirname(fileURLToPath(import.meta.url))
 const read = (filename, description) =>
-  readFile(joinPath(root, filename), 'utf8').catch(
+  readFile(filename, 'utf8').catch(
     ifNoEnt(() => fatal(`Missing ${description} for ${name}`)),
   )
 
@@ -41,14 +57,14 @@ const stackFmt = (err, url) => {
     ...err.stack
       .split('\n')
       .filter(l => l.includes(url))
-      .map(l => l.split(url).join(`${name}.js`))
+      .map(l => l.split(url).join(`${name}.js`)),
   ].join('\n')
 }
 
 const main = async () => {
   const [test, code] = await Promise.all([
-    read(`${name}_test.js`, 'test'),
-    read(`student/${name}.js`, 'student solution'),
+    read(joinPath(root, `${name}_test.js`), 'test'),
+    read(`/jail/student/${name}.js`, 'student solution'),
   ])
 
   if (code.includes('import')) fatal('import keyword not allowed')
@@ -75,6 +91,7 @@ const main = async () => {
       fatal(stackFmt(err, url))
     }
   }
+  console.log(`${name} passed (${tests.length} tests)`)
 }
 
 main().catch(err => fatal(err.stack))
