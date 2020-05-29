@@ -1,6 +1,6 @@
 import { join as joinPath, dirname } from 'path'
 import { fileURLToPath } from 'url'
-import { deepStrictEqual as eq } from 'assert'
+import { deepStrictEqual } from 'assert'
 import * as fs from 'fs'
 const { readFile, writeFile } = fs.promises
 
@@ -21,6 +21,7 @@ global.fetch = (url) => {
 
 const wait = delay => new Promise(s => setTimeout(s, delay))
 const fail = fn => { try { fn() } catch (err) { return true } }
+const eq = (a, b) => (deepStrictEqual(a, b), true)
 
 const name = process.argv[2]
 const fatal = (...args) => {
