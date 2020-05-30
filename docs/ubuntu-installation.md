@@ -43,7 +43,7 @@ Run a terminal and type these commands :
 unset HISTFILE
 sudo apt -y install git
 git clone https://github.com/01-edu/public.git
-public/scripts/setup.sh
+public/sh/debian/ubuntu/setup.sh
 ```
 
 The script will ask for student user password (which will be deleted after) and then after a long configuration process it will restart the computer.
