@@ -6,11 +6,11 @@ export const tests = [
   ({ eq }) =>
     eq(
       read('/jail/student/index.html', 'utf8').trim(),
-      '<script type="module" src="hello-world.js"></script>',
+      '<script type="module" src="how-2-js.js"></script>',
     ),
   ({ eq }) =>
     eq(
-      read('/jail/student/hello-world.js', 'utf8').trim(),
+      read('/jail/student/how-2-js.js', 'utf8').trim(),
       `console.log('Hello World')`,
     ),
 ]
