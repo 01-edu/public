@@ -1,6 +1,6 @@
-## molecules-cells
+## Molecules Cells
 
-### Instruction
+### Instructions
 
 Write two functions:
   - `RNA` that given a DNA strand it must return is complement RNA

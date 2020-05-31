@@ -1,10 +1,11 @@
-## debouncing
+## Debounce
 
-## Instruction
+### Instructions
 
 Create two functions that will work like `_.debounce` from lodash
 - `debounce`, this function doesn't need to take care of the options
 - `opDebounce`, this function will take care of the `leading` options
+
 
 ### Notions
 

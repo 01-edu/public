@@ -1,4 +1,4 @@
-## deep-copy
+## Deep Copy
 
 ### Instructions
 

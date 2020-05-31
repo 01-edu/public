@@ -1,6 +1,6 @@
-## curry entries
+## Curry Entries
 
-### Instruction
+### Instructions
 
 This exercise consists in creating curry functions to apply in the objects
 entries.

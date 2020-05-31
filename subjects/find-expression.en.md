@@ -1,4 +1,6 @@
-### Instruction
+## Find Expression
+
+### Instructions
 
 Create a function called `findExpression` that takes a number as parameter and returns a string
 

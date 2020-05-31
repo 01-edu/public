@@ -1,6 +1,6 @@
-## flags
+## Flagger
 
-### Instruction
+### Instructions
 
 Create a function called `flags` that receives an object and outputs
 the specific aliases and descriptions from the properties of that object.

@@ -1,4 +1,4 @@
-## manipulate-keys
+## Manipulate Keys
 
 ### Instructions
 

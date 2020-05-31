@@ -1,6 +1,6 @@
-## valid-ip
+## Valid Ip
 
-### Instruction
+### Instructions
 
 Write a function called `findIP` that search for a valid IP, with or without a port, in a string passed as parameter
 

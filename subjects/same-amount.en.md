@@ -1,6 +1,6 @@
-## same-amount
+## Same Amount
 
-### Instruction
+### Instructions
 
 Create a `sameAmount` function that takes three parameter,
 a data string and 2 regexes.

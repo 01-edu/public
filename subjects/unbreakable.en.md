@@ -1,12 +1,12 @@
-## Title
+## Unbreakable
 
-### Instruction
+### Instructions
 
 Implement 2 functions:
 - `split` that works like the string method `.split` but take the string as
   it's first argument.
 
-- `join` that works like the string method `.split` but take the array as
+- `join` that works like the string method `.join` but take the array as
   it's first argument.
 
 

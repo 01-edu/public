@@ -1,4 +1,4 @@
-## replica
+## Replica
 
 ### Instructions
 

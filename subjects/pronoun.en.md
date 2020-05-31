@@ -1,6 +1,6 @@
-## pronoun
+## Pronoun
 
-### Instruction
+### Instructions
 
 Create a function called `pronoun` that has a string as parameter. This function returns an object 
 that will have all the pronouns, present in the string, as keys. Each key will have a sub object with the 

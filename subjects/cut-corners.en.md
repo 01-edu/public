@@ -1,4 +1,4 @@
-## Cut corners
+## Cut Corners
 
 ### Instructions
 

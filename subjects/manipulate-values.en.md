@@ -1,4 +1,4 @@
-## manipulate-values
+## Manipulate Values
 
 ### Instructions
 

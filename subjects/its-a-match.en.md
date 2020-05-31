@@ -1,6 +1,6 @@
-## It's a match
+## Its A Match
 
-### Instruction
+### Instructions
 
 Create 4 regular expression in variables:
 

@@ -1,4 +1,4 @@
-## fusion
+## Fusion
 
 ### Instructions
 

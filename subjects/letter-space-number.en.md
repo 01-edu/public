@@ -1,6 +1,6 @@
 ## Letter Space Number
 
-### Instruction
+### Instructions
 
 Make a function called `letterSpaceNumber` that receives a string and returns an
 array with every instance of a letter, followed by a space, followed by a number

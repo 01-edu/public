@@ -1,6 +1,6 @@
-## greedy-url
+## Greedy Url
 
-### Instruction
+### Instructions
 
 Write 3 functions :
 

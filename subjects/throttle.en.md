@@ -1,4 +1,4 @@
-## throttling
+## Throttle
 
 ### Instructions
 

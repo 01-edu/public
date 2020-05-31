@@ -1,4 +1,4 @@
-## neuron
+## Neuron
 
 ### Instructions
 

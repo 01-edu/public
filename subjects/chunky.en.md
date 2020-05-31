@@ -1,6 +1,6 @@
-## Chunk
+## Chunky
 
-### Instruction
+### Instructions
 
 Create the `chunk` function that returns an array of elements
 split into groups the length of the given size.

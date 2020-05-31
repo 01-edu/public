@@ -1,6 +1,6 @@
 ## Using Reduce
 
-### Instruction
+### Instructions
 
 Create three functions :
 - `adder` that receives an array and adds its elements.

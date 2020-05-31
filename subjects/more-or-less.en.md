@@ -1,4 +1,4 @@
-## More or less
+## More Or Less
 
 ### Instructions
 
