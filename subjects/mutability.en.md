@@ -10,9 +10,7 @@ Create a new variable `samePerson` with the same value as `person`.
 Increase by one the property age of `person`
 and set his contry to `'FR'`.
 
-### Important
-
-No need to copy `person` variable to your file. It will be added during the test!
+> No need to copy `person` variable to your file. It will be added during the test!
 
 ### Notions
 
