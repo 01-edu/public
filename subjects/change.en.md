@@ -3,20 +3,21 @@
 ### Instructions
 
 Create 2 functions:
-- `get`: a function that takes a key and return the corresponding
+- `get`: a function that takes a key and returns the corresponding
   value from the sourceObject
 
-- `set`: a function that takes a key and a value update the
+- `set`: a function that takes a key and a value, updates the
   value for the corresponding property of the sourceObject
-  and return the set value
+  and returns the set value
 
+> No need to copy `sourceObject` variable to your file. It will be added during the test!
 
 ### Notions
 
-- https://nan-academy.github.io/js-training/examples/functions.js
-- https://nan-academy.github.io/js-training/examples/data-structures.js
-- https://nan-academy.github.io/js-training/examples/get.js
-- https://nan-academy.github.io/js-training/examples/set.js
+- [functions](https://nan-academy.github.io/js-training/examples/functions.js)
+- [data structures](https://nan-academy.github.io/js-training/examples/data-structures.js)
+- [get](https://nan-academy.github.io/js-training/examples/get.js)
+- [set](https://nan-academy.github.io/js-training/examples/set.js)
 
 
 ### Code provided
