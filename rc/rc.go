@@ -873,6 +873,5 @@ func (l *loadVisitor) Visit(n ast.Node) ast.Visitor {
 
 // Returns true if the string matches the format of a relative import
 func isRelativeImport(s string) bool {
-	reg := regexp.MustCompile(`^\.`)
-	return reg.Match([]byte(s))
+	return strings.HasPrefix(s, ".")
 }
