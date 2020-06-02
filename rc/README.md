@@ -6,7 +6,7 @@ This program analyses a go source file and displays in standard output the impor
 
 - Allowed
   - All functions declared inside the source file are allowed
-  - Array of all types are allowed
+  - Slices of all types are allowed
   - Loops are allowed
   - Relative imports are allowed
 
@@ -22,8 +22,8 @@ This program analyses a go source file and displays in standard output the impor
   - `-cast` allows casting to every built-in type.
   - `-no-for` prohibits the use of `for` loops in the program or function.
   - `-allow-builtin` allows all builtin functions and casting to builtin types
-  - `-no-arrays` disallows the use of all array types
-  - `-no-these-arrays=type1,type2`: disallows the arrays of type1 and type2
+  - `-no-arrays` disallows the use of all slices types
+  - `-no-these-arrays=type1,type2`: disallows the slices of type1 and type2
   - `-no-relative-imports`: disallows the use of relative imports
 
 ### Arguments:
@@ -50,7 +50,7 @@ This program analyses a go source file and displays in standard output the impor
     - Ex: `../piscine`, `..`, `.`
   - Disallow `for` loops
     - Use the flags `-no-for`.
-  - Disallow all array types.
+  - Disallow all aslices types.
     - Use `-no-arrays`
   - Unallow literals
     - Use the flag `--no-lit="{PATTERN}"`
