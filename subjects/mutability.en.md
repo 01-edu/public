@@ -19,6 +19,7 @@ and set his contry to `'FR'`.
 
 
 ### Code provided
+this code does not need to be sent for verification
 ```js
 const person = {
   name: 'Rick',
