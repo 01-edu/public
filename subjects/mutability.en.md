@@ -10,12 +10,15 @@ Create a new variable `samePerson` with the same value as `person`.
 Increase by one the property age of `person`
 and set his contry to `'FR'`.
 
+### Important
+
+No need to copy `person` variable to your file. It will be added during the test!
 
 ### Notions
 
-- https://nan-academy.github.io/js-training/examples/set.js
-- https://nan-academy.github.io/js-training/examples/get.js
-- https://nan-academy.github.io/js-training/examples/data-structures.js
+- [set values](https://nan-academy.github.io/js-training/examples/set.js)
+- [get values](https://nan-academy.github.io/js-training/examples/get.js)
+- [data structures](https://nan-academy.github.io/js-training/examples/data-structures.js)
 
 
 ### Code provided
