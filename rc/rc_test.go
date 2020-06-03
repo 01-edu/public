@@ -74,8 +74,8 @@ Cheating:
 	illegal-definition	defFun               	tests/printalphabet/printalphabet.go:25:2
 	illegal-call      	defFun               	tests/printalphabet/printalphabet.go:28:2
 	illegal-definition	testingScope         	tests/printalphabet/printalphabet.go:24:1
-	illegal-array     	rune                 	tests/printalphabet/printalphabet.go:9:18
-	illegal-array     	rune                 	tests/printalphabet/printalphabet.go:16:7
+	illegal-slice     	rune                 	tests/printalphabet/printalphabet.go:9:18
+	illegal-slice     	rune                 	tests/printalphabet/printalphabet.go:16:7
 `,
 		"-no-these-arrays=int,rune tests/printalphabet/printalphabet.go": `Parsing:
 	Ok
@@ -93,8 +93,8 @@ Cheating:
 	illegal-definition	defFun               	tests/printalphabet/printalphabet.go:25:2
 	illegal-call      	defFun               	tests/printalphabet/printalphabet.go:28:2
 	illegal-definition	testingScope         	tests/printalphabet/printalphabet.go:24:1
-	illegal-array     	rune                 	tests/printalphabet/printalphabet.go:9:18
-	illegal-array     	rune                 	tests/printalphabet/printalphabet.go:16:7
+	illegal-slice     	rune                 	tests/printalphabet/printalphabet.go:9:18
+	illegal-slice     	rune                 	tests/printalphabet/printalphabet.go:16:7
 `,
 		`-allow-builtin tests/doopprog/main.go fmt.Println strconv.Atoi os.Args`: `Parsing:
 	Ok

@@ -698,7 +698,7 @@ func analyseArrayTypes(arrays []*occurrence, noArrays bool, noTheseArrays map[st
 	for _, v := range arrays {
 		if noArrays || noTheseArrays[v.name] {
 			il := &illegal{
-				T:    "illegal-array",
+				T:    "illegal-slice",
 				Name: v.name,
 				Pos:  v.pos,
 			}
