@@ -10,12 +10,13 @@ of the number passed as argument.
 
 - '*' character and depth of 5 :
 
+```
 *
 **
 ***
 ****
 *****
-
+```
 
 ### Notions
 
