@@ -24,6 +24,10 @@
 
 ###### Can you confirm that the browser non logged remains unregistered?
 
+##### Try opening two different browsers and login into both of them. Refresh both browsers.
+
+###### Can you confirm that only one of those browsers has an active session?
+
 ##### Try opening two different browsers and login into one of them. Then create a new post or just add a comment. Refresh both browsers.
 
 ###### Does it present the comment/post on both browsers?
