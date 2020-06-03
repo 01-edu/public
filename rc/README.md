@@ -22,8 +22,8 @@ This program analyses a go source file and displays in standard output the impor
   - `-cast` allows casting to every built-in type.
   - `-no-for` prohibits the use of `for` loops in the program or function.
   - `-allow-builtin` allows all builtin functions and casting to builtin types
-  - `-no-arrays` disallows the use of all slices types
-  - `-no-these-arrays=type1,type2`: disallows the slices of type1 and type2
+  - `-no-slices` disallows the use of all slices types
+  - `-no-these-slices=type1,type2`: disallows the slices of type1 and type2
   - `-no-relative-imports`: disallows the use of relative imports
 
 ### Arguments:
@@ -51,13 +51,13 @@ This program analyses a go source file and displays in standard output the impor
   - Disallow `for` loops
     - Use the flags `-no-for`.
   - Disallow all aslices types.
-    - Use `-no-arrays`
+    - Use `-no-slices`
   - Unallow literals
     - Use the flag `--no-lit="{PATTERN}"`
     - Note: `"{PATTERN}"` must be a valid Regular Expression.
       - ex:
         ```console
-        _$ rc -no-arrays --no-lit=[b-yB-Y] main.go fmt.* github.com/01-edu/z01.PrintRune len 
+        _$ rc -no-slices --no-lit=[b-yB-Y] main.go fmt.* github.com/01-edu/z01.PrintRune len 
         ```
 
 ### Example:
@@ -94,7 +94,7 @@ This program analyses a go source file and displays in standard output the impor
 - Disallow the use of the slices of type `string` and `int`
 
     ```console
-    _$ rc -no-these-arrays=string,int sourcefile.go
+    _$ rc -no-these-slices=string,int sourcefile.go
     ```
 
 - To allow just one type of casting
