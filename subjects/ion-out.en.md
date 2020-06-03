@@ -8,4 +8,4 @@ word containing 'ion' following a t, without the 'ion'.
 
 ### Notions
 
-- https://github.com/ziishaned/learn-regex#4-lookarounds
+- [https://github.com/ziishaned/learn-regex#4-lookarounds](https://github.com/ziishaned/learn-regex#4-lookarounds)

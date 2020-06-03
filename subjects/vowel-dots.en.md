@@ -8,4 +8,4 @@ every vowel ('y' is not considered a vowel here) using a regex called `vowels`.
 
 ### Notions
 
-- https://github.com/ziishaned/learn-regex#22-character-sets
+- [github.com/ziishaned/learn-regex#22-character-sets](https://github.com/ziishaned/learn-regex#22-character-sets)

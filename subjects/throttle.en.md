@@ -10,4 +10,4 @@ Create two functions that will work like `_.throttle` from lodash
 
 ### Notions
 
-- https://lodash.com/docs/4.17.15#throttle
+- [lodash.com/docs/4.17.15#throttle](https://lodash.com/docs/4.17.15#throttle)

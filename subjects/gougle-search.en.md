@@ -31,8 +31,8 @@ using a the server name as key.
 
 ### Notions
 
-- https://devdocs.io/javascript/global_objects/promise/race
-- https://devdocs.io/javascript/global_objects/promise/all
+- [https://devdocs.io/javascript/global_objects/promise/race](https://devdocs.io/javascript/global_objects/promise/race)
+- [https://devdocs.io/javascript/global_objects/promise/all](https://devdocs.io/javascript/global_objects/promise/all)
 
 
 ### Code provided

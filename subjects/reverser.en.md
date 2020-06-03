@@ -9,7 +9,7 @@ Like `[].reverse()` but working also for strings (without using the actual metho
 
 ### Notions
 
-- https://devdocs.io/javascript/global_objects/array/reverse
+- [devdocs.io/javascript/global_objects/array/reverse](https://devdocs.io/javascript/global_objects/array/reverse)
 
 
 ### Code provided

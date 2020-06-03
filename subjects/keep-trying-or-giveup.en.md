@@ -25,6 +25,6 @@ or reject an error using the message `"timeout"`
 
 ### Notions
 
-- https://nan-academy.github.io/js-training/examples/promise.js
-- https://devdocs.io/dom/windoworworkerglobalscope/settimeout
-- https://devdocs.io/javascript/global_objects/promise/race
+- [nan-academy.github.io/js-training/examples/promise.js](https://nan-academy.github.io/js-training/examples/promise.js)
+- [devdocs.io/dom/windoworworkerglobalscope/settimeout](https://devdocs.io/dom/windoworworkerglobalscope/settimeout)
+- [devdocs.io/javascript/global_objects/promise/race](https://devdocs.io/javascript/global_objects/promise/race)

@@ -8,7 +8,7 @@ and that works like the method .forEach
 
 ### Notions
 
-- https://devdocs.io/javascript/global_objects/array/foreach
+- [https://devdocs.io/javascript/global_objects/array/foreach](https://devdocs.io/javascript/global_objects/array/foreach)
 
 
 ### Code provided

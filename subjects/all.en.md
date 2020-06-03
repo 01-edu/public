@@ -8,8 +8,8 @@ Create a function `all` that works like `Promise.all` but with objects.
 
 ### Notions
 
-- https://nan-academy.github.io/js-training/examples/promise.js
-- https://devdocs.io/javascript/global_objects/promise/all
+- [nan-academy.github.io/js-training/examples/promise.js](https://nan-academy.github.io/js-training/examples/promise.js)
+- [devdocs.io/javascript/global_objects/promise/all](https://devdocs.io/javascript/global_objects/promise/all)
 
 
 ### Code provided

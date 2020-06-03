@@ -16,8 +16,8 @@ The use of `[].every` and `[].some` is forbidden for this exercise.
 
 ### Notions
 
-- https://devdocs.io/javascript/global_objects/array/some
-- https://devdocs.io/javascript/global_objects/array/every
+- [devdocs.io/javascript/global_objects/array/some](https://devdocs.io/javascript/global_objects/array/some)
+- [devdocs.io/javascript/global_objects/array/every](https://devdocs.io/javascript/global_objects/array/every)
 
 
 ### Code provided

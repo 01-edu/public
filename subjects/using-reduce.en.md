@@ -23,4 +23,4 @@ sumOrMul([1, 2, 3, 4], 5)
 
 ### Notions
 
-- https://devdocs.io/javascript/global_objects/array/reduce
+- [devdocs.io/javascript/global_objects/array/reduce](https://devdocs.io/javascript/global_objects/array/reduce)

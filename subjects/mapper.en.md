@@ -11,8 +11,8 @@ and that works like the method .flatMap
 
 ### Notions
 
-- https://devdocs.io/javascript/global_objects/array/map
-- https://devdocs.io/javascript/global_objects/array/flatmap
+- [devdocs.io/javascript/global_objects/array/map](https://devdocs.io/javascript/global_objects/array/map)
+- [devdocs.io/javascript/global_objects/array/flatmap](https://devdocs.io/javascript/global_objects/array/flatmap)
 
 
 ### Code provided

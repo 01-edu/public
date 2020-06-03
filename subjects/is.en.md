@@ -18,10 +18,10 @@ Add new function properties to the object `is`` to check a value type
 
 ### Notions
 
-- https://nan-academy.github.io/js-training/examples/primitive-and-operators
-- https://devdocs.io/javascript/operators/typeof
-- https://developer.mozilla.org/en-US/docs/Glossary/Truthy
-- https://developer.mozilla.org/en-US/docs/Glossary/Falsy
+- [https://nan-academy.github.io/js-training/examples/primitive-and-operators](https://nan-academy.github.io/js-training/examples/primitive-and-operators)
+- [https://devdocs.io/javascript/operators/typeof](https://devdocs.io/javascript/operators/typeof)
+- [https://developer.mozilla.org/en-US/docs/Glossary/Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
+- [https://developer.mozilla.org/en-US/docs/Glossary/Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
 
 
 ### Code provided

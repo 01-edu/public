@@ -12,4 +12,4 @@ Please note that those functions can only have one argument each.
 
 ### Notions
 
-- https://stackoverflow.com/questions/36314/what-is-currying
+- [stackoverflow.com/questions/36314/what-is-currying](https://stackoverflow.com/questions/36314/what-is-currying)

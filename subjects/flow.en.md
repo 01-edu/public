@@ -25,4 +25,4 @@ returns
 
 ### Notions
 
-- https://lodash.com/docs/4.17.15#flow
+- [https://lodash.com/docs/4.17.15#flow](https://lodash.com/docs/4.17.15#flow)

@@ -9,4 +9,4 @@ only if that number has only one digit and is not followed by any letter.
 
 ### Notions
 
-- https://github.com/ziishaned/learn-regex#3-shorthand-character-sets
+- [github.com/ziishaned/learn-regex#3-shorthand-character-sets](https://github.com/ziishaned/learn-regex#3-shorthand-character-sets)

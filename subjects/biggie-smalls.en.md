@@ -9,4 +9,4 @@ Create 2 variables
 
 ### Notions
 
-- https://devdocs.io/javascript-number/
+- [https://devdocs.io/javascript-number/](https://devdocs.io/javascript-number/)

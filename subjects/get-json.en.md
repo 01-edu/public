@@ -22,7 +22,7 @@ The parsed object contains one of those 2 properties:
 
 ### Notions
 
-- https://nan-academy.github.io/js-training/examples/promise.js
-- https://devdocs.io/dom/fetch_api/using_fetch
-- https://devdocs.io/dom/urlsearchparams
-- https://devdocs.io/javascript/global_objects/json
+- [https://nan-academy.github.io/js-training/examples/promise.js](https://nan-academy.github.io/js-training/examples/promise.js)
+- [https://devdocs.io/dom/fetch_api/using_fetch](https://devdocs.io/dom/fetch_api/using_fetch)
+- [https://devdocs.io/dom/urlsearchparams](https://devdocs.io/dom/urlsearchparams)
+- [https://devdocs.io/javascript/global_objects/json](https://devdocs.io/javascript/global_objects/json)

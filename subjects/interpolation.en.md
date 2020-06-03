@@ -42,4 +42,4 @@ duration = 10
 
 ### Notions
 
-- https://javascript.info/settimeout-setinterval
+- [https://javascript.info/settimeout-setinterval](https://javascript.info/settimeout-setinterval)

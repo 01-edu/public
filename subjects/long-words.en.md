@@ -15,5 +15,5 @@ a string with at least 7 characters.
 
 ### Notions
 
-- https://devdocs.io/javascript/global_objects/Array/every
-- https://devdocs.io/javascript/global_objects/Array/some
+- [devdocs.io/javascript/global_objects/Array/every](https://devdocs.io/javascript/global_objects/Array/every)
+- [devdocs.io/javascript/global_objects/Array/some](https://devdocs.io/javascript/global_objects/Array/some)

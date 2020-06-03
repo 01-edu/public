@@ -11,5 +11,5 @@ Create a `nested` constant variable that contains
 
 ### Notions
 
-- https://nan-academy.github.io/js-training/examples/data-structures.js
-- https://devdocs.io/javascript/global_objects/object/freeze
+- [nan-academy.github.io/js-training/examples/data-structures.js](https://nan-academy.github.io/js-training/examples/data-structures.js)
+- [devdocs.io/javascript/global_objects/object/freeze](https://devdocs.io/javascript/global_objects/object/freeze)

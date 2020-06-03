@@ -16,5 +16,5 @@ Create 3 functions:
 
 ### Notions
 
-- https://nan-academy.github.io/js-training/examples/data-structures.js
-- https://nan-academy.github.io/js-training/examples/get.js
+- [nan-academy.github.io/js-training/examples/data-structures.js](https://nan-academy.github.io/js-training/examples/data-structures.js)
+- [nan-academy.github.io/js-training/examples/get.js](https://nan-academy.github.io/js-training/examples/get.js)

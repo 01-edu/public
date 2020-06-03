@@ -14,5 +14,5 @@ numbers from 1 to the number passed as parameter, with three exception.
 
 ### Notions
 
-- https://nan-academy.github.io/js-training/examples/loops.js
-- https://nan-academy.github.io/js-training/examples/recursion.js
+- [nan-academy.github.io/js-training/examples/loops.js](https://nan-academy.github.io/js-training/examples/loops.js)
+- [nan-academy.github.io/js-training/examples/recursion.js](https://nan-academy.github.io/js-training/examples/recursion.js)

@@ -12,8 +12,8 @@ Implement 2 functions:
 
 ### Notions
 
-- https://devdocs.io/javascript/global_objects/array/join
-- https://devdocs.io/javascript/global_objects/string/split
+- [devdocs.io/javascript/global_objects/array/join](https://devdocs.io/javascript/global_objects/array/join)
+- [devdocs.io/javascript/global_objects/string/split](https://devdocs.io/javascript/global_objects/string/split)
 
 
 ### Code provided

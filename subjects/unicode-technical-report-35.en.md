@@ -30,4 +30,4 @@ Implement a `format` function that takes 2 arguments:
 
 ### Notions
 
-- https://www.unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table
+- [www.unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table](https://www.unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table)

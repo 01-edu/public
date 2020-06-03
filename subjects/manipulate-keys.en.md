@@ -12,11 +12,11 @@ Create 3 functions that works like the `.filter`, `.map` and `.reduce` array met
 
 ### Notions
 
-- https://devdocs.io/javascript/global_objects/array/filter
-- https://devdocs.io/javascript/global_objects/array/map
-- https://devdocs.io/javascript/global_objects/array/reduce
-- https://devdocs.io/javascript/global_objects/object/entries
-- https://devdocs.io/javascript/global_objects/object/fromentries
+- [devdocs.io/javascript/global_objects/array/filter](https://devdocs.io/javascript/global_objects/array/filter)
+- [devdocs.io/javascript/global_objects/array/map](https://devdocs.io/javascript/global_objects/array/map)
+- [devdocs.io/javascript/global_objects/array/reduce](https://devdocs.io/javascript/global_objects/array/reduce)
+- [devdocs.io/javascript/global_objects/object/entries](https://devdocs.io/javascript/global_objects/object/entries)
+- [devdocs.io/javascript/global_objects/object/fromentries](https://devdocs.io/javascript/global_objects/object/fromentries)
 
 
 ### Code provided

@@ -28,5 +28,5 @@ matchCron('9 * * * *', new Date('2020-05-30 19:21:00')) // -> false
 
 ### Notions
 
-- https://crontab.guru/
-- https://devdocs.io/javascript/global_objects/date
+- [crontab.guru/](https://crontab.guru/)
+- [devdocs.io/javascript/global_objects/date](https://devdocs.io/javascript/global_objects/date)

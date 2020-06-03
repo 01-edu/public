@@ -26,16 +26,16 @@ Knowledge is important but not as essential as health.
 We really wish all of you to stay safe and healthy at home.
 
 This is why we created a little guideline in how to conduct your audit from home.
-There is a video here : https://www.youtube.com/watch?v=J8g8P-IJLJw
+There is a video here : [youtube.com/watch?v=J8g8P-IJLJw](https://www.youtube.com/watch?v=J8g8P-IJLJw)
 
 But we are also going to summarize the process.
 So here we go.
 
 ### Prerequisites for the team captain and the auditor
 
-- A program to communicate and livestream installed (like Discord https://discordapp.com/ )
+- A program to communicate and livestream installed (like Discord [https://discordapp.com/](https://discordapp.com/) )
 - A program to allows the auditor to take charge of the computer
-  of the team captain installed (like teamViewer https://www.teamviewer.com/ )
+  of the team captain installed (like teamViewer [teamviewer.com/](https://www.teamviewer.com/) )
 
 ### Prerequisite for the team captain
 

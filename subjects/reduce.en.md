@@ -31,7 +31,7 @@ The use of `[].reduce` and `[].reduceRight` is forbidden for this exercise.
 
 ### Notions
 
-- https://devdocs.io/javascript/global_objects/array/reduce
+- [devdocs.io/javascript/global_objects/array/reduce](https://devdocs.io/javascript/global_objects/array/reduce)
 
 
 ### Code provided

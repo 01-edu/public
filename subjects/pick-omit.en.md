@@ -10,4 +10,4 @@ This function will omit only the keys, in the second argument, from the object p
 
 ### Notions
 
-- https://devdocs.io/javascript/global_objects/object
+- [devdocs.io/javascript/global_objects/object](https://devdocs.io/javascript/global_objects/object)

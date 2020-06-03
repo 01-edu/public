@@ -43,4 +43,4 @@ Example of an array of objects matching the criterias:
 
 ### Notions
 
-- https://devdocs.io/javascript/global_objects/array/filter
+- [devdocs.io/javascript/global_objects/array/filter](https://devdocs.io/javascript/global_objects/array/filter)

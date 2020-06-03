@@ -13,9 +13,9 @@ if they both have the same sign
 
 ### Notions
 
-- https://nan-academy.github.io/js-training/examples/functions.js
-- https://nan-academy.github.io/js-training/examples/if-else.js
-- https://devdocs.io/javascript/global_objects/math/sign
+- [nan-academy.github.io/js-training/examples/functions.js](https://nan-academy.github.io/js-training/examples/functions.js)
+- [nan-academy.github.io/js-training/examples/if-else.js](https://nan-academy.github.io/js-training/examples/if-else.js)
+- [devdocs.io/javascript/global_objects/math/sign](https://devdocs.io/javascript/global_objects/math/sign)
 
 
 ### Code provided

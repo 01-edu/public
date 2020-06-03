@@ -15,10 +15,10 @@ and returns the lowest
 
 ### Notions
 
-- https://nan-academy.github.io/js-training/examples/functions.js
-- https://nan-academy.github.io/js-training/examples/ternary.js
-- https://devdocs.io/javascript/global_objects/array/Math/min
-- https://devdocs.io/javascript/global_objects/array/Math/max
+- [nan-academy.github.io/js-training/examples/functions.js](https://nan-academy.github.io/js-training/examples/functions.js)
+- [nan-academy.github.io/js-training/examples/ternary.js](https://nan-academy.github.io/js-training/examples/ternary.js)
+- [devdocs.io/javascript/global_objects/array/Math/min](https://devdocs.io/javascript/global_objects/array/Math/min)
+- [devdocs.io/javascript/global_objects/array/Math/max](https://devdocs.io/javascript/global_objects/array/Math/max)
 
 
 ### Code provided

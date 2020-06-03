@@ -13,4 +13,4 @@ You can search for greedy quantifiers for help
 
 ### Notions
 
-- https://github.com/ziishaned/learn-regex
+- [https://github.com/ziishaned/learn-regex](https://github.com/ziishaned/learn-regex)
