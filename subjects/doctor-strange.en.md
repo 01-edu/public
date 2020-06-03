@@ -14,11 +14,18 @@ it can go backwards or forwards in time.
 You will have a function that takes a date and you will pass 3 more parameters to change
 the hour, minute and seconds.
 
+
 ### Example
 
 ```js
-timeTravel(date, hour, minute, second)
+timeTravel({ date, hour, minute, second })
 
-timeTravel(new Date('2020-05-29 23:25:22'), 21, 22, 22)
-Output: '21:22:22'
+timeTravel({
+  date: new Date('2020-05-29 23:25:22'),
+  hour: 21,
+  minute: 22,
+  second: 22,
+})
+
+// Output: Date { 2020-05-29T21:22:22.000Z }
 ```
