@@ -90,7 +90,7 @@ passed to the program would not be allowed`,
 	flag.BoolVar(&noRelativeImports, "no-relative-imports", false, `Disallowes the use of relative imports`)
 	flag.BoolVar(&noFor, "no-for", false, `The "for" instruction is not allowed`)
 	flag.BoolVar(&casting, "cast", false, "Allowes casting")
-	flag.BoolVar(&noArrays, "no-arrays", false, "Deprecated use no-slices")
+	flag.BoolVar(&noArrays, "no-arrays", false, "Deprecated: use -no-slices")
 	flag.BoolVar(&noSlices, "no-slices", false, "Disallowes all slice types")
 	flag.BoolVar(&allowBuiltin, "allow-builtin", false, "Allowes all builtin functions and casting")
 	sort.Sort(sort.StringSlice(os.Args[1:]))
