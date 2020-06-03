@@ -12,12 +12,14 @@ Just like triangle
 
 - '*' character and depth of 5 :
 
+```
     *
    ***
   *****
  *******
 *********
-
+```
+> No new line in last line
 
 ### Notions
 
