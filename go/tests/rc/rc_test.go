@@ -77,7 +77,26 @@ Cheating:
 	illegal-slice     	rune                 	tests/printalphabet/printalphabet.go:9:18
 	illegal-slice     	rune                 	tests/printalphabet/printalphabet.go:16:7
 `,
-		"-no-these-arrays=int,rune tests/printalphabet/printalphabet.go": `Parsing:
+		"-no-slices tests/printalphabet/printalphabet.go": `Parsing:
+	Ok
+Cheating:
+	TYPE:             	NAME:                	LOCATION:
+	illegal-import    	fmt                  	tests/printalphabet/printalphabet.go:4:2
+	illegal-import    	github.com/01-edu/z01	tests/printalphabet/printalphabet.go:6:2
+	illegal-call      	append               	tests/printalphabet/printalphabet.go:11:7
+	illegal-definition	fillArray            	tests/printalphabet/printalphabet.go:9:1
+	illegal-call      	int                  	tests/printalphabet/printalphabet.go:17:7
+	illegal-access    	z01.PrintRune        	tests/printalphabet/printalphabet.go:19:3
+	illegal-access    	z01.PrintRune        	tests/printalphabet/printalphabet.go:21:2
+	illegal-definition	main                 	tests/printalphabet/printalphabet.go:15:1
+	illegal-access    	fmt.Println          	tests/printalphabet/printalphabet.go:26:3
+	illegal-definition	defFun               	tests/printalphabet/printalphabet.go:25:2
+	illegal-call      	defFun               	tests/printalphabet/printalphabet.go:28:2
+	illegal-definition	testingScope         	tests/printalphabet/printalphabet.go:24:1
+	illegal-slice     	rune                 	tests/printalphabet/printalphabet.go:9:18
+	illegal-slice     	rune                 	tests/printalphabet/printalphabet.go:16:7
+`,
+		"-no-these-slices=int,rune tests/printalphabet/printalphabet.go": `Parsing:
 	Ok
 Cheating:
 	TYPE:             	NAME:                	LOCATION:
