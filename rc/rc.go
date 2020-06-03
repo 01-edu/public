@@ -62,8 +62,9 @@ var (
 	allowedRep = make(map[string]int)
 	// Flags
 	noArrays          bool
+	noSlices          bool
 	noRelativeImports bool
-	noTheseArrays     strBoolMap
+	noTheseSlices     strBoolMap
 	casting           bool
 	noFor             bool
 	noLit             regexpFlag
@@ -81,7 +82,7 @@ func (i *illegal) String() string {
 }
 
 func init() {
-	flag.Var(&noTheseArrays, "no-these-arrays", "Disallowes the array types passed in the flag as a list separeted by comma with out spaces\nLike so: -no-these-arrays=int,string,bool")
+	flag.Var(&noTheseSlices, "no-these-slices", "Disallowes the slice types passed in the flag as a comma-separated list without spaces\nLike so: -no-these-slices=int,string,bool")
 	flag.Var(&noLit, "no-lit",
 		`The use of basic literals (strings or characters) matching the pattern -no-lit="{PATTERN}"
 passed to the program would not be allowed`,
@@ -89,7 +90,8 @@ passed to the program would not be allowed`,
 	flag.BoolVar(&noRelativeImports, "no-relative-imports", false, `Disallowes the use of relative imports`)
 	flag.BoolVar(&noFor, "no-for", false, `The "for" instruction is not allowed`)
 	flag.BoolVar(&casting, "cast", false, "Allowes casting")
-	flag.BoolVar(&noArrays, "no-arrays", false, "Disallowes all array types")
+	flag.BoolVar(&noArrays, "no-arrays", false, "Deprecated use no-slices")
+	flag.BoolVar(&noSlices, "no-slices", false, "Disallowes all slice types")
 	flag.BoolVar(&allowBuiltin, "allow-builtin", false, "Allowes all builtin functions and casting")
 	sort.Sort(sort.StringSlice(os.Args[1:]))
 }
@@ -544,7 +546,7 @@ func analyseProgram(filename, path string, load loadedSource) *info {
 	}
 
 	info.illegals = append(info.illegals, analyseLoops(info.fors, noFor)...)
-	info.illegals = append(info.illegals, analyseArrayTypes(info.arrays, noArrays, noTheseArrays)...)
+	info.illegals = append(info.illegals, analyseArrayTypes(info.arrays, noArrays || noSlices, noTheseSlices)...)
 	info.illegals = append(info.illegals, analyseLits(info.lits, noLit)...)
 	info.illegals = append(info.illegals, analyseRepetition(info.callRep, allowedRep)...)
 	info.illegals = removeRepetitions(info.illegals)
@@ -693,10 +695,10 @@ func analyseLits(litOccu []*occurrence, noLit regexpFlag) []*illegal {
 	return illegals
 }
 
-func analyseArrayTypes(arrays []*occurrence, noArrays bool, noTheseArrays map[string]bool) []*illegal {
+func analyseArrayTypes(arrays []*occurrence, noArrays bool, noTheseSlices map[string]bool) []*illegal {
 	var illegals []*illegal
 	for _, v := range arrays {
-		if noArrays || noTheseArrays[v.name] {
+		if noArrays || noTheseSlices[v.name] {
 			il := &illegal{
 				T:    "illegal-slice",
 				Name: v.name,
