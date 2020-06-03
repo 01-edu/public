@@ -2,8 +2,8 @@
 
 ### Instructions
 
-Create a `nasa` function that takes a number as parameter and returns all 
-numbers from 1 to the number passed as parameter, with three exception.
+Create a `nasa` function that takes a number `N` as a parameter and returns 
+a string with all numbers from 1 to the `N` split by whitespace, with three exceptions.
 
 - For numbers divisible by 3, add 'NA'.
 
