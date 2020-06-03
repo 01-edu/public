@@ -9,6 +9,7 @@ Create 3 functions:
 
 > If a value is not found, the returned index is -1
 
+> functions should have array element as first argument
 > `indexOf` and `lastIndexOf` takes an additionnal `fromIndex` argument
 > that allow you to begin searching from a specific index.
 
