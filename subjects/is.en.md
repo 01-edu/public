@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Add new function properties to the object `is`` to check a value type
+Add new function properties to the object `is` to check a value type
 - `is.num` value is a number
 - `is.nan` value is NaN
 - `is.str` value is a string
@@ -25,6 +25,9 @@ Add new function properties to the object `is`` to check a value type
 
 
 ### Code provided
+
+> all code provided will be added to your solution and doesn't need to be submited.
+
 ```js
 const is = {}
 ```

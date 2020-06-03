@@ -10,6 +10,9 @@ Create 3 functions:
 > functions should have (a, b) as arguments
 
 ### Code provided
+
+> all code provided will be added to your solution and doesn't need to be submited.
+
 ```js
 Math.imul = undefined
 ```

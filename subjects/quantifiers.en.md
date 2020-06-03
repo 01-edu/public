@@ -21,6 +21,9 @@ The use of `[].every` and `[].some` is forbidden for this exercise.
 
 
 ### Code provided
+
+> all code provided will be added to your solution and doesn't need to be submited.
+
 ```js
 Array.prototype.some = Array.prototype.every = undefined
 ```

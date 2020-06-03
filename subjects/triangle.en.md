@@ -8,14 +8,16 @@ of the number passed as argument.
 
 ### Output example
 
-- '*' character and depth of 5 :
+- `*` character and depth of 5:
 
+```
 *
 **
 ***
 ****
 *****
-
+```
+> No new line in last line
 
 ### Notions
 

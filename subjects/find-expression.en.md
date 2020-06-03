@@ -21,6 +21,9 @@ It will look something like this `1 *2 *2 +4`
 
 
 ### Code provided
+
+> all code provided will be added to your solution and doesn't need to be submited.
+
 ```js
 const add4 = '+4'
 const mul2 = '*2'

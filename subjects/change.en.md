@@ -20,6 +20,9 @@ Create 2 functions:
 
 
 ### Code provided
+
+> all code provided will be added to your solution and doesn't need to be submited.
+
 ```js
 const sourceObject = {
   num: 42,

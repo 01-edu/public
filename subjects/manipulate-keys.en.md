@@ -20,6 +20,9 @@ Create 3 functions that works like the `.filter`, `.map` and `.reduce` array met
 
 
 ### Code provided
+
+> all code provided will be added to your solution and doesn't need to be submited.
+
 ```js
 // small database with nutrition facts, per 100 grams
 // prettier-ignore

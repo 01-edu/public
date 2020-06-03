@@ -24,6 +24,9 @@ You will have a small database to help you with the groceries.
 
 
 ### Code provided
+
+> all code provided will be added to your solution and doesn't need to be submited.
+
 ```js
 // small database with nutrition facts, per 100 grams
 // prettier-ignore

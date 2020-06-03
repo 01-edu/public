@@ -13,6 +13,9 @@ Like `[].reverse()` but working also for strings (without using the actual metho
 
 
 ### Code provided
+
+> all code provided will be added to your solution and doesn't need to be submited.
+
 ```js
 Array.prototype.reverse = undefined
 ```

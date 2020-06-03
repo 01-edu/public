@@ -33,6 +33,9 @@ You will also have to create for each curry function the following:
 
 
 ### Code provided
+
+> all code provided will be added to your solution and doesn't need to be submited.
+
 ```js
 // prettier-ignore
 const personnel = {

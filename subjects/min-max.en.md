@@ -22,6 +22,9 @@ and returns the lowest
 
 
 ### Code provided
+
+> all code provided will be added to your solution and doesn't need to be submited.
+
 ```js
 Math.min = Math.max = undefined
 ```

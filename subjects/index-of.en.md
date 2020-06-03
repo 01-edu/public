@@ -22,6 +22,9 @@ Create 3 functions:
 
 
 ### Code provided
+
+> all code provided will be added to your solution and doesn't need to be submited.
+
 ```js
 Array.prototype.indexOf = undefined
 Array.prototype.lastIndexOf = undefined

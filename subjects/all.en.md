@@ -13,6 +13,9 @@ Create a function `all` that works like `Promise.all` but with objects.
 
 
 ### Code provided
+
+> all code provided will be added to your solution and doesn't need to be submited.
+
 ```js
 Promise.all = undefined
 ```

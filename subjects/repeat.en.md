@@ -16,6 +16,9 @@ Of course you may not use the method directly
 
 
 ### Code provided
+
+> all code provided will be added to your solution and doesn't need to be submited.
+
 ```js
 String.prototype.repeat = undefined
 ```

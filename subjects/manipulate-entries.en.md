@@ -25,6 +25,9 @@ Create 3 other functions that use your previously create functions:
 
 
 ### Code provided
+
+> all code provided will be added to your solution and doesn't need to be submited.
+
 ```js
 // small database with nutrition facts, per 100 grams
 // prettier-ignore

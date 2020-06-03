@@ -36,6 +36,9 @@ using a the server name as key.
 
 
 ### Code provided
+
+> all code provided will be added to your solution and doesn't need to be submited.
+
 ```js
 // fake `getJSON` function
 let getJSON = async (url) => url

@@ -24,6 +24,9 @@ displayed like : '1000, 1004, 1008'. The same goes for the results
 
 
 ### Code provided
+
+> all code provided will be added to your solution and doesn't need to be submited.
+
 ```js
 const db = (() => {
   //countries that won the FIFA World Cup
