@@ -105,8 +105,6 @@ func main() {
 		os.Exit(1)
 	}
 
-	fmt.Println("Parsing:")
-
 	err := parseArgs(flag.Args(), allowBuiltin, casting)
 
 	if err != nil {
@@ -124,17 +122,14 @@ func main() {
 		fmt.Printf("\t%s\n", err)
 		os.Exit(1)
 	}
-	fmt.Println("\tOk")
-
-	fmt.Println("Cheating:")
 
 	info := analyseProgram(filename, currentPath, load)
 
 	if info.illegals != nil {
+		fmt.Println("Cheating:")
 		printIllegals(info.illegals)
 		os.Exit(1)
 	}
-	fmt.Println("\tOk")
 }
 
 func goFile(args []string) string {
