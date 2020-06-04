@@ -66,9 +66,9 @@ npm install -g http-server
 
 ##### modify the link so that the users are the audited **GITHUB_LOGIN**
 
-##### and **kill**
+##### and **copyCat**
 
-###### Did the audited Ai won against the kill Ai?
+###### Did the audited Ai won against the copyCat Ai?
 
 #### Bonus
 
