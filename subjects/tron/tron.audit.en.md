@@ -48,18 +48,6 @@ npm install -g http-server
 
 ##### modify the link so that the users are the audited **GITHUB_LOGIN**
 
-##### and **AI5**, try three times, changing the seed `"Ctrl+s"`, the best of three wins
-
-###### Did the audited Ai won against AI5 Ai?
-
-##### modify the link so that the users are the audited **GITHUB_LOGIN**
-
-##### and **AI6**, try three times, changing the seed `"Ctrl+s"`, the best of three wins
-
-###### Did the audited Ai won against AI6 Ai?
-
-##### modify the link so that the users are the audited **GITHUB_LOGIN**
-
 ##### and **kill**, try three times, changing the seed `"Ctrl+s"`, the best of three wins
 
 ###### Did the audited Ai won against kill Ai?
@@ -70,6 +58,8 @@ npm install -g http-server
 
 ###### Did the audited Ai won against AIBestPath Ai?
 
+###### Does the code avoid [deep nesting](https://code.tutsplus.com/tutorials/top-15-best-practices-for-writing-super-readable-code--net-8118)?
+
 #### Bonus
 
 ##### modify the link so that the users are the audited **GITHUB_LOGIN**
@@ -78,4 +68,10 @@ npm install -g http-server
 
 ###### +Did the audited Ai won against hardAI Ai?
 
-###### +Does the code avoid deep nesting?
+##### If you have an AI
+
+##### modify the link so that the users are the audited **GITHUB_LOGIN**
+
+##### and **your AI**, try three times, changing the seed `"Ctrl+s"`, the best of three wins
+
+###### Did the audited Ai won against your AI Ai?
