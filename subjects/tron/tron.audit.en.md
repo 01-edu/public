@@ -4,7 +4,7 @@
 
 ##### copy the **GITHUB_LOGIN**.js of the audited inside the /ai folder
 
-##### as such  /ai/**GITHUB_LOGIN**.js
+##### as such /ai/**GITHUB_LOGIN**.js
 
 ##### run this command
 
@@ -20,62 +20,62 @@ npm install -g http-server
 
 ##### go the link created by the http-server, open the inspector and **disable the cache**
 
-##### modify the link so that the users are the audited **GITHUB_LOGIN**
-
-##### and **Frenchris-right-basic**
-
 ###### Does the AI crash because of too much usage of CPU?
 
-###### Did the audited Ai won against the Frenchris-right-basic Ai?
+##### modify the link so that the users are the audited **GITHUB_LOGIN**
+
+##### and **Frenchris-right-basic**, try three times, changing the seed `"Ctrl+s"`, the best of three wins
+
+###### Did the audited Ai won against Frenchris-right-basic Ai?
 
 ##### modify the link so that the users are the audited **GITHUB_LOGIN**
 
-##### and **Frenchris-right**
+##### and **Frenchris-right**, try three times, changing the seed `"Ctrl+s"`, the best of three wins
 
-###### Did the audited Ai won against the Frenchris-right Ai?
-
-##### modify the link so that the users are the audited **GITHUB_LOGIN**
-
-##### and **Frenchris-snail-basic**
-
-###### Did the audited Ai won against the Frenchris-snail-basic Ai?
+###### Did the audited Ai won against Frenchris-right Ai?
 
 ##### modify the link so that the users are the audited **GITHUB_LOGIN**
 
-##### and **Frenchris-snail**
+##### and **Frenchris-snail-basic**, try three times, changing the seed `"Ctrl+s"`, the best of three wins
 
-###### Did the audited Ai won against the Frenchris-snail Ai?
-
-##### modify the link so that the users are the audited **GITHUB_LOGIN**
-
-##### and **AI5**
-
-###### Did the audited Ai won against the AI5 Ai?
+###### Did the audited Ai won against Frenchris-snail-basic Ai?
 
 ##### modify the link so that the users are the audited **GITHUB_LOGIN**
 
-##### and **AI6**
+##### and **Frenchris-snail**, try three times, changing the seed `"Ctrl+s"`, the best of three wins
 
-###### Did the audited Ai won against the AI6 Ai?
-
-##### modify the link so that the users are the audited **GITHUB_LOGIN**
-
-##### and **AIBestPath**
-
-###### Did the audited Ai won against the AIBestPath Ai?
+###### Did the audited Ai won against Frenchris-snail Ai?
 
 ##### modify the link so that the users are the audited **GITHUB_LOGIN**
 
-##### and **copyCat**
+##### and **AI5**, try three times, changing the seed `"Ctrl+s"`, the best of three wins
 
-###### Did the audited Ai won against the copyCat Ai?
+###### Did the audited Ai won against AI5 Ai?
+
+##### modify the link so that the users are the audited **GITHUB_LOGIN**
+
+##### and **AI6**, try three times, changing the seed `"Ctrl+s"`, the best of three wins
+
+###### Did the audited Ai won against AI6 Ai?
+
+##### modify the link so that the users are the audited **GITHUB_LOGIN**
+
+##### and **kill**, try three times, changing the seed `"Ctrl+s"`, the best of three wins
+
+###### Did the audited Ai won against kill Ai?
+
+##### modify the link so that the users are the audited **GITHUB_LOGIN**
+
+##### and **AIBestPath**, try three times, changing the seed `"Ctrl+s"`, the best of three wins
+
+###### Did the audited Ai won against AIBestPath Ai?
 
 #### Bonus
 
 ##### modify the link so that the users are the audited **GITHUB_LOGIN**
 
-##### and **hardAI**
+##### and **hardAI**, try three times, changing the seed `"Ctrl+s"`, the best of three wins
 
-###### +Did the audited Ai won against the hardAI Ai?
+###### +Did the audited Ai won against hardAI Ai?
 
 ###### +Does the code avoid deep nesting?
