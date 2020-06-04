@@ -11,8 +11,8 @@ Write 5 functions:
 - `whisper` that take a string and return it in lower case
   and surround it with `*`
 - Create a `capitalize` function that takes a string
-and transforms it to upper case only for the first letter,
-and in lowercase for the rest of the string
+  and transforms it to upper case only for the first letter,
+  and in lowercase for the rest of the string
 
 ### Notions
 
