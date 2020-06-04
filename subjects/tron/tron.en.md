@@ -1,6 +1,6 @@
 ## tron
 
-### Ojectives
+### Objectives
 
 In this project you will have to create your own Tron Ai snake
 
@@ -19,15 +19,18 @@ if http-server is not installed do this command:
 ```sh
 npm install -g http-server
 ```
+
 ### Controls
-- `space` toogles autoplay
+
+- `space` toggles auto-play
 - `right arrow` plays one move
-- `up arrow` increases the autoplay speed
-- `down arrow` lowers the autoplay speed
+- `up arrow` increases the auto-play speed
+- `down arrow` lowers the auto-play speed
 - `R` reloads the same play
 - `S` loads a new play (new seed)
 
 ### Rules
+
 - Your Ai has to move every turn *(it can not stay still)*
 - Every time the Ai moves somewhere the Ai leaves a color trail.
 - the Ai can only move to a blank tile.
@@ -39,14 +42,17 @@ npm install -g http-server
 - **The Ai has to survive as long as it can.**
 
 ### The game ends
+
 - Once no players can make a move
 - The player with the longest trail wins
 
 ### How to write your AI
+
 - Copy the file [/ai/random.js](https://github.com/01-edu/tronBlank/blob/master/ai/random.js) to /ai/**GITHUB_LOGIN**.js
 - You may now edit the `update` function which is called each turn
 
 ### How to test your AI
+
 - Suppose the link provided by http-server is : `http://127.0.0.1:8080/?seed=somevalue&users=random`
 - You need to add your ai as a user in that link,
 - Example: if your ai file's name is **/ai/Frenchris.js**
@@ -57,11 +63,14 @@ the link becomes:
 
 - let's change the update function so that your ai only goes forward.
 
-replace this line just before the `return` of the update function
+Replace this line just before the `return` of the update function
+
 ```js
  const available = coordsInBound.filter(isFree)
  ```
- with this line
+
+With this line
+
 ```js
 const available = coordsInBound.filter(isFree).filter(el => el.direction === 0)
 ```
@@ -70,7 +79,7 @@ const available = coordsInBound.filter(isFree).filter(el => el.direction === 0)
 you have changed your ai behaviour from a random pick of available moves to only going
 forward.
 
-- To understand better the way of controling your AI, read the comments inside the Ai file and do a lot of testing.
+- To understand better the way of controlling your AI, read the comments inside the Ai file and do a lot of testing.
 
 - When peer-corrected, you Ai will be competing against other Ais.
 Be aware that there will be the possibility for the peer-correcter to use his or her own Ai.
