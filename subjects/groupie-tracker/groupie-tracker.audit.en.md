@@ -32,7 +32,7 @@
 
 ```
     "santiago-chile"
-    "sao_paulo-usa"
+    "sao_paulo-brasil"
     "los_angeles-usa"
     "houston-usa"
     "atlanta-usa"
