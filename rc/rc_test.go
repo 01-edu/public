@@ -10,9 +10,7 @@ import (
 
 func TestFlags(t *testing.T) {
 	argsAndSolution := map[string]string{
-		"tests/testingSimpleFunc.go": `Parsing:
-	Ok
-Cheating:
+		"tests/testingSimpleFunc.go": `Cheating:
 	TYPE:             	NAME:             	LOCATION:
 	illegal-import    	regexp            	tests/testingSimpleFunc.go:4:2
 	illegal-call      	len               	tests/testingSimpleFunc.go:10:9
@@ -20,9 +18,7 @@ Cheating:
 	illegal-definition	SimpleFunc        	tests/testingSimpleFunc.go:7:1
 `,
 
-		"-no-for -no-lit=[a-z] tests/printalphabet/printalphabet.go": `Parsing:
-	Ok
-Cheating:
+		"-no-for -no-lit=[a-z] tests/printalphabet/printalphabet.go": `Cheating:
 	TYPE:             	NAME:                	LOCATION:
 	illegal-import    	fmt                  	tests/printalphabet/printalphabet.go:4:2
 	illegal-import    	github.com/01-edu/z01	tests/printalphabet/printalphabet.go:6:2
@@ -49,18 +45,14 @@ Cheating:
 	illegal-lit       	'\n'                 	tests/printalphabet/printalphabet.go:21:16
 	illegal-lit       	"Hello"              	tests/printalphabet/printalphabet.go:28:9
 `,
-		"-cast tests/eightqueens.go": `Parsing:
-	Ok
-Cheating:
+		"-cast tests/eightqueens.go": `Cheating:
 	TYPE:             	NAME:                	LOCATION:
 	illegal-import    	github.com/01-edu/z01	tests/eightqueens.go:4:2
 	illegal-access    	z01.PrintRune        	tests/eightqueens.go:49:5
 	illegal-access    	z01.PrintRune        	tests/eightqueens.go:55:2
 	illegal-definition	printQueens          	tests/eightqueens.go:42:1
 `,
-		"-no-arrays tests/printalphabet/printalphabet.go": `Parsing:
-	Ok
-Cheating:
+		"-no-arrays tests/printalphabet/printalphabet.go": `Cheating:
 	TYPE:             	NAME:                	LOCATION:
 	illegal-import    	fmt                  	tests/printalphabet/printalphabet.go:4:2
 	illegal-import    	github.com/01-edu/z01	tests/printalphabet/printalphabet.go:6:2
@@ -77,9 +69,7 @@ Cheating:
 	illegal-slice     	rune                 	tests/printalphabet/printalphabet.go:9:18
 	illegal-slice     	rune                 	tests/printalphabet/printalphabet.go:16:7
 `,
-		"-no-slices tests/printalphabet/printalphabet.go": `Parsing:
-	Ok
-Cheating:
+		"-no-slices tests/printalphabet/printalphabet.go": `Cheating:
 	TYPE:             	NAME:                	LOCATION:
 	illegal-import    	fmt                  	tests/printalphabet/printalphabet.go:4:2
 	illegal-import    	github.com/01-edu/z01	tests/printalphabet/printalphabet.go:6:2
@@ -96,9 +86,7 @@ Cheating:
 	illegal-slice     	rune                 	tests/printalphabet/printalphabet.go:9:18
 	illegal-slice     	rune                 	tests/printalphabet/printalphabet.go:16:7
 `,
-		"-no-these-slices=int,rune tests/printalphabet/printalphabet.go": `Parsing:
-	Ok
-Cheating:
+		"-no-these-slices=int,rune tests/printalphabet/printalphabet.go": `Cheating:
 	TYPE:             	NAME:                	LOCATION:
 	illegal-import    	fmt                  	tests/printalphabet/printalphabet.go:4:2
 	illegal-import    	github.com/01-edu/z01	tests/printalphabet/printalphabet.go:6:2
@@ -115,19 +103,9 @@ Cheating:
 	illegal-slice     	rune                 	tests/printalphabet/printalphabet.go:9:18
 	illegal-slice     	rune                 	tests/printalphabet/printalphabet.go:16:7
 `,
-		`-allow-builtin tests/doopprog/main.go fmt.Println strconv.Atoi os.Args`: `Parsing:
-	Ok
-Cheating:
-	Ok
-`,
-		`-cast tests/doopprog/main.go fmt.Println strconv.Atoi os.Args len`: `Parsing:
-	Ok
-Cheating:
-	Ok
-`,
-		`tests/testingWrapping.go`: `Parsing:
-	Ok
-Cheating:
+		`-allow-builtin tests/doopprog/main.go fmt.Println strconv.Atoi os.Args`: ``,
+		`-cast tests/doopprog/main.go fmt.Println strconv.Atoi os.Args len`:      ``,
+		`tests/testingWrapping.go`: `Cheating:
 	TYPE:             	NAME:           	LOCATION:
 	illegal-call      	len             	tests/utilDepth2/wrapper.go:4:9
 	illegal-definition	LenWrapper      	tests/utilDepth2/wrapper.go:3:1
@@ -136,15 +114,10 @@ Cheating:
 	illegal-access    	util.LenWrapperU	tests/testingWrapping.go:8:9
 	illegal-definition	Length          	tests/testingWrapping.go:7:1
 `,
-		`tests/testingWrapping.go len`: `Parsing:
-	Ok
-Cheating:
-	Ok
-`,
+		`tests/testingWrapping.go len`: ``,
 		`tests/empty/empty len`: `	No file to analyse
 `,
-		`tests/empty/empty.go tests/empty/empty`: `Parsing:
-	tests/empty/empty.go:1:1: expected ';', found 'EOF' (and 2 more errors)
+		`tests/empty/empty.go tests/empty/empty`: `	tests/empty/empty.go:1:1: expected ';', found 'EOF' (and 2 more errors)
 `,
 	}
 	Compare(t, argsAndSolution)
