@@ -7,5 +7,5 @@ Create a `concatStr` function that takes 2 arguments and concatenate them
 
 ### Notions
 
-- [https://nan-academy.github.io/js-training/examples/functions.js](https://nan-academy.github.io/js-training/examples/functions.js)
-- [https://nan-academy.github.io/js-training/examples/operators.js](https://nan-academy.github.io/js-training/examples/operators.js)
+- [nan-academy.github.io/js-training/examples/functions.js](https://nan-academy.github.io/js-training/examples/functions.js)
+- [nan-academy.github.io/js-training/examples/primitive-and-operators.js](https://nan-academy.github.io/js-training/examples/primitive-and-operators.js)
