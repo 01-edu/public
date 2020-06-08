@@ -16,6 +16,6 @@ calculates how old a dog would be on the given planet.
 - `uranus` : orbital period 84.016846 Earth years
 - `neptune` : orbital period 164.79132 Earth years
 
-So if you were told someone that their dog were 1,000,000,000 seconds old, you should be able to say that the dog is 221.83 Earth-years old.
+So if you were told someone that their dog were 1,000,000,000 seconds old, you should be able to say that the dog is 221.82 Earth-years old.
 
 You will have to format the number so that the result is rounded like the example above.
