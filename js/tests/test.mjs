@@ -74,7 +74,9 @@ const main = async () => {
   const tools = { eq, fail, wait, code, ctx }
   for (const [i, t] of tests.entries()) {
     try {
-      await t(tools)
+      if (!await t(tools)) {
+        throw Error('Test failed')
+      }
     } catch (err) {
       console.log(`test #${i} failed:\n${t.toString()}\n\nError:`)
       fatal(stackFmt(err, url))
