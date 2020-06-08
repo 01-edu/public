@@ -32,10 +32,10 @@ set.add(1)
 set.add(2)
 set.add(1)
 set.add(3)
-map.add('a', 1)
-map.add('b', 2)
-map.add(3, 'c')
-map.add(4, 'd')
+map.set('a', 1)
+map.set('b', 2)
+map.set(3, 'c')
+map.set(4, 'd')
 
 arrToSet(arr) // -> Set { 1, 2, 3 }
 arrToStr(arr) // -> '1213'
@@ -46,7 +46,7 @@ strToSet(str) // -> Set { 'h', 'e', 'l', 'o' }
 mapToObj(map) // -> { a: 1, b: 2, '3': 'c', '4': 'd' }
 objToArr(obj) // -> [45, 75, 24]
 objToMap(obj) // -> Map { 'x' => 45, 'y' => 75, 'radius' => 24 }
-arrToObj(arr) // -> { '0': 1, '1': 2, '3': 1, '4': 3 }
+arrToObj(arr) // -> { '0': 1, '1': 2, '2': 1, '3': 3 }
 strToObj(str) // -> { '0': 'h', '1': 'e', '2': 'l', '3': 'l', '4': 'o' }
 
 superTypeOf(map) //         -> 'Map'
