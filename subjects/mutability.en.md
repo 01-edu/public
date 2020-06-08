@@ -8,7 +8,7 @@ Create an other copy of the person object called clone2.
 Create a new variable `samePerson` with the same value as `person`.
 
 Increase by one the property age of `person`
-and set his contry to `'FR'`.
+and set his country to `'FR'`.
 
 
 ### Notions
