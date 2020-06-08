@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create the following variables:
+Create the following constant variables:
 
 - `escapeStr`, that contains the following specials characters:  \`, `\`, `/`, `"`, `'`
 - `arr` that is an array containing the values 4 and '2'
