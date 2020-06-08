@@ -15,7 +15,7 @@ Create the following variables:
   - arr: an array of the 3 values: 4, undefined, '2'
   - obj: an object with 3 property (str, num & bool)
 
-`nested` and `obj` must be frozen to prevent changes from them.
+`nested` and `nested.obj` must be frozen to prevent changes from them.
 
 ### Notions
 
