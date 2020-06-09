@@ -1,77 +1,45 @@
 #### Functional
 
-##### clone this repo : https://github.com/01-edu/tronAis
-
-##### copy the **GITHUB_LOGIN**.js of the audited inside the /ai folder
-
-##### as such /ai/**GITHUB_LOGIN**.js
-
-##### run this command
-
-```sh
-http-server tronAis/
-```
-
-if http-server is not installed do this command:
-
-```sh
-npm install -g http-server
-```
-
-##### go the link created by the http-server, open the inspector and **disable the cache**
-
 ###### Does the AI crash because of too much usage of CPU?
 
-##### modify the link so that the users are the audited **GITHUB_LOGIN**
+##### Modify the link so that the users are the audited **GITHUB_LOGIN**
 
-##### and **Frenchris-right-basic**, try three times, changing the seed `"Ctrl+s"`, the best of three wins
+##### and **random**. Try three times, changing the seed each time. The best of three, wins
 
-###### Did the audited Ai won against Frenchris-right-basic Ai?
+###### Did the audited AI won against random AI?
 
-##### modify the link so that the users are the audited **GITHUB_LOGIN**
+##### Modify the link so that the users are the audited **GITHUB_LOGIN**
 
-##### and **Frenchris-right**, try three times, changing the seed `"Ctrl+s"`, the best of three wins
+##### and **Frenchris-right**. Try three times, changing the seed each time. The best of three, wins
 
-###### Did the audited Ai won against Frenchris-right Ai?
+###### Did the audited AI won against Frenchris-right AI?
 
-##### modify the link so that the users are the audited **GITHUB_LOGIN**
+##### Modify the link so that the users are the audited **GITHUB_LOGIN**
 
-##### and **Frenchris-snail-basic**, try three times, changing the seed `"Ctrl+s"`, the best of three wins
+##### and **Frenchris-snail**. Try three times, changing the seed each time. The best of three, wins
 
-###### Did the audited Ai won against Frenchris-snail-basic Ai?
-
-##### modify the link so that the users are the audited **GITHUB_LOGIN**
-
-##### and **Frenchris-snail**, try three times, changing the seed `"Ctrl+s"`, the best of three wins
-
-###### Did the audited Ai won against Frenchris-snail Ai?
-
-##### modify the link so that the users are the audited **GITHUB_LOGIN**
-
-##### and **kill**, try three times, changing the seed `"Ctrl+s"`, the best of three wins
-
-###### Did the audited Ai won against kill Ai?
-
-##### modify the link so that the users are the audited **GITHUB_LOGIN**
-
-##### and **AIBestPath**, try three times, changing the seed `"Ctrl+s"`, the best of three wins
-
-###### Did the audited Ai won against AIBestPath Ai?
+###### Did the audited AI won against Frenchris-snail AI?
 
 ###### Does the code avoid [deep nesting](https://code.tutsplus.com/tutorials/top-15-best-practices-for-writing-super-readable-code--net-8118)?
 
+##### Modify the link so that the users are the audited **GITHUB_LOGIN**
+
+##### and **hardAI**. Try three times, changing the seed each time. The best of three, wins
+
+###### Did the audited AI won against hardAI AI?
+
 #### Bonus
 
-##### modify the link so that the users are the audited **GITHUB_LOGIN**
+##### Modify the link so that the users are the audited **GITHUB_LOGIN**
 
-##### and **hardAI**, try three times, changing the seed `"Ctrl+s"`, the best of three wins
+##### and **licence-to-kill**. Try three times, changing the seed each time. The best of three, wins
 
-###### +Did the audited Ai won against hardAI Ai?
+###### +Did the audited AI won against licence-to-kill AI?
 
 ##### If you have an AI
 
-##### modify the link so that the users are the audited **GITHUB_LOGIN**
+##### Modify the link so that the users are the audited **GITHUB_LOGIN**
 
-##### and **your AI**, try three times, changing the seed `"Ctrl+s"`, the best of three wins
+##### and **your AI**. Try three times, changing the seed each time. The best of three, wins
 
-###### Did the audited Ai won against your AI Ai?
+###### Did the audited AI won against your AI?
