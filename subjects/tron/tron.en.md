@@ -2,32 +2,18 @@
 
 ### Objectives
 
-In this project you will have to create your own Tron Ai snake
+In this project you will have to create your own Tron AI snake
 
 ### Getting started
 
-First, clone this repo : https://github.com/01-edu/tronBlank
-
-then execute the command below.
-
-```sh
-http-server tronBlank/
-```
-
-if http-server is not installed do this command:
-
-```sh
-npm install -g http-server
-```
+You will need to create a public repository with the name `tron`. Next you need to create a file named `ai.js`. It must respect the instructions given
 
 ### Controls
 
-- `space` toggles auto-play
-- `right arrow` plays one move
-- `up arrow` increases the auto-play speed
-- `down arrow` lowers the auto-play speed
-- `R` reloads the same play
-- `S` loads a new play (new seed)
+- `right arrow` plays one moves frontwards
+- `left arrow` plays one moves backwards
+- You can use the scroll to do the same thing as above
+- `shift` will make it fast
 
 ### Rules
 
@@ -43,25 +29,24 @@ npm install -g http-server
 
 ### The game ends
 
-- Once no players can make a move
-- The player with the longest trail wins
+- Once no players can make a move the player with the biggest score wins
 
 ### How to write your AI
 
-- Copy the file [/ai/random.js](https://github.com/01-edu/tronBlank/blob/master/ai/random.js) to /ai/**GITHUB_LOGIN**.js
+- Copy the code on the file [random.js](https://raw.githubusercontent.com/01-edu/public/master/subjects/tron/random.js) to your file, `ai.js`
 - You may now edit the `update` function which is called each turn
 
 ### How to test your AI
 
-- Suppose the link provided by http-server is : `http://127.0.0.1:8080/?seed=somevalue&users=random`
-- You need to add your ai as a user in that link,
-- Example: if your ai file's name is **/ai/Frenchris.js**
+- You may use this link [tron](https://01.alem.school/public/subjects/tron/?ai=&seed=1653547275), to test your AI
+- You need to add your AI as a user in that link,
+- Example: if your git login is **Frenchris** and you want to test against **LEEDASILVA**
 the link becomes:
-`http://127.0.0.1:8080/?seed=somevalue&users=Frenchris,random`
+`https://01.alem.school/public/subjects/tron/?ai=Frenchris@master+LEEDASILVA@master&seed=1653547275`
 
 - Open the inspector of the browser used and **disable the cache**
 
-- let's change the update function so that your ai only goes forward.
+- let's change the update function so that your AI only goes forward.
 
 Replace this line just before the `return` of the update function
 
@@ -75,14 +60,13 @@ With this line
 const available = coordsInBound.filter(isFree).filter(el => el.direction === 0)
 ```
 
-- save the file and rerun the game in the browser. If the cache was correctly disabled,
-you have changed your ai behaviour from a random pick of available moves to only going
-forward.
+- save the file, push the changes and rerun the game in the browser. If the cache was correctly disabled,
+you have changed your AI behaviour from a random pick of available moves to only going forward.
 
-- To understand better the way of controlling your AI, read the comments inside the Ai file and do a lot of testing.
+- To understand better the way of controlling your AI, read the comments inside the AI file and do a lot of testing.
 
-- When peer-corrected, you Ai will be competing against other Ais.
-Be aware that there will be the possibility for the peer-correcter to use his or her own Ai.
+- When peer-corrected, you AI will be competing against other AIs.
+Be aware that there will be the possibility for the peer-correcter to use his or her own AI.
 
 May the best tron win :)
 
