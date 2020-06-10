@@ -26,12 +26,9 @@ const update = state => {
   //   color: A number that represent the color of a AI
   //   name: A string of the AI name
   //   score: A number of the total block collected by this AI
-  //   x: The horizontal position of the AI
-  //   y: The vertical position of the AI
-  //   index: The computed index of the coord (x * 100 + y)
   //   coords: An array of 4 coordinates of the nearest blocks
 
-  // Each coordinate contains:
+  // Each coordinate (and AI) contains:
   //   x: The horizontal position
   //   y: The vertical position
   //   index: The computed index of the coord (x * 100 + y)
@@ -43,6 +40,9 @@ const update = state => {
   //
   //   direction: A number between 0 and 3 that represent the direction
   //     [ 0: FORWARD, 1: RIGHT, 2: BACKWARD, 3: LEFT ]
+
+  // note that AIs initial cardinal is random (depending on the seed)
+  // your AI cardinal is the way you are facing
 
   // Saving state between each updates:
   // I update the MAP with the new position of each AIs

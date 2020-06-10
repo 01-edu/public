@@ -87,7 +87,7 @@ addEventListener('message', self.init = initEvent => {
     const ais = JSON.parse(data)
     me || (ais
       .sort((a, b) => a.name - b.name)
-      .forEach(a => prev[a.name] = [{...a, cardinal: r4(), direction: r4() }]))
+      .forEach(a => prev[a.name] = [{...a, cardinal: r4(), direction: 0 }]))
 
     for (const ai of ais) {
       const { x, y, name, dead } = ai
