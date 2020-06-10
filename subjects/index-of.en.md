@@ -3,15 +3,15 @@
 ### Instructions
 
 Create 3 functions:
-- `indexOf` that return the index of the first occurence of a value
-- `lastIndexOf` that return the index of the last occurence of a value
-- `includes` that return true if the value was found in the array
+- `indexOf` that returns the index of the first occurence of a value
+- `lastIndexOf` that returns the index of the last occurence of a value
+- `includes` that returns true if the value was found in the array
 
 > If a value is not found, the returned index is -1
 
-> functions should have array element as first argument
-> `indexOf` and `lastIndexOf` takes an additionnal `fromIndex` argument
-> that allow you to begin searching from a specific index.
+> functions should have an array element as first argument, 
+> both `indexOf` and `lastIndexOf` take an additional `fromIndex` argument
+> that allows you to begin searching from a specific index.
 
 
 ### Notions
