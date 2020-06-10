@@ -58,19 +58,19 @@ const hasLateralWalls = (card, x, y) => {
   }
 }
 
-const goDirection = (state, card) =>
-  ok(state.coords[card]) &&
-  !isAlley(card, state.x, state.y) &&
-  state.coords[card]
+const goDirection = (ai, card) =>
+  ok(ai.coords[card]) &&
+  !isAlley(card, ai.x, ai.y) &&
+  ai.coords[card]
 
 const findEnemy = state =>
-  state.players.filter(p => state.player.name !== p.name)[0]
+  state.ais.filter(p => state.ai.name !== p.name)[0]
 
 const seekEnemy = state => {
-  if (state.players.length === 1) return
+  if (state.ais.length === 1) return
   const enemy = findEnemy(state)
-  const xPla = state.player.x
-  const yPla = state.player.y
+  const xPla = state.ai.x
+  const yPla = state.ai.y
   const xOpo = enemy.x
   const yOpo = enemy.y
   const xDif = xPla - xOpo
@@ -78,20 +78,20 @@ const seekEnemy = state => {
 
   return (
     (Math.abs(xDif) > Math.abs(yDif) &&
-      goDirection(state.player, xPla < xOpo ? 1 : 3)) ||
-    goDirection(yPla < yOpo ? 2 : 0)
+      goDirection(state.ai, xPla < xOpo ? 1 : 3)) ||
+    goDirection(state.ai, yPla < yOpo ? 2 : 0)
   )
 }
 
 const walk = state =>
   seekEnemy(state) ||
-  goDirection(state.player, 0) ||
-  goDirection(state.player, 1) ||
-  goDirection(state.player, 2) ||
-  goDirection(state.player, 3)
+  goDirection(state.ai, 0) ||
+  goDirection(state.ai, 1) ||
+  goDirection(state.ai, 2) ||
+  goDirection(state.ai, 3)
 
 const addToMap = ({ x, y }) => (MAP[y * SIZE + x] = 1)
 const update = state => {
-  state.players.forEach(addToMap)
+  state.ais.forEach(addToMap)
   return walk(state)
 }

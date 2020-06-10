@@ -16,100 +16,100 @@ const isAlley = ({ x, y }) => !isFree({ x, y }) || !isInBounds({ x, y })
 
 // this functions will find the best path, so the path that has more empty spaces
 // so use `isFree`,
-const findBestPath = (state) => {
+const findBestPath = ({ ai }) => {
   let arr = []
-  let car = state.player.cardinal
+  let car = ai.cardinal
   // if it as a block on the symmetric position it must
   // simulate the symmetric position and see witch path is the best
   if (
     (car === 3 || car === 0) &&
-    !isFree({ x: state.player.x - 1, y: state.player.y - 1 }) &&
-    isFree({ x: state.player.x, y: state.player.y - 1 }) &&
-    isFree({ x: state.player.x - 1, y: state.player.y })
+    !isFree({ x: ai.x - 1, y: ai.y - 1 }) &&
+    isFree({ x: ai.x, y: ai.y - 1 }) &&
+    isFree({ x: ai.x - 1, y: ai.y })
   ) {
-    let xad = state.player.x - 1
-    let yad = state.player.y - 1
+    let xad = ai.x - 1
+    let yad = ai.y - 1
 
     let choose = [
       calDistance(xad + 1, yad, 1, 0),
-      calDistance(state.player.x, state.player.y - 1, car, 0),
-      calDistance(state.player.x - 1, state.player.y, car, 0),
+      calDistance(ai.x, ai.y - 1, car, 0),
+      calDistance(ai.x - 1, ai.y, car, 0),
       calDistance(xad, yad + 1, 2, 0),
     ]
     let index = choose.indexOf(Math.max(...choose))
     return index === 0 || index === 1
-      ? state.player.coords[0]
-      : state.player.coords[3]
+      ? ai.coords[0]
+      : ai.coords[3]
   }
   if (
     (car === 1 || car === 0) &&
-    !isFree({ x: state.player.x + 1, y: state.player.y - 1 }) &&
-    isFree({ x: state.player.x, y: state.player.y - 1 }) &&
-    isFree({ x: state.player.x + 1, y: state.player.y })
+    !isFree({ x: ai.x + 1, y: ai.y - 1 }) &&
+    isFree({ x: ai.x, y: ai.y - 1 }) &&
+    isFree({ x: ai.x + 1, y: ai.y })
   ) {
-    let xad = state.player.x + 1
-    let yad = state.player.y - 1
+    let xad = ai.x + 1
+    let yad = ai.y - 1
     // choose will save the biggest path to be chosen
     // [ down, line1, line0, left ]
     let choose = [
       calDistance(xad, yad + 1, 2, 0),
-      calDistance(state.player.x + 1, state.player.y, car, 0),
-      calDistance(state.player.x, state.player.y - 1, car, 0),
+      calDistance(ai.x + 1, ai.y, car, 0),
+      calDistance(ai.x, ai.y - 1, car, 0),
       calDistance(xad - 1, yad, 3, 0),
     ]
     let index = choose.indexOf(Math.max(...choose))
     return index === 0 || index === 1
-      ? state.player.coords[1]
-      : state.player.coords[0]
+      ? ai.coords[1]
+      : ai.coords[0]
   }
   if (
     (car === 2 || car === 1) &&
-    !isFree({ x: state.player.x + 1, y: state.player.y + 1 }) &&
-    isFree({ x: state.player.x, y: state.player.y + 1 }) &&
-    isFree({ x: state.player.x + 1, y: state.player.y })
+    !isFree({ x: ai.x + 1, y: ai.y + 1 }) &&
+    isFree({ x: ai.x, y: ai.y + 1 }) &&
+    isFree({ x: ai.x + 1, y: ai.y })
   ) {
-    let xad = state.player.x + 1
-    let yad = state.player.y + 1
+    let xad = ai.x + 1
+    let yad = ai.y + 1
     // choose will save the biggest path to be chosen
     // [ left, line2, line1, up ]
     let choose = [
       calDistance(xad - 1, yad, 3, 0),
-      calDistance(state.player.x, state.player.y + 1, car, 0),
-      calDistance(state.player.x + 1, state.player.y, car, 0),
+      calDistance(ai.x, ai.y + 1, car, 0),
+      calDistance(ai.x + 1, ai.y, car, 0),
       calDistance(xad, yad - 1, 0, 0),
     ]
     let index = choose.indexOf(Math.max(...choose))
     return index === 0 || index === 1
-      ? state.player.coords[2]
-      : state.player.coords[1]
+      ? ai.coords[2]
+      : ai.coords[1]
   }
   if (
     (car === 2 || car === 3) &&
-    !isFree({ x: state.player.x - 1, y: state.player.y + 1 }) &&
-    isFree({ x: state.player.x, y: state.player.y + 1 }) &&
-    isFree({ x: state.player.x - 1, y: state.player.y })
+    !isFree({ x: ai.x - 1, y: ai.y + 1 }) &&
+    isFree({ x: ai.x, y: ai.y + 1 }) &&
+    isFree({ x: ai.x - 1, y: ai.y })
   ) {
-    let xad = state.player.x - 1
-    let yad = state.player.y + 1
+    let xad = ai.x - 1
+    let yad = ai.y + 1
     // choose will save the biggest path to be chosen
     // [ right, line2, line3, up ]
     let choose = [
       calDistance(xad + 1, yad, 1, 0),
-      calDistance(state.player.x - 1, state.player.y, car, 0),
-      calDistance(state.player.x, state.player.y + 1, car, 0),
+      calDistance(ai.x - 1, ai.y, car, 0),
+      calDistance(ai.x, ai.y + 1, car, 0),
       calDistance(xad, yad - 1, 0, 0),
     ]
     let index = choose.indexOf(Math.max(...choose))
     return index === 0 || index === 1
-      ? state.player.coords[3]
-      : state.player.coords[2]
+      ? ai.coords[3]
+      : ai.coords[2]
   }
 
-  for ({ x, y, cardinal } of state.player.coords) {
+  for ({ x, y, cardinal } of ai.coords) {
     // if everything is ok it must continue with the best path
     arr.push(calDistance(x, y, cardinal, 0))
   }
-  return state.player.coords[arr.indexOf(Math.max(...arr))]
+  return ai.coords[arr.indexOf(Math.max(...arr))]
 }
 
 // recursion
@@ -166,6 +166,6 @@ const calDistance = (x, y, car, count) => {
 
 const addToMap = ({ x, y }) => MAP[y * SIZE + x] = 1
 const update = (state) => {
-  state.players.forEach(addToMap)
+  state.ais.forEach(addToMap)
   findBestPath(state)
 }

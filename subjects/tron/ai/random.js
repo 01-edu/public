@@ -2,6 +2,7 @@ const SIZE = 100
 const MAP = new Int8Array(SIZE * SIZE) // State of the Map
 const isFree = ({ x, y }) => MAP[y * SIZE + x] === 0 // 0 = block free
 const isOccupied = ({ x, y }) => MAP[y * SIZE + x] === 1 // 1 = block occupied
+const isMe = ai => ai.me // is true if this AI is you
 
 // `inBounds` check if our coord (n) is an existing index in our MAP
 const inBounds = n => n < SIZE && n >= 0
@@ -17,37 +18,39 @@ const addToMap = ({ x, y }) => MAP[y * SIZE + x] = 1
 
 // `update` this function is called at each turn
 const update = state => {
-  // update is called with a state argument that has 2 properties:
-  //   players: an array of all the players
-  //   player: the player for this AI
+  // update is called with a state argument that has 3 properties:
+  //   ais: an array of all the AIs
+  //   ai: the current AI
 
-  // Each players contains:
-  //   color: A number that represent the color of a player
-  //   name: A string of the player name
-  //   score: A number of the total block collected by this player
-  //   x: The horizontal position of the player
-  //   y: The vertical position of the player
+  // Each AIs contains:
+  //   color: A number that represent the color of a AI
+  //   name: A string of the AI name
+  //   score: A number of the total block collected by this AI
+  //   x: The horizontal position of the AI
+  //   y: The vertical position of the AI
+  //   index: The computed index of the coord (x * 100 + y)
   //   coords: An array of 4 coordinates of the nearest blocks
-  //     [ NORTH, EAST, SOUTH, WEST ]
-  //                  N
-  //               W  +  E
-  //                  S
 
   // Each coordinate contains:
   //   x: The horizontal position
   //   y: The vertical position
+  //   index: The computed index of the coord (x * 100 + y)
   //   cardinal: A number between 0 and 3 that represent the cardinal
   //     [ 0: NORTH, 1: EAST, 2: SOUTH, 3: WEST ]
+  //        N
+  //     W  +  E
+  //        S
+  //
   //   direction: A number between 0 and 3 that represent the direction
   //     [ 0: FORWARD, 1: RIGHT, 2: BACKWARD, 3: LEFT ]
 
   // Saving state between each updates:
-  // I update the MAP with the new position of each players
-  state.players.forEach(addToMap)
+  // I update the MAP with the new position of each AIs
+  state.ais.forEach(addToMap)
 
   // Actual AI logic:
   // I filter my array of coords to keep only those that are in bounds
-  const coordsInBound = state.player.coords.filter(isInBounds)
+  const coordsInBound = state.ai.coords.filter(isInBounds)
 
   // I filter again to keep coords that are free
   const available = coordsInBound.filter(isFree)

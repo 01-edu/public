@@ -37,12 +37,12 @@ h2 b {
 }
 
 
-#player-0 h2:after {
+#ai-0 h2:after {
   background-image: linear-gradient(to left, #0000, currentColor 18px, #0000);
   margin-right: -10px;
 }
 
-#player-1 h2:after {
+#ai-1 h2:after {
   margin-left: -10px;
   background-image: linear-gradient(to right, #0000, currentColor 18px, #0000);
 }
@@ -91,18 +91,18 @@ svg {
   color: cyan;
 }
 
-#player-0, #player-1 {
+#ai-0, #ai-1 {
   margin: 12px;
   padding: 6px;
   user-select: none;
 }
 
-#player-0 {
+#ai-0 {
   grid-column: 1;
   text-align: right;
 }
 
-#player-1 { grid-column: 4 }
+#ai-1 { grid-column: 4 }
 
 
 #controls {
@@ -136,8 +136,8 @@ svg {
 @media (orientation: portrait) {
   h2 { max-width: 300px }
   #controls { grid-row: 3 }
-  #player-0 { grid-column: 2; grid-row: 4 }
-  #player-1 { grid-column: 3; grid-row: 4 }
+  #ai-0 { grid-column: 2; grid-row: 4 }
+  #ai-1 { grid-column: 3; grid-row: 4 }
 }
 
 </style>
@@ -147,14 +147,14 @@ svg {
     <svg fill="cyan" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 449.9 184.1">
       <defs><filter id="g"><feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="cyan"/></filter></defs>
       <path style="filter:url(#g)" d="M36 62.6H5.2v-19H36v19zM38.4 39H3l-3 2.8v23l3 2.5h35.4l3.1-2.7V41.7L38.4 39z"/><g clip-path="url(#clipPath4354)" transform="matrix(1.25 0 0 -1.25 -135 647)"><path style="filter:url(#g)" d="M333.3 426.4a18.9 18.9 0 00-19.1 18.5c0 10.3 8.6 18.6 19.1 18.6a18.9 18.9 0 0019.2-19.2c-.4-10-8.8-18-19.2-18m0 41.2c-12.8 0-23.2-10.1-23.2-22.6a22.9 22.9 0 0123.2-22.5c12.9 0 23.2 10 23.2 22.5a22.9 22.9 0 01-23.2 22.6"/><path style="filter:url(#g)" d="M333.3 406.6c-21.8 0-39.4 17.2-39.4 38.3s17.6 38.3 39.4 38.3c21.8 0 39.5-17.1 39.5-38.3s-17.7-38.3-39.5-38.3m0 80.6a42.9 42.9 0 01-43.4-42.9c.3-23 19.6-41.6 43.4-41.6a42.9 42.9 0 0143.5 42.2 42.9 42.9 0 01-43.5 42.3M463.7 407H457l-28.4 31.8v9.5H448v34.5h15.6V407zm1.5 79.5H447l-2.7-3.2v-31.5h-17.1c-2.2 0-2.2-1.2-2.2-2.1v-12.2l30.4-34.4h9.8l2.6 2.4v78.1l-2.6 3zM419.2 441.1h-19.6v-33.9h-15.7v75.6h6.9l28.4-32.1V441zm-26.9 45.3h-9.8l-2.6-2.5v-78.1l2.6-2.7h18.2l2.7 3v31.6h17.1c2.2 0 2.2 1.1 2.2 2V452l-30.4 34.5zM283.2 407h-18.8l-31.8 32.5v13.1h52a22.5 22.5 0 00-22-15.5h-9.2l29.8-30m-20 26.2c13.8.3 24.6 9.7 26.2 23h-58l-2.7-2.6V439c0-.5 0-1 .4-1.5l33.4-34.3h26.3v4.1l-26.2 26h.6zM220.2 407h-15.7v45.6h15.7V407zm1.3 49.4h-18.7l-2.5-2.7v-48l2.7-2.6h18.6l2.6 3v47.6l-2.7 2.7z"/><path style="filter:url(#g)" d="M172.5 467.4c-3.7 0-6.8-3.1-6.8-6.8v-53.5l-15.6-.1v54.8a20.7 20.7 0 0021.2 20.8h91.2a23 23 0 0022-15.2h-112zm90 19.1h-91.1a24.6 24.6 0 01-25.6-25v-55.9l3-2.4h18.5l2.4 2.9v54.4a3 3 0 003.2 3h116.4a27 27 0 01-26.7 23"/></g></svg></div>
-  <div id="player-0">
+  <div id="ai-0">
     <h2><b>AI-0</b></h2>
     <b>LOADING</b>
     <br>
     <b>0</b>
   </div>
   <canvas width="1200" height="1200"></canvas>
-  <div id="player-1">
+  <div id="ai-1">
     <h2><b>AI-1</b></h2>
     <b>LOADING</b>
     <br>
@@ -187,18 +187,18 @@ hide.onclick = () => {
 
 localStorage.hide || hide.parentElement.classList.remove('hide')
 
-const buildInfo = (player, i) => {
-  const elem = document.getElementById(`player-${i}`)
+const buildInfo = (ai, i) => {
+  const elem = document.getElementById(`ai-${i}`)
   if (!elem) return { score: () => {}, status: () => {} }
   const [name, status, score] = [...elem.children].map(e => e.firstChild).filter(Boolean)
-  name.firstChild.data = player.name
-  elem.style.color = `hsl(${player.hue*360}, 100%, 70%)`
-  elem.style.textShadow = `0 0 6px hsla(${player.hue*360}, 100%, 70%, 0.4)`
+  name.firstChild.data = ai.name
+  elem.style.color = `hsl(${ai.hue*360}, 100%, 70%)`
+  elem.style.textShadow = `0 0 6px hsla(${ai.hue*360}, 100%, 70%, 0.4)`
   elem.style.width = 'calc(100% - 36px)' // force width force redraw
   // this fix a bug on chrome, not re-applying `currentColor` to gradients
 
   return {
-    score: text => player.dead || (score.data = text),
+    score: text => ai.dead || (score.data = text),
     status: text => status.data = text,
   }
 }
@@ -212,8 +212,11 @@ const getAIUrl = (login, sha, ai) =>
   `https://rawcdn.githack.com/${login}/tron/${sha}/ai/${ai || login}.js`
 
 const getSha = async login => (await (await fetch(getShaUrl(login))).json()).sha
-const toBlob = async r =>
-  new Blob([`${await r.text()}${injectedCode}`], { type : 'text/javascript' })
+const toBlob = async r => {
+  if (!r.ok) throw Error(`${r.status}: ${r.statusText}`)
+  const code = await r.text()
+  return new Blob([`${code}${injectedCode}`], { type : 'text/javascript' })
+}
 const toUrlObject = b => URL.createObjectURL(b, { type: 'text/javascript' })
 const memo = {}
 const fetchBlob = url => memo[url]
@@ -241,10 +244,10 @@ const formatURL = url => {
 
 const start = async ({ urls, seed }) => {
   if (urls.length < 2) throw Error('2 AI urls are required to play')
-  const players = init({ players: urls, seed })
+  const ais = init({ ais: urls, seed })
 
   let turn = 1, maxTurn = 1, t = 1, cap = 10000, down
-  const done = new Set(players)
+  const done = new Set(ais)
 
   const setPosition = e => {
     const v = typeof e === 'number'
@@ -271,101 +274,101 @@ const start = async ({ urls, seed }) => {
   let requested, timeout
   const refresh = () => {
     requested = update(t)
-    players[0].score(turn)
-    players[1].score(turn)
+    ais[0].score(turn)
+    ais[1].score(turn)
     loading.style.transform = `translate(${((turn / cap)*600)-600}px)`
     position.style.transform = `translate(${((t / cap)*600)-600}px)`
   }
 
-  const next = (player) => {
-    clearTimeout(player.timeout)
-    done.add(player)
+  const next = (ai) => {
+    clearTimeout(ai.timeout)
+    done.add(ai)
     requested || (requested = requestAnimationFrame(refresh))
 
     // check if all AI are done
-    if (done.size >= players.length) {
+    if (done.size >= ais.length) {
       turn++
-      const data = `[${players.join(',')}]`
+      const data = `[${ais.join(',')}]`
       let allDead = true
-      for (const p of players) {
-        if (p.dead) continue
+      for (const a of ais) {
+        if (a.dead) continue
         allDead ? (allDead = false) : cap--
-        done.delete(p)
-        p.worker.postMessage(data)
-        p.timeout = setTimeout(p.kill, 50, 'TIMEOUT')
+        done.delete(a)
+        a.worker.postMessage(data)
+        a.timeout = setTimeout(a.kill, 50, 'TIMEOUT')
       }
       allDead && (cap = turn)
       t === maxTurn ? (t = maxTurn = turn) : (maxTurn = turn)
     }
   }
 
-  await Promise.all(players.map(async (player, i) => {
-    const info = buildInfo(player, i)
-    player.score = info.score
+  await Promise.all(ais.map(async (ai, i) => {
+    const info = buildInfo(ai, i)
+    ai.score = info.score
 
     const kill = (cause) => {
-      if (player.dead) return
-      console.log(`${player.name} died because he ${cause} at ${player.x} ${player.y}`)
-      player.cause = cause
-      player.dead = true
-      player.worker && player.worker.terminate()
+      if (ai.dead) return
+      console.log(`${ai.name} died because he ${cause} at ${ai.x} ${ai.y}`)
+      ai.cause = cause
+      ai.dead = true
+      ai.worker && ai.worker.terminate()
       info.status(cause)
     }
 
     // init the worker
     try {
-      const url = await fetchBlob(await formatURL(player.name))
-      player.worker = new Worker(url, { type: 'module', name: player.name })
+      const url = await fetchBlob(await formatURL(ai.name))
+      ai.worker = new Worker(url, { type: 'module', name: ai.name })
       await new Promise((s, f) => {
-        player.worker.onmessage = e => e.data === 'loaded' ? s() : f(Error(e.data))
-        player.worker.onerror = f
-        player.worker.postMessage(JSON.stringify({ id: player.name, seed }))
+        ai.worker.onmessage = e => e.data === 'loaded' ? s() : f(Error(e.data))
+        ai.worker.onerror = f
+        ai.worker.postMessage(JSON.stringify({ id: ai.name, seed }))
       })
 
       // activate the AI
       info.status('ACTIVE')
-      player.kill = cause => {
+      ai.kill = cause => {
         kill(cause)
-        next(player)
+        next(ai)
       }
     } catch (err) {
       console.error(err)
       kill('FAILED-TO-LOAD')
     }
 
-    move(player.x, player.y, player.color, turn)
+    move(ai.x, ai.y, ai.color, turn)
 
     // handle each response from the AI
-    player.worker.onmessage = ({ data }) => {
-      if (done.has(player)) return player.kill('UNEXPECTED-MESSAGE')
-      if (!data) return player.kill('STUCK')
+    ai.worker.onmessage = ({ data }) => {
+      if (done.has(ai)) return ai.kill('UNEXPECTED-MESSAGE')
+      if (!data) return ai.kill('STUCK')
       const { x, y } = JSON.parse(data)
-      if (typeof x !== 'number' || typeof y !== 'number') return player.kill('INVALID_INPUT')
-      if (notInBounds(x) || notInBounds(y)) return player.kill('OUT_OF_BOUNDS')
+      if (typeof x !== 'number' || typeof y !== 'number') return ai.kill('INVALID_INPUT')
+      if (notInBounds(x) || notInBounds(y)) return ai.kill('OUT_OF_BOUNDS')
       if (
-        !(x === player.x - 1 && y === player.y) &&
-        !(x === player.x + 1 && y === player.y) &&
-        !(x === player.x && player.y === y + 1) &&
-        !(x === player.x && player.y === y - 1)
-      ) return player.kill('IMPOSSIBLE_MOVE')
+        !(x === ai.x - 1 && y === ai.y) &&
+        !(x === ai.x + 1 && y === ai.y) &&
+        !(x === ai.x && ai.y === y + 1) &&
+        !(x === ai.x && ai.y === y - 1)
+      ) return ai.kill('IMPOSSIBLE_MOVE')
 
-      player.x = x
-      player.y = y
-      const failure = move(x, y, player.color, turn)
+      ai.x = x
+      ai.y = y
+      const failure = move(x, y, ai.color, turn)
       if (failure === turn) {
-        for (const p of players) {
-          p.x === player.x && p.y === player.y && p.kill('MULTI-CRASH')
+        for (const a of ais) {
+          a.x === ai.x && a.y === ai.y && a.kill('MULTI-CRASH')
         }
         colorize(x, y, 0xffffff)
-        return player.kill('MULTI-CRASH')
-      } else if (failure) return player.kill('CRASH')
-      next(player)
+        return ai.kill('MULTI-CRASH')
+      } else if (failure) return ai.kill('CRASH')
+      next(ai)
     }
 
-    player.worker.onerror = () => player.kill('AI-ERROR')
+    ai.worker.onerror = () => ai.kill('AI-ERROR')
   }))
 
-  next(players[0])
+  next(ais[0])
 }
 
 const params = new URLSearchParams(location.search)

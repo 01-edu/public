@@ -27,67 +27,93 @@ const hslToRgb = (h, s, l) => {
   return toInt(toRange(r), toRange(g), toRange(b))
 }
 
-export const init = ({ players, seed }) => {
+export const init = ({ ais, seed }) => {
+  let w = (123456789 + seed) & 0xffffffff
+  let z = (987654321 - seed) & 0xffffffff
+
   const rand = () => {
-    let t = seed += 0x6D2B79F5
-    t = Math.imul(t ^ t >>> 15, t | 1)
-    t ^= t + Math.imul(t ^ t >>> 7, t | 61)
-    return ((t ^ t >>> 14) >>> 0) / 4294967296
+    z = (36969 * (z & 65535) + (z >>> 16)) & 0xffffffff
+    w = (18000 * (w & 65535) + (w >>> 16)) & 0xffffffff
+    return (((z << 16) + (w & 65535)) >>> 0) / 4294967296
   }
 
-  const angle = (Math.PI * 2) / players.length
-  const rate = (SIZE / players.length / SIZE)
+  const angle = (Math.PI * 2) / ais.length
+  const rate = (SIZE / ais.length / SIZE)
   const shift = angle * rand()
 
   // shuffle using seeded random
-  players.sort((a, b) => a.name - b.name)
-  let i = players.length, j, tmp
+  ais.sort((a, b) => a.name - b.name)
+  let i = ais.length, j, tmp
   while (--i > 0) {
     j = Math.floor(rand() * (i + 1))
-    tmp = players[j]
-    players[j] = players[i]
-    players[i] = tmp
+    tmp = ais[j]
+    ais[j] = ais[i]
+    ais[i] = tmp
   }
 
-  return players.map((name, i) => {
+  return ais.map((name, i) => {
     const jsonName = `"name":${JSON.stringify(name)}`
     const hue = max1(i * rate + 0.25)
-    const p = {
+    const ai = {
       hue,
       name,
       x: Math.round(max2PI(Math.cos(angle * i + shift)) * m + h),
       y: Math.round(max2PI(Math.sin(angle * i + shift)) * m + h),
-      cardinal: 0,
-      direction: 0,
       color: hslToRgb(hue, 1, 0.5),
-      toString: () => `{${jsonName},"dead":${!!p.dead},"cardinal":${p.cardinal},"direction":${p.direction},"color":${p.color},"x":${p.x},"y":${p.y},"coords":[{"x":${p.x},"y":${p.y - 1},"cardinal":0,"direction":${(4 - p.cardinal) % 4}},{"x":${p.x + 1},"y":${p.y},"cardinal":1,"direction":${(5 - p.cardinal) % 4}},{"x":${p.x},"y":${p.y + 1},"cardinal":2,"direction":${(6 - p.cardinal) % 4}},{"x":${p.x - 1},"y":${p.y},"cardinal":3,"direction":${(7 - p.cardinal) % 4}}]}`,
+      toString: () => `{${jsonName},"dead":${!!ai.dead},"color":${ai.color},"x":${ai.x},"y":${ai.y}}`,
     }
-    return p
+    return ai
   })
 }
 
 export const injectedCode = `
 if (typeof update !== 'function') throw Error('Update function not defined')
 addEventListener('message', self.init = initEvent => {
-  const { seed, id } = JSON.parse(initEvent.data)
-  const isOwnPlayer = p => p.name === id
+  let { seed, id } = JSON.parse(initEvent.data)
 
+  const r4 = () => Math.floor(Math.random() * 4)
+  let w = (123456789 + seed) & 0xffffffff
+  let z = (987654321 - seed) & 0xffffffff
   Math.random = () => {
-    let t = seed += 0x6D2B79F5
-    t = Math.imul(t ^ t >>> 15, t | 1)
-    t ^= t + Math.imul(t ^ t >>> 7, t | 61)
-    return ((t ^ t >>> 14) >>> 0) / 4294967296
+    z = (36969 * (z & 65535) + (z >>> 16)) & 0xffffffff
+    w = (18000 * (w & 65535) + (w >>> 16)) & 0xffffffff
+    return (((z << 16) + (w & 65535)) >>> 0) / 4294967296
   }
 
+  const prev = {}
+  let me
   removeEventListener('message', self.init)
   addEventListener('message', ({ data }) => {
-    const players = JSON.parse(data)
-    const player = players.find(isOwnPlayer)
-    player.isOwnPlayer = true
+    const ais = JSON.parse(data)
+    me || (ais
+      .sort((a, b) => a.name - b.name)
+      .forEach(a => prev[a.name] = [{...a, cardinal: r4(), direction: r4() }]))
 
-    try { postMessage(JSON.stringify(update({ players, player }))) }
+    for (const ai of ais) {
+      const { x, y, name, dead } = ai
+      if (dead) {
+        ai.coords = []
+        continue
+      }
+
+      name === id && (me = ai)
+      const { cardinal, direction } = prev[name].find(c => c.x === ai.x && c.y === ai.y)
+
+      ai.index = ai.x * 100 + ai.y
+      ai.direction = direction
+      ai.cardinal = cardinal
+      ai.coords = prev[name] = [
+        { index: x*100+(y-1), x, y: y - 1, cardinal: 0, direction: (4 - cardinal) % 4 },
+        { index: (x+1)*100+y, x: x + 1, y, cardinal: 1, direction: (5 - cardinal) % 4 },
+        { index: x*100+(y+1), x, y: y + 1, cardinal: 2, direction: (6 - cardinal) % 4 },
+        { index: (x-1)*100+y, x: x - 1, y, cardinal: 3, direction: (7 - cardinal) % 4 },
+      ]
+    }
+    me.me = true
+
+    try { postMessage(JSON.stringify(update({ ais, ai: me }))) }
     catch (err) {
-      console.error(err)
+      console.error(id, err)
       throw err
     }
   })

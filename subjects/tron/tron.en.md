@@ -41,7 +41,9 @@ You will need to create a public repository with the name `tron`. Next you need 
 
 - You may use this link [tron](/public/subjects/tron?ai=&seed=1653547275), to test your AI
 - You need to add your AI as a user in that link
-  > Example: if your git login is **Frenchris** and you want to test against **LEEDASILVA** the link becomes: `/public/subjects/tron?AI=Frenchris@master+LEEDASILVA@master&seed=1653547275`
+  > Example:
+    - if your git login is **Frenchris** and you want to test against **LEEDASILVA** the link becomes: `/public/subjects/tron?AI=Frenchris@master+LEEDASILVA@master`
+    - if you want to test against the default `/random.js` AI the link becomes: `/public/subjects/tron?AI=Frenchris@master+/random.js`
 - Open the inspector of the browser used and **disable the cache**
 - let's change the update function so that your AI only goes forward.
 
