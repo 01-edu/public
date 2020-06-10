@@ -1,4 +1,4 @@
-## tron
+## Tron
 
 ### Objectives
 
@@ -10,22 +10,21 @@ You will need to create a public repository with the name `tron`. Next you need 
 
 ### Controls
 
-- `right arrow` plays one moves frontwards
-- `left arrow` plays one moves backwards
-- You can use the scroll to do the same thing as above
+- `arrows` or `scroll` to move step by stem
 - `shift` will make it fast
+- you can click anywhere on the progress bar to seek into the history
 
 ### Rules
 
-- Your Ai has to move every turn *(it can not stay still)*
-- Every time the Ai moves somewhere the Ai leaves a color trail.
-- the Ai can only move to a blank tile.
-- the Ai can not move out of the map *(100 x 100)*
-- the Ai can only move to its `left`, `forward` or its `right`.
+- Your AI has to move every turn *(it can not stay still)*
+- Every time the AI moves somewhere the AI leaves a color trail.
+- the AI can only move to a blank tile.
+- the AI can not move out of the map *(100 x 100)*
+- the AI can only move to its `left`, `forward` or its `right`.
   *(Moving `backward` is suicide as it would hit its own trail !)*
-- If too much CPU power is required to decide where to go, the Ai dies.
+- If too much CPU power is required to decide where to go, the AI dies.
 - If two Ais moved to the same spot, both of them die.
-- **The Ai has to survive as long as it can.**
+- **The AI has to survive as long as it can.**
 
 ### The game ends
 
@@ -33,41 +32,45 @@ You will need to create a public repository with the name `tron`. Next you need 
 
 ### How to write your AI
 
-- Copy the code on the file [random.js](https://raw.githubusercontent.com/01-edu/public/master/subjects/tron/random.js) to your file, `ai.js`
+- Copy the code on the file [random.js](https://raw.githubusercontent.com/01-edu/public/master/subjects/tron/ai/random.js) to your file, `ai.js`
 - You may now edit the `update` function which is called each turn
+  > ⚠️ Do not rename the `update` function ⚠️ \
+  > as it's the function that the worker will try to run to test your AI.
 
 ### How to test your AI
 
-- You may use this link [tron](https://01.alem.school/public/subjects/tron/?ai=&seed=1653547275), to test your AI
-- You need to add your AI as a user in that link,
-- Example: if your git login is **Frenchris** and you want to test against **LEEDASILVA**
-the link becomes:
-`https://01.alem.school/public/subjects/tron/?ai=Frenchris@master+LEEDASILVA@master&seed=1653547275`
-
+- You may use this link [tron](/public/subjects/tron?ai=&seed=1653547275), to test your AI
+- You need to add your AI as a user in that link
+  > Example: if your git login is **Frenchris** and you want to test against **LEEDASILVA** the link becomes: `/public/subjects/tron?AI=Frenchris@master+LEEDASILVA@master&seed=1653547275`
 - Open the inspector of the browser used and **disable the cache**
-
 - let's change the update function so that your AI only goes forward.
 
-Replace this line just before the `return` of the update function
-
+Replace this line just before the `return` of the update function:
 ```js
- const available = coordsInBound.filter(isFree)
- ```
+  const available = coordsInBound.filter(isFree)
 
-With this line
-
-```js
-const available = coordsInBound.filter(isFree).filter(el => el.direction === 0)
+  // And I return a random available coord
+  return pickRandom(available)
 ```
 
-- save the file, push the changes and rerun the game in the browser. If the cache was correctly disabled,
-you have changed your AI behaviour from a random pick of available moves to only going forward.
+...with this line:
+```js
+  // always return the first free coordinates
+  return coordsInBound.filter(isFree)[0]
+```
 
-- To understand better the way of controlling your AI, read the comments inside the AI file and do a lot of testing.
+- save the file, push the changes and re-run the game in the browser.
+  If the cache was correctly disabled,
+  you have changed your AI behaviour from a random pick of available moves
+  to only going forward.
+
+- To understand better the way of controlling your AI,
+  read the comments inside the AI file and do a lot of testing.
 
 - When peer-corrected, you AI will be competing against other AIs.
-Be aware that there will be the possibility for the peer-correcter to use his or her own AI.
+  Be aware that there will be the possibility for the peer-correcter
+  to use his or her own AI.
 
-May the best tron win :)
+*May the best tron win :)*
 
 Have fun and good luck.
