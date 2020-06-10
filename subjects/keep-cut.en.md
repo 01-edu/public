@@ -23,4 +23,4 @@ and only keep 2 first characters and 2 last characters.
 
 ### Notions
 
-- [https://devdocs.io/javascript/global_objects/array/slice](https://devdocs.io/javascript/global_objects/array/slice)
+- [devdocs.io/javascript/global_objects/array/slice](https://devdocs.io/javascript/global_objects/array/slice)

@@ -23,5 +23,5 @@ Just like triangle
 
 ### Notions
 
-- [nan-academy.github.io/js-training/examples/loops.js](https://nan-academy.github.io/js-training/examples/loops.js)
-- [nan-academy.github.io/js-training/examples/recursion.js](https://nan-academy.github.io/js-training/examples/recursion.js)
+- [nan-academy.github.io/js-training/examples/loops](https://nan-academy.github.io/js-training/examples/loops.js)
+- [nan-academy.github.io/js-training/examples/recursion](https://nan-academy.github.io/js-training/examples/recursion.js)

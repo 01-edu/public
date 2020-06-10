@@ -16,8 +16,8 @@ It will look something like this `1 *2 *2 +4`
 
 ### Notions
 
-- [https://nan-academy.github.io/js-training/examples/loops.js](https://nan-academy.github.io/js-training/examples/loops.js)
-- [https://nan-academy.github.io/js-training/examples/recursion.js](https://nan-academy.github.io/js-training/examples/recursion.js)
+- [nan-academy.github.io/js-training/examples/loops.js](https://nan-academy.github.io/js-training/examples/loops.js)
+- [nan-academy.github.io/js-training/examples/recursion.js](https://nan-academy.github.io/js-training/examples/recursion.js)
 
 
 ### Code provided

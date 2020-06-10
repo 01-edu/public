@@ -9,4 +9,4 @@ Attention with the shallow copies.
 
 ### Notions
 
-- [nan-academy.github.io/js-training/examples/data-structures.js](https://nan-academy.github.io/js-training/examples/data-structures.js)
+- [nan-academy.github.io/js-training/examples/data-structures](https://nan-academy.github.io/js-training/examples/data-structures.js)

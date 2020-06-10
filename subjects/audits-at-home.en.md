@@ -33,9 +33,9 @@ So here we go.
 
 ### Prerequisites for the team captain and the auditor
 
-- A program to communicate and livestream installed (like Discord [https://discordapp.com/](https://discordapp.com/) )
+- A program to communicate and livestream installed (like Discord [discordapp.com](https://discordapp.com/) )
 - A program to allows the auditor to take charge of the computer
-  of the team captain installed (like teamViewer [teamviewer.com/](https://www.teamviewer.com/) )
+  of the team captain installed (like teamViewer [teamviewer.com](https://www.teamviewer.com/) )
 
 ### Prerequisite for the team captain
 

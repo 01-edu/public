@@ -18,4 +18,4 @@ console.log(mult2Curried(2)(2)) // result expected 4
 
 ### Notions
 
-- [https://stackoverflow.com/questions/36314/what-is-currying](https://stackoverflow.com/questions/36314/what-is-currying)
+- [stackoverflow.com/questions/36314/what-is-currying](https://stackoverflow.com/questions/36314/what-is-currying)

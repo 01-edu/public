@@ -15,7 +15,7 @@ Some restrictions apply:
 
 ### Notions
 
-- [https://devdocs.io/javascript/global_objects/math](https://devdocs.io/javascript/global_objects/math)
+- [devdocs.io/javascript/global_objects/math](https://devdocs.io/javascript/global_objects/math)
 
 
 ### Code provided

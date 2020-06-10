@@ -13,9 +13,9 @@ and set his country to `'FR'`.
 
 ### Notions
 
-- [nan-academy.github.io/js-training/examples/set.js](https://nan-academy.github.io/js-training/examples/set.js)
-- [nan-academy.github.io/js-training/examples/get.js](https://nan-academy.github.io/js-training/examples/get.js)
-- [nan-academy.github.io/js-training/examples/data-structures.js](https://nan-academy.github.io/js-training/examples/data-structures.js)
+- [nan-academy.github.io/js-training/examples/set](https://nan-academy.github.io/js-training/examples/set.js)
+- [nan-academy.github.io/js-training/examples/get](https://nan-academy.github.io/js-training/examples/get.js)
+- [nan-academy.github.io/js-training/examples/data-structures](https://nan-academy.github.io/js-training/examples/data-structures.js)
 
 
 ### Code provided

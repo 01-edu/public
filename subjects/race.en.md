@@ -11,7 +11,7 @@ and a number and return the first resolved values up to the number given.
 
 ### Notions
 
-- [nan-academy.github.io/js-training/examples/promise.js](https://nan-academy.github.io/js-training/examples/promise.js)
+- [nan-academy.github.io/js-training/examples/promise](https://nan-academy.github.io/js-training/examples/promise.js)
 - [devdocs.io/javascript/global_objects/promise/race](https://devdocs.io/javascript/global_objects/promise/race)
 
 

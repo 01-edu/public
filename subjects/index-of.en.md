@@ -16,9 +16,9 @@ Create 3 functions:
 
 ### Notions
 
-- [https://devdocs.io/javascript/global_objects/array/indexof](https://devdocs.io/javascript/global_objects/array/indexof)
-- [https://devdocs.io/javascript/global_objects/array/lastindexof](https://devdocs.io/javascript/global_objects/array/lastindexof)
-- [https://devdocs.io/javascript/global_objects/array/includes](https://devdocs.io/javascript/global_objects/array/includes)
+- [devdocs.io/javascript/global_objects/array/indexof](https://devdocs.io/javascript/global_objects/array/indexof)
+- [devdocs.io/javascript/global_objects/array/lastindexof](https://devdocs.io/javascript/global_objects/array/lastindexof)
+- [devdocs.io/javascript/global_objects/array/includes](https://devdocs.io/javascript/global_objects/array/includes)
 
 
 ### Code provided

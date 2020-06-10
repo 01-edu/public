@@ -11,5 +11,5 @@ Create 4 functions
 
 ### Notions
 
-- [nan-academy.github.io/js-training/examples/functions.js](https://nan-academy.github.io/js-training/examples/functions.js)
-- [nan-academy.github.io/js-training/examples/primitive-and-operators.js](https://nan-academy.github.io/js-training/examples/primitive-and-operators.js)
+- [nan-academy.github.io/js-training/examples/functions](https://nan-academy.github.io/js-training/examples/functions.js)
+- [nan-academy.github.io/js-training/examples/primitive-and-operators](https://nan-academy.github.io/js-training/examples/primitive-and-operators.js)

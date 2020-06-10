@@ -14,9 +14,9 @@ and that works like the partition function from lodash.
 
 ### Notions
 
-- [https://devdocs.io/javascript/global_objects/array/filter](https://devdocs.io/javascript/global_objects/array/filter)
-- [https://lodash.com/docs/4.17.15#reject](https://lodash.com/docs/4.17.15#reject)
-- [https://lodash.com/docs/4.17.15#partition](https://lodash.com/docs/4.17.15#partition)
+- [devdocs.io/javascript/global_objects/array/filter](https://devdocs.io/javascript/global_objects/array/filter)
+- [lodash.com/docs/4.17.15#reject](https://lodash.com/docs/4.17.15#reject)
+- [lodash.com/docs/4.17.15#partition](https://lodash.com/docs/4.17.15#partition)
 
 
 ### Code provided

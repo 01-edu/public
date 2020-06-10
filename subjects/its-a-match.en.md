@@ -18,4 +18,4 @@ Create 4 regular expression in variables:
 
 ### Notions
 
-- [https://github.com/ziishaned/learn-regex#28-anchors](https://github.com/ziishaned/learn-regex#28-anchors)
+- [github.com/ziishaned/learn-regex#28-anchors](https://github.com/ziishaned/learn-regex#28-anchors)

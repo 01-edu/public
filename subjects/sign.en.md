@@ -13,8 +13,8 @@ if they both have the same sign, or false otherwise.
 
 ### Notions
 
-- [nan-academy.github.io/js-training/examples/functions.js](https://nan-academy.github.io/js-training/examples/functions.js)
-- [nan-academy.github.io/js-training/examples/if-else.js](https://nan-academy.github.io/js-training/examples/if-else.js)
+- [nan-academy.github.io/js-training/examples/functions](https://nan-academy.github.io/js-training/examples/functions.js)
+- [nan-academy.github.io/js-training/examples/if-else](https://nan-academy.github.io/js-training/examples/if-else.js)
 - [devdocs.io/javascript/global_objects/math/sign](https://devdocs.io/javascript/global_objects/math/sign)
 
 

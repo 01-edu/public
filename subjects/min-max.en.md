@@ -15,8 +15,8 @@ and returns the lowest
 
 ### Notions
 
-- [nan-academy.github.io/js-training/examples/functions.js](https://nan-academy.github.io/js-training/examples/functions.js)
-- [nan-academy.github.io/js-training/examples/ternary.js](https://nan-academy.github.io/js-training/examples/ternary.js)
+- [nan-academy.github.io/js-training/examples/functions](https://nan-academy.github.io/js-training/examples/functions.js)
+- [nan-academy.github.io/js-training/examples/ternary](https://nan-academy.github.io/js-training/examples/ternary.js)
 - [devdocs.io/javascript/global_objects/math/min](https://devdocs.io/javascript/global_objects/math/min)
 - [devdocs.io/javascript/global_objects/math/max](https://devdocs.io/javascript/global_objects/math/max)
 
