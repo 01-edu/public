@@ -9,9 +9,10 @@ It takes 2 arguments:
 
 And returns the value at the given string path.
 
+
 ### Example:
-`
-src: {nested: {key: 'peekaboo'}}
-path: 'nested.key'
-get(src, path) = 'peekaboo'
-`
+```js
+const src = { nested: { key: 'peekaboo' } }
+const path = 'nested.key'
+get(src, path) // -> 'peekaboo'
+```
