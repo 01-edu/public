@@ -10,15 +10,15 @@
 
 ##### Modify the link so that the users are the audited **GITHUB_LOGIN**
 
-##### and **Frenchris-right**. Try three times, changing the seed each time. The best of three, wins
+##### and **right**. Try three times, changing the seed each time. The best of three, wins
 
-###### Did the audited AI won against Frenchris-right AI?
+###### Did the audited AI won against right AI?
 
 ##### Modify the link so that the users are the audited **GITHUB_LOGIN**
 
-##### and **Frenchris-snail**. Try three times, changing the seed each time. The best of three, wins
+##### and **snail**. Try three times, changing the seed each time. The best of three, wins
 
-###### Did the audited AI won against Frenchris-snail AI?
+###### Did the audited AI won against snail AI?
 
 ###### Does the code avoid [deep nesting](https://code.tutsplus.com/tutorials/top-15-best-practices-for-writing-super-readable-code--net-8118)?
 
