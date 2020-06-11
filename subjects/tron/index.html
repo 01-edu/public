@@ -266,7 +266,7 @@ const start = async ({ urls, seed }) => {
     }
   }
 
-  window.onmousemove = (e) => e.which ? (down && setPosition(e)) : (down = false)
+  window.onmousemove = (e) => e.buttons ? (down && setPosition(e)) : (down = false)
   bar.onmousedown = (e) => (down = true) && setPosition(e)
   bar.onwheel = canvas.onwheel = (e) =>
     setPosition(t + Math.sign(e.deltaY) * (e.shiftKey ? 10 : 1))
