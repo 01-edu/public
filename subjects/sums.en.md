@@ -7,6 +7,7 @@ partitions.
 A partition of a number is a group of numbers that its sum is equal to that
 number.
 Sums must ignore duplicates ([1,2] and [2,1] are duplicates).
+Sums must return sorted array of sorted partitions.
 
 Example:
-sums(4) = [[1, 3], [2, 2], [1, 1, 2], [1, 1, 1, 1]]
+sums(4) = [ [1, 1, 1, 1], [1, 1, 2], [1, 3], [2, 2] ]
