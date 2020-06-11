@@ -112,6 +112,10 @@ cc8f5dcf760f        <name of the image>    "./server"               6 seconds ag
 
 ###### Were you prohibited to create the post?
 
+##### Try creating a post as a registered user and try to choose several categories for that post.
+
+###### Were you able to choose several categories for that post?
+
 ##### Try creating a post as a registered user and try to choose a category for that post.
 
 ###### Were you able to choose a category for that post?
