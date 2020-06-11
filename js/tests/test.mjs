@@ -61,7 +61,7 @@ const main = async () => {
   const parts = test.split('// /*/ // ⚡')
   const [inject, testCode] = parts.length < 2 ? ['', test] : parts
   const combined = `${inject.trim()}\n${code
-    .replace(inject, '')
+    .replace(inject.trim(), '')
     .trim()}\n${testCode.trim()}\n`
 
   const b64 = Buffer.from(combined).toString('base64')
