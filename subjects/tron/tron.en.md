@@ -23,7 +23,7 @@ You will need to create a public repository with the name `tron`. Next you need 
 - the AI can only move to its `left`, `forward` or its `right`.
   *(Moving `backward` is suicide as it would hit its own trail !)*
 - If too much CPU power is required to decide where to go, the AI dies.
-- If two Ais moved to the same spot, both of them die.
+- If two AIs moved to the same spot, both of them die.
 - **The AI has to survive as long as it can.**
 
 ### The game ends
@@ -34,8 +34,9 @@ You will need to create a public repository with the name `tron`. Next you need 
 
 - Copy the code on the file [random.js](https://raw.githubusercontent.com/01-edu/public/master/subjects/tron/ai/random.js) to your file, `ai.js`
 - You may now edit the `update` function which is called each turn
-  > ⚠️ Do not rename the `update` function ⚠️ \
-  > as it's the function that the worker will try to run to test your AI.
+
+> ⚠️ Do not rename the `update` function ⚠️ \
+> as it's the function that the worker will try to run to test your AI.
 
 ### How to test your AI
 

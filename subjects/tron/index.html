@@ -215,13 +215,13 @@ const getSha = async login => (await (await fetch(getShaUrl(login))).json()).sha
 const toBlob = async r => {
   if (!r.ok) throw Error(`${r.status}: ${r.statusText}`)
   const code = await r.text()
-  return new Blob([`${code}${injectedCode}`], { type : 'text/javascript' })
+  const type = { type : 'text/javascript' }
+  const blob = new Blob([`${code}${injectedCode}`], type)
+  return { url: URL.createObjectURL(blob, type), code }
 }
-const toUrlObject = b => URL.createObjectURL(b, { type: 'text/javascript' })
-const memo = {}
-const fetchBlob = url => memo[url]
-  || (memo[url] = fetch(url).then(toBlob).then(toUrlObject))
 
+const memo = {}
+const fetchBlob = url => memo[url] || (memo[url] = fetch(url).then(toBlob))
 const getGithackUrl = async (login, sha) => {
   if (!sha || sha === 'master') {
     sha = localStorage[login] || (localStorage[login] = await getSha(login))
@@ -317,7 +317,8 @@ const start = async ({ urls, seed }) => {
 
     // init the worker
     try {
-      const url = await fetchBlob(await formatURL(ai.name))
+      const { url, code } = await fetchBlob(await formatURL(ai.name))
+      ai.code = code
       ai.worker = new Worker(url, { type: 'module', name: ai.name })
       await new Promise((s, f) => {
         ai.worker.onmessage = e => e.data === 'loaded' ? s() : f(Error(e.data))
@@ -365,7 +366,23 @@ const start = async ({ urls, seed }) => {
       next(ai)
     }
 
-    ai.worker.onerror = () => ai.kill('AI-ERROR')
+    ai.worker.onerror = ({ lineno }) => {
+      const errorCode = ai.code.split('\n')
+        .slice(lineno - 5, lineno + 4)
+        .map((l,i) => `%c${lineno - 4 + i}｜ ${l}`)
+        .join('\n')
+
+      const styles = Array(4)
+        .fill('color:#888;background:black;display: block;padding:0 4px')
+
+      console.log(`${ai.name}:${lineno}\n${errorCode}`, ...[
+        ...styles,
+        'color:white;background:#333;display: block;padding:0 4px',
+        ...styles,
+      ])
+
+      ai.kill('AI-ERROR')
+    }
   }))
 
   next(ais[0])
