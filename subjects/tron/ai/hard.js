@@ -13,14 +13,18 @@ const pickRandom = (arr) => arr[Math.floor(Math.random() * arr.length)]
  * My functions
  ************/
 const isAlley = ({ x, y }) => !isFree({ x, y }) || !isInBounds({ x, y })
+// TODO: could make the ai harder if left an empty space so that it could get out
 
 // this functions will find the best path, so the path that has more empty spaces
-// so use `isFree`,
 const findBestPath = ({ ai }) => {
   let arr = []
   let car = ai.cardinal
   // if it as a block on the symmetric position it must
   // simulate the symmetric position and see witch path is the best
+  // from the symmetric position
+  //  o→
+  // ←↓oooooooooo
+  //   ↓
   if (
     (car === 3 || car === 0) &&
     !isFree({ x: ai.x - 1, y: ai.y - 1 }) &&
@@ -29,17 +33,15 @@ const findBestPath = ({ ai }) => {
   ) {
     let xad = ai.x - 1
     let yad = ai.y - 1
-
+    // [right, line0, line3, down]
     let choose = [
       calDistance(xad + 1, yad, 1, 0),
-      calDistance(ai.x, ai.y - 1, car, 0),
-      calDistance(ai.x - 1, ai.y, car, 0),
+      calDistance(ai.x, ai.y - 1, 0, 0),
+      calDistance(ai.x - 1, ai.y, 3, 0),
       calDistance(xad, yad + 1, 2, 0),
     ]
     let index = choose.indexOf(Math.max(...choose))
-    return index === 0 || index === 1
-      ? ai.coords[0]
-      : ai.coords[3]
+    return index === 0 || index === 1 ? ai.coords[0] : ai.coords[3]
   }
   if (
     (car === 1 || car === 0) &&
@@ -53,14 +55,12 @@ const findBestPath = ({ ai }) => {
     // [ down, line1, line0, left ]
     let choose = [
       calDistance(xad, yad + 1, 2, 0),
-      calDistance(ai.x + 1, ai.y, car, 0),
-      calDistance(ai.x, ai.y - 1, car, 0),
+      calDistance(ai.x + 1, ai.y, 1, 0),
+      calDistance(ai.x, ai.y - 1, 0, 0),
       calDistance(xad - 1, yad, 3, 0),
     ]
     let index = choose.indexOf(Math.max(...choose))
-    return index === 0 || index === 1
-      ? ai.coords[1]
-      : ai.coords[0]
+    return index === 0 || index === 1 ? ai.coords[1] : ai.coords[0]
   }
   if (
     (car === 2 || car === 1) &&
@@ -74,14 +74,12 @@ const findBestPath = ({ ai }) => {
     // [ left, line2, line1, up ]
     let choose = [
       calDistance(xad - 1, yad, 3, 0),
-      calDistance(ai.x, ai.y + 1, car, 0),
-      calDistance(ai.x + 1, ai.y, car, 0),
+      calDistance(ai.x, ai.y + 1, 2, 0),
+      calDistance(ai.x + 1, ai.y, 1, 0),
       calDistance(xad, yad - 1, 0, 0),
     ]
     let index = choose.indexOf(Math.max(...choose))
-    return index === 0 || index === 1
-      ? ai.coords[2]
-      : ai.coords[1]
+    return index === 0 || index === 1 ? ai.coords[2] : ai.coords[1]
   }
   if (
     (car === 2 || car === 3) &&
@@ -95,14 +93,12 @@ const findBestPath = ({ ai }) => {
     // [ right, line2, line3, up ]
     let choose = [
       calDistance(xad + 1, yad, 1, 0),
-      calDistance(ai.x - 1, ai.y, car, 0),
-      calDistance(ai.x, ai.y + 1, car, 0),
+      calDistance(ai.x, ai.y + 1, 2, 0),
+      calDistance(ai.x - 1, ai.y, 3, 0),
       calDistance(xad, yad - 1, 0, 0),
     ]
     let index = choose.indexOf(Math.max(...choose))
-    return index === 0 || index === 1
-      ? ai.coords[3]
-      : ai.coords[2]
+    return index === 0 || index === 1 ? ai.coords[2] : ai.coords[3]
   }
 
   for ({ x, y, cardinal } of ai.coords) {
@@ -164,8 +160,8 @@ const calDistance = (x, y, car, count) => {
   }
 }
 
-const addToMap = ({ x, y }) => MAP[y * SIZE + x] = 1
+const addToMap = ({ x, y }) => (MAP[y * SIZE + x] = 1)
 const update = (state) => {
   state.ais.forEach(addToMap)
-  findBestPath(state)
+  return findBestPath(state)
 }
