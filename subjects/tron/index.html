@@ -217,7 +217,7 @@ const toBlob = async r => {
 const memo = {}
 const fetchBlob = url => memo[url] || (memo[url] = fetch(url).then(toBlob))
 const remoteURL = (login, sha) => 
-  `${location.origin}/${login}/tron/raw/branch/${sha || 'master'}/ai.js`
+  `https://git.${location.host}/${login}/tron/raw/branch/${sha || 'master'}/ai.js`
 
 const formatURL = url => {
   if (url.startsWith('/')) return `${location.pathname}/ai/${url}`
@@ -318,7 +318,7 @@ const start = async ({ urls, seed }) => {
       }
     } catch (err) {
       console.error(err)
-      kill('FAILED-TO-LOAD')
+      return kill('FAILED-TO-LOAD')
     }
 
     move(ai.x, ai.y, ai.color, turn)
