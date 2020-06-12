@@ -21,7 +21,7 @@ t(() => !end.test('Hi'))
 t(() => end.test('I love sushi'))
 
 t(() => beginEnd.test('hi'))
-t(() => !beginEnd.test('hired kimchi'))
+t(() => beginEnd.test('hired kimchi'))
 t(() => !beginEnd.test('higher'))
 t(() => !beginEnd.test('likelihood'))
 t(() => !beginEnd.test('Hi'))
