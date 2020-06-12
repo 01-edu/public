@@ -205,13 +205,7 @@ const buildInfo = (ai, i) => {
 
 const notInBounds = n => n >= 100 || n < 0
 
-const getShaUrl = login =>
-  `https://api.github.com/repos/${login}/tron/commits/master`
 
-const getAIUrl = (login, sha, ai) =>
-  `https://rawcdn.githack.com/${login}/tron/${sha}/ai/${ai || login}.js`
-
-const getSha = async login => (await (await fetch(getShaUrl(login))).json()).sha
 const toBlob = async r => {
   if (!r.ok) throw Error(`${r.status}: ${r.statusText}`)
   const code = await r.text()
@@ -222,24 +216,14 @@ const toBlob = async r => {
 
 const memo = {}
 const fetchBlob = url => memo[url] || (memo[url] = fetch(url).then(toBlob))
-const getGithackUrl = async (login, sha) => {
-  if (!sha || sha === 'master') {
-    sha = localStorage[login] || (localStorage[login] = await getSha(login))
-  }
-  return getAIUrl(login, sha)
-}
-
-const remoteURL = (login, sha) => location.host.startsWith('git.')
-  ? `${location.origin}/${login}/tron/raw/branch/${sha || 'master'}/ai.js`
-  : getGithackUrl(login, sha)
+const remoteURL = (login, sha) => 
+  `${location.origin}/${login}/tron/raw/branch/${sha || 'master'}/ai.js`
 
 const formatURL = url => {
   if (url.startsWith('/')) return `${location.pathname}/ai/${url}`
   if (url.startsWith('https://')) return url
   if (url.includes(location.hostname)) return `https://${url}`
-  return url.includes('@')
-    ? remoteURL(...url.split('@'))
-    : `${location.origin}/${url}`
+  return url.includes('@') ? remoteURL(...url.split('@')) : `${location.origin}/${url}`
 }
 
 const start = async ({ urls, seed }) => {
