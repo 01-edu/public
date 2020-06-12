@@ -12,9 +12,7 @@ Create 4 regular expression in variables:
 - `end` matches with the expression 'hi',
   only when it is in the end.
 
-- `beginEnd` matches with the expression 'hi',
-  only when it is in the beginning and the end.
-
+- `beginEnd` matches only with the expression 'hi'.
 
 ### Notions
 
