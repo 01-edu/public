@@ -51,16 +51,20 @@ const stackFmt = (err, url) => {
 }
 
 const main = async () => {
-  const [test, code] = await Promise.all([
+  const [test, rawCode] = await Promise.all([
     read(joinPath(root, `${name}_test.js`), 'test'),
     read(`/jail/student/${name}.js`, 'student solution'),
   ])
 
+  // this is a very crude and basic removal of comments
+  // since checking code is only use to prevent cheating
+  // it's not that important if it doesn't work 100% of the time.
+  const code = rawCode.replace(/\/\*[\s\S]*?\*\/|\/\/.*/g, '').trim()
   if (code.includes('import')) fatal('import keyword not allowed')
 
   const parts = test.split('// /*/ // ⚡')
   const [inject, testCode] = parts.length < 2 ? ['', test] : parts
-  const combined = `${inject.trim()}\n${code
+  const combined = `${inject.trim()}\n${rawCode
     .replace(inject.trim(), '')
     .trim()}\n${testCode.trim()}\n`
 
