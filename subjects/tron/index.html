@@ -218,7 +218,7 @@ const remoteURL = (login, sha) =>
   `https://git.${location.host}/${login}/tron/raw/branch/${sha || 'master'}/ai.js`
 
 const formatURL = url => {
-  if (url.startsWith('/')) return `${location.pathname}/ai/${url}`
+  if (url.startsWith('/')) return `${location.pathname}/ai${url}`
   if (url.startsWith('https://')) return url
   if (url.includes(location.hostname)) return `https://${url}`
   return url.includes('@') ? remoteURL(...url.split('@')) : `${location.origin}/${url}`
