@@ -101,7 +101,7 @@ const findBestPath = ({ ai }) => {
     return index === 0 || index === 1 ? ai.coords[2] : ai.coords[3]
   }
 
-  for ({ x, y, cardinal } of ai.coords) {
+  for (const { x, y, cardinal } of ai.coords) {
     // if everything is ok it must continue with the best path
     arr.push(calDistance(x, y, cardinal, 0))
   }

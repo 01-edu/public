@@ -204,13 +204,11 @@ const buildInfo = (ai, i) => {
 }
 
 const notInBounds = n => n >= 100 || n < 0
-
-
 const toBlob = async r => {
   if (!r.ok) throw Error(`${r.status}: ${r.statusText}`)
   const code = await r.text()
   const type = { type : 'text/javascript' }
-  const blob = new Blob([`${code}${injectedCode}`], type)
+  const blob = new Blob([`'use strict';${code}${injectedCode}`], type)
   return { url: URL.createObjectURL(blob, type), code }
 }
 
