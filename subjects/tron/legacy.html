@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tron</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAx42QAFP/FABXQkMAQC0uAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAQBEREREREREAFEREREREQQAURERERERBABREREREREEAFEREREREQQAURERERERBABQERAAEREEAFCBEIiREQQAUQgRERERBABRAJEREREEAFAJEREREQQAUJERERERBABRERERERDEAEREREREREQQAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">
+<style>
+body {
+  background: #13191a;
+  display: grid;
+  grid-template-columns: 1fr 300px 300px 1fr;
+  font-family: monospace;
+  color: #7cecff;
+  margin: 0;
+  padding: 0;
+}
+
+h1 { letter-spacing: 6px }
+h2 {
+  margin-bottom: 6px;
+  text-overflow: ellipsis;
+  max-width: calc(50vw - 300px);
+}
+
+h2:after {
+  display: block;
+  content: ' ';
+  margin-top: 12px;
+  height: 3px;
+}
+
+h2 b {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+#ai-0 h2:after {
+  background-image: linear-gradient(to left, #0000, currentColor 18px, #0000);
+  margin-right: -10px;
+}
+
+#ai-1 h2:after {
+  margin-left: -10px;
+  background-image: linear-gradient(to right, #0000, currentColor 18px, #0000);
+}
+
+canvas {
+  display: block;
+  width: 600px;
+  height: 600px;
+  grid-column: 2/4;
+  box-shadow: 0 0 20px 1px #7cecff42;
+  outline: 1px solid;
+  outline-offset: -1px;
+}
+
+button {
+  border: 1px solid;
+  color: currentColor;
+  background: transparent;
+  padding: 0 2px;
+  border-radius: 3px;
+}
+
+svg {
+  margin-top: 36px;
+  width: 300px;
+}
+
+#notice {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 0;
+  user-select: none;
+}
+
+.hide {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#title {
+  display: block;
+  margin: 0;
+  padding: 0;
+  grid-column: 2/4;
+  text-align: center;
+  color: cyan;
+}
+
+#ai-0, #ai-1 {
+  margin: 12px;
+  padding: 6px;
+  user-select: none;
+}
+
+#ai-0 {
+  grid-column: 1;
+  text-align: right;
+}
+
+#ai-1 { grid-column: 4 }
+
+
+#controls {
+  grid-column: 2/4;
+  height: 10px;
+  background: #7cecff20;
+  margin-top: 1px;
+}
+
+#bar {
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 20px 1px #7cecff30;
+  outline: 1px solid;
+  outline-offset: -1px;
+}
+
+#loading { background: #7cecff40 }
+#position { background: #7cecff }
+#loading, #position {
+  position: absolute;
+  transform: translate(-600px);
+  pointer-events: none;
+}
+
+#bar, #loading, #position {
+  height: 100%;
+  width: 100%;
+}
+
+@media (orientation: portrait) {
+  h2 { max-width: 300px }
+  #controls { grid-row: 3 }
+  #ai-0 { grid-column: 2; grid-row: 4 }
+  #ai-1 { grid-column: 3; grid-row: 4 }
+}
+
+</style>
+</head>
+<body>
+  <div id="title">
+    <svg fill="cyan" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 449.9 184.1">
+      <defs><filter id="g"><feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="cyan"/></filter></defs>
+      <path style="filter:url(#g)" d="M36 62.6H5.2v-19H36v19zM38.4 39H3l-3 2.8v23l3 2.5h35.4l3.1-2.7V41.7L38.4 39z"/><g clip-path="url(#clipPath4354)" transform="matrix(1.25 0 0 -1.25 -135 647)"><path style="filter:url(#g)" d="M333.3 426.4a18.9 18.9 0 00-19.1 18.5c0 10.3 8.6 18.6 19.1 18.6a18.9 18.9 0 0019.2-19.2c-.4-10-8.8-18-19.2-18m0 41.2c-12.8 0-23.2-10.1-23.2-22.6a22.9 22.9 0 0123.2-22.5c12.9 0 23.2 10 23.2 22.5a22.9 22.9 0 01-23.2 22.6"/><path style="filter:url(#g)" d="M333.3 406.6c-21.8 0-39.4 17.2-39.4 38.3s17.6 38.3 39.4 38.3c21.8 0 39.5-17.1 39.5-38.3s-17.7-38.3-39.5-38.3m0 80.6a42.9 42.9 0 01-43.4-42.9c.3-23 19.6-41.6 43.4-41.6a42.9 42.9 0 0143.5 42.2 42.9 42.9 0 01-43.5 42.3M463.7 407H457l-28.4 31.8v9.5H448v34.5h15.6V407zm1.5 79.5H447l-2.7-3.2v-31.5h-17.1c-2.2 0-2.2-1.2-2.2-2.1v-12.2l30.4-34.4h9.8l2.6 2.4v78.1l-2.6 3zM419.2 441.1h-19.6v-33.9h-15.7v75.6h6.9l28.4-32.1V441zm-26.9 45.3h-9.8l-2.6-2.5v-78.1l2.6-2.7h18.2l2.7 3v31.6h17.1c2.2 0 2.2 1.1 2.2 2V452l-30.4 34.5zM283.2 407h-18.8l-31.8 32.5v13.1h52a22.5 22.5 0 00-22-15.5h-9.2l29.8-30m-20 26.2c13.8.3 24.6 9.7 26.2 23h-58l-2.7-2.6V439c0-.5 0-1 .4-1.5l33.4-34.3h26.3v4.1l-26.2 26h.6zM220.2 407h-15.7v45.6h15.7V407zm1.3 49.4h-18.7l-2.5-2.7v-48l2.7-2.6h18.6l2.6 3v47.6l-2.7 2.7z"/><path style="filter:url(#g)" d="M172.5 467.4c-3.7 0-6.8-3.1-6.8-6.8v-53.5l-15.6-.1v54.8a20.7 20.7 0 0021.2 20.8h91.2a23 23 0 0022-15.2h-112zm90 19.1h-91.1a24.6 24.6 0 01-25.6-25v-55.9l3-2.4h18.5l2.4 2.9v54.4a3 3 0 003.2 3h116.4a27 27 0 01-26.7 23"/></g></svg></div>
+  <div id="ai-0">
+    <h2><b>AI-0</b></h2>
+    <b>LOADING</b>
+    <br>
+    <b>0</b>
+  </div>
+  <canvas width="1200" height="1200"></canvas>
+  <div id="ai-1">
+    <h2><b>AI-1</b></h2>
+    <b>LOADING</b>
+    <br>
+    <b>0</b>
+  </div>
+  <div id="controls">
+    <div id="bar">
+      <div id="loading"></div>
+      <div id="position"></div>
+    </div>
+    <div id="notice" class="hide">
+      > scroll or keys to move step by step, click to jump. (shift = fast)
+      <button>hide</button>
+    </div>
+  </div>
+<script type="module">
+import { move, update, colorize } from './lib/display-canvas.js'
+import { init, injectedCode } from './lib/state.js'
+
+const [canvas] = document.getElementsByTagName('canvas')
+const [hide] = document.getElementsByTagName('button')
+const bar = document.getElementById('bar')
+const loading = document.getElementById('loading')
+const position = document.getElementById('position')
+
+hide.onclick = () => {
+  hide.parentElement.classList.add('hide')
+  localStorage.hide = 1
+}
+
+localStorage.hide || hide.parentElement.classList.remove('hide')
+
+const buildInfo = (ai, i) => {
+  const elem = document.getElementById(`ai-${i}`)
+  if (!elem) return { score: () => {}, status: () => {} }
+  const [name, status, score] = [...elem.children].map(e => e.firstChild).filter(Boolean)
+  name.firstChild.data = ai.name
+  elem.style.color = `hsl(${ai.hue*360}, 100%, 70%)`
+  elem.style.textShadow = `0 0 6px hsla(${ai.hue*360}, 100%, 70%, 0.4)`
+  elem.style.width = 'calc(100% - 36px)' // force width force redraw
+  // this fix a bug on chrome, not re-applying `currentColor` to gradients
+
+  return {
+    score: text => ai.dead || (score.data = text),
+    status: text => status.data = text,
+  }
+}
+
+const notInBounds = n => n >= 100 || n < 0
+const toBlob = async r => {
+  if (!r.ok) throw Error(`${r.status}: ${r.statusText}`)
+  const code = await r.text()
+  const type = { type : 'text/javascript' }
+  const blob = new Blob([`'use strict';${code}${injectedCode}`], type)
+  return { url: URL.createObjectURL(blob, type), code }
+}
+
+const memo = {}
+const fetchBlob = url => memo[url] || (memo[url] = fetch(url).then(toBlob))
+const remoteURL = (login, sha) => 
+  `https://git.${location.host}/${login}/tron/raw/branch/${sha || 'master'}/ai.js`
+
+const formatURL = url => {
+  if (url.startsWith('/')) return `${location.pathname}/ai${url}`
+  if (url.startsWith('https://')) return url
+  if (url.includes(location.hostname)) return `https://${url}`
+  return url.includes('@') ? remoteURL(...url.split('@')) : `${location.origin}/${url}`
+}
+
+const start = async ({ urls, seed }) => {
+  if (urls.length < 2) throw Error('2 AI urls are required to play')
+  const ais = init({ ais: urls, seed })
+
+  let turn = 1, maxTurn = 1, t = 1, cap = 10000, down
+  const done = new Set(ais)
+
+  const setPosition = e => {
+    const v = typeof e === 'number'
+      ? Math.max(e, 1)
+      : Math.floor(Math.max(e.pageX - bar.offsetLeft, 1) / 600 * cap)
+
+    t = Math.min(v, maxTurn)
+    requested || (requested = requestAnimationFrame(refresh))
+  }
+
+  window.onkeydown = e => {
+    const step = e.shiftKey ? 10 : 1
+    switch (e.key) {
+      case 'ArrowLeft':  case 'a': case 'q': case 'l': return setPosition(t - step)
+      case 'ArrowRight': case 'e': case 'd': case 'k': return setPosition(t + step)
+    }
+  }
+
+  window.onmousemove = (e) => e.buttons ? (down && setPosition(e)) : (down = false)
+  bar.onmousedown = (e) => (down = true) && setPosition(e)
+  bar.onwheel = canvas.onwheel = (e) =>
+    setPosition(t + Math.sign(e.deltaY) * (e.shiftKey ? 10 : 1))
+
+  let requested, timeout
+  const refresh = () => {
+    requested = update(t)
+    ais[0].score(turn)
+    ais[1].score(turn)
+    loading.style.transform = `translate(${((turn / cap)*600)-600}px)`
+    position.style.transform = `translate(${((t / cap)*600)-600}px)`
+  }
+
+  const next = (ai) => {
+    clearTimeout(ai.timeout)
+    done.add(ai)
+    requested || (requested = requestAnimationFrame(refresh))
+
+    // check if all AI are done
+    if (done.size >= ais.length) {
+      turn++
+      const data = `[${ais.join(',')}]`
+      let allDead = true
+      for (const a of ais) {
+        if (a.dead) continue
+        allDead ? (allDead = false) : cap--
+        done.delete(a)
+        a.worker.postMessage(data)
+        a.timeout = setTimeout(a.kill, 50, 'TIMEOUT')
+      }
+      allDead && (cap = turn)
+      t === maxTurn ? (t = maxTurn = turn) : (maxTurn = turn)
+    }
+  }
+
+  await Promise.all(ais.map(async (ai, i) => {
+    const info = buildInfo(ai, i)
+    ai.score = info.score
+
+    const kill = (cause) => {
+      if (ai.dead) return
+      console.log(`${ai.name} died because he ${cause} at ${ai.x} ${ai.y}`)
+      ai.cause = cause
+      ai.dead = true
+      ai.worker && ai.worker.terminate()
+      info.status(cause)
+    }
+
+    // init the worker
+    try {
+      const { url, code } = await fetchBlob(await formatURL(ai.name))
+      ai.code = code
+      ai.worker = new Worker(url, { type: 'module', name: ai.name })
+      await new Promise((s, f) => {
+        ai.worker.onmessage = e => e.data === 'loaded' ? s() : f(Error(e.data))
+        ai.worker.onerror = f
+        ai.worker.postMessage(JSON.stringify({ id: ai.name, seed }))
+      })
+
+      // activate the AI
+      info.status('ACTIVE')
+      ai.kill = cause => {
+        kill(cause)
+        next(ai)
+      }
+    } catch (err) {
+      console.error(err)
+      return kill('FAILED-TO-LOAD')
+    }
+
+    move(ai.x, ai.y, ai.color, turn)
+
+    // handle each response from the AI
+    ai.worker.onmessage = ({ data }) => {
+      if (done.has(ai)) return ai.kill('UNEXPECTED-MESSAGE')
+      if (!data) return ai.kill('STUCK')
+      const { x, y } = JSON.parse(data)
+      if (typeof x !== 'number' || typeof y !== 'number') return ai.kill('INVALID_INPUT')
+      if (notInBounds(x) || notInBounds(y)) return ai.kill('OUT_OF_BOUNDS')
+      if (
+        !(x === ai.x - 1 && y === ai.y) &&
+        !(x === ai.x + 1 && y === ai.y) &&
+        !(x === ai.x && ai.y === y + 1) &&
+        !(x === ai.x && ai.y === y - 1)
+      ) return ai.kill('IMPOSSIBLE_MOVE')
+
+      ai.x = x
+      ai.y = y
+      const failure = move(x, y, ai.color, turn)
+      if (failure === turn) {
+        for (const a of ais) {
+          a.x === ai.x && a.y === ai.y && a.kill('MULTI-CRASH')
+        }
+        colorize(x, y, 0xffffff)
+        return ai.kill('MULTI-CRASH')
+      } else if (failure) return ai.kill('CRASH')
+      next(ai)
+    }
+
+    ai.worker.onerror = ({ lineno }) => {
+      const errorCode = ai.code.split('\n')
+        .slice(lineno - 5, lineno + 4)
+        .map((l,i) => `%c${lineno - 4 + i}｜ ${l}`)
+        .join('\n')
+
+      const styles = Array(4)
+        .fill('color:#888;background:black;display: block;padding:0 4px')
+
+      console.log(`${ai.name}:${lineno}\n${errorCode}`, ...[
+        ...styles,
+        'color:white;background:#333;display: block;padding:0 4px',
+        ...styles,
+      ])
+
+      ai.kill('AI-ERROR')
+    }
+  }))
+
+  next(ais[0])
+}
+
+const params = new URLSearchParams(location.search)
+const { ai = '', seed } = Object.fromEntries(params)
+const search = () => String(params).replace(/%2F/g, '/').replace(/%40/g, '@')
+
+if (!seed) {
+  params.set('seed', Math.abs(~~(Math.random()*0xffffffff)))
+  location = `${location.origin}${location.pathname}?${search()}${location.hash}`
+}
+
+start({ urls: ai.split(' '), seed }).then(console.log, console.error)
+
+</script>
+</body>
+</html>
