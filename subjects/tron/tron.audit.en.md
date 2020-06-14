@@ -32,9 +32,9 @@
 
 ##### Modify the link so that the users are the audited `GITHUB_LOGIN`
 
-##### and `/licence-to-kill.js`. Try three times, changing the seed each time. The best of three, wins
+##### and `/license-to-kill.js`. Try three times, changing the seed each time. The best of three, wins
 
-###### +Did the audited AI won against `licence-to-kill` AI?
+###### +Did the audited AI won against `license-to-kill` AI?
 
 ##### If you have an AI
 
