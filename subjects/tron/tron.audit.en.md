@@ -1,6 +1,6 @@
 #### Functional
 
-###### Does the AI crash because of too much usage of CPU?
+###### Does the AI not crash because of too much usage of CPU?
 
 ##### Modify the link so that the users are the audited `GITHUB_LOGIN`
 
@@ -42,4 +42,4 @@
 
 ##### and **your AI**. Try three times, changing the seed each time. The best of three, wins
 
-###### Did the audited AI won against your AI?
+###### +Did the audited AI won against your AI?
