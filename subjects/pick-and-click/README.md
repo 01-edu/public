@@ -17,6 +17,14 @@ Write the function `pick` which creates a `hsl` color picker varying the `hue` a
 - [Copy event](https://developer.mozilla.org/en-US/docs/Web/API/Element/copy_event)
 - [Mouse move event](https://developer.mozilla.org/en-US/docs/Web/API/Element/mousemove_event)
 - [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/svg): [`createElementNS`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElementNS), [`setAttribute`](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)
+- Take a look at the [HSL section](https://developer.mozilla.org/en-US/docs/Web/HTML/Applying_color)
+
+### Provided files
+
+- Use the HTML file [index.html](/public/subjects/pick-and-click/index.html), which includes:
+
+  - the JS script which will allow to run your code
+  - some CSS pre-styled classes: feel free to use those as they are, or modify them
 
 ### Expected result
 

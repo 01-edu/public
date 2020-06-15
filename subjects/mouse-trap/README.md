@@ -17,6 +17,13 @@ Develop a trap to capture the elements when the mouse is getting too close to th
 - [Mouse event](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/MouseEvent): [`click`](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event), [`mousemove`](https://developer.mozilla.org/en-US/docs/Web/API/Element/mousemove_event) / [`clientX`](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/clientX), [`clientY`](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/clientY)
 - [`getBoundingClientRect()`](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect)
 
+### Provided files
+
+- Use the HTML file [index.html](/public/subjects/mouse-trap/index.html), which includes:
+
+  - the JS script which will allow to run your code
+  - some CSS pre-styled classes: feel free to use those as they are, or modify them
+
 ### Expected result
 
 You can see an example of the expected result [here](https://youtu.be/qF843P-V2Yw)

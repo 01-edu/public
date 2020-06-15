@@ -6,7 +6,7 @@ You've been asked to freshen a webpage atmosphere by displaying shades of cold c
 
 Check the `colors` array provided in the data file below.
 
-- Create a `<style>` tag in the `<head>` tag and generate, for each color of `colors`, a class setting the `background` attribute and taking the color as value, like following:
+- Write the `generateClasses` function which creates a `<style>` tag in the `<head>` tag and generates, for each color of `colors`, a class setting the `background` attribute and taking the color as value, like following:
 
 ```css
 .indianred {
@@ -14,7 +14,7 @@ Check the `colors` array provided in the data file below.
 }
 ```
 
-- Create a `<div>` for each color of the `colors` array whose name contains `aqua`, `blue`, `turquoise`, `green`, `cyan`, `navy` or `purple`.\
+- Write the `generateColdShades` function which creates a `<div>` for each color of the `colors` array whose name contains `aqua`, `blue`, `turquoise`, `green`, `cyan`, `navy` or `purple`.\
   Each `<div>` must have the corresponding generated class and display the name of the color, like following:
 
 ```html
@@ -32,7 +32,12 @@ Check the `colors` array provided in the data file below.
 
 ### Provided files
 
-- Import the `colors` from the data file: [data.js](./data.js)
+- Use the HTML file [index.html](/public/subjects/fifty-shades-of-cold/index.html), which includes:
+
+  - the JS script running some code, and which will also allow to run yours
+  - some CSS pre-styled classes: feel free to use those as they are, or modify them
+
+- Import `colors` from the data file [data.js](/public/subjects/fifty-shades-of-cold/data.js)
 
 ### Expected result
 

@@ -41,6 +41,3 @@ export const choseShade = (shade) => {
     }
   })
 }
-
-generateClasses()
-generateColdShades()
