@@ -17,6 +17,8 @@ On top of the webpage, each of the four buttons fires a function which has to re
 
 - Write the body of the `getBonannoPisano` function, which targets the architect you're looking for, whose `id` is `BonannoPisano`.
 
+> From now on, don't forget to [**export**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export) all the expected functions, so that they can be imported to be tested
+
 ### Notions
 
 - [`getElementsByTagName()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName)
@@ -26,5 +28,8 @@ On top of the webpage, each of the four buttons fires a function which has to re
 
 ### Provided files
 
-- Use this CSS file: [style.css](./style.css)
-- You can take a look at the data: [data.js](./data.js)
+- Use the HTML file [index.html](/public/subjects/get-them-all/index.html), which includes:
+
+  - the JS script running some code, and which will also allow to run yours
+  - some data used to generate content
+  - some CSS pre-styled classes: feel free to use those as they are, or modify them

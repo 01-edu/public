@@ -2,7 +2,7 @@ import { places } from './data.js'
 
 const body = document.querySelector('body')
 
-export const scroll = () => {
+export const explore = () => {
   createSections()
 
   const location = document.createElement('div')

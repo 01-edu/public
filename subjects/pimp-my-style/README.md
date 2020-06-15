@@ -41,8 +41,12 @@ Click 6 --> <div class="button"></div>
 
 ### Provided files
 
-- Use this CSS file: [https://mariemalarme.github.io/dom-js/assets/style/pimp-my-style.css](https://mariemalarme.github.io/dom-js/assets/style/pimp-my-style.css)
-- Import the `styles` from the data file: [https://mariemalarme.github.io/dom-js/assets/data/pimp-my-style.js](https://mariemalarme.github.io/dom-js/assets/data/pimp-my-style.js)
+- Use the HTML file [index.html](/public/subjects/pimp-my-style/index.html), which includes:
+
+  - the JS script running some code, and which will also allow to run yours
+  - some CSS pre-styled classes: feel free to use those as they are, or modify them
+
+- Import `styles` from the data file [data.js](/public/subjects/pimp-my-style/data.js)
 
 ### Expected result
 

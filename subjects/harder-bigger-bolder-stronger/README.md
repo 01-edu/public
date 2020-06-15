@@ -6,10 +6,17 @@ Being stuck at home, bored, desperate and coming up with a lot of weird ideas, a
 
 Generate a board where each new letter is harder, bigger, bolder and stronger!
 
-Create the function `generateLetters` which creates 100 `div`, each containing a letter randomly picked through the alphabet, and whose style properties have to be increased:
+Write the function `generateLetters` which creates 100 `div`, each containing a letter randomly picked through the alphabet, and whose style properties have to be increased:
 
 - `font-size` has to grow from `20` to at least `100` pixels
 - `font-weigth` has to be `300` for the first third of the letters, `400` for the second third, and `600` for the last third
+
+### Provided files
+
+- Use the HTML file [index.html](/public/subjects/harder-bigger-bolder-stronger/index.html), which includes:
+
+  - the JS script running some code, and which will also allow to run yours
+  - some CSS pre-styled classes: feel free to use those as they are, or modify them
 
 ### Notions
 

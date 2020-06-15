@@ -4,16 +4,23 @@
 
 Like an inspired Beethoven who's going to write his Moonlight Sonata, you're about to compose a colourful symphony of letters with your keyboard.
 
-Export the function `compose`:
+Write the function `compose`:
 
 - Make it fire every time a key is pressed
-- Create a new `note`, which has a background color generated using its `keyCode`, and displays the corresponding letter pressed
+- Create a new `note`, which has a background color generated using its `key`, and displays the corresponding letter pressed
 - If the pressed key is the `Delete` one, delete the last note
 - If the pressed key is the `Escape` one, clear all the notes
 
 ### Notions
 
 - [Keyboard event](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent): [`keydown`](https://developer.mozilla.org/en-US/docs/Web/API/Document/keydown_event), [`key`](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key)
+
+### Provided files
+
+- Use the HTML file [index.html](/public/subjects/keycodes-symphony/index.html), which includes:
+
+  - the JS script which will allow to run your code
+  - some CSS pre-styled classes: feel free to use those as they are, or modify them
 
 ### Expected result
 
