@@ -18,14 +18,15 @@ import (
 
 type strBoolMap map[string]bool
 
-func (a *strBoolMap) String() string {
-	var res string
+// Implementation of the flag.Value interface
+func (a *strBoolMap) String() (res string) {
 	for k, _ := range *a {
 		res += k
 	}
 	return res
 }
 
+// Implementation of the flag.Value interface
 func (a *strBoolMap) Set(str string) error {
 	if *a == nil {
 		*a = make(map[string]bool)
@@ -37,12 +38,13 @@ func (a *strBoolMap) Set(str string) error {
 	return nil
 }
 
-// flag that groups a boolean value and a regular expression
+// Flag that groups a boolean value and a regular expression
 type regexpFlag struct {
 	active bool
 	reg    *regexp.Regexp
 }
 
+// Implementation of the flag.Value interface
 func (r *regexpFlag) String() string {
 	if r.reg != nil {
 		return r.reg.String()
@@ -50,10 +52,10 @@ func (r *regexpFlag) String() string {
 	return ""
 }
 
+// Implementation of the flag.Value interface
 func (r *regexpFlag) Set(s string) error {
-	re := regexp.MustCompile(s)
 	r.active = true
-	r.reg = re
+	r.reg = regexp.MustCompile(s)
 	return nil
 }
 
@@ -101,7 +103,7 @@ func main() {
 	filename := goFile(flag.Args())
 
 	if filename == "" {
-		fmt.Println("\tNo file to analyse")
+		fmt.Println("\tNo file to analyze")
 		os.Exit(1)
 	}
 
@@ -123,7 +125,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	info := analyseProgram(filename, currentPath, load)
+	info := analyzeProgram(filename, currentPath, load)
 
 	if info.illegals != nil {
 		fmt.Println("Cheating:")
@@ -143,42 +145,42 @@ func goFile(args []string) string {
 
 // Returns the smallest block containing the position pos. It can
 // return nil if `pos` is not inside any ast.BlockStmt
-func smallestBlock(pos token.Pos, blocks []*ast.BlockStmt) *ast.BlockStmt {
-	var minBlk *ast.BlockStmt
+func smallestBlock(pos token.Pos, blocks []*ast.BlockStmt) (minBlock *ast.BlockStmt) {
 	var minSize token.Pos
 	for _, v := range blocks {
 		if pos > v.Pos() && pos < v.End() {
 			size := v.End() - v.Pos()
-			if minBlk == nil || size < minSize {
-				minBlk = v
+			if minBlock == nil || size < minSize {
+				minBlock = v
 				minSize = size
 			}
 		}
 	}
-	return minBlk
+	return minBlock
 }
 
+// Used to mark an ast.Object as a function parameter
 type data struct {
-	argument bool
+	parameter bool
 }
 
-func fillScope(funcDefs []*fDefInfo, scope *ast.Scope, scopes map[*ast.BlockStmt]*ast.Scope) {
+func fillScope(funcDefs []*function, scope *ast.Scope, scopes map[*ast.BlockStmt]*ast.Scope) {
 	for _, fun := range funcDefs {
 		scope.Insert(fun.obj)
-		for _, name := range fun.paramsFunc {
+		for _, name := range fun.params {
 			obj := ast.NewObj(ast.Fun, name)
-
-			data := data{
-				argument: true,
+			obj.Data = data{
+				parameter: true,
 			}
-			obj.Data = data
 			scopes[fun.body].Insert(obj)
 		}
 	}
 }
 
 // Create the scopes for a BlockStmt contained inside another BlockStmt
-func createChildScope(block *ast.BlockStmt, l *loadVisitor, scopes map[*ast.BlockStmt]*ast.Scope) {
+func createChildScope(
+	block *ast.BlockStmt,
+	l *loadVisitor, scopes map[*ast.BlockStmt]*ast.Scope) {
 	blocks := l.blocks
 	// The smalles block containing the beggining of the block
 	parentBlock := smallestBlock(block.Pos(), blocks)
@@ -188,7 +190,7 @@ func createChildScope(block *ast.BlockStmt, l *loadVisitor, scopes map[*ast.Bloc
 	scopes[block] = ast.NewScope(scopes[parentBlock])
 }
 
-// Returns true `block` is contained inside another block
+// Returns true if `block` is contained inside another ast.BlockStmt
 func isContained(block *ast.BlockStmt, blocks []*ast.BlockStmt) bool {
 	for _, v := range blocks {
 		if block == v {
@@ -203,30 +205,29 @@ func isContained(block *ast.BlockStmt, blocks []*ast.BlockStmt) bool {
 
 // Creates all the scopes in the package
 func createScopes(l *loadVisitor, pkgScope *ast.Scope) map[*ast.BlockStmt]*ast.Scope {
-	blocks := l.blocks
 	scopes := make(map[*ast.BlockStmt]*ast.Scope)
-	if blocks == nil {
+	if l.blocks == nil {
 		return nil
 	}
-	for _, b := range blocks {
-		if !isContained(b, blocks) {
+	for _, b := range l.blocks {
+		if !isContained(b, l.blocks) {
 			scopes[b] = ast.NewScope(pkgScope)
-			continue
 		}
 	}
-	for _, b := range blocks {
-		if scopes[b] != nil {
-			continue
+	for _, b := range l.blocks {
+		if scopes[b] == nil {
+			createChildScope(b, l, scopes)
 		}
-		createChildScope(b, l, scopes)
 	}
 	return scopes
 }
 
 type blockVisitor struct {
-	fdef []*fDefInfo // All functions defined in the scope in any
+	funct []*function
+	// All functions defined in the scope in any
 	// way: as a funcDecl, GenDecl or AssigmentStmt
-	oneBlock bool // Indicates if the visitor already encounter a
+	oneBlock bool
+	// Indicates if the visitor already encounter a
 	// blockStmt
 }
 
@@ -238,11 +239,11 @@ func (b *blockVisitor) Visit(n ast.Node) ast.Visitor {
 		}
 		return b
 	case *ast.FuncDecl, *ast.GenDecl, *ast.AssignStmt:
-		def := funcInfo(t)
+		def := extractFunction(t)
 		if def == nil || def.obj == nil {
 			return b
 		}
-		b.fdef = append(b.fdef, def)
+		b.funct = append(b.funct, def)
 		return nil
 	default:
 		return b
@@ -252,21 +253,25 @@ func (b *blockVisitor) Visit(n ast.Node) ast.Visitor {
 type loadedSource map[string]*loadVisitor
 
 // Returns information about the function defined in the block node
-func defs(block ast.Node) []*fDefInfo {
+func functionsInfo(block ast.Node) []*function {
 	b := &blockVisitor{}
 	ast.Walk(b, block)
-	return b.fdef
+	return b.funct
+}
+
+func (l *loadVisitor) init() {
+	l.functions = make(map[string]ast.Node)
+	l.absImports = make(map[string]*element)
+	l.relImports = make(map[string]*element)
+	l.objFunc = make(map[*ast.Object]ast.Node)
+	l.fset = token.NewFileSet()
+	l.scopes = make(map[*ast.BlockStmt]*ast.Scope)
+
 }
 
 func loadProgram(path string, load loadedSource) error {
-	l := &loadVisitor{
-		functions:  make(map[string]ast.Node),
-		absImports: make(map[string]*element),
-		relImports: make(map[string]*element),
-		objFunc:    make(map[*ast.Object]ast.Node),
-		fset:       token.NewFileSet(),
-		scopes:     make(map[*ast.BlockStmt]*ast.Scope),
-	}
+	l := &loadVisitor{}
+	l.init()
 
 	pkgs, err := parser.ParseDir(l.fset, path, nil, parser.AllErrors)
 
@@ -277,30 +282,30 @@ func loadProgram(path string, load loadedSource) error {
 	for _, pkg := range pkgs {
 		ast.Walk(l, pkg)
 		l.pkgScope = ast.NewScope(nil)
-		def := defs(pkg)
-		for _, v := range def {
-			l.pkgScope.Insert(v.obj)
+		functions := functionsInfo(pkg)
+		for _, f := range functions {
+			l.pkgScope.Insert(f.obj)
 		}
 		l.scopes = createScopes(l, l.pkgScope)
-		fillScope(def, l.pkgScope, l.scopes)
+		fillScope(functions, l.pkgScope, l.scopes)
 		for block, scope := range l.scopes {
-			defs := defs(block)
-			fillScope(defs, scope, l.scopes)
+			functions := functionsInfo(block)
+			fillScope(functions, scope, l.scopes)
 		}
 		load[path] = l
 		l.files = pkg.Files
 	}
 
-	for _, v := range l.relImports {
-		if load[v.name] == nil {
-			newPath := filepath.Clean(path + "/" + v.name)
+	for _, relativePath := range l.relImports {
+		if load[relativePath.name] == nil {
+			newPath := filepath.Clean(path + "/" + relativePath.name)
 			err = loadProgram(newPath, load)
 			if err != nil {
 				return err
 			}
 		}
 	}
-	return err
+	return nil
 }
 
 func smallestScopeContaining(pos token.Pos, path string, load loadedSource) *ast.Scope {
@@ -326,14 +331,14 @@ func lookupDefinitionObj(el *element, path string, load loadedSource) *ast.Objec
 }
 
 type visitor struct {
-	fset       *token.FileSet
-	uses       []*element
-	selections map[string][]*element
-	arrays     []*occurrence
-	lits       []*occurrence
-	fors       []*occurrence
-	callRep    map[string]int
-	oneTime    bool
+	fset           *token.FileSet
+	uses           []*element
+	selections     map[string][]*element
+	arrays         []*occurrence
+	lits           []*occurrence
+	fors           []*occurrence
+	callRepetition map[string]int
+	oneTime        bool
 }
 
 func (v *visitor) getPos(n ast.Node) string {
@@ -343,9 +348,9 @@ func (v *visitor) getPos(n ast.Node) string {
 func (v *visitor) Visit(n ast.Node) ast.Visitor {
 	switch t := n.(type) {
 	case *ast.FuncDecl, *ast.GenDecl, *ast.AssignStmt:
-		//Avoids analysing a declaration inside a declaration
+		//Avoids analyzing a declaration inside a declaration
 		//Since this is handle by the functions `isAllowed`
-		fdef := funcInfo(t)
+		fdef := extractFunction(t)
 		if fdef == nil || fdef.obj == nil {
 			return v
 		}
@@ -378,7 +383,7 @@ func (v *visitor) Visit(n ast.Node) ast.Visitor {
 				name: fun.Name,
 				pos:  fun.Pos(),
 			})
-			v.callRep[fun.Name]++
+			v.callRepetition[fun.Name]++
 		}
 
 	case *ast.SelectorExpr:
@@ -387,109 +392,117 @@ func (v *visitor) Visit(n ast.Node) ast.Visitor {
 				name: t.Sel.Name,
 				pos:  n.Pos(),
 			})
-			v.callRep[x.Name+"."+t.Sel.Name]++
+			v.callRepetition[x.Name+"."+t.Sel.Name]++
 		}
 	}
 	return v
 }
 
+func (v *visitor) init(fset *token.FileSet) {
+	v.selections = make(map[string][]*element)
+	v.callRepetition = make(map[string]int)
+	v.fset = fset
+}
+
+func (info *info) add(v *visitor) {
+	info.fors = append(info.fors, v.fors...)
+	info.lits = append(info.lits, v.lits...)
+	info.arrays = append(info.arrays, v.arrays...)
+	for name, v := range v.callRepetition {
+		info.callRepetition[name] += v
+	}
+}
+
 // Returns the info structure with all the ocurrences of the element
 // of the analised in the project
 func isAllowed(function *element, path string, load loadedSource, walked map[ast.Node]bool, info *info) bool {
-	if walked == nil {
-		walked = make(map[ast.Node]bool)
+	functionObj := lookupDefinitionObj(function, path, load)
+	definedLocally := functionObj != nil
+	explicitlyAllowed := allowedFun["builtin"]["*"] || allowedFun["builtin"][function.name]
+
+	isFunctionParameter := func(function *ast.Object) bool {
+		arg, ok := function.Data.(data)
+		return ok && arg.parameter
 	}
-	fdef := lookupDefinitionObj(function, path, load)
-	if fdef == nil && !allowedFun["builtin"]["*"] && !allowedFun["builtin"][function.name] {
+
+	DoesntCallMoreFunctions := func(functionDefinition ast.Node, v *visitor) bool {
+		if !walked[functionDefinition] {
+			ast.Walk(v, functionDefinition)
+			info.add(v)
+			walked[functionDefinition] = true
+		}
+
+		return v.uses == nil && v.selections == nil
+	}
+
+	appendIllegalCall := func(function *element) {
 		info.illegals = append(info.illegals, &illegal{
 			T:    "illegal-call",
 			Name: function.name,
 			Pos:  load[path].fset.Position(function.pos).String(),
 		})
+
+	}
+	if !definedLocally && !explicitlyAllowed {
+		appendIllegalCall(function)
 		return false
 	}
-	if fdef == nil {
-		return true
-	}
-	if arg, ok := fdef.Data.(data); ok && arg.argument {
-		return true
-	}
-	funcNode := load[path].objFunc[fdef]
-	v := &visitor{
-		selections: make(map[string][]*element),
-		callRep:    make(map[string]int),
-		fset:       load[path].fset,
-	}
-	if !walked[funcNode] {
-		ast.Walk(v, funcNode)
-		info.fors = append(info.fors, v.fors...)
-		info.lits = append(info.lits, v.lits...)
-		info.arrays = append(info.arrays, v.arrays...)
-		for name, v := range v.callRep {
-			info.callRep[name] += v
-		}
-		walked[funcNode] = true
-	}
 
-	if v.uses == nil && v.selections == nil {
+	functionDefinition := load[path].objFunc[functionObj]
+	v := &visitor{}
+	v.init(load[path].fset)
+
+	if explicitlyAllowed || isFunctionParameter(functionObj) ||
+		DoesntCallMoreFunctions(functionDefinition, v) {
 		return true
 	}
 
 	allowed := true
-	for _, use := range v.uses {
-		allowedUse := isAllowed(use, path, load, walked, info)
-		if !allowedUse {
-			info.illegals = append(info.illegals, &illegal{
-				T:    "illegal-call",
-				Name: use.name,
-				Pos:  load[path].fset.Position(use.pos).String(),
-			})
+	for _, functionCall := range v.uses {
+		if !isAllowed(functionCall, path, load, walked, info) {
+			appendIllegalCall(functionCall)
+			allowed = false
 		}
-		allowed = allowedUse && allowed
 	}
 
 	for pck, funcNames := range v.selections {
-		importRelPath := load[path].relImports[pck]
+		pathToFunction := func() string { return load[path].relImports[pck].name }
+		isRelativeImport := load[path].relImports[pck] != nil
 		for _, fun := range funcNames {
-			if importRelPath == nil {
-				absImp := load[path].absImports[pck]
-				if absImp != nil && !allowedFun[absImp.name][fun.name] && !allowedFun[absImp.name]["*"] {
-					// Add to the illegals array the import and selection
-					info.illegals = append(info.illegals, &illegal{
-						T:    "illegal-access",
-						Name: pck + "." + fun.name,
-						Pos:  load[path].fset.Position(fun.pos).String(),
-					})
-					allowed = false
-				}
-				continue
-			}
-
-			newPath := filepath.Clean(path + "/" + importRelPath.name)
-			newEl := newElement(fun.name)
-			allowedSel := isAllowed(newEl, newPath, load, walked, info)
-			if !allowedSel {
+			appendIllegalAccess := func() {
 				info.illegals = append(info.illegals, &illegal{
 					T:    "illegal-access",
 					Name: pck + "." + fun.name,
 					Pos:  load[path].fset.Position(fun.pos).String(),
 				})
+				allowed = false
 			}
-			allowed = allowedSel && allowed
+
+			absoluteImport := load[path].absImports[pck]
+			importExplicitlyAllowed := absoluteImport == nil ||
+				allowedFun[absoluteImport.name][fun.name] ||
+				allowedFun[absoluteImport.name]["*"]
+
+			if !isRelativeImport && !importExplicitlyAllowed {
+				appendIllegalAccess()
+			} else if isRelativeImport &&
+				!isAllowed(newElement(fun.name), filepath.Clean(path+"/"+pathToFunction()), load, walked, info) {
+				appendIllegalAccess()
+			}
 		}
 	}
+
 	if !allowed {
 		info.illegals = append(info.illegals, &illegal{
 			T:    "illegal-definition",
-			Name: fdef.Name,
-			Pos:  load[path].fset.Position(funcNode.Pos()).String(),
+			Name: functionObj.Name,
+			Pos:  load[path].fset.Position(functionDefinition.Pos()).String(),
 		})
 	}
 	return allowed
 }
 
-func removeRepetitions(slc []*illegal) []*illegal {
-	var result []*illegal
+func removeRepetitions(slc []*illegal) (result []*illegal) {
 	in := make(map[string]bool)
 	for _, v := range slc {
 		if in[v.Pos] {
@@ -507,11 +520,11 @@ type occurrence struct {
 }
 
 type info struct {
-	arrays   []*occurrence
-	lits     []*occurrence
-	fors     []*occurrence
-	callRep  map[string]int
-	illegals []*illegal // functions, selections that are not allowed
+	arrays         []*occurrence
+	lits           []*occurrence
+	fors           []*occurrence
+	callRepetition map[string]int
+	illegals       []*illegal // functions, selections that are not allowed
 }
 
 func newElement(name string) *element {
@@ -522,63 +535,30 @@ func newElement(name string) *element {
 
 }
 
-func analyseProgram(filename, path string, load loadedSource) *info {
+func analyzeProgram(filename, path string, load loadedSource) *info {
 	fset := load[path].fset
 	file := load[path].files[filename]
-	// Functions defined in the file
-	functions := defs(file)
+	functions := functionsInfo(file)
+
 	info := &info{
-		callRep: make(map[string]int),
+		callRepetition: make(map[string]int),
 	}
 
-	info.illegals = append(info.illegals, analyseImports(file, fset, noRelativeImports)...)
+	info.illegals = append(info.illegals, analyzeImports(file, fset, noRelativeImports)...)
 
 	walked := make(map[ast.Node]bool)
 
-	for _, v := range functions {
-		f := newElement(v.obj.Name)
-		isAllowed(f, path, load, walked, info)
+	for _, fun := range functions {
+		function := newElement(fun.obj.Name)
+		isAllowed(function, path, load, walked, info)
 	}
 
-	info.illegals = append(info.illegals, analyseLoops(info.fors, noFor)...)
-	info.illegals = append(info.illegals, analyseArrayTypes(info.arrays, noArrays || noSlices, noTheseSlices)...)
-	info.illegals = append(info.illegals, analyseLits(info.lits, noLit)...)
-	info.illegals = append(info.illegals, analyseRepetition(info.callRep, allowedRep)...)
+	info.illegals = append(info.illegals, analyzeLoops(info.fors, noFor)...)
+	info.illegals = append(info.illegals, analyzeArrayTypes(info.arrays, noArrays || noSlices, noTheseSlices)...)
+	info.illegals = append(info.illegals, analyzeLits(info.lits, noLit)...)
+	info.illegals = append(info.illegals, analyzeRepetition(info.callRepetition, allowedRep)...)
 	info.illegals = removeRepetitions(info.illegals)
 	return info
-}
-
-type flags struct {
-	l struct { // flag for char or string literal
-		noLit   bool   // true -> unallows
-		pattern string // this pattern
-	}
-}
-
-func fillScope(funcDefs []*function, scope *ast.Scope, scopes map[*ast.BlockStmt]*ast.Scope) {
-	for _, fun := range funcDefs {
-		scope.Insert(fun.obj)
-		for _, name := range fun.params {
-			obj := ast.NewObj(ast.Fun, name)
-			obj.Data = data{
-				parameter: true,
-			}
-			scopes[fun.body].Insert(obj)
-		}
-	}
-}
-
-// Create the scopes for a BlockStmt contained inside another BlockStmt
-func createChildScope(
-	block *ast.BlockStmt,
-	l *loadVisitor, scopes map[*ast.BlockStmt]*ast.Scope) {
-	blocks := l.blocks
-	// The smalles block containing the beggining of the block
-	parentBlock := smallestBlock(block.Pos(), blocks)
-	if scopes[parentBlock] == nil {
-		createChildScope(parentBlock, l, scopes)
-	}
-	scopes[block] = ast.NewScope(scopes[parentBlock])
 }
 
 func parseArgs(toAllow []string, builtins bool, casting bool) error {
@@ -624,7 +604,7 @@ func parseArgs(toAllow []string, builtins bool, casting bool) error {
 			funcName = spl[0]
 			n, err := strconv.Atoi(spl[1])
 			if err != nil {
-				return fmt.Errorf("After the '#' there should be a integer" +
+				return fmt.Errorf("After the '#' there should be an integer" +
 					" representing the maximum number of allowed occurrences")
 			}
 			var prefix string
@@ -657,63 +637,56 @@ func printIllegals(illegals []*illegal) {
 	tbl.Print()
 }
 
-func analyseRepetition(callRep map[string]int, allowRep map[string]int) []*illegal {
-	var illegals []*illegal
+func analyzeRepetition(callRepetition map[string]int, allowRep map[string]int) (illegals []*illegal) {
 	for name, rep := range allowedRep {
-		if callRep[name] > rep {
-			diff := callRep[name] - rep
-			il := &illegal{
+		if callRepetition[name] > rep {
+			diff := callRepetition[name] - rep
+			illegals = append(illegals, &illegal{
 				T:    "illegal-amount",
 				Name: name + " exeding max repetitions by " + strconv.Itoa(diff),
 				Pos:  "all the project",
-			}
-			illegals = append(illegals, il)
+			})
 		}
 	}
 	return illegals
 }
 
-func analyseLits(litOccu []*occurrence, noLit regexpFlag) []*illegal {
-	var illegals []*illegal
+func analyzeLits(litOccu []*occurrence, noLit regexpFlag) (illegals []*illegal) {
 	if noLit.active {
 		for _, v := range litOccu {
 			if noLit.reg.Match([]byte(v.name)) {
-				il := &illegal{
+				illegals = append(illegals, &illegal{
 					T:    "illegal-lit",
 					Name: v.name,
 					Pos:  v.pos,
-				}
-				illegals = append(illegals, il)
+				})
 			}
 		}
 	}
 	return illegals
 }
 
-func analyseArrayTypes(arrays []*occurrence, noArrays bool, noTheseSlices map[string]bool) []*illegal {
-	var illegals []*illegal
+func analyzeArrayTypes(arrays []*occurrence, noArrays bool, noTheseSlices map[string]bool) (illegals []*illegal) {
 	for _, v := range arrays {
 		if noArrays || noTheseSlices[v.name] {
-			il := &illegal{
+			illegals = append(illegals, &illegal{
 				T:    "illegal-slice",
 				Name: v.name,
 				Pos:  v.pos,
-			}
-			illegals = append(illegals, il)
+			})
 		}
 	}
 	return illegals
 }
-func analyseLoops(fors []*occurrence, noFor bool) []*illegal {
-	var illegals []*illegal
+
+func analyzeLoops(fors []*occurrence, noFor bool) (illegals []*illegal) {
 	if noFor {
 		for _, v := range fors {
-			il := &illegal{
+			illegals = append(illegals, &illegal{
 				T:    "illegal-loop",
 				Name: v.name,
 				Pos:  v.pos,
-			}
-			illegals = append(illegals, il)
+			})
 		}
 	}
 	return illegals
@@ -742,8 +715,7 @@ func (i *importVisitor) Visit(n ast.Node) ast.Visitor {
 	return i
 }
 
-func analyseImports(file ast.Node, fset *token.FileSet, noRelImp bool) []*illegal {
-	var il []*illegal
+func analyzeImports(file ast.Node, fset *token.FileSet, noRelImp bool) (illegals []*illegal) {
 	i := &importVisitor{
 		imports: make(map[string]*element),
 	}
@@ -751,14 +723,14 @@ func analyseImports(file ast.Node, fset *token.FileSet, noRelImp bool) []*illega
 	for _, path := range i.imports {
 		isRelativeImport := isRelativeImport(path.name)
 		if (noRelativeImports && isRelativeImport) || (allowedFun[path.name] == nil && !isRelativeImport) {
-			il = append(il, &illegal{
+			illegals = append(illegals, &illegal{
 				T:    "illegal-import",
 				Name: path.name,
 				Pos:  fset.Position(path.pos).String(),
 			})
 		}
 	}
-	return il
+	return illegals
 }
 
 type element struct {
@@ -773,14 +745,15 @@ type loadVisitor struct {
 	fset       *token.FileSet
 	objFunc    map[*ast.Object]ast.Node
 	blocks     []*ast.BlockStmt
-	scopes     map[*ast.BlockStmt]*ast.Scope // nil after the visit
+	scopes     map[*ast.BlockStmt]*ast.Scope
+	// nil after the visit
 	// used to keep the result of the createScope function
 	pkgScope *ast.Scope
 	files    map[string]*ast.File
 }
 
 // Returns all the parameter of a function that identify a function
-func listParamFunc(params *ast.FieldList) []string {
+func functionsInTheParameters(params *ast.FieldList) []string {
 	var funcs []string
 	for _, param := range params.List {
 		if _, ok := param.Type.(*ast.FuncType); ok {
@@ -792,50 +765,52 @@ func listParamFunc(params *ast.FieldList) []string {
 	return funcs
 }
 
-type fDefInfo struct {
-	obj        *ast.Object // the object that represents a function
-	paramsFunc []string    // the name of the parameter that represent
+type function struct {
+	obj    *ast.Object // the ast.Object that represents a function
+	params []string
+	// the name of the parameter that represent
 	// functions
 	body *ast.BlockStmt
 }
 
 // Returns information about a node representing a function declaration
-func funcInfo(n ast.Node) *fDefInfo {
-	fdef := &fDefInfo{}
+func extractFunction(n ast.Node) *function {
+	function := &function{}
 	switch t := n.(type) {
 	case *ast.FuncDecl:
-		fdef.obj = t.Name.Obj
-		fdef.paramsFunc = listParamFunc(t.Type.Params)
-		fdef.body = t.Body
-		return fdef
+		function.obj = t.Name.Obj
+		function.params = functionsInTheParameters(t.Type.Params)
+		function.body = t.Body
+		return function
 	case *ast.GenDecl:
 		for _, v := range t.Specs {
 			if val, ok := v.(*ast.ValueSpec); ok {
 				for i, value := range val.Values {
 					if funcLit, ok := value.(*ast.FuncLit); ok {
-						fdef.obj = val.Names[i].Obj
-						fdef.paramsFunc = listParamFunc(funcLit.Type.Params)
-						fdef.body = funcLit.Body
+						function.obj = val.Names[i].Obj
+						function.params = functionsInTheParameters(funcLit.Type.Params)
+						function.body = funcLit.Body
 					}
 				}
 			}
 		}
-		return fdef
+		return function
 	case *ast.AssignStmt:
 		for i, right := range t.Rhs {
 			if funcLit, ok := right.(*ast.FuncLit); ok {
 				if ident, ok := t.Lhs[i].(*ast.Ident); ok {
-					fdef.obj = ident.Obj
-					fdef.paramsFunc = listParamFunc(funcLit.Type.Params)
+					function.obj = ident.Obj
+					function.params = functionsInTheParameters(funcLit.Type.Params)
 				}
 			}
-			return fdef
+			return function
 		}
 	default:
-		return fdef
+		return function
 	}
-	return fdef
+	return function
 }
+
 func (l *loadVisitor) Visit(n ast.Node) ast.Visitor {
 	switch t := n.(type) {
 	case *ast.ImportSpec:
@@ -853,11 +828,11 @@ func (l *loadVisitor) Visit(n ast.Node) ast.Visitor {
 
 		if isRelativeImport(path) {
 			l.relImports[name] = el
-			break
+		} else {
+			l.absImports[name] = el
 		}
-		l.absImports[name] = el
 	case *ast.FuncDecl, *ast.GenDecl, *ast.AssignStmt:
-		fdef := funcInfo(t)
+		fdef := extractFunction(t)
 		if fdef == nil || fdef.obj == nil {
 			return l
 		}
