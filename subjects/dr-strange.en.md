@@ -1,4 +1,4 @@
-## Doctor Strange
+## Dr Strange
 
 ### Instructions
 
