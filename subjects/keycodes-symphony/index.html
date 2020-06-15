@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Keycodes symphony</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link id="fav" rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;,">
+  <style>
+
+:root {
+  --background: hsl(0, 0%, 12%);
+  --text: hsl(0, 0%, 80%);
+  --clear: hsl(0, 0%, 65%);
+  --disabled: hsl(0, 0%, 35%);
+  --purple: #bb73e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  letter-spacing: 1.5px;
+  background: var(--background);
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+}
+
+.note {
+  width: 100%;
+  flex: 1 1 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  font-size: 40px;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+  </style>
+</head>
+<body>
+  <script type="module">
+
+import { compose } from './keycodes-symphony.js'
+
+compose()
+
+  </script>
+</body>
+</html>
