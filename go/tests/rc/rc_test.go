@@ -115,7 +115,7 @@ func TestFlags(t *testing.T) {
 	illegal-definition	Length          	tests/testingWrapping.go:7:1
 `,
 		`tests/testingWrapping.go len`: ``,
-		`tests/empty/empty len`: `	No file to analyse
+		`tests/empty/empty len`: `	No file to analyze
 `,
 		`tests/empty/empty.go tests/empty/empty`: `	tests/empty/empty.go:1:1: expected ';', found 'EOF' (and 2 more errors)
 `,
