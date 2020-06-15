@@ -4,8 +4,9 @@
 
 You have been given the mission to create a new sense of time.
 Instead of a normal week having only 7 days, you will have 14 days.
-Your mission is to create an `addWeek` function that can make this happen.
+Your mission is to create an `addWeek` function with one parameter of `Date` type.
 So now, a week is 14 days from `Monday` to `Sunday` then `secondMonday` to `secondSunday`.
+Week number should be count from `0001-01-01`
 
 Now imagine you have a doctor appointment and you have to wait some hours.
 But you do not want to wait, so what you need to do is create a
