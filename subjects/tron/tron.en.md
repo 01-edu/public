@@ -10,7 +10,7 @@ You will need to create a public repository with the name `tron`. Next you need 
 
 ### Controls
 
-- `arrows` or `scroll` to move step by stem
+- `arrows` or `scroll` to move step by step
 - `shift` will make it fast
 - you can click anywhere on the progress bar to seek into the history
 
