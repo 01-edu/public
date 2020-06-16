@@ -16,6 +16,7 @@ t(({ eq, ctx }) =>
   ]),
 )
 
+//check that the code did use map properly
 t(({ eq, ctx }) => eq(ctx.mapCalls[0], ctx.states))
 
 // upperCasingStates
@@ -33,6 +34,7 @@ t(({ eq, ctx }) =>
   ]),
 )
 
+//check that the code did use map properly
 t(({ eq, ctx }) => eq(ctx.mapCalls.includes(ctx.cities), true))
 
 // fahrenheitToCelsius
@@ -48,6 +50,7 @@ t(({ eq, ctx }) =>
   ]),
 )
 
+//check that the code did use map properly
 t(({ eq, ctx }) => eq(ctx.mapCalls.includes(ctx.temps), true))
 
 // trimTemp
@@ -95,6 +98,7 @@ t(({ eq, ctx }) =>
   ]),
 )
 
+//check that the code did use map properly
 t(({ eq, ctx }) => eq(ctx.mapCalls.includes(ctx.states), true))
 
 // tempForecasts
