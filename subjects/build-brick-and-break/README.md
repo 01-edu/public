@@ -6,7 +6,7 @@ Today, your mission is to build a 3-column brick tower, maintain it and finally 
 
 - Create a function `build` which will create and display the given amount of bricks passed as argument:
 
-  - each brick has to be created and added to the page at a regular interval of time (at least 50ms),
+  - each brick has to be created as a `div` and added to the page at a regular interval of 100ms,
   - each brick will receive a unique `id` property, like following:
 
   ```html

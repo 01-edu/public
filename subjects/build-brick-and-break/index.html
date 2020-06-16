@@ -4,7 +4,6 @@
   <title>Build brick and break</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link id="fav" rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;,">
-  <link rel="stylesheet" type="text/css" href="./style.css">
   <style type="text/css">
 :root {
   --background: hsl(0, 0%, 12%);
@@ -71,7 +70,7 @@ body {
 </head>
 <body>
   <script type="module">
-import { build, repair, destroy } from './build-bricks-and-break.js'
+import { build, repair, destroy } from './build-brick-and-break.js'
 
 build()
 
@@ -82,12 +81,14 @@ tools.id = 'tools'
 body.append(tools)
 
 const dynamite = document.createElement('div')
+dynamite.id = 'dynamite'
 dynamite.textContent = '🧨'
 dynamite.addEventListener('click', destroy)
 
 const hammer = document.createElement('div')
+hammer.id = 'hammer'
 hammer.textContent = '🔨'
-hammer.addEventListener('click', () => repair('brick-26', ...reparations))
+hammer.addEventListener('click', () => repair(...reparations))
 
 tools.append(dynamite, hammer)
 
@@ -97,7 +98,10 @@ const random = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
-const reparations = [...Array(15).keys()].map((e) => `brick-${random(0, 54)}`)
+const randomBricks = [...Array(15).keys()].map((e) => `brick-${random(1, 54)}`)
+const reparations = [...new Set(['brick-26', ...randomBricks])]
+
+body.dataset.reparations = reparations
 
   </script>
 </body>
