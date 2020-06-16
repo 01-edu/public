@@ -20,6 +20,11 @@ sumOrMul([1, 2, 3, 4], 5)
   // -> 60
 ````
 
+#### Special instruction
+
+The goal of this exercise is to learn to use `reduce`, as such all your
+solution **MUST** use `reduce`
+
 
 ### Notions
 
