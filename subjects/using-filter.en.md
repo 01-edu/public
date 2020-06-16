@@ -34,12 +34,12 @@ objects and that returns only the ones which:
 - the key `region` is not `'South'`
 
 Example of an array of objects matching the criterias:
-
+```
 [
   { tag: 'CA', name: 'California', capital: 'Sacramento', region: 'West' },
   { tag: 'PA', name: 'Pennsylvania', capital: 'Harrisburg', region: 'Northeast' }
 ]
-
+```
 
 ### Notions
 
