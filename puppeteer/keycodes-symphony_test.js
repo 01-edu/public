@@ -5,10 +5,6 @@ export const setup = async ({ page }) => ({
     await page.$$eval('.note', (nodes) => {
       return nodes.map((note) => note.textContent)
     }),
-  getNotesBg: async () =>
-    await page.$$eval('.note', (nodes) => {
-      return nodes.map((note) => note.style.background)
-    }),
 })
 
 const characters = `did you handle the keydown event correctly ?`
@@ -40,7 +36,7 @@ tests.push(async ({ page, eq, getNotes }) => {
   eq(await cleared, true)
 })
 
-tests.push(async ({ page, eq, getNotesBg }) => {
+tests.push(async ({ page, eq }) => {
   // check that notes have different background colors
   const test = 'abcdefghijklmnopqrstuvwxyz'
   let step = 0
@@ -48,7 +44,12 @@ tests.push(async ({ page, eq, getNotesBg }) => {
     await page.keyboard.down(test[step])
     step++
   }
-  const colors = [...new Set(await getNotesBg())]
+
+  const getNotesBg = await page.$$eval('.note', (nodes) => {
+    return nodes.map((note) => note.style.background)
+  })
+
+  const colors = [...new Set(getNotesBg)]
   const allDifferent = colors.length === test.length
   eq(allDifferent, true)
 })
