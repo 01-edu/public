@@ -4,13 +4,12 @@ import path from 'path'
 import { deepStrictEqual } from 'assert'
 import puppeteer from 'puppeteer-core'
 
-const exercise = 'pimp-my-style'
+const exercise = process.argv[2]
+if (!exercise) throw Error(`usage: node test EXERCISE_NAME`)
 const PORT = 9898
 const config = {
   headless: false,
-  executablePath:
-    '/usr/bin/google-chrome',
-//    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+  executablePath: process.env.CHROME_PATH || '/usr/bin/google-chrome',
 }
 
 const mediaTypes = {
@@ -38,25 +37,29 @@ const server = http.createServer(({ url, method }, response) => {
       response.end('oopsie')
     })
 }).listen(PORT, async (err) => {
-  err && (console.error(err.stack) || process.exit(1))
-  const { setup, tests } = await import(`./${exercise}_test.js`)
-  const browser = await puppeteer.launch(config)
-  const [page] = await browser.pages()
-  await page.goto(`http://localhost:${PORT}/${exercise}/index.html`)
-  const context = await setup({ page })
-  let code = 0
-  for (const [n, test] of tests.entries()) {
-    try {
-      await test({ page, eq: deepStrictEqual, ...context })
-    } catch (err) {
-      code = 1
-      console.log(`test #${n} failed:`)
-      console.log(test.toString())
-      console.log(err.stack)
+  let browser, code = 0
+  try {
+    err && (console.error(err.stack) || process.exit(1))
+    const { setup, tests } = await import(`./${exercise}_test.js`)
+    browser = await puppeteer.launch(config)
+    const [page] = await browser.pages()
+    await page.goto(`http://localhost:${PORT}/${exercise}/index.html`)
+    const context = await setup({ page })
+    for (const [n, test] of tests.entries()) {
+      try {
+        await test({ page, eq: deepStrictEqual, ...context })
+      } catch (err) {
+        console.log(`test #${n} failed:`)
+        console.log(test.toString())
+        throw err
+      }
     }
+  } catch (err) {
+    code = 1
+    console.log(err.stack)
+  } finally {
+    await (browser && browser.close())
+    server.close()
+    process.exit(code)
   }
-  server.close()
-  await browser.close()
-  process.exit(code)
 })
-
