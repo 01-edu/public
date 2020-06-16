@@ -1,69 +1,22 @@
 export const tests = []
 
-export const setup = async ({ page }) => {
-  const body = await page.$('body')
-  const hammer = await page.$('#hammer')
-  const dynamite = await page.$('#dynamite')
-
-  return {
-    body,
-    hammer,
-    dynamite,
-    getDivsLength: async () =>
-      await page.$$eval('div', (nodes) => nodes.length),
-    getBricksIds: async () =>
-      await page.$$eval('div', (nodes) =>
-        nodes.filter((node) => node.id.includes('brick')).map((n) => n.id),
-      ),
-    getMiddleBricksIds: async () =>
-      await page.$$eval('div', (nodes) =>
-        nodes
-          .filter(
-            (node) => node.id.includes('brick') && node.dataset.foundation,
-          )
-          .map((n) => n.id),
-      ),
-    getExpectedRepairedIds: async () =>
-      await page.$eval('body', (body) => {
-        const getIdInt = (str) => str.replace('brick-', '')
-        return body.dataset.reparations
-          .split(',')
-          .sort((a, b) => getIdInt(b) - getIdInt(a))
-          .map((id) => {
-            const isMiddleBrick = getIdInt(id) % 3 === 2
-            const status = isMiddleBrick ? 'in progress' : 'repaired'
-            return `${id}_${status}`
-          })
-      }),
-    getRepairedIds: async () =>
-      await page.$$eval('div', (nodes) => {
-        const getIdInt = (str) => str.replace('brick-', '')
-        return nodes
-          .filter(
-            (node) =>
-              node.dataset.repaired === 'true' ||
-              node.dataset.repaired === 'in progress',
-          )
-          .sort((a, b) => getIdInt(b.id) - getIdInt(a.id))
-          .map(({ id }) => {
-            const isMiddleBrick = getIdInt(id) % 3 === 2
-            const status = isMiddleBrick ? 'in progress' : 'repaired'
-            return `${id}_${status}`
-          })
-      }),
-  }
-}
+export const setup = async ({ page }) => ({
+  getBricksIds: async () =>
+    await page.$$eval('div', (nodes) =>
+      nodes.filter((node) => node.id.includes('brick')).map((n) => n.id),
+    ),
+})
 
 const between = (expected, min, max) => expected >= min && expected <= max
 
-tests.push(async ({ page, eq, getDivsLength }) => {
+tests.push(async ({ page, eq }) => {
   // check that the brick divs are built at a regular interval of 100ms
   // the average of the divs built every 100ms must be close to 10
   let repeat = 0
   let buildSteps = []
 
   while (repeat < 3) {
-    const divs = await getDivsLength()
+    const divs = await page.$$eval('div', (nodes) => nodes.length)
     buildSteps.push(divs)
     await page.waitFor(1000)
     repeat++
@@ -92,29 +45,59 @@ tests.push(async ({ page, eq, getBricksIds }) => {
   eq(bricksIds, allBricksIds)
 })
 
-tests.push(async ({ eq, getMiddleBricksIds }) => {
+tests.push(async ({ page, eq }) => {
   // check that the middle column bricks have the `foundation` attribute to `true`
   const expectedIds = allBricksIds.filter(
     (b) => b.replace('brick-', '') % 3 === 2,
   )
-  const middleBricksIds = await getMiddleBricksIds()
+  const middleBricksIds = await page.$$eval('div', (nodes) =>
+    nodes
+      .filter((node) => node.id.includes('brick') && node.dataset.foundation)
+      .map((n) => n.id),
+  )
   eq(middleBricksIds, expectedIds)
 })
 
-tests.push(async ({ eq, hammer, getExpectedRepairedIds, getRepairedIds }) => {
+tests.push(async ({ page, eq }) => {
   // check that the bricks to repair have the right repaired attribute
+  const hammer = await page.$('#hammer')
   await hammer.click()
-  eq(await getRepairedIds(), await getExpectedRepairedIds())
+
+  const expectedRepairedIds = await page.$eval('body', (body) => {
+    const getIdInt = (str) => str.replace('brick-', '')
+    return body.dataset.reparations
+      .split(',')
+      .sort((a, b) => getIdInt(b) - getIdInt(a))
+      .map((id) => {
+        const isMiddleBrick = getIdInt(id) % 3 === 2
+        const status = isMiddleBrick ? 'in progress' : 'repaired'
+        return `${id}_${status}`
+      })
+  })
+
+  const repairedIds = await page.$$eval('div', (nodes) => {
+    const getIdInt = (str) => str.replace('brick-', '')
+    return nodes
+      .filter(
+        (node) =>
+          node.dataset.repaired === 'true' ||
+          node.dataset.repaired === 'in progress',
+      )
+      .sort((a, b) => getIdInt(b.id) - getIdInt(a.id))
+      .map(({ id }) => {
+        const isMiddleBrick = getIdInt(id) % 3 === 2
+        const status = isMiddleBrick ? 'in progress' : 'repaired'
+        return `${id}_${status}`
+      })
+  })
+
+  eq(repairedIds, expectedRepairedIds)
 })
 
-tests.push(async ({ eq, hammer, getExpectedRepairedIds, getRepairedIds }) => {
-  // check that the bricks to repair have the right repaired attribute
-  await hammer.click()
-  eq(await getRepairedIds(), await getExpectedRepairedIds())
-})
-
-tests.push(async ({ eq, dynamite, getBricksIds }) => {
+tests.push(async ({ page, eq, getBricksIds }) => {
   // check that the last brick is removed on each dynamite click
+  const dynamite = await page.$('#dynamite')
+
   for (const i of allBricksIds.keys()) {
     await dynamite.click()
     const { length } = allBricksIds
