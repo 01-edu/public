@@ -72,6 +72,12 @@ tempForecasts([
 ]) // -> ['38°Celsius in Pasadena, California']
 ```
 
+#### Special instruction
+
+The goal of this exercise is to learn to use `map`, as such all your
+solution **MUST** use `map`
+
+
 ### Notions
 
 - [devdocs.io/javascript/global_objects/array/map](https://devdocs.io/javascript/global_objects/array/map)
