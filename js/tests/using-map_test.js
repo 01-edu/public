@@ -35,9 +35,9 @@ t(({ eq, ctx }) =>
 
 t(({ eq, ctx }) => eq(ctx.mapCalls.includes(ctx.cities), true))
 
-// farenheitToCelsius
+// fahrenheitToCelsius
 t(({ eq, ctx }) =>
-  eq(farenheitToCelsius(ctx.temps), [
+  eq(fahrenheitToCelsius(ctx.temps), [
     '30°C',
     '37°C',
     '5°C',
