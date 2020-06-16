@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "test": "node --harmony-top-level-await pimp-my-style/test.js"
+    "test": "node ./test.js"
   },
   "dependencies": {
     "puppeteer-core": "^3.3.0"

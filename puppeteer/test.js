@@ -24,7 +24,9 @@ const mediaTypes = {
 
 const server = http.createServer(({ url, method }, response) => {
   console.log(method + ' ' + url)
-  const filepath = path.join('.', url)
+  const filepath = url.endsWith(`${exercise}/${exercise}.js`)
+    ? path.join('.', url.slice(exercise.length + 1))
+    : path.join('./subjects', url)
   const ext = path.extname(filepath)
   response.setHeader('Content-Type', mediaTypes[ext.slice(1)] || 'text/plain')
 
@@ -37,7 +39,7 @@ const server = http.createServer(({ url, method }, response) => {
     })
 }).listen(PORT, async (err) => {
   err && (console.error(err.stack) || process.exit(1))
-  const { setup, tests } = await import(`./${exercise}/test.js`)
+  const { setup, tests } = await import(`./${exercise}_test.js`)
   const browser = await puppeteer.launch(config)
   const [page] = await browser.pages()
   await page.goto(`http://localhost:${PORT}/${exercise}/index.html`)
