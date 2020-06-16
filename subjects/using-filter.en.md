@@ -2,7 +2,6 @@
 
 ### Instructions
 
-
 - Create a function `filterShortStateName` that takes an array of
 strings and that returns the ones with less than 7 characters.
 
@@ -33,12 +32,18 @@ objects and that returns only the ones which:
 - the key `tag` has at least one vowel.
 - the key `region` is not `'South'`
 
-Example of an array of objects matching the criterias:
-
+> Example of an array of objects matching the criterias:
+```js
 [
   { tag: 'CA', name: 'California', capital: 'Sacramento', region: 'West' },
   { tag: 'PA', name: 'Pennsylvania', capital: 'Harrisburg', region: 'Northeast' }
 ]
+```
+
+#### Special instruction
+
+The goal of this exercise is to learn to use `filter`, as such all your
+solution **MUST** use `filter`
 
 
 ### Notions
