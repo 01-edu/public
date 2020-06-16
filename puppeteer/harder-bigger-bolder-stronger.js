@@ -1,25 +1,14 @@
 const body = document.querySelector('body')
 
-const shapes = [...Array(100).keys()]
-
-const random = (min, max) => {
-  min = Math.ceil(min)
-  max = Math.floor(max)
-  return Math.floor(Math.random() * (max - min + 1)) + min
-}
-
-const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 export const generateLetters = () => {
-  shapes.forEach((c) => {
+  body.append(...[...Array(120).keys()].map((c) => {
     const shape = document.createElement('div')
-    const third = shapes.length / 3
-    const firstThird = c < third
-    const secondThird = c > third && c < third * 2
 
-    shape.textContent = alphabet[random(0, alphabet.length - 1)]
-    shape.style.fontSize = `${c + 10 * 2}px`
-    shape.style.fontWeight = (firstThird && 300) || (secondThird && 400) || 600
-    body.append(shape)
-  })
+    shape.textContent = alphabet[Math.floor(Math.random() * alphabet.length)]
+    shape.style.fontSize = `${c + 11}px`
+    shape.style.fontWeight = [300,400,600][Math.floor(c / 40)]
+    return shape
+  }))
 }

@@ -6,9 +6,9 @@ Being stuck at home, bored, desperate and coming up with a lot of weird ideas, a
 
 Generate a board where each new letter is harder, bigger, bolder and stronger!
 
-Write the function `generateLetters` which creates 100 `div`, each containing a letter randomly picked through the alphabet, and whose style properties have to be increased:
+Write the function `generateLetters` which creates 120 `div`, each containing a letter randomly picked through the **uppercase** alphabet, and whose style properties have to be increased:
 
-- `font-size` has to grow from `20` to at least `100` pixels
+- each letter `font-size` has to grow from `11` to `130` pixels
 - `font-weigth` has to be `300` for the first third of the letters, `400` for the second third, and `600` for the last third
 
 ### Provided files
