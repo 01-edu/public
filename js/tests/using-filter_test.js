@@ -8,8 +8,8 @@ const check = ({ filterCalls }, eq, a, b) => {
   return len ? result : false
 }
 
-//check that the code did use filter properly
 t(({ eq, ctx }) =>
+// check that the code did use filter properly
   check(ctx, eq, filterShortStateName(ctx.arr1), [
     'Alaska',
     'Hawaii',
@@ -25,8 +25,8 @@ t(({ eq, ctx }) =>
   ]),
 )
 
-//check that the code did use filter properly
 t(({ eq, ctx }) =>
+// check that the code did use filter properly
   check(ctx, eq, filterStartVowel(ctx.arr1), [
     'Alabama',
     'Alaska',
@@ -43,8 +43,8 @@ t(({ eq, ctx }) =>
   ]),
 )
 
-//check that the code did use filter properly
 t(({ eq, ctx }) =>
+// check that the code did use filter properly
   check(ctx, eq, filter5Vowels(ctx.arr1), [
     'California',
     'Louisiana',
@@ -55,8 +55,8 @@ t(({ eq, ctx }) =>
   ]),
 )
 
-//check that the code did use filter properly
 t(({ eq, ctx }) =>
+// check that the code did use filter properly
   check(ctx, eq, filter1DistinctVowel(ctx.arr1), [
     'Alabama',
     'Alaska',
@@ -69,8 +69,8 @@ t(({ eq, ctx }) =>
   ]),
 )
 
-//check that the code did use filter properly
 t(({ eq, ctx }) =>
+// check that the code did use filter properly
   check(ctx, eq, multiFilter(ctx.arr2), [
     { tag: 'CA', name: 'California', capital: 'Sacramento', region: 'West' },
     { tag: 'HI', name: 'Hawaii', capital: 'Honolulu', region: 'West' },
