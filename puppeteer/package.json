@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "test": "node ./test.js"
+    "test": "node --unhandled-rejections=strict test"
   },
   "dependencies": {
     "puppeteer-core": "^3.3.0"
