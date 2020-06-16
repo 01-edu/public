@@ -259,7 +259,7 @@ func functionsInfo(block ast.Node) []*function {
 	return b.funct
 }
 
-func (l *loadVisitor) init() {
+func (l *loadVisitor) set() {
 	l.functions = make(map[string]ast.Node)
 	l.absImports = make(map[string]*element)
 	l.relImports = make(map[string]*element)
@@ -271,7 +271,7 @@ func (l *loadVisitor) init() {
 
 func loadProgram(path string, load loadedSource) error {
 	l := &loadVisitor{}
-	l.init()
+	l.set()
 
 	pkgs, err := parser.ParseDir(l.fset, path, nil, parser.AllErrors)
 
@@ -398,7 +398,7 @@ func (v *visitor) Visit(n ast.Node) ast.Visitor {
 	return v
 }
 
-func (v *visitor) init(fset *token.FileSet) {
+func (v *visitor) set(fset *token.FileSet) {
 	v.selections = make(map[string][]*element)
 	v.callRepetition = make(map[string]int)
 	v.fset = fset
@@ -450,7 +450,7 @@ func isAllowed(function *element, path string, load loadedSource, walked map[ast
 
 	functionDefinition := load[path].objFunc[functionObj]
 	v := &visitor{}
-	v.init(load[path].fset)
+	v.set(load[path].fset)
 
 	if explicitlyAllowed || isFunctionParameter(functionObj) ||
 		DoesntCallMoreFunctions(functionDefinition, v) {
