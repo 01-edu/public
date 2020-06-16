@@ -2,7 +2,7 @@
 
 ### Instructions
 
--Create a function named 'citiesOnly' which takes an array of objects
+Create a function named `citiesOnly` which takes an array of objects
 and which return an array of strings from the key `city`.
 
 Example:
@@ -25,8 +25,9 @@ returns
 ```js
 ['Los Angeles', 'San Francisco']
 ```
+___
 
--Create a function named 'upperCasingStates' which takes an array of strings
+Create a function named `upperCasingStates` which takes an array of strings
 and which Upper Case each words of a string.
 The function returns then an array of strings.
 
@@ -34,12 +35,14 @@ Example:
 ```js
 ['alabama', 'new jersey']
 ```
+
 returns
 ```js
 ['Alabama', 'New Jersey']
 ```
+___
 
--Create a function named 'fahrenheitToCelsius' which takes an array
+Create a function named `fahrenheitToCelsius` which takes an array
 of fahrenheit temperatures which converts them to Celsius.
 Round down the result.
 
@@ -54,9 +57,9 @@ returns
 ```js
 ['20°C', '15°C', '-4°C']
 ```
+___
 
-
--Create a function named 'trimTemp' which takes an array of objects
+Create a function named `trimTemp` which takes an array of objects
 and which removes the spaces from the string in the key `temperature`.
 The function then returns an array of objects with the modification.
 
@@ -76,8 +79,9 @@ returns
   { city: 'San Francisco', temperature: '84°F' },
 ]
 ```
+___
 
--Create a 'tempForecasts' function which will take an array of objects, and which will
+Create a `tempForecasts` function which will take an array of objects, and which will
 return an array of strings formatted as below:
 
 ```js
