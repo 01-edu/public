@@ -40,7 +40,7 @@ const server = http.createServer(({ url, method }, response) => {
   let browser, code = 0
   try {
     err && (console.error(err.stack) || process.exit(1))
-    const { setup, tests } = await import(`./${exercise}_test.js`)
+    const { setup = () => {}, tests } = await import(`./${exercise}_test.js`)
     browser = await puppeteer.launch(config)
     const [page] = await browser.pages()
     await page.goto(`http://localhost:${PORT}/${exercise}/index.html`)
