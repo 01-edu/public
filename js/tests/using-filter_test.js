@@ -7,6 +7,7 @@ const check = ({ filterCalls }, eq, a, b) => {
   filterCalls.length = 0
   return len ? result : false
 }
+
 //check that the code did use filter properly
 t(({ eq, ctx }) =>
   check(ctx, eq, filterShortStateName(ctx.arr1), [
@@ -23,6 +24,7 @@ t(({ eq, ctx }) =>
     'Utah',
   ]),
 )
+
 //check that the code did use filter properly
 t(({ eq, ctx }) =>
   check(ctx, eq, filterStartVowel(ctx.arr1), [
@@ -40,6 +42,7 @@ t(({ eq, ctx }) =>
     'Utah',
   ]),
 )
+
 //check that the code did use filter properly
 t(({ eq, ctx }) =>
   check(ctx, eq, filter5Vowels(ctx.arr1), [
@@ -51,6 +54,7 @@ t(({ eq, ctx }) =>
     'West Virginia',
   ]),
 )
+
 //check that the code did use filter properly
 t(({ eq, ctx }) =>
   check(ctx, eq, filter1DistinctVowel(ctx.arr1), [
@@ -64,6 +68,7 @@ t(({ eq, ctx }) =>
     'Tennessee',
   ]),
 )
+
 //check that the code did use filter properly
 t(({ eq, ctx }) =>
   check(ctx, eq, multiFilter(ctx.arr2), [
