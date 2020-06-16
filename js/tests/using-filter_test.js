@@ -9,7 +9,7 @@ const check = ({ filterCalls }, eq, a, b) => {
 }
 
 t(({ eq, ctx }) =>
-// check that the code did use filter properly
+  // check that the code did use filter properly
   check(ctx, eq, filterShortStateName(ctx.arr1), [
     'Alaska',
     'Hawaii',
@@ -22,11 +22,11 @@ t(({ eq, ctx }) =>
     'Oregon',
     'Texas',
     'Utah',
-  ]),
+  ])
 )
 
 t(({ eq, ctx }) =>
-// check that the code did use filter properly
+  // check that the code did use filter properly
   check(ctx, eq, filterStartVowel(ctx.arr1), [
     'Alabama',
     'Alaska',
@@ -40,11 +40,11 @@ t(({ eq, ctx }) =>
     'Oklahoma',
     'Oregon',
     'Utah',
-  ]),
+  ])
 )
 
 t(({ eq, ctx }) =>
-// check that the code did use filter properly
+  // check that the code did use filter properly
   check(ctx, eq, filter5Vowels(ctx.arr1), [
     'California',
     'Louisiana',
@@ -52,11 +52,11 @@ t(({ eq, ctx }) =>
     'South Carolina',
     'South Dakota',
     'West Virginia',
-  ]),
+  ])
 )
 
 t(({ eq, ctx }) =>
-// check that the code did use filter properly
+  // check that the code did use filter properly
   check(ctx, eq, filter1DistinctVowel(ctx.arr1), [
     'Alabama',
     'Alaska',
@@ -66,11 +66,11 @@ t(({ eq, ctx }) =>
     'Mississippi',
     'New Jersey',
     'Tennessee',
-  ]),
+  ])
 )
 
 t(({ eq, ctx }) =>
-// check that the code did use filter properly
+  // check that the code did use filter properly
   check(ctx, eq, multiFilter(ctx.arr2), [
     { tag: 'CA', name: 'California', capital: 'Sacramento', region: 'West' },
     { tag: 'HI', name: 'Hawaii', capital: 'Honolulu', region: 'West' },
@@ -92,7 +92,7 @@ t(({ eq, ctx }) =>
       capital: 'Providence',
       region: 'Northeast',
     },
-  ]),
+  ])
 )
 
 Object.freeze(tests)
@@ -291,7 +291,7 @@ export const setup = () => {
       },
       { tag: 'WI', name: 'Wisconsin', capital: 'Madison', region: 'Midwest' },
       { tag: 'WY', name: 'Wyoming', capital: 'Cheyenne', region: 'West' },
-    ].map((e) => Object.freeze(e)),
+    ].map((e) => Object.freeze(e))
   )
 
   return { filterCalls, arr1, arr2 }
