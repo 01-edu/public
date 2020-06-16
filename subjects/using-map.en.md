@@ -2,13 +2,13 @@
 
 ### Instructions
 
--Create a function named 'citiesOnly' which takes an array of objects
+- Create a function named `citiesOnly` which takes an array of objects
 and which return an array of strings from the key `city`.
 
-Example:
+#### Example:
 
 ```js
-[
+citiesOnly([
   {
     city: 'Los Angeles',
     temperature: '  101 °F   ',
@@ -17,84 +17,59 @@ Example:
     city: 'San Francisco',
     temperature: ' 84 ° F   ',
   },
-]
+]) // -> ['Los Angeles', 'San Francisco']
 ```
 
-returns
-
-```js
-['Los Angeles', 'San Francisco']
-```
-
--Create a function named 'upperCasingStates' which takes an array of strings
-and which Upper Case each words of a string.
+- Create a function named `upperCasingStates` which takes an array of strings
+and which Upper Case each words of a string. \
 The function returns then an array of strings.
 
-Example:
+#### Example:
+
 ```js
-['alabama', 'new jersey']
-```
-returns
-```js
-['Alabama', 'New Jersey']
+upperCasingStates(['alabama', 'new jersey']) // -> ['Alabama', 'New Jersey']
 ```
 
--Create a function named 'fahrenheitToCelsius' which takes an array
+- Create a function named `fahrenheitToCelsius` which takes an array
 of fahrenheit temperatures which converts them to Celsius.
 Round down the result.
 
 The function then returns the result as an array of strings like below:
 
-example:
+#### Example:
+
 ```js
-['68°F', '59°F', '25°F']
+fahrenheitToCelsius(['68°F', '59°F', '25°F']) // -> ['20°C', '15°C', '-4°C']
 ```
 
-returns
-```js
-['20°C', '15°C', '-4°C']
-```
-
-
--Create a function named 'trimTemp' which takes an array of objects
-and which removes the spaces from the string in the key `temperature`.
+- Create a function named `trimTemp` which takes an array of objects
+and which removes the spaces from the string in the key `temperature`. \
 The function then returns an array of objects with the modification.
 
-Example:
+#### Example:
+
 ```js
-[
+trimTemp([
   { city: 'Los Angeles', temperature: '  101 °F   '},
   { city: 'San Francisco', temperature: ' 84 ° F   '},
-]
-```
-
-returns
-
-```js
-[
+]) /* -> [
   { city: 'Los Angeles', temperature: '101°F' },
   { city: 'San Francisco', temperature: '84°F' },
-]
+] */
 ```
 
--Create a 'tempForecasts' function which will take an array of objects, and which will
+- Create a `tempForecasts` function which will take an array of objects, and which will
 return an array of strings formatted as below:
 
 ```js
-[
+tempForecasts([
   {
     city: 'Pasadena',
     temperature: ' 101 °F',
     state: 'california',
     region: 'West',
   }
-]
-```
-
-returns
-
-```js
-['38°Celsius in Pasadena, California']
+]) // -> ['38°Celsius in Pasadena, California']
 ```
 
 ### Notions
