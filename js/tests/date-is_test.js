@@ -28,7 +28,7 @@ t(() => isValid(new Date('1995-12-17T03:24:00').getTime()))
 // isAfter
 t(() => !invalid(isAfter, 2))
 t(() => !isAfter(new Date('1992-01-01'), new Date('1992-01-02')))
-t(() => !isAfter(new Date('1992-01-01'), new Date('1992-01-02')))
+t(() => !isAfter(new Date('2157-11-07'), new Date('2183-04-16')))
 t(() => isAfter(new Date(2321, 11, 21), new Date(Date.now())))
 t(() => isAfter(123123, 526))
 
@@ -37,7 +37,7 @@ t(() => !invalid(isBefore, 2))
 t(() => !isBefore(new Date(2321, 11, 21), new Date(Date.now())))
 t(() => !isBefore(123123, 526))
 t(() => isBefore(new Date('1992-01-01'), new Date('1992-01-02')))
-t(() => isBefore(new Date('1992-01-01'), new Date('1992-01-02')))
+t(() => isBefore(new Date('2157-11-07'), new Date('2183-04-16')))
 
 // isFuture
 t(() => !invalid(isFuture))
