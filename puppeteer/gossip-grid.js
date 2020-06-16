@@ -1,4 +1,4 @@
-import { gossips as archived } from './data.js'
+import { gossips } from './data.js'
 
 const body = document.querySelector('body')
 
@@ -11,14 +11,6 @@ const inputs = [
   { props: ['fontSize', 'lineHeight'], min: 20, max: 40, value: 25 },
   { props: ['background'], min: 20, max: 75, value: 60 },
 ]
-
-let gossips = new Proxy(archived, {
-  set: (target, prop, value) => {
-    target[prop] = value
-    createGossip(value, true)
-    return true
-  },
-})
 
 export const grid = () => {
   inputs.forEach((input) => createInput(input))
@@ -45,16 +37,17 @@ const createGossip = (g, isNew = false) => {
 }
 
 const createAddGossip = () => {
-  const addGossip = document.createElement('div')
+  const addGossip = document.createElement('form')
   addGossip.className = 'gossip'
   addGossip.id = 'add-gossip'
+  addGossip.onsubmit = () => false
 
   const newInput = document.createElement('textarea')
   newInput.autofocus = true
   newInput.placeholder = 'Got a gossip to share ?'
   newInput.addEventListener('keyup', (e) => addNewGossip(newInput, e))
 
-  const button = document.createElement('div')
+  const button = document.createElement('button')
   button.className = 'button'
   button.textContent = 'Share gossip!'
   button.addEventListener('click', (e) => addNewGossip(newInput))
@@ -64,13 +57,11 @@ const createAddGossip = () => {
 }
 
 const addNewGossip = (input, event) => {
-  const noValue = !input.value
+  const noValue = !input.value.trim()
   const notEnterKey = event && event.keyCode !== 13
-  if (notEnterKey || noValue) {
-    input.focus()
-    return
-  }
-  gossips[gossips.length] = input.value
+  if (notEnterKey || noValue) return
+  createGossip(input.value, true)
+  gossips.push(input.value)
   input.value = ''
   input.focus()
 }
@@ -97,16 +88,16 @@ const createInput = ({ props, min, max, value }) => {
 }
 
 const customize = ({ target }, ...props) => {
-  const gossips = [...document.querySelectorAll('.gossip')]
-  gossips.forEach((gossip) => {
-    props.forEach((prop) => {
+  for (const card of [...document.querySelectorAll('.gossip')]) {
+    for (const prop of props) {      
       const updatedValue =
         (prop === 'lineHeight' && `${Number(target.value) * 1.5}px`) ||
         (prop === 'background' && `hsl(280, 50%, ${target.value}%)`) ||
         `${target.value}px`
-      gossip.style[prop] = updatedValue
-    })
-  })
+      card.style[prop] = updatedValue
+    }
+  }
+
   const valueLabel = target.nextElementSibling
   valueLabel.textContent = target.value
 }

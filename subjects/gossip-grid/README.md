@@ -4,9 +4,11 @@
 
 Good information is the pillar of society, that's why you've decided to dedicate your time to reveal the powerful truth to the world and deliver essential and strong news: you're launching a gossip grid.
 
-Create the function `grid` which displays all the `gossips`, provided in the data file below, as cards on a grid, and allows the user to:
+Create the function `grid` which displays all the `gossips`, provided in the data file below, as cards on a grid (in the same order).
+They must be `div` with the `gossip` class.
 
-- add a new gossip to the list
+The first `gossip` card must be a form with a `textarea` and a submit button that allows to add a new gossip to the list
+
 - customize the width, font size and background of each card with `range` inputs.
 
 ### Notions
