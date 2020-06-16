@@ -45,6 +45,9 @@ const read = (filename, description) =>
 const { join } = []
 const { split } = ''
 const stackFmt = (err, url) => {
+  if (!(err instanceof Error)) {
+    throw Error(`Unexpected type thrown: ${typeof err}. usage: throw Error('my message'))`)
+  }
   String.prototype.split = split
   Array.prototype.join = join
   return err.stack.split(url).join(`${name}.js`)
