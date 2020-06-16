@@ -1,169 +1,132 @@
-import { deepStrictEqual } from 'assert'
-import puppeteer from 'puppeteer-core'
-import people from '../assets/data/get-them-all.js'
+import { people } from './subjects/get-them-all/data.js'
 
-const config = {
-  headless: false,
-  executablePath:
-    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
-}
+const getIds = predicate =>
+  people
+    .filter(predicate)
+    .map(e => e.id)
+    .sort((a, b) => a.localeCompare(b))
 
-const browser = await puppeteer.launch(config)
-const [page] = await browser.pages()
-await page.goto('http://localhost:8000/dom-js/get-them-all/')
+const architects = getIds(p => p.tag === 'a')
+const notArchitects = getIds(p => p.tag !== 'a')
 
-const architects = people
-  .filter((p) => p.tag === 'a')
-  .map((e) => e.id)
-  .sort((a, b) => a.localeCompare(b))
+const classical = getIds(p => p.classe === 'classical')
+const notClassical = getIds(p => p.tag === 'a' && p.classe !== 'classical')
 
-const notArchitects = people
-  .filter((p) => p.tag !== 'a')
-  .map((e) => e.id)
-  .sort((a, b) => a.localeCompare(b))
+const active = getIds(p => p.classe === 'classical' && p.active)
+const notActive = getIds(
+  p => p.tag === 'a' && p.classe === 'classical' && p.active === false,
+)
 
-const checkArchitects = async () => {
+const bonanno = people.find(p => p.id === 'BonannoPisano').id
+const notBonanno = getIds(
+  p =>
+    p.tag === 'a' &&
+    p.classe === 'classical' &&
+    p.active &&
+    p.id !== 'BonannoPisano',
+)
+
+export const tests = []
+
+tests.push(async ({ eq, page }) => {
+  // get architects
   const btnArchitect = await page.$(`#btnArchitect`)
   btnArchitect.click()
   await page.waitFor(500)
 
-  const selected = await page.$$eval('a', (nodes) =>
+  const selected = await page.$$eval('a', nodes =>
     nodes
-      .filter((node) => node.textContent === 'Architect')
-      .map((node) => node.id)
+      .filter(node => node.textContent === 'Architect')
+      .map(node => node.id)
       .sort((a, b) => a.localeCompare(b)),
   )
 
-  const eliminated = await page.$$eval('span', (nodes) =>
+  eq(selected, architects)
+
+  const eliminated = await page.$$eval('span', nodes =>
     nodes
-      .filter((node) => node.style.opacity === '0.2')
-      .map((node) => node.id)
+      .filter(node => node.style.opacity === '0.2')
+      .map(node => node.id)
       .sort((a, b) => a.localeCompare(b)),
   )
 
-  deepStrictEqual(`architects: ${selected}`, `architects: ${architects}`)
-  deepStrictEqual(
-    `not architects: ${eliminated}`,
-    `not architects: ${notArchitects}`,
-  )
-}
+  eq(eliminated, notArchitects)
 
-checkArchitects()
-await page.waitFor(1000)
+  await page.waitFor(1000)
+})
 
-// get classical
-const classical = people
-  .filter((p) => p.classe === 'classical')
-  .map((e) => e.id)
-  .sort((a, b) => a.localeCompare(b))
-
-const notClassical = people
-  .filter((p) => p.tag === 'a' && p.classe !== 'classical')
-  .map((e) => e.id)
-  .sort((a, b) => a.localeCompare(b))
-
-const checkClassical = async () => {
+tests.push(async ({ page, eq }) => {
+  // get classical
   const btnClassical = await page.$(`#btnClassical`)
   btnClassical.click()
   await page.waitFor(500)
 
-  const selected = await page.$$eval('.classical', (nodes) =>
+  const selected = await page.$$eval('.classical', nodes =>
     nodes
-      .filter((node) => node.textContent === 'Classical')
-      .map((node) => node.id)
+      .filter(node => node.textContent === 'Classical')
+      .map(node => node.id)
       .sort((a, b) => a.localeCompare(b)),
   )
 
-  const eliminated = await page.$$eval('a:not(.classical)', (nodes) =>
+  eq(selected, classical)
+
+  const eliminated = await page.$$eval('a:not(.classical)', nodes =>
     nodes
-      .filter((node) => node.style.opacity === '0.2')
-      .map((node) => node.id)
+      .filter(node => node.style.opacity === '0.2')
+      .map(node => node.id)
       .sort((a, b) => a.localeCompare(b)),
   )
 
-  deepStrictEqual(`classical: ${selected}`, `classical: ${classical}`)
-  deepStrictEqual(
-    `not classical: ${eliminated}`,
-    `not classical: ${notClassical}`,
-  )
-}
+  eq(eliminated, notClassical)
 
-checkClassical()
-await page.waitFor(1000)
+  await page.waitFor(1000)
+})
 
-// get active
-const active = people
-  .filter((p) => p.classe === 'classical' && p.active)
-  .map((e) => e.id)
-  .sort((a, b) => a.localeCompare(b))
-
-const notActive = people
-  .filter(
-    (p) => p.tag === 'a' && p.classe === 'classical' && p.active === false,
-  )
-  .map((e) => e.id)
-  .sort((a, b) => a.localeCompare(b))
-
-const checkActive = async () => {
+tests.push(async ({ page, eq }) => {
+  // check active
   const btnActive = await page.$(`#btnActive`)
   btnActive.click()
   await page.waitFor(500)
 
-  const selected = await page.$$eval('.classical.active', (nodes) =>
+  const selected = await page.$$eval('.classical.active', nodes =>
     nodes
-      .filter((node) => node.textContent === 'Active')
-      .map((node) => node.id)
+      .filter(node => node.textContent === 'Active')
+      .map(node => node.id)
+      .sort((a, b) => a.localeCompare(b)),
+  )
+  eq(selected, active)
+
+  const eliminated = await page.$$eval('.classical:not(.active)', nodes =>
+    nodes
+      .filter(node => node.style.opacity === '0.2')
+      .map(node => node.id)
       .sort((a, b) => a.localeCompare(b)),
   )
 
-  const eliminated = await page.$$eval('.classical:not(.active)', (nodes) =>
-    nodes
-      .filter((node) => node.style.opacity === '0.2')
-      .map((node) => node.id)
-      .sort((a, b) => a.localeCompare(b)),
-  )
+  eq(eliminated, notActive)
+  await page.waitFor(1000)
+})
 
-  deepStrictEqual(`active: ${selected}`, `active: ${active}`)
-  deepStrictEqual(`not active: ${eliminated}`, `not active: ${notActive}`)
-}
-
-checkActive()
-await page.waitFor(1000)
-
-// get bonanno
-const bonanno = people.find((p) => p.id === 'BonannoPisano').id
-
-const notBonanno = people
-  .filter(
-    (p) =>
-      p.tag === 'a' &&
-      p.classe === 'classical' &&
-      p.active &&
-      p.id !== 'BonannoPisano',
-  )
-  .map((e) => e.id)
-  .sort((a, b) => a.localeCompare(b))
-
-const checkBonanno = async () => {
+tests.push(async ({ page, eq }) => {
+  // get bonanno
   const btnBonanno = await page.$(`#btnBonanno`)
   btnBonanno.click()
   await page.waitFor(500)
 
-  const selected = await page.$eval('#BonannoPisano', (node) => {
+  const selected = await page.$eval('#BonannoPisano', node => {
     if (node.textContent === 'Bonanno Pisano') return node.id
   })
 
+  eq(`bonanno: ${selected}`, `bonanno: ${bonanno}`)
+
   const eliminated = await page.$$eval(
     'a.classical.active:not(#BonannoPisano)',
-    (nodes) =>
+    nodes =>
       nodes
-        .filter((node) => node.style.opacity === '0.2')
-        .map((node) => node.id)
+        .filter(node => node.style.opacity === '0.2')
+        .map(node => node.id)
         .sort((a, b) => a.localeCompare(b)),
   )
 
-  deepStrictEqual(`bonanno: ${selected}`, `bonanno: ${bonanno}`)
-  deepStrictEqual(`not bonanno: ${eliminated}`, `not bonanno: ${notBonanno}`)
-}
-
-checkBonanno()
+  eq(eliminated, notBonanno)
+})
