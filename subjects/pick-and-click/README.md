@@ -4,13 +4,15 @@
 
 Today, you're gonna create your own color picker.
 
-Write the function `pick` which creates a `hsl` color picker varying the `hue` and `luminosity` according to the position of the mouse, which:
+Write the function `pick` which creates a `hsl` color picker varying the `hue` and `luminosity` of the according to the position of the mouse, which:
 
-- displays the `hue` value in text
-- displays the `luminosity` value in text
-- displays the full `hsl` value in text
+- changes `background` of the `body`
+- displays those 3 values, using the `text` class:
+  - the `hue` value in a `div` with the class `hue`
+  - the `luminosity` value in a `div` with the class `luminosity`
+  - the full `hsl` value
 - copies that value in the clipboard on click
-- displays two lines, for X and Y axis, following the cursor
+- displays two SVG lines, with respective ids `axisX` and `axisY`, following the cursor
 
 ### Notions
 
