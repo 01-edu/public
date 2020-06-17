@@ -28,7 +28,7 @@ On top of the webpage, each of the four buttons fires a function which has to re
 
 ### Provided files
 
-- Use the HTML file [index.html](/public/subjects/get-them-all/index.html), which includes:
+- Check the HTML file [index.html](/public/subjects/get-them-all/index.html), which includes:
 
   - the JS script running some code, and which will also allow to run yours
   - some data used to generate content

@@ -41,7 +41,7 @@ Click 6 --> <button class="button"></div>
 
 ### Provided files
 
-- Use the HTML file [index.html](/public/subjects/pimp-my-style/index.html), which includes:
+- Check the HTML file [index.html](/public/subjects/pimp-my-style/index.html), which includes:
 
   - the JS script running some code, and which will also allow to run yours
   - some CSS pre-styled classes: feel free to use those as they are, or modify them
