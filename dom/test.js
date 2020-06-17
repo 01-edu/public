@@ -2,14 +2,20 @@ import http from 'http'
 import fs from 'fs'
 import path from 'path'
 import { deepStrictEqual } from 'assert'
-import puppeteer from 'puppeteer-core'
+import puppeteer from 'puppeteer'
 
 const exercise = process.argv[2]
 if (!exercise) throw Error(`usage: node test EXERCISE_NAME`)
 const PORT = 9898
 const config = {
-  headless: false,
-  executablePath: process.env.CHROME_PATH || '/usr/bin/google-chrome',
+    args: [
+    '--no-sandbox',
+    '--disable-setuid-sandbox',
+
+    // This will write shared memory files into /tmp instead of /dev/shm,
+    // because Docker’s default for /dev/shm is 64MB
+    '--disable-dev-shm-usage',
+  ],
 }
 
 const mediaTypes = {
@@ -25,7 +31,7 @@ const server = http
   .createServer(({ url, method }, response) => {
     console.log(method + ' ' + url)
     const filepath = url.endsWith(`${exercise}/${exercise}.js`)
-      ? path.join('.', url.slice(exercise.length + 1))
+      ? path.join('/jail/student', url.slice(exercise.length + 1))
       : path.join('./subjects', url)
     const ext = path.extname(filepath)
     response.setHeader('Content-Type', mediaTypes[ext.slice(1)] || 'text/plain')
