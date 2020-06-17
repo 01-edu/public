@@ -34,9 +34,12 @@ body {
   padding: 2.5rem 0;
 }
 
-div {
+button {
   user-select: none;
   letter-spacing: 0;
+  color: white;
+  outline: none;
+  border: none;
 }
 
 .button:first-letter {
@@ -50,7 +53,6 @@ div {
 .button {
   background: var(--background);
   font-family: serif;
-  cursor: pointer;
   width: 70%;
   text-align: center;
 }
@@ -167,7 +169,7 @@ import { pimp } from './pimp-my-style.js'
 
 const body = document.querySelector('body')
 
-const button = document.createElement('div')
+const button = document.createElement('button')
 button.className = 'button'
 button.textContent = 'pimp my style'
 body.append(button)

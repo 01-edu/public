@@ -5,7 +5,7 @@
 Check out that button on the HTML page:
 
 ```html
-<div class="button">pimp my style</div>
+<button class="button">pimp my style</div>
 ```
 
 For now, it's only a lonely, basic and sad element ; let's pimp it up!
@@ -20,19 +20,19 @@ Write the body of that function so that the button's class is altered:
 ```
 Example for a `styles` array with only 3 classes:
 
-Page load --> <div class="button"></div>
+Page load --> <button class="button"></div>
 
 ...adding
-Click 1 --> <div class="button one"></div>
-Click 2 --> <div class="button one two"></div>
+Click 1 --> <button class="button one"></div>
+Click 2 --> <button class="button one two"></div>
 
 ...toggling `unpimp`
-Click 3 --> <div class="button one two three unpimp"></div>
+Click 3 --> <button class="button one two three unpimp"></div>
 
 ...and removing backwards
-Click 4 --> <div class="button one two unpimp"></div>
-Click 5 --> <div class="button one unpimp"></div>
-Click 6 --> <div class="button"></div>
+Click 4 --> <button class="button one two unpimp"></div>
+Click 5 --> <button class="button one unpimp"></div>
+Click 6 --> <button class="button"></div>
 ```
 
 ### Notions
