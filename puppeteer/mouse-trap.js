@@ -20,14 +20,15 @@ export const createCircle = () => {
 }
 
 const create = ({ clientX, clientY }) => {
-  const elem = document.createElement('div')
-  elem.className = 'elem'
-  body.append(elem)
-  elem.style.top = `${clientY - radius}px`
-  elem.style.left = `${clientX - radius}px`
+  const circle = document.createElement('div')
+  circle.className = 'circle'
+  body.append(circle)
+  circle.style.top = `${clientY - radius}px`
+  circle.style.left = `${clientX - radius}px`
+  circle.style.background = 'white'
   const hasEntered = insideX(clientX) && insideY(clientY)
   if (hasEntered) {
-    elem.style.background = 'var(--purple)'
+    circle.style.background = 'var(--purple)'
   }
   isInside = false
 }
@@ -38,29 +39,29 @@ export const moveCircle = () => {
 }
 
 const move = (e) => {
-  const elems = [...document.getElementsByClassName('elem')]
-  const elem = elems[elems.length - 1]
-  if (!elem) return
-  position(e, elem)
+  const circles = [...document.getElementsByClassName('circle')]
+  const circle = circles[circles.length - 1]
+  if (!circle) return
+  position(e, circle)
 }
 
-const position = ({ clientX, clientY }, elem) => {
+const position = ({ clientX, clientY }, circle) => {
   const hasEntered = insideX(clientX) && insideY(clientY)
 
   if (hasEntered) {
     isInside = true
-    elem.style.background = 'var(--purple)'
+    circle.style.background = 'var(--purple)'
   }
 
   if (isInside) {
     if (insideY(clientY)) {
-      elem.style.top = `${clientY - radius}px`
+      circle.style.top = `${clientY - radius}px`
     }
     if (insideX(clientX)) {
-      elem.style.left = `${clientX - radius}px`
+      circle.style.left = `${clientX - radius}px`
     }
   } else {
-    elem.style.top = `${clientY - radius}px`
-    elem.style.left = `${clientX - radius}px`
+    circle.style.top = `${clientY - radius}px`
+    circle.style.left = `${clientX - radius}px`
   }
 }
