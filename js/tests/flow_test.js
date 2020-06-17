@@ -14,9 +14,9 @@ const addAll = (...el) =>
   el.length === 1 ? el[0] : el[0] + addAll(...el.slice(1))
 
 export const setup = () => {
-  const farenheitToCelsius = flow(sub32, mult5, div9, roundDown)
-  const add2Mult2Square = flow(add2, mult2, square)
-  const addAllThenConvertToCelsius = flow(addAll, farenheitToCelsius)
+  const farenheitToCelsius = flow([sub32, mult5, div9, roundDown])
+  const add2Mult2Square = flow([add2, mult2, square])
+  const addAllThenConvertToCelsius = flow([addAll, farenheitToCelsius])
 
   return { farenheitToCelsius, add2Mult2Square, addAllThenConvertToCelsius }
 }
