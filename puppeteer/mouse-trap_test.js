@@ -38,7 +38,7 @@ tests.push(async ({ page, eq, getCirclesPos }) => {
   // check that the last created circle moves along the mouse
   let move = 0
   while (move < 100) {
-    move += 1
+    move++
     const x = move
     const y = move * 2
     await page.mouse.move(x, y)
