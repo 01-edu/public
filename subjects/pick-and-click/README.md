@@ -6,7 +6,7 @@ Today, you're gonna create your own color picker.
 
 Write the function `pick` which creates a `hsl` color picker varying the `hue` and `luminosity` of the according to the position of the mouse, which:
 
-- changes `background` of the `body`
+- changes the `background` color of the `body`
 - displays those 3 values, using the `text` class:
   - the `hue` value in a `div` with the class `hue`
   - the `luminosity` value in a `div` with the class `luminosity`
