@@ -1,16 +1,16 @@
 const body = document.querySelector('body')
 
-const count = document.createElement('div')
-count.className = 'count'
-count.textContent = 'hsl(0, 50%, 0%)'
+const hslValue = document.createElement('div')
+hslValue.className = 'hsl'
+hslValue.textContent = 'hsl(0, 50%, 0%)'
 
-const hueText = document.createElement('div')
-hueText.className = 'text hue'
-hueText.textContent = 'hue'
+const hueValue = document.createElement('div')
+hueValue.className = 'text hue'
+hueValue.textContent = 'hue'
 
-const luminosityText = document.createElement('div')
-luminosityText.className = 'text luminosity'
-luminosityText.textContent = 'luminosity'
+const luminosityValue = document.createElement('div')
+luminosityValue.className = 'text luminosity'
+luminosityValue.textContent = 'luminosity'
 
 const origin = document.createElement('div')
 origin.className = 'text origin'
@@ -32,14 +32,16 @@ svg.setAttribute('viewBox', `0 0 ${window.innerWidth} ${window.innerHeight}`)
 const axisX = document.createElementNS('http://www.w3.org/2000/svg', 'line')
 axisX.setAttribute('y1', window.innerHeight)
 axisX.setAttribute('y2', 0)
+axisX.id = 'axisX'
 svg.append(axisX)
 
 const axisY = document.createElementNS('http://www.w3.org/2000/svg', 'line')
 axisY.setAttribute('x1', window.innerWidth)
 axisY.setAttribute('x2', 0)
+axisY.id = 'axisY'
 svg.append(axisY)
 
-body.append(count, hueText, luminosityText, origin, picked, svg)
+body.append(hslValue, hueValue, luminosityValue, origin, picked, svg)
 
 export const pick = () => {
   document.addEventListener('mousemove', (e) => set(e))
@@ -58,7 +60,7 @@ export const pick = () => {
 const click = (e) => {
   document.execCommand('copy')
   const wave = document.createElement('div')
-  wave.className = 'wave'
+  wave.className = 'click-wave'
   wave.style.top = `${e.clientY - 10}px`
   wave.style.left = `${e.clientX - 10}px`
   body.append(wave)
@@ -68,7 +70,7 @@ const click = (e) => {
 const copy = (event) => {
   event.preventDefault()
   if (event.clipboardData) {
-    event.clipboardData.setData('text/plain', count.textContent)
+    event.clipboardData.setData('text/plain', hslValue.textContent)
     picked.classList.add('fade-in')
     setTimeout(() => picked.classList.remove('fade-in'), 1000)
   }
@@ -98,8 +100,8 @@ const set = ({ clientX, clientY }) => {
   body.style.color = color
   body.style.background = color
   origin.style.background = color
-  count.textContent = color
+  hslValue.textContent = color
 
-  hueText.textContent = `hue\n${hue}`
-  luminosityText.textContent = `${luminosity}\nluminosity`
+  hueValue.textContent = `hue\n${hue}`
+  luminosityValue.textContent = `${luminosity}\nluminosity`
 }
