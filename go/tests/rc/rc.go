@@ -348,7 +348,7 @@ func (v *visitor) getPos(n ast.Node) string {
 func (v *visitor) Visit(n ast.Node) ast.Visitor {
 	switch t := n.(type) {
 	case *ast.FuncDecl, *ast.GenDecl, *ast.AssignStmt:
-		//Avoids analyzing a declaration inside a declaration
+		//Avoids analyzing a nested declarations
 		//Since this is handle by the functions `isAllowed`
 		fdef := extractFunction(t)
 		if fdef == nil || fdef.obj == nil {
