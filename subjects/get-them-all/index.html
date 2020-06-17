@@ -33,6 +33,11 @@ body {
   margin-top: 150px;
 }
 
+button {
+  outline: none;
+  border: none;
+}
+
 #buttons {
   position: fixed;
   display: flex;
@@ -103,7 +108,7 @@ import {
 
 const body = document.querySelector('body')
 
-const shuffle = array => {
+const shuffle = (array) => {
   const test = array.length - 1
   for (let i = test; i > 0; i--) {
     const j = Math.floor(Math.random() * i)
@@ -134,7 +139,7 @@ const buttons = [
 ]
 
 buttons.forEach(({ name, action }, i) => {
-  const btn = document.createElement('div')
+  const btn = document.createElement('button')
   btn.id = `btn${name}`
   btn.textContent = `Get ${name}${i === 0 ? 's' : ''}`
 
@@ -149,12 +154,12 @@ buttons.forEach(({ name, action }, i) => {
       targetted.textContent = targetted.id.replace('P', ' P')
       targetted.classList.add('found')
     } else {
-      targetted.forEach(t => {
+      targetted.forEach((t) => {
         t.textContent = name
       })
     }
 
-    others.forEach(o => {
+    others.forEach((o) => {
       o.style.opacity = 0.2
     })
 
