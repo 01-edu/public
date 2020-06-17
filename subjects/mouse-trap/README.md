@@ -4,7 +4,7 @@
 
 Develop a trap to capture the elements when the mouse is getting too close to the center of the page!
 
-- Create a function `createCircle`: make it fire on every click on the page, and create a white circle at the position of the mouse on the screen
+- Create a function `createCircle`: make it fire on every click on the page, and create a `div` at the position of the mouse on the screen, setting its `background` to `white` and its class to `circle`
 
 - Create a function `moveCircle`: make it fire when the mouse moves, and get the last circle created and makes it move along with the mouse
 
