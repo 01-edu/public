@@ -7,8 +7,8 @@ Tired of staying home for too long, you decide to develop a page to index ideas 
 Write the function `explore` which creates a page displaying the list of `places` provided in the data file below:
 
 - sort the `places` from the Northest to the Southest
-- display a fullscreen-size image for each place ; use the images hosted [here](/public/subjects/where-do-we-go/images)
-- display a location indicator, displaying the `name` and the `coordinates` of the current place featured in the image, using the corresponding `color` as text color, which updates on scroll when another image is reached
+- display a fullscreen-size `<section>` for each place ; use the pics hosted [here](/public/subjects/where-do-we-go/images) as `background` images
+- display a location indicator with the class `location`, displaying as text strings separated by `\n`, the `name` and the `coordinates` of the current place featured in the image, using the corresponding `color` as text color, which updates on scroll when the top of the next image reaches the middle of the screen height
 - display a compass indicating the latitude direction ; North if the user is scrolling up, South if he's scrolling down
 - when clicking on the page, open a link redirecting to the Google Maps' coordinates of the place currently displayed.
 
