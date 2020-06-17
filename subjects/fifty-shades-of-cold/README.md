@@ -32,7 +32,7 @@ Check the `colors` array provided in the data file below.
 
 ### Provided files
 
-- Use the HTML file [index.html](/public/subjects/fifty-shades-of-cold/index.html), which includes:
+- Check the HTML file [index.html](/public/subjects/fifty-shades-of-cold/index.html), which includes:
 
   - the JS script running some code, and which will also allow to run yours
   - some CSS pre-styled classes: feel free to use those as they are, or modify them

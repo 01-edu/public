@@ -23,7 +23,7 @@ Write the function `pick` which creates a `hsl` color picker varying the `hue` a
 
 ### Provided files
 
-- Use the HTML file [index.html](/public/subjects/pick-and-click/index.html), which includes:
+- Check the HTML file [index.html](/public/subjects/pick-and-click/index.html), which includes:
 
   - the JS script which will allow to run your code
   - some CSS pre-styled classes: feel free to use those as they are, or modify them

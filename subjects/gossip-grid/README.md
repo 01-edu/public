@@ -17,7 +17,7 @@ The first `gossip` card must be a form with a `textarea` and a submit button tha
 
 ### Provided files
 
-- Use the HTML file [index.html](/public/subjects/gossip-grid/index.html), which includes:
+- Check the HTML file [index.html](/public/subjects/gossip-grid/index.html), which includes:
 
   - the JS script which will allow to run your code
   - some CSS pre-styled classes: feel free to use those as they are, or modify them

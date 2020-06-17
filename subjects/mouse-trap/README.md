@@ -19,7 +19,7 @@ Develop a trap to capture the elements when the mouse is getting too close to th
 
 ### Provided files
 
-- Use the HTML file [index.html](/public/subjects/mouse-trap/index.html), which includes:
+- Check the HTML file [index.html](/public/subjects/mouse-trap/index.html), which includes:
 
   - the JS script which will allow to run your code
   - some CSS pre-styled classes: feel free to use those as they are, or modify them
