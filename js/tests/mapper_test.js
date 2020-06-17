@@ -87,7 +87,27 @@ t(({ eq, ctx }) =>
   ),
 )
 
+t(({ eq, ctx }) =>
+  // map should not flat
+  eq(
+    map([1, 2, 3], n => [n, n]),
+    [
+      [1, 1],
+      [2, 2],
+      [3, 3],
+    ],
+  ),
+)
+
 // flatMap
+t(({ eq, ctx }) =>
+  // flatMap should flatten the result of map
+  eq(
+    flatMap([1, 2, 3], n => [n, n]),
+    [1, 1, 2, 2, 3, 3],
+  ),
+)
+
 t(({ eq, ctx }) =>
   eq(flatMap(ctx.mixed, add1), ['101', -9, 21, -94, 87, '1021', '35,891', 111]),
 )
