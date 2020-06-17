@@ -18,6 +18,5 @@ else
   cat > "$first_file"
 fi
 
-cd
-
-node --unhandled-rejections=strict /app/test.js "${EXERCISE}"
+cd /app
+node --no-warnings --unhandled-rejections=strict test.js "${EXERCISE}"
