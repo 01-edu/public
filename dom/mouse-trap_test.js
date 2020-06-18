@@ -3,10 +3,10 @@ export const tests = []
 export const setup = async ({ page }) => {
   return {
     getCirclesPos: async () =>
-      await page.$$eval('.circle', (nodes) => {
+      await page.$$eval('.circle', nodes => {
         const circleRadius = 25
-        const formatPos = (pos) => Number(pos.replace('px', '')) + circleRadius
-        return nodes.map((node) => [
+        const formatPos = pos => Number(pos.replace('px', '')) + circleRadius
+        return nodes.map(node => [
           formatPos(node.style.left),
           formatPos(node.style.top),
         ])
@@ -21,10 +21,7 @@ tests.push(async ({ page, viewport, eq, getCirclesPos }) => {
     height: document.documentElement.clientHeight,
   }))
 
-  const clicks = [...Array(10).keys()].map((e) => [
-    random(width),
-    random(height),
-  ])
+  const clicks = [...Array(10).keys()].map(e => [random(width), random(height)])
 
   for (const [i, click] of clicks.entries()) {
     const [posX, posY] = click
@@ -50,7 +47,7 @@ tests.push(async ({ page, eq, getCirclesPos }) => {
 
 tests.push(async ({ page, eq, getCirclesPos }) => {
   // check that a circle is trapped and purple when inside the box
-  const box = await page.$eval('.box', (box) => ({
+  const box = await page.$eval('.box', box => ({
     top: box.getBoundingClientRect().top,
     right: box.getBoundingClientRect().right,
     left: box.getBoundingClientRect().left,
@@ -74,7 +71,7 @@ tests.push(async ({ page, eq, getCirclesPos }) => {
 
     const bg = await page.$$eval(
       '.circle',
-      (nodes) => nodes[nodes.length - 1].style.background,
+      nodes => nodes[nodes.length - 1].style.background,
     )
 
     const insideX = x > box.left + circleRadius && x < box.right - circleRadius
@@ -96,6 +93,8 @@ tests.push(async ({ page, eq, getCirclesPos }) => {
       } else {
         const maxY =
           currentCircle[1] === box.top + circleRadius + 1 ||
+          currentCircle[1] === box.top + circleRadius ||
+          currentCircle[1] === box.bottom - circleRadius ||
           currentCircle[1] === box.bottom - circleRadius - 1
         eq(maxY, true)
       }
@@ -103,7 +102,9 @@ tests.push(async ({ page, eq, getCirclesPos }) => {
         eq(currentCircle[0], x)
       } else {
         const maxX =
+          currentCircle[0] === box.left + circleRadius ||
           currentCircle[0] === box.left + circleRadius + 1 ||
+          currentCircle[0] === box.right - circleRadius ||
           currentCircle[0] === box.right - circleRadius - 1
         eq(maxX, true)
       }
