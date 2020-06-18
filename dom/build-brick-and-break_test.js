@@ -17,6 +17,7 @@ tests.push(async ({ page, eq }) => {
 
   while (repeat < 3) {
     const divs = await page.$$eval('div', (nodes) => nodes.length)
+    console.log(`step ${repeat + 1}: ${divs} bricks`)
     buildSteps.push(divs)
     await page.waitFor(1000)
     repeat++
@@ -27,10 +28,11 @@ tests.push(async ({ page, eq }) => {
   const average = Math.round((diff1 + diff2) / 2)
 
   if (average < 9) {
-    console.log('too slow --> average built bricks / sec:', average)
-  }
-  if (average > 11) {
-    console.log('too fast --> average built bricks / sec:', average)
+    console.log('average too low --> new bricks built / sec:', average)
+  } else if (average > 11) {
+    console.log('average too high --> new bricks built / sec:', average)
+  } else {
+    console.log('good average of new bricks built / sec')
   }
 
   eq(between(average, 9, 11), between(10, 9, 11))
