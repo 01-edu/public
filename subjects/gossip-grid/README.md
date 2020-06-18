@@ -9,7 +9,7 @@ They must be `div` with the `gossip` class.
 
 The first `gossip` card must be a `form` with a `textarea` and a submit button with the text `Share gossip!` that allows to add a new gossip to the list.
 
-Create 3 `type="range"` inputs with the class `range`, all wrapped in a div with the class `ranges`:
+Create 3 `type="range"` inputs with the class `range`, all wrapped in a `div` with the class `ranges`:
 
 - one with `id="width"` that control the width of cards *(from 200 to 800 pixels)*
 - one with `id="fontSize"` that control the font size *(from 20 to 40 pixels)*
