@@ -8,7 +8,7 @@ const exercise = process.argv[2]
 if (!exercise) throw Error(`usage: node test EXERCISE_NAME`)
 const PORT = 9898
 const config = {
-    args: [
+  args: [
     '--no-sandbox',
     '--disable-setuid-sandbox',
 
@@ -16,6 +16,7 @@ const config = {
     // because Docker’s default for /dev/shm is 64MB
     '--disable-dev-shm-usage',
   ],
+  headless: !process.env.SOLUTION_PATH,
 }
 
 const solutionPath = process.env.SOLUTION_PATH || '/jail/student'
@@ -40,13 +41,13 @@ const server = http
     const stream = fs
       .createReadStream(filepath)
       .pipe(response)
-      .once('error', (err) => {
+      .once('error', err => {
         console.log(err)
         response.statusCode = 500 // handle 404 ?
         response.end('oopsie')
       })
   })
-  .listen(PORT, async (err) => {
+  .listen(PORT, async err => {
     let browser,
       code = 0
     try {
