@@ -4,15 +4,21 @@
 
 Today, you're gonna create your own color picker.
 
-Write the function `pick` which creates a `hsl` color picker varying the `hue` and `luminosity` of the according to the position of the mouse, which:
+Write the function `pick` which turns the screen into a `hsl` color picker, varying the `hue` and `luminosity` of according to the position of the mouse, which:
 
-- changes the `background` color of the `body`
-- displays those 3 values, using the `text` class:
-  - the `hue` value in a `div` with the class `hue`
-  - the `luminosity` value in a `div` with the class `luminosity`
-  - the full `hsl` value
+- changes the `background` color of the `body`, so the `hsl` value is different on each mouse position on the screen:
+  - on the axis X, the hue value has to vary between 0 and 360
+  - on the axis Y, the luminosity value has to vary between 0 and 100
+- displays those 3 values using the `text` class:
+  - the full `hsl` value in the middle of the screen
+  - the `hue` value in a `div` with the class `hue` in the top right corner of the screen
+  - the `luminosity` value in a `div` with the class `luminosity` in the bottom left corner of the screen
 - copies that value in the clipboard on click
 - displays two SVG lines, with respective ids `axisX` and `axisY`, following the cursor
+
+> Here is how a hsl value is formatted: `hsl(45, 50%, 35%)`
+
+> Use `Math.round()` to round the values
 
 ### Notions
 
