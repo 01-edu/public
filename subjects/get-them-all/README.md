@@ -7,7 +7,7 @@ You've been attributed the task to find the main architect of the Tower of Pisa 
 You arrive at the architects' chamber to find him, but all you have in front of you is a bunch of unknown people.
 Step by step, with the little information you have, gather information and figure out by elimination who he is.
 
-On top of the webpage, each of the four buttons fires a function which has to return an array containing 2 arrays (except for the last function): the targetted people, and the others eliminated at that step - the ones previously eliminated mustn't be included.
+On top of the webpage, each of the four buttons fires a function which has to return an array containing 2 arrays of HTML elements (except for the last function): the targetted people, and the others eliminated at that step - the ones previously eliminated mustn't be included.
 
 - Write the body of the `getArchitects` function, which targets the architects, all corresponding to a `<a>` tag, and eliminates all the non-architects people.
 
@@ -15,12 +15,13 @@ On top of the webpage, each of the four buttons fires a function which has to re
 
 - Write the body of the `getActive` function, which targets the classical architects who are `active` in their class, and eliminates the non-active classical architects.
 
-- Write the body of the `getBonannoPisano` function, which targets the architect you're looking for, whose `id` is `BonannoPisano` (return only this one as a single value, not an array), and eliminates all the remaining active classical architects.
+- Write the body of the `getBonannoPisano` function, which targets the architect you're looking for, whose `id` is `BonannoPisano` (return only this one as a single element, not an array), and eliminates all the remaining active classical architects.
 
 > From now on, don't forget to [**export**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export) all the expected functions, so that they can be imported to be tested
 
 ### Notions
 
+- [HTML Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
 - [`getElementsByTagName()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName)
 - [`getElementsByClassName()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName)
 - [`getElementById()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
