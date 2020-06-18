@@ -23,7 +23,7 @@ Today, your mission is to build a 3-column brick tower, maintain it and finally 
 ### Notions
 
 - [`createElement()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
-- [`append()`](https://developer.mozilla.org/fr/docs/Web/API/ParentNode/append)
+- [`append()`](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append)
 - [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
 - [`setInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval) / [`clearInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearInterval)
 - [`hasAttribute()`](https://developer.mozilla.org/en-US/docs/Web/API/Element/hasAttribute)
