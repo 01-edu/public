@@ -8,7 +8,7 @@ Write the function `compose`:
 
 - Make it fire every time a key is pressed
 - Create a new `div` with the class `note` when a letter of the lowercase alphabet is pressed, which has a unique background color generated using the `key` of the `event`, and displays the corresponding letter pressed
-- If the pressed key is the `Delete` one, delete the last note
+- If the pressed key is the `Backspace` one, delete the last note
 - If the pressed key is the `Escape` one, clear all the notes
 
 ### Notions
