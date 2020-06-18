@@ -7,7 +7,7 @@ export const setup = async ({ page }) => ({
     }),
 })
 
-const characters = `did you handle the keydown event correctly ?`
+const characters = `didyouhandlethekeydowneventcorrectly`
 
 tests.push(async ({ page, eq, getNotes }) => {
   // check that a note is created and matches the right letter when a key is pressed
