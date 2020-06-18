@@ -25,6 +25,7 @@ On top of the webpage, each of the four buttons fires a function which has to re
 - [`getElementsByClassName()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName)
 - [`getElementById()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
 - [`querySelectorAll()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) / [`querySelector()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+- ...and bit of CSS that could help with the [`:not` pseudo class](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)
 
 ### Provided files
 
