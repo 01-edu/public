@@ -18,6 +18,7 @@ const config = {
   ],
 }
 
+const solutionPath = process.env.SOLUTION_PATH || '/jail/student'
 const mediaTypes = {
   jpg: 'image/jpeg',
   png: 'image/png',
@@ -31,7 +32,7 @@ const server = http
   .createServer(({ url, method }, response) => {
     console.log(method + ' ' + url)
     const filepath = url.endsWith(`${exercise}/${exercise}.js`)
-      ? path.join('/jail/student', url.slice(exercise.length + 1))
+      ? path.join(solutionPath, url.slice(exercise.length + 1))
       : path.join('./subjects', url)
     const ext = path.extname(filepath)
     response.setHeader('Content-Type', mediaTypes[ext.slice(1)] || 'text/plain')
