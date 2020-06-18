@@ -13,7 +13,7 @@ Today, your mission is to build a 3-column brick tower, maintain it and finally 
   <div id="brick-1"></div>
   ```
 
-  - each brick in the middle column has to be set with the custom attribute `foundation` receiving the value `true`
+  - each brick in the middle column has to be set with the custom data attribute `foundation` receiving the value `true`
 
 - Each one of the two emojis in the top-right corner fires a function on click:
 
@@ -27,7 +27,7 @@ Today, your mission is to build a 3-column brick tower, maintain it and finally 
 - [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
 - [`setInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval) / [`clearInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearInterval)
 - [`hasAttribute()`](https://developer.mozilla.org/en-US/docs/Web/API/Element/hasAttribute)
-- [dataset](https://developer.mozilla.org/en-US/docs/Web/API/HTMLOrForeignElement/dataset)
+- [dataset](https://developer.mozilla.org/en-US/docs/Web/API/HTMLOrForeignElement/dataset) / [`data-*`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*)
 - [`remove()`](https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/remove)
 
 ### Provided files
