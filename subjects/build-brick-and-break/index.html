@@ -31,7 +31,7 @@ body {
   padding: 10vh 36.5vw;
 }
 
-[title='brick'] {
+div {
   text-align: center;
   font-size: 10px;
   width: 9vw;
@@ -72,20 +72,20 @@ body {
   <script type="module">
 import { build, repair, destroy } from './build-brick-and-break.js'
 
-build()
+build(54)
 
 const body = document.querySelector('body')
 
-const tools = document.createElement('div')
+const tools = document.createElement('section')
 tools.id = 'tools'
 body.append(tools)
 
-const dynamite = document.createElement('div')
+const dynamite = document.createElement('span')
 dynamite.id = 'dynamite'
 dynamite.textContent = '🧨'
 dynamite.addEventListener('click', destroy)
 
-const hammer = document.createElement('div')
+const hammer = document.createElement('span')
 hammer.id = 'hammer'
 hammer.textContent = '🔨'
 hammer.addEventListener('click', () => repair(...reparations))
