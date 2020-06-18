@@ -9,7 +9,12 @@ They must be `div` with the `gossip` class.
 
 The first `gossip` card must be a form with a `textarea` and a submit button that allows to add a new gossip to the list
 
-- customize the width, font size and background of each card with `range` inputs.
+Create 3 `type="range"` inputs:
+- one with `id="width"` that control the width of cards *(from 200 to 800 pixels)*
+- one with `id="fontSize"` that control the font size *(from 20 to 40 pixels)*
+- one with `id="background"` that control the background lightness *(from 20% to 75%)*
+
+> *tips:* use `hsl` for colors 
 
 ### Notions
 

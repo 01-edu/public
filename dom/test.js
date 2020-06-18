@@ -29,6 +29,28 @@ const mediaTypes = {
   json: 'application/json',
 }
 
+const random = (min, max = min) => {
+  max === min && (min = 0)
+  min = Math.ceil(min)
+  return Math.floor(Math.random() * (Math.floor(max) - min + 1)) + min
+}
+
+const rgbToHsl = rgbStr => {
+  const [r, g, b] = rgbStr.slice(4, -1).split(',').map(Number)
+  const max = Math.max(r, g, b)
+  const min = Math.min(r, g, b)
+  const l = (max + min) / ((0xff * 2) / 100)
+
+  if (max === min) return [0, 0, l]
+
+  const d = max - min
+  const s = (d / (l > 50 ? 0xff * 2 - max - min : max + min)) * 100
+  if (max === r) return [((g - b) / d + (g < b && 6)) * 60, s, l]
+  return max === g
+    ? [((b - r) / d + 2) * 60, s, l]
+    : [((r - g) / d + 4) * 60, s, l]
+}
+
 const server = http
   .createServer(({ url, method }, response) => {
     console.log(method + ' ' + url)
@@ -57,7 +79,14 @@ const server = http
 
       const [page] = await browser.pages()
       await page.goto(`http://localhost:${PORT}/${exercise}/index.html`)
-      const context = await setup({ page })
+      const baseContext = {
+        page,
+        browser,
+        eq: deepStrictEqual,
+        random,
+        rgbToHsl,
+      }
+      const context = await setup(baseContext)
 
       browser
         .defaultBrowserContext()
@@ -65,7 +94,7 @@ const server = http
 
       for (const [n, test] of tests.entries()) {
         try {
-          await test({ page, eq: deepStrictEqual, ...context })
+          await test({ ...baseContext, ...context })
         } catch (err) {
           console.log(`test #${n} failed:`)
           console.log(test.toString())

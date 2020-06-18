@@ -2,55 +2,10 @@ export const tests = []
 
 const between = (expected, min, max) => expected >= min && expected <= max
 
-const random = (min, max) => {
-  if (!max) {
-    max = min
-    min = 0
-  }
-  min = Math.ceil(min)
-  max = Math.floor(max)
-  return Math.floor(Math.random() * (max - min + 1)) + min
-}
-
-const rgbToHsl = (r, g, b) => {
-  r = r / 255
-  g = g / 255
-  b = b / 255
-  const max = Math.max(r, g, b)
-  const min = Math.min(r, g, b)
-  let h
-  let s
-  const l = (max + min) / 2
-
-  if (max === min) {
-    h = s = 0 // achromatic
-  } else {
-    const d = max - min
-    s = l > 0.5 ? d / (2 - max - min) : d / (max + min)
-    switch (max) {
-      case r:
-        h = (g - b) / d + (g < b ? 6 : 0)
-        break
-      case g:
-        h = (b - r) / d + 2
-        break
-      case b:
-        h = (r - g) / d + 4
-        break
-    }
-    h /= 6
-  }
-
-  return [Math.floor(h * 360), Math.floor(s * 100), Math.floor(l * 100)]
-}
-
-export const setup = async ({ page }) => {
+export const setup = async ({ page, rgbToHsl }) => {
   return {
     bodyBgRgb: async () =>
-      (await page.$eval('body', (body) => body.style.background))
-        .replace(/[^0-9,]+/g, '')
-        .split(',')
-        .map((e) => Number(e)),
+      rgbToHsl(await page.$eval('body', body => body.style.background)),
   }
 }
 
@@ -64,7 +19,7 @@ tests.push(async ({ page, eq }) => {
     const x = move
     const y = move * 2
     await page.mouse.move(x, y)
-    const bodyBg = await page.$eval('body', (body) => body.style.background)
+    const bodyBg = await page.$eval('body', body => body.style.background)
     const validColor = bodyBg.includes('rgb')
     if (!validColor) continue
     bgs.push(bodyBg)
@@ -73,105 +28,77 @@ tests.push(async ({ page, eq }) => {
   eq(differentBgs, 20)
 })
 
-const coords = () => [
+const near = (a, b) => a < (b+2.5) && a > (b-2.5)
+const numVal = n => n.textContent.replace(/[^0-9,]/g, '')
+const generateCoords = random => [
   [random(125, 500), random(125, 400)],
   [random(125, 500), random(125, 400)],
   [random(125, 500), random(125, 400)],
 ]
 
-tests.push(async ({ page, eq, bodyBgRgb }) => {
+tests.push(async ({ page, eq, bodyBgRgb, random }) => {
   // check that the hsl value displayed matches the current background color
-  const moves = coords()
-  let step = 0
-  while (step < moves.length) {
-    await page.mouse.move(...moves[step])
-    const bgValue = rgbToHsl(...(await bodyBgRgb()))
-    const hslValue = await page.$eval('.hsl', (hsl) =>
-      hsl.textContent
-        .replace(/[^0-9,]+/g, '')
-        .split(',')
-        .map((e) => Number(e)),
-    )
-
-    const matching = hslValue.map((v, i) =>
-      between(v, bgValue[i] - 2, bgValue[i] + 2) ? bgValue[i] : v,
-    )
-    eq(matching, bgValue)
-    step++
+  for (const move of generateCoords(random)) {
+    await page.mouse.move(...move)
+    const a = await bodyBgRgb()
+    const b = (await page.$eval('.hsl', numVal)).split(',')
+    if (a.every((v, i) => near(v, Number(b[i])))) continue
+    throw Error(`hsl(${a.map(Math.round)}) to far from hsl(${b})`)
   }
 })
 
-tests.push(async ({ page, eq, bodyBgRgb }) => {
+tests.push(async ({ page, eq, bodyBgRgb, random }) => {
   // check that the hue value displayed matches the current background color
-  const moves = coords()
-  let step = 0
-  while (step < moves.length) {
-    await page.mouse.move(...moves[step])
-    const bgValue = rgbToHsl(...(await bodyBgRgb()))
-    const hueValue = await page.$eval('.hue', (hue) =>
-      hue.textContent.replace(/[^0-9,]+/g, ''),
-    )
+  for (const move of generateCoords(random)) {
+    await page.mouse.move(...move)
+    const [h] = await bodyBgRgb()
+    const hue = await page.$eval('.hue', numVal)
 
-    const matching = between(hueValue, bgValue[0] - 2, bgValue[0] + 2)
-      ? bgValue[0]
-      : Number(hueValue)
-    eq(matching, bgValue[0])
-    step++
+    if (!near(h, Number(hue))) {
+      console.log({h,hue, c:near(h, Number(hue)) })
+      throw Error(`hue ${Math.round(h)} to far from ${hue}`)
+    }
   }
 })
 
-tests.push(async ({ page, eq, bodyBgRgb }) => {
+tests.push(async ({ page, eq, bodyBgRgb, random }) => {
   // check that the luminosity value displayed matches the current background color
-  const moves = coords()
-  let step = 0
-  while (step < moves.length) {
-    await page.mouse.move(...moves[step])
-    const bgValue = rgbToHsl(...(await bodyBgRgb()))
-    const luminosityValue = await page.$eval('.luminosity', (luminosity) =>
-      luminosity.textContent.replace(/[^0-9,]+/g, ''),
-    )
+  for (const move of generateCoords(random)) {
+    await page.mouse.move(...move)
+    const [,,l] = await bodyBgRgb()
+    const lum = await page.$eval('.luminosity', numVal)
 
-    const matching = between(luminosityValue, bgValue[2] - 2, bgValue[2] + 2)
-      ? bgValue[2]
-      : Number(luminosityValue)
-    eq(matching, bgValue[2])
-    step++
+    if (!near(l, Number(lum))) {
+      throw Error(`luminosity ${Math.round(l)} to far from ${lum}`)
+    }
   }
 })
 
-tests.push(async ({ page, eq, bodyBgRgb }) => {
+tests.push(async ({ page, eq, bodyBgRgb, random }) => {
   // check that the hsl value is copied in the clipboard on click
-  const moves = coords()
-  let step = 0
-  while (step < moves.length) {
-    await page.mouse.click(...moves[step])
+  for (const move of generateCoords(random)) {
+    await page.mouse.click(...move)
     const clipboard = await page.evaluate(() => navigator.clipboard.readText())
-    const hslValue = await page.$eval('.hsl', (hsl) => hsl.textContent)
+    const hslValue = await page.$eval('.hsl', hsl => hsl.textContent)
     eq(hslValue, clipboard)
-    step++
   }
 })
 
-tests.push(async ({ page, eq, bodyBgRgb }) => {
+tests.push(async ({ page, eq, bodyBgRgb, random }) => {
   // check that each svg axis is following the mouse
-  const moves = coords()
-  let step = 0
-  while (step < 1) {
-    const [mouseX, mouseY] = moves[step]
-    await page.mouse.move(mouseX, mouseY)
-    const axisX = await page.$eval('#axisX', (line) => [
-      line.getAttribute('x1'),
-      line.getAttribute('x2'),
-    ])
-    const axisY = await page.$eval('#axisY', (line) => [
-      line.getAttribute('y1'),
-      line.getAttribute('y2'),
-    ])
+  const [[mouseX, mouseY]] = generateCoords(random)
+  await page.mouse.move(mouseX, mouseY)
+  const axisX = await page.$eval('#axisX', line => [
+    line.getAttribute('x1'),
+    line.getAttribute('x2'),
+  ])
+  const axisY = await page.$eval('#axisY', line => [
+    line.getAttribute('y1'),
+    line.getAttribute('y2'),
+  ])
 
-    const checkAxisCoords = (coords) => Number([...new Set(coords)].join())
+  const checkAxisCoords = coords => Number([...new Set(coords)].join())
 
-    eq(checkAxisCoords(axisX), mouseX)
-    eq(checkAxisCoords(axisY), mouseY)
-    step++
-  }
+  eq(checkAxisCoords(axisX), mouseX)
+  eq(checkAxisCoords(axisY), mouseY)
 })
