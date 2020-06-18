@@ -14,7 +14,9 @@ Write the function `pick` which turns the screen into a `hsl` color picker, vary
   - the `hue` value in a `div` with the class `hue` in the top right corner of the screen
   - the `luminosity` value in a `div` with the class `luminosity` in the bottom left corner of the screen
 - copies that value in the clipboard on click
-- displays two SVG lines, with respective ids `axisX` and `axisY`, following the cursor
+- displays two SVG lines, with respective ids `axisX` and `axisY`, following the cursor like so:
+  - the axisX has to set the attributes `x1` and `x2` to the mouse X position
+  - the axisY has to set the attributes `y1` and `y2` to the mouse Y position
 
 > Here is how a hsl value is formatted: `hsl(45, 50%, 35%)`
 
