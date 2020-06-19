@@ -8,7 +8,7 @@ Develop a trap to capture the elements when the mouse is getting too close to th
 
 - Create a function `moveCircle`: make it fire when the mouse moves, and get the last circle created and makes it move along with the mouse
 
-- Create a function `setBox` which sets a box with the class `box` in the center of the page ; when a circle is inside that box, it has to be purple ; once a circle enters the box, it is trapped inside and cannot go out of it anymore.
+- Create a function `setBox` which sets a box with the class `box` in the center of the page ; when a circle is inside that box, it has to be purple (use the CSS global variable `var(--purple)` as `background`) ; once a circle enters the box, it is trapped inside and cannot go out of it anymore.
 
 > Hint: do not use operators like `<=` or `=>`, a circle has to be trapped **strictly** inside the box
 
