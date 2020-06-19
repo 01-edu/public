@@ -7,7 +7,6 @@ import (
 	"lib"
 )
 
-// this is the function that creates the TESTS
 func main() {
 	type node struct {
 		s    string
@@ -45,5 +44,3 @@ func main() {
 		lib.Challenge("AtoiBase", student.AtoiBase, base.Atoi, arg.s, arg.base)
 	}
 }
-
-// TODO: fix base exercises
