@@ -10,7 +10,7 @@ Write the function `pick` which turns the screen into a `hsl` color picker, vary
   - on the axis X, the hue value has to vary between 0 and 360
   - on the axis Y, the luminosity value has to vary between 0 and 100
 - displays those 3 values using the `text` class:
-  - the full `hsl` value in the middle of the screen
+  - the full `hsl` value in a `div` with the class `hsl` in the middle of the screen
   - the `hue` value in a `div` with the class `hue` in the top right corner of the screen
   - the `luminosity` value in a `div` with the class `luminosity` in the bottom left corner of the screen
 - copies that value in the clipboard on click
@@ -31,7 +31,9 @@ Write the function `pick` which turns the screen into a `hsl` color picker, vary
 
 ### Provided files
 
-- Check the HTML file [index.html](/public/subjects/pick-and-click/index.html), which includes:
+You have at your disposal the following file that you can download to test locally:
+
+- the HTML file [index.html](/public/subjects/pick-and-click/index.html) to open in the browser, which includes:
 
   - the JS script which will allow to run your code
   - some CSS pre-styled classes: feel free to use those as they are, or modify them

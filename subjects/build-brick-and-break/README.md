@@ -32,7 +32,9 @@ Today, your mission is to build a 3-column brick tower, maintain it and finally 
 
 ### Provided files
 
-- Check the HTML file [index.html](/public/subjects/build-brick-and-break/index.html), which includes:
+You have at your disposal the following file that you can download to test locally:
+
+- the HTML file [index.html](/public/subjects/build-brick-and-break/index.html) to open in the browser, which includes:
 
   - the JS script running some code, and which will also allow to run yours
   - some CSS pre-styled classes: feel free to use those as they are, or modify them

@@ -41,12 +41,14 @@ Click 6 --> <button class="button"></div>
 
 ### Provided files
 
-- Check the HTML file [index.html](/public/subjects/pimp-my-style/index.html), which includes:
+You have at your disposal the following files that you can download to test locally:
+
+- the HTML file [index.html](/public/subjects/pimp-my-style/index.html) to open in the browser, which includes:
 
   - the JS script running some code, and which will also allow to run yours
   - some CSS pre-styled classes: feel free to use those as they are, or modify them
 
-- Import `styles` from the data file [data.js](/public/subjects/pimp-my-style/data.js)
+- the data file [data.js](/public/subjects/pimp-my-style/data.js) from which you can import `styles`
 
 ### Expected result
 

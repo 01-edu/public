@@ -24,12 +24,14 @@ Write the function `explore` which creates a page displaying the list of `places
 
 ### Provided files
 
-- Check the HTML file [index.html](/public/subjects/where-do-we-go/index.html), which includes:
+You have at your disposal the following files that you can download to test locally:
+
+- the HTML file [index.html](/public/subjects/where-do-we-go/index.html) to open in the browser, which includes:
 
   - the JS script which will allow to run your code
   - some CSS pre-styled classes: feel free to use those as they are, or modify them
 
-- Import `places` from the data file [data.js](/public/subjects/where-do-we-go/data.js)
+- the data file [data.js](/public/subjects/where-do-we-go/data.js) from which you can import `places`
 
 ### Expected result
 

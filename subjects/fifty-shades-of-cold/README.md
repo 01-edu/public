@@ -32,12 +32,14 @@ Check the `colors` array provided in the data file below.
 
 ### Provided files
 
-- Check the HTML file [index.html](/public/subjects/fifty-shades-of-cold/index.html), which includes:
+You have at your disposal the following files that you can download to test locally:
+
+- the HTML file [index.html](/public/subjects/fifty-shades-of-cold/index.html) to open in the browser, which includes:
 
   - the JS script running some code, and which will also allow to run yours
   - some CSS pre-styled classes: feel free to use those as they are, or modify them
 
-- Import `colors` from the data file [data.js](/public/subjects/fifty-shades-of-cold/data.js)
+- the data file [data.js](/public/subjects/fifty-shades-of-cold/data.js) from which you can import `colors`
 
 ### Expected result
 
