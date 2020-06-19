@@ -20,7 +20,7 @@ Write the function `explore` which creates a page displaying the list of `places
 
 - [Wheel event](https://developer.mozilla.org/en-US/docs/Web/API/Element/wheel_event): [`deltaY`](https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent/deltaY)
 - [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window): [`innerHeight`](https://developer.mozilla.org/en-US/docs/Web/API/Window/innerHeight), [`scrollY`](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY)
-- Take a look at the [DMS coordinates system](https://en.wikipedia.org/wiki/Geographic_coordinate_system#Degrees:_a_measurement_of_angle)
+- Take a look at the [DMS coordinates system](https://en.wikipedia.org/wiki/Decimal_degrees)
 
 ### Provided files
 
