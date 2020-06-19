@@ -13,7 +13,7 @@ Write the function `explore` which creates a page displaying the list of `places
   - displays as text strings separated by `\n`, the `name` and the `coordinates` of the current place featured in the image
   - using the corresponding `color` as text color
   - updates the `name`, `coordinates` and `color` on scroll, when the top of the next image reaches the middle of the screen height
-  - has the `href` attribute set to open a new tab redirecting to a Google Maps' URL with the coordinates of the place currently displayed
+  - has the `href` attribute set to open **a new tab** redirecting to a Google Maps' URL with the coordinates of the place currently displayed
 - display a compass indicating the latitude direction ; `N` for North if the user is scrolling up, `S` for South if he's scrolling down
 
 ### Notions
