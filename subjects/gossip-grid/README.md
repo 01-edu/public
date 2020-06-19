@@ -11,11 +11,11 @@ The first `gossip` card must be a `form` with a `textarea` and a submit button w
 
 Create 3 `type="range"` inputs with the class `range`, all wrapped in a `div` with the class `ranges`:
 
-- one with `id="width"` that control the width of cards *(from 200 to 800 pixels)*
-- one with `id="fontSize"` that control the font size *(from 20 to 40 pixels)*
-- one with `id="background"` that control the background lightness *(from 20% to 75%)*
+- one with `id="width"` that control the width of cards _(from 200 to 800 pixels)_
+- one with `id="fontSize"` that control the font size _(from 20 to 40 pixels)_
+- one with `id="background"` that control the background lightness _(from 20% to 75%)_
 
-> *tips:* use `hsl` for colors 
+> _tips:_ use `hsl` for colors
 
 ### Notions
 
@@ -24,12 +24,14 @@ Create 3 `type="range"` inputs with the class `range`, all wrapped in a `div` wi
 
 ### Provided files
 
-- Check the HTML file [index.html](/public/subjects/gossip-grid/index.html), which includes:
+You have at your disposal the following files that you can download to test locally:
+
+- the HTML file [index.html](/public/subjects/gossip-grid/index.html) to open in the browser, which includes:
 
   - the JS script which will allow to run your code
   - some CSS pre-styled classes: feel free to use those as they are, or modify them
 
-- Import `gossips` from the data file [data.js](/public/subjects/gossip-grid/data.js)
+- the data file [data.js](/public/subjects/gossip-grid/data.js) from which you can import `gossips`
 
 ### Expected result
 

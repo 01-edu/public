@@ -31,7 +31,9 @@ On top of the webpage, each of the four buttons fires a function which has to re
 
 ### Provided files
 
-- Check the HTML file [index.html](/public/subjects/get-them-all/index.html), which includes:
+You have at your disposal the following files that you can download to test locally:
+
+- the HTML file [index.html](/public/subjects/get-them-all/index.html) to open in the browser, which includes:
 
   - the JS script running some code, and which will also allow to run yours
   - some data used to generate content
