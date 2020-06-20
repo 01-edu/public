@@ -26,7 +26,7 @@ On top of the webpage, each of the four buttons fires a function:
   - the HTML element of the architect you're looking for, whose `id` is `BonannoPisano`
   - an array which contains all the remaining active classical architects
 
-> From now on, don't forget to [**export**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export) all the expected functions, so that they can be imported to be tested
+> From now on, don't forget to [**export**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export) all the expected functions, so that they can be imported to be tested<br/>
 > `export const getArchitects = () => {...}`
 
 ### Notions
