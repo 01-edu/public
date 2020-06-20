@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/01-edu/z01"
+	"lib"
 )
 
 func FormatTree(root *TreeNode) string {
@@ -96,15 +96,15 @@ func ChallengeTree(
 			args2 = append(args2, v)
 		}
 	}
-	st1 := z01.Monitor(fn1, args1)
-	st2 := z01.Monitor(fn2, args2)
+	st1 := lib.Monitor(fn1, args1)
+	st2 := lib.Monitor(fn2, args2)
 
 	if st1.Stdout != st2.Stdout {
-		z01.Fatalf("%s(\n%s)\n prints %s instead of %s\n",
+		lib.Fatalf("%s(\n%s)\n prints %s instead of %s\n",
 			name,
 			FormatTree(arg1),
-			z01.Format(st2.Stdout),
-			z01.Format(st1.Stdout),
+			lib.Format(st2.Stdout),
+			lib.Format(st1.Stdout),
 		)
 	}
 }
@@ -137,10 +137,10 @@ func ListToString(n *NodeL) string {
 }
 
 func ConvertIntToInterface(t []int) []interface{} {
-	RandLen := z01.RandIntBetween(0, len(t))
+	RandLen := lib.RandIntBetween(0, len(t))
 	s := make([]interface{}, RandLen)
 	for j := 0; j < RandLen; j++ {
-		for i := 0; i < z01.RandIntBetween(1, len(t)); i++ {
+		for i := 0; i < lib.RandIntBetween(1, len(t)); i++ {
 			s[j] = t[i]
 		}
 	}
@@ -148,10 +148,10 @@ func ConvertIntToInterface(t []int) []interface{} {
 }
 
 func ConvertIntToStringface(t []string) []interface{} {
-	RandLen := z01.RandIntBetween(0, len(t))
+	RandLen := lib.RandIntBetween(0, len(t))
 	s := make([]interface{}, RandLen)
 	for j := 0; j < RandLen; j++ {
-		for i := 0; i < z01.RandIntBetween(1, len(t)); i++ {
+		for i := 0; i < lib.RandIntBetween(1, len(t)); i++ {
 			s[j] = t[i]
 		}
 	}
@@ -170,13 +170,13 @@ func ElementsToTest(table []NodeTest) []NodeTest {
 	)
 	for i := 0; i < 3; i++ {
 		val := NodeTest{
-			Data: ConvertIntToInterface(z01.MultRandInt()),
+			Data: ConvertIntToInterface(lib.MultRandInt()),
 		}
 		table = append(table, val)
 	}
 	for i := 0; i < 3; i++ {
 		val := NodeTest{
-			Data: ConvertIntToStringface(z01.MultRandWords()),
+			Data: ConvertIntToStringface(lib.MultRandWords()),
 		}
 		table = append(table, val)
 	}

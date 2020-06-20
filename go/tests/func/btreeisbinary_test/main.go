@@ -5,8 +5,9 @@ import (
 
 	student "student"
 
-	"./correct"
-	"github.com/01-edu/public/go/lib"
+	"func/correct"
+
+	"lib"
 )
 
 func BTreeMinStu(root *student.TreeNode) *student.TreeNode {

@@ -5,7 +5,7 @@ import (
 
 	student "student"
 
-	"./correct"
+	"func/correct"
 )
 
 func main() {

@@ -5,8 +5,9 @@ import (
 
 	student "student"
 
-	"./correct"
-	"github.com/01-edu/public/go/lib"
+	"func/correct"
+
+	"lib"
 )
 
 func errorMessage_max(fn interface{}, root, a *correct.TreeNode, b *student.TreeNode) {

@@ -3,8 +3,9 @@ package main
 import (
 	student "student"
 
-	"./correct"
-	"github.com/01-edu/public/go/lib"
+	"func/correct"
+
+	"lib"
 )
 
 type Node5 = student.NodeL
