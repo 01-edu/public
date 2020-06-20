@@ -27,13 +27,14 @@ if test "$s"; then
 fi
 
 # Check restrictions
-if test "$ALLOWED_FUNCTIONS"; then
-	for file in $EXPECTED_FILES; do
-		# shellcheck disable=SC2086
-		rc "$file" $ALLOWED_FUNCTIONS
-	done
+if test "$ALLOWED_FUNCTIONS" && test "$EXPECTED_FILES"; then
+	IFS=' '
+	first_file=$(echo "$EXPECTED_FILES" | cut -d' ' -f1)
+	# shellcheck disable=SC2086
+	rc "$first_file" $ALLOWED_FUNCTIONS
 fi
-
+IFS='
+'
 # Compile and run test
 cd
 GOPATH=$HOME:$GOPATH
