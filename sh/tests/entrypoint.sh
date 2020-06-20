@@ -10,7 +10,7 @@ cd student
 
 if test "$REPOSITORY"; then
 	password=$(cat)
-	git clone --quiet --depth=1 --shallow-submodules http://root:"${password}"@"$REPOSITORY" .
+	git clone --quiet --depth=1 --shallow-submodules https://root:"${password}"@"$REPOSITORY" .
 else
 	first_file=$(echo "$EXPECTED_FILES" | cut -d' ' -f1)
 	mkdir -p "$(dirname "$first_file")"
