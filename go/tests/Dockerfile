@@ -8,5 +8,6 @@ COPY --from=mkcert-ca . /usr/local/share/ca-certificates
 RUN update-ca-certificates
 COPY entrypoint.sh /usr/local/bin
 COPY . src
+RUN go get rc
 RUN go install rc prog/...
 ENTRYPOINT ["/bin/sh", "/usr/local/bin/entrypoint.sh"]
