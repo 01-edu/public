@@ -51,6 +51,7 @@ the necessary data will be:
 The information must be displayed in multiple pages. \
 A `<select>` input is used to chose from `10`, `20`,`50`, `100` or `all results`.
 
+> The default page size selected option must be `20`
 
 #### Search
 
