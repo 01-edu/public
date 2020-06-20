@@ -3,10 +3,30 @@ package main
 import (
 	student "student"
 
-	"./base"
-	"./correct"
-	"github.com/01-edu/public/go/lib"
+	"base"
+	"lib"
 )
+
+func convertNbrBase(n int, base string) string {
+	var result string
+	length := len(base)
+
+	for n >= length {
+		result = string(base[(n%length)]) + result
+		n = n / length
+	}
+	result = string(base[n]) + result
+
+	return result
+}
+
+func convertBase(nbr, baseFrom, baseTo string) string {
+	resultIntermediary := base.Atoi(nbr, baseFrom)
+
+	resultFinal := convertNbrBase(resultIntermediary, baseTo)
+
+	return resultFinal
+}
 
 func main() {
 	type node struct {
@@ -35,7 +55,7 @@ func main() {
 	)
 
 	for _, arg := range table {
-		lib.Challenge("ConvertBase", student.ConvertBase, correct.ConvertBase, arg.nbr, arg.baseFrom, arg.baseTo)
+		lib.Challenge("ConvertBase", student.ConvertBase, convertBase, arg.nbr, arg.baseFrom, arg.baseTo)
 	}
 }
 
