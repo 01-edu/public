@@ -8,17 +8,26 @@ You arrive at the architects' chamber to find him, but all you have in front of 
 Step by step, with the little information you have, gather information and figure out by elimination who he is.
 
 Launch the provided HTML file in the browser to begin your investigation.<br/>
-On top of the webpage, each of the four buttons fires a function which has to return an array containing 2 arrays of HTML elements (except for the last function): the targetted people, and the others eliminated at that step - the ones previously eliminated mustn't be included.
+On top of the webpage, each of the four buttons fires a function:
 
-- Write the body of the `getArchitects` function, which targets the architects, all corresponding to a `<a>` tag, and eliminates all the non-architects people.
+- Write the body of the `getArchitects` function, which returns an array containing 2 arrays: 
+  - the first array contains the architects, all corresponding to a `<a>` tag 
+  - the second array contains all the non-architects people
 
-- Write the body of the `getClassical` function, which targets the architects belonging to the `classical` class, and eliminates the non-classical architects.
+- Write the body of the `getClassical` function, which returns an array containing 2 arrays:
+  - the first array contains the architects belonging to the `classical` class
+  - the second array contains the non-classical architects
 
-- Write the body of the `getActive` function, which targets the classical architects who are `active` in their class, and eliminates the non-active classical architects.
+- Write the body of the `getActive` function, which returns an array containing 2 arrays: 
+  - the first array contains the classical architects who are `active` in their class
+  - the second array contains the non-active classical architects
 
-- Write the body of the `getBonannoPisano` function, which targets the architect you're looking for, whose `id` is `BonannoPisano` (return only this one as a single element, not an array), and eliminates all the remaining active classical architects.
+- Write the body of the `getBonannoPisano` function, which returns an array containing: 
+  - the HTML element of the architect you're looking for, whose `id` is `BonannoPisano`
+  - an array which contains all the remaining active classical architects
 
 > From now on, don't forget to [**export**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export) all the expected functions, so that they can be imported to be tested
+> `export const getArchitects = () => {...}`
 
 ### Notions
 
