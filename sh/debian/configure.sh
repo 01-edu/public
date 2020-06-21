@@ -63,7 +63,7 @@ fi
 EOF
 
 # Basic packages
-apt-get -y install man bash-completion git ufw jq curl build-essential netcat wget psmisc lz4 file net-tools brotli unzip zip moreutils xauth sysfsutils rsync iperf pv tree mc screen ssh iotop whois
+apt-get -y install man bash-completion git ufw jq curl build-essential netcat wget psmisc lz4 file net-tools brotli unzip zip moreutils xauth sysfsutils rsync iperf pv tree mc screen ssh iotop whois sudo
 
 # Configure screen
 cat <<'EOF'>> /etc/screenrc
