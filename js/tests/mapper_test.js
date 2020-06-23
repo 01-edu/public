@@ -24,18 +24,18 @@ const arrayFormatSentence = (item, index, arr) => {
 
 // map
 t(({ eq, ctx }) =>
-  eq(map(ctx.numbers, add1), [11, -9, 21, -94, 87, 103, 36, 90, 111]),
+  eq(map(ctx.numbers, add1), [11, -9, 21, -94, 87, 103, 36, 90, 111])
 )
 t(({ eq, ctx }) =>
-  eq(map(ctx.numbers, mult2), [20, -20, 40, -190, 172, 204, 70, 178, 220]),
-)
-
-t(({ eq, ctx }) =>
-  eq(map(ctx.numbers, sub3), [7, -13, 17, -98, 83, 99, 32, 86, 107]),
+  eq(map(ctx.numbers, mult2), [20, -20, 40, -190, 172, 204, 70, 178, 220])
 )
 
 t(({ eq, ctx }) =>
-  eq(map(ctx.numbers, doAll), [19, -21, 39, -191, 171, 203, 69, 177, 219]),
+  eq(map(ctx.numbers, sub3), [7, -13, 17, -98, 83, 99, 32, 86, 107])
+)
+
+t(({ eq, ctx }) =>
+  eq(map(ctx.numbers, doAll), [19, -21, 39, -191, 171, 203, 69, 177, 219])
 )
 
 t(({ eq, ctx }) =>
@@ -49,7 +49,7 @@ t(({ eq, ctx }) =>
     '6: 35',
     '7: 89',
     '8: 110',
-  ]),
+  ])
 )
 
 t(({ eq, ctx }) =>
@@ -63,53 +63,53 @@ t(({ eq, ctx }) =>
     '35 is at index: 6 out of 8',
     '89 is at index: 7 out of 8',
     '110 is at index: 8 out of 8',
-  ]),
+  ])
 )
 
 t(({ eq, ctx }) =>
   eq(
     map(ctx.sentences[0], arrayFormatSentence).join(''),
-    'Colombia, Mexico, and El Salvador are 3 Spanish speaking countries.',
-  ),
+    'Colombia, Mexico, and El Salvador are 3 Spanish speaking countries.'
+  )
 )
 
 t(({ eq, ctx }) =>
   eq(
     map(ctx.sentences[1], arrayFormatSentence).join(''),
-    'Perou, Brazil, Argentina, and Venezuela are 4 countries in South America.',
-  ),
+    'Perou, Brazil, Argentina, and Venezuela are 4 countries in South America.'
+  )
 )
 
 t(({ eq, ctx }) =>
   eq(
     map(ctx.sentences[2], arrayFormatSentence).join(''),
-    'France, Portugal, and Italy are 3 members of the EU.',
-  ),
+    'France, Portugal, and Italy are 3 members of the EU.'
+  )
 )
 
-t(({ eq, ctx }) =>
+t(({ eq }) =>
   // map should not flat
   eq(
-    map([1, 2, 3], n => [n, n]),
+    map([1, 2, 3], (n) => [n, n]),
     [
       [1, 1],
       [2, 2],
       [3, 3],
-    ],
-  ),
+    ]
+  )
 )
 
 // flatMap
-t(({ eq, ctx }) =>
+t(({ eq }) =>
   // flatMap should flatten the result of map
   eq(
-    flatMap([1, 2, 3], n => [n, n]),
-    [1, 1, 2, 2, 3, 3],
-  ),
+    flatMap([1, 2, 3], (n) => [n, n]),
+    [1, 1, 2, 2, 3, 3]
+  )
 )
 
 t(({ eq, ctx }) =>
-  eq(flatMap(ctx.mixed, add1), ['101', -9, 21, -94, 87, '1021', '35,891', 111]),
+  eq(flatMap(ctx.mixed, add1), ['101', -9, 21, -94, 87, '1021', '35,891', 111])
 )
 
 t(({ eq, ctx }) =>
@@ -122,7 +122,7 @@ t(({ eq, ctx }) =>
     '5: 102',
     undefined,
     '7: 110',
-  ]),
+  ])
 )
 
 t(({ eq, ctx }) =>
@@ -135,7 +135,7 @@ t(({ eq, ctx }) =>
     '-33 is at index: 5 out of 7',
     '-4 is at index: 6 out of 7',
     '18 is at index: 7 out of 7',
-  ]),
+  ])
 )
 
 Object.freeze(tests)
