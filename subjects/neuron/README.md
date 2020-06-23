@@ -9,11 +9,11 @@ dataset into an object so that it can better navigate the data.
 
 ```js
 neuron([
-  'Questions: what is ounces? - Response: Ounce, unit of weight in the avoirdupois system',
-  'Questions: what is ounces? - Response: equal to 1/16 pound (437 1/2 grains)',
-  'Questions: what is Mud dauber - Response: Mud dauber is a name commonly applied to a number of wasps',
-  'Orders: shutdown! - Response: Yes Sr!',
-  'Orders: Quote something! - Response: Pursue what catches your heart, not what catches your eyes.'
+  'Questions: what is ounces? - Responses: Ounce, unit of weight in the avoirdupois system',
+  'Questions: what is ounces? - Responses: equal to 1/16 pound (437 1/2 grains)',
+  'Questions: what is Mud dauber - Responses: Mud dauber is a name commonly applied to a number of wasps',
+  'Orders: shutdown! - Responses: Yes Sr!',
+  'Orders: Quote something! - Responses: Pursue what catches your heart, not what catches your eyes.'
 ])
 
 // output
