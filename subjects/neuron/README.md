@@ -19,11 +19,11 @@ neuron([
 // output
 {
   questions: {
-    what_is_ounces: { questions: 'what is ounces?', responses: [
+    what_is_ounces: { question: 'what is ounces?', responses: [
         'Ounce, unit of weight in the avoirdupois system',
         'equal to 1/16 pound (437 1/2 grains)'
     ] },
-    what_is_mud_dauber: { questions: 'what is Mud dauber', responses: [
+    what_is_mud_dauber: { question: 'what is Mud dauber', responses: [
         'Mud dauber is a name commonly applied to a number of wasps'
     ] }
   },
