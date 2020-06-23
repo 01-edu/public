@@ -2,14 +2,13 @@
 
 ### Instructions
 
-Create a function called `flags` that receives an object and outputs
+Create a function called `flags` that receives an object and returns
 the specific aliases and descriptions from the properties of that object.
 
 The `help` flag:
   - Should be present in the output by default.
-  - When not present in the input, it should output the description of all flags.
-    But when present it can specify the flags that you want to see
-    the description of. (ex: `help: ['divide']`)
+  - When not present in the input, it should return the description of all flags.
+    But when present it specifies the descriptions of the flags that are passed to help. (ex: `help: ['divide']`)
 
 #### Example:
 
