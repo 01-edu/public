@@ -2,25 +2,22 @@
 
 ### Instructions
 
-This exercise consists in creating curry functions to apply in the objects
-entries.
+This exercise consists of creating curry functions to apply in the object's entries.
 You will have to create the following curry functions:
 
-- `defaultCurry` that will curry two objects in witch the second object must
-be the default object and returns a new object with the modifications applied
-by the first object
-- `mapCurry` that replicate the function `.map` 
-- `reduceCurry` that replicate the function `.reduce`
-- `filterCurry` that replicate the function `.filter`
+- `defaultCurry` curries two objects in which the second object overrides the values of the first. If the key is not present then add it with the corresponding value.
+- `mapCurry` replicates function `.map`, where first entry is function, second is object.
+- `reduceCurry` replicates function `.reduce`, where first entry is function, second is (object, initial value).
+- `filterCurry` replicates function `.filter`, where first entry is function, second is object.
 
-You will also have to create for each curry function the following:
+You have to create for each curry function the following functions with one parameter `personnel`:
 
 - `reduceScore` that will return the total value of the scores
-  of the persons who use the force
+  of the persons who use the force.
 - `filterForce` that will return the force users with `shootingScores`
   equal or higher than 80
 - `mapAverage` that will return a new object with the propriety `averageScore`
-  that is the averages of the scores for each person
+  that is the average of the scores for each person
 
 
 ### Notions
