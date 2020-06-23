@@ -7,7 +7,7 @@ t(({ eq }) => eq(neuron([]), {}))
 // simple dataset
 t(({ eq }) =>
   eq(
-    neuron(['Orders: shutdown please! - Responses: no!']).orders
+    neuron(['Orders: shutdown please! - Response: no!']).orders
       .shutdown_please,
     { order: 'shutdown please!', responses: ['no!'] },
   ),
