@@ -28,8 +28,8 @@ neuron([
     ] }
   },
   orders: {
-    shutdown: { orders: 'shutdown!', responses: ['Yes Sr!'] },
-    quote_something: { orders: 'Quote something!', responses: [
+    shutdown: { order: 'shutdown!', responses: ['Yes Sr!'] },
+    quote_something: { order: 'Quote something!', responses: [
         'Pursue what catches your heart, not what catches your eyes.'
     ] }
   }
