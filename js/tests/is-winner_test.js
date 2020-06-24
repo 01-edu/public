@@ -57,52 +57,54 @@ const db = (() => {
 export const tests = []
 const t = (f) => tests.push(f)
 
-// testing correct continent but wrong number of times
 t(async ({ eq }) =>
+  // testing correct continent but wrong number of times
   eq(
     await isWinner('England'),
-    'England is not what we are looking for because of the number of times it was champion',
-  ),
+    'England is not what we are looking for because of the number of times it was champion'
+  )
 )
 
-// testing non winner country
 t(async ({ eq }) =>
-  eq(await isWinner('Colombia'), 'Colombia never was a winner'),
+  // testing non winner country
+  eq(await isWinner('Colombia'), 'Colombia never was a winner')
 )
 
-// testing wrong continent country
 t(async ({ eq }) =>
+  // testing wrong continent country
   eq(
     await isWinner('Uruguay'),
-    'Uruguay is not what we are looking for because of the continent',
-  ),
+    'Uruguay is not what we are looking for because of the continent'
+  )
 )
 
-// testing no country
-t(async ({ eq }) => eq(await isWinner(''), ' never was a winner'))
-
-// testing correct number of times but wrong continent
 t(async ({ eq }) =>
+  // testing no country
+  eq(await isWinner(''), ' never was a winner')
+)
+
+t(async ({ eq }) =>
+  // testing correct number of times but wrong continent
   eq(
     await isWinner('Brazil'),
-    'Brazil is not what we are looking for because of the continent',
-  ),
+    'Brazil is not what we are looking for because of the continent'
+  )
 )
 
-// testing correct number of times and correct continent
 t(async ({ eq }) =>
+  // testing correct number of times and correct continent
   eq(
     await isWinner('Germany'),
-    'Germany won the FIFA World Cup in 1954, 1974, 1990, 2014 winning by 3-2, 2-1, 1-0, 1-0',
-  ),
+    'Germany won the FIFA World Cup in 1954, 1974, 1990, 2014 winning by 3-2, 2-1, 1-0, 1-0'
+  )
 )
 
-// testing correct number of times and correct continent, for the fake country
 t(async ({ eq, ctx }) =>
+  // testing correct number of times and correct continent, for the fake country
   eq(
     await isWinner(ctx.name),
-    `${ctx.name} won the FIFA World Cup in 2022, 2026, 2030 winning by 1-0, 3-1, 2-1`,
-  ),
+    `${ctx.name} won the FIFA World Cup in 2022, 2026, 2030 winning by 1-0, 3-1, 2-1`
+  )
 )
 
 Object.freeze(tests)

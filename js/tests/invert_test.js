@@ -10,11 +10,11 @@ t(({ eq }) =>
     John: 'firstName',
     Doe: 'lastName',
     32: 'age',
-  }),
+  })
 )
 
-// Last similar value should override the others
 t(({ eq }) =>
+  // Last similar value should override the others
   eq(
     invert({ brand: 'ford', motor: 'v8', year: 2000, fast: true, eco: true }),
     {
@@ -22,11 +22,13 @@ t(({ eq }) =>
       v8: 'motor',
       2000: 'year',
       true: 'eco',
-    },
-  ),
+    }
+  )
 )
 
-// It should ignore properties from the prototype chain
-t(({ eq }) => eq(invert({ f: 5, __proto__: { d: 6 } }), { 5: 'f' }))
+t(({ eq }) =>
+  // It should ignore properties from the prototype chain
+  eq(invert({ f: 5, __proto__: { d: 6 } }), { 5: 'f' })
+)
 
 Object.freeze(tests)

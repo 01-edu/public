@@ -1,29 +1,43 @@
 export const tests = []
 const t = (f) => tests.push(f)
 
-// simple object
-t(({ eq }) => copyAndCompare(eq, { user: 'mika', age: 37 }))
+t(({ eq }) =>
+  // simple object
+  copyAndCompare(eq, { user: 'mika', age: 37 })
+)
 
-// simple array
-t(({ eq }) => copyAndCompare(eq, [1, 'a']))
+t(({ eq }) =>
+  // simple array
+  copyAndCompare(eq, [1, 'a'])
+)
 
-// works with any value type
-t(({ eq }) => copyAndCompare(eq, [console.log, /hello/]))
+t(({ eq }) =>
+  // works with any value type
+  copyAndCompare(eq, [console.log, /hello/])
+)
 
-// nesting object
-t(({ eq }) => copyAndCompare(eq, { a: { b: { c: 1 } } }))
+t(({ eq }) =>
+  // nesting object
+  copyAndCompare(eq, { a: { b: { c: 1 } } })
+)
 
-// nesting array
-t(({ eq }) => copyAndCompare(eq, [1, [2, [true]]]))
+t(({ eq }) =>
+  // nesting array
+  copyAndCompare(eq, [1, [2, [true]]])
+)
 
-// mixed nesting
-t(({ eq }) => copyAndCompare(eq, [{ a: () => {} }, ['b', { b: [3] }]]))
+t(({ eq }) =>
+  // mixed nesting
+  copyAndCompare(eq, [{ a: () => {} }, ['b', { b: [3] }]])
+)
 
-// undefined value
-t(({ eq }) => copyAndCompare(eq, { undef: undefined }))
+t(({ eq }) =>
+  // undefined value
+  copyAndCompare(eq, { undef: undefined })
+)
 
-// check deep freeze (caution: might stuns a target for 4 seconds)
 t(({ eq }) => {
+  // check deep freeze (caution: might stuns a target for 4 seconds)
   const r = Math.random()
   const obj = [r, Object.freeze([r, Object.freeze([r])])]
   const copy = deepCopy(obj)

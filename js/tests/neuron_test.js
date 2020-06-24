@@ -4,17 +4,16 @@ const t = (f) => tests.push(f)
 // empty dataset
 t(({ eq }) => eq(neuron([]), {}))
 
-// simple dataset
 t(({ eq }) =>
+  // simple dataset
   eq(
-    neuron(['Orders: shutdown please! - Response: no!']).orders
-      .shutdown_please,
-    { order: 'shutdown please!', responses: ['no!'] },
-  ),
+    neuron(['Orders: shutdown please! - Response: no!']).orders.shutdown_please,
+    { order: 'shutdown please!', responses: ['no!'] }
+  )
 )
 
-// multiple questions
 t(({ eq }) =>
+  // multiple questions
   eq(
     neuron([
       'Questions: what is life? - Response: The condition that distinguishes animals and plants from inorganic matter',
@@ -26,12 +25,12 @@ t(({ eq }) =>
         'The condition that distinguishes animals and plants from inorganic matter',
         'Life is a characteristic that distinguishes physical entities that have biological processes',
       ],
-    },
-  ),
+    }
+  )
 )
 
-// multiple interactions
 t(({ eq, ctx }) =>
+  // multiple interactions
   eq(
     neuron([
       'Questions: how are you? - Response: well thanks, and you?',
@@ -39,12 +38,12 @@ t(({ eq, ctx }) =>
       'affirmations: i am fine - Response: awesome',
       'Orders: turn on the lights! - Response: done',
     ]),
-    ctx.multiInteractions,
-  ),
+    ctx.multiInteractions
+  )
 )
 
-// out of order
 t(({ eq, ctx }) =>
+  // out of order
   eq(
     neuron([
       'Questions: how are you? - Response: well thanks, and you?',
@@ -52,12 +51,14 @@ t(({ eq, ctx }) =>
       'Orders: turn on the lights! - Response: done',
       'affirmations: i am fine - Response: awesome',
     ]),
-    ctx.multiInteractions,
-  ),
+    ctx.multiInteractions
+  )
 )
 
-// testing big dataset
-t(({ eq, ctx }) => eq(neuron(ctx.multipleTypes), ctx.multResult))
+t(({ eq, ctx }) =>
+  // testing big dataset
+  eq(neuron(ctx.multipleTypes), ctx.multResult)
+)
 
 Object.freeze(tests)
 
