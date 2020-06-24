@@ -9,7 +9,7 @@
 The commissioner was most impressed by the result of your answers.
 He has now asked your help to create a training program for the future police inspectors. You gladly accept as you think that this will help lessen your burden of fighting crime in the future.
 
-In a training folder, various folders `mystery` were prepared with some key differences in the data for each group of trainees.
+In a training folder, various folders `mystery` were prepared with some key differences in the data for each group of trainees. (those folders will not be called `mystery`, they will have different names but they will all be at the same level)
 
 To simplify your life as a teacher and as the answers will not be exactly the same in each `mystery` folder, you need to write a `teacher.sh` file that does the following:
 
