@@ -3,12 +3,12 @@
 ### Instructions
 
 Create the following functions:
-- `isValid`, this function must return false if its an Invalid Date
-- `isAfter`, this function will receive two dates and return true if the first date is bigger then the second date
-- `isBefore`, this function will receive two dates and return true if the first date is lesser then the second date
-- `isFuture`, will return true if the date given as parameter is higher then the present date
-- `isPast`, will return true if the date given as parameter less then the present date
 
+- `isValid`, this function must return false if its an Invalid Date
+- `isAfter`, this function will receive two valid dates and return true if the first date is bigger then the second date
+- `isBefore`, this function will receive two valid dates and return true if the first date is lesser then the second date
+- `isFuture`, will return true if it is a valid the date given as parameter is higher then the present date
+- `isPast`, will return true if it is a valid date given as parameter is less than the present date
 
 ### Notions
 
