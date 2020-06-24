@@ -10,7 +10,6 @@ All the points must be calculated in the duration time.
 
 For each interpolation point you must execute and pass as parameters to the callback the interpolation point ([x, y])
 
-
 ### Example
 
 ```
@@ -21,24 +20,23 @@ duration = 10
 
    t
    |
-10 |___________________. <- execute callback([1.0, 10])
-   |                   |
-   |                   |
- 8 |_______________.   |
-   |               |   |
-   |               |   |
- 6 |___________.   |   |
-   |           |   |   |
-   |           |   |   |
- 4 |_______.   |   |   |
-   |       |   |   |   |
-   |       |   |   |   |
- 2 |___.   |   |   |   |
-   |   |   |   |   |   |
-   |___|___|___|___|___|__d
-   0  0.2 0.4 0.6 0.8  1
+10 |_______________. <- execute callback([1.0, 10])
+   |               |
+   |               |
+ 8 |___________.   |
+   |           |   |
+   |           |   |
+ 6 |_______.   |   |
+   |       |   |   |
+   |       |   |   |
+ 4 |___.   |   |   |
+   |   |   |   |   |
+   |   |   |   |   |
+ 2 .   |   |   |   |
+   |   |   |   |   |
+   |___|___|___|___|___d
+   0  0.2 0.4 0.6 0.8
 ```
-
 
 ### Notions
 
