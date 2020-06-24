@@ -10,3 +10,4 @@ Create two functions that will work like `_.debounce` from lodash
 ### Notions
 
 - [lodash.com/docs/4.17.15#debounce](https://lodash.com/docs/4.17.15#debounce)
+- [https://css-tricks.com/debouncing-throttling-explained-examples/#debounce](https://css-tricks.com/debouncing-throttling-explained-examples/#debounce)
