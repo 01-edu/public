@@ -27,8 +27,8 @@ t(() => addWeek(new Date('1995-11-07')) === 'Tuesday')
 t(() => addWeek(new Date('2020-01-01')) === 'Wednesday')
 t(() => addWeek(new Date('2048-12-07')) === 'Monday')
 
-// random time traveling
 t(({ eq }) =>
+// random time traveling
   eq(
     timeTravel({
       date: new Date('2020-05-29 23:25:22'),

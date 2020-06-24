@@ -9,22 +9,22 @@ export const setup = () => {
   return { arr }
 }
 
-// callback is call with the item value
 t(({ eq, ctx }) => {
+  // callback is call with the item value
   const result = []
   forEach(ctx.arr, (value) => result.push(value))
   return eq(result, ctx.arr)
 })
 
-// callback second parameter is the index
 t(({ eq, ctx }) => {
+  // callback second parameter is the index
   const result = []
   forEach(ctx.arr, (_, index) => result.push(index))
   return eq(result, [...ctx.arr.keys()])
 })
 
-// callback third parameter is the array
 t(({ eq, ctx }) => {
+  // callback third parameter is the array
   const result = []
   forEach(ctx.arr, (_, __, arr) => result.push(arr))
   return eq(result, Array(ctx.arr.length).fill(ctx.arr))
