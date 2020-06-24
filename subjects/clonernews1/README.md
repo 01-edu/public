@@ -8,7 +8,7 @@ This is where tech news shines, just like Hacker News where you can see all abou
 
 So your objective for this raid is to create an UI for [`HackerNewsAPI`](https://github.com/HackerNews/API).
 
-You must handle at lest:
+You must handle at least:
 
 - Posts, this includes :
   - [stories](https://github.com/HackerNews/API#ask-show-and-job-stories)
