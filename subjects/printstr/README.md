@@ -31,6 +31,6 @@ And its output :
 ```console
 student@ubuntu:~/[[ROOT]]/test$ go build
 student@ubuntu:~/[[ROOT]]/test$ ./test | cat -e
-Hello World!%
+Hello World!$
 student@ubuntu:~/[[ROOT]]/test$
 ```
