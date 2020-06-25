@@ -1,5 +1,10 @@
 package correct
 
+import (
+	"math/rand"
+	"strconv"
+)
+
 type TreeNodeM struct {
 	Left  *TreeNodeM
 	Val   int
@@ -18,7 +23,6 @@ func MergeTrees(t1 *TreeNodeM, t2 *TreeNodeM) *TreeNodeM {
 	t1.Right = MergeTrees(t1.Right, t2.Right)
 	return t1
 }
-
 
 type stuTreeNode = TreeNodeM
 type solTreeNode = correct.TreeNodeM

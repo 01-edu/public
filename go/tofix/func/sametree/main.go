@@ -1,5 +1,10 @@
 package correct
 
+import (
+	"math/rand"
+	"strconv"
+)
+
 type TreeNodeL struct {
 	Left  *TreeNodeL
 	Val   int
@@ -22,7 +27,6 @@ func checkIfEq(t1 *TreeNodeL, t2 *TreeNodeL) bool {
 	}
 	return t1.Val == t2.Val && checkIfEq(t1.Right, t2.Right) && checkIfEq(t1.Left, t2.Left)
 }
-
 
 type stuTreeNode = TreeNodeL
 type solTreeNode = correct.TreeNodeL
