@@ -107,7 +107,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	err := parseArgs(flag.Args(), allowBuiltin, casting)
+	err := parseArgs(flag.Args())
 
 	if err != nil {
 		fmt.Printf("\t%s\n", err)
