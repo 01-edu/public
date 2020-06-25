@@ -389,23 +389,7 @@ func ChallengeMainStdin(exercise, input string, args ...string) {
 				code(studentCode) + "\n\n" +
 				"Expected :\n" +
 				console(solution) +
-				code(solutionCode) + "\n\n" +
-				"Another example :\n" +
-				console("ERROR\n") +
-				code(1))
-		}
-		firstLine := strings.SplitN(student, "\n", 1)[0]
-		handledError := strings.Contains(firstLine, "ERROR")
-		if !handledError {
-			Fatalln(`Your program does not handle the error, the first line of the output must contain "ERROR" :` + "\n" +
-				console(student) +
-				code(studentCode) + "\n\n" +
-				"Expected :\n" +
-				console(solution) +
-				code(solutionCode) + "\n\n" +
-				"Another example :\n" +
-				console("ERROR\n") +
-				code(1))
+				code(solutionCode))
 		}
 	}
 	if student != solution {
