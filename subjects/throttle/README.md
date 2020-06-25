@@ -11,3 +11,4 @@ Create two functions that will work like `_.throttle` from lodash
 ### Notions
 
 - [lodash.com/docs/4.17.15#throttle](https://lodash.com/docs/4.17.15#throttle)
+- [https://css-tricks.com/debouncing-throttling-explained-examples/#throttle](https://css-tricks.com/debouncing-throttling-explained-examples/#throttle)
