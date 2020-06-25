@@ -6,10 +6,20 @@ import (
 	"os"
 )
 
-func check(err error) {
+const (
+	success = iota
+	failure
+)
+
+var status = success
+
+func notNil(err error) bool {
 	if err != nil {
-		panic(err)
+		status = failure
+		fmt.Fprintln(os.Stderr, err)
+		return true
 	}
+	return false
 }
 func main() {
 	var bytes int64
@@ -18,23 +28,30 @@ func main() {
 	filenames := flag.Args()
 	for i, filename := range filenames {
 		file, err := os.Open(filename)
-		check(err)
+		if notNil(err) {
+			continue
+		}
 		defer file.Close()
 		fileInfo, err := file.Stat()
-		check(err)
+		if notNil(err) {
+			continue
+		}
 		offset := fileInfo.Size() - bytes
 		if offset < 0 {
 			offset = 0
 		}
 		b := make([]byte, fileInfo.Size()-offset)
 		_, err = file.ReadAt(b, offset)
-		check(err)
+		if notNil(err) {
+			continue
+		}
 		if len(filenames) > 1 {
+			if i > 0 {
+				fmt.Println()
+			}
 			fmt.Println("==>", filename, "<==")
 		}
 		os.Stdout.Write(b)
-		if i < len(filenames)-1 {
-			fmt.Println()
-		}
 	}
+	os.Exit(status)
 }
