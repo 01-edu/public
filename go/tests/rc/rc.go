@@ -415,6 +415,7 @@ func (info *info) add(v *visitor) {
 
 // Returns the info structure with all the ocurrences of the element
 // of the analised in the project
+// TODO: Refactor so this function has only one responsibility
 func isAllowed(function *element, path string, load loadedSource, walked map[ast.Node]bool, info *info) bool {
 	functionObj := lookupDefinitionObj(function, path, load)
 	definedLocally := functionObj != nil
@@ -561,8 +562,78 @@ func analyzeProgram(filename, path string, load loadedSource) *info {
 	return info
 }
 
-func parseArgs(toAllow []string, builtins bool, casting bool) error {
-	allowedFun["builtin"] = make(map[string]bool)
+func parseArgs(toAllow []string) error {
+	allowBuiltins()
+	allowCasting()
+	for _, v := range toAllow {
+		err := allowFunction(v)
+		if err != nil {
+			return err
+		}
+	}
+	return nil
+}
+
+func allowFunction(functionPath string) error {
+	functionName := functionName(functionPath)
+	packageName := packageName(functionPath)
+	// for github.com/01-edu/z01 shortName = z01
+	packageShortName := filepath.Base(packageName)
+	restrictsRepetitions := strings.ContainsRune(functionPath, '#')
+	if restrictsRepetitions {
+		allowedReps, err := repetitionsAllowed(functionPath)
+		if err != nil {
+			return err
+		}
+		allowedRep[packageShortName+"."+functionName] = allowedReps
+	}
+	if allowedFun[packageName] == nil {
+		allowedFun[packageName] = make(map[string]bool)
+	}
+	allowedFun[packageName][functionName] = true
+	return nil
+}
+
+func functionName(functionPath string) string {
+	segmentedPath := strings.Split(functionPath, ".")
+	return segmentedPath[len(segmentedPath)-1]
+}
+
+func packageName(functionPath string) string {
+	segmentedPath := strings.Split(functionPath, ".")
+	hasNoPackage := len(segmentedPath) < 2
+	if hasNoPackage {
+		return "builtin"
+	}
+	return strings.Join(segmentedPath[:len(segmentedPath)-1], ".")
+}
+
+// Assumes that `functionPath` contains `#`
+func repetitionsAllowed(functionPath string) (int, error) {
+	segmentedPath := strings.Split(functionPath, "#")
+	repetitions := segmentedPath[len(segmentedPath)-1]
+	allowedReps, err := strconv.Atoi(repetitions)
+	if err != nil {
+		return allowedReps, fmt.Errorf("After the '#' there should be an integer" +
+			" representing the maximum number of allowed occurrences")
+	}
+	return allowedReps, nil
+}
+
+func allowBuiltins() {
+	if allowedFun["builtin"] == nil {
+		allowedFun["builtin"] = make(map[string]bool)
+	}
+	if allowBuiltin {
+		allowedFun["builtin"]["*"] = true
+	}
+}
+
+func allowCasting() {
+	if allowedFun["builtin"] == nil {
+		allowedFun["builtin"] = make(map[string]bool)
+	}
+
 	predeclaredTypes := []string{"bool", "byte", "complex64", "complex128",
 		"error", "float32", "float64", "int", "int8",
 		"int16", "int32", "int64", "rune", "string",
@@ -570,55 +641,11 @@ func parseArgs(toAllow []string, builtins bool, casting bool) error {
 		"uintptr",
 	}
 
-	if builtins {
-		allowedFun["builtin"]["*"] = true
-	}
-
 	if casting {
 		for _, v := range predeclaredTypes {
 			allowedFun["builtin"][v] = true
 		}
 	}
-	for _, v := range toAllow {
-		var path, funcName string
-		if strings.ContainsRune(v, '/') {
-			path = filepath.Dir(v)
-			funcName = filepath.Base(v)
-			spl := strings.Split(funcName, ".")
-			path = path + "/" + spl[0]
-			if len(spl) > 1 {
-				funcName = spl[1]
-			}
-		} else if strings.ContainsRune(v, '.') {
-			spl := strings.Split(v, ".")
-			path = spl[0]
-			if len(spl) > 1 {
-				funcName = spl[1]
-			}
-		} else {
-			path = "builtin"
-			funcName = v
-		}
-		if strings.ContainsRune(funcName, '#') {
-			spl := strings.Split(funcName, "#")
-			funcName = spl[0]
-			n, err := strconv.Atoi(spl[1])
-			if err != nil {
-				return fmt.Errorf("After the '#' there should be an integer" +
-					" representing the maximum number of allowed occurrences")
-			}
-			var prefix string
-			if path != "" {
-				prefix = filepath.Base(path)
-			}
-			allowedRep[prefix+"."+funcName] = n
-		}
-		if allowedFun[path] == nil {
-			allowedFun[path] = make(map[string]bool)
-		}
-		allowedFun[path][funcName] = true
-	}
-	return nil
 }
 
 func printIllegals(illegals []*illegal) {
