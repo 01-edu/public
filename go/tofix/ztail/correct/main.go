@@ -1,87 +1,40 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"os"
-	"strconv"
 )
 
-func numberOfBytes(args []string) (int, []string) {
-	n := len(args)
-	nbytes := 0
-	var files []string
-	for i, v := range args {
-		var err error
-		_, err = strconv.Atoi(v)
-		if v == "-c" {
-			if i >= n-1 {
-				fmt.Printf("tail: option requires an argument -- 'c'\nTry 'tail --help' for more information.")
-				os.Exit(1)
-			}
-			arg := args[i+1]
-
-			nbytes, err = strconv.Atoi(arg)
-
-			if err != nil {
-				fmt.Printf("tail: invalid number of bytes: `%s`\n", arg)
-				os.Exit(1)
-			}
-			continue
-		}
-
-		if err != nil {
-			files = append(files, v)
-		}
-	}
-	return nbytes, files
-}
-
-func fileSize(fi *os.File) int64 {
-	fil, err := fi.Stat()
-
+func check(err error) {
 	if err != nil {
-		fmt.Println(err)
-		return 0
+		panic(err)
 	}
-
-	return fil.Size()
 }
-
 func main() {
-	n := len(os.Args)
-	if n < 4 {
-		fmt.Println("Not enough arguments")
-		os.Exit(1)
-	}
-
-	nbytes, files := numberOfBytes(os.Args[1:])
-
-	printName := len(files) > 1
-
-	// open files for reading only
-	for j, f := range files {
-		fi, err := os.Open(f)
-		if err != nil {
-			fmt.Printf("tail: cannot open '%s' for reading: No such file or directory\n", f)
-			os.Exit(1)
+	var bytes int64
+	flag.Int64Var(&bytes, "c", 0, "output the last NUM bytes")
+	flag.Parse()
+	filenames := flag.Args()
+	for i, filename := range filenames {
+		file, err := os.Open(filename)
+		check(err)
+		defer file.Close()
+		fileInfo, err := file.Stat()
+		check(err)
+		offset := fileInfo.Size() - bytes
+		if offset < 0 {
+			offset = 0
 		}
-		if printName {
-			fmt.Printf("==> %s <==\n", f)
+		b := make([]byte, fileInfo.Size()-offset)
+		_, err = file.ReadAt(b, offset)
+		check(err)
+		if len(filenames) > 1 {
+			fmt.Println("==>", filename, "<==")
 		}
-		read := make([]byte, int(nbytes))
-		_, er := fi.ReadAt(read, fileSize(fi)-int64(nbytes))
-		if er != nil {
-			fmt.Println(er.Error())
-		}
-
-		for _, c := range read {
-			fmt.Printf("%c", rune(c))
-		}
-
-		if j < len(files)-1 {
+		os.Stdout.Write(b)
+		if i < len(filenames)-1 {
 			fmt.Println()
 		}
-
-		fi.Close()
 	}
 }
