@@ -5,15 +5,16 @@
 Create a function called `interpolation` that takes an object with 5 properties
 `step`, `start`, `end`, `callback` and `duration`.
 This function must calculate the interpolation points, (x, y),
-from the `start` position to `end` position depending on the number of `steps`.
+from the `start` position to `end` position depending on the number of `step`s.
 All the points must be calculated in the duration time.
 
-For each interpolation point you must execute and pass as parameters to the callback the interpolation point ([x, y])
+For each interpolation point you must call `callback` function with parameter - interpolation point ([x, y]).
+Each interpolation point should be calculated with interval of `duration / step`.
 
 ### Example
 
 ```
-steps = 5
+step = 5
 start = 0
 end = 1
 duration = 10
