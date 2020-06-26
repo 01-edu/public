@@ -14,11 +14,16 @@ func main() {
 	}
 	a, err := strconv.Atoi(os.Args[1])
 	if err != nil {
-		panic("ERROR: " + err.Error())
+		fmt.Println(err)
+		return
 	}
 	b, err := strconv.Atoi(os.Args[2])
 	if err != nil {
-		panic("ERROR: " + err.Error())
+		fmt.Println(err)
+		return
 	}
-	fmt.Println(lib.IntRange(a, b))
+	for _, i := range lib.IntRange(b, a) {
+		fmt.Print(i)
+	}
+	fmt.Println()
 }
