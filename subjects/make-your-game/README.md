@@ -24,7 +24,7 @@ Here are some of the features you want to implement on your game:
 
 Animation must have consistent motion, so in order to have a smooth animation (without interruptions or better named: jank animation) you must achieve a special number, [**60fps**](https://blog.algolia.com/performant-web-animations/).
 
-Performance is essential, so that's why you have to aim for less than 60fps, because in 16.7ms (1000ms/60f) the browsers job and your work must be completed in each frame.
+Performance is essential, so that's why you have to aim for less than 16.7ms(1000ms/60f), because in 16.7ms the browsers job and your work must be completed in each frame.
 
 Use [`requestAnimationFrame`](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame) to sync your changes
 
@@ -40,7 +40,7 @@ Jank animation can be caused by loading too much information, for instance:
 
 In order to improve performance we must remove the causes above, that are more costly: layout and painting.
 
-The best way to remove layout and painting is to use [`transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform) and [`opacity`](TODO-link)
+The best way to remove layout and painting is to use [`transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform) and [`opacity`](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
 
 Removing layout can be done using transform:
 
@@ -89,7 +89,7 @@ Below we briefly explain the tools that will help the most for this project:
 
 - **Page Inspector**: You can view and edit page content and layout.
 - **Web Console**: You can see your `console.log`s and interact with the page using JavaScript.
-- **Performance Tool**: You can analyze your site's general responsiveness, Javascript and layout performance.
+- **Performance Tool**: You can analyze your site's general responsiveness, performance, Javascript and layout performance.
 
 The one tool that most will help you is the Performance Tool. There you can record a sample of your actions on the site and analyze the FPS, check for frame drops, how many time is your functions taking to execute, amongst other useful stuff.
 
@@ -102,7 +102,7 @@ This project will help you learn about:
 - FPS
 - DOM
 - [Jank/stutter animation](https://murtada.nl/blog/going-jank-free-achieving-60-fps-smooth-websites)
-- [Transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)/ [opacity](TODO-link)
+- [Transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)/ [opacity](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
 - Tasks
   - JavaScript
   - Styles
@@ -112,4 +112,3 @@ This project will help you learn about:
 - Developer Tools
   - [Firefox](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)
   - [Chrome](https://developers.google.com/web/tools/chrome-devtools)
-
