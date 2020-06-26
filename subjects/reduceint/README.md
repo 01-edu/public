@@ -2,8 +2,6 @@
 
 ### Instructions
 
-Write a function called `reduceint` that simulates the behaviour of reduce from JavaScript.
-
 The function should have as parameters a slice of integers, `a []int` and a function `f func(int, int) int`. You should apply for each element of the slice the arithmetic function, saving it and printing.
 
 ### Expected function

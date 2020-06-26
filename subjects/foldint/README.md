@@ -2,8 +2,6 @@
 
 ### Instructions
 
-Write a function called `FoldInt` that simulates the behavior of reduce from JavaScript.
-
 The function should have as parameters a function, `f func(int, int) int` a slice of integers, `slice []int` and an int `acc int`. You should apply for each element of the slice the arithmetic function, saving and printing it. The function will be tested with our own functions `Add, Sub, and Mul`.
 
 ### Expected function

@@ -2,8 +2,6 @@
 
 ### Instructions
 
-Write a **function** that replicates the JavaScript function `slice`.
-
 The function receives a slice of strings and one or more integers, and returns a slice of strings. The returned slice is part of the received one but cut from the position indicated in the first int, until the position indicated by the second int.
 
 In case there only exists one int, the resulting slice begins in the position indicated by the int and ends at the end of the received slice.
