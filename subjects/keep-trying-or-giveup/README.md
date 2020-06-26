@@ -7,7 +7,8 @@ Create a `retry` function, that takes 2 arguments
 - an async `callback`, that will be called on every try
 
 `retry` returns a function that calls and returns value from `callback` 
-function passing its arguments and catches errors. If number of errors 
+function passing its arguments and catches errors. If error is caught it 
+should return the `callback` function.  If number of errors 
 exceeds `count` then throw an `Error`.
 
 > for count of 3, the function will be called at most 4 times:
