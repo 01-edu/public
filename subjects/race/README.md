@@ -4,8 +4,8 @@
 
 Create a function `race` that works like `Promise.race`
 
-Create a function `some` that takes an array of promises or values
-and a number and return the first resolved values up to the number given.
+Create a function `some` that takes an `array` of promises or values
+and `N` number. It should return the first `N` resolved values.
 > Empty array or a count of 0 return a promise resolving to `undefined`
 
 
