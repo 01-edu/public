@@ -14,7 +14,7 @@ of information you start to remember all those [60fps memes](https://pics.me.me/
 
 Here are some of the features you want to implement on your game:
 
-- Run the game at **60fps** at all time
+- Run the game at least at **60fps** at all time
 - You must not have frame drops!
 - You will use **RequestAnimationFrame**
 - It is very hard to predict performances in JS. So measure performances,
@@ -38,7 +38,7 @@ Jank animation can be caused by loading too much information, for instance:
 - **Painting**, normally when layout is triggered we must repaint. Repainting an element every time it animates
 - **Compositing** that consists on placing the pages together at the end
 
-In order to improve performance we must remove the causes above that are more costly: layout and painting.
+In order to improve performance we must remove the causes above, that are more costly: layout and painting.
 
 The best way to remove layout and painting is to use [`transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform) and [`opacity`](TODO-link)
 
@@ -68,6 +68,33 @@ It is possible to remove painting by adding a layer:
 
 By creating a new layer you can remove painting, but "there is always a tradeoff". If we add to much layers it will increase the **composition** and **update tree**. In conclusion you must promote a new layer only if you now you are going to use it. Performance is the key to a good animation. "Performance is the art of avoiding work".
 
+### Pre-Approved List
+
+Your game will have to respect the genre of one of these games listed below. In other words, the main goal of the game has to be similar to one of these:
+
+- [Flipper/ Pinball](https://en.wikipedia.org/wiki/Pinball)
+- [Space Invaders](https://en.wikipedia.org/wiki/Space_Invaders)
+- [Donkey Kong](https://en.wikipedia.org/wiki/Donkey_Kong)
+- [Brick Breaker/ Arkanoid](https://en.wikipedia.org/wiki/Arkanoid)
+- [Pac-Man](https://pt.wikipedia.org/wiki/Pac-Man)
+- [Super Mario](https://en.wikipedia.org/wiki/Super_Mario)
+- [Tetris](https://pt.wikipedia.org/wiki/Tetris)
+- [Duck Hunt](https://en.wikipedia.org/wiki/Duck_Hunt)
+
+### Dev Tools
+
+We highly advise you to use Developer Tools present in every browser (usually with the key combination: Ctrl+Shift+I or in the Tools tab).
+
+Below we briefly explain the tools that will help the most for this project:
+
+- **Page Inspector**: You can view and edit page content and layout.
+- **Web Console**: You can see your `console.log`s and interact with the page using JavaScript.
+- **Performance Tool**: You can analyze your site's general responsiveness, Javascript and layout performance.
+
+The one tool that most will help you is the Performance Tool. There you can record a sample of your actions on the site and analyze the FPS, check for frame drops, how many time is your functions taking to execute, amongst other useful stuff.
+
+In the developer tools you can also find a Paint Flashing option that will highlight every paint that happens in your page as you perform actions in it.
+
 This project will help you learn about:
 
 - [`requestAnimationFrame`](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
@@ -82,7 +109,7 @@ This project will help you learn about:
   - Layout
   - Painting
   - Compositing
+- Developer Tools
+  - [Firefox](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)
+  - [Chrome](https://developers.google.com/web/tools/chrome-devtools)
 
-### dev tools
-
-TODO: maybe explain about the dev tool??
