@@ -42,16 +42,16 @@
 
 ##### Try moving the player/element using the proper commands to do so
 
-##### Does the play obey the commands?
+##### Does the player obey the commands?
 
 #### Bonus
 
 ###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
 
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
+###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/README.md)?
 
 ###### +Does the program reuses memory to avoid jank?
 
-###### +Does the game use [svg](TODO: link)
+###### +Does the game use [svg](TODO: link)?
 
-###### +Is the code using asynchronicity?
+###### +Is the code using asynchronicity to increase performance?
