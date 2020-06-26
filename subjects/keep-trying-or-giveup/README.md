@@ -3,25 +3,24 @@
 ### Instructions
 
 Create a `retry` function, that takes 2 arguments
-- a `count`, that tells how many retries must be done
-- an async `callback`, that will be call every try
+- a `count` indicates maximum amount of retries
+- an async `callback`, that will be called on every try
 
-and it return a new function, passing arguments given to the
-callback on every tries.
+`retry` returns a function that calls and returns value from `callback` 
+function passing its arguments and catches errors. If error is caught it 
+should return the `callback` function with catch.  If number of errors 
+exceeds `count` then throw an `Error`.
 
 > for count of 3, the function will be called at most 4 times:
 > the initial call + 3 retries.
 
-
 Create a `timeout` function, that takes 2 arguments
-- a `delay`, that tells how long to wait
-- an async `callback`, that will be call
+- a `delay` indicates maximum wait time
+- an async `callback`, that will be called
 
-and it return a new function, passing arguments given to the callback
-and either the async callback resolve before the delay is reached,
-in that case we return the value from the callback,
-or reject an error using the message `"timeout"`
-
+`timeout` returns a function either that calls and returns value from `callback` 
+function passing its arguments or returns `Error('timeout')` if `callback` didn't 
+resolve before `delay` time has reached.
 
 ### Notions
 
