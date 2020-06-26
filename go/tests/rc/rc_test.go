@@ -52,7 +52,7 @@ func TestFlags(t *testing.T) {
 	illegal-access    	z01.PrintRune        	tests/eightqueens.go:55:2
 	illegal-definition	printQueens          	tests/eightqueens.go:42:1
 `,
-		"-no-arrays tests/printalphabet/printalphabet.go": `Cheating:
+		"-no-array tests/printalphabet/printalphabet.go": `Cheating:
 	TYPE:             	NAME:                	LOCATION:
 	illegal-import    	fmt                  	tests/printalphabet/printalphabet.go:4:2
 	illegal-import    	github.com/01-edu/z01	tests/printalphabet/printalphabet.go:6:2
@@ -115,25 +115,23 @@ func TestFlags(t *testing.T) {
 	illegal-definition	Length          	tests/testingWrapping.go:7:1
 `,
 		`tests/testingWrapping.go len`: ``,
-		`tests/empty/empty len`: `	No file to analyze
+		`tests/empty/empty len`: `	stat : no such file or directory
 `,
 		`tests/empty/empty.go tests/empty/empty`: `	tests/empty/empty.go:1:1: expected ';', found 'EOF' (and 2 more errors)
+`,
+		`tests/abc/main.go --cast github.com/01-edu/z01.PrintRune#2 --no-lit=[b-mB-Y]`: ``,
+		`itoa.go len --cast`: `	stat itoa.go: no such file or directory
 `,
 	}
 	Compare(t, argsAndSolution)
 }
 
 func Compare(t *testing.T, argsAndSol map[string]string) {
-	for args, sol := range argsAndSol {
+	for args, expected := range argsAndSol {
 		a := strings.Split(args, " ")
-		out, err := z01.MainOut("../rc", a...)
-		if !EqualResult(sol, out) {
-			if err == nil {
-				t.Errorf("./rc %s prints %q\n instead of %q\n", args, out, sol)
-			}
-			if err != nil && !EqualResult(sol, err.Error()) {
-				t.Errorf("./rc %s prints %q\n instead of %q\n", args, err.Error(), sol)
-			}
+		_, err := z01.MainOut("../rc", a...)
+		if err != nil && !EqualResult(expected, err.Error()) {
+			t.Errorf("./rc %s prints %q\n instead of %q\n", args, err.Error(), expected)
 		}
 	}
 }
@@ -146,8 +144,8 @@ func EqualResult(sol, out string) bool {
 	sort.Sort(sort.StringSlice(solSli))
 	sort.Sort(sort.StringSlice(outSli))
 	// join
-	sol = strings.Join(solSli, "\n")
-	out = strings.Join(outSli, "\n")
+	sol = strings.Join(solSli, " ")
+	out = strings.Join(outSli, " ")
 	// compare
 	return sol == out
 }
