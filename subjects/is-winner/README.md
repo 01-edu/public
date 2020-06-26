@@ -5,19 +5,16 @@
 Create a function `isWinner` that, by making use of `winners` "API", should
 return a resolved Promise with the string:
 
-- `<country> + ' never was a winner'`, if the country passed
-in `isWinner` has never won a the FIFA World Cup
+- `<country> + ' never was a winner'`, if the country passed in `isWinner` has never won a the FIFA World Cup
 
 - `<country> + ' is not what we are looking for because of the continent'`,
   if the country passed in `isWinner` is not from the european
 continent
 
-- `<country> + ' is not what we are looking for because of the number of
-times it was champion'`, if the country passed in `isWinner` was champion
+- `<country> + ' is not what we are looking for because of the number of times it was champion'`, if the country passed in `isWinner` was champion
 less than 3 times
 
-- `<country> + ' won the FIFA World Cup in ' + <year(s)> + 'winning by '
-+ <results>`, otherwise.
+- `<country> + ' won the FIFA World Cup in ' + <year(s)> + 'winning by ' + <results>`, otherwise.
 
 If the country was champion in more than one year, the years should be
 displayed like : '1000, 1004, 1008'. The same goes for the results
