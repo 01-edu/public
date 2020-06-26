@@ -8,7 +8,7 @@ Create a `retry` function, that takes 2 arguments
 
 `retry` returns a function that calls and returns value from `callback` 
 function passing its arguments and catches errors. If error is caught it 
-should return the `callback` function.  If number of errors 
+should return the `callback` function with catch.  If number of errors 
 exceeds `count` then throw an `Error`.
 
 > for count of 3, the function will be called at most 4 times:
