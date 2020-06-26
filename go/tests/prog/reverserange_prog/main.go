@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"sort"
 	"strconv"
 
 	"lib"
@@ -22,7 +23,9 @@ func main() {
 		fmt.Println(err)
 		return
 	}
-	for _, i := range lib.IntRange(b, a) {
+	suite := lib.IntRange(a, b)
+	sort.Sort(sort.Reverse(sort.IntSlice(suite)))
+	for _, i := range suite {
 		fmt.Print(i)
 	}
 	fmt.Println()
