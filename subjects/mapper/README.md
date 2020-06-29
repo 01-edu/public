@@ -8,12 +8,10 @@ and that works like the method .map
 - Create a `flatMap` function that takes an array as first argument, a function as second,
 and that works like the method .flatMap
 
-
 ### Notions
 
 - [devdocs.io/javascript/global_objects/array/map](https://devdocs.io/javascript/global_objects/array/map)
 - [devdocs.io/javascript/global_objects/array/flatmap](https://devdocs.io/javascript/global_objects/array/flatmap)
-
 
 ### Code provided
 

@@ -576,7 +576,7 @@ slice = [1 2 3 A B C a b c] and f = func(a, b string) int {
 
 ###### Does the program displays the content of the file in order?
 
-##### Run the program with a diferent file and then run the system program `cat` with the same file.
+##### Run the program with a different file and then run the system program `cat` with the same file.
 
 ###### Are the outputs identical?
 
