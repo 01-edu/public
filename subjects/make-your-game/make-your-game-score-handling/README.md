@@ -1,0 +1,80 @@
+## scoreboard
+
+### Objectives
+
+You must follow the same [principles](https://public.01-edu.org/subjects/make-your-game/README.md) as the first subject.
+
+For this project you must take into account:
+
+- The usage of **scoreboards**
+- Creation of a **go API service** to save the data from the game into a JSON file
+  - The API should accept POST and GET request from the client side, this being the scoreboard data
+
+### Instructions
+
+Just like the first subject you must respect performance.
+
+In order to tell apart every score it should be requested a name when the player ends the game.
+
+After every game, either you win or lose, a scoreboard should be shown with the five highest scores of every game made.
+The scoreboard must display the **position**, **Name**, **score**, **time** in minutes and paginate the results with the rest of the scores. You should give to the client the percentage and the position in the scoreboard
+
+For example:
+
+```console
+Congrats O.J, you are in the top 6%, in the 2nd position.
+
+Rank| Name | Score  | time
+---------------------------
+1st | Kave | 233254 | 12:01
+2nd | A.J. | 222555 | 03:00
+3rd | O.J. | 14356  | 05:40
+4th | -.-  | 13663  | 02:34
+5th | iris | 2354   | 00:40
+
+     <- Page 1/50 ->
+```
+
+The scoreboard should be ordered by descending order, so the player with the most points should appear on first place.
+
+You will have to create a **go API service**, where you can load the data (POST), and request it (GET). This service will store the information of each play (name, score and time) in a JSON file and returns all the information when requested.
+The JSON file can be organized as you wish.
+
+Here is an example:
+
+```json
+[
+  {
+    "name": "O.j.",
+    "Rank": 3,
+    "Score": 14356,
+    "time": "05:40"
+  },
+  {
+    "name": "Kave",
+    "Rank": 1,
+    "Score": 233254,
+    "time": "12:01"
+  },
+  ....
+]
+```
+
+This project will help you learn about:
+
+- [`requestAnimationFrame`](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
+- [Event loop](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/EventLoop)
+- FPS
+- DOM
+- [Jank/stutter animation](https://murtada.nl/blog/going-jank-free-achieving-60-fps-smooth-websites)
+- [Transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)/ [opacity](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
+- JSON
+- Tasks
+  - JavaScript
+  - Styles
+  - Layout
+  - Painting
+  - Compositing
+- Developer Tools
+  - [Firefox](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)
+  - [Chrome](https://developers.google.com/web/tools/chrome-devtools)
