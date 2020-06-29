@@ -23,8 +23,8 @@ func main() {
 	table = append(table, randomStringCharset)
 
 	for _, s := range table {
-		lib.Challenge("StrLen", strLen, student.StrLen, s)
+		lib.Challenge("StrLen", student.strLen, StrLen, s)
 	}
 }
 
-// TODO: refactor, simplify, no need for specifiy charset : check lib
+// TODO: refactor, simplify, no need for specific charset : check lib
