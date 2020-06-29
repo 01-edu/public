@@ -58,10 +58,10 @@ filterCurry(([k, v]) => typeof v === 'string' || k === 'arr')({
 { str: 'string', arr: [1, 2] }
 ```
 
-Using each curry function create the following functions with one parameter `personnel`:
+Using each curry function create the following functions with a parameter `personnel`:
 
 - `reduceScore` that will return the total value of the scores
-  of the persons who use the force
+  of the persons who use the force (this function can have one additional parameter)
 - `filterForce` that will return the force users with `shootingScores`
   equal or higher than 80
 - `mapAverage` that will return a new object with the propriety `averageScore`
@@ -74,6 +74,7 @@ Using each curry function create the following functions with one parameter `per
 - [devdocs.io/javascript/global_objects/array/reduce](https://devdocs.io/javascript/global_objects/array/reduce)
 - [devdocs.io/javascript/global_objects/object/entries](https://devdocs.io/javascript/global_objects/object/entries)
 - [devdocs.io/javascript/global_objects/object/fromentries](https://devdocs.io/javascript/global_objects/object/fromentries)
+- [stackoverflow.com/questions/36314/what-is-currying](https://stackoverflow.com/questions/36314/what-is-currying)
 
 ### Code provided
 
