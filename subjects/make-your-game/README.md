@@ -37,7 +37,7 @@ In order to play the game you must use only the keyboard. The usage of keyboard 
 
 Basically every motion triggered by a key must not jank or stutter.
 
-For the Pause menu you must be able to pause the game whenever you want to do so. The frames should not drop if paused
+For the Pause menu you must be able to pause, restart and continue the game whenever you want to do so. The frames should not drop if paused
 
 ### Pre-Approved List
 
