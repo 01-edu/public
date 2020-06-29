@@ -46,13 +46,13 @@ HISTSIZE=
 HISTTIMEFORMAT="%F %T "
 EOF
 
-cat <<EOF>> /etc/inputrc
+cat <<'EOF'>> /etc/inputrc
 set completion-ignore-case
 set show-all-if-ambiguous On
 set show-all-if-unmodified On
 EOF
 
-cat <<EOF>> /etc/bash.bashrc
+cat <<'EOF'>> /etc/bash.bashrc
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
@@ -74,7 +74,7 @@ bind l eval clear "scrollback 0" "scrollback 100000"
 EOF
 
 # Configure SSH
-cat <<EOF>> /etc/ssh/sshd_config
+cat <<'EOF'>> /etc/ssh/sshd_config
 Port 521
 PasswordAuthentication no
 AllowUsers root
