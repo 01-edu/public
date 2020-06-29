@@ -14,9 +14,53 @@
 
 ###### Is the game chosen from the pre-approved list?
 
+##### Try pausing the game while it is running
+
+###### Does the game display the pause menu, with the options: continue, restart and quit?
+
+##### Try pausing the game while it is running and choose the continue option
+
+###### Does the game continue?
+
+##### Try pausing the game while it is running and choose the restart option
+
+###### Does the game restart?
+
+##### Use the Dev Tool/Performance to record, try pausing the game while it is running
+
+###### Does the game present any frame drops
+
+##### Try moving the player/element using the proper commands and key to do so
+
+##### Does the player obey the commands?
+
+##### Try moving the player/element using the proper commands and key to do so
+
+###### Does the player move without spamming the key to do so?
+
 ##### Try playing the game
 
 ###### Does the game work like it should (from the pre-approved list)?
+
+##### Try playing the game
+
+###### Does the countdown clock seem to be working?
+
+##### Try playing the game
+
+###### Does the countdown clock reaches the end?
+
+##### Try playing the game allowing the countdown clock to reach the end
+
+###### Does the game end?
+
+##### Try playing the game and score some points
+
+###### Does the score seems to work like it should, by increasing at a certain action done by the player?
+
+##### Try playing the game and try losing a life
+
+###### Does the player lives seem to work like it should, by decreasing the numbers of lives of the player?
 
 ##### Try using the Dev Tool/Performance
 
@@ -32,17 +76,9 @@
 
 ##### Try using the Dev Tool/performance and the option rendering with the layer ON, if possible
 
-###### Is the layers being used as less as possible?
+###### Is the layers being used as less sas possible?
 
 ###### Are the creation of the [layers being promoted](https://developers.google.com/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count) properly?
-
-##### Try moving the player/element using the proper commands to do so
-
-###### Does the player move without struggle?
-
-##### Try moving the player/element using the proper commands to do so
-
-##### Does the player obey the commands?
 
 #### Bonus
 

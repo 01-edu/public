@@ -16,62 +16,34 @@ Here are some of the features you want to implement on your game:
 
 - Run the game at least at **60fps** at all time
 - You must not have frame drops!
-- You will use **RequestAnimationFrame**
+- Proper use of **RequestAnimationFrame**
 - It is very hard to predict performances in JS. So measure performances,
   to know if your code is fast. This will be tested
+- Pause menu, that includes:
+  - Continue
+  - Restart
+- A score board that must present the following tasks:
+  - **Countdown clock**: That will indicate the amount of time the player has until the game ends
+  - **Score**: That will keep a score count of the amount of XP/points that the player got while playing
+  - **Lives**: That indicates the amount of lives that the player has left
+
+You must not use frameworks or canvas, the game must be implemented using just plain JS/DOM and HTML
 
 ### Instructions
 
-Animation must have consistent motion, so in order to have a smooth animation (without interruptions or better named: jank animation) you must achieve a special number, [**60fps**](https://blog.algolia.com/performant-web-animations/).
+Animation must have consistent motion, so in order to have a smooth animation (without interruptions or better named: jank animation) you must achieve a special number, [**60fps**](https://blog.algolia.com/performant-web-animations/). You can see more about performance [here](https://public.01-edu.org/subjects/good-practices/README.md)
 
-Performance is essential, so that's why you have to aim for less than 16.7ms(1000ms/60f), because in 16.7ms the browsers job and your work must be completed in each frame.
+In order to play the game you must use only the keyboard. The usage of keyboard must be smooth, in other words you must not spam the key to move the player. But instead you must, for example maintain the key down and the player must continue to do the proper action. If the key is released the player should stop doing the action.
 
-Use [`requestAnimationFrame`](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame) to sync your changes
+Basically every motion triggered by a key must not jank or stutter.
 
-- You can try to reuse memory to avoid jank when the garbage collector pass
-
-Jank animation can be caused by loading too much information, for instance:
-
-- **JavaScript**
-- **Styles** that considers which style apply to which element
-- **Layout** that calculates the geometry of the pages (example: recalculating the width and height of a page)
-- **Painting**, normally when layout is triggered we must repaint. Repainting an element every time it animates
-- **Compositing** that consists on placing the pages together at the end
-
-In order to improve performance we must remove the causes above, that are more costly: layout and painting.
-
-The best way to remove layout and painting is to use [`transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform) and [`opacity`](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
-
-Removing layout can be done using transform:
-
-```js
-// bad
-// this will trigger the layout to recalculate everything and repaint it again
-box.style.left = `${x * 100}px`;
-
-// good
-// this way its possible to lose the layout
-box.style.transform = `translateX(${x * 100}px)`;
-```
-
-It is possible to remove painting by adding a layer:
-
-```css
-/* this will take care of the painting by creating a layer and transform it*/
-  #box {
-    width: 100px;
-    height: 100px;
-    ....
-    will-change: transform;
-  }
-```
-
-By creating a new layer you can remove painting, but "there is always a tradeoff". If we add to much layers it will increase the **composition** and **update tree**. In conclusion you must promote a new layer only if you now you are going to use it. Performance is the key to a good animation. "Performance is the art of avoiding work".
+For the Pause menu you must be able to pause the game whenever you want to do so. The frames should not drop if paused
 
 ### Pre-Approved List
 
 Your game will have to respect the genre of one of these games listed below. In other words, the main goal of the game has to be similar to one of these:
 
+- [Bomberman](https://en.wikipedia.org/wiki/Super_Bomberman)
 - [Flipper/ Pinball](https://en.wikipedia.org/wiki/Pinball)
 - [Space Invaders](https://en.wikipedia.org/wiki/Space_Invaders)
 - [Donkey Kong](https://en.wikipedia.org/wiki/Donkey_Kong)
