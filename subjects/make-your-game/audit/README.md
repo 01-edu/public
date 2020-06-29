@@ -24,7 +24,7 @@
 
 ##### Try using the Dev Tool/Performance
 
-###### Does the game run at 60fps
+###### Does the game run at or around 60fps
 
 ##### Try using the Dev Tool/performance and the option rendering with the paint ON, if possible
 
@@ -54,4 +54,4 @@
 
 ###### +Does the game use [svg](TODO: link)?
 
-###### +Is the code using asynchronicity to increase performance?
+###### +Is the code using synchronicity to increase performance?

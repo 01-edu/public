@@ -10,27 +10,31 @@
 
 ##### Try playing the game
 
-###### Does the countDown seems to work?
+###### Does the countdown clock seem to be working?
 
 ##### Try playing the game
 
-###### Does the countDown reaches the end? And if so, does the game end?
+###### Does the countdown clock reaches the end?
 
-##### Try playing the game
+##### Try playing the game allowing the countdown clock to reach the end
+
+###### Does the game end?
+
+##### Try playing the game and score some points
 
 ###### Does the score seems to work like it should, by increasing at a certain action done by the player?
 
-##### Try playing the game
+##### Try playing the game and try losing a life
 
-###### Does the player life seems to work like it should, by decreasing the life of the player?
-
-##### Try using the Dev Tool/Performance
-
-###### Does it not present frame trop?
+###### Does the player lives seem to work like it should, by decreasing the numbers of lives of the player?
 
 ##### Try using the Dev Tool/Performance
 
-###### Does the game run at 60fps
+###### Does it not present frame drop?
+
+##### Try using the Dev Tool/Performance
+
+###### Does the game run at or around 60fps
 
 ##### Try using the Dev Tool/performance and the option rendering with the paint ON, if possible
 
@@ -48,4 +52,4 @@
 
 ###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/README.md)?
 
-###### +Is the code using asynchronicity to increase performance?
+###### +Is the code using synchronicity to increase performance?

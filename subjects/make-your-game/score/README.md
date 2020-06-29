@@ -9,14 +9,14 @@ For this project you must take into account the usage of score boards.
 The score board must present the following tasks:
 
 - **Countdown clock**: That will indicate the amount of time the player has until the game ends
-- **score**: This will keep a score count of the amount of XP/points that the player got while playing
-- **life**: That indicates the amount of life that is rest
+- **Score**: That will keep a score count of the amount of XP/points that the player got while playing
+- **Lives**: That indicates the amount of lives that the player has left
 
 ### Instructions
 
 Just like the first subject you must respect performance.
 
-All of this tasks can cause some issues with performance if not done properly, causing repaiting. The better way to avoid it is by using opacity.
+All of this tasks can cause some issues with performance if not done properly, causing repainting. The better way to avoid it is by using opacity.
 
 This project will help you learn about:
 
