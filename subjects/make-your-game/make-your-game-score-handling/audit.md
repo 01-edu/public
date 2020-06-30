@@ -2,11 +2,11 @@
 
 ##### Play and finish the game
 
-###### Does the scoreboard appear?
+###### Does it asks for a name?
 
 ##### Play and finish the game
 
-###### Does it asks for a name?
+###### Does the scoreboard appear?
 
 ##### Try making a GET request to the GO server API
 
@@ -14,17 +14,17 @@
 
 ##### Try making a POST request to the GO server API, then make a GET request to see if the information posted is correct
 
-###### Is it correct?
+###### Is the information correct?
 
-###### Does the scoreboard have the properties position, Name and score?
+###### Does the scoreboard have position, name and score properties?
 
-###### Is the scoreboard in descending scores order?
+###### Is the scoreboard in descending scores(order by points)?
 
 ###### Does the scoreboard have pagination?
 
 ##### Try to see the next page
 
-###### Does it display the next page of scores?
+###### Does it display the next page of scores correctly?
 
 ##### Play and finish the game, then search for your name
 

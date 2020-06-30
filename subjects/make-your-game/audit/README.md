@@ -16,7 +16,7 @@
 
 ##### Try pausing the game while it is running
 
-###### Does the game display the pause menu, with the options: continue, restart and quit?
+###### Does the game display the pause menu, with the options: continue and restart?
 
 ##### Try pausing the game while it is running and choose the continue option
 
@@ -26,21 +26,21 @@
 
 ###### Does the game restart?
 
-##### Use the Dev Tool/Performance to record, try pausing the game while it is running
+##### Use the Dev Tool/Performance to record and try pausing the game while it is running
 
-###### Does the game present any frame drops
+###### Does the game present any frame drops?
 
-##### Try moving the player/element using the proper commands and key to do so
+##### Try moving the player/element using the proper commands and keys to do so
 
 ##### Does the player obey the commands?
 
-##### Try moving the player/element using the proper commands and key to do so
+##### Try moving the player/element using the proper commands and keys to do so
 
 ###### Does the player move without spamming the key to do so?
 
 ##### Try playing the game
 
-###### Does the game work like it should (from the pre-approved list)?
+###### Does the game work like it should (as one the games from the pre-approved list)?
 
 ##### Try playing the game
 
@@ -64,11 +64,11 @@
 
 ##### Try using the Dev Tool/Performance
 
-###### Does it not present frame trop?
+###### Does it not present frame drop?
 
 ##### Try using the Dev Tool/Performance
 
-###### Does the game run at or around 60fps
+###### Does the game run at or around 60fps?
 
 ##### Try using the Dev Tool/performance and the option rendering with the paint ON, if possible
 
@@ -88,6 +88,6 @@
 
 ###### +Does the program reuses memory to avoid jank?
 
-###### +Does the game use [svg](TODO: link)?
+###### +Does the game use [svg](https://developer.mozilla.org/en-US/docs/Web/SVG)?
 
 ###### +Is the code using synchronicity to increase performance?

@@ -17,7 +17,8 @@ Just like the first subject you must respect performance.
 In order to tell apart every score it should be requested a name when the player ends the game.
 
 After every game, either you win or lose, a scoreboard should be shown with the five highest scores of every game made.
-The scoreboard must display the **position**, **Name**, **score**, **time** in minutes and paginate the results with the rest of the scores. You should give to the client the percentage and the position in the scoreboard
+
+The scoreboard must display the **position**, **name**, **score**, **time** in minutes and paginate the results with the rest of the scores. You also should give to the client the percentage and the position in the scoreboard.
 
 For example:
 
@@ -62,6 +63,11 @@ Here is an example:
 
 This project will help you learn about:
 
+- Creating and using an API
+  - POST requests
+  - GET requests
+- JSON
+- Sorting algorithms
 - [`requestAnimationFrame`](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
 - [Event loop](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/EventLoop)
 - FPS

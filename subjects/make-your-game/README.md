@@ -33,11 +33,11 @@ You must not use frameworks or canvas, the game must be implemented using just p
 
 Animation must have consistent motion, so in order to have a smooth animation (without interruptions or better named: jank animation) you must achieve a special number, [**60fps**](https://blog.algolia.com/performant-web-animations/). You can see more about performance [here](https://public.01-edu.org/subjects/good-practices/README.md)
 
-In order to play the game you must use only the keyboard. The usage of keyboard must be smooth, in other words you must not spam the key to move the player. But instead you must, for example maintain the key down and the player must continue to do the proper action. If the key is released the player should stop doing the action.
+In order to play the game you must use only the keyboard. The usage of keyboard must be smooth, in other words you must not spam the key to move the player. But instead you must, for example maintain the key pressed and the player must continue to do the proper action. If the key is released the player should stop doing the action.
 
 Basically every motion triggered by a key must not jank or stutter.
 
-For the Pause menu you must be able to pause, restart and continue the game whenever you want to do so. The frames should not drop if paused
+For the pause menu you must be able to pause, restart and continue the game whenever you want to do so. The frames should not drop if paused.
 
 ### Pre-Approved List
 
