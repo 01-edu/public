@@ -14,7 +14,7 @@
 
 ###### Were you able to play the game with no inconvenience?
 
-###### Does the game avoid the use of canvas?
+###### Does the game avoid the use of `canvas`?
 
 ##### Check the tile map in the code and the map on the game
 

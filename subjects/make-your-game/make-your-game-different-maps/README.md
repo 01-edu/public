@@ -1,4 +1,4 @@
-## maps
+## different-maps
 
 ### Objectives
 
