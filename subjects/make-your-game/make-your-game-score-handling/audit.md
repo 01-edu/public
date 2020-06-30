@@ -18,7 +18,7 @@
 
 ###### Does the scoreboard have position, name and score properties?
 
-###### Is the scoreboard in descending scores(order by points)?
+###### Is the scoreboard in descending order (ordered by score)?
 
 ###### Does the scoreboard have pagination?
 
