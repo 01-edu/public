@@ -8,6 +8,9 @@ import (
 
 func main() {
 	if len(os.Args) == 2 {
-		fmt.Println(strings.Split(strings.TrimSpace(os.Args[1]), " ")[0])
+		s := strings.Split(strings.TrimSpace(os.Args[1]), " ")[0]
+		if s != "" {
+			fmt.Println(s)
+		}
 	}
 }
