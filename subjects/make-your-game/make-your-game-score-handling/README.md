@@ -7,7 +7,7 @@ You must follow the same [principles](https://public.01-edu.org/subjects/make-yo
 For this project you must take into account:
 
 - The usage of **scoreboards**
-- Creation of a **go API service** to save the data from the game into a JSON file
+- Creation of a **go API service** to save the data from the game in JSON formate
   - The API should accept POST and GET request from the client side, this being the scoreboard data
 
 ### Instructions
@@ -38,8 +38,8 @@ Rank| Name | Score  | time
 
 The scoreboard should be ordered by descending order, so the player with the most points should appear on first place.
 
-You will have to create a **go API service**, where you can load the data (POST), and request it (GET). This service will store the information of each play (name, score and time) in a JSON file and returns all the information when requested.
-The JSON file can be organized as you wish.
+You will have to create a **go API service**, where you can load the data (POST), and request it (GET). This service will store the information of each play (name, score and time) in a JSON formate and returns all the information when requested.
+The JSON can be organized as you wish.
 
 Here is an example:
 
@@ -68,19 +68,3 @@ This project will help you learn about:
   - GET requests
 - JSON
 - Sorting algorithms
-- [`requestAnimationFrame`](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
-- [Event loop](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/EventLoop)
-- FPS
-- DOM
-- [Jank/stutter animation](https://murtada.nl/blog/going-jank-free-achieving-60-fps-smooth-websites)
-- [Transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)/ [opacity](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
-- JSON
-- Tasks
-  - JavaScript
-  - Styles
-  - Layout
-  - Painting
-  - Compositing
-- Developer Tools
-  - [Firefox](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)
-  - [Chrome](https://developers.google.com/web/tools/chrome-devtools)
