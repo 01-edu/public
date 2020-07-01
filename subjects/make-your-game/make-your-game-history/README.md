@@ -21,18 +21,4 @@ It must have:
 
 This project will help you learn about:
 
-- [`requestAnimationFrame`](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
-- [Event loop](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/EventLoop)
-- FPS
-- DOM
-- [Jank/stutter animation](https://murtada.nl/blog/going-jank-free-achieving-60-fps-smooth-websites)
-- [Transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)/ [opacity](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
-- Tasks
-  - JavaScript
-  - Styles
-  - Layout
-  - Painting
-  - Compositing
-- Developer Tools
-  - [Firefox](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)
-  - [Chrome](https://developers.google.com/web/tools/chrome-devtools)
+- Game story mode
