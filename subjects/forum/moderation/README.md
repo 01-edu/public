@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [principles](https://public.01-edu.org/subjects/forum/forum.en) as the first subject.
+You must follow the same [principles](https://public.01-edu.org/subjects/forum/) as the first subject.
 
 The `forum-moderation` will be based on a moderation system. It must present a moderator that, depending on the access level of a user or the forum set-up, approves posted messages before they become publicly visible.
 
@@ -47,5 +47,5 @@ This project will help you learn about :
 
 - You must handle website errors, HTTPS status.
 - You must handle all sort of technical errors.
-- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices.en).
+- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices/).
 - It is recommended that the code should present a **test file**.

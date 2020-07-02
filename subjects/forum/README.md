@@ -67,7 +67,7 @@ Note that the last two are only available for registered users and must refer to
 
 #### Docker
 
-For the forum project you must use Docker. You can see all about docker basics on the [ascii-art-web-dockerize](https://public.01-edu.org/subjects/ascii-art-web/ascii-art-web-dockerize.en) subject.
+For the forum project you must use Docker. You can see all about docker basics on the [ascii-art-web-dockerize](https://public.01-edu.org/subjects/ascii-art-web/dockerize/) subject.
 
 This project will help you learn about:
 
@@ -89,7 +89,7 @@ This project will help you learn about:
 - You must use **SQLite**.
 - You must handle website errors, HTTP status.
 - You must handle all sort of technical errors.
-- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices.en).
+- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices/).
 - It is recommended that the code should present a **test file**.
 
 ### Allowed packages

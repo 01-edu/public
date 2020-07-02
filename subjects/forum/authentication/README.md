@@ -19,4 +19,4 @@ This project will help you learn about:
 
 - Your project must have implemented at least the two authentication examples given.
 - Your project must be written in **Go**.
-- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices.en).
+- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices/).

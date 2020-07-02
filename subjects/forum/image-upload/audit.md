@@ -28,7 +28,7 @@
 
 #### Basic
 
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
+###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
 
 ###### +Are the instructions in the website clear?
 

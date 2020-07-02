@@ -42,7 +42,7 @@ This project will help you learn about :
 - Your project must have Go-routines
 - Your project must have channels or Mutexes
 - Maximum 10 connections
-- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices.en)
+- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices/)
 - It is recommended that the code should present a **test file** for the server connection and the client connection
 - You have to be able to handle the errors from server side and client side
 

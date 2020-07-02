@@ -24,7 +24,7 @@ Lx-y
 
 ###### Are the commands and the ants movements printed with the right format? One line per turn, `N` movements per turn, movements defined by `Lx-y` `x` being the ant and `y` being the room, as it shows above?
 
-##### Try running the program with [example00](https://public.01-edu.org/subjects/lem-in/lem-in-examples.en).
+##### Try running the program with [example00](https://public.01-edu.org/subjects/lem-in/examples/).
 
 ```
 student$ ./lem-in example00.txt
@@ -50,7 +50,7 @@ student$
 
 ###### Does it present the quickest path possible with the same number of turns as the result above?
 
-##### Try running the program with [example01](https://public.01-edu.org/subjects/lem-in/lem-in-examples.en).
+##### Try running the program with [example01](https://public.01-edu.org/subjects/lem-in/examples/).
 
 ```
 student$ ./lem-in example01.txt
@@ -102,7 +102,7 @@ student$
 
 ###### Does it present the quickest path possible with the same number of turns as the result above?
 
-##### Try running the program with [example02](https://public.01-edu.org/subjects/lem-in/lem-in-examples.en).
+##### Try running the program with [example02](https://public.01-edu.org/subjects/lem-in/examples/).
 
 ```
 student$ ./lem-in example02.txt
@@ -124,7 +124,7 @@ student$
 
 ###### Does it present the quickest path possible with the same number of turns as the result above?
 
-##### Try running the program with [example03](https://public.01-edu.org/subjects/lem-in/lem-in-examples.en).
+##### Try running the program with [example03](https://public.01-edu.org/subjects/lem-in/examples/).
 
 ```
 student$ ./lem-in example03.txt
@@ -156,7 +156,7 @@ student$
 
 ###### Does it present the quickest path possible with the same number of turns as the result above?
 
-##### Try running the program with [example04](https://public.01-edu.org/subjects/lem-in/lem-in-examples.en).
+##### Try running the program with [example04](https://public.01-edu.org/subjects/lem-in/examples/).
 
 ```
 student$ ./lem-in example04.txt
@@ -189,7 +189,7 @@ student$
 
 ###### Does it present the quickest path possible with the same number of turns as the result above?
 
-##### Try running the program with [example05](https://public.01-edu.org/subjects/lem-in/lem-in-examples.en).
+##### Try running the program with [example05](https://public.01-edu.org/subjects/lem-in/examples/).
 
 ```
 student$ ./lem-in example05.txt
@@ -273,7 +273,7 @@ student$
 
 ###### Does it present the quickest path possible with the same number of turns as the result above?
 
-##### Try running the program with [badexample00](https://public.01-edu.org/subjects/lem-in/lem-in-examples.en).
+##### Try running the program with [badexample00](https://public.01-edu.org/subjects/lem-in/examples/).
 
 ```
 student$ ./lem-in badexample00.txt
@@ -283,7 +283,7 @@ student$
 
 ###### Does it present the right result as above?
 
-##### Try running the program with [badexample01](https://public.01-edu.org/subjects/lem-in/lem-in-examples.en).
+##### Try running the program with [badexample01](https://public.01-edu.org/subjects/lem-in/examples/).
 
 ```
 student$ ./lem-in badexample01.txt
@@ -335,7 +335,7 @@ student$
 
 ###### +Are the tests checking each possible case?
 
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
+###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
 
 #### Social
 

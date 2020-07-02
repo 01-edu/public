@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [principles](https://public.01-edu.org/subjects/groupie-tracker/groupie-tracker.en) as the first subject.
+You must follow the same [principles](https://public.01-edu.org/subjects/groupie-tracker/) as the first subject.
 
 Groupie-tracker-search-bar consists of creating a functional program that searches, inside your website, for a specific input text.
 
@@ -27,7 +27,7 @@ This project will help you learn about :
 ### Instructions
 
 - The program must be written in **Go**.
-- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices.en).
+- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices/).
 
 ### Allowed packages
 
