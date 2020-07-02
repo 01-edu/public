@@ -2,7 +2,7 @@
 
 ### Objectives
 
-- You must follow the same [instructions](https://public.01-edu.org/subjects/ascii-art/ascii-art.en) as in the first subject **while** writing the result into a file.
+- You must follow the same [instructions](https://public.01-edu.org/subjects/ascii-art/) as in the first subject **while** writing the result into a file.
 
 - The file must be named by using the flag `--output=<fileName.txt>`, in which `--output` is the flag and `<fileName.txt>` is the file name.
 
@@ -18,7 +18,7 @@ This project will help you learn about :
 ### Instructions
 
 - Your project must be written in **Go**.
-- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices.en).
+- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices/).
 - It is recommended that the code presents a **test file**.
 
 ### Allowed packages

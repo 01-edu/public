@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [principles](https://public.01-edu.org/subjects/groupie-tracker/groupie-tracker.en) as the first subject.
+You must follow the same [principles](https://public.01-edu.org/subjects/groupie-tracker/) as the first subject.
 
 Groupie-tracker-visualization consists on manipulating the data coming from the API and displaying it in the most presentable way possible to you, following the [_Schneiderman's 8 Golden Rules of Interface Design_](https://www.interaction-design.org/literature/article/shneiderman-s-eight-golden-rules-will-help-you-design-better-interfaces) :
 
@@ -24,5 +24,5 @@ This project will help you learn about:
 ### Instructions
 
 - Your project must contain **CSS**.
-- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices.en).
+- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices/).
 - We suggest you to search for the principles of a good website design.

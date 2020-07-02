@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [principles](https://public.01-edu.org/subjects/ascii-art-web/ascii-art-web.en) as the first subject.
+You must follow the same [principles](https://public.01-edu.org/subjects/ascii-art-web/) as the first subject.
 
 - For this project you must create at least :
 
@@ -37,7 +37,7 @@ This project will help you learn about :
 ### Instructions
 
 - The web server must be created in **Go**.
-- The code must respect the [good practices](https://public.01-edu.org/subjects/good-practices.en).
+- The code must respect the [good practices](https://public.01-edu.org/subjects/good-practices/).
 - You must use Docker.
 - The project must have a **Dockerfile**.
 - Your Dockerfile must respect the [Dockerfile good practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/).

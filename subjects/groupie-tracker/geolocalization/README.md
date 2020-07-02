@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [principles](https://public.01-edu.org/subjects/groupie-tracker/groupie-tracker.en) as the first subject.
+You must follow the same [principles](https://public.01-edu.org/subjects/groupie-tracker/) as the first subject.
 
 - Groupie Tracker Geolocation consists on mapping the different concerts locations of a certain artist/band given by the Client.
 
@@ -23,7 +23,7 @@ This project will help you learn about :
 
 - The backend must be written in **Go**
 - You must handle website errors
-- The code must respect the [good practices](https://public.01-edu.org/subjects/good-practices.en)
+- The code must respect the [good practices](https://public.01-edu.org/subjects/good-practices/)
 - It is recommended that the code should present a **test file**
 
 ### Allowed packages

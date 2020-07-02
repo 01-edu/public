@@ -40,13 +40,13 @@
 
 #### General
 
-##### +Are there any other feature not mentioned in the [subject](https://public.01-edu.org/subjects/forum/forum-advanced-features.en)?
+##### +Are there any other feature not mentioned in the [subject](https://public.01-edu.org/subjects/forum/advanced-features/)?
 
 #### Basic
 
 ###### +Does the project runs quickly and effectively (Favoring of recursion, no unnecessary data requests, etc.)?
 
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
+###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
 
 ###### +Is there a test file for this code?
 

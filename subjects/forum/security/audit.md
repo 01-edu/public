@@ -40,7 +40,7 @@
 
 ###### +Does the project runs quickly and effectively? (no unnecessary data requests, etc)
 
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices.en)?
+###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
 
 ###### +Is there a test file for this code?
 
