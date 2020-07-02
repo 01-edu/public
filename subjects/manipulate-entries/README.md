@@ -14,7 +14,7 @@ Create 3 other functions that use your previously create functions:
 - `lowCarbs` that will leave only items that total carbs are lower than 50grams
 - `cartTotal` that will give you the right amount of calories, proteins, ..., of all items in your grocery cart.
 
-### clarification:
+### Clarification:
 
 What the functions will take as argument is an object cart which contains the food rations and the carbs per 100 grams.
 
