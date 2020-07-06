@@ -4,7 +4,7 @@
 
 ##### Try registering as a new user
 
-###### Does the site asks for a nickname, age, gender, first and last name,  email and password?
+###### Does the site asks for a nickname, age, gender, first and last name, email and password?
 
 ##### Try to login as an unregistered user.
 
@@ -52,15 +52,39 @@
 
 ###### Is there a section designed to show online users?
 
-###### Is there a section designed to show the people that the user texted  or texted the user? 
+###### Are the chat users organized by last message sent (just like discord)?
+
+##### Try and register a new user that does not have chat messages.
+
+###### Are the chat users organized in alphabetic order?
+
+##### Try to send a message
+
+###### Does the message respect the format, by using the users name and the date that the message was sent?
 
 ##### Open two browsers (ex: Chrome and Firefox), log in with different users in each one and with one of them try to send a private message to the other.
 
 ###### Did the other user received the message in real time, without refreshing the page?
 
+##### Open two browsers (ex: Chrome and Firefox), log in with different users in each one and with one of them try to send a private message to the other.
+
+###### Did the other user received a notification?
+
+##### Try to open a private conversation, that has more then 10 messages.
+
+###### Is the last 10 messages sent to this user loaded for you to see?
+
+##### Try to open a private conversation, that has more then 20 messages and scroll up to see the rest of the conversation.
+
+###### Does it use the scroll event to load more messages?
+
+##### Try to open a private conversation, that has more then 20 messages and scroll up to see the rest of the conversation.
+
+###### Does it load just 10 messages, without spamming the scroll event (This can be done using the function [Throttle](https://css-tricks.com/debouncing-throttling-explained-examples/#throttle))?
+
 ##### Check the project code.
 
-###### Do you see the use of WebSockets?
+###### Do you see the usage of WebSockets?
 
 #### Bonus
 
@@ -73,3 +97,5 @@
 ###### +Can the users add a photo to their profile?
 
 ###### +Can the users send images through the private messages?
+
+###### +Is the code using synchronicity (Promises and goroutines/channels) to increase performance?

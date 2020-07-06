@@ -51,15 +51,22 @@ But there is a twist. If some user creates a post, that post has to be created t
 
 #### Private Messages
 
-Users will be able to send private messages to each other, so you will need :
+Users will be able to send private messages to each other, so you will need to create a chat, where it will exist :
 
-- A section of the site to show who is online and able to talk to.
+- A section to show who is online and able to talk to:
+  - This section must be organized by the last message sent (just like discord), if the user is new and does not present messages you must organize it in alphabetic order.
   - The user must be able to send private messages to the users who are online
-- A section of the site that shows the people that the user already texted or that texted the user
+  - This sections must be visible at all times, in every pages.
 
-Both of these sections must be visible at all times, in every pages.
+- A section that when clicked on the user that you want to send a message, reloads the past messages. Messages that where already sent:
+  - For this you will have to be able to see the previous messages that you had with the user
+  - Reload the 10 last messages and when scrolled up to see more messages you must provide the user with 10 more messages. **Do not forget what you learned!! (`Throttle`, `Debounce`)**
 
-As it is expected, the messages should work on real time, in other words, if a user sends a message, the other user should receive the notification of the new message without refreshing the page. Again this is possible through the use of WebSockets.
+- Messages must have a specific format:
+  - A **`date`** that shows when the message was sent
+  - The **`user name`**, that identifies the user that sent the message
+
+As it is expected, the messages should work in real time, in other words, if a user sends a message, the other user should receive the notification of the new message without refreshing the page. Again this is possible through the usage of WebSockets in backend and frontend.
 
 This project will help you learn about:
 
