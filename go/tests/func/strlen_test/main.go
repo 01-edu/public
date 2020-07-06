@@ -23,7 +23,7 @@ func main() {
 	table = append(table, randomStringCharset)
 
 	for _, s := range table {
-		lib.Challenge("StrLen", student.strLen, StrLen, s)
+		lib.Challenge("StrLen", student.StrLen, strLen, s)
 	}
 }
 
