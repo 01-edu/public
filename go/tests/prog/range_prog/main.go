@@ -23,7 +23,7 @@ func main() {
 		return
 	}
 	for _, i := range lib.IntRange(a, b) {
-		fmt.Print(i)
+		fmt.Print(i, " ")
 	}
 	fmt.Println()
 }
