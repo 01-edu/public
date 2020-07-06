@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"os"
 	"strconv"
-
-	"lib"
 )
 
 func main() {
@@ -22,8 +20,14 @@ func main() {
 		fmt.Println(err)
 		return
 	}
-	for _, i := range lib.IntRange(a, b) {
-		fmt.Print(i, " ")
+	fmt.Print(a)
+	for b != a {
+		if a < b {
+			a++
+		} else {
+			a--
+		}
+		fmt.Print(" ", a)
 	}
 	fmt.Println()
 }
