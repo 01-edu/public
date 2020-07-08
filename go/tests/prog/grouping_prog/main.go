@@ -48,9 +48,6 @@ func brackets(regexp, text string) {
 			if !unicode.Is(unicode.Hex_Digit, rune(s[len(s)-1])) && !unicode.IsLetter(rune(s[len(s)-1])) {
 				s = s[0 : len(s)-1]
 			}
-			if !unicode.Is(unicode.Hex_Digit, rune(s[0])) {
-				s = s[0:]
-			}
 			fmt.Printf("%d: %s\n", i+1, s)
 		}
 	}
