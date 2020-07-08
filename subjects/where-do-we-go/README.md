@@ -7,7 +7,7 @@ Tired of staying home for too long, you decide to develop a page to index ideas 
 Write the function `explore` which creates a page displaying the list of `places` provided in the data file below:
 
 - sort the `places` from the Northest to the Southest
-- display a fullscreen-size `<section>` for each place ; use the pics hosted in the `./images` folder to set the `background` attribute with the corresponding image URL. The URL has to be formatted like so: `.images/name-of-the-place.jpg` ; you can see [here](https://github.com/01-edu/public/tree/master/subjects/where-do-we-go/images) the list of images that the folder contains
+- display a fullscreen-size `<section>` for each place ; use the pics hosted in the `./images` folder to set the `background` attribute with the corresponding image URL. The URL has to be formatted like so: `./images/name-of-the-place.jpg` ; you can see [here](https://github.com/01-edu/public/tree/master/subjects/where-do-we-go/images) the list of images that the folder contains
 - display a location indicator as a `<a>` tag in the middle of the screen which:
   - has the class `location`
   - displays as text strings separated by `\n`, the `name` and the `coordinates` of the current place featured in the image
