@@ -45,7 +45,7 @@ func brackets(regexp, text string) {
 		runes = runes[1 : len(runes)-1]
 		result := simpleSearch(runes, text)
 		for i, s := range result {
-			if !unicode.Is(unicode.Hex_Digit, rune(s[len(s)-1])) && !unicode.IsLetter(rune(s[len(s)-1])) {
+			if !unicode.IsLetter(rune(s[len(s)-1])) {
 				s = s[0 : len(s)-1]
 			}
 			fmt.Printf("%d: %s\n", i+1, s)
@@ -53,7 +53,6 @@ func brackets(regexp, text string) {
 	}
 }
 func main() {
-	// brackets("al|b", "ale atg bar sim nao pro par impar") In JS it's used without brackets
 	if len(os.Args) == 3 {
 		brackets(os.Args[1], os.Args[2])
 	}
