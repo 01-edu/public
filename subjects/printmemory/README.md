@@ -4,6 +4,10 @@
 
 Write a function that takes `(arr [10]int)`, and displays the memory as in the example.
 
+After displaying the memory the function must display all the graphic characters. The non printable characters must be replaced by a dot.
+
+A graphic character is any character intended to be written, printed, or otherwise displayed in a form that can be read by humans. In other words, it is any encoded character that is associated with one or more glyphs.
+
 ### Expected function
 
 ```go
