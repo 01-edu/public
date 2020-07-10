@@ -66,7 +66,7 @@ func printLine(elems [10]int, start int) {
 	fmt.Println()
 	c := start
 	for c < start+16 && c < size {
-		if unicode.IsPrint(rune(elems[c])) {
+		if unicode.IsGraphic(rune(elems[c])) {
 			fmt.Printf("%c", rune(elems[c]))
 		} else {
 			fmt.Print(".")
