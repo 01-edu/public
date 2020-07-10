@@ -291,7 +291,7 @@ ERROR: invalid data format
 student$
 ```
 
-###### Does it present the right result as above?
+###### Does it present at least the result above?
 
 ##### Try running the program with example06.txt and with 100 ants.
 
@@ -324,6 +324,8 @@ student$
 ###### +Does the program present an ant farm visualizer?
 
 ###### +Is it possible to see the ants moving?
+
+###### +Is the error output more specific? (example: `"ERROR: invalid data format, invalid number of Ants"` or `"ERROR: invalid data format, no start room found"`)
 
 ###### +Is the visualizer in 3D?·4
 
