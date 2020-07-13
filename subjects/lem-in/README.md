@@ -194,8 +194,8 @@ student$ ./lem-in test1.txt
 3-1
 2-3
 
-L1- 2 L2- 3
-L1- 1 L2- 1 L3- 2
-L3- 1
+L1-2 L2-3
+L1-1 L2-1 L3-2
+L3-1
 student$
 ```
