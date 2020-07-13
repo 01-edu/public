@@ -1,6 +1,6 @@
 ## real-time-forum
 
-Remember the forum you did a while ago? Well it's time to make one even better also using JS, with chat rooms, private messages, real time actions, live sharing video and live screen sharing too. Well, maybe not the last two. To get things straight there is a list below of what you will have to do.
+Remember the forum you did a while ago? Well it's time to make one even better also using JS, private messages, real time actions, live sharing video and live screen sharing too. Well, maybe not the last two. To get things straight there is a list below of what you will have to do.
 
 ### Objectives
 
@@ -15,7 +15,7 @@ As you already did the first forum you can use part of the code, but not all of 
 
 - **SQLite**, in which you will store data, just like in the [previous forum](https://public.01-edu.org/subjects/forum/#communication)
 - **Golang**, in which you will handle data and Websockets (Backend)
-- **Javascript**, in which you will handle all the Frontend events
+- **Javascript**, in which you will handle all the Frontend events and clients Websockets
 - **HTML**, in which you will organize the elements of the page
 - **CSS**, in which you will stylize the elements of the page
 
@@ -56,7 +56,7 @@ Users will be able to send private messages to each other, so you will need to c
 - A section to show who is online and able to talk to:
   - This section must be organized by the last message sent (just like discord), if the user is new and does not present messages you must organize it in alphabetic order.
   - The user must be able to send private messages to the users who are online
-  - This sections must be visible at all times, in every pages.
+  - This sections must be visible at all times.
 
 - A section that when clicked on the user that you want to send a message, reloads the past messages. Messages that where already sent:
   - For this you will have to be able to see the previous messages that you had with the user
@@ -79,6 +79,8 @@ This project will help you learn about:
   - DOM
 - [Go routines](https://golangbot.com/goroutines/)
 - [Go channels](https://medium.com/rungo/anatomy-of-channels-in-go-concurrency-in-go-1ec336086adb)
-- [WebSockets](https://en.wikipedia.org/wiki/WebSocket)
+- [WebSockets](https://en.wikipedia.org/wiki/WebSocket):
+  - Go Websockets
+  - JS Websockets
 - SQL language
   - Manipulation of databases

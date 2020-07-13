@@ -82,10 +82,6 @@
 
 ###### Does it load just 10 messages, without spamming the scroll event (This can be done using the function [Throttle](https://css-tricks.com/debouncing-throttling-explained-examples/#throttle))?
 
-##### Check the project code.
-
-###### Do you see the usage of WebSockets?
-
 #### Bonus
 
 ###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)

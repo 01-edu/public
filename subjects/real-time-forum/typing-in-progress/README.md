@@ -6,11 +6,11 @@ You must follow the same [principles](https://public.01-edu.org/subjects/real-ti
 
 For this project you must create:
 
-- A Typing in progress engine
+- A [Typing in progress](https://i.insider.com/56996788dd0895a06c8b460c?width=1100&format=jpeg&auto=webp) engine
 
 ### Instructions
 
-A typing in progress engine is the a way that people can see that a user is typing in real time. Allowing you to see in real time that the other user is replying or sending a message.
+A typing in progress engine is a way that people can see that a user is typing in real time. Allowing you to see the other user is replying or sending a message.
 
 The typing in progress engine must work in real time! This meaning that if you start typing to a certain user this user will be able to see that you are typing
 
@@ -27,5 +27,7 @@ This project will help you learn about:
 
 - [Go routines](https://golangbot.com/goroutines/)
 - [Go channels](https://medium.com/rungo/anatomy-of-channels-in-go-concurrency-in-go-1ec336086adb)
-- [WebSockets](https://en.wikipedia.org/wiki/WebSocket)
+- [WebSockets](https://en.wikipedia.org/wiki/WebSocket):
+  - Go Websockets
+  - JS Websockets
 - [Events](https://developer.mozilla.org/en-US/docs/Web/Events)
