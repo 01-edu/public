@@ -6,6 +6,8 @@ Write a function that returns `true` if the `int` passed as parameter is a prime
 
 The function must be optimized in order to avoid time-outs with the tester.
 
+(We consider that only positive numbers can be prime numbers)
+
 ### Expected function
 
 ```go
