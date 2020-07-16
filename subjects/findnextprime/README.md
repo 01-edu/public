@@ -6,6 +6,8 @@ Write a function that returns the first prime number that is equal or superior t
 
 The function must be optimized in order to avoid time-outs with the tester.
 
+(We consider that only positive numbers can be prime numbers)
+
 ### Expected function
 
 ```go
