@@ -48,9 +48,9 @@ Your game will have to respect the genre of one of these games listed below. In 
 - [Space Invaders](https://en.wikipedia.org/wiki/Space_Invaders)
 - [Donkey Kong](https://en.wikipedia.org/wiki/Donkey_Kong)
 - [Brick Breaker/ Arkanoid](https://en.wikipedia.org/wiki/Arkanoid)
-- [Pac-Man](https://pt.wikipedia.org/wiki/Pac-Man)
+- [Pac-Man](https://en.wikipedia.org/wiki/Pac-Man)
 - [Super Mario](https://en.wikipedia.org/wiki/Super_Mario)
-- [Tetris](https://pt.wikipedia.org/wiki/Tetris)
+- [Tetris](https://en.wikipedia.org/wiki/Tetris)
 - [Duck Hunt](https://en.wikipedia.org/wiki/Duck_Hunt)
 
 ### Dev Tools
@@ -70,7 +70,7 @@ In the developer tools you can also find a Paint Flashing option that will highl
 This project will help you learn about:
 
 - [`requestAnimationFrame`](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
-- [Event loop](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/EventLoop)
+- [Event loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)
 - FPS
 - DOM
 - [Jank/stutter animation](https://murtada.nl/blog/going-jank-free-achieving-60-fps-smooth-websites)
