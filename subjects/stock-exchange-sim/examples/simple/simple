@@ -1,0 +1,18 @@
+#
+# simple example
+#
+# stock name:quantity
+euro:10
+#
+# process name:(need1:quantity1;need2:quantity2;[...]):(result1:quantity1;result2:quantity2;[...]):delay
+#
+buy_materiel:(euro:8):(materiel:1):10
+build_product:(materiel:1):(product:1):30
+delivery:(product:1):(client_content:1):20
+#
+# optimize time for no process possible (eating stock, produce all possible),
+# or maximize some products over a long delay
+# optimize:(time|stock1;time|stock2;...)
+#
+optimize:(time;client_content)
+#

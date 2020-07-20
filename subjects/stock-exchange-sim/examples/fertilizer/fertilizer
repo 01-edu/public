@@ -1,0 +1,11 @@
+#fertilizer
+apple:1
+you:1
+#
+#
+eat_apple:(apple:1;you:1):(you:1;seed:1;fertilizer:1;happiness:1):1
+plant_apple:(you:1;seed:1;fertilizer:1):(you:1;apple_tree:1):100
+pick_apple:(you:1;apple_tree:1):(you:1;apple:1):4
+#
+optimize:(happiness)
+#
