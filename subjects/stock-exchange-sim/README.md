@@ -26,7 +26,7 @@ Imagine a project with different tasks in witch we have to achieve a final goal.
 | do_shelf      |               board: 1                |   shelf:1    |  10   |
 | do_cabinet    | doorknobs: 2; background: 1; shelf: 3 |  cabinet:1   |  30   |
 
-Your purpose in this example is to optimise time and cabinet, basically the cabinet is the last product to achieve in the project and time is to be prioritized so that the building of your cabinet is done the fastest way possible.
+The purpose of this example is to optimise time and cabinet, basically the cabinet is the last product to achieve in the project and time is to be prioritized so that the building of your cabinet is done the fastest way possible.
 
 The tasks should be done in this order to achieve a maximum optimization regarding time and cabinet:
 
@@ -38,7 +38,7 @@ The tasks should be done in this order to achieve a maximum optimization regardi
 0:do_doorknobs
 0:do_background
 20:do_cabinet
-# No more process doable at cycle 51
+No more process doable at cycle 51
 ```
 
 So the number before the task represents the cycle when the task starts. The tasks can run separately or at the same time depending on the stocks that are used.
@@ -66,13 +66,13 @@ First we need a configuration file that contains the processes and must obey the
 
 - A description of the processes:
 
-  `<name>:(<need>:<quantity>;<need>:<quantity>[...]]):(<result>:<quantity>[;result>:<quantity>[...]]):<nb_cycle>`
+  `<name>:(<need>:<quantity>;<need>:<quantity>[...]]):(<result>:<quantity>[<result>:<quantity>[...]]):<nb_cycle>`
 
 - A single line to indicate the elements to optimize, possibly containing the `time` keyword :
 
   `optimize:(<stock_name>|time)`
 
-So, as we said above, you must create at least two configuration file of your own. One file that ends when the resources are consumed, and the other which can rotate indefinitely.
+So, as we said above, you must create at least two configuration file of your own. One file that ends when the resources are consumed, and the other which can rotate indefinitely.(will be explained in the next topic)
 
 ### Stock exchange program
 
@@ -112,7 +112,7 @@ Stock :
 
 - The display must also produce an output usable by the verification program, in the following format:
 
-  `<cycle>: <process_name>`
+  `<cycle>:<process_name>`
 
 The generated schedule is then saved as a log in the example folder with the same name.
 
@@ -129,8 +129,10 @@ student$ cat examples/simple.log
 0:buy_materiel
 10:build_product
 40:delivery
-# No more process doable at cycle 61
+No more process doable at cycle 61
 ```
+
+----
 
 ### Checker
 
@@ -156,8 +158,7 @@ We can then verify if the schedule is doable with the **checker** program:
 name:quantity
 euro:10
 #
-# process
-name:(need1:quantity1;need2:quantity2;[...]):(result1:quantity1;result2:quantity2;[...]):delay
+# process name:(need1:quantity1;need2:quantity2;[...]):(result1:quantity1;result2:quantity2;[...]):delay
 #
 buy_materiel:(euro:8):(material:1):10
 build_product:(material:1):(product:1):30

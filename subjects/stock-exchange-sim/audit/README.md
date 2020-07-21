@@ -1,4 +1,4 @@
-### General
+#### General
 
 ###### Can you confirm that the program reads a file that describes the processes, analyze the entire file and propose a valid solution?
 
@@ -12,7 +12,7 @@
 
 ###### Can you confirm that those files obey the given file format?
 
-### Functional
+#### Functional
 
 ##### Try to run the stock exchange program with the files created by the owner of the project.
 
@@ -163,7 +163,7 @@ student$
 
 ###### Does the display presents a result similar to the one above, were it shows the error?
 
-##### Try to run the checker program with the [build](https://public.01-edu.org/subjects/stock-exchange-sim/examples/build/build) example, `"./checker examples/build/build examples/build/build.log"`.
+##### Try to run the checker program with the [build](https://public.01-edu.org/subjects/stock-exchange-sim/examples/build/build) and the [build.log](https://public.01-edu.org/subjects/stock-exchange-sim/examples/build/build.log) example, `"./checker examples/build/build examples/build/build.log"`.
 
 ```console
 student$ ./checker examples/build/build examples/build/build.log
@@ -180,7 +180,7 @@ student$
 
 ###### Does the display presents a result similar to the one above, were it shows the last cycle and the proof that the sequence is correct?
 
-##### Try to run the checker program with the [seller](https://public.01-edu.org/subjects/stock-exchange-sim/examples/seller/seller) example, `"./checker examples/seller/seller examples/seller/seller.log"`.
+##### Try to run the checker program with the [seller](https://public.01-edu.org/subjects/stock-exchange-sim/examples/seller/seller) and the [seller.log](https://public.01-edu.org/subjects/stock-exchange-sim/examples/seller/seller.log)example, `"./checker examples/seller/seller examples/seller/seller.log"`.
 
 ```console
 student$ ./checker examples/seller/seller examples/seller/seller.log
@@ -230,4 +230,4 @@ student$
 
 ###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/README.md)?
 
-###### +Can the users create their own files to run in the program?
+###### +Create your own file and run the stock exchange program with it. Does the program work like it should?
