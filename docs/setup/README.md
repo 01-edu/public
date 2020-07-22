@@ -16,10 +16,11 @@ There are several ways to get a working Linux environment :
     - Using the Windows Subsystem for Linux
 
 This document focuses on the latest method : "Windows Subsystem for Linux".
+If you want to do it differently, ensure you still do the [Configure tools](#configure-tools) part.
 
 ## Install Windows 10
 
-Skip this part if Windows 10 is up-to-date.
+[Skip this part](#install-a-web-browser) if Windows 10 is up-to-date.
 
 ### Download
 
@@ -60,7 +61,7 @@ Skip this part if Windows 10 is up-to-date.
 
 ## Install a web browser
 
-Skip this part if you have a modern & full-featured web browser (e.g. Chrome, Firefox, etc).
+[Skip this part](#install-linux) if you have a modern & full-featured web browser (e.g. Chrome, Firefox, etc).
 
 We recommend to use Firefox with the extension "uBlock Origin" and the additional filters lists :
 
@@ -72,7 +73,7 @@ Make sure to apply changes.
 
 ## Install Linux
 
-Skip this part if you already have WSL with Debian (or similar system e.g. Ubuntu).
+[Skip this part](#install-vscode) if you already have Debian (or similar system e.g. Ubuntu).
 
 ### Install Windows Subsystem for Linux (WSL2)
 
@@ -85,9 +86,11 @@ To "Open PowerShell as Administrator", right-click on the Start menu.
 - Click on "Get" button
 - Launch
 - Create user as requested (the password doesn't need to be secure and you have to remember it)
-- Leave (by using the shortcut <kbd>Ctrl</kbd>+<kbd>D</kbd>, closing the window or typing the `exit` command)
+- Close (by using the shortcut <kbd>Ctrl</kbd>+<kbd>D</kbd>, closing the window or typing the `exit` command)
 
 ## Install VSCode
+
+If you run Linux natively, go to [Configure tools](#configure-tools).
 
 Download it from the [official website](https://code.visualstudio.com).
 Run the installer, check all "Additional Tasks".
@@ -132,20 +135,22 @@ Hello World
 user@DESKTOP-XXXXXXX:~$ █
 ```
 
-`echo` is a program that displays text. Now you will execute commands that will install all the necessary programs you will need :
+`echo` is a program that displays text. Now you will execute commands that will install all the necessary programs you will need, this is the first one :
 
 ```
 sudo apt update
 ```
 
 Type the password you entered during [Linux installation](#install-debian).
-When it's over (the command prompt appears again), continue entering commands (we hide their output):
+When it's over (the command prompt appears again) run the 3 next commands (we hide their output):
 
 ```
 sudo apt -y upgrade
 sudo apt -y install curl
 curl https://raw.githubusercontent.com/01-edu/public/master/docs/setup/configure.sh | bash
 ```
+
+#### Configure Gitea
 
 Copy the last line (`ssh-ed25519...`) then :
 
@@ -158,3 +163,17 @@ Copy the last line (`ssh-ed25519...`) then :
 - Click on "Add Key"
 
 Now you are able to push & pull code to Gitea using `git`.
+
+Close the terminal (by using the shortcut <kbd>Ctrl</kbd>+<kbd>D</kbd> or typing the `exit` command)
+
+#### Configure Go extension
+
+- In the Menu Bar of VSCode, click on "View", then "Extensions"
+- In the search field type "go"
+- Click on "Install" for the first extension in the list : "Go"
+- Click on "Reload Required"
+- Open the "Command Palette" (<kbd>F1</kbd> or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>)
+- Type "go install"
+- Click on "Go: Install/Update Tools"
+- Check the first box in order to check all of them
+- Click on "OK"
