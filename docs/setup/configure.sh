@@ -24,5 +24,5 @@ go get golang.org/x/tools/cmd/goimports
 echo Installing OpenSSH
 sudo apt -y install openssh-client
 ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -N ''
-echo "Select & copy (right-click) the following line :"
+echo "Copy the following line :"
 cat ~/.ssh/id_ed25519.pub
