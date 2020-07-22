@@ -1,5 +1,25 @@
 # Setup
 
+Table of contents :
+
+- [Introduction](#introduction)
+- [Install Windows 10](#install-windows-10)
+  - [Download](#download)
+  - [Install](#install)
+    - [Wait for Windows 10 to be idle](#wait-for-windows-10-to-be-idle)
+    - [Install updates](#install-updates)
+- [Install a web browser](#install-a-web-browser)
+- [Install Linux](#install-linux)
+  - [Install Windows Subsystem for Linux (WSL2)](<#install-windows-subsystem-for-linux-(wsl2)>)
+  - [Install Debian](#install-debian)
+- [Install VSCode](#install-vscode)
+  - [Install remote extension](#install-remote-extension)
+- [Configure Linux](#configure-linux)
+  - [Connect to remote WSL](#connect-to-remote-wsl)
+  - [Configure tools](#configure-tools)
+    - [Configure Gitea](#configure-gitea)
+    - [Configure Go extension](#configure-go-extension)
+
 ## Introduction
 
 Our programming exercises require a Unix-like OS (operating system), in particular GNU/Linux.
@@ -48,7 +68,7 @@ If you want to do it differently, ensure you still do the [Configure tools](#con
 - Reboot
 - Repeat [Wait for Windows 10 to be idle](#wait-for-windows-10-to-be-idle) until the system is idle shortly after startup
 
-#### Install Updates
+#### Install updates
 
 - Click on :
   - Start
@@ -57,7 +77,7 @@ If you want to do it differently, ensure you still do the [Configure tools](#con
   - Check for updates (even if it says "No updates are available")
 - Wait until every component Status is "Pending restart"
 - Click on "Restart now"
-- Repeat [Install Updates](#install-updates) until you see "You're up to date"
+- Repeat [Install updates](#install-updates) until you see "You're up to date"
 
 ## Install a web browser
 
