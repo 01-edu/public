@@ -2,8 +2,14 @@
 
 ### Objectives
 
-You will have to create a social network that presents both backend and frontend.
+You will have to create a Facebook-like social network that will contain:
 
+- Followers
+- Profile
+- Posts
+- Groups
+- Notification
+- Chats
 
 ### Instructions
 
@@ -33,14 +39,14 @@ Caution: Note that JS frameworks are different from JS libraries. JS libraries c
 
 ### Backend
 
-The back-end is all of the technology required to process the incoming request and generate and send the response to the client.
+The back-end is all of the technology required to process the incoming request, generate and send the response to the client.
 This is typically divided into three major parts:
 
 - **Server**, this is the computer that receives request. Though there are machines made and optimized for this particular purpose, you will use your own computer.
 
-- **App**, this is the application running on the server that listens for requests, retrieves information from the database and sends a response. The server runs an app that contains all the logic about how to respond to various requests based on the HTTP or other types of protocols. Some of these handlers functions will be middleware. Middlewares is any code that executes between the server receiving a request and sending a response. These middleware functions might modify the request object, query the database, or otherwise process the incoming request. Middleware functions typically end by passing control to the next middleware function, rather than by sending a response.
+- **App**, this is the application running on the server that listens for requests, retrieves information from the database and sends a response. The server runs an app that contains all the logic about how to respond to various requests based on the HTTP or other types of protocols. Some of these handlers functions will be middleware. Middlewares is any code that executes between the server receiving a request and sending a response.
 
-- **Database**, are used as you already now, to organize and persist data. Many requests sent to the server might require a database query. A client might request information that is stored in the database, or a client might submit data with their request to be added to the database.
+- **Database**, are used as you already know, to organize and persist data. Many requests sent to the server might require a database query. A client might request information that is stored in the database, or a client might submit data with their request to be added to the database.
 
 #### Sqlite
 
@@ -76,9 +82,9 @@ backend
 
 The folder structure is organized in a way that helps you to **understand** and **use** migrations, where you can apply it using a simple path, for example: `file://backend/pkg/db/migrations/sqlite`. It can be organized as you wish but **do not forget that the application of migrations and the file organization will be tested**.
 
-For migrations you can use [golang-migrate](https://github.com/golang-migrate/migrate) package or other package that better suites you project
+For migrations you can use [golang-migrate](https://github.com/golang-migrate/migrate) package or other package that better suits your project
 
-All migrations should be stored on a specific folder, like as above. The `sqlite.go` should present the connection to the database, the applying of the migrations and other useful functionalities that you may need to implement.
+All migrations should be stored on a specific folder,  as above. The `sqlite.go` should present the connection to the database, the applying of the migrations and other useful functionalities that you may need to implement.
 
 ----
 
@@ -102,14 +108,15 @@ To be able for the users to use the social network they will have to make an acc
 - First Name
 - Last Name
 - Date of Birth
-- Avatar/Image
+- Avatar/Image (Optional)
 - Nickname (Optional)
-- Relationship Status (Optional)
 - About Me (Optional)
 
-Note that the **Nickname**, **Relationship Status** and **About Me** should be present in the form but the user can skip the filling of those fields.
+Note that the **Avatar/Image**, **Nickname** and **About Me** should be present in the form but the user can skip the filling of those fields.
 
-When you login you should stay logged in until you choose a log out option that should be available at all times. For this you will have to implement [sessions]() and [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies).
+When you login you should stay logged in until you choose a logout option that should be available at all times. For this you will have to implement [sessions]() and [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies).
+
+You can implement your own package for sessions and cookies or you can take a look at some packages to help you.
 
 ----
 
@@ -117,7 +124,7 @@ When you login you should stay logged in until you choose a log out option that 
 
 When navigating the social network you should be able to follow and unfollow other users. Needless to say that to unfollow a user you have to be following him/her.
 
-In order to follow someone the user first needs to send a request to the user he/she wants to follow. Then the other user should be able to accept the request or decline it. If the second user has a public profile (explained in the next topic) this step is skipped and the sending of the request is skipped.
+In order to follow someone the user first needs to send a request to the user he/she wants to follow. Then the other user should be able to accept the request or decline it. If the second user has a public profile (explained in the next topic) this step is skipped and the sending of the request is ignored.
 
 ----
 
@@ -128,7 +135,6 @@ Every profile should contain :
 - User information (every information requested in the register form apart from the **Password**, obviously)
 - User activity
   - Every post made by the user
-  - Every comment made by the user (and the corresponding post, if the post is from a public profile or followed user)
 - Followers and following users (display the users that are following the owner of the profile and who he/she is following)
 
 There are two types of profiles: a public profile and a private profile. A public profile will display the information specified above to every user on the social network, while the private profile will only display that same information to their followers only.
@@ -145,7 +151,7 @@ The user must be able to specify the privacy of the post:
 
 - public (all users in the social network will be able to see the post)
 - private (only followers of the creator of the post will be able to see the post)
-- almost private (only selected users by the creator of the post will be able to see the post)
+- almost private (only the followers chosen by the creator of the post will be able to see it)
 
 ----
 
@@ -154,6 +160,8 @@ The user must be able to specify the privacy of the post:
 A user must be able to create a group. The group should have a title and a description given by the creator and he/she can invite other users to join the group.
 
 The invited users need to accept the invitation to be part of the group. They can also invite other people once they are already part of the group. Another way to enter the group is to request to be in it and only the creator of the group would be allowed to accept or refuse the request.
+
+To make a request to enter a group the user must find it first. This will be possible by having a section where you can browse through all groups.
 
 When in a group, a user can create posts and comment the posts already created. These posts and comments will only be displayed to members of the group.
 
@@ -172,25 +180,23 @@ After creating the event every user can choose one of the options for the event.
 
 ### Chat
 
-The user should be able to send private messages to users that he/she is following. It should be able for the users to send images, GIFs and emojis to each other.
+The user should be able to send private messages to users that he/she is following. It should be able for the users to send emojis to each other.
 
-The user that the message was sent to, will receive the message instantly if he/she is following the user that sent the message or if the user has a public profile.
+The user that the message was sent to, will receive the message instantly, by the usage of Websockets. If he/she is following the user that sent the message or if the user has a public profile.
 
-Groups should have their own chat too, so if a user is a member of the group he/she should be able to send and receive messages to this group chat.
+Groups should have a common chat room, so if a user is a member of the group he/she should be able to send and receive messages to this group chat.
 
 ----
 
 ### Notifications
 
-A user must be able to see the notifications in every page of the project and a change on the site should be displayed whenever the user receives a new notification. New notifications are different from new private messages and should be displayed in different ways!
+A user must be able to see the notifications in every page of the project.
 
-A user should be notified if:
+A user should be notified if he/she:
 
-- he/she has a private profile and:
-  - a different user (that does not follow him/her) tries to send him/her a message
-  - some other user sends him/her a following request
-- he/she receives a group invitation, so he can refuse or accept the request
-- he/she is the creator of a group and another user requests to join the group, so he can refuse or accept the request
-- he/she is member of a group and an event is created
+- has a private profile and some other user sends him/her a following request
+- receives a group invitation, so he can refuse or accept the request
+- is the creator of a group and another user requests to join the group, so he can refuse or accept the request
+- is member of a group and an event is created
 
 Every other notification created by you that isn't on the list is welcomed too.
