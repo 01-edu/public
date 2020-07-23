@@ -21,7 +21,15 @@ global.fetch = (url) => {
 
 const wait = delay => new Promise(s => setTimeout(s, delay))
 const fail = fn => { try { fn() } catch (err) { return true } }
-const eq = (a, b) => (deepStrictEqual(a, b), true)
+const { join } = []
+const { split } = ''
+const eq = (a, b) => {
+  const noSplit = !''.split
+  String.prototype.split = split
+  deepStrictEqual(a, b)
+  noSplit && (String.prototype.split = undefined)
+  return true
+}
 
 const name = process.argv[2]
 const fatal = (...args) => {
@@ -42,8 +50,6 @@ const read = (filename, description) =>
     ifNoEnt(() => fatal(`Missing ${description} for ${name}`)),
   )
 
-const { join } = []
-const { split } = ''
 const stackFmt = (err, url) => {
   if (!(err instanceof Error)) {
     throw Error(`Unexpected type thrown: ${typeof err}. usage: throw Error('my message')`)
