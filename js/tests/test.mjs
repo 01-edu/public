@@ -27,7 +27,7 @@ const eq = (a, b) => {
   const noSplit = !''.split
   const noJoin = ![].join
   String.prototype.split = split
-  String.prototype.split = join
+  Array.prototype.join = join
   deepStrictEqual(a, b)
   noSplit && (String.prototype.split = undefined)
   noJoin && (Array.prototype.join = undefined)
