@@ -27,7 +27,7 @@ Our programming exercises require a Unix-like OS (operating system), in particul
 There are several ways to get a working Linux environment :
 
 - Buy a computer which comes with Linux pre-installed
-- Install Linux yourself
+- Install Linux yourself :
   - Natively
     - In dual-boot, which allows you to choose between Windows and Linux when your computer starts
     - In replacement of any existing OS
@@ -42,18 +42,25 @@ If you want to do it differently, ensure you still do the [Configure tools](#con
 
 [Skip this part](#install-a-web-browser) if Windows 10 is up-to-date.
 
-### Download
+### Prepare
 
-- Visit https://www.microsoft.com/en-us/software-download/windows10ISO (if you already are on Windows, you might need to modify the user-agent)
+- Visit https://www.microsoft.com/en-us/software-download/windows10
+- Click on "Download tool now"
+- Run the downloaded tool
+- Accept the license
+- Select "Create installation media (USB flash drive..."
+- Select "English (United States)" product language
 - Select "Windows 10" edition
-- Confirm
-- Select "English" product language
-- Confirm
-- Click on "64-bit Download" button
+- Select "64-bit (x64)" architecture
+- Click on "Next"
+- Select "USB flash drive"
+- If you see the message "We can't find a USB flash drive" make sure you connected a USB flash drive that is formatted
+  - Click on "Refresh drive list" to see it
+- Click on "next"
+- Click on "Finish"
 
 ### Install
 
-- Burn on flash drive (using Rufus https://rufus.ie is advised)
 - Boot on the flash drive
 - If you see "Press any key to boot from CD or DVD..." do it immediately
 - This tutorial is using Windows 10 Home
