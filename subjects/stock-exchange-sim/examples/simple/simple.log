@@ -1,0 +1,10 @@
+# Main walk
+0:buy_materiel
+10:build_product
+40:delivery
+# No more process doable at cyle 61
+# Stock :
+#  euro => 2
+#  materiel => 0
+#  product => 0
+#  client_content => 1

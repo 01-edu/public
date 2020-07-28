@@ -1,0 +1,15 @@
+# Main walk
+0:do_shelf
+0:do_shelf
+0:do_shelf
+0:do_doorknobs
+0:do_doorknobs
+0:do_background
+20:do_cabinet
+# No more process doable at cyle 51
+# Stock :
+#  board => 0
+#  doorknobs => 0
+#  background => 0
+#  shelf => 0
+#  cabinet => 1

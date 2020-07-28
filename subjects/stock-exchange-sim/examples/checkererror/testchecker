@@ -1,0 +1,19 @@
+#
+# build demo - stock
+#
+# stock      name:quantity
+board:7
+#
+# process   name:(need1:qty1;need2:qty2;[...]):(result1:qty1;result2:qty2;[...]):delay
+#
+do_doorknobs:(board:1):(doorknobs:1):15
+do_background:(board:2):(background:1):20
+do_shelf:(board:1):(shelf:1):10
+do_cabinet:(doorknobs:2;background:1;shelf:3):(cabinet:1):30
+#
+# optimize time for 0 stock and no process possible,
+# or maximize some products over a long delay
+# optimize:(stock1;stock2;...)
+#
+optimize:(time;cabinet)
+#
