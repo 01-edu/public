@@ -44,7 +44,7 @@ If you want to do it differently, ensure you still do the [Configure tools](#con
 
 ### Prepare
 
-- Visit https://www.microsoft.com/en-us/software-download/windows10
+- Visit [Download Windows 10](https://www.microsoft.com/en-us/software-download/windows10)
 - Click on "Download tool now"
 - Run the downloaded tool
 - Accept the license
@@ -105,12 +105,13 @@ Make sure to apply changes.
 
 ### Install Windows Subsystem for Linux (WSL2)
 
-Follow the guide : https://docs.microsoft.com/en-us/windows/wsl/install-win10 \
+Follow the guide : [Windows Subsystem for Linux Installation Guide for Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+
 To "Open PowerShell as Administrator", right-click on the Start menu.
 
 ### Install Debian
 
-- Visit https://www.microsoft.com/en-us/p/debian/9msvkqc78pk6
+- Visit [Debian](https://www.microsoft.com/en-us/p/debian/9msvkqc78pk6)
 - Click on "Get" button
 - Launch
 - Create user as requested (the password doesn't need to be secure and you have to remember it)
