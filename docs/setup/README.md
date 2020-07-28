@@ -54,6 +54,7 @@ If you want to do it differently, ensure you still do the [Configure tools](#con
 - Select "64-bit (x64)" architecture
 - Click on "Next"
 - Select "USB flash drive"
+- Click on "Next"
 - If you see the message "We can't find a USB flash drive" make sure you connected a USB flash drive that is formatted
   - Click on "Refresh drive list" to see it
 - Click on "next"
