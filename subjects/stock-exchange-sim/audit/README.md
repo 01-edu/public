@@ -1,6 +1,6 @@
 #### General
 
-###### Can you confirm that the program reads a file that describes the processes, analyze the entire file and propose a valid solution?
+###### Can you confirm that the program reads a file that describes the processes, analyzes the entire file and proposes a valid solution?
 
 ###### Does the project contains a checker program?
 
@@ -128,7 +128,7 @@ student$
 
 ##### Run the same example with a different waiting time `"./stock examples/fertilizer/fertilizer 0.0003"`.(fertilizer example is self-powered and rotates indefinitely)
 
-###### Does the display presents a result significantly shorter number of cycles comparing to the previous question output?
+###### Does the display presents a result with a significantly shorter number of cycles comparing to the previous question output?
 
 ##### Try to run the stock exchange program with the [error1](https://public.01-edu.org/subjects/stock-exchange-sim/examples/errors/error1) example, `"./stock examples/errors/error1 1"`.
 
@@ -139,7 +139,7 @@ Exiting...
 student$
 ```
 
-###### Does the display presents a result similar to the one above, were it shows the error?
+###### Does the display presents a result similar to the one above, where it shows the error?
 
 ##### Try to run the stock exchange program with the [error2](https://public.01-edu.org/subjects/stock-exchange-sim/examples/errors/error2) example, `"./stock examples/errors/error2 1"`.
 
@@ -150,7 +150,7 @@ Exiting...
 student$
 ```
 
-###### Does the display presents a result similar to the one above, were it shows the error?
+###### Does the display presents a result similar to the one above, where it shows the error?
 
 ##### Try to run the stock exchange program with the [error3](https://public.01-edu.org/subjects/stock-exchange-sim/examples/errors/error3) example, `"./stock examples/errors/error3 1"`.
 
@@ -161,7 +161,7 @@ Exiting...
 student$
 ```
 
-###### Does the display presents a result similar to the one above, were it shows the error?
+###### Does the display presents a result similar to the one above, where it shows the error?
 
 ##### Try to run the checker program with the [build](https://public.01-edu.org/subjects/stock-exchange-sim/examples/build/build) and the [build.log](https://public.01-edu.org/subjects/stock-exchange-sim/examples/build/build.log) example, `"./checker examples/build/build examples/build/build.log"`.
 
@@ -178,7 +178,7 @@ Trace completed, no error detected.
 student$
 ```
 
-###### Does the display presents a result similar to the one above, were it shows the last cycle and the proof that the sequence is correct?
+###### Does the display presents a result similar to the one above, where it shows the last cycle and the proof that the sequence is correct?
 
 ##### Try to run the checker program with the [seller](https://public.01-edu.org/subjects/stock-exchange-sim/examples/seller/seller) and the [seller.log](https://public.01-edu.org/subjects/stock-exchange-sim/examples/seller/seller.log)example, `"./checker examples/seller/seller examples/seller/seller.log"`.
 

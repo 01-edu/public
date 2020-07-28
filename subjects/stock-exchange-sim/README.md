@@ -19,12 +19,12 @@ Example:
 
 Imagine a project with different tasks in witch we have to achieve a final goal. Each of the tasks can have their dependencies and restrictions, lets say you are putting together a new cabinet and you have 7 boards.
 
-| Task          |                Needed                 |    Result    | Cycle |
-| ------------- | :-----------------------------------: | :----------: | :---: |
-| do_doorknobs  |               board: 1                | doorknobs:1  |  15   |
-| do_background |               board: 2                | background:1 |  20   |
-| do_shelf      |               board: 1                |   shelf:1    |  10   |
-| do_cabinet    | doorknobs: 2; background: 1; shelf: 3 |  cabinet:1   |  30   |
+| Task          |                Needed                 |    Result     | Cycle |
+| ------------- | :-----------------------------------: | :-----------: | :---: |
+| do_doorknobs  |               board: 1                | doorknobs: 1  |  15   |
+| do_background |               board: 2                | background: 1 |  20   |
+| do_shelf      |               board: 1                |   shelf: 1    |  10   |
+| do_cabinet    | doorknobs: 2; background: 1; shelf: 3 |  cabinet: 1   |  30   |
 
 The purpose of this example is to optimise time and cabinet, basically the cabinet is the last product to achieve in the project and time is to be prioritized so that the building of your cabinet is done the fastest way possible.
 
@@ -88,12 +88,12 @@ Then we can run the **The stock exchange program** to generate a schedule.
 
 - In the situation where the system self-powers and rotates indefinitely, you will choose a reasonable shutdown condition, and your stocks should show that the whole process went well several times.
 
-- There is no obligation of invariance between two executions. This means that, for the same configuration, the first recommended solution, may be completely different from the second one.
+- There is no obligation of invariance between two executions. This means that, for the same configuration, the first recommended solution, may be different from the second one.
 
 - It is up to you to create and organize the display, it must nevertheless allow the understanding of the main actions carried out by the program.
 
 ```console
-Main Processes :
+Main Processes:
  0:do_shelf
  0:do_shelf
  0:do_shelf
@@ -102,7 +102,7 @@ Main Processes :
  0:do_background
  20:do_cabinet
 No more process doable at cycle 51
-Stock :
+Stock:
  board => 0
  doorknobs => 0
  background => 0
@@ -110,11 +110,11 @@ Stock :
  cabinet => 1
 ```
 
-- The display must also produce an output usable by the verification program, in the following format:
+- The display must also produce an output usable by the checker program, in the following format:
 
   `<cycle>:<process_name>`
 
-The generated schedule is then saved as a log in the example folder with the same name.
+The generated schedule is then saved as a log with the same name.
 
 So if you run:
 
@@ -132,7 +132,7 @@ student$ cat examples/simple.log
 No more process doable at cycle 61
 ```
 
-----
+---
 
 ### Checker
 
@@ -140,7 +140,7 @@ We can then verify if the schedule is doable with the **checker** program:
 
 - It takes 2 parameters:
 
-  `.\checker <file> <result_to_test>`
+  `.\checker <file> <log_file>`
 
   - The first parameter is the configuration file, the second is a log file containing the trace of stock exchange program which must be checked.
 
@@ -176,14 +176,14 @@ optimize:(time;client_content)
 
 Running the stock exchange program:
 
-```
+```console
 student$ ./stock examples/simple 10
-Main Processes :
+Main Processes:
  0:buy_materiel
  10:build_product
  40:delivery
 No more process doable at cycle 61
-Stock :
+Stock:
  euro => 2
  materiel => 0
  product => 0
@@ -193,7 +193,7 @@ student$
 
 Running the checker program:
 
-```
+```console
 student$ ./checker examples/simple examples/simple.log
 Evaluating: 0:buy_materiel
 Evaluating: 10:build_product
@@ -202,9 +202,9 @@ Trace completed, no error detected.
 student$
 ```
 
-----
+---
 
-Running the stock exchange program with error:
+Running the stock exchange program with error, you can see the correct file [here](https://public.01-edu.org/subjects/stock-exchange-sim/examples/simple/simple)
 
 ```console
 student$ cat examples/simple
@@ -218,7 +218,7 @@ Error while parsing `:(euro:8):(material:1):10`
 student$
 ```
 
-Running the checker program with error:
+Running the checker program with error, you can see the correct file [here](https://public.01-edu.org/subjects/stock-exchange-sim/examples/simple/simple.log)
 
 ```console
 student$ cat examples/simple.log
