@@ -22,10 +22,6 @@
 
 ###### Are you able to log out in every page?
 
-##### Try to check other people's profiles.
-
-###### Are you able to see their information (other than email and pass)
-
 ##### Try to create a post.
 
 ###### Are you able to create a post?
@@ -34,21 +30,13 @@
 
 ###### Are you able to see the post you previously created?
 
-##### Log in as a registered user and try to comment a post
+##### Log in as a registered user and try to comment a post.
 
 ###### Are you able to comment on the post?
 
 ##### Click on the post you created.
 
 ###### Are you able to see the comment you previously created?
-
-##### Open two browsers (ex: Chrome and Firefox) and log in with different users in each one. With one user create a post.
-
-###### Did the other user saw the new post without refreshing the page?
-
-##### Open two browsers (ex: Chrome and Firefox), log in with different users in each one, click on a post with both users and try to comment with one user.
-
-###### Did the other user saw the new comment without refreshing the page?
 
 ###### Is there a section designed to show online users?
 
@@ -58,17 +46,17 @@
 
 ###### Are the chat users organized in alphabetic order?
 
-##### Try to send a message
+##### Try to send a message.
 
 ###### Does the message respect the format, by using the users name and the date that the message was sent?
 
 ##### Open two browsers (ex: Chrome and Firefox), log in with different users in each one and with one of them try to send a private message to the other.
 
-###### Did the other user received the message in real time, without refreshing the page?
+###### Did the other user received a notification?
 
 ##### Open two browsers (ex: Chrome and Firefox), log in with different users in each one and with one of them try to send a private message to the other.
 
-###### Did the other user received a notification?
+###### Did the other user received the message in real time, without refreshing the page?
 
 ##### Try to open a private conversation, that has more then 10 messages.
 
@@ -88,9 +76,7 @@
 
 ###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/README.md)?
 
-###### +Can the users edit their profile?
-
-###### +Can the users add a photo to their profile?
+###### +Does the users have profiles?
 
 ###### +Can the users send images through the private messages?
 

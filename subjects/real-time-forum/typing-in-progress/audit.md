@@ -2,15 +2,7 @@
 
 ##### Open two browsers (ex: Chrome and Firefox or private windows) and log in with different users in each one. With one user start typing.
 
-###### Can you confirm that the typing in progress engine works?
-
-##### Using the same two browsers, start typing with one of the users.
-
-###### Can you confirm that the typing in progress has the name of the user that is typing?
-
-##### Using the same two browsers, start typing with one of the users.
-
-###### Is there any animation from the typing in progress
+###### Is there any animation confirming that the typing in progress is working?
 
 ##### Using the same two browsers, start typing with one of the users.
 
@@ -19,6 +11,10 @@
 ##### Using the same two browsers, start typing with one of the users.
 
 ###### Is the animation from the typing in progress engine user friendly (easy to understand/see)?
+
+##### Using the same two browsers, start typing with one of the users.
+
+###### Can you confirm that the typing in progress has the name of the user that is typing?
 
 ##### Open two browsers (ex: Chrome and Firefox or private windows) and log in with different users in each one. With one user start typing and then stop.
 

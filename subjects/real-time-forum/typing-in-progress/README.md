@@ -12,16 +12,16 @@ For this project you must create:
 
 A typing in progress engine is a way that people can see that a user is typing in real time. Allowing you to see the other user is replying or sending a message.
 
-The typing in progress engine must work in real time! This meaning that if you start typing to a certain user this user will be able to see that you are typing
+The typing in progress engine must work in real time! This meaning that if you start typing to a certain user this user will be able to see that you are typing.
 
 This engine must have/display:
 
 - A websocket to stablish the connection with both users
 - An animation so that the user can see that you are typing, this animation should be smooth (no interruptions/janks) and just enough to draw attention for the user to see (user friendly)
 - The name of the user that is typing
-- When ever the user stops typing or finishes the conversation, it should not display the animation
+- Whenever the user stops typing or finishes the conversation, it should not display the animation
 
-For help displaying the typing in progress you can take a look on the js [event](https://developer.mozilla.org/en-US/docs/Web/Events) list, primarily the **Keyboard events** and the **Focus events**
+To help with the display of the typing in progress you can take a look on the js [event](https://developer.mozilla.org/en-US/docs/Web/Events) list, mainly the **Keyboard events** and the **Focus events**
 
 This project will help you learn about:
 
