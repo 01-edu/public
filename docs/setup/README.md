@@ -4,7 +4,7 @@ Table of contents :
 
 - [Introduction](#introduction)
 - [Install Windows 10](#install-windows-10)
-  - [Download](#download)
+  - [Prepare](#prepare)
   - [Install](#install)
     - [Wait for Windows 10 to be idle](#wait-for-windows-10-to-be-idle)
     - [Install updates](#install-updates)
