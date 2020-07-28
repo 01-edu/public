@@ -42,7 +42,7 @@ If you want to do it differently, ensure you still do the [Configure tools](#con
 
 [Skip this part](#install-a-web-browser) if Windows 10 is up-to-date.
 
-### Prepare
+### Prepare ([video](https://www.youtube.com/watch?v=9mnsKrGsOOo))
 
 - Visit [Download Windows 10](https://www.microsoft.com/en-us/software-download/windows10)
 - Click on "Download tool now"
@@ -60,7 +60,7 @@ If you want to do it differently, ensure you still do the [Configure tools](#con
 - Click on "next"
 - Click on "Finish"
 
-### Install
+### Install ([video](https://www.youtube.com/watch?v=4D6SwICBkFA))
 
 - Boot on the flash drive
 - If you see "Press any key to boot from CD or DVD..." do it immediately
@@ -87,7 +87,7 @@ If you want to do it differently, ensure you still do the [Configure tools](#con
 - Click on "Restart now"
 - Repeat [Install updates](#install-updates) until you see "You're up to date"
 
-## Install a web browser
+## Install a web browser ([video](https://www.youtube.com/watch?v=8QkXFo5kKg4))
 
 [Skip this part](#install-linux) if you have a modern & full-featured web browser (e.g. Chrome, Firefox, etc).
 
@@ -99,7 +99,7 @@ We recommend to use Firefox with the extension "uBlock Origin" and the additiona
 
 Make sure to apply changes.
 
-## Install Linux
+## Install Linux ([video](https://www.youtube.com/watch?v=u0vM78D2MLo))
 
 [Skip this part](#install-vscode) if you already have Debian (or similar system e.g. Ubuntu).
 
@@ -117,7 +117,7 @@ To "Open PowerShell as Administrator", right-click on the Start menu.
 - Create user as requested (the password doesn't need to be secure and you have to remember it)
 - Close (by using the shortcut <kbd>Ctrl</kbd>+<kbd>D</kbd>, closing the window or typing the `exit` command)
 
-## Install VSCode
+## Install VSCode ([video](https://www.youtube.com/watch?v=TWw2Xc7A3YI))
 
 If you run Linux natively, go to [Configure tools](#configure-tools).
 
@@ -128,7 +128,7 @@ Run the installer, check all "Additional Tasks".
 
 Launch VSCode, once started it should detect WSL and propose you to install the "Remote - WSL" extension, which is needed for the next steps.
 
-## Configure Linux
+## Configure Linux ([video](https://www.youtube.com/watch?v=c8HoeMDoOXk))
 
 ### Connect to remote WSL
 
