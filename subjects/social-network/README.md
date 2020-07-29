@@ -44,9 +44,17 @@ This is typically divided into three major parts:
 
 - **Server**, this is the computer that receives request. Though there are machines made and optimized for this particular purpose, you will use your own computer.
 
-- **App**, this is the application running on the server that listens for requests, retrieves information from the database and sends a response. The server runs an app that contains all the logic about how to respond to various requests based on the HTTP or other types of protocols. Some of these handlers functions will be middleware. Middlewares is any code that executes between the server receiving a request and sending a response.
+- **App**, this is the application running on the server that listens for requests, retrieves information from the database and sends a response. The server runs an app that contains all the logic about how to respond to various requests based on the HTTP or other types of protocols. Some of these handlers functions will be middleware. Middleware is any code that executes between the server receiving a request and sending a response.
 
 - **Database**, are used as you already know, to organize and persist data. Many requests sent to the server might require a database query. A client might request information that is stored in the database, or a client might submit data with their request to be added to the database.
+
+#### App
+
+The backend will consist, like said above, of an **app** containing all the backend logic. This logic will there for have several middleware, for example:
+
+- Authentication, since HTTP is a stateless protocol, we can use several ways to overcome and authenticate a client/user. You can use [sessions](https://allaboutcookies.org/cookies/session-cookies-used-for.html) or [tokens(JWT)](https://jwt.io/)
+- Images handling, supporting various types of extensions. In this project you have to handle at least JPEG, PNG types. You will have to store the images, it can be done by storing the file/path in the database and saving the image in a specific file system.
+- Websocket, handling the connections in real time, between clients. This will help with the private chats.
 
 #### Sqlite
 
@@ -114,7 +122,7 @@ To be able for the users to use the social network they will have to make an acc
 
 Note that the **Avatar/Image**, **Nickname** and **About Me** should be present in the form but the user can skip the filling of those fields.
 
-When you login you should stay logged in until you choose a logout option that should be available at all times. For this you will have to implement [sessions]() and [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies).
+When you login you should stay logged in until you choose a logout option that should be available at all times. For this you will have to implement [sessions](https://allaboutcookies.org/cookies/session-cookies-used-for.html) and [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies).
 
 You can implement your own package for sessions and cookies or you can take a look at some packages to help you.
 
@@ -200,3 +208,19 @@ A user should be notified if he/she:
 - is member of a group and an event is created
 
 Every other notification created by you that isn't on the list is welcomed too.
+
+This project will help you learn about:
+
+- Client utilities
+- Authentication :
+  - Sessions and cookies
+  - Token(JWT)
+- Using and [setting up Docker](https://docs.docker.com/get-started/)
+  - Containerizing an application
+  - Compatibility/Dependency
+  - Creating images
+- SQL language
+  - Manipulation of databases
+  - Migrations
+- The basics of encryption
+- Websocket
