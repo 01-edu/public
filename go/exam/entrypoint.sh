@@ -13,8 +13,13 @@ first_file=$(echo "$EXPECTED_FILES" | cut -d' ' -f1)
 mkdir -p "$(dirname "$first_file")"
 cat > "$first_file"
 
-# Format code
-goimports -w .
+# Check formatting
+s=$(goimports -d .)
+if test "$s"; then
+	echo '$ goimports -d .'
+	echo "$s"
+	exit 1
+fi
 
 # Check restrictions
 if test "$ALLOWED_FUNCTIONS" && test "$EXPECTED_FILES"; then
