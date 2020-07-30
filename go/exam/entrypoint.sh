@@ -21,15 +21,6 @@ if test "$s"; then
 	exit 1
 fi
 
-# Check restrictions
-if test "$ALLOWED_FUNCTIONS" && test "$EXPECTED_FILES"; then
-	IFS=' '
-	# shellcheck disable=SC2086
-	rc "$first_file" $ALLOWED_FUNCTIONS
-	IFS='
-'
-fi
-
 cd
 
 # Run program
