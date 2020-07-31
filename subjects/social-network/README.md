@@ -44,7 +44,7 @@ This is typically divided into three major parts:
 
 - **Server**, this is the computer that receives request. Though there are machines made and optimized for this particular purpose, you will use your own computer.
 
-- **App**, this is the application running on the server that listens for requests, retrieves information from the database and sends a response. The server runs an app that contains all the logic about how to respond to various requests based on the HTTP or other types of protocols. Some of these handlers functions will be middleware. Middleware is any code that executes between the server receiving a request and sending a response.
+- **App**, this is the application running on the server that listens for requests, retrieves information from the database and sends a response, usually the response is done in JSON, using REST-based API. The server runs an app that contains all the logic about how to respond to various requests based on the HTTP or other types of protocols. Some of these handlers functions will be middleware. Middleware is any code that executes between the server receiving a request and sending a response.
 
 - **Database**, are used as you already know, to organize and persist data. Many requests sent to the server might require a database query. A client might request information that is stored in the database, or a client might submit data with their request to be added to the database.
 
@@ -53,8 +53,8 @@ This is typically divided into three major parts:
 The backend will consist, like said above, of an **app** containing all the backend logic. This logic will there for have several middleware, for example:
 
 - Authentication, since HTTP is a stateless protocol, we can use several ways to overcome and authenticate a client/user. You can use [sessions](https://allaboutcookies.org/cookies/session-cookies-used-for.html) or [tokens(JWT)](https://jwt.io/)
-- Images handling, supporting various types of extensions. In this project you have to handle at least JPEG, PNG types. You will have to store the images, it can be done by storing the file/path in the database and saving the image in a specific file system.
-- Websocket, handling the connections in real time, between clients. This will help with the private chats.
+- Images handling, supporting various types of extensions. In this project you have to handle at least JPEG, PNG and GIF types. You will have to store the images, it can be done by storing the file/path in the database and saving the image in a specific file system. Or saving the image in the database, you can see more about images and database [here](https://stackoverflow.com/questions/3748/storing-images-in-db-yea-or-nay).
+- Websocket, handling the connections in real time, between clients. This will help with the private and group chats.
 
 #### Sqlite
 
@@ -65,7 +65,7 @@ To know more about SQLite you can check the [SQLite page](https://www.sqlite.org
 
 #### Migrate
 
-You will have to create migrations for this project so every time the application runs it creates the specific tables to make the project work properly
+You will have to create migrations for this project so every time the application runs it creates the specific tables to make the project work properly.
 
 For this you must focus on a folder structure similar to this one:
 
@@ -92,7 +92,9 @@ The folder structure is organized in a way that helps you to **understand** and 
 
 For migrations you can use [golang-migrate](https://github.com/golang-migrate/migrate) package or other package that better suits your project
 
-All migrations should be stored on a specific folder,  as above. The `sqlite.go` should present the connection to the database, the applying of the migrations and other useful functionalities that you may need to implement.
+All migrations should be stored on a specific folder, as above. The `sqlite.go` should present the connection to the database, the applying of the migrations and other useful functionalities that you may need to implement.
+
+This migration system can help you manage your time and testing, by filling you database.
 
 ----
 
@@ -122,9 +124,9 @@ To be able for the users to use the social network they will have to make an acc
 
 Note that the **Avatar/Image**, **Nickname** and **About Me** should be present in the form but the user can skip the filling of those fields.
 
-When you login you should stay logged in until you choose a logout option that should be available at all times. For this you will have to implement [sessions](https://allaboutcookies.org/cookies/session-cookies-used-for.html) and [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies).
+When you login you should stay logged in until you choose a logout option that should be available at all times. For this you will have to implement [sessions](https://allaboutcookies.org/cookies/session-cookies-used-for.html) and [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies) or [tokens(JWT)](https://jwt.io/).
 
-You can implement your own package for sessions and cookies or you can take a look at some packages to help you.
+You can implement your own package for the authentication or you can take a look at some packages to help you.
 
 ----
 
@@ -165,7 +167,7 @@ The user must be able to specify the privacy of the post:
 
 ### Groups
 
-A user must be able to create a group. The group should have a title and a description given by the creator and he/she can invite other users to join the group.
+A user must be able to create a group. The group should have a title and a description given by the creator and he/she can invite other followers to join the group.
 
 The invited users need to accept the invitation to be part of the group. They can also invite other people once they are already part of the group. Another way to enter the group is to request to be in it and only the creator of the group would be allowed to accept or refuse the request.
 
@@ -188,9 +190,9 @@ After creating the event every user can choose one of the options for the event.
 
 ### Chat
 
-The user should be able to send private messages to users that he/she is following. It should be able for the users to send emojis to each other.
+The user should be able to send private messages to users that he/she is following. It should be able for the users to send emojis to each other too.
 
-The user that the message was sent to, will receive the message instantly, by the usage of Websockets. If he/she is following the user that sent the message or if the user has a public profile.
+The user that the message was sent to, will receive the message instantly, by the usage of Websockets. If he/she is following the user that sent the message
 
 Groups should have a common chat room, so if a user is a member of the group he/she should be able to send and receive messages to this group chat.
 
