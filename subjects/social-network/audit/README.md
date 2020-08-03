@@ -22,7 +22,7 @@
 
 #### Authentication
 
-###### Does the app implement sessions or JWT for the authentication of the users?
+###### Does the app implement sessions for the authentication of the users?
 
 ###### Are the correct form elements being used in the registration? (Email, Password, First Name, Last Name, Date of Birth, Avatar/Image (Optional), Nickname (Optional), About Me (Optional))
 
@@ -192,6 +192,12 @@
 
 ###### Did the other user received a notification regarding the creation of the event?
 
+#### Docker
+
+##### Try and run the application, then use the docker command `"docker ps -a"`
+
+###### Can you confirm that there are two containers, one for the backend and the other for the frontend?
+
 #### Bonus
 
 ###### +Can you log in using Github or other type of external OAuthenticator (open standard for access delegation)?
@@ -203,3 +209,5 @@
 ###### +If you change your profile from public to private (or vice versa), do you get a confirmation pop-up?
 
 ###### +Is there other notification apart from the ones explicit on the subject?
+
+###### +Does the project present a script to build the images and containers? (using a script to simplify the build)

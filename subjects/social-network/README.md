@@ -28,10 +28,9 @@ Frameworks will help you to organize and implement the features you want on your
 Some of the most known JS frameworks around are:
 
 - [React](https://reactjs.org/)
-- [Angular](https://angular.io/)
 - [Vue.js](https://vuejs.org/)
-- [Ember.js](https://emberjs.com)
-- [Meteor](https://www.meteor.com/)
+- [svelte](https://svelte.dev/)
+- [Mithril](https://mithril.js.org/)
 
 Caution: Note that JS frameworks are different from JS libraries. JS libraries contain code snippets that are used to perform common JavaScript functions, while frameworks will help you by laying out the groundwork/building the bases for your JS project.
 
@@ -52,9 +51,11 @@ This is typically divided into three major parts:
 
 The backend will consist, like said above, of an **app** containing all the backend logic. This logic will there for have several middleware, for example:
 
-- Authentication, since HTTP is a stateless protocol, we can use several ways to overcome and authenticate a client/user. You can use [sessions](https://allaboutcookies.org/cookies/session-cookies-used-for.html) or [tokens(JWT)](https://jwt.io/)
+- Authentication, since HTTP is a stateless protocol, we can use several ways to overcome and authenticate a client/user. You must use [sessions](https://allaboutcookies.org/cookies/session-cookies-used-for.html) and cookies.
 - Images handling, supporting various types of extensions. In this project you have to handle at least JPEG, PNG types. You will have to store the images, it can be done by storing the file/path in the database and saving the image in a specific file system.
 - Websocket, handling the connections in real time, between clients. This will help with the private chats.
+
+For the web server you can take a look at [caddy](https://caddyserver.com/docs/), it can serve your site, services and apps and its written in **go**, or you are free to create your own web server.
 
 #### Sqlite
 
@@ -100,9 +101,11 @@ This migration system can help you manage your time and testing, by filling your
 
 ### docker
 
-You must create an image that contains both the backend and frontend. Where both of them will communicate within the container prevenient from the image.
+You must create two images where one will serve the backend and the other will serve the frontend.
 
-In theory only one process will suffice. So you will have to create a Dockerfile witch will build and run the backend and the frontend, but only one (frontend) will be published to a port on the host machine.
+Both back and front must communicate, for that is the purpose of having them.
+
+The communication is done in the browser so you will have to publish the ports for both backend and frontend.
 
 ---
 
@@ -213,7 +216,6 @@ This project will help you learn about:
 - Client utilities
 - Authentication :
   - Sessions and cookies
-  - Token(JWT)
 - Using and [setting up Docker](https://docs.docker.com/get-started/)
   - Containerizing an application
   - Compatibility/Dependency
