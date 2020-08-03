@@ -100,12 +100,9 @@ This migration system can help you manage your time and testing, by filling your
 
 ### docker
 
-You must create two images where one will serve the backend and the other will serve the frontend.
+You must create an image that contains both the backend and frontend. Where both of them will communicate within the container prevenient from the image.
 
-Both back and front must communicate, for that is the purpose of having them. For this you will have to create a network to make sure that your containers are isolated, you can see more about `docker network` [here](https://docs.docker.com/network/).
-This network must have both back and front end where they will communicate between them.
-
-Only one will be published to a port on the host machine, being the client, so that you can be able to access the port that is exposed.
+In theory only one process will suffice. So you will have to create a Dockerfile witch will build and run the backend and the frontend, but only one (frontend) will be published to a port on the host machine.
 
 ---
 

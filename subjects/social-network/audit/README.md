@@ -192,8 +192,6 @@
 
 ###### Did the other user received a notification regarding the creation of the event?
 
-#### Docker
-
 #### Bonus
 
 ###### +Can you log in using Github or other type of external OAuthenticator (open standard for access delegation)?
