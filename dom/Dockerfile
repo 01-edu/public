@@ -1,4 +1,4 @@
-FROM buildkite/puppeteer
+FROM buildkite/puppeteer:5.2.1
 
 ENV GIT_TERMINAL_PROMPT=0
 RUN apt-get update
