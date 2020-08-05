@@ -106,7 +106,7 @@ echo 'GRUB_TIMEOUT=0' >> /etc/default/grub
 update-grub
 apt-get -y purge apparmor exim\*
 
-for i in $(seq 0 $(nproc --ignore 1)); do
+for i in $(seq 0 "$(nproc --ignore 1)"); do
   echo "devices/system/cpu/cpu${i}/cpufreq/scaling_governor = performance" >> /etc/sysfs.conf
 done
 
