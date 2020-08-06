@@ -4,36 +4,56 @@
 
 Ascii-art-web consists in creating and running a server, in which it will be possible to use a web **GUI** (graphical user interface) version of your last project, ascii-art.
 
-- You must use your [ascii-art](https://public.01-edu.org/subjects/ascii-art/) application for this project.
-- You can run your server **locally** (localhost) or using an **API**.
-- You must use the different [banners](https://github.com/01-edu/public/tree/master/subjects/ascii-art) for the website.
-- It should be available to choose between the banners.
-- You have to use the right [HTTP methods](https://www.tutorialspoint.com/http/http_methods.htm).
-- You need to have a well established connection between server and client.
+Your web-page should provide usage of different [banners](https://github.com/01-edu/public/tree/master/subjects/ascii-art).
 
-This project will help you learn about :
+Implement following HTTP endpoints:
+1. GET `/`: Sends HTML response - the main page.
+2. POST `/ascii-art`: Receives _JSON_ body with the following data and returns _JSON_ response with the result of _ascii-art_:
 
-- Client utilities.
-- Back-end and front-end.
-- The basics of web :
-  - Server
-  - HTML
-  - HTTP
-  - [HTTP methods](https://www.tutorialspoint.com/http/http_methods.htm)
-  - [HTTP status](https://www.restapitutorial.com/httpstatuscodes.html)
-- Ways to receive data
-- Ways to output data
+Request body:
+```js
+{
+  "banner": "shadow",
+  "text": "Your text here"
+}
+```
+
+Response body:
+```js
+{
+  "result": "..."
+}
+```
+
+Main page must have:
+- text input
+- radio buttons, select object or anything else to choose between banners
+- button, which sends _AJAX_ request to '/ascii-art' and outputs the result on page.
+
+### HTTP status code
+
+Your endpoints must return appropriate HTTP status codes.
+- OK (200), if everything went without errors
+- Not Found, if anything is not found, e.g: template, banner etc.
+- Bad Request, for incorrect requests
+- Internal Server Error, for unhandled errors
+
+## Markdown
+
+In root project directory create `README.MD` file with the following sections and contents:
+- Description
+- Authors
+- Usage: how to run
+- Implementation details: algorithm
 
 ### Allowed packages
 
 - Only the [standard go](https://golang.org/pkg/) packages are allowed
 
 ### Instructions
-
-- You must handle website errors.
-- The web server must be created in **Go**.
+- HTTP server must be written in _Go_.
+- HTML templates must be in project root directory _templates_.
 - The code must respect the [good practices](https://public.01-edu.org/subjects/good-practices/).
-- The project must have files written in **HTML**.
 
 ### Usage
 
