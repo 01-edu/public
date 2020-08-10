@@ -32,21 +32,21 @@ fetch('https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json')
   .then(loadData) // .then will call the function with the JSON value
 ```
 
-
 #### Display
 
 Not every field should be presented in a `<table>` element,
 the necessary data will be:
-  - Icon (`.images.xs`, should be displayed as images and not as a string)
-  - Name (`.name`)
-  - Full Name (`.biography.fullName`)
-  - Powerstats (each entry of `.powerstats`)
-  - Race (`.appearance.race`)
-  - Gender (`.appearance.gender`)
-  - Height (`.appearance.height`)
-  - Weight (`.appearance.weight`)
-  - Place Of Birth (`.biography.placeOfBirth`)
-  - Alignement (`.biography.alignment`)
+
+- Icon (`.images.xs`, should be displayed as images and not as a string)
+- Name (`.name`)
+- Full Name (`.biography.fullName`)
+- Powerstats (each entry of `.powerstats`)
+- Race (`.appearance.race`)
+- Gender (`.appearance.gender`)
+- Height (`.appearance.height`)
+- Weight (`.appearance.weight`)
+- Place Of Birth (`.biography.placeOfBirth`)
+- Alignement (`.biography.alignment`)
 
 The information must be displayed in multiple pages. \
 A `<select>` input is used to chose from `10`, `20`,`50`, `100` or `all results`.
@@ -57,25 +57,24 @@ A `<select>` input is used to chose from `10`, `20`,`50`, `100` or `all results`
 
 It must be possible to filter information by searching the name as a string
   *(ex: superheroes that contain **man** in their name).*
-  - The search should be interactive, in other words, the results should be
+- The search should be interactive, in other words, the results should be
     displaying as you write, not needing a button for you to click.
-
 
 #### Sort
 
 It must be possible to sort by any columns of the table
   *(either alphabetically or numerically).*
-  - Initially all rows should be sorted by the column `name` by `ascending` order
-  - First click will order the column by `ascending` value
-  - Consecutive clicks will toggle between `ascending` and `descending` order
-  - Note that, for example, the column `weight` will be composed of strings, so
+
+- Initially all rows should be sorted by the column `name` by `ascending` order
+- First click will order the column by `ascending` value
+- Consecutive clicks will toggle between `ascending` and `descending` order
+- Note that, for example, the column `weight` will be composed of strings, so
     the correct order would be `['78 kg', '100 kg']` instead of the other way
     around
-  - Missing values should always be sorted last.
+- Missing values should always be sorted last.
 
 > As you know, when you are against heroes, **speed** is critical, every operations on
 > the database should be very fast and not slow down the browser
-
 
 ### Optional
 
