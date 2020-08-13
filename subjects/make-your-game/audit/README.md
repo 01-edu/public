@@ -44,15 +44,7 @@
 
 ##### Try playing the game
 
-###### Does the countdown clock seem to be working?
-
-##### Try playing the game
-
-###### Does the countdown clock reaches the end?
-
-##### Try playing the game allowing the countdown clock to reach the end
-
-###### Does the game end?
+###### Does the countdown/timer clock seem to be working?
 
 ##### Try playing the game and score some points
 

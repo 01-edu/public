@@ -23,7 +23,7 @@ Here are some of the features you want to implement on your game:
   - Continue
   - Restart
 - A score board that must present the following tasks:
-  - **Countdown clock**: That will indicate the amount of time the player has until the game ends
+  - **Countdown clock / Timer**: That will indicate the amount of time the player has until the game ends or the time that the game took to finish
   - **Score**: That will keep a score count of the amount of XP/points that the player got while playing
   - **Lives**: That indicates the amount of lives that the player has left
 
