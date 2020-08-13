@@ -49,18 +49,18 @@ The html above can be written as:
             "type": "text",
             "placeholder": "Insert Name"
           }
-        }, //</input>
+        },
         {
           "tag": "input",
           "attrs": {
             "type": "submit",
             "placeholder": "Submit"
           }
-        } //</input>
+        }
       ]
-    } //</div>
+    }
   ]
-} //</html>
+}
 ```
 
 With this in mind you can manipulate the DOM more easily in JS. And that is what you will do using a method. Here are some methods you can use:
