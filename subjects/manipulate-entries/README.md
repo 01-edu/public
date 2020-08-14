@@ -5,14 +5,20 @@
 Finish your groceries!!!
 
 Create 3 functions that works like the `.filter`, `.map` and `.reduce` array method but for the entries of the grocery cart.
+
 - `filterEntries` filters using both key and value.
 - `mapEntries` changes either the key or the value or both.
 - `reduceEntries` reduce over entries.
 
 Create 3 other functions that use your previously create functions:
+
 - `totalCalories` that will return the total calories of a cart
 - `lowCarbs` that will leave only items that total carbs are lower than 50grams
 - `cartTotal` that will give you the right amount of calories, proteins, ..., of all items in your grocery cart.
+
+### Clarification
+
+What the functions will take as argument is an object cart which contains the food rations. All the nutrition in the nutritionDB object are measured per 100 grams.
 
 
 ### Notions
