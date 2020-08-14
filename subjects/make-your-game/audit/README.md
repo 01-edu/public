@@ -40,7 +40,7 @@
 
 ##### Try playing the game
 
-###### Does the game work like it should (as one the games from the pre-approved list)?
+###### Does the game work like it should (as one of the games from the pre-approved list)?
 
 ##### Try playing the game
 
@@ -68,7 +68,7 @@
 
 ##### Try using the Dev Tool/performance and the option rendering with the layer ON, if possible
 
-###### Is the layers being used as less sas possible?
+###### Is the layers being used as less as possible?
 
 ###### Are the creation of the [layers being promoted](https://developers.google.com/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count) properly?
 
