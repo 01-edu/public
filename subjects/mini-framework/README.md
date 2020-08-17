@@ -15,6 +15,8 @@ Your framework should implement:
 
 ### Instructions
 
+You must create documentation for your framework, so that users (auditers) are able to understand and know how to use your framework without experiencing any awkwardness. By documentation we mean, the explaining of how does the framework works and how to work with it, for example: how to create a div, how to add an event to a button, etc.
+
 Your framework will be tested by using it, like you previously have used one, in the social network project. So the user has to be presented to a folder structure that when executed `npm start` at the root of the folder, it runs the app. The user testing your framework will have to implement some simple code in order to test the features described bellow.
 
 #### Abstracting DOM
@@ -71,13 +73,13 @@ With this in mind you can manipulate the DOM more easily in JS. And that is what
 
 There are a lot of ways to achieve this. Above are just some examples, what matters is that the DOM must respond to certain actions of the user.
 
+You have to take into account the events, children and attributes of each element of the DOM.
+
 ---
 
 #### Easier Routing
 
 Routing is the process of selecting a path for traffic in a network. And, as you may have already realized, routing in JS can sometimes be a little bit confusing, so what you will need to do, is to implement a new routing system that is more intuitive and simpler.
-
-Also take in consideration that all kind of URLs must be supported, like for example queries in the URL from GET requests (example: `http://something.com/users?id=31&tkn=31inasdasni213n1i23ni213ojo`) or not found pages.
 
 ---
 
