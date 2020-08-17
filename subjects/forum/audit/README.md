@@ -80,6 +80,8 @@ cc8f5dcf760f        <name of the image>    "./server"               6 seconds ag
 
 #### Functional
 
+###### Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
+
 ##### Enter the forum as a non-registered user.
 
 ###### Are you prohibited to create a post?
@@ -173,8 +175,6 @@ cc8f5dcf760f        <name of the image>    "./server"               6 seconds ag
 #### Basic
 
 ###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
-
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
 
 ###### +Is there a test file for this code?
 

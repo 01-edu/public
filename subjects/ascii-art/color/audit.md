@@ -1,6 +1,8 @@
 #### Functional
 
-###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
+###### Has the requirement for the allowed packages been respected? (only the [standard go](https://golang.org/pkg/) packages are allowed)
+
+###### Does the code obey the [good practices](https://github.com/01-edu/public/blob/master/subjects/good-practices/)?
 
 ##### Try passing as arguments `"hello world" --color=red`.
 
@@ -67,8 +69,6 @@
 ###### +Is there a test file for this code?
 
 ###### +Are the tests checking each possible case?
-
-###### +Does the code obey the [good practices](https://github.com/01-edu/public/blob/master/subjects/good-practices/)?
 
 #### Social
 

@@ -1,6 +1,8 @@
 #### Functional
 
-###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
+###### Has the requirement for the allowed packages been respected? (only the [standard go](https://golang.org/pkg/) packages are allowed)
+
+###### Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
 
 ##### Start typing in the search bar `"Billie Joe"`.
 
@@ -61,8 +63,6 @@
 ###### As an auditor, is this project up to every standard? If not, why are you failing the project?(Empty Work, Incomplete Work, Invalid compilation, Cheating, Crashing, Leaks)
 
 #### Basic
-
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
 
 ###### +Are the instructions in the website clear?
 

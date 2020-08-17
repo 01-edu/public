@@ -1,5 +1,7 @@
 #### Functional
 
+###### Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
+
 ##### Try to login with Github.
 
 ###### Is it possible to enter the forum?
@@ -35,8 +37,6 @@
 #### Basic
 
 ###### +Does the project run quickly and effectively (favoring of recursion, no unnecessary data requests, etc.)?
-
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
 
 #### Social
 

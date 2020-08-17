@@ -1,6 +1,8 @@
 #### Functional
 
-###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
+###### Has the requirement for the allowed packages been respected? (only the [standard go](https://golang.org/pkg/) packages are allowed)
+
+###### Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
 
 ###### Does the project have a range [filter](https://dribbble.com/shots/1751801-Ui-Elements-Social-Network-Analytics/attachments/284260)?
 
@@ -47,8 +49,6 @@
 ###### +Does the result of the filters change while you are changing the filters (is it asynchronous)?
 
 #### Basic
-
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
 
 ###### +Are the instructions in the website clear?
 

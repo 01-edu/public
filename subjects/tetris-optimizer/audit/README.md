@@ -1,6 +1,8 @@
 #### Functional
 
-###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
+###### Has the requirement for the allowed packages been respected? (only the [standard go](https://golang.org/pkg/) packages are allowed)
+
+###### Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
 
 ##### Try [bad example 00](https://public.01-edu.org/subjects/tetris-optimizer/badexample00).
 
@@ -73,8 +75,6 @@
 ###### +Is there a test file for this code?
 
 ###### +Are the tests checking each possible case?
-
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
 
 #### Social
 

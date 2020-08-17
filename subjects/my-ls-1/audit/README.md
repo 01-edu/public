@@ -2,6 +2,8 @@
 
 ###### Has the requirement for the allowed packages been respected?
 
+###### Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
+
 ##### Run both my-ls-1 and the system command `ls` with no arguments.
 
 ###### Does it display the same files and/or folders in the same order?
@@ -107,8 +109,6 @@
 ###### +Is the real time less than 1,5 seconds?
 
 #### Basic
-
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
 
 ###### +Is there a test file for this code?
 

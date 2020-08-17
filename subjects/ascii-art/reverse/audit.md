@@ -1,6 +1,8 @@
 #### Functional
 
-###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
+###### Has the requirement for the allowed packages been respected? (only the [standard go](https://golang.org/pkg/) packages are allowed)
+
+###### Does the code obey the [good practices](https://github.com/01-edu/public/blob/master/subjects/good-practices/)?
 
 ##### Try passing to the reverse flag `"--reverse=example00.txt"` the [example 00](https://public.01-edu.org/subjects/ascii-art/reverse/example).
 
@@ -71,8 +73,6 @@
 #### Basic
 
 ###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
-
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
 
 ###### +Is there a test file for this code?
 

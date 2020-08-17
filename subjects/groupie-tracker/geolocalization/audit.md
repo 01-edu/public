@@ -1,6 +1,8 @@
 #### Functional
 
-###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
+###### Has the requirement for the allowed packages been respected? (only the [standard go](https://golang.org/pkg/) packages are allowed)
+
+###### Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
 
 ###### Is [geocoding](https://developers.google.com/maps/documentation/geocoding/intro) API being used to converting addresses into geographic coordinates?
 
@@ -108,8 +110,6 @@ alabama usa
 ###### +Does the markers connect in a historical order, using lines to see the path?
 
 #### Basic
-
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
 
 ###### +Are the instructions in the website clear?
 

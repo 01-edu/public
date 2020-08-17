@@ -1,5 +1,7 @@
 ### Functional
 
+###### Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
+
 ##### Try to like any post of your choice.
 
 ###### Does the liked post appear on the activity page?
@@ -45,8 +47,6 @@
 #### Basic
 
 ###### +Does the project runs quickly and effectively (Favoring of recursion, no unnecessary data requests, etc.)?
-
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
 
 ###### +Is there a test file for this code?
 
