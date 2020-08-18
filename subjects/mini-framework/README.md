@@ -17,7 +17,7 @@ Your framework should implement:
 
 You must create documentation for your framework, so that users (auditers) are able to understand and know how to use your framework without experiencing any awkwardness. By documentation we mean, the explaining of how does the framework works and how to work with it, for example: how to create a div, how to add an event to a button, etc.
 
-Your framework will be tested by using it, like you previously have used one, in the social network project. So the user has to be presented to a folder structure that when executed `npm start` at the root of the folder, it runs the app. The user testing your framework will have to implement some simple code in order to test the features described bellow.
+Your framework will be tested by using it, like you previously have used one, in the social network project. So the user has to be presented to a folder structure that allows him to run the app from the root of that folder structure. The user testing your framework will have to implement some simple code in order to test the features described bellow.
 
 #### Abstracting the DOM
 

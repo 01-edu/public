@@ -1,10 +1,6 @@
 #### Functional
 
-###### Does the project contain documentation? (If so, you will need it)
-
-##### Create a project and use the mini-framework in it and try to run `npm start` at the root folder of the project.
-
-###### Did the website start without errors from the framework?
+###### Are all the framework API correctly documented? (If so, you will need it for the next questions)
 
 ##### First take a look at the behavior of the code presented in the [_dom/README.md_](https://public.01-edu.org/subjects/mini-framework/dom) file. Then try to replicate the behavior of the example with the corresponding template of the framework and run the app.
 

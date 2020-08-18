@@ -8,7 +8,7 @@ index.html:
 
 ```html
 <!DOCTYPE html>
-<html class="no-js">
+<html>
   <head>
     <meta charset="utf-8" />
     <title></title>
@@ -25,7 +25,7 @@ active.html:
 
 ```html
 <!DOCTYPE html>
-<html class="no-js">
+<html>
   <head>
     <meta charset="utf-8" />
     <title>Active</title>
@@ -41,7 +41,7 @@ active.html:
 script.js:
 
 ```js
-const readTextFile = (file, allText = '') => {
+const getTextFile = (file, allText = '') => {
   let rawFile = new XMLHttpRequest()
   rawFile.open('GET', file, false)
   rawFile.onreadystatechange = () => {
@@ -57,6 +57,6 @@ const readTextFile = (file, allText = '') => {
 
 document.body.innerHTML =
   location.pathname === '/'
-    ? readTextFile('./index.html')
-    : readTextFile('./active.html')
+    ? getTextFile('./index.html')
+    : getTextFile('./active.html')
 ```
