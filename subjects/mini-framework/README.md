@@ -8,8 +8,8 @@ Be aware that a framework is different from a library. When you call a method fr
 
 Your framework should implement:
 
-- Abstracting DOM
-- Easier Routing
+- Abstracting the DOM
+  Routing System
 - State Management
 - Event Handling
 
@@ -19,7 +19,7 @@ You must create documentation for your framework, so that users (auditers) are a
 
 Your framework will be tested by using it, like you previously have used one, in the social network project. So the user has to be presented to a folder structure that when executed `npm start` at the root of the folder, it runs the app. The user testing your framework will have to implement some simple code in order to test the features described bellow.
 
-#### Abstracting DOM
+#### Abstracting the DOM
 
 You will have to implement a way to handle the DOM. The DOM can be seen as a big object, like in the example below:
 
@@ -77,7 +77,7 @@ You have to take into account the events, children and attributes of each elemen
 
 ---
 
-#### Easier Routing
+#### Routing System
 
 Routing is the process of selecting a path for traffic in a network. And, as you may have already realized, routing in JS can sometimes be a little bit confusing, so what you will need to do, is to implement a new routing system that is more intuitive and simpler.
 
