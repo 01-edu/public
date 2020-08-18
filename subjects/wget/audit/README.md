@@ -40,9 +40,9 @@
 
 ###### Did the program downloaded the file with the name `"test_20MB.zip"`?
 
-##### Try to run the following command, `"./wget -O=test_20MB.zip -P=~/Downloads/ http://ipv4.download.thinkbroadband.com/20MB.zip"`, then go to the folder `"~/Downloads/"`
+##### Try to run the following command, `"./wget -O=test_20MB.zip -P=~/Downloads/ http://ipv4.download.thinkbroadband.com/20MB.zip"`
 
-###### Can you see the file downloaded?
+###### Can you see the expected file in the "~/Downloads/" folder?
 
 ##### Try to run the following command, `"./wget --rate-limit=300k http://ipv4.download.thinkbroadband.com/20MB.zip"`
 
