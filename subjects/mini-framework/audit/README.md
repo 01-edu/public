@@ -1,32 +1,44 @@
 #### Functional
 
-###### Are all the framework API correctly documented? (If so, you will need it for the next questions)
+###### Are all the framework API correctly documented?
 
-##### First take a look at the behavior of the code presented in the [_dom/README.md_](https://public.01-edu.org/subjects/mini-framework/dom) file. Then try to replicate the behavior of the example with the corresponding template of the framework and run the app.
+##### Open the todoMVC project and compare it to other [todoMVC project](http://todomvc.com/) ([example](http://todomvc.com/examples/vanillajs/)).
 
-###### Can you create the red box and the button present in the example?
+###### Does it contain every element as the other todoMVCs examples?
 
-##### With the same example as above, open the Web Developer Tools (Ctrl+Shift+I) and go to the Inspector Tab.
+##### Open the Web Developer Tools (Ctrl+Shift+I) and check for the classes, ids, etc.
 
-###### Are the elements created as they should (the red box and the button inside the app div)?
+###### Does it correctly correspond to those in the examples?
 
-##### Still on the Inspector Tab, does all the elements have the right attributes (id, class, style)?
+###### Can you add a todo element to the todo list?
 
-###### With the same example, did the box move when you clicked the button?
+###### When you add a todo element to the list, does the footer (element with class footer) appear as in other examples?
 
-##### First take a look at the behavior of the code presented in the [_routing/README.md_](https://public.01-edu.org/subjects/mini-framework/routing) file. Then try to replicate the behavior of the example with the corresponding template of the framework and run the app. (Making the page reload is not required)
+###### Can you check/uncheck a todo element on the list?
 
-###### Were you able to switch between the two pages?
+###### Can you remove a todo element off the list?
 
-###### With the same example as above, did the URL changed when you switch between pages?
+##### Add at least 2 todos and select only one of them.
 
-##### With the same example, try to define a state by assigning a value to it in the 'Home Page' and then switch to the 'Active Page'.
+###### If you click on the **Active** button, does it appear only the unchecked todos?
 
-###### If you check the state, does it kept the value assigned to it?
+###### And if you click on the **Completed** button, does it appear only the checked todos?
+
+###### Does it appear a **Clear Completed** button todos?
+
+###### When clicking on the clear completed button, does it remove only the checked todos?
+
+###### When clicking on the **Active** and **Completed** buttons, does the URL change?
+
+##### Add 3 todos to the list and check each one, keeping an eye on the counter of todos left to do.
+
+###### Does the counter change accordingly to your actions?
+
+###### If you double click a todo element on the list can you edit that element?
 
 #### Bonus
 
-###### +Is the performance similar both in the framework code and the examples above?
+###### +Is the performance similar both in the student todoMVC and other examples?
 
 ###### +Is it easier to handle the DOM using the framework than it is to use plain HTML and JS?
 

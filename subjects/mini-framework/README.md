@@ -13,6 +13,8 @@ Your framework should implement:
 - State Management
 - Event Handling
 
+You will also need to make a [todoMVC](http://todomvc.com/) project using your framework.
+
 ### Instructions
 
 You must create documentation for your framework, so that users (auditers) are able to understand and know how to use your framework without experiencing any awkwardness. By documentation we mean, the explaining of how does the framework works and how to work with it, for example: how to create a div, how to add an event to a button, etc.
@@ -95,6 +97,11 @@ What you will need to do is to implement a way to handle this state. Remember th
 You will also have to implement a way to handle the events triggered by the user, like: scrolling, clicking, certain keybindings, etc.... Note that this new way of handling events must different from the `addEventListener()` method that already exists.
 
 ---
+
+#### TodoMVC
+
+A todoMVC project consists on creating a [webpage](http://todomvc.com/examples/vanillajs/) (this example is written in VanillaJS) with the same elements present in the example, so we advise you to test it around first. You have to make your todoMVC project, a pretty much perfect copy of the examples given in the links above, but using your framework.\
+Be aware that every thing that we can't visually see has to be present too (ids, classes, etc.).
 
 This project will help you learn about:
 
