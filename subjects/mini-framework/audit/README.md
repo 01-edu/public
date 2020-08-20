@@ -1,6 +1,14 @@
 #### Functional
 
-###### Are all the framework API correctly documented?
+##### Open the documentation file.
+
+###### Is the documentation written in a markdown file?
+
+###### Does the documentation contains an explanation of every feature of the framework?
+
+###### Does the documentation contains an explanation and code examples on how to create an element, add attributes to an element, create an event and nest elements?
+
+###### Does the documentation contains an explanation on how the framework works?
 
 ##### Open the todoMVC project and compare it to other [todoMVC project](http://todomvc.com/) ([example](http://todomvc.com/examples/vanillajs/)).
 

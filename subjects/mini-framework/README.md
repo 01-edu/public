@@ -17,9 +17,23 @@ You will also need to make a [todoMVC](http://todomvc.com/) project using your f
 
 ### Instructions
 
-You must create documentation for your framework, so that users (auditers) are able to understand and know how to use your framework without experiencing any awkwardness. By documentation we mean, the explaining of how does the framework works and how to work with it, for example: how to create a div, how to add an event to a button, etc.
+You must create documentation for your framework, so that users (auditers) are able to understand and know how to use your framework without experiencing any awkwardness.
 
 Your framework will be tested by using it, like you previously have used one, in the social network project. So the user has to be presented to a folder structure that allows him to run the app from the root of that folder structure. The user testing your framework will have to implement some simple code in order to test the features described bellow.
+
+#### Documentation
+
+By documentation we mean, the explaining of how does the framework works and how to work with it, for example: how to create a div, how to add an event to a button, etc. A new user of your framework, after reading the documentation has to be able to use it without too much guessing work.
+
+So for this you will have to create a [markdown](https://www.markdownguide.org/getting-started/) file, in which will have to contain:
+
+- Explanation on the features of your framework
+- Code examples and explanations on how to:
+  - create an element
+  - create an event
+  - nest elements
+  - add attributes to an element
+- Explanation on why things work the way they work
 
 #### Abstracting the DOM
 
@@ -81,7 +95,7 @@ You have to take into account the events, children and attributes of each elemen
 
 #### Routing System
 
-Routing is the process of selecting a path for traffic in a network. And, as you may have already realized, routing in JS can sometimes be a little bit confusing, so what you will need to do, is to implement a new routing system that is more intuitive and simpler.
+Routing in this case refers to the synchronization of the state of the app with the url. In other words you will have to develop a simple way to change the url through actions of the user that will also change the state (explained in the next topic).
 
 ---
 
@@ -106,7 +120,12 @@ Be aware that every thing that we can't visually see has to be present too (ids,
 This project will help you learn about:
 
 - Web Development
+  - JS
+  - HTML
+  - CSS
 - Frameworks
+- Documentation
 - DOM
 - Routing
 - State of an Application
+- Event Handling
