@@ -74,6 +74,30 @@ http://ipv4.download.thinkbroadband.com/10MB.zip
 
 ###### Is the site working?
 
+##### Try to run the following command `"./wget --mirror https://oct82.com/"`, then try to open the `"index.html"` with a browser
+
+###### Is the site working?
+
+##### Try to run the following command `"./wget --mirror --reject=gif https://oct82.com/"`, then try to open the `"index.html"` with a browser
+
+###### Did the program download the site without the GIFs?
+
+##### Try to run the following command `"./wget --mirror https://trypap.com/"`, then use the command `"ls"` to see the file system of the created folder.
+
+```
+css  img  index.html
+```
+
+###### Does the created folder has the same fs as above?
+
+##### Try to run the following command `"./wget --mirror -X=/img https://trypap.com/"`, then use the command `"ls"` to see the file system of the created folder.
+
+```
+css  index.html
+```
+
+###### Does the created folder has the files above?
+
 ##### Try to run the following command `"./wget --mirror https://theuselessweb.com/"`
 
 ###### Is the site working?

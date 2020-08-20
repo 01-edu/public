@@ -129,24 +129,45 @@ The Downloads should work asynchronously, it should download both files at the s
 
 5. [**Mirror a website**](https://en.wikipedia.org/wiki/Mirror_site). This option should download the entire website being possible to use "part" of the website offline and for other useful [reasons](https://www.quora.com/How-exactly-does-Mirror-Site-works-and-how-it-is-done). For this you will have to download the website file system and save it into a folder that will have the domain name. Example: `http://www.example.com`, will be stored in a folder with the name `www.example.com` containing every file from the mirrored website. The flag should be `--mirror`.
 
-To mirror a website you will have to implement the following `wget` flags so that the web mirror is complete (you do not need to do the literal flags, but just the theory behind it, so your flag `--mirror` need to behave like the following wget flags combined):
+The default usage of the flag will be to retrieve and parse the HTML or CSS from the given URL. This way retrieving the files that the document refers through tags. The tags that will be used for this retrieval must be `a`, `link` and `img` that contains attributes `href` and `src`.
 
-- [`--mirror`](https://www.gnu.org/software/wget/manual/wget.html): download recursive
-- [`--convert-links`](https://www.gnu.org/software/wget/manual/wget.html): after the download is complete it will convert all links in the document to make them suitable for local viewing
-- [`--page-requisites`](https://www.gnu.org/software/wget/manual/wget.html): downloads all files that are necessary to properly display a given HTML page
-- [`--no-parent`](https://www.gnu.org/software/wget/manual/wget.html): this will not let the program ascend to the parent directory when retrieving
+You will have to implement some optional flags to go along with the `--mirror` flag.
+
+Those flags will work based on [Follow links](https://www.gnu.org/software/wget/manual/wget.html#Following-Links). The command `wget` has several mechanisms that allows you to fine-tune which links it will follow. For This project you will have to implement the behavior of (note that this flags will be used in conjunction with the `--mirror` flag):
+
+- [Types of Files](https://www.gnu.org/software/wget/manual/wget.html#Types-of-Files) (`--reject` short hand `-R`)
+
+> this flag will have a list of file suffixes that the program will avoid downloading during the retrieval
+
+example:
+
+```console
+student@student$ ./wget --mirror -R=jpg,gif https://example.com
+```
+
+- [Directory-Based Limits](https://www.gnu.org/software/wget/manual/wget.html#Directory_002dBased-Limits) (`--exclude` short hand -X)
+
+> this flag will have a list of paths that the program will avoid to follow and retrieve. So if the URL is `https://example.com` and the directories are `/js`, `/css` and `/assets` you can avoid any path by using `-X=/js,/assets`. The fs will now just have `/css`.
+
+example:
+
+```console
+student@student ./wget --mirror -X=/assets,/css https://example.com
+```
 
 ### Hint
 
-You can take a look into the [html package](https://godoc.org/golang.org/x/net/html) for some help
+You can take a look into the [html package](https://godoc.org/golang.org/x/net/html) for some help.\
+Try the real flags from the wget command to better understand their usage.
 
 ---
 
 This project will help you learn about:
 
-- GNU Wget
+- [GNU Wget](https://www.gnu.org/software/wget/manual/wget.html)
 - HTTP
 - [FTP](https://en.wikipedia.org/wiki/File_Transfer_Protocol)
-- Algorithms
+- Algorithms (recursion)
 - Mirror websites
-- File system(fs)
+  - Follow links
+- File system (fs)
