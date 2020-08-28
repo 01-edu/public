@@ -150,7 +150,13 @@ echo 'export PATH=$PATH:/usr/local/go/bin' >> /etc/profile
 # bash <(curl -Ss https://my-netdata.io/kickstart-static64.sh) --no-updates --stable-channel --disable-telemetry
 
 # Caddy
-curl https://getcaddy.com | bash -s personal http.ipfilter
+tmpdir=$(mktemp -d)
+cd "$tmpdir"
+wget https://github.com/caddyserver/caddy/releases/download/v1.0.4/caddy_v1.0.4_linux_amd64.tar.gz
+tar -xf caddy_v1.0.4_linux_amd64.tar.gz
+mv caddy /usr/local/bin
+cd
+rm -rf "$tmpdir"
 
 # Generate SSH key
 ssh-keygen -ted25519 -f ~/.ssh/id_ed25519 -N ''
