@@ -147,7 +147,7 @@ rm go1.15.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin' >> /etc/profile
 
 # Netdata
-# bash <(curl -Ss https://my-netdata.io/kickstart-static64.sh) --no-updates --stable-channel --disable-telemetry
+bash <(curl -Ss https://my-netdata.io/kickstart-static64.sh) --no-updates --stable-channel --disable-telemetry --dont-wait
 
 # Caddy
 tmpdir=$(mktemp -d)
