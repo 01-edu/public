@@ -4,16 +4,27 @@ US based, it must be adapted to other countries (in order to avoid voltage probl
 - Router/Firewall ([Netgate XG-7100 1U](https://www.netgate.com/solutions/pfsense/xg-7100-1u.html)) ≈ \$1,000.00
 - Switch ([TP-Link 48-Port Gigabit Switch TL-SG1048](https://www.amazon.com/dp/B004UBUJZG)) ≈ \$220.00
   - Quantity : round(_number of students_ / 48 + 1)
-- Server ([Dell EMC PowerEdge R6515](https://www.dell.com/en-us/work/shop/servers-storage-and-networking/poweredge-r6515-rack-server/spd/poweredge-r6515/pe_r6515_13732_vi_vp)) ≈ \$4,000.00
-  - Chassis with up to 8x2.5" Drives
-  - Trusted Platform Module 2.0
-  - AMD EPYC 7302P 3GHz, 16C/32T, 128M Cache (155W) DDR4-3200
-  - 2x 32GB RDIMM, 3200MT/s, Dual Rank
-  - PERC H330 RAID Controller, Minicard
-  - 2x 480GB SSD SATA Mix Use 6Gbps 512 2.5in Hot-plug AG Drive, 3 DWPD, 2628 TBW
-  - Dual, Hot Plug, Redundant Power Supply (1+1), 550W
-  - No PCIe Riser
-  - No Quick Sync
+- Server ([Dell EMC PowerEdge R340](https://www.dell.com/en-us/work/shop/servers-storage-and-networking/poweredge-r340-rack-server/spd/poweredge-r340/pe_r340_13158_vi_vp)) ≈ \$3,000.00
+  - Trusted Platform Module (TPM)
+    - Trusted Platform Module 2.0
+  - Chassis
+    - 2.5" Chassis with up to 8 Hot Plug Hard Drives
+  - Processor
+    - Intel® Xeon® E-2246G 3.6GHz, 12M cache, 6C/12T, turbo (80W)
+  - Memory
+    - 16GB 2666MT/s DDR4 ECC UDIMM
+      - Quantity : 2
+  - RAID
+    - No RAID
+  - RAID/Internal Storage Controllers
+    - PERC H330 RAID Controller, Adapter
+  - Hard Drive
+    - 480GB SSD SATA Mix Use 6Gbps 512 2.5in Hot-plug AG Drive, 3 DWPD, 2628 TBW
+      - Quantity : 2
+  - Power Supply
+    - Dual, Hot Plug, Redundant Power Supply (1+1), 550W
+  - Bezel
+    - PowerEdge 1U Standard Bezel
   - ProSupport and Next Business Day Onsite Service, 60 Month(s)
 - etc
   - Rack Enclosure ≈ \$500.00
