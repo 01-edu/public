@@ -1,7 +1,6 @@
 const backImg =
   'https://cdn1.iconfinder.com/data/icons/thin-ui-1/100/Noun_Project_100Icon_1px_grid_thin_ic_arrow_left_simple-512.png'
 const body = document.body
-const main = document.querySelector('.doc-explore-content')
 const docDisplay = document.querySelector('.display-doc')
 const exist = () => document.querySelector('.back')
 const removeComments = (obj) =>
@@ -60,10 +59,13 @@ const generateContent = (t, data) => {
     generateLinks(`     ${k}: `, v)
   }
   docDisplay.innerHTML += `}<br><br>`
-  for (let v of document.getElementsByTagName('a')) {
-    v.addEventListener('click', (e) => changeContent(e, data))
+  if (t === 'query') {
+    for (let v of document.getElementsByTagName('a')) {
+      v.addEventListener('click', (e) => changeContent(e, data))
+    }
   }
 }
+
 const backArrow = () => {
   const title = document.querySelector('.title')
   const typeDescription = document.querySelector('.comment')
