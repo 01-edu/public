@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Graphql Doc</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style>
+
+:root {
+  --color: hsl(0, 0%, 65%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(0, 0%, 16%);
+  font-family: sans-serif;
+  letter-spacing: 1.5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: inherit;
+  height: inherit;
+  padding: 5rem;
+  font-size: 12px;
+}
+
+input {
+  border: none;
+  position: absolute;
+  margin: 6px 24px 8px 15px;
+  background: rgba(255, 255, 255, 0);
+  border-bottom: 1px solid var(--color);
+  outline: none;
+}
+
+.docExplorerWrap {
+  position: inherit;
+  width: 80%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  background-color: hsl(0, 1%, 35%);
+}
+
+.doc-title, .doc-explore-content {
+  padding: 10px;
+  margin: 10px;
+  align-content: center;
+  border-bottom: 1px solid var(--color);
+}
+
+.doc-title {
+  display: flex;
+}
+
+.back {
+  width: 50px;
+  height: 50px;
+}
+
+h3, h4 {
+  font-weight: 300;
+  width: 100%;
+  margin: 15px;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.8rem;
+  white-space: pre;
+}
+
+b {
+  padding: 4px;
+  border-bottom: 1px solid var(--color);
+}
+
+a {
+  color:lightcoral;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+img {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+</style>
+</head>
+<body>
+  <script type="module" src="./lib/schema.js"></script>
+  <div class="docExplorerWrap">
+      <div class="doc-title"><h3 class="title">Schema Documentation</h3></div>
+      <div class="doc-explore-content">
+        <label class="search-box">
+          <img src="https://cdn1.iconfinder.com/data/icons/thin-ui-1/100/Noun_Project_100Icon_1px_grid_thin_ic_cookie-512.png">
+          <input class="search" type="text" placeholder="Search Schema...">
+        </label>
+        <div class="doc-type-description"> <h4 class="comment">A Graphql schema provides a root type for each kind of operation</h4><!-- description of... --></div>
+        <br>
+        <div class="doc-category"><h4><b class="doc-type">ROOT TYPES</b></h4></div>
+        <br>
+        <div class="display-doc"></h4></div>
+      </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+{
+  "search": [
+    "[user!]!",
+    "[object!]!",
+    "[transaction!]!",
+    "[progress!]!",
+    "[result!]!",
+    "query",
+    "arguments"
+  ],
+  "root_types": [{ "query": "query" }, { "arguments": "arguments" }],
+  "query": {
+    "user": "[user!]!",
+    "object": "[object!]!",
+    "transaction": "[transaction!]!",
+    "progress": "[progress!]!",
+    "result": "[result!]!"
+  },
+  "types": [
+    {
+      "user": {
+        "id": "ID!",
+        "attrs": "String!",
+        "createdAt": "String!",
+        "discordDMChannelId": "String!",
+        "discordId": "String!",
+        "discordLogin": "String!",
+        "githubId": "String!",
+        "githubLogin": "String!",
+        "profile": "String!",
+        "updatedAt": "String!"
+      },
+      "comment": "Fetch data from the table: \"user\""
+    },
+    {
+      "object": {
+        "id": "ID!",
+        "attrs": "String!",
+        "authorId": "String!",
+        "childrenAttrs": "String!",
+        "createdAt": "String!",
+        "externalRelationUrl": "String!",
+        "name": "String!",
+        "type": "String!",
+        "status": "String!",
+        "updatedAt": "String!"
+      },
+      "comment": "Fetch data from the table: \"object\""
+    },
+    {
+      "transaction": {
+        "id": "ID!",
+        "attrs": "String!",
+        "amount": "Int!",
+        "createdAt": "String!",
+        "type": "String!",
+        "userId": "Int!"
+      },
+      "comment": "Fetch data from the table: \"transaction\""
+    },
+    {
+      "progress": {
+        "id": "ID!",
+        "attrs": "String!",
+        "bestResultId": "Int!",
+        "createdAt": "String!",
+        "eventId": "Int!",
+        "groupId": "Int!",
+        "objectId": "Int!",
+        "updatedAt": "String!",
+        "userId": "Int!"
+      },
+      "comment": "Fetch data from the table: \"progress\""
+    },
+    {
+      "result": {
+        "id": "ID!",
+        "progressId": "Int!",
+        "attrs": "String!",
+        "createdAt": "String!",
+        "grade": "Int!",
+        "updatedAt": "String!"
+      },
+      "comment": "Fetch data from the table: \"result\""
+    }
+  ],
+  "arguments": {
+    "where": {
+      "description": "bool_exp",
+      "comment": "filter the rows returned"
+    },
+    "order_by": {
+      "description": "[order_by!]",
+      "comment": "sort the rows by one or more columns"
+    },
+    "limit": {
+      "description": "Int",
+      "comment": "limit the number of rows returned"
+    }
+  }
+}
