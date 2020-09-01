@@ -28,49 +28,6 @@ It can be at the same time painful, because it requires individual creation of e
 
 The main feature of graphql compared to REST is that it lets you ask for specific information. And even better then that is the nesting feature.
 
-Lets take for instance the social network project, if the server had a Graphql API that was connected to the database we could query this API using graphql language:
-
-```js
-query {
-    user {
-        name
-    }
-}
-```
-
-This simple query will return an array with the name of the users. Imagine if you wanted the `date_of_birth`,\
-you could just add this attribute to the query, example:
-
-```js
-query {
-    user {
-        name
-        dateOfBirth
-    }
-}
-```
-
-Example for the nesting fetching:
-
-```js
-query {
-    user(id: "13") {
-        name
-        dateOfBirth
-        followers {
-            id
-            name
-        }
-    }
-}
-```
-
-For this example we ask for the user followers attribute, requesting the followers names and ids.\
-The examples above are simple examples. **Note** that for this query is required the introduction of variables (arguments)\
- so it will return just one user, the user that as the id equal to `13`.
-
-In graphql the usage of arguments can be specified in the schema of the API endpoint. Here is the _docs_ for the graphql endpoint you are going to use, _https://[[DOMAIN]]/public/subjects/grapqhl_
-
 ---
 
 ### **profile**
@@ -80,7 +37,7 @@ You will have to create a profile system where you can see all the info of a stu
 
 The display of the information is up to you to design, but it must include:
 
-- Basic user identification, for example **githubLogin**
+- **Basic user identification**, for example **githubLogin**
 - **XP** amount
 - **level**
 - **grades**
@@ -96,13 +53,13 @@ Beside this information, you will have to create a search engine which returns a
 - level
 - skills
 
-For instance you can search for a student by their `githubLogin` or filter the students by the amount of `XP` or which `level`/`skill`.
+For instance you can search for a student by their `githubLogin` or filter the students by the amount of `XP` or which `level`/`skill` they have.
 
 ---
 
 ### Usage
 
-> Here is the list of tables that you are allowed to query, for more information you can check out the _docs_ `https://[[DOMAIN]]/public/subjects/grapqhl`:
+> Here is the list of tables that you are allowed to query, for more information about the graphql endpoint you are going to use, check out the _docs_ _https://[[DOMAIN]]/public/subjects/grapqhl_:
 
 - **User table**:
 
@@ -124,7 +81,7 @@ For instance you can search for a student by their `githubLogin` or filter the s
   | 2   |  xp  |   1700 |      2 | `{"objectId": 3001, ...` | 2019-03-14T12:02:23.168726+00:00 |
   | 3   |  xp  |    175 |      3 | `{"objectId": 3001, ...` | 2019-03-14T12:02:23.168726+00:00 |
 
-- **Progress table**:
+- **Progress_view table**:
 
   | id  | userId |                    attrs | bestResultId | objectId |
   | --- | :----: | -----------------------: | -----------: | -------: |
@@ -151,6 +108,75 @@ For instance you can search for a student by their `githubLogin` or filter the s
   | 1   |    0 | exercise |  draft | `{"language": "dom", ...` |          `{}` | 2019-03-14T12:02:2... | 2019-03-14T12:02:2... |
   | 2   |    0 |  project | online |  `{"language": "go", ...` |          `{}` | 2019-03-14T12:02:2... | 2019-03-14T12:02:2... |
   | 3   |    1 | exercise | online |  `{"language": "js", ...` |          `{}` | 2019-03-14T12:02:2... | 2019-03-14T12:02:2... |
+
+Lets take for instance the table `user` and try to query it:
+
+```js
+{
+  query {
+      user {
+          id
+      }
+  }
+}
+```
+
+This simple query will return an array with the `ids` of the users. Imagine if you wanted the `githubLogin`,\
+you could just add this attribute to the query, example:
+
+```js
+{
+  query {
+      user {
+          id
+          githubLogin
+      }
+  }
+}
+```
+
+You can try to `curl` the API endpoint to see the result given by the server:
+
+- `curl "https://[[DOMANIN]]/api/graphql-engine/v1/graphql" --data '{"query":"{user{id githubLogin}}"}'`
+
+Here is another example of a query using the table `user`:
+
+```js
+{
+  query:  {
+    user(where: { id: { _eq: 6 }}) {
+      id
+      githubLogin
+    }
+  }
+}
+```
+
+**Note** that for this query is required the introduction of variables (arguments)\
+ so it will return just one user, the user that as the id equal to `6`.
+
+You can see the result using `curl`:
+
+- `curl "https://[[DOMANIN]]/api/graphql-engine/v1/graphql" --data '{"query":"{user(where:{id:{_eq:6}}){id githubLogin}}"}'`
+
+In graphql the usage of arguments can be specified in the schema of the API endpoint. Here is the _docs_ for the graphql endpoint you are going to use, _https://[[DOMAIN]]/public/subjects/grapqhl_
+
+nesting fetching, using the :
+
+```js
+{
+  result {
+    id
+    user {
+      id
+      githubLogin
+    }
+  }
+}
+
+```
+
+For this example we ask for the results `id` and `user`s that are associated to the `result`, requesting the users `name`s and `id`s.\
 
 This project will help you learn about:
 

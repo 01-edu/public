@@ -90,7 +90,11 @@ const backArrow = () => {
 
 const allArgs = (data) => {
   for (const [k, v] of Object.entries(data.arguments)) {
-    docDisplay.innerHTML += `<h4>${k}: <a>(${v.description})</a> // ${v.comment}</h4>`
+    docDisplay.innerHTML += `<hr><h4><b>${k}</b>: <a>(${v.description})</a> // ${v.comment}</h4>Expressions:<br>`
+    for (const exp of v.expressions) {
+      docDisplay.innerHTML += `<h4>${exp}</h4>`
+    }
+    docDisplay.innerHTML += `<a>Example: </a><h4>${v.example}</h4><br><br>`
   }
 }
 

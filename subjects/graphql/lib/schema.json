@@ -3,7 +3,7 @@
     "[user!]!",
     "[object!]!",
     "[transaction!]!",
-    "[progress!]!",
+    "[progress_view!]!",
     "[result!]!",
     "query",
     "arguments"
@@ -13,7 +13,7 @@
     "user": "[user!]!",
     "object": "[object!]!",
     "transaction": "[transaction!]!",
-    "progress": "[progress!]!",
+    "progress_view": "[progress_view!]!",
     "result": "[result!]!"
   },
   "types": [
@@ -59,7 +59,7 @@
       "comment": "Fetch data from the table: \"transaction\"\nThis table will give you access to XP and audits ratio"
     },
     {
-      "progress": {
+      "progress_view": {
         "id": "ID!",
         "attrs": "Jsonb!",
         "bestResultId": "Int!",
@@ -87,15 +87,50 @@
   "arguments": {
     "where": {
       "description": "bool_exp",
+      "expressions": [
+        "_eq (equal)",
+        "_gt (grater then)",
+        "_gte (grater then equal)",
+        "_in (in)",
+        "_is_null (boolean)",
+        "_lt (lower then)",
+        "_lte (lower then equal)",
+        "_neq (not equal)",
+        "_nin (not in)"
+      ],
+      "example": "user(where: {id: { _eq: x } }){\n  id \n}",
       "comment": "filter the rows returned"
     },
     "order_by": {
       "description": "[order_by!]",
+      "expressions": [
+        "asc (ascending)",
+        "asc_nulls_first",
+        "asc_nulls_last",
+        "desc (descending)",
+        "desc_nulls_first",
+        "asc_nulls_last"
+      ],
+      "example": "user(order_by: {id: desc }){\n  id \n}",
       "comment": "sort the rows by one or more columns"
     },
     "limit": {
       "description": "Int",
+      "expressions": ["Int"],
+      "example": "user(limit: 1 ){\n id \n}",
       "comment": "limit the number of rows returned"
+    },
+    "distinct_on": {
+      "description": "column name",
+      "expressions": ["column name"],
+      "example": "object(distinct_on: name, where: { name:{ _eq:\"forum\" } }){\n  name \n}",
+      "comment": "distinct select on columns"
+    },
+    "offset": {
+      "description": "int",
+      "expressions": ["Int"],
+      "example": "object(distinct_on: name, where: { name:{ _eq:\"forum\" } }){\n  name\n }",
+      "comment": "skip the first n rows by one or more columns"
     }
   }
 }
