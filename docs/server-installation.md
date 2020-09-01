@@ -37,7 +37,7 @@ Select :
 
 The network is automatically configured with DHCP, you can also configure it manually.
 
-At the prompt "Location of initial preconfiguration file:", enter the url :
+At the prompt "Location of initial preconfiguration file:", enter the URL :
 
 ```
 raw.githubusercontent.com/01-edu/public/master/sh/debian/preseed.cfg
