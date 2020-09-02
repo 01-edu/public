@@ -2,112 +2,98 @@
 
 ### Objectives
 
-The objective of this project is to learn graphql query language by creating profiles. It will be provided,\
-by the platform, a graphql endpoint that is connected to the database. So you can query this endpoint to obtain the information you desire.\
+The objective of this project is to learn the query language [graphQL](https://graphql.org/) by creating your profile page. It will be provided,\
+by the platform, a graphQL endpoint that is connected to the database. So you can query this endpoint to obtain the information you desire.\
 **Note** that for security reasons some tables are private and some are public, you will only be provided with certain content.
 
-Your profile must have at least:
+Your profile must have at least 3 sections of content at your choice, for example:
 
 - Basic user identification
 - XP amount
 - level
 - grades
+- audits
 - skills
-- statistics
+
+Beside those sections it will have a mandatory section for the generation of statistic graphs.
 
 ### Instructions
 
-> Here is a small introduction and advantages of graphQL, if you want to read more about graphQL you can visit there [site](https://graphql.org/)
+You will have to create a profile UI where you can see your own school information. This information/data is present on the graphQL endpoint, where you will have to query it.
 
-GraphQL is a query language for any API endpoint and runtime. The syntax lets you specify what data you want to receive from that API.\
-You must have in mind that this language is used for API endpoints and not database. Unlike SQL,\
-graphql query does not go to your database directly but to your graphql API endpoint which can connect to a database or any other data source.
+For the UI it will be up to you to design it. But have in mind the principles of a [good UI](https://public.01-edu.org/subjects/good-practices/).\
+Your UI will have a statistic section where you can generate graphs to see more about your journey and achievements on the school. This graphs must be done using [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG).
 
-You are already familiar with REST, since REST is a robust methodology of creating APIs and not elastic/scalable.\
-It can be at the same time painful, because it requires individual creation of each API, example: `v1/user/item/{id}`, `v1/post/item/{id}` and so on.
+Here are some combination that you will be able to use for the graphs:
 
-The main feature of graphql compared to REST is that it lets you ask for specific information. And even better then that is the nesting feature.
-
----
-
-### **profile**
-
-You will have to create a profile system where you can see all the info of a student. The information/data is present\
- on the graphQL endpoint, where you will have to query it.
-
-The display of the information is up to you to design, but it must include:
-
-- **Basic user identification**, for example **githubLogin**
-- **XP** amount
-- **level**
-- **grades**
-- **skills**
-- **statistics**
+- XP earned in a time period (progress over time)
+- Levels over time
+- XP earned by project
+- Audit ratio
+- Projects `PASS` and `FAIL` ratio
+- Piscine (JS/Go) stats
+  - `PASS` and `FAIL` ratio
+  - Attempts for each exercise
 
 Any other information you desire to display is welcome and will be noted
-
-Beside this information, you will have to create a search engine which returns a selection of students profiles, based on the students:
-
-- Name
-- XP
-- level
-- skills
-
-For instance you can search for a student by their `githubLogin` or filter the students by the amount of `XP` or which `level`/`skill` they have.
 
 ---
 
 ### Usage
 
-> Here is the list of tables that you are allowed to query, for more information about the graphql endpoint you are going to use, check out the _docs_ _https://[[DOMAIN]]/public/subjects/grapqhl_:
+> To test your queries you can access the GraphQL IDE on _https://[[DOMAIN]]/public/subjects/graphql/_ or create your own [**GraphiQL Docs**](https://github.com/graphql/graphiql). This will give you a bigger picture of the tables, attributes and all the types of queries that you can do.
+
+Here is the list of tables that you are allowed to query (it will be only provided the columns present on the tables):
 
 - **User table**:
 
   This table will have information about the user
 
-  | id  | githubLogin |
-  | --- | ----------: |
-  | 1   |     person1 |
-  | 2   |     person2 |
-  | 3   |     person3 |
+  | id  |   login |
+  | --- | ------: |
+  | 1   | person1 |
+  | 2   | person2 |
+  | 3   | person3 |
 
 - **Transactions table**:
 
   This table will give you access to XP and audits ratio
 
-  | id  | type | amount | userId |                    attrs |                        createdAt |
-  | --- | :--: | -----: | -----: | -----------------------: | -------------------------------: |
-  | 1   |  xp  |    234 |      1 | `{"objectId": 3001, ...` | 2019-03-14T12:02:23.168726+00:00 |
-  | 2   |  xp  |   1700 |      2 | `{"objectId": 3001, ...` | 2019-03-14T12:02:23.168726+00:00 |
-  | 3   |  xp  |    175 |      3 | `{"objectId": 3001, ...` | 2019-03-14T12:02:23.168726+00:00 |
+  | id  | type | amount | objectId | userId |
+  | --- | :--: | -----: | -------: | -----: |
+  | 1   |  xp  |    234 |       42 |      1 |
+  | 2   |  xp  |   1700 |        2 |      2 |
+  | 3   |  xp  |    175 |       64 |      3 |
 
 - **Progress_view table**:
 
-  | id  | userId |                    attrs | bestResultId | objectId |
-  | --- | :----: | -----------------------: | -----------: | -------: |
-  | 1   |   1    |                     `{}` |           61 |     3001 |
-  | 2   |   2    | `{"name": "memory", ...` |         NULL |      198 |
-  | 3   |   3    | `{"name": "memory", ...` |        14319 |      177 |
+  | id  | userId | objectId | grade |
+  | --- | :----: | -------: | ----: |
+  | 1   |   1    |     3001 |     1 |
+  | 2   |   2    |      198 |     0 |
+  | 3   |   3    |      177 |     1 |
 
 - **Results table**:
 
   Both progress and result table will give you the student progression
 
-  | id  |             createdAt |             updatedAt | grade | progressId |                        attrs |
-  | --- | --------------------: | --------------------: | ----: | ---------: | ---------------------------: |
-  | 1   | 2019-07-06T13:52:5... | 2019-07-06T13:52:5... |     0 |         58 |                         `{}` |
-  | 2   | 2019-07-06T13:52:5... | 2019-07-06T13:52:5... |     0 |         58 | `{"errors": {"steps": ...}}` |
-  | 3   | 2019-07-06T13:52:5... | 2019-07-06T13:52:5... |     1 |         58 |                         `{}` |
+  | id  | objectId | userId | grade | progressId | type |
+  | --- | -------: | -----: | ----: | ---------: | ---: |
+  | 1   |        3 |      1 |     0 |         58 |      |
+  | 2   |       23 |      1 |     0 |         58 |      |
+  | 3   |       41 |      6 |     1 |         58 |      |
 
 - **Object table**:
 
   This table will give you information about all objects (exercises/projects)
 
-  | id  | name |     type | status |                     attrs | childrenAttrs |             createdAt |             updatedAt |
-  | --- | ---: | -------: | -----: | ------------------------: | ------------: | --------------------: | --------------------: |
-  | 1   |    0 | exercise |  draft | `{"language": "dom", ...` |          `{}` | 2019-03-14T12:02:2... | 2019-03-14T12:02:2... |
-  | 2   |    0 |  project | online |  `{"language": "go", ...` |          `{}` | 2019-03-14T12:02:2... | 2019-03-14T12:02:2... |
-  | 3   |    1 | exercise | online |  `{"language": "js", ...` |          `{}` | 2019-03-14T12:02:2... | 2019-03-14T12:02:2... |
+  | id  | name |     type |                     attrs | childrenAttrs |
+  | --- | ---: | -------: | ------------------------: | ------------: |
+  | 1   |    0 | exercise | `{"language": "dom", ...` |          `{}` |
+  | 2   |    0 |  project |  `{"language": "go", ...` |          `{}` |
+  | 3   |    1 | exercise |  `{"language": "js", ...` |          `{}` |
+
+Examples:
 
 Lets take for instance the table `user` and try to query it:
 
@@ -121,7 +107,7 @@ Lets take for instance the table `user` and try to query it:
 }
 ```
 
-This simple query will return an array with the `ids` of the users. Imagine if you wanted the `githubLogin`,\
+This simple query will return an array with the `id`s of the users. Imagine if you wanted the `login`,\
 you could just add this attribute to the query, example:
 
 ```js
@@ -129,7 +115,7 @@ you could just add this attribute to the query, example:
   query {
       user {
           id
-          githubLogin
+          login
       }
   }
 }
@@ -137,31 +123,31 @@ you could just add this attribute to the query, example:
 
 You can try to `curl` the API endpoint to see the result given by the server:
 
-- `curl "https://[[DOMANIN]]/api/graphql-engine/v1/graphql" --data '{"query":"{user{id githubLogin}}"}'`
+- `curl "https://[[DOMANIN]]/api/graphql-engine/v1/graphql" --data '{"query":"{user{id login}}"}'`
 
 Here is another example of a query using the table `user`:
 
 ```js
 {
-  query:  {
+  query {
     user(where: { id: { _eq: 6 }}) {
       id
-      githubLogin
+      login
     }
   }
 }
 ```
 
 **Note** that for this query is required the introduction of variables (arguments)\
- so it will return just one user, the user that as the id equal to `6`.
+ so it will return just one user, the user that as the `id` equal to `6`.
 
 You can see the result using `curl`:
 
-- `curl "https://[[DOMANIN]]/api/graphql-engine/v1/graphql" --data '{"query":"{user(where:{id:{_eq:6}}){id githubLogin}}"}'`
+- `curl "https://[[DOMANIN]]/api/graphql-engine/v1/graphql" --data '{"query":"{user(where:{id:{_eq:6}}){id login}}"}'`
 
-In graphql the usage of arguments can be specified in the schema of the API endpoint. Here is the _docs_ for the graphql endpoint you are going to use, _https://[[DOMAIN]]/public/subjects/grapqhl_
+In graphQL the usage of arguments can be specified in the schema of the API. Like said above you can visit the _docs_ for the graphQL endpoint you are going to use, _https://[[DOMAIN]]/public/subjects/grapqhl_
 
-nesting fetching, using the :
+Example using the nesting, using the result and user table :
 
 ```js
 {
@@ -169,17 +155,18 @@ nesting fetching, using the :
     id
     user {
       id
-      githubLogin
+      login
     }
   }
 }
 
 ```
 
-For this example we ask for the results `id` and `user`s that are associated to the `result`, requesting the users `name`s and `id`s.\
+For this example we ask for the results `id` and `user`s that are associated to the `result`, requesting the users `name`s and `id`s.
 
 This project will help you learn about:
 
-- [Graphql](https://graphql.org/) language
-- Custom search operations (`include`/`exclude`/`fuzzy`)
+- [GraphQL](https://graphql.org/)
+- [GraphiQL](https://github.com/graphql/graphiql)
 - Basics of human-computer interface
+  - UI/UX
