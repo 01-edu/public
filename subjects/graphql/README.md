@@ -2,7 +2,7 @@
 
 ### Objectives
 
-The objective of this project is to learn the query language [graphQL](https://graphql.org/) by creating your profile page. It will be provided,\
+The objective of this project is to learn the query language [graphQL](https://graphql.org/) by creating your own profile page. It will be provided,\
 by the platform, a graphQL endpoint that is connected to the database. So you can query this endpoint to obtain the information you desire.\
 **Note** that for security reasons some tables are private and some are public, you will only be provided with certain content.
 
@@ -22,9 +22,11 @@ Beside those sections it will have a mandatory section for the generation of sta
 You will have to create a profile UI where you can see your own school information. This information/data is present on the graphQL endpoint, where you will have to query it.
 
 For the UI it will be up to you to design it. But have in mind the principles of a [good UI](https://public.01-edu.org/subjects/good-practices/).\
-Your UI will have a statistic section where you can generate graphs to see more about your journey and achievements on the school. This graphs must be done using [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG).
+Your UI will have a statistic section where you can generate graphs to see more about your journey and achievements on the school. This graphs must be done using [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG). You will have to do at least **two different statistic graphs** for the data given.
 
-Here are some combination that you will be able to use for the graphs:
+Using SVG you can create several [types of graphs](https://www.tutorialspoint.com/svg/graph.htm) including interactive graphs and animated graphs it will be up to you to decide what type of graphs you are going to do.
+
+Here are some combinations that you will be able to use in the graphs:
 
 - XP earned in a time period (progress over time)
 - Levels over time
@@ -35,7 +37,12 @@ Here are some combination that you will be able to use for the graphs:
   - `PASS` and `FAIL` ratio
   - Attempts for each exercise
 
-Any other information you desire to display is welcome and will be noted
+Any other information you desire to display it is welcome and will be noted.
+
+### Hosting
+
+Besides the creation of your own profile you will have to host it! There are several places where you can host your profile,\
+for example: [github-pages](https://pages.github.com/), [netlify](https://www.netlify.com/) and so on. You are free to choose the hosting place.
 
 ---
 
@@ -139,15 +146,15 @@ Here is another example of a query using the table `user`:
 ```
 
 **Note** that for this query is required the introduction of variables (arguments)\
- so it will return just one user, the user that as the `id` equal to `6`.
+ so it will return just one user, the user that has the `id` equal to `6`.
 
 You can see the result using `curl`:
 
 - `curl "https://[[DOMANIN]]/api/graphql-engine/v1/graphql" --data '{"query":"{user(where:{id:{_eq:6}}){id login}}"}'`
 
-In graphQL the usage of arguments can be specified in the schema of the API. Like said above you can visit the _docs_ for the graphQL endpoint you are going to use, _https://[[DOMAIN]]/public/subjects/grapqhl_
+In graphQL the usage of arguments can be specified in the schema of the API. Like said above you can visit the _docs_ for the graphQL endpoint, _https://[[DOMAIN]]/public/subjects/grapqhl_
 
-Example using the nesting, using the result and user table :
+Example of nesting, using the result and user table :
 
 ```js
 {
@@ -159,14 +166,16 @@ Example using the nesting, using the result and user table :
     }
   }
 }
-
 ```
 
 For this example we ask for the results `id` and `user`s that are associated to the `result`, requesting the users `name`s and `id`s.
+
+**You must use all the types of querying present above** (_normal_, _nested_ and using _arguments_), do not forget that you can use the types together or separately.
 
 This project will help you learn about:
 
 - [GraphQL](https://graphql.org/)
 - [GraphiQL](https://github.com/graphql/graphiql)
+- [Hosting](https://en.wikipedia.org/wiki/Web_hosting_service)
 - Basics of human-computer interface
   - UI/UX
