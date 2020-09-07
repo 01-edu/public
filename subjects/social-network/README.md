@@ -213,7 +213,6 @@ Every other notification created by you that isn't on the list is welcomed too.
 
 This project will help you learn about:
 
-- Client utilities
 - Authentication :
   - Sessions and cookies
 - Using and [setting up Docker](https://docs.docker.com/get-started/)

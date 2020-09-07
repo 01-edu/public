@@ -6,8 +6,7 @@ You must follow the same [instructions](https://public.01-edu.org/subjects/ascii
 
 This project will help you learn about :
 
-- Client utilities.
-- The Go file system(**fs**) API.
+- The Go file system(**fs**).
 - Ways to receive data.
 - Ways to output data.
 - Manipulation of strings.
