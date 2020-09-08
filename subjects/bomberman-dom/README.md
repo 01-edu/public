@@ -22,7 +22,7 @@ You will have to follow more a less the same principles has the [make-your-game]
 
 You must not use canvas neither [Web-GL](https://get.webgl.org/) or other framework. For this project you will use the framework you did on the [mini-framework](https://public.01-edu.org/subjects/mini-framework/) project.
 
-You will have to make also a chat that enables the different players to talk to each other. As you will have to use [WebSockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API), this chat will be the "Hello World" of the multiplayer feature for the **bomberman-dom**.
+You will have to make also a chat that enables the different players to talk to each other. As you will have to use [WebSockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API), this **chat can be considered as a "Hello World" of the multiplayer feature** for the **bomberman-dom**.
 
 #### Game Mechanics
 
