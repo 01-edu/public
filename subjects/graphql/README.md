@@ -22,11 +22,11 @@ Beside those sections it will have a mandatory section for the generation of sta
 You will have to create a profile UI where you can see your own school information. This information/data is present on the graphQL endpoint, where you will have to query it.
 
 For the UI it will be up to you to design it. But have in mind the principles of a [good UI](https://public.01-edu.org/subjects/good-practices/).\
-Your UI will have a statistic section where you can generate graphs to see more about your journey and achievements on the school. This graphs must be done using [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG). You will have to do at least **two different statistic graphs** for the data given.
+The UI will have a statistic section where you can generate graphs to see more about your journey and achievements on the school. This graphs must be done using [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG). You will have to do at least **two different statistic graphs** for the data given.
 
-Using SVG you can create several [types of graphs](https://www.tutorialspoint.com/svg/graph.htm) including interactive graphs and animated graphs it will be up to you to decide what type of graphs you are going to do.
+Using SVG you can create several [types of graphs](https://www.tutorialspoint.com/svg/graph.htm) including interactive graphs and animated graph. It will be up to you to decide what type of graphs you are going to do.
 
-Here are some combinations that you will be able to use in the graphs:
+Here are some possible combinations for the creation of the graphs:
 
 - XP earned in a time period (progress over time)
 - Levels over time
@@ -37,7 +37,7 @@ Here are some combinations that you will be able to use in the graphs:
   - `PASS` and `FAIL` ratio
   - Attempts for each exercise
 
-Any other information you desire to display it is welcome and will be noted.
+Any other information you desire to display is welcome and will be noted.
 
 ### Hosting
 
@@ -50,7 +50,7 @@ for example: [github-pages](https://pages.github.com/), [netlify](https://www.ne
 
 > To test your queries you can access the GraphQL IDE on _https://[[DOMAIN]]/public/subjects/graphql/_ or create your own [**GraphiQL Docs**](https://github.com/graphql/graphiql). This will give you a bigger picture of the tables, attributes and all the types of queries that you can do.
 
-Here is the list of tables that you are allowed to query (it will be only provided the columns present on the tables):
+Here are the list of tables that you are allowed to query (it will be only provided the columns present on the tables):
 
 - **User table**:
 
@@ -168,7 +168,7 @@ Example of nesting, using the result and user table :
 }
 ```
 
-For this example we ask for the results `id` and `user`s that are associated to the `result`, requesting the users `name`s and `id`s.
+For this example we ask for the results `id` and `user`s that are associated to the `result`, requesting the users `login`s and `id`s.
 
 **You must use all the types of querying present above** (_normal_, _nested_ and using _arguments_), do not forget that you can use the types together or separately.
 
