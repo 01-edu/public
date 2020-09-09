@@ -181,7 +181,7 @@ apt-get install -y sublime-text sublime-merge libgtk2.0-0
 # Install VSCode
 
 wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | apt-key add -
-echo 'deb https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/repos/debs/ vscodium main' >> /etc/apt/sources.list.d/vscodium.list
+echo 'deb https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs/ vscodium main' >> /etc/apt/sources.list.d/vscodium.list
 
 apt-get update
 apt-get install -y codium
@@ -196,6 +196,7 @@ do
 	cat <<-'EOF'> $dir/.config/VSCodium/User/settings.json
 	{
 	    "telemetry.enableCrashReporter": false,
+	    "telemetry.enableTelemetry": false,
 	    "update.enableWindowsBackgroundUpdates": false,
 	    "update.mode": "none",
 	    "update.showReleaseNotes": false,
