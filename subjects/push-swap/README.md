@@ -97,12 +97,11 @@ This project will help you learn about :
 
 ```console
 student$ ./push_swap "2 1 3 6 5 8"
+pb
+pb
+ra
 sa
-pb
-pb
-pb
-sa
-pa
+rrr
 pa
 pa
 student$ ./push_swap "0 one 2 3"
