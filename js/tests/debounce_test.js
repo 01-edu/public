@@ -21,8 +21,8 @@ t(async ({ eq }) =>
   // it works concurrently
   eq(
     await Promise.all([
-      run(debounce(add, 5), { delay: 10, count: 5 }),
-      run(debounce(add, 2), { delay: 5, count: 10 }),
+      run(debounce(add, 50), { delay: 100, count: 5 }),
+      run(debounce(add, 20), { delay: 50, count: 10 }),
     ]),
     [4, 9]
   )
@@ -30,15 +30,15 @@ t(async ({ eq }) =>
 t(async ({ eq }) =>
   // testing with wait limit superior to wait time call
   // execution on the trailing edge, after wait limit has elapsed
-  eq(await run(debounce(add, 10), { delay: 5, count: 5 }), 0)
+  eq(await run(debounce(add, 100), { delay: 50, count: 5 }), 0)
 )
 
 t(async ({ eq }) =>
   // it works concurrently
   eq(
     await Promise.all([
-      run(opDebounce(add, 4), { delay: 2, count: 5 }),
-      run(opDebounce(add, 4), { delay: 2, count: 2 }),
+      run(opDebounce(add, 40), { delay: 20, count: 5 }),
+      run(opDebounce(add, 40), { delay: 20, count: 2 }),
     ]),
     [0, 0]
   )
@@ -49,8 +49,8 @@ t(async ({ eq }) =>
   // it works concurrently
   eq(
     await Promise.all([
-      run(opDebounce(add, 20, { leading: true }), { delay: 7, count: 3 }),
-      run(opDebounce(add, 10, { leading: true }), { delay: 14, count: 3 }),
+      run(opDebounce(add, 200, { leading: true }), { delay: 70, count: 3 }),
+      run(opDebounce(add, 100, { leading: true }), { delay: 140, count: 3 }),
     ]),
     [1, 2]
   )
