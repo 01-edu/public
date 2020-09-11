@@ -4,28 +4,30 @@ const t = (f) => tests.push(f)
 const add = (arr, el) => arr.push(el)
 
 // async setInterval is not precise enough so I made this synchronous one
-const setIntervalSync = (fn, delay, limit) => {
+const setIntervalSync = (fn, delay, limit = 0) => new Promise(s => {
   let run = true
   let count = 1
   const start = Date.now()
-  while (run) {
+  const loop = () => {
     const tick = Date.now()
     const elapsed = tick - start
     if (elapsed > count * delay) {
-      console.log({ elapsed, count })
       fn()
       count++
-      if (count >= limit) return
     }
+    elapsed < limit
+      ? setTimeout(loop)
+      : s()
   }
-}
+  setTimeout(loop)
+})
 
 // it uses the array to better test the leading and trailing edge of the time limit
 // so if the leading edge is true it will execute the callback
 // if the trailing edge is true it will execute the callback before returning the array
-const run = (callback, { delay, count }) => {
+const run = async (callback, { delay, count }) => {
   const arr = []
-  setIntervalSync(() => callback(arr, 1), delay, count)
+  await setIntervalSync(() => callback(arr, 1), delay, count * delay)
   return arr.length
 }
 
@@ -34,8 +36,8 @@ t(async ({ eq }) =>
   // it works concurrently
   eq(
     await Promise.all([
-      run(debounce(add, 5), { delay: 10, count: 5 }),
-      run(debounce(add, 2), { delay: 5, count: 10 }),
+      run(debounce(add, 50), { delay: 100, count: 5 }),
+      run(debounce(add, 20), { delay: 50, count: 10 }),
     ]),
     [4, 9]
   )
@@ -43,15 +45,15 @@ t(async ({ eq }) =>
 t(async ({ eq }) =>
   // testing with wait limit superior to wait time call
   // execution on the trailing edge, after wait limit has elapsed
-  eq(await run(debounce(add, 10), { delay: 5, count: 5 }), 0)
+  eq(await run(debounce(add, 100), { delay: 50, count: 5 }), 0)
 )
 
 t(async ({ eq }) =>
   // it works concurrently
   eq(
     await Promise.all([
-      run(opDebounce(add, 4), { delay: 2, count: 5 }),
-      run(opDebounce(add, 4), { delay: 2, count: 2 }),
+      run(opDebounce(add, 40), { delay: 20, count: 5 }),
+      run(opDebounce(add, 40), { delay: 20, count: 2 }),
     ]),
     [0, 0]
   )
@@ -62,8 +64,8 @@ t(async ({ eq }) =>
   // it works concurrently
   eq(
     await Promise.all([
-      run(opDebounce(add, 20, { leading: true }), { delay: 7, count: 3 }),
-      run(opDebounce(add, 10, { leading: true }), { delay: 14, count: 3 }),
+      run(opDebounce(add, 200, { leading: true }), { delay: 70, count: 3 }),
+      run(opDebounce(add, 100, { leading: true }), { delay: 140, count: 3 }),
     ]),
     [1, 2]
   )
