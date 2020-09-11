@@ -27,7 +27,7 @@ const setIntervalSync = (fn, delay, limit = 0) => new Promise(s => {
 // if the trailing edge is true it will execute the callback before returning the array
 const run = async (callback, { delay, count }) => {
   const arr = []
-  await setIntervalSync(() => callback(arr, 1), delay, count * delay)
+  await setIntervalSync(() => callback(arr, 1), delay, count * delay + 5)
   return arr.length
 }
 
