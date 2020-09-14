@@ -26,12 +26,11 @@
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(graphQLParams),
         })
-          .then(response => response.json())
-          .catch(() => response.text());
+          .then(response => response.json().catch(() => response.text()))
       ReactDOM.render(
         React.createElement(GraphiQL, { fetcher: graphQLFetcher }),
         document.getElementById('graphiql'),
-      );
+      )
     </script>
   </body>
 </html>
