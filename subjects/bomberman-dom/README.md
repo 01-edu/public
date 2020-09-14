@@ -31,22 +31,40 @@ You will have to make also a chat that enables the different players to talk to 
    1. Nº of players: 2 - 4
    2. Each player must have 3 lives. Then you are out!!
 
-2. The map should be fixed so that every player sees the whole map.
+2. Map
 
-   1. The maps should be generated with a logical random structure (without blocking the player). There will be two types of blocks, the ones that can be destroyed and the ones that can not. Tip: the optional project [different maps](https://public.01-edu.org/subjects/make-your-game/different-maps) can be useful for this part.
-   2. The players should be placed in the corners as their starting positions.
+   1. The map should be fixed so that every player sees the whole map.
+   2. There will be two types of blocks, the ones that can be destroyed (blocks) and the ones that can not (walls).
+      1. The walls will be placed always in the same place, while the blocks are meant to be generated randomly on the map. Tip: the optional project [different maps](https://public.01-edu.org/subjects/make-your-game/different-maps) can be useful for this part.
+      2. In the starting positions the players need to be able to survive. For example: if the players place a bomb, they will need to have space to avoid the bomb explosion.
+   3. The players should be placed in the corners as their starting positions.
 
 3. Power ups (each time a player destroys a block, a random power up may or may not appear):
 
    1. Bombs: Increases the amount of bombs dropped at a time by 1;
    2. Flames: Increases explosion range from the bomb in four directions by 1 block;
    3. Speed: Increases movement speed;
-   4. Bomb Push: Ability to throw a bomb after it has been placed.
 
 When the user opens the game, he/she should be presented to a page where he/she should enter a **nickname** to differentiate users. After selecting a nickname the user should be presented to a waiting page with a **player counter** that ends at 4. Once a user joins, the player counter will increment by 1.
 
 If there are more than 2 players in the counter and it does not reach 4 players before 20 seconds, a 10 second timer starts, to players get ready to start the game.\
 If there are 4 players in the counter before 20 seconds, the 10 seconds timer starts and the game starts.
+
+#### Bonus
+
+Although this bomberman already is super cool, it can be always better. Here are some ideas you can implement into the game to make it super awesomely cool:
+
+- **Solo + Co-Op mode**: You are supposed to develop an AI to play against the players. So once the AI is defeated all players involved win.
+- **More power ups**:
+  - _Bomb Push_: Ability to throw a bomb after it has been placed;
+  - _Bomb Pass_: Ability to pass through bombs;
+  - _Block Pass_: Ability to pass through blocks (not walls);
+  - _Detonator_: Ability to choose when a bomb will explode on a key press;
+  - _1 Up_: Gives the player an extra life;
+- **Release power ups after death**: When a player dies it drops one of it's power ups. If the player had no power ups, it drops a random power up.
+- **More than 4 players**: Be able to start a game with more than 4 players
+- **Team mode**: Make games with 2v2 or 3v3 (two/three players versus two/three players).
+- **After death interaction**: When a player dies, they can reappear as a ghost. If a ghost touches another player they come back to life. If a ghost is caught in a bomb explosion, the player controlling the ghost dies permanently.
 
 This project will help you learn about:
 
