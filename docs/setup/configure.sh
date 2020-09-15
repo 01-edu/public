@@ -19,7 +19,7 @@ EOF
 echo Installing Go tools
 GOPATH=$HOME/go
 PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
-go get golang.org/x/tools/cmd/goimports
+go get golang.org/x/tools/cmd/goimports github.com/01-edu/z01
 
 echo Installing OpenSSH
 sudo apt -y install openssh-client
