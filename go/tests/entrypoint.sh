@@ -26,6 +26,11 @@ if test "$s"; then
 	exit 1
 fi
 
+if find . -type f -name '*.go' -exec grep -qE '\tprint(ln)?\(' {} +; then
+	echo "print & println builtins are forbidden"
+	exit 1
+fi
+
 # Check restrictions
 if test "$ALLOWED_FUNCTIONS" && test "$EXPECTED_FILES"; then
 	IFS=' '
