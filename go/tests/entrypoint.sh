@@ -31,7 +31,7 @@ if test "$SKIP_FORMATTING"; then
 fi
 set -o nounset # TODO: Remove me after this variable is always set in all/tester/main.go
 
-if find . -type f -name '*.go' -exec grep -qE '\tprint(ln)?\(' {} +; then
+if find . -type f -name '*.go' -exec grep -qE 'print(ln)?\(' {} +; then
 	echo "Your Go files cannot use print & println builtins"
 	exit 1
 fi
