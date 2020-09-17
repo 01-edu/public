@@ -18,16 +18,21 @@ else
 	cat > "$first_file"
 fi
 
-# Check formatting
-s=$(goimports -d .)
-if test "$s"; then
-	echo '$ goimports -d .'
-	echo "$s"
-	exit 1
+set +o nounset # TODO: Remove me after this variable is always set in all/tester/main.go
+if test "$SKIP_FORMATTING"; then
+	s=$(goimports -d .)
+	if test "$s"; then
+		echo 'Your Go files are not correctly formatted :'
+		echo
+		echo '$ goimports -d .'
+		echo "$s"
+		exit 1
+	fi
 fi
+set -o nounset # TODO: Remove me after this variable is always set in all/tester/main.go
 
 if find . -type f -name '*.go' -exec grep -qE '\tprint(ln)?\(' {} +; then
-	echo "print & println builtins are forbidden"
+	echo "Your Go files cannot use print & println builtins"
 	exit 1
 fi
 
