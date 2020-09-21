@@ -176,6 +176,8 @@ _)      \.___.,|     .'
 \____   )MMMMMP|   .'
      `-'       `--'
 [ENTER YOUR NAME]: Lee
+[2020-01-20 16:03:43][Yenlik]:hello
+[2020-01-20 16:03:46][Yenlik]:How are you?
 [2020-01-20 16:04:15][Lee]:Hi everyone!
 [2020-01-20 16:04:32][Lee]:How are you?
 [2020-01-20 16:04:35][Lee]:
