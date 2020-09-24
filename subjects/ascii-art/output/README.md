@@ -8,7 +8,7 @@
 
 This project will help you learn about :
 
-- The Go file system(**fs**).
+- The Go file system(**fs**) API.
 - Ways to receive data.
 - Ways to output data.
 - Manipulation of strings.
