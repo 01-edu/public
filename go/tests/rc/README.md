@@ -13,7 +13,7 @@ This program analyzes a go source file and displays in standard output the impor
 
 - Disallowed
 
-  - NO imports are allowed
+  - NO absolute imports are allowed
   - NO built-in functions are allowed.
   - NO casting is allowed
 
