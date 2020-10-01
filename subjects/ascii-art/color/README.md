@@ -11,7 +11,6 @@ You must follow the same [instructions](https://public.01-edu.org/subjects/ascii
 
 This project will help you learn about :
 
-- Client utilities.
 - The Go file system(**fs**) API.
 - RGB color model.
 - Ways to receive data.

@@ -71,7 +71,6 @@ For the forum project you must use Docker. You can see all about docker basics o
 
 This project will help you learn about:
 
-- Client utilities.
 - The basics of web :
   - HTML
   - HTTP
