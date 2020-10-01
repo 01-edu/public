@@ -85,3 +85,7 @@ It is possible to remove painting by adding a layer:
 ```
 
 By creating a new layer you can remove painting, but "there is always a tradeoff". If we add to much layers it will increase the **composition** and **update tree**. In conclusion you must promote a new layer only if you now you are going to use it. Performance is the key to a good animation. "Performance is the art of avoiding work".
+
+### UI/UX
+
+- [Best Practices](https://www.uxpin.com/studio/blog/guide-design-consistency-best-practices-ui-ux-designers/)
