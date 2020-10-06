@@ -1,28 +1,13 @@
 #!/usr/bin/env bash
 
-# Unofficial Bash Strict Mode
-set -euo pipefail
-IFS='
-'
+set -e
 
-mkdir student
-cd student
-
-if test "$REPOSITORY"; then
-	password=$(cat)
-	git clone --quiet --depth=1 --shallow-submodules https://root:"${password}"@"$REPOSITORY" .
-else
-	first_file=$(echo "$EXPECTED_FILES" | cut -d' ' -f1)
-	mkdir -p "$(dirname "$first_file")"
-	cat > "$first_file"
-	chmod +x "$first_file"
-fi
-
-cd
-cp -rT /app .
+cp -r /app .
+cp -a student app
+cd app
 
 if ! test -f "${EXERCISE}_test.sh"; then
-	echo No test file found for the exercise : "$EXERCISE"
+	echo "No test file found for the exercise : $EXERCISE"
 	exit 1
 fi
 

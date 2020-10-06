@@ -371,7 +371,7 @@ func ChallengeMainStdin(exercise, input string, args ...string) {
 	code := func(code int) string {
 		return fmt.Sprintf("echo $?\n%d\n$", code)
 	}
-	student, studentCode := run("./" + exercise)
+	student, studentCode := run("./exe")
 	solution, solutionCode := run(exercise + "_prog")
 	if solutionCode == 0 {
 		if studentCode != 0 {

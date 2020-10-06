@@ -1,25 +1,10 @@
 #!/bin/sh
 
-set -o noglob
-set -o errexit
-set -o nounset
-IFS='
-'
+set -e
 
-mkdir -p src/student
-cd src/student
+cd student
 
-if test "$REPOSITORY"; then
-	password=$(cat)
-	git clone --quiet --depth=1 --shallow-submodules https://root:"${password}"@"$REPOSITORY" .
-else
-	first_file=$(echo "$EXPECTED_FILES" | cut -d' ' -f1)
-	mkdir -p "$(dirname "$first_file")"
-	cat > "$first_file"
-fi
-
-set +o nounset # TODO: Remove me after this variable is always set in all/tester/main.go
-if test "$SKIP_FORMATTING"; then
+if ! test "$SKIP_FORMATTING"; then
 	s=$(goimports -d .)
 	if test "$s"; then
 		echo 'Your Go files are not correctly formatted :'
@@ -29,7 +14,11 @@ if test "$SKIP_FORMATTING"; then
 		exit 1
 	fi
 fi
-set -o nounset # TODO: Remove me after this variable is always set in all/tester/main.go
+
+if ! find . -type f -name '*.go' | grep -q .; then
+	echo "Missing Go file: $FILE"
+	exit 1
+fi
 
 if find . -type f -name '*.go' -exec grep -qE 'print(ln)?\(' {} +; then
 	echo "Your Go files cannot use print & println builtins"
@@ -37,23 +26,23 @@ if find . -type f -name '*.go' -exec grep -qE 'print(ln)?\(' {} +; then
 fi
 
 # Check restrictions
-if test "$ALLOWED_FUNCTIONS" && test "$EXPECTED_FILES"; then
-	IFS=' '
-	first_file=$(echo "$EXPECTED_FILES" | cut -d' ' -f1)
+if test "$ALLOWED_FUNCTIONS" && test "$FILE"; then
 	# shellcheck disable=SC2086
-	rc "$first_file" $ALLOWED_FUNCTIONS
+	rc "$FILE" $ALLOWED_FUNCTIONS
 fi
-IFS='
-'
-# Compile and run test
+
 cd
-GOPATH=$HOME:$GOPATH
+
+# Compile and run test
 if command -v "${EXERCISE}_test" >/dev/null 2>&1; then
 	# The exercise is a program
-	go build "./src/student/$EXERCISE"
+	go build -o exe "./student/$EXERCISE"
 	"${EXERCISE}_test"
 else
 	# The exercise is a function
+	mkdir src
+	ln -s $(pwd)/student $(pwd)/src/student
+	GOPATH=$GOPATH:$PWD
 	go build "func/${EXERCISE}_test"
 	"./${EXERCISE}_test"
 fi
