@@ -7,7 +7,6 @@ RUN go get github.com/01-edu/z01
 COPY . src
 RUN go get rc
 RUN go install rc prog/...
+
 COPY entrypoint.sh /usr/local/bin
-COPY --from=mkcert-ca . /usr/local/share/ca-certificates
-RUN update-ca-certificates
-ENTRYPOINT ["/bin/sh", "/usr/local/bin/entrypoint.sh"]
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
