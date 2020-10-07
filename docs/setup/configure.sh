@@ -5,7 +5,7 @@ IFS='
 '
 
 echo Installing common tools
-sudo apt -y install man bash-completion git jq curl build-essential netcat wget psmisc lz4 file net-tools brotli unzip zip moreutils pv tree whois
+sudo apt -y install man bash-completion git jq curl build-essential netcat wget psmisc file net-tools brotli unzip zip moreutils pv tree whois
 
 echo Installing Go
 wget https://golang.org/dl/go1.15.2.linux-amd64.tar.gz
