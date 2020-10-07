@@ -279,6 +279,14 @@ func loadProgram(path string, load loadedSource) error {
 		return err
 	}
 
+	if len(pkgs) > 1 {
+		packages := []string{}
+		for pkgName := range pkgs {
+			packages = append(packages, pkgName)
+		}
+		return fmt.Errorf("There should be only one package in this directory: Found packages: %v", packages)
+	}
+
 	for _, pkg := range pkgs {
 		ast.Walk(l, pkg)
 		l.pkgScope = ast.NewScope(nil)
@@ -777,6 +785,14 @@ type loadVisitor struct {
 	// used to keep the result of the createScope function
 	pkgScope *ast.Scope
 	files    map[string]*ast.File
+}
+
+func (l *loadVisitor) String() (res string) {
+	res = "files"
+	for f, _ := range l.files {
+		res += f + ","
+	}
+	return res
 }
 
 // Returns all the parameter of a function that identify a function
