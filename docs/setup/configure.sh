@@ -4,10 +4,10 @@ set -euo pipefail
 IFS='
 '
 
-echo Installing common tools
-sudo apt -y install man bash-completion git jq curl build-essential netcat wget psmisc file net-tools brotli unzip zip moreutils pv tree whois
+set -x
 
-echo Installing Go
+sudo apt -y install man bash-completion git jq curl build-essential netcat wget psmisc file net-tools brotli unzip zip moreutils pv tree whois openssh-client
+
 wget https://golang.org/dl/go1.15.2.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.15.2.linux-amd64.tar.gz
 rm go1.15.2.linux-amd64.tar.gz
@@ -16,13 +16,26 @@ GOPATH=$HOME/go
 PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 EOF
 
-echo Installing Go tools
 GOPATH=$HOME/go
 PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
-go get golang.org/x/tools/cmd/goimports github.com/01-edu/z01
-
-echo Installing OpenSSH
-sudo apt -y install openssh-client
-ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -N ''
-echo "Copy the following line :"
-cat ~/.ssh/id_ed25519.pub
+go get -v golang.org/x/tools/cmd/goimports
+go get -v github.com/01-edu/z01
+go get -v github.com/stamblerre/gocode
+mv "${GOPATH}/bin/gocode" "${GOPATH}/bin/gocode-gomod"
+go get -v github.com/mdempsky/gocode
+go get -v github.com/uudashr/gopkgs/v2/cmd/gopkgs
+go get -v github.com/ramya-rao-a/go-outline
+go get -v github.com/acroca/go-symbols
+go get -v golang.org/x/tools/cmd/guru
+go get -v golang.org/x/tools/cmd/gorename
+go get -v github.com/cweill/gotests/...
+go get -v github.com/fatih/gomodifytags
+go get -v github.com/josharian/impl
+go get -v github.com/davidrjenni/reftools/cmd/fillstruct
+go get -v github.com/haya14busa/goplay/cmd/goplay
+go get -v github.com/godoctor/godoctor
+go get -v github.com/go-delve/delve/cmd/dlv
+go get -v github.com/rogpeppe/godef
+go get -v github.com/sqs/goreturns
+go get -v golang.org/x/lint/golint
+go get -v golang.org/x/tools/gopls
