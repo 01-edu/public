@@ -83,3 +83,5 @@
 ###### +Does the search engine include operators? (include, exclude or fuzzy)
 
 ###### +Does the search engine include operators for numbers? (equal, not equal, greater than, lesser than)
+
+###### +Do you think in general this project is well done?

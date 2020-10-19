@@ -81,3 +81,5 @@
 ###### +Can the users send images through the private messages?
 
 ###### +Is the code using synchronicity (Promises and goroutines/channels) to increase performance?
+
+###### +Do you think in general this project is well done?

@@ -55,3 +55,5 @@
 ###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
 
 ###### +Is the code using synchronicity to increase performance?
+
+###### +Do you think in general this project is well done?

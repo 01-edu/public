@@ -211,3 +211,5 @@
 ###### +Is there other notification apart from the ones explicit on the subject?
 
 ###### +Does the project present a script to build the images and containers? (using a script to simplify the build)
+
+###### +Do you think in general this project is well done?

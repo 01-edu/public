@@ -75,3 +75,5 @@
 ###### +Is there any display of who won the game?
 
 ###### +Can you play again after the game ends?
+
+###### +Do you think in general this project is well done?

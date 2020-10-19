@@ -31,3 +31,5 @@
 ###### +Did the student generated their own GraphiQL?
 
 ###### +Does the UI respect the [good practicies](https://public.01-edu.org/subjects/good-practices/)?
+
+###### +Do you think in general this project is well done?

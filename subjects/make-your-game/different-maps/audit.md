@@ -47,3 +47,5 @@
 ###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/README.md)?
 
 ###### +Is the code using synchronicity to increase performance?
+
+###### +Do you think in general this project is well done?
