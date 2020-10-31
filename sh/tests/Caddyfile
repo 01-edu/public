@@ -1,0 +1,4 @@
+{$DOMAIN}
+tls internal
+encode zstd gzip
+file_server
