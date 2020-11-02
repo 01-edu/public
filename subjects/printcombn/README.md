@@ -2,7 +2,7 @@
 
 ### Instructions
 
-- Write a function that prints all possible combinations of **n** different digits in ascending order.
+- Write a function that prints all possible combinations of **n** different digits in ascending order. (Look at the digits in the examples carefully)
 
 - n will be defined as : 0 < n < 10
 
