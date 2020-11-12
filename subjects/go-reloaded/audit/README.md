@@ -481,7 +481,7 @@ str = <<==123==>>In<<==123==>>1820,<<==123==>>Thomas<<==123==>>de<<==123==>>Colm
 ##### Try with the arguments
 
 ```
-slice = [The earliest computing device undoubtedly consisted of the five fingers of each hand] and f = strings.Compare
+slice = ["The", "earliest", "computing", "device", "undoubtedly", "consisted", "of", "the", "five", "fingers", "of", "each," "hand"] and f = strings.Compare
 ```
 
 `[The computing consisted device each earliest fingers five hand of of the undoubtedly]`
@@ -491,7 +491,7 @@ slice = [The earliest computing device undoubtedly consisted of the five fingers
 ##### Try with the arguments
 
 ```
-slice = [The word digital comesfrom "digits" or fingers] and f = strings.Compare
+slice = ["The", "word", "digital", "comesfrom", "\"digits\"", "or", "fingers"] and f = strings.Compare
 ```
 
 `["digits" The comesfrom digital fingers or word]`
@@ -501,7 +501,7 @@ slice = [The word digital comesfrom "digits" or fingers] and f = strings.Compare
 ##### Try with the arguments
 
 ```
-slice = [a A 1 b B 2 c C 3] and f = strings.Compare
+slice = ["a", "A", "1", "b", "B", "2", "c", "C", "3"] and f = strings.Compare
 ```
 
 `[1 2 3 A B C a b c]`
@@ -511,7 +511,7 @@ slice = [a A 1 b B 2 c C 3] and f = strings.Compare
 ##### Try with the arguments
 
 ```
-slice = [The computing consisted device each earliest fingers five hand of of the undoubtedly] and f = func(a, b string) int {
+slice = ["The", "computing", "consisted", "device", "each", "earliest", "fingers", "five", "hand", "of", "of", "the," "undoubtedly"] and f = func(a, b string) int {
 	 return strings.Compare(b, a)
 }
 ```
@@ -523,7 +523,7 @@ slice = [The computing consisted device each earliest fingers five hand of of th
 ##### Try with the arguments
 
 ```
-slice = ["digits" The comesfrom digital fingers or word] and f = func(a, b string) int {
+slice = ["\"digits\"", "The", "comesfrom", "digital", "fingers", "or", "word"] and f = func(a, b string) int {
 	 return strings.Compare(b, a)
 }
 ```
@@ -535,7 +535,7 @@ slice = ["digits" The comesfrom digital fingers or word] and f = func(a, b strin
 ##### Try with the arguments
 
 ```
-slice = [1 2 3 A B C a b c] and f = func(a, b string) int {
+slice = ["1", "2", "3", "A", "B", "C", "a", "b", "c"] and f = func(a, b string) int {
 	 return strings.Compare(b, a)
 }
 ```
