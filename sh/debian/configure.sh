@@ -95,6 +95,7 @@ ufw --force delete 4
 systemctl disable unattended-upgrades.service apt-daily.timer apt-daily-upgrade.timer console-setup.service keyboard-setup.service remote-fs.target man-db.timer systemd-timesyncd.service
 sed -i 's/MODULES=most/MODULES=dep/g' /etc/initramfs-tools/initramfs.conf
 sed -i 's/COMPRESS=gzip/COMPRESS=lz4/g' /etc/initramfs-tools/initramfs.conf
+echo 'RESUME=none' >> /etc/initramfs-tools/conf.d/resume
 update-initramfs -u
 echo 'GRUB_TIMEOUT=0' >> /etc/default/grub
 update-grub
