@@ -7,11 +7,13 @@ Ascii-art-web consists in creating and running a server, in which it will be pos
 Your web-page should provide usage of different [banners](https://github.com/01-edu/public/tree/master/subjects/ascii-art).
 
 Implement following HTTP endpoints:
+
 1. GET `/`: Sends HTML response - the main page.
 2. POST `/ascii-art`: Receives _JSON_ body with the following data and returns _JSON_ response with the result of _ascii-art_:
 
 Request body:
-```js
+
+```json
 {
   "banner": "shadow",
   "text": "Your text here"
@@ -19,7 +21,8 @@ Request body:
 ```
 
 Response body:
-```js
+
+```json
 {
   "result": "..."
 }
@@ -33,6 +36,7 @@ Main page must have:
 ### HTTP status code
 
 Your endpoints must return appropriate HTTP status codes.
+
 - OK (200), if everything went without errors
 - Not Found, if anything is not found, e.g: template, banner etc.
 - Bad Request, for incorrect requests

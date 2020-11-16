@@ -25,7 +25,6 @@ const update = state => {
   // Each AIs contains:
   //   color: A number that represent the color of a AI
   //   name: A string of the AI name
-  //   score: A number of the total block collected by this AI
   //   coords: An array of 4 coordinates of the nearest blocks
 
   // Each coordinate (and AI) contains:
@@ -46,6 +45,7 @@ const update = state => {
 
   // Saving state between each updates:
   // I update the MAP with the new position of each AIs
+  console.log(state)
   state.ais.forEach(addToMap)
 
   // Actual AI logic:
