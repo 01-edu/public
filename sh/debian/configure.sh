@@ -33,17 +33,11 @@ alias l="ls $LS_OPTIONS -al --si --group-directories-first"
 alias less="less -i"
 alias nano="nano -clDOST4"
 alias pstree="pstree -palU"
-alias gobuild='CGO_ENABLED=0 GOARCH=amd64 go build -trimpath -ldflags="-s -w"'
 
+export HISTCONTROL=ignoreboth
 export HISTFILESIZE=
 export HISTSIZE=
 export HISTTIMEFORMAT="%F %T "
-
-GOPATH=$HOME/go
-HISTCONTROL=ignoreboth
-HISTFILESIZE=
-HISTSIZE=
-HISTTIMEFORMAT="%F %T "
 EOF
 
 cat <<'EOF'>> /etc/inputrc
@@ -107,7 +101,7 @@ update-grub
 apt-get -y purge apparmor exim\*
 
 for i in $(seq 0 "$(nproc --ignore 1)"); do
-  echo "devices/system/cpu/cpu${i}/cpufreq/scaling_governor = performance" >> /etc/sysfs.conf
+    echo "devices/system/cpu/cpu${i}/cpufreq/scaling_governor = performance" >> /etc/sysfs.conf
 done
 
 # Disable sleep when closing laptop screen
@@ -120,14 +114,6 @@ sed -i 's| / ext4 | / ext4 noatime,|g' /etc/fstab
 swapoff -a
 sed -i '/swap/d' /etc/fstab
 
-# node.JS & yarn
-curl -sL https://deb.nodesource.com/setup_12.x | bash -
-apt-get -y install nodejs
-curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" > /etc/apt/sources.list.d/yarn.list
-apt-get update
-apt-get -y install yarn
-
 # Docker
 apt-get -y install apt-transport-https ca-certificates curl gnupg2 software-properties-common
 curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
@@ -135,28 +121,10 @@ add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(
 apt-get update
 apt-get -y install docker-ce docker-ce-cli containerd.io
 
-# ripgrep
-curl -LO https://github.com/BurntSushi/ripgrep/releases/download/12.0.1/ripgrep_12.0.1_amd64.deb
-dpkg -i ripgrep_12.0.1_amd64.deb
-rm ripgrep_12.0.1_amd64.deb
-
-# Go
-wget https://dl.google.com/go/go1.15.2.linux-amd64.tar.gz
-tar -C /usr/local -xzf go1.15.2.linux-amd64.tar.gz
-rm go1.15.2.linux-amd64.tar.gz
-echo 'export PATH=$PATH:/usr/local/go/bin' >> /etc/profile
-
-# Netdata
-bash <(curl -Ss https://my-netdata.io/kickstart-static64.sh) --no-updates --stable-channel --disable-telemetry --dont-wait
-
-# Caddy
-tmpdir=$(mktemp -d)
-cd "$tmpdir"
-wget https://github.com/caddyserver/caddy/releases/download/v1.0.4/caddy_v1.0.4_linux_amd64.tar.gz
-tar -xf caddy_v1.0.4_linux_amd64.tar.gz
-mv caddy /usr/local/bin
-cd
-rm -rf "$tmpdir"
+# Docker compose
+curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+curl -L https://raw.githubusercontent.com/docker/compose/1.27.4/contrib/completion/bash/docker-compose -o /etc/bash_completion.d/docker-compose
 
 # Generate SSH key
 ssh-keygen -ted25519 -f ~/.ssh/id_ed25519 -N ''
