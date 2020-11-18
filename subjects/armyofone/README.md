@@ -23,6 +23,6 @@ Starting from an empty project, after creating a level with a floor (nothing els
 - use Animation Blendspace to organize your movements.
 - use Animation Blueprint variables to handle different animation states.
 
-When finished, your project should look like the executable example on the folder or the “Expected Result” video.
+When finished, your project should look like the executable example on the folder or the [“Expected Result” video](https://youtu.be/sebi5icA1MM).
 
 > Don’t forget to zip up the project compile and save everything for peer correction.

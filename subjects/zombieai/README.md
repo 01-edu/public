@@ -45,7 +45,7 @@ After entering the game by clicking the "Start Game" button, the game should con
   - Wave the player died
     - this two stats also have to be displayed when the player presses the TAB button and be hidden when the TAB button is released.
 
-When finished, your project should look like the executable example on the folder or the “Expected Result” video.
+When finished, your project should look like the executable example on the folder or the [“Expected Result” video](https://youtu.be/d8MqIVuC88k).
 
 > Don’t forget to zip up the project compile and save everything for peer correction.
 

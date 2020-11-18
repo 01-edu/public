@@ -39,7 +39,7 @@ As for the multiplayer aspect, here are some hints that you will have to follow:
 - Use Game State and replicated variables to know who is the winner of the game. If you have more info to share for all players on the game, do it through Game State using server replication.
 - Use "Has Authority" checks to know if it is the server or the client that is trying to execute an action.
 
-When finished, your project should look like the executable example on the folder or the “Expected Result” video.
+When finished, your project should look like the executable example on the folder or the [“Expected Result” video](https://youtu.be/s56rio0bw0U).
 
 > Don’t forget to zip up the project compile and save everything for peer correction.
 

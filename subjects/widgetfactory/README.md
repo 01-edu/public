@@ -8,7 +8,7 @@ You will create a first-person style game with only directional and mouse input.
 
 ### Instructions
 
-For this project you will start the game with an empty project and it is requested that you:
+For this project you will start the game with an empty project and be sure to create it including the starter content. It is requested that you:
 
 - Create a PlayerCharacter blueprint and give him the ability to move forward, backward, left and right. Also, use the mouse to look around.
 - Create a start menu by pressing Escape.
@@ -36,8 +36,8 @@ When the player clicks on the Graphics Settings button, another widget should ap
 
 While controlling the player in the game, a widget should be visible at all times. This widget should display on a corner of the screen the rounded X, Y, Z (as integers) coordinates of the player. Just make sure it doesn’t disturb the visibility of the other widgets. If you want, after opening the pause menu you can make the player position widget disappear, making it appear again when you return to the game.
 
-On the level you should display some grass, textured objects and post process on the terrain to show the settings changes. You can find some stuff on the Resources folder.
+On the level you should display some grass, textured objects and post process on the terrain to show the settings changes. You can find some stuff on the StarterContent folder.
 
-When finished, your project should look like the executable example on the folder or the “Expected Result” video.
+When finished, your project should look like the executable example on the folder or the [“Expected Result” video](https://youtu.be/0v-spQJwDwM).
 
 > Don’t forget to zip up the project compile and save everything for peer correction.
