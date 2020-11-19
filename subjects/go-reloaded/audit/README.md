@@ -244,7 +244,7 @@
 
 ##### Try with the arguments: `1 % 0`
 
-`No remainder of division by 0`
+`No module by 0`
 
 ###### Does the program prints the value above?
 
