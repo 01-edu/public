@@ -25,7 +25,9 @@ After creating a blank project and importing the content from the provided folde
 - Use interaction timer to set how many time should the player look to an interaction point, in order to travel to the next space (Like on the video example). In other words, the player should look for a while at the interaction point before getting teleported to the next scene.
 - Except for the interaction point and the spheres containing the panoramic images, no 3D objects are allowed on the map.
 
-When finished, your project should look like the executable example on the folder or the [“Expected Result” video](https://youtu.be/Tor1Q10NG_Q).
+After downloading and unzipping this [file](https://assets.01-edu.org/MouseVR.zip), you can copy its content to your project Content folder.
+
+When finished, your project should look like the [“Expected Result” video](https://youtu.be/Tor1Q10NG_Q).
 
 > Don’t forget to zip up the project compile and save everything for peer correction.
 

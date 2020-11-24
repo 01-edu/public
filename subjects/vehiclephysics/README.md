@@ -31,9 +31,11 @@ There must be three models of cars on the map the character can choose from. All
 
 To create the map you should use the Landscape tool. Also add a track using spline roads.
 
-When finished, your project should look like the executable example on the folder or the [“Expected Result” video](https://youtu.be/4dXjFKh_jjY).
+After downloading and unzipping this [file](https://assets.01-edu.org/VehiculePhysics.zip), you can copy its content to your project Content folder.
 
-> Don’t forget to zip up the project compile and save everything for peer correction.
+When finished, your project should look like the [“Expected Result” video](https://youtu.be/4dXjFKh_jjY).
+
+> Do not forget to zip up the project compile and save everything for peer correction.
 
 #### Bonus
 

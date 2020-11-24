@@ -32,7 +32,7 @@
 
 #### Bonus
 
-###### Was there a resolution confirmation button anytime when changing resolution?
+###### Was there a resolution confirmation button when changing resolution?
 
 ###### Was the “On Release” attribute of the buttons used instead of the "On Pressed"?
 

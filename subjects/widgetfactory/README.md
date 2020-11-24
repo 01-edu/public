@@ -38,6 +38,14 @@ While controlling the player in the game, a widget should be visible at all time
 
 On the level you should display some grass, textured objects and post process on the terrain to show the settings changes. You can find some stuff on the StarterContent folder.
 
-When finished, your project should look like the executable example on the folder or the [“Expected Result” video](https://youtu.be/0v-spQJwDwM).
+When finished, your project should look like the [“Expected Result” video](https://youtu.be/0v-spQJwDwM).
 
-> Don’t forget to zip up the project compile and save everything for peer correction.
+> Do not forget to zip up the project compile and save everything for peer correction.
+
+### Bonus
+
+As bonuses you can maybe:
+
+- Add a resolution confirmation button when changing resolution.
+- Use the “On Release” attribute of the buttons, instead of the "On Pressed".
+  Automatically set the default screen resolution to get the best computer performance.
