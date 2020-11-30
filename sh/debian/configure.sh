@@ -6,13 +6,14 @@ IFS='
 '
 
 export DEBIAN_FRONTEND=noninteractive
+export DEBIAN_PRIORITY=critical
 
 # Fix Debian 10 bug (https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=905409)
 PATH=/sbin:/usr/sbin:$PATH
 
 # Debian stable OS
 apt-get update
-apt-get -y upgrade ||:
+apt-get -y -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" upgrade
 apt-get -y dist-upgrade
 
 # Disable OpenStack SSH malware
