@@ -5,6 +5,8 @@ set -euo pipefail
 IFS='
 '
 
+export DEBIAN_FRONTEND=noninteractive
+
 # Fix Debian 10 bug (https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=905409)
 PATH=/sbin:/usr/sbin:$PATH
 
