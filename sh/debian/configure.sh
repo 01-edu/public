@@ -12,7 +12,7 @@ PATH=/sbin:/usr/sbin:$PATH
 
 # Debian stable OS
 apt-get update
-apt-get -y upgrade
+apt-get -y upgrade ||:
 apt-get -y dist-upgrade
 
 # Disable OpenStack SSH malware
