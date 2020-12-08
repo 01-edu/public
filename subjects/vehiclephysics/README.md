@@ -13,7 +13,7 @@ The player starts the game by controlling a Third Person character and as soon h
 As for the vehicle, these are the expectations:
 
 - create a blueprint named BaseCar, that will be the parent of all vehicles classes.
-  - BaseCar should be a fully functional and realistic vehicle. In other words, it should accelerate, brake, have a handbrake, the back wheels should not turn, neither should the front wheels exceed a certain angle, etc.
+  - BaseCar should be a fully functional and realistic vehicle. In other words, it should accelerate, brake, have a handbrake, the back wheels should not turn, neither should the front wheels exceed a certain angle, etc...
   - BaseCar should also have dynamic instance for the lights.
     - The vehicle lights needs to simulate the real behavior of a real vehicle. When pressing the letter 'L' the front lights and the rear presence lights should turn on or off, when braking three braking lights (left, right and center) should turn on and the rear lights should turn on when reversing.
     - The BaseCar blueprint should contain "Set Material" nodes to change the headlamp material in order to have the effect where the lights are turned on.
@@ -22,7 +22,7 @@ As for the vehicle, these are the expectations:
 - only one AnimationBlueprint can be used for this project.
 
 - when inside the vehicle, if the 'C' key is pressed, the camera should change from the third person view of the vehicle to the driver view inside the car.
-  - when in the camera of the driver, the player must be able to see the gears and the speedometer in the dashboard
+  - when in the camera of the driver, the player must be able to see the gears and the speedometer in the dashboard.
 
 There must be three models of cars on the map the character can choose from. All of them should inherit the BaseCar class. These three models should be:
 
@@ -43,6 +43,6 @@ When finished, your project should look like the [“Expected Result” video](h
 
 As bonus objectives you can:
 
-- Create steam/flames particles going out from the car exhaust
-- Animate the character entering and sitting in the car
-- Add a button to open the doors while inside the car without exiting it
+- Create steam/flames particles going out from the car exhaust.
+- Animate the character entering and sitting in the car.
+- Add a button to open the doors while inside the car without exiting it.

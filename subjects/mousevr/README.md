@@ -19,7 +19,7 @@ After creating a blank project and importing the content from the provided folde
 - In order to play the game, the player only needs to use the mouse and never the keyboard.
 
 - Create your own interaction point to indicate where the player is heading.
-  - The design of the interaction point is up to you, but it should display a text underneath it, indicating where this interaction point is going to lead the player to (burger store, metro, park, etc...)
+  - The design of the interaction point is up to you, but it should display a text underneath it, indicating where this interaction point is going to lead the player to (burger store, metro, park, etc...).
   - There should always be an interaction point visible to the player, somewhere in the world that lets the player quit, no matter where the player is in the map.
 
 - There should be no brutal transitions in the teleportation phase.

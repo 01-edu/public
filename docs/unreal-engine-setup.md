@@ -28,7 +28,7 @@ sudo apt update
 sudo apt install lutris
 ```
 
-- After `Lutris` is installed, open it and on the top bar, search for `Epic Games` and you will see the result `Epic Games Store`. Go ahead and click on install.
+- After `Lutris` is installed, open it and on the top bar, search for `Epic Games` and you will see the result `Epic Games Store`. Go ahead and click on `install`.
 
 - After installing it, open it and sign in with your account.
 

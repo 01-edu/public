@@ -16,8 +16,6 @@
 
 ###### Can the Countess character attack using the blades when clicking on the left mouse button?
 
-###### Is the Countess body blending between two animations?
-
 ###### Are the body transitions smooth when starting an attack or jumping, etc…?
 
 ###### Can you attack and move around at the same time without damaging the animations performance?

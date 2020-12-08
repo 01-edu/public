@@ -31,6 +31,6 @@ When finished, your project should look like the executable example on the folde
 
 Here are some ideas for improving the game:
 
-- Targets with different speeds
-- Textures on the walls and ground
-- Adding obstacles in front of the targets
+- Targets with different speeds.
+- Textures on the walls and ground.
+- Adding obstacles in front of the targets.

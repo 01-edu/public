@@ -1,6 +1,6 @@
 ## NascarOnlineAlpha
 
-In this exercise, you will create a racing online game. The player will be able to race with another player to see who is faster. When you feel stuck remember that once, a man could not work out how to fasten his seatbelt. But then it suddenly clicked!
+In this exercise, you will create an online racing game. The player will be able to race with another player to see who is faster. When you feel stuck remember that once, a man could not work out how to fasten his seatbelt. But then it suddenly clicked!
 
 ### Objectives
 
@@ -36,9 +36,9 @@ As the game is done, you only will need to make the multiplayer part of it. Basi
 
   - If you are not the host, a widget should pop on the screen saying “Waiting for the host to start” and if you are the host it should be a “Click START to start” widget. Therefore the host of the server should have a Start button available.
 
-- Once the game started, all players spawn on the map and the race starts after a countdown (A little delay may occur for the client but it quickly goes back to normal so do not worry about this possible issue.)
+- Once the game started, all players spawn on the map and the race starts after a countdown (A little delay may occur for the client but it quickly goes back to normal so do not worry about this possible issue).
 
-- The first to finish the race has a text on the screen written “YOU WIN”. The rest of the players get a “YOU LOSE” instead.
+- The first to finish the race gets a message on the screen displaying “YOU WIN”. The rest of the players get a “YOU LOSE” instead.
 
 - Once the player crosses the finish line, the player input is disabled (the player can no longer move).
 

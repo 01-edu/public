@@ -14,12 +14,12 @@ Starting from an empty project, after creating a level with a floor (nothing els
 
   - give the character the ability to:
 
-    - move forward, backward, left and right using the WASD keys
-    - look around and change direction using the mouse
-    - jump using Space
-    - attack using the left mouse click
+    - move forward, backward, left and right using the WASD keys.
+    - look around and change direction using the mouse.
+    - jump using Space.
+    - attack using the left mouse click.
 
-- create an animation blueprint file to animate the character so she can be animated while running, jumping, attacking, etc.
+- create an animation blueprint file to animate the character so she can be animated while running, jumping, attacking, etc...
 
 - implement the Aim Offset, so that when the player moves the mouse, the head of Countess follow the direction we’re looking at, in a 180-degree angle.
 

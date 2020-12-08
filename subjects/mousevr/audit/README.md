@@ -18,7 +18,7 @@
 
 ###### Is an Interface Blueprint being used to handle the different actions on the interaction point (Blur,Focus and Active)?
 
-###### Do you need to stare for a little at a interaction point to be able to teleport to a different scene?
+###### Do you need to stare for a little at an interaction point to be able to teleport to a different scene?
 
 ###### Except for the interaction point and the spheres containing the panoramic images, are there any 3D objects on the map?
 

@@ -8,13 +8,13 @@
 
 ###### Is the maximum number of players 4 and the minimum 2?
 
-###### If you try to host the server without a server name (input text box empty), does a warning message appears and are you forbidden to enter the server?
+###### If you try to host the server without a server name (input text box empty), does a warning message appear and are you forbidden to enter the server?
 
 ###### On the Join menu, can you switch between searching LAN sessions and Online sessions?
 
 ###### Once the game finds a session, Is a button with the session name displayed on the screen?
 
-###### Does this button allows the player to join the host session?
+###### Does this button allow the player to join the host session?
 
 ###### Is there a loading screen while joining the session?
 

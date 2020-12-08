@@ -1,14 +1,14 @@
 #### Functional
 
-###### Does the player move correctly forward, backward, left, right?
+###### Does the player move correctly forward, backward, left and right?
 
 ###### Does the player rotate according to the mouse movement?
 
-###### Can you see the coordinates of the player position on a corner?
+###### Can you see the coordinates of the player position in a corner?
 
 ###### As you are moving through the map, are the coordinates on the widget changing?
 
-###### Did the Start menu popped up, when Esc is pressed?
+###### Did the Start menu popped up, when the Esc key is pressed?
 
 ###### Is the game on the background paused? (check on the Player blueprint if the game pause is set)
 
@@ -24,7 +24,7 @@
 
 ###### Are the Shadow Quality, Post Process, Texture Quality, Effects Quality and Foliage Quality settings present in the Graphics Settings menu?
 
-###### Do all previous settings contain four choices ("LOW", "MEDIUM", "HIGH" and "EPIC")
+###### Do all previous settings contain four choices ("LOW", "MEDIUM", "HIGH" and "EPIC")?
 
 ###### Did the widget fit the screen in whatever resolution the game was set on?
 
