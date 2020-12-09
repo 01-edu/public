@@ -12,7 +12,7 @@
 
 ###### On the Join menu, can you switch between searching LAN sessions and Online sessions?
 
-###### Once the game finds a session, Is a button with the session name displayed on the screen?
+###### Once the game finds a session, is a button with the session name displayed on the screen?
 
 ###### Does this button allow the player to join the host session?
 

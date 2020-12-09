@@ -24,8 +24,6 @@
 
 ###### Is the upper body and lower body being controlled as "two separate modules"?
 
-<!-- - Caches are used in the animation blueprint to separate upper body and lower body animation correctly???? -->
-
 ###### Does the Animation Blueprint have at least three variables in order to handle the character speed if she is in the air and attacking?
 
 #### Bonus

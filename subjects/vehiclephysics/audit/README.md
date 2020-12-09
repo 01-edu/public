@@ -16,10 +16,6 @@
 
 ###### Did the Front wheels have a steer angle between 25 and 35?
 
-###### Are the front wheels are not affected by handbrake?
-
-######  Is the "Suspension force offset" inside the "Vehicle Wheel" Blueprint between 5 and 15, in order to make the vehicle not lean too much when steering left or right?
-
 ###### Are the car wheels not blurry while driving?
 
 ###### Do the car wheels never go through the floor?
