@@ -2,13 +2,13 @@
 
 set -e
 
-cd student
-
 if test "$EXAM_RUN_ONLY" = true; then
-	go build -o exe .
+	go build -o exe ./student
 	./exe "$@"
 	exit
 fi
+
+cd student
 
 if ! test "$SKIP_FORMATTING"; then
 	s=$(goimports -d .)
