@@ -1,4 +1,4 @@
-use fibonacci::*;
+use fibonacci2::*;
 
 #[test]
 fn it_works() {

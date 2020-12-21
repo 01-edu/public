@@ -7,4 +7,4 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-fibonacci = {path = "../../../../rust-piscine-solutions/fibonacci"}
+fibonacci2 = {path = "../../../../rust-piscine-solutions/fibonacci2"}
