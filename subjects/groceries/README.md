@@ -6,6 +6,10 @@ Create a function called `insert` that inserts a new element at the end of the V
 
 And another function `at_index` that returns the value found at the index passed as an argument
 
+### Notions
+
+[Common Collections]( https://doc.rust-lang.org/stable/book/ch08-00-common-collections.html)
+
 ### Expected Functions
 
 ```rust
@@ -17,6 +21,8 @@ pub fn at_index(vec: &Vec<String>, index: ) -> String {
 ```
 
 ### Usage
+
+Here is a possible program to test your function:
 
 ```rust
 use groceries::{insert, at_index}
@@ -39,7 +45,9 @@ fn main() {
 
 And its output:
 
-```rust
+```console
+student@ubuntu:~/[[ROOT]]/test$ cargo run
 The groceries list now = ["yogurt", "panetone", "bread", "cheese", "nuts"]
 The second element of the grocery  list is "panetone"
+student@ubuntu:~/[[ROOT]]/test$
 ```

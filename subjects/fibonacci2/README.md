@@ -21,17 +21,25 @@ The Fibonacci Series starts like this: 0, 1, 1, 2, 3, 5, 8, 13... so fibonacci(2
 
 Here is a possible test for your function:
 
-```
-#[cfg(test)]
-mod tests {
-    use super::*;
+```rust
+use fibonacci2::fibonacci;
 
-    #[test]
-    fn it_works() {
-        assert_eq!(fibonacci(2), 1);
-        assert_eq!(fibonacci(4), 1);
-        assert_eq!(fibonacci(22), 17711);
-        assert_eq!(fibonacci(20), 6765);
-    }
+fn main() {
+    println!("The element in the position {} in fibonacci series is {}",2,  fibonacci(2));
+    println!("The element in the position {} in fibonacci series is {}",4, fibonacci(4));
+    println!("The element in the position {} in fibonacci series is {}",22, fibonacci(22));
+    println!("The element in the position {} in fibonacci series is {}", 20, fibonacci(20));
 }
 ```
+
+And its output:
+
+```console
+student@ubuntu:~/[[ROOT]]/test$ cargo run
+The element in the position 2 in fibonacci series is 1
+The element in the position 4 in fibonacci series is 3
+The element in the position 22 in fibonacci series is 17711
+The element in the position 20 in fibonacci series is 6765
+student@ubuntu:~/[[ROOT]]/test$
+```
+
