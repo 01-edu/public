@@ -1,0 +1,10 @@
+[package]
+name = "division_and_reminder_test"
+version = "0.1.0"
+authors = ["Augusto <aug.ornelas@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+division_and_remainder = { path = "../../../../rust-piscine-solutions/division_and_remainder" }
