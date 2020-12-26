@@ -51,5 +51,6 @@ And its output
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run
+("borrow", ["✔", "✔", "✘", "✔"], 75)
 student@ubuntu:~/[[ROOT]]/test$
 ```
