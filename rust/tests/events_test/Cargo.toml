@@ -1,0 +1,12 @@
+[package]
+name = "events_test"
+version = "0.1.0"
+authors = ["Augusto <aug.ornelas@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4"
+colored = "2"
+events = { path = "../../../../rust-piscine-solutions/events"}
