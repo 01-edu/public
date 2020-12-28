@@ -7,7 +7,7 @@ Define the function `delete_prefix(prefix, s)` that returns the string slice `s`
 ### Expected Function
 
 ```rust
-fn delete_prefix(prefix: &str, s: &str) -> Option<&str> {
+pub fn delete_prefix(prefix: &str, s: &str) -> Option<&str> {
 }
 ```
 
@@ -16,6 +16,8 @@ fn delete_prefix(prefix: &str, s: &str) -> Option<&str> {
 Here is a program to test your function.
 
 ```rust
+use delete_prefix::delete_prefix;
+
 fn main() {
 	println!("{:?}", delete_prefix("ab", "abcdefghijklmnop"));
 	println!("{:?}", delete_prefix("x", "abcdefghijklmnop"));
