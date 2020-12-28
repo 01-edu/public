@@ -51,5 +51,5 @@ And its output
 student@ubuntu:~/[[ROOT]]/test$ cargo run
 Some(3)
 Some(Vector([5, 1, -6]))
-tudent@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/[[ROOT]]/test$
 ```
