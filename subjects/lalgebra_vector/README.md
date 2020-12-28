@@ -10,6 +10,10 @@ The dot product between two vectors of different length it's not defined
 
 Note: `Vector` must implement Debug, Clone, Eq, PartialEq.
 
+#### Important
+
+Note that in the addition of vector of the example the `Rhs` is not `Self`
+
 ### Expected Functions and Structure
 
 ```rust
