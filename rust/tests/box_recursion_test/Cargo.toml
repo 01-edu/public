@@ -1,0 +1,10 @@
+[package]
+name = "box_recursion_test"
+version = "0.1.0"
+authors = ["lee <lee-dasilva@hotmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+box_recursion = { path = "../../../../rust-piscine-solutions/box_recursion"}

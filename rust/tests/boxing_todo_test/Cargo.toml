@@ -1,0 +1,12 @@
+[package]
+name = "boxing_todo_test"
+version = "0.1.0"
+authors = ["lee <lee-dasilva@hotmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+boxing_todo = { path = "../../../../rust-piscine-solutions/boxing_todo"}
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
