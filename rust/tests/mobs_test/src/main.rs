@@ -53,7 +53,7 @@ Here is a program to test your function:
 ```rust
 fn main() {
   let (mafia1, mafia2) = (
-    mob::Mob {
+    Mob {
       name: "Hairy Giants".to_string(),
       boss: boss::new("Louie HaHa", 36),
       cities: vec![("San Francisco".to_string(), 7)],
@@ -65,7 +65,7 @@ fn main() {
       ],
       wealth: 100000,
     },
-    mob::Mob {
+    Mob {
       name: "Red Thorns".to_string(),
       boss: boss::new("Big Tuna", 30),
       cities: vec![("San Jose".to_string(), 5)],
@@ -91,10 +91,37 @@ Mob { name: "Red Thorns", boss: Boss { name: "Big Tuna", age: 30 }, members: [Me
 $
 ```
 */
+use mobs::*;
 
-mod mob;
+fn main() {
+  let (mafia1, mafia2) = (
+    Mob {
+      name: "Hairy Giants".to_string(),
+      boss: boss::new("Louie HaHa", 36),
+      cities: vec![("San Francisco".to_string(), 7)],
+      members: vec![
+        member::new("Benny Eggs", member::Role::Soldier, 28),
+        member::new("Jhonny", member::Role::Associate, 17),
+        member::new("Greasy Thumb", member::Role::Soldier, 30),
+        member::new("No Finger", member::Role::Caporegime, 32),
+      ],
+      wealth: 100000,
+    },
+    Mob {
+      name: "Red Thorns".to_string(),
+      boss: boss::new("Big Tuna", 30),
+      cities: vec![("San Jose".to_string(), 5)],
+      members: vec![
+        member::new("Knuckles", member::Role::Soldier, 25),
+        member::new("Baldy Dom", member::Role::Caporegime, 36),
+        member::new("Crazy Joe", member::Role::Underboss, 23),
+      ],
+      wealth: 70000,
+    },
+  );
 
-use mob::{boss, member};
+  println!("{:?}\n{:?}", mafia1, mafia2);
+}
 
 #[cfg(test)]
 mod test {
@@ -127,9 +154,9 @@ mod test {
     );
   }
 
-  fn create_mobs() -> (mob::Mob, mob::Mob) {
+  fn create_mobs() -> (Mob, Mob) {
     (
-      mob::Mob {
+      Mob {
         name: "Hairy Giants".to_string(),
         boss: boss::new("Louie HaHa", 36),
         cities: vec![("San Francisco".to_string(), 7)],
@@ -141,7 +168,7 @@ mod test {
         ],
         wealth: 100000,
       },
-      mob::Mob {
+      Mob {
         name: "Red Thorns".to_string(),
         boss: boss::new("Big Tuna", 30),
         cities: vec![("San Jose".to_string(), 5)],
@@ -210,13 +237,13 @@ mod test {
     b.attack(&mut a);
     b.attack(&mut a);
 
-    assert_eq!(b.members.len(), 0);
-    assert_eq!(b.cities.len(), 0);
-    assert_eq!(b.wealth, 0);
+    assert_eq!(a.members.len(), 0);
+    assert_eq!(a.cities.len(), 0);
+    assert_eq!(a.wealth, 0);
 
-    assert_eq!(a.cities[0], ("San Francisco".to_string(), 7));
-    assert_eq!(a.cities[1], ("San Jose".to_string(), 5));
-    assert_eq!(a.wealth, 170000);
+    assert_eq!(b.cities[0], ("San Jose".to_string(), 5));
+    assert_eq!(b.cities[1], ("San Francisco".to_string(), 7));
+    assert_eq!(b.wealth, 170000);
   }
 
   #[test]

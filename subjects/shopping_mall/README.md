@@ -2,7 +2,7 @@
 
 ### Instructions
 
-You will have to create several functions to help run a shopping mall, with the help of the `mall` module provided:
+You will have to create several functions to help run a shopping mall, with the help of the [`mall`](https://github.com/01-edu/public/tree/master/subjects/shopping_mall/mall.rs) module provided:
 
 - `biggest_store`: receives a `mall::Mall` and returns the `Store` with the biggest `square_meters`;
 - `highest_paid_employees`: receives a `mall::Mall` and returns a vector containing the `Employee`(s) with the highest salaries;

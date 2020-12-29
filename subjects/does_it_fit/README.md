@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Using the `areas_volumes` module provided, create two functions:
+Using the [`areas_volumes`](https://github.com/01-edu/public/tree/master/subjects/does_it_fit/areas_volumes.rs) module provided, create two functions:
 
 - `area_fit` that receives 6 arguments:
   - `x` and `y`, size of the square in which it is going to be tried to fit the geometrical shapes (both usize)
@@ -11,18 +11,17 @@ Using the `areas_volumes` module provided, create two functions:
   - `a` and `b`, the dimensions that the plane(s) shape(s) passed will have (both usize)
     - `a` will refer to the side of the Square, the radius of the Circle, the side_a of the Rectangle or the base of the Triangle
     - `b` will refer to the side_b of the Rectangle or the height of the Triangle
-- `area_fit` should return if the geometrical shape(s) fit inside of the square.
+- `area_fit` should return true if the geometrical shape(s) fit inside of the square and false otherwise.
 
-  - `volume_fit` that receives 8 arguments:
+- `volume_fit` that receives 8 arguments:
   - `x`, `y` and `z`, size of the box in which it is going to be tried to fit the geometrical volumes (both usize)
   - `objects`, the type of geometrical volume(s) that it is going to be tried to be fitted in the box (areas_volumes::Geometrical_Volumes)
   - `times`, the number of geometrical volumes that are going to be tried to be fitted in the box (usize)
   - `a`, `b` and `c`, the dimensions that the geometrical volume(s) passed will have (all of them usize)
     - `a` will refer to the side of the Cube, the radius of the Sphere, the side_a of the Parallelepiped, the area of the base of the Triangular Pyramid or the base radius of the Cone
-    - `b` will refer to the side_b of the Parallelepiped, the height of the Triangular Pyramid or the height of the Cone
-    - `c` will refer to the side_c of the Parallelepiped
-
-- `volume_fit` should return if the geometrical volume(s) fit inside of the box.
+  - `b` will refer to the side_b of the Parallelepiped, the height of the Triangular Pyramid or the height of the Cone
+  - `c` will refer to the side_c of the Parallelepiped
+- `volume_fit` should return true if the geometrical volume(s) fit inside of the box and false otherwise.
 
 ### Expected Functions (and Structures)
 
