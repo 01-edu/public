@@ -5,7 +5,7 @@ name = "division_and_remainder"
 version = "0.1.0"
 
 [[package]]
-name = "division_and_reminder_test"
+name = "division_and_remainder_test"
 version = "0.1.0"
 dependencies = [
  "division_and_remainder",
