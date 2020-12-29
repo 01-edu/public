@@ -16,6 +16,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "macro_calculator_test"
+version = "0.1.0"
+dependencies = [
+ "macro_calculator",
+ "serde",
+ "serde_derive",
+ "serde_json",
+]
+
+[[package]]
 name = "proc-macro2"
 version = "1.0.24"
 source = "registry+https://github.com/rust-lang/crates.io-index"
