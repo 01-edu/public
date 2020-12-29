@@ -85,6 +85,9 @@ true
 $
 ```
 */
+mod areas_volumes;
+
+use areas_volumes::*;
 
 fn main() {
     println!(
