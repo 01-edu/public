@@ -13,14 +13,6 @@ you want to `swap(c.a, c.g)` you will get -> Color { r: 255, g: 30, b: 10, a: 20
 */
 use rgb_match::*;
 
-#[derive(Debug, Clone, Copy, PartialEq)]
-struct Color {
-    r: u8,
-    g: u8,
-    b: u8,
-    a: u8,
-}
-
 fn main() {
     let c = Color {
         r: 255,

@@ -17,11 +17,6 @@
 */
 use highest::*;
 
-#[derive(Debug)]
-struct Numbers<'a> {
-    numbers: &'a [u32],
-}
-
 fn main() {
     let expected = [30, 500, 20, 70];
     let n = Numbers::new(&expected);
@@ -48,7 +43,7 @@ mod tests {
         let n = Numbers::new(&[100, 0, 90, 30]);
         let f = Numbers::new(&[]);
         assert_eq!(n.Latest(), Some(30));
-        assert!(f.Latest().is_none(), "It should have been None, {}", f.Latest());
+        assert!(f.Latest().is_none(), "It should have been None, {:?}", f.Latest());
     }
 
     #[test]
@@ -56,7 +51,7 @@ mod tests {
         let n = Numbers::new(&[40, 100, 70]);
         let f = Numbers::new(&[]);
         assert_eq!(n.Highest(), Some(100));
-        assert!(f.Highest().is_none(), "It should have been None, {}", f.Highest());
+        assert!(f.Highest().is_none(), "It should have been None, {:?}", f.Highest());
     }
 
     #[test]

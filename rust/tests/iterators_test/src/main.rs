@@ -1,5 +1,5 @@
 /*
-## even_iterator
+## iterators
 
 ### Instructions
 
@@ -26,17 +26,11 @@ fn main() {
     println!("{:?}", a.next());     // Some((6, 5, 120))
     println!("{:?}", a.next());     // Some((8, 7, 720))
     println!("{:?}", a.next());     // Some((10, 9, 5040))
-    println!()
+    println!();
     let mut a = Number::new(18); 
     println!("{:?}", a.next());     // Some((18, 19, 6402373705728000))
     println!("{:?}", a.next());     // Some((20, 21, 121645100408832000))
     println!("{:?}", a.next());     // Some((22, 23, 2432902008176640000))
-}
-
-struct Number {
-    even: usize,
-    odd: usize,
-    fact: usize,
 }
 
 #[cfg(test)]

@@ -31,8 +31,6 @@ fn main() {
     let value = twice(neg);
     println!("{}", value(7));
 }
-fn twice (fun: impl Fn() -> ) -> Fn() ->  {
-}
 
 #[cfg(test)]
 mod tests {

@@ -3,7 +3,7 @@
 
 ### Instructions
 
-Complete the function "make_diamond" that takes a letter as input, and outputs it in a diamond shape.
+Complete the function "get_diamond" that takes a letter as input, and outputs it in a diamond shape.
 
 Rules:
 
@@ -53,8 +53,8 @@ E·······E
 */
 use diamond_creation::*;
 fn main() {
-    println!("{:?}", make_diamond('A'));
-    println!("{:?}", make_diamond('C'));
+    println!("{:?}", get_diamond('A'));
+    println!("{:?}", get_diamond('C'));
 }
 
 #[cfg(test)]
@@ -63,18 +63,18 @@ mod test {
 
     #[test]
     fn test_a() {
-        assert_eq!(make_diamond('A'), vec!["A"]);
+        assert_eq!(get_diamond('A'), vec!["A"]);
     }
 
     #[test]
     fn test_b() {
-        assert_eq!(make_diamond('B'), vec![" A ", "B B", " A "]);
+        assert_eq!(get_diamond('B'), vec![" A ", "B B", " A "]);
     }
 
     #[test]
     fn test_c() {
         assert_eq!(
-            make_diamond('C'),
+            get_diamond('C'),
             vec!["  A  ", " B B ", "C   C", " B B ", "  A  "]
         );
     }
@@ -82,7 +82,7 @@ mod test {
     #[test]
     fn test_d() {
         assert_eq!(
-            make_diamond('D'),
+            get_diamond('D'),
             vec!["   A   ", "  B B  ", " C   C ", "D     D", " C   C ", "  B B  ", "   A   ",]
         );
     }
@@ -90,7 +90,7 @@ mod test {
     #[test]
     fn test_z() {
         assert_eq!(
-            make_diamond('Z'),
+            get_diamond('Z'),
             vec![
                 "                         A                         ",
                 "                        B B                        ",
