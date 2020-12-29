@@ -8,7 +8,7 @@ parameter and returns a string of stars (asterisks) 2^n long (2 to the nth power
 ### Expected functions
 
 ```rust
-fn stars(n: u32) -> String {}
+pub fn stars(n: u32) -> String {}
 ```
 
 ### Usage
@@ -16,6 +16,8 @@ fn stars(n: u32) -> String {}
 Here is a program to test your function.
 
 ```rust
+use stars::stars;
+
 fn main() {
     println!("{}", stars(1));
     println!("{}", stars(4));

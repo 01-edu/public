@@ -11,7 +11,8 @@ A ROT13 on the Latin alphabet would be as follows:
 - Cipher: nopqrstuvwxyzabcdefghijklm
 
 Your purpose in this exercise is to create a similar `rot` function that is a better version of the ROT13 cipher.
-Your function will receive a string and a number and it will rotate each letter of that string, the number of times, settled by the second argument, to the right or to the left if the number are negative.
+
+Your function will receive a string and a number and it will rotate each letter of that string the number of times settled by the second argument to the right, or to the left if the number are negative.
 
 Your function should only change letters. If the string includes punctuation and numbers
 they will remain the same.
@@ -23,7 +24,7 @@ they will remain the same.
 ### Expected functions
 
 ```rust
-
+pub fn rot(input: &str, key: i8) -> String {}
 ```
 
 ### Usage
@@ -31,6 +32,8 @@ they will remain the same.
 Here is a program to test your function.
 
 ```rust
+use rot::rot;
+
 fn main() {
 
     println!("The letter \"a\" becomes: {}", rot("a", 26));

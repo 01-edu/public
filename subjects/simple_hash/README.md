@@ -23,6 +23,7 @@ pub fn remove(h: &mut HashMap<&str, i32>, s: &str) {}
 Here is a program to test your function.
 
 ```rust
+use simple_hash::simple_hash;
 use std::collections::HashMap;
 
 fn main() {

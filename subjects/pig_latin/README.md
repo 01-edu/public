@@ -25,6 +25,8 @@ pub fn pig_latin(text: &str) -> String {}
 Here is a program to test your function.
 
 ```rust
+use pig_latin::pig_latin;
+
 fn main() {
     println!("{}", pig_latin(&String::from("igloo")));
     println!("{}", pig_latin(&String::from("apple")));

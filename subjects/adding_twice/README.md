@@ -16,7 +16,7 @@ So, the purpose of this function is to add two times the value in `add_curry` to
 The type of the arguments are missing use the example `main` function to determine the correct type.
 
 ```rust
-fn twice<T>(F: _) -> _{}
+pub fn twice<T>(F: _) -> _{}
 ```
 
 ### Usage
@@ -24,6 +24,8 @@ fn twice<T>(F: _) -> _{}
 Here is a program to test your function.
 
 ```rust
+use adding_twice::adding_twice;
+
 fn main() {
     let add10 = add_curry(10);
     let value = twice(add10);

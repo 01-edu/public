@@ -22,7 +22,7 @@ Rules:
 ### Expected functions
 
 ```rust
-fn get_diamond(c: char) -> Vec<String> {}
+pub fn get_diamond(c: char) -> Vec<String> {}
 ```
 
 ### Usage
@@ -30,6 +30,8 @@ fn get_diamond(c: char) -> Vec<String> {}
 Here is a program to test your function.
 
 ```rust
+use diamond_creation::diamond_creation;
+
 fn main() {
     println!("{:?}", make_diamond('A'));
     println!("{:?}", make_diamond('C'));

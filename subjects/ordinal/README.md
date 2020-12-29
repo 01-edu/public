@@ -7,7 +7,7 @@ Complete the function "num_to_ordinal" that receives a cardinal number and retur
 ### Expected functions
 
 ```rust
-fn num_to_ordinal(x: u32) -> String {}
+pub fn num_to_ordinal(x: u32) -> String {}
 ```
 
 ### Usage
@@ -15,6 +15,8 @@ fn num_to_ordinal(x: u32) -> String {}
 Here is a program to test your function.
 
 ```rust
+use ordinal::ordinal;
+
 fn main() {
     println!("{}", num_to_ordinal(1));
     println!("{}", num_to_ordinal(22));

@@ -13,7 +13,7 @@ except the current one.
 ### Expected functions
 
 ```rust
-fn get_products(arr: Vec<usize>) -> Vec<usize> {}
+pub fn get_products(arr: Vec<usize>) -> Vec<usize> {}
 ```
 
 ### Usage
@@ -21,6 +21,8 @@ fn get_products(arr: Vec<usize>) -> Vec<usize> {}
 Here is a program to test your function.
 
 ```rust
+use get_products::get_products;
+
 fn main() {
     let arr: Vec<usize> = vec![1, 7, 3, 4];
     let output = get_products(arr);

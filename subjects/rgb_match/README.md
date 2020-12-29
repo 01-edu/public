@@ -13,7 +13,7 @@ This function must allow you to swap the values of the struct.
 
 ```rust
 impl Color {
-    fn swap(mut self, first: u8, second: u8) -> Color {}
+    pub fn swap(mut self, first: u8, second: u8) -> Color {}
     }
 ```
 
@@ -22,6 +22,8 @@ impl Color {
 Here is a program to test your function.
 
 ```rust
+use rgb_match::rgb_match;
+
 struct Color {
     r: u8,
     g: u8,

@@ -1,5 +1,5 @@
 [package]
-name = "spelling"
+name = "spelling_test"
 version = "0.1.0"
 authors = ["MSilva95 <miguel-silva98@hotmail.com>"]
 edition = "2018"
@@ -8,3 +8,4 @@ edition = "2018"
 
 [dependencies]
 rand = "0.7"
+spelling = { path = "../../../../rust-piscine-solutions/spelling"} 

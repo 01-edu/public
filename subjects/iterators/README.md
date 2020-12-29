@@ -21,11 +21,11 @@ So the purpose is to return the given number in the right position, if it is eve
 
 ```rust
 impl Number {
-fn new(nbr: usize) -> Number {}
+    pub fn new(nbr: usize) -> Number {}
 }
 
 impl Iterator for Number {
-    fn next(&mut self) -> Option<Self::Item> {}
+    pub fn next(&mut self) -> Option<Self::Item> {}
 }
 ```
 
@@ -34,6 +34,8 @@ impl Iterator for Number {
 Here is a program to test your function.
 
 ```rust
+use iterators::iterators;
+
 struct Number {
     even: usize,
     odd: usize,

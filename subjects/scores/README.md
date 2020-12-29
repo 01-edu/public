@@ -27,7 +27,7 @@ You'll need these:
 ### Expected functions
 
 ```rust
-fn score(word: &str) -> u64 {}
+pub fn score(word: &str) -> u64 {}
 ```
 
 ### Usage
@@ -35,6 +35,8 @@ fn score(word: &str) -> u64 {}
 Here is a program to test your function.
 
 ```rust
+use scores::scores;
+
 fn main() {
     println!("{}", score("a"));
     println!("{}", score("ã ê Á?"));

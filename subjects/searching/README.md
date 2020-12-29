@@ -13,7 +13,7 @@ of the given key in the array.
 ### Expected functions
 
 ```rust
-fn search(array: &[i32], key: i32) -> Option<usize> {}
+pub fn search(array: &[i32], key: i32) -> Option<usize> {}
 ```
 
 ### Usage
@@ -21,6 +21,8 @@ fn search(array: &[i32], key: i32) -> Option<usize> {}
 Here is a program to test your function.
 
 ```rust
+use searching::searching;
+
 fn main() {
     let ar = [1, 3, 4, 6, 8, 9, 11];
     let f = search(&ar, 6);

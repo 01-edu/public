@@ -29,6 +29,8 @@ pub fn number_logic(num: u32) -> bool {}
 Here is a program to test your function.
 
 ```rust
+use logic_number::logic_number;
+
 fn main() {
     let array = [9, 10, 153, 154];
     for pat in &array {

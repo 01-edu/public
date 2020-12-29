@@ -17,7 +17,7 @@ Example:
 ### Expected functions
 
 ```rust
-fn is_pangram(s: &str) -> bool {}
+pub fn is_pangram(s: &str) -> bool {}
 ```
 
 ### Usage
@@ -25,6 +25,8 @@ fn is_pangram(s: &str) -> bool {}
 Here is a program to test your function.
 
 ```rust
+use pangram::pangram;
+
 fn main() {
     println!(
         "{}",

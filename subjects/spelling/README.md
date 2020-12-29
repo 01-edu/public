@@ -31,6 +31,8 @@ pub fn spell(n: u64) -> String {}
 Here is a program to test your function.
 
 ```rust
+use spelling::spelling;
+
 fn main() {
     println!("{}", spell(348));
     println!("{}", spell(9996));

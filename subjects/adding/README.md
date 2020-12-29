@@ -10,6 +10,8 @@ The purpose is to curry the add method to create more variations.
 Here is a program to test your function.
 
 ```rust
+use adding::adding;
+
 fn main() {
     let add10 = add_curry(-10);
     let add20 = add_curry(2066);

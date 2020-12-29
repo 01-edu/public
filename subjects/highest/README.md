@@ -18,13 +18,13 @@ Your task is to write these methods:
 ### Expected functions
 
 ```rust
-fn List(&self) -> &[u32] {}
+pub fn List(&self) -> &[u32] {}
 
-fn Latest(&self) -> Option<u32> {}
+pub fn Latest(&self) -> Option<u32> {}
 
-fn Highest(&self) -> Option<u32> {}
+pub fn Highest(&self) -> Option<u32> {}
 
-fn Highest_Three(&self) -> Vec<u32> {}
+pub fn Highest_Three(&self) -> Vec<u32> {}
 ```
 
 ### Usage
@@ -32,6 +32,8 @@ fn Highest_Three(&self) -> Vec<u32> {}
 Here is a program to test your function.
 
 ```rust
+use highest::highest;
+
 #[derive(Debug)]
 struct Numbers<'a> {
     numbers: &'a [u32],

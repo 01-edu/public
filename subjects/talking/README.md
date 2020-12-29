@@ -20,7 +20,7 @@ His answers will be created by you following the rules below.
 ### Expected functions
 
 ```rust
-fn talking(text: &str) -> &str {}
+pub fn talking(text: &str) -> &str {}
 ```
 
 ### Usage
@@ -28,6 +28,8 @@ fn talking(text: &str) -> &str {}
 Here is a program to test your function.
 
 ```rust
+use talking::talking;
+
 fn main() {
     println!("{:?}", talking("JUST DO IT!"));
     println!("{:?}", talking("Hello how are you?"));
