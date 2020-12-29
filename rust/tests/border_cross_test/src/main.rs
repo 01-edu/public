@@ -8,7 +8,7 @@
 // create a function that receives a vector of structures that
 // implement the Vehicle trait
 
-use vehicles::{all_models, Car, Truck, Vehicle};
+use border_cross::{all_models, Car, Truck, Vehicle};
 
 #[allow(dead_code)]
 fn main() {
