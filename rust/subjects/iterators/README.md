@@ -1,0 +1,68 @@
+## iterators
+
+### Instructions
+
+Create a method `new` that takes one number `usize` and initializes the `Number` struct.
+
+This method will have to determinate if the given number is even or odd, if it is even you will have to increment one to the odd number and
+if it is odd you have to increment one to the even number.
+
+After that you will implement an iterator for the struct `Number` that returns a tuple (usize,usize,usize) containing each field of the struct Number.
+
+The first position of the tuple will be the even number, the second will be the odd number, and the third will be the factorial number.
+
+So the purpose is to return the given number in the right position, if it is even it will be at the first position, and if it is odd it will be in the second position. Apart from that you have to return the factorial of the given number in the third position.
+
+### Notions
+
+- https://doc.rust-lang.org/std/iter/trait.Iterator.html
+
+### Expected functions
+
+```rust
+impl Number {
+fn new(nbr: usize) -> Number {}
+}
+
+impl Iterator for Number {
+    fn next(&mut self) -> Option<Self::Item> {}
+}
+```
+
+### Usage
+
+Here is a program to test your function.
+
+```rust
+struct Number {
+    even: usize,
+    odd: usize,
+    fact: usize,
+}
+
+fn main() {
+    let mut a = Number::new(5);
+    println!("{:?}", a.next());
+    println!("{:?}", a.next());
+    println!("{:?}", a.next());
+    println!();
+    let mut b = Number::new(18);
+    println!("{:?}", b.next());
+    println!("{:?}", b.next());
+    println!("{:?}", b.next());
+}
+```
+
+And its output
+
+```console
+student@ubuntu:~/[[ROOT]]/test$ cargo run
+Some((6, 5, 120))
+Some((8, 7, 720))
+Some((10, 9, 5040))
+
+Some((18, 19, 6402373705728000))
+Some((20, 21, 121645100408832000))
+Some((22, 23, 2432902008176640000))
+student@ubuntu:~/[[ROOT]]/test$
+```

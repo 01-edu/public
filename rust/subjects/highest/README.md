@@ -1,0 +1,59 @@
+## Highest
+
+### Instructions
+
+In this exercise you will be given a `Numbers` struct.
+
+Your task is to write these methods:
+
+- `List` that returns an `array` with every number in the struct
+- `Latest` that returns an `Option<u32>` with the last added number
+- `Highest` that return an `Option<u32>` with the highest number from the list,
+- `Highest_Three` that returns a `Vec<u32>` with the three highest numbers.
+
+### Notions
+
+- https://doc.rust-lang.org/std/iter/trait.Iterator.html
+
+### Expected functions
+
+```rust
+fn List(&self) -> &[u32] {}
+
+fn Latest(&self) -> Option<u32> {}
+
+fn Highest(&self) -> Option<u32> {}
+
+fn Highest_Three(&self) -> Vec<u32> {}
+```
+
+### Usage
+
+Here is a program to test your function.
+
+```rust
+#[derive(Debug)]
+struct Numbers<'a> {
+    numbers: &'a [u32],
+}
+
+fn main() {
+    let expected = [30, 500, 20, 70];
+    let n = Numbers::new(&expected);
+    println!("{:?}", n.List());
+    println!("{:?}", n.Highest());
+    println!("{:?}", n.Latest());
+    println!("{:?}", n.Highest_Three());
+}
+```
+
+And its output
+
+```console
+student@ubuntu:~/[[ROOT]]/test$ cargo run
+[30, 500, 20, 70]
+Some(500)
+Some(70)
+[500, 70, 30]
+student@ubuntu:~/[[ROOT]]/test$
+```
