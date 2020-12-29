@@ -3,3 +3,10 @@
 [[package]]
 name = "pig_latin"
 version = "0.1.0"
+
+[[package]]
+name = "pig_latin_test"
+version = "0.1.0"
+dependencies = [
+ "pig_latin",
+]

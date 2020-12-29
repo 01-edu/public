@@ -15,6 +15,7 @@
 - https://doc.rust-lang.org/book/ch13-02-iterators.html
 
 */
+use highest::*;
 
 #[derive(Debug)]
 struct Numbers<'a> {

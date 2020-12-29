@@ -7,6 +7,7 @@ Create the function `add_curry` that returns a closure.
 The purpose is to curry the add method to create more variations.
 
 */
+use adding::*;
 fn main() {
     let add10 = add_curry(-10);
     let add20 = add_curry(2066);

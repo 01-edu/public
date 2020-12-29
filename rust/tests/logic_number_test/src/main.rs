@@ -16,7 +16,7 @@ and false otherwise.
     153 returns true, because: 153 = 1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153
     154 returns false, because: 154 != 1^3 + 5^3 + 4^3 = 1 + 125 + 64 = 190
 */
-
+use logic_number::*;
 fn main() {
     let array = [9, 10, 153, 154];
     for pat in &array {

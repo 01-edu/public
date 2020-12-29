@@ -17,7 +17,7 @@ The rules used by Pig Latin are the following:
 - https://doc.rust-lang.org/book/ch18-00-patterns.html
 
 */
-
+use pig_latin::*;
 fn main() {
     println!("{}", pig_latin(&String::from("igloo")));
     println!("{}", pig_latin(&String::from("apple")));

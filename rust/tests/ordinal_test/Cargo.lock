@@ -3,3 +3,10 @@
 [[package]]
 name = "ordinal"
 version = "0.1.0"
+
+[[package]]
+name = "ordinal_test"
+version = "0.1.0"
+dependencies = [
+ "ordinal",
+]

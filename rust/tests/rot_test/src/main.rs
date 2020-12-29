@@ -31,6 +31,7 @@ they will remain the same.
 
 Here is a program to test your function.
 */
+use rot::*;
 
 fn main() {
 

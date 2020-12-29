@@ -3,3 +3,10 @@
 [[package]]
 name = "talking"
 version = "0.1.0"
+
+[[package]]
+name = "talking_test"
+version = "0.1.0"
+dependencies = [
+ "talking",
+]

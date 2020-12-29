@@ -11,6 +11,7 @@ This function must allow you to swap the values of the struct.
 If the struct has this values -> Color { r: 255,g: 200,b: 10,a: 30,} and
 you want to `swap(c.a, c.g)` you will get -> Color { r: 255, g: 30, b: 10, a: 200 }
 */
+use rgb_match::*;
 
 #[derive(Debug, Clone, Copy, PartialEq)]
 struct Color {

@@ -25,6 +25,7 @@ So if yo pass the word "Hello" you will have the score 8 returned.
 Any type of special character or punctuation marks has a value of 0 so if you have
 "Á~,!" it will return 0.
 */
+use scores::*;
 
 fn main() {
     println!("{}", score("a"));

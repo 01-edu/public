@@ -6,6 +6,7 @@
 Complete the function "num_to_ordinal" that receives a cardinal number and returns its ordinal number.
 
 */
+use ordinal::*;
 
 fn main() {
     println!("{}", num_to_ordinal(1));

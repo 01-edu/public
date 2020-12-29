@@ -13,7 +13,7 @@ Input: arr[]  = {10, 3, 5, 6, 2}
 Output: prod[]  = {180, 600, 360, 300, 900}
 
 */
-
+use get_products::*;
 fn main() {
     let arr: Vec<usize> = vec![1, 7, 3, 4];
     let output = get_products(arr);

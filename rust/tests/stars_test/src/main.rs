@@ -15,6 +15,7 @@ stars(3)     "********"              2^3 = 8
 stars(4)     "****************"      2^4 = 16
 
 */
+use stars::*;
 
 fn main() {
     println!("{}", stars(4));

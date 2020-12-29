@@ -17,6 +17,8 @@ So, if the program generates the number:
 - 1002 your function will return the string "one thousand two".
 - 1000000 your function will return the string "one million"
 */
+use spelling::*;
+use rand::Rng;
 
 fn main() {
     let mut rng = rand::thread_rng();

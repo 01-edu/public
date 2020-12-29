@@ -4,3 +4,10 @@
 name = "adding_twice"
 version = "0.1.0"
 
+[[package]]
+name = "adding_twice_test"
+version = "0.1.0"
+dependencies = [
+ "adding_twice 0.1.0",
+]
+

@@ -3,3 +3,10 @@
 [[package]]
 name = "stars"
 version = "0.1.0"
+
+[[package]]
+name = "stars_test"
+version = "0.1.0"
+dependencies = [
+ "stars",
+]

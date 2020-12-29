@@ -9,6 +9,7 @@ of the given key in the array.
 
 ```
 */
+use searching::*;
 
 fn main() {
     let array = [1, 3, 4, 6, 8, 9, 11];

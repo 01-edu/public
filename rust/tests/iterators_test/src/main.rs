@@ -19,6 +19,7 @@ and the third will be the factorial numbers.
 - https://doc.rust-lang.org/std/iter/trait.Iterator.html
 
 */
+use iterators::*;
 
 fn main() {
     let mut a = Number::new(5);

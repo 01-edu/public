@@ -1,4 +1,5 @@
 // Complete this function to return the factorial of a given number
+use find_factorial::*;
 
 pub fn factorial(num: u64) -> u64 {
     match num {

@@ -3,3 +3,10 @@
 [[package]]
 name = "diamond_creation"
 version = "0.1.0"
+
+[[package]]
+name = "diamond_creation_test"
+version = "0.1.0"
+dependencies = [
+ "diamond_creation",
+]

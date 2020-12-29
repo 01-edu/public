@@ -11,7 +11,7 @@ Example:
 "The quick brown fox jumps over the lazy dog."
 
 */
-
+use pangram::*;
 use std::collections::HashSet;
 
 fn main() {

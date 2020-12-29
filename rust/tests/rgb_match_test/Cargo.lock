@@ -3,3 +3,10 @@
 [[package]]
 name = "rgb_match"
 version = "0.1.0"
+
+[[package]]
+name = "rgb_match_test"
+version = "0.1.0"
+dependencies = [
+ "rgb_match",
+]

@@ -13,7 +13,7 @@ to the original value.
 
 - https://doc.rust-lang.org/rust-by-example/fn/hof.html#higher-order-functions
 */
-
+use adding_twice::*;
 fn main() {
     let add10 = add_curry(10);
     let value = twice(add10);

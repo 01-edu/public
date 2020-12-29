@@ -51,7 +51,7 @@ E·······E
 ····A····
 
 */
-
+use diamond_creation::*;
 fn main() {
     println!("{:?}", make_diamond('A'));
     println!("{:?}", make_diamond('C'));

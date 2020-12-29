@@ -14,7 +14,7 @@ He says "Just say something!" if you address him without actually saying anythin
 He answers "Interesting" to anything else.
 
 */
-
+use talking::*;
 fn main() {
     println!("{:?}", talking("JUST DO IT!"));
     println!("{:?}", talking("Hello how are you?"));
