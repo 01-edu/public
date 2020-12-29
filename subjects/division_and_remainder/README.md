@@ -7,7 +7,7 @@ Create a function divide that receives two i32 and returns a tuple in which the 
 ### Expected Function
 
 ```rust
-fn divide(x: i32, y: i32) -> (i32, i32) {
+pub fn divide(x: i32, y: i32) -> (i32, i32) {
 
 }
 ```
@@ -17,12 +17,14 @@ fn divide(x: i32, y: i32) -> (i32, i32) {
 Here is a program to test you're function
 
 ```rust
+use division_and_remainder::division_and_remainder;
+
 fn main() {
 	let x = 9;
 	let y = 4;
 	let (division, remainder) = divide(x, y);
 	println!(
-		"\t{}/{}: division = {}, remainder = {}",
+		"{}/{}: division = {}, remainder = {}",
 		x, y, division, remainder
 	);
 }

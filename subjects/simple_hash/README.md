@@ -2,18 +2,20 @@
 
 ### Instructions
 
-- Create the function `contain` that checks a `HashMap` to see if it contains the given key.
+Create the function `contain` that checks a `HashMap` to see if it contains the given key.
 
-- Create the function `remove` that removes a given key from the `HashMap`.
+Create the function `remove` that removes a given key from the `HashMap`.
 
-### Expected Functions
+### Notions
+
+- https://doc.rust-lang.org/rust-by-example/std/hash.html
+
+### Expected functions
 
 ```rust
-fn contain(h: HashMap<&str, i32>, s: &str) -> bool {
-}
+pub fn contain(h: &HashMap<&str, i32>, s: &str) -> bool {}
 
-fn remove(mut h: HashMap<&str, i32>, s: &str) {
-}
+pub fn remove(h: &mut HashMap<&str, i32>, s: &str) {}
 ```
 
 ### Usage
@@ -32,13 +34,17 @@ fn main() {
 
     println!(
         "Does the HashMap contains the name Roman? => {}",
-        contain(hash.clone(), "Roman")
+        contain(&hash, "Roman")
     );
     println!(
         "Does the HashMap contains the name Katie? => {}",
-        contain(hash.clone(), "Katie")
+        contain(&hash, "Katie")
     );
-    println!("Removing Robert {:?}", remove(hash.clone(), "Robert"));
+    println!("Removing Robert {:?}", remove(&mut hash, "Robert"));
+    println!(
+        "Does the HashMap contains the name Robert? => {}",
+        contain(&hash, "Robert")
+    );
     println!("Hash {:?}", hash);
 }
 ```
@@ -50,6 +56,7 @@ student@ubuntu:~/[[ROOT]]/test$ cargo run
 Does the HashMap contains the name Roman? => false
 Does the HashMap contains the name Katie? => true
 Removing Robert ()
-Hash {"Daniel": 122, "Ashley": 333, "Robert": 14, "Katie": 334}
+Does the HashMap contains the name Robert? => false
+Hash {"Katie": 334, "Daniel": 122, "Ashley": 333}
 student@ubuntu:~/[[ROOT]]/test$
 ```
