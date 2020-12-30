@@ -7,7 +7,7 @@ Create the function `bigger` that gets the biggest positive number in the `HashM
 ### Expected Function
 
 ```rust
-fn bigger(h: HashMap<&str, i32>) -> i32 {
+pub fn bigger(h: HashMap<&str, i32>) -> i32 {
 }
 ```
 
@@ -33,6 +33,6 @@ And its output
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run
-Is `thought` a permutation of `thougth`? = true
+The biggest of the elements in the HashMap is 334
 student@ubuntu:~/[[ROOT]]/test$
 ```

@@ -1,4 +1,5 @@
 // Write a function `rev_str` that takes a `&str` as a parameter, and returns a string with its words reversed.
+use reverse_string::rev_str;
 
 #[allow(dead_code)]
 fn main() {
@@ -9,7 +10,6 @@ fn main() {
 	println!("{}", rev_str("ex: this is an example água"));
 }
 
-use reverse_string::rev_str;
 
 #[allow(dead_code)]
 fn test_reverse(input: &str, expected: &str) {
