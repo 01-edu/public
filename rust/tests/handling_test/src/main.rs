@@ -1,19 +1,20 @@
-use std::fs::{File, OpenOptions};
+//
 use std::io::prelude::*;
-use std::io::{ErrorKind, Write};
+//
 use handling::*;
+use std::fs::File;
 
 fn main() {
-    let path = "a.txt";
-    File::create(path).unwrap();
-    open_or_create(path, "content to be written");
+	let path = "a.txt";
+	File::create(path).unwrap();
+	open_or_create(path, "content to be written");
 
-    let mut file = File::open(path).unwrap();
+	let mut file = File::open(path).unwrap();
 
-    let mut s = String::new();
-    file.read_to_string(&mut s).unwrap();
-    println!("{}", s);
-    // output: content to be written
+	let mut s = String::new();
+	file.read_to_string(&mut s).unwrap();
+	println!("{}", s);
+	// output: content to be written
 }
 
 #[cfg(test)]
@@ -21,7 +22,6 @@ mod tests {
 	use super::*;
 	use std::fs;
 	use std::panic;
-
 	fn get_file_content(filename: &str) -> String {
 		let mut file = File::open(filename).unwrap();
 		let mut s = String::new();

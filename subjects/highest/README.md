@@ -1,4 +1,4 @@
-## Highest
+## highest
 
 ### Instructions
 
@@ -6,10 +6,10 @@ In this exercise you will be given a `Numbers` struct.
 
 Your task is to write these methods:
 
-- `List` that returns an `array` with every number in the struct
-- `Latest` that returns an `Option<u32>` with the last added number
-- `Highest` that return an `Option<u32>` with the highest number from the list,
-- `Highest_Three` that returns a `Vec<u32>` with the three highest numbers.
+- `list` that returns an `array` with every number in the struct
+- `latest` that returns an `Option<u32>` with the last added number
+- `highest` that return an `Option<u32>` with the highest number from the list,
+- `highest_three` that returns a `Vec<u32>` with the three highest numbers.
 
 ### Notions
 
@@ -18,13 +18,13 @@ Your task is to write these methods:
 ### Expected functions
 
 ```rust
-pub fn List(&self) -> &[u32] {}
+pub fn list(&self) -> &[u32] {}
 
-pub fn Latest(&self) -> Option<u32> {}
+pub fn latest(&self) -> Option<u32> {}
 
-pub fn Highest(&self) -> Option<u32> {}
+pub fn highest(&self) -> Option<u32> {}
 
-pub fn Highest_Three(&self) -> Vec<u32> {}
+pub fn highest_three(&self) -> Vec<u32> {}
 ```
 
 ### Usage
@@ -42,10 +42,10 @@ struct Numbers<'a> {
 fn main() {
     let expected = [30, 500, 20, 70];
     let n = Numbers::new(&expected);
-    println!("{:?}", n.List());
-    println!("{:?}", n.Highest());
-    println!("{:?}", n.Latest());
-    println!("{:?}", n.Highest_Three());
+    println!("{:?}", n.list());
+    println!("{:?}", n.highest());
+    println!("{:?}", n.latest());
+    println!("{:?}", n.highest_three());
 }
 ```
 

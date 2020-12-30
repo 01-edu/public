@@ -44,7 +44,7 @@ fn zero_property() {
 }
 
 #[test]
-fn identy_matrix() {
+fn identity_matrix() {
 	let matrix: Matrix<u32> = Matrix::identity(2);
 	let expected: Matrix<u32> = Matrix(vec![vec![1, 0], vec![0, 1]]);
 	assert_eq!(matrix, expected);
