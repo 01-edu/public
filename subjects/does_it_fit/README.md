@@ -6,7 +6,7 @@ Using the [`areas_volumes`](https://github.com/01-edu/public/tree/master/subject
 
 - `area_fit` that receives 6 arguments:
   - `x` and `y`, size of the square in which it is going to be tried to fit the geometrical shapes (both usize)
-  - `objects`, the type of geometrical shape(s) that it is going to be tried to be fitted in the square (areas_volumes::Geometrical_Shapes)
+  - `objects`, the type of geometrical shape(s) that it is going to be tried to be fitted in the square (areas_volumes::GeometricalShapes)
   - `times`, the number of geometrical shapes that are going to be tried to be fitted in the square (usize)
   - `a` and `b`, the dimensions that the plane(s) shape(s) passed will have (both usize)
     - `a` will refer to the side of the Square, the radius of the Circle, the side_a of the Rectangle or the base of the Triangle
@@ -15,7 +15,7 @@ Using the [`areas_volumes`](https://github.com/01-edu/public/tree/master/subject
 
 - `volume_fit` that receives 8 arguments:
   - `x`, `y` and `z`, size of the box in which it is going to be tried to fit the geometrical volumes (both usize)
-  - `objects`, the type of geometrical volume(s) that it is going to be tried to be fitted in the box (areas_volumes::Geometrical_Volumes)
+  - `objects`, the type of geometrical volume(s) that it is going to be tried to be fitted in the box (areas_volumes::GeometricalVolumes)
   - `times`, the number of geometrical volumes that are going to be tried to be fitted in the box (usize)
   - `a`, `b` and `c`, the dimensions that the geometrical volume(s) passed will have (all of them usize)
     - `a` will refer to the side of the Cube, the radius of the Sphere, the side_a of the Parallelepiped, the area of the base of the Triangular Pyramid or the base radius of the Cone
@@ -29,7 +29,7 @@ Using the [`areas_volumes`](https://github.com/01-edu/public/tree/master/subject
 pub fn area_fit(
     x: usize,
     y: usize,
-    objects: areas_volumes::Geometrical_Shapes,
+    objects: areas_volumes::GeometricalShapes,
     times: usize,
     a: usize,
     b: usize,
@@ -39,7 +39,7 @@ pub fn volume_fit(
     x: usize,
     y: usize,
     z: usize,
-    objects: areas_volumes::Geometrical_Volumes,
+    objects: areas_volumes::GeometricalVolumes,
     times: usize,
     a: usize,
     b: usize,
@@ -55,19 +55,19 @@ Here is a program to test your function:
 fn main() {
     println!(
         "Does 100 rectangles (2x1) fit in a 2 by 4 square? {}",
-        area_fit(2, 4, Geometrical_Shapes::Rectangle, 100, 2, 1)
+        area_fit(2, 4, GeometricalShapes::Rectangle, 100, 2, 1)
     );
     println!(
         "Does 3 triangles (5 base and 3 height) fit in a 5 by 5 square? {}",
-        area_fit(5, 5, Geometrical_Shapes::Triangle, 3, 5, 3)
+        area_fit(5, 5, GeometricalShapes::Triangle, 3, 5, 3)
     );
     println!(
         "Does 3 spheres (2 radius) fit in a 5 by 5 by 5 box? {}",
-        volume_fit(5, 5, 5, Geometrical_Volumes::Sphere, 3, 2, 0, 0)
+        volume_fit(5, 5, 5, GeometricalVolumes::Sphere, 3, 2, 0, 0)
     );
     println!(
         "Does 3 triangles (5 base and 3 height) fit in a 5 by 7 by 5 box? {}",
-        volume_fit(5, 7, 5, Geometrical_Volumes::Parallelepiped, 1, 6, 7, 4)
+        volume_fit(5, 7, 5, GeometricalVolumes::Parallelepiped, 1, 6, 7, 4)
     );
 }
 ```
