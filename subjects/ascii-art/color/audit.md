@@ -75,3 +75,7 @@
 ###### +Did you learn anything from this project?
 
 ###### +Would you recommend/nominate this program as an example for the rest of the school?
+
+#### Bonus
+
+###### +Can you use for the flag "--color=" different notation? (ex: `--color=red`, `--color=#ff0000`, `--color=rgb(255, 0, 0)` or `--color=hsl(0, 100%, 50%)`)
