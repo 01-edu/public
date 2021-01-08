@@ -7,7 +7,7 @@ import (
 	"lib"
 )
 
-var oldName = "printprogramname"
+var oldName = "exe"
 
 func test(name string) {
 	if err := os.Rename(oldName, name); err != nil {
