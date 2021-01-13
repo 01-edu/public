@@ -34,7 +34,7 @@ There must be three models of cars on the map the character can choose from. All
 
 To create the map you should use the Landscape tool. Also add a track using spline roads.
 
-After downloading and unzipping this [file](https://assets.01-edu.org/VehiculePhysics.zip), you can copy its content to your project Content folder.
+After downloading and unzipping this [file](https://assets.01-edu.org/Unreal-Engine-Piscine/VehiclePhysics.zip), you can copy its content to your project Content folder.
 
 When finished, your project should look like the [“Expected Result” video](https://youtu.be/4dXjFKh_jjY).
 

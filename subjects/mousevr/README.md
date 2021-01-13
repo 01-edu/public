@@ -11,6 +11,7 @@ You will have to create a game that uses the mouse as if it were the player head
 After creating a blank project and importing the content from the provided folder, you should focus on the following points to accomplish the previous explained features:
 
 - Use Scene Capture to take a 360 degrees screenshot, that you will need later on every targeted location on the map.
+
   - With this, you can create a new material and apply it to a sphere.
   - Find a way to display the material inside and outside the sphere to create a VR world illusion.
 
@@ -19,6 +20,7 @@ After creating a blank project and importing the content from the provided folde
 - In order to play the game, the player only needs to use the mouse and never the keyboard.
 
 - Create your own interaction point to indicate where the player is heading.
+
   - The design of the interaction point is up to you, but it should display a text underneath it, indicating where this interaction point is going to lead the player to (burger store, metro, park, etc...).
   - There should always be an interaction point visible to the player, somewhere in the world that lets the player quit, no matter where the player is in the map.
 
@@ -27,13 +29,14 @@ After creating a blank project and importing the content from the provided folde
 - Use an Interface Blueprint to handle interactions: a Blur, a Focus and an Active interaction.
 
 - Use a SphereTraceByChannel node to be able to look at objects.
+
   - Use casting with your interaction point to know which object you are looking at.
 
 - Use an interaction timer to set how many times should the player look at an interaction point in order to travel to the next space (like on the video example). In other words, the player should look for a while at the interaction point before getting teleported to the next scene.
 
 - Except for the interaction point and the spheres containing the panoramic images, no 3D objects are allowed on the map.
 
-After downloading and unzipping this [file](https://assets.01-edu.org/MouseVR.zip), you can copy its content to your project Content folder.
+After downloading and unzipping this [file](https://assets.01-edu.org/Unreal-Engine-Piscine/MouseVR.zip), you can copy its content to your project Content folder.
 
 When finished, your project should look like the [“Expected Result” video](https://youtu.be/Tor1Q10NG_Q).
 

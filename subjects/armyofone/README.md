@@ -31,7 +31,7 @@ Starting from an empty project, after creating a level with a floor (nothing els
 
 - use Animation Blueprint variables to handle different animation states.
 
-After downloading and unzipping this [file](), you can copy its content to your project Content folder.
+After downloading and unzipping this [file](https://assets.01-edu.org/Unreal-Engine-Piscine/ArmyOfOne.zip), you can copy its content to your project Content folder.
 
 When finished, your project should look like the [“Expected Result” video](https://youtu.be/sebi5icA1MM).
 

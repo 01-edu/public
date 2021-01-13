@@ -21,7 +21,7 @@ The previously mentioned projectile should:
 - have a size of X = Y = Z = 0,5.
 - have a speed of 10000.
 
-After downloading and unzipping this [file](https://assets.01-edu.org/FiringRange.zip), you can copy its content to your project Content folder.
+After downloading and unzipping this [file](https://assets.01-edu.org/Unreal-Engine-Piscine/FiringRange.zip), you can copy its content to your project Content folder.
 
 When finished, your project should look like the executable example on the folder or the ["Expected Result" video](https://youtu.be/EBibaN-dh_0).
 
