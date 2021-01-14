@@ -74,4 +74,4 @@
 
 ###### Are there different map backgrounds?
 
-###### Can the coins/gems be used in an in-game store to buy skins/perks other than invincibility?
+###### Can the coins/gems be used in an in-game store to buy skins or perks?
