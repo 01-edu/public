@@ -55,18 +55,18 @@ The goal of this setup is to avoid any binary files to be pushed in your gitea a
 
 #### 2- get-ready
 
-Below are the commands that you must use during this piscine for initiating programs and functions.
+Below are the commands that you must use during this piscine for initiating programs and functions. This command that you are going to depend in what is asked in the subject.
 
 #### Commands for a program
 
 ```console
-Cargo --vcs=none new name-of-exercise
+cargo --vcs=none new name-of-exercise
 ```
 
 #### Commands for a function
 
 ```console
-Cargo --vcs=none new --lib name-of-exercise
+cargo --vcs=none new --lib name-of-exercise
 ```
 
 #### 3- try it yourself
@@ -74,7 +74,7 @@ Cargo --vcs=none new --lib name-of-exercise
 Execute the below command inside your repository
 
 ```console
-Cargo --vcs=none new hello_rust
+cargo --vcs=none new hello_rust
 ```
 
 Then adapt the `main.rs` so that it would display `Hello, Rust!`
@@ -82,7 +82,7 @@ Then adapt the `main.rs` so that it would display `Hello, Rust!`
 You can test it with the below command inside the folder of your exercise.
 
 ```console
-Cargo run 
+cargo run
 ```
 This command will compile, and run the binary. 
 
