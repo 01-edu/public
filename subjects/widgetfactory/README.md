@@ -29,6 +29,7 @@ When the player clicks on the Graphics Settings button, another widget should ap
 - a slider that lets the player choose the percentage of the resolution scale.
 
 - a dropdown menu where the player can choose the resolution.
+
   - At least three different resolutions should be displayed in the dropdown.
 
 - an apply button at the bottom of the Widget which actualizes the two above resolution settings.
@@ -36,9 +37,11 @@ When the player clicks on the Graphics Settings button, another widget should ap
 - a checkbox, which when switched on, shows the game in full screen and in windowed mode otherwise.
 
 - four choices for PostProcessQuality, ShadowQuality, TextureQuality, EffectQuality and FoliageQuality. These four choices are LOW, MEDIUM, HIGH and EPIC.
+
   - These settings have to be executed with the “Execute Console Command” node.
 
 - PostProcessAAQuality setting should have the following options as buttons: Off, 2x, 4x, 6x.
+
   - You can use the “append (string)” node to switch between all four choices.
 
 - A “Back” button that bring the player back to the main Start menu.
@@ -60,3 +63,5 @@ As bonuses you can:
 - Add a resolution confirmation button when changing resolution.
 - Use the “On Release” attribute of the buttons, instead of the "On Pressed".
   Automatically set the default screen resolution to get the best computer performance.
+
+[Here](https://www.youtube.com/playlist?list=PLHyAJ_GrRtf9sxZqgfPVM06PrLk8_CWA-) you can find an instructional playlist on Unreal Engine.
