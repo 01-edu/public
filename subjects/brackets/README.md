@@ -13,7 +13,6 @@ If there is no argument, the program must print nothing.
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/brackets$ go build
 student@ubuntu:~/[[ROOT]]/brackets$ ./brackets '(johndoe)' | cat -e
 OK$
 student@ubuntu:~/[[ROOT]]/brackets$ ./brackets '([)]' | cat -e
