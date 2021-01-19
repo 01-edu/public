@@ -1,4 +1,4 @@
-## matrix_transposition
+## matrix_transposition_4by3
 
 ### Instructions
 
@@ -13,8 +13,10 @@
 Example:
 
 ```
-( a b )   __ transposition __>   ( a d )
-( c d )                          ( b d )
+( a b c )   __ transposition __>   ( a d g j )
+( d e f )                          ( b e h k )
+( g h i )                          ( c f i l )
+( j k l )
 ```
 
 - Matrix must implement Debug, PartialEq and Eq. You can use derive
@@ -25,7 +27,7 @@ Example:
 
 [Chapter 7]( https://doc.rust-lang.org/stable/book/ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html )
 
-### Expected Function
+### Expected Function and Structs
 
 ```rust
 pub struct Matrix4by3(
