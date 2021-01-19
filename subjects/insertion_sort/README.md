@@ -19,8 +19,6 @@ Here is a visual example of sorting a slice step by step using the insertion sor
 
 - Implement the algorithm insertion sort by creating a function `insertion_sort(slice, steps)` that executes the iterations of the algorithm the number of steps indicated by the parameter `steps`. See the [Usage](#usage) for more information.
 
-### Notion
-
 ### Expected Function
 
 ```rust
