@@ -2,7 +2,7 @@
 
 ### Objectives
 
-The objective of this raid is to create a traffic control strategy and represent it with an interface/UI.
+The objective for this raid is to create a traffic control strategy and represent it with an interface/UI.
 Its up to you to decide which library and file system you want do use to create this simulation, but we recommend to use the library [sdl2](https://docs.rs/sdl2/0.34.3/sdl2/)
 
 ### Instructions
@@ -37,7 +37,7 @@ _______________________          |          ____________________
 ```
 
 There are 4 incoming lanes. Each lane has a set of consecutive unique ids `(ri, ri, ri)` where `(i = 0, 1, ⋯, 11)`, numbered clockwise starting from the top-most. Each set of ids
-+indicates the outgoing direction of a vehicle. Vehicles driving in a given lane will have a given **route** (r0 | r1 .... r11) that indicates the lane destination of that vehicles.
+indicates the outgoing direction of a vehicle. Vehicles driving in a given lane will have a given **route** (r0 | r1 .... r11) that indicates the lane destination of that vehicles.
 
 For this raid you must follow these assumptions:
 
