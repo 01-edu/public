@@ -73,7 +73,8 @@ You can implement the following optional features :
 
 - Vehicle movement animation. You can find some cool assets :
   - [finalbossblue](http://finalbossblues.com/timefantasy/free-graphics/).
-  - [mobilegamegraphics](https://mobilegamegraphics.com/product-category/all_products/freestuff/)
+  - [mobilegamegraphics](https://mobilegamegraphics.com/product-category/all_products/freestuff/).
+  - [spriters-resource](https://www.spriters-resource.com/).
 
 ### Notions
 
