@@ -36,8 +36,8 @@ _______________________          |          ____________________
                        |    ↓    |         |
 ```
 
-There are 4 incoming lanes. Each lane has a set of consecutive unique ids `(ri, ri, ri)` where `(i = 0, 1, ⋯, 11)`, numbered in clockwise starting from the top-most. Each set of ids
-indicates the outgoing direction of a vehicles. Vehicles driving in a given lane will have a given **route** (r0 | r1 .... r11) that indicates the lane destination of that vehicles.
+There are 4 incoming lanes. Each lane has a set of consecutive unique ids `(ri, ri, ri)` where `(i = 0, 1, ⋯, 11)`, numbered clockwise starting from the top-most. Each set of ids
++indicates the outgoing direction of a vehicle. Vehicles driving in a given lane will have a given **route** (r0 | r1 .... r11) that indicates the lane destination of that vehicles.
 
 For this raid you must follow these assumptions:
 
@@ -49,18 +49,21 @@ For this raid you must follow these assumptions:
 - Vehicles can have different velocities, it is up to you to decide the velocity for each vehicle but it must be at least two different
   velocities (0 does not count as a velocity for the vehicle).
 
-- Vehicles should not collide in a traffic lane it should be kept a safety distance from other vehicles
+- Vehicles should not collide in a traffic lane. It should be kept a safety distance from other vehicles
+
+- Vehicles should be generated randomly, both route and lane should be also random.
 
 #### **Stop conditions**
 
-Has you know vehicles must not collide, if so you must show some kind of feedback (logs, terminal display or canvas display its up to you to decide) so that the users can conclude
-that the vehicles collided. Each lane will have a traffic light system (either imaginary of real), the objective is that each vehicle stops if there is any type of collision with other vehicles. Otherwise the vehicles can proceed in their lane.
+As you know vehicles must not collide, but for **debugging and testing** reasons you must show some kind of feedback (logs, terminal display or canvas display its up to you to decide)
+if vehicles collide, so that the users can conclude that the vehicles collided.
+Each lane will have a traffic light system (either imaginary of real), the objective is that each vehicle stops if there is any type of collision with other vehicles. Otherwise the vehicles can proceed in their lane.
 
 You are free to decide what algorithm you want to implement for the traffic light system, but keep in mind that traffic congestion should not be to high.
 
 ### Example
 
-You can see some examples [here](TODO : link to the gifts).
+You can see some examples [here](TODO : link to the gifs).
 
 ### Optional
 

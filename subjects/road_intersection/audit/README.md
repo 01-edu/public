@@ -6,15 +6,23 @@
 
 ##### Try and run the application.
 
-###### Are vehicles kept in there own lane?
+###### Are vehicles kept in their own lane?
+
+##### Try and run the application, keeping it running for a while.
+
+###### Is there a low traffic congestion while running the application?
 
 #### General
+
+###### Are vehicles generated randomly? (**random routes and lanes**)
 
 ###### When ever vehicles crash with other vehicles, does the program give some kind of feedback telling so?
 
 ###### Does vehicles present at least two different velocities? (ex: 1 and 2. 0 does not count)?
 
-###### Do vehicles collide while waiting for the green light?
+###### Do vehicles not collide while waiting for the green light?
+
+###### Are vehicles assigned to their own route, and if so do they obey that route? (ex: r0 must turn left, r2 must turn right)
 
 #### Bonus
 
