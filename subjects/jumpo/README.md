@@ -1,10 +1,10 @@
 ## jumpo
 
-In this project, you will have to create a 2D sidescroller game. You will be using for the first time an external SDK to compile your game: the Android SDK Tool for Unreal Engine, that allows you to create a [.apk file](https://fileinfo.com/extension/apk) that can be installed and played on any Android devices.
+In this project, you will have to create a 2D sidescroller game. You will be using for the first time an external SDK to compile your game: the Android SDK Tool for Unreal Engine, which allows you to create a [.apk file](https://fileinfo.com/extension/apk) that can be installed and played on any Android devices.
 
 ### Objectives
 
-In this game for Android the player will control a character in a similar game to Google Chrome Running Dinosaur but with coins or gems. So the game will have buttons on screen and that will be bound to character actions like jumping, ducking, etc... Another goal of this project is the sprite and [flipbook](https://docs.unrealengine.com/en-US/AnimatingObjects/Paper2D/Flipbooks/index.html) creation that is used to animate 2D art.
+In this game for Android, the player will control a character in a similar game than the Google Chrome Running Dinosaur but with coins or gems. So the game will have buttons on screen and that will be bound to character actions like jumping, ducking, etc... Another goal of this project is the sprite and [flipbook](https://docs.unrealengine.com/en-US/AnimatingObjects/Paper2D/Flipbooks/index.html) creation that is used to animate 2D art.
 
 The basic assets you will need for this project can be found in the ["Jumpo.zip"](https://assets.01-edu.org/Unreal-Engine-Projects/Jumpo/Jumpo.zip) file.
 
@@ -15,7 +15,7 @@ The following are the requirements for this project:
 - This game should have a main menu that must have a:
 
   - Start button, that loads the game.
-  - Stats button, that shows you how many coins you’ve collected overall, how many times you died, number of games and highest score. You can add more information if you want to.
+  - Stats button, that shows you how many coins you have collected overall, how many times you died, the number of games done and the highest score. You can add more information if you want to.
   - Leaderboard button, that shows the 5 highest scores ever made.
   - Credits button, that shows the names of the developers that worked on the project.
   - Character button, that shows the locked and unlocked characters.
@@ -33,10 +33,10 @@ These are the requirements regarding the game map:
 
 For the character these are the requisites:
 
-- You are free to choose what character you want to use in your game. You can use the resource ones or you can check [this website](https://www.spriters-resource.com/) for more characters and sprites.
+- You are free to choose which character you want to use in your game. You can use the resource ones or you can check [this website](https://www.spriters-resource.com/) for more characters and sprites.
 - The character should be "running" from left to right, so the character must be headed right.
   - The character should actually be static in relation to the background and only the background is moving from right to left, giving the illusion that the character is the one moving.
-  - Once a part of the background is out of sight it gets destroyed or moved to the right.
+  - Once a part of the background is out of sight, it gets destroyed or moved to the right.
 - If the character does not die, the map should be infinite.
 - Each action (running, jumping, ducking and dying) should play a different animation (a different flipbook).
   - Use the .png or .tga files to extract and create a flipbook.
@@ -51,7 +51,7 @@ For the character these are the requisites:
   - When the invincibility bar gets emptied, the character comes back to normal.
 - The jump and roll button should be accessible using thumbs when holding the phone (in the lower corners).
 - During the game, the highest ever score should appear on the top middle of the screen and the current score right below it.
-- A pause button should appear somewhere on the screen but should not disturb the player experience. Top right is a good place for it.
+- A pause button should appear somewhere on the screen but should not disturb the player experience. The top right corner is a good place for it.
 - When the player presses the pause button or when the character dies, three buttons should appear:
   - Retry -> Restarts the game and all progress is lost if the game is in pause.
   - Menu -> Goes back to the main menu and all progress is lost if the game is in pause.
@@ -61,7 +61,7 @@ For the character these are the requisites:
 
 In addition to the requirements of the map and the character, these are other aspects that need to be taken into account:
 
-- When closing the app and launching it again, all the player data should remain as he leaved before.
+- When closing the app and launching it again, all the player data should remain as he leaved it before.
 
 On the main menu:
 
@@ -70,7 +70,7 @@ On the main menu:
   - When first opening the game, there should be only one character unlocked.
 - When a player dies, the Leaderboard should be updated accordingly to the score the player just made if it is on the 5 best score ever.
   - Also the Stats should be updated after every game, whether it is or it is not one of the best 5 scores ever.
-- On the Leaderbord and on the Stats tabs, a button to reset all the stats should be available.
+- On the Leaderboard and on the Stats tabs, a button to reset all the stats should be available.
 
 #### Android
 
