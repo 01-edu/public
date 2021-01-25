@@ -4,15 +4,15 @@
 
 ###### Does the map contain buildings, pickable ammunition and weapons placed around the map?
 
-###### Does the player has all the minimal animation required (walking, running, melee attacking, aiming, reloading, shooting, crouching, crouch walking, crouch aiming, crouch reloading, crouch shooting)?
+###### Does the player have all the minimal animation required (walking, running, melee attacking, aiming, reloading, shooting, crouching, crouch walking, crouch aiming, crouch reloading, crouch shooting)?
 
 ###### Is there a sound for the player shooting?
 
-###### Are there bullets impact when shooting at a wall?
+###### Are there bullets impacts present when shooting at a wall?
 
-###### When the player is hit are there any blood particles?
+###### When the player is hit, are there any blood particles?
 
-###### A main menu with the five options is displaying on the screen?
+###### Is a main menu with the five options displayed on the screen?
 
 ###### Can the general sound of the game be managed directly on the settings menu?
 
@@ -22,15 +22,15 @@
 
 ###### Are the mouse settings (mouse sensitivity, invert mouse vertical axis) functioning according to their descriptions?
 
-###### Does the guards and drones wander around the map?
+###### Do the guards and drones wander around the map?
 
-###### When a player enters the field of view of a guard does he switches to chase mode, running and shooting towards the player while also taking cover?
+###### When a player enters the field of view of a guard, does he switches to chasing mode, running and shooting towards the player while also taking cover?
 
-###### Does the drone light switches between each state? Blue for patrolling and red for chase mode (when a player crosses his sight)?
+###### Does the drone light switches between each state? Blue for patrolling and red for chase mode (when a player crosses its sight)?
 
-###### Whenever a drone turns to chase mode, do all the guards on the area get alerted and switch to chase mode as well?
+###### Whenever a drone turns to chasing mode, do all the guards in the area get alerted and switch to chasing mode as well?
 
-###### Does the drone comes back to patrol mode when the player is out of the drone sight?
+###### Does the drone come back to patrol mode when the player is out of the drone sight?
 
 ###### Is the sight radius of the drones smaller than the guards?
 
@@ -38,13 +38,13 @@
 
 ###### Do cameras have similar light sign as the drones (red for alert mode and blue for patrol)?
 
-###### As the drones, do the cameras alert guards on the area, switching them to chase mode?
-
-###### Do some cameras lock access to certain areas of the map, when they detect a player?
+###### As the drones, do the cameras alert guards on the area, switching them to chasing mode?
 
 ###### Do Guards, Drones and Cameras play an alert sound when a player gets detected?
 
-###### Does the camera can close some part of the map (Doors, open traps and kill the player etc…) to the player when the player is being detected?
+###### Do some cameras lock access to certain areas of the map, when they detect a player?
+
+###### Can the camera close some part of the map (thru closed doors, open traps and tries to kill the player etc…) to the player when the player is being detected?
 
 ###### Are Behavior Trees used to implement the AI of the Guards and Drones?
 
@@ -56,11 +56,11 @@
 
 ###### Does the player health decreases when he gets shot by the guards?
 
-###### When the player loses all his health (dies), does he get to choose either to quit the game, go back to the main menu or to start over?
+###### When the player loses all his health (dies), does he get to choose whether to quit the game, go back to the main menu, or to start over?
 
 ###### If the player starts over does he spawn back at the starting point?
 
-###### The lifespan of the game is at least 6 minutes long from launch to mission complete?
+###### Is the lifespan of the game at least 6 minutes long from launch to mission completed?
 
 #### Bonus
 
