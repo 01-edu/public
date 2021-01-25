@@ -1,22 +1,22 @@
 ### Functional
 
-###### When you open the game, do you have to press a button to start playing?
+###### When you open the game, is there a button to press to start playing?
 
 ###### Is the map a large squared landscape terrain, scaled at 10 by 10 units?
 
 ###### Is the action happening at night time in a forest-like environment?
 
-###### Does the map contain tress, little facilities (like shelters or little buildings), monuments, rocks and grass around the landscape?
+###### Does the map contain trees, little facilities (like shelters or little buildings), monuments, rocks and grass around the landscape?
 
 ###### Were the buildings created using [BSP](https://www.worldofleveldesign.com/categories/ue4/bsp-01-what-is-bsp.php)?
 
 ###### Does the map contain 8 pages spread around the map in the facilities or monuments the student created?
 
-###### Does the map contains at least three different types of floor surface: dirt, grass and concrete.
+###### Does the map contains at least three different types of floor surfaces: dirt, grass and concrete?
 
 ###### If you exit and re-enter the game, did the pages changed spots on the locations?
 
-###### Does the monster stop if it enters the field of view of the player?
+###### Does the monster come to standstill if it enters the field of view of the player?
 
 ###### Does the "Creep" randomly teleports to another location?
 
@@ -34,7 +34,7 @@
 
 ###### Is a sound played when the player collects a page?
 
-###### Is it displayed a text saying how many pages there are left, every time the player collects a page?
+###### Is a text displayed stating how many pages are left every time the player collects a page?
 
 ###### Can the player toggle a flashlight on or off when pressing the "F" key?
 
@@ -42,11 +42,11 @@
 
 ###### Can you hear the sound of the player footsteps when he walks?
 
-###### Is there three different sounds to the footsteps, when on dirt, grass and concrete?
+###### Are there three different sounds to the footsteps, when on dirt, grass and concrete?
 
 ###### Does the forest turns from night time to day time when the player collects all of the 8 pages?
 
-###### When finishing the game, does the credits (names of the developers) show up?
+###### When finishing the game, do the credits (names of the developers) show up?
 
 ### Bonus
 
