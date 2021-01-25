@@ -46,7 +46,7 @@ Once this is done the git clone command should work now.
 #### gitignore file
 
 Once you repository is cloned,
-edit the .gitignore file and add this line:
+create and edit the .gitignore file in your repository and add this line:
 ```console
 **/target/*
 ```
@@ -60,7 +60,7 @@ Below are the commands that you must use during this piscine for initiating prog
 #### Commands for a program
 
 ```console
-cargo --vcs=none new name-of-exercise
+cargo new --vcs=none name-of-exercise
 ```
 
 #### Commands for a function
@@ -74,7 +74,7 @@ cargo --vcs=none new --lib name-of-exercise
 Execute the below command inside your repository
 
 ```console
-cargo --vcs=none new hello_rust
+cargo new --vcs=none hello_rust
 ```
 
 Then adapt the `main.rs` so that it would display `Hello, Rust!`
