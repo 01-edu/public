@@ -1,4 +1,4 @@
-## hellorust
+## hello_rust
 
 ### Introduction
 
