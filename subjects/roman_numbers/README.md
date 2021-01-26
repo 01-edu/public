@@ -1,7 +1,7 @@
 ## roman_numbers
 
 ### Instructions
-Implement the From<u32> Trait to create a roman number from a u32 the roman number should be in subtractive notation (the common way to write roman number I, II, II, IV, V, VI, VII, VIII, IX, X ...)
+Implement the From<u32> Trait to create a roman number from a u32 the roman number should be in subtractive notation (the common way to write roman number I, II, III, IV, V, VI, VII, VIII, IX, X ...)
 
 For this start by defining the digits as `RomanDigit` with the values I, V, X, L, C, D, M and Nulla for 0
 
