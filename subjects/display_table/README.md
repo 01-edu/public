@@ -22,10 +22,10 @@ impl fmt::Display for Table {
 }
 
 impl Table {
-	fn new() -> Table {
+	pub fn new() -> Table {
 	}
 
-	fn add_row(&mut self, row: &[String]) {
+	pub fn add_row(&mut self, row: &[String]) {
 	}
 }
 ```
