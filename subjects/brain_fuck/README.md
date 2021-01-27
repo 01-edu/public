@@ -25,7 +25,7 @@ For receiving arguments from the command line you should use something like:
     fn main() {
         let args: Vec<String> = std::env::args().collect();
 
-        rpn(&args[1]);
+        brain_fuck(&args[1]);
     }
 
 ```
