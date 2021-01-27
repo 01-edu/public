@@ -66,7 +66,7 @@ cargo new --vcs=none name-of-exercise
 #### Commands for a function
 
 ```console
-cargo --vcs=none new --lib name-of-exercise
+cargo new --vcs=none --lib name-of-exercise
 ```
 
 #### 3- try it yourself
