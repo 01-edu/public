@@ -1,8 +1,8 @@
 # THE ADDITION OF EXERCISE PROCEDURE
 
-**Needs to be updated since the refactor**
-
-##### This is for a go exercise in the piscine-go
+##### The examples take a go exercise in the piscine-go
+##### However the principles of redactions work for the js exercises as well
+##### Note that the files structure will be different between js and go exercises 
 
 ## **1. Writing the subject and / or writing the solution**
 
@@ -81,77 +81,45 @@ student@ubuntu:~/piscine-go/test$
 
 ---
 
-## **2. Creating the files for tests (4 main cases)**
+## **2. Creating the files for go tests (2 main cases)**
 
-### always in -> _all/tests/go/_
+### for go exercises
+### always in -> _public/go/tests/_
+### public has to be replaced with the name of your repo if necessary
 
 ### **Folder organization**
 
-- Function exercise in a Quest `(strlen)`
-  - 2 files:
-    - strlen_test.go
-    - solutions/strlen.goz
+- Function exercise `(strlen)`
+  - 2 file:
+    - public/go/tests/func/strlen_test.go (the test file)
+    - public/subjects/strlen/README.md (the subject file)
 
 ```console
 go
 | strlen_test.go
 |
-| __ solutions
-|     |-strlen.go (package solutions)
+| 
+| 
 |
-| __ student (the same thing as the solutions, just run "cp -aT solutions/ student/")
+| __ student (In this folder you can put the solution you want to test)
 ```
 
-- Program exercise in a Quest `(doop)`
+- Program exercise `(doop)`
   - 2 files
-    - doop_test.go
-    - solutions/doop/main.go
+    - public/go/tests/func/doop_prog.go
+    - public/go/tests/func/doop_test.go
+    - public/subjects/doop/README.md
 
 ```console
 go
-| doop_test.go
+| doop_test/main.go (This file launches all the test)
+| doop_prog/main.go (This is a working solution on which the test will be based)
 |
+| 
+|    
+|         
 |
-| __ solutions
-|     |__doop
-|          |-main.go (package main)
-|
-| __ student (the same thing as the solutions, just run "cp -aT solutions/ student/")
-```
-
-- Program exercise in the exam `(dooprog)`
-  - 2 files
-    - solutions/doopprog/main.go
-    - solutions/doopprog/doopprog_test.go
-
-```console
-go
-|
-| __ solutions
-|   | __ doopprog
-|         |-main.go (package main)
-|         |-doopprog_test.go
-|
-| __ student (the same thing as the solutions, just run "cp -aT solutions/ student/")
-```
-
-- Function exercise in the exam `(atoiprog)`
-  - 3 files
-    - solutions/atoi.go
-    - solutions/atoiprog/main.go
-    - solutions/atoiprog/atoiprog_test.go
-
-```console
-go
-|
-| __ solutions
-|     |
-|     |-atoi.go (package solutions)
-|     |__atoiprog
-|            |-main.go (package main)(func main(){} stays empty)
-|            |-atoiprog_test.go
-|
-| __ student (the same thing as the solutions, just run "cp -aT solutions/ student/")
+| __ student (In this folder you can put the solution you want to test)
 ```
 
 ---
@@ -164,11 +132,17 @@ go
 
 - **If** the source is not in the import section, copy and paste the function, with **lowercase** for the first letter of its name.
 
-- Example: addprimesum_test.go
+- **If** you must import the function, we suggest for it to be added in this file
+- public/go/tests/lib/is/is.go (`public` changes to your repository name)
 
-![isaprime](isaprime.png)
+- Example: isprime_test/main.go
 
-The func isAPrime is fully copied to the file.
+<img width="1280" alt="Capture d’écran " src="img/addition_of_exercise/isprime_test.png">
+
+The func isPrime is imported from the lib/is/is.go file.
+
+<img width="1280" alt="Capture d’écran " src="img/addition_of_exercise/is.png">
+
 
 ### <span style="color:#00bae6">**RULE 2**</span>
 
@@ -183,34 +157,18 @@ Whenever possible do at least 1 random test! This is to avoid cheating by predic
 - Function exercise in a Quest (strlen) ![z01sl](strlenz01.png)
 
 ```go
-z01.Challenge(t, studentSol, studentStu) // if the program doesn’t have arguments
+lib.Challenge("StrLen", student.StrLen, strLen, s) // s in this case are the arguments of a table
 
-z01.Challenge(t, studentSol, studentStu, args...) //if the program has arguments
 ```
-
 - Program exercise in a Quest (doop) ![z01doop](doopz01.png)<- Screenshots to be added.
 
 ```go
-z01.ChallengeMain(t) // if the program doesn’t have arguments
+lib.ChallengeMain("displaya") // if the program doesn’t have arguments
 
-z01.ChallengeMain(t, args...) // if the program has arguments
+lib.ChallengeMain("doop", strings.Fields(s)...)// if the program has arguments with s being the arguments of the table
 ```
 
-- Program exercise in the exam (dooprog) Screenshots to be added.
-
-```go
-z01.ChallengeMainExam(t) // if the program doesn’t have arguments
-
-z01.ChallengeMainExam (t, args...) // if the program has arguments
-```
-
-- Function exercise in the exam (Atoiprog) Screenshots to be added.
-
-```go
-z01.Challenge(t, studentSol, studentStu) // if the program doesn’t have arguments
-
-z01.Challenge(t, studentSol, studentStu, args...) //if the program has arguments
-```
+Please not that the lib has plenty of other useful functions (such as randoms data functions) to help you build the tests. Check the file at this [address](https://github.com/01-edu/public/blob/master/go/tests/lib/lib.go).
 
 ---
 
@@ -221,6 +179,9 @@ z01.Challenge(t, studentSol, studentStu, args...) //if the program has arguments
 ### Before every PR : a go test has to be executed (in several situations) in the folder(s) of the exercise(s) worked on
 
 **First thing first**
+```console
+go get -u github.com/01-edu/public/go/tests/lib
+```
 
 ```console
 rm -r student
@@ -278,3 +239,40 @@ The result should be an OK message:
 - Introduce errors in the student solution.go file in order to see the errors message and compare them to the subject examples.
 
 - Error messages for structures exercises (linked lists, binary trees) need to be tailored accordingly.
+
+
+## **5. Creating the files for tests (For js)**
+
+### for js exercises
+### always in -> _public/js/tests/_
+### public has to be replaced with the name of your repo if necessary
+
+### **Folder organization**
+
+- Function exercise `(primitives)`
+  - 2 file:
+    - public/js/tests/primitives_test.js (the test file)
+    - public/subjects/primitives/README.md (the subject file)
+
+```console
+go
+| primitives_test.go
+|
+| 
+| 
+|
+| __ student (In this folder you can put the solution you want to test)
+```
+## **6. Writing a file_test.js (test file for js)**
+
+### <span style="color:#00bae6">**RULE 1**</span>
+
+- Make the test as independent as possible (no self-made functions imported)
+
+- **If** the source is not in the import section, copy and paste the function, with **lowercase** for the first letter of its name.
+
+- Example: addprimesum_test.go
+
+![isaprime](isaprime.png)
+
+The func isAPrime is fully copied to the file.
