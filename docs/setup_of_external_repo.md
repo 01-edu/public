@@ -63,7 +63,7 @@ This path should be added to the attribute “subject” of type string in the o
 
 - 1. Sign in your docker hub account the 01 public repository.
 
-- 2. In your account, go your settings and ling your github account.
+- 2. In your account, go your settings and link your github account.
 
 - 3. Create a repository named “test” and make sure that your github account is linked. 
 If you see this image,
@@ -84,3 +84,12 @@ Fill it with the name of the repository,
 
 - 6. Once your exercise has both the attributes completed correctly, the exercise is viable and can be tested on the server which was selected for its addition. 
 
+- 7. As a reminder to test the exercise it is suggested to follow these steps:
+a. `Create` a custom `Quest-test` object
+b. `Adding` the new `exercise` object as a child to the newly created `Quest-test` object
+c. `Create` a `Piscine-test` object
+d. `Adding` the new `Quest-test` as a child to the newly created `Piscine-test` object
+e. `Adding` the `Piscine-test` to the `campus` object as **first child** 
+f. Go to the event page and launch the newly created `Piscine-test`. (You may need to refresh the page 2-3 times before the `campus/Piscine-test` option appears)
+g. Once the event is launched, use the event page to add yourself as a student in the launched event `Piscine-test`
+h. You can now try the exercise. If everything is well set, the subject should be loaded and, when you submit a correct solution, the exercise should pass.
