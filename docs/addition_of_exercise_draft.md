@@ -179,6 +179,7 @@ Please not that the lib has plenty of other useful functions (such as randoms da
 ### Before every PR : a go test has to be executed (in several situations) in the folder(s) of the exercise(s) worked on
 
 **First thing first**
+
 ```console
 go get -u github.com/01-edu/public/go/tests/lib
 ```
@@ -263,16 +264,3 @@ go
 |
 | __ student (In this folder you can put the solution you want to test)
 ```
-## **6. Writing a file_test.js (test file for js)**
-
-### <span style="color:#00bae6">**RULE 1**</span>
-
-- Make the test as independent as possible (no self-made functions imported)
-
-- **If** the source is not in the import section, copy and paste the function, with **lowercase** for the first letter of its name.
-
-- Example: addprimesum_test.go
-
-![isaprime](isaprime.png)
-
-The func isAPrime is fully copied to the file.
