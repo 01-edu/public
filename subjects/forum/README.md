@@ -44,6 +44,7 @@ In order for users to communicate between each other, they will have to be able 
 - Only registered users will be able to create posts and comments.
 - When registered users are creating a post they can associate one or more categories to it.
   - The implementation and choice of the categories is up to you.
+  - Every post must be associated to at least one category.
 - The posts and comments should be visible to all users (registered or not).
 - Non-registered users will only be able to see posts and comments.
 
