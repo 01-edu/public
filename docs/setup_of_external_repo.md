@@ -1,11 +1,13 @@
-# ADDITION OF A REPOSITORY OF EXERCISE PROCEDURE
+# ADDITION OF A REPOSITORY PROCEDURE
 
 ## INTRODUCTION
 
-This document is a guide on how to add your own exercises from your own repository.
+This document is a guide on how to add your own repository to store your projects and exercises.
 This guide assumes that you have understood the files structures of the repository [public](https://github.com/01-edu/public).
 It will only address the settings part of this task. 
-Should you need more information regarding the file structure of the exercises, check the [addition of exercise procedure](https://github.com/01-edu/public/blob/master/docs/addition_of_exercise_draft.md).
+The addition of projects will be treated first as it does not require the knowledge of docker.
+
+However being familiar with docker is **mandatory** for adding your own exercises with your tests. 
 
 ## PREQUISITES
 
@@ -26,38 +28,73 @@ You will also be able to customize already existing exercises to your needs.
 
 With just a quick modification the repo will be ready to be linked. 
 
-## **1. Fork the 01 public repository**
+## **1. Create your own public repository**
 
-Once logged into your github account, go to:
-https://github.com/01-edu/public
-From there fork the public repo to your account (the button is on the top corner right side)
+Once logged into your github account, click on the creation of new repository:
+It is the button `New` (the button is on the top corner right side)
 
-## **2. Remove the CNAME file from the forked repo**
+## **2. Git clone your repository and prepare an example for the folder structure for projects**
 
-Git clone the repo and push the deletion or simply delete it directly from github
-
-This is the occasion to push a new test exercise if you have one already written.
+- Create a folder called `subjects`
+- Inside this folder create a folder called what you wish (example: `firstproject`)
+- Inside the folder `firstproject` create a `README.md` file which you will use as the subject content of your first project
+- After the subject content `README.md` is created, create a folder `audit` inside the `firstproject` directory
+- Inside the `audit` folder create a `README.md` that respect the audit type of file. We advise you to take an example such as the
+ascii-art audit `README.md` file. Here is the [link](https://raw.githubusercontent.com/01-edu/public/master/subjects/ascii-art/audit/README.md) to the raw file. 
+- Once all those files are done, git push them to your new repository
 
 ## **3. Publish the repository on github pages**
 
-- Go to the settings tab of your exercises repository.
+- Go to the settings tab of your projects repository.
 - On the option page find the GitHub Pages section.
 - Please see below the settings to follow. 
+- Note that the branch may be called `main` instead of `master`. 
 (Please not that it might take up to 10 mins for your page to be pusblished)
 
 <img width="1280" alt="Capture d’écran " src="img/adding-exercises-repository/1.png">
 
-## **4. Take note of the path of an exercise subject you added
+- You will notice that a message says `Your site is published at https://yourgithublogin.github.io/nameofyourrepo
+
+## **4. The addition of a custom project
+
+**Take note of the paths of a project subject you added and add them to the attributes**
 
 Example:
-If user Frenchris, added an exercise to the forked called how-2-go
-This is the path where the README.md would be. 
-https://frenchris.github.io/public/subjects/how-2-go/
+If user Frenchris, added an exercise to the nameofyourrepo called `firstproject`
+This is the path where the README.md subject would be. 
+https://frenchris.github.io/nameofyourrepo/subjects/firstproject/
 
-Note that you do not keep the README.md at the end of the path
+Note that you do not keep the README.md at the end of the path but you do keep the `/`
 
 This path should be added to the attribute “subject” of type string in the object attribute of the new exercise. 
- 
+
+Additionally the README.md audit path would be. 
+https://frenchris.github.io/nameofyourrepo/subjects/firstproject/audit/
+
+This path should be added to the attribute “subject” of type string in the object attribute of the new exercise. 
+
+- Once both those path are noted, create your project on your server.
+
+- Add the regular attributes (`groupMin`, `groupMax`, `language`, `exerciseType`)
+- Add the optional attributes to test if your wish (`auditsRatio`, `auditsRequired`) both set to 1
+
+- And add the `audit` and `subject` attributes (of type `string`) with the previously noted paths
+
+Once the attributes are filled. 
+- Create a module, called `Div-custom` for example. Add its standard attributes. 
+- Add `firstproject` as a child to `Div-custom`.
+
+**Note**: If you do not wish students from other events to be selected for matches in this new event.
+in the children attributes of the module,
+- Add `matchWhere` as a `FUNCTION`
+- Set its value to `USERINEVENT`
+This attribute will isole the event during matches to the user of the event.
+
+- Add this `Div-custom` as a child in your campus object
+- Go to event, and launch the event `yourcampus/Div-custom`
+- Add yourself and other testing accounts to the newly launched event.
+- Test your subject by creating a group and launching an audit.  
+If the paths are correctly inputed and your repository is correctly publicly published on gitHub pages, you will see your subject and your audit in the platform.
 
 ## II- SETUP OF YOUR DOCKER REPOSITORY 
 
