@@ -7,7 +7,7 @@ This guide assumes that you have understood the files structures of the reposito
 It will only address the settings part of this task. 
 The addition of projects will be treated first as it does not require the knowledge of docker.
 
-However being familiar with docker is **mandatory** for adding your own exercises with your tests. 
+However being familiar with docker is **mandatory** for adding your own exercises with your own tests. 
 
 ## PREQUISITES
 
@@ -16,17 +16,7 @@ However being familiar with docker is **mandatory** for adding your own exercise
 -A dockerHub account [https://hub.docker.com/](https://hub.docker.com/). 
 
 
-## I- SETUP OF YOUR GUTHUB REPOSITORY THRU A FORK
-
-Instead of starting with an empty repository, for the very first time we recommend forking the official [public](https://github.com/01-edu/public). repository.
-
-The advantages of this way:
-
-This will give you a base to work on regarding the file architecture of an exercise repository with examples.
-
-You will also be able to customize already existing exercises to your needs. 
-
-With just a quick modification the repo will be ready to be linked. 
+## I- SETUP OF YOUR GITHUB REPOSITORY
 
 ## **1. Create your own public repository**
 
@@ -98,9 +88,9 @@ If the paths are correctly inputed and your repository is correctly publicly pub
 
 ## II- SETUP OF YOUR DOCKER REPOSITORY 
 
-- 1. Sign in your docker hub account the 01 public repository.
+- 1. Sign in your docker hub account and link it to your repository.
 
-- 2. In your account, go your settings and link your github account.
+- 2. In your account, go to your settings and link your github account.
 
 - 3. Create a repository named “test” and make sure that your github account is linked. 
 If you see this image,
