@@ -133,6 +133,9 @@ curl -L https://raw.githubusercontent.com/docker/compose/1.28.2/contrib/completi
 # Generate SSH key
 ssh-keygen -ted25519 -f ~/.ssh/id_ed25519 -N ''
 
+# Use Cloudflare DNS server
+echo 'supersede domain-name-servers 1.1.1.1;' >> /etc/dhcp/dhclient.conf
+
 # Cleanup
 sed -i '/^deb-src/d' /etc/apt/sources.list
 apt-get update
