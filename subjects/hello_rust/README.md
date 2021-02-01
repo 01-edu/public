@@ -52,6 +52,11 @@ create and edit the .gitignore file in your repository and add this line:
 ```
 The goal of this setup is to avoid any binary files to be pushed in your gitea accidentaly. 
 
+Do not forget to push it to your repository.
+
+1. `git add .gitignore`
+2. `git commit -m "My very first gitignore commit"`
+3. `git push`
 
 #### 2- get-ready
 
@@ -71,7 +76,7 @@ cargo new --vcs=none --lib name-of-exercise
 
 #### 3- try it yourself
 
-Execute the below command inside your repository
+Execute the below command for creating a **program** inside your repository
 
 ```console
 cargo new --vcs=none hello_rust
