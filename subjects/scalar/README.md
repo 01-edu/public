@@ -1,43 +1,52 @@
-## Scaler
+## Scalar
 
 ### Instructions
-Create the following functions, that receives two parameters:
-- sum, that returns the sum between two values from 0 to 255
-- diff, that returns the difference between two values from -32768 to 32767
-- pro, that returns the product of the multiplication between two values from -128 to 127
-- quo, that returns the quotient of the division between two values
-- rem, that returns the remainder of the division between two values
+Create the following **functions**, which each receives two parameters:
+- `sum`, which returns the sum between two values from 0 to 255
+- `diff`, which returns the difference between two values from -32768 to 32767
+- `pro`, which returns the product of the multiplication between two values from -128 to 127
+- `quo`, which returns the quotient of the division between two values (32bit and you have to figure out the second part)
+- `rem`, which returns the remainder of the division between two values (32bit and you have to figure out the second part)
+
+You **must** complete the Expected functions parameters data type accordingly (Replace the Xs)! 
+
 ### Notions
 - https://doc.rust-lang.org/book/ch03-02-data-types.html
 
 
-### Expected functions
+### Expected functions (Incomplete, you must precise the Data Types)
 
 ```rust
-pub fn sum(a:, b: ) ->  {
+pub fn sum(a: X , b: X) -> X {
 	
 }
 
-pub fn diff(a: , b: ) -> {
+pub fn diff(a: X, b: X) -> X {
 
 }
 
-pub fn pro(a: , b: ) -> {
+pub fn pro(a: X, b: X) -> X {
 
 }
 
-pub fn quo(a: , b: ) -> {
+pub fn quo(a: X, b: X) -> X {
 
 }
 
-pub fn rem(a: , b: ) -> {
+pub fn rem(a: X, b: X) -> X {
 
 }
 ```
 
-### Usage:
+### Usage (do not forget to comment the ERROR test if you want to use all the tests):
 
 ```rust
+use scalar::sum;
+use scalar::diff;
+use scalar::pro;
+use scalar::quo;
+use scalar::rem;
+
 fn main() {
     // sum
     println!("sum : {}", sum(234, 2));
