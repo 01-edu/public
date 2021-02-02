@@ -63,7 +63,7 @@ You are free to decide what algorithm you want to implement for the traffic ligh
 
 ### Example
 
-You can see some examples [here](TODO : link to the gifs).
+You can see an example [here](https://youtu.be/pC79E0fdzYo).
 
 ### Optional
 
@@ -72,6 +72,7 @@ You can implement the following optional features :
 - A visualization of the traffic light, for example: a line that changes color from `Red` to `Green`.
 
 - Vehicle movement animation. You can find some cool assets :
+  - [limezu](https://limezu.itch.io/)
   - [finalbossblue](http://finalbossblues.com/timefantasy/free-graphics/).
   - [mobilegamegraphics](https://mobilegamegraphics.com/product-category/all_products/freestuff/).
   - [spriters-resource](https://www.spriters-resource.com/).
