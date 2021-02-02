@@ -66,17 +66,17 @@
 
 ###### And if so did it update the file `"records.txt"`?
 
-##### Utilizing the use Alice try to select the option `"Remove existing account"` and remove the accounts `"834213"`, `"320421"` and `"3214"`.
+##### Utilizing the user Alice try to select the option `"Remove existing account"` and remove the accounts `"834213"`, `"320421"` and `"3214"`.
 
 ###### Can you confirm that those account were deleted, both in the application and file `"records.txt"`?
 
-##### Utilizing the use Alice select the option `"Remove existing account"` and try to remove and nonexisting account.
+##### Utilizing the user Alice select the option `"Remove existing account"` and try to remove and nonexisting account.
 
 ###### Did the application prompt some king of error saying that the account does not exits?
 
 ##### Create another user named `"Michel"`. Then by using the user Alice select the option `"transfer owner"` and try to transfer ownership of the account `"3212"` to Michel.
 
-###### Were you able to transfer the ownership of this account to Michel? And if so did it update both application and file named `"records.txt"`?
+###### Were you able to transfer the ownership of this account to Michel? And if so did it update both application and file `"records.txt"`?
 
 #### Bonus
 

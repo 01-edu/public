@@ -120,7 +120,7 @@ This project will help you learn about:
 - [C](https://en.wikipedia.org/wiki/C_%28programming_language%29) language
   - Language Fundamentals
 - Data manipulation
-  - File [stdino](TODO:link)
+  - File manipulation
   - Data structures
 - Makefile
 - Terminal UI
