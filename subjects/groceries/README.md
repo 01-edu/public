@@ -2,13 +2,14 @@
 
 ### Instructions
 
-Create a function called `insert` that inserts a new element at the end of the Vec
+Create a **function** called `insert` that inserts a new element at the end of the `Vec`.
 
-And another function `at_index` that returns the value found at the index passed as an argument
+And another **function** `at_index` that returns the value found at the index passed as an argument.
 
 ### Notions
 
-[Common Collections]( https://doc.rust-lang.org/stable/book/ch08-00-common-collections.html)
+- [Common Collections](https://doc.rust-lang.org/stable/book/ch08-00-common-collections.html)
+- [Vectors]https://doc.rust-lang.org/stable/book/ch08-01-vectors.html)
 
 ### Expected Functions
 
@@ -16,7 +17,7 @@ And another function `at_index` that returns the value found at the index passed
 pub fn insert(vec: &mut Vec<String>, val: String) {
 }
 
-pub fn at_index(vec: &Vec<String>, index: ) -> String {
+pub fn at_index(vec: &Vec<String>, index: usize) -> String {
 }
 ```
 
@@ -25,7 +26,7 @@ pub fn at_index(vec: &Vec<String>, index: ) -> String {
 Here is a possible program to test your function:
 
 ```rust
-use groceries::{insert, at_index}
+use groceries::{insert, at_index};
 
 fn main() {
 	let mut groceries = vec![

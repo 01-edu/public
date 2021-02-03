@@ -2,19 +2,20 @@
 
 ### Instructions
 
-Create a function that receives the speed in km/h (kilometers per hour) and returns the equivalent in m/s (meters per second)
+Create a **function** that receives the speed in km/h (kilometers per hour) and returns the equivalent in m/s (meters per second).
 
 ### Expected Function
 
 ```rust
 pub fn km_per_hour_to_meters_per_second(km_h: f64) -> f64 {
-	(10.0 / 36.0) * km_h
 }
 ```
 
 ### Usage
 
 ```rust
+use speed_transformation::km_per_hour_to_meters_per_second;
+
 fn main() {
 	let km_h = 100.0;
 	let m_s = km_per_hour_to_meters_per_second(km_h);

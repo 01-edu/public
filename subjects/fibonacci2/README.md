@@ -11,12 +11,10 @@ Each number in the series is calculated by the summing of the two previous ones 
 - so fibonacci(2) = 1 (1 + 1) 
 - and fibonnacci(4) = 3 (1 + 2)
 
-### TNotions
+### Notions
 
-#### Primitives
-- https://doc.rust-lang.org/stable/rust-by-example/primitives.html
-#### Functions
-- https://doc.rust-lang.org/stable/rust-by-example/fn.html
+- [Primitives](https://doc.rust-lang.org/stable/rust-by-example/primitives.html)
+- [Functions](https://doc.rust-lang.org/stable/rust-by-example/fn.html)
 
 ### Expected function
 

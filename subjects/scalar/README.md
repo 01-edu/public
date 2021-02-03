@@ -11,7 +11,7 @@ Create the following **functions**, which each receives two parameters:
 You **must** complete the Expected functions parameters data type accordingly (Replace the Xs)! 
 
 ### Notions
-- https://doc.rust-lang.org/book/ch03-02-data-types.html
+- [Data Types](https://doc.rust-lang.org/book/ch03-02-data-types.html)
 
 
 ### Expected functions (Incomplete, you must precise the Data Types)
@@ -38,30 +38,27 @@ pub fn rem(a: X, b: X) -> X {
 }
 ```
 
-### Usage (do not forget to comment the ERROR test if you want to use all the tests):
+### Usage :
+#### Note that There is no output for this test for you to train to comment accordingly.
 
 ```rust
-use scalar::sum;
-use scalar::diff;
-use scalar::pro;
-use scalar::quo;
-use scalar::rem;
+use scalar::*;
 
 fn main() {
     // sum
-    println!("sum : {}", sum(234, 2));
+    println!("sum : {}", sum(234, 2)); // 'sum : 236'
     println!("sum : {}", sum(1, 255)); // 'ERROR: attempt to add with overflow'
     // diff
-    println!("diff : {}", diff(234, 2));
+    println!("diff : {}", diff(234, 2)); // 'diff : 232'
     println!("diff : {}", diff(-32768, 32766)); // 'ERROR: attempt to subtract with overflow'
     // product
-    println!("pro : {}", pro(23, 2));
+    println!("pro : {}", pro(23, 2)); // 'pro : 46'
     println!("pro : {}", pro(-128, 2)); // 'ERROR: attempt to multiply with overflow'
     // quotient
-    println!("quo : {}", quo(22.0, 2.0));
-    println!("quo : {}", quo(-128.23, 2.0));
+    println!("quo : {}", quo(22.0, 2.0));// 'quo : 11'    
+    println!("quo : {}", quo(-128.23, 2.0));// 'quo : -64.115'
     // remainder
-    println!("rem : {}", rem(22.0, 2.0));
-    println!("rem : {}", rem(-128.23, 2.0));
+    println!("rem : {}", rem(22.0, 2.0));// 'rem : 0'
+    println!("rem : {}", rem(-128.23, 2.0));// 'rem : -0.22999573'
 }
 ```
