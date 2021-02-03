@@ -103,7 +103,7 @@ The following features must be done by you.
 
 ### Example
 
-You can find an example of the final application [here](TODO:link_to_youtube_video). Do not forget that you are free to
+You can find an example of the final application [here](https://www.youtube.com/watch?v=1LjwbIFt5Qo). Do not forget that you are free to
 implement whatever kind of interface you desire. It just needs to obey the instructions given above so it can pass the audit.
 
 ### Bonus
