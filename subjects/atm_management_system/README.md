@@ -101,19 +101,24 @@ The following features must be done by you.
 
    6.2. Saving the information in the corresponding file
 
-### Example
-
-You can find an example of the final application [here](https://www.youtube.com/watch?v=1LjwbIFt5Qo). Do not forget that you are free to
-implement whatever kind of interface you desire. It just needs to obey the instructions given above so it can pass the audit.
-
 ### Bonus
 
-You can create bonus features or update the terminal interface:
+As bonus you can add a verification to the field **Transfer owner**. Every time a user transfers ownership of an account the other user who received the account
+can be alerted that it received and account from someone instantly.
+Example if you have two terminals opened logged in two different users, and one send the account to the other user,
+the user who received the account should be instantly notified
+One of the ways of doing this is by using pipes and child processes (communication between process)
+
+You can also do more bonus features or update the terminal interface:
 
 - Better terminal interface
 - Encryption of passwords
 - Adding own Makefile
-- Adding more features
+
+### Example
+
+You can find an example of the final application [here](https://www.youtube.com/watch?v=1LjwbIFt5Qo). Do not forget that you are free to
+implement whatever kind of interface you desire. It just needs to obey the instructions given above so it can pass the audit.
 
 This project will help you learn about:
 
@@ -125,3 +130,4 @@ This project will help you learn about:
 - Makefile
 - Terminal UI
 - Memory management
+- Pipes and child processes
