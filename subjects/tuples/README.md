@@ -6,7 +6,7 @@
 
 - Each student is identified by an id number of type i32, his/her name and his/her last name as a string Print the content of the tuple to stdout
 
-- Then define three functions to return the id, first name and last name.
+- Then define three **functions** to return the id, first name and last name.
 
 ### Notions
 

@@ -4,7 +4,7 @@
 
 - Define the structure matrix as a tuple of 2 tuples of 2 `i32`'s.
 
-- Define a function that calculates the transpose matrix of a 2x2 matrix.
+- Define a **function** that calculates the transpose matrix of a 2x2 matrix.
 
 - Note:
 
