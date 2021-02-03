@@ -8,7 +8,7 @@
 
 ###### Did it displayed an error message saying that this user already exists?
 
-##### Open the application and register again the user `"Alice"`, then open the file `"./data/users.txt"`.
+##### Open the file `"./data/users.txt"`.
 
 ###### Are all the user names unique? (ex: no repetition on the name Alice)
 
@@ -20,43 +20,43 @@
 
 ###### Did the application displayed some kind of error message saying that this account does not exist?
 
-##### Utilizing the user Alice try and select the option `"Update information of account"` and select one of the accounts you created for Alice.
+##### Resorting to the user Alice try and select the option `"Update information of account"` and select one of the accounts you created for Alice.
 
 ###### Did the the application prompt a choice of updating the **phone number** or the **country**?
 
-##### Utilizing the user Alice try and select the option `"Update information of account"` and select one of the accounts you created for Alice. Then update the phone number of that account.
+##### Resorting to the user Alice try and select the option `"Update information of account"` and select one of the accounts you created for Alice. Then update the phone number of that account.
 
 ###### Was the phone number of that account updated in the application and the file `"records.txt"`?
 
-##### Utilizing the user Alice try and select the option `"Update information of account"` and select one of the accounts you created for Alice. Then update the country of that account.
+##### Resorting to the user Alice try and select the option `"Update information of account"` and select one of the accounts you created for Alice. Then update the country of that account.
 
 ###### Was the country of that account updated in the application and the file `"records.txt"`?
 
-##### Utilizing the user Alice try to create a new account with: date `"10/10/2012"` account number `"834213"`, country `"UK"`, phone number `"291231392"`, deposit amount  $`"1001.20"`, type of account `"saving"`. Then select `"Check accounts"` choose the account you just created.
+##### Resorting to the user Alice try to create a new account with: date `"10/10/2012"` account number `"834213"`, country `"UK"`, phone number `"291231392"`, deposit amount  $`"1001.20"`, type of account `"saving"`. Then select `"Check accounts"` choose the account you just created.
 
 ###### Did the application displayed the account information and the gain of $5.84 of interest on day 10 of every moth?
 
-##### Utilizing the user Alice create again an account but with account number `"320421"` and type of account `"fixed01"` the rest can be the same as the last account. Then select `"Check accounts"` choose the account you just created.
+##### Resorting to the user Alice create again an account but with account number "320421" and type of account "fixed01" with the rest of the information as in the last account . Then select `"Check accounts"` and choose the account you just created.
 
 ###### Did the application displayed the account information and the gain of $40.05 of interest on 10/10/2013?
 
-##### Utilizing the user Alice create again an account but with account number `"3214"` and type of account `"fixed02"` the rest can be the same as the last account. Then select `"Check accounts"` choose the account you just created.
+##### Resorting to the user Alice create again an account but with account number `"3214"` and type of account `"fixed02"` with the rest of the information as in the last account. Then select `"Check accounts"` and choose the account you just created.
 
 ###### Did the application displayed the account information and the gain of $100.12 of interest on 10/10/2014?
 
-##### Utilizing the user Alice create again an account but with account number `"3212"` and type of account `"fixed03"` the rest can be the same as the last account. Then select `"Check accounts"` choose the account you just created.
+##### Resorting to the user Alice create again an account but with account number `"3212"` and type of account `"fixed03"` with the rest of the information as in the last account. Then select `"Check accounts"` and choose the account you just created.
 
 ###### Did the application displayed the account information and the gain of $240.29 of interest on 10/10/2015?
 
-##### Utilizing the user Alice select the option `"Make transaction"`. Then choose the account with the id `"3212"`
+##### Resorting to the user Alice select the option `"Make transaction"`. Then choose the account with the id `"3212"`
 
 ###### Are you able to choose between withdrawing or depositing?
 
-##### Utilizing the user Alice select the option `"Make transaction"`, choose the account with the id `"3212"`. Then try to withdraw money.
+##### Resorting to the user Alice select the option `"Make transaction"`, choose the account with the id `"3212"`. Then try to withdraw money.
 
 ###### Are you able to withdraw money?
 
-###### And if so, did the withdraw was updated in the file `"records.txt"`?
+###### And if so, was the withdraw updated in the file `"records.txt"`?
 
 ###### Is it not possible to withdraw an amount superior to your available balance?
 
@@ -66,15 +66,15 @@
 
 ###### And if so did it update the file `"records.txt"`?
 
-##### Utilizing the user Alice try to select the option `"Remove existing account"` and remove the accounts `"834213"`, `"320421"` and `"3214"`.
+##### Resorting to the user Alice try to select the option `"Remove existing account"` and remove the accounts `"834213"`, `"320421"` and `"3214"`.
 
 ###### Can you confirm that those account were deleted, both in the application and file `"records.txt"`?
 
-##### Utilizing the user Alice select the option `"Remove existing account"` and try to remove and nonexisting account.
+##### Resorting to the user Alice select the option `"Remove existing account"` and try to remove and nonexisting account.
 
-###### Did the application prompt some king of error saying that the account does not exits?
+###### Did the application prompt some type of error saying that the account does not exists?
 
-##### Create another user named `"Michel"`. Then by using the user Alice select the option `"transfer owner"` and try to transfer ownership of the account `"3212"` to Michel.
+##### Create another user named `"Michel"`. Then by using Alice select the option `"transfer owner"` and try to transfer ownership of the account `"3212"` to Michel.
 
 ###### Were you able to transfer the ownership of this account to Michel? And if so did it update both application and file `"records.txt"`?
 
