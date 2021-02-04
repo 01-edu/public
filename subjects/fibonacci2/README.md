@@ -7,9 +7,6 @@ Complete the body of the **function** `fibonacci`.
 This functions receives a number `n` and returns the nth number in the fibonacci series.
 
 The Fibonacci Series starts like this: 0, 1, 1, 2, 3, 5, 8, 13 etc...  
-Each number in the series is calculated by the summing of the two previous ones (With the exception of the two first ones which are defined as 0 and 1).
-- so fibonacci(2) = 1 (1 + 1) 
-- and fibonnacci(4) = 3 (1 + 2)
 
 ### Notions
 
