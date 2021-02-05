@@ -19,14 +19,16 @@ When building your ray tracer you have to take some points into consideration:
 - you have to be able to look at the same scene from different angles by moving the camera/ point of view.
 - you also have to implement small light management, which includes: different brightness and shadows.
 
-As your ray tracer will probably be a bit slow to render high resolution scenes, you should make 4 scenes for the auditers to evaluate. These 4 images that you have to create consist of:
+As your ray tracer will probably be a bit slow to render high resolution scenes, you should make 4 .ppm images for the auditers to evaluate. The scenarios of these 4 images that you have to create consist of:
 
-- a sphere;
-- a plane and a cube with lower brightness than in the sphere image;
-- one of each of all the objects (one cube, one sphere, one cylinder and one plane);
-- the same scene as before, but with the camera in another position (thus generating the same image with another perspective).
+- a scene with a sphere;
+- a scene with a plane and a cube with lower brightness than in the sphere image;
+- a scene with one of each of all the objects (one cube, one sphere, one cylinder and one plane);
+- a scene like the previous one, but with the camera in another position (thus generating the same image from a different perspective).
 
-All of the images should be in the format of 800x600. But while testing you can be
+All of the images should be in the format of 800x600. But while testing you can use smaller resolution images in order to not wait for a long time.
+
+Another aspect you should consider is that the auditer will have to use your ray tracer, so make it as usable and optimized as possible.
 
 ### Instructions
 
@@ -74,3 +76,10 @@ As bonus for this project you can implement:
 - Reflection and refraction effects on the objects (make them shiny or reflective)
 - Add particles
 - Add fluids
+
+This project will help you learn about:
+
+- [Ray Tracing](<https://en.wikipedia.org/wiki/Ray_tracing_(graphics)>)
+- Computer generated imagery (CGI)
+- Algorithms
+- Geometry and maths
