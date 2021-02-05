@@ -21,18 +21,18 @@ There exists various shapes of intersections, we will focus on the widely seen f
                |    ↓    |    ↑    |
                |    ↓    |    ↑    |
                |    ↓    |    ↑    |
-               |r0 r1 r2 |    ↑    |
+               | r  s  l |    ↑    |
 _______________| ←  ↓  → |    ↑    |_____________
-                         |         ↑ r0
-← ← ← ← ← ← ←            |         ← r1 ← ← ← ← ←
-                         |         ↓ r2
+                         |         ↑ r
+← ← ← ← ← ← ←            |         ← s ← ← ← ← ←
+                         |         ↓ l
 _________________________|_______________________
-           r2 ↑          |
- → → → → → r1 →          |           → → → → → → 
-           r0 ↓          |
+           l ↑           |
+ → → → → → s →           |           → → → → → → 
+           r ↓           |
 _______________          |          _____________
                |         | ←  ↑  → |
-               |    ↓    |r2 r1 r0 |
+               |    ↓    | r  s  l |
                |    ↓    |    ↑    |
                |    ↓    |    ↑    |
                |    ↓    |    ↑    |
@@ -42,9 +42,9 @@ _______________          |          _____________
 
 For clarification reasons we will assume that a lane can have three different routes (consider you are in the vehicle position):
 
-- `r0`, turning right
-- `r1`, straight ahead
-- `r2`, turning left
+- `r`, turning right
+- `s`, straight ahead
+- `l`, turning left
 
 2. Traffic lights
 
@@ -65,17 +65,19 @@ You are free to decide what algorithm you want to implement for the traffic ligh
 
 Vehicles must obey this rules:
 
-- Autonomous, vehicles driving on a lane with a **given route** must 
-follow the direction of that route, its not possible for the driver to change lanes or route.
+- Vehicles must have a color depending on their route the colors are up to you to decide(ex:`r`- purple, `s`- Blue and `l`- Yellow). This must then be given during the audit
+
+- Autonomous, vehicles driving on a lane with a **given route** must follow the direction of
+that route, its not possible for the driver to change lanes or route.
 
 - Each vehicle must have a fixed velocity.
 
-- It must be kept a safety distance from other vehicles, if one vehicle stops the other vehicle thats 
+- It must be kept a safety distance from other vehicles, if one vehicle stops the other vehicle thats
 behind him must stop and keep its distance.
 
 - Vehicles must stop if the traffic light is red and proceed otherwise.
 
-- Vehicles must have different routes, either `r0`, `r1` or `r2`.
+- Vehicles must have different routes, either `r`, `s` or `l`.
 
 - Other vehicles such as emergency vehicles are not considered.
 
@@ -88,7 +90,7 @@ vehicles in different lanes and with different routes.
 
 For this it must be possible to do the following:
 
-- The `Arrow` keys must generate one vehicle in a specific direction and with a random route ( `r0`, `r1` and `r2`):
+- The `Arrow` keys must generate one vehicle in a specific direction and with a random route ( `r`, `s` and `l`):
   - `Up` south to north.
   - `Down` north to south.
   - `Right` west to east.

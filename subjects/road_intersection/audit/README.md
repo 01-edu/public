@@ -22,55 +22,55 @@
 
 ##### Try to generate tree vehicles in the same lane (do this to all lanes).
 
-###### Did all vehicles passed the intersection safely?
+###### Did all vehicles passed the intersection without any collision?
 
 ##### Try to generate two vehicles at the same time, one using the `"Up"` key and the other using the `"Down"` key (to this at least 3 times).
 
-###### Did all vehicles passed the intersection safely?
+###### Did all vehicles passed the intersection without any collision?
 
 ##### Try to generate two vehicles at the same time, one using the `"Right"` key and the other using the `"Left"` key (to this at least 3 times).
 
-###### Did all vehicles passed the intersection safely?
+###### Did all vehicles passed the intersection without any collision?
 
 ##### Try to generate two vehicles at the same time, one using the `"Up"` key and the other using the `"Left"` key (to this at least 3 times).
 
-###### Did all vehicles passed the intersection safely?
+###### Did all vehicles passed the intersection without any collision?
 
 ##### Try to generate two vehicles at the same time, one using the `"Up"` key and the other using the `"Right"` key (to this at least 3 times).
 
-###### Did all vehicles passed the intersection safely?
+###### Did all vehicles passed the intersection without any collision?
 
 ##### Try to generate two vehicles at the same time, one using the `"Down"` key and the other using the `"Left"` key (to this at least 3 times).
 
-###### Did all vehicles passed the intersection safely?
+###### Did all vehicles passed the intersection without any collision?
 
 ##### Try to generate two vehicles at the same time, one using the `"Down"` key and the other using the `"Right"` key (to this at least 3 times).
 
-###### Did all vehicles passed the intersection safely?
+###### Did all vehicles passed the intersection without any collision?
 
 ##### Try to generate five vehicles using the `"Up"` key, at the same time generate two vehicles using the key `"Right"`.
 
-###### Did all vehicles passed the intersection safely?
+###### Did all vehicles passed the intersection without any collision?
 
 ##### Try to generate one vehicle for all the lanes (to this at least 3 times).
 
-###### Did all vehicles passed the intersection safely?
+###### Did all vehicles passed the intersection without any collision?
 
 ##### Try to generate vehicles randomly using the `"R"` key. Then wait for at least 1 min.
 
-###### Did all vehicles passed the intersection safely?
+###### Did all vehicles passed the intersection without any collision?
 
 ###### Was there a low traffic congestion while running the application? (ex: high traffic congestion can be 8 or more vehicles in the same lane without proceeding)?
 
 ##### Try to generate vehicles with lanes at your choice.
 
-###### Did all vehicles passed the intersection safely?
+###### Did all vehicles passed the intersection without any collision?
 
 #### General
 
 ###### Is it not possible to spam the creation of vehicles(by pressing the arrow keys to many times)?
 
-###### Are vehicles assigned to their own route, and if so do they obey that route? (ex: r0 must turn left, r2 must turn right)
+###### Are vehicles assigned to their own route, and if so do they obey that route? (you can use the colors for each route to see this)
 
 ###### Are vehicles kept in a safe distance(do not collide when ever one stops)?
 
