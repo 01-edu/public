@@ -1,0 +1,76 @@
+## rt
+
+There are two ways to render a 3d scene into a 2d image: `rasterization` that basically converts the shapes and geometric to pixels and applies calculations to obtain the color, shadows, refraction, etc... of those pixels. The other method is called `ray tracing` and consists in drawing each pixel with already its color, shadow, refraction, reflection, etc....
+
+Imagine a camera pointing at a scene, and from that camera it is coming a bunch of rays tha bounce from object to object until it reaches the light source (lamp, sun, etc...). That is basically how a ray tracer works.
+
+In `ray tracing` each of these rays can be seen as a pixel in the image captured by the camera, and recursively the ray tracer will calculate from where the light comes from in that pixel, being able to give that pixel a color with some shadow aspect, some refraction aspect, and so on.
+
+To understand better how ray tracing works it is highly suggestive that you look online for this subject, as it can get quite complicated.
+
+### Objectives
+
+In this project it is supposed for you to implement the ray tracer method in order to be able to render a computer generated image containing a few objects.
+
+When building your ray tracer you have to take some points into consideration:
+
+- you need at least 4 simple objects: sphere, cube, plane and a cylinder.
+- your program must be able to change an object location before creating the image. (Example: render a sphere with its center on the point (1,1,1)).
+- you have to be able to look at the same scene from different angles by moving the camera/ point of view.
+- you also have to implement small light management, which includes: different brightness and shadows.
+
+As your ray tracer will probably be a bit slow to render high resolution scenes, you should make 4 scenes for the auditers to evaluate. These 4 images that you have to create consist of:
+
+- a sphere;
+- a plane and a cube with lower brightness than in the sphere image;
+- one of each of all the objects (one cube, one sphere, one cylinder and one plane);
+- the same scene as before, but with the camera in another position (thus generating the same image with another perspective).
+
+All of the images should be in the format of 800x600. But while testing you can be
+
+### Instructions
+
+In order to render images you will create a [.ppm](https://www.cs.swarthmore.edu/~soni/cs35/f13/Labs/extras/01/ppm_info.html) file. A .ppm file consists of an image header and an image body. Example:
+
+```
+P3              \
+4 4              > Image Header
+255             /
+0 0 0           \
+0 0 0            \
+0 0 0            |
+255 0 255        |
+100 0 0          |
+0 255 175        |
+0 0 0            |
+0 0 0             > Image Body
+0 0 0            |
+0 0 0            |
+015 175          |
+0 0 0            |
+255 0 255        |
+0 0 0            |
+0 0 0            /
+255 255 255     /
+```
+
+The image header consists of three lines:
+
+- the first one is the image format: what type of PPM (full color, ASCII enconding) image it is. P3 stands for the Portable PixMap type so you will be using this one.
+- the next stands for how many columns and rows of pixels the image will contain.
+- and the third line is the maximum color value, 255 is the most common value since the rgb color code is very well known.
+
+All the other lines below, are the rgb values for each pixel, for example the first line of the image body represents a black pixel (rgb(0,0,0) -> black). Each line represents one pixel, starting on the top left corner transitioning to the right and, in this case, the fifth line is the pixel in the first row on the second column.
+
+So with this in mind, you will have to make an algorithm that fills a file by printing each line. You can use the cargo command this way: `cargo run > output.ppm`. This will print the standard output to the file `output.ppm`.
+
+In order to create the previous mentioned objects you will need to search online for documentation about the geometrics of each.
+
+### Bonus
+
+As bonus for this project you can implement:
+
+- Textures to the surfaces of the objects
+- Reflection and refraction effects on the objects (make them shiny or reflective)
+- Add particles
+- Add fluids
