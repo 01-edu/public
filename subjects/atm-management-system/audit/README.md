@@ -1,16 +1,16 @@
 #### Functional
 
-##### Open the application and register a new user with the name `"Alice"` and the password `"q1w2e3r4t5y6"`
+##### Open the application and register a new user with the name `"Alice"` and the password `"q1w2e3r4t5y6"`.
 
-###### Is this user saved in the file `"./data/users.txt"`, and if so are all credentials correct (name and password)?
+###### Is this user saved in the file `"./data/users.txt"`, and if so, are all credentials correct (name and password)?
 
-##### Open the application and register again the user `"Alice"`.
+##### Open the application and re-register the user `"Alice"`.
 
-###### Did it displayed an error message saying that this user already exists?
+###### Did it display an error message stating that this user already exist?
 
 ##### Open the file `"./data/users.txt"`.
 
-###### Are all the user names unique? (ex: no repetition on the name Alice)
+###### Are all the user's names unique? (ex: no repetition on the name Alice)
 
 ##### Try and login as `"Alice"`.
 
@@ -18,21 +18,21 @@
 
 ##### Try to create two accounts using the user Alice, then select the option `"Update information of account"` and select an account number that does not exist for Alice.
 
-###### Did the application displayed some kind of error message saying that this account does not exist?
+###### Did the application displayed some kind of error message stating that this account does not exist?
 
-##### Resorting to the user Alice try and select the option `"Update information of account"` and select one of the accounts you created for Alice.
+##### Resorting to the user Alice, try and select the option `"Update information of account"` and select one of the accounts you created for Alice.
 
 ###### Did the the application prompt a choice of updating the **phone number** or the **country**?
 
-##### Resorting to the user Alice try and select the option `"Update information of account"` and select one of the accounts you created for Alice. Then update the phone number of that account.
+##### Resorting to the user Alice, try and select the option `"Update information of account"` and select one of the accounts you created for Alice. Then update the phone number of that account.
 
 ###### Was the phone number of that account updated in the application and the file `"records.txt"`?
 
-##### Resorting to the user Alice try and select the option `"Update information of account"` and select one of the accounts you created for Alice. Then update the country of that account.
+##### Resorting to the user Alice, try and select the option `"Update information of account"` and select one of the accounts you created for Alice. Then update the country of that account.
 
 ###### Was the country of that account updated in the application and the file `"records.txt"`?
 
-##### Resorting to the user Alice try to create a new account with: date `"10/10/2012"` account number `"834213"`, country `"UK"`, phone number `"291231392"`, deposit amount  $`"1001.20"`, type of account `"saving"`. Then select `"Check accounts"` choose the account you just created.
+##### Resorting to the user Alice, try to create a new account with: date `"10/10/2012"` account number `"834213"`, country `"UK"`, phone number `"291231392"`, deposit amount  $`"1001.20"`, type of account `"saving"`. Then select `"Check accounts"` choose the account you just created.
 
 ###### Did the application displayed the account information and the gain of $5.84 of interest on day 10 of every moth?
 
