@@ -98,6 +98,8 @@ For this it must be possible to do the following:
 
 - The `Esc` key must finish the simulation.
 
+> Arrow keys must not let the user spam the creation of vehicles, vehicles must be created with a safe distance between them.
+
 ### Example
 
 You can see an example [here](https://youtu.be/pC79E0fdzYo).
@@ -106,7 +108,7 @@ You can see an example [here](https://youtu.be/pC79E0fdzYo).
 
 You can implement the following optional features :
 
-- Vehicle and traffic lights animation. You can find some cool assets :
+- Vehicle and traffic lights animation and image rendering. You can find some cool assets :
   - [limezu](https://limezu.itch.io/)
   - [finalbossblue](http://finalbossblues.com/timefantasy/free-graphics/).
   - [mobilegamegraphics](https://mobilegamegraphics.com/product-category/all_products/freestuff/).
