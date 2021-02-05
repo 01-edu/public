@@ -2,7 +2,14 @@
 
 ### Instructions
 
-Write a function `rev_str` that takes a `&str` as a parameter, and returns a string with its words reversed.
+Write a **function** `rev_str` that takes a `&str` as a parameter, and returns a `String` with its letters reversed.
+
+### Notions
+
+- [Strings](https://doc.rust-lang.org/rust-by-example/std/str.html)
+- [Primitive Type str](https://doc.rust-lang.org/std/primitive.str.html)
+- [Primtive Type char](https://doc.rust-lang.org/std/primitive.char.html)
+- [Module std::string](https://doc.rust-lang.org/std/string/index.html)
 
 ### Expected Functions
 
@@ -27,7 +34,7 @@ fn main() {
 }
 ```
 
-And it's output:
+And its output:
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run

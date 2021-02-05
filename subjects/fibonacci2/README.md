@@ -2,12 +2,16 @@
 
 ### Instructions
 
-Complete the body of the function `fibonacci`.
+Complete the body of the **function** `fibonacci`.
 
-This functions receives a number n and returns the nth number in the fibonacci series.
+This functions receives a number `n` and returns the nth number in the fibonacci series.
 
-The Fibonacci Series starts like this: 0, 1, 1, 2, 3, 5, 8, 13... so fibonacci(2) = 1 and fibonnacci(4) = 3
+The Fibonacci Series starts like this: 0, 1, 1, 2, 3, 5, 8, 13 etc...  
 
+### Notions
+
+- [Primitives](https://doc.rust-lang.org/stable/rust-by-example/primitives.html)
+- [Functions](https://doc.rust-lang.org/stable/rust-by-example/fn.html)
 
 ### Expected function
 
@@ -42,4 +46,3 @@ The element in the position 22 in fibonacci series is 17711
 The element in the position 20 in fibonacci series is 6765
 student@ubuntu:~/[[ROOT]]/test$
 ```
-
