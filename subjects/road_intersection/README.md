@@ -7,71 +7,106 @@ Its up to you to decide which library and file system you want do use to create 
 
 ### Instructions
 
-There exists various shapes of intersections, we will focus on the widely seen four-lane intersection. For simplicity each lane will have two directions
+#### **Environment and Rules**
+
+You must create an environment which contains all the objects described in this section. You can display the objects as you wish.
+
+1. Roads
+
+There exists various shapes of intersections, we will focus on the widely seen four-lane intersection. For simplicity each lane will have two directions.
 
 ```console
-                       |    ↓    |    ↑    |
-                       |    ↓    |    ↑    |
-                       |    ↓    |    ↑    |
-                       |    ↓    |    ↑    |
-                       |    ↓    |    ↑    |
-                       |         |    ↑    |
-                       |r0 r1 r2 |         |
-_______________________| ←  ↓  → |         |___________________
-                                 |            ↑ r3
-    ← ← ← ← ← ←                  |            ← r4    ← ← ← ← ←
-                                 |            ↓ r5
-_________________________________|______________________________
-                  r11 ↑          |
-   → → → → → →    r10 →          |                   → → → → → →
-                   r9 ↓          |
-_______________________          |          ____________________
-                       |         | ←  ↑  → |
-                       |    ↓    |r8 r7 r6 |
-                       |    ↓    |         |
-                       |    ↓    |    ↑    |
-                       |    ↓    |    ↑    |
-                       |    ↓    |    ↑    |
-                       |    ↓    |    ↑    |
-                       |    ↓    |         |
+               |    ↓    |    ↑    |
+               |    ↓    |    ↑    |
+               |    ↓    |    ↑    |
+               |    ↓    |    ↑    |
+               |    ↓    |    ↑    |
+               |r0 r1 r2 |    ↑    |
+_______________| ←  ↓  → |    ↑    |_____________
+                         |         ↑ r0
+← ← ← ← ← ← ←            |         ← r1 ← ← ← ← ←
+                         |         ↓ r2
+_________________________|_______________________
+           r2 ↑          |
+ → → → → → r1 →          |           → → → → → → 
+           r0 ↓          |
+_______________          |          _____________
+               |         | ←  ↑  → |
+               |    ↓    |r2 r1 r0 |
+               |    ↓    |    ↑    |
+               |    ↓    |    ↑    |
+               |    ↓    |    ↑    |
+               |    ↓    |    ↑    |
+               |    ↓    |    ↑    |
 ```
 
-There are 4 incoming lanes. Each lane has a set of consecutive unique ids `(ri, ri, ri)` where `(i = 0, 1, ⋯, 11)`, numbered clockwise starting from the top-most. Each set of ids
-indicates the outgoing direction of a vehicle. Vehicles driving in a given lane will have a given **route** (r0 | r1 .... r11) that indicates the lane destination of that vehicles.
+For clarification reasons we will assume that a lane can have three different routes (consider you are in the vehicle position):
 
-For this raid you must follow these assumptions:
+- `r0`, turning right
+- `r1`, straight ahead
+- `r2`, turning left
 
-- Vehicles are to be **autonomous**, so Vehicles driving on a lane with a **given route** must follow the direction of that route, its not possible for the
-  driver to change lane.
+2. Traffic lights
 
-- Other traffic units such as pedestrians and emergency vehicles are not considered.
+Traffic lights are signalling devices positioned at road intersections that follows an universal color code,
+normally its green, red and amber, but for this project you will just use the colors **red** and **green**.
 
-- Vehicles can have different velocities, it is up to you to decide the velocity for each vehicle but it must be at least two different
-  velocities (0 does not count as a velocity for the vehicle).
-
-- Vehicles should not collide in a traffic lane. It should be kept a safety distance from other vehicles
-
-- Vehicles should be generated randomly, both route and lane should be also random.
-
-#### **Stop conditions**
-
-As you know vehicles must not collide, but for **debugging and testing** reasons you must show some kind of feedback (logs, terminal display or canvas display its up to you to decide)
-if vehicles collide, so that the users can conclude that the vehicles collided.
-Each lane will have a traffic light system (either imaginary of real), the objective is that each vehicle stops if there is any type of collision with other vehicles. Otherwise the vehicles can proceed in their lane.
+You will then have to create some kind of representation for the traffic lights and distribute them for each lane in the intersection.
 
 You are free to decide what algorithm you want to implement for the traffic light system, but keep in mind that traffic congestion should not be to high.
+
+3. Vehicles
+
+```
+  ______
+ /|_||_\`.__
+=`-(_)--(_)-'
+```
+
+Vehicles must obey this rules:
+
+- Autonomous, vehicles driving on a lane with a **given route** must 
+follow the direction of that route, its not possible for the driver to change lanes or route.
+
+- Each vehicle must have a fixed velocity.
+
+- It must be kept a safety distance from other vehicles, if one vehicle stops the other vehicle thats 
+behind him must stop and keep its distance.
+
+- Vehicles must stop if the traffic light is red and proceed otherwise.
+
+- Vehicles must have different routes, either `r0`, `r1` or `r2`.
+
+- Other vehicles such as emergency vehicles are not considered.
+
+---
+
+#### **Commands**
+
+The generating of vehicle must be done using the keyboard event. You must be able to generate
+vehicles in different lanes and with different routes.
+
+For this it must be possible to do the following:
+
+- The `Arrow` keys must generate one vehicle in a specific direction and with a random route ( `r0`, `r1` and `r2`):
+  - `Up` south to north.
+  - `Down` north to south.
+  - `Right` west to east.
+  - `Left` east to west.
+
+- The `R` key must generate random vehicles with random lanes and routes.
+
+- The `Esc` key must finish the simulation.
 
 ### Example
 
 You can see an example [here](https://youtu.be/pC79E0fdzYo).
 
-### Optional
+### Bonus
 
 You can implement the following optional features :
 
-- A visualization of the traffic light, for example: a line that changes color from `Red` to `Green`.
-
-- Vehicle movement animation. You can find some cool assets :
+- Vehicle and traffic lights animation. You can find some cool assets :
   - [limezu](https://limezu.itch.io/)
   - [finalbossblue](http://finalbossblues.com/timefantasy/free-graphics/).
   - [mobilegamegraphics](https://mobilegamegraphics.com/product-category/all_products/freestuff/).
