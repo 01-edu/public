@@ -12,6 +12,11 @@ Riddle: I am the beginning of the end, and the end of time and space. I am essen
 
 Answer: The letter e
 
+### Notions
+
+- [Moduler std::io](https://doc.rust-lang.org/std/io/index.html)
+- [loop](https://doc.rust-lang.org/std/keyword.loop.html)
+
 ### Usage
 
 ```console
