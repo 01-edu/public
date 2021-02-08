@@ -12,21 +12,21 @@ For this project you will only have to create a simple `Unix` interpreter where 
 ### Instructions
 
 - You must program a mini `Unix` interpreter.
-- This interpreter must display a simple `$` and wait until you type a command line witch will be validated by pressing enter.
+- This interpreter must display at least a simple `$` and wait until you type a command line witch will be validated by pressing enter.
 - The `$` will be shown again only once the command has been completely executed.
 - The command lines are simple, you will not have pipes, redirection or any other advanced functions.
 - You must manage the errors, by displaying a message adapted to the error output.
 - You must implement the following commands that will behave exactly like the originals:
-    - echo
-    - cd
-    - ls
-    - pwd
-    - cat
-    - cp
-    - rm
-    - mv
-    - mkdir
-    - exit
+  - echo
+  - cd
+  - ls
+  - pwd
+  - cat
+  - cp
+  - rm
+  - mv
+  - mkdir
+  - exit
 - You must manage the program interruption `Ctrl + D`.
 - The project has to be written in a compiled language like (C, Rust, go or other), no semi compiled language like (Pearl and others) are allowed.
 - The code must respect the [good practices](https://public.01-edu.org/subjects/good-practices/)
