@@ -12,8 +12,9 @@ In `job control`, you will have to implement the following [builtins](https://ww
 - bg
 - fg
 - kill
-- wait
-- suspend
+- disown
+
+You must also be able to stop jobs with the `Ctrl + Z`.
 
 ### Instructions
 
