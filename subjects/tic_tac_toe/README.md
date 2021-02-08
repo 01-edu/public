@@ -2,32 +2,40 @@
 
 ### Instructions
 
-You must create a tic tac toe checker.
+You must create a `tic tac toe` checker.
 
 Create the following functions:
 
-- `tic_tac_toe` that receives a table of vectors (Vec<Vec<&str>>) and returns a string : `player O won` or `player X won` or `Tie`
-- `diagonals` that will receive a player and a table. It should return a boolean, this must return true if all the diagonals are completed by the player
-- `horizontal` that will receive a player and a table. It should return a boolean, this must return true if one of the horizontal lines are completed by the player
-- `vertical` that will receive a player and a table. It should return a boolean, this must return true if one of the vertical lines are completed by the player
+- `tic_tac_toe` which receives:
+    - a table of vectors (Vec<Vec<&str>>).
+    - It should return a String `player O won` or `player X won` or `Tie`.
+- `diagonals` which will receive:
+    - a player and a table. 
+    - It should return a boolean, this must return `true` if all the diagonals are completed by the player.
+- `horizontal` which will receive:
+    - a player and a table. 
+    - It should return a boolean, this must return `true` if one of the horizontal lines are completed by the player.
+- `vertical` which will receive: 
+    - a player and a table. 
+    - It should return a boolean, this must return `true` if one of the vertical lines are completed by the player.
 
 ### Notions
 
-- https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html
+- [references and borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html)
 
 ### Expected Functions
 
 ```rust
-fn tic_tac_toe(table: Vec<Vec<&str>>) -> String {
+pub fn tic_tac_toe(table: Vec<Vec<&str>>) -> String {
 }
 
-fn diagonals(player: &str, table: &Vec<Vec<&str>>) -> bool {
+pub fn diagonals(player: &str, table: &Vec<Vec<&str>>) -> bool {
 }
 
-fn horizontal(player: &str, table: &Vec<Vec<&str>>) -> bool {
+pub fn horizontal(player: &str, table: &Vec<Vec<&str>>) -> bool {
 }
 
-fn vertical(player: &str, table: &Vec<Vec<&str>>) -> bool {
+pub fn vertical(player: &str, table: &Vec<Vec<&str>>) -> bool {
 }
 ```
 
@@ -36,6 +44,8 @@ fn vertical(player: &str, table: &Vec<Vec<&str>>) -> bool {
 Here is a program to test your function
 
 ```rust
+use tic_tac_toe::*;
+
 fn main() {
     println!(
         "{:?}",

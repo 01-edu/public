@@ -2,13 +2,13 @@
 
 ### Instructions
 
-Create the following **functions**:
+Create the following functions:
 
-- `is_empty`, which returns `true` if a string is empty
-- `is_ascii`, which returns `true` if all characters of a given string is in ASCII range
-- `contains`, which returns `true` if the string contains a given pattern
-- `split_at`, which divides a string in two returning a tuple
-- `find`, which returns the index if the first character of a given string which matches the pattern
+- `is_empty`, that returns true if a string is empty
+- `is_ascii`, that returns true if all characters of a given string is in ASCII range
+- `contains`, that returns true if the string contains a pattern given
+- `split_at`, that divides a string in two returning a tuple
+- `find', that returns the index if the first character of a given string that matches the pattern
 
 > This exercise will test the **heap allocation** of your function!
 > So try your best to allocate the minimum data on the heap! (hit: &str)
