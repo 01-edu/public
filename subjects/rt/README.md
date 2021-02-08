@@ -8,7 +8,7 @@ Here we can see a visual difference between each method:
 
 ![image.png](raytrace2.png)
 
-Imagine a camera pointing at a scene, and from that camera it is coming a bunch of rays tha bounce from object to object until it reaches the light source (lamp, sun, etc...). That is basically how a ray tracer works.
+Imagine a camera pointing at a scene, and from that camera it is coming a bunch of rays that bounce from object to object until it reaches the light source (lamp, sun, etc...). That is basically how a ray tracer works.
 
 In `ray tracing` each of these rays can be seen as a pixel in the image captured by the camera, and recursively the ray tracer will calculate from where the light comes from in that pixel, being able to give that pixel a color with some shadow aspect, some refraction aspect, and so on.
 
@@ -16,7 +16,7 @@ To understand better how ray tracing works it is highly suggestive that you look
 
 ### Objectives
 
-In this project it is supposed for you to implement the ray tracer method in order to be able to render a computer generated image containing a few objects.
+In this project it is supposed to implement the ray tracer method in order to be able to render a computer generated image containing a few objects.
 
 When building your ray tracer you have to take some points into consideration:
 
@@ -34,7 +34,19 @@ As your ray tracer will probably be a bit slow to render high resolution scenes,
 
 All of the images should be in the format of 800x600. But while testing you can use smaller resolution images in order to not wait for a long time.
 
-Another aspect you should consider is that the auditer will have to use your ray tracer, so make it as usable and optimized as possible.
+Another aspect you should consider is that the auditer will have to use your ray tracer, so make it as usable and optimized as possible. You should provide the auditer some documentation.
+
+#### Documentation
+
+By documentation we mean, the explaining of how does the ray tracer works and how to work with it, for example: how to create an object, how to change brightness in a scene, etc. A new user of your ray tracer, after reading the documentation has to be able to use it without too much guessing work.
+
+So for this you will have to create a [markdown](https://www.markdownguide.org/getting-started/) file, in which will have to contain:
+
+- Explanation on the features of your ray tracer
+- Code examples and explanations on how to:
+  - create an instance of each object (sphere, cube, plane and cylinder)
+  - change brightness
+  - change camera position and angle
 
 ### Instructions
 

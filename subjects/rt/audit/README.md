@@ -22,14 +22,14 @@
 
 ###### Considering all of the previous pictures, can you see shadows from the objects?
 
+###### Did the student provided documentation for the ray tracer on how to use it (create elements, change brightness and move the camera)?
+
 #### Bonus
 
-###### Did the student include a README for the project explaining how to use the ray tracer?
+###### +Is it possible to add textures to the surface of the objects?
 
-###### Is it possible to add textures to the surface of the objects?
+###### +Is it possible to make reflective and/or refractive objects?
 
-###### Is it possible to make reflective and/or refractive objects?
+###### +Is it possible to add particles?
 
-###### Is it possible to add particles?
-
-###### Is it possible to add fluids?
+###### +Is it possible to add fluids?
