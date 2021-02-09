@@ -11,9 +11,8 @@ However being familiar with Docker is **mandatory** for adding your own exercise
 
 ## Prerequisites
 
--A GitHub account where your exercises repository will be stored [https://github.com/](https://github.com/).
-
--A Docker Hub account [https://hub.docker.com/](https://hub.docker.com/).
+- A GitHub account where your exercises repository will be stored [https://github.com](https://github.com)
+- A Docker Hub account [https://hub.docker.com](https://hub.docker.com)
 
 ## Setup of GitHub repository
 
@@ -39,9 +38,9 @@ It is the button `New` (the button is on the top corner right side)
 - Please see below the settings to follow.
   (Please not that it might take up to 10 mins for your page to be published)
 
-![sceenshot 1](img/adding-exercises-repository/1.png)
+![screenshot 1](img/adding-exercises-repository/1.png)
 
-- You will notice that a message says `Your site is published at https://yourgithublogin.github.io/nameofyourrepo
+- You will notice that a message says Your site is published at “https://yourgithublogin.github.io/nameofyourrepo”
 
 ### The addition of a custom project
 
@@ -89,14 +88,14 @@ in the children attributes of the module,
 2. In your account, go to your settings and link your GitHub account.
 3. Create a repository named “test” and make sure that your GitHub account is linked.
    If you see this image,
-   ![sceenshot 2](img/adding-exercises-repository/2.png)
+   ![screenshot 2](img/adding-exercises-repository/2.png)
    It means your GitHub account is correctly linked.
 4. In the Builds tab configure the automated build settings as below (for the go tests).
-   ![sceenshot 3](img/adding-exercises-repository/3.png)
-5. Once the build is complete (it can take 5 to 15 mins). Go back to the attributes of the exercise,
-   Add the attribute **testImage (type string)**
-   Fill it with the name of the repository,
-   **In this example: frenchris/test**
+   ![screenshot 3](img/adding-exercises-repository/3.png)
+5. Once the build is complete (it can take 5 to 15 mins). Go back to the attributes of the exercise:
+   - Add the attribute **testImage (type string)**
+   - Fill it with the name of the repository,
+     **in this example: frenchris/test**
 6. Once your exercise has both the attributes completed correctly, the exercise is viable and can be tested on the server which was selected for its addition.
 7. As a reminder to test the exercise it is suggested to follow these steps:
    - `Create` a custom `Quest-test` object
