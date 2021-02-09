@@ -88,34 +88,25 @@ in the children attributes of the module,
 
 ## Setup of your docker repository
 
-- 1. Sign in your docker hub account and link it to your repository.
-
-- 2. In your account, go to your settings and link your github account.
-
-- 3. Create a repository named “test” and make sure that your github account is linked.
-     If you see this image,
-
-![sceenshot 2](img/adding-exercises-repository/2.png)
-
-It means your github account is correctly linked.
-
-- 4. In the Builds tab configure the automated build settings as below (for the go tests).
-
-![sceenshot 3](img/adding-exercises-repository/3.png)
-
-- 5. Once the build is complete (it can take 5 to 15 mins). Go back to the attributes of the exercise,
-     Add the attribute **testImage (type string)**
-     Fill it with the name of the repository,
-     **In this example: frenchris/test**
-
-- 6. Once your exercise has both the attributes completed correctly, the exercise is viable and can be tested on the server which was selected for its addition.
-
-- 7. As a reminder to test the exercise it is suggested to follow these steps:
-     a. `Create` a custom `Quest-test` object
-     b. `Adding` the new `exercise` object as a child to the newly created `Quest-test` object
-     c. `Create` a `Piscine-test` object
-     d. `Adding` the new `Quest-test` as a child to the newly created `Piscine-test` object
-     e. `Adding` the `Piscine-test` to the `campus` object as **first child**
-     f. Go to the event page and launch the newly created `Piscine-test`. (You may need to refresh the page 2-3 times before the `campus/Piscine-test` option appears)
-     g. Once the event is launched, use the event page to add yourself as a student in the launched event `Piscine-test`
-     h. You can now try the exercise. If everything is well set, the subject should be loaded and, when you submit a correct solution, the exercise should pass.
+1. Sign in your docker hub account and link it to your repository.
+2. In your account, go to your settings and link your github account.
+3. Create a repository named “test” and make sure that your github account is linked.
+   If you see this image,
+   ![sceenshot 2](img/adding-exercises-repository/2.png)
+   It means your github account is correctly linked.
+4. In the Builds tab configure the automated build settings as below (for the go tests).
+   ![sceenshot 3](img/adding-exercises-repository/3.png)
+5. Once the build is complete (it can take 5 to 15 mins). Go back to the attributes of the exercise,
+   Add the attribute **testImage (type string)**
+   Fill it with the name of the repository,
+   **In this example: frenchris/test**
+6. Once your exercise has both the attributes completed correctly, the exercise is viable and can be tested on the server which was selected for its addition.
+7. As a reminder to test the exercise it is suggested to follow these steps:
+   - `Create` a custom `Quest-test` object
+   - `Adding` the new `exercise` object as a child to the newly created `Quest-test` object
+   - `Create` a `Piscine-test` object
+   - `Adding` the new `Quest-test` as a child to the newly created `Piscine-test` object
+   - `Adding` the `Piscine-test` to the `campus` object as **first child**
+   - Go to the event page and launch the newly created `Piscine-test`. (You may need to refresh the page 2-3 times before the `campus/Piscine-test` option appears)
+   - Once the event is launched, use the event page to add yourself as a student in the launched event `Piscine-test`
+   - You can now try the exercise. If everything is well set, the subject should be loaded and, when you submit a correct solution, the exercise should pass.
