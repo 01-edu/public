@@ -41,7 +41,7 @@ ascii-art audit `README.md` file. Here is the [link](https://raw.githubuserconte
 - Note that the branch may be called `main` instead of `master`. 
 (Please not that it might take up to 10 mins for your page to be pusblished)
 
-<img width="1280" alt="Capture d’écran " src="img/adding-exercises-repository/1.png">
+![sceenshot 1](img/adding-exercises-repository/1.png)
 
 - You will notice that a message says `Your site is published at https://yourgithublogin.github.io/nameofyourrepo
 
@@ -95,13 +95,13 @@ If the paths are correctly inputed and your repository is correctly publicly pub
 - 3. Create a repository named “test” and make sure that your github account is linked. 
 If you see this image,
 
-<img width="160" alt="Capture d’écran " src="img/adding-exercises-repository/2.png">
+![sceenshot 2](img/adding-exercises-repository/2.png)
 
 It means your github account is correctly linked.
 
 - 4. In the Builds tab configure the automated build settings as below (for the go tests).
 
-<img width="1280" alt="Capture d’écran " src="img/adding-exercises-repository/3.png">
+![sceenshot 3](img/adding-exercises-repository/3.png)
 
 
 - 5. Once the build is complete (it can take 5 to 15 mins). Go back to the  attributes of the exercise,
