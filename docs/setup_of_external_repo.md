@@ -42,7 +42,7 @@ It is the button `New` (the button is on the top corner right side)
 
 - You will notice that a message says Your site is published at “https://yourgithublogin.github.io/nameofyourrepo”
 
-### The addition of a custom project
+## The addition of a custom project
 
 **Take note of the paths of a project subject you added and add them to the attributes**
 
