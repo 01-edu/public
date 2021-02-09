@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create the structures `Circle` and `Point` and the methods necessary for the code in [usage](#usage) to compile and run giving the expected result.
+Create the structures `Circle` and `Point` and the methods necessary for the code in [usage](#usage) to compile and run giving the expected output.
 
 Methods:
   - Point;
@@ -20,7 +20,7 @@ Associated Functions
 	
 ### Expected Functions and Structures
 
-This snippets are incomplete and it's part of the exercise to discover the how to complete them
+This snippets are incomplete and it is part of the exercise to discover how to complete them.
 
 ```rust
 struct Circle {
