@@ -1,3 +1,7 @@
+#### General
+
+###### Was the project written in a compiled programming language?
+
 #### Functional
 
 ##### Try to run the command `"tar -czf home.tar.gz . &"` then run the command `"jobs"`.
