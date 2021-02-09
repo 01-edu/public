@@ -5,21 +5,21 @@
 This document is a guide on how to add your own repository to store your projects and exercises.
 This guide assumes that you have understood the files structures of the repository [public](https://github.com/01-edu/public).
 It will only address the settings part of this task.
-The addition of projects will be treated first as it does not require the knowledge of docker.
+The addition of projects will be treated first as it does not require the knowledge of Docker.
 
-However being familiar with docker is **mandatory** for adding your own exercises with your own tests.
+However being familiar with Docker is **mandatory** for adding your own exercises with your own tests.
 
 ## Prerequisites
 
--A github account where your exercises repository will be stored [https://github.com/](https://github.com/).
+-A GitHub account where your exercises repository will be stored [https://github.com/](https://github.com/).
 
--A dockerHub account [https://hub.docker.com/](https://hub.docker.com/).
+-A Docker Hub account [https://hub.docker.com/](https://hub.docker.com/).
 
 ## Setup of GitHub repository
 
 ### Create your own public repository
 
-Once logged into your github account, click on the creation of new repository:
+Once logged into your GitHub account, click on the creation of new repository:
 It is the button `New` (the button is on the top corner right side)
 
 ### Git clone your repository and prepare an example for the folder structure for projects
@@ -32,7 +32,7 @@ It is the button `New` (the button is on the top corner right side)
   ascii-art audit `README.md` file. Here is the [link](https://raw.githubusercontent.com/01-edu/public/master/subjects/ascii-art/audit/README.md) to the raw file.
 - Once all those files are done, git push them to your new repository
 
-### Publish the repository on github pages
+### Publish the repository on GitHub pages
 
 - Go to the settings tab of your projects repository.
 - On the option page find the GitHub Pages section.
@@ -81,16 +81,16 @@ in the children attributes of the module,
 - Go to event, and launch the event `yourcampus/Div-custom`
 - Add yourself and other testing accounts to the newly launched event.
 - Test your subject by creating a group and launching an audit.
-  If the paths are correctly inputed and your repository is correctly publicly published on gitHub pages, you will see your subject and your audit in the platform.
+  If the paths are correctly inputed and your repository is correctly publicly published on GitHub pages, you will see your subject and your audit in the platform.
 
-## Setup of your docker repository
+## Setup of your Docker repository
 
-1. Sign in your docker hub account and link it to your repository.
-2. In your account, go to your settings and link your github account.
-3. Create a repository named “test” and make sure that your github account is linked.
+1. Sign in your Docker Hub account and link it to your repository.
+2. In your account, go to your settings and link your GitHub account.
+3. Create a repository named “test” and make sure that your GitHub account is linked.
    If you see this image,
    ![sceenshot 2](img/adding-exercises-repository/2.png)
-   It means your github account is correctly linked.
+   It means your GitHub account is correctly linked.
 4. In the Builds tab configure the automated build settings as below (for the go tests).
    ![sceenshot 3](img/adding-exercises-repository/3.png)
 5. Once the build is complete (it can take 5 to 15 mins). Go back to the attributes of the exercise,
