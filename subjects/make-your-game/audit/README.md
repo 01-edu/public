@@ -32,7 +32,7 @@
 
 ##### Try moving the player/element using the proper commands and keys to do so
 
-##### Does the player obey the commands?
+###### Does the player obey the commands?
 
 ##### Try moving the player/element using the proper commands and keys to do so
 
