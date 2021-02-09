@@ -1,6 +1,6 @@
-# ADDITION OF A REPOSITORY PROCEDURE
+# Addition of repository procedure
 
-## INTRODUCTION
+## Introduction
 
 This document is a guide on how to add your own repository to store your projects and exercises.
 This guide assumes that you have understood the files structures of the repository [public](https://github.com/01-edu/public).
@@ -9,21 +9,21 @@ The addition of projects will be treated first as it does not require the knowle
 
 However being familiar with docker is **mandatory** for adding your own exercises with your own tests. 
 
-## PREQUISITES
+## Prerequisites
 
 -A github account where your exercises repository will be stored [https://github.com/](https://github.com/).
 
 -A dockerHub account [https://hub.docker.com/](https://hub.docker.com/). 
 
 
-## I- SETUP OF YOUR GITHUB REPOSITORY
+## I- Setup of GitHub repository
 
-## **1. Create your own public repository**
+### 1. Create your own public repository
 
 Once logged into your github account, click on the creation of new repository:
 It is the button `New` (the button is on the top corner right side)
 
-## **2. Git clone your repository and prepare an example for the folder structure for projects**
+### 2. Git clone your repository and prepare an example for the folder structure for projects
 
 - Create a folder called `subjects`
 - Inside this folder create a folder called what you wish (example: `firstproject`)
@@ -33,7 +33,7 @@ It is the button `New` (the button is on the top corner right side)
 ascii-art audit `README.md` file. Here is the [link](https://raw.githubusercontent.com/01-edu/public/master/subjects/ascii-art/audit/README.md) to the raw file. 
 - Once all those files are done, git push them to your new repository
 
-## **3. Publish the repository on github pages**
+### 3. Publish the repository on github pages
 
 - Go to the settings tab of your projects repository.
 - On the option page find the GitHub Pages section.
@@ -45,7 +45,7 @@ ascii-art audit `README.md` file. Here is the [link](https://raw.githubuserconte
 
 - You will notice that a message says `Your site is published at https://yourgithublogin.github.io/nameofyourrepo
 
-## **4. The addition of a custom project
+### 4. The addition of a custom project
 
 **Take note of the paths of a project subject you added and add them to the attributes**
 
@@ -86,7 +86,7 @@ This attribute will isole the event during matches to the user of the event.
 - Test your subject by creating a group and launching an audit.  
 If the paths are correctly inputed and your repository is correctly publicly published on gitHub pages, you will see your subject and your audit in the platform.
 
-## II- SETUP OF YOUR DOCKER REPOSITORY 
+## II- Setup of your docker repository
 
 - 1. Sign in your docker hub account and link it to your repository.
 
