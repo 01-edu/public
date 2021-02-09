@@ -50,4 +50,6 @@ The following are the bonuses for this project:
 - Animate the interaction points.
 - Add looping background music during the experience.
 
+[Here](https://www.youtube.com/playlist?list=PLHyAJ_GrRtf9sxZqgfPVM06PrLk8_CWA-) you can find an instructional playlist on Unreal Engine.
+
 Ah! I made you look.

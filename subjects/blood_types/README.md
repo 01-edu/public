@@ -2,12 +2,12 @@
 
 ### Instructions
 
-In this exercise you will create a model data model of blood types and an API to deal with blood types
+In this exercise you will create a data model of blood types and an API to deal with blood types
 
-Start by creating the data representation of the blood types:
+Start by copying the data representation of the blood types:
 - Create the enumerator `Antigen` that has 4 possibilities: A, B, O and AB And the enumerator `RhFactor` that has two possible values: Positive and Negative
 
-- After, create the struct BloodType that contains two fields with the names antigen and rh_factor
+- After, copy the struct BloodType that contains two fields with the names antigen and rh_factor
 
 - To provide a simple way to create blood types implement the trait FromStr for BloodType (which will allow us to use the `parse` method and the associated function from_str, so we can do:
 
@@ -19,11 +19,11 @@ Start by creating the data representation of the blood types:
 
 - Implement the trait std::Debug for BloodType allowing to print a vector such as [BloodType { antigen: A, rh_factor: Positive}, BloodType{ antigen: B, rh_factor: Negative}] as [ A+, A-] using the formatting {:?}
 
-Write three methods for BloodType:
+- Lastly, write three methods for BloodType:
 
-- `can_receive_from`: which returns true if self can receive blood from `other` blood type
-- `donors`: which returns all the blood types that can give blood to self
-- `recipients`: which returns all the blood types that can receive blood from self
+  - `can_receive_from`: which returns true if `self` can receive blood from `other` blood type
+  - `donors`: which returns all the blood types that can give blood to `self`
+  - `recipients`: which returns all the blood types that can receive blood from `self`
 
 ### Expected Functions and Structures
 
