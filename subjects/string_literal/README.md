@@ -42,12 +42,23 @@ fn find(v: &str, pat: char) -> usize {
 Here is a program to test your function
 
 ```rust
-
+fn main() {
+    println!("{}", is_empty(""));
+    println!("{}", is_ascii("rust"));
+    println!("{}", contains("rust", "ru"));
+    println!("{:?}", split_at("rust", 2));
+    println!("{}", find("rust", 'u'));
+}
 ```
 
 And its output
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run
+true
+true
+true
+("ru", "st")
+1
 student@ubuntu:~/[[ROOT]]/test$
 ```
