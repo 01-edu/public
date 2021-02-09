@@ -62,13 +62,11 @@ https://frenchris.github.io/nameofyourrepo/subjects/firstproject/audit/
 This path should be added to the attribute “subject” of type string in the object attribute of the new exercise.
 
 - Once both those path are noted, create your project on your server.
-
 - Add the regular attributes (`groupMin`, `groupMax`, `language`, `exerciseType`)
 - Add the optional attributes to test if your wish (`auditsRatio`, `auditsRequired`) both set to 1
-
 - And add the `audit` and `subject` attributes (of type `string`) with the previously noted paths
 
-Once the attributes are filled.
+  Now that the attributes are filled.
 
 - Create a module, called `Div-custom` for example. Add its standard attributes.
 - Add `firstproject` as a child to `Div-custom`.
@@ -79,7 +77,6 @@ in the children attributes of the module,
 - Add `matchWhere` as a `FUNCTION`
 - Set its value to `USERINEVENT`
   This attribute will isole the event during matches to the user of the event.
-
 - Add this `Div-custom` as a child in your campus object
 - Go to event, and launch the event `yourcampus/Div-custom`
 - Add yourself and other testing accounts to the newly launched event.
