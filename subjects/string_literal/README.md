@@ -42,6 +42,8 @@ fn find(v: &str, pat: char) -> usize {
 Here is a program to test your function
 
 ```rust
+use string_literal::*;
+
 fn main() {
     println!("{}", is_empty(""));
     println!("{}", is_ascii("rust"));
