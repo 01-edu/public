@@ -42,7 +42,7 @@ It is the button `New` (the button is on the top corner right side)
 
 - You will notice that a message says Your site is published at “https://yourgithublogin.github.io/nameofyourrepo”
 
-### Configuration of docker image (if exercises tests need to be added)
+### Configuration of Docker image (if exercises tests need to be added)
 
 The container runs with the following settings (options of `docker run`) :
 
