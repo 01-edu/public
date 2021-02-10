@@ -6,6 +6,7 @@ Create a **function** `contain` that checks a `HashMap` to see if it contains a 
 
 Create a **function** `remove` that removes a given key from the `HashMap`.
 
+- Note: pay attention to the comment in the [usage](#usage)
 ### Notions
 
 - https://doc.rust-lang.org/rust-by-example/std/hash.html
@@ -36,17 +37,23 @@ fn main() {
     println!(
         "Does the HashMap contains the name Roman? => {}",
         contain(hash.clone(), "Roman")
+		//----------^^^^^^^^
+		// this is not correct, fix it to match the solution the expected function
     );
     println!(
         "Does the HashMap contains the name Katie? => {}",
         contain(hash.clone(), "Katie")
+		//----------^^^^^^^^
+		// this is not correct, fix it to match the solution the expected function
     );
     println!("Removing Robert {:?}", remove(hash.clone(), "Robert"));
     println!(
         "Does the HashMap contains the name Robert? => {}",
         contain(hash.clone(), "Robert")
+		//----------^^^^^^^^
+		// this is not correct, fix it to match the solution the expected function
     );
-    println!("Hash {:?}", hash);
+    println!("Hash {:?}", &hash);
 }
 ```
 
