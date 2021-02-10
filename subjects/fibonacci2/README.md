@@ -16,7 +16,7 @@ The Fibonacci Series starts like this: 0, 1, 1, 2, 3, 5, 8, 13 etc...
 ### Expected function
 
 ```rust
- fn fibonacci(n: u32) -> u32 {
+ pub fn fibonacci(n: u32) -> u32 {
 
  }
 ```
