@@ -19,17 +19,17 @@ However being familiar with Docker is **mandatory** for adding your own exercise
 ### Create your own public repository
 
 Once logged into your GitHub account, click on the creation of new repository:
-It is the button `New` (the button is on the top corner right side)
+It is the button `New` (the button is on the top corner right side).
 
 ### Git clone your repository and prepare an example for the folder structure for projects
 
-- Create a folder called `subjects`
-- Inside this folder create a folder called what you wish (example: `firstproject`)
-- Inside the folder `firstproject` create a `README.md` file which you will use as the subject content of your first project
-- After the subject content `README.md` is created, create a folder `audit` inside the `firstproject` directory
+- Create a folder called `subjects`.
+- Inside this folder create a folder called what you wish (example: `firstproject`).
+- Inside the folder `firstproject` create a `README.md` file which you will use as the subject content of your first project.
+- After the subject content `README.md` is created, create a folder `audit` inside the `firstproject` directory.
 - Inside the `audit` folder create a `README.md` that respect the audit type of file. We advise you to take an example such as the
   ascii-art audit `README.md` file. Here is the [link](https://raw.githubusercontent.com/01-edu/public/master/subjects/ascii-art/audit/README.md) to the raw file.
-- Once all those files are done, git push them to your new repository
+- Once all those files are done, git push them to your new repository.
 
 ### Publish the repository on GitHub pages
 
@@ -68,8 +68,8 @@ The container runs with the following settings (options of `docker run`) :
   - Working directory inside the container
 - `--tmpfs /jail:size=100M,noatime,exec,nodev,nosuid,uid=1000,gid=1000,nr_inodes=5k,mode=1700`
   - Mount a tmpfs directory on `/jail`, 100 MB writable.
-- `--volume volume_containing_student_repository:/jail/student:ro`
-  - Bind mount a volume containing the student repository, read-only.
+- `--volume volume_containing_student_repository:/jail/student`
+  - Bind mount a volume containing the student repository.
 
 Example of a [Dockerfile](https://github.com/01-edu/public/blob/master/js/tests/Dockerfile) and its [entrypoint](https://github.com/01-edu/public/blob/master/js/tests/entrypoint.sh).
 
@@ -82,7 +82,7 @@ If user Frenchris, added an exercise to the nameofyourrepo called `firstproject`
 This is the path where the README.md subject would be.
 https://frenchris.github.io/nameofyourrepo/subjects/firstproject/
 
-Note that you do not keep the README.md at the end of the path but you do keep the `/`
+Note that you do not keep the README.md at the end of the path but you do keep the `/`.
 
 This path should be added to the attribute “subject” of type string in the object attribute of the new exercise.
 
@@ -92,9 +92,9 @@ https://frenchris.github.io/nameofyourrepo/subjects/firstproject/audit/
 This path should be added to the attribute “subject” of type string in the object attribute of the new exercise.
 
 - Once both those path are noted, create your project on your server.
-- Add the regular attributes (`groupMin`, `groupMax`, `language`, `exerciseType`)
-- Add the optional attributes to test if your wish (`auditsRatio`, `auditsRequired`) both set to 1
-- And add the `audit` and `subject` attributes (of type `string`) with the previously noted paths
+- Add the regular attributes (`groupMin`, `groupMax`, `language`, `exerciseType`).
+- Add the optional attributes to test if your wish (`auditsRatio`, `auditsRequired`) both set to 1.
+- And add the `audit` and `subject` attributes (of type `string`) with the previously noted paths.
 
   Now that the attributes are filled.
 
@@ -104,13 +104,13 @@ This path should be added to the attribute “subject” of type string in the o
 **Note**: If you do not wish students from other events to be selected for matches in this new event.
 in the children attributes of the module,
 
-- Add `matchWhere` as a `FUNCTION`
-- Set its value to `USERINEVENT`
+- Add `matchWhere` as a `FUNCTION`.
+- Set its value to `USERINEVENT`.
   This attribute will isole the event during matches to the user of the event.
-- Add this `Div-custom` as a child in your campus object
-- Go to event, and launch the event `yourcampus/Div-custom`
+- Add this `Div-custom` as a child in your campus object.
+- Go to event, and launch the event `yourcampus/Div-custom`.
 - Add yourself and other testing accounts to the newly launched event.
-- Test your subject by creating a group and launching an audit.
+- Test your subject by creating a group and launching an audit
   If the paths are correctly inputed and your repository is correctly publicly published on GitHub pages, you will see your subject and your audit in the platform.
 
 ## Setup of your Docker repository
