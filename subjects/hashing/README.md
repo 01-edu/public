@@ -2,25 +2,29 @@
 
 ### Instructions
 
-Given a list of integers (Vec<i32>) write three functions
+Given a list of integers (Vec<i32>) write three **functions**.
 
-Write a function called `mean` that calculates the `mean` (the average value) of all the values in the list
+Write a **function** called `mean` that calculates the `mean` (the average value) of all the values in the list.
 
-Write a function called `median` that calculates the `median` (for a sorted list is the value in the middle)
+Write a **function** called `median` that calculates the `median` (for a sorted list, it is the value in the middle).
 
-Write a function called `mode` that calculates the mode (the value
-that appears more often)
+Write a **function** called `mode` that calculates the mode (the value
+that appears more often).
+
+### Notions
+
+[hash maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html)
 
 ### Expected Functions
 
 ```rust
-fn mean(list: &Vec<i32>) -> f64 {
+pub fn mean(list: &Vec<i32>) -> f64 {
 }
 
-fn median(list: &Vec<i32>) -> i32 {
+pub fn median(list: &Vec<i32>) -> i32 {
 }
 
-fn mode(list: &Vec<i32>) -> i32 {
+pub fn mode(list: &Vec<i32>) -> i32 {
 }
 ```
 
@@ -29,7 +33,7 @@ fn mode(list: &Vec<i32>) -> i32 {
 Here is a program to test your function.
 
 ```rust
-use hashing;
+use hashing::*;
 
 fn main() {
 	println!("Hello, world!");
@@ -40,7 +44,7 @@ fn main() {
 }
 ```
 
-And its output
+And its output;
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run
