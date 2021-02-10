@@ -2,22 +2,27 @@
 
 ### Instructions
 
-Create the structures `Circle` and `Point` and the methods necessary for the code in [usage](#usage) to compile and run giving the expected output.
+Create the structures `Circle` and `Point` (which will be made of two coordinates) and the methods necessary for the code in [usage](#usage) to compile and run giving the expected output.
 
 Methods:
-  - Point;
-    distance()
-  - Circle:
-    diameter -> returns the diameter of the circle
-    area -> returns the area of the circle
-    intersection -> returns true if the 2 circles intersect
-Associated Functions
-  - Circle:
-    new -> receives three 64 bits floating point numbers in the following
-    order: x, y and radius (x and y are the coordinates of the center).
-    and returns a new circle
-	
-	
+
+- Point:
+  distance() -> returns the distance between two coordinates
+- Circle:
+  diameter() -> returns the diameter of the circle
+  area() -> returns the area of the circle
+  intersect() -> which returns true, if the 2 circles in parameters intersect
+  Associated Functions
+- Circle:
+  new() -> receives three 64 bits floating point numbers in the following
+  order: x, y and radius (x and y are the coordinates of the center).
+  The function returns a new circle
+
+### Notions
+
+- [Using Structs](https://doc.rust-lang.org/book/ch05-00-structs.html)
+- [f64 constants](https://doc.rust-lang.org/std/f64/consts/index.html)
+
 ### Expected Functions and Structures
 
 This snippets are incomplete and it is part of the exercise to discover how to complete them.
@@ -29,7 +34,7 @@ struct Circle {
 }
 
 struct Point {
-// ...	
+// ...
 }
 
 // Point

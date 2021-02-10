@@ -2,12 +2,12 @@
 
 ### Instructions
 
-Write a function that receives a string slice and returns the number of character of the string
+Write a **function** which receives a string slice and returns the number of characters of the string.
 
 ### Expected Function
 
 ```rust
-fn char_length(s: &str) -> usize {
+pub fn char_length(s: &str) -> usize {
 }
 ```
 
@@ -16,6 +16,8 @@ fn char_length(s: &str) -> usize {
 Here is a program to test your function.
 
 ```rust
+use strings::*;
+
 fn main() {
 	println!("length of {} = {}", "❤", char_length("❤"));
 	println!("length of {} = {}", "形声字", char_length("形聲字"));
