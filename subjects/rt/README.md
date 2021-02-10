@@ -14,6 +14,10 @@ In `ray tracing` each of these rays can be seen as a pixel in the image captured
 
 To understand better how ray tracing works it is highly suggestive that you look online for this subject, as it can get quite complicated.
 
+Next is an image produced by a ray tracer like the one you should create:
+
+![image.png](raytrace3.png)
+
 ### Objectives
 
 In this project it is supposed to implement the ray tracer method in order to be able to render a computer generated image containing a few objects.
