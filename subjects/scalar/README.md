@@ -12,7 +12,8 @@ You **must** complete the Expected functions parameters data type accordingly (R
 
 ### Notions
 - [Data Types](https://doc.rust-lang.org/book/ch03-02-data-types.html)
-
+- [Generic Data Types](https://doc.rust-lang.org/book/ch10-01-syntax.html)
+- [Traits](https://doc.rust-lang.org/book/ch10-02-traits.html)
 
 ### Expected functions (Incomplete, you must precise the Data Types)
 
