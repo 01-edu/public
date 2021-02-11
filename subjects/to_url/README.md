@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Define a function called `to_url` that takes a string and substitutes every white-space with '%20'
+Define a **function** called `to_url` that takes a string and substitutes every white-space with '%20'.
 
 ### Expected Function
 
@@ -16,6 +16,8 @@ pub fn to_url(s: &str) -> String {
 Here is a program to test your function.
 
 ```rust
+use to_url::*;
+
 fn main() {
 	let s = "Hello, world!";
 	println!("{} to be use as an url is {}", s, to_url(s));

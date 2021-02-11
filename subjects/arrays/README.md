@@ -2,20 +2,27 @@
 
 ### Instructions
 
-Define a function call thirtytwo_tens that returns an array with 32 positions fill with only the value 10: [10, 10, 10, ... 10].len()
-= 32
+Define a **function** called `thirtytwo_tens` that returns an array with 32 positions filled with only the value `10`:
 
-Write a function that takes an array of i32 and returns the sum of the elements (make it work with the main)
+- [10, 10, 10, ... 10].len()
+  = 32
+
+Write a **function** that takes an array of i32 and returns the sum of the elements (make it work with the main).
+
+### Notions
+
+[arrays](https://doc.rust-lang.org/std/primitive.array.html)
 
 ### Expected functions
 
-The type of one of the arguments is missing use the example `main` function to determine the correct type.
+The type of one of the arguments is missing. Use the example `main` function to determine the correct type.
 
 ```rust
-fn sum(a: _) -> i32 {
+pub fn sum(a: _) -> i32 {
+	//type of argument missing in the signature here
 }
 
-fn thirtytwo_tens() -> [i32; 32] {
+pub fn thirtytwo_tens() -> [i32; 32] {
 }
 ```
 
@@ -23,19 +30,19 @@ fn thirtytwo_tens() -> [i32; 32] {
 
 Here is a program to test your function.
 
-There is things missing in this program use the output and the other information that you have available to determine what is missing.
+There are things missing in this program. Use the output and the other information that you have available to retrieve what is missing.
 
 ```rust
 use arrays::{sum, thirtytwo_tens};
 
 fn main() {
 	let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-	let a1: Vec<i32> = (1..11).;
-	let b = [_; 10];
+	let a1: Vec<i32> = (1..11).; //missing info here
+	let b = [_; 10]; //missing info here
 
-	println!("The Sum of the elements in {:?} = {}", a, sum(a));
-	println!("The Sum of the elements in {:?} = ", a1, sum(a1));
-	println!("The Sum of the elements in {:?} = {}", b, sum(b));
+	println!("The Sum of the elements in {:?} = {}", a, sum(a));//missing info here
+	println!("The Sum of the elements in {:?} = ", a1, sum(a1));//missing info here
+	println!("The Sum of the elements in {:?} = {}", b, sum(b));//missing info here
 	println!(
 		"Array size {} with only 10's in it {:?}",
 		thirtytwo_tens().len(),
@@ -44,7 +51,7 @@ fn main() {
 }
 ```
 
-And its output
+And its output:
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run

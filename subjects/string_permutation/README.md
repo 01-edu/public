@@ -2,12 +2,19 @@
 
 ### Instructions
 
-Define the function `is_permutation` that returns true if the string `s1` is a permutation of `s2`, otherwise it returns false `s1` is a permutation of `s2` if all the elements in `s1` appear the same number of times in `s2` and all the characters in `s1` appear in `s2` even if in different order)
+Define the **function** `is_permutation` that returns true if:
+
+- the string `s1` is a permutation of `s2`, otherwise it returns false.
+- `s1` is a permutation of `s2` if all the elements in `s1` appear the same number of times in `s2` and all the characters in `s1` appear in `s2` even if they are in different order.
+
+### Notions
+
+[hash maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html)
 
 ### Expected Function
 
 ```rust
-fn is_permutation(s1: &str, s2: &str) -> bool {
+pub fn is_permutation(s1: &str, s2: &str) -> bool {
 }
 ```
 
@@ -16,6 +23,8 @@ fn is_permutation(s1: &str, s2: &str) -> bool {
 Here is a program to test your function.
 
 ```rust
+use string_permutation::*;
+
 fn main() {
 	let word = "thought";
 	let word1 = "thougth";

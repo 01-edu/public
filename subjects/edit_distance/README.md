@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a function call `edit_distance` that calculates the minimum number of changes (insertion, deletions and substitutions) that need to be made to a string `source` to arrive to another `target` string
+Create a **function** called `edit_distance` which calculates the minimum number of changes (insertions, deletions and/or substitutions) which need to be made to a string `source` to transform to another string `target`.
 
 ### Expected Function
 
@@ -13,13 +13,15 @@ pub fn edit_distance(source: &str, target: &str) -> usize {
 
 ### Notions
 
-For more information and examples https://en.wikipedia.org/wiki/Edit_distance
+For more information and examples go to this [link](https://en.wikipedia.org/wiki/Edit_distance)
 
 ### Usage
 
 Here is a program to test your function.
 
 ```rust
+use edit_distance::*;
+
 fn main() {
 	let source = "alignment";
 	let target = "assignment";
@@ -32,7 +34,7 @@ fn main() {
 }
 ```
 
-And its output
+And its output:
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run
