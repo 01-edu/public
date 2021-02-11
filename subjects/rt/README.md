@@ -2,12 +2,6 @@
 
 There are two ways to render a 3d scene into a 2d image: `rasterization` that basically converts the shapes and geometric to pixels and applies calculations to obtain the color, shadows, refraction, etc... of those pixels. The other method is called `ray tracing` and consists in drawing each pixel with already its color, shadow, refraction, reflection, etc....
 
-Here we can see a visual difference between each method:
-
-![image.png](raytrace.png)
-
-![image.png](raytrace2.png)
-
 Imagine a camera pointing at a scene, and from that camera it is coming a bunch of rays that bounce from object to object until it reaches the light source (lamp, sun, etc...). That is basically how a ray tracer works.
 
 In `ray tracing` each of these rays can be seen as a pixel in the image captured by the camera, and recursively the ray tracer will calculate from where the light comes from in that pixel, being able to give that pixel a color with some shadow aspect, some refraction aspect, and so on.
