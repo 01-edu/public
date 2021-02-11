@@ -18,9 +18,7 @@ pub fn arrange_phrase(phrase: &str) -> String {
 ### Notions
 
 - [stack and heap](https://doc.rust-lang.org/1.22.0/book/first-edition/the-stack-and-the-heap.html)
-- [str.split](https://doc.rust-lang.org/std/primitive.str.html#method.split)
-- [str.matches](https://doc.rust-lang.org/std/primitive.str.html#method.matches)
-- [str.replace](https://doc.rust-lang.org/std/primitive.str.html#method.replace)
+- [str](https://doc.rust-lang.org/std/primitive.str.html)
 
 ### Usage
 
