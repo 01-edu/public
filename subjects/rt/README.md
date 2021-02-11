@@ -10,7 +10,7 @@ To understand better how ray tracing works it is highly suggested that you look 
 
 Next is an image produced by a ray tracer like the one you should create:
 
-![image.png](raytrace3.png)
+![image.png](raytrace3.avif)
 
 ### Objectives
 
