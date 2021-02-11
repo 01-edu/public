@@ -4,19 +4,19 @@
 
 Create the structures `Circle` and `Point` (which will be made of two coordinates) and the methods necessary for the code in [usage](#usage) to compile and run giving the expected output.
 
-Methods:
+#### Methods:
 
 - Point:
-  distance() -> returns the distance between two coordinates
+  distance() -> returns the distance between two coordinates.
 - Circle:
-  diameter() -> returns the diameter of the circle
-  area() -> returns the area of the circle
-  intersect() -> which returns true, if the 2 circles in parameters intersect
-  Associated Functions
+  - diameter() -> returns the diameter of the circle.
+  - area() -> returns the area of the circle.
+  - intersect() -> which returns true, if 2 circles intersect.
+
+#### Associated Functions
+
 - Circle:
-  new() -> receives three 64 bits floating point numbers in the following
-  order: x, y and radius (x and y are the coordinates of the center).
-  The function returns a new circle
+  - new() -> receives three 64 bits floating point numbers in the following order: x, y and radius (x and y are the coordinates of the center of the new circle). The function returns a new circle
 
 ### Notions
 
@@ -25,7 +25,7 @@ Methods:
 
 ### Expected Functions and Structures
 
-This snippets are incomplete and it is part of the exercise to discover how to complete them.
+This snippets are incomplete and it is part of the exercise to discover how to complete them. In the [usage](#usage) you will find all the information that you need.
 
 ```rust
 struct Circle {
@@ -50,6 +50,9 @@ fn diameter(_) -> _ {
 }
 
 fn area() -> _ {
+}
+
+fn intersect(self, other: ) -> bool {
 }
 ```
 
