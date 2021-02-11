@@ -37,21 +37,21 @@ fn main() {
     println!(
         "Does the HashMap contains the name Roman? => {}",
         contain(hash.clone(), "Roman")
-		//----------^^^^^^^^
-		// this is not correct, fix it to match the solution the expected function
+        //----------^^^^^^^^
+        // this is not correct, fix it to match the solution the expected function
     );
     println!(
         "Does the HashMap contains the name Katie? => {}",
         contain(hash.clone(), "Katie")
-		//----------^^^^^^^^
-		// this is not correct, fix it to match the solution the expected function
+        //----------^^^^^^^^
+        // this is not correct, fix it to match the solution the expected function
     );
     println!("Removing Robert {:?}", remove(hash.clone(), "Robert"));
     println!(
         "Does the HashMap contains the name Robert? => {}",
         contain(hash.clone(), "Robert")
-		//----------^^^^^^^^
-		// this is not correct, fix it to match the solution the expected function
+        //----------^^^^^^^^
+        // this is not correct, fix it to match the solution the expected function
     );
     println!("Hash {:?}", &hash);
 }
