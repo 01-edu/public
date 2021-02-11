@@ -6,7 +6,7 @@ Imagine a camera pointing at a scene, and from that camera it is coming a bunch 
 
 In `ray tracing` each of these rays can be seen as a pixel in the image captured by the camera, and recursively the ray tracer will calculate from where the light comes from in that pixel, being able to give that pixel a color with some shadow aspect, some refraction aspect, and so on.
 
-To understand better how ray tracing works it is highly suggestive that you look online for this subject, as it can get quite complicated.
+To understand better how ray tracing works it is highly suggested that you look online for this subject, as it can get quite complicated.
 
 Next is an image produced by a ray tracer like the one you should create:
 
@@ -14,7 +14,7 @@ Next is an image produced by a ray tracer like the one you should create:
 
 ### Objectives
 
-In this project it is supposed to implement the ray tracer method in order to be able to render a computer generated image containing a few objects.
+In this project you have to implement the ray tracer method in order to be able to render a computer generated image containing a few objects.
 
 When building your ray tracer you have to take some points into consideration:
 
