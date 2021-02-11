@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a function `hashFile(file)` that given the name of a file in the current folder, expected to be a string, returns the hash `sha256` of the content of this file as a string.
+Create a function `hashFile(file)` which given the name of a file in the current folder, expected to be a string, returns the hash `sha256` of the content of this file as a string.
 
 ### Example
 

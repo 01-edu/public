@@ -2,9 +2,9 @@
 
 ### Instructions
 
-- Create a function `generateAddress()` that generates a cryptographic key pair on any elliptic curve and stores locally the private key in a `wallet.pem` file and returns the hash of the public key (`spki/der`) prepended with '01'.
+- Create a function `generateAddress()` which generates a cryptographic key pair on any elliptic curve and stores locally the private key in a `wallet.pem` file and returns the hash of the public key (`spki/der`) prepended with '01'.
 
-- Create a function `createTransaction(amount, recipient)` that takes as arguments an integer and a string . It returns a string with the following format:
+- Create a function `createTransaction(amount, recipient)` which takes as arguments an integer and a string . It returns a string with the following format:
 `sender + recipient + hexAmount + signature`.
   - `sender` is the hash of the public key (`spki/der`) of the current user prepended with '01'.
   - `recipient` is the recipient taken as parameter.

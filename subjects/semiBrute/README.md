@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a function `semiBrute` that takes one argument, a target, and returns string which hash `sha256` starts with the target. The target is an hexadecimal number on two characters.
+Create a function `semiBrute` which takes one argument, a target, and returns string which hash `sha256` starts with the target. The target is an hexadecimal number with two characters.
 
 ### Example
 

@@ -2,11 +2,11 @@
 
 ### Instructions
 
-- Create a function `init()` that generates a cryptographic key pair on any elliptic curve and returns the public key in any format.
-- Create a function `signer(message)` that takes as arguments a message and returns the signature of the message (using the `sha256` algorithm).
-- create a function `verifier(message, pubKey, signature)` that takes as arguments a message, a public key and a signature and returns a boolean if the signature is valid.
+- Create a function `init()` which generates a cryptographic key pair on any elliptic curve and returns the public key in any format.
+- Create a function `signer(message)` which takes as arguments a message and returns the signature of the message (using the `sha256` algorithm).
+- Create a function `verifier(message, pubKey, signature)` which takes as arguments a message, a public key (which will be the return of the function `init()`), a signature (which will be the return of the function `signer(message)`) and returns a boolean if the signature is valid.
 
-example:
+### Example
 
 ```js
 const message = 'This is a message to sign'

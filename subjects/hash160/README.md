@@ -1,8 +1,8 @@
-## hash
+## hash160
 
 ### Instructions
 
-Create a function `hash160` that takes one argument, expected to be a string, and returns the hash `sha256` of this argument hashed again with the `ripemd160` algorithm. The return value must be in a binary form.
+Create a function `hash160` which takes one argument, expected to be a string, and returns the hash `sha256` of this argument hashed again with the `ripemd160` algorithm. The return value must be in a binary form.
 
 Formally, it could be described as :
 

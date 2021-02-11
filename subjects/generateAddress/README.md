@@ -2,13 +2,13 @@
 
 ### Instructions
 
-Create a function `generateAddress()` that generates a pair of cryptographic keys using the elliptic curve `secp256k1`. The return value is an object with members :
+Create a function `generateAddress()` which generates a pair of cryptographic keys using the elliptic curve `secp256k1`. The return value is an object with members :
 
 - `privateKey`, a private key as a string (`pkcs8/pem` format).
 - `publicKey`, the corresponding public key as a string (`spki/pem`).
 - `address`, an address to identify this account. The address is the hash `sha256` of the publicKey (in format `spki/der`) prepended with '01'.
 
-#### Example:
+#### Example
 
 ```js
 console.log(generateAddress())
@@ -30,7 +30,7 @@ console.log(generateAddress())
 
 ### Relevance
 
-- The `secp256k1` curve is used several blockchains to generate keys.
+- The `secp256k1` curve is used in several blockchains to generate keys.
 - A users account is identified using an `address`. The address is computed from the public key using hash functions, splits and concatenations.
   - In Bitcoin `hash160` is used in the process and the address starts with '1', '3' or 'bc1'.
   - In Ethereum `keccak-256` is used and addresses are appended with 'Ox' that denotes an hexadecimal number.

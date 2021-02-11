@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a function `increment` that takes as argument a number written in hexadecimal form and returns the same number incremented by one.
+Create a function `increment` which takes as argument a number written in hexadecimal form and returns the same number incremented by one.
 
 ### Example
 
