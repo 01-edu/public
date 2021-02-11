@@ -17,9 +17,9 @@ Represent the cards from a deck:
 
 Define:
 
-- The associated **function** `transpose` for `Rank` and `Suit`:
-  - For `Suit`, `transpose_suit` makes the translation between an integer value(u8) and the suit of a card (1 -> Heart, 2 -> Diamonds, 3 -> Spade, 4 -> Club)
-  - For `Rank`, `transpose_rank` makes the translation between an integer value(u8) and the rank ( 1 -> Ace, 2 -> 2, .., 10 -> 10, 11 -> Jack, 12 -> Queen, 13 -> King)
+- The associated **function** `translate` for `Rank` and `Suit`:
+  - For `Suit`, `translate` makes the translation between an integer value (u8) and the suit of a card (1 -> Heart, 2 -> Diamonds, 3 -> Spade, 4 -> Club)
+  - For `Rank`, `translate` makes the translation between an integer value (u8) and the rank ( 1 -> Ace, 2 -> 2, .., 10 -> 10, 11 -> Jack, 12 -> Queen, 13 -> King)
 - The associated **function** `random` for `Rank` and `Suit` which returns a random `Rank` and `Suit` respectively
 - Finally define the **function** `winner_card` which returns `true` if the card passed as an argument is an Ace of spades
 
@@ -30,22 +30,26 @@ Define:
 ### Expected Functions and Structures
 
 ```rust
-pub fn random() -> Suit {
-}
-
-pub fn transpose_suit(value: u8) -> Suit {
-}
-
-pub fn random() -> Rank {
-}
-
-pub fn transpose_rank(value: u8) -> Rank {
-}
-
 pub enum Suit {
 }
 
 pub enum Rank {
+}
+
+impl Suit {
+	pub fn random() -> Suit {
+	}
+
+	pub fn translate(value: u8) -> Suit {
+	}
+}
+
+impl Rank {
+	pub fn random() -> Rank {
+	}
+
+	pub fn translate(value: u8) -> Rank {
+	}
 }
 
 pub struct Card {
