@@ -1,4 +1,4 @@
-## semiBrute
+## Semi-brute
 
 ### Instructions
 
