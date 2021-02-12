@@ -9,7 +9,7 @@ And another **function** `at_index` that returns the value found at the index pa
 ### Notions
 
 - [Common Collections](https://doc.rust-lang.org/stable/book/ch08-00-common-collections.html)
-- [Vectors]https://doc.rust-lang.org/stable/book/ch08-01-vectors.html)
+- [Vectors](https://doc.rust-lang.org/stable/book/ch08-01-vectors.html)
 
 ### Expected Functions
 
