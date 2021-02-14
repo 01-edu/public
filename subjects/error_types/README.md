@@ -2,16 +2,16 @@
 
 ### Instructions
 
-For this exercise you will have to implement an **error type**.
+For this exercise, you will have to implement an **error type**.
 
-The main objective is to create a form validator, where you must implement a
+The main objective is to create a form validator, where you must implement an
 error type. This must validate the password and the first name. The
 first name must not be empty and the password must have at least 8 char and a combination of alphanumeric and none alphanumeric ASCII characters
 
 ex: "asDd123=%" => good
-    "asgfD"     => error
-    "asdsdf2"   => error
-    "sad_#$"    => error
+"asgfD" => error
+"asdsdf2" => error
+"sad\_#$" => error
 
 Create a structure called `Form` that will have the following fields:
 
@@ -30,14 +30,19 @@ It must have the fields:
 
 - `form_values`, this will be a tuple of strings that will save the value that the user inserted into the form
 
-ex: ("password", "asdaSD_")
-    ("first_name", "someone")
+ex: ("password", "asdaSD\_")
+("first_name", "someone")
 
 - `date`, that will have the date that the error occurred in the format "2020-12-14 09:33:41"
 - `err`, that will have the error description:
   - "No user name"
   - "At least 8 characters"
   - "Combination of different ASCII character types (numbers, letters and none alphanumeric characters)"
+
+### Notions
+
+- [Error types](https://doc.rust-lang.org/rust-by-example/error/multiple_error_types/define_error_type.html)
+- [Struct NaiveDate](https://docs.rs/chrono/0.4.19/chrono/naive/struct.NaiveDate.html)
 
 ### Expected Function
 
@@ -75,9 +80,11 @@ impl Form {
 
 ### Usage
 
-Here is a program to test your function
+Here is a program to test your function:
 
 ```rust
+use error_types::*;
+
 fn main() {
     let mut form_output = Form::new(
         String::from("Alice"),
@@ -117,8 +124,3 @@ FErr { form_values: ("password", "asdasASd(_"), date: "2020-12-28 13:29:11", err
 FErr { form_values: ("password", "asdasASd123SA"), date: "2020-12-28 13:29:11", err: "Combination of different ASCII character types (numbers, letters and none alphanumeric characters)" }
 student@ubuntu:~/[[ROOT]]/test$
 ```
-
-### Notions
-
-- https://doc.rust-lang.org/rust-by-example/error/multiple_error_types/define_error_type.html
-- https://docs.rs/chrono/0.4.19/chrono/naive/struct.NaiveDate.html

@@ -2,10 +2,9 @@
 
 ### Instructions
 
-Sometimes it is more desirable to catch the failure of some parts of a program instead
-of just calling panic.
+Sometimes it is more desirable to catch the failure of some parts of a program instead of just calling panic.
 
-For this exercise you will have to create a message blocker, where you must block the word `stupid`
+For this exercise you will have to create a message blocker, where you must block the word `stupid`.
 
 You will have to create a structure called `Message`, this structure
 must have the following elements:
@@ -14,34 +13,50 @@ must have the following elements:
 - user: String
 - time_sent: String
 
-The struct must also have a implementation of 2 functions associated to it:
+The struct must also have a implementation of 2 **functions** associated with it:
 
-- `new`, that initializes the structure
-- `send_ms`, that only has its implementation type (**self**) as argument and returns an option.
-  This function must return `None` if the content of the message is either **empty** or contains the
-  word **stupid**. Otherwise it returns the content of the message.
+- `new`, which initializes the structure
+- `send_ms`, which only has its implementation type (**self**) as argument and returns an option:
+  - This function must return `None` if the content of the message is either **empty** or contains the word **stupid**. Otherwise it returns the content of the message.
 
-You will have to create two more functions that aren't associated to any structure:
+You will have to create two more **functions** that are not associated with any structure:
 
-- `check_ms` that receives as parameters the reference to the structure `Message` and returns a tuple,
-containing a `bool` and a `string`. This function will execute the function `send_ms` and if the result
-of the option is `None` it should return (false, "ERROR: illegal"). Otherwise it returns `true` and the
-content of the message sent.
-- `date_format` that creates and formats the date and time that the message was sent, the format should
-look like this: **Mon Oct  5 10:22:19 2020**
+- `check_ms` which:
+  - receives as parameters the reference to the structure `Message`
+  - and returns a tuple, containing a `bool` and a `string`:
+    - This function will execute the function `send_ms` and if the result of the option is `None`, it should return (false, "ERROR: illegal").Otherwise it returns `true` and the content of the message sent.
+- `date_format` which:
+  - creates and formats the date and time when the message was sent:
+    - The format should look like this: **Mon Oct 5 10:22:19 2020**
+
+### Notions
+
+- [Crate Chrono](https://docs.rs/chrono/0.4.19/chrono/)
+- [Enum Definition](https://doc.rust-lang.org/stable/book/ch06-01-defining-an-enum.html?highlight=option#the-option-enum-and-its-advantages-over-null-values)
 
 ### Expected Function
 
 ```rust
-pub struct Message {}
+pub struct Message {
 
-impl Message {
-  pub fn new(ms: String, u: String, t: String) -> Message {}
-  pub fn send_ms(&self) -> Option<&str> {}
 }
 
-pub fn check_ms(ms: &Message) -> (bool, &str) {}
-pub fn format_date() -> String {}
+impl Message {
+  pub fn new(ms: String, u: String, t: String) -> Message {
+
+  }
+  pub fn send_ms(&self) -> Option<&str> {
+
+  }
+}
+
+pub fn check_ms(ms: &Message) -> (bool, &str) {
+
+}
+
+pub fn format_date() -> String {
+
+}
 ```
 
 ### Usage
@@ -49,6 +64,8 @@ pub fn format_date() -> String {}
 Here is a program to test your function
 
 ```rust
+use profanity_filter::*;
+
 fn main() {
   let m0 = Message::new("hello there".to_string(), "toby".to_string(), format_date());
   println!("{:?}", check_ms(&m0));
@@ -74,8 +91,3 @@ student@ubuntu:~/[[ROOT]]/test$ cargo run
 (false, "ERROR: illegal")
 student@ubuntu:~/[[ROOT]]/test$
 ```
-
-### Notions
-
-- https://docs.rs/chrono/0.4.19/chrono/
-- https://doc.rust-lang.org/stable/book/ch06-01-defining-an-enum.html?highlight=option#the-option-enum-and-its-advantages-over-null-values
