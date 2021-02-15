@@ -19,6 +19,8 @@ pub fn str_len(s: ) -> usize {
 Here is a possible program to test your function :
 
 ```rust
+use borrow::*;
+
 fn main() {
 	let s = "hello";
 	let s1 = "camelCase".to_string();
