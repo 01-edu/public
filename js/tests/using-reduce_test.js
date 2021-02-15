@@ -6,7 +6,7 @@ t(({ eq, ctx }) =>
   // check that the code did use reduce properly
   eq(ctx.reduceCalls[ctx.reduceCalls.length - 1], [1, 2, 3, 4])
 )
-t(({ eq }) => eq(adder([9, 24, 7, 11, 3], 10), 64))
+t(({ eq }) => eq(adder([9, 24, 7, 11, 3, 10]), 64))
 t(({ eq, ctx }) =>
   // check that the code did use reduce properly
   eq(ctx.reduceCalls[ctx.reduceCalls.length - 1], [9, 24, 7, 11, 3])
