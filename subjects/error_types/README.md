@@ -6,12 +6,12 @@ For this exercise, you will have to implement an **error type**.
 
 The main objective is to create a form validator, where you must implement an
 error type. This must validate the password and the first name. The
-first name must not be empty and the password must have at least 8 char and a combination of alphanumeric and none alphanumeric ASCII characters
+first name must not be empty and the password must have **at least 8 char**, a **combination of alphanumeric**, **none-alphanumeric** (ex: <, & or /, ...)
 
-ex: "asDd123=%" => good
-"asgfD" => error
-"asdsdf2" => error
-"sad\_#$" => error
+ex: "asDd123=%" => good (as 8 char, alphanumeric and non-alphanumeric)\
+"asgfD" => error (does only have alphabetic letters)\
+"asdsdf2" => error (missing none-alphanumeric)\
+"sad\_#$" => error (does not have a combination of alphanumeric)
 
 Create a structure called `Form` that will have the following fields:
 
