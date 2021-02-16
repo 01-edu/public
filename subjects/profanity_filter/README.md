@@ -31,7 +31,6 @@ You will have to create two more **functions** that are not associated with any 
 
 ### Notions
 
-- [Crate Chrono](https://docs.rs/chrono/0.4.19/chrono/)
 - [Enum Definition](https://doc.rust-lang.org/stable/book/ch06-01-defining-an-enum.html?highlight=option#the-option-enum-and-its-advantages-over-null-values)
 
 ### Expected Function
