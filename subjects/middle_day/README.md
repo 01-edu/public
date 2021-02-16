@@ -2,10 +2,20 @@
 
 ### Instructions
 
-Use the [`chrono`](https://docs.rs/chrono/0.4.19/chrono/index.html) crate to create a function called `middle_day`, that returns the Weekday of the middle day of the year passed as an argument, wrapped in an Option.
-You also should refer to chrono::Weekday as `wd`.
+Use the [`chrono crate`](https://docs.rs/chrono/0.4.19/chrono/index.html) to create a **function** called `middle_day`, which returns, wrapped in an Option, the Weekday of the middle day of the year passed as an argument.
+`chrono::Weekday` has to be refered as `wd`.
+
+### Expected Function
+
+#### For this exercise the signature of the function has to be found out.
+
+### Usage
+
+Here is a program to test your function:
 
 ```rs
+use middle_day::*;
+
 fn main() {
     let date = Utc.ymd(2011, 12, 2).and_hms(21, 12, 09);
 

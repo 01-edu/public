@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Create a function `calculate_macros` that receives a vector of `serde_json::Value` and returns a `serde_json::Value`.
+Create a **function** `calculate_macros` which receives a vector of `serde_json::Value` and returns a `serde_json::Value`.
 
-The vector you will receive will contain jsons in the following format:
+The vector the function will receive will contain jsons in the following format:
 
 ```json
 {
@@ -17,9 +17,9 @@ The vector you will receive will contain jsons in the following format:
 }
 ```
 
-Besides the name and the content of the calories array, that are strings, everything else are floats.
+The name and the content of the calories array will be `strings`, all other values will be `floats`.
 
-As the result of the function you should return a json with the following format (Macros struct):
+The function should return a json with the following format (Macros struct):
 
 ```json
     "cals": <calories>,
@@ -34,9 +34,19 @@ Every value should be rounded to two decimal places (ex: 12.29) or one decimal p
 
 Hint: You will need the `serde`, `serde_json` and `serde_derive` crates.
 
-### Example
+### Notions
+
+- [serde](https://crates.io/crates/serde)
+- [serde JSON](https://crates.io/crates/serde_json)
+- [serde_derive](https://crates.io/crates/serde_derive)
+
+### Usage
+
+Here is a program to test your function:
 
 ```rust
+use macro_calculator::*;
+
 fn main() {
     let a = serde_json::json!(
         {
