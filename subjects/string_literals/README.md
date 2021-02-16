@@ -21,19 +21,19 @@ Create the following functions:
 ### Expected Functions
 
 ```rust
-fn is_empty(v: &str) -> bool {
+pub fn is_empty(v: &str) -> bool {
 }
 
-fn is_ascii(v: &str) -> bool {
+pub fn is_ascii(v: &str) -> bool {
 }
 
-fn contains(v: &str, pat: &str) -> bool {
+pub fn contains(v: &str, pat: &str) -> bool {
 }
 
-fn split_at(v: &str, index: usize) -> (&str, &str) {
+pub fn split_at(v: &str, index: usize) -> (&str, &str) {
 }
 
-fn find(v: &str, pat: char) -> usize {
+pub fn find(v: &str, pat: char) -> usize {
 }
 ```
 
