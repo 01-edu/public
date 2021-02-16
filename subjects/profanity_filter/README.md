@@ -11,9 +11,8 @@ must have the following elements:
 
 - content: String
 - user: String
-- time_sent: String
 
-The struct must also have a implementation of 2 **functions** associated with it:
+The `struct` must also have a implementation of 2 **functions** associated with it:
 
 - `new`, which initializes the structure
 - `send_ms`, which only has its implementation type (**self**) as argument and returns an option:
@@ -25,9 +24,6 @@ You will have to create two more **functions** that are not associated with any 
   - receives as parameters the reference to the structure `Message`
   - and returns a tuple, containing a `bool` and a `string`:
     - This function will execute the function `send_ms` and if the result of the option is `None`, it should return (false, "ERROR: illegal").Otherwise it returns `true` and the content of the message sent.
-- `date_format` which:
-  - creates and formats the date and time when the message was sent:
-    - The format should look like this: **Mon Oct 5 10:22:19 2020**
 
 ### Notions
 
