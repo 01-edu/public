@@ -10,8 +10,8 @@ Create the following functions:
 - `split_at`, that divides a string in two returning a tuple
 - `find', that returns the index if the first character of a given string that matches the pattern
 
-> This exercise will test the **heap allocation** of your function!
-> So try your best to allocate the minimum data on the heap! (hit: &str)
+> This exercise will test how many times the **heap is going to be allocated**!\
+> So try your best to allocate the minimum data on the heap!
 
 ### Notions
 
