@@ -51,7 +51,7 @@ fn main() {
         "{:?}",
         tic_tac_toe(vec![
             vec!["O", "X", "O"],
-            vec!["O", "P", "X"],
+            vec!["O", "O", "X"],
             vec!["X", "#", "X"]
         ])
     );
