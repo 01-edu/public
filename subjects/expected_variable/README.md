@@ -36,8 +36,8 @@ fn main() {
         expected_variable("soClose", "So_Close").unwrap()
     );
     println!(
-        "{} close to it",
-        expected_variable("something", "something_completely_different").unwrap()
+        "{:?}",
+        expected_variable("something", "something_completely_different")
     );
     println!(
         "{} close to it",
@@ -50,9 +50,9 @@ And its output:
 
 ```sh
 $ cargo run
-100%
-88%
-Fail
-73%
+100% close to ir
+88% close to it
+None
+73% close to it
 $
 ```

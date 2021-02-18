@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a module `mob`, in which has to be present:
+Create a module `mobs`, in which has to be present:
 
 - a `Mob` structure which consists of:
   - a String `name`
@@ -42,6 +42,8 @@ Create also two submodules of mob:
   - a u8 `age`
   - the Member struct should implement a function `get_promotion` which will change the member role. If a member is an Associate, it will get promoted to Soldier; a Soldier is promoted to a Caporegime and a Caporegime is promoted to Underboss
   - a function `new` which return a Member on receiving a name(&str), a role (Role) and an age (u8)
+
+The submodules should be created inside a folder called `mobs`. We advise you to create two files one to each submodule, but it is up to you.
 
 You must include `#[derive(Debug, CLone, PartialEq)]` on top of every struct and the enum.
 
