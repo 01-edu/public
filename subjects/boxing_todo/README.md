@@ -33,12 +33,7 @@ out the message **"Failed to parse todo"** in case it is a parsing error. Otherw
 **"Failed to read todo file"**.
 For the `Error` trait the following functions (methods) have to be implemented:
 
-- `description` which returns a string literal which says:
-
-  - "Todo List parse failed: " for the `ParseErr`
-  - "Todo List read failed: " for the `ReadErr`.
-
-- `cause` which returns an `Option` with the error:
+- `source` which returns an `Option` with the error:
 
   - For the `ReadErr` it must just return the option with the error
   - For the `ParseErr` it will return an option which can be `None` if the tasks are **empty** otherwise the error, if
@@ -53,7 +48,7 @@ Basically it must parse and read the JSON file and return the `TodoList` if ever
 ### Notions
 
 - [Module std::fmt](https://doc.rust-lang.org/std/fmt/)
-- [Framework serde](https://serde.rs/)
+- [JSON](https://docs.rs/json/0.12.4/json/)
 - [Boxing errors](https://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/boxing_errors.html)
 - [Returning Traits wirh dyn](https://doc.rust-lang.org/stable/rust-by-example/trait/dyn.html)
 
@@ -89,19 +84,13 @@ impl Display for ReadErr {
 }
 
 impl Error for ParseErr {
-    fn description(&self) -> &str {
-
-    }
-    fn cause(&self) -> Option<&dyn Error> {
+    fn source(&self) -> Option<&(dyn Error + 'static)> {
 
     }
 }
 
 impl Error for ReadErr {
-    fn description(&self) -> &str {
-
-    }
-    fn cause(&self) -> Option<&dyn Error> {
+    fn source(&self) -> Option<&(dyn Error + 'static)> {
 
     }
 }
@@ -113,17 +102,17 @@ for **lib.rs**
 mod error;
 use error::{ ParseErr, ReadErr };
 
+pub use json::{parse, stringify};
 pub use std::error::Error;
-pub use serde::{ Deserialize, Serialize };
 
-#[derive(Serialize, Deserialize, Debug, Eq, PartialEq)]
+#[derive(Debug, Eq, PartialEq)]
 pub struct Task {
     id: u32,
     description: String,
     level: u32,
 }
 
-#[derive(Serialize, Deserialize, Debug, Eq, PartialEq)]
+#[derive(Debug, Eq, PartialEq)]
 pub struct TodoList {
     title: String,
     tasks: Vec<Task>,
@@ -151,7 +140,7 @@ fn main() {
     match todos {
         Ok(list) => println!("{:?}", list),
         Err(e) => {
-            println!("{}{:?}", e.description(), e.cause());
+            println!("{}{:?}", e.to_string(), e.source());
         }
     }
 
@@ -159,7 +148,7 @@ fn main() {
     match todos {
         Ok(list) => println!("{:?}", list),
         Err(e) => {
-            println!("{}{:?}", e.description(), e.cause());
+            println!("{}{:?}", e.to_string(), e.source());
         }
     }
 
@@ -167,7 +156,7 @@ fn main() {
     match todos {
         Ok(list) => println!("{:?}", list),
         Err(e) => {
-            println!("{}{:?}", e.description(), e.cause().unwrap());
+            println!("{}{:?}", e.to_string(), e.source());
         }
     }
 }
@@ -179,6 +168,6 @@ And its output:
 student@ubuntu:~/[[ROOT]]/test$ cargo run
 TodoList { title: "TODO LIST FOR PISCINE RUST", tasks: [Task { id: 0, description: "do this", level: 0 }, Task { id: 1, description: "do that", level: 5 }] }
 Todo List parse failed: None
-Todo List parse failed: Malformed(Error("missing field `title`", line: 1, column: 2))
+Fail to parses todo Some(Malformed(UnexpectedCharacter { ch: ',', line: 2, column: 18 }))
 student@ubuntu:~/[[ROOT]]/test$
 ```
