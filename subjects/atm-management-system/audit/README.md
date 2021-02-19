@@ -34,7 +34,7 @@
 
 ##### Resorting to the user Alice, try to create a new account with: date `"10/10/2012"` account number `"834213"`, country `"UK"`, phone number `"291231392"`, deposit amount  $`"1001.20"`, type of account `"saving"`. Then select `"Check accounts"` choose the account you just created.
 
-###### Did the application displayed the account information and the gain of $5.84 of interest on day 10 of every moth?
+###### Did the application displayed the account information and the gain of $5.84 of interest on day 10 of every month?
 
 ##### Resorting to the user Alice create again an account but with account number "320421" and type of account "fixed01" with the rest of the information as in the last account . Then select `"Check accounts"` and choose the account you just created.
 

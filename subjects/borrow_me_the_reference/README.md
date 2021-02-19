@@ -7,7 +7,11 @@ needing garbage collector. Therefore you must understand ownership in rust.
 
 Create the following functions :
 
-  - `delete_and_backspace`, imagine that `-` represents the backspace key and the `+` represents the delete key, this function must receive a borrowed string and turn this string into the string without the backspaces and the deletes. 
+  - `delete_and_backspace`, imagine that the `-` represents the `backspace key` and the `+` represents the `delete key`, this function must receive a borrowed string and turn this string into the string that applies the `backspaces` and the `deletes`.
+  - For example:
+	- "helll-o" turns into "hello"
+  
+  	- "he+lllo" turns into "hello"
 
   - `is_correct` that borrows a Vector of string literals with some correct and incorrect math equations and replaces the correct equations with `✔` and the wrong with `✘` and returns a `usize` with the percentage of correct equations.
 	

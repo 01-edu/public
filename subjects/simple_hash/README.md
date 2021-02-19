@@ -2,10 +2,11 @@
 
 ### Instructions
 
-Create the function `contain` that checks a `HashMap` to see if it contains the given key.
+Create a **function** `contain` that checks a `HashMap` to see if it contains a given key.
 
-Create the function `remove` that removes a given key from the `HashMap`.
+Create a **function** `remove` that removes a given key from the `HashMap`.
 
+- Note: pay attention to the comment in the [usage](#usage)
 ### Notions
 
 - https://doc.rust-lang.org/rust-by-example/std/hash.html
@@ -23,7 +24,7 @@ pub fn remove(h: &mut HashMap<&str, i32>, s: &str) {}
 Here is a program to test your function.
 
 ```rust
-use simple_hash::simple_hash;
+use simple_hash::*;
 use std::collections::HashMap;
 
 fn main() {
@@ -35,18 +36,24 @@ fn main() {
 
     println!(
         "Does the HashMap contains the name Roman? => {}",
-        contain(&hash, "Roman")
+        contain(hash.clone(), "Roman")
+        //----------^^^^^^^^
+        // this is not correct, fix it to match the solution the expected function
     );
     println!(
         "Does the HashMap contains the name Katie? => {}",
-        contain(&hash, "Katie")
+        contain(hash.clone(), "Katie")
+        //----------^^^^^^^^
+        // this is not correct, fix it to match the solution the expected function
     );
-    println!("Removing Robert {:?}", remove(&mut hash, "Robert"));
+    println!("Removing Robert {:?}", remove(hash.clone(), "Robert"));
     println!(
         "Does the HashMap contains the name Robert? => {}",
-        contain(&hash, "Robert")
+        contain(hash.clone(), "Robert")
+        //----------^^^^^^^^
+        // this is not correct, fix it to match the solution the expected function
     );
-    println!("Hash {:?}", hash);
+    println!("Hash {:?}", &hash);
 }
 ```
 

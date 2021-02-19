@@ -2,9 +2,13 @@
 
 ### Instruction
 
-- Create a function that takes ownership of a string and returns the first sub-word in it
+- Create a **function** that takes ownership of a string and returns the first sub-word in it
 
 - It should work for `camelCase` as well as `snake_case`
+
+### Notions
+
+- [ownership](https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html)
 
 ### Expected Function
 
@@ -15,9 +19,11 @@ pub fn first_subword(mut s: String) -> String {
 
 ### Usage
 
-Here is a program to test your function
+Here is a program to test your function:
 
 ```rust
+use ownership::first_subword;
+
 fn main() {
 	let s1 = String::from("helloWorld");
 	let s2 = String::from("snake_case");
@@ -31,7 +37,7 @@ fn main() {
 }
 ```
 
-And its output
+And its output:
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run

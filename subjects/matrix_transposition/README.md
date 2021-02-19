@@ -13,7 +13,7 @@
 Example:
 
 ```
-( a b )   __ transposition __>   ( a d )
+( a b )   __ transposition __>   ( a c )
 ( c d )                          ( b d )
 ```
 

@@ -2,11 +2,11 @@
 
 ### Instructions
 
-Complete the `capitalize_first` function that turns the first letter of a string uppercase.
+Complete the `capitalize_first` **function** which turns the first letter of a string to uppercase.
 
-Complete the `title_case` function that turns the first letter of each word in a string uppercase.
+Complete the `title_case` **function** which turns the first letter of each word in a string to uppercase.
 
-Complete the `change_case` function that turns the uppercase letters of a string into lowercase and the lowercase letters into uppercase.
+Complete the `change_case` **function** which turns the uppercase letters of a string into lowercase and the lowercase letters into uppercase.
 
 ### Expected Functions
 
@@ -23,10 +23,10 @@ pub fn change_case(input: &str) -> String {
 
 ### Usage
 
-Here is a program to test your function.
+Here is a program to test your functions.
 
 ```rust
-use capitalizing::capitalizing;
+use capitalizing::*capitalizing*;
 
 fn main() {
     println!("{}", capitalize_first("joe is missing"));
@@ -37,7 +37,7 @@ fn main() {
 
 And its output
 
-```console
+```consoole
 student@ubuntu:~/[[ROOT]]/test$ cargo run
 Joe is missing
 Jill Is Leaving A

@@ -4,6 +4,10 @@
 
 Create the function `bigger` that gets the biggest positive number in the `HashMap`.
 
+### Notions
+
+[hash maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html)
+
 ### Expected Function
 
 ```rust
@@ -16,9 +20,11 @@ pub fn bigger(h: HashMap<&str, i32>) -> i32 {
 Here is a program to test your function.
 
 ```rust
+use std::collections::HashMap;
 use bigger::bigger;
+
 fn main() {
-    
+
     let mut hash = HashMap::new();
     hash.insert("Daniel", 122);
     hash.insert("Ashley", 333);

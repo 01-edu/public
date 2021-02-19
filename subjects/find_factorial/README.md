@@ -6,7 +6,7 @@ Complete the **function** `factorial` to return the factorial of a given number.
 
 As a reminder the factorial of a number is the product of all the integers from 1 to that number.
 
-Example: the factorial of 6 (written 6!) is 1*2*3*4*5*6 = 720.
+Example: the factorial of 6 (written 6!) is 1 * 2 * 3 * 4 * 5 * 6 = 720.
 
 Do not forget the rules for 0 and 1.
 
