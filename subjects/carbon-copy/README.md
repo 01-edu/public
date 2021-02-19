@@ -43,15 +43,19 @@ For this phase, you'll have to make the whole HTML & CSS by yourself.
 If you made it until here pretty fast, now the fun will begin! You're gonna add a bunch of JS interactions to make things appear / disappear / change in the HTML & CSS by linking a JS [script](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) to your `index.html`.
 
 - Change the order of the pictures when clicking on the pictures' section, [toggling](https://developer.mozilla.org/fr/docs/Web/API/Element/classList) the pre-defined class `row-reverse` from the CSS file `styles.css`.
+
 ![](images-order.gif)
 
 - In the Contact section, when clicking on the "Introduce yourself" button, get the text typed in the `input` and display it in the middle of the following sentence: "Nice to meet you _[put here the input data]_ 👋! Thanks for introducing yourself." Also, the `<p>`, `<input>` & `<button>` elements have to disappear after the button has been clicked.
+
 ![](contact-input.gif)
 
 - When clicking on a card, open a modale window that will show the whole article ; the modale will be closed either when clicking on a "Close" button, or when the "Escape" key is pressed.
+
 ![](modale.gif)
 
 - In the modale article, create a widget that allows to change the text alignment ; on click on `left` or `center` buttons, the layout changes to the chosen justification, and the selected option's `font-weight` becomes `bold` whereas the other becomes `light`.
+
 ![](text-alignment.gif)
 
 - Warrior option: change the `header` text content to be a random quote every time the page is loaded. You can use this marvelous [Chuck Norris API](https://api.chucknorris.io/) to [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) his most inspiring sayings and display them in your own page!
