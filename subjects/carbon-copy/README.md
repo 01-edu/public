@@ -2,12 +2,12 @@
 
 ### Instructions
 
-Today is a big day: you're gonna make your own webpage. Like a boss, yes.
+Today is a big day: you're going to make your own webpage. Like a boss, yes.
 If that one already sounds scary to you, don't worry, we've got your back ; you'll be provided some assets to complete this task.
 
 The goal of this raid is to make a carbon copy of this webpage template:
 ![](page-template.jpg)
-Feel free to replace (or not, if you're lazy) the text contents by things about you / your company / your organisation / your dog / anything you want to talk about. Just try to approximatively match the same amount of content, so it still looks visually similar to the placeholder version.
+Feel free to replace (or not, if you're lazy) the text contents by details about you / your company / your organisation / your dog / anything you want to talk about. Just try to approximatively match the same amount of content, so it still looks visually similar to the placeholder version.
 
 The raid is divided in 3 phases:
 
@@ -25,7 +25,7 @@ Here is a [wireframe](https://en.wikipedia.org/wiki/Website_wireframe) of the we
 
 #### Phase 2: custom CSS (mandatory)
 
-First of all, let's custom the color atmosphere of the webpage with your own taste: go to the CSS file `styles.css`, & replace the current blue & yellow to 2 new colors of your choice.
+First of all, let's customize the color atmosphere of the webpage to your own taste: go to the CSS file `styles.css`, & replace the current blue & yellow with 2 new colors of your choice.
 
 Now that the page is mainly built, you have to populate the "Dashboard" section with 3 new elements.
 ![](dashboard-template.jpg)
@@ -40,7 +40,7 @@ For this phase, you'll have to make the whole HTML & CSS by yourself.
 
 #### Phase 3: JS interactions (mandatory & optional)
 
-If you made it until here pretty fast, now the fun will begin! You're gonna add a bunch of JS interactions to make things appear / disappear / change in the HTML & CSS by linking a JS [script](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) to your `index.html`.
+If you made it until here pretty fast, now the fun will begin! You're going to add a bunch of JS interactions to make elements appear / disappear / change in the HTML & CSS by linking a JS [script](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) to your `index.html`.
 
 - Change the order of the pictures when clicking on the pictures' section, [toggling](https://developer.mozilla.org/fr/docs/Web/API/Element/classList) the pre-defined class `row-reverse` from the CSS file `styles.css`.
 
@@ -50,11 +50,11 @@ If you made it until here pretty fast, now the fun will begin! You're gonna add 
 
 ![](contact-input.gif)
 
-- When clicking on a card, open a modale window that will show the whole article ; the modale will be closed either when clicking on a "Close" button, or when the "Escape" key is pressed.
+- When clicking on a card, open a modal window that will show the whole article ; the modal will be closed either when clicking on a "Close" button, or when the "Escape" key is pressed.
 
 ![](modale.gif)
 
-- In the modale article, create a widget that allows to change the text alignment ; on click on `left` or `center` buttons, the layout changes to the chosen justification, and the selected option's `font-weight` becomes `bold` whereas the other becomes `light`.
+- In the modal article, create a widget that allows to change the text alignment ; on click on `left` or `center` buttons, the layout changes to the chosen justification, and the selected option's `font-weight` becomes `bold` whereas the other becomes `light`.
 
 ![](text-alignment.gif)
 
