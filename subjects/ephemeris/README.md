@@ -3,8 +3,8 @@
 ### Instructions
 
 You are already feeling this change in yourself... You can know understand why people say that developers are lazy. You want to do more, but doing less. That's normal.
-Let's try to enhance your own routine, to begin.
-You want to save the world, to change it. But to do so, you have to know it. Every morning you do the same researches to stay aware and prepared for your new day. This project will help you saving this research time. We will automate it, in order for you to just get the informations you want by running a script. To do so, we will simulate navigation in a browser, get some information from it, and display it all gathered in the console.
+To begin, let's try to enhance your own routine.
+You want to save the world, to change it. But to do so, you have to know it. Every morning you do the same researches to stay aware and be prepared for your new day. This project will help you save this research time. We will automate it, in order for you to just get the informations you want by running a script. To do so, we will simulate navigation in a browser, get some information from it, and display it all gathered in the console.
 
 > Your goal for the moment is to gain precious time, automating your own repetitive morning behaviour.
 > This information can be found only in youself. It is very personnal, be creative. What seems relevant to you to begin a new day? This must be ***your own*** ephemeris, that you would like to use every day.
@@ -13,7 +13,7 @@ You want to save the world, to change it. But to do so, you have to know it. Eve
 What is mandatory about the tests:
 -> handle the opening and the closure of the browser (must be headless in last version)
 -> go to a specific url
--> click on a specific element of the page which implies an event in this page (to like something, registrer to something, diplay something...)
+-> click on a specific element of the page which implies an event in this page (to like something, register to something, display something...)
 -> navigate in a website (by clicking on a link)
 -> navigate from a website to another
 -> get the text content of an element
@@ -26,7 +26,7 @@ In the end:
 
 #### Using puppeteer
 
-In order to get your daily informations out of your favorite websites, you'll have to use `puppeteer` API.
+In order to get your daily informations out of your favorite websites, you'll have to use the `puppeteer` API.
 
 First, create a new repository named `ephemeris` and run this command line in your terminal, in the repository:
 ```console
