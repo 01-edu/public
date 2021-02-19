@@ -72,8 +72,9 @@ If you made it until here pretty fast, now the fun will begin! You're gonna add 
 - [`getElementById`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) or [`querySelector`](https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector)
 - [`textContent`](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent)
 - [`style`](https://developer.mozilla.org/fr/docs/Web/API/HTMLElement/style)
-- [`addEventListener`](https://developer.mozilla.org/fr/docs/Web/API/EventTarget/addEventListener): [`click` event](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event) / [`keydown` event](https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event)
+- [`addEventListener`](https://developer.mozilla.org/fr/docs/Web/API/EventTarget/addEventListener): [`click` event](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event) / [`keydown` event](https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event) / [`load` event](https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event)
 - [`fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+- [`setInterval`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)
 
 ### Provided files
 
