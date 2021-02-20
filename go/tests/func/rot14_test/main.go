@@ -3,7 +3,7 @@ package main
 import (
 	student "student"
 
-	"lib"
+	"github.com/01-edu/public/go/tests/lib"
 )
 
 func rot14(s string) (result string) {

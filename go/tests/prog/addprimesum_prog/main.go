@@ -5,7 +5,7 @@ import (
 	"os"
 	"strconv"
 
-	"lib/is"
+	"github.com/01-edu/public/go/tests/lib/is"
 )
 
 func main() {

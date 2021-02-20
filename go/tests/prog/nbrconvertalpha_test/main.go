@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"strings"
 
-	"lib"
+	"github.com/01-edu/public/go/tests/lib"
 )
 
 func main() {

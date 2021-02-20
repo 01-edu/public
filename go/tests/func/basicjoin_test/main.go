@@ -5,7 +5,7 @@ import (
 
 	student "student"
 
-	"lib"
+	"github.com/01-edu/public/go/tests/lib"
 )
 
 func basicJoin(elems []string) string {

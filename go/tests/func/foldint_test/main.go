@@ -5,7 +5,7 @@ import (
 
 	student "student"
 
-	"lib"
+	"github.com/01-edu/public/go/tests/lib"
 )
 
 func foldInt(f func(int, int) int, a []int, n int) {

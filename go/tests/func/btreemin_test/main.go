@@ -5,9 +5,9 @@ import (
 
 	student "student"
 
-	"func/correct"
+	"github.com/01-edu/public/go/tests/func/correct"
 
-	"lib"
+	"github.com/01-edu/public/go/tests/lib"
 )
 
 func errorMessage_min(fn interface{}, root, a *correct.TreeNode, b *student.TreeNode) {

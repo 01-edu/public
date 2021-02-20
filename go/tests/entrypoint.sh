@@ -2,15 +2,20 @@
 
 set -e
 
+cd student
+
+if test "$EXAM_MODE"; then
+	go mod init main 2>/dev/null
+	GOSUMDB=off go get github.com/01-edu/z01@v0.1.0 2>/dev/null
+fi
+
 if test "$EXAM_RUN_ONLY" = true; then
-	go build -o exe ./student
+	go build -o exe "./$EXERCISE"
 	./exe "$@"
 	exit
 fi
 
-cd student
-
-if ! test "$SKIP_FORMATTING"; then
+if ! test "$EXAM_MODE"; then
 	s=$(goimports -d .)
 	if test "$s"; then
 		echo 'Your Go files are not correctly formatted :'
@@ -37,18 +42,13 @@ if test "$ALLOWED_FUNCTIONS" && test "$FILE"; then
 	rc "$FILE" $ALLOWED_FUNCTIONS
 fi
 
-cd
-
 # Compile and run test
 if command -v "${EXERCISE}_test" >/dev/null 2>&1; then
 	# The exercise is a program
-	go build -o exe "./student/$EXERCISE"
+	go build -o exe "./$EXERCISE"
 	"${EXERCISE}_test"
 else
 	# The exercise is a function
-	mkdir src
-	ln -s $(pwd)/student $(pwd)/src/student
-	GOPATH=$GOPATH:$PWD
-	go build "func/${EXERCISE}_test"
-	"./${EXERCISE}_test"
+	cd "/public/go/tests/func/${EXERCISE}_test"
+	go run .
 fi

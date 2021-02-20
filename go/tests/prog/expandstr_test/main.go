@@ -1,7 +1,7 @@
 package main
 
 import (
-	"lib"
+	"github.com/01-edu/public/go/tests/lib"
 )
 
 func main() {

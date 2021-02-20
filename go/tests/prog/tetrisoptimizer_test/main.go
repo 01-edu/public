@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"lib"
+	"github.com/01-edu/public/go/tests/lib"
 )
 
 type (

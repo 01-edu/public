@@ -4,7 +4,7 @@ import (
 	"math/rand"
 	"strings"
 
-	"lib"
+	"github.com/01-edu/public/go/tests/lib"
 )
 
 func uniqueChar(s string) bool {

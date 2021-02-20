@@ -3,7 +3,7 @@ package main
 import (
 	student "student"
 
-	"lib"
+	"github.com/01-edu/public/go/tests/lib"
 )
 
 // Returns the element of the slice that doesn't have a correspondant pair

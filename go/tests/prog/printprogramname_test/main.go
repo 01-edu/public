@@ -4,7 +4,7 @@ import (
 	"os"
 	"os/exec"
 
-	"lib"
+	"github.com/01-edu/public/go/tests/lib"
 )
 
 var oldName = "exe"

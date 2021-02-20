@@ -5,9 +5,9 @@ import (
 
 	student "student"
 
-	"func/correct"
+	"github.com/01-edu/public/go/tests/func/correct"
 
-	"lib"
+	"github.com/01-edu/public/go/tests/lib"
 )
 
 type Node3 = student.NodeL
