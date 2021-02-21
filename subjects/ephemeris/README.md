@@ -2,26 +2,24 @@
 
 ### Instructions
 
-You are already feeling this change in yourself... You can know understand why people say that developers are lazy. You want to do more, but doing less. That's normal.
-Let's try to enhance your own routine, to begin.
-You want to save the world, to change it. But to do so, you have to know it. Every morning you do the same researches to stay aware and prepared for your new day. This project will help you saving this research time. We will automate it, in order for you to just get the informations you want by running a script. To do so, we will simulate navigation in a browser, get some information from it, and display it all gathered in the console.
+You are already feeling this change in yourself... You can now understand why people say that developers are lazy. You want to do more, but doing less. That's normal.
+Let's try to enhance your own routine, as a starter. Every morning you do the same researches to stay aware and prepared for your new day. We're gonna save this precious time.
+To do so, we're going to create a script that automate this researches by simulate it in a browser, get the informations you want, and display it all gathered in the console.
 
-> Your goal for the moment is to gain precious time, automating your own repetitive morning behaviour.
-> This information can be found only in youself. It is very personnal, be creative. What seems relevant to you to begin a new day? This must be ***your own*** ephemeris, that you would like to use every day.
-> Some examples we could see in other people minds: get the weather, a link to the last daily podcast that you like, a link to the last article of a media that you like, the last post of a bunch of people you follow, the last news article pushed from a social media, your horoscope, the tv program of the day, etc...
+> We are talking here about your own interests. This can be found only in youself. What's relevant to you to begin a new day? It is very personnal, be creative!
+> Some examples we could see in other people minds: get the weather, the last podcast/article of a media that you like, the last post of a someone/something you follow, your horoscope, the tv program of the day, etc.
 
-What is mandatory about the tests:
--> handle the opening and the closure of the browser (must be headless in last version)
--> go to a specific url
--> click on a specific element of the page which implies an event in this page (to like something, registrer to something, diplay something...)
--> navigate in a website (by clicking on a link)
--> navigate from a website to another
+About the browser control, you must:
+-> handle the opening and the closure of the browser
+-> navigate to a specific url
+-> click on an element which implies an event in the page (display something, registrer to something, like something...)
+-> navigate in a website
 -> get the text content of an element
 -> get the url of an element
 
 In the end:
+-> The whole browser control must execute itself without being seen.
 -> Your ephemeris must appear in your console.
--> The puppeteer tests must execute themselves without being seen.
 -> The script has to finish and close properly.
 
 #### Using puppeteer
@@ -67,14 +65,31 @@ const myText = await page.$eval(
 )
 ```
 
+> More documentation here: [puppeteer API](https://pptr.dev/)
+
 ### Optional
 
 1. Pimp your output. Here are some ideas or examples, be creative:
--> put some colors in your text
--> associate an emoji to the weather (< 10°: ❄️; > 10° && < 20°: ☀️; > 20°: 🔥)
+-> Put some colors in your text
+-> Associate an emoji to the weather (< 10°: ❄️; > 10° && < 20°: ☀️; > 20°: 🔥)
+-> Add randoms messages to say hello
+-> Etc.
 
 2. Generate a `ephemeris.html` file from this ephemeris
--> Check the first raid! you can use the `style.css` and the `news` section of the `html` file.
--> Integrate your ephemeris in this first project.
+-> Check the first raid! you can use the `style.css` and the `cards` section of the `html` file as an inspiration...
 
-3. Save a file every day in a `history` folder (with its date) and display the 10 latest files of the history in your HTML page.
+3. Save a file every day in a `history` folder (with its date) and display the 10 latest files of the history in an HTML page.
+
+4. Integrate your ephemeris in the result of your first `cardon-copy` raid, on the `cards` section.
+-> Integration must be dynamic: each day, your new ephemeris should replace the old one.
+
+### Notions
+
+- [HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+- [HTML Attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes)
+- [Puppeteer](https://pptr.dev/)
+- [Node file system: read directory](https://nodejs.org/api/fs.html#fs_fs_readdir_path_options_callback)
+- [Node file system: read file](https://nodejs.org/api/fs.html#fs_fs_readfile_path_options_callback)
+- [Node file system: write file](https://nodejs.org/api/fs.html#fs_fs_writefile_file_data_options_callback)
+- [Node path: resolve](https://nodejs.org/api/path.html#path_path_resolve_paths)
+- [Node utilities: promisify](https://nodejs.org/api/util.html#util_util_promisify_original)
