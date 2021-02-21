@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"io"
 	"math/big"
-	"math/bits"
 	"math/rand"
 	"os"
 	"os/exec"
@@ -16,12 +15,6 @@ import (
 	"unicode"
 	"unicode/utf8"
 )
-
-func init() {
-	if bits.UintSize != 64 {
-		panic("only works on 64 bits CPU")
-	}
-}
 
 const (
 	MinInt = ^MaxInt
