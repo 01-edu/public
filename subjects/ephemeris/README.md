@@ -69,19 +69,19 @@ const myText = await page.$eval(
 
 ### Optional
 
-1. Pimp your output. Here are some ideas or examples, be creative:
--> Put some colors in your text
--> Associate an emoji to the weather (< 10°: ❄️; > 10° && < 20°: ☀️; > 20°: 🔥)
--> Add randoms messages to say hello
--> Etc.
+1. Pimp your output. Here are some ideas or examples, be **creative**:
+  - Put some colors in your text
+  - Associate an emoji to the weather `(< 10°: ❄️; > 10° && < 20°: ☀️; > 20°: 🔥)`
+  - Add randoms messages to say hello
+  - Etc.
 
 2. Generate a `ephemeris.html` file from this ephemeris
--> Check the first raid! you can use the `style.css` and the `cards` section of the `html` file as an inspiration...
+  - Check the first raid! you can use the `style.css` and the `cards` section of the `html` file as an inspiration...
 
-3. Save a file every day in a `history` folder (with its date) and display the 10 latest files of the history in an HTML page.
+3. Save a file every day in a `/history` folder (with its date) and display the 10 latest files of the history in an HTML page.
 
 4. Integrate your ephemeris in the result of your first `cardon-copy` raid, on the `cards` section.
--> Integration must be dynamic: each day, your new ephemeris should replace the old one.
+  - Integration must be dynamic: *each day, your new ephemeris should replace the old one.*
 
 ### Notions
 
