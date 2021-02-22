@@ -10,17 +10,17 @@ To do so, we're going to create a script that automate this researches by simula
 > Some examples we could see in other people minds: get the weather, the last podcast/article of a media that you like, the last post of a someone/something you follow, your horoscope, the tv program of the day, etc.
 
 About the browser control, you must:
--> handle the opening and the closure of the browser
--> navigate to a specific url
--> click on an element which implies an event in the page (display something, registrer to something, like something...)
--> navigate in a website
--> get the text content of an element
--> get the url of an element
+- handle the opening and the closure of the browser
+- navigate to a specific url
+- click on an element which implies an event in the page (display something, registrer to something, like something...)
+- navigate in a website
+- get the text content of an element
+- get the url of an element
 
 In the end:
--> The whole browser control must execute itself without being seen.
--> Your ephemeris must appear in your console.
--> The script has to finish and close properly.
+- The whole browser control must execute itself without being seen.
+- Your ephemeris must appear in your console.
+- The script has to finish and close properly.
 
 #### Using puppeteer
 
