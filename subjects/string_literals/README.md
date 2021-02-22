@@ -1,4 +1,4 @@
-## string literal
+## string literals
 
 ### Instructions
 
@@ -42,7 +42,7 @@ pub fn find(v: &str, pat: char) -> usize {
 Here is a program to test your function
 
 ```rust
-use string_literal::*;
+use string_literals::*;
 
 fn main() {
     println!("{}", is_empty(""));
