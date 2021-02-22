@@ -44,7 +44,7 @@ For this phase, you'll have to make the whole HTML & CSS by yourself.
 
 If you made it until here pretty fast, now the fun will begin! You're going to add a bunch of JS interactions to make elements appear / disappear / change in the HTML & CSS by linking a JS [script](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) to your `index.html`.
 
-- Change the order of the pictures when clicking on the pictures' section, [toggling](https://developer.mozilla.org/fr/docs/Web/API/Element/classList) the pre-defined class `row-reverse` from the CSS file `styles.css`.
+- Change the order of the pictures when clicking on the pictures' section, [toggling](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) the pre-defined class `row-reverse` from the CSS file `styles.css`.
 
 ![](images-order.gif)
 
@@ -68,12 +68,12 @@ If you made it until here pretty fast, now the fun will begin! You're going to a
 
 - [HTML tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 - [CSS basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
-- [Css flexbox layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) is always useful
+- [Css flexbox layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) & [Flexbox froggy](https://flexboxfroggy.com/) are always useful
 - [Link a JS script](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
-- [`classList` / `toggle`](https://developer.mozilla.org/fr/docs/Web/API/Element/classList)
+- [`classList` / `toggle`](https://css-tricks.com/snippets/javascript/the-classlist-api/)
 - [`getElementById`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) or [`querySelector`](https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector)
 - [`textContent`](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent)
-- [`style`](https://developer.mozilla.org/fr/docs/Web/API/HTMLElement/style)
+- [`style`](https://developer.mozilla.org/en-US/docs/Web/API/ElementCSSInlineStyle/style)
 - [`addEventListener`](https://developer.mozilla.org/fr/docs/Web/API/EventTarget/addEventListener): [`click` event](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event) / [`keydown` event](https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event) / [`load` event](https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event)
 - [`fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 - [`setInterval`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)
