@@ -20,6 +20,8 @@ The raid is divided in 3 phases:
 Create & write the HTML file `index.html` to build the structure of the page.
 For this phase, we provide you a CSS file (`styles.css`) that you just have to [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link) to your `index.html`, meaning you won't need to style anything. However, you can do it from scratch and write yourself the whole CSS if you feel up to it.
 
+NB: Each item of the navbar menu - in the top right corner - has to bring to the corresponding section on click (clicking on "About" scrolls to the "About" section in the page) ; take a look at the [`href` anchor use](https://www.w3.org/TR/html401/struct/links.html#h-12.2.3).
+
 Here is a [wireframe](https://en.wikipedia.org/wiki/Website_wireframe) of the webpage, showing the HTML tags you have to use:
 ![](page-wireframe.jpg)
 
@@ -78,7 +80,7 @@ If you made it until here pretty fast, now the fun will begin! You're going to a
 
 ### Provided files
 
-Download [this folder](https://assets.01-edu.org/carbon-copy) to have at your disposal the following files:
+Download [`carbon-copy.zip`](https://assets.01-edu.org/carbon-copy) to have at your disposal the following files:
 
 - the CSS file `styles.css` containing the pre-styled elements
 - the `images` folder containing the images to display in the webpage
