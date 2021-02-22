@@ -61,6 +61,11 @@ Here is an example:
 ]
 ```
 
+### Allowed Packages
+
+- Only the [standard go](https://golang.org/pkg/) packages are allowed
+- [Gorilla](https://pkg.go.dev/github.com/gorilla/websocket) websocket
+
 This project will help you learn about:
 
 - Creating and using an API

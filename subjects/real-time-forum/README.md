@@ -67,6 +67,11 @@ Users will be able to send private messages to each other, so you will need to c
 
 As it is expected, the messages should work in real time, in other words, if a user sends a message, the other user should receive the notification of the new message without refreshing the page. Again this is possible through the usage of WebSockets in backend and frontend.
 
+### Allowed Packages
+
+- Only the [standard go](https://golang.org/pkg/) packages are allowed
+- [Gorilla](https://pkg.go.dev/github.com/gorilla/websocket) websocket
+
 This project will help you learn about:
 
 - The basics of web :

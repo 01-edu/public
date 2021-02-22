@@ -23,6 +23,11 @@ This engine must have/display:
 
 To help with the display of the typing in progress you can take a look on the js [event](https://developer.mozilla.org/en-US/docs/Web/Events) list, mainly the **Keyboard events** and the **Focus events**
 
+### Allowed Packages
+
+- Only the [standard go](https://golang.org/pkg/) packages are allowed
+- [Gorilla](https://pkg.go.dev/github.com/gorilla/websocket) websocket
+
 This project will help you learn about:
 
 - [Go routines](https://golangbot.com/goroutines/)

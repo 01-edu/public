@@ -1,5 +1,7 @@
 #### Functional
 
+###### Has the requirement for the allowed packages been respected?
+
 ##### Open two browsers (ex: Chrome and Firefox or private windows) and log in with different users in each one. With one user start typing.
 
 ###### Is there any animation confirming that the typing in progress is working?

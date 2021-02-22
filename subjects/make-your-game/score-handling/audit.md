@@ -1,5 +1,7 @@
 #### Functional
 
+###### Has the requirement for the allowed packages been respected?
+
 ##### Play and finish the game
 
 ###### Does it asks for a name?

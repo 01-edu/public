@@ -1,5 +1,7 @@
 #### Functional
 
+###### Has the requirement for the allowed packages been respected?
+
 ##### Open the project
 
 ###### Is the file system for the backend well organized?

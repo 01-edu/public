@@ -97,6 +97,14 @@ All migrations should be stored on a specific folder, as above. The `sqlite.go` 
 
 This migration system can help you manage your time and testing, by filling your database.
 
+#### Allowed Packages
+
+- Only the [standard go](https://golang.org/pkg/) packages are allowed
+- [Gorilla](https://pkg.go.dev/github.com/gorilla/websocket) websocket
+- [golang-migrate](https://github.com/golang-migrate/migrate/)
+- [sql-migration](https://pkg.go.dev/github.com/rubenv/sql-migrate)
+- [migration](https://pkg.go.dev/github.com/Boostport/migration)
+
 ---
 
 ### docker
