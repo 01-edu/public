@@ -44,7 +44,7 @@ For this phase, you'll have to make the whole HTML & CSS by yourself.
 
 If you made it until here pretty fast, now the fun will begin! You're going to add a bunch of JS interactions to make elements appear / disappear / change in the HTML & CSS by linking a JS [script](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) to your `index.html`.
 
-- Change the order of the pictures when clicking on the pictures' section, [toggling](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) the pre-defined class `row-reverse` from the CSS file `styles.css`.
+- Change the order of the pictures when clicking on the pictures' section, [toggling](https://css-tricks.com/snippets/javascript/the-classlist-api/) the pre-defined class `row-reverse` from the CSS file `styles.css`.
 
 ![](images-order.gif)
 
