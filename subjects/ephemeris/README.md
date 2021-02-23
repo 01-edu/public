@@ -88,6 +88,7 @@ const myText = await page.$eval(
 - [HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 - [HTML Attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes)
 - [Puppeteer](https://pptr.dev/)
+- [Node process: `exit`](https://nodejs.org/api/process.html#process_process_exit_code)
 - [Node file system: `readdir`](https://nodejs.org/api/fs.html#fs_fs_readdir_path_options_callback)
 - [Node file system: `readFile`](https://nodejs.org/api/fs.html#fs_fs_readfile_path_options_callback)
 - [Node file system: `writeFile`](https://nodejs.org/api/fs.html#fs_fs_writefile_file_data_options_callback)
