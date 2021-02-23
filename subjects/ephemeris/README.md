@@ -65,7 +65,6 @@ const myText = await page.$eval(
 )
 ```
 
-> More documentation here: [puppeteer API](https://pptr.dev/)
 
 ### Optional
 
