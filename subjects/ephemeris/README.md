@@ -13,7 +13,7 @@ About the browser control, you must:
 
 - handle the opening and the closure of the browser
 - navigate to a specific url
-- click on an element which implies an event in the page (display something, register to something, like something...)
+- click on an element which triggers an event in the page (display something, register to something, like something...)
 - navigate in a website
 - get the text content of an element
 - get the url of an element
