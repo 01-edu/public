@@ -15,7 +15,7 @@ The raid is divided in 3 phases:
 - custom CSS style
 - JS interactions
 
-#### Phase 1: HTML only (mandatory)
+#### Phase 1: HTML only _(mandatory)_
 
 Create & write the HTML file `index.html` to build the structure of the page.
 For this phase, we provide you a CSS file (`styles.css`) that you just have to [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link) to your `index.html`, meaning you won't need to style anything. However, you can do it from scratch and write yourself the whole CSS if you feel up to it.
@@ -25,7 +25,7 @@ NB: Each item of the navbar menu - in the top right corner - has to bring to the
 Here is a [wireframe](https://en.wikipedia.org/wiki/Website_wireframe) of the webpage, showing the HTML tags you have to use:
 ![](page-wireframe.jpg)
 
-#### Phase 2: custom CSS (mandatory)
+#### Phase 2: custom CSS _(mandatory)_
 
 First of all, let's customize the color atmosphere of the webpage to your own taste: go to the CSS file `styles.css`, & replace the current blue & yellow with 2 new colors of your choice.
 
@@ -40,7 +40,7 @@ Those 3 cards have to display respectively one information with:
 
 For this phase, you'll have to make the whole HTML & CSS by yourself.
 
-#### Phase 3: JS interactions (mandatory & optional)
+#### Phase 3: JS interactions _(mandatory & optional)_
 
 If you made it until here pretty fast, now the fun will begin! You're going to add a bunch of JS interactions to make elements appear / disappear / change in the HTML & CSS by linking a JS [script](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) to your `index.html`.
 
@@ -48,19 +48,19 @@ If you made it until here pretty fast, now the fun will begin! You're going to a
 
 ![](images-order.gif)
 
-- In the Contact section, when clicking on the "Introduce yourself" button, get the text typed in the `input` and display it in the middle of the following sentence: "Nice to meet you _[put here the input data]_ 👋! Thanks for introducing yourself." Also, the `<p>`, `<input>` & `<button>` elements have to disappear after the button has been clicked.
+- Option 1: In the Contact section, when clicking on the "Introduce yourself" button, get the text typed in the `input` and display it in the middle of the following sentence: "Nice to meet you _[put here the input data]_ 👋! Thanks for introducing yourself." Also, the `<p>`, `<input>` & `<button>` elements have to disappear after the button has been clicked.
 
 ![](contact-input.gif)
 
-- When clicking on a card, open a modal window that will show the whole article ; the modal will be closed either when clicking on a "Close" button, or when the "Escape" key is pressed.
+- Option 2: When clicking on a card, open a modal window that will show the whole article ; the modal will be closed either when clicking on a "Close" button, or when the "Escape" key is pressed.
 
 ![](modale.gif)
 
-- In the modal article, create a widget that allows to change the text alignment ; on click on `left` or `center` buttons, the layout changes to the chosen justification, and the selected option's `font-weight` becomes `bold` whereas the other becomes `light`.
+- Option 3: In the modal article, create a widget that allows to change the text alignment ; on click on `left` or `center` buttons, the layout changes to the chosen justification, and the selected option's `font-weight` becomes `bold` whereas the other becomes `light`.
 
 ![](text-alignment.gif)
 
-- Warrior option: set the `header` text content with a random quote every time the page is loaded, and then every 4 seconds. You can use this marvelous [Chuck Norris API](https://api.chucknorris.io/) to [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) his most inspiring sayings and display them in your own page!
+- Warrior option: set the `header` text content with a random quote every time the page is loaded, and then every 10 seconds. You can use this marvelous [Chuck Norris API](https://api.chucknorris.io/) to [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) his most inspiring sayings and display them in your own page!
 
 ![](fetch-quote.gif)
 
