@@ -7,17 +7,17 @@ You must create a `tic tac toe` checker.
 Create the following functions:
 
 - `tic_tac_toe` which receives:
-    - a table of vectors (Vec<Vec<&str>>).
-    - It should return a String `player O won` or `player X won` or `Tie`.
+  - a table of vectors (Vec<Vec<&str>>).
+  - It should return a String `player O won` or `player X won` or `Tie`.
 - `diagonals` which will receive:
-    - a player and a table. 
-    - It should return a boolean, this must return `true` if one of the diagonals are completed by the player.
+  - a player and a table.
+  - It should return a boolean, this must return `true` if one of the diagonals are completed by the player.
 - `horizontal` which will receive:
-    - a player and a table. 
-    - It should return a boolean, this must return `true` if one of the horizontal lines are completed by the player.
-- `vertical` which will receive: 
-    - a player and a table. 
-    - It should return a boolean, this must return `true` if one of the vertical lines are completed by the player.
+  - a player and a table.
+  - It should return a boolean, this must return `true` if one of the horizontal lines are completed by the player.
+- `vertical` which will receive:
+  - a player and a table.
+  - It should return a boolean, this must return `true` if one of the vertical lines are completed by the player.
 
 ### Notions
 
