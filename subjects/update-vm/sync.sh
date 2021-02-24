@@ -33,7 +33,6 @@ rsync \
     --compress-choice lz4 \
     --info=progress2 \
     --rsh="ssh -oIdentitiesOnly=yes -p521 -i$key_file" \
-    "$HOME/VirtualBox VMs/debian-01" assets@assets.01-edu.org:
-    # assets@assets.01-edu.org:debian-01 "$HOME/VirtualBox VMs"
+    assets@assets.01-edu.org:debian-01 "$HOME/VirtualBox VMs"
 
 echo "debian-01 successfully updated"
