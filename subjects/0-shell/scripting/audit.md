@@ -2,11 +2,11 @@
 
 ###### Was the project written in a compiled programming language?
 
-###### Was the student script created?
+###### Was the student shell script created?
 
 #### Functional
 
-##### Try to run the command `"bash create-dir.sh"` in your computer terminal and create the directory "Example".
+##### Try to run the student script in your computer terminal and create the directory "Example".
 
 ```
 Enter directory name
@@ -16,7 +16,7 @@ Directory created
 
 ###### Can you confirm that the script is valid and the directory "Example" was created like the example above?
 
-##### Try to run the command `"bash create-dir.sh"` in the `0-shell` interpreter and create the directory "Example1".
+##### Try to run the student script in the `0-shell` interpreter and create the directory "Example1".
 
 ```
 Enter directory name
@@ -26,7 +26,7 @@ Directory created
 
 ###### Can you confirm that the script is valid and the directory "Example1" was created like the example above?
 
-##### Try to run the command `"bash create-dir.sh"` in the `0-shell` interpreter and create the directory with the same name as before "Example1".
+##### Try to run the student script in the `0-shell` interpreter and create the directory with the same name as before "Example1".
 
 ```
 Enter directory name
@@ -34,7 +34,7 @@ Example1
 Directory exist
 ```
 
-###### Can you confirm that the script is valid and the directory "Example1" was not created because it already exists like the example above?
+###### Can you confirm that the directory was not created and the script shows the message "Directory exist" because a directory with that name already exists like the example above?
 
 ##### Try to run the command `"NAME="Alex""` followed by the command `"echo "Hello $NAME!""` in the `0-shell` interpreter.
 

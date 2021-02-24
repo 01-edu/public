@@ -12,13 +12,12 @@ In `job control`, you will have to implement the following [builtins](https://ww
 - bg
 - fg
 - kill
-- disown
 
 You must also be able to stop jobs with the `Ctrl + Z`.
 
 ### Instructions
 
-- The project has to be written in a compiled language like (C, Rust or other), no semi compiled language like (Pearl and others) are allowed.
+- The project has to be written in a compiled language like (C, Rust Go or other), no interpreted languages like (Pearl and others) are allowed.
 - The code must respect the [good practices](https://public.01-edu.org/subjects/good-practices/)
 
 This project will help you learn about:
@@ -44,7 +43,7 @@ $ jobs -l
 [2]+ 8870 Running                 sleep 50 &
 $ kill 8287
 [1]+  Terminated              tar -czf home.tar.gz .
-& jobs
+$ jobs
 [2]+  Running                 sleep 50 &
 $ exit
 student$
