@@ -97,11 +97,3 @@ sleep 50000
 ```
 
 ###### Run `"jobs"`. Can you confirm that the program started the process in the background like the example above?
-
-##### Try to run the command `"disown %1"`.
-
-```
-[2]+  Running                 sleep 50000 &
-```
-
-###### Can you confirm that the program removed the first process from the list without terminating it?

@@ -6,7 +6,7 @@
 
 ##### Open a terminal and run the project.
 
-###### Can you confirm that the project runs and displays a unix interpreter?
+###### Can you confirm that the project runs and displays a unix shell?
 
 ##### Open a terminal and run the project.
 
@@ -32,7 +32,7 @@
 
 ###### Can you confirm that the interpreter displayed the current path?
 
-##### Try to open the project and create a parent folder with two child folders using the command "mkdir". Then enter the parent folder and do "pwd" .
+##### Try to open the project and create a parent folder with two child folders using the command "mkdir". Then enter the parent folder and do "pwd".
 
 ###### Can you confirm that the interpreter displayed the current path?
 
@@ -58,7 +58,7 @@
 
 ##### Create a document inside the `new_folder1` called `new_doc.txt` with some random text inside. Try to run the command `"cp new_doc.txt ../folder2"` to copy the document to the folder `new_folder2`.
 
-###### Can you confirm that the document `new_doc.txt` is inside the `new_folder2`? 
+###### Can you confirm that the document `new_doc.txt` is inside the `new_folder2`?
 
 ##### Try to run the command `"cat new_folder1/new_doc"`. Do the same in your computer terminal.
 
