@@ -88,6 +88,12 @@
 
 ###### Did it also displayed the "Close calls", if there were any?
 
+##### Try to generate on vehicle and see how much time the vehicle takes to leave the intersection, then exit the application and compare the time statistics.
+
+###### Is the max time equal to the min time?
+
+###### And if so is the time correct compared from the time you counted?
+
 #### General
 
 ###### Is it not possible to spam the creation of vehicles(by pressing the arrow keys to many times)?
