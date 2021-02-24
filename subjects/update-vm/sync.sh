@@ -9,13 +9,6 @@ if ! test -d "$HOME/VirtualBox VMs"; then
     exit 1
 fi
 
-echo "If you have created snapshots for the debian-01 virtual machine, they will be deleted"
-echo "Same thing for display recordings"
-echo "You can safely ignore this warning if you don't know what it means"
-echo
-echo "Press the [RETURN] key to continue"
-read -r
-
 if pgrep VirtualBox >/dev/null; then
     echo Close VirtualBox before updating debian-01 Virtual Machine
     exit 1
