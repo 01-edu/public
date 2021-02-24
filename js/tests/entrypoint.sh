@@ -2,4 +2,4 @@
 
 set -e
 
-node /app/test.mjs "${EXERCISE}"
+node /app/test.mjs "/jail/student" "${EXERCISE}"
