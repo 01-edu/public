@@ -137,7 +137,7 @@ The statistics must include:
 - Max velocity of all vehicles
 - Min velocity of all vehicles
 - Max time that took the vehicles to pass the intersection (for all vehicles the one that took more)
-  - The time starts to count whenever the vehicle is detected by the **smart intersection algorithm** until the end of the intersection
+  - The time starts to count whenever the vehicle is detected by the **smart intersection algorithm** until the end of the intersection, when the vehicle is removed from the canvas.
 - Min time that took the vehicles to pass the intersection (for all vehicles the one that took less)
 - Close calls, this is when both vehicles pass each other with a violation o the safe distance.
 
@@ -145,7 +145,7 @@ The statistics must include:
 
 ### Example
 
-You can see an example [here](TODO-LINK).
+You can see an example [here](https://youtu.be/ChJZIjFjydA).
 
 ---
 
