@@ -145,7 +145,7 @@ The statistics must include:
 
 ### Example
 
-You can see an example [here](https://youtu.be/ChJZIjFjydA).
+You can see an example [here](https://youtu.be/_z8WDX_YS9k).
 
 ---
 
