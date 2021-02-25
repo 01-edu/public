@@ -104,7 +104,7 @@ For this it must be possible to do the following:
 
 ### Example
 
-You can see an example [here](https://youtu.be/_z8WDX_YS9k).
+You can see an example [here](https://www.youtube.com/watch?v=6B0-ZBET6mo).
 
 ### Bonus
 
