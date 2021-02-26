@@ -7,7 +7,7 @@ Create the 3 following classes, setting them with the given rulesets, & attribut
 
 - class `eye`:
   - `height` of 10 pixels
-  - `background-color` "red"
+  - `background-color` "orange"
   - `border-radius` of 50%
   - attributed to `eye-left` & `eye-right`
 - class `arm`:

@@ -6,8 +6,8 @@ Create a CSS file, [link it](https://developer.mozilla.org/en-US/docs/Web/HTML/E
 - target all the elements with the [universal selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors) and style them with an `opacity` of 0.8
 - target all the `section` tags with the [type selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors), and style it with a `padding` of 20 pixels and a `margin` of 15 pixels
 - target each following element with the [`id` selector](https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors), using the `id` you defined earlier for each section, and style it:
-  - `face` with a `width` & `height` of 80 pixels, and a "lime" `background-color`
-  - `upper-body` with a `width` of 200 pixels, a `height` of 220 pixels, and a "deeppink" `background-color`
+  - `face` with a `width` & `height` of 80 pixels, and a "deeppink" `background-color`
+  - `upper-body` with a `width` of 200 pixels, a `height` of 220 pixels, and a "blue" `background-color`
   - `lower-body` with a `width` of 100 pixels, a `height` of 220 pixels, and a "yellow" `background-color`
 - target the `body` tag and style it with a `display` at "flex", a `flex-direction` at "column" and a `align-items` at "center" (this is to turn the `body` into a [`flex` container](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox), so the elements will be centered in the page)
 
