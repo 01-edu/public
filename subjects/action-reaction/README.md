@@ -7,17 +7,18 @@ Let's put a button on the top right corner of the page, that will toggle (close 
 Add it in the HTML structure:
 
 ```
-<button>Click me to toggle left eye</button>
+<button>Click me to close left eye</button>
 ```
 
 Add the style in the CSS file:
 
 ```
 button {
- position: fixed;
- top: 30px;
- right: 30px;
- padding: 30px;
+  z-index: 1;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  padding: 20px;
 }
 ```
 
@@ -26,6 +27,12 @@ In the JS file, get the HTML button element with [`querySelector`](https://devel
 - change the [text content](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent) of the button: if the eye is open, write "Click to close the left eye", if the eye is closed, write "Click to open the left eye"
 - [toggle](https://css-tricks.com/snippets/javascript/the-classlist-api/) the class `eye-open` in the `classList` of the `eye-left` HTML element
 - change the background color of the `eye-left`: if the eye is open, to "orange", if the eye is closed, to "black"
+
+### Expected output
+
+This is what you should see in the browser:
+
+<!-- screenshot -->
 
 ### Notions
 
