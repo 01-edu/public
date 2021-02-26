@@ -15,7 +15,7 @@ First, define it in your CSS file:
 }
 ```
 
-In the JS file, add the freshly-created class `eye-closed` to the [`classList`](https://css-tricks.com/snippets/javascript/the-classlist-api/) of your `eye-left` element.
+In the JS file, add the freshly-created class `eye-closed` to the [`classList`](https://css-tricks.com/snippets/javascript/the-classlist-api/) of your `eye-left` element, and [set its style property](https://developer.mozilla.org/en-US/docs/Web/API/ElementCSSInlineStyle/style#setting_styles) background color to "black".
 
 Reload the page - it's alive! Your JS brain has control and orders your HTML/CSS body to close one eye.
 
@@ -30,3 +30,4 @@ This is what you should see in the browser:
 - [Link a JS script](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
 - [`getElementById`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
 - [`classList` / `add()`](https://css-tricks.com/snippets/javascript/the-classlist-api/)
+- [Setting style with JS](https://developer.mozilla.org/en-US/docs/Web/API/ElementCSSInlineStyle/style#setting_styles)
