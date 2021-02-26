@@ -20,37 +20,34 @@ Let's add new elements and wrap them in different layers ; convert this list of 
   - left leg: `div` tag with `id` `leg-left`
   - right leg: `div` tag with `id` `leg-right`
 
-Add the following CSS to your `styles.css` file to see the freshly-added nested elements:
+Modify your CSS file to add rulesets to `section` tags: `display` at "flex" and `justify-content` at "center" (this is to turn the `section` tags into [`flex` containers](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox), so the elements inside will be centered)
+
+Add also the following CSS to your `styles.css` file to see the freshly-added nested elements:
 
 ```
-section {
-  display: flex;
-  justify-content: space-between;
-}
-
 div,
 p {
   border: solid 1px black;
-  padding: 5px;
+  padding: 10px;
   margin: 0;
-}
-
-#face {
-  flex-direction: column;
-  align-items: center;
   border-radius: 30px;
 }
 
+#face {
+  align-items: center;
+}
+
 #eyes {
-  width: 60px;
   display: flex;
+  background-color: yellow;
   justify-content: space-between;
   align-items: center;
-  background-color: cyan;
+  border-radius: 50px;
+  width: 200px;
 }
 
 #torso {
-  width: 100px;
+  width: 200px;
   background-color: violet;
 }
 ```
@@ -65,3 +62,4 @@ This is what you should see in the browser:
 
 - [Anatomy of an HTML element](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#anatomy_of_an_html_element)
 - [Nesting HTML elements](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#nesting_elements)
+- [Flexbox layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox), you can train on [Flexbox froggy](https://flexboxfroggy.com/)
