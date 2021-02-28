@@ -23,8 +23,7 @@ Note that you can attribute several classes to a same element ; create the class
 ### Expected output
 
 This is what you should see in the browser:
-
-<!-- screenshot -->
+![](class-that.png)
 
 ### Notions
 

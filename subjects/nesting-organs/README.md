@@ -55,8 +55,7 @@ p {
 ### Expected output
 
 This is what you should see in the browser:
-
-<!-- screenshot -->
+![](nesting-organs.png)
 
 ### Notions
 

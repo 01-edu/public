@@ -22,8 +22,7 @@ Reload the page - it's alive! Your JS brain has control and orders your HTML/CSS
 ### Expected output
 
 This is what you should see in the browser:
-
-<!-- screenshot -->
+![](bring-it-to-life.png)
 
 ### Notions
 
