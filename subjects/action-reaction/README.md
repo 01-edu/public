@@ -30,9 +30,7 @@ In the JS file, get the HTML button element with [`querySelector`](https://devel
 
 ### Expected output
 
-This is what you should see in the browser:
-
-<!-- screenshot -->
+[This](https://youtu.be/Wkar5SmswDo) is what you should see in the browser.
 
 ### Notions
 
