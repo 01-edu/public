@@ -9,7 +9,7 @@ First, define this new class in your CSS file:
 
 ```
 .eye-closed {
-  height: 2px;
+  height: 4px;
   padding: 0 5px;
   border-radius: 10px;
 }

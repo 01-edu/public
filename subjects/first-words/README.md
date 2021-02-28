@@ -35,9 +35,7 @@ In the JS file, like in the previous exercise, get the HTML button element with 
 
 ### Expected output
 
-This is what you should see in the browser:
-
-<!-- screenshot -->
+[This](https://youtu.be/Eq9liRCc-zA) is what you should see in the browser.
 
 ### Notions
 
