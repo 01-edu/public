@@ -22,8 +22,7 @@ Here is an exemple of how to set the color of `div` tags to "red":
 ### Expected output
 
 This is what you should see in the browser:
-
-<!-- screenshot -->
+![](select-and-style.png)
 
 ### Notions
 
