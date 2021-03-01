@@ -54,16 +54,16 @@ git config --global color.ui true
 #### Write the code !
 
 Once you have installed and configured the necessary tools,
-create a `git` repository with a `hello.js` JS file
-that display the text `Hello There` in the terminal.
+create a `git` repository named `[[ROOT]]` with a `hello-there.js`
+JS file that display the text `Hello There` in the terminal.
 
 > Don't forget to commit and push the file to the servers
 
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ node hello.js
-hello there
+student@ubuntu:~/[[ROOT]]/test$ node hello-there.js
+Hello There
 student@ubuntu:~/[[ROOT]]/test$
 ```
 
