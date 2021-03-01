@@ -7,7 +7,7 @@ The first step to achieve in your quest is to conceive your being ; for that, 2 
 
 #### Parameters
 
-To create any project, some things need to be declared in the `index.html` file - those are not visible elements in your page, but things cannot work without them.
+To create any project, some things need to be declared in the HTML file - those are not visible elements in your page, but things cannot work without them.
 Set your page with [`<html>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html) & [`<head>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head) tags, and also put a [`<title>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title) to name the entity you're going to create.
 
 #### Structure
@@ -19,7 +19,7 @@ Let's define the first level of elements that your entity will be made of ; we'r
 
 Inside the `<body>` tag of your HTML file, create 3 divisions using `<section>` tags, putting the following text content inside for each: 'face', 'upper-body', 'lower-body'.
 
-If you open you `index.html` file in the browser, you should see those 3 texts appear on the screen.
+If you open you HTML file in the browser, you should see those 3 texts appear on the screen.
 
 ### Notions
 

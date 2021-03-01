@@ -22,7 +22,7 @@ Let's add new elements and wrap them in different layers ; convert this list of 
 
 Modify your CSS file to add rulesets to `section` tags: `display` at "flex" and `justify-content` at "center" (this is to turn the `section` tags into [`flex` containers](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox), so the elements inside will be centered)
 
-Add also the following CSS to your `styles.css` file to see the freshly-added nested elements:
+Add also the following CSS to your CSS file to see the freshly-added nested elements:
 
 ```
 div,

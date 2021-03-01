@@ -2,7 +2,7 @@
 
 Still there? Well done! But hold on, here begins the serious part... In order to control your creation, you're going to plug its brain: JavaScript.
 
-[`Link a JS script`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) to your `bring-it-to-life.html` file.
+[`Link a JS script`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) to your HTML file.
 In this script, you're going to close the left eye of your entity.
 To do so, you have to target the `eye-left` HTML element by its `id` thanks to the [`getElementById`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) method. Then, [change the `style`](https://developer.mozilla.org/en-US/docs/Web/API/ElementCSSInlineStyle/style#setting_styles) of your `eye-left` to set its background color to black. We also need to modify its shape ; for that we are going to add a new class to it.
 First, define this new class in your CSS file:
