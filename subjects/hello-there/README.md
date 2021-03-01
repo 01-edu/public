@@ -62,9 +62,9 @@ JS file that display the text `Hello There` in the terminal.
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ node hello-there.js
+student@ubuntu:~/[[ROOT]]$ node hello-there.js
 Hello There
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/[[ROOT]]$
 ```
 
 ### You will learn about
