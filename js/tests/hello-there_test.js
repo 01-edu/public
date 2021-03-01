@@ -2,8 +2,8 @@ import { readFileSync as read } from 'fs'
 
 // /*/ // ⚡
 export const tests = [
-  ({ eq }) => // code must use console.log
-    read('/jail/student/hello-there.js', 'utf8').trim().includes('console.log'),
+  ({ eq, path }) => // code must use console.log
+    read(path, 'utf8').trim().includes('console.log'),
 
   async ({ eq, code }) => {
     // console.log must have been called with the right value
@@ -18,6 +18,6 @@ export const tests = [
     const url = `data:text/javascript;base64,${b64}`
     await import(url)
     console.log = log
-    eq(args.join(' ').trim(), 'Hello There')
+    return eq(args.join(' ').trim(), 'Hello There')
   },
 ]
