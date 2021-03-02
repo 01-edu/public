@@ -2,27 +2,24 @@ export const tests = []
 
 tests.push(async ({ page, eq }) => {
   // check that the title tag is present & is set with some text
-  const title = await page.$$eval(
-    'title',
-    (nodes) => nodes[0] && nodes[0].innerHTML,
-  )
-  const isValidTitle = title !== undefined && title.length !== 0
-  eq(isValidTitle, true)
+  const title = await page.$eval('title', (node) => node.textContent)
+  if (!title.length) throw Error('missing title')
 })
 
 tests.push(async ({ page, eq }) => {
-  // check the 3 sections have been created with the correct text
-  const elements = await page.$$eval('body', (nodes) =>
-    [...nodes[0].children].map((node) => ({
-      tag: node.tagName.toLowerCase(),
-      text: node.textContent,
-    })),
-  )
-  eq(expectedSections, elements)
+  // check the face
+
+  return eq.$('section:nth-child(1)', { textContent: 'face' })
 })
 
-const expectedSections = [
-  { tag: 'section', text: 'face' },
-  { tag: 'section', text: 'upper-body' },
-  { tag: 'section', text: 'lower-body' },
-]
+tests.push(async ({ page, eq }) => {
+  // check the upper-body
+
+  return eq.$('section:nth-child(2)', { textContent: 'upper-body' })
+})
+
+tests.push(async ({ page, eq }) => {
+  // check the lower-body, my favorite part
+
+  return eq.$('section:nth-child(3)', { textContent: 'lower-body' })
+})
