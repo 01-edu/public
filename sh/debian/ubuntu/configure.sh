@@ -415,6 +415,9 @@ if ! test -v PERSISTENT; then
 	cp /etc/shadow /etc/shadow-
 fi
 
+# Use Cloudflare DNS server
+echo 'supersede domain-name-servers 1.1.1.1;' >> /etc/dhcp/dhclient.conf
+
 # Clean system
 
 # Purge useless packages
