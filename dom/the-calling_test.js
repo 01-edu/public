@@ -1,19 +1,19 @@
 export const tests = []
 
 tests.push(async ({ page, eq }) => {
-  // check the 3 sections have the correct id and no text
-  const elements = await page.$$eval('body', (nodes) =>
-    [...nodes[0].children].map((node) => ({
-      tag: node.tagName.toLowerCase(),
-      text: node.textContent,
-      id: node.id,
-    })),
-  )
-  eq(expectedSections, elements)
+  // check the face
+
+  return eq.$('section#face', { textContent: '' })
 })
 
-const expectedSections = [
-  { tag: 'section', text: '', id: 'face' },
-  { tag: 'section', text: '', id: 'upper-body' },
-  { tag: 'section', text: '', id: 'lower-body' },
-]
+tests.push(async ({ page, eq }) => {
+  // check the upper-body
+
+  return eq.$('section#upper-body', { textContent: '' })
+})
+
+tests.push(async ({ page, eq }) => {
+  // check the lower-body, my favorite part
+
+  return eq.$('section#lower-body', { textContent: '' })
+})
