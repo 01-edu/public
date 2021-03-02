@@ -7,7 +7,7 @@ In this new digital world you're gonna discover, it is possible to create beings
 Like a modern Dr Frankenstein, you're about to dive into the `world-wide-what` and give birth to a new entity on the virtual space of your browser.
 During this quest, step by step, you are going to shape it.
 
-But before coding anything, make sure you checked the 2 videos of the playlist ; you need to have a server running on your computer.
+But before coding anything, make sure you checked the videos of the playlist; you need to have a server running on your computer.
 For the whole quest, the principle is to iterate over your code: when you finish an exercise, copy-paste your code to use it in the next one.
 
 Naming of the files:
@@ -35,7 +35,7 @@ Remember this as a general rule for any further project you will start: a good w
 
 Let's define the first level of elements that your entity will be made of ; we're going to split it into 3 main chunks: the face, the upper body, and the lower body.
 
-Inside the `<body>` tag of your HTML file, create 3 divisions using `<section>` tags, putting the following text content inside for each: 'face', 'upper-body', 'lower-body'.
+Inside the `<body>` tag of your HTML file, create 3 divisions using `<section>` tags, putting the following text content inside for each: `face`, `upper-body`, `lower-body`.
 
 If you open you HTML file in the browser, you should see those 3 texts appear on the screen.
 
