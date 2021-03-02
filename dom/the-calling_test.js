@@ -2,14 +2,14 @@ export const tests = []
 
 tests.push(async ({ page, eq }) => {
   // check the 3 sections have the correct id and no text
-  const sections = await page.$$eval('section', (nodes) =>
-    nodes.map((node) => ({
+  const elements = await page.$$eval('body', (nodes) =>
+    [...nodes[0].children].map((node) => ({
       tag: node.tagName.toLowerCase(),
       text: node.textContent,
       id: node.id,
     })),
   )
-  eq(expectedSections, sections)
+  eq(expectedSections, elements)
 })
 
 const expectedSections = [
