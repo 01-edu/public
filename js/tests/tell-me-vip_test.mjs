@@ -6,6 +6,7 @@ import { promisify } from 'util'
 const mkdir = fs.mkdir
 const rmdir = fs.rmdir
 const writeFile = fs.writeFile
+const readFile = fs.readFile
 
 const exec = promisify(cp.exec)
 
@@ -87,7 +88,7 @@ const guests = [
   'Gabriela Tucker',
   'Kiri Wilcox',
 ]
-const shuffle = arr => {
+const shuffle = (arr) => {
   let i = arr.length
   let j, tmp
   while (--i > 0) {
@@ -102,7 +103,7 @@ const getRandomList = (names) =>
   shuffle(names).slice(0, Math.floor(Math.random() * (names.length - 10) + 10))
 const getExpected = (list) =>
   Object.entries(list)
-    .filter(([n, {answer}]) => answer === 'yes')
+    .filter(([n, { answer }]) => answer === 'yes')
     .map(([n, _]) =>
       n
         .split(' ')
@@ -110,10 +111,10 @@ const getExpected = (list) =>
         .join(' '),
     )
     .sort()
-    .map((g, i) => `${i +1}. ${g}`)
+    .map((g, i) => `${i + 1}. ${g}`)
     .join('\n')
 const generateObj = () => ({
-  answer: ['yes', 'no'][Math.floor(Math.random() * 2)]
+  answer: ['yes', 'no'][Math.floor(Math.random() * 2)],
 })
 
 export const setup = async () => {
@@ -122,7 +123,9 @@ export const setup = async () => {
   // check if already exists and rm?
   await mkdir(`${dir}/${name}`)
   const randomList = getRandomList(guests)
-  const randomAnswers = Object.fromEntries(randomList.map(g => [g, generateObj()]))
+  const randomAnswers = Object.fromEntries(
+    randomList.map((g) => [g, generateObj()]),
+  )
   const expected = getExpected(randomAnswers)
   await Promise.all(
     Object.entries(randomAnswers).map(
@@ -139,12 +142,15 @@ export const setup = async () => {
 }
 const printVIPGuestList = async ({ arg, ctx, path, eq }) => {
   const scriptPath = join(resolve(), path)
+  const cwd = arg ? `${ctx.tmpPath}` : `${ctx.tmpPath}/${name}`
   const { stdout } = await exec(`node ${scriptPath} ${arg}`, {
-    cwd: arg ? `${ctx.tmpPath}` : `${ctx.tmpPath}/${name}`,
+    cwd,
   })
-
-  // await rmdir(`${ctx.tmpPath}/${name}`, { recursive: true })
-  return eq(stdout.trim(), ctx.expected)
+  const out = await readFile(`${cwd}/vip.txt`, 'utf8').catch((err) =>
+    err.code === 'ENOENT' ? 'output file not found' : err,
+  )
+  await exec(`rm vip.txt`, { cwd })
+  return eq(out, ctx.expected)
 }
 
 tests.push(async ({ path, eq, ctx }) => {
