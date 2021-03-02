@@ -51,12 +51,33 @@ const rgbToHsl = rgbStr => {
     : [((r - g) / d + 4) * 60, s, l]
 }
 
+const pathMap = {
+  [`/${exercise}/${exercise}.js`]: path.join(solutionPath, `${exercise}.js`),
+}
+
+const ifNotExists = (p, fn) => {
+  try {
+    fs.statSync(p)
+  } catch (err) {
+    if (err.code !== 'ENOENT') throw err
+    fn()
+  }
+}
+
+ifNotExists(`./subjects/${exercise}/index.html`, () => {
+  const indexPath = path.join(solutionPath, `${exercise}.html`)
+  pathMap[`/${exercise}/index.html`] = indexPath
+  ifNotExists(indexPath, () => {
+    console.error(`missing student ${exercise}.html file`)
+    process.exit(1)
+  })
+})
+
 const server = http
   .createServer(({ url, method }, response) => {
     console.log(method + ' ' + url)
-    const filepath = url.endsWith(`${exercise}/${exercise}.js`)
-      ? path.join(solutionPath, url.slice(exercise.length + 1))
-      : path.join('./subjects', url)
+    if (url.endsWith('/favicon.ico')) return response.end()
+    const filepath = pathMap[url] || path.join('./subjects', url)
     const ext = path.extname(filepath)
     response.setHeader('Content-Type', mediaTypes[ext.slice(1)] || 'text/plain')
 
