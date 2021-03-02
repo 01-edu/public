@@ -35,14 +35,14 @@ apt-get -yf install
 # Configure Terminal
 
 # Makes bash case-insensitive
-cat <<"EOF">> /etc/inputrc
+cat <<EOF >> /etc/inputrc
 set completion-ignore-case
 set show-all-if-ambiguous On
 set show-all-if-unmodified On
 EOF
 
 # Enhance Linux prompt
-cat <<"EOF"> /etc/issue
+cat <<EOF > /etc/issue
 Kernel build: \v
 Kernel package: \r
 Date: \d \t
@@ -54,7 +54,7 @@ EOF
 # Enable Bash completion
 apt-get -y install bash-completion
 
-cat <<"EOF">> /etc/bash.bashrc
+cat <<EOF >> /etc/bash.bashrc
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
@@ -102,7 +102,7 @@ ssh_port=512
 # Install dependencies
 apt-get -y install ssh
 
-cat <<"EOF">> /etc/ssh/sshd_config
+cat <<EOF >> /etc/ssh/sshd_config
 Port $ssh_port
 PasswordAuthentication no
 AllowUsers root
@@ -122,7 +122,7 @@ ufw --force enable
 
 sed -i -e 's/message=/message_null=/g' /etc/grub.d/10_linux
 
-cat <<"EOF">> /etc/default/grub
+cat <<EOF >> /etc/default/grub
 GRUB_TIMEOUT=0
 GRUB_RECORDFAIL_TIMEOUT=0
 GRUB_TERMINAL=console
@@ -171,7 +171,7 @@ npm install -g fx
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add -
 apt-get install -y apt-transport-https
 
-cat <<"EOF"> /etc/apt/sources.list.d/sublime-text.list
+cat <<EOF > /etc/apt/sources.list.d/sublime-text.list
 deb https://download.sublimetext.com/ apt/stable/
 EOF
 
