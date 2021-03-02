@@ -42,6 +42,7 @@ This project will help you learn about :
 - time
 - math/rand
 - errors
+- io/fs
 
 ### Hint
 
