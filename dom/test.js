@@ -53,6 +53,7 @@ const rgbToHsl = rgbStr => {
 
 const pathMap = {
   [`/${exercise}/${exercise}.js`]: path.join(solutionPath, `${exercise}.js`),
+  [`/${exercise}/${exercise}.css`]: path.join(solutionPath, `${exercise}.css`),
 }
 
 const ifNotExists = (p, fn) => {
