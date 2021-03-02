@@ -136,9 +136,9 @@ grub-install "$disk"
 
 # Install Go
 
-wget https://dl.google.com/go/go1.15.2.linux-amd64.tar.gz
-tar -C /usr/local -xzf go1.15.2.linux-amd64.tar.gz
-rm go1.15.2.linux-amd64.tar.gz
+wget https://dl.google.com/go/go1.16.linux-amd64.tar.gz
+tar -C /usr/local -xzf go1.16.linux-amd64.tar.gz
+rm go1.16.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin' >> /etc/profile
 
 # Set-up all users
@@ -159,7 +159,7 @@ done
 
 # Install Node.js
 
-curl -sL https://deb.nodesource.com/setup_12.x | bash -
+curl -sL https://deb.nodesource.com/setup_14.x | bash -
 apt-get --no-install-recommends -y install nodejs
 
 # Install FX: command-line JSON processing tool (https://github.com/antonmedv/fx)
