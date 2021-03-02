@@ -3,18 +3,17 @@
 ### Objectives
 
 Do you remember the [`road_intersection`](https://public.01-edu.org/subjects/road_intersection/) raid done in the Rust Piscine? Well, you
-will have to create another traffic control strategy and its simulation, but this time without traffic lights and with a smart intersection management strategy.
+will have to create another traffic control strategy and its simulation. However, this time it will have to be done without traffic lights and with a smart intersection management strategy.
 
-Most of the time intersections might lead to serious traffic jams on multiple roads, which wastes time and money of drivers and
-also causes unnecessary air pollutions. It is also reported that about 96% of the intersection-related crashes had critical reasons
+Most of the time overused intersections might lead to serious traffic jams on multiple roads, which wastes drivers'time and money, and also causes unnecessary air pollution. Additionaly in the U.S. according to a study from the National Highway Traffic Safery administration, it is reported that about 96% of the intersection-related crashes had critical reasons
 to be the drivers fault, such as inadequate surveillance, false assumption of other actions, and turns with obstructed view.
 
-[Autonomous vehicles](https://en.wikipedia.org/wiki/Self-driving_car) (AVs) is a promising solution to traffic accidents. An optimistic prediction is that AVs will be publicly available in the next decade, and thus traffic problems related to autonomous vehicles are also being extensively investigated.
+[Autonomous vehicles](https://en.wikipedia.org/wiki/Self-driving_car) (AVs) is a promising solution to traffic accidents. An optimistic prediction is that AVs will be publicly available in the next decade, and thus traffic issues related to autonomous vehicles are also being extensively investigated.
 
 Current intersection management strategies, such as the traditional traffic light and other more advanced methods are designed exclusively
 for human drivers. With the rapid development of AVs, new traffic strategies must be taken into account.\
-This is where you come in. You will have to create this new traffic strategy algorithm so that AVs can pass an intersection without any
-collisions and with a minimum traffic congestion.
+This is where you come in. You will have to create this new traffic strategy algorithm, so that AVs can pass an intersection without any
+collisions and with a minimum of traffic congestion.
 
 ### Instructions
 
@@ -53,7 +52,7 @@ _______________            |            ________________
 ```
 
 The simplicity of this intersection is that each lane has only one outgoing direction, that is, the route of the vehicle in the
-intersection area can be only represented by the corresponding lane.
+intersection area can only be represented by the corresponding lane.
 
 ---
 
@@ -66,16 +65,17 @@ intersection area can be only represented by the corresponding lane.
 ```
 
 As stated above you will be considering that all vehicles are autonomous (AVs) also known as self-driving cars.
-You will have to implement the physics for this type of vehicles, by taking into account the following rules :
+You will have to implement the physics for this type of vehicles by taking into account the following rules :
 
 1. AVs driving on a lane with a **given route** must follow the direction of
-  that route, its not possible for the AVs to change lanes or route.
+   that route, its not possible for the AVs to change lanes or route.
 
 2. An AVs must have at least 3 different velocities, therefore the **smart intersection system** can control the velocity of the vehicle.\
-  This way controlling the current velocity/time/distance (depending on the algorithm you implement) of the AVs.
+   This will be the way of controlling the current velocity/time/distance (depending on the algorithm you implement) of the AVs.
 
-3. Each AVs must have a safety distance from other AVs, if it is driving with a high velocity and encounters another vehicle.\
-  It must detect that vehicle and keep a safe distance from it, it should not collide!
+3. Each AVs must respect a safety distance from other AVs.\
+   If it is driving with a high velocity and encounters another vehicle, it must detect that vehicle and keep a safe distance from it. It should not collide!
+   You are free to decide what is the safety distance but it must a strictly positive value.
 
 4. Other vehicles such as emergency vehicles are not considered in this project.
 
@@ -83,7 +83,7 @@ You will have to implement the physics for this type of vehicles, by taking into
 
 - `time`, this will be the time that the AVs takes to leave the intersection
 - `distance`, this will be the distance that the AVs takes to leave the intersection
-- `velocity`
+- `velocity`, this will be the speed of the AVs at current time
 
 ---
 
@@ -97,7 +97,7 @@ Animation is required for this project, you will have to find some assets for th
 - [spriters-resource](https://www.spriters-resource.com/).
 
 Animation is not just rendering an image into the canvas. By using assets you get to decide your "world coordinate system"
-for the rendered image and therefore creating your own animation. But this is not enough, basically you must animate while moving.
+for the rendered image and therefore you create your own animation. But this is not enough, basically you must animate while moving.
 
 A simple example of movement animation is imagining a vehicle with a route of `r`. This means that the vehicle arrives at the
 intersection and turns right. If we render just an image of the vehicle facing down and it arrives to the point of turning, the rendered image
@@ -118,7 +118,7 @@ You will have to implement several commands so that the simulation can be well t
 - `Arrow Right`, generate vehicles from west to east.
 - `Arrow Left`, generate vehicles from east to west.
 
-2. It must also be possible to use the key `R` to continually generate radom vehicles (using the game loop).
+2. It must also be possible to use the key `R` to continually generate random vehicles (using the game loop).
 
 3. The `Esc` key must finish the simulation and generate a window with all statistics (you can see more about the statistics on its section).
 
@@ -128,18 +128,18 @@ You will have to implement several commands so that the simulation can be well t
 
 #### **Statistics**
 
-Your program must be able to generate statistics, like state above this must be displayed in a window right after the user tries to exit the simulation.
+Your program must be able to generate statistics, as stated above, this must be displayed in a window right after the user tries to exit the simulation.
 
 The statistics must include:
 
 - Max number of vehicles that passed the intersection
 - Collisions if there was any
-- Max velocity of all vehicles
-- Min velocity of all vehicles
-- Max time that took the vehicles to pass the intersection (for all vehicles the one that took more)
-  - The time starts to count whenever the vehicle is detected by the **smart intersection algorithm** until the end of the intersection, when the vehicle is removed from the canvas.
-- Min time that took the vehicles to pass the intersection (for all vehicles the one that took less)
-- Close calls, this is when both vehicles pass each other with a violation o the safe distance.
+- Max velocity of all vehicles (Display the fastest speed achieved)
+- Min velocity of all vehicles (Dislay the slowest speed reached)
+- Max time that took the vehicles to pass the intersection (for all vehicles, display the one that took more time)
+  - The time starts to count whenever the vehicle is detected by the **smart intersection algorithm** until the end of the intersection, which is when the vehicle is removed from the canvas.
+- Min time that took the vehicles to pass the intersection (for all vehicles, display the one that took less time)
+- Close calls, this is when both vehicles pass each other with a violation of the safe distance.
 
 ---
 
