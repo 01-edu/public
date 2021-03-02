@@ -15,44 +15,40 @@ tests.push(async ({ page, eq }) => {
     return [...nodes[0].children].map(toNode)
   })
   eq(expectedStructure, elements)
+})
 
+tests.push(async ({ page, eq }) => {
   // check the section selector style has been updated properly
-  const sectionSelectorStyle = await page.evaluate(() => {
-    const target = [...window.document.styleSheets[0].cssRules].find(
-      (rule) => rule.selectorText === 'section',
-    )
-    const { display, justifyContent } = target.style
-    return { display, justifyContent }
+  eq.css('section', {
+    display: 'flex',
+    justifyContent: 'center',
   })
-  eq({ display: 'flex', justifyContent: 'center' }, sectionSelectorStyle)
+})
 
-  // check if the given CSS has been correctly copy pasted
+tests.push(async ({ page, eq }) => {
+  // check if the provided CSS has been correctly copy pasted
+  eq.css('div, p', {
+    border: '1px solid black',
+    padding: '10px',
+    margin: '0px',
+    borderRadius: '30px',
+  })
 
-  // div,
-  // p {
-  //   border: solid 1px black;
-  //   padding: 10px;
-  //   margin: 0;
-  //   border-radius: 30px;
-  // }
+  eq.css('#face', { alignItems: 'center' })
 
-  // #face {
-  //   align-items: center;
-  // }
+  eq.css('#eyes', {
+    display: 'flex',
+    backgroundColor: 'yellow',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    borderRadius: '50px',
+    width: '200px',
+  })
 
-  // #eyes {
-  //   display: flex;
-  //   background-color: yellow;
-  //   justify-content: space-between;
-  //   align-items: center;
-  //   border-radius: 50px;
-  //   width: 200px;
-  // }
-
-  // #torso {
-  //   width: 200px;
-  //   background-color: violet;
-  // }
+  eq.css('#torso', {
+    width: '200px',
+    backgroundColor: 'violet',
+  })
 })
 
 const expectedStructure = [
