@@ -1,5 +1,23 @@
 ### Skeleton
 
+#### Instructions
+
+Welcome to the `world-wide-what` quest!
+In this new digital world you're gonna discover, it is possible to create beings with some lines of code. Yes, it is.
+Like a modern Dr Frankenstein, you're about to dive into the `world-wide-what` and give birth to a new entity on the virtual space of your browser.
+During this quest, step by step, you are going to shape it.
+
+But before coding anything, make sure you checked the 2 videos of the playlist ; you need to have a server running on your computer.
+For the whole quest, the principle is to iterate over your code: when you finish an exercise, copy-paste your code to use it in the next one.
+
+Naming of the files:
+
+- for the HTML files: `name-of-the-exercise.html`
+- for the CSS files: when you have to link one, you can manage it as you prefer, but for clarity we suggest you to create a CSS file for each HTML file, named like so: `name-of-the-exercise.css`
+- for the JS files, when you have to link one, you can manage it as you prefer, but for clarity we suggest you to create a JS file for each HTML file, named like so: `name-of-the-exercise.js`
+
+Ready? Let's code!
+
 The first step to achieve in your quest is to conceive your being ; for that, 2 things have to be done:
 
 - set some parameters (`<head>` tag)
