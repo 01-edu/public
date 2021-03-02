@@ -21,16 +21,18 @@ global.fetch = url => {
 
 const wait = delay => new Promise(s => setTimeout(s, delay))
 const fail = fn => { try { fn() } catch (err) { return true } }
-const { join } = []
-const { split } = ''
+
+const props = [String,Array]
+  .flatMap(({ prototype }) =>
+    Object.getOwnPropertyNames(prototype)
+      .map(key => ({ key, value: prototype[key], src: prototype })))
+  .filter(p => typeof p.value === 'function')
+
 const eq = (a, b) => {
-  const noSplit = !''.split
-  const noJoin = ![].join
-  String.prototype.split = split
-  Array.prototype.join = join
+  const changed = props.filter(p => !p.src[p.key])
+  changed.forEach(p => p.src[p.key] = p.value)
   deepStrictEqual(a, b)
-  noSplit && (String.prototype.split = undefined)
-  noJoin && (Array.prototype.join = undefined)
+  changed.forEach(p => p.src[p.key] = undefined)
   return true
 }
 
@@ -60,12 +62,9 @@ const readTest = filename =>
   }))
 
 const stackFmt = (err, url) => {
-  if (!(err instanceof Error)) {
-    throw Error(`Unexpected type thrown: ${typeof err}. usage: throw Error('my message')`)
-  }
-  String.prototype.split = split
-  Array.prototype.join = join
-  return err.stack.split(url).join(`${name}.js`)
+  props.forEach(p => p.src[p.key] = p.value)
+  if (err instanceof Error) return err.stack.split(url).join(`${name}.js`)
+  throw Error(`Unexpected type thrown: ${typeof err}. usage: throw Error('my message')`)  
 }
 
 const any = arr =>
