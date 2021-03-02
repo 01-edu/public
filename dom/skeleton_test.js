@@ -8,7 +8,9 @@ tests.push(async ({ page, eq }) => {
   )
   const isValidTitle = title !== undefined && title.length !== 0
   eq(isValidTitle, true)
+})
 
+tests.push(async ({ page, eq }) => {
   // check the 3 sections have been created with the correct text
   const elements = await page.$$eval('body', (nodes) =>
     [...nodes[0].children].map((node) => ({
