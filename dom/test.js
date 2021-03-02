@@ -101,6 +101,34 @@ const server = http
 
       const [page] = await browser.pages()
       await page.goto(`http://localhost:${PORT}/${exercise}/index.html`)
+      deepStrictEqual.$ = async (selector, props) => {
+        const keys = Object.keys(props)
+        const extractProps = (node, props) => {
+          const fromProps = (a, b) => Object.fromEntries(Object.keys(b).map(k => [
+            k,
+            typeof b[k] === 'object' ? fromProps(a[k], b[k]) : a[k],
+          ]))
+          return fromProps(node, props)
+        }
+        const domProps = await page.$eval(selector, extractProps, props)
+        return deepStrictEqual(props, domProps)
+      }
+
+      deepStrictEqual.css = async (selector, props) => {
+        const cssProps = await page.evaluate((selector, props) => {
+          const styles = Object.fromEntries([...document.styleSheets]
+            .flatMap(({ cssRules }) => [...cssRules].map(r => [r.selectorText, r.style])))
+
+          if (!styles[selector]) {
+            throw Error(`css ${selector} did not match any declarations`)
+          }
+
+          return Object.fromEntries(Object.keys(props).map(k => [k, styles[selector][k]]))
+        }, selector, props)
+
+        return deepStrictEqual(props, cssProps)
+      }
+
       const baseContext = {
         page,
         browser,
