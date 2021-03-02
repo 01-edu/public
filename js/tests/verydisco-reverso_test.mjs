@@ -1,6 +1,9 @@
 import fs from 'fs/promises'
+import { tmpdir } from 'os'
+import { join, resolve } from 'path'
 const readFile = fs.readFile
 const writeFile = fs.writeFile
+const mkdir = fs.mkdir
 import { promisify } from 'util'
 import * as cp from 'child_process'
 
@@ -8,32 +11,38 @@ const exec = promisify(cp.exec)
 
 export const tests = []
 const name = 'verydisco-reverso'
-const hasContentAndExpect = async ({ content, expect, path, eq }) => {
-  const cwd = `${path
-    .split('/')
-    .slice(0, -1)
-    .join('/')}/`
+export const setup = async () => {
+  const dir = tmpdir()
+  // check if already exists and rm?
+  await mkdir(`${dir}/${name}`)
 
-  await writeFile(`${cwd}${name}.txt`, content, 'utf8')
-  const { stdout } = await exec(`node ${name}.mjs "${name}.txt"`, { cwd })
-  await exec(`rm ${name}.txt`, { cwd })
+  return { tmpPath: `${dir}/${name}` }
+}
+const hasContentAndExpect = async ({ content, expect, path, eq, ctx }) => {
+  const scriptPath = join(resolve(), path)
+
+  await writeFile(`${ctx.tmpPath}/${name}.txt`, content, 'utf8')
+  const { stdout } = await exec(`node ${scriptPath} "${name}.txt"`, { cwd: ctx.tmpPath })
+  await exec(`rm ${name}.txt`, { cwd: ctx.tmpPath })
 
   return eq(stdout.trim(), expect)
 }
 
-tests.push(async ({ path, eq }) =>
+tests.push(async ({ path, eq, ctx }) =>
   hasContentAndExpect({
     path,
     eq,
+    ctx,
     content: `deNo si omeawes`,
     expect: 'Node is awesome',
   }),
 )
 
-// tests.push(async ({ path, eq }) => {
+// tests.push(async ({ path, eq, ctx }) => {
 //   await hasContentAndExpect({
 //     path,
 //     eq,
+//     ctx,
 //     content: // newfilename,
 //     expect: // reverso
 //   })
