@@ -14,7 +14,7 @@ Example
 Directory created
 ```
 
-###### Can you confirm that the script is valid and the directory "Example" was created like the example above?
+###### Can you confirm that the script is valid and the directory "Example" was created like in the example above?
 
 ##### Try to run the student script in the `0-shell` interpreter and create the directory "Example1".
 
@@ -24,7 +24,7 @@ Example1
 Directory created
 ```
 
-###### Can you confirm that the script is valid and the directory "Example1" was created like the example above?
+###### Can you confirm that the script is valid and the directory "Example1" was created like in the example above?
 
 ##### Try to run the student script in the `0-shell` interpreter and create the directory with the same name as before "Example1".
 
@@ -34,7 +34,7 @@ Example1
 Directory exist
 ```
 
-###### Can you confirm that the directory was not created and the script shows the message "Directory exist" because a directory with that name already exists like the example above?
+###### Can you confirm that the directory was not created and the script shows the message "Directory exist" because a directory with that name already exists like in the example above?
 
 ##### Try to run the command `"NAME="Alex""` followed by the command `"echo "Hello $NAME!""` in the `0-shell` interpreter.
 
