@@ -14,7 +14,7 @@ For example:
 ### Notions
 
 - [Node file system: `readFile`](https://nodejs.org/api/fs.html#fs_fspromises_writefile_file_data_options)
-<!-- and also Math.floors ? -->
+- [`Math.floor()` function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor)
 <!--
   again?
 - [Node path: `resolve`](https://nodejs.org/api/path.html#path_path_resolve_paths)
