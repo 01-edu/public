@@ -12,9 +12,9 @@
 
 ###### Can you confirm that this interpreter displays at least a simple `$` and waits for you to type a command?
 
-##### Try to run a command at your choice.
+##### Try to run a command of your choice.
 
-###### Can you confirm that the interpreter only validates the command if you type enter?
+###### Can you confirm that the interpreter only validates the command if you press enter?
 
 ##### Try to run the command `"exit"`.
 
@@ -32,11 +32,11 @@
 
 ###### Can you confirm that the interpreter displayed the current path?
 
-##### Try to open the project and create a parent folder with two child folders using the command "mkdir". Then enter the parent folder and do "pwd".
+##### Try to open the project and create a parent folder with two children folders using the command "mkdir". Then enter the parent folder and do "pwd".
 
 ###### Can you confirm that the interpreter displayed the current path?
 
-##### Try to enter a directory at your choice by using the command `"cd dir/at/your/choice"`.
+##### Try to enter a directory of your choice by using the command `"cd dir/of/your/choice"`.
 
 ###### Can you confirm that the interpreter took you to the correct path? Use `"pwd"` to confirm.
 
@@ -52,7 +52,7 @@
 
 ###### Can you confirm that the output is the same in the project and in your computer terminal?
 
-##### Try to run the commands `"mkdir new_folder1"` and `"mkdir new_folder2"` in a directory at your choice.
+##### Try to run the commands `"mkdir new_folder1"` and `"mkdir new_folder2"` in a directory of your choice.
 
 ###### Can you confirm that the directory `new_folder1` and `new_folder2` were created?
 
