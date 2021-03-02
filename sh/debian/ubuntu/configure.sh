@@ -17,11 +17,11 @@ disk=$(lsblk -o tran,kname,hotplug,type,fstype -pr |
 
 systemctl stop unattended-upgrades.service
 
-apt-get update
-apt-get -y upgrade
-apt-get -y autoremove --purge
+apt-get --no-install-recommends update
+apt-get --no-install-recommends -y upgrade
+apt-get --no-install-recommends -y autoremove --purge
 
-apt-get -y install curl
+apt-get --no-install-recommends -y install curl
 
 # Remove outdated kernels
 # old_kernels=$(ls -1 /boot/config-* | sed '$d' | xargs -n1 basename | cut -d- -f2,3)
@@ -30,7 +30,7 @@ apt-get -y install curl
 # 	dpkg -P $(dpkg-query -f '${binary:Package}\n' -W *"$old_kernel"*)
 # done
 
-apt-get -yf install
+apt-get --no-install-recommends -yf install
 
 # Configure Terminal
 
@@ -52,7 +52,7 @@ Terminal: \l@\n.\O
 EOF
 
 # Enable Bash completion
-apt-get -y install bash-completion
+apt-get --no-install-recommends -y install bash-completion
 
 cat <<EOF >> /etc/bash.bashrc
 if ! shopt -oq posix; then
@@ -100,7 +100,7 @@ done
 ssh_port=512
 
 # Install dependencies
-apt-get -y install ssh
+apt-get --no-install-recommends -y install ssh
 
 cat <<EOF >> /etc/ssh/sshd_config
 Port $ssh_port
@@ -110,7 +110,7 @@ EOF
 
 # Install firewall
 
-apt-get -y install ufw
+apt-get --no-install-recommends -y install ufw
 
 ufw logging off
 ufw allow in "$ssh_port"/tcp
@@ -160,7 +160,7 @@ done
 # Install Node.js
 
 curl -sL https://deb.nodesource.com/setup_12.x | bash -
-apt-get -y install nodejs
+apt-get --no-install-recommends -y install nodejs
 
 # Install FX: command-line JSON processing tool (https://github.com/antonmedv/fx)
 
@@ -169,22 +169,22 @@ npm install -g fx
 # Install Sublime Text & Sublime Merge
 
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add -
-apt-get install -y apt-transport-https
+apt-get --no-install-recommends install -y apt-transport-https
 
 cat <<EOF > /etc/apt/sources.list.d/sublime-text.list
 deb https://download.sublimetext.com/ apt/stable/
 EOF
 
-apt-get update
-apt-get install -y sublime-text sublime-merge libgtk2.0-0
+apt-get --no-install-recommends update
+apt-get --no-install-recommends install -y sublime-text sublime-merge libgtk2.0-0
 
 # Install VSCode
 
 wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | apt-key add -
 echo 'deb https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs/ vscodium main' >> /etc/apt/sources.list.d/vscodium.list
 
-apt-get update
-apt-get install -y codium
+apt-get --no-install-recommends update
+apt-get --no-install-recommends install -y codium
 
 ln -s /usr/bin/codium /usr/local/bin/code ||:
 
@@ -215,7 +215,7 @@ done
 
 # Install LibreOffice
 
-apt-get -y install libreoffice
+apt-get --no-install-recommends -y install libreoffice
 
 # Install Go library
 
@@ -223,11 +223,11 @@ sudo -iu student go get github.com/01-edu/z01
 
 # Install Docker
 
-apt-get -y install apt-transport-https ca-certificates curl gnupg2 software-properties-common
+apt-get --no-install-recommends -y install apt-transport-https ca-certificates curl gnupg2 software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
 add-apt-repository -yes "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-apt-get update
-apt-get -y install docker-ce docker-ce-cli containerd.io
+apt-get --no-install-recommends update
+apt-get --no-install-recommends -y install docker-ce docker-ce-cli containerd.io
 adduser student docker
 
 # Install Docker compose
@@ -269,8 +269,8 @@ whoopsie
 xdg-desktop-portal
 "
 
-apt-get -y purge $pkgs
-apt-get -y autoremove --purge
+apt-get --no-install-recommends -y purge $pkgs
+apt-get --no-install-recommends -y autoremove --purge
 
 # Install packages
 pkgs="$(cat common_packages.txt)
@@ -293,7 +293,7 @@ virtualbox
 xfsprogs
 zenity
 "
-apt-get -y install $pkgs
+apt-get --no-install-recommends -y install $pkgs
 
 # Disable services
 services="
@@ -396,7 +396,7 @@ if ! test -v PERSISTENT; then
 	# Remove fsck because the system partition will be read-only (overlayroot)
 	rm /usr/share/initramfs-tools/hooks/fsck
 
-	apt-get -y install overlayroot
+	apt-get --no-install-recommends -y install overlayroot
 	echo 'overlayroot="device:dev=/dev/disk/by-partlabel/01-tmp-system,recurse=0"' >> /etc/overlayroot.conf
 
 	update-initramfs -u
@@ -430,10 +430,10 @@ echo 'supersede domain-name-servers 1.1.1.1;' >> /etc/dhcp/dhclient.conf
 # Clean system
 
 # Purge useless packages
-apt-get -y autoremove --purge
-apt-get autoclean
-apt-get clean
-apt-get install
+apt-get --no-install-recommends -y autoremove --purge
+apt-get --no-install-recommends autoclean
+apt-get --no-install-recommends clean
+apt-get --no-install-recommends install
 
 rm -rf /root/.local
 
