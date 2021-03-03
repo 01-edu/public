@@ -55,7 +55,7 @@ p {
 ### Expected output
 
 This is what you should see in the browser:
-![](nesting-organs.png)
+![](https://github.com/01-edu/public/raw/master/subjects/nesting-organs/nesting-organs.png)
 
 ### Notions
 
