@@ -396,6 +396,7 @@ if ! test -v PERSISTENT; then
 	sgdisk --change-name 5:01-tmp-system "$disk"
 
 	# Add Docker persistent partition
+	partprobe
 	mkfs.ext4 -E lazy_journal_init,lazy_itable_init=0 /dev/disk/by-partlabel/01-docker
 	echo 'PARTLABEL=01-docker /var/lib/docker ext4 noatime,errors=remount-ro 0 2' >> /etc/fstab
 	systemctl stop docker.service containerd.service
