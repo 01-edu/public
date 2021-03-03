@@ -19,7 +19,7 @@ systemctl stop unattended-upgrades.service
 
 apt-get --no-install-recommends update
 apt-get --no-install-recommends -y upgrade
-apt-get --no-install-recommends -y autoremove --purge
+apt-get -y autoremove --purge
 
 apt-get --no-install-recommends -y install curl
 
@@ -30,7 +30,7 @@ apt-get --no-install-recommends -y install curl
 # 	dpkg -P $(dpkg-query -f '${binary:Package}\n' -W *"$old_kernel"*)
 # done
 
-apt-get --no-install-recommends -yf install
+apt-get -yf install
 
 # Configure Terminal
 
@@ -269,8 +269,8 @@ whoopsie
 xdg-desktop-portal
 "
 
-apt-get --no-install-recommends -y purge $pkgs
-apt-get --no-install-recommends -y autoremove --purge
+apt-get -y purge $pkgs
+apt-get -y autoremove --purge
 
 # Install packages
 pkgs="$(cat common_packages.txt)
@@ -430,10 +430,10 @@ echo 'supersede domain-name-servers 1.1.1.1;' >> /etc/dhcp/dhclient.conf
 # Clean system
 
 # Purge useless packages
-apt-get --no-install-recommends -y autoremove --purge
-apt-get --no-install-recommends autoclean
-apt-get --no-install-recommends clean
-apt-get --no-install-recommends install
+apt-get -y autoremove --purge
+apt-get autoclean
+apt-get clean
+apt-get install
 
 rm -rf /root/.local
 
