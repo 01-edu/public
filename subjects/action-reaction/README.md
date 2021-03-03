@@ -7,7 +7,7 @@ Let's put a button on the top right corner of the page, that will toggle (close 
 Add it in the HTML structure:
 
 ```
-<button>Click me to close left eye</button>
+<button>Click to close the left eye</button>
 ```
 
 Add the style in the CSS file:
