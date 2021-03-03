@@ -23,7 +23,7 @@ Note that you can attribute several classes to a same element ; create the class
 ### Expected output
 
 This is what you should see in the browser:
-![](class-that.png)
+![](https://github.com/01-edu/public/raw/master/subjects/class-that/class-that.png)
 
 ### Notions
 

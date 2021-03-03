@@ -22,7 +22,7 @@ Reload the page - it's alive! Your JS brain has control and orders your HTML/CSS
 ### Expected output
 
 This is what you should see in the browser:
-![](bring-it-to-life.png)
+![](https://github.com/01-edu/public/raw/master/subjects/bring-it-to-life/bring-it-to-life.png)
 
 ### Notions
 
