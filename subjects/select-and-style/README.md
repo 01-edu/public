@@ -38,7 +38,7 @@ div {
 
 ### Expected output
 
-This is what you should see in the browser: ![screenshot](select-and-style.png)
+This is what you should see in the browser: ![screenshot][8]
 
 ### Notions
 
@@ -51,14 +51,11 @@ This is what you should see in the browser: ![screenshot](select-and-style.png)
 - [`id` selector][4]
 
 [0]: https://developer.mozilla.org/en-US/docs/Web/CSS
-[1]:
-  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link#including_a_stylesheet
+[1]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link#including_a_stylesheet
 [2]: https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
 [3]: https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors
 [4]: https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors
-[5]:
-  https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics#anatomy_of_a_css_ruleset
-[6]:
-  https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics#different_types_of_selectors
-[7]:
-  https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics
+[5]: https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics#anatomy_of_a_css_ruleset
+[6]: https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics#different_types_of_selectors
+[7]: https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics
+[8]: https://github.com/01-edu/public/blob/master/subjects/select-and-style/select-and-style.png?raw=true
