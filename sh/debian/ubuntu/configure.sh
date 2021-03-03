@@ -388,10 +388,22 @@ cd $script_dir
 rm -rf /tmp/system
 
 if ! test -v PERSISTENT; then
-	sgdisk -n0:0:+32G "$disk"
-	sgdisk -N0 "$disk"
-	sgdisk -c3:01-tmp-home "$disk"
-	sgdisk -c4:01-tmp-system "$disk"
+	sgdisk --new 0:0:+32G "$disk"
+	sgdisk --new 0:0:+32G "$disk"
+	sgdisk --largest-new 0 "$disk"
+	sgdisk --change-name 3:01-tmp-home "$disk"
+	sgdisk --change-name 4:01-docker "$disk"
+	sgdisk --change-name 5:01-tmp-system "$disk"
+
+	# Add Docker persistent partition
+	mkfs.ext4 -E lazy_journal_init,lazy_itable_init=0 /dev/disk/by-partlabel/01-docker
+	echo 'PARTLABEL=01-docker /var/lib/docker ext4 noatime,errors=remount-ro 0 2' >> /etc/fstab
+	systemctl stop docker.service containerd.service
+	mv /var/lib/docker /tmp
+	mkdir /var/lib/docker
+	mount /dev/disk/by-partlabel/01-docker
+	mv /tmp/docker/* /var/lib/docker
+	umount /var/lib/docker
 
 	# Remove fsck because the system partition will be read-only (overlayroot)
 	rm /usr/share/initramfs-tools/hooks/fsck
@@ -406,9 +418,6 @@ if ! test -v PERSISTENT; then
 
 	# Disable user password
 	passwd -d student
-
-	# Enable docker relocation
-	systemctl enable mount-docker
 
 	# Remove tty
 	cat <<-"EOF">> /etc/systemd/logind.conf
