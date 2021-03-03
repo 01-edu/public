@@ -5,8 +5,8 @@ tests.push(async ({ eq, page }) => {
   const eyeLeft = await page.$eval('#eye-left', (node) => node.className)
   eq(eyeLeft, 'eye')
 
-  const buttonText = await page.$eval('button', (node) => node.textContent)
   // check that the text of the button says 'close'
+  const buttonText = await page.$eval('button', (node) => node.textContent)
   eq(buttonText, 'Click to close the left eye')
 })
 
@@ -14,11 +14,16 @@ tests.push(async ({ eq, page }) => {
   // click the button to close the left eye
   const button = await page.$('button')
   button.click()
-  await page.waitForTimeout(150)
 
   // check that the class has been added
-  const eyeLeft = await page.$eval('#eye-left', (node) => node.className)
-  eq(eyeLeft, 'eye eye-closed')
+  await page.waitForSelector('#eye-left.eye.eye-closed', { timeout: 150 })
+
+  // check the background color has changed
+  const eyeLeft = await page.$eval(
+    '#eye-left.eye.eye-closed',
+    (node) => node.style.backgroundColor,
+  )
+  eq(eyeLeft, 'black')
 
   // check that the text of the button changed to 'open'
   const buttonText = await page.$eval('button', (node) => node.textContent)
@@ -29,13 +34,18 @@ tests.push(async ({ eq, page }) => {
   // click the button a second time to open the left eye
   const button = await page.$('button')
   button.click()
-  await page.waitForTimeout(150)
 
   // check that the class has been removed
-  const eyeLeft = await page.$eval('#eye-left', (node) => node.className)
-  eq(eyeLeft, 'eye')
+  await page.waitForSelector('#eye-left.eye:not(.eye-closed)', { timeout: 150 })
 
-  const buttonText = await page.$eval('button', (node) => node.textContent)
+  // check the background color has changed
+  const eyeLeft = await page.$eval(
+    '#eye-left.eye:not(.eye-closed)',
+    (node) => node.style.backgroundColor,
+  )
+  eq(eyeLeft, 'red')
+
   // check that the text of the button changed to 'close'
+  const buttonText = await page.$eval('button', (node) => node.textContent)
   eq(buttonText, 'Click to close the left eye')
 })

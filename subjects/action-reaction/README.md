@@ -26,7 +26,7 @@ In the JS file, get the HTML button element with [`querySelector`](https://devel
 
 - change the [text content](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent) of the button: if the eye is open, write "Click to close the left eye", if the eye is closed, write "Click to open the left eye"
 - [toggle](https://css-tricks.com/snippets/javascript/the-classlist-api/) the class `eye-open` in the `classList` of the `eye-left` HTML element
-- change the background color of the `eye-left`: if the eye is open, to "orange", if the eye is closed, to "black"
+- change the background color of the `eye-left`: if the eye is open, to "red", if the eye is closed, to "black"
 
 ### Expected output
 
