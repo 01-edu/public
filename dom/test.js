@@ -65,9 +65,9 @@ const ifNotExists = (p, fn) => {
   }
 }
 
-ifNotExists(`./subjects/${exercise}/index.html`, () => {
+ifNotExists(`./subjects/${exercise}/${exercise}.html`, () => {
   const indexPath = path.join(solutionPath, `${exercise}.html`)
-  pathMap[`/${exercise}/index.html`] = indexPath
+  pathMap[`/${exercise}/${exercise}.html`] = indexPath
   ifNotExists(indexPath, () => {
     console.error(`missing student ${exercise}.html file`)
     process.exit(1)
@@ -100,7 +100,7 @@ const server = http
       browser = await puppeteer.launch(config)
 
       const [page] = await browser.pages()
-      await page.goto(`http://localhost:${PORT}/${exercise}/index.html`)
+      await page.goto(`http://localhost:${PORT}/${exercise}/${exercise}.html`)
       deepStrictEqual.$ = async (selector, props) => {
         const keys = Object.keys(props)
         const extractProps = (node, props) => {
