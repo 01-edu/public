@@ -1,4 +1,4 @@
-import { people } from './subjects/get-them-all/data.js'
+import { people } from './subjects/get-them-all/get-them-all.data.js'
 
 const getIds = predicate =>
   people
@@ -32,7 +32,7 @@ tests.push(async ({ eq, page }) => {
   // get architects
   const btnArchitect = await page.$(`#btnArchitect`)
   btnArchitect.click()
-  await page.waitFor(150)
+  await page.waitForTimeout(150)
 
   const selected = await page.$$eval('a', nodes =>
     nodes
@@ -51,15 +51,13 @@ tests.push(async ({ eq, page }) => {
   )
 
   eq(eliminated, notArchitects)
-
-  await page.waitFor(150)
 })
 
 tests.push(async ({ page, eq }) => {
   // get classical
   const btnClassical = await page.$(`#btnClassical`)
   btnClassical.click()
-  await page.waitFor(150)
+  await page.waitForTimeout(150)
 
   const selected = await page.$$eval('.classical', nodes =>
     nodes
@@ -78,15 +76,13 @@ tests.push(async ({ page, eq }) => {
   )
 
   eq(eliminated, notClassical)
-
-  await page.waitFor(150)
 })
 
 tests.push(async ({ page, eq }) => {
   // check active
   const btnActive = await page.$(`#btnActive`)
   btnActive.click()
-  await page.waitFor(150)
+  await page.waitForTimeout(150)
 
   const selected = await page.$$eval('.classical.active', nodes =>
     nodes
@@ -104,14 +100,13 @@ tests.push(async ({ page, eq }) => {
   )
 
   eq(eliminated, notActive)
-  await page.waitFor(150)
 })
 
 tests.push(async ({ page, eq }) => {
   // get bonanno
   const btnBonanno = await page.$(`#btnBonanno`)
   btnBonanno.click()
-  await page.waitFor(150)
+  await page.waitForTimeout(150)
 
   const selected = await page.$eval('#BonannoPisano', node => {
     if (node.textContent === 'Bonanno Pisano') return node.id
