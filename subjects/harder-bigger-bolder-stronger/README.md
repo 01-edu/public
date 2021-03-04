@@ -22,5 +22,7 @@ You have at your disposal the following file that you can download to test local
 
 ### Notions
 
+- [`createElement()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
+- [`append()`](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append)
 - [`style`](https://developer.mozilla.org/en-US/docs/Web/API/ElementCSSInlineStyle/style)
 - [`textContent`](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent)
