@@ -1,4 +1,4 @@
-import { colors } from './subjects/fifty-shades-of-cold/data.js'
+import { colors } from './subjects/fifty-shades-of-cold/fifty-shades-of-cold.data.js'
 
 colors.sort()
 
