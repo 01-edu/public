@@ -29,11 +29,11 @@ Write the function `pick` which turns the screen into a `hsl` color picker, vary
 - [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/svg): [`createElementNS`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElementNS), [`setAttribute`](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)
 - Take a look at the [HSL section](https://developer.mozilla.org/en-US/docs/Web/HTML/Applying_color)
 
-### Provided files
+### Files
 
-You have at your disposal the following file that you can download to test locally:
+You only need to create & submit the JS file `pick-and-click.js` ; we're providing you the following file to download (click right and save link) & test locally:
 
-- the HTML file [index.html](/public/subjects/pick-and-click/index.html) to open in the browser, which includes:
+- the HTML file [pick-and-click.html](/public/subjects/pick-and-click/pick-and-click.html) to open in the browser, which includes:
 
   - the JS script which will allow to run your code
   - some CSS pre-styled classes: feel free to use those as they are, or modify them
