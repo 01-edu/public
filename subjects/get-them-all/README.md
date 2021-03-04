@@ -10,24 +10,26 @@ Step by step, with the little information you have, gather information and figur
 Launch the provided HTML file in the browser to begin your investigation.<br/>
 On top of the webpage, each of the four buttons fires a function:
 
-- Write the body of the `getArchitects` function, which returns an array containing 2 arrays: 
-  - the first array contains the architects, all corresponding to a `<a>` tag 
+- Write the body of the `getArchitects` function, which returns an array containing 2 arrays of HTML elements:
+
+  - the first array contains the architects, all corresponding to a `<a>` tag
   - the second array contains all the non-architects people
 
-- Write the body of the `getClassical` function, which returns an array containing 2 arrays:
+- Write the body of the `getClassical` function, which returns an array containing 2 arrays of HTML elements:
+
   - the first array contains the architects belonging to the `classical` class
   - the second array contains the non-classical architects
 
-- Write the body of the `getActive` function, which returns an array containing 2 arrays: 
+- Write the body of the `getActive` function, which returns an array containing 2 arrays of HTML elements:
+
   - the first array contains the classical architects who are `active` in their class
   - the second array contains the non-active classical architects
 
-- Write the body of the `getBonannoPisano` function, which returns an array containing: 
+- Write the body of the `getBonannoPisano` function, which returns an array containing:
   - the HTML element of the architect you're looking for, whose `id` is `BonannoPisano`
-  - an array which contains all the remaining active classical architects
+  - an array which contains all the remaining HTML elements of active classical architects
 
-> From now on, don't forget to [**export**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export) all the expected functions, so that they can be imported to be tested<br/>
-> `export const getArchitects = () => {...}`
+> From now on, don't forget to [**export**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export) all the expected functions, so that they can be imported to be tested<br/> > `export const getArchitects = () => {...}`
 
 ### Notions
 
