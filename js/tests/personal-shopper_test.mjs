@@ -3,373 +3,193 @@ import fs from 'fs/promises'
 import { join, resolve, isAbsolute } from 'path'
 import { tmpdir } from 'os'
 import { promisify } from 'util'
-const mkdir = fs.mkdir
-const rmdir = fs.rmdir
-const readFile = fs.readFile
-
+const { mkdir, rmdir, readFile } = fs
 const exec = promisify(cp.exec)
 
-export const tests = []
-const name = 'personal-shopper'
-const getRandomElem = () =>
-  Math.random()
-    .toString(36)
-    .substring(7)
-export const setup = async () => {
-  const dir = tmpdir()
-  const elems = {}
-  const randomElem = getRandomElem()
-  const anotherElem = getRandomElem()
-  const commands = ['add', 'rm', 'delete', 'create', 'ls', 'help']
-  // check if already exists and rm
-  const exists = await fs
-    .stat(`${dir}/${name}`)
-    .catch((err) => (err.code === 'ENOENT' ? 'file not found: good.' : err))
-  if (Object.keys(exists).length) {
-    await rmdir(`${dir}/${name}`, { recursive: true })
-  }
+export const setup = async ({ path }) => {
+  const tmpPath = `${tmpdir()}/personal-shopper`
+  const filePath = `${tmpPath}/personal-shopper.json`
 
-  await mkdir(`${dir}/${name}`)
+  await mkdir(tmpPath)
+  const run = async cmd => {
+    const output = await exec(`node ${path} ${filePath} ${cmd}`)
+    const fileContent = await readFile(`${filePath}`, 'utf8')
 
-  return { tmpPath: `${dir}/${name}`, elems, commands, randomElem, anotherElem }
-}
-const assistInShopping = async ({
-  file,
-  keyword,
-  elem,
-  number,
-  ctx,
-  path,
-  eq,
-}) => {
-  // check if file exists before testing create - if exists, rm it
-  if (keyword === 'create') {
-    const out = await fs
-      .stat(`${ctx.tmpPath}/${file}`)
-      .catch((err) =>
-        err.code === 'ENOENT' ? 'output file not found: normal' : err,
-      )
-    if (out.birthtime) await fs.rm(`${ctx.tmpPath}/${file}`)
-  }
-
-  const scriptPath = join(resolve(), path)
-  const { stdout, stderr } = await exec(
-    `node ${scriptPath} ${file} ${keyword} ${elem || ''} ${number || ''}`,
-    {
-      cwd: ctx.tmpPath,
-    },
-  )
-  const out = await readFile(`${ctx.tmpPath}/${file}`, 'utf8').catch((err) =>
-    err.code === 'ENOENT' ? 'output file not found' : err,
-  )
-
-  if (keyword === 'create') return eq(out, '{}')
-
-  if (keyword === 'add' || keyword === 'rm') {
-    if (!elem) return eq(stderr.trim(), 'No elem specified.')
-    if (number && isNaN(Number(number)) && keyword === 'rm') {
-      return eq(stderr.trim(), 'Unexpected request: nothing has been removed.')
+    return {
+      data: JSON.parse(fileContent),
+      stdout: output.stdout.trim(),
+      stderr: output.stderr.trim(),
     }
-    const content = JSON.parse(out)
-
-    const addValue = !number || isNaN(Number(number)) ? 1 : number
-    const rmValue = !number ? ctx.elems[elem] : number
-    const newNumber =
-      keyword === 'add'
-        ? (ctx.elems[elem] || 0) + addValue
-        : (ctx.elems[elem] || 0) - rmValue
-    const state = newNumber > 0 ? content[elem] === newNumber : !content[elem]
-    ctx.elems[elem] = newNumber > 0 ? newNumber : 0
-    return state
   }
 
-  if (keyword === 'ls') {
-    const content = JSON.parse(out)
-    const entries = Object.entries(content)
-    return entries.length
-      ? eq(entries.map(([k, v]) => `- ${k} (${v})`).join('\n'), stdout.trim())
-      : eq(stdout.trim(), 'Empty list.')
-  }
-
-  if (keyword === 'help' || !keyword) {
-    return ctx.commands.every((c) => stdout.includes(c))
-  }
-
-  if (keyword === 'delete') return eq(out, 'output file not found')
+  return { run }
 }
 
-tests.push(async ({ path, eq, ctx }) => {
-  return assistInShopping({
-    path,
-    eq,
-    ctx,
-    file: `${name}.json`,
-    keyword: 'create',
-  })
+export const tests = []
+
+tests.push(async ({ eq, ctx }) => {
+  // create make an empty json file
+
+  const { data, stderr } = await ctx.run('create')
+  return eq({ data, stderr }, { data: {}, stderr: '' })
 })
 
 tests.push(async ({ path, eq, ctx }) => {
   // no elem specifiel, should log an error
-  return assistInShopping({
-    path,
-    eq,
-    ctx,
-    file: `${name}.json`,
-    keyword: 'add',
-  })
-})
 
-tests.push(async ({ path, eq, ctx }) => {
-  // add NaN value, should add 1
-  return assistInShopping({
-    path,
-    eq,
-    ctx,
-    file: `${name}.json`,
-    keyword: 'add',
-    elem: ctx.randomElem,
-    number: 'someNaN',
+  return eq(await ctx.run('add'), {
+    stdout: '',
+    stderr: 'No elem specified.',
+    data: {},
   })
 })
 
 tests.push(async ({ path, eq, ctx }) => {
   // add without number, should add 1
-  return assistInShopping({
-    path,
-    eq,
-    ctx,
-    file: `${name}.json`,
-    keyword: 'add',
-    elem: ctx.randomElem,
-  })
+
+  const { data } = await ctx.run('add beetroot')
+  return eq(data, { beetroot: 1 })
 })
 
 tests.push(async ({ path, eq, ctx }) => {
-  // add random value, between 5 and 15
-  return assistInShopping({
-    path,
-    eq,
-    ctx,
-    file: `${name}.json`,
-    keyword: 'add',
-    elem: ctx.randomElem,
-    number: Math.floor(Math.random() * (15 - 5) + 5),
-  })
+  // with a valid number it shoud add the correct amount
+
+  const { data } = await ctx.run(`add beetroot 5`)
+  return eq(data, { beetroot: 6 })
 })
 
 tests.push(async ({ path, eq, ctx }) => {
-  // add negative value, bigger than current value - should delete the entry
-  return assistInShopping({
-    path,
-    eq,
-    ctx,
-    file: `${name}.json`,
-    keyword: 'add',
-    elem: ctx.randomElem,
-    number: -Math.floor(Math.random() * (25 - 16) + 16),
-  })
+  // negative numbers should reduce the amount
+
+  const { data } = await ctx.run(`add beetroot -1`)
+  return eq(data, { beetroot: 5 })
 })
 
 tests.push(async ({ path, eq, ctx }) => {
-  // add value to prepare next test
-  return assistInShopping({
-    path,
-    eq,
-    ctx,
-    file: `${name}.json`,
-    keyword: 'add',
-    elem: ctx.randomElem,
-    number: Math.floor(Math.random() * (25 - 16) + 16),
-  })
+  // add NaN value, should add 1
+
+  const { data } = await ctx.run('add beetroot someNaN')
+  return eq(data, { beetroot: 6 })
 })
+
 tests.push(async ({ path, eq, ctx }) => {
-  // add negative exact nm of elem -> 0, should delete the entry
-  return assistInShopping({
-    path,
-    eq,
-    ctx,
-    file: `${name}.json`,
-    keyword: 'add',
-    elem: ctx.randomElem,
-    number: -ctx.elems[ctx.randomElem],
-  })
+  // add negative exact number of elem (= 0)
+  // -> should delete the entry
+
+  const { data } = await ctx.run(`add beetroot -6`)
+  return eq(data, {})
+})
+
+tests.push(async ({ path, eq, ctx }) => {
+  // add negative value, bigger than current value
+  // -> should delete the entry
+
+  await ctx.run(`add beetroot 4`)
+  const { data } = await ctx.run(`add beetroot -10`)
+  return eq(data, {})
 })
 
 tests.push(async ({ path, eq, ctx }) => {
   // no elem specified, should log an error
-  return assistInShopping({
-    path,
-    eq,
-    ctx,
-    file: `${name}.json`,
-    keyword: 'rm',
-    // no elem, no number
+
+  return eq(await ctx.run('rm'), {
+    stdout: '',
+    stderr: 'No elem specified.',
+    data: {},
   })
 })
 
 tests.push(async ({ path, eq, ctx }) => {
   // rm elem which is not in the list, should do nothing
-  return assistInShopping({
-    path,
-    eq,
-    ctx,
-    file: `${name}.json`,
-    keyword: 'rm',
-    elem: ctx.randomElem,
-    // no number
-  })
+
+  const { data, stderr } = await ctx.run(`rm mustard`)
+  return eq({ stderr, data}, { stderr: '', data: {} })
 })
 
 tests.push(async ({ path, eq, ctx }) => {
   // rm negative value, should add it
-  return assistInShopping({
-    path,
-    eq,
-    ctx,
-    file: `${name}.json`,
-    keyword: 'rm',
-    elem: ctx.randomElem,
-    number: -Math.floor(Math.random() * (25 - 16) + 16),
-  })
+
+  const { data } = await ctx.run(`rm mustard -4`)
+  return eq(data, { mustard: 4 })
 })
 
 tests.push(async ({ path, eq, ctx }) => {
-  // rm positive value, smaller than current value -> should substract it from current value
-  return assistInShopping({
-    path,
-    eq,
-    ctx,
-    file: `${name}.json`,
-    keyword: 'rm',
-    elem: ctx.randomElem,
-    number: Math.floor(Math.random() * (10 - 5) + 5),
-  })
-})
+  // rm positive value, smaller than current value
+  // -> should substract it from current value
 
-tests.push(async ({ path, eq, ctx }) => {
-  // should print the list with the elem as expected inside
-  return assistInShopping({
-    path,
-    eq,
-    ctx,
-    file: `${name}.json`,
-    keyword: 'ls',
-  })
+  const { data } = await ctx.run(`rm mustard 2`)
+  return eq(data, { mustard: 2 })
 })
 
 tests.push(async ({ path, eq, ctx }) => {
   // rm without number, should delete the entry
-  return assistInShopping({
-    path,
-    eq,
-    ctx,
-    file: `${name}.json`,
-    keyword: 'rm',
-    elem: ctx.randomElem,
-  })
+
+  const { data } = await ctx.run(`rm mustard`)
+  return eq(data, {})
 })
 
 tests.push(async ({ path, eq, ctx }) => {
   // should print an empty list
-  return assistInShopping({
-    path,
-    eq,
-    ctx,
-    file: `${name}.json`,
-    keyword: 'ls',
-  })
+
+  const { stdout } = await ctx.run('ls')
+  return eq(`Empty list.`, stdout.trim())
 })
 
-// add 2 elems - tests: ls several values, rm more or same value as current
 tests.push(async ({ path, eq, ctx }) => {
-  // add value to prepare next test
-  return assistInShopping({
-    path,
-    eq,
-    ctx,
-    file: `${name}.json`,
-    keyword: 'add',
-    elem: ctx.randomElem,
-    number: Math.floor(Math.random() * (25 - 16) + 16),
-  })
+  // should print the list with the elem as expected inside
+
+  await ctx.run(`add mustard 2`)
+  const { stdout } = await ctx.run('ls')
+  return eq(`- mustard (2)`, stdout.trim())
 })
-tests.push(async ({ path, eq, ctx }) => {
-  // add value to prepare next test
-  return assistInShopping({
-    path,
-    eq,
-    ctx,
-    file: `${name}.json`,
-    keyword: 'add',
-    elem: ctx.anotherElem,
-    number: ctx.elems[ctx.randomElem], // add same value than randomelem
-  })
+
+tests.push(async ({ path, eq, ctx, randStr, between}) => {
+  // should print the list with the elem as expected inside
+
+  const randomElem = randStr(7)
+  const randomAmount = between(1000, 5000)
+
+  await ctx.run(`add mustard 2`)
+  await ctx.run(`add beetroot 1`)
+  await ctx.run(`add chips ${randomAmount}`)
+  await ctx.run(`add ${randomElem} 4`)
+  const { stdout } = await ctx.run('ls')
+
+  return eq(
+    [
+      `- mustard (4)`,
+      `- beetroot (1)`,
+      `- chips (${randomAmount})`,
+      `- ${randomElem} (4)`,
+    ],
+    stdout.split('\n'),
+  )
 })
+
 tests.push(async ({ path, eq, ctx }) => {
-  // test ls with several elems
-  return assistInShopping({
-    path,
-    eq,
-    ctx,
-    file: `${name}.json`,
-    keyword: 'ls',
-  })
-})
-tests.push(async ({ path, eq, ctx }) => {
-  // test where rm exat nm of elem -> 0, delete the entry
-  return assistInShopping({
-    path,
-    eq,
-    ctx,
-    file: `${name}.json`,
-    keyword: 'rm',
-    elem: ctx.randomElem,
-    number: ctx.elems[ctx.randomElem],
-  })
-})
-tests.push(async ({ path, eq, ctx }) => {
-  // test where rm more than nm of elem -> <0, delete the entry
-  return assistInShopping({
-    path,
-    eq,
-    ctx,
-    file: `${name}.json`,
-    keyword: 'rm',
-    elem: ctx.randomElem,
-    number: 2000,
-  })
+  // should print the helper that include every commands
+
+  const { stdout } = await ctx.run(`help`)
+  return ['add', 'rm', 'delete', 'create', 'ls', 'help'].every(c =>
+    stdout.includes(c),
+  )
 })
 
 tests.push(async ({ path, eq, ctx }) => {
   // should print the helper
-  return assistInShopping({
-    path,
-    eq,
-    ctx,
-    file: `${name}.json`,
-    keyword: 'help',
-  })
+
+  const { stdout } = await ctx.run(``)
+  return ['add', 'rm', 'delete', 'create', 'ls', 'help'].every(c =>
+    stdout.includes(c),
+  )
 })
 
 tests.push(async ({ path, eq, ctx }) => {
-  // should print the helper
-  return assistInShopping({
-    path,
-    eq,
-    ctx,
-    file: `${name}.json`,
-    keyword: '',
-  })
-})
+  // delete should remove the file
 
-tests.push(async ({ path, eq, ctx }) => {
-  return assistInShopping({
-    path,
-    eq,
-    ctx,
-    file: `${name}.json`,
-    keyword: 'delete',
-  })
+  return ctx.run(`delete`)
+    .then(() => Promise.reject(Error('json file still present after delete')))
+    .catch(err => err.code === 'ENOENT' || err)
 })
 
 Object.freeze(tests)
