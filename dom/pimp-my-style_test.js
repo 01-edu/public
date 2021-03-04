@@ -1,4 +1,4 @@
-import { styles } from './subjects/pimp-my-style/data.js'
+import { styles } from './subjects/pimp-my-style/pimp-my-style.data.js'
 
 export const tests = []
 
