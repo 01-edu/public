@@ -1,4 +1,4 @@
-import { gossips } from './subjects/gossip-grid/data.js'
+import { gossips } from './subjects/gossip-grid/gossip-grid.data.js'
 
 export const tests = []
 
