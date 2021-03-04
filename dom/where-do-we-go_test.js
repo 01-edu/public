@@ -1,4 +1,4 @@
-import { places } from './subjects/where-do-we-go/data.js'
+import { places } from './subjects/where-do-we-go/where-do-we-go.data.js'
 
 export const tests = []
 
@@ -39,8 +39,8 @@ const dataNames = sortedPlaces.map(({ name }) =>
 
 tests.push(async ({ page, eq }) => {
   const { width, height } = await page.evaluate(() => ({
-    width: document.documentElement.clientWidth,
-    height: document.documentElement.clientHeight,
+    width: window.innerWidth,
+    height: window.innerHeight,
   }))
 
   const sections = await page.$$eval('section', sections =>
@@ -82,7 +82,7 @@ tests.push(async ({ page, eq }) => {
       window.scrollBy(0, window.innerHeight + 200)
     })
 
-    await page.waitFor(150)
+    await page.waitForTimeout(150)
 
     const location = await page.$eval('.location', location => [
       ...location.textContent.split('\n'),
@@ -109,7 +109,7 @@ tests.push(async ({ page, eq, getDirection }) => {
     window.scrollBy(0, window.innerHeight)
   })
 
-  await page.waitFor(100)
+  await page.waitForTimeout(100)
 
   const direction = (await getDirection()).includes('S')
     ? 'S'
@@ -125,7 +125,7 @@ tests.push(async ({ page, eq, getDirection }) => {
     window.scrollBy(0, -100)
   })
 
-  await page.waitFor(100)
+  await page.waitForTimeout(100)
 
   const direction = (await getDirection()).includes('N')
     ? 'N'
