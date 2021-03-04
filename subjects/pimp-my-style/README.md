@@ -39,16 +39,16 @@ Click 6 --> <button class="button"></div>
 
 - [`classList`](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList): `add()`, `remove()`, `toggle()`
 
-### Provided files
+### Files
 
-You have at your disposal the following files that you can download to test locally:
+You only need to create & submit the JS file `pimp-my-style.js` ; we're providing you the following files to download (click right and save link) & test locally:
 
-- the HTML file [index.html](/public/subjects/pimp-my-style/index.html) to open in the browser, which includes:
+- the HTML file [pimp-my-style.html](/public/subjects/pimp-my-style/pimp-my-style.html) to open in the browser, which includes:
 
   - the JS script running some code, and which will also allow to run yours
   - some CSS pre-styled classes: feel free to use those as they are, or modify them
 
-- the data file [data.js](/public/subjects/pimp-my-style/data.js) from which you can import `styles`
+- the data file [pimp-my-style.data.js](/public/subjects/pimp-my-style/pimp-my-style.data.js) from which you can import `styles`
 
 ### Expected result
 
