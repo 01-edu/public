@@ -30,11 +30,11 @@ Today, your mission is to build a 3-column brick tower, maintain it and finally 
 - [dataset](https://developer.mozilla.org/en-US/docs/Web/API/HTMLOrForeignElement/dataset) / [`data-*`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*)
 - [`remove()`](https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/remove)
 
-### Provided files
+### Files
 
-You have at your disposal the following file that you can download to test locally:
+You only need to create & submit the JS file `build-brick-and-break.js` ; we're providing you the following file to download (click right and save link) & test locally:
 
-- the HTML file [index.html](/public/subjects/build-brick-and-break/index.html) to open in the browser, which includes:
+- the HTML file [build-brick-and-break.html](/public/subjects/build-brick-and-break/build-brick-and-break.html) to open in the browser, which includes:
 
   - the JS script running some code, and which will also allow to run yours
   - some CSS pre-styled classes: feel free to use those as they are, or modify them
