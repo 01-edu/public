@@ -37,13 +37,14 @@ const eq = (a, b) => {
   return true
 }
 
-const [submitPath, name] = process.argv.slice(2)
+const [solutionPath, name] = process.argv.slice(2)
 const fatal = (...args) => {
   console.error(...args)
   process.exit(1)
 }
 
-if (!name) fatal('missing exercise, usage:\nnode test exercise-name')
+solutionPath || fatal('missing solution-path, usage:\nnode test solution-path exercise-name')
+name || fatal('missing exercise, usage:\nnode test solution-path exercise-name')
 
 const ifNoEnt = fn => err => {
   if (err.code !== 'ENOENT') throw err
@@ -77,7 +78,7 @@ const any = arr =>
   })
 
 const testNode = async ({ test, name }) => {
-  const path = `${submitPath}/${name}.mjs`
+  const path = `${solutionPath}/${name}.mjs`
   return {
     path,
     url: joinPath(root, `${name}_test.mjs`),
@@ -90,8 +91,14 @@ const runTests = async ({ url, path, code }) => {
     fatal(`Unable to execute ${name} solution, error:\n${stackFmt(err, url)}`),
   )
 
-  const ctx = (await (setup && setup({ path }))) || {}
-  const tools = { eq, fail, wait, code, ctx, path }
+  const randStr = (n = 7) => Math.random().toString(36).slice(2, n)
+  const between = (min, max) => {
+    max || (max = min, min = 0)
+    return Math.floor(Math.random() * (max - min) + min)
+  }
+
+  const tools = { eq, fail, wait, code, path, randStr, between }
+  tools.ctx = (await (setup && setup(tools))) || {}
   for (const [i, t] of tests.entries()) {
     try {
       if (!(await t(tools))) {
@@ -112,7 +119,7 @@ const main = async () => {
   ]).catch(ifNoEnt(() => fatal(`Missing test for ${name}`)))
 
   if (mode === "node") return runTests(await testNode({ test, name }))
-  const path = `${submitPath}/${name}.js`
+  const path = `${solutionPath}/${name}.js`
   const rawCode = await read(path, "student solution")
 
   // this is a very crude and basic removal of comments
