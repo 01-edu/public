@@ -11,11 +11,11 @@ Write the function `generateLetters` which creates 120 `div`, each containing a 
 - each letter `font-size` has to grow from `11` to `130` pixels
 - `font-weight` has to be `300` for the first third of the letters, `400` for the second third, and `600` for the last third
 
-### Provided files
+### Files
 
-You have at your disposal the following file that you can download to test locally:
+You only need to create & submit the JS file `harder-bigger-bolder-stronger.js` ; we're providing you the following file to download (click right and save link) & test locally:
 
-- the HTML file [index.html](/public/subjects/harder-bigger-bolder-stronger/index.html) to open in the browser, which includes:
+- the HTML file [harder-bigger-bolder-stronger.html](/public/subjects/harder-bigger-bolder-stronger/harder-bigger-bolder-stronger.html) to open in the browser, which includes:
 
   - the JS script running some code, and which will also allow to run yours
   - some CSS pre-styled classes: feel free to use those as they are, or modify them
