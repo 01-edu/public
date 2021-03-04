@@ -19,7 +19,7 @@ tests.push(async ({ page, eq }) => {
     const divs = await page.$$eval('div', (nodes) => nodes.length)
     console.log(`step ${repeat + 1}: ${divs} bricks`)
     buildSteps.push(divs)
-    await page.waitFor(1000)
+    await page.waitForTimeout(1000)
     repeat++
   }
 
@@ -42,7 +42,7 @@ const allBricksIds = [...Array(54).keys()].map((i) => `brick-${i + 1}`)
 
 tests.push(async ({ page, eq, getBricksIds }) => {
   // check that all the bricks are here and have the correct id
-  await page.waitFor(3000)
+  await page.waitForTimeout(3000)
   const bricksIds = await getBricksIds()
   eq(bricksIds, allBricksIds)
 })
