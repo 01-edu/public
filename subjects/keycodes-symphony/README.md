@@ -15,13 +15,13 @@ Write the function `compose`:
 
 - [Keyboard event](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent): [`keydown`](https://developer.mozilla.org/en-US/docs/Web/API/Document/keydown_event), [`key`](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key)
 
-### Provided files
+### Files
 
-You have at your disposal the following file that you can download to test locally:
+You only need to create & submit the JS file `keycodes-symphony.js` ; we're providing you the following file to download (click right and save link) & test locally:
 
-- the HTML file [index.html](/public/subjects/keycodes-symphony/index.html) to open in the browser, which includes:
+- the HTML file [keycodes-symphony.html](/public/subjects/keycodes-symphony/keycodes-symphony.html) to open in the browser, which includes:
 
-  - the JS script which will allow to run your code
+  - the JS script running some code, and which will also allow to run yours
   - some CSS pre-styled classes: feel free to use those as they are, or modify them
 
 ### Expected result
