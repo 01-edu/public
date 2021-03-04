@@ -9,8 +9,8 @@ Check the `colors` array provided in the data file below.
 - Write the `generateClasses` function which creates a `<style>` tag in the `<head>` tag and generates, for each color of `colors`, a class setting the `background` attribute and taking the color as value, like following:
 
 ```css
-.indianred {
-  background: indianred;
+.blue {
+  background: blue;
 }
 ```
 
@@ -18,7 +18,7 @@ Check the `colors` array provided in the data file below.
   Each `<div>` must have the corresponding generated class and display the name of the color, like following:
 
 ```html
-<div class="indianred">indianred</div>
+<div class="blue">blue</div>
 ```
 
 - The function `choseShade` is triggered when clicking on a `div`.\
