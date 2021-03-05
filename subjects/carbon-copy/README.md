@@ -27,14 +27,14 @@ For this phase, we provide you a CSS file (`styles.css`) that you just have to [
 NB: Each item of the navbar menu - in the top right corner - has to bring to the corresponding section on click (clicking on "About" scrolls to the "About" section in the page); take a look at the [`href` anchor use](https://www.w3.org/TR/html401/struct/links.html#h-12.2.3).
 
 Here is a [wireframe](https://en.wikipedia.org/wiki/Website_wireframe) of the webpage, showing the HTML tags you have to use:
-![](https://github.com/01-edu/public/blob/master/subjects/carbon-copy/page-wireframe.jpg)
+![](https://raw.githubusercontent.com/01-edu/public/master/subjects/carbon-copy/page-wireframe.jpg)
 
 ### Phase 2: custom CSS _(mandatory)_
 
 First of all, let's customize the color atmosphere of the webpage to your own taste: go to the CSS file `styles.css`, & replace the current blue & yellow with 2 new colors of your choice.
 
 Now that the page is mainly built, you have to populate the "Dashboard" section with 3 new elements.
-![](https://github.com/01-edu/public/blob/master/subjects/carbon-copy/dashboard-template.jpg)
+![](https://raw.githubusercontent.com/01-edu/public/master/subjects/carbon-copy/dashboard-template.jpg)
 
 Those 3 cards have to display respectively one information with:
 
@@ -50,23 +50,23 @@ If you made it until here pretty fast, now the fun will begin! You're going to a
 
 - Change the order of the pictures when clicking on the pictures' section, [toggling](https://css-tricks.com/snippets/javascript/the-classlist-api/) the pre-defined class `row-reverse` from the CSS file `styles.css`.
 
-![](https://github.com/01-edu/public/blob/master/subjects/carbon-copy/images-order.gif)
+![](https://raw.githubusercontent.com/01-edu/public/master/subjects/carbon-copy/images-order.gif)
 
 - Option 1: In the Contact section, when clicking on the "Introduce yourself" button, get the text typed in the `input` and display it in the middle of the following sentence: "Nice to meet you _[put here the input data]_ 👋! Thanks for introducing yourself." Also, the `<p>`, `<input>` & `<button>` elements have to disappear after the button has been clicked.
 
-![](https://github.com/01-edu/public/blob/master/subjects/carbon-copy/contact-input.gif)
+![](https://raw.githubusercontent.com/01-edu/public/master/subjects/carbon-copy/contact-input.gif)
 
 - Option 2: When clicking on a card, open a modal window that will show the whole article ; the modal will be closed either when clicking on a "Close" button, or when the "Escape" key is pressed.
 
-![](https://github.com/01-edu/public/blob/master/subjects/carbon-copy/modale.gif)
+![](https://raw.githubusercontent.com/01-edu/public/master/subjects/carbon-copy/modale.gif)
 
 - Option 3: In the modal article, create a widget that allows to change the text alignment ; on click on `left` or `center` buttons, the layout changes to the chosen justification, and the selected option's `font-weight` becomes `bold` whereas the other becomes `light`.
 
-![](https://github.com/01-edu/public/blob/master/subjects/carbon-copy/text-alignment.gif)
+![](https://raw.githubusercontent.com/01-edu/public/master/subjects/carbon-copy/text-alignment.gif)
 
 - Warrior option: set the `header` text content with a random quote every time the page is loaded, and then every 10 seconds. You can use this marvelous [Chuck Norris API](https://api.chucknorris.io/) to [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) his most inspiring sayings and display them in your own page!
 
-![](https://github.com/01-edu/public/blob/master/subjects/carbon-copy/fetch-quote.gif)
+![](https://raw.githubusercontent.com/01-edu/public/master/subjects/carbon-copy/fetch-quote.gif)
 
 ### Notions
 
