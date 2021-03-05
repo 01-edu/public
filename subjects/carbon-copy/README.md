@@ -1,5 +1,9 @@
 ## Carbon copy
 
+### Video
+
+Check out [this little video](https://youtu.be/ym-Qiio2ktI)!
+
 ### Instructions
 
 Today is a big day: you're going to make your own webpage. Like a boss, yes.
