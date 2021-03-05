@@ -1,4 +1,4 @@
-### Action - reaction!
+### Instructions
 
 OK, you have now connected HTML, CSS and JS altogether ; big day! Excited? Exhausted?
 Well so far, you've only scratched the surface... Let's go deeper into the power of JS! You're going to add some interaction ; the webpage will react when a user action will happen, called an [event](https://developer.mozilla.org/en-US/docs/Web/Events) (a click, a key pressed, a mouse move, etc.).

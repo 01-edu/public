@@ -1,5 +1,3 @@
-## Select & style
-
 ### Instructions
 
 Now that you created & identified properly the different sections of your being,
@@ -8,6 +6,7 @@ style it with [CSS][0]. Create a CSS file, [link it][1] to your
 `select-and-style.html`, and:
 
 - target all the elements with the [universal selector][2] and style them with:
+
   - `margin` of `0`
   - `box-sizing` to `border-box`
   - `opacity` of `0.85`
@@ -16,6 +15,7 @@ style it with [CSS][0]. Create a CSS file, [link it][1] to your
   viewport height
 
 - target all the `section` tags with the [type selector][3], and style it with:
+
   - `padding` of `20px`
   - `width` of `100%`
   - `height` of `calc(100% / 3)` _(one third of the `body` height)_
