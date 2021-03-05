@@ -1,10 +1,8 @@
-## The calling
+### Instructions
 
 Congrats! You created the very first base for your being and you witnessed its
 appearance on the digital world - your browser. But so far, it's a tiny seed of
 the marvelous thing it could become ; be patient, there still is a bit of work.
-
-### Instructions
 
 First of all, instead of writing down what things are _(you're not writing down
 on your hand the word 'hand', are you?)_ we're going to identify them

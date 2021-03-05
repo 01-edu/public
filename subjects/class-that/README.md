@@ -1,4 +1,4 @@
-### Class that
+### Instructions
 
 Alright, your being is almost done, some elements still need a bit more shaping and then we'll make it come to life!
 If you look at your page, you can observe that some elements come by pair: the eyes, the arms & the legs. It is the same organ, one on the left and one on the right ; they have exactly the same shape, so for practicity & to avoid to repeat twice the same style, we're not going to use their `id` to style them, but a [`class`](https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors) ; contrary to an `id`, a `class` can be attributed to several different elements with common rulesets, and so the style defined for that class will apply to all the HTML elements that have it.

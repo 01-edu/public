@@ -1,4 +1,4 @@
-### Bring it to life
+### Instructions
 
 Still there? Well done! But hold on, here begins the serious part... In order to control your creation, you're going to plug its brain: JavaScript.
 

@@ -1,4 +1,4 @@
-### Nesting organs
+### Instructions
 
 Bravo! You displayed the global shape of your entity, but now it's time to populate each division ; let's add up some organs!
 To do so, we're going to introduce you the concept of nesting elements inside others.

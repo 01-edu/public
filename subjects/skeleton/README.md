@@ -1,6 +1,4 @@
-### Skeleton
-
-#### Instructions
+### Instructions
 
 Welcome to the `world-wide-what` quest!
 In this new digital world you're gonna discover, it is possible to create beings with some lines of code. Yes, it is.
