@@ -2,12 +2,31 @@
 
 # Configure Z01 Ubuntu
 
+set -euo pipefail
+IFS='
+'
+
+# The value of this parameter is expanded like PS1 and the expanded value is the
+# prompt printed before the command line is echoed when the -x option is set
+# (see The Set Builtin). The first character of the expanded value is replicated
+# multiple times, as necessary, to indicate multiple levels of indirection.
+# \D{%F %T} prints date like this : 2019-12-31 23:59:59
+PS4='-\D{%F %T} '
+
+# Print commands and their arguments as they are executed.
+set -x
+
 # Log stdout & stderr
 exec > >(tee -i /tmp/install_ubuntu.log) 2>&1
 
-script_dir="$(cd -P "$(dirname "$BASH_SOURCE")" && pwd)"
-cd $script_dir
-. set.sh
+script_dir="$(cd -P "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$script_dir"
+
+# Skip dialogs during apt-get install commands
+export DEBIAN_FRONTEND=noninteractive # DEBIAN_PRIORITY=critical
+
+export LC_ALL=C LANG=C
+export SHELL=/bin/bash
 
 disk=$(lsblk -o tran,kname,hotplug,type,fstype -pr |
 	grep '0 disk' |
@@ -68,22 +87,21 @@ EOF
 for dir in $(ls -1d /root /home/* 2>/dev/null ||:)
 do
 	# Hide login informations
-	touch $dir/.hushlogin
+	touch "$dir/.hushlogin"
 
 	# Add convenient aliases & behaviors
-	cat <<-'EOF'>> $dir/.bashrc
+	cat <<-'EOF'>> "$dir/.bashrc"
 	export LS_OPTIONS="--color=auto"
 	eval "`dircolors`"
 
 	alias df="df --si"
-	alias du="du -cs --si"
+	alias du="du --si"
 	alias free="free -h --si"
 	alias l="ls $LS_OPTIONS -al --si --group-directories-first"
 	alias less="less -i"
 	alias nano="nano -clDOST4"
 	alias pstree="pstree -palU"
 
-	GOPATH=$HOME/go
 	HISTCONTROL=ignoreboth
 	HISTFILESIZE=
 	HISTSIZE=
@@ -92,7 +110,7 @@ do
 
 	# Fix rights
 	usr=$(echo "$dir" | rev | cut -d/ -f1 | rev)
-	chown -R $usr:$usr $dir ||:
+	chown -R "$usr:$usr" "$dir" ||:
 done
 
 # Install OpenSSH
@@ -139,22 +157,24 @@ grub-install "$disk"
 wget https://dl.google.com/go/go1.16.linux-amd64.tar.gz
 tar -C /usr/local -xzf go1.16.linux-amd64.tar.gz
 rm go1.16.linux-amd64.tar.gz
+# shellcheck disable=2016
 echo 'export PATH=$PATH:/usr/local/go/bin' >> /etc/profile
 
 # Set-up all users
 for dir in $(ls -1d /root /home/* 2>/dev/null ||:)
 do
 	# Add convenient aliases & behaviors
-	cat <<-'EOF'>> $dir/.bashrc
+	cat <<-'EOF'>> "$dir/.bashrc"
 	GOPATH=$HOME/go
 	PATH=$PATH:$GOPATH/bin
 	alias gobuild='CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -trimpath -ldflags="-s -w"'
 	EOF
-	echo 'GOPATH=$HOME/go' >> $dir/.profile
+	# shellcheck disable=2016
+	echo 'GOPATH=$HOME/go' >> "$dir/.profile"
 
 	# Fix rights
 	usr=$(echo "$dir" | rev | cut -d/ -f1 | rev)
-	chown -R $usr:$usr $dir ||:
+	chown -R "$usr:$usr" "$dir" ||:
 done
 
 # Install Node.js
@@ -219,7 +239,7 @@ do
 
 	# Fix rights
 	usr=$(echo "$dir" | rev | cut -d/ -f1 | rev)
-	chown -R $usr:$usr $dir ||:
+	chown -R "$usr:$usr" "$dir" ||:
 done
 
 # Install LibreOffice
@@ -278,6 +298,7 @@ whoopsie
 xdg-desktop-portal
 "
 
+# shellcheck disable=2086
 apt-get -y purge $pkgs
 apt-get -y autoremove --purge
 
@@ -302,6 +323,7 @@ virtualbox
 xfsprogs
 zenity
 "
+# shellcheck disable=2086
 apt-get --no-install-recommends -y install $pkgs
 
 # Disable services
@@ -314,12 +336,14 @@ keyboard-setup.service
 motd-news.timer
 remote-fs.target
 "
+# shellcheck disable=2086
 systemctl disable $services
 
 services="
 grub-common.service
 plymouth-quit-wait.service
 "
+# shellcheck disable=2086
 systemctl mask $services
 
 # Disable GTK hidden scroll bars
@@ -393,7 +417,7 @@ cd /tmp/system
 
 cp --preserve=mode -RT . /
 
-cd $script_dir
+cd "$script_dir"
 rm -rf /tmp/system
 
 if ! test -v PERSISTENT; then
@@ -457,12 +481,12 @@ apt-get install
 rm -rf /root/.local
 
 # Remove connection logs
-> /var/log/lastlog
-> /var/log/wtmp
-> /var/log/btmp
+echo > /var/log/lastlog
+echo > /var/log/wtmp
+echo > /var/log/btmp
 
 # Remove machine ID
-> /etc/machine-id
+echo > /etc/machine-id
 
 # Remove logs
 cd /var/log
