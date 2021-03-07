@@ -178,7 +178,13 @@ EOF
 apt-get --no-install-recommends update
 apt-get --no-install-recommends install -y sublime-text sublime-merge libgtk2.0-0
 
-# Install VSCode
+# Install Visual Studio Code
+
+wget 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64' --output-document vscode.deb
+dpkg -i vscode.deb
+rm vscode.deb
+
+# Install VSCodium
 
 wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | apt-key add -
 echo 'deb https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs/ vscodium main' >> /etc/apt/sources.list.d/vscodium.list
@@ -186,25 +192,28 @@ echo 'deb https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs/ vscodium mai
 apt-get --no-install-recommends update
 apt-get --no-install-recommends install -y codium
 
-ln -s /usr/bin/codium /usr/local/bin/code ||:
-
 # Set-up all users
 for dir in $(ls -1d /home/* 2>/dev/null ||:)
 do
 	# Disable most of the telemetry and auto-updates
-	mkdir -p $dir/.config/VSCodium/User
-	cat <<-'EOF'> $dir/.config/VSCodium/User/settings.json
+	mkdir -p "$dir/.config/Code/User"
+	mkdir -p "$dir/.config/VSCodium/User"
+	cat <<-'EOF' | tee \
+		"$dir/.config/Code/User/settings.json" \
+		"$dir/.config/VSCodium/User/settings.json"
 	{
+	    "extensions.autoCheckUpdates": false,
+	    "extensions.autoUpdate": false,
+	    "json.schemaDownload.enable": false,
+	    "npm.fetchOnlinePackageInfo": false,
+	    "settingsSync.keybindingsPerPlatform": false,
 	    "telemetry.enableCrashReporter": false,
 	    "telemetry.enableTelemetry": false,
 	    "update.enableWindowsBackgroundUpdates": false,
 	    "update.mode": "none",
 	    "update.showReleaseNotes": false,
-	    "extensions.autoCheckUpdates": false,
-	    "extensions.autoUpdate": false,
 	    "workbench.enableExperiments": false,
-	    "workbench.settings.enableNaturalLanguageSearch": false,
-	    "npm.fetchOnlinePackageInfo": false
+	    "workbench.settings.enableNaturalLanguageSearch": false
 	}
 	EOF
 
