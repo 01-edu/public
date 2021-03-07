@@ -90,7 +90,7 @@ const runTests = async ({ url, path, code }) => {
     fatal(`Unable to execute ${name} solution, error:\n${stackFmt(err, url)}`),
   )
 
-  const ctx = (await (setup && setup())) || {}
+  const ctx = (await (setup && setup({ path }))) || {}
   const tools = { eq, fail, wait, code, ctx, path }
   for (const [i, t] of tests.entries()) {
     try {
