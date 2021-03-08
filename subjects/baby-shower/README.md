@@ -14,7 +14,7 @@ Then, [add an event listener][2] on [`keydown` event][3] that triggers the same 
 
 This is what you should see in the browser:
 
-<!-- video screenshot -->
+![](https://raw.githubusercontent.com/01-edu/public/master/subjects/carbon-copy/baby-shower.gif)
 
 ### Notions
 
