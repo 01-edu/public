@@ -10,6 +10,17 @@ The one we're going to use today is [canvas confetti][0].
 From your script, [`import`][1] the package as indicated in the documentation, and launch the function to pop confetti when the page loads.
 Then, [add an event listener][2] on [`keydown` event][3] that triggers the same confetti popping function any time a key of the keyboard is pressed.
 
+### Code examples
+
+Import code from libraries & use it:
+
+```js
+// import and use the `hello` function from a library
+import { hello } from 'hello-library-url'
+
+hello()
+```
+
 ### Expected output
 
 This is what you should see in the browser:
