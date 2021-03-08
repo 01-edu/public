@@ -52,6 +52,19 @@ p {
 }
 ```
 
+### Code examples
+
+Nest several elements:
+
+```html
+<div id="first-element">
+  <span id="second-element"></span>
+  <div id="third-element">
+    <p id="fourth-element"></p>
+  </div>
+</div>
+```
+
 ### Expected output
 
 This is what you should see in the browser:
