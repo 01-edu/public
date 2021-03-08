@@ -19,6 +19,15 @@ In the JS file, add the freshly-created class `eye-closed` to the [`classList`](
 
 Reload the page - it's alive! Your JS brain has control and orders your HTML/CSS body to close one eye.
 
+### Code examples
+
+Get a HTML element by its `id` & set its inline style:
+
+```js
+const myDiv = document.getElementById('my-div')
+myDiv.style.color = 'green'
+```
+
 ### Expected output
 
 This is what you should see in the browser:
