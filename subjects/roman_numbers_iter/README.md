@@ -2,9 +2,10 @@
 
 ### Instructions
 
-Implement the IntoIterator trait for the `RomanNumber` type to enable using a for loop notation. This implementation must allow taking ownership, borrowing and borrowing mutably
+Implement the `IntoIterator` trait for the `RomanNumber` type to enable using a for loop notation. This implementation must allow taking ownership, borrowing and borrowing mutably.
 
 1. Taking ownership (this consumes the RomanNumber)
+
 ```rust
 for digit in number {
 	...
@@ -12,6 +13,7 @@ for digit in number {
 ```
 
 2. Borrowing immutably (this preserves the RomanNumber)
+
 ```rust
 	for digit in &number {
 
@@ -19,6 +21,7 @@ for digit in number {
 ```
 
 3. Borrowing mutably (this allow you to modify the RomanNumber without having to return the ownership)
+
 ```rust
 	for digit in &mut number {
 

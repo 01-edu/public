@@ -2,7 +2,7 @@
 
 ### Instructions
 
-A vector in linear algebra is define as "anything that can be added and that can be multiplied by a scalar"
+A vector in linear algebra is defined as "anything that can be added and that can be multiplied by a scalar"
 
 And the associated function dot that calculates the dot product between two vectors
 
@@ -37,6 +37,8 @@ impl Vector<T> {
 Here is a program to test your function.
 
 ```rust
+use lalgebra_vector::*;
+
 fn main() {
 	let vector_1: Vector<i64> = Vector(vec![1, 3, -5]);
 	let vector_2: Vector<i64> = Vector(vec![4, -2, -1]);
@@ -45,7 +47,7 @@ fn main() {
 }
 ```
 
-And its output
+And its output:
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run

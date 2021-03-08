@@ -2,15 +2,15 @@
 
 ### Instructions
 
-Imagine you are designing a new video game and you have to create food that they players can take to gain strength. 
+Imagine you are designing a new video game and you have to create food that the players can eat to gain strength.
 
-There are two types of food for now fruits and meet: fruits increases the strengths by 1 unit and meat increases it by 3 unit.
+There are two types of food for now, fruits and meat: fruits increase the strength by 1 unit and meat increases it by 3 units.
 
 - Define both structures fruits and meat:
 
-Define the std::fmt::Display trait of the Player structure so using the template {} inside a println! macro will print:
+Define the std::fmt::Display trait of the Player structure in a way that when using the template {} inside a println! macro it will print:
 
-- In the first line the name of the player
+- In the first line, the name of the player
 - In the second line the strength, score and the money
 - In the third line the weapons
 
@@ -57,6 +57,8 @@ impl Food for Meat {
 Here is a program to test your function.
 
 ```rust
+use generics::*;
+
 fn main() {
 	let apple = Fruit { weight_in_kg: 1.0 };
 	assert_eq!(apple.gives(), 4);
@@ -80,7 +82,7 @@ fn main() {
 }
 ```
 
-And its output
+And its output:
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run

@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Define the function `delete_prefix(prefix, s)` that returns the string slice `s` with the `prefix` removed wrapped in Some. If `prefix ` is not contained in `s` return None
+Define the function `delete_prefix(prefix, s)` which returns the string slice `s` with the `prefix` removed wrapped in `Some`. If `prefix ` is not contained in `s` it returns `None`.
 
 ### Expected Function
 
@@ -24,7 +24,7 @@ fn main() {
 }
 ```
 
-And its output
+And its output:
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run

@@ -2,12 +2,12 @@
 
 ### Instructions
 
-Write a functions called identity that calculates the identity of a value (receives any data type and returns the same value)
+Write a **function** called `identity` which calculates the identity of a value (receives any data type and returns the same value).
 
-### Expected Function
+### Expected Function (signature to be completed)
 
 ```rust
-fn identity(v: _) -> _ {
+pub fn identity(v: _) -> _ {
 }
 ```
 
@@ -16,13 +16,15 @@ fn identity(v: _) -> _ {
 Here is a program to test your function.
 
 ```rust
+use generics::*;
+
 fn main() {
 	println!("{}", identity("Hello, world!"));
 	println!("{}", identity(3));
 }
 ```
 
-And its output
+And its output:
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run

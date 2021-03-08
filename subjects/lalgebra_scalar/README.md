@@ -2,13 +2,19 @@
 
 ### Instructions
 
-A scalar type must implement the operations Addition, Subtraction, Multiplication and Division (you might also have to use more restrictions). For this use a trait inheritance (supertraits)
+Define a `Scalar` trait which must implement the operations Addition, Subtraction, Multiplication and Division (you might also have to use more restrictions). For this use a trait inheritance (supertraits)
 
-Another condition for a number to be a scalar is to have a zero (neutral element in the addition) and a one (neutral element in the multiplication). Therefore the Scalar trait will require 2 functions zero() and one()
+Another condition for a number to be a scalar is to have a zero (neutral element in the addition) and a one (neutral element in the multiplication). Therefore the `Scalar` trait will require 2 functions zero() and one() (as shown)
 
-After finishing implement the Scalar trait for u32, u64, i32, i64, f32, f64
+After finishing completing the declaration of the trait, implement the `Scalar` trait for u32, u64, i32, i64, f32 and f64.
 
-### Expected Function
+### Notions
+
+- [Module std::ops](https://doc.rust-lang.org/std/ops/index.html)
+
+### Expected Function (The signature must be completed)
+
+#### You need add the impl for each cases asked in the subject
 
 ```rust
 pub trait Scalar: _ {
@@ -23,17 +29,23 @@ pub trait Scalar: _ {
 Here is a program to test your function.
 
 ```rust
+use lalgebra_scalar::*;
+
 fn main() {
 	println!("{:?}", f64::zero());
 	println!("{:?}", i32::zero());
+	println!("{:?}", f64::one());
+	println!("{:?}", i32::one());
 }
 ```
 
-And its output
+And its output:
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run
 0.0
 0
+1.0
+1
 student@ubuntu:~/[[ROOT]]/test$
 ```
