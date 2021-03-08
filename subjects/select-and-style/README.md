@@ -26,12 +26,22 @@ style it with [CSS][0]. Create a CSS file, [link it][1] to your
   - `upper-body` with a "blueviolet" `background-color`
   - `lower-body` with a "lightsalmon" `background-color`
 
-To style an element, you systematically have to declare [rulesets][5], composed
-of a property and a value. Here is an exemple of how to set the color of `div`
-tags to `"red"`:
+### Code examples
+
+To style an element, you systematically have to declare [rulesets][5], composed of a property and a value.
+
+Set the color of `div` tags to `"red"`:
 
 ```css
 div {
+  color: red;
+}
+```
+
+Set the `background-color` of the HTML element with the `id` `"block-1"`:
+
+```css
+#block-1 {
   color: red;
 }
 ```
