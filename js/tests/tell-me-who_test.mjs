@@ -10,70 +10,18 @@ const writeFile = fs.writeFile
 const exec = promisify(cp.exec)
 
 export const tests = []
-const name = 'tell-me-who'
+
 // maybe get the sames from an api? like https://parser.name/
 const guests = [
   'Shyam Langley',
-  'Austin Harwood',
-  'Reem Morgan',
-  'Neal Chamberlain',
-  'Ryan Walters',
-  'Ocean Battle',
-  'Ubaid Ballard',
-  'Victoria Chan',
-  'Dominika Mullen',
-  'Heath Denton',
-  'Lilith Hamilton',
-  'Aisling Bailey',
-  'Maizie Love',
-  'Nathanial Franco',
-  'Charmaine Bernard',
-  'Sohail Downes',
-  'Rabia Gomez',
-  'Brendan Brennan',
-  'Shannen Atherton',
-  'Esa Villarreal',
-  'Kayla Wynn',
-  'Gladys Hardy',
-  'Laaibah Rogers',
   'Zishan Randolph',
   'Connor Connolly',
-  'Arabella Wooten',
   'Edna Floyd',
-  'Roksana Montoya',
-  'Macauley Ireland',
-  'Kennedy Cummings',
-  'Emelia Calhoun',
-  'Jimmy Hickman',
-  'Leela Solomon',
-  'Frederick David',
-  'Eryk Winters',
-  'Olli Obrien',
-  'Jagoda Avalos',
-  'Bethanie Emery',
-  'Kenya Medina',
-  'Ava-Mai Estes',
   'Robyn Jimenez',
   'Carly Alexander',
   'Jed Newman',
   'Marianna Sullivan',
-  'Alicja Scott',
-  'Isaac Guerrero',
-  'Dion Huff',
-  'Milly Quintero',
-  'Kwabena Cairns',
-  'Rukhsar Conley',
   'Glyn Townsend',
-  'Colby Holmes',
-  'Zeynep East',
-  'Miriam Higgins',
-  'Kaelan Clegg',
-  'Sharna English',
-  'Uma Ortega',
-  'Crystal Bird',
-  'Christopher Haas',
-  'Olivier Galvan',
-  'Esha Herring',
   'Montana Mooney',
   'Amelia-Rose Trejo',
   'Micah Whittle',
@@ -83,11 +31,10 @@ const guests = [
   'Tasnia Hughes',
   'Trixie Pennington',
   'Ava Meyer',
-  'Konrad Weaver',
   'Gabriela Tucker',
   'Kiri Wilcox',
 ]
-const shuffle = arr => {
+const shuffle = (arr) => {
   let i = arr.length
   let j, tmp
   while (--i > 0) {
@@ -98,6 +45,10 @@ const shuffle = arr => {
   }
   return arr
 }
+const ranStr = () =>
+  Math.random()
+    .toString(36)
+    .substring(7)
 const getRandomList = (names) =>
   shuffle(names).slice(0, Math.floor(Math.random() * (names.length - 10) + 10))
 const getExpected = (list) =>
@@ -109,71 +60,81 @@ const getExpected = (list) =>
         .join(' '),
     )
     .sort()
-    .map((g, i) => `${i +1}. ${g}`)
+    .map((g, i) => `${i + 1}. ${g}`)
     .join('\n')
 
-export const setup = async () => {
-  const dir = tmpdir()
+export const setup = async ({ path }) => {
+  const dir = `${tmpdir()}/tell-me-who`
 
-  // check if already exists and rm?
-  await mkdir(`${dir}/${name}`)
+  await mkdir(dir)
   const randomList = getRandomList(guests)
   const expected = getExpected(randomList)
-  console.log({randomList, expected})
-  await Promise.all(
-    randomList.map(
-      async (n) =>
-        await writeFile(
-          `${dir}/${name}/${n.replace(' ', '_')}.json`,
-          '',
-          'utf8',
-        ),
-    ),
-  )
 
-  return { tmpPath: dir, expected }
-}
-const printGuestList = async ({ arg, ctx, path, eq }) => {
-  const scriptPath = join(resolve(), path)
-  const { stdout } = await exec(`node ${scriptPath} ${arg}`, {
-    cwd: arg ? `${ctx.tmpPath}` : `${ctx.tmpPath}/${name}`,
+  const createFilesIn = async ({ fileNames, folderPath }) =>
+    await Promise.all(
+      fileNames.map(
+        async (fileName) => await writeFile(`${folderPath}/${fileName}`, ''),
+      ),
+    )
+  await createFilesIn({
+    fileNames: randomList.map((n) => `${n.replace(' ', '_')}.json`),
+    folderPath: dir,
   })
-  console.log({stdout})
 
-  // await rmdir(`${ctx.tmpPath}/${name}`, { recursive: true })
-  return eq(stdout.trim(), ctx.expected)
+  const run = async (cmd) => {
+    const cmdPath = isAbsolute(cmd || '') ? cmd : join(dir, cmd || '')
+    const { stdout } = await exec(`node ${path} ${cmdPath}`)
+
+    return { stdout: stdout.trim() }
+  }
+
+  return { tmpPath: dir, expected, run, createFilesIn }
 }
 
 tests.push(async ({ path, eq, ctx }) => {
-  // will execute the script with "tell-me-who" as an argument
-  // `tell-me-who` folder has random files names
-  return printGuestList({
-    path,
-    eq,
-    ctx,
-    arg: 'tell-me-who',
-  })
+  const fileNames = [
+    'Ubaid_Ballard.json',
+    'Victoria_Chan.json',
+    'Dominika_Mullen.json',
+    'Heath_Denton.json',
+    'Lilith_Hamilton.json',
+  ]
+  const folderName = `tell-me-who-${ranStr()}`
+  const folderPath = join(ctx.tmpPath, `../${folderName}`)
+  await mkdir(folderPath)
+  await ctx.createFilesIn({ folderPath, fileNames })
+
+  const { stdout } = await ctx.run(`../${folderName}`)
+  return eq(
+    [
+      `1. Ballard Ubaid`,
+      `2. Chan Victoria`,
+      `3. Denton Heath`,
+      `4. Hamilton Lilith`,
+      `5. Mullen Dominika`,
+    ],
+    stdout.split('\n'),
+  )
+})
+
+tests.push(async ({ path, eq, ctx }) => {
+  // will execute the script in a folder named `tell-me-who`
+  // '../tell-me-who' in the argument passed
+  // `tell-me-who` folder has a random file number
+  const { stdout } = await ctx.run('../tell-me-who')
+  return eq(stdout, ctx.expected)
 })
 
 tests.push(async ({ path, eq, ctx }) => {
   // will execute the script without argument
-  // in the `tell-me-who` folder
-  return printGuestList({
-    path,
-    eq,
-    ctx,
-    arg: '',
-  })
+  const { stdout } = await ctx.run()
+  return eq(stdout, ctx.expected)
 })
 
 tests.push(async ({ path, eq, ctx }) => {
   // will execute the script with `tell-me-who` folder's absolute path as argument
-  return printGuestList({
-    path,
-    eq,
-    ctx,
-    arg: `${ctx.tmpPath}/tell-me-who`,
-  })
+  const { stdout } = await ctx.run(ctx.tmpPath)
+  return eq(stdout, ctx.expected)
 })
 
 Object.freeze(tests)
