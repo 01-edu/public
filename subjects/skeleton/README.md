@@ -1,4 +1,4 @@
-### Instructions
+### Welcome
 
 Welcome to the `world-wide-what` quest!
 In this new digital world you're gonna discover, it is possible to create beings with some lines of code. Yes, it is.
@@ -8,11 +8,13 @@ During this quest, step by step, you are going to shape it.
 But before coding anything, make sure you checked the videos of the playlist; you need to have a server running on your computer.
 For the whole quest, the principle is to iterate over your code: when you finish an exercise, copy-paste your code to use it in the next one.
 
-Naming of the files:
+### Files naming
 
 - for the HTML files: `name-of-the-exercise.html`
 - for the CSS files: when you have to link one, you can manage it as you prefer, but for clarity we suggest you to create a CSS file for each HTML file, named like so: `name-of-the-exercise.css`
 - for the JS files, when you have to link one, you can manage it as you prefer, but for clarity we suggest you to create a JS file for each HTML file, named like so: `name-of-the-exercise.js`
+
+### Instructions
 
 Ready? Let's code!
 
@@ -36,6 +38,16 @@ Let's define the first level of elements that your entity will be made of ; we'r
 Inside the `<body>` tag of your HTML file, create 3 divisions using `<section>` tags, putting the following text content inside for each: `face`, `upper-body`, `lower-body`.
 
 If you open you HTML file in the browser, you should see those 3 texts appear on the screen.
+
+### Code examples
+
+Create a `div` tag with `hello` as text content inside the `body`:
+
+```html
+<body>
+  <div>hello</div>
+</body>
+```
 
 ### Notions
 
