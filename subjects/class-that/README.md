@@ -20,6 +20,25 @@ Create the 3 following classes, setting them with the given rulesets, & attribut
 
 Note that you can attribute several classes to a same element ; create the class `body-member`, which set the `width` to 50 pixels and the `margin` to 30 pixels, and add it to the `class` attribute of those elements: `arm-left`, `arm-right`, `leg-left` & `leg-left`.
 
+### Code examples
+
+Declare a class `my-first-class` and style it with a `color` to `"blue"` and a `background-color` to `"pink"`:
+
+```css
+.my-first-class {
+  color: blue;
+  background-color: pink;
+}
+```
+
+Apply classes to HTML elements:
+
+```html
+<div class="my-first-class"></div>
+<div class="another-class"></div>
+<div class="my-first-class another-class"></div>
+```
+
 ### Expected output
 
 This is what you should see in the browser:
