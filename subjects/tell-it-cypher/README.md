@@ -8,8 +8,8 @@ But you could forget it... loose it... How could you write it without puting the
 Create a `tell-it-cypher.mjs` script that:
 - Takes a file as first argument
 - Takes one of these keywords as second argument:
-  - `encode`: convert your file from `utf8` to `base64`, then save the result in a `cypher.txt` file.
-  - `decode`: convert your file from `base64` to `utf8`, then save the result in a `clear.txt` file.
+  - `encode`: convert your file to `base64`, then save the result in a `cypher.txt` file.
+  - `decode`: convert your file from `base64`, then save the result in a `clear.txt` file.
 - Could take a string as third argument and use it as the new file name. Extension must be precised.
 
 ### Notions
