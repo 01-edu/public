@@ -28,6 +28,33 @@ In the JS file, get the HTML button element with [`querySelector`](https://devel
 - [toggle](https://css-tricks.com/snippets/javascript/the-classlist-api/) the class `eye-closed` in the `classList` of the `eye-left` HTML element
 - change the background color of the `eye-left`: if the eye is open, to "red", if the eye is closed, to "black"
 
+### Code examples
+
+Add an event listener on click on a button that triggers a function:
+
+```js
+// events allow you to react to user inputs
+// (any action with the mouse, keyboard, etc.)
+// it's the foundation of the interactivity of your website
+// each event is linked to an element or the window
+
+// for this example we will attach a click event to a button
+// first we select the button HTML element
+const button = document.querySelector('button')
+
+// we need to create a function
+// that will be executed when the event is triggered
+// let's call it `handleClick`
+const handleClick = (event) => {
+  // do semething when the button has been clicked
+}
+
+// register the event:
+button.addEventListener('click', handleClick)
+// here we ask the button to call our `handleClick` function
+// on the 'click' event, so every time it's clicked
+```
+
 ### Expected output
 
 [This](https://youtu.be/Wkar5SmswDo) is what you should see in the browser.
