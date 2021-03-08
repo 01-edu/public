@@ -1,70 +1,48 @@
 import * as cp from 'child_process'
-import fs from 'fs/promises'
-import { join, resolve, isAbsolute } from 'path'
+import { mkdir, writeFile } from 'fs/promises'
+import { join, isAbsolute } from 'path'
 import { tmpdir } from 'os'
 import { promisify } from 'util'
-const mkdir = fs.mkdir
-const rmdir = fs.rmdir
-const writeFile = fs.writeFile
 
 const exec = promisify(cp.exec)
 
 export const tests = []
-export const setup = async () => {
+export const setup = async ({ path }) => {
   const randomFilesNumber = Math.floor(Math.random() * (30 - 1) + 1)
-  const dir = tmpdir()
+  const dir = `${tmpdir()}/tell-me-how-many`
 
-  // check if already exists and rm?
-  await mkdir(`${dir}/random`)
+  await mkdir(dir)
   for (let i = 0; i < randomFilesNumber; i++) {
-    await writeFile(`${dir}/random/${i}.txt`, '', 'utf8')
+    await writeFile(`${dir}/${i}.txt`, '', 'utf8')
+  }
+  const run = async (cmd) => {
+    const cmdPath = isAbsolute(cmd || '') ? cmd : join(dir, cmd || '')
+    const { stdout } = await exec(`node ${path} ${cmdPath}`)
+
+    return { stdout: stdout.trim() }
   }
 
-  return { randomFilesNumber, tmpPath: dir }
-}
-const countDirLength = async ({ dirLength, arg, ctx, path, eq }) => {
-  const scriptPath = join(resolve(), path)
-  const { stdout } = await exec(`node ${scriptPath} ${arg}`, {
-    cwd: arg ? `${ctx.tmpPath}` : `${ctx.tmpPath}/random`,
-  })
-
-  // await rmdir(`${ctx.tmpPath}/random`, { recursive: true })
-  return eq(Number(stdout.trim()), dirLength)
+  return { randomFilesNumber, tmpPath: dir, run }
 }
 
 tests.push(async ({ path, eq, ctx }) => {
-  // will execute the script with "random" as an argument
-  // `random` folder has a random file number
-  return countDirLength({
-    path,
-    eq,
-    ctx,
-    arg: 'random',
-    dirLength: ctx.randomFilesNumber,
-  })
+  // will execute the script in a folder named `tell-me-how-many`
+  // '../tell-me-how-many' in the argument passed
+  // `tell-me-how-many` folder has a random file number
+  const { stdout } = await ctx.run('../tell-me-how-many')
+  return eq(Number(stdout), ctx.randomFilesNumber)
 })
 
 tests.push(async ({ path, eq, ctx }) => {
   // will execute the script without argument
-  // in the `random` folder
-  return countDirLength({
-    path,
-    eq,
-    ctx,
-    arg: '',
-    dirLength: ctx.randomFilesNumber,
-  })
+  const { stdout } = await ctx.run()
+  return eq(Number(stdout), ctx.randomFilesNumber)
 })
 
 tests.push(async ({ path, eq, ctx }) => {
-  // will execute the script with `random` folder's absolute path as argument
-  return countDirLength({
-    path,
-    eq,
-    ctx,
-    arg: `${ctx.tmpPath}/random`,
-    dirLength: ctx.randomFilesNumber,
-  })
+  // will execute the script with `tell-me-how-many` folder's absolute path as argument
+  const { stdout } = await ctx.run(ctx.tmpPath)
+  return eq(Number(stdout), ctx.randomFilesNumber)
 })
 
 Object.freeze(tests)
