@@ -5,25 +5,41 @@ import { tmpdir } from 'os'
 import { promisify } from 'util'
 
 const exec = promisify(cp.exec)
+const between = (max, min) => Math.floor(Math.random() * (max - min) + min)
 
 export const tests = []
 export const setup = async ({ path }) => {
-  const randomFilesNumber = Math.floor(Math.random() * (30 - 1) + 1)
+  const randomFilesNumber = between(30, 6)
   const dir = `${tmpdir()}/tell-me-how-many`
 
   await mkdir(dir)
-  for (let i = 0; i < randomFilesNumber; i++) {
-    await writeFile(`${dir}/${i}.txt`, '', 'utf8')
-  }
+
   const run = async (cmd) => {
     const cmdPath = isAbsolute(cmd || '') ? cmd : join(dir, cmd || '')
     const { stdout } = await exec(`node ${path} ${cmdPath}`)
 
     return { stdout: stdout.trim() }
   }
+  const createXFilesIn = async ({ numberOfFiles, folderPath }) => {
+    for (let i = 0; i < numberOfFiles; i++) {
+      await writeFile(`${folderPath}/${i}.txt`, '', 'utf8')
+    }
+  }
+  await createXFilesIn({ numberOfFiles: randomFilesNumber, folderPath: dir })
 
-  return { randomFilesNumber, tmpPath: dir, run }
+  return { randomFilesNumber, tmpPath: dir, run, createXFilesIn }
 }
+
+tests.push(async ({ path, eq, ctx }) => {
+  const numberOfFiles = between(5, 13)
+  const folderName = `tell-me-how-many-${numberOfFiles}`
+  const folderPath = join(ctx.tmpPath, `../${folderName}`)
+  await mkdir(folderPath)
+  await ctx.createXFilesIn({ folderPath, numberOfFiles })
+
+  const { stdout } = await ctx.run(`../${folderName}`)
+  return eq(Number(stdout), numberOfFiles)
+})
 
 tests.push(async ({ path, eq, ctx }) => {
   // will execute the script in a folder named `tell-me-how-many`
