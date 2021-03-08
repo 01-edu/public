@@ -33,6 +33,19 @@ In the JS file, like in the previous exercise, get the HTML button element with 
 - set its [`className`](https://developer.mozilla.org/en-US/docs/Web/API/Element/className) to `words`, that we just added earlier in the CSS
 - use the [`append`](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append) method to add it inside the `torso` element
 
+### Code examples
+
+Create a new element and add it inside the body:
+
+```js
+// create a new `div` element
+const div = document.createElement('div') // the argument passed (string) is the html tag
+
+// select the `body` and add the new `div` inside it
+const body = document.querySelector('body')
+body.append(div)
+```
+
 ### Expected output
 
 [This](https://youtu.be/Eq9liRCc-zA) is what you should see in the browser.
