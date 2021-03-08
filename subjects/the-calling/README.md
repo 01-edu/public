@@ -25,6 +25,14 @@ Inspect the HTML that have been created with your
 & if you done it correctly, you should see inside the `body` the 3 sections with
 the `id` attribute set in your HTML structure.
 
+### Code examples
+
+Set the `id` of a `div` tag to `"my-lil-div"`:
+
+```html
+<div id="my-lil-div"></div>
+```
+
 ### Notions
 
 - [`id` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id)
