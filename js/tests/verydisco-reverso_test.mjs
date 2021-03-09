@@ -24,7 +24,7 @@ export const setup = async ({ path }) => {
   return { tmpPath: dir, run }
 }
 
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ eq, ctx }) => {
   const trueWords = 'kisscool'
   await writeFile(`${ctx.tmpPath}/fever.txt`, trueWords, 'utf8')
 
@@ -32,7 +32,7 @@ tests.push(async ({ path, eq, ctx }) => {
   return eq(stdout, 'coolkiss')
 })
 
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ eq, ctx }) => {
   const trueWords = 'verydisco'
   await writeFile(`${ctx.tmpPath}/fever.txt`, trueWords, 'utf8')
 
@@ -40,7 +40,7 @@ tests.push(async ({ path, eq, ctx }) => {
   return eq(stdout, 'discovery')
 })
 
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ eq, ctx }) => {
   const trueWords = 'deNo si omeawes'
   await writeFile(`${ctx.tmpPath}/myTruth.txt`, trueWords, 'utf8')
 
@@ -48,9 +48,9 @@ tests.push(async ({ path, eq, ctx }) => {
   return eq(stdout, 'Node is awesome')
 })
 
-tests.push(async ({ path, eq, ctx }) => {
-  const recto = randomLetters(3)
-  const verso = randomLetters(3)
+tests.push(async ({ randStr, eq, ctx }) => {
+  const recto = randStr(3)
+  const verso = randStr(3)
   const meaningOfLife = `${recto}${verso}`
   await writeFile(`${ctx.tmpPath}/theTruth.txt`, meaningOfLife, 'utf8')
 
@@ -58,9 +58,9 @@ tests.push(async ({ path, eq, ctx }) => {
   return eq(stdout, `${verso}${recto}`)
 })
 
-tests.push(async ({ path, eq, ctx }) => {
-  const heads = randomLetters(3)
-  const tails = randomLetters(4)
+tests.push(async ({ randStr, eq, ctx }) => {
+  const heads = randStr(3)
+  const tails = randStr(4)
   const coinFlipping = `${heads}${tails}`
   await writeFile(`${ctx.tmpPath}/coins-flipping.txt`, coinFlipping, 'utf8')
 
@@ -68,11 +68,11 @@ tests.push(async ({ path, eq, ctx }) => {
   return eq(stdout, `${tails}${heads}`)
 })
 
-tests.push(async ({ path, eq, ctx }) => {
-  const ying = randomLetters(8)
-  const yang = randomLetters(8)
-  const tic = randomLetters(5)
-  const tac = randomLetters(6)
+tests.push(async ({ randStr, eq, ctx }) => {
+  const ying = randStr(8)
+  const yang = randStr(8)
+  const tic = randStr(5)
+  const tac = randStr(6)
   const absurd = `${tic}${tac} ${ying}${yang}`
   await writeFile(`${ctx.tmpPath}/absurd.txt`, absurd, 'utf8')
 
