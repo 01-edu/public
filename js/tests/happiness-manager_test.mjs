@@ -1,13 +1,9 @@
 import * as cp from 'child_process'
-import fs from 'fs/promises'
+import { readdir, rm, mkdir, writeFile, readFile } from 'fs/promises'
 import { tmpdir } from 'os'
 import { promisify } from 'util'
-const mkdir = fs.mkdir
-const writeFile = fs.writeFile
-const readFile = fs.readFile
 
 const exec = promisify(cp.exec)
-
 export const tests = []
 
 export const setup = async ({ path }) => {
@@ -32,8 +28,8 @@ export const setup = async ({ path }) => {
     }
   }
   const resetAnswersIn = async ({ folder }) => {
-    const dir = await fs.readdir(`${tmpPath}/${folder}`)
-    await Promise.all(dir.map((file) => fs.rm(`${tmpPath}/${folder}/${file}`)))
+    const dir = await readdir(`${tmpPath}/${folder}`)
+    await Promise.all(dir.map((file) => rm(`${tmpPath}/${folder}/${file}`)))
   }
   const createAnswers = (nb, elem) => [...Array(nb).keys()].map(() => elem)
   const setAnswersIn = async ({ answers, folder }) => {
@@ -53,7 +49,7 @@ export const setup = async ({ path }) => {
   return { run, tmpPath, createAnswers, resetAnswersIn, setAnswersIn }
 }
 
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ eq, ctx }) => {
   // test with no vips (no {answer: yes})
   // no file should be created, a special message should appear in console
   const answers = ctx.createAnswers(2, { answer: 'no' })
@@ -66,7 +62,7 @@ tests.push(async ({ path, eq, ctx }) => {
   )
 })
 
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ eq, ctx }) => {
   // test when vips answer { food: 'carnivores' }
   // should create a list with burgers and potatoes
   const answers = ctx.createAnswers(2, { answer: 'yes', food: 'carnivore' })
@@ -76,7 +72,7 @@ tests.push(async ({ path, eq, ctx }) => {
   return eq(data, { burgers: 2, potatoes: 2 })
 })
 
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ eq, ctx }) => {
   // test when vips answer { food: 'fish' }
   // should create a list with sardines and potatoes
   const answers = [
@@ -89,7 +85,7 @@ tests.push(async ({ path, eq, ctx }) => {
   return eq(data, { potatoes: 3, sardines: 3 })
 })
 
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ eq, ctx }) => {
   // test when vips answer { food: 'everything' }
   // should create a list with kebabs and potatoes
   const answers = [
@@ -102,7 +98,7 @@ tests.push(async ({ path, eq, ctx }) => {
   return eq(data, { potatoes: 3, kebabs: 3 })
 })
 
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ eq, ctx }) => {
   // test when vips answer { drink: 'beer' }
   // should create a list with 6-packs-beers and potatoes
   const answers = [
@@ -115,7 +111,7 @@ tests.push(async ({ path, eq, ctx }) => {
   return eq(data, { potatoes: 1, '6-packs-beers': 1 })
 })
 
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ eq, ctx }) => {
   // test when vips answer { drink: 'beer' }
   // should create a list with 6-packs-beers and potatoes
   const answers = [
@@ -128,7 +124,7 @@ tests.push(async ({ path, eq, ctx }) => {
   return eq(data, { potatoes: 6, '6-packs-beers': 1 })
 })
 
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ eq, ctx }) => {
   // test when vips answer { drink: 'wine' }
   // should create a list with wine-bottles and potatoes
   const answers = [
@@ -141,7 +137,7 @@ tests.push(async ({ path, eq, ctx }) => {
   return eq(data, { potatoes: 5, 'wine-bottles': 2 })
 })
 
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ eq, ctx }) => {
   // test when vips answer { drink: 'wine' }
   // should create a list with wine-bottles and potatoes
   const answers = ctx.createAnswers(8, { answer: 'yes', drink: 'wine' })
@@ -151,7 +147,7 @@ tests.push(async ({ path, eq, ctx }) => {
   return eq(data, { potatoes: 8, 'wine-bottles': 2 })
 })
 
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ eq, ctx }) => {
   // test when vips answer { drink: 'water' }
   // should create a list with water-bottles and potatoes
   const answers = [
@@ -164,7 +160,7 @@ tests.push(async ({ path, eq, ctx }) => {
   return eq(data, { potatoes: 2, 'water-bottles': 1 })
 })
 
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ eq, ctx }) => {
   // test when vips answer { drink: 'water' }
   // should create a list with water-bottles and potatoes
   const answers = ctx.createAnswers(7, { answer: 'yes', drink: 'water' })
@@ -174,7 +170,7 @@ tests.push(async ({ path, eq, ctx }) => {
   return eq(data, { potatoes: 7, 'water-bottles': 2 })
 })
 
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ eq, ctx }) => {
   // test when vips answer { drink: 'soft' }
   // should create a list with soft-bottles and potatoes
   const answers = [
@@ -187,7 +183,7 @@ tests.push(async ({ path, eq, ctx }) => {
   return eq(data, { potatoes: 12, 'soft-bottles': 3 })
 })
 
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ eq, ctx }) => {
   // test when vips answer { drink: 'soft' }
   // should create a list with soft-bottles and potatoes
   const answers = ctx.createAnswers(13, { answer: 'yes', drink: 'soft' })
@@ -199,7 +195,7 @@ tests.push(async ({ path, eq, ctx }) => {
 
 // tests with veggstuff
 // 1) vegan but no veggie
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ eq, ctx }) => {
   // test when vips answer { food: 'vegan' }
   // should create a list with eggplants, mushrooms, courgettes and potatoes
   const answers = [
@@ -218,7 +214,7 @@ tests.push(async ({ path, eq, ctx }) => {
   })
 })
 
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ eq, ctx }) => {
   // test when vips answer { food: 'vegan' }
   // should create a list with eggplants, mushrooms, hummus, courgettes and potatoes
   const answers = ctx.createAnswers(6, { answer: 'yes', food: 'vegan' })
@@ -235,7 +231,7 @@ tests.push(async ({ path, eq, ctx }) => {
 })
 
 // 2) veggie but no vegan
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ eq, ctx }) => {
   // test when vips answer { food: 'veggie' }
   // should create a list with eggplants, mushrooms, courgettes and potatoes
   const answers = [
@@ -254,7 +250,7 @@ tests.push(async ({ path, eq, ctx }) => {
   })
 })
 
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ eq, ctx }) => {
   // test when vips answer { food: 'veggie' }
   // should create a list with eggplants, mushrooms, hummus, courgettes and potatoes
   const answers = ctx.createAnswers(6, { answer: 'yes', food: 'veggie' })
@@ -271,7 +267,7 @@ tests.push(async ({ path, eq, ctx }) => {
 })
 
 // 3) both
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ eq, ctx }) => {
   // test when vips answer { food: 'vegan' } and { food: 'veggie' }
   // should create a list with eggplants, mushrooms, courgettes and potatoes
   const answers = [
@@ -290,7 +286,7 @@ tests.push(async ({ path, eq, ctx }) => {
   })
 })
 
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ eq, ctx }) => {
   // test when vips answer { food: 'vegan' } and { food: 'veggie' }
   // should create a list with eggplants, mushrooms, hummus, courgettes and potatoes
   const answers = [
@@ -310,7 +306,7 @@ tests.push(async ({ path, eq, ctx }) => {
 })
 
 // test with existing file
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ eq, ctx }) => {
   // test with an existing file
   // should add elems to the existing list
   await writeFile(
@@ -331,7 +327,7 @@ tests.push(async ({ path, eq, ctx }) => {
   })
 })
 
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ eq, ctx }) => {
   // test with an existing file
   // should replace elems in the existing list (if already there)
   await writeFile(
@@ -353,7 +349,7 @@ tests.push(async ({ path, eq, ctx }) => {
 })
 
 // test with a little bit of everything
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ eq, ctx }) => {
   // test with mix of everything
   await writeFile(
     `${ctx.tmpPath}/party.json`,

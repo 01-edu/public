@@ -5,7 +5,6 @@ import { tmpdir } from 'os'
 import { promisify } from 'util'
 
 const exec = promisify(cp.exec)
-const between = (max, min) => Math.floor(Math.random() * (max - min) + min)
 
 export const tests = []
 export const setup = async ({ path }) => {
@@ -30,7 +29,7 @@ export const setup = async ({ path }) => {
   return { randomFilesNumber, tmpPath: dir, run, createXFilesIn }
 }
 
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ path, eq, ctx, between }) => {
   const numberOfFiles = between(5, 13)
   const folderName = `tell-me-how-many-${numberOfFiles}`
   const folderPath = join(ctx.tmpPath, `../${folderName}`)
