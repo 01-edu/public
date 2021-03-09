@@ -29,7 +29,6 @@ export const setup = async ({ path }) => {
           ? fileContent
           : JSON.parse(fileContent),
       stdout: output.stdout.trim(),
-      stderr: output.stderr.trim(),
     }
   }
   const resetAnswersIn = async ({ folder }) => {
