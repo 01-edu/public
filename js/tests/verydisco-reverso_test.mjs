@@ -7,10 +7,7 @@ import * as cp from 'child_process'
 const exec = promisify(cp.exec)
 
 export const tests = []
-const randomLetters = (number) =>
-  Math.random()
-    .toString(36)
-    .substring(0, number)
+
 export const setup = async ({ path }) => {
   const dir = `${tmpdir()}/verydisco-reverso`
   await mkdir(dir)
