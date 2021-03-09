@@ -1,8 +1,6 @@
-import fs from 'fs/promises'
+import { readFile, mkdir } from 'fs/promises'
 import { join, resolve } from 'path'
 import { tmpdir } from 'os'
-const readFile = fs.readFile
-const mkdir = fs.mkdir
 import { promisify } from 'util'
 import * as cp from 'child_process'
 
@@ -10,10 +8,11 @@ const exec = promisify(cp.exec)
 export const tests = []
 
 export const setup = async ({ path }) => {
-  const run = async (word) => {
+  const run = async word => {
     await exec(`node ${path} ${word}`)
-    const fileContent = await readFile('verydisco-forever.txt', 'utf8').catch((err) =>
-      err.code === 'ENOENT' ? 'output file not found' : err,
+    const fileContent = await readFile(
+      'verydisco-forever.txt',
+      'utf8',
     )
 
     return { data: fileContent }
@@ -29,17 +28,17 @@ tests.push(async ({ ctx, eq }) => {
 
 tests.push(async ({ ctx, eq }) => {
   const { data } = await ctx.run(`"kiss cool"`)
-  return eq(data, "sski olco")
+  return eq(data, 'sski olco')
 })
 
 tests.push(async ({ ctx, eq }) => {
   const { data } = await ctx.run(`kiss cool`)
-  return eq(data, "sski")
+  return eq(data, 'sski')
 })
 
 tests.push(async ({ ctx, eq }) => {
   const { data } = await ctx.run(`"Node is awesome"`)
-  return eq(data, "deNo si omeawes")
+  return eq(data, 'deNo si omeawes')
 })
 
 tests.push(async ({ ctx, eq, randStr }) => {
