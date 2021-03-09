@@ -1,135 +1,103 @@
 import * as cp from 'child_process'
-import fs from 'fs/promises'
-import { join, resolve, isAbsolute } from 'path'
+import { mkdir, writeFile, readFile } from 'fs/promises'
+import { join, isAbsolute } from 'path'
 import { tmpdir } from 'os'
 import { promisify } from 'util'
-const mkdir = fs.mkdir
-const rmdir = fs.rmdir
-const writeFile = fs.writeFile
-const readFile = fs.readFile
 
 const exec = promisify(cp.exec)
 
 export const tests = []
-const name = 'tell-it-cypher'
-// maybe get the sames from an api? like https://parser.name/
-const guests = [
-  'Shyam Langley',
-  'Austin Harwood',
-  'Reem Morgan',
-  'Neal Chamberlain',
-  'Ryan Walters',
-  'Ocean Battle',
-  'Ubaid Ballard',
-  'Victoria Chan',
-  'Dominika Mullen',
-  'Heath Denton',
-  'Lilith Hamilton',
-  'Aisling Bailey',
-  'Maizie Love',
-  'Nathanial Franco',
-  'Charmaine Bernard',
-  'Sohail Downes',
-  'Rabia Gomez',
-  'Brendan Brennan',
-  'Shannen Atherton',
-  'Esa Villarreal',
-  'Kayla Wynn',
-  'Gladys Hardy',
-  'Laaibah Rogers',
-  'Zishan Randolph',
-  'Connor Connolly',
-  'Arabella Wooten',
-  'Edna Floyd',
-]
-const shuffle = (arr) => {
-  let i = arr.length
-  let j, tmp
-  while (--i > 0) {
-    j = Math.floor(Math.random() * (i + 1))
-    tmp = arr[j]
-    arr[j] = arr[i]
-    arr[i] = tmp
-  }
-  return arr
-}
-const getRandomList = (names) =>
-  shuffle(names).slice(0, Math.floor(Math.random() * (names.length - 10) + 10))
-const getExpected = (list) =>
-  list
-    .map((n) =>
-      n
-        .split(' ')
-        .reverse()
-        .join(' '),
+const ranStr = () =>
+  Math.random()
+    .toString(36)
+    .substring(7)
+
+export const setup = async ({ path }) => {
+  const dir = `${tmpdir()}/tell-it-cypher`
+
+  await mkdir(dir)
+
+  const run = async (cmd) => {
+    const [filename, keyword, newFile] = cmd.split(' ')
+    const filePath = isAbsolute(filename) ? filename : join(dir, filename)
+    const { stdout } = await exec(
+      `node ${path} ${filePath} ${keyword} ${newFile || ''}`,
     )
-    .sort()
-    .map((g, i) => `${i + 1}. ${g}`)
-    .join('\n')
+    const newFileName =
+      newFile || (keyword === 'encode' ? 'cypher.txt' : 'clear.txt')
+    const fileContent = await readFile(newFileName, 'utf8').catch((err) =>
+      err.code === 'ENOENT' ? 'output file not found' : err,
+    )
+    return { data: fileContent }
+  }
 
-export const setup = async () => {
-  const dir = tmpdir()
-
-  // check if already exists and rm?
-  await mkdir(`${dir}/${name}`)
-  const randomList = getRandomList(guests)
-  const decoded = getExpected(randomList)
-  const encoded = Buffer.from(decoded).toString('base64')
-  await writeFile(`${dir}/${name}/encoded.txt`, encoded)
-  await writeFile(`${dir}/${name}/decoded.txt`, decoded)
-
-  return { tmpPath: `${dir}/${name}`, decoded, encoded }
+  return { tmpPath: dir, run, encoded, decoded }
 }
-const cypherIt = async ({ keyword, newFile, ctx, path, eq }) => {
-  const scriptPath = join(resolve(), path)
-  const filename = keyword === "encode" ? "decoded.txt" : "encoded.txt"
-  await exec(`node ${scriptPath} ${filename} ${keyword} ${newFile ? newFile : ""}`, {
-    cwd: ctx.tmpPath,
-  })
-  const newFileName = newFile || (keyword === "encode" ? "cypher.txt" : "clear.txt")
-  const out = await readFile(`${ctx.tmpPath}/${newFileName}`, 'utf8').catch((err) =>
-    err.code === 'ENOENT' ? 'output file not found' : err,
+
+tests.push(async ({ path, eq, ctx }) => {
+  const vips = `1. Langley Shyam
+  2. Harwood Austin
+  3. Morgan Reem
+  4. Chamberlain Neal
+  5. Walters Ryan`
+  const fileName = `${ctx.tmpPath}/vip.txt`
+  await writeFile(fileName, vips)
+
+  const { data } = await ctx.run(`${fileName} encode`)
+
+  return eq(
+    data,
+    'MS4gTGFuZ2xleSBTaHlhbQogIDIuIEhhcndvb2QgQXVzdGluCiAgMy4gTW9yZ2FuIFJlZW0KICA0LiBDaGFtYmVybGFpbiBOZWFsCiAgNS4gV2FsdGVycyBSeWFu',
   )
-  await exec(`rm ${newFileName}`, { cwd: ctx.tmpPath })
-  return eq(out, keyword === "encode" ? ctx.encoded : ctx.decoded)
-}
-
-tests.push(async ({ path, eq, ctx }) => {
-  return cypherIt({
-    path,
-    eq,
-    ctx,
-    keyword: 'encode',
-  })
 })
 
 tests.push(async ({ path, eq, ctx }) => {
-  return cypherIt({
-    path,
-    eq,
-    ctx,
-    keyword: 'decode',
-  })
+  const vips = `1. Wynn Kayla
+  2. Hardy Gladys
+  3. Rogers Laaibah
+  4. Randolph Zishan
+  5. Connolly Connor`
+  const fileName = `${ctx.tmpPath}/vip-${ranStr()}.txt`
+  await writeFile(fileName, vips)
+
+  const { data } = await ctx.run(`${fileName} encode mysecret.txt`)
+
+  return eq(
+    data,
+    'MS4gV3lubiBLYXlsYQogIDIuIEhhcmR5IEdsYWR5cwogIDMuIFJvZ2VycyBMYWFpYmFoCiAgNC4gUmFuZG9scGggWmlzaGFuCiAgNS4gQ29ubm9sbHkgQ29ubm9y',
+  )
 })
 
 tests.push(async ({ path, eq, ctx }) => {
-  return cypherIt({
-    path,
-    eq,
-    ctx,
-    keyword: 'encode',
-    newFile: 'mysecret.txt',
-  })
+  const vipsEncoded = "MS4gVmlsbGFycmVhbCBFc2EKICAyLiBXeW5uIEtheWxhCiAgMy4gSGFyZHkgR2xhZHlzCiAgNC4gUm9nZXJzIExhYWliYWgKICA1LiBSYW5kb2xwaCBaaXNoYW4="
+  const fileName = `${ctx.tmpPath}/vip-encoded-${ranStr()}.txt`
+  await writeFile(fileName, vipsEncoded)
+
+  const { data } = await ctx.run(`${fileName} decode`)
+  return eq(
+    data,
+    `1. Villarreal Esa
+  2. Wynn Kayla
+  3. Hardy Gladys
+  4. Rogers Laaibah
+  5. Randolph Zishan`,
+  )
 })
 
 tests.push(async ({ path, eq, ctx }) => {
-  return cypherIt({
-    path,
-    eq,
-    ctx,
-    keyword: 'decode',
-    newFile: 'pandora.txt',
-  })
+  const vipsEncoded = "MS4gQmVybmFyZCBDaGFybWFpbmUKICAyLiBEb3duZXMgU29oYWlsCiAgMy4gR29tZXogUmFiaWEKICA0LiBCcmVubmFuIEJyZW5kYW4KICA1LiBBdGhlcnRvbiBTaGFubmVu"
+  const fileName = `${ctx.tmpPath}/vip-encoded-${ranStr()}.txt`
+  await writeFile(fileName, vipsEncoded)
+
+  const { data } = await ctx.run(`${fileName} decode pandora.txt`)
+  return eq(
+    data,
+    `1. Bernard Charmaine
+  2. Downes Sohail
+  3. Gomez Rabia
+  4. Brennan Brendan
+  5. Atherton Shannen`,
+  )
 })
 
 Object.freeze(tests)
