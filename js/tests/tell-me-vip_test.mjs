@@ -40,70 +40,30 @@ const guests = [
   'Gabriela Tucker',
   'Kiri Wilcox',
 ]
-const shuffle = (arr) => {
-  let i = arr.length
-  let j, tmp
-  while (--i > 0) {
-    j = Math.floor(Math.random() * (i + 1))
-    tmp = arr[j]
-    arr[j] = arr[i]
-    arr[i] = tmp
-  }
-  return arr
-}
-const getRandomList = (names) =>
-  shuffle(names).slice(0, Math.floor(Math.random() * (names.length - 10) + 10))
-const getExpected = (list) => list
-    .filter(([n, {answer}]) => answer === 'yes')
-    .map(([n, _]) => {
-      const reversed = n.split('_').reverse()
-      return `${reversed[0].slice(0, -5)} ${reversed[1]}`
-    })
-    .sort()
-    .map((g, i) => `${i + 1}. ${g}`)
-    .join('\n')
-const generateObj = () => ({
-  answer: ['yes', 'no'][Math.floor(Math.random() * 2)],
-})
 
-const ranStr = () =>
-  Math.random()
-    .toString(36)
-    .substring(7)
+const ranStr = () => Math.random().toString(36).substring(7)
 export const setup = async ({ path }) => {
   const dir = `${tmpdir()}/tell-me-vip`
 
   await mkdir(`${dir}/guests`, { recursive: true })
-  const randomList = getRandomList(guests)
-  const randomAnswers = randomList.map((g) => [
-    g.replace(' ', '_').concat('.json'),
-    generateObj(),
-  ])
 
-  const expected = getExpected(randomAnswers)
-
-  const createFilesIn = async ({ files, folderPath }) =>
-    await Promise.all(
-      files.map(
-        async ([fileName, content]) =>
-          await writeFile(`${folderPath}/${fileName}`, JSON.stringify(content)),
+  const createFilesIn = ({ files, folderPath }) =>
+    Promise.all(
+      files.map(([fileName, content]) =>
+        writeFile(`${folderPath}/${fileName}`, JSON.stringify(content)),
       ),
     )
-  await createFilesIn({
-    files: randomAnswers,
-    folderPath: `${dir}/guests`,
-  })
 
-  const run = async (cmd) => {
+  const run = async cmd => {
     const cmdPath = isAbsolute(cmd) ? cmd : join(dir, cmd)
     const { stdout } = await exec(`node ${path} ${cmdPath}`)
-    const fileContent = await readFile(`vip.txt`, 'utf8').catch((err) =>
+    const fileContent = await readFile(`vip.txt`, 'utf8').catch(err =>
       err.code === 'ENOENT' ? 'output file not found' : err,
     )
     return { data: fileContent }
   }
 
-  return { tmpPath: dir, expected, run, createFilesIn }
+  return { tmpPath: dir, run, createFilesIn }
 }
 
 tests.push(async ({ path, eq, ctx }) => {
@@ -135,12 +95,14 @@ tests.push(async ({ path, eq, ctx }) => {
 })
 
 tests.push(async ({ path, eq, ctx }) => {
+  const random = ranStr()
   const files = [
     ['Ubaid_Ballard.json', { answer: 'yes' }],
     ['Victoria_Chan.json', { answer: 'yes' }],
     ['Dominika_Mullen.json', { answer: 'no' }],
     ['Heath_Denton.json', { answer: 'no' }],
     ['Lilith_Hamilton.json', { answer: 'yes' }],
+    [`${random}_Random.json`, { answer: 'yes' }],
   ]
   const folderName = `guests-${ranStr()}`
   const folderPath = join(ctx.tmpPath, folderName)
@@ -149,23 +111,14 @@ tests.push(async ({ path, eq, ctx }) => {
 
   const { data } = await ctx.run(folderName)
   return eq(
-    [`1. Ballard Ubaid`, `2. Chan Victoria`, `3. Hamilton Lilith`],
+    [
+      `1. Ballard Ubaid`,
+      `2. Chan Victoria`,
+      `3. Hamilton Lilith`,
+      `4. Random ${random}`,
+    ],
     data.split('\n'),
   )
-})
-
-tests.push(async ({ path, eq, ctx }) => {
-  // will execute the script in a folder named `guests`
-  // 'guests' in the argument passed
-  // `guests` folder has a random file number with random answers 'yes' or 'no'
-  const { data } = await ctx.run('guests')
-  return eq(data, ctx.expected)
-})
-
-tests.push(async ({ path, eq, ctx }) => {
-  // will execute the script with `guests` folder's absolute path as argument
-  const { data } = await ctx.run(`${ctx.tmpPath}/guests`)
-  return eq(data, ctx.expected)
 })
 
 // test error when no arg?...
