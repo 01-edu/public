@@ -2,7 +2,11 @@
 
 ### Instructions
 
-Create a `tell-me-vip.mjs` script that filters the guests who actually answered 'YES' to your invitation, and save this list in a `vip.txt` file.
+Create a `tell-me-vip.mjs` script that filters the guests who actually answered
+'YES' to your invitation, and save this list in a `vip.txt` file.
+
+The output must print one guest per line, in ascending alphabetic
+order, and formated as following: `Number. Lastname Firstname` (starting from 1).
 
 ### Notions
 
