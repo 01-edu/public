@@ -7,5 +7,6 @@ Create a `tell-me-vip.mjs` script that filters the guests who actually answered 
 ### Notions
 
 - [Node file system: `readFile`](https://nodejs.org/api/fs.html#fs_fspromises_readfile_path_options)
+- [Node path: `join`](https://nodejs.org/api/path.html#path_path_join_paths)
 - [`JSON.parse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
 - [`Array.prototype.filter()` method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
