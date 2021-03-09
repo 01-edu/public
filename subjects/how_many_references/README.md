@@ -2,14 +2,19 @@
 
 ### Instructions
 
-Create the following functions :
+Create the following **functions** :
 
-- `add_ele` that adds an element to the value in the `Node`
-- `how_many_references` that returns how many times the value is referenced in the code
-- `rm_all_ref` that receives a `Rc<String>` and removes all elements from the vector that
+- `add_ele` which adds an element to the value in the `Node`
+- `how_many_references` which returns how many times the value is referenced in the code
+- `rm_all_ref` which receives a `Rc<String>` and removes all elements from the vector that
   are equal to that value, this should only happen if the two Rcs point to the same allocation
 
-### Expected Function
+### Notions
+
+- [Reference Counted Smart Pointer](https://doc.rust-lang.org/book/ch15-04-rc.html)
+- [Struct std::rc::Rc](https://doc.rust-lang.org/std/rc/struct.Rc.html)
+
+### Expected Functions and structures
 
 ```rust
 pub use std::rc::Rc;
@@ -31,9 +36,11 @@ pub fn how_many_references(value: &Rc<String>) -> usize {}
 
 ### Usage
 
-Here is a program to test your function
+Here is a program to test your functions,
 
 ```rust
+use how_many_references::*;
+
 fn main() {
     let a = Rc::new(String::from("a"));
     let b = Rc::new(String::from("b"));
@@ -71,8 +78,3 @@ b: 2
 c: 2
 student@ubuntu:~/[[ROOT]]/test$
 ```
-
-### Notions
-
-- https://doc.rust-lang.org/book/ch15-04-rc.html
-- https://doc.rust-lang.org/std/rc/struct.Rc.html

@@ -4,20 +4,23 @@
 
 "Interior mutability is a design pattern in Rust that allows you to mutate data even when there are immutable references to that data"
 
-You must create a Drop checker API. For this you must create:
+in this exercise a Drop checker API has to be created. For this you must define:
 
 - Two structures:
+
   - `Workers` that will have two fields:
-    - `drops` that will save the number of dropped threads
+    - `drops` that will save the number of dropped threads.
     - `states` that will save a state of multiple threads.
       If the thread is not dropped, the state will be false otherwise true.
   - `Thread` that will have the following fields:
-    - `pid`, the id of the thread
-    - `cmd`, the name of the thread
+    - `pid`, the id of the thread.
+    - `cmd`, the name of the thread.
     - `parent`, that will be the link to the structure `Workers` (Tip: this must be a reference to the structure Workers)
 
 - Implementation of each structure:
+
   - `Workers` :
+
     - `new`, that creates a default worker
     - `new_worker`, that returns a tuple with the `pid` and a new `Thread`,
       this function must receive a `String` being the `cmd`
@@ -33,7 +36,13 @@ You must create a Drop checker API. For this you must create:
 
 - You must implement for the structure `Thread` the `Drop` trait. In this trait you must call the function `add_drop` so that the state of the thread changes
 
-### Expected Function
+### Notions
+
+- [Trait std::ops::Drop](https://doc.bccnsoft.com/docs/rust-1.36.0-docs-html/std/ops/trait.Drop.html)
+- [Struct std::cell::RefCell](https://doc.rust-lang.org/std/cell/struct.RefCell.html)
+- [Interior Mutability](https://doc.rust-lang.org/book/ch15-05-interior-mutability.html)
+
+### Expected Functions
 
 ```rust
 use std::cell::{RefCell, Cell};
@@ -65,10 +74,11 @@ impl<'a> Thread<'a> {
 
 ### Usage
 
-Here is a program to test your function
+Here is a program to test your function,
 
 ```rust
 use std::rc::Rc;
+use drop_the_thread::*;
 
 fn main() {
     let worker = Workers::new();
@@ -101,9 +111,3 @@ student@ubuntu:~/[[ROOT]]/test$ cargo run
 (false, 2, Cell { value: 2 }, 1)
 student@ubuntu:~/[[ROOT]]/test$
 ```
-
-### Notions
-
-- https://doc.bccnsoft.com/docs/rust-1.36.0-docs-html/std/ops/trait.Drop.html
-- https://doc.rust-lang.org/std/cell/struct.RefCell.html
-- https://doc.rust-lang.org/book/ch15-05-interior-mutability.html

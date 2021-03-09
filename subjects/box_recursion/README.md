@@ -2,25 +2,31 @@
 
 ### Instructions
 
-Using the given code create the following functions:
+Using the given code create the following **functions**:
 
-- `new` that will initialize the `WorkEnvironment` as `None`
-- `add_worker`, that receives two strings, one being the type of worker and the other the name of the worker.
-- `remove_worker`, that removes the last worker that was placed in the `WorkEnvironment`, this functions should 
-  return a `Option` with the name of the worker.
-- `search_worker`, that return a tuple with the name and type of worker.
+- `new` which will initialize the `WorkEnvironment` as `None`
+- `add_worker`, which receives two strings, one being the type of worker and the other the name of the worker.
+- `remove_worker`, which removes the last worker that was placed in the `WorkEnvironment`, this function should
+  returns an `Option` with the name of the worker.
+- `search_worker`, which returns a tuple with the name and type of worker.
 
-You must also create a type called `Link` this will be the connection of the structures `WorkEnvironment` and `Worker`.
+You must also create a type called `Link`. This will be the connection of the structures `WorkEnvironment` and `Worker`.
 Do not forget that this will be a recursion type and it must point to `None` if there is no workers.
 
-### Expected Function
+### Notions
+
+- [enum](https://doc.rust-lang.org/rust-by-example/custom_types/enum.html)
+- [boc](https://doc.rust-lang.org/book/ch15-01-box.html)
+- [Module std::option](https://doc.rust-lang.org/std/option/)
+
+### Expected Functions and structures
 
 ```rust
 pub struct WorkEnvironment {
     pub grade: Link,
 }
 
-pub type Link = 
+pub type Link =
 
 pub struct Worker {
     pub worker_type: String,
@@ -40,9 +46,11 @@ impl WorkEnvironment {
 
 ### Usage
 
-Here is a program to test your function
+Here is a program to test your function,
 
 ```rust
+use box_recursion::*;
+
 fn main() {
     let mut list = WorkEnvironment::new();
     list.add_worker(String::from("CEO"), String::from("Marie"));
@@ -70,10 +78,3 @@ Some(("Alice", "Normal Worker"))
 WorkEnvironment { grade: None }
 student@ubuntu:~/[[ROOT]]/test$
 ```
-
-### Notions
-
-- https://doc.rust-lang.org/rust-by-example/custom_types/enum.html
-- https://doc.rust-lang.org/book/ch15-01-box.html
-- https://doc.rust-lang.org/std/option/
-- https://doc.rust-lang.org/book/ch15-01-box.html
