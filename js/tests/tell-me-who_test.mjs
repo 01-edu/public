@@ -1,11 +1,8 @@
 import * as cp from 'child_process'
-import fs from 'fs/promises'
-import { join, resolve, isAbsolute } from 'path'
+import { mkdir, writeFile } from 'fs/promises'
+import { join, isAbsolute } from 'path'
 import { tmpdir } from 'os'
 import { promisify } from 'util'
-const mkdir = fs.mkdir
-const rmdir = fs.rmdir
-const writeFile = fs.writeFile
 
 const exec = promisify(cp.exec)
 
