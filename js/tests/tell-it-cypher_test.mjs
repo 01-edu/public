@@ -5,12 +5,7 @@ import { tmpdir } from 'os'
 import { promisify } from 'util'
 
 const exec = promisify(cp.exec)
-
 export const tests = []
-const ranStr = () =>
-  Math.random()
-    .toString(36)
-    .substring(7)
 
 export const setup = async ({ path }) => {
   const dir = `${tmpdir()}/tell-it-cypher`
@@ -51,13 +46,13 @@ tests.push(async ({ path, eq, ctx }) => {
   )
 })
 
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ randStr, eq, ctx }) => {
   const vips = `1. Wynn Kayla
   2. Hardy Gladys
   3. Rogers Laaibah
   4. Randolph Zishan
   5. Connolly Connor`
-  const fileName = `${ctx.tmpPath}/vip-${ranStr()}.txt`
+  const fileName = `${ctx.tmpPath}/vip-${randStr()}.txt`
   await writeFile(fileName, vips)
 
   const { data } = await ctx.run(`${fileName} encode mysecret.txt`)
@@ -68,9 +63,9 @@ tests.push(async ({ path, eq, ctx }) => {
   )
 })
 
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ randStr, eq, ctx }) => {
   const vipsEncoded = "MS4gVmlsbGFycmVhbCBFc2EKICAyLiBXeW5uIEtheWxhCiAgMy4gSGFyZHkgR2xhZHlzCiAgNC4gUm9nZXJzIExhYWliYWgKICA1LiBSYW5kb2xwaCBaaXNoYW4="
-  const fileName = `${ctx.tmpPath}/vip-encoded-${ranStr()}.txt`
+  const fileName = `${ctx.tmpPath}/vip-encoded-${randStr()}.txt`
   await writeFile(fileName, vipsEncoded)
 
   const { data } = await ctx.run(`${fileName} decode`)
@@ -84,9 +79,9 @@ tests.push(async ({ path, eq, ctx }) => {
   )
 })
 
-tests.push(async ({ path, eq, ctx }) => {
+tests.push(async ({ randStr, eq, ctx }) => {
   const vipsEncoded = "MS4gQmVybmFyZCBDaGFybWFpbmUKICAyLiBEb3duZXMgU29oYWlsCiAgMy4gR29tZXogUmFiaWEKICA0LiBCcmVubmFuIEJyZW5kYW4KICA1LiBBdGhlcnRvbiBTaGFubmVu"
-  const fileName = `${ctx.tmpPath}/vip-encoded-${ranStr()}.txt`
+  const fileName = `${ctx.tmpPath}/vip-encoded-${randStr()}.txt`
   await writeFile(fileName, vipsEncoded)
 
   const { data } = await ctx.run(`${fileName} decode pandora.txt`)

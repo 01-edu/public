@@ -2,12 +2,7 @@ import { promisify } from 'util'
 import * as cp from 'child_process'
 
 const exec = promisify(cp.exec)
-
 export const tests = []
-const randomLetters = (number) =>
-  Math.random()
-    .toString(36)
-    .substring(0, number)
 
 tests.push(async ({ path, eq }) => {
   const { stdout } = await exec(`node ${path} discovery`)
@@ -29,25 +24,25 @@ tests.push(async ({ path, eq }) => {
   return eq(stdout.trim(), "deNo si omeawes")
 })
 
-tests.push(async ({ path, eq }) => {
-  const tic = randomLetters(7)
-  const tac = randomLetters(7)
+tests.push(async ({ path, eq, randStr }) => {
+  const tic = randStr(7)
+  const tac = randStr(7)
   const { stdout } = await exec(`node ${path} "${tic}${tac}"`)
   return eq(stdout.trim(), `${tac}${tic}`)
 })
 
-tests.push(async ({ path, eq }) => {
-  const ying = randomLetters(8)
-  const yang = randomLetters(7)
+tests.push(async ({ path, eq, randStr }) => {
+  const ying = randStr(8)
+  const yang = randStr(7)
   const { stdout } = await exec(`node ${path} "${ying}${yang}"`)
   return eq(stdout.trim(), `${yang}${ying}`)
 })
 
-tests.push(async ({ path, eq }) => {
-  const tic = randomLetters(5)
-  const tac = randomLetters(5)
-  const ying = randomLetters(3)
-  const yang = randomLetters(2)
+tests.push(async ({ path, eq, randStr }) => {
+  const tic = randStr(5)
+  const tac = randStr(5)
+  const ying = randStr(3)
+  const yang = randStr(2)
   const { stdout } = await exec(`node ${path} "${tic}${tac} ${ying}${yang}"`)
   return eq(stdout.trim(), `${tac}${tic} ${yang}${ying}`)
 })

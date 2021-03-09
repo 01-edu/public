@@ -5,13 +5,7 @@ import { tmpdir } from 'os'
 import { promisify } from 'util'
 
 const exec = promisify(cp.exec)
-
 export const tests = []
-const ranStr = () =>
-  Math.random()
-    .toString(36)
-    .substring(7)
-
 
 export const setup = async ({ path }) => {
   const dir = `${tmpdir()}/tell-me-who`
@@ -34,8 +28,8 @@ export const setup = async ({ path }) => {
   return { tmpPath: dir, run, createFilesIn }
 }
 
-tests.push(async ({ path, eq, ctx }) => {
-  const random = ranStr()
+tests.push(async ({ eq, ctx, randStr }) => {
+  const random = randStr()
   const fileNames = [
     'Ubaid_Ballard.json',
     'Victoria_Chan.json',
@@ -43,7 +37,7 @@ tests.push(async ({ path, eq, ctx }) => {
     'Heath_Denton.json',
     `${random}_Hamilton.json`,
   ]
-  const folderName = `them-${ranStr()}`
+  const folderName = `them-${randStr()}`
   const folderPath = join(ctx.tmpPath, folderName)
   await mkdir(folderPath)
   await ctx.createFilesIn({ folderPath, fileNames })
