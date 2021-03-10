@@ -2,12 +2,18 @@
 
 ### Instructions
 
-Using closures and iterators create a function, `first_fifty_even_square` that returns the first 50
+Using closures and iterators create a **function**, `first_fifty_even_square` that returns the first 50 even numbers squared.
+in a `Vec<i32>`.
+
+### Notions
+
+[Iterators and Closures](https://doc.rust-lang.org/book/ch13-00-functional-features.html)
 
 ### Expected Functions
 
 ```rust
 fn first_fifty_even_square() -> Vec<i32> {
+
 }
 ```
 
@@ -16,6 +22,8 @@ fn first_fifty_even_square() -> Vec<i32> {
 Here is a program to test your function.
 
 ```rust
+use closures::*;
+
 fn main() {
 	println!("Hello, world!");
 	let v1 = first_fifty_even_square();
@@ -24,7 +32,7 @@ fn main() {
 }
 ```
 
-And its output
+And its output:
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run

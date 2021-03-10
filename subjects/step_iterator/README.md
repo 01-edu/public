@@ -2,13 +2,13 @@
 
 ### Instructions
 
-- Create an Iterator (by implementing the `std::iter::Iterator` trait) that iterates through the values from `beg` to `end` (including end) in the indicated `steps`.
+- Create an `Iterator` (by implementing the `std::iter::Iterator` trait) that iterates through the values from `beg` to `end` (including end) in the indicated `steps`.
 
-  - The name of you're iterator will be `StepIterator` and it must be generic so you can use any integer value: i8,..,i64, u8,..,u64 or floating point number f32,..,f64
+  - The name of your iterator will be `StepIterator` and it must be generic so you can use any integer value: i8,..,i64, u8,..,u64 or floating point number f32,..,f64
 
-  - If the steps don't allow to arrive until the end of the sequence only the last value inferior to the end of the series will be returned (See Usage)
+  - If the steps do not allow to attain the end of the sequence, only the last value inferior to the end of the series will be returned (See Usage)
 
-- Define the associated function: `new` that creates a new Step iterator:
+- Define the associated function: `new` which creates a new Step iterator:
 
 ### Expected Functions and Structures
 
@@ -32,6 +32,8 @@ impl std::iter::Iterator for StepIterator<T> {
 Here is a program to test your function.
 
 ```rust
+use step_iterator::*;
+
 fn main() {
 	for v in StepIterator::new(0, 100, 10) {
 		print!("{},", v);
@@ -45,7 +47,7 @@ fn main() {
 }
 ```
 
-And its output
+And its output:
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run

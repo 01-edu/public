@@ -2,21 +2,23 @@
 
 ### Instructions
 
-In this exercise you will have to reuse your `add_curry` function
-Then you have to complete the function `twice` using closures, this function will
-take a function f(x) as parameter and return a function f(f(x))
+In this exercise you will have to reuse your `add_curry` function (copy and paste it directly in your lib.rs file).
+Then you have to create the function `twice` using closures, this function will
+take a function f(x) as parameter and return a function f(f(x)).
 So, the purpose of this function is to add two times the value in `add_curry` to the original value.
 
 ### Notions
 
-- https://doc.rust-lang.org/rust-by-example/fn/hof.html#higher-order-functions
+- [higher order function](https://doc.rust-lang.org/rust-by-example/fn/hof.html#higher-order-functions)
 
 ### Expected functions
 
-The type of the arguments are missing use the example `main` function to determine the correct type.
+The type of the arguments are missing. Use the example `main` function to determine the correct type.
 
 ```rust
-pub fn twice<T>(F: _) -> _{}
+pub fn twice<T>(F: _) -> _{
+
+}
 ```
 
 ### Usage
@@ -24,7 +26,7 @@ pub fn twice<T>(F: _) -> _{}
 Here is a program to test your function.
 
 ```rust
-use adding_twice::adding_twice;
+use adding_twice::*;
 
 fn main() {
     let add10 = add_curry(10);
