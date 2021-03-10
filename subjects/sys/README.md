@@ -10,11 +10,11 @@
 | ------------- | ------------------------------------------------------------------------------------------------------------------ | ---------------------- | --------------- |
 | `linux`       | Introduction and VirtualBox installation/basic usage.                                                              | OS, virtualization     | subject + audit |
 | `login`       | Connect to console (using different virtual terminals), basic commands and usage of the console.                   | OS                     | subject         |
-| `update-vm`   | Fetch, update and use our training virtual machine (introduction to snapshots and cloning).                        | virtualization         | script          |
-| `connect`     | Fix a conflict of IP address, configure DHCP & static IP address.                                                  | OS, network            |                 |
-| `remote`      | Remotely connect to a pseudo-terminal (configure firewall, change SSH port and listening address).                 | OS, network, security  | WIP             |
-| `upgrade`     | Free disk space (caches, logs & temporary files) to upgrade the OS.                                                | OS                     |                 |
-| `scan`        | Discover machines and services (scan ARP, `nmap`), brute-force portals.                                            | OS, network, security  | WIP             |
+| `add-vm`      | Download and add our training virtual machines (introduction to snapshots).                                        | virtualization         | VM, subject     |
+| `connect`     | Fix a conflict of IP address, configure DHCP & static IP address.                                                  | OS, network            | VM, subject     |
+| `remote`      | Remotely connect to a pseudo-terminal (configure firewall, change SSH port and listening address).                 | OS, network, security  | VM, subject     |
+| `scan`        | Discover machines and services (scan ARP, `nmap`), brute-force portals.                                            | OS, network, security  | VM, subject     |
+| `upgrade`     | Free disk space (caches, logs & temporary files) to upgrade the OS.                                                | OS                     | WIP             |
 | `reboot`      | Learn how to recognize a blocked system and reboot it (hard reset, magic SysRq key).                               | OS                     |                 |
 | `ram`         | Fix a program being OOM (enlarge swap and system memory, compare performance).                                     | OS, virtualization     |                 |
 | `benchmark`   | Learn how to benchmark a program                                                                                   | OS, disk               | WIP             |
