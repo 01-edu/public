@@ -3,17 +3,19 @@
 ### Instructions
 
 Create a `verydisco.mjs` script that :
-- takes 1 argument from the command line
+
+- takes the 1st argument from the command line (after the program name)
 - makes it very disco:
-  - cut this argument in 2 (rounded up),
+  - cut each word from this argument in 2 (rounded up),
   - re-compose a word by concatenating the chunks in the other order
 - display the result in console
 
-If the argument passed is a sentence, each word of the sentence must be very disco.
+If the argument passed is a sentence, each word of the sentence must be "very disco".
 
 For example:
+
 - `discovery` would print `verydisco` (🕺🏼) in console.
-- `Node is awesome` would print `deNo si omeawes` in console.
+- `Node is awesome` would print `deNo si omeawes` in the console.
 
 ### Notions
 
