@@ -43,4 +43,6 @@ If you forgot to do so and want to make a fresh start, you can always delete the
 
 ### Check
 
-Since all VMs are based on this one, check that it is working properly by starting and stopping it gracefully.
+Since all VMs are based on this one, check that it is working properly by starting and stopping it gracefully (`poweroff` or ACPI shutdown).
+
+The password is a single space.
