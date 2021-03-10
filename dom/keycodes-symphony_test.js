@@ -46,7 +46,7 @@ tests.push(async ({ page, eq }) => {
   }
 
   const getNotesBg = await page.$$eval('.note', (nodes) => {
-    return nodes.map((note) => note.style.background)
+    return nodes.map((note) => note.style.backgroundColor)
   })
 
   const colors = [...new Set(getNotesBg)]
