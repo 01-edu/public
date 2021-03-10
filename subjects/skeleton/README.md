@@ -1,3 +1,5 @@
+## Skeleton
+
 ### Welcome
 
 Welcome to the `world-wide-what` quest!

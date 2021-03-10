@@ -1,4 +1,6 @@
-### Baby shower
+## Baby shower
+
+### Instructions
 
 It's time to celebrate the arrival of your creation in this world ; let's organize a baby shower!
 

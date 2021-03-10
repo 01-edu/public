@@ -1,3 +1,5 @@
+## Select & style
+
 ### Instructions
 
 Now that you created & identified properly the different sections of your being,
