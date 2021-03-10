@@ -14,7 +14,10 @@ Write the function `explore` which creates a page displaying the list of `places
   - using the corresponding `color` as text color
   - updates the `name`, `coordinates` and `color` on scroll, when the top of the next image reaches the middle of the screen height
   - has the `href` attribute set to open **a new tab** redirecting to a Google Maps' URL with the coordinates of the place currently displayed
-- display a compass indicating the latitude direction ; `N` for North if the user is scrolling up, `S` for South if he's scrolling down
+- display a compass as a `div` tag indicating the latitude direction which:
+  - has the class `direction`
+  - displays `N` for North if the user is scrolling up
+  - displays `S` for South if he's scrolling down
 
 ### Notions
 
