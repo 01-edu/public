@@ -29,10 +29,11 @@ const props = [String,Array]
   .filter(p => typeof p.value === 'function')
 
 const eq = (a, b) => {
-  const changed = props.filter(p => !p.src[p.key])
-  changed.forEach(p => p.src[p.key] = p.value)
+  const changed = []
+  for (const p of props) { !p.src[p.key] && (changed[changed.length] = p) }
+  for (const p of changed) { p.src[p.key] = p.value }
   deepStrictEqual(a, b)
-  changed.forEach(p => p.src[p.key] = undefined)
+  for (const p of changed) { p.src[p.key] = undefined }
   return true
 }
 
@@ -62,7 +63,7 @@ const readTest = filename =>
   }))
 
 const stackFmt = (err, url) => {
-  props.forEach(p => p.src[p.key] = p.value)
+  for (const p of props) { p.src[p.key] = p.value }
   if (err instanceof Error) return err.stack.split(url).join(`${name}.js`)
   throw Error(`Unexpected type thrown: ${typeof err}. usage: throw Error('my message')`)  
 }
