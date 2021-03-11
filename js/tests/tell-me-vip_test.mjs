@@ -58,8 +58,8 @@ tests.push(async ({ randStr, eq, ctx }) => {
   return eq('', data)
 })
 
-tests.push(async ({ randStr, eq, ctx }) => {
-  const random = randStr()
+tests.push(async ({ randStr, eq, ctx, upperFirst }) => {
+  const random = upperFirst(randStr())
   const files = [
     ['Ubaid_Ballard.json', { answer: 'yes' }],
     ['Victoria_Chan.json', { answer: 'yes' }],

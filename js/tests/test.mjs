@@ -96,8 +96,9 @@ const runTests = async ({ url, path, code }) => {
     max || (max = min, min = 0)
     return Math.floor(Math.random() * (max - min) + min)
   }
+  const upperFirst = (str) => str[0].toUpperCase() + str.slice(1)
 
-  const tools = { eq, fail, wait, code, path, randStr, between }
+  const tools = { eq, fail, wait, code, path, randStr, between, upperFirst }
   tools.ctx = (await (setup && setup(tools))) || {}
   for (const [i, t] of tests.entries()) {
     try {

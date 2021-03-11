@@ -28,8 +28,8 @@ export const setup = async ({ path }) => {
   return { tmpPath: dir, run, createFilesIn }
 }
 
-tests.push(async ({ eq, ctx, randStr }) => {
-  const random = randStr()
+tests.push(async ({ eq, ctx, randStr, upperFirst }) => {
+  const random = upperFirst(randStr())
   const fileNames = [
     'Ubaid_Ballard.json',
     'Victoria_Chan.json',
