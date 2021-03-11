@@ -22,9 +22,8 @@ export const setup = async ({ path }) => {
   const run = async cmd => {
     const cmdPath = isAbsolute(cmd) ? cmd : join(dir, cmd)
     const { stdout } = await exec(`node ${path} ${cmdPath}`)
-    const fileContent = await readFile(`vip.txt`, 'utf8').catch(err =>
-      err.code === 'ENOENT' ? 'output file not found' : err,
-    )
+    const fileContent = await readFile(`vip.txt`, 'utf8')
+
     return { data: fileContent }
   }
 
