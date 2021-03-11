@@ -20,9 +20,8 @@ export const setup = async ({ path }) => {
     )
     const newFileName =
       newFile || (keyword === 'encode' ? 'cypher.txt' : 'clear.txt')
-    const fileContent = await readFile(newFileName, 'utf8').catch((err) =>
-      err.code === 'ENOENT' ? 'output file not found' : err,
-    )
+    const fileContent = await readFile(newFileName, 'utf8')
+
     return { data: fileContent }
   }
 
