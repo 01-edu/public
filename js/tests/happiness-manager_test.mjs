@@ -11,13 +11,14 @@ export const setup = async ({ path }) => {
 
   await mkdir(tmpPath)
   await mkdir(`${tmpPath}/guests`)
-  const run = async (folder, file) => {
+  const run = async (dir, file) => {
     const output = await exec(
-      `node ${path} ${tmpPath}/${folder} ${tmpPath}/${file}`,
+      `node ${path} ${tmpPath}/${dir} ${tmpPath}/${file}`,
     )
-    const fileContent = await readFile(`${tmpPath}/${file}`, 'utf8').catch(
-      (err) => (err.code === 'ENOENT' ? 'output file not found' : err),
-    )
+    const fileContent = await readFile(
+      `${tmpPath}/${file}`,
+      'utf8',
+    ).catch(err => (err.code === 'ENOENT' ? 'output file not found' : err))
 
     return {
       data:
@@ -27,18 +28,18 @@ export const setup = async ({ path }) => {
       stdout: output.stdout.trim(),
     }
   }
-  const resetAnswersIn = async ({ folder }) => {
-    const dir = await readdir(`${tmpPath}/${folder}`)
-    await Promise.all(dir.map((file) => rm(`${tmpPath}/${folder}/${file}`)))
+  const resetAnswersIn = async ({ dir }) => {
+    const dir = await readdir(`${tmpPath}/${dir}`)
+    await Promise.all(dir.map(file => rm(`${tmpPath}/${dir}/${file}`)))
   }
   const createAnswers = (nb, elem) => [...Array(nb).keys()].map(() => elem)
-  const setAnswersIn = async ({ answers, folder }) => {
-    await resetAnswersIn({ folder })
+  const setAnswersIn = async ({ answers, dir }) => {
+    await resetAnswersIn({ dir })
     await Promise.all(
       answers.map(
         async (content, idx) =>
           await writeFile(
-            `${tmpPath}/${folder}/${idx}.json`,
+            `${tmpPath}/${dir}/${idx}.json`,
             JSON.stringify(content, null, '\t'),
             'utf8',
           ),
@@ -53,7 +54,7 @@ tests.push(async ({ eq, ctx }) => {
   // test with no vips (no {answer: yes})
   // no file should be created, a special message should appear in console
   const answers = ctx.createAnswers(2, { answer: 'no' })
-  await ctx.setAnswersIn({ folder: 'guests', answers })
+  await ctx.setAnswersIn({ dir: 'guests', answers })
 
   const { stdout, data } = await ctx.run('guests', 'happy-list.json')
   return eq(
@@ -66,7 +67,7 @@ tests.push(async ({ eq, ctx }) => {
   // test when vips answer { food: 'carnivores' }
   // should create a list with burgers and potatoes
   const answers = ctx.createAnswers(2, { answer: 'yes', food: 'carnivore' })
-  await ctx.setAnswersIn({ folder: 'guests', answers })
+  await ctx.setAnswersIn({ dir: 'guests', answers })
 
   const { data } = await ctx.run('guests', 'happy-carn-list.json')
   return eq(data, { burgers: 2, potatoes: 2 })
@@ -79,7 +80,7 @@ tests.push(async ({ eq, ctx }) => {
     { answer: 'no', food: 'fish' },
     ...ctx.createAnswers(3, { answer: 'yes', food: 'fish' }),
   ]
-  await ctx.setAnswersIn({ folder: 'guests', answers })
+  await ctx.setAnswersIn({ dir: 'guests', answers })
 
   const { data } = await ctx.run('guests', 'happy-fish-list.json')
   return eq(data, { potatoes: 3, sardines: 3 })
@@ -92,7 +93,7 @@ tests.push(async ({ eq, ctx }) => {
     { answer: 'no', food: 'everything' },
     ...ctx.createAnswers(3, { answer: 'yes', food: 'everything' }),
   ]
-  await ctx.setAnswersIn({ folder: 'guests', answers })
+  await ctx.setAnswersIn({ dir: 'guests', answers })
 
   const { data } = await ctx.run('guests', 'happy-omni-list.json')
   return eq(data, { potatoes: 3, kebabs: 3 })
@@ -105,7 +106,7 @@ tests.push(async ({ eq, ctx }) => {
     { answer: 'no', drink: 'beer' },
     ...ctx.createAnswers(1, { answer: 'yes', drink: 'beer' }),
   ]
-  await ctx.setAnswersIn({ folder: 'guests', answers })
+  await ctx.setAnswersIn({ dir: 'guests', answers })
 
   const { data } = await ctx.run('guests', 'happy-beer-list.json')
   return eq(data, { potatoes: 1, '6-packs-beers': 1 })
@@ -118,7 +119,7 @@ tests.push(async ({ eq, ctx }) => {
     { answer: 'no', drink: 'beer' },
     ...ctx.createAnswers(6, { answer: 'yes', drink: 'beer' }),
   ]
-  await ctx.setAnswersIn({ folder: 'guests', answers })
+  await ctx.setAnswersIn({ dir: 'guests', answers })
 
   const { data } = await ctx.run('guests', 'happy-beer-pack-list.json')
   return eq(data, { potatoes: 6, '6-packs-beers': 1 })
@@ -131,7 +132,7 @@ tests.push(async ({ eq, ctx }) => {
     ...ctx.createAnswers(3, { answer: 'no', drink: 'wine' }),
     ...ctx.createAnswers(5, { answer: 'yes', drink: 'wine' }),
   ]
-  await ctx.setAnswersIn({ folder: 'guests', answers })
+  await ctx.setAnswersIn({ dir: 'guests', answers })
 
   const { data } = await ctx.run('guests', 'happy-wine-list.json')
   return eq(data, { potatoes: 5, 'wine-bottles': 2 })
@@ -141,7 +142,7 @@ tests.push(async ({ eq, ctx }) => {
   // test when vips answer { drink: 'wine' }
   // should create a list with wine-bottles and potatoes
   const answers = ctx.createAnswers(8, { answer: 'yes', drink: 'wine' })
-  await ctx.setAnswersIn({ folder: 'guests', answers })
+  await ctx.setAnswersIn({ dir: 'guests', answers })
 
   const { data } = await ctx.run('guests', 'happy-wine-bottle-list.json')
   return eq(data, { potatoes: 8, 'wine-bottles': 2 })
@@ -154,7 +155,7 @@ tests.push(async ({ eq, ctx }) => {
     ...ctx.createAnswers(2, { answer: 'no', drink: 'water' }),
     ...ctx.createAnswers(2, { answer: 'yes', drink: 'water' }),
   ]
-  await ctx.setAnswersIn({ folder: 'guests', answers })
+  await ctx.setAnswersIn({ dir: 'guests', answers })
 
   const { data } = await ctx.run('guests', 'happy-water-list.json')
   return eq(data, { potatoes: 2, 'water-bottles': 1 })
@@ -164,7 +165,7 @@ tests.push(async ({ eq, ctx }) => {
   // test when vips answer { drink: 'water' }
   // should create a list with water-bottles and potatoes
   const answers = ctx.createAnswers(7, { answer: 'yes', drink: 'water' })
-  await ctx.setAnswersIn({ folder: 'guests', answers })
+  await ctx.setAnswersIn({ dir: 'guests', answers })
 
   const { data } = await ctx.run('guests', 'happy-water-bottle-list.json')
   return eq(data, { potatoes: 7, 'water-bottles': 2 })
@@ -177,7 +178,7 @@ tests.push(async ({ eq, ctx }) => {
     ...ctx.createAnswers(8, { answer: 'no', drink: 'soft' }),
     ...ctx.createAnswers(12, { answer: 'yes', drink: 'soft' }),
   ]
-  await ctx.setAnswersIn({ folder: 'guests', answers })
+  await ctx.setAnswersIn({ dir: 'guests', answers })
 
   const { data } = await ctx.run('guests', 'happy-soft-list.json')
   return eq(data, { potatoes: 12, 'soft-bottles': 3 })
@@ -187,7 +188,7 @@ tests.push(async ({ eq, ctx }) => {
   // test when vips answer { drink: 'soft' }
   // should create a list with soft-bottles and potatoes
   const answers = ctx.createAnswers(13, { answer: 'yes', drink: 'soft' })
-  await ctx.setAnswersIn({ folder: 'guests', answers })
+  await ctx.setAnswersIn({ dir: 'guests', answers })
 
   const { data } = await ctx.run('guests', 'happy-soft-bottle-list.json')
   return eq(data, { potatoes: 13, 'soft-bottles': 4 })
@@ -202,7 +203,7 @@ tests.push(async ({ eq, ctx }) => {
     ...ctx.createAnswers(2, { answer: 'no', food: 'vegan' }),
     ...ctx.createAnswers(4, { answer: 'yes', food: 'vegan' }),
   ]
-  await ctx.setAnswersIn({ folder: 'guests', answers })
+  await ctx.setAnswersIn({ dir: 'guests', answers })
 
   const { data } = await ctx.run('guests', 'happy-vegan-list.json')
   return eq(data, {
@@ -218,7 +219,7 @@ tests.push(async ({ eq, ctx }) => {
   // test when vips answer { food: 'vegan' }
   // should create a list with eggplants, mushrooms, hummus, courgettes and potatoes
   const answers = ctx.createAnswers(6, { answer: 'yes', food: 'vegan' })
-  await ctx.setAnswersIn({ folder: 'guests', answers })
+  await ctx.setAnswersIn({ dir: 'guests', answers })
 
   const { data } = await ctx.run('guests', 'happy-vegan-list.json')
   return eq(data, {
@@ -238,7 +239,7 @@ tests.push(async ({ eq, ctx }) => {
     ...ctx.createAnswers(2, { answer: 'no', food: 'veggie' }),
     ...ctx.createAnswers(4, { answer: 'yes', food: 'veggie' }),
   ]
-  await ctx.setAnswersIn({ folder: 'guests', answers })
+  await ctx.setAnswersIn({ dir: 'guests', answers })
 
   const { data } = await ctx.run('guests', 'happy-veggie-list.json')
   return eq(data, {
@@ -254,7 +255,7 @@ tests.push(async ({ eq, ctx }) => {
   // test when vips answer { food: 'veggie' }
   // should create a list with eggplants, mushrooms, hummus, courgettes and potatoes
   const answers = ctx.createAnswers(6, { answer: 'yes', food: 'veggie' })
-  await ctx.setAnswersIn({ folder: 'guests', answers })
+  await ctx.setAnswersIn({ dir: 'guests', answers })
 
   const { data } = await ctx.run('guests', 'happy-veggie-list.json')
   return eq(data, {
@@ -274,7 +275,7 @@ tests.push(async ({ eq, ctx }) => {
     ...ctx.createAnswers(4, { answer: 'yes', food: 'vegan' }),
     ...ctx.createAnswers(2, { answer: 'yes', food: 'veggie' }),
   ]
-  await ctx.setAnswersIn({ folder: 'guests', answers })
+  await ctx.setAnswersIn({ dir: 'guests', answers })
 
   const { data } = await ctx.run('guests', 'happy-vegg-list.json')
   return eq(data, {
@@ -293,7 +294,7 @@ tests.push(async ({ eq, ctx }) => {
     ...ctx.createAnswers(6, { answer: 'yes', food: 'vegan' }),
     ...ctx.createAnswers(1, { answer: 'yes', food: 'veggie' }),
   ]
-  await ctx.setAnswersIn({ folder: 'guests', answers })
+  await ctx.setAnswersIn({ dir: 'guests', answers })
 
   const { data } = await ctx.run('guests', 'happy-vegg-list.json')
   return eq(data, {
@@ -314,7 +315,7 @@ tests.push(async ({ eq, ctx }) => {
     JSON.stringify({ candies: 2000 }),
   )
   const answers = ctx.createAnswers(1, { answer: 'yes', food: 'vegan' })
-  await ctx.setAnswersIn({ folder: 'guests', answers })
+  await ctx.setAnswersIn({ dir: 'guests', answers })
 
   const { data } = await ctx.run('guests', 'old-happy-list.json')
   return eq(data, {
@@ -335,7 +336,7 @@ tests.push(async ({ eq, ctx }) => {
     JSON.stringify({ candies: 2000, potatoes: 32 }),
   )
   const answers = ctx.createAnswers(1, { answer: 'yes', food: 'vegan' })
-  await ctx.setAnswersIn({ folder: 'guests', answers })
+  await ctx.setAnswersIn({ dir: 'guests', answers })
 
   const { data } = await ctx.run('guests', 'old-happy-list.json')
   return eq(data, {
@@ -372,7 +373,7 @@ tests.push(async ({ eq, ctx }) => {
       drink: 'beer',
     }),
   ]
-  await ctx.setAnswersIn({ folder: 'guests', answers })
+  await ctx.setAnswersIn({ dir: 'guests', answers })
 
   const { data } = await ctx.run('guests', 'party.json')
   return eq(data, {
