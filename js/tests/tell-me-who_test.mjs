@@ -11,10 +11,10 @@ export const setup = async ({ path }) => {
   const dir = `${tmpdir()}/tell-me-who`
   await mkdir(dir)
 
-  const createFilesIn = async ({ fileNames, folderPath }) =>
+  const createFilesIn = async ({ fileNames, dirPath }) =>
     await Promise.all(
       fileNames.map(
-        async (fileName) => await writeFile(`${folderPath}/${fileName}`, ''),
+        async (fileName) => await writeFile(`${dirPath}/${fileName}`, ''),
       ),
     )
 
@@ -37,12 +37,12 @@ tests.push(async ({ eq, ctx, randStr }) => {
     'Heath_Denton.json',
     `${random}_Hamilton.json`,
   ]
-  const folderName = `them-${randStr()}`
-  const folderPath = join(ctx.tmpPath, folderName)
-  await mkdir(folderPath)
-  await ctx.createFilesIn({ folderPath, fileNames })
+  const dirName = `them-${randStr()}`
+  const dirPath = join(ctx.tmpPath, dirName)
+  await mkdir(dirPath)
+  await ctx.createFilesIn({ dirPath, fileNames })
 
-  const { stdout } = await ctx.run(folderName)
+  const { stdout } = await ctx.run(dirName)
   return eq(
     [
       `1. Ballard Ubaid`,
