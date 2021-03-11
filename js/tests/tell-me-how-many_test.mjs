@@ -7,7 +7,7 @@ import { promisify } from 'util'
 const exec = promisify(cp.exec)
 
 export const tests = []
-export const setup = async ({ path }) => {
+export const setup = async ({ path, between }) => {
   const randomFilesNumber = between(30, 6)
   const dir = `${tmpdir()}/tell-me-how-many`
 
