@@ -12,7 +12,7 @@ export const setup = async ({ path }) => {
 
   await mkdir(dir)
 
-  const run = async (cmd) => {
+  const run = async cmd => {
     const [filename, keyword, newFile] = cmd.split(' ')
     const filePath = isAbsolute(filename) ? filename : join(dir, filename)
     const { stdout } = await exec(
@@ -63,7 +63,8 @@ tests.push(async ({ randStr, eq, ctx }) => {
 })
 
 tests.push(async ({ randStr, eq, ctx }) => {
-  const vipsEncoded = "MS4gVmlsbGFycmVhbCBFc2EKICAyLiBXeW5uIEtheWxhCiAgMy4gSGFyZHkgR2xhZHlzCiAgNC4gUm9nZXJzIExhYWliYWgKICA1LiBSYW5kb2xwaCBaaXNoYW4="
+  const vipsEncoded =
+    'MS4gVmlsbGFycmVhbCBFc2EKICAyLiBXeW5uIEtheWxhCiAgMy4gSGFyZHkgR2xhZHlzCiAgNC4gUm9nZXJzIExhYWliYWgKICA1LiBSYW5kb2xwaCBaaXNoYW4='
   const fileName = `${ctx.tmpPath}/vip-encoded-${randStr()}.txt`
   await writeFile(fileName, vipsEncoded)
 
@@ -79,7 +80,8 @@ tests.push(async ({ randStr, eq, ctx }) => {
 })
 
 tests.push(async ({ randStr, eq, ctx }) => {
-  const vipsEncoded = "MS4gQmVybmFyZCBDaGFybWFpbmUKICAyLiBEb3duZXMgU29oYWlsCiAgMy4gR29tZXogUmFiaWEKICA0LiBCcmVubmFuIEJyZW5kYW4KICA1LiBBdGhlcnRvbiBTaGFubmVu"
+  const vipsEncoded =
+    'MS4gQmVybmFyZCBDaGFybWFpbmUKICAyLiBEb3duZXMgU29oYWlsCiAgMy4gR29tZXogUmFiaWEKICA0LiBCcmVubmFuIEJyZW5kYW4KICA1LiBBdGhlcnRvbiBTaGFubmVu'
   const fileName = `${ctx.tmpPath}/vip-encoded-${randStr()}.txt`
   await writeFile(fileName, vipsEncoded)
 
