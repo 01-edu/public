@@ -12,10 +12,10 @@ export const setup = async ({ path }) => {
 
   await mkdir(`${dir}/guests`, { recursive: true })
 
-  const createFilesIn = ({ files, folderPath }) =>
+  const createFilesIn = ({ files, dirPath }) =>
     Promise.all(
       files.map(([fileName, content]) =>
-        writeFile(`${folderPath}/${fileName}`, JSON.stringify(content)),
+        writeFile(`${dirPath}/${fileName}`, JSON.stringify(content)),
       ),
     )
 
@@ -31,12 +31,12 @@ export const setup = async ({ path }) => {
 }
 
 tests.push(async ({ randStr, eq, ctx }) => {
-  // test when no answers in the folder
-  const folderName = `guests-${randStr()}`
-  const folderPath = join(ctx.tmpPath, folderName)
-  await mkdir(folderPath)
+  // test when no answers in the dir
+  const dirName = `guests-${randStr()}`
+  const dirPath = join(ctx.tmpPath, dirName)
+  await mkdir(dirPath)
 
-  const { data } = await ctx.run(folderName)
+  const { data } = await ctx.run(dirName)
   return eq('', data)
 })
 
@@ -49,12 +49,12 @@ tests.push(async ({ randStr, eq, ctx }) => {
     ['Heath_Denton.json', { answer: 'no' }],
     ['Lilith_Hamilton.json', { answer: 'no' }],
   ]
-  const folderName = `guests-${randStr()}`
-  const folderPath = join(ctx.tmpPath, folderName)
-  await mkdir(folderPath)
-  await ctx.createFilesIn({ folderPath, files })
+  const dirName = `guests-${randStr()}`
+  const dirPath = join(ctx.tmpPath, dirName)
+  await mkdir(dirPath)
+  await ctx.createFilesIn({ dirPath, files })
 
-  const { data } = await ctx.run(folderName)
+  const { data } = await ctx.run(dirName)
   return eq('', data)
 })
 
@@ -68,12 +68,12 @@ tests.push(async ({ randStr, eq, ctx }) => {
     ['Lilith_Hamilton.json', { answer: 'yes' }],
     [`${random}_Random.json`, { answer: 'yes' }],
   ]
-  const folderName = `guests-${randStr()}`
-  const folderPath = join(ctx.tmpPath, folderName)
-  await mkdir(folderPath)
-  await ctx.createFilesIn({ folderPath, files })
+  const dirName = `guests-${randStr()}`
+  const dirPath = join(ctx.tmpPath, dirName)
+  await mkdir(dirPath)
+  await ctx.createFilesIn({ dirPath, files })
 
-  const { data } = await ctx.run(folderName)
+  const { data } = await ctx.run(dirName)
   return eq(
     [
       `1. Ballard Ubaid`,

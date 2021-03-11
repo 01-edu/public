@@ -14,7 +14,7 @@ who wants to eat what and integrate that in your barbecue's shopping list!
 
 The script must:
 
-- Take a folder as first argument (the `guest` folder)
+- Take a directory as first argument (the `guest` directory)
 - Take a file `.json` as second argument:
   - If the file already exists, it will add the informations to it.
   - If it doesn't, the script must handle the creation of the file.

@@ -19,31 +19,31 @@ export const setup = async ({ path }) => {
 
     return { stdout: stdout.trim() }
   }
-  const createXFilesIn = async ({ numberOfFiles, folderPath }) => {
+  const createXFilesIn = async ({ numberOfFiles, dirPath }) => {
     for (let i = 0; i < numberOfFiles; i++) {
-      await writeFile(`${folderPath}/${i}.txt`, '', 'utf8')
+      await writeFile(`${dirPath}/${i}.txt`, '', 'utf8')
     }
   }
-  await createXFilesIn({ numberOfFiles: randomFilesNumber, folderPath: dir })
+  await createXFilesIn({ numberOfFiles: randomFilesNumber, dirPath: dir })
 
   return { randomFilesNumber, tmpPath: dir, run, createXFilesIn }
 }
 
 tests.push(async ({ path, eq, ctx, between }) => {
   const numberOfFiles = between(5, 13)
-  const folderName = `tell-me-how-many-${numberOfFiles}`
-  const folderPath = join(ctx.tmpPath, `../${folderName}`)
-  await mkdir(folderPath)
-  await ctx.createXFilesIn({ folderPath, numberOfFiles })
+  const dirName = `tell-me-how-many-${numberOfFiles}`
+  const dirPath = join(ctx.tmpPath, `../${dirName}`)
+  await mkdir(dirPath)
+  await ctx.createXFilesIn({ dirPath, numberOfFiles })
 
-  const { stdout } = await ctx.run(`../${folderName}`)
+  const { stdout } = await ctx.run(`../${dirName}`)
   return eq(Number(stdout), numberOfFiles)
 })
 
 tests.push(async ({ path, eq, ctx }) => {
-  // will execute the script in a folder named `tell-me-how-many`
+  // will execute the script in a directory named `tell-me-how-many`
   // '../tell-me-how-many' in the argument passed
-  // `tell-me-how-many` folder has a random file number
+  // `tell-me-how-many` directory has a random file number
   const { stdout } = await ctx.run('../tell-me-how-many')
   return eq(Number(stdout), ctx.randomFilesNumber)
 })
@@ -55,7 +55,7 @@ tests.push(async ({ path, eq, ctx }) => {
 })
 
 tests.push(async ({ path, eq, ctx }) => {
-  // will execute the script with `tell-me-how-many` folder's absolute path as argument
+  // will execute the script with `tell-me-how-many` directory's absolute path as argument
   const { stdout } = await ctx.run(ctx.tmpPath)
   return eq(Number(stdout), ctx.randomFilesNumber)
 })
