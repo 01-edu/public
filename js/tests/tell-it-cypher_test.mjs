@@ -25,7 +25,7 @@ export const setup = async ({ path }) => {
     return { data: fileContent }
   }
 
-  return { tmpPath: dir, run, encoded, decoded }
+  return { tmpPath: dir, run }
 }
 
 tests.push(async ({ path, eq, ctx }) => {
