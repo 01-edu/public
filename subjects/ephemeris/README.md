@@ -1,5 +1,9 @@
 ## ephemeris
 
+### Video
+
+Check out [this little video](https://youtu.be/hnDVnKajqqU)!
+
 ### Instructions
 
 You are already feeling this change in yourself... You can now understand why people say that developers are lazy. You want to do more, but doing less. That's normal.
