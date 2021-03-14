@@ -29,8 +29,8 @@ export const setup = async ({ path }) => {
     }
   }
   const resetAnswersIn = async ({ dir }) => {
-    const dir = await readdir(`${tmpPath}/${dir}`)
-    await Promise.all(dir.map(file => rm(`${tmpPath}/${dir}/${file}`)))
+    const files = await readdir(`${tmpPath}/${dir}`)
+    await Promise.all(files.map(file => rm(`${tmpPath}/${dir}/${file}`)))
   }
   const createAnswers = (nb, elem) => [...Array(nb).keys()].map(() => elem)
   const setAnswersIn = async ({ answers, dir }) => {
