@@ -2,7 +2,7 @@
 
 ### Instructions
 
-By now you will have the knowledge of the so called rotational cipher "ROT13".
+In this exercise, if you do not know about it already, you will learn about the rotational cipher "ROT13".
 
 A ROT13 on the Latin alphabet would be as follows:
 
@@ -12,19 +12,21 @@ A ROT13 on the Latin alphabet would be as follows:
 
 Your purpose in this exercise is to create a similar `rotate` function that is a better version of the ROT13 cipher.
 
-Your function will receive a string and a number and it will rotate each letter of that string the number of times settled by the second argument to the right, or to the left if the number are negative.
+Your function will receive a `string` and a `number` and it will rotate each letter of that `string` by the `number` of times settled by the second argument towards the right, or towards the left if the number is negative.
 
-Your function should only change letters. If the string includes punctuation and numbers
+Your `function` should only rotate letters. If the string includes punctuation and numbers
 they will remain the same.
 
 ### Notions
 
-- https://doc.rust-lang.org/book/ch18-00-patterns.html
+- [patterns](https://doc.rust-lang.org/book/ch18-00-patterns.html)
 
 ### Expected functions
 
 ```rust
-pub fn rotate(input: &str, key: i8) -> String {}
+pub fn rotate(input: &str, key: i8) -> String {
+
+}
 ```
 
 ### Usage
@@ -32,7 +34,7 @@ pub fn rotate(input: &str, key: i8) -> String {}
 Here is a program to test your function.
 
 ```rust
-use rot::rot;
+use rot::*;
 
 fn main() {
 
@@ -58,7 +60,7 @@ fn main() {
 }
 ```
 
-And its output
+And its output:
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run
@@ -72,6 +74,5 @@ The decoded message is: Ryg aesmuvi nkpd tewzsxq jolbkc foh
 Your cypher wil be: Xiwxmrk amxl ryqfivw 1 2 3
 Your cypher wil be: Fqefuzs
 The letter "a" becomes: z
-
 student@ubuntu:~/[[ROOT]]/test$
 ```
