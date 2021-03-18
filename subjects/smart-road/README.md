@@ -5,8 +5,7 @@
 Do you remember the [`road_intersection`](https://public.01-edu.org/subjects/road_intersection/) raid done in the Rust Piscine? Well, you
 will have to create another traffic control strategy and its simulation. However, this time it will have to be done without traffic lights and with a smart intersection management strategy.
 
-Most of the time overused intersections might lead to serious traffic jams on multiple roads, which wastes drivers'time and money, and also causes unnecessary air pollution. Additionaly in the U.S. according to a study from the National Highway Traffic Safery administration, it is reported that about 96% of the intersection-related crashes had critical reasons
-to be the drivers fault, such as inadequate surveillance, false assumption of other actions, and turns with obstructed view.
+Most of the time overused intersections might lead to serious traffic jams on multiple roads, which wastes drivers'time and money, and also causes unnecessary air pollution. Additionally, according to a study from the National Highway Traffic Safety administration in the U.S., it is reported that about 96% of the intersection-related crashes had critical reasons to be the drivers fault, such as inadequate surveillance, false assumption of other actions, and turns with obstructed view.
 
 [Autonomous vehicles](https://en.wikipedia.org/wiki/Self-driving_car) (AVs) is a promising solution to traffic accidents. An optimistic prediction is that AVs will be publicly available in the next decade, and thus traffic issues related to autonomous vehicles are also being extensively investigated.
 
