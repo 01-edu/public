@@ -7,7 +7,7 @@ will have to create another traffic control strategy and its simulation. However
 
 Most of the time overused intersections might lead to serious traffic jams on multiple roads, which wastes drivers'time and money, and also causes unnecessary air pollution. Additionally, according to a study from the National Highway Traffic Safety administration in the U.S., it is reported that about 96% of the intersection-related crashes had critical reasons to be the drivers fault, such as inadequate surveillance, false assumption of other actions, and turns with obstructed view.
 
-[Autonomous vehicles](https://en.wikipedia.org/wiki/Self-driving_car) (AVs) is a promising solution to traffic accidents. An optimistic prediction is that AVs will be publicly available in the next decade, and thus traffic issues related to autonomous vehicles are also being extensively investigated.
+[Autonomous vehicles](https://en.wikipedia.org/wiki/Self-driving_car) (AVs) are a promising solution to traffic accidents. An optimistic prediction is that AVs will be publicly available in the next decade, and thus traffic issues related to autonomous vehicles are also being extensively investigated.
 
 Current intersection management strategies, such as the traditional traffic light and other more advanced methods are designed exclusively
 for human drivers. With the rapid development of AVs, new traffic strategies must be taken into account.\
@@ -63,16 +63,16 @@ intersection area can only be represented by the corresponding lane.
 =`-(_)--(_)-'
 ```
 
-As stated above you will be considering that all vehicles are autonomous (AVs) also known as self-driving cars.
+As stated above you will be considering that all vehicles are autonomous (AVs), also known as self-driving cars.
 You will have to implement the physics for this type of vehicles by taking into account the following rules :
 
 1. AVs driving on a lane with a **given route** must follow the direction of
-   that route, its not possible for the AVs to change lanes or route.
+   that route, it is not possible for the AVs to change lanes or route.
 
-2. An AVs must have at least 3 different velocities, therefore the **smart intersection system** can control the velocity of the vehicle.\
+2. AVs must have at least 3 different velocities, therefore the **smart intersection system** can control the velocity of the vehicle.\
    This will be the way of controlling the current velocity/time/distance (depending on the algorithm you implement) of the AVs.
 
-3. Each AVs must respect a safety distance from other AVs.\
+3. Each AV must respect a safety distance from other AVs.\
    If it is driving with a high velocity and encounters another vehicle, it must detect that vehicle and keep a safe distance from it. It should not collide!
    You are free to decide what is the safety distance but it must a strictly positive value.
 
@@ -80,9 +80,9 @@ You will have to implement the physics for this type of vehicles by taking into 
 
 5. You must implement physics for the vehicle, such as `velocity = distance / time`. Each vehicle must have a :
 
-- `time`, this will be the time that the AVs takes to leave the intersection
-- `distance`, this will be the distance that the AVs takes to leave the intersection
-- `velocity`, this will be the speed of the AVs at current time
+- `time`, this will be the time that the AV takes to leave the intersection
+- `distance`, this will be the distance that the AV takes to leave the intersection
+- `velocity`, this will be the speed of the AV at current time
 
 ---
 
@@ -135,9 +135,9 @@ The statistics must include:
 - Collisions if there was any
 - Max velocity of all vehicles (Display the fastest speed achieved)
 - Min velocity of all vehicles (Dislay the slowest speed reached)
-- Max time that took the vehicles to pass the intersection (for all vehicles, display the one that took more time)
+- Max time that the vehicles took to pass the intersection (for all vehicles, display the one that took more time)
   - The time starts to count whenever the vehicle is detected by the **smart intersection algorithm** until the end of the intersection, which is when the vehicle is removed from the canvas.
-- Min time that took the vehicles to pass the intersection (for all vehicles, display the one that took less time)
+- Min time that the vehicles took to pass the intersection (for all vehicles, display the one that took less time)
 - Close calls, this is when both vehicles pass each other with a violation of the safe distance.
 
 ---
