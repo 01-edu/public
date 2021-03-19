@@ -4,7 +4,7 @@
 
 A vector in linear algebra is defined as "anything that can be added and that can be multiplied by a scalar"
 
-And the associated function dot that calculates the dot product between two vectors
+Define the associated function `dot` that calculates the dot product between two vectors
 
 The dot product between two vectors of different length it's not defined
 
