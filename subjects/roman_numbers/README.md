@@ -1,11 +1,12 @@
 ## roman_numbers
 
 ### Instructions
-Implement the From<u32> Trait to create a roman number from a u32 the roman number should be in subtractive notation (the common way to write roman number I, II, III, IV, V, VI, VII, VIII, IX, X ...)
+
+Implement the `From<u32> Trait` to create a roman number from a `u32`. The roman number should be in subtractive notation (the common way to write roman number I, II, III, IV, V, VI, VII, VIII, IX, X ...)
 
 For this start by defining the digits as `RomanDigit` with the values I, V, X, L, C, D, M and Nulla for 0
 
-Next define RomanNumber as a wrapper to a vector of RomanDigit's And implement the Trait From<u32>
+Next define `RomanNumber` as a wrapper to a vector of RomanDigit's And implement the Trait `From<u32>`.
 
 ### Expected Functions and Data Structures
 
@@ -40,6 +41,7 @@ Here is a program to test your function.
 
 ```rust
 use roman_numbers::RomanNumber;
+
 fn main() {
 	println!("{:?}", RomanNumber::from(32));
 	println!("{:?}", RomanNumber::from(9));
@@ -48,7 +50,7 @@ fn main() {
 }
 ```
 
-And its output
+And its output:
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run

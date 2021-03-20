@@ -2,12 +2,13 @@
 
 ### Instructions
 
-In this exercise you will create a data model of blood types and an API to deal with blood types
+In this exercise you will create a data model of blood types and an API to deal with them.
 
 Start by copying the data representation of the blood types:
-- Create the enumerator `Antigen` that has 4 possibilities: A, B, O and AB And the enumerator `RhFactor` that has two possible values: Positive and Negative
 
-- After, copy the struct BloodType that contains two fields with the names antigen and rh_factor
+- Create the enum `Antigen` that has 4 possibilities: A, B, O and AB And the enum `RhFactor` that has two possible values: Positive and Negative
+
+- After, copy the struct `BloodType` that contains two fields with the names antigen and rh_factor
 
 - To provide a simple way to create blood types implement the trait FromStr for BloodType (which will allow us to use the `parse` method and the associated function from_str, so we can do:
 
@@ -85,6 +86,8 @@ impl BloodType {
 Here is a program to test your function.
 
 ```rust
+use blood_types::*;
+
 fn main() {
 	let blood_type: BloodType = "O+".parse().unwrap();
 	println!("recipients of O+ {:?}", blood_type.recipients());

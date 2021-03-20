@@ -1,8 +1,8 @@
-## commit_stats
+## commits_stats
 
 ### Instructions:
 
-In this exercise you will be provided with a json file `commits.json` with data corresponding to git commits in GitHub (extracted using the GitHub rest API), your job is to extract the relevant data and place it in a struct called `CommitData` to get the following information:
+In this exercise you will be provided with a json file `commits.json` with data corresponding to git commits in GitHub (extracted using the GitHub rest API). Your objective is to extract the relevant data and place it in a struct called `CommitData` to get the following information:
 
 1. Number of commits per author (identified by the GitHub login).
 
@@ -15,8 +15,8 @@ Create two functions:
 - `commits_per_date`: which returns a hash map with the number of commits per week.
 
   - Note: A week is represented by the a year followed by the number of the
-week for example January 1, 2020 is in week 1 of 2020 an will be
-represented by a String with the form "2020-W1".
+    week. For example, January 1, 2020 is in week 1 of 2020 and will be
+    represented by a String with the form "2020-W1".
 
 ### Notions:
 
@@ -38,7 +38,7 @@ pub fn commits_per_author(data: &json::JsonValue) -> HashMap<String, u32> {
 Here is a possible test for your function:
 
 ```rust
-use commit_stats::{commits_per_week, commits_per_author};
+use commits_stats::{commits_per_week, commits_per_author};
 
 fn main() {
 	let contents = fs::read_to_string("commits.json").unwrap();
