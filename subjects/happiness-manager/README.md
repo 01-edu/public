@@ -16,7 +16,7 @@ The script must:
 
 - Take a directory as first argument (the `guest` directory)
 - Take a file `.json` as second argument:
-  - If the file already exists, it will add the informations to it.
+  - If the file already exists, it will add the informations to it. If some elements already exist in the original file, it will be replaced by new values.
   - If it doesn't, the script must handle the creation of the file.
 - Handle case when no one answered yes to the invitation:
   - `No one is coming.` has to appear in console.
