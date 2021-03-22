@@ -43,6 +43,8 @@ Create a `personal-shopper.mjs` script that:
     - If the list is empty, this message should appear in console:
       `Empty list.`.
 
+If no keyword is passed as second argument, the helper should be printed in the console.
+
 #### Examples
 
 - `node personal-shopper.mjs shopping-list.json create` would create the file
