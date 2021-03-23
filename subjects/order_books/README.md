@@ -2,29 +2,31 @@
 
 ### Instructions
 
-Build a module called `library` with two sub-modules inside it:
+Build a module called `library` with two sub-modules inside of it:
 
-- `writers` which contains a structure called `Writer` that has a first_name (String), last_name (String) and a set of books (Vec\<Book\>).
-- `books` which contains a structure called `Book` that has a title (String) and a year of publish (u64).
+- `writers` which contains a structure called `Writer` which has a first_name (String),a last_name (String) and a set of books (Vec\<Book\>).
+- `books` which contains a structure called `Book` which has a title (String) and a year of publication (u64).
 
-You will also have to create (outside the previous modules) a function `order_books` that receives a writer (Writer) and orders the set of books alphabetically.
+A function `order_books` also has to be created (outside the previous modules which receives a writer (Writer) and orders the set of books alphabetically.
 
 ### Expected Functions and Structs
 
+#### (The structs declarations need to be filled and added in the appropriate submodules)
+
+```rs
+pub struct Writer {
+
+}
+```
+
+```rs
+pub struct Book {
+
+}
+```
+
 ```rs
 pub fn order_books(writer: &mut Writer) {
-
-}
-```
-
-```rs
-struct Writer {
-
-}
-```
-
-```rs
-struct Book {
 
 }
 ```
@@ -34,6 +36,9 @@ struct Book {
 Here is a program to test your function and structs:
 
 ```rs
+pub use library::writers::Writer;
+pub use library::books::Book;
+
 fn main() {
     let mut writer_a = Writer {
         first_name: "William".to_string(),

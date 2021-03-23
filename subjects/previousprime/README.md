@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a function that returns the first prime number that is equal or inferior to the `int` passed as parameter.
+Write a **function** which returns the first prime number which is equal or inferior to the `u64` passed as parameter.
 
-If there are no primes inferior to the `int` passed as parameter the function should return 0.
+If there are no primes inferior to the `u64` passed as parameter the function should return `0`.
 
 ### Expected function
 
