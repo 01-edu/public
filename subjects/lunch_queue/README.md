@@ -2,23 +2,27 @@
 
 ### Instructions
 
-You will have to create an API to organize a queue of people.
+An API will have to be created to organize a queue of people.
 
-Using the given code create the following functions:
+Using the given code declare the following functions:
 
-- `new` that will initialize the `Queue`.
-- `add` that receives the person's information, so it can be added to the `Queue`
-- `invert_queue` that invert the queue of persons
-- `rm`, that will remove the person that finished ordering their food.
-  The method for organizing the manipulation of a data structure should be a
-  FIFO (first in first out) process. This function should return a tuple wrapped in an `Option`
-  with the information of that person
-- `search`, that return a tuple with the information of a given person `id`.
+- `new` which will initialize the `Queue`
+- `add` which receives the person's information, so it can be added to the `Queue`
+- `invert_queue` which inverts the queue of persons
+- `rm`, which will remove the person who finished ordering their food.
+  The removal should respect a FIFO system (first in first out). This function should return a tuple wrapped in an `Option` with the information of the removed person (check the usage)
+- `search`, which returns a tuple with the information of a given person `id`
 
-You must also create a type called `Link` this will be the connection of the structures `Queue` and `Person`.
+You must also create a type called `Link`. This will be the connection of the structures `Queue` and `Person`.
 Do not forget that this will be a recursion type and it must point to `None` if there is no persons.
 
-### Expected Function
+### Notions
+
+- [enum](https://doc.rust-lang.org/rust-by-example/custom_types/enum.html)
+- [Box](https://doc.rust-lang.org/book/ch15-01-box.html)
+- [std::option](https://doc.rust-lang.org/std/option/)
+
+### Expected Function adn Structures
 
 ```rust
 pub struct Queue {
@@ -44,7 +48,7 @@ impl Queue {
 
 ### Usage
 
-Here is a program to test your function
+Here is a program to test your function:
 
 ```rust
 fn main() {
@@ -61,7 +65,8 @@ fn main() {
 
     println!("removed {:?}", list.rm());
     println!("list {:?}", list);
-    println!("invert {:?}", list.invert_queue());
+    list.invert_queue();
+    println!("invert {:?}", list);
 }
 ```
 
@@ -74,15 +79,7 @@ Some(("Marie", 20))
 Some(("Alice", 35))
 None
 removed Some(("Marie", 20))
-removed Some(("Monica", 15))
-list Queue { node: Some(Person { name: "Alice", discount: 35, next_person: Some(Person { name: "Ana", discount: 5, next_person: None }) }) }
-inverted list Queue { node: Some(Person { name: "Ana", discount: 5, next_person: Some(Person { name: "Alice", discount: 35, next_person: None }) }) }
+list Queue { node: Some(Person { name: "Alice", discount: 35, next_person: Some(Person { name: "Ana", discount: 5, next_person: Some(Person { name: "Monica", discount: 15, next_person: None }) }) }) }
+invert Queue { node: Some(Person { name: "Monica", discount: 15, next_person: Some(Person { name: "Ana", discount: 5, next_person: Some(Person { name: "Alice", discount: 35, next_person: None }) }) }) }
 student@ubuntu:~/[[ROOT]]/test$
 ```
-
-### Notions
-
-- https://doc.rust-lang.org/rust-by-example/custom_types/enum.html
-- https://doc.rust-lang.org/book/ch15-01-box.html
-- https://doc.rust-lang.org/std/option/
-- https://doc.rust-lang.org/book/ch15-01-box.html
