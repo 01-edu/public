@@ -14,10 +14,11 @@ The insertion sort algorithm:
 
 Here is a visual example of sorting a slice step by step using the insertion sort algorithm.
 
-![](Insertion-Sort-demo.jpg)
+![image.png](Insertion-Sort-demo.png)
+
 **Figure 1** - Step by step execution of the algorithm insertion sort
 
-- Implement the algorithm insertion sort by creating a function `insertion_sort(slice, steps)` that executes the iterations of the algorithm the number of steps indicated by the parameter `steps`. See the [Usage](#usage) for more information.
+- Implement the algorithm insertion sort by creating a function `insertion_sort(slice, steps)` that executes the iterations of the algorithm the number of steps indicated by the parameter `steps`. See the **Usage** for more information.
 
 ### Expected Function
 
@@ -32,17 +33,17 @@ Here is a possible program to test your function
 
 ```rust
 fn main() {
-	let mut target = [5, 3, 7, 2, 1, 6, 8, 4];
-	// executes the first iteration of the algorithm
-	insertion_sort(&mut target, 1);
-	println!("{:?}", target);
+    let mut target = [5, 3, 7, 2, 1, 6, 8, 4];
+    // executes the first iteration of the algorithm
+    insertion_sort(&mut target, 1);
+    println!("{:?}", target);
 
-	let mut target = [5, 3, 7, 2, 1, 6, 8, 4];
-	let len = target.len();
-	// executes len - 1 iterations of the algorithm
-	// i.e. sorts the slice
-	insertion_sort(&mut target, len - 1);
-	println!("{:?}", target);
+    let mut target = [5, 3, 7, 2, 1, 6, 8, 4];
+    let len = target.len();
+    // executes len - 1 iterations of the algorithm
+    // i.e. sorts the slice
+    insertion_sort(&mut target, len - 1);
+    println!("{:?}", target);
 }
 ```
 

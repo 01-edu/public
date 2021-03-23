@@ -8,7 +8,9 @@ just add the char `-` to the beginning of the string.
 ### Expected Functions
 
 ```rust
-fn reverse_it(v: i32) -> String {}
+pub fn reverse_it(v: i32) -> String {
+
+}
 ```
 
 ### Usage
