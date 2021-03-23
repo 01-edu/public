@@ -2,8 +2,7 @@
 
 ### Instructions
 
-Create a function called `reverse_it` that takes a number and returns a string with the number backwards followed by the original number. If the number is negative you should
-just add the char `-` to the beginning of the string.
+Create a function called `reverse_it` that takes a number and returns a string with the number backwards followed by the original number. If the number is negative a char `-` has to be added to the beginning of the string.
 
 ### Expected Functions
 
@@ -15,7 +14,7 @@ pub fn reverse_it(v: i32) -> String {
 
 ### Usage
 
-Here is a program to test your function
+Here is a program to test your function,
 
 ```rust
 fn main() {
@@ -24,7 +23,7 @@ fn main() {
 }
 ```
 
-And its output
+And its output:
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run

@@ -4,7 +4,7 @@
 
 - Define the structure matrix as a tuple of tuples of `i32`'s
 
-- Define a function that calculate the transpose matrix of a 4x3 matrix (4 rows by 3 columns) which is a 3x4 matrix (3 rows by 4 columns).
+- Define a **function** which calculates the transpose matrix of a 4x3 matrix (4 rows by 3 columns) which is a 3x4 matrix (3 rows by 4 columns).
 
 - Note:
 
@@ -19,13 +19,13 @@ Example:
 ( j k l )
 ```
 
-- Matrix must implement Debug, PartialEq and Eq. You can use derive
+- Matrix must implement Debug, PartialEq and Eq. You can use derive.
 
-- Remember that you're defining a library so you have to make public the elements that are going to be called from an external crate.
+- Remember that a library has to be defined so the elements mube made public in order to be called from an external crate.
 
 ### Notions
 
-[Chapter 7](https://doc.rust-lang.org/stable/book/ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html)
+[paths for referring to an item in the module tree](https://doc.rust-lang.org/stable/book/ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html)
 
 ### Expected Function and Structs
 
@@ -44,12 +44,13 @@ pub struct Matrix3by4(
 );
 
 pub fn transpose(m: Matrix4by3) -> Matrix3by4 {
+
 }
 ```
 
 ### Usage
 
-Here is a possible program to test your function
+Here is a possible program to test your function,
 
 ```rust
 fn main() {
