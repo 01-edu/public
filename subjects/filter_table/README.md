@@ -46,7 +46,7 @@ impl Table {
 
 ### Usage
 
-Here is a possible test for your function:
+Here is a possible program to test your function:
 
 ```rust
 fn main() {
