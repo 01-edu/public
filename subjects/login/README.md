@@ -10,9 +10,9 @@ Start the VM to boot the previously installed Debian system.
 
 Do the following for both a user and the [superuser](https://en.wikipedia.org/wiki/Superuser) (`root`) :
 
-- Log in
+- Login in the console
 - Clear the console using the keyboard shortcut
-- Change the password to a space : `" "`
+- Change the password to this : `michelle`
 - Show the command history using five keystrokes or less (using autocompletion)
 - Log out using the keyboard shortcut
 
