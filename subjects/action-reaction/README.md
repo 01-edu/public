@@ -1,5 +1,15 @@
 ## Action - reaction!
 
+### Resources
+
+We provide you with some content to get started smoothly, check it out!
+- Video [querySelector](https://www.youtube.com/watch?v=m34qd7aGMBo&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=12)
+- Video [DOM JS - Add an event listener to an element](https://www.youtube.com/watch?v=ydRv338Fl8Y)
+- Video [DOM JS - Set an element's properties](https://www.youtube.com/watch?v=4O6zSVR0ufw&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=14)
+- Video [DOM JS - classList: toggle, replace & contains](https://www.youtube.com/watch?v=amEBcoTYw0s&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=20)
+- Video [DOM JS - Set an element's inline style](https://www.youtube.com/watch?v=pxlYKvju1z8&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=15)
+- [Memo DOM JS](https://github.com/nan-academy/js-training/blob/gh-pages/examples/dom.js)
+
 ### Instructions
 
 OK, you have now connected HTML, CSS and JS altogether ; big day! Excited? Exhausted?
