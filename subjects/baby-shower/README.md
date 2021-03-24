@@ -27,7 +27,7 @@ hello()
 
 This is what you should see in the browser:
 
-![](https://raw.githubusercontent.com/01-edu/public/master/subjects/carbon-copy/baby-shower.gif)
+![](https://raw.githubusercontent.com/01-edu/public/master/subjects/baby-shower/baby-shower.gif)
 
 ### Notions
 
