@@ -16,6 +16,12 @@ For the whole quest, the principle is to iterate over your code: when you finish
 - for the CSS files: when you have to link one, you can manage it as you prefer, but for clarity we suggest you to create a CSS file for each HTML file, named like so: `name-of-the-exercise.css`
 - for the JS files, when you have to link one, you can manage it as you prefer, but for clarity we suggest you to create a JS file for each HTML file, named like so: `name-of-the-exercise.js`
 
+### Resources
+
+We provide you with some content to get started smoothly, check it out!
+- Video [Basic set up of an HTML page](https://www.youtube.com/watch?v=QtKoO7tT-Gg&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=1)
+- Video [Different HTML tags overview](https://www.youtube.com/watch?v=Al-Jzpib8VY&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=2)
+
 ### Instructions
 
 Ready? Let's code!
