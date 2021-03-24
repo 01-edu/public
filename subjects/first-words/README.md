@@ -1,5 +1,14 @@
 ## First words
 
+### Resources
+
+We provide you with some content to get started smoothly, check it out!
+- Video [DOM JS - createElement & append](https://www.youtube.com/watch?v=J-A_pqTqGBU&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=13)
+- Video [Set an element's className](https://www.youtube.com/watch?v=h3b7H1ZKvFE&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=16)
+- Video [DOM JS - Set an element's properties](https://www.youtube.com/watch?v=4O6zSVR0ufw&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=14)
+- Video [DOM JS - Add an event listener to an element](https://www.youtube.com/watch?v=ydRv338Fl8Y)
+- [Memo DOM JS](https://github.com/nan-academy/js-training/blob/gh-pages/examples/dom.js)
+
 ### Instructions
 
 Now that you know how to make your creation move, what about making it communicate its first words to the world?
