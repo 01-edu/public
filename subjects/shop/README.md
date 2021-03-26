@@ -2,31 +2,31 @@
 
 ### Objectives
 
-In this project a website will be given to you. This website is still in the creation process, so not all features are available. The purpose is for you to implement some of the missing features.
+In this project, a website will be given to you. This website is still in the creation process, so not all features are available. The purpose of the project is for you to implement some of those missing features.
 
 You should also know that the website was created using Rails, a web application development framework written in Ruby. You can learn more about this framework in its own [website](https://guides.rubyonrails.org/getting_started.html).
 
-You will have to create an e-Commerce shop application with user authentication where you can sell any type of product.
-As we said some of the process is already done, so first of all lets see what you will have to implement.
+You will have to create an e-Commerce shop application with user authentication where you can sell any type of products.
+As mentioned, some of the process is already done. So first of all, let's see what you will have to implement.
 
 ### Instructions
 
-In this website the goal is for you to fix it so that it will be possible to create users and those users will be able to create adds to sell products in the website.
+In this website the goal is for you to fix it so that it will be possible to create users. Additionally, those users will be able to create adds to sell products in the website.
 
-To create an add you will have to go to the `Sell` button and create the add. You will be able to give a title to your add, a price, a model and a description. You also must select a brand, a finish, a condition to your product and you will be able to choose images from your folder in app/assets/images.
+To create an add you will have to go to the `Sell` button and create the add. You will be able to give a title to your add, a price, a model and a description. You also must select a brand, a color and a condition for your product. Moreover, you will be able to choose images from your folder in app/assets/images.
 
-First you will have to implement a controller called `registrations_controller` that can be found incomplete in app/controllers. You will need [Devise](https://github.com/heartcombo/devise) witch is a flexible authentication solution for Rails based on Warden.
+First you will have to implement a controller called `registrations_controller` that can be found incomplete in app/controllers. You will need [Devise](https://github.com/heartcombo/devise) which is a flexible authentication solution for Rails based on Warden.
 
 - You will have to create two definitions in this controller:
 
-The first one is `sign_up_params` where you will have to permit the necessary params to sign up, which are:
+The first one is `sign_up_params` where you will have to allow the necessary params to sign up, which are:
 
         - name
         - email
         - password
         - password_confirmation
 
-The second one is`account_update_params` and you will also need to permit the necessary params to edit or update an account, which are:
+The second one is`account_update_params` where you will also need to allow the necessary params to edit or update an account, which are:
 
         - name
         - email
@@ -34,38 +34,38 @@ The second one is`account_update_params` and you will also need to permit the ne
         - password_confirmation
         - current_password
 
-- You will also need to compleat the `products_helper.rb` located in app/helpers. This helper will be responsible for showing who is selling the products and who is able to edit and delete the adds, in this case who created the add. So you will have to find a way to show the name of the seller in each product.
+- You will also need to complete the `products_helper.rb` located in app/helpers. This helper will be responsible for showing who is selling the products and who is able to edit and delete the adds(in this case the creator of the add). So you will have to find a way to show the name of the seller in each product.
 
-- You have to find a way so that only the user who creates an add can also permanently delete it. Only the users who create the adds can edit or delete them.
+- You have to find a way so that, only the user who creates an add, can edit or also permanently delete it.
 
-- All e-Commerce apps need some sort of Cart. So you will have to create a shopping cart to your application.
+- All e-Commerce apps need some sort of Cart. So you will have to create a shopping cart for your application.
 
 To create the cart you will have to define a new model `Cart`.
 The cart must work like any other e-commerce shopping cart.
 
 - You must be able to add one or more items to the cart.
-- It must be shown a total, which is the sum of all the products in the cart. This total must be updated every time you add or remove an item from the cart.
-- The cart must have an `Empty Cart` button, that clears the cart and takes you bak to the home page.
-- It must be possible to remove single items from the cart as well, without emptying the cart.
-- The message "Added to your cart" and "Removed from your cart" must be shown when you add or remove something from the cart. This messages must disappear from the screen after a short time.
-- You must add a shopping cart icon, that shows the number of items in the cart, in the home page that updates each time you add a new product.
+- A total must be shown, which is the sum of all the products in the cart. This total must be updated every time you add or remove an item from the cart.
+- The cart must have an `Empty Cart` button, which clears the cart and takes you back to the home page.
+- It must be possible to remove items individually from the cart as well, without emptying the whole cart.
+- The message "Added to your cart" and "Removed from your cart" must be shown when you add or remove something from the cart. These messages must disappear from the screen after a short time.
+- You must add a shopping cart icon in the home page, which shows the number of items in the cart, which updates each time you add a new product.
 
-- You will have to create a concern in models/concerns/ called `current_cart.rb`. A concern is similar to a helper of which you can include in controllers throughout the app. This concern must allow you to add stuff to the cart when your not signed in and then when you sign in to an account the cart will have the products that you added before you sign in.
+- You will have to create a `concern` in models/concerns/ called `current_cart.rb`. A `concern` is similar to a helper which you can include in controllers throughout the app. This `concern` must allow you to add stuff to the cart when you are not signed in, and then when you sign in to an account, the cart will have the products that you added before you signed in.
 
 #### Ruby on Rails
 
-Ruby is a programming language, similar to Python and Perl. It is dynamically typed, interpreted, and can be modified at runtime (such as adding new methods to classes). It has many shortcuts that make it very clean, methods are rarely over 10 lines. It has good RegEx support and works well for shell scripting.
+Ruby is a programming language similar to Python and Perl. It is dynamically typed, interpreted, and can be modified at runtime (such as adding new methods to classes). It has many shortcuts that makes it very clean, methods are rarely over 10 lines. It has good RegEx support and works well for shell scripting.
 
-Rails is a gem, or a Ruby library. Rails help make web applications, providing classes for saving to the database, handling URLs and displaying html (along with a webserver, maintenance tasks, and much more).
+Rails is a gem, or a Ruby library. Rails helps make web applications, providing classes for saving to the database, handling URLs and displaying html (along with a webserver, maintenance tasks, and much more).
 
 This project was created using:
 
 - Ruby 3.0.0
 - Rails 6.1.3
 
-If you decide to install other versions you will need to update your gems according to the version you are using. If you go with this versions you already have the necessary gems in your gemfile.
+If you decide to install other versions you will need to update your gems according to the version you are using. If you go with these versions, you already have the necessary gems in your gemfile.
 
-Now, that you know what the project is about, we will explain you the file system architecture.
+Now, that you know what the project is about, we will explain to you the file system architecture.
 
 When starting a new Rails project (with the command `rails new name_of_project`).
 This will create a Rails application in a directory with the given name and then you will need to install the gem dependencies using the command `bundle install`.
@@ -99,7 +99,7 @@ You should do this steps after unzipping:
 As bonus for this project there are a couple things you could do:
 
 - You can add a category to the product so that the user can chose between cars, clothes, computers and many more. Or you can add more fields to describe the products, for example add more brands.
-- Create a button `add to cart` so that it is possible to add a product to the cart without opening the adds?
-- Find a way to remove items from the cart one by one.
-- You can implement your own display and design?
-- Add a payment method.
+- You can create a button `add to cart` so that it is possible to add a product to the cart without opening the adds.
+- You can find a way to remove items from the cart one by one.
+- You can implement your own display and design.
+- You can add a payment method.
