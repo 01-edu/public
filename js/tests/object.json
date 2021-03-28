@@ -1,0 +1,18 @@
+[
+  {
+    "description": "variable human is declared and of type object",
+    "code": "equal(typeof human, 'object')"
+  },
+  {
+    "description": "property name from human is of type string",
+    "code": "equal(typeof human.name, 'string')"
+  },
+  {
+    "description": "property age from human is of type number",
+    "code": "equal(typeof human.age, 'number')"
+  },
+  {
+    "description": "property secureLuggage from human is of type boolean",
+    "code": "equal(typeof human.secureLuggage, 'boolean')"
+  }
+]

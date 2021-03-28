@@ -1,0 +1,26 @@
+[
+  {
+    "description": "cutFirst from the latin alphabet",
+    "code": "let alphabet = 'abcdefghijklmnopqrstuvwxyz'\n\n// Your code\n\nequal(cutFirst, 'klmnopqrstuvwxyz')"
+  },
+  {
+    "description": "cutFirst from the georgian alphabet",
+    "code": "let alphabet = 'აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ'\n\n// Your code\n\nequal(cutFirst, 'ლმნოპჟრსტუფქღყშჩცძწჭხჯჰ')"
+  },
+  {
+    "description": "cutLast from the latin alphabet",
+    "code": "let alphabet = 'abcdefghijklmnopqrstuvwxyz'\n\n// Your code\n\nequal(cutLast, 'abcdefghijklmnopqrstuvw')"
+  },
+  {
+    "description": "cutLast from the greek alphabet",
+    "code": "let alphabet = 'αβγδεζηθικλμνξοπρστυφχψω'\n\n// Your code\n\nequal(cutLast, 'αβγδεζηθικλμνξοπρστυφ')"
+  },
+  {
+    "description": "cutFirstLast from the latin alphabet",
+    "code": "let alphabet = 'abcdefghijklmnopqrstuvwxyz'\n\n// Your code\n\nequal(cutFirstLast, 'fghijklmnopqrst')"
+  },
+  {
+    "description": "cutFirstLast from the armenian alphabet",
+    "code": "let alphabet = 'աբգդեզէըթժիլխծկհձղճմյնշոչպջռսվտրցւփքօֆուև'\n\n// Your code\n\nequal(cutFirstLast, 'զէըթժիլխծկհձղճմյնշոչպջռսվտրցւփ')"
+  }
+]

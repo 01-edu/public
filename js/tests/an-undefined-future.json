@@ -1,0 +1,6 @@
+[
+  {
+    "description": "myFuture must be declared but its value undefined",
+    "code": "equal(myFuture, undefined)"
+  }
+]

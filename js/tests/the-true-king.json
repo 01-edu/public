@@ -1,0 +1,14 @@
+[
+  {
+    "description": "if the name is 'Perceval' excalibur should stay set in stone",
+    "code": "let name = 'Perceval'\nlet excalibur = 'set in stone'\n\n// Your code\n\nequal(excalibur, 'set in stone')"
+  },
+  {
+    "description": "if the name is 'Merlin' excalibur should stay set in stone",
+    "code": "let name = 'Merlin'\nlet excalibur = 'set in stone'\n\n// Your code\n\nequal(excalibur, 'set in stone')"
+  },
+  {
+    "description": "if the name is 'Arthur' excalibur should be pulled",
+    "code": "let name = 'Arthur'\nlet excalibur = 'set in stone'\n\n// Your code\n\nequal(excalibur, 'pulled')"
+  }
+]

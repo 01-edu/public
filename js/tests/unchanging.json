@@ -1,0 +1,10 @@
+[
+  {
+    "description": "Test to re-assign the value",
+    "code": "let originalValue = unchanging\ntry {\n  unchanging = 'new value'\n} catch {}\n\nif (unchanging !== originalValue) {\n  throw Error('unchanging value changed !')\n}"
+  },
+  {
+    "description": "Test with to re-assign with another value",
+    "code": "let originalValue = unchanging\ntry {\n  unchanging = 'another new value'\n} catch {}\n\nif (unchanging !== originalValue) {\n  throw Error('unchanging value changed !')\n}"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "description": "parent and child must be declared and",
+    "code": "equal(typeof parent, 'object')\nequal(typeof child, 'object')"
+  },
+  {
+    "description": "parent.child must be equal to child",
+    "code": "equal(parent.child, child)"
+  },
+  {
+    "description": "child.parent must be equal to parent",
+    "code": "equal(child.parent, parent)"
+  }
+]

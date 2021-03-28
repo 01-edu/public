@@ -1,0 +1,26 @@
+[
+  {
+    "description": "first is the value of the first element",
+    "code": "let list = [\n  'Harry Styles',\n  'Niall Horan',\n  'Liam Payne',\n  'Louis Tomlinson',\n  // 'Zayn Malik', ??\n]\n\n// Your code\n\nequal(first, 'Harry Styles')"
+  },
+  {
+    "description": "first is the value of the first element even if we change the list",
+    "code": "let list = [\n  '2011 - Up All Night',\n  '2012 - Take Me Home',\n  '2013 - Midnight Memories',\n  '2014 - Four',\n  '2015 - Made in the A.M.',\n]\n\n// Your code\n\nequal(first, '2011 - Up All Night')"
+  },
+  {
+    "description": "last is the value of the last element",
+    "code": "let list = [\n  'Harry Styles',\n  'Niall Horan',\n  'Liam Payne',\n  'Louis Tomlinson',\n  // 'Zayn Malik', ??\n]\n\n// Your code\n\nequal(last, 'Louis Tomlinson')"
+  },
+  {
+    "description": "last is the value of the last element even if we change the list",
+    "code": "let list = [\n  '2011 - Up All Night',\n  '2012 - Take Me Home',\n  '2013 - Midnight Memories',\n  '2014 - Four',\n  '2015 - Made in the A.M.',\n]\n\n// Your code\n\nequal(last, '2015 - Made in the A.M.')"
+  },
+  {
+    "description": "kiss is an array of last and first",
+    "code": "let list = [\n  'Harry Styles',\n  'Niall Horan',\n  'Liam Payne',\n  'Louis Tomlinson',\n  // 'Zayn Malik', ??\n]\n\n// Your code\n\nequal(kiss, ['Louis Tomlinson', 'Harry Styles'])"
+  },
+  {
+    "description": "kiss is an array of last and first even if we change the list",
+    "code": "let list = [\n  '2011 - Up All Night',\n  '2012 - Take Me Home',\n  '2013 - Midnight Memories',\n  '2014 - Four',\n  '2015 - Made in the A.M.',\n]\n\n// Your code\n\nequal(kiss, ['2015 - Made in the A.M.', '2011 - Up All Night'])"
+  }
+]

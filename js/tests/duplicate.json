@@ -1,0 +1,14 @@
+[
+  {
+    "description": "duplicate value should repeat 'I told you so'",
+    "code": "let sentence = 'I told you so'\n// Your code\nequal(duplicate, 'I told you so, I told you so !')"
+  },
+  {
+    "description": "duplicate value should repeat 'Not again'",
+    "code": "let sentence = 'Not again'\n// Your code\nequal(duplicate, 'Not again, Not again !')"
+  },
+  {
+    "description": "duplicate value should repeat 'I knew it'",
+    "code": "let sentence = 'I knew it'\n// Your code\nequal(duplicate, 'I knew it, I knew it !')"
+  }
+]

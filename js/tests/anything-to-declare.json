@@ -1,0 +1,18 @@
+[
+  {
+    "description": "Create an age variable of your age as a number",
+    "code": "equal(typeof age, 'number')"
+  },
+  {
+    "description": "Create a name variable of your name as a string",
+    "code": "equal(typeof name, 'string')"
+  },
+  {
+    "description": "Create a secureLuggage variable of a boolean",
+    "code": "equal(typeof secureLuggage, 'boolean')"
+  },
+  {
+    "description": "Values must be reasonable",
+    "code": "if (age <= 3) {\n  throw Error(`You must be over 3 years old to pass this exericse`)\n}\n\nif (age > 99) {\n  throw Error(`You are too old for this`)\n}\n\nif (name.length <= 1) {\n  throw Error('Your name must be more than 1 letter long')\n}\n\nif (name.length > 99) {\n  throw Error('Your name must be less than 99 letters long')\n}\n\nif (secureLuggage === false) {\n  throw Error(\n    `Do you really believe we are going to let you pass with insecure luggage ?!`,\n  )\n}"
+  }
+]

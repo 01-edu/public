@@ -1,0 +1,18 @@
+[
+  {
+    "description": "bool and num must be converted to string",
+    "code": "let bool = true\nlet num = 4 / 3\nlet str = ''\n\n// Your code\n\nequal(stringFromNumber, '1.3333333333333333')\nequal(stringFromBoolean, 'true')"
+  },
+  {
+    "description": "bool and str must be converted to numbers",
+    "code": "let bool = true\nlet str = '43.75'\nlet num = 0\n\n// Your code\n\nequal(numberFromBoolean, 1)\nequal(numberFromString, 43.75)"
+  },
+  {
+    "description": "num and str must be converted to bools",
+    "code": "let num = 0\nlet str = 'Hello there :)'\nlet bool = false\n\n// Your code\n\nequal(booleanFromString, true)\nequal(booleanFromNumber, false)"
+  },
+  {
+    "description": "conversion should apply if we change the values",
+    "code": "let bool = false\nlet str = ''\nlet num = 43.75\n\n// Your code\n\nequal(stringFromNumber, '43.75')\nequal(stringFromBoolean, 'false')\nequal(numberFromBoolean, 0)\nequal(numberFromString, 0)\nequal(booleanFromString, false)\nequal(booleanFromNumber, true)"
+  }
+]

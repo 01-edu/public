@@ -1,0 +1,26 @@
+[
+  {
+    "description": "seasons variable must be an Array",
+    "code": "if (!Array.isArray(seasons)) {\n  throw Error('Season must be an Array')\n}"
+  },
+  {
+    "description": "seasons first element must be spring",
+    "code": "equal(seasons[0].toLowerCase(), 'spring')"
+  },
+  {
+    "description": "seasons second element summer",
+    "code": "equal(seasons[1].toLowerCase(), 'summer')"
+  },
+  {
+    "description": "seasons third element autumn",
+    "code": "equal(seasons[2].toLowerCase(), 'autumn')"
+  },
+  {
+    "description": "seasons fourth element winter",
+    "code": "equal(seasons[3].toLowerCase(), 'winter')"
+  },
+  {
+    "description": "seasons we must not have a fifth element",
+    "code": "equal(seasons[4], undefined)"
+  }
+]

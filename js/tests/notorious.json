@@ -1,0 +1,10 @@
+[
+  {
+    "description": "Not big enough",
+    "code": "if (biggie < 1.7976931348623157e308) {\n  throw Error('must be bigger !')\n}"
+  },
+  {
+    "description": "You can do smaller",
+    "code": "if (smalls > -1.7976931348623157e308) {\n  throw Error('must be smaller !')\n}"
+  }
+]

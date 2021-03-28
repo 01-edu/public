@@ -1,0 +1,10 @@
+[
+  {
+    "description": "address and it's street property are objects",
+    "code": "equal(typeof address, 'object')\nequal(typeof address.street, 'object')"
+  },
+  {
+    "description": "all address properties have the correct types",
+    "code": "equal(typeof address.city, 'string')\nequal(typeof address.postcode, 'number')\nequal(typeof address.street.name, 'string')\nequal(typeof address.street.number, 'number')"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "description": "mirror value is the reverse of 'devil'",
+    "code": "let word = 'devil'\n\n// Your code\n\nequal(mirror, 'lived')"
+  },
+  {
+    "description": "mirror value is the reverse of 'dog'",
+    "code": "let word = 'dog'\n\n// Your code\n\nequal(mirror, 'god')"
+  },
+  {
+    "description": "mirror value is the reverse of 'star'",
+    "code": "let word = 'star'\n\n// Your code\n\nequal(mirror, 'rats')"
+  }
+]

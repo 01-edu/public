@@ -1,0 +1,14 @@
+[
+  {
+    "description": "Test with a classic introduction",
+    "code": "let sentence = 'Hello There !'\n\n// Your code\n\nequal(words, ['Hello', 'There', '!'])"
+  },
+  {
+    "description": "Test with a basic catchphrase",
+    "code": "let sentence = 'Live Laugh Love'\n\n// Your code\n\nequal(words, ['Live', 'Laugh', 'Love'])"
+  },
+  {
+    "description": "Test with a long quote",
+    "code": "let sentence = 'Being on the edge isn’t as safe but the view is better'\n\n// Your code\n\nequal(words, [\n  'Being',\n  'on',\n  'the',\n  'edge',\n  'isn’t',\n  'as',\n  'safe',\n  'but',\n  'the',\n  'view',\n  'is',\n  'better',\n])"
+  }
+]

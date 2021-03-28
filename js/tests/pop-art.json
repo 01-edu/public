@@ -1,0 +1,18 @@
+[
+  {
+    "description": "First element must be Andy Warhol",
+    "code": "const popArtists = [\n  'Pablo Picasso',\n  'Andy Warhol',\n  'Keith Haring',\n  'Richard Hamilton',\n  'Ray Johnson',\n  'Marjorie Strider',\n  'Rosalyn Drexler',\n  'Roy Lichtenstein',\n  'Hariton Pushwagner',\n  'Peter Max',\n  'Robert Indiana',\n  'Louise Bourgeois',\n]\n\n// Your code\n\nequal(popArtists[0], 'Andy Warhol')"
+  },
+  {
+    "description": "Last element must be Robert Indiana",
+    "code": "const popArtists = [\n  'Pablo Picasso',\n  'Andy Warhol',\n  'Keith Haring',\n  'Richard Hamilton',\n  'Ray Johnson',\n  'Marjorie Strider',\n  'Rosalyn Drexler',\n  'Roy Lichtenstein',\n  'Hariton Pushwagner',\n  'Peter Max',\n  'Robert Indiana',\n  'Louise Bourgeois',\n]\n\n// Your code\n\nequal(popArtists[popArtists.length - 1], 'Robert Indiana')"
+  },
+  {
+    "description": "Test overall expected result with 8 elements",
+    "code": "const popArtists = [\n  'Pablo Picasso',\n  'Andy Warhol',\n  'Keith Haring',\n  'Richard Hamilton',\n  'Marjorie Strider',\n  'Roy Lichtenstein',\n  'Hariton Pushwagner',\n  'Peter Max',\n  'Robert Indiana',\n  'Louise Bourgeois',\n]\n\n// Your code\n\nequal(popArtists, [\n  'Andy Warhol',\n  'Keith Haring',\n  'Richard Hamilton',\n  'Marjorie Strider',\n  'Roy Lichtenstein',\n  'Hariton Pushwagner',\n  'Peter Max',\n  'Robert Indiana',\n])"
+  },
+  {
+    "description": "Test overall expected result with 3 elements",
+    "code": "const popArtists = [\n  'Pablo Picasso',\n  'Richard Hamilton',\n  'Marjorie Strider',\n  'Peter Max',\n  'Louise Bourgeois',\n]\n\n// Your code\n\nequal(popArtists, ['Richard Hamilton', 'Marjorie Strider', 'Peter Max'])"
+  }
+]

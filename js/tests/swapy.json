@@ -1,0 +1,10 @@
+[
+  {
+    "description": "replaceMe third element is 'great'",
+    "code": "const replaceMe = ['This', 'is', 'horrible', '!']\nconst swapMe = ['pif', 'paf', 'pom']\n\n// Your code\n\nequal(replaceMe, ['This', 'is', 'great', '!'])"
+  },
+  {
+    "description": "1st and 2nd elements of swapMe are swapped pif,paf,pom",
+    "code": "const replaceMe = ['This', 'is', 'horrible', '!']\nconst swapMe = ['pif', 'paf', 'pom']\n\n// Your code\n\nequal(swapMe, ['paf', 'pif', 'pom'])"
+  }
+]

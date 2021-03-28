@@ -1,0 +1,6 @@
+[
+  {
+    "description": "inequality must not be equal to itself",
+    "code": "if (inequality === inequality) {\n  throw Error(`inequality must not be equal to itself`)\n}"
+  }
+]

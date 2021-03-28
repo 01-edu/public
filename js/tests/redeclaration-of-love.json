@@ -1,0 +1,6 @@
+[
+  {
+    "description": "The value of love must have changed",
+    "code": "let love = 'You used to love me !!'\n\n// Your code\n\nequal(love, 'I still love you !!')"
+  }
+]

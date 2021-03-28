@@ -1,0 +1,26 @@
+[
+  {
+    "description": "keepFirst from the latin alphabet",
+    "code": "let alphabet = 'abcdefghijklmnopqrstuvwxyz'\n\n// Your code\n\nequal(keepFirst, 'abcdef')"
+  },
+  {
+    "description": "keepFirst from the georgian alphabet",
+    "code": "let alphabet = 'აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ'\n\n// Your code\n\nequal(keepFirst, 'აბგდევ')"
+  },
+  {
+    "description": "keepLast from the latin alphabet",
+    "code": "let alphabet = 'abcdefghijklmnopqrstuvwxyz'\n\n// Your code\n\nequal(keepLast, 'tuvwxyz')"
+  },
+  {
+    "description": "keepLast from the greek alphabet",
+    "code": "let alphabet = 'αβγδεζηθικλμνξοπρστυφχψω'\n\n// Your code\n\nequal(keepLast, 'στυφχψω')"
+  },
+  {
+    "description": "keepFirstLast from the latin alphabet",
+    "code": "let alphabet = 'abcdefghijklmnopqrstuvwxyz'\n\n// Your code\n\nequal(keepFirstLast, 'abcwxyz')"
+  },
+  {
+    "description": "keepFirstLast from the armenian alphabet",
+    "code": "let alphabet = 'աբգդեզէըթժիլխծկհձղճմյնշոչպջռսվտրցւփքօֆուև'\n\n// Your code\n\nequal(keepFirstLast, 'աբգֆուև')"
+  }
+]

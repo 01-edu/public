@@ -1,0 +1,10 @@
+[
+  {
+    "description": "Altered object must match the expected result Edmon Dantes",
+    "code": "let alterEgo = {\n  firstName: 'Edmond',\n  lastName: 'Dantes',\n  points: 247,\n}\n\n// Your code\n\nequal(alterEgo, {\n  firstName: 'Edmond',\n  lastName: 'Dantes',\n  points: 257,\n  self: 'altered',\n  fullName: 'Edmond Dantes',\n})"
+  },
+  {
+    "description": "Altered object must match the expected result Viktor Vaughn",
+    "code": "let alterEgo = {\n  firstName: 'Viktor',\n  lastName: 'Vaughn',\n  points: 123,\n}\n\n// Your code\n\nequal(alterEgo, {\n  firstName: 'Viktor',\n  lastName: 'Vaughn',\n  points: 133,\n  self: 'altered',\n  fullName: 'Viktor Vaughn',\n})"
+  }
+]

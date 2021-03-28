@@ -1,0 +1,14 @@
+[
+  {
+    "description": "Test with a word all in lowercase",
+    "code": "let word = 'hello'\n\n// Your code\n\nequal(capitalized, 'Hello')"
+  },
+  {
+    "description": "Test with a word all in uppercase",
+    "code": "let word = 'PRESSURE'\n\n// Your code\n\nequal(capitalized, 'Pressure')"
+  },
+  {
+    "description": "Test with a word all in mixed case",
+    "code": "let word = 'SuPer-CoBra'\n\n// Your code\n\nequal(capitalized, 'Super-cobra')"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "description": "whiteRabbit is declared and is an object",
+    "code": "let secretData = { 'Mr. Reagan': 'Cypher' }\n// Your code\nif (typeof whiteRabbit !== 'object') throw Error('whiteRabbit is not declared')"
+  },
+  {
+    "description": "whiteRabbit keys includes the rabbit emoji",
+    "code": "let secretData = { 'Mr. Reagan': 'Cypher' }\n// Your code\nif (!('🐰' in whiteRabbit)) throw Error('I could not follow the 🐰')"
+  },
+  {
+    "description": "traitor value match secretData  'Mr. Reagan' property",
+    "code": "let secretData = { 'Mr. Reagan': 'Cypher' }\n// Your code\nequal(traitor, 'Cypher')"
+  },
+  {
+    "description": "traitor value still match secretData  'Mr. Reagan' property",
+    "code": "let secretData = { 'Mr. Reagan': 'Cool stache' }\n// Your code\nequal(traitor, 'Cool stache')"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "description": "First element must be Yayoi Kusama",
+    "code": "const popArtists = [\n  'Andy Warhol',\n  'Keith Haring',\n  'Richard Hamilton',\n  'Ray Johnson',\n  'Marjorie Strider',\n  'Rosalyn Drexler',\n  'Roy Lichtenstein',\n  'Hariton Pushwagner',\n  'Peter Max',\n  'Robert Indiana',\n]\n\n// Your code\n\nequal(popArtists[0], 'Yayoi Kusama')"
+  },
+  {
+    "description": "Last element must be Takashi Murakami",
+    "code": "const popArtists = [\n  'Andy Warhol',\n  'Keith Haring',\n  'Richard Hamilton',\n  'Ray Johnson',\n  'Marjorie Strider',\n  'Rosalyn Drexler',\n  'Roy Lichtenstein',\n  'Hariton Pushwagner',\n  'Peter Max',\n  'Robert Indiana',\n]\n\n// Your code\n\nequal(popArtists[popArtists.length - 1], 'Takashi Murakami')"
+  },
+  {
+    "description": "Test with 10 elements",
+    "code": "const popArtists = [\n  'Andy Warhol',\n  'Keith Haring',\n  'Richard Hamilton',\n  'Ray Johnson',\n  'Marjorie Strider',\n  'Rosalyn Drexler',\n  'Roy Lichtenstein',\n  'Hariton Pushwagner',\n  'Peter Max',\n  'Robert Indiana',\n]\n\n// Your code\n\nequal(popArtists, [\n  'Yayoi Kusama',\n  'Andy Warhol',\n  'Keith Haring',\n  'Richard Hamilton',\n  'Ray Johnson',\n  'Marjorie Strider',\n  'Rosalyn Drexler',\n  'Roy Lichtenstein',\n  'Hariton Pushwagner',\n  'Peter Max',\n  'Robert Indiana',\n  'Takashi Murakami',\n])"
+  },
+  {
+    "description": "Test with an 1 element",
+    "code": "const popArtists = ['Peter Max']\n\n// Your code\n\nequal(popArtists, ['Yayoi Kusama', 'Peter Max', 'Takashi Murakami'])"
+  }
+]

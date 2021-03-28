@@ -1,0 +1,10 @@
+[
+  {
+    "description": "presentation value includes age and name .",
+    "code": "let name = 'Patrick'\nlet age = 48\n\n// Your code\nequal(presentation, `Hello, my name is Patrick and I'm 48 years old`)"
+  },
+  {
+    "description": "presentation value still includes age and name .",
+    "code": "let name = 'Jeremy'\nlet age = 27\n\n// Your code\nequal(presentation, `Hello, my name is Jeremy and I'm 27 years old`)"
+  }
+]

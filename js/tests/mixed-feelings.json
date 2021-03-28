@@ -1,0 +1,14 @@
+[
+  {
+    "description": "mixedFeelings must be an array",
+    "code": "if (!Array.isArray(mixedFeelings)) throw Error('not an array')"
+  },
+  {
+    "description": "mixedFeelings must have 3 elements",
+    "code": "equal(mixedFeelings.length, 3)"
+  },
+  {
+    "description": "every elements of mixedFeelings must be valid emotions",
+    "code": "const types = ['happiness', 'sadness', 'disgust', 'fear', 'surprise', 'anger']\n\nfor (const emotion of mixedFeelings) {\n  if (!types.includes(emotion.type)) throw Error('emotion type is unknown')\n  if (emotion.level > 9) throw Error('emotion level is to strong !')\n  if (emotion.level < 0) throw Error('negative emotion level is not acceptable')\n  if (typeof emotion.level !== 'number' || Number.isNaN(emotion.level)) {\n    throw Error('emotion level must be a number')\n  }\n}"
+  }
+]

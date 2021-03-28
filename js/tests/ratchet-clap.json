@@ -1,0 +1,14 @@
+[
+  {
+    "description": "Test with a classic introduction",
+    "code": "let words = ['Hello', 'There', '!']\n\n// Your code\n\nequal(ratchetClap, 'Hello👏There👏!👏')"
+  },
+  {
+    "description": "Test with a basic catchphrase",
+    "code": "let words = ['Live', 'Laugh', 'Love']\n\n// Your code\n\nequal(ratchetClap, 'Live👏Laugh👏Love👏')"
+  },
+  {
+    "description": "Test with a long quote",
+    "code": "let words = [\n  'Being',\n  'on',\n  'the',\n  'edge',\n  'isn’t',\n  'as',\n  'safe',\n  'but',\n  'the',\n  'view',\n  'is',\n  'better',\n]\n\n// Your code\n\nequal(\n  ratchetClap,\n  'Being👏on👏the👏edge👏isn’t👏as👏safe👏but👏the👏view👏is👏better👏',\n)"
+  }
+]

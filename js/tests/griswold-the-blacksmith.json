@@ -1,0 +1,22 @@
+[
+  {
+    "description": "if the player can't buy anyting, the array should be empty",
+    "code": "let playerCoins = 2\n\n// Your code\n\nif (!Array.isArray(purchasableGoods)) {\n  throw Error(`purchasableGoods must be declared and an array`)\n}\n\nequal(purchasableGoods.length, 0)"
+  },
+  {
+    "description": "if the player can only buy arrows",
+    "code": "let playerCoins = 3\n\n// Your code\n\nequal(purchasableGoods, ['arrows'])"
+  },
+  {
+    "description": "if the player can buy arrows and the boots",
+    "code": "let playerCoins = 50\n\n// Your code\n\nequal(purchasableGoods, ['arrows', 'boots'])"
+  },
+  {
+    "description": "if the player can buy everything",
+    "code": "let playerCoins = 299.99\n\n// Your code\n\nequal(purchasableGoods, ['arrows', 'boots', 'sword'])"
+  },
+  {
+    "description": "if the player can buy everything, and more",
+    "code": "let playerCoins = 999\n\n// Your code\n\nequal(purchasableGoods, ['arrows', 'boots', 'sword'])"
+  }
+]

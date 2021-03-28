@@ -1,0 +1,10 @@
+[
+  {
+    "description": "all 3 variable should be defined and have the right values",
+    "code": "let human = {\n  name: 'Freddy',\n  age: 27,\n  secureLuggage: false,\n}\n\n// Your code\n\nequal({ name, age, secureLuggage }, human)"
+  },
+  {
+    "description": "value should also work for Jean-Pierre",
+    "code": "let human = {\n  name: 'Jean-Pierre',\n  age: 65,\n  secureLuggage: true,\n}\n\n// Your code\n\nequal({ name, age, secureLuggage }, human)"
+  }
+]

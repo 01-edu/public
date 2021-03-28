@@ -1,0 +1,18 @@
+[
+  {
+    "description": "oldestAge is a number",
+    "code": "let kevin = { age: 14 }\nlet stephanie = { age: 25 }\nlet martin = { age: 32 }\n\n// Your code\n\nequal(typeof oldestAge, 'number')"
+  },
+  {
+    "description": "oldestAge is the maximum value of the age property (martin)",
+    "code": "let kevin = { age: 14 }\nlet stephanie = { age: 25 }\nlet martin = { age: 32 }\n\n// Your code\n\nequal(oldestAge, 32)"
+  },
+  {
+    "description": "oldestAge is still the maximum value of the age property (kevin)",
+    "code": "let kevin = { age: 67 }\nlet stephanie = { age: 25 }\nlet martin = { age: 32 }\n\n// Your code\n\nequal(oldestAge, 67)"
+  },
+  {
+    "description": "oldestAge is still the maximum value of the age property (stephanie)",
+    "code": "let kevin = { age: 29 }\nlet stephanie = { age: 45 }\nlet martin = { age: 32 }\n\n// Your code\n\nequal(oldestAge, 45)"
+  }
+]

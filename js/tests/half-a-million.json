@@ -1,0 +1,14 @@
+[
+  {
+    "description": "You must retrieve '1/2 MM $' from the vault using the secret",
+    "code": "let secret = '53CR37-k0D3'\nlet vault = { '53CR37-k0D3': '1/2 MM $' }\n// Your code\nequal(loot, '1/2 MM $')"
+  },
+  {
+    "description": "You must retrieve 500000 from the vault using the secret",
+    "code": "let secret = '53(.-3T /<o|)3'\nlet vault = { '53(.-3T /<o|)3': 500000 }\n// Your code\nequal(loot, 500000)"
+  },
+  {
+    "description": "You must change the value of the vault",
+    "code": "let secret = '53CR37-k0D3'\nlet vault = { '53CR37-k0D3': '1/2 MM $' }\n// Your code\nif (vault['53CR37-k0D3'] === '1/2 MM $') {\n  throw Error('vault value was not changed')\n}"
+  }
+]

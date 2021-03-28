@@ -1,0 +1,18 @@
+[
+  {
+    "description": "rounded is defined and the result of using Math.round on num",
+    "code": "let num = 2.8\n\n// Your code\n\nequal(rounded, 3)"
+  },
+  {
+    "description": "rounded is still the result of using Math.round on num",
+    "code": "let num = 2.2\n\n// Your code\n\nequal(rounded, 2)"
+  },
+  {
+    "description": "truncated is defined and the result of using Math.trunc on num",
+    "code": "let num = 2.8\n\n// Your code\n\nequal(truncated, 2)"
+  },
+  {
+    "description": "truncated is still the result of using Math.trunc on num",
+    "code": "let num = 3.2\n\n// Your code\n\nequal(truncated, 3)"
+  }
+]

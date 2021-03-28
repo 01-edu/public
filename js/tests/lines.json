@@ -1,0 +1,14 @@
+[
+  {
+    "description": "Try with a lebanese poem",
+    "code": "let poem = `\n\nO Pyramides! C’est alors\nQue, levant ma tête pensive,\nJ'entends errer sur vos flancs forts\nL'écho de quelque voix plaintive;\nMais quoi! Serait-ce en votre sein\nQ'un orphelin pleure sa mère?\nEst-ce un hymne, est-ce une prière,\nEst-ce un gémissement divin?\n\n\n`\n\n// Your code\n\nequal(linesCount, 8)"
+  },
+  {
+    "description": "Try with a french poem",
+    "code": "let poem = `\nComme je descendais des Fleuves impassibles,\nJe ne me sentis plus guidé par les haleurs :\nDes Peaux-Rouges criards les avaient pris pour cibles,\nLes ayant cloués nus aux poteaux de couleurs. `\n\n// Your code\n\nequal(linesCount, 4)"
+  },
+  {
+    "description": "Try with an italian poem",
+    "code": "let poem = `Per me si va ne la città dolente,\nper me si va ne l'etterno dolore,\nper me si va tra la perduta gente.\nGiustizia mosse il mio alto fattore;\n\nfecemi la divina podestate,\nla somma sapïenza e ’l primo amore.\n\n`\n\n// Your code\n\nequal(linesCount, 7)"
+  }
+]
