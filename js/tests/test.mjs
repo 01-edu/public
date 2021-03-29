@@ -134,7 +134,7 @@ const loadAndSanitizeSolution = async name => {
   // it's not that important if it doesn't work 100% of the time.
   const code = rawCode.replace(/\/\*[\s\S]*?\*\/|\/\/.*/g, "").trim()
   if (code.includes("import")) fatal("import keyword not allowed")
-  return { code, rawCode }
+  return { code, rawCode, path }
 }
 
 const runTests = async ({ url, path, code }) => {
@@ -174,7 +174,7 @@ const main = async () => {
   if (mode === "node") return runTests(await testNode({ test, name }))
   if (mode === "inline") return runInlineTests({ json: test, name })
 
-  const { rawCode, code } = await loadAndSanitizeSolution(name)
+  const { rawCode, code, path } = await loadAndSanitizeSolution(name)
   const parts = test.split("// /*/ // ⚡")
   const [inject, testCode] = parts.length < 2 ? ["", test] : parts
   const combined = `${inject.trim()}\n${rawCode
