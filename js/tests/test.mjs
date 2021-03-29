@@ -1,4 +1,4 @@
-import { join as joinPath, dirname } from 'path'
+import { join as joinPath, dirname, extname } from 'path'
 import { fileURLToPath } from 'url'
 import { deepStrictEqual } from 'assert'
 import * as fs from 'fs'
@@ -57,11 +57,9 @@ const read = (filename, description) =>
     ifNoEnt(() => fatal(`Missing ${description} for ${name}`)),
   )
 
-const readTest = filename =>
-  readFile(filename, 'utf8').then(test => ({
-    test,
-    mode: filename.endsWith('.js') ? 'function' : 'node',
-  }))
+const modes = { '.js': 'function', '.mjs': 'node', '.json': 'inline' }
+const readTest = filename => readFile(filename, 'utf8')
+  .then(test => ({ test, mode: modes[extname(filename)] }))
 
 const stackFmt = (err, url) => {
   for (const p of props) { p.src[p.key] = p.value }
@@ -77,13 +75,66 @@ const any = arr =>
     f(firstError)
   })
 
-const testNode = async ({ test, name }) => {
+const testNode = async ({ name }) => {
   const path = `${solutionPath}/${name}.mjs`
   return {
     path,
     url: joinPath(root, `${name}_test.mjs`),
     code: await read(path, 'student solution'),
   }
+}
+
+const runInlineTests = async ({ json, name }) => {
+  const restore = new Set()
+  const equal = deepStrictEqual
+  const saveArguments = (src, key) => {
+    const savedArgs = []
+    const fn = src[key]
+    src[key] = (...args) => {
+      savedArgs.push(args)
+      return fn(...args)
+    }
+
+    restore.add(() => (src[key] = fn))
+
+    return savedArgs
+  }
+
+  const logs = []
+  console.log = (...args) => logs.push(args)
+  const die = (...args) => {
+    logs.forEach((args) => console.info(...args))
+    console.error(...args)
+    process.exit(1)
+  }
+
+  const solution = await loadAndSanitizeSolution(name)
+  for (const { description, code } of JSON.parse(json)) {
+    logs.length = 0
+    try {
+      eval(
+        code.includes('// Your code')
+          ? code.replace('// Your code', solution.code)
+          : `${solution.code}\n\n${code}`,
+      )
+      console.info(`${description}:`, '\u001b[32mPASS\u001b[0m')
+    } catch (err) {
+      console.info(`${description}:`, '\u001b[31mFAIL\u001b[0m')
+      die(' ->', err.message)
+    }
+  }
+}
+
+const loadAndSanitizeSolution = async name => {
+  const path = `${solutionPath}/${name}.js`
+  const rawCode = await read(path, "student solution")
+
+  // this is a very crude and basic removal of comments
+  // since checking code is only use to prevent cheating
+  // it's not that important if it doesn't work 100% of the time.
+  const code = rawCode.replace(/\/\*[\s\S]*?\*\/|\/\/.*/g, "").trim()
+  if (code.includes("import")) fatal("import keyword not allowed")
+  return { code, rawCode }
 }
 
 const runTests = async ({ url, path, code }) => {
@@ -115,20 +166,15 @@ const runTests = async ({ url, path, code }) => {
 
 const main = async () => {
   const { test, mode } = await any([
+    readTest(joinPath(root, `${name}.json`)),
     readTest(joinPath(root, `${name}_test.js`)),
     readTest(joinPath(root, `${name}_test.mjs`)),
-  ]).catch(ifNoEnt(() => fatal(`Missing test for ${name}`)))
+  ]).catch(ifNoEnt((err) => fatal(`Missing test for ${name}`)))
 
   if (mode === "node") return runTests(await testNode({ test, name }))
-  const path = `${solutionPath}/${name}.js`
-  const rawCode = await read(path, "student solution")
+  if (mode === "inline") return runInlineTests({ json: test, name })
 
-  // this is a very crude and basic removal of comments
-  // since checking code is only use to prevent cheating
-  // it's not that important if it doesn't work 100% of the time.
-  const code = rawCode.replace(/\/\*[\s\S]*?\*\/|\/\/.*/g, "").trim()
-  if (code.includes("import")) fatal("import keyword not allowed")
-
+  const { rawCode, code } = loadAndSanitizeSolution(name)
   const parts = test.split("// /*/ // ⚡")
   const [inject, testCode] = parts.length < 2 ? ["", test] : parts
   const combined = `${inject.trim()}\n${rawCode
