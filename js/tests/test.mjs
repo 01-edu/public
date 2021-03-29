@@ -174,7 +174,7 @@ const main = async () => {
   if (mode === "node") return runTests(await testNode({ test, name }))
   if (mode === "inline") return runInlineTests({ json: test, name })
 
-  const { rawCode, code } = loadAndSanitizeSolution(name)
+  const { rawCode, code } = await loadAndSanitizeSolution(name)
   const parts = test.split("// /*/ // ⚡")
   const [inject, testCode] = parts.length < 2 ? ["", test] : parts
   const combined = `${inject.trim()}\n${rawCode
