@@ -10,7 +10,8 @@ if test "$EXAM_MODE"; then
 fi
 
 if test "$EXAM_RUN_ONLY" = true; then
-	go build -o exe "./$EXERCISE"
+	go build -o ../exe "./$EXERCISE"
+	cd ..
 	./exe "$@"
 	exit
 fi
