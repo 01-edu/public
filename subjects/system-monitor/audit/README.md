@@ -108,6 +108,10 @@
 
 ###### Is there a visual representation for it?
 
+##### Try and run the application and search for the tabbed section that contains the visual usage of the network and select the Receiver (RX). Then go to Discord and make a video call that may less for a 1 min.
+
+###### Is the value form the right network increasing while in the video call?
+
 ##### Try and run the application and search for the tabbed section that contains the visual usage of the network and select the Transmitter (TX).
 
 ###### Is there a visual representation for it?
