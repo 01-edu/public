@@ -2,7 +2,8 @@
 
 set -e
 
-cd student
+cp -a student piscine-go
+cd piscine-go
 
 if test "$EXAM_MODE"; then
 	go mod init main 2>/dev/null
@@ -10,8 +11,7 @@ if test "$EXAM_MODE"; then
 fi
 
 if test "$EXAM_RUN_ONLY" = true; then
-	go build -o ../exe "./$EXERCISE"
-	cd ..
+	go build -o exe "./$EXERCISE"
 	./exe "$@"
 	exit
 fi
@@ -46,8 +46,7 @@ fi
 # Compile and run test
 if command -v "${EXERCISE}_test" >/dev/null 2>&1; then
 	# The exercise is a program
-	go build -o ../exe "./$EXERCISE"
-	cd ..
+	go build -o exe "./$EXERCISE"
 	"${EXERCISE}_test"
 else
 	# The exercise is a function

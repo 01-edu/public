@@ -5,8 +5,8 @@ RUN apk add --no-cache git
 
 RUN go get golang.org/x/tools/cmd/goimports
 
-RUN mkdir -p /jail/student
-RUN touch /jail/student/go.mod
+RUN mkdir -p /piscine-go
+RUN touch /piscine-go/go.mod
 
 WORKDIR /public/go/tests
 COPY go.* ./
@@ -17,6 +17,7 @@ COPY lib lib
 COPY prog prog
 COPY rc rc
 RUN go install ./rc ./prog/...
+RUN rm -rf /piscine-go
 
 COPY entrypoint.sh /usr/local/bin
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]

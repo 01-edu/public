@@ -9,4 +9,4 @@ require (
 	student v0.0.0
 )
 
-replace student => ../../../jail/student
+replace student => ../../../piscine-go
