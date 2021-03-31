@@ -60,7 +60,7 @@ $ cargo run "1 2 * 3 * 4 +"
 10
 $ cargo run "1 2 3 4 +"
 Error
-$ cargo run
+$ cargo run ""
 Error
 $ cargo run "     1      3 * 2 -"
 1
