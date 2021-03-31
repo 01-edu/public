@@ -45,7 +45,8 @@ fi
 # Compile and run test
 if command -v "${EXERCISE}_test" >/dev/null 2>&1; then
 	# The exercise is a program
-	go build -o exe "./$EXERCISE"
+	go build -o ../exe "./$EXERCISE"
+	cd ..
 	"${EXERCISE}_test"
 else
 	# The exercise is a function
