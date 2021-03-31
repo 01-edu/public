@@ -2,6 +2,7 @@
 
 set -e
 
+cp -r /public/go/tests .
 cp -a student piscine-go
 cd piscine-go
 
@@ -50,6 +51,7 @@ if command -v "${EXERCISE}_test" >/dev/null 2>&1; then
 	"${EXERCISE}_test"
 else
 	# The exercise is a function
-	cd "/public/go/tests/func/${EXERCISE}_test"
+	cd "$HOME/tests/func/${EXERCISE}_test"
+	go mod edit -replace "student=$HOME/piscine-go"
 	go run .
 fi
