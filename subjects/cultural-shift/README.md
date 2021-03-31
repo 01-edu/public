@@ -7,12 +7,12 @@ Oh noes, Japanese artists have been left out, let's fix this !
 ### Instructions
 
 You must modify the provided `popArtists` array using a combination of the
-`push` and `shift` array methods.
+`push` and `unshift` array methods.
 
 - Add `'Yayoi Kusama'` at the begining of the array
 - Add `'Takashi Murakami'` at the end of the array
 
 ### Notions
 
-- [devdocs.io/javascript/global_objects/array/shift](https://devdocs.io/javascript/global_objects/array/shift)
+- [devdocs.io/javascript/global_objects/array/unshift](https://devdocs.io/javascript/global_objects/array/unshift)
 - [devdocs.io/javascript/global_objects/array/push](https://devdocs.io/javascript/global_objects/array/push)

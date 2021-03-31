@@ -1,0 +1,10 @@
+[
+  {
+    "description": "Should work on mixed case",
+    "code": "let message = 'YoU cAn CaLl Me YoUr MaJeStY!'\n\n// Your code\n\nequal(noCaps, 'you can call me your majesty!')\nequal(allCaps, 'YOU CAN CALL ME YOUR MAJESTY!')"
+  },
+  {
+    "description": "Should work on mixed case",
+    "code": "let message = `DoN'T tAlK aBoUt My MoMs, Yo`\n\n// Your code\n\nequal(noCaps, `don't talk about my moms, yo`)\nequal(allCaps, `DON'T TALK ABOUT MY MOMS, YO`)"
+  }
+]

@@ -31,7 +31,7 @@ console.log(splited) // ['','Hello👏','There👏', '']
 
 ### Instructions
 
-You have been recruted to analyse a bunch of poems, your fist task is to count
+You have been recruted to analyse a bunch of poems, your first task is to count
 the number of lines.
 
 - Declare a variable `linesCount` of the number of lines from the provided

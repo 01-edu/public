@@ -1,6 +1,6 @@
 [
   {
-    "description": "if the player can't buy anyting, the array should be empty",
+    "description": "if the player can't buy anything, the array should be empty",
     "code": "let playerCoins = 2\n\n// Your code\n\nif (!Array.isArray(purchasableGoods)) {\n  throw Error(`purchasableGoods must be declared and an array`)\n}\n\nequal(purchasableGoods.length, 0)"
   },
   {

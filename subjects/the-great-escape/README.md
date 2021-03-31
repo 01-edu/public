@@ -7,7 +7,7 @@
 Since they are used for delimiting text, they need a trick to include them in
 our text.
 
-For example, we want a `'` _(single quote)_ in our text, but use them as
+For example, we want a `'` _(single quote)_ in or text, but use them as
 delimiters:
 
 ```js

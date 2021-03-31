@@ -9,8 +9,8 @@ the 👏 emoji.
 
 Also add one more 👏 at the end of the sentence, for good measure !
 
-Assign the result in a `ratchetClap` variable
+Assign the result in a `ratchetClap` variable.
 
 ### Notions
 
-- [devdocs.io/javascript/global_objects/string/join](https://devdocs.io/javascript/global_objects/string/join)
+- [devdocs.io/javascript/global_objects/array/join](https://devdocs.io/javascript/global_objects/array/join)
