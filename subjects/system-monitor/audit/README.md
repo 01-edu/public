@@ -108,9 +108,13 @@
 
 ###### Is there a visual representation for it?
 
-##### Try and run the application and search for the tabbed section that contains the visual usage of the network and select the Receiver (RX). Then go to Discord and make a video call that may less for a 1 min.
+##### Try and run the application and search for the tabbed section that contains the visual usage of the network and select the Receiver (RX). Then test your network download speed.
 
-###### Is the value form the right network increasing while in the video call?
+###### Is the value form the right network increasing while testing the download speed?
+
+##### Try and run the application and search for the tabbed section that contains the visual usage of the network and select the Transmitter (TX). Then test your network upload speed.
+
+###### Is the value form the right network increasing while testing the upload speed?
 
 ##### Try and run the application and search for the tabbed section that contains the visual usage of the network and select the Transmitter (TX).
 

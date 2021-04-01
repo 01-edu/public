@@ -5,7 +5,7 @@
 The objective for this project is to show that you have acquired programming logic and that you are able to adapt to new languages.
 
 The programming language you are about to use is [C](https://en.wikipedia.org/wiki/C_%28programming_language%29). It will not be asked to create
-a project from scratch, insted you will have **to add features or fix the code of a given application**.
+a project from scratch, instead you will have **to add features or fix the code of a given application**.
 
 ### Instructions
 
