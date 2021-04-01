@@ -1,6 +1,0 @@
-Alice 0 10/10/2012 Africa 291321234 22432.52 saving
-
-Michel 2 2/5/2001 Portugal 123543455 10023.230000 fixed01
-
-Michel 123 10/10/2020 UK 1234123 12345.30 saving
-
