@@ -7,7 +7,7 @@ The objective for this project is to show that you have acquired programming log
 The programming language you are about to use is [C++](https://en.wikipedia.org/wiki/C%2B%2B). It will not be asked to create
 a project from scratch, instead you will have **to add features or fix the code of a given application**.
 
-The application you are about to work on is a [**Desktop System Monitor**](https://en.wikipedia.org/wiki/System_monitor). The app will monitor the computers system resources and performance, such as CPU, RAM, SWAP, Fan, Network, etc.
+The application you are about to work on is a [**Desktop System Monitor**](https://en.wikipedia.org/wiki/System_monitor). The app will monitor the computers system resources and performance, such as CPU, RAM, SWAP, Fan, Network and more.
 For the GUI you will use the [_Dear ImGui_](https://github.com/ocornut/imgui/wiki#about-the-imgui-paradigm) library for C++.
 
 ### Instructions
@@ -23,8 +23,8 @@ For better understanding there are two types of UIs, **retained mode** and **imm
 
 - **Retained mode**: the client calls do not directly cause actual rendering, but instead updates an abstract internal model, which is maintained within the library's data space. You can see more about this mode [here](https://en.wikipedia.org/wiki/Retained_mode).
 
-For this API there is no need for specifics builds, you can add the files to your existing project.
-To integrate Dear ImGui you must use a backend, this backend passes mouse/keyboard/gamepad inputs and variety of settings and it is
+For this API there is no need for specific builds, you can add the files to your existing project.
+To integrate Dear ImGui you must use a backend, this backend passes mouse/keyboard/gamepad inputs and a variety of settings. It is
 in charge of rendering the resulting vertices.
 
 The backend will be provided by us, in a file system described in the next topic.
@@ -33,7 +33,7 @@ You will have to install `sdl` by running the command `apt install libsdl2-dev`.
 ---
 
 #### **File System**
--
+
 The file system provided, [here](https://assets.01-edu.org/system-monitor/system-monitor.zip), will contain all the ImGui IPA, you can better understand the fs referring to what is listed below.
 
 ```console
@@ -105,7 +105,7 @@ For this project you must present the following monitorization:
 
     - `Fan`, should include the following information, the status of the fan, (enable/active), the current speed and the level. And should also present the graph stated above.
 
-    - `Thermal`, should present the graph state above with a overlay text saying the current temperature of the computer.
+    - `Thermal`, should present the graph stated above with a overlay text saying the current temperature of the computer.
 
     example :
 
@@ -119,8 +119,8 @@ For this project you must present the following monitorization:
     - **PID**, with the process identification.
     - **Name**, name of the process.
     - **State**, current state of the process.
-    - **CPU usage**, how much CPU the process is consuming in percentage.
-    - **Memory usage**, how much memory the process is consuming in percentage.
+    - **CPU usage**, how much CPU the process is using in percentage.
+    - **Memory usage**, how much memory the process is using in percentage.
   - A text box that lets the user filter the table. Users must be able to select multiple rows of the table.
 
     example :
@@ -134,7 +134,7 @@ For this project you must present the following monitorization:
     - `TX` (network transmitter) containing the following data : bytes, packets, errs, drop, fifo, colls, carrier and compressed.
   - It should also contain a tabbed section for both `RX` and `TX`, those sections should display a visual usage (ex: progress bar), of all network present on the computer. This visual display should obey the following rules:
     - Each network should be converted from **bytes** to **GB**, **KB** or **MB** depending on the value. It should not display values that
-      are to big or to small
+      are to big or to small. In other words it should be adjustable.
 
       example :
 
