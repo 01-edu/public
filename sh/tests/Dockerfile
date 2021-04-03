@@ -1,4 +1,4 @@
-FROM debian:10.5-slim
+FROM docker.01-edu.org/debian:10.9-slim
 
 RUN apt-get update
 RUN apt-get -y install jq curl
@@ -8,8 +8,8 @@ RUN curl --remote-name --location https://demo.01-edu.org/assets/superhero/all.j
 
 WORKDIR /tmp/installation
 
-RUN curl --remote-name --location https://github.com/caddyserver/caddy/releases/download/v2.2.1/caddy_2.2.1_linux_amd64.tar.gz
-RUN tar xf caddy_2.2.1_linux_amd64.tar.gz
+RUN curl --remote-name --location https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_amd64.tar.gz
+RUN tar xf caddy_2.3.0_linux_amd64.tar.gz
 RUN mv caddy /usr/local/bin
 RUN apt-get -y install libcap2-bin
 RUN setcap 'cap_net_bind_service=+ep' /usr/local/bin/caddy

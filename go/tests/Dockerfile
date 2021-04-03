@@ -1,4 +1,4 @@
-FROM docker.01-edu.org/golang:1.16.0-alpine3.13
+FROM docker.01-edu.org/golang:1.16.3-alpine3.13
 
 ENV GIT_TERMINAL_PROMPT=0
 RUN apk add --no-cache git
