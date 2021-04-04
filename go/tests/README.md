@@ -17,7 +17,7 @@ and a program:
 go run github.com/01-edu/public/go/tests/prog/EXERCISE_test
 ```
 
-Relative paths works anywhere within `public/go/tests`:
+Relative paths work anywhere in `public/go/tests`:
 
 ```
 go run ./prog/printalphabet_test
