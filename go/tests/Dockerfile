@@ -4,6 +4,7 @@ ENV GIT_TERMINAL_PROMPT=0
 RUN apk add --no-cache git
 
 RUN go get golang.org/x/tools/cmd/goimports
+RUN go get github.com/01-edu/rc
 
 WORKDIR /piscine-go
 RUN go mod init piscine-go
@@ -13,9 +14,9 @@ WORKDIR /public/go/tests
 COPY go.* ./
 RUN go mod download
 COPY lib lib
-COPY prog prog
-RUN go get github.com/01-edu/rc
-RUN go install $(grep -rl ChallengeMain ./prog | rev | cut -d/ -f2- | rev)
+COPY solutions solutions
+COPY tests tests
+RUN go install $(grep -rl ChallengeMain ./tests | rev | cut -d/ -f2- | rev)
 
 RUN rm -rf /piscine-go
 

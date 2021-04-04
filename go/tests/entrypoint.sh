@@ -52,5 +52,5 @@ if command -v "${EXERCISE}_test" >/dev/null 2>&1; then
 	"${EXERCISE}_test"
 else
 	# The exercise is a function
-	go run "./prog/${EXERCISE}_test"
+	go run "./tests/${EXERCISE}_test"
 fi
