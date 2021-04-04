@@ -1,4 +1,4 @@
-package correct
+package solutions
 
 import (
 	"reflect"

@@ -6,12 +6,12 @@ import (
 	student "student"
 
 	"github.com/01-edu/public/test-go/lib"
-	"github.com/01-edu/public/test-go/tests/correct"
+	"github.com/01-edu/public/test-go/solutions"
 )
 
 type (
 	NodeI13  = student.NodeI
-	NodeIS13 = correct.NodeI
+	NodeIS13 = solutions.NodeI
 )
 
 func printListStudent1(n *NodeI13) string {
@@ -88,19 +88,19 @@ func main() {
 
 		link1 = student.ListSort(link1)
 		link2 = student.ListSort(link2)
-		linkTest1 = correct.ListSort(linkTest1)
-		linkTest2 = correct.ListSort(linkTest2)
+		linkTest1 = solutions.ListSort(linkTest1)
+		linkTest2 = solutions.ListSort(linkTest2)
 
 		aux1 := student.SortedListMerge(link1, link2)
-		aux2 := correct.SortedListMerge(linkTest1, linkTest2)
+		aux2 := solutions.SortedListMerge(linkTest1, linkTest2)
 
 		if aux1 == nil && aux2 == nil {
 		} else if aux1 != nil && aux2 == nil {
 			lib.Fatalf("\nstudent merged lists:%s\nmerged lists:%s\n\nSortListMerge() == %v instead of %v\n\n",
-				printListStudent1(aux1), correct.PrintList(aux2), aux1, aux2)
+				printListStudent1(aux1), solutions.PrintList(aux2), aux1, aux2)
 		} else if aux1.Data != aux2.Data {
 			lib.Fatalf("\nstudent merged lists:%s\nmerged lists:%s\n\nSortListMerge() == %v instead of %v\n\n",
-				printListStudent1(aux1), correct.PrintList(aux2), aux1, aux2)
+				printListStudent1(aux1), solutions.PrintList(aux2), aux1, aux2)
 		}
 
 		link1 = &NodeI13{}

@@ -1,4 +1,4 @@
-package correct
+package solutions
 
 type TreeNode struct {
 	Left, Right, Parent *TreeNode

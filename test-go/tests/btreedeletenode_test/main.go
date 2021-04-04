@@ -4,7 +4,7 @@ import (
 	student "student"
 
 	"github.com/01-edu/public/test-go/lib"
-	"github.com/01-edu/public/test-go/tests/correct"
+	"github.com/01-edu/public/test-go/solutions"
 )
 
 func parentListDelete(root *student.TreeNode) string {
@@ -79,17 +79,17 @@ func formatSubTree_delete(root *student.TreeNode, prefix string) string {
 	return res
 }
 
-func errorMessage_delete(fn interface{}, deleted string, rootOr, root *correct.TreeNode, rootS *student.TreeNode) {
+func errorMessage_delete(fn interface{}, deleted string, rootOr, root *solutions.TreeNode, rootS *student.TreeNode) {
 	lib.Fatalf("%s(\n%s, %s\n) ==\n%s instead of\n%s\n",
 		"BTreeDeleteNode",
-		correct.FormatTree(rootOr),
+		solutions.FormatTree(rootOr),
 		deleted,
 		FormatTree_delete(rootS),
-		correct.FormatTree(root),
+		solutions.FormatTree(root),
 	)
 }
 
-func CompareTrees_delete(fn interface{}, deleted string, rootOr, root *correct.TreeNode, rootS *student.TreeNode) {
+func CompareTrees_delete(fn interface{}, deleted string, rootOr, root *solutions.TreeNode, rootS *student.TreeNode) {
 	sel := student.BTreeSearchItem(rootS, deleted)
 
 	if !student.BTreeIsBinary(rootS) || sel != nil {
@@ -98,23 +98,23 @@ func CompareTrees_delete(fn interface{}, deleted string, rootOr, root *correct.T
 }
 
 func main() {
-	root := &correct.TreeNode{Data: "04"}
+	root := &solutions.TreeNode{Data: "04"}
 	rootS := &student.TreeNode{Data: "04"}
-	rootOr := &correct.TreeNode{Data: "04"}
+	rootOr := &solutions.TreeNode{Data: "04"}
 
 	ins := []string{"01", "07", "05", "12", "02", "03", "10"}
 
 	for _, v := range ins {
-		root = correct.BTreeInsertData(root, v)
+		root = solutions.BTreeInsertData(root, v)
 		rootS = student.BTreeInsertData(rootS, v)
-		rootOr = correct.BTreeInsertData(rootOr, v)
+		rootOr = solutions.BTreeInsertData(rootOr, v)
 	}
 
-	selected := correct.BTreeSearchItem(root, "04")
+	selected := solutions.BTreeSearchItem(root, "04")
 	selectedS := student.BTreeSearchItem(rootS, "04")
 
-	root = correct.BTreeDeleteNode(root, selected)
+	root = solutions.BTreeDeleteNode(root, selected)
 	rootS = student.BTreeDeleteNode(rootS, selectedS)
-	fn := interface{}(correct.BTreeDeleteNode)
+	fn := interface{}(solutions.BTreeDeleteNode)
 	CompareTrees_delete(fn, selected.Data, rootOr, root, rootS)
 }

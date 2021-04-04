@@ -6,19 +6,19 @@ import (
 	student "student"
 
 	"github.com/01-edu/public/test-go/lib"
-	"github.com/01-edu/public/test-go/tests/correct"
+	"github.com/01-edu/public/test-go/solutions"
 )
 
-func errorMessage_min(fn interface{}, root, a *correct.TreeNode, b *student.TreeNode) {
+func errorMessage_min(fn interface{}, root, a *solutions.TreeNode, b *student.TreeNode) {
 	lib.Fatalf("%s(\n%s) == %s instead of %s\n",
 		"BTreeMin",
-		correct.FormatTree(root),
+		solutions.FormatTree(root),
 		b.Data,
 		a.Data,
 	)
 }
 
-func CompareNode_min(fn interface{}, arg1, a *correct.TreeNode, b *student.TreeNode) {
+func CompareNode_min(fn interface{}, arg1, a *solutions.TreeNode, b *student.TreeNode) {
 	if a == nil || b == nil {
 		lib.Fatalf("Expected %v instead of %v\n", a, b)
 		return
@@ -65,8 +65,8 @@ func CompareReturn_min(fn1, fn2, arg1, arg2 interface{}) {
 
 	for i, v := range out1.Results {
 		switch str := v.(type) {
-		case *correct.TreeNode:
-			CompareNode_min(fn1, arg1.(*correct.TreeNode), str, out2.Results[i].(*student.TreeNode))
+		case *solutions.TreeNode:
+			CompareNode_min(fn1, arg1.(*solutions.TreeNode), str, out2.Results[i].(*student.TreeNode))
 		default:
 			if !reflect.DeepEqual(str, out2.Results[i]) {
 				lib.Fatalf("%s(%s) == %s instead of %s\n",
@@ -81,15 +81,15 @@ func CompareReturn_min(fn1, fn2, arg1, arg2 interface{}) {
 }
 
 func main() {
-	root := &correct.TreeNode{Data: "04"}
+	root := &solutions.TreeNode{Data: "04"}
 	rootS := &student.TreeNode{Data: "04"}
 
 	ins := []string{"03", "02", "01", "07", "05", "12", "10"}
 
 	for _, v := range ins {
-		root = correct.BTreeInsertData(root, v)
+		root = solutions.BTreeInsertData(root, v)
 		rootS = student.BTreeInsertData(rootS, v)
 	}
 
-	CompareReturn_min(correct.BTreeMin, student.BTreeMin, root, rootS)
+	CompareReturn_min(solutions.BTreeMin, student.BTreeMin, root, rootS)
 }

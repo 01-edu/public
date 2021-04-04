@@ -6,12 +6,12 @@ import (
 	student "student"
 
 	"github.com/01-edu/public/test-go/lib"
-	"github.com/01-edu/public/test-go/tests/correct"
+	"github.com/01-edu/public/test-go/solutions"
 )
 
 type (
 	NodeI12  = student.NodeI
-	NodeIS12 = correct.NodeI
+	NodeIS12 = solutions.NodeI
 )
 
 func printListStudent(n *NodeI12) string {
@@ -54,11 +54,11 @@ func comparFuncNodeInt12(l1 *NodeI12, l2 *NodeIS12) {
 	for l1 != nil || l2 != nil {
 		if (l1 == nil && l2 != nil) || (l1 != nil && l2 == nil) {
 			lib.Fatalf("\nstudent list:%s\nlist:%s\n\nListSort() == %v instead of %v\n\n",
-				printListStudent(l1), correct.PrintList(l2), l1, l2)
+				printListStudent(l1), solutions.PrintList(l2), l1, l2)
 		}
 		if l1.Data != l2.Data {
 			lib.Fatalf("\nstudent list:%s\nlist:%s\n\nListSort() == %v instead of %v\n\n",
-				printListStudent(l1), correct.PrintList(l2), l1.Data, l2.Data)
+				printListStudent(l1), solutions.PrintList(l2), l1.Data, l2.Data)
 		}
 		l1 = l1.Next
 		l2 = l2.Next
@@ -85,7 +85,7 @@ func main() {
 		for i := 0; i < len(arg.data); i++ {
 			nodePushBackListInt12(link1, link2, arg.data[i])
 		}
-		aux1 := correct.ListSort(link2)
+		aux1 := solutions.ListSort(link2)
 		aux2 := student.ListSort(link1)
 
 		comparFuncNodeInt12(aux2, aux1)

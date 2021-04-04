@@ -6,13 +6,13 @@ import (
 	student "student"
 
 	"github.com/01-edu/public/test-go/lib"
-	"github.com/01-edu/public/test-go/tests/correct"
+	"github.com/01-edu/public/test-go/solutions"
 )
 
 type (
 	Node8  = student.NodeL
-	List8  = correct.List
-	NodeS8 = correct.NodeL
+	List8  = solutions.List
+	NodeS8 = solutions.NodeL
 	ListS8 = student.List
 )
 
@@ -84,50 +84,50 @@ func listPushBackTest8(l1 *ListS8, l2 *List8, data interface{}) {
 }
 
 func comparFuncList8(l1 *List8, l2 *ListS8, f func(*Node8) bool, comp func(*Node8)) {
-	funcFName := correct.GetName(f)
-	funcComp := correct.GetName(comp)
+	funcFName := solutions.GetName(f)
+	funcComp := solutions.GetName(comp)
 	for l1.Head != nil || l2.Head != nil {
 		if (l1.Head == nil && l2.Head != nil) || (l1.Head != nil && l2.Head == nil) {
 			lib.Fatalf("\nstudent list:%s\nlist:%s\nfunction f used: %s\nfunction comp: %s\n\nListForEachIf() == %v instead of %v\n\n",
-				listToStringStu7(l2), correct.ListToString(l1.Head), funcComp, funcFName, l2.Head, l1.Head)
+				listToStringStu7(l2), solutions.ListToString(l1.Head), funcComp, funcFName, l2.Head, l1.Head)
 		}
 		if l1.Head.Data != l2.Head.Data {
 			lib.Fatalf("\nstudent list:%s\nlist:%s\nfunction f used: %s\nfunction comp: %s\n\nListForEachIf() == %v instead of %v\n\n",
-				listToStringStu7(l2), correct.ListToString(l1.Head), funcComp, funcFName, l2.Head.Data, l1.Head.Data)
+				listToStringStu7(l2), solutions.ListToString(l1.Head), funcComp, funcFName, l2.Head.Data, l1.Head.Data)
 		}
 		l1.Head = l1.Head.Next
 		l2.Head = l2.Head.Next
 	}
 }
 
-// applies a function to an element of the linked correct.ListS
+// applies a function to an element of the linked solutions.ListS
 func main() {
 	link1 := &ListS8{}
 	link2 := &List8{}
 
-	table := []correct.NodeTest{}
+	table := []solutions.NodeTest{}
 	table = append(table,
-		correct.NodeTest{
+		solutions.NodeTest{
 			Data: []interface{}{},
 		},
 	)
 
 	// just numbers/ints
 	for i := 0; i < 3; i++ {
-		val := correct.NodeTest{
-			Data: correct.ConvertIntToInterface(lib.MultRandInt()),
+		val := solutions.NodeTest{
+			Data: solutions.ConvertIntToInterface(lib.MultRandInt()),
 		}
 		table = append(table, val)
 	}
 	// just strings
 	for i := 0; i < 3; i++ {
-		val := correct.NodeTest{
-			Data: correct.ConvertIntToStringface(lib.MultRandWords()),
+		val := solutions.NodeTest{
+			Data: solutions.ConvertIntToStringface(lib.MultRandWords()),
 		}
 		table = append(table, val)
 	}
 	table = append(table,
-		correct.NodeTest{
+		solutions.NodeTest{
 			Data: []interface{}{"I", 1, "something", 2},
 		},
 	)
@@ -135,11 +135,11 @@ func main() {
 		for i := 0; i < len(arg.Data); i++ {
 			listPushBackTest8(link1, link2, arg.Data[i])
 		}
-		correct.ListForEachIf(link2, addOneS, correct.IsPositive_node)
+		solutions.ListForEachIf(link2, addOneS, solutions.IsPositive_node)
 		student.ListForEachIf(link1, addOne, student.IsPositive_node)
 		comparFuncList8(link2, link1, student.IsPositive_node, addOne)
 
-		correct.ListForEachIf(link2, subtract1_sol, correct.IsPositive_node)
+		solutions.ListForEachIf(link2, subtract1_sol, solutions.IsPositive_node)
 		student.ListForEachIf(link1, subtractOne, student.IsPositive_node)
 		comparFuncList8(link2, link1, student.IsPositive_node, subtractOne)
 

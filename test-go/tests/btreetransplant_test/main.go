@@ -6,7 +6,7 @@ import (
 	student "student"
 
 	"github.com/01-edu/public/test-go/lib"
-	"github.com/01-edu/public/test-go/tests/correct"
+	"github.com/01-edu/public/test-go/solutions"
 )
 
 func parentListTransp(root *student.TreeNode) string {
@@ -81,25 +81,25 @@ func formatSubTree_transp(root *student.TreeNode, prefix string) string {
 	return res
 }
 
-func errorMessage_transp(fn interface{}, root, sel, repl *correct.TreeNode, rootA *correct.TreeNode, rootAS *student.TreeNode) {
+func errorMessage_transp(fn interface{}, root, sel, repl *solutions.TreeNode, rootA *solutions.TreeNode, rootAS *student.TreeNode) {
 	lib.Fatalf("%s(\nRoot:\n %s, Selected:\n%s, Replacement:\n%s\n) ==\n%s instead of\n%s\n",
 		"BTreeTransplant",
-		correct.FormatTree(root),
-		correct.FormatTree(sel),
-		correct.FormatTree(repl),
+		solutions.FormatTree(root),
+		solutions.FormatTree(sel),
+		solutions.FormatTree(repl),
 		FormatTree_transp(rootAS),
-		correct.FormatTree(rootA),
+		solutions.FormatTree(rootA),
 	)
 }
 
-func CompareTrees_transp(fn interface{}, root, sel, repl *correct.TreeNode, rootA *correct.TreeNode, rootAS *student.TreeNode) {
-	solTree := correct.FormatTree(rootA)
+func CompareTrees_transp(fn interface{}, root, sel, repl *solutions.TreeNode, rootA *solutions.TreeNode, rootAS *student.TreeNode) {
+	solTree := solutions.FormatTree(rootA)
 	stuTree := FormatTree_transp(rootAS)
 
 	if solTree != stuTree {
 		errorMessage_transp(fn, root, sel, repl, rootA, rootAS)
 	}
-	parentSol := correct.ParentList(rootA)
+	parentSol := solutions.ParentList(rootA)
 	parentStu := parentListTransp(rootAS)
 
 	if parentSol != parentStu {
@@ -109,11 +109,11 @@ func CompareTrees_transp(fn interface{}, root, sel, repl *correct.TreeNode, root
 }
 
 func main() {
-	root := &correct.TreeNode{Data: "04"}
+	root := &solutions.TreeNode{Data: "04"}
 	rootS := &student.TreeNode{Data: "04"}
-	rootOr := &correct.TreeNode{Data: "04"}
+	rootOr := &solutions.TreeNode{Data: "04"}
 
-	replacement := &correct.TreeNode{Data: "55"}
+	replacement := &solutions.TreeNode{Data: "55"}
 	replacementS := &student.TreeNode{Data: "55"}
 
 	ins := []string{"01", "07", "05", "12", "02", "03", "10"}
@@ -121,21 +121,21 @@ func main() {
 	rep := []string{"33", "12", "15", "60"}
 
 	for _, v := range ins {
-		root = correct.BTreeInsertData(root, v)
+		root = solutions.BTreeInsertData(root, v)
 		rootS = student.BTreeInsertData(rootS, v)
-		rootOr = correct.BTreeInsertData(rootOr, v)
+		rootOr = solutions.BTreeInsertData(rootOr, v)
 	}
 
 	for _, v := range rep {
-		replacement = correct.BTreeInsertData(replacement, v)
+		replacement = solutions.BTreeInsertData(replacement, v)
 		replacementS = student.BTreeInsertData(replacementS, v)
 	}
 
-	selected := correct.BTreeSearchItem(root, "07")
+	selected := solutions.BTreeSearchItem(root, "07")
 	selectedS := student.BTreeSearchItem(rootS, "07")
-	root = correct.BTreeTransplant(root, selected, replacement)
+	root = solutions.BTreeTransplant(root, selected, replacement)
 	rootS = student.BTreeTransplant(rootS, selectedS, replacementS)
-	fn := interface{}(correct.BTreeTransplant)
+	fn := interface{}(solutions.BTreeTransplant)
 
 	CompareTrees_transp(fn, rootOr, selected, replacement, root, rootS)
 }

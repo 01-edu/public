@@ -1,4 +1,4 @@
-package correct
+package solutions
 
 // finds the element and returns the first data from the node that is a string
 func ListFind(l *List, ref interface{}, comp func(a, b interface{}) bool) *interface{} {

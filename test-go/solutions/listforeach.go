@@ -1,4 +1,4 @@
-package correct
+package solutions
 
 // applies a function in argument to each element of the linked list
 func ListForEach(l *List, f func(*NodeL)) {

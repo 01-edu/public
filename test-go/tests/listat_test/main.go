@@ -4,12 +4,12 @@ import (
 	student "student"
 
 	"github.com/01-edu/public/test-go/lib"
-	"github.com/01-edu/public/test-go/tests/correct"
+	"github.com/01-edu/public/test-go/solutions"
 )
 
 type (
 	Node5  = student.NodeL
-	NodeS5 = correct.NodeL
+	NodeS5 = solutions.NodeL
 )
 
 func nodePushBackList5(l1 *Node5, l2 *NodeS5, data interface{}) (*Node5, *NodeS5) {
@@ -44,15 +44,15 @@ func comparFuncNode5(solutionList *NodeS5, l1 *Node5, l2 *NodeS5, arg int) {
 	}
 	if l1 != nil && l2 == nil {
 		lib.Fatalf("\nListAt(%s, %d) == %v instead of %v\n\n",
-			correct.ListToString(solutionList), arg, l1, l2)
+			solutions.ListToString(solutionList), arg, l1, l2)
 	}
 	if l1.Data != l2.Data {
 		lib.Fatalf("\nListAt(%s, %d) == %v instead of %v\n\n",
-			correct.ListToString(solutionList), arg, l1.Data, l2.Data)
+			solutions.ListToString(solutionList), arg, l1.Data, l2.Data)
 	}
 }
 
-// finds an element of a correct.ListS using a given position
+// finds an element of a solutions.ListS using a given position
 func main() {
 	var link1 *Node5
 	var link2 *NodeS5
@@ -66,14 +66,14 @@ func main() {
 
 	for i := 0; i < 4; i++ {
 		table = append(table, nodeTest{
-			data: correct.ConvertIntToInterface(lib.MultRandInt()),
+			data: solutions.ConvertIntToInterface(lib.MultRandInt()),
 			pos:  lib.RandIntBetween(1, 12),
 		})
 	}
 
 	for i := 0; i < 4; i++ {
 		table = append(table, nodeTest{
-			data: correct.ConvertIntToStringface(lib.MultRandWords()),
+			data: solutions.ConvertIntToStringface(lib.MultRandWords()),
 			pos:  lib.RandIntBetween(1, 12),
 		})
 	}
@@ -89,7 +89,7 @@ func main() {
 		}
 
 		result1 := student.ListAt(link1, arg.pos)
-		result2 := correct.ListAt(link2, arg.pos)
+		result2 := solutions.ListAt(link2, arg.pos)
 
 		comparFuncNode5(link2, result1, result2, arg.pos)
 		link1 = nil

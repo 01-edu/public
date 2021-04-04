@@ -6,13 +6,13 @@ import (
 	student "student"
 
 	"github.com/01-edu/public/test-go/lib"
-	"github.com/01-edu/public/test-go/tests/correct"
+	"github.com/01-edu/public/test-go/solutions"
 )
 
 type (
 	Node7  = student.NodeL
-	List7  = correct.List
-	NodeS7 = correct.NodeL
+	List7  = solutions.List
+	NodeS7 = solutions.NodeL
 	ListS7 = student.List
 )
 
@@ -56,29 +56,29 @@ func listPushBackTest7(l1 *ListS7, l2 *List7, data interface{}) {
 }
 
 func comparFuncList7(l1 *List7, l2 *ListS7, f func(*Node7)) {
-	funcName := correct.GetName(f)
+	funcName := solutions.GetName(f)
 	for l1.Head != nil || l2.Head != nil {
 		if (l1.Head == nil && l2.Head != nil) || (l1.Head != nil && l2.Head == nil) {
 			lib.Fatalf("\nstudent list: %s\nlist: %s\nfunction used: %s\n\nListForEach() == %v instead of %v\n\n",
-				listToStringStu8(l2), correct.ListToString(l1.Head), funcName, l2.Head, l1.Head)
+				listToStringStu8(l2), solutions.ListToString(l1.Head), funcName, l2.Head, l1.Head)
 		}
 		if l1.Head.Data != l2.Head.Data {
 			lib.Fatalf("\nstudent list: %s\nlist: %s\nfunction used: %s\n\nListForEach() == %v instead of %v\n\n",
-				listToStringStu8(l2), correct.ListToString(l1.Head), funcName, l2.Head.Data, l1.Head.Data)
+				listToStringStu8(l2), solutions.ListToString(l1.Head), funcName, l2.Head.Data, l1.Head.Data)
 		}
 		l1.Head = l1.Head.Next
 		l2.Head = l2.Head.Next
 	}
 }
 
-// applies a function to the correct.ListS
+// applies a function to the solutions.ListS
 func main() {
 	link1 := &List7{}
 	link2 := &ListS7{}
-	table := []correct.NodeTest{}
-	table = correct.ElementsToTest(table)
+	table := []solutions.NodeTest{}
+	table = solutions.ElementsToTest(table)
 	table = append(table,
-		correct.NodeTest{
+		solutions.NodeTest{
 			Data: []interface{}{"I", 1, "something", 2},
 		},
 	)
@@ -87,12 +87,12 @@ func main() {
 			listPushBackTest7(link2, link1, arg.Data[i])
 		}
 		student.ListForEach(link2, student.Add2_node)
-		correct.ListForEach(link1, correct.Add2_node)
+		solutions.ListForEach(link1, solutions.Add2_node)
 
 		comparFuncList7(link1, link2, student.Add2_node)
 
 		student.ListForEach(link2, student.Subtract3_node)
-		correct.ListForEach(link1, correct.Subtract3_node)
+		solutions.ListForEach(link1, solutions.Subtract3_node)
 
 		comparFuncList7(link1, link2, student.Subtract3_node)
 

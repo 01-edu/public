@@ -4,13 +4,13 @@ import (
 	student "student"
 
 	"github.com/01-edu/public/test-go/lib"
-	"github.com/01-edu/public/test-go/tests/correct"
+	"github.com/01-edu/public/test-go/solutions"
 )
 
 type (
 	Node9  = student.NodeL
-	List9  = correct.List
-	NodeS9 = correct.NodeL
+	List9  = solutions.List
+	NodeS9 = solutions.NodeL
 	ListS9 = student.List
 )
 
@@ -41,10 +41,10 @@ func main() {
 	link1 := &List9{}
 	link2 := &ListS9{}
 
-	table := []correct.NodeTest{}
-	table = correct.ElementsToTest(table)
+	table := []solutions.NodeTest{}
+	table = solutions.ElementsToTest(table)
 	table = append(table,
-		correct.NodeTest{
+		solutions.NodeTest{
 			Data: []interface{}{"hello", "hello1", "hello2", "hello3"},
 		},
 	)
@@ -55,7 +55,7 @@ func main() {
 		}
 		if len(arg.Data) != 0 {
 			aux1 := student.ListFind(link2, arg.Data[(len(arg.Data)-1)/2], student.CompStr)
-			aux2 := correct.ListFind(link1, arg.Data[(len(arg.Data)-1)/2], correct.CompStr)
+			aux2 := solutions.ListFind(link1, arg.Data[(len(arg.Data)-1)/2], solutions.CompStr)
 
 			if aux1 != nil || aux2 != nil {
 				if *aux1 != *aux2 {
@@ -72,7 +72,7 @@ func main() {
 	}
 
 	aux1 := student.ListFind(link2, "lksdf", student.CompStr)
-	aux2 := correct.ListFind(link1, "lksdf", correct.CompStr)
+	aux2 := solutions.ListFind(link1, "lksdf", solutions.CompStr)
 	if aux1 != nil && aux2 != nil {
 		if *aux1 != *aux2 {
 			lib.Fatalf("ListFind(ref: lksdf) == %s instead of %s\n", *aux1, *aux2)

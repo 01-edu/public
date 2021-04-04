@@ -1,4 +1,4 @@
-package correct
+package solutions
 
 // inserts node on the first position of the list
 func ListPushFront(l *List, data interface{}) {

@@ -6,13 +6,13 @@ import (
 	student "student"
 
 	"github.com/01-edu/public/test-go/lib"
-	"github.com/01-edu/public/test-go/tests/correct"
+	"github.com/01-edu/public/test-go/solutions"
 )
 
 type (
 	Node3  = student.NodeL
-	List3  = correct.List
-	NodeS3 = correct.NodeL
+	List3  = solutions.List
+	NodeS3 = solutions.NodeL
 	ListS3 = student.List
 )
 
@@ -52,15 +52,15 @@ func listPushBackTest3(l *ListS3, l1 *List3, data interface{}) {
 	}
 }
 
-// last element of the correct.ListS
+// last element of the solutions.ListS
 func main() {
 	link1 := &List3{}
 	link2 := &ListS3{}
-	table := []correct.NodeTest{}
+	table := []solutions.NodeTest{}
 
-	table = correct.ElementsToTest(table)
+	table = solutions.ElementsToTest(table)
 	table = append(table,
-		correct.NodeTest{
+		solutions.NodeTest{
 			Data: []interface{}{3, 2, 1},
 		},
 	)
@@ -68,7 +68,7 @@ func main() {
 		for i := 0; i < len(arg.Data); i++ {
 			listPushBackTest3(link2, link1, arg.Data[i])
 		}
-		aux1 := correct.ListLast(link1)
+		aux1 := solutions.ListLast(link1)
 		aux2 := student.ListLast(link2)
 
 		if aux1 != aux2 {

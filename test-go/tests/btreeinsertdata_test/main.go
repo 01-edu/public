@@ -4,7 +4,7 @@ import (
 	student "student"
 
 	"github.com/01-edu/public/test-go/lib"
-	"github.com/01-edu/public/test-go/tests/correct"
+	"github.com/01-edu/public/test-go/solutions"
 )
 
 func parentListInsert(root *student.TreeNode) string {
@@ -79,18 +79,18 @@ func formatSubTree_insert(root *student.TreeNode, prefix string) string {
 	return res
 }
 
-func errorMessage_insert(fn interface{}, inserted string, root *correct.TreeNode, rootS *student.TreeNode) {
+func errorMessage_insert(fn interface{}, inserted string, root *solutions.TreeNode, rootS *student.TreeNode) {
 	lib.Fatalf("%s(\n%s, %s\n) ==\n%s instead of\n%s\n",
 		"BTreeInsertData",
-		correct.FormatTree(root),
+		solutions.FormatTree(root),
 		inserted,
 		FormatTree_insert(rootS),
-		correct.FormatTree(root),
+		solutions.FormatTree(root),
 	)
 }
 
-func CompareTrees_insert(fn interface{}, inserted string, root *correct.TreeNode, rootS *student.TreeNode) {
-	solTree := correct.FormatTree(root)
+func CompareTrees_insert(fn interface{}, inserted string, root *solutions.TreeNode, rootS *student.TreeNode) {
+	solTree := solutions.FormatTree(root)
 	stuTree := FormatTree_insert(rootS)
 
 	if solTree != stuTree {
@@ -99,7 +99,7 @@ func CompareTrees_insert(fn interface{}, inserted string, root *correct.TreeNode
 }
 
 func main() {
-	root := &correct.TreeNode{Data: "08"}
+	root := &solutions.TreeNode{Data: "08"}
 	rootS := &student.TreeNode{Data: "08"}
 
 	var pos []string
@@ -117,9 +117,9 @@ func main() {
 		"a",
 		"d",
 	)
-	fn := interface{}(correct.BTreeInsertData)
+	fn := interface{}(solutions.BTreeInsertData)
 	for _, arg := range pos {
-		root = correct.BTreeInsertData(root, arg)
+		root = solutions.BTreeInsertData(root, arg)
 		rootS = student.BTreeInsertData(rootS, arg)
 		CompareTrees_insert(fn, arg, root, rootS)
 	}

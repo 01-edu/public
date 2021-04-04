@@ -6,13 +6,13 @@ import (
 	student "student"
 
 	"github.com/01-edu/public/test-go/lib"
-	"github.com/01-edu/public/test-go/tests/correct"
+	"github.com/01-edu/public/test-go/solutions"
 )
 
 type (
 	Node4  = student.NodeL
-	List4  = correct.List
-	NodeS4 = correct.NodeL
+	List4  = solutions.List
+	NodeS4 = solutions.NodeL
 	ListS4 = student.List
 )
 
@@ -55,17 +55,17 @@ func listPushBackTest4(l1 *ListS4, l2 *List4, data interface{}) {
 	}
 }
 
-// simply cleans the linked correct.ListS
+// simply cleans the linked solutions.ListS
 func main() {
 	link1 := &List4{}
 	link2 := &ListS4{}
 
-	table := []correct.NodeTest{}
+	table := []solutions.NodeTest{}
 
-	table = correct.ElementsToTest(table)
+	table = solutions.ElementsToTest(table)
 
 	table = append(table,
-		correct.NodeTest{
+		solutions.NodeTest{
 			Data: []interface{}{"I", 1, "something", 2},
 		},
 	)
@@ -74,12 +74,12 @@ func main() {
 		for i := 0; i < len(arg.Data); i++ {
 			listPushBackTest4(link2, link1, arg.Data[i])
 		}
-		correct.ListClear(link1)
+		solutions.ListClear(link1)
 		student.ListClear(link2)
 
 		if link2.Head != nil {
 			lib.Fatalf("\nstudent list:%s\nlist:%s\n\nListClear() == %v instead of %v\n\n",
-				listToStringStu5(link2), correct.ListToString(link1.Head), link2.Head, link1.Head)
+				listToStringStu5(link2), solutions.ListToString(link1.Head), link2.Head, link1.Head)
 		}
 	}
 }

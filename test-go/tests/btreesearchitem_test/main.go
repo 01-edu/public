@@ -6,21 +6,21 @@ import (
 	student "student"
 
 	"github.com/01-edu/public/test-go/lib"
-	"github.com/01-edu/public/test-go/tests/correct"
+	"github.com/01-edu/public/test-go/solutions"
 )
 
-func errorMessage_search(fn interface{}, root, a *correct.TreeNode, b *student.TreeNode,
+func errorMessage_search(fn interface{}, root, a *solutions.TreeNode, b *student.TreeNode,
 	seaVal string) {
 	lib.Fatalf("%s(\n%s\n, %s) == %s instead of %s\n",
 		"BTreeSearchItem",
-		correct.FormatTree(root),
+		solutions.FormatTree(root),
 		seaVal,
 		b.Data,
 		a.Data,
 	)
 }
 
-func CompareNode_search(fn interface{}, arg1, a *correct.TreeNode, b *student.TreeNode,
+func CompareNode_search(fn interface{}, arg1, a *solutions.TreeNode, b *student.TreeNode,
 	seaVal string) {
 	if a == nil && b == nil {
 		return
@@ -67,20 +67,20 @@ func CompareNode_search(fn interface{}, arg1, a *correct.TreeNode, b *student.Tr
 }
 
 func main() {
-	root := &correct.TreeNode{Data: "04"}
+	root := &solutions.TreeNode{Data: "04"}
 	rootS := &student.TreeNode{Data: "04"}
 
 	ins := []string{"01", "07", "05", "12", "02", "03", "10"}
 
 	for _, v := range ins {
-		root = correct.BTreeInsertData(root, v)
+		root = solutions.BTreeInsertData(root, v)
 		rootS = student.BTreeInsertData(rootS, v)
 	}
-	fn := interface{}(correct.BTreeSearchItem)
+	fn := interface{}(solutions.BTreeSearchItem)
 
 	ins = append(ins, "322")
 	for _, v := range ins {
-		selectedSol := correct.BTreeSearchItem(root, v)
+		selectedSol := solutions.BTreeSearchItem(root, v)
 		selectedStu := student.BTreeSearchItem(rootS, v)
 		CompareNode_search(fn, root, selectedSol, selectedStu, v)
 	}

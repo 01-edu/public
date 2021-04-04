@@ -1,4 +1,4 @@
-package correct
+package solutions
 
 type NodeL struct {
 	Data interface{}

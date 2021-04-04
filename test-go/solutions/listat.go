@@ -1,4 +1,4 @@
-package correct
+package solutions
 
 // returs the node in a given position
 func ListAt(l *NodeL, nbr int) *NodeL {

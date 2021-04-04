@@ -1,4 +1,4 @@
-package correct
+package solutions
 
 // merges the 2 lists in one (in the end of the first list)
 func ListMerge(l1 *List, l2 *List) {

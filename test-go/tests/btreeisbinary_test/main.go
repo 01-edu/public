@@ -6,7 +6,7 @@ import (
 	student "student"
 
 	"github.com/01-edu/public/test-go/lib"
-	"github.com/01-edu/public/test-go/tests/correct"
+	"github.com/01-edu/public/test-go/solutions"
 )
 
 func BTreeMinStu(root *student.TreeNode) *student.TreeNode {
@@ -16,16 +16,16 @@ func BTreeMinStu(root *student.TreeNode) *student.TreeNode {
 	return BTreeMinStu(root.Left)
 }
 
-func errorMessage_isbin(fn interface{}, root, a *correct.TreeNode, b *student.TreeNode) {
+func errorMessage_isbin(fn interface{}, root, a *solutions.TreeNode, b *student.TreeNode) {
 	lib.Fatalf("%s(\n%s\n) == %s instead of %s\n",
 		"BTreeIsBinary",
-		correct.FormatTree(root),
+		solutions.FormatTree(root),
 		b.Data,
 		a.Data,
 	)
 }
 
-func CompareNode_isbin(fn interface{}, arg1, a *correct.TreeNode, b *student.TreeNode) {
+func CompareNode_isbin(fn interface{}, arg1, a *solutions.TreeNode, b *student.TreeNode) {
 	if a == nil || b == nil {
 		lib.Fatalf("Expected %v instead of %v\n", a, b)
 	}
@@ -55,7 +55,7 @@ func CompareNode_isbin(fn interface{}, arg1, a *correct.TreeNode, b *student.Tre
 	}
 }
 
-func CompareReturn_isbin(fn1, fn2 interface{}, arg1 *correct.TreeNode, arg2 interface{}) {
+func CompareReturn_isbin(fn1, fn2 interface{}, arg1 *solutions.TreeNode, arg2 interface{}) {
 	arar1 := []interface{}{arg1}
 	arar2 := []interface{}{arg2}
 
@@ -64,13 +64,13 @@ func CompareReturn_isbin(fn1, fn2 interface{}, arg1 *correct.TreeNode, arg2 inte
 
 	for i, v := range out1.Results {
 		switch str := v.(type) {
-		case *correct.TreeNode:
+		case *solutions.TreeNode:
 			CompareNode_isbin(fn1, arg1, str, out2.Results[i].(*student.TreeNode))
 		default:
 			if !reflect.DeepEqual(str, out2.Results[i]) {
 				lib.Fatalf("%s(\n%s) == %s instead of %s\n",
 					"BTreeIsBinary",
-					correct.FormatTree(arg1),
+					solutions.FormatTree(arg1),
 					lib.Format(out2.Results...),
 					lib.Format(out1.Results...),
 				)
@@ -80,31 +80,31 @@ func CompareReturn_isbin(fn1, fn2 interface{}, arg1 *correct.TreeNode, arg2 inte
 }
 
 func main() {
-	root := &correct.TreeNode{Data: "04"}
+	root := &solutions.TreeNode{Data: "04"}
 	rootS := &student.TreeNode{Data: "04"}
 
 	ins := []string{"01", "07", "05", "12", "02", "03", "10"}
 
 	for _, v := range ins {
-		root = correct.BTreeInsertData(root, v)
+		root = solutions.BTreeInsertData(root, v)
 		rootS = student.BTreeInsertData(rootS, v)
 	}
 
-	CompareReturn_isbin(correct.BTreeIsBinary, student.BTreeIsBinary, root, rootS)
+	CompareReturn_isbin(solutions.BTreeIsBinary, student.BTreeIsBinary, root, rootS)
 
-	rootNB := &correct.TreeNode{Data: "04"}
+	rootNB := &solutions.TreeNode{Data: "04"}
 	rootNB_stu := &student.TreeNode{Data: "04"}
 	// Test a non-binarysearch tree
 	for _, v := range ins {
-		rootNB = correct.BTreeInsertData(rootNB, v)
+		rootNB = solutions.BTreeInsertData(rootNB, v)
 		rootNB_stu = student.BTreeInsertData(rootNB_stu, v)
 	}
 
-	min := correct.BTreeMin(rootNB)
+	min := solutions.BTreeMin(rootNB)
 	minStu := BTreeMinStu(rootNB_stu)
 
-	min.Left = &correct.TreeNode{Data: "123"}
+	min.Left = &solutions.TreeNode{Data: "123"}
 	minStu.Left = &student.TreeNode{Data: "123"}
 
-	CompareReturn_isbin(correct.BTreeIsBinary, student.BTreeIsBinary, rootNB, rootNB_stu)
+	CompareReturn_isbin(solutions.BTreeIsBinary, student.BTreeIsBinary, rootNB, rootNB_stu)
 }

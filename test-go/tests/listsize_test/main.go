@@ -4,13 +4,13 @@ import (
 	student "student"
 
 	"github.com/01-edu/public/test-go/lib"
-	"github.com/01-edu/public/test-go/tests/correct"
+	"github.com/01-edu/public/test-go/solutions"
 )
 
 type (
 	Node2  = student.NodeL
-	List2  = correct.List
-	NodeS2 = correct.NodeL
+	List2  = solutions.List
+	NodeS2 = solutions.NodeL
 	ListS2 = student.List
 )
 
@@ -41,10 +41,10 @@ func listPushBackTest2(l *ListS2, l1 *List2, data interface{}) {
 func main() {
 	link := &List2{}
 	link2 := &ListS2{}
-	table := []correct.NodeTest{}
-	table = correct.ElementsToTest(table)
+	table := []solutions.NodeTest{}
+	table = solutions.ElementsToTest(table)
 	table = append(table,
-		correct.NodeTest{
+		solutions.NodeTest{
 			Data: []interface{}{"Hello", "man", "how are you"},
 		},
 	)
@@ -52,10 +52,10 @@ func main() {
 		for i := 0; i < len(arg.Data); i++ {
 			listPushBackTest2(link2, link, arg.Data[i])
 		}
-		aux := correct.ListSize(link)
+		aux := solutions.ListSize(link)
 		aux2 := student.ListSize(link2)
 		if aux != aux2 {
-			lib.Fatalf("ListSize(%v) == %d instead of %d\n", correct.ListToString(link.Head), aux2, aux)
+			lib.Fatalf("ListSize(%v) == %d instead of %d\n", solutions.ListToString(link.Head), aux2, aux)
 		}
 		link = &List2{}
 		link2 = &ListS2{}
