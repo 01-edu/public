@@ -372,7 +372,7 @@ func ChallengeMainStdin(exercise, input string, args ...string) {
 		return fmt.Sprintf("echo $?\n%d\n$", code)
 	}
 	student, studentCode := run(path.Join("student", exercise))
-	solution, solutionCode := run(path.Join("github.com/01-edu/public/go/tests/solutions", exercise+"_prog"))
+	solution, solutionCode := run(path.Join("github.com/01-edu/public/test-go/solutions", exercise+"_prog"))
 	if solutionCode == 0 {
 		if studentCode != 0 {
 			Fatalln("Your program fails (non-zero exit status) when it should not :\n" +

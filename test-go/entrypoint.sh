@@ -44,7 +44,7 @@ if test "$ALLOWED_FUNCTIONS" && test "$FILE"; then
 	rc "$FILE" $ALLOWED_FUNCTIONS
 fi
 
-cd ~/public/go/tests
+cd ~/public/test-go
 
 # Compile and run test
 if command -v "${EXERCISE}_test" >/dev/null 2>&1; then

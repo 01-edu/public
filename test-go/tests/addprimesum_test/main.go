@@ -3,8 +3,8 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/public/go/tests/lib"
-	"github.com/01-edu/public/go/tests/lib/is"
+	"github.com/01-edu/public/test-go/lib"
+	"github.com/01-edu/public/test-go/lib/is"
 )
 
 func main() {

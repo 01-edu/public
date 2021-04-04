@@ -5,7 +5,7 @@ import (
 
 	student "student"
 
-	"github.com/01-edu/public/go/tests/func/correct"
+	"github.com/01-edu/public/test-go/tests/correct"
 )
 
 func main() {

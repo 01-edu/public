@@ -5,7 +5,7 @@ import (
 
 	student "student"
 
-	"github.com/01-edu/public/go/tests/lib"
+	"github.com/01-edu/public/test-go/lib"
 )
 
 const size = 8

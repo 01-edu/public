@@ -10,7 +10,7 @@ WORKDIR /piscine-go
 RUN go mod init piscine-go
 RUN go get github.com/01-edu/z01@v0.1.0
 
-WORKDIR /public/go/tests
+WORKDIR /public/test-go
 COPY go.* ./
 RUN go mod download
 COPY lib lib

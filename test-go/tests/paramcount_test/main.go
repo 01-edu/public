@@ -3,7 +3,7 @@ package main
 import (
 	"strconv"
 
-	"github.com/01-edu/public/go/tests/lib"
+	"github.com/01-edu/public/test-go/lib"
 )
 
 func main() {

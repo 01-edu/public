@@ -5,8 +5,8 @@ import (
 
 	student "student"
 
-	"github.com/01-edu/public/go/tests/lib"
-	"github.com/01-edu/public/go/tests/lib/base"
+	"github.com/01-edu/public/test-go/lib"
+	"github.com/01-edu/public/test-go/lib/base"
 )
 
 func printNbrBase(n int, b string) {
