@@ -2,7 +2,7 @@
 
 set -e
 
-cp -r /public/go/tests .
+cp -r /public .
 cp -a student piscine-go
 cd piscine-go
 
@@ -44,14 +44,13 @@ if test "$ALLOWED_FUNCTIONS" && test "$FILE"; then
 	rc "$FILE" $ALLOWED_FUNCTIONS
 fi
 
+cd ~/public/go/tests
+
 # Compile and run test
 if command -v "${EXERCISE}_test" >/dev/null 2>&1; then
 	# The exercise is a program
-	go build -o exe "./$EXERCISE"
 	"${EXERCISE}_test"
 else
 	# The exercise is a function
-	cd "$HOME/tests/func/${EXERCISE}_test"
-	go mod edit -replace "student=$HOME/piscine-go"
-	go run .
+	go run "./func/${EXERCISE}_test"
 fi

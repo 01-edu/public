@@ -8,6 +8,7 @@ import (
 	"math/rand"
 	"os"
 	"os/exec"
+	"path"
 	"reflect"
 	"strconv"
 	"strings"
@@ -282,9 +283,7 @@ type Output struct {
 func Monitor(fn interface{}, args []interface{}) (out Output) {
 	old := os.Stdout
 	r, w, err := os.Pipe()
-	if err != nil {
-		Fatalln("Cannot create pipe.")
-	}
+	panicIfNotNil(err)
 	os.Stdout = w
 	out.Results = Call(fn, args)
 	outC := make(chan string)
@@ -335,9 +334,17 @@ func Fatalf(format string, a ...interface{}) {
 	os.Exit(1)
 }
 
+func panicIfNotNil(err error) {
+	if err != nil {
+		panic(err)
+	}
+}
+
 func ChallengeMainStdin(exercise, input string, args ...string) {
-	run := func(name string) (string, int) {
-		cmd := exec.Command(name, args...)
+	run := func(pkg string) (string, int) {
+		binaryPath := path.Join(os.TempDir(), "binaries", path.Base(pkg))
+		panicIfNotNil(exec.Command("go", "build", "-o", binaryPath, pkg).Run())
+		cmd := exec.Command(binaryPath, args...)
 		if input != "" {
 			cmd.Stdin = bytes.NewBufferString(input)
 		}
@@ -346,7 +353,7 @@ func ChallengeMainStdin(exercise, input string, args ...string) {
 			if ee, ok := err.(*exec.ExitError); ok {
 				return string(b), ee.ExitCode()
 			}
-			Fatalln(err)
+			panic(err)
 		}
 		return string(b), 0
 	}
@@ -364,8 +371,8 @@ func ChallengeMainStdin(exercise, input string, args ...string) {
 	code := func(code int) string {
 		return fmt.Sprintf("echo $?\n%d\n$", code)
 	}
-	student, studentCode := run("./exe")
-	solution, solutionCode := run(exercise + "_prog")
+	student, studentCode := run(path.Join("student", exercise))
+	solution, solutionCode := run(path.Join("github.com/01-edu/public/go/tests/prog", exercise+"_prog"))
 	if solutionCode == 0 {
 		if studentCode != 0 {
 			Fatalln("Your program fails (non-zero exit status) when it should not :\n" +
