@@ -5,17 +5,18 @@ RUN apk add --no-cache git
 
 RUN go get golang.org/x/tools/cmd/goimports
 
-RUN mkdir -p /piscine-go
-RUN touch /piscine-go/go.mod
+WORKDIR /piscine-go
+RUN go mod init piscine-go
+RUN go get github.com/01-edu/z01@v0.1.0
 
 WORKDIR /public/go/tests
 COPY go.* ./
 RUN go mod download
-COPY func func
 COPY lib lib
 COPY prog prog
 RUN go get github.com/01-edu/rc
-RUN go install ./prog/...
+RUN go install $(grep -rl ChallengeMain ./prog | rev | cut -d/ -f2- | rev)
+
 RUN rm -rf /piscine-go
 
 COPY entrypoint.sh /usr/local/bin
