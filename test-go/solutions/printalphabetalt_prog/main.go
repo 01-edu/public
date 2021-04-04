@@ -1,8 +1,0 @@
-package main
-
-import "fmt"
-
-func main() {
-	fmt.Println("aBcDeFgHiJkLmNoPqRsTuVwXyZ")
-	fmt.Println("zYxWvUtSrQpOnMlKjIhGfEdCbA")
-}
