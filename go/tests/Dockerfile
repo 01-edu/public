@@ -15,8 +15,8 @@ COPY base base
 COPY func func
 COPY lib lib
 COPY prog prog
-COPY rc rc
-RUN go install ./rc ./prog/...
+RUN go get github.com/01-edu/rc
+RUN go install ./prog/...
 RUN rm -rf /piscine-go
 
 COPY entrypoint.sh /usr/local/bin
