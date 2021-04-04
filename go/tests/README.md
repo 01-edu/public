@@ -5,7 +5,7 @@ To run the tests make sure the two repositories are right next to each other:
 - github.com/01-edu/piscine-go
 - github.com/01-edu/public
 
-To test a program, run this command in this folder (`public/go/tests`):
+To test a function, run this command in this folder (`public/go/tests`):
 
 ```
 go run github.com/01-edu/public/go/tests/func/EXERCISE_test
