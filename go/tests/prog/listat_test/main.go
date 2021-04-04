@@ -8,8 +8,10 @@ import (
 	"github.com/01-edu/public/go/tests/lib"
 )
 
-type Node5 = student.NodeL
-type NodeS5 = correct.NodeL
+type (
+	Node5  = student.NodeL
+	NodeS5 = correct.NodeL
+)
 
 func nodePushBackList5(l1 *Node5, l2 *NodeS5, data interface{}) (*Node5, *NodeS5) {
 	n1 := &Node5{Data: data}

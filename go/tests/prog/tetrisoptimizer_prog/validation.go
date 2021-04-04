@@ -1,9 +1,11 @@
 package main
 
-const blockSize = 20
-const dot = '.'
-const hashTag = '#'
-const newLine = '\n'
+const (
+	blockSize = 20
+	dot       = '.'
+	hashTag   = '#'
+	newLine   = '\n'
+)
 
 func isValidBlock(data []byte) bool {
 	numDots, numHashtags := 0, 0

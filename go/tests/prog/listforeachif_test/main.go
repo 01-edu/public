@@ -10,10 +10,12 @@ import (
 	"github.com/01-edu/public/go/tests/lib"
 )
 
-type Node8 = student.NodeL
-type List8 = correct.List
-type NodeS8 = correct.NodeL
-type ListS8 = student.List
+type (
+	Node8  = student.NodeL
+	List8  = correct.List
+	NodeS8 = correct.NodeL
+	ListS8 = student.List
+)
 
 // function to apply, in listforeachif
 func addOneS(node *NodeS8) {

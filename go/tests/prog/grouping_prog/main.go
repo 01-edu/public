@@ -52,6 +52,7 @@ func brackets(regexp, text string) {
 		}
 	}
 }
+
 func main() {
 	if len(os.Args) == 3 {
 		brackets(os.Args[1], os.Args[2])

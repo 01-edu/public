@@ -10,10 +10,12 @@ import (
 	"github.com/01-edu/public/go/tests/lib"
 )
 
-type Node10 = student.NodeL
-type List10 = correct.List
-type NodeS10 = correct.NodeL
-type ListS10 = student.List
+type (
+	Node10  = student.NodeL
+	List10  = correct.List
+	NodeS10 = correct.NodeL
+	ListS10 = student.List
+)
 
 func listToStringStu12(l *ListS10) string {
 	var res string

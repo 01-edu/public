@@ -10,8 +10,10 @@ import (
 	"github.com/01-edu/public/go/tests/lib"
 )
 
-type NodeI13 = student.NodeI
-type NodeIS13 = correct.NodeI
+type (
+	NodeI13  = student.NodeI
+	NodeIS13 = correct.NodeI
+)
 
 func printListStudent1(n *NodeI13) string {
 	var res string

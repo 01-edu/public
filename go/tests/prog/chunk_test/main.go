@@ -20,7 +20,7 @@ func chunk(a []int, ch int) {
 		result = append(result, slice)
 	}
 	if len(a) > 0 {
-		result = append(result, a[:len(a)])
+		result = append(result, a[:])
 	}
 	fmt.Println(result)
 }

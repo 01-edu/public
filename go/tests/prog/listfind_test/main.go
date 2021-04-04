@@ -8,10 +8,12 @@ import (
 	"github.com/01-edu/public/go/tests/lib"
 )
 
-type Node9 = student.NodeL
-type List9 = correct.List
-type NodeS9 = correct.NodeL
-type ListS9 = student.List
+type (
+	Node9  = student.NodeL
+	List9  = correct.List
+	NodeS9 = correct.NodeL
+	ListS9 = student.List
+)
 
 func listPushBackTest9(l1 *ListS9, l2 *List9, data interface{}) {
 	n := &Node9{Data: data}

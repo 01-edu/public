@@ -10,14 +10,16 @@ import (
 )
 
 func main() {
-	separators := []string{"!=HA=!",
+	separators := []string{
+		"!=HA=!",
 		"!==!",
 		"    ",
 		"|=choumi=|",
 		"|<=>|",
 		lib.RandStr(3, lib.RuneRange('A', 'Z')),
 		"<<==123==>>",
-		"[<>abc<>]"}
+		"[<>abc<>]",
+	}
 
 	type node struct {
 		s   string

@@ -18,7 +18,6 @@ func main() {
 
 		for _, operator := range operatorsTable {
 			table = append(table, firstArg+" "+operator+" "+secondArg)
-
 		}
 	}
 

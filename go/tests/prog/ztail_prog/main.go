@@ -21,6 +21,7 @@ func notNil(err error) bool {
 	}
 	return false
 }
+
 func main() {
 	var bytes int64
 	flag.Int64Var(&bytes, "c", 0, "output the last NUM bytes")

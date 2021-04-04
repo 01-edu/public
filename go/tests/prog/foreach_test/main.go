@@ -17,12 +17,15 @@ func forEach(f func(int), a []int) {
 func add0(i int) {
 	fmt.Println(i)
 }
+
 func add1(i int) {
 	fmt.Println(i + 1)
 }
+
 func add2(i int) {
 	fmt.Println(i + 2)
 }
+
 func add3(i int) {
 	fmt.Println(i + 3)
 }
