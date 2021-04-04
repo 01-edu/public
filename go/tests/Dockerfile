@@ -11,7 +11,6 @@ RUN touch /piscine-go/go.mod
 WORKDIR /public/go/tests
 COPY go.* ./
 RUN go mod download
-COPY base base
 COPY func func
 COPY lib lib
 COPY prog prog
