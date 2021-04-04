@@ -8,7 +8,7 @@ import (
 
 // Function that return the number of active bits in the number passed as the argument
 func activeBits(n int) (total int) {
-	for ; n > 1; n = n / 2 {
+	for ; n > 1; n /= 2 {
 		total += n % 2
 	}
 	total += n

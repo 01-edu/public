@@ -13,7 +13,7 @@ func convertNbrBase(n int, base string) string {
 
 	for n >= length {
 		result = string(base[(n%length)]) + result
-		n = n / length
+		n /= length
 	}
 	result = string(base[n]) + result
 
@@ -51,8 +51,8 @@ func main() {
 	table = append(table, node{
 		nbr:      "101011",
 		baseFrom: "01",
-		baseTo:   "0123456789"},
-	)
+		baseTo:   "0123456789",
+	})
 
 	for _, arg := range table {
 		lib.Challenge("ConvertBase", student.ConvertBase, convertBase, arg.nbr, arg.baseFrom, arg.baseTo)
