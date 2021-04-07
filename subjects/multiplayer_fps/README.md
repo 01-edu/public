@@ -4,37 +4,56 @@
 
 Write your own version of the game [maze wars](https://www.youtube.com/watch?v=5V5X5SbSjns) you should recreate all the elements of the game, but you have freedom to implement the user interface.
 
-In the bare minimum you should implement the in the user interface:
+#### Minimum Requirements for the User Interface:
 
-  - A mini map where the player can see he's own position and the whole "game world".
+- A mini map where the player can see he's own position and the whole "game world".
 
-  - The graphics of the game: the walls and the other players (see [maze_wars](https://www.youtube.com/watch?v=5V5X5SbSjns) for more details)
-    - You should also display the frame rate of the game in the screen.
+- The graphics of the game: the walls and the other players (see [maze_wars](https://www.youtube.com/watch?v=5V5X5SbSjns) for more details)
 
-  - A peer-to-peer network that will allow other players to join your server and play against each other.
+- Finally you have to display the frame rate of the game on the screen.
 
-    - Your implementation should allow one client and the server to run in the same machine and allow all the other clients to connect to the server in other machines
+- The game should have at least 3 levels with increasing difficulty.
 
-You have to develop the game server and also a client application:
+#### Architecture of the application
 
-- The server must accept all the connections possible.
+- A peer-to-peer network that will allow other players to join your server and play against each other.
 
-- When the client is initialized it should ask for the :
+- Your implementation should allow one client and the server to run in the same machine and all the other clients to connect from different computers.
 
-  - IP address of the server, allowing the same client application to connect to any server.
+- Use the UDP protocol to enable the communication between the clients and the server.
 
-  - After this it should ask also for a name.
+
+#### You have to develop the game server and also a client application:
+
+- The server must accept as much connections as possible (the minimum should be 10).
+
+- When the client is initialized it should ask for:
+
+  - The IP address of the server, allowing the client application to connect to any server.
+
+  - After this, it should ask also for a name.
 
   - Example:
   Assuming that you can to connect to a server in your same computer.
 
-  ```console
-  path/to/client $ cargo run 192.
-  Enter IP Adress: 127.0.0.1
-  Enter Name: name
-  Starting...
-  path/to/client $
-  ```
-    - Note: If you want to connect to a server in another computer you will have to connect to the Ip address of the server computer.
+```console
+path/to/client $ cargo run
+Enter IP Address: 198.1.1.34:34254
+Enter Name: name
+Starting...
+path/to/client $
+```
 
-- You can use any language that you prefer.
+#### Performance Requirements
+
+- The game should always have a frame rate above 50 fps (frames per second).
+
+#### Bonus
+
+- Implement a level editor to allow player to create they're own mazes.
+
+- Implement an algorithm that generates automatically new mazes.
+
+- Implement A.I. players to allow playing the game without having to wait for more people to join to the server.
+
+- For the basic implementation you can initialize the game from the command line. As a bonus you can implement the initialization of the game as part of the graphical interface and save a history of the hosts with an alias so it's easier to reconnect to known servers.
