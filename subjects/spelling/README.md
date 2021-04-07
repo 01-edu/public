@@ -16,14 +16,18 @@ So, if the program generates the number:
 - 1002 your function will return the string "one thousand two".
 - 1000000 your function will return the string "one million"
 
+Only positive numbers will be tested. (Up to a million).
+
 ### Notions
 
-- https://doc.rust-lang.org/book/ch18-00-patterns.html
+- [patterns](https://doc.rust-lang.org/book/ch18-00-patterns.html)
 
-### Expected functions
+### Expected function
 
 ```rust
-pub fn spell(n: u64) -> String {}
+pub fn spell(n: u64) -> String {
+
+}
 ```
 
 ### Usage
@@ -31,7 +35,7 @@ pub fn spell(n: u64) -> String {}
 Here is a program to test your function.
 
 ```rust
-use spelling::spelling;
+use spelling::*;
 
 fn main() {
     println!("{}", spell(348));
@@ -39,7 +43,7 @@ fn main() {
 }
 ```
 
-And its output
+And its output:
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run

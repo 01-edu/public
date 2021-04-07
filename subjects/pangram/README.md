@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Determine if the string is a pangram.
+Create a `function` is_pangram which will determine whether or not a string is a pangram.
 
-A pangram is a sentence using every letter of the alphabet at least once.
+A pangram is a sentence which uses every letter of the alphabet at least once.
 
 Example:
 
@@ -12,12 +12,14 @@ Example:
 
 ### Notions
 
-- https://doc.rust-lang.org/book/ch18-00-patterns.html
+- [patterns](https://doc.rust-lang.org/book/ch18-00-patterns.html)
 
 ### Expected functions
 
 ```rust
-pub fn is_pangram(s: &str) -> bool {}
+pub fn is_pangram(s: &str) -> bool {
+
+}
 ```
 
 ### Usage
@@ -25,7 +27,7 @@ pub fn is_pangram(s: &str) -> bool {}
 Here is a program to test your function.
 
 ```rust
-use pangram::pangram;
+use pangram::*;
 
 fn main() {
     println!(
@@ -36,7 +38,7 @@ fn main() {
 }
 ```
 
-And its output
+And its output:
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run

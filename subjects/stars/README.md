@@ -8,7 +8,9 @@ parameter and returns a string of stars (asterisks) 2^n long (2 to the nth power
 ### Expected functions
 
 ```rust
-pub fn stars(n: u32) -> String {}
+pub fn stars(n: u32) -> String {
+
+}
 ```
 
 ### Usage
@@ -25,7 +27,7 @@ fn main() {
 }
 ```
 
-And its output
+And its output:
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run

@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Complete the function "make_diamond" that takes a letter as input, and outputs it in a diamond shape.
+Build the **function** `make_diamond` which takes a letter as input, and outputs it in a diamond shape.
 
 Rules:
 
@@ -17,12 +17,14 @@ Rules:
 
 ### Notions
 
-- https://doc.rust-lang.org/book/ch18-03-pattern-syntax.html
+- [pattern syntax](https://doc.rust-lang.org/book/ch18-03-pattern-syntax.html)
 
 ### Expected functions
 
 ```rust
-pub fn get_diamond(c: char) -> Vec<String> {}
+pub fn get_diamond(c: char) -> Vec<String> {
+
+}
 ```
 
 ### Usage
@@ -30,15 +32,15 @@ pub fn get_diamond(c: char) -> Vec<String> {}
 Here is a program to test your function.
 
 ```rust
-use diamond_creation::diamond_creation;
+use diamond_creation::*;
 
 fn main() {
-    println!("{:?}", make_diamond('A'));
-    println!("{:?}", make_diamond('C'));
+    println!("{:?}", get_diamond('A'));
+    println!("{:?}", get_diamond('C'));
 }
 ```
 
-And its output
+And its output:
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run

@@ -2,12 +2,10 @@
 
 ### Instructions
 
-In this exercise it will be given an example of a sequence of numbers.
+In this exercise the logic of sequence of numbers will be tested.
+For this you have to create a function `number_logic` which will take a number `u32` and return `true` if the number is the sum of its own digits, each raised to the power of the number of digits, and `false` otherwise.
 
-Your purpose is to determinate if the sequence returns true or false.
-For this you have to create a function `number_logic` that will take a number `u32` and return true if the number is the sum of its own digits, each raised to the power of the number of digits, and false otherwise.
-
-Example:
+Examples:
 
 - 9 returns true, because 9 = 9^1 = 9
 - 10 returns false, because 10 != 1^2 + 0^2 = 1
@@ -16,12 +14,14 @@ Example:
 
 ### Notions
 
-- https://doc.rust-lang.org/book/ch18-00-patterns.html
+- [patterns](https://doc.rust-lang.org/book/ch18-00-patterns.html)
 
-### Expected functions
+### Expected function
 
 ```rust
-pub fn number_logic(num: u32) -> bool {}
+pub fn number_logic(num: u32) -> bool {
+
+}
 ```
 
 ### Usage
@@ -29,7 +29,7 @@ pub fn number_logic(num: u32) -> bool {}
 Here is a program to test your function.
 
 ```rust
-use logic_number::logic_number;
+use logic_number::*;
 
 fn main() {
     let array = [9, 10, 153, 154];
@@ -48,7 +48,7 @@ fn main() {
 }
 ```
 
-And its output
+And its output:
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run

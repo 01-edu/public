@@ -7,14 +7,23 @@ This function must allow you to swap the values of the struct.
 
 ### Notions
 
-- https://doc.rust-lang.org/book/ch18-00-patterns.html
+- [patterns](https://doc.rust-lang.org/book/ch18-00-patterns.html)
 
 ### Expected functions
 
 ```rust
+pub struct Color {
+    pub r: u8,
+    pub g: u8,
+    pub b: u8,
+    pub a: u8,
+}
+
 impl Color {
-    pub fn swap(mut self, first: u8, second: u8) -> Color {}
+    pub fn swap(mut self, first: u8, second: u8) -> Color {
+
     }
+}
 ```
 
 ### Usage
@@ -22,14 +31,7 @@ impl Color {
 Here is a program to test your function.
 
 ```rust
-use rgb_match::rgb_match;
-
-struct Color {
-    r: u8,
-    g: u8,
-    b: u8,
-    a: u8,
-}
+use rgb_match::*;
 
 fn main() {
     let c = Color {
@@ -57,7 +59,7 @@ fn main() {
 }
 ```
 
-And its output
+And its output:
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run

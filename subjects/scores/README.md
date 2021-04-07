@@ -8,7 +8,7 @@ Create a function `score` that given a string, computes the score for that given
 Each letter has their value, you just have to sum the values of the letters in the
 given string.
 
-You'll need these:
+You will need these:
 
 | Letter                       | Value |
 | ---------------------------- | :---: |
@@ -22,12 +22,14 @@ You'll need these:
 
 ### Notions
 
-- https://doc.rust-lang.org/book/ch18-00-patterns.html
+- [patterns](https://doc.rust-lang.org/book/ch18-00-patterns.html)
 
 ### Expected functions
 
 ```rust
-pub fn score(word: &str) -> u64 {}
+pub fn score(word: &str) -> u64 {
+
+}
 ```
 
 ### Usage
@@ -35,7 +37,7 @@ pub fn score(word: &str) -> u64 {}
 Here is a program to test your function.
 
 ```rust
-use scores::scores;
+use scores::*;
 
 fn main() {
     println!("{}", score("a"));
