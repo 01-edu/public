@@ -2,26 +2,27 @@
 
 ### Instructions
 
-Create a method `new` that takes one number `usize` and initializes the `Number` struct.
+Create a method `new` that takes one number `usize` and initializes the struct `Number`.
 
-This method will have to determinate if the given number is even or odd, if it is even you will have to increment one to the odd number and
-if it is odd you have to increment one to the even number.
+This method will have to determinate if the given number is even or odd. If it is even you will have to increment it by one to the next odd number and if it is odd you have to increment by one to the next even number.
 
 After that you will implement an iterator for the struct `Number` that returns a tuple (usize,usize,usize) containing each field of the struct Number.
 
 The first position of the tuple will be the even number, the second will be the odd number, and the third will be the factorial number.
 
-So the purpose is to return the given number in the right position, if it is even it will be at the first position, and if it is odd it will be in the second position. Apart from that you have to return the factorial of the given number in the third position.
+So the purpose is to return the given number in the right position. If it is even it will be at the first position, and if it is odd it will be in the second position. Apart from that you have to return the factorial of the given number in the third position.
 
 ### Notions
 
-- https://doc.rust-lang.org/std/iter/trait.Iterator.html
+- [Trait Iterator](https://doc.rust-lang.org/std/iter/trait.Iterator.html)
 
 ### Expected functions
 
 ```rust
 impl Number {
-    pub fn new(nbr: usize) -> Number {}
+    pub fn new(nbr: usize) -> Number {
+
+    }
 }
 
 impl Iterator for Number {
@@ -34,7 +35,7 @@ impl Iterator for Number {
 Here is a program to test your function.
 
 ```rust
-use iterators::iterators;
+use iterators::*;
 
 struct Number {
     even: usize,
@@ -55,7 +56,7 @@ fn main() {
 }
 ```
 
-And its output
+And its output:
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run

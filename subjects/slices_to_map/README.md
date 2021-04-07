@@ -8,6 +8,7 @@ Create a function that borrows two slices and returns a hashmap where the first 
 
 ```rust
 pub fn slices_to_map(&[T], &[U]) -> HashMap<&T, &U> {
+
 }
 ```
 
@@ -16,6 +17,8 @@ pub fn slices_to_map(&[T], &[U]) -> HashMap<&T, &U> {
 Here is a program to test your function.
 
 ```rust
+use slices_to_map::*;
+
 fn main() {
 	let keys = ["Olivia", "Liam", "Emma", "Noah", "James"];
 	let values = [1, 3, 23, 5, 2];
@@ -27,6 +30,6 @@ And its output
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run
-{"Liam": 3, "James": 2, "Emma": 23, "Noah": 5, "Olivia": 1}
+{"James": 2, "Liam": 3, "Emma": 23, "Noah": 5, "Olivia": 1}
 student@ubuntu:~/[[ROOT]]/test$
 ```

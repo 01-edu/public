@@ -6,14 +6,21 @@ Create a function `get_products` that takes a vector of integers, and returns a 
 of each index. For this exercise to be correct you will have to return the product of every index
 except the current one.
 
+Examples: [1,2,3,4]
+
+- for the number `1` we get `2*3*4 = 24`
+- for the number `3` we get `1*2*4 = 8`
+
 ### Notions
 
-- https://doc.rust-lang.org/std/iter/trait.Iterator.html
+- [Trait iterator](https://doc.rust-lang.org/std/iter/trait.Iterator.html)
 
 ### Expected functions
 
 ```rust
-pub fn get_products(arr: Vec<usize>) -> Vec<usize> {}
+pub fn get_products(arr: Vec<usize>) -> Vec<usize> {
+
+}
 ```
 
 ### Usage
@@ -30,7 +37,7 @@ fn main() {
 }
 ```
 
-And its output
+And its output:
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run
