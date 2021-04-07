@@ -26,6 +26,7 @@ Define:
 ### Notions
 
 [Crate rand](https://docs.rs/rand/0.5.0/rand/)
+[Enums](https://doc.rust-lang.org/book/ch06-00-enums.html)
 
 ### Expected Functions and Structures
 
