@@ -20,9 +20,9 @@
 
 ###### Is the CPU type provided by the application the same as the "model name" present in the cpuinfo file?
 
-##### Try and run the application and search for the system monitor
+##### Try and run the application and search for the system monitor.
 
-###### Can you confirm that their is a tabbed section?
+###### Can you confirm that there is a tabbed section?
 
 ###### And if so, does it have the following tabs : "CPU", "Fan", "Thermal" and "Power"?
 
@@ -46,7 +46,7 @@
 
 ###### Is the temperature the same as in the application?
 
-##### Try and increase the computers temperature (without braking anything), and look at the thermal graph.
+##### Try and increase the computers temperature (without breaking anything), and look at the thermal graph.
 
 ###### Is the temperature increasing accordingly?
 
@@ -66,7 +66,7 @@
 
 ###### Can you confirm that both usage and total(RAM) are the same as in the application?
 
-##### Tey and run the application and search for the SWAP, them run the command `"free -h"` and compare the values.
+##### Try and run the application and search for the SWAP, them run the command `"free -h"` and compare the values.
 
 ###### Can you confirm that both usage and total(SWAP) are the same as in the application?
 
@@ -80,15 +80,15 @@
 
 ##### Try and run the application, then use the filter to search for the process `"monitor"`.
 
-###### Where you able to filter the table?
+###### Were you able to filter the table?
 
 ##### Try and run the command `"top"`, then search for the process `"monitor"`.
 
 ###### Are the values from each column the same as in the command `"top"`?
 
-##### Try and run select from the table three process.
+##### Try and run the application, then select from the table three processes.
 
-###### Has it possible to select three processes?
+###### Was it possible to select three processes?
 
 ##### Try and run the application and search for the ip address, then run the command `"ifconfig"`.
 

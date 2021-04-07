@@ -4,37 +4,37 @@
 
 The objective for this project is to show that you have acquired programming logic and that you are able to adapt to new languages.
 
-The programming language you are about to use is [C++](https://en.wikipedia.org/wiki/C%2B%2B). It will not be asked to create
-a project from scratch, instead you will have **to add features or fix the code of a given application**.
+The programming language you are about to use is [C++](https://en.wikipedia.org/wiki/C%2B%2B). Creating
+a project from scratch will not be asked, instead you will have **to add features or fix the code of a given application**.
 
-The application you are about to work on is a [**Desktop System Monitor**](https://en.wikipedia.org/wiki/System_monitor). The app will monitor the computers system resources and performance, such as CPU, RAM, SWAP, Fan, Network and more.
+The application you are about to work on is a [**Desktop System Monitor**](https://en.wikipedia.org/wiki/System_monitor). The app will monitor the computer system resources and performance, such as CPU, RAM, SWAP, Fan, Network and more.
 For the GUI you will use the [_Dear ImGui_](https://github.com/ocornut/imgui/wiki#about-the-imgui-paradigm) library for C++.
 
 ### Instructions
 
 #### **Dear ImGui**
 
-As stated above the GUI you are going to use is _Dear ImGui_ there are somethings you should know about this library/API.
+As stated above the GUI you are going to use is _Dear ImGui_ there are some notions you should know about this library/API.
 
-The first important point to be aware is that ImGui is an **immediate mode graphic user interface**, as the name clearly says "ImGui".
-For better understanding there are two types of UIs, **retained mode** and **immediate mode**.
+The first important point to be aware of is that ImGui is an **immediate mode graphic user interface**, as the name implies it: "ImGui".
+There are two types of UIs, **retained mode** and **immediate mode**.
 
-- **Immediate mode**: application state is separated from the graphics library. It’s the application responsibility for drawing commands when necessary. In other words, in immediate mode the client calls directly cause rendering of graphics objects to the display.
+- **Immediate mode**: the application state is separated from the graphics library. It is the application responsibility for drawing commands when necessary. In other words, in immediate mode the client calls directly results in the rendering of graphics objects to the display.
 
-- **Retained mode**: the client calls do not directly cause actual rendering, but instead updates an abstract internal model, which is maintained within the library's data space. You can see more about this mode [here](https://en.wikipedia.org/wiki/Retained_mode).
+- **Retained mode**: the client calls do not directly cause actual rendering, but instead update an abstract internal model, which is maintained within the library's data space. You can see more about this mode [here](https://en.wikipedia.org/wiki/Retained_mode).
 
 For this API there is no need for specific builds, you can add the files to your existing project.
-To integrate Dear ImGui you must use a backend, this backend passes mouse/keyboard/gamepad inputs and a variety of settings. It is
+To integrate `Dear ImGui` you must use a backend, this backend passes mouse/keyboard/gamepad inputs and a variety of settings. It is
 in charge of rendering the resulting vertices.
 
-The backend will be provided by us, in a file system described in the next topic.
+The backend will be provided by us, in a file system described in the next paragraph.
 You will have to install `sdl` by running the command `apt install libsdl2-dev`.
 
 ---
 
 #### **File System**
 
-The file system provided, [here](https://assets.01-edu.org/system-monitor/system-monitor.zip), will contain all the ImGui IPA, you can better understand the fs referring to what is listed below.
+The file system provided, [here](https://assets.01-edu.org/system-monitor/system-monitor.zip), will contain all the `ImGui IPA`. For easier understanding, see below a representation of the fs.
 
 ```console
 $ tree system-monitor
@@ -75,15 +75,14 @@ $ tree system-monitor
 
 #### **Linux and Proc**
 
-To monitor the computers system resources and performance you will have to use the `/proc` filesystem.
+To monitor the computer system resources and performance you will have to use the `/proc` filesystem.
 
-The `/proc` filesystem is a virtual system that does not exist on disk, this system is created by the kernel when the system boots, and destroyed by it
-when the system shuts down.
+The `/proc` filesystem is a virtual system that does not exist on disk. This system is created by the kernel when the system boots, and destroyed by it when the system shuts down.
 
-This filesystem contains information about the system, from the CPU, to memory, to active processes and much more. For this reason it can be regarded as
-a control and information centre for the kernel. As a matter of fact, allot of the system utilities are simple calls to files in this directory.
+This filesystem contains information about the system, from the CPU, to memory, to active processes and much more. For this reason, it can be regarded as
+a control and information center for the kernel. As a matter of fact, a lot of the system utilities are simple calls to files in this directory.
 
-You can acquire more knowledge about this filesystem by taking a look to the `proc` manuel page (`man proc`).
+You can acquire more knowledge about this filesystem by taking a look to the `proc` manual page (`man proc`).
 
 ---
 
@@ -95,17 +94,18 @@ For this project you must present the following monitorization:
   - The type of OS (Operating System).
   - The user logged into the computer.
   - The computer name, this being the **hostname**.
-  - The total number of tasks/processes that are currently running, sleeping, uninterrruptible, zombie, traced/stopped or interrupted.
+  - The total number of tasks/processes that are currently running, sleeping, uninterruptible, zombie, traced/stopped or interrupted.
   - Type of CPU
   - A tabbed section containing `CPU`, `Power`, `Fan` and `Thermal` information, this information include a performance graphic for all those topics.
-    This graph should contain some kind of checkbox or button to be able to stop the animation whenever the user desires to do so, and two slider bars.
-    The first slider bar should be able to control the `FPS` of the graph, and the second slide bar should control the `y` scale of the graph.
+    This graph should contain some kind of checkbox or button to be able to stop the animation whenever the user desires to do so.
+    Additionally, it should also have two slider bars.
+    The first slider bar should be able to control the `FPS` of the graph, and the second slider bar should control the `y` scale of the graph.
 
-    - `CPU` should present this graph with a overlay text saying the current percentage of the CPU.
+    - `CPU` should present this graph with an overlay text saying the current percentage of the CPU.
 
     - `Fan`, should include the following information, the status of the fan, (enable/active), the current speed and the level. And should also present the graph stated above.
 
-    - `Thermal`, should present the graph stated above with a overlay text saying the current temperature of the computer.
+    - `Thermal`, should present the graph stated above with an overlay text saying the current temperature of the computer (usually the cpu sensor).
 
     example :
 
@@ -132,15 +132,15 @@ For this project you must present the following monitorization:
   - A tab bar that should contain two tables :
     - `RX` (network receiver) containing the following data : bytes, packets, errs, drop, fifo, frame, compressed and multicast.
     - `TX` (network transmitter) containing the following data : bytes, packets, errs, drop, fifo, colls, carrier and compressed.
-  - It should also contain a tabbed section for both `RX` and `TX`, those sections should display a visual usage (ex: progress bar), of all network present on the computer. This visual display should obey the following rules:
+  - It should also contain a tabbed section for both `RX` and `TX`, those sections should display a visual usage (ex: a progress bar), of all network present on the computer. This visual display should obey the following rules:
     - Each network should be converted from **bytes** to **GB**, **KB** or **MB** depending on the value. It should not display values that
-      are to big or to small. In other words it should be adjustable.
+      are too big or too small. In other words it should be adjustable.
 
       example :
 
       **452755738 bytes** => **431.78 MB**.       // perfect\
-      **452755738 bytes** => **0.42 GB**.         // to small\
-      **452755738 bytes** => **442144.28.6 KB**.  // to big
+      **452755738 bytes** => **0.42 GB**.         // too small\
+      **452755738 bytes** => **442144.28.6 KB**.  // too big
 
   - The visual display should go from 0GB to 2GB
 
