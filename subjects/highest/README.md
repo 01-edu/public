@@ -6,9 +6,10 @@ In this exercise a `Numbers` struct will be given.
 
 These methods have to be written:
 
-- `List` that returns an `array` with every number in the struct
-- `Latest` that returns an `Option<u32>` with the last added number
-- `Highest` that return an `Option<u32>` with the highest number from the list,
+- `new` create a new instance of Number.
+- `List` that returns an `array` with every number in the struct.
+- `Latest` that returns an `Option<u32>` with the last added number.
+- `Highest` that return an `Option<u32>` with the highest number from the list.
 - `Highest_Three` that returns a `Vec<u32>` with the three highest numbers.
 
 ### Notions
@@ -18,6 +19,8 @@ These methods have to be written:
 ### Expected functions
 
 ```rust
+pub fn new(&[u32]) -> Self {}
+
 pub fn List(&self) -> &[u32] {}
 
 pub fn Latest(&self) -> Option<u32> {}

@@ -2,10 +2,9 @@
 
 ### Instructions
 
-Create a method `new` that takes one number `usize` and initializes the `Number` struct.
+Create a method `new` that takes one number `usize` and initializes the struct `Number`.
 
-This method will have to determinate if the given number is even or odd. If it is even you will have to increment it by one to the next odd number and
-if it is odd you have to increment by one to the next even number.
+This method will have to determinate if the given number is even or odd. If it is even you will have to increment it by one to the next odd number and if it is odd you have to increment by one to the next even number.
 
 After that you will implement an iterator for the struct `Number` that returns a tuple (usize,usize,usize) containing each field of the struct Number.
 
