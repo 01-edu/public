@@ -72,7 +72,7 @@ Here are the list of tables that you are allowed to query (it will be only provi
   | 2   |  xp  |   1700 |        2 |      2 |
   | 3   |  xp  |    175 |       64 |      3 |
 
-- **Progress_view table**:
+- **Progress table**:
 
   | id  | userId | objectId | grade |
   | --- | :----: | -------: | ----: |
