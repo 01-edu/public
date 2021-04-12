@@ -1,4 +1,4 @@
-## 🌟 Wololo
+## 🌟 Wololo 🧙
 
 ### Converting types
 
@@ -43,9 +43,15 @@ type.
 
 Using the magical power of functions, execute the following conversions:
 
-- Declare a `stringFromNumber` variable of the converted value of `num` to a `string`
-- Declare a `stringFromBoolean` variable of the converted value of `bool` to a `string`
-- Declare a `numberFromString` variable of the converted value of `str` to a `number`
-- Declare a `numberFromBoolean` variable of the converted value of `bool` to a `number`
-- Declare a `booleanFromString` variable of the converted value of `str` to a `boolean`
-- Declare a `booleanFromNumber` variable of the converted value of `num` to a `boolean`
+- Declare a `stringFromNumber` variable of the converted value of `num` to a
+  `string`
+- Declare a `stringFromBoolean` variable of the converted value of `bool` to a
+  `string`
+- Declare a `numberFromString` variable of the converted value of `str` to a
+  `number`
+- Declare a `numberFromBoolean` variable of the converted value of `bool` to a
+  `number`
+- Declare a `booleanFromString` variable of the converted value of `str` to a
+  `boolean`
+- Declare a `booleanFromNumber` variable of the converted value of `num` to a
+  `boolean`

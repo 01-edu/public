@@ -1,4 +1,4 @@
-## Pop Art
+## Pop Art 🎨
 
 ### Instructions
 

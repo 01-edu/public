@@ -1,4 +1,4 @@
-## 🌟 Parenting
+## 🌟 Parenting 👨‍👧
 
 You are now beginning **BONUS** exercises, those are made to make you explore JS
 a bit more by yourself and show you more obscure / weird aspects of the

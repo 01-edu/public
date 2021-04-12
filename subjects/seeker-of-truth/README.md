@@ -2,15 +2,19 @@
 
 ### Truthy and Falsy
 
-In JS, all values are either **truthy** or **falsy**, this means if used in a condition, truthy values will validate the condition while falsy values would not.
+In JS, all values are either **truthy** or **falsy**, this means if used in a
+condition, truthy values will validate the condition while falsy values would
+not.
 
 Here is the list of falsy values:
+
 - `undefined` and `null`
 - the numbers `0` and `NaN`
 - the empty string `''`
 - and the boolean `false` of course
 
-All other values are truthy, note that empty arrays and empty objects are truthy, but the empty string is not.
+All other values are truthy, note that empty arrays and empty objects are
+truthy, but the empty string is not.
 
 ```js
 if ('') {
@@ -24,7 +28,8 @@ if ('hello') {
 
 ### Operator `!`
 
-The `!` (NOT operator) can be used to convert a truthy value to `false` or a falsy value to `true`.
+The `!` (NOT operator) can be used to convert a truthy value to `false` or a
+falsy value to `true`.
 
 example:
 
@@ -35,16 +40,12 @@ let noMoney = !money
 console.log(noMoney) // true
 ```
 
-In this case, 0 is falsy, so the `!` return the value `true` 
+In this case, 0 is falsy, so the `!` return the value `true`
 
 ### Instructions
 
-R
+Seek the truth and claim your verdict !
 
-```js
-let truth = 0
-
-if (!truth) {
- console.log()
-}
-```
+- Log `'The truth was spoken.'` if the value of the provided variable `truth` is
+  truthy
+- Log `'Lies !!!!'` if the value of the provided variable `truth` is falsy

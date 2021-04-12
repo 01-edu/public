@@ -1,0 +1,22 @@
+[
+  {
+    "description": "Test a traveler that is still has the virus",
+    "code": "let traveler = {\n  alreadyHadTheVirus: true,\n  recovered: false,\n  isVaccinated: false,\n}\n\n// Your code\n\nequal(traveler.isImmune, false)"
+  },
+  {
+    "description": "Test a traveler that has recovered",
+    "code": "let traveler = {\n  alreadyHadTheVirus: true,\n  recovered: true,\n  isVaccinated: false,\n}\n\n// Your code\n\nequal(traveler.isImmune, true)"
+  },
+  {
+    "description": "Test a traveler who never had the virus and isn't vaccinated",
+    "code": "let traveler = {\n  alreadyHadTheVirus: false,\n  recovered: false,\n  isVaccinated: false,\n}\n\n// Your code\n\nequal(traveler.isImmune, false)"
+  },
+  {
+    "description": "Test a traveler that is vaccinated",
+    "code": "let traveler = {\n  alreadyHadTheVirus: false,\n  recovered: false,\n  isVaccinated: true,\n}\n\n// Your code\n\nequal(traveler.isImmune, true)"
+  },
+  {
+    "description": "Test a traveler that is vaccinated and recovered from the virus",
+    "code": "let traveler = { alreadyHadTheVirus: true, recovered: true, isVaccinated: true }\n\n// Your code\n\nequal(traveler.isImmune, true)"
+  }
+]

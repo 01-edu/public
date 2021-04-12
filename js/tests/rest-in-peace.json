@@ -1,0 +1,46 @@
+[
+  {
+    "description": "footSoldiers, horseMen, and armyOfTheDead are each an array",
+    "code": "let swordMen = []\nlet archers = []\nlet captains = []\nlet generals = []\n\n// Your code\n\nif (!Array.isArray(footSoldiers)) {\n  throw Error('footSoldiers is not an Array')\n}\nif (!Array.isArray(horseMen)) {\n  throw Error('horseMen is not an Array')\n}\nif (!Array.isArray(armyOfTheDead)) {\n  throw Error('armyOfTheDead is not an Array')\n}"
+  },
+  {
+    "description": "push is not used",
+    "code": "let swordMen = []\nlet archers = []\nlet captains = []\nlet generals = []\nconst pushCalls = saveArguments(Array.prototype, 'push')\n\n// Your code\n\nequal(pushCalls.length, 0) // push should not be used"
+  },
+  {
+    "description": "unshift is not used",
+    "code": "let swordMen = []\nlet archers = []\nlet captains = []\nlet generals = []\nconst unshiftCalls = saveArguments(Array.prototype, 'unshift')\n\n// Your code\n\nequal(unshiftCalls.length, 0) // unshift should not be used"
+  },
+  {
+    "description": "concat is not used",
+    "code": "let swordMen = []\nlet archers = []\nlet captains = []\nlet generals = []\nconst concatCalls = saveArguments(Array.prototype, 'concat')\n\n// Your code\n\nequal(concatCalls.length, 0) // concat should not be used"
+  },
+  {
+    "description": "footSoldiers has 9 soldiers (including their leader)",
+    "code": "let swordMen = [\n  'Jack Churchill',\n  'Sasaki Kojiro',\n  'Johannes Liechtenauer',\n  'Fiore dei Liberi',\n]\nlet archers = ['William Tell', 'Artemis', 'Fred Bear', 'Nasu no Yoichi']\nlet captains = ['Guts', 'Edward the Black Prince', 'Joan of Arc']\nlet generals = ['Napoleon', 'Emilia Plater']\n\n// Your code\n\nequal(footSoldiers.length, 9)"
+  },
+  {
+    "description": "Grim the Terrible is behind his footSoldiers",
+    "code": "let swordMen = [\n  'Jack Churchill',\n  'Sasaki Kojiro',\n  'Johannes Liechtenauer',\n  'Fiore dei Liberi',\n]\nlet archers = ['William Tell', 'Artemis', 'Fred Bear', 'Nasu no Yoichi']\nlet captains = ['Guts', 'Edward the Black Prince', 'Joan of Arc']\nlet generals = ['Napoleon', 'Emilia Plater']\n\n// Your code\n\nequal(footSoldiers, [\n  'Jack Churchill',\n  'Sasaki Kojiro',\n  'Johannes Liechtenauer',\n  'Fiore dei Liberi',\n  'William Tell',\n  'Artemis',\n  'Fred Bear',\n  'Nasu no Yoichi',\n  'Grim the Terrible',\n])"
+  },
+  {
+    "description": "horseMen has 6 knights (including their leader)",
+    "code": "let swordMen = [\n  'Jack Churchill',\n  'Sasaki Kojiro',\n  'Johannes Liechtenauer',\n  'Fiore dei Liberi',\n]\nlet archers = ['William Tell', 'Artemis', 'Fred Bear', 'Nasu no Yoichi']\nlet captains = ['Guts', 'Edward the Black Prince', 'Joan of Arc']\nlet generals = ['Napoleon', 'Emilia Plater']\n\n// Your code\n\nequal(horseMen.length, 6)"
+  },
+  {
+    "description": "The Skull Knight is in front of his horseMen",
+    "code": "let swordMen = [\n  'Jack Churchill',\n  'Sasaki Kojiro',\n  'Johannes Liechtenauer',\n  'Fiore dei Liberi',\n]\nlet archers = ['William Tell', 'Artemis', 'Fred Bear', 'Nasu no Yoichi']\nlet captains = ['Guts', 'Edward the Black Prince', 'Joan of Arc']\nlet generals = ['Napoleon', 'Emilia Plater']\n\n// Your code\n\nequal(horseMen, [\n  'The Skull Knight',\n  'Guts',\n  'Edward the Black Prince',\n  'Joan of Arc',\n  'Napoleon',\n  'Emilia Plater',\n])"
+  },
+  {
+    "description": "armyOfTheDead is 16 soldiers strong",
+    "code": "let swordMen = [\n  'Jack Churchill',\n  'Sasaki Kojiro',\n  'Johannes Liechtenauer',\n  'Fiore dei Liberi',\n]\nlet archers = ['William Tell', 'Artemis', 'Fred Bear', 'Nasu no Yoichi']\nlet captains = ['Guts', 'Edward the Black Prince', 'Joan of Arc']\nlet generals = ['Napoleon', 'Emilia Plater']\n\n// Your code\n\nequal(armyOfTheDead.length, 16)"
+  },
+  {
+    "description": "The King of the Dead is in between footSoldiers and horseMen",
+    "code": "let swordMen = [\n  'Jack Churchill',\n  'Sasaki Kojiro',\n  'Johannes Liechtenauer',\n  'Fiore dei Liberi',\n]\nlet archers = ['William Tell', 'Artemis', 'Fred Bear', 'Nasu no Yoichi']\nlet captains = ['Guts', 'Edward the Black Prince', 'Joan of Arc']\nlet generals = ['Napoleon', 'Emilia Plater']\n\n// Your code\n\nequal(armyOfTheDead, [\n  'Jack Churchill',\n  'Sasaki Kojiro',\n  'Johannes Liechtenauer',\n  'Fiore dei Liberi',\n  'William Tell',\n  'Artemis',\n  'Fred Bear',\n  'Nasu no Yoichi',\n  'Grim the Terrible',\n  'The King of the Dead',\n  'The Skull Knight',\n  'Guts',\n  'Edward the Black Prince',\n  'Joan of Arc',\n  'Napoleon',\n  'Emilia Plater',\n])"
+  },
+  {
+    "description": "The army of the dead is still ordered if the soldiers are different",
+    "code": "let swordMen = [\n  'Zorro',\n  'Sasaki Kojiro',\n  'Johannes Liechtenauer',\n  'Fiore dei Liberi',\n]\nlet archers = [\n  'William Tell',\n  'Artemis',\n  'Fred Bear',\n  'Nasu no Yoichi',\n  'Rambo',\n]\nlet captains = ['Price', 'Guts', 'Edward the Black Prince', 'Joan of Arc']\nlet generals = ['Queen Elizabeth II', 'Emilia Plater']\n\n// Your code\n\nequal(armyOfTheDead, [\n  'Zorro',\n  'Sasaki Kojiro',\n  'Johannes Liechtenauer',\n  'Fiore dei Liberi',\n  'William Tell',\n  'Artemis',\n  'Fred Bear',\n  'Nasu no Yoichi',\n  'Rambo',\n  'Grim the Terrible',\n  'The King of the Dead',\n  'The Skull Knight',\n  'Price',\n  'Guts',\n  'Edward the Black Prince',\n  'Joan of Arc',\n  'Queen Elizabeth II',\n  'Emilia Plater',\n])"
+  }
+]

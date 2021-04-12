@@ -1,0 +1,14 @@
+[
+  {
+    "description": "shaker is a defined and is a function",
+    "code": "if (typeof shaker === 'undefined') {\n  throw Error(\n    `You didn't even define the function shaker... make it better! reread the lesson...`,\n  )\n}\n\nif (typeof shaker != 'function') {\n  throw Error('shaker must be a function')\n}"
+  },
+  {
+    "description": "shaker has 3 arguments",
+    "code": "if (shaker.length != 3) {\n  throw Error('You need 3 arguments for this function!')\n}"
+  },
+  {
+    "description": "shaker is shakin it right.",
+    "code": "equal(shaker(1, 'strawberry', true), '1 strawberry cocktail')\nequal(shaker(1, 'vanilla', true), '1 vanilla cocktail')\nequal(shaker(1, 'mango', true), '1 mango cocktail')\nequal(shaker(1, 'strawberry', false), '1 strawberry milkshake')\n\nequal(shaker(2, 'banana', true), '2 banana cocktails')\nequal(shaker(2, 'chocolate', false), '2 chocolate milkshakes')\nequal(shaker(2, 'vanilla', false), '2 vanilla milkshakes')\nequal(shaker(2, 'strawberry', false), '2 strawberry milkshakes')"
+  }
+]

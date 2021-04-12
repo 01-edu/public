@@ -1,0 +1,6 @@
+[
+  {
+    "description": "Not implemented",
+    "code": "throw Error('oops')"
+  }
+]

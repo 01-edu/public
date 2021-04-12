@@ -1,0 +1,30 @@
+[
+  {
+    "description": "beaconsLit is an Array",
+    "code": "const easternmost = 'Amon Dîn'\nlet easternBeacons = ['Eilenach', 'Nardol']\nconst centerBeacon = 'Erelas'\nlet westernBeacons = ['Min-Rimmon', 'Calenhad']\nconst westernmost = 'Amon Anwar'\n\n// Your code\n\nif (!Array.isArray(beaconsLit)) {\n  throw Error('beaconsLit is not an Array')\n}"
+  },
+  {
+    "description": "beaconsLit is created without using push",
+    "code": "const easternmost = 'Amon Dîn'\nlet easternBeacons = ['Eilenach', 'Nardol']\nconst centerBeacon = 'Erelas'\nlet westernBeacons = ['Min-Rimmon', 'Calenhad']\nconst westernmost = 'Amon Anwar'\nconst pushCalls = saveArguments(Array.prototype, 'push')\n\n// Your code\n\nequal(pushCalls.length, 0) // push should not be used"
+  },
+  {
+    "description": "beaconsLit is created without using unshift",
+    "code": "const easternmost = 'Amon Dîn'\nlet easternBeacons = ['Eilenach', 'Nardol']\nconst centerBeacon = 'Erelas'\nlet westernBeacons = ['Min-Rimmon', 'Calenhad']\nconst westernmost = 'Amon Anwar'\nconst unshiftCalls = saveArguments(Array.prototype, 'unshift')\n\n// Your code\n\nequal(unshiftCalls.length, 0) // unshift should not be used"
+  },
+  {
+    "description": "beaconsLit is created without using concat",
+    "code": "const easternmost = 'Amon Dîn'\nlet easternBeacons = ['Eilenach', 'Nardol']\nconst centerBeacon = 'Erelas'\nlet westernBeacons = ['Min-Rimmon', 'Calenhad']\nconst westernmost = 'Amon Anwar'\nconst concatCalls = saveArguments(Array.prototype, 'concat')\n\n// Your code\n\nequal(concatCalls.length, 0) // concat should not be used"
+  },
+  {
+    "description": "beaconsLit has the 7 beacons lit",
+    "code": "const easternmost = 'Amon Dîn'\nlet easternBeacons = ['Eilenach', 'Nardol']\nconst centerBeacon = 'Erelas'\nlet westernBeacons = ['Min-Rimmon', 'Calenhad']\nconst westernmost = 'Amon Anwar'\n\n// Your code\n\nequal(beaconsLit.length, 7)"
+  },
+  {
+    "description": "beaconsLit has the right beacons",
+    "code": "const easternmost = 'Amon Dîn'\nlet easternBeacons = ['Eilenach', 'Nardol']\nconst centerBeacon = 'Erelas'\nlet westernBeacons = ['Min-Rimmon', 'Calenhad']\nconst westernmost = 'Amon Anwar'\n\n// Your code\n\nequal(beaconsLit, [\n  'Amon Dîn',\n  'Eilenach',\n  'Nardol',\n  'Erelas',\n  'Min-Rimmon',\n  'Calenhad',\n  'Amon Anwar',\n])"
+  },
+  {
+    "description": "beaconsLit should still work if the values are different",
+    "code": "const easternmost = 'Amon Din'\nlet easternBeacons = ['Eilenach']\nconst centerBeacon = 'नारडोल'\nlet westernBeacons = ['Erelas', 'Min-Rimmon', 'Calenhad']\nconst westernmost = 'Amon Anwar (Halifirien)'\n\n// Your code\n\nequal(beaconsLit, [\n  'Amon Din',\n  'Eilenach',\n  'नारडोल',\n  'Erelas',\n  'Min-Rimmon',\n  'Calenhad',\n  'Amon Anwar (Halifirien)',\n])"
+  }
+]

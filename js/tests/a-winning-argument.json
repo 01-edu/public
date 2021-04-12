@@ -1,0 +1,26 @@
+[
+  {
+    "description": "battleCry is a defined and is a function",
+    "code": "if (typeof battleCry === 'undefined') {\n  throw Error(\n    `You didn't even define the function battleCry... make it better! reread the lesson...`,\n  )\n}\n\nif (typeof battleCry != 'function') {\n  throw Error('battleCry must be a function')\n}"
+  },
+  {
+    "description": "secretOrders is a defined and is a function",
+    "code": "if (typeof secretOrders === 'undefined') {\n  throw Error(\n    `You didn't even define the function secretOrders... make it better! reread the lesson...`,\n  )\n}\n\nif (typeof secretOrders != 'function') {\n  throw Error('secretOrders must be a function')\n}"
+  },
+  {
+    "description": "battleCry has one and only one argument",
+    "code": "if (battleCry.length != 1) {\n  throw Error('You must use 1 argument for this function, and only one!')\n}"
+  },
+  {
+    "description": "secretOrders has one and only one argument",
+    "code": "if (secretOrders.length != 1) {\n  throw Error('You must use 1 argument for this function, and only one!')\n}"
+  },
+  {
+    "description": "battleCry shouts properly",
+    "code": "const args = saveArguments(console, 'log')\nlet orders = {\n  shouted: ['attack!', 'you shall not pass!', 'for the horde!'],\n  secrets: ['ExEcutE Order 66', 'SILENCE', 'This Is The WAY'],\n}\n\n// Your code\n\norders.shouted.map((el) => battleCry(el))\n\nconst loggedValues = args.flat().join(' ')\nif (!loggedValues.includes('ATTACK!')) {\n  throw Error(`battleCry('attack!') is not SHOUTING: ATTACK!`)\n}\nif (!loggedValues.includes('YOU SHALL NOT PASS!')) {\n  throw Error(\n    `battleCry(you shall not pass!) is not SHOUTING: YOU SHALL NOT PASS!`,\n  )\n}\nif (!loggedValues.includes('FOR THE HORDE!')) {\n  throw Error(`battleCry('for the horde!') is not SHOUTING: FOR THE HORDE!`)\n}"
+  },
+  {
+    "description": "secretOrders whispers properly",
+    "code": "const args = saveArguments(console, 'log')\nlet orders = {\n  shouted: ['attack!', 'you shall not pass!', 'for the horde!'],\n  secrets: ['ExEcutE Order 66', 'SILENCE', 'This Is The WAY'],\n}\n\n// Your code\n\norders.secrets.map((el) => secretOrders(el))\n\nconst loggedValues = args.flat().join(' ')\nif (!loggedValues.includes('execute order 66')) {\n  throw Error(\n    `secretOrders('ExEcutE Order 66') is not whispering: execute order 66 `,\n  )\n}\nif (!loggedValues.includes('silence')) {\n  throw Error(`secretOrders('SILENCE') is not whispering: silence `)\n}\nif (!loggedValues.includes('this is the way')) {\n  throw Error(\n    `secretOrders('This Is The WAY') is not whispering: this is the way `,\n  )\n}"
+  }
+]

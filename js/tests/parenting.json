@@ -10,5 +10,9 @@
   {
     "description": "child.parent must be equal to parent",
     "code": "equal(child.parent, parent)"
+  },
+  {
+    "description": "child.parent.child must be equal to itself",
+    "code": "equal(child.parent.child, child)"
   }
 ]

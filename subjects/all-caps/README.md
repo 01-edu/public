@@ -19,9 +19,9 @@ console.log(thirdOf10.toFixed(3)) // -> '3.333' that's quite enough !
 console.log(thirdOf10.toFixed()) // -> with no argument, we get just '3'
 ```
 
-So here in that second to last line we call `toFixed` from the value of the variable
-`thirdOf10`, with the argument `3`, saying that we want 3 decimal numbers in our
-string conversion.
+So here in that second to last line we call `toFixed` from the value of the
+variable `thirdOf10`, with the argument `3`, saying that we want 3 decimal
+numbers in our string conversion.
 
 Since they are functions, they can also return values.
 
@@ -30,8 +30,8 @@ Since they are functions, they can also return values.
 One of the value with the most methods are strings, you can do a lot of things
 with them.
 
-For this exercise you will have to use the methods `toUpperCase` and `toLowerCase` from the
-provided variable `message`.
+For this exercise you will have to use the methods `toUpperCase` and
+`toLowerCase` from the provided variable `message`.
 
 - Create a `noCaps` variable of the value of `message` but in lower case.
 - Create an `allCaps` variable of the value of `message` but in upper case.

@@ -1,0 +1,18 @@
+[
+  {
+    "description": "Freeze the virus19",
+    "code": "const antivirus = { C8H10N4O: true, C12H22O11: true }\nconst virus19 = {\n  dangerosity: 'extremely dangerous',\n  contagiousness: 'contagious',\n}\n\n// Your code\n\nif (!Object.isFrozen(virus19)) {\n  throw Error('you did not freeze the virus19 properly. It can mutate!')\n}"
+  },
+  {
+    "description": "vaccine is an object",
+    "code": "const antivirus = { C8H10N4O: true, C12H22O11: true }\nconst virus19 = {\n  dangerosity: 'extremely dangerous',\n  contagiousness: 'contagious',\n}\n\n// Your code\n\nequal(typeof vaccine, 'object')"
+  },
+  {
+    "description": "vaccine contains the right molecules",
+    "code": "const antivirus = { C8H10N4O: true, C12H22O11: true }\nconst virus19 = {\n  dangerosity: 'extremely dangerous',\n  contagiousness: 'contagious',\n}\n\n// Your code\n\nequal(vaccine, antivirus)"
+  },
+  {
+    "description": "vaccine is frozen",
+    "code": "const antivirus = { C8H10N4O: true, C12H22O11: true }\nconst virus19 = {\n  dangerosity: 'extremely dangerous',\n  contagiousness: 'contagious',\n}\n\n// Your code\n\nif (!Object.isFrozen(vaccine)) {\n  throw Error('you did not secure your vaccine components')\n}"
+  }
+]

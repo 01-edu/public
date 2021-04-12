@@ -1,0 +1,18 @@
+[
+  {
+    "description": "Test with a customer that has enough cash",
+    "code": "let ticketSold = 8\nlet customer = { cash: 20, hasVoucher: false }\n\n// Your code\n\nequal(ticketSold, 9)"
+  },
+  {
+    "description": "Test with a customer that has a voucher",
+    "code": "let ticketSold = 5\nlet customer = { cash: 0, hasVoucher: true }\n\n// Your code\n\nequal(ticketSold, 6)"
+  },
+  {
+    "description": "Test with a customer that has a voucher and cash",
+    "code": "let ticketSold = 6\nlet customer = { cash: 42, hasVoucher: true }\n\n// Your code\n\nequal(ticketSold, 7)"
+  },
+  {
+    "description": "Test with a customer that can not afford the ticket",
+    "code": "let ticketSold = 3\nlet customer = { cash: 3, hasVoucher: false }\n\n// Your code\n\nequal(ticketSold, 3)"
+  }
+]

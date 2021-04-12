@@ -1,0 +1,46 @@
+[
+  {
+    "description": "Test with the falsy value 0",
+    "code": "const args = saveArguments(console, 'log')\nlet truth = 0\n\n// Your code\n\nequal(args[0]?.[0], 'Lies !!!!')"
+  },
+  {
+    "description": "Test with the falsy value NaN",
+    "code": "const args = saveArguments(console, 'log')\nlet truth = NaN\n\n// Your code\n\nequal(args[0]?.[0], 'Lies !!!!')"
+  },
+  {
+    "description": "Test with the falsy value undefined",
+    "code": "const args = saveArguments(console, 'log')\nlet truth = undefined\n\n// Your code\n\nequal(args[0]?.[0], 'Lies !!!!')"
+  },
+  {
+    "description": "Test with the falsy value null",
+    "code": "const args = saveArguments(console, 'log')\nlet truth = null\n\n// Your code\n\nequal(args[0]?.[0], 'Lies !!!!')"
+  },
+  {
+    "description": "Test with the falsy value ''",
+    "code": "const args = saveArguments(console, 'log')\nlet truth = ''\n\n// Your code\n\nequal(args[0]?.[0], 'Lies !!!!')"
+  },
+  {
+    "description": "Test with the falsy value false",
+    "code": "const args = saveArguments(console, 'log')\nlet truth = false\n\n// Your code\n\nequal(args[0]?.[0], 'Lies !!!!')"
+  },
+  {
+    "description": "Test with the truthy value 'Sure'",
+    "code": "const args = saveArguments(console, 'log')\nlet truth = 'Sure'\n\n// Your code\n\nequal(args[0]?.[0], 'The truth was spoken.')"
+  },
+  {
+    "description": "Test with the truthy value []",
+    "code": "const args = saveArguments(console, 'log')\nlet truth = []\n\n// Your code\n\nequal(args[0]?.[0], 'The truth was spoken.')"
+  },
+  {
+    "description": "Test with the truthy value {}",
+    "code": "const args = saveArguments(console, 'log')\nlet truth = {}\n\n// Your code\n\nequal(args[0]?.[0], 'The truth was spoken.')"
+  },
+  {
+    "description": "Test with the truthy value true",
+    "code": "const args = saveArguments(console, 'log')\nlet truth = true\n\n// Your code\n\nequal(args[0]?.[0], 'The truth was spoken.')"
+  },
+  {
+    "description": "Test with the truthy value -0.1",
+    "code": "const args = saveArguments(console, 'log')\nlet truth = -0.1\n\n// Your code\n\nequal(args[0]?.[0], 'The truth was spoken.')"
+  }
+]

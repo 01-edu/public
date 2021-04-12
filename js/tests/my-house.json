@@ -1,0 +1,22 @@
+[
+  {
+    "description": "acidHouse and deepHouse are objects",
+    "code": "let mainHouse = { door: 'blue', rooms: { bedrooms: 2, bathrooms: 1 } }\n\n// Your code\n\nequal(typeof acidHouse, 'object')\nequal(typeof deepHouse, 'object')"
+  },
+  {
+    "description": "acidHouse is not a reference",
+    "code": "let mainHouse = { door: 'blue', rooms: { bedrooms: 2, bathrooms: 1 } }\n\n// Your code\n\nmainHouse.door = 'red'\n\nif (acidHouse.door === 'red') {\n  throw Error(\n    'when painting mainHouse.door in red, acidHouse.door is painted red too. You did not do a shallow copy',\n  )\n}"
+  },
+  {
+    "description": "acidHouse is not a deep copy",
+    "code": "let mainHouse = { door: 'blue', rooms: { bedrooms: 2, bathrooms: 1 } }\n\n// Your code\n\nmainHouse.rooms.bathrooms = 3\n\nif (acidHouse.rooms.bathrooms !== 3) {\n  throw Error(\n    'when adding 2 bathrooms to mainHouse, acidHouse did not get 2 extra bathrooms as well, it looks like you did a deep copy instead of a shallow one...',\n  )\n}"
+  },
+  {
+    "description": "deepHouse is not a reference",
+    "code": "let mainHouse = { door: 'blue', rooms: { bedrooms: 2, bathrooms: 1 } }\n\n// Your code\n\nmainHouse.door = 'red'\n\nif (deepHouse.door === 'red') {\n  throw Error(\n    'when painting mainHouse.door in red, deepHouse.door is painted red too, you did not do a deep copy',\n  )\n}"
+  },
+  {
+    "description": "deepHouse is not a shallow copy",
+    "code": "let mainHouse = { door: 'blue', rooms: { bedrooms: 2, bathrooms: 1 } }\n\n// Your code\n\nmainHouse.rooms.bathrooms = 3\n\nif (deepHouse.rooms.bathrooms !== 1) {\n  throw Error(\n    'when adding 2 bathrooms to mainHouse, deepHouse didgot extra bathrooms as well, it looks like you did a shallow copy instead of a deep copy...',\n  )\n}"
+  }
+]

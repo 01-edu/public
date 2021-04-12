@@ -1,0 +1,26 @@
+[
+  {
+    "description": "happy is defined and is a function",
+    "code": "if (typeof happy === 'undefined') {\n  throw Error(\n    `You didn't even define the function happy... make it better! reread the lesson...`,\n  )\n}\nif (typeof happy != 'function') {\n  throw Error('happy must be a function')\n}"
+  },
+  {
+    "description": "happy has 1 argument",
+    "code": "if (happy.length != 1) {\n  throw Error('You need 1 argument for this function!')\n}"
+  },
+  {
+    "description": "happy is smiling right.",
+    "code": "equal(happy('Are you happy?'), true)\nequal(happy('Happy?'), true)\nequal(happy('Are you sad?'), false)\nequal(happy('happy!'), false)\nequal(happy('Happy! are we not?'), true)"
+  },
+  {
+    "description": "happy has no curly braces {}.",
+    "code": "if (happy.toString().includes('{')) {\n  throw Error('No curly braces {} ! ')\n}\nif (happy.toString().includes('}')) {\n  throw Error('No curly braces {} ! ')\n}"
+  },
+  {
+    "description": "happy has no keyword return.",
+    "code": "if (happy.toString().includes('return')) {\n  throw Error('No keyword return allowed ! ')\n}"
+  },
+  {
+    "description": "happy has no keyword if.",
+    "code": "if (happy.toString().includes('if')) {\n  throw Error('No keyword if allowed ! ')\n}"
+  }
+]

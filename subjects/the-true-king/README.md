@@ -1,4 +1,4 @@
-## The True King
+## The True King 👑
 
 ### Instructions
 

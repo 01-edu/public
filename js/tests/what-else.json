@@ -1,0 +1,18 @@
+[
+  {
+    "description": "Test with an empty list",
+    "code": "let vips = []\nconst args = saveArguments(console, 'log')\n\n// Your code\n\nequal(args[0], ['The only failure is not to try.'])"
+  },
+  {
+    "description": "Test if he is not invited",
+    "code": "let vips = ['Dora', 'Bruce Willis']\nconst args = saveArguments(console, 'log')\n\n// Your code\n\nequal(args[0], ['The only failure is not to try.'])"
+  },
+  {
+    "description": "Test if he is in the list",
+    "code": "let vips = ['Dora', 'Jacky', 'George Clooney', 'Bruce Willis']\nconst args = saveArguments(console, 'log')\n\n// Your code\n\nequal(args[0], ['What else ?'])"
+  },
+  {
+    "description": "Test if he is the first in the list",
+    "code": "let vips = ['George Clooney', 'Jacky', 'Bruce Willis']\nconst args = saveArguments(console, 'log')\n\n// Your code\n\nequal(args[0], ['What else ?'])"
+  }
+]

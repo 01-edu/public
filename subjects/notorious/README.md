@@ -1,4 +1,4 @@
-## 🌟 Notorious
+## 🌟 Notorious 🎤
 
 ### Notions
 

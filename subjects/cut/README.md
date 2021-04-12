@@ -1,9 +1,9 @@
-## Cut
+## Cut ✂️
 
 ### Instructions
 
-Using the `.slice` method and the provided `alphabet` variable which is a string of all
-the character in an alphabet:
+Using the `.slice` method and the provided `alphabet` variable which is a string
+of all the character in an alphabet:
 
 - Declare a `cutFirst` variable that removes the 10 first characters of
   `alphabet`.

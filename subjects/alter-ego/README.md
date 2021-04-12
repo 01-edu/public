@@ -1,4 +1,4 @@
-## Alter Ego
+## Alter Ego 🎭
 
 You can change your objects in multiple ways:
 

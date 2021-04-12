@@ -2,8 +2,8 @@
 
 ### Instructions
 
-Using the `.slice` method again and the provided `alphabet` variable of a string of
-all the characters in an alphabet:
+Using the `.slice` method again and the provided `alphabet` variable of a string
+of all the characters in an alphabet:
 
 - Declare a `keepFirst` variable of only the 6 first characters from `alphabet`.
 - Declare a `keepLast` variable of only the 7 last characters from `alphabet`.

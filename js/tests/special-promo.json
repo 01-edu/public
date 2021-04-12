@@ -1,0 +1,22 @@
+[
+  {
+    "description": "Test with a user that can have the promotion",
+    "code": "const args = saveArguments(console, 'log')\nlet user = { activeMembership: true, age: 22 }\n\n// Your code\n\nequal(args[0]?.[0], 'You can benefit from our special promotion')"
+  },
+  {
+    "description": "Test with a user that is too old",
+    "code": "const args = saveArguments(console, 'log')\nlet user = { activeMembership: true, age: 33 }\n\n// Your code\n\nequal(args[0]?.[0], undefined)"
+  },
+  {
+    "description": "Test with a user that is too young",
+    "code": "const args = saveArguments(console, 'log')\nlet user = { activeMembership: true, age: 12 }\n\n// Your code\n\nequal(args[0]?.[0], undefined)"
+  },
+  {
+    "description": "Test with a user that doesn't have an active membership",
+    "code": "const args = saveArguments(console, 'log')\nlet user = { activeMembership: false, age: 21 }\n\n// Your code\n\nequal(args[0]?.[0], undefined)"
+  },
+  {
+    "description": "Test with a user that can have the promotion but is just at the limit",
+    "code": "const args = saveArguments(console, 'log')\nlet user = { activeMembership: true, age: 25 }\n\n// Your code\n\nequal(args[0]?.[0], 'You can benefit from our special promotion')"
+  }
+]

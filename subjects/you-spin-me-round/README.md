@@ -5,7 +5,7 @@
 Functions in JS allows you to describe multiple `instructions`, in other words,
 it's a way to execute code inside your code !
 
-That seems pretty complicated but it is the build block of your programs.
+That seems pretty complicated but it is the building block of your programs.
 
 You already have been using a `function` as `console.log` is one ! You can easly
 spot them because we stick parens after their identifiers `()`.
@@ -21,9 +21,10 @@ console.log('Hello There !')
 #### Function name (`identifier` or `property.key`)
 
 The first things that appears in a function is the `identifier`, in fact, in JS,
-functions are values of type `function`. 
-This means that in order to be used a function **must** be either assigned to:
-- a variable 
+functions are values of type `function`. This means that in order to be used a
+function **must** be either assigned to:
+
+- a variable
 - or an object property
 
 #### Function calling
@@ -88,16 +89,16 @@ be passed to `console.log` that will procede to display it.
 
 ### Instructions
 
-We have prepared a variable `num`.
-Just as a warm up, use this variable `num` as `argument` of some `Math`
-functions.
+We have prepared a variable `num`. Just as a warm up, use this variable `num` as
+`argument` of some `Math` functions.
 
 - Declare a `rounded` variable of `num` rounded value.
 - Declare a `truncated` variable of `num` truncated value.
 
-One of the necessary Math function is already used in the lessons examples before the instructions.
-Explore the link below to see which others functions the Math object contains in order to find what
-you need to complete this exercise.
+One of the necessary Math function is already used in the lessons examples
+before the instructions. Explore the link below to see which others functions
+the Math object contains in order to find what you need to complete this
+exercise.
 
 ### Notions
 
