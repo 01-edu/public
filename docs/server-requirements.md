@@ -1,6 +1,7 @@
 # Server requirements
 
 Features required :
+- Dedicated hardware
 - Linux compatibility
 - UEFI
 - Secure boot
