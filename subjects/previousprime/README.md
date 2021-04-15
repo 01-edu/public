@@ -16,7 +16,7 @@ pub fn prev_prime(nbr: u64) -> u64  {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```rust
 fn main() {

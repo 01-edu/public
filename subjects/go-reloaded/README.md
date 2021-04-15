@@ -45,7 +45,7 @@ func Atoi(s string) int {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main
@@ -109,7 +109,7 @@ func RecursivePower(nb int, power int) int {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main
@@ -166,7 +166,7 @@ func PrintCombN(n int) {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main
@@ -224,7 +224,7 @@ func PrintNbrBase(nbr int, base string) {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main
@@ -357,7 +357,7 @@ func AtoiBase(s string, base string) int {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main
@@ -414,7 +414,7 @@ func SplitWhiteSpaces(s string) []string {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main
@@ -462,7 +462,7 @@ func Split(s, sep string) []string {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main
@@ -514,7 +514,7 @@ func ConvertBase(nbr, baseFrom, baseTo string) string {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main
@@ -600,7 +600,7 @@ func AdvancedSortWordArr(a []string, f func(a, b string) int) {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main
@@ -732,7 +732,7 @@ func ActiveBits(n int) uint {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main
@@ -781,7 +781,7 @@ func SortListInsert(l *NodeI, data_ref int) *NodeI{
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main
@@ -863,7 +863,7 @@ func SortedListMerge(n1 *NodeI, n2 *NodeI) *NodeI {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main
@@ -953,7 +953,7 @@ func ListRemoveIf(l *List, data_ref interface{}) {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main
@@ -1041,7 +1041,7 @@ func BTreeTransplant(root, node, rplc *TreeNode) *TreeNode {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main
@@ -1093,7 +1093,7 @@ func BTreeApplyByLevel(root *TreeNode, f func(...interface{}) (int, error))  {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main
@@ -1144,7 +1144,7 @@ func BTreeDeleteNode(root, node *TreeNode) *TreeNode {
 
 ### Usage
 
-Here is a possible [program](TODO-LINK) to test your function :
+Here is a possible program to test your function :
 
 ```go
 package main
