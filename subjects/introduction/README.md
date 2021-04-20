@@ -31,7 +31,7 @@ cat ~/.ssh/id_ed25519.pub
 
 - Copy the result and paste it in the content field of adding an ssh key in your settings (adapt the link with your username).
 
-[https://git.[[DOMAIN]]/choumi/settings/keys](https://git.[[DOMAIN]]/choumi/settings/keys)
+[https://git.[[DOMAIN]]/user/settings/keys](https://git.[[DOMAIN]]/user/settings/keys)
 
 - Confirm by clicking on the add key button.
 
