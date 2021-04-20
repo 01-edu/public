@@ -29,9 +29,7 @@ ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -N ''
 cat ~/.ssh/id_ed25519.pub
 ```
 
-- Copy the result and paste it in the content field of adding an ssh key in your settings (adapt the link with your username).
-
-[https://git.[[DOMAIN]]/user/settings/keys](https://git.[[DOMAIN]]/user/settings/keys)
+- Copy the result and paste it in the content field of adding an SSH key in your Gitea settings : https://git.[[DOMAIN]]/user/settings/keys
 
 - Confirm by clicking on the add key button.
 
