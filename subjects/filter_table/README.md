@@ -2,23 +2,24 @@
 
 ### Instructions
 
-- Define the functions:
+- Define the **functions**:
 
-  - new: creates a new empty table.
+  - new: which creates a new empty table.
 
-  - add_rows: adds a new row to the table from a slice of strings.
-  
-  - filter_cols: that receives a closure that receives a `&str` and returns a `bool` value:
+  - add_rows: which adds a new row to the table from a slice of strings.
 
-	- filter_cols returns a table with all the columns that yielded true when applied to the header.
-  
-  - filter_rows: that receives a closure that receives a `&str` and returns a `bool` value
+  - filter_cols: which receives a closure which receives a `&str` and returns a `bool` value:
 
-	- filter_rows returns a table with all the columns that yielded true when applied to the elements of the selected column.
+  - filter_cols returns a table with all the columns that yielded true when applied to the header.
 
-### Expected function
+  - filter_rows: which receives a closure that receives a `&str` and returns a `bool` value
+
+  - filter_rows returns a table with all the columns that yielded true when applied to the elements of the selected column.
+
+### Expected functions and Structures
 
 ```rust
+#[derive(Clone, Debug, PartialEq)]
 pub struct Table {
 	pub headers: Vec<String>,
 	pub body: Vec<Vec<String>>,
@@ -26,9 +27,11 @@ pub struct Table {
 
 impl Table {
 	pub fn new() -> Table {
+
 	}
 
 	pub fn add_row(&mut self, row: &[String]) {
+
 	}
 
 	pub fn filter_col(&self, filter: ) -> Option<Self> {
@@ -36,13 +39,14 @@ impl Table {
 	}
 
 	pub fn filter_row(&self, col_name: &str, filter: ) -> Option<Self> {
+
 	}
 }
 ```
 
 ### Usage
 
-Here is a possible test for your function:
+Here is a possible program to test your function:
 
 ```rust
 fn main() {

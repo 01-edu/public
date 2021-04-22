@@ -2,17 +2,19 @@
 
 ### Instructions
 
-Your purpose in this exercise is to create a `rot21` function that works like the ROT13 cipher.
+The purpose of this exercise is to create a `rot21` function that works like the ROT13 cipher.
 
-Your function will receive a string and it will rotate each letter of that string 21 times to the right.
+This function will receive a `string` and it will rotate each letter of that `string` 21 times to the right.
 
-Your function should only change letters. If the string includes punctuation, symbols and numbers
+The function should only rotate letters. If the string includes punctuation, symbols and/or numbers
 they will remain the same.
 
 ### Expected functions
 
 ```rust
-pub fn rot21(input: &str) -> String {}
+pub fn rot21(input: &str) -> String {
+
+}
 ```
 
 ### Usage
@@ -32,7 +34,7 @@ fn main() {
 
 ```
 
-And its output
+And its output:
 
 ```console
 student@ubuntu:~/[[ROOT]]/test$ cargo run

@@ -2,18 +2,19 @@
 
 ### Instructions
 
-- Define the functions `flatten_tree` that receives a std::collections::BTreeSet and returns a new `Vec` with the elements in the binary tree in order.
+- Define the functions `flatten_tree` which receives a `std::collections::BTreeSet` and returns a new `Vec` with the elements of the binary tree in order.
 
 ### Expected function
 
 ```rust
 pub fn flatten_tree<T: ToOwned<Owned = T>>(tree: &BTreeSet<T>) -> Vec<T> {
+
 }
 ```
 
 ### Usage
 
-Here is a possible test for your function:
+Here is a possible program to test your function:
 
 ```rust
 fn main() {

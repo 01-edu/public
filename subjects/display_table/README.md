@@ -2,37 +2,42 @@
 
 ### Instructions
 
-- Implement the std::fmt::Display trait for the structure table so the table is printed like in the [Usage](#usage) the length of each column must adjust to the longest element of the column and the element must be centered in the "cell" when possible, if the length of the element doesn't allow to center exactly it must alight slightly to the right.
+- Implement the `std::fmt::Display` trait for the structure table so that the table is printed like in the **[Usage](#usage)**. The length of each column must adjust to the longest element of the column and the element must be centered in the "cell" when possible. If the length of the element doees not allow to center exactly, it must descend slightly to the right.
 
   - Note: If the table is empty `println!` must not print anything.
 
-- Define the associated function `new` that create a new empty table.
+- Define the associated function `new` which creates a new empty table.
 
-- Define the method function `add_row` that adds a new row to the table created from a slice of strings.
+- Define the method function `add_row` which adds a new row to the table created from a slice of strings.
 
-### Expected function
+### Expected functions and Structures
 
 ```rust
+#[derive(Clone, Debug, PartialEq)]
 pub struct Table {
 	pub headers: Vec<String>,
 	pub body: Vec<Vec<String>>,
 }
 
 impl fmt::Display for Table {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+
+        }
 }
 
 impl Table {
 	pub fn new() -> Table {
-	}
 
+	}
 	pub fn add_row(&mut self, row: &[String]) {
+
 	}
 }
 ```
 
 ### Usage
 
-Here is a possible test for your function:
+Here is a possible program to test your function:
 
 ```rust
 fn main() {
