@@ -15,5 +15,5 @@ Find a way to declare a variable `myFuture` without defining its value
 Because after all, we don't know what your future holds !
 
 > I'm more interested in the future than in the past, \
-> because the future is where I intend to live.
+> because the future is where I intend to live. \
 > ― Albert Einstein
