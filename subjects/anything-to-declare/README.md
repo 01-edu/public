@@ -113,11 +113,11 @@ console.log(cashPayment)
 All right, before we can embark into this adventure, you are going to tell us
 more about yourself using **variables** !
 
-- Declare a variable _indentified_ `age` of a `Number` value of your age
+- Declare a variable _identified_ `age` of a `Number` value of your age
 
-- Declare a variable _indentified_ `name` of a `String` value of your name
+- Declare a variable _identified_ `name` of a `String` value of your name
 
-- Declare a variable _indentified_ `secureLuggage` of a `Boolean` saying if your
+- Declare a variable _identified_ `secureLuggage` of a `Boolean` saying if your
   luggage contain dangerous things or not. _(for obvious security reasons)_
 
 > PS: And please, use reasonable values, or the tests might reject you !
