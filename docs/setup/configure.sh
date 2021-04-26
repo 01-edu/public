@@ -8,9 +8,9 @@ set -x
 
 sudo apt -y install man bash-completion git jq curl build-essential netcat wget psmisc file net-tools brotli unzip zip moreutils pv tree whois openssh-client
 
-wget https://golang.org/dl/go1.15.2.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go1.15.2.linux-amd64.tar.gz
-rm go1.15.2.linux-amd64.tar.gz
+wget https://golang.org/dl/go1.16.3.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.16.3.linux-amd64.tar.gz
+rm go1.16.3.linux-amd64.tar.gz
 cat <<'EOF'>> ~/.bashrc
 GOPATH=$HOME/go
 PATH=$PATH:/usr/local/go/bin:$GOPATH/bin

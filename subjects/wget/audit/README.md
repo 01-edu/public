@@ -8,9 +8,9 @@
 
 ###### Did the program download the expected file?
 
-##### Try to run the following command `"./wget https://golang.org/dl/go1.15.linux-amd64.tar.gz"`
+##### Try to run the following command `"./wget https://golang.org/dl/go1.16.3.linux-amd64.tar.gz"`
 
-###### Did the program download the file `"go1.15.linux-amd64.tar.gz"`?
+###### Did the program download the file `"go1.16.3.linux-amd64.tar.gz"`?
 
 ###### Did the program displayed the start time?
 
