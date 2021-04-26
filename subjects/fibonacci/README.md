@@ -43,8 +43,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/fibonacci/test$ go build
+student@ubuntu:~/fibonacci/test$ ./test
 3
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/fibonacci/test$
 ```

@@ -18,14 +18,14 @@ Write an `explain.sh` file that:
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ ./explain.sh | cat -e
+student@ubuntu:~/explain/test$ ./explain.sh | cat -e
 FirstNameOfWitness LastNameOfWitness$
 123456$
 Red Ferrari$
 FirstNameOfSuspect1 LastNameOfSuspect1$
 FirstNameOfSuspect2 LastNameOfSuspect2$
 FirstNameOfSuspect3 LastNameOfSuspect3$
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/explain/test$
 ```
 
 ### Hint

@@ -43,8 +43,8 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/diamond_creation/test$ cargo run
 ["A"]
 ["  A  ", " B B ", "C   C", " B B ", "  A  "]
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/diamond_creation/test$
 ```

@@ -11,13 +11,13 @@ If the number of arguments is different from 2, the program displays nothing.
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test faya fgvvfdxcacpolhyghbreda
+student@ubuntu:~/wdmatch/test$ go build
+student@ubuntu:~/wdmatch/test$ ./test faya fgvvfdxcacpolhyghbreda
 faya
-student@ubuntu:~/[[ROOT]]/test$ ./test faya fgvvfdxcacpolhyghbred
-student@ubuntu:~/[[ROOT]]/test$ ./test error rrerrrfiiljdfxjyuifrrvcoojh
-student@ubuntu:~/[[ROOT]]/test$ ./test "quarante deux" "qfqfsudf arzgsayns tsregfdgs sjytdekuoixq "
+student@ubuntu:~/wdmatch/test$ ./test faya fgvvfdxcacpolhyghbred
+student@ubuntu:~/wdmatch/test$ ./test error rrerrrfiiljdfxjyuifrrvcoojh
+student@ubuntu:~/wdmatch/test$ ./test "quarante deux" "qfqfsudf arzgsayns tsregfdgs sjytdekuoixq "
 quarante deux
-student@ubuntu:~/[[ROOT]]/test$ ./test
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/wdmatch/test$ ./test
+student@ubuntu:~/wdmatch/test$
 ```

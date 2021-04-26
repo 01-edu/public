@@ -53,8 +53,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/compact/test$ go build
+student@ubuntu:~/compact/test$ ./test
 a
 
 b
@@ -65,5 +65,5 @@ Size after compacting: 3
 a
 b
 c
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/compact/test$
 ```

@@ -58,7 +58,7 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/inv_pyramid/test$ cargo run
 " #"
 " a"
 "  aa"
@@ -87,5 +87,5 @@ student@ubuntu:~/[[ROOT]]/test$ cargo run
 "   &&&"
 "  &&"
 " &"
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/inv_pyramid/test$
 ```

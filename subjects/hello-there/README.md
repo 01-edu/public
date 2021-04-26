@@ -107,7 +107,7 @@ executed.
 ### Instructions
 
 Once you have installed and configured the necessary tools,
-create a `git` repository named `[[ROOT]]` with a `hello-there.js`
+create a `git` repository named `hello-there` with a `hello-there.js`
 JS file that is a program that displays the exact text `Hello There !`, any `Number` and a
 `Boolean`.
 

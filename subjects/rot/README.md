@@ -63,7 +63,7 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/rot/test$ cargo run
 The letter "a" becomes: a
 The letter "m" becomes: m
 The letter "m" becomes: z
@@ -74,5 +74,5 @@ The decoded message is: Ryg aesmuvi nkpd tewzsxq jolbkc foh
 Your cypher wil be: Xiwxmrk amxl ryqfivw 1 2 3
 Your cypher wil be: Fqefuzs
 The letter "a" becomes: z
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/rot/test$
 ```

@@ -36,11 +36,11 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/find_factorial/test$ cargo run
 The factorial of 0 = 1
 The factorial of 1 = 1
 The factorial of 5 = 120
 The factorial of 10 = 3628800
 The factorial of 19 = 121645100408832000
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/find_factorial/test$
 ```

@@ -38,9 +38,9 @@ fn main() {
 And its output
 
 ```consoole
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/capitalizing/test$ cargo run
 Joe is missing
 Jill Is Leaving A
 HEllO thERE
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/capitalizing/test$
 ```

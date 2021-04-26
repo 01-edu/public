@@ -36,19 +36,19 @@ The following table gives the Roman numerals for the first few positive integers
 ## Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./rn hello
+student@ubuntu:~/romannumbers/test$ go build
+student@ubuntu:~/romannumbers/test$ ./rn hello
 ERROR: can not convert to roman digit
-student@ubuntu:~/[[ROOT]]/test$ ./rn 123
+student@ubuntu:~/romannumbers/test$ ./rn 123
 C+X+X+I+I+I
 CXXIII
-student@ubuntu:~/[[ROOT]]/test$ ./rn 999
+student@ubuntu:~/romannumbers/test$ ./rn 999
 (M-C)+(C-X)+(X-I)
 CMXCIX
-student@ubuntu:~/[[ROOT]]/test$ ./rn 3999
+student@ubuntu:~/romannumbers/test$ ./rn 3999
 M+M+M+(M-C)+(C-X)+(X-I)
 MMMCMXCIX
-student@ubuntu:~/[[ROOT]]/test$ ./rn 4000
+student@ubuntu:~/romannumbers/test$ ./rn 4000
 ERROR: can not convert to roman digit
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/romannumbers/test$
 ```

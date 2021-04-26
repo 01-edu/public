@@ -84,9 +84,9 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/blood_types_s/test$ cargo run
 recipients of O+ [BloodType { antigen: AB, rh_factor: Positive }, BloodType { antigen: O, rh_factor: Positive }, BloodType { antigen: A, rh_factor: Positive }, BloodType { antigen: B, rh_factor: Positive }]
 donors of O+ [BloodType { antigen: O, rh_factor: Positive }, BloodType { antigen: O, rh_factor: Negative }]
 donors of O+ can receive from BloodType { antigen: O, rh_factor: Positive } true
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/blood_types_s/test$
 ```

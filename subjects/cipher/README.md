@@ -48,9 +48,9 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/cipher/test$ cargo run
 Some(Ok(true))
 Some(Err(CipherError { validation: false, expected: "1Svool 2dliow!" }))
 None
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/cipher/test$
 ```

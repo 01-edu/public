@@ -55,10 +55,10 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/highest/test$ cargo run
 [30, 500, 20, 70]
 Some(500)
 Some(70)
 [500, 70, 30]
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/highest/test$
 ```

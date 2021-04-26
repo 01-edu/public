@@ -70,8 +70,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/go-reloaded/test$ go build
+student@ubuntu:~/go-reloaded/test$ ./test
 12345
 12345
 0
@@ -80,7 +80,7 @@ student@ubuntu:~/[[ROOT]]/test$ ./test
 -1234
 0
 0
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/go-reloaded/test$
 ```
 
 ---
@@ -129,10 +129,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/go-reloaded/test$ go build
+student@ubuntu:~/go-reloaded/test$ ./test
 64
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/go-reloaded/test$
 ```
 
 ---
@@ -183,12 +183,12 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/go-reloaded/test$ go build
+student@ubuntu:~/go-reloaded/test$ ./test
 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 012, 013, 014, 015, 016, 017, 018, ... 679, 689, 789
 012345678, 012345679, ..., 123456789
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/go-reloaded/test$
 ```
 
 ---
@@ -253,14 +253,14 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/go-reloaded/test$ go build
+student@ubuntu:~/go-reloaded/test$ ./test
 125
 -1111101
 7D
 -uoi
 NV
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/go-reloaded/test$
 ```
 
 ---
@@ -297,29 +297,29 @@ The program has to handle the modulo and division operations by 0 as shown on th
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build doop.go
-student@ubuntu:~/[[ROOT]]/test$ ./doop
-student@ubuntu:~/[[ROOT]]/test$ ./doop 1 + 1 | cat -e
+student@ubuntu:~/go-reloaded/test$ go build doop.go
+student@ubuntu:~/go-reloaded/test$ ./doop
+student@ubuntu:~/go-reloaded/test$ ./doop 1 + 1 | cat -e
 2$
-student@ubuntu:~/[[ROOT]]/test$ ./doop hello + 1 | cat -e
+student@ubuntu:~/go-reloaded/test$ ./doop hello + 1 | cat -e
 0$
-student@ubuntu:~/[[ROOT]]/test$ ./doop 1 p 1 | cat -e
+student@ubuntu:~/go-reloaded/test$ ./doop 1 p 1 | cat -e
 0$
-student@ubuntu:~/[[ROOT]]/test$ ./doop 1 / 0 | cat -e
+student@ubuntu:~/go-reloaded/test$ ./doop 1 / 0 | cat -e
 No division by 0$
-student@ubuntu:~/[[ROOT]]/test$ ./doop 1 % 0 | cat -e
+student@ubuntu:~/go-reloaded/test$ ./doop 1 % 0 | cat -e
 No modulo by 0$
-student@ubuntu:~/[[ROOT]]/test$ ./doop 9223372036854775807 + 1
+student@ubuntu:~/go-reloaded/test$ ./doop 9223372036854775807 + 1
 0
-student@ubuntu:~/[[ROOT]]/test$ ./doop -9223372036854775809 - 3
+student@ubuntu:~/go-reloaded/test$ ./doop -9223372036854775809 - 3
 0
-student@ubuntu:~/[[ROOT]]/test$ ./doop 9223372036854775807 "*" 3
+student@ubuntu:~/go-reloaded/test$ ./doop 9223372036854775807 "*" 3
 0
-student@ubuntu:~/[[ROOT]]/test$ ./doop 1 "*" 1
+student@ubuntu:~/go-reloaded/test$ ./doop 1 "*" 1
 1
-student@ubuntu:~/[[ROOT]]/test$ ./doop 1 "*" -1
+student@ubuntu:~/go-reloaded/test$ ./doop 1 "*" -1
 -1
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/go-reloaded/test$
 ```
 
 ---
@@ -379,14 +379,14 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/go-reloaded/test$ go build
+student@ubuntu:~/go-reloaded/test$ ./test
 125
 125
 125
 125
 0
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/go-reloaded/test$
 ```
 
 ---
@@ -432,10 +432,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/go-reloaded/test$ go build
+student@ubuntu:~/go-reloaded/test$ ./test
 [Hello how are you?]
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/go-reloaded/test$
 ```
 
 ---
@@ -481,10 +481,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/go-reloaded/test$ go build
+student@ubuntu:~/go-reloaded/test$ ./test
 [Hello how are you?]
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/go-reloaded/test$
 ```
 
 ---
@@ -533,10 +533,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/go-reloaded/test$ go build
+student@ubuntu:~/go-reloaded/test$ ./test
 43
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/go-reloaded/test$
 ```
 
 ---
@@ -561,20 +561,20 @@ Write a **program** that checks the arguments for vowels.
 Example of output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./rotatevowels "Hello World" | cat -e
+student@ubuntu:~/go-reloaded/test$ go build
+student@ubuntu:~/go-reloaded/test$ ./rotatevowels "Hello World" | cat -e
 Hollo Werld$
-student@ubuntu:~/[[ROOT]]/test$ ./rotatevowels "HEllO World" "problem solved"
+student@ubuntu:~/go-reloaded/test$ ./rotatevowels "HEllO World" "problem solved"
 Hello Werld problom sOlvEd
-student@ubuntu:~/[[ROOT]]/test$ ./rotatevowels "str" "shh" "psst"
+student@ubuntu:~/go-reloaded/test$ ./rotatevowels "str" "shh" "psst"
 str shh psst
-student@ubuntu:~/[[ROOT]]/test$ ./rotatevowels "happy thoughts" "good luck"
+student@ubuntu:~/go-reloaded/test$ ./rotatevowels "happy thoughts" "good luck"
 huppy thooghts guod lack
-student@ubuntu:~/[[ROOT]]/test$ ./rotatevowels "aEi" "Ou"
+student@ubuntu:~/go-reloaded/test$ ./rotatevowels "aEi" "Ou"
 uOi Ea
-student@ubuntu:~/[[ROOT]]/test$ ./rotatevowels
+student@ubuntu:~/go-reloaded/test$ ./rotatevowels
 
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/go-reloaded/test$
 ```
 
 ---
@@ -622,10 +622,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/go-reloaded/test$ go build
+student@ubuntu:~/go-reloaded/test$ ./test
 [1 2 3 A B C a b c]
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/go-reloaded/test$
 ```
 
 ---
@@ -664,19 +664,19 @@ Write a program that behaves like a simplified `cat` command.
 - The program must be submitted inside a folder named `cat`.
 
 ```console
-student@ubuntu:~/[[ROOT]]/cat$ go build
-student@ubuntu:~/[[ROOT]]/cat$ ./cat abc
+student@ubuntu:~/go-reloaded/cat$ go build
+student@ubuntu:~/go-reloaded/cat$ ./cat abc
 ERROR: abc: No such file or directory
-student@ubuntu:~/[[ROOT]]/cat$ ./cat quest8.txt
+student@ubuntu:~/go-reloaded/cat$ ./cat quest8.txt
 "Programming is a skill best acquired by pratice and example rather than from books" by Alan Turing
-student@ubuntu:~/[[ROOT]]/cat$ ./cat
+student@ubuntu:~/go-reloaded/cat$ ./cat
 Hello
 Hello
 ^C
-student@ubuntu:~/[[ROOT]]/cat$ ./cat quest8.txt quest8T.txt
+student@ubuntu:~/go-reloaded/cat$ ./cat quest8.txt quest8T.txt
 "Programming is a skill best acquired by pratice and example rather than from books" by Alan Turing
 "Alan Mathison Turing was an English mathematician, computer scientist, logician, cryptanalyst. Turing was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer. Turing is widely considered to be the father of theoretical computer science and artificial intelligence."
-student@ubuntu:~/[[ROOT]]/cat$
+student@ubuntu:~/go-reloaded/cat$
 ```
 
 ---
@@ -751,10 +751,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/go-reloaded/test$ go build
+student@ubuntu:~/go-reloaded/test$ ./test
 3
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/go-reloaded/test$
 ```
 
 ---
@@ -834,11 +834,11 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/go-reloaded/test$ go build
+student@ubuntu:~/go-reloaded/test$ ./test
 1 -> 4 -> 9 -> <nil>
 -2 -> 1 -> 2 -> 4 -> 9 -> <nil>
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/go-reloaded/test$
 ```
 
 ---
@@ -915,10 +915,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/go-reloaded/test$ go build
+student@ubuntu:~/go-reloaded/test$ ./test
 -2 -> 3 -> 5 -> 7 -> 9 -> <nil>
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/go-reloaded/test$
 ```
 
 ---
@@ -1009,8 +1009,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/go-reloaded/test$ go build
+student@ubuntu:~/go-reloaded/test$ ./test
 ----normal state----
 1 -> <nil>
 ------answer-----
@@ -1020,7 +1020,7 @@ student@ubuntu:~/[[ROOT]]/test$ ./test
 1 -> Hello -> 1 -> There -> 1 -> 1 -> How -> 1 -> are -> you -> 1 -> <nil>
 ------answer-----
 Hello -> There -> How -> are -> you -> <nil>
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/go-reloaded/test$
 ```
 
 ---
@@ -1066,13 +1066,13 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/go-reloaded/test$ go build
+student@ubuntu:~/go-reloaded/test$ ./test
 3
 4
 5
 7
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/go-reloaded/test$
 ```
 
 ---
@@ -1115,13 +1115,13 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/go-reloaded/test$ go build
+student@ubuntu:~/go-reloaded/test$ ./test
 4
 1
 7
 5
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/go-reloaded/test$
 ```
 
 ---
@@ -1171,8 +1171,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/go-reloaded/test$ go build
+student@ubuntu:~/go-reloaded/test$ ./test
 Before delete:
 1
 4
@@ -1182,5 +1182,5 @@ After delete:
 1
 5
 7
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/go-reloaded/test$
 ```

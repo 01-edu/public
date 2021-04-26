@@ -50,10 +50,10 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/adding_twice/test$ cargo run
 The value is 27
 The value is 47
 The value is 67
 The value is -57
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/adding_twice/test$
 ```

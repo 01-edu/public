@@ -47,11 +47,11 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/btreeinsertdata$ go build
-student@ubuntu:~/[[ROOT]]/btreeinsertdata$ ./btreeinsertdata
+student@ubuntu:~/btreeinsertdata$ go build
+student@ubuntu:~/btreeinsertdata$ ./btreeinsertdata
 1
 4
 5
 7
-student@ubuntu:~/[[ROOT]]/btreeinsertdata$
+student@ubuntu:~/btreeinsertdata$
 ```

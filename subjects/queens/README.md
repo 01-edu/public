@@ -85,8 +85,8 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/queens/test$ cargo run
 Is it possible for the queens to attack each other? => true
 Is it possible for the queens to attack each other? => false
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/queens/test$
 ```

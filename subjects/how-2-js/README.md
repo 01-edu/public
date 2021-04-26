@@ -40,6 +40,6 @@ and you should see your hello world.
 
 Great ! you are all set, if you want to re-execute your script, just refresh.
 
-You now just have to create a repository named `[[ROOT]]`,
+You now just have to create a repository named `how-2-js`,
 which will hold all your solutions for this piscine
 and just add your 2 generated files to it, we will start slow for now... 🐢

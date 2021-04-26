@@ -58,11 +58,11 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/listfind/test$ go build
+student@ubuntu:~/listfind/test$ ./test
 0xc42000a0a0
 hello2
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/listfind/test$
 ```
 
 ### Note

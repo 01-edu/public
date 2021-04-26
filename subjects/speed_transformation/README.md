@@ -26,7 +26,7 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/speed_transformation/test$ cargo run
 100 km/h is equivalent to 27.77777777777778 m/s
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/speed_transformation/test$
 ```

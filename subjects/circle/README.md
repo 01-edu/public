@@ -93,11 +93,11 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/circle/test$ cargo run
 circle = Circle { center: Point { x: 500.0, y: 500.0 }, radius: 150.0 } area = 70685.83470577035
 circle = Circle { center: Point { x: 500.0, y: 500.0 }, radius: 150.0 } diameter = 300
 circle1 = Circle { center: Point { x: 80.0, y: 115.0 }, radius: 30.0 } diameter = 60
 circle and circle1 intersect = false
 distance between Point { x: 1.0, y: 1.0 } and Point { x: 0.0, y: 0.0 } is 1.4142135623730951
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/circle/test$
 ```

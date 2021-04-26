@@ -110,10 +110,10 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/events/test$ cargo run
 (Bottom, 50, [38;2;50;50;50mGo to the doctor[0m)
 (Top, 30, [38;2;255;2;22mYou have 13H:38M:14S left before the registration ends[0m)
 (Center, 100, [38;2;200;200;3mGo to the doctor[0m)
 (Top, 25, [38;2;0;255;0mEnjoy your holiday[0m)
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/events/test$
 ```

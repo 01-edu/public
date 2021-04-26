@@ -7,8 +7,8 @@ Write a program that displays the alphabet in reverse, with even letters in uppe
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/displayalrevm$ go build
-student@ubuntu:~/[[ROOT]]/displayalrevm$ ./displayalrevm | cat -e
+student@ubuntu:~/displayalrevm$ go build
+student@ubuntu:~/displayalrevm$ ./displayalrevm | cat -e
 zYxWvUtSrQpOnMlKjIhGfEdCbA$
-student@ubuntu:~/[[ROOT]]/displayalrevm$
+student@ubuntu:~/displayalrevm$
 ```

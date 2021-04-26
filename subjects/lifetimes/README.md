@@ -47,7 +47,7 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/lifetimes/test$ cargo run
 Person = Person { name: "Leo", age: 0 }
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/lifetimes/test$
 ```

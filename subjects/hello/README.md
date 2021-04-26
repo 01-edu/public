@@ -7,8 +7,8 @@ Write a program that displays "Hello World!" followed by a newline (`'\n'`).
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/hello/test$ go build
+student@ubuntu:~/hello/test$ ./test
 Hello World!
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/hello/test$
 ```

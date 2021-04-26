@@ -27,7 +27,7 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/to_url/test$ cargo run
 Hello, world! to be use as an url is Hello,%20world!
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/to_url/test$
 ```

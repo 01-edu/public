@@ -42,12 +42,12 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/pig_latin/test$ cargo run
 iglooay
 appleay
 ellohay
 aresquay
 enonxay
 airchay
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/pig_latin/test$
 ```

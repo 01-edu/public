@@ -11,8 +11,8 @@ Please note that `casting` is not allowed for this exercise!
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/printreversealphabetg$ go build
-student@ubuntu:~/[[ROOT]]/printreversealphabetg$ ./printreversealphabetg
+student@ubuntu:~/printreversealphabetg$ go build
+student@ubuntu:~/printreversealphabetg$ ./printreversealphabetg
 gfedcba
-student@ubuntu:~/[[ROOT]]/printreversealphabetg$
+student@ubuntu:~/printreversealphabetg$
 ```

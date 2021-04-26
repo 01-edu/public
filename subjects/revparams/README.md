@@ -7,12 +7,12 @@ Write a **program** that prints the arguments received in the command line in a 
 Example of output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./revparams choumi is the best cat
+student@ubuntu:~/revparams/test$ go build
+student@ubuntu:~/revparams/test$ ./revparams choumi is the best cat
 cat
 best
 the
 is
 choumi
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/revparams/test$
 ```

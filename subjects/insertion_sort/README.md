@@ -49,8 +49,8 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/insertion_sort/test$ cargo run
 [3, 5, 7, 2, 1, 6, 8, 4]
 [1, 2, 3, 4, 5, 6, 7, 8]
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/insertion_sort/test$
 ```

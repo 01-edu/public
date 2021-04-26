@@ -42,10 +42,10 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/lalgebra_scalar/test$ cargo run
 0.0
 0
 1.0
 1
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/lalgebra_scalar/test$
 ```

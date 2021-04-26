@@ -29,8 +29,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test | cat -e
+student@ubuntu:~/printstr/test$ go build
+student@ubuntu:~/printstr/test$ ./test | cat -e
 Hello World!%
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/printstr/test$
 ```

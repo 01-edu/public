@@ -7,8 +7,8 @@ Write a program that displays all digits in descending order, followed by a newl
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/countdown/test$ go build
+student@ubuntu:~/countdown/test$ ./test
 9876543210
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/countdown/test$
 ```

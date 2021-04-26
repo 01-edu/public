@@ -52,10 +52,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/listpushback/test$ go build
+student@ubuntu:~/listpushback/test$ ./test
 Hello
 man
 how are you
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/listpushback/test$
 ```

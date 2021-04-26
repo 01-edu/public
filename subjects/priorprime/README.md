@@ -33,8 +33,8 @@ func main() {
 Its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./priorprime
+student@ubuntu:~/priorprime/test$ go build
+student@ubuntu:~/priorprime/test$ ./priorprime
 41
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/priorprime/test$
 ```

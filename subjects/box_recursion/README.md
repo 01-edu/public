@@ -72,9 +72,9 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/box_recursion/test$ cargo run
 WorkEnvironment { grade: Some(Worker { worker_type: "Normal Worker", worker_name: "Alice", next_worker: Some(Worker { worker_type: "Normal Worker", worker_name: "Ana", next_worker: Some(Worker { worker_type: "Manager", worker_name: "Monica", next_worker: Some(Worker { worker_type: "CEO", worker_name: "Marie", next_worker: None }) }) }) }) }
 Some(("Alice", "Normal Worker"))
 WorkEnvironment { grade: None }
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/box_recursion/test$
 ```

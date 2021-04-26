@@ -13,15 +13,15 @@ If the number of arguments is different from 2, the program displays nothing.
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/hiddenp$ go build
-student@ubuntu:~/[[ROOT]]/hiddenp$ ./hiddenp "fgex.;" "tyf34gdgf;'ektufjhgdgex.;.;rtjynur6" | cat -e
+student@ubuntu:~/hiddenp$ go build
+student@ubuntu:~/hiddenp$ ./hiddenp "fgex.;" "tyf34gdgf;'ektufjhgdgex.;.;rtjynur6" | cat -e
 1$
-student@ubuntu:~/[[ROOT]]/hiddenp$ ./hiddenp "abc" "2altrb53c.sse" | cat -e
+student@ubuntu:~/hiddenp$ ./hiddenp "abc" "2altrb53c.sse" | cat -e
 1$
-student@ubuntu:~/[[ROOT]]/hiddenp$ ./hiddenp "abc" "btarc" | cat -e
+student@ubuntu:~/hiddenp$ ./hiddenp "abc" "btarc" | cat -e
 0$
-student@ubuntu:~/[[ROOT]]/hiddenp$ ./hiddenp "DD" "DABC" | cat -e
+student@ubuntu:~/hiddenp$ ./hiddenp "DD" "DABC" | cat -e
 0$
-student@ubuntu:~/[[ROOT]]/hiddenp$ ./hiddenp
-student@ubuntu:~/[[ROOT]]/hiddenp$
+student@ubuntu:~/hiddenp$ ./hiddenp
+student@ubuntu:~/hiddenp$
 ```

@@ -14,14 +14,14 @@ It will only be tested strings containing the characters 'C' and 'D'.
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/balancedstring$ go build
-student@ubuntu:~/[[ROOT]]/balancedstring$ ./balancedstring "CDCCDDCDCD"
+student@ubuntu:~/balancedstring$ go build
+student@ubuntu:~/balancedstring$ ./balancedstring "CDCCDDCDCD"
 4
-student@ubuntu:~/[[ROOT]]/balancedstring$ ./balancedstring "CDDDDCCCDC"
+student@ubuntu:~/balancedstring$ ./balancedstring "CDDDDCCCDC"
 3
-student@ubuntu:~/[[ROOT]]/balancedstring$ ./balancedstring "DDDDCCCC"
+student@ubuntu:~/balancedstring$ ./balancedstring "DDDDCCCC"
 1
-student@ubuntu:~/[[ROOT]]/balancedstring$ ./balancedstring "CDCCCDDCDD"
+student@ubuntu:~/balancedstring$ ./balancedstring "CDCCCDDCDD"
 2
 ```
 

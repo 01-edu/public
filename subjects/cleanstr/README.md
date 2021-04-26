@@ -17,13 +17,13 @@ program displays nothing.
 ### Usage :
 
 ```console
-student@ubuntu:~/[[ROOT]]/cleanstr$ go build
-student@ubuntu:~/[[ROOT]]/cleanstr$ ./cleanstr "you see it's easy to display the same thing" | cat -e
+student@ubuntu:~/cleanstr$ go build
+student@ubuntu:~/cleanstr$ ./cleanstr "you see it's easy to display the same thing" | cat -e
 you see it's easy to display the same thing$
-student@ubuntu:~/[[ROOT]]/cleanstr$ ./cleanstr " only    it's  harder   "
+student@ubuntu:~/cleanstr$ ./cleanstr " only    it's  harder   "
 only it's harder$
-student@ubuntu:~/[[ROOT]]/cleanstr$ ./cleanstr " how funny" "Did you   hear Mathilde ?"
+student@ubuntu:~/cleanstr$ ./cleanstr " how funny" "Did you   hear Mathilde ?"
 $
-student@ubuntu:~/[[ROOT]]/cleanstr$ ./cleanstr ""
-student@ubuntu:~/[[ROOT]]/cleanstr$
+student@ubuntu:~/cleanstr$ ./cleanstr ""
+student@ubuntu:~/cleanstr$
 ```

@@ -56,11 +56,11 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/string_literals/test$ cargo run
 true
 true
 true
 ("ru", "st")
 1
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/string_literals/test$
 ```

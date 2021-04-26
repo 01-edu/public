@@ -40,10 +40,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/reduceint/test$ go build
+student@ubuntu:~/reduceint/test$ ./test
 1000
 502
 250
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/reduceint/test$
 ```

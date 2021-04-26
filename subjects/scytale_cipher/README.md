@@ -61,8 +61,8 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/scytale_cipher/test$ cargo run
 "scytale Code" size=6 -> "sec yCtoadle"
 "scytale Code" size=8 -> "sCcoydtea l e"
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/scytale_cipher/test$
 ```

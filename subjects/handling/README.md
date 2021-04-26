@@ -49,7 +49,7 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/handling/test$ cargo run
 content to be written
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/handling/test$
 ```

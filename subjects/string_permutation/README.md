@@ -40,7 +40,7 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/string_permutation/test$ cargo run
 Is `thought` a permutation of `thougth`? = true
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/string_permutation/test$
 ```

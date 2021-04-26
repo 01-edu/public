@@ -57,11 +57,11 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/matrix_mult/test$ cargo run
 [3, 8]
 [8, 0]
 Some(Matrix([[1, 0], [0, 0]]))
 2
 2
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/matrix_mult/test$
 ```

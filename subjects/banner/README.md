@@ -111,10 +111,10 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/banner/test$ cargo run
 "0.5"
 "0"
 "invalid float literal"
 "invalid float literal"
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/banner/test$
 ```

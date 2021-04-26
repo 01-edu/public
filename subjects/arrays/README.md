@@ -54,10 +54,10 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/arrays/test$ cargo run
 The Sum of the elements in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] = 55
 The Sum of the elements in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] = 55
 The Sum of the elements in [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] = 50
 Array size 32 with only 10's in it [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/arrays/test$
 ```

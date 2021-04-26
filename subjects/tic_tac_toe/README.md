@@ -80,9 +80,9 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/tic_tac_toe/test$ cargo run
 "Tie"
 "player O won"
 "player X won"
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/tic_tac_toe/test$
 ```

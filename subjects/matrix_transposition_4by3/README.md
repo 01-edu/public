@@ -63,8 +63,8 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/matrix_transposition_4by3/test$ cargo run
 Original matrix Matrix4by3((1, 2, 3), (4, 5, 6), (7, 8, 9), (10, 11, 12))
 Transpose matrix Matrix3by4((1, 4, 7, 10), (2, 5, 8, 11), (3, 6, 9, 12))
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/matrix_transposition_4by3/test$
 ```

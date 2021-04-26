@@ -30,9 +30,9 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/stars/test$ cargo run
 **
 ****************
 ********************************
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/stars/test$
 ```

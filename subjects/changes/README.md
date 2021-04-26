@@ -54,8 +54,8 @@ fn main() {
 And its expected output
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/changes/test$ cargo run
 brightness = 0
 new brightness = 200
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/changes/test$
 ```

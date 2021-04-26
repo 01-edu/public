@@ -37,9 +37,9 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/findnextprime/test$ go build
+student@ubuntu:~/findnextprime/test$ ./test
 5
 5
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/findnextprime/test$
 ```

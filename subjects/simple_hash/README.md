@@ -60,11 +60,11 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/simple_hash/test$ cargo run
 Does the HashMap contains the name Roman? => false
 Does the HashMap contains the name Katie? => true
 Removing Robert ()
 Does the HashMap contains the name Robert? => false
 Hash {"Katie": 334, "Daniel": 122, "Ashley": 333}
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/simple_hash/test$
 ```

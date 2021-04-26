@@ -7,14 +7,14 @@ Write a **program** that prints the name of the program.
 Example of output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/printprogramname$ go build main.go
-student@ubuntu:~/[[ROOT]]/printprogramname$ ./main
+student@ubuntu:~/printprogramname$ go build main.go
+student@ubuntu:~/printprogramname$ ./main
 main
-student@ubuntu:~/[[ROOT]]/printprogramname$ go build
-student@ubuntu:~/[[ROOT]]/printprogramname$ ./printprogramname | cat -e
+student@ubuntu:~/printprogramname$ go build
+student@ubuntu:~/printprogramname$ ./printprogramname | cat -e
 printprogramname$
-student@ubuntu:~/[[ROOT]]/printprogramname$ go build -o Nessy
-student@ubuntu:~/[[ROOT]]/printprogramname$ ./Nessy
+student@ubuntu:~/printprogramname$ go build -o Nessy
+student@ubuntu:~/printprogramname$ ./Nessy
 Nessy
-student@ubuntu:~/[[ROOT]]/printprogramname$
+student@ubuntu:~/printprogramname$
 ```

@@ -17,7 +17,7 @@ Create a program `quadchecker` that takes a `string` as an argument and displays
 - If it's `quadA`
 
 ```console
-student@ubuntu:~/[[ROOT]]/quadchecker$ ls -l
+student@ubuntu:~/quadchecker$ ls -l
 -rw-r--r-- 1 student student  nov 23 14:30 main.go
 -rwxr-xr-x 1 student student  nov 23 19:18 quadchecker
 -rwxr-xr-x 1 student student  nov 23 19:50 quadA
@@ -25,38 +25,38 @@ student@ubuntu:~/[[ROOT]]/quadchecker$ ls -l
 -rwxr-xr-x 1 student student  nov 23 19:50 quadC
 -rwxr-xr-x 1 student student  nov 23 19:50 quadD
 -rwxr-xr-x 1 student student  nov 23 19:50 quadE
-student@ubuntu:~/[[ROOT]]/quadchecker$ ./quadA 3 3 | ./quadchecker
+student@ubuntu:~/quadchecker$ ./quadA 3 3 | ./quadchecker
 [quadA] [3] [3]
-student@ubuntu:~/[[ROOT]]/quadchecker$
-student@ubuntu:~/[[ROOT]]/quadchecker$
-student@ubuntu:~/[[ROOT]]/quadchecker$
-student@ubuntu:~/[[ROOT]]/quadchecker$
+student@ubuntu:~/quadchecker$
+student@ubuntu:~/quadchecker$
+student@ubuntu:~/quadchecker$
+student@ubuntu:~/quadchecker$
 ```
 
 - If it's `quadC 1 1` :
 
 ```console
-student@ubuntu:~/[[ROOT]]/quadchecker$ ./quadC 1 1
+student@ubuntu:~/quadchecker$ ./quadC 1 1
 A
-student@ubuntu:~/[[ROOT]]/quadchecker$ ./quadD 1 1
+student@ubuntu:~/quadchecker$ ./quadD 1 1
 A
-student@ubuntu:~/[[ROOT]]/quadchecker$ ./quadE 1 1
+student@ubuntu:~/quadchecker$ ./quadE 1 1
 A
-student@ubuntu:~/[[ROOT]]/quadchecker$ ./quadC 1 1 | ./quadchecker
+student@ubuntu:~/quadchecker$ ./quadC 1 1 | ./quadchecker
 [quadC] [1] [1] || [quadD] [1] [1] || [quadE] [1] [1]
-student@ubuntu:~/[[ROOT]]/quadchecker$
+student@ubuntu:~/quadchecker$
 ```
 
 - If it's `quadC 1 2` :
 
 ```console
-student@ubuntu:~/[[ROOT]]/quadchecker$ ./quadE 1 2
+student@ubuntu:~/quadchecker$ ./quadE 1 2
 A
 C
-student@ubuntu:~/[[ROOT]]/quadchecker$ ./quadC 1 2
+student@ubuntu:~/quadchecker$ ./quadC 1 2
 A
 C
-student@ubuntu:~/[[ROOT]]/quadchecker$ ./quadE 1 2 | ./quadchecker
+student@ubuntu:~/quadchecker$ ./quadE 1 2 | ./quadchecker
 [quadC] [1] [2] || [quadE] [1] [2]
-student@ubuntu:~/[[ROOT]]/quadchecker$
+student@ubuntu:~/quadchecker$
 ```

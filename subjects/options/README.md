@@ -21,26 +21,26 @@ Write a program that takes an undefined number of arguments which could be consi
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test | cat -e
+student@ubuntu:~/options/test$ go build
+student@ubuntu:~/options/test$ ./test | cat -e
 options: abcdefghijklmnopqrstuvwxyz$
-student@ubuntu:~/[[ROOT]]/test$ ./test -abc -ijk | cat -e
+student@ubuntu:~/options/test$ ./test -abc -ijk | cat -e
 00000000 00000000 00000111 00000111$
-student@ubuntu:~/[[ROOT]]/test$ ./test -z | cat -e
+student@ubuntu:~/options/test$ ./test -z | cat -e
 00000010 00000000 00000000 00000000$
-student@ubuntu:~/[[ROOT]]/test$ ./test -abc -hijk | cat -e
+student@ubuntu:~/options/test$ ./test -abc -hijk | cat -e
 options: abcdefghijklmnopqrstuvwxyz$
-student@ubuntu:~/[[ROOT]]/test$ ./test -h | cat -e
+student@ubuntu:~/options/test$ ./test -h | cat -e
 options: abcdefghijklmnopqrstuvwxyz$
-student@ubuntu:~/[[ROOT]]/test$ ./test -zh | cat -e
+student@ubuntu:~/options/test$ ./test -zh | cat -e
 00000010 00000000 00000000 10000000$
-student@ubuntu:~/[[ROOT]]/test$ ./test -z -h | cat -e
+student@ubuntu:~/options/test$ ./test -z -h | cat -e
 options: abcdefghijklmnopqrstuvwxyz$
-student@ubuntu:~/[[ROOT]]/test$ ./test -hhhhhh | cat -e
+student@ubuntu:~/options/test$ ./test -hhhhhh | cat -e
 options: abcdefghijklmnopqrstuvwxyz$
-student@ubuntu:~/[[ROOT]]/test$ ./test -eeeeee | cat -e
+student@ubuntu:~/options/test$ ./test -eeeeee | cat -e
 00000000 00000000 00000000 00010000$
-student@ubuntu:~/[[ROOT]]/test$ ./test -% | cat -e
+student@ubuntu:~/options/test$ ./test -% | cat -e
 Invalid Option$
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/options/test$
 ```

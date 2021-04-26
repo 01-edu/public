@@ -17,25 +17,25 @@ The program has to handle the modulo and division operations by 0 as shown on th
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build doop.go
-student@ubuntu:~/[[ROOT]]/test$ ./doop
-student@ubuntu:~/[[ROOT]]/test$ ./doop 1 + 1 | cat -e
+student@ubuntu:~/doop/test$ go build doop.go
+student@ubuntu:~/doop/test$ ./doop
+student@ubuntu:~/doop/test$ ./doop 1 + 1 | cat -e
 2$
-student@ubuntu:~/[[ROOT]]/test$ ./doop hello + 1
-student@ubuntu:~/[[ROOT]]/test$ ./doop 1 p 1
-student@ubuntu:~/[[ROOT]]/test$ ./doop 1 / 0 | cat -e
+student@ubuntu:~/doop/test$ ./doop hello + 1
+student@ubuntu:~/doop/test$ ./doop 1 p 1
+student@ubuntu:~/doop/test$ ./doop 1 / 0 | cat -e
 No division by 0$
-student@ubuntu:~/[[ROOT]]/test$ ./doop 1 % 0 | cat -e
+student@ubuntu:~/doop/test$ ./doop 1 % 0 | cat -e
 No modulo by 0$
-student@ubuntu:~/[[ROOT]]/test$ ./doop 9223372036854775807 + 1
+student@ubuntu:~/doop/test$ ./doop 9223372036854775807 + 1
 0
-student@ubuntu:~/[[ROOT]]/test$ ./doop -9223372036854775809 - 3
+student@ubuntu:~/doop/test$ ./doop -9223372036854775809 - 3
 0
-student@ubuntu:~/[[ROOT]]/test$ ./doop 9223372036854775807 "*" 3
+student@ubuntu:~/doop/test$ ./doop 9223372036854775807 "*" 3
 0
-student@ubuntu:~/[[ROOT]]/test$ ./doop 1 "*" 1
+student@ubuntu:~/doop/test$ ./doop 1 "*" 1
 1
-student@ubuntu:~/[[ROOT]]/test$ ./doop 1 "*" -1
+student@ubuntu:~/doop/test$ ./doop 1 "*" -1
 -1
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/doop/test$
 ```

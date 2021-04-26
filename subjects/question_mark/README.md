@@ -70,7 +70,7 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/question_mark/test$ cargo run
 1000
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/question_mark/test$
 ```

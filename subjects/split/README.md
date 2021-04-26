@@ -35,8 +35,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/split/test$ go build
+student@ubuntu:~/split/test$ ./test
 []string{"Hello", "how", "are", "you?"}
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/split/test$
 ```

@@ -18,10 +18,10 @@ If the number of arguments is not 1, output nothing.
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./main "UD"
+student@ubuntu:~/robottoorigin/test$ go build
+student@ubuntu:~/robottoorigin/test$ ./main "UD"
 true
-student@ubuntu:~/[[ROOT]]/test$ ./main "LL"
+student@ubuntu:~/robottoorigin/test$ ./main "LL"
 false
 ```
 

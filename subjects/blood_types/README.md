@@ -104,9 +104,9 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/blood_types/test$ cargo run
 recipients of O+ [AB+, O+, A+, B+]
 donors of O+ [O+, O-]
 donors of O+ can receive from A- false
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/blood_types/test$
 ```

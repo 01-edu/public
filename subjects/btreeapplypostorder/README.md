@@ -37,11 +37,11 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/btreeapplypostorder/test$ go build
+student@ubuntu:~/btreeapplypostorder/test$ ./test
 1
 5
 7
 4
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/btreeapplypostorder/test$
 ```

@@ -9,12 +9,12 @@ If the number of arguments is not 1, the program displays an `a` followed by a n
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test "abc"
+student@ubuntu:~/displaya/test$ go build
+student@ubuntu:~/displaya/test$ ./test "abc"
 a
-student@ubuntu:~/[[ROOT]]/test$ ./test "bcvbvA"
+student@ubuntu:~/displaya/test$ ./test "bcvbvA"
 a
-student@ubuntu:~/[[ROOT]]/test$ ./test "nbv"
+student@ubuntu:~/displaya/test$ ./test "nbv"
 a
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/displaya/test$
 ```

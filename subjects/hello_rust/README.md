@@ -10,7 +10,7 @@ Make sure those rules are followed consistenly during the whole piscine.
 
 #### 1- get-ready
 
-Create in your [Gitea](https://git.[[DOMAIN]]) account the repository named `[[ROOT]]`.
+Create in your [Gitea](https://git.[[DOMAIN]]) account the repository named `hello_rust`.
 
 This repository will be the folder where all the exercices must be uploaded.
 
@@ -18,7 +18,7 @@ Once created, clone that repository on your desktop.
 
 If your username was `choumi` this is the command that will need to be used :
 
-`git clone git@git.[[DOMAIN]]:choumi/[[ROOT]].git`
+`git clone git@git.[[DOMAIN]]:choumi/hello_rust.git`
 
 This command needs to be adapted with **your own username**.
 

@@ -4,7 +4,7 @@
 
 #### 1- get-ready
 
-Create in your [Gitea](https://git.[[DOMAIN]]) account the repository named `[[ROOT]]`.
+Create in your [Gitea](https://git.[[DOMAIN]]) account the repository named `piscine-go`.
 
 This repository will be the folder where all the exercices must be uploaded.
 
@@ -12,7 +12,7 @@ Once created, clone that repository on your desktop.
 
 If your username was `choumi` this is the command that will need to be used :
 
-`git clone git@git.[[DOMAIN]]:choumi/[[ROOT]].git`
+`git clone git@git.[[DOMAIN]]:choumi/piscine-go.git`
 
 This command needs to be adapted with **your own username**.
 
@@ -47,9 +47,9 @@ Where `choumi` is your username
 If the username is `choumi` :
 
 ```console
-user@host:~/[[ROOT]]$ ./hello.sh
+user@host:~/piscine-go$ ./hello.sh
 Hello choumi!
-user@host:~/[[ROOT]]$
+user@host:~/piscine-go$
 ```
 
 #### 3- go-say-hello

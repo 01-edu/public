@@ -33,8 +33,8 @@ fn main() {
 And its output:
 
 ```rust
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/borrow/test$ cargo run
 str_len("hello") = 5
 str_len("camelCase") = 9
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/borrow/test$
 ```

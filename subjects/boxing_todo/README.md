@@ -165,9 +165,9 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/boxing_todo/test$ cargo run
 TodoList { title: "TODO LIST FOR PISCINE RUST", tasks: [Task { id: 0, description: "do this", level: 0 }, Task { id: 1, description: "do that", level: 5 }] }
 Todo List parse failed: None
 Fail to parses todo Some(Malformed(UnexpectedCharacter { ch: ',', line: 2, column: 18 }))
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/boxing_todo/test$
 ```

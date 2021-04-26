@@ -50,8 +50,8 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/step_iterator/test$ cargo run
 0,10,20,30,40,50,60,70,80,90,100,
 0,12,24,36,48,60,72,84,96,
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/step_iterator/test$
 ```

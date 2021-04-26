@@ -42,8 +42,8 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/easy_traits/test$ cargo run
 hello world
 ["one", "two", "three"]
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/easy_traits/test$
 ```

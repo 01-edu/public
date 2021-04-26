@@ -74,8 +74,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/enigma/test$ go build
+student@ubuntu:~/enigma/test$ ./test
 5
 2
 7
@@ -85,5 +85,5 @@ After using Enigma
 6
 5
 7
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/enigma/test$
 ```

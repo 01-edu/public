@@ -27,8 +27,8 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/delete_prefix/test$ cargo run
 Some("cdefghijklmnop")
 None
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/delete_prefix/test$
 ```

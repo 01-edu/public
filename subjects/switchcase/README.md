@@ -13,9 +13,9 @@ Write a program that takes a `string` and reverses the case of all its letters.
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test "SometHingS iS WronG"
+student@ubuntu:~/switchcase/test$ go build
+student@ubuntu:~/switchcase/test$ ./test "SometHingS iS WronG"
 sOMEThINGs Is wRONg
-student@ubuntu:~/[[ROOT]]/test$ ./test
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/switchcase/test$ ./test
+student@ubuntu:~/switchcase/test$
 ```

@@ -36,7 +36,7 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
-File { fd: 3, path: "[[ROOT]]/a.txt", read: true, write: false }
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/panic/test$ cargo run
+File { fd: 3, path: "panic/a.txt", read: true, write: false }
+student@ubuntu:~/panic/test$
 ```

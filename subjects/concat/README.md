@@ -33,8 +33,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/concat/test$ go build
+student@ubuntu:~/concat/test$ ./test
 Hello! How are you?
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/concat/test$
 ```

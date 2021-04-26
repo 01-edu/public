@@ -11,9 +11,9 @@ Submit your solution in the file `my_answer.sh` that will print it when executed
 ### Utilisation
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ ./my_answer.sh | cat -e
+student@ubuntu:~/now-get-to-work/test$ ./my_answer.sh | cat -e
 John Doe$
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/now-get-to-work/test$
 ```
 
 ### Hint

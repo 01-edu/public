@@ -9,8 +9,8 @@ Recursivity must be used to solve this problem.
 It should print something like this :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/eightqueens/test$ go build
+student@ubuntu:~/eightqueens/test$ ./test
 15863724
 16837425
 17468253

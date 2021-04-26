@@ -9,14 +9,14 @@ Write a program that takes two integers as arguments and displays the chess desk
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/printchessboard$ go build
-student@ubuntu:~/[[ROOT]]/printchessboard$ ./printchessboard 4 3 | cat -e
+student@ubuntu:~/printchessboard$ go build
+student@ubuntu:~/printchessboard$ ./printchessboard 4 3 | cat -e
 # # $
  # #$
 # # $
-student@ubuntu:~/[[ROOT]]/printchessboard$ ./printchessboard 7 | cat -e
+student@ubuntu:~/printchessboard$ ./printchessboard 7 | cat -e
 Error$
-student@ubuntu:~/[[ROOT]]/printchessboard$ ./printchessboard 0 0 | cat -e
+student@ubuntu:~/printchessboard$ ./printchessboard 0 0 | cat -e
 Error$
-student@ubuntu:~/[[ROOT]]/printchessboard$
+student@ubuntu:~/printchessboard$
 ```

@@ -13,12 +13,12 @@ If the number of arguments is not 1, or if there are no word, the program displa
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/expandstr$ go build
-student@ubuntu:~/[[ROOT]]/expandstr$ ./expandstr "you   see   it's   easy   to   display   the   same   thing" | cat -e
+student@ubuntu:~/expandstr$ go build
+student@ubuntu:~/expandstr$ ./expandstr "you   see   it's   easy   to   display   the   same   thing" | cat -e
 you   see   it's   easy   to   display   the   same   thing$
-student@ubuntu:~/[[ROOT]]/expandstr$ ./expandstr "   only  it's harder   " | cat -e
+student@ubuntu:~/expandstr$ ./expandstr "   only  it's harder   " | cat -e
 only   it's   harder$
-student@ubuntu:~/[[ROOT]]/expandstr$ ./expandstr " how funny it is" "did you  hear, Mathilde ?" | cat -e
-student@ubuntu:~/[[ROOT]]/expandstr$ ./expandstr
-student@ubuntu:~/[[ROOT]]/expandstr$
+student@ubuntu:~/expandstr$ ./expandstr " how funny it is" "did you  hear, Mathilde ?" | cat -e
+student@ubuntu:~/expandstr$ ./expandstr
+student@ubuntu:~/expandstr$
 ```

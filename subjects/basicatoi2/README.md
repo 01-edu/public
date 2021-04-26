@@ -41,11 +41,11 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/basicatoi2/test$ go build
+student@ubuntu:~/basicatoi2/test$ ./test
 12345
 12345
 0
 0
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/basicatoi2/test$
 ```

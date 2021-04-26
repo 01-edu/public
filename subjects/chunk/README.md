@@ -33,12 +33,12 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/chunk/test$ go build
+student@ubuntu:~/chunk/test$ ./test
 []
 
 [[0 1 2] [3 4 5] [6 7]]
 [[0 1 2 3 4] [5 6 7]]
 [[0 1 2 3] [4 5 6 7]]
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/chunk/test$
 ```

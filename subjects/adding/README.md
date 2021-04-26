@@ -26,9 +26,9 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/adding/test$ cargo run
 -5
 2261
 305696
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/adding/test$
 ```

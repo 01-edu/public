@@ -50,10 +50,10 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/box_it/test$ cargo run
 Box value : [5500, 8900, 32]
 size occupied in the stack : 8 bytes
 value : [5500, 8900, 32]
 size occupied in the stack : 24 bytes
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/box_it/test$
 ```

@@ -68,8 +68,8 @@ func main() {
 ### Output
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/merge/test$ go build
+student@ubuntu:~/merge/test$ ./test
 [20, 2, 3, 4, 5, 6, 6, 7, 3, 5]
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/merge/test$
 ```

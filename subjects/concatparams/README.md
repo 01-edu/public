@@ -34,11 +34,11 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/concatparams/test$ go build
+student@ubuntu:~/concatparams/test$ ./test
 Hello
 how
 are
 you?
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/concatparams/test$
 ```

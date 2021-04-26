@@ -60,8 +60,8 @@ func main() {
 An its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./main
+student@ubuntu:~/addlinkednumbers/test$ go build
+student@ubuntu:~/addlinkednumbers/test$ ./main
 9 -> 0 -> 7
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/addlinkednumbers/test$
 ```

@@ -43,8 +43,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/btreedeletenode/test$ go build
+student@ubuntu:~/btreedeletenode/test$ ./test
 Before delete:
 1
 4
@@ -54,5 +54,5 @@ After delete:
 1
 5
 7
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/btreedeletenode/test$
 ```

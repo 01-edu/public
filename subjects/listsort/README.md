@@ -71,8 +71,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/listsort/test$ go build
+student@ubuntu:~/listsort/test$ ./test
 1 -> 2 -> 3 -> 4 -> 5 -> <nil>
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/listsort/test$
 ```

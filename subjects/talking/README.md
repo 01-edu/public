@@ -44,11 +44,11 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/talking/test$ cargo run
 "There is no need to yell, calm down!"
 "Sure."
 "Quiet, I am thinking!"
 "Interesting"
 "Just say something!"
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/talking/test$
 ```

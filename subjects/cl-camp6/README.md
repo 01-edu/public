@@ -9,7 +9,7 @@ Create a file `countfiles.sh`, which will print the number **(and only the numbe
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ ./countfiles.sh | cat -e
+student@ubuntu:~/cl-camp6/test$ ./countfiles.sh | cat -e
 12$
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/cl-camp6/test$
 ```

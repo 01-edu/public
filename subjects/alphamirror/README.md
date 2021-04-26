@@ -16,11 +16,11 @@ If the number of arguments is different from 1, the program displays nothing.
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/alphamirror$ go build
-student@ubuntu:~/[[ROOT]]/alphamirror$ ./alphamirror "abc"
+student@ubuntu:~/alphamirror$ go build
+student@ubuntu:~/alphamirror$ ./alphamirror "abc"
 zyx
-student@ubuntu:~/[[ROOT]]/alphamirror$ ./alphamirror "My horse is Amazing." | cat -e
+student@ubuntu:~/alphamirror$ ./alphamirror "My horse is Amazing." | cat -e
 Nb slihv rh Znzarmt.$
-student@ubuntu:~/[[ROOT]]/alphamirror$ ./alphamirror
-student@ubuntu:~/[[ROOT]]/alphamirror$
+student@ubuntu:~/alphamirror$ ./alphamirror
+student@ubuntu:~/alphamirror$
 ```

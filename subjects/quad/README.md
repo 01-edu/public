@@ -37,12 +37,12 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/quad/test$ go build
+student@ubuntu:~/quad/test$ ./test
 o---o
 |   |
 o---o
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/quad/test$
 ```
 
 Program #2
@@ -60,10 +60,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/quad/test$ go build
+student@ubuntu:~/quad/test$ ./test
 o---o
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/quad/test$
 ```
 
 Program #3
@@ -81,10 +81,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/quad/test$ go build
+student@ubuntu:~/quad/test$ ./test
 o
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/quad/test$
 ```
 
 Program #4
@@ -102,14 +102,14 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/quad/test$ go build
+student@ubuntu:~/quad/test$ ./test
 o
 |
 |
 |
 o
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/quad/test$
 ```
 
 ----
@@ -151,12 +151,12 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/quad/test$ go build
+student@ubuntu:~/quad/test$ ./test
 /***\
 *   *
 \***/
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/quad/test$
 ```
 
 Program #2
@@ -174,10 +174,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/quad/test$ go build
+student@ubuntu:~/quad/test$ ./test
 /***\
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/quad/test$
 ```
 
 Program #3
@@ -195,10 +195,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/quad/test$ go build
+student@ubuntu:~/quad/test$ ./test
 /
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/quad/test$
 ```
 
 Program #4
@@ -216,14 +216,14 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/quad/test$ go build
+student@ubuntu:~/quad/test$ ./test
 /
 *
 *
 *
 \
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/quad/test$
 ```
 
 ----
@@ -265,12 +265,12 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/quad/test$ go build
+student@ubuntu:~/quad/test$ ./test
 ABBBA
 B   B
 CBBBC
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/quad/test$
 ```
 
 Program #2
@@ -288,10 +288,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/quad/test$ go build
+student@ubuntu:~/quad/test$ ./test
 ABBBA
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/quad/test$
 ```
 
 Program #3
@@ -309,10 +309,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/quad/test$ go build
+student@ubuntu:~/quad/test$ ./test
 A
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/quad/test$
 ```
 
 Program #4
@@ -330,14 +330,14 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/quad/test$ go build
+student@ubuntu:~/quad/test$ ./test
 A
 B
 B
 B
 C
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/quad/test$
 ```
 
 ----
@@ -379,12 +379,12 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/quad/test$ go build
+student@ubuntu:~/quad/test$ ./test
 ABBBC
 B   B
 ABBBC
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/quad/test$
 ```
 
 Program #2
@@ -402,10 +402,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/quad/test$ go build
+student@ubuntu:~/quad/test$ ./test
 ABBBC
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/quad/test$
 ```
 
 Program #3
@@ -423,10 +423,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/quad/test$ go build
+student@ubuntu:~/quad/test$ ./test
 A
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/quad/test$
 ```
 
 Program #4
@@ -444,14 +444,14 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/quad/test$ go build
+student@ubuntu:~/quad/test$ ./test
 A
 B
 B
 B
 A
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/quad/test$
 ```
 
 ----
@@ -493,12 +493,12 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/quad/test$ go build
+student@ubuntu:~/quad/test$ ./test
 ABBBC
 B   B
 CBBBA
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/quad/test$
 ```
 
 Program #2
@@ -516,10 +516,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/quad/test$ go build
+student@ubuntu:~/quad/test$ ./test
 ABBBC
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/quad/test$
 ```
 
 Program #3
@@ -537,10 +537,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/quad/test$ go build
+student@ubuntu:~/quad/test$ ./test
 A
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/quad/test$
 ```
 
 Program #4
@@ -558,12 +558,12 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/quad/test$ go build
+student@ubuntu:~/quad/test$ ./test
 A
 B
 B
 B
 C
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/quad/test$
 ```

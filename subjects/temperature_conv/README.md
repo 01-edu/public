@@ -30,9 +30,9 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/temperature_conv/test$ cargo run
 -459.67 F = -273.15 C
 0 C = 32 F
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/temperature_conv/test$
 ```
 

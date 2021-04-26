@@ -54,10 +54,10 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/tuples/test$ cargo run
 Student: Student(20, "Pedro", "Domingos")
 Student first name: Pedro
 Student last name: Domingos
 Student Id: 20
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/tuples/test$
 ```

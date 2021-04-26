@@ -13,16 +13,16 @@ All arguments tested will be positive `int` values.
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/gcd$ go build
-student@ubuntu:~/[[ROOT]]/gcd$ ./gcd 42 10 | cat -e
+student@ubuntu:~/gcd$ go build
+student@ubuntu:~/gcd$ ./gcd 42 10 | cat -e
 2$
-student@ubuntu:~/[[ROOT]]/gcd$ ./gcd 42 12
+student@ubuntu:~/gcd$ ./gcd 42 12
 6
-student@ubuntu:~/[[ROOT]]/gcd$ ./gcd 14 77
+student@ubuntu:~/gcd$ ./gcd 14 77
 7
-student@ubuntu:~/[[ROOT]]/gcd$ ./gcd 17 3
+student@ubuntu:~/gcd$ ./gcd 17 3
 1
-student@ubuntu:~/[[ROOT]]/gcd$ ./gcd
-student@ubuntu:~/[[ROOT]]/gcd$ ./gcd 50 12 4
-student@ubuntu:~/[[ROOT]]/gcd$
+student@ubuntu:~/gcd$ ./gcd
+student@ubuntu:~/gcd$ ./gcd 50 12 4
+student@ubuntu:~/gcd$
 ```

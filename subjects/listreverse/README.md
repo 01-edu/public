@@ -59,13 +59,13 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./test
+student@ubuntu:~/listreverse/test$ go build
+student@ubuntu:~/listreverse/test$ ./test
 4
 3
 2
 1
 Tail &{1 <nil>}
 Head &{4 0xc42000a140}
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/listreverse/test$
 ```

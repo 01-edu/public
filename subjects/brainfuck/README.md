@@ -22,13 +22,13 @@ Any other character is a comment.
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/brainfuck$ go build
-student@ubuntu:~/[[ROOT]]/brainfuck$ ./brainfuck "++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>." | cat -e
+student@ubuntu:~/brainfuck$ go build
+student@ubuntu:~/brainfuck$ ./brainfuck "++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>." | cat -e
 Hello World!$
-student@ubuntu:~/[[ROOT]]/brainfuck$ ./brainfuck "+++++[>++++[>++++H>+++++i<<-]>>>++\n<<<<-]>>--------.>+++++.>." | cat -e
+student@ubuntu:~/brainfuck$ ./brainfuck "+++++[>++++[>++++H>+++++i<<-]>>>++\n<<<<-]>>--------.>+++++.>." | cat -e
 Hi$
-student@ubuntu:~/[[ROOT]]/brainfuck$ ./brainfuck "++++++++++[>++++++++++>++++++++++>++++++++++<<<-]>---.>--.>-.>++++++++++." | cat -e
+student@ubuntu:~/brainfuck$ ./brainfuck "++++++++++[>++++++++++>++++++++++>++++++++++<<<-]>---.>--.>-.>++++++++++." | cat -e
 abc$
-student@ubuntu:~/[[ROOT]]/brainfuck$ ./brainfuck
-student@ubuntu:~/[[ROOT]]/brainfuck$
+student@ubuntu:~/brainfuck$ ./brainfuck
+student@ubuntu:~/brainfuck$
 ```

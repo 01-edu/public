@@ -59,7 +59,7 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/iterators/test$ cargo run
 Some((6, 5, 120))
 Some((8, 7, 720))
 Some((10, 9, 5040))
@@ -67,5 +67,5 @@ Some((10, 9, 5040))
 Some((18, 19, 6402373705728000))
 Some((20, 21, 121645100408832000))
 Some((22, 23, 2432902008176640000))
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/iterators/test$
 ```

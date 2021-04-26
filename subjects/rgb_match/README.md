@@ -62,7 +62,7 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/rgb_match/test$ cargo run
 Color { r: 10, g: 200, b: 255, a: 30 }
 Color { r: 200, g: 255, b: 10, a: 30 }
 Color { r: 30, g: 200, b: 10, a: 255 }
@@ -79,5 +79,5 @@ Color { r: 30, g: 200, b: 10, a: 255 }
 Color { r: 255, g: 200, b: 30, a: 10 }
 Color { r: 255, g: 30, b: 10, a: 200 }
 
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/rgb_match/test$
 ```

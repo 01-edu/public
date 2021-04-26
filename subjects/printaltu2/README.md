@@ -11,8 +11,8 @@ Please note that `casting` is not allowed for this exercise!
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/printaltu2$ go build
-student@ubuntu:~/[[ROOT]]/printaltu2$ ./printaltu2
+student@ubuntu:~/printaltu2$ go build
+student@ubuntu:~/printaltu2$ ./printaltu2
 ZAYBXCWDVEUFTGSHRIQJPKOLNM
-student@ubuntu:~/[[ROOT]]/printaltu2$
+student@ubuntu:~/printaltu2$
 ```

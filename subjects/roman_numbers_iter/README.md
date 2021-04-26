@@ -68,10 +68,10 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ cargo run
+student@ubuntu:~/roman_numbers_iter/test$ cargo run
 RomanNumber([X, X, X, I, I])
 RomanNumber([I, X])
 RomanNumber([X, L, V])
 RomanNumber([Nulla])
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/roman_numbers_iter/test$
 ```

@@ -11,18 +11,18 @@ Write a **program** that checks the arguments for vowels.
 Example of output :
 
 ```console
-student@ubuntu:~/[[ROOT]]/test$ go build
-student@ubuntu:~/[[ROOT]]/test$ ./rotatevowels "Hello World" | cat -e
+student@ubuntu:~/rotatevowels/test$ go build
+student@ubuntu:~/rotatevowels/test$ ./rotatevowels "Hello World" | cat -e
 Hollo Werld$
-student@ubuntu:~/[[ROOT]]/test$ ./rotatevowels "HEllO World" "problem solved"
+student@ubuntu:~/rotatevowels/test$ ./rotatevowels "HEllO World" "problem solved"
 Hello Werld problom sOlvEd
-student@ubuntu:~/[[ROOT]]/test$ ./rotatevowels "str" "shh" "psst"
+student@ubuntu:~/rotatevowels/test$ ./rotatevowels "str" "shh" "psst"
 str shh psst
-student@ubuntu:~/[[ROOT]]/test$ ./rotatevowels "happy thoughts" "good luck"
+student@ubuntu:~/rotatevowels/test$ ./rotatevowels "happy thoughts" "good luck"
 huppy thooghts guod lack
-student@ubuntu:~/[[ROOT]]/test$ ./rotatevowels "aEi" "Ou"
+student@ubuntu:~/rotatevowels/test$ ./rotatevowels "aEi" "Ou"
 uOi Ea
-student@ubuntu:~/[[ROOT]]/test$ ./rotatevowels
+student@ubuntu:~/rotatevowels/test$ ./rotatevowels
 
-student@ubuntu:~/[[ROOT]]/test$
+student@ubuntu:~/rotatevowels/test$
 ```

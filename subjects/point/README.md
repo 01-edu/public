@@ -30,8 +30,8 @@ func main() {
 ### Usage
 
 ```console
-student@ubuntu:~/[[ROOT]]/point$ go build
-student@ubuntu:~/[[ROOT]]/point$ ./point
+student@ubuntu:~/point$ go build
+student@ubuntu:~/point$ ./point
 x = 42, y = 21
-student@ubuntu:~/[[ROOT]]/point$
+student@ubuntu:~/point$
 ```
