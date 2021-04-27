@@ -4,7 +4,7 @@
 
 #### 1- get-ready
 
-Create in your [Gitea](https://git.[[DOMAIN]]) account the repository named `piscine-go`.
+Create in your Gitea (https://git.[[DOMAIN]]) account the repository named `[[ROOT]]`.
 
 This repository will be the folder where all the exercices must be uploaded.
 

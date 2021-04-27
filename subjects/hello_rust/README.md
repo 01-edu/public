@@ -2,15 +2,15 @@
 
 ### Introduction
 
-Hello and welcome to rust. 
-The goal of this first exercise is to configure your repository properly and to give you a set of rules for the whole piscine rust. 
+Hello and welcome to rust.
+The goal of this first exercise is to configure your repository properly and to give you a set of rules for the whole piscine rust.
 Make sure those rules are followed consistenly during the whole piscine.
 
 ### Instructions
 
 #### 1- get-ready
 
-Create in your [Gitea](https://git.[[DOMAIN]]) account the repository named `hello_rust`.
+Create in your Gitea (https://git.[[DOMAIN]]) account the repository named `[[ROOT]]`.
 
 This repository will be the folder where all the exercices must be uploaded.
 
