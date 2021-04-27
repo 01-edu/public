@@ -5,7 +5,7 @@
 Use the following table to define the methods asked:
 
 | Blood Types | Donate Blood to  | Receive Blood From |
-|-------------|------------------|--------------------|
+| ----------- | ---------------- | ------------------ |
 | A+          | A+, AB+          | A+, A-, O+, O-     |
 | O+          | O+, A+, B+, AB+  | O+, O-             |
 | B+          | O+, O-           | B+, B-, O+, O-     |

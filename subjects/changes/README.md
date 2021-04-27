@@ -6,7 +6,7 @@ Imagine you are working on a software to control smart lights in a house. You ha
 
 Define the associated **function** `new` to the data structure `Light` which creates a new light with the alias passed in the arguments and a brightness of 0.
 
-Define the **function** `change_brightness` that receives a `Vec` of lights, an `alias` and a `u8`value.  The **function** then sets the `u8` value as the new brightness of the light identified by the alias in the Vec of lights.
+Define the **function** `change_brightness` that receives a `Vec` of lights, an `alias` and a `u8`value. The **function** then sets the `u8` value as the new brightness of the light identified by the alias in the Vec of lights.
 
 ### Notions
 

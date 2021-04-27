@@ -3,6 +3,7 @@
 ### Resources
 
 We provide you with some content to get started smoothly, check it out!
+
 - Video [CSS - Set & style with CSS class](https://www.youtube.com/watch?v=-U397k4VloU&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=6)
 
 ### Instructions

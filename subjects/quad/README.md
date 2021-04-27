@@ -112,7 +112,7 @@ o
 student@ubuntu:~/quad/test$
 ```
 
-----
+---
 
 ## quadB
 
@@ -226,7 +226,7 @@ student@ubuntu:~/quad/test$ ./test
 student@ubuntu:~/quad/test$
 ```
 
-----
+---
 
 ## quadC
 
@@ -340,7 +340,7 @@ C
 student@ubuntu:~/quad/test$
 ```
 
-----
+---
 
 ## quadD
 
@@ -454,7 +454,7 @@ A
 student@ubuntu:~/quad/test$
 ```
 
-----
+---
 
 ## quadE
 

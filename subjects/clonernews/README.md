@@ -19,7 +19,6 @@ You must handle at least:
 Post and comments must be ordered by newest post to oldest.
 You must not load all posts at once. You must be able to load posts when ever the users need to see more posts. This can be done with the help of [event](https://developer.mozilla.org/en-US/docs/Web/Events).
 
-
 [Live Data](https://github.com/HackerNews/API#live-data) : is one of the features from this Hacker News API, you can handle requests so that the news you provide are updated.
 
 - You must have a section that present the newest information. You will have to notify the user at least every 5 seconds, whenever the live data is updated. In other words, after every 5 seconds if a change was made in the live data, you have to notify the user.

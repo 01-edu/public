@@ -4,12 +4,13 @@ In this exercise, one will create a mini-horror game inspired on ["Slender: The 
 
 ### Objectives
 
-Just like in the Slender game, the goal of your game should be, while being chased by a monster/creature (a "Creep"), to get all the 8 pages spread around the map in different locations. 
+Just like in the Slender game, the goal of your game should be, while being chased by a monster/creature (a "Creep"), to get all the 8 pages spread around the map in different locations.
 
 To find models of scary monsters/creatures:
-- you can easily choose checking the [Mixamo website](https://www.mixamo.com/#/). 
 
-- alternatively, you can use the models on the ["Creeps.zip"](https://assets.01-edu.org/Unreal-Engine-Projects/ThePages/Creeps.zip) file. 
+- you can easily choose checking the [Mixamo website](https://www.mixamo.com/#/).
+
+- alternatively, you can use the models on the ["Creeps.zip"](https://assets.01-edu.org/Unreal-Engine-Projects/ThePages/Creeps.zip) file.
 
 - you can also check in the [assets](https://assets.01-edu.org/Unreal-Engine-Projects/ThePages/ThePages.zip) (basics animations, character, enemies and props) you will need for this project.
 

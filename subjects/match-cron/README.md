@@ -25,7 +25,6 @@ matchCron('9 * * * *', new Date('2020-05-30 19:21:00')) // -> false
 //         +--------- Minute            (range: 0-59)
 ```
 
-
 ### Notions
 
 - [crontab.guru](https://crontab.guru/)

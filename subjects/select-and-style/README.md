@@ -3,6 +3,7 @@
 ### Resources
 
 We provide you with some content to get started smoothly, check it out!
+
 - Video [Link a CSS stylesheet to your HTML file](https://www.youtube.com/watch?v=e7G-KhaqTjs&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=3)
 - Video [CSS - Style with type selectors](https://www.youtube.com/watch?v=q0ur7YWBzhs&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=4)
 - Video [HTML/CSS - Set & style with ID selector](https://www.youtube.com/watch?v=3b3MiY-MR-Y&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=5)

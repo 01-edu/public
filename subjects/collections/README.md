@@ -19,12 +19,11 @@ Write a bunch of function to move from one type to another
 and finally write a function `superTypeOf` that unlike `typeof` return
 a different value for advanced types like `Map` and `Set`
 
-
 ### Examples
 
 ```js
 const str = 'hello'
-const arr = [ 1, 2, 1, 3 ]
+const arr = [1, 2, 1, 3]
 const obj = { x: 45, y: 75, radius: 24 }
 const set = new Set()
 const map = new Map()
@@ -60,7 +59,6 @@ superTypeOf(null) //        -> 'null'
 superTypeOf(undefined) //   -> 'undefined'
 superTypeOf(superTypeOf) // -> 'Function'
 ```
-
 
 ### Notions
 

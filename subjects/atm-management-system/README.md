@@ -20,7 +20,7 @@ You will be provided with an ATM management system where users can do the follow
 - Make transactions
 
 > The application provided will just handle the **login**, the **creation of new accounts** and **checking the list of owned accounts**. The rest of the features must
-be implemented by yourself.
+> be implemented by yourself.
 
 ### File System
 
@@ -112,7 +112,7 @@ One of the ways of doing this is by using pipes and child processes (communicati
 You can also do more bonus features or update the terminal interface:
 
 - Better terminal interface (TUI)
-- Encryption of passwords 
+- Encryption of passwords
 - Adding your own Makefile
 
 ### Example

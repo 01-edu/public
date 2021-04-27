@@ -7,6 +7,7 @@ Create a **function** `contain` that checks a `HashMap` to see if it contains a 
 Create a **function** `remove` that removes a given key from the `HashMap`.
 
 - Note: pay attention to the comment in the [usage](#usage)
+
 ### Notions
 
 - https://doc.rust-lang.org/rust-by-example/std/hash.html

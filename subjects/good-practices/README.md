@@ -65,11 +65,11 @@ Removing layout can be done using transform:
 ```js
 // bad
 // this will trigger the layout to recalculate everything and repaint it again
-box.style.left = `${x * 100}px`;
+box.style.left = `${x * 100}px`
 
 // good
 // this way its possible to lose the layout
-box.style.transform = `translateX(${x * 100}px)`;
+box.style.transform = `translateX(${x * 100}px)`
 ```
 
 It is possible to remove painting by adding a layer:

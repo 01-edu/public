@@ -3,6 +3,7 @@
 ### Subject
 
 Implement a `format` function that takes 2 arguments:
+
 - a valid javascript Date object
 - a format string that handle all of the following fields:
   - y
@@ -26,7 +27,6 @@ Implement a `format` function that takes 2 arguments:
   - H
   - HH
   - a
-
 
 ### Notions
 

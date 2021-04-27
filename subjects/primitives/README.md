@@ -3,11 +3,11 @@
 ### Instructions
 
 Create a constant variable for each primitives:
+
 - `str` for `String`
 - `num` for `Number`
 - `bool` for `Boolean`
 - `undef` for `undefined`
-
 
 ### Notions
 

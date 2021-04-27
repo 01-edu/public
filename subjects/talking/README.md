@@ -7,7 +7,7 @@ Build the function `talking` which will allow you to talk with your computer.
 His answers will be created by you following the rules below.
 
 - He answers "There is no need to yell, calm down!" if you yell at him, for example "LEAVE ME ALONE!"
-(it is considered yelling when the sentence is all written in capital letters).
+  (it is considered yelling when the sentence is all written in capital letters).
 - He answers "Sure" if you ask him something without yelling, for example "Is everything ok with you?"
 - He answers "Quiet, I am thinking!" if you yell a question at him. "HOW ARE YOU?"
 - He says "Just say something!" if you address him without actually saying anything.

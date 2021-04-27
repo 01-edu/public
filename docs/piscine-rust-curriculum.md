@@ -20,7 +20,6 @@ Exercices:
 - division-and-remainder | https://github.com/01-edu/public/tree/master/subjects/division-and-remainder
 - tuples | https://github.com/01-edu/public/tree/master/subjects/tuples
 
-
 ### Quest 02-rust
 
 Exercices:
@@ -35,7 +34,6 @@ Exercices:
 - name-initials | https://github.com/01-edu/public/tree/master/subjects/name-initials
 - arrange-it | https://github.com/01-edu/public/tree/master/subjects/arrange-it
 - tic-tac-toe | https://github.com/01-edu/public/tree/master/subjects/tic-tac-toe
-
 
 ### Quest 03-rust
 
@@ -54,12 +52,9 @@ Exercices:
 - simple-hash | https://github.com/01-edu/public/tree/master/subjects/simple-hash
 - collect | https://github.com/01-edu/public/tree/master/subjects/collect
 
-
 ---
 
-
 ## Week Two
-
 
 ## Quest 04-rust
 
@@ -75,7 +70,6 @@ Exercices:
 - error-types | https://github.com/01-edu/public/tree/master/subjects/error-types
 - boxing-todo | https://github.com/01-edu/public/tree/master/subjects/boxing-todo
 
-
 ## Quest 05-rust
 
 Exercices:
@@ -86,7 +80,6 @@ Exercices:
 - shopping-mall | https://github.com/01-edu/public/tree/master/subjects/shopping-mall
 - expected-variable | https://github.com/01-edu/public/tree/master/subjects/expected-variable
 - mobs | https://github.com/01-edu/public/tree/master/subjects/mobs
-
 
 ## Quest 06-rust
 
@@ -109,11 +102,9 @@ Exercices:
 - delete-perfix | https://github.com/01-edu/public/tree/master/subjects/mdelete-perfix
 - commits-stats | https://github.com/01-edu/public/tree/master/subjects/mcommits-stats
 
-
 ---
 
 ## Week Three
-
 
 ## Quest 07-rust
 
@@ -126,12 +117,9 @@ Exercices:
 - ref-cell | https://github.com/01-edu/public/tree/master/subjects/ref-cell
 - drop-the-thread | https://github.com/01-edu/public/tree/master/subjects/drop-the-thread
 
-
-
 ## Quest 08-rust
 
 Exercices:
-
 
 - closures | https://github.com/01-edu/public/tree/master/subjects/closures
 - sales | https://github.com/01-edu/public/tree/master/subjects/sales
@@ -144,11 +132,9 @@ Exercices:
 - step-iterator | https://github.com/01-edu/public/tree/master/subjects/step-iterator
 - project-motion | https://github.com/01-edu/public/tree/master/subjects/project-motion
 
-
 ## Quest 09-rust
 
 Exercices:
-
 
 - stars | https://github.com/01-edu/public/tree/master/subjects/stars
 - ordinal | https://github.com/01-edu/public/tree/master/subjects/ordinal

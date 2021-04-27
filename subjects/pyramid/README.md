@@ -19,6 +19,7 @@ Just like triangle
  *******
 *********
 ```
+
 > No new line in last line
 
 ### Notions

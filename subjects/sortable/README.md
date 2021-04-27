@@ -7,12 +7,11 @@ weird masks wearing **superheroes**. You never understood why are some of them
 considered superheroes just because they are rich. Others annoy you with their
 philosophical speeches. And of course that something tragic has had to happen
 to them for the people to feel sorry for them. \
-Anyway, we've found *confidential* information about those superheroes.
+Anyway, we've found _confidential_ information about those superheroes.
 
 > Your task for the moment is to build a web page in order to organize all the
 > data from those smartypants.
 > This information can be found here: [all.json](https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json).
-
 
 #### Fetching the data
 
@@ -56,21 +55,22 @@ A `<select>` input is used to chose from `10`, `20`,`50`, `100` or `all results`
 #### Search
 
 It must be possible to filter information by searching the name as a string
-  *(ex: superheroes that contain **man** in their name).*
+_(ex: superheroes that contain **man** in their name)._
+
 - The search should be interactive, in other words, the results should be
-    displaying as you write, not needing a button for you to click.
+  displaying as you write, not needing a button for you to click.
 
 #### Sort
 
 It must be possible to sort by any columns of the table
-  *(either alphabetically or numerically).*
+_(either alphabetically or numerically)._
 
 - Initially all rows should be sorted by the column `name` by `ascending` order
 - First click will order the column by `ascending` value
 - Consecutive clicks will toggle between `ascending` and `descending` order
 - Note that, for example, the column `weight` will be composed of strings, so
-    the correct order would be `['78 kg', '100 kg']` instead of the other way
-    around
+  the correct order would be `['78 kg', '100 kg']` instead of the other way
+  around
 - Missing values should always be sorted last.
 
 > As you know, when you are against heroes, **speed** is critical, every operations on

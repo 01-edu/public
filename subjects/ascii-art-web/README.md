@@ -9,10 +9,10 @@ Your web-page should provide usage of different [banners](https://github.com/01-
 Implement following HTTP endpoints:
 
 1. GET `/`: Sends HTML response - the main page.\
- 1.1. GET Tip: [go templates](https://golang.org/pkg/html/template/) to receive and display data from the server
+   1.1. GET Tip: [go templates](https://golang.org/pkg/html/template/) to receive and display data from the server
 
 2. POST `/ascii-art`: that sends data to Go server (text and a banner)\
- 2.1. POST Tip: use form and other types of [tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) to make the post request.\
+   2.1. POST Tip: use form and other types of [tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) to make the post request.\
 
 Main page must have:
 

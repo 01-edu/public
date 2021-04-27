@@ -10,13 +10,11 @@ Create a new variable `samePerson` with the same value as `person`.
 Increase by one the property age of `person`
 and set his country to `'FR'`.
 
-
 ### Notions
 
 - [nan-academy.github.io/js-training/examples/set](https://nan-academy.github.io/js-training/examples/set.js)
 - [nan-academy.github.io/js-training/examples/get](https://nan-academy.github.io/js-training/examples/get.js)
 - [nan-academy.github.io/js-training/examples/data-structures](https://nan-academy.github.io/js-training/examples/data-structures.js)
-
 
 ### Code provided
 

@@ -17,6 +17,7 @@ of the number passed as argument.
 ****
 *****
 ```
+
 > No new line in last line
 
 ### Notions

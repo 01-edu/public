@@ -8,6 +8,7 @@ You have a grocery cart with some items you need.
 The items will have a `key` being the name and a `value` that is the amount in grams.
 
 Create 3 functions that works like the `.filter`, `.map` and `.reduce` array method but for the values of your grocery cart.
+
 - `filterValues` filters the values of your grocery cart.
 - `mapValues` changes the values of your grocery cart.
 - `reduceValues` that will reduce your grocery cart.
@@ -21,7 +22,6 @@ You will have a small database to help you with the groceries.
 - [devdocs.io/javascript/global_objects/array/reduce](https://devdocs.io/javascript/global_objects/array/reduce)
 - [devdocs.io/javascript/global_objects/object/entries](https://devdocs.io/javascript/global_objects/object/entries)
 - [devdocs.io/javascript/global_objects/object/fromentries](https://devdocs.io/javascript/global_objects/object/fromentries)
-
 
 ### Code provided
 

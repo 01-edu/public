@@ -35,4 +35,3 @@ student@ubuntu:~/temperature_conv/test$ cargo run
 0 C = 32 F
 student@ubuntu:~/temperature_conv/test$
 ```
-

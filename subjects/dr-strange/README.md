@@ -15,7 +15,6 @@ it can go backwards or forwards in time.
 You will have a function that takes a date and you will pass 3 more parameters to change
 the hour, minute and seconds.
 
-
 ### Example
 
 ```js

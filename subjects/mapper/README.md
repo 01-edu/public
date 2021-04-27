@@ -3,10 +3,10 @@
 ### Instructions
 
 - Create a `map` function that takes an array as first argument, a function as second,
-and that works like the method .map
+  and that works like the method .map
 
 - Create a `flatMap` function that takes an array as first argument, a function as second,
-and that works like the method .flatMap
+  and that works like the method .flatMap
 
 ### Notions
 

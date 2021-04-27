@@ -1,6 +1,7 @@
 # Server requirements
 
 Features required :
+
 - Dedicated hardware
 - Linux compatibility
 - UEFI
@@ -11,4 +12,4 @@ Features required :
 | --------- | --------------------------- |
 | Processor | 12 threads x86-64 (64 bits) |
 | Memory    | 16 GB DDR4                  |
-| Disk      | 2 * 500 GB SSD              |
+| Disk      | 2 \* 500 GB SSD             |

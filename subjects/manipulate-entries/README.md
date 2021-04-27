@@ -20,7 +20,6 @@ Create 3 other functions that use your previously create functions:
 
 What the functions will take as argument is an object cart which contains the food rations. All the nutrition in the nutritionDB object are measured per 100 grams.
 
-
 ### Notions
 
 - [devdocs.io/javascript/global_objects/array/filter](https://devdocs.io/javascript/global_objects/array/filter)
@@ -28,7 +27,6 @@ What the functions will take as argument is an object cart which contains the fo
 - [devdocs.io/javascript/global_objects/array/reduce](https://devdocs.io/javascript/global_objects/array/reduce)
 - [devdocs.io/javascript/global_objects/object/entries](https://devdocs.io/javascript/global_objects/object/entries)
 - [devdocs.io/javascript/global_objects/object/fromentries](https://devdocs.io/javascript/global_objects/object/fromentries)
-
 
 ### Code provided
 

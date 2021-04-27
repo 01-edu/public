@@ -9,16 +9,15 @@ return a resolved Promise with the string:
 
 - `<country> + ' is not what we are looking for because of the continent'`,
   if the country passed in `isWinner` is not from the european
-continent
+  continent
 
 - `<country> + ' is not what we are looking for because of the number of times it was champion'`, if the country passed in `isWinner` was champion
-less than 3 times
+  less than 3 times
 
 - `<country> + ' won the FIFA World Cup in ' + <year(s)> + 'winning by ' + <results>`, otherwise.
 
 If the country was champion in more than one year, the years should be
 displayed like : '1000, 1004, 1008'. The same goes for the results
-
 
 ### Code provided
 

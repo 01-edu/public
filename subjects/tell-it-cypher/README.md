@@ -6,6 +6,7 @@ FINALLY, you got the names.
 But you could forget it... loose it... How could you write it without puting the surprise in danger?!
 
 Create a `tell-it-cypher.mjs` script that:
+
 - Takes a file as first argument
 - Takes one of these keywords as second argument:
   - `encode`: convert your file to `base64`, then save the result in a `cypher.txt` file.

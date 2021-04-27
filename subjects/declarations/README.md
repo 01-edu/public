@@ -4,7 +4,7 @@
 
 Create the following constant variables:
 
-- `escapeStr`, that contains the following specials characters:  `` ` ``, `\`, `/`, `"`, `'`
+- `escapeStr`, that contains the following specials characters: `` ` ``, `\`, `/`, `"`, `'`
 - `arr` that is an array containing the values 4 and '2'
 - `obj` that is an object containing a property for each primitives:
   - `str` for `String`

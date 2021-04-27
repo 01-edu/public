@@ -41,48 +41,48 @@ student@ubuntu:~/ephemeris$ npm install puppeteer
 Then, create a new file `ephemeris.mjs` in which you will use the puppeteer module:
 
 ```js
-import puppeteer from "puppeteer";
+import puppeteer from 'puppeteer'
 
 const browser = await puppeteer.launch({
   headless: false, // to be commented or removed when project is submitted
   devtools: true, // to be commented or removed when project is submitted
-});
-const [page] = await browser.pages();
+})
+const [page] = await browser.pages()
 // actions...
-await browser.close(); // you can comment this during you tests
-process.exit(0); // terminate the process as succeeded (you can comment this during you tests)
+await browser.close() // you can comment this during you tests
+process.exit(0) // terminate the process as succeeded (you can comment this during you tests)
 ```
 
 **Puppeteer helper - script model**
 
 ```javascript
 // navigate to a specific url
-await page.goto("https://www.google.com/");
+await page.goto('https://www.google.com/')
 
 // wait an element in the page
-await page.waitForSelector("input#myId");
+await page.waitForSelector('input#myId')
 
 // find an element in the page:
-const button = await page.$("button#myId");
+const button = await page.$('button#myId')
 // check the element was found
 if (button) {
   // use the element
-  await button.click();
+  await button.click()
 } else {
   // do something else: for example treat the exception as an error
-  console.error("Button not found !");
+  console.error('Button not found !')
   // and terminate the process as failed (code 1)
-  process.exit(1);
+  process.exit(1)
 }
 
 // navigate in a website
-await Promise.all([page.waitForNavigation(), page.click("div#myId")]);
+await Promise.all([page.waitForNavigation(), page.click('div#myId')])
 
 // get the textContent of an element
-const myText = await page.$eval("div#myId", (elem) => elem.textContent);
+const myText = await page.$eval('div#myId', (elem) => elem.textContent)
 
 // type something in an input
-await page.type(`input#myId`, "some text");
+await page.type(`input#myId`, 'some text')
 ```
 
 ### Optional

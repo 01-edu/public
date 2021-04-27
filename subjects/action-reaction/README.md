@@ -3,6 +3,7 @@
 ### Resources
 
 We provide you with some content to get started smoothly, check it out!
+
 - Video [querySelector](https://www.youtube.com/watch?v=m34qd7aGMBo&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=12)
 - Video [DOM JS - Add an event listener to an element](https://www.youtube.com/watch?v=ydRv338Fl8Y)
 - Video [DOM JS - Set an element's properties](https://www.youtube.com/watch?v=4O6zSVR0ufw&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=14)

@@ -3,6 +3,7 @@
 ### Resources
 
 We provide you with some content to get started smoothly, check it out!
+
 - Video [Link a JS script to your HTML file](https://www.youtube.com/watch?v=jMvsQm-p1gM&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=7)
 - Video [DOM JS - getElementById](https://www.youtube.com/watch?v=34kAR8yBtDM&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=8)
 - Video [DOM JS - Set an element's inline style](https://www.youtube.com/watch?v=pxlYKvju1z8&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=15)

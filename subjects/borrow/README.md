@@ -10,6 +10,7 @@ Complete the signature and the body of the `str_len` **function** that receives 
 pub fn str_len(s: ) -> usize {
 }
 ```
+
 ### Notions
 
 [Primitive Type str](https://doc.rust-lang.org/std/primitive.str.html)

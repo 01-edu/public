@@ -16,17 +16,17 @@ To store efficiently the **tile images**, you should group them all in a single 
 To generate a specific tile image, you must select a section of this big image and render it into the game.
 This will help with performance and memory usage.
 
-----
+---
 
 If you plan to use scrolling tile maps it can be pretty costly on [rendering performance](https://developer.mozilla.org/en-US/docs/Games/Techniques/Tilemaps#Performance). So you must take special caution if you do so. One of the best ways is to render only the tiles that will be visible to the player using opacity or other methods. Sometime this is not enough.
 
-----
+---
 
 A tile map can be mapped to a logical grid, helping with the map display and the game logic. Here is an example of a tile map data structure:
 
 ```js
 let map = {
-    columns: 5,
+  columns: 5,
     rows: 5,
     size: 25,
     tiles: [

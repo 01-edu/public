@@ -22,7 +22,6 @@ Write your own version of the game [maze wars](https://www.youtube.com/watch?v=5
 
 - Use the UDP protocol to enable the communication between the clients and the server.
 
-
 #### You have to develop the game server and also a client application:
 
 - The server must accept as much connections as possible (the minimum should be 10).
@@ -34,7 +33,7 @@ Write your own version of the game [maze wars](https://www.youtube.com/watch?v=5
   - After this, it should ask also for a name.
 
   - Example:
-  Assuming that you can to connect to a server in your same computer.
+    Assuming that you can to connect to a server in your same computer.
 
 ```console
 path/to/client $ cargo run

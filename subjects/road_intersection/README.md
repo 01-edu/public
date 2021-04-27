@@ -28,7 +28,7 @@ _______________| ←  ↓  → |    ↑    |_____________
                          |         ↓ l
 _________________________|_______________________
            l ↑           |
- → → → → → s →           |           → → → → → → 
+ → → → → → s →           |           → → → → → →
            r ↓           |
 _______________          |          _____________
                |         | ←  ↑  → |
@@ -68,12 +68,12 @@ Vehicles must obey this rules:
 - Vehicles must have a color depending on their route the colors are up to you to decide(ex:`r`- purple, `s`- Blue and `l`- Yellow). This must then be given during the audit
 
 - Autonomous, vehicles driving on a lane with a **given route** must follow the direction of
-that route, its not possible for the driver to change lanes or route.
+  that route, its not possible for the driver to change lanes or route.
 
 - Each vehicle must have a fixed velocity.
 
 - It must be kept a safety distance from other vehicles, if one vehicle stops the other vehicle thats
-behind him must stop and keep its distance.
+  behind him must stop and keep its distance.
 
 - Vehicles must stop if the traffic light is red and proceed otherwise.
 
@@ -91,6 +91,7 @@ vehicles in different lanes and with different routes.
 For this it must be possible to do the following:
 
 - The `Arrow` keys must generate one vehicle in a specific direction and with a random route ( `r`, `s` and `l`):
+
   - `Up` south to north.
   - `Down` north to south.
   - `Right` west to east.

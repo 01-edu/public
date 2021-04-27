@@ -47,10 +47,12 @@ Once this is done the git clone command should work now.
 
 Once you repository is cloned,
 create and edit the .gitignore file in your repository and add this line:
+
 ```console
 **/target/*
 ```
-The goal of this setup is to avoid any binary files to be pushed in your gitea accidentaly. 
+
+The goal of this setup is to avoid any binary files to be pushed in your gitea accidentaly.
 
 Do not forget to push it to your repository.
 
@@ -89,7 +91,8 @@ You can test it with the below command inside the folder of your exercise.
 ```console
 cargo run
 ```
-This command will compile, and run the binary. 
+
+This command will compile, and run the binary.
 
 #### 4- return your solution
 

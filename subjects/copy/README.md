@@ -5,15 +5,15 @@
 Your objective is to fix the **functions** work so that the program works.
 
 - `nbr_function` returns a tuple:
-	- with the `original` value
-	- the `exponential function` of the value
-	- and the `natural logarithm` of this `absolute` value
+  - with the `original` value
+  - the `exponential function` of the value
+  - and the `natural logarithm` of this `absolute` value
 - `str_function` returns a tuple:
-	- with the `original` value
-	- and the `exponential function` each value as a string (see the example)
+  - with the `original` value
+  - and the `exponential function` each value as a string (see the example)
 - `vec_function` returns a tuple:
-	- with the `original` value
-	- and the `natural logarithm` of each `absolute` value
+  - with the `original` value
+  - and the `natural logarithm` of each `absolute` value
 
 The objective is to know how ownership works with different types.
 

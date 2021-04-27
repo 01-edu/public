@@ -16,12 +16,12 @@ You will need to create a public repository with the name `tron`. Next you need 
 
 ### Rules
 
-- Your AI has to move every turn *(it can not stay still)*
+- Your AI has to move every turn _(it can not stay still)_
 - Every time the AI moves somewhere the AI leaves a color trail.
 - the AI can only move to a blank tile.
-- the AI can not move out of the map *(100 x 100)*
+- the AI can not move out of the map _(100 x 100)_
 - the AI can only move to its `left`, `forward` or its `right`.
-  *(Moving `backward` is suicide as it would hit its own trail !)*
+  _(Moving `backward` is suicide as it would hit its own trail !)_
 - If too much CPU power is required to decide where to go, the AI dies.
 - If two AIs moved to the same spot, both of them die.
 - **The AI has to survive as long as it can.**
@@ -43,23 +43,25 @@ You will need to create a public repository with the name `tron`. Next you need 
 - You may use this link [tron](/public/subjects/tron/?ai=&seed=1653547275), to test your AI
 - You need to add your AI as a user in that link
   > Example:
-    - if your git login is **Frenchris** and you want to test against **LEEDASILVA** the link becomes: [/public/subjects/tron/?ai=Frenchris@master+LEEDASILVA@master](/public/subjects/tron/?ai=Frenchris@master+LEEDASILVA@master)
-    - if you want to test against the default `/random.js` AI the link becomes: [/public/subjects/tron/?ai=Frenchris@master+/random.js](/public/subjects/tron?ai=Frenchris@master+/random.js)
+  - if your git login is **Frenchris** and you want to test against **LEEDASILVA** the link becomes: [/public/subjects/tron/?ai=Frenchris@master+LEEDASILVA@master](/public/subjects/tron/?ai=Frenchris@master+LEEDASILVA@master)
+  - if you want to test against the default `/random.js` AI the link becomes: [/public/subjects/tron/?ai=Frenchris@master+/random.js](/public/subjects/tron?ai=Frenchris@master+/random.js)
 - Open the inspector of the browser used and **disable the cache**
 - let's change the update function so that your AI only goes forward.
 
 Replace this line just before the `return` of the update function:
-```js
-  const available = coordsInBound.filter(isFree)
 
-  // And I return a random available coord
-  return pickRandom(available)
+```js
+const available = coordsInBound.filter(isFree)
+
+// And I return a random available coord
+return pickRandom(available)
 ```
 
 ...with this line:
+
 ```js
-  // always return the first free coordinates
-  return coordsInBound.filter(isFree)[0]
+// always return the first free coordinates
+return coordsInBound.filter(isFree)[0]
 ```
 
 - save the file, push the changes and re-run the game in the browser.
@@ -74,6 +76,6 @@ Replace this line just before the `return` of the update function:
   Be aware that there will be the possibility for the peer-correcter
   to use his or her own AI.
 
-*May the best tron win :)*
+_May the best tron win :)_
 
 Have fun and good luck.

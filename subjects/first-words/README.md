@@ -3,6 +3,7 @@
 ### Resources
 
 We provide you with some content to get started smoothly, check it out!
+
 - Video [DOM JS - createElement & append](https://www.youtube.com/watch?v=J-A_pqTqGBU&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=13)
 - Video [Set an element's className](https://www.youtube.com/watch?v=h3b7H1ZKvFE&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=16)
 - Video [DOM JS - Set an element's properties](https://www.youtube.com/watch?v=4O6zSVR0ufw&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=14)

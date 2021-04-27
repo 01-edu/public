@@ -9,14 +9,14 @@ With this create a function called `fusion` that:
 - If the type is an array you must concat it
 
 ```js
-fusion([1,2], [3,4]) // -> [1,2,3,4]
-``` 
+fusion([1, 2], [3, 4]) // -> [1,2,3,4]
+```
 
 - If it is a string you must concatenate with a space
 
 ```js
 fusion('Salem', 'alem') // -> 'Salem alem'
-``` 
+```
 
 - If it is numbers you must added them
 

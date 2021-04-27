@@ -91,6 +91,7 @@ You can acquire more knowledge about this filesystem by taking a look to the `pr
 For this project you must present the following monitorization:
 
 - **System monitor**, that will contain :
+
   - The type of OS (Operating System).
   - The user logged into the computer.
   - The computer name, this being the **hostname**.
@@ -112,6 +113,7 @@ For this project you must present the following monitorization:
     ![image](system.gif)
 
 - **Memory and process monitor**, that will contain :
+
   - The Physic Memory (RAM) being used, it must have some kind of visual display of this usage.
   - The Virtual Memory (SWAP) being used, it should also include a visual display.
   - The Disk usage, same here.
@@ -128,19 +130,21 @@ For this project you must present the following monitorization:
     ![image](mem.gif)
 
 - **Network**, that will contain :
+
   - The network ipv4, (`lo`, `wlp5s0` and other networks that the computer may have).
   - A tab bar that should contain two tables :
     - `RX` (network receiver) containing the following data : bytes, packets, errs, drop, fifo, frame, compressed and multicast.
     - `TX` (network transmitter) containing the following data : bytes, packets, errs, drop, fifo, colls, carrier and compressed.
   - It should also contain a tabbed section for both `RX` and `TX`, those sections should display a visual usage (ex: a progress bar), of all network present on the computer. This visual display should obey the following rules:
+
     - Each network should be converted from **bytes** to **GB**, **KB** or **MB** depending on the value. It should not display values that
       are too big or too small. In other words it should be adjustable.
 
       example :
 
-      **452755738 bytes** => **431.78 MB**.       // perfect\
-      **452755738 bytes** => **0.42 GB**.         // too small\
-      **452755738 bytes** => **442144.28.6 KB**.  // too big
+      **452755738 bytes** => **431.78 MB**. // perfect\
+      **452755738 bytes** => **0.42 GB**. // too small\
+      **452755738 bytes** => **442144.28.6 KB**. // too big
 
   - The visual display should go from 0GB to 2GB
 

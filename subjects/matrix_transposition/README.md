@@ -8,7 +8,7 @@
 
 - Note:
 
-	- The transpose of a matrix `A` is the matrix `A'` where `A'`'s columns are `A`'s row and the rows are the columns:
+  - The transpose of a matrix `A` is the matrix `A'` where `A'`'s columns are `A`'s row and the rows are the columns:
 
 Example:
 

@@ -5,10 +5,10 @@
 I do not want onions. I want oranges!!!
 
 Create 3 functions that works like the `.filter`, `.map` and `.reduce` array method but for the keys of your grocery cart.
+
 - `filterKeys` filters the name of the items you have.
 - `mapKeys` changes the name of the items you have.
 - `reduceKeys` reducing you grocery cart.
-
 
 ### Notions
 
@@ -17,7 +17,6 @@ Create 3 functions that works like the `.filter`, `.map` and `.reduce` array met
 - [devdocs.io/javascript/global_objects/array/reduce](https://devdocs.io/javascript/global_objects/array/reduce)
 - [devdocs.io/javascript/global_objects/object/entries](https://devdocs.io/javascript/global_objects/object/entries)
 - [devdocs.io/javascript/global_objects/object/fromentries](https://devdocs.io/javascript/global_objects/object/fromentries)
-
 
 ### Code provided
 
