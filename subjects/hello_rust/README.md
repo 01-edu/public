@@ -18,7 +18,7 @@ Once created, clone that repository on your desktop.
 
 If your username was `choumi` this is the command that will need to be used :
 
-`git clone git@git.[[DOMAIN]]:choumi/hello_rust.git`
+`git clone git@git.[[DOMAIN]]:choumi/[[ROOT]].git`
 
 This command needs to be adapted with **your own username**.
 
