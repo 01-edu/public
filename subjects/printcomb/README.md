@@ -31,10 +31,9 @@ func main() {
 This is the incomplete output :
 
 ```console
-student@ubuntu:~/printcomb/test$ go build
-student@ubuntu:~/printcomb/test$ ./test | cat -e
+$ go run . | cat -e
 012, 013, 014, 015, 016, 017, 018, 019, 023, ..., 689, 789$
-student@ubuntu:~/printcomb/test$
+$
 ```
 
 `000` or `999` are not valid combinations because the digits are not different.

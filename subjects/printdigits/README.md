@@ -9,8 +9,7 @@ A line is a sequence of characters preceding the end of line character (`'\n'`).
 ### Usage
 
 ```console
-student@ubuntu:~/printdigits$ go build
-student@ubuntu:~/printdigits$ ./printdigits
+$ go run .
 0123456789
-student@ubuntu:~/printdigits$
+$
 ```

@@ -39,10 +39,9 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/printcombn/test$ go build
-student@ubuntu:~/printcombn/test$ ./test
+$ go run .
 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 012, 013, 014, 015, 016, 017, 018, ... 679, 689, 789
 012345678, 012345679, ..., 123456789
-student@ubuntu:~/printcombn/test$
+$
 ```
