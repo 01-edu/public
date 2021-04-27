@@ -9,7 +9,7 @@ script_dirS=$(cd -P "$(dirname "$BASH_SOURCE")" &>/dev/null && pwd)
 
 
 challenge() {
-	submitted=$(cd "$1" && "$script_dirS"/student/teacher.sh)
+	submitted=$(cd "$1" && "$script_dirS"/student/teacher.sh) || (echo "Your program crashed (non-zero status code)"; exit 1)
 	expected=$(cd "$1" && "$script_dirS"/solutions/teacher.sh)
 
 	if ! diff -q <(echo "$submitted") <(echo "$expected") &>/dev/null; then
