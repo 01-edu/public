@@ -73,7 +73,7 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/vehicles/test$ cargo run
+$ cargo run
 ["Model 3", "Ranger"]
-student@ubuntu:~/vehicles/test$
+$
 ```

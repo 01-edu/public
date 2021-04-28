@@ -31,11 +31,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/printmemory/test$ go build
-student@ubuntu:~/printmemory/test$ ./test | cat -e
+$ go run . | cat -e
 6800 0000 6500 0000 6c00 0000 6c00 0000 $
 6f00 0000 1000 0000 1500 0000 2a00 0000 $
 0000 0000 0000 0000 $
 hello..*..$
-student@ubuntu:~/printmemory/test$
+$
 ```

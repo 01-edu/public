@@ -74,11 +74,11 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/display_table/test$ cargo run
+$ cargo run
 |  Model  |  Piece N°   | In Stock  | Description |
 |---------+-------------+-----------+-------------|
 | model 1 | 43-EWQE304  |    30     | Piece for x |
 | model 2 | 98-QCVX5433 | 100000000 |      -      |
 | model y |   78-NMNH   |    60     |   nothing   |
-student@ubuntu:~/display_table/test$
+$
 ```

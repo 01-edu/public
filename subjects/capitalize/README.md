@@ -34,8 +34,7 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/capitalize/test$ go build
-student@ubuntu:~/capitalize/test$ ./test
+$ go run .
 Hello! How Are You? How+Are+Things+4you?
-student@ubuntu:~/capitalize/test$
+$
 ```

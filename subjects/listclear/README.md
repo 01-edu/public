@@ -58,11 +58,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/listclear/test$ go build
-student@ubuntu:~/listclear/test$ ./test
+$ go run .
 ------list------
 I -> 1 -> something -> 2 -> <nil>
 ------updated list------
 <nil>
-student@ubuntu:~/listclear/test$
+$
 ```

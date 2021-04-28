@@ -49,10 +49,9 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/listat/test$ go build
-student@ubuntu:~/listat/test$ ./test
+$ go run .
 1
 how are
 <nil>
-student@ubuntu:~/listat/test$
+$
 ```

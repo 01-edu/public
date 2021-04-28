@@ -13,19 +13,18 @@ Example: [fprime](https://github.com/01-edu/public/blob/master/subjects/fprime.e
 The exceptional cases in the `usage` part.
 
 ```console
-student@ubuntu:~/piscine-go/test$ go build
-student@ubuntu:~/piscine-go/test$ ./test 225225
+$ go run . 225225
 3*3*5*5*7*11*13
-student@ubuntu:~/piscine-go/test$ ./test 8333325
+$ go run . 8333325
 3*3*5*5*7*11*13*37
 
 ...
 
-student@ubuntu:~/piscine-go/test$ ./test 0
+$ go run . 0
 
-student@ubuntu:~/piscine-go/test$ ./test 1
+$ go run . 1
 1
-student@ubuntu:~/piscine-go/test$
+$
 ```
 
 The subject states that only **positive integer** will be tested, however, 0 and 1 are not primes.
@@ -59,24 +58,23 @@ Write a program that takes a positive `int` and displays its prime factors, foll
 ### Usage
 
 ```console
-student@ubuntu:~/piscine-go/test$ go build
-student@ubuntu:~/piscine-go/test$ ./test 225225
+$ go run . 225225
 3*3*5*5*7*11*13
-student@ubuntu:~/piscine-go/test$ ./test 8333325
+$ go run . 8333325
 3*3*5*5*7*11*13*37
-student@ubuntu:~/piscine-go/test$ ./test 9539
+$ go run . 9539
 9539
-student@ubuntu:~/piscine-go/test$ ./test 804577
+$ go run . 804577
 804577
-student@ubuntu:~/piscine-go/test$ ./test 42
+$ go run . 42
 2*3*7
-student@ubuntu:~/piscine-go/test$ ./test a
+$ go run . a
 
-student@ubuntu:~/piscine-go/test$ ./test 0
+$ go run . 0
 
-student@ubuntu:~/piscine-go/test$ ./test 1
+$ go run . 1
 1
-student@ubuntu:~/piscine-go/test$
+$
 ```
 
 ---

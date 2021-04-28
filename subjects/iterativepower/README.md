@@ -35,8 +35,7 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/iterativepower/test$ go build
-student@ubuntu:~/iterativepower/test$ ./test
+$ go run .
 64
-student@ubuntu:~/iterativepower/test$
+$
 ```

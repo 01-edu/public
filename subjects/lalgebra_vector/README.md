@@ -50,8 +50,8 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/lalgebra_vector/test$ cargo run
+$ cargo run
 Some(3)
 Some(Vector([5, 1, -6]))
-student@ubuntu:~/lalgebra_vector/test$
+$
 ```

@@ -30,10 +30,10 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/ordinal/test$ cargo run
+$ cargo run
 1st
 22nd
 43rd
 47th
-student@ubuntu:~/ordinal/test$
+$
 ```

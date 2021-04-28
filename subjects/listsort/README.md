@@ -71,8 +71,7 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/listsort/test$ go build
-student@ubuntu:~/listsort/test$ ./test
+$ go run .
 1 -> 2 -> 3 -> 4 -> 5 -> <nil>
-student@ubuntu:~/listsort/test$
+$
 ```

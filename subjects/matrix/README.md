@@ -51,9 +51,9 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/matrix/test$ cargo run
+$ cargo run
 Matrix([[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]])
 Matrix([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]])
 Matrix([[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]])
-student@ubuntu:~/matrix/test$
+$
 ```

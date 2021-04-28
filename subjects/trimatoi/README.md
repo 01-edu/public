@@ -44,8 +44,7 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/trimatoi/test$ go build
-student@ubuntu:~/trimatoi/test$ ./test
+$ go run .
 12345
 12345
 12345
@@ -53,5 +52,5 @@ student@ubuntu:~/trimatoi/test$ ./test
 1234
 -1234
 1234
-student@ubuntu:~/trimatoi/test$
+$
 ```

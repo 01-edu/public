@@ -29,10 +29,10 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/strings/test$ cargo run
+$ cargo run
 length of ❤ = 1
 length of 形声字 = 3
 length of change = 6
 length of 😍 = 1
-student@ubuntu:~/strings/test$
+$
 ```

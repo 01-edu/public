@@ -92,5 +92,5 @@ Ok([2, 4, 6])
 [2, 4, 6]
 Err(("There is a even value in the vector!", [2, 6]))
 [2, 6]
-student@ubuntu:~/unwrap_or_expect/test$
+$
 ```

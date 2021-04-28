@@ -52,7 +52,7 @@ func main() {
 Its output:
 
 ```console
-$ go build
-$ ./main
+$ go run .
 5 -> 3 -> 3 -> 1 -> 1
+$
 ```

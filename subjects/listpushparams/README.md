@@ -9,12 +9,11 @@ Write a program that creates a new linked list and includes each command-line ar
 And its output :
 
 ```console
-student@ubuntu:~/listpushparams/test$ go build
-student@ubuntu:~/listpushparams/test$ ./listpushparams choumi is the best cat
+$ go run . choumi is the best cat
 cat
 best
 the
 is
 choumi
-student@ubuntu:~/listpushparams/test$
+$
 ```

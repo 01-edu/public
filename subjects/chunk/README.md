@@ -33,12 +33,11 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/chunk/test$ go build
-student@ubuntu:~/chunk/test$ ./test
+$ go run .
 []
 
 [[0 1 2] [3 4 5] [6 7]]
 [[0 1 2 3 4] [5 6 7]]
 [[0 1 2 3] [4 5 6 7]]
-student@ubuntu:~/chunk/test$
+$
 ```

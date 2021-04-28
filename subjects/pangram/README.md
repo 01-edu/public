@@ -41,8 +41,8 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/pangram/test$ cargo run
+$ cargo run
 true
 false
-student@ubuntu:~/pangram/test$
+$
 ```

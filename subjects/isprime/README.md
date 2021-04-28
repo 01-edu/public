@@ -37,9 +37,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/isprime/test$ go build
-student@ubuntu:~/isprime/test$ ./test
+$ go run .
 true
 false
-student@ubuntu:~/isprime/test$
+$
 ```

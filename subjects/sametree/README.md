@@ -94,8 +94,7 @@ func main() {
 ### Output
 
 ```console
-student@ubuntu:~/sametree/test$ go build
-student@ubuntu:~/sametree/test$ ./test
+$ go run .
 true
-student@ubuntu:~/sametree/test$
+$
 ```

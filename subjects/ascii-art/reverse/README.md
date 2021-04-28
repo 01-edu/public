@@ -30,8 +30,7 @@ This project will help you learn about :
 ### Usage
 
 ```console
-student@ubuntu:~/ascii-art$ go build
-student@ubuntu:~/ascii-art$ cat file.txt
+$ cat file.txt
  _              _   _
 | |            | | | |
 | |__     ___  | | | |   ___
@@ -41,7 +40,7 @@ student@ubuntu:~/ascii-art$ cat file.txt
 
 
 
-student@ubuntu:~/ascii-art$ ./ascii-art --reverse=file.txt
+$ go run . --reverse=file.txt
 hello
-student@ubuntu:~/ascii-art$
+$
 ```

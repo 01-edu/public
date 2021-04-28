@@ -37,8 +37,7 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/rot14/test$ go build
-student@ubuntu:~/rot14/test$ ./test
+$ go run .
 Vszzc Vck ofs Mci
-student@ubuntu:~/rot14/test$
+$
 ```

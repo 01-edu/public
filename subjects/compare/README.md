@@ -34,10 +34,9 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/compare/test$ go build
-student@ubuntu:~/compare/test$ ./test
+$ go run .
 0
 -1
 1
-student@ubuntu:~/compare/test$
+$
 ```

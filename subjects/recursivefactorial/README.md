@@ -35,8 +35,7 @@ func main() {
 ```
 
 ```console
-student@ubuntu:~/recursivefactorial/test$ go build
-student@ubuntu:~/recursivefactorial/test$ ./test
+$ go run .
 24
-student@ubuntu:~/recursivefactorial/test$
+$
 ```

@@ -73,13 +73,12 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/listmerge/test$ go build
-student@ubuntu:~/listmerge/test$ ./test
+$ go run .
 -----first List------
 a -> b -> c -> d -> <nil>
 -----second List------
 e -> f -> g -> h -> <nil>
 -----Merged List-----
 a -> b -> c -> d -> e -> f -> g -> h -> <nil>
-student@ubuntu:~/listmerge/test$
+$
 ```

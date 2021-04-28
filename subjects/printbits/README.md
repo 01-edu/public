@@ -9,14 +9,13 @@ Write a program that takes a number as argument, and prints it in binary value *
 ### Usage :
 
 ```console
-student@ubuntu:~/printbits$ go build
-student@ubuntu:~/printbits$ ./printbits 1
-00000001student@ubuntu:~/printbits$
-student@ubuntu:~/printbits$ ./printbits 192
-11000000student@ubuntu:~/printbits$
-student@ubuntu:~/printbits$ ./printbits a
-00000000student@ubuntu:~/printbits$
-student@ubuntu:~/printbits$ ./printbits 1 1
-student@ubuntu:~/printbits$ ./printbits
-student@ubuntu:~/printbits$
+$ go run . 1
+00000001$
+$ go run . 192
+11000000$
+$ go run . a
+00000000$
+$ go run . 1 1
+$ go run .
+$
 ```

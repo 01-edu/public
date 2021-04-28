@@ -11,14 +11,13 @@ If the number of arguments is different from 2 the program prints nothing.
 ### Usage :
 
 ```console
-student@ubuntu:~/range$ go build
-student@ubuntu:~/range$ ./range 1 3
+$ go run . 1 3
 1 2 3
-student@ubuntu:~/range$ ./range -1 2 | cat -e
+$ go run . -1 2 | cat -e
 -1 0 1 2$
-student@ubuntu:~/range$ ./range 0 0
+$ go run . 0 0
 0
-student@ubuntu:~/range$ ./range 0 nan | cat -e
+$ go run . 0 nan | cat -e
 strconv.Atoi: parsing "nan": invalid syntax$
-student@ubuntu:~/range$
+$
 ```

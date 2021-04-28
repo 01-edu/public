@@ -39,7 +39,7 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/searching/test$ cargo run
+$ cargo run
 the element 6 is in the position Some(3) in the array [1, 3, 4, 6, 8, 9, 11]
-student@ubuntu:~/searching/test$
+$
 ```

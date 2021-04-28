@@ -14,13 +14,12 @@ letters by the letter 13 spaces ahead in alphabetical order.
 ### Usage
 
 ```console
-student@ubuntu:~/rot13/test$ go build
-student@ubuntu:~/rot13/test$ ./test "abc"
+$ go run . "abc"
 nop
-student@ubuntu:~/rot13/test$ ./test "hello there"
+$ go run . "hello there"
 uryyb gurer
-student@ubuntu:~/rot13/test$ ./test "HELLO, HELP"
+$ go run . "HELLO, HELP"
 URYYB, URYC
-student@ubuntu:~/rot13/test$ ./test
-student@ubuntu:~/rot13/test$
+$ go run .
+$
 ```

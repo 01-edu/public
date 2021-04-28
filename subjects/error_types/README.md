@@ -115,12 +115,12 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/error_types/test$ cargo run
+$ cargo run
 Form { first_name: "Lee", last_name: "Silva", birth: 2015-09-05, sex: Male, birth_location: "Africa", password: "qwqwsa1dty_" }
 ["Valid first name", "Valid password"]
 FErr { form_values: ("first_name", ""), date: "2020-12-28 13:29:11", err: "No user name" }
 FErr { form_values: ("password", "dty_1"), date: "2020-12-28 13:29:11", err: "At least 8 characters" }
 FErr { form_values: ("password", "asdasASd(_"), date: "2020-12-28 13:29:11", err: "Combination of different ASCII character types (numbers, letters and none alphanumeric characters)" }
 FErr { form_values: ("password", "asdasASd123SA"), date: "2020-12-28 13:29:11", err: "Combination of different ASCII character types (numbers, letters and none alphanumeric characters)" }
-student@ubuntu:~/error_types/test$
+$
 ```

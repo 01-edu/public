@@ -2,7 +2,7 @@
 
 ###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
 
-##### Try to run `"./lem-in example00.txt"`.
+##### Try to run `go run . example00.txt`.
 
 ###### Is the program able to read the ant farm in this standard input?
 
@@ -27,7 +27,7 @@ Lx-y
 ##### Try running the program with [example00](https://public.01-edu.org/subjects/lem-in/examples/).
 
 ```
-student$ ./lem-in example00.txt
+$ go run . example00.txt
 4
 ##start
 0 0 3
@@ -45,7 +45,7 @@ L1-1 L2-3 L3-2
 L2-1 L3-3 L4-2
 L3-1 L4-3
 L4-1
-student$
+$
 ```
 
 ###### Does it present the quickest path possible with the same number of turns as the result above?
@@ -53,7 +53,7 @@ student$
 ##### Try running the program with [example01](https://public.01-edu.org/subjects/lem-in/examples/).
 
 ```
-student$ ./lem-in example01.txt
+$ go run . example01.txt
 10
 ##start
 start 1 6
@@ -97,7 +97,7 @@ L1-end L2-end L3-end L4-m L5-k L6-e L7-a L8-c L9-n L10-E
 L4-end L5-end L6-end L7-m L8-k L9-e L10-a
 L7-end L8-end L9-end L10-m
 L10-end
-student$
+$
 ```
 
 ###### Does it present the quickest path possible with the same number of turns as the result above?
@@ -105,7 +105,7 @@ student$
 ##### Try running the program with [example02](https://public.01-edu.org/subjects/lem-in/examples/).
 
 ```
-student$ ./lem-in example02.txt
+$ go run . example02.txt
 20
 ##start
 0 2 0
@@ -119,7 +119,7 @@ student$ ./lem-in example02.txt
 3-2
 
 L1-3 L2-3 L3-3 L4-3 L5-3 L6-3 L7-3 L8-3 L9-3 L10-3 L11-3 L12-3 L13-3 L14-3 L15-3 L16-3 L17-3 L18-3 L19-3 L20-3
-student$
+$
 ```
 
 ###### Does it present the quickest path possible with the same number of turns as the result above?
@@ -127,7 +127,7 @@ student$
 ##### Try running the program with [example03](https://public.01-edu.org/subjects/lem-in/examples/).
 
 ```
-student$ ./lem-in example03.txt
+$ go run . example03.txt
 4
 4 5 4
 ##start
@@ -151,7 +151,7 @@ L1-5 L2-4 L3-1
 L2-5 L3-4 L4-1
 L3-5 L4-4
 L4-5
-student$
+$
 ```
 
 ###### Does it present the quickest path possible with the same number of turns as the result above?
@@ -159,7 +159,7 @@ student$
 ##### Try running the program with [example04](https://public.01-edu.org/subjects/lem-in/examples/).
 
 ```
-student$ ./lem-in example04.txt
+$ go run . example04.txt
 9
 ##start
 richard 0 6
@@ -184,7 +184,7 @@ L2-peter L3-peter L4-gilfoyle L5-jimYoung L7-dinish
 L4-peter L5-peter L6-gilfoyle L7-jimYoung L9-dinish
 L6-peter L7-peter L8-gilfoyle L9-jimYoung
 L8-peter L9-peter
-student$
+$
 ```
 
 ###### Does it present the quickest path possible with the same number of turns as the result above?
@@ -192,7 +192,7 @@ student$
 ##### Try running the program with [example05](https://public.01-edu.org/subjects/lem-in/examples/).
 
 ```
-student$ ./lem-in example05.txt
+$ go run . example05.txt
 9
 #rooms
 ##start
@@ -268,7 +268,7 @@ L2-end L3-A2 L4-D3 L5-D2 L6-I4 L7-A1 L8-A0 L9-E2
 L3-end L4-end L5-D3 L6-I5 L7-A2 L8-A1 L9-D2
 L5-end L6-end L7-end L8-A2 L9-D3
 L8-end L9-end
-student$
+$
 ```
 
 ###### Does it present the quickest path possible with the same number of turns as the result above?
@@ -276,9 +276,9 @@ student$
 ##### Try running the program with [badexample00](https://public.01-edu.org/subjects/lem-in/examples/).
 
 ```
-student$ ./lem-in badexample00.txt
+$ go run . badexample00.txt
 ERROR: invalid data format
-student$
+$
 ```
 
 ###### Does it present the right result as above?
@@ -286,9 +286,9 @@ student$
 ##### Try running the program with [badexample01](https://public.01-edu.org/subjects/lem-in/examples/).
 
 ```
-student$ ./lem-in badexample01.txt
+$ go run . badexample01.txt
 ERROR: invalid data format
-student$
+$
 ```
 
 ###### Does it present at least the result above?

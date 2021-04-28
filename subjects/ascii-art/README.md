@@ -68,8 +68,7 @@ etc
 ### Usage
 
 ```console
-student@ubuntu:~/ascii-art$ go build
-student@ubuntu:~/ascii-art$ ./ascii-art "hello"
+$ go run . "hello"
   _              _   _
  | |            | | | |
  | |__     ___  | | | |   ___
@@ -78,7 +77,7 @@ student@ubuntu:~/ascii-art$ ./ascii-art "hello"
  |_| |_|  \___| |_| |_|  \___/
 
 
-student@ubuntu:~/ascii-art$ ./ascii-art "HeLlO"
+$ go run . "HeLlO"
   _    _          _        _    ____
  | |  | |        | |      | |  / __ \
  | |__| |   ___  | |      | | | |  | |
@@ -87,7 +86,7 @@ student@ubuntu:~/ascii-art$ ./ascii-art "HeLlO"
  |_|  |_|  \___| |______| |_|  \____/
 
 
-student@ubuntu:~/ascii-art$ ./ascii-art "Hello There"
+$ go run . "Hello There"
   _    _           _    _                 _______   _
  | |  | |         | |  | |               |__   __| | |
  | |__| |   ___   | |  | |    ___           | |    | |__      ___    _ __     ___
@@ -96,7 +95,7 @@ student@ubuntu:~/ascii-art$ ./ascii-art "Hello There"
  |_|  |_|  \___|  |_|  |_|   \___/          |_|    |_| |_|   \___|  |_|      \___|
 
 
-student@ubuntu:~/ascii-art$ ./ascii-art "1Hello 2There"
+$ go run . "1Hello 2There"
      _    _           _    _                       _______   _
  _  | |  | |         | |  | |               ____  |__   __| | |
 / | | |__| |   ___   | |  | |    ___       |___ \    | |    | |__      ___    _ __     ___
@@ -105,7 +104,7 @@ student@ubuntu:~/ascii-art$ ./ascii-art "1Hello 2There"
 |_| |_|  |_|  \___|  |_|  |_|   \___/      |_____|   |_|    |_| |_|   \___|  |_|      \___|
 
 
-student@ubuntu:~/ascii-art$ ./ascii-art "{Hello There}"
+$ go run . "{Hello There}"
    __   _    _           _    _                 _______   _                              __
   / /  | |  | |         | |  | |               |__   __| | |                             \ \
  | |   | |__| |   ___   | |  | |    ___           | |    | |__      ___    _ __     ___   | |
@@ -114,5 +113,5 @@ student@ubuntu:~/ascii-art$ ./ascii-art "{Hello There}"
  | |   |_|  |_|  \___|  |_|  |_|   \___/          |_|    |_| |_|   \___|  |_|      \___|  | |
   \_\                                                                                    /_/
 
-student@ubuntu:~/ascii-art$
+$
 ```

@@ -61,12 +61,12 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/project_motion/test$ cargo run
+$ cargo run
 Some(Object { distance: 50.0, velocity: 50.0, height: 145.1, time: 1.0 })
 Some(Object { distance: 100.0, velocity: 50.0, height: 125.5, time: 2.0 })
 Some(Object { distance: 150.0, velocity: 50.0, height: 81.4, time: 3.0 })
 Some(Object { distance: 200.0, velocity: 50.0, height: 3.0, time: 4.0 })
 None
 None
-student@ubuntu:~/project_motion/test$
+$
 ```

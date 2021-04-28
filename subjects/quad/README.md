@@ -37,12 +37,11 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/quad/test$ go build
-student@ubuntu:~/quad/test$ ./test
+$ go run .
 o---o
 |   |
 o---o
-student@ubuntu:~/quad/test$
+$
 ```
 
 Program #2
@@ -60,10 +59,9 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/quad/test$ go build
-student@ubuntu:~/quad/test$ ./test
+$ go run .
 o---o
-student@ubuntu:~/quad/test$
+$
 ```
 
 Program #3
@@ -81,10 +79,9 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/quad/test$ go build
-student@ubuntu:~/quad/test$ ./test
+$ go run .
 o
-student@ubuntu:~/quad/test$
+$
 ```
 
 Program #4
@@ -102,14 +99,13 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/quad/test$ go build
-student@ubuntu:~/quad/test$ ./test
+$ go run .
 o
 |
 |
 |
 o
-student@ubuntu:~/quad/test$
+$
 ```
 
 ---
@@ -151,12 +147,11 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/quad/test$ go build
-student@ubuntu:~/quad/test$ ./test
+$ go run .
 /***\
 *   *
 \***/
-student@ubuntu:~/quad/test$
+$
 ```
 
 Program #2
@@ -174,10 +169,9 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/quad/test$ go build
-student@ubuntu:~/quad/test$ ./test
+$ go run .
 /***\
-student@ubuntu:~/quad/test$
+$
 ```
 
 Program #3
@@ -195,10 +189,9 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/quad/test$ go build
-student@ubuntu:~/quad/test$ ./test
+$ go run .
 /
-student@ubuntu:~/quad/test$
+$
 ```
 
 Program #4
@@ -216,14 +209,13 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/quad/test$ go build
-student@ubuntu:~/quad/test$ ./test
+$ go run .
 /
 *
 *
 *
 \
-student@ubuntu:~/quad/test$
+$
 ```
 
 ---
@@ -265,12 +257,11 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/quad/test$ go build
-student@ubuntu:~/quad/test$ ./test
+$ go run .
 ABBBA
 B   B
 CBBBC
-student@ubuntu:~/quad/test$
+$
 ```
 
 Program #2
@@ -288,10 +279,9 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/quad/test$ go build
-student@ubuntu:~/quad/test$ ./test
+$ go run .
 ABBBA
-student@ubuntu:~/quad/test$
+$
 ```
 
 Program #3
@@ -309,10 +299,9 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/quad/test$ go build
-student@ubuntu:~/quad/test$ ./test
+$ go run .
 A
-student@ubuntu:~/quad/test$
+$
 ```
 
 Program #4
@@ -330,14 +319,13 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/quad/test$ go build
-student@ubuntu:~/quad/test$ ./test
+$ go run .
 A
 B
 B
 B
 C
-student@ubuntu:~/quad/test$
+$
 ```
 
 ---
@@ -379,12 +367,11 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/quad/test$ go build
-student@ubuntu:~/quad/test$ ./test
+$ go run .
 ABBBC
 B   B
 ABBBC
-student@ubuntu:~/quad/test$
+$
 ```
 
 Program #2
@@ -402,10 +389,9 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/quad/test$ go build
-student@ubuntu:~/quad/test$ ./test
+$ go run .
 ABBBC
-student@ubuntu:~/quad/test$
+$
 ```
 
 Program #3
@@ -423,10 +409,9 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/quad/test$ go build
-student@ubuntu:~/quad/test$ ./test
+$ go run .
 A
-student@ubuntu:~/quad/test$
+$
 ```
 
 Program #4
@@ -444,14 +429,13 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/quad/test$ go build
-student@ubuntu:~/quad/test$ ./test
+$ go run .
 A
 B
 B
 B
 A
-student@ubuntu:~/quad/test$
+$
 ```
 
 ---
@@ -493,12 +477,11 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/quad/test$ go build
-student@ubuntu:~/quad/test$ ./test
+$ go run .
 ABBBC
 B   B
 CBBBA
-student@ubuntu:~/quad/test$
+$
 ```
 
 Program #2
@@ -516,10 +499,9 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/quad/test$ go build
-student@ubuntu:~/quad/test$ ./test
+$ go run .
 ABBBC
-student@ubuntu:~/quad/test$
+$
 ```
 
 Program #3
@@ -537,10 +519,9 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/quad/test$ go build
-student@ubuntu:~/quad/test$ ./test
+$ go run .
 A
-student@ubuntu:~/quad/test$
+$
 ```
 
 Program #4
@@ -558,12 +539,11 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/quad/test$ go build
-student@ubuntu:~/quad/test$ ./test
+$ go run .
 A
 B
 B
 B
 C
-student@ubuntu:~/quad/test$
+$
 ```

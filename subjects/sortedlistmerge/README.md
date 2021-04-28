@@ -68,8 +68,7 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/sortedlistmerge/test$ go build
-student@ubuntu:~/sortedlistmerge/test$ ./test
+$ go run .
 -2 -> 3 -> 5 -> 7 -> 9 -> <nil>
-student@ubuntu:~/sortedlistmerge/test$
+$
 ```

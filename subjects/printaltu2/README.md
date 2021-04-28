@@ -11,8 +11,7 @@ Please note that `casting` is not allowed for this exercise!
 ### Usage
 
 ```console
-student@ubuntu:~/printaltu2$ go build
-student@ubuntu:~/printaltu2$ ./printaltu2
+$ go run .
 ZAYBXCWDVEUFTGSHRIQJPKOLNM
-student@ubuntu:~/printaltu2$
+$
 ```

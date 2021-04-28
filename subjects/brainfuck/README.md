@@ -22,13 +22,12 @@ Any other character is a comment.
 ### Usage
 
 ```console
-student@ubuntu:~/brainfuck$ go build
-student@ubuntu:~/brainfuck$ ./brainfuck "++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>." | cat -e
+$ go run . "++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>." | cat -e
 Hello World!$
-student@ubuntu:~/brainfuck$ ./brainfuck "+++++[>++++[>++++H>+++++i<<-]>>>++\n<<<<-]>>--------.>+++++.>." | cat -e
+$ go run . "+++++[>++++[>++++H>+++++i<<-]>>>++\n<<<<-]>>--------.>+++++.>." | cat -e
 Hi$
-student@ubuntu:~/brainfuck$ ./brainfuck "++++++++++[>++++++++++>++++++++++>++++++++++<<<-]>---.>--.>-.>++++++++++." | cat -e
+$ go run . "++++++++++[>++++++++++>++++++++++>++++++++++<<<-]>---.>--.>-.>++++++++++." | cat -e
 abc$
-student@ubuntu:~/brainfuck$ ./brainfuck
-student@ubuntu:~/brainfuck$
+$ go run .
+$
 ```

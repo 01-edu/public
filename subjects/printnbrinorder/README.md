@@ -33,8 +33,7 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/printnbrinorder/test$ go build
-student@ubuntu:~/printnbrinorder/test$ ./test | cat -e
+$ go run . | cat -e
 1230123$
-student@ubuntu:~/printnbrinorder/test$
+$
 ```

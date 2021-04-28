@@ -95,9 +95,9 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/sales/test$ cargo run
+$ cargo run
 Store { products: [("product A", 1.23), ("product B", 23.1), ("product C", 3.12)] }
 [1.17, 2.98, 22.07]
 Cart { items: [("product A", 1.23), ("product B", 23.1), ("product C", 3.12)], receipt: [1.17, 2.98, 22.07] }
-student@ubuntu:~/sales/test$
+$
 ```

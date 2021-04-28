@@ -29,8 +29,7 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/printstr/test$ go build
-student@ubuntu:~/printstr/test$ ./test | cat -e
+$ go run . | cat -e
 Hello World!%
-student@ubuntu:~/printstr/test$
+$
 ```

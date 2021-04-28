@@ -9,18 +9,17 @@ Write a program that takes a positive integer as argument and displays the sum o
 ### Usage
 
 ```console
-student@ubuntu:~/addprimesum/test$ go build
-student@ubuntu:~/addprimesum/test$ ./test 5
+$ go run . 5
 10
-student@ubuntu:~/addprimesum/test$ ./test 7
+$ go run . 7
 17
-student@ubuntu:~/addprimesum/test$ ./test -2
+$ go run . -2
 0
-student@ubuntu:~/addprimesum/test$ ./test 0
+$ go run . 0
 0
-student@ubuntu:~/addprimesum/test$ ./test
+$ go run .
 0
-student@ubuntu:~/addprimesum/test$ ./test 5 7
+$ go run . 5 7
 0
-student@ubuntu:~/addprimesum/test$
+$
 ```

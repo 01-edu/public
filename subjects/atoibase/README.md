@@ -50,12 +50,11 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/atoibase/test$ go build
-student@ubuntu:~/atoibase/test$ ./test
+$ go run .
 125
 125
 125
 125
 0
-student@ubuntu:~/atoibase/test$
+$
 ```

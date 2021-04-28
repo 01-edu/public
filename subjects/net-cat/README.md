@@ -63,19 +63,19 @@ This project will help you learn about :
 ### Usage
 
 ```console
-student$ go build
-student$ ./TCPChat
+$ go run .
 Listening on the port :8989
-student$ ./TCPChat 2525
+$ go run . 2525
 Listening on the port :2525
-student$ ./TCPChat 2525 localhost
+$ go run . 2525 localhost
 [USAGE]: ./TCPChat $port
+$
 ```
 
 - You should answer the client with a linux logo and ask for their name, when connection is received
 
 ```console
-student$ nc $IP $port
+$ nc $IP $port
 Welcome to TCP-Chat!
          _nnnn_
         dGGGGMMb
@@ -101,20 +101,20 @@ _)      \.___.,|     .'
 The client :
 
 ```console
-student$ nc $IP $port
+$ nc $IP $port
 ```
 
 Server:
 
 ```console
-student$ ./TCPChat 2525
+$ go run . 2525
 Listening on the port :2525
 ```
 
 Client1 (Yenlik):
 
 ```console
-student$ nc localhost 2525
+$ nc localhost 2525
 Welcome to TCP-Chat!
          _nnnn_
         dGGGGMMb
@@ -155,7 +155,7 @@ Lee has left our chat...
 Client2 (Lee):
 
 ```console
-student$ nc localhost 2525
+$ nc localhost 2525
 Yenliks-MacBook-Air:simpleTCPChat ybokina$ nc localhost 2525
 Yenliks-MacBook-Air:simpleTCPChat ybokina$ nc localhost 2525
 Welcome to TCP-Chat!

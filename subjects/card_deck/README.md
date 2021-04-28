@@ -82,7 +82,7 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/card_deck/test$ cargo run
+$ cargo run
 Your card is Card { suit: Club, rank: Ace }
-student@ubuntu:~/card_deck/test$
+$
 ```

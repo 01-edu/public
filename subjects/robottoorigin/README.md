@@ -18,10 +18,9 @@ If the number of arguments is not 1, output nothing.
 ### Usage
 
 ```console
-student@ubuntu:~/robottoorigin/test$ go build
-student@ubuntu:~/robottoorigin/test$ ./main "UD"
+$ go run . "UD"
 true
-student@ubuntu:~/robottoorigin/test$ ./main "LL"
+$ go run . "LL"
 false
 ```
 

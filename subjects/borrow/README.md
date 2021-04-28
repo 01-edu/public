@@ -33,9 +33,9 @@ fn main() {
 
 And its output:
 
-```rust
-student@ubuntu:~/borrow/test$ cargo run
+```console
+$ cargo run
 str_len("hello") = 5
 str_len("camelCase") = 9
-student@ubuntu:~/borrow/test$
+$
 ```

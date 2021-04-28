@@ -32,8 +32,7 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/twosum/test$ go build
-student@ubuntu:~/twosum/test$ ./test
+$ go run .
 [0 3]
-student@ubuntu:~/twosum/test$
+$
 ```

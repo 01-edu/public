@@ -38,8 +38,7 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/btreemax/test$ go build
-student@ubuntu:~/btreemax/test$ ./test
+$ go run .
 7
-student@ubuntu:~/btreemax/test$
+$
 ```

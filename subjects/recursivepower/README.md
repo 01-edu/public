@@ -36,8 +36,7 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/recursivepower/test$ go build
-student@ubuntu:~/recursivepower/test$ ./test
+$ go run .
 64
-student@ubuntu:~/recursivepower/test$
+$
 ```

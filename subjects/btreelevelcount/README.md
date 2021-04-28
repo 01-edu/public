@@ -37,8 +37,7 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/btreelevelcount/test$ go build
-student@ubuntu:~/btreelevelcount/test$ ./test
+$ go run .
 3
-student@ubuntu:~/btreelevelcount/test$
+$
 ```

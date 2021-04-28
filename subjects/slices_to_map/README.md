@@ -29,7 +29,7 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/slices_to_map/test$ cargo run
+$ cargo run
 {"James": 2, "Liam": 3, "Emma": 23, "Noah": 5, "Olivia": 1}
-student@ubuntu:~/slices_to_map/test$
+$
 ```

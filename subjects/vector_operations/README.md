@@ -42,7 +42,7 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/vector_operations/test$ cargo run
+$ cargo run
 ThreeDVector { i: 5, j: 12, k: 6 }
-student@ubuntu:~/vector_operations/test$
+$
 ```

@@ -41,7 +41,7 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/division_and_remainder/test$ cargo run
+$ cargo run
 9/4: division = 2, remainder = 1
-student@ubuntu:~/division_and_remainder/test$
+$
 ```

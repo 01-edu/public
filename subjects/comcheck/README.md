@@ -11,10 +11,9 @@ Write a program `comcheck` that displays on the standard output `Alert!!!` follo
 ### Usage
 
 ```console
-student@ubuntu:~/comcheck$ go build
-student@ubuntu:~/comcheck$ ./comcheck "I" "Will" "Enter" "the" "galaxy"
+$ go run . "I" "Will" "Enter" "the" "galaxy"
 Alert!!!
-student@ubuntu:~/comcheck$ ./comcheck "galaxy 01" "do" "you" "hear" "me"
+$ go run . "galaxy 01" "do" "you" "hear" "me"
 Alert!!!
-student@ubuntu:~/comcheck$
+$
 ```

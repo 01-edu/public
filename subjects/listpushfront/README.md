@@ -55,8 +55,7 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/listpushfront/test$ go build
-student@ubuntu:~/listpushfront/test$ ./test
+$ go run .
 how are you man Hello
-student@ubuntu:~/listpushfront/test$
+$
 ```

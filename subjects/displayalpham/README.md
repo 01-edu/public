@@ -7,8 +7,7 @@ Write a program that displays the alphabet, with even letters in uppercase, and 
 ### Usage
 
 ```console
-student@ubuntu:~/displayalpham$ go build
-student@ubuntu:~/displayalpham$ ./displayalpham | cat -e
+$ go run . | cat -e
 aBcDeFgHiJkLmNoPqRsTuVwXyZ$
-student@ubuntu:~/displayalpham$
+$
 ```

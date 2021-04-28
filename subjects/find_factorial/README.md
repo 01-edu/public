@@ -6,7 +6,7 @@ Complete the **function** `factorial` to return the factorial of a given number.
 
 As a reminder the factorial of a number is the product of all the integers from 1 to that number.
 
-Example: the factorial of 6 (written 6!) is 1 * 2 * 3 * 4 * 5 * 6 = 720.
+Example: the factorial of 6 (written 6!) is 1 \* 2 \* 3 \* 4 \* 5 \* 6 = 720.
 
 Do not forget the rules for 0 and 1.
 
@@ -36,11 +36,11 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/find_factorial/test$ cargo run
+$ cargo run
 The factorial of 0 = 1
 The factorial of 1 = 1
 The factorial of 5 = 120
 The factorial of 10 = 3628800
 The factorial of 19 = 121645100408832000
-student@ubuntu:~/find_factorial/test$
+$
 ```

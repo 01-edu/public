@@ -40,9 +40,8 @@ func main() {
 ### Usage
 
 ```console
-student@ubuntu:~/boolean$ go build
-student@ubuntu:~/boolean$ ./boolean "not" "odd"
+$ go run . "not" "odd"
 I have an even number of arguments
-student@ubuntu:~/boolean$ ./boolean "not even"
+$ go run . "not even"
 I have an odd number of arguments
 ```

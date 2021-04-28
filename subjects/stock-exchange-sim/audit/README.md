@@ -27,7 +27,7 @@
 ##### Try to run the stock exchange program with the [simple](https://public.01-edu.org/subjects/stock-exchange-sim/examples/simple/simple) example, `"./stock examples/simple/simple 1"`.
 
 ```console
-student$ ./stock examples/simple/simple 1
+$ go run . examples/simple/simple 1
 Main Processes :
  0:buy_materiel
  10:build_product
@@ -38,7 +38,7 @@ Stock :
  materiel => 0
  product => 0
  client_content => 1
-student$
+$
 ```
 
 ###### Does the display presents a result similar to the one above (optimizing time;client_content)?
@@ -46,7 +46,7 @@ student$
 ##### Try to run the stock exchange program with the [build](https://public.01-edu.org/subjects/stock-exchange-sim/examples/build/build) example, `"./stock examples/build/build 10"`.
 
 ```console
-student$ ./stock examples/build/build 10
+$ go run . examples/build/build 10
 Main Processes :
  0:do_shelf
  0:do_shelf
@@ -62,7 +62,7 @@ Stock :
  background => 0
  shelf => 0
  cabinet => 1
-student$
+$
 ```
 
 ###### Does the display presents a result similar to the one above (optimizing time;cabinet)?
@@ -70,7 +70,7 @@ student$
 ##### Try to run the stock exchange program with the [seller](https://public.01-edu.org/subjects/stock-exchange-sim/examples/seller/seller) example, `"./stock examples/seller/seller 10"`.
 
 ```console
-student$ ./stock examples/seller/seller 10
+$ go run . examples/seller/seller 10
 Main Processes :
  0:optimize_profile
  0:code
@@ -95,7 +95,7 @@ Stock :
  skills => 1
  fame => 0
  euro => 601
-student$
+$
 ```
 
 ###### Does the display presents a result similar to the one above (optimizing euro)?
@@ -103,7 +103,7 @@ student$
 ##### Try to run the stock exchange program with the [fertilizer](https://public.01-edu.org/subjects/stock-exchange-sim/examples/fertilizer/fertilizer) example, `"./stock examples/fertilizer/fertilizer 1"`.(fertilizer example is self-powered and rotates indefinitely)
 
 ```console
-student$ ./stock examples/fertilizer/fertilizer 1
+$ go run . examples/fertilizer/fertilizer 1
 Main Processes :
  ...
  3973515:eat_apple
@@ -121,7 +121,7 @@ Stock :
  fertilizer => 1
  happiness => 37846
  apple_tree => 0
-student$
+$
 ```
 
 ###### Does the display presents a result similar to the one above, (optimizing happiness), choosing a reasonable shutdown condition and showing that the whole process went well for several times?
@@ -133,10 +133,10 @@ student$
 ##### Try to run the stock exchange program with the [error1](https://public.01-edu.org/subjects/stock-exchange-sim/examples/errors/error1) example, `"./stock examples/errors/error1 1"`.
 
 ```console
-student$ ./stock examples/errors/error1 1
+$ go run . examples/errors/error1 1
 Error while parsing `:(euro:8):(material:1):10`
 Exiting...
-student$
+$
 ```
 
 ###### Does the display presents a result similar to the one above, where it shows the error?
@@ -144,10 +144,10 @@ student$
 ##### Try to run the stock exchange program with the [error2](https://public.01-edu.org/subjects/stock-exchange-sim/examples/errors/error2) example, `"./stock examples/errors/error2 1"`.
 
 ```console
-student$ ./stock examples/errors/error2 1
+$ go run . examples/errors/error2 1
 Missing processes
 Exiting...
-student$
+$
 ```
 
 ###### Does the display presents a result similar to the one above, where it shows the error?
@@ -155,10 +155,10 @@ student$
 ##### Try to run the stock exchange program with the [error3](https://public.01-edu.org/subjects/stock-exchange-sim/examples/errors/error3) example, `"./stock examples/errors/error3 1"`.
 
 ```console
-student$ ./stock examples/errors/error3 1
+$ go run . examples/errors/error3 1
 Error while parsing `optimize:(euro)`
 Exiting...
-student$
+$
 ```
 
 ###### Does the display presents a result similar to the one above, where it shows the error?
@@ -166,7 +166,7 @@ student$
 ##### Try to run the checker program with the [build](https://public.01-edu.org/subjects/stock-exchange-sim/examples/build/build) and the [build.log](https://public.01-edu.org/subjects/stock-exchange-sim/examples/build/build.log) example, `"./checker examples/build/build examples/build/build.log"`.
 
 ```console
-student$ ./checker examples/build/build examples/build/build.log
+$ go run ./checker examples/build/build examples/build/build.log
 Evaluating: 0:do_shelf
 Evaluating: 0:do_shelf
 Evaluating: 0:do_shelf
@@ -175,7 +175,7 @@ Evaluating: 0:do_doorknobs
 Evaluating: 0:do_background
 Evaluating: 20:do_cabinet
 Trace completed, no error detected.
-student$
+$
 ```
 
 ###### Does the display presents a result similar to the one above, where it shows the last cycle and the proof that the sequence is correct?
@@ -183,7 +183,7 @@ student$
 ##### Try to run the checker program with the [seller](https://public.01-edu.org/subjects/stock-exchange-sim/examples/seller/seller) and the [seller.log](https://public.01-edu.org/subjects/stock-exchange-sim/examples/seller/seller.log)example, `"./checker examples/seller/seller examples/seller/seller.log"`.
 
 ```console
-student$ ./checker examples/seller/seller examples/seller/seller.log
+$ go run ./checker examples/seller/seller examples/seller/seller.log
 Evaluating: 0:optimize_profile
 Evaluating: 0:code
 Evaluating: 1:code
@@ -201,7 +201,7 @@ Evaluating: 212:code
 Evaluating: 222:code
 Evaluating: 322:sell_skills
 Trace completed, no error detected.
-student$
+$
 ```
 
 ###### Does the display presents a result similar to the one above, where it shows the last cycle and the proof that the sequence is correct?
@@ -209,7 +209,7 @@ student$
 ##### Try to run the checker program with the [testchecker](https://public.01-edu.org/subjects/stock-exchange-sim/examples/checkererror/testchecker) and [testchecker.log](https://public.01-edu.org/subjects/stock-exchange-sim/examples/checkererror/testchecker.log) example, `"./checker examples/checkererror/testchecker examples/checkererror/testchecker.log"`.
 
 ```console
-student$ ./checker examples/checkererror/testchecker examples/checkererror/testchecker.log
+$ go run ./checker examples/checkererror/testchecker examples/checkererror/testchecker.log
 Evaluating: 0:do_shelf
 Evaluating: 0:do_shelf
 Evaluating: 0:do_doorknobs
@@ -219,7 +219,7 @@ Evaluating: 20:do_cabinet
 Error detected
 at 20:do_cabinet stock insufficient
 Exiting...
-student$
+$
 ```
 
 ###### Does the display presents a result similar to the one above, where it shows the last cycle and the proof that the sequence has errors?

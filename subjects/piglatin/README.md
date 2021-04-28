@@ -16,16 +16,15 @@ If the number of arguments is different from one, the program prints nothing.
 ### Usage
 
 ```console
-student@ubuntu:~/student/test$ go build
-student@ubuntu:~/student/test$ ./piglatin
-student@ubuntu:~/student/test$ ./piglatin pig | cat -e
+$ go run .
+$ go run . pig | cat -e
 igpay$
-student@ubuntu:~/student/test$ ./piglatin Is | cat -e
+$ go run . Is | cat -e
 Isay$
-student@ubuntu:~/student/test$ ./piglatin crunch | cat -e
+$ go run . crunch | cat -e
 unchcray$
-student@ubuntu:~/student/test$ ./piglatin crnch | cat -e
+$ go run . crnch | cat -e
 No vowels$
-student@ubuntu:~/student/test$ ./piglatin something else | cat -e
-student@ubuntu:~/student/test$
+$ go run . something else | cat -e
+$
 ```

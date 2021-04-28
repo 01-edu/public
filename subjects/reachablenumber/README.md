@@ -35,10 +35,9 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/reachablenumber/test$ go build
-student@ubuntu:~/reachablenumber/test$ ./test
+$ go run .
 9
 19
 36
-student@ubuntu:~/reachablenumber/test$
+$
 ```

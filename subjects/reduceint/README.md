@@ -40,10 +40,9 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/reduceint/test$ go build
-student@ubuntu:~/reduceint/test$ ./test
+$ go run .
 1000
 502
 250
-student@ubuntu:~/reduceint/test$
+$
 ```

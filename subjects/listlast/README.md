@@ -51,9 +51,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/listlast/test$ go build
-student@ubuntu:~/listlast/test$ ./test
+$ go run .
 1
 <nil>
-student@ubuntu:~/listlast/test$
+$
 ```

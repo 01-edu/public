@@ -36,9 +36,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/piscine-go/test$ go build
-student@ubuntu:~/piscine-go/test$ ./test
+$ go run .
 5
 3
-student@ubuntu:~/piscine-go/test$
+$
 ```

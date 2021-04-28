@@ -49,8 +49,7 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/listsize/test$ go build
-student@ubuntu:~/listsize/test$ ./test
+$ go run .
 4
-student@ubuntu:~/listsize/test$
+$
 ```

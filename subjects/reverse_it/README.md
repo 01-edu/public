@@ -26,8 +26,8 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/reverse_it/test$ cargo run
+$ cargo run
 321123
 -321123
-student@ubuntu:~/reverse_it/test$
+$
 ```

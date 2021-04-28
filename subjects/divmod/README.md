@@ -42,9 +42,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/divmod/test$ go build
-student@ubuntu:~/divmod/test$ ./test
+$ go run .
 6
 1
-student@ubuntu:~/divmod/test$
+$
 ```

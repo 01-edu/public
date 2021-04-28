@@ -13,13 +13,13 @@ If there is no argument, the program must print nothing.
 ### Usage
 
 ```console
-student@ubuntu:~/brackets$ ./brackets '(johndoe)' | cat -e
+$ go run . '(johndoe)' | cat -e
 OK$
-student@ubuntu:~/brackets$ ./brackets '([)]' | cat -e
+$ go run . '([)]' | cat -e
 Error$
-student@ubuntu:~/brackets$ ./brackets '' '{[(0 + 0)(1 + 1)](3*(-1)){()}}' | cat -e
+$ go run . '' '{[(0 + 0)(1 + 1)](3*(-1)){()}}' | cat -e
 OK$
 OK$
-student@ubuntu:~/brackets$ ./brackets
-student@ubuntu:~/brackets$
+$ go run .
+$
 ```

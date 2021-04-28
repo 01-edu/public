@@ -30,9 +30,8 @@ func main() {
 ### Output
 
 ```console
-student@ubuntu:~/lcm/test$ go build
-student@ubuntu:~/lcm/test$ ./test
+$ go run .
 14
 0
-student@ubuntu:~/lcm/test$
+$
 ```

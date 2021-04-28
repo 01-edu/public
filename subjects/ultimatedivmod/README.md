@@ -40,9 +40,8 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/ultimatedivmod/test$ go build
-student@ubuntu:~/ultimatedivmod/test$ ./test
+$ go run .
 6
 1
-student@ubuntu:~/ultimatedivmod/test$
+$
 ```

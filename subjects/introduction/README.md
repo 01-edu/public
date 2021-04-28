@@ -47,9 +47,9 @@ Where `choumi` is your username
 If the username is `choumi` :
 
 ```console
-user@host:~/piscine-go$ ./hello.sh
+$ ./hello.sh
 Hello choumi!
-user@host:~/piscine-go$
+$
 ```
 
 #### 3- go-say-hello

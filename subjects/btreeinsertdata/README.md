@@ -47,11 +47,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/btreeinsertdata$ go build
-student@ubuntu:~/btreeinsertdata$ ./btreeinsertdata
+$ go run .
 1
 4
 5
 7
-student@ubuntu:~/btreeinsertdata$
+$
 ```

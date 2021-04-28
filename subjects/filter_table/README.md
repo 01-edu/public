@@ -82,8 +82,8 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/filter_table/test$ cargo run
+$ cargo run
 Some(Table { headers: ["Name"], body: [["Adam"], ["Adamaris"], ["Ackerley"]] })
 Some(Table { headers: ["Name", "Last Name", "ID Number"], body: [["Adam", "Philips", "123456789"], ["Ackerley", "Philips", "123456789"]] })
-student@ubuntu:~/filter_table/test$
+$
 ```

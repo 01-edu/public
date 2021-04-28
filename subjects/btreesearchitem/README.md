@@ -63,11 +63,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/btreesearchitem/test$ go build
-student@ubuntu:~/btreesearchitem/test$ ./test
+$ go run .
 Item selected -> 7
 Parent of selected item -> 4
 Left child of selected item -> 5
 Right child of selected item -> nil
-student@ubuntu:~/btreesearchitem/test$
+$
 ```

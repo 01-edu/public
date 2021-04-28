@@ -38,10 +38,9 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/btreeprintroot/printroot$ go build
-student@ubuntu:~/btreeprintroot/printroot$ ./printroot
+$ go run .
 who
 are
 you
-student@ubuntu:~/btreeprintroot/test$
+$
 ```

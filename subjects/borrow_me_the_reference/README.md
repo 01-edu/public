@@ -54,7 +54,7 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/borrow_me_the_reference/test$ cargo run
+$ cargo run
 ("borrow", ["✔", "✔", "✘", "✔"], 75)
-student@ubuntu:~/borrow_me_the_reference/test$
+$
 ```

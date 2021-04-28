@@ -13,37 +13,36 @@ This program should :
 Example of output :
 
 ```console
-student@ubuntu:~/flags$ go build
-student@ubuntu:~/flags$ ./flags --insert=4321 --order asdad
+$ go run . --insert=4321 --order asdad
 1234aadds
-student@ubuntu:~/flags$ ./flags --insert=4321 asdad
+$ go run . --insert=4321 asdad
 asdad4321
-student@ubuntu:~/flags$ ./flags asdad
+$ go run . asdad
 asdad
-student@ubuntu:~/flags$ ./flags --order 43a21
+$ go run . --order 43a21
 1234a
-student@ubuntu:~/flags$ ./flags
+$ go run .
 --insert
   -i
     This flag inserts the string into the string passed as argument.
 --order
   -o
     This flag will behave like a boolean, if it is called it will order the argument.
-student@ubuntu:~/flags$
-student@ubuntu:~/flags$ ./flags -h
+$
+$ go run . -h
 --insert
   -i
     This flag inserts the string into the string passed as argument.
 --order
   -o
     This flag will behave like a boolean, if it is called it will order the argument.
-student@ubuntu:~/flags$
-student@ubuntu:~/flags$ ./flags --help
+$
+$ go run . --help
 --insert
   -i
     This flag inserts the string into the string passed as argument.
 --order
   -o
     This flag will behave like a boolean, if it is called it will order the argument.
-student@ubuntu:~/flags$
+$
 ```

@@ -47,9 +47,9 @@ fn main() {
 And its output;
 
 ```console
-student@ubuntu:~/hashing/test$ cargo run
+$ cargo run
 mean 3.857142857142857
 median 4
 mode 5
-student@ubuntu:~/hashing/test$
+$
 ```

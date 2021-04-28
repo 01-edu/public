@@ -119,17 +119,18 @@ The generated schedule is then saved as a log with the same name.
 So if you run:
 
 ```console
-student$ ./stock examples/simple 10
+go run . examples/simple 10
 ```
 
 You get this generated schedule:
 
 ```console
-student$ cat examples/simple.log
+$ cat examples/simple.log
 0:buy_materiel
 10:build_product
 40:delivery
 No more process doable at cycle 61
+$
 ```
 
 ---
@@ -177,7 +178,7 @@ optimize:(time;client_content)
 Running the stock exchange program:
 
 ```console
-student$ ./stock examples/simple 10
+$ go run . examples/simple 10
 Main Processes:
  0:buy_materiel
  10:build_product
@@ -188,18 +189,18 @@ Stock:
  materiel => 0
  product => 0
  client_content => 1
-student$
+$
 ```
 
 Running the checker program:
 
 ```console
-student$ ./checker examples/simple examples/simple.log
+$ go run ./checker examples/simple examples/simple.log
 Evaluating: 0:buy_materiel
 Evaluating: 10:build_product
 Evaluating: 40:delivery
 Trace completed, no error detected.
-student$
+$
 ```
 
 ---
@@ -207,32 +208,32 @@ student$
 Running the stock exchange program with error, you can see the correct file [here](https://public.01-edu.org/subjects/stock-exchange-sim/examples/simple/simple)
 
 ```console
-student$ cat examples/simple
+$ cat examples/simple
 euro:10
 :(euro:8):(material:1):10
 build_product:(material:1):(product:1):30
 delivery:(product:1):(client_content:1):20
 optimize:(time;client_content)
-student$ ./stock examples/simple 10
+$ go run . examples/simple 10
 Error while parsing `:(euro:8):(material:1):10`
-student$
+$
 ```
 
 Running the checker program with error, you can see the correct file [here](https://public.01-edu.org/subjects/stock-exchange-sim/examples/simple/simple.log)
 
 ```console
-student$ cat examples/simple.log
+$ cat examples/simple.log
 0:buy_materiel
 10:build_product
 10:build_product
 40:delivery
 # No more process doable at cycle 61
-student$ ./checker examples/simple examples/simple.log
+$ go run ./checker examples/simple examples/simple.log
 Evaluating: 0:buy_materiel
 Evaluating: 10:build_product
 Evaluating: 10:build_product
 Evaluating: 40:delivery
 Error detected
 at 10:build_product stock insufficient
-student$
+$
 ```

@@ -11,8 +11,7 @@ Please note that `casting` is not allowed for this exercise!
 ### Usage
 
 ```console
-student@ubuntu:~/printalt$ go build
-student@ubuntu:~/printalt$ ./printalt
+$ go run .
 azbycxdwevfugthsirjqkplomn
-student@ubuntu:~/printalt$
+$
 ```

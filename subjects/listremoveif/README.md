@@ -80,8 +80,7 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/listremoveif/test$ go build
-student@ubuntu:~/listremoveif/test$ ./test
+$ go run .
 ----normal state----
 1 -> <nil>
 ------answer-----
@@ -91,5 +90,5 @@ student@ubuntu:~/listremoveif/test$ ./test
 1 -> Hello -> 1 -> There -> 1 -> 1 -> How -> 1 -> are -> you -> 1 -> <nil>
 ------answer-----
 Hello -> There -> How -> are -> you -> <nil>
-student@ubuntu:~/listremoveif/test$
+$
 ```

@@ -76,11 +76,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/listforeach/test$ go build
-student@ubuntu:~/listforeach/test$ ./test
+$ go run .
 12
 22
 32
 52
-student@ubuntu:~/listforeach/test$
+$
 ```

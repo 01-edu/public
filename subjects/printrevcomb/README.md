@@ -11,10 +11,9 @@ These combinations are separated by a comma and a space.
 Here is an **incomplete** output :
 
 ```console
-student@ubuntu:~/printrevcomb$ go build
-student@ubuntu:~/printrevcomb$ ./printrevcomb | cat -e
+$ go run . | cat -e
 987, 986, 985, 984, 983, 982, 981, 980, 976, ..., 310, 210$
-student@ubuntu:~/printrevcomb$
+$
 ```
 
 `999` or `000` are not valid combinations because the digits are not different.

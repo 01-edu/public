@@ -32,8 +32,7 @@ This project will help you learn about :
 ### Usage
 
 ```console
-|student@ubuntu:~/ascii-art$ go build                                                                                       |
-|student@ubuntu:~/ascii-art$ ./ascii-art "hello" standard --align=center                                                    |
+|$ go run . "hello" standard --align=center                                                                                 |
 |                                             _                _    _                                                       |
 |                                            | |              | |  | |                                                      |
 |                                            | |__      ___   | |  | |    ___                                               |
@@ -42,7 +41,7 @@ This project will help you learn about :
 |                                            |_| |_|   \___|  |_|  |_|   \___/                                              |
 |                                                                                                                           |
 |                                                                                                                           |
-|student@ubuntu:~/ascii-art$ ./ascii-art "Hello There" standard --align=left                                                |
+|$ go run . "Hello There" standard --align=left                                                                             |
 | _    _           _    _                 _______   _                                                                       |
 || |  | |         | |  | |               |__   __| | |                                                                      |
 || |__| |   ___   | |  | |    ___           | |    | |__      ___    _ __     ___                                           |
@@ -51,7 +50,7 @@ This project will help you learn about :
 ||_|  |_|  \___|  |_|  |_|   \___/          |_|    |_| |_|   \___|  |_|      \___|                                          |
 |                                                                                                                           |
 |                                                                                                                           |
-|student@ubuntu:~/ascii-art$ ./ascii-art "hello" shadow --align=right                                                       |
+|$ go run . "hello" shadow --align=right                                                                                    |
 |                                                                                                                           |
 |                                                                                          _|                _| _|          |
 |                                                                                          _|_|_|     _|_|   _| _|   _|_|   |
@@ -60,7 +59,7 @@ This project will help you learn about :
 |                                                                                          _|    _|   _|_|_| _| _|   _|_|   |
 |                                                                                                                           |
 |                                                                                                                           |
-|student@ubuntu:~/ascii-art$ ./ascii-art "how are you" shadow --align=justify                                               |
+|$ go run . "how are you" shadow --align=justify                                                                            |
 |                                                                                                                           |
 |_|                                                                                                                         |
 |_|_|_|     _|_|   _|      _|      _|                  _|_|_| _|  _|_|   _|_|                    _|    _|   _|_|   _|    _| |
@@ -69,5 +68,5 @@ This project will help you learn about :
 |_|    _|   _|_|       _|      _|                      _|_|_| _|         _|_|_|                    _|_|_|   _|_|     _|_|_| |
 |                                                                                                      _|                   |
 |                                                                                                  _|_|                     |
-|student@ubuntu:~/ascii-art$                                                                                                |
+|$                                                                                                                          |
 ```

@@ -26,7 +26,7 @@ To see more about wget you can visit the manual by using the command `man wget`,
 Your program must have as arguments the link from where you want to download the file, for instance:
 
 ```console
-student@ubuntu:~/wget$ ./wget https://pbs.twimg.com/media/EMtmPFLWkAA8CIS.jpg
+$ go run . https://pbs.twimg.com/media/EMtmPFLWkAA8CIS.jpg
 ```
 
 The program should be able to give feedback, displaying the:
@@ -44,7 +44,7 @@ The program should be able to give feedback, displaying the:
 It should look something like this
 
 ```console
-student@ubuntu:~/wget$ go run . https://pbs.twimg.com/media/EMtmPFLWkAA8CIS.jpg
+$ go run . https://pbs.twimg.com/media/EMtmPFLWkAA8CIS.jpg
 start at 2017-10-14 03:46:06
 sending request, awaiting response... status 200 OK
 content size: 56370 [~0.06MB]
@@ -62,7 +62,7 @@ Your program should be able to handle different flags.
 1. Download a file and save it under a different name by using the flag `-O` followed by the name you wish to save the file, example:
 
 ```console
-student@ubuntu:~/wget$ go run . -O=meme.jpg https://pbs.twimg.com/media/EMtmPFLWkAA8CIS.jpg
+$ go run . -O=meme.jpg https://pbs.twimg.com/media/EMtmPFLWkAA8CIS.jpg
 start at 2017-10-14 03:46:06
 sending request, awaiting response... status 200 OK
 content size: 56370 [~0.06MB]
@@ -71,7 +71,7 @@ saving file to: ./meme.jpg
 
 Downloaded [https://pbs.twimg.com/media/EMtmPFLWkAA8CIS.jpg]
 finished at 2017-10-14 03:46:07
-student@ubuntu:~/wget$ ls -l
+$ ls -l
 -rw-r--r-- 1 student student 56370 ago 13 16:59 meme.jpg
 -rw-r--r-- 1 student student 11489 ago 13 10:28 main.go
 ```
@@ -81,7 +81,7 @@ student@ubuntu:~/wget$ ls -l
 2. It should also handle the path to where your file is going to be saved using the flag `-P` followed by the path to where you want to save the file, example:
 
 ```console
-student@ubuntu:~/wget$ go run . -P=~/Downloads/ -O=meme.jpg https://pbs.twimg.com/media/EMtmPFLWkAA8CIS.jpg
+$ go run . -P=~/Downloads/ -O=meme.jpg https://pbs.twimg.com/media/EMtmPFLWkAA8CIS.jpg
 start at 2017-10-14 03:46:06
 sending request, awaiting response... status 200 OK
 content size: 56370 [~0.06MB]
@@ -90,7 +90,7 @@ saving file to: ~/Downloads/meme.jpg
 
 Downloaded [https://pbs.twimg.com/media/EMtmPFLWkAA8CIS.jpg]
 finished at 2017-10-14 03:46:07
-student@ubuntu:~/wget$ ls -l ~/Downloads/meme.jpg
+$ ls -l ~/Downloads/meme.jpg
 -rw-r--r-- 1 student student 56370 ago 13 16:59 /home/student/Downloads/meme.jpg
 ```
 
@@ -99,7 +99,7 @@ student@ubuntu:~/wget$ ls -l ~/Downloads/meme.jpg
 3. The program should handle speed limit. Basically the program can control the speed of the download by using the flag `--rate-limit`. If you download a huge file you can limit the speed of your download, preventing the program from using the full possible bandwidth of your connection, example:
 
 ```console
-student@ubuntu:~/wget$ go run . --rate-limit=400k https://pbs.twimg.com/media/EMtmPFLWkAA8CIS.jpg
+$ go run . --rate-limit=400k https://pbs.twimg.com/media/EMtmPFLWkAA8CIS.jpg
 ```
 
 This flag should accept different value types, example: k and M. So you can put the rate limit as `rate-limit=200k` or `rate-limit=2M`
@@ -109,12 +109,12 @@ This flag should accept different value types, example: k and M. So you can put 
 4. Downloading different files should be possible. For this the program will receive the `-i` flag followed by a file name that will contain all links that are to be downloaded. Example:
 
 ```console
-student@ubuntu:~/wget$ ls
+$ ls
 download.txt   main.go
-student@ubuntu:~/wget$ cat download.txt
+$ cat download.txt
 http://ipv4.download.thinkbroadband.com/20MB.zip
 http://ipv4.download.thinkbroadband.com/10MB.zip
-student@ubuntu:~/wget$ go run main -i=download.txt
+$ go run . -i=download.txt
 content size: [10485760, 20971520]
 finished 10MB.zip
 finished 20MB.zip
@@ -142,7 +142,7 @@ Those flags will work based on [Follow links](https://www.gnu.org/software/wget/
 example:
 
 ```console
-student@ubuntu:~/wget$ ./wget --mirror -R=jpg,gif https://example.com
+$ go run . --mirror -R=jpg,gif https://example.com
 ```
 
 - [Directory-Based Limits](https://www.gnu.org/software/wget/manual/wget.html#Directory_002dBased-Limits) (`--exclude` short hand -X)
@@ -152,7 +152,7 @@ student@ubuntu:~/wget$ ./wget --mirror -R=jpg,gif https://example.com
 example:
 
 ```console
-student@ubuntu:~/wget$ ./wget --mirror -X=/assets,/css https://example.com
+$ go run . --mirror -X=/assets,/css https://example.com
 ```
 
 ### Hint

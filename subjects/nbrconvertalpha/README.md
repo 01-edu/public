@@ -11,15 +11,14 @@ A flag `--upper` should be implemented. When used the program prints the result 
 ### Usage
 
 ```console
-student@ubuntu:~/student/test$ go build
-student@ubuntu:~/student/test$ ./nbrconvertalpha
-student@ubuntu:~/student/test$ ./nbrconvertalpha 8 5 12 12 15 | cat -e
+$ go run .
+$ go run . 8 5 12 12 15 | cat -e
 hello$
-student@ubuntu:~/student/test$ ./nbrconvertalpha 12 5 7 5 14 56 4 1 18 25 | cat -e
+$ go run . 12 5 7 5 14 56 4 1 18 25 | cat -e
 legen dary$
-student@ubuntu:~/student/test$ ./nbrconvertalpha 32 86 h | cat -e
+$ go run . 32 86 h | cat -e
    $
-student@ubuntu:~/student/test$ ./nbrconvertalpha --upper 8 5 25
+$ go run . --upper 8 5 25
 HEY$
-student@ubuntu:~/student/test$
+$
 ```

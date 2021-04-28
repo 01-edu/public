@@ -13,12 +13,11 @@ If the number of arguments is different from 2, if the regular expression is not
 ### Usage
 
 ```console
-student@ubuntu:~/grouping/test$ go build
-student@ubuntu:~/grouping/test$ ./regbrackets "(a)" "I'm heavy, jumpsuit is on steady, Lighter when I'm lower, higher when I'm heavy"
+$ go run . "(a)" "I'm heavy, jumpsuit is on steady, Lighter when I'm lower, higher when I'm heavy"
 1: heavy
 2: steady
 3: heavy
-student@ubuntu:~/grouping/test$ ./regbrackets "(e|n)" "I currently have 4 windows opened up… and I don’t know why."
+$ go run . "(e|n)" "I currently have 4 windows opened up… and I don’t know why."
 1: currently
 2: currently
 3: have
@@ -28,10 +27,10 @@ student@ubuntu:~/grouping/test$ ./regbrackets "(e|n)" "I currently have 4 window
 7: and
 8: don’t
 9: know
-student@ubuntu:~/grouping/test$ ./regbrackets "(hi)" "He swore he just saw his sushi move."
+$ go run . "(hi)" "He swore he just saw his sushi move."
 1: his
 2: sushi
-student@ubuntu:~/grouping/test$ ./regbrackets "(s)" ""
-student@ubuntu:~/grouping/test$ ./regbrackets "i" "Something in the air"
-student@ubuntu:~/grouping/test$
+$ go run . "(s)" ""
+$ go run . "i" "Something in the air"
+$
 ```

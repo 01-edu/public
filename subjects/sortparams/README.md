@@ -7,8 +7,7 @@ Write a **program** that prints the arguments received in the command line in AS
 Example of output :
 
 ```console
-student@ubuntu:~/sortparams$ go build
-student@ubuntu:~/sortparams$ ./sortparams 1 a 2 A 3 b 4 C
+$ go run . 1 a 2 A 3 b 4 C
 1
 2
 3
@@ -17,5 +16,5 @@ A
 C
 a
 b
-student@ubuntu:~/sortparams$
+$
 ```

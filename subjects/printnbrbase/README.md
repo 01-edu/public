@@ -54,12 +54,11 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/printnbrbase/test$ go build
-student@ubuntu:~/printnbrbase/test$ ./test
+$ go run .
 125
 -1111101
 7D
 -uoi
 NV
-student@ubuntu:~/printnbrbase/test$
+$
 ```

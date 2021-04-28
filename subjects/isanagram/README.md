@@ -46,11 +46,11 @@ func main() {
 
 Its output:
 
-```bash
-$ go build
-$ ./main
+```console
+$ go run .
 true
 false
 true
 true
+$
 ```

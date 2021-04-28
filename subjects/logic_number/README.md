@@ -51,10 +51,10 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/logic_number/test$ cargo run
+$ cargo run
 this number returns true because the number 9 obey the rules of the sequence
 this number returns false because the number 10 does not obey the rules of the sequence
 this number returns true because the number 153 obey the rules of the sequence
 this number returns false because the number 154 does not obey the rules of the sequence
-student@ubuntu:~/logic_number/test$
+$
 ```

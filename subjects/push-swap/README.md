@@ -2,7 +2,7 @@
 
 ### Objectives
 
-Push_swap is a very simple and highly effective algorithm.You have at your disposal a list of `int` values, two stacks (`a` and `b`) and a set of instructions.
+Push_swap is a very simple and highly effective algorithm. You have at your disposal a list of `int` values, two stacks (`a` and `b`) and a set of instructions.
 
 You will have to write 2 programs:
 
@@ -20,7 +20,7 @@ These are the instructions that you can use to sort the stack :
 - `ss` execute `sa` and `sb`
 - `ra` rotate stack `a` (shift up all elements of stack `a` by 1, the first element becomes the last one)
 - `rb` rotate stack `b`
-- `rr`execute `ra` and `rb`
+- `rr` execute `ra` and `rb`
 - `rra` reverse rotate `a` (shift down all elements of stack `a` by 1, the last element becomes the first one)
 - `rrb` reverse rotate `b`
 - `rrr` execute `rra` and `rrb`
@@ -96,7 +96,7 @@ This project will help you learn about :
 - In case of there are no arguments the program displays nothing (0 instructions).
 
 ```console
-student$ ./push_swap "2 1 3 6 5 8"
+$ go run . "2 1 3 6 5 8"
 pb
 pb
 ra
@@ -104,10 +104,10 @@ sa
 rrr
 pa
 pa
-student$ ./push_swap "0 one 2 3"
+$ go run . "0 one 2 3"
 Error
-student$ ./push_swap
-student$
+$ go run .
+$
 ```
 
 #### The checker program
@@ -119,23 +119,23 @@ student$
 - In case of there are no arguments the program displays nothing.
 
 ```console
-student$ ./checker "3 2 1 0"
+$ go run ./checker "3 2 1 0"
 sa
 rra
 pb
 KO
-student$  echo -e "rra\npb\nsa\n" | ./checker "3 2 one 0"
+$ echo -e "rra\npb\nsa\n" | go run ./checker "3 2 one 0"
 Error
-student$ echo -e "rra\npb\nsa\nrra\npa"
+$ echo -e "rra\npb\nsa\nrra\npa"
 rra
 pb
 sa
 rra
 pa
-student$ echo -e "rra\npb\nsa\nrra\npa" | ./checker "3 2 1 0"
+$ echo -e "rra\npb\nsa\nrra\npa" | go run ./checker "3 2 1 0"
 OK
-student$ ./checker
-student$
+$ go run ./checker
+$
 ```
 
 ### Allowed packages
@@ -153,10 +153,11 @@ student$
 ### Usage
 
 ```console
-student$ ARG="4 67 3 87 23"; ./push_swap "$ARG" | wc -l
+$ ARG="4 67 3 87 23"; ./push_swap "$ARG" | wc -l
 6
-student$ ARG="4 67 3 87 23"; ./push_swap "$ARG" | ./checker "$ARG"
+$ ARG="4 67 3 87 23"; ./push_swap "$ARG" | go run ./checker "$ARG"
 OK
+$
 ```
 
 If the program checker displays KO, it means that your **push_swap** came up with a list of instructions that doesn't sort the list.

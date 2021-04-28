@@ -92,7 +92,7 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/traits/test$ cargo run
+$ cargo run
 this apple gives 4 units of strength
 Before eating Player { name: "player1", strength: 1.0, score: 0, money: 0, weapons: ["knife"] }
 After eating an apple
@@ -103,5 +103,5 @@ After eating a steak
 player1
 Strength: 14, Score: 0, Money: 0
 Weapons: ["knife"]
-student@ubuntu:~/traits/test$
+$
 ```

@@ -98,7 +98,7 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/ref_cell/test$ cargo run
+$ cargo run
 ("Info", "you are using up too 40% of your quote")
 ("Warning", "you have used up over 90% of your quota! Proceeds with precaution")
 ("Error", "you are over your quota!")
@@ -108,5 +108,5 @@ student@ubuntu:~/ref_cell/test$ cargo run
   "Warning: you have used up over 90% of your quota! Proceeds with precaution",
   "Error: you are over your quota!"
 ]
-student@ubuntu:~/ref_cell/test$
+$
 ```

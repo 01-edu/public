@@ -46,8 +46,8 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/spelling/test$ cargo run
+$ cargo run
 three hundred forty-eight
 nine thousand nine hundred ninety-six
-student@ubuntu:~/spelling/test$
+$
 ```

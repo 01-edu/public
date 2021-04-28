@@ -23,9 +23,9 @@ abcdefghijklmnopqrstuvwxyz
 Normal cases :
 
 ```
-$ ./ztail -c 4 file1.txt
+$ go run . -c 4 file1.txt
 xyz
-$ ./ztail -c 4 file1.txt file2.txt
+$ go run . -c 4 file1.txt file2.txt
 ==> file1.txt <==
 xyz
 
@@ -37,7 +37,7 @@ $
 Error cases :
 
 ```
-$ ./ztail -c 4 file1.txt nonexisting1.txt file2.txt nonexisting2.txt
+$ go run . -c 4 file1.txt nonexisting1.txt file2.txt nonexisting2.txt
 ==> file1.txt <==
 xyz
 open nonexisting1.txt: no such file or directory

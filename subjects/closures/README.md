@@ -35,7 +35,7 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/closures/test$ cargo run
+$ cargo run
 All elements in [4, 16, 36, ..., 10000], len = 50
-student@ubuntu:~/closures/test$
+$
 ```

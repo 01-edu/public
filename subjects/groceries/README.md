@@ -47,8 +47,8 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/groceries/test$ cargo run
+$ cargo run
 The groceries list now = ["yogurt", "panetone", "bread", "cheese", "nuts"]
 The second element of the grocery  list is "panetone"
-student@ubuntu:~/groceries/test$
+$
 ```

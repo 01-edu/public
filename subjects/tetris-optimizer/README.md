@@ -28,7 +28,7 @@ This project will help you learn about:
 
 #### Example of a text File
 
-```console
+```
 #...
 #...
 #...
@@ -42,7 +42,7 @@ This project will help you learn about:
 
 - If it isn't possible to form a complete square, the program should leave spaces between the tetrominoes. For example:
 
-```console
+```
 ABB.
 ABB.
 A...
@@ -51,8 +51,8 @@ A...
 
 ## Usage
 
-```
-student@ubuntu:~/tetrisoptimizer$ cat -e sample.txt
+```console
+$ cat -e sample.txt
 ...#$
 ...#$
 ...#$
@@ -92,12 +92,12 @@ $
 ###.$
 .#..$
 ....$
-student@ubuntu:~/tetrisoptimizer$ ./tetrisoptimizer sample.txt | cat -e
+$ go run . sample.txt | cat -e
 ABBBB.$
 ACCCEE$
 AFFCEE$
 A.FFGG$
 HHHDDG$
 .HDD.G$
-student@ubuntu:~/tetrisoptimizer$
+$
 ```

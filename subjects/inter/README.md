@@ -11,10 +11,9 @@ Write a program that takes two `string` and displays, without doubles, the chara
 ### Usage
 
 ```console
-student@ubuntu:~/inter/test$ go build
-student@ubuntu:~/inter/test$ ./test "padinton" "paqefwtdjetyiytjneytjoeyjnejeyj"
+$ go run . "padinton" "paqefwtdjetyiytjneytjoeyjnejeyj"
 padinto
-student@ubuntu:~/inter/test$ ./test ddf6vewg64f  twthgdwthdwfteewhrtag6h4ffdhsd
+$ go run . ddf6vewg64f  twthgdwthdwfteewhrtag6h4ffdhsd
 df6ewg4
-student@ubuntu:~/inter/test$
+$
 ```

@@ -40,10 +40,10 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/ownership/test$ cargo run
+$ cargo run
 first_subword(helloWorld) = hello
 first_subword(snake_case) = snake
 first_subword(CamelCase) = Camel
 first_subword(just) = just
-student@ubuntu:~/ownership/test$
+$
 ```

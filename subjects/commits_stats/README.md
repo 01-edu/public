@@ -51,8 +51,8 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/commits_stats/test$ cargo run
+$ cargo run
 {"2020-W44": 5, "2020-W36": 1, "2020-W31": 1, ... ,"2020-W45": 4, "2020-W46": 4}
 {"homembaixinho": 2, "mwenzkowski": 3, ... ,"tamirzb": 1, "paul-ri": 2, "RPigott": 1}
-student@ubuntu:~/commits_stats/test$
+$
 ```

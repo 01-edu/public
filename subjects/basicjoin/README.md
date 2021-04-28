@@ -33,8 +33,7 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/basicjoin/test$ go build
-student@ubuntu:~/basicjoin/test$ ./test
+$ go run .
 Hello! How are you?
-student@ubuntu:~/basicjoin/test$
+$
 ```

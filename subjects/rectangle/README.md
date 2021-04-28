@@ -45,8 +45,7 @@ func main() {
 ### Usage
 
 ```console
-student@ubuntu:~/rectangle/test$ go build
-student@ubuntu:~/rectangle/test$ ./test
+$ go run .
 area of the rectangle: 6
-student@ubuntu:~/rectangle/test$
+$
 ```

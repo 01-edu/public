@@ -47,16 +47,15 @@ Or:
 ### Usage
 
 ```console
-student@ubuntu:~/rpncalc$ go build
-student@ubuntu:~/rpncalc$ ./rpncalc "1 2 * 3 * 4 +" | cat -e
+$ go run . "1 2 * 3 * 4 +" | cat -e
 10$
-student@ubuntu:~/rpncalc$ ./rpncalc "1 2 3 4 +" | cat -e
+$ go run . "1 2 3 4 +" | cat -e
 Error$
-student@ubuntu:~/rpncalc$ ./rpncalc | cat -e
+$ go run . | cat -e
 Error$
-student@ubuntu:~/rpncalc$ ./rpncalc "     1      3 * 2 -" | cat -e
+$ go run . "     1      3 * 2 -" | cat -e
 1
-student@ubuntu:~/rpncalc$ ./rpncalc "     1      3 * ksd 2 -" | cat -e
+$ go run . "     1      3 * ksd 2 -" | cat -e
 Error$
-student@ubuntu:~/rpncalc$
+$
 ```

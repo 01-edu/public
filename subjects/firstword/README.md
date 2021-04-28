@@ -13,12 +13,11 @@ Write a program that takes an argument and displays its first word, followed by 
 ### Usage
 
 ```console
-student@ubuntu:~/firstword/test$ go build
-student@ubuntu:~/firstword/test$ ./test "hello there"
+$ go run . "hello there"
 hello
-student@ubuntu:~/firstword/test$ ./test "hello   .........  bye"
+$ go run . "hello   .........  bye"
 hello
-student@ubuntu:~/firstword/test$ ./test
-student@ubuntu:~/firstword/test$ ./test "hello" "there"
-student@ubuntu:~/firstword/test$
+$ go run .
+$ go run . "hello" "there"
+$
 ```

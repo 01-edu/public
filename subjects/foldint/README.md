@@ -38,8 +38,7 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/foldint/test$ go build
-student@ubuntu:~/foldint/test$ ./test
+$ go run .
 99
 558
 87
@@ -47,5 +46,5 @@ student@ubuntu:~/foldint/test$ ./test
 93
 0
 93
-student@ubuntu:~/foldint/test$
+$
 ```

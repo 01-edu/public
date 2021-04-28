@@ -69,12 +69,12 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/how_many_references/test$ cargo run
+$ cargo run
 a: 4
 b: 2
 c: 2
 a: 1
 b: 2
 c: 2
-student@ubuntu:~/how_many_references/test$
+$
 ```

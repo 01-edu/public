@@ -52,10 +52,10 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/matrix_ops/test$ cargo run
+$ cargo run
 Some(Matrix([[9, 2], [10, 2]]))
 Some(Matrix([[-2, 2], [1, 4]]))
 None
 None
-student@ubuntu:~/matrix_ops/test$
+$
 ```

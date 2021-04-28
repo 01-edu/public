@@ -12,9 +12,8 @@ A line is a sequence of characters preceding the [end of line](https://en.wikipe
 ### Usage
 
 ```console
-student@ubuntu:~/printalphabetalt2$ go build
-student@ubuntu:~/printalphabetalt2$ ./printalphabetalt2
+$ go run .
 AbCdEfGhIjKlMnOpQrStUvWxYz
 ZyXwVuTsRqPoNmLkJiHgFeDcBa
-student@ubuntu:~/printalphabetalt2$
+$
 ```

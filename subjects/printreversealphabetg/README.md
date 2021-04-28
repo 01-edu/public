@@ -11,8 +11,7 @@ Please note that `casting` is not allowed for this exercise!
 ### Usage
 
 ```console
-student@ubuntu:~/printreversealphabetg$ go build
-student@ubuntu:~/printreversealphabetg$ ./printreversealphabetg
+$ go run .
 gfedcba
-student@ubuntu:~/printreversealphabetg$
+$
 ```

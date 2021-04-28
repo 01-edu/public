@@ -37,11 +37,11 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/rot21/test$ cargo run
+$ cargo run
 The letter "a" becomes: v
 The letter "m" becomes: h
 The word "MISS" becomes: HDNN
 Your cypher wil be: Oznodib iphwzmn 1 2 3
 Your cypher wil be: mjo21 rjmfn!
-student@ubuntu:~/rot21/test$
+$
 ```

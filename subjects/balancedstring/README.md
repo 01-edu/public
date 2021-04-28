@@ -14,15 +14,15 @@ It will only be tested strings containing the characters 'C' and 'D'.
 ### Usage
 
 ```console
-student@ubuntu:~/balancedstring$ go build
-student@ubuntu:~/balancedstring$ ./balancedstring "CDCCDDCDCD"
+$ go run . "CDCCDDCDCD"
 4
-student@ubuntu:~/balancedstring$ ./balancedstring "CDDDDCCCDC"
+$ go run . "CDDDDCCCDC"
 3
-student@ubuntu:~/balancedstring$ ./balancedstring "DDDDCCCC"
+$ go run . "DDDDCCCC"
 1
-student@ubuntu:~/balancedstring$ ./balancedstring "CDCCCDDCDD"
+$ go run . "CDCCCDDCDD"
 2
+$
 ```
 
 In first example "CDCCDDCDCD" can be split into "CD", "CCDD", "CD", "CD", each substring contains same number of 'C' and 'D'.

@@ -38,8 +38,8 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/doubtful/test$ cargo run
+$ cargo run
 Before changing the string: Hello
 After changing the string: Hello?
-student@ubuntu:~/doubtful/test$
+$
 ```

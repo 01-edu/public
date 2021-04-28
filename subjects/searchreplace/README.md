@@ -11,11 +11,10 @@ Write a program that takes 3 arguments, the first argument is a `string` in whic
 ### Usage
 
 ```console
-student@ubuntu:~/searchreplace/test$ go build
-student@ubuntu:~/searchreplace/test$ ./test "hella there" "a" "o"
+$ go run . "hella there" "a" "o"
 hello there
-student@ubuntu:~/searchreplace/test$ ./test "abcd" "z" "l"
+$ go run . "abcd" "z" "l"
 abcd
-student@ubuntu:~/searchreplace/test$ ./test "something" "a" "o" "b" "c"
-student@ubuntu:~/searchreplace/test$
+$ go run . "something" "a" "o" "b" "c"
+$
 ```

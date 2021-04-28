@@ -13,15 +13,14 @@ If the number of arguments is different from 1, the program displays nothing.
 ### Usage
 
 ```console
-student@ubuntu:~/repeatalpha$ go build
-student@ubuntu:~/repeatalpha$ ./repeatalpha abc | cat -e
+$ go run . abc | cat -e
 abbccc
-student@ubuntu:~/repeatalpha$ ./repeatalpha Choumi. | cat -e
+$ go run . Choumi. | cat -e
 CCChhhhhhhhooooooooooooooouuuuuuuuuuuuuuuuuuuuummmmmmmmmmmmmiiiiiiiii.$
-student@ubuntu:~/repeatalpha$ ./repeatalpha "abacadaba 01!" | cat -e
+$ go run . "abacadaba 01!" | cat -e
 abbacccaddddabba 01!$
-student@ubuntu:~/repeatalpha$ ./repeatalpha
-student@ubuntu:~/repeatalpha$ ./repeatalpha "" | cat -e
+$ go run .
+$ go run . "" | cat -e
 $
-student@ubuntu:~/repeatalpha$
+$
 ```

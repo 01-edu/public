@@ -49,9 +49,9 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/scores/test$ cargo run
+$ cargo run
 1
 0
 14
-student@ubuntu:~/scores/test$
+$
 ```

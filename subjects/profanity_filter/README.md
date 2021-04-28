@@ -79,10 +79,10 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/profanity_filter/test$ cargo run
+$ cargo run
 (true, "hello there")
 (false, "ERROR: illegal")
 (false, "ERROR: illegal")
 (false, "ERROR: illegal")
-student@ubuntu:~/profanity_filter/test$
+$
 ```

@@ -122,7 +122,7 @@ This project will help you learn about :
 Example 1 :
 
 ```
-student$ ./lem-in test0.txt
+$ go run . test0.txt
 3
 ##start
 1 23 3
@@ -151,13 +151,13 @@ L1-3 L2-2
 L1-4 L2-5 L3-3
 L1-0 L2-6 L3-4
 L2-0 L3-0
-student$
+$
 ```
 
 Example 2 :
 
 ```
-student$ ./lem-in test1.txt
+$ go run . test1.txt
 3
 ##start
 0 1 0
@@ -174,13 +174,13 @@ L1-3 L2-2
 L1-1 L2-3 L3-2
 L2-1 L3-3
 L3-1
-student$
+$
 ```
 
 Example 3 :
 
 ```
-student$ ./lem-in test1.txt
+$ go run . test1.txt
 3
 2 5 0
 ##start
@@ -197,5 +197,5 @@ student$ ./lem-in test1.txt
 L1-2 L2-3
 L1-1 L2-1 L3-2
 L3-1
-student$
+$
 ```

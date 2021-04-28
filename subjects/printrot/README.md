@@ -12,16 +12,15 @@ If the input is invalid the program prints a newline (`'\n'`).
 ### Usage
 
 ```console
-student@ubuntu:~/printrot/test$ go build
-student@ubuntu:~/printrot/test$ ./test "abc"
+$ go run . "abc"
 
-student@ubuntu:~/printrot/test$ ./test "a"
+$ go run . "a"
 abcdefghijklmnopqrstuvwxyz
-student@ubuntu:~/printrot/test$ ./test "g"
+$ go run . "g"
 ghijklmnopqrstuvwxyzabcdef
-student@ubuntu:~/printrot/test$ ./test "a" "a"
+$ go run . "a" "a"
 
-student@ubuntu:~/printrot/test$ ./test "A"
+$ go run . "A"
 
-student@ubuntu:~/printrot/test$
+$
 ```

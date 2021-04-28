@@ -11,16 +11,15 @@ If the number of arguments is different from 2, then the program displays newlin
 ### Usage
 
 ```console
-student@ubuntu:~/union$ go build
-student@ubuntu:~/union$ ./union zpadinton paqefwtdjetyiytjneytjoeyjnejeyj | cat -e
+$ go run . zpadinton paqefwtdjetyiytjneytjoeyjnejeyj | cat -e
 zpadintoqefwjy$
-student@ubuntu:~/union$ ./union ddf6vewg64f gtwthgdwthdwfteewhrtag6h4ffdhsd | cat -e
+$ go run . ddf6vewg64f gtwthgdwthdwfteewhrtag6h4ffdhsd | cat -e
 df6vewg4thras$
-student@ubuntu:~/union$ ./union rien "cette phrase ne cache rien" | cat -e
+$ go run . rien "cette phrase ne cache rien" | cat -e
 rienct phas$
-student@ubuntu:~/union$ ./union | cat -e
+$ go run . | cat -e
 $
-student@ubuntu:~/union$ ./union rien | cat -e
+$ go run . rien | cat -e
 $
-student@ubuntu:~/union$
+$
 ```

@@ -54,7 +54,7 @@ func main() {
 Its output:
 
 ```console
-$ go build
-$ ./main
+$ go run .
 1 -> 3 -> 5 -> 2 -> 4
+$
 ```

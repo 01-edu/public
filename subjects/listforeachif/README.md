@@ -117,8 +117,7 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/listforeachif/test$ go build
-student@ubuntu:~/listforeachif/test$ ./test
+$ go run .
 1->hello->3->there->23->!->54->nil
 --------function applied--------
 1
@@ -128,6 +127,5 @@ student@ubuntu:~/listforeachif/test$ ./test
 --------function applied--------
 1->2->3->2->23->2->54->nil
 
-student@ubuntu:~/listforeachif/test$
-student@ubuntu:~/listforeachif/test$
+$
 ```

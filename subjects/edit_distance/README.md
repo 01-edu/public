@@ -37,7 +37,7 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/edit_distance/test$ cargo run
+$ cargo run
 It's necessary to make 2 change(s) to alignment, to get assignment
-student@ubuntu:~/edit_distance/test$
+$
 ```

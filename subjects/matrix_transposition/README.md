@@ -60,8 +60,8 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/matrix_transposition/test$ cargo run
+$ cargo run
 Original matrix Matrix((1, 3), (4, 5))
 Transpose matrix Matrix((1, 4), (3, 5))
-student@ubuntu:~/matrix_transposition/test$
+$
 ```

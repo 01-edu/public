@@ -37,8 +37,8 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/flat_tree/test$ cargo run
+$ cargo run
 [0, 9, 30, 34]
 ["Horses", "Slow", "kill", "will"]
-student@ubuntu:~/flat_tree/test$
+$
 ```

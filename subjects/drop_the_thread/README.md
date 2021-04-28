@@ -105,9 +105,9 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/drop_the_thread/test$ cargo run
+$ cargo run
 (true, 0, Cell { value: 1 })
 (true, 1, Cell { value: 2 })
 (false, 2, Cell { value: 2 }, 1)
-student@ubuntu:~/drop_the_thread/test$
+$
 ```

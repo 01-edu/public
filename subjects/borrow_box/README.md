@@ -82,10 +82,10 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/borrow_box/test$ cargo run
+$ cargo run
 ("Same score! tied", 0)
 ("Same score! tied", 2)
 ("Joao", 3)
 "game deleted: id -> 0"
-student@ubuntu:~/borrow_box/test$
+$
 ```

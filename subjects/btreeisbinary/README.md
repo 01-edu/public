@@ -36,8 +36,7 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/btreeisbinary/test$ go build
-student@ubuntu:~/btreeisbinary/test$ ./test
+$ go run .
 true
-student@ubuntu:~/btreeisbinary/test$
+$
 ```

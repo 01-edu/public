@@ -35,7 +35,7 @@ In order to get your daily informations out of your favorite websites, you'll ha
 First, create a new repository named `ephemeris` and run this command line in your terminal, in the repository:
 
 ```console
-student@ubuntu:~/ephemeris$ npm install puppeteer
+$ npm install puppeteer
 ```
 
 Then, create a new file `ephemeris.mjs` in which you will use the puppeteer module:

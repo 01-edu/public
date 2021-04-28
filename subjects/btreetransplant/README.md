@@ -39,11 +39,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/btreetransplant/test$ go build
-student@ubuntu:~/btreetransplant/test$ ./test
+$ go run .
 3
 4
 5
 7
-student@ubuntu:~/btreetransplant/test$
+$
 ```

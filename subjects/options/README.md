@@ -21,26 +21,25 @@ Write a program that takes an undefined number of arguments which could be consi
 ### Usage
 
 ```console
-student@ubuntu:~/options/test$ go build
-student@ubuntu:~/options/test$ ./test | cat -e
+$ go run . | cat -e
 options: abcdefghijklmnopqrstuvwxyz$
-student@ubuntu:~/options/test$ ./test -abc -ijk | cat -e
+$ go run . -abc -ijk | cat -e
 00000000 00000000 00000111 00000111$
-student@ubuntu:~/options/test$ ./test -z | cat -e
+$ go run . -z | cat -e
 00000010 00000000 00000000 00000000$
-student@ubuntu:~/options/test$ ./test -abc -hijk | cat -e
+$ go run . -abc -hijk | cat -e
 options: abcdefghijklmnopqrstuvwxyz$
-student@ubuntu:~/options/test$ ./test -h | cat -e
+$ go run . -h | cat -e
 options: abcdefghijklmnopqrstuvwxyz$
-student@ubuntu:~/options/test$ ./test -zh | cat -e
+$ go run . -zh | cat -e
 00000010 00000000 00000000 10000000$
-student@ubuntu:~/options/test$ ./test -z -h | cat -e
+$ go run . -z -h | cat -e
 options: abcdefghijklmnopqrstuvwxyz$
-student@ubuntu:~/options/test$ ./test -hhhhhh | cat -e
+$ go run . -hhhhhh | cat -e
 options: abcdefghijklmnopqrstuvwxyz$
-student@ubuntu:~/options/test$ ./test -eeeeee | cat -e
+$ go run . -eeeeee | cat -e
 00000000 00000000 00000000 00010000$
-student@ubuntu:~/options/test$ ./test -% | cat -e
+$ go run . -% | cat -e
 Invalid Option$
-student@ubuntu:~/options/test$
+$
 ```

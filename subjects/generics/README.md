@@ -27,8 +27,8 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/generics/test$ cargo run
+$ cargo run
 Hello, world!
 3
-student@ubuntu:~/generics/test$
+$
 ```

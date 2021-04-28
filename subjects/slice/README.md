@@ -40,8 +40,7 @@ func main(){
 ```
 
 ```console
-student@ubuntu:~/student/test$ go build
-student@ubuntu:~/student/test$ ./test
+$ go run .
 []string{"algorithm", "ascii", "package", "golang"}
 []string{"ascii", "package"}
 []string{"ascii", "package", "golang"}

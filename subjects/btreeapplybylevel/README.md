@@ -36,11 +36,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/btreeapplybylevel/test$ go build
-student@ubuntu:~/btreeapplybylevel/test$ ./test
+$ go run .
 4
 1
 7
 5
-student@ubuntu:~/btreeapplybylevel/test$
+$
 ```

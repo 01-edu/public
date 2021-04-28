@@ -35,7 +35,7 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/arrange_it/test$ cargo run
+$ cargo run
 "This is a Test"
-student@ubuntu:~/arrange_it/test$
+$
 ```

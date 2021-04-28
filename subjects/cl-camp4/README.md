@@ -17,8 +17,8 @@ Create a file `myfamily.sh`, which will show a subject's family (key: relatives)
 ### Usage
 
 ```console
-student@ubuntu:~/cl-camp4/test$ export HERO_ID=1
-student@ubuntu:~/cl-camp4/test$ ./myfamily.sh
+$ export HERO_ID=1
+$ ./myfamily.sh
 Marlo Chandler-Jones (wife); Polly (aunt); Mrs. Chandler (mother-in-law); Keith Chandler, Ray Chandler, three unidentified others (brothers-in-law); unidentified father (deceased); Jackie Shorr (alleged mother; unconfirmed)
-student@ubuntu:~/cl-camp4/test$
+$
 ```

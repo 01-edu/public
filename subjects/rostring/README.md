@@ -16,14 +16,13 @@ If the number of arguments is different from 1, the program displays a newline.
 ### Usage
 
 ```console
-student@ubuntu:~/rostring$ go build
-student@ubuntu:~/rostring$ ./rostring "abc   " | cat -e
+$ go run . "abc   " | cat -e
 abc$
-student@ubuntu:~/rostring$ ./rostring "Let there     be light"
+$ go run . "Let there     be light"
 there be light Let
-student@ubuntu:~/rostring$ ./rostring "     AkjhZ zLKIJz , 23y"
+$ go run . "     AkjhZ zLKIJz , 23y"
 zLKIJz , 23y AkjhZ
-student@ubuntu:~/rostring$ ./rostring | cat -e
+$ go run . | cat -e
 $
-student@ubuntu:~/rostring$
+$
 ```

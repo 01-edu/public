@@ -17,13 +17,12 @@ program displays nothing.
 ### Usage :
 
 ```console
-student@ubuntu:~/cleanstr$ go build
-student@ubuntu:~/cleanstr$ ./cleanstr "you see it's easy to display the same thing" | cat -e
+$ go run . "you see it's easy to display the same thing" | cat -e
 you see it's easy to display the same thing$
-student@ubuntu:~/cleanstr$ ./cleanstr " only    it's  harder   "
+$ go run . " only    it's  harder   "
 only it's harder$
-student@ubuntu:~/cleanstr$ ./cleanstr " how funny" "Did you   hear Mathilde ?"
+$ go run . " how funny" "Did you   hear Mathilde ?"
 $
-student@ubuntu:~/cleanstr$ ./cleanstr ""
-student@ubuntu:~/cleanstr$
+$ go run . ""
+$
 ```

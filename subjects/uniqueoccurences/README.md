@@ -11,12 +11,11 @@ Only lower case characters will be given.
 ### Usage
 
 ```console
-student@ubuntu:~/uniqueoccurences/test$ go build
-student@ubuntu:~/uniqueoccurences/test$ ./main abbaac
+$ go run . abbaac
 true
-student@ubuntu:~/uniqueoccurences/test$ ./main ab
+$ go run . ab
 false
-student@ubuntu:~/uniqueoccurences/test$ ./main abcacccazb
+$ go run . abcacccazb
 true
 ```
 

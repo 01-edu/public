@@ -27,9 +27,8 @@ This project will help you learn about :
 ### Usage
 
 ```console
-student@ubuntu:~/ascii-art$ go build
-student@ubuntu:~/ascii-art$ ./ascii-art "hello" standard --output=banner.txt
-student@ubuntu:~/ascii-art$ cat banner.txt
+$ go run . "hello" standard --output=banner.txt
+$ cat banner.txt
  _              _   _
 | |            | | | |
 | |__     ___  | | | |   ___
@@ -39,8 +38,8 @@ student@ubuntu:~/ascii-art$ cat banner.txt
 
 
 
-student@ubuntu:~/ascii-art$ ./ascii-art "Hello There!" shadow --output=banner.txt
-student@ubuntu:~/ascii-art$ cat banner.txt
+$ go run . "Hello There!" shadow --output=banner.txt
+$ cat banner.txt
 
 _|    _|          _| _|                _|_|_|_|_| _|                                  _|
 _|    _|   _|_|   _| _|   _|_|             _|     _|_|_|     _|_|   _|  _|_|   _|_|   _|
@@ -50,5 +49,5 @@ _|    _|   _|_|_| _| _|   _|_|             _|     _|    _|   _|_|_| _|         _
 
 
 
-student@ubuntu:~/ascii-art$
+$
 ```

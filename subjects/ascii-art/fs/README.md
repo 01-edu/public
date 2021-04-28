@@ -26,8 +26,7 @@ This project will help you learn about :
 ### Usage
 
 ```console
-student@ubuntu:~/ascii-art$ go build
-student@ubuntu:~/ascii-art$ ./ascii-art "hello" standard
+$ go run . "hello" standard
   _                _    _
  | |              | |  | |
  | |__      ___   | |  | |    ___
@@ -37,7 +36,7 @@ student@ubuntu:~/ascii-art$ ./ascii-art "hello" standard
 
 
 
-student@ubuntu:~/ascii-art$ ./ascii-art "Hello There!" shadow
+$ go run . "Hello There!" shadow
 
 _|    _|          _| _|                _|_|_|_|_| _|                                  _|
 _|    _|   _|_|   _| _|   _|_|             _|     _|_|_|     _|_|   _|  _|_|   _|_|   _|
@@ -47,7 +46,7 @@ _|    _|   _|_|_| _| _|   _|_|             _|     _|    _|   _|_|_| _|         _
 
 
 
-student@ubuntu:~/ascii-art$ ./ascii-art "Hello There!" thinkertoy
+$ go run . "Hello There!" thinkertoy
 
 o  o     o o           o-O-o o
 |  |     | |             |   |                o
@@ -57,5 +56,5 @@ o  o o-o o o o-o         o   o  o o-o o   o-o
                                               O
 
 
-student@ubuntu:~/ascii-art$
+$
 ```

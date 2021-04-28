@@ -16,9 +16,10 @@ Input will be given as 6 arguments, your output should be displayed as standard 
 
 In the output put '\n' at the end.
 
-Input: `./main **a** **b** **c** **d** **e** **f**`
+Input: `go run . **a** **b** **c** **d** **e** **f**`
 
 ```console
-$ ./main 12 11 13 20 4 6
+$ go run . 12 11 13 20 4 6
 102
+$
 ```

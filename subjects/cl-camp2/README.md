@@ -11,7 +11,7 @@ A line is a sequence of characters preceding the [end of line](https://en.wikipe
 ### Usage
 
 ```console
-student@ubuntu:~/cl-camp2/test$ cat -e r
+$ cat -e r
 R$
-student@ubuntu:~/cl-camp2/test$
+$
 ```

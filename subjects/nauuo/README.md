@@ -41,11 +41,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/nauuo/test$ go build
-student@ubuntu:~/nauuo/test$ ./test
+$ go run .
 ?
 0
 +
 -
-student@ubuntu:~/nauuo/test$
+$
 ```

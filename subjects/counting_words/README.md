@@ -42,9 +42,9 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/counting_words/test$ cargo run
+$ cargo run
 {"hello": 1, "world": 1}
 {"and": 2, "human": 1, "universe": 2, "the": 2, "i\'m": 1, "about": 1, "einstein": 1, "are": 1, "infinite": 1, "sure": 1, "albert": 1, "two": 1, "things": 1, "not": 1, "stupidity": 1}
 {"batman": 3, "stop": 2}
-student@ubuntu:~/counting_words/test$
+$
 ```

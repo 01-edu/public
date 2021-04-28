@@ -13,8 +13,7 @@
 Example of output for one valid sudoku :
 
 ```console
-student@ubuntu:~/sudoku$ go build
-student@ubuntu:~/sudoku$ ./sudoku ".96.4...1" "1...6...4" "5.481.39." "..795..43" ".3..8...." "4.5.23.18" ".1.63..59" ".59.7.83." "..359...7" | cat -e
+$ go run . ".96.4...1" "1...6...4" "5.481.39." "..795..43" ".3..8...." "4.5.23.18" ".1.63..59" ".59.7.83." "..359...7" | cat -e
 3 9 6 2 4 5 7 8 1$
 1 7 8 3 6 9 5 2 4$
 5 2 4 8 1 7 3 9 6$
@@ -24,7 +23,7 @@ student@ubuntu:~/sudoku$ ./sudoku ".96.4...1" "1...6...4" "5.481.39." "..795..43
 7 1 2 6 3 8 4 5 9$
 6 5 9 1 7 4 8 3 2$
 8 4 3 5 9 2 1 6 7$
-student@ubuntu:~/sudoku$
+$
 ```
 
 #### Example 2:
@@ -32,11 +31,11 @@ student@ubuntu:~/sudoku$
 Examples of output for invalid input or sudokus :
 
 ```console
-student@ubuntu:~/sudoku$ ./sudoku 1 2 3 4 | cat -e
+$ go run . 1 2 3 4 | cat -e
 Error$
-student@ubuntu:~/sudoku$ ./sudoku | cat -e
+$ go run . | cat -e
 Error$
-student@ubuntu:~/sudoku$ ./sudoku ".96.4...1" "1...6.1.4" "5.481.39." "..795..43" ".3..8...." "4.5.23.18" ".1.63..59" ".59.7.83." "..359...7" | cat -e
+$ go run . ".96.4...1" "1...6.1.4" "5.481.39." "..795..43" ".3..8...." "4.5.23.18" ".1.63..59" ".59.7.83." "..359...7" | cat -e
 Error$
-student@ubuntu:~/sudoku$
+$
 ```

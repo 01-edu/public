@@ -17,7 +17,7 @@ Create a program `quadchecker` that takes a `string` as an argument and displays
 - If it's `quadA`
 
 ```console
-student@ubuntu:~/quadchecker$ ls -l
+$ ls -l
 -rw-r--r-- 1 student student  nov 23 14:30 main.go
 -rwxr-xr-x 1 student student  nov 23 19:18 quadchecker
 -rwxr-xr-x 1 student student  nov 23 19:50 quadA
@@ -25,38 +25,35 @@ student@ubuntu:~/quadchecker$ ls -l
 -rwxr-xr-x 1 student student  nov 23 19:50 quadC
 -rwxr-xr-x 1 student student  nov 23 19:50 quadD
 -rwxr-xr-x 1 student student  nov 23 19:50 quadE
-student@ubuntu:~/quadchecker$ ./quadA 3 3 | ./quadchecker
+$ ./quadA 3 3 | go run .
 [quadA] [3] [3]
-student@ubuntu:~/quadchecker$
-student@ubuntu:~/quadchecker$
-student@ubuntu:~/quadchecker$
-student@ubuntu:~/quadchecker$
+$
 ```
 
 - If it's `quadC 1 1` :
 
 ```console
-student@ubuntu:~/quadchecker$ ./quadC 1 1
+$ ./quadC 1 1
 A
-student@ubuntu:~/quadchecker$ ./quadD 1 1
+$ ./quadD 1 1
 A
-student@ubuntu:~/quadchecker$ ./quadE 1 1
+$ ./quadE 1 1
 A
-student@ubuntu:~/quadchecker$ ./quadC 1 1 | ./quadchecker
+$ ./quadC 1 1 | go run .
 [quadC] [1] [1] || [quadD] [1] [1] || [quadE] [1] [1]
-student@ubuntu:~/quadchecker$
+$
 ```
 
 - If it's `quadC 1 2` :
 
 ```console
-student@ubuntu:~/quadchecker$ ./quadE 1 2
+$ ./quadE 1 2
 A
 C
-student@ubuntu:~/quadchecker$ ./quadC 1 2
+$ ./quadC 1 2
 A
 C
-student@ubuntu:~/quadchecker$ ./quadE 1 2 | ./quadchecker
+$ ./quadE 1 2 | go run .
 [quadC] [1] [2] || [quadE] [1] [2]
-student@ubuntu:~/quadchecker$
+$
 ```

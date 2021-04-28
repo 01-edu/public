@@ -37,11 +37,11 @@ fn main() {
 And its output:
 
 ```console
-student@ubuntu:~/reverse_string/test$ cargo run
+$ cargo run
 !dlrow ,olleH
 namoR si eman ym ,olleH
 !rac ecin a evah I
 uoY era dlo woH
 augá elpmaxe na si siht :xe
-student@ubuntu:~/reverse_string/test$
+$
 ```

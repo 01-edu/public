@@ -18,5 +18,4 @@ curl -s https://[[DOMAIN]]/api/graphql-engine/v1/graphql --data '{"query":"{user
 $ ./to-git-or-not-to-git.sh
 231748
 $
-`
 ```

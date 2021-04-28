@@ -38,7 +38,7 @@ fn main() {
 And its output
 
 ```console
-student@ubuntu:~/bigger/test$ cargo run
+$ cargo run
 The biggest of the elements in the HashMap is 334
-student@ubuntu:~/bigger/test$
+$
 ```

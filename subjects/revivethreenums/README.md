@@ -36,10 +36,9 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/revivethreenums/test$ go build
-student@ubuntu:~/revivethreenums/test$ ./test
+$ go run .
 3
 20
 100
-student@ubuntu:~/revivethreenums/test$
+$
 ```

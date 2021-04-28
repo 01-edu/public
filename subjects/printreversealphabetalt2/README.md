@@ -14,9 +14,8 @@ Please note that `casting` is not allowed for this exercise!
 ### Usage
 
 ```console
-student@ubuntu:~/printreversealphabetalt2$ go build
-student@ubuntu:~/printreversealphabetalt2$ ./printreversealphabetalt2
+$ go run .
 ZyXwVuTsRqPoNmLkJiHgFeDcBa
 AbCdEfGhIjKlMnOpQrStUvWxYz
-student@ubuntu:~/printreversealphabetalt2$
+$
 ```

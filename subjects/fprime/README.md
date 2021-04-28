@@ -11,19 +11,18 @@ Write a program that takes a positive `int` and displays its prime factors, foll
 ### Usage
 
 ```console
-student@ubuntu:~/fprime/test$ go build
-student@ubuntu:~/fprime/test$ ./test 225225
+$ go run . 225225
 3*3*5*5*7*11*13
-student@ubuntu:~/fprime/test$ ./test 8333325
+$ go run . 8333325
 3*3*5*5*7*11*13*37
-student@ubuntu:~/fprime/test$ ./test 9539
+$ go run . 9539
 9539
-student@ubuntu:~/fprime/test$ ./test 804577
+$ go run . 804577
 804577
-student@ubuntu:~/fprime/test$ ./test 42
+$ go run . 42
 2*3*7
-student@ubuntu:~/fprime/test$ ./test a
-student@ubuntu:~/fprime/test$ ./test 0
-student@ubuntu:~/fprime/test$ ./test 1
-student@ubuntu:~/fprime/test$
+$ go run . a
+$ go run . 0
+$ go run . 1
+$
 ```

@@ -13,14 +13,13 @@ Write a program that takes a `string` and displays its last word, followed by a 
 ### Usage
 
 ```console
-student@ubuntu:~/lastword$ go build
-student@ubuntu:~/lastword$ ./lastword "FOR PONY" | cat -e
+$ go run . "FOR PONY" | cat -e
 PONY$
-student@ubuntu:~/lastword$ ./lastword "this        ...       is sparta, then again, maybe    not" | cat -e
+$ go run . "this        ...       is sparta, then again, maybe    not" | cat -e
 not$
-student@ubuntu:~/lastword$ ./lastword "  "
-student@ubuntu:~/lastword$ ./lastword "a" "b"
-student@ubuntu:~/lastword$ ./lastword "  lorem,ipsum  " | cat -e
+$ go run . "  "
+$ go run . "a" "b"
+$ go run . "  lorem,ipsum  " | cat -e
 lorem,ipsum$
-student@ubuntu:~/lastword$
+$
 ```

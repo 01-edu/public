@@ -10,15 +10,14 @@ Write a program that takes a positive (or zero) number expressed in base 10, and
 ### Usage
 
 ```console
-student@ubuntu:~/printhex/test$ go build
-student@ubuntu:~/printhex/test$ ./test 10
+$ go run . 10
 a
-student@ubuntu:~/printhex/test$ ./test 255
+$ go run . 255
 ff
-student@ubuntu:~/printhex/test$ ./test 5156454
+$ go run . 5156454
 4eae66
-student@ubuntu:~/printhex/test$ ./test
-student@ubuntu:~/printhex/test$ ./test "123 132 1" | cat -e
+$ go run .
+$ go run . "123 132 1" | cat -e
 ERROR$
-student@ubuntu:~/printhex/test$
+$
 ```

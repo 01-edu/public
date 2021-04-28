@@ -32,11 +32,10 @@ func main() {
 And its output :
 
 ```console
-student@ubuntu:~/printwordstables/test$ go build main.go
-student@ubuntu:~/printwordstables/test$ ./main
+$ go run .
 Hello
 how
 are
 you?
-student@ubuntu:~/printwordstables/test$
+$
 ```
