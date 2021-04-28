@@ -24,6 +24,7 @@ isc-dhcp-client
 isc-dhcp-common
 jq
 less
+libsdl2-dev
 linux-headers-generic
 linux-image-generic
 lm-sensors
