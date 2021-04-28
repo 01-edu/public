@@ -8,4 +8,4 @@ IFS='
 submitted=$(./student/hello.sh)
 expected=$(./solutions/hello.sh)
 
-diff <(echo "$submitted") <(echo "$expected")
+diff <(echo "$submitted") <(echo "$expected") | cat -t
