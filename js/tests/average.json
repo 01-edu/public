@@ -1,0 +1,30 @@
+[
+  {
+    "description": "basic with a single value",
+    "code": "equal(average([12]), 12)"
+  },
+  {
+    "description": "basic with multiple values",
+    "code": "equal(average([1, 1, 4]), 2)"
+  },
+  {
+    "description": "Test with negative numbers",
+    "code": "equal(average([6, 3, -3]), 2)"
+  },
+  {
+    "description": "Test with a bigger array",
+    "code": "equal(average([1, 4, 8, 12]), 6.25)"
+  },
+  {
+    "description": "Test with 0 values",
+    "code": "equal(average([]), NaN)"
+  },
+  {
+    "description": "Test with a negative result",
+    "code": "equal(average([-12, 2, -32]), -14)"
+  },
+  {
+    "description": "Anti Cheesing",
+    "code": "if (/[1-9]/.test(average)) {\n  throw Error('You should not need numbers from 1 to 9')\n}"
+  }
+]

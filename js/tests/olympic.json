@@ -1,0 +1,22 @@
+[
+  {
+    "description": "Should log the gold medal if the Pedro is ranked 1st",
+    "code": "let athletes = ['Pedro', 'Janine', 'Patrick', 'Bernadette', 'Maria']\nconst args = saveArguments(console, 'log')\n\n// Your code\n\nequal(args.flat(), ['🥇'])"
+  },
+  {
+    "description": "Should log the silver medal if the Pedro is ranked 2nd",
+    "code": "let athletes = ['Janine', 'Pedro', 'Patrick', 'Bernadette', 'Maria']\nconst args = saveArguments(console, 'log')\n\n// Your code\n\nequal(args.flat(), ['🥈'])"
+  },
+  {
+    "description": "Should log the bronze medal if the Pedro is ranked 3rd",
+    "code": "let athletes = ['Maria', 'Janine', 'Pedro', 'Bernadette', 'Patrick']\nconst args = saveArguments(console, 'log')\n\n// Your code\n\nequal(args.flat(), ['🥉'])"
+  },
+  {
+    "description": "Should log 😞 if Pedro is 4th place or more",
+    "code": "let athletes = ['Maria', 'Janine', 'Bernadette', 'Patrick', 'Pedro']\nconst args = saveArguments(console, 'log')\n\n// Your code\n\nequal(args[0]?.join(' '), '😞 Pedro is #5')"
+  },
+  {
+    "description": "Should log 😞 if Pedro is 4th place or more",
+    "code": "let athletes = [\n  'Maria',\n  'Martin',\n  'Janine',\n  'Bernadette',\n  'Jeremy',\n  'Sabrina',\n  'Kilian',\n  'Patrick',\n  'Pedro',\n  'Seb',\n]\nconst args = saveArguments(console, 'log')\n\n// Your code\n\nequal(args[0]?.join(' '), '😞 Pedro is #9')"
+  }
+]

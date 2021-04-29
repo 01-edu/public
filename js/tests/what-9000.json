@@ -1,0 +1,18 @@
+[
+  {
+    "description": "powerlevel is defined and is a constant number",
+    "code": "let name = 'Patrick'\n\n// Your code\n\nequal(typeof powerlevel, 'number')"
+  },
+  {
+    "description": "powerlevel is a constant variable and can not be changed",
+    "code": "let name = 'Patrick'\n\n// Your code\ntry {\n  var previousValue = powerlevel\n  powerlevel = Math.random()\n} catch (err) {}\n\nequal(powerlevel, previousValue)"
+  },
+  {
+    "description": "Vegeta can not have more than 9000 powerlevel",
+    "code": "let name = 'Vegeta'\n\n// Your code\n\nequal(powerlevel <= 9000, true)"
+  },
+  {
+    "description": "Goku have more than 9000 powerlevel",
+    "code": "let name = 'Goku'\n\n// Your code\n\nequal(powerlevel > 9000, true)"
+  }
+]

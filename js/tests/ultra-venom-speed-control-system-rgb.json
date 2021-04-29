@@ -1,0 +1,18 @@
+[
+  {
+    "description": "If the temperature is above 90 expect 3200 RPM",
+    "code": "let temperature = 99\n\n// Your code\n\nequal(fanSpeed, 3200)"
+  },
+  {
+    "description": "If the temperature is above 90 expect 3200 RPM",
+    "code": "let temperature = 75\n\n// Your code\n\nequal(fanSpeed, 1600)"
+  },
+  {
+    "description": "If the temperature is above 40 expect 800 RPM",
+    "code": "let temperature = 62\n\n// Your code\n\nequal(fanSpeed, 800)"
+  },
+  {
+    "description": "If the temperature is below 40 expect 0 RPM",
+    "code": "let temperature = 32\n\n// Your code\n\nequal(fanSpeed, 0)"
+  }
+]

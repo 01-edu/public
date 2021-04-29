@@ -1,0 +1,22 @@
+[
+  {
+    "description": "giveBack is declared and is a function",
+    "code": "equal(typeof giveBack, 'function')"
+  },
+  {
+    "description": "calling giveBack return a function",
+    "code": "equal(typeof giveBack(), 'function')"
+  },
+  {
+    "description": "giveBack works with numbers",
+    "code": "equal(giveBack(5)(), 5)"
+  },
+  {
+    "description": "giveBack works with strings",
+    "code": "equal(giveBack('hello')(), 'hello')"
+  },
+  {
+    "description": "giveBack works with undefined",
+    "code": "equal(giveBack()(), undefined)"
+  }
+]

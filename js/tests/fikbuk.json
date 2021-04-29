@@ -1,0 +1,22 @@
+[
+  {
+    "description": "fikBuk until 3",
+    "code": "equal(fikBuk(3), [1, 2, 'Fik'])"
+  },
+  {
+    "description": "fikBuk until 5",
+    "code": "equal(fikBuk(5), [1, 2, 'Fik', 4, 'Buk'])"
+  },
+  {
+    "description": "fikBuk until 20",
+    "code": "equal(fikBuk(20), [\n  1,\n  2,\n  'Fik',\n  4,\n  'Buk',\n  'Fik',\n  7,\n  8,\n  'Fik',\n  'Buk',\n  11,\n  'Fik',\n  13,\n  14,\n  'FikBuk',\n  16,\n  17,\n  'Fik',\n  19,\n  'Buk',\n])"
+  },
+  {
+    "description": "fikBuk until 10000",
+    "code": "equal(fikBuk(10000).slice(9990), [\n  9991,\n  9992,\n  'Fik',\n  9994,\n  'Buk',\n  'Fik',\n  9997,\n  9998,\n  'Fik',\n  'Buk',\n])"
+  },
+  {
+    "description": "Anti Cheesing",
+    "code": "if (/(0|2|4|[6-9])/.test(fikBuk)) {\n  throw Error('You should only need numbers 3, 5 and maybe 1')\n}"
+  }
+]

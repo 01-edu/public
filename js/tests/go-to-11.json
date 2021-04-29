@@ -1,0 +1,14 @@
+[
+  {
+    "description": "Count from 0 to 11",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\ngoTo11(0)\n\nequal(\n  args.flat().join('\\n'),\n  `0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11`,\n)"
+  },
+  {
+    "description": "Count from 0 to 11",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\ngoTo11(10)\n\nequal(\n  args.flat().join('\\n'),\n  `10\n11`,\n)"
+  },
+  {
+    "description": "Count from 12 to 11 (do nothing)",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\ngoTo11(12)\n\nequal(args.flat().join('\\n'), ``)"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "description": "Test 1",
+    "code": "equal(extreme([-1, 0, 10, 5]), { bigest: 10, smallest: -1 })"
+  },
+  {
+    "description": "Test 2",
+    "code": "equal(extreme([22, 7, 32, 99, 54]), { bigest: 99, smallest: 7 })"
+  },
+  {
+    "description": "Test 3",
+    "code": "equal(extreme([-5, -22, -7, -32, -99, -54]), { bigest: -5, smallest: -99 })"
+  },
+  {
+    "description": "Test 4",
+    "code": "equal(extreme([-5, Infinity, -Infinity, -32, -99, -54]), {\n  bigest: Infinity,\n  smallest: -Infinity,\n})"
+  },
+  {
+    "description": "Test 5",
+    "code": "equal(extreme([1337]), { bigest: 1337, smallest: 1337 })"
+  },
+  {
+    "description": "Test 6",
+    "code": "equal(extreme([Infinity]), { bigest: Infinity, smallest: Infinity })"
+  },
+  {
+    "description": "Anti Cheesing",
+    "code": "if (/[0-9]/.test(extreme)) {\n  throw Error('You should not need numbers')\n}"
+  }
+]

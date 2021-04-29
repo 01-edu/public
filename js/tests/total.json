@@ -1,0 +1,30 @@
+[
+  {
+    "description": "basic with a single value",
+    "code": "equal(total([12]), 12)"
+  },
+  {
+    "description": "basic with multiple values",
+    "code": "equal(total([1, 1, 3]), 5)"
+  },
+  {
+    "description": "Test with negative numbers",
+    "code": "equal(total([6, 2, -3]), 5)"
+  },
+  {
+    "description": "Test with a bigger array",
+    "code": "equal(total([1, 2, 2, 8, 12]), 25)"
+  },
+  {
+    "description": "Test with 0 values",
+    "code": "equal(total([]), 0)"
+  },
+  {
+    "description": "Test with a negative result",
+    "code": "equal(total([-12, 2, -32]), -42)"
+  },
+  {
+    "description": "Anti Cheesing",
+    "code": "if (/[1-9]/.test(total)) {\n  throw Error('You should not need numbers from 1 to 9')\n}"
+  }
+]

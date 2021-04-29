@@ -1,0 +1,6 @@
+[
+  {
+    "description": "exec execute the given function",
+    "code": "let count = 0\nexec(() => {})\nexec(() => count++)\nexec(() => {})\nexec(() => count++)\nequal(count, 2)"
+  }
+]

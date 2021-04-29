@@ -1,0 +1,26 @@
+[
+  {
+    "description": "from 0 to 5",
+    "code": "equal(range(0, 5), [0, 1, 2, 3, 4])"
+  },
+  {
+    "description": "from 5 to 0",
+    "code": "equal(range(5, 0), [5, 4, 3, 2, 1])"
+  },
+  {
+    "description": "from -1 to -3",
+    "code": "equal(range(-1, -3), [-1, -2])"
+  },
+  {
+    "description": "from 2 to -3",
+    "code": "equal(range(10, 7), [10, 9, 8])"
+  },
+  {
+    "description": "if the end is equal to the start, return an empty array",
+    "code": "equal(range(5, 5), [])"
+  },
+  {
+    "description": "Anti Cheesing",
+    "code": "if (/[2-9]/.test(range)) {\n  throw Error('You should not use number from 2 to 9')\n}"
+  }
+]

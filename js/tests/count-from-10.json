@@ -1,0 +1,22 @@
+[
+  {
+    "description": "Count up to 12",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nfrom10(12)\nequal(\n  args.flat().join('\\n'),\n  `10\n11\n12`,\n)"
+  },
+  {
+    "description": "Count up to 17",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nfrom10(17)\nequal(\n  args.flat().join('\\n'),\n  `10\n11\n12\n13\n14\n15\n16\n17`,\n)"
+  },
+  {
+    "description": "Count down to 7",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nfrom10(7)\nequal(\n  args.flat().join('\\n'),\n  `10\n9\n8\n7`,\n)"
+  },
+  {
+    "description": "Count down to 3",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nfrom10(-3)\nequal(\n  args.flat().join('\\n'),\n  `10\n9\n8\n7\n6\n5\n4\n3\n2\n1\n0\n-1\n-2\n-3`,\n)"
+  },
+  {
+    "description": "Count to 10",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nfrom10(10)\nequal(args.flat().join('\\n'), '10')"
+  }
+]
