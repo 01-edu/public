@@ -111,15 +111,27 @@ const runInlineTests = async ({ json, name }) => {
   const solution = await loadAndSanitizeSolution(name)
   for (const { description, code } of JSON.parse(json)) {
     logs.length = 0
+    const [provided, tests] = code.includes('// Your code')
+      ? code.split('// Your code')
+      : ['', code]
+
+    const fullCode = `
+${provided ? '// Provided setup' : ''}
+${provided.trim()}
+
+// Your code
+${solution.code.trim()}
+
+// The tests
+${tests.trim()}`.trim()
+
     try {
-      eval(
-        code.includes('// Your code')
-          ? code.replace('// Your code', solution.code)
-          : `${solution.code}\n\n${code}`,
-      )
-      console.info(`${description}:`, '\u001b[32mPASS\u001b[0m')
+      eval(fullCode)
+      console.info(`${description}:`, 'PASS')
     } catch (err) {
-      console.info(`${description}:`, '\u001b[31mFAIL\u001b[0m')
+      console.info(`${description}:`, 'FAIL')
+      console.info(`\n======= Code ======= \n${fullCode}`)
+      console.info('\n======= Error ======')
       die(' ->', err.message)
     }
   }
