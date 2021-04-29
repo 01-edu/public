@@ -1,8 +1,8 @@
 ## You pass butter
 
-### Return value
+### Return values
 
-We are now going to see how to declare a function that returns an argument.
+We are now going to see how to declare a function that returns a value.
 
 Let's say we declare the variable `ten` the following way.
 
@@ -11,11 +11,9 @@ let ten = 5 + 5
 console.log(ten) // 10
 ```
 
-We could replace those `5` with a very simple function that `returns` this
-result. Let's call this function `returnsFive`. Let's not put any arguments in
-this function to keep it very basic. The only new concept is the `return`
-keyword. This keyword will return the specified value **and** end the function
-execution.
+We could replace those `5` with a function that `returns` this value. Let's call
+this function `returnsFive`. The only new concept is the `return` keyword. It
+returns the specified value **and** stop the function execution.
 
 ```js
 let returnsFive = () => {
@@ -33,16 +31,16 @@ console.log(ten) // 10
 ```
 
 Now a question that you might ask yourself is: What if we had several `return`
-keywords in the same function? Well as mentioned before, the `return` also stops
-the function execution. So only the first `return` would matter. In fact that
-means that anything after the `return` would not be executed. Example:
+keywords in the same function ? Well as mentioned before, the `return` also
+stops the function execution. So only the first `return` would matter. In fact
+that means that anything after the `return` would not be executed. Example:
 
 ```js
 let returnsFive = () => {
-  return 5 //ONLY this return is executed. Everything else is forgoten.
+  return 5 // ONLY this return is executed. Everything else is ignored.
   return 10 // not executed (useless)
   return 'I am useless' // not executed either
-  console.log('I am also useless') //nor this one
+  console.log('I am also useless') // nor this one
 }
 let ten = returnsFive() + returnsFive()
 console.log(ten) // 10
@@ -50,12 +48,13 @@ console.log(ten) // 10
 ```
 
 As you may see, we get exactly the same result as the previous example.
-`returnsFive` only returns 5. :)
+`returnsFive` only returns `5`. :)
 
 ### Instructions
 
-As Rick's robot, you now know your purpose. (Remember? 'You pass butter.')
+As Rick's robot, you now know your purpose. (Remember ? `'You pass butter.'`)
 
-Define the function `passButter` that returns `The butter`.
+Define the function `passButter` that returns the string `'The butter'`.
 
-![robot](https://media.discordapp.net/attachments/489466992286498816/828181031991377930/butter-disapointed.png?width=717&height=241)
+![robot](https://media.discordapp.net/attachments/489466992286498816/828181031991377930/butter-disapointed.png
+?width=717&height=241)

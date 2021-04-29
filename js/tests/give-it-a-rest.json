@@ -1,22 +1,26 @@
 [
   {
-    "description": "addAll, subAll, multAll and divAll are defined and are functions",
-    "code": "if (typeof addAll === 'undefined') {\n  throw Error(\n    `You didn't even define the function addAll... make it better! reread the lesson...`,\n  )\n}\nif (typeof addAll != 'function') {\n  throw Error('addAll must be a function')\n}\n\nif (typeof subAll === 'undefined') {\n  throw Error(\n    `You didn't even define the function subAll... make it better! reread the lesson...`,\n  )\n}\nif (typeof subAll != 'function') {\n  throw Error('subAll must be a function')\n}\n\nif (typeof multAll === 'undefined') {\n  throw Error(\n    `You didn't even define the function multAll... make it better! reread the lesson...`,\n  )\n}\nif (typeof multAll != 'function') {\n  throw Error('multAll must be a function')\n}\n\nif (typeof divAll === 'undefined') {\n  throw Error(\n    `You didn't even define the function divAll... make it better! reread the lesson...`,\n  )\n}\nif (typeof divAll != 'function') {\n  throw Error('divAll must be a function')\n}"
+    "description": "countArgs is defined and are functions",
+    "code": "equal(typeof countArgs, 'function')"
   },
   {
-    "description": "addAll returns the right results",
-    "code": "equal(addAll(1, 1), 2)\nequal(addAll(1, 2, 3), 6)\nequal(addAll(2, 2, 4, 10), 18)\nequal(addAll(2, 3, 3, 5, 5, 10), 28)"
+    "description": "countArgs returns the right results for 2 arguments",
+    "code": "equal(countArgs(1, 1), 2)"
   },
   {
-    "description": "subAll returns the right results",
-    "code": "equal(subAll(1, 1), 0)\nequal(subAll(2, 1, 1, -1), 1)\nequal(subAll(10, 3, 1, 4), 2)\nequal(subAll(11, 4, 1, 3, 3, 3), -3)"
+    "description": "countArgs returns the right results for 3 arguments",
+    "code": "equal(countArgs(1, 2, 3), 3)"
   },
   {
-    "description": "multAll returns the right results",
-    "code": "equal(multAll(1, 1), 1)\nequal(multAll(1, 2, 10), 20)\nequal(multAll(2, 2, 10, 10), 400)\nequal(multAll(2, 3, -2, 10, 10), -1200)"
+    "description": "countArgs returns the right results for 4 arguments",
+    "code": "equal(countArgs(2, 2, 4, 10), 4)"
   },
   {
-    "description": "divAll returns the right results",
-    "code": "equal(divAll(1, 1), 1)\nequal(divAll(2, 1, 1), 2)\nequal(divAll(100, 2, 2, 5), 5)\nequal(divAll(1000, 10, 5, 4, 1), 5)"
+    "description": "countArgs returns the right results for 6 arguments",
+    "code": "equal(countArgs(2, 3, 3, 5, 5, 10), 6)"
+  },
+  {
+    "description": "countArgs can count a lot of arguments",
+    "code": "equal(countArgs(...Array(999).fill()), 999)"
   }
 ]

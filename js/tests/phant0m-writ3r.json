@@ -18,5 +18,9 @@
   {
     "description": "Tests with 'caution'",
     "code": "let word = 'caution'\nconst args = saveArguments(console, 'log')\n\n// Your code\n\nequal(args[0], ['caution'])"
+  },
+  {
+    "description": "Tests with 'alegation'",
+    "code": "let word = 'alegation'\nconst args = saveArguments(console, 'log')\n\n// Your code\n\nequal(args, [])"
   }
 ]

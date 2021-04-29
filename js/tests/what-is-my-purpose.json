@@ -1,26 +1,22 @@
 [
   {
-    "description": "whatIsMyPurpose is defined and is a function",
-    "code": "let dialogue = {\n  myQuestion: 'What is my purpose?',\n  \"Rick's answer\": 'You pass butter.',\n}\n\n// Your code\n\nif (typeof whatIsMyPurpose === 'undefined') {\n  throw Error(\n    `You didn't even define the function whatIsMyPurpose... make it better! reread the lesson...`,\n  )\n}\n\nif (typeof whatIsMyPurpose != 'function') {\n  throw Error('whatIsMyPurpose must be a function')\n}"
+    "description": "ask is defined and is a function",
+    "code": "equal(typeof ask, 'function')"
   },
   {
-    "description": "theAnswer is defined and is a function",
-    "code": "let dialogue = {\n  myQuestion: 'What is my purpose?',\n  \"Rick's answer\": 'You pass butter.',\n}\n\n// Your code\n\nif (typeof theAnswer === 'undefined') {\n  throw Error(\n    `You didn't even define the function theAnswer... make it better! reread the lesson...`,\n  )\n}\n\nif (typeof theAnswer != 'function') {\n  throw Error('theAnswer must be a function')\n}"
+    "description": "reply is defined and is a function",
+    "code": "equal(typeof reply, 'function')"
   },
   {
-    "description": "whatIsMyPurpose has no arguments",
-    "code": "let dialogue = {\n  myQuestion: 'What is my purpose?',\n  \"Rick's answer\": 'You pass butter.',\n}\n\n// Your code\n\nif (whatIsMyPurpose.length > 0) {\n  throw Error('No arguments allowed for this function! You do not need them!')\n}"
+    "description": "ask works and is called",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nequal(args[0], ['What is my purpose ?'])"
   },
   {
-    "description": "theAnswer has no arguments",
-    "code": "let dialogue = {\n  myQuestion: 'What is my purpose?',\n  \"Rick's answer\": 'You pass butter.',\n}\n\n// Your code\n\nif (theAnswer.length > 0) {\n  throw Error('No arguments allowed for this function! You do not need them!')\n}"
+    "description": "reply works and is called too",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nequal(args, [['What is my purpose ?'], ['You pass butter.']])"
   },
   {
-    "description": "whatIsMyPurpose works and is called",
-    "code": "const args = saveArguments(console, 'log')\nlet dialogue = {\n  myQuestion: 'What is my purpose?',\n  \"Rick's answer\": 'You pass butter.',\n}\n\n// Your code\n\nwhatIsMyPurpose()\n\nconst loggedValues = args.flat().join(' ')\nif (!loggedValues.includes('What is my purpose?')) {\n  throw Error('you must log the value of the key: myQuestion')\n}\nconst functionCalls = args.flat().filter((el) => el === 'What is my purpose?')\n  .length\nif (functionCalls != 2) {\n  throw Error(`you must call the function whatIsMyPurpose once\"`)\n}"
-  },
-  {
-    "description": "theAnswer works and is called",
-    "code": "const args = saveArguments(console, 'log')\nlet dialogue = {\n  myQuestion: 'What is my purpose?',\n  \"Rick's answer\": 'You pass butter.',\n}\n\n// Your code\n\ntheAnswer()\n\nconst loggedValues = args.flat().join(' ')\nif (!loggedValues.includes('You pass butter.')) {\n  throw Error(`you must log the value of the key: \"Rick's answer\"`)\n}\nconst functionCalls = args.flat().filter((el) => el === 'You pass butter.')\n  .length\nif (functionCalls != 2) {\n  throw Error(`you must call the function theAnswer once\"`)\n}"
+    "description": "calling reply and ask again relog the text.",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nequal(args[1], ['You pass butter.'])"
   }
 ]

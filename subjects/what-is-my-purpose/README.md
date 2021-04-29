@@ -1,12 +1,10 @@
-## What is my purpose?
+## What is my purpose ?
 
 ![robot](https://cdn.discordapp.com/attachments/489466992286498816/828181029772197888/butter-purpose.png)
 
-### Remember Methods?
-
 You have seen how to call functions that were stored in object properties.
 
-Remember this example of function call?:
+Remember this example of function call ?
 
 ```js
 //       ↙ identifier, like variables
@@ -14,19 +12,19 @@ console.log('Hello There !') // <- function call happening here
 //          ↖ open paren + argument + close paren
 ```
 
-or these ones?:
+or these ones:
 
 ```js
 let roundedValue = Math.round(1.8) // another function call happening here
 console.log(roundedValue) // and another one here
 ```
 
-There, we saw how to call and use _"pre-declared"_ functions.
+There, we saw how to call and use _"built-in"_ functions.
 
 Here, now, we are going to learn how to declare our owns. This will gives us
 even more freedom to build our own logic.
 
-### Declaring a very basic function
+### Declaring a function
 
 We mentioned before that a function had to be either assigned to a variable or
 an object property.
@@ -34,7 +32,7 @@ an object property.
 We will now declare one in a variable. Let's call it: `myFirstFunction`.
 
 Once a variable is declared; Remember how an array can be recognized with this
-syntax : `[]`? or an object with this one : `{}` ?
+syntax : `[]` ? or an object with this one : `{}` ?
 
 Well, we will use another syntax for declaring our function. We will do so using
 the `ArrowFunctionExpression` syntax : `() => {}`
@@ -92,15 +90,10 @@ We actually used a function and gave it this single instruction:
 ### Instructions
 
 You are a robot made by a scientist called Rick and you want to know your
-purpose. We have declared the object `dialogue`. Declare **and call** a function
-named `whatIsMyPurpose`.
+purpose.
 
-- This function will display in the console the value of the key `myQuestion` in
-  the object `dialogue`.
+- Declare a function named `ask` that log `'What is my purpose ?'` in the
+  console
+- Declare a function named `reply` that log `'You pass butter.'` in the console
 
-Declare **and call** a function named `theAnswer`.
-
-- This function will display in the console the value of the key `Rick's answer`
-  in the object `dialogue`.
-
-Hint : Make sure your console is open if you want to see the actual answer :)
+Then first call the `ask` then the `reply` once, in that order.

@@ -1,22 +1,12 @@
 ## Two can play that game
 
-### Arguments (Continued)
+### More Arguments
 
 We have seen how to add one argument to the a function, We are now going to see
 how to add two (or more).
 
-Remember when `arg1` was added in the parens `()`?
-
-```js
-let myFirstFunction = (arg1) => {
-  console.log(arg1)
-}
-// Now we call the function
-myFirstFunction('using my first arg') // "using my first arg"
-```
-
-Well now, all we need to do to add a second argument `arg2` is to add a comma
-`,` after `arg1` and then add `arg2`.
+All we need to do to add a second argument `arg2` is to add a comma `,` after
+`arg1` and then add `arg2`.
 
 ```js
 let myFirstFunction = (arg1, arg2) => {
@@ -65,17 +55,17 @@ myFirstFunction('Europe', 'France', 'Paris', '30°C')
 
 ### Instructions
 
-You want to conquer the world! (of entertainment).
+You want to conquer the world! _(of entertainment)_.
 
 In this exercise you will have to declare the function `duos`.
 
 This function will take two arguments and will log them together with an `and`
-and a `!`
+and an `!`
 
-Example: If the `arg1` is `Batman` and `arg2` is `Robin`, the fonction should
-log : `Batman and Robin!`
+> Example: calling: `duos('Batman', 'Robin')` should log : `Batman and Robin !`
 
 You will then declare the function `duosWork`. This function will take three
-arguments and will log them togethers as in the example below. Example: If the
-`arg1` is `Batman`, the`arg2` is `Robin`, and the `arg3` is `protect Gotham`.
-the fonction should log : `Batman and Robin protect Gotham!`
+arguments and will log them togethers as in the example below.
+
+> Example: calling: `duosWork('Batman', 'Robin', 'protect Gotham')` should log :
+> `Batman and Robin protect Gotham !`

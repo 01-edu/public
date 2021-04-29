@@ -1,26 +1,26 @@
 [
   {
-    "description": "add2, sub2, mult2 and div2 are defined and are functions",
-    "code": "if (typeof add2 === 'undefined') {\n  throw Error(\n    `You didn't even define the function add2... make it better! reread the lesson...`,\n  )\n}\nif (typeof add2 != 'function') {\n  throw Error('add2 must be a function')\n}\n\nif (typeof sub2 === 'undefined') {\n  throw Error(\n    `You didn't even define the function sub2... make it better! reread the lesson...`,\n  )\n}\nif (typeof sub2 != 'function') {\n  throw Error('sub2 must be a function')\n}\n\nif (typeof mult2 === 'undefined') {\n  throw Error(\n    `You didn't even define the function mult2... make it better! reread the lesson...`,\n  )\n}\nif (typeof mult2 != 'function') {\n  throw Error('mult2 must be a function')\n}\n\nif (typeof div2 === 'undefined') {\n  throw Error(\n    `You didn't even define the function div2... make it better! reread the lesson...`,\n  )\n}\nif (typeof div2 != 'function') {\n  throw Error('div2 must be a function')\n}"
+    "description": "add2 is defined and are functions",
+    "code": "equal(typeof add2, 'function')"
   },
   {
-    "description": "add2, sub2, mult2 and div2 have 2 arguments",
-    "code": "if (add2.length != 2) {\n  throw Error('You need 2 arguments for this function!(add2)')\n}\nif (sub2.length != 2) {\n  throw Error('You need 2 arguments for this function!(sub2)')\n}\nif (mult2.length != 2) {\n  throw Error('You need 2 arguments for this function!(mult2)')\n}\nif (div2.length != 2) {\n  throw Error('You need 2 arguments for this function!(div2)')\n}"
+    "description": "add2 takes 2 arguments",
+    "code": "equal(add2.length, 2)"
   },
   {
     "description": "add2 returns the right results",
     "code": "equal(add2(1, 1), 2)\nequal(add2(1, 2), 3)\nequal(add2(2, 2), 4)\nequal(add2(2, 3), 5)"
   },
   {
+    "description": "sub2 is defined and are functions",
+    "code": "equal(typeof sub2, 'function')"
+  },
+  {
+    "description": "sub2 takes 2 arguments",
+    "code": "equal(sub2.length, 2)"
+  },
+  {
     "description": "sub2 returns the right results",
-    "code": "equal(sub2(1, 1), 0)\nequal(sub2(2, 1), 1)\nequal(sub2(3, 1), 2)\nequal(sub2(4, 1), 3)"
-  },
-  {
-    "description": "mult2 returns the right results",
-    "code": "equal(mult2(1, 1), 1)\nequal(mult2(1, 2), 2)\nequal(mult2(2, 2), 4)\nequal(mult2(2, 3), 6)"
-  },
-  {
-    "description": "div2 returns the right results",
-    "code": "equal(div2(1, 1), 1)\nequal(div2(2, 1), 2)\nequal(div2(2, 2), 1)\nequal(div2(6, 2), 3)"
+    "code": "equal(sub2(1, 1), 0)\nequal(sub2(2, 1), 1)\nequal(sub2(3, 1), 2)\nequal(sub2(-4, -7), 3)"
   }
 ]

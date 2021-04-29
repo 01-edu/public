@@ -1,6 +1,22 @@
 [
   {
-    "description": "Not implemented",
-    "code": "throw Error('oops')"
+    "description": "Weak candidates must stay on earth",
+    "code": "let candidate = { noFamily: true, physicalAptitudes: 5 }\nconst args = saveArguments(console, 'log')\n\n// Your code\n\nequal(args[0], ['earth'])"
+  },
+  {
+    "description": "Strong candadidates without families can go on mars",
+    "code": "let candidate = { noFamily: true, physicalAptitudes: 99 }\nconst args = saveArguments(console, 'log')\n\n// Your code\n\nequal(args[0], ['mars'])"
+  },
+  {
+    "description": "Strong candadidates with a family can go to the moon",
+    "code": "let candidate = { noFamily: false, physicalAptitudes: 87 }\nconst args = saveArguments(console, 'log')\n\n// Your code\n\nequal(args[0], ['moon'])"
+  },
+  {
+    "description": "Even barely strong enough candidates can make it",
+    "code": "let candidate = { noFamily: false, physicalAptitudes: 80 }\nconst args = saveArguments(console, 'log')\n\n// Your code\n\nequal(args[0], ['moon'])"
+  },
+  {
+    "description": "But almost strong enough candidates can not",
+    "code": "let candidate = { noFamily: true, physicalAptitudes: 79 }\nconst args = saveArguments(console, 'log')\n\n// Your code\n\nequal(args[0], ['earth'])"
   }
 ]

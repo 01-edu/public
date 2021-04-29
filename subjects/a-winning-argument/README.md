@@ -7,7 +7,7 @@ always in between parens `()`.
 
 Let's use the same examples that we used for function calls:
 
-Remember this example of function call?:
+Remember this example of function call ?
 
 ```js
 //       ↙ method
@@ -16,7 +16,7 @@ console.log('Hello There !') //<-
 //                   the argument of console.log()
 ```
 
-or these ones?:
+or these ones ?
 
 ```js
 let roundedValue = Math.round(1.8) // The number 1.8 is the arg
@@ -27,7 +27,7 @@ We are now going to adapt `myFirstFuntion` so that it takes one argument :
 `arg1`.
 
 ```js
-let myFirstFunction = (arg1) => {
+let myFirstFunction = arg1 => {
   //<-arg1 is inputed in between the parens
   console.log(arg1) // arg1 can be use inside the scope of the function
   //            ↖   arg1 is "transfered" to be the arg of console.log()
@@ -50,7 +50,7 @@ myFirstFunction('and another one') // "and another one"
 myFirstFunction('and one more') // "and one more"
 ```
 
-> waste no more time arguing about what a good man should be. Be one.
+> Waste no more time arguing about what a good person should be. Be one.
 >
 > - Marcus Aurelius
 

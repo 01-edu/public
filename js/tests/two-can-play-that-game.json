@@ -1,26 +1,26 @@
 [
   {
-    "description": "duos is a defined and is a function",
-    "code": "if (typeof duos === 'undefined') {\n  throw Error(\n    `You didn't even define the function duos... make it better! reread the lesson...`,\n  )\n}\n\nif (typeof duos != 'function') {\n  throw Error('duos must be a function')\n}"
+    "description": "duos is defined and is a function",
+    "code": "equal(typeof duos, 'function')"
   },
   {
-    "description": "duos has two arguments",
-    "code": "if (duos.length != 2) {\n  throw Error('You need two arguments for this function!')\n}"
+    "description": "duos takes two arguments",
+    "code": "equal(duos.length, 2)"
   },
   {
-    "description": "duos combines properly",
-    "code": "const args = saveArguments(console, 'log')\nlet combinations2 = [\n  ['Batman', 'Robin'],\n  ['Pinky', 'The Brain'],\n  ['Bonnie', 'Clyde'],\n  ['Mr.', 'Mrs.Smith'],\n]\n\n// Your code\n\ncombinations2.map((el) => duos(el[0], el[1]))\n\nconst loggedValues = args.flat().join(' ')\nif (!loggedValues.includes('Batman and Robin!')) {\n  throw Error(`duos('Batman', 'Robin') is not combining: Batman and Robin!`)\n}\nif (!loggedValues.includes('Pinky and The Brain!')) {\n  throw Error(\n    `duos('Pinky', 'The Brain') is not combining: Pinky and The Brain!`,\n  )\n}\nif (!loggedValues.includes('Bonnie and Clyde!')) {\n  throw Error(`duos('Bonnie', 'Clyde') is not combining: Bonnie and Clyde!`)\n}\nif (!loggedValues.includes('Mr. and Mrs.Smith!')) {\n  throw Error(`duos('Mr.', 'Mrs.Smith') is not combining: Mr. and Mrs.Smith!`)\n}"
+    "description": "duos logs the expected result",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nduos('Batman', 'Robin')\nduos('Pinky', 'The Brain')\nduos('Bonnie', 'Clyde')\nduos('Mr.', 'Mrs.Smith')\n\nequal(\n  args.map(arg => arg.join(' ')),\n  [\n    'Batman and Robin !',\n    'Pinky and The Brain !',\n    'Bonnie and Clyde !',\n    'Mr. and Mrs.Smith !',\n  ],\n)"
   },
   {
-    "description": "duosWork is a defined and is a function",
-    "code": "if (typeof duosWork === 'undefined') {\n  throw Error(\n    `You didn't even define the function duosWork... make it better! reread the lesson...`,\n  )\n}\n\nif (typeof duosWork != 'function') {\n  throw Error('duosWork must be a function')\n}"
+    "description": "duosWork is defined and is a function",
+    "code": "equal(typeof duosWork, 'function')"
   },
   {
-    "description": "duosWork has three arguments",
-    "code": "if (duosWork.length != 3) {\n  throw Error('You need three arguments for this function!')\n}"
+    "description": "duosWork takes three arguments",
+    "code": "equal(duosWork.length, 3)"
   },
   {
-    "description": "duosWork combines properly",
-    "code": "const args = saveArguments(console, 'log')\nlet combinations3 = [\n  ['Batman', 'Robin', 'protect Gotham'],\n  ['Pinky', 'The Brain', 'want to conquer the world'],\n  ['Bonnie', 'Clyde', 'escape the Police'],\n  ['Mr.', 'Mrs.Smith', 'are the greatest spy couple'],\n]\n\n// Your code\n\ncombinations3.map((el) => duosWork(el[0], el[1], el[2]))\n\nconst loggedValues = args.flat().join(' ')\nif (!loggedValues.includes('Batman and Robin protect Gotham!')) {\n  throw Error(\n    `duosWork('Batman', 'Robin', 'protect Gotham') is not combining: Batman and Robin protect Gotham!`,\n  )\n}\nif (!loggedValues.includes('Pinky and The Brain want to conquer the world!')) {\n  throw Error(\n    `duosWork('Pinky', 'The Brain', 'want to conquer the world') is not combining: Pinky and The Brain want to conquer the world!`,\n  )\n}\nif (!loggedValues.includes('Bonnie and Clyde escape the Police!')) {\n  throw Error(\n    `duosWork('Bonnie', 'Clyde', 'escape the Police') is not combining: Bonnie and Clyde escape the Police!`,\n  )\n}\nif (!loggedValues.includes('Mr. and Mrs.Smith are the greatest spy couple!')) {\n  throw Error(\n    `duosWork('Mr.', 'Mrs.Smith', 'are the greatest spy couple') is not combining: Mr. and Mrs.Smith are the geatest spy couple!`,\n  )\n}"
+    "description": "duosWork logs the expected result",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nduosWork('Batman', 'Robin', 'protect Gotham')\nduosWork('Pinky', 'The Brain', 'want to conquer the world')\nduosWork('Bonnie', 'Clyde', 'escape the Police')\nduosWork('Mr.', 'Mrs.Smith', 'are the greatest spy couple')\n\nequal(\n  args.map(arg => arg.join(' ')),\n  [\n    'Batman and Robin protect Gotham !',\n    'Pinky and The Brain want to conquer the world !',\n    'Bonnie and Clyde escape the Police !',\n    'Mr. and Mrs.Smith are the greatest spy couple !',\n  ],\n)"
   }
 ]

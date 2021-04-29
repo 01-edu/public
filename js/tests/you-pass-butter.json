@@ -1,14 +1,14 @@
 [
   {
-    "description": "passButter is a defined and is a function",
-    "code": "if (typeof passButter === 'undefined') {\n  throw Error(\n    `You didn't even define the function passButter... make it better! reread the lesson...`,\n  )\n}\n\nif (typeof passButter != 'function') {\n  throw Error('passButter must be a function')\n}"
-  },
-  {
-    "description": "passButter has no arguments",
-    "code": "if (passButter.length != 0) {\n  throw Error('You need no arguments for this function!')\n}"
+    "description": "passButter is defined and is a function",
+    "code": "equal(typeof passButter, 'function')"
   },
   {
     "description": "passButter returns The butter properly",
-    "code": "// Your code\n\nlet theTable = passButter()\n\nif (theTable != 'The butter') {\n  throw Error(`passButter() did not return 'The butter'`)\n}"
+    "code": "equal(passButter(), 'The butter')"
+  },
+  {
+    "description": "calling passButter mulitple time should always return the butter",
+    "code": "equal(\n  [passButter(), passButter(), passButter()],\n  ['The butter', 'The butter', 'The butter'],\n)"
   }
 ]

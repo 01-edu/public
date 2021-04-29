@@ -49,5 +49,3 @@ Define the functions :
 
 - `add2` which adds two arguments and returns the result.
 - `sub2` which substract two arguments and returns the result.
-- `mult2` which substract two arguments and returns the result.
-- `div2` which divides two arguments and returns the result.
