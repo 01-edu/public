@@ -42,12 +42,21 @@ Now my array look like this:
 
 - You must replace the third element of the provided `replaceMe` array by the
   string `'great'`
+
+Example:
+
+```js
+let replaceMe = ['pif','paf','pom']
+//    expect -> ['pif','paf','great']
+```
+
 - You must swap the first and second element of the provided `swapMe` array.
 
 Example:
 
 ```js
-['pif','paf','pom'] -> ['paf','pif','pom'] // last element is untouched
+let swapMe = ['pif','paf','pom']
+// expect -> ['paf','pif','pom'] (last element is untouched)
 ```
 
 > You must modify the `swapMe` array, not create a new one !
