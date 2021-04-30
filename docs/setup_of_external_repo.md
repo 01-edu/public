@@ -68,7 +68,7 @@ The container runs with the following settings (options of `docker run`) :
   - Working directory inside the container
 - `--tmpfs /jail:size=100M,noatime,exec,nodev,nosuid,uid=1000,gid=1000,nr_inodes=5k,mode=1700`
   - Mount a tmpfs directory on `/jail`, 100 MB writable.
-- `--volume volume_containing_student_repository:/jail/student`
+- `--volume volume_containing_student_repository:/jail/student:ro`
   - Bind mount a volume containing the student repository.
 
 Example of a [Dockerfile](https://github.com/01-edu/public/blob/master/js/tests/Dockerfile) and its [entrypoint](https://github.com/01-edu/public/blob/master/js/tests/entrypoint.sh).
