@@ -40,28 +40,28 @@ The file system provided, [here](https://assets.01-edu.org/system-monitor/system
 $ tree system-monitor
 ├── header.h
 ├── imgui                                 // <-- ImGui APIs
-│   └── lib
-│       ├── backend                       // <-- ImGui backend
-│       │   ├── imgui_impl_opengl3.cpp
-│       │   ├── imgui_impl_opengl3.h
-│       │   ├── imgui_impl_sdl.cpp
-│       │   └── imgui_impl_sdl.h
-│       ├── gl3w
-│       │   └── GL
-│       │       ├── gl3w.c
-│       │       ├── gl3w.h
-│       │       └── glcorearb.h
-│       ├── imconfig.h
-│       ├── imgui.cpp
-│       ├── imgui_demo.cpp
-│       ├── imgui_draw.cpp
-│       ├── imgui.h
-│       ├── imgui_internal.h
-│       ├── imgui_tables.cpp
-│       ├── imgui_widgets.cpp
-│       ├── imstb_rectpack.h
-│       ├── imstb_textedit.h
-│       └── imstb_truetype.h
+│   └── lib
+│       ├── backend                       // <-- ImGui backend
+│       │   ├── imgui_impl_opengl3.cpp
+│       │   ├── imgui_impl_opengl3.h
+│       │   ├── imgui_impl_sdl.cpp
+│       │   └── imgui_impl_sdl.h
+│       ├── gl3w
+│       │   └── GL
+│       │       ├── gl3w.c
+│       │       ├── gl3w.h
+│       │       └── glcorearb.h
+│       ├── imconfig.h
+│       ├── imgui.cpp
+│       ├── imgui_demo.cpp
+│       ├── imgui_draw.cpp
+│       ├── imgui.h
+│       ├── imgui_internal.h
+│       ├── imgui_tables.cpp
+│       ├── imgui_widgets.cpp
+│       ├── imstb_rectpack.h
+│       ├── imstb_textedit.h
+│       └── imstb_truetype.h
 ├── main.cpp                             // <-- main file, where the application will
 ├── Makefile                             //     render (main loop)
 ├── mem.cpp                              // <-- memory resources and processes information

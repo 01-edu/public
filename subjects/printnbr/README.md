@@ -22,7 +22,7 @@ Here is a possible program to test your function :
 package main
 
 import (
-	piscine ".."
+	"piscine"
 	"github.com/01-edu/z01"
 )
 func main() {

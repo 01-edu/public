@@ -27,7 +27,7 @@ package main
 
 import (
 	"fmt"
-	piscine ".."
+	"piscine"
 )
 
 func main() {

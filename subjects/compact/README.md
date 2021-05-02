@@ -27,7 +27,7 @@ package main
 import (
 	"fmt"
 
-	piscine ".."
+	"piscine"
 )
 
 const N = 6

@@ -19,7 +19,7 @@ Here is a possible program to test your function :
 ```go
 package main
 
-import piscine ".."
+import "piscine"
 
 func main() {
 	piscine.IsNegative(1)

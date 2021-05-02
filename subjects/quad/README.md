@@ -27,7 +27,7 @@ Program #1
 ```go
 package main
 
-import piscine ".."
+import "piscine"
 
 func main() {
 	piscine.QuadA(5,3)
@@ -49,7 +49,7 @@ Program #2
 ```go
 package main
 
-import piscine ".."
+import "piscine"
 
 func main() {
 	piscine.QuadA(5,1)
@@ -69,7 +69,7 @@ Program #3
 ```go
 package main
 
-import piscine ".."
+import "piscine"
 
 func main() {
 	piscine.QuadA(1,1)
@@ -89,7 +89,7 @@ Program #4
 ```go
 package main
 
-import piscine ".."
+import "piscine"
 
 func main() {
 	piscine.QuadA(1,5)
@@ -137,7 +137,7 @@ Program #1
 ```go
 package main
 
-import piscine ".."
+import "piscine"
 
 func main() {
 	piscine.QuadB(5,3)
@@ -159,7 +159,7 @@ Program #2
 ```go
 package main
 
-import piscine ".."
+import "piscine"
 
 func main() {
 	piscine.QuadB(5,1)
@@ -179,7 +179,7 @@ Program #3
 ```go
 package main
 
-import piscine ".."
+import "piscine"
 
 func main() {
 	piscine.QuadB(1,1)
@@ -199,7 +199,7 @@ Program #4
 ```go
 package main
 
-import piscine ".."
+import "piscine"
 
 func main() {
 	piscine.QuadB(1,5)
@@ -247,7 +247,7 @@ Program #1
 ```go
 package main
 
-import piscine ".."
+import "piscine"
 
 func main() {
 	piscine.QuadC(5,3)
@@ -269,7 +269,7 @@ Program #2
 ```go
 package main
 
-import piscine ".."
+import "piscine"
 
 func main() {
 	piscine.QuadC(5,1)
@@ -289,7 +289,7 @@ Program #3
 ```go
 package main
 
-import piscine ".."
+import "piscine"
 
 func main() {
 	piscine.QuadC(1,1)
@@ -309,7 +309,7 @@ Program #4
 ```go
 package main
 
-import piscine ".."
+import "piscine"
 
 func main() {
 	piscine.QuadC(1,5)
@@ -357,7 +357,7 @@ Program #1
 ```go
 package main
 
-import piscine ".."
+import "piscine"
 
 func main() {
 	piscine.QuadD(5,3)
@@ -379,7 +379,7 @@ Program #2
 ```go
 package main
 
-import piscine ".."
+import "piscine"
 
 func main() {
 	piscine.QuadD(5,1)
@@ -399,7 +399,7 @@ Program #3
 ```go
 package main
 
-import piscine ".."
+import "piscine"
 
 func main() {
 	piscine.QuadD(1,1)
@@ -419,7 +419,7 @@ Program #4
 ```go
 package main
 
-import piscine ".."
+import "piscine"
 
 func main() {
 	piscine.QuadD(1,5)
@@ -467,7 +467,7 @@ Program #1
 ```go
 package main
 
-import piscine ".."
+import "piscine"
 
 func main() {
 	piscine.QuadE(5,3)
@@ -489,7 +489,7 @@ Program #2
 ```go
 package main
 
-import piscine ".."
+import "piscine"
 
 func main() {
 	piscine.QuadE(5,1)
@@ -509,7 +509,7 @@ Program #3
 ```go
 package main
 
-import piscine ".."
+import "piscine"
 
 func main() {
 	piscine.QuadE(1,1)
@@ -529,7 +529,7 @@ Program #4
 ```go
 package main
 
-import piscine ".."
+import "piscine"
 
 func main() {
 	piscine.QuadE(1,5)

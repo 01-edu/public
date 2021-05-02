@@ -24,7 +24,7 @@ package main
 import (
 	"fmt"
 
-	piscine ".."
+	"piscine"
 )
 
 type List = piscine.List

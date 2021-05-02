@@ -30,15 +30,15 @@ A folder which you can find [here](https://assets.01-edu.org/atm-system/atm-syst
 .
 |
 ├── data
-│   ├── records.txt
-│   └── users.txt
+│   ├── records.txt
+│   └── users.txt
 ├── Makefile
 ├── README.md
 └── src
-    ├── auth.c
-    ├── header.h
-    ├── main.c
-    └── system.c
+    ├── auth.c
+    ├── header.h
+    ├── main.c
+    └── system.c
 ```
 
 The `data` folder presented above will contain information about the users and their accounts:

@@ -74,17 +74,17 @@ For this you must focus on a folder structure similar to this one:
 student$ tree .
 backend
 ├── pkg
-│   ├── db
-│   │   ├── migrations
-│   │   │   └── sqlite
-│   │   │       ├── 000001_create_users_table.down.sql
-│   │   │       ├── 000001_create_users_table.up.sql
-│   │   │       ├── 000002_create_posts_table.down.sql
-│   │   │       └── 000002_create_posts_table.up.sql
-│   │   └── sqlite
-│   |       └── sqlite.go
-|   |
-|   └── ...other_pkgs.go
+│   ├── db
+│   │   ├── migrations
+│   │   │   └── sqlite
+│   │   │       ├── 000001_create_users_table.down.sql
+│   │   │       ├── 000001_create_users_table.up.sql
+│   │   │       ├── 000002_create_posts_table.down.sql
+│   │   │       └── 000002_create_posts_table.up.sql
+│   │   └── sqlite
+│   |       └── sqlite.go
+|   |
+|   └── ...other_pkgs.go
 |
 └── server.go
 ```

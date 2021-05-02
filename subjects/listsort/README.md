@@ -29,7 +29,7 @@ package main
 import (
 	"fmt"
 
-	piscine ".."
+	"piscine"
 )
 
 func PrintList(l *piscine.NodeI) {

@@ -68,7 +68,7 @@ Here is a possible program to test your function :
 package main
 
 import (
-	piscine ".."
+	"piscine"
 	"fmt"
 )
 
