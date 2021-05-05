@@ -1,0 +1,10 @@
+[
+  {
+    "description": "Test 1",
+    "code": "equal(toSquares([1, 2, 3, 4]), [1, 4, 9, 16])"
+  },
+  {
+    "description": "Test 2",
+    "code": "equal(toSquares([10, 22, 3, 5, 16]), [100, 484, 9, 25, 256])"
+  }
+]

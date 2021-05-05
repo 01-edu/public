@@ -7,10 +7,10 @@ Now that we know how to define objects, let's start to use them
 Let's start with getting values from them. Well, turns out you already have been
 doing it a lot, remember `console.log` ?
 
-The `.` here is *accessing* the property `log` from the `console` object.
+The `.` here is _accessing_ the property `log` from the `console` object.
 
-Taking the previous example `transaction` object, we can access properties
-from it using `.` same way we got the `log` function:
+Taking the previous example `transaction` object, we can access properties from
+it using `.` same way we got the `log` function:
 
 ```js
 let transaction = {
@@ -23,9 +23,8 @@ console.log(transaction) // Will log the whole transaction
 console.log(transaction.amount) // will only log the amount of the transaction
 ```
 
-Accessing a property with `.` only give you it's value, and
-because it is a value you can use it like any other values:
-
+Accessing a property with `.` only give you it's value, and because it is a
+value you can use it like any other values:
 
 ```js
 let taxes = 1.2 // let's define 20% taxes

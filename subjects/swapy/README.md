@@ -46,7 +46,7 @@ Now my array look like this:
 Example:
 
 ```js
-let replaceMe = ['pif','paf','pom']
+let replaceMe = ['pif', 'paf', 'pom']
 //    expect -> ['pif','paf','great']
 ```
 
@@ -55,7 +55,7 @@ let replaceMe = ['pif','paf','pom']
 Example:
 
 ```js
-let swapMe = ['pif','paf','pom']
+let swapMe = ['pif', 'paf', 'pom']
 // expect -> ['paf','pif','pom'] (last element is untouched)
 ```
 

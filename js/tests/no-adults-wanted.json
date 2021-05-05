@@ -1,0 +1,14 @@
+[
+  {
+    "description": "If no values are lower than 18 we should get exactly the same result",
+    "code": "equal(childrenOnly([1, 2, 3]), [1, 2, 3])"
+  },
+  {
+    "description": "If some values are over or equal to 18 we should not have them in the result",
+    "code": "equal(childrenOnly([20, 1, 18, 2, 99, 18, 3]), [1, 2, 3])"
+  },
+  {
+    "description": "Confirm that it works with more values",
+    "code": "equal(childrenOnly([17, 20, 1, 18, 2, 99, 18, 3, 54, 43, 14, 24, 13]), [\n  17,\n  1,\n  2,\n  3,\n  14,\n  13,\n])"
+  }
+]

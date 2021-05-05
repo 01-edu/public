@@ -10,6 +10,12 @@ of all the characters in an alphabet:
 - Declare a `keepFirstLast` variable of the 3 first characters and 4 last
   characters from `alphabet`.
 
+> **Example:** if `alphabet` value is `'abcdefghijklmnopqrstuvwxyz'`
+>
+> - `keepFirst` must be `'abcdef'`
+> - `keepLast` must be `'tuvwxyz'`
+> - `keepFirstLast` must be `'abcwxyz'`
+
 ### Notions
 
-- [devdocs.io/javascript/global_objects/string/slice](https://devdocs.io/javascript/global_objects/string/slice)
+- [Slice](https://devdocs.io/javascript/global_objects/string/slice)

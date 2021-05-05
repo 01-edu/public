@@ -1,0 +1,18 @@
+[
+  {
+    "description": "Test 1",
+    "code": "equal(toJadenCase('there is no dress'), 'There Is No Dress')"
+  },
+  {
+    "description": "Test 2",
+    "code": "equal(\n  toJadenCase(\"skinny legend. Don't drink soda\"),\n  \"Skinny Legend. Don't Drink Soda\",\n)"
+  },
+  {
+    "description": "Test 3",
+    "code": "equal(\n  toJadenCase(\"how can mirrors be real if our eyes aren't real\"),\n  \"How Can Mirrors Be Real If Our Eyes Aren't Real\",\n)"
+  },
+  {
+    "description": "Test 4",
+    "code": "equal(\n  toJadenCase(\n    \"BIG MOOD. if I had a nickel for every time I've cried in the back of an UBER, I would have another pair of yeezy's.\",\n  ),\n  \"Big Mood. If I Had A Nickel For Every Time I've Cried In The Back Of An Uber, I Would Have Another Pair Of Yeezy's.\",\n)"
+  }
+]

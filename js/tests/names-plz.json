@@ -1,0 +1,14 @@
+[
+  {
+    "description": "Tests with some names",
+    "code": "equal(\n  namePlz([\n    { name: 'Aisha' },\n    { name: 'Zahra' },\n    { name: 'Hessa' },\n    { name: 'Noura' },\n    { name: 'Abdulkarim' },\n    { name: 'Muntaser' },\n    { name: 'Mehnaz' },\n  ]),\n  'Aisha, Zahra, Hessa, Noura, Abdulkarim, Muntaser, Mehnaz',\n)"
+  },
+  {
+    "description": "Tests with names of the example",
+    "code": "equal(\n  namePlz([\n    { name: 'Wasan' },\n    { name: 'Alanoud' },\n    { name: 'Salama' },\n    { name: 'Yousuf' },\n    { name: 'Maitha' },\n  ]),\n  'Wasan, Alanoud, Salama, Yousuf, Maitha',\n)"
+  },
+  {
+    "description": "Tests with an empty array",
+    "code": "equal(namePlz([]), '')"
+  }
+]

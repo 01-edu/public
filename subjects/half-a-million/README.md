@@ -44,10 +44,19 @@ variables:
 - a `vault` object
 - a `secret` string
 
-You must use the `secret` value as a key to access the matching value from the
-`vault` and assign it to a variable `loot`.
+Your goal is to steal the `secret` matching value from the `vault`.
 
-You must then replace the value from the vault by a message of your choice.
+Declare a variable `loot` and assign it's value using the variable `secret`
+value as a key to access the matching value from the `vault`.
+
+You must then replace the value from the vault's secret by a message of your
+choice.
+
+**Example**: if `vault` is `{ '53CR37-k0D3': '1/2 MM $' }` and `secret` is
+`'53CR37-k0D3'`:
+
+- `loot` should be `1/2 MM $`
+- `vaut` should be `{ '53CR37-k0D3': 'I stole your $$' }`
 
 > I sure hope you didn't do anything stupid, Jackie. \
 > ― Ray Nicolette

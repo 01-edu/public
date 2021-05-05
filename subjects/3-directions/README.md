@@ -43,6 +43,12 @@ access them and assign their values to variables:
 - a variable `kiss` of an array of 2 elements, the last and the first element of
   the `list`, in that order.
 
+**Example:** if `list` is `[1,2,3]`
+
+- `first` would be `1`
+- `last` would be `3`
+- `kiss` would be `[3, 1]`
+
 >     🧑‍🎤 ............ Oh, ........... 🧑‍🎤
 >     🎶 .. I wanna be last, yeah ... 🎶
 >     🎵 . Baby let me be your last . 🎵

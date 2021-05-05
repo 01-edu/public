@@ -16,8 +16,8 @@ let happy = (mood) => {
 let result1 = happy('happy')
 let result2 = happy('sad')
 
-console.log(result1) //true
-console.log(result2) //false
+console.log(result1) // true
+console.log(result2) // false
 ```
 
 Here we used the `if` statement, and two `return` keywords to alternate between

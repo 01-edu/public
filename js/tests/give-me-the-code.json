@@ -1,0 +1,14 @@
+[
+  {
+    "description": "Test with the example data",
+    "code": "equal(\n  jsFileOnly([\n    'essay.docx',\n    'index.html',\n    'info.txt',\n    'lib.js',\n    'README.md',\n    'script.js',\n  ]),\n  ['lib.js', 'script.js'],\n)"
+  },
+  {
+    "description": "Test with more data",
+    "code": "equal(\n  jsFileOnly([\n    '2021-05-03 10-20-34.mkv',\n    'app.js',\n    'app.min.js',\n    'com.debug',\n    'Component.jsx',\n    'config.yml',\n    'package.json',\n    'Pictures',\n    'service.log',\n  ]),\n  ['app.js', 'app.min.js'],\n)"
+  },
+  {
+    "description": "Test with a larger dataset",
+    "code": "equal(\n  jsFileOnly([\n    'LICENSE',\n    'README.md',\n    'api',\n    'api/auth.js',\n    'api/db.js',\n    'api/defs.js',\n    'api/router.js',\n    'api/server.js',\n    'app.jsx',\n    'component',\n    'component/elements.jsx',\n    'component/form.jsx',\n    'component/header.jsx',\n    'component/icons.jsx',\n    'data',\n    'data/ascii.js',\n    'data/discord.js',\n    'dev',\n    'dev/build.js',\n    'dev/ci.js',\n    'dev/deploy.js',\n    'dev/janus-discord.js',\n    'dev/janus-kv.js',\n    'dev/janus.js',\n    'dev/mocks.js',\n    'dev/request-runner.js',\n    'dev/server.js',\n    'dev/test-runner.js',\n    'dev/test_api_auth.js',\n    'dev/test_lib_eve.js',\n    'dev/test_lib_router.js',\n    'dev/utils.js',\n    'lib',\n    'lib/auth.js',\n    'lib/dom.js',\n    'lib/env.js',\n    'lib/eve.js',\n    'lib/hooks.js',\n    'lib/preact-shim-dev.js',\n    'lib/preact-shim.js',\n    'lib/router.js',\n    'lib/state.js',\n    'package-lock.json',\n    'package.json',\n    'page',\n    'page/home.jsx',\n    'page/profile.jsx',\n    'script',\n    'script/build.sh',\n    'script/deploy.sh',\n    'script/start.sh',\n    'script/test.sh',\n    'template',\n    'template/index.html',\n    'wrangler.toml',\n  ]),\n  [\n    'api/auth.js',\n    'api/db.js',\n    'api/defs.js',\n    'api/router.js',\n    'api/server.js',\n    'data/ascii.js',\n    'data/discord.js',\n    'dev/build.js',\n    'dev/ci.js',\n    'dev/deploy.js',\n    'dev/janus-discord.js',\n    'dev/janus-kv.js',\n    'dev/janus.js',\n    'dev/mocks.js',\n    'dev/request-runner.js',\n    'dev/server.js',\n    'dev/test-runner.js',\n    'dev/test_api_auth.js',\n    'dev/test_lib_eve.js',\n    'dev/test_lib_router.js',\n    'dev/utils.js',\n    'lib/auth.js',\n    'lib/dom.js',\n    'lib/env.js',\n    'lib/eve.js',\n    'lib/hooks.js',\n    'lib/preact-shim-dev.js',\n    'lib/preact-shim.js',\n    'lib/router.js',\n    'lib/state.js',\n  ],\n)"
+  }
+]

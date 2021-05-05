@@ -1,0 +1,18 @@
+[
+  {
+    "description": "Test 1",
+    "code": "equal(\n  scoreboard([\n    { name: 'Noura', duration: 235 },\n    { name: 'Maitha', duration: 927 },\n    { name: 'Muntaser', duration: 122 },\n  ]),\n  ['Noura, 235 seconds', 'Muntaser, 122 seconds'],\n)"
+  },
+  {
+    "description": "Test 2",
+    "code": "equal(\n  scoreboard([\n    { name: 'Ibrahim', duration: 237 },\n    { name: 'Mehnaz', duration: 567 },\n    { name: 'Alanoud', duration: 302 },\n    { name: 'Asmaa', duration: 1138 },\n    { name: 'maitha', duration: 891 },\n    { name: 'Shadha', duration: 967 },\n    { name: 'Sarah', duration: 524 },\n    { name: 'Mariam', duration: 499 },\n    { name: 'Alanoud', duration: 1137 },\n    { name: 'Abdulkarim', duration: 1170 },\n    { name: 'Hessa', duration: 411 },\n    { name: 'Hala', duration: 982 },\n    { name: 'Wasan', duration: 60 },\n    { name: 'Lina', duration: 1124 },\n    { name: 'Meriem', duration: 514 },\n  ]),\n  [\n    'Ibrahim, 237 seconds',\n    'Mehnaz, 567 seconds',\n    'Alanoud, 302 seconds',\n    'Sarah, 524 seconds',\n    'Mariam, 499 seconds',\n    'Hessa, 411 seconds',\n    'Wasan, 60 seconds',\n    'Meriem, 514 seconds',\n  ],\n)"
+  },
+  {
+    "description": "Test 3",
+    "code": "equal(\n  scoreboard([\n    { name: 'Clement', duration: 101 },\n    { name: 'Fady', duration: 3797 },\n    { name: 'Karim', duration: 1012 },\n    { name: 'Marie', duration: 374 },\n    { name: 'Yahya', duration: 120 },\n    { name: 'Jawaher', duration: 427 },\n    { name: 'Noor', duration: 1041 },\n    { name: 'Aaesha', duration: 860 },\n    { name: 'Haya', duration: 841 },\n    { name: 'Mahraalk', duration: 1112 },\n    { name: 'Hamda', duration: 621 },\n    { name: 'Rahimul', duration: 158 },\n    { name: 'Muntaser', duration: 354 },\n    { name: 'AM', duration: 1071 },\n    { name: 'Ali', duration: 1124 },\n  ]),\n  [\n    'Clement, 101 seconds',\n    'Marie, 374 seconds',\n    'Yahya, 120 seconds',\n    'Jawaher, 427 seconds',\n    'Hamda, 621 seconds',\n    'Rahimul, 158 seconds',\n    'Muntaser, 354 seconds',\n  ],\n)"
+  },
+  {
+    "description": "Test 4",
+    "code": "equal(\n  scoreboard([\n    { name: 'Fareaa', duration: 96 },\n    { name: 'Maitha', duration: 716 },\n    { name: 'aisha', duration: 222 },\n    { name: 'mariam', duration: 762 },\n    { name: 'Hessa', duration: 95 },\n    { name: 'shamma', duration: 133 },\n    { name: 'khadija', duration: 905 },\n    { name: 'Laila', duration: 143 },\n    { name: 'salma', duration: 885 },\n    { name: 'noura', duration: 249 },\n    { name: 'Mehnaz', duration: 48 },\n    { name: 'Mai', duration: 899 },\n    { name: 'Samira', duration: 1194 },\n    { name: 'Mibin', duration: 803 },\n    { name: 'Masood', duration: 17 },\n    { name: 'Salama', duration: 1093 },\n    { name: 'Mohammed', duration: 796 },\n    { name: 'Zahra', duration: 452 },\n    { name: 'Aisha', duration: 470 },\n    { name: 'Fatima', duration: 1032 },\n    { name: 'Tanzeel', duration: 770 },\n    { name: 'Wasan', duration: 594 },\n    { name: 'shaikha', duration: 703 },\n    { name: 'Mariam', duration: 97 },\n    { name: 'Hello', duration: 427 },\n    { name: 'Maitha', duration: 242 },\n    { name: 'Reem', duration: 144 },\n  ]),\n  [\n    'Fareaa, 96 seconds',\n    'Maitha, 716 seconds',\n    'aisha, 222 seconds',\n    'Hessa, 95 seconds',\n    'shamma, 133 seconds',\n    'Laila, 143 seconds',\n    'noura, 249 seconds',\n    'Mehnaz, 48 seconds',\n    'Masood, 17 seconds',\n    'Zahra, 452 seconds',\n    'Aisha, 470 seconds',\n    'Wasan, 594 seconds',\n    'shaikha, 703 seconds',\n    'Mariam, 97 seconds',\n    'Hello, 427 seconds',\n    'Maitha, 242 seconds',\n    'Reem, 144 seconds',\n  ],\n)"
+  }
+]

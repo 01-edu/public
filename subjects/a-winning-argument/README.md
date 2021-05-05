@@ -27,7 +27,7 @@ We are now going to adapt `myFirstFuntion` so that it takes one argument :
 `arg1`.
 
 ```js
-let myFirstFunction = arg1 => {
+let myFirstFunction = (arg1) => {
   //<-arg1 is inputed in between the parens
   console.log(arg1) // arg1 can be use inside the scope of the function
   //            ↖   arg1 is "transfered" to be the arg of console.log()
