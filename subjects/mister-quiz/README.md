@@ -6,7 +6,7 @@ Have you ever watched "Who Wants to Be a Millionaire?" and wonder how would you 
 
 You will have to continue to build a quiz game website that is already in development. The already made code is available [here](https://assets.01-edu.org/mister-quiz/mister_quiz.zip). There is missing some code that you will have to create in order to fullfil all the requests explained in the `Instructions` section.
 
-The project is written in [PHP](https://www.php.net/) and it is using [Laravel](https://laravel.com/), one of the most (if not the most) known PHP web framework. So you have to install both PHP and Laravel on your machine. Get comfortable using dollar signs.
+The project is written in [PHP](https://www.php.net/) and it is using [Laravel](https://laravel.com/), one of the most (if not the most) known PHP web framework. So you have to install both PHP and Laravel on your machine (you can use which [method](https://laravel.com/docs/8.x/installation#getting-started-on-linux) you like the best). Get comfortable using dollar signs.
 
 ### Instructions
 
