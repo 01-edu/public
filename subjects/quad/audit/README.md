@@ -73,7 +73,7 @@ o--------o
 
 ###### Does the function returns the value above?
 
-#### quadC
+#### quadB
 
 ##### Try running the function with the arguments: `"x=5 and y=3"`
 
