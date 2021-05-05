@@ -1,0 +1,10 @@
+[
+  {
+    "description": "Count up to 3",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nupTo(3)\nequal(\n  args.flat().join('\\n'),\n  `0\n1\n2\n3`,\n)"
+  },
+  {
+    "description": "Count up to 11",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nupTo(11)\nequal(\n  args.flat().join('\\n'),\n  `0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11`,\n)"
+  }
+]
