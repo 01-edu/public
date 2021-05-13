@@ -231,3 +231,7 @@ Error
 ```
 
 ###### Does the program returns the value above?
+
+#### Bonus
+
+###### +Is the project using the Exact cover technique [Knuth's Algorithm X](https://en.wikipedia.org/wiki/Knuth%27s_Algorithm_X)
