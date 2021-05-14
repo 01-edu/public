@@ -27,11 +27,8 @@ No division by 0$
 $ go run . 1 % 0 | cat -e
 No modulo by 0$
 $ go run . 9223372036854775807 + 1
-0
 $ go run . -9223372036854775809 - 3
-0
 $ go run . 9223372036854775807 "*" 3
-0
 $ go run . 1 "*" 1
 1
 $ go run . 1 "*" -1
