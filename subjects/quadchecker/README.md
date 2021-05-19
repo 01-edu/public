@@ -57,3 +57,15 @@ $ ./quadE 1 2 | go run .
 [quadC] [1] [2] || [quadE] [1] [2]
 $
 ```
+
+- If it's not a raid function:
+
+```console
+$ echo 0 0 | go run .
+Not a Raid function
+$ echo -n "o--o"$'\n'"|"$'\n'"o"
+o--o
+|
+o$ echo -n "o--o"$'\n'"|"$'\n'"o" | go run .
+Not a Raid function
+```

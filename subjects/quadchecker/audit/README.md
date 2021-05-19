@@ -71,3 +71,43 @@ Not a Raid function
 ```
 
 ###### Does the program returns the value above?
+
+##### Try running the program: `"echo -n "o--" | ./quadchecker"`
+
+```
+Not a Raid function
+```
+
+###### Does the program returns the value above?
+
+##### Try running the program: `"echo -n "/****" | ./quadchecker"`
+
+```
+Not a Raid function
+```
+
+###### Does the program returns the value above?
+
+##### Try running the program: `"echo -n "ABBB" | ./quadchecker"`
+
+```
+Not a Raid function
+```
+
+###### Does the program returns the value above?
+
+##### Try running the program: `"echo -n "ABBBA"$'\n'"B"$'\n'"B" | ./quadchecker"`
+
+```
+Not a Raid function
+```
+
+###### Does the program returns the value above?
+
+##### Try running the program: `"echo -n "o--o"$'\n'"|"$'\n'"o" | ./quadchecker"`
+
+```
+Not a Raid function
+```
+
+###### Does the program returns the value above?
