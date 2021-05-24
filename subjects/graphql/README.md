@@ -130,7 +130,7 @@ you could just add this attribute to the query, example:
 
 You can try to `curl` the API endpoint to see the result given by the server:
 
-- `curl "https://[[DOMANIN]]/api/graphql-engine/v1/graphql" --data '{"query":"{user{id login}}"}'`
+- `curl "https://[[DOMAIN]]/api/graphql-engine/v1/graphql" --data '{"query":"{user{id login}}"}'`
 
 Here is another example of a query using the table `user`:
 
@@ -150,7 +150,7 @@ Here is another example of a query using the table `user`:
 
 You can see the result using `curl`:
 
-- `curl "https://[[DOMANIN]]/api/graphql-engine/v1/graphql" --data '{"query":"{user(where:{id:{_eq:6}}){id login}}"}'`
+- `curl "https://[[DOMAIN]]/api/graphql-engine/v1/graphql" --data '{"query":"{user(where:{id:{_eq:6}}){id login}}"}'`
 
 In graphQL the usage of arguments can be specified in the schema of the API. Like said above you can visit the _docs_ for the graphQL endpoint, _https://[[DOMAIN]]/public/subjects/grapqhl_
 
