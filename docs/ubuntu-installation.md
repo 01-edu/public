@@ -25,6 +25,16 @@ Skip the welcoming window.
 
 Don't install updates if Ubuntu asks to. The scripts will.
 
+## Admin access
+
+This is optional but you can add your public SSH key to access the administrator account later:
+
+```shell
+sudo mkdir /root/.ssh
+echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICeJ9WuncQJG5X51m3M0goX9fohnz9LqlL/AT3OMYBX1' | sudo tee /root/.ssh/authorized_keys
+sudo chmod 400 !$
+```
+
 ## OS configuration
 
 Run a terminal and type these commands :
