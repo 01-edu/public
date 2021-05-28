@@ -2,7 +2,7 @@
 
 ## OS Installation
 
-Download and boot the [last Ubuntu release](https://releases.ubuntu.com/21.04/ubuntu-21.04-desktop-amd64.iso).
+Download and boot the [latest Ubuntu release](https://releases.ubuntu.com/21.04/ubuntu-21.04-desktop-amd64.iso).
 
 Follow the steps :
 
