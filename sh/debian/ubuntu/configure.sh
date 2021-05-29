@@ -242,13 +242,24 @@ do
 	chown -R "$usr:$usr" "$dir" ||:
 done
 
+# Install Go extension and tools
+
+sudo -iu student code --install-extension golang.go
+sudo -iu student go get github.com/01-edu/z01
+sudo -iu student go get github.com/uudashr/gopkgs/v2/cmd/gopkgs
+sudo -iu student go get github.com/ramya-rao-a/go-outline
+sudo -iu student go get github.com/cweill/gotests/gotests
+sudo -iu student go get github.com/fatih/gomodifytags
+sudo -iu student go get github.com/josharian/impl
+sudo -iu student go get github.com/haya14busa/goplay/cmd/goplay
+sudo -iu student go get github.com/go-delve/delve/cmd/dlv
+sudo -iu student go get github.com/go-delve/delve/cmd/dlv@master
+sudo -iu student go get honnef.co/go/tools/cmd/staticcheck
+sudo -iu student go get golang.org/x/tools/gopls
+
 # Install LibreOffice
 
 apt-get --no-install-recommends -y install libreoffice
-
-# Install Go library
-
-sudo -iu student go get github.com/01-edu/z01
 
 # Install Docker
 
