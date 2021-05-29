@@ -346,6 +346,12 @@ plymouth-quit-wait.service
 # shellcheck disable=2086
 systemctl mask $services
 
+# Logout quickly
+cat <<EOF >>/etc/systemd/logind.conf
+KillUserProcesses=yes
+UserStopDelaySec=0
+EOF
+
 # Disable GTK hidden scroll bars
 echo GTK_OVERLAY_SCROLLING=0 >> /etc/environment
 

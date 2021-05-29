@@ -25,10 +25,6 @@ PS4='-\D{%F %T} '
 # Print commands and their arguments as they are executed.
 set -x
 
-# Make sure the mountpoints are free
-kill $(lsof -t "$HOME" /mnt) ||:
-umount "$HOME" /mnt ||:
-
 if test -e /dev/disk/by-partlabel/01-home; then
 	mount -o noatime /dev/disk/by-partlabel/01-home /mnt
 else
@@ -45,6 +41,6 @@ temp_path=/mnt/.01/tmp
 
 mkdir -p "$user_path" "$temp_path"
 chown -R "$USER":"$USER" "$user_path" "$temp_path"
-mount -t overlay -o lowerdir="$HOME",upperdir="$user_path",workdir="$temp_path" overlay "$HOME"
-mkdir -p "$HOME"/.cache
-mount -t tmpfs -o size=2G tmpfs "$HOME"/.cache
+mount -t overlay -o lowerdir=/home/student,upperdir="$user_path",workdir="$temp_path" overlay /home/student
+mkdir -p /home/student/.cache
+mount -t tmpfs -o size=2G tmpfs /home/student/.cache

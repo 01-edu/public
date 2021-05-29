@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Log stdout & stderr
-exec > >(tee -i /tmp/gdm3_postsession.log) 2>&1
+exec > >(tee -i /tmp/reset_home.log) 2>&1
 
 # Exit immediately if a command exits with a non-zero status.
 set -e
@@ -16,6 +16,10 @@ PS4='-\D{%F %T} '
 # Print commands and their arguments as they are executed.
 set -x
 
-passwd -d "$USER" ||:
+# Make sure the mountpoints are free
+loginctl terminate-user student
+sleep 0.1
 
-systemd-run /usr/local/bin/reset_home
+umount /home/student/.cache /home/student /mnt
+umount /dev/disk/by-partlabel/01-home ||:
+/usr/sbin/wipefs -a /dev/disk/by-partlabel/01-tmp-home
