@@ -1,5 +1,21 @@
+[org/gnome/online-accounts]
+whitelisted-providers=@as []
+
+[com/ubuntu/touch/network]
+gps=false
+
+[com/ubuntu/touch/system]
+activity-timeout=uint32 0
+dim-timeout=uint32 0
+
+[com/ubuntu/update-notifier]
+release-check-time=uint32 1622286166
+
 [org/gnome/desktop/calendar]
 show-weekdate=true
+
+[org/gnome/desktop/datetime]
+automatic-timezone=false
 
 [org/gnome/desktop/wm/preferences]
 resize-with-right-button=true
@@ -27,11 +43,16 @@ enable-smartcard-authentication=false
 enable-fingerprint-authentication=false
 
 [org/gnome/desktop/privacy]
+remember-app-usage=false
 report-technical-problems=false
 remember-recent-files=false
+usb-protection=false
+usb-protection-level='lockscreen'
 
 [org/gnome/desktop/screensaver]
 lock-enabled=false
+idle-activation-enabled=false
+user-switch-enabled=false
 
 [org/gnome/desktop/search-providers]
 disable-external=true
@@ -115,6 +136,7 @@ sleep-inactive-ac-timeout=0
 ambient-enabled=false
 
 [org/gnome/shell]
+development-tools=false
 enable-hot-corners=true
 favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'sublime_text.desktop', 'code.desktop', 'codium.desktop', 'org.gnome.Calculator.desktop', 'gnome-control-center.desktop', 'org.gnome.tweaks.desktop', 'lock_screen.desktop', 'suspend_session.desktop', 'yelp.desktop']
 
@@ -128,17 +150,16 @@ idle-delay=uint32 0
 center-new-windows=true
 
 [org/gnome/calculator]
+accuracy=9
+angle-units='degrees'
+base=10
+button-mode='advanced'
+number-format='fixed'
+refresh-interval=604800
+show-thousands=true
+show-zeroes=false
 source-currency=''
 source-units='degree'
-button-mode='advanced'
-word-size=64
-show-zeroes=false
-base=10
-angle-units='degrees'
-accuracy=9
-show-thousands=false
-window-position=(1906, 826)
-refresh-interval=604800
-target-units='radian'
-number-format='fixed'
 target-currency=''
+target-units='radian'
+word-size=64
