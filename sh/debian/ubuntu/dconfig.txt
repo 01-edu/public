@@ -138,7 +138,7 @@ ambient-enabled=false
 [org/gnome/shell]
 development-tools=false
 enable-hot-corners=true
-favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'sublime_text.desktop', 'code.desktop', 'codium.desktop', 'org.gnome.Calculator.desktop', 'gnome-control-center.desktop', 'org.gnome.tweaks.desktop', 'lock_screen.desktop', 'suspend_session.desktop', 'yelp.desktop']
+favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'code.desktop', 'codium.desktop', 'sublime_text.desktop' 'org.gnome.Calculator.desktop', 'lock_screen.desktop', 'suspend_session.desktop', 'gnome-control-center.desktop', 'org.gnome.tweaks.desktop', 'yelp.desktop']
 
 [org/gnome/system/location]
 enabled=false
