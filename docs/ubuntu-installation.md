@@ -55,7 +55,7 @@ The session is password-less.
 To gain a superuser terminal, use SSH :
 
 ```console
-user@remote:~$ ssh -p521 root@IP_ADDRESS
+user@remote:~$ ssh -p512 root@IP_ADDRESS
 ```
 
 To gain access with read/write access to the filesystem, use this command :
