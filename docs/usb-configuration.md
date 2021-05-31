@@ -1,44 +1,35 @@
 # USB CONFIGURATION
 
-Requirements :
+Requirements:
 
 1. 32 GB
-2. interface type: 3.0
+2. USB 3.x
 
-Follow the steps :
+Follow the steps:
 
-> Execute the "disks" program
+- Execute the "Disks" program
+- Choose the USB drive to configure and "Format Disk"
 
 ![img1](img/usb-configuration/1.png)
 
-> Choose the usb drive to configure and press format disk
+- Choose "Compatible with modern systems and hard disks > 2TB(GPT)"
 
-![img2](img/usb-configuration/2.png)
+![img3](img/usb-configuration/2.png)
 
-> Choose "Compatible with modern systems and hard disks > 2TB(GPT)"
+- Create a new partition using all the free space
+  - Volume name: any
+  - Erase: no
+  - Type: other
+    - Choose F2FS
 
-![img3](img/usb-configuration/3.png)
+![img6](img/usb-configuration/3.png)
 
-![img4](img/usb-configuration/4.png)
+![img7](img/usb-configuration/4.png)
 
-> Create new partition (size == all memory)
+- "Edit Partition"
 
-![img5](img/usb-configuration/5.png)
+![img8](img/usb-configuration/5.png)
 
-> Volume name: any
-> Erase: none
-> Type: other
+- The new name must be "01-home"
 
-![img6](img/usb-configuration/6.png)
-
-> Choose F2FS
-
-![img7](img/usb-configuration/7.png)
-
-> Format created partition
-
-![img8](img/usb-configuration/8.png)
-
-> The new name must be 01-home
-
-![img9](img/usb-configuration/9.png)
+![img9](img/usb-configuration/6.png)
