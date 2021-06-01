@@ -6,8 +6,8 @@ One domain and one subdomain must point to the IP address of a [dedicated server
 
 | FQDN           | Record type | Address |
 | -------------- | ----------- | ------- |
-| {{DOMAIN}}     | A           | X.X.X.X |
-| git.{{DOMAIN}} | A           | X.X.X.X |
+| ((DOMAIN))     | A           | X.X.X.X |
+| git.((DOMAIN)) | A           | X.X.X.X |
 
 ## Network configuration
 

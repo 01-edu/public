@@ -9,7 +9,7 @@ Only the numbers will appear.
 Here is the base command that needs to be adapted with your username and more :
 
 ```
-curl -s https://{{DOMAIN}}/api/graphql-engine/v1/graphql --data '{"query":"{user(where:{login:{_eq:\"choumi\"}}){id}}"}'
+curl -s https://((DOMAIN))/api/graphql-engine/v1/graphql --data '{"query":"{user(where:{login:{_eq:\"choumi\"}}){id}}"}'
 ```
 
 ### Usage
