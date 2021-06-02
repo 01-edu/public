@@ -29,7 +29,7 @@ if test -e /dev/disk/by-partlabel/01-home; then
 	mount -o noatime /dev/disk/by-partlabel/01-home /mnt
 else
 	# Fails if no local partition is found
-	test -e /dev/disk/by-partlabel/01-tmp-home || exit 1
+	test -e /dev/disk/by-partlabel/01-tmp-home
 
 	# We don't care about data consistency since the partition is temporary so disable journaling
 	/sbin/mke2fs -t ext4 -O ^has_journal -F /dev/disk/by-partlabel/01-tmp-home

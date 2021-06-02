@@ -21,5 +21,4 @@ loginctl terminate-user student
 sleep 0.1
 
 umount /home/student/.cache /home/student /mnt
-umount /dev/disk/by-partlabel/01-home ||:
 /usr/sbin/wipefs -a /dev/disk/by-partlabel/01-tmp-home
