@@ -8,7 +8,7 @@
 
 below are your references for the **printing format** expected.
 
-- (for n = 1) '0, 1, 2, 3, ...8, 9'
+- (for n = 1) '0, 1, 2, 3, ..., 8, 9'
 
 - (for n = 3) '012, 013, 014, 015, 016, 017, 018, 019, 023,...689, 789'
 
@@ -45,3 +45,9 @@ $ go run .
 012345678, 012345679, ..., 123456789
 $
 ```
+
+> Be mindful of your program efficiency to avoid timeouts.
+
+### Notions
+
+- [01-edu/z01](https://github.com/01-edu/z01)
