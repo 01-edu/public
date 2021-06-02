@@ -43,3 +43,7 @@ Great ! you are all set, if you want to re-execute your script, just refresh.
 You now just have to create a repository named `[[ROOT]]`,
 which will hold all your solutions for this piscine
 and just add your 2 generated files to it, we will start slow for now... 🐢
+
+### Recommendation
+
+Videos designed to give **hints** are assigned to each quest. It is strongly suggested to watch them as you go.
