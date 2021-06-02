@@ -4,7 +4,7 @@
 
 - Write a function that reverses a `string`.
 
-- This function will **return** the s `string`.
+- This function will **return** the reversed `string`.
 
 ### Expected function
 

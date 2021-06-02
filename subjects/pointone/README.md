@@ -2,7 +2,7 @@
 
 ### Instructions
 
-- Write a function that takes a **pointer to an int** as argument and gives to this int the value of 1.
+- Write a function that takes a **pointer to an `int`** as argument and gives to this `int` the value of 1.
 
 ### Expected function
 
@@ -38,3 +38,7 @@ $ go run .
 1
 $
 ```
+
+### Notions
+
+- [Pointers](https://golang.org/ref/spec#Pointer_types)

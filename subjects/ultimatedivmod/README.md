@@ -12,9 +12,9 @@ func UltimateDivMod(a *int, b *int) {
 }
 ```
 
-- This function will divide the int **a** and **b**.
-- The result of this division will be stored in the int pointed by **a**.
-- The remainder of this division will be stored in the int pointed by **b**.
+- This function will divide the `int` **a** and **b**.
+- The result of this division will be stored in the `int` pointed by **a**.
+- The remainder of this division will be stored in the `int` pointed by **b**.
 
 ### Usage
 
@@ -45,3 +45,7 @@ $ go run .
 1
 $
 ```
+
+### Notions
+
+- [Pointers](https://golang.org/ref/spec#Pointer_types)

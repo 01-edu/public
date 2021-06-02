@@ -12,9 +12,9 @@ func DivMod(a int, b int, div *int, mod *int) {
 }
 ```
 
-- This function will divide the int **a** and **b**.
-- The result of this division will be stored in the int pointed by **div**.
-- The remainder of this division will be stored in the int pointed by **mod**.
+- This function will divide the `int` **a** and **b**.
+- The result of this division will be stored in the `int` pointed by **div**.
+- The remainder of this division will be stored in the `int` pointed by **mod**.
 
 ### Usage
 
@@ -47,3 +47,7 @@ $ go run .
 1
 $
 ```
+
+### Notions
+
+- [Pointers](https://golang.org/ref/spec#Pointer_types)
