@@ -6,7 +6,7 @@
 
 #### General
 
-##### Ask the auditee, from the VM laptop, to get get into the other VM. As a reminder the port forwarding is set to 10122.
+##### Ask the auditee, from the VM laptop, to get into the other VM. As a reminder the port forwarding is set to 10122.
 
 ##### (Allow some time for the hacking to take place)
 
