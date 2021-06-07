@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a **recursive** function that returns the value of the fibonacci sequence matching the index passed as parameter.
+Write a **recursive** function that returns the value at the position `index` in the fibonacci sequence.
 
 The first value is at index `0`.
 
