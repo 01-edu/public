@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write an **recursive** function that returns the power of the `int` passed as parameter.
+Write a **recursive** function that returns the the value of `nb` to the power `power`.
 
 Negative powers will return `0`. Overflows do **not** have to be dealt with.
 
