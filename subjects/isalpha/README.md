@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that returns `true` if the `string` passed in parameter only contains alphanumerical characters or is empty, and that returns `false` otherwise.
+Write a function that returns `true` if the `string` passed in parameter only contains alphanumerical characters or is empty, and returns `false` otherwise.
 
 ### Expected function
 

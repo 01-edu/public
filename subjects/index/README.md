@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that behaves like the [`Index`](https://golang.org/pkg/strings/#Index) function.
+Write a function that behaves like the `Index` function.
 
 ### Expected function
 
@@ -40,3 +40,7 @@ $ go run .
 -1
 $
 ```
+
+### Notions
+
+- [strings/Index](https://golang.org/pkg/strings/#Index)

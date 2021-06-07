@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that capitalizes each letter of `string`.
+Write a function that capitalizes each letter of a `string`.
 
 ### Expected function
 
@@ -36,3 +36,7 @@ $ go run .
 HELLO! HOW ARE YOU?
 $
 ```
+
+### Notions
+
+- [strings/ToUpper](https://golang.org/pkg/strings/#ToUpper)

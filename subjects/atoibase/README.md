@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that takes a `string` number and its `string` base in parameters and returns its conversion as an `int`.
+Write a function that takes a `string` number and its `string` base as parameters and returns its conversion as an `int`.
 
 If the base is not valid it returns `0`.
 

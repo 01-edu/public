@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that lowercases each letter of `string`.
+Write a function that lower cases each letter of a `string`.
 
 ### Expected function
 
@@ -36,3 +36,7 @@ $ go run .
 hello! how are you?
 $
 ```
+
+### Notions
+
+- [strings/ToLower](https://golang.org/pkg/strings/#ToLower)

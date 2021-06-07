@@ -37,3 +37,8 @@ $ go run . | cat -e
 1230123$
 $
 ```
+
+### Notions
+
+- [01-edu/z01](https://github.com/01-edu/z01)
+- [rune-literals](https://golang.org/ref/spec#Rune_literals)

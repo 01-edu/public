@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that prints an `int` in a `string` base passed in parameters.
+Write a function that prints an `int` in a `string` base passed as parameters.
 
 If the base is not valid, the function prints `NV` (Not Valid):
 
@@ -62,3 +62,7 @@ $ go run .
 NV
 $
 ```
+
+### Notions
+
+- [01-edu/z01](https://github.com/01-edu/z01)
