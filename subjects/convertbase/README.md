@@ -3,8 +3,11 @@
 ### Instructions
 
 Write a function that receives three arguments:
+
 - `nbr`: A string representing a numberic value in a [base](https://simple.wikipedia.org/wiki/Base_(mathematics)).
+
 - `baseFrom`: A string representing the base `nbr` it's using.
+
 - `baseTo`: A string representing the base `nbr` should be represented in the returned value.
 
 Only valid bases will be tested.
