@@ -4,7 +4,7 @@
 
 #### 1- get-ready
 
-Create in your Gitea (https://git.[[DOMAIN]]) account the repository named `[[ROOT]]`.
+Create in your [Gitea](<https://git.((DOMAIN))>) account the repository named `((ROOT))`.
 
 This repository will be the folder where all the exercices must be uploaded.
 
@@ -12,7 +12,7 @@ Once created, clone that repository on your desktop.
 
 If your username was `choumi` this is the command that will need to be used :
 
-`git clone git@git.[[DOMAIN]]:choumi/[[ROOT]].git`
+`git clone git@git.((DOMAIN)):choumi/((ROOT)).git`
 
 This command needs to be adapted with **your own username**.
 
@@ -29,7 +29,7 @@ ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -N ''
 cat ~/.ssh/id_ed25519.pub
 ```
 
-- Copy the result and paste it in the content field of adding an SSH key in your Gitea settings : https://git.[[DOMAIN]]/user/settings/keys
+- Copy the result and paste it in the content field of adding an SSH key in your [Gitea settings](<https://git.((DOMAIN))/user/settings/keys>)
 
 - Confirm by clicking on the add key button.
 
