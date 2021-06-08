@@ -8,6 +8,10 @@ This function receives a number `n` and returns the `n`th number in the fibonacc
 
 The Fibonacci Series starts like this: 0, 1, 1, 2, 3, 5, 8, 13 etc...
 
+### Recommendation
+
+Videos designed to give **hints** are assigned to each quest. It is strongly suggested to watch them as you go.
+
 ### Notions
 
 - [Primitives](https://doc.rust-lang.org/stable/rust-by-example/primitives.html)

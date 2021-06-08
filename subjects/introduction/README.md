@@ -63,3 +63,9 @@ After that the `hello.sh` is executing correctly, it needs to be uploaded to the
 Once these steps are applied, the file can now be submitted for grading on the platform by clicking on the "RUN INTRODUCTION TEST..." button.
 
 This action will run the tests on your submitted `hello.sh` file.
+
+### Recommendation
+
+Videos designed to give **hints** are assigned to each quest. It is strongly suggested to watch them as you go.
+
+There is subtitles available in French and English. 

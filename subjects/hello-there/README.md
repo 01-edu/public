@@ -114,6 +114,10 @@ JS file that is a program that displays the exact text `Hello There !`, any `Num
 
 > Don't forget to commit and push the file to the servers
 
+### Recommendation
+
+Videos designed to give **hints** are assigned to each quest. It is strongly suggested to watch them as you go.
+
 ### You will learn about
 
 - Terminal
