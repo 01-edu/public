@@ -2,7 +2,7 @@
 
 ### Instructions
 
-- Write a function that transforms a number within a `string`, in a number represented as an `int`.
+- Write a function that transforms a number within a `string`, in an `int`.
 
 - For this exercise the handling of the sign `-` **has** to be taken into account. If the sign is encountered before any number it should determine the sign of the returned `int`.
 
