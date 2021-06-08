@@ -477,7 +477,8 @@ if ! test -v PERSISTENT; then
 	EOF
 
 	# Remove user abilities
-	gpasswd -d student sudo
+	sed -i 's/^%admin/# &/' /etc/sudoers
+	sed -i 's/^%sudo/# &/' /etc/sudoers
 	gpasswd -d student lpadmin
 	gpasswd -d student sambashare
 
