@@ -35,3 +35,8 @@ $ go run . 1 "*" -1
 -1
 $
 ```
+
+### Notions
+
+- [Numeric Types](https://golang.org/ref/spec#Numeric_types)
+- [Arithmetic Operators](https://golang.org/ref/spec#Arithmetic_operators)

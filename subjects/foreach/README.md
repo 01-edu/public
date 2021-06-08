@@ -34,3 +34,9 @@ $ go run .
 123456
 $
 ```
+
+### Notions
+
+- [Function literals](https://golang.org/ref/spec#Function_literals)
+- [Function declaration](https://golang.org/ref/spec#Function_declarations)
+- [Function types](https://golang.org/ref/spec#Function_types)
