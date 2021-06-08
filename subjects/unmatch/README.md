@@ -4,7 +4,7 @@
 
 Write a function, `Unmatch`, that returns the element of the slice that does not have a correspondent pair.
 
-- If all the number have a correspondent pair, it shoud return `-1`.
+- If all the number have a correspondent pair, it should return `-1`.
 
 ### Expected function
 
