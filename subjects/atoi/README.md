@@ -8,7 +8,7 @@
 
 - For this exercise the handling of the signs + or - **does have** to be taken into account.
 
-- This function will **only** have to return the `int`. For this exercise the `error` result of atoi is not required.
+- This function will **only** have to return the `int`. For this exercise the `error` result of `Atoi` is not required.
 
 ### Expected function
 
@@ -56,3 +56,7 @@ $ go run .
 0
 $
 ```
+
+### Notions
+
+- [strconv/Atoi](https://golang.org/pkg/strconv/#Atoi)

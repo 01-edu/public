@@ -36,6 +36,10 @@ $ go run . | cat -e
 $
 ```
 
-`000` or `999` are not valid combinations because the digits are not different.
+- `000` or `999` are not valid combinations because the digits are not different.
 
-`987` should not be shown because the first digit is not less than the second.
+- `987` should not be shown because the first digit is not less than the second.
+
+### Notions
+
+- [01-edu/z01](https://github.com/01-edu/z01)

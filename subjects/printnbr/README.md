@@ -40,3 +40,8 @@ $ go run .
 -1230123
 $
 ```
+
+### Notions
+
+- [01-edu/z01](https://github.com/01-edu/z01)
+- [numeric types](https://golang.org/ref/spec#Numeric_types)

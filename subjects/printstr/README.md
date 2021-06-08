@@ -33,3 +33,7 @@ $ go run . | cat -e
 Hello World!%
 $
 ```
+
+### Notions
+
+- [01-edu/z01](https://github.com/01-edu/z01)

@@ -13,3 +13,7 @@ $ go run .
 0123456789
 $
 ```
+
+### Notions
+
+- [01-edu/z01](https://github.com/01-edu/z01)

@@ -2,7 +2,7 @@
 
 ### Instructions
 
-- Write a function that swaps the contents of two **pointers to an int** (`*int`).
+- Write a function that swaps the contents of two **pointers to an `int`** (`*int`).
 
 ### Expected function
 
@@ -41,3 +41,7 @@ $ go run .
 0
 $
 ```
+
+### Notions
+
+- [Pointers](https://golang.org/ref/spec#Pointer_types)
