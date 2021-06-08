@@ -2,10 +2,10 @@
 
 ### Instructions
 
-Write a function `Compact` that takes a pointer to a slice of `string` as the argument.
+Write a function `Compact` that takes a pointer to a slice of `string`s as the argument.
 This function must:
 
-- Return the number of elements with non-zero value.
+- Return the number of elements with [non-zero value](https://tour.golang.org/basics/12).
 
 - Compact, i.e., delete the elements with zero-values in the slice.
 
