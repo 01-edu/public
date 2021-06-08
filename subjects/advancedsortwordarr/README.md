@@ -40,3 +40,9 @@ $ go run .
 [1 2 3 A B C a b c]
 $
 ```
+
+### Notions
+
+- [Function literals](https://golang.org/ref/spec#Function_literals)
+- [Function declaration](https://golang.org/ref/spec#Function_declarations)
+- [Function types](https://golang.org/ref/spec#Function_types)
