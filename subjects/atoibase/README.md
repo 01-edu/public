@@ -2,7 +2,12 @@
 
 ### Instructions
 
-Write a function that takes a `string` number and its `string` base as parameters and returns its conversion as an `int`.
+Write a function that takes two arguments:
+
+- `s`: a numeric `string` in a given [base](https://simple.wikipedia.org/wiki/Base_(mathematics)).
+- `base`: a `string` representing all the different digits that can represent a numeric value.
+
+And return the integer value of `s` in the given `base`.
 
 If the base is not valid it returns `0`.
 
