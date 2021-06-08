@@ -4,7 +4,7 @@
 
 Complete the body of the **function** `fibonacci`.
 
-This functions receives a number `n` and returns the nth number in the fibonacci series.
+This function receives a number `n` and returns the `n`th number in the fibonacci series.
 
 The Fibonacci Series starts like this: 0, 1, 1, 2, 3, 5, 8, 13 etc...
 
