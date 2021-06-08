@@ -40,3 +40,7 @@ $ go run .
 !!!
 $
 ```
+
+### Notions
+
+- [rune-literals](https://golang.org/ref/spec#Rune_literals)

@@ -3,7 +3,8 @@
 ### Instructions
 
 Write a function that counts only the letters of a `string` and that returns that count.
-White spaces or any other characters should not be counted.
+
+- White spaces or any other characters should not be counted.
 
 The letters are only the ones from the latin alphabet.
 

@@ -44,3 +44,7 @@ $ go run .
 la!
 $
 ```
+
+### Notions
+
+- [rune-literals](https://golang.org/ref/spec#Rune_literals)

@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that capitalizes the first letter of each word **and** lowercases the rest of each word of a `string`.
+Write a function that capitalizes the first letter of each word **and** lowercases the rest.
 
 A word is a sequence of **alphanumerical** characters.
 

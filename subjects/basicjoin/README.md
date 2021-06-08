@@ -37,3 +37,7 @@ $ go run .
 Hello! How are you?
 $
 ```
+
+### Notions
+
+- [string concatenation](https://golang.org/ref/spec#Arithmetic_operators)

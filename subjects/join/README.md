@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that returns the concatenation of all the `string` of a slice of `string` **separated** by the separator passed in argument.
+Write a function that simulates the behaviour of the `Join` function in Go. This function returns the concatenation of all the strings of a slice of strings **separated** by a separator passed in argument.
 
 ### Expected function
 
@@ -37,3 +37,7 @@ $ go run .
 Hello!: How: are: you?
 $
 ```
+
+### Notions
+
+- [strings/Join](https://golang.org/pkg/strings/#Join)

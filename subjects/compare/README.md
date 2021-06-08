@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that behaves like the [`Compare`](https://golang.org/pkg/strings/#Compare) function.
+Write a function that behaves like the `Compare` function.
 
 ### Expected function
 
@@ -40,3 +40,7 @@ $ go run .
 1
 $
 ```
+
+### Notions
+
+- [strings/Compare](https://golang.org/pkg/strings/#Compare)
