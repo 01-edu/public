@@ -108,6 +108,10 @@ Columns:
 - referencedAt, The timestamp of the creation of the copy object
 
 #### Attributes (attrs)
+##### Objects
+- inScope: This attribute is used to determine if the exercise gives XP or not. If an exercise is not in scope then it doesn't give XP.
+
+- status: It can have the values `blocked`, `available`, `succeeded` or `failed`
 TODO: Finish documenting the json attributes that can be used
 ##### Quests
 - `duration`, `startDay`, `start`, `scopeExtraDuration`, `hasStarted`, `special`, `scopeEnd`, `rootName`, `repositoryPath`, `status`, `scopeStart`, `difficulty`, `difficultyMod`, `baseXp`, `language`, `group`, `exerciseType`, `preRequisiteId`, `delay` `parentType`, `inScope`, `xpIndex`, `level`, `difficulty`
