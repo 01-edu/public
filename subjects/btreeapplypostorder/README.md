@@ -2,7 +2,11 @@
 
 ### Instructions
 
-Write a function that applies a function using a postorder walk to each element in the tree.
+Write a function that applies a given function `f`, to each element in the tree using a postorder walk.
+
+### Notions
+
+- [Tree Traversal](https://en.wikipedia.org/wiki/Tree_traversal)
 
 ### Expected function
 

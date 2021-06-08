@@ -2,7 +2,11 @@
 
 ### Instructions
 
-Write a function that applies a function in order to each element in the tree (see "in order tree walks").
+Write a function that applies a given function `f`, **in order**, to each element in the tree.
+
+### Notions
+
+- [Tree Traversal](https://en.wikipedia.org/wiki/Tree_traversal)
 
 ### Expected function
 
