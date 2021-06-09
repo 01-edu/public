@@ -26,7 +26,7 @@ Don't install updates if Ubuntu asks to. The scripts will.
 
 ## Admin access
 
-This is optional but you can add your public SSH key to access the administrator account later:
+You can add your public SSH key to access the administrator account later:
 
 ```shell
 unset HISTFILE
