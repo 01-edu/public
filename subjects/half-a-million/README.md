@@ -56,7 +56,7 @@ choice.
 `'53CR37-k0D3'`:
 
 - `loot` should be `1/2 MM $`
-- `vaut` should be `{ '53CR37-k0D3': 'I stole your $$' }`
+- `vault` should be `{ '53CR37-k0D3': 'I stole your $$' }`
 
 > I sure hope you didn't do anything stupid, Jackie. \
 > ― Ray Nicolette
