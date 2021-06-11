@@ -32,7 +32,7 @@ You will need to add these 2 VM :
 - [01_scan_RRF-CONTROL](https://assets.01-edu.org/sys/01_scan_RRF-CONTROL.tar.gz)
 - [01_scan_laptop](https://assets.01-edu.org/sys/01_scan_laptop.tar.gz)
 
-You will only have control over "laptop". A port forwarding is set on 10122 so you can connect through SSH.
+You will only have control over "laptop". A port forwarding is set on 10122 so you can connect through SSH, the password is a single space.
 
 Your mission, should you choose to accept it, is to scan the network interface `enp0s8` and find a way in the server, you will know you have succeeded when you see :
 
