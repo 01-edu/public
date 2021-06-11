@@ -25,25 +25,24 @@ type List struct {
 	Tail *NodeL
 }
 
-func IsPositive_node(node *NodeL) bool {
+func IsPositiveNode(node *NodeL) bool {
 	switch node.Data.(type) {
 	case int, float32, float64, byte:
 		return node.Data.(int) > 0
-	case string, rune:
+	default:
 		return false
 	}
-	return false
 }
 
-func IsAl_node(node *NodeL) bool {
+func IsAlNode(node *NodeL) bool {
 	switch node.Data.(type) {
 	case int, float32, float64, byte:
 		return false
-	case string, rune:
+	default:
 		return true
 	}
-	return true
 }
+
 
 func ListForEachIf(l *List, f func(*NodeL), cond func(*NodeL) bool) {
 
@@ -93,9 +92,9 @@ func main() {
 	PrintList(link)
 
 	fmt.Println("--------function applied--------")
-	piscine.ListForEachIf(link, PrintElem, piscine.IsPositive_node)
+	piscine.ListForEachIf(link, PrintElem, piscine.IsPositiveNode)
 
-	piscine.ListForEachIf(link, StringToInt, piscine.IsAl_node)
+	piscine.ListForEachIf(link, StringToInt, piscine.IsAlNode)
 
 	fmt.Println("--------function applied--------")
 	PrintList(link)
