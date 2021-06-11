@@ -35,17 +35,7 @@ func IsPositive_node(node *NodeL) bool {
 	return false
 }
 
-func IsNegative_node(node *NodeL) bool {
-	switch node.Data.(type) {
-	case int, float32, float64, byte:
-		return node.Data.(int) < 0
-	case string, rune:
-		return false
-	}
-	return false
-}
-
-func IsNotNumeric_node(node *NodeL) bool {
+func IsAl_node(node *NodeL) bool {
 	switch node.Data.(type) {
 	case int, float32, float64, byte:
 		return false
@@ -105,7 +95,7 @@ func main() {
 	fmt.Println("--------function applied--------")
 	piscine.ListForEachIf(link, PrintElem, piscine.IsPositive_node)
 
-	piscine.ListForEachIf(link, StringToInt, piscine.IsNotNumeric_node)
+	piscine.ListForEachIf(link, StringToInt, piscine.IsAl_node)
 
 	fmt.Println("--------function applied--------")
 	PrintList(link)
