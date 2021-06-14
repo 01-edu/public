@@ -3,7 +3,7 @@
 ### Instructions
 
 Write a program that takes a `string` and displays it, replacing each of its
-letters by the letter 13 spaces ahead in alphabetical order.
+letters by the letter 13 spots ahead in alphabetical order.
 
 - 'z' becomes 'm' and 'Z' becomes 'M'. The case of the letter stays the same.
 
