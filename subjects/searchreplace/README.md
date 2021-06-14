@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a program that takes 3 arguments, the first argument is a `string` in which to replace a letter (the 2nd argument) by another one (the 3rd argument).
+Write a program that takes 3 arguments, the first argument is a `string` in which a letter (the 2nd argument) will be replaced by another one (the 3rd argument).
 
 - If the number of arguments is different from 3, the program displays nothing.
 
@@ -12,6 +12,8 @@ Write a program that takes 3 arguments, the first argument is a `string` in whic
 
 ```console
 $ go run . "hella there" "a" "o"
+hello there
+$ go run . "hallo thara" "a" "e"
 hello there
 $ go run . "abcd" "z" "l"
 abcd
