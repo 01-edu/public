@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function, `Max`, that returns the maximum value in a slice of integers. If the slice is empty, returns 0.
+Write a function `Max` that will return the maximum value in a slice of integers. If the slice is empty it will return 0.
 
 ### Expected function
 

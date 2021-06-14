@@ -2,7 +2,10 @@
 
 ### Instructions
 
-Write a function `rot14` that returns the `string` within the parameter transformed into a `rot14 string`, that replaces a letter with the 14th letter after it, in the alphabet.
+Write a function `rot14` that returns the `string` within the parameter transformed into a `rot14 string`.
+Each letter will be replaced by the letter 14 spots ahead in the alphabetical order.
+
+- 'z' becomes 'n' and 'Z' becomes 'N'. The case of the letter stays the same.
 
 ### Expected function
 
@@ -25,7 +28,7 @@ import (
 )
 
 func main() {
-	result := piscine.Rot14("Hello How are You")
+	result := piscine.Rot14("Hello! How are You?")
 
 	for _, r := range result {
 		z01.PrintRune(r)
