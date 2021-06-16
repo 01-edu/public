@@ -56,4 +56,4 @@ This action will run the tests on your submitted `hello.sh` file.
 
 Videos designed to give **hints** are assigned to each quest. It is strongly suggested to watch them as you go.
 
-There is subtitles available in French and English.
+There are subtitles available in French and English.
