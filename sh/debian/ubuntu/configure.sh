@@ -325,7 +325,6 @@ gimp
 gnome-calculator
 gnome-system-monitor
 gnome-tweaks
-golang-mode
 i3lock
 imagemagick
 mpv
