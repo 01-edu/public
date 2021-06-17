@@ -170,13 +170,10 @@ func main() {
 		return
 	}
 	var nb int
-	if len(devices) > 1 {
+	if choice != "" {
 		nb, err := strconv.Atoi(choice)
-		if err != nil {
-			fatalln("Wrong disk number", choice)
-		}
-		if nb < 0 || nb >= len(devices) {
-			fatalln("Wrong disk number, choose between", 0, "and", len(devices)-1)
+		if err != nil || nb < 0 || nb >= len(devices) {
+			fatalln("Wrong disk number:", choice)
 		}
 	}
 	device := devices[nb]
