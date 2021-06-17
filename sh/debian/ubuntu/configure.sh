@@ -434,6 +434,7 @@ cd /tmp/system
 cp --preserve=mode -RT . /
 
 cd /usr/local/src/format
+PATH=$PATH:/usr/local/go/bin
 go mod download
 go build -o /usr/local/bin/format
 
