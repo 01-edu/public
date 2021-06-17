@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -97,7 +98,7 @@ func main() {
 	fmt.Println("  - do not plug/unplug any drive")
 	fmt.Println("  - make sure the drive is not in use")
 	fmt.Print("Press ENTER to continue")
-	fmt.Scanln()
+	bufio.NewScanner(os.Stdin).Scan()
 
 	// Get a list of the block devices
 	var data struct {
