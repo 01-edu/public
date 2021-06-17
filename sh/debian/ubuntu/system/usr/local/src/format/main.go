@@ -159,27 +159,21 @@ func main() {
 	renderTable(table)
 
 	// Select the USB flash drive to format
-	if len(devices) == 1 {
-		fmt.Println(`Press ENTER to format the disk (or "exit")`)
-	} else {
-		fmt.Println(`Enter the number of the disk you want to format (or "exit"):`)
-	}
+	fmt.Println(`Enter the number of the disk you want to format (or "exit"):`)
 	var choice string
 	fmt.Scanln(&choice)
 	if strings.ToLower(choice) == "exit" {
 		return
 	}
 	var nb int
-	if choice != "" {
-		nb, err := strconv.Atoi(choice)
-		if err != nil || nb < 0 || nb >= len(devices) {
-			fatalln("Wrong disk number:", choice)
-		}
+	nb, err := strconv.Atoi(choice)
+	if err != nil || nb < 0 || nb >= len(devices) {
+		fatalln("Wrong disk number:", choice)
 	}
 	device := devices[nb]
 
 	// Get a list of the USB flash drive mount points
-	b, err := os.ReadFile("/proc/mounts")
+	b, err = os.ReadFile("/proc/mounts")
 	expect(nil, err, "list the mount points")
 	lines := strings.Split(string(b), "\n")
 	var mountPoints []string
