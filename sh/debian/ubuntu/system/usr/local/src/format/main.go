@@ -231,7 +231,7 @@ func main() {
 	run("erase disk data", "wipefs", "--all", device.Path)
 	run("erase disk data", "sgdisk", "--zap-all", device.Path)
 	run("create partition table", "sgdisk", "--largest-new", "0", device.Path)
-	run("create partition table", "sgdisk", "--change-name", "0:01-home", device.Path)
+	run("create partition table", "sgdisk", "--change-name", "1:01-home", device.Path)
 	run("inform the OS of partition table changes", "partx", "--update", device.Path)
 	run("format partition", "mkfs.f2fs", "-f", device.Path+"1")
 	fmt.Println("done")
