@@ -434,8 +434,8 @@ cd /tmp/system
 cp --preserve=mode -RT . /
 
 cd /usr/local/src/format
-sudo -iu student go mod download
-sudo -iu student go build -o /usr/local/bin/format
+go mod download
+go build -o /usr/local/bin/format
 
 cd "$script_dir"
 rm -rf /tmp/system
