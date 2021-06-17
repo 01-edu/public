@@ -39,11 +39,11 @@ func renderTable(data [][]string) {
 }
 
 // run returns the output of the command
-// In case of error, display the action intended, the command and the error
-func run(action, name string, arg ...string) []byte {
+// In case of error, display the description, the command and the error
+func run(description, name string, arg ...string) []byte {
 	b, err := exec.Command(name, arg...).CombinedOutput()
 	if err != nil {
-		fmt.Println("Failed to", action)
+		fmt.Println("Failed to", description)
 		fmt.Printf("%s %#v\n", name, arg)
 		if _, ok := err.(*exec.ExitError); ok {
 			fatalln(string(b))
