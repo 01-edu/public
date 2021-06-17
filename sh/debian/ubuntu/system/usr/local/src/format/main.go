@@ -166,7 +166,7 @@ func main() {
 	}
 	var choice string
 	fmt.Scanln(&choice)
-	if strings.TrimSpace(strings.ToLower(choice)) == "exit" {
+	if strings.ToLower(choice) == "exit" {
 		return
 	}
 	var nb int
