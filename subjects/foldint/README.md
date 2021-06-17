@@ -20,6 +20,16 @@ Here is a possible program to test your function:
 package main
 
 func main() {
+	Add := func(acc int, cur int) int {
+		return acc + cur
+	}
+	Mul := func(acc int, cur int) int {
+		return acc * cur
+	}
+	Sub := func(acc int, cur int) int {
+		<return acc - cur
+	}
+
 	table := []int{1, 2, 3}
 	ac := 93
 	FoldInt(Add, table, ac)
