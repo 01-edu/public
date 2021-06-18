@@ -50,7 +50,7 @@ create and edit the .gitignore file in your repository and add this line:
 **/target/*
 ```
 
-The goal of this setup is to avoid any binary files to be pushed in your gitea accidentaly.
+The goal of this setup is to avoid any binary files to be pushed in your Gitea accidentally.
 
 Do not forget to push it to your repository.
 
