@@ -16,35 +16,23 @@ This repository will be the folder where all the exercices must be uploaded.
 
 Once created, clone that repository on your desktop.
 
-If your username was `choumi` this is the command that will need to be used :
+First, tell Git to remember your password (like a web browser would):
 
-`git clone git@git.((DOMAIN)):choumi/((ROOT)).git`
+```
+git config --global credential.helper store
+```
+
+If your username was `choumi` this is the command that will need to be used:
+
+```
+git clone https://git.((DOMAIN))/choumi/((ROOT)).git
+```
 
 This command needs to be adapted with **your own username**.
 
-If the `git clone` gives you an authenticity of host error, your SSH key must be configured.
-Follow the steps below.
-
-#### SSH Configuration
-
-Execute the following commands:
-
-```console
-mkdir -p ~/.ssh
-ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -N ''
-cat ~/.ssh/id_ed25519.pub
-```
-
-- Copy the result and paste it in the content field of adding an SSH key in your [Gitea settings](<https://git.((DOMAIN))/user/settings/keys>)
-
-- Confirm by clicking on the add key button.
-
-Once this is done the git clone command should work now.
-
 #### gitignore file
 
-Once you repository is cloned,
-create and edit the .gitignore file in your repository and add this line:
+Once you repository is cloned, create and edit the .gitignore file in your repository and add this line:
 
 ```console
 **/target/*
@@ -94,7 +82,7 @@ This command will compile, and run the binary.
 
 #### 4- return your solution
 
-After that the `hello_rust` project is executing correctly, it needs to be uploaded to the repository with the following commands :
+After that the `hello_rust` project is executing correctly, it needs to be uploaded to the repository with the following commands:
 
 1. `git add hello_rust/`
 2. `git commit -m "My very first rust commit"`
