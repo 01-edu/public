@@ -486,6 +486,9 @@ if ! test -v PERSISTENT; then
 	gpasswd -d student lpadmin
 	gpasswd -d student sambashare
 
+	# Give to rights to use format tool
+	echo 'student ALL = (root) NOPASSWD: /usr/local/bin/format' >> /etc/sudoers
+
 	cp /etc/shadow /etc/shadow-
 fi
 
