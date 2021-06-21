@@ -15,7 +15,6 @@ One domain and one subdomain must point to the IP address of a [dedicated server
 
 | Port | Transport | Application      |
 | ---- | --------- | ---------------- |
-| 22   | TCP       | SSH              |
 | 80   | TCP, UDP  | HTTP/(1.1, 2, 3) |
 | 443  | TCP, UDP  | HTTP/(1.1, 2, 3) |
 | 521  | TCP       | SSH              |
@@ -24,7 +23,7 @@ One domain and one subdomain must point to the IP address of a [dedicated server
 
 | Port | Transport | Application |
 | ---- | --------- | ----------- |
-| 465  | TCP       | SMTP        |
+| 587  | TCP       | SMTP        |
 
 ### OS installation
 
