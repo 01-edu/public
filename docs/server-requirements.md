@@ -1,15 +1,12 @@
 # Server requirements
 
-Features required :
+Features required:
 
 - Dedicated hardware
-- Linux compatibility
-- UEFI
-- Secure boot
-- TPM 2.0
+- Linux compatible
 
-| Component | Recommended specifications  |
-| --------- | --------------------------- |
-| Processor | 12 threads x86-64 (64 bits) |
-| Memory    | 16 GB DDR4                  |
-| Disk      | 2 \* 500 GB SSD             |
+| Component | Minimum specifications                                                                                       |
+| --------- | ------------------------------------------------------------------------------------------------------------ |
+| Processor | 8 threads x86-64 (64 bits), [2200 single thread performance](https://www.cpubenchmark.net/singleThread.html) |
+| Memory    | 16 GB DDR4                                                                                                   |
+| Disk      | 2 \* 500 GB SSD                                                                                              |
