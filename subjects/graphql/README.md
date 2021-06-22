@@ -48,7 +48,7 @@ for example: [github-pages](https://pages.github.com/), [netlify](https://www.ne
 
 ### Usage
 
-> To test your queries you can access the GraphQL IDE on _https://((DOMAIN))/graphql/_ or create your own [**GraphiQL Docs**](https://github.com/graphql/graphiql). This will give you a bigger picture of the tables, attributes and all the types of queries that you can do.
+> To test your queries you can access the GraphQL IDE on _https://((DOMAIN))/graphiql/_ or create your own [**GraphiQL Docs**](https://github.com/graphql/graphiql). This will give you a bigger picture of the tables, attributes and all the types of queries that you can do.
 
 Here are the list of tables that you are allowed to query (it will be only provided the columns present on the tables):
 
@@ -152,7 +152,7 @@ You can see the result using `curl`:
 
 - `curl "https://((DOMAIN))/api/graphql-engine/v1/graphql" --data '{"query":"{user(where:{id:{_eq:6}}){id login}}"}'`
 
-In graphQL the usage of arguments can be specified in the schema of the API. Like said above you can visit the _docs_ for the graphQL endpoint, _https://((DOMAIN))/grapqhl_
+In graphQL the usage of arguments can be specified in the schema of the API. Like said above you can visit the _docs_ for the graphQL endpoint, _https://((DOMAIN))/graphiql_
 
 Example of nesting, using the result and user table :
 
