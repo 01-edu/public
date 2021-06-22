@@ -6,7 +6,7 @@ Write a program named `hiddenp` that takes two `string` and that, if the first `
 
 Let s1 and s2 be `string`. It is considered that s1 is hidden in s2 if it is possible to find each character from s1 in s2, **in the same order as they appear in s1.**
 
-If s1 is an empty `string` it is considered hidden in any `string`.
+If s1 is an empty `string`, it is considered hidden in any `string`.
 
 If the number of arguments is different from 2, the program displays nothing.
 

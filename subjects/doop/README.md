@@ -10,7 +10,7 @@ The program has to be used with three arguments:
 - An operator, one of : `+`, `-`, `/`, `*`, `%`
 - Another value
 
-In case of an invalid operator, value, number of arguments or an overflow the programs prints nothing.
+In case of an invalid operator, value, number of arguments or an overflow, the programs prints nothing.
 
 The program has to handle the modulo and division operations by 0 as shown on the output examples below.
 
