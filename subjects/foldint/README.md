@@ -2,7 +2,7 @@
 
 ### Instructions
 
-The function should have as parameters a function, `f func(int, int) int` a slice of integers, `slice []int` and an int `acc int`. You should apply for each element of the slice the arithmetic function, saving and printing it. The function will be tested with our own functions `Add, Sub, and Mul`.
+The function should have as parameters a function, `f func(int, int) int` a slice of integers, `slice []int` and an int `acc int`. For each element of the slice, it should apply the arithmetic function, save the result and print it. The function will be tested with our own functions `Add, Sub, and Mul`.
 
 ### Expected function
 
