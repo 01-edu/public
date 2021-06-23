@@ -4,11 +4,11 @@
 
 Write a program that receives two strings and replicates the use of brackets in regular expressions. Brackets in regular expressions returns the words that contain the expression inside of it.
 
-The program should handle the "`|`" operator, that searches for both strings on each side of the operator.
+The program should handle the "`|`" operator, which searches for both strings on each side of the operator.
 
-The output of the program should be the results of the regular expression by order of appearance in the string, being themselves identified by a number.
+The output of the program should be, the results of the regular expression, numbered and displayed by the order of appearance in the string.
 
-If the number of arguments is different from 2, if the regular expression is not valid, if the last argument is empty or there are no matches the program should print nothing.
+If the number of arguments is different from 2, if the regular expression is not valid, if the last argument is empty or if there are no matches, the program should print nothing.
 
 ### Usage
 
