@@ -31,24 +31,24 @@ Columns:
 ### event
 
 An event anchors an objects into time.
-> Note: Some `object attributes` are related to time, but they express time only in relative terms to the beginning of the event.
+> Note: Some [object attributes](attributes.md) are related to time, but they express time only in relative terms to the beginning of the event.
 > Also, live edits (i.e., editing an event while is ongoing) it's not supported. The changes will only take effect after reloading the page.
 
 Columns:
 - id
 - createdAt: The timestamp of the creation of the event.
-- endAt: The timestamp with the time the event finishes at.
+- endAt: The timestamp for the end of the event.
 - registrationId: The registration to the event.
 - objectId: The object that is used to generate the event.
 - parentId: The parent id of the event is based on.
 - status: Confirmation that the event finished correctly (NULL or done for now).
 - path: The path of the event (the relative url of the event).
 - campus: The campus that contains the event.
-- code: Only used to unlock the exams.
+- code: Used to unlock the exams.
 
 ### event_user
 
-This table links users and events. Many users can be in many events.
+This table links users and events. A user can be in many events and an events have many users.
 
 Columns:
 - id
@@ -68,9 +68,9 @@ Columns:
 - captainId: The captain of the group.
 - createdAt.
 - updatedAt.
-- status: See group_status for possible values.
+- status: See [group_status](#group_status) for possible values.
 - path.
-- campus (Auto generated for by the path).
+- campus.
 
 ### group_status
 
@@ -105,23 +105,23 @@ Columns:
 - objectId: The object that requires the match.
 - userId: The user that is matched.
 - matchId: The matched that is made to another user.
-- confirmed (The same as in group_user it's way to keep track of invitations that had not been confirmed).
-- bet (For the optional exercises that require a bet. A bet can be true if the exercises is expected to pass).
-- result: Says if the exercise was validated as succeeded by the tester (TODO: reward xp for getting a bet right).
+- confirmed: The same as in group_user it's a way to keep track of invitations that had not been confirmed.
+- bet: boolean; For the optional exercises that require a bet. A bet can be true if the exercises is expected to pass and false otherwise.
+- result: boolean; True for correct bet.
 - path
 - campus
 - eventId: The event the object in inserted in. (Piscine, Raid, etc).
 
 ### object
 
-Objects are generic representations of elements in the structure of the curriculum (Onboarding, campus, piscine, raids, etc). They are arranged in a hierachical structure to allow unlimited nesting (see [object_child](#object_child)). They also keep the timeline of the events relaying in durations (ex. `duration`, `eventDuration`, etc) specified by attributes (`attr`).
+Objects are generic representations of elements in the structure of the curriculum (Onboarding, campus, piscine, raids, etc). They are arranged in a hierachical structure to allow unlimited nesting (see [object_child](#object_child)). They also keep the timeline of the events relaying in durations (ex. `duration`, `eventDuration`, etc) specified by [attributes](attributes.md) (`attrs`).
 
 Columns:
 - id
 - name
 - type: See [object_type](#object_type) for the possible types.
 - status: (Currently not in used, but it should always be `online` to avoid errors TODO: remove at some point).
-- attrs: See [object attributes](#object-attributes).
+- attrs: See [object attributes](attributes.md).
 - childrenAttrs: Attributes that are applied to all the children objects.
 - createdAt
 - updatedAt
@@ -133,7 +133,7 @@ Columns:
 
 ### object_child
 
-It creates a relationship parent child between two objects, it's used to encapsulate objects inside each other.
+It keeps a child-parent relationship between two objects. It's used to encapsulate objects inside each other.
 
 Columns:
 - id
@@ -169,7 +169,7 @@ Possible values:
 
 ### progress
 
-A register of the advance in the user progress while doing the exercises and projects.
+It is a register of the steps in the progression of students doing the exercises and projects.
 
 Columns:
 - id
@@ -187,7 +187,7 @@ Columns:
 
 ### record
 
-Keeps a register for the bans.
+Keeps a register for the bans. It can also keep the record of other situations, this is done by setting the banEndAt to a date already passed and the reason for the record.
 
 Columns:
 - id
@@ -199,23 +199,23 @@ Columns:
 
 ### registration
 
-Registrations to events.
+Registrations to events (For example, an exam).
 
 Columns:
 - id
-- createdAt, When the registration was created
-- startAt, When user can start registering to an event
-- endAt, When the registration ends
-- eventStartAt, When the event the registration refers to starts
-- objectId, The object the registration refers to
-- parentId, The parent object of the object the registration refers to
-- attrs, What do the attributes of the registration are used for?
+- createdAt, When the registration was created.
+- startAt, When users can start registering to an event.
+- endAt, When the registration ends.
+- eventStartAt, When the event the registration refers to starts.
+- objectId, The object the registration refers to.
+- parentId, The parent object of the object the registration refers to.
+- attrs
 - path
 - campus
 
 ### registration_user
 
-The user registered to events.
+The user registered to events. A user can register to many events and and event can have many users.
 
 Columns:
 - id
@@ -232,16 +232,16 @@ Columns:
 - createdAt
 - updatedAt
 - grade
-- progressId, The result is liked to a progress?
-- attrs, What are they used for?
-- type, For the possible types see the table result_type
+- progressId
+- attrs
+- type, For the possible types see the table [result_type](#result_type)
 - userId
 - groupId
 - objectId
 - path
 - version, The version of the code the result refers to.
 - eventId
-- isLast, Used to represent transitory states. A progress is only considered finished when `isLast` is `true`
+- isLast, Used to represent transitory states. A progress is only considered finished when `isLast` is `true`.
 - campus
 
 ### result_type
@@ -301,16 +301,16 @@ Columns:
 
 Columns:
 - type
-  - `xp`, transaction giving xp
-  - `up`, transaction correspondent to reviewing someone
-  - `down`, transaction correspondent to reviewing you
+  - `xp`: transaction giving xp
+  - `up`: transaction correspondent to reviewing someone
+  - `down`: transaction correspondent to reviewing you
 
 ### user
 
 Columns:
 - id
-- githubId: Now gitea.
-- githubLogin: Now gitea.
+- githubId: (Now gitea).
+- githubLogin: (Now gitea).
 - discordId
 - discordLogin
 - profile
