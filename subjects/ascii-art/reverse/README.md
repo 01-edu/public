@@ -2,20 +2,11 @@
 
 ### Objectives
 
-You must follow the same [instructions](https://public.01-edu.org/subjects/ascii-art/) as in the first subject.
+You must follow the same [instructions](https://public.01-edu.org/subjects/ascii-art/) as in the first subject but this time the process will be reversed. desrever fo dnik siht toN
 
-- Ascii-reverse consists on reversing the process, converting the graphic representation into a text.
-- You will have to create a text file containing a graphic representation of a random `string`.
-- The argument will be a **flag**, `--reverse=<fileName>`, in which `--reverse` is the flag and `<fileName>` is the file name.
-- The program must print this `string` in **normal text**.
+Ascii-reverse consists on reversing the process, converting the graphic representation into a text. You will have to create a text file containing a graphic representation of a random `string` given as an argument.
 
-This project will help you learn about :
-
-- The Go file system(**fs**) API.
-- Ways to receive data.
-- Ways to output data.
-- Manipulation of strings.
-- Manipulation of structures.
+The argument will be a **flag**, `--reverse=<fileName>`, in which `--reverse` is the flag and `<fileName>` is the file name. The program must then print this `string` in **normal text**.
 
 ### Instructions
 
@@ -44,3 +35,8 @@ $ go run . --reverse=file.txt
 hello
 $
 ```
+
+This project will help you learn about :
+
+- The Go file system(**fs**) API
+- Data manipulation
