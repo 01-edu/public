@@ -2,7 +2,15 @@
 
 ### Objectives
 
-You must follow the same [instructions](https://public.01-edu.org/subjects/ascii-art/ascii-art.en) as in the first subject but the representation should be formatted using a **flag** `--align=<type>`, in which `type` can be :
+You must follow the same [instructions](https://public.01-edu.org/subjects/ascii-art) as in the first subject but the alignment can be changed.
+
+```console
+We
+        will
+                explain!
+```
+
+To change the alignment of the output it must be possible to use a **flag** `--align=<type>`, in which `type` can be :
 
 - center
 - left
@@ -11,18 +19,10 @@ You must follow the same [instructions](https://public.01-edu.org/subjects/ascii
 
 - You must adapt your representation to the terminal size. If you reduce the terminal window the graphical representation should be adapted to the terminal size.
 
-This project will help you learn about :
-
-- The Go file system(**fs**) API.
-- Ways to receive data.
-- Ways to output data.
-- Manipulation of strings.
-- Manipulation of structures.
-
 ### Instructions
 
 - Your project must be written in **Go**.
-- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices.en).
+- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices).
 - It is recommended that the code should present a **test file**.
 
 ### Allowed packages
@@ -30,6 +30,8 @@ This project will help you learn about :
 - Only the [standard go](https://golang.org/pkg/) packages are allowed
 
 ### Usage
+
+Assume the bars in the display below are the terminal borders:
 
 ```console
 |$ go run . "hello" standard --align=center                                                                                 |
@@ -70,3 +72,9 @@ This project will help you learn about :
 |                                                                                                  _|_|                     |
 |$                                                                                                                          |
 ```
+
+This project will help you learn about :
+
+- The Go file system(**fs**) API
+- Data manipulation
+- Terminal display

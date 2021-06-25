@@ -2,18 +2,32 @@
 
 ### Objectives
 
-Ascii-art consists on receiving a `string` as an argument and outputting the `string` in a graphic representation of ASCII.
+Ascii-art is a program which consists on receiving a `string` as an argument and outputting the `string` in a graphic representation using ASCII. Time to write big.
 
-- This project should handle numbers, letters, spaces, special characters and `\n`.
+What we mean by a graphic representation using ASCII is to write the `string` received using ASCII characters as you can see in the example below:
+
+```````````console
+@@@@@@BB@@@@``^^``^^``@@BB$$@@BB$$
+@@%%$$$$^^^^WW&&8888&&^^""BBBB@@@@
+@@@@@@""WW8888&&WW888888WW``@@@@$$
+BB$$``&&&&WWWW8888&&&&8888&&``@@@@
+$$``&&WW88&&88&&&&8888&&88WW88``$$
+@@""&&&&&&&&88888888&&&&&&88&&``$$
+``````^^``^^^^^^````""^^``^^``^^``
+""WW^^@@@@^^``````^^BB@@^^``^^&&``
+^^&&^^@@````^^``&&``@@````^^^^&&``
+``WW&&^^""``^^WW&&&&""``^^^^&&88``
+^^8888&&&&&&WW88&&88WW&&&&88&&WW``
+@@``&&88888888WW&&WW88&&88WW88^^$$
+@@""88&&&&&&&&888888&&``^^&&88``$$
+@@@@^^&&&&&&""``^^^^^^8888&&^^@@@@
+@@@@@@^^888888&&88&&&&MM88^^BB$$$$
+@@@@@@BB````&&&&&&&&88""``BB@@BB$$
+$$@@$$$$$$$$``````````@@$$@@$$$$$$
+```````````
+
+- This project should handle an input with numbers, letters, spaces, special characters and `\n`.
 - Take a look at the ASCII manual.
-
-This project will help you learn about :
-
-- The Go file system(**fs**) API.
-- Ways to receive data.
-- Ways to output data.
-- Manipulation of strings.
-- Manipulation of structures.
 
 ### Instructions
 
@@ -21,7 +35,7 @@ This project will help you learn about :
 - The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices/).
 - It is recommended that the code present a **test file**.
 
-- It will be given some [**banner**](https://github.com/01-edu/public/blob/master/subjects/ascii-art) files with a specific graphical template representation of ASCII. The files are formatted in a way that it is not necessary to change them.
+- It will be given some [**banner**](https://github.com/01-edu/public/blob/master/subjects/ascii-art) files (.txt files) with a specific graphical template representation using ASCII. The files are formatted in a way that it is not necessary to change them.
 
 ### Banner Format
 
@@ -58,7 +72,6 @@ This project will help you learn about :
 ......
 ......
 
-etc
 ```
 
 ### Allowed packages
@@ -115,3 +128,8 @@ $ go run . "{Hello There}"
 
 $
 ```
+
+This project will help you learn about :
+
+- The Go file system(**fs**) API
+- Data manipulation
