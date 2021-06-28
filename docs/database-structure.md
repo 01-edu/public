@@ -40,7 +40,7 @@ Columns:
 - endAt: The timestamp for the end of the event.
 - registrationId: The registration to the event.
 - objectId: The object that is used to generate the event.
-- parentId: The parent id of the event is based on.
+- parentId: The immediate event ancestor. The parent event.
 - status: Confirmation that the event finished correctly (NULL or done for now).
 - path: The path of the event (the relative url of the event).
 - campus: The campus that contains the event.
@@ -114,7 +114,7 @@ Columns:
 
 ### object
 
-Objects are generic representations of elements in the structure of the curriculum (Onboarding, campus, piscine, raids, etc). They are arranged in a hierachical structure to allow unlimited nesting (see [object_child](#object_child)). They also keep the timeline of the events relaying in durations (ex. `duration`, `eventDuration`, etc) specified by [attributes](attributes.md) (`attrs`).
+Objects are generic representations of elements in the structure of the curriculum (Onboarding, campus, piscine, raids, etc). They are arranged in a hierarchical structure to allow unlimited nesting (see [object_child](#object_child)). They also keep the timeline of the events relaying in durations (ex. `duration`, `eventDuration`, etc) specified by [attributes](attributes.md) (`attrs`).
 
 Columns:
 - id
