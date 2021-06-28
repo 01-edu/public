@@ -46,8 +46,6 @@ The `event` table contains the following relations:
 
 The `event_user` contains the associations between events and users. This will contain information on which users are registered to which event. An event can have multiple users and a user can have multiple events, this way being a many to many relationship.
 
-This table also contains an association to the **group** table. Users can or cannot have groups, the concept is the same as in `userId` but groups can be none.
-
 ---
 
 The `registration` table contains all objects/activities that need registration. Having the following relations:
@@ -178,7 +176,16 @@ The `match` table is another way of obtaining a result. This table is used in bo
 
 The `progress` table is the summary of multiple results. As the names says this is the students progress. The following relations are established:
 
-- `userId` that associates a user with a progress. A progress must always have a user associate to it and a user can or cannot have multiple progresses.
+- `userId` that associates an user with a progress. A progress must always have a user associate to it and a user can or cannot have multiple progresses.
 - `groupId` this association allows groups to have progress. This is a many to none or one connection, meaning that a progress can have none or one group and a group can have multiple progresses.
 - `eventId` that associates which event the user has progressed on.
 - `objectId` that associates which object the user has progressed on.
+
+---
+
+The `result` table keeps the track of students result. The following relations are established:
+
+- `userId` that associates an user with a result. An user can have multiple results but a result is associated to just one result.
+- `groupId` that associates a group with a result. The same logic as in the `userId`
+- `objectId` that associates an object with a result. A result must have always a object associated to it and an object can have multiple results
+- `eventId` that associates an event with a result. The same logic as in the `objectId`
