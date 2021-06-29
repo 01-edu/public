@@ -4,7 +4,7 @@
 
 ###### Are the outputs of both programs (the one provided and the student one) in the same format?
 
-###### In the output of the student program, are the data types of the values integers?
+###### In the output of the student program, are the data types of the values rounded integers?
 
 ###### Did the values of both programs match?
 
@@ -14,4 +14,4 @@
 
 #### Bonus
 
-###### +Did the student provided a README with explanation on how to test his/her program?
+###### +Did the student provided a README with an explanation on how to test his/her program?

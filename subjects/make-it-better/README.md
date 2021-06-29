@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create the files and directories so that when you use the command `ls` below the output will look like this :
+Create the files and directories so that when you use the command `ls` below, the output will look like this :
 
 ```console
 $ TZ=utc ls -l --time-style='+%F %R' | sed 1d | awk '{print $1, $6, $7, $8, $9, $10}'
@@ -20,7 +20,7 @@ dr-------x 1995-04-10 10:10 A
 $
 ```
 
-Once it's done, use the command below to create the file `done.tar` to be submitted.
+Once it is done, use the command below to create the file `done.tar` to be submitted.
 
 ```console
 $ tar -cf done.tar *
