@@ -43,15 +43,15 @@ This range should have a space separating the lower limit from the upper one lik
 ...
 ```
 
-As you can see, some of the ranges are not correct and some are bigger than others. But this is just an example, if you want you can give a specific range in your program, that is fully up to you to decide. The intent of this exercise is for you to use the calculations you did in the `math-skills` exercise to guess the numbers.
+As seen above, some of the ranges are not correct and some are bigger than others. As this is just an example, if you so wish, a specific range in your program can be given. That is fully up to you to decide. The intent of this exercise is to use the calculations you did in the `math-skills` exercise to guess the numbers.
 
 ### Testing
 
-Your program will be extensively tested, so performance should be prioritized. Talking about testing, here is how it will work.
+Your program will be extensively tested, so performance should be prioritized. Testing will work as follow:
 
-If you guess correctly the range for the next given number, your score will be incremented based on the size of your range. In other words, the bigger your range is, the smaller your score will be. So my advice is for you to find the perfect balance between a small range and a good guess.
+If you guess correctly the range for the next given number, your score will be incremented based on the size of your range. In other words, the bigger your range is, the smaller your score will be. So we advise you to find the perfect balance between a small range and a good guess.
 
-So that auditors can test your program, you will have to follow the next steps:
+In order for auditors to test your program, you will have to follow the next steps:
 
 - create a folder called **`student`**
 - copy the files that are needed to run your program into this folder
@@ -68,9 +68,9 @@ node ./student/solution.js
 
 You can choose in which language you want to build your program.
 
-If you fail one of this steps, the test will not work. So we advise you to run the test by downloading [this zip file](https://assets.01-edu.org/guess-the-number.zip) containing the tester. You should place the `student/` folder in the root directory of the items provided and read its instructions. The data sets used to test this exercise will be `Data 1`, `Data 2` and `Data 3`.
+If you fail one of these steps, the test will not work. So we advise you to run the test by downloading [this zip file](https://assets.01-edu.org/guess-the-number.zip) containing the tester. You should place the `student/` folder in the root directory of the items provided and read its instructions. The data sets used to test this exercise will be `Data 1`, `Data 2` and `Data 3`.
 
 This project will help you learn about:
 
-- Statistical and Probabilities Calculations
+- Statistical and Probabilities Calculation
 - Scripting
