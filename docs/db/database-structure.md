@@ -119,8 +119,20 @@ Objects are generic representations of elements in the structure of the curricul
 Columns:
 - id
 - name
-- type: See [object_type](#object_type) for the possible types.
+- type:
+  - `onboarding`
+  - `campus`
+  - `exercise`
+  - `quest`
+  - `signup`
+  - `exam`
+  - `raid`
+  - `project`
+  - `piscine`
 - status: (Currently not in used, but it should always be `online` to avoid errors TODO: remove at some point).
+  - `online`
+  - `offline`
+  - `draft`
 - attrs: See [object attributes](attributes.md).
 - childrenAttrs: Attributes that are applied to all the children objects.
 - createdAt
@@ -128,7 +140,7 @@ Columns:
 - externalRelationUrl (Maybe not needed).
 - authorId (Maybe not needed).
 - campus: The campus the object is related to.
-- referenceId: If the object is a duplication this points to the reference (or creation) object.
+- referenceId: If the object is a duplication this field points to the reference object.
 - referencedAt: The timestamp of the creation of the copy object.
 
 ### object_child
@@ -142,30 +154,6 @@ Columns:
 - attrs
 - key: When generating the JS object this field will be the `key` of the child. It is also used in the url.
 - index: Defines the position of the child object inside the parent object.
-
-### object_status
-
-Columns:
-- status
-Possible values:
-  - `online`
-  - `offline`
-  - `draft`
-
-### object_type
-
-Columns:
-- type
-Possible values:
-  - `onboarding`
-  - `campus`
-  - `exercise`
-  - `quest`
-  - `signup`
-  - `exam`
-  - `raid`
-  - `project`
-  - `piscine`
 
 ### progress
 
@@ -234,7 +222,12 @@ Columns:
 - grade
 - progressId: Not used anymore (TODO: Remove)
 - attrs
-- type, For the possible types see the table [result_type](#result_type)
+- type:
+  - `tester`
+  - `user_audit`
+  - `admit_audit`
+  - `admin_selection`
+  - `status`
 - userId
 - groupId
 - objectId
@@ -243,16 +236,6 @@ Columns:
 - eventId
 - isLast, Used to represent transitory states. A progress is only considered finished when `isLast` is `true`.
 - campus
-
-### result_type
-
-Columns:
-- type
-  - `tester`
-  - `user_audit`
-  - `admit_audit`
-  - `admin_selection`
-  - `status`
 
 ### role
 
