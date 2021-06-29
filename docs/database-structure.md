@@ -11,16 +11,16 @@ Columns:
 - groupId: The group that the audit refers to.
 - auditorId: The user who's making the audit.
 - attrs: The attributes of the audits keep the feedback of the auditor for each question failed.
-- grade: 0 for failed and 1 for passed.
+- grade: A floating point number with the ratio between questions required to pass and questions approved. (Less than 1 means failed. More or equal than 1 means passed. More than 1 means that the student had bonus questions correct).
 - createdAt: The timestamp of the time and date of creation.
 - updatedAt: The timestamp of the last update.
-- code: The code that must be used by the auditor to start the audit.
-- resultId: The result of the audit.
+- code: The code that must be used by the auditor to start the audit. This code is set to null after the audit is expired.
+- resultId: The result of the audit. `resultId` is filled when the group has enough audits to validate or fail a project - that means that while it's not filled, audits are still "doable" (if no grade, so not done), and then after they are not needed anymore
 - version: A sha of the commit that the audit refers to.
-- endAt: The last date that the id refers to.
+- endAt: It is used for expiration date (after this date the audit is expired).
 - private: Used to access the code by the auditor.
 
-### discordToken
+### discordToken (TODO: remove)
 
 Columns:
 - id
@@ -128,7 +128,7 @@ Columns:
 - externalRelationUrl (Maybe not needed).
 - authorId (Maybe not needed).
 - campus: The campus the object is related to.
-- referenceId: A reference to the base object.
+- referenceId: If the object is a duplication this points to the reference (or creation) object.
 - referencedAt: The timestamp of the creation of the copy object.
 
 ### object_child
@@ -140,7 +140,7 @@ Columns:
 - parentId
 - childId
 - attrs
-- key: When generating the JS object this field will be the `key` of the child.
+- key: When generating the JS object this field will be the `key` of the child. It is also used in the url.
 - index: Defines the position of the child object inside the parent object.
 
 ### object_status
@@ -178,9 +178,9 @@ Columns:
 - userId
 - groupId
 - eventId
-- version
-- grade
-- isDone
+- version: the sha of the last commit
+- grade: is the average of the grades of the results related to this progress if several exist.
+- isDone: set to trure as soon as a user fails a validation or when all validations required are done.
 - path
 - campus
 - objectId
@@ -206,7 +206,7 @@ Columns:
 - createdAt, When the registration was created.
 - startAt, When users can start registering to an event.
 - endAt, When the registration ends.
-- eventStartAt, When the event the registration refers to starts.
+- eventStartAt, Event at which the event will be started (and as such created). Event don't exist only when they start
 - objectId, The object the registration refers to.
 - parentId, The parent object of the object the registration refers to.
 - attrs
@@ -232,7 +232,7 @@ Columns:
 - createdAt
 - updatedAt
 - grade
-- progressId
+- progressId: Not used anymore (TODO: Remove)
 - attrs
 - type, For the possible types see the table [result_type](#result_type)
 - userId
@@ -269,15 +269,10 @@ Columns:
 Columns:
 - id
 - status
-- createdAt
-- updatedAt
-
-### token_status
-
-Columns:
-- status
   - `active`
   - `expired`
+- createdAt
+- updatedAt
 
 ### transaction
 
@@ -285,7 +280,10 @@ It's a register of the rewards given to students.
 
 Columns:
 - id
-- type, See [transaction_type](#transaction_type) for the possible types.
+- type:
+  - `xp`: transaction giving xp
+  - `up`: transaction correspondent to reviewing someone
+  - `down`: transaction correspondent to reviewing you
 - amount:
   - type = xp; The amount of Xp that an object rewards.
   - type = up || down; a percentage of the change (10%);
@@ -297,29 +295,20 @@ Columns:
 - eventId
 - campus
 
-### transaction_type
-
-Columns:
-- type
-  - `xp`: transaction giving xp
-  - `up`: transaction correspondent to reviewing someone
-  - `down`: transaction correspondent to reviewing you
-
 ### user
 
 Columns:
 - id
-- githubId: (Now gitea).
-- githubLogin: (Now gitea).
-- discordId
-- discordLogin
+- githubId: (deprecated).
+- githubLogin: alias -> login.
+- discordId: depracated (TODO: remove)
+- discordLogin: depracated (TODO: remove)
 - profile
 - attrs: Extra information about the users (email, address, etc).
 - createdAt
 - updateAt
-- discordDMChannelld
+- discordDMChannelld: depracated (TODO: remove)
 - campus
-- audits
 
 ### user_role
 
@@ -327,10 +316,3 @@ Columns:
 - id
 - userId
 - roleId
-
-### xp
-
-Columns:
-- userId
-- eventId
-- amount
