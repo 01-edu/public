@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [instructions](https://public.01-edu.org/subjects/ascii-art/) as in the first subject but the second argument must be the name of the template. I know some templates may be hard to read, just don't obsess about it. Please.
+You must follow the same [instructions](https://public.01-edu.org/subjects/ascii-art/) as in the first subject but the second argument must be the name of the template. I know some templates may be hard to read, just do not obsess about it. Please...
 
 ### Instructions
 
