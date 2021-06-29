@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [instructions](https://public.01-edu.org/subjects/ascii-art/) as in the first subject but this time the process will be reversed. desrever fo dnik siht toN
+You must follow the same [instructions](https://public.01-edu.org/subjects/ascii-art/) as in the first subject but this time the process will be reversed. desrever fo dnik siht toN.
 
 Ascii-reverse consists on reversing the process, converting the graphic representation into a text. You will have to create a text file containing a graphic representation of a random `string` given as an argument.
 

@@ -2,9 +2,9 @@
 
 ### Objectives
 
-Ascii-art is a program which consists on receiving a `string` as an argument and outputting the `string` in a graphic representation using ASCII. Time to write big.
+Ascii-art is a program which consists in receiving a `string` as an argument and outputting the `string` in a graphic representation using ASCII. Time to write big.
 
-What we mean by a graphic representation using ASCII is to write the `string` received using ASCII characters as you can see in the example below:
+What we mean by a graphic representation using ASCII, is to write the `string` received using ASCII characters, as you can see in the example below:
 
 ```````````console
 @@@@@@BB@@@@``^^``^^``@@BB$$@@BB$$
@@ -35,7 +35,7 @@ $$@@$$$$$$$$``````````@@$$@@$$$$$$
 - The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices/).
 - It is recommended that the code present a **test file**.
 
-- It will be given some [**banner**](https://github.com/01-edu/public/blob/master/subjects/ascii-art) files (.txt files) with a specific graphical template representation using ASCII. The files are formatted in a way that it is not necessary to change them.
+- Some [**banner**](https://github.com/01-edu/public/blob/master/subjects/ascii-art) files (.txt files) with a specific graphical template representation using ASCII will be given. The files are formatted in a way that is not necessary to change them.
 
 ### Banner Format
 
