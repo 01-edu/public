@@ -5,7 +5,7 @@ set -euo pipefail
 IFS='
 '
 
-submitted=$(./student/to-git-or-not-to-git.sh)
-expected=$(./solutions/to-git-or-not-to-git.sh)
+submitted=$(bash student/to-git-or-not-to-git.sh)
+expected=$(bash solutions/to-git-or-not-to-git.sh)
 
 diff <(echo "$submitted") <(echo "$expected")
