@@ -10,7 +10,7 @@ This repository will be the folder where all the exercices must be uploaded.
 
 Once created, clone that repository on your desktop.
 
-To do so, open a terminal, you are going to type commands.
+To do so, open a Unix shell (e.g. Git Bash on Windows), you are going to type commands.
 
 First, tell Git to remember your password (like a web browser would):
 
