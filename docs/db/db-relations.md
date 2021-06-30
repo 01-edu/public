@@ -38,9 +38,9 @@ The `event` table contains the following relations:
 
 - `parentId` that is associated to himself. This association can be better explained if we take a look at the `path` column. An event can be based on a parent event (ex: the event `/madere/div-01/piscine-rust` is associated to this parent event `/madere/div-01`).
 
-- `registrationId` that is associated to the `registration` table. An event can have multiple registrations, but a registration can only be associated to one event, this being the parent event of the registration table.
+- `registrationId` that is associated to the `registration` table. This is a one to one relations, meaning that an event must always have a registration associated to it.
 
-- `objectId` that is associated to the `object` table, this column will identify which object is associated to which event. An object can have multiple events but must have at least one.
+- `objectId` that is associated to the `object` table, this column will identify which object is associated to which event. An object can have multiple events, but an event must always be associated to an object. (it will never exist an event where the `objectId` is `null`)
 
 ---
 
@@ -75,12 +75,12 @@ This part of the database defines the structure of the content.
 
 The `object` table contains the following relations:
 
-- `referenceId` that is associated to himself, an object can have none or many references. This attribute allows the creation of duplicates and allows each campus to create their own objects.
+- `referenceId` that is associated to himself, this attribute allows the duplication of reference objects (given by **01-edu**), that are used to set up campuses
 - `authorId` that is associated to the user table and this is the author of that object/content.
 
 ---
 
-The `object_child` table contains the encapsulation of objects. An object can have multiple children and a child must have one object parent. This table contains the following relationships to the object table:
+The `object_child` table contains the encapsulation of objects. An object can have multiple children and a child must have one object parent. Note that one parent can't be associated two times to children with the same key. This table contains the following relationships to the object table:
 
 - `parentId` that associates the parent object to the child object.
 - `childId` that belongs to the parent object.
@@ -118,7 +118,7 @@ The `user_role` contains information on which users are associated to which role
 
 ---
 
-The `group` table is the link between projects and a group of users. This table contains the following relations:
+The `group` table is the link between projects or raids and a group of users. This table contains the following relations:
 
 - `eventId` that associates which group is related to which event.
 - `captainId` that associates the captain's user.
@@ -138,7 +138,7 @@ The `record` table takes care of students records (bans). All relations in this 
 
 ---
 
-The `transaction` table takes care of rewarding the user, by accumulating the user's **xp**. This table contains the following relations:
+The `transaction` table takes care of rewarding the user, by accumulating the user's **xp** , **up** and **down** (you can see more information about those types in the `database-structure.md`). This table contains the following relations:
 
 - `userId` that represents the user rewarded
 - `eventId` that associates the event in which the user was rewarded. Example: the user can be rewarded for an exercise `/madere/piscine-go/quest-01/make-it-better` and the parent event of that exercise will be `/madere/piscine-go`.
@@ -174,18 +174,19 @@ The `match` table is another way of obtaining a result. This table is used in bo
 
 ---
 
-The `progress` table is the summary of multiple results. As the names says this is the students progress. The following relations are established:
+The `progress` table is the reflection of user's activity on specific path: registration to an event related, commitment to a group associated to this path, generation of result expected to validate a progress on this path.
 
 - `userId` that associates an user with a progress. A progress must always have a user associate to it and a user can or cannot have multiple progresses.
-- `groupId` this association allows groups to have progress. This is a many to none or one connection, meaning that a progress can have none or one group and a group can have multiple progresses.
+- `groupId` this association allows each user form a group to have progress. This is a many to none or one connection, meaning that a progress can have none or one group and a group can have multiple progresses.
 - `eventId` that associates which event the user has progressed on.
 - `objectId` that associates which object the user has progressed on.
+- `version` is the association between the `progress` and the `result` table
 
 ---
 
 The `result` table keeps the track of students result. The following relations are established:
 
-- `userId` that associates an user with a result. An user can have multiple results but a result is associated to just one result.
+- `userId` that associates an user with a result. An user can have multiple results but a result is associated to just one user.
 - `groupId` that associates a group with a result. The same logic as in the `userId`
 - `objectId` that associates an object with a result. A result must have always a object associated to it and an object can have multiple results
 - `eventId` that associates an event with a result. The same logic as in the `objectId`
