@@ -8,8 +8,8 @@ IFS='
 script_dirS=$(cd -P "$(dirname "$BASH_SOURCE")" &>/dev/null && pwd)
 
 challenge() {
-	submitted=$(cd "$1" && "$script_dirS"/student/countfiles.sh)
-	expected=$(cd "$1" && "$script_dirS"/solutions/countfiles.sh)
+	submitted=$(cd "$1" && bash "$script_dirS"/student/countfiles.sh)
+	expected=$(cd "$1" && bash "$script_dirS"/solutions/countfiles.sh)
 
 	diff <(echo "$submitted") <(echo "$expected")
 }

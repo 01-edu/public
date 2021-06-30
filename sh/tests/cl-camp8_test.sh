@@ -7,7 +7,7 @@ IFS='
 
 cd cl-camp8
 
-submitted=$(../student/skip.sh)
-expected=$(../solutions/skip.sh)
+submitted=$(bash ../student/skip.sh)
+expected=$(bash ../solutions/skip.sh)
 
 diff <(echo "$submitted") <(echo "$expected")
