@@ -169,6 +169,8 @@ These are the roles presented in the database:
 
 > You can see more about each role by going to the [graphiql](https://[[DOMAIN]]/graphiql) in the docs section. Note that you must be logged in with the user role you desire to see. For the role `anonymous` you do not need to be logged in. If you want to see the possible tables that can be queried by an admin, you must login with an admin, and so on...
 
+A role is given by default to every user, if an user has more roles, the highest would be taken by default when login.
+
 This table can describe the permissions for each table of the database and each user role.
 
 ✅ : with permission rules\
