@@ -93,12 +93,12 @@ Which corresponds to the following representation :
 - The program must handle errors carefully. In no way can it quit in an unexpected manner.
 - The coordinates of the rooms will always be `int`.
 - Your project must be written in **Go**.
-- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices/).
+- The code must respect the [**good practices**](https://[[DOMAIN]]/root/public/src/branch/master/subjects/good-practices/README.md).
 - It is recommended that the code should present a **test file**.
 
 ### Allowed packages
 
-- Only the [standard go](https://golang.org/pkg/) packages are allowed.
+- Only the [standard Go](https://golang.org/pkg/) packages are allowed.
 
 ### Usage
 
