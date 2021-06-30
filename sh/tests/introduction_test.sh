@@ -5,7 +5,7 @@ set -euo pipefail
 IFS='
 '
 
-submitted=$(./student/hello.sh)
-expected=$(./solutions/hello.sh)
+submitted=$(bash student/hello.sh)
+expected=$(bash solutions/hello.sh)
 
 diff <(echo "$submitted") <(echo "$expected") | cat -t
