@@ -10,6 +10,8 @@ This repository will be the folder where all the exercices must be uploaded.
 
 Once created, clone that repository on your desktop.
 
+To do so, open a terminal, you are going to type commands.
+
 First, tell Git to remember your password (like a web browser would):
 
 ```
@@ -26,16 +28,16 @@ This command needs to be adapted with **your own username**.
 
 #### 2- set
 
-Once the repository is created, write your first shell program called `hello.sh`
+Once the repository is created, use you code editor to write your first shell script called `hello.sh`
 
-When executed this program must print `Hello choumi!`, where `choumi` is your username.
+When executed, this script must print `Hello choumi!`, where `choumi` is your username.
 
 ##### Usage
 
 If the username is `choumi`:
 
 ```console
-$ ./hello.sh
+$ bash hello.sh
 Hello choumi!
 $
 ```
