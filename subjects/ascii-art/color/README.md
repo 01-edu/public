@@ -17,7 +17,7 @@ The output should manipulate colors using the **flag** `--color=<color>`, in whi
 
 ### Allowed packages
 
-- Only the [standard go](https://golang.org/pkg/) packages are allowed
+- Only the [standard Go](https://golang.org/pkg/) packages are allowed
 
 This project will help you learn about :
 
