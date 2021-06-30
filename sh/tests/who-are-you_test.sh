@@ -8,8 +8,8 @@ IFS='
 echo insecure >> ~/.curlrc
 caddy start &>/dev/null
 
-submitted=$(./student/who-are-you.sh)
-expected=$(./solutions/who-are-you.sh)
+submitted=$(bash student/who-are-you.sh)
+expected=$(bash solutions/who-are-you.sh)
 
 caddy stop &>/dev/null
 
