@@ -293,11 +293,11 @@ $
 
 ###### Does it present at least the result above?
 
-##### Try running the program with example06.txt and with 100 ants.
+##### Try running the program with [example06](https://public.01-edu.org/subjects/lem-in/examples/) and with 100 ants.
 
 ###### Is the real time less than 1.5 minutes?
 
-##### Try running the program with example07.txt and with 1000 ants.
+##### Try running the program with [example07](https://public.01-edu.org/subjects/lem-in/examples/) and with 1000 ants.
 
 ###### Is the real time less than 2.5 minutes?
 
@@ -327,7 +327,7 @@ $
 
 ###### +Is the error output more specific? (example: `"ERROR: invalid data format, invalid number of Ants"` or `"ERROR: invalid data format, no start room found"`)
 
-###### +Is the visualizer in 3D?·4
+###### +Is the visualizer in 3D?
 
 #### Basic
 
