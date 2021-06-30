@@ -18,7 +18,7 @@ You need to find the quickest way to get `n` ants across a colony (composed of r
 - At the beginning of the game, all the ants are in the room `##start`. The goal is to bring them to the room `##end` with as few moves as possible.
 - The shortest path is not necessarily the simplest.
 - Some colonies will have many rooms and many links, but no path between `##start` and `##end`.
-- Some will have rooms that link to themselves, sending your path-search spinning in circles, some will have too many/too few ants, no `##start` or `##end`, duplicated rooms, links to unknown rooms, rooms with invalid coordinates and a variety of other invalid or poorly-formatted input. In this cases the program will return an error message `ERROR: invalid data format`. If you want, you can elaborate the error message by being more specific (example: `ERROR: invalid data format, invalid number of Ants` and `ERROR: invalid data format, no start room found`).
+- Some will have rooms that link to themselves, sending your path-search spinning in circles, some will have too many/too few ants, no `##start` or `##end`, duplicated rooms, links to unknown rooms, rooms with invalid coordinates and a variety of other invalid or poorly-formatted input. In this cases the program will return an error message `ERROR: invalid data format`. If you want, you can elaborate the error message by being more specific (example: `ERROR: invalid data format, invalid number of Ants` or `ERROR: invalid data format, no start room found`).
 
 You must display your results on the standard output in the following format :
 
@@ -30,8 +30,7 @@ the_links
 Lx-y Lz-w Lr-o ...
 ```
 
-- x, z, r represents the ants numbers (going from 1 to number_of_ants) and y,
-  w, o represents the rooms names.
+- x, z, r represents the ants numbers (going from 1 to number_of_ants) and y, w, o represents the rooms names.
 
 - A room is defined by `"name coord_x coord_y"`, and will usually look like `"Room 1 2", "nameoftheroom 1 6", "4 6 7"`.
 
@@ -79,22 +78,6 @@ Which corresponds to the following representation :
   [7]_________/
 ```
 
-This project will help you learn about :
-
-- Algorithmics
-- Ways to receive data
-- Ways to output data
-- Manipulation of strings
-- Manipulation of structures
-
-### Bonus
-
-- As a bonus you have to create an ant farm visualizer that shows the ants moving trough the colony.
-
-- Here is an usage example : `./lem-in ant-farm.txt | ./visualizer`
-
-- The coordinates of the room will be useful only here.
-
 ### Instructions
 
 - You need to create tunnels and rooms.
@@ -115,7 +98,7 @@ This project will help you learn about :
 
 ### Allowed packages
 
-- Only the [standard go](https://golang.org/pkg/) packages are allowed
+- Only the [standard go](https://golang.org/pkg/) packages are allowed.
 
 ### Usage
 
@@ -199,3 +182,19 @@ L1-1 L2-1 L3-2
 L3-1
 $
 ```
+
+### Bonus
+
+- As a bonus you can create an ant farm visualizer that shows the ants moving trough the colony.
+
+  - Here is an usage example : `./lem-in ant-farm.txt | ./visualizer`
+
+  - The coordinates of the room will be useful only here.
+
+This project will help you learn about :
+
+- Algorithmic
+- Ways to receive data
+- Ways to output data
+- Manipulation of strings
+- Manipulation of structures
