@@ -50,7 +50,7 @@ After that the `hello.sh` is executing correctly, it needs to be uploaded to the
 2. `git commit -m "My very first commit"`
 3. `git push`
 
-Once these steps are applied, the file can now be submitted for grading on the platform by clicking on the "RUN INTRODUCTION TEST..." button.
+Once these steps are applied, the file can now be submitted for grading on the platform by clicking on the "RUN INTRODUCTION TEST" button.
 
 This action will run the tests on your submitted `hello.sh` file.
 
