@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [instructions](https://public.01-edu.org/subjects/ascii-art/) as in the first subject but this time with colors.
+You must follow the same [instructions](https://[[DOMAIN]]/root/public/src/branch/master/subjects/ascii-art) as in the first subject but this time with colors.
 
 The output should manipulate colors using the **flag** `--color=<color>`, in which `--color` is the flag and `<color>` is the color desired by the user. These colors can be achieved using different notations (color code systems, like `RGB`, `hsl`, `ANSI`...), it is up to you to choose which one you want to use.
 
@@ -12,7 +12,7 @@ The output should manipulate colors using the **flag** `--color=<color>`, in whi
 ### Instructions
 
 - Your project must be written in **Go**.
-- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices/).
+- The code must respect the [**good practices**](https://[[DOMAIN]]/root/public/src/branch/master/subjects/good-practices/README.md).
 - It is recommended that the code should present a **test file**.
 
 ### Allowed packages
