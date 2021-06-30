@@ -32,10 +32,10 @@ $$@@$$$$$$$$``````````@@$$@@$$$$$$
 ### Instructions
 
 - Your project must be written in **Go**.
-- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices/).
+- The code must respect the [**good practices**](https://[[DOMAIN]]/root/public/src/branch/master/subjects/good-practices/README.md).
 - It is recommended that the code present a **test file**.
 
-- Some [**banner**](https://github.com/01-edu/public/blob/master/subjects/ascii-art) files (.txt files) with a specific graphical template representation using ASCII will be given. The files are formatted in a way that is not necessary to change them.
+- Some [**banner**](https://[[DOMAIN]]/root/public/src/branch/master/subjects/ascii-art/README.md) files (.txt files) with a specific graphical template representation using ASCII will be given. The files are formatted in a way that is not necessary to change them.
 
 ### Banner Format
 
@@ -73,10 +73,6 @@ $$@@$$$$$$$$``````````@@$$@@$$$$$$
 ......
 
 ```
-
-### Allowed packages
-
-- Only the [standard go](https://golang.org/pkg/) packages are allowed
 
 ### Usage
 
@@ -128,6 +124,10 @@ $ go run . "{Hello There}"
 
 $
 ```
+
+### Allowed packages
+
+- Only the [standard Go](https://golang.org/pkg/) packages are allowed
 
 This project will help you learn about :
 

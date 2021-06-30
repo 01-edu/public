@@ -270,7 +270,7 @@ __       _   _ _           _  _      _    _   __           _    __ __       _   
 
 ###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
 
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
+###### +Does the code obey the [good practices](https://[[DOMAIN]]/root/public/src/branch/master/subjects/good-practices/README.md)?
 
 ###### +Is there a test file for this code?
 

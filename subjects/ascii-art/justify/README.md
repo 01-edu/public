@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [instructions](https://public.01-edu.org/subjects/ascii-art) as in the first subject but the alignment can be changed.
+You must follow the same [instructions](https://[[DOMAIN]]/root/public/src/branch/master/subjects/ascii-art) as in the first subject but the alignment can be changed.
 
 ```console
 We
@@ -22,12 +22,8 @@ To change the alignment of the output it must be possible to use a **flag** `--a
 ### Instructions
 
 - Your project must be written in **Go**.
-- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices).
+- The code must respect the [**good practices**](https://[[DOMAIN]]/root/public/src/branch/master/subjects/good-practices/README.md).
 - It is recommended that the code should present a **test file**.
-
-### Allowed packages
-
-- Only the [standard go](https://golang.org/pkg/) packages are allowed
 
 ### Usage
 
@@ -72,6 +68,10 @@ Assume the bars in the display below are the terminal borders:
 |                                                                                                  _|_|                     |
 |$                                                                                                                          |
 ```
+
+### Allowed packages
+
+- Only the [standard go](https://golang.org/pkg/) packages are allowed
 
 This project will help you learn about :
 
