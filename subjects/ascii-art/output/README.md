@@ -2,14 +2,14 @@
 
 ### Objectives
 
-- You must follow the same [instructions](https://((DOMAIN))/root/public/src/branch/master/subjects/ascii-art) as in the first subject **while** writing the result into a file. Yep, you will read from one file and write to another.
+- You must follow the same [instructions](../README.md) as in the first subject **while** writing the result into a file. Yep, you will read from one file and write to another.
 
 The file must be named by using the flag `--output=<fileName.txt>`, in which `--output` is the flag and `<fileName.txt>` is the file name which will contain the output.
 
 ### Instructions
 
 - Your project must be written in **Go**.
-- The code must respect the [**good practices**](https://((DOMAIN))/root/public/src/branch/master/subjects/good-practices/README.md).
+- The code must respect the [**good practices**](../../good-practices/README.md).
 - It is recommended that the code presents a **test file**.
 
 ### Usage

@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [instructions](https://((DOMAIN))/root/public/src/branch/master/subjects/ascii-art) as in the first subject but this time the process will be reversed. desrever fo dnik siht toN.
+You must follow the same [instructions](../README.md) as in the first subject but this time the process will be reversed. desrever fo dnik siht toN.
 
 Ascii-reverse consists on reversing the process, converting the graphic representation into a text. You will have to create a text file containing a graphic representation of a random `string` given as an argument.
 
@@ -11,7 +11,7 @@ The argument will be a **flag**, `--reverse=<fileName>`, in which `--reverse` is
 ### Instructions
 
 - Your project must be written in **Go**.
-- The code must respect the [**good practices**](https://((DOMAIN))/root/public/src/branch/master/subjects/good-practices/README.md).
+- The code must respect the [**good practices**](../../good-practices/README.md).
 - It is recommended that the code should present a **test file**.
 
 ### Usage
