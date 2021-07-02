@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that returns the median of 5 five arguments.
+Write a function that returns the median of five `int` arguments.
 
 ### Expected function
 
