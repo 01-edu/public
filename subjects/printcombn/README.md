@@ -6,7 +6,7 @@
 
 - n will be defined as : 0 < n < 10
 
-below are your references for the **printing format** expected.
+Below are the references for the **printing format** expected.
 
 - (for n = 1) '0, 1, 2, 3, ..., 8, 9'
 
