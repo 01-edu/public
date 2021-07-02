@@ -68,7 +68,7 @@
 
 ###### +Are the tests checking each possible case?
 
-###### +Does the code obey the [good practices](https://[[DOMAIN]]/root/public/src/branch/master/subjects/ascii-art)?
+###### +Does the code obey the [good practices](https://((DOMAIN))/root/public/src/branch/master/subjects/ascii-art)?
 
 #### Social
 

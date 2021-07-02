@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [instructions](https://[[DOMAIN]]/root/public/src/branch/master/subjects/ascii-art) as in the first subject but the alignment can be changed.
+You must follow the same [instructions](https://((DOMAIN))/root/public/src/branch/master/subjects/ascii-art) as in the first subject but the alignment can be changed.
 
 ```console
 We
@@ -22,7 +22,7 @@ To change the alignment of the output it must be possible to use a **flag** `--a
 ### Instructions
 
 - Your project must be written in **Go**.
-- The code must respect the [**good practices**](https://[[DOMAIN]]/root/public/src/branch/master/subjects/good-practices/README.md).
+- The code must respect the [**good practices**](https://((DOMAIN))/root/public/src/branch/master/subjects/good-practices/README.md).
 - It is recommended that the code should present a **test file**.
 
 ### Usage

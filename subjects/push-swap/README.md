@@ -135,7 +135,7 @@ $
 ### Instructions
 
 - Your project must be written in **Go**.
-- The code must respect the [**good practices**](https://[[DOMAIN]]/root/public/src/branch/master/subjects/good-practices/README.md).
+- The code must respect the [**good practices**](https://((DOMAIN))/root/public/src/branch/master/subjects/good-practices/README.md).
 - It is recommended that the code should present a **test file**.
 - The first executable file must be named **checker** and the second **push-swap**.
 - You have to be able to handle the errors.

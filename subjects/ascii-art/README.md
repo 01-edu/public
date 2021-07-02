@@ -32,10 +32,10 @@ $$@@$$$$$$$$``````````@@$$@@$$$$$$
 ### Instructions
 
 - Your project must be written in **Go**.
-- The code must respect the [**good practices**](https://[[DOMAIN]]/root/public/src/branch/master/subjects/good-practices/README.md).
+- The code must respect the [**good practices**](https://((DOMAIN))/root/public/src/branch/master/subjects/good-practices/README.md).
 - It is recommended that the code present a **test file**.
 
-- Some [**banner**](https://[[DOMAIN]]/root/public/src/branch/master/subjects/ascii-art/README.md) files (.txt files) with a specific graphical template representation using ASCII will be given. The files are formatted in a way that is not necessary to change them.
+- Some [**banner**](https://((DOMAIN))/root/public/src/branch/master/subjects/ascii-art/README.md) files (.txt files) with a specific graphical template representation using ASCII will be given. The files are formatted in a way that is not necessary to change them.
 
 ### Banner Format
 
