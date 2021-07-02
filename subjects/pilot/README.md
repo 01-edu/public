@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Append to the code below what's needed so that the program compiles.
+Append to the code below what is needed so that the program compiles.
 
 ### Usage
 
