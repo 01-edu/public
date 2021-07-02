@@ -78,7 +78,7 @@
 
 ###### +Are the tests checking each possible case?
 
-###### +Does the code obey the [good practices](https://((DOMAIN))/root/public/src/branch/master/subjects/good-practices/README.md)?
+###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
 #### Social
 

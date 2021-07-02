@@ -2,14 +2,14 @@
 
 ### Objectives
 
-You must follow the same [instructions](https://((DOMAIN))/root/public/src/branch/master/subjects/ascii-art) as in the first subject but the second argument must be the name of the template. I know some templates may be hard to read, just do not obsess about it. Please...
+You must follow the same [instructions](../README.md) as in the first subject but the second argument must be the name of the template. I know some templates may be hard to read, just do not obsess about it. Please...
 
 ### Instructions
 
 - Your project must be written in **Go**.
-- The code must respect the [**good practices**](https://((DOMAIN))/root/public/src/branch/master/subjects/good-practices/README.md).
+- The code must respect the [**good practices**](../../good-practices/README.md).
 - It is recommended that the code should present a **test file**.
-- You can see all about the **banners** [here](https://((DOMAIN))/root/public/src/branch/master/subjects/ascii-art).
+- You can see all about the **banners** [here](../).
 
 ### Usage
 
