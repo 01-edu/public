@@ -4,7 +4,7 @@
 
 "let's play!"
 
-"A **true teacher** does not jealously guard his understanding."
+"A **true teacher** does not jealously guard his mastery."
 
 The commissioner was most impressed by the result of your answers.
 He has now asked your help to create a training program for the future police inspectors. You gladly accept as you think that this will help lessen your burden of fighting crime in the future.
@@ -13,8 +13,8 @@ In a training folder, various folders `mystery` were prepared with some key diff
 
 To simplify your life as a teacher and as the answers will not be exactly the same in each `mystery` folder, you need to write a `teacher.sh` file that does the following:
 
-- step 1, it enters the `mystery` folder.
-- step 2, it isolates, thru as similar command that you used to find it, and into an environment variable, the number (**and only the number**) of the key interview that helped solved the mystery (Unlike the interview number, the adress will not change across the `mystery` folders that will be tested, hence the command to find the interview is the same across all the `mystery` folder that will be tested).
+- step 1, it enters the `mystery` folder.(again, the names will vary)
+- step 2, it isolates, thru a similar command that you used to find it, and into an environment variable, the number (**and only the number**) of the key interview that helped solved the mystery (Unlike the interview number, the adress will not change across the `mystery` folders that will be tested, hence the command to find the interview is the same across all the `mystery` folders that will be tested).
 - step 3, it prints the newly created environment variable.
 - step 4, it prints what the interview contains.
 - step 5, it executes the command that should have printed the shorted list of 4 suspects. (it shows only the license Plate, the Make, the Color, the Owner, and the Height)
