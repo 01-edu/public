@@ -2,49 +2,49 @@
 
 ###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
 
-##### Try passing to the reverse flag `"--reverse=example00.txt"` the [example 00](https://[[DOMAIN]]/root/public/src/branch/master/subjects/ascii-art/reverse/example.md).
+##### Try passing to the reverse flag `"--reverse=example00.txt"` the [example 00](https://((DOMAIN))/root/public/src/branch/master/subjects/ascii-art/reverse/example.md).
 
 `Hello World`
 
 ###### Does it display the value above?
 
-##### Try passing to the reverse flag `"--reverse=example01.txt"` the [example 01](https://[[DOMAIN]]/root/public/src/branch/master/subjects/ascii-art/reverse/example.md).
+##### Try passing to the reverse flag `"--reverse=example01.txt"` the [example 01](https://((DOMAIN))/root/public/src/branch/master/subjects/ascii-art/reverse/example.md).
 
 `123`
 
 ###### Does it display the value above?
 
-##### Try passing to the reverse flag `"--reverse=example02.txt"` the [example 02](https://[[DOMAIN]]/root/public/src/branch/master/subjects/ascii-art/reverse/example.md).
+##### Try passing to the reverse flag `"--reverse=example02.txt"` the [example 02](https://((DOMAIN))/root/public/src/branch/master/subjects/ascii-art/reverse/example.md).
 
 `#=\[`
 
 ###### Does it display the value above?
 
-##### Try passing to the reverse flag `"--reverse=example03.txt"` the [example 03](https://[[DOMAIN]]/root/public/src/branch/master/subjects/ascii-art/reverse/example.md).
+##### Try passing to the reverse flag `"--reverse=example03.txt"` the [example 03](https://((DOMAIN))/root/public/src/branch/master/subjects/ascii-art/reverse/example.md).
 
 `(somthing&234)`
 
 ###### Does it display the value above?
 
-##### Try passing to the reverse flag `"--reverse=example04.txt"` the [example 04](https://[[DOMAIN]]/root/public/src/branch/master/subjects/ascii-art/reverse/example.md).
+##### Try passing to the reverse flag `"--reverse=example04.txt"` the [example 04](https://((DOMAIN))/root/public/src/branch/master/subjects/ascii-art/reverse/example.md).
 
 `abcdefghijklmnopqrstuvwxyz`
 
 ###### Does it display the value above?
 
-##### Try passing to the reverse flag `"--reverse=example05.txt"` the [example 05](https://[[DOMAIN]]/root/public/src/branch/master/subjects/ascii-art/reverse/example.md).
+##### Try passing to the reverse flag `"--reverse=example05.txt"` the [example 05](https://((DOMAIN))/root/public/src/branch/master/subjects/ascii-art/reverse/example.md).
 
 `\!" #$%&'()*+,-./`
 
 ###### Does it display the value above?
 
-##### Try passing to the reverse flag `"--reverse=example06.txt"` the [example 06](https://[[DOMAIN]]/root/public/src/branch/master/subjects/ascii-art/reverse/example.md).
+##### Try passing to the reverse flag `"--reverse=example06.txt"` the [example 06](https://((DOMAIN))/root/public/src/branch/master/subjects/ascii-art/reverse/example.md).
 
 `:;<=>?@`
 
 ###### Does it display the value above?
 
-##### Try passing to the reverse flag `"--reverse=example07.txt"` the [example 07](https://[[DOMAIN]]/root/public/src/branch/master/subjects/ascii-art/reverse/example.md).
+##### Try passing to the reverse flag `"--reverse=example07.txt"` the [example 07](https://((DOMAIN))/root/public/src/branch/master/subjects/ascii-art/reverse/example.md).
 
 `ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 
@@ -72,7 +72,7 @@
 
 ###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
 
-###### +Does the code obey the [good practices](https://[[DOMAIN]]/root/public/src/branch/master/subjects/good-practices/README.md)?
+###### +Does the code obey the [good practices](https://((DOMAIN))/root/public/src/branch/master/subjects/good-practices/README.md)?
 
 ###### +Is there a test file for this code?
 
