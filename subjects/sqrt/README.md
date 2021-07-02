@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that returns the square root of the `int` passed as parameter if that square root is a whole number. Otherwise it returns `0`.
+Write a function that returns the square root of the `int` passed as parameter, if that square root is a whole number. Otherwise it returns `0`.
 
 ### Expected function
 
