@@ -24,7 +24,7 @@ Lx-y
 
 ###### Are the commands and the ants movements printed with the right format? One line per turn, `N` movements per turn, movements defined by `Lx-y` `x` being the ant and `y` being the room, as it shows above?
 
-##### Try running the program with [example00](https://[[DOMAIN]]/root/public/src/branch/master/subjects/lem-in/examples/README.md).
+##### Try running the program with [example00](https://((DOMAIN))/root/public/src/branch/master/subjects/lem-in/examples/README.md).
 
 ```
 $ go run . example00.txt
@@ -50,7 +50,7 @@ $
 
 ###### Does it present the quickest path possible with the same number of turns as the result above?
 
-##### Try running the program with [example01](https://[[DOMAIN]]/root/public/src/branch/master/subjects/lem-in/examples/README.md).
+##### Try running the program with [example01](https://((DOMAIN))/root/public/src/branch/master/subjects/lem-in/examples/README.md).
 
 ```
 $ go run . example01.txt
@@ -102,7 +102,7 @@ $
 
 ###### Does it present the quickest path possible with the same number of turns as the result above?
 
-##### Try running the program with [example02](https://[[DOMAIN]]/root/public/src/branch/master/subjects/lem-in/examples/README.md).
+##### Try running the program with [example02](https://((DOMAIN))/root/public/src/branch/master/subjects/lem-in/examples/README.md).
 
 ```
 $ go run . example02.txt
@@ -124,7 +124,7 @@ $
 
 ###### Does it present the quickest path possible with the same number of turns as the result above?
 
-##### Try running the program with [example03](https://[[DOMAIN]]/root/public/src/branch/master/subjects/lem-in/examples/README.md).
+##### Try running the program with [example03](https://((DOMAIN))/root/public/src/branch/master/subjects/lem-in/examples/README.md).
 
 ```
 $ go run . example03.txt
@@ -156,7 +156,7 @@ $
 
 ###### Does it present the quickest path possible with the same number of turns as the result above?
 
-##### Try running the program with [example04](https://[[DOMAIN]]/root/public/src/branch/master/subjects/lem-in/examples/README.md).
+##### Try running the program with [example04](https://((DOMAIN))/root/public/src/branch/master/subjects/lem-in/examples/README.md).
 
 ```
 $ go run . example04.txt
@@ -189,7 +189,7 @@ $
 
 ###### Does it present the quickest path possible with the same number of turns as the result above?
 
-##### Try running the program with [example05](https://[[DOMAIN]]/root/public/src/branch/master/subjects/lem-in/examples/README.md).
+##### Try running the program with [example05](https://((DOMAIN))/root/public/src/branch/master/subjects/lem-in/examples/README.md).
 
 ```
 $ go run . example05.txt
@@ -273,7 +273,7 @@ $
 
 ###### Does it present the quickest path possible with the same number of turns as the result above?
 
-##### Try running the program with [badexample00](https://[[DOMAIN]]/root/public/src/branch/master/subjects/lem-in/examples/README.md).
+##### Try running the program with [badexample00](https://((DOMAIN))/root/public/src/branch/master/subjects/lem-in/examples/README.md).
 
 ```
 $ go run . badexample00.txt
@@ -283,7 +283,7 @@ $
 
 ###### Does it present the right result as above?
 
-##### Try running the program with [badexample01](https://[[DOMAIN]]/root/public/src/branch/master/subjects/lem-in/examples/README.md).
+##### Try running the program with [badexample01](https://((DOMAIN))/root/public/src/branch/master/subjects/lem-in/examples/README.md).
 
 ```
 $ go run . badexample01.txt
@@ -293,11 +293,11 @@ $
 
 ###### Does it present at least the result above?
 
-##### Try running the program with [example06](https://[[DOMAIN]]/root/public/src/branch/master/subjects/lem-in/examples/README.md) and with 100 ants.
+##### Try running the program with [example06](https://((DOMAIN))/root/public/src/branch/master/subjects/lem-in/examples/README.md) and with 100 ants.
 
 ###### Is the real time less than 1.5 minutes?
 
-##### Try running the program with [example07](https://[[DOMAIN]]/root/public/src/branch/master/subjects/lem-in/examples/README.md) and with 1000 ants.
+##### Try running the program with [example07](https://((DOMAIN))/root/public/src/branch/master/subjects/lem-in/examples/README.md) and with 1000 ants.
 
 ###### Is the real time less than 2.5 minutes?
 
@@ -337,7 +337,7 @@ $
 
 ###### +Are the tests checking each possible case?
 
-###### +Does the code obey the [good practices](https://[[DOMAIN]]/root/public/src/branch/master/subjects/good-practices/README.md)?
+###### +Does the code obey the [good practices](https://((DOMAIN))/root/public/src/branch/master/subjects/good-practices/README.md)?
 
 #### Social
 

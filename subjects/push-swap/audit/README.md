@@ -92,7 +92,7 @@ OK
 
 #### Basic
 
-###### +Does the code obey the [good practices](https://[[DOMAIN]]/root/public/src/branch/master/subjects/good-practices/README.md)?
+###### +Does the code obey the [good practices](https://((DOMAIN))/root/public/src/branch/master/subjects/good-practices/README.md)?
 
 ###### +Is there a test file for this code?
 
