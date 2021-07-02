@@ -4,7 +4,7 @@
 
 "keep looking..."
 
-Create a file `lookagain.sh`, which will look for, from the current directory and its sub-folders all the files:
+Create a file `lookagain.sh`, which will look, from the current directory and its sub-folders for:
 
 - all the files ending with `.sh`.
 
