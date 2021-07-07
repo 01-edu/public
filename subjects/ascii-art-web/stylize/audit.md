@@ -1,6 +1,6 @@
 #### Functional
 
-###### Does the colors used allow you to see the text properly (ex: you can't see yellow text in a white background that well)?
+###### Do the colors used allow you to see the text properly (ex: you can't see yellow text in a white background that well)?
 
 ###### Is the design [consistent](https://digitalcommunications.wp.st-andrews.ac.uk/2016/04/07/why-is-consistency-important-in-web-design/)? (examples: every page follows the same palette of colors, is all centered or is it everything aligned to the right, etc.)
 
@@ -20,13 +20,13 @@
 
 ###### +Does the project runs quickly and effectively (Favoring of recursive, no unnecessary data requests, etc.)?
 
-###### +Is the output of the program well structured? Does any letter seems to be out of line?
+###### +Is the output of the program well structured? Is the output aligned, without any letter out of line?
 
 ###### +Is there a test file for this code?
 
 ###### +Are the tests checking each possible case?
 
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
+###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
 #### Social
 
