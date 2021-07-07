@@ -17,18 +17,10 @@
   - When it comes to the `ls -l` display, it must be identical to the system command.
   - Other flags displays are up to you.
 
-This project will help you learn about :
-
-- Unix system
-- Ways to receive data.
-- Ways to output data.
-- Manipulation of strings.
-- Manipulation of structures.
-
 ### Instructions
 
 - Your project must be written in **Go**.
-- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices/).
+- The code must respect the [**good practices**](../good-practices/README.md).
 - It is recommended that the code should present a **test file**.
 
 ### Allowed packages
@@ -55,3 +47,11 @@ This project will help you learn about :
 ### Usage
 
 You can see how the `ls` command works, by using it on your terminal.
+
+This project will help you learn about :
+
+- Unix system
+- Ways to receive data.
+- Ways to output data.
+- Manipulation of strings.
+- Manipulation of structures.

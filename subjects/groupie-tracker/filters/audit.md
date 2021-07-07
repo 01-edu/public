@@ -1,6 +1,6 @@
 #### Functional
 
-###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
+###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
 ###### Does the project have a range [filter](https://dribbble.com/shots/1751801-Ui-Elements-Social-Network-Analytics/attachments/284260)?
 
@@ -36,7 +36,7 @@
 
 ##### Try to filter the artists/bands that recorded their first album between `"1980"` and `"1990"` and have a maximum of `"4"` members.
 
-###### Did it appear as a result Phll Collins, Bobby McFerrins, Red Hot Chili Peppers and Metallica?
+###### Did it appear as a result Phil Collins, Bobby McFerrins, Red Hot Chili Peppers and Metallica?
 
 ###### Can you filter so that all the artists/bands are all shown?
 
@@ -48,7 +48,7 @@
 
 #### Basic
 
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
+###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
 ###### +Are the instructions in the website clear?
 

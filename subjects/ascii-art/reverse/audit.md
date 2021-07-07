@@ -1,6 +1,6 @@
 #### Functional
 
-###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
+###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
 ##### Try passing to the reverse flag `"--reverse=example00.txt"` the [example 00](example.md).
 
