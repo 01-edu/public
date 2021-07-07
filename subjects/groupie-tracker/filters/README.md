@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [principles](https://public.01-edu.org/subjects/groupie-tracker/) as the first subject.
+You must follow the same [principles](../README.md) as the first subject.
 
 - Groupie Tracker Filters consists on letting the user filter the artists/bands that will be shown.
 
@@ -17,13 +17,6 @@ You must follow the same [principles](https://public.01-edu.org/subjects/groupie
   - a range filter
   - a check box filter
 
-This project will help you learn about:
-
-- Manipulation, display and storage of data
-- Event creation and display
-- JSON files and format
-- Go routines
-
 ### Hints
 
 - You have to pay attention to the locations. For example Seattle, Washington, USA **is part of** Washington, USA.
@@ -32,9 +25,16 @@ This project will help you learn about:
 
 - The backend must be written in **Go**.
 - You must handle website errors.
-- The code must respect the [good practices](https://public.01-edu.org/subjects/good-practices/)
+- The code must respect the [good practices](../../good-practices/README.md)
 - It is recommended that the code should present a **test file**.
 
 ### Allowed packages
 
-- Only the [standard go](https://golang.org/pkg/) packages are allowed
+- Only the [standard Go](https://golang.org/pkg/) packages are allowed
+
+This project will help you learn about:
+
+- Manipulation, display and storage of data
+- Event creation and display
+- JSON files and format
+- Go routines
