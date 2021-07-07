@@ -1,6 +1,6 @@
 #### Functional
 
-###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
+###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
 ##### Start typing in the search bar `"Billie Joe"`.
 
@@ -44,25 +44,25 @@
 
 ##### Start typing an artist/band beginning with `"G"`.
 
-###### Does it present as suggestion the band you were looking for?
+###### Does the suggestion help you find the band you were looking for?
 
 ##### Start typing a location of one of the concerts.
 
-###### Does it present as suggestion the location you were looking for?
+###### Does the suggestion help you find the location you were looking for?
 
 ##### Try to search for an artist/band member beginning with `"R"`.
 
-###### Does it present the artist/band you were looking for?
+###### Does the suggestion help you find the artist/band you were looking for?
 
 ##### Try to search for a creation date of an artist/band.
 
-###### Does it present the artist/band you were looking for?
+###### Does the suggestion help you find the artist/band you were looking for?
 
 ###### As an auditor, is this project up to every standard? If not, why are you failing the project?(Empty Work, Incomplete Work, Invalid compilation, Cheating, Crashing, Leaks)
 
 #### Basic
 
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
+###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
 ###### +Are the instructions in the website clear?
 

@@ -1,6 +1,6 @@
 #### Functional
 
-###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
+###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
 ###### Does the project have a DockerFile?
 
@@ -12,7 +12,7 @@ REPOSITORY              TAG                             IMAGE ID            CREA
 <name of the image>     latest                          85a65d66ca39        7 seconds ago       795MB
 ```
 
-###### Run the command `"docker images"` to see all images. Does the docker image build as above?
+###### Run the command `"docker images"` to see all images. Is the docker image built as above?
 
 ##### Try running the [command](https://docs.docker.com/engine/reference/commandline/container_run/) `"docker container run [OPTIONS] IMAGE [COMMAND] [ARG...]"` to start the container using the image just created. (example : `"docker container run -p <port_you_what_to_run> --detach --name <name_of_the_container> <name_of_the_image>"`)
 
@@ -37,7 +37,7 @@ exit
 student$
 ```
 
-###### Is the file system for the containers well organized?
+###### Is the file system of the containers well organized?
 
 ###### Does the DockerFile contain some [metadata](https://docs.docker.com/config/labels-custom-metadata/) applied to the docker object?
 
@@ -53,7 +53,7 @@ student$
 
 ###### +Does the server run quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
 
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
+###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
 ###### +Is there a test file for this code?
 

@@ -38,7 +38,7 @@
 
 ##### Try creating a server and 3 Clients and send a message using the second Client.
 
-###### Does all the Clients (first, second and third) received the same message?
+###### Did all the Clients (first, second and third) received the same message?
 
 ##### Try creating a server and use 2 or 3 different computers and create for each computer one Client.
 
@@ -46,11 +46,11 @@
 
 ##### Try creating a server and 4 Clients and disconnect one of the Clients.
 
-###### Does the rest of the Clients stay connected?
+###### Do the rest of the Clients stay connected?
 
 ##### Try creating a server and 3 Clients and disconnect one of the Clients.
 
-###### Does the rest of the Clients receive a message notifying that the Client left?
+###### Do the rest of the Clients receive a message notifying that the Client left?
 
 ##### Try creating a server and 3 Clients. Then send messages between the Clients.
 
@@ -64,9 +64,9 @@
 
 ###### Does the project present go routines?
 
-###### Does the project use channels or mutexe?
+###### Does the project use channels or mutexes?
 
-##### Are the students using just the allowed functions?
+##### Are the students using just the allowed packages?
 
 ###### As an auditor, is this project up to every standard? If not, why are you failing the project?(Empty Work, Incomplete Work, Invalid compilation, Cheating, Crashing, Leaks)
 
@@ -78,7 +78,7 @@
 
 ###### +Does the server produce logs about Clients activities?
 
-###### +Does the server logs saved into a file?
+###### +Are the server logs saved into a file?
 
 ###### +Is there more NetCat flags implemented?
 
@@ -88,7 +88,7 @@
 
 ###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
 
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
+###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
 ###### +Is there a test file for this code?
 

@@ -1,8 +1,8 @@
 #### Functional
 
-###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
+###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
-###### Is [geocoding](https://developers.google.com/maps/documentation/geocoding/intro) API being used to converting addresses into geographic coordinates?
+###### Is [geocoding](https://developers.google.com/maps/documentation/geocoding/intro) being used to convert addresses into geographical coordinates?
 
 ##### Try to input `"Queen"` to see the concerts locations.
 
@@ -109,7 +109,7 @@ alabama usa
 
 #### Basic
 
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
+###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
 ###### +Are the instructions in the website clear?
 
