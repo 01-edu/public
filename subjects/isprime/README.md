@@ -8,6 +8,8 @@ The function must be optimized in order to avoid time-outs with the tester.
 
 (We consider that only positive numbers can be prime numbers)
 
+(We also consider that 1 is **not** a prime number)
+
 ### Expected function
 
 ```go
