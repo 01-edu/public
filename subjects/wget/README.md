@@ -10,7 +10,6 @@ These functionalities will consist in:
 - Downloading a single file and saving it under a different name
 - Downloading and saving the file in a specific directory
 - Set the download speed, limiting the rate speed of a download
-- Continuing interrupted downloads
 - Downloading a file in background
 - Downloading multiple files at the same time, by reading a file containing multiple download links asynchronously
 - Main feature will be to download an entire website, [mirroring a website](https://en.wikipedia.org/wiki/Mirror_site)
@@ -59,7 +58,22 @@ finished at 2017-10-14 03:46:07
 
 Your program should be able to handle different flags.
 
-1. Download a file and save it under a different name by using the flag `-O` followed by the name you wish to save the file, example:
+1. The flag `-B` should be handled, this flag should download a file immediately to the background and the output should be redirected to a log file. When the program containing this flag is executed it should output : `Output will be written to "wget-log"`. Example:
+
+```console
+$ go run . -B https://pbs.twimg.com/media/EMtmPFLWkAA8CIS.jpg
+Output will be written to "wget-log".
+$ cat wget-log
+start at 2017-10-14 03:46:06
+sending request, awaiting response... status 200 OK
+content size: 56370 [~0.06MB]
+saving file to: ./EMtmPFLWkAA8CIS.jpg
+Downloaded [https://pbs.twimg.com/media/EMtmPFLWkAA8CIS.jpg]
+finished at 2017-10-14 03:46:07
+$
+```
+
+2. Download a file and save it under a different name by using the flag `-O` followed by the name you wish to save the file, example:
 
 ```console
 $ go run . -O=meme.jpg https://pbs.twimg.com/media/EMtmPFLWkAA8CIS.jpg
@@ -78,7 +92,7 @@ $ ls -l
 
 ---
 
-2. It should also handle the path to where your file is going to be saved using the flag `-P` followed by the path to where you want to save the file, example:
+3. It should also handle the path to where your file is going to be saved using the flag `-P` followed by the path to where you want to save the file, example:
 
 ```console
 $ go run . -P=~/Downloads/ -O=meme.jpg https://pbs.twimg.com/media/EMtmPFLWkAA8CIS.jpg
@@ -96,7 +110,7 @@ $ ls -l ~/Downloads/meme.jpg
 
 ---
 
-3. The program should handle speed limit. Basically the program can control the speed of the download by using the flag `--rate-limit`. If you download a huge file you can limit the speed of your download, preventing the program from using the full possible bandwidth of your connection, example:
+4. The program should handle speed limit. Basically the program can control the speed of the download by using the flag `--rate-limit`. If you download a huge file you can limit the speed of your download, preventing the program from using the full possible bandwidth of your connection, example:
 
 ```console
 $ go run . --rate-limit=400k https://pbs.twimg.com/media/EMtmPFLWkAA8CIS.jpg
@@ -106,7 +120,7 @@ This flag should accept different value types, example: k and M. So you can put 
 
 ---
 
-4. Downloading different files should be possible. For this the program will receive the `-i` flag followed by a file name that will contain all links that are to be downloaded. Example:
+5. Downloading different files should be possible. For this the program will receive the `-i` flag followed by a file name that will contain all links that are to be downloaded. Example:
 
 ```console
 $ ls
@@ -127,7 +141,7 @@ The Downloads should work asynchronously, it should download both files at the s
 
 ---
 
-5. [**Mirror a website**](https://en.wikipedia.org/wiki/Mirror_site). This option should download the entire website being possible to use "part" of the website offline and for other useful [reasons](https://www.quora.com/How-exactly-does-Mirror-Site-works-and-how-it-is-done). For this you will have to download the website file system and save it into a folder that will have the domain name. Example: `http://www.example.com`, will be stored in a folder with the name `www.example.com` containing every file from the mirrored website. The flag should be `--mirror`.
+6. [**Mirror a website**](https://en.wikipedia.org/wiki/Mirror_site). This option should download the entire website being possible to use "part" of the website offline and for other useful [reasons](https://www.quora.com/How-exactly-does-Mirror-Site-works-and-how-it-is-done). For this you will have to download the website file system and save it into a folder that will have the domain name. Example: `http://www.example.com`, will be stored in a folder with the name `www.example.com` containing every file from the mirrored website. The flag should be `--mirror`.
 
 The default usage of the flag will be to retrieve and parse the HTML or CSS from the given URL. This way retrieving the files that the document refers through tags. The tags that will be used for this retrieval must be `a`, `link` and `img` that contains attributes `href` and `src`.
 

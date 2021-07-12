@@ -68,6 +68,31 @@ http://ipv4.download.thinkbroadband.com/10MB.zip
 
 ###### Did the downloads occurred in an asynchronous way? (tip: look to the download order)
 
+##### Try to run the following command, `"./wget -B http://ipv4.download.thinkbroadband.com/20MB.zip"`
+
+```
+Output will be written to ‘wget-log’.
+```
+
+###### Did the program output the statement above?
+
+###### Was the download made in "silence" (without displaying anything to the terminal)?
+
+##### Try and open the log file `"wget-log"`.
+
+```
+start at <date that the download started>
+sending request, awaiting response... status 200 OK
+content size: <56370 [~0.06MB]>
+saving file to: ./<name-of-the-file-downloaded>
+Downloaded [<link-downloaded>]
+finished at <date that the download finished>
+```
+
+###### Is the structure of the file organized like above?
+
+###### And if so, was the file actually downloaded?
+
 #### Mirror
 
 ##### Try to run the following command `"./wget --mirror http://corndog.io/"`, then try to open the `"index.html"` with a browser
