@@ -13,7 +13,7 @@ On this project you will have to focus on a few points:
 
 As you already did the first forum you can use part of the code, but not all of it. Your new forum will have five different parts:
 
-- **SQLite**, in which you will store data, just like in the [previous forum](https://public.01-edu.org/subjects/forum/#communication)
+- **SQLite**, in which you will store data, just like in the [previous forum](../forum/README.md#Communication)
 - **Golang**, in which you will handle data and Websockets (Backend)
 - **Javascript**, in which you will handle all the Frontend events and clients Websockets
 - **HTML**, in which you will organize the elements of the page

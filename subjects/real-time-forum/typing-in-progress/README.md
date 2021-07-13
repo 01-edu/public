@@ -2,11 +2,11 @@
 
 ### Objectives
 
-You must follow the same [principles](https://public.01-edu.org/subjects/real-time-forum/README.md) as the first subject.
+You must follow the same [principles](../README.md) as the first subject.
 
 For this project you must create:
 
-- A [Typing in progress](https://i.insider.com/56996788dd0895a06c8b460c?width=1100&format=jpeg&auto=webp) engine
+- A [Typing in progress](https://i.insider.com/56996788dd0895a06c8b460c?width=1100&format=jpeg&auto=webp) engine.
 
 ### Instructions
 

@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [principles](https://public.01-edu.org/subjects/make-your-game/README.md) as the first subject.
+You must follow the same [principles](../README.md) as the first subject.
 
 For this project you must take into account the creation of a **story mode**, a version of a computer game in which the player controls a character in a story.
 

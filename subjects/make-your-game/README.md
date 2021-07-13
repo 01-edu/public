@@ -17,8 +17,7 @@ Here are some of the features you want to implement on your game:
 - Run the game at least at **60fps** at all time
 - You must not have frame drops!
 - Proper use of **RequestAnimationFrame**
-- It is very hard to predict performances in JS. So measure performances,
-  to know if your code is fast. This will be tested
+- It is very hard to predict performances in JS. So measure performances to see if your code is fast. This will be tested!
 - Pause menu, that includes:
   - Continue
   - Restart
@@ -31,7 +30,7 @@ You must not use frameworks or canvas, the game must be implemented using just p
 
 ### Instructions
 
-Animation must have consistent motion, so in order to have a smooth animation (without interruptions or better named: jank animation) you must achieve a special number, [**60fps**](https://blog.algolia.com/performant-web-animations/). You can see more about performance [here](https://public.01-edu.org/subjects/good-practices/)
+Animation must have consistent motion, so in order to have a smooth animation (without interruptions or better named: jank animation) you must achieve a special number, [**60fps**](https://blog.algolia.com/performant-web-animations/). You can see more about performance [here](../good-practices/README.md)
 
 In order to play the game you must use only the keyboard. The usage of keyboard must be smooth, in other words you must not spam the key to move the player. But instead you must, for example maintain the key pressed and the player must continue to do the proper action. If the key is released the player should stop doing the action.
 

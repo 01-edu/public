@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [principles](https://public.01-edu.org/subjects/forum/) as the first subject.
+You must follow the same [principles](../README.md) as the first subject.
 
 In `forum advanced features`, you will have to implement the following features :
 
@@ -21,14 +21,10 @@ In `forum advanced features`, you will have to implement the following features 
 
 We encourage you to add any other additional features that you find relevant.
 
-This project will help you learn about :
-
-- Data manipulation and storage
-
 ### Instructions
 
 - The backend must be written in **Go**
-- The code must respect the [good practices](https://public.01-edu.org/subjects/good-practices/)
+- The code must respect the [good practices](../../good-practices/README.md)
 - It is recommended that the code should present a **test file**
 
 ### Allowed packages

@@ -18,31 +18,35 @@
 
 ###### Does it correctly correspond to those in the examples?
 
-###### Can you add a todo element to the todo list?
+###### Can you add a to-do element to the to-do list?
 
-###### When you add a todo element to the list, does the footer (element with class footer) appear as in other examples?
+###### When you add a to-do element to the list, does the footer (element with class footer) appear as in other examples?
 
-###### Can you check/uncheck a todo element on the list?
+###### Can you check/uncheck a to-do element on the list?
 
-###### Can you remove a todo element off the list?
+###### Can you remove a to-do element off the list?
 
-##### Add at least 2 todos and select only one of them.
+##### Add at least 2 to-dos and select only one of them.
 
-###### If you click on the **Active** button, does it appear only the unchecked todos?
+###### If you click on the **Active** button, does it appear only the unchecked to-dos?
 
-###### And if you click on the **Completed** button, does it appear only the checked todos?
+###### And if you click on the **Completed** button, does it appear only the checked to-dos?
 
-###### Does it appear a **Clear Completed** button todos?
+###### Does it appear a **Clear Completed** button to-dos?
 
-###### When clicking on the clear completed button, does it remove only the checked todos?
+###### When clicking on the clear completed button, does it remove only the checked to-dos?
 
 ###### When clicking on the **Active** and **Completed** buttons, does the URL change?
 
-##### Add 3 todos to the list and check each one, keeping an eye on the counter of todos left to do.
+##### Add 3 to-dos to the list and check each one, keeping an eye on the counter of to-dos left to do.
 
 ###### Does the counter change accordingly to your actions?
 
-###### If you double click a todo element on the list can you edit that element?
+###### If you double click a to-do element on the list can you edit that element?
+
+#### Basic
+
+###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
 #### Bonus
 
@@ -57,3 +61,9 @@
 ###### +Is the code using synchronicity to increase performance?
 
 ###### +Do you think in general this project is well done?
+
+#### Social
+
+###### +Did you learn anything from this project?
+
+###### +Would you recommend/nominate this program as an example for the rest of the school?

@@ -2,9 +2,9 @@
 
 ### Objectives
 
-You must follow the same [principles](https://public.01-edu.org/subjects/forum/) as the first subject.
+You must follow the same [principles](../README.md) as the first subject.
 
-The `forum-moderation` will be based on a moderation system. It must present a moderator that, depending on the access level of a user or the forum set-up, approves posted messages before they become publicly visible.
+The `forum moderation` will be based on a moderation system. It must present a moderator that, depending on the access level of a user or the forum set-up, approves posted messages before they become publicly visible.
 
 - The filtering can be done depending on the categories of the post being sorted by irrelevant, obscene, illegal or insulting.
 
@@ -32,18 +32,13 @@ You should implement at least 4 types of users :
   - Promote or demote a normal user to, or from a moderator user.
   - Receive reports from moderators. If the admin receives a report from a moderator, he can respond to that report
   - Delete posts and comments
-  - Manage the categories, by being able to creating and deleting them.
-
-This project will help you learn about :
-
-- Moderation System
-- User access levels
+  - Manage the categories, by being able to create and delete them.
 
 ### Instructions
 
 - You must handle website errors, HTTPS status.
 - You must handle all sort of technical errors.
-- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices/).
+- The code must respect the [**good practices**](../../good-practices/README.md).
 - It is recommended that the code should present a **test file**.
 
 ### Allowed packages
@@ -52,3 +47,8 @@ This project will help you learn about :
 - github.com/mattn/go-sqlite3
 - golang.org/x/crypto/bcrypt
 - github.com/satori/go.uuid
+
+This project will help you learn about:
+
+- Moderation System
+- User access levels
