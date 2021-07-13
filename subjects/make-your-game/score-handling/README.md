@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [principles](https://public.01-edu.org/subjects/make-your-game/README.md) as the first subject.
+You must follow the same [principles](../README.md) as the first subject.
 
 For this project you must take into account:
 
@@ -63,7 +63,7 @@ Here is an example:
 
 ### Allowed Packages
 
-- Only the [standard go](https://golang.org/pkg/) packages are allowed
+- Only the [standard Go](https://golang.org/pkg/) packages are allowed
 - [Gorilla](https://pkg.go.dev/github.com/gorilla/websocket) websocket
 
 This project will help you learn about:

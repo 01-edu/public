@@ -1,6 +1,6 @@
 #### Functional
 
-###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
+###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
 ##### Try passing as arguments `"hello world" --color=red`.
 
@@ -68,7 +68,7 @@
 
 ###### +Are the tests checking each possible case?
 
-###### +Does the code obey the [good practices](https://[[DOMAIN]]/root/public/src/branch/master/subjects/ascii-art)?
+###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
 #### Social
 

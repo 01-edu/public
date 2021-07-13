@@ -1,6 +1,6 @@
 #### Functional
 
-###### Has the requirement for the allowed packages been respected? (Reminder for this project: (only [standard packages](https://golang.org/pkg/)
+###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
 ##### Try passing as arguments `"hello" standard`
 
@@ -172,7 +172,7 @@ o-O-o  o    o-o         o   o   o-o o   o  o | o  o o--O
 
 ###### +Are the tests checking each possible case?
 
-###### +Does the code obey the [good practices](https://[[DOMAIN]]/root/public/src/branch/master/subjects/good-practices/README.md)?
+###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
 #### Social
 

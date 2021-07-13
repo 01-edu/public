@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [principles](https://public.01-edu.org/subjects/make-your-game/README.md) as the first subject.
+You must follow the same [principles](../README.md) as the first subject.
 
 For this project you must create:
 
@@ -49,7 +49,7 @@ This will generate a map object that contains:
 - `tiles` that is an array with the grid logic
 - `getTile` function to get the tale position
 
-**Note that this is an example! you can add properties that better suit your game**
+**Note that this is an example! You can add properties that better suit your game**
 
 This project will help you learn about:
 
