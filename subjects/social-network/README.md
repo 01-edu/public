@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You will have to create a Facebook-like social network that will contain:
+You will have to create a Facebook-like social network that will contain the following features:
 
 - Followers
 - Profile
@@ -15,9 +15,9 @@ You will have to create a Facebook-like social network that will contain:
 
 ### Frontend
 
-Frontend development is the art of creating sites and web applications that render on the "client-side". It includes everything that users experience directly: text colors and styles, images, graphs and tables, buttons, colors, and navigation menu. It focus on making request to the backend in order to get specific chunks of data to be used or send data to be stored on the backend.
+Frontend development is the art of creating sites and web applications that render on the "client-side". It includes everything that users experience directly: text colors and styles, images, graphs and tables, buttons, colors, and navigation menus. It focuses on making requests to the backend in order to get specific chunks of data to be used or send data to be stored on the backend.
 
-HTML, CSS, and Javascript are the languages used for frontend development. Responsiveness and performance are two main objectives of the frontend. It can be used frontend frameworks to simplify a developers work.
+HTML, CSS, and Javascript are the languages used for frontend development. Responsiveness and performance are two main objectives of the frontend. Frontend frameworks may be used to simplify a developers work.
 
 #### Framework
 
@@ -38,24 +38,24 @@ Caution: Note that JS frameworks are different from JS libraries. JS libraries c
 
 ### Backend
 
-The back-end is all of the technology required to process the incoming request, generate and send the response to the client.
+The backend is all of the technology required to process the incoming requests and generate and send responses to the client.
 This is typically divided into three major parts:
 
-- **Server**, this is the computer that receives request. Though there are machines made and optimized for this particular purpose, you will use your own computer.
+- **Server**: is the computer that receives requests. Though there are machines made and optimized for this particular purpose, you will use your own computer.
 
-- **App**, this is the application running on the server that listens for requests, retrieves information from the database and sends a response. The server runs an app that contains all the logic about how to respond to various requests based on the HTTP or other types of protocols. Some of these handlers functions will be middleware. Middleware is any code that executes between the server receiving a request and sending a response.
+- **App**: is the application running on the server that listens for requests, retrieves information from the database and sends responses. The server runs an app that contains all the logic about how to respond to various requests based on the HTTP or other types of protocols. Some of these handlers functions will be middleware. Middleware is any code that executes between the server receiving a request and sending a response.
 
-- **Database**, are used as you already know, to organize and persist data. Many requests sent to the server might require a database query. A client might request information that is stored in the database, or a client might submit data with their request to be added to the database.
+- **Database**: is used, as you already know, to organize and persist data. Many requests sent to the server might require a database query. A client might request information that is stored in the database, or a client might submit data with their request to be added to the database.
 
 #### App
 
-The backend will consist, like said above, of an **app** containing all the backend logic. This logic will there for have several middleware, for example:
+The backend will consist, like said above, of an **app** containing all the backend logic. This logic will therefore have several middleware, for example:
 
 - Authentication, since HTTP is a stateless protocol, we can use several ways to overcome and authenticate a client/user. You must use [sessions](https://allaboutcookies.org/cookies/session-cookies-used-for.html) and cookies.
-- Images handling, supporting various types of extensions. In this project you have to handle at least JPEG, PNG types. You will have to store the images, it can be done by storing the file/path in the database and saving the image in a specific file system.
+- Images handling, supporting various types of extensions. In this project you have to handle at least JPEG, PNG and GIF types. You will have to store the images, it can be done by storing the file/path in the database and saving the image in a specific file system.
 - Websocket, handling the connections in real time, between clients. This will help with the private chats.
 
-For the web server you can take a look at [caddy](https://caddyserver.com/docs/), it can serve your site, services and apps and its written in **go**, or you are free to create your own web server.
+For the web server you can take a look at [caddy](https://caddyserver.com/docs/), it can serve your site, services and apps and its written in **Go**. Or you are free to create your own web server.
 
 #### Sqlite
 
@@ -66,9 +66,9 @@ To know more about SQLite you can check the [SQLite page](https://www.sqlite.org
 
 #### Migrate
 
-You will have to create migrations for this project so every time the application runs it creates the specific tables to make the project work properly.
+You will have to create migrations for this project so every time the application runs, it creates the specific tables to make the project work properly.
 
-For this you must focus on a folder structure similar to this one:
+For this, you must focus on a folder structure similar to this one:
 
 ```console
 student$ tree .
@@ -97,14 +97,6 @@ All migrations should be stored on a specific folder, as above. The `sqlite.go` 
 
 This migration system can help you manage your time and testing, by filling your database.
 
-#### Allowed Packages
-
-- Only the [standard go](https://golang.org/pkg/) packages are allowed
-- [Gorilla](https://pkg.go.dev/github.com/gorilla/websocket) websocket
-- [golang-migrate](https://github.com/golang-migrate/migrate/)
-- [sql-migration](https://pkg.go.dev/github.com/rubenv/sql-migrate)
-- [migration](https://pkg.go.dev/github.com/Boostport/migration)
-
 ---
 
 ### docker
@@ -119,7 +111,7 @@ The communication is done in the browser so you will have to publish the ports f
 
 ### Authentication
 
-To be able for the users to use the social network they will have to make an account. So you will have to make a registration and login form. To register, every user should provide at least:
+In order for the users to use the social network they will have to make an account. So you will have to make a registration and login form. To register, every user should provide at least:
 
 - Email
 - Password
@@ -132,7 +124,7 @@ To be able for the users to use the social network they will have to make an acc
 
 Note that the **Avatar/Image**, **Nickname** and **About Me** should be present in the form but the user can skip the filling of those fields.
 
-When you login you should stay logged in until you choose a logout option that should be available at all times. For this you will have to implement [sessions](https://allaboutcookies.org/cookies/session-cookies-used-for.html) and [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies).
+When the user logins, he/she should stay logged in until he/she chooses a logout option that should be available at all times. For this you will have to implement [sessions](https://allaboutcookies.org/cookies/session-cookies-used-for.html) and [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies).
 
 You can implement your own package for sessions and cookies or you can take a look at some packages to help you.
 
@@ -140,7 +132,7 @@ You can implement your own package for sessions and cookies or you can take a lo
 
 ### Followers
 
-When navigating the social network you should be able to follow and unfollow other users. Needless to say that to unfollow a user you have to be following him/her.
+When navigating the social network the user should be able to follow and unfollow other users. Needless to say that to unfollow a user you have to be following him/her.
 
 In order to follow someone the user first needs to send a request to the user he/she wants to follow. Then the other user should be able to accept the request or decline it. If the second user has a public profile (explained in the next topic) this step is skipped and the sending of the request is ignored.
 
@@ -163,7 +155,7 @@ When the user is in their own profile it should be available an option that allo
 
 ### Posts
 
-After a user is logged in he/she can create posts and comments, on already created posts. While creating a post or a comment, the user can include an image or GIF.
+After a user is logged in he/she can create posts and comments on already created posts. While creating a post or a comment, the user can include an image or GIF.
 
 The user must be able to specify the privacy of the post:
 
@@ -200,7 +192,7 @@ After creating the event every user can choose one of the options for the event.
 
 The user should be able to send private messages to users that he/she is following. It should be able for the users to send emojis to each other.
 
-The user that the message was sent to, will receive the message instantly, by the usage of Websockets. If he/she is following the user that sent the message or if the user has a public profile.
+The user that the message was sent to, will receive the message instantly, by the usage of Websockets, if he/she is following the user that sent the message or if the user has a public profile.
 
 Groups should have a common chat room, so if a user is a member of the group he/she should be able to send and receive messages to this group chat.
 
@@ -218,6 +210,14 @@ A user should be notified if he/she:
 - is member of a group and an event is created
 
 Every other notification created by you that isn't on the list is welcomed too.
+
+#### Allowed Packages
+
+- The [standard Go](https://golang.org/pkg/) packages are allowed
+- [Gorilla](https://pkg.go.dev/github.com/gorilla/websocket) websocket
+- [golang-migrate](https://github.com/golang-migrate/migrate/)
+- [sql-migration](https://pkg.go.dev/github.com/rubenv/sql-migrate)
+- [migration](https://pkg.go.dev/github.com/Boostport/migration)
 
 This project will help you learn about:
 
