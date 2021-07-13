@@ -10,9 +10,9 @@ For this project you have to create a bomberman alike game, where multiple playe
 
 In the beginning there was 4 players, and only one came out alive. Each player will have to start in the different corners of the map and only one will be victorious.
 
-You will have to follow more a less the same principles has the [make-your-game](https://public.01-edu.org/subjects/make-your-game/) project. But we will refresh one of the concepts you will have to respect and deal with:
+You will have to follow more a less the same principles has the [make-your-game](../make-your-game/README.md) project. But we will refresh one of the concepts you will have to respect and deal with:
 
-- [**Performance**](https://public.01-edu.org/subjects/good-practices/), is one of the most important aspects while developing a game, so lets respect it.\
+- [**Performance**](../good-practices/README.md), is one of the most important aspects while developing a game, so lets respect it.\
    Just like make-your-game you will have to respect the policy of:
 
   - Running the game at least at **60fps** at all time
@@ -20,9 +20,9 @@ You will have to follow more a less the same principles has the [make-your-game]
   - Proper use of [**`requestAnimationFrame`**](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
   - Measuring performance to know if your code is fast
 
-You must not use canvas neither [Web-GL](https://get.webgl.org/) or other framework. For this project you will use the framework you did on the [mini-framework](https://public.01-edu.org/subjects/mini-framework/) project.
+You must not use canvas, neither [Web-GL](https://get.webgl.org/) or other framework. For this project you will use the framework you did on the [mini-framework](../mini-framework/) project.
 
-You will have to make also a chat that enables the different players to talk to each other. As you will have to use [WebSockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API), this **chat can be considered as a "Hello World" of the multiplayer feature** for the **bomberman-dom**.
+You will have to make also a chat that enables the different players to talk to each other. You will have to use [WebSockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API). This chat **chat can be considered as a "Hello World" of the multiplayer feature** for the **bomberman-dom**.
 
 #### Game Mechanics
 
@@ -35,7 +35,7 @@ You will have to make also a chat that enables the different players to talk to 
 
    1. The map should be fixed so that every player sees the whole map.
    2. There will be two types of blocks, the ones that can be destroyed (blocks) and the ones that can not (walls).
-      1. The walls will be placed always in the same place, while the blocks are meant to be generated randomly on the map. Tip: the optional project [different maps](https://public.01-edu.org/subjects/make-your-game/different-maps) can be useful for this part.
+      1. The walls will be placed always in the same place, while the blocks are meant to be generated randomly on the map. Tip: the optional project [different maps](../make-your-game/different-maps/README.md) can be useful for this part.
       2. In the starting positions the players need to be able to survive. For example: if the players place a bomb, they will need to have space to avoid the bomb explosion.
    3. The players should be placed in the corners as their starting positions.
 
