@@ -1,6 +1,6 @@
 #### Functional
 
-###### Has the requirement for the allowed packages been respected?
+###### Has the requirements for the allowed packages been respected?
 
 ##### Open the project
 
@@ -12,7 +12,7 @@
 
 #### Database
 
-###### Is Sqlite being used in the project as the database?
+###### Is SQLite being used in the project as the database?
 
 ###### Does the app implement a migration system?
 
