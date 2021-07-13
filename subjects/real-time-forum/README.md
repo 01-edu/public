@@ -13,7 +13,7 @@ On this project you will have to focus on a few points:
 
 As you already did the first forum you can use part of the code, but not all of it. Your new forum will have five different parts:
 
-- **SQLite**, in which you will store data, just like in the [previous forum](https://public.01-edu.org/subjects/forum/#communication)
+- **SQLite**, in which you will store data, just like in the [previous forum](../forum/README.md#Communication)
 - **Golang**, in which you will handle data and Websockets (Backend)
 - **Javascript**, in which you will handle all the Frontend events and clients Websockets
 - **HTML**, in which you will organize the elements of the page
@@ -69,7 +69,7 @@ As it is expected, the messages should work in real time, in other words, if a u
 
 ### Allowed Packages
 
-- Only the [standard go](https://golang.org/pkg/) packages are allowed
+- Only the [standard Go](https://golang.org/pkg/) packages are allowed
 - [Gorilla](https://pkg.go.dev/github.com/gorilla/websocket) websocket
 
 This project will help you learn about:

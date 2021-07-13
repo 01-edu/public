@@ -62,6 +62,10 @@
 
 ###### Is the list of most requested services updated with this new service?
 
+#### Basic
+
+###### +Does the code obey the [good practices](../../good-practices/README.md)?
+
 ### Bonus
 
 ###### +Is a system implemented where Customers can rate the services they have requested?
@@ -71,3 +75,9 @@
 ###### +Are there any other bonuses implemented?
 
 ###### +Did the student implement its own display and design?
+
+#### Social
+
+###### +Did you learn anything from this project?
+
+###### +Would you recommend/nominate this program as an example for the rest of the school?
