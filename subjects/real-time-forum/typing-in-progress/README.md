@@ -2,11 +2,11 @@
 
 ### Objectives
 
-You must follow the same [principles](https://public.01-edu.org/subjects/real-time-forum/README.md) as the first subject.
+You must follow the same [principles](../README.md) as the first subject.
 
 For this project you must create:
 
-- A [Typing in progress](https://i.insider.com/56996788dd0895a06c8b460c?width=1100&format=jpeg&auto=webp) engine
+- A [Typing in progress](https://i.insider.com/56996788dd0895a06c8b460c?width=1100&format=jpeg&auto=webp) engine.
 
 ### Instructions
 
@@ -25,7 +25,7 @@ To help with the display of the typing in progress you can take a look on the js
 
 ### Allowed Packages
 
-- Only the [standard go](https://golang.org/pkg/) packages are allowed
+- Only the [standard Go](https://golang.org/pkg/) packages are allowed
 - [Gorilla](https://pkg.go.dev/github.com/gorilla/websocket) websocket
 
 This project will help you learn about:

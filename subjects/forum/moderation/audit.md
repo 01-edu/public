@@ -20,13 +20,13 @@
 
 ##### Try accepting a moderator using the admin user.
 
-###### Has the moderator been promoted?
+###### Was the user promoted to moderator?
 
-##### Try using the moderator to delete a obscene post
+##### Try using the moderator to delete an obscene post.
 
-###### Can you confirm that it is possible?
+###### Can you confirm that it is possible to delete the post?
 
-##### Try using the moderator to report a illegal post
+##### Try using the moderator to report a illegal post.
 
 ###### Did the admin user receive the report?
 
@@ -43,6 +43,12 @@
 #### General
 
 ###### +Does the project present more then 4 types of users?
+
+#### Basic
+
+###### +Does the code obey the [good practices](../../good-practices/README.md)?
+
+###### +Are the instructions in the website clear?
 
 #### Social
 
