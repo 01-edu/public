@@ -10,13 +10,13 @@
 
 ###### Does the game generate different tile maps, not making use of tile editors?
 
-##### Try playing the game in 3 different maps
+##### Try playing the game in 3 different maps.
 
 ###### Were you able to play the game with no inconvenience?
 
 ###### Does the game avoid the use of `canvas`?
 
-##### Check the tile map in the code and the map on the game
+##### Check the tile map in the code and the map on the game.
 
 ###### Does the tile map in the code matches with the displayed map?
 
@@ -30,11 +30,11 @@
 
 ###### Does the game run at or around 60fps
 
-##### Try using the Dev Tool/performance and the option rendering with the paint ON, if possible
+##### Try using the Dev Tool/performance and the option rendering with the paint ON, if possible.
 
 ###### Is the paint being used as less as possible?
 
-##### Try using the Dev Tool/performance and the option rendering with the layer ON, if possible
+##### Try using the Dev Tool/performance and the option rendering with the layer ON, if possible.
 
 ###### Is the layers being used as less as possible?
 
@@ -44,7 +44,7 @@
 
 ###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
 
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/README.md)?
+###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
 ###### +Is the code using synchronicity to increase performance?
 

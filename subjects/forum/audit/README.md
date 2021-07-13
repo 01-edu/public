@@ -80,21 +80,21 @@ cc8f5dcf760f        <name of the image>    "./server"               6 seconds ag
 
 #### Functional
 
-##### Enter the forum as a non-registered user.
+##### Enter the forum as a non-registered user and try to create a post.
 
-###### Are you prohibited to create a post?
+###### Are you forbidden to create a post?
 
-##### Enter the forum as a non-registered user.
+##### Enter the forum as a non-registered user and try to create a comment.
 
-###### Are you prohibited to create a comment?
+###### Are you forbidden to create a comment?
 
 ##### Enter the forum as a non-registered user and try to like a comment.
 
-###### Are you prohibited to like a post?
+###### Are you forbidden to like a post?
 
 ##### Enter the forum as a non-registered user and try to dislike a comment.
 
-###### Are you prohibited to dislike a comment?
+###### Are you forbidden to dislike a comment?
 
 ##### Enter the forum as a registered user, go to a post and try to create a comment for it.
 
@@ -102,7 +102,7 @@ cc8f5dcf760f        <name of the image>    "./server"               6 seconds ag
 
 ##### Enter the forum as a registered user, go to a post and try to create an empty comment for it.
 
-###### Were you prohibited to create the comment?
+###### Were you forbidden to create the empty comment?
 
 ##### Enter the forum as a registered user and try to create a post.
 
@@ -110,7 +110,7 @@ cc8f5dcf760f        <name of the image>    "./server"               6 seconds ag
 
 ##### Enter the forum as a registered user and try to create an empty post.
 
-###### Were you prohibited to create the post?
+###### Were you forbidden to create the empty post?
 
 ##### Try creating a post as a registered user and try to choose several categories for that post.
 
@@ -128,7 +128,7 @@ cc8f5dcf760f        <name of the image>    "./server"               6 seconds ag
 
 ###### Can you like or dislike the comment?
 
-##### Enter the forum as a registered user, try liking and disliking a post and then refresh the page.
+##### Enter the forum as a registered user, try liking or disliking a post and then refresh the page.
 
 ###### Does the number of likes/dislikes change?
 
@@ -158,9 +158,9 @@ cc8f5dcf760f        <name of the image>    "./server"               6 seconds ag
 
 ###### Are all the pages working? (Absence of 404 page?)
 
-###### Does the project handle [HTTP status 400 - Bad Requests](https://kinsta.com/knowledgebase/400-bad-request/#causes)?
+###### Does the project handle [HTTP status 400 - Bad Requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)?
 
-###### Does the project handle [HTTP status 500 - Internal Server Errors](https://www.restapitutorial.com/httpstatuscodes.html)?
+###### Does the project handle [HTTP status 500 - Internal Server Errors](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)?
 
 ###### Are only the allowed packages being used?
 
@@ -174,7 +174,7 @@ cc8f5dcf760f        <name of the image>    "./server"               6 seconds ag
 
 ###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
 
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
+###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
 ###### +Is there a test file for this code?
 

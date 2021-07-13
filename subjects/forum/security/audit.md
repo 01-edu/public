@@ -4,7 +4,7 @@
 
 ###### Does the URL contain HTTPS?
 
-###### Is the project implementing [cipher suites](https://www.iana.org/assignments/tls-parameters/tls-parameters.xml)?
+###### Is the project implementing [cipher suites](https://en.wikipedia.org/wiki/Cipher_suite)?
 
 ###### Is the Go TLS structure well configured?
 
@@ -24,7 +24,7 @@
 
 ###### Does the session cookie present a UUID(Universal Unique Identifier)?
 
-###### Does the project present a way to configure the certificates information, either via .env or config files or another method?
+###### Does the project present a way to configure the certificates information, either via .env, config files or another method?
 
 ###### Are only the allowed packages being used?
 
@@ -40,7 +40,7 @@
 
 ###### +Does the project runs quickly and effectively? (no unnecessary data requests, etc)
 
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
+###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
 ###### +Is there a test file for this code?
 

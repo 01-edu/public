@@ -10,16 +10,11 @@ Some examples of authentication means are:
 - GitHub
 - Google
 
-This project will help you learn about:
-
-- Sessions and cookies.
-- Protecting routes.
-
 ### Instructions
 
 - Your project must have implemented at least the two authentication examples given.
 - Your project must be written in **Go**.
-- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices/).
+- The code must respect the [**good practices**](../../good-practices/README.md).
 
 ### Allowed packages
 
@@ -27,3 +22,8 @@ This project will help you learn about:
 - github.com/mattn/go-sqlite3
 - golang.org/x/crypto/bcrypt
 - github.com/satori/go.uuid
+
+This project will help you learn about:
+
+- Sessions and cookies.
+- Protecting routes.

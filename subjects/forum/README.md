@@ -13,7 +13,7 @@ This project consists in creating a web forum that allows :
 
 In order to store the data in your forum (like users, posts, comments, etc.) you will use the database library SQLite.
 
-SQLite is a popular choice as embedded database software for local/client storage in application software such as web browsers. It enables you to create a database as well as controlling it by using queries.
+SQLite is a popular choice as an embedded database software for local/client storage in application software such as web browsers. It enables you to create a database as well as controlling it by using queries.
 
 To structure your database and to achieve better performance we highly advise you to take a look at the [entity relationship diagram](https://www.smartdraw.com/entity-relationship-diagram/) and build one based on your own database.
 
@@ -67,7 +67,22 @@ Note that the last two are only available for registered users and must refer to
 
 #### Docker
 
-For the forum project you must use Docker. You can see all about docker basics on the [ascii-art-web-dockerize](https://public.01-edu.org/subjects/ascii-art-web/dockerize/) subject.
+For the forum project you must use Docker. You can see all about docker basics on the [ascii-art-web-dockerize](../ascii-art-web/dockerize/README.md) subject.
+
+### Instructions
+
+- You must use **SQLite**.
+- You must handle website errors, HTTP status.
+- You must handle all sort of technical errors.
+- The code must respect the [**good practices**](../good-practices/README.md).
+- It is recommended that the code should present a **test file**.
+
+### Allowed packages
+
+- All [standard Go](https://golang.org/pkg/) packages are allowed.
+- [sqlite3](https://github.com/mattn/go-sqlite3)
+- [bcrypt](https://pkg.go.dev/golang.org/x/crypto/bcrypt)
+- [UUID](https://github.com/satori/go.uuid)
 
 This project will help you learn about:
 
@@ -82,18 +97,3 @@ This project will help you learn about:
 - SQL language
   - Manipulation of databases
 - The basics of encryption
-
-### Instructions
-
-- You must use **SQLite**.
-- You must handle website errors, HTTP status.
-- You must handle all sort of technical errors.
-- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices/).
-- It is recommended that the code should present a **test file**.
-
-### Allowed packages
-
-- All [standard go](https://golang.org/pkg/) packages are allowed.
-- github.com/mattn/go-sqlite3
-- golang.org/x/crypto/bcrypt
-- github.com/satori/go.uuid

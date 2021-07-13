@@ -205,7 +205,7 @@ $
 
 ---
 
-Running the stock exchange program with error, you can see the correct file [here](https://public.01-edu.org/subjects/stock-exchange-sim/examples/simple/simple)
+Running the stock exchange program with error, you can see the correct file [here](examples/simple/simple)
 
 ```console
 $ cat examples/simple
@@ -219,7 +219,7 @@ Error while parsing `:(euro:8):(material:1):10`
 $
 ```
 
-Running the checker program with error, you can see the correct file [here](https://public.01-edu.org/subjects/stock-exchange-sim/examples/simple/simple.log)
+Running the checker program with error, you can see the correct file [here](examples/simple/simple.log)
 
 ```console
 $ cat examples/simple.log
