@@ -5,11 +5,11 @@
 Do you remember the [`road_intersection`](https://public.01-edu.org/subjects/road_intersection/) raid done in the Rust Piscine? Well, you
 will have to create another traffic control strategy and its simulation. However, this time it will have to be done without traffic lights and with a smart intersection management strategy.
 
-Most of the time overused intersections might lead to serious traffic jams on multiple roads, which wastes drivers'time and money, and also causes unnecessary air pollution. Additionally, according to a study from the National Highway Traffic Safety administration in the U.S., it is reported that about 96% of the intersection-related crashes had critical reasons to be the drivers fault, such as inadequate surveillance, false assumption of other actions, and turns with obstructed view.
+Most of the time, overused intersections might lead to serious traffic jams on multiple roads, which wastes drivers'time and money, and also causes unnecessary air pollution. Additionally, according to a study from the National Highway Traffic Safety administration in the U.S., it is reported that about 96% of the intersection-related crashes had critical reasons to be the drivers fault, such as inadequate surveillance, false assumption of other actions, and turns with obstructed view.
 
 [Autonomous vehicles](https://en.wikipedia.org/wiki/Self-driving_car) (AVs) are a promising solution to traffic accidents. An optimistic prediction is that AVs will be publicly available in the next decade, and thus traffic issues related to autonomous vehicles are also being extensively investigated.
 
-Current intersection management strategies, such as the traditional traffic light and other more advanced methods are designed exclusively
+Current intersection management strategies, such as the traditional traffic lights and other more advanced methods are designed exclusively
 for human drivers. With the rapid development of AVs, new traffic strategies must be taken into account.\
 This is where you come in. You will have to create this new traffic strategy algorithm, so that AVs can pass an intersection without any
 collisions and with a minimum of traffic congestion.
@@ -73,16 +73,16 @@ You will have to implement the physics for this type of vehicles by taking into 
    This will be the way of controlling the current velocity/time/distance (depending on the algorithm you implement) of the AVs.
 
 3. Each AV must respect a safety distance from other AVs.\
-   If it is driving with a high velocity and encounters another vehicle, it must detect that vehicle and keep a safe distance from it. It should not collide!
+   If a vehicle is driving with a high velocity and encounters another vehicle, it must detect that vehicle and keep a safe distance from it. It should not collide!
    You are free to decide what is the safety distance but it must a strictly positive value.
 
 4. Other vehicles such as emergency vehicles are not considered in this project.
 
 5. You must implement physics for the vehicle, such as `velocity = distance / time`. Each vehicle must have a :
 
-- `time`, this will be the time that the AV takes to leave the intersection
-- `distance`, this will be the distance that the AV takes to leave the intersection
-- `velocity`, this will be the speed of the AV at current time
+- `time`: the time that the AV takes to leave the intersection
+- `distance`: the distance that the AV takes to leave the intersection
+- `velocity`: the speed of the AV at current time
 
 ---
 
@@ -96,13 +96,13 @@ Animation is required for this project, you will have to find some assets for th
 - [spriters-resource](https://www.spriters-resource.com/).
 
 Animation is not just rendering an image into the canvas. By using assets you get to decide your "world coordinate system"
-for the rendered image and therefore you create your own animation. But this is not enough, basically you must animate while moving.
+for the rendered image and therefore you create your own animation. But this is not enough.Basically you must animate while moving.
 
 A simple example of movement animation is imagining a vehicle with a route of `r`. This means that the vehicle arrives at the
 intersection and turns right. If we render just an image of the vehicle facing down and it arrives to the point of turning, the rendered image
-will continue to be facing down and not right, like it should be.
+will continue to be facing down and not right, like it should.
 
-Concluding, you must animate the vehicle while moving. This way manipulating the image so that it appears that the vehicle is turning.
+Concluding, you must animate the vehicle while moving, manipulating the image so that it appears that the vehicle is turning.
 
 ---
 
@@ -110,7 +110,7 @@ Concluding, you must animate the vehicle while moving. This way manipulating the
 
 You will have to implement several commands so that the simulation can be well tested. The commands to be implemented are the following :
 
-1. The generating of vehicles must be done using the keyboard events. It must be able to randomly generate vehicles with different routes. The keys to be used are the following :
+1. The creation of vehicles must be done using the keyboard events. It must be able to randomly generate vehicles with different routes. The keys to be used are the following :
 
 - `Arrow Up`, generate vehicles from south to north.
 - `Arrow Down`, generate vehicles from north to south.
@@ -127,17 +127,16 @@ You will have to implement several commands so that the simulation can be well t
 
 #### **Statistics**
 
-Your program must be able to generate statistics, as stated above, this must be displayed in a window right after the user tries to exit the simulation.
+Your program must be able to generate statistics, as stated above. These must be displayed in a window, right after the user tries to exit the simulation.
 
 The statistics must include:
 
 - Max number of vehicles that passed the intersection
-- Collisions if there was any
 - Max velocity of all vehicles (Display the fastest speed achieved)
 - Min velocity of all vehicles (Dislay the slowest speed reached)
 - Max time that the vehicles took to pass the intersection (for all vehicles, display the one that took more time)
-  - The time starts to count whenever the vehicle is detected by the **smart intersection algorithm** until the end of the intersection, which is when the vehicle is removed from the canvas.
 - Min time that the vehicles took to pass the intersection (for all vehicles, display the one that took less time)
+  - The time starts to count whenever the vehicle is detected by the **smart intersection algorithm** until the end of the intersection, which is when the vehicle is removed from the canvas.
 - Close calls, this is when both vehicles pass each other with a violation of the safe distance.
 
 ---
