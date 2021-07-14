@@ -50,7 +50,7 @@ This part is pretty similar to the first forum. Users must be able to:
 
 Users will be able to send private messages to each other, so you will need to create a chat, where it will exist :
 
-- A section to show who is online and able to talk to:
+- A section to show who is online/offline and able to talk to:
 
   - This section must be organized by the last message sent (just like discord). If the user is new and does not present messages you must organize it in alphabetic order.
   - The user must be able to send private messages to the users who are online.
