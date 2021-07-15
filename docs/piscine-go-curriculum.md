@@ -20,19 +20,19 @@ Videos:
 
 Exercices:
 
-- introduction | https://public.01-edu.org/subjects/introduction.en
-- make-it-better | https://public.01-edu.org/subjects/make-it-better.en
-- to-git-or-not-to-git | https://public.01-edu.org/subjects/to-git-or-not-to-git.en
-- who-are-you | https://public.01-edu.org/subjects/who-are-you.en
-- cl-camp1 | https://public.01-edu.org/subjects/cl-camp1.en
-- cl-camp2 | https://public.01-edu.org/subjects/cl-camp2.en
-- cl-camp3 | https://public.01-edu.org/subjects/cl-camp3.en
-- cl-camp4 | https://public.01-edu.org/subjects/cl-camp4.en
-- cl-camp5 | https://public.01-edu.org/subjects/cl-camp5.en
-- cl-camp6 | https://public.01-edu.org/subjects/cl-camp6.en
-- cl-camp7 | https://public.01-edu.org/subjects/cl-camp7.en
-- cl-camp8 | https://public.01-edu.org/subjects/cl-camp8.en
-- now-get-to-work | https://public.01-edu.org/subjects/now-get-to-work.en
+- introduction | https://public.01-edu.org/subjects/introduction
+- make-it-better | https://public.01-edu.org/subjects/make-it-better
+- to-git-or-not-to-git | https://public.01-edu.org/subjects/to-git-or-not-to-git
+- who-are-you | https://public.01-edu.org/subjects/who-are-you
+- cl-camp1 | https://public.01-edu.org/subjects/cl-camp1
+- cl-camp2 | https://public.01-edu.org/subjects/cl-camp2
+- cl-camp3 | https://public.01-edu.org/subjects/cl-camp3
+- cl-camp4 | https://public.01-edu.org/subjects/cl-camp4
+- cl-camp5 | https://public.01-edu.org/subjects/cl-camp5
+- cl-camp6 | https://public.01-edu.org/subjects/cl-camp6
+- cl-camp7 | https://public.01-edu.org/subjects/cl-camp7
+- cl-camp8 | https://public.01-edu.org/subjects/cl-camp8
+- now-get-to-work | https://public.01-edu.org/subjects/now-get-to-work
 
 ### Quest 2
 
@@ -49,14 +49,14 @@ Videos:
 
 Exercices:
 
-- printalphabet | https://public.01-edu.org/subjects/printalphabet.en
-- printreversealphabet | https://public.01-edu.org/subjects/printreversealphabet.en
-- prindigits | https://public.01-edu.org/subjects/printdigits.en
-- isnegative | https://public.01-edu.org/subjects/isnegative.en
-- printcomb | https://public.01-edu.org/subjects/printcomb.en
-- printcomb2 | https://public.01-edu.org/subjects/printcomb2.en
-- printnbr | https://public.01-edu.org/subjects/printnbr.en
-- printcombn | https://public.01-edu.org/subjects/printcombn.en
+- printalphabet | https://public.01-edu.org/subjects/printalphabet
+- printreversealphabet | https://public.01-edu.org/subjects/printreversealphabet
+- prindigits | https://public.01-edu.org/subjects/printdigits
+- isnegative | https://public.01-edu.org/subjects/isnegative
+- printcomb | https://public.01-edu.org/subjects/printcomb
+- printcomb2 | https://public.01-edu.org/subjects/printcomb2
+- printnbr | https://public.01-edu.org/subjects/printnbr
+- printcombn | https://public.01-edu.org/subjects/printcombn
 
 ### Quest 3
 
@@ -73,18 +73,18 @@ Videos:
 
 Exercices:
 
-- pointone | https://public.01-edu.org/subjects/pointone.en
-- ultimatepointone | https://public.01-edu.org/subjects/ultimatepointone.en
-- divmod | https://public.01-edu.org/subjects/divmod.en
-- ultimatedivmod | https://public.01-edu.org/subjects/ultimatedivmod.en
-- printstr | https://public.01-edu.org/subjects/printstr.en
-- strlen | https://public.01-edu.org/subjects/strlen.en
-- swap | https://public.01-edu.org/subjects/swap.en
-- strrev | https://public.01-edu.org/subjects/strrev.en
-- basicatoi | https://public.01-edu.org/subjects/basicatoi.en
-- basicatoi2 | https://public.01-edu.org/subjects/basicatoi2.en
-- atoi | https://public.01-edu.org/subjects/atoi.en
-- sortintegerable | https://public.01-edu.org/subjects/sortintegertable.en
+- pointone | https://public.01-edu.org/subjects/pointone
+- ultimatepointone | https://public.01-edu.org/subjects/ultimatepointone
+- divmod | https://public.01-edu.org/subjects/divmod
+- ultimatedivmod | https://public.01-edu.org/subjects/ultimatedivmod
+- printstr | https://public.01-edu.org/subjects/printstr
+- strlen | https://public.01-edu.org/subjects/strlen
+- swap | https://public.01-edu.org/subjects/swap
+- strrev | https://public.01-edu.org/subjects/strrev
+- basicatoi | https://public.01-edu.org/subjects/basicatoi
+- basicatoi2 | https://public.01-edu.org/subjects/basicatoi2
+- atoi | https://public.01-edu.org/subjects/atoi
+- sortintegerable | https://public.01-edu.org/subjects/sortintegertable
 
 ### Exam 1 (4hours)
 
@@ -110,15 +110,15 @@ Videos:
 
 Exercices:
 
-- iterativefactorial | https://public.01-edu.org/subjects/iterativefactorial.en
-- recursivefactorial | https://public.01-edu.org/subjects/recursivefactorial.en
-- iterativepower | https://public.01-edu.org/subjects/iterativepower.en
-- recursivepower | https://public.01-edu.org/subjects/recursivepower.en
-- fibonacci | https://public.01-edu.org/subjects/fibonacci.en
-- sqrt | https://public.01-edu.org/subjects/sqrt.en
-- isprime | https://public.01-edu.org/subjects/isprime.en
-- findnextprime | https://public.01-edu.org/subjects/findnextprime.en
-- eightqueens | https://public.01-edu.org/subjects/eightqueens.en
+- iterativefactorial | https://public.01-edu.org/subjects/iterativefactorial
+- recursivefactorial | https://public.01-edu.org/subjects/recursivefactorial
+- iterativepower | https://public.01-edu.org/subjects/iterativepower
+- recursivepower | https://public.01-edu.org/subjects/recursivepower
+- fibonacci | https://public.01-edu.org/subjects/fibonacci
+- sqrt | https://public.01-edu.org/subjects/sqrt
+- isprime | https://public.01-edu.org/subjects/isprime
+- findnextprime | https://public.01-edu.org/subjects/findnextprime
+- eightqueens | https://public.01-edu.org/subjects/eightqueens
 
 ### Quest 5
 
@@ -132,24 +132,24 @@ Videos:
 
 Exercices:
 
-- firstrune | https://public.01-edu.org/subjects/firstrune.en
-- nrune | https://public.01-edu.org/subjects/nrune.en
-- lastrune | https://public.01-edu.org/subjects/lastrune.en
-- index | https://public.01-edu.org/subjects/index.en
-- compare | https://public.01-edu.org/subjects/compare.en
-- toupper | https://public.01-edu.org/subjects/toupper.en
-- tolower | https://public.01-edu.org/subjects/tolower.en
-- capitalize | https://public.01-edu.org/subjects/capitalize.en
-- isalpha | https://public.01-edu.org/subjects/isalpha.en
-- isnumeric | https://public.01-edu.org/subjects/isnumeric.en
-- islower | https://public.01-edu.org/subjects/islower.en
-- isupper | https://public.01-edu.org/subjects/isupper.en
-- isprintable | https://public.01-edu.org/subjects/isprintable.en
-- concat | https://public.01-edu.org/subjects/concat.en
-- basicjoin | https://public.01-edu.org/subjects/basicjoin.en
-- join | https://public.01-edu.org/subjects/join.en
-- printnbrbase | https://public.01-edu.org/subjects/printnbrbase.en
-- atoibase | https://public.01-edu.org/subjects/atoibase.en
+- firstrune | https://public.01-edu.org/subjects/firstrune
+- nrune | https://public.01-edu.org/subjects/nrune
+- lastrune | https://public.01-edu.org/subjects/lastrune
+- index | https://public.01-edu.org/subjects/index
+- compare | https://public.01-edu.org/subjects/compare
+- toupper | https://public.01-edu.org/subjects/toupper
+- tolower | https://public.01-edu.org/subjects/tolower
+- capitalize | https://public.01-edu.org/subjects/capitalize
+- isalpha | https://public.01-edu.org/subjects/isalpha
+- isnumeric | https://public.01-edu.org/subjects/isnumeric
+- islower | https://public.01-edu.org/subjects/islower
+- isupper | https://public.01-edu.org/subjects/isupper
+- isprintable | https://public.01-edu.org/subjects/isprintable
+- concat | https://public.01-edu.org/subjects/concat
+- basicjoin | https://public.01-edu.org/subjects/basicjoin
+- join | https://public.01-edu.org/subjects/join
+- printnbrbase | https://public.01-edu.org/subjects/printnbrbase
+- atoibase | https://public.01-edu.org/subjects/atoibase
 
 ### Quest 6
 
@@ -163,10 +163,10 @@ Videos:
 
 Exercices:
 
-- printprogramname | https://public.01-edu.org/subjects/printprogramname.en
-- printparams | https://public.01-edu.org/subjects/printparams.en
-- revparams | https://public.01-edu.org/subjects/revparams.en
-- sortparams | https://public.01-edu.org/subjects/sortparams.en
+- printprogramname | https://public.01-edu.org/subjects/printprogramname
+- printparams | https://public.01-edu.org/subjects/printparams
+- revparams | https://public.01-edu.org/subjects/revparams
+- sortparams | https://public.01-edu.org/subjects/sortparams
 
 ### Quest 7
 
@@ -180,13 +180,13 @@ Videos:
 
 Exercices:
 
-- appendrange | https://public.01-edu.org/subjects/apprendrange.en
-- makerange | https://public.01-edu.org/subjects/makerange.en
-- concatparams | https://public.01-edu.org/subjects/concatparams.en
-- splitwhitespaces | https://public.01-edu.org/subjects/splitwhitespaces.en
-- printwordstables | https://public.01-edu.org/subjects/printwordstables.en
-- convertbase | https://public.01-edu.org/subjects/converbase.en
-- split | https://public.01-edu.org/subjects/split.en
+- appendrange | https://public.01-edu.org/subjects/apprendrange
+- makerange | https://public.01-edu.org/subjects/makerange
+- concatparams | https://public.01-edu.org/subjects/concatparams
+- splitwhitespaces | https://public.01-edu.org/subjects/splitwhitespaces
+- printwordstables | https://public.01-edu.org/subjects/printwordstables
+- convertbase | https://public.01-edu.org/subjects/converbase
+- split | https://public.01-edu.org/subjects/split
 
 ### Exam 2 (4hours)
 
@@ -213,11 +213,11 @@ Videos:
 
 Exercices:
 
-- bool | https://public.01-edu.org/subjects/bool.en
-- point | https://public.01-edu.org/subjects/point.en
-- displayfile | https://public.01-edu.org/subjects/displayfile.en
-- cat | https://public.01-edu.org/subjects/cat.en
-- ztail | https://public.01-edu.org/subjects/ztail.en
+- bool | https://public.01-edu.org/subjects/bool
+- point | https://public.01-edu.org/subjects/point
+- displayfile | https://public.01-edu.org/subjects/displayfile
+- cat | https://public.01-edu.org/subjects/cat
+- ztail | https://public.01-edu.org/subjects/ztail
 
 ### Quest 9
 
@@ -231,14 +231,14 @@ Videos:
 
 Exercices:
 
-- foreach | https://public.01-edu.org/subjects/foreach.en
-- map | https://public.01-edu.org/subjects/map.en
-- any | https://public.01-edu.org/subjects/any.en
-- countif | https://public.01-edu.org/subjects/countif.en
-- issorted | https://public.01-edu.org/subjects/issorted.en
-- doop | https://public.01-edu.org/subjects/doop.en
-- sortwordarr | https://public.01-edu.org/subjects/sortwordarr.en
-- advancedsortwordarr | https://public.01-edu.org/subjects/advancedsortwordarr.en
+- foreach | https://public.01-edu.org/subjects/foreach
+- map | https://public.01-edu.org/subjects/map
+- any | https://public.01-edu.org/subjects/any
+- countif | https://public.01-edu.org/subjects/countif
+- issorted | https://public.01-edu.org/subjects/issorted
+- doop | https://public.01-edu.org/subjects/doop
+- sortwordarr | https://public.01-edu.org/subjects/sortwordarr
+- advancedsortwordarr | https://public.01-edu.org/subjects/advancedsortwordarr
 
 ### Quest 10
 
@@ -248,18 +248,18 @@ Notions: All previously viewed concepts in team work
 
 Exercices:
 
-- rot14 | https://public.01-edu.org/subjects/rot14.en
-- abort | https://public.01-edu.org/subjects/abort.en
-- collatzcountdown | https://public.01-edu.org/subjects/collatzcountdown.en
-- comcheck | https://public.01-edu.org/subjects/comcheck.en
-- enigma | https://public.01-edu.org/subjects/enigma.en
-- pilot | https://public.01-edu.org/subjects/pilot.en
-- fixthemain | https://public.01-edu.org/subjects/fixthemain.en
-- compact | https://public.01-edu.org/subjects/compact.en
-- activebits | https://public.01-edu.org/subjects/activebits.en
-- max | https://public.01-edu.org/subjects/max.en
-- join | https://public.01-edu.org/subjects/join.en
-- unmatch | https://public.01-edu.org/subjects/unmatch.en
+- rot14 | https://public.01-edu.org/subjects/rot14
+- abort | https://public.01-edu.org/subjects/abort
+- collatzcountdown | https://public.01-edu.org/subjects/collatzcountdown
+- comcheck | https://public.01-edu.org/subjects/comcheck
+- enigma | https://public.01-edu.org/subjects/enigma
+- pilot | https://public.01-edu.org/subjects/pilot
+- fixthemain | https://public.01-edu.org/subjects/fixthemain
+- compact | https://public.01-edu.org/subjects/compact
+- activebits | https://public.01-edu.org/subjects/activebits
+- max | https://public.01-edu.org/subjects/max
+- join | https://public.01-edu.org/subjects/join
+- unmatch | https://public.01-edu.org/subjects/unmatch
 
 ### Exam 3 (4hours)
 
@@ -285,21 +285,21 @@ Videos:
 
 Exercices:
 
-- listpushback | https://public.01-edu.org/subjects/listpushback.en
-- listpushfront | https://public.01-edu.org/subjects/listpushfront.en
-- listsize | https://public.01-edu.org/subjects/listsize.en
-- listlast | https://public.01-edu.org/subjects/listlast.en
-- listclear | https://public.01-edu.org/subjects/listclear.en
-- listat | https://public.01-edu.org/subjects/listat.en
-- listreverse | https://public.01-edu.org/subjects/listreverse.en
-- listforeach | https://public.01-edu.org/subjects/listforeach.en
-- listforeachif | https://public.01-edu.org/subjects/listforeachif.en
-- listfind | https://public.01-edu.org/subjects/listfind.en
-- listremoveif | https://public.01-edu.org/subjects/listremoveif.en
-- listmerge | https://public.01-edu.org/subjects/listmerge.en
-- listsort | https://public.01-edu.org/subjects/listsort.en
-- sortlistinsert | https://public.01-edu.org/subjects/sortlistinsert.en
-- sortedlistmerge | https://public.01-edu.org/subjects/sortedlistmerge.en
+- listpushback | https://public.01-edu.org/subjects/listpushback
+- listpushfront | https://public.01-edu.org/subjects/listpushfront
+- listsize | https://public.01-edu.org/subjects/listsize
+- listlast | https://public.01-edu.org/subjects/listlast
+- listclear | https://public.01-edu.org/subjects/listclear
+- listat | https://public.01-edu.org/subjects/listat
+- listreverse | https://public.01-edu.org/subjects/listreverse
+- listforeach | https://public.01-edu.org/subjects/listforeach
+- listforeachif | https://public.01-edu.org/subjects/listforeachif
+- listfind | https://public.01-edu.org/subjects/listfind
+- listremoveif | https://public.01-edu.org/subjects/listremoveif
+- listmerge | https://public.01-edu.org/subjects/listmerge
+- listsort | https://public.01-edu.org/subjects/listsort
+- sortlistinsert | https://public.01-edu.org/subjects/sortlistinsert
+- sortedlistmerge | https://public.01-edu.org/subjects/sortedlistmerge
 
 ### Quest 12
 
@@ -313,17 +313,17 @@ Videos:
 
 Exercices:
 
-- btreeinsertdata | https://public.01-edu.org/subjects/btreeinsertdata.en
-- btreeapplyinorder | https://public.01-edu.org/subjects/btreeapplyinorder.en
-- btreeapplypreorder | https://public.01-edu.org/subjects/btreeapplypreorder.en
-- btreesearchitem | https://public.01-edu.org/subjects/btreesearchitem.en
-- btreelevelcount | https://public.01-edu.org/subjects/btreelevelcount.en
-- btreeisbinary | https://public.01-edu.org/subjects/btreeisbinary.en
-- btreeapplylevel | https://public.01-edu.org/subjects/btreeapplylevel.en
-- btreemax | https://public.01-edu.org/subjects/btreemax.en
-- btreemin | https://public.01-edu.org/subjects/btreemin.en
-- btreetransplant | https://public.01-edu.org/subjects/btreetransplant.en
-- btreedeletenode | https://public.01-edu.org/subjects/btreedeletenode.en
+- btreeinsertdata | https://public.01-edu.org/subjects/btreeinsertdata
+- btreeapplyinorder | https://public.01-edu.org/subjects/btreeapplyinorder
+- btreeapplypreorder | https://public.01-edu.org/subjects/btreeapplypreorder
+- btreesearchitem | https://public.01-edu.org/subjects/btreesearchitem
+- btreelevelcount | https://public.01-edu.org/subjects/btreelevelcount
+- btreeisbinary | https://public.01-edu.org/subjects/btreeisbinary
+- btreeapplylevel | https://public.01-edu.org/subjects/btreeapplylevel
+- btreemax | https://public.01-edu.org/subjects/btreemax
+- btreemin | https://public.01-edu.org/subjects/btreemin
+- btreetransplant | https://public.01-edu.org/subjects/btreetransplant
+- btreedeletenode | https://public.01-edu.org/subjects/btreedeletenode
 
 ### Exam 4 - Final Exam (8hours)
 
