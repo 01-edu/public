@@ -4,19 +4,19 @@
 
 ###### Does it compile and run without any warnings?
 
-##### Try to run a client in the same computer as the sever
+##### Try to run a client in the same computer as the server.
 
 ###### Does it compile and run without any warnings?
 
 ###### Does it ask for the IP address of the server?
 
-##### Introduce the IP address of the game server
+##### Insert the IP address of the game server.
 
-###### Does the client manage to connect to the server?
+###### Does the client manages to connect to the server?
 
-###### Does the client asks you for a name?
+###### Does the client asks you for an username?
 
-##### Introduce your name
+##### Insert your username.
 
 ###### Does the client initiates the graphical interface?
 
@@ -24,7 +24,7 @@
 
 ###### Can you see your position in the mini map?
 
-###### When you move around the world does your position updates in the mini map?
+###### When you move around in the world does your position updates in the mini map?
 
 ###### When you move around the maze does the view of the camera updates?
 
@@ -32,11 +32,11 @@
 
 ###### Is the frame rate of the game higher higher than 50 fps?
 
-##### Try to connect to from another computer
+##### Try to connect to the server from another computer.
 
 ###### Are you able to connect to the server?
 
-##### Connect simultaneosly with as much people as posible and play the game for at least 5 minutes
+##### Connect simultaneosly with as much people as posible and play the game for at least 3 minutes.
 
 ###### Did the frame rate stayed over 50 fps?
 
@@ -44,8 +44,8 @@
 
 #### Bonus
 
-###### +Is it posible to edit you're own maze?
+###### +Is it posible to edit your own maze?
+
+###### +Are levels created automatically by an algorithm?
 
 ###### +Can you play against an A.I. player?
-
-###### +Can levels be created automatically by an algorithm?
