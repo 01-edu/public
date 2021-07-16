@@ -2,11 +2,11 @@
 
 ## instructions
 
-1. **How to get read-only role?**, for applications to get read-only access they can contact an `admin` user so that he/she can add this role to that external application.
+1. **How to get read-only role?**, for this role to be given the user who wants to create the app should have an `admin` role.
 
 2. **How to create and associate application with read-only access?**, for this you must create an application on `gitea` then you can create your own application token. This token will grant access to your account using the `gitea` API. To create this token you must go to **user/settings/application** then **Generate New Token**, you can use this link <https://((DOMAIN))/user/settings/applications>. It should display a token.
 
-3. **How to get the read only token?**, to get this token you must send a request to the authentication service with the application token. The authentication service can be accessed/reached by sending the request to : `https://((DOMAIN))/api/auth/apptoken?token=${appToken}`.
+3. **How to get the read only token (JWT)?**, to get this token you must send a request to the authentication service with the application token. The authentication service can be accessed/reached by sending the request to : `https://((DOMAIN))/api/auth/token?token=${appToken}`.
 This route will validate the application token and build a new **JWT** that allows you to query the information needed.
 
 The following example should help :
@@ -14,7 +14,7 @@ The following example should help :
 ```js
 const APPTOKEN = '<app token>' // put your application token here
 const res = await fetch(
-  `https://dev.01-edu.org/api/auth/apptoken?token=${APPTOKEN}`
+  `https://dev.01-edu.org/api/auth/token?token=${APPTOKEN}`
 )
 const { token } = await res.json()
 
@@ -36,7 +36,7 @@ const res = await fetch(
   'https://((DOMAIN))/api/graphql-engine/v1/graphql',
   {
     method: 'POST',
-    headers: { Authorization: `Bearer ${token}` },
+    headers: { Authorization: `Bearer ${jwt}` },
     body: JSON.stringify({ query }),
   }
 )
@@ -52,14 +52,14 @@ console.log(data)
 Because of the nature of JWT you should renew the token often, normally this token will have a life spam of one day.
 To refresh the tokens you need to do the following:
 
-- Send a request to the authentication service with the `JWT`. The authentication service can be accessed/reached by sending the request to : `https://((DOMAIN))/api/auth/refresh?token=${jwt}`. This route will create a new token and expire the current token.
+- Send a request to the authentication service with the `JWT`. The authentication service can be accessed/reached by sending the request to : `https://((DOMAIN))/api/auth/token/refresh?token=${jwt}`. This route will create a new token and expire the current token.
 
 The following example should help :
 
 ```js
 const JWT = '<jwt>' // put your jwt here
 const res = await fetch(
-  `https://dev.01-edu.org/api/auth/refresh?token=${JWT}`
+  `https://((DOMAIN))/api/auth/token/refresh?token=${JWT}`
 )
 const { token } = await res.json()
 
