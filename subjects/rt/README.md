@@ -74,7 +74,7 @@ P3              \
 
 The image header consists of three lines:
 
-- the first one is the image format: what type of PPM (full color, ASCII enconding) image it is. P3 stands for the Portable PixMap type so you will be using this one.
+- the first one is the image format: what type of PPM (full color, ASCII encoding) image it is. P3 stands for the Portable PixMap type so you will be using this one.
 - the next stands for how many columns and rows of pixels the image will contain.
 - and the third line is the maximum color value, 255 is the most common value since the rgb color code is very well known.
 
@@ -82,7 +82,7 @@ All the other lines below, are the rgb values for each pixel, for example the fi
 
 So with this in mind, you will have to make an algorithm that fills a file by printing each line. You can use the cargo command this way: `cargo run > output.ppm`. This will print the standard output to the file `output.ppm`.
 
-In order to create the previous mentioned objects you will need to search online for documentation about the geometrics of each.
+In order to create the previous mentioned objects you will need to search online for documentation about the geometry of each.
 
 ### Bonus
 
@@ -95,7 +95,7 @@ As bonus for this project you can implement:
 
 This project will help you learn about:
 
-- [Ray Tracing](<https://en.wikipedia.org/wiki/Ray_tracing_(graphics)>)
+- [Ray Tracing](https://en.wikipedia.org/wiki/Ray_tracing_(graphics))
 - Computer generated imagery (CGI)
 - Algorithms
 - Geometry and maths

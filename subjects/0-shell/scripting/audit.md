@@ -1,9 +1,3 @@
-#### General
-
-###### Was the project written in a compiled programming language?
-
-###### Was the student shell script created?
-
 #### Functional
 
 ##### Try to run the student script in your computer terminal and create the directory "Example".
@@ -59,3 +53,9 @@ Hello Alex!
 ##### Try to run the command `"echo "I'm in $(pwd)""` in the `0-shell` interpreter. Do the same in your computer terminal in the same folder.
 
 ###### Can you confirm that the script was validated and the project displayed the same message in both terminals?
+
+#### General
+
+###### Was the project written in a compiled programming language?
+
+###### Was the student shell script created?

@@ -135,4 +135,4 @@ css  index.html
 
 ###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
 
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/README.md)?
+###### +Does the code obey the [good practices](../../good-practices/README.md)?

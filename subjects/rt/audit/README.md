@@ -22,6 +22,10 @@
 
 ###### Did the student provide clear documentation for the ray tracer on how to use it (create elements, change brightness and move the camera)?
 
+#### Basic
+
+###### +Does the code obey the [good practices](../../good-practices/README.md)?
+
 #### Bonus
 
 ###### +Is it possible to add textures to the surface of the objects?
@@ -31,3 +35,11 @@
 ###### +Is it possible to add particles?
 
 ###### +Is it possible to add fluids?
+
+#### Social
+
+###### +Did you learn anything from this project?
+
+###### +Can it be open-sourced / be used for other sources?
+
+###### +Would you recommend/nominate this program as an example for the rest of the school?

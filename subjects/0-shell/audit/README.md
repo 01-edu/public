@@ -1,7 +1,3 @@
-#### General
-
-###### Was the project written in a compiled programming language?
-
 #### Functional
 
 ##### Open a terminal and run the project.
@@ -71,6 +67,10 @@
 ##### Try to run the command `"rm -r new_folder1"` to remove what was created above.
 
 ###### Can you confirm that the directory `new_folder1` was removed?
+
+#### General
+
+###### Was the project written in a compiled programming language?
 
 #### Bonus
 

@@ -29,17 +29,7 @@ For this project you will only have to create a simple `Unix shell` where you ca
   - exit
 - You must manage the program interruption `Ctrl + D`.
 - The project has to be written in a compiled language (like C, Rust, Go or other), **interpreted languages (like Perl and others) are not allowed**.
-- The code must respect the [good practices](https://public.01-edu.org/subjects/good-practices/)
-
-This project will help you learn about:
-
-- Shell
-- Operating systems services
-- Command-line interfaces
-- Unix system
-- Process creation and synchronization
-- Commands syntax
-- Scripting language
+- The code must respect the [good practices](../good-practices/README.md)
 
 ### Bonus
 
@@ -79,3 +69,13 @@ Hello There
 $ exit
 student$
 ```
+
+This project will help you learn about:
+
+- Shell
+- Operating systems services
+- Command-line interfaces
+- Unix system
+- Process creation and synchronization
+- Commands syntax
+- Scripting language
