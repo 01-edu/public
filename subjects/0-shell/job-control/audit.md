@@ -1,7 +1,3 @@
-#### General
-
-###### Was the project written in a compiled programming language?
-
 #### Functional
 
 ##### Try to run the command `"tar -czf home.tar.gz . &"` then run the command `"jobs"`.
@@ -97,3 +93,7 @@ sleep 50000
 ```
 
 ###### Run `"jobs"`. Can you confirm that the program started the process in the background like in the example above?
+
+#### General
+
+###### Was the project written in a compiled programming language?

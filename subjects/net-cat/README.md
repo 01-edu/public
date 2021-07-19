@@ -4,11 +4,11 @@
 
 This project consists on recreating the **NetCat in a Server-Client Architecture** that can run in a server mode on a specified port listening for incoming connections, and it can be used in client mode, trying to connect to a specified port and transmitting information to the server.
 
-- NetCat, `nc` system command, is a computer network utility for reading from and writing to network connections using TCP or UDP. It is used for anything involving TCP, UDP, or UNIX-domain sockets, it is able to open TCP connections, send UDP packages, listen on arbitrary TCP and UDP ports...
+- NetCat, `nc` system command, is a command-line utility that reads and writes data across network connections using TCP or UDP. It is used for anything involving TCP, UDP, or UNIX-domain sockets, it is able to open TCP connections, send UDP packages, listen on arbitrary TCP and UDP ports and many more.
 
 - To see more information about NetCat inspect the manual `man nc`.
 
-Your project must work in a similar way that NetCat works, in other words, you must create a group chat. The project must have the following features :
+Your project must work in a similar way that the original  NetCat works, in other words, you must create a group chat. The project must have the following features :
 
 - TCP connection between server and multiple clients (relation of 1 to many).
 - A name requirement to the client.
@@ -23,18 +23,6 @@ Your project must work in a similar way that NetCat works, in other words, you m
 - If a Client leaves the chat, the rest of the Clients must not disconnect.
 - If there is no port specified, then set as default the port 8989. Otherwise, program must respond with usage message: `[USAGE]: ./TCPChat $port`
 
-This project will help you learn about :
-
-- Manipulation of structures.
-- [Net-Cat](https://linuxize.com/post/netcat-nc-command-with-examples/)
-- [TCP/UDP](https://www.privateinternetaccess.com/blog/2018/12/tcp-vs-udp-understanding-the-difference/)
-  - TCP/UDP connection
-  - TCP/UDP socket
-- [Channels](https://tour.golang.org/concurrency/2)
-- [Goroutines](https://tour.golang.org/concurrency/1)
-- Mutexes
-- IP and [ports](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)
-
 ### Instructions
 
 - Your project must be written in **Go**
@@ -42,7 +30,7 @@ This project will help you learn about :
 - Your project must have Go-routines
 - Your project must have channels or Mutexes
 - Maximum 10 connections
-- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices/)
+- The code must respect the [**good practices**](../good-practices/README.md)
 - It is recommended that the code should present a **test file** for the server connection and the client connection
 - You have to be able to handle the errors from server side and client side
 
@@ -191,6 +179,19 @@ _)      \.___.,|     .'
 
 ## Bonus
 
-- Terminal UI (you are allowed to use only this package : https://github.com/jroimartin/gocui)
-- Logging into the file
-- Creating more than 1 group chat
+- Terminal UI (you are allowed to use only this package : https://github.com/jroimartin/gocui).
+- Find a way to save all the logs into a file.
+- Creating more than 1 group chat.
+
+This project will help you learn about :
+
+- Manipulation of structures.
+- [Net-Cat](https://www.commandlinux.com/man-page/man1/nc.1.html)
+- TCP/UDP
+  - TCP/UDP connection
+  - TCP/UDP socket
+- [Go concurrency](https://golang.org/doc/#go_concurrency_patterns)
+  - [Channels](https://tour.golang.org/concurrency/2)
+  - [Goroutines](https://tour.golang.org/concurrency/1)
+- Mutexes
+- IP and [ports](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)

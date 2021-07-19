@@ -2,18 +2,14 @@
 
 ### Objectives
 
-You must follow the same [instructions](https://public.01-edu.org/subjects/ascii-art/) as in the first subject but the second argument must be the name of the template. I know some templates may be hard to read, just do not obsess about it. Please...
+You must follow the same [instructions](../README.md) as in the first subject but the second argument must be the name of the template. I know some templates may be hard to read, just do not obsess about it. Please...
 
 ### Instructions
 
 - Your project must be written in **Go**.
-- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices/).
+- The code must respect the [**good practices**](../../good-practices/README.md).
 - It is recommended that the code should present a **test file**.
-- You can see all about the **banners** [here](https://github.com/01-edu/public/tree/master/subjects/ascii-art).
-
-### Allowed packages
-
-- Only the [standard go](https://golang.org/pkg/) packages are allowed
+- You can see all about the **banners** [here](../).
 
 ### Usage
 
@@ -50,6 +46,10 @@ o  o o-o o o o-o         o   o  o o-o o   o-o
 
 $
 ```
+
+### Allowed packages
+
+- Only the [standard Go](https://golang.org/pkg/) packages are allowed
 
 This project will help you learn about :
 

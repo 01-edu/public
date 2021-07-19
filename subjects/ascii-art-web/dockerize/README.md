@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [principles](https://public.01-edu.org/subjects/ascii-art-web/) as the first subject.
+You must follow the same [principles](../README.md) as the first subject.
 
 - For this project you must create at least :
 
@@ -13,6 +13,22 @@ You must follow the same [principles](https://public.01-edu.org/subjects/ascii-a
 - You must apply [metadata](https://docs.docker.com/config/labels-custom-metadata/) to Docker objects.
 
 - You have to take caution of unused object (often referred to as "garbage collection").
+
+### Instructions
+
+- The web server must be created in **Go**.
+- The code must respect the [good practices](../../good-practices/README.md).
+- You must use Docker.
+- The project must have a **Dockerfile**.
+- Your Dockerfile must respect the [Dockerfile good practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/).
+
+### Allowed packages
+
+- Only the [standard go](https://golang.org/pkg/) packages are allowed
+
+### Usage
+
+- You can see all about Docker on [docker docs](https://docs.docker.com/).
 
 This project will help you learn about :
 
@@ -29,19 +45,3 @@ This project will help you learn about :
   - Containerizing an application.
   - Compatibility/Dependency.
   - Creating images.
-
-### Allowed packages
-
-- Only the [standard go](https://golang.org/pkg/) packages are allowed
-
-### Instructions
-
-- The web server must be created in **Go**.
-- The code must respect the [good practices](https://public.01-edu.org/subjects/good-practices/).
-- You must use Docker.
-- The project must have a **Dockerfile**.
-- Your Dockerfile must respect the [Dockerfile good practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/).
-
-### Usage
-
-- You can see all about Docker on [docker docs](https://docs.docker.com/).

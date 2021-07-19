@@ -20,13 +20,13 @@
 
 ###### +Does the project runs quickly and effectively (Favoring of recursive, no unnecessary data requests, etc.)?
 
-###### +Is the output of the program well structured? Does any letter seems to be out of line?
+###### +Is the output of the program well structured? Is the output aligned, without any letter out of line?
 
 ###### +Is there a test file for this code?
 
 ###### +Are the tests checking each possible case?
 
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
+###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
 #### Social
 

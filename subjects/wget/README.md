@@ -166,7 +166,7 @@ $ go run . --mirror -R=jpg,gif https://example.com
 example:
 
 ```console
-$ go run . --mirror -X=/assets,/css https://example.com
+$go run . --mirror -X=/assets,/css https://example.com
 ```
 
 ### Hint

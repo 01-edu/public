@@ -1,6 +1,6 @@
 #### Functional
 
-###### Has the requirement for the allowed packages been respected?
+###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
 ##### Open two browsers (ex: Chrome and Firefox or private windows) and log in with different users in each one. With one user start typing.
 
@@ -30,8 +30,8 @@
 
 ###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
 
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/README.md)?
+###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
-###### +Is the code using synchronicity (Promises and goroutines/channels) to increase performance?
+###### +Is the code using synchronicity (Promises and Go routines/channels) to increase performance?
 
 ###### +Do you think in general this project is well done?

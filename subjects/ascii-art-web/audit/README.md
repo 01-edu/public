@@ -90,9 +90,9 @@ o-o-o o--o o-o          o   o      o   o-o  | |  o   o
 
 ###### Is the communication between [server and client](https://www.geeksforgeeks.org/client-server-model/) well established?
 
-###### Does the server use the right [HTTP method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)?
+###### Does the server uses the right [HTTP method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)?
 
-###### Has the website runned without crashing at anytime?
+###### Did the site work without crashing at any time?
 
 ###### Is the server written in Go?
 
@@ -100,13 +100,13 @@ o-o-o o--o o-o          o   o      o   o-o  | |  o   o
 
 #### General
 
-###### +Does the server present all the needed [handlers and patterns](https://golang.org/pkg/net/http/#HandleFunc) for the http requests?
+###### +Does the server presents all the needed [handlers and patterns](https://golang.org/pkg/net/http/#HandleFunc) for the http requests?
 
 #### Basic
 
 ###### +Does the server run quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
 
-###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/)?
+###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
 ###### +Is there a test file for this code?
 

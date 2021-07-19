@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [instructions](https://public.01-edu.org/subjects/ascii-art/) as in the first subject but this time the process will be reversed. desrever fo dnik siht toN.
+You must follow the same [instructions](../README.md) as in the first subject but this time the process will be reversed. desrever fo dnik siht toN.
 
 Ascii-reverse consists on reversing the process, converting the graphic representation into a text. You will have to create a text file containing a graphic representation of a random `string` given as an argument.
 
@@ -11,12 +11,8 @@ The argument will be a **flag**, `--reverse=<fileName>`, in which `--reverse` is
 ### Instructions
 
 - Your project must be written in **Go**.
-- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices/).
+- The code must respect the [**good practices**](../../good-practices/README.md).
 - It is recommended that the code should present a **test file**.
-
-### Allowed packages
-
-- Only the [standard go](https://golang.org/pkg/) packages are allowed
 
 ### Usage
 
@@ -36,7 +32,12 @@ hello
 $
 ```
 
+### Allowed packages
+
+- Only the [standard Go](https://golang.org/pkg/) packages are allowed
+
 This project will help you learn about :
 
 - The Go file system(**fs**) API
 - Data manipulation
+- Algorithms

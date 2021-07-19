@@ -1,12 +1,8 @@
-## tetrisoptimizer
+## tetris-optimizer
 
 ### Objectives
 
 Develop a program that receives only one argument, a path to a text file which will contain a list of [tetrominoes](https://en.wikipedia.org/wiki/Tetromino) to assemble them in order to create the smallest square possible.
-
-### Allowed packages
-
-- Only the [standard go](https://golang.org/pkg/) packages are allowed
 
 ### Instructions
 
@@ -18,13 +14,12 @@ The program must :
 - Expect at least one tetromino in the text file
 - In case of bad format on the tetrominoes or bad file format it should print `ERROR`
 - The project must be written in **Go**.
-- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices/).
+- The code must respect the [**good practices**](../good-practices/README.md).
 - It is recommended that the code should present a **test file**.
 
-This project will help you learn about:
+### Allowed packages
 
-- The use of algorithms
-- Reading from files
+- Only the [standard go](https://golang.org/pkg/) packages are allowed
 
 #### Example of a text File
 
@@ -101,3 +96,8 @@ HHHDDG$
 .HDD.G$
 $
 ```
+
+This project will help you learn about:
+
+- The use of algorithms
+- Reading from files

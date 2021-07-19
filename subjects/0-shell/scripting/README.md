@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [principles](https://public.01-edu.org/subjects/0-shell/) as the first subject.
+You must follow the same [principles](../README.md) as the first subject.
 
 In `scripting` you must find a way to make your `0-shell` run shell scripts.
 
@@ -31,12 +31,7 @@ myfunc() {
 - You have to create your own script.
 - The `0-shell` must be able to read and execute scripts.
 - The project has to be written in a compiled language like (C, Rust Go or other), **interpreted languages like (Perl and others) are not allowed**.
-- The code must respect the [good practices](https://public.01-edu.org/subjects/good-practices/)
-
-This project will help you learn about:
-
-- Scripting/ scripting language
-- Commands syntax
+- The code must respect the [good practices](../../good-practices/README.md)
 
 ### Usage
 
@@ -65,3 +60,8 @@ $ for ((i = 0 ; i < 5 ; i++)); do echo $i; done
 $ exit
 student$
 ```
+
+This project will help you learn about:
+
+- Scripting/ scripting language
+- Commands syntax

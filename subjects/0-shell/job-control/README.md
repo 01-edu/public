@@ -2,7 +2,7 @@
 
 ### Objectives
 
-You must follow the same [principles](https://public.01-edu.org/subjects/0-shell/) as the first subject.
+You must follow the same [principles](../README.md) as the first subject.
 
 Job control refers to the ability to selectively stop (suspend) the execution of processes and continue (resume) their execution at a later point.
 
@@ -18,14 +18,7 @@ You must also be able to stop jobs with the `Ctrl + Z`.
 ### Instructions
 
 - The project has to be written in a compiled language like (C, Rust Go or other), **interpreted languages like (Perl and others) are not allowed**.
-- The code must respect the [good practices](https://public.01-edu.org/subjects/good-practices/)
-
-This project will help you learn about:
-
-- Job control
-- Process creation and synchronization
-- Commands syntax
-- Scripting language
+- The code must respect the [good practices](../../good-practices/README.md)
 
 ### Usage
 
@@ -48,3 +41,10 @@ $ jobs
 $ exit
 student$
 ```
+
+This project will help you learn about:
+
+- Job control
+- Process creation and synchronization
+- Commands syntax
+- Scripting language

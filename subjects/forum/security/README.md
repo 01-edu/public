@@ -2,11 +2,13 @@
 
 ### Objectives
 
-You must follow the same [principles](https://public.01-edu.org/subjects/forum/forum.en) as the first subject.
+You must follow the same [principles](../README.md) as the first subject.
 
 For this project you must take into account the security of your forum.
 
-- You should implement a Hypertext Transfer Protocol Secure ([HTTPS](https://www.globalsign.com/en/blog/the-difference-between-http-and-https)) protocol :
+### Instructions
+
+- You should implement a Hypertext Transfer Protocol Secure ([HTTPS](https://developer.mozilla.org/pt-BR/docs/Glossary/https)) protocol :
 
   - Encrypted connection : for this you will have to generate an SSL certificate, you can think of this like a identity card for your website. You can create your certificates or use "Certificate Authorities"(CA's)
 
@@ -18,10 +20,30 @@ For this project you must take into account the security of your forum.
   - Clients passwords
   - Database, for this you will have to create a password for your database.
 
+### Hints
+
+- You can take a look at the `openssl` manual.
+- For the session cookies you can take a look at the [Universal Unique Identifier (UUID)](https://en.wikipedia.org/wiki/Universally_unique_identifier)
+
+### General instructions
+
+- You must handle website errors, HTTPS status.
+- You must handle all sort of technical errors.
+- The code must respect the [**good practices**](../../good-practices/README.md).
+- It is recommended that the code should present a **test file**.
+
+### Allowed packages
+
+- All [standard Go](https://golang.org/pkg/) packages are allowed.
+- [sqlite3](https://github.com/mattn/go-sqlite3)
+- [bcrypt](https://pkg.go.dev/golang.org/x/crypto/bcrypt)
+- [UUID](https://github.com/satori/go.uuid)
+- [autocert](https://pkg.go.dev/golang.org/x/crypto/acme/autocert)
+
 This project will help you learn about :
 
 - HTTPS
-- [Cipher suites](https://www.iana.org/assignments/tls-parameters/tls-parameters.xml)
+- [Cipher suites](https://en.wikipedia.org/wiki/Cipher_suite)
 - Goroutines
 - Channels
 - Rate Limiting
@@ -29,23 +51,3 @@ This project will help you learn about :
   - password
   - session/cookies
   - Universal Unique Identifier (UUID)
-
-### Hints
-
-- You can take a look at the `openssl` manual.
-- For the session cookies you can take a look at the [Universal Unique Identifier (UUID)](https://en.wikipedia.org/wiki/Universally_unique_identifier)
-
-### Instructions
-
-- You must handle website errors, HTTPS status.
-- You must handle all sort of technical errors.
-- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices.en).
-- It is recommended that the code should present a **test file**.
-
-### Allowed packages
-
-- All [standard go](https://golang.org/pkg/) packages are allowed.
-- golang.org/x/crypto/bcrypt
-- github.com/satori/go.uuid
-- github.com/mattn/go-sqlite3
-- golang.org/x/crypto/acme/autocert

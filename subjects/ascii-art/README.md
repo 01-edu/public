@@ -32,11 +32,15 @@ $$@@$$$$$$$$``````````@@$$@@$$$$$$
 ### Instructions
 
 - Your project must be written in **Go**.
-- The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices/).
+- The code must respect the [**good practices**](../good-practices/README.md).
 - It is recommended that the code present a **test file**.
 
-- Some [**banner**](https://github.com/01-edu/public/blob/master/subjects/ascii-art) files (.txt files) with a specific graphical template representation using ASCII will be given. The files are formatted in a way that is not necessary to change them.
+- Some **banner** files with a specific graphical template representation using ASCII will be given. The files are formatted in a way that is not necessary to change them.
 
+  - [shadow](shadow.txt)
+  - [standard](standard.txt)
+  - [thinkertoy](thinkertoy.txt)
+  
 ### Banner Format
 
 - Each character has an height of 8 lines.
@@ -73,10 +77,6 @@ $$@@$$$$$$$$``````````@@$$@@$$$$$$
 ......
 
 ```
-
-### Allowed packages
-
-- Only the [standard go](https://golang.org/pkg/) packages are allowed
 
 ### Usage
 
@@ -129,7 +129,12 @@ $ go run . "{Hello There}"
 $
 ```
 
+### Allowed packages
+
+- Only the [standard Go](https://golang.org/pkg/) packages are allowed
+
 This project will help you learn about :
 
 - The Go file system(**fs**) API
 - Data manipulation
+- Algorithms
