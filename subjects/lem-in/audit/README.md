@@ -327,7 +327,7 @@ $
 
 ###### +Is the error output more specific? (example: `"ERROR: invalid data format, invalid number of Ants"` or `"ERROR: invalid data format, no start room found"`)
 
-###### +Is the visualizer in 3D?
+###### +Is the visualizer in 3D?·4
 
 #### Basic
 

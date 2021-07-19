@@ -6,6 +6,8 @@ You must follow the same [principles](../README.md) as the first subject.
 
 For this project you must take into account the security of your forum.
 
+### Instructions
+
 - You should implement a Hypertext Transfer Protocol Secure ([HTTPS](https://developer.mozilla.org/pt-BR/docs/Glossary/https)) protocol :
 
   - Encrypted connection : for this you will have to generate an SSL certificate, you can think of this like a identity card for your website. You can create your certificates or use "Certificate Authorities"(CA's)
@@ -23,7 +25,7 @@ For this project you must take into account the security of your forum.
 - You can take a look at the `openssl` manual.
 - For the session cookies you can take a look at the [Universal Unique Identifier (UUID)](https://en.wikipedia.org/wiki/Universally_unique_identifier)
 
-### Instructions
+### General instructions
 
 - You must handle website errors, HTTPS status.
 - You must handle all sort of technical errors.

@@ -4,6 +4,8 @@
 
 Ascii-art-web consists in creating and running a server, in which it will be possible to use a web **GUI** (graphical user interface) version of your last project, [ascii-art](../ascii-art).
 
+### Instructions
+
 Your webpage must allow the use of different [banners](../ascii-art).
 
 Implement the following HTTP endpoints:
@@ -38,7 +40,7 @@ In the root project directory create a `README.MD` file with the following secti
 - Usage: how to run
 - Implementation details: algorithm
 
-### Instructions
+### General instructions
 
 - HTTP server must be written in **Go**.
 - HTML templates must be in the project root directory _templates_.

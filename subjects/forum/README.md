@@ -9,6 +9,14 @@ This project consists in creating a web forum that allows :
 - liking and disliking posts and comments.
 - filtering posts.
 
+### Instructions
+
+- You must use **SQLite**.
+- You must handle website errors, HTTP status.
+- You must handle all sort of technical errors.
+- The code must respect the [**good practices**](../good-practices/README.md).
+- It is recommended that the code should present a **test file**.
+
 #### SQLite
 
 In order to store the data in your forum (like users, posts, comments, etc.) you will use the database library SQLite.
@@ -82,14 +90,6 @@ This project will help you learn about:
 - SQL language
   - Manipulation of databases
 - The basics of encryption
-
-### Instructions
-
-- You must use **SQLite**.
-- You must handle website errors, HTTP status.
-- You must handle all sort of technical errors.
-- The code must respect the [**good practices**](../good-practices/README.md).
-- It is recommended that the code should present a **test file**.
 
 ### Allowed packages
 
