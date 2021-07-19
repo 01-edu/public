@@ -30,4 +30,7 @@ This project will help you learn about:
 
 ### Allowed packages
 
-- Only the [standard go](https://golang.org/pkg/) packages are allowed
+- All [standard go](https://golang.org/pkg/) packages are allowed.
+- github.com/mattn/go-sqlite3
+- golang.org/x/crypto/bcrypt
+- github.com/satori/go.uuid
