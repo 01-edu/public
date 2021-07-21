@@ -1,10 +1,10 @@
 # Examples of graphql (queries)
 
-> Note: that all queries present where can be ran in your own school. For this you must login with an admin role and access the following route <https://((DOMAIN))/graphiql>. Depending on our role the tables permissions may differ.
+> Note: that all queries present here can be ran in your own school. For this you must login with an admin role and access the following route <https://((DOMAIN))/graphiql>. Depending on our role the tables permissions may differ.
 
 ## Simple queries to get info
 
-- The following query gives the basic information of a give user :
+- The following query gives the basic information of a given user :
 
 ```graphql
 query getUserInfo($name: String!) {
@@ -22,7 +22,7 @@ query getUserInfo($name: String!) {
 }
 ```
 
-query variable:
+Query variable:
 
 ```graphql
 {"name": "Joao"}
@@ -33,13 +33,11 @@ query variable:
 - The following query gives the record of a given user, the output would be :
   - author of the record
   - the time that the record was created and will end
-  - message/reason for the band
-
- to see band students
+  - message/reason for the ban
 
 ```graphql
-query bandUsers($userName: String!) {
-  record(where: {user: {login: {_eq: $userName}}}) {
+query bannedUsers($name: String!) {
+  record(where: {user: {login: {_eq: $name}}}) {
     authorLogin
     banEndAt
     createdAt
@@ -48,15 +46,15 @@ query bandUsers($userName: String!) {
 }
 ```
 
-query variable:
+Query variable:
 
 ```graphql
-{"userName": "Joao"}
+{"name": "Joao"}
 ```
 
 ---
 
-- The following query gives a list of groups given the project `name`. The output will be the `captainLogin` and all the members from that group, including the `userLogin`.
+- The following query gives a list of groups given the project `name`. The output will be the `captainLogin` and the `userLogin` from all the members of that group.
 
 ```graphql
 query getGroupInfo($object: String!) {
@@ -69,7 +67,7 @@ query getGroupInfo($object: String!) {
 }
 ```
 
-query variable:
+Query variable:
 
 ```graphql
 {"object": "ascii-art"}
@@ -77,7 +75,7 @@ query variable:
 
 ---
 
-- The following query get all events in a given campus, the output for this query will be the:
+- The following query returns all events in a given campus, the output for this query will be the:
   - object name
   - path of the event
   - parent event (this will be the parent event of the given child event)
@@ -99,7 +97,7 @@ query eventsByCampus($campus: String!) {
 }
 ```
 
-query variable:
+Query variable:
 
 ```graphql
 { "campus": "madere" }
@@ -107,7 +105,7 @@ query variable:
 
 ---
 
-- The following query gets the information of users that are associated to an event. For the query to work it should be given two arguments : `campus` and the `object`. The output will be the user name/login, audit ration and the event info.
+- The following query returns information of users that are associated to an event. For the query to work it should be given two arguments : `campus` and the `object`. The output will be the user name/login, audit ratio and the event info.
 
 ```graphql
 query usersEvent($campus: String!, $object: String!) {
@@ -124,13 +122,13 @@ query usersEvent($campus: String!, $object: String!) {
 }
 ```
 
-query variable:
+Query variable:
 
 ```graphql
 {"campus": "pyc", "object": "Final Exam"}
 ```
 
-- If we wanted to filter the users that where registered to a type of object in the event, we would just need to filter the object by `type` instead of `name`. Should look something like this:
+- If we wanted to filter the users that were registered to a type of object in the event, we would just need to filter the object by `type` instead of `name`. Should look something like this:
 
 ```graphql
 query usersEvent($campus: String!, $objectType: String!) {
@@ -147,7 +145,7 @@ query usersEvent($campus: String!, $objectType: String!) {
 }
 ```
 
-query variable:
+Query variable:
 
 ```graphql
 {"campus": "pyc", "objectType": "raid"}
@@ -155,11 +153,11 @@ query variable:
 
 ---
 
-- The following query gets the current `XP` of a given user, the output should be the `amount` that this use should have
+- The following query returns the current `XP` of a given user, the output should be the `amount` that this user should have
 
 ```graphql
-query xp($userName: String!) {
-  xp(where: {user: {login: {_eq: $userName}}}) {
+query xp($name: String!) {
+  xp(where: {user: {login: {_eq: $name}}}) {
     user {
       login
     }
@@ -168,13 +166,13 @@ query xp($userName: String!) {
 }
 ```
 
-query variable:
+Query variable:
 
 ```graphql
-{"userName": "Joao"}
+{"name": "Joao"}
 ```
 
-- If we wanted to filter all `XP` gain from a user from an given object, it would look something like this:
+- If we wanted to filter all `XP` gain from an user from a given object, it would look something like this:
 
 ```graphql
 query eventXp($userName: String!, $objectName: String!) {
@@ -194,13 +192,11 @@ query eventXp($userName: String!, $objectName: String!) {
 }
 ```
 
-query variable:
+Query variable:
 
 ```graphql
 {"userName": "Joao", "objectName": "ascii-art"}
 ```
-
-This query will return the amount of `XP` gain from each of the events.
 
 ---
 
@@ -214,8 +210,8 @@ query getGameInfo($name: String!) {
 }
 ```
 
-query variables:
+Query variables:
 
 ```graphql
-{"name": "Qazaqbala"}
+{"name": "Joao"}
 ```
