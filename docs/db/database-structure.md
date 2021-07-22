@@ -55,7 +55,6 @@ Columns:
 - createdAt
 - userId
 - eventId
-- groupId (not used anymore, TODO: remove at some point)
 
 ### group
 
@@ -220,7 +219,6 @@ Columns:
 - createdAt
 - updatedAt
 - grade
-- progressId: Not used anymore (TODO: Remove)
 - attrs
 - type:
   - `tester`
