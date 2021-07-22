@@ -6,7 +6,7 @@ Every request to Hasura executes against a set of session variables. Normally th
 
 - `X-Hasura-Role`: This variable denotes the role with which the user is executing the current request. Hasura has a built-in notion of a role, and will explicitly look for this variable to infer the role.
 
-- `X-Hasura-campus`: this variable contains the campus that the user currently is on.
+- `X-Hasura-campuses`: this variable contains the campus that the user currently is on.
 
 In our database we have several roles which are simple arbitrary names.
 Each role can be given a set of permissions and actions (`select`, `insert`, `update`, `delete`). That will execute against each table of the database.
@@ -73,7 +73,6 @@ These are the roles presented in the database:
       - _`progress_view`_
       - _`xp`_
       - _`xp_by_event`_
-      - _`xp_by_object`_
       - _`xp_by_path`_
 
 ---
@@ -115,7 +114,6 @@ These are the roles presented in the database:
       - _`registration_with_event_ready_view`_
       - _`toad_result_view`_
       - _`xp_by_event`_
-      - _`xp_by_object`_
       - _`xp_by_path`_
 
 ---
@@ -156,7 +154,6 @@ These are the roles presented in the database:
     - _`registration_with_event_ready_view`_
     - _`toad_result_view`_
     - _`xp_by_event`_
-    - _`xp_by_object`_
     - _`xp_by_path`_
 
 ---
@@ -167,7 +164,7 @@ These are the roles presented in the database:
 
 - `admin` : this role allows users to query using any action in any table on the database.
 
-> You can see more about each role by going to the [graphiql](https://[[DOMAIN]]/graphiql) in the docs section. Note that you must be logged in with the user role you desire to see. For the role `anonymous` you do not need to be logged in. If you want to see the possible tables that can be queried by an admin, you must login with an admin, and so on...
+> You can see more about each role by going to the [graphiql](https://((DOMAIN))/graphiql) in the docs section. Note that you must be logged in with the user role you desire to see. For the role `anonymous` you do not need to be logged in. If you want to see the possible tables that can be queried by an admin, you must login with an admin, and so on...
 
 A role is given by default to every user, if an user has more roles, the highest would be taken by default when login.
 
@@ -225,5 +222,4 @@ D : delete
 | user_roles_view                    | ❌ ❌ ❌ ❌                     | ✅ ❌ ❌ ❌                     | 🟩 ❌ ❌ ❌                     | 🟩 ❌ ❌ ❌                     | ✅ ✅ ✅ ✅                     | ✅ ❌ ❌ ❌                     |
 | xp                                 | ❌ ❌ ❌ ❌                     | ✅ ❌ ❌ ❌                     | ❌ ❌ ❌ ❌                     | ❌ ❌ ❌ ❌                     | ✅ ✅ ✅ ✅                     | ✅ ❌ ❌ ❌                     |
 | xp_by_event                        | ❌ ❌ ❌ ❌                     | ✅ ❌ ❌ ❌                     | ✅ ❌ ❌ ❌                     | ✅ ❌ ❌ ❌                     | ✅ ✅ ✅ ✅                     | ✅ ❌ ❌ ❌                     |
-| xp_by_object                       | ❌ ❌ ❌ ❌                     | ✅ ❌ ❌ ❌                     | ✅ ❌ ❌ ❌                     | ✅ ❌ ❌ ❌                     | ✅ ✅ ✅ ✅                     | ✅ ❌ ❌ ❌                     |
 | xp_by_path                         | ❌ ❌ ❌ ❌                     | ✅ ❌ ❌ ❌                     | ✅ ❌ ❌ ❌                     | ✅ ❌ ❌ ❌                     | ✅ ✅ ✅ ✅                     | ✅ ❌ ❌ ❌                     |

@@ -4,7 +4,7 @@
 
 ## Simple queries to get info
 
-- The following query gives the basic information of a given user :
+- The following query returns the basic information of a given user :
 
 ```graphql
 query getUserInfo($name: String!) {
@@ -30,7 +30,7 @@ Query variable:
 
 ---
 
-- The following query gives the record of a given user, the output would be :
+- The following query returns the list of all records of a given user (including the finished ones), the output would be :
   - author of the record
   - the time that the record was created and will end
   - message/reason for the ban
@@ -54,12 +54,14 @@ Query variable:
 
 ---
 
-- The following query gives a list of groups given the project `name`. The output will be the `captainLogin` and the `userLogin` from all the members of that group.
+- The following query returns a list of groups given the path `name`. The output will be the `captainLogin` and the `userLogin` from all the members of that group.
 
 ```graphql
 query getGroupInfo($object: String!) {
   group(where: {object: {name: {_eq: $object}}}) {
     captainLogin
+    path
+    status
     members {
       userLogin
     }
@@ -70,7 +72,7 @@ query getGroupInfo($object: String!) {
 Query variable:
 
 ```graphql
-{"object": "ascii-art"}
+{"path": "/madere/div-01/go-reloaded"}
 ```
 
 ---
@@ -86,12 +88,14 @@ query eventsByCampus($campus: String!) {
     object {
       name
     }
-    path
     parent {
       path
       object {
         name
       }
+      createdAt
+      endAt
+      path
     }
   }
 }
@@ -105,11 +109,11 @@ Query variable:
 
 ---
 
-- The following query returns information of users that are associated to an event. For the query to work it should be given two arguments : `campus` and the `object`. The output will be the user name/login, audit ratio and the event info.
+- The following query returns information of users that are associated to an event. For the query to work it should be given two arguments : `campus` and the `path`. The output will be the user name/login, audit ratio and the event info.
 
 ```graphql
-query usersEvent($campus: String!, $object: String!) {
-  event_user(where: {event: {object: {name: {_eq: $object}}, _and: {campus: {_eq: $campus}}}}) {
+query usersEvent($campus: String!, $path: String!) {
+  event_user(where: {event: {path: {_eq: $path}, _and: {campus: {_eq: $campus}}}}) {
     userAuditRatio
     userLogin
     event {
@@ -125,10 +129,10 @@ query usersEvent($campus: String!, $object: String!) {
 Query variable:
 
 ```graphql
-{"campus": "pyc", "object": "Final Exam"}
+{"campus": "madera", "path": "/madere/div-01/piscine-js"}
 ```
 
-- If we wanted to filter the users that were registered to a type of object in the event, we would just need to filter the object by `type` instead of `name`. Should look something like this:
+- If we wanted to filter the users that were registered to a type of object in the event, we would just need to filter the object by `type` instead of filtering using the `path`. Should look something like this:
 
 ```graphql
 query usersEvent($campus: String!, $objectType: String!) {
@@ -200,11 +204,18 @@ Query variable:
 
 ---
 
-- The following query gives information relevant to the onboarding games.
+- The following query gives information relevant to the onboarding games, This view will.
 
 ```graphql
 query getGameInfo($name: String!) {
   toad_result_view(where: {user: {login: {_eq: $name}}}) {
+    user {
+      login
+    }
+    attempts
+    allowedAttempts
+     score
+    path
     games
   }
 }
