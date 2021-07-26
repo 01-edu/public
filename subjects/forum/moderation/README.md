@@ -39,13 +39,16 @@ This project will help you learn about :
 - Moderation System
 - User access levels
 
-### Allowed packages
-
-- All [standard go](https://golang.org/pkg/) packages are allowed.
-
 ### Instructions
 
 - You must handle website errors, HTTPS status.
 - You must handle all sort of technical errors.
 - The code must respect the [**good practices**](https://public.01-edu.org/subjects/good-practices/).
 - It is recommended that the code should present a **test file**.
+
+### Allowed packages
+
+- All [standard go](https://golang.org/pkg/) packages are allowed.
+- github.com/mattn/go-sqlite3
+- golang.org/x/crypto/bcrypt
+- github.com/satori/go.uuid
