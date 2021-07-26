@@ -6,7 +6,7 @@
 
 Create in your [Gitea](<https://git.((DOMAIN))>) account the repository named `((ROOT))`.
 
-This repository will be the folder where all the exercices must be uploaded.
+This repository will be the folder where all the exercises must be uploaded.
 
 Once created, clone that repository on your desktop.
 
