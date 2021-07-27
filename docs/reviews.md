@@ -6,7 +6,7 @@ Only unblocked bonus exercises can be reviewed, which are usually the last items
 Bonus exercises are available in quests 02 / 03 / 04 / 05 / 07 / 08 / 09.
 <img width="1073" alt="Screenshot 2019-10-17 at 02.43.31" src="img/reviews/Screenshot 2019-10-17 at 02.43.31.jpg">
 
-Making a review involves 2 students who are goning to review each other's exercise.
+Making a review involves 2 students who are going to review each other's exercise.
 Each user has to :
 
 - **check** the code of the other one on Gitea. You must add your reviewer as contributor in your repository so he/she can see your code.
