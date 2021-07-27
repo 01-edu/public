@@ -9,7 +9,7 @@ Bonus exercises are available in quests 02 / 03 / 04 / 05 / 07 / 08 / 09.
 Making a review involves 2 students who are going to review each other's exercise.
 Each user has to :
 
-- **check** the code of the other one on Gitea. You must add your reviewer as contributor in your repository so he/she can see your code.
+- **check** the code of the other one on Gitea. **You must add your reviewer as contributor in your repository so he/she can see your code**.
 - **bet** if it is going to fail or succeed in the Review interface
 - **run** his own exercise in the Review interface to give a result to compare with the bet, and state if it was right or wrong
 
