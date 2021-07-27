@@ -23,21 +23,21 @@ Then, when a match with another student who also wants to review is found, you w
 
 <img width="1073" alt="Screenshot 2019-10-17 at 02.03.11" src="img/reviews/Screenshot 2019-10-17 at 02.03.11.jpg">
 
-Once you and the other student have confirmed the match, you can go and check the code of the other student on his repository in the component `Your review` :
+Once you and the other student have confirmed the match, you can go and check the code of the other student on their repository in the component `Your review` :
 
 <img width="1073" alt="Screenshot 2019-10-17 at 02.05.46" src="img/reviews/Screenshot 2019-10-17 at 02.05.46.jpg">
 
-When you have checked his code, those 4 steps will have to be completed to achieve the review :
+When you have checked their code, those 4 steps will have to be completed to achieve the review :
 
 - You have to bet if the exercise of the other student will fail or succeed after running the tester
 - The other student has to do the same with your exercise and make his own bet, that you will see on the component `Review of your exercise`
   <img width="1073" alt="Screenshot 2019-10-17 at 02.20.18" src="img/reviews/Screenshot 2019-10-17 at 02.20.18.jpg">
 
 - Once the other student's bet is set, the tester button unblocks and you have to run it on your exercise to output the result determining if your exercise has failed or succeeded ; this result is compared to the other student's bet to determine if it was wrong or right
-- The other student also has to run the tester on his exercise to determine his result and so if your bet was wrong or right
+- The other student also has to run the tester on their exercise to determine their result and so whether your bet was wrong or right
   <img width="1073" alt="Screenshot 2019-10-17 at 02.22.30" src="img/reviews/Screenshot 2019-10-17 at 02.22.30.jpg">
 
-In fact, a bet is succeeded if it is equal to the tester output :
+A bet is considered succeeded if it is equal to the tester output :
 <img width="1073" alt="Screenshot 2019-10-17 at 02.24.04" src="img/reviews/Screenshot 2019-10-17 at 02.24.04.jpg">
 
 You can have those 4 cases :
