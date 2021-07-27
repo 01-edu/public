@@ -17,7 +17,7 @@ To simplify your life as a teacher and as the answers will not be exactly the sa
 - step 2, it isolates, through a similar command that you used to find it, and into an environment variable, the number (**and only the number**) of the key interview that helped solved the mystery (Unlike the interview number, the address will not change across the `mystery` folders that will be tested, hence the command to find the interview is the same across all the `mystery` folders that will be tested).
 - step 3, it prints the newly created environment variable.
 - step 4, it prints what the interview contains.
-- step 5, it executes the command that should have printed the shorted list of 4 suspects. (it shows only the license Plate, the Make, the Color, the Owner, and the Height)
+- step 5, it executes the command that should have printed the short list of 4 suspects. (it only shows the license Plate, the Make, the Color, the Owner, and the Height)
 - step 6, it executes the command that should have gotten your main suspect convicted (as a reminder the result of that command should be the printing of a number) except that now you replace your suspect name with the environment variable MAIN_SUSPECT.
 
 - step 7, step 1 to 6 are repeated for each `mystery` folder of the training folder that the program works in.
