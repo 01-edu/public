@@ -1,14 +1,14 @@
 ## go-reloaded
 
-Welcome back. Congratulations on your admission. I knew you could make it. Time to get into projects.
+Welcome back. Congratulations on your admission. We knew you would make it. Now time to get into projects.
 
 ### Objectives
 
-In this project you will use some of your old functions made in your old repository. You will use them in order to make a simple text completion/editing/auto-correction tool.
+In this project you will use some of your old functions made in your old repository. You will use them with the ojective of making a simple text completion/editing/auto-correction tool.
 
 One more detail. This time the project will be corrected by auditors. The auditors will be others students and you will be an auditor as well.
 
-We advise you to create your own tests for yourself and for when you will correct your students.
+We advise you to create your own tests for yourself and for when you will correct your auditees.
 
 ### Introduction
 
@@ -16,9 +16,9 @@ We advise you to create your own tests for yourself and for when you will correc
 - The code must respect the [**good practices**](../good-practices/README.md).
 - It is recommended that the code present a **test file**.
 
-The tool you're about to build will receive as arguments the name of a file containing a text that needs some modifications and the name of the file the modified text should be placed in. Next is a list of possible modifications that your program should execute:
+The tool you are about to build will receive as arguments the name of a file containing a text that needs some modifications (the input) and the name of the file the modified text should be placed in (the output). Next is a list of possible modifications that your program should execute:
 
-- Every instance of `(hex)` should replace the word before with the decimal version of the word (in this case the word will always be an hexadecimal number). (Ex: "it was added 1E (hex) files" -> "it was added 30 files")
+- Every instance of `(hex)` should replace the word before with the decimal version of the word (in this case the word will always be an hexadecimal number). (Ex: "1E (hex) files were added" -> "30 files were added")
 - Every instance of `(bin)` should replace the word before with the decimal version of the word (in this case the word will always be a binary number). (Ex: "It has been 10 (bin) years" -> "It has been 2 years")
 - Every instance of `(up)` converts the word placed before in the Uppercase version of it. (Ex: "Ready, set, go (up) !" -> "Ready, set, GO !")
 - Every instance of `(low)` converts the word placed before in the Lowercase version of it. (Ex: "I should stop SHOUTING (low)" -> "I should stop shouting")
@@ -29,7 +29,7 @@ The tool you're about to build will receive as arguments the name of a file cont
 - Every instance of the ponctuations `'.'`, `','`, `'!'`, `'?'`, `':'` and `';'` should be close to the previous word and with a space appart from the next one. (Ex: "I was sitting over there ,and then BAMM !!" -> "I was sitting over there, and then BAMM!!").
   - Except if there are groups of ponctuation like: '...' or '!?'. In this case the program should format the text as in the following example: "I was thinking ... You were right" -> "I was thinking... You were right".
 - The ponctuation mark `'''` should not have spaces if there are letters in both sides of it. Otherwise, the mark should be placed to the right of the next word and the following `'''` mark should be placed to its left. (Ex: "I'm exactly how they describe me: ' awesome '" -> "I'm exactly how they describe me: 'awesome'")
-  - If there are more than one word between the two `'''`, the program should place the marks next to the corresponding words (Ex: "As Elton John said: ' I am the most well-known homossexual in the world '" -> As Elton John said: 'I am the most well-known homossexual in the world')
+  - If there are more than one word between the two `'''`, the program should place the marks next to the corresponding words (Ex: "As Elton John said: ' I am the most well-known homosexual in the world '" -> As Elton John said: 'I am the most well-known homosexual in the world')
 - Every instance of `"a"` should turned into `"an"` if the next word begans with a vowel or an 'h'. (Ex: "There it was. A amazing rock!" -> "There it was. An amazing rock!").
 
 ### Allowed packages
