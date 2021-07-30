@@ -226,3 +226,32 @@ Query variables:
 ```graphql
 {"name": "Joao"}
 ```
+
+---
+
+- The following query returns information about the progress of a given user in a specific path.
+
+```graphql
+query getProgress($name: String!, $path: String!) {
+  progress(where: {user: {login: {_eq: $name}}, _and: {path: {_eq: $path}}}) {
+    path
+    grade
+    isDone
+    campus
+    group {
+      captainLogin
+      members {
+        user {
+          login
+        }
+      }
+    }
+  }
+}
+```
+
+query variable:
+
+```graphql
+{"name": "Joao", "path": "/madere/piscine-go/exam-01" }
+```
