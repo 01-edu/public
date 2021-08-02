@@ -21,9 +21,14 @@ Here is a possible program to test your function :
 ```go
 package main
 
+import (
+	"fmt"
+	"student"
+)
+
 func main() {
-	fmt.Println(Lcm(2, 7))
-	fmt.Println(Lcm(0, 4))
+	fmt.Println(student.Lcm(2, 7))
+	fmt.Println(student.Lcm(0, 4))
 }
 ```
 
