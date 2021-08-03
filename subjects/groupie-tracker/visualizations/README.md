@@ -4,7 +4,7 @@
 
 You must follow the same [principles](../README.md) as the first subject.
 
-Groupie tracker visualizations consists on manipulating the data coming from the API and displaying it in the most presentable way possible to you, following the [_Schneiderman's 8 Golden Rules of Interface Design_](https://www.interaction-design.org/literature/article/shneiderman-s-eight-golden-rules-will-help-you-design-better-interfaces) :
+Groupie tracker visualizations consists of manipulating the data coming from the API and displaying it in the most presentable way possible to you. The [_Schneiderman's 8 Golden Rules of Interface Design_](https://www.interaction-design.org/literature/article/shneiderman-s-eight-golden-rules-will-help-you-design-better-interfaces) must be followed:
 
 - Strive for consistency
 - Enable frequent users to use shortcuts

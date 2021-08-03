@@ -4,7 +4,7 @@
 
 You must follow the same [principles](../README.md) as the first subject.
 
-Groupie tracker search bar consists of creating a functional program that searches, inside your website, for a specific input text.
+Groupie tracker search bar consists of creating a functional program that searches, inside your website, for a specific text input.
 
 - The program should handle at least these search cases :
   - artist/band name

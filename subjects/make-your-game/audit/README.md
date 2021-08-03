@@ -56,7 +56,7 @@
 
 ##### Try using the Dev Tool/Performance.
 
-###### Does it not present frame drop?
+###### Is there no frame drop?
 
 ##### Try using the Dev Tool/Performance.
 
@@ -64,11 +64,11 @@
 
 ##### Try using the Dev Tool/performance and the option rendering with the paint ON, if possible.
 
-###### Is the paint being used as less as possible?
+###### Is the paint being used the less possible?
 
 ##### Try using the Dev Tool/performance and the option rendering with the layer ON, if possible.
 
-###### Is the layers being used as less as possible?
+###### Are the layers being used the less possible?
 
 ###### Are the creation of the [layers being promoted](https://developers.google.com/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count) properly?
 

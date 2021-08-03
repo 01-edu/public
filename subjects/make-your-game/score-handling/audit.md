@@ -4,7 +4,7 @@
 
 ##### Play and finish the game.
 
-###### Does it asks for a name?
+###### Does it ask for a name?
 
 ##### Play and finish the game.
 
@@ -34,7 +34,7 @@
 
 ##### Try using the Dev Tool/Performance.
 
-###### Does it not present frame drop?
+###### Is there no frame drop?
 
 ##### Try using the Dev Tool/Performance
 
@@ -42,10 +42,10 @@
 
 #### Bonus
 
-###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
+###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc...)
 
 ###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
 ###### +Is the code using synchronicity to increase performance?
 
-###### +Do you think in general this project is well done?
+###### +Do you think this project is well done in general?

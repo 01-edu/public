@@ -11,11 +11,11 @@ Even [Brick Breaker/ Arkanoid](https://en.wikipedia.org/wiki/Arkanoid) can be do
 
 ### Instructions
 
-A story must have some kind of logic, you must not simply write something on a board and its done, no!
+A story must have some kind of logic, you must not simply write something on a board and it is done, no!
 
 It must have:
 
-- an introduction, the context and beginning of the story (should be shown before starting playing)
+- an introduction, the context and beginning of the story (should be shown before starting to play)
 - a development, the story reaches a middle (should be shown when you hit a specific score while playing)
 - a conclusion, the end of the story (should be shown when the game ends, either you lose or win)
 

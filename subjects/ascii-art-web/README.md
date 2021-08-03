@@ -17,7 +17,7 @@ Implement the following HTTP endpoints:
 The main page must have:
 
 - text input
-- radio buttons, select object or anything else to change between banners
+- radio buttons, select object or anything else to switch between banners
 - button, which sends a POST request to '/ascii-art' and outputs the result on the page.
 
 ### HTTP status code
@@ -25,7 +25,7 @@ The main page must have:
 Your endpoints must return appropriate HTTP status codes.
 
 - OK (200), if everything went without errors.
-- Not Found, if nothing is found, for example template or banner.
+- Not Found, if nothing is found, for example templates or banners.
 - Bad Request, for incorrect requests.
 - Internal Server Error, for unhandled errors.
 

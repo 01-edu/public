@@ -28,11 +28,11 @@
 
 ##### Add at least 2 to-dos and select only one of them.
 
-###### If you click on the **Active** button, does it appear only the unchecked to-dos?
+###### If you click on the **Active** button, do only the unchecked to-dos appear?
 
-###### And if you click on the **Completed** button, does it appear only the checked to-dos?
+###### And if you click on the **Completed** button, do only the checked to-dos appear?
 
-###### Does it appear a **Clear Completed** button to-dos?
+###### Does a **Clear Completed** button to-dos appear?
 
 ###### When clicking on the clear completed button, does it remove only the checked to-dos?
 
@@ -56,11 +56,11 @@
 
 ###### +Is it easier to handle the routing in JS using the framework?
 
-###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
+###### +Does the project runs quickly and effectively? (Favoring recursivity, no unnecessary data requests, etc...)
 
 ###### +Is the code using synchronicity to increase performance?
 
-###### +Do you think in general this project is well done?
+###### +Do you think this project is well done in general?
 
 #### Social
 

@@ -1,6 +1,6 @@
 #### Functional
 
-###### Has the requirements for the allowed packages been respected?
+###### Has the requirement for the allowed packages been respected?
 
 ##### Open the project
 

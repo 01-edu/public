@@ -6,7 +6,7 @@
 
 ##### Try registering as a new user.
 
-###### Does the site asks for a nickname, age, gender, first and last name, email and password?
+###### Does the site ask for a nickname, age, gender, first and last name, email and password?
 
 ##### Try to login as an unregistered user.
 
@@ -14,7 +14,7 @@
 
 ##### Go to the login page.
 
-###### Does the login requests for a nickname or an email combined with a password?
+###### Does the login request for a nickname or an email combined with a password?
 
 ##### Try to login as a registered user.
 
@@ -54,15 +54,15 @@
 
 ##### Open two browsers (ex: Chrome and Firefox), log in with different users in each one and with one of them try to send a private message to the other.
 
-###### Did the other user received a notification?
+###### Did the other user receive a notification?
 
 ##### Open two browsers (ex: Chrome and Firefox), log in with different users in each one and with one of them try to send a private message to the other.
 
-###### Did the other user received the message in real time, without refreshing the page?
+###### Did the other user receive the message in real time, without refreshing the page?
 
 ##### Try to open a private conversation, that has more then 10 messages.
 
-###### Is the last 10 messages sent to this user loaded for you to see?
+###### Are the last 10 messages sent to this user loaded for you to see?
 
 ##### Try to open a private conversation, that has more then 20 messages and scroll up to see the rest of the conversation.
 
@@ -74,14 +74,14 @@
 
 #### Bonus
 
-###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
+###### +Does the project runs quickly and effectively? (Favoring recursivity, no unnecessary data requests, etc...)
 
 ###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
-###### +Does the users have profiles?
+###### +Do the users have profiles?
 
 ###### +Can the users send images through the private messages?
 
 ###### +Is the code using synchronicity (Promises and Go routines/channels) to increase performance?
 
-###### +Do you think in general this project is well done?
+###### +Do you think this project is well done in general ?

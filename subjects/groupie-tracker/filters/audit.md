@@ -8,35 +8,35 @@
 
 ##### Try to filter the artists/bands which the creation date is between `"1995"` and `"2000"`.
 
-###### Did it appear as a result SOJA, Mamonas Assassinas, Thirty Seconds to Mars, Nickleback, NWA, Gorillaz, Linkin Park, Eminem and Coldplay?
+###### Did SOJA, Mamonas Assassinas, Thirty Seconds to Mars, Nickleback, NWA, Gorillaz, Linkin Park, Eminem and Coldplay appear as a result?
 
 ##### Try to filter the artists/bands that recorded their first album between `"1990"` and `"1992"`.
 
-###### Did it appear as a result Pearl Jam and Red Hot Chili Peppers?"
+###### Did Pearl Jam and Red Hot Chili Peppers appear as a result?"
 
 ##### Try to filter the artists/bands that have exactly `"6"` members in their band.
 
-###### Did it appear as a result Pink Floyd, Arctic Monkeys, Linkin Park and Foo Fighters?
+###### Did Pink Floyd, Arctic Monkeys, Linkin Park and Foo Fighters appear as a result?
 
 ##### Try to filter the artists/bands that have/had concerts in `"Texas, USA"`.
 
-###### Did it appear as a result R3HAB, Logic, Joyner Lucas and Twenty One Pilots?
+###### Did R3HAB, Logic, Joyner Lucas and Twenty One Pilots appear as a result?
 
 ##### Try to filter the artists/bands which the creation date is between `"1970"` and `"2000"` and have only `"1"` member (solo artists).
 
-###### Did it appear as a result Bobby McFerrins and Eminem?
+###### Did Bobby McFerrins and Eminem appear as a result?
 
 ##### Try to filter the artists/bands which the creation date is after `"2010"` and recorded their first album after `"2010"`.
 
-###### Did it appear as a result XXXTentacion, Juice Wrld, Alec Benjamin and Post Malone?
+###### Did XXXTentacion, Juice Wrld, Alec Benjamin and Post Malone appear as a result?
 
 ##### Try to filter the artists/bands that have/had concerts in `"Washington, USA"` and have more than 3 members.
 
-###### Did it appear as a result The Rolling Stones?
+###### Did The Rolling Stones appear as a result?
 
 ##### Try to filter the artists/bands that recorded their first album between `"1980"` and `"1990"` and have a maximum of `"4"` members.
 
-###### Did it appear as a result Phil Collins, Bobby McFerrins, Red Hot Chili Peppers and Metallica?
+###### Did Phil Collins, Bobby McFerrins, Red Hot Chili Peppers and Metallica appear as a result?
 
 ###### Can you filter so that all the artists/bands are all shown?
 

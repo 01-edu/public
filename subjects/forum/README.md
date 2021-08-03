@@ -67,7 +67,7 @@ Note that the last two are only available for registered users and must refer to
 
 #### Docker
 
-For the forum project you must use Docker. You can see all about docker basics on the [ascii-art-web-dockerize](../ascii-art-web/dockerize/README.md) subject.
+For the forum project you must use Docker. You can read about docker basics in the [ascii-art-web-dockerize](../ascii-art-web/dockerize/README.md) subject.
 
 ### Instructions
 

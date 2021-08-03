@@ -2,7 +2,7 @@
 
 ### Objectives
 
-- You must follow the same [instructions](../README.md) as in the first subject **while** writing the result into a file. Yep, you will read from one file and write to another.
+- You must follow the same [instructions](../README.md) as in the first subject **while** writing the result into a file. Yes, you will read from one file and write to another.
 
 The file must be named by using the flag `--output=<fileName.txt>`, in which `--output` is the flag and `<fileName.txt>` is the file name which will contain the output.
 

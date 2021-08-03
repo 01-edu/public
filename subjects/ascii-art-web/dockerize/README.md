@@ -24,7 +24,7 @@ You must follow the same [principles](../README.md) as the first subject.
 
 ### Allowed packages
 
-- Only the [standard go](https://golang.org/pkg/) packages are allowed
+- Only the [standard go](https://golang.org/pkg/) packages are allowed.
 
 ### Usage
 
