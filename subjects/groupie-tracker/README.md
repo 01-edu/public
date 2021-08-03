@@ -30,7 +30,7 @@ Groupie Trackers consists on receiving a given API and manipulate the data conta
 
 ### Allowed packages
 
-- Only the [standard Go](https://golang.org/pkg/) packages are allowed
+- Only the [standard Go](https://golang.org/pkg/) packages are allowed.
 
 ### Usage
 

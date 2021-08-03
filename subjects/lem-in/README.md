@@ -18,7 +18,7 @@ You need to find the quickest way to get `n` ants across a colony (composed of r
 - At the beginning of the game, all the ants are in the room `##start`. The goal is to bring them to the room `##end` with as few moves as possible.
 - The shortest path is not necessarily the simplest.
 - Some colonies will have many rooms and many links, but no path between `##start` and `##end`.
-- Some will have rooms that link to themselves, sending your path-search spinning in circles, some will have too many/too few ants, no `##start` or `##end`, duplicated rooms, links to unknown rooms, rooms with invalid coordinates and a variety of other invalid or poorly-formatted input. In this cases the program will return an error message `ERROR: invalid data format`. If you want, you can elaborate the error message by being more specific (example: `ERROR: invalid data format, invalid number of Ants` or `ERROR: invalid data format, no start room found`).
+- Some will have rooms that link to themselves, sending your path-search spinning in circles. Some will have too many/too few ants, no `##start` or `##end`, duplicated rooms, links to unknown rooms, rooms with invalid coordinates and a variety of other invalid or poorly-formatted input. In those cases the program will return an error message `ERROR: invalid data format`. If you wish, you can elaborate a more specific error message (example: `ERROR: invalid data format, invalid number of Ants` or `ERROR: invalid data format, no start room found`).
 
 You must display your results on the standard output in the following format :
 

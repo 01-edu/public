@@ -82,19 +82,19 @@ cc8f5dcf760f        <name of the image>    "./server"               6 seconds ag
 
 ##### Enter the forum as a non-registered user and try to create a post.
 
-###### Are you forbidden to create a post?
+###### Are you forbidden from creating a post?
 
 ##### Enter the forum as a non-registered user and try to create a comment.
 
-###### Are you forbidden to create a comment?
+###### Are you forbidden from creating a comment?
 
 ##### Enter the forum as a non-registered user and try to like a comment.
 
-###### Are you forbidden to like a post?
+###### Are you forbidden from liking a post?
 
 ##### Enter the forum as a non-registered user and try to dislike a comment.
 
-###### Are you forbidden to dislike a comment?
+###### Are you forbidden from disliking a comment?
 
 ##### Enter the forum as a registered user, go to a post and try to create a comment for it.
 
@@ -102,7 +102,7 @@ cc8f5dcf760f        <name of the image>    "./server"               6 seconds ag
 
 ##### Enter the forum as a registered user, go to a post and try to create an empty comment for it.
 
-###### Were you forbidden to create the empty comment?
+###### Were you forbidden from creating the empty comment?
 
 ##### Enter the forum as a registered user and try to create a post.
 
@@ -110,7 +110,7 @@ cc8f5dcf760f        <name of the image>    "./server"               6 seconds ag
 
 ##### Enter the forum as a registered user and try to create an empty post.
 
-###### Were you forbidden to create the empty post?
+###### Were you forbidden from creating the empty post?
 
 ##### Try creating a post as a registered user and try to choose several categories for that post.
 

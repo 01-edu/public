@@ -10,7 +10,7 @@
 [USAGE]: ./TCPChat $port
 ```
 
-###### Did server respond with usage, as above?
+###### Did the server respond with usage, as above?
 
 ##### Try running `"./TCPChat 2525"`.
 
@@ -18,15 +18,15 @@
 
 ##### Try opening 3 terminals, run on the first terminal the command `"./TCPChat <port>"` and on the second and third terminal run the command `"nc <host ip> <port>"`.
 
-###### Does both clients connect to the server with success?
+###### Do both clients connect to the server with success?
 
 ##### Try creating a server and 2 Clients.
 
-###### Did the server responded with a linux logo and asked for the name?
+###### Did the server respond with a linux logo and ask for the name?
 
 ##### Try creating a server and 2 Clients.
 
-###### Do all Clients receive a message informing that the Client joined the chat?
+###### Do all Clients receive a message informing them that the Client joined the chat?
 
 ##### Try creating a server and 2 Clients and send a message using the first Client.
 
@@ -40,9 +40,9 @@
 
 ###### Did all the Clients (first, second and third) received the same message?
 
-##### Try creating a server and use 2 or 3 different computers and create for each computer one Client.
+##### Try creating a server and use 2 or 3 different computers and create one Client for each computer.
 
-###### Did the server/Clients connected with success?
+###### Did the server/Clients connect with success?
 
 ##### Try creating a server and 4 Clients and disconnect one of the Clients.
 
@@ -58,15 +58,15 @@
 [2020-01-20 15:48:41][client.name]:[client.message]
 ```
 
-###### Are the messages identified by the name of each Client and the time that the messages was sent, as above?
+###### Are the messages identified by the name of each Client and the time that the messages were sent, as above?
 
-###### Is the connections between server and Clients well established?
+###### Are the connections between server and Clients well established?
 
 ###### Does the project present go routines?
 
 ###### Does the project use channels or mutexes?
 
-##### Are the students using just the allowed packages?
+##### Are the students using only the allowed packages?
 
 ###### As an auditor, is this project up to every standard? If not, why are you failing the project?(Empty Work, Incomplete Work, Invalid compilation, Cheating, Crashing, Leaks)
 
@@ -86,7 +86,7 @@
 
 #### Basic
 
-###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
+###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc...)
 
 ###### +Does the code obey the [good practices](../../good-practices/README.md)?
 

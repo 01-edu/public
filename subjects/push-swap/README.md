@@ -110,7 +110,7 @@ $
 - Checker will then read instructions on the standard input, each instruction will be followed by `\n`. Once all the instructions have been read, checker will execute them on the stack received as an argument.
 - If after executing those instructions, stack `a` is actually sorted and `b` is empty, then checker must display "OK" followed by a `\n` on the standard output. In every other case, checker must display "KO" followed by a `\n` on the standard output.
 - In case of error, you must display Error followed by a `\n` on the standard error. Errors include for example: some arguments are not integers, there are duplicates, an instruction do not exist and/or is incorrectly formatted.
-- In case of there are no arguments the program displays nothing.
+- In case of there are no arguments, the program displays nothing.
 
 ```console
 $ go run ./checker "3 2 1 0"

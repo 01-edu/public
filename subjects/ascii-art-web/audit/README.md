@@ -100,7 +100,7 @@ o-o-o o--o o-o          o   o      o   o-o  | |  o   o
 
 #### General
 
-###### +Does the server presents all the needed [handlers and patterns](https://golang.org/pkg/net/http/#HandleFunc) for the http requests?
+###### +Does the server present all the needed [handlers and patterns](https://golang.org/pkg/net/http/#HandleFunc) for the http requests?
 
 #### Basic
 

@@ -44,19 +44,19 @@
 
 ##### Start typing an artist/band beginning with `"G"`.
 
-###### Does the suggestion help you find the band you were looking for?
+###### Is the suggestion helping you find the band you are looking for?
 
 ##### Start typing a location of one of the concerts.
 
-###### Does the suggestion help you find the location you were looking for?
+###### Is the suggestion helping you find the location you are looking for?
 
 ##### Try to search for an artist/band member beginning with `"R"`.
 
-###### Does the suggestion help you find the artist/band you were looking for?
+###### Is the suggestion helping you find the artist/band you are looking for?
 
 ##### Try to search for a creation date of an artist/band.
 
-###### Does the suggestion help you find the artist/band you were looking for?
+###### Is the suggestion helping you find the artist/band you are looking for?
 
 ###### As an auditor, is this project up to every standard? If not, why are you failing the project?(Empty Work, Incomplete Work, Invalid compilation, Cheating, Crashing, Leaks)
 

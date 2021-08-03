@@ -20,9 +20,9 @@ You will have to follow more a less the same principles has the [make-your-game]
   - Proper use of [**`requestAnimationFrame`**](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
   - Measuring performance to know if your code is fast
 
-You must not use canvas, neither [Web-GL](https://get.webgl.org/) or other framework. For this project you will use the framework you did on the [mini-framework](../mini-framework/) project.
+You must not use canvas, neither [Web-GL](https://get.webgl.org/) nor another framework. For this project you will use the framework you did on the [mini-framework](../mini-framework/) project.
 
-You will have to make also a chat that enables the different players to talk to each other. You will have to use [WebSockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API). This chat **chat can be considered as a "Hello World" of the multiplayer feature** for the **bomberman-dom**.
+You will also have to make a chat that enables the different players to talk to each other. You will have to use [WebSockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API). This chat **can be considered as a "Hello World" of the multiplayer feature** for the **bomberman-dom**.
 
 #### Game Mechanics
 
@@ -35,7 +35,7 @@ You will have to make also a chat that enables the different players to talk to 
 
    1. The map should be fixed so that every player sees the whole map.
    2. There will be two types of blocks, the ones that can be destroyed (blocks) and the ones that can not (walls).
-      1. The walls will be placed always in the same place, while the blocks are meant to be generated randomly on the map. Tip: the optional project [different maps](../make-your-game/different-maps/README.md) can be useful for this part.
+      1. The walls will always be placed in the same place, while the blocks are meant to be generated randomly on the map. Tip: the optional project [different maps](../make-your-game/different-maps/README.md) can be useful for this part.
       2. In the starting positions the players need to be able to survive. For example: if the players place a bomb, they will need to have space to avoid the bomb explosion.
    3. The players should be placed in the corners as their starting positions.
 
