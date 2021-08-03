@@ -36,6 +36,6 @@ And its output :
 
 ```console
 $ go run .
-map[Orange:6 is:6 of:7 the:8]
+map[Orange:6 of:7 the:8]
 $
 ```
