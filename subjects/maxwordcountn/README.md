@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function `MaxWordCountN` that will return a `map` of the `n` words that occurs the most in a string `text`. A word is defined as separated by spaces. The map you should return will have the word as key and the number of occurences of this word as value.
+Write a function `MaxWordCountN` that will return a `map` of the `n` words that occurs the most in a string `text`. A word is defined as separated by spaces. The `map` you should return will have the word as key and the number of occurences of this word as value.
 If two words have the same number of occurences, the one with the lowest ASCII value should be prioritized.
 
 ### Expected function
