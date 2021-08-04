@@ -20,19 +20,19 @@ Videos:
 
 Exercices:
 
-- introduction | https://public.01-edu.org/subjects/introduction.en
-- make-it-better | https://public.01-edu.org/subjects/make-it-better.en
-- to-git-or-not-to-git | https://public.01-edu.org/subjects/to-git-or-not-to-git.en
-- who-are-you | https://public.01-edu.org/subjects/who-are-you.en
-- cl-camp1 | https://public.01-edu.org/subjects/cl-camp1.en
-- cl-camp2 | https://public.01-edu.org/subjects/cl-camp2.en
-- cl-camp3 | https://public.01-edu.org/subjects/cl-camp3.en
-- cl-camp4 | https://public.01-edu.org/subjects/cl-camp4.en
-- cl-camp5 | https://public.01-edu.org/subjects/cl-camp5.en
-- cl-camp6 | https://public.01-edu.org/subjects/cl-camp6.en
-- cl-camp7 | https://public.01-edu.org/subjects/cl-camp7.en
-- cl-camp8 | https://public.01-edu.org/subjects/cl-camp8.en
-- now-get-to-work | https://public.01-edu.org/subjects/now-get-to-work.en
+- [introduction](https://github.com/01-edu/public/tree/master/subjects/introduction/README.md)
+- [make-it-better](https://github.com/01-edu/public/tree/master/subjects/make-it-better/README.md)
+- [to-git-or-not-to-git](https://github.com/01-edu/public/tree/master/subjects/to-git-or-not-to-git/README.md)
+- [who-are-you](https://github.com/01-edu/public/tree/master/subjects/who-are-you/README.md)
+- [cl-camp1](https://github.com/01-edu/public/tree/master/subjects/cl-camp1/README.md)
+- [cl-camp2](https://github.com/01-edu/public/tree/master/subjects/cl-camp2/README.md)
+- [cl-camp3](https://github.com/01-edu/public/tree/master/subjects/cl-camp3/README.md)
+- [cl-camp4](https://github.com/01-edu/public/tree/master/subjects/cl-camp4/README.md)
+- [cl-camp5](https://github.com/01-edu/public/tree/master/subjects/cl-camp5/README.md)
+- [cl-camp6](https://github.com/01-edu/public/tree/master/subjects/cl-camp6/README.md)
+- [cl-camp7](https://github.com/01-edu/public/tree/master/subjects/cl-camp7/README.md)
+- [cl-camp8](https://github.com/01-edu/public/tree/master/subjects/cl-camp8/README.md)
+- [now-get-to-work](https://github.com/01-edu/public/tree/master/subjects/now-get-to-work/README.md)
 
 ### Quest 2
 
@@ -49,14 +49,14 @@ Videos:
 
 Exercices:
 
-- printalphabet | https://public.01-edu.org/subjects/printalphabet.en
-- printreversealphabet | https://public.01-edu.org/subjects/printreversealphabet.en
-- prindigits | https://public.01-edu.org/subjects/printdigits.en
-- isnegative | https://public.01-edu.org/subjects/isnegative.en
-- printcomb | https://public.01-edu.org/subjects/printcomb.en
-- printcomb2 | https://public.01-edu.org/subjects/printcomb2.en
-- printnbr | https://public.01-edu.org/subjects/printnbr.en
-- printcombn | https://public.01-edu.org/subjects/printcombn.en
+- [printalphabet](https://github.com/01-edu/public/tree/master/subjects/printalphabet/README.md)
+- [printreversealphabet](https://github.com/01-edu/public/tree/master/subjects/printreversealphabet/README.md)
+- [prindigits](https://github.com/01-edu/public/tree/master/subjects/printdigits/README.md)
+- [isnegative](https://github.com/01-edu/public/tree/master/subjects/isnegative/README.md)
+- [printcomb](https://github.com/01-edu/public/tree/master/subjects/printcomb/README.md)
+- [printcomb2](https://github.com/01-edu/public/tree/master/subjects/printcomb2/README.md)
+- [printnbr](https://github.com/01-edu/public/tree/master/subjects/printnbr/README.md)
+- [printcombn](https://github.com/01-edu/public/tree/master/subjects/printcombn/README.md)
 
 ### Quest 3
 
@@ -73,18 +73,18 @@ Videos:
 
 Exercices:
 
-- pointone | https://public.01-edu.org/subjects/pointone.en
-- ultimatepointone | https://public.01-edu.org/subjects/ultimatepointone.en
-- divmod | https://public.01-edu.org/subjects/divmod.en
-- ultimatedivmod | https://public.01-edu.org/subjects/ultimatedivmod.en
-- printstr | https://public.01-edu.org/subjects/printstr.en
-- strlen | https://public.01-edu.org/subjects/strlen.en
-- swap | https://public.01-edu.org/subjects/swap.en
-- strrev | https://public.01-edu.org/subjects/strrev.en
-- basicatoi | https://public.01-edu.org/subjects/basicatoi.en
-- basicatoi2 | https://public.01-edu.org/subjects/basicatoi2.en
-- atoi | https://public.01-edu.org/subjects/atoi.en
-- sortintegerable | https://public.01-edu.org/subjects/sortintegertable.en
+- [pointone](https://github.com/01-edu/public/tree/master/subjects/pointone/README.md)
+- [ultimatepointone](https://github.com/01-edu/public/tree/master/subjects/ultimatepointone/README.md)
+- [divmod](https://github.com/01-edu/public/tree/master/subjects/divmod/README.md)
+- [ultimatedivmod](https://github.com/01-edu/public/tree/master/subjects/ultimatedivmod/README.md)
+- [printstr](https://github.com/01-edu/public/tree/master/subjects/printstr/README.md)
+- [strlen](https://github.com/01-edu/public/tree/master/subjects/strlen/README.md)
+- [swap](https://github.com/01-edu/public/tree/master/subjects/swap/README.md)
+- [strrev](https://github.com/01-edu/public/tree/master/subjects/strrev/README.md)
+- [basicatoi](https://github.com/01-edu/public/tree/master/subjects/basicatoi/README.md)
+- [basicatoi2](https://github.com/01-edu/public/tree/master/subjects/basicatoi2/README.md)
+- [atoi](https://github.com/01-edu/public/tree/master/subjects/atoi/README.md)
+- [sortintegerable](https://github.com/01-edu/public/tree/master/subjects/sortintegertable/README.md)
 
 ### Exam 1 (4hours)
 
@@ -110,15 +110,15 @@ Videos:
 
 Exercices:
 
-- iterativefactorial | https://public.01-edu.org/subjects/iterativefactorial.en
-- recursivefactorial | https://public.01-edu.org/subjects/recursivefactorial.en
-- iterativepower | https://public.01-edu.org/subjects/iterativepower.en
-- recursivepower | https://public.01-edu.org/subjects/recursivepower.en
-- fibonacci | https://public.01-edu.org/subjects/fibonacci.en
-- sqrt | https://public.01-edu.org/subjects/sqrt.en
-- isprime | https://public.01-edu.org/subjects/isprime.en
-- findnextprime | https://public.01-edu.org/subjects/findnextprime.en
-- eightqueens | https://public.01-edu.org/subjects/eightqueens.en
+- [iterativefactorial](https://github.com/01-edu/public/tree/master/subjects/iterativefactorial/README.md)
+- [recursivefactorial](https://github.com/01-edu/public/tree/master/subjects/recursivefactorial/README.md)
+- [iterativepower](https://github.com/01-edu/public/tree/master/subjects/iterativepower/README.md)
+- [recursivepower](https://github.com/01-edu/public/tree/master/subjects/recursivepower/README.md)
+- [fibonacci](https://github.com/01-edu/public/tree/master/subjects/fibonacci/README.md)
+- [sqrt](https://github.com/01-edu/public/tree/master/subjects/sqrt/README.md)
+- [isprime](https://github.com/01-edu/public/tree/master/subjects/isprime/README.md)
+- [findnextprime](https://github.com/01-edu/public/tree/master/subjects/findnextprime/README.md)
+- [eightqueens](https://github.com/01-edu/public/tree/master/subjects/eightqueens/README.md)
 
 ### Quest 5
 
@@ -132,24 +132,24 @@ Videos:
 
 Exercices:
 
-- firstrune | https://public.01-edu.org/subjects/firstrune.en
-- nrune | https://public.01-edu.org/subjects/nrune.en
-- lastrune | https://public.01-edu.org/subjects/lastrune.en
-- index | https://public.01-edu.org/subjects/index.en
-- compare | https://public.01-edu.org/subjects/compare.en
-- toupper | https://public.01-edu.org/subjects/toupper.en
-- tolower | https://public.01-edu.org/subjects/tolower.en
-- capitalize | https://public.01-edu.org/subjects/capitalize.en
-- isalpha | https://public.01-edu.org/subjects/isalpha.en
-- isnumeric | https://public.01-edu.org/subjects/isnumeric.en
-- islower | https://public.01-edu.org/subjects/islower.en
-- isupper | https://public.01-edu.org/subjects/isupper.en
-- isprintable | https://public.01-edu.org/subjects/isprintable.en
-- concat | https://public.01-edu.org/subjects/concat.en
-- basicjoin | https://public.01-edu.org/subjects/basicjoin.en
-- join | https://public.01-edu.org/subjects/join.en
-- printnbrbase | https://public.01-edu.org/subjects/printnbrbase.en
-- atoibase | https://public.01-edu.org/subjects/atoibase.en
+- [firstrune](https://github.com/01-edu/public/tree/master/subjects/firstrune/README.md)
+- [nrune](https://github.com/01-edu/public/tree/master/subjects/nrune/README.md)
+- [lastrune](https://github.com/01-edu/public/tree/master/subjects/lastrune/README.md)
+- [index](https://github.com/01-edu/public/tree/master/subjects/index/README.md)
+- [compare](https://github.com/01-edu/public/tree/master/subjects/compare/README.md)
+- [toupper](https://github.com/01-edu/public/tree/master/subjects/toupper/README.md)
+- [tolower](https://github.com/01-edu/public/tree/master/subjects/tolower/README.md)
+- [capitalize](https://github.com/01-edu/public/tree/master/subjects/capitalize/README.md)
+- [isalpha](https://github.com/01-edu/public/tree/master/subjects/isalpha/README.md)
+- [isnumeric](https://github.com/01-edu/public/tree/master/subjects/isnumeric/README.md)
+- [islower](https://github.com/01-edu/public/tree/master/subjects/islower/README.md)
+- [isupper](https://github.com/01-edu/public/tree/master/subjects/isupper/README.md)
+- [isprintable](https://github.com/01-edu/public/tree/master/subjects/isprintable/README.md)
+- [concat](https://github.com/01-edu/public/tree/master/subjects/concat/README.md)
+- [basicjoin](https://github.com/01-edu/public/tree/master/subjects/basicjoin/README.md)
+- [join](https://github.com/01-edu/public/tree/master/subjects/join/README.md)
+- [printnbrbase](https://github.com/01-edu/public/tree/master/subjects/printnbrbase/README.md)
+- [atoibase](https://github.com/01-edu/public/tree/master/subjects/atoibase/README.md)
 
 ### Quest 6
 
@@ -163,10 +163,10 @@ Videos:
 
 Exercices:
 
-- printprogramname | https://public.01-edu.org/subjects/printprogramname.en
-- printparams | https://public.01-edu.org/subjects/printparams.en
-- revparams | https://public.01-edu.org/subjects/revparams.en
-- sortparams | https://public.01-edu.org/subjects/sortparams.en
+- [printprogramname](https://github.com/01-edu/public/tree/master/subjects/printprogramname/README.md)
+- [printparams](https://github.com/01-edu/public/tree/master/subjects/printparams/README.md)
+- [revparams](https://github.com/01-edu/public/tree/master/subjects/revparams/README.md)
+- [sortparams](https://github.com/01-edu/public/tree/master/subjects/sortparams/README.md)
 
 ### Quest 7
 
@@ -180,17 +180,17 @@ Videos:
 
 Exercices:
 
-- appendrange | https://public.01-edu.org/subjects/apprendrange.en
-- makerange | https://public.01-edu.org/subjects/makerange.en
-- concatparams | https://public.01-edu.org/subjects/concatparams.en
-- splitwhitespaces | https://public.01-edu.org/subjects/splitwhitespaces.en
-- printwordstables | https://public.01-edu.org/subjects/printwordstables.en
-- convertbase | https://public.01-edu.org/subjects/converbase.en
-- split | https://public.01-edu.org/subjects/split.en
+- [appendrange](https://github.com/01-edu/public/tree/master/subjects/apprendrange/README.md)
+- [makerange](https://github.com/01-edu/public/tree/master/subjects/makerange/README.md)
+- [concatparams](https://github.com/01-edu/public/tree/master/subjects/concatparams/README.md)
+- [splitwhitespaces](https://github.com/01-edu/public/tree/master/subjects/splitwhitespaces/README.md)
+- [printwordstables](https://github.com/01-edu/public/tree/master/subjects/printwordstables/README.md)
+- [convertbase](https://github.com/01-edu/public/tree/master/subjects/converbase/README.md)
+- [split](https://github.com/01-edu/public/tree/master/subjects/split/README.md)
 
 ### Exam 2 (4hours)
 
-#### Basic functions and programs skills evaluation, based on Quest 2 and Quest 6
+#### Basic functions and programs skills evaluation, based on all the quests from 2 to 6
 
 ### Raid 2 - Sudoku
 
@@ -213,11 +213,11 @@ Videos:
 
 Exercices:
 
-- bool | https://public.01-edu.org/subjects/bool.en
-- point | https://public.01-edu.org/subjects/point.en
-- displayfile | https://public.01-edu.org/subjects/displayfile.en
-- cat | https://public.01-edu.org/subjects/cat.en
-- ztail | https://public.01-edu.org/subjects/ztail.en
+- [bool](https://github.com/01-edu/public/tree/master/subjects/bool/README.md)
+- [point](https://github.com/01-edu/public/tree/master/subjects/point/README.md)
+- [displayfile](https://github.com/01-edu/public/tree/master/subjects/displayfile/README.md)
+- [cat](https://github.com/01-edu/public/tree/master/subjects/cat/README.md)
+- [ztail](https://github.com/01-edu/public/tree/master/subjects/ztail/README.md)
 
 ### Quest 9
 
@@ -231,14 +231,14 @@ Videos:
 
 Exercices:
 
-- foreach | https://public.01-edu.org/subjects/foreach.en
-- map | https://public.01-edu.org/subjects/map.en
-- any | https://public.01-edu.org/subjects/any.en
-- countif | https://public.01-edu.org/subjects/countif.en
-- issorted | https://public.01-edu.org/subjects/issorted.en
-- doop | https://public.01-edu.org/subjects/doop.en
-- sortwordarr | https://public.01-edu.org/subjects/sortwordarr.en
-- advancedsortwordarr | https://public.01-edu.org/subjects/advancedsortwordarr.en
+- [foreach](https://github.com/01-edu/public/tree/master/subjects/foreach/README.md)
+- [map](https://github.com/01-edu/public/tree/master/subjects/map/README.md)
+- [any](https://github.com/01-edu/public/tree/master/subjects/any/README.md)
+- [countif](https://github.com/01-edu/public/tree/master/subjects/countif/README.md)
+- [issorted](https://github.com/01-edu/public/tree/master/subjects/issorted/README.md)
+- [doop](https://github.com/01-edu/public/tree/master/subjects/doop/README.md)
+- [sortwordarr](https://github.com/01-edu/public/tree/master/subjects/sortwordarr/README.md)
+- [advancedsortwordarr](https://github.com/01-edu/public/tree/master/subjects/advancedsortwordarr/README.md)
 
 ### Quest 10
 
@@ -248,22 +248,22 @@ Notions: All previously viewed concepts in team work
 
 Exercices:
 
-- rot14 | https://public.01-edu.org/subjects/rot14.en
-- abort | https://public.01-edu.org/subjects/abort.en
-- collatzcountdown | https://public.01-edu.org/subjects/collatzcountdown.en
-- comcheck | https://public.01-edu.org/subjects/comcheck.en
-- enigma | https://public.01-edu.org/subjects/enigma.en
-- pilot | https://public.01-edu.org/subjects/pilot.en
-- fixthemain | https://public.01-edu.org/subjects/fixthemain.en
-- compact | https://public.01-edu.org/subjects/compact.en
-- activebits | https://public.01-edu.org/subjects/activebits.en
-- max | https://public.01-edu.org/subjects/max.en
-- join | https://public.01-edu.org/subjects/join.en
-- unmatch | https://public.01-edu.org/subjects/unmatch.en
+- [rot14](https://github.com/01-edu/public/tree/master/subjects/rot14/README.md)
+- [abort](https://github.com/01-edu/public/tree/master/subjects/abort/README.md)
+- [collatzcountdown](https://github.com/01-edu/public/tree/master/subjects/collatzcountdown/README.md)
+- [comcheck](https://github.com/01-edu/public/tree/master/subjects/comcheck/README.md)
+- [enigma](https://github.com/01-edu/public/tree/master/subjects/enigma/README.md)
+- [pilot](https://github.com/01-edu/public/tree/master/subjects/pilot/README.md)
+- [fixthemain](https://github.com/01-edu/public/tree/master/subjects/fixthemain/README.md)
+- [compact](https://github.com/01-edu/public/tree/master/subjects/compact/README.md)
+- [activebits](https://github.com/01-edu/public/tree/master/subjects/activebits/README.md)
+- [max](https://github.com/01-edu/public/tree/master/subjects/max/README.md)
+- [join](https://github.com/01-edu/public/tree/master/subjects/join/README.md)
+- [unmatch](https://github.com/01-edu/public/tree/master/subjects/unmatch/README.md)
 
 ### Exam 3 (4hours)
 
-#### Basic functions and programs skills evaluation, based on Quest 2 and Quest 8
+#### Basic functions and programs skills evaluation, based on all the quests from 2 to 8
 
 ### Raid 3 - File Reader
 
@@ -285,21 +285,21 @@ Videos:
 
 Exercices:
 
-- listpushback | https://public.01-edu.org/subjects/listpushback.en
-- listpushfront | https://public.01-edu.org/subjects/listpushfront.en
-- listsize | https://public.01-edu.org/subjects/listsize.en
-- listlast | https://public.01-edu.org/subjects/listlast.en
-- listclear | https://public.01-edu.org/subjects/listclear.en
-- listat | https://public.01-edu.org/subjects/listat.en
-- listreverse | https://public.01-edu.org/subjects/listreverse.en
-- listforeach | https://public.01-edu.org/subjects/listforeach.en
-- listforeachif | https://public.01-edu.org/subjects/listforeachif.en
-- listfind | https://public.01-edu.org/subjects/listfind.en
-- listremoveif | https://public.01-edu.org/subjects/listremoveif.en
-- listmerge | https://public.01-edu.org/subjects/listmerge.en
-- listsort | https://public.01-edu.org/subjects/listsort.en
-- sortlistinsert | https://public.01-edu.org/subjects/sortlistinsert.en
-- sortedlistmerge | https://public.01-edu.org/subjects/sortedlistmerge.en
+- [listpushback](https://github.com/01-edu/public/tree/master/subjects/listpushback/README.md)
+- [listpushfront](https://github.com/01-edu/public/tree/master/subjects/listpushfront/README.md)
+- [listsize](https://github.com/01-edu/public/tree/master/subjects/listsize/README.md)
+- [listlast](https://github.com/01-edu/public/tree/master/subjects/listlast/README.md)
+- [listclear](https://github.com/01-edu/public/tree/master/subjects/listclear/README.md)
+- [listat](https://github.com/01-edu/public/tree/master/subjects/listat/README.md)
+- [listreverse](https://github.com/01-edu/public/tree/master/subjects/listreverse/README.md)
+- [listforeach](https://github.com/01-edu/public/tree/master/subjects/listforeach/README.md)
+- [listforeachif](https://github.com/01-edu/public/tree/master/subjects/listforeachif/README.md)
+- [listfind](https://github.com/01-edu/public/tree/master/subjects/listfind/README.md)
+- [listremoveif](https://github.com/01-edu/public/tree/master/subjects/listremoveif/README.md)
+- [listmerge](https://github.com/01-edu/public/tree/master/subjects/listmerge/README.md)
+- [listsort](https://github.com/01-edu/public/tree/master/subjects/listsort/README.md)
+- [sortlistinsert](https://github.com/01-edu/public/tree/master/subjects/sortlistinsert/README.md)
+- [sortedlistmerge](https://github.com/01-edu/public/tree/master/subjects/sortedlistmerge/README.md)
 
 ### Quest 12
 
@@ -313,18 +313,18 @@ Videos:
 
 Exercices:
 
-- btreeinsertdata | https://public.01-edu.org/subjects/btreeinsertdata.en
-- btreeapplyinorder | https://public.01-edu.org/subjects/btreeapplyinorder.en
-- btreeapplypreorder | https://public.01-edu.org/subjects/btreeapplypreorder.en
-- btreesearchitem | https://public.01-edu.org/subjects/btreesearchitem.en
-- btreelevelcount | https://public.01-edu.org/subjects/btreelevelcount.en
-- btreeisbinary | https://public.01-edu.org/subjects/btreeisbinary.en
-- btreeapplylevel | https://public.01-edu.org/subjects/btreeapplylevel.en
-- btreemax | https://public.01-edu.org/subjects/btreemax.en
-- btreemin | https://public.01-edu.org/subjects/btreemin.en
-- btreetransplant | https://public.01-edu.org/subjects/btreetransplant.en
-- btreedeletenode | https://public.01-edu.org/subjects/btreedeletenode.en
+- [btreeinsertdata](https://github.com/01-edu/public/tree/master/subjects/btreeinsertdata/README.md)
+- [btreeapplyinorder](https://github.com/01-edu/public/tree/master/subjects/btreeapplyinorder/README.md)
+- [btreeapplypreorder](https://github.com/01-edu/public/tree/master/subjects/btreeapplypreorder/README.md)
+- [btreesearchitem](https://github.com/01-edu/public/tree/master/subjects/btreesearchitem/README.md)
+- [btreelevelcount](https://github.com/01-edu/public/tree/master/subjects/btreelevelcount/README.md)
+- [btreeisbinary](https://github.com/01-edu/public/tree/master/subjects/btreeisbinary/README.md)
+- [btreeapplylevel](https://github.com/01-edu/public/tree/master/subjects/btreeapplylevel/README.md)
+- [btreemax](https://github.com/01-edu/public/tree/master/subjects/btreemax/README.md)
+- [btreemin](https://github.com/01-edu/public/tree/master/subjects/btreemin/README.md)
+- [btreetransplant](https://github.com/01-edu/public/tree/master/subjects/btreetransplant/README.md)
+- [btreedeletenode](https://github.com/01-edu/public/tree/master/subjects/btreedeletenode/README.md)
 
 ### Exam 4 - Final Exam (8hours)
 
-#### Functions and programs skills evaluation, based on Quest 2 and Quest 11
+#### Functions and programs skills evaluation, based on all the quests from 2 to 11
