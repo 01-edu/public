@@ -8,7 +8,7 @@ This program should :
 
 - Insert the string given to the `--insert` (or `-i`), in the `string` argument, if given.
 - Order the `string` argument (in ASCII order) if given the flag `--order` (or `-o`).
-- In case there are no arguments or the flag `--help` (or `-h`) is given, it should print the options, as shown in the example.
+- In case there are no arguments or if the flag `--help` (or `-h`) is given, it should print the options, as shown in the example.
 
 Example of output :
 

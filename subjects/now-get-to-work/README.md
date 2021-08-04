@@ -11,7 +11,7 @@ Submit your solution in the file `my_answer.sh` that will print it when executed
 ### Utilisation
 
 ```console
-$ ./my_answer.sh | cat -e
+$ bash my_answer.sh | cat -e
 John Doe$
 $
 ```

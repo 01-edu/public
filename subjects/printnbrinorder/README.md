@@ -3,7 +3,7 @@
 ### Instructions
 
 Write a function which prints the digits of an `int` passed in parameter in ascending order.
-All possible values of type `int` have to go through, besides negative numbers.
+All possible values of type `int` have to go through, excluding negative numbers.
 Conversion to `int64` is not allowed.
 
 ### Expected function

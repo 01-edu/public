@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a program that takes a `string` and displays it with exactly three spaces between each word, with no spaces or tabs at either the beginning nor the end.
+Write a program that takes a `string` and displays it with exactly three spaces between each word, with no spaces nor tabs at neither the beginning nor the end.
 
 The `string` will be followed by a newline (`'\n'`).
 

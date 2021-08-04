@@ -10,7 +10,7 @@ For this program the `os` package can be used.
 
 Handle the errors by returning a non-zero exit status but process all the files.
 
-If several files are given, print a new line and the file name between each one of them (see below).
+If several files are given, print a newline and the file name between each one of them (see below).
 
 ### Usage
 

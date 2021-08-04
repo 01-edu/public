@@ -12,8 +12,8 @@ Put in a file `mastertheLS` the command line that will:
 
 - list the files and directories of the current directory.
 - Ignore the hidden files, the "." and the "..".
-- Separates the resuls with commas.
-- Order them by ascending order of creation date.
+- Separates the results with commas.
+- Order them by ascending order of creation date (the newest first).
 - Have the directories ends with a `/`.
 
 ### Hint

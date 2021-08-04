@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that prints the words of a `string` slice that will be returned a function `SplitWhiteSpaces`.
+Write a function that prints the words of a `string` slice that will be returned by a function `SplitWhiteSpaces`.
 
 Each word is on a single line (each word ends with a `\n`).
 

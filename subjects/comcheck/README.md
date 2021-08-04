@@ -6,7 +6,7 @@ Write a program `comcheck` that displays on the standard output `Alert!!!` follo
 
 - `01`, `galaxy` or `galaxy 01`.
 
-- If none of the parameters match, the program displays a nothing.
+- If none of the parameters match, the program displays nothing.
 
 ### Usage
 

@@ -31,10 +31,8 @@ You can add your public SSH key to access the administrator account later:
 ```shell
 unset HISTFILE
 sudo mkdir /root/.ssh
-wget github.com/xpetit.keys
-cat xpetit.keys | sudo tee /root/.ssh/authorized_keys
+sudo wget github.com/xpetit.keys --output-document !$/authorized_keys
 sudo chmod 400 !$
-rm xpetit.keys
 ```
 
 ## OS configuration

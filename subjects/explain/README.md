@@ -8,7 +8,7 @@
 
 The commissioner thanks you for delivering the suspect. He now asks you how did you get onto his trail.
 
-Write an `explain.sh` file that:
+Write an `explain.sh` file that in this order:
 
 - displays the first and last name of your key witness
 - displays the interview number of this witness

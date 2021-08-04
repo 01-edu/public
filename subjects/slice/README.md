@@ -6,7 +6,7 @@ The function receives a slice of strings and one or more integers, and returns a
 
 In case there only exists one int, the resulting slice begins in the position indicated by the int and ends at the end of the received slice.
 
-The integers can be lower than 0.
+The integers can be negative.
 
 ### Expected function
 

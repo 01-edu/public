@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function `IsSorted` that returns `true` if the slice of `int` is sorted, and that returns `false` otherwise.
+Write a function `IsSorted` that returns `true`, if the slice of `int` is sorted, and that returns `false` otherwise.
 
 The function passed in parameter returns a positive `int` if `a` (the first argument) is superior to `b` (the second argument), it returns `0` if they are equal and it returns a negative `int` otherwise.
 

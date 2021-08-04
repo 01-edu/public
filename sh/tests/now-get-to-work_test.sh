@@ -5,8 +5,8 @@ set -euo pipefail
 IFS='
 '
 
-submitted=$(student/my_answer.sh)
-expected=$(solutions/my_answer.sh)
+submitted=$(bash student/my_answer.sh)
+expected=$(bash solutions/my_answer.sh)
 
 if ! diff -q <(echo "$submitted") <(echo "$expected") &>/dev/null; then
 	echo "Wrong answer, detective."

@@ -2,7 +2,7 @@
 
 ### Instructions
 
-- Write a function that reorder a slice of `int` in ascending order.
+- Write a function that reorders a slice of `int` in ascending order.
 
 ### Expected function
 

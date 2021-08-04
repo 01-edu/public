@@ -29,7 +29,7 @@ the character normaly means for a string_
 ### Instructions
 
 Nothing can stop you now with that new knowledge. Like Houdini, master of
-escapes, you are going to escape some strings:
+escapes, in this exercise you are going to **escape some strings**:
 
 - Create a `escapeFromDelimiters` that includes all 3 quotes _(`` ` ``, `"` and
   `'`)_.

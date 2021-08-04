@@ -163,10 +163,17 @@ Videos:
 
 Exercices:
 
+<<<<<<< HEAD
 - [printprogramname](https://github.com/01-edu/public/tree/master/subjects/printprogramname/README.md)
 - [printparams](https://github.com/01-edu/public/tree/master/subjects/printparams/README.md)
 - [revparams](https://github.com/01-edu/public/tree/master/subjects/revparams/README.md)
 - [sortparams](https://github.com/01-edu/public/tree/master/subjects/sortparams/README.md)
+=======
+- printprogramname | https://public.01-edu.org/subjects/printprogramname
+- printparams | https://public.01-edu.org/subjects/printparams
+- revparams | https://public.01-edu.org/subjects/revparams
+- sortparams | https://public.01-edu.org/subjects/sortparams
+>>>>>>> refs/remotes/origin/master
 
 ### Quest 7
 
@@ -213,11 +220,19 @@ Videos:
 
 Exercices:
 
+<<<<<<< HEAD
 - [bool](https://github.com/01-edu/public/tree/master/subjects/bool/README.md)
 - [point](https://github.com/01-edu/public/tree/master/subjects/point/README.md)
 - [displayfile](https://github.com/01-edu/public/tree/master/subjects/displayfile/README.md)
 - [cat](https://github.com/01-edu/public/tree/master/subjects/cat/README.md)
 - [ztail](https://github.com/01-edu/public/tree/master/subjects/ztail/README.md)
+=======
+- bool | https://public.01-edu.org/subjects/bool
+- point | https://public.01-edu.org/subjects/point
+- displayfile | https://public.01-edu.org/subjects/displayfile
+- cat | https://public.01-edu.org/subjects/cat
+- ztail | https://public.01-edu.org/subjects/ztail
+>>>>>>> refs/remotes/origin/master
 
 ### Quest 9
 

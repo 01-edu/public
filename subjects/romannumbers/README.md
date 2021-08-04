@@ -4,7 +4,7 @@
 
 Write a program called `rn`. The objective is to convert a number, given as an argument, into a roman number and print it with its roman number calculation.
 
-The program should have a limit of `4000`. In case of an invalid number, for example `"hello"` or `0` the program should print `ERROR: can not convert to roman digit`.
+The program should have a limit of `4000`. In case of an invalid number, for example `"hello"` or `0` the program should print `ERROR: cannot convert to roman digit`.
 
 Roman Numerals reminder:
 
@@ -37,7 +37,7 @@ The following table gives the Roman numerals for the first few positive integers
 
 ```console
 $ go run . hello
-ERROR: can not convert to roman digit
+ERROR: cannot convert to roman digit
 $ go run . 123
 C+X+X+I+I+I
 CXXIII
@@ -48,6 +48,6 @@ $ go run . 3999
 M+M+M+(M-C)+(C-X)+(X-I)
 MMMCMXCIX
 $ go run . 4000
-ERROR: can not convert to roman digit
+ERROR: cannot convert to roman digit
 $
 ```

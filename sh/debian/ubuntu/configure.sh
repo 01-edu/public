@@ -325,7 +325,6 @@ gimp
 gnome-calculator
 gnome-system-monitor
 gnome-tweaks
-golang-mode
 i3lock
 imagemagick
 mpv
@@ -434,6 +433,11 @@ cd /tmp/system
 
 cp --preserve=mode -RT . /
 
+cd /usr/local/src/format
+PATH=$PATH:/usr/local/go/bin
+go mod download
+go build -o /usr/local/bin/format
+
 cd "$script_dir"
 rm -rf /tmp/system
 
@@ -481,6 +485,9 @@ if ! test -v PERSISTENT; then
 	sed -i 's/^%sudo/# &/' /etc/sudoers
 	gpasswd -d student lpadmin
 	gpasswd -d student sambashare
+
+	# Give to rights to use format tool
+	echo 'student ALL = (root) NOPASSWD: /usr/local/bin/format' >> /etc/sudoers
 
 	cp /etc/shadow /etc/shadow-
 fi

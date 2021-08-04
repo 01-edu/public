@@ -2,15 +2,7 @@
 
 ### Objectives
 
-You must follow the same [instructions](https://public.01-edu.org/subjects/ascii-art/) as in the first subject but the second argument must be the name of the template.
-
-This project will help you learn about :
-
-- The Go file system(**fs**) API.
-- Ways to receive data.
-- Ways to output data.
-- Manipulation of strings.
-- Manipulation of structures.
+You must follow the same [instructions](https://public.01-edu.org/subjects/ascii-art/) as in the first subject but the second argument must be the name of the template. I know some templates may be hard to read, just do not obsess about it. Please...
 
 ### Instructions
 
@@ -58,3 +50,8 @@ o  o o-o o o o-o         o   o  o o-o o   o-o
 
 $
 ```
+
+This project will help you learn about :
+
+- The Go file system(**fs**) API
+- Data manipulation

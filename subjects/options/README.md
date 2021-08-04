@@ -41,5 +41,7 @@ $ go run . -eeeeee | cat -e
 00000000 00000000 00000000 00010000$
 $ go run . -% | cat -e
 Invalid Option$
+$ go run . - | cat -e
+Invalid Option$
 $
 ```

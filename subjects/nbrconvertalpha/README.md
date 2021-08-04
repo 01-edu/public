@@ -6,7 +6,7 @@ Write a **program** that prints the corresponding letter in the `n` position of 
 
 For example `1` matches `a`, `2` matches `b`, etc. If `n` does not match a valid position of the alphabet or if the argument is not an integer, the **program** should print a space (" ").
 
-A flag `--upper` should be implemented. When used the program prints the result in upper case. The flag will always be the first argument.
+A flag `--upper` should be implemented. When used, the program prints the result in upper case. The flag will always be the first argument.
 
 ### Usage
 

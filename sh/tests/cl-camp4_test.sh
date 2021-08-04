@@ -9,8 +9,8 @@ echo insecure >> ~/.curlrc
 caddy start &>/dev/null
 
 challenge() {
-	submitted=$(./student/myfamily.sh)
-	expected=$(./solutions/myfamily.sh)
+	submitted=$(bash student/myfamily.sh)
+	expected=$(bash solutions/myfamily.sh)
 
 	diff <(echo "$submitted") <(echo "$expected")
 }

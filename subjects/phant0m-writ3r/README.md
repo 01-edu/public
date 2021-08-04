@@ -23,5 +23,5 @@ left for good, but you still have an ace up your sleeve, you will write a bot
 
 ### Notions
 
-- [startsWith](https://devdocs.io/javascript/global_objects/string/startsWith)
-- [endsWith](https://devdocs.io/javascript/global_objects/string/endsWith)
+- [startsWith](https://devdocs.io/javascript/global_objects/string/startswith)
+- [endsWith](https://devdocs.io/javascript/global_objects/string/endswith)

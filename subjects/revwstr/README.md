@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a program that takes a `string` as a parameter, and prints its words in reverse.
+Write a program that takes a `string` as a parameter, and prints its words in reverse, followed by a newline.
 
 - A word is a sequence of **alphanumerical** characters.
 
