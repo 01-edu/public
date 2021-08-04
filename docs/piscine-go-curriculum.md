@@ -100,7 +100,7 @@ Exercices:
 
 ### Quest 4
 
-#### Algorithmia concepts
+#### Algorithm concepts
 
 Notions: Iterative and recursive programmation
 
@@ -124,7 +124,7 @@ Exercices:
 
 #### Application of previously viewed concepts.
 
-Notions: String Manipulation and medium-advanced algorithmia
+Notions: String Manipulation and medium-advanced algorithms
 
 Videos:
 
