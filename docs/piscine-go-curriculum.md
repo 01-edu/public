@@ -12,11 +12,11 @@ Notions: basic usage and interaction with a command line terminal.
 
 Videos:
 
-- 1-2 `curl` with the GitHub api and Example of shell file | https://www.youtube.com/watch?v=A0Mqc215igw
-- 1-3 `touch`, `chmod` and `echo` | https://www.youtube.com/watch?v=21h-vsuXgDU
-- 1-4 `find` and `grep` | https://www.youtube.com/watch?v=7a1JSWHhJlM
-- 1-5 `cut`, `sed` and `tr` | https://www.youtube.com/watch?v=Nil7rVP3eMI
-- 1-6 `jq` and `wc` | https://www.youtube.com/watch?v=cQmcaOseuiA&
+- [1-2](https://www.youtube.com/watch?v=A0Mqc215igw) `curl` with the GitHub api and Example of shell file
+- [1-3](https://www.youtube.com/watch?v=21h-vsuXgDU) `touch`, `chmod` and `echo`
+- [1-4](https://www.youtube.com/watch?v=7a1JSWHhJlM) `find` and `grep`
+- [1-5](https://www.youtube.com/watch?v=Nil7rVP3eMI) `cut`, `sed` and `tr`
+- [1-6](https://www.youtube.com/watch?v=cQmcaOseuiA&) `jq` and `wc`
 
 Exercices:
 
@@ -42,10 +42,10 @@ Notions: Variables declaration, Loops, if and else statement, usage of z01.Print
 
 Videos:
 
-- 02-01-If and Else Statements in Go | https://www.youtube.com/watch?v=rnF1_SfeGE4
-- 02-02-ForLoops | https://www.youtube.com/watch?v=Bt47lx6q2-4
-- 02-03-PrintRune function | https://www.youtube.com/watch?v=o8JrvI3jqoM
-- 02-04-Variables Declaration and ascii | https://www.youtube.com/watch?v=RCNOV8m0hJQ
+- [02-01-If](https://www.youtube.com/watch?v=rnF1_SfeGE4) and Else Statements in Go
+- [02-02-ForLoops](https://www.youtube.com/watch?v=Bt47lx6q2-4)
+- [02-03-PrintRune](https://www.youtube.com/watch?v=o8JrvI3jqoM) function
+- [02-04-Variables](https://www.youtube.com/watch?v=RCNOV8m0hJQ) Declaration and ascii
 
 Exercices:
 
@@ -66,10 +66,10 @@ Notions: String Manupulation, Range Loops, Pointers, Modulo and Division relativ
 
 Videos:
 
-- 03-01-StringsManipulation | https://www.youtube.com/watch?v=8LplJN_8iOU
-- 03-02-RangeLoop | https://www.youtube.com/watch?v=i89N4cjh1-g
-- 03-03-Pointers on variables | https://www.youtube.com/watch?v=owVPa5b1BMc
-- 03-04-Modulo and Division | https://www.youtube.com/watch?v=NVan-9-Ioec
+- (03-01-StringsManipulation)[https://www.youtube.com/watch?v=8LplJN_8iOU]
+- (03-02-RangeLoop)[https://www.youtube.com/watch?v=i89N4cjh1-g]
+- (03-03-Pointers)[https://www.youtube.com/watch?v=owVPa5b1BMc] on variables
+- (03-04-Modulo)[https://www.youtube.com/watch?v=NVan-9-Ioec] and Division
 
 Exercices:
 
@@ -106,7 +106,7 @@ Notions: Iterative and recursive programmation
 
 Videos:
 
-- 04-01-Iterativity and Recursivity | https://www.youtube.com/watch?v=oCZDdAID5Ik
+- [04-01-Iterativity and Recursivity](https://www.youtube.com/watch?v=oCZDdAID5Ik)
 
 Exercices:
 
@@ -128,7 +128,7 @@ Notions: String Manipulation and medium-advanced algorithmia
 
 Videos:
 
-- 05-01-Runes, Bytes and Strings | https://www.youtube.com/watch?v=-eIU5ISID64
+- [05-01-Runes](https://www.youtube.com/watch?v=-eIU5ISID64), Bytes and Strings
 
 Exercices:
 
@@ -159,21 +159,14 @@ Notions: Arguments manipulation in programs
 
 Videos:
 
-- 06-01-Os.Args | https://www.youtube.com/watch?v=I1xt_TLRhF0
+- [06-01-Os.Args](https://www.youtube.com/watch?v=I1xt_TLRhF0)
 
 Exercices:
 
-<<<<<<< HEAD
 - [printprogramname](https://github.com/01-edu/public/tree/master/subjects/printprogramname/README.md)
 - [printparams](https://github.com/01-edu/public/tree/master/subjects/printparams/README.md)
 - [revparams](https://github.com/01-edu/public/tree/master/subjects/revparams/README.md)
 - [sortparams](https://github.com/01-edu/public/tree/master/subjects/sortparams/README.md)
-=======
-- printprogramname | https://public.01-edu.org/subjects/printprogramname
-- printparams | https://public.01-edu.org/subjects/printparams
-- revparams | https://public.01-edu.org/subjects/revparams
-- sortparams | https://public.01-edu.org/subjects/sortparams
->>>>>>> refs/remotes/origin/master
 
 ### Quest 7
 
@@ -183,7 +176,7 @@ Notions: Usage of Make and Append
 
 Videos:
 
-- 07-01-Make and Append methods | https://www.youtube.com/watch?v=2HHVUM0YQuI
+- [07-01-Make](https://www.youtube.com/watch?v=2HHVUM0YQuI) and Append methods
 
 Exercices:
 
@@ -215,24 +208,16 @@ Notions: Creation of struct types and file manipulation (Open, Read, Close metho
 
 Videos:
 
-- 08-01-Structures in Go | https://www.youtube.com/watch?v=-24M7r7VuLY
-- 08-02-File Manipulation in go | https://www.youtube.com/watch?v=8vUgchQGhcQ
+- [08-01-Structures](https://www.youtube.com/watch?v=-24M7r7VuLY) in Go
+- [08-02-File](https://www.youtube.com/watch?v=8vUgchQGhcQ) Manipulation in go
 
 Exercices:
 
-<<<<<<< HEAD
 - [bool](https://github.com/01-edu/public/tree/master/subjects/bool/README.md)
 - [point](https://github.com/01-edu/public/tree/master/subjects/point/README.md)
 - [displayfile](https://github.com/01-edu/public/tree/master/subjects/displayfile/README.md)
 - [cat](https://github.com/01-edu/public/tree/master/subjects/cat/README.md)
 - [ztail](https://github.com/01-edu/public/tree/master/subjects/ztail/README.md)
-=======
-- bool | https://public.01-edu.org/subjects/bool
-- point | https://public.01-edu.org/subjects/point
-- displayfile | https://public.01-edu.org/subjects/displayfile
-- cat | https://public.01-edu.org/subjects/cat
-- ztail | https://public.01-edu.org/subjects/ztail
->>>>>>> refs/remotes/origin/master
 
 ### Quest 9
 
@@ -242,7 +227,7 @@ Notions: Advance function prototyping
 
 Videos:
 
-- 09-01-Functions as Arguments | https://www.youtube.com/watch?v=lw8jUwsluAE
+- [09-01-Functions](https://www.youtube.com/watch?v=lw8jUwsluAE) as Arguments
 
 Exercices:
 
@@ -296,7 +281,7 @@ Notions: Pointers manipulation and data structure
 
 Videos:
 
-- 11-01-Linked Lists Introduction | https://www.youtube.com/watch?v=EPICVEbylU0
+- [11-01-Linked](https://www.youtube.com/watch?v=EPICVEbylU0) Lists Introduction
 
 Exercices:
 
@@ -324,7 +309,7 @@ Notions: Advanced Data Structure using binary trees
 
 Videos:
 
-- 12-01-Introduction to Binary Trees | https://www.youtube.com/watch?v=3g2WCqWNIVs
+- [12-01-Introduction](https://www.youtube.com/watch?v=3g2WCqWNIVs) to Binary Trees
 
 Exercices:
 
