@@ -66,10 +66,10 @@ Notions: String Manupulation, Range Loops, Pointers, Modulo and Division relativ
 
 Videos:
 
-- (03-01-StringsManipulation)[https://www.youtube.com/watch?v=8LplJN_8iOU]
-- (03-02-RangeLoop)[https://www.youtube.com/watch?v=i89N4cjh1-g]
-- (03-03-Pointers)[https://www.youtube.com/watch?v=owVPa5b1BMc] on variables
-- (03-04-Modulo)[https://www.youtube.com/watch?v=NVan-9-Ioec] and Division
+- [03-01-StringsManipulation](https://www.youtube.com/watch?v=8LplJN_8iOU)
+- [03-02-RangeLoop](https://www.youtube.com/watch?v=i89N4cjh1-g)
+- [03-03-Pointers](https://www.youtube.com/watch?v=owVPa5b1BMc) on variables
+- [03-04-Modulo](https://www.youtube.com/watch?v=NVan-9-Ioec) and Division
 
 Exercices:
 
