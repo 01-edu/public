@@ -191,18 +191,6 @@ sudo apt -y install curl
 curl https://raw.githubusercontent.com/01-edu/public/master/docs/setup/configure.sh | bash
 ```
 
-#### Configure Gitea
-
-Copy the last line (`ssh-ed25519...`) then :
-
-- Connect to Gitea (https://git.DOMAIN where DOMAIN is the 01 platform address)
-- Click on top-right menu "Profile and Settings..."
-- Click on "Settings"
-- Go to "SSH / GPG Keys" tab
-- Click on "Add Key" button in "Manage SSH Keys" section
-- Paste the public key in the "Content" text area (the "Key Name" will be automatically set)
-- Click on "Add Key"
-
 Now you are able to push & pull code to Gitea using `git`.
 
 Close the terminal (by using the shortcut <kbd>Ctrl</kbd>+<kbd>D</kbd> or typing the `exit` command)
