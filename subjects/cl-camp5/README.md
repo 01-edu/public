@@ -9,15 +9,15 @@ Create a file `lookagain.sh`, which will look, from the current directory and it
 - all the files ending with `.sh`.
 
 That command will only show the name of the files without the `.sh`.
-The files will be in ascending order (as shown in the below example).
+The files will be in descending order (as shown in the below example).
 
 ### Usage
 
 ```console
 $ ./lookagain.sh | cat -e
-file1$
-file2$
 file3$
+file2$
+file1$
 $
 ```
 
