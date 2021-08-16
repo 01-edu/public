@@ -256,6 +256,7 @@ sudo -iu student go get github.com/go-delve/delve/cmd/dlv
 sudo -iu student go get github.com/go-delve/delve/cmd/dlv@master
 sudo -iu student go get honnef.co/go/tools/cmd/staticcheck
 sudo -iu student go get golang.org/x/tools/gopls
+sudo -iu student go get mvdan.cc/gofumpt
 
 # Install LibreOffice
 
