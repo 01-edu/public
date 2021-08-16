@@ -222,6 +222,9 @@ do
 		"$dir/.config/Code/User/settings.json" \
 		"$dir/.config/VSCodium/User/settings.json"
 	{
+	    "gopls": {
+	        "formatting.gofumpt": true
+	    },
 	    "extensions.autoCheckUpdates": false,
 	    "extensions.autoUpdate": false,
 	    "json.schemaDownload.enable": false,
