@@ -2,138 +2,156 @@
 
 ###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
-##### Try passing as arguments `"hello" standard`
+##### Try passing as arguments `"banana standard abc"`
 
 ```
- _              _   _
-| |            | | | |
-| |__     ___  | | | |   ___
-|  _ \   / _ \ | | | |  / _ \
-| | | | |  __/ | | | | | (_) |
-|_| |_|  \___| |_| |_|  \___/
+Usage: go run . [STRING] [BANNER]
 
-
+EX: go run . something standard
 ```
 
-###### Does it display the string in the right template as an ASCII art representation as above?
+###### Does it display the correct result as above?
 
-##### Try passing as arguments `"hello world" shadow`
+##### Try passing as arguments `"hello" standard | cat -e`
 
 ```
-
-_|                _| _|                                                     _|       _|
-_|_|_|     _|_|   _| _|   _|_|         _|      _|      _|   _|_|   _|  _|_| _|   _|_|_|
-_|    _| _|_|_|_| _| _| _|    _|       _|      _|      _| _|    _| _|_|     _| _|    _|
-_|    _| _|       _| _| _|    _|         _|  _|  _|  _|   _|    _| _|       _| _|    _|
-_|    _|   _|_|_| _| _|   _|_|             _|      _|       _|_|   _|       _|   _|_|_|
-
-
+ _              _   _          $
+| |            | | | |         $
+| |__     ___  | | | |   ___   $
+|  _ \   / _ \ | | | |  / _ \  $
+| | | | |  __/ | | | | | (_) | $
+|_| |_|  \___| |_| |_|  \___/  $
+                               $
+                               $
+$
 ```
 
 ###### Does it display the string in the right template as an ASCII art representation as above?
 
-##### Try passing as arguments `"nice 2 meet you" thinkertoy`
+##### Try passing as arguments `"hello world" shadow | cat -e`
 
 ```
-
-                       --                       o
-     o                o  o                      |
-o-o     o-o o-o         /        o-O-o o-o o-o -o-       o  o o-o o  o
-|  | | |    |-'        /         | | | |-' |-'  |        |  | | | |  |
-o  o |  o-o o-o       o--o       o o o o-o o-o  o        o--O o-o o--o
-                                                            |
-                                                         o--o
-```
-
-###### Does it display the string in the right template as an ASCII art representation as above?
-
-##### Try passing as arguments `"you & me" standard`
-
-```
-
-                                ___
- _   _    ___    _   _         ( _ )          _ __ ___     ___
-| | | |  / _ \  | | | |        / _ \/\       | '_ ` _ \   / _ \
-| |_| | | (_) | | |_| |       | (_>  <       | | | | | | |  __/
- \__, |  \___/   \__,_|        \___/\/       |_| |_| |_|  \___|
- __/ /
-|___/
+                                                                                        $
+_|                _| _|                                                     _|       _| $
+_|_|_|     _|_|   _| _|   _|_|         _|      _|      _|   _|_|   _|  _|_| _|   _|_|_| $
+_|    _| _|_|_|_| _| _| _|    _|       _|      _|      _| _|    _| _|_|     _| _|    _| $
+_|    _| _|       _| _| _|    _|         _|  _|  _|  _|   _|    _| _|       _| _|    _| $
+_|    _|   _|_|_| _| _|   _|_|             _|      _|       _|_|   _|       _|   _|_|_| $
+                                                                                        $
+                                                                                        $
+$
 ```
 
 ###### Does it display the string in the right template as an ASCII art representation as above?
 
-##### Try passing as arguments `"123" shadow`
+##### Try passing as arguments `"nice 2 meet you" thinkertoy | cat -e`
 
 ```
-
-  _|   _|_|   _|_|_|
-_|_| _|    _|       _|
-  _|     _|     _|_|
-  _|   _|           _|
-  _| _|_|_|_| _|_|_|
-
-
-```
-
-###### Does it display the string in the right template as an ASCII art representation as above?
-
-##### Try passing as arguments `"/(\")" thinkertoy`
-
-```
-         o o
-    o  / | | \
-   /  o       o
-  o   |       |
- /    o       o
-o      \     /
-
-
+                                                                       $
+                       --                       o                      $
+     o                o  o                      |                      $
+o-o     o-o o-o         /        o-O-o o-o o-o -o-       o  o o-o o  o $
+|  | | |    |-'        /         | | | |-' |-'  |        |  | | | |  | $
+o  o |  o-o o-o       o--o       o o o o-o o-o  o        o--O o-o o--o $
+                                                            |          $
+                                                         o--o          $
+$
 ```
 
 ###### Does it display the string in the right template as an ASCII art representation as above?
 
-##### Try passing as arguments `"ABCDEFGHIJKLMNOPQRSTUVWXYZ" shadow`
+##### Try passing as arguments `"you & me" standard | cat -e`
 
 ```
-
-  _|_|   _|_|_|     _|_|_| _|_|_|   _|_|_|_| _|_|_|_|   _|_|_| _|    _| _|_|_|       _| _|    _| _|       _|      _| _|      _|   _|_|   _|_|_|     _|_|     _|_|_|     _|_|_| _|_|_|_|_| _|    _| _|      _| _|          _| _|      _| _|      _| _|_|_|_|_|
-_|    _| _|    _| _|       _|    _| _|       _|       _|       _|    _|   _|         _| _|  _|   _|       _|_|  _|_| _|_|    _| _|    _| _|    _| _|    _|   _|    _| _|           _|     _|    _| _|      _| _|          _|   _|  _|     _|  _|         _|
-_|_|_|_| _|_|_|   _|       _|    _| _|_|_|   _|_|_|   _|  _|_| _|_|_|_|   _|         _| _|_|     _|       _|  _|  _| _|  _|  _| _|    _| _|_|_|   _|  _|_|   _|_|_|     _|_|       _|     _|    _| _|      _| _|    _|    _|     _|         _|         _|
-_|    _| _|    _| _|       _|    _| _|       _|       _|    _| _|    _|   _|   _|    _| _|  _|   _|       _|      _| _|    _|_| _|    _| _|       _|    _|   _|    _|       _|     _|     _|    _|   _|  _|     _|  _|  _|     _|  _|       _|       _|
-_|    _| _|_|_|     _|_|_| _|_|_|   _|_|_|_| _|         _|_|_| _|    _| _|_|_|   _|_|   _|    _| _|_|_|_| _|      _| _|      _|   _|_|   _|         _|_|  _| _|    _| _|_|_|       _|       _|_|       _|         _|  _|     _|      _|     _|     _|_|_|_|_|
-
-
-
-```
-
-###### Does it display the string in the right template as an ASCII art representation as above?
-
-##### Try passing as arguments `"\"#$%&/()*+,-./" thinkertoy`
-
-```
-o o         | |
-| |  | |   -O-O-      O          o  / \  o | o                 o
-    -O-O- o | |   o  /    o     /  o   o  \|/   |             /
-     | |   -O-O-    /    /|    o   |   | --O-- -o-           o
-    -O-O-   | | o  /  o o-O-  /    o   o  /|\   |    o-o    /
-     | |   -O-O-  O       |  o      \ /  o | o     o     O o
-            | |                                    |
-
+                                                                $
+                                ___                             $
+ _   _    ___    _   _         ( _ )          _ __ ___     ___  $
+| | | |  / _ \  | | | |        / _ \/\       | '_ ` _ \   / _ \ $
+| |_| | | (_) | | |_| |       | (_>  <       | | | | | | |  __/ $
+ \__, |  \___/   \__,_|        \___/\/       |_| |_| |_|  \___| $
+ __/ /                                                          $
+|___/                                                           $
+$
 ```
 
 ###### Does it display the string in the right template as an ASCII art representation as above?
 
-##### Try passing as arguments `"It's Working" thinkertoy`
+##### Try passing as arguments `"123" shadow | cat -e`
 
 ```
-          o
-o-O-o  o  |           o       o         o
-  |    |              |       |         | /  o
-  |   -o-   o-o       o   o   o o-o o-o OO     o-o  o--o
-  |    |     \         \ / \ /  | | |   | \  | |  | |  |
-o-O-o  o    o-o         o   o   o-o o   o  o | o  o o--O
-                                                       |
-                                                    o--o
+                       $
+  _|   _|_|   _|_|_|   $
+_|_| _|    _|       _| $
+  _|     _|     _|_|   $
+  _|   _|           _| $
+  _| _|_|_|_| _|_|_|   $
+                       $
+                       $
+$
+```
+
+###### Does it display the string in the right template as an ASCII art representation as above?
+
+##### Try passing as arguments `"/(\")" thinkertoy | cat -e`
+
+```
+         o o    $
+    o  / | | \  $
+   /  o       o $
+  o   |       | $
+ /    o       o $
+o      \     /  $
+                $
+                $
+$
+```
+
+###### Does it display the string in the right template as an ASCII art representation as above?
+
+##### Try passing as arguments `"ABCDEFGHIJKLMNOPQRSTUVWXYZ" shadow | cat -e`
+
+```
+                                                                                                                                                                                                                                                               $
+  _|_|   _|_|_|     _|_|_| _|_|_|   _|_|_|_| _|_|_|_|   _|_|_| _|    _| _|_|_|       _| _|    _| _|       _|      _| _|      _|   _|_|   _|_|_|     _|_|     _|_|_|     _|_|_| _|_|_|_|_| _|    _| _|      _| _|          _| _|      _| _|      _| _|_|_|_|_|  $
+_|    _| _|    _| _|       _|    _| _|       _|       _|       _|    _|   _|         _| _|  _|   _|       _|_|  _|_| _|_|    _| _|    _| _|    _| _|    _|   _|    _| _|           _|     _|    _| _|      _| _|          _|   _|  _|     _|  _|         _|    $
+_|_|_|_| _|_|_|   _|       _|    _| _|_|_|   _|_|_|   _|  _|_| _|_|_|_|   _|         _| _|_|     _|       _|  _|  _| _|  _|  _| _|    _| _|_|_|   _|  _|_|   _|_|_|     _|_|       _|     _|    _| _|      _| _|    _|    _|     _|         _|         _|      $
+_|    _| _|    _| _|       _|    _| _|       _|       _|    _| _|    _|   _|   _|    _| _|  _|   _|       _|      _| _|    _|_| _|    _| _|       _|    _|   _|    _|       _|     _|     _|    _|   _|  _|     _|  _|  _|     _|  _|       _|       _|        $
+_|    _| _|_|_|     _|_|_| _|_|_|   _|_|_|_| _|         _|_|_| _|    _| _|_|_|   _|_|   _|    _| _|_|_|_| _|      _| _|      _|   _|_|   _|         _|_|  _| _|    _| _|_|_|       _|       _|_|       _|         _|  _|     _|      _|     _|     _|_|_|_|_|  $
+                                                                                                                                                                                                                                                               $
+                                                                                                                                                                                                                                                               $
+$
+```
+
+###### Does it display the string in the right template as an ASCII art representation as above?
+
+##### Try passing as arguments `"\"#$%&/()*+,-./" thinkertoy | cat -e`
+
+```
+              | |                                                  $
+  | |  | |   -O-O-      O          o  / \  o | o                 o $
+      -O-O- o | |   o  /    o     /  o   o  \|/   |             /  $
+       | |   -O-O-    /    /|    o   |   | --O-- -o-           o   $
+      -O-O-   | | o  /  o o-O-  /    o   o  /|\   |    o-o    /    $
+       | |   -O-O-  O       |  o      \ /  o | o     o     O o     $
+              | |                                    |             $
+                                                                   $
+$
+```
+
+###### Does it display the string in the right template as an ASCII art representation as above?
+
+##### Try passing as arguments `"It's Working" thinkertoy | cat -e`
+
+```
+            o                                              $
+  o-O-o  o  |           o       o         o                $
+    |    |              |       |         | /  o           $
+    |   -o-   o-o       o   o   o o-o o-o OO     o-o  o--o $
+    |    |     \         \ / \ /  | | |   | \  | |  | |  | $
+  o-O-o  o    o-o         o   o   o-o o   o  o | o  o o--O $
+                                                         | $
+                                                      o--o $
+$
 ```
 
 ###### Does it display the string in the right template as an ASCII art representation as above?

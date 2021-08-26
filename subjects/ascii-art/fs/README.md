@@ -10,40 +10,46 @@ You must follow the same [instructions](../README.md) as in the first subject bu
 - The code must respect the [**good practices**](../../good-practices/README.md).
 - It is recommended that the code should present a **test file**.
 - You can see all about the **banners** [here](../).
+- The usage must respect this format `go run . [STRING] [BANNER]`, any other formats must return the following usage message:
+
+```console
+Usage: go run . [STRING] [BANNER]
+
+EX: go run . something standard
+```
 
 ### Usage
 
 ```console
-$ go run . "hello" standard
-  _                _    _
- | |              | |  | |
- | |__      ___   | |  | |    ___
- |  _ \    / _ \  | |  | |   / _ \
- | | | |  |  __/  | |  | |  | (_) |
- |_| |_|   \___|  |_|  |_|   \___/
-
-
-
-$ go run . "Hello There!" shadow
-
-_|    _|          _| _|                _|_|_|_|_| _|                                  _|
-_|    _|   _|_|   _| _|   _|_|             _|     _|_|_|     _|_|   _|  _|_|   _|_|   _|
-_|_|_|_| _|_|_|_| _| _| _|    _|           _|     _|    _| _|_|_|_| _|_|     _|_|_|_| _|
-_|    _| _|       _| _| _|    _|           _|     _|    _| _|       _|       _|
-_|    _|   _|_|_| _| _|   _|_|             _|     _|    _|   _|_|_| _|         _|_|_| _|
-
-
-
-$ go run . "Hello There!" thinkertoy
-
-o  o     o o           o-O-o o
-|  |     | |             |   |                o
-O--O o-o | | o-o         |   O--o o-o o-o o-o |
-|  | |-' | | | |         |   |  | |-' |   |-' o
-o  o o-o o o o-o         o   o  o o-o o   o-o
-                                              O
-
-
+$ go run . "hello" standard | cat -e
+ _              _   _          $
+| |            | | | |         $
+| |__     ___  | | | |   ___   $
+|  _ \   / _ \ | | | |  / _ \  $
+| | | | |  __/ | | | | | (_) | $
+|_| |_|  \___| |_| |_|  \___/  $
+                               $
+                               $
+$
+$ go run . "Hello There!" shadow | cat -e
+                                                                                      $
+_|    _|          _| _|                _|_|_|_|_| _|                                  $
+_|    _|   _|_|   _| _|   _|_|             _|     _|_|_|     _|_|   _|  _|_|   _|_|   $
+_|_|_|_| _|_|_|_| _| _| _|    _|           _|     _|    _| _|_|_|_| _|_|     _|_|_|_| $
+_|    _| _|       _| _| _|    _|           _|     _|    _| _|       _|       _|       $
+_|    _|   _|_|_| _| _|   _|_|             _|     _|    _|   _|_|_| _|         _|_|_| $
+                                                                                      $
+                                                                                      $
+$
+$ go run . "Hello There!" thinkertoy | cat -e
+                                              $
+o  o     o o           o-O-o o                $
+|  |     | |             |   |                $
+O--O o-o | | o-o         |   O--o o-o o-o o-o $
+|  | |-' | | | |         |   |  | |-' |   |-' $
+o  o o-o o o o-o         o   o  o o-o o   o-o $
+                                              $
+                                              $
 $
 ```
 

@@ -2,9 +2,17 @@
 
 ### Objectives
 
-- You must follow the same [instructions](../README.md) as in the first subject **while** writing the result into a file. Yes, you will read from one file and write to another.
+- You must follow the same [instructions](../README.md) as in the first subject **while** writing the result into a file.
 
 The file must be named by using the flag `--output=<fileName.txt>`, in which `--output` is the flag and `<fileName.txt>` is the file name which will contain the output.
+
+- The flag must have exactly the same format as above, any other formats must return the following usage message:
+
+```console
+Usage: go run . [STRING] [BANNER] [OPTION]
+
+EX: go run . something standard --output=<fileName.txt>
+```
 
 ### Instructions
 
@@ -16,27 +24,26 @@ The file must be named by using the flag `--output=<fileName.txt>`, in which `--
 
 ```console
 $ go run . "hello" standard --output=banner.txt
-$ cat banner.txt
- _              _   _
-| |            | | | |
-| |__     ___  | | | |   ___
-|  _ \   / _ \ | | | |  / _ \
-| | | | |  __/ | | | | | (_) |
-|_| |_|  \___| |_| |_|  \___/
-
-
-
+$ cat -e banner.txt
+ _              _   _          $
+| |            | | | |         $
+| |__     ___  | | | |   ___   $
+|  _ \   / _ \ | | | |  / _ \  $
+| | | | |  __/ | | | | | (_) | $
+|_| |_|  \___| |_| |_|  \___/  $
+                               $
+                               $
+$
 $ go run . "Hello There!" shadow --output=banner.txt
-$ cat banner.txt
-
-_|    _|          _| _|                _|_|_|_|_| _|                                  _|
-_|    _|   _|_|   _| _|   _|_|             _|     _|_|_|     _|_|   _|  _|_|   _|_|   _|
-_|_|_|_| _|_|_|_| _| _| _|    _|           _|     _|    _| _|_|_|_| _|_|     _|_|_|_| _|
-_|    _| _|       _| _| _|    _|           _|     _|    _| _|       _|       _|
-_|    _|   _|_|_| _| _|   _|_|             _|     _|    _|   _|_|_| _|         _|_|_| _|
-
-
-
+$ cat -e banner.txt
+                                                                                         $
+_|    _|          _| _|                _|_|_|_|_| _|                                  _| $
+_|    _|   _|_|   _| _|   _|_|             _|     _|_|_|     _|_|   _|  _|_|   _|_|   _| $
+_|_|_|_| _|_|_|_| _| _| _|    _|           _|     _|    _| _|_|_|_| _|_|     _|_|_|_| _| $
+_|    _| _|       _| _| _|    _|           _|     _|    _| _|       _|       _|          $
+_|    _|   _|_|_| _| _|   _|_|             _|     _|    _|   _|_|_| _|         _|_|_| _| $
+                                                                                         $
+                                                                                         $
 $
 ```
 

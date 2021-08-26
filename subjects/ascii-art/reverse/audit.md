@@ -2,6 +2,16 @@
 
 ###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
+##### Try passing to the reverse flag `"--reverse example00.txt"` the [example 00](example.md).
+
+```
+Usage: go run . [OPTION]
+
+EX: go run . --reverse=<fileName>
+```
+
+###### Does it display the correct result as above?
+
 ##### Try passing to the reverse flag `"--reverse=example00.txt"` the [example 00](example.md).
 
 `Hello World`

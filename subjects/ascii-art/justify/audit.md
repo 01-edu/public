@@ -2,6 +2,16 @@
 
 ###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
+##### Try passing as arguments `"banana standard --align right"`
+
+```
+Usage: go run . [STRING] [BANNER] [OPTION]
+
+EX: go run . something standard --align=right
+```
+
+###### Does it display the correct result as above?
+
 ##### Try passing as arguments `"left standard --align=right"`
 
 ###### Does it display the correct result at the right side?

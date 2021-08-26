@@ -8,6 +8,14 @@ Ascii-reverse consists on reversing the process, converting the graphic represen
 
 The argument will be a **flag**, `--reverse=<fileName>`, in which `--reverse` is the flag and `<fileName>` is the file name. The program must then print this `string` in **normal text**.
 
+- The flag must have exactly the same format as above, any other formats must return the following usage message:
+
+```console
+Usage: go run . [OPTION]
+
+EX: go run . something standard --reverse=<fileName>
+```
+
 ### Instructions
 
 - Your project must be written in **Go**.
@@ -18,15 +26,15 @@ The argument will be a **flag**, `--reverse=<fileName>`, in which `--reverse` is
 
 ```console
 $ cat file.txt
- _              _   _
-| |            | | | |
-| |__     ___  | | | |   ___
-|  _ \   / _ \ | | | |  / _ \
-| | | | |  __/ | | | | | (_) |
-|_| |_|  \___| |_| |_|  \___/
-
-
-
+ _              _   _          $
+| |            | | | |         $
+| |__     ___  | | | |   ___   $
+|  _ \   / _ \ | | | |  / _ \  $
+| | | | |  __/ | | | | | (_) | $
+|_| |_|  \___| |_| |_|  \___/  $
+                               $
+                               $
+$
 $ go run . --reverse=file.txt
 hello
 $
