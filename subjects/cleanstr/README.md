@@ -23,7 +23,6 @@ $ go run . " only    it's  harder   "
 only it's harder$
 $ go run . " how funny" "Did you   hear Mathilde ?"
 
-$
 $ go run . ""
 
 $
