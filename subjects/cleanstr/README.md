@@ -12,7 +12,7 @@ A "word" is defined as a part of a `string` delimited either by spaces/tabs, or
 by the start/end of the `string`.
 
 If the number of arguments is not 1, or if there are no words to display, the
-program displays nothing.
+program displays a newline("`\n`").
 
 ### Usage :
 
@@ -22,7 +22,9 @@ you see it's easy to display the same thing$
 $ go run . " only    it's  harder   "
 only it's harder$
 $ go run . " how funny" "Did you   hear Mathilde ?"
+
 $
 $ go run . ""
+
 $
 ```
