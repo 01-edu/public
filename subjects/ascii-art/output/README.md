@@ -9,9 +9,9 @@ The file must be named by using the flag `--output=<fileName.txt>`, in which `--
 - The flag must have exactly the same format as above, any other formats must return the following usage message:
 
 ```console
-Usage: go run . [STRING] [BANNER] [OPTION]
+Usage: go run . [STRING] [OPTION]
 
-EX: go run . something standard --output=<fileName.txt>
+EX: go run . something --output=<fileName.txt>
 ```
 
 ### Instructions
@@ -23,7 +23,7 @@ EX: go run . something standard --output=<fileName.txt>
 ### Usage
 
 ```console
-$ go run . "hello" standard --output=banner.txt
+$ go run . "hello" --output=banner.txt
 $ cat -e banner.txt
  _              _   _          $
 | |            | | | |         $
@@ -33,17 +33,6 @@ $ cat -e banner.txt
 |_| |_|  \___| |_| |_|  \___/  $
                                $
                                $
-$
-$ go run . "Hello There!" shadow --output=banner.txt
-$ cat -e banner.txt
-                                                                                         $
-_|    _|          _| _|                _|_|_|_|_| _|                                  _| $
-_|    _|   _|_|   _| _|   _|_|             _|     _|_|_|     _|_|   _|  _|_|   _|_|   _| $
-_|_|_|_| _|_|_|_| _| _| _|    _|           _|     _|    _| _|_|_|_| _|_|     _|_|_|_| _| $
-_|    _| _|       _| _| _|    _|           _|     _|    _| _|       _|       _|          $
-_|    _|   _|_|_| _| _|   _|_|             _|     _|    _|   _|_|_| _|         _|_|_| _| $
-                                                                                         $
-                                                                                         $
 $
 ```
 
