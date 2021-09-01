@@ -2,53 +2,33 @@
 
 ### Installation
 
-#### Install `Scoop` _(windows)_ or `Brew` _(mac)_
+For each programs, make sure you are downloading a version that works for your system
 
-Follow the instructions here:
+#### Install `vscode`
 
-- **scoop**: https://scoop.sh/ (windows)
-- **brew**: https://brew.sh/ (mac)
+- Download the installer https://code.visualstudio.com/download
 
-> Linux people, you should know how to handle this
+> If you already have and love a code editor, feel free to use it,
+> but keep in mind that we will use VSCode as reference
 
-#### Install `git`, `vscode` and `nodejs`
+VSCode is a code editor, it will give you an interface to write, test and submit your code.
 
-```bash
-# windows
-scoop install git
-git --version
-scoop install nodejs
-node --version
-scoop bucket add extras
-scoop install vscode
-code --version
+#### Install `git`
 
-# mac
-# git should already be installed
-git --version
-brew install node
-node --version
-brew install --cask visual-studio-code
-code --version
-```
+- Download the installer https://git-scm.com/downloads
+- While installing, Git will ask a bunch of question, it is recommanded to changes those:
+	- Choosing the defagult editor (pick VSCode)
+	- Configuring the line ending conversions (Checkout as-is, commit Unix-style line endings)
+	- Otherwhise stick with the defaults unless you know what you are doing.
 
-#### Configure git and vscode
+Git is a versioning tool, we use it to upload your solutions on the school server.
 
-```bash
-# Set your username and email
-# (the double quotes "" are important)
-git config --global user.name "Your name here"
-git config --global user.email "your_email@example.com"
+#### Install `nodejs`
 
-# Tell git to use vscode
-git config --global core.editor code
+- Download the installer https://nodejs.org/en/download/current/
 
-# Add colors to the info, not important but fancy
-git config --global color.ui true
-```
+NodeJS will allow to execute JavaScript code outside of the browser, usefull for testing your code.
 
-> If you are adventurous, you can also setup your SSH key
-> this will allow you to avoid typing your password everytime.
 
 ### Values
 
@@ -120,7 +100,6 @@ Videos designed to give **hints** are assigned to each quest. It is strongly sug
 
 ### You will learn about
 
-- Terminal
 - Code Editor
 - Git
 - JS
