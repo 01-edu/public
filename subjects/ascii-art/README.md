@@ -96,6 +96,7 @@ student$ go run . "Hello\n" | cat -e
                                 $
                                 $
 $
+$
 student$ go run . "hello" | cat -e
   _              _   _          $
  | |            | | | |         $
