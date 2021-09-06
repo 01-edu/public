@@ -19,7 +19,7 @@ Write the function `compose`:
 
 You only need to create & submit the JS file `keycodes-symphony.js` ; we're providing you the following file to download (click right and save link) & test locally:
 
-- the HTML file [keycodes-symphony.html](/public/subjects/keycodes-symphony/keycodes-symphony.html) to open in the browser, which includes:
+- the HTML file [keycodes-symphony.html](./keycodes-symphony.html) to open in the browser, which includes:
 
   - the JS script which will allow to run your code
   - some CSS pre-styled classes: feel free to use those as they are, or modify them

@@ -26,12 +26,12 @@ Create 3 `type="range"` inputs with the class `range`, all wrapped in a `div` wi
 
 You only need to create & submit the JS file `gossip-grid.js` ; we're providing you the following files to download (click right and save link) & test locally:
 
-- the HTML file [gossip-grid.html](/public/subjects/gossip-grid/gossip-grid.html) to open in the browser, which includes:
+- the HTML file [gossip-grid.html](./gossip-grid.html) to open in the browser, which includes:
 
   - the JS script which will allow to run your code
   - some CSS pre-styled classes: feel free to use those as they are, or modify them
 
-- the data file [gossip-grid.data.js](/public/subjects/gossip-grid/gossip-grid.data.js) from which you can import `gossips`
+- the data file [gossip-grid.data.js](./gossip-grid.data.js) from which you can import `gossips`
 
 ### Expected result
 

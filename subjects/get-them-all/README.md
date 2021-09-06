@@ -44,10 +44,10 @@ On top of the webpage, each of the four buttons fires a function:
 
 You only need to create & submit the JS file `get-them-all.js` ; we're providing you the following files to download (click right and save link) & test locally:
 
-- the HTML file [get-them-all.html](/public/subjects/get-them-all/get-them-all.html) to open in the browser, which includes:
+- the HTML file [get-them-all.html](./get-them-all.html) to open in the browser, which includes:
 
   - the JS script running some code, and which will also allow to run yours
   - some CSS pre-styled classes: feel free to use those as they are, or modify them
   - the import of the data
 
-- the data file [get-them-all.data.js](/public/subjects/get-them-all/get-them-all.data.js) used to generate content in the HTML
+- the data file [get-them-all.data.js](./get-them-all.data.js) used to generate content in the HTML
