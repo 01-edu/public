@@ -33,7 +33,7 @@ Write the function `pick` which turns the screen into a `hsl` color picker, vary
 
 You only need to create & submit the JS file `pick-and-click.js` ; we're providing you the following file to download (click right and save link) & test locally:
 
-- the HTML file [pick-and-click.html](/public/subjects/pick-and-click/pick-and-click.html) to open in the browser, which includes:
+- the HTML file [pick-and-click.html](./pick-and-click.html) to open in the browser, which includes:
 
   - the JS script which will allow to run your code
   - some CSS pre-styled classes: feel free to use those as they are, or modify them

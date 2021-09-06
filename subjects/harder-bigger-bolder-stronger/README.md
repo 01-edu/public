@@ -15,7 +15,7 @@ Write the function `generateLetters` which creates 120 `div`, each containing a 
 
 You only need to create & submit the JS file `harder-bigger-bolder-stronger.js` ; we're providing you the following file to download (click right and save link) & test locally:
 
-- the HTML file [harder-bigger-bolder-stronger.html](/public/subjects/harder-bigger-bolder-stronger/harder-bigger-bolder-stronger.html) to open in the browser, which includes:
+- the HTML file [harder-bigger-bolder-stronger.html](./harder-bigger-bolder-stronger.html) to open in the browser, which includes:
 
   - the JS script running some code, and which will also allow to run yours
   - some CSS pre-styled classes: feel free to use those as they are, or modify them

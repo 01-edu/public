@@ -34,7 +34,7 @@ Today, your mission is to build a 3-column brick tower, maintain it and finally 
 
 You only need to create & submit the JS file `build-brick-and-break.js` ; we're providing you the following file to download (click right and save link) & test locally:
 
-- the HTML file [build-brick-and-break.html](/public/subjects/build-brick-and-break/build-brick-and-break.html) to open in the browser, which includes:
+- the HTML file [build-brick-and-break.html](./build-brick-and-break.html) to open in the browser, which includes:
 
   - the JS script running some code, and which will also allow to run yours
   - some CSS pre-styled classes: feel free to use those as they are, or modify them

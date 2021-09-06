@@ -29,12 +29,12 @@ Write the function `explore` which creates a page displaying the list of `places
 
 You only need to create & submit the JS file `where-do-we-go.js` ; we're providing you the following files to download (click right and save link) & test locally:
 
-- the HTML file [where-do-we-go.html](/public/subjects/where-do-we-go/where-do-we-go.html) to open in the browser, which includes:
+- the HTML file [where-do-we-go.html](./where-do-we-go.html) to open in the browser, which includes:
 
   - the JS script which will allow to run your code
   - some CSS pre-styled classes: feel free to use those as they are, or modify them
 
-- the data file [where-do-we-go.data.js](/public/subjects/where-do-we-go/where-do-we-go.data.js) from which you can import `places`
+- the data file [where-do-we-go.data.js](./where-do-we-go.data.js) from which you can import `places`
 
 - the images to use, in this [compressed folder](https://assets.01-edu.org/where-do-we-go_images.zip)
 
