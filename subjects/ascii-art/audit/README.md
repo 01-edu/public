@@ -13,7 +13,6 @@
 |_| |_|  \___| |_| |_|  \___/  $
                                $
                                $
-$
 ```
 
 ###### Does it display the right graphical representation in ASCII as above?
@@ -29,7 +28,6 @@ $
 |_|  |_| |______| |______| |______|  \____/  $
                                              $
                                              $
-$
 ```
 
 ###### Does it display the right graphical representation in ASCII as above?
@@ -45,7 +43,6 @@ $
 |_|  |_|  \___| |______| |_|  \___/        |_|  |_|  \__,_| |_|  |_|  \__,_| |_| \_| $
                                                                                      $
                                                                                      $
-$
 ```
 
 ###### Does it display the right graphical representation in ASCII as above?
@@ -61,7 +58,6 @@ $
 |_| |_|  |_|  \___| |_| |_|  \___/        |_____|    |_|    |_| |_|  \___| |_|     \___| $
                                                                                          $
                                                                                          $
-$
 ```
 
 ###### Does it display the right graphical representation in ASCII as above?
@@ -85,7 +81,6 @@ $
    |_|    |_| |_|  \___| |_|     \___| $
                                        $
                                        $
-$
 ```
 
 ###### Does it display the right graphical representation in ASCII as above?
@@ -101,7 +96,6 @@ $
  | |  |_|  |_|  \___| |_| |_|  \___/         \___/\/          |_|    |_| |_|  \___| |_|     \___|         |_||_|    | |  $
   \_\                                                                                                              /_/   $
                                                                                                                          $
-$
 ```
 
 ###### Does it display the right graphical representation in ASCII as above?
@@ -117,7 +111,6 @@ $
 |_| |_|  \___| |_| |_|  \___/           |_|    |_| |_|  \___| |_|     \___|       |_|        \__|  \___/        |_____| (_) $
                                                                                                                             $
                                                                                                                             $
-$
 ```
 
 ###### Does it display the right graphical representation in ASCII as above?
@@ -133,7 +126,6 @@ $
 |_|  |_|  \__,_| |_____/  |____/  |_____| |_|    /_/    \_\  \___/\/ |______| |_| |_____/  |_.__/   \___/  |_| \_| $
                                                                                                                    $
                                                                                                                    $
-$
 ```
 
 ###### Does it display the right graphical representation in ASCII as above?
@@ -149,7 +141,6 @@ $
 |_|  \__,_|         |_||_|   |_|       \__,_|   \_/\_/   |_|  |_|  \__, |   \_/\_/   |_|  \_\  \___/\/ /_/     | |   | |          $
                                                                    __/ /                                        \_\ /_/           $
                                                                   |___/                                                           $
-$
 ```
 
 ###### Does it display the right graphical representation in ASCII as above?
@@ -165,7 +156,6 @@ $
  | |  | |  | |        $
   \_\ | | /_/         $
       |_|             $
-$
 ```
 
 ###### Does it display the right graphical representation in ASCII as above?
@@ -181,7 +171,6 @@ $
 | |_      \_\  _| |                          \__,_| $
 |___|         |___|       ______                    $
                          |______|                   $
-$
 ```
 
 ###### Does it display the right graphical representation in ASCII as above?
@@ -197,7 +186,6 @@ $
 |_|  \_\  \_____| |____/  $
                           $
                           $
-$
 ```
 
 ###### Does it display the right graphical representation in ASCII as above?
@@ -213,7 +201,6 @@ $
 (_) ( )   \_\          /_/    (_)    \ \__,_| $
     |/                                \____/  $
                                               $
-$
 ```
 
 ###### Does it display the right graphical representation in ASCII as above?
@@ -229,7 +216,6 @@ __       _   _ _           _  _      _    _   __           _    __ __       _   
     \_\ (_)               |_||_|    |_|  /_/ (_)  \___/\/     | |   | |  \/|_|\/          ( )          (_) /_/     $
                                                                \_\ /_/                    |/                       $
                                                                                                                    $
-$
 ```
 
 ###### Does it display the right graphical representation in ASCII as above?
@@ -245,7 +231,6 @@ $
 /_/    \_\ |____/   \_____| |_____/  |______| |_|       \_____| |_|  |_| |_____|  \____/  |_|\_\ |______| |_|  |_| |_| \_|  \____/  |_|       \___\_\ |_|  \_\ |_____/     |_|     \____/      \/         \/  \/     /_/ \_\    |_|    /_____| $
                                                                                                                                                                                                                                                $
                                                                                                                                                                                                                                                $
-$
 ```
 
 ###### Does it display the right graphical representation in ASCII as above?
@@ -261,7 +246,6 @@ $
  \__,_| |_.__/   \___|  \__,_|  \___| |_|     __/ | |_| |_| |_|   | | |_|\_\ |_| |_| |_| |_| |_| |_|  \___/  | .__/   \__, | |_|    |___/  \__|  \__,_|   \_/     \_/\_/   /_/\_\  \__, | /___| $
                                              |___/               _/ |                                        | |         | |                                                       __/ /        $
                                                                 |__/                                         |_|         |_|                                                      |___/         $
-$
 ```
 
 ###### Does it display the right graphical representation in ASCII as above?

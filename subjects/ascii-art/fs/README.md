@@ -30,7 +30,6 @@ $ go run . "hello" standard | cat -e
 |_| |_|  \___| |_| |_|  \___/  $
                                $
                                $
-$
 $ go run . "Hello There!" shadow | cat -e
                                                                                       $
 _|    _|          _| _|                _|_|_|_|_| _|                                  $
@@ -40,7 +39,6 @@ _|    _| _|       _| _| _|    _|           _|     _|    _| _|       _|       _| 
 _|    _|   _|_|_| _| _|   _|_|             _|     _|    _|   _|_|_| _|         _|_|_| $
                                                                                       $
                                                                                       $
-$
 $ go run . "Hello There!" thinkertoy | cat -e
                                               $
 o  o     o o           o-O-o o                $
@@ -50,7 +48,6 @@ O--O o-o | | o-o         |   O--o o-o o-o o-o $
 o  o o-o o o o-o         o   o  o o-o o   o-o $
                                               $
                                               $
-$
 ```
 
 ### Allowed packages
