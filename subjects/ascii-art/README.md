@@ -82,9 +82,7 @@ $$@@$$$$$$$$``````````@@$$@@$$$$$$
 
 ```console
 student$ go run . "" | cat -e
-$
 student$ go run . "\n" | cat -e
-$
 $
 student$ go run . "Hello\n" | cat -e
  _    _          _   _          $
@@ -96,7 +94,6 @@ student$ go run . "Hello\n" | cat -e
                                 $
                                 $
 $
-$
 student$ go run . "hello" | cat -e
  _              _   _          $
 | |            | | | |         $
@@ -106,7 +103,6 @@ student$ go run . "hello" | cat -e
 |_| |_|  \___| |_| |_|  \___/  $
                                $
                                $
-$
 student$ go run . "HeLlO" | cat -e
  _    _          _        _    ____   $
 | |  | |        | |      | |  / __ \  $
@@ -116,7 +112,6 @@ student$ go run . "HeLlO" | cat -e
 |_|  |_|  \___| |______| |_|  \____/  $
                                       $
                                       $
-$
 student$ go run . "Hello There" | cat -e
  _    _           _    _                 _______   _                              $
 | |  | |         | |  | |               |__   __| | |                             $
@@ -126,7 +121,6 @@ student$ go run . "Hello There" | cat -e
 |_|  |_|  \___|  |_|  |_|   \___/          |_|    |_| |_|   \___|  |_|      \___| $
                                                                                   $
                                                                                   $
-$
 student$ go run . "1Hello 2There" | cat -e
      _    _           _    _                       _______   _                              $
  _  | |  | |         | |  | |               ____  |__   __| | |                             $
@@ -136,7 +130,6 @@ student$ go run . "1Hello 2There" | cat -e
 |_| |_|  |_|  \___|  |_|  |_|   \___/      |_____|   |_|    |_| |_|   \___|  |_|      \___| $
                                                                                             $
                                                                                             $
-$
 student$ go run . "{Hello There}" | cat -e
    __   _    _           _    _                 _______   _                              __    $
   / /  | |  | |         | |  | |               |__   __| | |                             \ \   $
@@ -146,7 +139,6 @@ student$ go run . "{Hello There}" | cat -e
  | |   |_|  |_|  \___|  |_|  |_|   \___/          |_|    |_| |_|   \___|  |_|      \___|  | |  $
   \_\                                                                                    /_/   $
                                                                                                $
-$
 student$ go run . "Hello\nThere" | cat -e
  _    _           _    _           $
 | |  | |         | |  | |          $
@@ -164,7 +156,7 @@ student$ go run . "Hello\nThere" | cat -e
    |_|    |_| |_|   \___|  |_|      \___| $
                                           $
                                           $
-$
+student$
 ```
 
 ### Allowed packages

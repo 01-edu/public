@@ -23,7 +23,6 @@ EX: go run . something standard
 |_| |_|  \___| |_| |_|  \___/  $
                                $
                                $
-$
 ```
 
 ###### Does it display the string in the right template as an ASCII art representation as above?
@@ -39,7 +38,6 @@ _|    _| _|       _| _| _|    _|         _|  _|  _|  _|   _|    _| _|       _| _
 _|    _|   _|_|_| _| _|   _|_|             _|      _|       _|_|   _|       _|   _|_|_| $
                                                                                         $
                                                                                         $
-$
 ```
 
 ###### Does it display the string in the right template as an ASCII art representation as above?
@@ -55,7 +53,6 @@ o-o     o-o o-o         /        o-O-o o-o o-o -o-       o  o o-o o  o $
 o  o |  o-o o-o       o--o       o o o o-o o-o  o        o--O o-o o--o $
                                                             |          $
                                                          o--o          $
-$
 ```
 
 ###### Does it display the string in the right template as an ASCII art representation as above?
@@ -71,7 +68,6 @@ $
  \__, |  \___/   \__,_|        \___/\/       |_| |_| |_|  \___| $
  __/ /                                                          $
 |___/                                                           $
-$
 ```
 
 ###### Does it display the string in the right template as an ASCII art representation as above?
@@ -87,7 +83,6 @@ _|_| _|    _|       _| $
   _| _|_|_|_| _|_|_|   $
                        $
                        $
-$
 ```
 
 ###### Does it display the string in the right template as an ASCII art representation as above?
@@ -103,7 +98,6 @@ $
 o      \     /  $
                 $
                 $
-$
 ```
 
 ###### Does it display the string in the right template as an ASCII art representation as above?
@@ -119,7 +113,6 @@ _|    _| _|    _| _|       _|    _| _|       _|       _|    _| _|    _|   _|   _
 _|    _| _|_|_|     _|_|_| _|_|_|   _|_|_|_| _|         _|_|_| _|    _| _|_|_|   _|_|   _|    _| _|_|_|_| _|      _| _|      _|   _|_|   _|         _|_|  _| _|    _| _|_|_|       _|       _|_|       _|         _|  _|     _|      _|     _|     _|_|_|_|_|  $
                                                                                                                                                                                                                                                                $
                                                                                                                                                                                                                                                                $
-$
 ```
 
 ###### Does it display the string in the right template as an ASCII art representation as above?
@@ -135,7 +128,6 @@ $
        | |   -O-O-  O       |  o      \ /  o | o     o     O o     $
               | |                                    |             $
                                                                    $
-$
 ```
 
 ###### Does it display the string in the right template as an ASCII art representation as above?
@@ -151,7 +143,6 @@ $
   o-O-o  o    o-o         o   o   o-o o   o  o | o  o o--O $
                                                          | $
                                                       o--o $
-$
 ```
 
 ###### Does it display the string in the right template as an ASCII art representation as above?
