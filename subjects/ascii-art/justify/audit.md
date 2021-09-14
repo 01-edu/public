@@ -10,7 +10,7 @@ Usage: go run . [STRING] [BANNER] [OPTION]
 EX: go run . something standard --align=right
 ```
 
-###### Does it display the correct result as above?
+###### Does it display the same result as above?
 
 ##### Try passing as arguments `"left standard --align=right"`
 

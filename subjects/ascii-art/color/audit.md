@@ -10,7 +10,7 @@ Usage: go run . [STRING] [OPTION]
 EX: go run . something --color=<color>
 ```
 
-###### Does it display the correct result as above?
+###### Does it display the same result as above?
 
 ##### Try passing as arguments `"hello world" --color=red`.
 

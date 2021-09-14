@@ -10,7 +10,7 @@ Usage: go run . [STRING] [BANNER]
 EX: go run . something standard
 ```
 
-###### Does it display the correct result as above?
+###### Does it display the same result as above?
 
 ##### Try passing as arguments `"hello" standard | cat -e`
 
@@ -25,7 +25,7 @@ EX: go run . something standard
                                $
 ```
 
-###### Does it display the string in the right template as an ASCII art representation as above?
+###### Does it display the string in the right template as an ASCII art representation as shown above?
 
 ##### Try passing as arguments `"hello world" shadow | cat -e`
 
@@ -40,7 +40,7 @@ _|    _|   _|_|_| _| _|   _|_|             _|      _|       _|_|   _|       _|  
                                                                                         $
 ```
 
-###### Does it display the string in the right template as an ASCII art representation as above?
+###### Does it display the string in the right template as an ASCII art representation as shown above?
 
 ##### Try passing as arguments `"nice 2 meet you" thinkertoy | cat -e`
 
@@ -55,7 +55,7 @@ o  o |  o-o o-o       o--o       o o o o-o o-o  o        o--O o-o o--o $
                                                          o--o          $
 ```
 
-###### Does it display the string in the right template as an ASCII art representation as above?
+###### Does it display the string in the right template as an ASCII art representation as shown above?
 
 ##### Try passing as arguments `"you & me" standard | cat -e`
 
@@ -70,7 +70,7 @@ o  o |  o-o o-o       o--o       o o o o-o o-o  o        o--O o-o o--o $
 |___/                                                           $
 ```
 
-###### Does it display the string in the right template as an ASCII art representation as above?
+###### Does it display the string in the right template as an ASCII art representation as shown above?
 
 ##### Try passing as arguments `"123" shadow | cat -e`
 
@@ -85,7 +85,7 @@ _|_| _|    _|       _| $
                        $
 ```
 
-###### Does it display the string in the right template as an ASCII art representation as above?
+###### Does it display the string in the right template as an ASCII art representation as shown above?
 
 ##### Try passing as arguments `"/(\")" thinkertoy | cat -e`
 
@@ -100,7 +100,7 @@ o      \     /  $
                 $
 ```
 
-###### Does it display the string in the right template as an ASCII art representation as above?
+###### Does it display the string in the right template as an ASCII art representation as shown above?
 
 ##### Try passing as arguments `"ABCDEFGHIJKLMNOPQRSTUVWXYZ" shadow | cat -e`
 
@@ -115,7 +115,7 @@ _|    _| _|_|_|     _|_|_| _|_|_|   _|_|_|_| _|         _|_|_| _|    _| _|_|_|  
                                                                                                                                                                                                                                                                $
 ```
 
-###### Does it display the string in the right template as an ASCII art representation as above?
+###### Does it display the string in the right template as an ASCII art representation as shown above?
 
 ##### Try passing as arguments `"\"#$%&/()*+,-./" thinkertoy | cat -e`
 
@@ -130,7 +130,7 @@ _|    _| _|_|_|     _|_|_| _|_|_|   _|_|_|_| _|         _|_|_| _|    _| _|_|_|  
                                                                    $
 ```
 
-###### Does it display the string in the right template as an ASCII art representation as above?
+###### Does it display the string in the right template as an ASCII art representation as shown above?
 
 ##### Try passing as arguments `"It's Working" thinkertoy | cat -e`
 
@@ -145,7 +145,7 @@ _|    _| _|_|_|     _|_|_| _|_|_|   _|_|_|_| _|         _|_|_| _|    _| _|_|_|  
                                                       o--o $
 ```
 
-###### Does it display the string in the right template as an ASCII art representation as above?
+###### Does it display the string in the right template as an ASCII art representation as shown above?
 
 ##### Try passing as arguments a random string with upper and lower case letters followed by one of the templates names (standard, shadow, thinkertoy, or other).
 

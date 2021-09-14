@@ -10,7 +10,7 @@ Usage: go run . [OPTION]
 EX: go run . --reverse=<fileName>
 ```
 
-###### Does it display the correct result as above?
+###### Does it display the same result as above?
 
 ##### Try passing to the reverse flag `"--reverse=example00.txt"` the [example 00](example.md).
 
