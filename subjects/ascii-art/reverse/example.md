@@ -1,7 +1,7 @@
 ## ascii-reverse-examples
 
 - Create your file and copy the examples into it.
-- For better understanding and formatting purpose, we added the dollar sign ($) at the end, this can be copied if you want, choose wisely!
+- For a better understanding and formatting purpose, we added the dollar sign ($) at the end. This can be copied if you wish, choose wisely!
 
 ### example00
 
