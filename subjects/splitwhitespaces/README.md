@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that separates the words of a `string` and puts them in a `string` slice.
+Write a function that separates the words of a `string` and puts them in a `string slice`.
 
 The separators are spaces, tabs and newlines.
 

@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function, `CollatzCountdown`, that returns the number of steps necessary to reach 1 using the collatz countdown.
+Write a function, `CollatzCountdown`, that returns the number of steps necessary to reach 1 using the [collatz countdown](https://en.wikipedia.org/wiki/Collatz_conjecture).
 
 - It must return `-1` if `start` is equal to `0` or negative.
 

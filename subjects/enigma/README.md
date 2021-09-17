@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function called `Enigma` that receives pointers to as arguments and move its values around to hide them.
+Write a function called `Enigma` that receives pointers as arguments and move its values around to hide them.
 
 This function will put :
 

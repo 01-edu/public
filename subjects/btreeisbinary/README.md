@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function, `BTreeIsBinary`, that returns `true` only if the tree given by `root` follows the binary search tree properties.
+Write a function, `BTreeIsBinary`, that returns `true` only if the tree given by `root` follows the binary search tree [properties](https://en.wikipedia.org/wiki/Binary_search_tree#Definition).
 
 ### Expected function
 

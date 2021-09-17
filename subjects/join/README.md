@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that simulates the behaviour of the `Join` function in Go. This function returns the concatenation of all the strings of a slice of strings **separated** by a separator passed in argument.
+Write a function that returns the concatenation of all the `string`s of a slice of `string`s **separated** by the separator passed in the argument `sep`.
 
 ### Expected function
 

@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that searches for a node with a data element equal to `elem`and that returns that node.
+Write a function that returns the `TreeNode` with a `data` field equal to `elem` if it exists in the tree, otherwise return `nil`.
 
 ### Expected function
 
