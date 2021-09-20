@@ -4,7 +4,11 @@
 
 Ascii-art-web consists in creating and running a server, in which it will be possible to use a web **GUI** (graphical user interface) version of your last project, [ascii-art](../ascii-art).
 
-Your webpage must allow the use of different [banners](../ascii-art).
+Your webpage must allow the use of the different banners:
+
+- [shadow](../ascii-art/shadow.txt)
+- [standard](../ascii-art/standard.txt)
+- [thinkertoy](../ascii-art/thinkertoy.txt)
 
 Implement the following HTTP endpoints:
 
