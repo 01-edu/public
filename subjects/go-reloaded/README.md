@@ -26,9 +26,9 @@ The tool you are about to build will receive as arguments the name of a file con
 
   - For `(low)`, `(up)`, `(cap)` if a number appears next to it, like so: `(low, <number>)` it turns the previous specified number of words in lowercase, uppercase or capitalized accordingly. (Ex: "This is so exciting (up, 2)" -> "This is SO EXCITING")
 
-- Every instance of the ponctuations `'.'`, `','`, `'!'`, `'?'`, `':'` and `';'` should be close to the previous word and with a space appart from the next one. (Ex: "I was sitting over there ,and then BAMM !!" -> "I was sitting over there, and then BAMM!!").
-  - Except if there are groups of ponctuation like: '...' or '!?'. In this case the program should format the text as in the following example: "I was thinking ... You were right" -> "I was thinking... You were right".
-- The ponctuation mark `'''` should not have spaces if there are letters in both sides of it. Otherwise, the mark should be placed to the right of the next word and the following `'''` mark should be placed to its left. (Ex: "I'm exactly how they describe me: ' awesome '" -> "I'm exactly how they describe me: 'awesome'")
+- Every instance of the punctuations `'.'`, `','`, `'!'`, `'?'`, `':'` and `';'` should be close to the previous word and with a space appart from the next one. (Ex: "I was sitting over there ,and then BAMM !!" -> "I was sitting over there, and then BAMM!!").
+  - Except if there are groups of punctuation like: '...' or '!?'. In this case the program should format the text as in the following example: "I was thinking ... You were right" -> "I was thinking... You were right".
+- The punctuation mark `'''` should not have spaces if there are letters in both sides of it. Otherwise, the mark should be placed to the right of the next word and the following `'''` mark should be placed to its left. (Ex: "I'm exactly how they describe me: ' awesome '" -> "I'm exactly how they describe me: 'awesome'")
   - If there are more than one word between the two `'''`, the program should place the marks next to the corresponding words (Ex: "As Elton John said: ' I am the most well-known homosexual in the world '" -> "As Elton John said: 'I am the most well-known homosexual in the world'")
 - Every instance of `"a"` should turned into `"an"` if the next word begans with a vowel or an 'h'. (Ex: "There it was. A amazing rock!" -> "There it was. An amazing rock!").
 
@@ -64,12 +64,12 @@ $cat result.txt
 There is no greater agony than bearing an untold story inside you.
 
 $ cat sample.txt
-Ponctuation tests are ... kinda boring ,don't you think !?
+Punctuation tests are ... kinda boring ,don't you think !?
 
 $ go run . sample.txt result.txt
 
 $cat result.txt
-Ponctuation tests are... kinda boring, don't you think!?
+Punctuation tests are... kinda boring, don't you think!?
 ```
 
 This project will help you learn about :
