@@ -27,3 +27,9 @@ use the given files for it:
 > - Add a new section, pictures
 > - Do all the bonuses
 > - Make sections collapsable
+
+### Extra
+
+If you want to go the extra mile here is to way to gain extra credits:
+- Responsive (Make your web page work on mobile and desktop)
+- Publish It ! (Use a service, like [github pages](https://pages.github.com/) or [cloudflare pages](https://pages.cloudflare.com/) to host your page, it's free)
