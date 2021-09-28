@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that receives a `string slice` and prints each element of the slice in one line.
+Write a function that receives a `string slice` and prints each element of the slice in a seperate line.
 
 ### Expected function
 
