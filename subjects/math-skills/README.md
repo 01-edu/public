@@ -5,9 +5,9 @@
 The purpose of this project is for you to calculate the following:
 
 - Average
-- Standard Deviation
-- Variance
 - Median
+- Variance
+- Standard Deviation
 
 ### Instructions
 
@@ -35,9 +35,9 @@ After reading the file, your program must execute each of the calculations asked
 
 ```console
 Average: 35
-Standard Deviation: 65
-Variance: 5
 Median: 4
+Variance: 5
+Standard Deviation: 65
 ```
 
 Please note that the values are rounded integers.
@@ -52,6 +52,6 @@ This project will help you learn about:
 
 - Statistics and Mathematics
   - [Average](https://en.wikipedia.org/wiki/Average)
-  - [Standard Deviation](https://en.wikipedia.org/wiki/Standard_deviation)
-  - [Variance](https://en.wikipedia.org/wiki/Variance)
   - [Median](https://en.wikipedia.org/wiki/Median)
+  - [Variance](https://en.wikipedia.org/wiki/Variance)
+  - [Standard Deviation](https://en.wikipedia.org/wiki/Standard_deviation)
