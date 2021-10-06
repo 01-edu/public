@@ -2,9 +2,7 @@
 
 ### Instructions
 
-Write a function that separates the words of a `string` and puts them in a `string` slice.
-
-The separators are the characters of the separator string given in parameter.
+Write a function that receives a string and a separator and returns a `slice of strings` that results of splitting the string `s` by the separator `sep`.
 
 ### Expected function
 

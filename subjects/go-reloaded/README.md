@@ -64,12 +64,12 @@ $cat result.txt
 There is no greater agony than bearing an untold story inside you.
 
 $ cat sample.txt
-Ponctuation tests are ... kinda boring ,don't you think !?
+Punctuation tests are ... kinda boring ,don't you think !?
 
 $ go run . sample.txt result.txt
 
 $cat result.txt
-Ponctuation tests are... kinda boring, don't you think!?
+Punctuation tests are... kinda boring, don't you think!?
 ```
 
 This project will help you learn about :

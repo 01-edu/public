@@ -11,9 +11,9 @@ The output should manipulate colors using the **flag** `--color=<color>`, in whi
 - The flag must have exactly the same format as above, any other formats must return the following usage message:
 
 ```console
-Usage: go run . [STRING] [BANNER] [OPTION]
+Usage: go run . [STRING] [OPTION]
 
-EX: go run . something standard --color=<color>
+EX: go run . something --color=<color>
 ```
 
 ### Instructions
