@@ -1,6 +1,6 @@
 ## find_factorial
 
-### Instruccions
+### Instructions
 
 Complete the **function** `factorial` to return the factorial of a given number.
 
