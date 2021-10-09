@@ -10,7 +10,7 @@
 
 - `Drawable` contains the methods `draw` and `color`
 
-- `Displayable` contains the methods `display`.
+- `Displayable` contains the method `display`.
 
 - Define them in correspondence with the way they're called in the main function
 
@@ -22,9 +22,10 @@
 - Line: a new line should be created from references to two points also define an associated function called `random` that receives two argument the first is the maximum x value a point can have and the
 second the maximum y value that a point can have
 - Triangle: a new triangle should be created from references to three points
-- Rectangle: a new rectangle should be created from two reference to points
-- Circle: a new circle should be created from a point represented the center and a i32 value representing the radius
-   - also define an associated function called `random` that receives two arguments the first is the maximum x value the center point can have and the second the maximum y value that the center point can have
+- Rectangle: a new rectangle should be created from two references to points
+- Circle: a new circle should be created from a point representing the center and an i32 value representing the radius
+
+- The main function also requires a definition of an associated function called `random` for the types Line, Point and Circle. You should derive their signature from the usage.
 
 Don't forget to add the dependencies in your Cargo.toml.
 
@@ -56,16 +57,14 @@ fn main() {
 
     gs::Point::random(image.width, image.height).draw(&mut image);
 
-    let rectangle = gs::Rectangle::new(gs::Point::new(150, 150), gs::Point::new(50, 50));
+    let rectangle = gs::Rectangle::new(&gs::Point::new(150, 150), &gs::Point::new(50, 50));
     rectangle.draw(&mut image);
 
-    let triangle = gs::Triangle {
-        vertices: (
-            gs::Point::new(500, 500),
-            gs::Point::new(250, 700),
-            gs::Point::new(700, 800),
-        ),
-    };
+    let triangle = gs::Triangle::new (
+            &gs::Point::new(500, 500),
+            &gs::Point::new(250, 700),
+            &gs::Point::new(700, 800),
+    );
     triangle.draw(&mut image);
 
     for _ in 1..50 {
