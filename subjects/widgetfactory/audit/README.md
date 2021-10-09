@@ -32,8 +32,8 @@
 
 #### Bonus
 
-###### Was there a resolution confirmation button when changing resolution?
+###### +Was there a resolution confirmation button when changing resolution?
 
-###### Was the “On Release” attribute of the buttons used instead of the "On Pressed"?
+###### +Was the “On Release” attribute of the buttons used instead of the "On Pressed"?
 
-###### Are the default screen resolution automatically set to get the best computer performance?
+###### +Are the default screen resolution automatically set to get the best computer performance?
