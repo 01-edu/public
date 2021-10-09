@@ -31,9 +31,9 @@ Don't forget to add the dependencies in your Cargo.toml.
 
 #### Bonus
 
-- Implement drawing a pentagon
+- Implement drawing a pentagon (implement the structure Pentagon, and the trait needed to draw in the image)
 
-- Implement drawing a cube
+- Implement drawing a cube (implement the structure Cube, and the trait needed to draw in the image)
 
 ### Notions
 
