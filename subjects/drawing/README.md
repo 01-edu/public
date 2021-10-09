@@ -28,6 +28,12 @@ second the maximum y value that a point can have
 
 Don't forget to add the dependencies in your Cargo.toml.
 
+### Notions
+
+- [Image processing library](https://docs.rs/raster/0.2.0/raster/)
+
+- [Traits](https://doc.rust-lang.org/stable/book/ch10-02-traits.html)
+
 ### Usage
 
 ```rust
