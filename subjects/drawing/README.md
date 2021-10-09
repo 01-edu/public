@@ -2,6 +2,8 @@
 
 ### Instructions
 
+- Copy the code in [usage](#usage) to your main.rs
+
 - Create a module called geometrical_shapes in another file.
 
 - This module will keeps all the logic for creating and operating with the different geometrical shapes and define two traits `Displayable` and `Drawable`.
