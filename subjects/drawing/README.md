@@ -28,6 +28,12 @@ second the maximum y value that a point can have
 
 Don't forget to add the dependencies in your Cargo.toml.
 
+#### Bonus
+
+- Implement drawing a pentagon
+
+- Implement drawing a cube
+
 ### Notions
 
 - [Image processing library](https://docs.rs/raster/0.2.0/raster/)
