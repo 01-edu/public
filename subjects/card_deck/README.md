@@ -28,6 +28,10 @@ Define:
 [Crate rand](https://docs.rs/rand/0.3.14/rand/)
 [Enums](https://doc.rust-lang.org/book/ch06-00-enums.html)
 
+### Dependencies
+
+rand = "0.3.14"
+
 ### Expected Functions and Structures
 
 ```rust

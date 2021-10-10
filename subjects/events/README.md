@@ -45,6 +45,10 @@ These events can be: Remainders, Registrations, Appointments or Holidays.
 - [colored crate](https://docs.rs/colored/2.0.0/colored/)
 - [chrono crate](https://crates.io/crates/chrono)
 
+### Dependencies
+
+chrono = "0.4"
+
 ### Expected Functions and Data Structures
 
 ```rust

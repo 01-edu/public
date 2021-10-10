@@ -8,6 +8,10 @@ Create the function `bigger` that gets the biggest positive number in the `HashM
 
 [hash maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html)
 
+### Dependencies
+
+rand = "0.7"
+
 ### Expected Function
 
 ```rust

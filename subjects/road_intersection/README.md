@@ -48,7 +48,7 @@ For clarification reasons we will assume that a lane can have three different ro
 
 2. Traffic lights
 
-Traffic lights are signalling devices positioned at road intersections that follows an universal color code,
+Traffic lights are signalize devices positioned at road intersections that follows an universal color code,
 normally its green, red and amber, but for this project you will just use the colors **red** and **green**.
 
 You will then have to create some kind of representation for the traffic lights and distribute them for each lane in the intersection.
@@ -72,7 +72,7 @@ Vehicles must obey this rules:
 
 - Each vehicle must have a fixed velocity.
 
-- It must be kept a safety distance from other vehicles, if one vehicle stops the other vehicle thats
+- It must be kept a safety distance from other vehicles, if one vehicle stops the other vehicle that
   behind him must stop and keep its distance.
 
 - Vehicles must stop if the traffic light is red and proceed otherwise.
