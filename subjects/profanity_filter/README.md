@@ -12,7 +12,7 @@ must have the following elements:
 - content: String
 - user: String
 
-The `struct` must also have a implementation of 2 **functions** associated with it:
+The `struct` must also have an implementation of 2 **functions** associated with it:
 
 - `new`, which initializes the structure
 - `send_ms`, which only has its implementation type (**self**) as argument and returns an option:
@@ -37,7 +37,7 @@ pub struct Message {
 }
 
 impl Message {
-  pub fn new(ms: String, u: String, t: String) -> Message {
+  pub fn new(ms: String, u: String) -> Message {
 
   }
   pub fn send_ms(&self) -> Option<&str> {
@@ -46,10 +46,6 @@ impl Message {
 }
 
 pub fn check_ms(ms: &Message) -> (bool, &str) {
-
-}
-
-pub fn format_date() -> String {
 
 }
 ```
@@ -62,16 +58,16 @@ Here is a program to test your function
 use profanity_filter::*;
 
 fn main() {
-  let m0 = Message::new("hello there".to_string(), "toby".to_string(), format_date());
+  let m0 = Message::new("hello there".to_string(), "toby".to_string());
   println!("{:?}", check_ms(&m0));
 
-  let m1 = Message::new("".to_string(), "toby".to_string(), format_date());
+  let m1 = Message::new("".to_string(), "toby".to_string());
   println!("{:?}", check_ms(&m1));
 
-  let m2 = Message::new("you are stupid".to_string(), "toby".to_string(), format_date());
+  let m2 = Message::new("you are stupid".to_string(), "toby".to_string());
   println!("{:?}", check_ms(&m2));
 
-  let m3 = Message::new("stupid".to_string(), "toby".to_string(), format_date());
+  let m3 = Message::new("stupid".to_string(), "toby".to_string());
   println!("{:?}", check_ms(&m3));
 }
 ```
