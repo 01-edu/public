@@ -2,13 +2,13 @@
 
 ### Instructions
 
-- Write a function that transforms a number within a `string`, in an `int`.
+- Write a function that transforms numbers within a `string`, into an `int`.
 
-- For this exercise the handling of the `-` sign **has** to be taken into account. If the sign is encountered before any number it should determine the sign of the returned `int`.
+- If the `-` sign is encountered before any number it should determine the sign of the returned `int`.
 
-- This function will **only** return an `int`. In case of invalid input, the function should return `0`.
+- This function should **only** return an `int`. In the case of an invalid input, the function should return `0`.
 
-- **Note**: There will never be more than one sign by `string` in the tests.
+- **Note**: There will never be more than one sign in a `string` in the tests.
 
 ### Expected function
 
