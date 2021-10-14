@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that capitalizes each letter of a `string`.
+Write a function that capitalizes each letter in a `string`.
 
 ### Expected function
 
