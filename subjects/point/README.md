@@ -4,9 +4,11 @@
 
 Create a new directory called `point`.
 
-- The code below has to be copied in a file called `main.go` inside the `point` directory.
+- The code below must be copied into a file called `main.go` inside the `point` directory.
 
-- The necessary changes have to be applied so that the program works.
+- The necessary changes must be applied so that the program works.
+
+- The program must be submitted inside a folder named 'point'.
 
 ### Code to be copied
 
