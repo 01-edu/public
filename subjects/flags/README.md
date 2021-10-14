@@ -2,13 +2,13 @@
 
 ### Instructions
 
-Write a **program** that can have as arguments `--insert` (or `-i`), `--order` (or `-o`) and a `string`.
+Write a **program** that can take `--insert` (or `-i`), `--order` (or `-o`) and a `string`as arguments.
 
 This program should :
 
-- Insert the string given to the `--insert` (or `-i`), in the `string` argument, if given.
-- Order the `string` argument (in ASCII order) if given the flag `--order` (or `-o`).
-- In case there are no arguments or if the flag `--help` (or `-h`) is given, it should print the options, as shown in the example.
+- Insert the string given to the `--insert` (or `-i`), into the argument `string`, if given.
+- If the flag '--order' (or '-o') is given, order the 'string' argument (in ASCII order).
+- If there are no arguments or if the flag `--help` (or `-h`) is given, the options should be printed as in the example.
 
 Example of output :
 
