@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function `ForEach` that, for an `int` slice, applies a function on each elements of that slice.
+Write a function `ForEach` that, for an `int` slice, applies a function on each element of that slice.
 
 ### Expected function
 
