@@ -2,11 +2,9 @@
 
 ### Instructions
 
-Write a function that counts only the letters of a `string` and that returns that count.
+Write a function that counts the letters of a string and returns the count.
 
-- White spaces or any other characters should not be counted.
-
-The letters are only the ones from the latin alphabet.
+The letters are from the Latin alphabet list only, any other characters, symbols or empty spaces shall not be counted.
 
 ### Expected function
 
