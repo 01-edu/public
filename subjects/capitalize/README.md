@@ -4,7 +4,7 @@
 
 Write a function that capitalizes the first letter of each word **and** lowercases the rest.
 
-A word is a sequence of **alphanumerical** characters.
+A word is a sequence of **alphanumeric** characters.
 
 ### Expected function
 
