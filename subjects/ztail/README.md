@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a program that behaves like a simplified `tail` command but which takes at least one file as argument.
+Write a program that behaves like a simplified `tail` command that takes at least one file as an argument.
 
 The only option to be handled is `-c` and will be used in all the tests as the first argument, with positive values.
 
