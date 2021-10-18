@@ -10,7 +10,7 @@
 
 #### Example 1:
 
-Example of output for one valid sudoku :
+Example of output for a valid sudoku :
 
 ```console
 $ go run . ".96.4...1" "1...6...4" "5.481.39." "..795..43" ".3..8...." "4.5.23.18" ".1.63..59" ".59.7.83." "..359...7" | cat -e
@@ -28,7 +28,7 @@ $
 
 #### Example 2:
 
-Examples of output for invalid input or sudokus :
+Examples of expected outputs for invalid inputs or sudokus :
 
 ```console
 $ go run . 1 2 3 4 | cat -e
