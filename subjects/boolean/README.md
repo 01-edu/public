@@ -4,9 +4,9 @@
 
 Create a new directory called `boolean`.
 
-- The code below has to be copied in a file called `main.go` inside the `boolean` directory.
+- The code below must be copied into a file called `main.go` inside of the `boolean` directory.
 
-- The necessary changes have to be applied so that the program works.
+- The necessary changes must be applied for the program to work.
 
 ### Code to be copied
 
