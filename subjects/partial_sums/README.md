@@ -34,13 +34,13 @@ This is how partial sums work:
 3- So, in conclusion:
 
 ```rs
-partial_sums(&[1, 2, 3, 4, 5]) // == [15, 10, 6, 3 ,1, 0]
+parts_sums(&[1, 2, 3, 4, 5]) // == [15, 10, 6, 3 ,1, 0]
 ```
 
 ### Expected Result
 
 ```rs
-pub fn matrix_determinant(arr: &[u64]) -> Vec<64>{
+pub fn parts_sums(arr: &[u64]) -> Vec<64>{
 
 }
 ```
