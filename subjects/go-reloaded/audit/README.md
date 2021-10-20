@@ -14,6 +14,6 @@
 
 ###### Is the text present in `result.txt` equal to: "Don't be sad, because sad backwards is das. And das not good"
 
-##### In a file called `sample.txt` place the following text (without the double quotes): "harold wilson (cap, 2) : ' I’m a optimist ,but a optimist who carries a raincoat . '". Now run the student program with the arguments: `sample.txt result.txt`.
+##### In a file called `sample.txt` place the following text (without the double quotes): "harold wilson (cap, 2) : ' I am a optimist ,but a optimist who carries a raincoat . '". Now run the student program with the arguments: `sample.txt result.txt`.
 
-###### Is the text present in `result.txt` equal to: "Harold Wilson: 'I’m an optimist, but an optimist who carries a raincoat.'"
+###### Is the text present in `result.txt` equal to: "Harold Wilson: 'I am an optimist, but an optimist who carries a raincoat.'"
