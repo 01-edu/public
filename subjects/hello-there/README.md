@@ -16,10 +16,10 @@ VSCode is a code editor, it will give you an interface to write, test and submit
 #### Install `git`
 
 - Download the installer https://git-scm.com/downloads
-- While installing, Git will ask a bunch of question, it is recommanded to changes those:
-	- Choosing the defagult editor (pick VSCode)
-	- Configuring the line ending conversions (Checkout as-is, commit Unix-style line endings)
-	- Otherwhise stick with the defaults unless you know what you are doing.
+- While installing, Git will ask a bunch of questions, it is recommended to change those:
+	- Choosing the default editor (pick VSCode)
+	- Configuring the line ending conversions (Choose : Checkout as-is, commit Unix-style line endings)
+	- Otherwise stick with the defaults unless you know what you are doing.
 
 Git is a versioning tool, we use it to upload your solutions on the school server.
 
@@ -27,7 +27,7 @@ Git is a versioning tool, we use it to upload your solutions on the school serve
 
 - Download the installer https://nodejs.org/en/download/current/
 
-NodeJS will allow to execute JavaScript code outside of the browser, usefull for testing your code.
+NodeJS will allow to execute JavaScript code outside of the browser, useful for testing your code.
 
 
 ### Values
