@@ -88,11 +88,34 @@ executed.
 ### Instructions
 
 Once you have installed and configured the necessary tools,
-create a `git` repository named `((ROOT))` with a `hello-there.js`
-JS file that is a program that displays the exact text `Hello There !`, any `Number` and a
-`Boolean`.
+create in your [Gitea](<https://git.((DOMAIN))>) account the repository named `((ROOT))` with a `hello-there.js`
+JS file that is a program that displays:
+- the exact text `Hello There !`
+- any `Number` 
+- and a `Boolean`.
+
+In order to work in your repository and put files in it, you need to clone it first. 
+
+If your username was `choumi` this is the command that will need to be used:
+
+```
+git clone https://git.((DOMAIN))/choumi/((ROOT)).git
+```
+To execute it, open a Unix shell (e.g. Git Bash on Windows), you are going to type commands in it.
+This command needs to be adapted with **your own username**.
 
 > Don't forget to commit and push the file to the servers
+
+### Optional (git setting to avoid typing the password every time)
+
+The `((ROOT))` repository will be the folder where all the exercises must be uploaded.
+
+In order to avoid writing your username and password every time you `git push` an exercise, 
+tell Git to remember your password (like a web browser would) with the below command:
+
+```
+git config --global credential.helper store
+```
 
 ### Recommendation
 
