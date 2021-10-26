@@ -26,7 +26,7 @@ Create the 3 following classes, setting them with the given rulesets, & attribut
   - `background-color` "dodgerblue"
   - attributed to `leg-left` & `leg-right`
 
-Note that you can attribute several classes to a same element ; create the class `body-member`, which set the `width` to 50 pixels and the `margin` to 30 pixels, and add it to the `class` attribute of those elements: `arm-left`, `arm-right`, `leg-left` & `leg-left`.
+Note that you can attribute several classes to a same element ; create the class `body-member`, which set the `width` to 50 pixels and the `margin` to 30 pixels, and add it to the `class` attribute of those elements: `arm-left`, `arm-right`, `leg-left` & `leg-right`.
 
 ### Code examples
 
