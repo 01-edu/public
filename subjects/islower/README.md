@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that returns `true` if the `string` passed in parameter only contains lowercase characters, and that returns `false` otherwise.
+Write a function that returns `true` if the `string` passed as the parameter contains only lowercase characters, otherwise, returns `false`.
 
 ### Expected function
 
