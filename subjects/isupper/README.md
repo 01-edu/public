@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that returns `true` if the `string` passed in parameter only contains uppercase characters, and that returns `false` otherwise.
+Write a function that returns `true` if the `string` passed as parameter contains only uppercase characters, otherwise, returns `false`.
 
 ### Expected function
 
