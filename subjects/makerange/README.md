@@ -3,7 +3,7 @@
 ### Instructions
 
 Write a function that takes an `int` min and an `int` max as parameters.
-The must function return a slice of `int`s with all the values between min and max.
+The function must return a slice of `int`s with all the values between min and max.
 
 Min is included, and max is excluded.
 
