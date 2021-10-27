@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that returns `true` if the `string` passed as a parameter only contains numerical characters, and returns `false` otherwise.
+Write a function that returns `true` if the `string` passed as a parameter contains only numerical characters, otherwise, returns `false`.
 
 ### Expected function
 
