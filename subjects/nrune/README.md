@@ -2,9 +2,7 @@
 
 ### Instructions
 
-Write a function that returns the nth `rune` of a `string`.
-
-- In case of impossibilities, the function returns `0`.
+Write a function that returns the nth `rune` of a `string`. If not possible, it returns `0`.
 
 ### Expected function
 
