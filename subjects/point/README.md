@@ -8,8 +8,6 @@ Create a new directory called `point`.
 
 - The necessary changes must be applied so that the program works.
 
-- The program must be submitted inside a folder named 'point'.
-
 ### Code to be copied
 
 ```go
