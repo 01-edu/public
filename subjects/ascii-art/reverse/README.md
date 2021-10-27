@@ -13,7 +13,7 @@ The argument will be a **flag**, `--reverse=<fileName>`, in which `--reverse` is
 ```console
 Usage: go run . [OPTION]
 
-EX: go run . something standard --reverse=<fileName>
+EX: go run . --reverse=<fileName>
 ```
 
 ### Instructions
