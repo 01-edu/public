@@ -8,7 +8,7 @@ Write a function `QuadA` that prints a **valid** rectangle with a given width of
 
 The function must draw the rectangles as in the examples.
 
-If `x` and `y` are positive numbers, the program should print the rectangles as seen in the examples, oherwise, the function should print nothing.
+If `x` and `y` are positive numbers, the program should print the rectangles as seen in the examples, otherwise, the function should print nothing.
 
 ### Expected function
 
@@ -118,7 +118,7 @@ Write a function `QuadB` that prints a **valid** rectangle of width `x` and of h
 
 The function must draw the rectangles as in the examples.
 
-If `x` and `y` are positive numbers, the program should print the rectangles as seen in the examples, oherwise, the function should print nothing.
+If `x` and `y` are positive numbers, the program should print the rectangles as seen in the examples, otherwise, the function should print nothing.
 
 
 ### Expected function
@@ -229,7 +229,7 @@ Write a function `QuadC` that prints a **valid** rectangle of width `x` and of h
 
 The function must draw the rectangles as in the examples.
 
-If `x` and `y` are positive numbers, the program should print the rectangles as seen in the examples, oherwise, the function should print nothing.
+If `x` and `y` are positive numbers, the program should print the rectangles as seen in the examples, otherwise, the function should print nothing.
 
 ### Expected function
 
@@ -339,7 +339,7 @@ Write a function `QuadD` that prints a **valid** rectangle of width `x` and of h
 
 The function must draw the rectangles as in the examples.
 
-If `x` and `y` are positive numbers, the program should print the rectangles as seen in the examples, oherwise, the function should print nothing.
+If `x` and `y` are positive numbers, the program should print the rectangles as seen in the examples, otherwise, the function should print nothing.
 
 ### Expected function
 
@@ -449,7 +449,7 @@ Write a function `QuadE` that prints a **valid** rectangle of width `x` and of h
 
 The function must draw the rectangles as in the examples.
 
-If `x` and `y` are positive numbers, the program should print the rectangles as seen in the examples, oherwise, the function should print nothing.
+If `x` and `y` are positive numbers, the program should print the rectangles as seen in the examples, otherwise, the function should print nothing.
 
 
 ### Expected function
