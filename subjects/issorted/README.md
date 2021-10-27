@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function `IsSorted` that returns `true`, if the slice of `int` is sorted, otherwise returns 'false'.
+Write a function `IsSorted` that returns `true`, if the slice of `int` is sorted, otherwise returns `false`.
 
 The function passed in the parameter returns a positive `int` if `a` (the first argument) is greater than to `b` (the second argument), it returns `0` if they are equal and it returns a negative `int` otherwise.
 
@@ -16,7 +16,7 @@ func IsSorted(f func(a, b int) int, a []int) bool {
 }
 ```
 
-### Testing
+### Usage
 
 Here is a possible program to test your function (without `f`):
 
