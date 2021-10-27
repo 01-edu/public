@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that returns `true` if the `string` passed as a parameter contains only printable characters; returns `false` otherwise.
+Write a function that returns `true` if the `string` passed as a parameter contains only printable characters, otherwise, returns `false`.
 
 ### Expected function
 
