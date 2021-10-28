@@ -2,13 +2,11 @@
 
 ### Instructions
 
-Create a copy of the person object called clone1.
-Create an other copy of the person object called clone2.
+Create three copies of the person object called `clone1`, `clone2` and `samePerson`.
 
-Create a new variable `samePerson` with the same value as `person`.
+Increase by one the property age of `person` and set his country to `'FR'`.
 
-Increase by one the property age of `person`
-and set his country to `'FR'`.
+A way must be found to have `clone1` and `clone2` keep the original values while `samePerson` changes with `person`. 
 
 ### Notions
 
