@@ -32,7 +32,7 @@ EX: go run . --reverse=<fileName>
 
 ##### Try passing to the reverse flag `"--reverse=example03.txt"` the [example 03](example.md).
 
-`(somthing&234)`
+`something&234`
 
 ###### Does it display the value above?
 
