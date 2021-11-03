@@ -3,11 +3,11 @@
 ### Instructions
 
 Create a `diamon` function that takes a string and a number as parameters
-and return a diamon shape constructed by 2 arguments:
+and returns a diamond shape constructed by 2 arguments:
  - the characters (as a string) to be repeated
  - the size of a side (as a number)
 
-Just like pyramid + a reversed pyramid
+It is just like pyramid + a reversed pyramid
 
 ### Output example
 
