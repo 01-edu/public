@@ -2,7 +2,7 @@
 
 ### Instruction
 
-Declare an `giveBack` function an argument and return a new function that when
+Declare a `giveBack` function which takes an argument and returns a new function that when
 called will return the argument of the `giveBack` function
 
 ### Usage
