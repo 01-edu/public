@@ -50,7 +50,7 @@ EX: go run . --reverse=<fileName>
 
 ##### Try passing to the reverse flag `"--reverse=example06.txt"` the [example 06](example.md).
 
-`:;<=>?@`
+`:;{=}?@`
 
 ###### Does it display the value above?
 
