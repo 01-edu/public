@@ -84,7 +84,7 @@
 
 ###### +Does the event system run as asynchronous? (usage of go routines and channels)
 
-###### +Is the site hosted or deployed? Can you access the website through a DNS (Domain Name System)?
+###### +Is the site hosted/deployed? Can you access the website through a DNS (Domain Name System)?
 
 #### Basic
 
