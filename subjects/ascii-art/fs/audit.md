@@ -175,7 +175,7 @@ o-O-o  o    o-o         o   o   o-o o   o  o | o  o o--O $
 
 ###### +Does the project runs quickly and effectively (Favoring of recursive, no unnecessary data requests, etc.)?
 
-###### +Is the output of the program well structured? Does any letter seems to be out of line?
+###### +Is the output of the program well structured? The characters are correctly in line?
 
 ###### +Is there a test file for this code?
 
