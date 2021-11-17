@@ -28,11 +28,7 @@
 
 ##### Try to search for the artist/band `"queen"`.
 
-###### Does it handle the case sensitive and does not display any result?
-
-##### Try to search for the artist/band `"Queen"`.
-
-###### Does it handle the case sensitive and presents as result "Queen" and "Queensland"?
+###### Does it handle the case-insensitive and presents as result "Queen" and "Queensland"?
 
 ##### Try to search for the first album date `"05-08-1967"`.
 
