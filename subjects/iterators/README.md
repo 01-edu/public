@@ -2,43 +2,47 @@
 
 ### Instructions
 
-Create a method `new` that takes one number `usize` and initializes the `Number` struct.
-This method will have to determinate if the given number is even or odd.
+The Collatz Conjecture or 3x+1 problem can be summarized as follows:
 
-After that you will implement an iterator for the struct `Number` that returns a tuple (usize,usize,usize) containing each field of the struct Number.
+Take any positive integer `n`.
 
-The first position of the tuple will have the even numbers, the second will have the odd numbers, and the third will have the factorial numbers.
+- If `n` is even, you will divide `n` by 2 to get `n / 2`.
+- If `n` is odd, you will multiply `n` by 3 and add 1 to get `3n + 1`.
 
-That being said, You will have to follow this rules:
+Repeat the process indefinitely. The conjecture states that no matter which number you start with, you will always reach 1 eventually.
 
-- If the number is even you will have to calculate the factorial of the next odd number.
-- If the number is odd you will have to calculate the factorial of the next even number.
-- The tupple has to return all the numbers in the right positions.
+But sometimes the number grow significantly before it reaches 1. This can lead to an integer overflow and makes the algorithm unsolvable within the range of a number in u64. You will not have to worry about that in this exercise.
 
-Example:
+Given a number `n`, return the number of steps required to reach 1.
 
-If `a = 5`, 5 is odd, the next even is 6, so the factorial of 6 is 720. Your program will return the following:
+Examples:
 
-```console
-Some((6, 5, 720))
-```
+Starting with n = 12, the steps would be as follows:
+
+0- 16
+1- 8
+2- 4
+3- 2
+4- 1
+
+Resulting in 4 steps. So for input n = 16, the return value would be 4.
 
 ### Notions
 
 - [Trait Iterator](https://doc.rust-lang.org/std/iter/trait.Iterator.html)
+- [Collatz Conjecture](https://pt.wikipedia.org/wiki/Conjectura_de_Collatz)
 
 ### Expected functions
 
 ```rust
-impl Number {
-    pub fn new(nbr: usize) -> Number {
 
+struct Collatz {
+    v: u64,
     }
-}
 
-impl Iterator for Number {
-    pub fn next(&mut self) -> Option<Self::Item> {}
-}
+impl Iterator for Collatz {}
+
+pub fn collatz(n: u64) -> Option<u64> {}
 ```
 
 ### Usage
@@ -48,19 +52,12 @@ Here is a program to test your function.
 ```rust
 use iterators::*;
 
-struct Number {
-    even: usize,
-    odd: usize,
-    fact: usize,
-}
-
 fn main() {
-    let mut a = Number::new(4);
-    println!("{:?}", a.next());
-    println!("{:?}", a.next());
-    println!("{:?}", a.next());
-    println!("{:?}", b.next());
-    println!("{:?}", b.next());
+    println!("{:?}", collatz(4));
+    println!("{:?}", collatz(5));
+    println!("{:?}", collatz(6));
+    println!("{:?}", collatz(7));
+    println!("{:?}", collatz(12));
 }
 ```
 
@@ -68,10 +65,10 @@ And its output:
 
 ```console
 $ cargo run
-Some((6, 5, 720))
-Some((6, 7, 5040))
-Some((8, 7, 40320))
-Some((8, 9, 362880))
-Some((10, 9, 3628800))
+Some(2)
+Some(5)
+Some(8)
+Some(16)
+Some(9)
 $
 ```
