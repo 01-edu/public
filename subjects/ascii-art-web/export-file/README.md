@@ -13,6 +13,7 @@ Ascii-art-web-export consists on making sure that it is possible to export the o
 
 - The web server must export at least in one export format.
 - The web server must be created in **Go**.
+- The web site must include a button or a link to download/export the file.
 - You must handle website errors.
 - The code must respect the [good practices](../../good-practices/README.md).
 
