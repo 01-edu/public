@@ -17,7 +17,7 @@ Given a number `n`, return the number of steps required to reach 1.
 
 Examples:
 
-Starting with n = 12, the steps would be as follows:
+Starting with n = 16, the steps would be as follows:
 
 0- 16
 1- 8
