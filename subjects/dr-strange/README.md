@@ -43,7 +43,7 @@ addWeek(new Date('0001-01-07')) // Output: Sunday
 addWeek(new Date('0001-01-08')) // Output: secondMonday
 addWeek(new Date('0001-01-09')) // Output: secondTuesday
 
-timeTravel({ date, hour, minute, second })
+// timeTravel({ date, hour, minute, second })
 
 timeTravel({
   date: new Date('2020-05-29 23:25:22'),
