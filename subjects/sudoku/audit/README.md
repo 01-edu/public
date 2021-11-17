@@ -1,6 +1,6 @@
 #### Sudoku
 
-##### Try running the program with the arguments: `"".96.4...1" "1...6...4" "5.481.39." "..795..43" ".3..8...." "4.5.23.18" ".1.63..59" ".59.7.83." "..359...7""`
+##### Try running the program with the arguments: `".96.4...1" "1...6...4" "5.481.39." "..795..43" ".3..8...." "4.5.23.18" ".1.63..59" ".59.7.83." "..359...7"`
 
 ```
 3 9 6 2 4 5 7 8 1
@@ -16,7 +16,7 @@
 
 ###### Does the program returns the value above?
 
-##### Try running the program with the arguments: `""1.58.2..." ".9..764.5" "2..4..819" ".19..73.6" "762.83.9." "....61.5." "..76...3." "43..2.5.1" "6..3.89..""`
+##### Try running the program with the arguments: `"1.58.2..." ".9..764.5" "2..4..819" ".19..73.6" "762.83.9." "....61.5." "..76...3." "43..2.5.1" "6..3.89.."`
 
 ```
 1 4 5 8 9 2 6 7 3
@@ -48,7 +48,7 @@
 
 ###### Does the program returns the value above?
 
-##### Try running the program with the arguments: `""34.91..2." ".96.8..41" "..8.2..7." ".6..57.39" "1.2.6.7.." "97..3..64" "45.2.8..6" ".8..9..5." "6.3..189.""`
+##### Try running the program with the arguments: `"34.91..2." ".96.8..41" "..8.2..7." ".6..57.39" "1.2.6.7.." "97..3..64" "45.2.8..6" ".8..9..5." "6.3..189."`
 
 ```
 3 4 7 9 1 5 6 2 8
@@ -64,7 +64,7 @@
 
 ###### Does the program returns the value above?
 
-##### Try running the program with the arguments: `""..73..4.5" "....2.9.." "253.6487." ".9.74.36." "....3..8." "8362.9.47" "1..8.26.3" "6......18" ".8261...4""`
+##### Try running the program with the arguments: `"..73..4.5" "....2.9.." "253.6487." ".9.74.36." "....3..8." "8362.9.47" "1..8.26.3" "6......18" ".8261...4"`
 
 ```
 9 6 7 3 8 1 4 2 5
@@ -80,7 +80,7 @@
 
 ###### Does the program returns the value above?
 
-##### Try running the program with the arguments: `""935..7..8" "...3.8.7." "6..5..49." ".73..4..." "4..175.8." ".618..247" ".187....." "..6.8.75." "75.4.3862""`
+##### Try running the program with the arguments: `"935..7..8" "...3.8.7." "6..5..49." ".73..4..." "4..175.8." ".618..247" ".187....." "..6.8.75." "75.4.3862"`
 
 ```
 9 3 5 6 4 7 1 2 8
@@ -96,7 +96,7 @@
 
 ###### Does the program returns the value above?
 
-##### Try running the program with the arguments: `""..5.2...1" ".8735..46" "4...6.5.." ".5.9....." ".7..3541." "69314.857" "7415..6.8" "...284..5" "5.....3.4""`
+##### Try running the program with the arguments: `"..5.2...1" ".8735..46" "4...6.5.." ".5.9....." ".7..3541." "69314.857" "7415..6.8" "...284..5" "5.....3.4"`
 
 ```
 3 6 5 4 2 9 7 8 1
@@ -112,7 +112,7 @@
 
 ###### Does the program returns the value above?
 
-##### Try running the program with the arguments: `""..75...3." "8..23...9" ".3479.86." "..3..4198" ".4815...3" "..6.23..7" "351.6.78." "4..31...6" ".7...5..2""`
+##### Try running the program with the arguments: `"..75...3." "8..23...9" ".3479.86." "..3..4198" ".4815...3" "..6.23..7" "351.6.78." "4..31...6" ".7...5..2"`
 
 ```
 9 6 7 5 4 8 2 3 1
@@ -128,7 +128,7 @@
 
 ###### Does the program returns the value above?
 
-##### Try running the program with the arguments: `"".58..4.21" ".6.853..7" ".39.2...5" "8....1..6" "..37..21." "1.6.825.." "67.2..18." "9..4...5." ".8.9167.2""`
+##### Try running the program with the arguments: `"427....36" "..16..9.7" ".69..72.5" "3.4.7.1.." "..69.8..." "97.451.2." "1..5...78" "74.8..5.." "685....9."`
 
 ```
 4 2 7 1 9 5 8 3 6
@@ -144,7 +144,7 @@
 
 ###### Does the program returns the value above?
 
-##### Try running the program with the arguments: `"".58..4.21" ".6.853..7" ".39.2...5" "8....1..6" "..37..21." "1.6.825.." "67.2..18." "9..4...5." ".8.9167.2""`
+##### Try running the program with the arguments: `".58..4.21" ".6.853..7" ".39.2...5" "8....1..6" "..37..21." "1.6.825.." "67.2..18." "9..4...5." ".8.9167.2"`
 
 ```
 7 5 8 6 9 4 3 2 1
@@ -160,7 +160,7 @@
 
 ###### Does the program returns the value above?
 
-##### Try running the program with the arguments: `"".2.1....6" "53..8294." "8..34...5" "3542761.." "..6.3...4" "9....162." ".9...3.78" "7438.9..." "..5..43.1""`
+##### Try running the program with the arguments: `".2.1....6" "53..8294." "8..34...5" "3542761.." "..6.3...4" "9....162." ".9...3.78" "7438.9..." "..5..43.1"`
 
 ```
 4 2 7 1 9 5 8 3 6
@@ -176,7 +176,7 @@
 
 ###### Does the program returns the value above?
 
-##### Try running the program with the arguments: `"".932..8." "27.3.85.." ".8.73.254" "9758...31" "....74.6." "6.45.38.7" "7....2.48" "32.4...7." "..8.579..""`
+##### Try running the program with the arguments: `".932..8." "27.3.85.." ".8.73.254" "9758...31" "....74.6." "6.45.38.7" "7....2.48" "32.4...7." "..8.579.."`
 
 ```
 Error
@@ -184,7 +184,7 @@ Error
 
 ###### Does the program returns the value above?
 
-##### Try running the program with the arguments: `"".867.2..4" ".2.5..8.." "154.9.237" ".7.9.5..1" ".29..4.18" "51.6...42" "2.5.7..83" "...153..." "39...8.75""`
+##### Try running the program with the arguments: `".867.2..4" ".2.5..8.." "154.9.237" ".7.9.5..1" ".29..4.18" "51.6...42" "2.5.7..83" "...153..." "39...8.75"`
 
 ```
 Error
@@ -192,7 +192,7 @@ Error
 
 ###### Does the program returns the value above?
 
-##### Try running the program with the arguments: `"".7....28." ".2...6.57" "8654729.." "..925..64" ".4..19.7." "7.8..4..9" "3..7..698" "..79.1..." "59..28.39""`
+##### Try running the program with the arguments: `".7....28." ".2...6.57" "8654729.." "..925..64" ".4..19.7." "7.8..4..9" "3..7..698" "..79.1..." "59..28.39"`
 
 ```
 Error
@@ -200,7 +200,7 @@ Error
 
 ###### Does the program returns the value above?
 
-##### Try running the program with the arguments: `""..213.748" "8.4.....2" ".178.26.." ".68.9.27." ".932....4" "5..46.3.." "..9.24.23" "..63..19." "385..1.2.""`
+##### Try running the program with the arguments: `"..213.748" "8.4.....2" ".178.26.." ".68.9.27." ".932....4" "5..46.3.." "..9.24.23" "..63..19." "385..1.2."`
 
 ```
 Error
@@ -208,7 +208,7 @@ Error
 
 ###### Does the program returns the value above?
 
-##### Try running the program with the arguments: `""9.46.3..1" "37.1..2.6" "..6..93.4" "..13..9.5" "56..91..." "82...461." "..79...4." "425.167.." "1.2..75.8""`
+##### Try running the program with the arguments: `"9.46.3..1" "37.1..2.6" "..6..93.4" "..13..9.5" "56..91..." "82...461." "..79...4." "425.167.." "1.2..75.8"`
 
 ```
 Error
@@ -216,7 +216,7 @@ Error
 
 ###### Does the program returns the value above?
 
-##### Try running the program with the arguments: `""not" "a" "sudoku""`
+##### Try running the program with the arguments: `"not" "a" "sudoku"`
 
 ```
 Error
@@ -224,7 +224,7 @@ Error
 
 ###### Does the program returns the value above?
 
-##### Try running the program with the arguments: `""53..8294." "8..34...5" "3542761.." "..6.3...4" "9....162." ".9...3.78" "7438.9..." "..5..43.1""`
+##### Try running the program with the arguments: `"53..8294." "8..34...5" "3542761.." "..6.3...4" "9....162." ".9...3.78" "7438.9..." "..5..43.1"`
 
 ```
 Error
