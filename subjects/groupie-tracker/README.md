@@ -14,8 +14,6 @@ Groupie Trackers consists on receiving a given API and manipulate the data conta
 
   - And the last one, `relation`, does the link between all the other parts, `artists`, `dates` and `locations`.
 
-- You must use at least the `artists` and the `relation` parts given in the API.
-
 - Given all this you should build a user friendly website where you can display the bands info through several data visualizations (examples : blocks, cards, tables, list, pages, graphics, etc). It is up to you to decide which info you will present and how you will display it.
 
 - This project also focuses on the creation of events and on their visualization.
@@ -25,6 +23,8 @@ Groupie Trackers consists on receiving a given API and manipulate the data conta
 ### Instructions
 
 - The backend must be written in **Go**.
+- The site and server cannot crash at any time.
+- All pages must work correctly and you musttake care of any errors. 
 - The code must respect the [**good practices**](../good-practices/README.md).
 - It is recommended that the code should present a **test file**.
 
