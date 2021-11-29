@@ -56,5 +56,4 @@ As Rick's robot, you now know your purpose. (Remember ? `'You pass butter.'`)
 
 Define the function `passButter` that returns the string `'The butter'`.
 
-![robot](https://media.discordapp.net/attachments/489466992286498816/828181031991377930/butter-disapointed.png
-?width=717&height=241)
+![robot](https://media.discordapp.net/attachments/489466992286498816/828181031991377930/butter-disapointed.png?width=717&height=241)
