@@ -24,7 +24,7 @@
 
 ###### Can that log file be used by the checker program?
 
-##### Try to run the stock exchange program with the [simple](../examples/simple/simple) example, `"./stock examples/simple/simple 1"`.
+##### Try to run the stock exchange program with the [simple](https://github.com/01-edu/public/blob/master/subjects/stock-exchange-sim/examples/simple/simple) example, `"./stock examples/simple/simple 1"`.
 
 ```console
 $ go run . examples/simple/simple 1
@@ -43,7 +43,7 @@ $
 
 ###### Does the display present a result similar to the one above (optimizing time;client_content)?
 
-##### Try to run the stock exchange program with the [build](../examples/build/build) example, `"./stock examples/build/build 10"`.
+##### Try to run the stock exchange program with the [build](https://github.com/01-edu/public/blob/master/subjects/stock-exchange-sim/examples/build/build) example, `"./stock examples/build/build 10"`.
 
 ```console
 $ go run . examples/build/build 10
@@ -67,7 +67,7 @@ $
 
 ###### Does the display present a result similar to the one above (optimizing time;cabinet)?
 
-##### Try to run the stock exchange program with the [seller](../examples/seller/seller) example, `"./stock examples/seller/seller 10"`.
+##### Try to run the stock exchange program with the [seller](https://github.com/01-edu/public/blob/master/subjects/stock-exchange-sim/examples/seller/seller) example, `"./stock examples/seller/seller 10"`.
 
 ```console
 $ go run . examples/seller/seller 10
@@ -100,7 +100,7 @@ $
 
 ###### Does the display present a result similar to the one above (optimizing euro)?
 
-##### Try to run the stock exchange program with the [fertilizer](../examples/fertilizer/fertilizer) example, `"./stock examples/fertilizer/fertilizer 1"`.(fertilizer example is self-powered and rotates indefinitely)
+##### Try to run the stock exchange program with the [fertilizer](https://github.com/01-edu/public/blob/master/subjects/stock-exchange-sim/examples/fertilizer/fertilizer) example, `"./stock examples/fertilizer/fertilizer 1"`.(fertilizer example is self-powered and rotates indefinitely)
 
 ```console
 $ go run . examples/fertilizer/fertilizer 1
@@ -130,7 +130,7 @@ $
 
 ###### Does the display present a result with a significantly shorter number of cycles comparing to the previous question output?
 
-##### Try to run the stock exchange program with the [error1](../examples/errors/error1) example, `"./stock examples/errors/error1 1"`.
+##### Try to run the stock exchange program with the [error1](https://github.com/01-edu/public/blob/master/subjects/stock-exchange-sim/examples/errors/error1) example, `"./stock examples/errors/error1 1"`.
 
 ```console
 $ go run . examples/errors/error1 1
@@ -141,7 +141,7 @@ $
 
 ###### Does the display present a result similar to the one above, where it shows the error?
 
-##### Try to run the stock exchange program with the [error2](../examples/errors/error2) example, `"./stock examples/errors/error2 1"`.
+##### Try to run the stock exchange program with the [error2](https://github.com/01-edu/public/blob/master/subjects/stock-exchange-sim/examples/errors/error2) example, `"./stock examples/errors/error2 1"`.
 
 ```console
 $ go run . examples/errors/error2 1
@@ -152,7 +152,7 @@ $
 
 ###### Does the display present a result similar to the one above, where it shows the error?
 
-##### Try to run the stock exchange program with the [error3](../examples/errors/error3) example, `"./stock examples/errors/error3 1"`.
+##### Try to run the stock exchange program with the [error3](https://github.com/01-edu/public/blob/master/subjects/stock-exchange-sim/examples/errors/error3) example, `"./stock examples/errors/error3 1"`.
 
 ```console
 $ go run . examples/errors/error3 1
@@ -163,7 +163,7 @@ $
 
 ###### Does the display present a result similar to the one above, where it shows the error?
 
-##### Try to run the checker program with the [build](../examples/build/build) and the [build.log](../examples/build/build.log) example, `"./checker examples/build/build examples/build/build.log"`.
+##### Try to run the checker program with the [build](https://github.com/01-edu/public/blob/master/subjects/stock-exchange-sim/examples/build/build) and the [build.log](https://github.com/01-edu/public/blob/master/subjects/stock-exchange-sim/examples/build/build.log) example, `"./checker examples/build/build examples/build/build.log"`.
 
 ```console
 $ go run ./checker examples/build/build examples/build/build.log
@@ -180,7 +180,7 @@ $
 
 ###### Does the display present a result similar to the one above, where it shows the last cycle and the proof that the sequence is correct?
 
-##### Try to run the checker program with the [seller](../examples/seller/seller) and the [seller.log](../examples/seller/seller.log)example, `"./checker examples/seller/seller examples/seller/seller.log"`.
+##### Try to run the checker program with the [seller](https://github.com/01-edu/public/blob/master/subjects/stock-exchange-sim/examples/seller/seller) and the [seller.log](https://github.com/01-edu/public/blob/master/subjects/stock-exchange-sim/examples/seller/seller.log)example, `"./checker examples/seller/seller examples/seller/seller.log"`.
 
 ```console
 $ go run ./checker examples/seller/seller examples/seller/seller.log
@@ -206,7 +206,7 @@ $
 
 ###### Does the display present a result similar to the one above, where it shows the last cycle and the proof that the sequence is correct?
 
-##### Try to run the checker program with the [testchecker](../examples/checkererror/testchecker) and [testchecker.log](../examples/checkererror/testchecker.log) example, `"./checker examples/checkererror/testchecker examples/checkererror/testchecker.log"`.
+##### Try to run the checker program with the [testchecker](https://github.com/01-edu/public/blob/master/subjects/stock-exchange-sim/examples/checkererror/testchecker) and [testchecker.log](https://github.com/01-edu/public/blob/master/subjects/stock-exchange-sim/examples/checkererror/testchecker.log) example, `"./checker examples/checkererror/testchecker examples/checkererror/testchecker.log"`.
 
 ```console
 $ go run ./checker examples/checkererror/testchecker examples/checkererror/testchecker.log
