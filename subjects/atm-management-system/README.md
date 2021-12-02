@@ -33,7 +33,6 @@ A folder which you can find [here](https://assets.01-edu.org/atm-system/atm-syst
 │   ├── records.txt
 │   └── users.txt
 ├── Makefile
-├── README.md
 └── src
     ├── auth.c
     ├── header.h
@@ -56,7 +55,7 @@ Michel password1234
 ....
 ```
 
-`records.txt` (user name, account id, date of creation, country, phone nº, type of account) :
+`records.txt` (user name, account id, date of creation, country, phone nº, balance, type of account) :
 
 ```console
 Alice 0 10/02/2020 german 986134231 11090830.00 current
