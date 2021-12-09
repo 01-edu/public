@@ -1,49 +1,32 @@
----
-name: Bug report
-about: Create a report to help us improve
-title: "[INSCRIPTION FORM] - input type date doesn't appear in safari"
-labels: ""
-assignees: ""
----
+### Environment
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+Device (web, mobile): 
 
-**To Reproduce**
-Steps to reproduce the behavior:
+Operating system (Windows, macOS, Linux): 
 
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+Browser (Chrome, Firefox, Safari, Brave): 
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+### Steps to reproduce the issue = what action results in the issue
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+URL of the page: 
 
-**Desktop (please complete the following information):**
+Steps to follow: 
 
-- OS: [e.g. iOS]
-- Browser [e.g. chrome, safari]
-- Version [e.g. 22]
+1. 
+2. 
 
-**Smartphone (please complete the following information):**
+Usernames of students that are affected by the issue: 
 
-- Device: [e.g. iPhone6]
-- OS: [e.g. iOS8.1]
-- Browser [e.g. stock browser, safari]
-- Version [e.g. 22]
+### Expected Result = How the software should have performed
 
-**Additional context**
-Add any other context about the problem here.
+What was the expected outcome of the action taken in `step 3` ? 
 
-**Type**
-Add the correct label to your bug report : blocking, major, minor
+### Actual Result = How the software actually performed
 
-**Priority**
-Add the correct label to your bug report : high, normal, low
+Actual outcome of the action taken in `step 3`  
 
-**Subject**
-Add the correct labels to your bug report : onboarding, toad, admin, intra, design
+Error message that appears (if applicable) 
+
+### Visual Proof
+
+Screenshots & Videos (using [Loom](https://chrome.google.com/webstore/detail/loom-for-chrome/liecbddmkiiihnedobmlmillhodjkdmb))
