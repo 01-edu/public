@@ -276,7 +276,7 @@ __       _   _ _           _  _      _    _   __           _    __ __       _   
 
 ###### +Are the tests checking each possible case?
 
-###### +Is the output of the program well structured? The characters are correctly in line?
+###### +Is the output of the program well structured? Are the characters are correctly in line?
 
 #### Social
 

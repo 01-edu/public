@@ -72,7 +72,7 @@ EX: go run . something --color=<color>
 
 ###### +Does the project run quickly and effectively (favoring of recursive, no unnecessary data requests, etc.)?
 
-###### +Is the output of the program well structured? The characters are correctly in line?
+###### +Is the output of the program well structured? Are the characters are correctly in line?
 
 ###### +Is there a test file for this code?
 

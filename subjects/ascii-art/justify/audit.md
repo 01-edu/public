@@ -82,7 +82,7 @@ EX: go run . something standard --align=right
 
 ###### +Does the project runs quickly and effectively (Favoring of recursive, no unnecessary data requests, etc.)?
 
-###### +Is the output of the program well structured? The characters are correctly in line?
+###### +Is the output of the program well structured? Are the characters are correctly in line?
 
 ###### +Is there a test file for this code?
 
