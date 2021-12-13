@@ -33,7 +33,7 @@ Instructions for user registration:
   - When the email is already taken return an error response.
 - Must ask for username
 - Must ask for password
-  - The password must be encrypted when stored
+  - The password must be encrypted when stored (this is a Bonus task)
 
 The forum must be able to check if the email provided is present in the database and if all credentials are correct. It will check if the password is the same with the one provided and, if the password is not the same, it will return an error response.
 
@@ -75,7 +75,7 @@ For the forum project you must use Docker. You can read about docker basics in t
 - You must handle website errors, HTTP status.
 - You must handle all sort of technical errors.
 - The code must respect the [**good practices**](../good-practices/README.md).
-- It is recommended that the code should present a **test file**.
+- It is recommended to have **test files** for [unit testing](https://go.dev/doc/tutorial/add-a-test).
 
 ### Allowed packages
 

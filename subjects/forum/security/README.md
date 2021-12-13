@@ -10,13 +10,18 @@ For this project you must take into account the security of your forum.
 
   - Encrypted connection : for this you will have to generate an SSL certificate, you can think of this like a identity card for your website. You can create your certificates or use "Certificate Authorities"(CA's)
 
-- Clients session cookies should be unique. For instance, the session state is stored on the server and the session should present an unique identifier. This way the client has no direct access to it. Therefore, there is no way for attackers to read or tamper with session state.
+  - We recommend you to take a look into [cipher suites](https://en.wikipedia.org/wiki/Cipher_suite).
+
 
 - The implementation of [Rate Limiting](https://en.wikipedia.org/wiki/Rate_limiting) must be present on this project
 
 - You should encrypt :
-  - Clients passwords
+  - Clients passwords.
   - Database, for this you will have to create a password for your database.
+
+Sessions and cookies were implemented in the [previous project](../README.md) but not under-pressure (tested in an attack environment). So this time you must take this into account.
+
+- Clients session cookies should be unique. For instance, the session state is stored on the server and the session should present an unique identifier. This way the client has no direct access to it. Therefore, there is no way for attackers to read or tamper with session state.
 
 ### Hints
 
@@ -28,7 +33,7 @@ For this project you must take into account the security of your forum.
 - You must handle website errors, HTTPS status.
 - You must handle all sort of technical errors.
 - The code must respect the [**good practices**](../../good-practices/README.md).
-- It is recommended that the code should present a **test file**.
+- It is recommended to have **test files** for [unit testing](https://go.dev/doc/tutorial/add-a-test).
 
 ### Allowed packages
 
