@@ -13,7 +13,7 @@ You must follow the same [principles](../README.md) as the first subject.
   - filter by number of members
   - filter by locations of concerts
 
-- Your filters must of at least these two types:
+- Your filters must be of at least these two types:
   - a range filter (filters the results between two values)
   - a check box filter (filters the results by one or multiple selection)
 

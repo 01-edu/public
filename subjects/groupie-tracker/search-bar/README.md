@@ -20,7 +20,7 @@ So the focus of this project is to create a way for the client to search a membe
 
 ### Example
 
-Lets imagine you have created a card system to display the band data. The user can be able to search directly for the band he needs. Here is an example:
+Lets imagine you have created a card system to display the band data. The user can directly search for the band he needs. Here is an example:
 
 - While the user is typing for the member he desires to see, the search bar gives the suggestion of all the possible options.
 
