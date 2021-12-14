@@ -8,7 +8,7 @@ You must follow the same [instructions](../README.md) as in the first subject bu
 
 - Your project must be written in **Go**.
 - The code must respect the [**good practices**](../../good-practices/README.md).
-- It is recommended that the code should present a **test file**.
+- It is recommended to have **test files** for [unit testing](https://go.dev/doc/tutorial/add-a-test).
 - You can see all about the **banners** [here](../).
 - The usage must respect this format `go run . [STRING] [BANNER]`, any other formats must return the following usage message:
 

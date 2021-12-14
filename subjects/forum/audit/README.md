@@ -170,6 +170,8 @@ cc8f5dcf760f        <name of the image>    "./server"               6 seconds ag
 
 ###### +Does the project present a script to build the images and containers? (using a script to simplify the build)
 
+###### +Is the password encrypted in the database?
+
 #### Basic
 
 ###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)

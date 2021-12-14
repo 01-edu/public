@@ -39,7 +39,7 @@ You should implement at least 4 types of users :
 - You must handle website errors, HTTPS status.
 - You must handle all sort of technical errors.
 - The code must respect the [**good practices**](../../good-practices/README.md).
-- It is recommended that the code should present a **test file**.
+- It is recommended to have **test files** for [unit testing](https://go.dev/doc/tutorial/add-a-test).
 
 ### Allowed packages
 

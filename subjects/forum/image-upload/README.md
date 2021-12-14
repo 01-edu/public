@@ -21,7 +21,7 @@ The max size of the images to load should be 20 mb. If there is an attempt to lo
 - The backend must be written in **Go**.
 - You must handle website errors.
 - The code must respect the [good practices](../../good-practices/README.md)
-- It is recommended that the code should present a **test file**.
+- It is recommended to have **test files** for [unit testing](https://go.dev/doc/tutorial/add-a-test).
 
 ### Allowed packages
 

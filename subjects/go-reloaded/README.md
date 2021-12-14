@@ -14,7 +14,7 @@ We advise you to create your own tests for yourself and for when you will correc
 
 - Your project must be written in **Go**.
 - The code must respect the [**good practices**](../good-practices/README.md).
-- It is recommended that the code present a **test file**.
+- It is recommended to have **test files** for [unit testing](https://go.dev/doc/tutorial/add-a-test).
 
 The tool you are about to build will receive as arguments the name of a file containing a text that needs some modifications (the input) and the name of the file the modified text should be placed in (the output). Next is a list of possible modifications that your program should execute:
 

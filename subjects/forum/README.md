@@ -25,7 +25,7 @@ To know more about SQLite you can check the [SQLite page](https://www.sqlite.org
 
 In this segment the client must be able to `register` as a new user on the forum, by inputting their credentials. You also have to create a `login session` to access the forum and be able to add posts and comments.
 
-You should use cookies to allow each user to have only one opened session. Each of this sessions must contain an expiration date. It is up to you to decide how long the cookie stays "alive".
+You should use cookies to allow each user to have only one opened session. Each of this sessions must contain an expiration date. It is up to you to decide how long the cookie stays "alive". The use of UUID is a Bonus task.
 
 Instructions for user registration:
 
@@ -33,7 +33,7 @@ Instructions for user registration:
   - When the email is already taken return an error response.
 - Must ask for username
 - Must ask for password
-  - The password must be encrypted when stored
+  - The password must be encrypted when stored (this is a Bonus task)
 
 The forum must be able to check if the email provided is present in the database and if all credentials are correct. It will check if the password is the same with the one provided and, if the password is not the same, it will return an error response.
 
@@ -75,7 +75,7 @@ For the forum project you must use Docker. You can read about docker basics in t
 - You must handle website errors, HTTP status.
 - You must handle all sort of technical errors.
 - The code must respect the [**good practices**](../good-practices/README.md).
-- It is recommended that the code should present a **test file**.
+- It is recommended to have **test files** for [unit testing](https://go.dev/doc/tutorial/add-a-test).
 
 ### Allowed packages
 

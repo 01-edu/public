@@ -26,7 +26,7 @@ Groupie Trackers consists on receiving a given API and manipulate the data conta
 - The site and server cannot crash at any time.
 - All pages must work correctly and you must take care of any errors. 
 - The code must respect the [**good practices**](../good-practices/README.md).
-- It is recommended that the code should present a **test file**.
+- It is recommended to have **test files** for [unit testing](https://go.dev/doc/tutorial/add-a-test).
 
 ### Allowed packages
 

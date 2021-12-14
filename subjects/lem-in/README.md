@@ -94,7 +94,7 @@ Which corresponds to the following representation :
 - The coordinates of the rooms will always be `int`.
 - Your project must be written in **Go**.
 - The code must respect the [**good practices**](../good-practices/README.md).
-- It is recommended that the code should present a **test file**.
+- It is recommended to have **test files** for [unit testing](https://go.dev/doc/tutorial/add-a-test).
 
 ### Allowed packages
 
