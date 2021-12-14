@@ -13,9 +13,15 @@ You must follow the same [principles](../README.md) as the first subject.
   - filter by number of members
   - filter by locations of concerts
 
-- You must use at least these two types of filters:
-  - a range filter
-  - a check box filter
+- Your filters must be of at least these two types:
+  - a range filter (filters the results between two values)
+  - a check box filter (filters the results by one or multiple selection)
+
+### Example
+
+Here is an example of both types of filters:
+
+![image](filters_example.png).
 
 ### Hints
 
