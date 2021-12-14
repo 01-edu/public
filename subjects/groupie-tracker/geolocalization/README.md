@@ -15,7 +15,7 @@ You must follow the same [principles](../README.md) as the first subject.
 - The backend must be written in **Go**
 - You must handle website errors
 - The code must respect the [good practices](../../good-practices/README.md)
-- It is recommended that the code should present a **test file**
+- It is recommended to have **test files** for [unit testing](https://go.dev/doc/tutorial/add-a-test).
 
 ### Allowed packages
 

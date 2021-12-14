@@ -31,7 +31,8 @@ Your project must work in a similar way that the original  NetCat works, in othe
 - Your project must have channels or Mutexes
 - Maximum 10 connections
 - The code must respect the [**good practices**](../good-practices/README.md)
-- It is recommended that the code should present a **test file** for the server connection and the client connection
+- It is recommended to have **test files** for [unit testing](https://go.dev/doc/tutorial/add-a-test) both the server connection and the client.
+
 - You have to be able to handle the errors from server side and client side
 
 ### Allowed Packages

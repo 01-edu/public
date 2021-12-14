@@ -33,7 +33,7 @@ $$@@$$$$$$$$``````````@@$$@@$$$$$$
 
 - Your project must be written in **Go**.
 - The code must respect the [**good practices**](../good-practices/README.md).
-- It is recommended that the code present a **test file**.
+- It is recommended to have **test files** for [unit testing](https://go.dev/doc/tutorial/add-a-test).
 
 - Some **banner** files with a specific graphical template representation using ASCII will be given. The files are formatted in a way that is not necessary to change them.
 
