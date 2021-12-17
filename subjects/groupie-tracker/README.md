@@ -18,7 +18,7 @@ Groupie Trackers consists on receiving a given API and manipulate the data conta
 
 - This project also focuses on the creation of events/actions and on their visualization.
 
-  - The event/action we want you to do is known as a client call to the server ([client-server])(https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Client-Server_overview). We can say it is a feature of your choice that needs to trigger an action. This action must communicate with the server in order to recieve information, ([request-response])(https://en.wikipedia.org/wiki/Request%E2%80%93response)
+  - The event/action we want you to do is known as a client call to the server (client-server). We can say it is a feature of your choice that needs to trigger an action. This action must communicate with the server in order to recieve information, ([request-response])(https://en.wikipedia.org/wiki/Request%E2%80%93response)
   - An event consists in a system that responds to some kind of action triggered by the client, time, or any other factor.
 
 ### Instructions
@@ -43,4 +43,4 @@ This project will help you learn about :
 - [JSON](https://www.json.org/json-en.html) files and format.
 - HTML.
 - Event creation and display.
-  - [Client-server](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Client-Server_overview).
+- [Client-server](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Client-Server_overview).
