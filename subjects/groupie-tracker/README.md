@@ -14,10 +14,11 @@ Groupie Trackers consists on receiving a given API and manipulate the data conta
 
   - And the last one, `relation`, does the link between all the other parts, `artists`, `dates` and `locations`.
 
-- Given all this you should build a user friendly website where you can display the bands info through several data visualizations (examples : blocks, cards, tables, list, pages, graphics, etc). It is up to you to decide which info you will present and how you will display it.
+- Given all this you should build a user friendly website where you can display the bands info through several data visualizations (examples : blocks, cards, tables, list, pages, graphics, etc). It is up to you to decide how you will display it.
 
-- This project also focuses on the creation of events and on their visualization.
+- This project also focuses on the creation of events/actions and on their visualization.
 
+  - The event/action we want you to do is known as a client call to the server (client-server). We can say it is a feature of your choice that needs to trigger an action. This action must communicate with the server in order to recieve information, ([request-response])(https://en.wikipedia.org/wiki/Request%E2%80%93response)
   - An event consists in a system that responds to some kind of action triggered by the client, time, or any other factor.
 
 ### Instructions
@@ -42,4 +43,4 @@ This project will help you learn about :
 - [JSON](https://www.json.org/json-en.html) files and format.
 - HTML.
 - Event creation and display.
-  - [Events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events).
+- [Client-server](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Client-Server_overview).

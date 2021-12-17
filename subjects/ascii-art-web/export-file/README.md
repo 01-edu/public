@@ -30,7 +30,6 @@ As you already learned from the previous project you must create a new HTTP endp
 This project will help you learn about :
 
 - The basics of export formats :
-  - Portable Document Format (pdf)
   - Text File (txt)
   - [Here are some more examples](https://en.wikipedia.org/wiki/Document_file_format)
 - [HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)

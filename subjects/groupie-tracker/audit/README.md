@@ -2,9 +2,13 @@
 
 ###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
-###### Is the data from the artists being used?
+###### Is the data from the `artists` being used?
 
-###### Is data from the relations being used?
+###### Is the data from the `locations` being used?
+
+###### Is the data from the `dates` being used?
+
+###### Is data from the `relations` being used?
 
 ##### Try to see the "members" for the artist/band `"Queen"`
 
@@ -58,9 +62,9 @@
 
 ###### Does it present the right members as above?
 
-##### Try to trigger an event using some kind of action (ex: Clicking the mouse over a certain element, pressing a key on the keyboard, resizing or closing the browser window, a form being submitted, an error occurring, etc).
+##### Try to trigger an event/action using some kind of action (ex: Clicking the mouse over a certain element, pressing a key on the keyboard, resizing or closing the browser window, a form being submitted, an error occurring, etc).
 
-###### Does the event responds as expected?
+###### Does the event/action responds as expected?
 
 ###### Did the server behaved as expected?(did not crashed)
 
@@ -69,8 +73,6 @@
 ###### Did the site run without crashing at any time?
 
 ###### Are all the pages working? (Absence of 404 page?)
-
-###### Does the project handle [HTTP status 400 - Bad Requests](https://kinsta.com/knowledgebase/400-bad-request/#causes)?
 
 ###### Does the project handle [HTTP status 500 - Internal Server Errors](https://www.restapitutorial.com/httpstatuscodes.html)?
 
