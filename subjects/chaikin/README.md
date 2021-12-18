@@ -4,7 +4,7 @@
 
 Implement the [Chaikin's](http://graphics.cs.ucdavis.edu/education/CAGDNotes/Chaikins-Algorithm/Chaikins-Algorithm.html) algorithm step by step in an animation.
 
-The objective is to create a canvas where the user will draw 1 or more and then the screen will play an animation of each step to get to the final result of a curve drawn using the `Chaikin's` algorithm. You can see [here](https://youtu.be/PbB2eKnA2QI) a demo of how the application should work.
+The objective is to create a canvas where the user will draw 1 or more points, and then the screen will play an animation of each step to get to the final result of a curve drawn using the `Chaikin's` algorithm. You can see [here](https://youtu.be/PbB2eKnA2QI) a demo of how the application should work.
 
 - Functionality:
 
@@ -22,4 +22,4 @@ You are free to use any library for creating and handling window creation, rende
 
 - Add the ability to clear the screen and add new control points.
 
-- Make possible to drag the control points in real time.
+- Make it possible to drag the control points in real time.
