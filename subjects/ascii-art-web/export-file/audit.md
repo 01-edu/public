@@ -10,8 +10,6 @@
 
 ###### Are the exported files read and write for the user?
 
-###### Does the site include a link or a button to download the file?
-
 ###### Does the project use the HTTP header [Content-Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) to indicate the media type of the resource?
 
 ###### Does the project use the HTTP header [Content-Length](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Length) to indicate the size of the entity-body, in bytes, sent to the recipient?
