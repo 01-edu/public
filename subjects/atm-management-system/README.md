@@ -114,6 +114,9 @@ You can also do more bonus features or update the terminal interface:
 - Encryption of passwords
 - Adding your own Makefile
 
+A relational database can also be added as a bonus. You can use the database at your choice, but we recommend you do use SQLite
+To know more about SQLite you can check the [SQLite page](https://www.sqlite.org/index.html).
+
 ### Example
 
 You can find an example of the final application [here](https://www.youtube.com/watch?v=xVtikDcGG2E). Do not forget that you are free to

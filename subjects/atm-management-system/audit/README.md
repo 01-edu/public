@@ -88,6 +88,8 @@
 
 ###### +Is the password saved in the file `"users.txt"` encrypted?
 
+###### +Did the student create a relational database? • 6
+
 ###### +Did the student make their own Makefile?
 
 ###### +Did the student add more features to the project?
