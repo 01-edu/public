@@ -20,7 +20,7 @@ AND u.id NOT IN (SELECT "userId" FROM public.progress p WHERE p."userId"=u.id);
 
 ### Toad
 
-The following query returns the users that are currently in the toad process. The information includes user and games info
+The following query returns the users that are currently in the toad process. The information includes user and games information.
 
 ```sql
 -- query for **TOAD**
@@ -55,7 +55,7 @@ ORDER BY r.attrs ->> 'score' ASC;
 
 ### Administration
 
-The following query returns the users currently in the administration process. All information about the user, the number of attempts and current phase.
+The following query returns the users currently in the administration process. This includes all information about the user, the number of attempts and current phase.
 
 ```sql
 -- query for **administration**
@@ -102,7 +102,7 @@ GROUP BY u.id, r.attrs;
 
 ### xp per user per activity
 
-The following query returns the amount of xp per user and per activity
+The following query returns the amount of xp per user and per activity.
 
 ```sql
 WITH xp_user AS (
@@ -127,7 +127,7 @@ LEFT JOIN public.event e ON e.id=xu."eventParentId";
 
 ### user per xp
 
-The following query returns the amount of xp per user
+The following query returns the amount of xp per user.
 
 ```sql
 -- user per xp
@@ -154,7 +154,7 @@ ORDER BY xp.amount DESC;
 
 ### group status
 
-The following query returns the groups status per captain
+The following query returns the groups status per captain.
 
 ```sql
 -- group status
@@ -169,7 +169,7 @@ ORDER BY u."githubLogin" ASC;
 
 ### group progresses
 
-The following query returns the progress per group
+The following query returns the progress per group.
 
 ```sql
 -- group progresses
