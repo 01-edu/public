@@ -19,7 +19,7 @@ You will be provided with an ATM management system where users can do the follow
 - Check list of owned accounts
 - Make transactions
 
-> The application provided will just handle the **login**, the **creation of new accounts** and **checking the list of owned accounts**. The rest of the features must
+> The application provided will just handle the **login**, the **creation of new accounts** and **checking the list of owned accounts** but you can optimise and refactor the code. The rest of the features must
 > be implemented by yourself.
 
 ### File System
@@ -47,20 +47,20 @@ The `data` folder presented above will contain information about the users and t
 
 The format for the content saved in the file will be displayed like this :
 
-`users.txt` (name, password):
+`users.txt` (id, name, password):
 
 ```console
-Alice 1234password
-Michel password1234
+0 Alice 1234password
+1 Michel password1234
 ....
 ```
 
-`records.txt` (user name, account id, date of creation, country, phone nº, balance, type of account) :
+`records.txt` (id, user_id, user name, account id, date of creation, country, phone nº, balance, type of account) :
 
 ```console
-Alice 0 10/02/2020 german 986134231 11090830.00 current
-Michel 2 10/10/2021 portugal 914134431 1920.42 savings
-Alice 1 10/10/2000 finland 986134231 1234.21 savings
+0 0 Alice 0 10/02/2020 german 986134231 11090830.00 current
+1 1 Michel 2 10/10/2021 portugal 914134431 1920.42 savings
+2 0 Alice 1 10/10/2000 finland 986134231 1234.21 savings
 ....
 ```
 
