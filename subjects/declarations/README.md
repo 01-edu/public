@@ -11,7 +11,7 @@ Create the following constant variables:
   - `num` for `Number`
   - `bool` for `Boolean`
   - `undef` for `undefined`
-- `nested` that contains
+- A `nested` object that contains
   - arr: an array of the 3 values: 4, undefined, '2'
   - obj: an object with 3 property (str, num & bool)
 
