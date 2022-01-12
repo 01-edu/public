@@ -18,7 +18,7 @@ You are not allowed to use `Math.abs`, make your own.
 
 ### Code provided
 
-> all code provided will be added to your solution and doesn't need to be submited.
+> all code provided will be added to your solution and does not need to be submited.
 
 ```js
 Math.abs = undefined
