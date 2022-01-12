@@ -13,7 +13,7 @@ Create 4 regular expression in variables:
   only when it is in the end.
 
 - `beginEnd` matches with the expression 'hi',
-  only when it is in the beginning and the end.
+  only when it is exactly hi.
 
 ### Notions
 
