@@ -43,13 +43,13 @@ t(() => isBefore(new Date('2157-11-07'), new Date('2183-04-16')))
 t(() => !invalid(isFuture))
 t(() => !isFuture(new Date('1992-01-01')))
 t(() => !isFuture(new Date(Date.now() - 1)))
-t(() => isFuture(new Date(2021, 11, 31)))
+t(() => isFuture(new Date(2077, 11, 31)))
 t(() => isFuture(new Date(Date.now() + 1)))
 
 // isPast
 t(() => !invalid(isPast))
 t(() => !isPast(new Date(Date.now() + 1)))
-t(() => !isPast(new Date(2021, 11, 31)))
+t(() => !isPast(new Date(2077, 11, 31)))
 t(() => isPast(new Date(1442, 11, 31)))
 t(() => isPast(new Date(Date.now() - 1)))
 
