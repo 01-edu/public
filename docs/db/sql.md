@@ -1,6 +1,31 @@
-## Example of SQL queries
+## Introduction
 
-### sign up
+This documentation is a quickstart guide for the use of metabase in a school server.
+
+Pre-requisites:
+
+- An access account given by your administrator.
+- A basic knowledge of SQL
+
+### Where to enter your SQL queries
+
+The path to metabase is {DOMAIN}/metabase
+
+After loggin with valid credentials this is where you land,
+In the bottom section `OUR DATA`
+
+- Click on the `metabase` database.
+
+- A folder `public` should appear among others. Click on it.
+
+At this point you can see all tables of the public sql database
+To execute a query, simply click on the top right button `write SQL`
+
+Following are examples of SQL queries to help you get you started.
+
+## Examples of SQL queries
+
+### Sign up
 
 The following query returns the users that are currently in the sign up process.
 
@@ -106,7 +131,7 @@ The following query returns the amount of xp per user and per activity.
 
 ```sql
 WITH xp_user AS (
-    SELECT 
+    SELECT
         u."githubLogin",
         xp.amount,
         xp.path,
