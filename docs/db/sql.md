@@ -5,21 +5,21 @@ This documentation is a quickstart guide for the use of metabase in a school ser
 Pre-requisites:
 
 - An access account given by your administrator.
-- A basic knowledge of SQL
+- A basic knowledge of SQL.
 
 ### Where to enter your SQL queries
 
-The path to metabase is {DOMAIN}/metabase
+The path to metabase is `{DOMAIN}/metabase` .
 
 After loggin with valid credentials this is where you land,
-In the bottom section `OUR DATA`
+In the bottom section `OUR DATA`.
 
 - Click on the `metabase` database.
 
 - A folder `public` should appear among others. Click on it.
 
-At this point you can see all tables of the public sql database
-To execute a query, simply click on the top right button `write SQL`
+At this point you can see all tables of the public sql database.
+To execute a query, simply click on the top right button `write SQL`.
 
 Following are examples of SQL queries to help you get you started.
 
@@ -49,8 +49,6 @@ The following query returns the users that are currently in the toad process. Th
 
 ```sql
 -- query for **TOAD**
--- With g AS (SELECT r.attrs ->> 'games' as games, r."userId" FROM public.result r)
--- SELECT * FROM json_array_elements(g);
 SELECT DISTINCT
     u.id,
     "githubLogin",
@@ -80,7 +78,7 @@ ORDER BY r.attrs ->> 'score' ASC;
 
 ### Administration
 
-The following query returns the users currently in the administration process. This includes all information about the user, the number of attempts and current phase.
+The following query returns the users currently in the administration process. This includes all information about the user, the number of attempts and the current phase.
 
 ```sql
 -- query for **administration**
@@ -125,7 +123,7 @@ AND u.id NOT IN (SELECT "userId" FROM public.user_role)
 GROUP BY u.id, r.attrs;
 ```
 
-### xp per user per activity
+### Xp per user per activity
 
 The following query returns the amount of xp per user and per activity.
 
@@ -150,7 +148,7 @@ FROM xp_user xu
 LEFT JOIN public.event e ON e.id=xu."eventParentId";
 ```
 
-### user per xp
+### Xp per user
 
 The following query returns the amount of xp per user.
 
@@ -177,7 +175,7 @@ WHERE u.id=xp."userId"
 ORDER BY xp.amount DESC;
 ```
 
-### group status
+### Group status per captain
 
 The following query returns the groups status per captain.
 
@@ -192,7 +190,7 @@ WHERE u.id=g."captainId"
 ORDER BY u."githubLogin" ASC;
 ```
 
-### group progresses
+### Group progresses
 
 The following query returns the progress per group.
 
