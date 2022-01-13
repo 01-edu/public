@@ -4,9 +4,9 @@
 
 Create 3 functions:
 
-- `indexOf` that returns the index of the first occurence of a value
-- `lastIndexOf` that returns the index of the last occurence of a value
-- `includes` that returns true if the value was found in the array
+- `indexOf` which returns the index of the first occurence of a value and takes as arguments an array to be searched, the value to be matched, and optionally the index from where to start searching from.
+- `lastIndexOf` which works just like the previous function but returns the index of the last occurence of a value
+- `includes` which returns true if the value was found in the array
 
 > If a value is not found, the returned index is -1
 
