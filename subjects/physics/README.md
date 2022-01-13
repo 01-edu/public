@@ -17,7 +17,7 @@ So he wants to know for an object with :
 
 whats the acceleration of that object.
 Create a function called `getAcceleration` that given an object with the values of `{ f: 10, m: 5, Δv: 100, Δt: 50, t:1, d: 10 }`
-it must calculate the acceleration. If its not possible to calculate it you must return `impossible`
+it must calculate the acceleration. If its not possible to calculate it you must return the string `impossible`
 
 ### Formulas
 
