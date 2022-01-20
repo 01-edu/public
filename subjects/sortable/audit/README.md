@@ -38,6 +38,8 @@
 
 ###### Does the project contains the use of `fetch`?
 
+###### Confirm that no frameworks or librairies where used
+
 #### Bonus
 
 ###### +Can you search for any fields apart from the name?
