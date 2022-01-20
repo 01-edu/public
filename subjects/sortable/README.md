@@ -13,6 +13,10 @@ Anyway, we've found _confidential_ information about those superheroes.
 > data from those smartypants.
 > This information can be found here: [all.json](https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json).
 
+Note that since this mission is using *critical* data, you are not allowed to
+rely on any frameworks or libraries, you have to be the author of every bit
+of code.
+
 #### Fetching the data
 
 In order to get the information out of the API you should use `fetch`.
