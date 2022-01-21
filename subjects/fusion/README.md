@@ -24,16 +24,16 @@ fusion('Salem', 'alem') // -> 'Salem alem'
 fusion(4, 11) // -> 15
 ```
 
-- In case of type mismatch you must replace it with the value of the second object
-
-```js
-fusion({ a: 'hello', b: [] }, { a: 4 })
-// -> { a: 4, b: [] }
-```
-
 - If it is an object you must fusion them recursively
 
 ```js
 fusion({ a: 1, b: { c: 'Salem' } }, { a: 10, x: [], b: { c: 'alem' } })
 // -> { a: 11, x: [], b: { c: 'Salem alem' } }
+```
+
+- In case of type mismatch you must replace it with the value of the second object
+
+```js
+fusion({ a: 'hello', b: [] }, { a: 4 })
+// -> { a: 4, b: [] }
 ```
