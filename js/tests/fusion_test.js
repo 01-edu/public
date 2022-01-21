@@ -65,22 +65,4 @@ t(({ eq }) =>
   )
 )
 
-t(({ eq }) =>
-  // object mutability
-  eq(
-    fusion(Object.freeze({ a: { b: 1 } }), Object.freeze({ a: { b: 2 } })).a.b,
-    3
-  )
-)
-
-// other types
-t(({ eq }) => eq(fusion({ reg: /\w/ }, { reg: /\S/ }).reg, /\S/))
-t(({ eq }) => {
-  const set = new Set([1, 2, 3])
-  return eq(fusion({ a: 1, set: new Set([4, 5, 6]) }, { a: 1, set }), {
-    a: 2,
-    set,
-  })
-})
-
 Object.freeze(tests)

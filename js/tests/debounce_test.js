@@ -67,7 +67,7 @@ t(async ({ eq }) =>
       run(opDebounce(add, 200, { leading: true }), { delay: 70, count: 3 }),
       run(opDebounce(add, 100, { leading: true }), { delay: 140, count: 3 }),
     ]),
-    [1, 2]
+    [1, 3]
   )
 )
 
