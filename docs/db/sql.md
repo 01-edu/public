@@ -1,26 +1,5 @@
 ## Introduction
 
-This documentation is a quickstart guide for the use of metabase in a school server.
-
-Pre-requisites:
-
-- An access account given by your administrator.
-- A basic knowledge of SQL.
-
-### Where to enter your SQL queries
-
-The path to metabase is `{DOMAIN}/metabase` .
-
-After loggin with valid credentials this is where you land,
-In the bottom section `OUR DATA`.
-
-- Click on the `metabase` database.
-
-- A folder `public` should appear among others. Click on it.
-
-At this point you can see all tables of the public sql database.
-To execute a query, simply click on the top right button `write SQL`.
-
 Following are examples of SQL queries to help you get you started.
 
 ## Examples of SQL queries
