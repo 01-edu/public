@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a function called `invert` that inverts the object keys and values.
+Create a function called `invert` that takes an object and returns it with its keys and values inverted.
 
 ### Notions
 
