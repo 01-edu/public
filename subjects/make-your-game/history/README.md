@@ -2,22 +2,22 @@
 
 ### Objectives
 
-You must follow the same [principles](../README.md) as the first subject.
+You must follow the same [principles](../README.md) as in the first subject.
 
-For this project you must take into account the creation of a **story mode**, a version of a computer game in which the player controls a character in a story.
+For this project you must create a **story mode**, a mode in a computer game in which the player plays through a story.
 
-Take for instance **Super Mario** where the main character is the player and you must save the princess and during the game play there is a story being told.
-Even [Brick Breaker/ Arkanoid](https://en.wikipedia.org/wiki/Arkanoid) can be done with a story mode.
+Take for instance **Super Mario** where a story is being told in which the main character tries to save the princess.
+With some creativity even [Brick Breaker/ Arkanoid](https://en.wikipedia.org/wiki/Arkanoid) can be done with a story mode.
 
 ### Instructions
 
-A story must have some kind of logic, you must not simply write something on a board and it is done, no!
+A story must have some kind of logic and evolution, you must not simply write something on a board and it is done, no!
 
-It must have:
+The story must have at least:
 
-- an introduction, the context and beginning of the story (should be shown before starting to play)
-- a development, the story reaches a middle (should be shown when you hit a specific score while playing)
-- a conclusion, the end of the story (should be shown when the game ends, either you lose or win)
+- an introduction, the context and beginning of the story (should be shown before starting the game)
+- a development, the story reaches a waypoint (should be shown when you hit a specific score while playing)
+- a conclusion, the end of the story (should be shown when the game ends, either with a loss or a vicotry)
 
 This project will help you learn about:
 
