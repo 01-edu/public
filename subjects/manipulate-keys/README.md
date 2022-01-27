@@ -10,6 +10,21 @@ Create 3 functions that works like the `.filter`, `.map` and `.reduce` array met
 - `mapKeys` changes the name of the items you have.
 - `reduceKeys` reducing you grocery cart.
 
+### Examples
+
+```js
+const nutrients = { carbohydrates: 12, protein: 20, fat: 5 }
+console.log(filterKeys(nutrients, (key) => /protein/.test(key)))
+// output :
+// { protein: 20 }
+console.log(mapKeys(nutrients, (k) => `-${k}`))
+// output :
+// { -carbohydrates: 12, -protein: 20, -fat: 5 }
+console.log(reduceKeys(nutrients, (acc, cr) =>acc.concat(', ', cr)))
+// output :
+// carbohydrates, protein, fat
+```
+
 ### Notions
 
 - [devdocs.io/javascript/global_objects/array/filter](https://devdocs.io/javascript/global_objects/array/filter)
