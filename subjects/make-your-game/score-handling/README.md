@@ -4,26 +4,26 @@
 
 You must follow the same [principles](../README.md) as the first subject.
 
-For this project you must take into account:
+For this project you must implement:
 
-- The usage of **scoreboards**
-- Creation of a **go API service** to save the data from the game in JSON formate
-  - The API should accept POST and GET request from the client side, this being the scoreboard data
+- **scoreboards**
+- **go API service** that allows saving the data from the game in JSON format
+  - The API should accept POST and GET requests from the client side for the scoreboard data
 
 ### Instructions
 
-Just like the first subject you must respect performance.
+Just like with the first subject you must respect performance.
 
-In order to tell apart every score it should be requested a name when the player ends the game.
+In order to tell scores apart the player's name should be requested before submitting the score after the game has ended.
 
-After every game, either you win or lose, a scoreboard should be shown with the five highest scores of every game made.
+After every game, whether the player wins or loses, a scoreboard should be shown with the five highest scores.
 
-The scoreboard must display the **position**, **name**, **score**, **time** in minutes and paginate the results with the rest of the scores. You also should give to the client the percentage and the position in the scoreboard.
+For each score, the scoreboard must display **position**, **name**, **score**, **time** in minutes. Scores must be paginated. For the submitted score, the position percentile must be displayed.
 
 For example:
 
 ```console
-Congrats O.J, you are in the top 6%, in the 2nd position.
+Congrats O.J, you are in the top 6%, on the 2nd position.
 
 Rank| Name | Score  | time
 ---------------------------
@@ -36,10 +36,10 @@ Rank| Name | Score  | time
      <- Page 1/50 ->
 ```
 
-The scoreboard should be ordered by descending order, so the player with the most points should appear on first place.
+The scores should be displayed in descending order, so that the player with the most points appears on the first place.
 
-You will have to create a **go API service**, where you can load the data (POST), and request it (GET). This service will store the information of each play (name, score and time) in a JSON formate and returns all the information when requested.
-The JSON can be organized as you wish.
+You will have to create a **go API service**, where you can load the data (POST), and request it (GET). This service will store the information of each play (name, score, and time) in JSON format and return all the information when requested.
+The data can be organized in JSON as you wish.
 
 Here is an example:
 
@@ -63,7 +63,7 @@ Here is an example:
 
 ### Allowed Packages
 
-- Only the [standard Go](https://golang.org/pkg/) packages are allowed.
+- Only [standard Go](https://golang.org/pkg/) packages are allowed.
 - [Gorilla](https://pkg.go.dev/github.com/gorilla/websocket) websocket
 
 This project will help you learn about:
