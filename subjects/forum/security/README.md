@@ -15,9 +15,7 @@ For this project you must take into account the security of your forum.
 
 - The implementation of [Rate Limiting](https://en.wikipedia.org/wiki/Rate_limiting) must be present on this project
 
-- You should encrypt :
-  - Clients passwords.
-  - Database, for this you will have to create a password for your database.
+- You should encrypt at least the clients passwords. As a Bonus you can also encrypt the database, for this you will have to create a password for your database.
 
 Sessions and cookies were implemented in the [previous project](../README.md) but not under-pressure (tested in an attack environment). So this time you must take this into account.
 
