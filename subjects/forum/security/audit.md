@@ -12,10 +12,6 @@
 
 ###### Does the project implement [Rate limiting](https://en.wikipedia.org/wiki/Rate_limiting) (avoiding [DoS attacks](https://en.wikipedia.org/wiki/Denial-of-service_attack))?
 
-##### Try to access the database.
-
-###### Does the database present a password for protection?
-
 ##### Try creating a user. Go to the database using the command `"sqlite3 <database-name>"` and run `"SELECT * FROM <user-table>;"` to select all users.
 
 ###### Are the passwords encrypted?
@@ -35,6 +31,8 @@
 ###### +Does the project implement their own certificates for the HTTPS protocol?
 
 ###### +Does the project implement UUID(Universal Unique Identifier) for the user session?
+
+###### +Does the database present a password for protection?
 
 #### Basic
 
