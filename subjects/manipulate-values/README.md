@@ -11,7 +11,25 @@ Create 3 functions that works like the `.filter`, `.map` and `.reduce` array met
 
 - `filterValues` filters the values of your grocery cart.
 - `mapValues` changes the values of your grocery cart.
-- `reduceValues` that will reduce your grocery cart.
+
+For the above function the callback function should accepts only the element in the arguments, this being the current element being processed.
+
+- `reduceValues` that will reduce your grocery cart. The callback function should accepts only the **accumulated value** and the **current value**.
+
+### Examples
+
+```js
+const nutrients = { carbohydrates: 12, protein: 20, fat: 5 }
+console.log(filterValues(nutrients, (nutrient) => nutrient <= 12))
+// output :
+// { carbohydrates: 12, fat: 5 }
+console.log(mapValues(nutrients, (v) => v+1))
+// output :
+// { carbohydrates: 13, protein: 21, fat: 6 }
+console.log(reduceValues(nutrients, (acc, cr) => acc + cr))
+// output :
+// 37
+```
 
 You will have a small database to help you with the groceries.
 
@@ -25,7 +43,7 @@ You will have a small database to help you with the groceries.
 
 ### Code provided
 
-> all code provided will be added to your solution and doesn't need to be submited.
+> all code provided will be added to your solution and doesn't need to be submitted.
 
 ```js
 // small database with nutrition facts, per 100 grams
