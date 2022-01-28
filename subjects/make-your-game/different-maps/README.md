@@ -6,14 +6,15 @@ You must follow the same [principles](../README.md) as the first subject.
 
 For this project you must create:
 
-- Your own engine to generate the tile maps, you should not use tile editors!
+- A tileset to use in tile map generation
+- Your own engine to generate tile maps. You must not use tile editors!
 - At least 3 different [tile maps](https://developer.mozilla.org/en-US/docs/Games/Techniques/Tilemaps)
-- Every map should be different from each other
+- Each map should be different from the others
 
 ### Instructions
 
-To store efficiently the **tile images**, you should group them all in a single image.
-To generate a specific tile image, you must select a section of this big image and render it into the game.
+To store the **tile images** efficiently, you should group them all in a single image.
+To get the image for a tile, you must select a section of the big image (tile set) and render it into the game.
 This will help with performance and memory usage.
 
 ---
@@ -43,11 +44,11 @@ let map = {
 
 This will generate a map object that contains:
 
-- `columns` number of columns that the grid will have
-- `rows` number of rows that the grid will have
-- `size` being the size of the map
-- `tiles` that is an array with the grid logic
-- `getTile` function to get the tale position
+- `columns` the number of columns that the grid will have
+- `rows` the number of rows that the grid will have
+- `size` the size of the map
+- `tiles` the array with the grid logic
+- `getTile` the function to get the tile position
 
 **Note that this is an example! You can add properties that better suit your game**
 
