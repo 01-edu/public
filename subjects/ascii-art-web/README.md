@@ -18,6 +18,11 @@ Implement the following HTTP endpoints:
 2. POST `/ascii-art`: that sends data to Go server (text and a banner)\
    2.1. POST Tip: use form and other types of [tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) to make the post request.\
 
+The way you display the result from the POST is up to you. What we recommend are one of the following :
+
+- Display the result in the route `/ascii-art` after the POST is completed. So going from the home page to another page.
+- Or display the result of the POST in the home page. This way appending the results in the home page.
+
 The main page must have:
 
 - text input
