@@ -110,7 +110,7 @@ done
 
 # Install Node.js
 
-curl -sL https://deb.nodesource.com/setup_14.x | bash -
+curl -sL https://deb.nodesource.com/setup_16.x | bash -
 apt-get --no-install-recommends -y install nodejs
 
 # Install FX: command-line JSON processing tool (https://github.com/antonmedv/fx)
