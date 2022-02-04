@@ -2,7 +2,7 @@
 
 ###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
-##### Try passing to the reverse flag `"--reverse example00.txt"` the [example 00](https://github.com/01-edu/public/blob/master/subjects/ascii-art/examples/README.md).
+##### Try passing to the reverse flag `"--reverse example00.txt"` the [example 00](../examples/README.md).
 
 ```
 Usage: go run . [OPTION]
@@ -12,49 +12,49 @@ EX: go run . --reverse=<fileName>
 
 ###### Does it display the same result as above?
 
-##### Try passing to the reverse flag `"--reverse=example00.txt"` the [example 00](https://github.com/01-edu/public/blob/master/subjects/ascii-art/examples/README.md).
+##### Try passing to the reverse flag `"--reverse=example00.txt"` the [example 00](../examples/README.md).
 
 `Hello World`
 
 ###### Does it display the value above?
 
-##### Try passing to the reverse flag `"--reverse=example01.txt"` the [example 01](https://github.com/01-edu/public/blob/master/subjects/ascii-art/examples/README.md).
+##### Try passing to the reverse flag `"--reverse=example01.txt"` the [example 01](../examples/README.md).
 
 `123`
 
 ###### Does it display the value above?
 
-##### Try passing to the reverse flag `"--reverse=example02.txt"` the [example 02](https://github.com/01-edu/public/blob/master/subjects/ascii-art/examples/README.md).
+##### Try passing to the reverse flag `"--reverse=example02.txt"` the [example 02](../examples/README.md).
 
 `#=\[`
 
 ###### Does it display the value above?
 
-##### Try passing to the reverse flag `"--reverse=example03.txt"` the [example 03](https://github.com/01-edu/public/blob/master/subjects/ascii-art/examples/README.md).
+##### Try passing to the reverse flag `"--reverse=example03.txt"` the [example 03](../examples/README.md).
 
 `something&234`
 
 ###### Does it display the value above?
 
-##### Try passing to the reverse flag `"--reverse=example04.txt"` the [example 04](https://github.com/01-edu/public/blob/master/subjects/ascii-art/examples/README.md).
+##### Try passing to the reverse flag `"--reverse=example04.txt"` the [example 04](../examples/README.md).
 
 `abcdefghijklmnopqrstuvwxyz`
 
 ###### Does it display the value above?
 
-##### Try passing to the reverse flag `"--reverse=example05.txt"` the [example 05](https://github.com/01-edu/public/blob/master/subjects/ascii-art/examples/README.md).
+##### Try passing to the reverse flag `"--reverse=example05.txt"` the [example 05](../examples/README.md).
 
 `\!" #$%&'()*+,-./`
 
 ###### Does it display the value above?
 
-##### Try passing to the reverse flag `"--reverse=example06.txt"` the [example 06](https://github.com/01-edu/public/blob/master/subjects/ascii-art/examples/README.md).
+##### Try passing to the reverse flag `"--reverse=example06.txt"` the [example 06](../examples/README.md).
 
 `:;{=}?@`
 
 ###### Does it display the value above?
 
-##### Try passing to the reverse flag `"--reverse=example07.txt"` the [example 07](https://github.com/01-edu/public/blob/master/subjects/ascii-art/examples/README.md).
+##### Try passing to the reverse flag `"--reverse=example07.txt"` the [example 07](../examples/README.md).
 
 `ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 
