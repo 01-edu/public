@@ -1,8 +1,8 @@
-## my-ls-1
+## my-ls
 
 ### Objectives
 
-- my-ls-1 consists on creating your own `ls` command.
+- my-ls consists on creating your own `ls` command.
 
 - The `ls` command shows you the files and folders of the directory specified after the command. By exclusion of this directory, it shows the files and folders of the present directory.
 
