@@ -1,6 +1,6 @@
 ## go-reloaded
 
-Welcome back. Congratulations on your admission. We knew you would make it. Now time to get into projects.
+Welcome back. Congratulations on your admission. We knew you would make it. Now it is time to get into projects.
 
 ### Objectives
 
