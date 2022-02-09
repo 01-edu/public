@@ -55,7 +55,7 @@ AND r.attrs ->> 'games' IS NOT NULL
 ORDER BY r.attrs ->> 'score' ASC;
 ```
 
-The following query returns all the users who signed in to the platform at least one and have never started the games.
+The following query returns all the users who signed in to the platform at least once and have never started playing the games.
 
 ```sql
 SELECT *
