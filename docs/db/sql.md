@@ -55,6 +55,31 @@ AND r.attrs ->> 'games' IS NOT NULL
 ORDER BY r.attrs ->> 'score' ASC;
 ```
 
+The following query returns all the users who signed in to the platform at least one and have never started the games.
+
+```sql
+SELECT *
+FROM public.user
+WHERE ((NOT ((EXISTS (
+          SELECT 1
+          FROM public.progress AS p
+          WHERE p."userId" = public.user.id)))
+      AND (((NOT (EXISTS (
+                SELECT 1
+                FROM toad.sessions AS s
+                WHERE s."candidate_id" = public.user.id)
+                OR (EXISTS (
+                    SELECT 1
+                    FROM toad.sessions AS s
+                    WHERE (s.candidate_id = public.user.id
+                      AND s.started_at IS NULL)))))
+            AND (NOT ((EXISTS (
+                    SELECT 1
+                    FROM public.user_roles_view AS r
+                    WHERE (r."userId" = public.user.id
+                      AND r.slug IN ('admin', 'campus_admin_gritlab'))))))))))
+```
+
 ### Administration
 
 The following query returns the users currently in the administration process. This includes all information about the user, the number of attempts and the current phase.
