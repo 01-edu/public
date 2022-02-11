@@ -15,5 +15,5 @@ $ go run . "bcvbvZ"
 z
 $ go run . "nbv"
 z
-$ go run .
+$
 ```
