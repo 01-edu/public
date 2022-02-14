@@ -4,7 +4,7 @@ Our schools seek to get out of empirical approaches that are not at all suitable
 
 Please take into account our approach before making **Issues**
 
-Some feedback relates to the **ambiguity of the subject **/ **the lack of precision**, and this **is voluntary on our part**.
+Some feedback relates to the **ambiguity of the subject ** / **the lack of precision**, and this **is voluntary on our part**.
 
 Do not hesitate to contribute by making a PR in the **content-update branch**.
 
