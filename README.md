@@ -1,1 +1,14 @@
-# public
+### Welcome to the Public Directory of Schools 01
+
+Our schools seek to get out of empirical approaches that are not at all suitable for the gifted, and use the **peerlearning methodology**. Our courses are meticulously studied in order to provide you with quality projects. The teaching method put in place by **Nicolas Sadirac** (founder of Epitech, 42, and now **01Edu System**) allows students to learn how to learn, with **gamification** and the **peer system**.
+
+Please take into account our approach before making **Issues**
+
+Some feedback relates to the **ambiguity of the subject **/ **the lack of precision**, and this **is voluntary on our part**.
+
+Do not hesitate to contribute by making a PR in the **content-update branch**.
+
+Thank You :smile:
+# Content Team
+
+![](https://www.01talent.com/wp-content/uploads/2021/10/01Talent-Vert-Blanc.png.webp)
