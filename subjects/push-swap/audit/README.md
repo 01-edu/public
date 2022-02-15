@@ -92,14 +92,14 @@ OK
 
 #### Basic
 
-###### +Does the code obey the [good practices](../../good-practices/README.md)?
+###### [+] Does the code obey the [good practices](../../good-practices/README.md)?
 
-###### +Is there a test file for this code?
+###### [+] Is there a test file for this code?
 
-###### +Are the tests checking each possible case?
+###### [+] Are the tests checking each possible case?
 
 #### Social
 
-###### +Did you learn anything from this project?
+###### [+] Did you learn anything from this project?
 
-###### +Would you recommend/nominate this program as an example for the rest of the school?
+###### [+] Would you recommend/nominate this program as an example for the rest of the school?
