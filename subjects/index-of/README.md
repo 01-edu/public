@@ -4,15 +4,15 @@
 
 Create 3 functions:
 
-- `indexOf` which returns the index of the first occurence of a value and takes as arguments an array to be searched, the value to be matched, and optionally the index from where to start searching from.
-- `lastIndexOf` which works just like the previous function but returns the index of the last occurence of a value
+- `indexOf` which returns the index of the first occurrence of a value and takes as arguments an array to be searched, the value to be matched, and optionally the index from where to start searching from.
+- `lastIndexOf` which works just like the previous function but returns the index of the last occurrence of a value
 - `includes` which returns true if the value was found in the array
 
 > If a value is not found, the returned index is -1
 
 > functions should have an array element as first argument,
 > both `indexOf` and `lastIndexOf` take an additional `fromIndex` argument
-> that allows you to begin searching from a specific index.
+> that allows you to begin searching from a specific index and it will work exactly like in the original methods.
 
 ### Notions
 
@@ -22,7 +22,7 @@ Create 3 functions:
 
 ### Code provided
 
-> all code provided will be added to your solution and doesn't need to be submited.
+> all code provided will be added to your solution and doesn't need to be submitted.
 
 ```js
 Array.prototype.indexOf = undefined
