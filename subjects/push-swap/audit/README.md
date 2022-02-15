@@ -80,7 +80,7 @@ OK
 
 ##### Try to run `"ARG=("<100 random numbers>"); ./push-swap $ARG"` with 100 random different numbers instead of the tag.
 
-###### +Does it display less than 700 commands?
+###### [+] Does it display less than 700 commands?
 
 ##### Try to run `"ARG=("<100 random numbers>"); ./push-swap $ARG | ./checker $ARG"` with the same 100 random different numbers as before instead of the tag.
 
@@ -88,7 +88,7 @@ OK
 OK
 ```
 
-###### +Does it display the correct result as above?
+###### [+] Does it display the correct result as above?
 
 #### Basic
 
