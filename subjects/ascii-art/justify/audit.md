@@ -76,7 +76,7 @@ Example : go run . something standard --align=right
 
 ###### Does it display the expected result?
 
-###### As an auditor, is this project up to every standard? If not, why are you failing the project?(Empty Work, Incomplete Work, Invalid compilation, Cheating, Crashing, Leaks)
+###### As an auditor, is this project up to every standard? If not, why are you failing the project?(Empty Work, Incomplete Work, Invalid Compilation, Cheating, Crashing, Leaks)
 
 #### Basic
 
