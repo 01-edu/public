@@ -52,11 +52,11 @@ EX: go run . something --color=<color>
 
 ###### Does it display the expected result?
 
-##### Try passing as arguments a random string with special characters, and a random color in the color flag ("--color="), specifying one letter to be coloured.
+##### Try passing as arguments a random string with special characters, and a random color in the color flag ("--color="), specifying one letter to be colored.
 
 ###### Does it display the expected result?
 
-##### Try passing as arguments a random string with lower, upper case, spaces and numbers letters and a random color in the color flag ("--color="), specifying a set of letters to be coloured.
+##### Try passing as arguments a random string with lower, upper case, spaces and numbers letters and a random color in the color flag ("--color="), specifying a set of letters to be colored.
 
 ###### Does it display the expected result?
 
@@ -64,28 +64,28 @@ EX: go run . something --color=<color>
 
 #### General
 
-###### +Is it easy/intuitive to specify letter(s) to be colored?
+###### [+] Is it easy/intuitive to specify letter(s) to be colored?
 
-###### +Can you use more than one color in the same string?
+###### [+] Can you use more than one color in the same string?
 
 #### Basic
 
-###### +Does the project run quickly and effectively (favoring of recursive, no unnecessary data requests, etc.)?
+###### [+] Does the project run quickly and effectively (favoring of recursive, no unnecessary data requests, etc.)?
 
-###### +Is the output of the program well structured? Are the characters are correctly in line?
+###### [+] Is the output of the program well structured? Are the characters are correctly in line?
 
-###### +Is there a test file for this code?
+###### [+] Is there a test file for this code?
 
-###### +Are the tests checking each possible case?
+###### [+] Are the tests checking each possible case?
 
-###### +Does the code obey the [good practices](../../good-practices/README.md)?
+###### [+] Does the code obey the [good practices](../../good-practices/README.md)?
 
 #### Social
 
-###### +Did you learn anything from this project?
+###### [+] Did you learn anything from this project?
 
-###### +Would you recommend/nominate this program as an example for the rest of the school?
+###### [+] Would you recommend/nominate this program as an example for the rest of the school?
 
 #### Bonus
 
-###### +Can you use for the flag "--color=" different notation? (ex: `--color=red`, `--color=#ff0000`, `--color=rgb(255, 0, 0)` or `--color=hsl(0, 100%, 50%)`)
+###### [+] Can you use for the flag "--color=" different notation? (ex: `--color=red`, `--color=#ff0000`, `--color=rgb(255, 0, 0)` or `--color=hsl(0, 100%, 50%)`)
