@@ -2,7 +2,7 @@
 
 ### Objectives
 
-Push-swap is a very simple and highly effective algorithm. You have at your disposal a list of `int` values, two stacks (`a` and `b`) and a set of instructions.
+Push-Swap is a very simple project that uses a Non-Comparative Sorting Algorithm. You have at your disposal a list of `int` values, two stacks (`a` and `b`) and a set of instructions.
 
 You will have to write 2 programs:
 
@@ -161,3 +161,8 @@ This project will help you learn about :
 - the use of basic algorithms
 - the use of sorting algorithms
 - the use of stacks
+
+### HELP
+https://en.wikipedia.org/wiki/Sorting_algorithm
+https://en.wikipedia.org/wiki/Radix_sort
+
