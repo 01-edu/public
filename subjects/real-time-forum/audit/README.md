@@ -1,6 +1,6 @@
 #### Functional
 
-###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
+###### Has the requirement for the allowed packages been respected? (Check the [allowed packages](../README.md))
 
 ###### Do you need to register/login in the forum to use it?
 

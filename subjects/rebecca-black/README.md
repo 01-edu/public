@@ -6,7 +6,7 @@ Create the following functions:
 
 - `isFriday` returns true if the date is a friday
 - `isWeekend` returns true if the date is a day of the weekend
-- `isLeapYear` returns true if the year is a leap year
+- `isLeapYear` returns true if the year of the date is a leap year
 - `isLastDayOfMonth` returns true if the date is the last day of the month
 
 ### Notions

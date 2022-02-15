@@ -1,6 +1,6 @@
 #### Functional
 
-###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
+###### Has the requirement for the allowed packages been respected? (Check the [allowed packages](README.md))
 
 ##### Open two browsers (ex: Chrome and Firefox or private windows) and log in with different users in each one. With one user start typing.
 
