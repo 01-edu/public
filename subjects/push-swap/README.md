@@ -162,7 +162,5 @@ This project will help you learn about :
 - the use of sorting algorithms
 - the use of stacks
 
-### HELP
+### Help
 https://en.wikipedia.org/wiki/Sorting_algorithm
-https://en.wikipedia.org/wiki/Radix_sort
-
