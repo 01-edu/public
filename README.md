@@ -1,4 +1,4 @@
-### Welcome to the Public Directory of Schools 01
+### Welcome to the Public Repository of 01 Edu System
 
 Our courses are meticulously studied in order to provide you with quality projects.
 Please take into account our approach before making **Issues**
