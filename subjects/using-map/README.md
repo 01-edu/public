@@ -2,8 +2,7 @@
 
 ### Instructions
 
-- Create a function named `citiesOnly` which takes an array of objects
-  and which return an array of strings from the key `city`.
+- Create a function named `citiesOnly` which takes an array of objects and which return an array of strings from the key `city`.
 
 #### Example:
 
@@ -21,7 +20,7 @@ citiesOnly([
 ```
 
 - Create a function named `upperCasingStates` which takes an array of strings
-  and which Upper Case each words of a string. \
+  and which Upper Case the first letter of each word in a string. \
   The function returns then an array of strings.
 
 #### Example:
