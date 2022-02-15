@@ -80,18 +80,18 @@
 
 #### Bonus
 
-##### Open two terminals and login with two different users. Then transfer ownership of an account to the other user.
+#####   Open two terminals and login with two different users. Then transfer ownership of an account to the other user.
 
-###### +Was the user whom received the account notified instantly?
+###### [+] Was the user whom received the account notified instantly?
 
-###### +Did the student update the terminal interface?
+###### [+] Did the student update the terminal interface?
 
-###### +Is the password saved in the file `"users.txt"` encrypted?
+###### [+] Is the password saved in the file `"users.txt"` encrypted?
 
-###### +Did the student create a relational database? • 6
+###### [+] Did the student create a relational database? • 6
 
-###### +Did the student make their own Makefile?
+###### [+] Did the student make their own Makefile?
 
-###### +Did the student add more features to the project?
+###### [+] Did the student add more features to the project?
 
-###### +Did the student optimise the code already given?
+###### [+] Did the student optimise the code already given?
