@@ -22,18 +22,18 @@
 
 #### Basic
 
-###### +Does the code obey the [good practices](../../good-practices/README.md)?
+###### [+] Does the code obey the [good practices](../../good-practices/README.md)?
 
-###### +Are the instructions in the website clear?
+###### [+] Are the instructions in the website clear?
 
-###### +Does the project run using an API?
+###### [+] Does the project run using an API?
 
-###### +Can you export in multiple formats?
+###### [+] Can you export in multiple formats?
 
 #### Social
 
-###### +Did you learn anything from this project?
+###### [+] Did you learn anything from this project?
 
-###### +Can it be open-sourced / be used for other sources?
+###### [+] Can it be open-sourced / be used for other sources?
 
-###### +Would you recommend/nominate this program as an example for the rest of the school?
+###### [+] Would you recommend/nominate this program as an example for the rest of the school?
