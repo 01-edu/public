@@ -12,20 +12,20 @@
 
 #### General
 
-###### +Is it easy to use the web site?
+###### [+] Is it easy to use the web site?
 
-###### +Does it have a background?
+###### [+] Does it have a background?
 
 #### Basic
 
-###### +Does the project runs quickly and effectively (Favoring of recursive, no unnecessary data requests, etc.)?
+###### [+] Does the project runs quickly and effectively (Favoring of recursive, no unnecessary data requests, etc.)?
 
-###### +Is the output of the program well structured? Is the output aligned, without any letter out of line?
+###### [+] Is the output of the program well structured? Is the output aligned, without any letter out of line?
 
-###### +Does the code obey the [good practices](../../good-practices/README.md)?
+###### [+] Does the code obey the [good practices](../../good-practices/README.md)?
 
 #### Social
 
-###### +Did you learn anything from this project?
+###### [+] Did you learn anything from this project?
 
-###### +Would you recommend/nominate this program as an example for the rest of the school?
+###### [+] Would you recommend/nominate this program as an example for the rest of the school?
