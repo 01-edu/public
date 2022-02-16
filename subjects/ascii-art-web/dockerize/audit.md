@@ -4,7 +4,9 @@
 
 ###### Does the project have a DockerFile?
 
-##### Try running the [command](https://docs.docker.com/engine/reference/commandline/image_build/) `"docker image build [OPTIONS] PATH | URL | -"` to build the image using the project Dockerfile. (example : `"docker image build -f Dockerfile -t <name_of_the_image> ."`).
+##### Try running the [command](https://docs.docker.com/engine/reference/commandline/image_build/) `"docker image build [OPTIONS] PATH | URL | -"` to build the image using the project Dockerfile. 
+##### Example : 
+&nbsp&nbsp&nbsp&nbsp`"docker image build -f Dockerfile -t <name_of_the_image> ."`
 
 ```
 student$ docker images
