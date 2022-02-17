@@ -28,7 +28,7 @@ This data represents a graph in which the values of the x axis are the number of
 To run your program a command similar to this one will be used if your project is made in Go:
 
 ```sh
->$ go run your-program.go data.txt
+$> go run your-program.go data.txt
 ```
 
 After reading the file, your program must execute each of the calculations asked above and print the results in the following manner (the following numbers are only examples):
