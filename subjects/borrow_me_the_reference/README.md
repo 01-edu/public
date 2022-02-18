@@ -28,8 +28,8 @@ pub fn is_correct(v: &mut Vec<&str>) -> usize {
 
 ### Notions
 
-- https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html
-- https://docs.rs/meval/0.2.0/meval/
+- [Ownership](https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html)
+- [Meval](https://docs.rs/meval/0.2.0/meval/)
 
 ### Usage
 
