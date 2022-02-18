@@ -77,16 +77,17 @@ tests.push(async ({ page, eq, bodyBgRgb, random }) => {
 tests.push(async ({ page, eq, bodyBgRgb, random }) => {
   // check that the hsl value is copied in the clipboard on click
   for (const move of generateCoords(random)) {
-    await page.mouse.click(...move)
-    const clipboard = await page.evaluate(() => {
-      // mock clipboard
+    await page.evaluate(() => {
       let clipboardText = null
-      window["navigator"]["clipboard"] = {
-        writeText: (text) => new Promise((resolve) => (clipboardText = text)),
-        readText: () => new Promise((resolve) => resolve(clipboardText)),
-      }
-      return navigator.clipboard.readText()
+      window.navigator.clipboard.readText = () =>
+        new Promise((resolve) => resolve(clipboardText))
+      window.navigator.clipboard.writeText = (text) =>
+        new Promise(() => (clipboardText = text))
     })
+    await page.mouse.click(...move)
+    const clipboard = await page.evaluate(() =>
+      window.navigator.clipboard.readText()
+    )
     const hslValue = await page.$eval(".hsl", (hsl) => hsl.textContent)
     eq(hslValue, clipboard)
   }

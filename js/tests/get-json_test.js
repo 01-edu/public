@@ -14,7 +14,7 @@ t(async ({ eq }) => {
   // check url parsing
   let url
   fetch = async (arg) => fakeFetch({ url: (url = arg) })
-  const pending = getJSON('/test', { query: 'hello world', b: 5 })
+  const pending = await getJSON('/test', { query: 'hello world', b: 5 })
   return eq(url, '/test?query=hello+world&b=5')
 })
 
