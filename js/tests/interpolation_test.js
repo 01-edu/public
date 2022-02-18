@@ -12,14 +12,14 @@ const run = async ({ step, start, end, duration, waitTime = 15 }) => {
 
 t(async ({ eq }) => {
   // testing duration time, forbid loops
-  const { length } = await run({ step: 5, start: 0, end: 4, duration: 28 })
-  return eq(length, 2)
+  const { length } = await run({ step: 5, start: 0, end: 4, duration: 50 })
+  return eq(length, 1)
 })
 
 t(async ({ eq }) => {
   // testing duration time stamp
   const { length } = await run({
-    step: 5,
+    step: 2,
     start: 0,
     end: 4,
     duration: 10,
