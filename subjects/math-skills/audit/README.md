@@ -1,6 +1,7 @@
 #### Functional
 
-##### After downloading the [file](https://assets.01-edu.org/stats-projects/math-skills) and giving executable permissions, run the script with `./math-skills` and then run the program of the student with the created `data.txt` by the previous command.
+##### After downloading the [file](https://assets.01-edu.org/stats-projects/math-skills) and giving executable permissions
+##### Run the script with `./math-skills`, then run the program of the student with the created file (`data.txt`) by the previous command.
 
 ###### Are the outputs of both programs (the one provided and the student one) in the same format?
 

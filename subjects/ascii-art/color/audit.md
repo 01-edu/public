@@ -2,7 +2,7 @@
 
 ###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
-##### Try passing as arguments `""banana" --color red"`
+##### Try passing as arguments `"banana" --color red`.
 
 ```
 Usage: go run . [STRING] [OPTION]
@@ -52,11 +52,11 @@ EX: go run . something --color=<color>
 
 ###### Does it display the expected result?
 
-##### Try passing as arguments a random string with special characters, and a random color in the color flag ("--color="), specifying one letter to be coloured.
+##### Try passing as arguments a random string with special characters, and a random color in the color flag ("--color="), specifying one letter to be colored.
 
 ###### Does it display the expected result?
 
-##### Try passing as arguments a random string with lower, upper case, spaces and numbers letters and a random color in the color flag ("--color="), specifying a set of letters to be coloured.
+##### Try passing as arguments a random string with lower, upper case, spaces and numbers letters and a random color in the color flag ("--color="), specifying a set of letters to be colored.
 
 ###### Does it display the expected result?
 
@@ -88,4 +88,5 @@ EX: go run . something --color=<color>
 
 #### Bonus
 
-###### +Can you use for the flag "--color=" different notation? (ex: `--color=red`, `--color=#ff0000`, `--color=rgb(255, 0, 0)` or `--color=hsl(0, 100%, 50%)`)
+###### +Can you use for the flag "--color=" different notation? 
+###### Examples : `--color=red`, `--color=#ff0000`, `--color=rgb(255, 0, 0)` or `--color=hsl(0, 100%, 50%)`

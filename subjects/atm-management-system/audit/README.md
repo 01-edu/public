@@ -80,7 +80,7 @@
 
 #### Bonus
 
-##### Open two terminals and login with two different users. Then transfer ownership of an account to the other user.
+#####   Open two terminals and login with two different users. Then transfer ownership of an account to the other user.
 
 ###### +Was the user whom received the account notified instantly?
 

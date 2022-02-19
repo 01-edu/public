@@ -7,7 +7,7 @@
 ```
 Usage: go run . [STRING] [BANNER] [OPTION]
 
-EX: go run . something standard --output=<fileName.txt>
+Example: go run . something standard --output=<fileName.txt>
 ```
 
 ###### Does it display the same result as above?
