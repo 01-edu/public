@@ -17,4 +17,4 @@
 
 #### Bonus
 
-###### [+] Did the student provided a README with an explanation on how to test his/her program?
+###### +Did the student provided a README with an explanation on how to test his/her program?
