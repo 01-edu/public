@@ -178,18 +178,18 @@ $
 
 #### Basic
 
-###### [+] Does the project runs quickly and effectively (Favoring of recursive, no unnecessary data requests, etc.)?
+###### +Does the project runs quickly and effectively (Favoring of recursive, no unnecessary data requests, etc.)?
 
-###### [+] Is the output of the program well structured? Are the characters are correctly in line?
+###### +Is the output of the program well structured? Are the characters are correctly in line?
 
-###### [+] Is there a test file for this code?
+###### +Is there a test file for this code?
 
-###### [+] Are the tests checking each possible case?
+###### +Are the tests checking each possible case?
 
-###### [+] Does the code obey the [good practices](../../good-practices/README.md)?
+###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
 #### Social
 
-###### [+] Did you learn anything from this project?
+###### +Did you learn anything from this project?
 
-###### [+] Would you recommend/nominate this program as an example for the rest of the school?
+###### +Would you recommend/nominate this program as an example for the rest of the school?
