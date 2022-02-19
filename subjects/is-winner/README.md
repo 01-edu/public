@@ -5,7 +5,7 @@
 Create a function `isWinner` that, by making use of `winners` "API", should
 return a resolved Promise with the string:
 
-- `<country> + ' never was a winner'`, if the country passed in `isWinner` has never won a the FIFA World Cup
+- `<country> + ' never was a winner'`, if the country passed in `isWinner` has never won  the FIFA World Cup
 
 - `<country> + ' is not what we are looking for because of the continent'`,
   if the country passed in `isWinner` is not from the european
