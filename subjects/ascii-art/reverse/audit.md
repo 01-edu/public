@@ -80,20 +80,20 @@ EX: go run . --reverse=<fileName>
 
 #### Basic
 
-###### [+] Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
+###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
 
-###### [+] Does the code obey the [good practices](../../good-practices/README.md)?
+###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
-###### [+] Is there a test file for this code?
+###### +Is there a test file for this code?
 
-###### [+] Are the tests checking each possible case?
+###### +Are the tests checking each possible case?
 
-###### [+] Is the output of the program well structured? Does any letter seems to be out of line?
+###### +Is the output of the program well structured? Does any letter seems to be out of line?
 
 #### Social
 
-###### [+] Did you learn anything from this project?
+###### +Did you learn anything from this project?
 
-###### [+] Can it be open-sourced / be used for other sources?
+###### +Can it be open-sourced / be used for other sources?
 
-###### [+] Would you recommend/nominate this program as an example for the rest of the school?
+###### +Would you recommend/nominate this program as an example for the rest of the school?
