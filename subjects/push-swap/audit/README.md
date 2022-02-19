@@ -80,7 +80,7 @@ OK
 
 ##### Try to run `"ARG=("<100 random numbers>"); ./push-swap $ARG"` with 100 random different numbers instead of the tag.
 
-###### [+] Does it display less than 700 commands?
+###### +Does it display less than 700 commands?
 
 ##### Try to run `"ARG=("<100 random numbers>"); ./push-swap $ARG | ./checker $ARG"` with the same 100 random different numbers as before instead of the tag.
 
@@ -88,18 +88,18 @@ OK
 OK
 ```
 
-###### [+] Does it display the correct result as above?
+###### +Does it display the correct result as above?
 
 #### Basic
 
-###### [+] Does the code obey the [good practices](../../good-practices/README.md)?
+###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
-###### [+] Is there a test file for this code?
+###### +Is there a test file for this code?
 
-###### [+] Are the tests checking each possible case?
+###### +Are the tests checking each possible case?
 
 #### Social
 
-###### [+] Did you learn anything from this project?
+###### +Did you learn anything from this project?
 
-###### [+] Would you recommend/nominate this program as an example for the rest of the school?
+###### +Would you recommend/nominate this program as an example for the rest of the school?
