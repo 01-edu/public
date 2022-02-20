@@ -15,8 +15,8 @@ Create the following functions:
 
 ### Notions
 
-- https://doc.rust-lang.org/1.22.0/book/first-edition/the-stack-and-the-heap.html
-- https://doc.rust-lang.org/rust-by-example/primitives/literals.html
+- [stack and heap](https://doc.rust-lang.org/1.22.0/book/first-edition/the-stack-and-the-heap.html)
+- [Literals](https://doc.rust-lang.org/rust-by-example/primitives/literals.html)
 
 ### Expected Functions
 

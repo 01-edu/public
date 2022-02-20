@@ -11,7 +11,7 @@ Write a **function** that takes an array of i32 and returns the sum of the eleme
 
 ### Notions
 
-[arrays](https://doc.rust-lang.org/std/primitive.array.html)
+- [arrays](https://doc.rust-lang.org/std/primitive.array.html)
 
 ### Expected functions
 

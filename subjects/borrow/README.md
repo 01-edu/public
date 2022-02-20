@@ -13,7 +13,7 @@ pub fn str_len(s: ) -> usize {
 
 ### Notions
 
-[Primitive Type str](https://doc.rust-lang.org/std/primitive.str.html)
+- [Primitive Type str](https://doc.rust-lang.org/std/primitive.str.html)
 
 ### Usage
 

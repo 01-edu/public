@@ -13,7 +13,7 @@ that appears more often).
 
 ### Notions
 
-[hash maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html)
+- [hash maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html)
 
 ### Expected Functions
 
