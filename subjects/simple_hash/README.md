@@ -10,7 +10,7 @@ Create a **function** `remove` that removes a given key from the `HashMap`.
 
 ### Notions
 
-- https://doc.rust-lang.org/rust-by-example/std/hash.html
+- [HashMap](https://doc.rust-lang.org/rust-by-example/std/hash.html)
 
 ### Expected functions
 

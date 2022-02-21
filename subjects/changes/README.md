@@ -10,8 +10,8 @@ Define the **function** `change_brightness` that receives a `Vec` of lights, an 
 
 ### Notions
 
-[Example of Structs](https://doc.rust-lang.org/book/ch05-02-example-structs.html)
-[Keyword Self](https://doc.rust-lang.org/std/keyword.Self.html)
+- [Example of Structs](https://doc.rust-lang.org/book/ch05-02-example-structs.html)
+- [Keyword Self](https://doc.rust-lang.org/std/keyword.Self.html)
 
 ### Expected Functions and Structure
 
