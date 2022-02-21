@@ -25,8 +25,8 @@ It must call `queryServers` in concurrently on 3 servers:
 
 A timeout of 80milliseconds must be set for the whole operation.
 
-You must return the value from each servers in an object
-using a the server name as key.
+You must return the value from each server in an object
+using  the server name as key.
 
 ### Notions
 
