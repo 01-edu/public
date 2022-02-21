@@ -42,4 +42,6 @@ At the prompt "Location of initial preconfiguration file:", enter the URL :
 raw.githubusercontent.com/01-edu/public/master/sh/debian/preseed.cfg
 ```
 
-and select "Continue", let us know when the server's remote access is ready, we will configure it.
+and select "Continue".
+
+--> Please let us know when the server's remote access is ready and we will configure it.
