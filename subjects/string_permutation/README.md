@@ -9,7 +9,7 @@ Define the **function** `is_permutation` that returns true if:
 
 ### Notions
 
-[hash maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html)
+- [hash maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html)
 
 ### Expected Function
 

@@ -3,7 +3,7 @@
 Our courses are meticulously studied in order to provide you with quality projects.
 Please take into account our approach before making **Issues**
 
-Some feedback relates to the **ambiguity of the subject** / **the lack of precision**, and this **is voluntary on our part**.
+Some feedback relates to the **ambiguity of the subject**-**lack of precision**, and this is **voluntary on our part**.
 
 Do not hesitate to contribute by making a PR in the **content-update branch**.
 
