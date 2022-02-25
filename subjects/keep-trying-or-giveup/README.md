@@ -27,5 +27,5 @@ resolve before `delay` time has reached.
 ### Notions
 
 - [nan-academy.github.io/js-training/examples/promise.js](https://nan-academy.github.io/js-training/examples/promises.js)
-- [devdocs.io/dom/windoworworkerglobalscope/settimeout](https://devdocs.io/dom/windoworworkerglobalscope/settimeout)
+- [devdocs.io/dom/settimeout]( https://devdocs.io/dom/settimeout)
 - [devdocs.io/javascript/global_objects/promise/race](https://devdocs.io/javascript/global_objects/promise/race)

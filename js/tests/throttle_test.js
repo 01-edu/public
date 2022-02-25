@@ -1,7 +1,7 @@
 export const tests = []
 const t = (f) => tests.push(f)
 
-const add = (arr, el) => arr.push(el)
+const add = (arr, el) => arr?.push(el)
 const run = (callback, callLimit, nbr) =>
   new Promise((r) => {
     let arr = []
@@ -28,13 +28,13 @@ t(async ({ eq }) =>
 )
 
 t(async ({ eq }) =>
-  // it works concurently
+  // it works concurrently
   eq(
     await Promise.all([
-      run(throttle(add, 16), 26, 5),
-      run(throttle(add, 16), 26, 5),
+      run(throttle(add, 16), 26, 6),
+      run(throttle(add, 16), 26, 6),
     ]),
-    [4, 4]
+    [5, 5]
   )
 )
 

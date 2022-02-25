@@ -16,12 +16,13 @@ return a resolved Promise with the string:
 
 - `<country> + ' won the FIFA World Cup in ' + <year(s)> + 'winning by ' + <results>`, otherwise.
 
-If the country was champion in more than one year, the years should be
-displayed like : '1000, 1004, 1008'. The same goes for the results
+The years and results should be displayed like bellow:
+
+```<country> + ' won the FIFA World Cup in 1000, 1004, 1008 winning by 4-3, 5-2, 1-0```
 
 ### Code provided
 
-> all code provided will be added to your solution and doesn't need to be submited.
+> all code provided will be added to your solution and doesn't need to be submitted.
 
 ```js
 const db = (() => {
