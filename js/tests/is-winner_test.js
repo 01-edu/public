@@ -99,6 +99,14 @@ t(async ({ eq }) =>
   )
 )
 
+t(async ({ eq }) =>
+  // testing France
+  eq(
+    await isWinner('France'),
+    'France is not what we are looking for because of the number of times it was champion'
+  )
+)
+
 t(async ({ eq, ctx }) =>
   // testing correct number of times and correct continent, for the fake country
   eq(

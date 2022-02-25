@@ -5,7 +5,7 @@ const between = (expected, min, max) => expected >= min && expected <= max
 export const setup = async ({ page, rgbToHsl }) => {
   return {
     bodyBgRgb: async () =>
-      rgbToHsl(await page.$eval("body", (body) => body.style.background)),
+      rgbToHsl(await page.$eval('body', (body) => body.style.background)),
   }
 }
 
@@ -19,8 +19,8 @@ tests.push(async ({ page, eq }) => {
     const x = move
     const y = move * 2
     await page.mouse.move(x, y)
-    const bodyBg = await page.$eval("body", (body) => body.style.background)
-    const validColor = bodyBg.includes("rgb")
+    const bodyBg = await page.$eval('body', (body) => body.style.background)
+    const validColor = bodyBg.includes('rgb')
     if (!validColor) continue
     bgs.push(bodyBg)
   }
@@ -29,7 +29,7 @@ tests.push(async ({ page, eq }) => {
 })
 
 const near = (a, b) => a < b + 2.5 && a > b - 2.5
-const numVal = (n) => n.textContent.replace(/[^0-9,]/g, "")
+const numVal = (n) => n.textContent.replace(/[^0-9,]/g, '')
 const generateCoords = (random) => [
   [random(125, 500), random(125, 400)],
   [random(125, 500), random(125, 400)],
@@ -41,7 +41,7 @@ tests.push(async ({ page, eq, bodyBgRgb, random }) => {
   for (const move of generateCoords(random)) {
     await page.mouse.move(...move)
     const a = await bodyBgRgb()
-    const b = (await page.$eval(".hsl", numVal)).split(",")
+    const b = (await page.$eval('.hsl', numVal)).split(',')
     if (a.every((v, i) => near(v, Number(b[i])))) continue
     throw Error(`hsl(${a.map(Math.round)}) to far from hsl(${b})`)
   }
@@ -52,7 +52,7 @@ tests.push(async ({ page, eq, bodyBgRgb, random }) => {
   for (const move of generateCoords(random)) {
     await page.mouse.move(...move)
     const [h] = await bodyBgRgb()
-    const hue = await page.$eval(".hue", numVal)
+    const hue = await page.$eval('.hue', numVal)
 
     if (!near(h, Number(hue))) {
       console.log({ h, hue, c: near(h, Number(hue)) })
@@ -66,7 +66,7 @@ tests.push(async ({ page, eq, bodyBgRgb, random }) => {
   for (const move of generateCoords(random)) {
     await page.mouse.move(...move)
     const [, , l] = await bodyBgRgb()
-    const lum = await page.$eval(".luminosity", numVal)
+    const lum = await page.$eval('.luminosity', numVal)
 
     if (!near(l, Number(lum))) {
       throw Error(`luminosity ${Math.round(l)} to far from ${lum}`)
@@ -79,16 +79,16 @@ tests.push(async ({ page, eq, bodyBgRgb, random }) => {
   for (const move of generateCoords(random)) {
     await page.evaluate(() => {
       let clipboardText = null
-      window.navigator.clipboard.readText = () =>
-        new Promise((resolve) => resolve(clipboardText))
-      window.navigator.clipboard.writeText = (text) =>
-        new Promise(() => (clipboardText = text))
+      window.navigator.clipboard.readText = async () => clipboardText
+      window.navigator.clipboard.writeText = async (text) => {
+        clipboardText = text
+      }
     })
     await page.mouse.click(...move)
     const clipboard = await page.evaluate(() =>
       window.navigator.clipboard.readText()
     )
-    const hslValue = await page.$eval(".hsl", (hsl) => hsl.textContent)
+    const hslValue = await page.$eval('.hsl', (hsl) => hsl.textContent)
     eq(hslValue, clipboard)
   }
 })
@@ -97,13 +97,13 @@ tests.push(async ({ page, eq, bodyBgRgb, random }) => {
   // check that each svg axis is following the mouse
   const [[mouseX, mouseY]] = generateCoords(random)
   await page.mouse.move(mouseX, mouseY)
-  const axisX = await page.$eval("#axisX", (line) => [
-    line.getAttribute("x1"),
-    line.getAttribute("x2"),
+  const axisX = await page.$eval('#axisX', (line) => [
+    line.getAttribute('x1'),
+    line.getAttribute('x2'),
   ])
-  const axisY = await page.$eval("#axisY", (line) => [
-    line.getAttribute("y1"),
-    line.getAttribute("y2"),
+  const axisY = await page.$eval('#axisY', (line) => [
+    line.getAttribute('y1'),
+    line.getAttribute('y2'),
   ])
 
   const checkAxisCoords = (coords) => Number([...new Set(coords)].join())

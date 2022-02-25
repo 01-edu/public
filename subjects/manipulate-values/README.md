@@ -47,6 +47,7 @@ You will have a small database to help you with the groceries.
 
 ```js
 // small database with nutrition facts, per 100 grams
+// In this exercise this is used for testing purposes only
 // prettier-ignore
 const nutritionDB = {
     tomato:  { calories: 18,  protein: 0.9,   carbs: 3.9,   sugar: 2.6, fiber: 1.2, fat: 0.2   },
