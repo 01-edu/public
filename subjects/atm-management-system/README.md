@@ -4,7 +4,7 @@
 
 The objective of this project is to show that you have acquired programming logic and that you are able to adapt to new languages.
 
-The programming language you are about to use is [C](https://en.wikipedia.org/wiki/C_%28programming_language%29). It will not be asked to create
+The programming language you are about to use is [C](https://en.wikipedia.org/wiki/C_%28programming_language%29). You will not be asked to create
 a project from scratch, instead you will have **to add features or fix the code of a given application**.
 
 ### Instructions
@@ -42,10 +42,10 @@ A folder which you can find [here](https://assets.01-edu.org/atm-system/atm-syst
 
 The `data` folder presented above will contain information about the users and their accounts:
 
-- `users.txt` will be the a file that stores all information about each user
-- `records.txt` will be the a file that stores all information relevant to the accounts for each user
+- `users.txt` will be the file that stores all information about each user
+- `records.txt` will be the file that stores all information relevant to the accounts for each user
 
-The format for the content saved in the file will be displayed like this :
+The format of the content saved in the file will be displayed like this :
 
 `users.txt` (id, name, password):
 
@@ -78,7 +78,7 @@ The following features must be implemented by yourself.
 
 3. The **Checking the details of existing accounts** feature, users must be able to check just one account at a time.
 
-   3.1. For this it must be asked to input the account id they want to see
+   3.1. For this they must be asked to input the account id they want to see
 
    3.2. If the account is either `savings`, `fixed01`, `fixed02` and `fixed03` the system will display
    the information of that account and the interest you will acquire depending on the account:
@@ -102,9 +102,9 @@ The following features must be implemented by yourself.
 
 ### Bonus
 
-As bonus you can add a verification to the field **Transfer owner**. Every time a user transfers ownership of an account the other user who received the account
+As a bonus you can add a verification to the field **Transfer owner**. Every time a user transfers ownership of an account the other user who received the account
 can be alerted that he or she received an account from someone instantly.
-Example: if you have two terminals opened logged with two different users, and one send the account to the other user,
+Example: if you have two terminals opened logged in with two different users, and one sends the account to the other user,
 the user who received the account should be instantly notified.
 One of the ways of doing this is by using pipes and child processes (communication between processes).
 
@@ -114,12 +114,12 @@ You can also do more bonus features or update the terminal interface:
 - Encryption of passwords
 - Adding your own Makefile
 
-A relational database can also be added as a bonus. You can use the database at your choice, but we recommend you do use SQLite
+A relational database can also be added as a bonus. You can use the database of your choice, but we recommend you use SQLite.
 To know more about SQLite you can check the [SQLite page](https://www.sqlite.org/index.html).
 
 ### Example
 
-You can find an example of the final application [here](https://www.youtube.com/watch?v=xVtikDcGG2E). Do not forget that you are free to
+You can find an example of the final application [here](https://www.youtube.com/watch?v=xVtikDcGG2E). Don't forget that you are free to
 implement whichever kind of interface you desire. It just needs to obey the instructions given above so it can pass the audit.
 
 This project will help you learn about:
