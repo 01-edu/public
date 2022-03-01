@@ -32,9 +32,9 @@ EX: go run . something --color=<color>
 
 ###### Does it display the expected result (the corresponding letter with that color)?
 
-##### Try specifying letter to be colored(just two letter).
+##### Try specifying a set of letters to be colored(just two letters).
 
-###### Does it display the expected result (the corresponding letters with that color)?
+###### Does it display the expected result (the corresponding set of letters with that color)?
 
 ##### Try passing as arguments `"HeY GuYs" --color=orange`, in order to color `GuYs`.
 
@@ -56,7 +56,7 @@ EX: go run . something --color=<color>
 
 ###### Does it display the expected result?
 
-##### Try passing as arguments a random string with lower, upper case, spaces and numbers letters and a random color in the color flag ("--color="), specifying a set of letters to be colored.
+##### Try passing as arguments a random string with lower case letters, upper case letters, spaces and numbers with a random color in the color flag ("--color="), specifying a set of letters to be colored.
 
 ###### Does it display the expected result?
 
@@ -72,7 +72,7 @@ EX: go run . something --color=<color>
 
 ###### +Does the project run quickly and effectively (favoring of recursive, no unnecessary data requests, etc.)?
 
-###### +Is the output of the program well structured? Are the characters are correctly in line?
+###### +Is the output of the program well structured? Are the characters displayed correctly in line?
 
 ###### +Is there a test file for this code?
 
@@ -88,5 +88,5 @@ EX: go run . something --color=<color>
 
 #### Bonus
 
-###### +Can you use for the flag "--color=" different notation? 
+###### +Can you use different notations for the flag "--color="? 
 ###### Examples : `--color=red`, `--color=#ff0000`, `--color=rgb(255, 0, 0)` or `--color=hsl(0, 100%, 50%)`
