@@ -31,6 +31,11 @@ pub fn is_correct(v: &mut Vec<&str>) -> usize {
 - [ownership](https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html)
 - [meval](https://docs.rs/meval/0.2.0/meval/)
 
+
+### Dependencies
+
+meval = "0.2"
+
 ### Usage
 
 Here is a program to test your function
