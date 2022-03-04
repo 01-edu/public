@@ -8,7 +8,7 @@ to execute javascript.
 Being a special child, JS can run in different **runtime**, what you can
 do with it greatly depend of your runtime.
 
-Luckly you don't need to install anything for that since all you
+Luckily you don't need to install anything for that since all you
 need is a web browser.
 
 > Main runtime for executing JS are: any web browser, NodeJS and Deno.
