@@ -44,6 +44,12 @@ ex: ("password", "asdaSD\_")
 - [Error types](https://doc.rust-lang.org/rust-by-example/error/multiple_error_types/define_error_type.html)
 - [Struct NaiveDate](https://docs.rs/chrono/0.4.19/chrono/naive/struct.NaiveDate.html)
 
+
+### Dependencies
+
+chrono = "0.4"
+
+
 ### Expected Function
 
 ```rust
@@ -60,8 +66,8 @@ impl FErr {
 
 #[derive(Debug, Eq, PartialEq)]
 pub enum SexType {
-    // expected public fields
 }
+
 #[derive(Debug, Eq, PartialEq)]
 pub struct Form {
     // expected public fields
@@ -87,8 +93,8 @@ use error_types::*;
 
 fn main() {
     let mut form_output = Form::new(
-        String::from("Alice"),
-        String::from("Bear"),
+        String::from("Lee"),
+        String::from("Silva"),
         create_date("2015-09-05"),
         SexType::Male,
         String::from("Africa"),
