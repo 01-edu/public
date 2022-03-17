@@ -40,6 +40,6 @@
 
 ###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
-###### +Is the code using synchronicity to increase performance?
+###### +Is the code using asynchronicity to increase performance?
 
 ###### +Do you think this project is well done in general?
