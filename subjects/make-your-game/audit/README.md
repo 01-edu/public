@@ -82,6 +82,6 @@
 
 ###### +Does the game use [svg](https://developer.mozilla.org/en-US/docs/Web/SVG)?
 
-###### +Is the code using synchronicity to increase performance?
+###### +Is the code using asynchronicity to increase performance?
 
 ###### +Do you think in general this project is well done?

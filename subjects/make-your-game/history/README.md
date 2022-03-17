@@ -17,7 +17,7 @@ The story must have at least:
 
 - an introduction, the context and beginning of the story (should be shown before starting the game)
 - a development, the story reaches a waypoint (should be shown when you hit a specific score while playing)
-- a conclusion, the end of the story (should be shown when the game ends, either with a loss or a vicotry)
+- a conclusion, the end of the story (should be shown when the game ends, either with a loss or a victory)
 
 This project will help you learn about:
 
