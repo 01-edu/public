@@ -8,13 +8,15 @@ Define a data structure to represent a matrix of any size and implement the basi
 
 - You have to use the definition of scalars done in the exercise: `lalgebra_scalar`
 
+- Define `new` that returns a matrix of size `1 x 1`
+
 - Then define the associated function `identity` that returns the identity matrix of size n
 
-- Finally, define the associated function `zero` that returns a matrix of size `row x col` with all the positions filled by zeroes
-
+- Finally, define the associated function `zero` that returns a matrix of size `row x col` with all the positions filled by zeros
+ 
 ### Notions
 
-[Traits](https://doc.rust-lang.org/book/ch19-03-advanced-traits.html)
+- [Traits](https://doc.rust-lang.org/book/ch19-03-advanced-traits.html)
 
 ### Expected Functions and Structure
 

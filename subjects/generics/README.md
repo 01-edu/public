@@ -4,6 +4,12 @@
 
 Write a **function** called `identity` which calculates the identity of a value (receives any data type and returns the same value).
 
+
+### Notions
+
+- [Generics](https://doc.rust-lang.org/book/ch10-01-syntax.html)
+
+
 ### Expected Function (signature to be completed)
 
 ```rust

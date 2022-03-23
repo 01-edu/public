@@ -17,14 +17,14 @@ Define the matrix multiplication by implementing the std::ops::Mul for the type 
 ### Expected Functions
 
 ```rust
-impl Matrix<T> {
+impl Matrix<T> {Esta errado o public, as funçoes row e col estao baralhadas com number of rows e number of colmns
 	pub fn number_of_cols(&self) -> usize {
 	}
 
-	pub fn rows(&self) -> usize {
+	pub fn number_of_row(&self, n: usize) -> usize {
 	}
 
-	pub fn number_of_row(&self, n: usize) -> Vec<T> {
+	pub fn rows(&self) -> Vec<T> {
 	}
 
 	pub fn col(&self, n: usize) -> Vec<T> {
