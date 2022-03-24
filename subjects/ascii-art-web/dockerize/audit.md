@@ -49,26 +49,26 @@ student$
 
 #### General
 
-###### [+] Does the project present a script to build the images and containers? (using a script to simplify the build)
+###### +Does the project present a script to build the images and containers? (using a script to simplify the build)
 
 #### Basic
 
-###### [+] Does the server run quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
+###### +Does the server run quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
 
-###### [+] Does the code obey the [good practices](../../good-practices/README.md)?
+###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
-###### [+] Is there a test file for this code?
+###### +Is there a test file for this code?
 
-###### [+] Are the tests checking each possible case?
+###### +Are the tests checking each possible case?
 
-###### [+] Are the instructions in the website clear?
+###### +Are the instructions in the website clear?
 
-###### [+] Does the project run using an API?
+###### +Does the project run using an API?
 
 #### Social
 
-###### [+] Did you learn anything from this project?
+###### +Did you learn anything from this project?
 
-###### [+] Can it be open-sourced / be used for other sources?
+###### +Can it be open-sourced / be used for other sources?
 
-###### [+] Would you recommend/nominate this program as an example for the rest of the school?
+###### +Would you recommend/nominate this program as an example for the rest of the school?

@@ -20,4 +20,4 @@
 
 ##### Try running the student program against the `nic` program, using `Data 1`, `Data 2` and `Data 3` 3 times each.
 
-###### [+] Did the student won against `nic` most of the times (at least 2 out of 3 times for each)?
+###### +Did the student won against `nic` most of the times (at least 2 out of 3 times for each)?
