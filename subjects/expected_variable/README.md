@@ -50,9 +50,9 @@ And its output:
 
 ```sh
 $ cargo run
-100% close to ir
+100% close to it
 88% close to it
 None
-73% close to it
+67% close to it
 $
 ```

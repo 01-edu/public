@@ -15,7 +15,6 @@ Do not forget that this will be a recursion type and it must point to `None` if 
 
 ### Notions
 
-- [enum](https://doc.rust-lang.org/rust-by-example/custom_types/enum.html)
 - [boc](https://doc.rust-lang.org/book/ch15-01-box.html)
 - [Module std::option](https://doc.rust-lang.org/std/option/)
 

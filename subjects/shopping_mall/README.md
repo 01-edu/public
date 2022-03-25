@@ -6,10 +6,10 @@ Using the `mall` module provided create the following **functions** to help run 
 
 - `biggest_store`: receives a `mall::Mall` and returns the `Store` with the biggest `square_meters`;
 - `highest_paid_employees`: receives a `mall::Mall` and returns a vector containing the `Employee`(s) with the highest salaries;
-- `nbr_of_employees`: receives a `mall::Mall` and returns the number of employees and securities, as a `usize`, in that mall.
-- `fire_old_securities`: receives a `mall::Mall` and removes from the `mall::Mall.securities` all securities who are 50 years old or older.
-- `check_for_securities`: receives a `mall::Mall` and a vector of `Security` and, if there is not at least 1 security for every 200 square meters of floor size, a security should be added to the `mall::Mall.securities`
-- `cut_or_raise`: receives a `mall::Mall` and raises or cuts, the salary of every employee in the mall by 10%, if the employee works for more than 10 hours
+- `nbr_of_employees`: receives a `mall::Mall` and returns the number of employees and securities, as a `usize`, in that mall;
+- `fire_old_securities`: receives a `mall::Mall` and removes from the `mall::Mall.securities` all securities who are 50 years old or older;
+- `check_for_securities`: receives a `mall::Mall` and a vector of `Security` and, if there is not at least 1 security for every 200 square meters of floor size, a security should be added to the `mall::Mall.securities`;
+- `cut_or_raise`: receives a `mall::Mall` and raises or cuts, the salary of every employee in the mall by 10%, if the employee works for more than 10 hours (consider that the securities are not employees from the mall).
 
 ### Expected Function
 

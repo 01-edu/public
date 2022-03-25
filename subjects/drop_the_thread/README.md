@@ -17,15 +17,15 @@ in this exercise a Drop checker API has to be created. For this you must define:
     - `cmd`, the name of the thread.
     - `parent`, that will be the link to the structure `Workers` (Tip: this must be a reference to the structure Workers)
 
-- Implementation of each structure:
+- Implementation of each structure:state
 
   - `Workers` :
 
     - `new`, that creates a default worker
     - `new_worker`, that returns a tuple with the `pid` and a new `Thread`,
       this function must receive a `String` being the `cmd`
-      - `is_dropped`, that receives a `pid` and returns a `bool` that indicates the state of the thread by using the `pid`
-      - `track_worker`, it should return a `usize`, that will be the last available index of the `states` vector, being the new next thread
+    - `is_dropped`, that receives a `pid` and returns a `bool` that indicates the state of the thread by using the `pid`
+    - `track_worker`, it should return a `usize`, that will be the last available index of the `states` vector, being the new next thread
     - `add_drop`, this function must be **called by the `Drop` trait**. It will receive a `pid` that will be used to change the
       state of the thread. If the state of that thread is `true` then it will panic with the message ("Cannot drop {}, because its already dropped", pid).
       Otherwise it should change the state to true and increment the `drops` field by one.
@@ -50,7 +50,7 @@ use std::cell::{RefCell, Cell};
 #[derive(Debug, Default, Clone, Eq, PartialEq)]
 pub struct Workers {
     pub drops: Cell<usize>,
-    pub state: RefCell<Vec<bool>>
+    pub states: RefCell<Vec<bool>>
 }
 
 impl Workers {
