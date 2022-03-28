@@ -1,5 +1,8 @@
 #### quadA
 
+***NOTE: If you are an admin and you want to test this project, follow the instructions [HERE](https://github.com/01-edu/go-tests)***
+
+
 ##### Try running the function with the arguments: `"x=5 and y=3"`
 
 ```
