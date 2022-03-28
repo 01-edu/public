@@ -1,5 +1,7 @@
 #### Quadrangle Checker
 
+***NOTE: If you are an admin and you want to test this project, follow the instructions [HERE](https://github.com/01-edu/go-tests)***
+
 ##### Try running the program: `"./quadA 3 3 | ./quadchecker"`
 
 ```

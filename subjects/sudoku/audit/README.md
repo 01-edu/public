@@ -1,5 +1,7 @@
 #### Sudoku
 
+***NOTE: If you are an admin and you want to test this project, follow the instructions [HERE](https://github.com/01-edu/go-tests)***
+
 ##### Try running the program with the arguments: `".96.4...1" "1...6...4" "5.481.39." "..795..43" ".3..8...." "4.5.23.18" ".1.63..59" ".59.7.83." "..359...7"`
 
 ```
