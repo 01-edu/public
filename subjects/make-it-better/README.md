@@ -19,7 +19,7 @@ lrwxrwxrwx 1990-02-16 00:11 3 -> 0
 dr-------x 1995-04-10 10:10 A
 $
 ```
-***Note:*** In order to run the command given in the example above, on mac operating systems, it is necessary to install the [GNU Core Utilities](https://en.wikipedia.org/wiki/GNU_Core_Utilities).
+**Note:** In order to run the command given in the example above, on ***Mac operating systems***, it is necessary to install the [GNU Core Utilities](https://en.wikipedia.org/wiki/GNU_Core_Utilities).
 After installing the command will be slightly different like so: 
 ```console 
 $ TZ=utc gls -l --time-style='+%F %R' | sed 1d | awk '{print $1, $6, $7, $8, $9, $10}'
