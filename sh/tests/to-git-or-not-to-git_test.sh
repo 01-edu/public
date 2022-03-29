@@ -13,6 +13,7 @@ if [ -f ${FILENAME} ]; then
         diff <(echo "$submitted") <(echo "$expected")
     else
         echo "File exist but empty"
+        exit 1
     fi
 else
     echo "File does not exist"
