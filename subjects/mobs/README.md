@@ -32,14 +32,14 @@ Create also two submodules of mob:
   - a function `new` which returns a Boss on receiving a name (&str) and an age (u8)
 - `member` submodule which consists of:
   - a enum `Role` with the variants:
-  - Underboss
-  - Caporegime
-  - Soldier
-  - Associate
+    - Underboss
+    - Caporegime
+    - Soldier
+    - Associate
   - a `Member` struct which consists of:
-  - a String name
-  - a enum Role `role`
-  - a u8 `age`
+    - a String name
+    - a enum Role `role`
+    - a u8 `age`
   - the Member struct should implement a function `get_promotion` which will change the member role. If a member is an Associate, it will get promoted to Soldier; a Soldier is promoted to a Caporegime and a Caporegime is promoted to Underboss
   - a function `new` which return a Member on receiving a name(&str), a role (Role) and an age (u8)
 
