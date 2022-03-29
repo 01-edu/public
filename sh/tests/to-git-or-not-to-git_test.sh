@@ -12,7 +12,7 @@ if [ -f ${FILENAME} ]; then
         expected=$(bash solutions/to-git-or-not-to-git.sh)
         diff <(echo "$submitted") <(echo "$expected")
     else
-        echo "File exist but empty"
+        echo "The file exist but empty"
         exit 1
     fi
 else
