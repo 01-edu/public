@@ -1,6 +1,6 @@
 #### Quadrangle Checker
 
-***NOTE: If you are an admin and you want to test this project, follow the instructions [HERE](https://github.com/01-edu/go-tests)***
+> ***NOTE: If you are an admin and you want to test this project, follow the instructions [in the this subject](../../raid-testing/README.md) before you proceed to the questions.***
 
 ##### Try running the program: `"./quadA 3 3 | ./quadchecker"`
 

@@ -1,8 +1,8 @@
 ## quadrangle
 
-## quadA
+### quadA
 
-### Instructions
+#### Instructions
 
 Write a function `QuadA` that prints a **valid** rectangle with a given width of `x` and height of `y`.
 
@@ -10,7 +10,7 @@ The function must draw the rectangles as in the examples.
 
 If `x` and `y` are positive numbers, the program should print the rectangles as seen in the examples, otherwise, the function should print nothing.
 
-### Expected function
+#### Expected function
 
 ```go
 func QuadA(x,y int) {
@@ -18,7 +18,7 @@ func QuadA(x,y int) {
 }
 ```
 
-### Usage
+#### Usage
 
 Here are possible programs to test your function :
 
@@ -110,9 +110,9 @@ $
 
 ---
 
-## quadB
+### quadB
 
-### Instructions
+#### Instructions
 
 Write a function `QuadB` that prints a **valid** rectangle of width `x` and of height `y`.
 
@@ -121,7 +121,7 @@ The function must draw the rectangles as in the examples.
 If `x` and `y` are positive numbers, the program should print the rectangles as seen in the examples, otherwise, the function should print nothing.
 
 
-### Expected function
+#### Expected function
 
 ```go
 func QuadB(x,y int) {
@@ -129,7 +129,7 @@ func QuadB(x,y int) {
 }
 ```
 
-### Usage
+#### Usage
 
 Here are possible programs to test your function :
 
@@ -221,9 +221,9 @@ $
 
 ---
 
-## quadC
+### quadC
 
-### Instructions
+#### Instructions
 
 Write a function `QuadC` that prints a **valid** rectangle of width `x` and of height `y`.
 
@@ -231,7 +231,7 @@ The function must draw the rectangles as in the examples.
 
 If `x` and `y` are positive numbers, the program should print the rectangles as seen in the examples, otherwise, the function should print nothing.
 
-### Expected function
+#### Expected function
 
 ```go
 func QuadC(x,y int) {
@@ -239,7 +239,7 @@ func QuadC(x,y int) {
 }
 ```
 
-### Usage
+#### Usage
 
 Here are possible programs to test your function :
 
@@ -331,9 +331,9 @@ $
 
 ---
 
-## quadD
+### quadD
 
-### Instructions
+#### Instructions
 
 Write a function `QuadD` that prints a **valid** rectangle of width `x` and of height `y`.
 
@@ -341,7 +341,7 @@ The function must draw the rectangles as in the examples.
 
 If `x` and `y` are positive numbers, the program should print the rectangles as seen in the examples, otherwise, the function should print nothing.
 
-### Expected function
+#### Expected function
 
 ```go
 func QuadD(x,y int) {
@@ -349,7 +349,7 @@ func QuadD(x,y int) {
 }
 ```
 
-### Usage
+#### Usage
 
 Here are possible programs to test your function :
 
@@ -441,9 +441,9 @@ $
 
 ---
 
-## quadE
+### quadE
 
-### Instructions
+#### Instructions
 
 Write a function `QuadE` that prints a **valid** rectangle of width `x` and of height `y`.
 
@@ -452,7 +452,7 @@ The function must draw the rectangles as in the examples.
 If `x` and `y` are positive numbers, the program should print the rectangles as seen in the examples, otherwise, the function should print nothing.
 
 
-### Expected function
+#### Expected function
 
 ```go
 func QuadE(x,y int) {
@@ -460,7 +460,7 @@ func QuadE(x,y int) {
 }
 ```
 
-### Usage
+#### Usage
 
 Here are possible programs to test your function :
 
