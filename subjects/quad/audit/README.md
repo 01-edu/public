@@ -1,6 +1,6 @@
 #### quadA
 
-> ***NOTE: If you are an admin and you want to test this project, follow the instructions [in the this subject](../../raid-testing/README.md) before you proceed to the questions.***
+> ***NOTE: If you are an admin and you want to test this project, follow the instructions [in the this subject](https://github.com/01-edu/go-tests/blob/master/raid-testing.md) before you proceed to the questions.***
 
 ##### Try running the function with the arguments: `"x=5 and y=3"`
 
