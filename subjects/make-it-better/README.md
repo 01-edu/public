@@ -24,6 +24,10 @@ After installing the command will be slightly different like so:
 ```console 
 $ TZ=utc gls -l --time-style='+%F %R' | sed 1d | awk '{print $1, $6, $7, $8, $9, $10}'
 ```
+The mode from line 4 may look different, for example like:
+```console
+lrwxr-xr-x 1990-02-16 00:11 3 -> 0
+```
 
 Once it is done, use the command below to create the file `done.tar` to be submitted.
 
