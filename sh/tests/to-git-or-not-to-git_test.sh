@@ -8,10 +8,6 @@ FILENAME="student/to-git-or-not-to-git.sh"
 
 if [ -f ${FILENAME} ]; then
     if [ -s ${FILENAME} ]; then
-        submitted=$(bash student/to-git-or-not-to-git.sh)
-        expected=$(bash solutions/to-git-or-not-to-git.sh)
-        echo $submitted
-        echo $expected
         diff <(echo "$submitted") <(echo "$expected")
     else
         echo "The file exist but empty"
