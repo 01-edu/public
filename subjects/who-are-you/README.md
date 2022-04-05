@@ -11,3 +11,6 @@ Create the file `who-are-you.sh` which will remind you who you are by showing yo
 - Where to look : https://((DOMAIN))/assets/superhero/all.json
 
 - What to use : `curl` and `jq`
+
+> Your output should look like `"HeroName"` \
+> Notice that there are "" i.e. DoubleQuotes in the output
