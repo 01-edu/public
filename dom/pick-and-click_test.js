@@ -76,14 +76,13 @@ tests.push(async ({ page, eq, bodyBgRgb, random }) => {
 
 tests.push(async ({ page, eq, bodyBgRgb, random }) => {
   // check that the hsl value is copied in the clipboard on click
+  // Override readText if writeText is used due to a puppeteer bug
+  await page.evaluate(() => {
+    window.navigator.clipboard.writeText = async (text) => {
+      window.navigator.clipboard.readText = async () => text
+    }
+  })
   for (const move of generateCoords(random)) {
-    await page.evaluate(() => {
-      let clipboardText = null
-      window.navigator.clipboard.readText = async () => clipboardText
-      window.navigator.clipboard.writeText = async (text) => {
-        clipboardText = text
-      }
-    })
     await page.mouse.click(...move)
     const clipboard = await page.evaluate(() =>
       window.navigator.clipboard.readText()
