@@ -8,6 +8,8 @@ Create a new directory called `point`.
 
 - The necessary changes must be applied so that the program works.
 
+- The function `setPoint()` must work with `int`.
+
 ### Code to be copied
 
 ```go
