@@ -11,3 +11,11 @@ Create the file `who-are-you.sh` which will remind you who you are by showing yo
 - Where to look : https://((DOMAIN))/assets/superhero/all.json
 
 - What to use : `curl` and `jq`
+
+- The output should be exactly like the example bellow but with the expected name
+
+```console
+$./who-are-you.sh | cat -e
+"name"$
+$
+```
