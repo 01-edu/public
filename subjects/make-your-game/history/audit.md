@@ -20,11 +20,11 @@
 
 ###### Does the game run at/or around 60fps?(from 50 to 60 or more)
 
-##### Try using the Dev Tool/performance and the option rendering with the `paint flashing` ON, if possible.
+##### Try using the Dev Tool/performance and the option rendering with the `"paint flashing"` ON, if possible.
 
 ###### Can you confirm that the paint is being used as little as possible?
 
-##### Try using the Dev Tool/performance and the option rendering with the `layer borders` ON, if possible.
+##### Try using the Dev Tool/performance and the option rendering with the `"layer borders"` ON, if possible.
 
 ###### Can you confirm that the layers are being used as little as possible?
 
