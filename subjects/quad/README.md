@@ -10,6 +10,8 @@ The function must draw the rectangles as in the examples.
 
 If `x` and `y` are positive numbers, the program should print the rectangles as seen in the examples, otherwise, the function should print nothing.
 
+Make sure you submit all the necessary files to run the program.
+
 #### Expected function
 
 ```go

@@ -6,6 +6,8 @@
 
 - A valid sudoku has only one possible solution.
 
+Make sure you submit all the necessary files to run the program.
+
 ### Usage
 
 #### Example 1:
