@@ -6,6 +6,10 @@ const nums = [Math.PI, -Math.PI, Math.E, -Math.E, 0]
 
 t(({ code }) => !/String|['"`]|toFixed|slice/.test(code))
 t(({ code }) => !code.includes('~'))
+t(({ code }) => !code.includes('%'))
+t(({ code }) => !code.includes('>>'))
+t(({ code }) => !/[^|]\|[^|]/.test(code))
+t(({ code }) => !/[^&]&[^&]/.test(code))
 t(({ code }) => !code.includes('parseInt'))
 
 t(({ eq }) => eq(nums.map(round), [3, -3, 3, -3, 0]))
