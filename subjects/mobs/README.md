@@ -20,7 +20,7 @@ The Mob struct should implement the following functions:
   - a Soldier power combat is 2
   - an Associate power combat is 1
   - In case of one of the mobs stays without members, the winner mob adds to its cities every city of the loser mob and the same happens to the wealth, and the loser mob loses all cities and all wealth
-- `steal`, which receives the targeted mob (Mob) and a value (u32) and adds to the own mob a value and subtracts the value
+- `steal`, which receives a targeted mob (Mob) and a value (u32) and subtracts the value from the target mob. The value is then added to itself. It can't be stolen more than the target mob currently has.
 - `conquer_city`, which receives a vector of mobs, a city name (String) and a value (u8) and adds it to the vector of cities of the own mob, only if no mob in the vector owns a city with this name
 
 Create also two submodules of mob:
