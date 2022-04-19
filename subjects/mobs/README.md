@@ -8,7 +8,7 @@ Create a module `mobs`, in which has to be present:
   - a String `name`
   - a Boss struct `boss`
   - a vector of Members `members`
-  - a vector of tuples containing a name String and a value u8 `cities`
+  - a vector of tuples `cities` containing the city name String and a value u8 
   - a u32 `wealth`
 
 The Mob struct should implement the following functions:
