@@ -18,7 +18,7 @@ The `struct` must also have an implementation of 2 **functions** associated with
 - `send_ms`, which only has its implementation type (**self**) as argument and returns an option:
   - This function must return `None` if the content of the message is either **empty** or contains the word **stupid**. Otherwise it returns the content of the message.
 
-You will have to create two more **functions** that are not associated with any structure:
+You will have to create one more **function** that is not associated with any structure:
 
 - `check_ms` which:
   - receives as parameters the reference to the structure `Message`

@@ -28,7 +28,7 @@ Create the structures `Circle` and `Point` (which will be made of two coordinate
 This snippets are incomplete and it is part of the exercise to discover how to complete them. In the [usage](#usage) you will find all the information that you need.
 
 ```rust
-struct Circle {
+pub struct Circle {
 	center //..
 	radius //..
 }

@@ -10,7 +10,7 @@ Implement the methods:
 
 - `row(n)` which returns the `n`th row in the matrix.
 
-- `col(n)` which returns the `n`th
+- `col(n)` which returns the `n`th column in the matrix.
 
 Define the matrix multiplication by implementing the std::ops::Mul for the type matrix
 
@@ -21,10 +21,10 @@ impl Matrix<T> {
 	pub fn number_of_cols(&self) -> usize {
 	}
 
-	pub fn rows(&self) -> usize {
+	pub fn number_of_rows(&self) -> usize {
 	}
 
-	pub fn number_of_row(&self, n: usize) -> Vec<T> {
+	pub fn rows(&self, n: usize) -> Vec<T> {
 	}
 
 	pub fn col(&self, n: usize) -> Vec<T> {

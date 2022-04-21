@@ -6,7 +6,7 @@ Using the `areas_volumes` module provided, create two **functions**:
 
 - `area_fit` which receives 6 arguments and returns a boolean:
 
-  - `x` and `y`, length and width of the square in which it is going to be tried to fit the geometrical shapes (both usize)
+  - `x` and `y`, length and width of the Rectangle in which it is going to be tried to fit the geometrical shapes (both usize)
   - `objects`, the type of geometrical shape(s) which are going to be tried to be fitted in the square (areas_volumes::GeometricalShapes)
   - `times`, the number of geometrical shapes which are going to be tried to be fitted in the square (usize)
   - `a` and `b`, the dimensions which the plane(s) shape(s) passed will have (both usize)
@@ -20,7 +20,7 @@ Using the `areas_volumes` module provided, create two **functions**:
   - `objects`, the type of geometrical volume(s) which are going to be tried to be fitted in the box (areas_volumes::GeometricalVolumes)
   - `times`, the number of geometrical volumes which are going to be tried to be fitted in the box (usize)
   - `a`, `b` and `c`, the dimensions which the geometrical volume(s) passed will have (all of them usize)
-  - `a` will refer to the side of the Cube, the radius of the Sphere, the side_a of the Parallelepipede, the area of the base of the Triangular Pyramid or the base radius of the Cone
+  - `a` will refer to the side of the Cube, the radius of the Sphere, the side_a of the Parallelepiped, the area of the base of the Triangular Pyramid or the base radius of the Cone
   - `b` will refer to the side_b of the Parallelepiped, the height of the Triangular Pyramid or the height of the Cone
   - `c` will refer to the side_c of the Parallelepiped
   - `volume_fit` should return `true` if the geometrical volume(s) fit inside of the box.
@@ -128,7 +128,7 @@ fn main() {
 		volume_fit(5, 5, 5, GeometricalVolumes::Sphere, 3, 2, 0, 0)
 	);
 	println!(
-		"Do 3 triangles (5 base and 3 height) fit in a 5 by 7 by 5 box? {}",
+		"Does 1 parallelepiped (6 base, 7 height and depth 4) fit in a 5 by 7 by 5 parallelepiped? {}",
 		volume_fit(5, 7, 5, GeometricalVolumes::Parallelepiped, 1, 6, 7, 4)
 	);
 }
@@ -141,6 +141,6 @@ $ cargo run
 Do 100 rectangles (2x1) fit in a 2 by 4 square? false
 Do 3 triangles (5 base and 3 height) fit in a 5 by 5 square? true
 Do 3 spheres (2 radius) fit in a 5 by 5 by 5 box? true
-Do 3 triangles (5 base and 3 height) fit in a 5 by 7 by 5 box? true
+Does 1 parallelepiped (6 base, 7 height and depth 4) fit in a 5 by 7 by 5 parallelepiped? true
 $
 ```

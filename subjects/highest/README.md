@@ -21,13 +21,13 @@ These methods have to be written:
 ```rust
 pub fn new(&[u32]) -> Self {}
 
-pub fn List(&self) -> &[u32] {}
+pub fn list(&self) -> &[u32] {}
 
-pub fn Latest(&self) -> Option<u32> {}
+pub fn latest(&self) -> Option<u32> {}
 
-pub fn Highest(&self) -> Option<u32> {}
+pub fn highest(&self) -> Option<u32> {}
 
-pub fn Highest_Three(&self) -> Vec<u32> {}
+pub fn highest_three(&self) -> Vec<u32> {}
 ```
 
 ### Usage
@@ -45,10 +45,10 @@ struct Numbers<'a> {
 fn main() {
     let expected = [30, 500, 20, 70];
     let n = Numbers::new(&expected);
-    println!("{:?}", n.List());
-    println!("{:?}", n.Highest());
-    println!("{:?}", n.Latest());
-    println!("{:?}", n.Highest_Three());
+    println!("{:?}", n.list());
+    println!("{:?}", n.highest());
+    println!("{:?}", n.latest());
+    println!("{:?}", n.highest_three());
 }
 ```
 

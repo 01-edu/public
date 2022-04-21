@@ -2,19 +2,20 @@
 
 ### Instructions
 
-A **function** called **odd_to_even** will be given, which returns a `Result`. If an error occurs the function will
-return a tuple with a string, stating the error, and a vector with the elements which causing the error.
+A **function** called **odd_to_even** will be given, which returns a `Result`. If there is an even value in the vector, the function will
+return a tuple with a string, stating the error, and a vector with the elements that caused the error.
+
 
 The objective is to execute the `odd_to_even` function and handle the error returned by it.
 
-Create the following functions which receives a vector :
+Create the following functions which receive a vector:
 
 - `expect` which returns the error adding the string "ERROR "
 - `unwrap_or` which in case of error returns an empty vector
-- `unwrap_err` which returns error if its `Ok` and returns the
+- `unwrap_err` which panics if the value is `Ok` and returns the
   string containing the error in case of `Err`
 - `unwrap` which unwraps the `Result`
-- `unwrap_or_else` which in case of error returns the vector of elements which causes the error
+- `unwrap_or_else` which in case of error returns the vector of elements that caused the error
 
 ### Notions
 

@@ -2,7 +2,9 @@
 
 ### Instructions:
 
+
 Create a function that borrows two slices and returns a hashmap where the first slice represents the keys and the second represents the values.
+- If the slices have different sizes, the function should return the hashmap with the size of the smallest list.
 
 ### Expected Function
 

@@ -19,7 +19,7 @@ In case something goes wrong, it should panic, with the error.
 ### Expected Function
 
 ```rust
-pub fn open_or_create(s: &str, content: &str) {
+pub fn open_or_create(file: &str, content: &str) {
 
 }
 ```

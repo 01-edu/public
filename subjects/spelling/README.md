@@ -22,9 +22,6 @@ Only positive numbers will be tested. (Up to a million).
 
 - [patterns](https://doc.rust-lang.org/book/ch18-00-patterns.html)
 
-### Dependencies
-
-rand = "0.7"
 
 ### Expected function
 

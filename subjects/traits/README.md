@@ -6,16 +6,22 @@ Imagine you are designing a new video game and you have to create food that the 
 
 There are two types of food for now:
 
-- Fruit: increase the strength by 4 unit per each kilogram of fruit consumed.
-- Meat: has the weight in kilograms -> `weight_in_kg` (which is the weight of the whole piece) and the fat_content which corresponds to the percentage of the weight which is pure fat (the rest is consider protein) each kilogram of protein gives 4 units of `strenght` and each kilogram of fat gives 9 units of `strength`.
+- Fruit: increase the strength by 4 units per each kilogram of fruit consumed.
+- Meat: has the weight in kilograms `weight_in_kg` (which is the weight of the whole piece) and the `fat_content` which corresponds to the percentage of the weight which is pure fat (the rest is considered protein) each kilogram of protein gives 4 units of `strength` and each kilogram of fat gives 9 units of `strength`.
 
-Define the `Food` trait for `Fruit` and `Meat`. The method require method `gives()` represents the energy that the food provides.
+Define the `Food` trait for `Fruit` and `Meat`. The required method `gives()` represents the energy that the food provides.
 
 Implement the `std::fmt::Display` trait for `Player` structure in a way that when using the template `{}` inside a println! macro it will print:
 
 - In the first line, the name of the player
 - In the second line the strength, score and the money
 - In the third line the weapons
+
+### Notions
+
+- [Traits](https://doc.rust-lang.org/book/ch10-02-traits.html)
+
+
 
 ### Expected Functions and Structures
 
@@ -45,7 +51,7 @@ impl Player {
 }
 
 pub trait Food {
-	fn gives(&self) -> u32;
+	fn gives(&self) -> f64;
 }
 
 impl Food for Fruit {

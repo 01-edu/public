@@ -29,6 +29,7 @@ impl Vector<T> {
 	}
 
 	pub fn dot(&self, other: &Self) -> Option<T> {
+	}
 }
 ```
 

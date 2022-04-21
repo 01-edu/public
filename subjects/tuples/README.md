@@ -4,7 +4,7 @@
 
 - Define a tuple structure to represent a `Student`.
 
-- Each student is identified by an id number of type i32, his/her name and his/her last name as a string Print the content of the tuple to stdout
+- Each student is identified by an id number of type i32, his/her name and his/her last name of type string. 
 
 - Then define three **functions** to return the id, first name and last name.
 
@@ -21,6 +21,10 @@
 - [Adding Useful Functionality with Derived Traits](https://doc.rust-lang.org/stable/book/ch05-02-example-structs.html?highlight=debug%20deriv#adding-useful-functionality-with-derived-traits)
 
 - [Chapter 7](https://doc.rust-lang.org/stable/book/ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html)
+
+### Dependencies
+
+meval = "0.2"
 
 ### Expected Functions
 

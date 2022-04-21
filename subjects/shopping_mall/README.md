@@ -6,10 +6,10 @@ Using the `mall` module provided create the following **functions** to help run 
 
 - `biggest_store`: receives a `mall::Mall` and returns the `Store` with the biggest `square_meters`;
 - `highest_paid_employees`: receives a `mall::Mall` and returns a vector containing the `Employee`(s) with the highest salaries;
-- `nbr_of_employees`: receives a `mall::Mall` and returns the number of employees and securities, as a `usize`, in that mall.
-- `fire_old_securities`: receives a `mall::Mall` and removes from the `mall::Mall.securities` all securities who are 50 years old or older.
-- `check_for_securities`: receives a `mall::Mall` and a vector of `Security` and, if there is not at least 1 security for every 200 square meters of floor size, a security should be added to the `mall::Mall.securities`
-- `cut_or_raise`: receives a `mall::Mall` and raises or cuts, the salary of every employee in the mall by 10%, if the employee works for more than 10 hours
+- `nbr_of_employees`: receives a `mall::Mall` and returns the number of employees and guards, as a `usize`, in that mall;
+- `fire_old_guards`: receives a `mall::Mall` and removes from the `mall::Mall.guards` all guards who are 50 years old or older;
+- `check_for_guards`: receives a `mall::Mall` and a vector of `Guard` and, if there is not at least 1 guard for every 200 square meters of floor size, a guard should be added to the `mall::Mall.guards`;
+- `cut_or_raise`: receives a `mall::Mall` and raises or cuts, the salary of every employee in the mall by 10%, if the employee works for more than 10 hours (consider that the guards are not employees from the mall).
 
 ### Expected Function
 
@@ -21,16 +21,16 @@ Using the `mall` module provided create the following **functions** to help run 
 #[derive(Debug, Clone, PartialEq)]
 pub struct Mall {
     pub name: String,
-    pub securities: Vec<security::Security>,
+    pub guards: Vec<guard::Guard>,
     pub floors: Vec<floor::Floor>,
 }
 
 impl Mall {
     #[allow(dead_code)]
-    pub fn new(name: &str, securities: Vec<security::Security>, floors: Vec<floor::Floor>) -> Mall {
+    pub fn new(name: &str, guards: Vec<guard::Guard>, floors: Vec<floor::Floor>) -> Mall {
         Mall {
             name: name.to_string(),
-            securities: securities,
+            guards: guards,
             floors: floors,
         }
     }
@@ -41,29 +41,29 @@ impl Mall {
     }
 
     #[allow(dead_code)]
-    pub fn hire_security(&mut self, security: security::Security) {
-        self.securities.push(security);
+    pub fn hire_guards(&mut self, guard: guard::Guard) {
+        self.guards.push(guard);
     }
 
     #[allow(dead_code)]
-    pub fn fire_security(&mut self, name: String) {
-        self.securities.retain(|x| x.name != name);
+    pub fn fire_guards(&mut self, name: String) {
+        self.guards.retain(|x| x.name != name);
     }
 }
 
-pub mod security {
+pub mod guard {
 
     #[derive(Debug, Clone, PartialEq)]
-    pub struct Security {
+    pub struct Guard {
         pub name: String,
         pub age: u8,
         pub years_experience: u8,
     }
 
-    impl Security {
+    impl Guard {
         #[allow(dead_code)]
-        pub fn new(name: &str, age: u8, years_experience: u8) -> Security {
-            Security {
+        pub fn new(name: &str, age: u8, years_experience: u8) -> Guard {
+            Guard {
                 name: name.to_string(),
                 age: age,
                 years_experience: years_experience,
@@ -210,9 +210,9 @@ use shopping_mall::*;
 
 fn main() {
     let secs = vec![
-        mall::security::Security::new("John Oliver", 34, 7),
-        mall::security::Security::new("Logan West", 23, 2),
-        mall::security::Security::new("Bob Schumacher", 53, 15),
+        mall::guard::Guard::new("John Oliver", 34, 7),
+        mall::guard::Guard::new("Logan West", 23, 2),
+        mall::guard::Guard::new("Bob Schumacher", 53, 15),
     ];
 
     let footzo_emp = vec![
@@ -288,6 +288,6 @@ And its ouput:
 
 ```rs
 $ cargo run
-Mall { name: "La Vie Funchal", securities: [Security { name: "John Oliver", age: 34, years_experience: 7 }, Security { name: "Logan West", age: 23, years_experience: 2 }, Security { name: "Bob Schumacher", age: 53, years_experience: 15 }], floors: [Floor { name: "Ground Floor", stores: [Store { name: "Footzo", square_meters: 50, employees: [Employee { name: "Finbar Haines", age: 36, working_hours: (9, 14), salary: 650.88 }, Employee { name: "Roksanna Rocha", age: 45, working_hours: (13, 22), salary: 772.0 }, Employee { name: "Sienna-Rose Penn", age: 26, working_hours: (9, 22), salary: 1000.43 }] }, Store { name: "Swashion", square_meters: 43, employees: [Employee { name: "Abdallah Stafford", age: 54, working_hours: (8, 22), salary: 1234.21 }, Employee { name: "Marian Snyder", age: 21, working_hours: (8, 14), salary: 831.9 }, Employee { name: "Amanda Mclean", age: 29, working_hours: (13, 22), salary: 1222.12 }, Employee { name: "Faizaan Castro", age: 32, working_hours: (11, 18), salary: 1106.43 }] }], size_limit: 300 }, Floor { name: "Food Floor", stores: [Store { name: "PizBite", square_meters: 60, employees: [Employee { name: "Juniper Cannon", age: 21, working_hours: (16, 23), salary: 804.35 }, Employee { name: "Alena Simon", age: 28, working_hours: (9, 15), salary: 973.54 }, Employee { name: "Yasemin Collins", age: 29, working_hours: (9, 19), salary: 986.33 }, Employee { name: "Areeb Roberson", age: 54, working_hours: (9, 22), salary: 957.82 }, Employee { name: "Rocco Amin", age: 44, working_hours: (13, 23), salary: 689.21 }] }, Store { name: "Chillout Grill", square_meters: 50, employees: [Employee { name: "Rhian Crowther", age: 45, working_hours: (9, 15), salary: 841.18 }, Employee { name: "Nikkita Steadman", age: 52, working_hours: (14, 22), salary: 858.61 }, Employee { name: "Reginald Poole", age: 32, working_hours: (9, 22), salary: 1197.64 }, Employee { name: "Minnie Bull", age: 54, working_hours: (14, 22), salary: 1229.73 }] }, Store { name: "Sumo Food", square_meters: 30, employees: [Employee { name: "Chantelle Barajas", age: 20, working_hours: (8, 22), salary: 969.22 }, Employee { name: "Hywel Rudd", age: 49, working_hours: (12, 22), salary: 695.74 }, Employee { name: "Marianne Beasley", age: 55, working_hours: (8, 14), salary: 767.83 }] }], size_limit: 500 }, Floor { name: "Supermarket", stores: [Store { name: "Pretail", square_meters: 950, employees: [Employee { name: "Amara Schaefer", age: 23, working_hours: (9, 14), salary: 796.21 }, Employee { name: "Yara Wickens", age: 39, working_hours: (9, 14), salary: 853.42 }, Employee { name: "Tomi Boyer", age: 64, working_hours: (9, 14), salary: 881.83 }, Employee { name: "Greta Dickson", age: 42, working_hours: (9, 14), salary: 775.1 }, Employee { name: "Caroline Finnegan", age: 41, working_hours: (9, 14), salary: 702.92 }, Employee { name: "Indiana Baxter", age: 33, working_hours: (13, 20), salary: 991.71 }, Employee { name: "Jadine Page", age: 48, working_hours: (13, 20), salary: 743.21 }, Employee { name: "Husna Ryan", age: 43, working_hours: (13, 20), salary: 655.75 }, Employee { name: "Tyler Hunt", age: 63, working_hours: (13, 20), salary: 668.25 }, Employee { name: "Dahlia Caldwell", age: 56, working_hours: (13, 20), salary: 781.38 }, Employee { name: "Chandler Mansell", age: 20, working_hours: (19, 24), salary: 656.75 }, Employee { name: "Mohsin Mcgee", age: 30, working_hours: (19, 24), salary: 703.83 }, Employee { name: "Antoine Goulding", age: 45, working_hours: (19, 24), salary: 697.12 }, Employee { name: "Mark Barnard", age: 53, working_hours: (19, 24), salary: 788.81 }] }], size_limit: 1000 }] }
+Mall { name: "La Vie Funchal", guards: [Guard { name: "John Oliver", age: 34, years_experience: 7 }, Guard { name: "Logan West", age: 23, years_experience: 2 }, Guard { name: "Bob Schumacher", age: 53, years_experience: 15 }], floors: [Floor { name: "Ground Floor", stores: [Store { name: "Footzo", square_meters: 50, employees: [Employee { name: "Finbar Haines", age: 36, working_hours: (9, 14), salary: 650.88 }, Employee { name: "Roksanna Rocha", age: 45, working_hours: (13, 22), salary: 772.0 }, Employee { name: "Sienna-Rose Penn", age: 26, working_hours: (9, 22), salary: 1000.43 }] }, Store { name: "Swashion", square_meters: 43, employees: [Employee { name: "Abdallah Stafford", age: 54, working_hours: (8, 22), salary: 1234.21 }, Employee { name: "Marian Snyder", age: 21, working_hours: (8, 14), salary: 831.9 }, Employee { name: "Amanda Mclean", age: 29, working_hours: (13, 22), salary: 1222.12 }, Employee { name: "Faizaan Castro", age: 32, working_hours: (11, 18), salary: 1106.43 }] }], size_limit: 300 }, Floor { name: "Food Floor", stores: [Store { name: "PizBite", square_meters: 60, employees: [Employee { name: "Juniper Cannon", age: 21, working_hours: (16, 23), salary: 804.35 }, Employee { name: "Alena Simon", age: 28, working_hours: (9, 15), salary: 973.54 }, Employee { name: "Yasemin Collins", age: 29, working_hours: (9, 19), salary: 986.33 }, Employee { name: "Areeb Roberson", age: 54, working_hours: (9, 22), salary: 957.82 }, Employee { name: "Rocco Amin", age: 44, working_hours: (13, 23), salary: 689.21 }] }, Store { name: "Chillout Grill", square_meters: 50, employees: [Employee { name: "Rhian Crowther", age: 45, working_hours: (9, 15), salary: 841.18 }, Employee { name: "Nikkita Steadman", age: 52, working_hours: (14, 22), salary: 858.61 }, Employee { name: "Reginald Poole", age: 32, working_hours: (9, 22), salary: 1197.64 }, Employee { name: "Minnie Bull", age: 54, working_hours: (14, 22), salary: 1229.73 }] }, Store { name: "Sumo Food", square_meters: 30, employees: [Employee { name: "Chantelle Barajas", age: 20, working_hours: (8, 22), salary: 969.22 }, Employee { name: "Hywel Rudd", age: 49, working_hours: (12, 22), salary: 695.74 }, Employee { name: "Marianne Beasley", age: 55, working_hours: (8, 14), salary: 767.83 }] }], size_limit: 500 }, Floor { name: "Supermarket", stores: [Store { name: "Pretail", square_meters: 950, employees: [Employee { name: "Amara Schaefer", age: 23, working_hours: (9, 14), salary: 796.21 }, Employee { name: "Yara Wickens", age: 39, working_hours: (9, 14), salary: 853.42 }, Employee { name: "Tomi Boyer", age: 64, working_hours: (9, 14), salary: 881.83 }, Employee { name: "Greta Dickson", age: 42, working_hours: (9, 14), salary: 775.1 }, Employee { name: "Caroline Finnegan", age: 41, working_hours: (9, 14), salary: 702.92 }, Employee { name: "Indiana Baxter", age: 33, working_hours: (13, 20), salary: 991.71 }, Employee { name: "Jadine Page", age: 48, working_hours: (13, 20), salary: 743.21 }, Employee { name: "Husna Ryan", age: 43, working_hours: (13, 20), salary: 655.75 }, Employee { name: "Tyler Hunt", age: 63, working_hours: (13, 20), salary: 668.25 }, Employee { name: "Dahlia Caldwell", age: 56, working_hours: (13, 20), salary: 781.38 }, Employee { name: "Chandler Mansell", age: 20, working_hours: (19, 24), salary: 656.75 }, Employee { name: "Mohsin Mcgee", age: 30, working_hours: (19, 24), salary: 703.83 }, Employee { name: "Antoine Goulding", age: 45, working_hours: (19, 24), salary: 697.12 }, Employee { name: "Mark Barnard", age: 53, working_hours: (19, 24), salary: 788.81 }] }], size_limit: 1000 }] }
 $
 ```

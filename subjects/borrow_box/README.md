@@ -4,18 +4,18 @@
 
 In this exercise, a **CRUD** functionality will have to be created. Therefore the following functions will have to be defined :
 
-- `new`, which receives two players and initializes them with a name and a score. This functions should
+- `new`, which receives two players and initializes them with a name and a score. This function should
   return the structure wrapped in a Box.
 
 - `read_winner`, which returns a tuple with the name and the score of the player who is winning.
   In case none of the players are winning, it should return the same tuple with the string "Same score! tied" and the tied score.
 
-  - `update_score`, which receives the name of a player.
-    This function should increment the score of the player. The score should only be increased if it does not pass the `nbr_of_games`.
-    Example: if the nbr_of_games is 3 then the winner of the game should be the one who is the best out of three games. So if one play as 2 wins then
-    he is the winner and the function should not increase the score anymore for either players.
+- `update_score`, which receives the name of a player.
+  This function should increment the score of the player. The score should only be increased if it does not pass the `nbr_of_games`.
+  Example: if the nbr_of_games is 3 then the winner of the game should be the one who is the best out of three games. So if one play has 2 wins then
+  he is the winner and the function should not increase the score anymore for either player.
 
-- `delete`, which takes the ownership of the boxed game and returning a string : "Game deleted: id -> 0".
+- `delete`, which takes the ownership of the boxed game and returns a string: "game deleted: id -> 0".
 
 ### Notions
 
@@ -26,8 +26,12 @@ In this exercise, a **CRUD** functionality will have to be created. Therefore th
 ```rust
 #[derive(Debug, Clone, Eq, PartialEq)]
 pub struct Game {
-    // expected public fields
+    pub id: u32,
+    pub p1: (String, u16),
+    pub p2: (String, u16),
+    pub nbr_of_games: u16
 }
+
 impl Game {
     pub fn new(i: u32, pl1: String, pl2: String, n: u16) -> Box<Game> {
 

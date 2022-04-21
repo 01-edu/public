@@ -61,6 +61,9 @@ pub struct Card {
 	pub suit: Suit,
 	pub rank: Rank,
 }
+
+pub fn winner_card(car: Card) -> bool{
+}
 ```
 
 ### Usage
