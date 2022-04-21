@@ -18,7 +18,7 @@ Create a structure called `Form` that will have the following fields:
 - `first_name`, that will be a string
 - `last_name`, that will be a string
 - `birth`, of type `NaiveDate` that will convert a string "2015-09-05" to a date of that format
-- `sex`, SexType that must be a `enum` with the fields `Male` and `Female`
+- `fav_colour`, of type Color that must be a `enum` with the fields `Red`, `Blue`  and `Green`
 - `birth_location`, that will be a string
 - `password`, that will be a string
 
@@ -65,7 +65,7 @@ impl FErr {
 }
 
 #[derive(Debug, Eq, PartialEq)]
-pub enum SexType {
+pub enum Color {
 }
 
 #[derive(Debug, Eq, PartialEq)]
@@ -74,12 +74,15 @@ pub struct Form {
 }
 
 impl Form {
-    pub fn new(first_name: String,
-           last_name: String,
-           birth: NaiveDate,
-           sex: SexType,
-           birth_location: String,
-           password: String) -> Form {}
+    pub fn new(
+        first_name: String,
+        last_name: String,
+        birth: NaiveDate,
+        fav_colour: Color,
+        birth_location: String,
+        password: String,
+    ) -> Form {}
+    
     pub fn validate(&self) -> Result<Vec<&str>, FErr> {}
 }
 ```
@@ -96,9 +99,10 @@ fn main() {
         String::from("Lee"),
         String::from("Silva"),
         create_date("2015-09-05"),
-        SexType::Male,
+        Color::Red,
         String::from("Africa"),
-        String::from("qwqwsa1dty_"));
+        String::from("qwqwsa1dty_"),
+    );
 
     println!("{:?}", form_output);
     println!("{:?}", form_output.validate().unwrap());
@@ -122,11 +126,11 @@ And its output:
 
 ```console
 $ cargo run
-Form { first_name: "Lee", last_name: "Silva", birth: 2015-09-05, sex: Male, birth_location: "Africa", password: "qwqwsa1dty_" }
+Form { first_name: "Lee", last_name: "Silva", birth: 2015-09-05, fav_colour: Red, birth_location: "Africa", password: "qwqwsa1dty_" }
 ["Valid first name", "Valid password"]
-FErr { form_values: ("first_name", ""), date: "2020-12-28 13:29:11", err: "No user name" }
-FErr { form_values: ("password", "dty_1"), date: "2020-12-28 13:29:11", err: "At least 8 characters" }
-FErr { form_values: ("password", "asdasASd(_"), date: "2020-12-28 13:29:11", err: "Combination of different ASCII character types (numbers, letters and none alphanumeric characters)" }
-FErr { form_values: ("password", "asdasASd123SA"), date: "2020-12-28 13:29:11", err: "Combination of different ASCII character types (numbers, letters and none alphanumeric characters)" }
+FErr { form_values: ("first_name", ""), date: "2022-04-21 09:18:12", err: "No user name" }
+FErr { form_values: ("password", "dty_1"), date: "2022-04-21 09:18:12", err: "At least 8 characters" }
+FErr { form_values: ("password", "asdasASd(_"), date: "2022-04-21 09:18:12", err: "Combination of different ASCII character types (numbers, letters and none alphanumeric characters)" }
+FErr { form_values: ("password", "asdasASd123SA"), date: "2022-04-21 09:18:12", err: "Combination of different ASCII character types (numbers, letters and none alphanumeric characters)" }
 $
 ```
