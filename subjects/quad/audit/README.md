@@ -2,6 +2,10 @@
 
 > ***NOTE: If you are an admin and you want to test this project, follow the instructions [in the this subject](https://github.com/01-edu/go-tests/blob/master/raid-testing.md) before you proceed to the questions.***
 
+##### Open the repository of the project and check the submitted files
+
+###### Can you confirm that the `"go.mod"` file is present and you can run the program?
+
 ##### Try running the function with the arguments: `"x=5 and y=3"`
 
 ```

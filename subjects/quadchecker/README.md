@@ -12,6 +12,8 @@ Create a program `quadchecker` that takes a `string` as an argument and displays
 
 - If there is more than one `quad` matches, the program must display them all alphabetically ordered and separated by a `||`.
 
+Make sure you submit all the necessary files to run the program.
+
 ### Usage
 
 - If it's `quadA`
