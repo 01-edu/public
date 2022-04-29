@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Create a `concatStr` function that takes 2 arguments and concatenate them
+Create a function named `concatStr` which takes 2 arguments and concatenates them.
 
 ### Notions
 
-- [nan-academy.github.io/js-training/examples/functions.js](https://nan-academy.github.io/js-training/examples/functions.js)
-- [nan-academy.github.io/js-training/examples/primitive-and-operators.js](https://nan-academy.github.io/js-training/examples/primitive-and-operators.js)
+- [Functions.js](https://nan-academy.github.io/js-training/examples/functions.js)
+- [Primitive and Operators.js](https://nan-academy.github.io/js-training/examples/primitive-and-operators.js)
