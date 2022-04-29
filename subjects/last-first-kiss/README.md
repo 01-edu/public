@@ -4,16 +4,13 @@
 
 Create 3 functions:
 
-- a `first` function that takes an array or a string
-  and return the first element.
+- `first`: that takes an array or a string and returns its first element or character.
 
-- a `last` function that takes an array or a string
-  and return the last element.
+- `last`: that takes an array or a string and return its last element or character.
 
-- a `kiss` function that returns an array of 2 elements
-  the last and the first element, in that order
+- `kiss`: that takes an array or string, and returns an array of 2 elements. The returned array should contain the last and first elements or characters, in that order.
 
 ### Notions
 
-- [nan-academy.github.io/js-training/examples/data-structures.js](https://nan-academy.github.io/js-training/examples/data-structures.js)
-- [nan-academy.github.io/js-training/examples/get.js](https://nan-academy.github.io/js-training/examples/get.js)
+- [Data Structures.js](https://nan-academy.github.io/js-training/examples/data-structures.js)
+- [Get.js](https://nan-academy.github.io/js-training/examples/get.js)
