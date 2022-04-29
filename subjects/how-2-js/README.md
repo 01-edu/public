@@ -2,48 +2,50 @@
 
 ### Instructions
 
-Hello and welcome to the JS piscine, first you will have to learn
-to execute javascript.
+Welcome to the JS piscine 👋.
 
-Being a special child, JS can run in different **runtime**, what you can
-do with it greatly depend of your runtime.
+First you will have to learn to execute JavaScript.
 
-Luckily you don't need to install anything for that since all you
-need is a web browser.
+JavaScript can run in different **runtime** environments. What you can do with JavaScript will greatly depend on the runtime. Even different web browsers (Chrome, Firefox, Safari etc) count as different runtime environments.
 
-> Main runtime for executing JS are: any web browser, NodeJS and Deno.
+We'll start by running JavaScript in your browser, so you don't need to install anything to get started.
 
-Let's make a hello world:
+Some common JavaScript runtime environments:
+- Web browsers
+- [Node.js](https://nodejs.org/)
+- [Deno](https://deno.land/)
 
-```bash
-# first we create the javascript file
-echo "console.log('Hello World')" > how-2-js.js
+Let's make a hello world. First we create the JavaScript file
 
-# To run JS in your browser you need to import it from an HTML page:
-echo '<script type="module" src="how-2-js.js"></script>' > index.html
+```sh
+$ echo "console.log('Hello World')" > how-2-js.js
+```
+To run JavaScript in your browser, you can import it into a HTML page:
+```sh
+$ echo '<script type="module" src="how-2-js.js"></script>' > index.html
+```
 
-# Finally let's create a simple web server
-&>/dev/null python3 -m http.server &
+Let's create a simple web server:
+```sh
+$ &>/dev/null python3 -m http.server &
+```
 
-# Now open your browser at the specified port
+Now open your browser at the specified port. You'll use an appropriate command for your system:
+
+- Linux: `xdg-open`
+- macOS: `open`
+- Windows: `start`
+```sh
 xdg-open 'http://localhost:8000'
 ```
 
-> `xdg-open` find your default application for the given argument
-> on mac it's just `open` and it's `start` on windows
 
-You can now open your web browser console (`ctrl`+`shift`+`i`)
-and you should see your hello world.
+You can now open your web browser console. From Google Chrome, press **Command+Option+J** (Mac) or **Control+Shift+J** (Windows, Linux, ChromeOS), and you should see your hello world.
 
-> The console is a very handy place to test code and explore how the language
-> works, don't be shy and play in it !
+The console is a handy place to test your code.
 
-Great ! you are all set, if you want to re-execute your script, just refresh.
+You are all set. If you want to re-execute your script, just refresh.
 
-You now just have to create a repository named `((ROOT))`,
-which will hold all your solutions for this piscine
-and just add your 2 generated files to it, we will start slow for now... 🐢
+Create a repository named `((ROOT))` which will hold all your solutions for this piscine. Add your 2 generated files to it.
 
-### Recommendation
-
-Videos designed to give **hints** are assigned to each quest. It is strongly suggested to watch them as you go.
+We'll start slow for now... 🐢
