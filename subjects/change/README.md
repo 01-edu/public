@@ -4,23 +4,20 @@
 
 Create 2 functions:
 
-- `get`: a function that takes a key and return the corresponding
-  value from the sourceObject
+- `get`: a function that takes a key and returns the corresponding value from the `sourceObject`.
 
-- `set`: a function that takes a key and a value update the
-  value for the corresponding property of the sourceObject
-  and return the set value
+- `set`: a function that takes a key and a value. Update the value for the corresponding property of the `sourceObject` and return the value.
 
 ### Notions
 
-- [nan-academy.github.io/js-training/examples/functions.js](https://nan-academy.github.io/js-training/examples/functions.js)
-- [nan-academy.github.io/js-training/examples/data-structures.js](https://nan-academy.github.io/js-training/examples/data-structures.js)
-- [nan-academy.github.io/js-training/examples/get.js](https://nan-academy.github.io/js-training/examples/get.js)
-- [nan-academy.github.io/js-training/examples/set.js](https://nan-academy.github.io/js-training/examples/set.js)
+- [Functions](https://nan-academy.github.io/js-training/examples/functions.js)
+- [Data Structures](https://nan-academy.github.io/js-training/examples/data-structures.js)
+- [Get](https://nan-academy.github.io/js-training/examples/get.js)
+- [Set](https://nan-academy.github.io/js-training/examples/set.js)
 
 ### Code provided
 
-> all code provided will be added to your solution and doesn't need to be submited.
+> The provided code will be added to your solution, and does not need to be submitted.
 
 ```js
 const sourceObject = {
