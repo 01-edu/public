@@ -39,11 +39,7 @@ exit
 student$
 ```
 
-###### Is the file system of the containers well organized?
-
 ###### Does the DockerFile contain some [metadata](https://docs.docker.com/config/labels-custom-metadata/) applied to the docker object?
-
-###### Does the project present no [unused object](https://docs.docker.com/config/pruning/)?
 
 ###### As an auditor, is this project up to every standard? If not, why are you failing the project?(Empty Work, Incomplete Work, Invalid compilation, Cheating, Crashing, Leaks)
 
