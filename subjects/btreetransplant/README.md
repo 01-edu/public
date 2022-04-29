@@ -30,8 +30,8 @@ func main() {
 	piscine.BTreeInsertData(root, "7")
 	piscine.BTreeInsertData(root, "5")
 	node := piscine.BTreeSearchItem(root, "1")
-	replacement := &piscine.TreeNode{Data: "3"}
-	root = piscine.BTreeTransplant(root, node, replacement)
+	rplc := &piscine.TreeNode{Data: "3"}
+	root = piscine.BTreeTransplant(root, node, rplc)
 	piscine.BTreeApplyInorder(root, fmt.Println)
 }
 ```
