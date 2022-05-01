@@ -4,16 +4,12 @@
 
 Write 5 functions:
 
-- `words` that takes a string
-  and split it into an array of strings on spaces
-- `sentence` that takes an array of strings and join them with spaces
-- `yell` that take a string and return it in upper case
-- `whisper` that take a string and return it in lower case
-  and surround it with `*`
-- Create a `capitalize` function that takes a string
-  and transforms it to upper case only for the first letter,
-  and in lowercase for the rest of the string
+- `words`: that takes a string, splits it by spaces, and returns an array of those substrings.
+- `sentence`: that takes an array of strings, and joins them with spaces to return a single string.
+- `yell`: that takes a string and returns it in upper case.
+- `whisper`: that takes a string and returns it in lower case, surrounded by `*`.
+- `capitalize`: that takes a string and transforms it so that the first character is upper case, and the subsequent characters are lower case.
 
 ### Notions
 
-- [nan-academy.github.io/js-training/examples/methods.js](https://nan-academy.github.io/js-training/examples/methods.js)
+- [Methods](https://nan-academy.github.io/js-training/examples/methods.js)
