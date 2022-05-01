@@ -4,17 +4,17 @@
 
 Write a bunch of functions which converts data from one type to another:
 
-- `arrToSet` from `Array` to `Set`.
-- `arrToStr` from `Array` to `string`.
-- `setToArr` from `Set` to `Array`.
-- `setToStr` from `Set` to `string`.
-- `strToArr` from `string` to `Array`.
-- `strToSet` from `string` to `Set`.
-- `mapToObj` from `Map` to `Object`.
-- `objToArr` from `Object` to `Array`.
-- `objToMap` from `Object` to `Map`.
-- `arrToObj` from `Array` to `Object`.
-- `strToObj` from `string` to `Object`.
+- `arrToSet`: from `Array` to `Set`.
+- `arrToStr`: from `Array` to `string`.
+- `setToArr`: from `Set` to `Array`.
+- `setToStr`: from `Set` to `string`.
+- `strToArr`: from `string` to `Array`.
+- `strToSet`: from `string` to `Set`.
+- `mapToObj`: from `Map` to `Object`.
+- `objToArr`: from `Object` to `Array`.
+- `objToMap`: from `Object` to `Map`.
+- `arrToObj`: from `Array` to `Object`.
+- `strToObj`: from `string` to `Object`.
 
 Finally, write a function named `superTypeOf` that unlike `typeof` returns a specific values for advanced types like `Map` and `Set`.
 
