@@ -2,24 +2,20 @@
 
 ### Instructions
 
-Create the `cutFirst` function that takes a string
-and remove the 2 first characters.
+Create some functions, which each take a `string` as an argument:
 
-Create the `cutLast` function that takes a string
-and remove the 2 last characters.
+- `cutFirst`: returns the string with the first 2 characters removed.
 
-Create the `cutFirstLast` function that takes a string as parameter
-and remove the 2 first characters and 2 last characters.
+- `cutLast` returns the string with the last 2 characters removed.
 
-Create a `keepFirst` function that takes a string as parameter
-and return the string only keeping the 2 first characters.
+- `cutFirstLast` returns the string with the first 2 characters and the last 2 characters removed.
 
-Create a `keepLast` function that takes a string as parameter
-and return the string only keeping the 2 last characters.
+- `keepFirst` returns only the first 2 characters.
 
-Create a `keepFirstLast` function that takes a string as parameter
-and only keep 2 first characters and 2 last characters.
+- `keepLast` returns only the last 2 characters.
+
+- `keepFirstLast` returns the first 2 characters, and the last 2 characters.
 
 ### Notions
 
-- [devdocs.io/javascript/global_objects/array/slice](https://devdocs.io/javascript/global_objects/array/slice)
+- [Array.slice](https://devdocs.io/javascript/global_objects/array/slice)
