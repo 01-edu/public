@@ -2,15 +2,15 @@
 
 ### Instructions
 
-Create the `flat` functions that works like the `.flat` array method
+Create a function named `flat` that works like `Array.flat()`, except its first argument is the array.
 
 ### Notions
 
-- [devdocs.io/javascript/global_objects/array/flat](https://devdocs.io/javascript/global_objects/array/flat)
+- [Flat](https://devdocs.io/javascript/global_objects/array/flat)
 
 ### Code provided
 
-> all code provided will be added to your solution and doesn't need to be submited.
+> The provided code will be added to your solution, and does not need to be submitted.
 
 ```js
 Array.prototype.flat = undefined
