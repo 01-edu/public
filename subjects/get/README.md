@@ -2,13 +2,12 @@
 
 ### Instructions
 
-Create the `get` function.
-It takes 2 arguments:
+Create a function named `get` which takes two arguments:
 
-- `src` an object
-- `path` a string
+- `src`: an object.
+- `path`: a string representing a path.
 
-And returns the value at the given string path.
+Your function will return the value at the given `path` in the `src` object.
 
 ### Example:
 
