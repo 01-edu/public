@@ -2,27 +2,23 @@
 
 ### Instructions
 
-Create 3 functions:
+Create 3 functions which accept an array to be searched, and a value to be matched.
 
-- `indexOf` which returns the index of the first occurrence of a value and takes as arguments an array to be searched, the value to be matched, and optionally the index from where to start searching from.
-- `lastIndexOf` which works just like the previous function but returns the index of the last occurrence of a value
-- `includes` which returns true if the value was found in the array
+- `indexOf`: which returns the index of the first occurrence. It also accepts an **optional** index from where the search should begin. If the value was not found, `-1` is returned.
+- `lastIndexOf`: which works just like your `indexOf` function, but returns the index of the last occurrence.
+- `includes`: which returns `true` if the value was found in the array, and `false` otherwise.
 
-> If a value is not found, the returned index is -1
-
-> functions should have an array element as first argument,
-> both `indexOf` and `lastIndexOf` take an additional `fromIndex` argument
-> that allows you to begin searching from a specific index and it will work exactly like in the original methods.
+> Of course you **must not** use any of `Array.indexOf()`, `Array.lastIndexOf()` or `Array.includes()`.
 
 ### Notions
 
-- [devdocs.io/javascript/global_objects/array/indexof](https://devdocs.io/javascript/global_objects/array/indexof)
-- [devdocs.io/javascript/global_objects/array/lastindexof](https://devdocs.io/javascript/global_objects/array/lastindexof)
-- [devdocs.io/javascript/global_objects/array/includes](https://devdocs.io/javascript/global_objects/array/includes)
+- [Array.indexOf](https://devdocs.io/javascript/global_objects/array/indexof)
+- [Array.lastIndexOf](https://devdocs.io/javascript/global_objects/array/lastindexof)
+- [Array.includes](https://devdocs.io/javascript/global_objects/array/includes)
 
 ### Code provided
 
-> all code provided will be added to your solution and doesn't need to be submitted.
+> The provided code will be added to your solution, and does not need to be submitted.
 
 ```js
 Array.prototype.indexOf = undefined
