@@ -2,9 +2,7 @@
 
 ### Instructions
 
-Create a `reverse` function that works on both arrays and strings.
-
-Like `[].reverse()` but working also for strings (without using the actual method)
+Create a function named `reverse` which accepts an array or a string. It should work like `Array.reverse()`, and of course you cannot use that.
 
 ### Notions
 
@@ -12,7 +10,7 @@ Like `[].reverse()` but working also for strings (without using the actual metho
 
 ### Code provided
 
-> all code provided will be added to your solution and doesn't need to be submited.
+> The provided code will be added to your solution, and does not need to be submitted.
 
 ```js
 Array.prototype.reverse = undefined
