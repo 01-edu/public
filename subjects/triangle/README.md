@@ -2,14 +2,15 @@
 
 ### Instructions
 
-Create a `triangle` function that takes a string and a number as parameters
-and return a triangle constructed by the string passed as argument and with the depth
-of the number passed as argument.
+Create a function named `triangle` that takes a string and a number as arguments. Your function will return a string representing a triangle.
 
-### Output example
+The string will denote the characters which construct the triangle, and the number denotes its depth.
 
-- `*` character and depth of 5:
+### Example
 
+```js
+console.log(triangle('*', 5))
+```
 ```
 *
 **
@@ -22,5 +23,5 @@ of the number passed as argument.
 
 ### Notions
 
-- [nan-academy.github.io/js-training/examples/loops](https://nan-academy.github.io/js-training/examples/loops.js)
-- [nan-academy.github.io/js-training/examples/recursion](https://nan-academy.github.io/js-training/examples/recursion.js)
+- [Loops](https://nan-academy.github.io/js-training/examples/loops.js)
+- [Recursion](https://nan-academy.github.io/js-training/examples/recursion.js)
