@@ -2,11 +2,7 @@
 
 ### Instructions
 
-Create a `pyramid` function that takes a string and a number as parameters
-and return a pyramid constructed by the string passed as argument and with the depth
-of the number passed as argument.
-
-Just like triangle
+Create a function named `pyramid` which works just like your `triangle` function. But, it should be pyramid shaped.
 
 ### Output example
 
@@ -24,5 +20,5 @@ Just like triangle
 
 ### Notions
 
-- [nan-academy.github.io/js-training/examples/loops](https://nan-academy.github.io/js-training/examples/loops.js)
-- [nan-academy.github.io/js-training/examples/recursion](https://nan-academy.github.io/js-training/examples/recursion.js)
+- [Loops](https://nan-academy.github.io/js-training/examples/loops.js)
+- [Recursion](https://nan-academy.github.io/js-training/examples/recursion.js)
