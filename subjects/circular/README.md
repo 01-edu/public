@@ -6,6 +6,7 @@ Create an object named `circular` that has a property named `circular` with itse
 
 ### Notions
 
-- [Data Structures.js](https://nan-academy.github.io/js-training/examples/data-structures.js)
+- [Data Structures](https://nan-academy.github.io/js-training/examples/data-structures.js)
 - [Get](https://nan-academy.github.io/js-training/examples/get.js)
-- [Set](https://nan-academy.github.io/js-training/examples/set.js)
+- [Sets
+](https://nan-academy.github.io/js-training/examples/set.js)
