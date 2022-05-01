@@ -8,9 +8,8 @@ The string will denote the characters which construct the triangle, and the numb
 
 ### Example
 
-```js
-console.log(triangle('*', 5))
-```
+- `*` character and depth of `5`:
+
 ```
 *
 **
