@@ -4,7 +4,7 @@
 
 Create a function named `triangle` that takes a string and a number as arguments. Your function will return a string representing a triangle.
 
-The string will denote the characters which construct the triangle, and the number denotes its depth.
+The string will denote the characters which construct the triangle, and the number denotes its height.
 
 ### Example
 
