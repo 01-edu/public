@@ -2,13 +2,12 @@
 
 ### Instructions
 
-Write two functions:
+Create two functions which accept a `string`, and return a `string`:
 
-- `RNA` that given a DNA strand it must return is complement RNA strand
-- `DNA` that given a RNA strand it must return is complement DNA strand (invert RNA)
+- `RNA`: that converts a DNA strand into its compliment RNA strand.
+- `DNA`: that converts an RNA strand into its compliment DNA strand.
 
-Since both strands are a sequence of nucleotides. It will be given the four nucleotides and its complements
-
+Compliments:
 ```
 DNA | RNA
  G  -  C
@@ -17,4 +16,4 @@ DNA | RNA
  A  -  U
 ```
 
-Each strand must be represented as upper case string, without spaces, ex: `'ATCG'` is a valid DNA strand.
+Each strand must be represented as upper case `string`, without spaces, eg: `"ATCG"` is a valid DNA strand.
