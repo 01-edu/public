@@ -18,7 +18,10 @@ If `file1.txt` & `file2.txt` contains :
 
 ```
 abcdefghijklmnopqrstuvwxyz
+
 ```
+
+**Note** that the files above end with a new line.
 
 Normal cases :
 
