@@ -2,9 +2,8 @@
 
 ### Instructions
 
-Make a function `ionOut` that receives a string and returns an array with every
-word containing 'ion' following a t, without the 'ion'.
+Create a function named `ionOut`, that receives a `string` and returns an array with every word containing `'ion'` following a `'t'`. The words should be returned without the `'ion'` part.
 
 ### Notions
 
-- [github.com/ziishaned/learn-regex#4-lookarounds](https://github.com/ziishaned/learn-regex#4-lookarounds)
+- [Learn RegEx Lookarounds](https://github.com/ziishaned/learn-regex#4-lookarounds)
