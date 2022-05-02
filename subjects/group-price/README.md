@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Create a function named `groupPrice`, that can prices in a given string.
+Create a function named `groupPrice`, that can find prices in a given string.
 
-Your function will return s 2D array with the full price breakdown.
+Your function will return 2D array with the full price breakdown.
 
 If there is no match, your function should return an empty array.
 
@@ -13,4 +13,3 @@ Given price of `USD12.31`:
 ```
 [["USD12.31", "12", "31"]]
 ```
-
