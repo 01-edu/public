@@ -2,19 +2,21 @@
 
 ### Instructions
 
-Create 4 regular expression in variables:
+Have you been been pondering over the etymology of `grep`?
 
-- `normal` matches with the expression 'hi'.
+Create 4 regular expression variables:
 
-- `begin` matches with the expression 'hi',
-  only when it is in the beginning.
+- `normal`: matches with the expression 'hi'.
 
-- `end` matches with the expression 'hi',
-  only when it is in the end.
+- `begin`: matches with the expression 'hi',
+  only when it is at the beginning.
 
-- `beginEnd` matches with the expression 'hi',
+- `end`: matches with the expression 'hi',
+  only when it is at the end.
+
+- `beginEnd`: matches with the expression 'hi',
   only when it is exactly hi.
 
 ### Notions
 
-- [github.com/ziishaned/learn-regex#28-anchors](https://github.com/ziishaned/learn-regex#28-anchors)
+- [RegEx Anchors](https://github.com/ziishaned/learn-regex#28-anchors)
