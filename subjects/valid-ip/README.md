@@ -2,14 +2,16 @@
 
 ### Instructions
 
-Write a function called `findIP` that returns array of valid IPs, with or without a port, in a string passed as parameter
+Create a function named `findIP`, that returns an array of valid IP addresses from a given string. These addresses may or may not have a port.
 
-A valid IP has the following format :
+For the IP part, the syntax will be as follows, where `x` is a number from 0-255. Values with leading zeros are not valid:
+```
+x.x.x.x
+```
 
-- Must be in the form of xxx.xxx.xxx.xxx
-- xxx is a number from 0-255
-- You cannot have a 0 before a number, example 0xx
+> Don't forget to research the syntax of IP ports.
+  For this task, you **only** need to concern yourself with `<host>` and `<port>`. Don't worry about `<scheme>` or anything else.
 
 ### Notions
 
-- [github.com/ziishaned/learn-regex](https://github.com/ziishaned/learn-regex)
+- [Learn RegEx](https://github.com/ziishaned/learn-regex)
