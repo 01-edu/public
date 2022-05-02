@@ -41,12 +41,12 @@ impl Mall {
     }
 
     #[allow(dead_code)]
-    pub fn hire_guards(&mut self, guard: guard::Guard) {
+    pub fn hire_guard(&mut self, guard: guard::Guard) {
         self.guards.push(guard);
     }
 
     #[allow(dead_code)]
-    pub fn fire_guards(&mut self, name: String) {
+    pub fn fire_guard(&mut self, name: String) {
         self.guards.retain(|x| x.name != name);
     }
 }
