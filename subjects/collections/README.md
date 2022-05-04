@@ -62,7 +62,7 @@ superTypeOf(superTypeOf) // -> 'Function'
 ### Notions
 
 - [typeof](https://devdocs.io/javascript/operators/typeof)
-- [Sspread syntax](https://devdocs.io/javascript/operators/spread_syntax)
+- [Spread syntax](https://devdocs.io/javascript/operators/spread_syntax)
 - [Map](https://devdocs.io/javascript/global_objects/map)
 - [Set](https://devdocs.io/javascript/global_objects/set)
 - [Object.fromEntries](https://devdocs.io/javascript/global_objects/object/fromentries)
