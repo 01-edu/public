@@ -1,29 +1,41 @@
 #### Functional
 
-##### Run the program using `cargo run`
+##### Run the program using `cargo run`.
 
 ###### Does it compile and run without any warnings?
 
-##### Left click in three different positions in the canvas
+##### Left click in the canvas to set one or more control points.
 
-###### Does the program draw a small circle surrounding the area where you clicked?
+###### Does the program allow you to mark these control points?
 
-##### Press `Return`
+###### Can You confirm that the program draws a small circle around the control points, in order to identify them?
+
+##### Left click in the canvas to set one or more control points and press `Enter`.
 
 ###### Does the animation of the Chaikin's algorithm starts?
 
-###### Does the animations the animation completes 7 steps before starting again?
+##### Left click in the canvas to set just one control point and press `Enter`.
 
-##### Press `Escape`
+###### Can you confirm that only the control point is shown and nothing changes?
+
+##### Left click in the canvas to set just two control points and press `Enter`.
+
+###### Can you confirm that only a straight line was drawn?
+
+##### Left click in the canvas to set one or more control points and press `Enter`.
+
+###### Does the animation complete 7 steps before starting again?
+
+##### Left click in the canvas to set one or more control points and press `Enter` then press `Escape`.
 
 ###### Does the program exit without errors?
 
-##### Run the program again and this time press `Return` without selecting any points
+##### Press `Enter` without selecting any points.
 
-###### Is the program still running?
+###### Does the program returns an error?
 
 ##### Bonus
 
-###### +Are you able to clear the screen and add new control points without killing and relaunching the program?
+###### +Is it possible to clear the screen and add new control points without killing and relaunching the program?
 
-###### +Are you able to drag the control points in real time and get a new curve?
+###### +Is it possible to drag the control points in real time and get a new curve?
