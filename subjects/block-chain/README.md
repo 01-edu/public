@@ -11,7 +11,7 @@ A block must have the following properties:
 
 - `index`
 - `hash`: a computed hash using the `hashCode` function provided. You will need to pass it a concatenation of the block's `index`, the previous block's `hash` and the block's stringified `data`.
-- `data`: any valid JSON object.
+- `data`: any valid object.
 - `prev`: the previous block.
 - `chain`: a function that accepts `data` as an argument, and creates the next block with it.
 
