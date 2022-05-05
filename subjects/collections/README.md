@@ -36,7 +36,7 @@ map.set(3, 'c')
 map.set(4, 'd')
 
 arrToSet(arr) // -> Set { 1, 2, 3 }
-arrToStr(arr) // -> '123'
+arrToStr(arr) // -> '1213'
 setToArr(set) // -> [1, 2, 3]
 setToStr(set) // -> '123'
 strToArr(str) // -> ['h', 'e', 'l', 'l', 'o']
