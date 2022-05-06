@@ -2,22 +2,18 @@
 
 ### Instructions
 
-Create a `blockChain` that create a block in your very own block chain.
+Create a function named `blockChain` that creates a block in your very own block chain. It takes 2 arguments:
 
-the function takes 2 arguments:
-
-- `data` any valid JSON data
-- `prev` the previous block, if no block are given it should use the
-  genesis block: `{ index: 0, hash: '0' }`
+- `data`: any valid JSON data.
+- `prev`: the previous block, if no block are given it should use the genesis block: `{ index: 0, hash: '0' }`.
 
 A block must have the following properties:
 
 - `index`
-- `hash` a computed hash using the concatenation of the `index`, `hash`
-  and stringified `data` and hashing all of it using the provided `hashCode`.
-- `data` the data (not encoded in JSON)
-- `prev` the previous block
-- `chain` a function that takes a new `data` and create the next block with it.
+- `hash`: a computed hash using the `hashCode` function provided. You will need to pass it a concatenation of the block's `index`, the previous block's `hash` and the block's stringified `data`.
+- `data`: any valid object.
+- `prev`: the previous block.
+- `chain`: a function that accepts `data` as an argument, and creates the next block with it.
 
 ### Examples
 
@@ -51,11 +47,11 @@ console.log(fork.index) //  -> 5
 
 ### Notions
 
-- [devdocs.io/javascript/global_objects/json/stringify](https://devdocs.io/javascript/global_objects/json/stringify)
+- [JSON.stringify](https://devdocs.io/javascript/global_objects/json/stringify)
 
 ### Code provided
 
-> all code provided will be added to your solution and doesn't need to be submited.
+> The provided code will be added to your solution, and does not need to be submitted.
 
 ```js
 const hashCode = str =>

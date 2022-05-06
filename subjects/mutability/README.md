@@ -2,21 +2,21 @@
 
 ### Instructions
 
-Create three copies of the person object called `clone1`, `clone2` and `samePerson`.
+Create three copies of the `person` object named `clone1`, `clone2` and `samePerson`.
 
-Increase by one the property age of `person` and set his country to `'FR'`.
+Increase the `age` of `person` by one, and set its `country` to `'FR'`.
 
-A way must be found to have `clone1` and `clone2` keep the original values while `samePerson` changes with `person`. 
+You must find a way to keep the original values of `clone1` and `clone2`. The values of `samePerson` should change when `person` is changed. 
 
 ### Notions
 
-- [nan-academy.github.io/js-training/examples/set](https://nan-academy.github.io/js-training/examples/set.js)
-- [nan-academy.github.io/js-training/examples/get](https://nan-academy.github.io/js-training/examples/get.js)
-- [nan-academy.github.io/js-training/examples/data-structures](https://nan-academy.github.io/js-training/examples/data-structures.js)
+- [Set](https://nan-academy.github.io/js-training/examples/set.js)
+- [Get](https://nan-academy.github.io/js-training/examples/get.js)
+- [Data Structures](https://nan-academy.github.io/js-training/examples/data-structures.js)
 
 ### Code provided
 
-> all code provided will be added to your solution and doesn't need to be submited.
+> The provided code will be added to your solution, and does not need to be submitted.
 
 ```js
 const person = {

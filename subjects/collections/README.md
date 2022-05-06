@@ -2,22 +2,21 @@
 
 ### Instructions
 
-Write a bunch of function to move from one type to another
+Write a bunch of functions which converts data from one type to another:
 
-- `arrToSet` from `Array` to `Set`
-- `arrToStr` from `Array` to `String`
-- `setToArr` from `Set` to `Array`
-- `setToStr` from `Set` to `String`
-- `strToArr` from `String` to `Array`
-- `strToSet` from `String` to `Set`
-- `mapToObj` from `Map` to `Object`
-- `objToArr` from `Object` to `Array`
-- `objToMap` from `Object` to `Map`
-- `arrToObj` from `Array` to `Object`
-- `strToObj` from `String` to `Object`
+- `arrToSet`: from `Array` to `Set`.
+- `arrToStr`: from `Array` to `string`.
+- `setToArr`: from `Set` to `Array`.
+- `setToStr`: from `Set` to `string`.
+- `strToArr`: from `string` to `Array`.
+- `strToSet`: from `string` to `Set`.
+- `mapToObj`: from `Map` to `Object`.
+- `objToArr`: from `Object` to `Array`.
+- `objToMap`: from `Object` to `Map`.
+- `arrToObj`: from `Array` to `Object`.
+- `strToObj`: from `string` to `Object`.
 
-and finally write a function `superTypeOf` that unlike `typeof` return
-a different value for advanced types like `Map` and `Set`
+Finally, write a function named `superTypeOf` that unlike `typeof` returns a specific values for advanced types like `Map` and `Set`.
 
 ### Examples
 
@@ -62,9 +61,9 @@ superTypeOf(superTypeOf) // -> 'Function'
 
 ### Notions
 
-- [devdocs.io/javascript/operators/typeof](https://devdocs.io/javascript/operators/typeof)
-- [devdocs.io/javascript/operators/spread_syntax](https://devdocs.io/javascript/operators/spread_syntax)
-- [devdocs.io/javascript/global_objects/map](https://devdocs.io/javascript/global_objects/map)
-- [devdocs.io/javascript/global_objects/set](https://devdocs.io/javascript/global_objects/set)
-- [devdocs.io/javascript/global_objects/object/fromentries](https://devdocs.io/javascript/global_objects/object/fromentries)
-- [devdocs.io/javascript/global_objects/object/entries](https://devdocs.io/javascript/global_objects/object/entries)
+- [typeof](https://devdocs.io/javascript/operators/typeof)
+- [Spread syntax](https://devdocs.io/javascript/operators/spread_syntax)
+- [Map](https://devdocs.io/javascript/global_objects/map)
+- [Set](https://devdocs.io/javascript/global_objects/set)
+- [Object.fromEntries](https://devdocs.io/javascript/global_objects/object/fromentries)
+- [Object.entries](https://devdocs.io/javascript/global_objects/object/entries)

@@ -2,14 +2,14 @@
 
 ### Instructions
 
-Create a constant variable for each primitives:
+Create a constant variable for each of the following primitive types:
 
-- `str` for `String`
-- `num` for `Number`
-- `bool` for `Boolean`
+- `str` for `string`
+- `num` for `number`
+- `bool` for `boolean`
 - `undef` for `undefined`
 
 ### Notions
 
-- [nan-academy.github.io/js-training/examples/primitive-and-operators](https://nan-academy.github.io/js-training/examples/primitive-and-operators.js)
-- [nan-academy.github.io/js-training/examples/variables](https://nan-academy.github.io/js-training/examples/variables.js)
+- [Primitives and operators](https://nan-academy.github.io/js-training/examples/primitive-and-operators.js)
+- [Variables](https://nan-academy.github.io/js-training/examples/variables.js)
