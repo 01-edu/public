@@ -21,7 +21,7 @@ git config --global credential.helper store
 If your username was `choumi` this is the command that will need to be used:
 
 ```
-git clone https://git.((DOMAIN))/choumi/((ROOT)).git
+git clone https://((DOMAIN))/git/choumi/((ROOT)).git
 ```
 
 This command needs to be adapted with **your own username**.
