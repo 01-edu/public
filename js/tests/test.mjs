@@ -163,14 +163,23 @@ const runTests = async ({ url, path, code }) => {
 
   const tools = { eq, fail, wait, code, path, randStr, between, upperFirst }
   tools.ctx = (await (setup && setup(tools))) || {}
+  let timeout
   for (const [i, t] of tests.entries()) {
     try {
-      if (!(await t(tools))) {
+      const waitWithTimeout = Promise.race([
+        t(tools),
+        new Promise((s, f) => {
+          timeout = setTimeout(f, 60000, Error('Time limit reached (1min)'))
+        }),
+    ])
+      if (!(await waitWithTimeout)) {
         throw Error('Test failed')
       }
     } catch (err) {
       console.log(`test #${i+1} failed:\n${t.toString()}\n\nError:`)
       fatal(stackFmt(err, url))
+    } finally {
+      clearTimeout(timeout)
     }
   }
   console.log(`${name} passed (${tests.length} tests)`)
