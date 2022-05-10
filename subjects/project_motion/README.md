@@ -17,11 +17,11 @@ You must implement :
 
 Consider the value of gravity is 9.8m/(s*s) and that the position (p) in the instant s of an object is given by:
 
-$$ p(t) =  p_{0} + v_{0}*t +\frac{1}{2}* a*t^{2} $$
+![Position Formula](position_formula.png)
 
 and velocity (v) in the instant s of an object is given by:
 
-$$ v(t) =  v_{0} + a*t $$
+![Speed Formula](speed_formula.png)
 
 
 ### Notions
