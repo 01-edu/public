@@ -13,17 +13,19 @@ One domain and one subdomain must point to the IP address of a [dedicated server
 
 ### Inbound
 
-| Port | Transport | Application      |
-| ---- | --------- | ---------------- |
-| 80   | TCP, UDP  | HTTP/(1.1, 2, 3) |
-| 443  | TCP, UDP  | HTTP/(1.1, 2, 3) |
-| 521  | TCP       | SSH              |
+| Port        | Transport | Application      |
+| ----------- | --------- | ---------------- |
+| 80          | TCP, UDP  | HTTP/(1.1, 2, 3) |
+| 443         | TCP, UDP  | HTTP/(1.1, 2, 3) |
+| 521         | TCP       | SSH              |
+| 8080 - 8090 | TCP, UDP  | HTTP/(1.1, 2, 3) |       
 
 ### Outbound
 
-| Port | Transport | Application |
-| ---- | --------- | ----------- |
-| 587  | TCP       | SMTP        |
+| Port        | Transport | Application      |
+| ----------- | --------- | ---------------- |
+| 587         | TCP       | SMTP             |
+| 8080 - 8090 | TCP, UDP  | HTTP/(1.1, 2, 3) | 
 
 ### OS installation
 
