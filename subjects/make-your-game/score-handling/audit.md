@@ -34,11 +34,11 @@
 
 ##### Try using the Dev Tool/Performance.
 
-###### Is there no frame drop?
+###### Can you confirm that there are no frame drops?
 
 ##### Try using the Dev Tool/Performance
 
-###### Does the game run at/or around 60fps?
+###### Does the game run at or around 60fps? (from 50 to 60 or more)
 
 #### Bonus
 
