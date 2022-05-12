@@ -58,7 +58,7 @@
 
 ##### Try using the Dev Tool/Performance.
 
-###### Does the game run at or around 60fps? (from 50 to 60 or more)
+###### Does the game run at/or around 60fps? (from 50 to 60 or more)
 
 ##### Try using the Dev Tool/performance and the option rendering with the paint ON, if possible.
 
