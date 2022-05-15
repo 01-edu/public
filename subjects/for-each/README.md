@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a `forEach` function that takes an array as the first argument, a function as the second argument,
+Create a function named `forEach` which takes an array as the first argument, a function as the second argument,
 and that works like the `Array.prototype.forEach` method.
 
 ### Notions
