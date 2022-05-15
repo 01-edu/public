@@ -2,32 +2,38 @@
 
 ### Subject
 
-Implement a `format` function that takes 2 arguments:
+Create a function named `format` which accepts a valid `Date` and a format `string`. Your function should return a correctly formatted string.
 
-- a valid javascript Date object
-- a format string that handle all of the following fields:
-  - y
-  - yyyy
-  - G
-  - GGGG
-  - M
-  - MM
-  - MMM
-  - MMMM
-  - d
-  - dd
-  - E
-  - EEEE
-  - h
-  - hh
-  - m
-  - mm
-  - s
-  - ss
-  - H
-  - HH
-  - a
+Your function must handle:
+  - `y`
+  - `yyyy`
+  - `G`
+  - `GGGG`
+  - `M`
+  - `MM`
+  - `MMM`
+  - `MMMM`
+  - `d`
+  - `dd`
+  - `E`
+  - `EEEE`
+  - `h`
+  - `hh`
+  - `m`
+  - `mm`
+  - `s`
+  - `ss`
+  - `H`
+  - `HH`
+  - `a`
+
+### Example
+```js
+const d = new Date('7 January 1985, 3:08:19')
+
+format(d, 'HH(mm)ss [dd] <MMM>') // -> '03(08)19 [07] <Jan>'
+```
 
 ### Notions
 
-- [www.unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table](https://www.unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table)
+- [Unicode Date Field Symbol Table](https://www.unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table)
