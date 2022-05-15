@@ -2,5 +2,4 @@
 
 ### Instructions
 
-Make a `dayOfTheYear` functions that takes a date
-and returns the number of days since the first day of that year
+Create a function named `dayOfTheYear` which accepts a `Date`. Your function should return the number of days since the first day of that year.
