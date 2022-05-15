@@ -2,18 +2,15 @@
 
 ### Instructions
 
-Create three functions that take as argument an array each:
+Create three functions, which each accept an array as an argument.
 
-- `longWords` that returns true if every element of the array is a string of at
-  least 5 characters.
+- `longWords`: returns `true` if every element of the array is a `string` with at least 5 characters.
 
-- `oneLongWord` that returns true if at least one element of the array is a
-  string of at least 10 characters.
+- `oneLongWord`: returns `true` if at least one element of the array is a `string` with 10 or more characters.
 
-- `noLongWords` that returns true if there are no elements in the array that are
-  a string with at least 7 characters.
+- `noLongWords`: returns `true` if there are no elements in the array which is a `string` with at least 7 characters.
 
 ### Notions
 
-- [devdocs.io/javascript/global_objects/array/every](https://devdocs.io/javascript/global_objects/array/every)
-- [devdocs.io/javascript/global_objects/array/some](https://devdocs.io/javascript/global_objects/array/some)
+- [Array.prototype.every](https://devdocs.io/javascript/global_objects/array/every)
+- [Array.prototype.some](https://devdocs.io/javascript/global_objects/array/some)
