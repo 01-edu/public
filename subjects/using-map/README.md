@@ -62,4 +62,4 @@ tempForecasts([
 
 ### Notions
 
-- [Array.map](https://devdocs.io/javascript/global_objects/array/map)
+- [Array.prototype.map](https://devdocs.io/javascript/global_objects/array/map)
