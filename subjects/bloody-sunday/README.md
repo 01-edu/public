@@ -1,14 +1,8 @@
 ## Bloody Sunday
 
 ### Instructions
+Let's get rid of Sundays, by removing them from the calendar. So now a week is only 6 days in length, from `"Monday"` to `"Saturday"`.
 
-You were missioned to make the world more productive.
-Your solution ? no more sundays,
-you are ask to remove them from the existing calendar.
+Create a function named `bloodySunday` which accepts a `Date`, and returns teh weekday as a `string`.
 
-So now, a week is 6 days from monday to saturday.
-
-To prove your point, create a `bloodySunday` function
-that return what week day the given date is.
-
-> note that the 01/01/0001 is still a monday.
+> 01/01/0001 is a Monday.
