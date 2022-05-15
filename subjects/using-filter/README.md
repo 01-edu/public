@@ -2,50 +2,24 @@
 
 ### Instructions
 
-- Create a function `filterShortStateName` that takes an array of
-  strings and that returns the ones with less than 7 characters.
+Create the following functions:
 
-> Example: `'Iowa'` only contains 4 characters
+> Your solutions **must** use `filter`.
 
-- Create a function `filterStartVowel` that takes an array of strings
-  and that returns only the ones that start with a vowel (a,e,i,o,u).
+- `filterShortStateName`: accepts an array of strings, and returns only those strings which contain less than 7 characters.
 
-> Example: `'Alabama'` starts with a vowel
+- `filterStartVowel`: accepts an array of strings, and returns only those that start with any vowel (a,e,i,o,u).
 
-- Create a function `filter5Vowels` that takes an array of strings
-  and that returns only the ones which contain at least 5
-  vowels (a,e,i,o,u).
+- `filter5Vowels`: accepts an array of strings, and returns only those which contain at least 5 of any vowels (a,e,i,o,u).
 
-> Example: `'California'` contains at least 5 vowels
+- `filter1DistinctVowel`: accepts an array of strings, and returns only those which contain distinct vowels (a,e,i,o,u). For example, `"Alabama"` contains only 1 distinct vowel `"a"`.
 
-- Create a function `filter1DistinctVowel` that takes an array of
-  strings and that returns only the ones which vowels are of only
-  one distinct one (a,e,i,o,u).
-
-> Example: `'Alabama'` only contains 1 distinct vowels `'a'`.
-
-- Create a function `multiFilter` that takes an array of
-  objects and that returns only the ones which:
-
-- the key `capital` contains at least 8 characters.
-- the key `name` does not start with a vowel
-- the key `tag` has at least one vowel.
-- the key `region` is not `'South'`
-
-> Example of an array of objects matching the criterias:
-
-```js
-[
-  { tag: 'CA', name: 'California', capital: 'Sacramento', region: 'West' },
-  { tag: 'PA', name: 'Pennsylvania', capital: 'Harrisburg', region: 'Northeast' }
-]
-```
-
-#### Special instruction
-
-The goal of this exercise is to learn to use `filter`, as such all your
-solution **MUST** use `filter`
+- `multiFilter`: accepts an array of objects, and returns only those which:
+  - the key `capital` contains at least 8 characters.
+  - the key `name` does not start with a vowel.
+  - the key `tag` has at least one vowel.
+  - the key `region` is not `"South"`
 
 ### Notions
 
-- [devdocs.io/javascript/global_objects/array/filter](https://devdocs.io/javascript/global_objects/array/filter)
+- [Array.prototype.filter](https://devdocs.io/javascript/global_objects/array/filter)
