@@ -2,33 +2,24 @@
 
 ### Instructions
 
-Create three functions :
+Create the following functions:
 
-- `adder` that receives an array and adds its elements.
+> Your solutions **must** use `reduce`.
 
-- `sumOrMul` that receives an array and adds or multiplies its elements
-  depending on whether the element is an odd or an even number, where:
-    - even = multiply
-    - odd = add
+- `adder`: accepts an array of numbers, and returns the sum as a `number`.
 
-- `funcExec` that receives an array of functions and executes them.
+- `sumOrMul`: accepts an array of numbers and adds or multiplies its elements depending on whether the element is odd or even. Even = multiply. Odd = add.
 
-All functions may or may not receive an extra argument that should be the
-initial value for the functions execution.
+- `funcExec`: accepts an array of functions and executes them using `reduce`, returning the result.
 
-Example:
+> Each function may accept an optional argument, which should be the initial value for the function's execution.
+
+#### Example:
 
 ```js
-sumOrMul([1, 2, 3, 5, 8], 5)
-  // -> ((((5 + 1) * 2) + 3) + 5) * 8
-  // -> 160
-````
-
-#### Special instruction
-
-The goal of this exercise is to learn to use `reduce`, as such all your
-solution **MUST** use `reduce`
+sumOrMul([1, 2, 3, 5, 8], 5) // (((((5 + 1) * 2) + 3) + 5) * 8) -> 160
+```
 
 ### Notions
 
-- [devdocs.io/javascript/global_objects/array/reduce](https://devdocs.io/javascript/global_objects/array/reduce)
+- [Array.prototype.reduce](https://devdocs.io/javascript/global_objects/array/reduce)
