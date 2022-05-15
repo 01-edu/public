@@ -2,10 +2,13 @@
 
 ### Instructions
 
-- Create a function named `citiesOnly` which takes an array of objects and which return an array of strings from the key `city`.
+Create the following functions:
 
-#### Example:
+> Your solutions **must** use `map`.
 
+
+#### Cities Only
+`citiesOnly`: accepts an array of objects and returns an array of strings from the `city` key.
 ```js
 citiesOnly([
   {
@@ -19,34 +22,20 @@ citiesOnly([
 ]) // -> ['Los Angeles', 'San Francisco']
 ```
 
-- Create a function named `upperCasingStates` which takes an array of strings
-  and which Upper Case the first letter of each word in a string. \
-  The function returns then an array of strings.
-
-#### Example:
-
+#### Upper Casing States
+`upperCasingStates`: accepts an array of strings, and returns a new array of strings. The returned array will be the same as the argument, except the first letter of every word must be capitalized.
 ```js
 upperCasingStates(['alabama', 'new jersey']) // -> ['Alabama', 'New Jersey']
 ```
 
-- Create a function named `fahrenheitToCelsius` which takes an array
-  of fahrenheit temperatures which converts them to Celsius.
-  Round down the result.
-
-The function then returns the result as an array of strings like below:
-
-#### Example:
-
+#### Fahrenheit to Celsius
+`fahrenheitToCelsius`: accepts an array of fahrenheit temperatures as strings, and returns an array of strings converted to celsius. Round down the result.
 ```js
 fahrenheitToCelsius(['68°F', '59°F', '25°F']) // -> ['20°C', '15°C', '-4°C']
 ```
 
-- Create a function named `trimTemp` which takes an array of objects
-  and which removes the spaces from the string in the key `temperature`. \
-  The function then returns an array of objects with the modification.
-
-#### Example:
-
+#### Trim Temp
+`trimTemp`: accepts an array of objects, and returns a new array of objects with the same structure. The `temperature` strings must have their spaces removed in the new array.
 ```js
 trimTemp([
   { city: 'Los Angeles', temperature: '  101 °F   ' },
@@ -57,9 +46,8 @@ trimTemp([
 ] */
 ```
 
-- Create a `tempForecasts` function which will take an array of objects, and which will
-  return an array of strings formatted as below:
-
+#### Temp Forecasts
+`tempForecasts`: accepts an array of objects, and returns an array of formatted strings. See the example below:
 ```js
 tempForecasts([
   {
@@ -71,11 +59,7 @@ tempForecasts([
 ]) // -> ['38°Celsius in Pasadena, California']
 ```
 
-#### Special instruction
-
-The goal of this exercise is to learn to use `map`, as such all your
-solution **MUST** use `map`
 
 ### Notions
 
-- [devdocs.io/javascript/global_objects/array/map](https://devdocs.io/javascript/global_objects/array/map)
+- [Array.map](https://devdocs.io/javascript/global_objects/array/map)
