@@ -2,6 +2,8 @@
 
 ### Instructions
 
+You will create two functions: `addWeek` and `timeTravel`.
+
 You have been given a mission to create a new sense of time. Normally a week has 7 days right? Well, that is about to change.
 
 Days will instead have **14** days.
@@ -9,36 +11,14 @@ Days will instead have **14** days.
 Let me explain; this new week will have 14 days, from `Monday` to `Sunday`, then `secondMonday` to `secondSunday`.
 
 Your purpose is to create a new function named `addWeek`, that takes a `Date` as an argument. Your function should return the weekday as a string, according to our new 14-day week format.
-The **epoch** of our new 14-day week is `0001-01-01`.
+The **epoch** of our new 14-day week is `0001-01-01`, and that was a `Monday`.
+> What is an epoch?
 
-```
-new week format:
+Now imagine you have an appointment with your doctor, and you have to wait for some hours, but you do not want to wait. So you decide that you need to create a new function named `timeTravel`, that allows you to change the **time** according to your needs.
 
-Monday
-Tuesday
-Wednesday
-Thursday
-Friday
-Saturday
-Sunday
-secondMonday
-secondTuesday
-secondWednesday
-secondThursday
-secondFriday
-secondSaturday
-secondSunday
-```
+Your function will take an `object` as an argument, and return a `Date`. You can see the `timeTravel` example below to understand the structure of the `object` argument.
 
-Now imagine you have an appointment with your doctor, and you have to wait some hours, and you do not want to wait. So you decide that you need to create a new function named `timeTravel`, that allows you to change the time according to your needs.
-
-This function will give you the power to go backwards or forwards in time.
-
-Your function will take an `object` as an argument. You can see the `timeTravel` example below to see the structure of your function's argument.
-
-Your objective is to 
-
-and a `Date` as arguments.an argument. T as an argument. This  `{date, hour, minute, second}`. This object will be responsible for changing the `hour`, `minute` and `second` of the given `date`.
+Your objective is to use the information from the `object` to modify the **time** of the `Date` before returning it.
 
 ### Example
 
