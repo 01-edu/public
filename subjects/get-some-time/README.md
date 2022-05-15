@@ -2,13 +2,12 @@
 
 ### Instructions
 
-Create a function `firstDayWeek` that receives a week of the year
-(from 1 to 53) and a year (as a string), and returns the first day
-of that week, in the format: 'dd-mm-yyyy'.
+Create a function named `firstDayWeek`, which accepts a specific week in a given year:
+- `number`: representing a week of the year (between 1 and 53).
+- `string`: representing a year.
 
-In this task you have to assume that the `week #1` is in all cases the week which contains the 1st of January.
+Your function should return a `string` representing the date of the first day of that specific week in the format `dd-mm-yyyy`.
 
-By beginning of the week we mean the monday of that week.
-
-If the first week is requested and it starts on the previous year
-of the presented one, it should return the first day of the year.
+- Week `1` is in all cases, the week which contains the 1st of January.
+- The first day of a week is a Monday.
+- If the start of the week is in the previous year, then your function should return the first day of the specified year.
