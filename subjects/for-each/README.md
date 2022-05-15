@@ -2,16 +2,16 @@
 
 ### Instructions
 
-Create a `forEach` function that takes an array as first argument, a function as second,
-and that works like the method .forEach
+Create a `forEach` function that takes an array as the first argument, a function as the second argument,
+and that works like the `Array.prototype.forEach` method.
 
 ### Notions
 
-- [devdocs.io/javascript/global_objects/array/foreach](https://devdocs.io/javascript/global_objects/array/foreach)
+- [Array.prototype.forEach](https://devdocs.io/javascript/global_objects/array/foreach)
 
 ### Code provided
 
-> all code provided will be added to your solution and doesn't need to be submited.
+> The provided code will be added to your solution, and does not need to be submitted.
 
 ```js
 Array.prototype.forEach = undefined
