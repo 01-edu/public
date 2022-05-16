@@ -88,7 +88,7 @@ executed.
 ### Instructions
 
 Once you have installed and configured the necessary tools,
-create in your [Gitea](<https://git.((DOMAIN))>) account the repository named `((ROOT))` with a `hello-there.js`
+create in your [Gitea](<https://((DOMAIN))/git>) account the repository named `((ROOT))` with a `hello-there.js`
 JS file that is a program that displays:
 - the exact text `Hello There !`
 - any `Number` 
@@ -99,7 +99,7 @@ In order to work in your repository and put files in it, you need to clone it fi
 If your username was `choumi` this is the command that will need to be used:
 
 ```
-git clone https://git.((DOMAIN))/choumi/((ROOT)).git
+git clone https://((DOMAIN))/git/choumi/((ROOT)).git
 ```
 To execute it, open a Unix shell (e.g. Git Bash on Windows), you are going to type commands in it.
 This command needs to be adapted with **your own username**.
