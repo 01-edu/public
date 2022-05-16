@@ -110,14 +110,16 @@ console.log(cashPayment)
 
 ### Instructions
 
-All right, before we can embark into this adventure, you are going to tell us
-more about yourself using **variables** !
+All right, before we can embark on this adventure, you are going to tell us
+more about yourself using **variables**.
 
-- Declare a variable _identified_ `age` of a `Number` value of your age
+Declare three variables:
 
-- Declare a variable _identified_ `name` of a `String` value of your name
+- `age`: your age as a `number`
 
-- Declare a variable _identified_ `secureLuggage` of a `Boolean` saying if your
-  luggage contain dangerous things or not. _(for obvious security reasons)_
+- `name`:  your name as a `string`
 
-> PS: And please, use reasonable values, or the tests might reject you !
+- `secureLuggage`: which will be a `boolean` stating whether or not your
+  luggage contains dangerous materials. _(for obvious security reasons)_
+
+> PS: Remember you are trying to board a plane, so use reasonable values.
