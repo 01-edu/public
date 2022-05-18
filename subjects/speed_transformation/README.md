@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a **function** that receives the speed in km/h (kilometers per hour) and returns the equivalent in m/s (meters per second).
+Create a **function** that converts speed from km/h (kilometers per hour) and returns m/s (meters per second).
 
 ### Expected Function
 
