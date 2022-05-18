@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write two functions which convert values of temperatures from `fahrenheit` to `celcius` and the other way around.
+Write two functions which convert values of temperatures from `fahrenheit` to `celsius` and the other way around.
 
 To pass this exercise you must use (9/5) in **both** functions.
 
@@ -16,7 +16,7 @@ pub fn celsius_to_fahrenheit(c: f64) -> f64 {
 }
 ```
 
-### Usage
+### Example
 
 ```rust
 use temperature_conv::*;
