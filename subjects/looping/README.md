@@ -14,7 +14,7 @@ Answer: The letter e
 
 ### Notions
 
-- [Moduler std::io](https://doc.rust-lang.org/std/io/index.html)
+- [Module std::io](https://doc.rust-lang.org/std/io/index.html)
 - [loop](https://doc.rust-lang.org/std/keyword.loop.html)
 
 ### Usage 
