@@ -2,21 +2,17 @@
 
 ### Instructions
 
-Create the following **functions**, which each receives two parameters:
+Create the following **functions**, which each accept two parameters:
 
 - `sum`, which returns the sum between two values from 0 to 255
 - `diff`, which returns the difference between two values from -32768 to 32767
 - `pro`, which returns the product of the multiplication between two values from -128 to 127
-- `quo`, which returns the quotient of the division between two values (32bit and you have to figure out the second part)
-- `rem`, which returns the remainder of the division between two values (32bit and you have to figure out the second part)
+- `quo`, which returns the quotient of the division between two 32bit values
+- `rem`, which returns the remainder of the division between two 32bit values
 
-You **must** complete the Expected functions parameters data type accordingly (Replace the Xs)!
+> You will need to figure out the exact data types for the parameters **and** the return values.
+  There are some hints in the example.
 
-### Notions
-
-- [Data Types](https://doc.rust-lang.org/book/ch03-02-data-types.html)
-
-### Expected functions (Incomplete, you must precise the Data Types)
 
 ```rust
 pub fn sum(a: X , b: X) -> X {
@@ -40,9 +36,7 @@ pub fn rem(a: X, b: X) -> X {
 }
 ```
 
-### Usage :
-
-#### Note that There is no output for this test for you to train to comment accordingly.
+### Example
 
 ```rust
 use scalar::*;
@@ -65,3 +59,7 @@ fn main() {
     println!("rem : {}", rem(-128.23, 2.0));// 'rem : -0.22999573'
 }
 ```
+
+### Notions
+
+- [Data Types](https://doc.rust-lang.org/book/ch03-02-data-types.html)
