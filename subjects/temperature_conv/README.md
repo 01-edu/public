@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write two functions which convert values of temperatures from `fahrenheit` to `celsius` and the other way around.
+Write two functions which convert temperatures from `fahrenheit` to `celsius` and the other way around.
 
 To pass this exercise you must use (9/5) in **both** functions.
 
