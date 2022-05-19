@@ -2,16 +2,8 @@
 
 ### Instructions
 
-Write a **function** `rev_str` that takes a `&str` as a parameter, and returns a `String` with its letters reversed.
+Create a **function** named `rev_str` that takes a `&str` as a parameter, and returns a `String` with its letters reversed.
 
-### Notions
-
-- [Strings](https://doc.rust-lang.org/rust-by-example/std/str.html)
-- [Primitive Type str](https://doc.rust-lang.org/std/primitive.str.html)
-- [Primtive Type char](https://doc.rust-lang.org/std/primitive.char.html)
-- [Module std::string](https://doc.rust-lang.org/std/string/index.html)
-
-### Expected Functions
 
 ```rust
 pub fn rev_str(input: &str) -> String {
@@ -45,3 +37,10 @@ uoY era dlo woH
 augá elpmaxe na si siht :xe
 $
 ```
+
+### Notions
+
+- [Strings](https://doc.rust-lang.org/rust-by-example/std/str.html)
+- [Primitive Type str](https://doc.rust-lang.org/std/primitive.str.html)
+- [Primtive Type char](https://doc.rust-lang.org/std/primitive.char.html)
+- [Module std::string](https://doc.rust-lang.org/std/string/index.html)
