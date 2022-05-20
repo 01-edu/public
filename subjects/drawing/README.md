@@ -2,44 +2,50 @@
 
 ### Instructions
 
-- Copy the code in [usage](#usage) to your main.rs
+The purpose of this exercise is to create an image like the example bellow:
 
-- Create a module called geometrical_shapes in another file.
+![example](image.png)
 
-- This module will keeps all the logic for creating and operating with the different geometrical shapes and define two traits `Displayable` and `Drawable`.
+For this exercise you will need to do the following:
 
-- `Drawable` contains the methods `draw` and `color`
+- Copy the code in [usage](#usage) to your `main.rs`.
 
-- `Displayable` contains the method `display`.
+- Create a module called `geometrical_shapes` in another file.
 
-- Define them in correspondence with the way they're called in the main function
+This module will keep all the logic for creating and operating with the different geometrical shapes. You need to define two traits, `Displayable` and `Drawable`.
 
-- You have to define the structures for Point, Circle, Line, Rectangle and Triangle and make the code in `main.rs` compile and run.
+- `Drawable` which contains the methods `draw` and `color`.
 
-- You are free to implement all the shapes with the internal structure that you find more adequate, but you have to provide for all the shapes an associated function `new` which will be described next:
+- `Displayable` which contains the method `display`.
 
-- Point: a new point should be created from two i32 values
-- Line: a new line should be created from references to two points also define an associated function called `random` that receives two argument the first is the maximum x value a point can have and the
-second the maximum y value that a point can have
-- Triangle: a new triangle should be created from references to three points
-- Rectangle: a new rectangle should be created from two references to points
-- Circle: a new circle should be created from a point representing the center and an i32 value representing the radius
+Define them according to the way they are called in the `main.rs` function.
 
-- The main function also requires a definition of an associated function called `random` for the types Line, Point and Circle. You should derive their signature from the usage.
+In order to make the code in the `main.rs` compile and run, you have to define the following structures:
 
-Don't forget to add the dependencies in your Cargo.toml.
+- `Point`
+- `Circle`
+- `Line`
+- `Rectangle`
+- `Triangle`
+
+You are free to implement all the shapes with whatever internal structure you see fit, but you must provide an associated function `new` for all the shapes, which will be described below:
+
+- `Point`: a new point should be created from two `i32` values.
+- `Line`: a new line should be created from references to two different points. Also it will define an associated function called `random`:
+    - `random`: receives two arguments, the first is the `maximum x` value a point can have and the second is the `maximum y` value that a point can have.
+- `Triangle`: a new triangle should be created from references to three different points.
+- `Rectangle`: a new rectangle should be created from two references to different points.
+- `Circle`: a new circle should be created from a point representing the center and an `i32` value representing the radius for the circle.
+
+- The main function also requires a definition of an associated function called `random` for the types `Line`, `Point` and `Circle`. You should derive their signature from the usage.
+
+**Note**: Don't forget to add the dependencies in your Cargo.toml.
 
 #### Bonus
 
-- Implement drawing a pentagon (implement the structure Pentagon, and the trait needed to draw in the image)
+- Implement the possibility of drawing a pentagon (implement the structure Pentagon, and the trait needed to draw in the image)
 
-- Implement drawing a cube (implement the structure Cube, and the trait needed to draw in the image)
-
-### Notions
-
-- [Image processing library](https://docs.rs/raster/0.2.0/raster/)
-
-- [Traits](https://doc.rust-lang.org/stable/book/ch10-02-traits.html)
+- Implement the possibility of drawing a cube (implement the structure Cube, and the trait needed to draw in the image)
 
 ### Usage
 
@@ -83,4 +89,10 @@ impl Displayable for Image {
 }
 ```
 
-### And the expected output is a png file: `image.png`
+**Note**: The expected output is a png file: `image.png`
+
+### Notions
+
+- [Image processing library](https://docs.rs/raster/0.2.0/raster/)
+
+- [Traits](https://doc.rust-lang.org/stable/book/ch10-02-traits.html)
