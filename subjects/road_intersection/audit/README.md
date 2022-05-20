@@ -26,9 +26,9 @@
 
 ##### Try pressing the `"R"` key more than 5 times to generate multiple vehicles in different lines.
 
-###### Can you confirm that the vehicles were created and maintain a safe distance one from another?
+###### Can you confirm that the vehicles were created and maintain a safe distance from one another?
 
-##### Try to generate tree vehicles in the same lane (do this on all lanes one at a time).
+##### Try to generate three vehicles in the same lane (do this on all lanes one at a time).
 
 ###### Can you confirm that the vehicles were created with a safe distance one from another?
 
@@ -68,7 +68,7 @@
 
 ###### Did all the vehicles passed the intersection without any collision?
 
-##### Try to generate multiple vehicles with lanes at your choice.
+##### Try to generate multiple vehicles in lanes of your choice.
 
 ###### Did all the vehicles passed the intersection without any collision?
 

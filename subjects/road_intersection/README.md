@@ -13,9 +13,11 @@ You must create an environment which contains all the objects described in this 
 
 1. Roads
 
-There are various forms of intersections, let's focus on the widely seen four-lane intersection. For simplicity, each lane will have two directions.
+There are various forms of intersections, let's focus on the widely seen four-lane crossroad. For simplicity, each road will have two lanes with two different directions for the total of two roads and four lanes.
 
 ```console
+                  lane1     lane2
+
                |    ↓    |    ↑    |
                |    ↓    |    ↑    |
                |    ↓    |    ↑    |
@@ -24,11 +26,11 @@ There are various forms of intersections, let's focus on the widely seen four-la
                | r  s  l |    ↑    |
 _______________| ←  ↓  → |    ↑    |_____________
                          |         ↑ r
-← ← ← ← ← ← ←            |         ← s ← ← ← ← ←
+← ← ← ← ← ← ←            |         ← s ← ← ← ← ←      lane3
                          |         ↓ l
 _________________________|_______________________
            l ↑           |
- → → → → → s →           |           → → → → → →
+ → → → → → s →           |           → → → → → →      lane4
            r ↓           |
 _______________          |          _____________
                |         | ←  ↑  → |
@@ -53,7 +55,7 @@ it's usually green, red and amber, but for this project you will just use the co
 
 You will then have to create some kind of representation for the traffic lights and distribute them for each lane in the intersection.
 
-You are free to decide what algorithm you want to implement to represent traffic light system, but keep in mind that traffic congestion should not be to high (8 or more vehicles).
+You are free to decide what algorithm you want to implement to represent traffic light system, but keep in mind that traffic congestion should not be too high (8 or more vehicles).
 
 3. Vehicles
 
@@ -65,12 +67,9 @@ You are free to decide what algorithm you want to implement to represent traffic
 
 Vehicles must obey this rules:
 
-- Vehicles must have a color depending on their route the colors are up to you to decide 
+- Vehicles must have a color so that it's possible to identify which route it will follow (ex:`r`- purple, `s`- Blue and `l`- Yellow). This information about the colors must be given to the auditor of the raid. The colors are up to you to decide.
 
-- Vehicles must have a color so that it's possible to identify which route it will follow (ex:`r`- purple, `s`- Blue and `l`- Yellow). This information about the colors must be given to the auditor of the raid.
-
-- Autonomous vehicles driving on a lane with a **given route** must follow the direction of
-that route, it's not possible for the driver to change lanes or routes.
+- Autonomous vehicles driving on a lane with a **given route** must follow the direction of that route, it is not possible for the autonomous vehicle to change lanes or routes.
 
 - Each vehicle must have a fixed velocity.
 

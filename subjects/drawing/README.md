@@ -2,7 +2,7 @@
 
 ### Instructions
 
-The purpose of this exercise is to create an image  in the example bellow:
+The purpose of this exercise is to create an image like the example bellow:
 
 ![example](image.png)
 
@@ -34,7 +34,7 @@ You are free to implement all the shapes with whatever internal structure you se
 - `Line`: a new line should be created from references to two different points. Also it will define an associated function called `random`:
     - `random`: receives two arguments, the first is the `maximum x` value a point can have and the second is the `maximum y` value that a point can have.
 - `Triangle`: a new triangle should be created from references to three different points.
-- `Rectangle`: a new rectangle should be created from two references to different points. ??????????????????????????????
+- `Rectangle`: a new rectangle should be created from two references to different points.
 - `Circle`: a new circle should be created from a point representing the center and an `i32` value representing the radius for the circle.
 
 - The main function also requires a definition of an associated function called `random` for the types `Line`, `Point` and `Circle`. You should derive their signature from the usage.
