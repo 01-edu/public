@@ -2,22 +2,14 @@
 
 ### Instructions
 
-Write a function called `doubtful` that adds to every string passed to it a question mark (?).
-
-You have to complete the signature the functions to make it fit the usage and you also have to modify the usage to be able to do what is expected.
-
-- Restrictions:
-
-  - `doubtful` cannot return any value.
-
-  - And in the example of the usage you can only modify the argument of the function
-
-### Expected
+Create a function named `doubtful` which appends a question mark to every string passed to it. It must not return a value.
 
 ```rust
 pub fn doubtful(s: /*give the correct type*/ ) {
 }
 ```
+
+You'll need to complete the function signature, so that it works properly with the usage example. You'll also need to complete the usage if you plan to use it.
 
 ### Usage
 
