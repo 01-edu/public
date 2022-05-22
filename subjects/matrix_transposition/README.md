@@ -20,7 +20,7 @@ The transposition of a matrix, switches the columns to rows, and the rows to col
 
 `Matrix` must implement `Debug`, `PartialEq` and `Eq`. You can use `derive`.
 
-> Remember that you are defining a library, so you must make the elements that can be called from an external crate public.
+> Remember that you are defining a library, so any element that can be called from an external crate must be made public.
 
 ### Usage
 
