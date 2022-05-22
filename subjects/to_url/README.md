@@ -2,9 +2,7 @@
 
 ### Instructions
 
-Define a **function** called `to_url` that takes a string and substitutes every white-space with '%20'.
-
-### Expected Function
+Create a **function** named `to_url` which takes a string and substitutes every white-space with `"%20"`.
 
 ```rust
 pub fn to_url(s: &str) -> String {
