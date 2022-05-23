@@ -4,6 +4,7 @@
 
 Create a **function** named `first_subword`, that takes ownership of a string and returns the first sub-word in it. It should work for `camelCase`, `PascalCase`, and `snake_case`.
 
+### Expected functions
 ```rust
 pub fn first_subword(mut s: String) -> String {
 }

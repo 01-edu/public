@@ -8,8 +8,9 @@ Create the following functions:
 - `is_ascii`: that returns `true` if all characters are within the ASCII range.
 - `contains`: that returns `true` if the string contains the given pattern.
 - `split_at`: that divides a string in two returning a tuple.
-- `find`: that returns the index if the first character of a given string that matches the pattern.
+- `find`: that returns the index of the first character of a given string that matches the pattern.
 
+### Expected functions
 ```rust
 pub fn is_empty(v: &str) -> bool {
 }

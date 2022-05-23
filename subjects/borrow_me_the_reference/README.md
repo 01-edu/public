@@ -11,7 +11,6 @@ Create the following functions:
 - `is_correct`: which borrows a Vector of string literals representing simple addition and subtraction equations. The function should replace the correct equations with `✔`, and the wrong ones with `✘`. It should return a `usize` with the percentage of correct equations.
 
 ### Expected Functions
-
 ```rust
 pub fn delete_and_backspace(s: &mut String) {
 }

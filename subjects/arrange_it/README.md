@@ -4,6 +4,7 @@
 
 Create a **function** named `arrange_phrase`, that takes a string literal, _sorts_ the words and returns it. Each word will contain a number that indicates the position of that word.
 
+### Expected Functions
 ```rust
 pub fn arrange_phrase(phrase: &str) -> String {
 }
