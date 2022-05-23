@@ -4,21 +4,11 @@
 
 Create the following functions:
 
-- `is_empty`, that returns true if a string is empty
-- `is_ascii`, that returns true if all characters of a given string is in ASCII range
-- `contains`, that returns true if the string contains a pattern given
-- `split_at`, that divides a string in two returning a tuple
-- `find', that returns the index if the first character of a given string that matches the pattern
-
-> This exercise will test how many times the **heap is going to be allocated**!\
-> So try your best to allocate the minimum data on the heap!
-
-### Notions
-
-- [stack and heap](https://doc.rust-lang.org/1.22.0/book/first-edition/the-stack-and-the-heap.html)
-- [Literals](https://doc.rust-lang.org/rust-by-example/primitives/literals.html)
-
-### Expected Functions
+- `is_empty`: that returns `true` if the string is empty.
+- `is_ascii`: that returns `true` if all characters are within the ASCII range.
+- `contains`: that returns `true` if the string contains the given pattern.
+- `split_at`: that divides a string in two returning a tuple.
+- `find`: that returns the index if the first character of a given string that matches the pattern.
 
 ```rust
 pub fn is_empty(v: &str) -> bool {
@@ -36,6 +26,8 @@ pub fn split_at(v: &str, index: usize) -> (&str, &str) {
 pub fn find(v: &str, pat: char) -> usize {
 }
 ```
+
+> Your heap allocations will be monitored to ensure that you do not make too many allocations, and that your allocations are reasonably sized.
 
 ### Usage
 
@@ -64,3 +56,8 @@ true
 1
 $
 ```
+
+### Notions
+
+- [stack and heap](https://doc.rust-lang.org/1.22.0/book/first-edition/the-stack-and-the-heap.html)
+- [Literals](https://doc.rust-lang.org/rust-by-example/primitives/literals.html)
