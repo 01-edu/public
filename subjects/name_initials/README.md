@@ -2,16 +2,14 @@
 
 ### Instructions
 
-Create a **function** called `initials`, this function will receive a vector of string literals
-with names and return a vector of Strings with the initials of each name.
+Create a **function** named `initials`. This function will receive a vector of string literals with names, and return a vector of Strings with the initials of each name.
 
 ```rust
 pub fn initials(names: Vec<&str>) -> Vec<String> {
 }
 ```
 
-> This exercise will test how many times the **heap is going to be allocated**!\
-> So try your best to allocate the minimum data on the heap!
+> Your heap allocations will be monitored to ensure that you do not make too many allocations, and that your allocations are reasonably sized.
 
 
 ### Usage
