@@ -2,18 +2,18 @@
 
 ### Instructions
 
-In a chess game, a queen can attack pieces which are on the same row, column, or diagonal.
+In a chess game, a queen can attack pieces which are on the same rank, file, or diagonal.
 
 The purpose of this exercise is to find out if two queens can attack each other using the same rules.
 
-The chess board will be represented as an 8 by 8 array.
+The chess board will be represented by the struct `ChessPosition`. You must implement the function `new` 
+that allows you to verify if the position is valid or not. If the position is valid the function will return that 
+position, otherwise it will return `None`.
 
 So, given the position of the two queens on a chess board, you will have to
 implement the function `can_attack` in the given struct `Queen` with
-the purpose of finding out whether the two queens can attack each other or not.
-
-For this to be possible, you will also have to implement the struct `ChessPosition`
-with the function `new`. This will allow you to verify if the position is valid or not. If the position is valid it will return that position, otherwise it will return `None`.
+the purpose of finding out whether the two queens can attack each other or not. You also need to implement the function `new` 
+that allows you to create a new `Queen` given a ChessPosition.
 
 For example, if the white queen is at (2, 3) and the black queen is at (5, 6),
 then the set-up would be like so:
@@ -52,6 +52,10 @@ impl ChessPosition {
 }
 
 impl Queen {
+    pub fn new(position: ChessPosition) -> Self {
+
+    }
+
     pub fn can_attack(&self, other: &Queen) -> bool {
 
     }
