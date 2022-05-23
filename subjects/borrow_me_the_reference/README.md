@@ -2,19 +2,13 @@
 
 ### Instructions
 
-Ownership is Rust's most unique feature, and it enables Rust to make memory safety guarantees without
-needing garbage collector. Therefore you must understand ownership in rust.
+Ownership is Rust's most unique feature. It enables Rust to make memory safety guarantees without needing a garbage collector. You must have a good understanding of ownership in rust.
 
-Create the following functions :
+Create the following functions:
 
-- `delete_and_backspace`, imagine that the `-` represents the `backspace key` and the `+` represents the `delete key`, this function must receive a borrowed string and turn this string into the string that applies the `backspaces` and the `deletes`.
-- For example:
+- `delete_and_backspace`: which receives a borrowed string, and processes it. `-` represents the backspace key and `+` represents the delete key, so that `"helll-o"` and `"he+lllo"` are both converted to `"hello"`. The `-` and `+` characters should be removed from the string.
 
-  - "helll-o" turns into "hello"
-
-  - "he+lllo" turns into "hello"
-
-- `is_correct` that borrows a Vector of string literals with some correct and incorrect math equations and replaces the correct equations with `✔` and the wrong with `✘` and returns a `usize` with the percentage of correct equations.
+- `is_correct`: which borrows a Vector of string literals representing simple addition and subtraction equations. The function should replace the correct equations with `✔`, and the wrong ones with `✘`. It should return a `usize` with the percentage of correct equations.
 
 ### Expected Functions
 
@@ -26,10 +20,6 @@ pub fn is_correct(v: &mut Vec<&str>) -> usize {
 }
 ```
 
-### Notions
-
-- [ownership](https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html)
-- [meval](https://docs.rs/meval/0.2.0/meval/)
 
 
 ### Dependencies
@@ -63,3 +53,8 @@ $ cargo run
 ("borrow", ["✔", "✔", "✘", "✔"], 75)
 $
 ```
+
+### Notions
+
+- [ownership](https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html)
+- [meval](https://docs.rs/meval/0.2.0/meval/)
