@@ -2,27 +2,18 @@
 
 ### Instructions
 
-Your objective is to fix the **functions** work so that the program works.
+Create the following **functions**. The objective is to know how ownership works with different types.
 
 - `nbr_function` returns a tuple:
-  - with the `original` value
-  - the `exponential function` of the value
-  - and the `natural logarithm` of this `absolute` value
+  - with the `original` value.
+  - the `exponential function` of the value.
+  - and the `natural logarithm` of the `absolute` value.
 - `str_function` returns a tuple:
-  - with the `original` value
-  - and the `exponential function` each value as a string (see the example)
+  - with the `original` value.
+  - and the `exponential function` of each value as a string (see the example).
 - `vec_function` returns a tuple:
-  - with the `original` value
-  - and the `natural logarithm` of each `absolute` value
-
-The objective is to know how ownership works with different types.
-
-### Notions
-
-- [scope](https://doc.rust-lang.org/rust-by-example/scope/move.html)
-- [Primitive Type f64](https://doc.rust-lang.org/std/primitive.f64.html)
-
-### Expected Functions
+  - with the `original` value.
+  - and the `natural logarithm` of each `absolute` value.
 
 ```rust
 pub fn nbr_function(c: i32) -> (i32, f64, f64) {
@@ -66,3 +57,8 @@ $ cargo run
 ([1, 2, 4, 5], [0.0, 0.6931471805599453, 1.3862943611198906, 1.6094379124341003])
 $
 ```
+
+### Notions
+
+- [scope](https://doc.rust-lang.org/rust-by-example/scope/move.html)
+- [Primitive Type f64](https://doc.rust-lang.org/std/primitive.f64.html)
