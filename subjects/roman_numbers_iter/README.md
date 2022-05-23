@@ -4,7 +4,6 @@
 
 Implement the `Iterator` trait for the `RomanNumber` type. You should use the code from the previous exercise roman_numbers.
 
-
 ### Notions
 
 - [Trait Iterator](https://doc.rust-lang.org/std/iter/trait.Iterator.html)
