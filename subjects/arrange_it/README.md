@@ -2,23 +2,16 @@
 
 ### Instructions
 
-Create a **function** called `arrange_phrase` that takes a string literal as a phrase and returns it organized
-Each word will have a number that indicates the position of that word.
-
-> This exercise will test how many times the **heap is going to be allocated**!\
-> So try your best to allocate the minimum data on the heap!
-
-### Expected Function
+Create a **function** named `arrange_phrase`, that takes a string literal, _sorts_ the words and returns it. Each word will contain a number that indicates the position of that word.
 
 ```rust
 pub fn arrange_phrase(phrase: &str) -> String {
 }
 ```
 
-### Notions
+> Your heap allocations will be monitored to ensure that you do not make too many allocations, and that your allocations are reasonably sized.
 
-- [stack and heap](https://doc.rust-lang.org/1.22.0/book/first-edition/the-stack-and-the-heap.html)
-- [str](https://doc.rust-lang.org/std/primitive.str.html)
+
 
 ### Usage
 
@@ -39,3 +32,8 @@ $ cargo run
 "This is a Test"
 $
 ```
+
+### Notions
+
+- [stack and heap](https://doc.rust-lang.org/1.22.0/book/first-edition/the-stack-and-the-heap.html)
+- [str](https://doc.rust-lang.org/std/primitive.str.html)
