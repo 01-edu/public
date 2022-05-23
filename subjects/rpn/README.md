@@ -52,7 +52,7 @@ For receiving arguments from the command line you should use something like:
 
 ### Usage
 
-````console
+```console
 $ cargo run "1 2 * 3 * 4 +"
 10
 $ cargo run "1 2 3 4 +"
@@ -64,4 +64,3 @@ $ cargo run "     1      3 * 2 -"
 $ cargo run "     1      3 * ksd 2 -"
 Error
 ```
-````
