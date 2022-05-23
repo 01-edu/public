@@ -2,15 +2,7 @@
 
 ### Instruction
 
-- Create a **function** that takes ownership of a string and returns the first sub-word in it
-
-- It should work for `camelCase` as well as `snake_case`
-
-### Notions
-
-- [ownership](https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html)
-
-### Expected Function
+Create a **function** named `first_subword`, that takes ownership of a string and returns the first sub-word in it. It should work for `camelCase`, `PascalCase`, and `snake_case`.
 
 ```rust
 pub fn first_subword(mut s: String) -> String {
@@ -47,3 +39,7 @@ first_subword(CamelCase) = Camel
 first_subword(just) = just
 $
 ```
+
+### Notions
+
+- [ownership](https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html)
