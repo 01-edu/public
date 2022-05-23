@@ -17,11 +17,6 @@ pub fn last_name(student: &Student) -> String {
 }
 ```
 
-### Dependencies
-
-meval = "0.2"
-
-
 ### Usage
 
 Here is a program to test your functions
