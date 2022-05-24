@@ -2,18 +2,14 @@
 
 ### Instructions
 
-Given a list of integers (Vec<i32>) write three **functions**.
+Given a list of integers (`Vec<i32>`) write three **functions**.
 
-Write a **function** called `mean` that calculates the `mean` (the average value) of all the values in the list.
+-`mean`: that calculates the mean (the average value) of all the values in the list.
 
-Write a **function** called `median` that calculates the `median` (for a sorted list, it is the value in the middle). If there is an even amount of numbers in the list, the middle pair must be determined, added together, and divided by two to find the median value.
+- `median`: that calculates the median (for a sorted list, it is the value in the middle). If there is an even amount of numbers in the list, the middle pair must be determined, added together, and divided by two to find the median value.
 
-Write a **function** called `mode` that calculates the mode (the value
+- `mode` that calculates the mode (the value
 that appears more often).
-
-### Notions
-
-- [hash maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html)
 
 ### Expected Functions
 
@@ -53,3 +49,7 @@ median 4
 mode 5
 $
 ```
+
+### Notions
+
+- [hash maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html)
