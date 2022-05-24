@@ -4,7 +4,7 @@
 
 Imagine you are working on some software to control smart lights in a house. You have access to an array of all the lights in that house.
 
-Define the associated **function** `new`, and add it to the data structure `Light`. It should create a new light with the alias passed as an argument, with a brightness of .
+Define the associated **function** `new`, and add it to the data structure `Light`. It should create a new light with the alias passed as an argument, with a brightness of 0.
 
 Define the **function** `change_brightness`, which receives a `Vec` of lights, an `alias` and a `u8`value. It should find the light in the `Vec` by its alias, and set the value of the brightness.
 
