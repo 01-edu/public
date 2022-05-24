@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a **function** which receives a string slice and returns the number of characters of the string.
+Create a **function** which receives a string slice and returns the number of characters in that string.
 
 ### Expected Function
 
