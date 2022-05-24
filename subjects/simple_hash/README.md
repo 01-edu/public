@@ -2,15 +2,11 @@
 
 ### Instructions
 
-Create a **function** `contain` that checks a `HashMap` to see if it contains a given key.
+Create a **function** named `contain`, that checks a `HashMap` to see if it contains a given key.
 
-Create a **function** `remove` that removes a given key from the `HashMap`.
+Create a **function** named `remove` that removes a given key from the `HashMap`.
 
-- Note: pay attention to the comment in the [usage](#usage)
-
-### Notions
-
-- [HashMap](https://doc.rust-lang.org/rust-by-example/std/hash.html)
+> Pay attention to the comment in the [usage](#usage)
 
 ### Expected functions
 
@@ -69,3 +65,7 @@ Does the HashMap contains the name Robert? => false
 Hash {"Katie": 334, "Daniel": 122, "Ashley": 333}
 $
 ```
+
+### Notions
+
+- [HashMap](https://doc.rust-lang.org/rust-by-example/std/hash.html)
