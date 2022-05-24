@@ -2,11 +2,7 @@
 
 ### Instructions
 
-Create the function `bigger` that gets the biggest positive number in the `HashMap`.
-
-### Notions
-
-- [hash maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html)
+Create a function named `bigger` that gets the biggest positive number in the `HashMap`.
 
 ### Expected Function
 
@@ -42,3 +38,7 @@ $ cargo run
 The biggest of the elements in the HashMap is 334
 $
 ```
+
+### Notions
+
+- [hash maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html)
