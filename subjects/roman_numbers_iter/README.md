@@ -2,50 +2,18 @@
 
 ### Instructions
 
-Implement the `IntoIterator` trait for the `RomanNumber` type to enable using a for loop notation. This implementation must allow taking ownership, borrowing and borrowing mutably.
-
-1. Taking ownership (this consumes the RomanNumber)
-
-```rust
-for digit in number {
-	...
-}
-```
-
-2. Borrowing immutably (this preserves the RomanNumber)
-
-```rust
-	for digit in &number {
-
-	}
-```
-
-3. Borrowing mutably (this allow you to modify the RomanNumber without having to return the ownership)
-
-```rust
-	for digit in &mut number {
-
-	}
-```
+Implement the `Iterator` trait for the `RomanNumber` type. You should use the code from the previous exercise roman_numbers.
 
 ### Notions
 
-- https://doc.rust-lang.org/std/iter/trait.IntoIterator.html
-- https://doc.rust-lang.org/std/iter/index.html
+- [Trait Iterator](https://doc.rust-lang.org/std/iter/trait.Iterator.html)
 
 ### Expected Functions
 
 ```rust
-use roman_numbers::{RomanDigit, RomanNumber};
+//...
 
-impl IntoIterator for &RomanNumber {
-}
-
-impl IntoIterator for &mut RomanNumber {
-}
-
-impl IntoIterator for RomanNumber {
-}
+impl Iterator for RomanNumber {}
 ```
 
 ### Usage
@@ -56,12 +24,10 @@ Here is a program to test your function.
 use roman_numbers::RomanNumber;
 
 fn main() {
-	let number = RomanNumber::from(15);
+	let mut number = RomanNumber::from(15);
 
-	for digit in &number {
-		println!("{:?}", digit);
-	}
 	println!("{:?}", number);
+	println!("{:?}", number.next());
 }
 ```
 
@@ -69,9 +35,7 @@ And its output
 
 ```console
 $ cargo run
-RomanNumber([X, X, X, I, I])
-RomanNumber([I, X])
-RomanNumber([X, L, V])
-RomanNumber([Nulla])
+RomanNumber([X, V])
+Some(RomanNumber([X, V, I]))
 $
 ```
