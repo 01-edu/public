@@ -2,13 +2,12 @@
 
 ### Instructions
 
-Create a function called `reverse_it` that takes a number and returns a string with the number backwards followed by the original number. If the number is negative a char `-` has to be added to the beginning of the string.
+Create a function named `reverse_it`, that takes a number. It should return a string with the number reversed, followed by the original number. If the number is negative, a `-` should be added to the beginning of the string.
 
 ### Expected Functions
 
 ```rust
 pub fn reverse_it(v: i32) -> String {
-
 }
 ```
 
