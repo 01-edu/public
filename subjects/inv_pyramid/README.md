@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a function called `inv_pyramid` that takes a `string` as an `integer` and returns a vector of `string`s.
+Create a function named `inv_pyramid` that takes a `string` as an `integer` and returns a vector of `string`s.
 This function should create a pyramid structure. Each element of the vector must be a combination of spaces and the string given
 
 ### Example
