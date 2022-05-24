@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a **function** called `edit_distance` which calculates the minimum number of changes (insertions, deletions and/or substitutions) which need to be made to a string `source` to transform to another string `target`.
+Create a **function** named `edit_distance`, which calculates the minimum number of changes (insertions, deletions and/or substitutions) which are needed to transform the `source` string to the `target` string.
 
 ### Expected Function
 
@@ -10,10 +10,6 @@ Create a **function** called `edit_distance` which calculates the minimum number
 pub fn edit_distance(source: &str, target: &str) -> usize {
 }
 ```
-
-### Notions
-
-For more information and examples go to this [link](https://en.wikipedia.org/wiki/Edit_distance)
 
 ### Usage
 
@@ -41,3 +37,7 @@ $ cargo run
 It's necessary to make 2 change(s) to alignment, to get assignment
 $
 ```
+
+### Notions
+
+[Edit Distance (Wikipedia)](https://en.wikipedia.org/wiki/Edit_distance)
