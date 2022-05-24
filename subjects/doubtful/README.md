@@ -17,6 +17,8 @@ You'll need to complete the function signature, so that it works properly with t
 Here is a program to test your function
 
 ```rust
+use doubtful::*;
+
 fn main() {
 	let mut s = String::from("Hello");
 
