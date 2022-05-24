@@ -1,4 +1,4 @@
-## tuples
+## tuples_refs
 
 ### Instructions
 
@@ -27,7 +27,7 @@ meval = "0.2"
 Here is a program to test your functions
 
 ```rust
-use tuples::*;
+use tuples_refs::*;
 
 fn main() {
 	let student = Student(20, "Pedro".to_string(), "Domingos".to_string());
