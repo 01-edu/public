@@ -2,25 +2,25 @@
 
 ### Instructions
 
-In this program you will have to create a function `counting_words` that
-receives a `&str` and returns each word and the number of times it appears on the string.
+Create a function named `counting_words`, that receives a `&str`. It should return each word and the number of times it appears on the string.
 
-The program will count as a word the following:
+Each of the following will count as **1** word:
 
-- A number like ("0" or "1234") will count as 1.
-- A simple word or letter like ("a" or "they") will count as 1.
-- Two simple words joined by a single apostrophe ("it's" or "they're") will count as 1.
+- A number like "0" or "1234".
+- A word or letter like "a" or "they".
+- Two words joined by a single apostrophe like "it's" or "they're").
 
-The program must respect the following rules:
+The function must respect the following rules:
 
-- The count is case insensitive ("HELLO", "Hello", and "hello") are 3 uses of the same word.
-- All forms of punctuation have to be ignored except for the apostrophe if used like the example above.
+- The count is case insensitive, so that "HELLO", "Hello", and "hello" are 3 uses of the same word.
+- All forms of punctuation are to be ignored, except for the apostrophe if used like the example above.
 - The words can be separated by any form of whitespace (ie "\t", "\n", " ").
 
 ### Expected Function
 
 ```rust
-fn counting_words(words: &str) -> HashMap<String, u32> {}
+fn counting_words(words: &str) -> HashMap<String, u32> {
+}
 ```
 
 ### Usage
