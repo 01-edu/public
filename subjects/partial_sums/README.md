@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a `parts_sums` function that receives a reference of an array of u64 and returns a vector with the partial sums of the received array.
+Create a function named `parts_sums`, that receives a reference of an array of `u64`, and returns a vector with the partial sums of the received array.
 
 This is how partial sums work:
 
@@ -41,7 +41,6 @@ parts_sums(&[1, 2, 3, 4, 5]) // == [15, 10, 6, 3 ,1, 0]
 
 ```rs
 pub fn parts_sums(arr: &[u64]) -> Vec<64>{
-
 }
 ```
 
