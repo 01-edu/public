@@ -7,7 +7,7 @@ Represent the cards from a deck:
 
 - Create an `enum` to represent the `Suit`.
 - Implement the associated **function** `random`, which returns a random `Suit` (`Heart`, `Diamond`, `Spade` or `Club`).
-- Create a `Rank` enum. For ace and face cards, it can be one of `Ace`, `King`, `Queen` or `Jack`. For  for the values from 2 to 10, it can have a `Number` value associated to a `u8`.
+- Create a `Rank` enum. For ace and face cards, it can be one of `Ace`, `King`, `Queen` or `Jack`. For the values from 2 to 10, it can have a `Number` value associated to a `u8`.
 - Create an associated **function** to `Rank` called `Random` that returns a random `Rank`.
 - Create a structure name `Card` which has the fields `suit` and `rank`.
 
