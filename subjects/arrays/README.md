@@ -23,7 +23,7 @@ pub fn thirtytwo_tens() -> [i32; 32] {
 
 Here is a program to test your function.
 
-There are things missing in this program. Use the output and the other information to figure out what is missing.
+> It's incomplete. Use the output and the other available information to figure out what is missing.
 
 ```rust
 use arrays::{sum, thirtytwo_tens};
