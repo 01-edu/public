@@ -2,16 +2,11 @@
 
 ### Instructions
 
-Imagine you are working on a software to control smart lights in a house. You have access to an array of all the lights in a house.
+Imagine you are working on some software to control smart lights in a house. You have access to an array of all the lights in that house.
 
-Define the associated **function** `new` to the data structure `Light` which creates a new light with the alias passed in the arguments and a brightness of 0.
+Define the associated **function** `new`, and add it to the data structure `Light`. It should create a new light with the alias passed as an argument, with a brightness of .
 
-Define the **function** `change_brightness` that receives a `Vec` of lights, an `alias` and a `u8`value. The **function** then sets the `u8` value as the new brightness of the light identified by the alias in the Vec of lights.
-
-### Notions
-
-- [Example of Structs](https://doc.rust-lang.org/book/ch05-02-example-structs.html)
-- [Keyword Self](https://doc.rust-lang.org/std/keyword.Self.html)
+Define the **function** `change_brightness`, which receives a `Vec` of lights, an `alias` and a `u8`value. It should find the light in the `Vec` by its alias, and set the value of the brightness.
 
 ### Expected Functions and Structure
 
@@ -59,3 +54,8 @@ brightness = 0
 new brightness = 200
 $
 ```
+
+### Notions
+
+- [Example of Structs](https://doc.rust-lang.org/book/ch05-02-example-structs.html)
+- [Keyword Self](https://doc.rust-lang.org/std/keyword.Self.html)
