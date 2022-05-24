@@ -2,30 +2,25 @@
 
 ### Instructions
 
-Create the structures `Circle` and `Point` (which will be made of two coordinates) and the methods necessary for the code in [usage](#usage) to compile and run giving the expected output.
+Create the structures `Circle` and `Point`. You'll need to create the necessary methods for the code in the [usage](#usage) to compile, and give the expected output.
 
 #### Methods:
 
-- Point:
-  distance() -> returns the distance between two coordinates.
-- Circle:
-  - diameter() -> returns the diameter of the circle.
-  - area() -> returns the area of the circle.
-  - intersect() -> which returns true, if 2 circles intersect.
+- `Point`:
+  - `distance()` -> returns the distance between two coordinates.
+- `Circle`:
+  - `diameter()` -> returns the diameter of the circle.
+  - `area()` -> returns the area of the circle.
+  - `intersect()` -> which returns `true`, if 2 circles intersect.
 
 #### Associated Functions
 
-- Circle:
-  - new() -> receives three 64 bits floating point numbers in the following order: x, y and radius (x and y are the coordinates of the center of the new circle). The function returns a new circle
-
-### Notions
-
-- [Using Structs](https://doc.rust-lang.org/book/ch05-00-structs.html)
-- [f64 constants](https://doc.rust-lang.org/std/f64/consts/index.html)
+- `Circle`:
+  - `new()` -> receives three 64bit floating point numbers in the following order: x, y and radius (x and y are the coordinates of the center of the new circle). The function returns a new circle.
 
 ### Expected Functions and Structures
 
-This snippets are incomplete and it is part of the exercise to discover how to complete them. In the [usage](#usage) you will find all the information that you need.
+This snippets are incomplete, you'll need to complete them. You'll find some useful information in the [usage](#usage).
 
 ```rust
 pub struct Circle {
@@ -101,3 +96,8 @@ circle and circle1 intersect = false
 distance between Point { x: 1.0, y: 1.0 } and Point { x: 0.0, y: 0.0 } is 1.4142135623730951
 $
 ```
+
+### Notions
+
+- [Using Structs](https://doc.rust-lang.org/book/ch05-00-structs.html)
+- [f64 constants](https://doc.rust-lang.org/std/f64/consts/index.html)
