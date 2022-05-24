@@ -2,16 +2,9 @@
 
 ### Instructions
 
-Define a **function** called `thirtytwo_tens` that returns an array with 32 positions filled with only the value `10`:
+Define a **function** named `thirtytwo_tens` that returns an array with 32 positions filled with only the value `10`, so that `[10, 10, 10, ... 10].len()` is equal to 32.
 
-- [10, 10, 10, ... 10].len()
-  = 32
-
-Write a **function** that takes an array of i32 and returns the sum of the elements (make it work with the main).
-
-### Notions
-
-- [arrays](https://doc.rust-lang.org/std/primitive.array.html)
+Write a **function** that takes an array of `i32` and returns the sum of the elements (make it work with the main).
 
 ### Expected functions
 
@@ -30,7 +23,7 @@ pub fn thirtytwo_tens() -> [i32; 32] {
 
 Here is a program to test your function.
 
-There are things missing in this program. Use the output and the other information that you have available to retrieve what is missing.
+There are things missing in this program. Use the output and the other information to figure out what is missing.
 
 ```rust
 use arrays::{sum, thirtytwo_tens};
@@ -61,3 +54,7 @@ The Sum of the elements in [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] = 50
 Array size 32 with only 10's in it [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
 $
 ```
+
+### Notions
+
+- [arrays](https://doc.rust-lang.org/std/primitive.array.html)
