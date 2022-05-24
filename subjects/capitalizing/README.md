@@ -2,11 +2,11 @@
 
 ### Instructions
 
-Complete the `capitalize_first` **function** which turns the first letter of a string to uppercase.
+Complete the `capitalize_first` **function** which converts the first letter of the string to uppercase.
 
-Complete the `title_case` **function** which turns the first letter of each word in a string to uppercase.
+Complete the `title_case` **function** which converts the first letter of each word in a string to uppercase.
 
-Complete the `change_case` **function** which turns the uppercase letters of a string into lowercase and the lowercase letters into uppercase.
+Complete the `change_case` **function** which converts the uppercase letters of a string into lowercase, and the lowercase to uppercase.
 
 ### Expected Functions
 
