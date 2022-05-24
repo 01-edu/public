@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Implement the **function** `bubble_sort` which receives a vector Vec<i32> and returns the same vector but in increasing order using the bubble sort algorithm.
+Implement the **function** `bubble_sort`, which receives a `Vec<i32>` and returns the same vector but in increasing order using the bubble sort algorithm.
 
 ### Expected Function
 
