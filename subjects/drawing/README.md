@@ -6,13 +6,13 @@ The purpose of this exercise is to create an image like the example bellow:
 
 ![example](image.png)
 
-For this exercise you will need to do the following:
+You will need to do the following:
 
 - Copy the code in [usage](#usage) to your `main.rs`.
 
 - Create a module called `geometrical_shapes` in another file.
 
-This module will keep all the logic for creating and operating with the different geometrical shapes. You need to define two traits, `Displayable` and `Drawable`.
+You'll define the logic for creating and working with shapes in `geometrical_shapes`. Create the following traits:
 
 - `Drawable` which contains the methods `draw` and `color`.
 
@@ -20,32 +20,24 @@ This module will keep all the logic for creating and operating with the differen
 
 Define them according to the way they are called in the `main.rs` function.
 
-In order to make the code in the `main.rs` compile and run, you have to define the following structures:
-
-- `Point`
-- `Circle`
-- `Line`
-- `Rectangle`
-- `Triangle`
-
-You are free to implement all the shapes with whatever internal structure you see fit, but you must provide an associated function `new` for all the shapes, which will be described below:
+In order to compile and run `main.rs`, you'll need to define some structures. You are free to implement all the shapes with whatever internal structure you see fit, but you must provide an associated function `new` for all the shapes, which will be described below:
 
 - `Point`: a new point should be created from two `i32` values.
-- `Line`: a new line should be created from references to two different points. Also it will define an associated function called `random`:
-    - `random`: receives two arguments, the first is the `maximum x` value a point can have and the second is the `maximum y` value that a point can have.
+- `Line`: a new line should be created from references to two different points. It will also contain the associated function:
+    - `random`: receives two arguments, representing the maximum `x` and maximum `y` values that a point can have.
 - `Triangle`: a new triangle should be created from references to three different points.
-- `Rectangle`: a new rectangle should be created from two references to different points.
-- `Circle`: a new circle should be created from a point representing the center and an `i32` value representing the radius for the circle.
+- `Rectangle`: a new rectangle should be created from references to two different points.
+- `Circle`: a new circle should be created from a point representing the center and an `i32` value representing the circle's radius.
 
-- The main function also requires a definition of an associated function called `random` for the types `Line`, `Point` and `Circle`. You should derive their signature from the usage.
+You'll also need to create the associated function `random` for `Line`, `Point` and `Circle`. You should derive their signature from the usage.
 
-**Note**: Don't forget to add the dependencies in your Cargo.toml.
+> Don't forget to add the dependencies in your Cargo.toml.
 
-#### Bonus
+### Bonus
 
-- Implement the possibility of drawing a pentagon (implement the structure Pentagon, and the trait needed to draw in the image)
-
-- Implement the possibility of drawing a cube (implement the structure Cube, and the trait needed to draw in the image)
+Implement the following shapes, including their structure and traits needed to draw them:
+- `Pentagon`
+- `Cube`
 
 ### Usage
 
@@ -89,7 +81,7 @@ impl Displayable for Image {
 }
 ```
 
-**Note**: The expected output is a png file: `image.png`
+> The expected output is a png file: `image.png`
 
 ### Notions
 
