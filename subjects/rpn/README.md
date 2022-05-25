@@ -11,7 +11,6 @@ Write a **program** which takes a `string` containing an equation written in `Re
 
 The following operators must be implemented : `+`, `-`, `*`, `/`, and `%`.
 
-
 All the given operands must fit in a `i64`.
 
 Examples of formulas converted in RPN:
