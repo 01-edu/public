@@ -8,7 +8,7 @@ The purpose of this exercise is to create an image like the example bellow:
 
 You will need to do the following:
 
-- Copy the code in [usage](#usage) to your `main.rs`.
+- Copy the code in the [usage](#usage) to your `main.rs`.
 
 - Create a module called `geometrical_shapes` in another file.
 
@@ -23,8 +23,7 @@ Define them according to the way they are called in the `main.rs` function.
 In order to compile and run `main.rs`, you'll need to define some structures. You are free to implement all the shapes with whatever internal structure you see fit, but you must provide an associated function `new` for all the shapes, which will be described below:
 
 - `Point`: a new point should be created from two `i32` values.
-- `Line`: a new line should be created from references to two different points. It will also contain the associated function:
-    - `random`: receives two arguments, representing the maximum `x` and maximum `y` values that a point can have.
+- `Line`: a new line should be created from references to two different points.
 - `Triangle`: a new triangle should be created from references to three different points.
 - `Rectangle`: a new rectangle should be created from references to two different points.
 - `Circle`: a new circle should be created from a point representing the center and an `i32` value representing the circle's radius.
