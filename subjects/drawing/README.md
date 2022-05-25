@@ -26,15 +26,15 @@ In order to compile and run `main.rs`, you'll need to define some structures. Yo
 - `Line`: a new line should be created from references to two different points.
 - `Triangle`: a new triangle should be created from references to three different points.
 - `Rectangle`: a new rectangle should be created from references to two different points.
-- `Circle`: a new circle should be created from a point representing the center and an `i32` value representing the circle's radius.
+- `Circle`: a new circle should be created from a reference to a point representing the center, and an `i32` value representing the circle's radius.
 
-You'll also need to create the associated function `random` for `Line`, `Point` and `Circle`. You should derive their signature from the usage.
+You'll also need to create the associated function `random` for `Line`, `Point` and `Circle`. You should derive their signatures from the usage.
 
 > Don't forget to add the dependencies in your Cargo.toml.
 
 ### Bonus
 
-Implement the following shapes, including their structure and traits needed to draw them:
+You may optionally implement the following shapes, including the structures and traits needed to draw them:
 - `Pentagon`
 - `Cube`
 
