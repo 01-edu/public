@@ -2,17 +2,19 @@
 
 ### Instructions
 
-- Implement the insertion sort algorithm by creating a function `insertion_sort(slice, steps)` which executes the iterations of the algorithm **up to** the number of steps indicated by the parameter `steps`. See the **Usage** for more information.
+Implement the insertion-sort algorithm by creating a function named `insertion_sort`. It should execute the iterations of the algorithm **up to** the number indicated by `steps`. See the **Usage** for more information.
 
-The insertion sort algorithm to sort an array of size n in ascending order:
+The insertion-sort algorithm sorts an array of size `n` in ascending order. 
 
-1. Iterates from slice[1] to slice[n] over the slice.
+1. Iterates over the slice from `slice[1]` to `slice[n]`.
 
-2. Compares the current element (key) to its predecessor.
+2. Compares the current element (`slice[key]`) to its predecessor (`slice[key-1]`).
 
-3. If the key element is smaller than its predecessor, compares it to the elements before. Move the greater elements one position up to make space for the swapped element.
+3. If `slice[key]` is smaller than `slice[key-1]`, then `slice[key]` is compared to `slice[key-2]` and so on.
 
-Here is a visual example of sorting a slice step by step using the insertion sort algorithm.
+4. All of the elements with values greater than `slice[key]` will need to be shifted over, to fit the value at `slice[key]` into its new position.
+
+A step-by-step example of insertion-sort:
 
 ![image.png](Insertion-Sort-demo.png)
 
@@ -22,7 +24,6 @@ Here is a visual example of sorting a slice step by step using the insertion sor
 
 ```rust
 pub fn insertion_sort(slice: &mut [i32], steps: usize) {
-
 }
 ```
 
