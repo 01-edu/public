@@ -58,4 +58,4 @@ $
 ### Notions
 
 - [Example of Structs](https://doc.rust-lang.org/book/ch05-02-example-structs.html)
-- [Keyword Self](https://doc.rust-lang.org/std/keyword.Self.html)
+- [Keyword Self](https://doc.rust-lang.org/std/keyword.self.html)
