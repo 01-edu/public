@@ -2,25 +2,18 @@
 
 ### Instructions
 
-Write a **function**, called `open_or_create` which has two arguments:
+Create a **function** named `open_or_create` which has two arguments:
 
-- `file : &str` which is the name of the file
-- `content: &str` which will be the content to be written into the file
+- `file : &str`: which represents a file path.
+- `content: &str` which will be the content to be written to the file.
 
-This function should try to open a file, if it does not exist, it should create it.
+This function should try to open a file. If it does not exist, the file should be created.
 In case something goes wrong, it should panic, with the error.
-
-### Notions
-
-- [Error kind](https://doc.rust-lang.org/std/io/enum.ErrorKind.html)
-- [struct file](https://doc.rust-lang.org/std/fs/struct.File.html)
-- [OPenOptions](https://doc.rust-lang.org/std/fs/struct.OpenOptions.html)
 
 ### Expected Function
 
 ```rust
 pub fn open_or_create(file: &str, content: &str) {
-
 }
 ```
 
@@ -53,3 +46,9 @@ $ cargo run
 content to be written
 $
 ```
+
+### Notions
+
+- [Error kind](https://doc.rust-lang.org/std/io/enum.ErrorKind.html)
+- [struct file](https://doc.rust-lang.org/std/fs/struct.File.html)
+- [OPenOptions](https://doc.rust-lang.org/std/fs/struct.OpenOptions.html)
