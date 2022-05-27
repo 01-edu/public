@@ -2,23 +2,14 @@
 
 ### Instructions
 
-3 structure have to be created:
+Create the following structures. Each has one element:
 
-- `One`:
-  - which contains one element called `first_layer` which should be an `Option` of the structure `Two`.
-- `Two`:
-  - which contains one element called `second_layer` which should be an `Option` of the structure `Three`.
-- `Three`:
-  - which contains one element called `third_layer` which should be an `Option` of the structure `Four`.
-- `Four`:
-  - which contains one element called `fourth_layer` which is an `Option<u16>`.
+- `One`: `first_layer` as type `Option<Two>`.
+- `Two`: `second_layer` as type `Option<Three>`
+- `Three`: `third_layer` as type `Option<Four>`
+- `Four`: `fourth_layer` as type `Option<u16>`.
 
-Beside the structure you must create a **function** named `get_fourth_layer` which is associated to the `One` structure (a method).
-This **function** should return the `Option` value in the `Four` structure.
-
-### Notions
-
-- [Unpacking options with ?](https://doc.rust-lang.org/stable/rust-by-example/error/option_unwrap/question_mark.html)
+Beside the structures, you must create a **function** named `get_fourth_layer`, and associate it to the `One` structure. This **function** should return the `Option` value in the `Four` structure.
 
 ### Expected Function and structures
 
@@ -74,3 +65,7 @@ $ cargo run
 1000
 $
 ```
+
+### Notions
+
+- [Unpacking options with ?](https://doc.rust-lang.org/stable/rust-by-example/error/option_unwrap/question_mark.html)
