@@ -2,16 +2,16 @@
 
 ### Instructions
 
-"`Result` is a better version of the `Option` type that describes possible `error` instead of possible `absence`".
+"`Result` is a better version of the `Option` type that describes a possible `error` instead of possible `absence`".
 
 Create a structure called `Flag` which has the following elements:
 
-- short_hand: `String`
-- long_hand: `String`
-- desc: `String`
+- `short_hand`: `String`
+- `long_hand`: `String`
+- `desc`: `String`
 
 This structure must have a **function** called `opt_flag` which initializes the structure.
-This **function** receives two strings references and returns a structure `Flag`. Here is an example of its usage:
+This **function** receives two string references and returns a structure `Flag`. Here is an example of its usage:
 
 ```rust
     let d = Flag::opt_flag("diff", "gives the difference between two numbers");
@@ -20,24 +20,17 @@ This **function** receives two strings references and returns a structure `Flag`
     // output: "short hand: -d, long hand: --diff, description: gives the difference between two numbers"
 ```
 
-A second structure called `FlagsHandler` will be given which just has one element: `flags: HashMap<(String, String), Callback>`
-The following **functions** (methods) associated with `FlagsHandler` are for you to complete :
+A second structure named `FlagsHandler` will be given which just has one element: `flags: HashMap<(String, String), Callback>`. You'll need to implement the following **associated functions**" (methods) associated with `FlagsHandler` are for you to complete:"
 
-- `add_flag`, which adds to the HashMap the flag and the Callback function.
-- `exec_func`, which executes the function using the flag provided and returns the result, which can be either a string with the value from the callback or an error.
+- `add_flag`, which adds the flag and callback function to the HashMap.
+- `exec_func`, which executes the function using the flag provided and returns the result. The result will be either a string with the value from the callback or an error.
 
-A `type` called `Callback` will also be provided. It is a function which is going to be used in the structure
-and functions above. This function will be the callback for the flag associated to it.
+A `type` called `Callback` will also be provided. It is a function which is going to be used in the structure and functions above. This function will be the callback for the flag associated to it.
 
-You will have to create the following callback functions :
+You will have to create the following callback functions:
 
-- `div` which converts the reference strings to `float`s and returns the `Result`, being the division of the `float`s or the standard (std) error: `ParseFloatError`.
-- `rem` which converts the reference strings to `float`s and returns the `Result`, being the remainder of the division of the `float`s or the standard (std) error `ParseFloatError`.
-
-### Notions
-
-- [Result](https://doc.rust-lang.org/rust-by-example/error/result.html)
-- [Method optflag](https://docs.rs/getopts/0.2.18/getopts/struct.Options.html#method.optflag)
+- `div`: which converts the reference strings to `float`s and returns the `Result`, as the division of the `float`s or the standard (std) error: `ParseFloatError`.
+- `rem`: which converts the reference strings to `float`s and returns the `Result`, as the remainder of the division of the `float`s or the standard (std) error `ParseFloatError`.
 
 ### Expected Function
 
@@ -118,3 +111,8 @@ $ cargo run
 "invalid float literal"
 $
 ```
+
+### Notions
+
+- [Result](https://doc.rust-lang.org/rust-by-example/error/result.html)
+- [Method optflag](https://docs.rs/getopts/0.2.18/getopts/struct.Options.html#method.optflag)
