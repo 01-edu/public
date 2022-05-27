@@ -2,47 +2,37 @@
 
 ### Instructions
 
-For this exercise, you will have to implement an **error type**.
+For this exercise, you will have to implement an **error type** for a form validator. This must validate the password and the first name.
 
-The main objective is to create a form validator, where you must implement an
-error type. This must validate the password and the first name. The
-first name must not be empty and the password must have **at least 8 char**, a **combination of alphanumeric**, **none-alphanumeric** (ex: <, & or /, ...)
+The first name must not be empty and the password must have **at least 8 characters**, and a combination of **alphabetic**, **numeric** and **none-alphanumeric** (`<`, `&`,  `/` ...).
 
-ex: "asDd123=%" => good (as 8 char, alphanumeric and non-alphanumeric)\
-"asgfD" => error (does only have alphabetic letters)\
-"asdsdf2" => error (missing none-alphanumeric)\
-"sad\_#$" => error (does not have a combination of alphanumeric)
+examples
+- `"asDd123=%"`: **good**.
+- `"asgfD"`: **error** as it only contains alphabetic characters.
+- `"asdsdf2"`: **error** as it is missing none-alphanumeric characters.
+- `"sad\_#$"`: **error** as it is missing numeric characters.
 
-Create a structure called `Form` that will have the following fields:
+Create a structure named `Form` that will have the following fields:
 
-- `first_name`, that will be a string
-- `last_name`, that will be a string
-- `birth`, of type `NaiveDate` that will convert a string "2015-09-05" to a date of that format
-- `fav_colour`, of type Color that must be a `enum` with the fields `Red`, `Blue`  and `Green`
-- `birth_location`, that will be a string
-- `password`, that will be a string
+- `first_name`: `String`
+- `last_name`: `String`
+- `birth`: `NaiveDate` that will convert a string `"2015-09-05"` to a date of that format.
+- `fav_colour`: of type `Color` that must be an `enum` with the fields `Red`, `Blue`  and `Green`
+- `birth_location`: `String`
+- `password`: `String`
 
-You must also implement for this structure a function to initialize the structure, `new` and a function called
-`validate` that will validate the form
+You must implement the **associated functions** `new` and
+`validate` that will validate the form.
 
-For the error type you must create a type struct called `FErr`, that will be the type for the error
-It must have the fields:
+For the error type you must create a `struct` named `FErr`. It must have the fields:
 
-- `form_values`, this will be a tuple of strings that will save the value that the user inserted into the form
+- `form_values`: this will be a tuple of strings representing the invalid input. For example: `("password", "asdaSD\_")` or `("first_name", "someone")`
 
-ex: ("password", "asdaSD\_")
-("first_name", "someone")
-
-- `date`, that will have the date that the error occurred in the format "2020-12-14 09:33:41"
-- `err`, that will have the error description:
-  - "No user name"
-  - "At least 8 characters"
-  - "Combination of different ASCII character types (numbers, letters and none alphanumeric characters)"
-
-### Notions
-
-- [Error types](https://doc.rust-lang.org/rust-by-example/error/multiple_error_types/define_error_type.html)
-- [Struct NaiveDate](https://docs.rs/chrono/0.4.19/chrono/naive/struct.NaiveDate.html)
+- `date`: that will have the date that the error occurred in the format `"2020-12-14 09:33:41"`
+- `err`: the error description:
+  - `"No user name"`
+  - `"At least 8 characters"`
+  - `"Combination of different ASCII character types (numbers, letters and none alphanumeric characters)"`
 
 
 ### Dependencies
@@ -134,3 +124,8 @@ FErr { form_values: ("password", "asdasASd(_"), date: "2022-04-21 09:18:12", err
 FErr { form_values: ("password", "asdasASd123SA"), date: "2022-04-21 09:18:12", err: "Combination of different ASCII character types (numbers, letters and none alphanumeric characters)" }
 $
 ```
+
+### Notions
+
+- [Error types](https://doc.rust-lang.org/rust-by-example/error/multiple_error_types/define_error_type.html)
+- [Struct NaiveDate](https://docs.rs/chrono/0.4.19/chrono/naive/struct.NaiveDate.html)
