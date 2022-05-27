@@ -2,8 +2,7 @@
 
 ### Instructions
 
-Write a **function** that tries to open a file and panics if the file
-does not exist.
+Create a **function** that tries to open a file and panics if the file does not exist.
 
 ### Expected Function
 
