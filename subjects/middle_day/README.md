@@ -2,14 +2,13 @@
 
 ### Instructions
 
-Use the [`chrono crate`](https://docs.rs/chrono/0.4.19/chrono/index.html) to create a **function** called `middle_day`, which returns, wrapped in an Option, the Weekday of the middle day of the year passed as an argument.
-`chrono::Weekday` has to be refered as `wd`.
+Use the [`chrono` crate](https://docs.rs/chrono/0.4.19/chrono/index.html) to create a **function** named `middle_day`. It accepts a year, and returns the weekday of the middle day of that year, wrapped in an `Option`. `chrono::Weekday` has to be referred to as `wd`.
 
-As an even number of days doesn't have a middle day, when the year passed as an argument has an even number of days, the program should return `None`.
+Years with an even number of days do not have a middle day, and should return `None`.
 
 ### Expected Function
 
-#### For this exercise the signature of the function has to be found out.
+> You'll need to work out the function signature for yourself.
 
 ### Usage
 
