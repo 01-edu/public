@@ -4,17 +4,13 @@
 
 - Define the **functions**:
 
-  - new: which creates a new empty table.
+  - `new`: which creates a new empty table.
 
-  - add_rows: which adds a new row to the table from a slice of strings.
+  - `add_rows`: which adds a new row to the table from a slice of strings.
 
-  - filter_cols: which receives a closure which receives a `&str` and returns a `bool` value:
+  - `filter_cols`: which receives a closure and returns a table with all the columns that yielded true when applying that closure. The closure will receive a `&str` and return a `bool` value.
 
-  - filter_cols returns a table with all the columns that yielded true when applied to the header.
-
-  - filter_rows: which receives a closure that receives a `&str` and returns a `bool` value
-
-  - filter_rows returns a table with all the columns that yielded true when applied to the elements of the selected column.
+  - `filter_rows`: which receives a closure and returns a table with all the rows that yielded true when applied to the elements of the selected column. The closure will receive a `&str` and return a `bool` value.
 
 ### Expected functions and Structures
 
@@ -34,11 +30,11 @@ impl Table {
 
 	}
 
-	pub fn filter_col(&self, filter: ) -> Option<Self> {
+	pub fn filter_col(&self, filter: T) -> Option<Self> {
 
 	}
 
-	pub fn filter_row(&self, col_name: &str, filter: ) -> Option<Self> {
+	pub fn filter_row(&self, col_name: &str, filter: T) -> Option<Self> {
 
 	}
 }

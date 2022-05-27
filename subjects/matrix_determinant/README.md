@@ -13,13 +13,15 @@ This is how you calculate a 2x2 matrix determinant:
 a*d - b*c
 ```
 
-To calculate a 3x3 matrix determinant (below) you have to take 'a' and multiply it by the determinant of the matrix you get if you get rid of 'a' column and row. Then you subtract the multiplication of 'b' and the determinant of the matrix you get if you get rid of 'b' column and row. And finally, you do the same process for 'c' and add it to the previous result.
+To calculate a 3x3 matrix determinant (below) you have to take 'a' and multiply it by the determinant of the matrix you get if you get rid of the 'a' column and row. Then you subtract the multiplication of 'b' and the determinant of the matrix you get if you get rid of the 'b' column and row. And finally, you do the same process for 'c' and add it to the previous result.
 
 ```sh
 |a b c|
 |d e f|
 |g h i|
 ```
+
+![imagem](determinant-of-a-3x3-matrix-formula-3.png)
 
 ### Expected Function
 

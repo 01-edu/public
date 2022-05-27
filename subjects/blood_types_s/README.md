@@ -33,12 +33,12 @@ pub enum Antigen {
 }
 
 #[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone)]
-enum RhFactor {
+pub enum RhFactor {
 	Positive,
 	Negative,
 }
 
-#[derive(PartialEq, Eq, PartialOrd, Ord, Clone)]
+#[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone)]
 pub struct BloodType {
 	pub antigen: Antigen,
 	pub rh_factor: RhFactor,
@@ -52,6 +52,7 @@ impl BloodType {
 	}
 
 	pub fn recipients(&self) -> Vec<Self> {
+	}
 }
 ```
 
