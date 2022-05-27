@@ -2,25 +2,17 @@
 
 ### Instructions
 
-A **function** called **odd_to_even** will be given, which returns a `Result`. If there is an even value in the vector, the function will
-return a tuple with a string, stating the error, and a vector with the elements that caused the error.
+A **function** named **odd_to_even** will be given, which returns a `Result`. If there is an even value in the vector, the function will return a tuple with a string, stating the error, and a vector with the elements that caused the error.
 
-
-The objective is to execute the `odd_to_even` function and handle the error returned by it.
+The objective is to execute the `odd_to_even` function and handle the errors returned by it.
 
 Create the following functions which receive a vector:
 
-- `expect` which returns the error adding the string "ERROR "
-- `unwrap_or` which in case of error returns an empty vector
-- `unwrap_err` which panics if the value is `Ok` and returns the
-  string containing the error in case of `Err`
-- `unwrap` which unwraps the `Result`
-- `unwrap_or_else` which in case of error returns the vector of elements that caused the error
-
-### Notions
-
-- [Error Handling](https://doc.rust-lang.org/book/ch09-00-error-handling.html)
-- [Unwrap keywords](https://doc.rust-lang.org/std/?search=unwrap)
+- `expect`: which returns the error adding the string "ERROR " to the beginning.
+- `unwrap_or`: which in case of error, returns an empty vector.
+- `unwrap_err`: which panics if the value is `Ok`, or returns the string containing the error in case of `Err`.
+- `unwrap`: which unwraps the `Result`.
+- `unwrap_or_else`: which in case of error returns the vector of elements that caused the error.
 
 ### Expected Functions
 
@@ -95,3 +87,8 @@ Err(("There is a even value in the vector!", [2, 6]))
 [2, 6]
 $
 ```
+
+### Notions
+
+- [Error Handling](https://doc.rust-lang.org/book/ch09-00-error-handling.html)
+- [Unwrap keywords](https://doc.rust-lang.org/std/?search=unwrap)
