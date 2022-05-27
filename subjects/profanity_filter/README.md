@@ -6,30 +6,19 @@ Sometimes it is more desirable to catch the failure of some parts of a program i
 
 For this exercise you will have to create a message blocker, where you must block the word `stupid`.
 
-You will have to create a structure called `Message`, this structure
-must have the following elements:
+You will have to create a structure called `Message`, which contains:
+- elements:
+  - `content`: `String`
+  - `user`: `String`
+- associated functions:
+  - `new`: which initializes the structure.
+  - `send_ms`: which only has its implementation type (**self**) as argument. It should return `None` if the content of the message is either **empty** or contains the word **stupid**. It should return the content of the message otherwise.
 
-- content: String
-- user: String
+You will also need to create a **function** named `check_ms` which accepts a reference to a `Message`, and returns a tuple. This function will invoke the `send_ms` function.
+- If `send_ms` returns `None`, then your function should return `false` and `"ERROR: illegal"`.
+- Else, your function should return `true` and the contents of the message sent.
 
-The `struct` must also have an implementation of 2 **functions** associated with it:
-
-- `new`, which initializes the structure
-- `send_ms`, which only has its implementation type (**self**) as argument and returns an option:
-  - This function must return `None` if the content of the message is either **empty** or contains the word **stupid**. Otherwise it returns the content of the message.
-
-You will have to create one more **function** that is not associated with any structure:
-
-- `check_ms` which:
-  - receives as parameters the reference to the structure `Message`
-  - and returns a tuple, containing a `bool` and a `string`:
-    - This function will execute the function `send_ms` and if the result of the option is `None`, it should return (false, "ERROR: illegal").Otherwise it returns `true` and the content of the message sent.
-
-### Notions
-
-- [Enum Definition](https://doc.rust-lang.org/stable/book/ch06-01-defining-an-enum.html?highlight=option#the-option-enum-and-its-advantages-over-null-values)
-
-### Expected Function
+##### Expected Function
 
 ```rust
 pub struct Message {
@@ -82,3 +71,7 @@ $ cargo run
 (false, "ERROR: illegal")
 $
 ```
+
+# Notions
+
+- [Enum Definition](https://doc.rust-lang.org/stable/book/ch06-01-defining-an-enum.html?highlight=option#the-option-enum-and-its-advantages-over-null-values)
