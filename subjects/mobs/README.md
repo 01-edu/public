@@ -2,54 +2,52 @@
 
 ### Instructions
 
-Create a module `mobs`, in which has to be present:
+Create a module named `mobs`, containing a structure `Mob` which has:
 
-- a `Mob` structure which consists of:
-  - a String `name`
-  - a Boss struct `boss`
-  - a vector of Members `members`
-  - a vector of tuples `cities` containing the city name String and a value u8 
-  - a u32 `wealth`
+- `name`: `String`
+- `boss`: `Boss`
+- `members`: a vector of `Member`
+- `cities`: a vector of tuples containing a city name and a `u8`
+- `wealth`: `u32`
+- `recruit`: an associated function which adds a `Member` to the `members` vector. It should accept a `name`, and an `age`. The member's role should be set to `Associate`.
+- `attack`: an associated function which receives another `Mob`. It will remove the last member from the vector of `Member` from whichever mob has the least power combat score. In the case of a draw, the attacker loses. In the case that one of the mobs is left with zero members, the victorious mob will **also** take the cities and wealth from the losing mob. The power combat score is calculated from the sum of the `role` of each mob `member`:
+  - `Underboss`: 4
+  - `Caporegime`: 3
+  - `Soldier`: 2
+  - `Associate`: 1
+- `steal`: an associated function which receives a `Mob` to target, and a `u32` value to steal. The 'self' mob steals the value from the wealth of the target mob, and adds the value to its own wealth. Only as much money as the target mob has can be stolen.
+- `conquer_city`: an associated function which receives a vector of `Mob`, a city name and a `u8` value. The city name and `u8` value are added to its list of cities if non of the other mobs in the vector have a city with the same name.
 
-The Mob struct should implement the following functions:
+You will also need to create two submodules of mob:
 
-- `recruit`, which adds a member to the members vector of the Mob when receiving a `member_name` (&str) and a `member_age` (u8) (the role should be Associate)
-- `attack`, which receives another Mob and will remove the last member from the vector of Members from the Mob with the less power combat (in case of draw, the loser is the attacker). The power combat is calculated by its members:
-  - an Underboss power combat is 4
-  - a Caporegime power combat is 3
-  - a Soldier power combat is 2
-  - an Associate power combat is 1
-  - In case of one of the mobs stays without members, the winner mob adds to its cities every city of the loser mob and the same happens to the wealth, and the loser mob loses all cities and all wealth
-- `steal`, which receives a targeted mob (Mob) and a value (u32) and subtracts the value from the target mob. The value is then added to itself. It can't be stolen more than the target mob currently has.
-- `conquer_city`, which receives a vector of mobs, a city name (String) and a value (u8) and adds it to the vector of cities of the own mob, only if no mob in the vector owns a city with this name
-
-Create also two submodules of mob:
-
-- `boss` submodule which should contain:
-  - a `Boss` struct which consists of:
-  - a String `name`
-  - an u8 `age`
-  - a function `new` which returns a Boss on receiving a name (&str) and an age (u8)
+- `boss`: which should contain:
+  - `Boss`: a struct which consists of:
+  - `name`: `String`
+  - `age`: `u8`
+  - `new`: an associated function which accepts a `name` and `age`, and returns a `Boss`.
 - `member` submodule which consists of:
-  - a enum `Role` with the variants:
-    - Underboss
-    - Caporegime
-    - Soldier
-    - Associate
-  - a `Member` struct which consists of:
-    - a String name
-    - a enum Role `role`
-    - a u8 `age`
-  - the Member struct should implement a function `get_promotion` which will change the member role. If a member is an Associate, it will get promoted to Soldier; a Soldier is promoted to a Caporegime and a Caporegime is promoted to Underboss
-  - a function `new` which return a Member on receiving a name(&str), a role (Role) and an age (u8)
+  - `Role`: an enum with the variants:
+    - `Underboss`
+    - `Caporegime`
+    - `Soldier`
+    - `Associate`
+  - `Member`: a struct which consists of:
+    - `name`: `String`
+    - `role`: `Role`
+    - `age`: `u8`
+    `get_promotion`: an associated function which when invoked should promote the member from:
+      - `Associate` -> `Soldier`
+      - `Soldier` -> `Caporegime`
+      - `Caporegime` -> `Underboss`
+    - `new`: accepts a `name`, `role` and `age`, returning a `Member`.
 
-The submodules should be created inside a folder called `mobs`. We advise you to create two files one to each submodule, but it is up to you.
+The submodules should be created inside a folder named `mobs`. We advise you to create two files for each submodule, but that is up to you.
 
-You must include `#[derive(Debug, CLone, PartialEq)]` on top of every struct and the enum.
+You must include `#[derive(Debug, CLone, PartialEq)]` above every struct and enum.
 
 ### Expected Function
+> You'll need to work out the function signatures for yourself.
 
-#### For this exercise the signature of the function has to be found out.
 
 ### Usage
 
