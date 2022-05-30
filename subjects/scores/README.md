@@ -2,11 +2,11 @@
 
 ### Instructions
 
-Lets play a little!
-Create a function `score` that given a string, computes the score for that given string.
+Lets play a little.
 
-Each letter has their value, you just have to sum the values of the letters in the
-given string.
+Create a function named `score` that given a string, computes the score for that given string as a `u64`.
+
+Each letter has a value, you just have to sum the values of the letters in the given string.
 
 You will need these:
 
@@ -20,17 +20,8 @@ You will need these:
 | J, X                         |   8   |
 | Q, Z                         |  10   |
 
-### Notions
-
-- [patterns](https://doc.rust-lang.org/book/ch18-00-patterns.html)
-
 ### Expected functions
-
-```rust
-pub fn score(word: &str) -> u64 {
-
-}
-```
+> You'll need to work out the function signature for yourself.
 
 ### Usage
 
@@ -55,3 +46,7 @@ $ cargo run
 14
 $
 ```
+
+### Notions
+
+- [patterns](https://doc.rust-lang.org/book/ch18-00-patterns.html)
