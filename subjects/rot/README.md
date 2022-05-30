@@ -4,22 +4,18 @@
 
 In this exercise, if you do not know about it already, you will learn about the rotational cipher "ROT13".
 
-A ROT13 on the Latin alphabet would be as follows:
-
-- Plain: abcdefghijklmnopqrstuvwxyz
-
+A ROT13 applied the Latin alphabet:
+```
+- Plain:  abcdefghijklmnopqrstuvwxyz
+          ||||||||||||||||||||||||||
 - Cipher: nopqrstuvwxyzabcdefghijklm
+```
 
-Your purpose in this exercise is to create a similar `rotate` function that is a better version of the ROT13 cipher.
+You will create a similar `rotate` function that is a better version of the ROT13 cipher.
 
-Your function will receive a `string` and a `number` and it will rotate each letter of that `string` by the `number` of times settled by the second argument towards the right, or towards the left if the number is negative.
+Your function will receive a `String` and an `i8`, and will rotate each letter of that string by the number of times described by the second argument. Positive numbers rotate to the right, negative numbers rotate to the left.
 
-Your `function` should only rotate letters. If the string includes punctuation and numbers
-they will remain the same.
-
-### Notions
-
-- [patterns](https://doc.rust-lang.org/book/ch18-00-patterns.html)
+Only letters should be rotated. Numbers and punctuation should be left unchanged.
 
 ### Expected functions
 
@@ -76,3 +72,7 @@ Your cypher wil be: Fqefuzs
 The letter "a" becomes: z
 $
 ```
+
+### Notions
+
+- [patterns](https://doc.rust-lang.org/book/ch18-00-patterns.html)
