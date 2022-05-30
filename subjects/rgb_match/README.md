@@ -2,12 +2,7 @@
 
 ### Instructions
 
-Implement the struct `Color` with the function `swap`.
-This function must allow you to swap the values of the struct.
-
-### Notions
-
-- [patterns](https://doc.rust-lang.org/book/ch18-00-patterns.html)
+Implement the struct `Color` with the associated function `swap`. This function returns a `Color` with the matching values swapped.
 
 ### Expected functions
 
@@ -81,3 +76,7 @@ Color { r: 255, g: 30, b: 10, a: 200 }
 
 $
 ```
+
+### Notions
+
+- [patterns](https://doc.rust-lang.org/book/ch18-00-patterns.html)
