@@ -2,8 +2,8 @@
 
 ### Instructions
 
-In this exercise the logic of sequence of numbers will be tested.
-For this you have to create a function `number_logic` which will take a number `u32` and return `true` if the number is the sum of its own digits, each raised to the power of the number of digits, and `false` otherwise.
+In this exercise, the logic for a sequence of numbers will be tested.
+You will have to create a function which will return `true` if the number is the sum of its own digits, where each digit is first raised to the power of the number of digits.
 
 Examples:
 
@@ -11,10 +11,6 @@ Examples:
 - 10 returns false, because 10 != 1^2 + 0^2 = 1
 - 153 returns true, because: 153 = 1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153
 - 154 returns false, because: 154 != 1^3 + 5^3 + 4^3 = 1 + 125 + 64 = 190
-
-### Notions
-
-- [patterns](https://doc.rust-lang.org/book/ch18-00-patterns.html)
 
 ### Expected function
 
@@ -58,3 +54,7 @@ this number returns true because the number 153 obey the rules of the sequence
 this number returns false because the number 154 does not obey the rules of the sequence
 $
 ```
+
+### Notions
+
+- [patterns](https://doc.rust-lang.org/book/ch18-00-patterns.html)
