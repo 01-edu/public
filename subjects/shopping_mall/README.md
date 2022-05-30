@@ -2,18 +2,17 @@
 
 ### Instructions
 
-Using the `mall` module provided create the following **functions** to help run a shopping mall:
+Using the `mall` module provided, create the following **functions** to help run a shopping mall:
 
-- `biggest_store`: receives a `mall::Mall` and returns the `Store` with the biggest `square_meters`;
-- `highest_paid_employees`: receives a `mall::Mall` and returns a vector containing the `Employee`(s) with the highest salaries;
-- `nbr_of_employees`: receives a `mall::Mall` and returns the number of employees and guards, as a `usize`, in that mall;
-- `fire_old_guards`: receives a `mall::Mall` and removes from the `mall::Mall.guards` all guards who are 50 years old or older;
-- `check_for_guards`: receives a `mall::Mall` and a vector of `Guard` and, if there is not at least 1 guard for every 200 square meters of floor size, a guard should be added to the `mall::Mall.guards`;
-- `cut_or_raise`: receives a `mall::Mall` and raises or cuts, the salary of every employee in the mall by 10%, if the employee works for more than 10 hours (consider that the guards are not employees from the mall).
+- `biggest_store`: receives a `mall::Mall` and returns the `Store` with the biggest `square_meters`.
+- `highest_paid_employees`: receives a `mall::Mall` and returns a vector containing the `Employee`(s) with the highest salary.
+- `nbr_of_employees`: receives a `mall::Mall` and returns the number of employees and guards as a `usize`.
+- `fire_old_guards`: receives a `mall::Mall` and removes from the `mall::Mall.guards` all guards who are 50 years old or over.
+- `check_for_guards`: receives a `mall::Mall` and a vector of `Guard`. If there is not at least 1 guard for every 200 square meters of floor size, a guard should be added to the `mall::Mall.guards`.
+- `cut_or_raise`: receives a `mall::Mall`. For each employee, the salary will be raised by 10% if they work more than 10 hours, else their salary will be decreased by 10%. You can consider that guards are not employees of the mall.
 
 ### Expected Function
-
-#### For this exercise the signature of the function has to be found out.
+> You'll need to work out the function signatures for yourself.
 
 ### mall&#46;rs
 
