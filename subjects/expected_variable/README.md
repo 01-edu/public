@@ -2,22 +2,15 @@
 
 ### Instructions
 
-Create a **function** `expected_variable` that receives two strings: one to be evaluated and the other to be compared to (expected) and returns an Option. Every comparison should be case insensitive.
+Create a **function** named `expected_variable` that receives a string to compare and an expected string. It should return an `Option`. Every comparison should be case insensitive.
 
-If the evaluated string is not in camel case or in snake case (use the `case` crate for this evaluation) `expected_variable` returns `None`.
-Otherwise the evaluated string should be compared to the expected string using the `edit_distance` **function** that you did in one of the previous quests.
+If the compared string is **not** in camel case or snake case, `expected_variable` returns `None`. You can use the `case` crate to figure that out. Otherwise, the compared string should be compared to the expected string using the `edit_distance` **function** that you have already created.
 
-If the result of `edit_distance` has more than 50% of 'alikeness' to the expected string, considering the length of the expected string and the result of `edit_distance`, the function should return that same percentage with a '%' symbol in front of the number.
+If the result of `edit_distance` has more than 50% alikeness to the expected string, considering the length of the expected string and the result of `edit_distance`, the function should return that value with a `'%'` symbol after the number.
 Otherwise `expected_value` should return `None`.
 
-### Notions
-
-- [Crate case](https://crates.io/crates/case)
-- [Specifying Dependencies](https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html)
-
 ### Expected Function
-
-#### For this exercise the signature of the function has to be found out.
+> You'll need to work out the function signature for yourself.
 
 ### Usage
 
@@ -56,3 +49,8 @@ None
 67% close to it
 $
 ```
+
+### Notions
+
+- [Crate case](https://crates.io/crates/case)
+- [Specifying Dependencies](https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html)
