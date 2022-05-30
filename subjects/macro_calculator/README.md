@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a **function** `calculate_macros` which receives a vector of `Food` structures and returns a `json::JsonValue`.
+Create a **function** named `calculate_macros` which receives a vector of `Food` structures and returns a `json::JsonValue`.
 
 ```rust
 Food {
@@ -15,22 +15,21 @@ Food {
 }
 ```
 
-Both values in the calories array will be `strings`, all other values will be `f64`s.
+The values in the calories array will be of type `string`, all other values will be `f64`.
 
-The function should return a json with the following format (Macros struct):
+The json returned by `calculate_macros` will have the following format:
 
 ```json
-    "cals": <calories>,
-    "carbs": <carbs>,
-    "proteins": <proteins>,
-    "fats": <fats>,
+"cals": <calories>,
+"carbs": <carbs>,
+"proteins": <proteins>,
+"fats": <fats>,
 ```
 
-The number of portions should be taken into account. The values of the macros refer to one portion.
-All values should be floats (f64) and should be the addition of every macronutrient in the provided array (cals is the addition of every calories, fats is the addition of every fats, and so on...).
-Every value should be rounded to two decimal places (ex: 12.29) or one decimal place if it ends in 0 (ex: 18.90 -> 18.9).
-
-Hint: You will need the `json` crate.
+Consider the number of portions, as the values of the macros refer to one portion. Each value should represent the sum of each micro-nutrient in the array. E.g. `cals` is the sum of all `calories`.
+Every value should be `f64` and be rounded rounded to two decimal places, or one decimal place if it ends in a zero. E.g:
+- `12.294` -> `12.29`
+- `12.295` -> `12.30` -> `12.3`
 
 ### Expected Function
 
@@ -43,10 +42,6 @@ pub fn calculate_macros(foods: Vec<Food>) -> json::JsonValue {
 
 }
 ```
-
-### Notions
-
-- [json](https://docs.rs/json/0.12.4/json/) crate
 
 ### Usage
 
@@ -91,3 +86,7 @@ $ cargo run
 }
 $
 ```
+
+### Notions
+
+- [json](https://docs.rs/json/0.12.4/json/) crate
