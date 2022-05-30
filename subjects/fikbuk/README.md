@@ -5,7 +5,7 @@
 Create a `fikBuk` function that takes a number `n` and will start counting from
 `1` to `n`.
 
-You will return create an array from those values
+You will return an array from those values
 
 for each numbers in between `1` and `n` you must do the following:
 
