@@ -2,32 +2,42 @@
 
 ### Instructions
 
-Using the `areas_volumes` module provided, create two **functions**:
+Use the `areas_volumes` module provided to create two **functions**.
 
-- `area_fit` which receives 6 arguments and returns a boolean:
+Create `area_fit`. It should return `true` if the geometric shape can fit inside the rectangular area as many times as is indicated by `times`.
 
-  - `x` and `y`, length and width of the Rectangle in which it is going to be tried to fit the geometrical shapes (both usize)
-  - `objects`, the type of geometrical shape(s) which are going to be tried to be fitted in the square (areas_volumes::GeometricalShapes)
-  - `times`, the number of geometrical shapes which are going to be tried to be fitted in the square (usize)
-  - `a` and `b`, the dimensions which the plane(s) shape(s) passed will have (both usize)
-  - `a` will refer to the side of the Square, the radius of the Circle, the side_a of the Rectangle or the base of the Triangle
-  - `b` will refer to the side_b of the Rectangle or the height of the Triangle
-  - `area_fit` should return `true` if the geometrical shape(s) fit inside of the square.
+- `x` and `y`: length and width of the rectangular area.
+- `objects`: the type of geometric shape.
+- `times`: the number of geometric shapes to fit inside the rectangular area.
+- `a`: size of dimension for:
+	- `side` of a `Square`
+	- `base` of a `Triangle`
+	- `radius` of a `Circle`
+	- `side_a` of a `Rectangle`
+- `b`: size of dimension for:
+	- `height` of a `Triangle`
+	- `side_b` of a `Rectangle`
 
-- `volume_fit` which receives 8 arguments and returns a boolean:
-
-  - `x`, `y` and `z`, length, width and depth of the box in which it is going to be tried to fit the geometrical volumes (both usize)
-  - `objects`, the type of geometrical volume(s) which are going to be tried to be fitted in the box (areas_volumes::GeometricalVolumes)
-  - `times`, the number of geometrical volumes which are going to be tried to be fitted in the box (usize)
-  - `a`, `b` and `c`, the dimensions which the geometrical volume(s) passed will have (all of them usize)
-  - `a` will refer to the side of the Cube, the radius of the Sphere, the side_a of the Parallelepiped, the area of the base of the Triangular Pyramid or the base radius of the Cone
-  - `b` will refer to the side_b of the Parallelepiped, the height of the Triangular Pyramid or the height of the Cone
-  - `c` will refer to the side_c of the Parallelepiped
-  - `volume_fit` should return `true` if the geometrical volume(s) fit inside of the box.
+Create `volume_fit`. It should return `true` if the geometric volume can fit inside the box as many times as is indicated by `times`.
+  - `x`, `y` and `z`: length, width and depth of the box.
+  - `objects`: the type of geometric volume.
+  - `times`: the number of geometric volumes to fit inside the box.
+  - `a`: size of dimension for:
+		- `side` of a `Cube`
+		- `radius` of a `Sphere`
+		- `base_area` of a triangular `Pyramid`
+		- `side_a` of a `Parallelepiped`
+		- `base_radius` of a `Cone`
+	- `b`: size dimension for:
+		- `height` of the triangular `Pyramid`
+		- `side_b` of a `Parallelepiped`
+		- `height` of the `Cone`
+	- `c`: size dimension for:
+		- `side_c` of a `Parallelepiped`
 
 ### Expected Functions
 
-```rs
+```rust
 pub fn area_fit(
 	x: usize,
 	y: usize,
