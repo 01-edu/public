@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Complete the function "num_to_ordinal" that receives a cardinal number and returns its ordinal number.
+Complete the function `num_to_ordinal`. It returns the ordinal number for a given cardinal number.
 
 ### Expected functions
 
