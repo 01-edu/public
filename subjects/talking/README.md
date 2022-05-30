@@ -4,18 +4,13 @@
 
 Build the function `talking` which will allow you to talk with your computer.
 
-His answers will be created by you following the rules below.
+Its answers will be created by you following the rules below.
 
-- He answers "There is no need to yell, calm down!" if you yell at him, for example "LEAVE ME ALONE!"
-  (it is considered yelling when the sentence is all written in capital letters).
-- He answers "Sure." if you ask him something without yelling, for example "Is everything ok with you?"
-- He answers "Quiet, I am thinking!" if you yell a question at him. "HOW ARE YOU?"
-- He says "Just say something!" if you address him without actually saying anything.
-- He answers "Interesting" to anything else.
-
-### Notions
-
-- [patterns](https://doc.rust-lang.org/book/ch18-00-patterns.html)
+- It answers `"There is no need to yell, calm down!"` if you yell at it. For example `"LEAVE ME ALONE!"`. Yelling is when all the letters are capital letters.
+- It answers `"Sure."` if you ask it something without yelling. For example `"Is everything ok with you?"`.
+- It answers `"Quiet, I am thinking!"` if you yell a question at it. FOr example: `"HOW ARE YOU?"`.
+- It says `"Just say something!"` if you address it without actually saying anything.
+- It answers `"Interesting"` to anything else.
 
 ### Expected functions
 
@@ -52,3 +47,7 @@ $ cargo run
 "Just say something!"
 $
 ```
+
+### Notions
+
+- [patterns](https://doc.rust-lang.org/book/ch18-00-patterns.html)
