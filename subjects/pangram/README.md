@@ -2,17 +2,11 @@
 
 ### Instructions
 
-Create a `function` is_pangram which will determine whether or not a string is a pangram.
+Create a **function** named `is_pangram` which returns `true` if the given string is a pangram.
 
 A pangram is a sentence which uses every letter of the alphabet at least once.
 
-Example:
-
-"The quick brown fox jumps over the lazy dog."
-
-### Notions
-
-- [patterns](https://doc.rust-lang.org/book/ch18-00-patterns.html)
+Example: "The quick brown fox jumps over the lazy dog."
 
 ### Expected functions
 
@@ -46,3 +40,7 @@ true
 false
 $
 ```
+
+### Notions
+
+- [patterns](https://doc.rust-lang.org/book/ch18-00-patterns.html)
