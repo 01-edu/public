@@ -2,11 +2,11 @@
 
 ### Instructions
 
-Write a **function** which returns the first prime number which is equal or superior to the `u64` passed as parameter.
+Create a **function** which returns the first prime number which is greater than or equal to the `u64` passed as an argument.
 
-The function must be optimized in order to avoid time-outs with the tester.
+The function must be optimized, so as to avoid time-outs.
 
-(We consider that only positive numbers can be prime numbers)
+> We consider that only positive numbers can be prime numbers.
 
 ### Expected function
 
