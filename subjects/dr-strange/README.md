@@ -6,7 +6,7 @@ You will create two functions: `addWeek` and `timeTravel`.
 
 You have been given a mission to create a new sense of time. Normally a week has 7 days right? Well, that is about to change.
 
-Days will instead have **14** days.
+Weeks will instead have **14** days.
 
 Let me explain; this new week will have 14 days, from `Monday` to `Sunday`, then `secondMonday` to `secondSunday`.
 
