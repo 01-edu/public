@@ -2,16 +2,23 @@
 
 ### Instructions
 
-Build a module called `library` with two sub-modules inside of it:
+Build a module named `library` which contains two sub-modules:
 
-- `writers` which contains a structure called `Writer` which has a first_name (String),a last_name (String) and a set of books (Vec\<Book\>).
-- `books` which contains a structure called `Book` which has a title (String) and a year of publication (u64).
+- `writers`: which contains:
+  - `Writer`: a structure with:
+    - `first_name`: `String`
+    - `last_name`: `String`
+    - `books`: `Vec<Book>`
+- `books`: which contains:
+  - `Book`: a structure with:
+    - `title`: `String`
+    - `year`: `u64` as its year of publication
 
-A function `order_books` also has to be created (outside the previous modules which receives a writer (Writer) and orders the set of books alphabetically.
+A function `order_books` should be created (outside of the previous modules which receives a `Writer`, and orders the set of books alphabetically.
 
 ### Expected Functions and Structs
 
-#### (The structs declarations need to be filled and added in the appropriate submodules)
+> You'll need to complete the function and structs, and add them to the appropriate place, so that the `main` in the usage can be successfully compiled and run.
 
 ```rs
 pub struct Writer {
