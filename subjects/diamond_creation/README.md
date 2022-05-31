@@ -2,22 +2,18 @@
 
 ### Instructions
 
-Build the **function** `make_diamond` which takes a letter as input, and outputs it in a diamond shape.
+Build the **function** `make_diamond` which takes a letter as an input, and returns a diamond.
 
 Rules:
 
 - The first and last row contain one 'A'.
 - The given letter has to be at the widest point.
 - All rows, except the first and last, have exactly two identical letters.
-- All rows have as many trailing spaces as leading spaces. (This might be 0).
-- The diamond is vertically and horizontally symmetric.
-- The diamond width equals the height.
-- The top half has the letters in ascending order. (abcd)
-- The bottom half has the letters in descending order. (dcba)
-
-### Notions
-
-- [pattern syntax](https://doc.rust-lang.org/book/ch18-03-pattern-syntax.html)
+- All rows have as many trailing spaces as leading spaces. This may be 0.
+- The diamond is vertically symmetrical, and horizontally symmetrical.
+- The width of the diamond equals its height.
+- The top half has letters in ascending order (abcd).
+- The bottom half has letters in descending order (dcba).
 
 ### Expected functions
 
@@ -48,3 +44,7 @@ $ cargo run
 ["  A  ", " B B ", "C   C", " B B ", "  A  "]
 $
 ```
+
+### Notions
+
+- [pattern syntax](https://doc.rust-lang.org/book/ch18-03-pattern-syntax.html)
