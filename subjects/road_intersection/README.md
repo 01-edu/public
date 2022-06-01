@@ -2,62 +2,60 @@
 
 ### Objectives
 
-The objective for this raid is to create a traffic control strategy and represent it with an interface/UI.
-It's up to you to decide which library and file system you want to use in order to create this simulation, but we recommend you to use the library [sdl2](https://docs.rs/sdl2/0.34.3/sdl2/)
+Traffic, traffic, traffic...
+
+You will need to solve the traffic problem in your capital city. Your objective will be to create a traffic control strategy, and visualize it with a simulation.
+
+It is up to you to decide which library and file system you want to use in order to create this simulation, but we recommend that you use the [sdl2](https://docs.rs/sdl2/0.34.3/sdl2/) library.
 
 ### Instructions
 
 #### **Environment and Rules**
 
-You must create an environment which contains all the objects described in this section. You can display the objects as you wish.
+You must create an environment which contains all the objects described in this section. You can display the objects in any way you wish.
 
-1. Roads
+**1 Roads**
 
-There are various forms of intersections, let's focus on the widely seen four-lane crossroad. For simplicity, each road will have two lanes with two different directions for the total of two roads and four lanes.
+You will create two roads which cross each other to create an intersection. Each road will have **one lane** in each direction.
+
+Traffic entering the intersection will be able to select a route by:
+- turning left
+- turning right
+- continuing on straight
 
 ```console
-                  lane1     lane2
 
-               |    ↓    |    ↑    |
-               |    ↓    |    ↑    |
-               |    ↓    |    ↑    |
-               |    ↓    |    ↑    |
-               |    ↓    |    ↑    |
-               | r  s  l |    ↑    |
-_______________| ←  ↓  → |    ↑    |_____________
-                         |         ↑ r
-← ← ← ← ← ← ←            |         ← s ← ← ← ← ←      lane3
-                         |         ↓ l
-_________________________|_______________________
-           l ↑           |
- → → → → → s →           |           → → → → → →      lane4
-           r ↓           |
-_______________          |          _____________
-               |         | ←  ↑  → |
-               |    ↓    | l  s  r |
-               |    ↓    |    ↑    |
-               |    ↓    |    ↑    |
-               |    ↓    |    ↑    |
-               |    ↓    |    ↑    |
-               |    ↓    |    ↑    |
+               |  ↓  |  ↑  |
+               |  ↓  |  ↑  |
+               |     |     |
+               |     |     |
+               |     |     |
+               |     |     |
+_______________|     |     |_______________
+← ←                                     ← ←
+---------------             ---------------
+→ →                                     → →
+_______________             _______________
+               |     |     |
+               |     |     |
+               |     |     |
+               |     |     |
+               |     |     |
+               |  ↓  |  ↑  |
+               |  ↓  |  ↑  |
 ```
 
-For clarification reasons we will assume that a lane can have three different routes (consider that you are in the vehicle position):
+**2 Traffic lights**
 
-- `r`, turning right
-- `s`, straight ahead
-- `l`, turning left
+Traffic lights are signaling devices positioned at road intersections that follow a universal color code. We all know the normal colors for traffic lights, but for this exercise, your traffic lights will only have **red** and **green**.
 
-2. Traffic lights
+You will position those traffic lights at the point where each lane enters the intersection.
 
-Traffic lights are signalize devices positioned at road intersections that follows an universal color code,
-it's usually green, red and amber, but for this project you will just use the colors **red** and **green**.
+You can implement any algorithm you choose to control the traffic lights system, but bare in mind that traffic congestion should not be too high (8 or more vehicles).
 
-You will then have to create some kind of representation for the traffic lights and distribute them for each lane in the intersection.
+The primary function of **your** traffic light system, is to avoid collisions between vehicles passing through the intersection.
 
-You are free to decide what algorithm you want to implement to represent traffic light system, but keep in mind that traffic congestion should not be too high (8 or more vehicles).
-
-3. Vehicles
+**3. Vehicles**
 
 ```
   ______
@@ -65,56 +63,46 @@ You are free to decide what algorithm you want to implement to represent traffic
 =`-(_)--(_)-'
 ```
 
-Vehicles must obey this rules:
+The vehicles traveling through your capital city's new junction must follow these rules:
 
-- Vehicles must have a color so that it's possible to identify which route it will follow (ex:`r`- purple, `s`- Blue and `l`- Yellow). This information about the colors must be given to the auditor of the raid. The colors are up to you to decide.
+- Vehicles must be painted in a color which illustrates the route they will follow. The colors are up to you to decide, and your choices will need to be made available during the audit of the raid. For example, all cars which make a right turn could be painted yellow. It's really up to you though.
 
-- Autonomous vehicles driving on a lane with a **given route** must follow the direction of that route, it is not possible for the autonomous vehicle to change lanes or routes.
+- It is not possible for the vehicle to change its selected route.
 
 - Each vehicle must have a fixed velocity.
 
-- A safety distance from other vehicles must be kept, if one vehicle stop the other vehicle that's
-  behind him must stop and keep it's distance.
+- A safety distance from other vehicles must be maintained. If one vehicle stops, the following vehicle must also stop before it gets to close to the stationary vehicle in front.
 
 - Vehicles must stop if the traffic light is red and proceed otherwise.
 
-- Vehicles must have different routes, either `r`, `s` or `l`.
-
-- Other vehicles such as emergency vehicles are not considered.
+- There are no other vehicle types with special privileges. You can consider that there are no emergency vehicles in your capital city.
 
 ---
 
 #### **Commands**
 
-The generating of vehicles must be done using the keyboard event. You must be able to generate
-vehicles in different lanes and with different routes.
+You will use your keyboard to spawn vehicles for your simulation. You will use the arrow keys to spawn a vehicle from an initial direction, on the appropriate side of the road, and with a random route:
 
-For this it must be possible to do the following:
+- **`↑` Up:** south to north.
+- **`↓` Down:** north to south.
+- **`→` Right:** west to east.
+- **`←` Left:** east to west.
+- **`r`:** generates a vehicle from a random direction and random route.
+- **`Esc` Escape:** ends the simulation.
 
-- The `Arrow` keys must generate one vehicle in a specific direction and with a random route ( `r`, `s` and `l`):
+> It must not be possible to use the keyboard to spam the creation of vehicles; they must be created with a safe distance between them.
 
-  - `Up` south to north.
-  - `Down` north to south.
-  - `Right` west to east.
-  - `Left` east to west.
-
-- The `R` key must generate random vehicles with random lanes and routes.
-
-- The `Esc` key must finish the simulation.
-
-> Arrow keys must not let the user spam the creation of vehicles, they must be created with a safe distance between them.
-
-> A safe distance is any distance that allows the vehicles not to crash into each other.
+> A safe distance is any distance which enables the vehicles to avoid crashing into each other.
 
 ### Example
 
-You can see an example for the road_intersection [here](https://www.youtube.com/watch?v=6B0-ZBET6mo).
+You can see an example for road_intersection [here](https://www.youtube.com/watch?v=6B0-ZBET6mo).
 
 ### Bonus
 
 You can implement the following optional features:
 
-- Vehicle and traffic lights animation and image rendering. You can find some cool assets:
+- Vehicle and traffic light animations, and image rendering. You can find some cool assets here:
 
   - [limezu](https://limezu.itch.io/)
   - [finalbossblue](http://finalbossblues.com/timefantasy/free-graphics/).
