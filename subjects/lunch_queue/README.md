@@ -2,19 +2,17 @@
 
 ### Instructions
 
-You will need to create an *API* which will organize a queue of people, so that a program can organize a queue of people.
+You will need to create an *API*, so that a program can organize a queue of people.
 
-The program requires the following functionsAdd the following associated functions to the `Queue` structure:
+The program requires the following functions. Add them as associated functions to the `Queue` structure:
 
 - `new`: which will initialize the `Queue`.
-- `add`: which receives a person's information, to add them to the `Queue`.
+- `add`: which adds a person to the queue.
 - `invert_queue`: which reverses the queue.
-- `rm`: which will remove the person who finished ordering their food. The removal should respect the FIFO method (first in first out. The function should return the removed person.
-  The removal should respect a FIFO system (first in first out). This function should return a tuple wrapped in an `Option` with the information of the removed person (check the usage)
-- `search`: which returns a tuple with the information of a given person `id`
+- `rm`: which removes the person who finished ordering their food. The removal should respect the FIFO method (first in first out). It should return the person's details.
+- `search`: which returns the details for a given person's `name`.
 
-You must also create a type called `Link`. This will be the connection of the structures `Queue` and `Person`.
-Do not forget that this will be a recursion type and it must point to `None` if there is no persons.
+You must also create a type named `Link`. This will be the connection of the structures `Queue` and `Person`. This will be a recursion type and it must point to `None` when the person is the last person in the queue.
 
 ### Expected Function and Structures
 
@@ -34,16 +32,16 @@ impl Queue {
     pub fn new() -> Queue {
 
     }
-    pub fn add(&mut self, t: String, name: String) {
+    pub fn add(&mut self, name: String, id: i32) {
 
     }
     pub fn invert_queue(&mut self) {
 
     }
-    pub fn rm(&mut self) -> Option<String> {
+    pub fn rm(&mut self) -> Option<(String, i32)> {
 
     }
-    pub fn search(&mut self, ) -> Option<(String, String)> {
+    pub fn search(&self, name: &str) -> Option<(String, i32)> {
 
     }
 }
