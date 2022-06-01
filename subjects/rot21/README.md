@@ -4,10 +4,9 @@
 
 The purpose of this exercise is to create a `rot21` function that works like the ROT13 cipher.
 
-This function will receive a `string` and it will rotate each letter of that `string` 21 times to the right.
+This function will receive a `string` and will rotate each letter of that `string` 21 times to the right.
 
-The function should only rotate letters. If the string includes punctuation, symbols and/or numbers
-they will remain the same.
+The function should only rotate letters. Punctuation, symbols and numbers should remain the unchanged.
 
 ### Expected functions
 
