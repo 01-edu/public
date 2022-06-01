@@ -2,89 +2,93 @@
 
 ##### Try to run the application.
 
-###### Is the application running?
+###### Does the application start?
 
 ##### Try to generate a vehicle by pressing the `"Arrow Up"` key.
 
-###### Was a vehicle generated from the cardinal south?
+###### Was a vehicle generated from the south, with a random route?
 
 ##### Try to generate a vehicle by pressing the `"Arrow Down"` key.
 
-###### Was a vehicle generated from the cardinal North?
+###### Was a vehicle generated from the north, with a random route?
 
 ##### Try to generate a vehicle by pressing the `"Arrow Right"` key.
 
-###### Was a vehicle generated from the cardinal west?
+###### Was a vehicle generated from the west, with a random route?
 
 ##### Try to generate a vehicle by pressing the `"Arrow left"` key.
 
-###### Was a vehicle generated from the cardinal east?
+###### Was a vehicle generated from the east, with a random route?
 
-##### Try pressing the `"R"` key.
+##### Try pressing the `"r"` key.
 
-###### Was the vehicle generated randomly (random lane and route)?
+###### Was the vehicle generated from a random direction, with a random route?
 
-##### Try pressing the `"R"` key more than 5 times to generate multiple vehicles in different lines.
+##### Try pressing the `"r"` key more than 5 times to generate multiple vehicles, from multiple directions.
 
 ###### Can you confirm that the vehicles were created and maintain a safe distance from one another?
 
-##### Try to generate three vehicles in the same lane (do this on all lanes one at a time).
+##### Try to generate three vehicles from the same direction. Do this for each of the four directions.
 
-###### Can you confirm that the vehicles were created with a safe distance one from another?
+###### Can you confirm that the vehicles were created and maintain a safe distance from one another?
 
 ##### Try to generate two vehicles at the same time, one using the `"Up"` key and the other using the `"Down"` key (do this at least 3 times).
 
-###### Did all the vehicles passed the intersection without any collision?
+###### Did all the vehicles pass through the intersection without any collisions?
 
 ##### Try to generate two vehicles at the same time, one using the `"Right"` key and the other using the `"Left"` key (do this at least 3 times).
 
-###### Did all the vehicles passed the intersection without any collision?
+###### Did all the vehicles pass through the intersection without any collisions?
 
 ##### Try to generate two vehicles at the same time, one using the `"Up"` key and the other using the `"Left"` key (do this at least 3 times).
 
-###### Did all the vehicles passed the intersection without any collision?
+###### Did all the vehicles pass through the intersection without any collisions?
 
 ##### Try to generate two vehicles at the same time, one using the `"Up"` key and the other using the `"Right"` key (do this at least 3 times).
 
-###### Did all the vehicles passed the intersection without any collision?
+###### Did all the vehicles pass through the intersection without any collisions?
 
 ##### Try to generate two vehicles at the same time, one using the `"Down"` key and the other using the `"Left"` key (do this at least 3 times).
 
-###### Did all the vehicles passed the intersection without any collision?
+###### Did all the vehicles pass through the intersection without any collisions?
 
 ##### Try to generate two vehicles at the same time, one using the `"Down"` key and the other using the `"Right"` key (do this at least 3 times).
 
-###### Did all the vehicles passed the intersection without any collision?
+###### Did all the vehicles pass through the intersection without any collisions?
 
 ##### Try to generate five vehicles using the `"Up"` key, at the same time generate two vehicles using the `"Right"` key.
 
-###### Did all the vehicles passed the intersection without any collision?
+###### Did all the vehicles pass through the intersection without any collisions?
 
 ##### Try to generate one vehicle for all the lanes (do this at least 3 times).
 
-###### Did all the vehicles passed the intersection without any collision?
+###### Did all the vehicles pass through the intersection without any collisions?
 
-##### Try to generate vehicles randomly using the `"R"` key. Then wait for at least 1 min.
+##### Try to generate many vehicles randomly using the `"r"` key. Then wait for at least 1 min.
 
-###### Did all the vehicles passed the intersection without any collision?
+###### Did all the vehicles pass through the intersection without any collisions?
 
-##### Try to generate multiple vehicles in lanes of your choice.
+##### Try to generate many vehicles in lanes of your choice.
 
-###### Did all the vehicles passed the intersection without any collision?
+###### Did all the vehicles pass through the intersection without any collisions?
 
 ##### Try pressing the `"Esc"` key.
 
-###### Was the simulation finished?
+###### Was the simulation ended?
 
-###### Was there a low traffic congestion while running the application? (ex: high traffic congestion can be 8 or more vehicles in the same lane without proceeding)?
+###### High traffic congestion is when there are 8 or more vehicles in the same lane without proceeding. Was there low traffic congestion while running the simulation?
 
 #### General
 
-###### Can you confirm that it is impossible to spam the creation of vehicles (by pressing the arrow keys to many times or leave it pressed)?
+###### Can you confirm that it is impossible to spam the creation of vehicles by pressing the arrow keys too many times or leave one pressed?
 
-###### Are vehicles assigned to their own route, and if so, do they obey that route? (you can use the colors for each route to see this, ask the owner of the raid for instructions)
+##### Ask the captain of the raid to show you information about how the color of cars relates to its random route.
 
-###### Do the vehicles kept a safe distance (do not collide whenever one stops)?
+###### Was the information about colors and routes available?
+
+###### Are vehicles assigned to their own route with an appropriate color? If so, do they obey that route?
+
+###### Do the vehicles keep a safe distance by avoiding a collision when the car in front stops?
 
 ###### Do vehicles stop whenever there is a red light?
 
