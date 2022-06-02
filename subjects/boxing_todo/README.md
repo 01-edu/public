@@ -119,12 +119,10 @@ impl TodoList {
 
 Here is a program to test your function.
 
-You can create some todos yourself to test it. The JSON structure can be found above.
+You can create some _todos_ yourself, inside the boxing_todo file in order to test it. The JSON structure can be found above.
 
 ```rust
-mod lib;
-use lib::{ TodoList };
-
+use boxing_todo::TodoList;
 fn main() {
     let todos = TodoList::get_todo("todo.json");
     match todos {
@@ -133,15 +131,13 @@ fn main() {
             println!("{}{:?}", e.to_string(), e.source());
         }
     }
-
-    let todos = TodoList::get_todo("no_todo_list.json");
+    let todos = TodoList::get_todo("todo_empty.json");
     match todos {
         Ok(list) => println!("{:?}", list),
         Err(e) => {
             println!("{}{:?}", e.to_string(), e.source());
         }
     }
-
     let todos = TodoList::get_todo("malformed_object.json");
     match todos {
         Ok(list) => println!("{:?}", list),
@@ -157,7 +153,7 @@ And its output:
 ```console
 $ cargo run
 TodoList { title: "TODO LIST FOR PISCINE RUST", tasks: [Task { id: 0, description: "do this", level: 0 }, Task { id: 1, description: "do that", level: 5 }] }
-Todo List parse failed: None
+Fail to parses todoNone
 Fail to parse todo Some(Malformed(UnexpectedCharacter { ch: ',', line: 2, column: 18 }))
 $
 ```
@@ -167,4 +163,4 @@ $
 - [Module std::fmt](https://doc.rust-lang.org/std/fmt/)
 - [JSON](https://docs.rs/json/0.12.4/json/)
 - [Boxing errors](https://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/boxing_errors.html)
-- [Returning Traits wirh dyn](https://doc.rust-lang.org/stable/rust-by-example/trait/dyn.html)
+- [Returning Traits with dyn](https://doc.rust-lang.org/stable/rust-by-example/trait/dyn.html)
