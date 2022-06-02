@@ -4,15 +4,9 @@
 
 Create the following **functions**:
 
-- `transform_and_save_on_heap`, which receives a string with a number (that can or not have a k (kilo) suffix)
-  and transforms those numbers into `u32` and inserts them into a vector which must be saved in the heap using **Box**.
+- `transform_and_save_on_heap`: which accepts a string of numbers separated by spaces. Each number may or may not have a `'k'` as a suffix which represents kilograms. The function transforms those numbers into a vector of `u32`, and saves them in the heap using `Box`.
 
-- `take_value_ownership`, which takes the value (unboxed value) from the box and returns it
-
-### Notions
-
-- [smart pointers](https://doc.rust-lang.org/book/ch15-00-smart-pointers.html)
-- [using box](https://doc.rust-lang.org/book/ch15-01-box.html)
+- `take_value_ownership`: which accepts the return value from `transform_and_save_on_heap`, unboxes the value, and returns it.
 
 ### Expected Functions
 
@@ -57,3 +51,8 @@ value : [5500, 8900, 32]
 size occupied in the stack : 24 bytes
 $
 ```
+
+### Notions
+
+- [smart pointers](https://doc.rust-lang.org/book/ch15-00-smart-pointers.html)
+- [using box](https://doc.rust-lang.org/book/ch15-01-box.html)
