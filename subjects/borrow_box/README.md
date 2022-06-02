@@ -2,24 +2,19 @@
 
 ### Instructions
 
-In this exercise, a **CRUD** functionality will have to be created. Therefore the following functions will have to be defined :
+Game time.
 
-- `new`, which receives two players and initializes them with a name and a score. This function should
-  return the structure wrapped in a Box.
+You will implement some **CRUD** functionality for a game. You will need to implement the `Game` structure with the following associated functions:
 
-- `read_winner`, which returns a tuple with the name and the score of the player who is winning.
-  In case none of the players are winning, it should return the same tuple with the string "Same score! tied" and the tied score.
+- `new`: which initializes a game state with player names and some other information. This function returns the structure wrapped in a `Box`.
 
-- `update_score`, which receives the name of a player.
-  This function should increment the score of the player. The score should only be increased if it does not pass the `nbr_of_games`.
-  Example: if the nbr_of_games is 3 then the winner of the game should be the one who is the best out of three games. So if one play has 2 wins then
-  he is the winner and the function should not increase the score anymore for either player.
+- `read_winner`: which returns a tuple with the name and score of the player who is currently winning. In the case that no player is winning, it should return the same tuple with the string `"Same score! tied"` and the tied score.
 
-- `delete`, which takes the ownership of the boxed game and returns a string: "game deleted: id -> 0".
+- `update_score`: which receives the name of a player, and increments their score. The `nbr_of_games` should also be incremented. This function should **do nothing** if the the game is already finished.
 
-### Notions
+- `delete`: which takes ownership of the boxed game and returns a string: `"game deleted: id -> 0"`.
 
-- [Box Pointers](https://doc.rust-lang.org/book/ch15-01-box.html)
+> If `nbr_of_games` is 5, then it is "best out of 5", and no more than 5 games can be played. If some player has a score of 3, then the game is also finished. This is because there is an insufficient number of remaining games for the trailing player to catch up.
 
 ### Expected Functions
 
@@ -93,3 +88,7 @@ $ cargo run
 "game deleted: id -> 0"
 $
 ```
+
+### Notions
+
+- [Box Pointers](https://doc.rust-lang.org/book/ch15-01-box.html)
