@@ -18,6 +18,5 @@ $ go run . 5156454
 4eae66
 $ go run .
 $ go run . "123 132 1" | cat -e
-ERROR$
 $
 ```
