@@ -23,17 +23,17 @@ Create `volume_fit`. It should return `true` if the geometric volume can fit ins
   - `objects`: the type of geometric volume.
   - `times`: the number of geometric volumes to fit inside the box.
   - `a`: size of dimension for:
-		- `side` of a `Cube`
-		- `radius` of a `Sphere`
-		- `base_area` of a triangular `Pyramid`
-		- `side_a` of a `Parallelepiped`
-		- `base_radius` of a `Cone`
-	- `b`: size dimension for:
-		- `height` of the triangular `Pyramid`
-		- `side_b` of a `Parallelepiped`
-		- `height` of the `Cone`
-	- `c`: size dimension for:
-		- `side_c` of a `Parallelepiped`
+    -  `side` of a `Cube`
+	- `radius` of a `Sphere`
+	- `base_area` of a triangular `Pyramid`
+	- `side_a` of a `Parallelepiped`
+	- `base_radius` of a `Cone`
+- `b`: size dimension for:
+	- `height` of the triangular `Pyramid`
+	- `side_b` of a `Parallelepiped`
+	- `height` of the `Cone`
+- `c`: size dimension for:
+	- `side_c` of a `Parallelepiped`
 
 ### Expected Functions
 
