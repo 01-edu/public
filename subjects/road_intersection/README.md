@@ -81,13 +81,13 @@ The vehicles traveling through your capital city's new junction must follow thes
 
 #### **Commands**
 
-You will use your keyboard to spawn vehicles for your simulation. You will use the arrow keys to spawn a vehicle from an initial direction, on the appropriate side of the road, and with a random route:
+You will use your keyboard to spawn vehicles for your simulation. You will use the arrow keys to spawn a vehicle on the appropriate side of the road, and with a random route.
 
-- **`↑` Up:** south to north.
-- **`↓` Down:** north to south.
-- **`→` Right:** west to east.
-- **`←` Left:** east to west.
-- **`r`:** generates a vehicle from a random direction and random route.
+- **`↑` Up:** moves towards the intersection **from the south.**
+- **`↓` Down:** moves towards the intersection **from the north.**
+- **`→` Right:** moves towards the intersection **from the west.**
+- **`←` Left:** moves towards the intersection **from the east.**
+- **`r`:** moves towards the intersection **from a random direction.**
 - **`Esc` Escape:** ends the simulation.
 
 > It must not be possible to use the keyboard to spam the creation of vehicles; they must be created with a safe distance between them.
