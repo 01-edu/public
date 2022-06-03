@@ -12,7 +12,7 @@ The program requires the following functions. Add them as associated functions t
 - `rm`: which removes the person who finished ordering their food. The removal should respect the FIFO method (first in first out). It should return the person's details.
 - `search`: which returns the details for a given person's `name`.
 
-You must also create a type named `Link`. This will be the connection of the structures `Queue` and `Person`. This will be a recursion type and it must point to `None` when the person is the last person in the queue.
+You must also create a type named `Link`. This will be the connection of the structures `Queue` and `Person`. This will be a recursion type, and must point to `None` if there is no `Person` to point to.
 
 ### Expected Function and Structures
 
