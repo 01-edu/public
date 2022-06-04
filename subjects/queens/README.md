@@ -2,21 +2,18 @@
 
 ### Instructions
 
-In a chess game, a queen can attack pieces which are on the same row, column, or diagonal.
+In a chess game, a queen can attack pieces which are on the same rank (row), file (column), or diagonal.
 
-The purpose of this exercise is to find out if two queens can attack each other using the same rules.
+The purpose of this exercise is to find out if two queens can attack each other.
 
-The chess board will be represented as an 8 by 8 array.
+The position of a chess piece on a chessboard will be represented by the struct `ChessPosition`. You must implement the associated function `new` which will return the position if it is valid, otherwise it will return `None`.
+> Remember, chessboards have 8 files and 8 ranks (each from 0 to 7).
 
-So, given the position of the two queens on a chess board, you will have to
-implement the function `can_attack` in the given struct `Queen` with
-the purpose of finding out whether the two queens can attack each other or not.
+You will create the `Queen` struct with the associate function `can_attack`, which will return `true` if the queens can attack each other or not. You also need to implement the function `new` which creates a new `Queen` with a `ChessPosition`.
 
-For this to be possible, you will also have to implement the struct `ChessPosition`
-with the function `new`. This will allow you to verify if the position is valid or not. If the position is valid it will return that position, otherwise it will return `None`.
+### Example
 
-For example, if the white queen is at (2, 3) and the black queen is at (5, 6),
-then the set-up would be like so:
+If the white queen is at (2, 3) and the black queen is at (5, 6), then the set-up would be like the below. In this case, the two queens can attack each other because both pieces share a diagonal:
 
 ```
 _ _ _ _ _ _ _ _
@@ -28,8 +25,6 @@ _ _ _ _ _ _ B _
 _ _ _ _ _ _ _ _
 _ _ _ _ _ _ _ _
 ```
-
-In this case, the two queens can attack each other because both pieces share a diagonal.
 
 ### Expected Function and Structures
 
@@ -52,6 +47,10 @@ impl ChessPosition {
 }
 
 impl Queen {
+    pub fn new(position: ChessPosition) -> Self {
+
+    }
+
     pub fn can_attack(&self, other: &Queen) -> bool {
 
     }

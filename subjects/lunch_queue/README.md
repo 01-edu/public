@@ -2,27 +2,21 @@
 
 ### Instructions
 
-An API will have to be created to organize a queue of people.
+You will need to create an *API* which will organize a queue of people, so that a program can organize a queue of people.
 
-Using the given code declare the following functions:
+The program requires the following functionsAdd the following associated functions to the `Queue` structure:
 
-- `new` which will initialize the `Queue`
-- `add` which receives the person's information, so it can be added to the `Queue`
-- `invert_queue` which inverts the queue of persons
-- `rm`, which will remove the person who finished ordering their food.
+- `new`: which will initialize the `Queue`.
+- `add`: which receives a person's information, to add them to the `Queue`.
+- `invert_queue`: which reverses the queue.
+- `rm`: which will remove the person who finished ordering their food. The removal should respect the FIFO method (first in first out. The function should return the removed person.
   The removal should respect a FIFO system (first in first out). This function should return a tuple wrapped in an `Option` with the information of the removed person (check the usage)
-- `search`, which returns a tuple with the information of a given person `id`
+- `search`: which returns a tuple with the information of a given person `id`
 
 You must also create a type called `Link`. This will be the connection of the structures `Queue` and `Person`.
 Do not forget that this will be a recursion type and it must point to `None` if there is no persons.
 
-### Notions
-
-- [enum](https://doc.rust-lang.org/rust-by-example/custom_types/enum.html)
-- [Box](https://doc.rust-lang.org/book/ch15-01-box.html)
-- [std::option](https://doc.rust-lang.org/std/option/)
-
-### Expected Function adn Structures
+### Expected Function and Structures
 
 ```rust
 pub struct Queue {
@@ -37,12 +31,21 @@ pub struct Person {
 }
 
 impl Queue {
-    pub fn new() -> Queue {}
-    pub fn add(&mut self, t: String, name: String) {}
-    pub fn invert_queue(&mut self) {}
-    pub fn rm(&mut self) -> Option<String> {}
-    pub fn search(&self) -> Option<(String, String)> {}
+    pub fn new() -> Queue {
 
+    }
+    pub fn add(&mut self, t: String, name: String) {
+
+    }
+    pub fn invert_queue(&mut self) {
+
+    }
+    pub fn rm(&mut self) -> Option<String> {
+
+    }
+    pub fn search(&mut self, ) -> Option<(String, String)> {
+
+    }
 }
 ```
 
@@ -83,3 +86,9 @@ list Queue { node: Some(Person { name: "Alice", discount: 35, next_person: Some(
 invert Queue { node: Some(Person { name: "Monica", discount: 15, next_person: Some(Person { name: "Ana", discount: 5, next_person: Some(Person { name: "Alice", discount: 35, next_person: None }) }) }) }
 $
 ```
+
+### Notions
+
+- [enum](https://doc.rust-lang.org/rust-by-example/custom_types/enum.html)
+- [Box](https://doc.rust-lang.org/book/ch15-01-box.html)
+- [std::option](https://doc.rust-lang.org/std/option/)

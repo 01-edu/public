@@ -2,9 +2,9 @@
 
 ### Instructions
 
-- Implement the `std::fmt::Display` trait for the structure table so that the table is printed like in the **[Usage](#usage)**. The length of each column must adjust to the longest element of the column and the element must be centered in the "cell" when possible. If the length of the element doees not allow to center exactly, it must descend slightly to the right.
+- Implement the `std::fmt::Display` trait for the structure table so that the table is printed like in the **[Usage](#usage)**. The length of each column must adjust to the longest element of the column and the element must be centered in the "cell" when possible. If the length of the element does not allow to center exactly, it must be offset slightly to the left.
 
-  - Note: If the table is empty `println!` must not print anything.
+  - Note: If the table is empty (does not have a header), `println!` must not print anything.
 
 - Define the associated function `new` which creates a new empty table.
 
@@ -22,7 +22,7 @@ pub struct Table {
 impl fmt::Display for Table {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
 
-        }
+    }
 }
 
 impl Table {

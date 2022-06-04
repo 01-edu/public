@@ -1,4 +1,4 @@
-## flat_rust
+## flat_tree
 
 ### Instructions
 
