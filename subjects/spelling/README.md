@@ -11,7 +11,7 @@ Here are some examples of what your function should return:
 - `96` -> `"ninety-six"`
 - `100` -> `"one hundred".`
 - `101` -> `"one hundred one"`
-- `348` -> `"one hundred twenty-three"`
+- `348` -> `"three hundred forty-eight"`
 - `1002` -> `"one thousand two".`
 - `1000000` -> `"one million"`
 
