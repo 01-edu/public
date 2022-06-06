@@ -4,48 +4,45 @@
 
 #### First part (messenger.rs)
 
-Create a module called `messenger`. This module will be able to inform a user of how many references of a given value he is using.
+Create a module named `messenger`. This module will be able to inform a user of how many references of a given value they are using.
 The main objective of this module is to limit how many times a value is referenced.
 
 For this module the following must be created:
 
-- A trait `Logger` which implements three functions: `warning`, `info`, `error`. All **functions** should receive a reference to themselves and a string literal.
+Implement `Logger`: a trait which implements the following three functions:
 
 ```rust
-    fn warning(&self, msg: &str);
-    fn info(&self, msg: &str);
-    fn error(&self, msg: &str);
+fn warning(&self, msg: &str);
+fn info(&self, msg: &str);
+fn error(&self, msg: &str);
 ```
 
-- A structure called `Tracker`, which must have the fields: `logger` being a reference to the `Logger`, `value` being the count of how many times the value was referenced,
-  `max` being the max count of references the actual value can achieve.
+Implement the `Tracker` structure with the following fields:
+- `logger`: a reference to `Logger`.
+- `value`: the count of how many times the value was referenced. It should not exceed `max`.
+- `max`: the max count of references.
 
-- An implementation of three functions that are associated to the `Tracker` structure:
-  - `new` that will initialize the structure
-  - `set_value` that sets the value to the `Tracker` structure and writes to the trait functions. This should be done comparing the **max** and the number of referenced of the actual value.
-    If the percentage is equal or greater to 100% of the limit usage, it should write **"Error: you are over your quota!"** to the `error` function
-    If the percentage is equal or greater to 70% of the limit usage, it should write **("Warning: you have used up over {}% of your quota! Proceeds with precaution", <calculated_percentage>)** to the `warning` function
-  - `peek` that will take a peek of how much usage the variable already has. It should write **("Info: you are using up too {}% of your quote", <calculated_percentage>)** to the `info` function
+Add the following associated functions to `Tracker`:
+- `new`: that initializes the structure.
+- `set_value`: that sets the `value`. It should compare the number of references to `value` and `max` to work out the percentage used. It should write to the following traits if it exceeds the specified usage percentage:
+  - percentage >= 100%: `"Error: you are over your quota!"` should be written to `error`.
+  - percentage >= 70% and percentage < 100%: `"Warning: you have used up over X% of your quota! Proceeds with precaution"` should be written to `warning`, where `X` should be replaced with the calculated percentage.
+- `peek`: that will take a peek at how much usage the variable already has. It should write `"Info: you are using up too X% of your quote"` to the `info` trait function. `X` should be replaced with the calculated percentage.
 
 ### Second part (lib.rs)
 
-Afterwards you must use the module `messenger` and create the following:
+Now that you've created `messenger`, you can now create the following:
 
-- A structure `Worker` that has the fields:
-  - `track_value` this will be the value that will be tracked by the tracker.
-  - `mapped_messages` that will have the latest messages. This must be a HashMap with the key being the type of message
-    sent by the logger (info, error or warning) and the value being the message
-  - `all_messages` that will be a vector of all messages sent.
-- A `new` function that initializes the structure `Worker`
-- To use the trait `Logger` you must implement it for the Worker structure. Each function (warning, error and info) must insert the message to the
-  respective fields of the structure Worker.
+Create the `Worker` structure with the following fields:
+- `track_value`: which is the value that will be tracked by the tracker.
+- `mapped_messages`: that will store the latest messages from the `Logger` trait functions. This will be a HashMap. The key will represent the type of message (`info`, `error` or `warning`), and the value will be the actual message.
+- `all_messages`: that will be a vector of **all** messages sent.
 
-You must use **interior mutability**, this means it must be able to mutate data even when there are immutable references to that data. Consequently, the user will not need to use the keyword `mut` (tip: RefCell)
+Create the following associated functions for `Worker`:
+- `new`: that initializes a `Worker` structure.
+- `Logger`: to use the trait `Logger`, you must implement it for the `Worker` structure. Each function (`warning`, `error` and `info`) must insert the message to the respective field of the `Worker` structure.
 
-### Notions
-
-- [std::cell::RefCell](https://doc.rust-lang.org/std/cell/struct.RefCell.html)
-- [Struct std::rc::Rc](https://doc.rust-lang.org/std/rc/struct.Rc.html)
+You must use **interior mutability**, this means it must be possible to mutate data, even when there are immutable references to that data. Consequently, the user will not need to use the keyword `mut`. *tip:* RefCell.
 
 ### Usage
 
@@ -110,3 +107,8 @@ $ cargo run
 ]
 $
 ```
+
+### Notions
+
+- [std::cell::RefCell](https://doc.rust-lang.org/std/cell/struct.RefCell.html)
+- [Struct std::rc::Rc](https://doc.rust-lang.org/std/rc/struct.Rc.html)
