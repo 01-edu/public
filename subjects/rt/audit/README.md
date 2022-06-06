@@ -4,6 +4,8 @@
 
 ###### Does the image correspond to the scene you created?
 
+###### Is it possible for you to reduce the resolution of the output image?
+
 ##### Move the camera and render the same scene.
 
 ###### Does the image correspond to the same scene, but from a different perspective?
