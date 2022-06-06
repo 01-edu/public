@@ -93,6 +93,8 @@ As bonus for this project you can implement:
 - Add particles
 - Add fluids
 
+Consider putting your bonuses behind command-line flags to achieve a reasonable performance standard defined above. For example, to render textures on your image, you can use a flag -t. Otherwise, textures will be ignored.
+
 This project will help you learn about:
 
 - [Ray Tracing](<https://en.wikipedia.org/wiki/Ray_tracing_(graphics)>)
