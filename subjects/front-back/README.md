@@ -1,7 +1,5 @@
 ## front-back
 
-## front-back
-
 - Write a program that prints the previous and next alphabet of a given alphabet.
     - If the number of arguments is different from `1`, print (`'\n'`).
     - If the length of the argument is different from `1`, print (`'\n'`)
