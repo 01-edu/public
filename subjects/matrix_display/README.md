@@ -2,9 +2,11 @@
 
 ### Instructions
 
-Use the Matrix struct given in the [expected struct](#expected-functions-and-struct) and implement the `std::fmt::Display` trait so it prints the matrix like in the [usage](#usage).
+Complete the `Matrix` struct below.
 
-The associated function `new` that creates a matrix from a slice of slices also has to be implemented.
+You will need to create the `new` associated function which initializes the struct.
+
+You will also need to implement the `std::fmt::Display` trait, so that it prints like the example in the usage.
 
 ### Expected Functions and Struct
 
