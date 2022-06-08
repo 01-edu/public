@@ -2,7 +2,7 @@
 
 ### Instructions
 
-- Define the functions `flatten_tree` which receives a `std::collections::BTreeSet` and returns a new `Vec` with the elements of the binary tree in order.
+Create the `flatten_tree` **function** which receives a `std::collections::BTreeSet` and returns a new `Vec` with the elements of the binary tree in order.
 
 ### Expected function
 
