@@ -2,9 +2,11 @@
 
 ### Instructions
 
-Define the structure `ThreeDvector` that represents a 3 dimensional vector in (for convention in physics the vector are represented as ai + bj + ck where a, b, and c are real numbers and i, j and k represent the direction x,y and z respectively in the Cartesian plane there for we use the names i, j and k for the fields in the ThreeDVector structure
+Define the structure `ThreeDVector`, that represents a 3 dimensional vector.
 
-Look how the operations Addition and Subtraction work for a 3 dimensional vector and implement them by implementing the std::ops::Add and std::ops::Sub traits
+In physics, these vectors are represented as `ai`, `bj` and `ck`. `a`, `b` and `c` are real numbers. `i`, `j` and `k` represent the direction in the Cartesian plane, along the axises `x`, `y` and `z` respectively. Therefore, we use the fields `i`, `j` and `k` in the structure.
+
+Take a look how the operations `Addition` and `Subtraction` work for a 3 dimensional vector, and implement them by creating the `std::ops::Add` and `std::ops::Sub` traits.
 
 ### Expected Functions and Structures
 
