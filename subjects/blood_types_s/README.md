@@ -15,11 +15,11 @@ Use the following table to define the methods asked:
 | B-          | B+, B-, AB+, AB- | B-, O-             |
 | AB-         | AB+, AB-         | AB-, A-, B-, O-    |
 
-Write three methods for BloodType:
+Implement three methods for `BloodType`:
 
-- `can_receive_from`: which returns true if `self` can receive blood from `other` blood type
-- `donors`: which returns all the blood types that can give blood to `self`
-- `recipients`: which returns all the blood types that can receive blood from `self`
+- `can_receive_from`: returns `true` if `self` **can** receive blood from `other` blood type.
+- `donors`: which returns all the blood types that can give blood to `self`.
+- `recipients`: which returns all the blood types that can receive blood from `self`.
 
 ### Expected Functions and Structures
 
