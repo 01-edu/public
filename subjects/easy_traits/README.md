@@ -2,13 +2,13 @@
 
 ### Instructions
 
-Your task is to implement the trait `AppendStr` for the type StringValue.
+Your task is to implement the trait `AppendStr` for the type `StringValue`.
 
 The trait `AppendStr` has the following functions:
 
-- `append_str`, that appends to the value of the structure a new_str of type String
-- `append_number`, that appends to the value of the structure a new_number of type f64
-- `remove_punctuation_marks`, that removes from the value of the structure the following punctuation marks: `. , ? !` 
+- `append_str`: that appends to the string to the `value`.
+- `append_number`: that appends the number to the `value`.
+- `remove_punctuation_marks`: that removes punctuation from the `value` (`.`, `,`, `?` and `!`).
 
 
 ### Expected Function
