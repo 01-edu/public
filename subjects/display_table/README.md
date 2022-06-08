@@ -1,14 +1,12 @@
 ## display_table
 
-### Instructions
+### Instructions 
 
-- Implement the `std::fmt::Display` trait for the structure table so that the table is printed like in the **[Usage](#usage)**. The length of each column must adjust to the longest element of the column and the element must be centered in the "cell" when possible. If the length of the element does not allow to center exactly, it must be offset slightly to the left.
+Define the `Table` struct below, and implement the associated functions `new` and `add_row`. You can see how they should work from the usage.
 
-  - Note: If the table is empty (does not have a header), `println!` must not print anything.
+Implement the `std::fmt::Display` trait for the `Table` structure so that the table is printed like in the usage. The length of each column must adjust to the longest element of the column, and the element must be centered in the "cell" when possible. If the element cannot be centred exactly, it must be positioned slightly to the left.
 
-- Define the associated function `new` which creates a new empty table.
-
-- Define the method function `add_row` which adds a new row to the table created from a slice of strings.
+If the table is empty `println!` must not print anything.
 
 ### Expected functions and Structures
 
