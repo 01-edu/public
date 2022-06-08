@@ -2,13 +2,11 @@
 
 ### Instructions
 
-A vector in linear algebra is defined as "anything that can be added and that can be multiplied by a scalar"
+A vector in linear algebra is defined as "anything that can be added, and that can be multiplied by a scalar".
 
-Define the associated function `dot` that calculates the dot product between two vectors
+Define the associated function `dot`, that calculates the dot product between two vectors. If the vectors are of different lengths, return `None`.
 
-The dot product between two vectors of different length it's not defined
-
-Note: `Vector` must implement Debug, Clone, Eq, PartialEq.
+Note: `Vector` must implement `Debug`, `Clone`, `Eq` and `PartialEq`.
 
 #### Important
 
