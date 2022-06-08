@@ -2,11 +2,11 @@
 
 ### Instructions
 
-Implement the `From<u32> Trait` to create a roman number from a `u32`. The roman number should be in subtractive notation (the common way to write roman number I, II, III, IV, V, VI, VII, VIII, IX, X ...)
+Implement the `From<u32>` trait to create a roman number from a number. The roman number should be in subtractive notation (the common way to write roman number I, II, III, IV, V, VI, VII, VIII, IX, X ...).
 
-For this start by defining the digits as `RomanDigit` with the values I, V, X, L, C, D, M and Nulla for 0
+Start by defining the digits as `RomanDigit` (`Nulla` is 0).
 
-Next define `RomanNumber` as a wrapper to a vector of RomanDigit's And implement the Trait `From<u32>`.
+Next define `RomanNumber` as a wrapper to a vector of `RomanDigit`, and implement the Trait `From<u32>`.
 
 ### Expected Functions and Data Structures
 
