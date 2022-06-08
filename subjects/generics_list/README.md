@@ -4,15 +4,10 @@
 
 Create a linked list of generic values with the following methods.
 
-- `new` which returns a new empty list.
-
-- `push` which adds at the beginning of the list a new element.
-
-- `pop` which deletes the last added element to the list.
-
-- `len` which returns the size of the list.
-
-
+- `new`: returns a new empty list.
+- `push`: adds an element to the beginning of the list.
+- `pop`: deletes an element from the list based on LIFO.
+- `len`: returns the size of the list.
 
 ### Expected Functions
 
