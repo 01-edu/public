@@ -2,15 +2,20 @@
 
 ### Instructions
 
-Write a `program` that takes an undefined number of `string` in arguments. For each argument, if the expression is correctly bracketed, the program prints on the standard output `OK` followed by a newline (`'\n'`), otherwise it prints `Error` followed by a newline.
+Create a **program** that takes an undefined number of command-line arguments. For each argument, if the expression is correctly bracketed, the program prints `OK` to the standard output followed by a newline (`'\n'`), otherwise it prints `Error` followed by a newline.
 
-Symbols considered as brackets are parentheses `(` and `)`, square brackets `[` and `]` and curly braces `{` and `}`. Every other symbols are simply ignored.
+All characters are ignored except for the following brackets:
+- parentheses `(` and `)`.
+- square brackets `[` and `]`.
+- curly braces `{` and `}`.
 
-An opening bracket must always be closed by the good closing bracket in the correct order. A `string` which does not contain any bracket is considered as a correctly bracketed.
+Opening brackets must only be closed by the corresponding closing bracket. For example, a curly brace cannot close a square bracket.
 
-If there is no argument, the program must print nothing.
+A `String` which does not contain any brackets is considered to be correctly bracketed.
 
-For receiving arguments from the command line you should use something like:
+If there are no arguments, the program must print nothing.
+
+You'll need to get the command line arguments somehow, and this will get you started:
 
 ```rust
 fn main() {
