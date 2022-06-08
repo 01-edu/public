@@ -2,26 +2,20 @@
 
 ### Instructions
 
-Imagine you are designing a new video game and you have to create food that the players can eat to gain strength.
+Imagine you are designing a new video game, and your next feature is to create food that the players can eat to gain strength.
 
 There are two types of food for now:
 
-- Fruit: increase the strength by 4 units per each kilogram of fruit consumed.
-- Meat: has the weight in kilograms `weight_in_kg` (which is the weight of the whole piece) and the `fat_content` which corresponds to the percentage of the weight which is pure fat (the rest is considered protein) each kilogram of protein gives 4 units of `strength` and each kilogram of fat gives 9 units of `strength`.
+- `Fruit`: increases the strength by 4 units for each kilogram of fruit consumed.
+- `Meat`: has a weight in kilograms, and it's pure fat content as a percentage. The remaining weight of meat which is not pure fat is considered to be protein. Each kilogram of protein increases the strength by 4 units. Each kilogram of fat increases the strength by 9 units.
 
-Define the `Food` trait for `Fruit` and `Meat`. The required method `gives()` represents the energy that the food provides.
+Define the `Food` trait for `Fruit` and `Meat`. The required method `gives` returns the amount of strength that the food provides.
 
-Implement the `std::fmt::Display` trait for `Player` structure in a way that when using the template `{}` inside a println! macro it will print:
+Implement the `std::fmt::Display` trait for the `Player` structure, so that when `{}` corresponds to a `Player` insider a `println!` macro, it will print 3 lines:
 
-- In the first line, the name of the player
-- In the second line the strength, score and the money
-- In the third line the weapons
-
-### Notions
-
-- [Traits](https://doc.rust-lang.org/book/ch10-02-traits.html)
-
-
+- First: the name of the player.
+- Second: strength, score and the money.
+- Third: The player's list of weapons.
 
 ### Expected Functions and Structures
 
@@ -111,3 +105,7 @@ Strength: 14, Score: 0, Money: 0
 Weapons: ["knife"]
 $
 ```
+
+### Notions
+
+- [Traits](https://doc.rust-lang.org/book/ch10-02-traits.html)
