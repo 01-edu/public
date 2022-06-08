@@ -4,27 +4,33 @@
 
 In this exercise you will create a data model of blood types and an API to deal with them.
 
-Start by copying the data representation of the blood types:
+First, we'll implement the data representation of the blood types.
 
-- Create the enum `Antigen` that has 4 possibilities: A, B, O and AB And the enum `RhFactor` that has two possible values: Positive and Negative
+Take a look at the `BloodType` struct below. It contains two enums which enable us to describe a blood type (e.g. "A-").
 
-- After, copy the struct `BloodType` that contains two fields with the names antigen and rh_factor
+- `Antigen`: which can be one of:
+  - `A`
+  - `B`
+  - `AB`
+  - `O`
+- `RhFactor`: which can be one of:
+  - `Positive`
+  - `Negative`
 
-- To provide a simple way to create blood types implement the trait FromStr for BloodType (which will allow us to use the `parse` method and the associated function from_str, so we can do:
+To provide a simple way to create blood types, implement the trait `FromStr` for `BloodType`. This will allow us to use the `parse` method and `from_str`, so we can do:
 
 ```rust
    let a_neg: BloodType = "A-".parse();
 ```
 
-- Implement the std::cmp::Ord trait to make possible to sort a vector or array of BloodType's
+Implement the following Traits:
+- `std::cmp::Ord`: to make possible to sort a vector or array of `BloodType`.
+- `std::Debug`: for `BloodType`, allowing us print a vector such as `[BloodType { antigen: A, rh_factor: Positive}, BloodType{ antigen: B, rh_factor: Negative}]` as `"[ A+, A-]"` when using format strings `{:?}`.
 
-- Implement the trait std::Debug for BloodType allowing to print a vector such as [BloodType { antigen: A, rh_factor: Positive}, BloodType{ antigen: B, rh_factor: Negative}] as [ A+, A-] using the formatting {:?}
-
-- Lastly, write three methods for BloodType:
-
-  - `can_receive_from`: which returns true if `self` can receive blood from `other` blood type
-  - `donors`: which returns all the blood types that can give blood to `self`
-  - `recipients`: which returns all the blood types that can receive blood from `self`
+Create three methods for BloodType:
+  - `can_receive_from`: which returns `true` if `self` can receive blood from `other` blood type.
+  - `donors`: which returns all the blood types that can give blood to `self`.
+  - `recipients`: which returns all the blood types that can receive blood from `self`.
 
 ### Expected Functions and Structures
 
