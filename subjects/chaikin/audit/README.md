@@ -2,39 +2,47 @@
 
 ##### Run the program using `cargo run`.
 
-###### Does it compile and run without any warnings?
+###### Does it compile and run without warnings?
 
-##### Left click in the canvas to set one or more control points.
+##### Left click on the canvas to set one or more control points.
 
 ###### Does the program allow you to mark these control points?
 
-###### Can You confirm that the program draws a small circle around the control points, in order to identify them?
+###### Can you confirm that the program draws a small circle around the control points in order to identify them?
 
-##### Left click in the canvas to set one or more control points and press `Enter`.
+##### Left click on the canvas to set one or more control points and press `Enter`.
 
-###### Does the animation of the Chaikin's algorithm starts?
+###### Does the animation of the Chaikin's algorithm start?
 
-##### Left click in the canvas to set just one control point and press `Enter`.
-
-###### Can you confirm that only the control point is shown and nothing changes?
-
-##### Left click in the canvas to set just two control points and press `Enter`.
-
-###### Can you confirm that only a straight line was drawn?
-
-##### Left click in the canvas to set one or more control points and press `Enter`.
-
-###### Does the animation complete 7 steps before starting again?
-
-##### Left click in the canvas to set one or more control points and press `Enter` then press `Escape`.
+##### Press `Escape`.
 
 ###### Does the program exit without errors?
 
-##### Press `Enter` without selecting any points.
+##### Start the program and left click on the canvas to set just one control point and press `Enter`.
 
-###### Does the program returns an error?
+###### Can you confirm that only the control point is shown and nothing changes?
+
+##### Restart the program and left click on the canvas to set just two control points and press `Enter`.
+
+###### Can you confirm that only a straight line was drawn?
+
+##### Restart the program and left click on the canvas to set one or more control points and press `Enter`.
+
+###### Does the animation complete 7 steps before restarting?
+
+##### Restart the program and left click on the canvas to set one or more control points and press `Enter`, then press `Escape`.
+
+###### Does the program exit without errors?
+
+##### Start the program and press `Enter` without selecting any points.
+
+###### Does the program continue without errors?
+
+###### After you pressed `Enter` before selecting points, is it possible to place points without needing to kill the program?
 
 ##### Bonus
+
+###### +When you pressed `Enter` without drawing any points, was a message displayed to inform you that you forgot to draw any points?
 
 ###### +Is it possible to clear the screen and add new control points without killing and relaunching the program?
 
