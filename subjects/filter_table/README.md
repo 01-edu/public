@@ -2,14 +2,10 @@
 
 ### Instructions
 
-- Define the **functions**:
-
+- Define the associated functions for the `Table` struct:
   - `new`: which creates a new empty table.
-
   - `add_rows`: which adds a new row to the table from a slice of strings.
-
   - `filter_cols`: which receives a closure and returns a table with all the columns that yielded true when applying that closure. The closure will receive a `&str` and return a `bool` value.
-
   - `filter_rows`: which receives a closure and returns a table with all the rows that yielded true when applied to the elements of the selected column. The closure will receive a `&str` and return a `bool` value.
 
 ### Expected functions and Structures
