@@ -24,7 +24,7 @@ You'll need to also add the following associated functions to the structures:
   - `new_worker`: that returns a tuple with the `pid` and a new `Thread`. This function must receive a `String` representing the `cmd`.
   - `is_dropped`: that receives a `pid` and returns a `bool` that indicates the state of the thread.
   - `track_worker`: which returns a `usize` representing the length of the `states` vector. (The index of the next new thread).
-  - `add_drop`: which is **called by the `Drop` trait**. It will receive a `pid` that will be used to change the state of the thread. If the state of that thread is `true` then it will panic with the message `"Cannot drop X, because its already dropped"`, where `X` represents the `pid`). Otherwise it should change the state to `true` and increment the `drops` field by 1.
+  - `add_drop`: which is **called by the `Drop` trait**. It will receive a `pid` that will be used to change the state of the thread. If the state of that thread is `true` then it will panic with the message `"X is already dropped"`, where `X` represents the `pid`). Otherwise it should change the state to `true` and increment the `drops` field by 1.
 
 - `Thread`:
   - `new_thread`: that initializes a new thread.
