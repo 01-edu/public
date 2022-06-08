@@ -16,7 +16,9 @@ You can see how the application should work [here](https://youtu.be/PbB2eKnA2QI)
   
 - The selected points must be visible on the canvas. You will need to draw a **small** circle surrounding each point.
 
-- After pressing `Enter`, the program should start the animation. It should cycle through the steps until reaching the 7th step of `Chaikin's` algorithm. The program should then restart.
+- If the canvas has control points drawn on it, then pressing `Enter` should start the animation. It should cycle through the steps until reaching the 7th step of `Chaikin's` algorithm. The animation should then restart.
+
+- If the user presses `Enter` before any points have been drawn, then nothing should happen. It should still be possible to draw points. You may optionally choose to display a message to inform the user that they forgot to draw points.
 
 - If the canvas only has only one control point, the program must only present that point and not cycle through the steps.
 
