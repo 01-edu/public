@@ -25,3 +25,4 @@ Features required:
 | Monitor   | 17" Full HD flicker-free                                                                                                                                                                    |
 |**For comfort:**| An extra monitor : 24" Full HD flicker-free. Pivotable to 90 degrees.|
  
+**Important**: Please note that those configurations do not cover the Game Engine specifications branch. 
