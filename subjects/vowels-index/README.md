@@ -26,6 +26,7 @@ func main() {
 	}
 
 }
+
 ```
 And its output :
 ```console
