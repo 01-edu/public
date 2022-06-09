@@ -13,12 +13,27 @@ func VowelIdx(str string) []int {
 ```
 ### Usage
 
+```go
+package main
+
+import "fmt"
+
+func main() {
+
+	res := VowelIdx("hello Iyan")
+	for _, i := range res {
+		fmt.Println(i)
+	}
+
+}
+```
+And its output :
 ```console
-$ go run . "hello Iyan"
-$2
-$5
-$7
-$8
-$9
+
+$ go run . 
+$ 1
+$ 4
+$ 6
+$ 8
 ```
     
