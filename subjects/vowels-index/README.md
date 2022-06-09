@@ -31,9 +31,9 @@ And its output :
 ```console
 
 $ go run . 
-$ 1
-$ 4
-$ 6
-$ 8
+1 $
+4 $
+6 $
+8 $
 ```
     
