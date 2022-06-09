@@ -1,4 +1,6 @@
-### print-range 
+## print-range 
+
+### instructions
 
 - Write a function named `printRange` that takes a start and end number and prints all the numbers in that range.
     - If the start number is greater than the end number, print the numbers in descending order.
