@@ -30,7 +30,7 @@ func main() {
 And its output :
 ```console
 
-$ go run . 
+$ go run .  | cat -e
 1$
 4$
 6$
