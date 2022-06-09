@@ -4,20 +4,20 @@ Features required:
 
 - **Linux compatible**
 
-| Component | Minimum specifications                                                                                                                                                                      |
+| Component | Specifications                                                                                                                                                                      |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Processor | 4 threads x86-64 (64 bits), [2200 single thread performance](https://www.cpubenchmark.net/singleThread.html) / [1000 single-core score](https://browser.geekbench.com/processor-benchmarks) |
 | Memory    | 8 GB                                                                                                                                                                                        |
 | Disk      | 120 GB SSD                                                                                                                                                                                  |
 | Monitor   | 14" Full HD flicker-free                                                                                                                                                                    |
 
-# PC requirements (Minimal recommended setup)
+# PC requirements (Recommended)
 
 Features required:
 
 - **Linux compatible**
 
-| Component | Minimum specifications                                                                                                                                                                      |
+| Component | Specifications                                                                                                                                                                      |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Processor | 6 threads x86-64 (64 bits), [2600 single thread performance](https://www.cpubenchmark.net/singleThread.html) / [1200 single-core score](https://browser.geekbench.com/processor-benchmarks) |
 | Memory    | 16 GB                                                                                                                                                                                        |
