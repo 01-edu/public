@@ -8,7 +8,7 @@
 ### Expected function
 
 ```go 
-func vowelsindex(str string) []int {
+func VowelsIndex(str string) []int {
 }
 ```
 ### Usage
@@ -20,7 +20,7 @@ import "fmt"
 
 func main() {
 
-	res := vowelsindex("hello Iyan")
+	res := VowelsIndex("hello Iyan")
 	for _, i := range res {
 		fmt.Println(i)
 	}
