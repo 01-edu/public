@@ -1,4 +1,4 @@
-# VowlsIndex
+# vowels-index
 
 ### Instructions
 
