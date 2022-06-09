@@ -2,11 +2,11 @@
 
 ### Objectives
 
-In this project you will have to create your own Tron AI snake
+In this project you will have to create your own Tron AI snake.
 
 ### Getting started
 
-You will need to create a public repository with the name `tron`. Next you need to create a file named `ai.js`. It must respect the instructions given
+You will need to create a public repository with the name `tron`. Next you need to create a file named `ai.js`. It must respect the instructions given.
 
 ### Controls
 
@@ -40,28 +40,52 @@ You will need to create a public repository with the name `tron`. Next you need 
 
 ### How to test your AI
 
-- You may use this link [tron](/public/subjects/tron/?ai=&seed=1653547275), to test your AI
-- You need to add your AI as a user in that link
-  > Example:
-  - if your git login is **Frenchris** and you want to test against **LEEDASILVA** the link becomes: [/public/subjects/tron/?ai=Frenchris@master+LEEDASILVA@master](/public/subjects/tron/?ai=Frenchris@master+LEEDASILVA@master)
-  - if you want to test against the default `/random.js` AI the link becomes: [/public/subjects/tron/?ai=Frenchris@master+/random.js](/public/subjects/tron?ai=Frenchris@master+/random.js)
+- You may test your ai locally. For that, create a folder and give it a name. Inside the folder you created, insert this file [index.html](<https://((DOMAIN))/git/root/public/raw/branch/master/subjects/tron/game_students/index.html>).
+- After that, create a simple web server by running the following command:
+
+```sh
+$ &>/dev/null python3 -m http.server &
+```
+
+Now open your browser at the specified port. You'll use an appropriate command for your system:
+
+- Linux: `xdg-open`
+- macOS: `open`
+- Windows: `start`
+
+```sh
+xdg-open 'http://localhost:8000'
+```
+
+- You can set a seed by adding the variable `seed` to the url params.
+- You can add up to two AI's by adding the variable `ai` to the url params. The AI's will be separated by a `+`
+
+  - You can add a local file by specifying the relative path.
+  - You can add a online raw file by specifying the url to that file.
+
+A example of a url with local files using the default AI `random.js` against the AI `hard.js` would be `localhost:8000/?seed=1636444665&ai=random.js+hard.js`.
+
+A example of a url with online files would be `localhost:8000/?seed=1636444665&ai=https://dev.01-edu.org/git/root/public/raw/branch/master/subjects/tron/ai/hard.js+https://dev.01-edu.org/git/root/public/raw/branch/master/subjects/tron/ai/random.js`.
+
+Note: You can test a local AI against and online one.
+
 - Open the inspector of the browser used and **disable the cache**
 - let's change the update function so that your AI only goes forward.
 
 Replace this line just before the `return` of the update function:
 
 ```js
-const available = coordsInBound.filter(isFree)
+const available = coordsInBound.filter(isFree);
 
 // And I return a random available coord
-return pickRandom(available)
+return pickRandom(available);
 ```
 
 ...with this line:
 
 ```js
 // always return the first free coordinates
-return coordsInBound.filter(isFree)[0]
+return coordsInBound.filter(isFree)[0];
 ```
 
 - save the file, push the changes and re-run the game in the browser.
