@@ -50,7 +50,7 @@ Error
 
 ###### Does it display the right result as above?
 
-##### Try to run `"echo -e "sa\npb\nrrr\n" | ./checker 0 9 1 8 2 7 3 6 4 5"`.
+##### Try to run `"echo -e "sa\npb\nrrr" | ./checker 0 9 1 8 2 7 3 6 4 5"`.
 
 ```console
 KO
@@ -58,7 +58,7 @@ KO
 
 ###### Does it display the right result as above?
 
-##### Try to run `"echo -e "pb\nra\npb\nra\nsa\nra\npa\npa\n" | ./checker 0 9 1 8 2"`.
+##### Try to run `"echo -e "pb\nra\npb\nra\nsa\nra\npa\npa" | ./checker 0 9 1 8 2"`.
 
 ```console
 OK
