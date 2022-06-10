@@ -14,7 +14,7 @@ Write a function named `Str_isNegative()` that defines if a number (You should c
 ### Expected function
 
 ```go
-func Str_isNegative(str string){
+func StrisNegative(str string){
     //code
 }
 ```
@@ -32,7 +32,7 @@ import (
 
 func main() {
 	argument := os.Args[1:]
-	piscine.Str_isNegative(argument[0])
+	piscine.StrisNegative(argument[0])
 }
 ```
 And its output:
