@@ -8,9 +8,9 @@ For the IP part, the syntax will be as follows, where `x` is a number from 0-255
 ```
 x.x.x.x
 ```
+Don't forget to learn about the syntax of ports. But remember, the maximum TCP port number is 65,535.
 
-> Don't forget to research the syntax of IP ports.
-  For this task, you **only** need to concern yourself with `<host>` and `<port>`. Don't worry about `<scheme>` or anything else.
+> For this task, you **only** need to concern yourself with `<host>` and `<port>`. Don't worry about `<scheme>` or anything else.
 
 ### Notions
 
