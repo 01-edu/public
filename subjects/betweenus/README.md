@@ -1,7 +1,7 @@
 ## between-us
 
-write a function named `BetweenUs` that takes 3 paramters and checks if the first number is between the second and third number.
-- If the first number is between the second and third number, return `true` else return `false`
+write a function named `BetweenUs` that takes 3 paramters and return : 
+- if the first paramter is between the second and third paramters, return **true** else return **false**
 
 ### Function
 ```go
@@ -23,6 +23,7 @@ func main(){
     fmt.Println(BetweenUs(1, 3, 3))
     fmt.Println(BetweenUs(1, 1, 1))
     fmt.Println(BetweenUs(1, 2, 1))
+    fmt.Println(BetweenUs(-1, -10, 0))
 }
 ```
 
@@ -33,4 +34,5 @@ true
 false
 true
 false
+true
 ```
