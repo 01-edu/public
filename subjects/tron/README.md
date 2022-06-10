@@ -30,17 +30,28 @@ You will need to create a public repository with the name `tron`. Next you need 
 
 - Once no players can make a move the player with the biggest score wins
 
+### Useful files
+- [index.html (Game Engine)](https://((DOMAIN))/git/root/public/raw/branch/master/subjects/tron/game_students/index.html)
+
+- [hard.js](https://((DOMAIN))/git/root/public/raw/branch/master/subjects/tron/ai/hard.js)
+- [license-to-kill.js](https://((DOMAIN))/git/root/public/raw/branch/master/subjects/tron/ai/license-to-kill.js)
+- [random.js](https://((DOMAIN))/git/root/public/raw/branch/master/subjects/tron/ai/random.js)
+- [right.js](https://((DOMAIN))/git/root/public/raw/branch/master/subjects/tron/ai/right.js)
+- [snail.js](https://((DOMAIN))/git/root/public/raw/branch/master/subjects/tron/ai/snail.js)
+
+
 ### How to write your AI
 
-- Copy the code on the file [random.js](https://raw.githubusercontent.com/01-edu/public/master/subjects/tron/ai/random.js) to your file, `ai.js`
-- You may now edit the `update` function which is called each turn
+- Create `ai.js` at the root of your repository.
+- Copy the contents of `random.js`, and paste it to `ai.js`.
+- You may now edit the `update` function which is called each turn.
 
 > ⚠️ Do not rename the `update` function ⚠️ \
 > as it's the function that the worker will try to run to test your AI.
 
 ### How to test your AI
-
-- You may test your ai locally. For that, create a folder and give it a name. Inside the folder you created, insert this file [index.html](<https://((DOMAIN))/git/root/public/raw/branch/master/subjects/tron/game_students/index.html>).
+**AI AT ROOT**
+- You may test your ai locally. For that, create a folder and give it a name. Inside the folder you created, insert this file `index.html`.
 - After that, create a simple web server by running the following command:
 
 ```sh
@@ -63,9 +74,9 @@ xdg-open 'http://localhost:8000'
   - You can add a local file by specifying the relative path.
   - You can add a online raw file by specifying the url to that file.
 
-A example of a url with local files using the default AI `random.js` against the AI `hard.js` would be `localhost:8000/?seed=1636444665&ai=random.js+hard.js`.
+A example of a url with local files using the default AI `ai.js` against the AI `hard.js` would be `http://localhost:8000/?ai=hard.js+ai.js&seed=2077349364`.
 
-A example of a url with online files would be `localhost:8000/?seed=1636444665&ai=https://dev.01-edu.org/git/root/public/raw/branch/master/subjects/tron/ai/hard.js+https://dev.01-edu.org/git/root/public/raw/branch/master/subjects/tron/ai/random.js`.
+A example of a url with online files would be `http:?/localhost:8000/?ai=https://((DOMAIN))/git/root/public/raw/branch/master/subjects/tron/ai/hard.js+ai.js`.
 
 Note: You can test a local AI against and online one.
 
