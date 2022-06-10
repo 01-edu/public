@@ -1,15 +1,15 @@
 
 # IS-Negative
 
-### Instruction 
+### Instructions
 
 Write a function named `Str_isNegative()` that defines if a number (You should check if it's a number) is negative or positive.
 
-     Your function print P if the number is positive
-     Your function print F if the number is negative
-     For the number is zero print 0.
-     Any input other than number should print !
-     Your program should always print ('\n')at the end of the output.
+- Your function print P if the number is positive
+- Your function print F if the number is negative
+- For the number 0 is zero print 0.
+- Any input other than number should print !
+- Your function should always print ('\n')at the end of the output.
 
 ### Expected function
 
