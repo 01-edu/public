@@ -1,12 +1,9 @@
-##  is-negative
-
-### Instructions
 
 # IS-Negative
 
 ### Instruction 
 
-Write a function named `IsNegative()` that defines if a number (You should check if it's a number) is negative or positive.
+Write a function named `Str_isNegative()` that defines if a number (You should check if it's a number) is negative or positive.
 
      Your function print P if the number is positive
      Your function print F if the number is negative
@@ -17,7 +14,7 @@ Write a function named `IsNegative()` that defines if a number (You should check
 ### Expected function
 
 ```go
-func IsNegative(str string){
+func Str_isNegative(str string){
     //code
 }
 ```
@@ -35,7 +32,7 @@ import (
 
 func main() {
 	argument := os.Args[1:]
-	IsNegative(argument[0])
+	piscine.Str_isNegative(argument[0])
 }
 ```
 And its output:
