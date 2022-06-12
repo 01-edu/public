@@ -10,7 +10,7 @@
 
 ###### Can you confirm that the program draws a small circle around the control points in order to identify them?
 
-##### Left click on the canvas to set one or more control points and press `Enter`.
+##### Left click on the canvas to set three or more control points and press `Enter`.
 
 ###### Does the animation of the Chaikin's algorithm start?
 
