@@ -2,11 +2,9 @@
 
 ### Instructions
 
-- Create the trait Vehicle with the model and year
+At a border crossing, you want to keep a list of all the vehicles that are waiting to enter the country. You intend to keep a waiting list of the vehicles, but the vehicles can be one of two types: `Car` or `Truck`.
 
-- In a border cross you want to keep a list of all the vehicles that are waiting to enter the country. You want to keep a waiting list of the vehicle but the vehicles can be of two types: Car or Truck
-
-- Create a function that receives a vector of structures that implements the Vehicle trait and returns all the models.
+Create a function that receives a vector of structures that implements the `Vehicle` trait, and returns all the models.
 
 With the following structure:
 
