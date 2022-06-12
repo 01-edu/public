@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Define the function `delete_prefix(prefix, s)` which returns the string slice `s` with the `prefix` removed wrapped in `Some`. If `prefix ` is not a prefix of `s` it returns `None`.
+Define the function `delete_prefix` which returns the string slice `s` with the `prefix` removed. It should be wrapped in `Some`. If `prefix` is not a prefix of `s`, then `delete_prefix` returns `None`.
 
 ### Expected Function
 
