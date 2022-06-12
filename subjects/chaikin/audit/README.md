@@ -14,7 +14,7 @@
 
 ###### Does the animation of the Chaikin's algorithm start?
 
-##### Press `Escape`.
+##### Try to exit the program (e.g press `Escape`).
 
 ###### Does the program exit without errors?
 
@@ -30,7 +30,7 @@
 
 ###### Does the animation complete 7 steps before restarting?
 
-##### Restart the program and left click on the canvas to set three or more control points and press `Enter`, then press `Escape`.
+##### Restart the program and left click on the canvas to set three or more control points and press `Enter`, then try to exit the program (e.g press `Escape`).
 
 ###### Does the program exit without errors?
 
