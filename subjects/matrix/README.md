@@ -2,22 +2,15 @@
 
 ### Instructions
 
-Define a data structure to represent a matrix of any size and implement the basic operations for this. The next steps need to be followed:
+Define a data structure to represent a matrix of any size and implement some basic operations.
 
-- You can use a 2 dimensional Vec<T>'s. We will consider a matrix as a rectangular arrangements of scalars.
+We will consider a matrix as a rectangular arrangements of scalars. You can represent this as a 2 dimensional vector`. You will use the definition of scalars from the [lalgebra_scalar](../lalgebra_scalar/README.md) exercise.
 
-- You have to use the definition of scalars done in the exercise: `lalgebra_scalar`
-
-- Define `new` that returns a matrix of size `1 x 1`
-
-- Then define the associated function `identity` that returns the identity matrix of size n
-
-- Finally, define the associated function `zero` that returns a matrix of size `row x col` with all the positions filled by zeros
+Implement the following associated functions:
+- `new`: which returns a matrix of size `1 x 1`.
+- `identity`: which returns the identity matrix of size n.
+- `zero`: which returns a matrix of size `row` x `col` with all the positions filled by zeros.
  
-### Notions
-
-- [Traits](https://doc.rust-lang.org/book/ch19-03-advanced-traits.html)
-
 ### Expected Functions and Structure
 
 ```rust
@@ -59,3 +52,7 @@ Matrix([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]])
 Matrix([[0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0]])
 $
 ```
+
+### Notions
+
+- [Traits](https://doc.rust-lang.org/book/ch19-03-advanced-traits.html)
