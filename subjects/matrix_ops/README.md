@@ -2,11 +2,11 @@
 
 ### Instructions
 
-In this exercise you will define the basic operations with a matrix starting by implementing the `std::ops::Add` trait
+In this exercise, you will define some basic matrix operations, Implement traits for `Add` and `Sub`
 
-Define the operation + (by defining the trait std::ops::Add) for two matrices. Remember that two matrices can only be added if they have the same size. Therefore the add method must handle the possibility of failure by returning an Option<T>.
+Remember that two matrices can only be added or subtracted if they have they have the same dimensions. Therefore, you must handle the possibility of failure by returning an `Option<T>`.
 
-You will be using your own `Matrix` and `Scalar` defined in the `matrix` and the `lalgebra_scalar` exercises.
+You will be reusing your `Matrix` and `Scalar` structures defined in the [matrix](../matrix/README.md) and [lalgebra_scalar](../lalgebra_scalar/README.md) exercises.
 
 ### Expected Function
 
