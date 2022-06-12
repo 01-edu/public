@@ -26,11 +26,11 @@
 
 ###### Can you confirm that only a straight line was drawn?
 
-##### Restart the program and left click on the canvas to set one or more control points and press `Enter`.
+##### Restart the program and left click on the canvas to set three or more control points and press `Enter`.
 
 ###### Does the animation complete 7 steps before restarting?
 
-##### Restart the program and left click on the canvas to set one or more control points and press `Enter`, then press `Escape`.
+##### Restart the program and left click on the canvas to set three or more control points and press `Enter`, then press `Escape`.
 
 ###### Does the program exit without errors?
 
