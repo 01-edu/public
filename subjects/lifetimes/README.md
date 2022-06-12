@@ -2,18 +2,7 @@
 
 ### Instructions
 
-Declare the struct called `Person` that has two fields:
-
-- name of type string slice (&str)
-- age of type u8
-
-Additionaly, create the associated **function** `new` which creates a new person with age 0 and with the name given.
-
-The expected Fucntions and Structures need to be completed.
-
-### Notions
-
-- [lifetimes](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html)
+Complete the `Person` struct with the fields and associated function described below. `new` should set the `age` to `0`.
 
 ### Expected Functions and Data Structures (Both need to be completed)
 
@@ -51,3 +40,7 @@ $ cargo run
 Person = Person { name: "Leo", age: 0 }
 $
 ```
+
+### Notions
+
+- [lifetimes](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html)
