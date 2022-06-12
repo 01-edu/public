@@ -4,15 +4,12 @@
 
 Implement the methods:
 
-- `number_of_cols` which returns the number of columns of the matrix.
+- `number_of_cols`: which returns the number of columns in the matrix.
+- `number_of_rows`: which returns the number of rows in the matrix.
+- `row`: which returns the `n`th row in the matrix.
+- `col`: which returns the `n`th column in the matrix.
 
-- `number_of_rows` which returns the number of rows of the matrix.
-
-- `row(n)` which returns the `n`th row in the matrix.
-
-- `col(n)` which returns the `n`th column in the matrix.
-
-Define the matrix multiplication by implementing the std::ops::Mul for the type matrix
+Define the matrix multiplication by implementing the `std::ops::Mul` for the type matrix
 
 ### Expected Functions
 
