@@ -6,7 +6,7 @@ In this exercise, you will be provided with a json file `commits.json` with data
 
 Create two functions:
 - `commits_per_author`: which returns a hash map with the number of commits per author. The auditors will be identified by their GitHub login.
-- `commits_per_date`: which returns a hash map with the number of commits per week.
+- `commits_per_week`: which returns a hash map with the number of commits per week.
 
 > A week is represented by the a year followed by the number of the week. For example, January 1, 2020 is in week 1 of 2020 and will be represented by a `String` with the form `"2020-W1"`.
 
