@@ -28,7 +28,7 @@ impl Sub for Matrix {
 Here is a program to test your function
 
 ```rust
-use matrix_ops::*;
+use matrix::*;
 
 fn main() {
 	let matrix = Matrix(vec![vec![8, 1], vec![9, 1]]);
