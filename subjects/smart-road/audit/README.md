@@ -6,14 +6,6 @@
 
 ###### If so, is there any image/asset that represents this intersection?
 
-##### Try and run the application, then generate a vehicle of your choice.
-
-###### Is there any animation for the vehicle?
-
-##### Try and run the application, then generate a vehicle that turns right.
-
-###### Did the vehicle animated accordingly when turning right?
-
 ##### Try and run the application, then generate a vehicle by pressing the `"Arrow Up"` key.
 
 ###### Was a vehicle generated from the cardinal South?
@@ -111,5 +103,7 @@
 ###### +Does the application present more statistics besides the ones stated in the subject?
 
 ###### +Did the student create their own assets?
+
+###### +Do cars have the component of acceleration, or do they change velocity automatically?
 
 ###### +In your opinion, is this algorithm implementable for real life situations?
