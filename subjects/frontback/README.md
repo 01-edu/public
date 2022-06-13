@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a program that prints the previous letter and the next letter of the alphabet.
+Write a program that prints the previous letter and the next letter of the Latin alphabet.
 - If the number of arguments is different from 1, print (`'\n'`).
 - If the length of the argument is different from 1, print (`'\n'`)
 - If the argument is not a letter, print (`'\n'`)
