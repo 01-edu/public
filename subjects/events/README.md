@@ -24,7 +24,7 @@ These events can be: Remainders, Registrations, Appointments or Holidays.
     position = Top,
     content = "You have `duration` left before the registration ends",
 
-  `durations` must be displayed in the form of {hours}:{minutes}:{seconds} left for the beginning of the event for example if there is two hours 32 minutes and 3 seconds left before the registration then the content will be `You have 2:32:2 left before the registration ends`
+  `durations` must be displayed in the form of `{hours}H:{minutes}M:{seconds}S` left for the beginning of the event for example if there is two hours 32 minutes and 3 seconds left before the registration then the content will be `You have 2H:32M:2S left before the registration ends`
 
   - Appointment(text)
     size: 100
