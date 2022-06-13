@@ -4,46 +4,34 @@
 
 You have to design a notification system for a platform.
 
-These events can be: Remainders, Registrations, Appointments or Holidays.
+Depending on the type of event, your event handler will control the size, color and position of the notification.
 
-- Create an event handler that, depending on the type of event, creates different notifications with different colors, different sizes and different positions
+Create a method named `notify` which returns a `Notification` with the following characteristics for each of:
+- `Remainder`:
+  - `size`: `50`
+  - `color`: `(50, 50, 50)`
+  - `position`: `Bottom`
+  - `content`: the slice associated to the enum value.
+- `Registration(chrono::Duration)`:
+  - `size`: `30`
+  - `color`: `(255, 2, 22)`
+  - `position`: `Top`
+  - `content`: `"You have {duration} left before the registration ends"`
+- `Appointment(text)`
+  - `size: 100`
+  - `color: (200, 200, 3)`
+  - `position: Center`
+  - `content: text associated to the value`
+- `Holiday`
+  - `size`: `25`
+  - `color`: `(0, 255, 0)`
+  - `position`: `Top`
+  - `content`: `"Enjoy your holiday"`
 
-- The possible positions are Top, Bottom and Center: Create and Enum `Position` with those values
+`duration` must be displayed in the form of `{hours}H:{minutes}M:{seconds}S`. The time will represent the remaining time before the event starts. For example, if there are 2 hours, 32 minutes and 3 seconds left, then the content will be `"You have 13H:38M:14S left before the registration ends"`
 
-- Create a method called `notify` which returns a notification with the following caracteristics for each
+Implement the `std::fmt::Display` trait so the text of the notifications are printed in the right color in the command line.
 
-  - Remainder:
-    size= 50,
-    color= (50, 50, 50),
-    position= Bottom,
-    content= the slice associated to the enum value
-
-  - Registration(chrono::Duration),
-    size = 30,
-    color = (255, 2, 22),
-    position = Top,
-    content = "You have `duration` left before the registration ends",
-
-  `durations` must be displayed in the form of {hours}:{minutes}:{seconds} left for the beginning of the event for example if there is two hours 32 minutes and 3 seconds left before the registration then the content will be `You have 2:32:2 left before the registration ends`
-
-  - Appointment(text)
-    size: 100
-    color: (200, 200, 3)
-    position: Center
-    content: text associated to the value
-
-  - Holiday
-    size: 25
-    color: (0, 255, 0)
-    position: Top
-    content: "Enjoy your holiday"
-
-- Implement the std::fmt::Display trait so the text of the notification is printed in the right color in the command line
-
-### Notions
-
-- [colored crate](https://docs.rs/colored/2.0.0/colored/)
-- [chrono crate](https://crates.io/crates/chrono)
 
 ### Dependencies
 
@@ -121,3 +109,8 @@ $ cargo run
 (Top, 25, [38;2;0;255;0mEnjoy your holiday[0m)
 $
 ```
+
+### Notions
+
+- [colored crate](https://docs.rs/colored/2.0.0/colored/)
+- [chrono crate](https://crates.io/crates/chrono)
