@@ -1,49 +1,62 @@
 # Server installation
 
-## DNS configuration
+## 🌐 DNS Configuration
 
-One domain and one subdomain must point to the IP address of a [dedicated server](server-requirements.md).
+The following DNS records should be configured in your domain's [zone file](https://en.wikipedia.org/wiki/Zone_file) or through the web interface of your dns provider/domain registrar.  
+- A _domain/subdomain_ pointing to the public IP address (using `A Record`) of your [dedicated server](server-requirements.md).
+- A _subdomain_ called `git` pointing to the above mentioned *domain/subdomain* (using `CNAME Record`) or it's IP address (using `A Record`).
 
-| FQDN           | Record type | Address |
-| -------------- | ----------- | ------- |
-| ((DOMAIN))     | A           | X.X.X.X |
-| git.((DOMAIN)) | A           | X.X.X.X |
+Your newly configured DNS records should look like this:
 
-## Network configuration
+| FQDN           | Record type | Target        |
+| -------------- | ----------- | ------------- |
+| ((DOMAIN))     | A           | X.X.X.X       |
+| git.((DOMAIN)) | CNAME       | ((DOMAIN))    |
 
-### Inbound
+Here is an _example_ of the DNS records for the domain `example.org` with the public IP address of `93.184.216.34`:
 
-| Port        | Transport | Application      |
-| ----------- | --------- | ---------------- |
-| 80          | TCP, UDP  | HTTP/(1.1, 2, 3) |
-| 443         | TCP, UDP  | HTTP/(1.1, 2, 3) |
-| 521         | TCP       | SSH              |
-| 8080 - 8090 | TCP, UDP  | HTTP/(1.1, 2, 3) |       
+| FQDN            | Record type | Target        |
+| --------------  | ----------- | ------------- |
+| example.org     | A           | 93.184.216.34 |
+| git.example.org | CNAME       | example.org   |
 
-### Outbound
 
-| Port        | Transport | Application      |
-| ----------- | --------- | ---------------- |
-| 587         | TCP       | SMTP             |
-| 8080 - 8090 | TCP, UDP  | HTTP/(1.1, 2, 3) | 
+## 🛠️ Network Configuration
 
-### OS installation
+### ➡️ Inbound
 
-Download and boot the ISO image `amd64` of [Debian](https://www.debian.org/distrib/netinst)
+| Port        | Protocol(s) | Service/Application |
+| ----------- | ----------- | ------------------- |
+| 80          | TCP         | HTTP/(1.1, 2, 3)    |
+| 443         | TCP         | HTTP(S)/(1.1, 2, 3) |
+| 521         | TCP         | SSH                 |
+| 8080 - 8090 | TCP         | HTTP/(1.1, 2, 3)    |       
 
-Select :
+### ⬅️ Outbound
 
-- "Advanced options ..."
-- "... Automated install"
+| Port        | Protocol(s) | Service/Application  |
+| ----------- | ----------- | -------------------- |
+| 587         | TCP         | SMTP                 |
+| 8080 - 8090 | TCP         | HTTP/(1.1, 2, 3)     | 
 
-The network is automatically configured with DHCP, you can also configure it manually.
+## 💿 OS installation
 
-At the prompt "Location of initial preconfiguration file:", enter the URL :
+1. Download and boot the `amd64` variant of the [Debian](https://www.debian.org/distrib/netinst) ISO image.
 
-```
-raw.githubusercontent.com/01-edu/public/master/sh/debian/preseed.cfg
-```
+2. Select :
+  - "**Advanced options ...**"
+  - "**... Automated install**"
 
-and select "Continue".
+3. The network is automatically configured using your DHCP server. Additionally, you can also configure it manually to suit your preference.
 
---> Please let us know when the server's remote access is ready and we will configure it.
+4. At the prompt "Location of initial preconfiguration file:", please enter the following URL :
+
+  ```console
+  raw.githubusercontent.com/01-edu/public/master/sh/debian/preseed.cfg
+  ```
+
+5. Then select "**Continue**" and follow the on-screen instructions.
+
+
+## 🏁 Finishing up
+Once the server is ready to be accessed remotely, please let us know via approriate communication channels and we will proceed with configuring the server.
