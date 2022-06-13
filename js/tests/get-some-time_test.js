@@ -11,4 +11,6 @@ t(({ eq }) => eq(firstDayWeek(43, '1983'), '17-10-1983'))
 
 t(({ eq }) => eq(firstDayWeek(23, '0091'), '04-06-0091'))
 
+t(({ eq }) => eq(firstDayWeek(2, '2017'), '02-01-2017'))
+
 Object.freeze(tests)
