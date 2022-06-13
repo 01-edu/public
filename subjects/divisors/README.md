@@ -4,6 +4,7 @@
 
 Write a function that takes a positive  integer and returns the number of it's devisors.
 - If the the number a is negative return 0.
+- Test numbers from 0 to 99999999 .
 
 ### Expected function
 ```go
