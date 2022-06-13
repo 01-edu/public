@@ -9,36 +9,36 @@ write a function that takes a string and a character as arguments and returns th
 ### Expected Function
 
 ```go
-    func CountChar(str string, c rune) int {
-        ...
-    }
+func CountChar(str string, c rune) int {
+  ...
+}
 ```
 
 ### Usage
 
 ```go
-    package main
+package main
 
-    import (   
-        "fmt"
-        "piscine"
-    )
+import (   
+  "fmt"
+  "piscine"
+  )
 
-    func main() {
-        fmt.Println(CountChar("Hello World", 'l'))
-        fmt.Println(CountChar("5  balloons",5))
-        fmt.Println(CountChar("   ", ' '))
-        fmt.Println(CountChar("The deadly 7 sins", '7'))
-    }
+func main() {
+     fmt.Println(CountChar("Hello World", 'l'))
+     fmt.Println(CountChar("5  balloons",5))
+     fmt.Println(CountChar("   ", ' '))
+     fmt.Println(CountChar("The deadly 7 sins", '7'))
+}
 ```
 
 And its output :
 
 ```console
-    $ go run .
-    3
-    0
-    1
-    1
+$ go run .
+3
+0
+1
+1
 ```
 
