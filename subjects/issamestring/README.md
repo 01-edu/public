@@ -27,7 +27,7 @@ import (
 )
 
 func main() {
-  fmt.Println(piscine.IsSameString("hello world!", "HELLO WORLD!"))
+	fmt.Println(piscine.IsSameString("hello world!", "HELLO WORLD!"))
 	fmt.Println(piscine.IsSameString("0101 is awesome", "0101 is AWESOME"))
 	fmt.Println(piscine.IsSameString("foo baz", "foo bar"))
 }
