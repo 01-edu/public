@@ -4,7 +4,7 @@
 
 write a function that accepts two integer arguments, representing the two sides length of a rectangle and returning the perimeter of the rectangle.
 
-your function should return `-1` if one of the arguments is negative.
+your function should return -1 if one of the arguments is negative.
 
 ### Expected function
 
