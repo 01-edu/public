@@ -4,9 +4,9 @@
 
 Game time.
 
-You will implement some **CRUD** functionality for a game. You will need to implement the `Game` structure with the following associated functions:
+You will implement some **CRUD** functionality for a game session. You will need to implement the `GameSession` structure with the following associated functions:
 
-- `new`: which initializes a game state with player names and some other information. This function returns the structure wrapped in a `Box`.
+- `new`: which initializes a game session state with player names and some other information. This function returns the structure wrapped in a `Box`.
 
 - `read_winner`: which returns a tuple with the name and score of the player who is currently winning. In the case that no player is winning, it should return the same tuple with the string `"Same score! tied"` and the tied score.
 
@@ -20,15 +20,15 @@ You will implement some **CRUD** functionality for a game. You will need to impl
 
 ```rust
 #[derive(Debug, Clone, Eq, PartialEq)]
-pub struct Game {
+pub struct GameSession {
     pub id: u32,
     pub p1: (String, u16),
     pub p2: (String, u16),
     pub nbr_of_games: u16
 }
 
-impl Game {
-    pub fn new(i: u32, pl1: String, pl2: String, n: u16) -> Box<Game> {
+impl GameSession {
+    pub fn new(i: u32, pl1: String, pl2: String, n: u16) -> Box<GameSession> {
 
     }
     pub fn read_winner(&self) -> (String, u16) {
@@ -51,7 +51,7 @@ Here is a program to test your functions,
 use borrow_box::*;
 
 fn main() {
-    let mut game = Game::new(0, String::from("Joao"), String::from("Susana"), 5);
+    let mut game = GameSession::new(0, String::from("Joao"), String::from("Susana"), 5);
     println!("{:?}", game.read_winner());
     // output : ("Same score! tied", 0)
 
