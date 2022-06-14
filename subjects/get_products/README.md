@@ -2,18 +2,16 @@
 
 ### Instructions
 
-Create a function `get_products` that takes a vector of integers, and returns a vector of the products
-of each index. For this exercise to be correct you will have to return the product of every index
+Create a function named `get_products` that takes a vector of integers, and returns a vector of the products of each index.
+
+You'll need to return the product of every index
 except the current one.
 
-Examples: [1,2,3,4]
+### Example:
+For `[1,2,3,4]`, we get:
 
-- for the number `1` we get `2*3*4 = 24`
-- for the number `3` we get `1*2*4 = 8`
-
-### Notions
-
-- [Trait iterator](https://doc.rust-lang.org/std/iter/trait.Iterator.html)
+- for the number `1` we get `2*3*4 = 24`.
+- for the number `3` we get `1*2*4 = 8`.
 
 ### Expected functions
 
@@ -44,3 +42,7 @@ $ cargo run
 [84, 12, 28, 21]
 $
 ```
+
+### Notions
+
+- [Trait iterator](https://doc.rust-lang.org/std/iter/trait.Iterator.html)
