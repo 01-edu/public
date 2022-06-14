@@ -2,19 +2,14 @@
 
 ### Instructions
 
-In this exercise a `Numbers` struct will be given.
+In this exercise, a `Numbers` struct will be given.
 
-These methods have to be written:
-
-- `new` create a new instance of Number.
-- `List` that returns an `array` with every number in the struct.
-- `Latest` that returns an `Option<u32>` with the last added number.
-- `Highest` that return an `Option<u32>` with the highest number from the list.
-- `Highest_Three` that returns a `Vec<u32>` with the three highest numbers.
-
-### Notions
-
-- [Trait iterator](https://doc.rust-lang.org/std/iter/trait.Iterator.html)
+These methods have to be written for it:
+- `new`: create a new instance of `Number`.
+- `List`: which returns an `array` with every number in the struct.
+- `Latest`: which returns an `Option<u32>` with the last added number.
+- `Highest`: which returns an `Option<u32>` with the highest number from the list.
+- `Highest_Three`: which returns a `Vec<u32>` with the three highest numbers.
 
 ### Expected functions
 
@@ -62,3 +57,7 @@ Some(70)
 [500, 70, 30]
 $
 ```
+
+### Notions
+
+- [Trait iterator](https://doc.rust-lang.org/std/iter/trait.Iterator.html)
