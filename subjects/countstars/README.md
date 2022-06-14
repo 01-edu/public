@@ -6,7 +6,7 @@ Write a function named `CountStar` that makes u fall asleep by counting stars, i
 - No need to manage overflow.
 
 ```go
-func CountStar(num int) string {
+func CountStars(num int) string {
 
 }
 ```
@@ -17,9 +17,9 @@ import (
 )
 
 func main() {
-	fmt.Println(CountStar(5))
-	fmt.Println(CountStar(4))
-	fmt.Println(CountStar(-1))
+	fmt.Println(CountStars(5))
+	fmt.Println(CountStars(4))
+	fmt.Println(CountStars(-1))
 }
 ```
 
