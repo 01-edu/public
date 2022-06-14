@@ -7,28 +7,28 @@ You have to design a notification system for a platform.
 Depending on the type of event, your event handler will control the size, color and position of the notification.
 
 Create a method named `notify` which returns a `Notification` with the following characteristics for each of:
-- `Remainder`:
+- `Remainder(text)`:
   - `size`: `50`
   - `color`: `(50, 50, 50)`
   - `position`: `Bottom`
-  - `content`: the slice associated to the enum value.
+  - `content`: `text associated to the value`
 - `Registration(chrono::Duration)`:
   - `size`: `30`
   - `color`: `(255, 2, 22)`
   - `position`: `Top`
   - `content`: `"You have {duration} left before the registration ends"`
-- `Appointment(text)`
-  - `size: 100`
-  - `color: (200, 200, 3)`
-  - `position: Center`
-  - `content: text associated to the value`
-- `Holiday`
+- `Appointment(text)`:
+  - `size`: `100`
+  - `color`: `(200, 200, 3)`
+  - `position`: `Center`
+  - `content`: `text associated to the value`
+- `Holiday`:
   - `size`: `25`
   - `color`: `(0, 255, 0)`
   - `position`: `Top`
   - `content`: `"Enjoy your holiday"`
 
-`duration` must be displayed in the form of `{hours}H:{minutes}M:{seconds}S`. The time will represent the remaining time before the event starts. For example, if there are 2 hours, 32 minutes and 3 seconds left, then the content will be `"You have 13H:38M:14S left before the registration ends"`
+`duration` must be displayed in the form of `{hours}H:{minutes}M:{seconds}S`. The time will represent the remaining time before the event starts. For example, if there are 13 hours, 38 minutes and 14 seconds left, then the content will be `"You have 13H:38M:14S left before the registration ends"`
 
 Implement the `std::fmt::Display` trait so the text of the notifications are printed in the right color in the command line.
 
@@ -37,6 +37,8 @@ Implement the `std::fmt::Display` trait so the text of the notifications are pri
 
 chrono = "0.4"
 
+colored = "2.0.0"
+
 ### Expected Functions and Data Structures
 
 ```rust
@@ -44,22 +46,22 @@ use chrono::Duration;
 use colored::*;
 
 #[derive(Debug, Eq, PartialEq)]
-enum Position {
+pub enum Position {
 	Top,
 	Bottom,
 	Center,
 }
 
 #[derive(Debug, Eq, PartialEq)]
-struct Notification {
-	size: u32,
-	color: (u8, u8, u8),
-	position: Position,
-	content: String,
+ pub struct Notification {
+	pub size: u32,
+	pub color: (u8, u8, u8),
+	pub position: Position,
+	pub content: String,
 }
 
 #[derive(Debug)]
-enum Event<'a> {
+pub enum Event<'a> {
 	Remainder(&'a str),
 	Registration(Duration),
 	Appointment(&'a str),
@@ -74,7 +76,7 @@ impl fmt::Display for Notification {
 use Event::*;
 
 impl Event {
-	fn notify(&self) -> Notification {
+	pub fn notify(&self) -> Notification {
 	}
 }
 ```
