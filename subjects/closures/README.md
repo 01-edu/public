@@ -2,12 +2,7 @@
 
 ### Instructions
 
-Using closures and iterators create a **function**, `first_fifty_even_square` that returns the first 50 even numbers squared.
-in a `Vec<i32>`.
-
-### Notions
-
-[Iterators and Closures](https://doc.rust-lang.org/book/ch13-00-functional-features.html)
+Using closures and iterators create a **function**, that returns the first 50 even numbers squared in a `Vec<i32>`.
 
 ### Expected Functions
 
@@ -39,3 +34,7 @@ $ cargo run
 All elements in [4, 16, 36, ..., 10000], len = 50
 $
 ```
+
+### Notions
+
+[Iterators and Closures](https://doc.rust-lang.org/book/ch13-00-functional-features.html)
