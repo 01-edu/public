@@ -2,8 +2,7 @@
 
 ### Instructions
 
-Create the function `flow` that will works as the \_.flow([funcs])
-from lodash.
+Create the function named `flow` that will like the `_.flow([funcs])` from lodash.
 
 ### Example
 
