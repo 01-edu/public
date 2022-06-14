@@ -2,8 +2,8 @@
 
 ### Instructions
 
-Create the function `add_curry` that returns a closure.
-The purpose is to curry the add method to create more variations.
+Create the function `add_curry`, which returns a closure.
+The purpose is to 'curry' the add method to create more variations.
 
 ### Usage
 
