@@ -16,5 +16,5 @@ $ go run . 1 2 3 4 5 6 7 8 9 | cat -e
 $ go run . -1 1 | cat -e
 -1 1$
 $ go run . 1 a 2 3 4 5 6 7 8 9 | cat -e
-$
+Error$
 ```
