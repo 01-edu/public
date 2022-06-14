@@ -2,14 +2,11 @@
 
 ### Instructions
 
-In this exercise you will have to reuse your `add_curry` function (copy and paste it directly in your lib.rs file).
-Then you have to create the function `twice` using closures, this function will
-take a function f(x) as parameter and return a function f(f(x)).
+You'll need to reuse your `add_curry` function. Copy and paste it directly into your `lib.rs` file.
+
+Now create a function named `twice` using closures. This function will take a function `f(x)` as parameter, and return a function `f(f(x))`.
+
 So, the purpose of this function is to add two times the value in `add_curry` to the original value.
-
-### Notions
-
-- [higher order function](https://doc.rust-lang.org/rust-by-example/fn/hof.html#higher-order-functions)
 
 ### Expected functions
 
@@ -57,3 +54,7 @@ The value is 67
 The value is -57
 $
 ```
+
+### Notions
+
+- [higher order function](https://doc.rust-lang.org/rust-by-example/fn/hof.html#higher-order-functions)
