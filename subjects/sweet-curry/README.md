@@ -2,13 +2,11 @@
 
 ### Instructions
 
-Create the following functions with the "currying" process:
+Create the following functions with the "currying" process. Those functions should accept only one argument each.
 
-- mult2 that multiplies two numbers.
-- add3 that adds three numbers.
-- sub4 that subtracts four numbers.
-
-Please note that those functions can only have one argument each.
+- `mult2`: that multiplies two numbers.
+- `add3`: that adds three numbers.
+- `sub4`: that subtracts four numbers.
 
 ### Notions
 
