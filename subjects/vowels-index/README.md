@@ -31,10 +31,10 @@ func main() {
 ```
 And its output :
 ```console
-$ go run .  | cat -e
-1$
-4$
-6$
-8$
+$ go run .
+1
+4
+6
+8
 ```
     
