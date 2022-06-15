@@ -20,12 +20,14 @@ func main() {
 	fmt.Println(CountStars(5))
 	fmt.Println(CountStars(4))
 	fmt.Println(CountStars(-1))
+	fmt.Println(CountStars(1))
 }
 ```
 
 ```console
 $ go run . 
-1 star...2 stars...3 stars...4 stars...5 stars...
-1 star...2 stars...3 stars...4 stars...
+1 star...2 stars...3 stars...4 stars...5 stars
+1 star...2 stars...3 stars...4 stars
 No star
+1 star
 ```
