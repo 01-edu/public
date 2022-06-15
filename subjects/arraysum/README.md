@@ -8,7 +8,7 @@ Write a function that takes an array of numbers and returns the sum of all the n
 ### Expected function
 
 ```go
-func ArraySum(numbers []int) int {
+func SumArray(numbers []int) int {
     // your code here
 }
 ```
@@ -23,10 +23,10 @@ import (
 )
 
 func main(){
-    fmt.Println(ArraySum([]int{1,2,3,4,5}))
-    fmt.Println(ArraySum([]int{}))
-    fmt.Println(ArraySum([]int{-1,-2,-3,-4,-5}))
-    fmt.Println(ArraySum([]int{-1,2,3,4,-5}))
+    fmt.Println(SumArray([]int{1,2,3,4,5}))
+    fmt.Println(SumArray([]int{}))
+    fmt.Println(SumArray([]int{-1,-2,-3,-4,-5}))
+    fmt.Println(SumArray([]int{-1,2,3,4,-5}))
 }
 ```
 
