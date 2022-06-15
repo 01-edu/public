@@ -49,8 +49,8 @@ You only need to create & submit the JS file `get-them-all.js`. We're providing 
 ### Notions
 
 - [HTML Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
-- [`getElementsByTagName()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName)
-- [`getElementsByClassName()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName)
-- [`getElementById()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
-- [`querySelectorAll()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) / [`querySelector()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+- [getElementsByTagName](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName)
+- [getElementsByClassName](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName)
+- [getElementById](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
+- [querySelectorAll](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) / [querySelector`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
 - ...and bit of CSS that could help with the [`:not` pseudo class](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)
