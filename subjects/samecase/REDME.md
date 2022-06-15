@@ -11,9 +11,9 @@ Write a program that takes 2 arguments and returns:
   
 ### Usage
 
-
-
 ```console
+$ go run . | cat -e
+$
 $ go run . "p" "w"| cat -e
 1$
 $ go run . "p" "Q" | cat -e
@@ -22,5 +22,6 @@ $go run . "p" "4"  | cat -e
 -1$
 $ go run . "P" "Q" "W" | cat -e
 $
-
+$go run . A b  | cat -e
+-1$
 ```
