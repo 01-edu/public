@@ -8,7 +8,7 @@ Write a function that returns a number of digits in a nonnegative integer n.
 ### Expected function
 
 ```go
-func Numofdigits(int n) int {
+func Numofdigits(num int) int {
 
 }
 ```
