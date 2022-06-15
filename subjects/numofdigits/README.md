@@ -1,8 +1,8 @@
-## numofdigits
+## number of digits
 
 ### Instructions
 
-Write a function that returns number of digits in a nonnegative integer n.
+Write a function that returns a number of digits in a nonnegative integer n.
 - if you enter a negative input return 0.
 
 ### Expected function
@@ -37,8 +37,8 @@ And its output :
 
 ```console
 $ go run .
-1$
-3$
-0$
-3$
-4$
+1
+3
+0
+3
+4
