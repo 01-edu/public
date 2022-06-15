@@ -1,6 +1,6 @@
 ## alpha-position
 
-## instructions
+### Instructions
 
 Write a function named `AlphaPosition` that takes an alphabetical character as a parameter and returns the position of the letter in the alphabet.
 - If the character is not in the alphabet, return -1
@@ -14,7 +14,7 @@ func AlphaPosition(c rune) int {
 }
 ```
 
-### usage
+### Usage
 
 ```go 
 package main
@@ -31,7 +31,7 @@ func main(){
 }
 ```
 
-### output
+And its output : 
 
 ```console
 $ go run . | cat -e
