@@ -11,7 +11,7 @@ Write a program that concatenates two arguments  and prints the result:
 ```console
 $ go run . | cat -e
 $
-$ go run . "Hello" " World!" | cat -e
+$ go run . "Hello" "World!" | cat -e
 HelloWorld!$
 $ go run . " student " talented | cat -e
  student talented$
