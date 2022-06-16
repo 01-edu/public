@@ -13,8 +13,8 @@ $ go run . | cat -e
 $
 $ go run . "Hello" " World!" | cat -e
 HelloWorld!$
-$ go run . " student" talented | cat -e
-talented student$
+$ go run . " student " talented | cat -e
+ student talented$
 $ go run . "Hello" "student" talented ! | cat -e
 $
 ``` 
