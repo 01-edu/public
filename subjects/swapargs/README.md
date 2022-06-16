@@ -6,7 +6,7 @@ Write a program that takes two arguments and swaps them
 - Separate the arguments with (`' '`)
 - Print (`'\n'`) at the end of the output.
 
-### Example
+### Usage
 
 ```console
 $ go run . | cat -e
