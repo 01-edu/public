@@ -22,10 +22,12 @@ import "fmt"
 
 
 func main(){
-    fmt.Println(BinaryAddition(1,1))
-    fmt.Println(BinaryAddition(1,2))
-    fmt.Println(BinaryAddition(1,3))
-    fmt.Println(BinaryAddition(4,4))
+	fmt.Println(BinaryAddition(1, 1))
+	fmt.Println(BinaryAddition(1, 2))
+	fmt.Println(BinaryAddition(1, 3))
+	fmt.Println(BinaryAddition(2, 1))
+	fmt.Println(BinaryAddition(2, 2))
+	fmt.Println(BinaryAddition(2, 3))
 }
 ```
 
