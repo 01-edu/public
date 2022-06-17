@@ -2,7 +2,7 @@
 
 ### instructions
 
-- Write a function named `printRange` that takes a start and end number and prints all the numbers in that range.
+- Write a function named `PrintRange` that takes a start and end number and prints all the numbers in that range.
     - If the start number is greater than the end number, print the numbers in descending order.
     - If the start number is less than the end number, print the numbers in ascending order.
     - If the number is greater than `9` print just to `9`
@@ -12,7 +12,7 @@
 
 ### Function
 ```go
-func printRange(start, end int) {
+func PrintRange(start, end int) {
     // Your code here
 }
 ```
@@ -24,12 +24,12 @@ import "piscine"
 import "fmt"
 
 func main() {
-    piscine.printRange(1, 10)
-    piscine.printRange(10, 1)
-    piscine.printRange(1, 1)
-    piscine.printRange(10, 10)
-    piscine.printRange(0, 9)
-    piscine.printRange(-1, -10)
+    piscine.PrintRange(1, 10)
+    piscine.PrintRange(10, 1)
+    piscine.PrintRange(1, 1)
+    piscine.PrintRange(10, 10)
+    piscine.PrintRange(0, 9)
+    piscine.PrintRange(-1, -10)
 }
 ```
 
