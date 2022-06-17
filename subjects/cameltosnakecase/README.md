@@ -6,6 +6,8 @@ Write a function that converts a string from a camel case to a snake case.
 - If the string is empty, return an empty string.
 - If the string is not a camel case, return the string unchanged.
 - If the string is a camel case, return the snake case version of the string.
+- Camel case is the practice of writing phrases without spaces or punctuation, It indicates the separation of words with a single capitalized letter
+- Snake case is a style of writing in which each space is replaced by an underscore (_) character.
 
 ### Expected function 
 ```go
