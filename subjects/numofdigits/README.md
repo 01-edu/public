@@ -3,7 +3,7 @@
 ### Instructions
 
 Write a function that returns the number of digits in a nonnegative integer n.
-- if the number is negative input returns 0.
+- if the number is negative returns 0.
 
 ### Expected function
 
