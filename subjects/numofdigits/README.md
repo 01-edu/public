@@ -19,17 +19,16 @@ func Numofdigits(num int) int {
 package main
 
 import (
-	"github.com/01-edu/z01"
+	"fmt"
 	"piscine"
 )
 
 func main() {
-	z01.PrintRune(piscine.Numofdigits(3))
-	z01.PrintRune(piscine.Numofdigits(245))
-	z01.PrintRune(piscine.Numofdigits(-1))
-	z01.PrintRune(piscine.Numofdigits(885))
-	z01.PrintRune(piscine.Numofdigits(8574))
-	z01.PrintRune('\n')
+	fmt.Println(piscine.Numofdigits(3))
+	fmt.Println(piscine.Numofdigits(245))
+	fmt.Println(piscine.Numofdigits(-1))
+	fmt.Println(piscine.Numofdigits(885))
+	fmt.Println(piscine.Numofdigits(8574))
 }
 ```
 
