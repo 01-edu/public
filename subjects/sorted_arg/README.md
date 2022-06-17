@@ -12,7 +12,7 @@ Write a program where you define if an argument is sorted or not sorted:
 
 ### Usage
 
-Here is a program to test your function.
+And it's output should be:
 
 ```console
 $ go run . | cat -e
