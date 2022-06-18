@@ -1,4 +1,4 @@
-## arg-issorted
+## argsort
 
 ### Instruction
 
