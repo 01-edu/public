@@ -21,7 +21,7 @@ impl Iterator for RomanNumber {}
 Here is a program to test your function.
 
 ```rust
-use roman_numbers::RomanNumber;
+use roman_numbers_iterator::RomanNumber;
 
 fn main() {
 	let mut number = RomanNumber::from(15);
