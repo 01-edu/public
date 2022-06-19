@@ -2,11 +2,10 @@
 
 ### Instructions
 
-Create a function called `replica` that allows you to deep assign the values of all properties from one or more
-objects to a target object.
+Create a function named `replica` that allows you to deep assign the values of all properties from one or more objects to a target object.
 
-Attention with the shallow copies.
+> Watch out for shallow copies.
 
 ### Notions
 
-- [nan-academy.github.io/js-training/examples/data-structures](https://nan-academy.github.io/js-training/examples/data-structures.js)
+- [data-structures](https://nan-academy.github.io/js-training/examples/data-structures.js)
