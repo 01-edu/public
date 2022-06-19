@@ -2,35 +2,23 @@
 
 ### Instructions
 
-Finish your groceries!!!
+Create 3 functions which work like the `.filter`, `.map` and `.reduce` array methods, but for the **entries** in the grocery cart.
 
-Create 3 functions that works like the `.filter`, `.map` and `.reduce` array method but for the entries of the grocery cart.
+- `filterEntries`: filters using both key and value.
+- `mapEntries`: changes the key, the value or both.
+- `reduceEntries`: reduces the entries.
 
-- `filterEntries` filters using both key and value.
-- `mapEntries` changes either the key or the value or both.
-- `reduceEntries` reduce over entries.
+Create 3 additional functions that use your previously created functions:
 
-Create 3 other functions that use your previously create functions:
+- `totalCalories`: that will return the total calories of a cart.
+- `lowCarbs`: that leaves only those items which are lower than 50grams.
+- `cartTotal`: that will give you the right amount of calories, proteins... and **all the other** items in your grocery cart.
 
-- `totalCalories` that will return the total calories of a cart
-- `lowCarbs` that will leave only items that total carbs are lower than 50grams
-- `cartTotal` that will give you the right amount of calories, proteins, ..., of all items in your grocery cart.
-
-### Clarification
-
-What the functions will take as argument is an object cart which contains the food rations. All the nutrition in the nutritionDB object are measured per 100 grams.
-
-### Notions
-
-- [devdocs.io/javascript/global_objects/array/filter](https://devdocs.io/javascript/global_objects/array/filter)
-- [devdocs.io/javascript/global_objects/array/map](https://devdocs.io/javascript/global_objects/array/map)
-- [devdocs.io/javascript/global_objects/array/reduce](https://devdocs.io/javascript/global_objects/array/reduce)
-- [devdocs.io/javascript/global_objects/object/entries](https://devdocs.io/javascript/global_objects/object/entries)
-- [devdocs.io/javascript/global_objects/object/fromentries](https://devdocs.io/javascript/global_objects/object/fromentries)
+> Think about the shape of `Object.entries()`
 
 ### Code provided
 
-> all code provided will be added to your solution and doesn't need to be submited.
+> The provided code will be added to your solution, and does not need to be submitted.
 
 ```js
 // small database with nutrition facts, per 100 grams
@@ -46,3 +34,11 @@ const nutritionDB = {
   orange:  { calories: 49,  protein: 0.9,   carbs: 13,    sugar: 9,   fiber: 0.2, fat: 0.1   },
 }
 ```
+
+### Notions
+
+- [filter](https://devdocs.io/javascript/global_objects/array/filter)
+- [map](https://devdocs.io/javascript/global_objects/array/map)
+- [reduce](https://devdocs.io/javascript/global_objects/array/reduce)
+- [entries](https://devdocs.io/javascript/global_objects/object/entries)
+- [fromentries](https://devdocs.io/javascript/global_objects/object/fromentries)
