@@ -2,48 +2,32 @@
 
 ### Instructions
 
-Go buy groceries!!!
+Let's buy groceries.
 
-You have a grocery cart with some items you need.
-The items will have a `key` being the name and a `value` that is the amount in grams.
+You have a grocery cart with some items you need. The item's name if the `key`, and the `value` will represent nutrition facts per 100 grams.
 
-Create 3 functions that works like the `.filter`, `.map` and `.reduce` array method but for the values of your grocery cart.
-
-- `filterValues` filters the values of your grocery cart.
-- `mapValues` changes the values of your grocery cart.
-
-For the above function the callback function should accepts only the element in the arguments, this being the current element being processed.
-
-- `reduceValues` that will reduce your grocery cart. The callback function should accepts only the **accumulated value** and the **current value**.
+Create 3 functions that work like the `.filter`, `.map` and `.reduce` array methods, for the values in your grocery cart object. You can see their function names and how they work in the examples.
 
 ### Examples
 
 ```js
 const nutrients = { carbohydrates: 12, protein: 20, fat: 5 }
+
 console.log(filterValues(nutrients, (nutrient) => nutrient <= 12))
-// output :
-// { carbohydrates: 12, fat: 5 }
+// output: { carbohydrates: 12, fat: 5 }
+
 console.log(mapValues(nutrients, (v) => v+1))
-// output :
-// { carbohydrates: 13, protein: 21, fat: 6 }
+// output: { carbohydrates: 13, protein: 21, fat: 6 }
+
 console.log(reduceValues(nutrients, (acc, cr) => acc + cr))
-// output :
-// 37
+// output: 37
 ```
 
 You will have a small database to help you with the groceries.
 
-### Notions
-
-- [devdocs.io/javascript/global_objects/array/filter](https://devdocs.io/javascript/global_objects/array/filter)
-- [devdocs.io/javascript/global_objects/array/map](https://devdocs.io/javascript/global_objects/array/map)
-- [devdocs.io/javascript/global_objects/array/reduce](https://devdocs.io/javascript/global_objects/array/reduce)
-- [devdocs.io/javascript/global_objects/object/entries](https://devdocs.io/javascript/global_objects/object/entries)
-- [devdocs.io/javascript/global_objects/object/fromentries](https://devdocs.io/javascript/global_objects/object/fromentries)
-
 ### Code provided
 
-> all code provided will be added to your solution and doesn't need to be submitted.
+> The provided code will be added to your solution, and does not need to be submitted.
 
 ```js
 // small database with nutrition facts, per 100 grams
@@ -60,3 +44,11 @@ const nutritionDB = {
     orange:  { calories: 49,  protein: 0.9,   carbs: 13,    sugar: 9,   fiber: 0.2, fat: 0.1   },
   }
 ```
+
+### Notions
+
+- [filter](https://devdocs.io/javascript/global_objects/array/filter)
+- [map](https://devdocs.io/javascript/global_objects/array/map)
+- [reduce](https://devdocs.io/javascript/global_objects/array/reduce)
+- [entries](https://devdocs.io/javascript/global_objects/object/entries)
+- [fromEntries](https://devdocs.io/javascript/global_objects/object/fromentries)
