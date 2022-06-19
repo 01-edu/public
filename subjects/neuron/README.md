@@ -2,8 +2,7 @@
 
 ### Instructions
 
-Create a function called `neuron` that allows your AI/bot to learn how to data shape a given
-dataset into an object so that it can better navigate the data.
+Create a function named `neuron`, that enables your AI/bot to learn to mutate data into a more usable shape. You can see how it works from the example.
 
 ### Example
 
