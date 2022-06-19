@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a function called `deepCopy` that copy objects and arrays recursively.
+Create a function named `deepCopy` that copies objects and arrays recursively.
 
 ### Notions
 
