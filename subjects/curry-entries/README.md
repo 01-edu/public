@@ -2,18 +2,20 @@
 
 ### Instructions
 
-This exercise consists in creating curry functions to apply in the object's entries.
-You will have to create the following curry functions:
+You're going to create some curry functions, to apply to the object's entries.
 
-- `defaultCurry` curries two objects in which the second object overrides the values of the first. If the key is not present then add it with the corresponding value.
+Create `defaultCurry`, which curries two objects. It mergers the objects together. If the key exists in both objects, the value from the second object override the value from the first object.
 
 ```js
-
 defaultCurry({
   http: 403,
   connection: 'close',
   contentType: 'multipart/form-data',
-})({ http: 200, connection: 'open', requestMethod: 'GET' })
+})({
+  http: 200,
+  connection: 'open',
+  requestMethod: 'GET'
+})
 // output
 {
     http: 200,
@@ -24,7 +26,7 @@ defaultCurry({
 
 ```
 
-- `mapCurry` replicates function `.map`, where first entry is a function, second is an object.
+Create `mapCurry`, which replicates function `.map` (but for an object). The first entry is the function, and the second entry is the object.
 
 ```js
 mapCurry(([k, v]) => [`${k}_force`, v])(personnel)
@@ -38,7 +40,7 @@ mapCurry(([k, v]) => [`${k}_force`, v])(personnel)
 }
 ```
 
-- `reduceCurry` replicates function `.reduce`, where first entry is function, second is (object, initial value).
+Create `reduceCurry`, which replicates the `.reduce` method (but fro an object). The first entry is the function, and the second is the object and initial value).
 
 ```js
 reduceCurry((acc, [k, v]) => (acc += v))({ a: 1, b: 2, c: 3 }, 0)
@@ -46,7 +48,7 @@ reduceCurry((acc, [k, v]) => (acc += v))({ a: 1, b: 2, c: 3 }, 0)
 6
 ```
 
-- `filterCurry` replicates function `.filter`, where first entry is function, second is object.
+Create `filterCurry` which replicates the `.filter` method (but for an object). The first entry is the function, and the second is an object.
 
 ```js
 filterCurry(([k, v]) => typeof v === 'string' || k === 'arr')({
@@ -60,25 +62,14 @@ filterCurry(([k, v]) => typeof v === 'string' || k === 'arr')({
 
 Using each curry function create the following functions with a parameter `personnel`:
 
-- `reduceScore` that will return the total value of the scores
-  of the persons who use the force (this function can have one additional parameter)
-- `filterForce` that will return the force users with `shootingScores`
-  equal or higher than 80
-- `mapAverage` that will return a new object with the propriety `averageScore`
-  that is the average of the scores for each person
-
-### Notions
-
-- [devdocs.io/javascript/global_objects/array/filter](https://devdocs.io/javascript/global_objects/array/filter)
-- [devdocs.io/javascript/global_objects/array/map](https://devdocs.io/javascript/global_objects/array/map)
-- [devdocs.io/javascript/global_objects/array/reduce](https://devdocs.io/javascript/global_objects/array/reduce)
-- [devdocs.io/javascript/global_objects/object/entries](https://devdocs.io/javascript/global_objects/object/entries)
-- [devdocs.io/javascript/global_objects/object/fromentries](https://devdocs.io/javascript/global_objects/object/fromentries)
-- [stackoverflow.com/questions/36314/what-is-currying](https://stackoverflow.com/questions/36314/what-is-currying)
+- `reduceScore`: that will return the total value of the scores
+  of the people who use the force. (this function can have one additional parameter).
+- `filterForce`: that will return the force users with `shootingScores` equal to or higher than 80.
+- `mapAverage`: that will return a new object with the property `averageScore`, that is the average of the scores for each person.
 
 ### Code provided
 
-> all code provided will be added to your solution and doesn't need to be submited.
+> The provided code will be added to your solution, and does not need to be submitted.
 
 ```js
 // prettier-ignore
@@ -90,3 +81,12 @@ const personnel = {
   calebDume:     { id: 11, pilotingScore: 71, shootingScore: 85, isForceUser: true  },
 }
 ```
+
+### Notions
+
+- [filter](https://devdocs.io/javascript/global_objects/array/filter)
+- [map](https://devdocs.io/javascript/global_objects/array/map)
+- [reduce](https://devdocs.io/javascript/global_objects/array/reduce)
+- [entries](https://devdocs.io/javascript/global_objects/object/entries)
+- [fromentries](https://devdocs.io/javascript/global_objects/object/fromentries)
+- [stackoverflow what-is-currying?](https://stackoverflow.com/questions/36314/what-is-currying)
