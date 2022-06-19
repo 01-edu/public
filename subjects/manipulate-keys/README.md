@@ -2,40 +2,29 @@
 
 ### Instructions
 
-I do not want onions. I want oranges!!!
+I do not want onions. I want oranges.
 
-Create 3 functions that works like the `.filter`, `.map` and `.reduce` array method but for the keys of your grocery cart.
-
-- `filterKeys` filters the name of the items you have.
-- `mapKeys` changes the name of the items you have.
-- `reduceKeys` reducing you grocery cart.
+Create 3 functions that works like the `.filter`, `.map` and `.reduce` array methods, but for the **keys** of your grocery cart. You can see their names and how they work in the examples.
 
 ### Examples
 
 ```js
 const nutrients = { carbohydrates: 12, protein: 20, fat: 5 }
+
 console.log(filterKeys(nutrients, (key) => /protein/.test(key)))
-// output :
-// { protein: 20 }
+// output: { protein: 20 }
+
 console.log(mapKeys(nutrients, (k) => `-${k}`))
-// output :
-// { -carbohydrates: 12, -protein: 20, -fat: 5 }
+// output: { -carbohydrates: 12, -protein: 20, -fat: 5 }
+
 console.log(reduceKeys(nutrients, (acc, cr) =>acc.concat(', ', cr)))
-// output :
-// carbohydrates, protein, fat
+// output: carbohydrates, protein, fat
 ```
 
-### Notions
-
-- [devdocs.io/javascript/global_objects/array/filter](https://devdocs.io/javascript/global_objects/array/filter)
-- [devdocs.io/javascript/global_objects/array/map](https://devdocs.io/javascript/global_objects/array/map)
-- [devdocs.io/javascript/global_objects/array/reduce](https://devdocs.io/javascript/global_objects/array/reduce)
-- [devdocs.io/javascript/global_objects/object/entries](https://devdocs.io/javascript/global_objects/object/entries)
-- [devdocs.io/javascript/global_objects/object/fromentries](https://devdocs.io/javascript/global_objects/object/fromentries)
 
 ### Code provided
 
-> all code provided will be added to your solution and doesn't need to be submited.
+> The provided code will be added to your solution, and does not need to be submitted.
 
 ```js
 // small database with nutrition facts, per 100 grams
@@ -51,3 +40,11 @@ const nutritionDB = {
   orange:  { calories: 49,  protein: 0.9,   carbs: 13,    sugar: 12,  fiber: 0.2, fat: 0.1   },
 }
 ```
+
+### Notions
+
+- [filter](https://devdocs.io/javascript/global_objects/array/filter)
+- [map](https://devdocs.io/javascript/global_objects/array/map)
+- [reduce](https://devdocs.io/javascript/global_objects/array/reduce)
+- [entries](https://devdocs.io/javascript/global_objects/object/entries)
+- [fromEntries](https://devdocs.io/javascript/global_objects/object/fromentries)
