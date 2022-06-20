@@ -2,8 +2,8 @@
 
 ### Instructions
 Write a function that takes a number and returns the square root of that number.
-- If the number is less than one or the number does not have an integer square root, return `-1`.
 - The square root of a number is the number divided by two until the number is less than or equal to one.
+- If the number is less than zero return `-1`.
 
 ### Expected function
 ```go
@@ -13,6 +13,8 @@ func SquareRoot(number int) int {
 ```
 
 ### Usage
+
+Here is a possible program to test your function:
 
 ```go
 package main
@@ -25,6 +27,8 @@ func main() {
     fmt.Println(SquareRoot(25))
     fmt.Println(SquareRoot(26))
     fmt.Println(SquareRoot(0))
+	fmt.Println(SquareRoot(-1))
+	fmt.Println(SquareRoot(1))
 }
 ```
 
@@ -35,6 +39,8 @@ $ go run .
 3
 4
 5
+5
+0
 -1
--1
+1
 ```
