@@ -2,12 +2,12 @@
 
 ### Instructions
 
-Create two functions that will work like `_.debounce` from lodash
+Create two functions that will work like `_.debounce` from lodash.
 
-- `debounce`, this function doesn't need to take care of the options
-- `opDebounce`, this function will take care of the `leading` options
+- `debounce`: don't worry about the options.
+- `opDebounce`: implement the `leading` options.
 
 ### Notions
 
-- [lodash.com/docs/4.17.15#debounce](https://lodash.com/docs/4.17.15#debounce)
-- [https://css-tricks.com/debouncing-throttling-explained-examples/#debounce](https://css-tricks.com/debouncing-throttling-explained-examples/#debounce)
+- [lodash debounce](https://lodash.com/docs/4.17.15#debounce)
+- [css-tricks.com debounce](https://css-tricks.com/debouncing-throttling-explained-examples/#debounce)
