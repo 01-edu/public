@@ -49,13 +49,13 @@ And its output :
 
 ```console
 $ go run .
-HHHHHaaaaaaaa
-pppiiiiiiWWW
-OOuuuuuHH
-ff
-Invalid Input
-Invalid Input
-Invalid Input
-Invalid Input
+$HHHHHaaaaaaaa
+$pppiiiiiiWWW
+$OOuuuuuHH
+$ff
+$Invalid Input
+$Invalid Input
+$Invalid Input
+$Invalid Input
 
 ```
