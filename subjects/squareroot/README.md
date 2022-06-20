@@ -19,16 +19,18 @@ Here is a possible program to test your function:
 ```go
 package main
 
-import "fmt"
+import (
+    "fmt"
+    "piscine"
 
 func main() {
-    fmt.Println(SquareRoot(9))
-    fmt.Println(SquareRoot(16))
-    fmt.Println(SquareRoot(25))
-    fmt.Println(SquareRoot(26))
-    fmt.Println(SquareRoot(0))
-	fmt.Println(SquareRoot(-1))
-	fmt.Println(SquareRoot(1))
+    fmt.Println(piscine.SquareRoot(9))
+    fmt.Println(piscine.SquareRoot(16))
+    fmt.Println(piscine.SquareRoot(25))
+    fmt.Println(piscine.SquareRoot(26))
+    fmt.Println(piscine.SquareRoot(0))
+	fmt.Println(piscine.SquareRoot(-1))
+	fmt.Println(piscine.SquareRoot(1))
 }
 ```
 
