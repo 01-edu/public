@@ -37,6 +37,6 @@ $ go run .
 true
 true
 false
-false
+true
 false
 ```
