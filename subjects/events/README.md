@@ -11,7 +11,7 @@ Create a method named `notify` which returns a `Notification` with the following
   - `size`: `50`
   - `color`: `(50, 50, 50)`
   - `position`: `Bottom`
-  - `content`: `text associated to the value`
+  - `content`: the `text` associated to the enum variant
 - `Registration(chrono::Duration)`:
   - `size`: `30`
   - `color`: `(255, 2, 22)`
