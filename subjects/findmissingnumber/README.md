@@ -30,6 +30,8 @@ func main(){
 }
 ```
 
+and the output should be:
+
 ```console
 $ go run .
 4
