@@ -3,7 +3,7 @@
 
 ### Instructions
 
-Unzipstring is a simple function that takes a string in of form of a number and an alphabet like (2a) and returns the original string (aa).
+write a function named Unzipstring that takes a string iN,m form of a number and an alphabet like (2a) and returns the original string (aa).
 
 - the number before the alphabet should be between 0 to 9 
 - The one  alphabet after each number should be  between a to z or A to Z
@@ -24,7 +24,6 @@ func Unzipstring(s string) string {
 Here is a possible program to test your function:
 
 ```go
-
 package main
 
 import (
@@ -41,7 +40,6 @@ func main() {
     fmt.Println(piscine.Unzipstring("2p4;7g"))
     fmt.Println(piscine.Unzipstring("2t4dD"))
     fmt.Println(piscine.Unzipstring("82t4D"))
-
 }
 ```
 
@@ -57,5 +55,4 @@ $Invalid Input
 $Invalid Input
 $Invalid Input
 $Invalid Input
-
 ```
