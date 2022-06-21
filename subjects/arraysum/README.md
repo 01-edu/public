@@ -15,6 +15,8 @@ func SumArray(numbers []int) int {
 
 ### Usage
 
+Here is a possible program to test your function:
+
 ```go
 package main
 
