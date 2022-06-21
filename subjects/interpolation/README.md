@@ -2,14 +2,15 @@
 
 ### Instructions
 
-Create a function called `interpolation` that takes an object with 5 properties
-`step`, `start`, `end`, `callback` and `duration`.
-This function must calculate the interpolation points, (x, y),
-from the `start` position to `end` position depending on the number of steps.
-All the points must be calculated in the duration time.
+Create a function named `interpolation` that takes an object with 5 properties: `step`, `start`, `end`, `callback` and `duration`.
 
-For each interpolation point you must call `callback` function with parameter - interpolation point ([x, y]).
-Each interpolation point should be calculated with interval of `duration / step`.
+This function must interpolate points from the `start` position to the `end` position (not including the `end` position). The number of points depends on the number of steps.
+
+For each interpolation point, you must call the `callback` function with an array of the two points `[x, y]`:
+- `x`: distance
+- `y`: point
+
+There should be a delay between each `callback` invocation; of `duration / step`, so that the final call happens after `duration`.
 
 ### Example
 
@@ -41,4 +42,4 @@ duration = 10
 
 ### Notions
 
-- [javascript.info/settimeout-setinterval](https://javascript.info/settimeout-setinterval)
+- [setTimeout & setInterval](https://javascript.info/settimeout-setinterval)
