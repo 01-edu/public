@@ -10,7 +10,6 @@ write a function named `Unzipstring` that takes a string in form of a number and
 - it can be two numbers or two alphabets in a row
 - if the Input string doesn't respect the format return `Invalid Input`
 
-
 ### Expected Function
 
 ```go
@@ -32,12 +31,12 @@ import (
 )
 
 func main() {
-    fmt.Println(piscine.Unzipstring("6H8a"))
-    fmt.Println(piscine.Unzipstring("3p6i1W"))
-    fmt.Println(piscine.Unzipstring("2O5u2H0e"))
     fmt.Println(piscine.Unzipstring("2f"))
-    fmt.Println(piscine.Unzipstring("2a 6p8f"))
+    fmt.Println(piscine.Unzipstring("2O5u2H0e"))
+    fmt.Println(piscine.Unzipstring("3p6i1W"))
+    fmt.Println(piscine.Unzipstring("6H8a"))
     fmt.Println(piscine.Unzipstring("2p4;7g"))
+    fmt.Println(piscine.Unzipstring("2a 6p8f"))
     fmt.Println(piscine.Unzipstring("2t4dD"))
     fmt.Println(piscine.Unzipstring("82t4D"))
     fmt.Println(piscine.Unzipstring(""))
@@ -48,11 +47,11 @@ And its output :
 
 ```console
 $ go run .
-$HHHHHaaaaaaaa
-$pppiiiiiiWWW
-$OOuuuuuHH
 $ff
-$Invalid Input
+$OOuuuuuHH
+$pppiiiiiiWWW
+$HHHHHaaaaaaaa
+$pp;;;;ggggggg
 $Invalid Input
 $Invalid Input
 $Invalid Input
