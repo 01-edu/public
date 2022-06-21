@@ -3,7 +3,7 @@
 
 ### Instructions
 
-write a function named `Unzipstring` that takes a string in form of a number and an alphabet  and returns the original string.
+write a function named `Unzipstring` that takes a string in form of a number and printable character that is not a number and returns the original string.
 
 - the number before the alphabet should be between 0 to 9 
 - The one  alphabet after each number should be  between a to z or A to Z
