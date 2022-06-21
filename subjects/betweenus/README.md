@@ -1,9 +1,12 @@
 ## between-us
 
-write a function named `BetweenUs` that takes 3 paramters and return : 
-- if the first paramter is between the second and third paramters, return **true** else return **false**
+### Instructions
 
-### Function
+Write a function named `BetweenUs` that takes 3 paramters and return : 
+- If the first paramter is between the second and third paramters, return **true** else return **false**
+- If the second parameter is bigger than the third return **false**
+
+### Expected function
 ```go
 func BetweenUs(num, min, max int) bool {
     // Your code here
@@ -29,6 +32,8 @@ func main(){
     fmt.Println(BetweenUs(-1, -10, 0))
 }
 ```
+
+and the output should be:
 
 ```console
 $ go run .
