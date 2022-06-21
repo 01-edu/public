@@ -40,6 +40,7 @@ func main() {
     fmt.Println(piscine.Unzipstring("2p4;7g"))
     fmt.Println(piscine.Unzipstring("2t4dD"))
     fmt.Println(piscine.Unzipstring("82t4D"))
+    fmt.Println(piscine.Unzipstring(""))
 }
 ```
 
@@ -51,6 +52,7 @@ $HHHHHaaaaaaaa
 $pppiiiiiiWWW
 $OOuuuuuHH
 $ff
+$Invalid Input
 $Invalid Input
 $Invalid Input
 $Invalid Input
