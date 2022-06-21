@@ -18,6 +18,8 @@ func CamelToSnakeCase(s string) string{
 
 ### Usage 
 
+Here is a possible program to test your function:
+
 ```go
 package main
 
