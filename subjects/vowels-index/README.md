@@ -3,7 +3,7 @@
 ### Instructions
 
 Write a function that takes one argument of type string and returns an array of integers containing the index of the vowels in the string.
-- vowels: a, e, i, o, u]
+- vowels: [a, e, i, o, u]
 
 ### Expected function
 
