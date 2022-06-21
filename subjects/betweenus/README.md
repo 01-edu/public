@@ -12,6 +12,9 @@ func BetweenUs(num, min, max int) bool {
 
 
 ### Usage
+
+Here is a possible program to test your function:
+
 ```go
 package main
 
