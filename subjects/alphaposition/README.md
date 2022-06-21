@@ -16,6 +16,8 @@ func AlphaPosition(c rune) int {
 
 ### Usage
 
+Here is a possible program to test your function:
+
 ```go 
 package main
 
