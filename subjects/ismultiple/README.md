@@ -17,6 +17,8 @@ func IsMultiple(number int) bool {
 
 ### Usage
 
+Here is a possible program to test your function:
+
 ```go
 package main
 
