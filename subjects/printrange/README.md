@@ -1,22 +1,27 @@
 ## print-range 
 
-### instructions
+### Instructions
 
-- Write a function named `PrintRange` that takes a start and end number and prints all the numbers in that range.
-    - If the start number is greater than the end number, print the numbers in descending order.
-    - If the start number is less than the end number, print the numbers in ascending order.
-    - If the number is greater than `9` print just to `9`
-    - If the number is less than `0` print just to `0`
-    - If both numbers are less than `0` or greater than `9` print (`'\n'`)
-    - the output should be space-separated and (`'\n'`) at the end.
+Write a function named `PrintRange` that takes a start and end number and prints all the numbers in that range.
+- If the start number is greater than the end number, print the numbers in descending order.
+- If the start number is less than the end number, print the numbers in ascending order.
+- If the number is greater than `9` print just to `9`
+- If the number is less than `0` print just to `0`
+- If both numbers are less than `0` or greater than `9` print (`'\n'`)
+- the output should be space-separated and (`'\n'`) at the end.
 
-### Function
+### Expected function
+
 ```go
 func PrintRange(start, end int) {
     // Your code here
 }
 ```
+
 ### Usage
+
+Here is a possible program to test your function:
+
 ```go
 package main
 
@@ -33,7 +38,8 @@ func main() {
 }
 ```
 
-### Output
+and the output should be:
+
 ```console
 $ go run . | cat -e
 1 2 3 4 5 6 7 8 9$
