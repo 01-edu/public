@@ -1,7 +1,7 @@
 ### Instructions
 
-Write a program that checks if a number up to a given number is an odd or even number.
-The number will be between `0` and `100`.
+Write a program that checks if all numbers up to a given number are odd or even.
+The numbers will be between `0` and `100`.
 
 - If the number is `odd` then it prints `ping` as in the example below.
 - If the number is `even` then it prints `pong`.
