@@ -2,18 +2,17 @@
 
 ### Instructions
 
-Create a function `all` that works like `Promise.all` but with objects.
-(instead of arrays)
-
-### Notions
-
-- [nan-academy.github.io/js-training/examples/promise.js](https://nan-academy.github.io/js-training/examples/promise.js)
-- [devdocs.io/javascript/global_objects/promise/all](https://devdocs.io/javascript/global_objects/promise/all)
+Create a function named `all` that works like `Promise.all` but with objects (instead of arrays).
 
 ### Code provided
 
-> all code provided will be added to your solution and doesn't need to be submited.
+> The provided code will be added to your solution, and does not need to be submitted.
 
 ```js
 Promise.all = undefined
 ```
+
+### Notions
+
+- [Promise.js](https://nan-academy.github.io/js-training/examples/promise.js)
+- [Promise.all](https://devdocs.io/javascript/global_objects/promise/all)
