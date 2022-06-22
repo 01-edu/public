@@ -2,27 +2,23 @@
 
 ### Instructions
 
-Create a function `isWinner` that, by making use of `winners` "API", should
-return a resolved Promise with the string:
+Create a function named `isWinner` which accepts a string representing the name of a country. It should use the `winners` _"API"_ to return a resolved `Promise` with an appropriate string.
 
-- `<country> + ' never was a winner'`, if the country passed in `isWinner` has never won  the FIFA World Cup
+The strings which can be returned are listed below. You'll need to replace `"Country"` with the country named which is passed to `isWinner`:
 
-- `<country> + ' is not what we are looking for because of the continent'`,
-  if the country passed in `isWinner` is not from the european
-  continent
+- `"Country never was a winner"`: The country has never won a FIFA world cup.
 
-- `<country> + ' is not what we are looking for because of the number of times it was champion'`, if the country passed in `isWinner` was champion
-  less than 3 times
+- `"Country is not what we are looking for because of the continent"`: The country is not from the european continent.
 
-- `<country> + ' won the FIFA World Cup in ' + <year(s)> + 'winning by ' + <results>`, otherwise.
+- `"Country is not what we are looking for because of the number of times it was champion"`: The country won the FIFA world cup fewer than 3 times.
 
-The years and results should be displayed like bellow:
-
-```<country> + ' won the FIFA World Cup in 1000, 1004, 1008 winning by 4-3, 5-2, 1-0```
+- `"Country won the FIFA World Cup in <years> winning by <results>"`: with the following format:
+  - `<years>`: `"1000, 1004, 1008"`
+  - `<results>`: `"4-3, 5-2, 1-0"`
 
 ### Code provided
 
-> all code provided will be added to your solution and doesn't need to be submitted.
+> The provided code will be added to your solution, and does not need to be submitted.
 
 ```js
 const db = (() => {
