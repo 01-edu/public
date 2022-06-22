@@ -4,7 +4,7 @@
 
 Write a program that takes two words in the first argument and swaps them.
 - If the number of arguments is not 2, nothing should be printed.
-- the first argument should containe only alphabitic characters and spaces, if not, print `"Error\n"`
+- The first argument should contain only alphabetic characters and spaces, if not, print `"Error\n"`
 - Skip the spaces only in the first word of the first argument.
 - Print the result with a new line at the end (`'\n'`).
 
