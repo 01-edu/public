@@ -2,30 +2,26 @@
 
 ### Instructions
 
-Create a `retry` function, that takes 2 arguments
+Create a `retry` function, that takes 2 arguments:
 
-- a `count` indicates maximum amount of retries
-- an async `callback`, that will be called on every try
+- `count`: indicates maximum number of retries.
+- `callback`: an `async` function that will be invoked for every attempt.
 
-`retry` returns a function that calls and returns value from `callback`
-function passing its arguments and catches errors. If error is caught it
-should return the `callback` function with catch. If number of errors
-exceeds `count` then throw an `Error`.
+`retry` returns a function that invokes the `callback` function. That function passes its arguments to `callback`, and returns the value from `callback`.
 
-> for count of 3, the function will be called at most 4 times:
-> the initial call + 3 retries.
+The function returned by `retry` must `catch` errors from `callback`. After that function has caught `count` errors, it must `throw` an `Error`.
 
-Create a `timeout` function, that takes 2 arguments
+> if `count` is 3, `callback` will be invoked at most 4 times, the initial call plus 3 retries.
 
-- a `delay` indicates maximum wait time
-- an async `callback`, that will be called
+Create function named `timeout`, that takes 2 arguments:
 
-`timeout` returns a function either that calls and returns value from `callback`
-function passing its arguments or returns `Error('timeout')` if `callback` didn't
-resolve before `delay` time has reached.
+- `delay`: indicates maximum wait time.
+- `callback`: an asynchronous function that will be invoked.
+
+`timeout` returns a function that invokes and returns the value from `callback`. The function must pass its arguments to `callback`. If `callback` does not resolve before `delay`, your function returns `Error('timeout')`.
 
 ### Notions
 
-- [nan-academy.github.io/js-training/examples/promise.js](https://nan-academy.github.io/js-training/examples/promises.js)
-- [devdocs.io/dom/settimeout]( https://devdocs.io/dom/settimeout)
-- [devdocs.io/javascript/global_objects/promise/race](https://devdocs.io/javascript/global_objects/promise/race)
+- [Promises](https://nan-academy.github.io/js-training/examples/promises.js)
+- [setTimeout]( https://devdocs.io/dom/settimeout)
+- [Promise.race](https://devdocs.io/javascript/global_objects/promise/race)
