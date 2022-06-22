@@ -2,22 +2,20 @@
 
 ### Instructions
 
-Create a function `race` that works like `Promise.race`
+Create two functions:
+- `race`: that works like `Promise.race`.
+- `some`: that takes an `array` of promises or values, and `count` number. It should return the first `count` resolved values. Empty arrays or a `count` of 0 return a promise resolving to `undefined`.
 
-Create a function `some` that takes an `array` of promises or values
-and `N` number. It should return the first `N` resolved values.
-
-> Empty array or a count of 0 return a promise resolving to `undefined`
-
-### Notions
-
-- [nan-academy.github.io/js-training/examples/promise](https://nan-academy.github.io/js-training/examples/promise.js)
-- [devdocs.io/javascript/global_objects/promise/race](https://devdocs.io/javascript/global_objects/promise/race)
 
 ### Code provided
 
-> all code provided will be added to your solution and doesn't need to be submited.
+> The provided code will be added to your solution, and does not need to be submitted.
 
 ```js
 Promise.race = undefined
 ```
+
+### Notions
+
+- [Promise](https://nan-academy.github.io/js-training/examples/promise.js)
+- [Promise.race](https://devdocs.io/javascript/global_objects/promise/race)
