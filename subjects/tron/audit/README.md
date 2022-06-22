@@ -43,4 +43,4 @@ Serving HTTP on :: port 8000 (http://[::]:8000/)
 
 ##### If you have an AI, and are prepared for battle. Modify the URL to battle against your AI. Best out of 3.
 
-###### +Did the audited AI won against your AI?
+###### +Did the audited AI win against your AI?
