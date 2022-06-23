@@ -1,10 +1,12 @@
+## pingpong
+
 ### Instructions
 
 Write a program that checks if all numbers up to a given number are odd or even.
-The numbers will be between `0` and `100`.
+The numbers will be between 0 and 100.
 
-- If the number is `odd` then it prints `ping` as in the example below.
-- If the number is `even` then it prints `pong`.
+- If the number is odd then it prints the number and `ping` as in the example below.
+- If the number is even then it prints the number and `pong` in the same way.
 - If the number of arguments is invalid then do nothing.
 
 ### Usage
