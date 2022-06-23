@@ -1,20 +1,20 @@
-#### Functionals
+#### Functional
 
 ##### Try to open a story post
 
-###### Does this post open without problems?
+###### Does this post open without any errors?
 
 ##### Try to open a job post
 
-###### Does this post open without problems?
+###### Does this post open without any errors?
 
 ##### Try to open a poll post
 
-###### Does this post open without problems?
+###### Does this post open without any errors?
 
 ##### Try to load more posts
 
-###### Did the posts loaded without error or without spamming the user?
+###### Did the posts load without error and without spamming the user?
 
 ##### Try to open a post with comments
 
@@ -24,16 +24,16 @@
 
 ###### Does the UI have at least stories, jobs and polls?
 
-###### Are the posts displayed in the correct order(from newest to oldest)?
+###### Are the posts displayed in the correct order (from newest to oldest)?
 
 ###### Does each comment present the right parent post?
 
-###### Is the UI notifying the user that there is a new update on a certain post?
+###### Does the UI notify the user when a certain post is updated?
 
-###### Is the project using Throttle to regulate the amount of request (every 5 seconds)?
+###### Is the project using throttling to regulate the number of requests (every 5 seconds)?
 
 #### Bonus
 
 ###### +Does the UI have more types of posts than stories, jobs and polls?
 
-###### +Are there sub-comments(nested comments) on the UI?
+###### +Have sub-comments (nested comments) been implemented?
