@@ -4,7 +4,7 @@
 
 Let's buy groceries.
 
-You have a grocery cart with some items you need. The item's name if the `key`, and the `value` will represent nutrition facts per 100 grams.
+You have a grocery cart with some items you need. The item's name is the `key`, and the `value` will represent nutrition facts per 100 grams.
 
 Create 3 functions that work like the `.filter`, `.map` and `.reduce` array methods, for the values in your grocery cart object. You can see their function names and how they work in the examples.
 
