@@ -1,4 +1,4 @@
-## skip-the-line
+## AddFront
 
 ### Instructions
 
@@ -7,7 +7,7 @@ Write a function that receives a string and a slice of strings. Return a new sli
 ### Expected function 
 
 ```go
-func SkipTheLine(s string, slice []string) []string {
+func AddFront(s string, slice []string) []string {
     // your code here
 }
 ```
@@ -22,9 +22,9 @@ package main
 import "fmt"
 
 func main() {
-    fmt.Println(SkipTheLine("Hello", []string{"world"}))
-    fmt.Println(SkipTheLine("Hello", []string{"","world", "!"}))
-    fmt.Println(SkipTheLine("Hello", []string{}))
+    fmt.Println(AddFront("Hello", []string{"world"}))
+    fmt.Println(AddFront("Hello", []string{"","world", "!"}))
+    fmt.Println(AddFront("Hello", []string{}))
 }
 ```
 
