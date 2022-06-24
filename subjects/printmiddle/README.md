@@ -19,4 +19,6 @@ $ go run . "Hello World!" "World!" "All" | cat -e
 World!$
 $ go run . 1 2 3 4 | cat -e
 2 3$
+go run . "Hello" "World!" | cat -e 
+Hello World!$
 ```
