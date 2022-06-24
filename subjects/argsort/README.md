@@ -3,12 +3,9 @@
 ### Instructions
 
 Write a program where you define if an argument is sorted or not sorted:
-- Your Program should return `T` if an argument is sorted.
-- Your Program should return `F` if an argument is not sorted.
-- If The argument is empty nothing will be printed.
-- If the number of arguments is not 1 Print (`'\n'`).
-- If the length argument is equal to 1 Print(`'\n'`).
-- Your program should always print (`'\n'`) at the end of the output.
+- Your Program should return `T` followed by a newline (`'`\n'`) if an argument is sorted.
+- Your Program should return `F` followed by a newline (`'`\n'`) if an argument is not sorted.
+
 
 ### Usage
 
