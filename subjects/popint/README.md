@@ -25,7 +25,7 @@ import (
 )
 
 func main() {
-    ints := {6,7,8,9,}
+    ints := {6, 7, 8, 9,}
     l := piscine.PopInt(ints)
     fmt.Println(l)
 }
