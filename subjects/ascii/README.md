@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that receives a string and returns a slice with the ASCII values of its characters.
+Write a function that receives a string and returns a slice with the ASCII values of its characters. If the string is empty it should return an empty slice.
 
 ### Expected function
 
