@@ -1,13 +1,22 @@
 ## Camel-to-snake-case 
 
 ### Instructions
+Write a function that converts a string from `CamelCase` to `snake_case`.
 
-Write a function that converts a string from a camel case to a snake case.
+Camel case is the practice of writing phrases without spaces or punctuation, it indicates the separation of words with a single capitalized letter. Snake case is a style of writing in which each space is replaced by an underscore (_) character.
+
+Here are some rules for you to follow:
+
 - If the string is empty, return an empty string.
-- If the string is not a camel case, return the string unchanged.
-- If the string is a camel case, return the snake case version of the string.
-- Camel case is the practice of writing phrases without spaces or punctuation, It indicates the separation of words with a single capitalized letter
-- Snake case is a style of writing in which each space is replaced by an underscore (_) character.
+- If the string is not `CamelCase`, return the string unchanged.
+- If the string is `CamelCase`, return the `snake_case` version of the string.
+
+Basic `CamelCase` Capitalization Rules:
+
+- The first letter must be capitalized.
+- The word must not have two capitalized letters together (CamelCase) not end with a capitalized letter (CamelCasE).
+- No numbers or punctuations are allowed in the word at any place (CamelCase1more).
+
 
 ### Expected function 
 ```go
@@ -27,21 +36,19 @@ import "fmt"
 
 func main() {
     fmt.Println(CamelToSnakeCase("HelloWorld")) 
-    fmt.Println(CamelToSnakeCase("heloWorld"))
+    fmt.Println(CamelToSnakeCase("helloWorld"))
     fmt.Println(CamelToSnakeCase("CamelToSnakeCase"))
     fmt.Println(CamelToSnakeCase("132322"))
-    fmt.Println(CamelToSnakeCase(""))
 }
 ```
 
 and the output should be:
 
 ```console
-$ go run . | cat -e
-Hello_World$
-helo_World$
-Camel_To_Snake_Case$
-132322$
-$
+$ go run .
+Hello_World
+helloWorld
+Camel_To_Snake_Case
+132322
 ```
 
