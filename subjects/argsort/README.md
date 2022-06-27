@@ -5,7 +5,7 @@
 Write a program that checks if an argument is sorted or not.
 - Your Program should return `T` followed by a newline (`'`\n'`) if an argument is sorted.
 - Your Program should return `F` followed by a newline (`'`\n'`) if an argument is not sorted.
-
+- Space and Tabulation are included in the sort.
 
 ### Usage
 
@@ -23,5 +23,7 @@ $ go run . "Hello World" | cat -e
 F$
 $ go run .  "a b c" | cat -e
 F$
+$ go run .  "   abc" | cat -e
+T$
 ```
 
