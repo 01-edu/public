@@ -27,6 +27,8 @@ func main() {
 	piscine.StrisNegative("585")
 	piscine.StrisNegative("-58")
 	piscine.StrisNegative("55s44")
+	piscine.StrisNegative("101-1331")
+	piscine.StrisNegative("5544-")
 }
 ```
 
@@ -36,6 +38,8 @@ And its output :
 $ go run .
 P
 N
+!
+!
 !
 ```
 
