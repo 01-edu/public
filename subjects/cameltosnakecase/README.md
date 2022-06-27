@@ -14,7 +14,7 @@ Here are some rules for you to follow:
 Basic `CamelCase` Capitalization Rules:
 
 - The first letter must be capitalized.
-- The word must not have two capitalized letters together (CamelCase) not end with a capitalized letter (CamelCasE).
+- The word must not have two capitalized letters together (CamelCAse) not end with a capitalized letter (CamelCasE).
 - No numbers or punctuations are allowed in the word at any place (CamelCase1more).
 
 
