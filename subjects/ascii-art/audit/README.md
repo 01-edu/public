@@ -84,7 +84,28 @@
 ```
 
 ###### Does it display the right graphical representation in ASCII as above?
+##### Try passing `"Hello\n\nThere"` as an argument.
+```
+ _    _          _   _          $
+| |  | |        | | | |         $
+| |__| |   ___  | | | |   ___   $
+|  __  |  / _ \ | | | |  / _ \  $
+| |  | | |  __/ | | | | | (_) | $
+|_|  |_|  \___| |_| |_|  \___/  $
+                                $
+                                $
+$
+ _______   _                           $
+|__   __| | |                          $
+   | |    | |__     ___   _ __    ___  $
+   | |    |  _ \   / _ \ | '__|  / _ \ $
+   | |    | | | | |  __/ | |    |  __/ $
+   |_|    |_| |_|  \___| |_|     \___| $
+                                       $
+                                       $
+```
 
+###### Does it display the right graphical representation in ASCII as above?
 ##### Try passing `"{Hello & There #}"` as an argument.
 
 ```
