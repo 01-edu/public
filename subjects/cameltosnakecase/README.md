@@ -3,7 +3,7 @@
 ### Instructions
 Write a function that converts a string from `CamelCase` to `snake_case`.
 
-Camel case is the practice of writing phrases without spaces or punctuation, it indicates the separation of words with a single capitalized letter. Snake case is a style of writing in which each space is replaced by an underscore (_) character.
+Camel case is the practice of writing phrases without spaces or punctuation, it indicates the separation of two words with a single capitalized letter. Snake case is a style of writing in which each space is replaced by an underscore (_) character.
 
 Here are some rules for you to follow:
 
@@ -14,7 +14,7 @@ Here are some rules for you to follow:
 Basic `CamelCase` Capitalization Rules:
 
 - The first letter must be capitalized.
-- The word must not have two capitalized letters together (CamelCAse) not end with a capitalized letter (CamelCasE).
+- The word must not have two capitalized letters together (CamelCAse) nor end with a capitalized letter (CamelCasE).
 - No numbers or punctuations are allowed in the word at any place (CamelCase1more).
 
 
