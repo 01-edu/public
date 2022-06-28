@@ -9,6 +9,8 @@ Your program will receive some arguments. Count how many characters they have in
 ```console
 $ go run . "hello" "how are you?" | cat -e
 17$
+$ go run . "hi" | cat -e
+2$
 $ go run . | cat -e
 0$
 ```
