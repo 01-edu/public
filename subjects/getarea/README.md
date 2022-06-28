@@ -6,6 +6,7 @@ Write a program that takes a positive number as radius and prints the area of a 
   - The area of the circle is `3.14` times the radius squared.
   - Only positive numbers will be accepted, otherwise print `Error` followed by (`'\n'`)
   - if the number of arguments is not `1` print (`'\n'`)
+  - The ouput should be integer number.
 
 
 ###  Usage
