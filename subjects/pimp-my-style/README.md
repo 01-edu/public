@@ -14,7 +14,7 @@ On each click on the page, a function `pimp` is triggered.
 Write the body of that function so that the button's class is altered:
 
 - From the data file provided, add each of the `styles` array elements as classes, in order.
-- When the end of the array is reached, remove the classes in a FIFO fashion.
+- When the end of the array is reached, remove the classes in a LIFO fashion.
 - While removing classes, toggle the `unpimp` class on. And toggle it off again while adding classes.
 
 
