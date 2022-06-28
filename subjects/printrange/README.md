@@ -2,13 +2,13 @@
 
 ### Instructions
 
-Write a function named `PrintRange` that takes a start and end number and prints all the numbers in that range.
-- If the start number is greater than the end number, print the numbers in descending order.
-- If the start number is less than the end number, print the numbers in ascending order.
-- If the number is greater than `9` print just to `9`
-- If the number is less than `0` print just to `0`
-- If both numbers are less than `0` or greater than `9` print (`'\n'`)
-- the output should be space-separated and (`'\n'`) at the end.
+Write a function called `PrintRange` that given a range between two numbers, prints all numbers in that range.
+
+- If the starting number is greater than the ending number, print the numbers in descending order, otherwise in ascending order.
+- If the number is greater than `9` print only up to `9`
+- If the number is less than '0' print only up to '0'
+- If both numbers are less than `0` print (`'\n'`), the same applies when both numbers are greater than 9.
+- the output must be separated by spaces and (`'\n'`) at the end.
 
 ### Expected function
 
