@@ -2,25 +2,25 @@
 
 ### Instructions
 
-Write a program that takes two words in the first argument and swaps them.
-- If the number of arguments is not 2, nothing should be printed.
-- The first argument should contain only alphabetic characters and spaces and only two word, if not, print `"Error\n"`
-- Print the result with a new line at the end (`'\n'`).
-- Trim space in the beginning and end of the string
+Write a program that takes a first and last name as one argument and swaps them.
+- If there is more than one argument, nothing should be printed.
+- The argument should contain only alphabetic characters and spaces and only two words, if not, you have to print `"Error\n"`
+- The result must be followed with a new line at the end (`'\n'`).
+- Trim any extra space in the beginning or end of the string.
 
 ### Usage
 
 ```console
 $ go run . | cat -e
-$ go run . "Hello World" "Hello World" | cat -e
-$ go run . "Hello World" | cat -e
-World Hello$
+$ go run . "James Carl" "Peter Lab" | cat -e
+$ go run . "ROB carlos" | cat -e
+carlos ROB$
 $ go run . "He2 $%hello" | cat -e
 Error$
-$ go run . "    Hello World   " | cat -e
-World Hello$
-$ go run . "Hello World Hello" | cat -e
+$ go run . "    JULIE BIRD   " | cat -e
+BIRD JULIE$
+$ go run . "Carl Jon Mic" | cat -e
 Error$
-$ go run . "Hello" | cat -e
+$ go run . "ROB" | cat -e
 Error$
 ```
