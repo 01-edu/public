@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that takes a string and a slice of strings, this function will return a new slice of sting with the given string prepended
+Write a function that takes a string and a slice of strings, this function will return a new slice of a string with the given string prepended
 
 ### Expected function 
 
