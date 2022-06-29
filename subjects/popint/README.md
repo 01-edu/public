@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that receives a slice of int and returns a new slice without the last element.
+Write a function that receives a slice of int and returns a new slice without the last element. If the slice is empty return an empty slice.
 
 ### Expected function
 
