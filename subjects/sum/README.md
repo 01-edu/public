@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that takes two single digit numbers as a string and returns the sum as an int. If one of the arguments is not a single digit number, return 0;
+Write a function that takes two single digit numbers as a string and returns the sum as an int. If one of the arguments is not a single digit number, return 0.
 
 ### Expected function
 
