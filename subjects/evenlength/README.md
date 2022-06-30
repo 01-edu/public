@@ -22,7 +22,7 @@ import (
     "fmt"
 )
 func main() {
-    l := piscine.EvenLength(["Hi", "Hola", "Ola", "Ciao", "Salut", "Hallo"])
+    l := piscine.EvenLength([]string{"Hi", "Hola", "Ola", "Ciao", "Salut", "Hallo"})
     fmt.Println(l)
 }
 ```
