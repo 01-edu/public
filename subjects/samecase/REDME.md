@@ -7,7 +7,7 @@ Write a program that takes 2 characters as arguments and does the following:
 - If both characters are the same case, return 1.
 - If both characters are letters, but not the same case, return 0.
 - All outputs should be followed by a newline character.
-- If the argument is more than one character, return a newline.
+- If the argument is more than one character or if it's empty, return a newline.
   
 ### Usage
 
