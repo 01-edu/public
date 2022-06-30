@@ -1,15 +1,21 @@
 ## CountStars
 
 ### Instructions
-Write a function named `CountStar` that makes you fall asleep by counting stars, it takes an integer in the parameter
-- If the number is negative or equal to 0, return "`No star`"
+Write a function called CountStars that counts the stars up to a number given as an argument.
+- If the number is negative or equal to 0, return "`No stars`"
 - No need to manage overflow.
+
+### Expected Function
 
 ```go
 func CountStars(num int) string {
 
 }
 ```
+### Usage
+
+Here is a possible program to test your function :
+
 ```go
 import (
 	"fmt"
@@ -28,6 +34,6 @@ func main() {
 $ go run . 
 1 star...2 stars...3 stars...4 stars...5 stars
 1 star...2 stars...3 stars...4 stars
-No star
+No stars
 1 star
 ```
