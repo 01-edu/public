@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that returns the number of digits in a nonnegative integer n.
+Write a function that returns the number of digits in a positive integer n.
 - if the number is negative returns 0.
 
 ### Expected function
@@ -15,20 +15,21 @@ func Numofdigits(num int) int {
 
 ### Usage
 
+Here is a possible program to test your function:
+
 ```go
 package main
 
 import (
 	"fmt"
-	"piscine"
 )
 
 func main() {
-	fmt.Println(piscine.Numofdigits(3))
-	fmt.Println(piscine.Numofdigits(245))
-	fmt.Println(piscine.Numofdigits(-1))
-	fmt.Println(piscine.Numofdigits(885))
-	fmt.Println(piscine.Numofdigits(8574))
+	fmt.Println(Numofdigits(3))
+	fmt.Println(Numofdigits(245))
+	fmt.Println(Numofdigits(-1))
+	fmt.Println(Numofdigits(885))
+	fmt.Println(Numofdigits(8574))
 }
 ```
 
