@@ -1,6 +1,5 @@
 ## Unzipstring
 
-
 ### Instructions
 
 write a function named `Unzipstring` that takes a string in form of a number and printable character that is not a number and returns the original string.
@@ -27,19 +26,18 @@ package main
 
 import (
     "fmt"
-    "piscine"
 )
 
 func main() {
-    fmt.Println(piscine.Unzipstring("2f"))
-    fmt.Println(piscine.Unzipstring("2O5u2H0e"))
-    fmt.Println(piscine.Unzipstring("3p6i1W"))
-    fmt.Println(piscine.Unzipstring("6H8a"))
-    fmt.Println(piscine.Unzipstring("2p4;7g"))
-    fmt.Println(piscine.Unzipstring("2a 6p8f"))
-    fmt.Println(piscine.Unzipstring("2t4dD"))
-    fmt.Println(piscine.Unzipstring("82t4D"))
-    fmt.Println(piscine.Unzipstring(""))
+    fmt.Println(Unzipstring("2f"))
+    fmt.Println(Unzipstring("2O5u2H0e"))
+    fmt.Println(Unzipstring("3p6i1W"))
+    fmt.Println(Unzipstring("6H8a"))
+    fmt.Println(Unzipstring("2p4;7g"))
+    fmt.Println(Unzipstring("2a 6p8f"))
+    fmt.Println(Unzipstring("2t4dD"))
+    fmt.Println(Unzipstring("82t4D"))
+    fmt.Println(Unzipstring(""))
 }
 ```
 
