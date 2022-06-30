@@ -5,6 +5,8 @@ Write a function called CountStars that counts the stars up to a number given as
 - If the number is negative or equal to 0, return "`No stars`"
 - No need to manage overflow.
 
+The Library strconv is allowed.
+
 ### Expected Function
 
 ```go
