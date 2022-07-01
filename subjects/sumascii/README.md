@@ -11,4 +11,8 @@ $ go run . "hi" | cat -e
 209$
 $ go run . "" | cat -e
 0$
+$ go run . "S" "A"
+0$
+$ go run . | cat -e
+0$
 ```
