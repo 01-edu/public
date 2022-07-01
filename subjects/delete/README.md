@@ -18,15 +18,12 @@ Here is a possible program to test your function :
 ```go
 package main
 
-import (
-    "piscine"
-    "fmt"
-)
+import "fmt"
 
 func main() {
-	fmt.Println(piscine.Delete([]int{1, 2, 3, 4, 5}, 2))
-	fmt.Println(piscine.Delete([]int{1, 2, 3, 4, 5}, 3))
-	fmt.Println(piscine.Delete([]int{1, 2, 3, 4, 5}, 1))
+	fmt.Println(Delete([]int{1, 2, 3, 4, 5}, 2))
+	fmt.Println(Delete([]int{1, 2, 3, 4, 5}, 3))
+	fmt.Println(Delete([]int{1, 2, 3, 4, 5}, 1))
 }
 ```
 
