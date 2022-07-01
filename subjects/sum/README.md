@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that takes two single digit numbers as a string and returns the sum as an int. If the number of digits from one of the arguments is more than one, return 0.
+Write a function that takes two single digit numbers as a string and returns the sum as an int. The strings can only contain one digit which will be a positive or negative number from 0 to 9. Otherwise, you must return 0.
 
 ### Expected function
 
@@ -19,15 +19,12 @@ Here is a possible program to test your function :
 ```go
 package main
 
-import (
-    "piscine"
-    "fmt"
-)
+import "fmt"
 
 func main() {
-	fmt.Println(piscine.Sum("1", "2"))
-	fmt.Println(piscine.Sum("-4", "0"))
-	fmt.Println(piscine.Sum("7", "-3"))
+	fmt.Println(Sum("1", "2"))
+	fmt.Println(Sum("-4", "0"))
+	fmt.Println(Sum("7", "-3"))
 }
 ```
 
