@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that receives a slice of strings and returns a new slice with the strings in which the length is even.
+Write a function that receives a slice of strings and returns a new slice with the strings in which the length is even. When the slice is empty or there are no even strings return an empty slice.
 
 ### Expected function
 
@@ -17,13 +17,11 @@ Here is a possible program to test your function:
 
 ```go
 package main
-import (
-    "piscine"
-    "fmt"
-)
+
+import "fmt"
+
 func main() {
-    l := piscine.EvenLength([]string{"Hi", "Hola", "Ola", "Ciao", "Salut", "Hallo"})
-    fmt.Println(l)
+    fmt.Println(EvenLength([]string{"Hi", "Hola", "Ola", "Ciao", "Salut", "Hallo"}))
 }
 ```
 
