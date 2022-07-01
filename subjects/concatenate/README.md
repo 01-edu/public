@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a program that displays all the arguments as a single string by simple putting one after each other. If there are not enough arguments it should display a new line.
+Write a program that displays all the arguments as a single string by simply putting one after each other. If there are not enough arguments it should display a new line.
 
 ### Usage
 
