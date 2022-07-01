@@ -19,14 +19,12 @@ Here is a possible program to test your function:
 ```go
 package main
 
-import (
-    "piscine"
-    "fmt"
-)
+import "fmt"
+
 
 func main() {
     ints := []int{6, 7, 8, 9,}
-    l := piscine.PopInt(ints)
+    l := PopInt(ints)
     fmt.Println(l)
 }
 ```
