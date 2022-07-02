@@ -2,7 +2,7 @@
 
 ### Instructions
 
-- Write a function that will be formatted as below.
+Create the following function.
 
 ### Expected function
 
@@ -11,10 +11,9 @@ func UltimateDivMod(a *int, b *int) {
 
 }
 ```
-
-- This function will divide the `int` **a** and **b**.
-- The result of this division will be stored in the `int` pointed by **a**.
-- The remainder of this division will be stored in the `int` pointed by **b**.
+`UltimateDivMod` should divide the dereferenced value of `a` by the dereferenced value of `b`.
+- Store the result of the division in the `int` which `a` points to.
+- Store the remainder of the division in the `int` which `b` points to.
 
 ### Usage
 
