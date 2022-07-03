@@ -21,14 +21,13 @@ Here is a possible program to test your function :
 ```go
 package main
 
-import "piscine"
 
 func main() {
-	piscine.StrisNegative("585")
-	piscine.StrisNegative("-58")
-	piscine.StrisNegative("55s44")
-	piscine.StrisNegative("101-1331")
-	piscine.StrisNegative("5544-")
+	StrisNegative("585")
+	StrisNegative("-58")
+	StrisNegative("55s44")
+	StrisNegative("101-1331")
+	StrisNegative("5544-")
 }
 ```
 
