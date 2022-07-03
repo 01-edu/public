@@ -31,6 +31,8 @@ func main() {
 	fmt.Println(CountStars(1))
 }
 ```
+And its output :
+
 
 ```console
 $ go run . 
