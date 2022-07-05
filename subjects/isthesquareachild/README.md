@@ -30,6 +30,7 @@ func main(){
     fmt.Println(IsTheSquareAChild(6, 36))
     fmt.Println(IsTheSquareAChild(-10, 100))
     fmt.Println(IsTheSquareAChild(100,10))
+    fmt.Println(IsTheSquareAChild(8, -64))
 }
 ```
 
@@ -42,6 +43,7 @@ false
 true
 false
 true
+false
 false
 false
 ```
