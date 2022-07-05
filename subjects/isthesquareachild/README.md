@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function `IsTheSquareAChild` that takes a number and returns `true` if the number is a square and `false` otherwise.
+Write a function `IsTheSquareAChild` that takes two numbers and returns `true` if the second number is the square of the first and `false` otherwise.
 - The function should return `false` if the number is negative.
 - Check only if the first parameter is the square of the second one.
 
