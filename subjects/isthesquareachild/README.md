@@ -1,14 +1,14 @@
-## is-the-square-a-child
+## is-square
 
 ### Instructions
 
-Write a function `IsTheSquareAChild` that takes two numbers and returns `true` if the second number is the square of the first and `false` otherwise.
-- The function should return `false` if the number is negative.
-- Check only if the first parameter is the square of the second one.
+Write a function `isSquare` that takes two numbers and returns `true` if the second number is the square of the first and `false` otherwise.
+- The function should return `false` if any of the parameters are negative
+- Check only if the second parameter is the square of the first one.
 
 ### Expected Function
 ```go
-func IsTheSquareAChild(number int, square int) bool {
+func isSquare(number int, square int) bool {
     // your code here
 }
 ```
@@ -23,14 +23,14 @@ package main
 import "fmt"
 
 func main(){
-    fmt.Println(IsTheSquareAChild(4, 16))
-    fmt.Println(IsTheSquareAChild(5, 23))
-    fmt.Println(IsTheSquareAChild(5, 25))
-    fmt.Println(IsTheSquareAChild(2, 27))
-    fmt.Println(IsTheSquareAChild(6, 36))
-    fmt.Println(IsTheSquareAChild(-10, 100))
-    fmt.Println(IsTheSquareAChild(100,10))
-    fmt.Println(IsTheSquareAChild(8, -64))
+    fmt.Println(isSquare(4, 16))
+    fmt.Println(isSquare(5, 23))
+    fmt.Println(isSquare(5, 25))
+    fmt.Println(isSquare(2, 27))
+    fmt.Println(isSquare(6, 36))
+    fmt.Println(isSquare(-10, 100))
+    fmt.Println(isSquare(100,10))
+    fmt.Println(isSquare(8, -64))
 }
 ```
 
