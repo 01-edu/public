@@ -2,13 +2,13 @@
 
 ### Instructions
 
-Write a function `isSquare` that takes two numbers and returns `true` if the second number is the square of the first and `false` otherwise.
+Write a function `IsSquare` that takes two numbers and returns `true` if the second number is the square of the first and `false` otherwise.
 - The function should return `false` if any of the parameters are negative
 - Check only if the second parameter is the square of the first one.
 
 ### Expected Function
 ```go
-func isSquare(number int, square int) bool {
+func IsSquare(number int, square int) bool {
     // your code here
 }
 ```
@@ -23,14 +23,14 @@ package main
 import "fmt"
 
 func main(){
-    fmt.Println(isSquare(4, 16))
-    fmt.Println(isSquare(5, 23))
-    fmt.Println(isSquare(5, 25))
-    fmt.Println(isSquare(2, 27))
-    fmt.Println(isSquare(6, 36))
-    fmt.Println(isSquare(-10, 100))
-    fmt.Println(isSquare(100,10))
-    fmt.Println(isSquare(8, -64))
+    fmt.Println(IsSquare(4, 16))
+    fmt.Println(IsSquare(5, 23))
+    fmt.Println(IsSquare(5, 25))
+    fmt.Println(IsSquare(2, 27))
+    fmt.Println(IsSquare(6, 36))
+    fmt.Println(IsSquare(-10, 100))
+    fmt.Println(IsSquare(100,10))
+    fmt.Println(IsSquare(8, -64))
 }
 ```
 
