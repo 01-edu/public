@@ -6,8 +6,8 @@ Write a function called `PrintRange` that given a range between two numbers, pri
 
 - If the starting number is greater than the ending number, print the numbers in descending order, otherwise in ascending order.
 - If the number is greater than `9` print only up to `9`
-- If the number is less than '0' print only up to '0'
-- If both numbers are less than `0` print (`'\n'`), the same applies when both numbers are greater than 9.
+- If the number is less than `0` print only up to `0`
+- If both numbers are less than `0` print (`'\n'`), the same applies when both numbers are greater than `9`.
 - The output must be separated by spaces and (`'\n'`) at the end.
 
 ### Expected function
