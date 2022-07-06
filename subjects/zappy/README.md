@@ -2,15 +2,15 @@
 
 ### Objectives
 
-Zappy is an automatic video Game where AIs play with each other, The Game is about building a world and managing it's population; we are going to call this world Trantor.
+Zappy is an automatic video Game where AIs play with each other, The Game is about building a world and managing its population; we are going to call this world Trantor.
 
-## Instructions
+### Instructions
 
 ### Game presentation
 
 - Geographically Trantor is made of plains with no height, no carter, no valley, no mountains.
 - The game board represents the entire world's surface like a map containing food and stones and the population of Trantor, "the Trantorians."
-- The "Trantorions" lives in harmony and peace with everyone,They only eat food so they Can stay alive, look for stones, pick them up to create totems, and have a ritual to get to the next level of the game,it will be all explained later.
+- The "Trantorions" lives in harmony and peace with everyone, They only eat food so they Can stay alive, look for stones, pick them up to create totems, and have a ritual to get to the next level of the game, it will be all explained later.
 - Each level has different requirements for a ritual, making the adventure more and more difficult for the AI players, who play independently without help from their creator.
 
 ### Players
@@ -18,7 +18,7 @@ Zappy is an automatic video Game where AIs play with each other, The Game is abo
 - If a player (or you call it a client ) Join the game, it does not Join as one character in the game, but as six characters or players play in the form of one team, the game does support Multiplayers, but players cannot share data between them outside the game in any way.
 - Teams play the game.
 - The game is over once six members of one family reach the highest possible level (8).
-- There is no chat room or sharing of data between players. Still, the Player can broadcast a message through a command-line sent to the server, which will be brodcasted to all players;  All details are in the sound transmition part.
+- There is no chat room or sharing of data between players. Still, the Player can broadcast a message through a command-line sent to the server, which will be broadcasted to all players;  All details are in the sound transmission part.
 
 ### The Game Parts
 
@@ -40,7 +40,7 @@ The function 1/t defines the time unit:
 
 The location is exceptionally rich in resources, mining, and food.
 Walk around on the game board to discover fantastic food and many stones of varied nature on the ground.
-- These stones be of 6 distinct kinds:
+- These stones are of 6 distinct kinds:
   - linemate
   - dreamer
   - sibur
@@ -73,7 +73,7 @@ We will explain more later.
 
 ### Elevation ritual
 
-- The goal for everyone is to reach the top of the Trantorian hierarchy.
+- The goal for everyone is to reach the top of the `Trantorian` hierarchy.
 - The ritual that allows increasing the Trantorian physical and mental capacities must be accomplished according to a particular rite. He needs to bring together the same field unit:
 
 - A combination of stones
@@ -157,13 +157,13 @@ Our player does not even see himself, and if there is more than one object in a 
 ### Time
 
 - No active wait time will be tolerated. There cannot be any blocking when the clients are stopped, or in any phase of the game.
-- The Trantorians have adopted an international time unit. Time unit is a second. If `t=1` “forward” takes 7 seconds.
-- We choose by default, t=100. t is a integer.
+- The Trantorians have adopted an international time unit. The Time unit is a second. If `t=1` “forward” takes 7 seconds.
+- We choose by default, t=100. t is an integer.
 - The time reference is absolute time.
 
 ### Objects denomination
 
-Only the classification of an object can be identifiable. It is therefore impossible to distinguish two objects of the same class. For example two `siburs` will have the same denomination since they belong to the same class.
+Only the classification of an object can be identifiable. It is therefore impossible to distinguish two objects of the same class. For example, two `siburs` will have the same denomination since they belong to the same class.
 
 ### Reproduction
 
@@ -173,7 +173,7 @@ When the egg hatches a new player pops. He is oriented randomly. This operation 
 
 - Time to lay an egg: 42/t
 
-- Time for the egg to hatch 600/t
+- Time for the egg to hatch at 600/t
 
 ### Inventory
 
@@ -222,17 +222,17 @@ Each player responds to the following actions and only with the following syntax
 | know the number of unused connections by the team |    connect_nbr    |    0/t     |          value           |
 |                 death of a player                 |         -         |     -      |          death           |
 
-All the commands are transmitted via a chain of characters that end by a newline.
+All the commands are transmitted via a chain of characters that end with a newline.
 
 ### Sound Transmission
 
 Sound is a wave that moves in a linear manner.
 
-All the players hear the broadcasts without knowing who emits them. They perceive only the direction the sound comes from and the message. The number of squares crossed by the sound before it arrives to the player indicates the direction. This numbering is done through the attribution of `1` to the square in front of the player, then a count down of the squares surrounding the player in the trigonometric direction (counter-clock wise). The world is round, therefore we will choose the shortest trajectory for the sound between the transmitter to the player for which we calculate.
+All the players hear the broadcasts without knowing who emits them. They perceive only the direction the sound comes from and the message. The number of squares crossed by the sound before it arrives at the player indicates the direction. This numbering is done through the attribution of `1` to the square in front of the player, then a count down of the squares surrounding the player in the trigonometric direction (counter-clock wise). The world is round, therefore we will choose the shortest trajectory for the sound between the transmitter to the player for which we calculate.
 
 The following example indicates the sound trajectory that we must choose, as well as the numbers of the squares around the player. The player receives the broadcast through square 3.
 
-![Example](./Sound.png)
+![Sounds](./sound.png)
 
 In case the broadcast is emitted from the same box as the receiving player, he will get the message from square 0
 
@@ -252,11 +252,11 @@ message <K>,<text>
 
 With K indicating the square where the sound comes from.
 
-### SERVER
+### The Server
 
 The server can be written in one of these languages [C - C++ - Rust - Go].
 
-in this part, you must create an TCP server to make a connexion between clients and manage the entire world 
+in this part, you must create a TCP server to make a connexion between clients and manage the entire world 
 - Port of the server
 - Number of teams and their names
 - Dimension of the world map
@@ -286,6 +286,20 @@ The server executes the requests of the client in the order they are received. T
 requests are buffered and the execution time of the command will only block the player
 concerned.
 
+### The Client
+The Client can be written in one of these languages [C - C++ - Rust - Go - Js - Python...]
+
+```console
+$./client
+Usage: ./client -n <team> -p <port> [-h <hostname>]
+        -n team_name
+        -p port
+        -h name of the host , the default is localhost
+```
+The client is autonomous, after its launch the user won’t influence its operation. He
+pilots a drone (player).
+
+The client should send the command order to the server without any intervention from humans.
 
  
 ### Client/server communication
@@ -299,12 +313,13 @@ The connection client to server will happen as such:
 | client’s message | server’s message |
 | :--------------: | :--------------: |
 |                  |    WELCOME\n     |
-| < team-name >\n  |                  |
-|                  | < nb-client >\n  |
-|                  |  < x > < y >\n   |
+|  \<team-name>\n  |                  |
+|                  |  \<nb-client>\n  |
+|                  |   \<x> \<y>\n    |
 
 The `nb-client` indicates the number of clients that can still be accepted by the server for the team `team-name`.
 If that number is greater than 1 a new client connects.
+If the team name passed by the client doesn't exist the server should print `"Error: the team <name of team> doesn't exist"`
 
 > The client can send successively up to 10 requests without a response from the server. Beyond 10 the server will no longer take them into account.
 
@@ -314,7 +329,7 @@ x and y indicate the dimensions of the world.
 
 ### GFX
 
-The Grapgic part must be done with one of these functions Javascript and Python and C , Cpp
+The Graphic part must be done with one of these functions Javascript and Python and C, C++
 
 Using any game Engine is forbidden.
 
@@ -325,9 +340,9 @@ The project will have to have a graphic visualization client. That client will p
 
 The interface will integrate at least a 2D visualization through icons allowing a representation of the world. You also need to include the visualization of the sounds.
 
-This can be developed in C, in PHP, in Perl, in Python, etc. And will communicate within the network with the `server` to retrieve the content of the `map, teams, inventories, etc`. For example, everything needed to see what is going on in the game.
+This can be developed in C,  PHP, Perl, Python, etc. And will communicate within the network with the `server` to retrieve the content of the `map, teams, inventories, etc`. For example, everything needed to see what is going on in the game.
 
 ### BONUS
 
 - A 3D interface or any other type of representation will be an appreciated bonus for this project.
-- Create the server with using only one process (No THREADS)
+- Create the server using only one process (No THREADS)
