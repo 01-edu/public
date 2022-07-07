@@ -266,7 +266,7 @@ in this part, you must create a TCP server to make a connexion between clients a
 
 - Your server must generate all resources. The generation must be in a random way.
 - Your server must never block, and the client can be appropriately bounced if necessary
-- Any request to your server should never hang forever.
+- Any request to your server must never hang forever.
 - It's forbidden to use any `exec` functions to run another server.
 - Stress tests your server. It must stay available at all costs.
 - You are allowed to use Thread but think out of the box.
@@ -299,7 +299,7 @@ Usage: ./client -n <team> -p <port> [-h <hostname>]
 The client is autonomous, after its launch the user won’t influence its operation. He
 pilots a drone (player).
 
-The client should send the command order to the server without any intervention from humans.
+The client must send the command order to the server without any intervention from humans.
 
  
 ### Client/server communication
@@ -319,7 +319,7 @@ The connection client to server will happen as such:
 
 The `nb-client` indicates the number of clients that can still be accepted by the server for the team `team-name`.
 If that number is greater than 1 a new client connects.
-If the team name passed by the client doesn't exist the server should print `"Error: the team <name of team> doesn't exist"`
+If the team name passed by the client doesn't exist the server must print `"Error: the team <name of team> doesn't exist"`
 
 > The client can send successively up to 10 requests without a response from the server. Beyond 10 the server will no longer take them into account.
 
