@@ -6,6 +6,7 @@ Write a function that takes a number and returns the square root of that number.
 - If the number is less than zero return `-1`.
 
 ### Expected function
+
 ```go
 func SquareRoot(number int) int {
     // Your code here
@@ -21,16 +22,16 @@ package main
 
 import (
     "fmt"
-    "piscine"
+)
 
 func main() {
-    fmt.Println(piscine.SquareRoot(9))
-    fmt.Println(piscine.SquareRoot(16))
-    fmt.Println(piscine.SquareRoot(25))
-    fmt.Println(piscine.SquareRoot(26))
-    fmt.Println(piscine.SquareRoot(0))
-	fmt.Println(piscine.SquareRoot(-1))
-	fmt.Println(piscine.SquareRoot(1))
+    fmt.Println(SquareRoot(9))
+    fmt.Println(SquareRoot(16))
+    fmt.Println(SquareRoot(25))
+    fmt.Println(SquareRoot(26))
+    fmt.Println(SquareRoot(0))
+    fmt.Println(SquareRoot(-1))
+    fmt.Println(SquareRoot(1))
 }
 ```
 
