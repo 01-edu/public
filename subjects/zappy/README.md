@@ -326,16 +326,12 @@ If the team name passed by the client doesn't exist the server should print `"Er
 The server executes the client requests in the order that they are received. The requests are buffered and the execution time of the command will only block the player concerned.
 x and y indicate the dimensions of the world.
 
-
-### GFX
+### Graphic interface
 
 The Graphic part must be done with one of these functions Javascript and Python and C, C++
 
 Using any game Engine is forbidden.
 
-
-### Graphic interface
- 
 The project will have to have a graphic visualization client. That client will propose a real-time representation of the world as it is on the server.
 
 The interface will integrate at least a 2D visualization through icons allowing a representation of the world. You also need to include the visualization of the sounds.
