@@ -1,21 +1,21 @@
 ## Camel-to-snake-case 
 
 ### Instructions
-Write a function that converts a string from `CamelCase` to `snake_case`.
+Write a function that converts a string from `camelCase` to `snake_case`.
 
-Camel case is the practice of writing phrases without spaces or punctuation, it indicates the separation of two words with a single capitalized letter. Snake case is a style of writing in which each space is replaced by an underscore (_) character.
+Lower camel case is the practice of writing phrases without spaces or punctuation, it indicates the separation of two words with a single capitalized letter. Snake case is a style of writing in which each space is replaced by an underscore (_) character.
 
 Here are some rules for you to follow:
 
 - If the string is empty, return an empty string.
-- If the string is not `CamelCase`, return the string unchanged.
-- If the string is `CamelCase`, return the `snake_case` version of the string.
+- If the string is not `camelCase`, return the string unchanged.
+- If the string is `camelCase`, return the `snake_case` version of the string.
 
-Basic `CamelCase` Capitalization Rules:
+Basic `Lower camelCase` Capitalization Rules:
 
-- The first letter must be capitalized.
-- The word must not have two capitalized letters together (CamelCAse) nor end with a capitalized letter (CamelCasE).
-- No numbers or punctuations are allowed in the word at any place (CamelCase1more).
+- The first letter should be lower case.
+- The word must have only one capitalized letter (camelCase). 
+- No numbers or punctuations are allowed in the word at any place (camelCase1).
 
 
 ### Expected function 
@@ -37,7 +37,8 @@ import "fmt"
 func main() {
     fmt.Println(CamelToSnakeCase("HelloWorld")) 
     fmt.Println(CamelToSnakeCase("helloWorld"))
-    fmt.Println(CamelToSnakeCase("CamelToSnakeCase"))
+    fmt.Println(CamelToSnakeCase("camelCase"))
+    fmt.Println(CamelToSnakeCase("camelToSnakeCase"))
     fmt.Println(CamelToSnakeCase("132322"))
 }
 ```
@@ -46,9 +47,10 @@ and the output should be:
 
 ```console
 $ go run .
-Hello_World
-helloWorld
-Camel_To_Snake_Case
+HelloWorld
+hello_World
+camel_Case
+camelToSnakeCase
 132322
 ```
 
