@@ -2,7 +2,7 @@
 
 **_Guildlines_**
 
-##### Zappy isn't a trivial project o correct. it is also long project to grade. For a full Project you need to spend aroung:
+##### Zappy isn't a trivial project to correct. it is also long project to grade. For a full Project you need to spend around:
 
 ###### - 20 to 30 minutes for the server testing
 ###### - 10 to 20 minutes for the graphic client testing
@@ -52,7 +52,7 @@ WELCOME
 ##### Use Vscode or a simular program and search about any `exec` functions like [`execve`,`execpe`,`execl`,`execlp`,`execle`,...]
 ###### Did he/she use one of those function ?
 
-##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -nt TeamOfVectory  TeamOfPower "`
+##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -nt TeamOfVectory TeamOfPower "`
 
 ```console 
 [ SQ ] : FOOD R0 R1 R2 R3 R4 R5 BOTS ...
@@ -72,7 +72,7 @@ WELCOME
 
 ##### + Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -nt TeamOfVectory"` at 2 terminal separate 
 
-###### Does it display in the second terminal `error: Address already in use` or something simular?
+###### Does it display in the second terminal `error: Address already in use` or something similar?
 
 **_Client_**
 
@@ -81,9 +81,9 @@ WELCOME
 ```console
 $ ./client
 Usage: ./client -n <team> -p <port> [-h <hostname>]
-        -n team_name
-        -p port
-        -h name of the host , the default is localhost
+ -n team_name
+ -p port
+ -h name of the host , the default is localhost
 ```
 
 ###### Does it display the correct result as above?
@@ -98,7 +98,7 @@ Usage: ./client -n <team> -p <port> [-h <hostname>]
 
 ##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -nt TeamOfVectory"` then run `"./client -n TeamNotWorking -p 8080 -h 127.0.0.1"`
 
-###### Does the program print `"Error: the team TeamNotWorking doesn't exist"` in server part and the client kick out ?
+###### Does the program print `" Error: the team TeamNotWorking does not exist"` in the server part, and the client kick out?
 
 **_Graphic Client_**
 
