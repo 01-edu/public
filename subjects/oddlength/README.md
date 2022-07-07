@@ -22,7 +22,7 @@ package main
 import "fmt"
 
 func main() {
-    fmt.Println(Oddlength(["Hi", "Hola", "Ola", "Ciao", "Salut", "Hallo"]))
+    fmt.Println(Oddlength([]string{"Hi", "Hola", "Ola", "Ciao", "Salut", "Hallo"}))
 }
 ```
 
