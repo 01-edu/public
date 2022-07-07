@@ -24,11 +24,10 @@ package main
 
 import (
 	"fmt"
-	"piscine"
 )
 
 func main() {
-	fmt.Println(piscine.BuzZinga(15))
+	fmt.Println(BuzZinga(15))
 }
 ```
 And its output :
