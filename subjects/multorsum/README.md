@@ -7,7 +7,7 @@ Write a function that receives a slice of int and and int representing the initi
 ### Expected function
 
 ```go
-func MultOrSum(ints []int, init int) {
+func MultOrSum(ints []int, init int) int {
 }
 ```
 
