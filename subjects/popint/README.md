@@ -21,11 +21,8 @@ package main
 
 import "fmt"
 
-
 func main() {
-    ints := []int{6, 7, 8, 9,}
-    l := PopInt(ints)
-    fmt.Println(l)
+	fmt.Println(PopInt([]int{6, 7, 8, 9}))
 }
 ```
 
