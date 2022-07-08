@@ -4,7 +4,7 @@
 
 Write a program that concatenates two arguments  and prints the result:
 - If the number of arguments is not 2, print (`'\n'`).
-- don't concatenate the two arguments with space.
+- If the two arguments are empty returns (`'\n'`).  
 
 ### Usage
 
