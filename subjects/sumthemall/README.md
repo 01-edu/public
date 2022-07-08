@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a program that receives a number of arguments representing whole numbers and displays the sum of the total. If there are not enough arguments or there is an overflow display 0 followed by a new line. If the argument is not a number display 0 followed by a new line.
+Create a program that receives a number of arguments representing whole numbers and displays the sum of the total. If there are not enough arguments or there is an overflow display 0 followed by a new line. If one of the arguments is not a number display 0 followed by a new line.
 
 ### Usage
 
