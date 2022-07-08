@@ -11,6 +11,8 @@ Write a program that rotates the arguments in the command line by 1 position.
 ```console
 $ go run . | cat -e
 $
+$ go run . "hello" | cat -e
+$
 $ go run . 1 2 3 4 5 6 7 8 9 | cat -e
 2 3 4 5 6 7 8 9 1$
 $ go run "Hello" "World" | cat -e
