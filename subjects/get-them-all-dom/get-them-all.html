@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get them all</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link id="fav" rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;,">
+  <style>
+
+:root {
+  --background: hsl(0, 0%, 12%);
+  --text: hsl(0, 0%, 80%);
+  --clear: hsl(0, 0%, 65%);
+  --disabled: hsl(0, 0%, 35%);
+  --purple: #bb73e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  letter-spacing: 1.5px;
+  background: var(--background);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  margin-top: 150px;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+#buttons {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  height: 150px;
+  background: var(--background);
+  box-shadow: 0 0 50px black;
+}
+
+#buttons * {
+  margin: 0 20px;
+  padding: 10px 20px;
+  background: var(--clear);
+  border-radius: 20px;
+  cursor: pointer;
+  user-select: none;
+  width: 200px;
+  text-align: center;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+a,
+span {
+  min-width: 110px;
+  min-height: 110px;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border: solid 1px var(--clear);
+  line-height: 22px;
+  padding: 10px;
+  color: var(--clear);
+  margin: 30px;
+}
+
+.found {
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.6),
+    -10px -10px 15px rgba(255, 255, 255, 0.074);
+  border: none;
+  background: var(--purple);
+  color: var(--background);
+}
+
+  </style>
+</head>
+<body>
+  <script type="module">
+
+import { people } from './get-them-all.data.js'
+import {
+  getBonannoPisano,
+  getActive,
+  getArchitects,
+  getClassical,
+} from './get-them-all.js'
+
+const body = document.querySelector('body')
+
+const shuffle = (array) => {
+  const test = array.length - 1
+  for (let i = test; i > 0; i--) {
+    const j = Math.floor(Math.random() * i)
+    const temp = array[i]
+    array[i] = array[j]
+    array[j] = temp
+  }
+  return array
+}
+
+shuffle(people).map(({ id, classe, address, plans, tag, active }) => {
+  const people = document.createElement(tag)
+  people.id = id
+  people.textContent = 'Someone'
+  people.className = `${classe} ${active ? 'active' : ''}`
+  body.append(people)
+})
+
+const buttonsContainer = document.createElement('div')
+buttonsContainer.id = 'buttons'
+body.append(buttonsContainer)
+
+const buttons = [
+  { name: 'Architect', action: getArchitects },
+  { name: 'Classical', action: getClassical },
+  { name: 'Active', action: getActive },
+  { name: 'Bonanno', action: getBonannoPisano },
+]
+
+buttons.forEach(({ name, action }, i) => {
+  const btn = document.createElement('button')
+  btn.id = `btn${name}`
+  btn.textContent = `Get ${name}${i === 0 ? 's' : ''}`
+
+  if (i > 0) {
+    btn.className = 'disabled'
+  }
+
+  btn.addEventListener('click', () => {
+    const [targetted, others] = action()
+
+    if (name === 'Bonanno') {
+      targetted.textContent = targetted.id.replace('P', ' P')
+      targetted.classList.add('found')
+    } else {
+      targetted.forEach((t) => {
+        t.textContent = name
+      })
+    }
+
+    others.forEach((o) => {
+      o.style.opacity = 0.2
+    })
+
+    btn.className = 'disabled'
+
+    const last = i + 1 === buttons.length
+    if (last) return
+    const next = document.getElementById(`btn${buttons[i + 1].name}`)
+    next.classList.remove('disabled')
+  })
+
+  buttonsContainer.append(btn)
+})
+
+  </script>
+</body>
+</html>

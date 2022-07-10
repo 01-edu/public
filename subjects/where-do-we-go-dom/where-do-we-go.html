@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Where do we go?</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link id="fav" rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;,">
+  <style>
+:root {
+  --background: hsl(0, 0%, 12%);
+  --text: hsl(0, 0%, 80%);
+  --clear: hsl(0, 0%, 65%);
+  --disabled: hsl(0, 0%, 35%);
+  --purple: #bb73e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  letter-spacing: 1.5px;
+  background: var(--background);
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+.location {
+  position: fixed;
+  top: 0;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  line-height: 130px;
+  white-space: pre-wrap;
+  text-align: center;
+  cursor: pointer;
+}
+
+.direction {
+  position: fixed;
+  right: 100px;
+  top: 100px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 60px;
+  color: white;
+  white-space: pre-wrap;
+}
+  </style>
+</head>
+<body>
+  <script type="module">
+import { explore } from './where-do-we-go.js'
+
+explore()
+  </script>
+</body>
+</html>

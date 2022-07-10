@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Harder, bigger, bolder, stronger</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link id="fav" rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;,">
+  <style>
+
+:root {
+  --background: hsl(0, 0%, 12%);
+  --text: hsl(0, 0%, 80%);
+  --clear: hsl(0, 0%, 65%);
+  --disabled: hsl(0, 0%, 35%);
+  --purple: #bb73e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  letter-spacing: 1.5px;
+  background: var(--background);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+  padding: 5rem;
+  font-size: 12px;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  width: 200px;
+  height: 200px;
+  color: white;
+}
+
+  </style>
+</head>
+<body>
+  <script type="module">
+
+import { generateLetters } from './harder-bigger-bolder-stronger.js'
+
+generateLetters()
+
+  </script>
+</body>
+</html>

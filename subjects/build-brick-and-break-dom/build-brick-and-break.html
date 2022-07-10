@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Build brick and break</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link id="fav" rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;,">
+  <style type="text/css">
+:root {
+  --background: hsl(0, 0%, 12%);
+  --text: hsl(0, 0%, 80%);
+  --clear: hsl(0, 0%, 65%);
+  --disabled: hsl(0, 0%, 35%);
+  --purple: #bb73e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  letter-spacing: 1.5px;
+  background: var(--background);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  height: 100vh;
+  color: var(--text);
+  padding: 10vh 36.5vw;
+}
+
+div {
+  text-align: center;
+  font-size: 10px;
+  width: 9vw;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.44vh;
+  background: linear-gradient(-25deg, var(--clear) 30%, var(--disabled) 90%);
+}
+
+#tools {
+  position: fixed;
+  right: 100px;
+  font-size: 80px;
+  cursor: pointer;
+  user-select: none;
+}
+
+[data-repaired='true'] {
+  color: hsl(275, 100%, 50%);
+}
+
+[data-repaired='true']:after {
+  content: '-repaired';
+}
+
+[data-repaired='in progress'] {
+  color: black;
+}
+
+[data-repaired='in progress']:after {
+  content: '-in progress';
+}
+
+  </style>
+</head>
+<body>
+  <script type="module">
+import { build, repair, destroy } from './build-brick-and-break.js'
+
+build(54)
+
+const body = document.querySelector('body')
+
+const tools = document.createElement('section')
+tools.id = 'tools'
+body.append(tools)
+
+const dynamite = document.createElement('span')
+dynamite.id = 'dynamite'
+dynamite.textContent = '🧨'
+dynamite.addEventListener('click', destroy)
+
+const hammer = document.createElement('span')
+hammer.id = 'hammer'
+hammer.textContent = '🔨'
+hammer.addEventListener('click', () => repair(...reparations))
+
+tools.append(dynamite, hammer)
+
+const random = (min, max) => {
+  min = Math.ceil(min)
+  max = Math.floor(max)
+  return Math.floor(Math.random() * (max - min + 1)) + min
+}
+
+const randomBricks = [...Array(15).keys()].map((e) => `brick-${random(1, 54)}`)
+const reparations = [...new Set(['brick-26', ...randomBricks])]
+
+body.dataset.reparations = reparations
+
+  </script>
+</body>
+</html>
