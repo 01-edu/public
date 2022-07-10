@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gossip grid</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link id="fav" rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;,">
+  <style>
+
+:root {
+  --background: hsl(0, 0%, 12%);
+  --text: hsl(0, 0%, 80%);
+  --clear: hsl(0, 0%, 65%);
+  --disabled: hsl(0, 0%, 35%);
+  --purple: #bb73e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  letter-spacing: 1.5px;
+  background: var(--background);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 10rem;
+  align-items: flex-start;
+}
+
+.gossip {
+  background: hsl(280, 50%, 50%);
+  margin: 20px;
+  width: 250px;
+  padding: 20px 25px;
+  line-height: 30px;
+  font-size: 20px;
+  word-break: break-word;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.gossip:first-letter {
+  text-transform: uppercase;
+}
+
+.ranges {
+  position: fixed;
+  top: 5rem;
+  display: flex;
+}
+
+.range {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clear);
+  font-family: monospace;
+}
+
+.range label,
+.range span {
+  width: 100px;
+}
+
+.range label {
+  text-align: right;
+}
+
+input {
+  margin: 20px 25px;
+}
+
+textarea {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  resize: none;
+}
+
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+button {
+  margin-top: 20px;
+  text-align: right;
+  border: solid 1px white;
+  align-self: flex-end;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.fade-in {
+  animation: fade-in 0.75s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <script type="module">
+
+import { grid } from './gossip-grid.js'
+
+grid()
+
+  </script>
+</body>
+</html>

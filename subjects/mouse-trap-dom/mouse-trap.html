@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mouse trap</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link id="fav" rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;,">
+  <style>
+:root {
+  --background: hsl(0, 0%, 12%);
+  --text: hsl(0, 0%, 80%);
+  --clear: hsl(0, 0%, 65%);
+  --disabled: hsl(0, 0%, 35%);
+  --purple: #bb73e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  letter-spacing: 1.5px;
+  background: var(--background);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 5rem;
+  font-size: 12px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0.75;
+}
+
+.box {
+  width: 25vw;
+  height: 25vh;
+  border: solid 1px var(--clear);
+}
+
+  </style>
+</head>
+<body>
+  <script type="module">
+
+import { setBox, createCircle, moveCircle } from './mouse-trap.js'
+
+setBox()
+createCircle()
+moveCircle()
+
+  </script>
+</body>
+</html>

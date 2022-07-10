@@ -1,8 +1,10 @@
+import puppeteer from 'puppeteer'
 import { join as joinPath, dirname, extname } from 'path'
-import { fileURLToPath } from 'url'
+import { readFile, writeFile } from 'fs/promises'
 import { deepStrictEqual } from 'assert'
-import * as fs from 'fs'
-const { readFile, writeFile } = fs.promises
+import { fileURLToPath } from 'url'
+import http from 'http'
+import fs from 'fs'
 
 global.window = global
 global.fetch = url => {
@@ -21,6 +23,12 @@ global.fetch = url => {
 
 const wait = delay => new Promise(s => setTimeout(s, delay))
 const fail = fn => { try { fn() } catch (err) { return true } }
+const upperFirst = (str) => str[0].toUpperCase() + str.slice(1)
+const randStr = (n = 7) => Math.random().toString(36).slice(2, n)
+const between = (min, max) => {
+  max || (max = min, min = 0)
+  return Math.floor(Math.random() * (max - min) + min)
+}
 
 const props = [String,Array]
   .flatMap(({ prototype }) =>
@@ -38,9 +46,16 @@ const eq = (a, b) => {
 }
 
 const [solutionPath, name] = process.argv.slice(2)
+
+const tools = { eq, fail, wait, randStr, between, upperFirst }
+const cleanup = (exitCode = 0) => {
+  if (!tools.browser) process.exit(exitCode)
+  tools.server.close()
+  return tools.browser.close().finally(() => process.exit(exitCode))
+}
 const fatal = (...args) => {
   console.error(...args)
-  process.exit(1)
+  return cleanup(1)
 }
 
 solutionPath || fatal('missing solution-path, usage:\nnode test solution-path exercise-name')
@@ -75,7 +90,7 @@ const any = arr =>
     f(firstError)
   })
 
-const testNode = async ({ name }) => {
+const testNode = async () => {
   const path = `${solutionPath}/${name}.mjs`
   return {
     path,
@@ -84,7 +99,7 @@ const testNode = async ({ name }) => {
   }
 }
 
-const runInlineTests = async ({ json, name }) => {
+const runInlineTests = async ({ json }) => {
   const restore = new Set()
   const equal = deepStrictEqual
   const saveArguments = (src, key) => {
@@ -103,12 +118,11 @@ const runInlineTests = async ({ json, name }) => {
   const logs = []
   console.log = (...args) => logs.push(args)
   const die = (...args) => {
-    logs.forEach((args) => console.info(...args))
-    console.error(...args)
-    process.exit(1)
+    logs.forEach((logArgs) => console.info(...logArgs))
+    return fatal(...args)
   }
 
-  const solution = await loadAndSanitizeSolution(name)
+  const solution = await loadAndSanitizeSolution()
   for (const { description, code } of JSON.parse(json)) {
     logs.length = 0
     const [provided, tests] = code.includes('// Your code')
@@ -130,14 +144,15 @@ ${tests.trim()}`.trim()
       console.info(`${description}:`, 'PASS')
     } catch (err) {
       console.info(`${description}:`, 'FAIL')
-      console.info(`\n======= Code ======= \n${fullCode}`)
       console.info('\n======= Error ======')
-      die(' ->', err.message)
+      console.info(' ->', err.message, '\n')
+      console.info('\n======= Code =======')
+      die(fullCode)
     }
   }
 }
 
-const loadAndSanitizeSolution = async name => {
+const loadAndSanitizeSolution = async () => {
   const path = `${solutionPath}/${name}.js`
   const rawCode = await read(path, "student solution")
 
@@ -151,18 +166,15 @@ const loadAndSanitizeSolution = async name => {
 
 const runTests = async ({ url, path, code }) => {
   const { setup, tests } = await import(url).catch(err =>
-    fatal(`Unable to execute ${name} solution, error:\n${stackFmt(err, url)}`),
+    fatal(`Unable to execute ${name}, error:\n${stackFmt(err, url)}`),
   )
 
-  const randStr = (n = 7) => Math.random().toString(36).slice(2, n)
-  const between = (min, max) => {
-    max || (max = min, min = 0)
-    return Math.floor(Math.random() * (max - min) + min)
-  }
-  const upperFirst = (str) => str[0].toUpperCase() + str.slice(1)
-
-  const tools = { eq, fail, wait, code, path, randStr, between, upperFirst }
+  Object.assign(tools, { code, path })
   tools.ctx = (await (setup && setup(tools))) || {}
+  const isDOM = name.endsWith('-dom')
+  if (isDOM) {
+    Object.assign(tools, await prepareForDOM({ code }))
+  }
   let timeout
   for (const [i, t] of tests.entries()) {
     try {
@@ -172,18 +184,107 @@ const runTests = async ({ url, path, code }) => {
           timeout = setTimeout(f, 60000, Error('Time limit reached (1min)'))
         }),
     ])
-      if (!(await waitWithTimeout)) {
+      if (!(await waitWithTimeout) && !isDOM) {
         throw Error('Test failed')
       }
     } catch (err) {
-      console.log(`test #${i+1} failed:\n${t.toString()}\n\nError:`)
-      fatal(stackFmt(err, url))
+      console.info(`test #${i+1} failed:\n${t.toString()}\n`)
+      return fatal(stackFmt(err, url))
     } finally {
       clearTimeout(timeout)
     }
   }
-  console.log(`${name} passed (${tests.length} tests)`)
+  cleanup(0)
+  console.info(`${name} passed (${tests.length} tests)`)
 }
+
+// add puppeteer tests as JS language:
+const PORT = 9898
+const config = {
+  args: [
+    '--no-sandbox',
+    '--disable-setuid-sandbox',
+
+    // This will write shared memory files into /tmp instead of /dev/shm,
+    // because Docker’s default for /dev/shm is 64MB
+    '--disable-dev-shm-usage',
+  ],
+  headless: !process.env.DEBUG_PUPPETTEER,
+}
+
+// LEGACY random, use between instead (only used by dom exercise, to be replaced)
+const random = (min, max = min) => {
+  max === min && (min = 0)
+  min = Math.ceil(min)
+  return Math.floor(Math.random() * (Math.floor(max) - min + 1)) + min
+}
+
+const rgbToHsl = rgbStr => {
+  const [r, g, b] = rgbStr.slice(4, -1).split(',').map(Number)
+  const max = Math.max(r, g, b)
+  const min = Math.min(r, g, b)
+  const l = (max + min) / ((0xff * 2) / 100)
+
+  if (max === min) return [0, 0, l]
+
+  const d = max - min
+  const s = (d / (l > 50 ? 0xff * 2 - max - min : max + min)) * 100
+  if (max === r) return [((g - b) / d + (g < b && 6)) * 60, s, l]
+  return max === g
+    ? [((b - r) / d + 2) * 60, s, l]
+    : [((r - g) / d + 4) * 60, s, l]
+}
+
+const prepareForDOM = ({ code }, server) => new Promise((s, f) => (server = http
+  .createServer(({ url, method }, response) => {
+    console.info(method + ' ' + url)
+    // Loading either the `index.html` or the js code (student solution)
+    response.setHeader('Content-Type', 'text/html')
+    return response.end(`<script type="module">${code}</script>`)
+  }))
+  .listen(PORT, async listenErr => {
+    if (listenErr) return f(listenErr)
+    try {
+      const browser = await puppeteer.launch(config)
+      const [page] = await browser.pages()
+      await page.goto(`http://localhost:${PORT}/index.html`)
+      deepStrictEqual.$ = async (selector, props) => {
+        const keys = Object.keys(props)
+        const extractProps = (node, props) => {
+          const fromProps = (a, b) => Object.fromEntries(Object.keys(b).map(k => [
+            k,
+            typeof b[k] === 'object' ? fromProps(a[k], b[k]) : a[k],
+          ]))
+          return fromProps(node, props)
+        }
+        const domProps = await page.$eval(selector, extractProps, props)
+        return deepStrictEqual(props, domProps)
+      }
+
+      deepStrictEqual.css = async (selector, props) => {
+        const cssProps = await page.evaluate((selector, props) => {
+          const styles = Object.fromEntries([...document.styleSheets]
+            .flatMap(({ cssRules }) => [...cssRules].map(r => [r.selectorText, r.style])))
+
+          if (!styles[selector]) {
+            throw Error(`css ${selector} did not match any declarations`)
+          }
+
+          return Object.fromEntries(Object.keys(props).map(k => [k, styles[selector][k]]))
+        }, selector, props)
+
+        return deepStrictEqual(props, cssProps)
+      }
+
+      browser
+        .defaultBrowserContext()
+        .overridePermissions(`http://localhost:${PORT}`, ['clipboard-read'])
+
+      s({ page, browser, random, rgbToHsl, eq: deepStrictEqual, server })
+    } catch (err) {
+      f(err)
+    }
+  }))
 
 const main = async () => {
   const { test, mode } = await any([
@@ -192,19 +293,22 @@ const main = async () => {
     readTest(joinPath(root, `${name}_test.mjs`)),
   ]).catch(ifNoEnt((err) => fatal(`Missing test for ${name}`)))
 
-  if (mode === "node") return runTests(await testNode({ test, name }))
-  if (mode === "inline") return runInlineTests({ json: test, name })
+  if (mode === "node") return runTests(await testNode())
+  if (mode === "inline") return runInlineTests({ json: test })
 
-  const { rawCode, code, path } = await loadAndSanitizeSolution(name)
+  const { rawCode, code, path } = await loadAndSanitizeSolution()
   const parts = test.split("// /*/ // ⚡")
   const [inject, testCode] = parts.length < 2 ? ["", test] : parts
   const combined = `${inject.trim()}\n${rawCode
     .replace(inject.trim(), "")
     .trim()}\n${testCode.trim()}\n`
 
+  // write to file and read file instead ?
   const b64 = Buffer.from(combined).toString("base64")
   const url = `data:text/javascript;base64,${b64}`
   return runTests({ path, code, url })
 }
 
-main().catch(err => fatal(err.stack))
+main().catch(err => {
+  fatal(err?.stack || Error('').stack)
+})
