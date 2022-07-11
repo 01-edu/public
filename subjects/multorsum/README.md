@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that receives a slice of int and and int representing the initial value. If the int is odd it should multiply the accumulated value. If it is even, it should be added instead. Return the result. If the slice is empty return 0.
+Write a function that receives a slice of int and an int representing the initial value. If the int is odd it should multiply the accumulated value. If it is even, it should be added instead. Return the result. If the slice is empty return 0.
 
 ### Expected function
 
