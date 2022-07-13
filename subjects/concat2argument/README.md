@@ -13,12 +13,10 @@ $ go run . | cat -e
 $
 $ go run . "Hello" "World!" | cat -e
 HelloWorld!$
-$ go run . 01 talent | cat -e
+$ go run . "01" "talent" | cat -e
 01talent$
-$ go run . " student " talented | cat -e
+$ go run . " student " "talented" | cat -e
  student talented$
 $ go run . "Hello" "student" "talented" "!" | cat -e
-$
-$ go run . Hello student talented ! | cat -e
 $
 ``` 
