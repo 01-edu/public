@@ -3,8 +3,8 @@
 ### Instructions
 
 Write a program that concatenates two arguments  and prints the result:
-- If the number of arguments is not 2, print (`'\n'`).
-- If the two arguments are empty returns (`'\n'`).  
+- If the number of arguments is not 2, return newline.
+- If the two arguments are empty return newline.  
 
 ### Usage
 
