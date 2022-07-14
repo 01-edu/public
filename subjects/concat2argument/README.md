@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Write a program that concatenates two arguments  and prints the result:
-- If the number of arguments is not 2, return newline.
-- If the two arguments are empty return newline.  
+Write a program that concatenates two arguments and prints the result:
+- If the number of arguments is not 2, return a newline.
+- If the two arguments are empty return a newline.  
 
 ### Usage
 
