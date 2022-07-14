@@ -3,11 +3,11 @@
 ### Instructions
 
 Write a program that takes 2 characters as arguments and does the following:
-- If the number of arguments are more than two arguments print newline.
-- If either of the characters is not a letter, return -1.
-- If both characters are the same case, return 1.
-- If both characters are letters but not the same case, return 0.
-- A newline character should follow all outputs.
+
+- If the number of arguments are more than two arguments return newline.
+- If either of the characters is not a letter, return -1 followed by a newline.
+- If both characters are the same case, return 1 followed by a newline.
+- If both characters are letters but not the same case, return 0 followed by a newline.
 - If the argument is more than one character or if it's empty, return a newline.
 
 ### Usage
