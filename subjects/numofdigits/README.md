@@ -2,8 +2,8 @@
 
 ### Instructions
 
-Write a function that returns the number of digits in a positive integer n.
-- if the number is negative returns 0.
+Write a function that returns the number of digits in a positive integer `n`.
+- if the number is negative returns `0`.
 
 ### Expected function
 
