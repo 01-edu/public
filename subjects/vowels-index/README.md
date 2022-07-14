@@ -21,8 +21,9 @@ package main
 import "fmt"
 
 func main() {
+	
+	res := []string{"student", "hello Iyan","bcdfgh", "wOrld", "","AAEO$o;jw"}
 
-	res := VowelsIndex("hello Iyan")
 	for _, i := range res {
 		fmt.Println(i)
 	}
@@ -31,11 +32,13 @@ func main() {
 
 ```
 And its output :
+
 ```console
 $ go run .
-1
-4
-6
-8
+[2 4]
+[1 4 6 8]
+[]
+[1]
+[]
 ```
     
