@@ -2,7 +2,7 @@
 
 ### Instructions
 
-write a function named `Unzipstring` that takes a string in form of a number and an alphabet (like 3w or 2m3e) then returns the original string (3w ==> www and 2m3e ==> mmeee).
+write a function named `Unzipstring` that takes a string in form of a number and an alphabet (like 3w or 2m3e) then returns a new string (3w ==> www and 2m3e ==> mmeee).
 
 - The number before the alphabet should be between 0 to 9. 
 - The one  alphabet after each number should be between a to z or A to Z.
