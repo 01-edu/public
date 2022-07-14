@@ -1,11 +1,11 @@
 ## CountStars
 
 ### Instructions
-Write a function called CountStars that counts the stars up to a number given as an argument.
+
+Write a function called `CountStars` that counts the stars up to a number given as an argument.
+
 - If the number is negative or equal to 0, return "`No stars`"
 - No need to manage overflow.
-
-The Library strconv is allowed.
 
 ### Expected Function
 
@@ -14,15 +14,15 @@ func CountStars(num int) string {
 
 }
 ```
+
 ### Usage
 
 Here is a possible program to test your function :
 
 ```go
-import (
-	"fmt"
-	"strconv"   
-)
+package main
+
+import "fmt"
 
 func main() {
 	fmt.Println(CountStars(5))
@@ -32,7 +32,6 @@ func main() {
 }
 ```
 And its output :
-
 
 ```console
 $ go run . 
