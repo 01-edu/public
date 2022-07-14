@@ -1,4 +1,4 @@
-## count-character
+## Count-Characters
 
 ### Instructions
 
@@ -11,7 +11,6 @@ Write a function that takes a string and a character as arguments and returns th
 
 ```go
 func CountChar(str string, c rune) int {
-    ...
 }
 ```
 
@@ -22,19 +21,16 @@ Here is a possible program to test your function:
 ```go
 package main
 
-    import (   
-        "fmt"
-        "piscine"
-    )
-import (   
-    "fmt"
-)
+import (
+  "fmt"
+  "piscine"
+  )
 
 func main() {
-    fmt.Println(CountChar("Hello World", 'l'))
-    fmt.Println(CountChar("5  balloons",5))
-    fmt.Println(CountChar("   ", ' '))
-    fmt.Println(CountChar("The 7 deadly sins", '7'))
+    fmt.Println(piscine.CountChar("Hello World", 'l'))
+    fmt.Println(piscine.CountChar("5  balloons",5))
+    fmt.Println(piscine.CountChar("     ", ' ')) //The first argument contains space and tabulation.
+    fmt.Println(piscine.CountChar("The 7 deadly sins", '7'))
 }
 ```
 
