@@ -2,18 +2,17 @@
 
 ### Instructions
 
-write a function named `Unzipstring` that takes a string in form of a number and printable character that is not a number and returns the original string.
+write a function named `Unzipstring` that takes a string in form of a number and an alphabet (like 3w or 2m3e) then returns the original string (3w ==> www and 2m3e ==> mmeee).
 
-- the number before the alphabet should be between 0 to 9 
-- The one  alphabet after each number should be  between a to z or A to Z
-- it can be two numbers or two alphabets in a row
-- if the Input string doesn't respect the format return `Invalid Input`
+- The number before the alphabet should be between 0 to 9. 
+- The one  alphabet after each number should be between a to z or A to Z.
+- It can't be two numbers or two alphabets in a row.
+- If the Input string doesn't respect the format return `Invalid Input`.
 
 ### Expected Function
 
 ```go
 func Unzipstring(s string) string {
-    //code here
 }
 ```
 
@@ -24,9 +23,7 @@ Here is a possible program to test your function:
 ```go
 package main
 
-import (
-    "fmt"
-)
+import "fmt"
 
 func main() {
     fmt.Println(Unzipstring("2f"))
@@ -47,8 +44,8 @@ And its output :
 $ go run .
 $ff
 $OOuuuuuHH
-$pppiiiiiiWWW
-$HHHHHaaaaaaaa
+$pppiiiiiiW
+$HHHHHHaaaaaaaa
 $pp;;;;ggggggg
 $Invalid Input
 $Invalid Input
