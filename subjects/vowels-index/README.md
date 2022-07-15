@@ -21,15 +21,11 @@ package main
 import "fmt"
 
 func main() {
-	
 	res := []string{"student", "hello Iyan","bcdfgh", "wOrld", "","AAEO$o;jw"}
-
 	for _, i := range res {
-		fmt.Println(i)
+		fmt.Println(VowelIdx(i))
 	}
-
 }
-
 ```
 And its output :
 
@@ -40,5 +36,6 @@ $ go run .
 []
 [1]
 []
+[0 1 2 3 5]
 ```
     
