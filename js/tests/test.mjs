@@ -3,6 +3,7 @@ import { join as joinPath, dirname, extname } from 'path'
 import { readFile, writeFile } from 'fs/promises'
 import { deepStrictEqual } from 'assert'
 import { fileURLToPath } from 'url'
+import { tmpdir } from 'os'
 import http from 'http'
 import fs from 'fs'
 
@@ -48,14 +49,9 @@ const eq = (a, b) => {
 const [solutionPath, name] = process.argv.slice(2)
 
 const tools = { eq, fail, wait, randStr, between, upperFirst }
-const cleanup = (exitCode = 0) => {
-  if (!tools.browser) process.exit(exitCode)
-  tools.server.close()
-  return tools.browser.close().finally(() => process.exit(exitCode))
-}
 const fatal = (...args) => {
   console.error(...args)
-  return cleanup(1)
+  process.exit(1)
 }
 
 solutionPath || fatal('missing solution-path, usage:\nnode test solution-path exercise-name')
@@ -119,7 +115,7 @@ const runInlineTests = async ({ json }) => {
   console.log = (...args) => logs.push(args)
   const die = (...args) => {
     logs.forEach((logArgs) => console.info(...logArgs))
-    return fatal(...args)
+    fatal(...args)
   }
 
   const solution = await loadAndSanitizeSolution()
@@ -189,12 +185,11 @@ const runTests = async ({ url, path, code }) => {
       }
     } catch (err) {
       console.info(`test #${i+1} failed:\n${t.toString()}\n`)
-      return fatal(stackFmt(err, url))
+      fatal(stackFmt(err, url))
     } finally {
       clearTimeout(timeout)
     }
   }
-  cleanup(0)
   console.info(`${name} passed (${tests.length} tests)`)
 }
 
@@ -303,12 +298,12 @@ const main = async () => {
     .replace(inject.trim(), "")
     .trim()}\n${testCode.trim()}\n`
 
-  // write to file and read file instead ?
-  const b64 = Buffer.from(combined).toString("base64")
-  const url = `data:text/javascript;base64,${b64}`
+  const url = `${tmpdir()}/${name}.mjs`
+  await writeFile(url, combined)
   return runTests({ path, code, url })
 }
 
-main().catch(err => {
-  fatal(err?.stack || Error('').stack)
-})
+main().then(
+  () => process.exit(0),
+  err => fatal(err?.stack || Error('').stack),
+)

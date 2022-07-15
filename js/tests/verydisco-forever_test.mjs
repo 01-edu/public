@@ -1,6 +1,4 @@
-import { readFile, mkdir } from 'fs/promises'
-import { join, resolve } from 'path'
-import { tmpdir } from 'os'
+import { readFile } from 'fs/promises'
 import { promisify } from 'util'
 import * as cp from 'child_process'
 
