@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function `ListFind` that returns the address of the first node in the list `l` that is determined to be equal to `ref` by the function `CompStr`.
+Write a function `ListFind` that returns the address of the data interface of the first node in the list `l` that is determined to be equal to `ref` by the function `CompStr`.
 
 - For this exercise the function `CompStr` must be used.
 
