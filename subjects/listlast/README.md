@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function `ListLast` that returns the last element of a linked list `l`.
+Write a function `ListLast` that returns the `Data` interface of the last element of a linked list `l`.
 
 ### Expected function and structure
 
