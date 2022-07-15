@@ -21,7 +21,6 @@ Here is a possible program to test your function :
 ```go
 package main
 
-
 func main() {
 	StrisNegative("585")
 	StrisNegative("-58")
