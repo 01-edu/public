@@ -14,6 +14,8 @@ func SortedListMerge(n1 *NodeI, n2 *NodeI) *NodeI {
 }
 ```
 
+> You have already defined the `NodeI` structure in the `listsort` exercise.
+
 ### Usage
 
 Here is a possible program to test your function :

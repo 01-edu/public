@@ -2,9 +2,11 @@
 
 ### Instructions
 
-Write a function `SortListInsert` that inserts `data_ref` in the linked list `l` while keeping the list sorted in ascending order.
+Create a function named `SortListInsert`, which accepts a pointer to the head of a _sorted_ linked list and an integer.
 
-- During the tests the list passed as an argument will be already sorted.
+The function should insert a new element into the list, with its `Data` set to the value of the integer. The element should be inserted so that the linked list remains sorted in ascending order by `Data`. The function should return the head of the list.
+
+Your function will only be tested with sorted linked lists.
 
 ### Expected function and structure
 
@@ -13,6 +15,8 @@ func SortListInsert(l *NodeI, data_ref int) *NodeI{
 
 }
 ```
+
+> You have already defined the `NodeI` structure in the `listsort` exercise.
 
 ### Usage
 

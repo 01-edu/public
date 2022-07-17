@@ -4,8 +4,6 @@
 
 Write a function `ListSort` that sorts the nodes of a linked list by ascending order.
 
-- The `NodeI` structure will be the only one used.
-
 ### Expected function and structure
 
 ```go
@@ -18,6 +16,8 @@ func ListSort(l *NodeI) *NodeI {
 
 }
 ```
+
+> You will use **this** `NodeI` structure in subsequent exercises.
 
 ### Usage
 
