@@ -296,7 +296,7 @@ const main = async () => {
   const [inject, testCode] = parts.length < 2 ? ["", test] : parts
   const combined = `${inject.trim()}\n${rawCode
     .replace(inject.trim(), "")
-    .trim()}\n${testCode.trim()}\n`
+    .trim()}\n;${testCode.trim()}\n`
 
   const url = `${tmpdir()}/${name}.mjs`
   await writeFile(url, combined)
