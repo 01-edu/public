@@ -47,10 +47,10 @@ And its output :
 
 ```console
 $ go run .
-1
+2
 6
 4
 -1
-10
+11
 $
 ```
