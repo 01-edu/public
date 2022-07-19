@@ -1,18 +1,6 @@
 export const tests = []
 
 tests.push(async ({ eq, page }) => {
-  // check the JS script has been linked
-  await eq.$('script', { type: 'module' })
-
-  // check the JS script has a valid src
-  const source = await page.$eval(
-    'script',
-    (node) => node.src.includes('.js') && node.src,
-  )
-  if (!source.length) throw Error('missing script src')
-})
-
-tests.push(async ({ eq, page }) => {
   // check the class 'eye-closed' has been added in the CSS
   eq.css('.eye-closed', {
     height: '4px',
