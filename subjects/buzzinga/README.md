@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function named `BuzZinga()` that takes a number as an argument, then  loop over it and prints the following:
+Write a function called BuzZinga() that takes a number as an argument, then loops over it and does the following for each iteration:
 - If the number is negative, print * followed by a newline.
 - If the number is divisible by 3, print Buz followed by a newline
 - If the number is divisible by 5, print Zinga followed by a newline
