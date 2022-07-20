@@ -11,15 +11,15 @@ tests.push(async ({ eq, page }) => {
 
 tests.push(async ({ eq, page }) => {
   // check the class of left eye before the JS is loaded
-  await page.setJavaScriptEnabled(false)
-  await page.reload()
+  // await page.setJavaScriptEnabled(false)
+  // await page.reload()
   await eq.$('p#eye-left', { className: 'eye' })
 })
 
 tests.push(async ({ eq, page }) => {
   // check the class of left eye has been updated after the JS is loaded
-  await page.setJavaScriptEnabled(true)
-  await page.reload()
+  // await page.setJavaScriptEnabled(true)
+  // await page.reload()
   await eq.$('p#eye-left', { className: 'eye eye-closed' })
 
   
