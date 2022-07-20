@@ -24,25 +24,25 @@ $ go run . --order 43a21
 $ go run .
 --insert
   -i
-    This flag inserts the string into the string passed as argument.
+         This flag inserts the string into the string passed as argument.
 --order
   -o
-    This flag will behave like a boolean, if it is called it will order the argument.
+         This flag will behave like a boolean, if it is called it will order the argument.
 $
 $ go run . -h
 --insert
   -i
-    This flag inserts the string into the string passed as argument.
+         This flag inserts the string into the string passed as argument.
 --order
   -o
-    This flag will behave like a boolean, if it is called it will order the argument.
+         This flag will behave like a boolean, if it is called it will order the argument.
 $
 $ go run . --help
 --insert
   -i
-    This flag inserts the string into the string passed as argument.
+         This flag inserts the string into the string passed as argument.
 --order
   -o
-    This flag will behave like a boolean, if it is called it will order the argument.
+         This flag will behave like a boolean, if it is called it will order the argument.
 $
 ```

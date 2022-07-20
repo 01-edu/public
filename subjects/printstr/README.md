@@ -30,7 +30,7 @@ And its output :
 
 ```console
 $ go run . | cat -e
-Hello World!%
+Hello World!
 $
 ```
 
