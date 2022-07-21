@@ -5,7 +5,7 @@ HTTP is the foundation of data communication for the World Wide Web. Hypertext d
 
 ### Instructions
 
-#### Server Part 
+#### Server
 
 The Client can be written in one of these languages [Go,C++,C...]
 
@@ -26,6 +26,7 @@ Server is Runing in http://[IP]:[PORT]
 - You must execute CGI based on certain file extensions [`.php`,`.py`,...]
 - You must use the enverement paramatre of cgi. 
 - Your server must receive a request from the browser and send a response using the HTTP header and body
+- Your server must call `select` function (or equivalent function) one time only
 
 here is an example of an HTTP request with `GET` method
 
@@ -45,10 +46,13 @@ HTTP/1.1 404 Not Found
 Date: Thu, 19 Jul 2022 10:36:20 GMT
 Server: Hserver/1.1.0
 ```
+> Stress tests your server. It must stay available at all cost. use this command to test it  `siege -b [IP]:[PORT]`
+	the availability should be up to 95.99
+	
 > Learn about  [CGI](https://en.wikipedia.org/wiki/Common_Gateway_Interface)
 
 
-#### Configurations Part 
+#### Configurations File
 
 This an example of a simple server configuration.
 ```
@@ -146,5 +150,5 @@ $ ./localhost -t WrongConfigFile.conf
 Localhost : the configuration file WrongConfigFile.conf syntax is not ok
 ```
 
-If you’ve got a question about one behavior, you should compare your
+> If you’ve got a question about one behavior, you should compare your
 program behavior with NGINX’s.
