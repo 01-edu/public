@@ -27,6 +27,7 @@ Server is Runing in http://[IP]:[PORT]
 - You must use the enverement paramatre of cgi. 
 - Your server must receive a request from the browser and send a response using the HTTP header and body
 - Your server must call `select` function (or equivalent function) one time only
+- You must manage chunked and unchunked request.
 
 here is an example of an HTTP request with `GET` method
 
