@@ -18,6 +18,7 @@ To change the alignment of the output it must be possible to use a **flag** `--a
 - justify
 
 - You must adapt your representation to the terminal size. If you reduce the terminal window the graphical representation should be adapted to the terminal size.
+- Only text that fits the terminal size will be tested.
 - The flag must have exactly the same format as above, any other formats must return the following usage message:
 
 ```console
