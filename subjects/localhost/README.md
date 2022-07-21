@@ -24,6 +24,7 @@ Server is Runing in http://[IP]:[PORT]
 - You must handle customization errors **(Binding error, default page error...)**
 - You must create error page at leat for [400,311,403,404,405,413]
 - You must execute CGI based on certain file extensions [`.php`,`.py`,...]
+- The `CGI` should be run in the correct directory for relative path file access.
 - You must use the enverement paramatre of cgi. 
 - Your server must receive a request from the browser and send a response using the HTTP header and body
 - Your server must call `select` function (or equivalent function) one time only
@@ -32,7 +33,6 @@ Server is Runing in http://[IP]:[PORT]
 here is an example of an HTTP request with `GET` method
 
 ```http
-
 GET /Welcome.html HTTP/1.1
 User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
 Host: www.01talent.com
