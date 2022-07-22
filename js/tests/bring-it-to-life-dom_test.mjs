@@ -21,7 +21,6 @@ tests.push(async ({ eq, page }) => {
   // await page.setJavaScriptEnabled(true)
   // await page.reload()
   await eq.$('p#eye-left', { className: 'eye eye-closed' })
-
   
   // check the background color of left eye has changed after the JS is loaded
   const eyeLeftBg = await page.$eval(
