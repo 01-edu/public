@@ -1,11 +1,11 @@
 ## StrisNegative
 
-Write a function named `StrisNegative()`hat defines whether a number is negative or positive.
+Write a function called `StrisNegative()` that defines whether a number is negative or positive.
 - Your function prints `P` if the number is positive
 - Your function prints `F` if the number is negative
 - If the number is zero, print `0`.
-- If it's not a number, print `('\n') `.
-- Your program should always print `('\n') ` at the end of the output.
+- If it's not a number, print `('\n')`.
+- Your program should always print `('\n')` at the end of the output.
 
 ### Expected function
 
@@ -41,4 +41,3 @@ N
 !
 !
 ```
-
