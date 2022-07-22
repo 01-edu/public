@@ -27,8 +27,8 @@ $ go run .  "a b c" | cat -e
 F$
 $ go run .  "   abc" | cat -e
 T$
-$ go run .  "    s"
+$ go run .  "    s" | cat -e
 T$
-$ go run .  "s    "
+$ go run .  "s    " | cat -e
 F$
 ```
