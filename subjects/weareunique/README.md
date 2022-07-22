@@ -4,7 +4,7 @@
 
 Write a function that takes two strings and returns the amount of characters that are not included in both without doubles.
 
-- If there is no unique charachters return -1.
+- If there is no unique charachters return 0.
 - If both strings are empty  or one of them return -1.
 
 
@@ -33,10 +33,12 @@ func main() {
 
 	arr := [][]string{
 		{"foo", "boo"},
+		{"",""},
 		{"abc", "def"},
 		{"hello", "yoall"},
 		{"everyone", ""},
 		{"hello world", "fam"},
+		{"pomme","pomme"}
 	}
 	for _, v := range arr {
 		fmt.Println(Weareunique(v[0], v[1]))
@@ -49,9 +51,11 @@ And its output :
 ```console
 $ go run .
 2
+-1
 6
 4
 -1
 11
+0
 $
 ```
