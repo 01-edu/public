@@ -29,7 +29,7 @@ Server is Runing in http://[IP]:[PORT]
 - Your server must receive a request from the browser and send a response using the HTTP header and body
 - Your server must call `select` function (or equivalent function) one time only
 - You must manage chunked and unchunked request.
-- You must manage http code, also redirections.
+- You must set the right status for each response
 
 here is an example of an HTTP request with `GET` method
 
