@@ -2,7 +2,8 @@
 
 ### Instructions
 
-Write a program that checks if an argument is sorted or not.
+Write a program that checks if an argument is sorted or not,the comparesion should be by index of ascii.
+
 - Your Program should return `T` followed by a newline (`'\n'`) if the argument is sorted.
 - Your Program should return `F` followed by a newline (`'\n'`) if the argument is not sorted.
 - If the number of arguments is not 2 do nothing.
@@ -26,4 +27,8 @@ $ go run .  "a b c" | cat -e
 F$
 $ go run .  "   abc" | cat -e
 T$
+$ go run .  "    s"
+T$
+$ go run .  "s    "
+F$
 ```
