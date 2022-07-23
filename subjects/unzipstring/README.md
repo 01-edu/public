@@ -10,7 +10,6 @@ The string will be formed by a number followed by a letter, and the purpose is t
     "2m3e" ==> mmee
 
 - The number before the letter must be between `0` and `9`.
-- The letter after each number must be between `a` and `z` or `A` and `Z`.
 - You cannot have two numbers or two letters in a row.
 - If the input string does not respect the format, return `Invalid Input`.
 
