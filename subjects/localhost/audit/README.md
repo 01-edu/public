@@ -31,39 +31,37 @@
 ##### Test the POST requests if it works well.
 ##### Test the DELETE requests if it works well.
 ##### Test the UNKNOWN requests, it should not work, but the server is not supposed to crash.
-##### For every test, there is a status code (RFC) that must be good
-##### upload some files to the server and get them back
+##### For every test, there is a status code (RFC) that must be respected.
+##### upload some files to the server and get them back.
 
 ### Check with a browser
 
-##### Use the reference browser of the team, open the network part of it, and try to connect to the server with it
-##### Look at the request header and response header
-##### It should be compatible with serving a fully static website
-##### Try a wrong URL on the server
-##### Try to list a directory
-##### Try a redirected URL
-##### Try things
+##### Use the reference browser of the team, open the network part of it, and try to connect to the server with it.
+##### Look at the request header and response header, It should be compatible with serving a fully static website.
+##### Try a wrong URL on the server.
+##### Try to list a directory.
+##### Try a redirected URL.
+##### Try logical things
 
 ### Cookies and session
 
-##### There's a working session and cookies system on the webserver.
+##### It should be a working session and cookies system on the webserver.
 
 ### Port issues
 
 ##### In the configuration file setup multiple ports and use different websites, use the browser to check that the configuration is working as expected, and show the right website.
 ##### In the configuration try to setup the same port multiple times. It should not work.
-##### Launch multiple servers at the same time with different configurations but with common ports. Is it working? If it is working, ask why the server should work if one of the configurations isn't working. keep going
+##### Launch multiple servers at the same time with different configurations but with common ports. Is it working? If it is working, ask why the server should work if one of the configurations isn't working?
 
 ### Siege & stress test
 
 ##### Use Siege to run some stress tests.
-##### Availability should be above 99.5% for a simple get on an empty page with a `siege -b [IP]:[PORT]` on that page
-##### Check if there is no memory leak (monitor the process memory usage it should not go up indefinitely)
-##### Check if there is no hanging connection
-##### You should be able to use siege indefinitely without restarting the server (look at siege -b)
+##### Availability should be above 99.5% for a simple get on an empty page with a `siege -b [IP]:[PORT]` on that page.
+##### Check if there is no memory leak (monitor the process memory usage it should not go up indefinitely).
+##### Check if there is no hanging connection.
+##### You should be able to use siege indefinitely without restarting the server (look at siege -b).
 
 ### Bonus Part
 
-##### There's more than one CGI system such as [Python, C++].
-##### Browse http://[IP]:[PORT] and check if the student set a home page
-##### The audite did set up wordpress page ? 
+##### There's more than one CGI system such as [Python, C++,Perle].
+##### Browse http://[IP]:[PORT] and check if the student set a  creative home page.
