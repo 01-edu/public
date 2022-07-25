@@ -30,7 +30,7 @@
 ##### Test the GET requests if it works well.
 ##### Test the POST requests if it works well.
 ##### Test the DELETE requests if it works well.
-##### Test the UNKNOWN requests if it should not work, but the server is not supposed to crash.
+##### Test the UNKNOWN requests, it should not work, but the server is not supposed to crash.
 ##### For every test, there is a status code (RFC) that must be good
 ##### upload some files to the server and get them back
 
