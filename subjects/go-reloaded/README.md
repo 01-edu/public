@@ -34,7 +34,8 @@ The tool you are about to build will receive as arguments the name of a file con
 
 ### Allowed packages
 
-- Only the [standard Go](https://golang.org/pkg/) packages are allowed
+- [Standard Go](https://golang.org/pkg/) packages are allowed.
+- Piscine-go.
 
 ### Usage
 
