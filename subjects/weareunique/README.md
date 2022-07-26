@@ -37,7 +37,7 @@ func main() {
 		{"hello", "yoall"},
 		{"everyone", ""},
 		{"hello world", "fam"},
-		{"pomme","pomme"}
+		{"pomme","pomme"},
 	}
 	for _, v := range arr {
 		fmt.Println(Weareunique(v[0], v[1]))
