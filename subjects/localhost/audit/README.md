@@ -63,5 +63,5 @@
 
 ### Bonus Part
 
-##### There's more than one CGI system such as [Python, C++,Perle].
-##### Browse http://[IP]:[PORT] and check if the student set a  creative home page.
+##### + There's more than one CGI system such as [Python, C++,Perle].
+##### + Browse http://[IP]:[PORT]/mysql.php and check if the student create a php page that can connect to a database
