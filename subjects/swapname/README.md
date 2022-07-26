@@ -23,4 +23,6 @@ $ go run . "Carl Jon Mic" | cat -e
 Error$
 $ go run . "ROB" | cat -e
 Error$
+$ go run . "ROB       FASEM" | cat -e
+FASEM ROB$
 ```
