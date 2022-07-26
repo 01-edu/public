@@ -7,11 +7,12 @@ HTTP is the foundation of data communication for the World Wide Web. Hypertext d
 
 #### Server
 
-The Client can be written in one of these languages [Go,C++,C...]
+The project can be written in one of these languages [Go,C++,C...]
 
 ```console
 $ ./localhost [CONFIG FILE]
-Server is Runing in http://[IP]:[PORT]
+Lisning on  [IP]:[PORT]
+Lisning on  [IP]:[PORT2]
 ```
 - Your server must not crash for any reason.
 - Any request to your server should never hang forever.
