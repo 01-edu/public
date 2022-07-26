@@ -16,19 +16,21 @@ And it's output should be:
 $ go run . | cat -e
 $ go run . a | cat -e
 T$
-$ go run . " 5ABc" | cat -e
-T$
 $ go run . "zA1" | cat -e
 F$
-$ go run . "01Talent" "student" | cat -e
-$ go run . "Hello World" | cat -e
-F$
-$ go run .  "a b c" | cat -e
-F$
-$ go run .  "   abc" | cat -e
+$ go run . " 5ABc" | cat -e
 T$
 $ go run .  "    s" | cat -e
 T$
 $ go run .  "s    " | cat -e
 F$
+$ go run .  "a b c" | cat -e
+F$
+$ go run .  "   abc" | cat -e
+T$
+$ go run . "2?@@^_\`abc" | cat -e
+T$
+$ go run . "Hello World" | cat -e
+F$
+$ go run . "01Talent" "student" | cat -e
 ```
