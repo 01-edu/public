@@ -50,7 +50,7 @@ $ff
 $OOuuuuuHH
 $pppiiiiiiW
 $HHHHHHaaaaaaaa
-$pp;;;;ggggggg
+$Invalid Input
 $Invalid Input
 $Invalid Input
 $Invalid Input
