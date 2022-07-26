@@ -9,6 +9,7 @@ The string will be formed by a number followed by a letter, and the purpose is t
     "3w" ==> www
     "2m3e" ==> mmee
 
+- The letter after each number must be between `a` and `z` or `A` and `Z`.
 - The number before the letter must be between `0` and `9`.
 - You cannot have two numbers or two letters in a row.
 - If the input string does not respect the format, return `Invalid Input`.
