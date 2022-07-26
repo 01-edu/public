@@ -4,7 +4,7 @@
 
 Write a function that takes two strings and returns the number of characters that are not included in both, without doubles.
 - If there is no unique charachters return 0.
-- If both strings are empty  or one of them return -1.
+- If both strings are empty return -1.
 
 ### Expected function
 
