@@ -7,7 +7,7 @@ Write a function called `BuzZinga()` that takes a number as an argument, then lo
 - If the number is divisible by 5, print `Zinga` followed by a newline
 - If the number is divisible by 3 and 5, print `BuzZinga` followed by a newline
 - If the number is negative or not divisible by 3 or 5, print `*` followed by a newline.
-- if the number is 0, print BuzZinga followed by a newline.
+- if the number is 0, print `BuzZinga` followed by a newline.
 
 ### Expected function
 
