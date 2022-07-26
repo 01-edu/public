@@ -6,7 +6,7 @@ Write a program that takes a first and last name as one argument and swaps them.
 - If there is more than one argument, nothing should be printed.
 - The argument should contain only alphabetic characters and spaces and only two words, if not, you have to print `"Error\n"`
 - The result must be followed with a new line at the end (`'\n'`).
-- Trim any extra space in the beginning or end of the string.
+- Trim any extra spaces in the string.
 
 ### Usage
 
