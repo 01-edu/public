@@ -154,7 +154,7 @@ you miss server_addr in server 3
 
 ###Bonus
 - Add multiple cgi
-- Create a php page and connect with a database [Mysql,PostgresSql...]
+- Create a php page and connect with a mysql database . the php page should named `mysql.php` and should be in the root path
 
 > If you’ve got a question about one behavior, you should compare your
 program behavior with NGINX’s.
