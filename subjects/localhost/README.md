@@ -115,7 +115,7 @@ server {
     listen                          5002;
     listen                          5003;
     server_address                  192.186.2.54;
-    server_name                     hello.com;
+    server_name                     01talent.com;
     ...
     ...
     ...
@@ -142,6 +142,7 @@ The Main Rules:
   - Define a directory or a file from where the file should be searched (for example, if URL /test is rooted to /usr/share, url /test/tmp/folder1/folder2 is /usr/share/test/tmp/folder1/folder2).
   - Turn on or off the directory listing.
   - Set a default file to answer if the request is a directory.
+  - No need to manage comment `#`
 
 to check the syntax of the config file you must run this : 
 
