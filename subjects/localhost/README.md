@@ -149,8 +149,12 @@ to check the syntax of the config file you must run this :
 $ ./localhost -t GoodConfigFile.conf
 Localhost : the configuration file GoodConfigFile.conf syntax is ok
 $ ./localhost -t WrongConfigFile.conf
-Localhost : the configuration file WrongConfigFile.conf syntax is not ok
+you miss server_addr in server 3
 ```
+
+###Bonus
+- Add multiple cgi
+- Create a php page and connect with a database [Mysql,PostgresSql...]
 
 > If you’ve got a question about one behavior, you should compare your
 program behavior with NGINX’s.
