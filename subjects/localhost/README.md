@@ -154,7 +154,7 @@ $ ./localhost -t WrongConfigFile.conf
 you miss server_addr in server 3
 ```
 
-###Bonus
+### Bonus
 - Add multiple cgi
 - Create a php page and connect with a mysql database . the php page should named `mysql.php` and should be in the root path
 
