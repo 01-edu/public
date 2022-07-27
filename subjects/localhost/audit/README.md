@@ -8,7 +8,7 @@
 ###### Ask if they use only one select (or equivalent) and how they've managed the server accept and the client read/write.
 ###### There should be only one read or one write per client per select (or equivalent). Ask to show you the code that goes from the select (or equivalent) to the read and write of a client.
 ###### Search for all [read,recv,write,send] and check if the returned value is well checked. (checking only -1 or 0 is not good you should check both)
-###### Check return value for O/I functions [read,recv,write,send] . is the auditee checking for `-1` and `0` at the same time. 
+###### Check return value for O/I functions [read,recv,write,send] . is the audite checking for `-1` and `0` at the same time. 
 ###### Writing or reading ANY file descriptor without going through the select (or equivalent) is strictly 
 
 ### Configuration
