@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function called `printfirsthalf()` that takes a string as an argument and prints the first half, 
+Write a function called `Printfirsthalf()` that takes a string as an argument and prints the first half, 
 If the length of the string is odd round it down.
 
 - Prints the first half followed by newline `\n`.
