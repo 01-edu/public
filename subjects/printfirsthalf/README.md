@@ -2,11 +2,11 @@
 
 ### Instructions
 
-Write a function called `printfirsthalf()` that takes a string as an argument and prints the first half, 
-If the length of the string is odd round it down.
+Write a function called `printfirsthalf()` that takes a string as an argument and prints the first half; if the length of the string is odd, round it down.
 
 - Prints the first half followed by newline `\n`.
-- if the string is empty retun `Invalid Output`.
+- if the string is empty, return `Invalid Output`, followed by newline `\n`.
+- If the string's length equals one, return it, followed by newline`\n`.
 
 ### Expected function
 
