@@ -23,9 +23,9 @@ Lisning on  [IP]:[PORT2]
 - You can use `NGINX` to compare headers and answer behaviors with your server
 - You must manage at least [`GET`, `POST`, `DELETE`] methods.
 - You must handle customization errors **(Binding error, default page error...)**
-- You must create error page at leat for [400,311,403,404,405,413]
-- You must execute CGI based on certain file extensions [`.php`,`.py`,...]
-- The `CGI` should be run in the correct directory for relative path file access.
+- You must create error page at least for [400,311,403,404,405,413]
+- You must execute CGI based on certain file extensions such us [`.php`,`.py`,...]
+- The `CGI` should run in the correct directory for relative path file access.
 - You must use the enverement paramatre of cgi. 
 - Your server must receive a request from the browser and send a response using the HTTP header and body
 - Your server must call `select` function (or equivalent function) one time only
