@@ -14,5 +14,4 @@ $ go run . quest8.txt main.go
 Too many arguments
 $ go run . quest8.txt
 Almost there!!
-$
 ```
