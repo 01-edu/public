@@ -7,21 +7,20 @@
 - The function can return the numbers in any order.
 
 - The number must be separated by a comma and a space.
- 
+
 - If any of the arguments is bigger than 99 or less than 0, the function returns `"invalid"` followed by a newline (`'\n'`).
 
-- Add `0` at the first of any number if it is less than 10.  
+- Add `0` at the first of any number if it is less than 10.
 
 - Add a new line (`'\n'`) at the end of the string.
 
-
 ### Expected function
+
 ```go
 func FromTo(from int, to int) string {
 
 }
 ```
-
 
 ### Usage
 
@@ -41,6 +40,7 @@ func main() {
     fmt.Println(FromTo(100, 10))
 }
 ```
+
 And its output :
 
 ```console
