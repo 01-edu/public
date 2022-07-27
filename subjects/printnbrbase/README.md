@@ -1,4 +1,4 @@
-## putnbrbase
+## printnbrbase
 
 ### Instructions
 
