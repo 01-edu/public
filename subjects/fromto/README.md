@@ -34,10 +34,10 @@ import (
 )
 
 func main() {
-	fmt.Println(FromTo(1, 10))
-    fmt.Println(FromTo(10, 1))
-    fmt.Println(FromTo(10, 10))
-    fmt.Println(FromTo(100, 10))
+	fmt.Print(FromTo(1, 10))
+	fmt.Print(FromTo(10, 1))
+	fmt.Print(FromTo(10, 10))
+	fmt.Print(FromTo(100, 10))
 }
 ```
 
