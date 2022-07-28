@@ -12,7 +12,7 @@ If the length of the string is odd round it down.
 ### Expected function
 
 ```go
-func printfirsthalf(str string) string {
+func PrintFirstHalf(str string) string {
 }
 ```
 
@@ -28,9 +28,9 @@ import (
 )
 
 func main() {
-    PrintFirstHalf("This is the 1st halfThis is the 2nd half")
-    PrintFirstHalf("")
-    PrintFirstHalf("Hello World")
+    fmt.Print(PrintFirstHalf("This is the 1st halfThis is the 2nd half"))
+    fmt.Print(PrintFirstHalf(""))
+    fmt.Print(PrintFirstHalf("Hello World"))
 }
 ```
 
