@@ -6,7 +6,8 @@ Write a function called `Printfirsthalf()` that takes a string as an argument an
 If the length of the string is odd round it down.
 
 - Prints the first half followed by newline `\n`.
-- if the string is empty retun `Invalid Output`.
+- if the string is empty, return `Invalid Output`, followed by newline `\n`.
+- If the string's length equals one, return it, followed by newline`\n`.
 
 ### Expected function
 
