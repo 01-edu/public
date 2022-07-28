@@ -30,7 +30,7 @@ func main() {
 	fmt.Println(StringToBool("True"))
 	fmt.Println(StringToBool("T"))
 	fmt.Println(StringToBool("False"))
-	fmt.Println(StringToBool("Wrong"))
+	fmt.Println(StringToBool("TTFF"))
 }
 ```
 
