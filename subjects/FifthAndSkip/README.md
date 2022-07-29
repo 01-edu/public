@@ -5,7 +5,7 @@
 Write a function `FifthAndSkip()` that takes a string and returns another one with words of 5 characters and skips the next character followed by newline `\n`. 
 
 - If there is a space in the middle of a word it should ignore it and get the first character until getting to a length of 5.
-- If the string less than 5 characters returns "Invalid Output"
+- If the string less than 5 characters returns "Invalid Output\n"
 
 ### Expected function
 
