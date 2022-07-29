@@ -15,6 +15,7 @@ tests.push(async ({ eq, page }) => {
   // await page.reload()
   // await eq.$('p#eye-left', { className: 'eye' })
 // })
+// adding a comment to trigger a pull for testing
 
 tests.push(async ({ eq, page }) => {
   // check the class of left eye has been updated after the JS is loaded
