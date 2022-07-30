@@ -28,9 +28,9 @@ import (
 )
 
 func main() {
-    fmt.Print(PrintFirstHalf("This is the 1st halfThis is the 2nd half"))
-    fmt.Print(PrintFirstHalf(""))
-    fmt.Print(PrintFirstHalf("Hello World"))
+    PrintFirstHalf("This is the 1st halfThis is the 2nd half")
+    PrintFirstHalf("")
+    PrintFirstHalf("Hello World")
 }
 ```
 
