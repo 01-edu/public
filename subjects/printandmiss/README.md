@@ -6,7 +6,7 @@ Write a function called `PrintAndMiss()` that takes a string and an integer and 
 
 - Prints the first half followed by newline `\n`.
 - If the string is empty retun `Invalid Output`.
-- If the integer is `0`  return the string followed by a newline `\n`.
+- If the integer is `0` ot it's negative return the string followed by a newline `\n`.
 
 
 ### Expected function
@@ -32,6 +32,7 @@ func main() {
     fmt.PrintAndMiss("", 3)
     fmt.PrintAndMiss("hello you all ! ", 2)
     fmt.PrintAndMiss("what is your name?", 0)
+    fmt.PrintAndMiss("go Exercise Print and Miss", -5)
 }
 ```
 
@@ -44,4 +45,5 @@ abcghimnostuz$
 Invalid Output$
 heo u ll $
 what is your name?$
+Invalid Output$
 ```
