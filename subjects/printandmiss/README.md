@@ -27,12 +27,12 @@ import (
 )
 
 func main() {
-	fmt.Print(PrintAndMiss("123456789", 3))
-	fmt.Print(PrintAndMiss("abcdefghijklmnopqrstuvwyz", 3))
-	fmt.Print(PrintAndMiss("", 3))
-	fmt.Print(PrintAndMiss("hello you all ! ", 0))
-	fmt.Print(PrintAndMiss("what is your name?", 0))
-	fmt.Print(PrintAndMiss("go Exercise Print and Miss", -5))
+	PrintAndMiss("123456789", 3))
+	PrintAndMiss("abcdefghijklmnopqrstuvwyz", 3))
+	PrintAndMiss("", 3))
+	PrintAndMiss("hello you all ! ", 0))
+	PrintAndMiss("what is your name?", 0))
+	PrintAndMiss("go Exercise Print and Miss", -5))
 }
 ```
 
