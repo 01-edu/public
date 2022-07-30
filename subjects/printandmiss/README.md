@@ -27,12 +27,12 @@ import (
 )
 
 func main() {
-    fmt.PrintAndMiss("123456789", 3)
-    fmt.PrintAndMiss("abcdefghijklmnopqrstuvwyz", 3)
-    fmt.PrintAndMiss("", 3)
-    fmt.PrintAndMiss("hello you all ! ", 2)
-    fmt.PrintAndMiss("what is your name?", 0)
-    fmt.PrintAndMiss("go Exercise Print and Miss", -5)
+	fmt.Print(PrintAndMiss("123456789", 3))
+	fmt.Print(PrintAndMiss("abcdefghijklmnopqrstuvwyz", 3))
+	fmt.Print(PrintAndMiss("", 3))
+	fmt.Print(PrintAndMiss("hello you all ! ", 0))
+	fmt.Print(PrintAndMiss("what is your name?", 0))
+	fmt.Print(PrintAndMiss("go Exercise Print and Miss", -5))
 }
 ```
 
@@ -43,7 +43,7 @@ $ go run . | cat -e
 123789$
 abcghimnostuz$
 Invalid Output$
-heo u ll $
+hello you all ! $
 what is your name?$
 Invalid Output$
 ```
