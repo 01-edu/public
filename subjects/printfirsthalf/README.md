@@ -23,10 +23,6 @@ Here is a possible program to test your function:
 ```go
 package main
 
-import (
-	"fmt"
-)
-
 func main() {
     PrintFirstHalf("This is the 1st halfThis is the 2nd half")
     PrintFirstHalf("")
