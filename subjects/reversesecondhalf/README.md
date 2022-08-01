@@ -21,9 +21,7 @@ Here is a possible program to test your function:
 ```go
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
     fmt.Print(ReverseSecondHalf("This is the 1st half This is the 2nd half"))
