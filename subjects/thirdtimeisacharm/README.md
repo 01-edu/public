@@ -27,10 +27,10 @@ import (
 )
 
 func main() {
-    ThirdTimeIsACharm("123456789")
-    ThirdTimeIsACharm("")
-    ThirdTimeIsACharm("a b c d e f") //all spaces
-    ThirdTimeIsACharm("12")
+    fmt.Print(ThirdTimeIsACharm("123456789"))
+    fmt.Print(ThirdTimeIsACharm(""))
+    fmt.Print(ThirdTimeIsACharm("a b c d e f")) //all spaces
+    fmt.Print(ThirdTimeIsACharm("12"))
 
 }
 ```
