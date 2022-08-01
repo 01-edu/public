@@ -26,9 +26,9 @@ import (
 )
 
 func main() {
-   FifthAndSkip("abcdefghijklmnopqrstuwxyz"))
-   FifthAndSkip("This is a short sentence"))
-    FifthAndSkip("1234"))
+    fmt.Print(FifthAndSkip("abcdefghijklmnopqrstuwxyz"))
+    fmt.Print(FifthAndSkip("This is a short sentence"))
+    fmt.Print(FifthAndSkip("1234"))
 }
 ```
 
