@@ -27,10 +27,10 @@ import (
 )
 
 func main() {
-    WordFlip("First second last")
-    WordFlip("")
-    WordFlip("     ") //all spaces
-    WordFlip(" hello  all  of  you! ")
+    fmt.Print(WordFlip("First second last"))
+    fmt.Print(WordFlip(""))
+    fmt.Print(WordFlip("     ")) //all spaces
+    fmt.Print(WordFlip(" hello  all  of  you! "))
 
 }
 ```
