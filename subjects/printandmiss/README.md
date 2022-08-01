@@ -1,4 +1,4 @@
-# PrintAndMiss
+## PrintAndMiss
 
 ### Instructions
 
@@ -17,7 +17,7 @@ func PrintAndMiss(arg string, loop int) string {
 ```
 ### Usage
 
-Here is a possible program to test your function:
+Here is a possible program to test your function :
 
 ```go
 package main
@@ -27,12 +27,12 @@ import (
 )
 
 func main() {
-	PrintAndMiss("123456789", 3))
-	PrintAndMiss("abcdefghijklmnopqrstuvwyz", 3))
-	PrintAndMiss("", 3))
-	PrintAndMiss("hello you all ! ", 0))
-	PrintAndMiss("what is your name?", 0))
-	PrintAndMiss("go Exercise Print and Miss", -5))
+	fmt.Print(PrintAndMiss("123456789", 3))
+ 	fmt.Print(PrintAndMiss("abcdefghijklmnopqrstuvwyz", 3))
+ 	fmt.Print(PrintAndMiss("", 3))
+ 	fmt.Print(PrintAndMiss("hello you all ! ", 0))
+ 	fmt.Print(PrintAndMiss("what is your name?", 0))
+ 	fmt.Print(PrintAndMiss("go Exercise Print and Miss", -5))
 }
 ```
 
