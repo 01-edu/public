@@ -13,7 +13,7 @@ This function receives a number `n` and returns the `n`th number in the fibonacc
 
 The Fibonacci Series starts like this: 0, 1, 1, 2, 3, 5, 8, 13 etc...
 
-### Usag
+### Usage
 
 Here is a possible test for your function:
 
