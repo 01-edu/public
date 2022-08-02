@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that takes a slice of strings and returns a single string containing them in reverse order with a space between each element of the slice,if the slice is empty, return an empty string.
+Write a function that takes a slice of strings and returns a single string containing them in reverse order with a space between each element of the slice.If the slice is empty, return an empty string.
 
 ### Expected function
 
