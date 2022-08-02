@@ -23,11 +23,11 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(Not_decimal(0.1))
-	fmt.Println(Not_decimal(1.2))
-	fmt.Println(Not_decimal(0.15))
-	fmt.Println(Not_decimal(1.256))
-	fmt.Println(Not_decimal(0.00009))
+	fmt.Println(Not_decimal("0.1"))
+	fmt.Println(Not_decimal("1.2"))
+	fmt.Println(Not_decimal("0.15"))
+	fmt.Println(Not_decimal("1.256"))
+	fmt.Println(Not_decimal("0.00009"))
 }
 ```
 And its output :
