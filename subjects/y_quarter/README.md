@@ -26,10 +26,10 @@ import "fmt"
 func main() {
 	fmt.Println(Y_quarter(2))
 	fmt.Println(Y_quarter(5))
-    fmt.Println(Y_quarter(8))
-    fmt.Println(Y_quarter(11))
-    fmt.Println(Y_quarter(13))
-    fmt.Println(Y_quarter(-5))
+	fmt.Println(Y_quarter(8))
+	fmt.Println(Y_quarter(11))
+	fmt.Println(Y_quarter(13))
+	fmt.Println(Y_quarter(-5))
 }
 ```
 And its output :
