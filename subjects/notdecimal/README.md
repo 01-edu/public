@@ -10,7 +10,7 @@ Write a function called `Not_decimal()` that takes a float number with the decim
 ### Expected function
 
 ```go
-func Not_decimal(month int) int {
+func Not_decimal(month float64) int {
 }
 ```
 ### Usage
