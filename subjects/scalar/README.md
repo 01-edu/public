@@ -15,7 +15,7 @@ Create the following **functions**, which each accept two parameters:
 
 
 ```rust
-pub fn sum(a: X , b: X) -> X {
+pub fn sum(a: X, b: X) -> X {
 
 }
 
