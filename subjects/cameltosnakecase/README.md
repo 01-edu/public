@@ -3,7 +3,7 @@
 ### Instructions
 Write a function that converts a string from `camelCase` to `snake_case`.
 
-Lower camel case is the practice of writing phrases without spaces or punctuation, it indicates the separation of two words with a single capitalized letter. Snake case is a style of writing in which each space is replaced by an underscore (_) character.
+Lower camel case is the practice of writing phrases without spaces or punctuation, it indicates the separation of one word or more with a single capitalized letter between each word except the first one. Snake case is a style of writing in which each space is replaced by an underscore (_) character.
 
 Here are some rules for you to follow:
 
@@ -11,14 +11,14 @@ Here are some rules for you to follow:
 - If the string is not `camelCase`, return the string unchanged.
 - If the string is `camelCase`, return the `snake_case` version of the string.
 
-Basic `Lower camelCase` Capitalization Rules:
+Basic `lowerCamelCase` Capitalization Rules:
 
 - The first letter should be lower case.
-- The word must have only one capitalized letter (camelCase). 
 - No numbers or punctuations are allowed in the word at any place (camelCase1).
 
 
 ### Expected function 
+
 ```go
 func CamelToSnakeCase(s string) string{
     //Your code here
@@ -50,7 +50,7 @@ $ go run .
 HelloWorld
 hello_World
 camel_Case
-camelToSnakeCase
+camel_To_Snake_Case
 132322
 ```
 
