@@ -12,7 +12,7 @@ Write a function called `Not_decimal()` that takes a string in forme of a float 
 ### Expected function
 
 ```go
-func Not_decimal(dec string) int {
+func Not_decimal(dec string) string {
 }
 ```
 ### Usage
