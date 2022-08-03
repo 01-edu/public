@@ -40,7 +40,7 @@ fn main() {
             vec!["X", "#", "X"]
         ])
     );
-    // "Tie"
+
     println!(
         "{:?}",
         tic_tac_toe(vec![
@@ -49,7 +49,6 @@ fn main() {
             vec!["#", "O", "X"]
         ])
     );
-    // "player O won"
 
     let dig = vec![
             vec!["O", "O", "X"],
@@ -58,7 +57,6 @@ fn main() {
         ];
 
     println!("{:?}",tic_tac_toe(dig));
-    // "player X won"
 }
 ```
 
