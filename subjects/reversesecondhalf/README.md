@@ -1,10 +1,10 @@
-# ReverseSecondHalf
+# reversesecondhalf
 
 ### Instructions
 Write a function `ReverseSecondHalf()` that takes a string as an argument and prints the second half reversed. If the length of the string is odd, round it up.
 
 - Prints the second half reversed followed by newline `\n`.
-- if the string is empty, return `Invalid Output`.
+- If the string is empty, return `Invalid Output`.
 - If the string's length equals one, return it, followed by newline `\n`.
 
 ### Expected function
@@ -16,7 +16,7 @@ func ReverseSecondHalf(str string) string {
 
 ### Usage
 
-Here is a possible program to test your function:
+Here is a possible program to test your function :
 
 ```go
 package main
