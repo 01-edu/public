@@ -1,4 +1,4 @@
-## string-to-bool
+## stringtobool
 
 ### Instructions
 
