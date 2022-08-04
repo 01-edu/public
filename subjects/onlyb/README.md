@@ -2,15 +2,15 @@
 
 ### Instructions
 
-Write a program that displays a `b` character on the standard output. (and nothing else)
+Write a program that displays a `B` character on the standard output. (and nothing else)
 
 ### Usage
 
 ```console
 $ go run .
-b
+B
 $ go run . "a" "b"
-b
+B
 $ go run . "a" "b" "c"
-b
+B
 ```
