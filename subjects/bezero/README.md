@@ -1,4 +1,4 @@
-## be-zero
+## bezero
 
 ### Instructions
 
