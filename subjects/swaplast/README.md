@@ -1,4 +1,4 @@
-## swap-last
+## swaplast
 
 ### Instructions
 
