@@ -8,9 +8,9 @@ Write a program that displays an `f` character on the standard output. (and noth
 
 ```console
 $ go run .
-a
+f
 $ go run . "a" "b"
-a
+f
 $ go run . "a" "b" "c"
-a
+f
 ```
