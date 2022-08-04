@@ -1,4 +1,4 @@
-## half-slice
+## halfslice
 
 ### Instructions
 
