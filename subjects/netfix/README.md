@@ -6,7 +6,7 @@ Imagine there was a place in which you could ask someone to fix your bidet and a
 
 This website is still in the creation process, so not all features are available. You are going to implement some of the missing features.
 
-You should also know that the website is being created in Django, a Python framework for web development. You can learn more about this framework in its own [website](https://www.djangoproject.com/). Yes, you will be messing around with Python, so be aware of the indentation.
+You should also know that the website is being created in Django, a Python framework for web development. You can learn more about this framework in its own [website](https://www.djangoproject.com/). Yes, you will be messing around with Python, so be aware of the indentation. Also, you will need to know that this project was build in the version `v3.1.14` of Django, so if you have problems to run this project, please check your current version of Django and make the necessary changes in order to get the project to run.
 
 ### Instructions
 
