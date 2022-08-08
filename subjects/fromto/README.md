@@ -3,15 +3,18 @@
 ### Instructions
 
 - Write a function that takes two `integers` and returns a string representing the range of numbers from the first to the second.
-
 - The function can return the numbers in any order.
-
 - The number must be separated by a comma and a space.
+<<<<<<< HEAD
 
 - If any of the arguments is bigger than 99 or less than 0, the function returns `"invalid"` followed by a newline (`'\n'`).
 
 - Add `0` at the first of any number if it is less than 10.
 
+=======
+- If any of the arguments is bigger than 99 or less than 0, the function returns `"invalid"` followed by a newline (`'\n'`).
+- Add `0` at the first of any number if it is less than 10.  
+>>>>>>> docs(fromto):delete space
 - Add a new line (`'\n'`) at the end of the string.
 
 ### Expected function
