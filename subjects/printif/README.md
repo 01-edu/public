@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a function  `PrintIf()` that takes a string in the parameter and prints`G` followed bye newline if the argument length is more than 3; otherwise, print `\n`.
+Create a function  `PrintIf()` that takes a string in the parameter and prints`G` followed bye newline if the argument length is more than 3; otherwise, print "Invalid Output\n".
 
 - If it's an empty string returns "Invalid Output\n"
 
@@ -38,6 +38,6 @@ And its output :
 $ go run . | cat -e
 G$
 G$
-$
+Invalid Output$
 Invalid Output$
 ```
