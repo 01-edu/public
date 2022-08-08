@@ -32,9 +32,7 @@ Here is a possible program to test your function :
 ```go
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
 	fmt.Print(FromTo(1, 10))
