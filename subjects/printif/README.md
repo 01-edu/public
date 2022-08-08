@@ -27,7 +27,7 @@ import (
 func main() {
     fmt.Print(PrintIf("abcdefz"))
     fmt.Print(PrintIf("T2d97d1"))
-    fmt.Print(PrintIf("14"))
+    fmt.Print(PrintIf(""))
     fmt.Print(PrintIf("14"))
 }
 ```
