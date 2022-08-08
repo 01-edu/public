@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Create a function  `PrintIf()` that takes a string in the parameter and prints`G` followed bye newline if the argument length is more than 3; otherwise, print "Invalid Output\n".
+Create a function  `PrintIf()` that takes a string in the parameter and prints`G` followed by a newline if the argument length is more than 3; otherwise, print "Invalid Output\n".
 
-- If it's an empty string returns "Invalid Output\n"
+- If it's an empty string returns "Invalid Output\n".
 
 ### Expected function
 
