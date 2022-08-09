@@ -24,9 +24,9 @@ Here is a possible program to test your function:
 package main
 
 func main() {
-    fmt.Print(FirstHalf("This is the 1st halfThis is the 2nd half"))
-    fmt.Print(FirstHalf(""))
-    fmt.Print(FirstHalf("Hello World"))
+    fmt.Print(PrintFirstHalf("This is the 1st halfThis is the 2nd half"))
+    fmt.Print(PrintFirstHalf(""))
+    fmt.Print(PrintFirstHalf("Hello World"))
 }
 ```
 
