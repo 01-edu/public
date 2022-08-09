@@ -61,7 +61,7 @@ fi
 EOF
 
 # Basic packages
-apt-get -y install man bash-completion git ufw jq curl build-essential netcat wget psmisc lz4 file net-tools brotli unzip zip moreutils xauth sysfsutils rsync iperf pv tree mc screen ssh iotop whois sudo
+apt-get -y install man bash-completion git ufw jq curl build-essential netcat wget psmisc lz4 file net-tools brotli unzip zip moreutils dnsutils fail2ban xauth sysfsutils rsync iperf pv tree mc screen ssh iotop whois sudo
 
 # Enable time synchronization
 timedatectl set-ntp true
@@ -89,8 +89,12 @@ touch /root/.Xauthority
 ufw allow in 80/tcp
 ufw allow in 443/tcp
 ufw allow in 521/tcp
+ufw allow in 8080/tcp
+ufw allow in 8082/tcp
 ufw logging off
 ufw --force enable
+ufw --force delete 4
+ufw --force delete 4
 ufw --force delete 4
 ufw --force delete 4
 ufw --force delete 4
