@@ -1,4 +1,4 @@
-# WordFlip
+# wordflip
 
 ### Instructions
 
