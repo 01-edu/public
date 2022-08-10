@@ -6,7 +6,7 @@ Write a function `ThirdTimeIsACharm` that takes a string and returns another str
 
 - Prints the output followed by newline `\n`.
 - If the string is empty, return newline `\n`.
-- If there is no third character, return newline `\n.
+- If there is no third character, return newline `\n`.
 
 ### Expected function
 
