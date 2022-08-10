@@ -3,7 +3,7 @@
 
 ### Instructions
 
-- Write a function that receives two slices of int as arguments and returns a new one with the result of alternating the values of each in reverse order.
+Write a function that receives two slices of int as arguments and returns a new one with the result of alternating the values of each in reverse order.
 - The input slices may be of different lengths.
 - The new slice should contain the elements of the larger slice first and then the elements of the smaller slice.
 - If the slices are of equal length, the new slice should contain the elements of the first slice first and then the elements of the second slice.
@@ -30,8 +30,8 @@ import (
 
 func main() {
 	fmt.Println(RevConcatAlternate([]int{1,2,3},[]int{4,5,6}))
-    fmt.Println(RevConcatAlternate([]int{1,2,3},[]int{4,5,6,7,8,9}))
-    fmt.Println(RevConcatAlternate([]int{1,2,3},[]int{}))
+	fmt.Println(RevConcatAlternate([]int{1,2,3},[]int{4,5,6,7,8,9}))
+	fmt.Println(RevConcatAlternate([]int{1,2,3},[]int{}))
 }
 ```
 
