@@ -2,7 +2,7 @@
 
 ### Instructions
 
-- Write a function that prints one by one the characters of a `string` on the screen. The output must be followed by a new line at the end.
+- Write a function that prints one by one the characters of a `string` on the screen.
 
 ### Expected function
 
@@ -30,7 +30,7 @@ And its output :
 
 ```console
 $ go run . | cat -e
-Hello World!$
+Hello World!
 $
 ```
 
