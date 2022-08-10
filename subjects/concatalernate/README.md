@@ -30,8 +30,8 @@ import (
 
 func main() {
 	fmt.Println(ConcatAlternate([]int{1,2,3},[]int{4,5,6}))
-    fmt.Println(ConcatAlternate([]int{1,2,3},[]int{4,5,6,7,8,9}))
-    fmt.Println(ConcatAlternate([]int{1,2,3},[]int{}))
+	fmt.Println(ConcatAlternate([]int{1,2,3},[]int{4,5,6,7,8,9}))
+	fmt.Println(ConcatAlternate([]int{1,2,3},[]int{}))
 }
 ```
 
