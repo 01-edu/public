@@ -4,7 +4,7 @@
 
 Write a function `ThirdTimeIsACharm` that takes a string and returns another string with every third character.
 
-- Prints the Output followed by newline `\n`.
+- Prints the output followed by newline `\n`.
 - If the string is empty, return newline `\n`.
 - If there is no third character, return newline `\n.
 
@@ -27,9 +27,8 @@ import "fmt"
 func main() {
     fmt.Print(ThirdTimeIsACharm("123456789"))
     fmt.Print(ThirdTimeIsACharm(""))
-    fmt.Print(ThirdTimeIsACharm("a b c d e f")) //all spaces
+    fmt.Print(ThirdTimeIsACharm("a b c d e f")) 
     fmt.Print(ThirdTimeIsACharm("12"))
-
 }
 ```
 
