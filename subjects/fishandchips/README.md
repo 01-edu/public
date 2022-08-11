@@ -1,8 +1,8 @@
-## Fishandchips
+## fishandchips
 
 ### Instructions
 
-Write a function called `Fishandchips()` Write a function that takes an integer and returns a string.
+Write a function called `Fishandchips` that takes an integer and returns a string.
 
 - If the number is divisible by 3, print `chips` followed by a newline `\n`.
 - If the number is divisible by 2 and 3, print `fish and chips` followed by a newline `\n`.
