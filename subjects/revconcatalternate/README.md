@@ -1,5 +1,4 @@
-## Reverse-Concat-Alternate
-
+## reverseconcatalternate
 
 ### Instructions
 
