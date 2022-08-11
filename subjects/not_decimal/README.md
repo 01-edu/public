@@ -1,13 +1,12 @@
-## Not_decimal
+## not_decimal
 
 ### Instructions
 
-Write a function called `Not_decimal()` that takes a string in forme of a float number with the decimal point and returns an integer without the decimal point (you muliply by 10^n to remove `.`).
+Write a function called `Not_decimal` that takes a string in forme of a float number with the decimal point and returns an integer without the decimal point (you muliply by 10^n to remove `.`).
 
-- If the number is doesn'the have a decimal point or  there is only zero after `.` return the number followed by a newline (`'\n'`).
-- If the argument is empty return newline (`'\n'`).
-- If The argument is not a number return it followed by newline (`'\n'`).
-
+- If the number is doesn'the have a decimal point or  there is only zero after `.` return the number followed by a newline `\n`.
+- If the argument is empty return newline `\n`.
+- If The argument is not a number return it followed by newline `\n`.
 
 ### Expected function
 
