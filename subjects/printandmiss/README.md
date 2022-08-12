@@ -11,7 +11,7 @@ Write a function called `PrintAndMiss` that takes a string and an integer and re
 ### Expected function
 
 ```go
-func PrintAndMiss(arg string, loop int) string {
+func PrintAndMiss(arg string, num int) string {
 }
 ```
 ### Usage
