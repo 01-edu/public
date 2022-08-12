@@ -12,7 +12,7 @@ This program should :
   - The short flag will have two spaces before the (-).
   - The explanation of the flag will have a tab followed by a space before the beginning of the sentence (This flag...).
 
-***Note:*** Don't mind the extra spaces or tabs on the following example as they were placed there to provide a better understanding and visualization of the output in the terminal. Follow the rules above for the spacing.
+> Don't mind the extra spaces or tabs on the following example as they were placed there to provide a better understanding and visualization of the output in the terminal. Follow the rules above for the spacing.
 
 Example of output :
 
