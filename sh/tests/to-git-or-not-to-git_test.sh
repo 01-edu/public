@@ -4,18 +4,18 @@
 set -euo pipefail
 IFS='
 '
-FILENAME="student/to-git-or-not-to-git.sh"
 
+FILENAME="student/to-git-or-not-to-git.sh"
+submitted=$(bash student/to-git-or-not-to-git.sh)
+expected=$(bash solutions/to-git-or-not-to-git.sh)
+
+# True if FILE exists and is a regular file
 if [ -f ${FILENAME} ]; then
+    # FILE exists and it's not empty
     if [ -s ${FILENAME} ]; then
-        submitted=$(bash student/to-git-or-not-to-git.sh)
-        expected=$(bash solutions/to-git-or-not-to-git.sh)
-        echo $submitted
-        echo $expected
         diff <(echo "$submitted") <(echo "$expected")
     else
-        echo "The file exist but empty"
-        exit 1
+        echo "The file exist but is empty"
     fi
 else
     echo "File does not exist"
