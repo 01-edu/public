@@ -2,7 +2,7 @@
 
 ##### Try to open the game.
 
-###### Were you able to enter your nickname?
+###### Were you asked for a nickname?
 
 ###### After entering your nickname, were you redirected to a waiting page presenting a player counter?
 
@@ -16,17 +16,17 @@
 
 ##### Wait 20 seconds with two users in the waiting page.
 
-###### After 20 seconds did a 10 seconds timer started to begin the game?
+###### After 20 seconds, did you get 10 second game start countdown?
 
 ###### After the 10 seconds did the game start?
 
 ##### Try to enter with 4 different users in the waiting page.
 
-###### As soon as the fourth player entered, did the 10 seconds timer started?
+###### As soon as the fourth player entered, did you get 10 second game start countdown?
 
-###### While playing the game, are you able to move and place a bomb?
+###### While playing the game, are you able to move and place bombs?
 
-###### Can the player see the whole map at once?
+###### Can players see the whole map at once?
 
 ##### Try placing a bomb and standing by it when it explodes.
 
@@ -38,7 +38,7 @@
 
 ##### Try placing a bomb next to another player.
 
-###### Did the other player lost a life when the bomb exploded?
+###### Did the other player lose a life when the bomb exploded?
 
 ##### Place a bomb next to a destroyable block.
 
@@ -46,13 +46,13 @@
 
 ##### Try to destroy every block on the map.
 
-###### Did the power ups appeared in the places of the blocks?
+###### Did the power ups appear in place of some of the blocks?
 
-###### Can you confirm that there is 4 different types of power ups?
+###### Can you confirm that there are at least 3 types of power ups?
 
 ##### Open the Dev Tool in the Performance tab.
 
-###### Does it not present frame drop?
+###### Does the game run without frame drops?
 
 ##### Open the Dev Tool in the Performance tab.
 
@@ -60,20 +60,20 @@
 
 ##### Open the Dev Tool in the performance tab and select the option rendering with the paint ON.
 
-###### Is the paint being used as less as possible?
+###### Is paint used as little as possible?
 
 ##### Open the Dev Tool in the performance tab and select the option rendering with the layer ON.
 
-###### Is the layers being used as less as possible?
+###### Are layers used as little as possible?
 
-###### Are the creation of the [layers being promoted](https://developers.google.com/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count) properly?
+###### Are [layers being promoted](https://developers.google.com/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count) properly?
 
 #### Bonus
 
-###### +Can the player see how many lives he/she has?
+###### +Are players' lives displayed?
 
-###### +Is there any display of who won the game?
+###### +Is the winner shown after the game in any way?
 
-###### +Can you play again after the game ends?
+###### +Is there a way to start another game after a game is over?
 
 ###### +Do you think in general this project is well done?
