@@ -25,6 +25,6 @@ I am the beginning of the end, and the end of time and space. I am essential to 
 I don't know
 I am the beginning of the end, and the end of time and space. I am essential to creation, and I surround every place. What am I?
 The letter e
-It took you 2 trials to get the right answer
+Number of trials: 2
 $
 ```
