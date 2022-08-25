@@ -17,7 +17,7 @@ func JumpOver(str string) string {
 
 ### Usage
 
-Here is a possible program to test your function :
+Here is a possible program to test your function:
 
 ```go
 package main
@@ -32,7 +32,7 @@ func main() {
 }
 ```
 
-And its output :
+And its output:
 
 ```go
 $ go run . | cat -e
