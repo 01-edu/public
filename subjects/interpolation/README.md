@@ -10,7 +10,7 @@ For each interpolation point, you must call the `callback` function with an arra
 - `x`: distance
 - `y`: point
 
-There should be a delay between each `callback` invocation; of `duration / step`, so that the final call happens after `duration`.
+There should be a delay between each `callback` invocation of `duration / step`, so that the final call happens after `duration`.
 
 ### Example
 
