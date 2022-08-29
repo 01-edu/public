@@ -20,19 +20,19 @@ Write the body of that function so that the button's class is altered:
 ```
 Example for a `styles` array with only 3 classes:
 
-Page load --> <button class="button"></div>
+Page load --> <button class="button"></button>
 
 ...adding
-Click 1 --> <button class="button one"></div>
-Click 2 --> <button class="button one two"></div>
+Click 1 --> <button class="button one"></button>
+Click 2 --> <button class="button one two"></button>
 
 ...toggling `unpimp`
-Click 3 --> <button class="button one two three unpimp"></div>
+Click 3 --> <button class="button one two three unpimp"></button>
 
 ...and removing backwards
-Click 4 --> <button class="button one two unpimp"></div>
-Click 5 --> <button class="button one unpimp"></div>
-Click 6 --> <button class="button"></div>
+Click 4 --> <button class="button one two unpimp"></button>
+Click 5 --> <button class="button one unpimp"></button>
+Click 6 --> <button class="button"></button>
 ```
 
 ### Notions
