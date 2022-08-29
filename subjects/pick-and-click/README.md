@@ -15,7 +15,7 @@ You'll need to display these three values:
 - The `hue` value in a `div` with the class `hue` in the top right corner of the screen.
 - The `luminosity` value will be displayed in the bottom left corner of the screen, in a `div` with the class `luminosity`.
 
-When the mouse is clicked, the value of the `hsl` will need to copied to the clipboard.
+When the mouse is clicked, the value of the `hsl` will need to be copied to the clipboard.
 
 Two SVG lines with ids `axisX` and `axisY` will need to follow the cursor, like really long cross hairs.
   - the `axisX` attributes `x1` and `x2` need to be set to the X position of the cursor.
