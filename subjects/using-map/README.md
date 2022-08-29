@@ -22,7 +22,7 @@ citiesOnly([
 ]) // -> ['Los Angeles', 'San Francisco']
 ```
 
-#### Upper Casing States
+#### Upper Casing States
 `upperCasingStates`: accepts an array of strings, and returns a new array of strings. The returned array will be the same as the argument, except the first letter of every word must be capitalized.
 ```js
 upperCasingStates(['alabama', 'new jersey']) // -> ['Alabama', 'New Jersey']
