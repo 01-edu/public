@@ -17,7 +17,7 @@ Today, your mission is to build a 3-column brick tower, maintain it and finally 
 
 - Each one of the two emojis in the top-right corner fires a function on click:
   - 🔨: triggers the function `repair`. Write the body of that function. It receives any number of `ids`. For each `id`, it retrieves the HTML element, and sets the `repaired` custom attribute to `in progress` if it is a brick situated in the middle column, and `true` if not.
-  - 🧨: triggers the `destroy` function. Erite the body of that function. It removes the current last brick in the tower.
+  - 🧨: triggers the `destroy` function. Write the body of that function. It removes the current last brick in the tower.
 
 ### Files
 
