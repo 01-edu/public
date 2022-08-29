@@ -40,7 +40,7 @@ mapCurry(([k, v]) => [`${k}_force`, v])(personnel)
 }
 ```
 
-Create `reduceCurry`, which replicates the `.reduce` method (but fro an object). The first entry is the function, and the second is the object and initial value).
+Create `reduceCurry`, which replicates the `.reduce` method (but from an object). The first entry is the function, and the second is the object and initial value).
 
 ```js
 reduceCurry((acc, [k, v]) => (acc += v))({ a: 1, b: 2, c: 3 }, 0)
