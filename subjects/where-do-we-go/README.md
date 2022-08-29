@@ -8,15 +8,15 @@ Let's make a page to index your options, so that next time you ask yourself that
 
 Create a function named `explore`, which creates a page displaying the list of `places` provided in the data file below.
 
-- sort the `places` from north to south, so that the northern-most place is first.
-- display a fullscreen-size `<section>` for each place. Use the pics hosted in the `./where-do-we-go_images` folder below. Set the `background` attribute with the corresponding image URL. The URL has to be formatted like so: `./where-do-we-go_images/name-of-the-place.jpg`.
-- display a location indicator as an `<a>` tag in the middle of the screen. It should:
+- Sort the `places` from north to south, so that the northern-most place is first.
+- Display a fullscreen-size `<section>` for each place. Use the pics hosted in the `./where-do-we-go_images` folder below. Set the `background` attribute with the corresponding image URL. The URL has to be formatted like so: `./where-do-we-go_images/name-of-the-place.jpg`.
+- Display a location indicator as an `<a>` tag in the middle of the screen. It should:
   - have the class `location`
-  - display the `name` and `coordinates` of the current place, as text strings separated by `\n`.
-  - set the text color as `color`.
-  - update the `name`, `coordinates` and `color` on scroll, at the point when the next image reaches the middle of the screen height.
-  - make the `href` attribute open **a new tab** redirecting to a Google Maps URL with the coordinates of the place currently displayed.
-- display a compass as a `div` tag, indicating the latitude direction which:
+  - display the `name` and `coordinates` of the current place, as text strings separated by `\n`
+  - set the text color as `color`
+  - update the `name`, `coordinates` and `color` on scroll, at the point when the next image reaches the middle of the screen height
+  - make the `href` attribute open **a new tab** redirecting to a Google Maps URL with the coordinates of the place currently displayed
+- Display a compass as a `div` tag, indicating the latitude direction which:
   - has the class `direction`
   - displays `N` for North if the user is scrolling up
   - displays `S` for South if he's scrolling down
@@ -28,11 +28,11 @@ You only need to create & submit the JS file `where-do-we-go.js`; we're providin
 - the HTML file [where-do-we-go.html](./where-do-we-go.html) to open in the browser, which includes:
 
   - the JS script which will enable you to run your code
-  - some CSS pre-styled classes: feel free to use those as they are, or modify them.
+  - some CSS pre-styled classes: feel free to use those as they are, or modify them
 
-- the data file [where-do-we-go.data.js](./where-do-we-go.data.js) from which you can import `places`.
+- the data file [where-do-we-go.data.js](./where-do-we-go.data.js) from which you can import `places`
 
-- the images to use, in this [compressed folder](https://assets.01-edu.org/where-do-we-go_images.zip).
+- the images to use, in this [compressed folder](https://assets.01-edu.org/where-do-we-go_images.zip)
 
 ### Expected result
 
