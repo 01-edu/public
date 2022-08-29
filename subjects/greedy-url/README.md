@@ -16,6 +16,6 @@ qqq http:// qqqq q qqqqq https://something.com/hello qqqqqqq qhttp://example.com
 > Only http and https URLs are valid.
   You can search for greedy quantifiers for help.
 
-###greed Notions
+### Notions
 
 - [Learn RegEx](https://github.com/ziishaned/learn-regex)
