@@ -11,6 +11,7 @@ Write a function `LoafOfBread()` that takes a string and returns another one wit
 
 ```go
 func LoafOfBread(str string) string {
+
 }
 ```
 
@@ -35,6 +36,6 @@ And its output:
 ```go
 $ go run . | cat -e
 delic ousbr ad$
-Thisi aloaf fbrea$
+Thisi aloaf ofbre d$
 Invalid Output$
 ```
