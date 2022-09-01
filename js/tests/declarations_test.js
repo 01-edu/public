@@ -1,5 +1,13 @@
 export const tests = []
 const t = (f) => tests.push(f)
+const isConst = (name) => {
+  try {
+    eval(`${name} = 'm'`)
+    return false
+  } catch (err) {
+    return true
+  }
+}
 
 // escapeStr
 // is declared and of type string
@@ -71,5 +79,9 @@ t(() => nested.obj.update === undefined)
 // nested.arr is not frozen and can be changed
 t(() => cantEdit(() => nested.arr.push('hot stuff')))
 t(() => nested.arr.length === 3)
+
+// check if all variable are const
+t(() => ['escapeStr', 'arr', 'obj', 'nested']
+  .every(isConst))
 
 Object.freeze(tests)
