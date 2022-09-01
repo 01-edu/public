@@ -12,6 +12,7 @@ Create some functions which behave like JavaScript's `Math` rounding functions:
 > Some restrictions apply:
 > - You may not use strings conversion to do it
 > - No bitwise operator
+> - No `%` operator
 
 ### Notions
 
