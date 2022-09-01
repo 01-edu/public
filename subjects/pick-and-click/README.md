@@ -12,8 +12,8 @@ The `background` color of the `body` will change based on the position of the mo
 
 You'll need to display these three values:
 - The full `hsl` value in a `div`, which has the class `hsl` in the middle of the screen.
-- The `hue` value in a `div` with the class `hue` in the top right corner of the screen.
-- The `luminosity` value will be displayed in the bottom left corner of the screen, in a `div` with the class `luminosity`.
+- The `hue` value in a `div` with the class `hue` and `text` in the top right corner of the screen.
+- The `luminosity` value will be displayed in the bottom left corner of the screen, in a `div` with the class `luminosity` and `text`.
 
 When the mouse is clicked, the value of the `hsl` will need to be copied to the clipboard.
 
