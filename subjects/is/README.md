@@ -16,6 +16,16 @@ Add new function properties to the `is` object to check value types. Each functi
 - `is.truthy`: value is truthy.
 - `is.falsy`: value is falsy.
 
+### Examples
+
+```js
+console.log(is.num(5))
+// output: true
+
+console.log(is.num('ciao'))
+// output: false
+```
+
 ### Notions
 
 - [Primitives and operators](https://nan-academy.github.io/js-training/examples/primitive-and-operators.js)
