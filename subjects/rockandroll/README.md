@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function called `RockAndRoll` that takes an integer and returns a string.
+Write a function called `RockAndRoll` that takes an `int` and returns a `string`.
 
 - If the number is divisible by 2, print `rock` followed by a newline `\n`.
 - If the number is divisible by 3, print `roll` followed by a newline `\n`.
