@@ -4,11 +4,11 @@
 
 - Write a function that takes an `int` max and an `int` min as parameters. The function should return a slice of `int`s with all the values between the max and min.
 
-- The `Max`must be included, and min must be excluded.
+- The `max`must be included, and `min` must be excluded.
 
-- If max is inferior than or equal to min, a `nil` slice is returned.
+- If `max` is inferior than or equal to `min`, return a `nil` value.
 
-- `make`is not allowed for this exercise
+- `make()` is not allowed for this exercise.
 
 ### Expected function
 
