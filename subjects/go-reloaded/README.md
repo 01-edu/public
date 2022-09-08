@@ -13,7 +13,7 @@ We advise you to create your own tests for yourself and for when you will correc
 ### Introduction
 
 - Your project must be written in **Go**.
-- The code must respect the [**good practices**](../good-practices/README.md).
+- The code should respect the [**good practices**](../good-practices/README.md).
 - It is recommended to have **test files** for [unit testing](https://go.dev/doc/tutorial/add-a-test).
 
 The tool you are about to build will receive as arguments the name of a file containing a text that needs some modifications (the input) and the name of the file the modified text should be placed in (the output). Next is a list of possible modifications that your program should execute:
@@ -45,7 +45,7 @@ it (cap) was the best of times, it was the worst of times (up) , it was the age 
 
 $ go run . sample.txt result.txt
 
-$cat result.txt
+$ cat result.txt
 It was the best of times, it was the worst of TIMES, it was the age of wisdom, It Was The Age Of Foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of darkness, it was the spring of hope, it was the winter of despair.
 
 $ cat sample.txt
@@ -53,7 +53,7 @@ Simply add 42 (hex) and 10 (bin) and you will see the result is 68.
 
 $ go run . sample.txt result.txt
 
-$cat result.txt
+$ cat result.txt
 Simply add 66 and 2 and you will see the result is 68.
 
 $ cat sample.txt
@@ -61,7 +61,7 @@ There is no greater agony than bearing a untold story inside you.
 
 $ go run . sample.txt result.txt
 
-$cat result.txt
+$ cat result.txt
 There is no greater agony than bearing an untold story inside you.
 
 $ cat sample.txt
@@ -69,8 +69,9 @@ Punctuation tests are ... kinda boring ,don't you think !?
 
 $ go run . sample.txt result.txt
 
-$cat result.txt
+$ cat result.txt
 Punctuation tests are... kinda boring, don't you think!?
+
 ```
 
 This project will help you learn about :
