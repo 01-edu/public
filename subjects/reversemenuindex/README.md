@@ -6,7 +6,7 @@ The restaurant employees are having a really tough day and are delivering the cu
 
 Write a function `ReverseMenuIndex` that takes an array of strings as arguments and returns another array of strings with the menu in the correct order.
 
-- `append` is not allowed for this exercise.
+- `append()` is not allowed for this exercise.
 
 ### Expected function
 
