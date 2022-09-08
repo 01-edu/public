@@ -1,10 +1,10 @@
-# shoppinglistsort
+## shoppinglistsort
 
 ### Instructions
 
 You were sent to the supermarket with a shopping list. To make your shopping faster, write a function `ShoppingListSort()` that takes an array of strings and sorts it, according to the string length, returning an array in which the strings appear in ascending order.
 
-In the case of equal string length the order does not matter.
+When the length of string elements are equal, then the order in which they appear does not matter.
 
 ### Expected function
 
