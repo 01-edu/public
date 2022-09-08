@@ -5,7 +5,7 @@
 A F1 race just finished and the commentator is calling the finishing positions incorrectly.
 Help to fix this before the contestants arrive at the podium by providing the commentator with the correct podium position.
 
-Write a function `PodiumPosition` that accepts an array of arrays as a `string` and returns the competitor positions correctly.
+Write a function `PodiumPosition` that takes an array of arrays of type `string` and returns the competitor positions correctly.
 
 ### Expected function
 
