@@ -11,7 +11,7 @@ The case of the letter remains unchanged, for example :
 
 The final result will be followed by a newline (`'\n'`).
 
-If the number of arguments is different from 1, the program displays nothing.
+If the number of arguments is different from 1, the program prints a new line.
 
 ### Usage
 
