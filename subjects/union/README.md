@@ -19,6 +19,7 @@ df6vewg4thras$
 $
 $ go run . rien "cette phrase ne cache rien" | cat -e
 rienct phas$
+$
 $ go run . | cat -e
 $
 $ go run . rien | cat -e
