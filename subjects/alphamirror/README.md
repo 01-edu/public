@@ -17,10 +17,11 @@ If the number of arguments is different from 1, the program prints a new line.
 
 ```console
 $ go run . "abc"
-zyx
+zyx$
+$
 $ go run . "My horse is Amazing." | cat -e
 Nb slihv rh Znzarmt.$
+$
 $ go run .
-
 $
 ```
