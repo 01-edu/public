@@ -44,7 +44,7 @@
 
 #### Bonus
 
-###### +Is it posible to edit your own maze?
+###### +Is it possible to edit your own maze?
 
 ###### +Are levels created automatically by an algorithm?
 
