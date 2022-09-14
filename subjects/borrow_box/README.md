@@ -14,7 +14,7 @@ You will implement some **CRUD** functionality for a game session. You will need
 
 - `delete`: which takes ownership of the boxed game session and returns a string: `"game deleted: id -> 0"`.
 
-> If `nbr_of_games` is 5, then it is "best out of 5", and no more than 5 games can be played. If some player has a score of 3, then the game session is also finished. This is because there is an insufficient number of remaining games for the trailing player to catch up.
+> If `nb_games` is 5, then it is "best out of 5", and no more than 5 games can be played. If some player has a score of 3, then the game session is also finished. This is because there is an insufficient number of remaining games for the trailing player to catch up.
 
 ### Expected Functions
 
@@ -24,11 +24,11 @@ pub struct GameSession {
     pub id: u32,
     pub p1: (String, u16),
     pub p2: (String, u16),
-    pub nbr_of_games: u16
+    pub nb_games: u16
 }
 
 impl GameSession {
-    pub fn new(i: u32, pl1: String, pl2: String, n: u16) -> Box<GameSession> {
+    pub fn new(id: u32, p1_name: String, p2_name: String, nb_games: u16) -> Box<GameSession> {
 
     }
     pub fn read_winner(&self) -> (String, u16) {
@@ -63,7 +63,7 @@ fn main() {
     // output : ("Same score! tied", 2)
 
     game.update_score(String::from("Joao"));
-    // this one will not count because it already 5 games played, the nbr_of_games
+    // this one will not count because it already 5 games played, the nb_games
     game.update_score(String::from("Susana"));
 
     println!("{:?}", game.read_winner());
