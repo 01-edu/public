@@ -7,7 +7,7 @@ Imagine you are designing a new video game, and your next feature is to create f
 There are two types of food for now:
 
 - `Fruit`: increases the strength by 4 units for each kilogram of fruit consumed.
-- `Meat`: has a weight in kilograms, and it's pure fat content as a percentage. The remaining weight of meat which is not pure fat is considered to be protein. Each kilogram of protein increases the strength by 4 units. Each kilogram of fat increases the strength by 9 units.
+- `Meat`: has a weight in kilograms, and it's pure fat content as a decimal fraction. The remaining weight of meat which is not pure fat is considered to be protein. Each kilogram of protein increases the strength by 4 units. Each kilogram of fat increases the strength by 9 units.
 
 Define the `Food` trait for `Fruit` and `Meat`. The required method `gives` returns the amount of strength that the food provides.
 
