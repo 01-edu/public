@@ -10,7 +10,7 @@ You will implement some **CRUD** functionality for a game session. You will need
 
 - `read_winner`: which returns a tuple with the name and score of the player who is currently winning. In the case that no player is winning, it should return the same tuple with the string `"Same score! tied"` and the tied score.
 
-- `update_score`: which receives the name of a player, and increments their score. The `nbr_of_games` should also be incremented. This function should **do nothing** if the the game session is already finished.
+- `update_score`: which receives the name of a player, and increments their score. This function should **do nothing** if the the game session is already finished.
 
 - `delete`: which takes ownership of the boxed game session and returns a string: `"game deleted: id -> 0"`.
 
