@@ -4,7 +4,7 @@
 
 In this exercise, you will define some basic matrix operations, Implement traits for `Add` and `Sub`
 
-Remember that two matrices can only be added or subtracted if they have they have the same dimensions. Therefore, you must handle the possibility of failure by returning an `Option<T>`.
+Remember that two matrices can only be added or subtracted if they have the same dimensions. Therefore, you must handle the possibility of failure by returning an `Option<T>`.
 
 You will be reusing your `Matrix` and `Scalar` structures defined in the [matrix](../matrix/README.md) and [lalgebra_scalar](../lalgebra_scalar/README.md) exercises.
 
