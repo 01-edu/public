@@ -4,7 +4,7 @@
 
 Create the following **functions**:
 
-- `transform_and_save_on_heap`: which accepts a string of numbers separated by spaces. Each number may or may not have a `'k'` as a suffix which represents kilograms. The function transforms those numbers into a vector of `u32`, and saves them in the heap using `Box`.
+- `transform_and_save_on_heap`: which accepts a string of numbers separated by spaces. If a number has a `'k'` as a suffix it should be multiplied by 1000. The function transforms those numbers into a vector of `u32`, and saves them in the heap using `Box`.
 
 - `take_value_ownership`: which accepts the return value from `transform_and_save_on_heap`, unboxes the value, and returns it.
 
