@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Your going to make a shopping system. It will have a store where the products will be saved, and a cart which will contain items from which a receipt will be generated.
+You are going to make a shopping system. It will have a store where the products will be saved, and a cart which will contain items from which a receipt will be generated.
 
 **"Buy three, get one free".**
 
@@ -12,7 +12,7 @@ You will have to implement for the `Cart` structure the following **functions**:
 
 - `new`: that will initialize the cart.
 - `insert_item`: will receive a reference to `Store` and a `String`. Just like the name says, it will insert the item to the cart.
-- `generate_receipt`: returns a vector of sorted floats. This function must generate the receipt just like the example below, using the promotion. AIt should save the result in the `receipt` field.
+- `generate_receipt`: returns a vector of sorted floats. This function must generate the receipt just like the example below, using the promotion. It should save the result in the `receipt` field.
 
 ### Expected Function
 
