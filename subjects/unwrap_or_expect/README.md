@@ -57,6 +57,7 @@ fn main() {
 And its output:
 
 ```console
+$ cargo run
 server1.com
 WARNING: check the server
 Not found: server2.com
