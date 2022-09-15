@@ -41,10 +41,12 @@ impl Cart {
 ### Example
 
 ```
-[1.23, 3.12, 23.1]` => `[1.17, 2.98, 22.07]
+[1.23, 3.12, 23.1]` => `[1.17, 2.98, 22.06]
 ```
 
-Because `1.17 + 2.98 + 22.07` == `0 + 3.12 + 23.1`
+Because `1.17 + 2.98 + 22.06` == `0 + 3.12 + 23.1`
+
+Floats are rounded with a precision of two decimals which can create small discrepancies as per the example above.
 
 This is a percentage calculation, and it can be applied to a set of three items. If the client purchases 9 items, they will receive three for free, with the discount applied to all items.
 
@@ -92,7 +94,7 @@ And its output:
 $ cargo run
 Store { products: [("product A", 1.23), ("product B", 23.1), ("product C", 3.12)] }
 [1.17, 2.98, 22.06]
-Cart { items: [("product A", 1.23), ("product B", 23.1), ("product C", 3.12)], receipt: [1.17, 2.98, 22.07] }
+Cart { items: [("product A", 1.23), ("product B", 23.1), ("product C", 3.12)], receipt: [1.17, 2.98, 22.06] }
 $
 ```
 
