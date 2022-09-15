@@ -1,0 +1,2372 @@
+[
+  {
+    "sha": "1dbb6990360ad45d7189d267e1c288b8cf38b4d1",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6MWRiYjY5OTAzNjBhZDQ1ZDcxODlkMjY3ZTFjMjg4YjhjZjM4YjRkMQ==",
+    "commit": {
+      "author": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-12-10T08:26:02Z"
+      },
+      "committer": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-12-10T08:26:02Z"
+      },
+      "message": "common/log: write log importance\n\nWhen colors aren't used, write the log importance to stderr. This makes\nit easier to grep for errors and avoids mistaking error messages for\ndebug messages.\n\nThis is [1] ported to Sway.\n\n[1]: https://github.com/swaywm/wlroots/pull/2149",
+      "tree": {
+        "sha": "10b9310806803195a22b66b1f44f241dbf8689d3",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/10b9310806803195a22b66b1f44f241dbf8689d3"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/1dbb6990360ad45d7189d267e1c288b8cf38b4d1",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEENP+VJs/vDpejQOLkD9574OiPXkgFAl/R27UACgkQD9574OiP\nXkiwWw/+I/sZEs7XY/RBwN8DuRCdfEXXbWRjXFHhFn2li6/TrbnT/LBeAYX0m1Bz\n3D5mIV8g0ZbrJH1CXvM+CJOlde97oJWv0E1JNzCOHMhmql78EzvSzQbh474eaHym\n8dlE6aMSnl5zw2jDqx00CNZXZ7yf+1Ze0lN/0wZZaC50sSLwLMNQaF1vJojiVIod\n4Ohwst+5Me7crBVgD+MC9an8hJbtg1tXprxKGzXn9MYddbdqp7NMBb/TqQQhw8Vu\n+b6VXOLgHv0CgaABS83kvbyagxZ2hu3Cc5OX8ZrD39EAfLl28LCG1m3SajycoPym\nwCTaPTQJbs2uP9zPULcVVckh44YtXkIKQZjBxrmEWtl4OqmL8dlXMQ/C6fXN6+NI\neqZV1X04NG/HilscjK5PTwilQNosGffvB1SuDtQXjtjQ61Tm1gbj+589f5MojeAQ\nKWhA5wrJpRkSows2k+M0lFtTHMF8qsKvnib3h0nRWtlkwR1miPJwzmsXlVdfO3DQ\n7tPUuVmTpPm42dSgyc7RdALDj9n0ZUe8pvd/ggfNCUIX1k/vgexhWmmjc3ZHyYrM\nKL7BZ3QK4uyJLrQRegjw+p3H0knqpU2MbK4ocRprnlBBtJMs2n2y6rdt+e345xNn\nkcxGIo8KL/h6HQChFoXaeYgt6AORng+ewSIViAV03rU5kuTpF8g=\n=1HYA\n-----END PGP SIGNATURE-----",
+        "payload": "tree 10b9310806803195a22b66b1f44f241dbf8689d3\nparent a68c6a00cae9a84ae0ac1f2c302afeb1b2f6142a\nauthor Simon Ser <contact@emersion.fr> 1607588762 +0100\ncommitter Simon Ser <contact@emersion.fr> 1607588762 +0100\n\ncommon/log: write log importance\n\nWhen colors aren't used, write the log importance to stderr. This makes\nit easier to grep for errors and avoids mistaking error messages for\ndebug messages.\n\nThis is [1] ported to Sway.\n\n[1]: https://github.com/swaywm/wlroots/pull/2149\n"
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/1dbb6990360ad45d7189d267e1c288b8cf38b4d1",
+    "html_url": "https://github.com/swaywm/sway/commit/1dbb6990360ad45d7189d267e1c288b8cf38b4d1",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/1dbb6990360ad45d7189d267e1c288b8cf38b4d1/comments",
+    "author": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a68c6a00cae9a84ae0ac1f2c302afeb1b2f6142a",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/a68c6a00cae9a84ae0ac1f2c302afeb1b2f6142a",
+        "html_url": "https://github.com/swaywm/sway/commit/a68c6a00cae9a84ae0ac1f2c302afeb1b2f6142a"
+      }
+    ]
+  },
+  {
+    "sha": "a68c6a00cae9a84ae0ac1f2c302afeb1b2f6142a",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6YTY4YzZhMDBjYWU5YTg0YWUwYWMxZjJjMzAyYWZlYjFiMmY2MTQyYQ==",
+    "commit": {
+      "author": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-12-02T13:57:48Z"
+      },
+      "committer": {
+        "name": "Tudor Brindus",
+        "email": "me@tbrindus.ca",
+        "date": "2020-12-10T04:57:12Z"
+      },
+      "message": "Route wlroots logs into Sway logging infrastructure\n\nInstead of letting wlroots print messages to stdout, route debugging\nmessages into Sway's logging functions. This allows a more consistent\noutput (e.g. if Sway or wlroots changes its output style, they don't get\nout-of-sync).\n\nI also added a [wlr] prefix to wlroots messages, not yet sure it's a\ngood thing.",
+      "tree": {
+        "sha": "7a88fbe660110997c9c41d8975de0e3f605ae7b0",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/7a88fbe660110997c9c41d8975de0e3f605ae7b0"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/a68c6a00cae9a84ae0ac1f2c302afeb1b2f6142a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/a68c6a00cae9a84ae0ac1f2c302afeb1b2f6142a",
+    "html_url": "https://github.com/swaywm/sway/commit/a68c6a00cae9a84ae0ac1f2c302afeb1b2f6142a",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/a68c6a00cae9a84ae0ac1f2c302afeb1b2f6142a/comments",
+    "author": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "Xyene",
+      "id": 1403503,
+      "node_id": "MDQ6VXNlcjE0MDM1MDM=",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1403503?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Xyene",
+      "html_url": "https://github.com/Xyene",
+      "followers_url": "https://api.github.com/users/Xyene/followers",
+      "following_url": "https://api.github.com/users/Xyene/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Xyene/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Xyene/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Xyene/subscriptions",
+      "organizations_url": "https://api.github.com/users/Xyene/orgs",
+      "repos_url": "https://api.github.com/users/Xyene/repos",
+      "events_url": "https://api.github.com/users/Xyene/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Xyene/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a52176f83035e98dd5487e3373ee2c52c8890c8d",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/a52176f83035e98dd5487e3373ee2c52c8890c8d",
+        "html_url": "https://github.com/swaywm/sway/commit/a52176f83035e98dd5487e3373ee2c52c8890c8d"
+      }
+    ]
+  },
+  {
+    "sha": "a52176f83035e98dd5487e3373ee2c52c8890c8d",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6YTUyMTc2ZjgzMDM1ZTk4ZGQ1NDg3ZTMzNzNlZTJjNTJjODg5MGM4ZA==",
+    "commit": {
+      "author": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-12-02T22:48:11Z"
+      },
+      "committer": {
+        "name": "Brian Ashworth",
+        "email": "bosrsf04@gmail.com",
+        "date": "2020-12-09T22:39:20Z"
+      },
+      "message": "build: add basu as sd-bus provider",
+      "tree": {
+        "sha": "cb669041ca63b772bd09f89dabf27d26afd1f07a",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/cb669041ca63b772bd09f89dabf27d26afd1f07a"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/a52176f83035e98dd5487e3373ee2c52c8890c8d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/a52176f83035e98dd5487e3373ee2c52c8890c8d",
+    "html_url": "https://github.com/swaywm/sway/commit/a52176f83035e98dd5487e3373ee2c52c8890c8d",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/a52176f83035e98dd5487e3373ee2c52c8890c8d/comments",
+    "author": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "RedSoxFan",
+      "id": 2997061,
+      "node_id": "MDQ6VXNlcjI5OTcwNjE=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2997061?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RedSoxFan",
+      "html_url": "https://github.com/RedSoxFan",
+      "followers_url": "https://api.github.com/users/RedSoxFan/followers",
+      "following_url": "https://api.github.com/users/RedSoxFan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RedSoxFan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RedSoxFan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RedSoxFan/subscriptions",
+      "organizations_url": "https://api.github.com/users/RedSoxFan/orgs",
+      "repos_url": "https://api.github.com/users/RedSoxFan/repos",
+      "events_url": "https://api.github.com/users/RedSoxFan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RedSoxFan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "fdbe98512a71524091375290ca2c1c9450e4db84",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/fdbe98512a71524091375290ca2c1c9450e4db84",
+        "html_url": "https://github.com/swaywm/sway/commit/fdbe98512a71524091375290ca2c1c9450e4db84"
+      }
+    ]
+  },
+  {
+    "sha": "fdbe98512a71524091375290ca2c1c9450e4db84",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6ZmRiZTk4NTEyYTcxNTI0MDkxMzc1MjkwY2EyYzFjOTQ1MGU0ZGI4NA==",
+    "commit": {
+      "author": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-12-02T22:46:49Z"
+      },
+      "committer": {
+        "name": "Brian Ashworth",
+        "email": "bosrsf04@gmail.com",
+        "date": "2020-12-09T22:39:20Z"
+      },
+      "message": "build: introduce sd-bus-provider option\n\nThis allows to select a specific provider for the sd-bus library.",
+      "tree": {
+        "sha": "1d97201175819f43afa67aa642be8d2a7a48ec18",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/1d97201175819f43afa67aa642be8d2a7a48ec18"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/fdbe98512a71524091375290ca2c1c9450e4db84",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/fdbe98512a71524091375290ca2c1c9450e4db84",
+    "html_url": "https://github.com/swaywm/sway/commit/fdbe98512a71524091375290ca2c1c9450e4db84",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/fdbe98512a71524091375290ca2c1c9450e4db84/comments",
+    "author": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "RedSoxFan",
+      "id": 2997061,
+      "node_id": "MDQ6VXNlcjI5OTcwNjE=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2997061?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RedSoxFan",
+      "html_url": "https://github.com/RedSoxFan",
+      "followers_url": "https://api.github.com/users/RedSoxFan/followers",
+      "following_url": "https://api.github.com/users/RedSoxFan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RedSoxFan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RedSoxFan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RedSoxFan/subscriptions",
+      "organizations_url": "https://api.github.com/users/RedSoxFan/orgs",
+      "repos_url": "https://api.github.com/users/RedSoxFan/repos",
+      "events_url": "https://api.github.com/users/RedSoxFan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RedSoxFan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "968c005760b6465306e3499b8a7e3e8c2d67dac1",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/968c005760b6465306e3499b8a7e3e8c2d67dac1",
+        "html_url": "https://github.com/swaywm/sway/commit/968c005760b6465306e3499b8a7e3e8c2d67dac1"
+      }
+    ]
+  },
+  {
+    "sha": "968c005760b6465306e3499b8a7e3e8c2d67dac1",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6OTY4YzAwNTc2MGI2NDY1MzA2ZTM0OTliOGE3ZTNlOGMyZDY3ZGFjMQ==",
+    "commit": {
+      "author": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-12-02T22:43:43Z"
+      },
+      "committer": {
+        "name": "Brian Ashworth",
+        "email": "bosrsf04@gmail.com",
+        "date": "2020-12-09T22:39:20Z"
+      },
+      "message": "build: use WLR_HAS_* to decide whether suid is required\n\nMaybe systemd/elogind is found but wlroots was built without them. Print\nthe warning message depending on the WLR_HAS_* defines instead.\n\nWhile at it, don't print the message if wlroots has been build with\nlibseat.",
+      "tree": {
+        "sha": "60be20597b7a052167e6dbcbff107f8cbd98f6c4",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/60be20597b7a052167e6dbcbff107f8cbd98f6c4"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/968c005760b6465306e3499b8a7e3e8c2d67dac1",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/968c005760b6465306e3499b8a7e3e8c2d67dac1",
+    "html_url": "https://github.com/swaywm/sway/commit/968c005760b6465306e3499b8a7e3e8c2d67dac1",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/968c005760b6465306e3499b8a7e3e8c2d67dac1/comments",
+    "author": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "RedSoxFan",
+      "id": 2997061,
+      "node_id": "MDQ6VXNlcjI5OTcwNjE=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2997061?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RedSoxFan",
+      "html_url": "https://github.com/RedSoxFan",
+      "followers_url": "https://api.github.com/users/RedSoxFan/followers",
+      "following_url": "https://api.github.com/users/RedSoxFan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RedSoxFan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RedSoxFan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RedSoxFan/subscriptions",
+      "organizations_url": "https://api.github.com/users/RedSoxFan/orgs",
+      "repos_url": "https://api.github.com/users/RedSoxFan/repos",
+      "events_url": "https://api.github.com/users/RedSoxFan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RedSoxFan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a1591c23d23c5db265d94f3ba442c57dc8eebd4b",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/a1591c23d23c5db265d94f3ba442c57dc8eebd4b",
+        "html_url": "https://github.com/swaywm/sway/commit/a1591c23d23c5db265d94f3ba442c57dc8eebd4b"
+      }
+    ]
+  },
+  {
+    "sha": "a1591c23d23c5db265d94f3ba442c57dc8eebd4b",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6YTE1OTFjMjNkMjNjNWRiMjY1ZDk0ZjNiYTQ0MmM1N2RjOGVlYmQ0Yg==",
+    "commit": {
+      "author": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-12-08T15:15:03Z"
+      },
+      "committer": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-12-08T15:15:48Z"
+      },
+      "message": "Handle secondary headless backend failures",
+      "tree": {
+        "sha": "8ac38195d4c128aed6409a6147f6143c1a39f348",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/8ac38195d4c128aed6409a6147f6143c1a39f348"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/a1591c23d23c5db265d94f3ba442c57dc8eebd4b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEENP+VJs/vDpejQOLkD9574OiPXkgFAl/PmKoACgkQD9574OiP\nXkjoSQ/9GbgXRHfRATm3GhSOU6qr51zcceFKlZVsF/6LqrjM3jDcX5eiWKqyvyPc\nM6XZPiuoDLsVPHBjMafMLYddVMmlL2hsEjADhVoDXOEoCUxbxms8tnSUXPmXARop\n3UsTTRK1s9IhOBOirK9g69gi6x+ymui+YTLgrLUvOkTS1QEEG4JRMmF6+eSgPWOl\nWuYIPWbqYvQt0g9qLosIgZWPLBzc0ajT3zktZGGFe+ssTtjqbTfwoPngLtcPpmYT\nP9M+bF/ATWvJz3B8ik8UB8wPRcjoVM06xQRXvHqD9WixaBDGgBk2VIHim07b8uED\nZ565hxITp6/5v/ijw7fEWmE4qfDAv3Nhf0/JK+YOcJPH1iYjjUsBygDegavUaTaq\nQmTZlLGi3eFrvyW1VN+Zp3GwvKTdF9T7ca/FO058JSlozX0D2a78IuUVnoh8OyJX\nI0SUQGPtlCcakMSKPtfCzH+sf250FhIs8DyrAxBfNb84m2ILQz/yY7bZCkXZbJs+\nu+XreVXlGfmsTMyO+y6gfuCfByow6OslsWuoUnAx2Lz4f2Krir5xp3Ca62Zmvctt\nQm9jj44glz2hD2QTiswIvthGgoVADjc6W5EvtqinwmF/x+wF8R2FKPu+HPXCujn+\nR+IVZmHjLX6A6QoyFES5lnghPjp5dDIx7X4NBpV9agSpkGrDwbA=\n=KKJB\n-----END PGP SIGNATURE-----",
+        "payload": "tree 8ac38195d4c128aed6409a6147f6143c1a39f348\nparent 5ad3990a6c9beae44392e1962223623c0a4e3fa9\nauthor Simon Ser <contact@emersion.fr> 1607440503 +0100\ncommitter Simon Ser <contact@emersion.fr> 1607440548 +0100\n\nHandle secondary headless backend failures\n"
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/a1591c23d23c5db265d94f3ba442c57dc8eebd4b",
+    "html_url": "https://github.com/swaywm/sway/commit/a1591c23d23c5db265d94f3ba442c57dc8eebd4b",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/a1591c23d23c5db265d94f3ba442c57dc8eebd4b/comments",
+    "author": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5ad3990a6c9beae44392e1962223623c0a4e3fa9",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/5ad3990a6c9beae44392e1962223623c0a4e3fa9",
+        "html_url": "https://github.com/swaywm/sway/commit/5ad3990a6c9beae44392e1962223623c0a4e3fa9"
+      }
+    ]
+  },
+  {
+    "sha": "5ad3990a6c9beae44392e1962223623c0a4e3fa9",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6NWFkMzk5MGE2YzliZWFlNDQzOTJlMTk2MjIyMzYyM2MwYTRlM2ZhOQ==",
+    "commit": {
+      "author": {
+        "name": "Isaac Freund",
+        "email": "ifreund@ifreund.xyz",
+        "date": "2020-11-03T15:00:57Z"
+      },
+      "committer": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-12-08T10:15:03Z"
+      },
+      "message": "Drop gtk-primary-selection support",
+      "tree": {
+        "sha": "4b2702cb7b8f696c43a37cb0cfeebb4c20cc26d6",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/4b2702cb7b8f696c43a37cb0cfeebb4c20cc26d6"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/5ad3990a6c9beae44392e1962223623c0a4e3fa9",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/5ad3990a6c9beae44392e1962223623c0a4e3fa9",
+    "html_url": "https://github.com/swaywm/sway/commit/5ad3990a6c9beae44392e1962223623c0a4e3fa9",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/5ad3990a6c9beae44392e1962223623c0a4e3fa9/comments",
+    "author": {
+      "login": "ifreund",
+      "id": 12723818,
+      "node_id": "MDQ6VXNlcjEyNzIzODE4",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/12723818?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ifreund",
+      "html_url": "https://github.com/ifreund",
+      "followers_url": "https://api.github.com/users/ifreund/followers",
+      "following_url": "https://api.github.com/users/ifreund/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ifreund/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ifreund/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ifreund/subscriptions",
+      "organizations_url": "https://api.github.com/users/ifreund/orgs",
+      "repos_url": "https://api.github.com/users/ifreund/repos",
+      "events_url": "https://api.github.com/users/ifreund/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ifreund/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "71725a8eae6f8196d8e13a1b50af4f8ee4ebe971",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/71725a8eae6f8196d8e13a1b50af4f8ee4ebe971",
+        "html_url": "https://github.com/swaywm/sway/commit/71725a8eae6f8196d8e13a1b50af4f8ee4ebe971"
+      }
+    ]
+  },
+  {
+    "sha": "71725a8eae6f8196d8e13a1b50af4f8ee4ebe971",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6NzE3MjVhOGVhZTZmODE5NmQ4ZTEzYTFiNTBhZjRmOGVlNGViZTk3MQ==",
+    "commit": {
+      "author": {
+        "name": "Vlad Pănăzan",
+        "email": "vlad@panazan.ro",
+        "date": "2020-12-05T16:32:44Z"
+      },
+      "committer": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-12-07T11:30:13Z"
+      },
+      "message": "Add layer shell subsurfaces\n\nDamage subsurfaces created by layer surfaces on map, unmap and\ncommit. This fixes the flicker of Gtk Popovers.\n\nFixes #5617",
+      "tree": {
+        "sha": "ce059eb969c1d9f6e5dc27f17ab944acf6c13042",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/ce059eb969c1d9f6e5dc27f17ab944acf6c13042"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/71725a8eae6f8196d8e13a1b50af4f8ee4ebe971",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/71725a8eae6f8196d8e13a1b50af4f8ee4ebe971",
+    "html_url": "https://github.com/swaywm/sway/commit/71725a8eae6f8196d8e13a1b50af4f8ee4ebe971",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/71725a8eae6f8196d8e13a1b50af4f8ee4ebe971/comments",
+    "author": {
+      "login": "psnszsn",
+      "id": 535600,
+      "node_id": "MDQ6VXNlcjUzNTYwMA==",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/535600?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/psnszsn",
+      "html_url": "https://github.com/psnszsn",
+      "followers_url": "https://api.github.com/users/psnszsn/followers",
+      "following_url": "https://api.github.com/users/psnszsn/following{/other_user}",
+      "gists_url": "https://api.github.com/users/psnszsn/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/psnszsn/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/psnszsn/subscriptions",
+      "organizations_url": "https://api.github.com/users/psnszsn/orgs",
+      "repos_url": "https://api.github.com/users/psnszsn/repos",
+      "events_url": "https://api.github.com/users/psnszsn/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/psnszsn/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "cc2c0d5966f67189be4cfc350514134d3f4c0f3c",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/cc2c0d5966f67189be4cfc350514134d3f4c0f3c",
+        "html_url": "https://github.com/swaywm/sway/commit/cc2c0d5966f67189be4cfc350514134d3f4c0f3c"
+      }
+    ]
+  },
+  {
+    "sha": "cc2c0d5966f67189be4cfc350514134d3f4c0f3c",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6Y2MyYzBkNTk2NmY2NzE4OWJlNGNmYzM1MDUxNDEzNGQzZjRjMGYzYw==",
+    "commit": {
+      "author": {
+        "name": "Tudor Brindus",
+        "email": "me@tbrindus.ca",
+        "date": "2020-12-06T04:58:57Z"
+      },
+      "committer": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-12-06T08:38:49Z"
+      },
+      "message": "input/cursor: unhide cursor on synthetic input\n\nFixes #5847.",
+      "tree": {
+        "sha": "d267d5af6174ac6708503ab006747a41cd137532",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/d267d5af6174ac6708503ab006747a41cd137532"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/cc2c0d5966f67189be4cfc350514134d3f4c0f3c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/cc2c0d5966f67189be4cfc350514134d3f4c0f3c",
+    "html_url": "https://github.com/swaywm/sway/commit/cc2c0d5966f67189be4cfc350514134d3f4c0f3c",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/cc2c0d5966f67189be4cfc350514134d3f4c0f3c/comments",
+    "author": {
+      "login": "Xyene",
+      "id": 1403503,
+      "node_id": "MDQ6VXNlcjE0MDM1MDM=",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1403503?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Xyene",
+      "html_url": "https://github.com/Xyene",
+      "followers_url": "https://api.github.com/users/Xyene/followers",
+      "following_url": "https://api.github.com/users/Xyene/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Xyene/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Xyene/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Xyene/subscriptions",
+      "organizations_url": "https://api.github.com/users/Xyene/orgs",
+      "repos_url": "https://api.github.com/users/Xyene/repos",
+      "events_url": "https://api.github.com/users/Xyene/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Xyene/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b5cc11b2268820fd49151a5a868c5fff285a652c",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/b5cc11b2268820fd49151a5a868c5fff285a652c",
+        "html_url": "https://github.com/swaywm/sway/commit/b5cc11b2268820fd49151a5a868c5fff285a652c"
+      }
+    ]
+  },
+  {
+    "sha": "b5cc11b2268820fd49151a5a868c5fff285a652c",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6YjVjYzExYjIyNjg4MjBmZDQ5MTUxYTVhODY4YzVmZmYyODVhNjUyYw==",
+    "commit": {
+      "author": {
+        "name": "Paul Riou",
+        "email": "paul.riou@protonmail.com",
+        "date": "2020-11-17T00:26:38Z"
+      },
+      "committer": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-12-04T09:49:49Z"
+      },
+      "message": "criteria: fix crash when comparing NULL properties\n\nFor each following combinations of criteria & command below, the command would\ncrash sway without the fix.\nIt's particular about the __focused__ criteria, where the view matches part of\nthe criteria but not the focused app, leading to a failure when calling\n`strcmp` with NULL.\n\n\"xterm\" is a non-wayland app (X11) and \"kitty\" is. Both are terminals.\n\n    # \"class\" is specific to X11\n    # The view is X11 (xterm) leading to the criteria checking for the\n    # focused app's class, leading to a crash\n    for_window [class=\"__focused__\"] floating enable\n    exec kitty -e xterm\n\n    # Similarly, crash as the focused app (xterm) has no app_id when the view has one\n    for_window [app_id=\"__focused__\"] floating enable\n    exec xterm -e kitty\n\n    # If the view has a title but not the focused app: NULL title will crash criteria checking\n    for_window [title=\"__focused__\"] floating enable\n    exec xterm -title \"\" -e xterm",
+      "tree": {
+        "sha": "b2a2dcea5eb3b4261aefd9305182528143b441e6",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/b2a2dcea5eb3b4261aefd9305182528143b441e6"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/b5cc11b2268820fd49151a5a868c5fff285a652c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/b5cc11b2268820fd49151a5a868c5fff285a652c",
+    "html_url": "https://github.com/swaywm/sway/commit/b5cc11b2268820fd49151a5a868c5fff285a652c",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/b5cc11b2268820fd49151a5a868c5fff285a652c/comments",
+    "author": {
+      "login": "paul-ri",
+      "id": 54000402,
+      "node_id": "MDQ6VXNlcjU0MDAwNDAy",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/54000402?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/paul-ri",
+      "html_url": "https://github.com/paul-ri",
+      "followers_url": "https://api.github.com/users/paul-ri/followers",
+      "following_url": "https://api.github.com/users/paul-ri/following{/other_user}",
+      "gists_url": "https://api.github.com/users/paul-ri/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/paul-ri/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/paul-ri/subscriptions",
+      "organizations_url": "https://api.github.com/users/paul-ri/orgs",
+      "repos_url": "https://api.github.com/users/paul-ri/repos",
+      "events_url": "https://api.github.com/users/paul-ri/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/paul-ri/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4583feee5969a11383a24187cff2a47abb02fa47",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/4583feee5969a11383a24187cff2a47abb02fa47",
+        "html_url": "https://github.com/swaywm/sway/commit/4583feee5969a11383a24187cff2a47abb02fa47"
+      }
+    ]
+  },
+  {
+    "sha": "4583feee5969a11383a24187cff2a47abb02fa47",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6NDU4M2ZlZWU1OTY5YTExMzgzYTI0MTg3Y2ZmMmE0N2FiYjAyZmE0Nw==",
+    "commit": {
+      "author": {
+        "name": "Paul Riou",
+        "email": "paul.riou@protonmail.com",
+        "date": "2020-12-03T19:17:42Z"
+      },
+      "committer": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-12-04T09:49:49Z"
+      },
+      "message": "common: make 'lenient_strcmp' arguments const\n\nPrevents build failures when calling the function with 'const char *'\narguments.\nThis is also more accurate since the function is not expected to modify\nthe args.",
+      "tree": {
+        "sha": "b5a81cd70444235397fa6ab233e1903b1beda1f1",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/b5a81cd70444235397fa6ab233e1903b1beda1f1"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/4583feee5969a11383a24187cff2a47abb02fa47",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/4583feee5969a11383a24187cff2a47abb02fa47",
+    "html_url": "https://github.com/swaywm/sway/commit/4583feee5969a11383a24187cff2a47abb02fa47",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/4583feee5969a11383a24187cff2a47abb02fa47/comments",
+    "author": {
+      "login": "paul-ri",
+      "id": 54000402,
+      "node_id": "MDQ6VXNlcjU0MDAwNDAy",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/54000402?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/paul-ri",
+      "html_url": "https://github.com/paul-ri",
+      "followers_url": "https://api.github.com/users/paul-ri/followers",
+      "following_url": "https://api.github.com/users/paul-ri/following{/other_user}",
+      "gists_url": "https://api.github.com/users/paul-ri/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/paul-ri/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/paul-ri/subscriptions",
+      "organizations_url": "https://api.github.com/users/paul-ri/orgs",
+      "repos_url": "https://api.github.com/users/paul-ri/repos",
+      "events_url": "https://api.github.com/users/paul-ri/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/paul-ri/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "32b93ef6ea394a8f0c564d4bded2806c7b595696",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/32b93ef6ea394a8f0c564d4bded2806c7b595696",
+        "html_url": "https://github.com/swaywm/sway/commit/32b93ef6ea394a8f0c564d4bded2806c7b595696"
+      }
+    ]
+  },
+  {
+    "sha": "32b93ef6ea394a8f0c564d4bded2806c7b595696",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6MzJiOTNlZjZlYTM5NGE4ZjBjNTY0ZDRiZGVkMjgwNmM3YjU5NTY5Ng==",
+    "commit": {
+      "author": {
+        "name": "Ronan Pigott",
+        "email": "rpigott@berkeley.edu",
+        "date": "2020-11-13T21:05:18Z"
+      },
+      "committer": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-11-24T08:47:23Z"
+      },
+      "message": "xdg_shell: allow views to change geometry anytime\n\nCurrently, when sway sends a configure with some geometry and the\nclient responds with a different geometry in a commit that acks that\nconfigure, sway ignores the new size. Sway applies the surface\ngeometry it had requested to the container, not what was actually\ncommitted, in the following transaction.\n\nThis change allows any client commit to change its surface geometry,\neven if it is a response to a configure event.",
+      "tree": {
+        "sha": "3d8dff7dd3566f36df838aed815583d668df1f64",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/3d8dff7dd3566f36df838aed815583d668df1f64"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/32b93ef6ea394a8f0c564d4bded2806c7b595696",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/32b93ef6ea394a8f0c564d4bded2806c7b595696",
+    "html_url": "https://github.com/swaywm/sway/commit/32b93ef6ea394a8f0c564d4bded2806c7b595696",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/32b93ef6ea394a8f0c564d4bded2806c7b595696/comments",
+    "author": {
+      "login": "RPigott",
+      "id": 12577529,
+      "node_id": "MDQ6VXNlcjEyNTc3NTI5",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/12577529?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RPigott",
+      "html_url": "https://github.com/RPigott",
+      "followers_url": "https://api.github.com/users/RPigott/followers",
+      "following_url": "https://api.github.com/users/RPigott/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RPigott/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RPigott/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RPigott/subscriptions",
+      "organizations_url": "https://api.github.com/users/RPigott/orgs",
+      "repos_url": "https://api.github.com/users/RPigott/repos",
+      "events_url": "https://api.github.com/users/RPigott/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RPigott/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f1afef5533cac9c5d03e5fb372226e48ac1d8547",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/f1afef5533cac9c5d03e5fb372226e48ac1d8547",
+        "html_url": "https://github.com/swaywm/sway/commit/f1afef5533cac9c5d03e5fb372226e48ac1d8547"
+      }
+    ]
+  },
+  {
+    "sha": "f1afef5533cac9c5d03e5fb372226e48ac1d8547",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6ZjFhZmVmNTUzM2NhYzljNWQwM2U1ZmIzNzIyMjZlNDhhYzFkODU0Nw==",
+    "commit": {
+      "author": {
+        "name": "Rex Hackbro",
+        "email": "rex.hackbro@mailbox.org",
+        "date": "2020-08-02T22:30:35Z"
+      },
+      "committer": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-11-21T10:42:29Z"
+      },
+      "message": "document parse_error",
+      "tree": {
+        "sha": "665815aa9d1ada40ae8a69d1526b13f70c85b4fc",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/665815aa9d1ada40ae8a69d1526b13f70c85b4fc"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/f1afef5533cac9c5d03e5fb372226e48ac1d8547",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/f1afef5533cac9c5d03e5fb372226e48ac1d8547",
+    "html_url": "https://github.com/swaywm/sway/commit/f1afef5533cac9c5d03e5fb372226e48ac1d8547",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/f1afef5533cac9c5d03e5fb372226e48ac1d8547/comments",
+    "author": {
+      "login": "JayceFayne",
+      "id": 13365789,
+      "node_id": "MDQ6VXNlcjEzMzY1Nzg5",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/13365789?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/JayceFayne",
+      "html_url": "https://github.com/JayceFayne",
+      "followers_url": "https://api.github.com/users/JayceFayne/followers",
+      "following_url": "https://api.github.com/users/JayceFayne/following{/other_user}",
+      "gists_url": "https://api.github.com/users/JayceFayne/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/JayceFayne/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/JayceFayne/subscriptions",
+      "organizations_url": "https://api.github.com/users/JayceFayne/orgs",
+      "repos_url": "https://api.github.com/users/JayceFayne/repos",
+      "events_url": "https://api.github.com/users/JayceFayne/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/JayceFayne/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f5ca4c26acdd65aa6e7f2c2eb83f54e13323c403",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/f5ca4c26acdd65aa6e7f2c2eb83f54e13323c403",
+        "html_url": "https://github.com/swaywm/sway/commit/f5ca4c26acdd65aa6e7f2c2eb83f54e13323c403"
+      }
+    ]
+  },
+  {
+    "sha": "f5ca4c26acdd65aa6e7f2c2eb83f54e13323c403",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6ZjVjYTRjMjZhY2RkNjVhYTZlN2YyYzJlYjgzZjU0ZTEzMzIzYzQwMw==",
+    "commit": {
+      "author": {
+        "name": "Tudor Brindus",
+        "email": "me@tbrindus.ca",
+        "date": "2020-11-16T18:34:28Z"
+      },
+      "committer": {
+        "name": "Drew DeVault",
+        "email": "sir@cmpwn.com",
+        "date": "2020-11-16T19:08:59Z"
+      },
+      "message": "Small wording change to README.ja.md\n\n見落とされていた英語の単語を置き換える。",
+      "tree": {
+        "sha": "e9f3810f29444bce1496aa735a5abc7934101d16",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/e9f3810f29444bce1496aa735a5abc7934101d16"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/f5ca4c26acdd65aa6e7f2c2eb83f54e13323c403",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/f5ca4c26acdd65aa6e7f2c2eb83f54e13323c403",
+    "html_url": "https://github.com/swaywm/sway/commit/f5ca4c26acdd65aa6e7f2c2eb83f54e13323c403",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/f5ca4c26acdd65aa6e7f2c2eb83f54e13323c403/comments",
+    "author": {
+      "login": "Xyene",
+      "id": 1403503,
+      "node_id": "MDQ6VXNlcjE0MDM1MDM=",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1403503?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Xyene",
+      "html_url": "https://github.com/Xyene",
+      "followers_url": "https://api.github.com/users/Xyene/followers",
+      "following_url": "https://api.github.com/users/Xyene/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Xyene/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Xyene/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Xyene/subscriptions",
+      "organizations_url": "https://api.github.com/users/Xyene/orgs",
+      "repos_url": "https://api.github.com/users/Xyene/repos",
+      "events_url": "https://api.github.com/users/Xyene/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Xyene/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ddevault",
+      "id": 1310872,
+      "node_id": "MDQ6VXNlcjEzMTA4NzI=",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1310872?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ddevault",
+      "html_url": "https://github.com/ddevault",
+      "followers_url": "https://api.github.com/users/ddevault/followers",
+      "following_url": "https://api.github.com/users/ddevault/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ddevault/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ddevault/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ddevault/subscriptions",
+      "organizations_url": "https://api.github.com/users/ddevault/orgs",
+      "repos_url": "https://api.github.com/users/ddevault/repos",
+      "events_url": "https://api.github.com/users/ddevault/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ddevault/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "83389da5832eee448a47d11508c7d107d3871de7",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/83389da5832eee448a47d11508c7d107d3871de7",
+        "html_url": "https://github.com/swaywm/sway/commit/83389da5832eee448a47d11508c7d107d3871de7"
+      }
+    ]
+  },
+  {
+    "sha": "83389da5832eee448a47d11508c7d107d3871de7",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6ODMzODlkYTU4MzJlZWU0NDhhNDdkMTE1MDhjN2QxMDdkMzg3MWRlNw==",
+    "commit": {
+      "author": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-11-16T12:53:49Z"
+      },
+      "committer": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-11-16T12:53:49Z"
+      },
+      "message": "Log which output is using direct scan-out",
+      "tree": {
+        "sha": "25448134c7eaff12074ad4ba7959773e60d233a6",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/25448134c7eaff12074ad4ba7959773e60d233a6"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/83389da5832eee448a47d11508c7d107d3871de7",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEENP+VJs/vDpejQOLkD9574OiPXkgFAl+ydnIACgkQD9574OiP\nXkj3lQ/+K0pKg6PDA7Yf2EXVQM/jb6J2FeHD5RUVY/blQ4rCUjqG/PWbZujuRqht\nfIESoQ404gZ8UBu6+MtIqeELLv1fPdPYkErWR/3pedD3FUOU0Tze6oUBqw+u2ArO\nnmf+5hOm3t6CK7mpCHJaj5sOVkyJ8MkiJ4mhAsGavoJBbMke6JdjR5Jk1S4LFCLz\nTGmtObJPtBhjIYcsul8moSxZLw0elSJ5uiH2e397h5Fp29B2GvTH8VEykNgF74Ck\nx92Zs4tpUnWFDqtHEVO6pAnYDoltJgq7BRlflte/HBYm9Z9FXL5oa1dnC6lGVtRD\n5Ni9krjm85RgNwxmZG8ZIs4NVjFFudwVCTErD072w/pYOjxemEHsq2zDstoZ7dR+\n8/7soAwOSCwIazteZxEy6XzxUABZxTcNv1XkSDN6L33oDcIFOVxwOT6QSie42NUO\n26gA4aPVY9Ykol3aFhWRGZcGNhosne9V/y4Q/B65oNyUy/FRDgKNQPobrQSTE5sP\nxwk3GjOolH18Y8NPKkyWoKv94nW9oP6IrMbPHnKuGNVF0jMlrtTH/tJgRWYmsu5O\n1Uf8gWK7S1mV2Br6sCR5CXHxcgjx46NNCDhOfyQuzrZ/hzvEA+u+0ZA0CLNeX1k2\nI3A/bix7j1Y7GO3b85KMlbXYODqce53owjes3t2lDuAkbmoum10=\n=DJFW\n-----END PGP SIGNATURE-----",
+        "payload": "tree 25448134c7eaff12074ad4ba7959773e60d233a6\nparent 9d6787d10d3800ff4873ad6ac3abe4b096090427\nauthor Simon Ser <contact@emersion.fr> 1605531229 +0100\ncommitter Simon Ser <contact@emersion.fr> 1605531229 +0100\n\nLog which output is using direct scan-out\n"
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/83389da5832eee448a47d11508c7d107d3871de7",
+    "html_url": "https://github.com/swaywm/sway/commit/83389da5832eee448a47d11508c7d107d3871de7",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/83389da5832eee448a47d11508c7d107d3871de7/comments",
+    "author": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9d6787d10d3800ff4873ad6ac3abe4b096090427",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/9d6787d10d3800ff4873ad6ac3abe4b096090427",
+        "html_url": "https://github.com/swaywm/sway/commit/9d6787d10d3800ff4873ad6ac3abe4b096090427"
+      }
+    ]
+  },
+  {
+    "sha": "9d6787d10d3800ff4873ad6ac3abe4b096090427",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6OWQ2Nzg3ZDEwZDM4MDBmZjQ4NzNhZDZhYzNhYmU0YjA5NjA5MDQyNw==",
+    "commit": {
+      "author": {
+        "name": "Brian Ashworth",
+        "email": "bosrsf04@gmail.com",
+        "date": "2020-11-12T02:13:38Z"
+      },
+      "committer": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-11-12T09:52:45Z"
+      },
+      "message": "input/keyboard: fix Group# bindings for keyboard groups\n\nThe keyboard group's effective keyboard layout was never being changed\ndue to a condition that incorrectly preventing it from being performed.\nThe IPC event that follows the change was correctly being prevented.",
+      "tree": {
+        "sha": "5ed1cd5b1f28c905fd9bd4741e6d1d236102a27e",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/5ed1cd5b1f28c905fd9bd4741e6d1d236102a27e"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/9d6787d10d3800ff4873ad6ac3abe4b096090427",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/9d6787d10d3800ff4873ad6ac3abe4b096090427",
+    "html_url": "https://github.com/swaywm/sway/commit/9d6787d10d3800ff4873ad6ac3abe4b096090427",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/9d6787d10d3800ff4873ad6ac3abe4b096090427/comments",
+    "author": {
+      "login": "RedSoxFan",
+      "id": 2997061,
+      "node_id": "MDQ6VXNlcjI5OTcwNjE=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2997061?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RedSoxFan",
+      "html_url": "https://github.com/RedSoxFan",
+      "followers_url": "https://api.github.com/users/RedSoxFan/followers",
+      "following_url": "https://api.github.com/users/RedSoxFan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RedSoxFan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RedSoxFan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RedSoxFan/subscriptions",
+      "organizations_url": "https://api.github.com/users/RedSoxFan/orgs",
+      "repos_url": "https://api.github.com/users/RedSoxFan/repos",
+      "events_url": "https://api.github.com/users/RedSoxFan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RedSoxFan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "07042486c3c4b8e7083405ba9b34b1b87f8d396d",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/07042486c3c4b8e7083405ba9b34b1b87f8d396d",
+        "html_url": "https://github.com/swaywm/sway/commit/07042486c3c4b8e7083405ba9b34b1b87f8d396d"
+      }
+    ]
+  },
+  {
+    "sha": "07042486c3c4b8e7083405ba9b34b1b87f8d396d",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6MDcwNDI0ODZjM2M0YjhlNzA4MzQwNWJhOWIzNGIxYjg3ZjhkMzk2ZA==",
+    "commit": {
+      "author": {
+        "name": "Tudor Brindus",
+        "email": "me@tbrindus.ca",
+        "date": "2020-11-03T05:16:15Z"
+      },
+      "committer": {
+        "name": "Brian Ashworth",
+        "email": "bosrsf04@gmail.com",
+        "date": "2020-11-12T01:43:58Z"
+      },
+      "message": "tree/container: introduce `container_is_sticky[_or_child]` functions\n\nTo query whether a container is sticky, checking `con->is_sticky` is\ninsufficient. `container_is_floating_or_child` must also return true;\nthis led to a lot of repetition.\n\nThis commit introduces `container_is_sticky[_or_child]` functions, and\nswitches all stickiness checks to use them. (Including ones where the\ncontainer is already known to be floating, for consistency.)",
+      "tree": {
+        "sha": "5ec7b68db2acbc1c68538a08b0b039477e8f8858",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/5ec7b68db2acbc1c68538a08b0b039477e8f8858"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/07042486c3c4b8e7083405ba9b34b1b87f8d396d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/07042486c3c4b8e7083405ba9b34b1b87f8d396d",
+    "html_url": "https://github.com/swaywm/sway/commit/07042486c3c4b8e7083405ba9b34b1b87f8d396d",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/07042486c3c4b8e7083405ba9b34b1b87f8d396d/comments",
+    "author": {
+      "login": "Xyene",
+      "id": 1403503,
+      "node_id": "MDQ6VXNlcjE0MDM1MDM=",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1403503?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Xyene",
+      "html_url": "https://github.com/Xyene",
+      "followers_url": "https://api.github.com/users/Xyene/followers",
+      "following_url": "https://api.github.com/users/Xyene/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Xyene/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Xyene/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Xyene/subscriptions",
+      "organizations_url": "https://api.github.com/users/Xyene/orgs",
+      "repos_url": "https://api.github.com/users/Xyene/repos",
+      "events_url": "https://api.github.com/users/Xyene/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Xyene/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "RedSoxFan",
+      "id": 2997061,
+      "node_id": "MDQ6VXNlcjI5OTcwNjE=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2997061?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RedSoxFan",
+      "html_url": "https://github.com/RedSoxFan",
+      "followers_url": "https://api.github.com/users/RedSoxFan/followers",
+      "following_url": "https://api.github.com/users/RedSoxFan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RedSoxFan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RedSoxFan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RedSoxFan/subscriptions",
+      "organizations_url": "https://api.github.com/users/RedSoxFan/orgs",
+      "repos_url": "https://api.github.com/users/RedSoxFan/repos",
+      "events_url": "https://api.github.com/users/RedSoxFan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RedSoxFan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a56098a24e43f459d52a638611a9084c9b1a32d8",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/a56098a24e43f459d52a638611a9084c9b1a32d8",
+        "html_url": "https://github.com/swaywm/sway/commit/a56098a24e43f459d52a638611a9084c9b1a32d8"
+      }
+    ]
+  },
+  {
+    "sha": "a56098a24e43f459d52a638611a9084c9b1a32d8",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6YTU2MDk4YTI0ZTQzZjQ1OWQ1MmE2Mzg2MTFhOTA4NGM5YjFhMzJkOA==",
+    "commit": {
+      "author": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-11-11T14:40:50Z"
+      },
+      "committer": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-11-11T14:40:50Z"
+      },
+      "message": "Add missing includes for wlr_input_device.h\n\nReferences: https://github.com/swaywm/wlroots/pull/2470",
+      "tree": {
+        "sha": "3311ad5e50f0564317d7ff91f0f7001294fb47ef",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/3311ad5e50f0564317d7ff91f0f7001294fb47ef"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/a56098a24e43f459d52a638611a9084c9b1a32d8",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEENP+VJs/vDpejQOLkD9574OiPXkgFAl+r+A8ACgkQD9574OiP\nXkj9vw//Q1tBp3UeKBnOoTORG9PF9xXVrkH91jpWsOJfMFhcne9E5UDzZwMWM33a\nhMb9cuSvsyY2ltktxaRhc5qloi1b/k9JE/uxpvTqBFoAkRjJdNH/+RLImEgqrf5n\nO6ExWUI/IosclAGSu/p7+iiZOrmNRB1DP651LtZCR8YKHAZSKG1lmh5G6ve9+vis\noiptn93JdDPHSZFbtDMdpifBcsslZY+6uPApaDKYHriPnRwN/CbvX+sss8IqHwx+\nbIf5WTk9urrTSMRF2SVehepTKWWcy+OKbbg85+oSPNcIIc9NPalQ8/SJIyA56lVH\n2yG4BLoaeOqCCnmWaYc8dBpxoKbZP/pirpBRqTQ6kifSDXEsAL8PIHrx5WRZpnFL\nH+uSAMRBsf57kO6nKdk3gnwTEtDZMD1i6L0lqnv++0uLLOrvBW8ILTY9ifqfQsBp\ny6p0jk9Xk98ghvQ+7L80rpDocComHOzlbS03NvpEbXPfK3rq9JwOJykfanRr56Sq\n+BOnT8uESKWiOi93Rd5Iv8OcdkMijYdWHYHcvTkfQdHxijBD5oKRKejPlXx4qmlr\nvcKXWqzuX6tpXWOyTkIRQv2A9h+pZqybcwmzMd1g/fw0WGXqTL+8Qz02N56BNjec\neQww6zMd5YafiauwIH1oMAbgGPdYLLGEgZ9mCDXargIqwM6WhpA=\n=qFsM\n-----END PGP SIGNATURE-----",
+        "payload": "tree 3311ad5e50f0564317d7ff91f0f7001294fb47ef\nparent bb342ac5e6de67279a55edb76d8202f10411c38b\nauthor Simon Ser <contact@emersion.fr> 1605105650 +0100\ncommitter Simon Ser <contact@emersion.fr> 1605105650 +0100\n\nAdd missing includes for wlr_input_device.h\n\nReferences: https://github.com/swaywm/wlroots/pull/2470\n"
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/a56098a24e43f459d52a638611a9084c9b1a32d8",
+    "html_url": "https://github.com/swaywm/sway/commit/a56098a24e43f459d52a638611a9084c9b1a32d8",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/a56098a24e43f459d52a638611a9084c9b1a32d8/comments",
+    "author": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "bb342ac5e6de67279a55edb76d8202f10411c38b",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/bb342ac5e6de67279a55edb76d8202f10411c38b",
+        "html_url": "https://github.com/swaywm/sway/commit/bb342ac5e6de67279a55edb76d8202f10411c38b"
+      }
+    ]
+  },
+  {
+    "sha": "bb342ac5e6de67279a55edb76d8202f10411c38b",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6YmIzNDJhYzVlNmRlNjcyNzlhNTVlZGI3NmQ4MjAyZjEwNDExYzM4Yg==",
+    "commit": {
+      "author": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-11-11T10:00:55Z"
+      },
+      "committer": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-11-11T10:00:55Z"
+      },
+      "message": "Replace wlr_key_state with wl_keyboard_key_state\n\nReferences: https://github.com/swaywm/wlroots/pull/2446",
+      "tree": {
+        "sha": "fe1ea7787b653eab06a58f41dee224f217aba037",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/fe1ea7787b653eab06a58f41dee224f217aba037"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/bb342ac5e6de67279a55edb76d8202f10411c38b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEENP+VJs/vDpejQOLkD9574OiPXkgFAl+rtmkACgkQD9574OiP\nXkh6+xAAjhvHlsYuPa8UYzB8olSmvjeNBRwD8QvBf4GDCkG1atWLRoWrlsO8TJ73\nJcgrwJhSXtnPLYM282ZVet9aMcWuT17pbZh5l270aQAObW42++U6z+OXm+mqK7gV\nXht7UO5H0F8nRyCLfDHgVujMXIt5HNmEXlbet8YIFv5eA0FRqpoXQz/SHI6qPpoo\nYXg1Dwyo4Q8zPESLQ1VJLWjMEgQZ9+QznQmac/7BpKSRXTp8Za6NdilT6w6dggwZ\ntNP6SwpIzjXVhCnZKORfhO4VKOzIV3wobIDfjfY9oaQilGF5XivDQVH3KyOIDLbD\n0QVhcVeQLQ1/ov9NR99AdqAzTIoKsPeivrhehQEYEjX/hn+IyUvFPKxREgMkBgm3\nVdCrr3ILfZJcEzXntKQ37fpT1xfqcl43fj5NNKfRymHMry2QiNr61wdme0BvG+QU\n5eeGdITg9w00HmplPb4nGLKGIbt5u3kX1yknyTLBXXoygDJOrIPRN1sTLy3OdTTK\nahjFM0/IiFrTLhWhHl12h9xYO9t3q3Ty0SAZzwxh74004JggPtG9KQLKTjUcJuJ1\n8Ucb81M3o4eZc5NHuRbhXAVOLyGmcSIrbJoTEcNIP2SJ36BSub4EZ/g6DrtdXOw2\nSrsgU3E9uEV2Vp9P0tcw5HrCpWvGluChM//hKF5/0Qpa+ogaRBs=\n=DVmW\n-----END PGP SIGNATURE-----",
+        "payload": "tree fe1ea7787b653eab06a58f41dee224f217aba037\nparent 5ae4f65045c04df7ad2d87142b4064803d97a73e\nauthor Simon Ser <contact@emersion.fr> 1605088855 +0100\ncommitter Simon Ser <contact@emersion.fr> 1605088855 +0100\n\nReplace wlr_key_state with wl_keyboard_key_state\n\nReferences: https://github.com/swaywm/wlroots/pull/2446\n"
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/bb342ac5e6de67279a55edb76d8202f10411c38b",
+    "html_url": "https://github.com/swaywm/sway/commit/bb342ac5e6de67279a55edb76d8202f10411c38b",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/bb342ac5e6de67279a55edb76d8202f10411c38b/comments",
+    "author": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5ae4f65045c04df7ad2d87142b4064803d97a73e",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/5ae4f65045c04df7ad2d87142b4064803d97a73e",
+        "html_url": "https://github.com/swaywm/sway/commit/5ae4f65045c04df7ad2d87142b4064803d97a73e"
+      }
+    ]
+  },
+  {
+    "sha": "5ae4f65045c04df7ad2d87142b4064803d97a73e",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6NWFlNGY2NTA0NWMwNGRmN2FkMmQ4NzE0MmI0MDY0ODAzZDk3YTczZQ==",
+    "commit": {
+      "author": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-11-08T14:15:15Z"
+      },
+      "committer": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-11-08T14:15:34Z"
+      },
+      "message": "build: bump wlroots dependency to 0.12.0",
+      "tree": {
+        "sha": "79b70c563a2227cb44911ffcba27083c423740a9",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/79b70c563a2227cb44911ffcba27083c423740a9"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/5ae4f65045c04df7ad2d87142b4064803d97a73e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEENP+VJs/vDpejQOLkD9574OiPXkgFAl+n/ZAACgkQD9574OiP\nXkhOeA//c90gSG7/BUB5Aq2MfQvW+iw2sBTU1OpeJZYfLsC6wEk8HXKnVnAIuOAM\ncT+1g6a2T8u8ydQKwsuIPdfw57qRprG9yaASVkl3x193N1baXcDI5r//n7oki7Ve\nKDQkDaZPYv15QcXSkDXBK9JQKFieh6Z5nVP5Wnt+pa/cnpn8KguTEGVtEwhCTabR\nuspuee4eztL5l484VLeePAlb+cObOMjKJ733wIOnX5Yd+6u5wGvhnkAGTZMLmljV\nxgiaa3PKAT8fTKWK+gK+F2nzdYGtrsDPUqgadCRFKdLoJOVhac0g4Knd+m2Bx6O2\n3dqLtK2w/987MxO9TzS1vco5XXdFZemaWpsl+4ZUSeAj8IoHO6NfBXitfhy8Xw18\nyNQAHaKQZZJKhYg3vJFEOGRNtcbv3qkYPoEVCVlyYznPTKUnMY/l+WM7hmnE+jLw\nlAIerZnbB0pki8lwxAsSGOd/zOkHF6UR4yOT4Oz3ckAcN5nEEsEUmBH61vaYqbwt\n80NY/kLFoAGorrkgfyLAHp7dBBPqjm7UvJ4+XQ8pKMzcnWzhecMYEnj7QR6Pjkdv\nyQ+l4T/4P/G6tjkGpKaUCKmclEcfan2up204qD7NE1yKphG+zO76wYEqTzNyPE7n\nvk/EfUoT+jDp8CxbIXtSEFe+7TVFdBtEyzgg2CnzJ1ndMJV3dNw=\n=rA66\n-----END PGP SIGNATURE-----",
+        "payload": "tree 79b70c563a2227cb44911ffcba27083c423740a9\nparent 0df5753aed57c6b5e3a5f64ff410cadf8d96c35c\nauthor Simon Ser <contact@emersion.fr> 1604844915 +0100\ncommitter Simon Ser <contact@emersion.fr> 1604844934 +0100\n\nbuild: bump wlroots dependency to 0.12.0\n"
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/5ae4f65045c04df7ad2d87142b4064803d97a73e",
+    "html_url": "https://github.com/swaywm/sway/commit/5ae4f65045c04df7ad2d87142b4064803d97a73e",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/5ae4f65045c04df7ad2d87142b4064803d97a73e/comments",
+    "author": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0df5753aed57c6b5e3a5f64ff410cadf8d96c35c",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/0df5753aed57c6b5e3a5f64ff410cadf8d96c35c",
+        "html_url": "https://github.com/swaywm/sway/commit/0df5753aed57c6b5e3a5f64ff410cadf8d96c35c"
+      }
+    ]
+  },
+  {
+    "sha": "0df5753aed57c6b5e3a5f64ff410cadf8d96c35c",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6MGRmNTc1M2FlZDU3YzZiNWUzYTVmNjRmZjQxMGNhZGY4ZDk2YzM1Yw==",
+    "commit": {
+      "author": {
+        "name": "Tudor Brindus",
+        "email": "me@tbrindus.ca",
+        "date": "2020-11-04T08:08:35Z"
+      },
+      "committer": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-11-05T11:25:15Z"
+      },
+      "message": "input/seatop_default: consider fullscreen views to have no edges\n\nPreviously, `find_edge` on a single fullscreen view would occasionally\nreturn an edge rather than `WLR_EDGE_NONE`. This would trigger entry\ninto `seatop_resize_tiling`, which doesn't have meaning for a fullscreen\nview.\n\nThe result was that the fullscreen container hitbox was considered to be\nthat of where it'd be if it were tiling, so most clicks would not go\nthrough.\n\nFixes #5792.",
+      "tree": {
+        "sha": "fb43d03e276401e679682644e11f1f3f06ef4dae",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/fb43d03e276401e679682644e11f1f3f06ef4dae"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/0df5753aed57c6b5e3a5f64ff410cadf8d96c35c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/0df5753aed57c6b5e3a5f64ff410cadf8d96c35c",
+    "html_url": "https://github.com/swaywm/sway/commit/0df5753aed57c6b5e3a5f64ff410cadf8d96c35c",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/0df5753aed57c6b5e3a5f64ff410cadf8d96c35c/comments",
+    "author": {
+      "login": "Xyene",
+      "id": 1403503,
+      "node_id": "MDQ6VXNlcjE0MDM1MDM=",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1403503?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Xyene",
+      "html_url": "https://github.com/Xyene",
+      "followers_url": "https://api.github.com/users/Xyene/followers",
+      "following_url": "https://api.github.com/users/Xyene/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Xyene/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Xyene/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Xyene/subscriptions",
+      "organizations_url": "https://api.github.com/users/Xyene/orgs",
+      "repos_url": "https://api.github.com/users/Xyene/repos",
+      "events_url": "https://api.github.com/users/Xyene/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Xyene/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b42ed32041e353dae67738de60a637c082389921",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/b42ed32041e353dae67738de60a637c082389921",
+        "html_url": "https://github.com/swaywm/sway/commit/b42ed32041e353dae67738de60a637c082389921"
+      }
+    ]
+  },
+  {
+    "sha": "b42ed32041e353dae67738de60a637c082389921",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6YjQyZWQzMjA0MWUzNTNkYWU2NzczOGRlNjBhNjM3YzA4MjM4OTkyMQ==",
+    "commit": {
+      "author": {
+        "name": "heitor",
+        "email": "heitorleite.dev@gmail.com",
+        "date": "2020-10-01T14:34:44Z"
+      },
+      "committer": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-11-05T07:36:59Z"
+      },
+      "message": "fix typo",
+      "tree": {
+        "sha": "cd39b2ced518ba4cd0a63bc545326b0fd9722091",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/cd39b2ced518ba4cd0a63bc545326b0fd9722091"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/b42ed32041e353dae67738de60a637c082389921",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/b42ed32041e353dae67738de60a637c082389921",
+    "html_url": "https://github.com/swaywm/sway/commit/b42ed32041e353dae67738de60a637c082389921",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/b42ed32041e353dae67738de60a637c082389921/comments",
+    "author": {
+      "login": "homembaixinho",
+      "id": 65421247,
+      "node_id": "MDQ6VXNlcjY1NDIxMjQ3",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/65421247?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/homembaixinho",
+      "html_url": "https://github.com/homembaixinho",
+      "followers_url": "https://api.github.com/users/homembaixinho/followers",
+      "following_url": "https://api.github.com/users/homembaixinho/following{/other_user}",
+      "gists_url": "https://api.github.com/users/homembaixinho/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/homembaixinho/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/homembaixinho/subscriptions",
+      "organizations_url": "https://api.github.com/users/homembaixinho/orgs",
+      "repos_url": "https://api.github.com/users/homembaixinho/repos",
+      "events_url": "https://api.github.com/users/homembaixinho/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/homembaixinho/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3a78edd93afbac443247eab2f4dd9f19c439a343",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/3a78edd93afbac443247eab2f4dd9f19c439a343",
+        "html_url": "https://github.com/swaywm/sway/commit/3a78edd93afbac443247eab2f4dd9f19c439a343"
+      }
+    ]
+  },
+  {
+    "sha": "3a78edd93afbac443247eab2f4dd9f19c439a343",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6M2E3OGVkZDkzYWZiYWM0NDMyNDdlYWIyZjRkZDlmMTljNDM5YTM0Mw==",
+    "commit": {
+      "author": {
+        "name": "heitor",
+        "email": "heitorleite.dev@gmail.com",
+        "date": "2020-10-01T14:26:22Z"
+      },
+      "committer": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-11-05T07:36:59Z"
+      },
+      "message": "update portuguese README (fix typos, update informations...)",
+      "tree": {
+        "sha": "9d9da342be8eaf4a598ad4d1d35168ff13105e86",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/9d9da342be8eaf4a598ad4d1d35168ff13105e86"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/3a78edd93afbac443247eab2f4dd9f19c439a343",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/3a78edd93afbac443247eab2f4dd9f19c439a343",
+    "html_url": "https://github.com/swaywm/sway/commit/3a78edd93afbac443247eab2f4dd9f19c439a343",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/3a78edd93afbac443247eab2f4dd9f19c439a343/comments",
+    "author": {
+      "login": "homembaixinho",
+      "id": 65421247,
+      "node_id": "MDQ6VXNlcjY1NDIxMjQ3",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/65421247?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/homembaixinho",
+      "html_url": "https://github.com/homembaixinho",
+      "followers_url": "https://api.github.com/users/homembaixinho/followers",
+      "following_url": "https://api.github.com/users/homembaixinho/following{/other_user}",
+      "gists_url": "https://api.github.com/users/homembaixinho/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/homembaixinho/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/homembaixinho/subscriptions",
+      "organizations_url": "https://api.github.com/users/homembaixinho/orgs",
+      "repos_url": "https://api.github.com/users/homembaixinho/repos",
+      "events_url": "https://api.github.com/users/homembaixinho/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/homembaixinho/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c523aa623bc5e5b5897c0f337058aa7308871fef",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/c523aa623bc5e5b5897c0f337058aa7308871fef",
+        "html_url": "https://github.com/swaywm/sway/commit/c523aa623bc5e5b5897c0f337058aa7308871fef"
+      }
+    ]
+  },
+  {
+    "sha": "c523aa623bc5e5b5897c0f337058aa7308871fef",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6YzUyM2FhNjIzYmM1ZTViNTg5N2MwZjMzNzA1OGFhNzMwODg3MWZlZg==",
+    "commit": {
+      "author": {
+        "name": "Tudor Brindus",
+        "email": "me@tbrindus.ca",
+        "date": "2020-10-25T17:17:47Z"
+      },
+      "committer": {
+        "name": "Brian Ashworth",
+        "email": "bosrsf04@gmail.com",
+        "date": "2020-11-01T09:05:38Z"
+      },
+      "message": "input: fully change focus when scrolling tabs/stacks\n\nWhen scrolling on a tabbed/stacked container, i3 focuses its\ninactive-focused focused child. Sway does the same, but then resets the\nfocus to whatever was focused previously.\n\nRef https://github.com/i3/i3/blob/e5992eed163179f5cd2715c2c212d3d757f04b31/src/click.c#L207-L219",
+      "tree": {
+        "sha": "1bde4c51e125e96a0c2ca0cbd7ced52bdbf4e30c",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/1bde4c51e125e96a0c2ca0cbd7ced52bdbf4e30c"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/c523aa623bc5e5b5897c0f337058aa7308871fef",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/c523aa623bc5e5b5897c0f337058aa7308871fef",
+    "html_url": "https://github.com/swaywm/sway/commit/c523aa623bc5e5b5897c0f337058aa7308871fef",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/c523aa623bc5e5b5897c0f337058aa7308871fef/comments",
+    "author": {
+      "login": "Xyene",
+      "id": 1403503,
+      "node_id": "MDQ6VXNlcjE0MDM1MDM=",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1403503?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Xyene",
+      "html_url": "https://github.com/Xyene",
+      "followers_url": "https://api.github.com/users/Xyene/followers",
+      "following_url": "https://api.github.com/users/Xyene/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Xyene/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Xyene/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Xyene/subscriptions",
+      "organizations_url": "https://api.github.com/users/Xyene/orgs",
+      "repos_url": "https://api.github.com/users/Xyene/repos",
+      "events_url": "https://api.github.com/users/Xyene/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Xyene/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "RedSoxFan",
+      "id": 2997061,
+      "node_id": "MDQ6VXNlcjI5OTcwNjE=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2997061?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RedSoxFan",
+      "html_url": "https://github.com/RedSoxFan",
+      "followers_url": "https://api.github.com/users/RedSoxFan/followers",
+      "following_url": "https://api.github.com/users/RedSoxFan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RedSoxFan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RedSoxFan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RedSoxFan/subscriptions",
+      "organizations_url": "https://api.github.com/users/RedSoxFan/orgs",
+      "repos_url": "https://api.github.com/users/RedSoxFan/repos",
+      "events_url": "https://api.github.com/users/RedSoxFan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RedSoxFan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "60d95414d4a7ff163099c9e551ec435cb0cb7eca",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/60d95414d4a7ff163099c9e551ec435cb0cb7eca",
+        "html_url": "https://github.com/swaywm/sway/commit/60d95414d4a7ff163099c9e551ec435cb0cb7eca"
+      }
+    ]
+  },
+  {
+    "sha": "60d95414d4a7ff163099c9e551ec435cb0cb7eca",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6NjBkOTU0MTRkNGE3ZmYxNjMwOTljOWU1NTFlYzQzNWNiMGNiN2VjYQ==",
+    "commit": {
+      "author": {
+        "name": "Tudor Brindus",
+        "email": "me@tbrindus.ca",
+        "date": "2020-10-31T23:56:40Z"
+      },
+      "committer": {
+        "name": "Brian Ashworth",
+        "email": "bosrsf04@gmail.com",
+        "date": "2020-11-01T08:43:00Z"
+      },
+      "message": "commands/focus: force container warp when fulfilling `focus mode_toggle`\n\nThis commit switches focusing behavior to force a warp when executing\n`focus mode_toggle`.\n\nFixes #5772.",
+      "tree": {
+        "sha": "1a4bcf041850390d00f05e78884dab51b4ef0c35",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/1a4bcf041850390d00f05e78884dab51b4ef0c35"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/60d95414d4a7ff163099c9e551ec435cb0cb7eca",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/60d95414d4a7ff163099c9e551ec435cb0cb7eca",
+    "html_url": "https://github.com/swaywm/sway/commit/60d95414d4a7ff163099c9e551ec435cb0cb7eca",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/60d95414d4a7ff163099c9e551ec435cb0cb7eca/comments",
+    "author": {
+      "login": "Xyene",
+      "id": 1403503,
+      "node_id": "MDQ6VXNlcjE0MDM1MDM=",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1403503?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Xyene",
+      "html_url": "https://github.com/Xyene",
+      "followers_url": "https://api.github.com/users/Xyene/followers",
+      "following_url": "https://api.github.com/users/Xyene/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Xyene/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Xyene/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Xyene/subscriptions",
+      "organizations_url": "https://api.github.com/users/Xyene/orgs",
+      "repos_url": "https://api.github.com/users/Xyene/repos",
+      "events_url": "https://api.github.com/users/Xyene/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Xyene/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "RedSoxFan",
+      "id": 2997061,
+      "node_id": "MDQ6VXNlcjI5OTcwNjE=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2997061?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RedSoxFan",
+      "html_url": "https://github.com/RedSoxFan",
+      "followers_url": "https://api.github.com/users/RedSoxFan/followers",
+      "following_url": "https://api.github.com/users/RedSoxFan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RedSoxFan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RedSoxFan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RedSoxFan/subscriptions",
+      "organizations_url": "https://api.github.com/users/RedSoxFan/orgs",
+      "repos_url": "https://api.github.com/users/RedSoxFan/repos",
+      "events_url": "https://api.github.com/users/RedSoxFan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RedSoxFan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8c12e71a66feb1cac545dc8746f817772eb77d2f",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/8c12e71a66feb1cac545dc8746f817772eb77d2f",
+        "html_url": "https://github.com/swaywm/sway/commit/8c12e71a66feb1cac545dc8746f817772eb77d2f"
+      }
+    ]
+  },
+  {
+    "sha": "8c12e71a66feb1cac545dc8746f817772eb77d2f",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6OGMxMmU3MWE2NmZlYjFjYWM1NDVkYzg3NDZmODE3NzcyZWI3N2QyZg==",
+    "commit": {
+      "author": {
+        "name": "Tudor Brindus",
+        "email": "me@tbrindus.ca",
+        "date": "2020-10-31T21:56:21Z"
+      },
+      "committer": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-10-31T22:15:32Z"
+      },
+      "message": "input: remove motion deltas from seatop callbacks\n\nStraightforward cleanup, they haven't been used for a while.",
+      "tree": {
+        "sha": "27fe7bbb78ac8c9d38762145405830b4f1d6ea6b",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/27fe7bbb78ac8c9d38762145405830b4f1d6ea6b"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/8c12e71a66feb1cac545dc8746f817772eb77d2f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/8c12e71a66feb1cac545dc8746f817772eb77d2f",
+    "html_url": "https://github.com/swaywm/sway/commit/8c12e71a66feb1cac545dc8746f817772eb77d2f",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/8c12e71a66feb1cac545dc8746f817772eb77d2f/comments",
+    "author": {
+      "login": "Xyene",
+      "id": 1403503,
+      "node_id": "MDQ6VXNlcjE0MDM1MDM=",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1403503?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Xyene",
+      "html_url": "https://github.com/Xyene",
+      "followers_url": "https://api.github.com/users/Xyene/followers",
+      "following_url": "https://api.github.com/users/Xyene/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Xyene/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Xyene/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Xyene/subscriptions",
+      "organizations_url": "https://api.github.com/users/Xyene/orgs",
+      "repos_url": "https://api.github.com/users/Xyene/repos",
+      "events_url": "https://api.github.com/users/Xyene/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Xyene/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "96578aa91e9856bfb3e2d26fb7a625ff7c9b79e3",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/96578aa91e9856bfb3e2d26fb7a625ff7c9b79e3",
+        "html_url": "https://github.com/swaywm/sway/commit/96578aa91e9856bfb3e2d26fb7a625ff7c9b79e3"
+      }
+    ]
+  },
+  {
+    "sha": "96578aa91e9856bfb3e2d26fb7a625ff7c9b79e3",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6OTY1NzhhYTkxZTk4NTZiZmIzZTJkMjZmYjdhNjI1ZmY3YzliNzllMw==",
+    "commit": {
+      "author": {
+        "name": "Tamir Zahavi-Brunner",
+        "email": "tamir.z3@gmail.com",
+        "date": "2020-09-06T22:44:13Z"
+      },
+      "committer": {
+        "name": "Simon Ser",
+        "email": "contact@emersion.fr",
+        "date": "2020-10-30T08:59:54Z"
+      },
+      "message": "hide_cursor: Add an option to hide when typing\n\nAdd an option for the `hide_cursor` command to hide the cursor when\ntyping, i.e. whenever a key is pressed.",
+      "tree": {
+        "sha": "ac763cde133816f3bd8218eccbc352416ce88a5f",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/ac763cde133816f3bd8218eccbc352416ce88a5f"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/96578aa91e9856bfb3e2d26fb7a625ff7c9b79e3",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/96578aa91e9856bfb3e2d26fb7a625ff7c9b79e3",
+    "html_url": "https://github.com/swaywm/sway/commit/96578aa91e9856bfb3e2d26fb7a625ff7c9b79e3",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/96578aa91e9856bfb3e2d26fb7a625ff7c9b79e3/comments",
+    "author": {
+      "login": "tamirzb",
+      "id": 1054209,
+      "node_id": "MDQ6VXNlcjEwNTQyMDk=",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/1054209?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tamirzb",
+      "html_url": "https://github.com/tamirzb",
+      "followers_url": "https://api.github.com/users/tamirzb/followers",
+      "following_url": "https://api.github.com/users/tamirzb/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tamirzb/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tamirzb/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tamirzb/subscriptions",
+      "organizations_url": "https://api.github.com/users/tamirzb/orgs",
+      "repos_url": "https://api.github.com/users/tamirzb/repos",
+      "events_url": "https://api.github.com/users/tamirzb/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tamirzb/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "emersion",
+      "id": 506932,
+      "node_id": "MDQ6VXNlcjUwNjkzMg==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/506932?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersion",
+      "html_url": "https://github.com/emersion",
+      "followers_url": "https://api.github.com/users/emersion/followers",
+      "following_url": "https://api.github.com/users/emersion/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersion/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersion/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersion/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersion/orgs",
+      "repos_url": "https://api.github.com/users/emersion/repos",
+      "events_url": "https://api.github.com/users/emersion/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersion/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4799cb09606ba8b3cc3969c24637b3c6c9eac485",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/4799cb09606ba8b3cc3969c24637b3c6c9eac485",
+        "html_url": "https://github.com/swaywm/sway/commit/4799cb09606ba8b3cc3969c24637b3c6c9eac485"
+      }
+    ]
+  },
+  {
+    "sha": "4799cb09606ba8b3cc3969c24637b3c6c9eac485",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6NDc5OWNiMDk2MDZiYThiM2NjMzk2OWMyNDYzN2IzYzZjOWVhYzQ4NQ==",
+    "commit": {
+      "author": {
+        "name": "mwenzkowski",
+        "email": "29407878+mwenzkowski@users.noreply.github.com",
+        "date": "2020-10-28T12:50:24Z"
+      },
+      "committer": {
+        "name": "Tudor Brindus",
+        "email": "me@tbrindus.ca",
+        "date": "2020-10-28T13:45:12Z"
+      },
+      "message": "output: Revert implementation of evacuate_sticky()\n\nThe function evacuate_sticky() was changed in commit 32788a93 to be used\nby workspace_for_each_container() to make the code more readable. But I\noverlooked that it is not safe to use workspace_for_each_container() to\nremove container from a workspace. This commit restores the previous\nimplementation for evacuate_sticky().",
+      "tree": {
+        "sha": "35931999e8e09e0acb0d6589a56d7b291759394b",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/35931999e8e09e0acb0d6589a56d7b291759394b"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/4799cb09606ba8b3cc3969c24637b3c6c9eac485",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/4799cb09606ba8b3cc3969c24637b3c6c9eac485",
+    "html_url": "https://github.com/swaywm/sway/commit/4799cb09606ba8b3cc3969c24637b3c6c9eac485",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/4799cb09606ba8b3cc3969c24637b3c6c9eac485/comments",
+    "author": {
+      "login": "mwenzkowski",
+      "id": 29407878,
+      "node_id": "MDQ6VXNlcjI5NDA3ODc4",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/29407878?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mwenzkowski",
+      "html_url": "https://github.com/mwenzkowski",
+      "followers_url": "https://api.github.com/users/mwenzkowski/followers",
+      "following_url": "https://api.github.com/users/mwenzkowski/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mwenzkowski/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mwenzkowski/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mwenzkowski/subscriptions",
+      "organizations_url": "https://api.github.com/users/mwenzkowski/orgs",
+      "repos_url": "https://api.github.com/users/mwenzkowski/repos",
+      "events_url": "https://api.github.com/users/mwenzkowski/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mwenzkowski/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "Xyene",
+      "id": 1403503,
+      "node_id": "MDQ6VXNlcjE0MDM1MDM=",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1403503?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Xyene",
+      "html_url": "https://github.com/Xyene",
+      "followers_url": "https://api.github.com/users/Xyene/followers",
+      "following_url": "https://api.github.com/users/Xyene/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Xyene/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Xyene/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Xyene/subscriptions",
+      "organizations_url": "https://api.github.com/users/Xyene/orgs",
+      "repos_url": "https://api.github.com/users/Xyene/repos",
+      "events_url": "https://api.github.com/users/Xyene/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Xyene/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "39328ca4e4b97bd76153869f6a0a20fef3c17112",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/39328ca4e4b97bd76153869f6a0a20fef3c17112",
+        "html_url": "https://github.com/swaywm/sway/commit/39328ca4e4b97bd76153869f6a0a20fef3c17112"
+      }
+    ]
+  },
+  {
+    "sha": "39328ca4e4b97bd76153869f6a0a20fef3c17112",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6MzkzMjhjYTRlNGI5N2JkNzYxNTM4NjlmNmEwYTIwZmVmM2MxNzExMg==",
+    "commit": {
+      "author": {
+        "name": "Dimitris Triantafyllidis",
+        "email": "dtr@localhost.localdomain",
+        "date": "2020-10-27T19:24:30Z"
+      },
+      "committer": {
+        "name": "Tudor Brindus",
+        "email": "me@tbrindus.ca",
+        "date": "2020-10-28T04:36:33Z"
+      },
+      "message": "In container_split, set a floating container's view to tiled\n\nCurrently, when a floating container with a view is split and\nchildren are added to it, the new views are rendered as tiled,\nwhile the first view stays in floating style.\n\nHere this is addressed by setting the view to tiled as soon\nas the container is split, by duplicating the \"view part\" of\nthe logic in container_set_floating(..., false). Since the new\ncontainer of the view is no longer considered floating, it\nmakes sense to set the view to tiling at this point.\n\nThe view would have to be set back to floating if it was possible\nto \"unsplit\" the container.",
+      "tree": {
+        "sha": "6676e1aa53e63c11114261b148efc773805e4350",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/6676e1aa53e63c11114261b148efc773805e4350"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/39328ca4e4b97bd76153869f6a0a20fef3c17112",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/39328ca4e4b97bd76153869f6a0a20fef3c17112",
+    "html_url": "https://github.com/swaywm/sway/commit/39328ca4e4b97bd76153869f6a0a20fef3c17112",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/39328ca4e4b97bd76153869f6a0a20fef3c17112/comments",
+    "author": {
+      "login": "mwenzkowski",
+      "id": 29407878,
+      "node_id": "MDQ6VXNlcjI5NDA3ODc4",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/29407878?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mwenzkowski",
+      "html_url": "https://github.com/mwenzkowski",
+      "followers_url": "https://api.github.com/users/mwenzkowski/followers",
+      "following_url": "https://api.github.com/users/mwenzkowski/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mwenzkowski/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mwenzkowski/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mwenzkowski/subscriptions",
+      "organizations_url": "https://api.github.com/users/mwenzkowski/orgs",
+      "repos_url": "https://api.github.com/users/mwenzkowski/repos",
+      "events_url": "https://api.github.com/users/mwenzkowski/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mwenzkowski/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "Xyene",
+      "id": 1403503,
+      "node_id": "MDQ6VXNlcjE0MDM1MDM=",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1403503?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Xyene",
+      "html_url": "https://github.com/Xyene",
+      "followers_url": "https://api.github.com/users/Xyene/followers",
+      "following_url": "https://api.github.com/users/Xyene/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Xyene/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Xyene/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Xyene/subscriptions",
+      "organizations_url": "https://api.github.com/users/Xyene/orgs",
+      "repos_url": "https://api.github.com/users/Xyene/repos",
+      "events_url": "https://api.github.com/users/Xyene/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Xyene/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "32788a93f23eaa683f7a88694c778cd084607754",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/32788a93f23eaa683f7a88694c778cd084607754",
+        "html_url": "https://github.com/swaywm/sway/commit/32788a93f23eaa683f7a88694c778cd084607754"
+      }
+    ]
+  },
+  {
+    "sha": "32788a93f23eaa683f7a88694c778cd084607754",
+    "node_id": "MDY6Q29tbWl0NDAyMTc5MDQ6MzI3ODhhOTNmMjNlYWE2ODNmN2E4ODY5NGM3NzhjZDA4NDYwNzc1NA==",
+    "commit": {
+      "author": {
+        "name": "mwenzkowski",
+        "email": "29407878+mwenzkowski@users.noreply.github.com",
+        "date": "2020-10-27T23:02:08Z"
+      },
+      "committer": {
+        "name": "Tudor Brindus",
+        "email": "me@tbrindus.ca",
+        "date": "2020-10-27T23:26:26Z"
+      },
+      "message": "output: evacuate sticky containers only if new output has a workspace\n\nSticky floating containers on an otherwise empty workspace can only be\nevacuated if the new output has an active workspace. The noop output may\nnot have one and in that case we have to move the whole workspace to the\nnew output.",
+      "tree": {
+        "sha": "df3ecb3274ccc953c28445e483b24ca22cec9c10",
+        "url": "https://api.github.com/repos/swaywm/sway/git/trees/df3ecb3274ccc953c28445e483b24ca22cec9c10"
+      },
+      "url": "https://api.github.com/repos/swaywm/sway/git/commits/32788a93f23eaa683f7a88694c778cd084607754",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/swaywm/sway/commits/32788a93f23eaa683f7a88694c778cd084607754",
+    "html_url": "https://github.com/swaywm/sway/commit/32788a93f23eaa683f7a88694c778cd084607754",
+    "comments_url": "https://api.github.com/repos/swaywm/sway/commits/32788a93f23eaa683f7a88694c778cd084607754/comments",
+    "author": {
+      "login": "mwenzkowski",
+      "id": 29407878,
+      "node_id": "MDQ6VXNlcjI5NDA3ODc4",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/29407878?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mwenzkowski",
+      "html_url": "https://github.com/mwenzkowski",
+      "followers_url": "https://api.github.com/users/mwenzkowski/followers",
+      "following_url": "https://api.github.com/users/mwenzkowski/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mwenzkowski/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mwenzkowski/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mwenzkowski/subscriptions",
+      "organizations_url": "https://api.github.com/users/mwenzkowski/orgs",
+      "repos_url": "https://api.github.com/users/mwenzkowski/repos",
+      "events_url": "https://api.github.com/users/mwenzkowski/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mwenzkowski/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "Xyene",
+      "id": 1403503,
+      "node_id": "MDQ6VXNlcjE0MDM1MDM=",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1403503?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Xyene",
+      "html_url": "https://github.com/Xyene",
+      "followers_url": "https://api.github.com/users/Xyene/followers",
+      "following_url": "https://api.github.com/users/Xyene/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Xyene/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Xyene/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Xyene/subscriptions",
+      "organizations_url": "https://api.github.com/users/Xyene/orgs",
+      "repos_url": "https://api.github.com/users/Xyene/repos",
+      "events_url": "https://api.github.com/users/Xyene/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Xyene/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0cb9282aeebddeed0b5259f153f98a45311053a5",
+        "url": "https://api.github.com/repos/swaywm/sway/commits/0cb9282aeebddeed0b5259f153f98a45311053a5",
+        "html_url": "https://github.com/swaywm/sway/commit/0cb9282aeebddeed0b5259f153f98a45311053a5"
+      }
+    ]
+  }
+]
