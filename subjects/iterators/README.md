@@ -30,7 +30,7 @@ Resulting in 4 steps. So for input n = 16, the return value would be 4.
 ### Notions
 
 - [Trait Iterator](https://doc.rust-lang.org/std/iter/trait.Iterator.html)
-- [Collatz Conjecture](https://pt.wikipedia.org/wiki/Conjectura_de_Collatz)
+- [Collatz Conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture)
 
 ### Expected functions
 
