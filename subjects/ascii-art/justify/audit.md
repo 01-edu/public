@@ -2,7 +2,7 @@
 
 ###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
-##### Try passing as arguments `"banana standard --align right"`
+##### Try passing as arguments `"something standard --align right"`
 
 ```
 Usage: go run . [STRING] [BANNER] [OPTION]
