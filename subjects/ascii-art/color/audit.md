@@ -88,5 +88,4 @@ EX: go run . something --color=<color>
 
 #### Bonus
 
-###### +Can you use different notations for the flag "--color="? 
-###### Examples : `--color=red`, `--color=#ff0000`, `--color=rgb(255, 0, 0)` or `--color=hsl(0, 100%, 50%)`
+###### +Can you use different notations for the `--color` flag? Examples: `--color=red`, `--color=#ff0000`, `--color=rgb(255, 0, 0)` or `--color=hsl(0, 100%, 50%)`
