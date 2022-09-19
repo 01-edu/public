@@ -1,23 +1,18 @@
 #### Functional
 
-**_Guildlines_**
+**_Guidelines_**
 
-##### Zappy isn't a trivial project to correct. it is also long project to grade. For a full Project you need to spend around:
+##### Zappy is a long project to audit, for a full project review we advise you to spend around:
 
-##### - 20 to 30 minutes for the server testing
-##### - 10 to 20 minutes for the graphic client testing
-##### - 5 to 10 minutes to test the client's AI
+##### - 20 to 30 minutes for the server testing.
 
-##### take the necessary time to check out the work of your peer carefully, Between 35 and 60 minutes in total
+##### - 10 to 20 minutes for the graphic client testing.
 
-**_resources_**
+##### - 5 to 10 minutes to test the client's AI.
 
+##### Take the necessary time to check out the work of your peer carefully and ask him for guidance to understand his project.
 
-##### Can you confirm that food and stones exist as resources in the game?
-
-##### Can you confirm that six types of stones are present in the game? (linemate, deraumere, sibur, mendiane, phiras, thystame)
-
-
+#### Functional
 
 **_The server_**
 
@@ -27,56 +22,60 @@
 
 ```console
 $ ./server
- Usage: ./server -p <port> -w <width> -y <height> -nt <team> [<team>] [<team>] ... -c <nb> [-t <t>]
+ Usage: ./server -p <port> -x <width> -y <height> -n <team> [<team>] [<team>] ... -c <nb> [-t <t>]
  -p port number
- -w world width
+ -x world width
  -y world height
- -nt team_name_1 team_name_2 ...
+ -n team_name_1 team_name_2 ...
  -c number of clients authorized at the beginning of the game
  -t [100] time unit divider (the greater t is, the faster the game will go)
 ```
 
-##### Does it display the correct result as above?
+###### Does it display a result like the one presented above?
 
-##### Try to run `./server -p 8080 -x 10 -y 10 -c 5 -nt "TeamOfVectory" -t 10` then open another terminal and run `telenet 127.0.0.1 8080`
+##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n <TeamOfVictory> -t 10"`. Open another terminal and run `"telnet 127.0.0.1 8080"`
 
-```console 
+```console
 $ telnet 127.0.0.1 8080
 Trying 127.0.0.1...
 Connected to 127.0.0.1.
 Escape character is '^]'.
 WELCOME
 ```
-##### Does it display the correct result as above?
 
-##### Use Vscode or a simular program and search about any `exec` functions like [`execve`,`execpe`,`execl`,`execlp`,`execle`,...]
-##### Did he/she use one of those function ?
+###### Does it display result with a welcome message like the one presented above?
 
-##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -nt TeamOfVectory TeamOfPower "`
+##### Use Vscode or a similar program and search for any `exec` functions like (`execve`,`execpe`,`execl`,`execlp`,`execle`,...).
 
-```console 
+###### Did the student use any of these functions?
+
+##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n <TeamOfVictory> <TeamOfPower>"`.
+
+```console
 [ SQ ] : FOOD R0 R1 R2 R3 R4 R5 BOTS ...
-[ 0] : 0 1 0 0 0 0 0 
-[ 1] : 0 3 2 0 0 0 0 
+[   0] :    2  1  2  1  1  0  0
+[   1] :    2  2  0  1  0  0  0
+[   2] :    0  0  1  0  0  0  0
+[   3] :    1  2  1  0  0  0  0
 ...
-[ 97] : 1 3 1 0 0 0 0 
-[ 98] : 0 1 0 0 0 0 0 
-[ 99] : 0 4 0 0 0 0 0 
+[  97] :    3  0  1  3  0  0  0
+[  98] :    1  1  0  0  0  0  0
+[  99] :    0  1  0  0  0  0  0
 ```
 
-##### Does it display the correct result as above? check only the first column and the first row of output
+###### Can you confirm that the number of columns and rows of the output are the same as the result above?
 
-##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -nt TeamOfVectory -t 10"`, then open another terminal and run `"siege -b 127.0.0.1:8080"`
+##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n <TeamOfVictory> -t 10"`. Open another terminal and run `"siege -b 127.0.0.1:8080"`.
 
-##### The program `./server` is still working ?
+###### Is the program `./server` is still working?
 
-##### + Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -nt TeamOfVectory"` at 2 terminal separate 
+##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n <TeamOfVictory>"` in two different terminals.
 
-##### Does it display in the second terminal `error: Address already in use` or something similar?
+###### Does it display, in the second terminal, `ERROR : Address already in use` or something similar?
 
 **_Client_**
 
-##### Try to run `"./client"`
+##### Try to run `"./client"`.
 
 ```console
 $ ./client
@@ -86,89 +85,128 @@ Usage: ./client -n <team> -p <port> [-h <hostname>]
  -h name of the host , the default is localhost
 ```
 
-##### Does it display the correct result as above?
+###### Does it display a result like the one presented above?
 
-##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -nt TeamOfVectory"` then run `"./client -n TeamOfVectory -p 8080"`
+##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n <TeamOfVictory>"` then run `"./client -n <TeamOfVictory> -p 8080"` on a different terminal.
 
-##### Does the program launch without any errors?
+###### Does the program launch without any errors?
 
-##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -nt TeamOfVectory"` then run `"./client -n TeamOfVectory -p 8080 -h 127.0.0.1"`
+##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n <TeamOfVictory>"` then run `"./client -n <TeamOfVictory> -p 8080 -h 127.0.0.1"` on a different terminal.
 
-##### Do the two programs interact with each other?
+###### Do the two programs interact with each other without errors?
 
-##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -nt TeamOfVectory"` then run `"./client -n TeamNotWorking -p 8080 -h 127.0.0.1"`
+##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n <TeamOfVictory>"` then run `"./client -n <TeamNotWorking> -p 8080 -h 127.0.0.1"`
 
-##### Does the program print `" Error: the team TeamNotWorking does not exist"` in the server part, and the client kick out?
+###### Does the program print an error message like `"Error: the team TeamNotWorking doesn't exist"` in the server part, and the client is kicked out?
 
 **_Graphic Client_**
 
-##### For the square content, Test the possibility of clicking on a square to see details about it like a floating window, tooltip, or something else?
+##### Ask the owners of the project for help to connect the Graphic Client to the server.
 
-##### For an Advance client, Is it possible to distinguish the number of similar stones on a square?
+###### Does the client properly connect to the server and display the map?
 
-##### Does the client connects properly to the server and displays the map?
+##### For the square content, test the possibility of clicking on a square to see the details about it. It should look like a floating window, tooltip, or something else.
 
-##### For a graphic client vision, are the players, stones, and food visible?
+###### Can you confirm that the square is showing its content somehow?
 
-##### Can you (as a graphic client) click on a player to see his characteristics in a floating window, tooltip, or something else?
+###### Can you confirm that it is possible to distinguish the number of all stones on a square?
 
-##### Is it possible to scroll a map?
+##### Search in the map for the player, stones and food to see if they are visible.
 
-##### Does each player starts on level 1?
+###### Are the players, stones, and food visible in the map?
 
-##### Is the player able to pick up food?
+##### Try to click on a player to see his characteristics.
 
-##### Is one food unit equal to 126-time units?
+###### Is it possible to see some kind of floating window, tooltip, or something else with the characteristics of the player?
 
-##### Try to run `go run . example00.txt`.
+###### Can you confirm that it is possible to visualize the sounds?
 
-##### Is the player able to pick up stones?
+**_PLAYER_**
 
-##### Can you confirm that if the player does not eat, he starves?
+##### Try to run a game and take a close look at what the players are doing.
 
-##### Can you confirm that if the player eats, he will survive longer?
+###### Does each player starts with 10 food (1260 time units) and 0 stones?
 
-##### Can the player level up when it can confirm the requirements to do so?
+###### Does each player starts on level 1?
 
-##### Does the sight of the players increase with the level?
+###### Is the player able to pick up food?
 
-##### Can the player hatch an egg if he needs a spot in his family?
+###### Is the player able to pick up stones?
 
-##### Can you confirm that if the player exits on the right side of the board, he will re-enter on the left side or vice versa?
+###### Can you confirm that if the player does not eat, he starves and die?
 
-##### Is there sound management for broadcast?
+###### Can you confirm that if the player eats, he will survive longer?
 
-##### Try to confirm that the rules of the elevation ritual are the same given in the subject.
+###### Can the player perform the elevation ritual and level up?
 
-##### Are the elevation ritual rules the same?
+###### Does the sight of the players increase with the level rising?
 
-##### Can you confirm that in order to elevate to `level 2`, the player needs the stone `linemate`
+###### Can the player hatch an egg if he needs a spot in his family?
 
-##### Can you confirm that to elevate to `level 3`, the player needs a combination of the stones `linemate,` `deraumere,` `sibur,` and two players on the same level?
+###### Can you confirm that if the player exits on the right side of the board, he will re-enter on the left side or vice versa?
 
-##### Can you confirm If the movements left and right commands are working?
+**_resources_**
+
+###### Can you confirm that food and stones exist as resources in the game?
+
+###### Can you confirm that six types of stones are present in the game? (linemate, deraumere, sibur, mendiane, phiras, thystame)
+
+###### Are resources randomly generated?
+
+**_Food_**
+
+###### Is one food unit equal to 126 time units?
+
+
+**_Elevation ritual_**
+
+##### Try to confirm that the rules of the elevation ritual are the same given in the subject. (ask the project owners for an explanation if necessary).
+
+###### Are the elevation ritual rules exactly the same?
+
+
+**_Broadcast_**
+
+##### Pai attention to the broadcast messages.
+
+```
+broadcast <text>
+```
+
+###### Can you confirm that in order to send a message, the client must send the command above to the server.
+
+##### After the client send the command to the server, he will send to all its clients the following line:
+
+```
+message <K>,<text>
+```
+
+###### Can you confirm that the server replied the above message with K indicating the square where the sound comes from?
 
 **_The AI Client_**
 
-##### Test with a t betwen 50 and 100 .
+##### Test with a `-t` between 50 and 100 .
 
 ##### Test if the time taken by each movement and action is respected?
 
-##### Try to run `"./server "`
+
+
 
 #### General
 
-##### +Is the visualizer in 3D?
+###### +Is the visualizer in 3D?
+
+###### +Is the server using only one process (no threads)?
 
 #### Basic
 
-##### +Does the project run quickly and effectively (favoring recursive, no unnecessary data requests, etc.)?
+###### +Does the project run quickly and effectively (favoring recursive, no unnecessary data requests, etc.)?
 
-##### +Does the code obey the [good practices](../../good-practices/README.md)?
+###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
 #### Social
 
-##### +Did you learn anything from this project?
+###### +Did you learn anything from this project?
 
-##### +Would you recommend/nominate this program as an example for the rest of the school?
+###### +Would you recommend/nominate this program as an example for the rest of the school?
 
