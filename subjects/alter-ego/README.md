@@ -18,7 +18,7 @@ const user = {
 }
 ```
 
-#### Adding a new properperty
+#### Adding a new property
 
 ```js
 user.name = 'Martin' // we add a name to our user
