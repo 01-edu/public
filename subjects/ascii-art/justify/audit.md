@@ -2,7 +2,7 @@
 
 ###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
-##### Try passing as arguments `"something standard --align right"`
+##### Try passing as arguments `banana standard --align right`
 
 ```
 Usage: go run . [STRING] [BANNER] [OPTION]
@@ -12,51 +12,51 @@ Example : go run . something standard --align=right
 
 ###### Does it display the same result as above?
 
-##### Try passing as arguments `"left standard --align=right"`
+##### Try passing as arguments `left standard --align=right`
 
 ###### Does it display the correct result at the right side?
 
-##### Try passing as arguments `"right standard --align=left"`
+##### Try passing as arguments `right standard --align=left`
 
 ###### Does it display the correct result at the left side?
 
-##### Try passing as arguments `"hello shadow --align=center"`
+##### Try passing as arguments `hello shadow --align=center`
 
 ###### Does it display the correct result at the center?
 
-##### Try passing as arguments `""1 Two 4" shadow --align=justify"`
+##### Try passing as arguments `"1 Two 4" shadow --align=justify`
 
 ###### Does it display the correct result justified?
 
-##### Try passing as arguments `"23/32 standard --align=right"`
+##### Try passing as arguments `23/32 standard --align=right`
 
 ###### Does it display the correct result at the right side?
 
-##### Try passing as arguments `"ABCabc123 thinkertoy --align=right"`
+##### Try passing as arguments `ABCabc123 thinkertoy --align=right`
 
 ###### Does it display the correct result at the right side?
 
-##### Try passing as arguments `"#$%&" thinkertoy --align=center"`
+##### Try passing as arguments `#$%&\" thinkertoy --align=center`
 
 ###### Does it display the correct result at the center?
 
-##### Try passing as arguments `""23Hello World!" standard --align=left"`
+##### Try passing as arguments `"23Hello World!" standard --align=left`
 
 ###### Does it display the correct result at the left side?
 
-##### Try passing as arguments `""HELLO there HOW are YOU?!" thinkertoy --align=justify"`
+##### Try passing as arguments `"HELLO there HOW are YOU?!" thinkertoy --align=justify`
 
 ###### Does it display the correct result justified?
 
-##### Try passing as arguments `""a -> A b -> B c -> C" shadow --align=right"`
+##### Try passing as arguments `"a -> A b -> B c -> C" shadow --align=right`
 
 ###### Does it display the correct result at the right side?
 
-##### Try reducing the terminal window and run `"abcd shadow --align=right"`
+##### Try reducing the terminal window and run `abcd shadow --align=right`
 
 ###### Does the representation adapt to the terminal size displaying the right result in the right side?
 
-##### Try reducing the terminal window and run `"ola standard --align=center"`
+##### Try reducing the terminal window and run `ola standard --align=center`
 
 ###### Does the representation adapt to the terminal size displaying the right result in the center?
 
