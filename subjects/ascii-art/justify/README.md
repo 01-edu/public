@@ -24,7 +24,7 @@ To change the alignment of the output it must be possible to use a **flag** `--a
 ```console
 Usage: go run . [STRING] [BANNER] [OPTION]
 
-EX: go run . something standard --align=right
+Example: go run . something standard --align=right
 ```
 
 ### Instructions
