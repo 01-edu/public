@@ -1,4 +1,4 @@
-## shoppingsummarycounter
+# shoppingsummarycounter
 
 ### Instructions
 
