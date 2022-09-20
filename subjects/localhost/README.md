@@ -1,38 +1,32 @@
 ## Localhost
 
-The Hypertext Transfer Protocol (HTTP) is an application layer protocol in the Internet protocol suite model for distributed, collaborative, hypermedia information systems.
-HTTP is the foundation of data communication for the World Wide Web. Hypertext documents include hyperlinks to other resources that the user can easily access, for example, by a mouse click or tap on the screen in a web browser.
+HTTP,  HyperText Transfer Protocol, standard application-level protocol used for exchanging files on the World Wide Web.Each Web browsers are HTTP clients that send file requests to Web servers, which in turn handle the requests via an HTTP service. 
 
 ### Instructions
 
 #### Server
 
-The project can be written in one of these languages [Go,C++,C...]
+The project can be written in one of these languages [Rust,Go,C++,C...]
 
-```console
-$ ./localhost [CONFIG FILE]
-Lisning on  [IP]:[PORT]
-Lisning on  [IP]:[PORT2]
-```
 - Your server must not crash for any reason.
-- Any request to your server should never hang forever.
-- Your server can listen on multiple servers and ports at the same time without any conflict 
-- You must use the single process and no treads.
-- You must use `exec` functions only in `CGI` part
-- Your server must be compatible with the last version of your chosen browser 
-- You can use `NGINX` to compare headers and answer behaviors with your server
+- Any request to your server should never runing forever.
+- Your server can listen on multiple servers and ports at the same time without any conflict.
+- You must use only one process and no threads.
+- You must use `exec` functions only in `CGI` part.
+- Your server must be compatible with the last version of your chosen browser .
+- You can use `NGINX` to compare headers and answer behaviors with your server.
 - You must manage at least [`GET`, `POST`, `DELETE`] methods.
-- You must handle customization errors **(Binding error, default page error...)**
-- You must create error page at least for [400,311,403,404,405,413]
-- You must execute CGI based on certain file extensions such us [`.php`,`.py`,...]
+- You must handle customization errors *(Binding error,wrong configue file...)*.
+- You must create error page for at least for the following error codes [400,311,403,404,405,413].
+- You must execute `CGI` based on certain file extensions such as [`.php`,`.py`,...] at least one.
 - The `CGI` should run in the correct directory for relative path file access.
-- You must use the enverement paramatre of cgi. 
-- Your server must receive a request from the browser and send a response using the HTTP header and body
-- Your server must call `select` function (or equivalent function) one time only
-- You must manage chunked and unchunked request.
-- You must set the right status for each response
+- You must use the enverement paramatre of `CGI`. 
+- Your server must receive a request from the browser and send a response using the HTTP header and body.
+- Your server must call `select` function (or equivalent function) one time only.
+- You must manage chunked and unchunked requests.
+- You must set the right status for each response.
 
-here is an example of an HTTP request with `GET` method
+here is an example of an HTTP request with `GET` method:
 
 ```http
 GET /Welcome.html HTTP/1.1
@@ -49,15 +43,16 @@ HTTP/1.1 404 Not Found
 Date: Thu, 19 Jul 2022 10:36:20 GMT
 Server: Hserver/1.1.0
 ```
-> Stress tests your server. It must stay available at all cost. use this command to test it  `siege -b [IP]:[PORT]`
+
+> Stress tests your server. It must stay available at all cost. use this command to test it `siege -b [IP]:[PORT]`
 	the availability should be up to 95.99
 	
-> Learn about  [CGI](https://en.wikipedia.org/wiki/Common_Gateway_Interface)
-
+> Learn about [CGI](https://en.wikipedia.org/wiki/Common_Gateway_Interface)
 
 #### Configurations File
 
-This an example of a simple server configuration.
+This an example of a simple server configuration :
+
 ```
 server {
     listen                          80;
@@ -75,14 +70,16 @@ server {
         
         index index.html
         
-        upload_status on; //if it's "on," you should add the "upload_path"; otherwise, if it's "off," there is no need for "upload_status." 
-        
+        upload_status on; 
+
         upload_path         /usr/share/nginx/upload; //depends on "upload_status"
     }
 }
 ```
+In the example above if the "upload_status" is "off", there is no need for "upload_path." 
 
-You have to base your server on this example but You have tested more complex configurations with multiple locations and ports and multiple servers such as :
+You have to base your server on this example bbut you must test also more complex configurations with multiple locations and ports and multiple servers such as:
+
 ```
 {
 server {
@@ -132,18 +129,20 @@ server {
 }
 }
 ```
-The Main Rules:
-- Choose the host(server_address) and a port or multiple ports of each server.
-- The first server for a host: port will be the default if the server_name didn't mutch any other servers server_name.
+
+The Main Rules :
+
+- Choose the host(server_address) and a port or multiple ports for each server.
+- The first server for a host:port will be the default if the "server_name" didn't mutch any other servers "server_name".
 - Setup default error pages.
-- Limit client body size In uploading.
+- Limit client body size for uploads.
 - Setup routes with one or multiple of the following rules/configuration (routes won't be using regexp):
   - Define a list of accepted HTTP methods for the route.
   - Define an HTTP redirection.
-  - Define a directory or a file from where the file should be searched (for example, if URL /test is rooted to /usr/share, url /test/tmp/folder1/folder2 is /usr/share/test/tmp/folder1/folder2).
+  - Define a directory or a file from where the file should be searched (for example, if URL /test is rooted to /usr/Desktop, url /usr/Desktop/tmp/folder1/folder2).
   - Turn on or off the directory listing.
   - Set a default file to answer if the request is a directory.
-  - No need to manage comment `#`
+  - No need to manage comments "(#)".
 
 to check the syntax of the config file you must run this : 
 
@@ -154,9 +153,16 @@ $ ./localhost -t WrongConfigFile.conf
 you miss server_addr in server 3
 ```
 
-### Bonus
-- Add multiple cgi
-- Create a php page and connect with a mysql database . the php page should named `mysql.php` and should be in the root path
+If your config file syntax is right :
 
-> If you’ve got a question about one behavior, you should compare your
-program behavior with NGINX’s.
+```console
+$ ./localhost Myconfigfile.conf
+Listening on [IP]:[PORT]
+Listening on [IP]:[PORT2]
+```
+> If you’ve got a question about one behavior, you should compare your program behavior with NGINX’s.
+
+### Bonus
+- Add multiple `CGI`
+- Create a php page and connect it with a mysql database. 
+- The "PHP" page should named `mysql.php` and should be in the root path.
