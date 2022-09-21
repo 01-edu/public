@@ -19,11 +19,11 @@ Examples:
 
 Starting with n = 16, the steps would be as follows:
 
-0- 16
-1- 8
-2- 4
-3- 2
-4- 1
+0. 16
+1. 8
+2. 4
+3. 2
+4. 1
 
 Resulting in 4 steps. So for input n = 16, the return value would be 4.
 
@@ -35,14 +35,18 @@ Resulting in 4 steps. So for input n = 16, the return value would be 4.
 ### Expected functions
 
 ```rust
-
-struct Collatz {
-    v: u64,
-    }
+#[derive(Copy, Clone)]
+pub struct Collatz {
+    pub v: u64,
+}
 
 impl Iterator for Collatz {}
 
-pub fn collatz(n: u64) -> Option<u64> {}
+impl Collatz {
+	pub fn new(n: u64) -> Self {}
+}
+
+pub fn collatz(n: u64) -> usize {}
 ```
 
 ### Usage
@@ -53,6 +57,8 @@ Here is a program to test your function.
 use iterators::*;
 
 fn main() {
+    println!("{:?}", collatz(0));
+    println!("{:?}", collatz(1));
     println!("{:?}", collatz(4));
     println!("{:?}", collatz(5));
     println!("{:?}", collatz(6));
@@ -65,10 +71,12 @@ And its output:
 
 ```console
 $ cargo run
-Some(2)
-Some(5)
-Some(8)
-Some(16)
-Some(9)
+0
+0
+2
+5
+8
+16
+9
 $
 ```
