@@ -12,6 +12,7 @@ Write a function `WordFlip()` that receives a string and returns it with the fir
 
 ```go
 func WordFlip(str string) string {
+
 }
 ```
 
@@ -22,20 +23,17 @@ Here is a possible program to test your function:
 ```go
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
     fmt.Print(WordFlip("First second last"))
     fmt.Print(WordFlip(""))
-    fmt.Print(WordFlip("     ")) //all spaces
+    fmt.Print(WordFlip("     "))
     fmt.Print(WordFlip(" hello  all  of  you! "))
-
 }
 ```
 
-And its output :
+And its output:
 
 ```go
 $ go run . | cat -e
