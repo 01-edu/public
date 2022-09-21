@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function called `PrintAndMiss()` that takes a `string` and an `int` as an argument and returns a `string` containing the characters until reaching the `int`, then skipping that same number of characters, and it repeats until the end of the `string`.
+Write a function called `PrintAndMiss()` that takes a `string` and an `int` as an argument. The function should move through the `string` in sets determined by the `int`, printing the first set, omitting the second, printing the third, and so on, in a 'print' and 'miss' fashion until the end of the `string` is reached. Return a `string` containing the printed characters.
 
 - If the `string` is empty return `Invalid Output` followed by newline `\n`.
 - If the `int` is `0` or it's negative return the `string` followed by a newline `\n`.
