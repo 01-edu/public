@@ -2,17 +2,13 @@
 
 **_Guidelines_**
 
-##### Zappy is a long project to audit, for a full project review we advise you to spend around:
+Zappy is a long project to audit, for a full project review we advise you to spend around:
 
-##### - 20 to 30 minutes for the server testing.
+- 20 to 30 minutes for the server testing.
+- 10 to 20 minutes for the graphic client testing.
+- 5 to 10 minutes to test the client's AI.
 
-##### - 10 to 20 minutes for the graphic client testing.
-
-##### - 5 to 10 minutes to test the client's AI.
-
-##### Take the necessary time to check out the work of your peer carefully and ask him for guidance to understand his project.
-
-#### Functional
+Take the necessary time to check out the work of your peer carefully and ask him for guidance to understand his project.
 
 **_The server_**
 
@@ -67,11 +63,15 @@ WELCOME
 
 ##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n <TeamOfVictory> -t 10"`. Open another terminal and run `"siege -b 127.0.0.1:8080"`.
 
-###### Is the program `./server` is still working?
+###### Is the program `./server` still working?
 
 ##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n <TeamOfVictory>"` in two different terminals.
 
 ###### Does it display, in the second terminal, `ERROR : Address already in use` or something similar?
+
+#### Let the game run for a wile and then check the time taken to execute the movements and actions of the player.
+
+##### Is the timing of each movement and action respected?
 
 **_Client_**
 
@@ -164,10 +164,9 @@ Usage: ./client -n <team> -p <port> [-h <hostname>]
 
 ###### Are the elevation ritual rules exactly the same?
 
-
 **_Broadcast_**
 
-##### Pai attention to the broadcast messages.
+##### Pay attention to the broadcast messages.
 
 ```
 broadcast <text>
@@ -182,15 +181,6 @@ message <K>,<text>
 ```
 
 ###### Can you confirm that the server replied the above message with K indicating the square where the sound comes from?
-
-**_The AI Client_**
-
-##### Test with a `-t` between 50 and 100 .
-
-##### Test if the time taken by each movement and action is respected?
-
-
-
 
 #### General
 
@@ -209,4 +199,3 @@ message <K>,<text>
 ###### +Did you learn anything from this project?
 
 ###### +Would you recommend/nominate this program as an example for the rest of the school?
-
