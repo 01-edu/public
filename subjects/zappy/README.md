@@ -4,8 +4,6 @@
 
 You have to create Zappy, which is an entirely automatic game where some AI's play amongst themselves. It is about creating families, surviving by eating food and collecting stones in order to level up. Each level has different requirements for a ritual, which makes the adventure more and more difficult for the AI players, which play on their own, without any help form their creator. The game is over once six members of one family reach the highest possible level (8).
 
-### Instructions
-
 ### Game presentation
 
 ### The Game Parts
