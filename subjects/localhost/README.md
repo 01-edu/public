@@ -1,55 +1,39 @@
 ## Localhost
 
-HTTP,  HyperText Transfer Protocol, standard application-level protocol used for exchanging files on the World Wide Web.Each Web browsers are HTTP clients that send file requests to Web servers, which in turn handle the requests via an HTTP service. 
+Finally you are going to understand how internet works from the server side. The Hypertext Transfer Protocol was created in order to ensure a reliable way to communicate on a request/response base.
+It is used by servers and clients (usually browsers) to serve content and it is the backbone of the World Wide Web, still it is also used in many other cases that are far beyond the scope of this exercise.
+Here you will learn the basics of the protocol and a good place to start could be the [RFC](https://www.rfc-editor.org/rfc/rfc9112.html).
+
 
 ### Instructions
 
-#### Server
+- The project can be written in one of these languages [`Rust`, `C++`, `C`].
 
-The project can be written in one of these languages [Rust,Go,C++,C...]
+#### The Server
 
-- Your server must not crash for any reason.
-- Any request to your server should never runing forever.
-- Your server can listen on multiple servers and ports at the same time without any conflict.
-- You must use only one process and no threads.
-- You must use `exec` functions only in `CGI` part.
-- Your server must be compatible with the last version of your chosen browser .
-- You can use `NGINX` to compare headers and answer behaviors with your server.
-- You must manage at least [`GET`, `POST`, `DELETE`] methods.
-- You must handle customization errors *(Binding error,wrong configue file...)*.
-- You must create error page for at least for the following error codes [400,311,403,404,405,413].
-- You must execute `CGI` based on certain file extensions such as [`.php`,`.py`,...] at least one.
+- Your server should *never* crash.
+- All requests should timeout if they are taking too long.
+- Your server should be able to listen on multiple ports and instantiate multiple servers at the same time.
+- Your server must receive a request from the browser/client and send a response using the `HTTP` header and body.
+- You must use only one process and one thread.
+- Your server should be compatible with `HTTP/1.1` protocol.
+- You can compare your results with `NGINX` which will be used as the reference.
+- Your server should be compatible with the last version of your chosen browser.
+- Your server should manage at least [`GET`, `POST`, `DELETE`] methods.
+- Your server should handle cookies and sessions.
+- You should create default error pages for at least the following error codes [311,400,403,404,405,413].
+- Your server should call `select` function (or equivalent function) one time only.
+- You should manage chunked and unchunked requests.
+- You should set the right status for each response.
+
+#### The CGI
+- Based on the file extension the server will execute the corresponding `CGI` (for example `.php` or `.py`).
+- You need to implement only one `CGI` of your choice.
+- You are allowed to fork a new process to run the `CGI`.
 - The `CGI` should run in the correct directory for relative path file access.
-- You must use the enverement paramatre of `CGI`. 
-- Your server must receive a request from the browser and send a response using the HTTP header and body.
-- Your server must call `select` function (or equivalent function) one time only.
-- You must manage chunked and unchunked requests.
-- You must set the right status for each response.
-
-here is an example of an HTTP request with `GET` method:
-
-```http
-GET /Welcome.html HTTP/1.1
-User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
-Host: www.01talent.com
-Accept-Language: en-us
-Accept-Encoding: gzip, deflate
-Connection: Keep-Alive
-```
-and here is an example of an HTTP response : 
-
-```http
-HTTP/1.1 404 Not Found
-Date: Thu, 19 Jul 2022 10:36:20 GMT
-Server: Hserver/1.1.0
-```
-
-> Stress tests your server. It must stay available at all cost. use this command to test it `siege -b [IP]:[PORT]`
-	the availability should be up to 95.99
+- You must use the environment parameter of `CGI`.
 	
-> Learn about [CGI](https://en.wikipedia.org/wiki/Common_Gateway_Interface)
-
-#### Configurations File
+#### Configuration File
 
 This an example of a simple server configuration :
 
@@ -58,7 +42,7 @@ server {
     listen                          80;
     
     server_name                     localhost;
-	
+
     root                            /usr/share/nginx/html;
     
     error_page          Mozilla 404        /usr/share/nginx/errors/404.html;
@@ -72,13 +56,13 @@ server {
         
         upload_status on; 
 
-        upload_path         /usr/share/nginx/upload; //depends on "upload_status"
+        upload_path         /usr/share/nginx/upload;
     }
 }
 ```
 In the example above if the "upload_status" is "off", there is no need for "upload_path." 
 
-You have to base your server on this example bbut you must test also more complex configurations with multiple locations and ports and multiple servers such as:
+You have to base your server on this example but you must test also more complex configurations with multiple locations and ports and multiple servers such as:
 
 ```
 {
@@ -133,7 +117,7 @@ server {
 The Main Rules :
 
 - Choose the host(server_address) and a port or multiple ports for each server.
-- The first server for a host:port will be the default if the "server_name" didn't mutch any other servers "server_name".
+- The first server for a host:port will be the default if the "server_name" didn't match any other servers "server_name".
 - Setup default error pages.
 - Limit client body size for uploads.
 - Setup routes with one or multiple of the following rules/configuration (routes won't be using regexp):
@@ -153,16 +137,13 @@ $ ./localhost -t WrongConfigFile.conf
 you miss server_addr in server 3
 ```
 
-If your config file syntax is right :
-
-```console
-$ ./localhost Myconfigfile.conf
-Listening on [IP]:[PORT]
-Listening on [IP]:[PORT2]
-```
-> If you’ve got a question about one behavior, you should compare your program behavior with NGINX’s.
+#### Testing your server
+- Do stress tests (for example with `siege -b [IP]:[PORT]`), it must stay available at all costs (availability should be up to 95.99).
+- Create and provide during the audit tests for as many cases as you can (redirections, bad configuration files, static and dynamic pages, default error pages and so on).
+- You can use the language you prefer to write tests, as long as they are exhaustive and the auditor can check their behavior.
+- Test possible memory leaks before to submit the project.
+- The server should never crash.
 
 ### Bonus
-- Add multiple `CGI`
-- Create a php page and connect it with a mysql database. 
-- The "PHP" page should named `mysql.php` and should be in the root path.
+- Handle at least one more `CGI`.
+- Create a PHP page and connect it with a MySQL database. 
