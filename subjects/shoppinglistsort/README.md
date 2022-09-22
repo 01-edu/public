@@ -1,4 +1,4 @@
-# shoppinglistsort
+## shoppinglistsort
 
 ### Instructions
 
@@ -21,11 +21,14 @@ Here is a possible program to test your function:
 ```go
 package main
 
-import "fmt"
+import (
+  "fmt"
+  "piscine"
+)
 
 func main() {
-	 array:= []string{"Banana", "Mushroom", "Salt", "Pepper","Tea", "Milk"}
-   fmt.Println(ShoppingListSort(array))
+  array:= []string{"Banana", "Mushroom", "Salt", "Pepper","Tea", "Milk"}
+  fmt.Println(piscine.ShoppingListSort(array))
 }
 ```
 
