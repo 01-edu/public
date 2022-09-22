@@ -1,8 +1,8 @@
-## fishandchips
+# fishandchips
 
 ### Instructions
 
-Write a function called `Fishandchips` that takes an integer and returns a string.
+Write a function called `FishAndChips()` that takes an integer and returns a string.
 
 - If the number is divisible by 3, print `chips` followed by a newline `\n`.
 - If the number is divisible by 2 and 3, print `fish and chips` followed by a newline `\n`.
@@ -11,12 +11,13 @@ Write a function called `Fishandchips` that takes an integer and returns a strin
 ### Expected function
 
 ```go
-func Fishandchips(n int32) string {
+func FishAndChips(n int32) string {
+
 }
 ```
 ### Usage
 
-Here is a possible program to test your function :
+Here is a possible program to test your function:
 
 ```go
 package main
@@ -28,7 +29,7 @@ func main() {
 	}
 }
 ```
-And its output :
+And its output:
 
 ```go
 fish and chips$
