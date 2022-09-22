@@ -22,7 +22,9 @@ Here you will learn the basics of the protocol and a good place to start could b
 - Your server should manage at least [`GET`, `POST`, `DELETE`] methods.
 - Your server should handle cookies and sessions.
 - You should create default error pages for at least the following error codes [400,403,404,405,413,500].
-- Your server should call `select` function (or equivalent function) one time only.
+- Your server should call `select` function (or `poll` or equivalent) only once for each client/server communication.
+- All reads and writes should pass by `select` or equivalent API.
+- All I/O operations should be non-blocking.
 - You should manage chunked and unchunked requests.
 - You should set the right status for each response.
 
@@ -127,6 +129,8 @@ The Main Rules :
   - Turn on or off the directory listing.
   - Set a default file to answer if the request is a directory.
   - No need to manage comments "(#)".
+
+> There is no need to pass through `poll` when reading the configuration file.
 
 to check the syntax of the config file you must run this : 
 
