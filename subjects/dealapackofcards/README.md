@@ -1,4 +1,4 @@
-# dealapackofcards
+## dealapackofcards
 
 ### Instructions
 
@@ -21,9 +21,13 @@ func DealAPackOfCards (deck []int) {
 Here is a possible program to test your function:
 
 ```go
+package main
+
+import "piscine"
+
 func main() {
 	deck := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
-  	DealAPackOfCards(deck)
+  	piscine.DealAPackOfCards(deck)
 }
 ```
 
