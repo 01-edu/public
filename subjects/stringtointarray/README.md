@@ -1,4 +1,4 @@
-# stringtointarray
+## stringtointarray
 
 ### Instructions
 
@@ -19,12 +19,15 @@ Here is a possible program to test your function:
 ```go
 package main
 
-import "fmt"
+import (
+  "fmt"
+  "piscine"
+)
 
 func main() {
-	fmt.Println(StringToIntArray("A quick brown fox jumps over the lazy dog"))
-	fmt.Println(StringToIntArray("Converted this string into an int"))
-	fmt.Println(StringToIntArray("hello THERE"))
+	fmt.Println(piscine.StringToIntArray("A quick brown fox jumps over the lazy dog"))
+	fmt.Println(piscine.StringToIntArray("Converted this string into an int"))
+	fmt.Println(piscine.StringToIntArray("hello THERE"))
 }
 ```
 
