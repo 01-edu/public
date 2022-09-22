@@ -14,15 +14,22 @@ These methods have to be written for it:
 ### Expected functions
 
 ```rust
-pub fn new(&[u32]) -> Self {}
+#[derive(Debug)]
+pub struct Numbers<'a> {
+    numbers: &'a [u32],
+}
 
-pub fn list(&self) -> &[u32] {}
+impl Numbers {
+    pub fn new(&[u32]) -> Self {}
 
-pub fn latest(&self) -> Option<u32> {}
+    pub fn list(&self) -> &[u32] {}
 
-pub fn highest(&self) -> Option<u32> {}
+    pub fn latest(&self) -> Option<u32> {}
 
-pub fn highest_three(&self) -> Vec<u32> {}
+    pub fn highest(&self) -> Option<u32> {}
+
+    pub fn highest_three(&self) -> Vec<u32> {}
+}
 ```
 
 ### Usage
@@ -33,9 +40,6 @@ Here is a program to test your function.
 use highest::*;
 
 #[derive(Debug)]
-struct Numbers<'a> {
-    numbers: &'a [u32],
-}
 
 fn main() {
     let expected = [30, 500, 20, 70];
