@@ -1,4 +1,4 @@
-# fooddeliverytime
+## fooddeliverytime
 
 ### Instructions
 
@@ -27,13 +27,16 @@ Here is a possible program to test your function:
 ```go
 package main
 
-import "fmt"
+import (
+  "fmt"
+  "piscine"
+)
 
 func main() {
-  fmt.Println(FoodDeliveryTime("burger"))
-  fmt.Println(FoodDeliveryTime("chips"))
-  fmt.Println(FoodDeliveryTime("nuggets"))
-  fmt.Println(FoodDeliveryTime("burger") + FoodDeliveryTime("chips") + FoodDeliveryTime("nuggets"))
+  fmt.Println(piscine.FoodDeliveryTime("burger"))
+  fmt.Println(piscine.FoodDeliveryTime("chips"))
+  fmt.Println(piscine.FoodDeliveryTime("nuggets"))
+  fmt.Println(piscine.FoodDeliveryTime("burger") + piscine.FoodDeliveryTime("chips") + piscine.FoodDeliveryTime("nuggets"))
 }
 ```
 
