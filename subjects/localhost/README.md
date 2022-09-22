@@ -70,4 +70,6 @@ In the file you should be able to specify the following:
 
 ### Bonus
 - Handle at least one more `CGI`.
-- Create a PHP page and connect it with a MySQL database. 
+- Write the project in two different programming languages.
+
+> If the two languages are C and C++ the provided solution for C++ should heavily rely on C++ specific features.
