@@ -40,8 +40,6 @@ Here is a program to test your function.
 ```rust
 use highest::*;
 
-#[derive(Debug)]
-
 fn main() {
     let expected = [30, 500, 20, 70];
     let n = Numbers::new(&expected);
