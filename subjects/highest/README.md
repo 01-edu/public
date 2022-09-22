@@ -5,6 +5,7 @@
 In this exercise, a `Numbers` struct will be given.
 
 These methods have to be written for it:
+
 - `new`: create a new instance of `Numbers`.
 - `List`: which returns an `array` with every number in the struct.
 - `Latest`: which returns an `Option<u32>` with the last added number.
