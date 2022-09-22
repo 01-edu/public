@@ -1,4 +1,4 @@
-# rockandroll
+## rockandroll
 
 ### Instructions
 
@@ -23,14 +23,14 @@ Here is a possible program to test your function:
 package main
 
 import (
-	"fmt"
-	"strconv"
+  "fmt"
+  "piscine"
 )
 
 func main() {
-	fmt.Println(RockAndRoll(4))
-	fmt.Println(RockAndRoll(9))
-	fmt.Println(RockAndRoll(6))
+  fmt.Println(piscine.RockAndRoll(4))
+  fmt.Println(piscine.RockAndRoll(9))
+  fmt.Println(piscine.RockAndRoll(6))
 }
 ```
 And its output:
