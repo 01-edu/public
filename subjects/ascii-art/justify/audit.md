@@ -40,11 +40,11 @@ Example : go run . something standard --align=right
 
 ###### Does it display the correct result at the center?
 
-##### Try passing as arguments `"23Hello World!" standard --align=left`
+##### Try passing as arguments `"23Hello World\!" standard --align=left`
 
 ###### Does it display the correct result at the left side?
 
-##### Try passing as arguments `"HELLO there HOW are YOU?!" thinkertoy --align=justify`
+##### Try passing as arguments `"HELLO there HOW are YOU?\!" thinkertoy --align=justify`
 
 ###### Does it display the correct result justified?
 
