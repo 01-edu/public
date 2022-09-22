@@ -22,6 +22,7 @@ Here you will learn the basics of the protocol and a good place to start could b
 - You can compare your results with `NGINX` which will be used as the reference.
 - Your server should be compatible with the last version of your chosen browser.
 - Your server should manage at least [`GET`, `POST`, `DELETE`] methods.
+- Your server should be able to receive file uploads made by the client.
 - Your server should handle cookies and sessions.
 - You should create default error pages for at least the following error codes [400,403,404,405,413,500].
 - Your server should call `select` function (or `poll` or equivalent) only once for each client/server communication.
@@ -34,114 +35,31 @@ Here you will learn the basics of the protocol and a good place to start could b
 - Based on the file extension the server will execute the corresponding `CGI` (for example `.php` or `.py`).
 - You need to implement only one `CGI` of your choice.
 - You are allowed to fork a new process to run the `CGI`.
-- The `CGI` should run in the correct directory for relative path file access.
-- You must use the environment parameter of `CGI`.
+- `CGI` expects the file to process as first argument and `EOF` as end of the body.
+- Pay attention to the directory where the `CGI` will run for correct relative paths handling.
+- The `CGI` will check `PATH_INFO` environment variable to define the full path.
 	
 #### Configuration File
 
-This an example of a simple server configuration :
+In the file you should be able to specify the following:
 
-```
-server {
-    listen                          80;
-    
-    server_name                     localhost;
-
-    root                            /usr/share/nginx/html;
-    
-    error_page          Mozilla 404        /usr/share/nginx/errors/404.html;
-    
-    client_body_size                10m; 
-    location /
-    {
-        http_methods  GET  POST DELETE;
-        
-        index index.html
-        
-        upload_status on; 
-
-        upload_path         /usr/share/nginx/upload;
-    }
-}
-```
-In the example above if the "upload_status" is "off", there is no need for "upload_path." 
-
-You have to base your server on this example but you must test also more complex configurations with multiple locations and ports and multiple servers such as:
-
-```
-{
-server {
-    listen                              80;
-    server_address                      127.0.0.1;
-    server_name                         localhost;
-    ...
-    ...
-    ...
-    location ...{
-
-    }
-    location ...{
-
-    }
-}
-server {
-    listen                              5000;
-    listen                              5001;
-    server_address                      192.182.2.1;
-    server_name                         01edu.com;
-    ...
-    ...
-    ...
-    location ...{
-
-    }
-}
-server {
-    listen                          5001;
-    listen                          5002;
-    listen                          5003;
-    server_address                  192.186.2.54;
-    server_name                     01talent.com;
-    ...
-    ...
-    ...
-    location ...{
-
-    }
-    location ...{
-
-    }
-	location ...{
-
-    }
-}
-}
-```
-
-The Main Rules :
-
-- Choose the host(server_address) and a port or multiple ports for each server.
-- The first server for a host:port will be the default if the "server_name" didn't match any other servers "server_name".
-- Setup default error pages.
+- Choose the host (server_address) and one port or multiple ports for each server.
+- The first server for a host:port will be the default if the "server_name" didn't match any other server.
+- Path to custom error pages.
 - Limit client body size for uploads.
-- Setup routes with one or multiple of the following rules/configuration (routes won't be using regexp):
+- Setup routes with one or multiple of the following settings:
   - Define a list of accepted HTTP methods for the route.
   - Define an HTTP redirection.
-  - Define a directory or a file from where the file should be searched (for example, if URL /test is rooted to /usr/Desktop, url /usr/Desktop/tmp/folder1/folder2).
-  - Turn on or off the directory listing.
+  - Define a directory or a file from where the file should be searched (for example, if `/test` is rooted to `/usr/Desktop`, the URL `/test/my_page.html` will route to `/usr/Desktop/my_page.html`).
+  - Define a default file for the route if the URL is a directory.
+  - Specify a `CGI` to use for a certain file extension.
+  - Turn on or off directory listing.
   - Set a default file to answer if the request is a directory.
-  - No need to manage comments "(#)".
+- No need to manage comments "(#)".
+
+> Routes won't need to support regular expressions.
 
 > There is no need to pass through `poll` when reading the configuration file.
-
-to check the syntax of the config file you must run this : 
-
-```console
-$ ./localhost -t GoodConfigFile.conf
-Localhost : the configuration file GoodConfigFile.conf syntax is ok
-$ ./localhost -t WrongConfigFile.conf
-you miss server_addr in server 3
-```
 
 #### Testing your server
 - Do stress tests (for example with `siege -b [IP]:[PORT]`), it must stay available at all costs (availability should be up to 95.99).
