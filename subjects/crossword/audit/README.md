@@ -1,6 +1,12 @@
 ##### Open the repository of the project and check the submitted files
 
-###### Can you confirm that the `"crosswordSolver.js"` file is present and you can run the `"main.js"` provided?
+###### Can you confirm that the `crosswordSolver.js` file is present and you can run the following comand `node crosswordSolver.js` adding the following lines to the original `crosswordSolver.js`?
+```js
+const puzzle = '2001\n0..0\n1000\n0..0'
+const words = ['casa', 'alan', 'ciao', 'anta']
+
+crosswordSolver(puzzle, words)
+```
 
 ##### Try running the function with the arguments:
 ```js
@@ -15,7 +21,7 @@ anta
 o..n
 ```
 
-###### Does the function returns the value above?
+###### Does the function displays the value above?
 
 ##### Try running the function with the arguments:
 ```js
@@ -65,9 +71,56 @@ bikini..r...n..
 ..........s....
 ```
 
-###### Does the function returns the value above?
+###### Does the function displays the value above?
+
+###### Does the function displays the value above?
 
 ##### Try running the function with the arguments:
+```js
+const puzzle = 
+`..1.1..1...
+10000..1000
+..0.0..0...
+..1000000..
+..0.0..0...
+1000..10000
+..0.1..0...
+....0..0...
+..100000...
+....0..0...
+....0......`
+const words = [
+  'popcorn',
+  'fruit',
+  'flour',
+  'chicken',
+  'eggs',
+  'vegetables',
+  'pasta',
+  'pork',
+  'steak',
+  'cheese',
+]
+```
+
+```
+..p.f..v...
+flour..eggs
+..p.u..g...
+..chicken..
+..o.t..t...
+pork..pasta
+..n.s..b...
+....t..l...
+..cheese...
+....a..s...
+....k......
+```
+
+###### Does the function displays the value above?
+
+##### Try running the function with the arguments:
+[comment]: <> Test mismatch between number of input words and puzzle starting cells
 ```js
 const puzzle = '2001\n0..0\n1000\n0..0'
 const words = ['casa', 'casa', 'ciao', 'anta']
@@ -77,9 +130,10 @@ const words = ['casa', 'casa', 'ciao', 'anta']
 Error
 ```
 
-###### Does the function returns the value above?
+###### Does the function displays the value above?
 
 ##### Try running the function with the arguments:
+[comment]: <> Test starting words higher than 2
 ```js
 const puzzle = '0001\n0..0\n3000\n0..0'
 const words = ['casa', 'alan', 'ciao', 'anta']
@@ -89,9 +143,10 @@ const words = ['casa', 'alan', 'ciao', 'anta']
 Error
 ```
 
-###### Does the function returns the value above?
+###### Does the function displays the value above?
 
 ##### Try running the function with the arguments:
+[comment]: <> Test words repetition
 ```js
 const puzzle = '2001\n0..0\n1000\n0..0'
 const words = ['casa', 'casa', 'ciao', 'anta']
@@ -101,9 +156,10 @@ const words = ['casa', 'casa', 'ciao', 'anta']
 Error
 ```
 
-###### Does the function returns the value above?
+###### Does the function displays the value above?
 
 ##### Try running the function with the arguments:
+[comment]: <> Test empty puzzle
 ```js
 const puzzle = ''
 const words = ['casa', 'alan', 'ciao', 'anta']
@@ -113,9 +169,10 @@ const words = ['casa', 'alan', 'ciao', 'anta']
 Error
 ```
 
-###### Does the function returns the value above?
+###### Does the function displays the value above?
 
 ##### Try running the function with the arguments:
+[comment]: <> Test wrong format checks
 ```js
 const puzzle = 123
 const words = ['casa', 'alan', 'ciao', 'anta']
@@ -125,9 +182,10 @@ const words = ['casa', 'alan', 'ciao', 'anta']
 Error
 ```
 
-###### Does the function returns the value above?
+###### Does the function displays the value above?
 
 ##### Try running the function with the arguments:
+[comment]: <> Test wrong format checks
 ```js
 const puzzle = ''
 const words = 123
@@ -137,10 +195,21 @@ const words = 123
 Error
 ```
 
-###### Does the function returns the value above?
+###### Does the function displays the value above?
+
+##### Try running the function with the arguments:
+[comment]: <> Test multiple solutions 
+```js
+const puzzle = '2001\n0..0\n1000\n0..0'
+const words = ['aaab', 'aaac', 'aaad', 'aaae']
+```
+
+```
+Error
+```
+
+###### Does the function displays the value above?
 
 #### Bonus
 
-###### Visualizer
-
-###### Performance / Algorithm used to solve it
+###### +Is the project using ...
