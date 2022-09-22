@@ -1,4 +1,4 @@
-# reversemenuindex
+## reversemenuindex
 
 ### Instructions
 
@@ -23,10 +23,13 @@ Here is a possible program to test your function:
 ```go
 package main
 
-import "fmt"
+import (
+  "fmt"
+  "piscine"
+)
 
 func main() {
-    fmt.Println(ReverseMenuIndex([]string{"desserts", "mains", "drinks", "starters"}))
+  fmt.Println(piscine.ReverseMenuIndex([]string{"desserts", "mains", "drinks", "starters"}))
 }
 ```
 
