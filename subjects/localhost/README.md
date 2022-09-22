@@ -1,8 +1,10 @@
 ## Localhost
 
 Finally you are going to understand how internet works from the server side. The Hypertext Transfer Protocol was created in order to ensure a reliable way to communicate on a request/response base.
-It is used by servers and clients (usually browsers) to serve content and it is the backbone of the World Wide Web, still it is also used in many other cases that are far beyond the scope of this exercise.
-Here you will learn the basics of the protocol and a good place to start could be the [RFC](https://www.rfc-editor.org/rfc/rfc9112.html).
+
+This protocol is used by servers and clients (usually browsers) to serve content and it is the backbone of the World Wide Web, still it is also used in many other cases that are far beyond the scope of this exercise.
+
+Here you will learn the basics of the protocol and a good place to start could be the [HTTP/1.1 RFC](https://www.rfc-editor.org/rfc/rfc9112.html).
 
 
 ### Instructions
