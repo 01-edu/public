@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function `StringToIntArray()` that takes a string and returns the corresponding integer array.
+Write a function `StringToIntArray()` that takes a `string` and returns the corresponding `int` array.
 
 ### Expected function
 
@@ -25,9 +25,9 @@ import (
 )
 
 func main() {
-	fmt.Println(piscine.StringToIntArray("A quick brown fox jumps over the lazy dog"))
-	fmt.Println(piscine.StringToIntArray("Converted this string into an int"))
-	fmt.Println(piscine.StringToIntArray("hello THERE"))
+  fmt.Println(piscine.StringToIntArray("A quick brown fox jumps over the lazy dog"))
+  fmt.Println(piscine.StringToIntArray("Converted this string into an int"))
+  fmt.Println(piscine.StringToIntArray("hello THERE"))
 }
 ```
 
