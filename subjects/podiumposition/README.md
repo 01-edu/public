@@ -22,11 +22,14 @@ Here is a possible program to test your function:
 ```go
 package main
 
-import "fmt"
+import (
+    "fmt"
+    "piscine"
+)
 
 func main() {
     position := [][]string{{"4th Place"}, {"3rd Place"}, {"2nd Place"}, {"1st Place"}}
-    	fmt.Println(PodiumPosition(position))
+    	fmt.Println(piscine.PodiumPosition(position))
 }
 ```
 
