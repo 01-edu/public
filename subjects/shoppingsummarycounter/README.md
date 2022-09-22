@@ -1,4 +1,4 @@
-# shoppingsummarycounter
+## shoppingsummarycounter
 
 ### Instructions
 
@@ -21,12 +21,15 @@ Here is a possible program to test your function:
 ```go
 package main
 
-import "fmt"
+import (
+  "fmt"
+  "piscine"
+)
 
 func main() {
-    summary := "Burger Water Carrot Coffee Water Water Chips Carrot Carrot Burger Carrot Water"
-    for index,element := range ShoppingSummaryCounter(summary){
-        fmt.Println(index,"=>",element)
+  summary := "Burger Water Carrot Coffee Water Water Chips Carrot Carrot Burger Carrot Water"
+    for index,element := range piscine.ShoppingSummaryCounter(summary){
+      fmt.Println(index,"=>",element)
     }
 }
 ```
