@@ -11,7 +11,7 @@ Here you will learn the basics of the protocol and a good place to start could b
 
 #### The Server
 
-- Your server should *never* crash.
+- Your server should **never** crash.
 - All requests should timeout if they are taking too long.
 - Your server should be able to listen on multiple ports and instantiate multiple servers at the same time.
 - Your server must receive a request from the browser/client and send a response using the `HTTP` header and body.
@@ -21,7 +21,7 @@ Here you will learn the basics of the protocol and a good place to start could b
 - Your server should be compatible with the last version of your chosen browser.
 - Your server should manage at least [`GET`, `POST`, `DELETE`] methods.
 - Your server should handle cookies and sessions.
-- You should create default error pages for at least the following error codes [311,400,403,404,405,413].
+- You should create default error pages for at least the following error codes [400,403,404,405,413,500].
 - Your server should call `select` function (or equivalent function) one time only.
 - You should manage chunked and unchunked requests.
 - You should set the right status for each response.
@@ -142,7 +142,7 @@ you miss server_addr in server 3
 - Create and provide during the audit tests for as many cases as you can (redirections, bad configuration files, static and dynamic pages, default error pages and so on).
 - You can use the language you prefer to write tests, as long as they are exhaustive and the auditor can check their behavior.
 - Test possible memory leaks before to submit the project.
-- The server should never crash.
+- Once again, the server should never crash and never leak memory.
 
 ### Bonus
 - Handle at least one more `CGI`.
