@@ -16,8 +16,8 @@ Here you will learn the basics of the protocol and a good place to start could b
 - Your server should **never** crash.
 - All requests should timeout if they are taking too long.
 - Your server should be able to listen on multiple ports and instantiate multiple servers at the same time.
-- Your server must receive a request from the browser/client and send a response using the `HTTP` header and body.
 - You must use only one process and one thread.
+- Your server must receive a request from the browser/client and send a response using the `HTTP` header and body.
 - Your server should be compatible with `HTTP/1.1` protocol.
 - You can compare your results with `NGINX` which will be used as the reference.
 - Your server should be compatible with the last version of your chosen browser.
@@ -43,13 +43,13 @@ Here you will learn the basics of the protocol and a good place to start could b
 
 In the file you should be able to specify the following:
 
-- Choose the host (server_address) and one port or multiple ports for each server.
+- The host (server_address) and one or multiple ports for each server.
 - The first server for a host:port will be the default if the "server_name" didn't match any other server.
 - Path to custom error pages.
 - Limit client body size for uploads.
 - Setup routes with one or multiple of the following settings:
   - Define a list of accepted HTTP methods for the route.
-  - Define an HTTP redirection.
+  - Define HTTP redirections.
   - Define a directory or a file from where the file should be searched (for example, if `/test` is rooted to `/usr/Desktop`, the URL `/test/my_page.html` will route to `/usr/Desktop/my_page.html`).
   - Define a default file for the route if the URL is a directory.
   - Specify a `CGI` to use for a certain file extension.
@@ -62,8 +62,9 @@ In the file you should be able to specify the following:
 > There is no need to pass through `poll` when reading the configuration file.
 
 #### Testing your server
-- Do stress tests (for example with `siege -b [IP]:[PORT]`), it must stay available at all costs (availability should be up to 95.99).
-- Create and provide during the audit tests for as many cases as you can (redirections, bad configuration files, static and dynamic pages, default error pages and so on).
+- Do stress tests (for example with `siege -b [IP]:[PORT]`), it must stay available at all costs (availability should be up to 99.5).
+- Create tests for as many cases as you can (redirections, bad configuration files, static and dynamic pages, default error pages and so on).
+- You will be requested to provide and explain your tests during the audits.
 - You can use the language you prefer to write tests, as long as they are exhaustive and the auditor can check their behavior.
 - Test possible memory leaks before to submit the project.
 - Once again, the server should never crash and never leak memory.
