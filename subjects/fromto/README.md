@@ -1,4 +1,4 @@
-# fromto
+## fromto
 
 ### Instructions
 
@@ -36,26 +36,24 @@ Here is a possible program to test your function:
 ```go
 package main
 
-import "fmt"
+import (
+        "fmt"
+        "piscine"
+)
 
 func main() {
-  fmt.Print(FromTo(1, 10))
-  fmt.Print(FromTo(10, 1))
-  fmt.Print(FromTo(10, 10))
-  fmt.Print(FromTo(100, 10))
+        fmt.Print(piscine.FromTo(1, 10))
+        fmt.Print(piscine.FromTo(10, 1))
+        fmt.Print(piscine.FromTo(10, 10))
+        fmt.Print(piscine.FromTo(100, 10))
 }
 ```
-<<<<<<< HEAD
-
-And its output :
-=======
 And its output:
->>>>>>> style(fromto): white-space, formmating
 
 ```console
 $ go run . | cat -e
 01, 02, 03, 04, 05, 06, 07, 08, 09, 10$
 10, 09, 08, 07, 06, 05, 04, 03, 02, 01$
 10$
-invalid$
+Invalid$
 ```
