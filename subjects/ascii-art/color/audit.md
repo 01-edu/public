@@ -90,4 +90,4 @@ EX: go run . something --color=<color>
 
 ##### Try to use different `--color` flag notations like: `--color=red`, `--color=#ff0000`, `--color=rgb(255, 0, 0)` or `--color=hsl(0, 100%, 50%)`.
 
-###### Is it possible to use 2 or more color flag notations?
+###### +Is it possible to use 2 or more color flag notations?
