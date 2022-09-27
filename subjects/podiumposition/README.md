@@ -35,7 +35,7 @@ func main() {
 
 And its output:
 
-```go
+```console
 $ go run . | cat -e
 [[1st Place] [2nd Place] [3rd Place] [4th Place]]$
 ```
