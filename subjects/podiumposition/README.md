@@ -5,12 +5,12 @@
 A F1 race just finished and the commentator is calling the finishing positions incorrectly.
 Help to fix this before the contestants arrive at the podium by providing the commentator with the correct podium position.
 
-Write a function `PodiumPosition` that takes an array of arrays of type `string` and returns the competitor positions correctly.
+Write a function `PodiumPosition` that takes a slice of slices of type `string` and returns the competitor positions correctly.
 
 ### Expected function
 
 ```go
-func PodiumPosition(podium[][] string) [][]string {
+func PodiumPosition(podium [][]string) [][]string {
 
 }
 ```
@@ -23,13 +23,13 @@ Here is a possible program to test your function:
 package main
 
 import (
-    "fmt"
-    "piscine"
+        "fmt"
+        "piscine"
 )
 
 func main() {
-    position := [][]string{{"4th Place"}, {"3rd Place"}, {"2nd Place"}, {"1st Place"}}
-    	fmt.Println(piscine.PodiumPosition(position))
+        position := [][]string{{"4th Place"}, {"3rd Place"}, {"2nd Place"}, {"1st Place"}}
+        fmt.Println(piscine.PodiumPosition(position))
 }
 ```
 
