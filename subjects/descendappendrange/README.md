@@ -4,9 +4,9 @@
 
 - Write a function that takes an `int` max and an `int` min as parameters. The function should return a slice of `int`s with all the values between the max and min.
 
-- The `max`must be included, and `min` must be excluded.
+- The `max` must be included, and `min` must be excluded.
 
-- If `max` is inferior than or equal to `min`, return a `nil` value.
+- If `max` is inferior than or equal to `min`, return an empty slice.
 
 - `make()` is not allowed for this exercise.
 
@@ -26,13 +26,13 @@ Here is a possible program to test your function:
 package main
 
 import (
-  "fmt"
-  "piscine"
+        "fmt"
+        "piscine"
 )
 
 func main() {
-  fmt.Println(piscine.DescendAppendRange(10, 5))
-  fmt.Println(piscine.DescendAppendRange(5, 10))
+        fmt.Println(piscine.DescendAppendRange(10, 5))
+        fmt.Println(piscine.DescendAppendRange(5, 10))
 }
 ```
 
