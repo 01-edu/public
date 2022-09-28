@@ -1,6 +1,6 @@
 ##### Open the repository of the project and check the submitted files
 
-###### Can you confirm that the `crosswordSolver.js` file is present and you can run the following comand `node crosswordSolver.js` adding the following lines to the original `crosswordSolver.js`?
+###### Can you confirm that the `crosswordSolver.js` file is present and you can run the following command `node crosswordSolver.js` adding the following lines to the original `crosswordSolver.js`?
 ```js
 const puzzle = '2001\n0..0\n1000\n0..0'
 const words = ['casa', 'alan', 'ciao', 'anta']
@@ -21,7 +21,7 @@ anta
 o..n
 ```
 
-###### Does the function displays the value above?
+###### Does the function display the value above?
 
 ##### Try running the function with the arguments:
 ```js
@@ -71,9 +71,7 @@ bikini..r...n..
 ..........s....
 ```
 
-###### Does the function displays the value above?
-
-###### Does the function displays the value above?
+###### Does the function display the value above?
 
 ##### Try running the function with the arguments:
 ```js
@@ -117,7 +115,7 @@ pork..pasta
 ....k......
 ```
 
-###### Does the function displays the value above?
+###### Does the function display the value above?
 
 ##### Try running the function with the arguments:
 [comment]: <> Test mismatch between number of input words and puzzle starting cells
@@ -130,7 +128,7 @@ const words = ['casa', 'casa', 'ciao', 'anta']
 Error
 ```
 
-###### Does the function displays the value above?
+###### Does the function display the value above?
 
 ##### Try running the function with the arguments:
 [comment]: <> Test starting words higher than 2
@@ -143,7 +141,7 @@ const words = ['casa', 'alan', 'ciao', 'anta']
 Error
 ```
 
-###### Does the function displays the value above?
+###### Does the function display the value above?
 
 ##### Try running the function with the arguments:
 [comment]: <> Test words repetition
@@ -156,7 +154,7 @@ const words = ['casa', 'casa', 'ciao', 'anta']
 Error
 ```
 
-###### Does the function displays the value above?
+###### Does the function display the value above?
 
 ##### Try running the function with the arguments:
 [comment]: <> Test empty puzzle
@@ -169,7 +167,7 @@ const words = ['casa', 'alan', 'ciao', 'anta']
 Error
 ```
 
-###### Does the function displays the value above?
+###### Does the function display the value above?
 
 ##### Try running the function with the arguments:
 [comment]: <> Test wrong format checks
@@ -182,7 +180,7 @@ const words = ['casa', 'alan', 'ciao', 'anta']
 Error
 ```
 
-###### Does the function displays the value above?
+###### Does the function display the value above?
 
 ##### Try running the function with the arguments:
 [comment]: <> Test wrong format checks
@@ -195,7 +193,7 @@ const words = 123
 Error
 ```
 
-###### Does the function displays the value above?
+###### Does the function display the value above?
 
 ##### Try running the function with the arguments:
 [comment]: <> Test multiple solutions 
@@ -208,7 +206,7 @@ const words = ['aaab', 'aaac', 'aaad', 'aaae']
 Error
 ```
 
-###### Does the function displays the value above?
+###### Does the function display the value above?
 
 #### Bonus
 
