@@ -210,4 +210,4 @@ Error
 
 #### Bonus
 
-###### +Is the project using ...
+###### +Is the project using a backtracking algorithm to solve the problem?
