@@ -1,13 +1,13 @@
-## stringtointarray
+## stringtointslice
 
 ### Instructions
 
-Write a function `StringToIntArray()` that takes a `string` and returns the corresponding `int` array.
+Write a function `StringToIntSlice()` that takes a `string` and returns the corresponding `int` slice.
 
 ### Expected function
 
 ```go
-func StringToIntArray(str string) []int {
+func StringToIntSlice(str string) []int {
 
 }
 ```
@@ -20,14 +20,14 @@ Here is a possible program to test your function:
 package main
 
 import (
-  "fmt"
-  "piscine"
+        "fmt"
+        "piscine"
 )
 
 func main() {
-  fmt.Println(piscine.StringToIntArray("A quick brown fox jumps over the lazy dog"))
-  fmt.Println(piscine.StringToIntArray("Converted this string into an int"))
-  fmt.Println(piscine.StringToIntArray("hello THERE"))
+        fmt.Println(piscine.StringToIntSlice("A quick brown fox jumps over the lazy dog"))
+        fmt.Println(piscine.StringToIntSlice("Converted this string into an int"))
+        fmt.Println(piscine.StringToIntSlice("hello THERE"))
 }
 ```
 
