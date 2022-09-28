@@ -1,7 +1,5 @@
-#### Functional
-
 #### Localhost is about creating your own HTTP server and test it with an actual browser.
-#### Take the necessary time to understand the project and to test it, looking into the source code will help a lot.
+##### Take the necessary time to understand the project and to test it, looking into the source code will help a lot.
 
 ### Basic server mechanics
 
@@ -18,18 +16,18 @@
 ### Configuration file
 
 #### Check the configuration file and ensure the following configs are working:
-##### Setup a single server with a single port.
-##### Setup multiple servers with different port.
-##### Setup multiple servers with different hostnames (for example: curl --resolve test.com:80:127.0.0.1 http://test.com/).
-##### Setup custom error pages.
-##### Limit the client body (for example: curl -X POST -H "Content-Type: plain/text" --data "BODY with something shorter or longer than body limit").
-##### Setup routes and ensure they are taken into account.
-##### Setup a default file in case the path is a directory.
-##### Setup a list of accepted methods for a route (for example: try to DELETE something with and without permission).
+###### Setup a single server with a single port.
+###### Setup multiple servers with different port.
+###### Setup multiple servers with different hostnames (for example: curl --resolve test.com:80:127.0.0.1 http://test.com/).
+###### Setup custom error pages.
+###### Limit the client body (for example: curl -X POST -H "Content-Type: plain/text" --data "BODY with something shorter or longer than body limit").
+###### Setup routes and ensure they are taken into account.
+###### Setup a default file in case the path is a directory.
+###### Setup a list of accepted methods for a route (for example: try to DELETE something with and without permission).
 
 ### Methods and cookies
 
-#### For each method be sure to check the status code (200, 404 etc):
+##### For each method be sure to check the status code (200, 404 etc):
 ###### Are the GET requests working properly?
 ###### Are the POST requests working properly?
 ###### Are the DELETE requests working properly?
@@ -55,11 +53,11 @@
 
 ### Siege & stress test
 
-##### Use siege with a GET method on an empty page, availability should be at least 99.5% with the command `siege -b [IP]:[PORT]`.
-##### Check if there is no memory leak (you could use some tools like top).
-##### Check if there is no hanging connection.
+###### Use siege with a GET method on an empty page, availability should be at least 99.5% with the command `siege -b [IP]:[PORT]`.
+###### Check if there is no memory leak (you could use some tools like top).
+###### Check if there is no hanging connection.
 
 ### Bonus Part
 
-##### +There's more than one CGI system such as [Python,C++,Perl].
-##### +There is a second implementation of the server in a different language (repeat practical tests on it before to validate).
+###### +There's more than one CGI system such as [Python,C++,Perl].
+###### +There is a second implementation of the server in a different language (repeat practical tests on it before to validate).
