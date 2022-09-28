@@ -4,7 +4,7 @@
 
 The restaurant employees are having a really tough day and are delivering the customers' food in the wrong order. You need to fix the problem so that they can deliver it correctly.
 
-Write a function `ReverseMenuIndex()` that takes an array of strings as arguments and returns another array of strings with the menu in the correct order.
+Write a function `ReverseMenuIndex()` that takes a `slice` of strings as an argument and returns another `slice` of strings with the menu in the correct order.
 
 - `append()` is not allowed for this exercise.
 
@@ -24,18 +24,18 @@ Here is a possible program to test your function:
 package main
 
 import (
-  "fmt"
-  "piscine"
+        "fmt"
+        "piscine"
 )
 
 func main() {
-  fmt.Println(piscine.ReverseMenuIndex([]string{"desserts", "mains", "drinks", "starters"}))
+        fmt.Println(piscine.ReverseMenuIndex([]string{"desserts", "mains", "drinks", "starters"}))
 }
 ```
 
 And its output:
 
-```go
+```console
 $ go run . | cat -e
 [starters drinks mains desserts]$
 ```
