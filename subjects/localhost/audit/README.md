@@ -38,7 +38,7 @@
 ### Interaction with the browser
 
 #### Open the browser used by the team during tests and its developer tools panel to help you with tests.
-###### Is te browser connecting with the server with no issues?
+###### Is the browser connecting with the server with no issues?
 ###### Are the request and response headers correct? (It should serve a full static website without any problem).
 ###### Try a wrong URL on the server, is it handled properly?
 ###### Try to list a directory, is it handled properly?
