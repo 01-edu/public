@@ -9,7 +9,11 @@ Here you will learn the basics of the protocol and a good place to start could b
 
 ### Instructions
 
-- The project can be written in one of these languages [`Rust`, `C++`, `C`].
+- The project must be written in `Rust`.
+- You can to use `libc` crate for functions as `epoll` or equivalents and any other necessary system call that Rust do not implement natively.
+- You may need to use `unsafe` keyword for some operations (don't abuse it).
+
+> You can't use crates that already implement server features like `tokio` or `nix`.
 
 #### The Server
 
@@ -25,8 +29,8 @@ Here you will learn the basics of the protocol and a good place to start could b
 - Your server should be able to receive file uploads made by the client.
 - Your server should handle cookies and sessions.
 - You should create default error pages for at least the following error codes [400,403,404,405,413,500].
-- Your server should call `select` function (or `poll` or equivalent) only once for each client/server communication.
-- All reads and writes should pass by `select` or equivalent API.
+- Your server should call `epoll` function (or equivalent) only once for each client/server communication.
+- All reads and writes should pass by `epoll` or equivalent API.
 - All I/O operations should be non-blocking.
 - You should manage chunked and unchunked requests.
 - You should set the right status for each response.
@@ -59,7 +63,7 @@ In the file you should be able to specify the following:
 
 > Routes won't need to support regular expressions.
 
-> There is no need to pass through `poll` when reading the configuration file.
+> There is no need to pass through `epoll` when reading the configuration file.
 
 #### Testing your server
 - Do stress tests (for example with `siege -b [IP]:[PORT]`), it must stay available at all costs (availability should be up to 99.5).
@@ -71,6 +75,4 @@ In the file you should be able to specify the following:
 
 ### Bonus
 - Handle at least one more `CGI`.
-- Write the project in two different programming languages.
-
-> If the two languages are C and C++ the provided solution for C++ should heavily rely on C++ specific features.
+- Rewrite the project in another programming language (can be `C++` or `C`).

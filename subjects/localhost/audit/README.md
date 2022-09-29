@@ -9,7 +9,7 @@
 ###### Is the server using only one select (or equivalent) to read the client requests and write answers?
 ###### Why is it important to use only one select and how was it achieved?
 ###### Read the code that goes from the select (or equivalent) to the read and write of a client, is there only one read or write per client per select (or equivalent)?
-###### Are the return values for I/O functions [read,recv,write,send] checked properly? (checking only -1 or 0 is not enough, both should be checked).
+###### Are the return values for I/O functions checked properly?
 ###### If an error is returned by the previous functions on a socket, is the client removed?
 ###### Is writing and reading ALWAYS done through a select (or equivalent)?
 
