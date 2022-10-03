@@ -25,7 +25,7 @@ abcdefghijklmnopqrstuvwxyz
 
 Normal cases :
 
-```
+```console
 $ go run . -c 4 file1.txt
 xyz
 $ go run . -c 4 file1.txt file2.txt
@@ -39,7 +39,7 @@ $
 
 Error cases :
 
-```
+```console
 $ go run . -c 4 file1.txt nonexisting1.txt file2.txt nonexisting2.txt
 ==> file1.txt <==
 xyz
