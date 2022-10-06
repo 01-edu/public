@@ -14,12 +14,14 @@ You must also create a type named `Link`. This will be the connection between th
 ### Expected Functions and structures
 
 ```rust
+#[derive(Debug)]
 pub struct WorkEnvironment {
     pub grade: Link,
 }
 
 pub type Link =
 
+#[derive(Debug)]
 pub struct Worker {
     pub role: String,
     pub name: String,
