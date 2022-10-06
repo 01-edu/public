@@ -53,7 +53,7 @@ pub struct Card {
 	pub rank: Rank,
 }
 
-pub fn winner_card(car: Card) -> bool{
+pub fn winner_card(card: &Card) -> bool {
 }
 ```
 
@@ -71,7 +71,7 @@ fn main() {
 	println!("Your card is {:?}", your_card);
 
 	// Now if the card is an Ace of Spades print "You are the winner"
-	if card_deck::winner_card(your_card) {
+	if card_deck::winner_card(&your_card) {
 		println!("You are the winner!");
 	}
 }
