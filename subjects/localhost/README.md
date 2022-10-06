@@ -10,26 +10,29 @@ Here you will learn the basics of the protocol and a good place to start could b
 ### Instructions
 
 - The project must be written in `Rust`.
-- You can to use `libc` crate for functions as `epoll` or equivalents and any other necessary system call that Rust do not implement natively.
+- You can use the `libc` crate for functions as `epoll` or equivalents and any other necessary system call that Rust do not implement natively.
 - You may need to use `unsafe` keyword for some operations (don't abuse it).
 
 > You can't use crates that already implement server features like `tokio` or `nix`.
 
 #### The Server
 
-- Your server should **never** crash.
-- All requests should timeout if they are taking too long.
-- Your server should be able to listen on multiple ports and instantiate multiple servers at the same time.
-- You must use only one process and one thread.
-- Your server must receive a request from the browser/client and send a response using the `HTTP` header and body.
-- Your server should be compatible with `HTTP/1.1` protocol.
+You goal is to write your very own server, which will use `HTTP` protocol to serve static web pages to browsers.
+
+For your server you must guarantee the following behavior:
+- It **never** crashes.
+- All requests timeout if they are taking too long.
+- It can listen on multiple ports and instantiate multiple servers at the same time.
+- You use only one process and one thread.
+- It receives a request from the browser/client and send a response using the `HTTP` header and body.
+- It is compatible with `HTTP/1.1` protocol.
 - You can compare your results with `NGINX` which will be used as the reference.
-- Your server should be compatible with the last version of your chosen browser.
-- Your server should manage at least [`GET`, `POST`, `DELETE`] methods.
-- Your server should be able to receive file uploads made by the client.
-- Your server should handle cookies and sessions.
+- It is compatible with the last version of your chosen browser.
+- It manages at least [`GET`, `POST`, `DELETE`] methods.
+- It is able to receive file uploads made by the client.
+- It handles cookies and sessions.
 - You should create default error pages for at least the following error codes [400,403,404,405,413,500].
-- Your server should call `epoll` function (or equivalent) only once for each client/server communication.
+- It calls `epoll` function (or equivalent) only once for each client/server communication.
 - All reads and writes should pass by `epoll` or equivalent API.
 - All I/O operations should be non-blocking.
 - You should manage chunked and unchunked requests.
