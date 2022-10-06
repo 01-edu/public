@@ -47,7 +47,6 @@ func main() {
 	fmt.Print(piscine.FromTo(10, 10))
 	fmt.Print(piscine.FromTo(100, 10))
 }
-
 ```
 And its output:
 
