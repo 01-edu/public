@@ -1,4 +1,4 @@
-# fifthandskip
+## fifthandskip
 
 ### Instructions
 
@@ -22,19 +22,21 @@ Here is a possible program to test your function:
 ```go
 package main
 
-import "fmt"
-
+import (
+	"fmt"
+	"piscine"
+)
 
 func main() {
-  fmt.Print(FifthAndSkip("abcdefghijklmnopqrstuwxyz"))
-  fmt.Print(FifthAndSkip("This is a short sentence"))
-  fmt.Print(FifthAndSkip("1234"))
+	fmt.Print(piscine.FifthAndSkip("abcdefghijklmnopqrstuwxyz"))
+	fmt.Print(piscine.FifthAndSkip("This is a short sentence"))
+	fmt.Print(piscine.FifthAndSkip("1234"))
 }
 ```
 
 And its output:
 
-```go
+```console
 $ go run . | cat -e
 abcde ghijk mnopq stuwx z$
 Thisi ashor sente ce$
