@@ -7,7 +7,6 @@ Using the `mall` module provided, create the following **functions** to help run
 - `biggest_store`: receives a `Mall` and returns the `Store` with the biggest `square_meters`.
 - `highest_paid_employee`: receives a `Mall` and returns a vector containing the `Employee`(s) with the highest salary.
 - `nbr_of_employees`: receives a `Mall` and returns the number of employees and guards as a `usize`.
-- `fire_old_securities`: receives a `Mall` and removes from the `Mall.guards` all guards who are 50 years old or over.
 - `check_for_securities`: receives a `Mall` and a vector of `Guard`. If there is not at least 1 guard for every 200 square meters of floor size, a guard should be added to the `Mall.guards`.
 - `cut_or_raise`: receives a `Mall`. For each employee, the salary will be raised by 10% if they work more than 10 hours, else their salary will be decreased by 10%. You can consider that guards are not employees of the mall.
 
@@ -280,19 +279,14 @@ fn main() {
 
     let mut mall_la_vie = mall::Mall::new("La Vie Funchal", secs, floors);
 
-    println!("{:?}", &mall_la_vie);
-
     //returns the biggest store
-    println!("{:?}",biggest_store(mall_la_vie.clone()));
+    println!("Biggest store: {:#?}",biggest_store(mall_la_vie.clone()));
 
     //returns the list with the highest paid employees
-    println!("{:?}", highest_paid_employee(mall_la_vie.clone()));
+    println!("Highest paid employee: {:#?}", highest_paid_employee(mall_la_vie.clone()));
 
     //returns the number of employees
-    println!("{:?}", nbr_of_employees(mall_la_vie.clone()));
-
-    //fires old securities
-    fire_old_securities(&mut mall_la_vie);
+    println!("Number of employees: {:?}", nbr_of_employees(mall_la_vie.clone()));
 
     //checks if it is needed to add securities
     check_for_securities(
@@ -311,11 +305,10 @@ fn main() {
         ],
     );
 
-
     //raises or cuts the salary  of every employee
     cut_or_raise(&mut mall_la_vie);
 
-    println!("{:?}", &mall_la_vie);
+    println!("{:#?}", &mall_la_vie);
 }
 ```
 
@@ -323,10 +316,552 @@ And its ouput:
 
 ```rs
 $ cargo run
-Mall { name: "La Vie Funchal", guards: [Guard { name: "John Oliver", age: 34, years_experience: 7 }, Guard { name: "Logan West", age: 23, years_experience: 2 }, Guard { name: "Bob Schumacher", age: 53, years_experience: 15 }], floors: [Floor { name: "Ground Floor", stores: [Store { name: "Footzo", square_meters: 50, employees: [Employee { name: "Finbar Haines", age: 36, working_hours: (9, 14), salary: 650.88 }, Employee { name: "Roksanna Rocha", age: 45, working_hours: (13, 22), salary: 772.0 }, Employee { name: "Sienna-Rose Penn", age: 26, working_hours: (9, 22), salary: 1000.43 }] }, Store { name: "Swashion", square_meters: 43, employees: [Employee { name: "Abdallah Stafford", age: 54, working_hours: (8, 22), salary: 1234.21 }, Employee { name: "Marian Snyder", age: 21, working_hours: (8, 14), salary: 831.9 }, Employee { name: "Amanda Mclean", age: 29, working_hours: (13, 22), salary: 1222.12 }, Employee { name: "Faizaan Castro", age: 32, working_hours: (11, 18), salary: 1106.43 }] }], size_limit: 300 }, Floor { name: "Food Floor", stores: [Store { name: "PizBite", square_meters: 60, employees: [Employee { name: "Juniper Cannon", age: 21, working_hours: (16, 23), salary: 804.35 }, Employee { name: "Alena Simon", age: 28, working_hours: (9, 15), salary: 973.54 }, Employee { name: "Yasemin Collins", age: 29, working_hours: (9, 19), salary: 986.33 }, Employee { name: "Areeb Roberson", age: 54, working_hours: (9, 22), salary: 957.82 }, Employee { name: "Rocco Amin", age: 44, working_hours: (13, 23), salary: 689.21 }] }, Store { name: "Chillout Grill", square_meters: 50, employees: [Employee { name: "Rhian Crowther", age: 45, working_hours: (9, 15), salary: 841.18 }, Employee { name: "Nikkita Steadman", age: 52, working_hours: (14, 22), salary: 858.61 }, Employee { name: "Reginald Poole", age: 32, working_hours: (9, 22), salary: 1197.64 }, Employee { name: "Minnie Bull", age: 54, working_hours: (14, 22), salary: 1229.73 }] }, Store { name: "Sumo Food", square_meters: 30, employees: [Employee { name: "Chantelle Barajas", age: 20, working_hours: (8, 22), salary: 969.22 }, Employee { name: "Hywel Rudd", age: 49, working_hours: (12, 22), salary: 695.74 }, Employee { name: "Marianne Beasley", age: 55, working_hours: (8, 14), salary: 767.83 }] }], size_limit: 500 }, Floor { name: "Supermarket", stores: [Store { name: "Pretail", square_meters: 950, employees: [Employee { name: "Amara Schaefer", age: 23, working_hours: (9, 14), salary: 796.21 }, Employee { name: "Yara Wickens", age: 39, working_hours: (9, 14), salary: 853.42 }, Employee { name: "Tomi Boyer", age: 64, working_hours: (9, 14), salary: 881.83 }, Employee { name: "Greta Dickson", age: 42, working_hours: (9, 14), salary: 775.1 }, Employee { name: "Caroline Finnegan", age: 41, working_hours: (9, 14), salary: 702.92 }, Employee { name: "Indiana Baxter", age: 33, working_hours: (13, 20), salary: 991.71 }, Employee { name: "Jadine Page", age: 48, working_hours: (13, 20), salary: 743.21 }, Employee { name: "Husna Ryan", age: 43, working_hours: (13, 20), salary: 655.75 }, Employee { name: "Tyler Hunt", age: 63, working_hours: (13, 20), salary: 668.25 }, Employee { name: "Dahlia Caldwell", age: 56, working_hours: (13, 20), salary: 781.38 }, Employee { name: "Chandler Mansell", age: 20, working_hours: (19, 24), salary: 656.75 }, Employee { name: "Mohsin Mcgee", age: 30, working_hours: (19, 24), salary: 703.83 }, Employee { name: "Antoine Goulding", age: 45, working_hours: (19, 24), salary: 697.12 }, Employee { name: "Mark Barnard", age: 53, working_hours: (19, 24), salary: 788.81 }] }], size_limit: 1000 }] }
-Store { name: "Pretail", square_meters: 950, employees: [Employee { name: "Amara Schaefer", age: 23, working_hours: (9, 14), salary: 796.21 }, Employee { name: "Yara Wickens", age: 39, working_hours: (9, 14), salary: 853.42 }, Employee { name: "Tomi Boyer", age: 64, working_hours: (9, 14), salary: 881.83 }, Employee { name: "Greta Dickson", age: 42, working_hours: (9, 14), salary: 775.1 }, Employee { name: "Caroline Finnegan", age: 41, working_hours: (9, 14), salary: 702.92 }, Employee { name: "Indiana Baxter", age: 33, working_hours: (13, 20), salary: 991.71 }, Employee { name: "Jadine Page", age: 48, working_hours: (13, 20), salary: 743.21 }, Employee { name: "Husna Ryan", age: 43, working_hours: (13, 20), salary: 655.75 }, Employee { name: "Tyler Hunt", age: 63, working_hours: (13, 20), salary: 668.25 }, Employee { name: "Dahlia Caldwell", age: 56, working_hours: (13, 20), salary: 781.38 }, Employee { name: "Chandler Mansell", age: 20, working_hours: (19, 24), salary: 656.75 }, Employee { name: "Mohsin Mcgee", age: 30, working_hours: (19, 24), salary: 703.83 }, Employee { name: "Antoine Goulding", age: 45, working_hours: (19, 24), salary: 697.12 }, Employee { name: "Mark Barnard", age: 53, working_hours: (19, 24), salary: 788.81 }] }
-[Employee { name: "Abdallah Stafford", age: 54, working_hours: (8, 22), salary: 1234.21 }]
-36
-Mall { name: "La Vie Funchal", guards: [Guard { name: "John Oliver", age: 34, years_experience: 7 }, Guard { name: "Logan West", age: 23, years_experience: 2 }, Guard { name: "Peter Solomons", age: 45, years_experience: 20 }, Guard { name: "William Charles", age: 32, years_experience: 10 }, Guard { name: "Leonardo Changretta", age: 23, years_experience: 0 }, Guard { name: "Vlad Levi", age: 38, years_experience: 8 }, Guard { name: "Faruk Berkai", age: 40, years_experience: 15 }, Guard { name: "Chritopher Smith", age: 35, years_experience: 9 }, Guard { name: "Jason Mackie", age: 26, years_experience: 2 }], floors: [Floor { name: "Ground Floor", stores: [Store { name: "Footzo", square_meters: 50, employees: [Employee { name: "Finbar Haines", age: 36, working_hours: (9, 14), salary: 585.792 }, Employee { name: "Roksanna Rocha", age: 45, working_hours: (13, 22), salary: 694.8 }, Employee { name: "Sienna-Rose Penn", age: 26, working_hours: (9, 22), salary: 1100.473 }] }, Store { name: "Swashion", square_meters: 43, employees: [Employee { name: "Abdallah Stafford", age: 54, working_hours: (8, 22), salary: 1357.631 }, Employee { name: "Marian Snyder", age: 21, working_hours: (8, 14), salary: 748.71 }, Employee { name: "Amanda Mclean", age: 29, working_hours: (13, 22), salary: 1099.908 }, Employee { name: "Faizaan Castro", age: 32, working_hours: (11, 18), salary: 995.787 }] }], size_limit: 300 }, Floor { name: "Food Floor", stores: [Store { name: "PizBite", square_meters: 60, employees: [Employee { name: "Juniper Cannon", age: 21, working_hours: (16, 23), salary: 723.915 }, Employee { name: "Alena Simon", age: 28, working_hours: (9, 15), salary: 876.1859999999999 }, Employee { name: "Yasemin Collins", age: 29, working_hours: (9, 19), salary: 1084.963 }, Employee { name: "Areeb Roberson", age: 54, working_hours: (9, 22), salary: 1053.602 }, Employee { name: "Rocco Amin", age: 44, working_hours: (13, 23), salary: 758.1310000000001 }] }, Store { name: "Chillout Grill", square_meters: 50, employees: [Employee { name: "Rhian Crowther", age: 45, working_hours: (9, 15), salary: 757.0619999999999 }, Employee { name: "Nikkita Steadman", age: 52, working_hours: (14, 22), salary: 772.749 }, Employee { name: "Reginald Poole", age: 32, working_hours: (9, 22), salary: 1317.404 }, Employee { name: "Minnie Bull", age: 54, working_hours: (14, 22), salary: 1106.757 }] }, Store { name: "Sumo Food", square_meters: 30, employees: [Employee { name: "Chantelle Barajas", age: 20, working_hours: (8, 22), salary: 1066.142 }, Employee { name: "Hywel Rudd", age: 49, working_hours: (12, 22), salary: 765.314 }, Employee { name: "Marianne Beasley", age: 55, working_hours: (8, 14), salary: 691.047 }] }], size_limit: 500 }, Floor { name: "Supermarket", stores: [Store { name: "Pretail", square_meters: 950, employees: [Employee { name: "Amara Schaefer", age: 23, working_hours: (9, 14), salary: 716.589 }, Employee { name: "Yara Wickens", age: 39, working_hours: (9, 14), salary: 768.078 }, Employee { name: "Tomi Boyer", age: 64, working_hours: (9, 14), salary: 793.647 }, Employee { name: "Greta Dickson", age: 42, working_hours: (9, 14), salary: 697.59 }, Employee { name: "Caroline Finnegan", age: 41, working_hours: (9, 14), salary: 632.6279999999999 }, Employee { name: "Indiana Baxter", age: 33, working_hours: (13, 20), salary: 892.539 }, Employee { name: "Jadine Page", age: 48, working_hours: (13, 20), salary: 668.889 }, Employee { name: "Husna Ryan", age: 43, working_hours: (13, 20), salary: 590.175 }, Employee { name: "Tyler Hunt", age: 63, working_hours: (13, 20), salary: 601.425 }, Employee { name: "Dahlia Caldwell", age: 56, working_hours: (13, 20), salary: 703.242 }, Employee { name: "Chandler Mansell", age: 20, working_hours: (19, 24), salary: 591.075 }, Employee { name: "Mohsin Mcgee", age: 30, working_hours: (19, 24), salary: 633.447 }, Employee { name: "Antoine Goulding", age: 45, working_hours: (19, 24), salary: 627.408 }, Employee { name: "Mark Barnard", age: 53, working_hours: (19, 24), salary: 709.929 }] }], size_limit: 1000 }] }
+Biggest store: Store {
+    name: "Pretail",
+    square_meters: 950,
+    employees: [
+        Employee {
+            name: "Amara Schaefer",
+            age: 23,
+            working_hours: (
+                9,
+                14,
+            ),
+            salary: 796.21,
+        },
+        Employee {
+            name: "Yara Wickens",
+            age: 39,
+            working_hours: (
+                9,
+                14,
+            ),
+            salary: 853.42,
+        },
+        Employee {
+            name: "Tomi Boyer",
+            age: 64,
+            working_hours: (
+                9,
+                14,
+            ),
+            salary: 881.83,
+        },
+        Employee {
+            name: "Greta Dickson",
+            age: 42,
+            working_hours: (
+                9,
+                14,
+            ),
+            salary: 775.1,
+        },
+        Employee {
+            name: "Caroline Finnegan",
+            age: 41,
+            working_hours: (
+                9,
+                14,
+            ),
+            salary: 702.92,
+        },
+        Employee {
+            name: "Indiana Baxter",
+            age: 33,
+            working_hours: (
+                13,
+                20,
+            ),
+            salary: 991.71,
+        },
+        Employee {
+            name: "Jadine Page",
+            age: 48,
+            working_hours: (
+                13,
+                20,
+            ),
+            salary: 743.21,
+        },
+        Employee {
+            name: "Husna Ryan",
+            age: 43,
+            working_hours: (
+                13,
+                20,
+            ),
+            salary: 655.75,
+        },
+        Employee {
+            name: "Tyler Hunt",
+            age: 63,
+            working_hours: (
+                13,
+                20,
+            ),
+            salary: 668.25,
+        },
+        Employee {
+            name: "Dahlia Caldwell",
+            age: 56,
+            working_hours: (
+                13,
+                20,
+            ),
+            salary: 781.38,
+        },
+        Employee {
+            name: "Chandler Mansell",
+            age: 20,
+            working_hours: (
+                19,
+                24,
+            ),
+            salary: 656.75,
+        },
+        Employee {
+            name: "Mohsin Mcgee",
+            age: 30,
+            working_hours: (
+                19,
+                24,
+            ),
+            salary: 703.83,
+        },
+        Employee {
+            name: "Antoine Goulding",
+            age: 45,
+            working_hours: (
+                19,
+                24,
+            ),
+            salary: 697.12,
+        },
+        Employee {
+            name: "Mark Barnard",
+            age: 53,
+            working_hours: (
+                19,
+                24,
+            ),
+            salary: 788.81,
+        },
+    ],
+}
+Highest paid employee: [
+    Employee {
+        name: "Abdallah Stafford",
+        age: 54,
+        working_hours: (
+            8,
+            22,
+        ),
+        salary: 1234.21,
+    },
+]
+Number of employees: 36
+Mall {
+    name: "La Vie Funchal",
+    guards: [
+        Guard {
+            name: "John Oliver",
+            age: 34,
+            years_experience: 7,
+        },
+        Guard {
+            name: "Logan West",
+            age: 23,
+            years_experience: 2,
+        },
+        Guard {
+            name: "Bob Schumacher",
+            age: 53,
+            years_experience: 15,
+        },
+        Guard {
+            name: "Peter Solomons",
+            age: 45,
+            years_experience: 20,
+        },
+        Guard {
+            name: "William Charles",
+            age: 32,
+            years_experience: 10,
+        },
+        Guard {
+            name: "Leonardo Changretta",
+            age: 23,
+            years_experience: 0,
+        },
+        Guard {
+            name: "Vlad Levi",
+            age: 38,
+            years_experience: 8,
+        },
+        Guard {
+            name: "Faruk Berkai",
+            age: 40,
+            years_experience: 15,
+        },
+        Guard {
+            name: "Chritopher Smith",
+            age: 35,
+            years_experience: 9,
+        },
+    ],
+    floors: [
+        Floor {
+            name: "Ground Floor",
+            stores: [
+                Store {
+                    name: "Footzo",
+                    square_meters: 50,
+                    employees: [
+                        Employee {
+                            name: "Finbar Haines",
+                            age: 36,
+                            working_hours: (
+                                9,
+                                14,
+                            ),
+                            salary: 585.792,
+                        },
+                        Employee {
+                            name: "Roksanna Rocha",
+                            age: 45,
+                            working_hours: (
+                                13,
+                                22,
+                            ),
+                            salary: 694.8,
+                        },
+                        Employee {
+                            name: "Sienna-Rose Penn",
+                            age: 26,
+                            working_hours: (
+                                9,
+                                22,
+                            ),
+                            salary: 1100.473,
+                        },
+                    ],
+                },
+                Store {
+                    name: "Swashion",
+                    square_meters: 43,
+                    employees: [
+                        Employee {
+                            name: "Abdallah Stafford",
+                            age: 54,
+                            working_hours: (
+                                8,
+                                22,
+                            ),
+                            salary: 1357.631,
+                        },
+                        Employee {
+                            name: "Marian Snyder",
+                            age: 21,
+                            working_hours: (
+                                8,
+                                14,
+                            ),
+                            salary: 748.71,
+                        },
+                        Employee {
+                            name: "Amanda Mclean",
+                            age: 29,
+                            working_hours: (
+                                13,
+                                22,
+                            ),
+                            salary: 1099.908,
+                        },
+                        Employee {
+                            name: "Faizaan Castro",
+                            age: 32,
+                            working_hours: (
+                                11,
+                                18,
+                            ),
+                            salary: 995.787,
+                        },
+                    ],
+                },
+            ],
+            size_limit: 300,
+        },
+        Floor {
+            name: "Food Floor",
+            stores: [
+                Store {
+                    name: "PizBite",
+                    square_meters: 60,
+                    employees: [
+                        Employee {
+                            name: "Juniper Cannon",
+                            age: 21,
+                            working_hours: (
+                                16,
+                                23,
+                            ),
+                            salary: 723.915,
+                        },
+                        Employee {
+                            name: "Alena Simon",
+                            age: 28,
+                            working_hours: (
+                                9,
+                                15,
+                            ),
+                            salary: 876.1859999999999,
+                        },
+                        Employee {
+                            name: "Yasemin Collins",
+                            age: 29,
+                            working_hours: (
+                                9,
+                                19,
+                            ),
+                            salary: 1084.963,
+                        },
+                        Employee {
+                            name: "Areeb Roberson",
+                            age: 54,
+                            working_hours: (
+                                9,
+                                22,
+                            ),
+                            salary: 1053.602,
+                        },
+                        Employee {
+                            name: "Rocco Amin",
+                            age: 44,
+                            working_hours: (
+                                13,
+                                23,
+                            ),
+                            salary: 758.1310000000001,
+                        },
+                    ],
+                },
+                Store {
+                    name: "Chillout Grill",
+                    square_meters: 50,
+                    employees: [
+                        Employee {
+                            name: "Rhian Crowther",
+                            age: 45,
+                            working_hours: (
+                                9,
+                                15,
+                            ),
+                            salary: 757.0619999999999,
+                        },
+                        Employee {
+                            name: "Nikkita Steadman",
+                            age: 52,
+                            working_hours: (
+                                14,
+                                22,
+                            ),
+                            salary: 772.749,
+                        },
+                        Employee {
+                            name: "Reginald Poole",
+                            age: 32,
+                            working_hours: (
+                                9,
+                                22,
+                            ),
+                            salary: 1317.404,
+                        },
+                        Employee {
+                            name: "Minnie Bull",
+                            age: 54,
+                            working_hours: (
+                                14,
+                                22,
+                            ),
+                            salary: 1106.757,
+                        },
+                    ],
+                },
+                Store {
+                    name: "Sumo Food",
+                    square_meters: 30,
+                    employees: [
+                        Employee {
+                            name: "Chantelle Barajas",
+                            age: 20,
+                            working_hours: (
+                                8,
+                                22,
+                            ),
+                            salary: 1066.142,
+                        },
+                        Employee {
+                            name: "Hywel Rudd",
+                            age: 49,
+                            working_hours: (
+                                12,
+                                22,
+                            ),
+                            salary: 765.314,
+                        },
+                        Employee {
+                            name: "Marianne Beasley",
+                            age: 55,
+                            working_hours: (
+                                8,
+                                14,
+                            ),
+                            salary: 691.047,
+                        },
+                    ],
+                },
+            ],
+            size_limit: 500,
+        },
+        Floor {
+            name: "Supermarket",
+            stores: [
+                Store {
+                    name: "Pretail",
+                    square_meters: 950,
+                    employees: [
+                        Employee {
+                            name: "Amara Schaefer",
+                            age: 23,
+                            working_hours: (
+                                9,
+                                14,
+                            ),
+                            salary: 716.589,
+                        },
+                        Employee {
+                            name: "Yara Wickens",
+                            age: 39,
+                            working_hours: (
+                                9,
+                                14,
+                            ),
+                            salary: 768.078,
+                        },
+                        Employee {
+                            name: "Tomi Boyer",
+                            age: 64,
+                            working_hours: (
+                                9,
+                                14,
+                            ),
+                            salary: 793.647,
+                        },
+                        Employee {
+                            name: "Greta Dickson",
+                            age: 42,
+                            working_hours: (
+                                9,
+                                14,
+                            ),
+                            salary: 697.59,
+                        },
+                        Employee {
+                            name: "Caroline Finnegan",
+                            age: 41,
+                            working_hours: (
+                                9,
+                                14,
+                            ),
+                            salary: 632.6279999999999,
+                        },
+                        Employee {
+                            name: "Indiana Baxter",
+                            age: 33,
+                            working_hours: (
+                                13,
+                                20,
+                            ),
+                            salary: 892.539,
+                        },
+                        Employee {
+                            name: "Jadine Page",
+                            age: 48,
+                            working_hours: (
+                                13,
+                                20,
+                            ),
+                            salary: 668.889,
+                        },
+                        Employee {
+                            name: "Husna Ryan",
+                            age: 43,
+                            working_hours: (
+                                13,
+                                20,
+                            ),
+                            salary: 590.175,
+                        },
+                        Employee {
+                            name: "Tyler Hunt",
+                            age: 63,
+                            working_hours: (
+                                13,
+                                20,
+                            ),
+                            salary: 601.425,
+                        },
+                        Employee {
+                            name: "Dahlia Caldwell",
+                            age: 56,
+                            working_hours: (
+                                13,
+                                20,
+                            ),
+                            salary: 703.242,
+                        },
+                        Employee {
+                            name: "Chandler Mansell",
+                            age: 20,
+                            working_hours: (
+                                19,
+                                24,
+                            ),
+                            salary: 591.075,
+                        },
+                        Employee {
+                            name: "Mohsin Mcgee",
+                            age: 30,
+                            working_hours: (
+                                19,
+                                24,
+                            ),
+                            salary: 633.447,
+                        },
+                        Employee {
+                            name: "Antoine Goulding",
+                            age: 45,
+                            working_hours: (
+                                19,
+                                24,
+                            ),
+                            salary: 627.408,
+                        },
+                        Employee {
+                            name: "Mark Barnard",
+                            age: 53,
+                            working_hours: (
+                                19,
+                                24,
+                            ),
+                            salary: 709.929,
+                        },
+                    ],
+                },
+            ],
+            size_limit: 1000,
+        },
+    ],
+}
 $
 ```
