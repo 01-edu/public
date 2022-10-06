@@ -12,7 +12,7 @@ Write a function `FifthAndSkip()` that takes a `string` and returns another `str
 ```go
 func FifthAndSkip(str string) string {
 
-
+}
 ```
 
 ### Usage
