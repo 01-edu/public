@@ -24,20 +24,20 @@ Here is a possible program to test your function:
 package main
 
 import (
-        "fmt"
-        "piscine"
+	"fmt"
+	"piscine"
 )
 
 func main() {
-        fmt.Println(piscine.FishAndChips(4))
-        fmt.Println(piscine.FishAndChips(9))
-        fmt.Println(piscine.FishAndChips(6))
+	fmt.Println(piscine.FishAndChips(4))
+	fmt.Println(piscine.FishAndChips(9))
+	fmt.Println(piscine.FishAndChips(6))
 }
 ```
 
 And its output:
 
-```go
+```console
 fish$
 $
 chips$
