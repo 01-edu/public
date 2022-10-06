@@ -1,9 +1,10 @@
-#### Localhost is about creating your own HTTP server and test it with an actual browser.
+Localhost is about creating your own HTTP server and test it with an actual browser.
 ##### Take the necessary time to understand the project and to test it, looking into the source code will help a lot.
 
-### Basic server mechanics
+### Functional
 
-#### The student should be able to justify his choices and explain the following:
+***Is the student able to justify his choices and explain the following:***
+
 ###### How does an HTTP server works?
 ###### Which function was used for I/O Multiplexing and how does it works?
 ###### Is the server using only one select (or equivalent) to read the client requests and write answers?
@@ -15,7 +16,8 @@
 
 ### Configuration file
 
-#### Check the configuration file and ensure the following configs are working:
+Check the configuration file and modify it if necessary.
+***Are the following configurations working properly:***
 ###### Setup a single server with a single port.
 ###### Setup multiple servers with different port.
 ###### Setup multiple servers with different hostnames (for example: curl --resolve test.com:80:127.0.0.1 http://test.com/).
@@ -27,7 +29,7 @@
 
 ### Methods and cookies
 
-##### For each method be sure to check the status code (200, 404 etc):
+***For each method be sure to check the status code (200, 404 etc):***
 ###### Are the GET requests working properly?
 ###### Are the POST requests working properly?
 ###### Are the DELETE requests working properly?
@@ -37,7 +39,7 @@
 
 ### Interaction with the browser
 
-#### Open the browser used by the team during tests and its developer tools panel to help you with tests.
+Open the browser used by the team during tests and its developer tools panel to help you with tests.
 ###### Is the browser connecting with the server with no issues?
 ###### Are the request and response headers correct? (It should serve a full static website without any problem).
 ###### Try a wrong URL on the server, is it handled properly?
@@ -57,7 +59,7 @@
 ###### Check if there is no memory leak (you could use some tools like top).
 ###### Check if there is no hanging connection.
 
-### Bonus Part
+#### General
 
 ###### +There's more than one CGI system such as [Python,C++,Perl].
 ###### +There is a second implementation of the server in a different language (repeat practical tests on it before to validate).
