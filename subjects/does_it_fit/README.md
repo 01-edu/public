@@ -6,6 +6,7 @@ Use the `areas_volumes` module provided to create two **functions**.
 
 Create `area_fit`. It should return `true` if the geometric shape can fit inside the rectangular area as many times as is indicated by `times`.
 
+The arguments of the function will be:
 - `x` and `y`: length and width of the rectangular area.
 - `objects`: the type of geometric shape.
 - `times`: the number of geometric shapes to fit inside the rectangular area.
@@ -19,6 +20,8 @@ Create `area_fit`. It should return `true` if the geometric shape can fit inside
 	- `side_b` of a `Rectangle`
 
 Create `volume_fit`. It should return `true` if the geometric volume can fit inside the box as many times as is indicated by `times`.
+
+The arguments of the function will be:
   - `x`, `y` and `z`: length, width and depth of the box.
   - `objects`: the type of geometric volume.
   - `times`: the number of geometric volumes to fit inside the box.
