@@ -10,9 +10,9 @@ You will implement some **CRUD** functionality for a game session. You will need
 
 - `read_winner`: which returns a tuple with the name and score of the player who is currently winning. In the case that no player is winning, it should return the same tuple with the string `"Same score! tied"` and the tied score.
 
-- `update_score`: which receives the name of a player, and increments their score. This function should **do nothing** if the the game session is already finished.
+- `update_score`: which receives the name of a player, and increments their score. This function should **do nothing** if the the game session is already finished or if the name received doesn't match any player.
 
-- `delete`: which takes ownership of the boxed game session and returns a string: `"game deleted: id -> 0"`.
+- `delete`: which takes ownership of the boxed game session and returns a string: `"game deleted: id -> 0"`, where `0` is the id of the `GameSession`.
 
 > If `nb_games` is 5, then it is "best out of 5", and no more than 5 games can be played. If some player has a score of 3, then the game session is also finished. This is because there is an insufficient number of remaining games for the trailing player to catch up.
 
