@@ -1,4 +1,4 @@
-# printandmiss
+## printandmiss
 
 ### Instructions
 
@@ -21,21 +21,24 @@ Here is a possible program to test your function:
 ```go
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"piscine"
+)
 
 func main() {
-  fmt.Print(PrintAndMiss("123456789", 3))
-  fmt.Print(PrintAndMiss("abcdefghijklmnopqrstuvwyz", 3))
-  fmt.Print(PrintAndMiss("", 3))
-  fmt.Print(PrintAndMiss("hello you all ! ", 0))
-  fmt.Print(PrintAndMiss("what is your name?", 0))
-  fmt.Print(PrintAndMiss("go Exercise Print and Miss", -5))
+	fmt.Print(piscine.PrintAndMiss("123456789", 3))
+	fmt.Print(piscine.PrintAndMiss("abcdefghijklmnopqrstuvwyz", 3))
+	fmt.Print(piscine.PrintAndMiss("", 3))
+	fmt.Print(piscine.PrintAndMiss("hello you all ! ", 0))
+	fmt.Print(piscine.PrintAndMiss("what is your name?", 0))
+	fmt.Print(piscine.PrintAndMiss("go Exercise Print and Miss", -5))
 }
 ```
 
 And its output:
 
-```go
+```console
 $ go run . | cat -e
 123789$
 abcghimnostuz$
