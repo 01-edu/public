@@ -2,7 +2,7 @@
 
 ###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
-##### Try passing as arguments `"banana standard --output test00.txt"`
+##### Try passing as arguments `"banana" standard --output test00.txt`
 
 ```
 Usage: go run . [STRING] [BANNER] [OPTION]
