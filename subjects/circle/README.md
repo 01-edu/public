@@ -23,31 +23,23 @@ Create the structures `Circle` and `Point`. You'll need to create the necessary 
 This snippets are incomplete, you'll need to complete them. You'll find some useful information in the [usage](#usage).
 
 ```rust
+#[derive(Debug)]
 pub struct Circle {
-	center //..
-	radius //..
+	pub center //..
+	pub radius //..
 }
 
-struct Point {
-// ...
+impl Circle {
+    // ...
 }
 
-// Point
-fn distance(p1, p2) -> _ {
-
+#[derive(Debug)]
+pub struct Point {
+    // ...
 }
 
-// Circle
-fn new(x: f64, y: f64, radius: f64) -> Circle {
-}
-
-fn diameter(_) -> _ {
-}
-
-fn area() -> _ {
-}
-
-fn intersect(self, other: ) -> bool {
+impl Point {
+    // ...
 }
 ```
 
