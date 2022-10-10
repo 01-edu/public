@@ -4,7 +4,7 @@
 
 Create the following **functions**:
 
-- `add_ele`: which adds an element to the value in the `Node`.
+- `add_element`: which adds an element to the list in the `Node`.
 - `how_many_references`: which returns how many times the value is referenced in the code.
 - `rm_all_ref`: which accepts an `Rc<String>` and removes all elements from the vector that are equal to that value. This should only happen if the two `Rc`s point to the same allocation.
 
@@ -14,18 +14,18 @@ Create the following **functions**:
 pub use std::rc::Rc;
 
 pub struct Node {
-    pub value: Vec<Rc<String>>,
+    pub ref_list: Vec<Rc<String>>,
 }
 
 impl Node {
-    pub fn new(value: Vec<Rc<String>>) -> Node {
-        Node { value: value }
+    pub fn new(ref_list: Vec<Rc<String>>) -> Node {
+        Node { ref_list: ref_list }
     }
-    pub fn add_ele(&mut self, v: Rc<String>) {}
-    pub fn rm_all_ref(&mut self, v: Rc<String>) {}
+    pub fn add_element(&mut self, element: Rc<String>) {}
+    pub fn rm_all_ref(&mut self, element: Rc<String>) {}
 }
 
-pub fn how_many_references(value: &Rc<String>) -> usize {}
+pub fn how_many_references(ref_list: &Rc<String>) -> usize {}
 ```
 
 ### Usage
@@ -43,10 +43,10 @@ fn main() {
     let a1 = Rc::new(String::from("a"));
 
     let mut new_node = Node::new(vec![a.clone()]);
-    new_node.add_ele(b.clone());
-    new_node.add_ele(a.clone());
-    new_node.add_ele(c.clone());
-    new_node.add_ele(a.clone());
+    new_node.add_element(b.clone());
+    new_node.add_element(a.clone());
+    new_node.add_element(c.clone());
+    new_node.add_element(a.clone());
 
     println!("a: {:?}", how_many_references(&a));
     println!("b: {:?}", how_many_references(&b));
