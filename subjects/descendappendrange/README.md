@@ -39,7 +39,7 @@ func main() {
 And its output:
 
 ```console
-$ go run .
+$ go run . | cat -e
 [10 9 8 7 6]
 []
 $
