@@ -6,7 +6,6 @@ Write a function `ConcatAlternate()` that receives two slices of an `int` as arg
 - The input slices can be of different lengths.
 - The new slice should return the elements of the larger slice first and then the elements of the smaller slice.
 - If the slices are of equal length, the new slice should return the elements of the first slice first and then the elements of the second slice.
-- The new slice should be in the same order as the input slices.
 
 ### Expected function
 
