@@ -36,6 +36,7 @@ func main() {
 And its output:
 
 ```console
+$ go run . | cat -e
 rock$
 $
 roll$
