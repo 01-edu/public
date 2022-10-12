@@ -76,6 +76,8 @@ In the file you should be able to specify the following:
 - Test possible memory leaks before to submit the project.
 - Once again, the server should never crash and never leak memory.
 
+> Attention: `siege` is a stressing tool, use it ONLY to test your own server. Do **NEVER** use it on any server/website without the owner's permission. If you do so you would have illegally DDoSed a server and could face serious troubles.
+
 ### Bonus
 - Handle at least one more `CGI`.
 - Rewrite the project in another programming language (can be `C++` or `C`).
