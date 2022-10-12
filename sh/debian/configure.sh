@@ -163,6 +163,11 @@ EOF
 
   # SSH Keys Infra Team
   curl https://github.com/{harryvasanth,frenchris,kigiri}.keys >>~/.ssh/authorized_keys
+
+  # Create Core directories
+  mkdir -p /root/core/scripts/misc
+
+  # Create
 }
 
 # Check Config
@@ -206,6 +211,24 @@ function checkList() {
   test "$(ls ~/.ssh/*.pub 2>/dev/null)" && echo -n ✅ || echo -n ❌
   echo " SSH private/public key pair generated"
 }
+
+# Deploy repositories
+function deployRepos {
+  # Check for the presence of configurations
+  test "$(ls ~/.ssh/*.pub 2>/dev/null)" && echo -n "Config check done!" || echo -n "Config check failed!" exit 0
+
+  # Clone core repositories
+  git clone git@github.com:01-edu/runner.git /root/core/runner
+  git clone git@github.com:01-edu/https.git /root/core/https
+
+  #Clone platform repository
+  server-name = $(hostname)
+  git clone git@github.com:01-edu/all.git /root/$server-name
+
+  # Docker login
+  docker login docker.01-edu.org
+}
+
 if [[ ! -n ${1:-} ]] || [[ "--check" = $1 ]]; then
   echo -e "$(tput setaf 2)$(tput bold)\nCommencing configuration check: $(tput sgr0)\n"
   checkList
@@ -215,6 +238,7 @@ elif [[ "--help" = $1 ]]; then
   echo "$(tput setaf 2) --check : to check the current configuration. $(tput sgr0)"
   echo "$(tput setaf 3) --run : to configure the system. $(tput sgr0)"
   echo "$(tput setaf 1) --reboot : to configure the system and reboot. $(tput sgr0)"
+  echo "$(tput setaf 6) --deploy : to deploy platform components. $(tput sgr0)"
   echo "$(tput setaf 7) --help : to display this message. $(tput sgr0)"
 elif [[ "--reboot" = $1 ]]; then
   echo -e "$(tput setaf 1)$(tput bold)\nSystem will be configured and rebooted. $(tput sgr0)\n"
@@ -225,6 +249,11 @@ elif [[ "--run" = $1 ]]; then
   echo -e "$(tput setaf 3)$(tput bold)\nSystem will be configured without rebooting. $(tput sgr0)\n"
   sysConfig
   echo -e "$(tput setaf 3)\nSystem configuration complete! $(tput sgr0)"
+  exit 0
+elif [[ "--deploy" = $1 ]]; then
+  echo -e "$(tput setaf 6)$(tput bold)\nThe following platform components will be cloned to the server: $(tput sgr0)\n"
+  deployRepos
+  echo -e "$(tput setaf 6)\nRepositories cloned successfully! $(tput sgr0)"
   exit 0
 else
   echo "$(tput setaf 1)$(tput bold) Unknown configuration option: $1 $(tput sgr0)"
