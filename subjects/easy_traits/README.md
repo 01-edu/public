@@ -15,16 +15,16 @@ The trait `AppendStr` has the following functions:
 
 ```rust
 #[derive(Clone)]
-struct StringValue {
-    value: String,
+pub struct StringValue {
+    pub value: String,
 }
 
-trait AppendStr {
-    fn append_str(self, new_str: String) -> Self;
+pub trait AppendStr {
+    fn append_str(&mut self, str_to_append: String) -> Self;
 
-    fn append_number(self, new_number: f64) -> Self;
+    fn append_number(&mut self, nb_to_append: f64) -> Self;
 
-    fn remove_punctuation_marks(self) -> Self;
+    fn remove_punctuation_marks(&mut self) -> Self;
 }
 
 impl AppendStr for StringValue {
