@@ -6,14 +6,14 @@ Create a **function** named `word_frequency_counter` which will receive a vector
 
 Also create a function named `nb_distinct_words` which will take a reference to the `HashMap` and return the number of distinct words present in it.
 
+> all the words tested will be lowercase
 
 ### Expected functions
 
 ```rust
 pub fn word_frequency_counter(words: Vec<&str>) -> HashMap<&str, usize> {}
 
-pub fn nb_distinct_words(frequency_count: &HashMap<&str, usize>) -> usize {
-}
+pub fn nb_distinct_words(frequency_count: &HashMap<&str, usize>) -> usize {}
 ```
 
 ### Usage
