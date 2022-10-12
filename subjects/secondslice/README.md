@@ -1,38 +1,41 @@
-## Second-Slice
+## secondhalf
 
 ### Instructions
 
-Write a function that receives a slice with integers and returns a new one with the last half of the values. If the length is odd, round it down.
+Write a function `SecondHalf()` that receives a slice of `int` and returns another slice of `int` with the last half of the values.
+
+- If the length is odd, round it down.
 
 ### Expected function
 
 ```go
-func SecondSlice(slice []int) []int {
+func SecondHalf(slice []int) []int {
 
 }
 ```
 
 ### Usage
 
-Here is a possible program to test your function :
+Here is a possible program to test your function:
 
 ```go
 package main
 
 import (
 	"fmt"
+	"piscine"
 )
 
 func main() {
-	fmt.Println(SecondHalf([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}))
-    fmt.Println(SecondHalf([]int{1, 2, 3}))
+	fmt.Println(piscine.SecondHalf([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}))
+	fmt.Println(piscine.SecondHalf([]int{1, 2, 3}))
 }
 ```
 
-And its output :
+And its output:
 
 ```console
-$ go run .
-[5,6,7,8,9,10]
-[2,3]
+$ go run . | cat -e
+[5 6 7 8 9 10]
+[2 3]
 ```
