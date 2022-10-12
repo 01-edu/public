@@ -178,7 +178,7 @@ _)      \.___.,|     .'
 [2020-01-20 16:04:57][Lee]:^C
 ```
 
-## Bonus
+### Bonus
 
 - Terminal UI (you are allowed to use only this package : https://github.com/jroimartin/gocui).
 - Find a way to save all the logs into a file.
