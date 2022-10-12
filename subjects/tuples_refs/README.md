@@ -2,12 +2,12 @@
 
 ### Instructions
 
-- Define a tuple `struct` to represent a `Student`. Each is identified by an id of type `i32`, their first name and last name.
+- Define a tuple `struct` to represent a `Student`. Each is identified by an id of type `u32`, their first name and last name.
 
 - Then define three **functions** to return the id, first name and last name.
 
 ```rust
-pub fn id(student: &Student) -> i32 {
+pub fn id(student: &Student) -> u32 {
 }
 
 pub fn first_name(student: &Student) -> String {
