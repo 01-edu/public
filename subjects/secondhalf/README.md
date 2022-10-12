@@ -4,7 +4,7 @@
 
 Write a function `SecondHalf()` that receives a slice of `int` and returns another slice of `int` with the last half of the values.
 
-- If the length is odd, round it down.
+- If the length is odd, round it up.
 
 ### Expected function
 
@@ -36,6 +36,6 @@ And its output:
 
 ```console
 $ go run . | cat -e
-[5 6 7 8 9 10]
+[6 7 8 9 10]
 [2 3]
 ```
