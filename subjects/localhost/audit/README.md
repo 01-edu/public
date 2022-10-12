@@ -4,7 +4,7 @@ Localhost is about creating your own HTTP server and test it with an actual brow
 ### Functional
 
 ***Is the student able to justify his choices and explain the following:***
-
+***Note:*** Ask the student to show you the implementation in the source code when necessary.
 ###### How does an HTTP server works?
 ###### Which function was used for I/O Multiplexing and how does it works?
 ###### Is the server using only one select (or equivalent) to read the client requests and write answers?
