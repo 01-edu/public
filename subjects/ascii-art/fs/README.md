@@ -18,6 +18,9 @@ Usage: go run . [STRING] [BANNER]
 EX: go run . something standard
 ```
 
+If there are other `ascii-art` optional projects implemented, the program should accept other correctly formatted `[OPTION]` and/or `[BANNER]`.  
+Additionally, the program must still be able to run with a single `[STRING]` argument.
+
 ### Usage
 
 ```console
