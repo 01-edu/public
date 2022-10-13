@@ -22,16 +22,17 @@ Here is a possible program to test your function:
 package main
 
 import (
-        "fmt"
-        "piscine"
+	"fmt"
+	"piscine"
 )
 
 func main() {
-        summary := "Burger Water Carrot Coffee Water Water Chips Carrot Carrot Burger Carrot Water"
-        for index, element := range piscine.ShoppingSummaryCounter(summary) {
-          fmt.Println(index,"=>",element)
-        }
+	summary := "Burger Water Carrot Coffee Water Water Chips Carrot Carrot Burger Carrot Water"
+	for index, element := range piscine.ShoppingSummaryCounter(summary) {
+		fmt.Println(index, "=>", element)
+	}
 }
+
 ```
 
 And its output:
