@@ -72,7 +72,7 @@ The vehicles traveling through your capital city's new junction must follow thes
 
 - Each vehicle must have a fixed velocity.
 
-- A safety distance from other vehicles must be maintained. If one vehicle stops, the following vehicle must also stop before it gets to close to the stationary vehicle in front.
+- A safety distance from other vehicles must be maintained. If one vehicle stops, the following vehicle must also stop before it gets too close to the stationary vehicle in front.
 
 - Vehicles must stop if the traffic light is red and proceed otherwise.
 
