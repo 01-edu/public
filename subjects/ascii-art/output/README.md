@@ -14,6 +14,9 @@ Usage: go run . [STRING] [BANNER] [OPTION]
 EX: go run . something standard --output=<fileName.txt>
 ```
 
+If there are other `ascii-art` optional projects implemented, the program should accept other correctly formatted `[OPTION]` and/or `[BANNER]`.  
+Additionally, the program must still be able to run with a single `[STRING]` argument.
+
 ### Instructions
 
 - Your project must be written in **Go**.
