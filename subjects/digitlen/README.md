@@ -10,7 +10,7 @@ Write a function `DigitLen()` that takes two integers as arguments and returns t
 ### Expected function
 
 ```go
-func DigitLen(n, base int) int {
+func DigitLen(n,base int) int {
 
 }
 ```
