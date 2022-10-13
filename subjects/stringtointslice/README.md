@@ -20,14 +20,14 @@ Here is a possible program to test your function:
 package main
 
 import (
-        "fmt"
-        "piscine"
+	"fmt"
+	"piscine"
 )
 
 func main() {
-        fmt.Println(piscine.StringToIntSlice("A quick brown fox jumps over the lazy dog"))
-        fmt.Println(piscine.StringToIntSlice("Converted this string into an int"))
-        fmt.Println(piscine.StringToIntSlice("hello THERE"))
+	fmt.Println(piscine.StringToIntSlice("A quick brown fox jumps over the lazy dog"))
+	fmt.Println(piscine.StringToIntSlice("Converted this string into an int"))
+	fmt.Println(piscine.StringToIntSlice("hello THERE"))
 }
 ```
 
