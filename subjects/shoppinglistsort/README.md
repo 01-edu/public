@@ -22,13 +22,13 @@ Here is a possible program to test your function:
 package main
 
 import (
-        "fmt"
-        "piscine"
+	"fmt"
+	"piscine"
 )
 
 func main() {
-        slice := []string{"Banana", "Mushroom", "Salt", "Pepper","Tea", "Milk"}
-        fmt.Println(piscine.ShoppingListSort(slice))
+	slice := []string{"Banana", "Mushroom", "Salt", "Pepper", "Tea", "Milk"}
+	fmt.Println(piscine.ShoppingListSort(slice))
 }
 ```
 
