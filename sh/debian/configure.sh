@@ -215,24 +215,45 @@ function checkList() {
 # Deploy repositories
 function deployRepos {
   # Check for the presence of configurations
-  test "$(ls ~/.ssh/*.pub 2>/dev/null)" && echo -n "Config check done!" || echo -n "Config check failed!" exit 0
+  test "$(ls ~/.ssh/*.pub 2>/dev/null)" && echo -n "$(tput setaf 2)$(tput bold)Config check passed!$(tput sgr0)" || exit 1
+
+  echo -e "$(tput setaf 6)$(tput bold)\nThe platform components will be deployed to the server: $(tput sgr0)\n"
 
   # Clone core repositories
-  git clone git@github.com:01-edu/runner.git /root/core/runner
-  git clone git@github.com:01-edu/https.git /root/core/https
+  #git clone git@github.com:01-edu/runner.git /root/core/runner
+  #git clone git@github.com:01-edu/https.git /root/core/https
 
   #Clone platform repository
-  server-name = $(hostname)
-  git clone git@github.com:01-edu/all.git /root/$server-name
+  echo -e "Enter the server FQDN: "
+  read serverFQDN
+  git clone git@github.com:01-edu/all.git /root/$serverFQDN
 
   # Docker login
-  docker login docker.01-edu.org
+  echo -e "Enter the docker username: "
+  read dockerUsername
+  echo -e "Enter the docker password: "
+  read dockerPassword
+  docker login docker.01-edu.org -u $dockerUsername -p $dockerPassword
+
+  # Deploy HTTPS
+  echo -e "Deploying HTTPS service: \n"
+  cd /root/core/https
+  DOMAIN=$serverFQDN ./run.sh
+  echo -e "HTTPS service is up! \n"
+
+  # Deploy Runner
+  echo -e "Deploying Runner service: \n "
+  cd /root/core/runner
+  echo -e "Enter the runner Registry password: "
+  read registryPassword
+  REGISTRY_PASSWORD=$registryPassword ./run.sh
+  echo -e "Runner service is up! \n"
 }
 
 if [[ ! -n ${1:-} ]] || [[ "--check" = $1 ]]; then
-  echo -e "$(tput setaf 2)$(tput bold)\nCommencing configuration check: $(tput sgr0)\n"
+  echo -e "$(tput setaf 2)$(tput bold)Commencing configuration check: $(tput sgr0)"
   checkList
-  echo -e "$(tput setaf 2)\nSystem configuration check complete! $(tput sgr0)"
+  echo -e "$(tput setaf 2)\nSystem configuration check complete! $(tput sgr0)\n"
   exit 0
 elif [[ "--help" = $1 ]]; then
   echo "$(tput setaf 2) --check : to check the current configuration. $(tput sgr0)"
@@ -241,17 +262,16 @@ elif [[ "--help" = $1 ]]; then
   echo "$(tput setaf 6) --deploy : to deploy platform components. $(tput sgr0)"
   echo "$(tput setaf 7) --help : to display this message. $(tput sgr0)"
 elif [[ "--reboot" = $1 ]]; then
-  echo -e "$(tput setaf 1)$(tput bold)\nSystem will be configured and rebooted. $(tput sgr0)\n"
+  echo -e "$(tput setaf 1)$(tput bold)\nSystem will be configured and rebooted. $(tput sgr0)"
   sysConfig
   echo -e "$(tput setaf 1)\nSystem configuration complete. Rebooting now... $(tput sgr0)"
   reboot
 elif [[ "--run" = $1 ]]; then
-  echo -e "$(tput setaf 3)$(tput bold)\nSystem will be configured without rebooting. $(tput sgr0)\n"
+  echo -e "$(tput setaf 3)$(tput bold)\nSystem will be configured without rebooting. $(tput sgr0)"
   sysConfig
   echo -e "$(tput setaf 3)\nSystem configuration complete! $(tput sgr0)"
   exit 0
 elif [[ "--deploy" = $1 ]]; then
-  echo -e "$(tput setaf 6)$(tput bold)\nThe following platform components will be cloned to the server: $(tput sgr0)\n"
   deployRepos
   echo -e "$(tput setaf 6)\nRepositories cloned successfully! $(tput sgr0)"
   exit 0
