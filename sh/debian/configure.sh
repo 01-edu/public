@@ -14,6 +14,14 @@ export DEBIAN_PRIORITY=critical
 PATH=/sbin:/usr/sbin:$PATH
 
 function sysConfig() {
+  echo "Enter the server FQDN $(tput setaf 2)[System: $(hostname)]$(tput sgr0):"
+  read serverFQDN
+  hostnamectl set-hostname $serverFQDN
+
+  echo "Enter the server Time Zone $(tput setaf 2)[System: $(cat /etc/timezone)]$(tput sgr0): "
+  read serverTZ
+  timedatectl set-timezone $serverTZ
+
   # Navigate to tmp
   cd /tmp
 
@@ -167,7 +175,6 @@ EOF
   # Create Core directories
   mkdir -p /root/core/scripts/misc
 
-  # Create
 }
 
 # Check Config
@@ -212,21 +219,15 @@ function checkList() {
   echo " SSH private/public key pair generated"
 }
 
-# Deploy repositories
-function deployRepos {
+# Deploy core repositories
+function deployCore() {
   # Check for the presence of configurations
   test "$(ls ~/.ssh/*.pub 2>/dev/null)" && echo -n "$(tput setaf 2)$(tput bold)Config check passed!$(tput sgr0)" || exit 1
-
-  echo -e "$(tput setaf 6)$(tput bold)\nThe platform components will be deployed to the server: $(tput sgr0)\n"
+  echo -e "$(tput setaf 6)$(tput bold)\nThe core components will be deployed to the server: $(tput sgr0)\n"
 
   # Clone core repositories
-  #git clone git@github.com:01-edu/runner.git /root/core/runner
-  #git clone git@github.com:01-edu/https.git /root/core/https
-
-  #Clone platform repository
-  echo -e "Enter the server FQDN: "
-  read serverFQDN
-  git clone git@github.com:01-edu/all.git /root/$serverFQDN
+  git clone git@github.com:01-edu/runner.git /root/core/runner
+  git clone git@github.com:01-edu/https.git /root/core/https
 
   # Docker login
   echo -e "Enter the docker username: "
@@ -237,8 +238,10 @@ function deployRepos {
 
   # Deploy HTTPS
   echo -e "Deploying HTTPS service: \n"
+  echo "Enter the server FQDN $(tput setaf 2)[System: $(hostname)]$(tput sgr0):"
+  read httpsFQDN
   cd /root/core/https
-  DOMAIN=$serverFQDN ./run.sh
+  DOMAIN=$httpsFQDN ./run.sh
   echo -e "HTTPS service is up! \n"
 
   # Deploy Runner
@@ -250,6 +253,36 @@ function deployRepos {
   echo -e "Runner service is up! \n"
 }
 
+function deployPlatform() {
+  # Check for the presence of configurations
+  test "$(ls ~/.ssh/*.pub 2>/dev/null)" && echo -n "$(tput setaf 2)$(tput bold)Config check passed!$(tput sgr0)" || exit 1
+  echo -e "$(tput setaf 6)$(tput bold)\nThe platform components will be deployed to the server: $(tput sgr0)\n"
+
+  # Clone platform repository
+  echo "Enter the server FQDN $(tput setaf 2)[System: $(hostname)]$(tput sgr0):"
+  read serverFQDN
+  git clone git@github.com:01-edu/all.git /root/$serverFQDN
+  cd /root/$serverFQDN
+  # Generate platform environment file automatically
+  ./generate_env.sh --auto
+  docker-compose --build --detach
+  ./redeploy.sh --latest
+}
+
+function clonePlatform() {
+  # Check for the presence of configurations
+  test "$(ls ~/.ssh/*.pub 2>/dev/null)" && echo -n "$(tput setaf 2)$(tput bold)Config check passed!$(tput sgr0)" || exit 1
+  echo -e "$(tput setaf 6)$(tput bold)\nThe platform components will be deployed to the server: $(tput sgr0)\n"
+
+  # Clone platform repository
+  echo "Enter the target directory for the platform $(tput setaf 2)[System: $(pwd)/$(hostname)]$(tput sgr0):"
+  read serverDir
+  git clone git@github.com:01-edu/all.git $serverDir
+  cd /$serverDir
+  # Generate platform environment file automatically
+  ./generate_env.sh --gen
+}
+
 if [[ ! -n ${1:-} ]] || [[ "--check" = $1 ]]; then
   echo -e "$(tput setaf 2)$(tput bold)Commencing configuration check: $(tput sgr0)"
   checkList
@@ -259,7 +292,8 @@ elif [[ "--help" = $1 ]]; then
   echo "$(tput setaf 2) --check : to check the current configuration. $(tput sgr0)"
   echo "$(tput setaf 3) --run : to configure the system. $(tput sgr0)"
   echo "$(tput setaf 1) --reboot : to configure the system and reboot. $(tput sgr0)"
-  echo "$(tput setaf 6) --deploy : to deploy platform components. $(tput sgr0)"
+  echo "$(tput setaf 6) --deploy : to deploy and spin-up platform components. $(tput sgr0)"
+  echo "$(tput setaf 5) --platform : to clone platform. $(tput sgr0)"
   echo "$(tput setaf 7) --help : to display this message. $(tput sgr0)"
 elif [[ "--reboot" = $1 ]]; then
   echo -e "$(tput setaf 1)$(tput bold)\nSystem will be configured and rebooted. $(tput sgr0)"
@@ -272,8 +306,13 @@ elif [[ "--run" = $1 ]]; then
   echo -e "$(tput setaf 3)\nSystem configuration complete! $(tput sgr0)"
   exit 0
 elif [[ "--deploy" = $1 ]]; then
-  deployRepos
-  echo -e "$(tput setaf 6)\nRepositories cloned successfully! $(tput sgr0)"
+  deployCore
+  deployPlatform
+  echo -e "$(tput setaf 6)\nRepositories cloned  and platform has been deployed successfully! $(tput sgr0)"
+  exit 0
+elif [[ "--platform" = $1 ]]; then
+  clonePlatform
+  echo -e "$(tput setaf 5)\nPlatform has been cloned successfully! $(tput sgr0)"
   exit 0
 else
   echo "$(tput setaf 1)$(tput bold) Unknown configuration option: $1 $(tput sgr0)"
