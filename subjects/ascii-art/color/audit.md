@@ -40,7 +40,7 @@ EX: go run . something --color=<color>
 
 ###### Does it display the expected result?
 
-##### Try passing as arguments `"RGB()" --color=blue`, in order to color just the B.
+##### Try passing as arguments `"RGB\(\)" --color=blue`, in order to color just the B.
 
 ###### Does it display the expected result?
 
