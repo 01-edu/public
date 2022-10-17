@@ -19,13 +19,18 @@ Here is a possible program to test your function:
 ```go
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"piscine"
+)
 
 func main() {
-	fmt.Println(CountAlpha("Hello world"))
-	fmt.Println(CountAlpha("H e l l o"))
-	fmt.Println(CountAlpha("H1e2l3l4o"))
+	fmt.Println(piscine.CountAlpha("Hello world"))
+	fmt.Println(piscine.CountAlpha("H e l l o"))
+	fmt.Println(piscine.CountAlpha("H1e2l3l4o"))
 }
+
 ```
 
 And its output:
