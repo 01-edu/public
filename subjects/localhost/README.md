@@ -69,7 +69,7 @@ In the file you should be able to specify the following:
 > There is no need to pass through `epoll` when reading the configuration file.
 
 #### Testing your server
-- Do stress tests (for example with `siege -b [IP]:[PORT]`), it must stay available at all costs (availability should be up to 99.5).
+- Do stress tests with `siege -b [IP]:[PORT]`, it must stay available at all costs (availability should be up to 99.5, it will be tested during audits).
 - Create tests for as many cases as you can (redirections, bad configuration files, static and dynamic pages, default error pages and so on).
 - You will be requested to provide and explain your tests during the audits.
 - You can use the language you prefer to write tests, as long as they are exhaustive and the auditor can check their behavior.
