@@ -23,15 +23,16 @@ Here is a possible program to test your function:
 package main
 
 import (
-  "fmt"
-  "piscine"
+	"fmt"
+	"piscine"
 )
 
 func main() {
-  fmt.Print(piscine.LoafOfBread("deliciousbread"))
-  fmt.Print(piscine.LoafOfBread("This is a loaf of bread"))
-  fmt.Print(piscine.LoafOfBread("loaf"))
+	fmt.Print(piscine.LoafOfBread("deliciousbread"))
+	fmt.Print(piscine.LoafOfBread("This is a loaf of bread"))
+	fmt.Print(piscine.LoafOfBread("loaf"))
 }
+
 ```
 
 And its output:
