@@ -17,14 +17,13 @@ Create a structure named `Form` that will have the following fields:
 - `first_name`: `String`
 - `last_name`: `String`
 - `birth`: `NaiveDate` that will convert a string `"2015-09-05"` to a date of that format.
-- `fav_colour`: of type `Color` that must be an `enum` with the fields `Red`, `Blue`  and `Green`
 - `birth_location`: `String`
 - `password`: `String`
 
 You must implement the **associated functions** `new` and
 `validate` that will validate the form.
 
-For the error type you must create a `struct` named `FErr`. It must have the fields:
+For the error type you must create a `struct` named `FormError`. It must have the fields:
 
 - `form_values`: this will be a tuple of strings representing the invalid input. For example: `("password", "asdaSD\_")` or `("first_name", "someone")`
 
@@ -47,15 +46,11 @@ pub use chrono::{Utc, NaiveDate};
 
 // this will be the structure that wil handle the errors
 #[derive(Debug, Eq, PartialEq)]
-pub struct FErr {
+pub struct FormError {
     // expected public fields
 }
-impl FErr {
-    pub fn new(name: String, error: String, err: String) -> FErr {}
-}
-
-#[derive(Debug, Eq, PartialEq)]
-pub enum Color {
+impl FormError {
+    pub fn new(field_name: String, field_value: String, err: String) -> FormError {}
 }
 
 #[derive(Debug, Eq, PartialEq)]
@@ -68,12 +63,11 @@ impl Form {
         first_name: String,
         last_name: String,
         birth: NaiveDate,
-        fav_colour: Color,
         birth_location: String,
         password: String,
     ) -> Form {}
     
-    pub fn validate(&self) -> Result<Vec<&str>, FErr> {}
+    pub fn validate(&self) -> Result<Vec<&str>, FormError> {}
 }
 ```
 
@@ -89,7 +83,6 @@ fn main() {
         String::from("Lee"),
         String::from("Silva"),
         create_date("2015-09-05"),
-        Color::Red,
         String::from("Africa"),
         String::from("qwqwsa1dty_"),
     );
@@ -118,10 +111,10 @@ And its output:
 $ cargo run
 Form { first_name: "Lee", last_name: "Silva", birth: 2015-09-05, fav_colour: Red, birth_location: "Africa", password: "qwqwsa1dty_" }
 ["Valid first name", "Valid password"]
-FErr { form_values: ("first_name", ""), date: "2022-04-21 09:18:12", err: "No user name" }
-FErr { form_values: ("password", "dty_1"), date: "2022-04-21 09:18:12", err: "At least 8 characters" }
-FErr { form_values: ("password", "asdasASd(_"), date: "2022-04-21 09:18:12", err: "Combination of different ASCII character types (numbers, letters and none alphanumeric characters)" }
-FErr { form_values: ("password", "asdasASd123SA"), date: "2022-04-21 09:18:12", err: "Combination of different ASCII character types (numbers, letters and none alphanumeric characters)" }
+FormError { form_values: ("first_name", ""), date: "2022-04-21 09:18:12", err: "No user name" }
+FormError { form_values: ("password", "dty_1"), date: "2022-04-21 09:18:12", err: "At least 8 characters" }
+FormError { form_values: ("password", "asdasASd(_"), date: "2022-04-21 09:18:12", err: "Combination of different ASCII character types (numbers, letters and none alphanumeric characters)" }
+FormError { form_values: ("password", "asdasASd123SA"), date: "2022-04-21 09:18:12", err: "Combination of different ASCII character types (numbers, letters and none alphanumeric characters)" }
 $
 ```
 
