@@ -6,7 +6,7 @@
 
 - The `max` must be included, and `min` must be excluded.
 
-- If `max` is inferior than or equal to `min`, return a `nil` value.
+- If `max` is inferior than or equal to `min`, return an empty slice.
 
 - `make()` is not allowed for this exercise.
 
