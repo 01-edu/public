@@ -219,6 +219,22 @@ function checkList() {
   echo " SSH private/public key pair generated"
 }
 
+function runHTTPS() {
+  echo -e "Deploying HTTPS service: \n"
+  echo "Enter the server FQDN $(tput setaf 2)[System: $(hostname)]$(tput sgr0):"
+  read httpsFQDN
+  # Check if the FQDN is valid
+  if ping -c1 -W1 $httpsFQDN 2>/dev/null; then
+    cd /root/core/https
+    DOMAIN=$httpsFQDN ./run.sh
+    echo -e "HTTPS service is up! \n"
+  else
+    echo "$(tput setaf 1)$(tput bold)The FQDN: $httpsFQDN is not reachable$(tput sgr0)"
+    echo "$(tput setaf 1)Please check your DNS configuration$(tput sgr0)"
+    runHTTPS
+  fi
+}
+
 # Deploy core repositories
 function deployCore() {
   # Check for the presence of configurations
@@ -237,12 +253,7 @@ function deployCore() {
   docker login docker.01-edu.org -u $dockerUsername -p $dockerPassword
 
   # Deploy HTTPS
-  echo -e "Deploying HTTPS service: \n"
-  echo "Enter the server FQDN $(tput setaf 2)[System: $(hostname)]$(tput sgr0):"
-  read httpsFQDN
-  cd /root/core/https
-  DOMAIN=$httpsFQDN ./run.sh
-  echo -e "HTTPS service is up! \n"
+  runHTTPS
 
   # Deploy Runner
   echo -e "Deploying Runner service: \n "
@@ -265,7 +276,7 @@ function deployPlatform() {
   cd /root/$serverFQDN
   # Generate platform environment file automatically
   ./generate_env.sh --auto
-  docker-compose --build --detach
+  docker-compose up --build --detach
   ./redeploy.sh --latest
 }
 
