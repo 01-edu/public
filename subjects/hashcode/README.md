@@ -2,9 +2,9 @@
 
 ### Instructions
 
-- Write a function called HashCode(string) that takes a string in parameter and returns a new string hashed 
+Write a function called `HashCode()` that takes a `string` as an argument and return a new **hashed** `string`.
 
-- Hash equation: (ASCII of current character + size of the string) % 127, so it can be in the limit of ASCII size '127'.
+- Hash equation: (ASCII of current character + size of the string) % 127, so it can be in the limit of the ASCII size '127'.
 
 - If the final number gives an unprintable character, add 33.
 
@@ -13,30 +13,34 @@
 
 ```go
 func HashCode(dec string) string {
+
 }
 ```
 
 ### Usage
 
-Here is a possible program to test your function :
+Here is a possible program to test your function:
 
 ```go
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"piscine"
+)
 
 func main() {
-    fmt.Println(HashCode("A")) 
-    fmt.Println(HashCode("AB"))
-    fmt.Println(HashCode("BAC"))
-    fmt.Println(HashCode("Hello World")) 
+	fmt.Println(piscine.HashCode("A"))
+	fmt.Println(piscine.HashCode("AB"))
+	fmt.Println(piscine.HashCode("BAC"))
+	fmt.Println(piscine.HashCode("Hello World"))
 }
 ```
 
-And its output :
+And its output:
 
-```
-$ go run . 
+```console
+$ go run .
 B
 CD
 EDF
