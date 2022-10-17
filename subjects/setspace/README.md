@@ -1,16 +1,16 @@
-## set-space
+## setspace
 
-### Instructions 
+### Instructions
 
-Write a function that takes a pascal case string and returns the same string with spaces between each word.
+Write a function that takes a PascalCase `string` and returns the same `string` with a space between each word.
 
-- The function must return an empty string if the input string is empty.
+- The function must return an empty `string` if the input `string` is empty.
 
-- The function must return `"Error"` if the input string is not a pascal case string.
+- The function must return `"Error"` if the input `string` is not a PascalCase `string`.
 
-- The pascal case begins with a capital letter, and each word begins with a capital letter without a space between them for example: `"HelloWorld`"` is a valid pascal case string.
+- The PascalCase begins with a capital letter, and each word begins with a capital letter without a space between them for example: `"HelloWorld`"` is a valid PascalCase `string`.
 
-- The pascal case cannot contain any non-alphabetic character, for example: `"Hello World12`"` is not a valid pascal case string.
+- The PascalCase cannot contain any non-alphabetic character, for example: `"Hello World12`" is not a valid PascalCase `string`.
 
 ### Expected function
 
@@ -22,29 +22,34 @@ func SetSpace(s string) string {
 
 ### Usage
 
-Here is a possible program to test your function :
+Here is a possible program to test your function:
 
 ```go
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"piscine"
+)
 
-func main(){
-    fmt.Println(SetSpace("HelloWorld"))
-    fmt.Println(SetSpace("Hello World12"))
-    fmt.Println(SetSpace("Hello World"))
-    fmt.Println(SetSpace("LoremIpSumWord"))
-    fmt.Println(SetSpace(""))
+func main() {
+	fmt.Println(piscine.SetSpace("HelloWorld"))
+	fmt.Println(piscine.SetSpace("Hello World12"))
+	fmt.Println(piscine.SetSpace("Hello World"))
+	fmt.Println(piscine.SetSpace(""))
+	fmt.Println(piscine.SetSpace("LoremIpsumWord"))
 }
+
 ```
 
-And its output :
+And its output:
 
 ```console
 $ go run . | cat -e
-Hello World$
+Hello World
 Error$
 Error$
+
 Lorem Ipsum Word$
 $
 ```
