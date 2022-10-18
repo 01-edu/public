@@ -1,15 +1,15 @@
-# printif
+## printif
 
 ### Instructions
 
-Create a function  `PrintIf()` that takes a string in the parameter and prints`G` followed by a newline if the argument length is more than 3; otherwise, print "Invalid Output\n".
-
-- If it's an empty string returns "Invalid Output\n".
+Write a function that takes a `string` as an argument and returns the letter `G` if the argument length is more than 3, otherwise returns **Invalid Input\n**.
+- If it's an empty string return "Invalid Input\n". 
 
 ### Expected function
 
 ```go
 func PrintIf(str string) string {
+
 }
 ```
 
@@ -22,19 +22,21 @@ package main
 
 import (
 	"fmt"
+
+	"piscine"
 )
 
 func main() {
-    fmt.Print(PrintIf("abcdefz"))
-    fmt.Print(PrintIf("T2d97d1"))
-    fmt.Print(PrintIf(""))
-    fmt.Print(PrintIf("14"))
+	fmt.Print(piscine.PrintIf("abcdefz"))
+	fmt.Print(piscine.PrintIf("T2d97d1"))
+	fmt.Print(piscine.PrintIf(""))
+	fmt.Print(piscine.PrintIf("14"))
 }
 ```
 
-And its output :
+And its output:
 
-```go
+```console
 $ go run . | cat -e
 G$
 G$
