@@ -4,7 +4,7 @@
 
 You were sent to the supermarket with a shopping list. To make your shopping faster, write a function `ShoppingListSort()` that takes a slice of strings and sorts it, according to the string length, returning a slice in which the strings appear in ascending order.
 
-When the length of string elements are equal, then the order in which they appear does not matter.
+- The length of the strings cannot repeat itself.
 
 ### Expected function
 
@@ -27,8 +27,8 @@ import (
 )
 
 func main() {
-	slice := []string{"Banana", "Mushroom", "Salt", "Pepper", "Tea", "Milk"}
-	fmt.Println(piscine.ShoppingListSort(slice))
+	slice := []string{"Pineapple", "Honey", "Mushroom", "Tea", "Pepper", "Milk"}
+	fmt.Println(ShoppingListSort(slice))
 }
 ```
 
@@ -36,5 +36,5 @@ And its output:
 
 ```console
 $ go run . | cat -e
-[Tea Salt Milk Banana Pepper Mushroom]$
+[Tea Milk Honey Pepper Mushroom Pineapple]$
 ```
