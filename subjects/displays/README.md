@@ -9,8 +9,11 @@ Write a program that displays an `S` character on the standard followed by newli
 ```console
 $ go run . | cat -e
 S$
+$
 $ go run . "a" "b" | cat -e
 S$
+$
 $ go run . "a" "b" "c" | cat -e
 S$
+$
 ```
