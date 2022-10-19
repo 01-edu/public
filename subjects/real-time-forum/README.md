@@ -71,9 +71,9 @@ As it is expected, the messages should work in real time, in other words, if a u
 
 - All [standard go](https://golang.org/pkg/) packages are allowed.
 - [Gorilla](https://pkg.go.dev/github.com/gorilla/websocket) websocket
-- github.com/mattn/go-sqlite3
-- golang.org/x/crypto/bcrypt
-- github.com/satori/go.uuid
+- [sqlite3](https://github.com/mattn/go-sqlite3)
+- [bcrypt](https://pkg.go.dev/golang.org/x/crypto/bcrypt)
+- [UUID](https://github.com/gofrs/uuid)
 
 This project will help you learn about:
 
