@@ -30,6 +30,6 @@ We encourage you to add any other additional features that you find relevant.
 ### Allowed packages
 
 - All [standard go](https://golang.org/pkg/) packages are allowed.
-- github.com/mattn/go-sqlite3
-- golang.org/x/crypto/bcrypt
-- github.com/satori/go.uuid
+- [sqlite3](https://github.com/mattn/go-sqlite3)
+- [bcrypt](https://pkg.go.dev/golang.org/x/crypto/bcrypt)
+- [UUID](https://github.com/gofrs/uuid)
