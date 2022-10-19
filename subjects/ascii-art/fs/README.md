@@ -33,6 +33,7 @@ $ go run . "hello" standard | cat -e
 |_| |_|  \___| |_| |_|  \___/  $
                                $
                                $
+
 $ go run . "Hello There!" shadow | cat -e
                                                                                          $
 _|    _|          _| _|                _|_|_|_|_| _|                                  _| $
@@ -42,8 +43,6 @@ _|    _| _|       _| _| _|    _|           _|     _|    _| _|       _|       _| 
 _|    _|   _|_|_| _| _|   _|_|             _|     _|    _|   _|_|_| _|         _|_|_| _| $
                                                                                          $
                                                                                          $
-
-
 
 $ go run . "Hello There!" thinkertoy | cat -e
                                                 $
