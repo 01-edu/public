@@ -82,7 +82,7 @@ For the forum project you must use Docker. You can read about docker basics in t
 - All [standard Go](https://golang.org/pkg/) packages are allowed.
 - [sqlite3](https://github.com/mattn/go-sqlite3)
 - [bcrypt](https://pkg.go.dev/golang.org/x/crypto/bcrypt)
-- [UUID](https://github.com/satori/go.uuid)
+- [UUID](https://github.com/gofrs/uuid)
 
 This project will help you learn about:
 
