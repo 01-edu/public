@@ -9,9 +9,9 @@ The file must be named by using the flag `--output=<fileName.txt>`, in which `--
 - The flag must have exactly the same format as above, any other formats must return the following usage message:
 
 ```console
-Usage: go run . [STRING] [BANNER] [OPTION]
+Usage: go run . [OPTION] [STRING] [BANNER]
 
-EX: go run . something standard --output=<fileName.txt>
+EX: go run . --output=<fileName.txt> something standard
 ```
 
 If there are other `ascii-art` optional projects implemented, the program should accept other correctly formatted `[OPTION]` and/or `[BANNER]`.  
@@ -26,7 +26,7 @@ Additionally, the program must still be able to run with a single `[STRING]` arg
 ### Usage
 
 ```console
-$ go run . "hello" standard --output=banner.txt
+$ go run . --output=banner.txt "hello" standard
 $ cat -e banner.txt
  _              _   _          $
 | |            | | | |         $
@@ -37,7 +37,7 @@ $ cat -e banner.txt
                                $
                                $
 $
-$ go run . "Hello There!" shadow --output=banner.txt
+$ go run . --output=banner.txt "Hello There!" shadow
 $ cat -e banner.txt
                                                                                          $
 _|    _|          _| _|                _|_|_|_|_| _|                                  _| $
