@@ -2,25 +2,25 @@
 
 ###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
-##### Try passing as arguments `"banana" --color red`.
+##### Try passing as arguments `--color red "banana" `.
 
 ```
-Usage: go run . [STRING] [OPTION]
+Usage: go run . [OPTION] [STRING]
 
-EX: go run . something --color=<color>
+EX: go run . --color=<color> <letters to be colored> "something"
 ```
 
 ###### Does it display the same result as above?
 
-##### Try passing as arguments `"hello world" --color=red`.
+##### Try passing as arguments `--color=red "hello world"`.
 
 ###### Does it display the expected result?
 
-##### Try passing as arguments `"1 + 1 = 2" --color=green`.
+##### Try passing as arguments `--color=green "1 + 1 = 2"`.
 
 ###### Does it display the expected result?
 
-##### Try passing as arguments `"(%&) ??" --color=yellow`.
+##### Try passing as arguments `--color=yellow "(%&) ??"`.
 
 ###### Does it display the expected result?
 
@@ -36,11 +36,11 @@ EX: go run . something --color=<color>
 
 ###### Does it display the expected result (the corresponding set of letters with that color)?
 
-##### Try passing as arguments `"HeY GuYs" --color=orange`, in order to color `GuYs`.
+##### Try passing as arguments `--color=orange "HeY GuYs"`, in order to color `GuYs`.
 
 ###### Does it display the expected result?
 
-##### Try passing as arguments `"RGB()" --color=blue`, in order to color just the B.
+##### Try passing as arguments `--color=blue "RGB()"`, in order to color just the `B`.
 
 ###### Does it display the expected result?
 
