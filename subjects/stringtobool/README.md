@@ -2,39 +2,40 @@
 
 ### Instructions
 
-- Write a function that takes a string in parameter and returns: 
+Write a function that takes a `string` as an argument and returns a `boolean`.
 
-- If the string equals `True` or `T` or `t` returns `true` otherwise, returns `false`.
+- If the `string` equals `True` or `T` or `t` return `true` otherwise, return `false`.
 
 
 ### Expected function
 
 ```go
-func StringToBool(s string) string {
+func StringToBool(s string) bool {
 
 }
 ```
 
 ### Usage
 
-Here is a possible program to test your function :
+Here is a possible program to test your function:
 
 ```go
 package main
 
 import (
 	"fmt"
+	"piscine"
 )
 
 func main() {
-	fmt.Println(StringToBool("True"))
-	fmt.Println(StringToBool("T"))
-	fmt.Println(StringToBool("False"))
-	fmt.Println(StringToBool("TTFF"))
+	fmt.Println(piscine.StringToBool("True"))
+	fmt.Println(piscine.StringToBool("T"))
+	fmt.Println(piscine.StringToBool("False"))
+	fmt.Println(piscine.StringToBool("TTFF"))
 }
 ```
 
-And its output :
+And its output:
 
 ```console
 $ go run .
