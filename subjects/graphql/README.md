@@ -94,11 +94,11 @@ Here are the list of tables that you are allowed to query (it will be only provi
 
   This table will give you information about all objects (exercises/projects)
 
-  | id  | name |     type |                     attrs | childrenAttrs |
-  | --- | ---: | -------: | ------------------------: | ------------: |
-  | 1   |    0 | exercise | `{"language": "dom", ...` |          `{}` |
-  | 2   |    0 |  project |  `{"language": "go", ...` |          `{}` |
-  | 3   |    1 | exercise |  `{"language": "js", ...` |          `{}` |
+  | id  | name |     type | childrenAttrs |
+  | --- | ---: | -------: | ------------: |
+  | 1   |    0 | exercise |          `{}` |
+  | 2   |    0 |  project |          `{}` |
+  | 3   |    1 | exercise |          `{}` |
 
 Examples:
 
