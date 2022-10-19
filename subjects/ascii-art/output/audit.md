@@ -2,17 +2,21 @@
 
 ###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
+<<<<<<< Updated upstream
 ##### Try passing as arguments `"banana" standard --output test00.txt`
+=======
+##### Try passing as arguments `"--output test00.txt banana standard "`
+>>>>>>> Stashed changes
 
 ```
-Usage: go run . [STRING] [BANNER] [OPTION]
+Usage: go run . [OPTION] [STRING] [BANNER]
 
-Example: go run . something standard --output=<fileName.txt>
+Example: go run . --output=<fileName.txt> something standard
 ```
 
 ###### Does it display the same result as above?
 
-##### Try passing as arguments `"First\nTest" shadow --output=test00.txt`
+##### Try passing as arguments `--output=test00.txt "First\nTest" shadow`
 
 ```
 student$ cat test00.txt
@@ -37,7 +41,7 @@ $
 
 ###### Does it save the right output in the right file?
 
-##### Try passing as arguments `"hello" standard --output=test01.txt`
+##### Try passing as arguments `--output=test01.txt "hello" standard`
 
 ```
 student$ cat test01.txt
@@ -54,7 +58,7 @@ $
 
 ###### Does it save the right output in the right file?
 
-##### Try passing as arguments `"123 -> #$%" standard --output=test02.txt`
+##### Try passing as arguments `--output=test02.txt "123 -> #$%" standard`
 
 ```
 student$ cat test02.txt
@@ -71,7 +75,7 @@ $
 
 ###### Does it save the right output in the right file?
 
-##### Try passing as arguments `"432 -> #$%&@" shadow --output=test03.txt`
+##### Try passing as arguments `--output=test03.txt "432 -> #$%&@" shadow`
 
 ```
 student$ cat test03.txt
@@ -88,7 +92,7 @@ $
 
 ###### Does it save the right output in the right file?
 
-##### Try passing as arguments `"There" shadow --output=test04.txt`
+##### Try passing as arguments `--output=test04.txt "There" shadow`
 
 ```
 student$ cat test04.txt
@@ -105,7 +109,7 @@ $
 
 ###### Does it save the right output in the right file?
 
-##### Try passing as arguments `"123 -> \"#$%@" thinkertoy --output=test05.txt`
+##### Try passing as arguments `--output=test05.txt "123 -> \"#$%@" thinkertoy`
 
 ```
 student$ cat test05.txt
@@ -122,7 +126,7 @@ $
 
 ###### Does it save the right output in the right file?
 
-##### Try passing as arguments `"2 you" thinkertoy --output=test06.txt`
+##### Try passing as arguments `--output=test06.txt "2 you" thinkertoy`
 
 ```
 student$ cat test06.txt
@@ -139,7 +143,7 @@ $
 
 ###### Does it save the right output in the right file?
 
-##### Try passing as arguments `"Testing long output!" standard --output=test07.txt`
+##### Try passing as arguments `--output=test07.txt "Testing long output!" standard`
 
 ```
 student$ cat test07.txt
