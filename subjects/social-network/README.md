@@ -220,7 +220,7 @@ Every other notification created by you that isn't on the list is welcomed too.
 - [migration](https://pkg.go.dev/github.com/Boostport/migration)
 - [sqlite3](https://github.com/mattn/go-sqlite3)
 - [bcrypt](https://pkg.go.dev/golang.org/x/crypto/bcrypt)
-- [UUID](https://github.com/satori/go.uuid)
+- [UUID](https://github.com/gofrs/uuid)
 
 This project will help you learn about:
 
