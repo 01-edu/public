@@ -23,13 +23,19 @@ Here is a possible program to test your function:
 package main
 
 import (
-        "fmt"
-        "piscine"
+    "fmt"
+    "piscine"
 )
 
 func main() {
-        position := [][]string{{"4th Place"}, {"3rd Place"}, {"2nd Place"}, {"1st Place"}}
-        fmt.Println(piscine.PodiumPosition(position))
+
+    p4 := []string{"4th Place"}
+    p3 := []string{"3rd Place"}
+    p2 := []string{"2nd Place"}
+    p1 := []string{"1st Place"}
+
+    position := [][]string{p4, p3, p2, p1}
+    fmt.Println(piscine.PodiumPosition(position))
 }
 ```
 
