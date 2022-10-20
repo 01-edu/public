@@ -23,7 +23,6 @@ You must implement the **associated functions** `new` and
 `validate` that will validate the form.
 
 For the error type you must create a `struct` named `FormError`. It must have the fields:
-
 - `form_values`: this will be a tuple of strings representing the invalid input. For example: `("password", "asdaSD\_")` or `("first_name", "someone")`
 
 - `date`: that will have the date that the error occurred in the format `"2020-12-14 09:33:41"`
