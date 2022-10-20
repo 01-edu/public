@@ -6,14 +6,13 @@ For this exercise, you will have to implement an **error type** for a form valid
 
 The first name must not be empty and the password must have **at least 8 characters**, and a combination of **alphabetic**, **numeric** and **none-alphanumeric** (`<`, `&`,  `/` ...).
 
-examples
+Examples:
 - `"asDd123=%"`: **good**.
 - `"asgfD"`: **error** as it only contains alphabetic characters.
 - `"asdsdf2"`: **error** as it is missing none-alphanumeric characters.
 - `"sad\_#$"`: **error** as it is missing numeric characters.
 
 Create a structure named `Form` that will have the following fields:
-
 - `first_name`: `String`
 - `last_name`: `String`
 - `birth`: `NaiveDate` that will convert a string `"2015-09-05"` to a date of that format.
