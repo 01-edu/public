@@ -31,6 +31,7 @@ fn main() {
     println!("{}", pig_latin(&String::from("square")));
     println!("{}", pig_latin(&String::from("xenon")));
     println!("{}", pig_latin(&String::from("chair")));
+	println!("{}", pig_latin(&String::from("queen")));
 }
 ```
 
@@ -44,6 +45,7 @@ ellohay
 aresquay
 enonxay
 airchay
+ueenqay
 $
 ```
 
