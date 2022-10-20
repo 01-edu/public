@@ -2,11 +2,7 @@
 
 ###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
-<<<<<<< Updated upstream
-##### Try passing as arguments `"banana" standard --output test00.txt`
-=======
 ##### Try passing as arguments `"--output test00.txt banana standard "`
->>>>>>> Stashed changes
 
 ```
 Usage: go run . [OPTION] [STRING] [BANNER]
