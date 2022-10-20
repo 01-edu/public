@@ -7,6 +7,8 @@ Write a function called `FishAndChips()` that takes an `int` and returns a `stri
 - If the number is divisible by 2, print `fish` followed by a newline `\n`.
 - If the number is divisible by 3, print `chips` followed by a newline `\n`.
 - If the number is divisible by 2 and 3, print `fish and chips` followed by a newline `\n`.
+- If the number is negative return `error: number is negative` followed by a newline `\n`.
+- If the number is non divisible return `error: non divisible` followed by a newline `\n`.
 
 ### Expected function
 
