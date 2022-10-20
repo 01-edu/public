@@ -1,16 +1,17 @@
-## Count-Characters
+## countcharacter
 
 ### Instructions
 
-Write a function that, given a string and a character as arguments, returns an int representing the number of times the character appears in the string.
+Write a function that, given a `string` and a character as arguments, returns an `int` representing the number of times the character appears in the string.
 
-- if the character is not in the string return 0
-- if the string is empty return 0
+- If the character is not in the string return 0
+- If the string is empty return 0
 
 ### Expected Function
 
 ```go
 func CountChar(str string, c rune) int {
+
 }
 ```
 
@@ -24,14 +25,14 @@ package main
 import "fmt"
 
 func main() {
-    fmt.Println(CountChar("Hello World", 'l'))
-    fmt.Println(CountChar("5  balloons",5))
-    fmt.Println(CountChar("     ", ' ')) //The first argument contains space and tabulation.
-    fmt.Println(CountChar("The 7 deadly sins", '7'))
+	fmt.Println(piscine.CountChar("Hello World", 'l'))
+	fmt.Println(piscine.CountChar("5  balloons", 5))
+	fmt.Println(piscine.CountChar("     ", ' ')) // The first argument contains space and tabulation.
+	fmt.Println(piscine.CountChar("The 7 deadly sins", '7'))
 }
 ```
 
-And its output :
+And its output:
 
 ```console
 $ go run .
