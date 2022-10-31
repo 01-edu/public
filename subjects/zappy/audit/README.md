@@ -137,7 +137,7 @@ Usage: ./client -n <team> -p <port> [-h <hostname>]
 
 ###### Can you confirm that if the player eats, he will survive longer?
 
-###### Can the player perform the elevation ritual and level up?
+###### Can the player perform the evolution ritual and level up?
 
 ###### Does the sight of the players increase with the level rising?
 
@@ -149,20 +149,20 @@ Usage: ./client -n <team> -p <port> [-h <hostname>]
 
 ###### Can you confirm that food and stones exist as resources in the game?
 
-###### Can you confirm that six types of stones are present in the game? (linemate, deraumere, sibur, mendiane, phiras, thystame)
+###### Can you confirm that six types of stones are present in the game? (Jade, Peridot, Amber, Amethyst, Garnet, Ammolite)
 
-###### Are resources randomly generated?
+###### Are resources randomly generated with some clear logical rules? (ask the students to explain those rules)
 
 **_Food_**
 
 ###### Is one food unit equal to 126 time units?
 
 
-**_Elevation ritual_**
+**_Evolution ritual_**
 
-##### Try to confirm that the rules of the elevation ritual are the same given in the subject. (ask the project owners for an explanation if necessary).
+##### Try to confirm that the rules of the evolution ritual are the same given in the subject. (ask the project owners for an explanation if necessary).
 
-###### Are the elevation ritual rules exactly the same?
+###### Are the evolution ritual rules exactly the same?
 
 **_Broadcast_**
 
