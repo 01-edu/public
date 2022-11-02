@@ -257,9 +257,7 @@ The number of squares traversed by the sound before reaching the player indicate
 This numbering is done by assigning '1' to the square in front of the player, then counting down the squares around the player in a trigonometric (counterclockwise) direction.
 Remember, sound is a wave that moves in a linear manner and the world is round, so we'll choose the shortest path for sound between the transmitter and the player we calculated for.
 
-The following example indicates the sound trajectory that we must choose, as well as the numbers of the squares around the player. The player receives the broadcast through square 3.
-
-<!-- TROCAR?? -->
+The following example indicates the sound trajectory that we must choose, as well as the numbers of the squares around the player. The player "A" is the source that sends te broadcast through the square 4 and "B" is the receptor witch receives the broadcast through square 2.
 
 ![Example](./sound.png)
 
@@ -340,7 +338,7 @@ To have a better vision of the game, which is simple, clear and ergonomic, the p
 - You need to implement the ability to click on a square to see its details, such as how many items of each are inside the square. It should look like a floating window, tooltip or something else.
 - You need to make sure that the visualization of sounds is included.
 
-The graphic part can be developed in [Javascript, Python, C, C++, PHP, Perl, etc]. This will communicate within the network with the `server` to retrieve the contents of the `map, teams, inventories, etc`, everything that is needed to see what is happening in the game.
+The graphic part can be developed in a language of your choice [Javascript, Python, C, C++, PHP, Perl, etc]. This will communicate within the network with the `server` to retrieve the contents of the `map, teams, inventories, etc`, everything that is needed to see what is happening in the game.
 
 ### BONUS
 
