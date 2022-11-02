@@ -29,7 +29,7 @@ $ ./server
 
 ###### Does it display a result like the one presented above?
 
-##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n <TeamOfVictory> -t 10"`. Open another terminal and run `"telnet 127.0.0.1 8080"`
+##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n my_team -t 10"`. Open another terminal and run `"telnet 127.0.0.1 8080"`
 
 ```console
 $ telnet 127.0.0.1 8080
@@ -43,9 +43,9 @@ WELCOME
 
 ##### Use Vscode or a similar program and search for any `exec` functions like (`execve`,`execpe`,`execl`,`execlp`,`execle`,...).
 
-###### Did the student use any of these functions?
+###### Was the student able to do the project without using such functions?
 
-##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n <TeamOfVictory> <TeamOfPower>"`.
+##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n my_team your_team"`.
 
 ```console
 [ SQ ] : FOOD R0 R1 R2 R3 R4 R5 BOTS ...
@@ -61,17 +61,25 @@ WELCOME
 
 ###### Can you confirm that the number of columns and rows of the output are the same as the result above?
 
-##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n <TeamOfVictory> -t 10"`. Open another terminal and run `"siege -b 127.0.0.1:8080"`.
+##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n my_team -t 10"`. Open another terminal and run `"siege -b 127.0.0.1:8080"`.
 
 ###### Is the program `./server` still working?
 
-##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n <TeamOfVictory>"` in two different terminals.
+##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n my_team"` in two different terminals.
 
 ###### Does it display, in the second terminal, `ERROR : Address already in use` or something similar?
 
-#### Let the game run for a wile and then check the time taken to execute the movements and actions of the player.
+#### Let the game run for a while and then check the time taken to execute the movements and actions of the player.
 
 ##### Is the timing of each movement and action respected?
+
+###### Can you confirm that if the player does not eat, he starves and die?
+
+###### Can you confirm that if the player eats, he will survive longer?
+
+###### Does the sight of the players increase with the level rising?
+
+###### Can you confirm that if the player exits on the right side of the board, he will re-enter on the left side or vice versa?
 
 **_Client_**
 
@@ -87,17 +95,17 @@ Usage: ./client -n <team> -p <port> [-h <hostname>]
 
 ###### Does it display a result like the one presented above?
 
-##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n <TeamOfVictory>"` then run `"./client -n <TeamOfVictory> -p 8080"` on a different terminal.
+##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n my_team"` then run `"./client -n my_team -p 8080"` on a different terminal.
 
 ###### Does the program launch without any errors?
 
-##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n <TeamOfVictory>"` then run `"./client -n <TeamOfVictory> -p 8080 -h 127.0.0.1"` on a different terminal.
+##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n my_team"` then run `"./client -n my_team -p 8080 -h 127.0.0.1"` on a different terminal.
 
 ###### Do the two programs interact with each other without errors?
 
-##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n <TeamOfVictory>"` then run `"./client -n <TeamNotWorking> -p 8080 -h 127.0.0.1"`
+##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n my_team"` then run `"./client -n wrong_team -p 8080 -h 127.0.0.1"`
 
-###### Does the program print an error message like `"Error: the team TeamNotWorking doesn't exist"` in the server part, and the client is kicked out?
+###### Does the program print an error message like `"Error: the team wrong_team doesn't exist"` in the server part, and the client is kicked out?
 
 **_Graphic Client_**
 
@@ -133,17 +141,9 @@ Usage: ./client -n <team> -p <port> [-h <hostname>]
 
 ###### Is the player able to pick up stones?
 
-###### Can you confirm that if the player does not eat, he starves and die?
-
-###### Can you confirm that if the player eats, he will survive longer?
-
 ###### Can the player perform the evolution ritual and level up?
 
-###### Does the sight of the players increase with the level rising?
-
 ###### Can the player hatch an egg if he needs a spot in his family?
-
-###### Can you confirm that if the player exits on the right side of the board, he will re-enter on the left side or vice versa?
 
 **_resources_**
 
@@ -157,12 +157,11 @@ Usage: ./client -n <team> -p <port> [-h <hostname>]
 
 ###### Is one food unit equal to 126 time units?
 
-
 **_Evolution ritual_**
 
 ##### Try to confirm that the rules of the evolution ritual are the same given in the subject. (ask the project owners for an explanation if necessary).
 
-###### Are the evolution ritual rules exactly the same?
+###### Are the evolution ritual rules exactly the same as in the table in the subject?
 
 **_Broadcast_**
 
@@ -182,20 +181,14 @@ message <K>,<text>
 
 ###### Can you confirm that the server replied the above message with K indicating the square where the sound comes from?
 
-#### General
+#### Bonus
 
 ###### +Is the visualizer in 3D?
 
 ###### +Is the server using only one process (no threads)?
 
-#### Basic
+###### +Is there a flag for a log mode when running the server?
 
-###### +Does the project run quickly and effectively (favoring recursive, no unnecessary data requests, etc.)?
+###### +Is there a flag for the number of resources and food density?
 
-###### +Does the code obey the [good practices](../../good-practices/README.md)?
-
-#### Social
-
-###### +Did you learn anything from this project?
-
-###### +Would you recommend/nominate this program as an example for the rest of the school?
+###### +Is there a flag for the seed in the server and client so that specific scenarios could be reproduced?
