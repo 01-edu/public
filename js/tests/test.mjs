@@ -8,6 +8,7 @@ import http from 'http'
 import fs from 'fs'
 
 global.window = global
+global._fetch = fetch
 global.fetch = url => {
   // this is a fake implementation of fetch for the tester
   // -> refer to https://devdocs.io/javascript/global_objects/fetch
