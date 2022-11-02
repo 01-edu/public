@@ -45,22 +45,6 @@ WELCOME
 
 ###### Was the student able to do the project without using such functions?
 
-##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n my_team your_team"`.
-
-```console
-[ SQ ] : FOOD R0 R1 R2 R3 R4 R5 BOTS ...
-[   0] :    2  1  2  1  1  0  0
-[   1] :    2  2  0  1  0  0  0
-[   2] :    0  0  1  0  0  0  0
-[   3] :    1  2  1  0  0  0  0
-...
-[  97] :    3  0  1  3  0  0  0
-[  98] :    1  1  0  0  0  0  0
-[  99] :    0  1  0  0  0  0  0
-```
-
-###### Can you confirm that the number of columns and rows of the output are the same as the result above?
-
 ##### Try to run `"./server -p 8080 -x 10 -y 10 -c 5 -n my_team -t 10"`. Open another terminal and run `"siege -b 127.0.0.1:8080"`.
 
 ###### Is the program `./server` still working?
