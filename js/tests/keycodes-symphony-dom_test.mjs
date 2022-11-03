@@ -1,12 +1,5 @@
 export const tests = []
 
-export const setup = async ({ page }) => ({
-  getNotes: async () =>
-    await page.$$eval('.note', (nodes) => {
-      return nodes.map((note) => note.textContent)
-    }),
-})
-
 const characters = `didyouhandlethekeydowneventcorrectly`
 
 tests.push(async ({ page, eq, ctx }) => {
@@ -14,7 +7,10 @@ tests.push(async ({ page, eq, ctx }) => {
   for (const [i, character] of characters.split('').entries()) {
     await page.keyboard.down(character)
     const typed = characters.slice(0, i + 1).split('')
-    eq(await ctx.getNotes(), typed)
+    const getNotesTc = await page.$$eval('.note', (nodes) => {
+      return nodes.map((note) => note.textContent)
+    })
+    eq(getNotesTc, typed)
   }
 })
 
@@ -24,7 +20,10 @@ tests.push(async ({ page, eq, ctx }) => {
   while (step < 10) {
     await page.keyboard.down('Backspace')
     const typed = characters.slice(0, characters.length - step).split('')
-    eq(await ctx.getNotes(), typed)
+    const getNotesTc = await page.$$eval('.note', (nodes) => {
+      return nodes.map((note) => note.textContent)
+    })
+    eq(getNotesTc, typed)
     step++
   }
 })
@@ -32,7 +31,10 @@ tests.push(async ({ page, eq, ctx }) => {
 tests.push(async ({ page, eq, ctx }) => {
   // check that all the notes are cleared when Escape key is pressed
   await page.keyboard.down('Escape')
-  const cleared = (await ctx.getNotes()).length === 0
+  const getNotesTc = await page.$$eval('.note', (nodes) => {
+    return nodes.map((note) => note.textContent)
+  })
+  const cleared = (getNotesTc.length === 0
   eq(await cleared, true)
 })
 
