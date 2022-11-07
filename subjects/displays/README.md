@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a program that displays an `S` character on the standard followed by newlines (`'\n'`)
+Write a program that displays the character `S` on followed by a newline `\n`.
 
 ### Usage
 
