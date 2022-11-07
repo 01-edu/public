@@ -30,7 +30,7 @@ use modify_letter::*modify_letter*;
 
 fn main() {
     println!("{}", remove_letter_sensitive("Joje jis mijssjing", 'j'));
-    println!("{}", remove_letter_insensitive("jaillA ais swiaAmmingA", 'A'));
+    println!("{}", remove_letter_insensitive("JaillA ais swiaAmmingA", 'A'));
     println!("{}", swap_letter_case("hEllo therE", 'e'));
 }
 ```
@@ -41,6 +41,6 @@ And its output
 $ cargo run
 Joe is missing
 Jill is swimming
-Hello thERe
+hello thEre
 $
 ```
