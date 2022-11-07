@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create three functions:
+Create four functions:
 
 - `fold` that receives an array, a function and an accumulator, in this order,
   and applies the function in the elements of the array starting on the left.
@@ -25,6 +25,7 @@ const adder = (a, b) => a + b
 fold([1, 2, 3], adder, 2) // returns 8 (2 + 1 + 2 + 3)
 foldRight([1, 2, 3], adder, 2) // returns 8 (2 + 3 + 2 + 1)
 reduce([1, 2, 3], adder) // returns 6 (1 + 2 + 3)
+reduceRight([1, 2, 3], adder) // returns 6 (3 + 2 + 1)
 ```
 
 The use of `[].reduce` and `[].reduceRight` is forbidden for this exercise.
