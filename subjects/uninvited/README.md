@@ -24,10 +24,10 @@ Here below are your program/server's expected behaviors:
 To test your program, you should be able to expect the following behaviour once your program is up and running.
 
 ```shell
-curl -X POST localhost:5000/Dav_Hojt -H "Content-Type: application/json" -d '{"answer": "yes", "drink": "beer", "food": "carnivore"}'
+curl -X POST localhost:5000/Ozzi_Osbourne -H "Content-Type: application/json" -d '{"answer": "yes", "drink": "alcohol", "food": "carnivore"}'
 {
   "answer": "yes",
-  "drink": "beer",
+  "drink": "alcohol",
   "food": "carnivore"
 }
 curl -X DELETE localhost:5000/Elis_Galindo -H "Accept: application/json"
