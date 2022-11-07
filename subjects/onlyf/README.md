@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a program that displays an `f` character on the standard output. (and nothing else)
+Write a program that displays an `f` character on the standard output.
 
 ### Usage
 
