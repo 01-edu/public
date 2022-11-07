@@ -3,6 +3,7 @@
 ### Instructions
 
 Write a function that takes a slice of integers and an `int` as arguments, adds the `int` to the slice and returns it. 
+
 - If the slice is empty, return a slice with the new value.
 
 ### Expected function
