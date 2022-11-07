@@ -8,6 +8,10 @@ Create a **function** `remove_letter_insensitive` that returns a string without 
 
 Create a **function** `swap_letter_case` that returns a string swapping the case for the chosen letter.
 
+If there is an empty character in the arguments, the function should return the string as being passed.
+
+If there is an empty string, it should return an empty string.
+
 ### Expected Functions
 
 ```rust
