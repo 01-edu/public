@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a program that displays a `B` character on the standard output.
+Write a program that displays a `B` character on the standard output and nothing else.
 
 ### Usage
 
