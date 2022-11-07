@@ -29,9 +29,9 @@ Here is a program to test your functions.
 use modify_letter::*modify_letter*;
 
 fn main() {
-    println!("{}", remove_letter_sensitive("Joje jis mijssjing", "j"));
-    println!("{}", remove_letter_insensitive("jaillA ais swiaAmmingA", "A"));
-    println!("{}", swap_letter_case("hEllo therE", "e"));
+    println!("{}", remove_letter_sensitive("Joje jis mijssjing", 'j'));
+    println!("{}", remove_letter_insensitive("jaillA ais swiaAmmingA", 'A'));
+    println!("{}", swap_letter_case("hEllo therE", 'e'));
 }
 ```
 
