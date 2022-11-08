@@ -2,11 +2,11 @@
 
 ### Instructions
 
-Write a function `IsSorted` that returns `true`, if the slice of `int` is sorted, otherwise returns `false`.
+Write a function `IsSorted()` that returns `true`, if the slice of `int` is sorted, otherwise returns `false`.
 
-The function passed in the parameter returns a positive `int` if `a` (the first argument) is greater than to `b` (the second argument), it returns `0` if they are equal and it returns a negative `int` otherwise.
+- The function passed as an argument `func(a, b int)` returns a positive `int` if the first argument is greater than the second argument, it returns `0` if they are equal and it returns a negative `int` otherwise.
 
-To do your testing you have to write your own `f` function.
+- To do your testing you have to write your own `f` function.
 
 ### Expected function
 
@@ -40,7 +40,7 @@ func main() {
 }
 ```
 
-And its output :
+And its output:
 
 ```console
 $ go run .
