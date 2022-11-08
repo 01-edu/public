@@ -2,11 +2,11 @@
 
 ### Instructions
 
-Write a function `WordFlip()` that receives a `string` and returns it with the first and last words flipped.
+Write a function `WordFlip()` that receives a `string` and returns it in reverse order.
 
 - Prints the Output followed by newline `\n`.
 - If the string is empty, return `Invalid Output`.
-- Ignore spaces if it's more then one space in between words and all spaces in the edge of the words or sentences.
+- Ignore spaces if there are more than one space in between words and ignore all spaces at the edge of the `string`.
 
 ### Expected function
 
