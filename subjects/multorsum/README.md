@@ -2,30 +2,44 @@
 
 ### Instructions
 
-Write a function that receives a slice of int and an int representing the initial value. If the int is odd it should multiply the accumulated value. If it is even, it should be added instead. Return the result. If the slice is empty return 0.
+Write a function that receives a slice of `int` and an `int` representing the initial value as arguments. 
+
+You should traverse the slice and for each `int` check the following restrictions:
+
+- If the `int` is odd, multiply it by the init value. Return the accumulated value after traversing the entire slice. 
+- If the `int` is even, add it to the init value. Return the accumulated value after traversing the entire slice. 
+- If the slice is empty return `0`.
 
 ### Expected function
 
 ```go
 func MultOrSum(ints []int, init int) int {
+
 }
 ```
 
 ### Usage
 
-Here is a possible program to test your function :
+Here is a possible program to test your function:
 
 ```go
 package main
 
+import (
+	"fmt"
+
+	"piscine"
+)
+
 func main() {
-	fmt.Println(MultOrSum([]int{1, 2, 3, 4}, 3 ))
-	fmt.Println(MultOrSum([]int{1, 2, 3, 4}, 0 ))
-	fmt.Println(MultOrSum([]int{1, -2, 3, 4}, 0 ))
+	fmt.Println(piscine.MultOrSum([]int{1, 2, 3, 4}, 3))
+	fmt.Println(piscine.MultOrSum([]int{1, 2, 3, 4}, 0))
+	fmt.Println(piscine.MultOrSum([]int{1, -2, 3, 4}, 0))
 }
+
 ```
 
-And its output :
+And its output:
 
 ```console
 $ go run . | cat -e
