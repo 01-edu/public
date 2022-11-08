@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function `SecondHalf()` that receives a slice of `int` and returns another slice of `int` with the last half of the values.
+Write a function `SecondHalf()` that receives a slice of `int` and returns another slice of `int` with the second half of the values.
 
 - If the length is odd, round it up.
 
