@@ -4,7 +4,7 @@
 
 Write a function `ConcatAlternate()` that receives two slices of an `int` as arguments and returns a new slice with the result of the alternated values of each slice.
 - The input slices can be of different lengths.
-- The new slice should return the elements of the larger slice first and then the elements of the smaller slice.
+- The new slice should start with an element of the largest slice.
 - If the slices are of equal length, the new slice should return the elements of the first slice first and then the elements of the second slice.
 
 ### Expected function
