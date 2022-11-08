@@ -165,28 +165,27 @@ The time unit is defined by the function 1/t :
 
 - t is passed as parameter at the start of the server.
 - A time unit lasts 1/t seconds.
-
-- There cannot be any blocking when the clients are stopped, or in any phase of the game.
 - The Minerthians have second as an absolute time unit.
 - `t` is an integer. If `t=1` "advance" takes 7 seconds. We choose by default, `t=100` then "advance" will take 1/100 seconds.
 
-### Objects denomination
+### Objects
 
-It is impossible to distinguish two objects of the same class, only the classification of an object can be identifiable,
-that is, two 'ambers' will have the same denomination, as they belong to the same class.
+It is impossible to distinguish two objects of the same class, only the classification of an object can be identifiable, that is, two 'ambers' will have the same denomination, as they belong to the same class, but `food` will have a different classification than the `stones`.
 
-### Teams
+### Teams/Families
 
-At the beginning a team is made of `n` player and only `n`. Each player is controlled by a client. The clients cannot communicate or exchange amongst each other data outside of the game, in any way.
+The purpose is to create a `team/family` of six players and get them to level 8!
 
-At the beginning the client has 10 food units, he can therefore survive 1260 time units, 1260/t seconds.
+At the beginning of the game your family only has one member, so you have to complete the action of `calling` in order to get more family members.
+
+Each player starts with 10 food and is controlled by a `client`. The `clients` cannot communicate or exchange amongst each other data outside of the game, in any way.
 
 ### Calling
 
 Execution of the `fork` command results in the invocation of a `ship`, which allows replay.
 
 Once the `ship` arrives on the planet, the player who called it can go to it and start the process of opening doors to receive a new member, when the process is finished, a new player will appear and receive a random direction.
-This operation authorizes the connection of a new client.
+This operation allows a new player to join.
 
 The `connect_nbr` command returns the number of authorized and unauthorized connections for this team.
 
@@ -204,7 +203,7 @@ The `inventory` command allows you to see what objects the player has and how mu
 
 ### Kick
 
-A player can kick all the players sharing the same square. It pushes them in the direction he is looking at. When a client sends the `kick` command to the server, all the clients in that square receive the following line:
+A player can kick all the players sharing the same square. It pushes them in the direction he is looking at. When a `client` sends the `kick` command to the server, all the `clients` in that square receive the following line:
 
 ```
 moving <K>\n
@@ -296,7 +295,7 @@ $ ./server
 
 ### The Client
 
-The Client can be written in one of these languages [C, C++, Rust, Js, Python]
+The Client can be written in one of these languages [C, C++, Rust]
 
 ```console
 $./client
