@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function called `HashCode()` that takes a `string` as an argument and return a new **hashed** `string`.
+Write a function called `HashCode()` that takes a `string` as an argument and returns a new **hashed** `string`.
 
 - Hash equation: (ASCII of current character + size of the string) % 127, so it can be in the limit of the ASCII size '127'.
 
