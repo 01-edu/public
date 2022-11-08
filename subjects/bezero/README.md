@@ -3,6 +3,7 @@
 ### Instructions
 
 Write a function that takes a slice of integers as an argument and returns the same slice by initializing all the elements to 0.
+
 - If the slice is empty, return an empty slice.
 
 ### Expected function
