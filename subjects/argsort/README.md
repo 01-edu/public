@@ -4,9 +4,9 @@
 
 Write a program that checks if an argument is sorted or not, the comparison should be by index of ascii and all printable characters will be used.
 
-- Your Program should return `T` followed by a newline (`'\n'`) if the argument is sorted.
-- Your Program should return `F` followed by a newline (`'\n'`) if the argument is not sorted.
-- If the number of arguments is not 2 do nothing.
+- Your program should return `T` followed by a newline `\n` if the argument is sorted.
+- Your program should return `F` followed by a newline `\n` if the argument is not sorted.
+- If the number of arguments is different from 2, do nothing.
 
 ### Usage
 
