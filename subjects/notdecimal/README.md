@@ -5,8 +5,8 @@
 Write a function called `NotDecimal()` that takes as an argument a `string` in forme of a float number with the decimal point and returns a string converted to an `int` without the decimal point (you will have to multiply it by 10^n to remove the `.`).
 
 - If the number doesn't have a decimal point or there is only a zero after the `.` return the number followed by a newline `\n`.
-- If the argument is empty return newline `\n`.
-- If the argument is not a number return it followed by newline `\n`.
+- If the argument is empty return a newline `\n`.
+- If the argument is not a number return it followed by a newline `\n`.
 
 ### Expected function
 
