@@ -4,8 +4,8 @@
 
 Write a function called `PrintAndMiss()` that takes a `string` and an `int` as an argument. The function should move through the `string` in sets determined by the `int`, printing the first set, omitting the second, printing the third, and so on, in a 'print' and 'miss' fashion until the end of the `string` is reached. Return a `string` containing the printed characters.
 
-- If the `string` is empty return `Invalid Output` followed by newline `\n`.
-- If the `int` is `0` or it's negative return the `string` followed by a newline `\n`.
+- If the `string` is empty or the `int` is negative return `Invalid Output` followed by newline `\n`.
+- If the `int` is `0` return the `string` followed by a newline `\n`.
 
 ### Expected function
 
