@@ -2,7 +2,9 @@
 
 ### Instructions
 
-Your program will receive some arguments. Count how many characters they have in total and print them. If the number of arguments is invalid it should print 0.
+Your program will receive some arguments. Count how many characters they have in total and print them. 
+
+- If the number of arguments is invalid it should print `0`.
 
 ### Usage
 
