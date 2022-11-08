@@ -2,12 +2,11 @@
 
 ### Instructions
 
-Write a function called `PrintFirstHalf()` that takes a `string` as an argument and returns printed the first half of a `string`.
+Write a function called `PrintFirstHalf()` that takes a `string` as an argument and prints the first half of a `string` followed by a newline `\n`.
 
-- If the length of the `string` is odd round it down.
-- Prints the first half followed by a newline `\n`.
-- If the `string` is empty, return `Invalid Output`, followed by a newline `\n`.
-- If the `string` length is equal to one, return it, followed by a newline `\n`.
+- If the length of the `string` is odd, round it down.
+- If the `string` is empty, return `Invalid Output` followed by a newline `\n`.
+- If the `string` length is equal to one, return the `string` followed by a newline `\n`.
 
 ### Expected function
 
