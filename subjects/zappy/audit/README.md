@@ -127,13 +127,13 @@ Usage: ./client -n <team> -p <port> [-h <hostname>]
 
 ###### Can the player perform the evolution ritual and level up?
 
-###### Can the player hatch an egg if he needs a spot in his family?
+###### Can the player call a ship if he needs a spot in his family?
 
 **_resources_**
 
 ###### Can you confirm that food and stones exist as resources in the game?
 
-###### Can you confirm that six types of stones are present in the game? (Jade, Peridot, Amber, Amethyst, Garnet, Ammolite)
+###### Can you confirm that six types of stones are present in the game? (jade, peridot, amber, amethyst, garnet, ammolite)
 
 ###### Are resources randomly generated with some clear logical rules? (ask the students to explain those rules)
 
@@ -168,8 +168,6 @@ message <K>,<text>
 #### Bonus
 
 ###### +Is the visualizer in 3D?
-
-###### +Is the server using only one process (no threads)?
 
 ###### +Is there a flag for a log mode when running the server?
 
