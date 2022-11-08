@@ -4,8 +4,8 @@
 
 Write a function `RevConcatAlternate()` that receives two slices of `int` as arguments and returns a new slice with alternated values of each slice in reverse order.
 - The input slices can have different lengths.
-- The new slice should contain the elements of the larger slice first and then the elements of the smaller slice.
-- If the slices are of equal length, the new slice should contain the elements of the first slice first and then the elements of the second slice.
+- The new slice should start with an element of the largest slice first.
+- If the slices are of equal length, the new slice should start with an element of the first slice.
 
 ### Expected function
 
