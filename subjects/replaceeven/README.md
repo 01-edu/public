@@ -4,14 +4,14 @@
 
 Write a program that takes every character with an even index, of each argument and replace it with the number 2.
 
-- you program should always print `\n` at the end.
+- you program should always print a newline `\n` at the end.
 - you program should print all the arguments in one line, separated by the space character `' '`.
-- zero is an even number.
+- `0` is an even number.
 
 
 ### Usage
 
-```sh
+```console
 $ go run . | cat -e
 $
 $ go run . hello 444444444444444 | cat -e
