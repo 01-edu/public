@@ -20,7 +20,7 @@ Here are the different parts of the game:
 
 - The game consists in managing an entire world and its population. That world, "Minerth" is geographically made of plains, there won't be any obstacles on it.
 
-- The game board is represented as a map. On the surface of this world, if a player leaves the board from the right, he will enter again from the left.
+- The world is spherical and the game board is represented as a map. So if a player leaves the board from the right, he will enter again from the left.
 
 ### Resources
 
@@ -166,11 +166,12 @@ The time unit is defined by the function 1/t :
 - t is passed as parameter at the start of the server.
 - A time unit lasts 1/t seconds.
 - The Minerthians have second as an absolute time unit.
+- The formula for the execution of an action is `action/t`.
 - `t` is an integer. If `t=1` "advance" takes 7 seconds. We choose by default, `t=100` then "advance" will take 1/100 seconds.
 
-### Objects
+### Objects Management
 
-It is impossible to distinguish two objects of the same class, only the classification of an object can be identifiable, that is, two 'ambers' will have the same denomination, as they belong to the same class, but `food` will have a different classification than the `stones`.
+It is impossible to distinguish two objects of the same class,. Only the class of an object can be identifiable, that is, two 'ambers' will have the same denomination, as they belong to the same class, but `food` will have a different class than the `stones`, that way you are able to identify the resources.
 
 ### Teams/Families
 
@@ -276,6 +277,7 @@ For this part, you must create a TCP server to make a connection between clients
 - Your server must generate all the resources in a random way following the rules mentioned above in the resources section.
 - Any request to your server must never hang forever. It must never block, and the `client` can be appropriately bounced if necessary.
 - The server executes the `client` requests in the order they are received.
+- You should implement a non-blocking architecture with a circular buffer for every player action, allowing the data to be stored while performing the actions.
 - The requests are buffered and the execution time of the command will only block the player concerned.
 - It's forbidden to use any `exec` functions to run another server.
 - It must stay available at all costs.
@@ -311,7 +313,7 @@ The client is autonomous, he must send the command order to the server without a
 
 The communication between client and server will happen via sockets and TCP. The port used must be indicated in the programs parameters.
 
-The client will send its requests without waiting for their execution, the server sends back a "welcome" message confirming the successful execution of the requests.
+The client will send its requests without waiting for their execution, and the server sends back a "welcome" message confirming the successful execution of the requests.
 
 The connection client to server will happen as such:
 
