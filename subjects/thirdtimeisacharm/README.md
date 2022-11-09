@@ -4,7 +4,7 @@
 
 Write a function `ThirdTimeIsACharm()` that takes a `string` as an argument and returns another `string` with every third character.
 
-- Prints the output followed by a newline `\n`.
+- Return the output followed by a newline `\n`.
 - If the `string` is empty, return a newline `\n`.
 - If there is no third character, return a newline `\n`.
 
