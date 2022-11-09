@@ -33,9 +33,9 @@ Here is a program to test your functions.
 use modify_letter::*modify_letter*;
 
 fn main() {
-    println!("{}", remove_letter_sensitive("Joje jis mijssjing", 'j'));
-    println!("{}", remove_letter_insensitive("JaillA ais swiaAmmingA", 'A'));
-    println!("{}", swap_letter_case("hEllo therE", 'e'));
+    println!("{}", remove_letter_sensitive("Jojhn jis sljeepjjing", 'j'));
+    println!("{}", remove_letter_insensitive("JaimA ais swiaAmmingA", 'A'));
+    println!("{}", swap_letter_case("byE bye", 'e'));
 }
 ```
 
@@ -43,8 +43,8 @@ And its output
 
 ```console
 $ cargo run
-Joe is missing
-Jill is swimming
-hello thEre
+Joe is sleeping
+Jim is swimming
+bye byE
 $
 ```
