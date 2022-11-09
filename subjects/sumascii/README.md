@@ -2,7 +2,9 @@
 
 ### Instructions
 
-Create a program that receives an argument and displays the sum of the ASCII value of each character. The sum will be a number representing the value after the sum of the bytes. If there is an invalid input print 0.
+Create a program that receives an argument and displays the sum of the ASCII value of each character. The sum will be a number representing the value after the sum of the bytes. 
+
+- If there is an invalid input print `0`.
 
 ### Usage
 
