@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Create a **function** `remove_letter_sensitive` that returns a string without the letter specified as argument
+Create a **function** `remove_letter_sensitive` that returns a string without the letter specified as argument.
 
-Create a **function** `remove_letter_insensitive` that returns a string without the letter specified as argument (ignoring case)
+Create a **function** `remove_letter_insensitive` that returns a string without the letter specified as argument (ignoring case).
 
 Create a **function** `swap_letter_case` that returns a string swapping the case for the chosen letter.
 
