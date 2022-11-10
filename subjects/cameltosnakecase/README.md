@@ -46,7 +46,7 @@ func main() {
 	fmt.Println(piscine.CamelToSnakeCase("camelCase"))
 	fmt.Println(piscine.CamelToSnakeCase("CAMELtoSnackCASE"))
 	fmt.Println(piscine.CamelToSnakeCase("camelToSnakeCase"))
-	fmt.Println(piscine.CamelToSnakeCase("132322"))
+	fmt.Println(piscine.CamelToSnakeCase("hey2"))
 }
 ```
 
@@ -59,6 +59,6 @@ hello_World
 camel_Case
 CAMELtoSnackCASE
 camel_To_Snake_Case
-132322
+hey2
 ```
 
