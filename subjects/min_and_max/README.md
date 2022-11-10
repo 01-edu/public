@@ -17,13 +17,9 @@ Here is a program to test your function
 use min_and_max::min_and_max;
 
 fn main() {
-    let nb_1 = 9;
-    let nb_2 = 4;
-    let nb_3 = 2;
-    let (min, max) = min_and_max(nb_1, nb_2, nb_3);
     println!(
-        "The minimum is {}, the maximum is {}",
-        min, max
+        "Minium and maximum are: ${?}",
+        min_and_max(9, 2, 4)
     );
 }
 ```
@@ -38,8 +34,8 @@ $
 
 ### Notions
 
-- [The Tuple Type](https://doc.rust-lang.org/stable/book/ch03-02-data-types.html?highlight=accessing%20a%20tuple#compound-types)
+- [The Tuple Type](https://doc.rust-lang.org/stable/book/ch03-02-data-types.html)
 
 - [Tuples](https://doc.rust-lang.org/rust-by-example/primitives/tuples.html)
 
-- [Tuple Structs without Named Fields](https://doc.rust-lang.org/stable/book/ch05-01-defining-structs.html?highlight=tuple#using-tuple-structs-without-named-fields-to-create-different-types)
+- [Tuple Structs without Named Fields](https://doc.rust-lang.org/stable/book/ch05-01-defining-structs.html)
