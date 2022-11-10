@@ -2,7 +2,8 @@
 
 ### Instructions
 
-Write a function that takes two strings and returns the number of characters that are not included in both, without doubles.
+Write a function that takes two `strings`'s and returns the number of characters that are not included in both, without repeating characters.
+
 - If there is no unique characters return `0`.
 - If both strings are empty return `-1`.
 
@@ -23,22 +24,14 @@ package main
 
 import (
 	"fmt"
+
+	"piscine"
 )
 
 func main() {
-	arr := [][]string{
-		{"foo", "boo"},
-		{"", ""},
-		{"abc", "def"},
-		{"hello", "yoall"},
-		{"everyone", ""},
-		{"hello world", "fam"},
-		{"pomme", "pomme"},
-		{"", "exam"},
-	}
-	for _, v := range arr {
-		fmt.Println(WeAreUnique(v[0], v[1]))
-	}
+	fmt.Println(piscine.WeAreUnique("foo", "boo"))
+	fmt.Println(piscine.WeAreUnique("", ""))
+	fmt.Println(piscine.WeAreUnique("abc", "def"))
 }
 ```
 
@@ -49,9 +42,4 @@ $ go run .
 2
 -1
 6
-4
-6
-11
-0
-4
 ```
