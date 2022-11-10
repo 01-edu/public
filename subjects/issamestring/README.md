@@ -16,7 +16,7 @@ func IsSameString(s1, s2 string) bool {
 
 ### Usage
 
-Here is a possible program to test your function :
+Here is a possible program to test your function:
 
 ```go
 package main
@@ -33,7 +33,7 @@ func main() {
 }
 ```
 
-And its output :
+And its output:
 
 ```console
 $  go run .
