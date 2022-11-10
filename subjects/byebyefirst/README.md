@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that takes a slice of `string` and returns a new slice without the first element. 
+Write a function that takes a slice of `string`'s and returns a new slice without the first element. 
 
 - If the slice is empty, return the empty slice.
 
