@@ -30,6 +30,7 @@ import (
 func main() {
 	fmt.Println(piscine.RectPerimeter(10, 2))
 	fmt.Println(piscine.RectPerimeter(434343, 898989))
+	fmt.Println(piscine.RectPerimeter(10, -2))
 }
 ```
 
@@ -39,5 +40,6 @@ And its output:
 $ go run .
 24$
 2666664$
+-1$
 $
 ```
