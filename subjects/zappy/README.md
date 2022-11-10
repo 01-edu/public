@@ -167,15 +167,15 @@ The time unit is defined by the function 1/t :
 - A time unit lasts 1/t seconds.
 - The Minerthians have second as an absolute time unit.
 - The formula for the execution of an action is `action/t`.
-- `t` is an integer. If `t=1` "advance" takes 7 seconds. We choose by default, `t=100` then "advance" will take 1/100 seconds.
+- `t` is an integer. If `t=1` "advance" takes 7 seconds. We choose by default, `t=100` then "advance" will take 7/100 seconds.
 
 ### Objects Management
 
-It is impossible to distinguish two objects of the same class,. Only the class of an object can be identifiable, that is, two 'ambers' will have the same denomination, as they belong to the same class, but `food` will have a different class than the `stones`, that way you are able to identify the resources.
+It is impossible to distinguish two objects of the same class. Only the class of an object can be identifiable, that is, two 'ambers' will have the same denomination, as they belong to the same class, but 'garnet' will have a different class than 'ambers', that way you are able to identify the resources.
 
 ### Teams/Families
 
-The purpose is to create a `team/family` of six players and get them to level 8!
+The goal of the game is to create a `team/family` of six players and get them to level 8!
 
 At the beginning of the game your family only has one member, so you have to complete the action of `calling` in order to get more family members.
 
@@ -183,16 +183,16 @@ Each player starts with 10 food and is controlled by a `client`. The `clients` c
 
 ### Calling
 
-Execution of the `fork` command results in the invocation of a `ship`, which allows replay.
+The execution of the `fork` command results in a `ship` being called. Your player will call another member of his family.
 
-Once the `ship` arrives on the planet, the player who called it can go to it and start the process of opening doors to receive a new member, when the process is finished, a new player will appear and receive a random direction.
-This operation allows a new player to join.
+Once the call has been made, the player can proceed with his life while waiting for the "ship" to arrive. When the `ship` arrives, a new player will appear and will receive a random direction. This operation allows a new player to join.
 
-The `connect_nbr` command returns the number of authorized and unauthorized connections for this team.
+The `connect_nbr` command sends back the number of connections that are underway and authorized for
+this family. This way you will also know how many spots you have free on you team/family.
 
 - Time to call the ship: 48/t
 
-- Time for the doors to open 600/t
+- Time for the ship to arrive 600/t
 
 ### Inventory
 
@@ -297,7 +297,7 @@ $ ./server
 
 ### The Client
 
-The Client can be written in one of these languages [C, C++, Rust]
+The Client can be written in a language of your choice.
 
 ```console
 $./client
@@ -313,9 +313,9 @@ The client is autonomous, he must send the command order to the server without a
 
 The communication between client and server will happen via sockets and TCP. The port used must be indicated in the programs parameters.
 
-The client will send its requests without waiting for their execution, and the server sends back a "welcome" message confirming the successful execution of the requests.
+The client will send its requests without waiting for their execution, and the server sends back a message confirming the successful execution of the requests.
 
-The connection client to server will happen as such:
+The `client` will open a socket on the server's port and the connection `client` to `server` will happen as such:
 
 | Client's message |    Command    |
 | :--------------: | :-----------: |
