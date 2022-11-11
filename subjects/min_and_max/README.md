@@ -18,7 +18,7 @@ use min_and_max::min_and_max;
 
 fn main() {
     println!(
-        "Minium and maximum are: ${:?}",
+        "Minimum and maximum are: {:?}",
         min_and_max(9, 2, 4)
     );
 }
@@ -28,7 +28,7 @@ And its output
 
 ```console
 $ cargo run
-The minimum is 2, the maximum is 9
+Minimum and maximum are: (2, 9)
 $
 ```
 
