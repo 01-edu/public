@@ -8,7 +8,7 @@ Create a function called `choose_outfit` that receives the following input:
 
 The function will return a struct `Outfit` which contains: 
 - `jacket`, an `enum` `Jacket` that contains `Black`, `White` and `Flowers`;
-- 'hat', an `enum` `Hat` that contains `Snapback`, `Baseball`, `Fedora`.
+- `hat`, an `enum` `Hat` that contains `Snapback`, `Baseball`, `Fedora`.
 
 ```rust
 #[derive(Debug, PartialEq, Eq)]
