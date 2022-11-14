@@ -24,7 +24,7 @@ Example: go run . --align=right  something  standard
 
 ###### Does it display the correct result at the center?
 
-##### Try passing as arguments `"--align=justify 1 Two 4" shadow`
+##### Try passing as arguments `--align=justify "1 Two 4" shadow`
 
 ###### Does it display the correct result justified?
 
@@ -36,7 +36,7 @@ Example: go run . --align=right  something  standard
 
 ###### Does it display the correct result at the right side?
 
-##### Try passing as arguments `--align=center #$%&\" thinkertoy`
+##### Try passing as arguments `--align=center "#$%&\" thinkertoy`
 
 ###### Does it display the correct result at the center?
 
