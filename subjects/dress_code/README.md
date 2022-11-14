@@ -3,11 +3,11 @@
 ### Instructions
 
 Create a function called `choose_outfit` that receives the following input:
-- a `formality_level` as an `Option<u32>`;
-- an `invitation_message` as a `Result<&str>`.
+- A `formality_level` as an `Option<u32>`.
+- An `invitation_message` as a `Result<&str>`.
 
 The function will return a struct `Outfit` which contains: 
-- `jacket`, an `enum` `Jacket` that contains `Black`, `White` and `Flowers`;
+- `jacket`, an `enum` `Jacket` that contains `Black`, `White` and `Flowers`.
 - `hat`, an `enum` `Hat` that contains `Snapback`, `Baseball`, `Fedora`.
 
 ```rust
@@ -19,13 +19,13 @@ pub struct Outfit {
 ```
 
 For the `jacket`:
-- the jacket should be `Flowers` when the `formality_level` is unset;  
-- the jacket should be `White` when the `formality_level` is more than 0;
-- otherwise it should be `Black`.
+- The jacket should be `Flowers` when the `formality_level` is unset.
+- The jacket should be `White` when the `formality_level` is more than 0.
+- Otherwise, it should be `Black`.
 
 For the `hat`:
-- if the `invitation_message` is `Ok()` it should be `Fedora`;
-- otherwise it should be `Snapback`.
+- If the `invitation_message` is `Ok()` it should be `Fedora`.
+- Otherwise, it should be `Snapback`.
 
 In the specific case where `formality_level` is `None` and `invitation_message`
 is not `Ok()` then the `jacket` should be `Flowers` and the `hat` should be `Baseball`.
@@ -54,8 +54,7 @@ And its output:
 ```console
 $ cargo run
 My outfit will be: Outfit { jacket: Black, hat: Fedora }
-...
-
+$
 ```
 
 ### Notions
