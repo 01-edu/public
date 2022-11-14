@@ -4,6 +4,8 @@
 
 Create a function named `smallest` that gets the smallest number in the `HashMap`.
 
+If the `HashMap` is empty, return the maximum `i32`.
+
 ### Expected Function
 
 ```rust
