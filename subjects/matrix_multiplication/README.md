@@ -2,11 +2,12 @@
 
 ### Instructions
 
-- Define a `struct` named `Matrix` as a tuple of 2 tuples. The nested tuple will contain 2 `i32`s.
+- Define a `struct` named `Matrix` as a tuple of two tuples. The nested tuple will contain two `i32`.
 
-- Create a **function** named `multiply` that receives a Matrix and an i32 and returns the Matrix with each number multiplied by the second argument. 
+- Create a **function** named `multiply` that receives a `Matrix` and an `i32` and returns the `Matrix` with each number multiplied by the second argument. 
+
 ```rust
-pub fn multiply(m: Matrix, val: i32) -> Matrix {
+pub fn multiply(m: Matrix, multiplier: i32) -> Matrix {
 }
 ```
 
@@ -19,8 +20,7 @@ pub fn multiply(m: Matrix, val: i32) -> Matrix {
 Here is a possible program to test your function
 
 ```rust
-use matrix_multiplication::multiply;
-use matrix_multiplication::Matrix;
+use matrix_multiplication::*;
 
 fn main() {
     let matrix = Matrix((1, 3), (4, 5));
