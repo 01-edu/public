@@ -4,7 +4,7 @@
 
 Create a **function** named `count_factorial_steps` that receives a factorial number and counts how many multiplications are necessary to have this number.
 
-If the argument is not a factorial or == 0 || 1 then the function should return 0.
+If the argument is not a factorial, or it is equal 0 or 1, then the function should return 0.
 
 ```rust
 fn count_factorial_steps(factorial: u64) -> u64 {
