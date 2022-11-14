@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a function named `smallest` that gets the smallest positive number in the `HashMap`.
+Create a function named `smallest` that gets the smallest number in the `HashMap`.
 
 ### Expected Function
 
