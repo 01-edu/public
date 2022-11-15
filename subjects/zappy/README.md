@@ -277,7 +277,6 @@ For this part, you must create a TCP server to make a connection between clients
 - Your server must generate all the resources in a random way following the rules mentioned above in the resources section.
 - Any request to your server must never hang forever. It must never block, and the `client` can be appropriately bounced if necessary.
 - The server executes the `client` requests in the order they are received.
-- You should implement a non-blocking architecture with a circular buffer for every player action, allowing the data to be stored while performing the actions.
 - The requests are buffered and the execution time of the command will only block the player concerned.
 - It's forbidden to use any `exec` functions to run another server.
 - It must stay available at all costs.
@@ -294,6 +293,10 @@ $ ./server
     -c  is the number of authorized clients per team
     -t  is the time unit divider (the greater t is, the faster the game will go)
 ```
+
+**Tip**
+
+- You can implement a non-blocking architecture with a circular buffer for every player action, allowing the data to be stored while performing the actions. The approach you take is up to you to decide.
 
 ### The Client
 
