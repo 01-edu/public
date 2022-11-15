@@ -2,7 +2,7 @@
 
 ### Instructions
 
-In this exercise, you'll create the function `neg_spell` that will spell a negative number.
+In this exercise, you'll create the function `negative_spell` that will spell a negative number.
 
 Here are some examples of what your function should return:
 
@@ -17,7 +17,7 @@ Here are some examples of what your function should return:
 ### Expected function
 
 ```rust
-pub fn neg_spell(n: i64) -> String {
+pub fn negative_spell(n: i64) -> String {
 
 }
 ```
@@ -27,11 +27,11 @@ pub fn neg_spell(n: i64) -> String {
 Here is a program to test your function.
 
 ```rust
-use spelling::*;
+use negative_spelling::*;
 
 fn main() {
-    println!("{}", neg_spell(-1234));
-    println!("{}", neg_spell(100));
+    println!("{}", negative_spell(-1234));
+    println!("{}", negative_spell(100));
 }
 ```
 
