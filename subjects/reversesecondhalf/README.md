@@ -1,9 +1,9 @@
 ## reversesecondhalf
 
 ### Instructions
-Write a function that takes a `string` as an argument and prints the second half reversed. If the length of the `string` is odd, round it up.
+Write a function that takes a `string` as an argument and returns the second half reversed. If the length of the `string` is odd, round it up.
 
-- Print the second half reversed followed by a newline `\n`.
+- Return the second half reversed followed by a newline `\n`.
 - If the `string` is empty, return `Invalid Output`.
 - If the `string` length equals one, return it, followed by a newline `\n`.
 
