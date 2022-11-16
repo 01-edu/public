@@ -1,6 +1,7 @@
 ## reversesecondhalf
 
 ### Instructions
+
 Write a function that takes a `string` as an argument and returns the second half reversed. If the length of the `string` is odd, round it up.
 
 - Return the second half reversed followed by a newline `\n`.
