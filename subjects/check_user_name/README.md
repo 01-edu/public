@@ -36,7 +36,7 @@ pub fn check_user_name(user: &User) -> (bool, &str) {}
 
 ### Usage
 
-Here is a program to test your function
+Here is a program to test your function:
 
 ```rust
 use check_user_name::*;
