@@ -51,7 +51,7 @@ use moving_targets::*;
 
 fn main() {
     let mut field = Field::new();
-    
+
     println!("{:?}", field.pop());
     field.push(Target { size: 12, xp: 2 });
     println!("{:?}", *field.peek().unwrap());
