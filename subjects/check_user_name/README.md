@@ -10,7 +10,7 @@ You will have to create an `AccessLevel` enum which could be `Guest`, `Normal`, 
 
 You will also have to create a `User` struct which has:
 
-- elements:
+- Fields:
   - `name`: `String`
   - `acessLevel`: `enum`
 - associated functions:
