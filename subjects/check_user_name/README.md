@@ -6,7 +6,7 @@ Sometimes it is more desirable to catch the failure of some parts of a program i
 
 For this exercise you will have to create a tool that manages users' access levels.
 
-You will have to create an `AccessLevel` enum wich could be `Guest`, `Normal`, `Admin`.
+You will have to create an `AccessLevel` enum which could be `Guest`, `Normal`, `Admin`.
 
 You will also have to create a `User` struct which has:
 
