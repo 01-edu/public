@@ -13,7 +13,7 @@ You will also have to create a `User` struct which has:
 - Fields:
   - `name`: `String`
   - `acessLevel`: `enum`
-- associated functions:
+- Associated functions:
   - `new`: which initializes the struct.
   - `send_name`: which takes only **self** as argument and returns an **Option<&str>** with `None` if the user is a guest or the `name` if the `AccessLevel` has any of the other options.
   - `check_user_name`: which takes a `User`, calls `send_name` and returns a **tuple** with `true` and the user `name` if `send_name` returns the name or `false` and `"Error: User is guest"` if not
