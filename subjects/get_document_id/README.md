@@ -20,29 +20,29 @@ This **function** should return the `Result` value in the `OfficeFour` structure
 ### Expected Function and structures
 
 ```rust
-#[derive(Clone, Copy)]
+#[derive(Debug, PartialEq, Eq, Clone, Copy)]
 pub enum ErrorOffice {
     OfficeClose(u32),
     OfficeNotFound(u32),
     OfficeFull(u32),
 }
 
-#[derive(Clone, Copy)]
+#[derive(PartialEq, Eq, Clone, Copy)]
 pub struct OfficeOne {
     pub next_office: Result<OfficeTwo, ErrorOffice>,
 }
 
-#[derive(Clone, Copy)]
+#[derive(PartialEq, Eq, Clone, Copy)]
 pub struct OfficeTwo {
     pub next_office: Result<OfficeThree, ErrorOffice>,
 }
 
-#[derive(Clone, Copy)]
+#[derive(PartialEq, Eq, Clone, Copy)]
 pub struct OfficeThree {
     pub next_office: Result<OfficeFour, ErrorOffice>,
 }
 
-#[derive(Clone, Copy)]
+#[derive(PartialEq, Eq, Clone, Copy)]
 pub struct OfficeFour {
     pub document_id: Result<u32, ErrorOffice>,
 }
