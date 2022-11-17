@@ -30,7 +30,7 @@ The following table gives the Roman numerals for the first few positive integers
 |  6  |  VI  | 16  |  XVI  | 26  |  XXVI  |
 |  7  | VII  | 17  | XVII  | 27  | XXVII  |
 |  8  | VIII | 18  | XVIII | 28  | XXVIII |
-|  9  | XIX  | 19  |  XIX  | 29  |  XXIX  |
+|  9  |  IX  | 19  |  XIX  | 29  |  XXIX  |
 | 10  |  X   | 20  |  XX   | 30  |  XXX   |
 
 ## Usage
