@@ -28,32 +28,8 @@ Here is a program to test your function:
 use prime_checker::*;
 
 fn main() {
-    println!(
-        "Is {} prime? {}",
-        2,
-        match prime_checker(2) {
-            Some(res) => {
-                match res {
-                    Ok(_) => "Yes, it is!",
-                    Err(_) => "No, it is not!",
-                }
-            }
-            None => "Less than 2",
-        }
-    );
-    println!(
-        "Is {} prime? {}",
-        14,
-        match prime_checker(14) {
-            Some(res) => {
-                match res {
-                    Ok(_) => "Yes, it is!",
-                    Err(_) => "No, it is not!",
-                }
-            }
-            None => "Less than 2",
-        }
-    );
+    println!("Is {} prime? {:?}", 2, prime_checker(2));
+    println!("Is {} prime? {:?}", 14, prime_checker(14));
 }
 ```
 
@@ -61,7 +37,7 @@ And its output:
 
 ```console
 $ cargo run
-Is 2 prime? Yes, it is!
-Is 14 prime? No, it is not!
+Is 2 prime? Some(Ok(2))
+Is 14 prime? Some(Err(Even))
 $
 ```
