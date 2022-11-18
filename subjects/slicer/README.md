@@ -4,7 +4,10 @@
 
 Create a function named `slice` that works like `Array.slice()` and `String.slice()`.
 
-It takes an additional first argument which is the string or the array.
+It takes 3 arguments:
+- string or array to process.
+- starting index.
+- optional ending index.
 
 ### Notions
 
