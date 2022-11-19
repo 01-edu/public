@@ -4,7 +4,9 @@
 
 Create a struct named `Car` and another one named `RentalBusiness`.
 
-The scope of the exercise will be to modify and operate on the `Car` in the `RentalBusiness` even if this element is not declared as mutable.
+The scope of the exercise will be to modify and operate on the `Car` in the `RentalBusiness` even if this element is not declared as mutable, introducing the concept of interior mutability.
+
+To accomplish that you will create some associated methods of `RentalBusiness` that will return the field `car` in many different ways.
 
 ### Expected Functions and Structures
 
