@@ -11,6 +11,8 @@ Create an enum `WorkerRole` which can be `Admin`, `User` or `Guest`.
 
 Implement for both the trait `From<&str>`. For `OfficeWorker` the string will have the format `"name,age,role"`, for `WorkerRole` the format of the string will be the `"role"` name in lower case.
 
+> Invalid inputs won't be tested.
+
 ### Expected Functions and Data Structures
 
 ```rust
