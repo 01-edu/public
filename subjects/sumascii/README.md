@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a program that receives an argument and displays the byte sum in decimal format, of the ASCII value of each character. The sum will be a number representing the value after the sum of the bytes. 
+Create a program that receives an argument and displays the byte sum in decimal format, of the ASCII value of each character. The sum will be a number representing the value after the sum of the bytes.
 
 - If there is an invalid input print `0`.
 
