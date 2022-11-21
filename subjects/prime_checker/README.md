@@ -4,9 +4,11 @@
 
 Create a **function** `prime_checker` that takes an `u32` and check if it is a prime number.
 
-The result will be `None` if the argument is less or equal one otherwise, it will return the result with the prime number inside if the number is prime, or it will return an `enum` `PrimeErr` if the `u32` is not prime.
+The result will be `None` if the argument is less or equal one otherwise, it will return a `Result`.
+If the `u32` is prime, the function will return an`Ok(u32)`; for any other case it will return an `enum` `PrimeErr`.
+The `enum` `PrimeErr` will be `Even` if the number is a multiple of two or `Divider(u32)` where the `u32` is the smallest divider of the number.
 
-The `enum` `PrimeErr` will be `Even` if the number is even or `Divider(u32)` where the `u32` is the smaller divider of the number if it is not prime.
+> Your solution should be optimized to a certain degree
 
 ### Expected Function and structure
 
@@ -17,7 +19,7 @@ pub enum PrimeErr {
     Divider(u32),
 }
 
-pub fn prime_checker(nb: u32) -> Option<Result<u32, PrimeErr>> {}
+pub fn prime_checker(nb: u32) -> Option<...> {}
 ```
 
 ### Usage
@@ -30,6 +32,7 @@ use prime_checker::*;
 fn main() {
     println!("Is {} prime? {:?}", 2, prime_checker(2));
     println!("Is {} prime? {:?}", 14, prime_checker(14));
+    println!("Is {} prime? {:?}", 2147483647, prime_checker(2147483647));
 }
 ```
 
@@ -39,5 +42,6 @@ And its output:
 $ cargo run
 Is 2 prime? Some(Ok(2))
 Is 14 prime? Some(Err(Even))
+Is 2147483647 prime? Some(Ok(2147483647))
 $
 ```
