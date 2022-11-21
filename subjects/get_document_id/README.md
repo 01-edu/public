@@ -30,19 +30,16 @@ pub enum ErrorOffice {
 #[derive(PartialEq, Eq, Clone, Copy)]
 pub struct OfficeOne {
     pub next_office: Result<OfficeTwo, ErrorOffice>,
-    pub id: u32,
 }
 
 #[derive(PartialEq, Eq, Clone, Copy)]
 pub struct OfficeTwo {
     pub next_office: Result<OfficeThree, ErrorOffice>,
-    pub id: u32,
 }
 
 #[derive(PartialEq, Eq, Clone, Copy)]
 pub struct OfficeThree {
     pub next_office: Result<OfficeFour, ErrorOffice>,
-    pub id: u32,
 }
 
 #[derive(PartialEq, Eq, Clone, Copy)]
@@ -68,39 +65,25 @@ fn main() {
             next_office: Ok(OfficeThree {
                 next_office: Ok(OfficeFour {
                     document_id: Ok(13),
-                    id: 4,
                 }),
-                id: 3,
             }),
-            id: 2,
         }),
-        id: 1,
     };
     let office_closed = {
         OfficeOne {
             next_office: Ok(OfficeTwo {
-                next_office: Err(ErrorOffice::OfficeClose(2)),
-                id: 2,
+                next_office: Err(ErrorOffice::OfficeClose(23)),
             }),
-            id: 1,
         }
     };
 
     match office_ok.get_document_id() {
         Ok(id) => println!("Found a document with id {}", id),
-        Err(err) => match err {
-            ErrorOffice::OfficeClose(id) => println!("Error: office {id} closed!"),
-            ErrorOffice::OfficeNotFound(id) => println!("Error: office {id} not found!"),
-            ErrorOffice::OfficeFull(id) => println!("Error: office {id} full!"),
-        },
+        Err(err) => println!("Error: {:?}", err),
     };
     match office_closed.get_document_id() {
         Ok(id) => println!("Found a document with id {}", id),
-        Err(err) => match err {
-            ErrorOffice::OfficeClose(id) => println!("Error: office {id} closed!"),
-            ErrorOffice::OfficeotFound(id) => println!("Error: office {id} not found!"),
-            ErrorOffice::OfficeFull(id) => println!("Error: office {id} full!"),
-        },
+        Err(err) => println!("Error: {:?}", err),
     };
 }
 ```
@@ -110,6 +93,6 @@ And its output:
 ```console
 $ cargo run
 Found a document with id 13
-Error: office 2 closed!
+Error: OfficeClose(23)
 $
 ```
