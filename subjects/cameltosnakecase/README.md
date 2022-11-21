@@ -1,4 +1,4 @@
-## cameltosnakecase 
+## cameltosnakecase
 
 ### Instructions
 
@@ -19,7 +19,7 @@ Rules for writing in `camelCase`:
 - No two capitalized letters shall follow directly each other (CamelCAse).
 - Numbers or punctuation are not allowed in the word anywhere (camelCase1).
 
-### Expected function 
+### Expected function
 
 ```go
 func CamelToSnakeCase(s string) string{
@@ -27,7 +27,7 @@ func CamelToSnakeCase(s string) string{
 }
 ```
 
-### Usage 
+### Usage
 
 Here is a possible program to test your function:
 
@@ -61,4 +61,3 @@ CAMELtoSnackCASE
 camel_To_Snake_Case
 hey2
 ```
-
