@@ -8,7 +8,6 @@ Write a program that takes every character with an even index of each argument a
 - Your program should print all the arguments in one line, separated by the space character `' '`.
 - `0` is an even number.
 
-
 ### Usage
 
 ```console
