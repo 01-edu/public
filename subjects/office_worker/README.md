@@ -3,6 +3,7 @@
 ### Instructions
 
 Create a structure `OfficeWorker` having the following public fields:
+
 - `name` as `String`.
 - `age` as `u32`.
 - `role` as `WorkerRole`.
