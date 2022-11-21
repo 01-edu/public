@@ -10,7 +10,6 @@ Write a program that takes an `int` between `[0-127]` as an argument and returns
 
 ### Usage
 
-
 ```go
 $ go run . | cat -e
 $
