@@ -12,7 +12,7 @@ Write a program that prints the previous letter and the next letter of the Latin
 ### Usage
 
 ```console
-$ go run . | cat -e 
+$ go run . | cat -e
 $
 $ go run . a | cat -e
 ab$
