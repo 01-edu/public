@@ -24,10 +24,7 @@ Here is a possible program to test your function :
 ```rust
 use print_and_consume::*;
 
-fn main() {
-
-
-}
+fn main() {}
 ```
 
 And its output:
