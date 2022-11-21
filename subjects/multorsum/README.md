@@ -2,12 +2,12 @@
 
 ### Instructions
 
-Write a function that receives a slice of `int` and an `int` representing the initial value as arguments. 
+Write a function that receives a slice of `int` and an `int` representing the initial value as arguments.
 
 The function should go through the slice and for each `int` check the following restrictions:
 
-- If the `int` is odd, multiply it by the init value. Return the accumulated value after traversing the entire slice. 
-- If the `int` is even, add it to the init value. Return the accumulated value after traversing the entire slice. 
+- If the `int` is odd, multiply it by the init value. Return the accumulated value after traversing the entire slice.
+- If the `int` is even, add it to the init value. Return the accumulated value after traversing the entire slice.
 - If the slice is empty return `0`.
 
 ### Expected function
