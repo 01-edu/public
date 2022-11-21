@@ -8,9 +8,9 @@ Complete the body of the **function** `lucas_number`.
 pub fn lucas_number(n: u32) -> u32 {}
 ```
 
-This function receives a number `n` and returns the `n`th number in the Lucas Numbers. 
+This function receives a number `n` and returns the `n`th number in the Lucas Numbers where the `n`th number is the sum of the previous two numbers in the series.
 
-The Lucas Numbers start like this: 2, 1, 3, 4, 7, 11, 18, 29, 47, 76, 123, etc... 
+The Lucas Numbers start like this: 2, 1, 3, 4, 7, 11, 18, 29, 47, 76, 123, etc...
 
 ### Usage
 
