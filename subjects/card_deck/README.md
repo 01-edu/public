@@ -62,6 +62,7 @@ pub fn winner_card(card: &Card) -> bool {
 Here is a program to test your function
 
 ```rust
+use card_deck::*;
 fn main() {
 	let your_card = Card {
 		rank: Rank::random(),
