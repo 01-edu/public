@@ -154,7 +154,7 @@ And its output:
 $ cargo run
 TodoList { title: "TODO LIST FOR PISCINE RUST", tasks: [Task { id: 0, description: "do this", level: 0 }, Task { id: 1, description: "do that", level: 5 }] }
 Fail to parses todoNone
-Fail to parse todo Some(Malformed(UnexpectedCharacter { ch: ',', line: 2, column: 18 }))
+Fail to parses todoSome(Malformed(UnexpectedCharacter { ch: ',', line: 2, column: 18 }))
 $
 ```
 
