@@ -270,7 +270,7 @@ If the broadcast is sent from the same box as the receiving player, he will rece
 
 The server is the main engine that will interfere between the AI and the GUI. It will exchange all data with the AI and execute these instructions. At the same time, it send the information to the GUI. It can be written in one of these languages [C, C++, Rust].
 
-For this part, you must create a TCP server to make a connection between clients and manage the entire world.
+For this part, you must create a TCP server to make a connection between clients and manage the entire world. There is no need to host the server as the game will run in one machine only, a localhost will be enough for now.
 
 #### Server Instructions
 
@@ -320,12 +320,12 @@ The client will send its requests without waiting for their execution, and the s
 
 The `client` will open a socket on the server's port and the connection `client` to `server` will happen as such:
 
-| Client's message |    Command    |
-| :--------------: | :-----------: |
-|                  |   WELCOME\n   |
-|  <team-name>\n   |               |
-|                  | <nb-client>\n |
-|                  |   <x> <y>\n   |
+| Client's message |   Command   |
+| :--------------: | :---------: |
+|                  |  WELCOME\n  |
+|   team-name\n    |             |
+|                  | nb-client\n |
+|                  |    x y\n    |
 
 The `nb-client` indicates the number of clients that can still be accepted by the server for the team `team-name`. If that number is greater than 1 a new client connects. `X` and `Y` indicate the world’s dimensions.
 
