@@ -4,11 +4,11 @@
 
 Create a **function** `prime_checker` that takes an `u32` and check if it is a prime number.
 
-The result will be `None` if the argument is less or equal one otherwise, it will return a `Result`.
-If the `u32` is prime, the function will return an`Ok(u32)`; for any other case it will return an `enum` `PrimeErr`.
+The result will be `None` if the argument is less or equal one, otherwise it will return a `Result`.
+If the `u32` is prime, the function will return an`Ok(u32)`. For any other case it will return an `enum` `PrimeErr`.
 The `enum` `PrimeErr` will be `Even` if the number is a multiple of two or `Divider(u32)` where the `u32` is the smallest divider of the number.
 
-> Your solution should be optimized to a certain degree
+> Your solution should be optimized to a certain degree.
 
 ### Expected Function and structure
 
@@ -19,7 +19,7 @@ pub enum PrimeErr {
     Divider(u32),
 }
 
-pub fn prime_checker(nb: u32) -> Option<...> {}
+pub fn prime_checker(nb: u32) ->  /* Implement return type here */ {}
 ```
 
 ### Usage
