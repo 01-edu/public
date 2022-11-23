@@ -5,25 +5,30 @@
 Define the following structures:
 
 - `Blog`: containing:
-  - `drops`: that will save the number of dropped articles.
-  - `states`: that will save the state of multiple articles. If the article is not dropped, the state will be `false`, otherwise it will be `true`.
+
+  - `drops` that will save the number of dropped articles.
+  - `states` that will save the state of multiple articles. If the article is not dropped, the state will be `false`, otherwise it will be `true`.
+
 - `Article`: containing:
+
   - `id` as `usize`.
-  - `body`: as `String`.
-  - `parent`: a link to the structure `Blog`. (Tip: this should be a reference).
+  - `body` as `String`.
+  - `parent` a link to the structure `Blog`. (Tip: this should be a reference).
 
 You'll need to also add the following associated functions to the structures:
 
 - `Blog`:
-  - `new`: that creates an empty blog.
-  - `new_article`: that receives a `String` for the body and returns a tuple with the `id` and a new `Article`.
-  - `is_dropped`: that receives an `id` and returns a `bool` that indicates the state of the article.
-  - `new_id`: which returns a `usize` representing the length of the `states` vector. (Which is also the first available id).
-  - `add_drop`: which is **called by the `Drop` trait**. It will receive an `id` that will be used to change the state of the article. If the state of that article is `true` then it will panic with the message `"X is already dropped"`, where `X` represents the `id`). Otherwise it should change the state to `true` and increment the `drops` field by 1.
+
+  - `new` that creates an empty blog.
+  - `new_article` that receives a `String` for the body and returns a tuple with the `id` and a new `Article`.
+  - `is_dropped` that receives an `id` and returns a `bool` that indicates the state of the article.
+  - `new_id` which returns a `usize` representing the length of the `states` vector. (Which is also the first available id).
+  - `add_drop` which is **called by the `Drop` trait**. It will receive an `id` that will be used to change the state of the article. If the state of that article is `true` then it will panic with the message `"X is already dropped"`, where `X` represents the `id`). Otherwise it should change the state to `true` and increment the `drops` field by 1.
 
 - `Article`:
-  - `new`: that initializes a new article.
-  - `discard`: that drops the article.
+
+  - `new` that initializes a new article.
+  - `discard` that drops the article.
 
 > You must implement the `Drop` trait for the `Article` structure. In this trait you must call the function `add_drop` so that the state of the article changes.
 
