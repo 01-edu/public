@@ -36,7 +36,7 @@ Example: go run . --align=right  something  standard
 
 ###### Does it display the correct result at the right side?
 
-##### Try passing as arguments `--align=center "#$%&\" thinkertoy`
+##### Try passing as arguments `--align=center "#$%&\"" thinkertoy`
 
 ###### Does it display the correct result at the center?
 
