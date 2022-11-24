@@ -27,7 +27,7 @@ pub fn take_film_name(/* to be implemented */) -> String {
 
 ### Usage
 
-Here is a possible program to test your function :
+Here is a possible program to test your function:
 
 ```rust
 use own_and_return::*;
