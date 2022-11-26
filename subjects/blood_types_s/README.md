@@ -8,7 +8,7 @@ Use the following table to define the methods asked:
 | ----------- | ---------------- | ------------------ |
 | A+          | A+, AB+          | A+, A-, O+, O-     |
 | O+          | O+, A+, B+, AB+  | O+, O-             |
-| B+          | O+, O-           | B+, B-, O+, O-     |
+| B+          | B+, AB+          | B+, B-, O+, O-     |
 | AB+         | AB+              | Everyone           |
 | A-          | A+, A-, AB+, AB- | A-, O-             |
 | O-          | Everyone         | O-                 |
