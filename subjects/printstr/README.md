@@ -29,8 +29,8 @@ func main() {
 And its output :
 
 ```console
-$ go run . | cat -e
-Hello World!$
+go run . | cat -e
+Hello World!
 ```
 
 ### Notions
