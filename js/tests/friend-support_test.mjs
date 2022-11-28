@@ -1,26 +1,42 @@
 import { once } from 'node:events'
 import * as cp from 'node:child_process'
-import fs from 'node:fs/promises'
+import { mkdir, writeFile, chmod } from 'fs/promises'
+import { tmpdir } from 'node:os'
+import { join } from 'path'
 
 export const tests = []
 const fetch = _fetch // to redefine the real fetch
 
 const port = 5000
 
-// tell-me-who_test setup -- see how to have same files in testing directories
-// TO BE IMPLEMENTED
+export const setup = async ({ randStr }) => {
+  const dir = '.'
 
-const sendRequest = async (path, options) => {
-  const response = await fetch(`http://localhost:${port}${path}`, options)
-  const { status, statusText, ok } = response
-  const headers = Object.fromEntries(response.headers)
-  let body = ''
-  try {
-    body = await response.json()
-  } catch (err) {
-    body = err
+  await mkdir(`${dir}/guests`, { recursive: true })
+
+  const randLastName = randStr()
+
+  const createFilesIn = ({ files, dirPath }) =>
+    Promise.all(
+      files.map(([fileName, content]) =>
+        writeFile(`${dirPath}/${fileName}`, JSON.stringify(content)),
+      ),
+    )
+
+  const sendRequest = async (path, options) => {
+    const response = await fetch(`http://localhost:${port}${path}`, options)
+    const { status, statusText, ok } = response
+    const headers = Object.fromEntries(response.headers)
+    let body = ''
+    try {
+      body = await response.json()
+    } catch (err) {
+      body = err
+    }
+    return { status, body, headers, randLastName }
   }
-  return { status, body, headers }
+
+  return { tmpPath: dir, createFilesIn, sendRequest }
 }
 
 tests.push(async ({ path, ctx }) => {
@@ -35,13 +51,20 @@ tests.push(async ({ path, ctx }) => {
   return message[0].toString().includes(port)
 })
 
-tests.push(async ({ eq }) => {
-  const { status, body, headers } = await sendRequest('/Zoe_Sierra', {
-    method: 'GET',
-  })
-  let cont = await fs.readFile('./guests/Zoe_Sierra.json', {
-    encoding: 'utf-8',
-  })
+tests.push(async ({ eq, ctx, randStr }) => {
+  // test for one guest
+  const expBody = { message: 'ciao' }
+  const files = [[`mario_${ctx.randLastName}.json`, expBody]]
+  const dirName = `guests`
+  const dirPath = join(ctx.tmpPath, dirName)
+  await ctx.createFilesIn({ dirPath, files })
+
+  const { status, body, headers } = await ctx.sendRequest(
+    `/mario_${ctx.randLastName}`,
+    {
+      method: 'GET',
+    },
+  )
   return eq(
     {
       status: status,
@@ -50,39 +73,53 @@ tests.push(async ({ eq }) => {
     },
     {
       status: 200,
-      body: JSON.parse(cont),
+      body: expBody,
       contentType: 'application/json',
     },
   )
 })
 
-tests.push(async ({ eq }) => {
-	const { status, body, headers } = await sendRequest('/Zoe_Sierra1', {
-	  method: 'GET',
-	})
-	console.log(body.error)
-	return eq(
-	  {
-		status: status,
-		body: body.error.trim(),
-		contentType: headers['content-type'],
-	  },
-	  {
-		status: 404,
-		body: "guest not found",
-		contentType: 'application/json',
-	  },
-	)
-  })
+tests.push(async ({ eq, ctx, randStr }) => {
+  // test server failed
+  // change permission for existing file
+  await chmod(`${ctx.tmpPath}/guests/mario_${ctx.randLastName}.json`, 0)
+  const { status, body, headers } = await ctx.sendRequest(
+    `/mario_${ctx.randLastName}`,
+    {
+      method: 'GET',
+    },
+  )
+  return eq(
+    {
+      status: status,
+      body: body,
+      contentType: headers['content-type'],
+    },
+    {
+      status: 500,
+      body: { error: 'server failed' },
+      contentType: 'application/json',
+    },
+  )
+})
 
-// this test must always run to shutdown server
-/* currently breaking if one test fails - it might not be a problem
-since the tests are run in a separate Docker image...
-*/
-tests.push(({ ctx }) => {
-  const { server } = ctx
-  server.kill('SIGQUIT')
-  return true
+tests.push(async ({ eq, ctx }) => {
+  // test guest not there
+  const { status, body, headers } = await ctx.sendRequest('/andrea_bianchi', {
+    method: 'GET',
+  })
+  return eq(
+    {
+      status: status,
+      body: body,
+      contentType: headers['content-type'],
+    },
+    {
+      status: 404,
+      body: { error: 'guest not found' },
+      contentType: 'application/json',
+    },
+  )
 })
 
 Object.freeze(tests)

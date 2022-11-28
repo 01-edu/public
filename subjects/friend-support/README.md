@@ -2,14 +2,15 @@
 
 ### Instructions
 
-The workload to organize this party is becoming too much to be handled by a single person. It is time to let a friend support you. 
+The workload to organize this party is becoming too much to be handled by a single person. It is time to let a friend support you.
 
 Create a `friend-support.mjs` program that will open a server to remotely access the guest list stored on your computer. Your program will need to handle HTTP `GET` request.
 
 Here below are your program/server's expected behaviors:
-- It has to listen on port `5000` and it will have to print a simple message on the console, specifying the listening port;
-- Its HTTP response should always contains a coherent status code depending on the handling of the received HTTP request. More specifically, your server should be able to respond with the following status codes: `200`, `404` and `500`;
-- The responses will always be JSON and this information should be explicit in the HTTP response;
+
+- It has to listen on port `5000`, and it will have to print a simple message on the console, specifying the listening port;
+- Its HTTP response should always contain a coherent status code depending on the handling of the received HTTP request. More specifically, your server should be able to respond with the following status codes: `200`, `404` and `500`;
+- The responses will always be JSON and this information should be included in the HTTP response;
 - For each HTTP request, your program should try to open the corresponding guest JSON file and provide the content as JSON in the HTTP response, if possible. When the guess specified in the request is not found, the server should return an object with the attribute `error` defined as `guest not found`;
 - If for any reason the server fails, the response should be an object with an attribute `error` specified as `server failed`.
 
@@ -34,4 +35,4 @@ curl localhost:5000/Elis_Galindo
 
 ### Provided files
 
-Download [`guests.zip`](https://assets.01-edu.org/tell-me-how-many/guests.zip) to have at your disposal the `guests` directory containing the files with the guests information. You must save it in your `friend-support` exercise directory to test your program on it.
+Download [`guests.zip`](https://assets.01-edu.org/tell-me-how-many/guests.zip) to have at your disposal the `guests` directory containing the files with the guest information. You must save it in your `friend-support` exercise directory to test your program on it.
