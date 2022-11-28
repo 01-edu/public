@@ -2,6 +2,8 @@
 
 ###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
+###### For consistency, use `bash` as a shell to run the following tests.
+
 ##### Try passing as arguments `"--output test00.txt banana standard "`
 
 ```
