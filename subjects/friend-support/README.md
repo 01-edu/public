@@ -4,9 +4,9 @@
 
 The workload to organize this party is becoming too much to be handled by a single person. It is time to let a friend support you.
 
-Create a `friend-support.mjs` program that will open a server to remotely access the guest list stored on your computer. Your program will need to handle HTTP `GET` request.
+Create a `friend-support.mjs` program that will open a server to remotely access the guest list stored on your computer. Your program will need to handle HTTP `GET` requests.
 
-Here below are your program/server's expected behaviors:
+Here below the description of the expected behaviors of your program:
 
 - It has to listen on port `5000`, and it will have to print a simple message on the console, specifying the listening port;
 - Its HTTP response should always contain a coherent status code depending on the handling of the received HTTP request. More specifically, your server should be able to respond with the following status codes: `200`, `404` and `500`;
@@ -32,6 +32,7 @@ curl localhost:5000/Elis_Galindo
 - [HTTP protocol](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 - [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 - [Node http package: createServer](https://nodejs.org/en/knowledge/HTTP/servers/how-to-create-a-HTTP-server/)
+- [http.setHeader()](https://nodejs.org/api/http.html#requestsetheadername-value)
 
 ### Provided files
 
