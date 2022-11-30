@@ -2,7 +2,7 @@
 
 ###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
-###### For consistency, use `bash` as a shell to run the following tests.
+> For consistency, use bash for the following tests.
 
 ##### Try passing as arguments `"--output test00.txt banana standard "`
 
@@ -141,7 +141,7 @@ $
 
 ###### Does it save the right output in the right file?
 
-##### Try passing as arguments `--output=test07.txt "Testing long output!" standard`
+##### Try passing as arguments `--output=test07.txt 'Testing long output!' standard`
 
 ```
 student$ cat test07.txt

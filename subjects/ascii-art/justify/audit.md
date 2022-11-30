@@ -2,7 +2,7 @@
 
 ###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
-###### For consistency, use `bash` as a shell to run the following tests.
+> For consistency, use bash for the following tests.
 
 ##### Try passing as arguments `--align right something standard`
 
@@ -42,11 +42,11 @@ Example: go run . --align=right  something  standard
 
 ###### Does it display the correct result at the center?
 
-##### Try passing as arguments `--align=left "23Hello World!" standard `
+##### Try passing as arguments `--align=left '23Hello World!' standard `
 
 ###### Does it display the correct result at the left side?
 
-##### Try passing as arguments `--align=justify "HELLO there HOW are YOU?!" thinkertoy`
+##### Try passing as arguments `--align=justify 'HELLO there HOW are YOU?!' thinkertoy`
 
 ###### Does it display the correct result justified?
 
