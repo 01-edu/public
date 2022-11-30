@@ -110,7 +110,7 @@ const serverFailedTest = async ({ eq, ctx }) => {
 //     },
 //   )
 // }
-const tests = [
+export const tests = [
   isServerThereTest,
   //   oneGuestTest,
   serverFailedTest,

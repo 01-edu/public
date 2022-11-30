@@ -1,3 +1,7 @@
 node_modules
 rust/**/target/
 js/soluss
+js/tests/.prettierrc.js
+.gitignore
+js/tests/.prettierrc.cjs
+.gitignore
