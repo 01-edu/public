@@ -2,7 +2,7 @@
 
 ###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
-###### For consistency, use `bash` as a shell to run the following tests.
+> For consistency, use bash for the following tests.
 
 ##### Try passing `"hello"` as an argument.
 
@@ -126,7 +126,7 @@ $
 
 ###### Does it display the right graphical representation in ASCII as above?
 
-##### Try passing `"hello There 1 to 2!"` as an argument.
+##### Try passing `'hello There 1 to 2!'` as an argument.
 
 ```
  _              _   _                 _______   _                                            _                           _  $
@@ -231,7 +231,7 @@ $
 
 ###### Does it display the right graphical representation in ASCII as above?
 
-##### Try passing `"\!\" #$%&'()*+,-./"` as an argument.
+##### Try passing `'\!" #$%&'"'"'()*+,-./'` as an argument.
 
 ```
 __       _   _ _           _  _      _    _   __           _    __ __       _                                   __ $
