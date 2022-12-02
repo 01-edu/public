@@ -52,7 +52,8 @@ tests.push(async ({ path, ctx: { server } }) => {
 
 tests.push(async ({ eq, ctx, randStr }) => {
   // test for one guest
-  const expBody = { message: 'ciao' }
+  const randMsg = randStr()
+  const expBody = { message: randMsg }
   const files = [[`mario_${ctx.randLastName}.json`, expBody]]
   const dirName = 'guests'
   const dirPath = join(ctx.tmpPath, dirName)
