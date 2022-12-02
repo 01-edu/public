@@ -1,5 +1,5 @@
 import { once } from 'node:events'
-import * as cp from 'node:child_process'
+import { spawn } from 'node:child_process'
 import { mkdir, writeFile, chmod } from 'fs/promises'
 import { join } from 'path'
 
@@ -15,12 +15,13 @@ export const setup = async ({ randStr }) => {
 
   const randLastName = randStr()
 
-  const createFilesIn = ({ files, dirPath }) =>
+  const createFilesIn = ({ files, dirPath }) => {
     Promise.all(
       files.map(([fileName, content]) =>
         writeFile(`${dirPath}/${fileName}`, JSON.stringify(content)),
       ),
     )
+  }
 
   const sendRequest = async (path, options) => {
     const response = await fetch(`http://localhost:${port}${path}`, options)
@@ -32,39 +33,46 @@ export const setup = async ({ randStr }) => {
     } catch (err) {
       body = err
     }
-    return { status, body, headers, randLastName }
+    return { status, body, headers }
   }
 
-  return { tmpPath: dir, createFilesIn, sendRequest }
+  const startServer = async path => {
+    const server = spawn('node', [`${path}`])
+    const message = await Promise.race([
+      once(server.stdout, 'data'),
+      Promise.race([
+        once(server.stderr, 'data').then(String).then(Error),
+        once(server, 'error'),
+      ]).then(result => Promise.reject(result)),
+    ])
+    return { server, message }
+  }
+
+  return { tmpPath: dir, createFilesIn, randLastName, sendRequest, startServer }
 }
 
-tests.push(async ({ path, ctx: { server } }) => {
-  server = cp.spawn('node', [`${path}`])
-  const message = await Promise.race([
-    once(server.stdout, 'data'),
-    Promise.race([
-      once(server.stderr, 'data').then(String).then(Error),
-      once(server, 'error'),
-    ]).then(result => Promise.reject(result)),
-  ])
+tests.push(async ({ path, ctx }) => {
+  const { server, message } = await ctx.startServer(path)
+  server.kill()
   return message[0].toString().includes(port)
 })
 
-tests.push(async ({ eq, ctx, randStr }) => {
+tests.push(async ({ path, eq, ctx, randStr }) => {
   // test for one guest
+  const { server } = await ctx.startServer(path)
   const randMsg = randStr()
   const expBody = { message: randMsg }
   const files = [[`mario_${ctx.randLastName}.json`, expBody]]
   const dirName = 'guests'
   const dirPath = join(ctx.tmpPath, dirName)
   await ctx.createFilesIn({ dirPath, files })
-
   const { status, body, headers } = await ctx.sendRequest(
     `/mario_${ctx.randLastName}`,
     {
       method: 'GET',
     },
   )
+  server.kill()
   return eq(
     {
       status: status,
@@ -79,9 +87,10 @@ tests.push(async ({ eq, ctx, randStr }) => {
   )
 })
 
-tests.push(async ({ eq, ctx }) => {
+tests.push(async ({ path, eq, ctx }) => {
   // test server failed
   // change permission for existing file
+  const { server } = await ctx.startServer(path)
   await chmod(`${ctx.tmpPath}/guests/mario_${ctx.randLastName}.json`, 0)
   const { status, body, headers } = await ctx.sendRequest(
     `/mario_${ctx.randLastName}`,
@@ -89,6 +98,7 @@ tests.push(async ({ eq, ctx }) => {
       method: 'GET',
     },
   )
+  server.kill()
   return eq(
     {
       status: status,
@@ -103,11 +113,13 @@ tests.push(async ({ eq, ctx }) => {
   )
 })
 
-tests.push(async ({ eq, ctx }) => {
+tests.push(async ({ path, eq, ctx }) => {
   // test guest not there
+  const { server } = await ctx.startServer(path)
   const { status, body, headers } = await ctx.sendRequest('/andrea_bianchi', {
     method: 'GET',
   })
+  server.kill()
   return eq(
     {
       status: status,
