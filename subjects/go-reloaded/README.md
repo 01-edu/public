@@ -30,8 +30,7 @@ The tool you are about to build will receive as arguments the name of a file con
   - Except if there are groups of punctuation like: `...` or `!?`. In this case the program should format the text as in the following example: "I was thinking ... You were right" -> "I was thinking... You were right".
 - The punctuation mark `'` will always be found with another instance of it and they should be placed to the right and left of the word in the middle of them, without any spaces. (Ex: "I am exactly how they describe me: ' awesome '" -> "I am exactly how they describe me: 'awesome'")
   - If there are more than one word between the two `' '` marks, the program should place the marks next to the corresponding words (Ex: "As Elton John said: ' I am the most well-known homosexual in the world '" -> "As Elton John said: 'I am the most well-known homosexual in the world'")
-- Every instance of `a` should be turned into `an` if the next word begins with a vowel or a `h`. (Ex: "There it was. A amazing rock!" -> "There it was. An amazing rock!").
-
+- Every instance of `a` should be turned into `an` if the next word begins with a vowel (`a`, `e`, `i`, `o`, `u`) or a `h`. (Ex: "There it was. A amazing rock!" -> "There it was. An amazing rock!").
 ### Allowed packages
 
 - [Standard Go](https://golang.org/pkg/) packages are allowed.
