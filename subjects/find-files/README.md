@@ -43,5 +43,7 @@ $find ~/ \( -type f \)
 $
 ```
 
+May you will need to use `pipe (|)` and `&&`.
+
 > You have to use Man or Google to know more about commands flags, in order to solve this exercice!
 > Google and Man will be your friends!
