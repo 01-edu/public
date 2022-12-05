@@ -3,21 +3,25 @@ import { spawn } from 'node:child_process'
 import { mkdir, writeFile, chmod } from 'fs/promises'
 import { join } from 'path'
 
+export const tests = []
 const fetch = _fetch // to redefine the real fetch
 
 const port = 5000
 
 export const setup = async ({ randStr }) => {
-  const folder = '.'
-  await mkdir(`${folder}/guests`, { recursive: true })
-  const randLastName = randStr()
+  const dir = '.'
 
-  const createFilesIn = ({ files, dirPath: folderPath }) =>
+  await mkdir(`${dir}/guests`, { recursive: true })
+
+  const randomName = randStr()
+
+  const createFilesIn = ({ files, dirPath }) => {
     Promise.all(
       files.map(([fileName, content]) =>
-        writeFile(`${folderPath}/${fileName}`, JSON.stringify(content)),
+        writeFile(`${dirPath}/${fileName}`, JSON.stringify(content)),
       ),
     )
+  }
 
   const sendRequest = async (path, options) => {
     const response = await fetch(`http://localhost:${port}${path}`, options)
@@ -29,35 +33,61 @@ export const setup = async ({ randStr }) => {
     } catch (err) {
       body = err
     }
-    return { status, body, headers, randLastName }
+    return { status, body, headers }
   }
 
-  return { temporaryPath: dir, createFilesIn, sendRequest }
+  const startServer = async path => {
+    const server = spawn('node', [`${path}`])
+    const message = await Promise.race([
+      once(server.stdout, 'data'),
+      Promise.race([
+        once(server.stderr, 'data').then(String).then(Error),
+        once(server, 'error'),
+      ]).then(result => Promise.reject(result)),
+    ])
+    return { server, message }
+  }
+
+  return { tmpPath: dir, createFilesIn, randomName, sendRequest, startServer }
 }
-const isServerThereTest = async ({ path, ctx: { server } }) => {
-  server = spawn('node', [`${path}`])
-  const message = await Promise.race([
-    once(server.stdout, 'data'),
-    Promise.race([
-      once(server.stderr, 'data').then(String).then(Error),
-      once(server, 'error'),
-    ]).then(error => Promise.reject(error)),
-  ])
+
+const isServerRunningWell = async ({ path, ctx }) => {
+  const { server, message } = await ctx.startServer(path)
+  server.kill()
   return message[0].toString().includes(port)
 }
-// const oneGuestTest = async ({ eq, ctx }) => {
-//   const expBody = { message: 'ciao' }
-//   const files = [[`mario_${ctx.randLastName}.json`, expBody]]
-//   const dirName = `guests`
+const isRightStatusCode = async ({ eq, ctx, randStr }) => {
+  const { status } = await ctx.sendRequest(`/${ctx.randomName}`, {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json',
+    },
+    body: {
+      message: randStr(),
+    },
+  })
+  server.kill()
+  if (status != 201) {
+    return false
+  }
+  return true
+}
+
+// const testOneGuest = async ({ path, eq, ctx, randStr }) => {
+//   const { server } = await ctx.startServer(path)
+//   const randMsg = randStr()
+//   const expBody = { message: randMsg }
+//   const files = [[`mario_${ctx.randomName}.json`, expBody]]
+//   const dirName = 'guests'
 //   const dirPath = join(ctx.tmpPath, dirName)
 //   await ctx.createFilesIn({ dirPath, files })
-
 //   const { status, body, headers } = await ctx.sendRequest(
-//     `/mario_${ctx.randLastName}`,
+//     `/mario_${ctx.randomName}`,
 //     {
-//       method: 'GET',
+//       method: 'POST',
 //     },
 //   )
+//   server.kill()
 //   return eq(
 //     {
 //       status: status,
@@ -71,32 +101,37 @@ const isServerThereTest = async ({ path, ctx: { server } }) => {
 //     },
 //   )
 // }
-const serverFailedTest = async ({ eq, ctx }) => {
-  // change permission for existing file
-  await chmod(`${ctx.tmpPath}/guests/mario_${ctx.randLastName}.json`, 0)
-  const { status, body, headers } = await ctx.sendRequest(
-    `/mario_${ctx.randLastName}`,
-    {
-      method: 'POST',
-    },
-  )
-  return eq(
-    {
-      status: status,
-      body: body,
-      contentType: headers['content-type'],
-    },
-    {
-      status: 500,
-      body: { error: 'server failed' },
-      contentType: 'application/json',
-    },
-  )
-}
-// const testGuestNotThere = async ({ eq, ctx }) => {
+
+// const testServerFail = async ({ path, eq, ctx }) => {
+//   const { server } = await ctx.startServer(path)
+//   await chmod(`${ctx.tmpPath}/guests/mario_${ctx.randomName}.json`, 0)
+//   const { status, body, headers } = await ctx.sendRequest(
+//     `/mario_${ctx.randomName}`,
+//     {
+//       method: 'GET',
+//     },
+//   )
+//   server.kill()
+//   return eq(
+//     {
+//       status: status,
+//       body: body,
+//       contentType: headers['content-type'],
+//     },
+//     {
+//       status: 500,
+//       body: { error: 'server failed' },
+//       contentType: 'application/json',
+//     },
+//   )
+// }
+
+// const testGuestNotThere = async ({ path, eq, ctx }) => {
+//   const { server } = await ctx.startServer(path)
 //   const { status, body, headers } = await ctx.sendRequest('/andrea_bianchi', {
 //     method: 'GET',
 //   })
+//   server.kill()
 //   return eq(
 //     {
 //       status: status,
@@ -110,11 +145,7 @@ const serverFailedTest = async ({ eq, ctx }) => {
 //     },
 //   )
 // }
-export const tests = [
-  isServerThereTest,
-  //   oneGuestTest,
-  serverFailedTest,
-  //   testGuestNotThere,
-]
 
-Object.freeze(tests)
+// tests.push(isServerRunningWell, testOneGuest, testServerFail, testGuestNotThere)
+
+// Object.freeze(tests)
