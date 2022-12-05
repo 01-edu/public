@@ -57,7 +57,7 @@ export const setup = async ({ randStr }) => {
   return { tmpPath: dir, createFilesIn, randomName, sendRequest, startServer }
 }
 
-const isServerRunningWell = async ({ path, ctx }) => {
+const isServerRunning = async ({ path, ctx }) => {
   const { server, message } = await ctx.startServer(path)
   server.kill()
   return message[0].toString().includes(port)
@@ -139,7 +139,7 @@ const testFileCreated = async ({ path, ctx, randStr }) => {
   return true
 }
 tests.push(
-  isServerRunningWell,
+  isServerRunning,
   testServerFail,
   isRightStatusCode,
   isRightContentType,
