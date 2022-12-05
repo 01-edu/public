@@ -56,6 +56,7 @@ const isServerRunningWell = async ({ path, ctx }) => {
   server.kill()
   return message[0].toString().includes(port)
 }
+
 const isRightStatusCode = async ({ eq, ctx, randStr }) => {
   const { status } = await ctx.sendRequest(`/${ctx.randomName}`, {
     method: 'POST',
@@ -72,6 +73,7 @@ const isRightStatusCode = async ({ eq, ctx, randStr }) => {
   }
   return true
 }
+
 const isRightContentType = async ({ eq, ctx, randStr }) => {
   const { headers } = await ctx.sendRequest(`/Rahima_Young`, {
     method: 'POST',
@@ -119,24 +121,3 @@ tests.push(
 )
 
 Object.freeze(tests)
-
-// const testGuestNotThere = async ({ path, eq, ctx }) => {
-//   const { server } = await ctx.startServer(path)
-//   const { status, body, headers } = await ctx.sendRequest('/andrea_bianchi', {
-//     method: 'GET',
-//   })
-//   server.kill()
-//   return eq(
-//     {
-//       status: status,
-//       body: body,
-//       contentType: headers['content-type'],
-//     },
-//     {
-//       status: 404,
-//       body: { error: 'guest not found' },
-//       contentType: 'application/json',
-//     },
-//   )
-// }
-
