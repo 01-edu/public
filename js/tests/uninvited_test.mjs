@@ -99,9 +99,9 @@ const testServerFail = async ({ path, eq, ctx }) => {
   const { server } = await ctx.startServer(path)
   await chmod(`${ctx.tmpPath}/guests/${ctx.randomName}.json`, 0)
   const { status, body, headers } = await ctx.sendRequest(
-    `/mario_${ctx.randomName}`,
+    `/${ctx.randomName}`,
     {
-      method: 'GET',
+      method: 'POST',
     },
   )
   server.kill()
@@ -128,7 +128,7 @@ const testFileCreated = async ({ path, ctx, randStr }) => {
   })
   const dirName = 'guests'
   const dirPath = join(ctx.tmpPath, dirName)
-  fs.access(`${dirPath}/${randomName}`, fs.F_OK, err => {
+  fs.access(`${dirPath}/${randomName}.json`, fs.F_OK, err => {
     if (err) {
       console.error(err)
       server.kill()
