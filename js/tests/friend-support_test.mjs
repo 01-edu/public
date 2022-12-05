@@ -51,14 +51,13 @@ export const setup = async ({ randStr }) => {
   return { tmpPath: dir, createFilesIn, randLastName, sendRequest, startServer }
 }
 
-tests.push(async ({ path, ctx }) => {
+const isServerRunningWell = async ({ path, ctx }) => {
   const { server, message } = await ctx.startServer(path)
   server.kill()
   return message[0].toString().includes(port)
-})
+}
 
-tests.push(async ({ path, eq, ctx, randStr }) => {
-  // test for one guest
+const testOneGuest = async ({ path, eq, ctx, randStr }) => {
   const { server } = await ctx.startServer(path)
   const randMsg = randStr()
   const expBody = { message: randMsg }
@@ -85,11 +84,9 @@ tests.push(async ({ path, eq, ctx, randStr }) => {
       contentType: 'application/json',
     },
   )
-})
+}
 
-tests.push(async ({ path, eq, ctx }) => {
-  // test server failed
-  // change permission for existing file
+const testServerFail = async ({ path, eq, ctx }) => {
   const { server } = await ctx.startServer(path)
   await chmod(`${ctx.tmpPath}/guests/mario_${ctx.randLastName}.json`, 0)
   const { status, body, headers } = await ctx.sendRequest(
@@ -111,10 +108,9 @@ tests.push(async ({ path, eq, ctx }) => {
       contentType: 'application/json',
     },
   )
-})
+}
 
-tests.push(async ({ path, eq, ctx }) => {
-  // test guest not there
+const testGuestNotThere = async ({ path, eq, ctx }) => {
   const { server } = await ctx.startServer(path)
   const { status, body, headers } = await ctx.sendRequest('/andrea_bianchi', {
     method: 'GET',
@@ -132,6 +128,8 @@ tests.push(async ({ path, eq, ctx }) => {
       contentType: 'application/json',
     },
   )
-})
+}
+
+tests.push(isServerRunningWell, testOneGuest, testServerFail, testGuestNotThere)
 
 Object.freeze(tests)
