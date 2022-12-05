@@ -119,39 +119,31 @@ const testServerFail = async ({ path, eq, ctx }) => {
   )
 }
 
-const testFileCreated = async ({ path, eq, ctx, randStr }) => {
+const testFileCreated = async ({ path, ctx, randStr }) => {
   const { server } = await ctx.startServer(path)
-  const randMsg = randStr()
-  const expBody = { message: randMsg }
-  const files = [[`${ctx.randomName}.json`, expBody]]
+  const randomName = randStr()
+  await ctx.sendRequest(`/${randomName}`, {
+    body: randStr(),
+    method: 'POST',
+  })
   const dirName = 'guests'
   const dirPath = join(ctx.tmpPath, dirName)
-  const result = await ctx.createFilesIn({ dirPath, files })
-  const { status, body, headers } = await ctx.sendRequest(
-    `/${ctx.randomName}`,
-    {
-      method: 'GET',
-    },
-  )
+  fs.access(`${dirPath}/${randomName}`, fs.F_OK, err => {
+    if (err) {
+      console.error(err)
+      server.kill()
+      return false
+    }
+  })
   server.kill()
-  return eq(
-    {
-      status: status,
-      body: body,
-      contentType: headers['content-type'],
-    },
-    {
-      status: 200,
-      body: expBody,
-      contentType: 'application/json',
-    },
-  )
+  return true
 }
 tests.push(
   isServerRunningWell,
+  testServerFail,
   isRightStatusCode,
   isRightContentType,
-  testServerFail,
+  testFileCreated
 )
 
 Object.freeze(tests)
