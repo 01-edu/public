@@ -128,16 +128,16 @@ const testFileCreated = async ({ path, ctx, randStr }) => {
   })
   const dirName = 'guests'
   const dirPath = join(ctx.tmpPath, dirName)
+  server.kill()
   fs.access(`${dirPath}/${randomName}.json`, fs.F_OK, err => {
     if (err) {
       console.error(err)
-      server.kill()
       return false
     }
   })
-  server.kill()
   return true
 }
+
 tests.push(
   isServerRunning,
   testServerFail,
