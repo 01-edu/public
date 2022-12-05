@@ -18,7 +18,9 @@ export const setup = async ({ randStr }) => {
   const createFilesIn = ({ files, dirPath }) => {
     Promise.all(
       files.map(([fileName, content]) =>
-        writeFile(`${dirPath}/${fileName}`, JSON.stringify(content)),
+        writeFile(`${dirPath}/${fileName}`, JSON.stringify(content), {
+          flag: 'wx',
+        }),
       ),
     ).catch(reason => {
       console.log(reason)
@@ -117,6 +119,34 @@ const testServerFail = async ({ path, eq, ctx }) => {
   )
 }
 
+const testFileCreated = async ({ path, eq, ctx, randStr }) => {
+  const { server } = await ctx.startServer(path)
+  const randMsg = randStr()
+  const expBody = { message: randMsg }
+  const files = [[`${ctx.randomName}.json`, expBody]]
+  const dirName = 'guests'
+  const dirPath = join(ctx.tmpPath, dirName)
+  const result = await ctx.createFilesIn({ dirPath, files })
+  const { status, body, headers } = await ctx.sendRequest(
+    `/${ctx.randomName}`,
+    {
+      method: 'GET',
+    },
+  )
+  server.kill()
+  return eq(
+    {
+      status: status,
+      body: body,
+      contentType: headers['content-type'],
+    },
+    {
+      status: 200,
+      body: expBody,
+      contentType: 'application/json',
+    },
+  )
+}
 tests.push(
   isServerRunningWell,
   isRightStatusCode,
