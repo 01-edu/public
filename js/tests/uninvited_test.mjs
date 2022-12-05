@@ -118,6 +118,8 @@ tests.push(
   testServerFail,
 )
 
+Object.freeze(tests)
+
 // const testGuestNotThere = async ({ path, eq, ctx }) => {
 //   const { server } = await ctx.startServer(path)
 //   const { status, body, headers } = await ctx.sendRequest('/andrea_bianchi', {
@@ -138,4 +140,3 @@ tests.push(
 //   )
 // }
 
-// Object.freeze(tests)
