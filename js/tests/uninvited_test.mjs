@@ -20,7 +20,7 @@ export const setup = async ({ randStr }) => {
       files.map(([fileName, content]) =>
         writeFile(`${dirPath}/${fileName}`, JSON.stringify(content)),
       ),
-    )
+    ).catch(reason => console.log(reason))
   }
 
   const sendRequest = async (path, options) => {
@@ -75,7 +75,7 @@ const isRightStatusCode = async ({ ctx, randStr }) => {
 }
 
 const isRightContentType = async ({ ctx, randStr }) => {
-  const { headers } = await ctx.sendRequest(`/Rahima_Young`, {
+  const { headers } = await ctx.sendRequest(`/${ctx.randomName}`, {
     method: 'POST',
     headers: {
       'content-type': 'application/json',
