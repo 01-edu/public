@@ -4,7 +4,7 @@
 
 Write a program that takes a `string` as an argument, if the `string` contains the letter `a` then print `Contains the letter` followed by a newline `\n`.
 
-- If a there is no character `a` in the `string`, the program writes `!(Contains the letter)` followed by a newline `\n`.
+- If there is no character `a` in the `string`, the program writes `!(Contains the letter)` followed by a newline `\n`.
 - If the number of parameters is not 1, the program displays a newline `\n`.
 
 ### Usage
