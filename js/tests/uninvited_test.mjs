@@ -138,12 +138,32 @@ const testFileCreated = async ({ path, ctx, randStr }) => {
   return true
 }
 
+const testBodyOnSuccess = async ({ ctx, randStr }) => {
+  const randomBody = randStr()
+  const { body } = await ctx.sendRequest(`/${ctx.randomName}`, {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json',
+    },
+    body: randomBody,
+  })
+  server.kill()
+  return eq(
+    {
+      body: body,
+    },
+    {
+      body: randomBody,
+    },
+  )
+}
 tests.push(
   testServerRunning,
   testServerFail,
   testRightStatusCode,
   testRightContentType,
-  testFileCreated
+  testFileCreated,
+  testBodyOnSuccess,
 )
 
 Object.freeze(tests)
