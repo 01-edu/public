@@ -76,68 +76,16 @@ const isRightContentType = async ({ eq, ctx, randStr }) => {
   const { headers } = await ctx.sendRequest(`/Rahima_Young`, {
     method: 'POST',
     headers: {
-      "content-type": "application/json" 
+      'content-type': 'application/json',
     },
-    body: randStr()
+    body: randStr(),
   })
-  if ( headers['content-type'] != 'application/json') {
+  if (headers['content-type'] != 'application/json') {
     return false
   }
   server.kill()
   return true
 }
-// const testOneGuest = async ({ path, eq, ctx, randStr }) => {
-//   const { server } = await ctx.startServer(path)
-//   const randMsg = randStr()
-//   const expBody = { message: randMsg }
-//   const files = [[`mario_${ctx.randomName}.json`, expBody]]
-//   const dirName = 'guests'
-//   const dirPath = join(ctx.tmpPath, dirName)
-//   await ctx.createFilesIn({ dirPath, files })
-//   const { status, body, headers } = await ctx.sendRequest(
-//     `/mario_${ctx.randomName}`,
-//     {
-//       method: 'POST',
-//     },
-//   )
-//   server.kill()
-//   return eq(
-//     {
-//       status: status,
-//       body: body,
-//       contentType: headers['content-type'],
-//     },
-//     {
-//       status: 200,
-//       body: expBody,
-//       contentType: 'application/json',
-//     },
-//   )
-// }
-
-// const testServerFail = async ({ path, eq, ctx }) => {
-//   const { server } = await ctx.startServer(path)
-//   await chmod(`${ctx.tmpPath}/guests/mario_${ctx.randomName}.json`, 0)
-//   const { status, body, headers } = await ctx.sendRequest(
-//     `/mario_${ctx.randomName}`,
-//     {
-//       method: 'GET',
-//     },
-//   )
-//   server.kill()
-//   return eq(
-//     {
-//       status: status,
-//       body: body,
-//       contentType: headers['content-type'],
-//     },
-//     {
-//       status: 500,
-//       body: { error: 'server failed' },
-//       contentType: 'application/json',
-//     },
-//   )
-// }
 
 // const testGuestNotThere = async ({ path, eq, ctx }) => {
 //   const { server } = await ctx.startServer(path)
