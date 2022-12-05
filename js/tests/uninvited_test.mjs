@@ -72,7 +72,20 @@ const isRightStatusCode = async ({ eq, ctx, randStr }) => {
   }
   return true
 }
-
+const isRightContentType = async ({ eq, ctx, randStr }) => {
+  const { headers } = await ctx.sendRequest(`/Rahima_Young`, {
+    method: 'POST',
+    headers: {
+      "content-type": "application/json" 
+    },
+    body: randStr()
+  })
+  if ( headers['content-type'] != 'application/json') {
+    return false
+  }
+  server.kill()
+  return true
+}
 // const testOneGuest = async ({ path, eq, ctx, randStr }) => {
 //   const { server } = await ctx.startServer(path)
 //   const randMsg = randStr()
