@@ -289,7 +289,7 @@ function clonePlatform() {
   echo "Enter the target directory for the platform $(tput setaf 2)[System: $(pwd)/$(hostname)]$(tput sgr0):"
   read serverDir
   git clone git@github.com:01-edu/all.git $serverDir
-  cd /$serverDir
+  cd $serverDir
   # Generate platform environment file automatically
   ./generate_env.sh --gen
 }
