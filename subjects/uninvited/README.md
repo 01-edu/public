@@ -13,7 +13,7 @@ Create an `uninvited.mjs` program that will open a server to remotely not just a
 Here below are your program/server's expected behaviors:
 
 - It has to listen on port `5000` and it will have to print a simple message on the console, specifying the listening port.
-- Its HTTP response should always contain a coherent status code depending on the handling of the received HTTP request. More specifically, your server should be able to respond with the following status codes: `201` and `500`.
+- Its HTTP response should contain a coherent status code depending on the handling of the received HTTP request. More specifically, your server should be able to respond with the following status codes: `201` and `500`.
 - The responses will always be JSON and this information should be explicit in the HTTP response.
 - For each http `POST` request, your program should create the corresponding JSON file and store the contents of the body, and then provide the content as JSON in the HTTP response, if possible.
 - If for any reason the server fails, the response should be an object with an attribute `error` specified as `server failed`.
