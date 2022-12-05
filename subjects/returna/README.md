@@ -19,7 +19,3 @@ $
 $ go run . "one" "two" | cat -e
 $
 ```
-
-
-
-
