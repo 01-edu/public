@@ -57,13 +57,13 @@ export const setup = async ({ randStr }) => {
   return { tmpPath: dir, createFilesIn, randomName, sendRequest, startServer }
 }
 
-const isServerRunning = async ({ path, ctx }) => {
+const testServerRunning = async ({ path, ctx }) => {
   const { server, message } = await ctx.startServer(path)
   server.kill()
   return message[0].toString().includes(port)
 }
 
-const isRightStatusCode = async ({ ctx, randStr }) => {
+const testRightStatusCode = async ({ ctx, randStr }) => {
   const { status } = await ctx.sendRequest(`/${ctx.randomName}`, {
     method: 'POST',
     headers: {
@@ -80,7 +80,7 @@ const isRightStatusCode = async ({ ctx, randStr }) => {
   return true
 }
 
-const isRightContentType = async ({ ctx, randStr }) => {
+const testRightContentType = async ({ ctx, randStr }) => {
   const { headers } = await ctx.sendRequest(`/${ctx.randomName}`, {
     method: 'POST',
     headers: {
@@ -139,10 +139,10 @@ const testFileCreated = async ({ path, ctx, randStr }) => {
 }
 
 tests.push(
-  isServerRunning,
+  testServerRunning,
   testServerFail,
-  isRightStatusCode,
-  isRightContentType,
+  testRightStatusCode,
+  testRightContentType,
   testFileCreated
 )
 
