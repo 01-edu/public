@@ -87,6 +87,29 @@ const isRightContentType = async ({ eq, ctx, randStr }) => {
   return true
 }
 
+const testServerFail = async ({ path, eq, ctx }) => {
+  const { server } = await ctx.startServer(path)
+  await chmod(`${ctx.tmpPath}/guests/${ctx.randomName}.json`, 0)
+  const { status, body, headers } = await ctx.sendRequest(
+    `/mario_${ctx.randomName}`,
+    {
+      method: 'GET',
+    },
+  )
+  server.kill()
+  return eq(
+    {
+      status: status,
+      body: body,
+      'content-type': headers['content-type'],
+    },
+    {
+      status: 500,
+      body: { error: 'server failed' },
+      'content-type': 'application/json',
+    },
+  )
+}
 // const testGuestNotThere = async ({ path, eq, ctx }) => {
 //   const { server } = await ctx.startServer(path)
 //   const { status, body, headers } = await ctx.sendRequest('/andrea_bianchi', {
