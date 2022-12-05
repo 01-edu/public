@@ -57,7 +57,7 @@ const isServerRunningWell = async ({ path, ctx }) => {
   return message[0].toString().includes(port)
 }
 
-const isRightStatusCode = async ({ eq, ctx, randStr }) => {
+const isRightStatusCode = async ({ ctx, randStr }) => {
   const { status } = await ctx.sendRequest(`/${ctx.randomName}`, {
     method: 'POST',
     headers: {
@@ -74,7 +74,7 @@ const isRightStatusCode = async ({ eq, ctx, randStr }) => {
   return true
 }
 
-const isRightContentType = async ({ eq, ctx, randStr }) => {
+const isRightContentType = async ({ ctx, randStr }) => {
   const { headers } = await ctx.sendRequest(`/Rahima_Young`, {
     method: 'POST',
     headers: {
