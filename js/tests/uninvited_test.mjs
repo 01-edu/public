@@ -88,10 +88,10 @@ const testRightContentType = async ({ ctx, randStr }) => {
     },
     body: randStr(),
   })
+  server.kill()
   if (headers['content-type'] != 'application/json') {
     return false
   }
-  server.kill()
   return true
 }
 
