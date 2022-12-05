@@ -20,7 +20,11 @@ export const setup = async ({ randStr }) => {
       files.map(([fileName, content]) =>
         writeFile(`${dirPath}/${fileName}`, JSON.stringify(content)),
       ),
-    ).catch(reason => console.log(reason))
+    ).catch(reason => {
+      console.log(reason)
+      return false
+    })
+    return true
   }
 
   const sendRequest = async (path, options) => {
