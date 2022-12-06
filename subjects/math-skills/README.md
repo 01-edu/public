@@ -23,7 +23,7 @@ Your program must be able to read from a file and print the result of each stati
 ...
 ```
 
-This data represents a graph in which the values of the x axis are the number of the lines (0, 1, 2, 3, 4, 5 ...) and the values of the y axis are the actual numbers (189, 113, 121, 114, 145, 110...).
+This data represents a [statistical population](https://en.wikipedia.org/wiki/Statistical_population): each line contains one value.
 
 To run your program a command similar to this one will be used if your project is made in Go:
 
