@@ -25,7 +25,7 @@ Unauthorized attempt:
 ```shell
 curl -i -X POST localhost:5000/Ricky_Banni -H "Content-Type: application/json" -d '{"answer": "yes", "drink": "alcohol", "food": "bats"}'
 HTTP/1.1 401 Unauthorized
-Content-Type: text/html
+Content-Type: application/json
 Date: [date]
 Connection: keep-alive
 Keep-Alive: timeout=5
@@ -39,7 +39,7 @@ Authorized attempt:
 ```shell
 curl -i -u Rahima_Young:abracadabra -X POST localhost:5000/Ricky_Banni -H "Content-Type: application/json" -d '{"answer": "yes", "drink": "alcohol", "food": "bats"}'
 HTTP/1.1 200 OK
-Content-Type: text/html
+Content-Type: application/json
 Date: [date]
 Connection: keep-alive
 Keep-Alive: timeout=5
