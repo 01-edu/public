@@ -1,6 +1,8 @@
 import { once } from 'node:events'
-import * as cp from 'node:child_process'
+import { spawn } from 'node:child_process'
 import { mkdir, writeFile, chmod } from 'fs/promises'
+import fs from 'fs'
+import { join } from 'path'
 
 export const tests = []
 const fetch = _fetch // to redefine the real fetch
@@ -32,108 +34,161 @@ export const setup = async ({}) => {
     return { status, body, headers }
   }
 
-  return { tmpPath: dir, createFilesIn, sendRequest }
+  const startServer = async path => {
+    const server = spawn('node', [`${path}`])
+    const message = await Promise.race([
+      once(server.stdout, 'data'),
+      Promise.race([
+        once(server.stderr, 'data').then(String).then(Error),
+        once(server, 'error'),
+      ]).then(result => Promise.reject(result)),
+    ])
+    return { server, message }
+  }
+
+  return { tmpPath: dir, createFilesIn, sendRequest, startServer }
 }
 
-// Test the server is running and writes the port in stdout
-tests.push(async ({ path, ctx }) => {
-  ctx.server = cp.spawn('node', [`${path}`])
-  const message = await Promise.race([
-    once(ctx.server.stdout, 'data'),
-    Promise.race([
-      once(ctx.server.stderr, 'data').then(String).then(Error),
-      once(ctx.server, 'error'),
-    ]).then(x => Promise.reject(x)),
-  ])
+const isServerRunningWell = async ({ path, ctx }) => {
+  const { server, message } = await ctx.startServer(path)
+  server.kill()
   return message[0].toString().includes(port)
-})
+}
 
-tests.push(async ({ eq, ctx }) => {
+const testGoodRequests = async ({ path, eq, ctx }) => {
+  let isTestOk = true
+  const expectedBody = {
+    answer: 'yes',
+    drink: 'alcohol',
+    food: 'bats',
+  }
+  const dirName = 'guests'
+  const dirPath = join(ctx.tmpPath, dirName)
+  const { server } = await ctx.startServer(path)
+
   {
-    const { status, body, headers } = await ctx.sendRequest(`/Rahima_Young`, {
+    const { status, body, headers } = await ctx.sendRequest(`/Ana_Riber`, {
       method: 'POST',
       headers: {
         authorization:
           'Basic ' +
           Buffer.from('Caleb_Squires:abracadabra').toString('base64'),
+        body: JSON.stringify(expectedBody),
       },
     })
-    if (status != 200 || headers['content-type'] != 'application/json') {
-      return false
+
+    fs.access(`${dirPath}/Ana_Riber.json`, fs.F_OK, err => {
+      if (err) {
+        console.error(err)
+        isTestOk = false
+      }
+    })
+    if (
+      status != 200 ||
+      headers['content-type'] != 'application/json' ||
+      !eq({ body: body }, { body: expectedBody })
+    ) {
+      isTestOk = false
     }
   }
   {
-    const { status, body, headers } = await ctx.sendRequest(`/Rahima_Young`, {
+    const { status, body, headers } = await ctx.sendRequest(`/Rob_Frie`, {
       method: 'POST',
       headers: {
         authorization:
           'Basic ' +
           Buffer.from('Tyrique_Dalton:abracadabra').toString('base64'),
+        body: JSON.stringify(expectedBody),
       },
     })
-    if (status != 200 || headers['content-type'] != 'application/json') {
-      return false
+
+    fs.access(`${dirPath}/Rob_Frie.json`, fs.F_OK, err => {
+      if (err) {
+        console.error(err)
+        isTestOk = false
+      }
+    })
+    if (
+      status != 200 ||
+      headers['content-type'] != 'application/json' ||
+      !eq({ body: body }, { body: expectedBody })
+    ) {
+      isTestOk = false
     }
   }
   {
-    const { status, body, headers } = await ctx.sendRequest(`/Rahima_Young`, {
+    const { status, body, headers } = await ctx.sendRequest(`/George_Harl`, {
       method: 'POST',
       headers: {
         authorization:
           'Basic ' + Buffer.from('Rahima_Young:abracadabra').toString('base64'),
+        body: JSON.stringify(expectedBody),
       },
     })
-    if (status != 200 || headers['content-type'] != 'application/json') {
-      return false
+
+    fs.access(`${dirPath}/George_Harl.json`, fs.F_OK, err => {
+      if (err) {
+        console.error(err)
+        isTestOk = false
+      }
+    })
+    if (
+      status != 200 ||
+      headers['content-type'] != 'application/json' ||
+      !eq({ body: body }, { body: expectedBody })
+    ) {
+      isTestOk = false
     }
   }
-  return true
-})
+  server.kill()
+  return isTestOk
+}
 
-// Unauthorized requests
-tests.push(async ({ eq, ctx }) => {
+const testUnauthorizedRequests = async ({ path, ctx }) => {
+  let isTestOk = true
+  const { server } = await ctx.startServer(path)
   {
-    const { status, body, headers } = await ctx.sendRequest(`/Rahima_Young`, {
+    const { status } = await ctx.sendRequest(`/Rahima_Young`, {
       method: 'POST',
     })
     if (status != 401) {
-      return false
+      isTestOk = false
     }
   }
-
   {
-    const { status, body, headers } = await ctx.sendRequest(``, {
+    const { status } = await ctx.sendRequest(``, {
       method: 'POST',
     })
     if (status != 401) {
-      return false
+      isTestOk = false
     }
   }
-
   {
-    const { status, body, headers } = await ctx.sendRequest(
+    const { status } = await ctx.sendRequest(
       `/Rahima_Young:wrongpass`,
       {
         method: 'POST',
       },
     )
     if (status != 401) {
-      return false
+      isTestOk = false
     }
   }
-
   {
-    const { status, body, headers } = await ctx.sendRequest(
+    const { status } = await ctx.sendRequest(
       `/Anonymus:abracadabra`,
       {
         method: 'POST',
       },
     )
     if (status != 401) {
-      return false
+      isTestOk = false
     }
   }
-  return true
-})
+  server.kill()
+  return isTestOk
+}
+
+tests.push(isServerRunningWell, testGoodRequests, testUnauthorizedRequests)
 
 Object.freeze(tests)
