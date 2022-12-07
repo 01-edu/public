@@ -5,12 +5,20 @@ set -euo pipefail
 IFS='
 '
 
-echo insecure >> ~/.curlrc
-caddy start &>/dev/null
+FILENAME="student/json-researcher.sh"
 
-submitted=$(bash student/json-researcher.sh)
-expected=$(bash solutions/json-researcher.sh)
-
-caddy stop &>/dev/null
-
-diff <(echo "$submitted") <(echo "$expected")
+# True if FILE exists and is a regular file
+if [ -f ${FILENAME} ]; then
+    # FILE exists and it's not empty
+    if [ -s ${FILENAME} ]; then
+        submitted=$(bash $FILENAME)
+        expected=$(bash solutions/json-researcher.sh)
+        diff <(echo "$submitted") <(echo "$expected")
+    else
+        echo "The file exist but is empty"
+        exit 1
+    fi
+else
+    echo "File does not exist"
+    exit 1
+fi
