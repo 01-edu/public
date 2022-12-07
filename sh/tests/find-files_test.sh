@@ -5,14 +5,31 @@ set -euo pipefail
 IFS='
 '
 
+FILENAME="student/find-files.sh"
 script_dirS=$(cd -P "$(dirname "$BASH_SOURCE")" &>/dev/null && pwd)
 
 challenge() {
-	submitted=$(cd "$1" && bash "$script_dirS"/student/find-files.sh)
+	submitted=$(cd "$1" && bash "$script_dirS"/$FILENAME)
 	expected=$(cd "$1" && bash "$script_dirS"/solutions/find-files.sh)
 
 	diff <(echo "$submitted") <(echo "$expected")
 }
 
-challenge find-files/folder1
-challenge find-files/folder2
+# True if FILE exists and is a regular file
+if [ -f ${FILENAME} ]; then
+    # FILE exists and it's not empty
+    if [ -s ${FILENAME} ]; then
+        if [[ $(cat $FILENAME | grep echo | wc -l) -ne 0 ]]; then
+            echo "echo is not allowed in this exercise!";
+            exit 1
+        fi
+		challenge find-files/folder1
+		challenge find-files/folder2
+    else
+        echo "The file exist but is empty"
+        exit 1
+    fi
+else
+    echo "File does not exist"
+    exit 1
+fi
