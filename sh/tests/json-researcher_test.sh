@@ -11,6 +11,10 @@ FILENAME="student/json-researcher.sh"
 if [ -f ${FILENAME} ]; then
     # FILE exists and it's not empty
     if [ -s ${FILENAME} ]; then
+        if [[ $(cat $FILENAME | grep echo | wc -l) -ne 0 ]]; then
+            echo "echo is not allowed in this exercise!";
+            exit 1
+        fi
         submitted=$(bash $FILENAME)
         expected=$(bash solutions/json-researcher.sh)
         diff <(echo "$submitted") <(echo "$expected")
