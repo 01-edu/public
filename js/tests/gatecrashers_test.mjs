@@ -1,7 +1,6 @@
 import { once } from 'node:events'
 import { spawn } from 'node:child_process'
-import { mkdir, writeFile, chmod } from 'fs/promises'
-import fs from 'fs'
+import { mkdir, writeFile, access } from 'fs/promises'
 import { join } from 'path'
 
 export const tests = []
@@ -23,7 +22,7 @@ export const setup = async ({}) => {
 
   const sendRequest = async (path, options) => {
     const response = await fetch(`http://localhost:${port}${path}`, options)
-    const { status, statusText, ok } = response
+    const { status } = response
     const headers = Object.fromEntries(response.headers)
     let body = ''
     try {
@@ -77,11 +76,9 @@ const testGoodRequests = async ({ path, eq, ctx }) => {
       },
     })
 
-    fs.access(`${dirPath}/Ana_Riber.json`, fs.F_OK, err => {
-      if (err) {
-        console.error(err)
-        isTestOk = false
-      }
+    access(`${dirPath}/Ana_Riber.json`).catch(err => {
+      console.error(err)
+      isTestOk = false
     })
     if (
       status != 200 ||
@@ -102,11 +99,9 @@ const testGoodRequests = async ({ path, eq, ctx }) => {
       },
     })
 
-    fs.access(`${dirPath}/Rob_Frie.json`, fs.F_OK, err => {
-      if (err) {
-        console.error(err)
-        isTestOk = false
-      }
+    access(`${dirPath}/Rob_Frie.json`).catch(err => {
+      console.error(err)
+      isTestOk = false
     })
     if (
       status != 200 ||
@@ -126,11 +121,9 @@ const testGoodRequests = async ({ path, eq, ctx }) => {
       },
     })
 
-    fs.access(`${dirPath}/George_Harl.json`, fs.F_OK, err => {
-      if (err) {
-        console.error(err)
-        isTestOk = false
-      }
+    access(`${dirPath}/George_Harl.json`).catch(err => {
+      console.error(err)
+      isTestOk = false
     })
     if (
       status != 200 ||
@@ -164,23 +157,17 @@ const testUnauthorizedRequests = async ({ path, ctx }) => {
     }
   }
   {
-    const { status } = await ctx.sendRequest(
-      `/Rahima_Young:wrongpass`,
-      {
-        method: 'POST',
-      },
-    )
+    const { status } = await ctx.sendRequest(`/Rahima_Young:wrongpass`, {
+      method: 'POST',
+    })
     if (status != 401) {
       isTestOk = false
     }
   }
   {
-    const { status } = await ctx.sendRequest(
-      `/Anonymus:abracadabra`,
-      {
-        method: 'POST',
-      },
-    )
+    const { status } = await ctx.sendRequest(`/Anonymus:abracadabra`, {
+      method: 'POST',
+    })
     if (status != 401) {
       isTestOk = false
     }
