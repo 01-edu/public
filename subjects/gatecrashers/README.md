@@ -12,7 +12,7 @@ The request query will look like this `curl -u Caleb_Squires:abracadabra ...`.
 
 The server should properly handle unauthorized requests using the error code `401`.
 
-Apart for the authentication part your server's behavior should remain unchanged:
+Apart for the authentication part your server's behavior should remain unchanged from `late-guests`:
 - You will listen to port `5000` and print a message containing the port you are using.
 - For each **authorized** http `POST` request, your program should create the corresponding JSON file and store the contents of the body, and then provide the content as JSON in the HTTP response, if possible. 
 
