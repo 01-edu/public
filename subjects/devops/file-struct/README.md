@@ -35,6 +35,14 @@ $ ls
 
 ### Hints
 
+In order to create new directories or folders in Linux or Unix-like operating systems you need to use the `mkdir` command. `mkdir` stands for “make directory.” you can use it like so:
+
+```console
+$ mkdir my_folder
+$ ls
+my_folder
+```
+
 In this exercise you wil use the command `tree` to see the file structure as in the example bellow. `tree` is a recursive directory listing program that produces a depth-indented listing of files. With no arguments, `tree` lists the files in the current directory.
 
 You will also need to use the `tar` command which helps to create, extract, and list archive contents. You can find more about the command in the link bellow.
