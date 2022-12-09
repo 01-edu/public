@@ -33,6 +33,20 @@ export const setup = async ({}) => {
     return { status, body, headers }
   }
 
+  const sendRequestWithAuth = async (guestName, auth, body) => {
+    let options = {
+      method: 'POST',
+      headers: {
+        body: JSON.stringify(body),
+      },
+    }
+    if (auth.len !== 0) {
+      options.headers.authorization =
+        'Basic ' + Buffer.from(auth).toString('base64')
+    }
+    return sendRequest(guestName, options)
+  }
+
   const startServer = async path => {
     const server = spawn('node', [`${path}`])
     const message = await Promise.race([
@@ -45,7 +59,13 @@ export const setup = async ({}) => {
     return { server, message }
   }
 
-  return { tmpPath: dir, createFilesIn, sendRequest, startServer }
+  return {
+    tmpPath: dir,
+    createFilesIn,
+    sendRequest,
+    sendRequestWithAuth,
+    startServer,
+  }
 }
 
 const isServerRunningWell = async ({ path, ctx }) => {
@@ -54,8 +74,7 @@ const isServerRunningWell = async ({ path, ctx }) => {
   return message[0].toString().includes(port)
 }
 
-const testGoodRequests = async ({ path, eq, ctx }) => {
-  let isTestOk = true
+const testGoodRequests = async ({ path, eq, fail, ctx }) => {
   const expectedBody = {
     answer: 'yes',
     drink: 'alcohol',
@@ -65,115 +84,62 @@ const testGoodRequests = async ({ path, eq, ctx }) => {
   const dirPath = join(ctx.tmpPath, dirName)
   const { server } = await ctx.startServer(path)
 
-  {
-    const { status, body, headers } = await ctx.sendRequest(`/Ana_Riber`, {
-      method: 'POST',
-      headers: {
-        authorization:
-          'Basic ' +
-          Buffer.from('Caleb_Squires:abracadabra').toString('base64'),
-        body: JSON.stringify(expectedBody),
-      },
-    })
+  const newGuestNames = ['Ana_Riber', 'Rob_Frie', 'George_Harl']
+  const auths = [
+    'Caleb_Squires:abracadabra',
+    'Tyrique_Dalton:abracadabra',
+    'Rahima_Young:abracadabra',
+  ]
+  for (var i = 0; i < 3; i++) {
+    const { status, body, headers } = await ctx.sendRequestWithAuth(
+      `/${newGuestNames[i]}`,
+      `${auths[i]}`,
+      expectedBody,
+    )
 
-    access(`${dirPath}/Ana_Riber.json`).catch(err => {
-      console.error(err)
-      isTestOk = false
-    })
-    if (
-      status != 200 ||
-      headers['content-type'] != 'application/json' ||
-      !eq({ body: body }, { body: expectedBody })
-    ) {
-      isTestOk = false
-    }
-  }
-  {
-    const { status, body, headers } = await ctx.sendRequest(`/Rob_Frie`, {
-      method: 'POST',
-      headers: {
-        authorization:
-          'Basic ' +
-          Buffer.from('Tyrique_Dalton:abracadabra').toString('base64'),
-        body: JSON.stringify(expectedBody),
-      },
-    })
-
-    access(`${dirPath}/Rob_Frie.json`).catch(err => {
-      console.error(err)
-      isTestOk = false
-    })
-    if (
-      status != 200 ||
-      headers['content-type'] != 'application/json' ||
-      !eq({ body: body }, { body: expectedBody })
-    ) {
-      isTestOk = false
-    }
-  }
-  {
-    const { status, body, headers } = await ctx.sendRequest(`/George_Harl`, {
-      method: 'POST',
-      headers: {
-        authorization:
-          'Basic ' + Buffer.from('Rahima_Young:abracadabra').toString('base64'),
-        body: JSON.stringify(expectedBody),
-      },
-    })
-
-    access(`${dirPath}/George_Harl.json`).catch(err => {
-      console.error(err)
-      isTestOk = false
-    })
-    if (
-      status != 200 ||
-      headers['content-type'] != 'application/json' ||
-      !eq({ body: body }, { body: expectedBody })
-    ) {
-      isTestOk = false
-    }
+    fail(await access(`${dirPath}/${newGuestNames[i]}.json`))
+    eq(
+      { status: status, contentType: headers['content-type'], body: body },
+      { status: 200, contentType: 'application/json', body: expectedBody },
+    )
   }
   server.kill()
-  return isTestOk
+  return true
 }
 
-const testUnauthorizedRequests = async ({ path, ctx }) => {
-  let isTestOk = true
+const testUnauthorizedRequests = async ({ path, eq, ctx }) => {
+  const body = {
+    answer: 'yes',
+    drink: 'alcohol',
+    food: 'bats',
+  }
+
   const { server } = await ctx.startServer(path)
-  {
-    const { status } = await ctx.sendRequest(`/Rahima_Young`, {
-      method: 'POST',
-    })
-    if (status != 401) {
-      isTestOk = false
-    }
+
+  const newGuestNames = [
+    'Super_Mario',
+    'Super_Mario',
+    'Super_Mario',
+    'Super_Mario',
+  ]
+  const auths = [
+    '',
+    'LetMePass',
+    'Rahima_Young:wrongpass',
+    'Anonymus:abracadabra',
+  ]
+  for (var i = 0; i < 3; i++) {
+    const { status } = await ctx.sendRequestWithAuth(
+      `/${newGuestNames[i]}`,
+      `${auths[i]}`,
+      body,
+    )
+
+    eq({ status: status }, { status: 401 })
   }
-  {
-    const { status } = await ctx.sendRequest(``, {
-      method: 'POST',
-    })
-    if (status != 401) {
-      isTestOk = false
-    }
-  }
-  {
-    const { status } = await ctx.sendRequest(`/Rahima_Young:wrongpass`, {
-      method: 'POST',
-    })
-    if (status != 401) {
-      isTestOk = false
-    }
-  }
-  {
-    const { status } = await ctx.sendRequest(`/Anonymus:abracadabra`, {
-      method: 'POST',
-    })
-    if (status != 401) {
-      isTestOk = false
-    }
-  }
+
   server.kill()
-  return isTestOk
+  return true
 }
 
 tests.push(isServerRunningWell, testGoodRequests, testUnauthorizedRequests)
