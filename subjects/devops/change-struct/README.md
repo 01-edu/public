@@ -14,10 +14,8 @@ Use the correct commands to create the following file structure:
     - Rename the folder `10`, to `new_folder`
     - Copy the folder `1` inside the folder `8`
 
-In this exercise you wil use the command `tree` to see the file structure as in the example bellow. `tree` is a recursive directory listing program that produces a depth-indented listing of files. With no arguments, `tree` lists the files in the current directory.
-
 ```console
-User-> tree new-struct/
+$ tree new-struct/
 new-struct/
 ├── 0_to_3
 │   ├── 0
