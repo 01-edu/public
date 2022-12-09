@@ -11,7 +11,7 @@ Create 3 functions which work like the `.filter`, `.map` and `.reduce` array met
 Create 3 additional functions that use your previously created functions and take an object as input:
 
 - `totalCalories`: that will return the total calories of a cart.
-- `lowCarbs`: that leaves only those items which are lower than 50grams.
+- `lowCarbs`: that leaves only those items which are lower than 50 grams.
 - `cartTotal`: that will give you the right amount of calories, proteins... and **all the other** items in your grocery cart.
 
 > Think about the shape of `Object.entries()`
