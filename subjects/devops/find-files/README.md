@@ -7,7 +7,7 @@
 Create a file `find-files.sh`, which will look for and show, in the current directory and its sub-folders:
 
 everything that starts with an `a` or,
-all the files ending with a `z` or,
+all the files ending with a `z`
 
 
 - You can use this for testing: https://assets.01-edu.org/devops-branch/find-files-example.zip
@@ -43,7 +43,8 @@ $find ~/ \( -type f \)
 $
 ```
 
-May you will need to use `pipe (|)` and `&&`.
+You may need to use pipes `(|)` and the logical operator `&&`.
+
 
 > You have to use Man or Google to know more about commands flags, in order to solve this exercise!
 > Google and Man will be your friends!
