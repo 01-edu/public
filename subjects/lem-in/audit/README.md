@@ -6,7 +6,7 @@
 
 ###### Is the program able to read the ant farm in this standard input?
 
-###### Does the program accept only the commands `##star` and `##end`?
+###### Does the program accept only the commands `##start` and `##end`?
 
 ##### Try running the program with a valid example of your choice.
 
@@ -48,7 +48,7 @@ L4-1
 $
 ```
 
-###### Does it present the quickest path possible with the same number of turns as the result above?
+###### Does it present the quickest path possible with at most 6 turns?
 
 ##### Try running the program with [example01](../examples/README.md).
 
@@ -100,7 +100,7 @@ L10-end
 $
 ```
 
-###### Does it present the quickest path possible with the same number of turns as the result above?
+###### Does it present the quickest path possible with at most 8 turns?
 
 ##### Try running the program with [example02](../examples/README.md).
 
@@ -132,7 +132,7 @@ L18-3 L20-3
 $
 ```
 
-###### Does it present the quickest path possible with the same number of turns as the result above?
+###### Does it present the quickest path possible with at most 11 turns?
 
 ##### Try running the program with [example03](../examples/README.md).
 
@@ -164,7 +164,7 @@ L4-5
 $
 ```
 
-###### Does it present the quickest path possible with the same number of turns as the result above?
+###### Does it present the quickest path possible with at most 6 turns?
 
 ##### Try running the program with [example04](../examples/README.md).
 
@@ -197,7 +197,7 @@ L8-peter L9-peter
 $
 ```
 
-###### Does it present the quickest path possible with the same number of turns as the result above?
+###### Does it present the quickest path possible with at most 6 turns?
 
 ##### Try running the program with [example05](../examples/README.md).
 
@@ -281,7 +281,7 @@ L8-end L9-end
 $
 ```
 
-###### Does it present the quickest path possible with the same number of turns as the result above?
+###### Does it present the quickest path possible with at most 8 turns?
 
 ##### Try running the program with [badexample00](../examples/README.md).
 
@@ -315,9 +315,11 @@ $
 
 ###### Are the ants alone in each room?
 
+###### Is each tunnel only used once per turn?
+
 ##### Try running the program with a valid example of your choice.
 
-###### At the end can you confirm that all the ants present in the `##end` room?
+###### At the end can you confirm that all the ants are in the `##end` room?
 
 ##### Try to run the program with an example of your choice multiple times.
 
