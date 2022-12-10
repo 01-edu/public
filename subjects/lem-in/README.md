@@ -86,6 +86,7 @@ Which corresponds to the following representation :
 - A tunnel joins only two rooms together never more than that.
 - A room can be linked to an infinite number of rooms and by as many tunnels as deemed necessary.
 - Each room can only contain one ant at a time (except at `##start` and `##end` which can contain as many ants as necessary).
+- Each tunnel can only be used once per turn.
 - To be the first to arrive, ants will need to take the shortest path or paths. They will also need to avoid traffic jams as well as walking all over their fellow ants.
 - You will only display the ants that moved at each turn, and you can move each ant only once and through a tunnel (the room at the receiving end must be empty).
 - The rooms names will not necessarily be numbers, and in order.
