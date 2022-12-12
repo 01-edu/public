@@ -5,4 +5,6 @@ set -euo pipefail
 IFS='
 '
 
-diff student/\"\\?\$*\'First_file\'*\$?\\\" solutions/\"\\?\$*\'First_file\'*\$?\\\"
+diff student/firstFile solutions/firstFile
+diff student/\"medium_File\!\" solutions/\"medium_File\!\"
+diff student/\"\\?\$*\'Hard_file\'*\$?\\\" solutions/\"\\?\$*\'Hard_file\'*\$?\\\"
