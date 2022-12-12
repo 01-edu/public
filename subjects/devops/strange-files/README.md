@@ -27,17 +27,36 @@ Example:
 If you want to create a file named `foo!\.txt` You have to escape the characters like so:
 
 ```console
-User-> code foo\!\\.txt
+$ touch foo\!\\.txt
 ```
 
 ### Instructions
 
-Create a file `"\?$*'First_file'*$?\"` that will contain `Random text inside!` and **nothing else**.
+Create a file the following files:
+
+- `firstFile` which contains `Random text inside!` and **nothing else**
+- `"medium_File!"` which contains `Random text inside!` and **nothing else**
+- `"\?$*'Hard_file'*$?\"` which contains `Random text inside!` and **nothing else**.
 
 ### Usage
 
 ```console
-User-> ls | cat -e
-"\?$*'First_file'*$?\"$
-User->
+$ ls | cat -e
+"?$*'First_file'*$?\"$
+firstFile$
+"medium_file!"$
+$
 ```
+
+### Hints
+
+- `ls`. List directory contents.
+- `touch` used to create, change and modify timestamps of a file.
+
+> You have to use Man or Google to know more about commands flags, in order to solve this exercise!
+> Google and Man will be your friends!
+
+### References
+
+- [ls](https://www.gnu.org/software/coreutils/ls).
+- [touch](https://www.gnu.org/software/coreutils/touch).
