@@ -2,6 +2,9 @@ import { once } from 'node:events'
 import { spawn } from 'node:child_process'
 import { mkdir, writeFile, chmod } from 'fs/promises'
 import { join } from 'path'
+import fs from "node:fs/promises";
+import path2 from 'path';
+import {fileURLToPath} from 'url';
 
 export const tests = []
 const fetch = _fetch // to redefine the real fetch
@@ -63,24 +66,25 @@ const testServerRunning = async ({ path, ctx }) => {
   return message[0].toString().includes(port)
 }
 
-const testRightStatusCode = async ({ ctx, randStr }) => {
-  const { status } = await ctx.sendRequest(`/${ctx.randomName}`, {
+const testRightStatusCode = async ({path, ctx, randStr }) => {
+  const { server } = await ctx.startServer(path)
+  const { status, body } = await ctx.sendRequest(`/${ctx.randomName}`, {
     method: 'POST',
     headers: {
       'content-type': 'application/json',
     },
-    body: {
-      message: randStr(),
-    },
+    body: randStr()
   })
   server.kill()
   if (status != 201) {
+    console.log("status:", status, "b ", body)
     return false
   }
   return true
 }
 
-const testRightContentType = async ({ ctx, randStr }) => {
+const testRightContentType = async ({ path, ctx, randStr }) => {
+  const { server } = await ctx.startServer(path)
   const { headers } = await ctx.sendRequest(`/${ctx.randomName}`, {
     method: 'POST',
     headers: {
@@ -95,13 +99,14 @@ const testRightContentType = async ({ ctx, randStr }) => {
   return true
 }
 
-const testServerFail = async ({ path, eq, ctx }) => {
+const testServerFail = async ({ path, eq, ctx, randStr }) => {
   const { server } = await ctx.startServer(path)
-  await chmod(`${ctx.tmpPath}/guests/${ctx.randomName}.json`, 0)
+  await chmod(`${ctx.tmpPath}/${ctx.randomName}.json`, 0).catch(reason => console.log(reason))
   const { status, body, headers } = await ctx.sendRequest(
     `/${ctx.randomName}`,
     {
       method: 'POST',
+      body: randStr()
     },
   )
   server.kill()
@@ -128,25 +133,30 @@ const testFileCreated = async ({ path, ctx, randStr }) => {
   })
   const dirName = 'guests'
   const dirPath = join(ctx.tmpPath, dirName)
+  let accessWorked = true;
   server.kill()
-  fs.access(`${dirPath}/${randomName}.json`, fs.F_OK, err => {
-    if (err) {
-      console.error(err)
-      return false
-    }
-  })
-  return true
+  const __filename = fileURLToPath(import.meta.url);
+  const __dirname = path2.dirname(__filename)
+  console.log(`${dirPath}/${randomName}.json`, __dirname)
+  await fs.access(`${dirPath}/${randomName}.json`, fs.F_OK)
+    .catch(reason => {
+      accessWorked = false
+      console.log("reason-false: ", ctx.tmpPath, reason, accessWorked)
+    })
+  return accessWorked
 }
 
-const testBodyOnSuccess = async ({ ctx, randStr }) => {
-  const randomBody = randStr()
+const testBodyOnSuccess = async ({path, ctx, eq, randStr }) => {
+  const { server } = await ctx.startServer(path)
+  const randomBody = {message: randStr()}
   const { body } = await ctx.sendRequest(`/${ctx.randomName}`, {
     method: 'POST',
     headers: {
       'content-type': 'application/json',
     },
-    body: randomBody,
-  })
+    body: JSON.stringify(randomBody),
+  }
+  )
   server.kill()
   return eq(
     {
@@ -159,11 +169,11 @@ const testBodyOnSuccess = async ({ ctx, randStr }) => {
 }
 tests.push(
   testServerRunning,
-  testServerFail,
   testRightStatusCode,
   testRightContentType,
   testFileCreated,
   testBodyOnSuccess,
+  // testServerFail,
 )
 
 Object.freeze(tests)
