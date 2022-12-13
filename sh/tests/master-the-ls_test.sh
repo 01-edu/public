@@ -14,5 +14,5 @@ challenge() {
     diff <(echo "$submitted") <(echo "$expected")
 }
 
-challenge cl-camp1/folder1
-challenge cl-camp1/folder2
+challenge master-the-ls/folder1
+challenge master-the-ls/folder2
