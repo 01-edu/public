@@ -23,15 +23,15 @@ struct/
     └── text3.txt
 ```
 
-Once it is done, use the command below to create the file `done.tar` to be submitted.
+Once it is done, use the command below to create the file `file-struct.tar` to be submitted.
 
 ```console
-$ tar -cf done.tar *
+$ tar -cf file-struct.tar *
 $ ls
-0  1  2  3  4  5  6  7  8  9  A  done.tar
+0  1  2  3  4  5  6  7  8  9  A  file-struct.tar
 ```
 
-**Only `done.tar` should be submitted.**
+**Only `file-struct.tar` should be submitted.**
 
 ### Hints
 
