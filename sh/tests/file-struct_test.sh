@@ -7,10 +7,10 @@ IFS='
 
 print_content() {
     mkdir -p uncompressed
-    tar -xpf done.tar -C uncompressed
+    tar -xpf file-struct.tar -C uncompressed
     tree uncompressed
 }
 
-submitted=$(cd student/struct && print_content)
-expected=$(cd solutions/struct && print_content)
+submitted=$(cd student && print_content)
+expected=$(cd solutions && print_content)
 diff <(echo "$submitted") <(echo "$expected")
