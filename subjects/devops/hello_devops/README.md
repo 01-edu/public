@@ -28,7 +28,7 @@ This command needs to be adapted with **your own username**.
 
 #### 2- set
 
-Once the repository is created, use you code editor to write your first shell script called `hello_devops.sh`
+Once the repository is created, use you code editor to write your first shell script called `hello-devops.sh`
 
 When executed, this script must print `Hello 01-user!`, where `01-user` is your username.
 
@@ -37,22 +37,22 @@ When executed, this script must print `Hello 01-user!`, where `01-user` is your 
 If the username is `01-user`:
 
 ```console
-$ bash hello_devops.sh
+$ bash hello-devops.sh
 Hello 01-user!
 $
 ```
 
 #### 3- go-say-hello
 
-After that the `hello_devops.sh` is executing correctly, it needs to be uploaded to the repository with the following commands:
+After that the `hello-devops.sh` is executing correctly, it needs to be uploaded to the repository with the following commands:
 
-1. `git add hello_devops.sh`
+1. `git add hello-devops.sh`
 2. `git commit -m "My very first commit"`
 3. `git push`
 
 Once these steps are applied, the file can now be submitted for grading on the platform by clicking on the "RUN INTRODUCTION TEST" button.
 
-This action will run the tests on your submitted `hello_devops.sh` file.
+This action will run the tests on your submitted `hello-devops.sh` file.
 
 ### Recommendation
 
