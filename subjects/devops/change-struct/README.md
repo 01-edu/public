@@ -34,15 +34,15 @@ new-struct/
     └── text3.txt
 ```
 
-Once it is done, use the command below to create the file `done.tar` to be submitted.
+Once it is done, use the command below to create the file `change-struct.tar` to be submitted.
 
 ```console
-$ tar -cf done.tar *
+$ tar -cf change-struct.tar *
 $ ls new-struct/
-0_to_3  4  6_to_9  A  done.tar
+0_to_3  4  6_to_9  A  change-struct.tar
 ```
 
-**Only `done.tar` should be submitted.**
+**Only `change-struct.tar` should be submitted.**
 
 ### Hints
 
