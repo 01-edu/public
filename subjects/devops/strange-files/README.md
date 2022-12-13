@@ -1,5 +1,25 @@
 ## Strange Files
 
+### Instructions
+
+Create a file the following files:
+
+- `firstFile` which contains `Random text inside!` and **nothing else**
+- `"medium_File!"` which contains `Random text inside!` and **nothing else**
+- `"\?$*'Hard_file'*$?\"` which contains `Random text inside!` and **nothing else**.
+
+### Usage
+
+```console
+$ ls | cat -e
+"?$*'First_file'*$?\"$
+firstFile$
+"medium_file!"$
+$
+```
+
+### Hints
+
 We come across files and folders name very regularly. In most of the cases file/folder names are related to the content of the file/folder and starts with numbers or letters. Alpha-Numeric file name are pretty common and very widely used, but this is not the case when we have to deal with file/folder name that has special characters in them.
 
 Example of most common file names are:
@@ -29,26 +49,6 @@ If you want to create a file named `foo!\.txt` You have to escape the characters
 ```console
 $ touch foo\!\\.txt
 ```
-
-### Instructions
-
-Create a file the following files:
-
-- `firstFile` which contains `Random text inside!` and **nothing else**
-- `"medium_File!"` which contains `Random text inside!` and **nothing else**
-- `"\?$*'Hard_file'*$?\"` which contains `Random text inside!` and **nothing else**.
-
-### Usage
-
-```console
-$ ls | cat -e
-"?$*'First_file'*$?\"$
-firstFile$
-"medium_file!"$
-$
-```
-
-### Hints
 
 - `ls`. List directory contents.
 - `touch` used to create, change and modify timestamps of a file.
