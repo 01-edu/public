@@ -42,5 +42,5 @@ jobs:
       - name: Build the DOM Docker image
         if: always()
         run: |
-          docker build . --file dom/Dockerfile --tag ghcr.io/01-edu/test-js:latest
-          docker push ghcr.io/01-edu/test-js:latest
+          docker build . --file dom/Dockerfile --tag ghcr.io/01-edu/test-dom:latest
+          docker push ghcr.io/01-edu/test-dom:latest
