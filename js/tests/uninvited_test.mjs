@@ -23,9 +23,8 @@ export const setup = async ({ randStr }) => {
           flag: 'wx',
         }),
       ),
-    ).catch(reason => {
-      console.log(reason)
-    })
+    ).catch(reason => console.log(reason))
+
     return true
   }
 
@@ -65,7 +64,7 @@ const testServerRunning = async ({ path, ctx }) => {
 
 const testRightStatusCode = async ({ path, ctx, randStr }) => {
   const { server } = await ctx.startServer(path)
-  const { status, body } = await ctx.sendRequest(`/${ctx.randomName}`, {
+  const { status } = await ctx.sendRequest(`/${ctx.randomName}`, {
     method: 'POST',
     headers: {
       'content-type': 'application/json',
@@ -73,9 +72,8 @@ const testRightStatusCode = async ({ path, ctx, randStr }) => {
     body: randStr(),
   })
   server.kill()
-  if (status != 201) {
-    return false
-  }
+
+  if (status != 201) return false
   return true
 }
 
@@ -89,9 +87,7 @@ const testRightContentType = async ({ path, ctx, randStr }) => {
     body: randStr(),
   })
   server.kill()
-  if (headers['content-type'] != 'application/json') {
-    return false
-  }
+  if (headers['content-type'] != 'application/json') return false
   return true
 }
 
