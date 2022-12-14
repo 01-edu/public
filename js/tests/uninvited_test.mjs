@@ -152,14 +152,14 @@ const testFileContent = async ({ path, ctx, randStr }) => {
   let content = ''
   await fs
     .readFile(`./${dirPath}/${randomName}.json`, 'utf8', (err, data) => {
-      console.log('data', data)
       if (err) {
         console.error(err)
-        return
+        return "error when reading file"
       }
       return data
     })
     .then(data => {
+      if (data === "error when reading file") return
       content = data
     })
   return body === content
