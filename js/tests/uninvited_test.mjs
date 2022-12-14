@@ -128,7 +128,7 @@ const testFileCreated = async ({ path, ctx, randStr }) => {
   const dirPath = join(ctx.tmpPath, dirName)
   let accessWorked = true
   server.kill()
-  await fs.access(`${dirPath}/${randomName}.json`, fs.F_OK).catch(reason => {
+  await fs.access(`${dirPath}/${randomName}.json`, fs.constants.F_OK).catch(reason => {
     accessWorked = false
     console.log(reason)
   })
