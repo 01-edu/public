@@ -1,12 +1,10 @@
-## json-researcher
+## bin-status
 
 ### Instructions
 
-Create the script `bin-status.sh` that will return the exit status of last command
+Create the script `bin-status.sh` that will return the exit status of last command.
 
-- What to use : `echo`
-
-- The output should be exactly like the example bellow but with the expected name
+- Expected output:
 
 ```console
 $ true ; ./bin-status.sh
