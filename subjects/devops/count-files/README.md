@@ -28,10 +28,12 @@ $ find . -type f -name "*.php"
 ./index.php
 ```
 
-- `wc`. Count lines, words, and bytes.
+- `wc` is a command line utility for printing newline, word and byte counts for files. It can return the number of lines in a file, the number of characters in a file and the number of words in a file. It can also be combine with pipes for general counting operations Count lines, words, and bytes.
+
+Here is an example that counts the number of lines, words and bytes:
 
 ```console
-$ cat README.md
+$ cat example.md
 this is a simple example
 with two lines
 $ wc -lwc example.md
