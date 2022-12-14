@@ -17,7 +17,6 @@ export const setup = async ({ randStr }) => {
   const randomName = randStr()
 
   const createFilesIn = ({ files, dirPath }) => {
-    
     Promise.all(
       files.map(([fileName, content]) =>
         writeFile(`${dirPath}/${fileName}`, JSON.stringify(content), {
