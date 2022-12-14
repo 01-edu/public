@@ -157,7 +157,6 @@ const testFileContent = async ({ path, ctx, randStr }) => {
         console.error(err)
         return
       }
-      content = data
       return data
     })
     .then(data => {
