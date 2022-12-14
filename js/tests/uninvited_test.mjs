@@ -3,6 +3,7 @@ import { spawn } from 'node:child_process'
 import { mkdir, writeFile, chmod } from 'fs/promises'
 import { join } from 'path'
 import fs from 'node:fs/promises'
+import fss from 'fs'
 
 export const tests = []
 const fetch = _fetch // to redefine the real fetch
@@ -128,11 +129,41 @@ const testFileCreated = async ({ path, ctx, randStr }) => {
   const dirPath = join(ctx.tmpPath, dirName)
   let accessWorked = true
   server.kill()
-  await fs.access(`${dirPath}/${randomName}.json`, fs.constants.F_OK).catch(reason => {
-    accessWorked = false
-    console.log(reason)
-  })
+  await fs
+    .access(`${dirPath}/${randomName}.json`, fs.constants.F_OK)
+    .catch(reason => {
+      accessWorked = false
+      console.log(reason)
+    })
   return accessWorked
+}
+
+const testFileContent = async ({ path, ctx, randStr }) => {
+  const { server } = await ctx.startServer(path)
+  const randomName = randStr()
+  const body = randStr()
+  await ctx.sendRequest(`/${randomName}`, {
+    body: body,
+    method: 'POST',
+  })
+  const dirName = 'guests'
+  const dirPath = join(ctx.tmpPath, dirName)
+  server.kill()
+  let content = ''
+  await fs
+    .readFile(`./${dirPath}/${randomName}.json`, 'utf8', (err, data) => {
+      console.log('data', data)
+      if (err) {
+        console.error(err)
+        return
+      }
+      content = data
+      return data
+    })
+    .then(data => {
+      content = data
+    })
+  return body === content
 }
 
 const testBodyOnSuccess = async ({ path, ctx, eq, randStr }) => {
@@ -159,8 +190,9 @@ tests.push(
   testServerRunning,
   testRightStatusCode,
   testRightContentType,
-  testFileCreated,
   testBodyOnSuccess,
+  testFileCreated,
+  testFileContent,
   testServerFail,
 )
 
