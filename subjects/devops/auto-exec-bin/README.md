@@ -1,0 +1,33 @@
+## auto-exec-bin
+
+### Instructions
+
+Create a file `auto-exec-bin.sh`, which will make a binary with the name `01exec` in `~/myBins` executable from any working directory.
+
+You can use any binary from your choice or you can use our binary: [01exec](https://assets.01-edu.org/devops-branch/01exec)
+> If our binary is not working in your environment, you can pick any binary for the tests!
+
+Expected Output:
+
+```console
+$ ls -l ~/myBins # the binary
+01exec
+$ 01exec
+error: command not found: 01exec
+$ ./auto-exec-bin.sh
+$ 01exec
+Hello 01 Scripting Pool
+$ cd /{random-path} && 01exec
+Hello 01 Scripting Pool
+$
+```
+
+### Hints
+
+`PATH` environment variable is a variable where the shell search for the binaries for the execution.
+when you put a command the shell will search for binary in `PATH` folders
+
+![auto binary exec](https://assets.01-edu.org/devops-branch/auto-exec-diagram.png)
+
+> You have to use Man or Google to know more about commands flags, in order to solve this exercise!
+> Google and Man will be your friends!
