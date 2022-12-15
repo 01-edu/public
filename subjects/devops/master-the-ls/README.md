@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Put in a file `master-the-ls`, the command line that will:
+Create a script `master-the-ls`, that will do the following:
 
 - list the files and directories of the current directory.
 - Ignore the hidden files, the "." and the "..".
