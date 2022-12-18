@@ -1,0 +1,61 @@
+## my-ls
+
+### Instructions
+
+Create the script `my-ls.sh` wich will create an alias `my-ls`.
+
+The alias `my-ls`:
+    - shows files details long listing format.
+    - do not list group information.
+    - not ignore entries starting with `.`.
+    - print the allocated size of each file, in blocks.
+    - sort by file size, largest first.
+
+Expected behavior:
+
+```console
+$ my-ls
+error: command not found: my-ls
+$ ./my-ls.sh
+$ my-ls .
+total ...
+7784 -rw-r--r--  1 <user>  3983261 Dec 17 22:02 .file1 # just an example
+3064 -rw-r--r--  1 <user>  1566444 Dec 17 22:12 file2 # just an example
+$
+```
+
+### Hints
+
+An alias is a shortcut that references a command. An alias replaces a string that invokes a command in the Linux shell with another user-defined string.
+
+`alias` command instructs the shell to replace one string with another string while executing the commands. 
+
+```console
+$ alias testcmd="echo 01school"
+$ testcmd
+01school
+$ alias
+testcmd='echo 01school'
+<...>
+$
+```
+
+`unalias` unalias removes each alias name from the current shell execution environment.
+
+```console
+$ alias
+testcmd='echo 01school'
+<...>
+$ unalias testcmd
+$ alias
+<...>
+$
+```
+
+> You have to use Man or Google to know more about commands flags, in order to solve this exercise!
+> Google and Man will be your friends!
+
+### References
+
+[alias command in linux with examples.](https://www.geeksforgeeks.org/alias-command-in-linux-with-examples/)
+[man ls.](https://man7.org/linux/man-pages/man1/ls.1.html)
