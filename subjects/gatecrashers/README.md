@@ -23,7 +23,7 @@ To test your program, you should be able to expect the following behavior once y
 Unauthorized attempt:
 
 ```shell
-curl -i -X POST localhost:5000/Ricky_Banni -H "Content-Type: application/json" -d '{"answer": "yes", "drink": "alcohol", "food": "bats"}'
+curl -i -X POST localhost:5000/Ricky_Banni -H "Content-Type: application/json" -d '{"answer": "yes", "drink": "juice", "food": "pizza"}'
 HTTP/1.1 401 Unauthorized
 Content-Type: application/json
 Date: [date]
@@ -37,7 +37,7 @@ Authorization Required%
 Authorized attempt:
 
 ```shell
-curl -i -u Rahima_Young:abracadabra -X POST localhost:5000/Ricky_Banni -H "Content-Type: application/json" -d '{"answer": "yes", "drink": "alcohol", "food": "bats"}'
+curl -i -u Rahima_Young:abracadabra -X POST localhost:5000/Ricky_Banni -H "Content-Type: application/json" -d '{"answer": "yes", "drink": "juice", "food": "pizza"}'
 HTTP/1.1 200 OK
 Content-Type: application/json
 Date: [date]
@@ -47,8 +47,8 @@ Transfer-Encoding: chunked
 
 {
   "answer": "yes",
-  "drink": "alcohol",
-  "food": "bats"
+  "drink": "juice",
+  "food": "pizza"
 }
 ```
 

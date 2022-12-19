@@ -77,8 +77,8 @@ const isServerRunningWell = async ({ path, ctx }) => {
 const testGoodRequests = async ({ path, eq, fail, ctx }) => {
   const expectedBody = {
     answer: 'yes',
-    drink: 'alcohol',
-    food: 'bats',
+    drink: 'juice',
+    food: 'pizza',
   }
   const dirName = 'guests'
   const dirPath = join(ctx.tmpPath, dirName)
@@ -110,8 +110,8 @@ const testGoodRequests = async ({ path, eq, fail, ctx }) => {
 const testUnauthorizedRequests = async ({ path, eq, ctx }) => {
   const body = {
     answer: 'yes',
-    drink: 'alcohol',
-    food: 'bats',
+    drink: 'juice',
+    food: 'pizza',
   }
 
   const { server } = await ctx.startServer(path)
