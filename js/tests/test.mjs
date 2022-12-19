@@ -5,6 +5,7 @@ import { deepStrictEqual } from 'assert'
 import { fileURLToPath } from 'url'
 import { tmpdir } from 'os'
 import http from 'http'
+import fs from 'fs'
 
 global.window = global
 global._fetch = fetch
