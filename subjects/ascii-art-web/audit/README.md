@@ -31,7 +31,7 @@ In the second line `<Hello> (World)!`
 
 ###### Does it display the right result as above?
 
-##### Try to input `"123??"` using the template/banner standard.
+##### Try to input `123??` using the template/banner standard.
 
 ```
                      ___    ___
@@ -46,7 +46,7 @@ In the second line `<Hello> (World)!`
 
 ###### Does it display the right result as above?
 
-##### Try to input `"$% "="` using the template/banner shadow.
+##### Try to input `$% "=` using the template/banner shadow.
 
 ```
                         _|  _|
@@ -61,7 +61,7 @@ _|_|_| _|    _|_|
 
 ###### Does it display the right result as above?
 
-##### Try to input `"123 T/fs#R"` using the template/banner thinkertoy.
+##### Try to input `123 T/fs#R` using the template/banner thinkertoy.
 
 ```
 
