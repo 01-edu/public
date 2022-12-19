@@ -36,6 +36,7 @@ curl -X POST localhost:5000/Ozzi_Osbourne -H "Content-Type: application/json" -d
 - [HTTP protocol](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 - [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 - [Node http package: createServer](https://nodejs.org/en/knowledge/HTTP/servers/how-to-create-a-HTTP-server/)
+- [How to read POST data](https://nodejs.org/en/knowledge/HTTP/servers/how-to-read-POST-data/)
 
 ### Provided files
 
