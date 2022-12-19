@@ -3,7 +3,6 @@ import { spawn } from 'node:child_process'
 import { mkdir, writeFile, chmod } from 'fs/promises'
 import { join } from 'path'
 import fs from 'node:fs/promises'
-import fss from 'fs'
 
 export const tests = []
 const fetch = _fetch // to redefine the real fetch
@@ -154,12 +153,12 @@ const testFileContent = async ({ path, ctx, randStr }) => {
     .readFile(`./${dirPath}/${randomName}.json`, 'utf8', (err, data) => {
       if (err) {
         console.error(err)
-        return "error when reading file"
+        return 'error when reading file'
       }
       return data
     })
     .then(data => {
-      if (data === "error when reading file") return
+      if (data === 'error when reading file') return
       content = data
     })
   return body === content
