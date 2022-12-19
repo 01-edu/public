@@ -23,10 +23,10 @@ Here below are your program/server's expected behaviors:
 To test your program, you should be able to expect the following behaviour once your program is up and running.
 
 ```shell
-curl -X POST localhost:5000/Ozzi_Osbourne -H "Content-Type: application/json" -d '{"answer": "yes", "drink": "alcohol", "food": "bats"}'
+curl -X POST localhost:5000/Ozzi_Osbourne -H "Content-Type: application/json" -d '{"answer": "yes", "drink": "dark", "food": "bats"}'
 {
   "answer": "yes",
-  "drink": "alcohol",
+  "drink": "dark",
   "food": "bats"
 }
 ```
