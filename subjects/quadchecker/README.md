@@ -6,7 +6,7 @@ This raid is based on the `quad` functions.
 
 Create a program `quadchecker` that takes a `string` as an argument and displays the name of the matching `quad` and its dimensions.
 
-- If the argument is not a `raid` the program should print `Not a Raid function`.
+- If the argument is not a `quad` the program should print `Not a quad function`.
 
 - All answers must end with a newline (`'\n'`).
 
@@ -60,14 +60,14 @@ $ ./quadE 1 2 | go run .
 $
 ```
 
-- If it's not a raid function:
+- If it's not a quad function:
 
 ```console
 $ echo 0 0 | go run .
-Not a Raid function
+Not a quad function
 $ echo -n "o--o"$'\n'"|"$'\n'"o"
 o--o
 |
 o$ echo -n "o--o"$'\n'"|"$'\n'"o" | go run .
-Not a Raid function
+Not a quad function
 ```
