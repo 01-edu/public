@@ -1,7 +1,5 @@
 #### General
 
-Knowledge-Check:
-
 ###### Is the student able to explain clearly what port means?
 
 ###### Is the student able to explain clearly what ports scanning means?
@@ -17,7 +15,7 @@ Files that must be inside your repository:
 - Your program source code.
 - a README.md file, Which clearly explains how to use the program.
 
-###### Does the required files present?
+###### Are the required files present?
 
 ##### Evaluate the student's submission
 
@@ -44,15 +42,15 @@ The student must launch his program by passing the IP address of a website as th
 5900 VNC  
 25565 Minecraft
 
-Run `tinyscanner -p 127.0.0.1 -t 80`
+##### Run `tinyscanner -p 127.0.0.1 -t 80`
 
 ###### Does port 80 show as open?
 
-Run a local server using udp protocole with the port 8080 and run `tinyscanner -p 127.0.0.1 -u 80`
+##### Run a local server using udp protocol with the port 8080 and run `tinyscanner -p 127.0.0.1 -u 80`
 
 ###### Does port 80 show as open?
 
-Run `tinyscanner --help`
+##### Run `tinyscanner --help`
 
 ```console
 $>  tinyscanner --help
