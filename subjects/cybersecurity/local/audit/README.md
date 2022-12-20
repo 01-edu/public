@@ -10,18 +10,22 @@ Files that must be inside your repository:
 
 ##### Evaluate the student's submission
 
-Knowledge-Check:
-
 ###### Is the student able to explain clearly what Privilege Escalation means?
 
-Please install 01-Local1.ova in VirtualBox and check the SHA1 if it's correct.
+##### Install 01-Local1.ova in VirtualBox
 
-- 01-Local1.ova: https://assets.01-edu.org/cybersecurity/local1/01-Local1.ova
-- SHA1: f3422f3364fd38e8183740f8f57fa951d3f6e0bf
+Get 01-Local1.ova at https://assets.01-edu.org/cybersecurity/local1/01-Local1.ova
 
-If it's already downloaded in the student machine, please check the SHA1:
-$> sha1sum 01-Local1.ova
+The SHA1 is: f3422f3364fd38e8183740f8f57fa951d3f6e0bf
+
+> If it's already downloaded in the student machine, please check the SHA1 running the following command
+
+```console
+$ sha1sum 01-Local1.ova
 f3422f3364fd38e8183740f8f57fa951d3f6e0bf 01-Local1.ova
+```
+
+###### Is the SHA1 the expected one?
 
 ##### Ask the student to get the IP address.
 
