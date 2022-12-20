@@ -40,7 +40,7 @@ EX: go run . --color=<color> <letters to be colored> "something"
 
 ###### Does it display the expected result?
 
-##### Try passing as arguments `--color=blue "RGB()"`, in order to color just the `B`.
+##### Try passing as arguments `--color=blue 'RGB()'`, in order to color just the `B`.
 
 ###### Does it display the expected result?
 
