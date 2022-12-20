@@ -1,7 +1,5 @@
 #### General
 
-Knowledge-Check:
-
 ###### Is the student able to explain clearly what polymorphic encryption means?
 
 ###### Is the student able to explain clearly how he change the signature with each execution?
@@ -13,13 +11,12 @@ Knowledge-Check:
 Files that must be inside your repository:
 
 - Your program source code.
+
 - a README.md file, Which clearly explains how to use the program.
 
 ###### Does the required files present?
 
-##### Evaluate the student's submission
-
-Launch the student's program on the OS he wants
+##### Launch the student's program on the OS he wants
 
 ###### Does the program change signature with each execution?
 
