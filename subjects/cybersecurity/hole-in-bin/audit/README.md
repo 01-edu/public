@@ -1,7 +1,5 @@
 #### General
 
-Knowledge-Check:
-
 ###### Is the student able to explain clearly what reverse engineering means?
 
 ###### Is the student able to explain clearly what is the difference between decompilation and disassembly and hex-editor?
@@ -21,7 +19,9 @@ Files that must be inside your repository:
 ##### Evaluate the student's submission
 
 Start a Windows operating system, x32 or 64 bits(INTEL or AMD).
-Run the program [hole-in-bin](../resources/hole-in-bin.exe)  
+
+Run the program [hole-in-bin](../resources/hole-in-bin.exe)
+
 Run Student Patch
 
 ###### Does the patch developed by the student circumvent the security of the program and allow the display in green color of the text: please withdraw your money?
