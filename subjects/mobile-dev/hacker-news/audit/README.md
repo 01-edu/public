@@ -1,6 +1,6 @@
 #### Functional
 
-#### In order to run and hot reload app either on emulator or device, follow the [instructions](https://docs.flutter.dev/get-started/test-drive?tab=androidstudio#run-the-app).
+> In order to run and hot reload app either on emulator or device, follow the [instructions](https://docs.flutter.dev/get-started/test-drive?tab=androidstudio#run-the-app)
 
 ###### Does app shows all fetched posts?
 
