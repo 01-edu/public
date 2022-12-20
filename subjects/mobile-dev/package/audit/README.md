@@ -4,7 +4,7 @@
 
 ###### Is there a dependency in pubspec.yaml to note package?
 
-###### Was the package created with `flutter create --template=package hello` command
+###### Was the package created with the command: _flutter create --template=package hello_
 
 ###### Do adding/deleting the notes button work appropriately?
 
