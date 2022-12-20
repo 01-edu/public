@@ -1,6 +1,6 @@
 #### Functional
 
-#### In order to run and hot reload app either on emulator or device, follow the [instructions](https://docs.flutter.dev/get-started/test-drive?tab=androidstudio#run-the-app).
+> In order to run and hot reload app either on emulator or device, follow the [instructions](https://docs.flutter.dev/get-started/test-drive?tab=androidstudio#run-the-app)
 
 ###### Does the app run without crushes?
 
@@ -16,11 +16,11 @@
 
 ###### Can you see historical data in days, weeks, and months slice?
 
-###### Ask student about pattern implementation. If they used BLoC ask them to explain the pattern, and [check](https://pub.dev/packages/flutter_bloc) whether they implemented it correctly.
+###### Ask student about pattern implementation. If they used BLoC ask them to explain the pattern, and [check](https://pub.dev/packages/flutter_bloc) whether they implemented it correctly. Is it the case?
 
-###### Ask student about pattern implementation. If they used Provider ask them to explain the pattern, and [check](https://pub.dev/packages/provider) whether they implemented it correctly.
+###### Ask student about pattern implementation. If they used Provider ask them to explain the pattern, and [check](https://pub.dev/packages/provider) whether they implemented it correctly. Is it the case?
 
-###### Ask student about pattern implementation. If they used MVC ask them to explain the pattern, and [check](https://pub.dev/packages/mvc_pattern) whether they implemented it correctly.
+###### Ask student about pattern implementation. If they used MVC ask them to explain the pattern, and [check](https://pub.dev/packages/mvc_pattern) whether they implemented it correctly. Is it the case?
 
 ###### Logout and try everything you just did with new account. Do you see similar behaviour?
 
