@@ -14,11 +14,11 @@
 
 ##### buy cat 1 at the listed price (10wei)
 
-###### The buy function functions properly
+###### The buy function works properly
 
 ##### transfer cat 1 to a secondary user
 
-###### The transfer function properly works
+###### The transfer function works properly
 
 ##### buy cat 2 at the listed price (10wei)
 
@@ -36,7 +36,7 @@
 
 ###### Can the webpage be accessed?
 
-###### Does the page display the napping cats ?
+###### Does the page display the napping cats?
 
 ###### Does the page offer a button to buy each napping cat?
 
@@ -48,7 +48,7 @@
 
 ##### Buy cat 0 using the buy button
 
-###### Does the buy function work?
+###### Does the buy function works?
 
 ###### Does the cat 0 now show the listing button?
 
