@@ -1,4 +1,4 @@
-#### Tracking Network
+## Tracking Network
 
 ###### Is there a documentation provided to launch the network?
 
@@ -10,7 +10,7 @@
 
 ###### Can you confirm that the user was created?
 
-##### create a parcel with a random address
+##### Create a parcel with a random address
 
 ###### Do you have a feedback that the parcel was created?
 
