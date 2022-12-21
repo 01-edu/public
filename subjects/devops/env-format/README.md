@@ -8,7 +8,7 @@ Create a script `env-format.sh`, which will print the environment variables that
 - All the environment variables that have a letter `H` in the name, without printing the value of those variables.
 
 ```console
-$ print env
+$ printenv
 SHELL=/bin/bash
 QT_ACCESSIBILITY=1
 NVM_RC_VERSION=
