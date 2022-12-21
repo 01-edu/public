@@ -1,6 +1,6 @@
 #### Exercise 0: Environment and libraries
 
-##### The exercise is validated is all questions of the exercise are validated
+##### The exercise is validated if all questions of the exercise are validated
 
 ##### Activate the virtual environment. If you used `conda` run `conda activate your_env`.
 
@@ -8,7 +8,7 @@
 
 ###### Does it print `Python 3.x`? x >= 8
 
-##### Does `import jupyter`, `import pandas`, `import nltk` and `import sklearn` run without any error?
+###### Do `import jupyter`, `import pandas`, `import nltk` and `import sklearn` run without any error?
 
 ---
 
@@ -16,9 +16,9 @@
 
 #### Exercise 1: Lower case
 
-##### The exercise is validated is all questions of the exercise are validated
+##### The exercise is validated if all questions of the exercise are validated
 
-##### The question 1 is validated if the output is:
+###### For question 1, is the output the following?
 
 ```
 0    this is my first nlp exercise
@@ -26,7 +26,7 @@
 Name: text, dtype: object
 ```
 
-##### The question 2 is validated if the output is:
+###### For question 2, is the output the following?
 
 ```
 0    THIS IS MY FIRST NLP EXERCISE
@@ -40,7 +40,7 @@ Name: text, dtype: object
 
 #### Exercise 2: Punctuation
 
-##### The question 1 is validated if the ouptut doesn't contain punctuation `` !"#$%&'()*+,-./:;<=>?@[]^_`{|}~ ``. Do not take into account the spaces in the output. The output should be as:
+###### For question 1, is validated if the ouptut doesn't contain punctuation `` !"#$%&'()*+,-./:;<=>?@[]^_`{|}~ ``. Is the previous statement true? Do not take into account the spaces in the output. The output should be as:
 
 ```
 Remove this from  the sentence
@@ -52,9 +52,9 @@ Remove this from  the sentence
 
 #### Exercise 3: Tokenization
 
-##### The exercise is validated is all questions of the exercise are validated
+##### The exercise is validated if all questions of the exercise are validated
 
-##### The question 1 is validated if the ouptut is:
+###### For question 1, is output the following?
 
 ```
 ['Bitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto.',
@@ -62,7 +62,7 @@ Remove this from  the sentence
 
 ```
 
-##### The question 2 is validated if the ouptut is:
+###### For question 2, is the output the following?
 
 ```
 ['Bitcoin',
@@ -110,7 +110,7 @@ Remove this from  the sentence
 
 #### Exercise 4: Stop words
 
-##### The question 1 is validated if, using NLTK, the ouptut is:
+###### For question 1, is the output the following? (using NLTK)
 
 ```
 ['The', 'goal', 'exercise', 'learn', 'remove', 'stop', 'words', 'NLTK', '.', 'Stop', 'words', 'usually', 'refers', 'common', 'words', 'language', '.']
@@ -122,7 +122,7 @@ Remove this from  the sentence
 
 #### Exercise 5: Stemming
 
-##### The question 1 is validated if, using NLTK, the output is:
+###### For question 1, is the output the following? (using NLTK)
 
 ```
 ['the', 'interview', 'interview', 'the', 'presid', 'in', 'an', 'interview']
@@ -134,7 +134,7 @@ Remove this from  the sentence
 
 #### Exercise 6: Text preprocessing
 
-##### The question 1 is validated if the output is:
+###### For question 1, is the output the following?
 
 ```
 ['01',
@@ -181,16 +181,16 @@ Remove this from  the sentence
 
 #### Exercise 7: Bag of Word representation
 
-##### The exercice is validated is all questions of the exercice are validated
+##### The exercise is validated if all questions of the exercise are validated
 
-##### The question 1 is validated if the output of the CountVectorizer is
+###### For question 1, is the output of the CountVectorizer the following?
 
 ```
 <6588x500 sparse matrix of type '<class 'numpy.int64'>'
 	with 79709 stored elements in Compressed Sparse Row format>
 ```
 
-##### The question 2 is validated if the output of `print(df.iloc[:3,400:403].to_markdown())` is:
+###### For question 2, is the output of `print(df.iloc[:3,400:403].to_markdown())` the following?
 
     |    |   talk |   team |   tell |
     |---:|-------:|-------:|-------:|
@@ -198,7 +198,7 @@ Remove this from  the sentence
     |  1 |      0 |      0 |      0 |
     |  2 |      0 |      0 |      0 |
 
-##### The question 3 is validated if the shape of the wordcount DataFrame `(6588, 501)` is and if the output of `print(df.iloc[300:304,499:501].to_markdown())` is:
+###### For question 3, is the shape of the wordcount DataFrame `(6588, 501)` and the output of `print(df.iloc[300:304,499:501].to_markdown())` the following?
 
     |     |   youtube |   label |
     |----:|----------:|--------:|
