@@ -1,10 +1,10 @@
-# Decentralised Finance
+# Decentralized Finance
 
 _I accidentally killed it - devops199_
 
-It is time for us to advance beyond basic contracts for integrate with actual DeFi smart contrat. For this we will need to use current standards and implementations.
+It is time for us to advance beyond basic contracts for integrate with actual DeFi smart contract. For this we will need to use current standards and implementations.
 
-First, we will create a simple stablecoin, following the ERC20 standart and an oracle. We will then create a decentralised exchange that will allow us to exchange our stablecoin. Finally, we will create the tests for this project.
+First, we will create a simple stablecoin, following the ERC20 standard and an oracle. We will then create a decentralized exchange that will allow us to exchange our stablecoin. Finally, we will create the tests for this project.
 
 ### **Content**
 
@@ -22,7 +22,7 @@ First, we will create a simple stablecoin, following the ERC20 standart and an o
 
 # Exercise 1: Stablecoin
 
-The purpose of this exercise is to create a fully collateralised stablecoin. We will use an oracle smart contract to get the current value of any volatile token
+The purpose of this exercise is to create a fully collateralized stablecoin. We will use an oracle smart contract to get the current value of any volatile token.
 
 ### Instructions
 
