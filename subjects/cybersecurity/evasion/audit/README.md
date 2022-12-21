@@ -34,7 +34,7 @@ Compare the hash with a checker, before and after binary encryption
 
 #### Bonus
 
-Add mal-track.exe (</res/mal-track(Fynloski%20sample%2C%20ON%20VM%20ONLY).zip>) as an argument to the student project without running it.
+Add [mal-track.exe](</res/mal-track(Fynloski%20sample%2C%20ON%20VM%20ONLY).zip>) as an argument to the student project without running it.
 
 > It is a program that is currently detected by 61/68 antivirus.
 > https://www.virustotal.com/gui/file/a164abbb6778e1378af208b4a3d4833c2b226c68452d2151fb14e2e01a578fdd?nocache=1
