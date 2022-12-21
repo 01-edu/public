@@ -8,7 +8,7 @@
 
 ###### Does it print `Python 3.x`? x >= 8
 
-##### Does `import jupyter`, `import numpy`, `import pandas` and `import keras` run without any error?
+###### Do `import jupyter`, `import numpy`, `import pandas` and `import keras` run without any error?
 
 ---
 
@@ -16,7 +16,7 @@
 
 #### Exercise 1: Regression - Optimize
 
-##### The question 1 is validated if the chunk of code is:
+###### For question 1, is the chunk of code like this?
 
 ```
 model.compile(
@@ -37,9 +37,9 @@ https://keras.io/api/metrics/regression_metrics/
 
 #### Exercise 2: Regression example
 
-##### The exercice is validated is all questions of the exercice are validated
+##### The exercise is validated if all questions of the exercise are validated
 
-##### The question 1 is validated if the input DataFrames are:
+###### For question 1, are these the input DataFrames?
 
 X_train_scaled shape is (313, 5) and the first 5 rows are:
 
@@ -81,7 +81,7 @@ The test target is:
 | 318 | 29.8 |
 | 319 | 31.3 |
 
-##### The question 2 is validated if the mean absolute error on the test set is smaller than 10. Here is an architecture that works:
+###### For question 2, is the mean absolute error on the test set smaller than 10? Here is an architecture that works:
 
 ```
 # create model
@@ -104,7 +104,7 @@ _Hint_: To get the score on the test set, `evaluate` could have been used: `mode
 
 #### Exercise 3: Multi classification - Softmax
 
-##### The question 1 is validated if the code that creates the neural network is:
+###### For question 1, is the code that creates the neural network the following?
 
 ```
 model = keras.Sequential()
@@ -119,7 +119,7 @@ model.add(Dense(5, activation= 'softmax'))
 
 #### Exercise 4: Multi classification - Optimize
 
-##### The question 1 is validated if the chunk of code is:
+###### For question 1, is the chunk of code the following?
 
 ```
 model.compile(loss='categorical_crossentropy',
@@ -133,7 +133,7 @@ model.compile(loss='categorical_crossentropy',
 
 #### Exercise 4: Multi classification - Optimize
 
-##### The question 1 is validated if the chunk of code is:
+###### For question 1, is the chunk of code the following?
 
 ```
 model.compile(loss='categorical_crossentropy',
@@ -147,9 +147,9 @@ model.compile(loss='categorical_crossentropy',
 
 #### Exercise 5: Multi classification example
 
-##### The exercice is validated is all questions of the exercice are validated
+##### The exercise is validated if all questions of the exercise are validated
 
-##### The question 1 is validated if the output of the first ten values of the train labels are:
+###### For question 1, is the output of the first ten values of the train labels the following?
 
 ```
 array([[0, 1, 0],
@@ -164,7 +164,7 @@ array([[0, 1, 0],
        [0, 0, 1]])
 ```
 
-##### The question 2 is validated if the accuracy on the test set is bigger than 90%. To evaluate the accuracy on the test set you can use: `model.evaluate(X_test_sc, y_test_multi_class)`.
+###### For question 2, is the accuracy on the test set bigger than 90%? To evaluate the accuracy on the test set you can use: `model.evaluate(X_test_sc, y_test_multi_class)`.
 
 Here is an implementation that gives 96% accuracy on the test set.
 
