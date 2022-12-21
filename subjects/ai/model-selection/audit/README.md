@@ -1,6 +1,6 @@
 #### Exercise 0: Environment and libraries
 
-##### The exercise is validated is all questions of the exercise are validated.
+##### The exercise is validated if all questions of the exercise are validated.
 
 ##### Activate the virtual environment. If you used `conda` run `conda activate your_env`.
 
@@ -8,14 +8,15 @@
 
 ###### Does it print `Python 3.x`? x >= 8
 
-##### Does `import jupyter`, `import numpy`, `import pandas`, `import matplotlib` and `import sklearn` run without any error?
+###### Do `import jupyter`, `import numpy`, `import pandas`, `import matplotlib` and `import sklearn` run without any error?
 
 ---
+
 ---
 
 #### Exercise 1: K-Fold
 
-##### The question 1 is validated if the output of the 5-fold cross validation is:
+###### For question 1, is the output of the 5-fold cross validation the following?
 
     ```console
     Fold:  1
@@ -35,11 +36,12 @@
     ```
 
 ---
+
 ---
 
 #### Exercise 2: Cross validation (k-fold)
 
-##### The question 1 is validated if the output is:
+###### For question 1, is the output the following?
 
 ```console
 Scores on validation sets:
@@ -57,13 +59,14 @@ Standard deviation of scores on validation sets:
 The model is consistent across folds: it is stable. That's a first sign that the model is not over-fitted. The average R2 is 60% that's a good start ! To be improved...
 
 ---
+
 ---
 
 #### Exercise 3: GridsearchCV
 
 ##### The exercise is validated is all questions of the exercise are validated
 
-##### The question 1 is validated if the code that runs the grid search is similar to:
+###### For question 1, is the code that runs the grid search similar to the following?
 
 ```python
 parameters = {'n_estimators':[10, 50, 75],
@@ -81,7 +84,7 @@ gridsearch.fit(X_train, y_train)
 
 The answers that uses another list of parameters are accepted too !
 
-##### The question 2 is validated if these attributes were used:
+###### For question 2, whe these attributes used?
 
 ```python
 print(gridsearch.best_score_)
@@ -95,14 +98,15 @@ The best models params are `{'max_depth': 10, 'n_estimators': 75}`.
 
 Note that if the parameters used are different, the results should be different.
 
-##### The question 3 is validated if the fitted estimator was used to compute the score on the test set: `gridsearch.score(X_test, y_test)`. The MSE score is ~0.27. The score I got on the test set is close to the score I got on the validation sets. It means the models is not over fitted.
+###### For question 3, was the fitted estimator used to compute the score on the test set: `gridsearch.score(X_test, y_test)`? The MSE score is ~0.27. The score I got on the test set is close to the score I got on the validation sets. It means the models is not over fitted.
 
 ---
+
 ---
 
 #### Exercise 4: Validation curve and Learning curve
 
-##### The question 1 is validated if the outputted plot looks like the plot below. The two important points to check are: The training score has to converge towards `1` and the cross-validation score reaches a plateau around `0.9` from `max_depth = 10`
+###### For question 1, does the outputted plot look like the plot below? The two important points to check are: The training score has to converge towards `1` and the cross-validation score reaches a plateau around `0.9` from `max_depth = 10`
 
 ![alt text][logo_ex5q1]
 
@@ -124,7 +128,7 @@ train_scores, test_scores = validation_curve(clf,
                                             n_jobs=-1)
 ```
 
-##### The question 2 is validated if the outputted plots looks like:
+###### For question 2, do the outputted plots look like the following?
 
 ![alt text][logo_ex5q2]
 
