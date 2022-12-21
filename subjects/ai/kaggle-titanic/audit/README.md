@@ -21,31 +21,31 @@ project
 
 ```
 
-###### Does the structure of the project is as below ?
+###### Does the structure of the project look like above?
 
-###### Does the readme file give an introduction of the project, show the username, describe the feature engineering and show the best score the on the leaderboard ?
+###### Does the readme file give an introduction of the project, show the username, describe the feature engineering and show the best score on the leaderboard?
 
-###### Does the environment contain all libraries used and their versions that are necessary to run the code ?
+###### Does the environment contain all libraries used and their versions that are necessary to run the code?
 
-##### Feature engineering
+#### Feature engineering
 
-###### Does the notebook can be executed without any arror ?
+###### Can the notebook be executed without any error?
 
-###### Does the notebook explain the feature engineering that contributed to improve the accuracy ?
+###### Does the notebook explain the feature engineering that contributed to improve the accuracy?
 
-##### Scripts
+#### Scripts
 
-###### Can you train the best model on the train data with feature engineering without any error ?
+###### Can you train the best model on the train data with feature engineering without any error?
 
-###### Can you predict on the test set using the best model without any error ?
+###### Can you predict on the test set using the best model without any error?
 
-###### Is the score you get **on the test set** with the best model is close to what is expected ?
+###### Is the score you get **on the test set** with the best model close to what is expected?
 
-##### Final score
+#### Final score
 
-###### Is the accuracy associated with the username in `username.txt` is higher than 79% ? The best submission score can be accessed from the user profile.
+###### Is the accuracy associated with the username in `username.txt` higher than 79%? The best submission score can be accessed from the user profile.
 
-##### Examples
+#### Examples
 
 Here are two very good submissions explained and detailed:
 
