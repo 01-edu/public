@@ -14,7 +14,7 @@ Files that must be inside your repository:
 
 ###### Are the required files present?
 
-##### Deploy the web platform (../resources/webhack.zip) locally
+##### Deploy the [web platform](../resources/webhack.zip) locally
 
 ###### Does the student have the ability to exploit 3 vulnerabilities?
 
