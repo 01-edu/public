@@ -1,4 +1,4 @@
-## Trading Platform Audit
+## Financial Instruments Audit
 
 #### Read the documentation
 ##### Does the README file contain or redirect to the instructions to launch the project?
