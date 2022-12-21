@@ -18,9 +18,9 @@ Files that must be inside your repository:
 
 Create a Windows virtual machine
 
-Add mal-track.exe (<../resources/mal-track(Fynloski%20sample%2C%20ON%20VM%20ONLY).zip>) to anti-virus exceptions
+Add [mal-track.exe](<../resources/mal-track(Fynloski%20sample%2C%20ON%20VM%20ONLY).zip>) to anti-virus exceptions
 
-##### Launch the mal-track.exe program
+Launch the mal-track.exe program
 
 ###### Does it exist in the task manager?
 
