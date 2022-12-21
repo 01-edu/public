@@ -1,14 +1,14 @@
 #### Exercise 0: Environment and libraries
 
-##### The exercice is validated is all questions of the exercice are validated.
+##### The exercise is validated is all questions of the exercise are validated.
 
 ##### Activate the virtual environment. If you used `conda` run `conda activate your_env`
 
 ##### Run `python --version`
 
-###### Does it print `Python 3.x`? x >= 8
+###### Does it print `Python 3.x`? x >= 8?
 
-###### Does `import jupyter`, `import numpy`, `import pandas`, `import matplotlib` and `import sklearn` run without any error ?
+###### Does `import jupyter`, `import numpy`, `import pandas`, `import matplotlib` and `import sklearn` run without any error?
 
 ---
 
@@ -16,11 +16,11 @@
 
 #### Exercise 1: Logistic regression with Scikit-learn
 
-##### The question 1 is validated if the predicted class is `0`.
+###### Is the predicted class for question 1 `0`?
 
-##### The question 2 is validated if the predicted probabilities are `[0.61450526 0.38549474]`
+###### Are the predicted probabilities for question 2 `[0.61450526 0.38549474]`?
 
-##### The question 3 is validated if the output is:
+###### Is the output for question 3 like this?
 
 ```console
 Coefficient:
@@ -31,13 +31,14 @@ Score:
  0.7142857142857143
 ```
 
+
 ---
 
 ---
 
 #### Exercise 2: Sigmoid
 
-##### The question 1 is validated if the plot looks like this:
+###### Does the plot for question 1 look like this?
 
 ![alt text][ex2q1]
 
@@ -49,38 +50,38 @@ Score:
 
 #### Exercise 3: Decision boundary
 
-##### The exercice is validated is all questions of the exercice are validated
+##### The exercise is validated is all questions of the exercise are validated
 
-##### The question 1 is validated if the outputted plot looks like this:
+###### Does the outputted plot for question 1 look like this?
 
 ![alt text][ex3q1]
 
 [ex3q1]: ../w2_day2_ex3_q1.png "Scatter plot"
 
-##### The question 2 is validated if the coefficient and the intercept of the Logistic Regression are:
+###### Are the coefficient and the intercept of the Logistic Regression for question 2 these?
 
 ```console
 Intercept:  [-0.98385574]
 Coefficient:  [[1.18866075]]
 ```
 
-##### The question 3 is validated if the plot looks like this:
+###### Does the plot for question 3 look like this?
 
 ![alt text][ex3q2]
 
 [ex3q2]: ../w2_day2_ex3_q3.png "Scatter plot"
 
-##### The question 4 is validated if `predict_probability` outputs the same probabilities as `predict_proba`. Note that the values have to match one of the class probabilities, not both. To do so, compare the output with: `clf.predict_proba(X)[:,1]`. The shape of the arrays is not important.
+###### For question 4, does `predict_probability` output the same probabilities as `predict_proba`? Note that the values have to match one of the class probabilities, not both. To do so, compare the output with: `clf.predict_proba(X)[:,1]`. The shape of the arrays is not important.
 
-##### The question 5 is validated if `predict_class` outputs the same classes as `cfl.predict(X)`. The shape of the arrays is not important.
+###### Does `predict_class` output the same classes as `cfl.predict(X)` for  question 5? The shape of the arrays is not important.
 
-##### The question 6 is validated if the plot looks like the plot below. As mentioned, it is not required to shift the class prediction to make the plot easier to understand.
+######  Does the plot for question 6 look like the plot below? As mentioned, it is not required to shift the class prediction to make the plot easier to understand.
 
 ![alt text][ex3q6]
 
 [ex3q6]: ../w2_day2_ex3_q5.png "Scatter plot + Logistic regression + predictions"
 
-##### The question 7 is validated if the plot looks like this:
+###### Does the plot look like this for question 7?
 
 ![alt text][ex3q7]
 
@@ -92,9 +93,9 @@ Coefficient:  [[1.18866075]]
 
 #### Exercise 4: Train test split
 
-##### The exercise is validated is all questions of the exercise are validated
+##### The exercise is validated if all questions of the exercise are validated
 
-##### The question 1 is validated if X_train, y_train, X_test, y_test match the output below. The proportion of class `1` is **0.125** in the train set and **1.** in the test set.
+###### Do X_train, y_train, X_test, y_test match the output below for question 1? The proportion of class `1` is **0.125** in the train set and **1.** in the test set.
 
 ```console
 X_train:
@@ -121,7 +122,7 @@ y_test:
  [1. 1.]
 ```
 
-##### The question 2 is validated if the proportion of class `1` is **0.3** for both sets.
+###### Is the proportion of class `1` **0.3** for both sets in question 2?
 
 ---
 
@@ -129,16 +130,16 @@ y_test:
 
 #### Exercise 5: Breast Cancer prediction
 
-##### The exercice is validated is all questions of the exercice are validated
+###### The exercise is validated is all questions of the exercise are validated
 
-##### The question 1 is validated if the proportion of class `Benign` is 0.6552217453505007. It means that if you always predict `Benign` your accuracy would be 66%.
+###### Is the proportion of class `Benign` 0.6552217453505007 for question 1? It means that if you always predict `Benign` your accuracy would be 66%.
 
-##### The question 2 is validated if the proportion of one of the classes is the approximately the same on the train and test set: ~0.65. In my case:
+###### Is the proportion of one of the classes approximately the same on the train and test set: ~0.65 for question 2? In my case:
 
 - test: 0.6571428571428571
 - train: 0.6547406082289803
 
-##### The question 3 is validated if the output is:
+###### Is this the output for question 3?
 
 ```console
 # Train
@@ -171,7 +172,7 @@ For some reasons, you may have a different data splitting as mine. The requireme
 
 If the score is 1, congratulate you peer, he's just leaked his first target. The target should be dropped from the X_train or X_test ;) !
 
-##### The question 4 is validated if the confusion matrix on the train set is similar to:
+###### Is the confusion matrix on the train set similar to this in question 4?
 
 ```console
 array([[357,   9],
@@ -191,11 +192,12 @@ As said, for some reasons, the results may be slightly different from mine becau
 
 ---
 
+#### Bonus
 #### Exercise 6: Multi-class (Optional)
 
-##### The exercice is validated is all questions of the exercice are validated
+##### The exercise is validated is all questions of the exercise are validated
 
-##### The question 1 is validated if each classifier has as input a binary data as below:
+###### Does each classifier have as input a binary data as below for question 1?
 
 ```python
 def train(X_train, y_train):
@@ -210,7 +212,7 @@ def train(X_train, y_train):
        return clf, clf1, clf2
 ```
 
-##### The question 2 is validated if the predicted classes on the test set are:
+###### Are this the predicted classes on the test set for question 2?
 
 ```console
 array([0, 0, 2, 1, 2, 0, 2, 1, 1, 1, 0, 1, 2, 0, 1, 1, 0, 0, 2, 2, 0, 0,
