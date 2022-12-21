@@ -1,6 +1,6 @@
 #### Exercise 0: Environment and libraries
 
-##### The exercise is validated is all questions of the exercise are validated.
+##### The exercise is all questions of the exercise are validated.
 
 ##### Activate the virtual environment. If you used `conda` run `conda activate your_env`.
 
@@ -16,9 +16,9 @@
 
 #### Exercise 1: Embedding 1
 
-##### The question 1 is validated if the embedding's shape is `(96,)`
+###### For question 1, is the embedding's shape `(96,)`?
 
-##### The question 1 is validated if the 20 first values of the vector sum to `2.9790137708187103`
+###### For question 2, do the 20 first values of the vector sum to `2.9790137708187103`?
 
 ---
 
@@ -26,7 +26,7 @@
 
 #### Exercise 2: Tokenization
 
-##### The question 1 is validated if the tokens printed are:
+###### For question 1, are the tokens printed like the following?
 
     ```
     Tokenize
@@ -46,9 +46,9 @@
 
 #### Exercise 3: Embeddings 2
 
-##### The exercice is validated is all questions of the exercice are validated
+##### The exercise is validated if all questions of the exercise are validated
 
-##### The question 1 is validated if the embeddings of each word has a shape of `(300,)` and if the first 20 values of the embedding of laptop are:
+###### For question 1, have the embeddings of each word a shape of `(300,)` and are the first 20 values of the embedding of laptop the following?
 
 ```
 array([-0.37639 , -0.075521,  0.4908  ,  0.19863 , -0.11088 , -0.076145,
@@ -58,7 +58,7 @@ array([-0.37639 , -0.075521,  0.4908  ,  0.19863 , -0.11088 , -0.076145,
 
 ```
 
-##### The question 2 is validated if the output is
+###### For question 2, is the output the following?
 
 ![alt text][logo]
 
@@ -70,7 +70,7 @@ array([-0.37639 , -0.075521,  0.4908  ,  0.19863 , -0.11088 , -0.076145,
 
 #### Exercise 4: Sentences' similarity
 
-##### The question 1 is validated if the similarities between the sentences are:
+###### For question 1, are the similarities between the sentences the following?
 
 ```
 sentence_1 <=> sentence 2 : 0.7073220863266589
@@ -84,9 +84,9 @@ sentence_2 <=> sentence 3: 0.3336274235605957
 
 #### Exercise 5: NER
 
-##### The exercice is validated is all questions of the exercice are validated
+##### The exercise is validated if all questions of the exercise are validated
 
-##### The question 1 is validated if the ouptut of the NER is
+###### For question 1, is the ouptut of the NER the following?
 
     ```
     Apple Inc. ORG
@@ -114,7 +114,7 @@ sentence_2 <=> sentence 3: 0.3336274235605957
     Apple II ORG
     ```
 
-##### The question 2 is validated if the output shows that the first occurence of apple is not a named entity. In my case here is what the NER returns:
+###### For question 2, does the output show that the first occurrence of apple is not a named entity? In my case here is what the NER returns:
 
     ```
     Paul 1 5 PERSON
@@ -128,7 +128,7 @@ sentence_2 <=> sentence 3: 0.3336274235605957
 
 #### Exercise 6: Part-of-speech tags
 
-##### The question 1 is validated if the sentences outputed are:
+###### For question 1, are the sentences outputed the following?
 
 ```
 INFO:  Bezos PROPN NNP
