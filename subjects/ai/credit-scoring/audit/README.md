@@ -56,12 +56,12 @@ project
 
 ###### Does `predict.py` run without any error and returns the following?
 
-    ```prompt
+```prompt
     python predict.py
 
     AUC on test set: 0.76
 
-    ```
+```
 
 This [article](https://medium.com/thecyphy/home-credit-default-risk-part-2-84b58c1ab9d5) gives a complete example of a good modelling approach.
 
