@@ -1,4 +1,4 @@
-## Benchmarking tool audit
+## Node Dashboard audit
 
 #### Read the documentation
 ##### Does the README file contains the instructions to launch the project?

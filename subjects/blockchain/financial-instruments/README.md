@@ -4,7 +4,7 @@ _"Computer science education cannot make anybody an expert programmer any more t
 
 One of the key elements of blockchains' value proposition is providing the technology stack for the “internet of value”. For this, a combination with existing financial instruments is necessary. Several startups and experiments have been developed with this objective.
 
-In that context, we will build a trading platform. First, we will represent a stablecoin, shares and bonds on a private blockchain network. Then a marketplace website will allow users to list, buy and sell assets.
+In that context, we will build a financial instruments platform. First, we will represent a stablecoin, shares and bonds on a private blockchain network. Then a marketplace website will allow users to list, buy and sell assets.
 
 In this project, you are free to use the blockchain, technologies, and tools that you want. However, the project must offer complete documentation. 
 
