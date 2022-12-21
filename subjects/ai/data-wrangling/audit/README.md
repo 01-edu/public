@@ -1,6 +1,6 @@
 #### Exercise 0: Environment and libraries
 
-##### The exercise is validated is all questions of the exercise are validated.
+##### The exercise is validated if all questions of the exercise are validated.
 
 ##### Activate the virtual environment. If you used `conda` run `conda activate your_env`.
 
@@ -8,7 +8,7 @@
 
 ###### Does it print `Python 3.x`? x >= 8
 
-##### Does `import jupyter`, `import numpy` and `import pandas` run without any error?
+###### Does `import jupyter`, `import numpy` and `import pandas` run without any error?
 
 ---
 
@@ -16,7 +16,7 @@
 
 #### Exercise 1: Concatenate
 
-##### This question is validated if the outputted DataFrame is:
+###### Is the outputted DataFrame as below for question 1?
 
     |    | letter   |   number |
     |---:|:---------|---------:|
@@ -31,16 +31,16 @@
 
 #### Exercise 2: Merge
 
-##### The exercise is validated is all questions of the exercise are validated.
+##### The exercise is validated if all questions of the exercise are validated.
 
-##### The question 1 is validated if the output is:
+###### Does the output for question 1 look as below?
 
     |    |   id | Feature1_x   | Feature2_x   | Feature1_y   | Feature2_y   |
     |---:|-----:|:-------------|:-------------|:-------------|:-------------|
     |  0 |    1 | A            | B            | K            | L            |
     |  1 |    2 | C            | D            | M            | N            |
 
-##### The question 2 is validated if the output is:
+###### Does the output for question 2 look as below?
 
     |    |   id | Feature1_df1   | Feature2_df1   | Feature1_df2   | Feature2_df2   |
     |---:|-----:|:---------------|:---------------|:---------------|:---------------|
@@ -52,7 +52,7 @@
     |  5 |    6 | nan            | nan            | O              | P              |
     |  6 |    7 | nan            | nan            | Q              | R              |
     |  7 |    8 | nan            | nan            | S              | T              |
-
+ 
     Note: Check that the suffixes are set using the suffix parameters rather than manually changing the columns' name.
 
 ---
@@ -61,9 +61,9 @@
 
 #### Exercise 3: Merge MultiIndex
 
-##### The exercice is validated is all questions of the exercice are validated.
+##### The exercise is validated if all questions of the exercise are validated.
 
-##### The question 1 is validated if the outputted DataFrame's shape is `(1305, 5)` and if `merged.head()` returns a table as below. One of the answers that returns the correct DataFrame is `market_data.merge(alternative_data, how='left', left_index=True, right_index=True)`
+###### Is the outputted DataFrame's shape `(1305, 5)` and `merged.head()` returns a table as below for question 1? One of the answers that returns the correct DataFrame is `market_data.merge(alternative_data, how='left', left_index=True, right_index=True)`
 
 |                                                      |      Open |    Close | Close_Adjusted |     Twitter |    Reddit |
 | :--------------------------------------------------- | --------: | -------: | -------------: | ----------: | --------: |
@@ -73,7 +73,7 @@
 | (Timestamp('2021-01-01 00:00:00', freq='B'), 'AMZN') |   1.06324 | 0.841241 |      -0.799481 |   -0.805677 |  0.511769 |
 | (Timestamp('2021-01-01 00:00:00', freq='B'), 'DAI')  | -0.603453 | -2.06141 |      -0.969064 |     1.49817 |  0.730055 |
 
-##### The question 2 is validated if the numbers that are missing in the DataFrame are equal to 0 and if `filled_df.sum().sum() == merged_df.sum().sum()` gives: `True`
+###### For question 2, are the numbers that are missing in the DataFrame equal to 0 and `filled_df.sum().sum() == merged_df.sum().sum()` gives: `True`?
 
 ---
 
@@ -83,7 +83,7 @@
 
 ##### The exercise is validated is all questions of the exercise are validated and if the for loop hasn't been used. The goal is to use `groupby` and `apply`.
 
-##### The question 1 is validated if the output is:
+###### Is the output for question 1 the following?
 
 ```python
         df = pd.DataFrame(range(1,11), columns=['sequence'])
@@ -103,7 +103,7 @@
     |  8 |        8.2 |
     |  9 |        8.2 |
 
-##### The question 2 is validated if the output is a Pandas Series or DataFrame with the first 11 rows equal to the output below. The code below give a solution.
+###### Is the output for question 2 a Pandas Series or DataFrame with the first 11 rows equal to the output below? The code below gives a solution.
 
     |    |   sequence |
     |---:|-----------:|
@@ -143,7 +143,7 @@
 
 #### Exercise 5: Groupby Agg
 
-##### The question is validated if the output is as below. The columns don't have to be MultiIndex. A solution could be `df.groupby('product').agg({'value':['min','max','mean']})`
+###### Is the output for question 1 as below? The columns don't have to be MultiIndex. A solution could be `df.groupby('product').agg({'value':['min','max','mean']})`
 
 | product      | ('value', 'min') | ('value', 'max') | ('value', 'mean') |
 | :----------- | ---------------: | ---------------: | ----------------: |
@@ -157,7 +157,7 @@
 
 #### Exercise 6: Unstack
 
-##### The question 1 is validated if the output is similar (as the values are generated randomly, it's obvious the audit doesn't require to match the values below) to what `unstacked_df.head()`returns:
+###### Is the output similar (as the values are generated randomly, it's obvious the audit doesn't require to match the values below) to what `unstacked_df.head()`returns for question 1?
 
     | Date                |   ('Prediction', 'AAPL') |   ('Prediction', 'AMZN') |   ('Prediction', 'DAI') |   ('Prediction', 'FB') |   ('Prediction', 'GE') |
     |:--------------------|-------------------------:|-------------------------:|------------------------:|-----------------------:|-----------------------:|
@@ -165,4 +165,4 @@
     | 2021-01-04 00:00:00 |                -0.560953 |                 0.503199 |               -0.79517  |             -3.23136   |                1.50271 |
     | 2021-01-05 00:00:00 |                 0.211489 |                 1.84867  |                0.287906 |             -1.81119   |                1.20321 |
 
-##### The question 2 is validated if the answer is: `unstacked.plot(title = 'Stocks 2021')`. The title can be anything else.
+###### Is the answer for question 2: `unstacked.plot(title = 'Stocks 2021')`? The title can be anything else.
