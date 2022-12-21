@@ -1,11 +1,10 @@
-# Forest Cover Type Prediction
+#### Forest Cover Type Prediction
 
 The goal of this project is to use cartographic variables to classify forest categories. You will have to analyse the data, create features and to train a machine learning model on the cartographic data to make it as accurate as possible.
 
-### Preliminary
+#### Preliminary
 
-###### Does the structure of the project is as below ?
-
+###### Is the structure of the project as below?
 
 The expected structure of the project is:
 
@@ -35,22 +34,13 @@ project
 
 ```
 
-###### Does the readme file contain a description of the project, explain how to run the code from an empty environment, give a summary of the implementation of each python file, especially details on the feature engineering which is a key step ?
+###### Does the readme file contain a description of the project, explain how to run the code from an empty environment, give a summary of the implementation of each python file, especially details on the feature engineering which is a key step?
 
+###### Does the environment contain all libraries used and their versions that are necessary to run the code?
 
-###### Does the environment contain all libraries used and their versions that are necessary to run the code ?
+#### Data splitting
 
-
-
-### 1. Preprocessing and features engineering:
-
-
-
-## 2. Model selection and predict
-
-### Data splitting
-
-###### Does data splitting (cross-validation) structure as follow ?
+###### Does data splitting (cross-validation) present a structure as the following?
 
 ```
 DATA
@@ -71,35 +61,39 @@ DATA
 ```
 
 ##### The train set (0) id divised in a train set (1) and test set (1). The ratio is less than 33%.
+
 ##### The cross validation splits the train set (1) is at least 5 folds. If the cross validation is stratified that's a good point but it is not a requirement.
 
-### Gridsearch
+#### Gridsearch
 
-##### It contains at least these 5 different models: Gradient Boosting, KNN, Random Forest, SVM, Logistic Regression.
+###### Does the gridsearch contain at least these 5 different models: Gradient Boosting, KNN, Random Forest, SVM, Logistic Regression?
 
 There are many options:
+
 - 5 grid searches on 1 model
 - 1 grid search on 5 models
 - 1 grid search on a pipeline that contains the preprocessing
 - 5 grid searches on a pipeline that contains the preprocessing
 
-### Training
+#### Training
 
-###### Is the **target is removed from the X** matrix ?
+###### Is the `target is removed from the X` matrix presented?
 
-### Results
+#### Results
 
-##### Run predict.py on the test set, check that: Test (last day) accuracy > **0.65**.
+###### Run predict.py on the test set, is this comparison true? Test (last day) accuracy > **0.65**.
 
-##### Train accuracy score < **0.98**.
+###### Is the train accuracy score < **0.98**?
+
 It can be checked on the learning curve. If you are not sure, load the model, load the training set (0), score on the training set (0).
 
-##### The confusion matrix is represented as a DataFrame. Example:
+###### Is the confusion matrix is represented as a DataFrame? Example:
+
 ![alt text][confusion_matrix]
 
 [confusion_matrix]: ../images/w2_weekend_confusion_matrix.png "Confusion matrix "
 
-##### The learning curve for the best model is plotted. Example:
+###### Is the learning curve for the best model plotted? Example:
 
 ![alt text][logo_learning_curve]
 
