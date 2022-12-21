@@ -34,27 +34,27 @@ project
 │   │   preprocess.py
 ```
 
-###### Does the structure of the project is as below ?
+###### Is the structure of the project as above?
 
-###### Does the readme file introduce the project, summurize how to run the code and show the username ?
+###### Does the readme file introduce the project, summarize how to run the code and show the username?
 
-###### Does the environment contain all libraries used and their versions that are necessary to run the code ?
+###### Does the environment contain all libraries used and the versions that are necessary to run the code?
 
-###### Does the `EDA.ipynb` explain in details the exploratory data analysis ?
+###### Does the `EDA.ipynb` explain in details the exploratory data analysis?
 
-## Machine learning model
+#### Machine learning model
 
-###### Is the model trained only the training set ?
+###### Is the model trained only the training set?
 
-###### Is the AUC on the test set is higher than 75% ?
+###### Is the AUC on the test set higher than 75%?
 
-###### Does the model learning curves prove that the model is not overfitting ?
+###### Does the model learning curves prove that the model is not overfitting?
 
-###### Has the training been stopped early enough to avoid the overfitting ?
+###### Has the training been stopped early enough to avoid the overfitting?
 
-###### Does the text document `model_report.txt` describe the methodology used to train the machine learning model ?
+###### Does the text document `model_report.txt` describe the methodology used to train the machine learning model?
 
-###### Does `predict.py` run without any error and returns the following ?
+###### Does `predict.py` run without any error and returns the following?
 
     ```prompt
     python predict.py
@@ -63,25 +63,25 @@ project
 
     ```
 
-This [article](https://medium.com/thecyphy/home-credit-default-risk-part-2-84b58c1ab9d5) gives a complete example of a good modelling approach:
+This [article](https://medium.com/thecyphy/home-credit-default-risk-part-2-84b58c1ab9d5) gives a complete example of a good modelling approach.
 
-## Model's interpretability
+#### Model's interpretability
 
 ### Feature importance:
 
-###### Are the importance of all features used by the model computed and showed in a visualisation ?
+###### Are the importance of all features used by the model computed and showed in a visualisation?
 
-###### Is the mapping between between the importance of the features and the features' name is correct ? You should be careful here to associate the right variables to the their feature importance. Sometimes, the preprocessing pipeline can remove some features during the features selection step for instance.
+###### Is the mapping between the importance of the features and the features' name correct? You should be careful here to associate the right variables to the their feature importance. Sometimes, the preprocessing pipeline can remove some features during the features selection step for instance.
 
 ### Descriptive variables:
 
-##### These are important to understand for example the age of the client. If the data could be scaled or modified in the preprocessing pipeline but the data visualised here should be "raw". This part is validated if the visualisations are computed for the 3 clients.
+###### These are important to understand for example the age of the client. If the data could be scaled or modified in the preprocessing pipeline but the data visualised here should be "raw". Are the visualisations computed for the 3 clients?
 
-    - visualisations that show at least 10 variables describing the client and its loan(s)
-    - visualisations that show the comparison between this client and other clients.
+    - Visualisations that show at least 10 variables describing the client and its loan(s).
+    - Visualisations that show the comparison between this client and other clients.
 
 ##### SHAP values on the model are displayed through a summary plot that shows the important features and their impact on the target. This is optional if you have already computed the features importance.
 
-###### Do the 3 clients are selected as expected ? 2 clients from the train set (1 on which the model is correct and 1 on which the model's wrong) and 1 client from the test set.
+###### Are the 3 clients selected as expected? 2 clients from the train set (1 on which the model is correct and 1 on which the model's wrong) and 1 client from the test set.
 
-##### SHAP values on predictions are computed for the 3 clients. The force plot shows what variables contributes the most to the score. **Check that the score outputted by the force plot corresponds to the one outputted by the model.**
+###### SHAP values on predictions are computed for the 3 clients. The force plot shows what variables contributes the most to the score. **Check that the score outputted by the force plot corresponds to the one outputted by the model.**
