@@ -14,7 +14,7 @@ Files that must be inside your repository:
 
 ##### Install 01-Local1.ova in VirtualBox
 
-Get 01-Local1.ova at https://assets.01-edu.org/cybersecurity/local1/01-Local1.ova
+Get [01-Local1.ova](https://assets.01-edu.org/cybersecurity/local1/01-Local1.ova)
 
 The SHA1 is: f3422f3364fd38e8183740f8f57fa951d3f6e0bf
 
