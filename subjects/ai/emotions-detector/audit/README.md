@@ -66,12 +66,12 @@ project
 
 ###### Does the following command `python predict.py ` run without any error and returns an accuracy greater than 70%?
 
-    ```prompt
+```prompt
     python predict.py
 
     Accuracy on test set: 72%
 
-    ```
+```
 
 #### Face detection on the video stream
 
@@ -89,7 +89,7 @@ project
 
 ###### Does the following command `predict_live_stream.py` run without any error and return the following?
 
-    ```prompt
+```prompt
     python predict_live_stream.py
 
     Reading video stream ...
@@ -110,8 +110,7 @@ project
 
     Preprocessing ...
     11:13:29s : Happy , 63%
-
-    ```
+```
 
 #### Hack the CNN - guidelines:
 
