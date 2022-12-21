@@ -1,16 +1,16 @@
-#### Sign Service
+## Sign Service
 
-### Preliminary
+#### Preliminary
 
-###### Does the package.json contain the scripts to deploy and serve the project
+###### Does the package.json contain the scripts to deploy and serve the project?
 
-###### Does the readme file contain a description of the project and explains how to run the code from an empty environment?
+###### Does the README file contain a description of the project and explains how to run the code from an empty environment?
 
-#### Compile and deploy
+##### Compile and deploy
 
-##### Does the smart contracts compile properly?
+###### Does the smart contracts compile properly?
 
-### Interfaces
+#### Interfaces
 
 ##### Serve the interface
 
@@ -18,18 +18,18 @@
 
 ###### Does the interface allows to upload a document?
 
-###### Does the interface allows to connect a wallet
+###### Does the interface allows to connect a wallet?
 
 ###### Does the action section include a sign, publish and verify button?
 
-### Functionalities
+#### Functionalities
 
-###### Does the sign button trigger the wallet and display a signature of the document
+###### Does the sign button trigger the wallet and display a signature of the document?
 
 ###### Does the publish button trigger the wallet and display a confirmation?
 
 ###### Does the verify button display the date of the use of the publish function?
 
-### Bonus
+#### Bonus
 
 ###### +Does the page include a retrieve section that allows to download the document uploaded previously?
