@@ -15,16 +15,12 @@ $ printenv  # The env variables present are just an example, yours will be diffe
 SHELL=/bin/bash
 TERM=xterm
 USER=demouser
-LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca:...
 MAIL=/var/mail/demouser
 PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
 PWD=/home/demouser
-LANG=en_US.UTF-8
 SHLVL=1
 HOME=/home/demouser
 LOGNAME=demouser
-LESSOPEN=| /usr/bin/lesspipe %s
-LESSCLOSE=/usr/bin/lesspipe %s %s
 _=/usr/bin/printenv
 $ ./set-env-vars.sh
 MY_NUM=100
