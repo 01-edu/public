@@ -20,43 +20,41 @@ project
 
 ```
 
-###### Does the structure of the project is as below ?
+###### Does the structure of the project look like the above?
 
-###### Does the readme file give an introduction of the project, show the username, describe the feature engineering and show the best score the on the leaderboard ?
+###### Does the readme file give an introduction of the project, show the username, describe the feature engineering and show the best score on the leaderboard?
 
-###### Does the environment contain all libraries used and their versions that are necessary to run the code ?
+###### Does the environment contain all libraries used and their versions that are necessary to run the code?
 
 ##### Scrapper
 
 ##### There are at least 300 news articles stored in the file system or the database.
 
-##### Run the scrapper with `python scrapper_news.py` and fetch 3 documents. The scrapper is not expected to fetch 3 documents and stop by itself, you can stop it manually. It runs without any error and stores the 3 files as expected.
+###### Run the scrapper with `python scrapper_news.py` and fetch 3 documents. The scrapper is not expected to fetch 3 documents and stop by itself, you can stop it manually. does it run without any error and store the 3 files as expected?
 
 ##### Topic classifier
 
-###### Are the learning curves provided ?
+###### Are the learning curves provided?
 
-###### Do the learning curves prove the topics classifier is trained without correctly - without overfitting ?
+###### Do the learning curves prove the topics classifier is trained correctly - without overfitting?
 
-###### Can you run the topic classfier model on the test set without any error ?
+###### Can you run the topic classifier model on the test set without any error?
 
-###### Does the topic classifier score an accuracy higher than 95% ?
+###### Does the topic classifier score an accuracy higher than 95%?
 
 ##### Scandal detection
 
-###### Does the `README.md` explain the choice of embeddings and distance ?
+###### Does the `README.md` explain the choice of embeddings and distance?
 
-###### Does the DataFrame flag the top 10 articles with the highest likelihood of environmental scandal ?
+###### Does the DataFrame flag the top 10 articles with the highest likelihood of environmental scandal?
 
-###### Is the distance or similarity saved in the DataFrame ?
-
-#####
+###### Is the distance or similarity saved in the DataFrame?
 
 ##### NLP engine output on 300 articles
 
-###### Does the DataFrame contain 300 different rows ?
+###### Does the DataFrame contain 300 different rows?
 
-###### Does the columns of the DataFrame are as expected ?
+###### Are the columns of the DataFrame as expected?
 
 ```
 Date scrapped (date)
@@ -75,7 +73,7 @@ Top_10 (bool)
 
 ##### NLP engine on 3 articles
 
-###### Can you run `python nlp_enriched_news.py` without any error ?
+###### Can you run `python nlp_enriched_news.py` without any error?
 
 ###### Does the output of the nlp engine correspond to the output below?
 
