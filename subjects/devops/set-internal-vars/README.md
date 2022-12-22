@@ -28,5 +28,19 @@ Variables can be created either at the shell or in shell-scripts. Any variable c
 
 `<variable name>=<value>`
 
+If we type the `set` command without any additional parameters, we will get a list of all shell variables, environmental variables, local variables, and shell functions.
+
+Use the `unset` command to remove a variable from your shell environment.
+
+```console
+$ MyVar=8472
+$ echo $MyVar
+8472
+$ unset MyVar
+$ echo $MyVar
+
+$
+```
+
 > You have to use Man or Google to know more about commands flags, in order to solve this exercise!
 > Google and Man will be your friends!
