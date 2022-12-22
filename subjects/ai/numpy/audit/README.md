@@ -1,31 +1,31 @@
 #### Exercise 0: Environment and libraries
 
-##### The exercice is validated if all questions of the exercice are validated
+##### The exercise is validated if all questions of the exercise are validated
 
 ##### Install the virtual environment with `requirements.txt`
 
 ##### Activate the virtual environment. If you used `conda`, run `conda activate ex00`
 
-###### Does the shell specify the name `ex00` of the environment on the left ?
+###### Does the shell specify the name `ex00` of the environment on the left?
 
 ##### Run `python --version`
 
 ###### Does it print `Python 3.8.x`? x could be any number from 0 to 9
 
-##### Does `import jupyter` and `import numpy` run without any error ?
+###### Does `import jupyter` and `import numpy` run without any error?
 
-###### Have you used the followingthe command `jupyter notebook --port 8891` ?
+###### Have you used the following command `jupyter notebook --port 8891`?
 
-###### Is there a file named `Notebook_ex00.ipynb` in the working directory ?
+###### Is there a file named `Notebook_ex00.ipynb` in the working directory?
 
-###### Is the following markdown code executed in a markdown cell in the first cell ?
+###### Is the following markdown code executed in a markdown cell in the first cell?
 
 ```
 # H1 TITLE
 ## H2 TITLE
 ```
 
-###### Does the second cell contain `print("Buy the dip ?")` and return `Buy the dip ?` in the output section ?
+###### Does the second cell contain `print("Buy the dip ?")` and return `Buy the dip ?` in the output section?
 
 ---
 
@@ -35,11 +35,11 @@
 
 ##### Add cell and run `type(your_numpy_array)`
 
-###### Is the your_numpy_array an NumPy array ? It can be checked with that should be equal to `numpy.ndarray`.
+###### Is the your_numpy_array an NumPy array? It can be checked with that should be equal to `numpy.ndarray`.
 
 ##### Run all the cells of the notebook or `python main.py`
 
-###### Are the types printed are as follows ?
+###### Are the types printed are as follows?
 
 ```
 <class 'int'>
@@ -54,19 +54,17 @@
 
 ##### Delete all the cells you added for the audit and restart the notebook
 
-TODO
-
 ---
 
 ---
 
 #### Exercise 2: Zeros
 
-##### The exercice is validated is all questions of the exercice are validated
+##### The exercise is validated if all questions of the exercise are validated
 
-##### The question 1 is validated is the solution uses `np.zeros` and if the shape of the array is `(300,)`
+###### For question 1, does the solution use `np.zeros` and is the shape of the array `(300,)`?
 
-##### The question 2 is validated if the solution uses `reshape` and the shape of the array is `(3, 100)`
+###### For question 2, does the solution use `reshape` and is the shape of the array `(3, 100)`?
 
 ---
 
@@ -74,15 +72,15 @@ TODO
 
 #### Exercise 3: Slicing
 
-##### The exercice is validated is all questions of the exercice are validated
+##### The exercise is validated if all questions of the exercise are validated
 
-##### The question 1 is validated if the solution doesn't involve a for loop or writing all integers from 1 to 100 and if the array is: `np.array([1,...,100])`. The list from 1 to 100 can be generated with an iterator: `range`.
+###### For question 1, is validated if the solution doesn't involve a for loop or writing all integers from 1 to 100 and if the array is: `np.array([1,...,100])`. The list from 1 to 100 can be generated with an iterator: `range`. Were the previous requirements fulfilled?
 
-##### The question 2 is validated if the solution is: `integers[::2]`
+###### For question 2, is the solution `integers[::2]`?
 
-##### The question 3 is validated if the solution is: `integers[::-2]`
+###### For question 3, is the solution `integers[::-2]`?
 
-##### The question 4 is validated if the array is: `np.array([0, 1,0,3,4,0,...,0,99,100])`. There are at least two ways to get this results without for loop. The first one uses `integers[1::3] = 0` and the second involves creating a boolean array that indexes the array:
+###### For question 4, is the array `np.array([0, 1,0,3,4,0,...,0,99,100])`? There are at least two ways to get this results without for loop. The first one uses `integers[1::3] = 0` and the second involves creating a boolean array that indexes the array:
 
 ```python
 mask = (integers+1)%3 == 0
@@ -95,15 +93,15 @@ integers[mask] = 0
 
 #### Exercise 4: Random
 
-##### The exercice is validated is all questions of the exercice are validated
+##### The exercise is validated if all questions of the exercise are validated
 
 ##### For this exercise, as the results may change depending on the version of the package or the OS, I give the code to correct the exercise. If the code is correct and the output is not the same as mine, it is accepted.
 
-##### The question 1 is validated if the solution is: `np.random.seed(888)`
+###### For question 1, is the solution `np.random.seed(888)`?
 
-##### The question 2 is validated if the solution is: `np.random.randn(100)`. The value of the first element is `0.17620087373662233`.
+###### For question 2, is the solution `np.random.randn(100)`? The value of the first element is `0.17620087373662233`.
 
-##### The question 3 is validated if the solution is: `np.random.randint(1,11,(8,8))`.
+###### For question 3, is the solution `np.random.randint(1,11,(8,8))`?
 
 ```console
     Given the NumPy version and the seed, you should have this output:
@@ -118,7 +116,7 @@ integers[mask] = 0
         [ 4,  4,  9,  2,  8,  5,  9,  5]])
 ```
 
-##### The question 4 is validated if the solution is: `np.random.randint(1,18,(4,2,5))`.
+###### For question 4, is the solution `np.random.randint(1,18,(4,2,5))`?
 
 ```console
     Given the NumPy version and the seed, you should have this output:
@@ -142,15 +140,15 @@ integers[mask] = 0
 
 #### Exercise 5: Split, concatenate, reshape arrays
 
-##### The exercice is validated is all questions of the exercice are validated
+##### The exercise is validated if all questions of the exercise are validated
 
-##### The question 1 is validated if the generated array is based on an iterator as `range` or `np.arange`. Check that 50 is part of the array.
+###### For question 1, is the generated array based on an iterator as `range` or `np.arange`? Check that 50 is part of the array.
 
-##### The question 2 is validated if the generated array is based on an iterator as `range` or `np.arange`. Check that 100 is part of the array.
+###### For question 2, is the generated array based on an iterator as `range` or `np.arange`? Check that 100 is part of the array.
 
-##### The question 3 is validated if the array is concatenated this way `np.concatenate(array1,array2)`.
+###### For question 3, is the array concatenated this way `np.concatenate(array1,array2)`?
 
-##### The question 4 is validated if the result is:
+###### For question 4, is the result the following?
 
 ```console
     array([[  1,  ... ,  10],
@@ -168,13 +166,13 @@ https://jakevdp.github.io/PythonDataScienceHandbook/ (section: The Basics of Num
 
 #### Exercise 6: Broadcasting and Slicing
 
-##### The exercice is validated is all questions of the exercice are validated
+##### The exercise is validated if all questions of the exercise are validated
 
-##### The question 1 is validated if the output is the same as:
+###### For question 1, is the output the same as the following?
 
 `np.ones([9,9], dtype=np.int8)`
 
-##### The question 2 is validated if the output is
+###### For question 2, is the output the following?
 
 ```console
     array([[1, 1, 1, 1, 1, 1, 1, 1, 1],
@@ -205,9 +203,9 @@ Here is an example of a possible solution:
 
 #### Exercise 7: NaN
 
-##### The exercice is validated is all questions of the exercice are validated
+##### The exercise is validated if all questions of the exercise are validated
 
-##### This question is validated if, without having used a for loop or having filled the array manually, the output is:
+###### Without having used a for loop or having filled the array manually, is the output the following?
 
 ```console
 [[ 7.  1.  7.]
@@ -244,13 +242,11 @@ There are two steps in this exercise:
 
 #### Exercise 8: Wine
 
-##### The exercice is validated is all questions of the exercice are validated
+##### The exercise is validated if all questions of the exercise are validated
 
-##### This question is validated if the text file has successfully been loaded in a NumPy array with
+###### Has the text file successfully been loaded in a NumPy array with `genfromtxt('winequality-red.csv', delimiter=',')` and the reduced arrays weights **76800 bytes**?
 
-`genfromtxt('winequality-red.csv', delimiter=',')` and the reduced arrays weights **76800 bytes**
-
-##### This question is validated if the output is
+###### Is the output the following?
 
 ```python
 array([[ 7.4   ,  0.7   ,  0.    ,  1.9   ,  0.076 , 11.    , 34.    ,
@@ -263,11 +259,11 @@ array([[ 7.4   ,  0.7   ,  0.    ,  1.9   ,  0.076 , 11.    , 34.    ,
 
 This slicing gives the answer `my_data[[1,6,11],:]`.
 
-##### This question is validated if the answer if False. There many ways to get the answer: find the maximum or check values greater than 20.
+###### Is the answer False? There are many ways to get the answer: find the maximum or check values greater than 20.
 
-##### This question is validated if the answer is 10.422983114446529.
+###### Is the answer 10.422983114446529?
 
-##### This question is validated if the answers is:
+###### Is the answer the following?
 
 ```console
     pH stats
@@ -281,9 +277,9 @@ This slicing gives the answer `my_data[[1,6,11],:]`.
 
     > *Note: Using `percentile` or `median` may give different results depending on the duplicate values in the column. If you do not have my results please use `percentile`.*
 
-##### This question is validated if the answer is ~`5.2`. The first step is to get the percentile 20% of the column `sulphates`, then create a boolean array that contains `True` of the value is smaller than the percentile 20%, then select this rows with the column quality and compute the `mean`.
+###### Is the answer ~`5.2`? The first step is to get the percentile 20% of the column `sulphates`, then create a boolean array that contains `True` of the value is smaller than the percentile 20%, then select this rows with the column quality and compute the `mean`.
 
-##### This question is validated if the output for the best wines is:
+###### Is the output for the best wines the following?
 
 ```python
 array([ 8.56666667,  0.42333333,  0.39111111,  2.57777778,  0.06844444,
@@ -291,7 +287,7 @@ array([ 8.56666667,  0.42333333,  0.39111111,  2.57777778,  0.06844444,
     12.09444444,  8.        ])
 ```
 
-##### This question is validated if the output for the bad wines is:
+###### Is the output for the bad wines the following?
 
 ```python
 array([ 8.36    ,  0.8845  ,  0.171   ,  2.635   ,  0.1225  , 11.      ,
@@ -306,7 +302,7 @@ This can be done in three steps: Get the max, create a boolean mask that indicat
 
 #### Exercise 9: Football tournament
 
-##### This exercise is validated if the output is:
+###### Is the output the following?
 
 ```console
  [[0 3 1 2 4]
