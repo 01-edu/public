@@ -5,7 +5,16 @@ set -euo pipefail
 IFS='
 '
 
-submitted=$(bash student/set-env-vars.sh)
+FILENAME="student/set-env-vars.sh"
+
+if [ -s ${FILENAME} ]; then
+    if [[ $(cat $FILENAME | grep echo | wc -l) -ne 0 ]]; then
+        echo "echo is not allowed in this exercise!"
+        exit 1
+    fi
+fi
+
+submitted=$(bash $FILENAME)
 expected=$(bash solutions/set-env-vars.sh)
 
 diff <(echo "$submitted") <(echo "$expected")
