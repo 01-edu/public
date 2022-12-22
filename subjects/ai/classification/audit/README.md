@@ -195,9 +195,9 @@ As said, for some reasons, the results may be slightly different from mine becau
 #### Bonus
 #### Exercise 6: Multi-class (Optional)
 
-##### The exercise is validated is all questions of the exercise are validated
+##### The exercise is validated if all questions of the exercise are validated
 
-###### Does each classifier have as input a binary data as below for question 1?
+###### +Does each classifier have as input a binary data as below for question 1?
 
 ```python
 def train(X_train, y_train):
@@ -212,7 +212,7 @@ def train(X_train, y_train):
        return clf, clf1, clf2
 ```
 
-###### Are this the predicted classes on the test set for question 2?
+###### +Are this the predicted classes on the test set for question 2?
 
 ```console
 array([0, 0, 2, 1, 2, 0, 2, 1, 1, 1, 0, 1, 2, 0, 1, 1, 0, 0, 2, 2, 0, 0,
