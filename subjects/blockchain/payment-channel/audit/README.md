@@ -1,4 +1,4 @@
-## Payment Channel
+#### Payment Channel
 
 ##### Read the documentation
 
