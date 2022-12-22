@@ -1,6 +1,6 @@
 #### Exercise 0: Environment and libraries
 
-##### The exercise is validated is all questions of the exercise are validated.
+##### The exercise is validated if all questions of the exercise are validated.
 
 ##### Activate the virtual environment. If you used `conda` run `conda activate your_env`.
 
@@ -8,7 +8,7 @@
 
 ###### Does it print `Python 3.x`? x >= 8
 
-##### Does `import jupyter`, `import numpy`, `import pandas`, `import matplotlib` and `import sklearn` run without any error?
+##### Do `import jupyter`, `import numpy`, `import pandas`, `import matplotlib` and `import sklearn` run without any error?
 
 ---
 
@@ -16,7 +16,7 @@
 
 #### Exercise 1: MSE Scikit-learn
 
-The goal of this exercise is to learn to use `sklearn.metrics` to compute the mean squared error (MSE).
+##### The goal of this exercise is to learn to use `sklearn.metrics` to compute the mean squared error (MSE).
 
 1. Compute the MSE using `sklearn.metrics` on `y_true` and `y_pred` below:
 
@@ -31,7 +31,7 @@ y_pred = [90, 48, 2, 2, -4]
 
 #### Exercise 2: Accuracy Scikit-learn
 
-The goal of this exercise is to learn to use `sklearn.metrics` to compute the accuracy.
+##### The goal of this exercise is to learn to use `sklearn.metrics` to compute the accuracy.
 
 1. Compute the accuracy using `sklearn.metrics` on `y_true` and `y_pred` below:
 
@@ -46,9 +46,9 @@ y_true = [0, 0, 1, 1, 1, 1, 0]
 
 #### Exercise 3: Regression
 
-##### The exercise is validated is all questions of the exercise are validated
+##### The exercise is validated if all questions of the exercise are validated
 
-##### The question 1 is validated if the predictions on the train set and test set are:
+###### For question 1, are the predictions on the train set and test set the following?
 
 ```console
     #10 first values Train
@@ -65,7 +65,7 @@ array([ 1.82212706,  1.98357668,  0.80547979, -0.19259114,  1.76072418,
 
 ```
 
-##### The question 2 is validated if the results match this output:
+###### For question 2, Do the results match the following output?
 
 ```console
 r2 on the train set:  0.3552292936915783
@@ -85,9 +85,9 @@ This result shows that the model has slightly better results on the train set th
 
 #### Exercise 4: Classification
 
-##### The exercise is validated is all questions of the exercise are validated
+##### The exercise is validated if all questions of the exercise are validated
 
-##### The question 1 is validated if the predictions on the train set and test set are:
+###### For question 1, are the predictions on the train set and test set the following?
 
 ```console
     # 10 first values Train
@@ -97,7 +97,7 @@ This result shows that the model has slightly better results on the train set th
     array([1, 1, 0, 0, 0, 1, 1, 1, 0, 0])
 ```
 
-##### The question 2 is validated if the results match this output:
+###### For question 2, do the results match this output?
 
 ```console
 F1 on the train set:  0.9911504424778761
@@ -114,14 +114,14 @@ Precision on the test set:  0.9736842105263158
 ROC_AUC on the test set:  0.9863247863247864
 ```
 
-##### The question 2 is validated if the results match the confusion matrix on the test set should be:
+###### For question 2, do the results match the confusion matrix on the test set? It should be:
 
 ```console
 array([[37,  2],
         [ 1, 74]])
 ```
 
-##### The question 3 is validated if the ROC AUC plot looks like the plot below:
+###### For question 3, Does the ROC AUC plot look like the plot below?
 
 ![alt text][logo_ex4]
 
@@ -135,7 +135,7 @@ Having a 99% ROC AUC is not usual. The data set we used is easy to classify. On 
 
 #### Exercise 5: Machine Learning models
 
-##### The question is validated if the scores outputted are close to the scores below. Some of the algorithms use random steps (random sampling used by the `RandomForest`). I used `random_state = 43` for the Random Forest, the Decision Tree and the Gradient Boosting.
+###### For question 1, are the scores outputted close to the scores below? Some of the algorithms use random steps (random sampling used by the `RandomForest`). I used `random_state = 43` for the Random Forest, the Decision Tree and the Gradient Boosting.
 
 ```console
 # Linear regression
@@ -214,9 +214,9 @@ However, Random Forest and Gradient Boosting propose a solid approach to correct
 
 #### Exercise 6: Grid Search
 
-##### The exercice is validated is all questions of the exercice are validated
+##### The exercise is validated if all questions of the exercise are validated
 
-##### The question 1 is validated if the code that runs the `gridsearch` is (the parameters may change):
+###### For question 1, is the code that runs the `gridsearch` like the following? (the parameters may change):
 
 ```python
 parameters = {'n_estimators':[10, 50, 75],
@@ -231,7 +231,7 @@ gridsearch = GridSearchCV(rf,
 gridsearch.fit(X, y)
 ```
 
-##### The question 2 is validated if the function is:
+###### For question 2, is the function as below?
 
 ```python
 def select_model_verbose(gs):
@@ -241,7 +241,7 @@ def select_model_verbose(gs):
 
 In my case, the `gridsearch` parameters are not interesting. Even if I reduced the over-fitting of the Random Forest, the score on the test is lower than the score on the test returned by the Gradient Boosting in the previous exercise without optimal parameters search.
 
-##### The question 3 is validated if the code used is:
+###### For question 3, is the code used the following?
 
 ```python
 model, best_params, best_score = select_model_verbose(gridsearch)
