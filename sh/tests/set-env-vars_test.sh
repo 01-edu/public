@@ -7,6 +7,7 @@ IFS='
 
 FILENAME="student/set-env-vars.sh"
 
+# echo not allowed
 if [ -s ${FILENAME} ]; then
     if [[ $(cat $FILENAME | grep echo | wc -l) -ne 0 ]]; then
         echo "echo is not allowed in this exercise!"
