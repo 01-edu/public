@@ -156,7 +156,7 @@ https://matplotlib.org/gallery/api/two_scales.html
 
 ###### For question 1, does the plot reproduce the plot in the image and respect those criteria? The code below shows a solution.
 
-###### Does it have a title ?
+###### Does it have a title?
 
 ###### Does it have a legend?
 
