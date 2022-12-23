@@ -16,7 +16,7 @@ Files that must be inside your repository:
 
 ###### Does the required files present?
 
-##### Launch the student's program on the OS he wants
+##### Launch the student's program on the OS the student wants
 
 ###### Does the program change signature with each execution?
 
