@@ -12,7 +12,7 @@ Files that must be inside your repository:
 
 - Your program source code.
 
-- a README.md file, Which clearly explains how to use the program.
+- a README.md file, which clearly explains how to use the program.
 
 ###### Are the required files present?
 
@@ -24,7 +24,7 @@ Files that must be inside your repository:
 
 ###### Does the program display the address, and the telephone number for the full name entered?
 
-##### Try flag "-ip" with the following command `passive -ip 127.0.0.1
+##### Try flag "-ip" with the following command `passive -ip 127.0.0.1`
 
 ###### Does the program display the ISP, and position for the entered IP address?
 
