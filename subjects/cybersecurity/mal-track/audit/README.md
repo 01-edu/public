@@ -26,15 +26,15 @@ Launch the mal-track.exe program
 
 ##### Launch the student program
 
-###### Does the program developed by the student kills the malware process.
+###### Does the program developed by the student kill the malware process.
 
-> Open task manager CTRL+ALT+DEL or Windows key+R -> msconfig.
+##### Open task manager CTRL+ALT+DEL or Windows key+R -> msconfig.
 
 ###### Has mal-track.exe been killed from task manager?
 
 ###### Does the program developed by the student removes our malware from the start of the machine?
 
-> Open Registry Editor Windows key+R -> regedit
+##### Open Registry Editor Windows key+R -> regedit
 
 ###### Is maltrack not located in HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run?
 
