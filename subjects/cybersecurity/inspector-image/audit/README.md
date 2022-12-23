@@ -14,7 +14,7 @@ Files that must be inside your repository:
 
 - a README.md file, Which clearly explains how to use the program.
 
-###### Does the required files present?
+###### Are the required files present?
 
 ##### Ask the student to run his program with the first argument -map, and the second argument the image.jpeg file. You can find that at this path: `../resources/image.jpeg`
 
