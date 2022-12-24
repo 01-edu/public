@@ -60,8 +60,6 @@ You can use the `crontab` command to manage your jobs. This command can be calle
 
 2. Schedule a job 5 minutes after midnight every day: `5 0 * * * {command}`
 
-
-
 > You have to use Man or Google to know more about commands flags, in order to solve this exercise!
 > Google and Man will be your friends!
 
