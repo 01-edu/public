@@ -5,20 +5,20 @@ set -euo pipefail
 IFS='
 '
 
-FILENAME="student/my-ls.sh"
+FILENAME="student/custom-ls.sh"
 script_dirS=$(cd -P "$(dirname "$BASH_SOURCE")" &>/dev/null && pwd)
 
 challenge() {
-    unalias my-ls
+    unalias custom-ls
 
    	$(bash "$script_dirS"/$FILENAME)
 
-    submitted=$(cd "$1" && my-ls)
+    submitted=$(cd "$1" && custom-ls)
 
-    unalias my-ls
+    unalias custom-ls
 
-	$(bash "$script_dirS"/solutions/my-ls.sh)
-    expected=$(cd "$1" && my-ls)
+	$(bash "$script_dirS"/solutions/custom-ls.sh)
+    expected=$(cd "$1" && custom-ls)
 
     # diff
 	diff <(echo "$submitted") <(echo "$expected")
@@ -32,7 +32,7 @@ if [ -f ${FILENAME} ]; then
             echo "echo is not allowed in this exercise!"
             exit 1
         fi
-        challenge my-ls/folder1
+        challenge custom-ls/folder1
     else
         echo "The file exist but is empty"
         exit 1

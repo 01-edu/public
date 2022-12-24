@@ -1,10 +1,10 @@
-## my-ls
+## custom-ls
 
 ### Instructions
 
-Create the script `my-ls.sh` wich will create an alias `my-ls`.
+Create the script `custom-ls.sh` wich will create an alias `custom-ls`.
 
-The alias `my-ls`:
+The alias `custom-ls`:
     - shows files details long listing format.
     - do not list group information.
     - not ignore entries starting with `.`.
@@ -14,10 +14,10 @@ The alias `my-ls`:
 Expected behavior:
 
 ```console
-$ my-ls
-error: command not found: my-ls
-$ ./my-ls.sh
-$ my-ls .
+$ custom-ls
+error: command not found: custom-ls
+$ ./custom-ls.sh
+$ custom-ls .
 total ...
 7784 -rw-r--r--  1 <user>  3983261 Dec 17 22:02 .file1 # just an example
 3064 -rw-r--r--  1 <user>  1566444 Dec 17 22:12 file2 # just an example
