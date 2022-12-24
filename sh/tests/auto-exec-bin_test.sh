@@ -6,10 +6,11 @@ IFS='
 '
 
 FILENAME="student/auto-exec-bin.sh"
+BINFILE="~/myBins/01exec"
 script_dirS=$(cd -P "$(dirname "$BASH_SOURCE")" &>/dev/null && pwd)
 
 setupbin() {
-    if [ -f ${FILENAME} ]; then
+    if [ -f ${BINFILE} ]; then
         echo "bin already exists!"
     else
         mkdir -p ~/myBins
