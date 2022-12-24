@@ -40,6 +40,26 @@ testcmd='echo 01school'
 $
 ```
 
+> However, this update alias gets removed after closing the working environment.
+
+To create and add aliases permanently to your bash shell on Linux and Unix-like systems:
+
+1- Edit the `~/.bashrc`:
+```console
+vi ~/.bashrc
+# or #
+nano ~/.bashrc
+```
+2- Append your bash alias, For example append:
+```console
+alias testcmd="echo 01school"
+```
+3- Save and close the file.
+4- Activate alias
+```console
+source ~/.bashrc
+```
+
 `unalias` unalias removes each alias name from the current shell execution environment.
 
 ```console
