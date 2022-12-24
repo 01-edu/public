@@ -2,7 +2,7 @@
 
 ### Instructions
 
-In this exercise you will create different files `task1`, `task2`, `task3`, `task4` containing the formulas required for setup a group of  Scheduled tasks in the group.
+In this exercise, you will create four files called `task1`, `task2`, `task3`, and `task4`, which will contain the necessary formulas to set up a group of scheduled tasks in the group
 
 ##### task1:
 Time: `Every Friday, at 20:41`
