@@ -9,7 +9,6 @@ FILENAME="student/custom-ls.sh"
 script_dirS=$(cd -P "$(dirname "$BASH_SOURCE")" &>/dev/null && pwd)
 
 challenge() {
-    unalias custom-ls
 
    	$(bash "$script_dirS"/$FILENAME)
 
@@ -20,6 +19,7 @@ challenge() {
 	$(bash "$script_dirS"/solutions/custom-ls.sh)
     expected=$(cd "$1" && custom-ls)
 
+    unalias custom-ls
     # diff
 	diff <(echo "$submitted") <(echo "$expected")
 }
