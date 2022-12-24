@@ -2,14 +2,14 @@
 
 ### Instructions
 
-Create the script `custom-ls.sh` wich will create an alias `custom-ls`.
+Create the script `custom-ls.sh` which will create an alias `custom-ls`.
 
 The alias `custom-ls`:
-    - shows files details long listing format.
-    - do not list group information.
-    - not ignore entries starting with `.`.
-    - print the allocated size of each file, in blocks.
-    - sort by file size, largest first.
+  - shows the file details in long list format.
+  - does not list group information.
+  - does not ignore entries starting with `.`.
+  - prints the allocated  size of each file, in blocks.
+  - sorts by file size, largest first.
 
 Expected behavior:
 
