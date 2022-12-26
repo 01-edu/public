@@ -1,6 +1,6 @@
-# Classification with Scikit Learn
+# Classification
 
-The goal of this day is to understand practical classification.
+The goal of this day is to understand practical classification with Scikit Learn.
 
 Today we will learn a different approach in Machine Learning: the classification which is a large domain in the field of statistics and machine learning. Generally, it can be broken down in two areas:
 
