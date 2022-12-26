@@ -1,4 +1,4 @@
-# Time Series with Pandas
+# Time Series
 
 Time series data are data that are indexed by a sequence of dates or times. Today, you'll learn how to use methods built into Pandas to work with this index. You'll also learn for instance:
 
