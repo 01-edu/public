@@ -1,4 +1,4 @@
-# Train and evaluate Machine Learning models
+# Training
 
 Today we will learn how to train and evaluate a machine learning model. You'll learn how tochoose the right Machine Learning metric depending on the problem you are solving and to compute it. A metric gives an idea of how good the model performs. Depending on working on a classification problem or a regression problem the metrics considered are different. It is important to understand that all metrics are just metrics, not the truth.
 
