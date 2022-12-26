@@ -1,4 +1,4 @@
-# Forest Cover Type Prediction
+# Forest Prediction
 
 The goal of this project is to use cartographic variables to classify forest categories. You will have to analyse the data, create features and to train a machine learning model on the cartographic data to make it as accurate as possible.
 
