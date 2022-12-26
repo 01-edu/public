@@ -1,8 +1,8 @@
 ![Alt Text](w2_day01_linear_regression_video.gif)
 
-# Linear regression with Scikit Learn
+# Linear regression
 
-The goal of this day is to understand practical Linear regression and supervised learning.
+The goal of this day is to understand practical Linear regression and supervised learning with Scikit Learn.
 
 The word "regression" was introduced by Sir Francis Galton (a cousin of C. Darwin) when he
 studied the size of individuals within a progeny. He was trying to understand why
