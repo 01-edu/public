@@ -1,4 +1,4 @@
-# Data wrangling with Pandas
+# Data wrangling
 
 Data wrangling is one of the crucial tasks in data science and analysis which includes operations like:
 
