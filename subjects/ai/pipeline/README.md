@@ -1,4 +1,4 @@
-# Machine Learning Pipeline
+# Pipeline
 
 Today we will focus on the data preprocessing and discover the Pipeline object from scikit learn.
 
