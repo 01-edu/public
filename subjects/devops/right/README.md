@@ -9,7 +9,7 @@ Get the output of the `ls` command, parse it with the `grep` command to filter f
 ### Usage
 
 ```console
-$ ls -l
+$ ls
 sample1.txt sample2 sample3.txt sample4
 $ ./right.sh
 $ cat filtered_files.txt
