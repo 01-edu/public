@@ -106,6 +106,30 @@ t(({ eq }) => {
     })
 })
 
+// Test Dodo
+t(({ eq }) => {
+  let myDog = new Dog("Rex")
+  let myBird = new Bird()
+  let myDodo = new Dodo("Dill")
+  return eq(
+    { 
+      name: myDog.name,
+      hasOwn: Object.hasOwn(myDog, 'name'),
+      name: myBird.name,
+      hasOwn: Object.hasOwn(myBird, 'name'),
+      name: myDodo.name,
+      hasOwn: Object.hasOwn(myDodo, 'name'),
+    },
+    { 
+      name: "Rex",
+      hasOwn: true,
+      name: "Anonymous",
+      hasOwn: false,
+      name: "Dill",
+      hasOwn: true,
+    })
+})
+
 export const setup = () => {
 }
 
