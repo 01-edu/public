@@ -84,4 +84,4 @@ This [article](https://medium.com/thecyphy/home-credit-default-risk-part-2-84b58
 
 ###### Are the 3 clients selected as expected? 2 clients from the train set (1 on which the model is correct and 1 on which the model's wrong) and 1 client from the test set.
 
-###### SHAP values on predictions are computed for the 3 clients. The force plot shows what variables contributes the most to the score. **Check that the score outputted by the force plot corresponds to the one outputted by the model.**
+###### SHAP values on predictions are computed for the 3 clients. The force plot shows what variables contributes the most to the score. Does the score outputted by the force plot correspond to the one outputted by the model?

@@ -1,6 +1,6 @@
 #### Exercise 0: Environment and libraries
 
-##### The exercise is validated is all questions of the exercise are validated.
+##### The exercise is validated if all questions of the exercise are validated.
 
 ##### Activate the virtual environment. If you used `conda` run `conda activate your_env`.
 
