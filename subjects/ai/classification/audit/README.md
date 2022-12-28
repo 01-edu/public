@@ -1,6 +1,6 @@
 #### Exercise 0: Environment and libraries
 
-##### The exercise is validated is all questions of the exercise are validated.
+##### The exercise is validated if all questions of the exercise are validated.
 
 ##### Activate the virtual environment. If you used `conda` run `conda activate your_env`
 
@@ -50,7 +50,7 @@ Score:
 
 #### Exercise 3: Decision boundary
 
-##### The exercise is validated is all questions of the exercise are validated
+##### The exercise is validated if all questions of the exercise are validated
 
 ###### Does the outputted plot for question 1 look like this?
 
@@ -130,7 +130,7 @@ y_test:
 
 #### Exercise 5: Breast Cancer prediction
 
-###### The exercise is validated is all questions of the exercise are validated
+###### The exercise is validated if all questions of the exercise are validated
 
 ###### Is the proportion of class `Benign` 0.6552217453505007 for question 1? It means that if you always predict `Benign` your accuracy would be 66%.
 

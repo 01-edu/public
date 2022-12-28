@@ -81,7 +81,7 @@
 
 #### Exercise 4: Groupby Apply
 
-##### The exercise is validated is all questions of the exercise are validated and if the for loop hasn't been used. The goal is to use `groupby` and `apply`.
+##### The exercise is validated if all questions of the exercise are validated and if the for loop hasn't been used. The goal is to use `groupby` and `apply`.
 
 ###### Is the output for question 1 the following?
 

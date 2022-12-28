@@ -64,7 +64,7 @@ The model is consistent across folds: it is stable. That's a first sign that the
 
 #### Exercise 3: GridsearchCV
 
-##### The exercise is validated is all questions of the exercise are validated
+##### The exercise is validated if all questions of the exercise are validated
 
 ###### For question 1, is the code that runs the grid search similar to the following?
 
@@ -84,7 +84,7 @@ gridsearch.fit(X_train, y_train)
 
 The answers that uses another list of parameters are accepted too !
 
-###### For question 2, whe these attributes used?
+###### For question 2, were these attributes used?
 
 ```python
 print(gridsearch.best_score_)

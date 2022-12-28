@@ -8,7 +8,7 @@
 
 ###### Does it print `Python 3.x`? x >= 8
 
-##### Do `import jupyter` and `import numpy` run without any error?
+###### Do `import jupyter` and `import numpy` run without any error?
 
 ---
 

@@ -8,7 +8,7 @@
 
 ###### Does it print `Python 3.x`? x >= 8
 
-##### Do `import jupyter`, `import numpy`, `import pandas`, `matplotlib` and `plotly` run without any error ?
+###### Do `import jupyter`, `import numpy`, `import pandas`, `matplotlib` and `plotly` run without any errors?
 
 ---
 
@@ -16,7 +16,7 @@
 
 #### Exercise 1: Pandas plot 1
 
-##### The exercise is validated is all questions of the exercise are validated
+##### The exercise is validated if all questions of the exercise are validated
 
 ###### For question 1, does the plot reproduce the plot in the image and respect those criteria?
 
