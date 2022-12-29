@@ -100,52 +100,52 @@ tests.push(async ({ eq, ctx }) => {
 })
 
 tests.push(async ({ eq, ctx }) => {
-  // test when vips answer { drink: 'beer' }
-  // should create a list with 6-packs-beers and potatoes
+  // test when vips answer { drink: 'iced-tea' }
+  // should create a list with iced-tea-bottles and potatoes
   const answers = [
     { answer: 'no', drink: 'beer' },
-    ...ctx.createAnswers(1, { answer: 'yes', drink: 'beer' }),
+    ...ctx.createAnswers(1, { answer: 'yes', drink: 'iced-tea' }),
   ]
   await ctx.setAnswersIn({ dir: 'guests', answers })
 
-  const { data } = await ctx.run('guests', 'happy-beer-list.json')
-  return eq(data, { potatoes: 1, '6-packs-beers': 1 })
+  const { data } = await ctx.run('guests', 'happy-iced-tea-list.json')
+  return eq(data, { potatoes: 1, 'iced-tea-bottles': 1 })
 })
 
 tests.push(async ({ eq, ctx }) => {
-  // test when vips answer { drink: 'beer' }
-  // should create a list with 6-packs-beers and potatoes
+  // test when vips answer { drink: 'iced-tea' }
+  // should create a list with iced-tea-bottles and potatoes
   const answers = [
-    { answer: 'no', drink: 'beer' },
-    ...ctx.createAnswers(6, { answer: 'yes', drink: 'beer' }),
+    { answer: 'no', drink: 'iced-tea' },
+    ...ctx.createAnswers(6, { answer: 'yes', drink: 'iced-tea' }),
   ]
   await ctx.setAnswersIn({ dir: 'guests', answers })
 
-  const { data } = await ctx.run('guests', 'happy-beer-pack-list.json')
-  return eq(data, { potatoes: 6, '6-packs-beers': 1 })
+  const { data } = await ctx.run('guests', 'happy-iced-tea-bottles-list.json')
+  return eq(data, { potatoes: 6, 'iced-tea-bottles': 1 })
 })
 
 tests.push(async ({ eq, ctx }) => {
-  // test when vips answer { drink: 'wine' }
+  // test when vips answer { drink: 'sparkling-water' }
   // should create a list with wine-bottles and potatoes
   const answers = [
-    ...ctx.createAnswers(3, { answer: 'no', drink: 'wine' }),
-    ...ctx.createAnswers(5, { answer: 'yes', drink: 'wine' }),
+    ...ctx.createAnswers(3, { answer: 'no', drink: 'sparkling-water' }),
+    ...ctx.createAnswers(5, { answer: 'yes', drink: 'sparkling-water' }),
   ]
   await ctx.setAnswersIn({ dir: 'guests', answers })
 
-  const { data } = await ctx.run('guests', 'happy-wine-list.json')
-  return eq(data, { potatoes: 5, 'wine-bottles': 2 })
+  const { data } = await ctx.run('guests', 'happy-sparkling-water-list.json')
+  return eq(data, { potatoes: 5, 'sparkling-water-bottles': 2 })
 })
 
 tests.push(async ({ eq, ctx }) => {
-  // test when vips answer { drink: 'wine' }
-  // should create a list with wine-bottles and potatoes
-  const answers = ctx.createAnswers(8, { answer: 'yes', drink: 'wine' })
+  // test when vips answer { drink: 'sparkling-water' }
+  // should create a list with sparkling-water-bottles and potatoes
+  const answers = ctx.createAnswers(8, { answer: 'yes', drink: 'sparkling-water' })
   await ctx.setAnswersIn({ dir: 'guests', answers })
 
-  const { data } = await ctx.run('guests', 'happy-wine-bottle-list.json')
-  return eq(data, { potatoes: 8, 'wine-bottles': 2 })
+  const { data } = await ctx.run('guests', 'happy-sparkling-water-bottles-list.json')
+  return eq(data, { potatoes: 8, 'sparkling-water-bottles': 2 })
 })
 
 tests.push(async ({ eq, ctx }) => {
@@ -365,12 +365,12 @@ tests.push(async ({ eq, ctx }) => {
     }),
     ...ctx.createAnswers(6, { answer: 'yes', food: 'vegan', drink: 'water' }),
     ...ctx.createAnswers(2, { answer: 'yes', food: 'veggie', drink: 'water' }),
-    ...ctx.createAnswers(3, { answer: 'yes', food: 'veggie', drink: 'beer' }),
-    ...ctx.createAnswers(11, { answer: 'yes', food: 'fish', drink: 'wine' }),
+    ...ctx.createAnswers(3, { answer: 'yes', food: 'veggie', drink: 'iced-tea' }),
+    ...ctx.createAnswers(11, { answer: 'yes', food: 'fish', drink: 'sparkling-water' }),
     ...ctx.createAnswers(4, {
       answer: 'yes',
       food: 'everything',
-      drink: 'beer',
+      drink: 'iced-tea',
     }),
   ]
   await ctx.setAnswersIn({ dir: 'guests', answers })
@@ -388,8 +388,8 @@ tests.push(async ({ eq, ctx }) => {
     sardines: 11,
     burgers: 2,
     kebabs: 4,
-    '6-packs-beers': 2,
-    'wine-bottles': 3,
+    'iced-tea-bottles': 2,
+    'sparkling-water-bottles': 3,
     'water-bottles': 2,
     'soft-bottles': 1,
   })

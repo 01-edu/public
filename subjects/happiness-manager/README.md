@@ -29,9 +29,9 @@ The script must:
 You have to handle the info like this:
 
 - Drinks:
-  - Beers: 1 pack / 6 vips (rounded up). Expected key: `6-packs-beers`.
-  - Water, wine, softs: 1 bottle / 4 vips in each category (rounded up).
-    Expected keys: `wine-bottles`, `water-bottles`, `soft-bottles`.
+  - Iced tea: 1 pack / 6 vips (rounded up). Expected key: `iced-tea-bottles`.
+  - Water, sparkling water, softs: 1 bottle / 4 vips in each category (rounded up).
+    Expected keys: `sparkling-water-bottles`, `water-bottles`, `soft-bottles`.
 - Food:
   - Veggies and vegans: 1 eggplant, 1 courgette, 3 mushrooms and 1 hummus / 3
     vips in these categories put together. Expected keys: `eggplants`,
