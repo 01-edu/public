@@ -27,7 +27,7 @@ directory
 
 ### Provided files
 
-Download [`guests.zip`](https://assets.01-edu.org/tell-me-how-many/guests.zip)
+Download [`guests.zip`](../guests.zip)
 to have at your disposal the `guests` directory containing the files to count in
 your script. You must save it in your `tell-me-how-many` exercise directory to test
 your script on it.
