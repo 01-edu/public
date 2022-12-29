@@ -127,7 +127,7 @@ tests.push(async ({ eq, ctx }) => {
 
 tests.push(async ({ eq, ctx }) => {
   // test when vips answer { drink: 'sparkling-water' }
-  // should create a list with wine-bottles and potatoes
+  // should create a list with sparkling-water-bottles and potatoes
   const answers = [
     ...ctx.createAnswers(3, { answer: 'no', drink: 'sparkling-water' }),
     ...ctx.createAnswers(5, { answer: 'yes', drink: 'sparkling-water' }),
