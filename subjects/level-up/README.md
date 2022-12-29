@@ -27,24 +27,24 @@ the string `happy` or not. The possibilities are becoming limitless...
 ### Instructions
 
 As Rick's robot, you are continuing your training to add yourself new ... skills
-(I could have said funtions). You want now to become a robot bartender.
+(I could have said funtions). You want now to become a robot barista.
 
 Define the function `shaker` which will take as arguments:
 
 - `quantity`, which will be variable of type `Number`
 - `fruit`, which will be a `String`
-- `alcohol`, which will be a `Boolean`
+- `diet`, which will be a `Boolean`
 
 `shaker` must return a `String`. Look at the examples below to understand how
 `shaker` must mix its ingredients:
 
 ```js
 console.log(shaker(1, 'strawberry', true))
-//'1 strawberry cocktail'
+//'1 skinny strawberry milkshake'
 console.log(shaker(2, 'chocolate', false))
 //'2 chocolate milkshakes'
 console.log(shaker(2, 'strawberry', true))
-//'2 strawberry cocktails'
+//'2 skinny strawberry milkshakes'
 console.log(shaker(1, 'chocolate', false))
 //'1 chocolate milkshake'
 ```
