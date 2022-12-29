@@ -36,4 +36,4 @@ curl localhost:5000/Elis_Galindo
 
 ### Provided files
 
-Download [`guests.zip`](https://assets.01-edu.org/tell-me-how-many/guests.zip) to have at your disposal the `guests` directory containing the files with the guest information. You must save it in your `friend-support` exercise directory to test your program on it.
+Download [`guests.zip`](../guests.zip) to have at your disposal the `guests` directory containing the files with the guest information. You must save it in your `friend-support` exercise directory to test your program on it.
