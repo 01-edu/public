@@ -27,7 +27,7 @@ the string `happy` or not. The possibilities are becoming limitless...
 ### Instructions
 
 As Rick's robot, you are continuing your training to add yourself new ... skills
-(I could have said funtions). You want now to become a robot barista.
+(I could have said functions). You want now to become a robot barista.
 
 Define the function `shaker` which will take as arguments:
 
