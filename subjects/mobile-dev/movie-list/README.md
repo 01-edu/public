@@ -40,7 +40,7 @@ Add fromJson method to make a json serialization, see more on [here](https://flu
 Your ListView should use [FutureBuilder](https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html) to wait for data from JSON file and then show it once it is loaded.
 
 <center>
-<img src="https://github.com/alem-01/alem_public/blob/master/resources/movieList.01.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
+<img src="./resources/movieList.01.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
 </center>
 
 ### Part 2

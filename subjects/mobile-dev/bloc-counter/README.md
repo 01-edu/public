@@ -8,7 +8,7 @@ Patterns are built in a way that lets developers control the hierarchy of widget
 Implement simple counter app using Bloc Pattern.  
 When you start writing your own application, you will need to structure your app first.
 
-<img src="https://github.com/alem-01/alem_public/blob/master/resources/blocCounter.02.png?raw=true" width="200"/>
+<img src="./resources/blocCounter.02.png?raw=true" width="200"/>
 
 ### Objective
 
@@ -31,7 +31,7 @@ Bloc consist of 2 concepts :
 </code> 
 </pre>
 
-<img src="https://github.com/alem-01/alem_public/blob/master/resources/blocCounter.01.png?raw=true"/>
+<img src="./resources/blocCounter.01.png?raw=true"/>
 
 <pre>
 <code>

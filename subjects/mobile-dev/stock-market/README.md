@@ -35,7 +35,7 @@ Make sure to manage states via any of the following patterns:
 
 <center>
 
-<img src="https://github.com/alem-01/alem_public/blob/master/resources/stockMarket.01.jpg?raw=true" style = "width: 210px !important; height: 420px !important;"/>
+<img src="./resources/stockMarket.01.jpg?raw=true" style = "width: 210px !important; height: 420px !important;"/>
 
-<img src="https://github.com/alem-01/alem_public/blob/master/resources/stockMarket.02.jpg?raw=true" style = "width: 210px !important; height: 420px !important;"/>
+<img src="./resources/stockMarket.02.jpg?raw=true" style = "width: 210px !important; height: 420px !important;"/>
 </center>

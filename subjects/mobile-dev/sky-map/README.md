@@ -31,11 +31,11 @@ Possible examples of the app:
 
 <center>
 
-<img src="https://github.com/alem-01/alem_public/blob/master/resources/skyMap.01.jpg?raw=true" style = "width: 840px !important; height: 420px !important;"/>
+<img src="./resources/skyMap.01.jpg?raw=true" style = "width: 840px !important; height: 420px !important;"/>
 
 </center>
 
 <center>
 
-<img src="https://github.com/alem-01/alem_public/blob/master/resources/skyMap.02.png?raw=true" style = "width: 840px !important; height: 420px !important;"/>
+<img src="./resources/skyMap.02.png?raw=true" style = "width: 840px !important; height: 420px !important;"/>
 </center>

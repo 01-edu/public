@@ -53,7 +53,7 @@ class Category {
 - Note: only standard Dart package, package:flutter are allowed.
 
 <center>
-<img src="https://github.com/alem-01/alem_public/blob/master/resources/quizApp.01.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
+<img src="./resources/quizApp.01.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
 </center>
 
 ### Second Part
@@ -65,9 +65,9 @@ class Category {
 - When answering question change color of button or background, so the user know that answer is right or wrong.
 
 <center>
-<img src="https://github.com/alem-01/alem_public/blob/master/resources/quizApp.01.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
+<img src="./resources/quizApp.01.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
 
-<img src="https://github.com/alem-01/alem_public/blob/master/resources/quizApp.02.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
+<img src="./resources/quizApp.02.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
 </center>
 
 ### Third part
@@ -77,7 +77,7 @@ When all questions are answered show the score on a new page.
 - It should have Text with score and button which returns user to the main page
 
 <center>
-<img src="https://github.com/alem-01/alem_public/blob/master/resources/quizApp.03.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
+<img src="./resources/quizApp.03.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
 </center>
 
 ### **Bonus**

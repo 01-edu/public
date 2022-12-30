@@ -22,6 +22,6 @@ Develop an app that uses [accelerometer](https://www.credencys.com/blog/accelero
 
 <center>
 
-<img src="https://github.com/alem-01/alem_public/blob/master/resources/bouncer.01.jpg?raw=true" style = "width: 420px !important; height: 210px !important;"/>
+<img src="./resources/bouncer.01.jpg?raw=true" style = "width: 420px !important; height: 210px !important;"/>
 
 </center>

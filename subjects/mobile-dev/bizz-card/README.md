@@ -62,7 +62,7 @@ Try to make it as it is shown in the example below:
 
 <!-- <center> -->
 <center>
-<img src="https://github.com/alem-01/alem_public/blob/master/resources/bizzCard.01.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
+<img src="./resources/bizzCard.01.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
 <!-- </center> -->
 </center>
 
