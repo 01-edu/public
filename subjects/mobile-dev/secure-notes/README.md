@@ -21,9 +21,9 @@ Packages: _sqflite_ package.
 - Add ability to delete item by swiping
 - Add "add" button, which opens screen with 3 text fields
 
-<img src="https://github.com/alem-01/alem_public/blob/master/resources/secureNotes.01.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
+<img src="./resources/secureNotes.01.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
 
-<img src="https://github.com/alem-01/alem_public/blob/master/resources/secureNotes.02.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
+<img src="./resources/secureNotes.02.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
 
 ### Second Part
 

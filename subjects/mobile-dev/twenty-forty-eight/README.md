@@ -16,6 +16,6 @@ Game should stop when no legal movement is possible, and let user restart game. 
 
 <center>
 
-<img src="https://github.com/alem-01/alem_public/blob/master/resources/2048.01.png?raw=true" style = "width: 840px !important; height: 420px !important;"/>
+<img src="./resources/2048.01.png?raw=true" style = "width: 840px !important; height: 420px !important;"/>
 
 </center>

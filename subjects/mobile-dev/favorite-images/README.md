@@ -17,7 +17,7 @@ Allowed package: [image_picker](https://pub.dev/packages/image_picker).
 - Show "No images selected" message if no images are loaded.
 
 <center>
-<img src="https://github.com/alem-01/alem_public/blob/master/resources/imageLibrary.01.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
+<img src="./resources/imageLibrary.01.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
 
 </center>
 
@@ -28,7 +28,7 @@ Allowed package: [image_picker](https://pub.dev/packages/image_picker).
 - Add an ability to zoom in, zoom out the image, see [example](https://api.flutter.dev/flutter/widgets/InteractiveViewer-class.html).
 
 <center>
-<img src="https://github.com/alem-01/alem_public/blob/master/resources/imageLibrary.02.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
+<img src="./resources/imageLibrary.02.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
 
-<img src="https://github.com/alem-01/alem_public/blob/master/resources/imageLibrary.03.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
+<img src="./resources/imageLibrary.03.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
 </center>
