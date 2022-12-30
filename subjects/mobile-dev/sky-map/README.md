@@ -1,6 +1,6 @@
 # Sky map
 
-### Exercise 
+### Exercise
 
 Develop an app intended to work with GPS, accelerometer, magnetometer and real-time update. Updating an image at least 10 times in a second is considered to be real-time update.
 You will be using the hardware's sensor information to determine your location, and position of the device.
@@ -17,7 +17,7 @@ Objects to be diplayed:
 
 - All planets of our solar system
 - Sun and Moon
-- 3 constellations of  your choice
+- 3 constellations of your choice
 
 ### Objectives
 
