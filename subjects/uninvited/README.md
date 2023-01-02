@@ -40,4 +40,4 @@ curl -X POST localhost:5000/Ronaldinho -H "Content-Type: application/json" -d '{
 
 ### Provided files
 
-Download [`guests.zip`](../guests.zip) to have at your disposal the `guests` directory containing the files with the guests information. You must save it in your `uninvited` exercise directory to test your program on it.
+Download [`guests.zip`](../tell-me-how-many/resources/guests.zip) to have at your disposal the `guests` directory containing the files with the guests information. You must save it in your `uninvited` exercise directory to test your program on it.
