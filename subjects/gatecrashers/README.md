@@ -61,4 +61,4 @@ Transfer-Encoding: chunked
 
 ### Provided files
 
-Download [`guests.zip`](../guests.zip) to have at your disposal the `guests` directory containing the files with the guest information. You must save it in your `gatecrashers` exercise directory to test your program on it.
+Download [`guests.zip`](../tell-me-how-many/resources/guests.zip) to have at your disposal the `guests` directory containing the files with the guest information. You must save it in your `gatecrashers` exercise directory to test your program on it.
