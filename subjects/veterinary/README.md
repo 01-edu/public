@@ -7,9 +7,9 @@ To help him get introduced to your neighborhood, create an object `veterinary` w
 
 - an array of string `animalKnowledge` that will store all the animal species the new veterinary can treat,
 
-- a function `canTreat` that will receive a string as an argument and will return a boolean indicating if the string is present in the veterinary `animalKnowledge` array
+- a function `canTreat` that will receive a string as an argument and will return a boolean indicating if the string is present in the veterinary `animalKnowledge` array,
 
-- a function `respondClient` that will receive two string, the pet name and the animal species of the pet, and will return a string that will include `Yes` or `No` plus the pet name accordingly.
+- a function `respondClient` that will receive two string, the pet name and the animal species of the pet, and will return a string that will include `Yes` or `No` plus the pet name depending on whether the pet can be treated or not, as in the example below.
 
 ### Example
 
