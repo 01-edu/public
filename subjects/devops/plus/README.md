@@ -24,7 +24,7 @@ You could use `expr` like this:
 
 ```console
 $ expr 2 - 2
-0$
+0
 $
 ```
 
