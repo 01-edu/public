@@ -24,7 +24,7 @@
 
 ##### Try to search for the location `"london-uk"`.
 
-###### Does it present as result "Pink Floyd", "Led Zeppelin", "Aerosmith", "Alec Benjamin", "Nickelback", "Eagles", "Linkin Park" and "Coldplay"?
+###### Does it present as result at least "Pink Floyd", "Led Zeppelin", "Aerosmith", "Alec Benjamin", "Nickelback", "Eagles", "Linkin Park" and "Coldplay"?
 
 ##### Try to search for the artist/band `"queen"`.
 
