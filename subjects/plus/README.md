@@ -32,7 +32,7 @@ And `$(...)` like this:
 
 ```console
 $ echo "This is the content of a file: $(cat file.txt)"
-This is the content of a file: <content of the file>`$
+This is the content of a file: <content of the file>`
 $
 ```
 
