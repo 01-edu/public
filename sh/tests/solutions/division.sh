@@ -22,7 +22,7 @@ then
 fi
 
 # Divide the first argument by the second using bc
-result=$(echo "$1 / $2" | bc -l)
+result=$(echo "$1 / $2" | bc )
 
 # Output the result
 echo $result
