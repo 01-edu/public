@@ -7,8 +7,8 @@ In this exercise, you will make a script `plus.sh` that will take two arguments 
 ### Usage
 
 ```console
-$ ./plus.sh 2 3 | cat -e
-5$
+$ ./plus.sh 2 3
+5
 $
 ```
 
