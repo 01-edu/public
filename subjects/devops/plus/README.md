@@ -36,7 +36,7 @@ This is the content of a file: <content of the file>`
 $
 ```
 
-### Notions
+### References
 
 - [expr](https://www.gnu.org/software/coreutils/manual/html_node/expr-invocation.html#expr-invocation).
 
