@@ -4,13 +4,15 @@
 
 In this exercise, you will make a script `division.sh` that will take two arguments from the command line, and divide the first one by the second one.
 
-You will need to handle what to do when the inputs are wrong.
+If there is a remainder after doing the division, it should be ignored.
 
-If the divisor is `0` you will need to output `Error: division by zero is not allowed`.
+You will need to handle what to do when the inputs are wrong:
 
-If the arguments are not numbers, the output should be `Error: both arguments must be numeric`.
+- If the divisor is `0` you will need to output `Error: division by zero is not allowed`.
 
-In the case where the number of arguments are not enough, the output should be `Error: two numbers should be provided`.
+- If the arguments are not numbers, the output should be `Error: both arguments must be numeric`.
+
+- In the case where the number of arguments are not enough, the output should be `Error: two numbers should be provided`.
 
 Your script should handle very large numbers as well.
 
