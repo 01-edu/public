@@ -17,6 +17,7 @@ challenge() {
 challenge "10" "2"
 challenge "4" "2"
 challenge "0.5" "0.5"
+challenge "5" "2"
 challenge "0.5"
 challenge "foo" "bar"
 challenge "1" "0"
