@@ -1,32 +1,44 @@
-### Environment
+---
+name: Bug report
+about: Create a report to help us improve
+title: ""
+labels: ""
+assignees: ""
+---
 
-Device (web, mobile): 
+**Describe the bug**
+A clear and concise description of what the bug/error is.
 
-Operating system (Windows, macOS, Linux): 
+**Users**
+Usernames of students/admin that are affected by the issue: 
 
-Browser (Chrome, Firefox, Safari, Brave): 
+**To Reproduce**
+Steps to reproduce the behavior:
 
-### Steps to reproduce the issue = what action results in the issue
+1. Go to '...'
+2. Click on '....'
+3. Scroll down to '....'
+4. See error
 
-URL of the page: 
+**Expected behavior**
+A clear and concise description of what you expected to happen.
 
-Steps to follow: 
+**Screenshots & Video**
+If applicable, add screenshots/videos to help explain your problem.
+<sub>Using tools like [Loom](https://chrome.google.com/webstore/detail/loom-for-chrome/liecbddmkiiihnedobmlmillhodjkdmb)</sub>
 
-1. 
-2. 
+**Desktop (please complete the following information):**
 
-Usernames of students that are affected by the issue: 
+- OS: [e.g. iOS]
+- Browser [e.g. chrome, safari]
+- Version [e.g. 22]
 
-### Expected Result = How the software should have performed
+**Smartphone (please complete the following information):**
 
-What was the expected outcome of the action taken in `step 3` ? 
+- Device: [e.g. iPhone6]
+- OS: [e.g. iOS8.1]
+- Browser [e.g. stock browser, safari]
+- Version [e.g. 22]
 
-### Actual Result = How the software actually performed
-
-Actual outcome of the action taken in `step 3`  
-
-Error message that appears (if applicable) 
-
-### Visual Proof
-
-Screenshots & Videos (using [Loom](https://chrome.google.com/webstore/detail/loom-for-chrome/liecbddmkiiihnedobmlmillhodjkdmb))
+**Additional context**
+Add any other context about the problem here.
