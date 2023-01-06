@@ -13,7 +13,7 @@ A clear and concise description of what the bug/error is.
 Usernames of students/admin that are affected by the issue: 
 
 **Severity**
-Choose the severity label (❗️minor), (‼️ major), or (🚨 critical).
+Choose the severity label (❗️minor), (‼️ major), or (⚠️ critical).
 
 **Type**
 Choose the label (🖌️ ui), (⚙️ functionality), (🗂️ documentation), or (🔐 security)
