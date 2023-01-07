@@ -10,6 +10,8 @@
 
 ###### Do similar operations with 4 other stocks of your choice. Does the app behave accordingly?
 
+###### Does the app update data about a stock at least 5 times per second?
+
 ###### Try to sell everything that you bought, do stock disappear from your wallet and fake dollars increase in the amount accordingly?
 
 ###### Can you see historical data for any stock? You should be able to see the data either since company became public or for the past year.
