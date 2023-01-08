@@ -1,20 +1,18 @@
-# Intro
+## intro
+
+Dart is an object-oriented, class-based, garbage-collected language. Dart is primarily used for client development, like web and mobile apps. It can also be used to build server and desktop applications.
+
+Dart is the programming language of the [Flutter](https://flutter.dev) framework. Flutter is used to develop cross-platform applications for Android, iOS, web and desktop from a single codebase.
 
 ### Instructions
 
-Dart is a programming language designed for client development, such as for the web and mobile apps. It is developed by Google and can also be used to build server and desktop applications. Dart is an object-oriented, class-based, garbage-collected language with C-style syntax.
+Let's start with the standard tradition for learning a new programming language; you're first `"Hello, world!"` with dart.
 
-Dart (within Flutter framework) is used to develop cross platform applications for Android, iOS, Linux, macOS, Windows, Google Fuchsia, and the web from a single codebase.
-
-Let's start with standard programming language tradition, write your first `"Hello, world!"` in Dart.
-
-Create a file named `intro.dart` with the following content and run it!
-
-### Expected function
+Create a `main` function which prints `"Hello, world!"`, followed by a new-line character.
 
 ```dart
 void main() {
-	print("Hello, world!");
+	print("");
 }
 ```
 
@@ -23,5 +21,6 @@ void main() {
 To run the program, execute a command:
 
 ```console
-dart intro.dart
+$ dart intro.dart
+Hello, world!
 ```
