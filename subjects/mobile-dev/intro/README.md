@@ -14,7 +14,7 @@ Create a file named `intro.dart` with the following content and run it!
 
 ```dart
 void main() {
-	print("Hello, World!");
+	print("Hello, world!");
 }
 ```
 
