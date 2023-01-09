@@ -12,7 +12,9 @@ challenge() {
     submitted=$(cd "$1" && bash "$script_dirS"/$FILENAME)
     expected=$(cd "$1" && bash "$script_dirS"/solutions/in-back-ground.sh)
     diff <(echo "$submitted") <(echo "$expected")
-    diff sol-output.log output.log
+    if [ -s ${sol-output.log && output.log} ]; then
+        diff sol-output.log output.log
+    fi
 }
 
 # True if FILE exists and is a regular file
@@ -20,6 +22,8 @@ if [ -f ${FILENAME} ]; then
     # FILE exists and it's not empty
     if [ -s ${FILENAME} ]; then
         challenge .
+        # This will faill the grep command
+        challenge easy-perm/
     else
         echo "The file exist but is empty"
         exit 1
