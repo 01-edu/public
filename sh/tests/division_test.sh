@@ -24,7 +24,6 @@ challenge() {
     submitted=$(bash "$script_dirS"/student/division.sh $1 $2)
     expected=$(bash "$script_dirS"/solutions/division.sh $1 $2)
     fi
-
     diff <(echo "$submitted") <(echo "$expected")
 }
 
