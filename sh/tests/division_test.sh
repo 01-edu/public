@@ -8,6 +8,14 @@ IFS='
 script_dirS=$(cd -P "$(dirname "$BASH_SOURCE")" &>/dev/null && pwd)
 
 challenge() {
+    # Test if test command was used
+    if grep -q "test" "$script_dirS"/student/division.sh
+    then
+        echo "Error: the test command cannot be used in the student script"
+        return
+    fi
+
+    # Test with one or two arguments
     if [ $# -eq 1 ]
     then
     submitted=$(bash "$script_dirS"/student/division.sh $1)
