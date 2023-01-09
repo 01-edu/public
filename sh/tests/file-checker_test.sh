@@ -6,13 +6,12 @@ IFS='
 
 script_dirS=$(cd -P "$(dirname "$BASH_SOURCE")" &>/dev/null && pwd)
 
-submitted=$(bash "$script_dirS"/student/plus.sh $1)
-expected=$(bash "$script_dirS"/solutions/plus.sh $1)
+submitted=$(bash "$script_dirS"/student/file-checker.sh "$script_dirS"/student/hello-devops.sh)
+expected=$(bash "$script_dirS"/solutions/file-checker.sh "$script_dirS"/student/hello-devops.sh)
 
 # check that test command was not used
-grep -q "test" $1
 
-if [ $? -eq 0 ]
+if grep -q "test" "$script_dirS"/student/file-checker.sh
 then
     echo "The 'test' command is not allowed in this exercise"
     exit 1
