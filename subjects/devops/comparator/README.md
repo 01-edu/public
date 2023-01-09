@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a script `comparator.sh` which will verify if the first given argument is bigger, smaller or equal than the second given argument.
+Create a script `comparator.sh` which will accept only two numbers as arguments and it will verify if the first given argument is bigger, smaller or equal than the second given argument.
 You must print te output like the example in usage.
 
 ### Usage
