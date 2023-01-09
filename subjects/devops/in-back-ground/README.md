@@ -8,7 +8,7 @@ Create a script `in-back-ground.sh` which will execute a job in the background t
 - The output of the cat command will be piped to the `grep` command, which will search for the string `"moon"` in the file.
 - If the `grep` command succeeds ( if it finds the string "moon"), the echo command will run and print `"The moon fact was found!"` to the `output.log` file.
 - If the command finds the string "moon", it will print the matching line to the `stdout`.
-- Redirect the `stdout` to a new file `output.log`
+- Redirect the `stdout` to a new file `output.log`.
 - Redirect `stderr` to the same place as `stdout` (in this case, the output.log file).
 
 You must do all these steps running only one job and using the command `nohup`!
@@ -46,7 +46,7 @@ In a Unix-like shell, stdin, stdout, and stderr are three standard streams that 
 
 - `stderr` (standard error) is a stream of data that a program or process writes to for error messages and other diagnostic output. It can also be redirected to write to a file or to the input of another command using the `2>` operator.
 
-- In order to redirect both stdout and stderr to a file you can use the `2>&1` operator.
+- You can use `2>&1` to redirect the `stderr` to the `stdout` current location.
 
 > You have to use Man or Google to know more about commands flags, in order to solve this exercise!
 > Google and Man will be your friends!
