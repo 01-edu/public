@@ -22,8 +22,11 @@ if [ -f ${FILENAME} ]; then
     # FILE exists and it's not empty
     if [ -s ${FILENAME} ]; then
         challenge .
+
         # This will faill the grep command
-        challenge easy-perm/
+        sed -i 's/moon/sun/g' facts
+        challenge .
+        sed -i 's/sun/moon/g' facts
     else
         echo "The file exist but is empty"
         exit 1
