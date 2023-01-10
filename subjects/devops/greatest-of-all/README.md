@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a script `greatest-of-all.sh` which will ask you to input 10 numbers and then it will check what was the biggest number given. You must ask for the number using the string "Enter a number: " and then use the string "The largest number is: " to print the output like in the example bellow.
+Create a script `greatest-of-all.sh` which will ask you to input 10 numbers and then it will check what was the biggest number given. You must ask for the number using the string "Enter a number: " and then use the string "The largest number is: " to print the output like in the example below.
 
 ### Usage
 
@@ -19,8 +19,20 @@ Enter a number: 24
 Enter a number: 45
 Enter a number: 2
 The largest number is 45
+$ ./greatest-of-all.sh
+Enter a number: -14
+ERROR: Invalid input only positive numerical characters are allowed
+./greatest-of-all.sh
+Enter a number: alpha
+ERROR: Invalid input only positive numerical characters are allowed
+./greatest-of-all.sh
+Enter a number: 10001
+ERROR: The number entered is too large
 $
 ```
+
+- Only positive numbers up to "10000" will be tested.
+- If the given number is greater than "10000" you must print the error message "ERROR: The number entered is too large" and if its not a number or it is a negative number, print the error "ERROR: Invalid input only positive numerical characters are allowed". When either of these errors occurs, the script will print the error message, exit with an exit code of `1`, and will not continue to execute the next line.
 
 ### Hints
 
@@ -36,7 +48,7 @@ fi
 
 In this syntax, CONDITION is a test or expression that returns a boolean value (true or false). If the CONDITION is true, the commands inside the then block are executed. If the CONDITION is false, the commands inside the then block are skipped.
 
-The "-gt", "-lt", and "-eq" operators are used in the shell to perform tests and comparisons on values. These operators are commonly used with the [ command (also known as the test command) to check the value of a variable or expression.
+The "-gt", "-lt", and "-eq" operators are used in the shell to perform tests and comparisons on values. These operators are commonly used with the "[" command (also known as the test command) to check the value of a variable or expression.
 
 Here is a summary of the "-gt", "-lt", and "-eq" operators:
 
@@ -68,6 +80,8 @@ echo "Hello, $name"
 ```
 
 This script will display the prompt "Enter your name: " and then wait for the user to enter their name. The name that the user enters will be stored in the name variable, and then the script will greet the user with "Hello, [name]}".
+
+The `exit 1` command is used to indicate that the script has exited with an error. The number "1" is known as an exit code or exit status.
 
 > You have to use Man or Google to know more about commands flags, in order to solve this exercise!
 > Google and Man will be your friends!
