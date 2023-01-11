@@ -30,7 +30,7 @@ then
     exit 1
 elif ! [[ $1 =~ $number && $3 =~ $number ]]
 then
-    >&2 echo "Error: not a valid number"
+    >&2 echo "Error: invalid number"
     exit 4
 else
     case $2 in
