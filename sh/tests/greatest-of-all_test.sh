@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# Unofficial Bash Strict Mode
-# set -euo pipefail
 IFS='
 '
 script_dirS=$(cd -P "$(dirname "$BASH_SOURCE")" &>/dev/null && pwd)
