@@ -15,7 +15,7 @@ Each operator should have its own function named as follow:
 
 Each function will receive two arguments, the left number and the right number, and return the result of the operation.
 
-The functions assume the input is valid, so the input should be checked before to call the functions.
+The functions assume that the input is valid, so the input must be checked before calling the functions.
 
 > The functions will also be tested individually, so it is important to name each function exactly as above, the behavior of the functions have to match the exercise instructions.
 
