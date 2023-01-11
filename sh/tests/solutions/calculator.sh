@@ -51,14 +51,14 @@ else
             if [ $3 == 0 ]
             then
                 >&2 echo "Error: division by 0"
-                exit 3
+                exit 2
             fi
             echo $(do_divide $1 $3)
             ;;
         
         *)
             >&2 echo "Error: invalid operator"
-            exit 2
+            exit 3
             ;;
 
     esac
