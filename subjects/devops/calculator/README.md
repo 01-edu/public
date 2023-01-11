@@ -86,8 +86,6 @@ print_full_name () {
 print_full_name "Gene" "Mallamar"
 ```
 
-- Try out `getent passwd` and read `man getent` for finding information about users.
-
 > Google and Man will be your friends!  
 
 ### References
