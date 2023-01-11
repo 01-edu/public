@@ -11,8 +11,8 @@ challenge() {
     "
     expected="./check-user.sh $@
     "
-    submitted+=$(2>&1 bash "$script_dirS"/student/check-user.sh "$@")
-    expected+=$(2>&1 bash "$script_dirS"/solutions/check-user.sh "$@")
+    submitted+=$(bash 2>&1 "$script_dirS"/student/check-user.sh "$@")
+    expected+=$(bash 2>&1 "$script_dirS"/solutions/check-user.sh "$@")
 
     diff -U 1 <(echo "$submitted") <(echo "$expected")
 }
@@ -26,4 +26,3 @@ challenge "-e" "unknown_not_found"
 challenge
 challenge "-i" "root" "too" "many" "args"
 challenge "-t" "root"
-
