@@ -3,7 +3,7 @@
 ### Instructions
 
 Create a script `comparator.sh` which will accept only two numbers as arguments and it will verify if the first given argument is bigger, smaller or equal than the second given argument.
-You must print te output like the example in usage.
+You must print the output like the example in usage.
 
 ### Usage
 
@@ -14,6 +14,12 @@ $ ./comparator.sh 29 3
 29 > 3
 $ ./comparator.sh 12 12
 12 = 12
+$ ./comparator.sh  8 9 9
+Error: The script only works with two arguments!
+$ ./comparator.sh  8 s
+Error: Only two numeric arguments are acceptable!
+$ ./comparator.sh  8
+Error: The script only works with two arguments!
 $
 ```
 
