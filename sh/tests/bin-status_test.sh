@@ -9,8 +9,8 @@ FILENAME="student/bin-status.sh"
 
 
 challenge() {
-	submitted=$(eval "$1" ; bash $FILENAME)
-	expected=$(eval "$1" ; bash solutions/bin-status.sh)
+	submitted=$(eval "$@" >/dev/null 2>&1 ; source $FILENAME)
+	expected=$(eval "$@" >/dev/null 2>&1 ; source solutions/bin-status.sh)
 
 	diff <(echo "$submitted") <(echo "$expected")
 }
