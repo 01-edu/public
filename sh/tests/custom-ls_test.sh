@@ -5,22 +5,21 @@ set -euo pipefail
 IFS='
 '
 
+shopt -s expand_aliases
+
 FILENAME="student/custom-ls.sh"
 script_dirS=$(cd -P "$(dirname "$BASH_SOURCE")" &>/dev/null && pwd)
 
 challenge() {
 
-   	$(bash "$script_dirS"/$FILENAME)
-
+   	source "$script_dirS"/$FILENAME
     submitted=$(cd "$1" && custom-ls)
-
     unalias custom-ls
 
-	$(bash "$script_dirS"/solutions/custom-ls.sh)
+	source "$script_dirS"/solutions/custom-ls.sh
     expected=$(cd "$1" && custom-ls)
-
     unalias custom-ls
-    # diff
+
 	diff <(echo "$submitted") <(echo "$expected")
 }
 
