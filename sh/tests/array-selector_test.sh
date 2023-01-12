@@ -9,8 +9,8 @@ IFS='
 script_dirS=$(cd -P "$(dirname "$BASH_SOURCE")" &>/dev/null && pwd)
 
 challenge() {
-    submitted=$(bash "$script_dirS"/student/array-selector.sh $1)
-    expected=$(bash "$script_dirS"/solutions/array-selector.sh $1)
+    submitted=$(bash "$script_dirS"/student/array-selector.sh "$@")
+    expected=$(bash "$script_dirS"/solutions/array-selector.sh "$@")
 
     diff <(echo "$submitted") <(echo "$expected")
 }
@@ -27,7 +27,4 @@ challenge "abc"
 
 # Test with wrong number of arguments
 
-submitted=$(bash "$script_dirS"/student/array-selector.sh)
-submitted=$(bash "$script_dirS"/solutions/array-selector.sh)
-
-diff <(echo "$submitted") <(echo "$expected")
+challenge
