@@ -4,7 +4,7 @@
 for (( ; ; ))
 do
     echo "Player one, please enter a number between 1 and 100000 (inclusive) and press enter:"
-    read -rs number
+    read -s number
 
     # Check if input is empty
     if [[ -z "$number" ]]
@@ -33,7 +33,7 @@ done
 for (( ; ; ))
 do
     echo "Player two, please enter your guess:"
-    read -r guess
+    read guess
     if [[ -z "$guess" ]]
     then
         echo "Error: Input is empty"
