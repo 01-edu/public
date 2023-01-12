@@ -5,19 +5,12 @@ set -euo pipefail
 IFS='
 '
 
-# Test if there were only two arguments given
-
 script_dirS=$(cd -P "$(dirname "$BASH_SOURCE")" &>/dev/null && pwd)
 
 challenge() {
-    if [ $# -ne 2 ]; then
-        submitted=$(bash "$script_dirS"/student/comparator.sh $1)
-        expected=$(bash "$script_dirS"/solutions/comparator.sh $1)
-    else
-        submitted=$(bash "$script_dirS"/student/comparator.sh $1 $2)
-        expected=$(bash "$script_dirS"/solutions/comparator.sh $1 $2)
-        diff <(echo "$submitted") <(echo "$expected")
-    fi
+    submitted=$(bash $script_dirS/student/comparator.sh "$@")
+    expected=$(bash $script_dirS/solutions/comparator.sh "$@")
+    diff <(echo "$submitted") <(echo "$expected")
 }
 
 for i in $(seq 1 10); do
