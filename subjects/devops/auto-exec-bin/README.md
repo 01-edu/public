@@ -4,8 +4,8 @@
 
 Create a file `auto-exec-bin.sh`, which will make a binary with the name `01exec` in `~/myBins` executable from any working directory.
 
-You can use any binary from your choice or you can use our binary: [01exec](https://assets.01-edu.org/devops-branch/01exec)
-> If our binary is not working in your environment, you can pick any binary for the tests!
+You can use any binary from your choice to test your script.
+>  You can pick any binary for the tests!
 
 Expected Output:
 
@@ -25,7 +25,8 @@ $
 ### Hints
 
 `PATH` environment variable is a variable where the shell search for the binaries for the execution.
-when you put a command the shell will search for binary in `PATH` folders
+
+When you put a command the shell will search for binary in `PATH` folders
 
 ![auto binary exec](https://assets.01-edu.org/devops-branch/auto-exec-diagram.png)
 
