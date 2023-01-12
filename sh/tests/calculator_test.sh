@@ -25,6 +25,13 @@ challenge() {
     fi
 }
 
+# Check if student uses case statement
+if [[ $(cat "$script_dirS"/solutions/calculator.sh | grep case | wc -l) -eq 0 ]]
+    then
+    echo "Error: the use of case statement is mandatory"
+    exit 1
+fi
+
 # Valid inputs
 challenge "15" "+" "10"
 challenge "15" "-" "10"
