@@ -14,23 +14,20 @@ setupbin() {
         echo "bin already exists!"
     else
         mkdir -p ~/myBins
-        curl -o ~/myBins/01exec https://assets.01-edu.org/devops-branch/01exec
-        chmod +x ~/myBins/01exec
-        echo "bin installed!"
+        echo "echo Hello 01 Scripting Pool" > $HOME/myBins/01exec
     fi
+    chmod +x $HOME/myBins/01exec
 }
 
 challenge() {
+    OLD_PATH=$PATH
     # run soultion script
-    export PATH=""
-
-   	$(bash "$script_dirS"/$FILENAME)
+    source "$script_dirS"/$FILENAME
 	submitted=$(cd / && 01exec)
 
+    PATH=$OLD_PATH
     # run student script
-    export PATH=""
-
-	$(bash "$script_dirS"/solutions/auto-exec-bin.sh)
+	source "$script_dirS"/solutions/auto-exec-bin.sh
 	expected=$(cd / && 01exec)
 
     # diff
