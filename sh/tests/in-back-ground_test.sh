@@ -7,31 +7,20 @@ IFS='
 
 FILENAME="student/in-back-ground.sh"
 script_dirS=$(cd -P "$(dirname "$BASH_SOURCE")" &>/dev/null && pwd)
+echo "- Australia is wider than the moon. The moon sits at 3400km in diameter, while Australia's diameter from east to west is almost 4000km." >facts
 
 challenge() {
     submitted=$(cd "$1" && bash "$script_dirS"/$FILENAME)
     expected=$(cd "$1" && bash "$script_dirS"/solutions/in-back-ground.sh)
     diff <(echo "$submitted") <(echo "$expected")
-    if [ -s ${sol-output.log && output.log} ]; then
-        diff sol-output.log output.log
-    fi
 }
 
-# True if FILE exists and is a regular file
-if [ -f ${FILENAME} ]; then
-    # FILE exists and it's not empty
-    if [ -s ${FILENAME} ]; then
-        challenge .
+challenge .
 
-        # This will faill the grep command
-        sed -i 's/moon/sun/g' facts
-        challenge .
-        sed -i 's/sun/moon/g' facts
-    else
-        echo "The file exist but is empty"
-        exit 1
-    fi
-else
-    echo "File does not exist"
-    exit 1
+echo "The sun is a star!" >facts
+challenge .
+
+if [ -f sol-output ] && [ -f output ]; then
+    diff sol-output output
+    rm sol-output output
 fi
