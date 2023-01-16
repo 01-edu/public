@@ -3,8 +3,7 @@
 IFS='
 '
 
-if [[ $# -eq 1 ]]; then
-    mkdir -p $1
+if [[ $# -eq 1 && -d "$1" ]]; then
     cd $1
     touch -t 01010001 ciao
     chmod 442 ciao
