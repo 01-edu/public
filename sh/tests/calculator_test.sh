@@ -26,7 +26,7 @@ challenge() {
 }
 
 # Check if student uses case statement
-if [[ $(cat "$script_dirS"/solutions/calculator.sh | grep case | wc -l) -eq 0 ]]
+if [[ $(cat "$script_dirS"/student/calculator.sh | grep case | wc -l) -eq 0 ]]
     then
     echo "Error: the use of case statement is mandatory"
     exit 1
