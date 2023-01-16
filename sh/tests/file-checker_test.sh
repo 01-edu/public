@@ -19,7 +19,12 @@ challenge() {
     diff <(echo "$submitted") <(echo "$expected")
 }
 
-challenge "./file-checker/readable-only"
-challenge "./file-checker/readable-and-writable"
-challenge "./file-checker/readable-executable"
-challenge "./file-checker/readable-writable-executable"
+chmod -xw "$script_dirS/file-checker/readable-only"
+challenge "$script_dirS/file-checker/readable-only"
+chmod -x "$script_dirS/file-checker/readable-and-writable"
+challenge "$script_dirS/file-checker/readable-and-writable"
+chmod -w "$script_dirS/file-checker/readable-and-executable"
+chmod +x "$script_dirS/file-checker/readable-and-executable"
+challenge "$script_dirS/file-checker/readable-and-executable"
+chmod +x "$script_dirS/file-checker/readable-writable-executable"
+challenge "$script_dirS/file-checker/readable-writable-executable"
