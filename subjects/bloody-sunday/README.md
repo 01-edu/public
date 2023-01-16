@@ -1,8 +1,9 @@
 ## Bloody Sunday
 
 ### Instructions
-Let's get rid of Sundays, by removing them from the calendar. So now a week is only 6 days in length, from `"Monday"` to `"Saturday"`.
 
-Create a function named `bloodySunday` which accepts a `Date`, and returns teh weekday as a `string`.
+Let's eliminate Sundays by taking them out of the calendar, making a week only six days long, from `"Monday"` to `"Saturday"`.
 
-> 01/01/0001 is a Monday.
+Create a function called `bloodySunday` that takes a `Date` as an argument and returns the weekday as a `string`.
+
+Note: 01/01/0001 is a Monday.
