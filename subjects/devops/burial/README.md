@@ -14,7 +14,7 @@ $
 
 ### Hints
 
-To run a job in the foreground and then send it to the background, you can use the `fg and bg` commands.
+To run a job in the foreground and then send it to the background, you can use the `fg` and `bg` commands.
 
 The `fg` command allows you to bring a background job to the foreground, so that it becomes the active job in your terminal. The `bg` command allows you to continue running the job in the background.
 
@@ -43,7 +43,7 @@ $
 
 This will bring the second background job to the foreground. You can use the job number or the job's command line arguments to specify which job to bring to the foreground or send to the background.
 
-Once a job is in the foreground, you can use the "Ctrl + Z" keyboard shortcut to suspend it and send it to the background, or you can use the "Ctrl + C" to finish/close the job.
+Once a job is in the foreground, you can use the `Ctrl + Z` keyboard shortcut to suspend it and send it to the background, or you can use the `Ctrl + C` to finish/close the job.
 
 > You have to use Man or Google to know more about commands flags, in order to solve this exercise!
 > Google and Man will be your friends!
