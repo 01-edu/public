@@ -20,9 +20,9 @@ $
 
 ### Hints
 
-command1 | command2 > output_file
+`command1 | command2 > output_file`
 
-Here, command1 is the command that generates the output you want to parse, and command2 is the command that parses the output. The output of command2 will be redirected to the file output_file using the > operator.
+Here, `command1` is the command that generates the output you want to parse, and `command2` is the command that parses the output. The output of `command2` will be redirected to the file `output_file` using the `>` operator.
 
 > You have to use Man or Google to know more about commands flags, in order to solve this exercise!
 > Google and Man will be your friends!
