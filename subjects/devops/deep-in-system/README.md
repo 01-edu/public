@@ -1,4 +1,4 @@
-# DeepInSystem
+# deep-in-system
 
 ![sysadmin](https://assets.01-edu.org/devops-branch/DeepInSystem/sysadmin.jpeg)
 
@@ -181,15 +181,15 @@ You must export your VM to a safe place, you will need it in the audit.
 You will use your exported VM to run a new VM for each audit.
 Push the shasum of your exported VM, you can get it this way:
 ```console
-user:~$ sha1sum DeepInSystem.ova > DeepInSystem.sha1
-user:~$ cat DeepInSystem.sha1 | cat -e
-<...>255bfef9560<...>  DeepInSystem.ova$
+user:~$ sha1sum deep-in-system.ova > deep-in-system.sha1
+user:~$ cat deep-in-system.sha1 | cat -e
+<...>255bfef9560<...>  deep-in-system.ova$
 user:~$
 ```
 
 Files that must be inside your repository:
 
-- DeepInSystem.sha1
+- deep-in-system.sha1
 
 > It's Forbidden to use external scripts!
 > Any use of external scripts or use of commands without understanding their jobs is considered cheating!
