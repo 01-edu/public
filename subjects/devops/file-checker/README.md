@@ -35,7 +35,7 @@ $
 
 ### Hints
 
-[bash conditional expressions](https://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html) can be used to solve this exercise.
+[bash conditional expressions](https://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html) can be used to solve this exercise. When using those expressions, you only need to take into account it's default behavior.
 
 For example for `script.sh`:
 
