@@ -4,7 +4,7 @@
 
 Create a file `append-output.sh` that will get the output of a file and parse it, and then write it to a file with a specific format using a single command.
 
-Get the content of the `songs.txt`, parse it with the `grep` command to filter the file in order to get all the songs from the artist whose names start with `J`, and write the output to the existing file `results.txt`, check the example bellow:
+Get the content of the `songs.txt`, parse it with the `grep` command to filter the file in order to get all the songs from the artist whose names start with `J`, and write the output to the existing file `results.txt`, check the example below:
 
 ### Usage
 
@@ -37,11 +37,6 @@ Expected output:
 ```console
 $ ./append-output.sh
 $ cat result.txt
-"In the End" - Linkin Park
-"Crawling" - Linkin Park
-"Elevation" - U2
-"Get the Party Started" - Pink
-"Lady Marmalade" - Christina Aguilera, Lil' Kim, Mya, Pink
 "All for You" - Janet Jackson
 "I Wanna Know" - Joe
 "I'm Real" - Jennifer Lopez
@@ -56,11 +51,11 @@ $
 
 ### Hints
 
-To add the output to a file with a specific format, you can use the >> operator to redirect the output of the command to a file, like this:
+To add the output to a file with a specific format, you can use the `>>` operator to redirect the output of the command to a file, like this:
 
-command1 | command2 >> output_file
+`command1 | command2 >> output_file`
 
-Here, command1 is the command that generates the output you want to parse, and command2 is the command that parses the output. The output of command2 will be redirected to the file output_file using the >> operator. If the file output_file already has some content inside, the file operator >> command will append to that file, unlike the > which will delete the content inside.
+Here, `command1` is the command that generates the output you want to parse, and `command2` is the command that parses the output. The output of `command2` will be redirected to the file `output_file` using the `>>` operator. If the file `output_file` already has some content inside, the file operator `>>` command will append to that file, unlike the `>` which will delete the content inside.
 
 > You have to use Man or Google to know more about commands flags, in order to solve this exercise!
 > Google and Man will be your friends!
