@@ -4,29 +4,28 @@
 for (( ; ; ))
 do
     echo "Player one, please enter a number between 1 and 100000 (inclusive) and press enter:"
-    read -s number
-
+    read number
+    # timeout 1s read -s number
+    # read -p "Player one, please enter a number between 1 and 100000 (inclusive) and press enter:" -s number
+    # sleep 5s
     # Check if input is empty
     if [[ -z "$number" ]]
     then
         echo "Error: Input is empty, please try again."
-        continue
-    fi
 
     # Check if input is a number
-    if ! [[ "$number" =~ ^[0-9]+$ ]]
+    elif ! [[ "$number" =~ ^[0-9]+$ ]]
     then
         echo "Error: Input is not a number, please try again."
-        continue
-    fi
 
     # Check if input is between 1 and 100000 (inclusive)
-    if [[ "$number" -lt 1 || "$number" -gt 100000 ]]
+    elif [[ "$number" -lt 1 || "$number" -gt 100000 ]]
     then
         echo "Error: Number out of range, please try again."
-        continue
+      
+    else
+        break
     fi
-    break
 done
 
 # Start the for loop for player two
