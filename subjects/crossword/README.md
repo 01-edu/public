@@ -24,15 +24,13 @@ const emptyPuzzle =
 `2001
 0..0
 1000
-0..0
-`
+0..0`
 const words = ['casa', 'alan', 'ciao', 'anta']
 
 crosswordSolver(emptyPuzzle, words)
 
 /* output:
-`
-casa
+`casa
 i..l
 anta
 o..n`
