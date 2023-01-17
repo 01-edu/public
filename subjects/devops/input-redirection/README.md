@@ -14,12 +14,14 @@ The input to `cat` will be passed using `HereDoc`. Running `show_info.sh` will o
 ### Usage
 
 - First generate the script programmatically:
+
 ```console
 $ ./input_redirection.sh
 $
 ```
 
 - Then run the generated script:
+
 ```console
 $ ./show_info.sh
 The current directory is: current/path/example$
@@ -31,13 +33,13 @@ $
 ### Hints
 
 You will need to mix more than one redirection tool:
+
 - `>` will be useful to create `show_info.sh`.
 - `<<` is the `HereDoc` redirection.
 
 - To start playing with `HereDoc` you can try `wc -l <<EOF`, type some random things, then write `EOF` on a new line and press `Enter`.
 
 - Don't forget you can use `echo` to write into `show_info.sh`.
-
 
 > You have to use Man or Google to know more about commands flags, in order to solve this exercise!
 > Google and Man will be your friends!
