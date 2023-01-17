@@ -2,45 +2,76 @@
 
 ### Instructions
 
-In this exercise you are going to create a guessing game. The script will prompt player one to submit a number between 1 and 100000 (inclusive) and hide the input from the other player. The script will use a for loop to give player two an infinite amount of chances to guess the number. You will also need to check if the input of player one is valid and if it is not ask again.
+In this exercise you are going to create a guessing game.
+The script will receive the number to guess as argument. The number should be between 1 and 100 (inclusive). The player will then have 5 tries to guess the number.
+To achieve this you will have to use a `for` loop.
 
-Player two will be prompted with a visible prompt to guess the number, then the script will check if the guess is correct, too low or too high.
-
-Your script needs to check if the input is empty, not a number or not between 1 and 100000 (inclusive).
-
-- If the input is empty the script will output `Error: Input is not a number` and continue the script execution.
-- If the input contains multiple numbers, the script will output `Error: Input is not a number` and continue the script execution.
-- If the input is not a number, the script will output as well `Error: Input is not a number`.
-- If the input is not between 1 and 100000 (inclusive), the script will output `Error: Number out of range` and continue the script execution.
-
-If the guess is correct the script will display `Congratulations! You guessed the number.` If the guess is lower than the number, the script will display `Go up.` If the guess is higher, the script will display `Go down.`
+When guessing a valid number the output will be:
+- Number bigger than the secret one: `Go down`.
+- Number smaller than the secret one: `Go up`.
+- Number equal than the secret one: `Congratulations, you found the number!`.
+- Ran out of tries: `You lost, the number was <number>`.
 
 ### Usage
 
 ```console
-$ ./joker-num.sh
-Player one, please enter a number between 1 and 100000 (inclusive) and press enter:
-Player two, please enter your guess:
-asdf
-Error: Input is not a number
-Player two, please enter your guess:
-100
-Go down.
-Player two, please enter your guess:
+$ ./joker-num.sh 55
+Enter your guess (5 tries left):
+50
+Go up
+Enter your guess (4 tries left):
+75
+Go down
+Enter your guess (3 tries left):
+55
+Congratulations, you found the number in 3 moves!
+$ ./joker-num.sh 70
+Enter your guess (5 tries left):
+70
+Congratulations, you found the number in 1 moves!
+$
+```
+
+### Error handling
+
+- Wrong number of arguments or number not between `1` and `100`: The program will print `Error: wrong argument` and return `1`.
+- The player writing something that is not a valid number as an answer: The program will ask again to enter a guess and the number of tries won't be decremented.
+
+Here an example for the last scenario:
+```console
+$ ./joker-num.sh 100
+Enter your guess (5 tries left):
+aaaa
+Enter your guess (5 tries left):
+                                    # Here the player only press enter
+Enter your guess (5 tries left):
+10
+Go up
+Enter your guess (4 tries left):
+20
+Go up
+Enter your guess (3 tries left):
+10000
+Enter your guess (3 tries left):
 30
-Player two, please enter your guess:
-34
-Congratulations! You guessed the number.
+Go up
+Enter your guess (2 tries left):
+40
+Go up
+Enter your guess (1 tries left):
+50
+Go up
+You lost, the number was 100
 ```
 
 ### Hints
 
-- `read` : this command can be used to read input from the command line. To be able to input and hide sensitive information like passwords, the `-s` flag can be used.
+- `read`: this command can be used to read input from the command line.
 
 For example:
 
 ```console
-$ read -s password
+$ read guess
 ```
 
-After running that line, you would type your password, press enter, and it would be stored in the `$password` variable for later use.
+After running that line, you would type your password, press `Enter`, and it would be stored in the `$password` variable for later use.

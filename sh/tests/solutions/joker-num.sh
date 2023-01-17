@@ -1,63 +1,49 @@
 #!/bin/bash
 
-# Loop for player one
-for (( ; ; ))
-do
-    echo "Player one, please enter a number between 1 and 100000 (inclusive) and press enter:"
-    read number
-    # timeout 1s read -s number
-    # read -p "Player one, please enter a number between 1 and 100000 (inclusive) and press enter:" -s number
-    # sleep 5s
-    # Check if input is empty
-    if [[ -z "$number" ]]
-    then
-        echo "Error: Input is empty, please try again."
+if [[ $# != 1
+    || -z "$1"
+    || ! "$1" =~ ^[0-9]+$
+    || "$1" -lt 1
+    || "$1" -gt 100 ]]
+then
+    echo "Error: wrong argument"
+    exit 1
+fi
 
-    # Check if input is a number
-    elif ! [[ "$number" =~ ^[0-9]+$ ]]
-    then
-        echo "Error: Input is not a number, please try again."
-
-    # Check if input is between 1 and 100000 (inclusive)
-    elif [[ "$number" -lt 1 || "$number" -gt 100000 ]]
-    then
-        echo "Error: Number out of range, please try again."
-      
-    else
-        break
-    fi
-done
+number=$1
 
 # Start the for loop for player two
-for (( ; ; ))
+for (( tries_left=5 ; tries_left > 0; tries_left-- ))
 do
-    echo "Player two, please enter your guess:"
+    echo "Enter your guess ($tries_left tries left):"
+
     read guess
-    if [[ -z "$guess" ]]
+    if [[ $? < 0 ]]
     then
-        echo "Error: Input is empty"
+        exit 1
+    fi
+
+    if [[ -z "$guess"
+        || ! "$guess" =~ ^[0-9]+$
+        || "$guess" -lt 1
+        || "$guess" -gt 100 ]]
+    then
+        tries_left=$tries_left+1
         continue
     fi
 
-    # Check if input is a number
-    if ! [[ "$guess" =~ ^[0-9]+$ ]]
-    then
-        echo "Error: Input is not a number"
-        continue
-    fi
-
-    # Check if guess is correct
     if [[ "$guess" -eq "$number" ]]
     then
-        echo "Congratulations! You guessed the number."
-        break
+        echo "Congratulations, you found the number in $((5-$tries_left+1)) moves!"
+        exit
     fi
 
-    # Check if guess is too low or too high
     if [[ "$guess" -lt "$number" ]]
     then
-        echo "Go up."
+        echo "Go up"
     else
-        echo "Go down."
+        echo "Go down"
     fi
 done
+
+echo "You lost, the number was $number"
