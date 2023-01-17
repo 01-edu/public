@@ -27,6 +27,12 @@ challenge_no_output() {
     expected=$(cd "$1" && bash "$script_dirS"/solutions/in-back-ground.sh)
     diff <(echo "$submitted") <(echo "$expected")
 }
+
+if [[ $(cat $FILENAME | grep 'nohup' | wc -l) -lt 1 ]]; then
+    echo "The file does not contain the required commands"
+    exit 1
+fi
+
 challenge .
 rm output.txt
 
