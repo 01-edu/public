@@ -7,6 +7,7 @@ The script will receive the number to guess as argument. The number should be be
 To achieve this you will have to use a `for` loop.
 
 When guessing a valid number the output will be:
+
 - Number bigger than the secret one: `Go down`.
 - Number smaller than the secret one: `Go up`.
 - Number equal than the secret one: `Congratulations, you found the number!`.
@@ -38,6 +39,7 @@ $
 - The player writing something that is not a valid number as an answer: The program will ask again to enter a guess and the number of tries won't be decremented.
 
 Here an example for the last scenario:
+
 ```console
 $ ./joker-num.sh 100
 Enter your guess (5 tries left):
@@ -74,4 +76,6 @@ For example:
 $ read guess
 ```
 
-After running that line, you would type your password, press `Enter`, and it would be stored in the `$password` variable for later use.
+After running that line, you would type your guess, press `Enter`, and it would be stored in the `$guess` variable for later use.
+
+- `if [[ -z "$var" ]]`: could be helpful to check if a string is empty.
