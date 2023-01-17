@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
 IFS='
 '
 script_dirS=$(cd -P "$(dirname "$BASH_SOURCE")" &>/dev/null && pwd)
