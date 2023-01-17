@@ -1,51 +1,76 @@
-test_empty_input() {
-    output=$(echo -n "" | ./solutions/joker-num.sh)
-    expected_output="Error: Input is empty, please try again."
-    diff <(echo "$output") <(echo "$expected_output")
+#!/usr/bin/env bash
+
+IFS='
+'
+script_dirS=$(cd -P "$(dirname "$BASH_SOURCE")" &>/dev/null && pwd)
+
+challenge() {
+    args=${@:1:$#-1}
+    input="${@: -1}"
+
+    submitted=$(
+        ./student/joker-num.sh $args <<EOF
+$input
+EOF
+    )
+    expected=$(
+        ./solutions/joker-num.sh $args <<EOF
+$input
+EOF
+    )
+    diff <(echo "$submitted") <(echo "$expected")
 }
 
-test_not_a_number() {
-    output=$(echo "a" | ./solutions/joker-num.sh)
-    expected_output="Error: Input is not a number, please try again."
-    diff <(echo "$output") <(echo "$expected_output")
-}
+# Good input, win
+input="1
+100
+49
+51
+50
+"
 
-test_number_out_of_range() {
-    output=$(echo "100001" | ./solutions/joker-num.sh)
-    expected_output="Error: Number out of range, please try again."
-    diff <(echo "$output") <(echo "$expected_output")
-}
+# Good input, win
+challenge 50 "1
+100
+49
+51
+50
+"
 
-test_correct_guess() {
-    output=$(echo "50000" | ./solutions/joker-num.sh; echo "50000" | ./solutions/joker-num.sh)
-    expected_output="Congratulations! You guessed the number."
-    diff <(echo "$output") <(echo "$expected_output")
-}
+# Good input, lose
+challenge 50 "10
+20
+30
+40
+41
+42
+"
 
-test_guess_too_low() {
-    output=$(echo "50000" | ./solutions/joker-num.sh; echo "49999" | ./solutions/joker-num.sh)
-    expected_output="Go up."
-    diff <(echo "$output") <(echo "$expected_output")
-}
+# Bad arguments
+challenge "10"
 
-test_guess_too_high() {
-    output=$(echo "50000" | ./solutions/joker-num.sh; echo "50001" | ./solutions/joker-num.sh)
-    expected_output="Go down."
-    diff <(echo "$output") <(echo "$expected_output")
-}
-test_player_one() {
-    test_empty_input
-    test_not_a_number
-    test_number_out_of_range
-}
-test_player_2() {
-    test_empty_input
-    test_not_a_number
-    test_number_out_of_range
-    test_correct_guess
-    test_guess_too_low
-    test_guess_too_high
-}
+# Bad arguments
+challenge 0 "10"
 
-test_player_1
-test_player_2
+# Bad arguments
+challenge 101 "10"
+
+# Bad arguments
+challenge -20 "10"
+
+# Bad arguments
+challenge aa "10"
+
+# Handle bad input
+challenge 78 "10
+aa
+  
+
+3000
+-10
+0
+0
+40
+80
+79
+78"
