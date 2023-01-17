@@ -29,9 +29,9 @@ $ test EXPRESSION
 $ [ EXPRESSION ]
 ```
 
-In a shell script, $1 is a special variable that refers to the first argument passed to the script. Arguments are values that are passed to the script when it is run, and they can be used to modify the behavior of the script or provide input to it.
+In a shell script, `$1` is a special variable that refers to the first argument passed to the script. Arguments are values that are passed to the script when it is run, and they can be used to modify the behavior of the script or provide input to it.
 
-Here is an example of a simple shell script that prints the value of $1:
+Here is an example of a simple shell script that prints the value of `$1`:
 
 ```console
 #!/bin/bash
@@ -43,7 +43,9 @@ echo "The first argument is: $1"
 To run this script and pass an argument to it, you can use the following command:
 
 ```console
-./script.sh arg1
+$ ./script.sh hello
+The first argument is: hello
+$
 ```
 
 > You have to use Man or Google to know more about commands flags, in order to solve this exercise!
