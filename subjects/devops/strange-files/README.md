@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a file the following files:
+Create the following files:
 
 - `firstFile` which contains `Random text inside!` and **nothing else**
 - `"medium_File!"` which contains `Random text inside!` and **nothing else**
