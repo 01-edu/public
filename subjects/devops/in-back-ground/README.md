@@ -6,30 +6,38 @@ Create a script `in-back-ground.sh` which will execute a job in the background t
 
 - Run the command `cat` on the file "facts" which will read the contents of the file and print it to `stdout`.
 - The output of the cat command will be piped to the `grep` command, which will search for the string `"moon"` in the file.
-- If the `grep` command succeeds (if it finds the string "moon"), the echo command will run and print `"The moon fact was found!"` to the `output` file.
+- If the `grep` command succeeds (if it finds the string "moon"), you will print `"The moon fact was found!"` to the `output.txt` file. If it fails the file `output.txt` is not created.
 - If the command finds the string "moon", it will print the matching line to the `stdout`.
-- Redirect the `stdout` to a new file `output`.
+- Redirect the `stdout` to a new file `output.txt`.
 
 You must do all these steps running only one job and using the command `nohup`!
 
 Expected output:
 
 ```console
+$ ls
+facts in-back-ground.sh
 $ ./in-back-ground.sh
 nohup: redirecting stderr to stdout
 - Australia is wider than the moon. The moon sits at 3400km in diameter, while Australia's diameter from east to west is almost 4000km.
 $ ls
-facts in-back-ground.sh output
-$ cat output
+facts in-back-ground.sh output.txt
+$ cat output.txt
 The moon fact was found!
-./in-back-ground.sh
+$
+```
+
+```console
+$ ./in-back-ground.sh   # If the string isn't found
 nohup: redirecting stderr to stdout
 $ ls
 facts in-back-ground.sh
-$ cat output
-cat: output: No such file or directory
+$ cat output.txt
+cat: output.txt: No such file or directory
 $
 ```
+
+> In order to test your solution, you need to create your own `facts` file. This file must not be submitted!
 
 ### Hints
 
