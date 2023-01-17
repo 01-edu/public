@@ -4,13 +4,13 @@
 
 Create a file `append-output.sh` that will get the output of a file and parse it, and then write it to a file with a specific format using a single command.
 
-Get the content of the `songs.txt`, parse it with the `grep` command to filter the file in order to get all the songs from the artist whose names start with `J`, and write the output to the existing file `results.txt`, check the example below:
+Get the content of the file `songs.txt`, parse it with the `grep` command to filter the file in order to get all the songs from the artist whose names start with `J`, and write the output to the existing file `results.txt`, check the example below:
 
 ### Usage
 
 ```console
 $ ls
-songs.txt result.txt
+append-output.sh songs.txt result.txt
 $ cat songs.txt
 "Breathe" - Faith Hill
 "It Wasn't Me" - Shaggy featuring Ricardo "RikRok" Ducent
@@ -37,6 +37,11 @@ Expected output:
 ```console
 $ ./append-output.sh
 $ cat result.txt
+"In the End" - Linkin Park
+"Crawling" - Linkin Park
+"Elevation" - U2
+"Get the Party Started" - Pink
+"Lady Marmalade" - Christina Aguilera, Lil' Kim, Mya, Pink
 "All for You" - Janet Jackson
 "I Wanna Know" - Joe
 "I'm Real" - Jennifer Lopez
@@ -48,6 +53,8 @@ $ cat result.txt
 "Always on Time" - Ja Rule featuring Ashanti
 $
 ```
+
+> Only the script `append-output.sh` must be submitted!
 
 ### Hints
 
