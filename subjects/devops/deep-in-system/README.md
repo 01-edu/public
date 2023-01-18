@@ -3,6 +3,7 @@
 ![sysadmin](https://assets.01-edu.org/devops-branch/DeepInSystem/sysadmin.jpeg)
 
 In this project you will learn how to administer a Linux server, You will set up security and network for a ubuntu server, and will install some popular services.
+
 ### Objectives
 
 Implement some learned skills from the scripting pool in a real-life project.
@@ -12,6 +13,7 @@ Having a first experience in a ubuntu server setup.
 Discovering some network and security implementations in Linux.
 
 Discovering some popular services in Linux.
+
 ### Advice
 
 Read the entire project before starting implementation!
@@ -24,6 +26,7 @@ Create a backup file for each config file you will modify, this will be useful i
 
 > In this project we have put some passwords and private keys exposed, It is not recommended to do this in any way!
 > And don't use these passwords and private keys outside this learning project!
+
 ### Instructions
 
 #### The Virtual Machine Part:
@@ -33,49 +36,58 @@ Install a ubuntu server's latest LTS as a virtual machine.
 - The VM disk size must be 30GB.
 
 - You must divide your VM disk into these partitions:
-`swap:` 4G
-`/`: 15G
-`/home`: 5G
-`/backup`: 6G
+  `swap:` 4G
+  `/`: 15G
+  `/home`: 5G
+  `/backup`: 6G
 
 - Your username must be your login name.
 
 - You have to set your hostname with the format of `{username}-host`.
-if your login is `potato`, then your hostname must be `potato-host`.
+  if your login is `potato`, then your hostname must be `potato-host`.
+
 #### The Network Part:
 
 Set a static private IP address, you are free to choose which netmask to use.
 
 You must be able to connect to the Internet!, you can test with:
+
 ```console
 $> ping -c 5 google.com
 ```
+
 > You should not have any internet interface with dynamic ip assignment.
+
 #### The Security Part:
 
 > You do not have to use the root user in your setup process!
-You won't need it when you have `sudo`.
-Sudo provides fine-grained access control. It grants elevated permissions to only a particular program that requires it. You know which program is running with elevated privileges, rather than working with a root shell (running every command with root privileges).
+> You won't need it when you have `sudo`.
+> Sudo provides fine-grained access control. It grants elevated permissions to only a particular program that requires it. You know which program is running with elevated privileges, rather than working with a root shell (running every command with root privileges).
 
 - You have to disable remote root login via ssh.
 
 - Change the ssh port to: `2222`.
 
 - Configure the Firewall, and close all incoming ports, only used ports must be opened.
-> All open ports must be justified in the audit!
+  > All open ports must be justified in the audit!
+
 #### User Management Part:
 
 You have to create 2 users in your server as follows:
-##### 1- *luffy*:
+
+##### 1- _luffy_:
 
 - SSH authentication Method: Public key-based authentication
 - Home directory: `/home/luffy`
 - Sudoer: yes
 - Public key:
+
 ```
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC9NYZT5ueK+2JupNLOAg3xTSd117NwrPgVN15S2gXfijJlpmO1dBgR+ro6N2yngoLTLi2QGUU53xRj0p/SJf+9GOdlkt55ePxs2GNKxACJcrZLPiyOBbb5VRyyRn3ie84qdw7EUSnWROTBWVIqkcxE+YFP9e06gQCuUxm7FyjwUfEMSXEaWCLMC2qREz8H92ZtEcXqQNKotG0CtIuuFsVX1CQdEh86v+SVN6pVbVaXLWFKkpZSubAvGe5g4ffiLjTSMfzmZ+Ayley0DmX+7nsV0OXgIpixMmW1KV8NNo5oxTQFPG3z5v7AgCUM8Hc1R2dj2AjbmDRlh9amTjQd1dPR99TJ84Nu1fIwsar5eG5u/oIA3cUTT028gcAL85GLy7YERUyXpbbaap1QgsJGViCYETflUcvwfdxrDetLBbnQ2aKqo/KxyXFDXt7uR618p2hrotWE9nWZnIQ90FRFUhEIcoq1Gg1on/0G+4M9WIqlChh6qUAq/Gi3IHURXlTBP9M= luffy@luffy
 ```
+
 - Private key:
+
 ```
 -----BEGIN OPENSSH PRIVATE KEY-----
 b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
@@ -116,20 +128,23 @@ CdOvB0UKoEkjWVXQsMAKR0dGn6ooyFbfXoawq0ILxvrmxMOGd2l04Dai9d2vEeS+VwF65h
 YFVD5IsAOc0qMAAAAUemFtYXp6YWxAMTkyLjE2OC4xLjcBAgMEBQYH
 -----END OPENSSH PRIVATE KEY-----
 ```
-##### 2- *zoro*:
+
+##### 2- _zoro_:
 
 - SSH authentication Method: Password authentication
 - Home directory: `/home/zoro`
 - password: `^wb@92Sq&ls644@5*Je0`
 - sudoer: no
+
 #### Services Part:
 
 - Install an FTP server and create a user `nami`.
-The user `nami` can access via FTP only to `/backup` with read-only access.
-`nami` user password: `mYdb6HA^5W4o`
+  The user `nami` can access via FTP only to `/backup` with read-only access.
+  `nami` user password: `mYdb6HA^5W4o`
 
 > Don't enable anonymous access!
-This will be risky!
+> This will be risky!
+
 #### The Database Part:
 
 - You have to install MySQL Server
@@ -137,10 +152,11 @@ This will be risky!
 - Disable the remote connection to the root user.
 
 - Do not allow connection to MySQL from outside the server!
-To improve the security of your website, you should keep your MySQL server accessible only by applications in the server, As long as it does not affect your solution.
+  To improve the security of your website, you should keep your MySQL server accessible only by applications in the server, As long as it does not affect your solution.
 
 - You must create a MySQL user, which has the only required access to the WordPress database.
-> Don't use the root user in your WordPress website!
+  > Don't use the root user in your WordPress website!
+
 #### WordPress Part:
 
 - You have to install WordPress
@@ -150,7 +166,9 @@ To improve the security of your website, you should keep your MySQL server acces
 - Your WordPress must work in a normal way, try to post something or create another user, any way you are free to do anything.
 
 > The configuration file must not be public accessible!, try `http://{host}/wp-config.php`
+
 #### Backup Part:
+
 Backups protect against human errors, hardware failure, virus attacks, power failures, and natural disasters. Backups can help save time and money if these failures occur.
 
 In this exercise, you will set up a simple backup method by using cron jobs.
@@ -176,11 +194,14 @@ You can add anything you feel deserves to be a bonus, some of the suggested idea
 
 - Set up the SSL in the web server and FTP server, you can use self-signed SSL.
 
-*Challenge yourself!*
+_Challenge yourself!_
+
 ### Submission and audit
+
 You must export your VM to a safe place, you will need it in the audit.
 You will use your exported VM to run a new VM for each audit.
 Push the shasum of your exported VM, you can get it this way:
+
 ```console
 user:~$ sha1sum deep-in-system.ova > deep-in-system.sha1
 user:~$ cat deep-in-system.sha1 | cat -e
