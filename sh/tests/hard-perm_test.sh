@@ -6,7 +6,7 @@ IFS='
 '
 script_dirS=$(cd -P "$(dirname "$BASH_SOURCE")" &>/dev/null && pwd)
 
-chmod 303 hard-perm/*
+chmod 776 hard-perm/*
 
 challenge() {
     submitted=$(bash "$script_dirS"/student/hard-perm.sh && ls -l "$1" | awk '{print $1}')

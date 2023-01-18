@@ -12,7 +12,7 @@ Create the following files:
 
 ```console
 $ ls | cat -e
-"?$*'First_file'*$?\"$
+"?$*'Hard_file'*$?\"$
 firstFile$
 "medium_file!"$
 $
