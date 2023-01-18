@@ -23,14 +23,6 @@ EOF
 }
 
 # Good input, win
-input="1
-100
-49
-51
-50
-"
-
-# Good input, win
 challenge 50 "1
 100
 49
