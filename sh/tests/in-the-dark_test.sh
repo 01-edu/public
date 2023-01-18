@@ -12,7 +12,6 @@ challenge() {
     submitted=$(cd "$1" && bash "$script_dirS"/$FILENAME)
     expected=$(cd "$1" && bash "$script_dirS"/solutions/in-the-dark.sh)
     diff <(echo "$submitted") <(echo "$expected")
-    echo $submitted
 }
 
 # True if FILE exists and is a regular file
