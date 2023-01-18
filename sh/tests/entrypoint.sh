@@ -6,11 +6,9 @@ cp -r /app .
 cp -a student app
 cd app
 
-if test -f "${EXERCISE}_test.sh"; then
-	bash "${EXERCISE}_test.sh"
-elif test -f "${EXERCISE}_test.py"; then
-	pytest "${EXERCISE}_test.py"
-else
+if ! test -f "${EXERCISE}_test.sh"; then
 	echo "No test file found for the exercise : $EXERCISE"
 	exit 1
 fi
+
+bash "${EXERCISE}_test.sh"
