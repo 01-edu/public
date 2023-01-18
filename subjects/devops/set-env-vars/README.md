@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a script `set-env-vars.sh`, which will allow you to set the following variables as environment variables and and print only the ones you created:
+Create a script `set-env-vars.sh`, which will allow you to set the following variables as environment variables and print only the ones you created:
 
 - `MY_MESSAGE` which contains the string `"Hello World"`.
 - `MY_NUM` which contains the number `100`.
