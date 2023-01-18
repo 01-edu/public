@@ -55,7 +55,7 @@ $> ping -c 5 google.com
 
 > You do not have to use the root user in your setup process!
 You won't need it when you have `sudo`.
-##### Sudo provides fine-grained access control. It grants elevated permissions to only a particular program that requires it. You know which program is running with elevated privileges, rather than working with a root shell (running every command with root privileges).
+Sudo provides fine-grained access control. It grants elevated permissions to only a particular program that requires it. You know which program is running with elevated privileges, rather than working with a root shell (running every command with root privileges).
 
 - You have to disable remote root login via ssh.
 
