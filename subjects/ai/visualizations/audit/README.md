@@ -18,25 +18,16 @@
 
 ##### The exercise is validated if all questions of the exercise are validated
 
-###### For question 1, does the plot reproduce the plot in the image and respect those criteria?
+##### The solution of question 1 is accepted if the plot reproduces the plot in the image and respect those criteria.
 
-###### Does it have a title?
+###### Does it have a title? 
 
-###### Does it have a name on x-axis and y-axis?
+###### Does it have a name on x-axis?
 
-![alt text][logo_ex6]
+###### Does it have a legend? 
+![alt text][logo]
 
-[logo_ex6]: ../w1day03_ex6_plot1.png "Time series ex6"
-
-###### For question 2, does the plot reproduce the plot in the image by using `plotly.graph_objects` and respect those criteria?
-
-###### Does it have a title?
-
-###### Does it have a name on x-axis and y-axis?
-
-![alt text][logo_ex6]
-
-[logo_ex6]: ../w1day03_ex6_plot1.png "Time series ex6"
+[logo]: ../w1day03_ex1_plot1.png "Bar plot ex1"
 
 ---
 
