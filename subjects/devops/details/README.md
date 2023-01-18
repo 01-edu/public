@@ -4,15 +4,18 @@
 
 Create a script `details.sh` that does the following:
 
-- Change the size of the `file1.txt` to "1000". For example:
-- Change the permissions of the `file1.txt` form this:
-- Update the both Modification and Access time of the `file1.txt` to "2022-01-01".
+- Change the size of the `file1.txt` to "1000".
+- Change the permissions of the `file1.txt`:
 
-`-rw-rw-r-- 1 user user     0 dez 27 12:25  file1.txt`
+```console
+$ ls -l   # from this:
+-rw-rw-r-- 1 user user     0 dez 27 12:25  file1.txt
+$ ls -l   # to this:
+-rw------- 1 user user     0 dez 27 12:25  file1.txt
+$
+```
 
-to this:
-
-`-rw------- 1 user user     0 dez 27 12:25  file1.txt`
+- Update both `Modification` and `Access time` of the `file1.txt` to `2022-01-01`.
 
 ### Usage
 
