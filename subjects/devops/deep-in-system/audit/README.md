@@ -1,4 +1,3 @@
-# deep-in-system
 #### General
 ##### Check the Repo content
 Files that must be inside the repository:
@@ -7,7 +6,7 @@ Files that must be inside the repository:
 ###### Are the required files present?
 
 ##### Check the Virtual machine aliases
-###### The virtual machine is clean of any alias that may affect the results of the audit commands
+###### The virtual machine is clean of any alias that may affect the results of the audit commands?
 
 #### The Virtual Machine Part:
 ##### Check the Linux distribution
@@ -28,7 +27,7 @@ PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-poli
 UBUNTU_CODENAME=<...>
 user:~$
 ```
-To check if ubuntu is a server and not a desktop:
+##### Check if ubuntu is a server and not a desktop:
 ```console
 user:~$ dpkg -l ubuntu-desktop
 dpkg-query: no packages found matching ubuntu-desktop
@@ -37,7 +36,7 @@ user:~$
 You can check the versions of the ubuntu server from here: https://ubuntu.com/download/server
 ###### Is the installed Linux distribution is Ubuntu server's latest LTS?
 ##### Check the VM disk and partitions
-You can check the VM disk and partitions with this command:
+Check the VM disk and partitions with this command:
 ```console
 user:~$ lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT /dev/sda
 NAME   FSTYPE SIZE MOUNTPOINT
@@ -85,13 +84,13 @@ user:~$
 The student must show the file that was modified to set a static IP address.
 ###### Does the student can explain the configuration?
 ###### Does the student What is a netmask?
-You can check if the IP address is static with this command:
+##### Check if the IP address is static with this command:
 ```console
 user:~$ ip a | grep dynamic
 user:~$
 ```
 ###### There is no internet interface with dynamic IP assignment?
-You can check if the internet works fine with the static IP address:
+##### Check if the internet works fine with the static IP address:
 ```console
 user:~$ ping -c 5 google.com
 ```
@@ -102,8 +101,8 @@ user:~$ ping -c 5 google.com
 The student must show the file that was modified to secure the ssh server.
 ###### Does the student can explain the configuration?
 ###### Is the root access disabled in the sshd config (PermitRootLogin: no)?
-###### Is the port of the sshd "2222"
-You can try to connect from outside the VM
+###### Is the port of the sshd "2222"?
+##### Try to connect from outside the VM
 ```console
 outsideTheVM:~$ ssh {username}@{machine-ip} -p 2222
 {username}@{machine-ip}'s password:
@@ -131,7 +130,7 @@ user:~$
 ```
 Otherwise, the student must show what firewall is used.
 ###### Is the firewall activated?
-The student must justify all open ports.
+##### Ask the student to justify why each open port is open
 ###### Are all open ports justified?
 ###### Is the MySQL port not open in the firewall?
 ###### Does the student can explain what is firewall and what the role of it in a server?
@@ -183,19 +182,19 @@ YFVD5IsAOc0qMAAAAUemFtYXp6YWxAMTkyLjE2OC4xLjcBAgMEBQYH
 ```
 ###### Is the student able to connect to the machine with the "luffy" user by using the private key and without using any password?
 
-- Try to execute a command with sudo:
+##### Try to execute a command with sudo:
 ```console
 luffy:$ sudo cat /etc/shadow
 root:*:<...>
 luffy:~$
 ```
-- Check the groups of luffy user:
+##### Check the groups of luffy user:
 ```console
 luffy:~$ groups luffy
 luffy : luffy sudo
 luffy:~$
 ```
-- Check the home directory of luffy user:
+##### Check the home directory of luffy user:
 ```console
 luffy:~$ echo ~
 /home/luffy
@@ -211,19 +210,19 @@ luffy:~$
 The student should connect to the machine with the "zoro" user by using this password: `^wb@92Sq&ls644@5*Je0`
 ###### Is the student able to connect to the machine with the "zoro" user by the mentioned password?
 
-- Try to execute a command with sudo:
+##### Try to execute a command with sudo:
 ```console
 zoro:$ sudo cat /etc/shadow
 zoro is not in the sudoers file.  This incident will be reported.
 zoro:~$
 ```
-- Check the groups of zoro user:
+##### Check the groups of zoro user:
 ```console
 zoro:~$ groups zoro
 zoro : zoro
 zoro:~$
 ```
-- Check the home directory of zoro user:
+##### Check the home directory of zoro user:
 ```console
 zoro:~$ echo ~
 /home/zoro
@@ -236,7 +235,8 @@ zoro:~$
 ###### Is the home directory of "zoro" user: /home/zoro?
 
 
-##### Quick exam?!
+#### Services Part:
+##### Ask the student to:
 In less than 10 minutes the student must create a user called "kratos" this user must be a sudoer and must be able to connect with a private key.
 The private ssh key must be created by the student during this exam.
 After the student finishes creating and setting up the user, the student must show that the user can be connected with the private key and can perform a sudo command.
@@ -253,11 +253,11 @@ After the student finishes creating and setting up the user, the student must sh
 #### Services Part:
 
 ##### Check nami user:
-By using SSH create a file inside /backup:
+##### By using SSH create a file inside /backup:
 ```console
 $ sudo touch /backup/audit-check
 ```
-Try to connect to the "nami" user via FTP:
+##### Try to connect to the "nami" user via FTP:
 ```console
 user:~$ ftp {vm-ip}
 Connected to {vm-ip}.
@@ -285,7 +285,7 @@ ftp>
 ###### Can get the audit-check file from the FTP Server?
 
 ##### Check anonymous user:
-Try to connect with an anonymous user and a blank password:
+##### Try to connect with an anonymous user and a blank password:
 ```console
 user:~$ ftp {vm-ip}
 Connected to {vm-ip}.
@@ -301,14 +301,15 @@ ftp>
 ###### Does the student can explain what is FTP Server and what the role of it?
 
 #### WordPress Part:
-From your browser, enter "http://{vm-ip}/"
+##### From your browser, enter "http://{vm-ip}/"
 > it can be https instead of http if the student installs an SSL certificate!
 
-Ask the student to log in with the admin user.
-WordPress must be installed, Try to post something, any way you are free to do anything.
+##### Ask the student to log in with the admin user.
+WordPress must be installed.
+##### Try to post something, any way you are free to do anything.
 ###### Is WordPress installed and working properly?
 
-Try to access to "http://{vm-ip}/wp-config.php"
+##### Try to access to "http://{vm-ip}/wp-config.php"
 ###### The WordPress config file content is not displayed?
 
 
@@ -321,9 +322,9 @@ The student must show created cronjob.
 ##### Check the FTP system functionality:
 > Before starting this test you have to remove all WordPress backup files in "/backup" and delete the logs file "/var/log/backup.log".
 
-In the crontab, you have to change the scheduling to :
+##### In the crontab, you have to change the scheduling to :
 `* * * * *`
-After 1 minute, check the FTP Server with the "nami" user:
+##### After 1 minute, check the FTP Server with the "nami" user:
 ```console
 user:~$ ftp {vm-ip}
 Connected to {vm-ip}.
@@ -344,9 +345,9 @@ ftp> get audit-check
 226 Transfer complete.
 ftp>
 ```
-###### a WordPress database backup file with the date of today exists in the FTP Server?
+###### Does a WordPress database backup file with the date of today exists in the FTP Server?
 ##### Is the student create 
-Check the backup logs file:
+##### Check the backup logs file:
 ```console
 user:~$ cat /var/log/backup.log
 <...>wordpress backup created!, date: <...>
