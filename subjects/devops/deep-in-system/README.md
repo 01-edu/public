@@ -50,6 +50,7 @@ You must be able to connect to the Internet!, you can test with:
 ```console
 $> ping -c 5 google.com
 ```
+> You should not have any internet interface with dynamic ip assignment.
 #### The Security Part:
 
 > You do not have to use the root user in your setup process!
