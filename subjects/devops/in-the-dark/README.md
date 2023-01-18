@@ -10,7 +10,7 @@ Expected output:
 
 ```console
 $ ./in-the-dark.sh
-[1]+  Running                 "Your running job"
+[1]+  Running                 "Your running job, this is just an example of output"
 news_amazon.txt
 model_forecasts.txt
 Ecommerce_purchases.txt

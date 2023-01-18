@@ -12,14 +12,13 @@ challenge() {
     submitted=$(cd "$1" && bash "$script_dirS"/$FILENAME)
     expected=$(cd "$1" && bash "$script_dirS"/solutions/in-the-dark.sh)
     diff <(echo "$submitted") <(echo "$expected")
+    echo $submitted
 }
 
 # True if FILE exists and is a regular file
 if [ -f ${FILENAME} ]; then
     # FILE exists and it's not empty
     if [ -s ${FILENAME} ]; then
-        challenge ../../subjects
-
         challenge .
     else
         echo "The file exist but is empty"
