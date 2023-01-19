@@ -19,7 +19,7 @@ Complete the body of the following functions. The first three functions return a
   - 2nd array: all the non-architects.
 
 - `getClassical`:
-  - 1st array: the architects belonging to the `classical` class.
+  - 1st array: the architects belonging to the `classical` classe.
   - 2nd array: the non-classical architects.
 
 - `getActive`:
