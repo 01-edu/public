@@ -30,8 +30,9 @@ Here is an example of a class in Dart. `Point` is the name of the class, while `
 
 ```dart
 class Point {
-  double x = 0; // attribute initialized to 0
-  double y = 0; // attribute initialized to 0
+  // Attributes initialized to 0.
+  double x = 0;
+  double y = 0;
 }
 ```
 
@@ -39,13 +40,13 @@ What if you want to initiate a `Point` with different `x` and `y`? We use constr
 
 ```dart
 class Point {
-  // Attributes
+  // Attributes initialized to 0.
   double x = 0;
   double y = 0;
 
   // Constructor
   Point(double x, double y) {
-    // Initializing attributes
+    // Sets the attributes to the value of the constructor arguments.
     this.y = y;
     this.x = x; 
   }
@@ -56,6 +57,8 @@ In Dart we can also use **constructor declaration** to save a few lines of code.
 
 ```dart
 class Point {
+  // The constructor initializes the attributes.
+  // Attributes do not need to be initialized as soon as the are declared.
   double x;
   double y;
 
