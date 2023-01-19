@@ -1,23 +1,22 @@
-# Variables
+## Variables
 
 ### Instructions
 
-In Dart you can declare variables in two ways:
+You can declare variables in two ways. The type can be implicitly detected using the `var` keyword, or explicitly by declaring the variable's type:
 
 ```dart
 var strPatrick = 'Patrick';
-// or ...
+```
+
+```dart
 String strSpongebob = 'Spongebob';
 ```
 
-- The first way declares using `var` which detects variable types automatically.
-- The second way explicitly declares using variable's type, in the example it is `String`.
+Declare and initialize the following variables:
+- `obj` of type `Object`, containing any value.
+- `planet` of type `String`, containing the name of the planet you live on.
+- `year` of type `int`, containing the current year.
+- `lucky` of type `bool`, containing `true` or `false` (you decide).
+- constant `pi` of type `double`, containing pi value with 2 decimal places
 
-Declare and initialize following variables:
-
-- `obj` of type `Object` containing any value;
-- `planet` of type `String` containing planet's name you live on;
-- `year` of type `int` containing current year;
-- `lucky` of type `bool` containing true of false (you decide);
-- constant `pi` of type `double` containing pi value with 2 decimal points;
-- Note: no main needed!
+> No main is needed.
