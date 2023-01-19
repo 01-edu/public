@@ -5,7 +5,7 @@
 Create a script `master-the-ls.sh`, that will do the following:
 
 - list the files and directories of the current directory.
-- Ignore the hidden files, the "." and the "..".
+- Ignore the hidden files, the current directory `.` and the parent directory `..`.
 - Separates the results with commas.
 - Order them by ascending order of access time (the newest first).
 - Have the directories ends with a `/`.
