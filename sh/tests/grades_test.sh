@@ -12,15 +12,15 @@ challenge() {
     for e in "${equals[@]}"; do
         name=$(echo "$e" | awk '{print $1}')
         grade=$(echo "$e" | awk '{print $2}')
-        submitted=$(echo "$name $grade" | bash -c ""$script_dirS"/student/grades.sh 1")
-        expected=$(echo "$name $grade" | bash -c ""$script_dirS"/solutions/grades.sh 1")
+        submitted=$(echo -e "$name $grade" | bash -c ""$script_dirS"/student/grades.sh 1")
+        expected=$(echo -e "$name $grade" | bash -c ""$script_dirS"/solutions/grades.sh 1")
         diff <(echo "$submitted") <(echo "$expected")
     done
     for d in "${differents[@]}"; do
         name=$(echo "$d" | awk '{print $1}')
         grade=$(echo "$d" | awk '{print $2}')
-        submitted=$(echo "$name $grade" | bash -c ""$script_dirS"/student/grades.sh 1")
-        expected=$(echo "$name $grade" | bash -c ""$script_dirS"/solutions/grades.sh 1")
+        submitted=$(echo -e "$name $grade" | bash -c ""$script_dirS"/student/grades.sh 1")
+        expected=$(echo -e "$name $grade" | bash -c ""$script_dirS"/solutions/grades.sh 1")
         diff <(echo "$submitted") <(echo "$expected")
     done
 
