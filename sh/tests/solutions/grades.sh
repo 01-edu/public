@@ -3,6 +3,11 @@
 num_students=$1
 declare -a students
 
+if [ $# -ne 1 ]; then
+    echo "Error: Expect 1 argument only!"
+    exit 1
+fi
+
 for ((i = 0; i < num_students; i++)); do
     read -p "Student Name #$((i + 1)): " name
     read -p "Student Grade #$((i + 1)): " grade
