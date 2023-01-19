@@ -26,5 +26,5 @@ def test_missing_milk():
 
 def test_word_with_space():
     shopping_list = ['tooth brush', 'hand sanitizer', 'milk', 'toilet paper']
-    expected_output = ['1x/ Tooth brush', '2x/ Hand sanitizer', '3x/ Milk', '4x/ Toilet Paper']
+    expected_output = ['1/ Tooth brush', '2/ Hand sanitizer', '3/ Milk', '4/ Toilet Paper']
     assert clean_list(shopping_list) == expected_output
