@@ -1,10 +1,10 @@
-# Plain Sum
+## Plain Sum
 
 ### Instructions
 
-Write a function `int plainSum(int, int, int)` which takes 3 integers and returns their sum.
+Create a function named `plainSum`, which accepts 3 `int` parameters, and returns their sum.
 
-Functions in Dart are declared as follows:
+Functions in Dart are declared like this:
 
 ```dart
 bool isEven(int num) {
@@ -16,7 +16,7 @@ bool isEven(int num) {
 
 ```dart
 void main() {
-  var res = plainSum(1, 2, 3);
-  print(res); // prints 6
+  var result = plainSum(1, 2, 3);
+  print(result); // prints 6
 }
 ```
