@@ -1,35 +1,35 @@
-# Circle
+## Circle
 
 ### Instructions
 
-Create a class named `Circle`.
+Create a `class` named `Circle`.
 
-Its attributes:
+Attributes:
 
-- x - `double`
-- y - `double`
-- radius - `double`
-- getters:
+- `x`: `double`
+- `y`: `double`
+- `radius`: `double`
 
-  - area
-  - perimeter
-  - rightMostCoordinate (x axis)
-  - leftMostCoordinate (x axis)
-  - highestCoordinate (y axis)
-  - lowestCoordinate (y axis)
+Getters:
+- `area`
+- `perimeter`
+- `rightMostCoordinate`: (x axis)
+- `leftMostCoordinate`: (x axis)
+- `highestCoordinate`: (y axis)
+- `lowestCoordinate`: (y axis)
 
-- Constructor:
-  - x - `required`
-  - y - `required`
-  - radius - `required`
+Constructor:
+- `x`: `required`
+- `y`: `required`
+- `radius`: `required`
 
 ### Getters and setters
 
-To work with objects, either getting some information or changing it, we should use methods as it might not be a good idea to directly change objects fields.
+Getters and setters avoid directly accessing or modifying attributes from outside of the class. They provide an opportunity to perform validation when setting attributes, or programmatically calculate values when getting attributes.
 
-An example of this principle is hunger - you should not change person's hunger level directly, but feed them instead. Since it is common to set or get these values, we use getters and setters in OOP.
+Consider a `Vehicle` that has `batteryVoltage` attribute. It is better that the `lowBattery` attribute is calculated based on the `batteryVoltage`, instead of being set directly.
 
-In Dart, when you specify getters and setters, you must treat them as **fields**.
+In Dart, when you specify getters and setters, you must treat them as attributes.
 
 Syntax of the getters and setters:
 
@@ -60,4 +60,4 @@ void main() {
 }
 ```
 
-- Note: Do not use math library, pi = 3.14
+> Do not use math library, pi = 3.14
