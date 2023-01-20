@@ -3,7 +3,7 @@
 ### Instructions
 
 In this exercise you are going to create a guessing game.
-The script will receive the number to guess as argument. The number should be between 1 and 100 (inclusive). The player will then have 5 tries to guess the number.
+Create the script `joker-num.sh` which will receive the number to guess as argument. The number should be between 1 and 100 (inclusive). The player will then have 5 tries to guess the number.
 To achieve this you will have to use a `for` loop.
 
 When guessing a valid number the output will be:

@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create the script `json-researcher.sh` wich will show the "name" and the "power" of the superhero with `id: 1`
+Create the script `json-researcher.sh` which will show the "name" and the "power" of the superhero with `id: 1`
 
 - Where to look : https://((DOMAIN))/assets/superhero/all.json
 
@@ -20,6 +20,7 @@ $
 ### Hints
 
 With `curl` you can get the content of the file from the url:
+
 ```console
 $curl https://assets.01-edu.org/devops-branch/HeadTail.txt
 <...>
@@ -43,7 +44,7 @@ $
 `grep` is a command-line utility for searching plain-text data sets for lines that match a regular expression.
 
 ```console
-$cat fruit.json  
+$cat fruit.json
 {
   "name": "apple",
   "color": "green",
