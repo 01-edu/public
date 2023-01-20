@@ -43,7 +43,7 @@ dpkg-query: no packages found matching ubuntu-desktop
 user:~$
 ```
 
-You can check the versions of the ubuntu server from here: https://ubuntu.com/download/server
+You can check the versions of the ubuntu server from here: [Get Ubuntu Server](https://ubuntu.com/download/server)
 
 ###### Is the installed Linux distribution is Ubuntu server's latest LTS?
 
@@ -66,10 +66,10 @@ user:~$
 - The VM disk size must be 30GB.
 
 - VM disk must be divided into these partitions:
-  "swap:" 4G
-  "/": 15G
-  "/home": 5G
-  "/backup": 6G
+"swap:" 4G
+"/": 15G
+"/home": 5G
+"/backup": 6G
 
 ###### Is the VM Disk size correct?
 
@@ -239,14 +239,6 @@ YFVD5IsAOc0qMAAAAUemFtYXp6YWxAMTkyLjE2OC4xLjcBAgMEBQYH
 
 ###### Is the student able to connect to the machine with the "luffy" user by using the private key and without using any password?
 
-##### Try to execute a command with sudo:
-
-```console
-luffy:$ sudo cat /etc/shadow
-root:*:<...>
-luffy:~$
-```
-
 ##### Check the groups of luffy user:
 
 ```console
@@ -264,8 +256,6 @@ luffy:~$ echo $HOME
 /home/luffy
 luffy:~$
 ```
-
-###### Is the "luffy" user can perform a command with sudo?
 
 ###### Is the "luffy" user assigned to the sudo group?
 
@@ -308,8 +298,6 @@ zoro:~$
 ###### Is the "zoro" user not assigned to the sudo group?
 
 ###### Is the home directory of "zoro" user: /home/zoro?
-
-#### Services Part:
 
 ##### Ask the student to:
 
@@ -453,8 +441,6 @@ ftp>
 ```
 
 ###### Does a WordPress database backup file with the date of today exists in the FTP Server?
-
-##### Is the student create
 
 ##### Check the backup logs file:
 
