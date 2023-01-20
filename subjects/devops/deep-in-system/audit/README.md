@@ -8,6 +8,17 @@ Files that must be inside the repository:
 
 ###### Are the required files present?
 
+##### Verify that the virtual machine that will be audited is the one that is submitted:
+
+```console
+user:~$ sha1sum deep-in-system.ova > deep-in-system-toaudit.sha1
+user:~$ diff deep-in-system.sha1  deep-in-system-toaudit.sha1 ; echo $?
+0
+user:~$
+```
+
+###### Is the SHA1 of the provided machine the same as the machine being audited?
+
 ##### Check the Virtual machine aliases
 
 ###### The virtual machine is clean of any alias that may affect the results of the audit commands?
