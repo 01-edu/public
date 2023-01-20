@@ -36,15 +36,14 @@ Install a ubuntu server's latest LTS as a virtual machine.
 - The VM disk size must be 30GB.
 
 - You must divide your VM disk into these partitions:
-  `swap:` 4G
-  `/`: 15G
-  `/home`: 5G
-  `/backup`: 6G
+`swap:` 4G
+`/`: 15G
+`/home`: 5G
+`/backup`: 6G
 
 - Your username must be your login name.
 
-- You have to set your hostname with the format of `{username}-host`.
-  if your login is `potato`, then your hostname must be `potato-host`.
+- You have to set your hostname with the format of `{username}-host`, if your login is `potato`, then your hostname must be `potato-host`.
 
 #### The Network Part:
 
