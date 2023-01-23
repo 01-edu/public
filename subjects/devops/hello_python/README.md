@@ -50,10 +50,10 @@ $
 - Python uses indentation to indicate in which block your code will run (many other languages uses parenthesis instead). It is then very important to indent your code properly.
 
 - `return` is a special world used to say which value a function should return (a function could also not return anything).
-For example `return 10` will return the number ten.
+  For example `return 10` will return the number ten.
 
 - A string is a set of characters wrapped by `"`.
-For example `"Ciao bella"` is a string containing the worlds `Ciao Bella`.
+  For example `"Ciao bella"` is a string containing the worlds `Ciao Bella`.
 
 - In `test.py` we are calling another function named `print`. This function is already present in Python standard library so we don't have to create it. This function at its core is made to write strings in the standard output.
 
