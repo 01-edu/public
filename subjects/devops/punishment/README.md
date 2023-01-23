@@ -6,11 +6,13 @@ Often in schools we are asked to copy hundreds of sentences in order to better r
 
 Hopefully we now have Python that can do the job for us.
 In order to do so create a file `punishment.py` which will contain a function `do_punishment` having 3 arguments:
+
 - `first_part`: which will be a string.
 - `second_part`: which will be also a string.
 - `nb_lines`: which will be a number.
 
 Here is the prototype of the function:
+
 ```python
 def do_punishment(first_part, second_part, nb_lines):
 ```
@@ -51,5 +53,5 @@ The first half and the second.
 
 ### References
 
-* [strip](https://www.w3schools.com/python/ref_string_strip.asp)
-* [string multiplication](https://www.geeksforgeeks.org/create-multiple-copies-of-a-string-in-python-by-using-multiplication-operator/)
+- [strip](https://www.w3schools.com/python/ref_string_strip.asp)
+- [string multiplication](https://www.geeksforgeeks.org/create-multiple-copies-of-a-string-in-python-by-using-multiplication-operator/)
