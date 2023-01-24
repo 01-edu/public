@@ -19,6 +19,7 @@ pragma solidity ^0.8.4;
 ```
 
 - Then create a Smart Contract named `NamedFestival`.
+- NB: The file name of the contract must be in kebab-case `named-festival.sol`, while contracts names are in PascalCase by convention
 - Create a public function `setName()` that takes a string as parameter and sets the name of the festival
 - Finally a function `getName()` takes no parameters and retrieves the name
 

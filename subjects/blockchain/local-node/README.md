@@ -15,14 +15,14 @@ Launch a local test node. You can use any client (geth, openEthereum...), but I 
 
 **hardhat node**
 
-```sh
+```shell
 npm i hardhat
 npx hardhat node
 ```
 
 **ganache**
 
-```
+```shell
 npm i ganache-cli
 npx ganache-cli
 ```
@@ -30,6 +30,8 @@ npx ganache-cli
 *You can also use ganache ("non cli") that provides a nice graphical interface. For compatibility, change the listening port to 8545 in the settings*
 
 Noticeably, local javascript nodes are not connected to any network and provide already 10 account populated with test ether.
+
+This quest self validate with an empty "local-node.js" file
 
 ### Notions
 
