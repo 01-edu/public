@@ -53,5 +53,5 @@ The first half and the second.
 
 ### References
 
-- [strip](https://www.w3schools.com/python/ref_string_strip.asp)
-- [string multiplication](https://www.geeksforgeeks.org/create-multiple-copies-of-a-string-in-python-by-using-multiplication-operator/)
+- [Function strip()](https://docs.python.org/3.11/library/stdtypes.html?highlight=strip#str.strip)
+- [String multiplication](https://www.geeksforgeeks.org/create-multiple-copies-of-a-string-in-python-by-using-multiplication-operator/)
