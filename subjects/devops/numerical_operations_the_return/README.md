@@ -26,7 +26,7 @@ print(numerical_operations_the_return.integer_division(10, 3))
 ```
 
 ```bash
-$ python test.py
+$ python3 test.py
 1
 3.3333333333333335
 0
