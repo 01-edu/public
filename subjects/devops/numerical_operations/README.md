@@ -12,6 +12,30 @@ Create a file `numerical_operations.py` containing the following functions:
 
 We assume that `a` and `b` are numbers (`int` or `float`).
 
+### Usage
+
+Here is a possible `test.py` to test your functions:
+
+```python
+import numerical_operations
+
+print(numerical_operations.add(2, 2))
+print(numerical_operations.subtract(10, 5))
+print(numerical_operations.multiply(3, 4))
+print(numerical_operations.power(3, 3))
+print(numerical_operations.square(3))
+```
+
+```bash
+$ python test.py
+4
+5
+12
+27
+9
+$
+```
+
 ### [Optional] Use a virtual environnement to run python code locally
 
 Virtual environments can help you to run your code locally.
@@ -37,30 +61,6 @@ Python 3.10.4
 ```
 
 > We advise you to create one virtual environment per python project. Later, we could also install external packages on our environment.
-
-### Usage
-
-Here is a possible `test.py` to test your functions:
-
-```python
-import numerical_operations
-
-print(numerical_operations.add(2, 2))
-print(numerical_operations.subtract(10, 5))
-print(numerical_operations.multiply(3, 4))
-print(numerical_operations.power(3, 3))
-print(numerical_operations.square(3))
-```
-
-```bash
-$ python test.py
-4
-5
-12
-27
-9
-$
-```
 
 ### Hints
 
