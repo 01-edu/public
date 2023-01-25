@@ -6,7 +6,7 @@ A lot of information on the web are shared in the JSON format. This exercise wil
 
 You just landed a new job, congrats! Your new task is to build two functions to allow new users to register to your new shiny website.
 
-The new registration information comes as string formatted as JSON. You need to create a file `registration.py` that will have the following functions inside:
+The new registration information comes as string formatted as JSON. You need to create a file `object_to_json.py` that will have the following functions inside:
 
 1. `create_new_user` that will receive a `dict` and will return a new object of the class `User` provided below. To be valid, the input `dict` must have a `username` key and a `email` key to be valid. The new `User` will have the same `username` and `email` of the input `dict`. If the input `dict` is invalid, the default user will be returned.
 
