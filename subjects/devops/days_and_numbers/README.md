@@ -92,7 +92,7 @@ Phone number of Jack is 938377264
 Phone number of Jill is 947662781
 ```
 
-### Notions
+### References
 
 - [None type](https://www.w3schools.com/python/ref_keyword_none.asp)
 - [Dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
