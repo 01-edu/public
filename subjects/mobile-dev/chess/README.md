@@ -1,15 +1,12 @@
-# Sky map
+# Chess
 
 ### Exercise
 
 Chess is a game of strategy and wit, played by noble kings and cunning commoners alike for centuries. Its origins are shrouded in mystery, with some saying it originated in ancient India as a war simulation, while others claim it was invented by the wise sages of Persia.
 
-
 One thing is certain: chess has captured the hearts and minds of players throughout the ages. From the grand halls of feudal castles to the bustling streets of modern cities, this timeless game has brought people together in friendly competition.
 
-
 But it wasn't until the digital age that chess truly reached its potential. With the advent of online platforms and mobile apps, players from all corners of the globe can now test their skills against one another in real-time.
-
 
 So whether you're a seasoned grandmaster or a newcomer to the game, join the ranks of chess enthusiasts and experience the thrill of victory and the agony of defeat. Let the battle of the minds begin!
 

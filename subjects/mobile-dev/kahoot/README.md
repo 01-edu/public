@@ -1,4 +1,4 @@
-# Sky map
+# Kahoot
 
 ### Exercise
 
