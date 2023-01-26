@@ -6,8 +6,8 @@ Tokenization is the process of breaking down a string into smaller pieces, calle
 
 Create a file `string_processing.py` which will have a function `tokenize(sentence)` that given a sentence will do the following:
 
-- removes all punctuation marks and special characters
-- separates all words like so: `"it's not 3" => ['it', 's', 'not', '3']`
+- remove all punctuation marks and special characters
+- separate all words like so: `"it's not 3" => ['it', 's', 'not', '3']`
 - put all the words in lowercase
 - return a list of all the words.
 
@@ -30,7 +30,7 @@ $ python test.py
 
 ### Hints
 
-The `re` library is a module for working with regular expressions it provides a set of functions for working with regular expressions, including:
+The `re` library is a module for working with regular expressions. It provides a set of functions for working with regular expressions, including:
 
 - `re.sub()` : Replaces all occurrences of a regular expression pattern in a string with a replacement string.
 
@@ -67,25 +67,25 @@ this is a test sentence.
 
 The `.split()` method is used to split the sentence into a list of words.
 
+```python
 text = "This is a test sentence."
 
 words = text.split()
 
 print(words)
-
-````
+```
 
 and the output:
 
 ```console
 ['This', 'is', 'a', 'test', 'sentence.']
-````
+```
 
 ### References
 
 - [string methods](https://www.w3schools.com/python/python_ref_string.asp)
 - [replace](https://www.w3schools.com/python/ref_string_replace.asp)
 - [split](https://www.w3schools.com/python/ref_string_split.asp)
-- import "string" module and [get all string punctuations](https://docs.python.org/3/library/string.html#string.punctuation)
+- [String punctuations](https://docs.python.org/3/library/string.html#string.punctuation)
 - [Tokenization in text analysis](https://en.wikipedia.org/wiki/Lexical_analysis#Tokenization)
 - [Word segmentation](https://en.wikipedia.org/wiki/Text_segmentation#Word_segmentation)
