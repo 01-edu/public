@@ -175,15 +175,12 @@ const runTests = async ({ url, path, code }) => {
   let timeout
   for (const [i, t] of tests.entries()) {
     try {
-      const testWithTimeout = [
+      const waitWithTimeout = Promise.race([
         t(tools),
         new Promise((s, f) => {
           timeout = setTimeout(f, 60000, Error('Time limit reached (1min)'))
         }),
-      ]
-      const waitWithTimeout = Promise.race
-        ? Promise.race(testWithTimeout)
-        : Promise.race_(testWithTimeout)
+      ])
       if (!(await waitWithTimeout) && !isDOM) {
         throw Error('Test failed')
       }
