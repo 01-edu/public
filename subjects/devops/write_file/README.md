@@ -1,6 +1,6 @@
-# Write file
+## Write file
 
-## Instructions
+### Instructions
 
 Create a file `write_file.py` which will have a function `to_do(input)` with one input a `list[tuple[dt.date, str]]` which will be a to do list example:
 
@@ -22,7 +22,7 @@ $
 
 Make sure you follow the correct format for the output.
 
-## Usage
+### Usage
 
 Here is a possible `test.py` to test your function:
 
@@ -45,7 +45,7 @@ Wednesday 01 June 2022: fix the seat
 Thursday 02 June 2022: take the trash
 ```
 
-## Hints
+### Hints
 
 - The `strftime() `method is used to format the date object as a string. You can use this method to format the date in the desired format (e.g. %A %d %B %Y).
 
@@ -80,7 +80,7 @@ The `write()` method is used to write the string "Hello World!" to the file.
 
 - Test your function with different input formats, different date and task length, different date range and make sure that it works as expected.
 
-## References
+### References
 
 - [open a file](https://www.w3schools.com/python/python_file_write.asp)
 - [write in a file](https://www.pythontutorial.net/python-basics/python-write-text-file/)
