@@ -46,7 +46,7 @@ $
 
 - If a key is repeated in both dictionaries the value retained will be the one in `second_dict`.
 
-- There is different ways to merge dictionaries, take the time to understand the differences in between those techniques and try more than one technique to better retain it.
+- There are different ways to merge dictionaries, take the time to understand the differences in between those techniques and try more than one technique to better retain it.
 
 ### References
 
