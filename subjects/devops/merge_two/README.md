@@ -4,7 +4,7 @@ One very useful data structure in Python are the dictionaries, in this exercise 
 
 ### Instructions
 
-Create a file `merge_two.py` which will have a function named `merge_two()`. This function will accept two dictionaries and return a third one which will be the merge of the two inputs.
+Create a file `merge_two.py` which will have a function named `merge_two()`. This function will accept two dictionaries, create a third one which will be the merge of the two inputs and return it as a serialized JSON string.
 
 Here is the prototype of the function:
 
@@ -38,7 +38,7 @@ Run your test file with the following command:
 
 ```console
 $ python3 test.py
-{'Bob': 36, 'Louise': 44, 'Lea': 22, 'Romolo': 30}
+{"Bob": 36, "Louise": 44, "Lea": 22, "Romolo": 30}
 $
 ```
 
@@ -48,6 +48,9 @@ $
 
 - There are different ways to merge dictionaries, take the time to understand the differences in between those techniques and try more than one technique to better retain it.
 
+- Add `import json` to use the standard functions for JSON manipulation.
+
 ### References
 
 - [Merging dictionaries in Python](https://www.geeksforgeeks.org/python-merging-two-dictionaries/)
+- [JSON library in Python](https://docs.python.org/3/library/json.html)
