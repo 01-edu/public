@@ -31,7 +31,7 @@ npx ganache-cli
 
 Noticeably, local javascript nodes are not connected to any network and provide already 10 account populated with test ether.
 
-This quest self validate with an empty "local-node.js" file
+> There is no code to submit for this exercise. Submit an empty file.
 
 ### Notions
 
