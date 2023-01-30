@@ -9,6 +9,8 @@ It will prompt the user to create a new dictionary asking for keys and values.
 
 As a return it will create a third one which will be the merge of the two dictionaries and return it as a serialized JSON string.
 
+> If the key entered by the user is `exit` the function will stop asking for new key/values pairs and proceed to generate the desired output.
+
 Here is the prototype of the function:
 
 ```python
