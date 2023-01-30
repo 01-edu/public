@@ -8,7 +8,7 @@ You just landed a new job, congrats! Your new task is to build two functions to 
 
 The new registration information comes as string formatted as JSON. You need to create a file `object_to_json.py` that will have the following functions inside:
 
-1. `create_new_user` that will receive a `dict` and will return a new object of the class `User` provided below. To be valid, the input `dict` must have a `username` key and a `email` key to be valid. The new `User` will have the same `username` and `email` of the input `dict`. If the input `dict` is invalid, the default user will be returned.
+1. `create_new_user` that will receive a `dict` and will return a new object of the class `User` provided below. To be valid, the input `dict` must have a `username` key and a `email` key . The new `User` will have the same `username` and `email` of the input `dict`. If the input `dict` is invalid, the default user will be returned.
 
 ```python
 class User:
@@ -23,8 +23,7 @@ class User:
 Here is a possible `test.py` to test your functions:
 
 ```python
-import create_new_user
-import user_to_json
+from object_to_json import create_new_user, user_to_json
 
 registration_0 = '{"username": "mario", "email": "mario@me.it"}'
 registration_1 = '{"city": "Rome", "country": "Italy"}'
@@ -39,11 +38,21 @@ print(user_to_json(user_1))
 ```console
 $ python3 test.py
 {"username": "mario", "email": "mario@me.it"}
-{}
+    {}
 $
 ```
 
 ### Hints
+
+- In python, it is possible to define a class and create a class object with the following syntax:
+
+```python
+class MyCalss:                      # define a new class
+    attribute1 = 0
+    attribute2 = 'something else'
+
+my_obj = MyClass()                  # create an object of MyClass
+```
 
 - It is possible to convert an object to `dict` using the `__dict__` casting.
 
@@ -56,7 +65,7 @@ my_obj = C()
 my_obj_dict = my_obj.__dict__ # my_obj_dict will be a dictionary with the object my_obj values
 ```
 
-### Notions
+### References
 
 - [Class and Object](https://docs.python.org/3/tutorial/classes.html#a-first-look-at-classes)
 - [json.loads()](https://www.geeksforgeeks.org/json-loads-in-python/)
