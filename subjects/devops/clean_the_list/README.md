@@ -27,7 +27,9 @@ print(shopping.clean_list(shopping_list))
 This will output:
 
 ```console
+$ python test.py
 ['1/ Tomatoes', '2/ Pastas', '3/ Milk', '4/ Salt']
+$
 ```
 
 ### References
