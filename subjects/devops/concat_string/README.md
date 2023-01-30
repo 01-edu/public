@@ -5,6 +5,7 @@
 Create a file `concat_string.py` that contains a function `concat` which takes in two strings as parameters and performs the following operations:
 
 - Concatenates the two strings by adding a comma and space between them.
+
 - Returns the resulting string.
 
 ### Usage
