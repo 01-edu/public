@@ -21,7 +21,9 @@ print(concat_string.concat(string1, string2))
 This will output:
 
 ```console
-'Hello, World'
+$ python3 test.py
+<expected output>
+$
 ```
 
 ### References
