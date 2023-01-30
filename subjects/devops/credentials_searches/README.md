@@ -53,8 +53,12 @@ Your function should generate this file `credentials.json`:
 
 - Remember that the function should be able to search for the keys password and secret in nested json objects.
 
+- Using the isinstance function could be useful to check if a value is for example a dict.
+
 ### References
 
 - [json module](https://www.w3schools.com/python/python_json.asp)
 
 - [os module](https://docs.python.org/3/library/os.html)
+
+- [isinstance function](https://www.w3schools.com/python/ref_func_isinstance.asp)
