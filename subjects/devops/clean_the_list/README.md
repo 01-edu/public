@@ -16,7 +16,7 @@ Create a file `shopping.py` that contains a function `clean_list` which takes in
 
 ### Usage
 
-Here is an example of how to use the clean_list function:
+Here is an example of how to use the `clean_list` function:
 
 ```python
 import shopping
