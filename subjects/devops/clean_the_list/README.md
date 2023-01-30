@@ -34,5 +34,5 @@ $
 
 ### References
 
-[string strip method](https://www.w3schools.com/python/ref_string_strip.asp)
-[string capitalize method](https://www.w3schools.com/python/ref_string_capitalize.asp)
+[String strip method](https://www.w3schools.com/python/ref_string_strip.asp)
+[String capitalize method](https://www.w3schools.com/python/ref_string_capitalize.asp)
