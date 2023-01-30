@@ -21,7 +21,7 @@ Here is an example of how to use the `clean_list` function:
 ```python
 import clean_the_list
 shopping_list = ['tomatoes', 'pastas', 'milk', 'salt']
-print(shopping.clean_list(shopping_list))
+print(clean_the_list.clean_list(shopping_list))
 ```
 
 This will output:
