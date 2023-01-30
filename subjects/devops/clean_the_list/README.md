@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a file `shopping.py` that contains a function `clean_list` which takes and returns a list of strings and performs the following operations on each list item:
+Create a file `clean_the_list.py` that contains a function `clean_list` which takes and returns a list of strings and performs the following operations on each list item:
 
 - Removes all spaces before and after (but not between words).
 
@@ -19,7 +19,7 @@ Create a file `shopping.py` that contains a function `clean_list` which takes an
 Here is an example of how to use the `clean_list` function:
 
 ```python
-import shopping
+import clean_the_list
 shopping_list = ['tomatoes', 'pastas', 'milk', 'salt']
 print(shopping.clean_list(shopping_list))
 ```
