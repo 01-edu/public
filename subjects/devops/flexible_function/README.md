@@ -27,7 +27,9 @@ print(person)
 And its output:
 
 ```console
+$ python3 ./test.py
 {'first_name': 'Kevin', 'last_name': 'Boulin', 'age': 34, 'gender': 'male', 'size': 1.83, 'job': 'taxidermist'}
+$
 ```
 
 ### Hints
