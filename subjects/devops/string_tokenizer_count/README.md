@@ -10,19 +10,20 @@ Create a file string_tokenizer_count.py that contains a function tokenizer_count
 
 ### Usage
 
-Here is an example of how to use the function:
+Here is an example of how to use the function in a test.py script:
 
 ```python
 string = "This is a test sentence, with various words and 123 numbers!"
 result = tokenizer_counter(string)
-print(string)
+print(result)
 ```
 
 And its output:
 
 ```console
-string = "This is a test sentence, with various words and 123 numbers!"
-result = tokenizer_counter(string)
+$ python3 test.py
+{'123': 1, 'a': 1, 'and': 1, 'is': 1, 'numbers': 1, 'sentence': 1, 'test': 1, 'this': 1, 'various': 1, 'with': 1, 'words': 1}
+$
 ```
 
 ### Hints
