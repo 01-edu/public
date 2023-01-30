@@ -1,4 +1,4 @@
-## clean_the_list
+## Clean the list
 
 ### Instructions
 
