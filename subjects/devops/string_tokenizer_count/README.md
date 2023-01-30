@@ -30,9 +30,25 @@ $
 
 - The `re` module can be used to remove non-alphanumeric characters.
 
-- The `collections` module can be used to count the words.
+- The `Counter` class of the `collections` module can be used to count the words.
 
 - The `operator` module can be used to sort the dictionary alphabetically by word.
+
+Here is an example of how to sort a dictionary in python, using a test.py script:
+
+```python
+dictionary = {'a': 5, 'c': 1, 'b': 3}
+sorted_dict = dict(sorted(d.items(), key=lambda item: item[1]))
+print(sorted_dict)
+```
+
+And its output:
+
+```console
+$ python3 ./test.py
+{'c': 1, 'b': 3, 'a': 5}
+$
+```
 
 ### References
 
