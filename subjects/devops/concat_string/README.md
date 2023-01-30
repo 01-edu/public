@@ -21,13 +21,11 @@ print(concat_string.concat(string1, string2))
 
 Below is the expected output:
 
-````
-
 ```console
 $ python3 test.py
 Hello, World
 $
-````
+```
 
 ### References
 
