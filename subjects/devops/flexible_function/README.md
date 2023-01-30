@@ -1,4 +1,4 @@
-## create_person
+## flexible_function
 
 ### Instructions
 
