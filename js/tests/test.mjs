@@ -180,7 +180,7 @@ const runTests = async ({ url, path, code }) => {
         new Promise((s, f) => {
           timeout = setTimeout(f, 60000, Error('Time limit reached (1min)'))
         }),
-    ])
+      ])
       if (!(await waitWithTimeout) && !isDOM) {
         throw Error('Test failed')
       }

@@ -1,6 +1,3 @@
-// @davhojt commented out Promise.race as a quick fix.
-// @eslopfer is working on a fix on a fix on branch: DEV-4309-race-bring-issue-from-public
-// Promise.race = undefined
 // /*/ // ⚡
 export const tests = []
 const t = (f) => tests.push(f)
