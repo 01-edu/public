@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a file string_tokenizer_count.py that contains a function tokenizer_counter which takes in a string as a parameter and returns a dictionary of words and their count in the string.
+Create a file `string_tokenizer_count.py` that contains a function `tokenizer_counter` which takes in a string as a parameter and returns a dictionary of words and their count in the string.
 
 - The function should remove any punctuation from the string and convert it to lowercase before counting the words.
 
@@ -10,7 +10,7 @@ Create a file string_tokenizer_count.py that contains a function tokenizer_count
 
 ### Usage
 
-Here is an example of how to use the function in a test.py script:
+Here is an example of how to use the function in a `test.py` script:
 
 ```python
 string = "This is a test sentence, with various words and 123 numbers!"
