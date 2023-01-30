@@ -8,7 +8,7 @@ Create a file `shopping.py` that contains a function `clean_list` which takes in
 - Capitalizes the first letter (first letter only, other ones should be to lowercase).
 - Adds its index number before a separator `x/ `.
 - An empty list as input should return an empty list as output.
-- And don't forget the milk !!!! (add it at the end of the list if missing).
+- And don't forget the milk! (add it at the end of the list if missing).
 
 ### Usage
 
