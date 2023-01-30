@@ -22,7 +22,7 @@ This will output:
 
 ```console
 $ python3 test.py
-<expected output>
+Hello World
 $
 ```
 
