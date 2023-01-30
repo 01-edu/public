@@ -12,7 +12,7 @@ Create a file `credentials_searches.py` that contains a function `credentials_se
 
 - If the 'logs.json' file is empty or is not a json file, the function should not create the 'credentials.json' file.
 
-- If the logs.json file does not exist, the function should not create the 'credentials.json' file.
+- If the 'logs.json' file does not exist, the function should not create the 'credentials.json' file.
 
 - If the keys are found in a nested object, the function should create the 'credentials.json' file and save the values of the keys in it.
 
