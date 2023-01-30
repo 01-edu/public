@@ -32,5 +32,5 @@ This will output:
 
 ### References
 
-[string strip](https://www.w3schools.com/python/ref_string_strip.asp)
-[string capitalize](https://www.w3schools.com/python/ref_string_strip.asp)
+[string strip method](https://www.w3schools.com/python/ref_string_strip.asp)
+[string capitalize method](https://www.w3schools.com/python/ref_string_capitalize.asp)
