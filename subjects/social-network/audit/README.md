@@ -106,7 +106,7 @@
 
 #### Posts
 
-###### Are you able to create a post and commenting already created posts after legging in?
+###### Are you able to create a post and comment on already existing posts after logging in?
 
 ##### Try creating a post.
 
