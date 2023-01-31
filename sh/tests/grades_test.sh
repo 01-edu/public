@@ -19,6 +19,12 @@ $input
 EOF
     )
     diff <(echo "$submitted") <(echo "$expected")
+
+    if [ $? != 0 ]; then
+        exit 1
+    fi
+    echo $submitted
+    echo $expected
 }
 challenge 1 "Student1
 90
@@ -40,6 +46,11 @@ challenge 1 "Student6
 "
 challenge 1 "Student7
 25
+"
+challenge 2 "Student1
+0
+Alice
+100
 "
 challenge 3 "Bob
 90
@@ -65,4 +76,10 @@ Alice
 150
 Eve
 55
+"
+challenge 1 "Student1
+not_good
+"
+challenge 1 "Student1
+-75
 "
