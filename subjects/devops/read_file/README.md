@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Create a file `read_file.py` which will have a function `get_recipes(file_name)` that takes a file as an argument.
+Create a file `read_file.py` which will have a function `get_recipes(file_name)` that takes a `file` as an argument.
 
-Create another file `recipes_data.json` and copy/paste on it the following content:
+Create another file `recipes_data.json` and paste the following content on it:
 
 ```json
 [
@@ -65,7 +65,7 @@ Create another file `recipes_data.json` and copy/paste on it the following conte
 ]
 ```
 
-You have to read the file `recipes_data.json` and load its content into a list of dictionaries.
+Your function has to read the file `recipes_data.json` and load its content into a list of dictionaries.
 
 Expected output format:
 
@@ -78,10 +78,9 @@ Expected output format:
 Here is a possible `test.py` to test your functions:
 
 ```python
-import read_recipes
+import read_file
 
-if __name__ == '__main__':
-    print(read_recipes.get_recipes('recipes_data.json'))
+print(read_file.get_recipes('recipes_data.json'))
 ```
 
 ```bash
