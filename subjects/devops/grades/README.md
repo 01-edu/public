@@ -15,6 +15,7 @@ $ ./grades.sh 1
 Student Name #1: Sara
 Student Grade #1: 90
 Sara: You did an excellent job!
+$
 ```
 
 - If the student grade is anything equal or greater than 70 you will return the string `"<name>: You did a good job!"`:
@@ -24,6 +25,7 @@ $ ./grades.sh 1
 Student Name #1: Sara
 Student Grade #1: 75
 Sara: You did a good job!
+$
 ```
 
 - If the student grade is anything equal or greater than 50 you will return the string `"<name>: You need a bit more effort!"`:
@@ -33,6 +35,7 @@ $ ./grades.sh 1
 Student Name #1: Sara
 Student Grade #1: 51
 Sara: You need a bit more effort!
+$
 ```
 
 - If the student grade is anything lower than 50 you will return the string `"<name>: You had a poor performance!"`:
@@ -42,6 +45,7 @@ $ ./grades.sh 1
 Student Name #1: Sara
 Student Grade #1: 34
 Sara: You had a poor performance!
+$
 ```
 
 ### Error handling
@@ -57,7 +61,7 @@ $ ./grades.sh 2
 Student Name #1: Sara
 Student Grade #1: 101
 Error: The grade '101' is not a valid input. Only numerical grades between 0 and 100 are accepted.
-./grades.sh 2
+$ ./grades.sh 2
 Student Name #1: Bob
 Student Grade #1: ten
 Error: The grade 'ten' is not a valid input. Only numerical grades between 0 and 100 are accepted.
@@ -82,6 +86,7 @@ Sara: You had a poor performance!
 Norman: You need a bit more effort!
 James: You did a good job!
 Albert: You did an excellent job!
+$
 ```
 
 ### Hints
