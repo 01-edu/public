@@ -7,7 +7,7 @@ Create a file `custom_calendar.py` which will have 2 functions:
 - `day_from_number(day_number)`
 - `day_to_number(day)`
 
-Those functions perform conversion between day `index` and day `word` and vice versa:
+Those functions perform conversion between day `index` and day `word`:
 
 - 1 = Monday
 - 2 = Tuesday
@@ -26,12 +26,11 @@ Here is a possible `test.py` to test your functions:
 ```python
 import custom_calendar
 
-if __name__ == '__main__':
-    print(custom_calendar.day_from_number(2))
-    print(custom_calendar.day_from_number(1))
-    print(custom_calendar.day_from_number(1000))
-    print(custom_calendar.day_to_number('Sunday'))
-    print(custom_calendar.day_to_number('invalid day'))
+print(custom_calendar.day_from_number(2))
+print(custom_calendar.day_from_number(1))
+print(custom_calendar.day_from_number(1000))
+print(custom_calendar.day_to_number('Sunday'))
+print(custom_calendar.day_to_number('invalid day'))
 ```
 
 ```console
@@ -41,6 +40,7 @@ Monday
 None
 7
 None
+$
 ```
 
 ### Hints
@@ -76,7 +76,7 @@ phonebook = {
 print(phonebook)
 ```
 
-Dictionaries can be iterated over, just like a list. However, a dictionary, unlike a list, does not keep the order of the values stored in it. To iterate over key value pairs, use the following syntax:
+Dictionaries can be iterated over, just like a list. To iterate over key value pairs, use the following syntax:
 
 ```python
 phonebook = {"John": 938477566, "Jack": 938377264, "Jill": 947662781}
