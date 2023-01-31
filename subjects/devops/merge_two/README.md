@@ -6,6 +6,7 @@ One very useful data structure in Python are the dictionaries, in this exercise 
 
 Create a file `merge_two.py` which will have a function named `merge_two()`. This function will accept one dictionary.
 It will prompt the user to create a new dictionary asking for keys and values.
+The function will always convert the `values` into integers.
 
 As a return it will create a third one which will be the merge of the two dictionaries and return it as a serialized JSON string.
 
