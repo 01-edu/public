@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a file `write_file.py` which will have a function `to_do(input)` with one input a `list[tuple[dt.date, str]]` which will be a to do list example:
+Create a file `write_file.py` which will have a function `to_do(input)` with one input as an argument `list[tuple[dt.date, str]]` which will be a to-do list like the following example:
 
 ```python
 [
@@ -11,7 +11,7 @@ Create a file `write_file.py` which will have a function `to_do(input)` with one
 ]
 ```
 
-Your function needs to format and write the input in a text file `output.txt` as follow:
+Your function needs to format and write the input in a text file `output.txt` as follows:
 
 ```bash
 $ cat output.txt
@@ -20,7 +20,7 @@ Thursday 02 June 2022: take the trash
 $
 ```
 
-Make sure you follow the correct format for the output.
+Make sure you follow the correct format for the output. The given lists will always have the correct format and will never be empty.
 
 ### Usage
 
@@ -30,12 +30,11 @@ Here is a possible `test.py` to test your function:
 import datetime as dt
 from write_file import to_do
 
-if __name__ == '__main__':
-    to_do_list = [
-        (dt.date(2022, 6, 1), "fix the seat"),
-        (dt.date(2022, 6, 2), "take the trash"),
-    ]
-    to_do(to_do_list)
+to_do_list = [
+    (dt.date(2022, 6, 1), "fix the seat"),
+    (dt.date(2022, 6, 2), "take the trash"),
+]
+to_do(to_do_list)
 ```
 
 ```bash
@@ -43,6 +42,7 @@ $ python test.py
 $ cat output.txt
 Wednesday 01 June 2022: fix the seat
 Thursday 02 June 2022: take the trash
+$
 ```
 
 ### Hints
@@ -82,5 +82,5 @@ The `write()` method is used to write the string "Hello World!" to the file.
 
 ### References
 
-- [open a file](https://www.w3schools.com/python/python_file_write.asp)
+- [open a file](https://docs.python.org/3/tutorial/inputoutput.html#tut-files)
 - [write in a file](https://www.pythontutorial.net/python-basics/python-write-text-file/)
