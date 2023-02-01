@@ -66,7 +66,7 @@ Student Name #1: Bob
 Student Grade #1: ten
 Error: The grade 'ten' is not a valid input. Only numerical grades between 0 and 100 are accepted.
 $ ./grades.sh 1 2 3
-Error: Expect 1 argument only!
+Error: expect 1 argument only!
 $
 ```
 

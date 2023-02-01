@@ -5,8 +5,9 @@ IFS='
 script_dirS=$(cd -P "$(dirname "$BASH_SOURCE")" &>/dev/null && pwd)
 
 challenge() {
-    args=$1
-    input=$2
+
+    input="${@: -1}"
+    args=${@:1:$#-1}
 
     submitted=$(
         bash -c ""$script_dirS"/student/grades.sh $args" <<EOF
@@ -23,9 +24,8 @@ EOF
     if [ $? != 0 ]; then
         exit 1
     fi
-    echo $submitted
-    echo $expected
 }
+
 challenge 1 "Student1
 90
 "
@@ -82,4 +82,7 @@ not_good
 "
 challenge 1 "Student1
 -75
+"
+challenge 1 1 "Louis
+20
 "

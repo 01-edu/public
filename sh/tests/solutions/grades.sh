@@ -4,7 +4,7 @@ num_students=$1
 declare -a students
 
 if [ $# -ne 1 ]; then
-    echo "Error: Expect 1 argument only!"
+    echo "Error: expect 1 argument only!"
     exit 1
 fi
 
