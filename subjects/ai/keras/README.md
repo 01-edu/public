@@ -112,7 +112,7 @@ The goal of this exercise is to learn to train the neural network. Once the arch
 - `compile`: The compilation step aims to set the loss function, to choose the algoithm to minimize the chosen loss function and to choose the metric the model outputs.
 
   - The **optimizer**. We’ll stick with a pretty good default: the Adam gradient-based optimizer. Keras has many other optimizers you can look into as well.
-  - The **loss function**. Depending on the problem to solve: classification or regression Keras proposes different loss functions. In classification Keras distinguishes between `binary_crossentropy` (2 classes) and `categorical_crossentropy` (>2 classes), so we’ll use the latter.
+  - The **loss function**. Depending on the problem to solve: classification or regression Keras proposes different loss functions. In classification Keras distinguishes between `binary_crossentropy` (2 classes) and `categorical_crossentropy` (>2 classes), so we’ll use the former.
   - The **metric(s)**. A list of metrics. Depending on the problem to solve: classification or regression Keras proposes different loss functions. For example for classification the metric can be the accuracy.
 
 - `fit`: Training a model in Keras literally consists only of calling fit() and specifying some parameters. There are a lot of possible parameters, but we’ll only manually supply a few:
