@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a file `read_file.py` which will have a function `get_recipes(file_name)` that takes a `file` as an argument.
+Create a file `read_file.py` which will have a function `get_recipes(file_name)` that takes the `file name` as an argument.
 
 Create another file `recipes_data.json` and paste the following content on it:
 
