@@ -34,7 +34,7 @@ $
 
 - The `operator` module can be used to sort the dictionary alphabetically by word.
 
-Here is an example of how to sort a dictionary in python, using a test.py script:
+Here is an example of how to sort a dictionary in python, using a `test.py` script:
 
 ```python
 dictionary = {'a': 5, 'c': 1, 'b': 3}
