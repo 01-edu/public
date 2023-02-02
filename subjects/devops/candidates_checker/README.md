@@ -36,7 +36,8 @@ Lea is not eligible (over the legal age)
 $
 ```
 
-Here an example of bad usage:
+Here is an example of bad usage:
+
 ```console
 $ python3 candidates_checker.py
 Error: wrong number of arguments
