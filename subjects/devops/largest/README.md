@@ -39,8 +39,8 @@ $ bash largest.sh | cat -e
 $
 ```
 
-> The output needs to be formatted as the example shown above
+> The output needs to be formatted as the example shown above.
 
 ### Hints
 
-- `awk` might be handy
+- `awk` might be handy.
