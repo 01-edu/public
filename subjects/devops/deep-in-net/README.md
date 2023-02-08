@@ -41,6 +41,8 @@ In your machine or your virtual machine, you have to install Cisco Packet Tracer
 
 Take your time to discover it!
 
+> You will need it in the audit sessions.
+
 #### Exercise 1:
 
 In your Cisco PacketTracer create this network:
