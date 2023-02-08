@@ -28,6 +28,8 @@
 
 ##### Use the Dev Tool/Performance to record and try pausing the game while it is running.
 
+###### Can you confirm there aren't any dropped frames, and requestAnimationFrame is able to run at the same rate unaffected?
+
 ##### Try moving the player/element using the proper commands and keys to do so.
 
 ###### Does the player obey the commands?
