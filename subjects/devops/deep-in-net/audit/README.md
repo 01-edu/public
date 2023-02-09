@@ -88,8 +88,8 @@ user:~/deep-in-net$
 
 ![ex03-ftp](https://assets.01-edu.org/devops-branch/DeepInNet/ex03-ftp.jpg)
 
-###### Does a "01school" user with RWDNL access exists in the FTP Server?
-###### Can connect to the FTP Server with "01school" user from any PC in the network?
+###### Does a "deepinnet" user with RWDNL access exists in the FTP Server?
+###### Can connect to the FTP Server with "deepinnet" user from any PC in the network?
 
 ##### Check the DNS Server
 
