@@ -92,8 +92,8 @@ In your Cisco PacketTracer create this network:
 ![ex03-ftp](https://assets.01-edu.org/devops-branch/DeepInNet/ex03-ftp.jpg)
 
 - In your DNS Server you must add these records:
-    deep-in-net.local > 192.168.1.99
-    deep-in-net.com > deep-in-net.local
+  deep-in-net.local > 192.168.1.99
+  deep-in-net.com > deep-in-net.local
 
 - "https://deep-in-net.com" must redirect to your HTTPS server.
 
