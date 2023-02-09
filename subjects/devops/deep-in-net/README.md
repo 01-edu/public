@@ -1,6 +1,6 @@
 ## deep-in-net
 
-![serverRoomMeme](https://assets.01-edu.org/devops-branch/DeepInNet/serverRoomMeme.jpg)
+![serverRoomMeme](pictures/serverRoomMeme.jpg)
 
 In this project, you will discover the Cisco Packet tracer which is a useful tool for networking students, And you will understand some important networking concepts as a cloud & DevOps student.
 
@@ -37,7 +37,7 @@ Debug communication using commands instead of a GUI.
 
 In your machine or your virtual machine, you have to install Cisco Packet Tracer:
 
-![PacketTracer](https://assets.01-edu.org/devops-branch/DeepInNet/PacketTracer.jpg)
+![PacketTracer](pictures/PacketTracer.jpg)
 
 Take your time to discover it!
 
@@ -47,13 +47,13 @@ Take your time to discover it!
 
 In your Cisco PacketTracer create this network:
 
-![ex01](https://assets.01-edu.org/devops-branch/DeepInNet/ex01.jpg)
+![ex01](pictures/ex01.jpg)
 
 - PC0 can communication with PC1.
 - PC2 can communication with PC3.
 - PC4 can communication with PC5.
 
-![ex01-scenario](https://assets.01-edu.org/devops-branch/DeepInNet/ex01-scenario.jpg)
+![ex01-scenario](pictures/ex01-scenario.jpg)
 
 - Knowledge: What is RJ-45 cable?
 - Knowledge: Understand what is difference between straight-through and crossover RJ-45 cables.
@@ -62,12 +62,12 @@ In your Cisco PacketTracer create this network:
 
 In your Cisco PacketTracer create this network:
 
-![ex02](https://assets.01-edu.org/devops-branch/DeepInNet/ex02.jpg)
+![ex02](pictures/ex02.jpg)
 
 - All computers connected to the Switch must be connected.
 - All computers connected to the Hub must be connected.
 
-![ex02-scenario](https://assets.01-edu.org/devops-branch/DeepInNet/ex02-scenario.jpg)
+![ex02-scenario](pictures/ex02-scenario.jpg)
 
 - Knowledge: What is the Switch and what is its role?
 - Knowledge: What is the Hub and what is its role?
@@ -78,18 +78,18 @@ In your Cisco PacketTracer create this network:
 
 In your Cisco PacketTracer create this network:
 
-![ex03](https://assets.01-edu.org/devops-branch/DeepInNet/ex03.jpg)
+![ex03](pictures/ex03.jpg)
 
 - All Servers must have static IP addresses.
 - Your servers should only provide the service specified for them!
 - All PC's IP addresses must be assigned by the DHCP server.
 - Your HTTPS Server must show a hello message and HTTP must be disabled!
 
-![ex03-https](https://assets.01-edu.org/devops-branch/DeepInNet/ex03-https.jpg)
+![ex03-https](pictures/ex03-https.jpg)
 
 - You must have a user "deepinnet" with RWDNL access in your FTP Server.
 
-![ex03-ftp](https://assets.01-edu.org/devops-branch/DeepInNet/ex03-ftp.jpg)
+![ex03-ftp](pictures/ex03-ftp.jpg)
 
 - In your DNS Server you must add these records:
   deep-in-net.local > 192.168.1.99
@@ -97,7 +97,7 @@ In your Cisco PacketTracer create this network:
 
 - "https://deep-in-net.com" must redirect to your HTTPS server.
 
-![ex03-dns](https://assets.01-edu.org/devops-branch/DeepInNet/ex03-dns.jpg)
+![ex03-dns](pictures/ex03-dns.jpg)
 
 - Knowledge: What is a Server and what is its role?
 - Knowledge: What is DHCP and what is its role?
@@ -115,11 +115,11 @@ In your Cisco PacketTracer create this network:
 
 In your Cisco PacketTracer create this network:
 
-![ex04](https://assets.01-edu.org/devops-branch/DeepInNet/ex04.jpg)
+![ex04](pictures/ex04.jpg)
 
 - The 2 PCs must communicate with each other.
 
-![ex04-scenario](https://assets.01-edu.org/devops-branch/DeepInNet/ex04-scenario.jpg)
+![ex04-scenario](pictures/ex04-scenario.jpg)
 
 - Knowledge: What is the Router and what is its role?
 - Knowledge: What is the difference between the Switch and the Router?
@@ -130,24 +130,24 @@ In your Cisco PacketTracer create this network:
 
 In your Cisco PacketTracer create this network:
 
-![ex05](https://assets.01-edu.org/devops-branch/DeepInNet/ex05.jpg)
+![ex05](pictures/ex05.jpg)
 
 - All devices connected to the same switch must be able to communicate with each other.
 - All devices in subnet 1 can communicate with all devices in subnet 2.
 - All devices in subnet 2 can communicate with all devices in subnet 1.
 
-![ex05-scenario](https://assets.01-edu.org/devops-branch/DeepInNet/ex05-scenario.jpg)
+![ex05-scenario](pictures/ex05-scenario.jpg)
 
 #### Exercise 6:
 
 In your Cisco PacketTracer create this network:
 
-![ex06](https://assets.01-edu.org/devops-branch/DeepInNet/ex06.jpg)
+![ex06](pictures/ex06.jpg)
 
 - The PC in subnet 1 can communicate with The PC in subnet 2.
 - The PC in subnet 2 can communicate with The PC in subnet 1.
 
-![ex06-scenario](https://assets.01-edu.org/devops-branch/DeepInNet/ex06-scenario.jpg)
+![ex06-scenario](pictures/ex06-scenario.jpg)
 
 - Knowledge: What is a routing table and what is its role?
 
@@ -155,19 +155,19 @@ In your Cisco PacketTracer create this network:
 
 In your Cisco PacketTracer create this network:
 
-![ex07](https://assets.01-edu.org/devops-branch/DeepInNet/ex07.jpg)
+![ex07](pictures/ex07.jpg)
 
 - All devices connected to the same switch must be able to communicate with each other.
 - All devices in subnet 1 can communicate with all devices in subnet 2.
 - All devices in subnet 2 can communicate with all devices in subnet 1.
 
-![ex07-scenario](https://assets.01-edu.org/devops-branch/DeepInNet/ex07-scenario.jpg)
+![ex07-scenario](pictures/ex07-scenario.jpg)
 
 #### Exercise 8:
 
 In your Cisco PacketTracer create this network:
 
-![ex08](https://assets.01-edu.org/devops-branch/DeepInNet/ex08.jpg)
+![ex08](pictures/ex08.jpg)
 
 - All devices connected to the same switch must be able to communicate with each other.
 - All devices in subnet 1 can communicate with all devices in subnet 2.
@@ -177,7 +177,7 @@ In your Cisco PacketTracer create this network:
 - All devices in subnet 3 can communicate with all devices in subnet 1.
 - All devices in subnet 3 can communicate with all devices in subnet 2.
 
-![ex08-scenario](https://assets.01-edu.org/devops-branch/DeepInNet/ex08-scenario.jpg)
+![ex08-scenario](pictures/ex08-scenario.jpg)
 
 ### Bonus
 

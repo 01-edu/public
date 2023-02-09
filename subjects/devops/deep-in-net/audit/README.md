@@ -26,13 +26,13 @@ user:~/deep-in-net$
 
 ##### Open the ex01.pkt file in Cisco PacketTracer
 
-![ex01](https://assets.01-edu.org/devops-branch/DeepInNet/ex01.jpg)
+![ex01](../pictures/ex01.jpg)
 
 ###### Are devices/links/IPs/netmasks in the student's solution similar to the required in the subject?
 
 ##### Check the communication
 
-![ex01-scenario](https://assets.01-edu.org/devops-branch/DeepInNet/ex01-scenario.jpg)
+![ex01-scenario](../pictures/ex01-scenario.jpg)
 
 ###### Does PC0 can communication with PC1?
 
@@ -52,13 +52,13 @@ user:~/deep-in-net$
 
 ##### Open the ex02.pkt file in Cisco PacketTracer
 
-![ex02](https://assets.01-edu.org/devops-branch/DeepInNet/ex02.jpg)
+![ex02](../pictures/ex02.jpg)
 
 ###### Are devices/links/IPs/netmasks in the student's solution similar to the required in the subject?
 
 ##### Check the communication
 
-![ex02-scenario](https://assets.01-edu.org/devops-branch/DeepInNet/ex02-scenario.jpg)
+![ex02-scenario](../pictures/ex02-scenario.jpg)
 
 ###### Does all computers connected to the Switch must be connected?
 
@@ -78,7 +78,7 @@ user:~/deep-in-net$
 
 ##### Open the ex03.pkt file in Cisco PacketTracer
 
-![ex03](https://assets.01-edu.org/devops-branch/DeepInNet/ex03.jpg)
+![ex03](../pictures/ex03.jpg)
 
 ###### Are devices/links/IPs/netmasks in the student's solution similar to the required in the subject?
 
@@ -90,7 +90,7 @@ user:~/deep-in-net$
 
 ##### Check the HTTPS Server
 
-![ex03-https](https://assets.01-edu.org/devops-branch/DeepInNet/ex03-https.jpg)
+![ex03-https](../pictures/ex03-https.jpg)
 
 ###### Can connect to the HTTPS Server from any PC in the network?
 
@@ -98,7 +98,7 @@ user:~/deep-in-net$
 
 ##### Check the FTP Server
 
-![ex03-ftp](https://assets.01-edu.org/devops-branch/DeepInNet/ex03-ftp.jpg)
+![ex03-ftp](../pictures/ex03-ftp.jpg)
 
 ###### Does a "deepinnet" user with RWDNL access exists in the FTP Server?
 
@@ -106,7 +106,7 @@ user:~/deep-in-net$
 
 ##### Check the DNS Server
 
-![ex03-dns](https://assets.01-edu.org/devops-branch/DeepInNet/ex03-dns.jpg)
+![ex03-dns](../pictures/ex03-dns.jpg)
 
 ###### Is The DNS Server contains the correct records?
 
@@ -140,13 +140,13 @@ user:~/deep-in-net$
 
 ##### Open the ex04.pkt file in Cisco PacketTracer
 
-![ex04](https://assets.01-edu.org/devops-branch/DeepInNet/ex04.jpg)
+![ex04](../pictures/ex04.jpg)
 
 ###### Are devices/links/IPs/netmasks in the student's solution similar to the required in the subject?
 
 ##### Check the communication
 
-![ex04-scenario](https://assets.01-edu.org/devops-branch/DeepInNet/ex04-scenario.jpg)
+![ex04-scenario](../pictures/ex04-scenario.jpg)
 
 ###### The 2 PCs communicate with each other?
 
@@ -164,13 +164,13 @@ user:~/deep-in-net$
 
 ##### Open the ex05.pkt file in Cisco PacketTracer
 
-![ex05](https://assets.01-edu.org/devops-branch/DeepInNet/ex05.jpg)
+![ex05](../pictures/ex05.jpg)
 
 ###### Are devices/links/IPs/netmasks in the student's solution similar to the required in the subject?
 
 ##### Check the communication
 
-![ex05-scenario](https://assets.01-edu.org/devops-branch/DeepInNet/ex05-scenario.jpg)
+![ex05-scenario](../pictures/ex05-scenario.jpg)
 
 ###### Are All devices connected to the same switch able to communicate with each other?
 
@@ -182,13 +182,13 @@ user:~/deep-in-net$
 
 ##### Open the ex06.pkt file in Cisco PacketTracer
 
-![ex06](https://assets.01-edu.org/devops-branch/DeepInNet/ex06.jpg)
+![ex06](../pictures/ex06.jpg)
 
 ###### Are devices/links/IPs/netmasks in the student's solution similar to the required in the subject?
 
 ##### Check the communication
 
-![ex06-scenario](https://assets.01-edu.org/devops-branch/DeepInNet/ex06-scenario.jpg)
+![ex06-scenario](../pictures/ex06-scenario.jpg)
 
 ###### Does the PC in subnet 1 can communicate with The PC in subnet 2?
 
@@ -202,13 +202,13 @@ user:~/deep-in-net$
 
 ##### Open the ex07.pkt file in Cisco PacketTracer
 
-![ex07](https://assets.01-edu.org/devops-branch/DeepInNet/ex07.jpg)
+![ex07](../pictures/ex07.jpg)
 
 ###### Are devices/links/IPs/netmasks in the student's solution similar to the required in the subject?
 
 ##### Check the communication
 
-![ex07-scenario](https://assets.01-edu.org/devops-branch/DeepInNet/ex07-scenario.jpg)
+![ex07-scenario](../pictures/ex07-scenario.jpg)
 
 ###### Are all devices connected to the same switch able to communicate with each other?
 
@@ -226,13 +226,13 @@ user:~/deep-in-net$
 
 ##### Open the ex08.pkt file in Cisco PacketTracer
 
-![ex08](https://assets.01-edu.org/devops-branch/DeepInNet/ex08.jpg)
+![ex08](../pictures/ex08.jpg)
 
 ###### Are devices/links/IPs/netmasks in the student's solution similar to the required in the subject?
 
 ##### Check the communication
 
-![ex08-scenario](https://assets.01-edu.org/devops-branch/DeepInNet/ex08-scenario.jpg)
+![ex08-scenario](../pictures/ex08-scenario.jpg)
 
 ###### Do all devices connected to the same switch able to communicate with each other?
 
