@@ -87,7 +87,7 @@ In your Cisco PacketTracer create this network:
 
 ![ex03-https](https://assets.01-edu.org/devops-branch/DeepInNet/ex03-https.jpg)
 
-- You must have a user "01school" with RWDNL access in your FTP Server.
+- You must have a user "deepinnet" with RWDNL access in your FTP Server.
 
 ![ex03-ftp](https://assets.01-edu.org/devops-branch/DeepInNet/ex03-ftp.jpg)
 
