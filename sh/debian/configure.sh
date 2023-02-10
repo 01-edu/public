@@ -258,9 +258,23 @@ function deployCore() {
   # Deploy Runner
   echo -e "Deploying Runner service: \n "
   cd /root/core/runner
+
+  # Get the latest release version tag and create latest branch
+  tag=$(git describe --tags $(git rev-list --tags --max-count=1))
+  git checkout $tag -b latest
+  git describe --tags
+
+  # Set upstream to latest
+  git branch --set-upstream-to=origin/latest latest
+
+  # Get user auth infor for the runner
   echo -e "Enter the runner Registry password: "
   read registryPassword
-  REGISTRY_PASSWORD=$registryPassword ./run.sh
+  echo -e "Enter the runner GitHub username: "
+  read githubUsername
+  echo -e "Enter the runner GitHub token: "
+  read githubToken
+  REGISTRY_PASSWORD=$registryPassword GITHUB_USERNAME=$githubUsername GITHUB_TOKEN=$githubToken ./run.sh
   echo -e "Runner service is up! \n"
 }
 
