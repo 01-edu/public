@@ -1,6 +1,6 @@
 ## deep-in-system
 
-![sysadmin](https://assets.01-edu.org/devops-branch/DeepInSystem/sysadmin.jpeg)
+![sysadmin](pictures/sysadmin.jpeg)
 
 In this project you will learn how to administer a Linux server, You will set up security and network for a ubuntu server, and will install some popular services.
 
