@@ -26,4 +26,4 @@ Files smaller than average size (1279 bytes):
 ./example2.sh 2
 ```
 
-> The output should be formatted as in the example above
+> The output should be formatted as in the example above.
