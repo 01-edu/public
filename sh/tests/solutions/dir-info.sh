@@ -41,7 +41,7 @@ echo "Largest file: $largest_file ($largest_file_size bytes)"
 echo "Smallest file: $smallest_file ($smallest_file_size bytes)"
 echo "Average file size: $average_size bytes"
 
-# Print the files larger than average size
+# Print the files larger or equal than average size
 echo "Files larger or equal to average size ($average_size bytes):"
 for file in $(find $dir_path -type f)
 do
