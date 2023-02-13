@@ -120,8 +120,8 @@ pork..pasta
 ##### Try running the function with the arguments:
 [comment]: <> Test mismatch between number of input words and puzzle starting cells
 ```js
-const puzzle = '2001\n0..0\n1000\n0..0'
-const words = ['casa', 'casa', 'ciao', 'anta']
+const puzzle = '2001\n0..0\n2000\n0..0'
+const words = ['casa', 'alan', 'ciao', 'anta']
 ```
 
 ```
@@ -196,7 +196,7 @@ Error
 ###### Does the function display the value above?
 
 ##### Try running the function with the arguments:
-[comment]: <> Test multiple solutions 
+[comment]: <> Test no possible solution
 ```js
 const puzzle = '2001\n0..0\n1000\n0..0'
 const words = ['aaab', 'aaac', 'aaad', 'aaae']
