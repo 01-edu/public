@@ -83,7 +83,7 @@ It is impossible to get 100%. Who would have predicted that Rose wouldn't let [J
 
 All people having 100% of accuracy on the Leaderboard cheated, there's no point to compare with them or to cheat. The Kaggle community estimates that having more than 85% is almost considered as cheated submissions as they are element of luck involved in the surviving.
 
-**You can't used external data sets than the ones provided in that competition.**
+**You can't use external data sets than the ones provided in that competition.**
 
 ### The key points
 
