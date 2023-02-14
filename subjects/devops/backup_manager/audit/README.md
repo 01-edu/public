@@ -129,3 +129,7 @@ $ cat logs/backup_service.log
 ```
 
 ###### Can you confirm that all error messages have been saved in the log files like in the example above?
+
+##### Go to the code of the project adn check if the creator used `try` and `catch` to handle the errors.
+
+###### Did he use `try` and `catch` to handle the errors?
