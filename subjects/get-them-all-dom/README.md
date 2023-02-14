@@ -51,5 +51,3 @@ You only need to create & submit the JS file `get-them-all.js` ; we're providing
   - the import of the data
 
 - the data file [get-them-all.data.js](./get-them-all.data.js) used to generate content in the HTML
-
-- the CSS file [get-them-all.css](./get-them-all.css) used to style the content in the HTML

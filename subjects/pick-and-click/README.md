@@ -33,8 +33,7 @@ You only need to create & submit the JS file `pick-and-click.js`; we're providin
 
   - the JS script which will enable you to run your code.
 
-- the CSS file [pick-and-click.css](./pick-and-click.css) feel free to use those as they are, or modify them.
-
+- feel free to use the CSS file [pick-and-click.css](./pick-and-click.css) as it is or you can also modify it.
 
 ### Expected result
 
