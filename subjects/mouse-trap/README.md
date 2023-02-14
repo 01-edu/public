@@ -1,4 +1,4 @@
-## Mouse trap
+****## Mouse trap
 
 ### Instructions
 
@@ -23,7 +23,7 @@ You only need to create & submit the JS file `mouse-trap.js`; we're providing yo
 
   - the JS script which will enable you to run your code.
 
-- the CSS file [mouse-trap.css](./mouse-trap.css) feel free to use those as they are, or modify them.
+- feel free to use the CSS file [mouse-trap.css](./mouse-trap.css) as it is or you can also modify it.
 
 ### Expected result
 
