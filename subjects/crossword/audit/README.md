@@ -5,7 +5,7 @@
 const puzzle = '2001\n0..0\n1000\n0..0'
 const words = ['casa', 'alan', 'ciao', 'anta']
 
-crosswordSolver(puzzle, words)
+console.log(crosswordSolver(puzzle, words))
 ```
 
 ##### Try running the function with the arguments:
@@ -278,3 +278,7 @@ Error
 #### Bonus
 
 ###### +Is the project using a backtracking algorithm to solve the problem?
+
+###### +Is there a test file for this code?
+
+###### +Are the tests checking each possible case?
