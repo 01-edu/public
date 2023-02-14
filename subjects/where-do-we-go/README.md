@@ -28,11 +28,12 @@ You only need to create & submit the JS file `where-do-we-go.js`; we're providin
 - the HTML file [where-do-we-go.html](./where-do-we-go.html) to open in the browser, which includes:
 
   - the JS script which will enable you to run your code
-  - some CSS pre-styled classes: feel free to use those as they are, or modify them
 
 - the data file [where-do-we-go.data.js](./where-do-we-go.data.js) from which you can import `places`
 
-- the images to use, in this [compressed folder](https://assets.01-edu.org/where-do-we-go_images.zip)
+- the CSS file [where-do-we-go.css](./where-do-we-go.css) feel free to use those as they are, or modify them.
+
+- the images to use, in this [compressed folder](https://assets.01-edu.org/where-do-we-go_images.zip) or you can can fetch from the public URL, example `https://public.01-edu.org/subjects/where-do-we-go/where-do-we-go_images/arlit.jpg` [arlit](https://public.01-edu.org/subjects/where-do-we-go/where-do-we-go_images/arlit.jpg)
 
 ### Expected result
 
