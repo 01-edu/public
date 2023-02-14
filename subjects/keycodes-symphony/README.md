@@ -18,7 +18,7 @@ You only need to create & submit the JS file `keycodes-symphony.js`; we're provi
 
   - the JS script which will allow to run your code.
 
-- the CSS file [keycodes-symphony.css](./keycodes-symphony.css) feel free to use those as they are, or modify them.
+- feel free to use the CSS file [keycodes-symphony.css](./keycodes-symphony.css) as it is or you can also modify it.
 
 ### Expected result
 
