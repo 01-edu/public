@@ -22,7 +22,8 @@ You only need to create & submit the JS file `mouse-trap.js`; we're providing yo
 - the HTML file [mouse-trap.html](./mouse-trap.html) to open in the browser, which includes:
 
   - the JS script which will enable you to run your code.
-  - some CSS pre-styled classes: feel free to use those as they are, or modify them.
+
+- the CSS file [mouse-trap.css](./mouse-trap.css) feel free to use those as they are, or modify them.
 
 ### Expected result
 

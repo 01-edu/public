@@ -32,7 +32,9 @@ You only need to create & submit the JS file `pick-and-click.js`; we're providin
 - the HTML file [pick-and-click.html](./pick-and-click.html) to open in the browser, which includes:
 
   - the JS script which will enable you to run your code.
-  - some CSS pre-styled classes: feel free to use those as they are, or modify them.
+
+- the CSS file [pick-and-click.css](./pick-and-click.css) feel free to use those as they are, or modify them.
+
 
 ### Expected result
 

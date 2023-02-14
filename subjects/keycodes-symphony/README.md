@@ -17,7 +17,8 @@ You only need to create & submit the JS file `keycodes-symphony.js`; we're provi
 - the HTML file [keycodes-symphony.html](./keycodes-symphony.html) to open in the browser, which includes:
 
   - the JS script which will allow to run your code.
-  - some CSS pre-styled classes: feel free to use those as they are, or modify them.
+
+- the CSS file [keycodes-symphony.css](./keycodes-symphony.css) feel free to use those as they are, or modify them.
 
 ### Expected result
 

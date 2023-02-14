@@ -25,7 +25,8 @@ You only need to create & submit the JS file `build-brick-and-break.js`, We're p
 
 - the HTML file [build-brick-and-break.html](./build-brick-and-break.html) can be opened in the browser, which includes:
   - the JS script running some code, and which will enable you to run your code.
-  - some CSS pre-styled classes: feel free to use those as they are, or modify them.
+
+- the CSS file [build-brick-and-break.css](./build-brick-and-break.css) feel free to use those as they are, or modify them.
 
 ### Expected result
 
