@@ -1,0 +1,154 @@
+
+:root {
+  --background: hsl(0, 0%, 12%);
+  --text: hsl(0, 0%, 80%);
+  --clear: hsl(0, 0%, 65%);
+  --disabled: hsl(0, 0%, 35%);
+  --purple: #bb73e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  letter-spacing: 1.5px;
+  background: var(--background);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+  height: 100vh;
+  color: var(--text);
+  padding: 2.5rem 0;
+}
+
+button {
+  user-select: none;
+  letter-spacing: 0;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.button:first-letter {
+  text-transform: uppercase;
+}
+
+.button.unpimp:before {
+  content: 'Un';
+}
+
+.button {
+  background: var(--background);
+  font-family: serif;
+  width: 70%;
+  text-align: center;
+}
+
+.one {
+  font-size: 75px;
+}
+
+.two {
+  font-family: sans-serif;
+}
+
+.three {
+  letter-spacing: 15px;
+}
+
+.four {
+  padding: 20px 40px;
+  border: solid 1px var(--clear);
+}
+
+.five {
+  border-radius: 100px;
+}
+
+.six {
+  border: none;
+  box-shadow: 8px 8px 15px rgba(255, 255, 255, 0.075),
+    -10px -10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.seven {
+  color: var(--purple);
+}
+
+.eight {
+  border: solid 0.5px var(--purple);
+}
+
+.nine {
+  background: var(--purple);
+  color: white;
+  position: relative;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.8);
+}
+
+.ten:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  top: -16px;
+  left: -16px;
+  border-radius: 100px;
+  border: solid 1px var(--clear);
+}
+
+.eleven:after {
+  position: absolute;
+  content: '';
+  padding: 30px;
+  top: -31px;
+  left: -31px;
+  background: white;
+  z-index: -1;
+}
+
+.twelve {
+  color: var(--background);
+}
+
+.thirteen {
+  text-decoration: underline;
+}
+
+.fourteen {
+  animation: animation 1.5s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--purple) 0%,
+    white 48%,
+    white 52%,
+    var(--purple) 100%
+  );
+  background-size: 500px 640px;
+  position: relative;
+}
+
+@keyframes animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 500px 0;
+  }
+}
+
+.fifteen {
+  height: 100vh;
+  width: 100vw;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

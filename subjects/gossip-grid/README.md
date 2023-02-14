@@ -22,9 +22,10 @@ You only need to create & submit the JS file `gossip-grid.js`; we're providing y
 - the HTML file [gossip-grid.html](./gossip-grid.html) to open in the browser, which includes:
 
   - the JS script which will enable you to run your code.
-  - some CSS pre-styled classes: feel free to use those as they are, or modify them.
 
 - the data file [gossip-grid.data.js](./gossip-grid.data.js) from which you can import `gossips`.
+
+- the CSS file [gossip-grid.css](./gossip-grid.css) feel free to use those as they are, or modify them.
 
 ### Expected result
 

@@ -1,0 +1,66 @@
+
+:root {
+  --background: hsl(0, 0%, 12%);
+  --text: hsl(0, 0%, 80%);
+  --clear: hsl(0, 0%, 65%);
+  --disabled: hsl(0, 0%, 35%);
+  --purple: #bb73e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  letter-spacing: 1.5px;
+  background: var(--background);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 5rem;
+  cursor: crosshair;
+}
+
+svg {
+  filter: invert(100%);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+svg line {
+  stroke-width: 0.6px;
+  stroke: grey;
+}
+
+.text {
+  position: fixed;
+  filter: invert(100%);
+  font-size: 50px;
+  cursor: pointer;
+  white-space: pre-wrap;
+}
+
+.hsl {
+  filter: invert(100%);
+  font-size: 17px;
+}
+
+.hue {
+  top: 100px;
+  right: 100px;
+  text-align: right;
+}
+
+.luminosity {
+  bottom: 100px;
+  left: 100px;
+}

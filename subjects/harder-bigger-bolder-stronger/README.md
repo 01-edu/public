@@ -17,7 +17,8 @@ You only need to create & submit the JS file `harder-bigger-bolder-stronger.js`.
 - the HTML file [harder-bigger-bolder-stronger.html](./harder-bigger-bolder-stronger.html) to open in the browser, which includes:
 
   - the JS script running some code, and which will enable you to run yours.
-  - some CSS pre-styled classes: feel free to use those as they are, or modify them.
+
+- the CSS file [harder-bigger-bolder-stronger.css](./harder-bigger-bolder-stronger.css) feel free to use those as they are, or modify them.
 
 ### Notions
 
