@@ -8,12 +8,72 @@ You will create two scripts that will manage and perform scheduled backups.
 
 The script `backup_manager.py` will orchestrate the backup service and if necessary update the file `backup_schedules.txt`. In order to do so it will accept the following command-line arguments:
 
-- `start`: run `backup_service.py` in the background.
-- `stop`: stop the process `backup_service.py`.
-- `create [schedule]`: add a new backup schedule in `backup_schedules.txt`.
-- `delete [index]`: delete the backup schedule at line `index` (starting by 0) in `backup_schedules.txt`.
-- `list`: print the scheduled backups in `backup_schedules.txt`, adding an index before each schedule.
-- `backups`: list the backups files in `./backups`.
+- `start`:
+
+  - Runs `backup_service.py` in the background.
+  - Checks if the service is already running.
+  - If the service is already running and you try to run it again it should send an error message to the log file.
+
+- `stop` does the same as start but in order to sop or kill the process `backup_service.py`.
+- `create [schedule]`:
+
+  - Adds a new backup schedule in `backup_schedules.txt`.
+  - This schedule will have a specific format which is `"file_name;hour:minutes;backup_file_name"`
+  - If the schedule format is wrong, an error message should be sent to the log file.
+
+```bash
+$ python3 ./backup_manager.py create "wrong_format"
+$ cat logs/backup_manager.log
+[14/02/2023 15:07] Error: invalid schedule format
+```
+
+    - If the schedule format is correct and the schedule is created successfully, you should also send a the log file.
+
+```bash
+$ python3 ./backup_manager.py create "testing;15:44;backup_testing"
+$ cat logs/backup_manager.log
+[14/02/2023 15:44] Schedule created
+```
+
+- `list`:
+  - Prints the scheduled backups in `backup_schedules.txt`, adding an index before each schedule.
+  - Sends a message to the logs saying that the list is being accessed.
+
+```bash
+$ python3 ./backup_manager.py list
+0: testing;15:46;backup_test
+$ cat logs/backup_manager.log
+[14/02/2023 15:46] Show schedule list
+```
+
+- `delete [index]`:
+
+  - Delete the backup schedule at line `index` (starting by 0) in `backup_schedules.txt`.
+  - If the schedule is deleted, you must send a message to the log file.
+  - If the `index` does not exist or isn't valid, you must send an error message to the log file.
+
+```bash
+$ python3 ./backup_manager.py delete 1
+0: testing; 15:54;backup_testing
+$ cat logs/backup_manager.log
+[14/02/2023 15:54] Error: index does not exist
+[14/02/2023 15:54] Error: invalid index
+[14/02/2023 15:54] Schedule deleted
+```
+
+- `backups`:
+
+  - List the backups files in `./backups`.
+  - If the `backups` folder is empty it should print an error message informing the user.
+  - If the `backups` folder is not found it should be sent an error message to the log.
+  - If it works correctly it should send a messafe to the lo file informing the user.
+
+```bash
+$ python3 ./backup_manager.py backups
+backup_testing.tar
+$ cat logs/backup_manager.log
+[14/02/2023 16:05] Backup list
+```
 
 #### Second script: backup_service.py
 
@@ -102,6 +162,7 @@ backup_test.tar  office_docs.tar  personal_data.tar
 
 ### Hints
 
+- Familiarize yourself with the Python, including the use of modules such as `subprocess` and `shlex`, and file `I/O` operations.
 - To run a script from another python script you could use `subprocess.Popen` with the flag `start_new_session=True`.
 - To kill a process you should find its process id and call `os.kill`.
 - Play with the command `ps -A -f`, it will show a list of all active processes with the arguments attached to them and their process ids.
@@ -114,3 +175,7 @@ backup_test.tar  office_docs.tar  personal_data.tar
 
 - [Error handling in Python](https://docs.python.org/3.10/tutorial/errors.html)
 - [Spawn a subprocess in Python](https://docs.python.org/3.10/library/subprocess.html)
+- [Simple lexical analysis, shlex](https://docs.python.org/3/library/shlex.html)
+- [Reading and writing files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
+- [Set handlers for asynchronous events, signal](https://docs.python.org/3/library/signal.html)
+- [Try and Except](https://pythonbasics.org/try-except/)
