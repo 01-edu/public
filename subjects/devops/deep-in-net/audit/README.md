@@ -4,59 +4,60 @@
 
 Files that must be inside the repository:
 
-```console
-user:~/deep-in-net$ ls
-ex01.pkt
-ex02.pkt
-ex03.pkt
-ex04.pkt
-ex05.pkt
-ex06.pkt
-ex07.pkt
-ex08.pkt
-bonus.pkt
-user:~/deep-in-net$
+```bash
+$ tree deep-in-system/
+deep-in-system/
+├── bonus.pkt
+├── ex01.pkt
+├── ex02.pkt
+├── ex03.pkt
+├── ex04.pkt
+├── ex05.pkt
+├── ex06.pkt
+├── ex07.pkt
+└── ex08.pkt
+$
 ```
 
-> bonus.pkt is optional!
+> the `bonus.pkt` is optional!
 
-###### Are the required files present?
+###### Are all the required files present?
 
 #### Exercise 1:
 
-##### Open the ex01.pkt file in Cisco PacketTracer
+##### Open the `ex01.pkt` file in `Cisco PacketTracer`.
 
 ![ex01](../pictures/ex01.jpg)
 
-###### Are devices/links/IPs/netmasks in the student's solution similar to the required in the subject?
+###### Are the `devices/links/IPs/netmasks` in the solution similar to the required in the subject?
 
-##### Check the communication
+##### Check the communication between the PCs
 
 ![ex01-scenario](../pictures/ex01-scenario.jpg)
 
-###### Does PC0 can communication with PC1?
+- `PC0` can communicate with `PC1`.
+- `PC2` can communicate with `PC3`.
+- `PC4` can communicate with `PC5`.
 
-###### Does PC2 can communication with PC3?
+###### Can you confirm that the communications mentioned above are established?
 
-###### Does PC4 can communication with PC5?
+##### Ask the following questions to the group or student
 
-##### Ask the student
+- What is a RJ-45 cable?
+- What is difference between straight through and crossover RJ-45 cables?
+- How are the IP addresses calculated?
 
-###### Does the student can explain what is RJ-45 cable?
-
-###### Does the student can explain what is difference between straight-through and crossover RJ-45 cables?
-
-###### Does the student can explain how The IP addresses is calculated?
+###### Did the student reply correctly to the questions?
 
 #### Exercise 2:
 
-##### Open the ex02.pkt file in Cisco PacketTracer
+##### Open the `ex02.pkt` file in `Cisco PacketTracer`.
 
 ![ex02](../pictures/ex02.jpg)
 
-###### Are devices/links/IPs/netmasks in the student's solution similar to the required in the subject?
+###### Are the `devices/links/IPs/netmasks` in the solution similar to the required in the subject?
 
-##### Check the communication
+##### Check the connections and communications.
 
 ![ex02-scenario](../pictures/ex02-scenario.jpg)
 
@@ -64,196 +65,179 @@ user:~/deep-in-net$
 
 ###### Does all computers connected to the Hub must be connected?
 
-##### Ask the student
+##### Ask the following questions to the group or student
 
-###### Does the student can explain what is the Switch and what is its role?
+- What is the function of a `switch`, how does it operate and what is its role in networking?
+- What is the function of a `hub`, how does it operate and what is its role in networking?
+- What are the differences between a `hub` and a `switch`?
+- Can you identify the `OSI model layer` that the `switch` and the `hub` operate on?
 
-###### Does the student can explain what is the Hub and what is its role?
-
-###### Does the student can explain what is the difference between the Switch and the Hub?
-
-###### Does the student know at what layer of the OSI model the switch and the hub operate?
+###### Did the student reply correctly to the questions?
 
 #### Exercise 3:
 
-##### Open the ex03.pkt file in Cisco PacketTracer
+##### Open the `ex03.pkt` file in `Cisco PacketTracer`.
 
 ![ex03](../pictures/ex03.jpg)
 
-###### Are devices/links/IPs/netmasks in the student's solution similar to the required in the subject?
+###### Are the `devices/links/IPs/netmasks` in the solution similar to the required in the subject?
 
-###### All Servers have static IP addresses?
+###### Can you confirm that all `servers` have static IP addresses?
 
-###### Do all servers only provide the service specified for them?
+###### ###### Do all servers only provide the service specified for them?
 
-###### All PC's IP addresses assigned by the DHCP server?
+###### Is the `DHCP server` responsible for assigning the IP addresses to all PCs?
 
-##### Check the HTTPS Server
+##### Check the `HTTPS Server`.
 
 ![ex03-https](../pictures/ex03-https.jpg)
 
-###### Can connect to the HTTPS Server from any PC in the network?
+###### Can you connect to the `HTTPS Server` from any PC in the network?
 
-###### Does the HTTPS Server shows a hello message and HTTP is disabled?
+###### Does the `HTTPS Server` shows a "hell" message and is the `HTTP` disabled?
 
-##### Check the FTP Server
+##### Check the `FTP server`.
 
 ![ex03-ftp](../pictures/ex03-ftp.jpg)
 
-###### Does a "deepinnet" user with RWDNL access exists in the FTP Server?
+###### Does a `"deepinnet"` user with `RWDNL` access exists in the `FTP server`?
 
-###### Can connect to the FTP Server with "deepinnet" user from any PC in the network?
+###### Can you connect to the `FTP server` using the `"deepinnet"` user from any PC in the network?
 
-##### Check the DNS Server
+##### Check the `DNS server`.
 
 ![ex03-dns](../pictures/ex03-dns.jpg)
 
-###### Is The DNS Server contains the correct records?
+##### Confirm if the `DNS server` records are correct.
 
-###### Does "https://deep-in-net.com" redirect to the HTTPS Server?
+```bash
+deep-in-net.local > 192.168.1.99
+deep-in-net.com > deep-in-net.local
+```
 
-##### Ask the Student
+###### Does the `DNS server` contains the correct records as above?
 
-###### Does the student can explain what is a Server and what is its role?
+###### Does `"https://deep-in-net.com"` redirects to the `HTTPS Server`?
 
-###### Does the student can explain what is DHCP and what is its role?
+##### Ask the following questions to the group or student:
 
-###### Does the student can explain what is DNS and what is its role?
+- What is a `server` and what is its purpose in networking?
+- How does `DHCP` work in a network and what is its function?
+- What is the definition of `DNS` and what role does it play in network communication?
+- What is the purpose of `HTTP` and how is it used in networking?
+- What is `HTTPS` and how does it differ from `HTTP`?
+- What is the purpose of `FTP` and how does it operate in network communication?
+- What is `TCP` and `UDP` communication and what distinguishes them from each other?
+- At which `OSI model layer` do `TCP` and `UDP` operate?
+- What is a `port` in networking and what is its function?
+- What are the `port` and `OSI model layer` for each protocol used?
+- What are the various types of `DNS` records and what are their purposes?
 
-###### Does the student can explain what is HTTP and what is its role?
-
-###### Does the student can explain what is HTTPS and what is its role?
-
-###### Does the student can explain what is FTP and what is its role?
-
-###### Does the student can explain what is TCP and UDP communication and the difference between them?
-
-###### Does the student can explain what layers are TCP and UDP?
-
-###### Does the student can explain what is the port in networking?
-
-###### Does the student can explain what is the port and OSI Model layer of each used protocol?
-
-###### Does the student understand all DNS Records types?
+###### Did the student reply correctly to the questions?
 
 #### Exercise 4:
 
-##### Open the ex04.pkt file in Cisco PacketTracer
+##### Open the `ex04.pkt` file in `Cisco PacketTracer`.
 
 ![ex04](../pictures/ex04.jpg)
 
-###### Are devices/links/IPs/netmasks in the student's solution similar to the required in the subject?
+###### Are the `devices/links/IPs/netmasks` in the solution similar to the required in the subject?
 
-##### Check the communication
+##### Check the connections and communications.
 
 ![ex04-scenario](../pictures/ex04-scenario.jpg)
 
-###### The 2 PCs communicate with each other?
+###### Are the 2 PCs communicating with each other?
 
-##### Ask the Student
+##### Ask the following questions to the group or student:
 
-###### Does the student can explain what is the Router and what is its role?
+- What is a `router` and what is its role in a network?
+- How does a `switch` differ from a `router` in terms of functionality?
+- At which `OSI model layer` does a `router` operate?
+- What is meant by the term "default gateway" in networking?
 
-###### Does the student can explain what is the difference between the Switch and the Router?
-
-###### Does the student know at what layer of the OSI model a network Router is?
-
-###### Does the student can explain what is Default Gateway?
+###### Did the student reply correctly to the questions?
 
 #### Exercise 5:
 
-##### Open the ex05.pkt file in Cisco PacketTracer
+##### Open the `ex05.pkt` file in `Cisco PacketTracer`.
 
 ![ex05](../pictures/ex05.jpg)
 
-###### Are devices/links/IPs/netmasks in the student's solution similar to the required in the subject?
+###### Are the `devices/links/IPs/netmasks` in the solution similar to the required in the subject?
 
-##### Check the communication
+##### Check the connections and communications.
 
 ![ex05-scenario](../pictures/ex05-scenario.jpg)
 
-###### Are All devices connected to the same switch able to communicate with each other?
+###### Are all devices connected to the same `switch` able to communicate with each other?
 
-###### Do all devices in subnet 1 can communicate with all devices in subnet 2?
-
-###### Do all devices in subnet 2 can communicate with all devices in subnet 1?
+###### Are all devices in `subnet 1` able to communicate with all devices in `subnet 2` and vice versa?
 
 #### Exercise 6:
 
-##### Open the ex06.pkt file in Cisco PacketTracer
+##### Open the `ex06.pkt` file in `Cisco PacketTracer`.
 
 ![ex06](../pictures/ex06.jpg)
 
-###### Are devices/links/IPs/netmasks in the student's solution similar to the required in the subject?
+###### Are the `devices/links/IPs/netmasks` in the solution similar to the required in the subject?
 
-##### Check the communication
+##### Check the connections and communications.
 
 ![ex06-scenario](../pictures/ex06-scenario.jpg)
 
-###### Does the PC in subnet 1 can communicate with The PC in subnet 2?
+###### Is the PC in `subnet 1` able to communicate with the PC in `subnet 2` and vice versa?
 
-###### Does the PC in subnet 2 can communicate with The PC in subnet 1?
+##### Ask the student to explain what is a `routing table` and what is its role?
 
-##### Ask the Student
-
-###### Does the student can explain what is a routing table and what is its role?
+###### Did the student reply correctly to the question?
 
 #### Exercise 7:
 
-##### Open the ex07.pkt file in Cisco PacketTracer
+##### Open the `ex07.pkt` file in `Cisco PacketTracer`.
 
 ![ex07](../pictures/ex07.jpg)
 
-###### Are devices/links/IPs/netmasks in the student's solution similar to the required in the subject?
+###### Are the `devices/links/IPs/netmasks` in the solution similar to the required in the subject?
 
-##### Check the communication
+##### Check the connections and communications.
 
 ![ex07-scenario](../pictures/ex07-scenario.jpg)
 
-###### Are all devices connected to the same switch able to communicate with each other?
+###### Are all devices connected to the same `switch` able to communicate with each other?
 
-###### Do all devices in subnet 1 can communicate with all devices in subnet 2?
+###### Are all devices in `subnet 1` able to communicate with all devices in `subnet 2` and vice versa?
 
-###### Do all devices in subnet 2 can communicate with all devices in subnet 1?
+##### Ask the student to recreate the `"Exercise 7"` network again without external tools.
 
-##### Ask the Student to recreate the exercise 7 network again without external tools
-
-###### Does the student able to recreate the network?
+###### Was the student able to recreate the network?
 
 ###### Does the created network perform correctly?
 
 #### Exercise 8:
 
-##### Open the ex08.pkt file in Cisco PacketTracer
+##### Open the `ex08.pkt` file in `Cisco PacketTracer`.
 
 ![ex08](../pictures/ex08.jpg)
 
-###### Are devices/links/IPs/netmasks in the student's solution similar to the required in the subject?
+###### Are the `devices/links/IPs/netmasks` in the solution similar to the required in the subject?
 
-##### Check the communication
+##### Check the connections and communications.
 
 ![ex08-scenario](../pictures/ex08-scenario.jpg)
 
-###### Do all devices connected to the same switch able to communicate with each other?
+###### Are all devices connected to the same switch able to communicate with each other?
 
-###### Do all devices in subnet 1 can communicate with all devices in subnet 2?
+###### Can all devices in `subnet 1` communicate with all devices in `subnet 2` and vice versa?
 
-###### Do all devices in subnet 1 can communicate with all devices in subnet 3?
+###### Can all devices in `subnet 1` communicate with all devices in `subnet 3` and vice versa?
 
-###### Do all devices in subnet 2 can communicate with all devices in subnet 1?
-
-###### Do all devices in subnet 2 can communicate with all devices in subnet 3?
-
-###### Do all devices in subnet 3 can communicate with all devices in subnet 1?
-
-###### Do all devices in subnet 3 can communicate with all devices in subnet 2?
+###### Can all devices in `subnet 2` communicate with all devices in `subnet 3` and vice versa?
 
 #### Bonus:
 
 ###### + Did the student pass the network recreation exam without error and in a short time?
 
-###### + Did the student add any optional bonus?
-
-###### + Is the student a genius of the system administration?
+###### + Did the student add any optional bonus? If he did ask him what was it.
 
 > The auditor has the freedom to decide whether the bonus deserves to count or not!
