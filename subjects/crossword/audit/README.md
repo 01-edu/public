@@ -271,7 +271,7 @@ Error
 
 ###### Does the function display the value above?
 
-##### Does the program execution time for all audit questions is lesser or equal to the one in the [good practices](../../good-practices/README.md)?
+##### Is the program execution time for all audit questions less or equal to the time limit in the [good practices](../../good-practices/README.md)?
 
 ##### As an auditor, is this project up to every standard? If not, why are you failing the project? (Empty Work, Incomplete Work, Invalid compilation, Cheating, Crashing, Leaks)
 
