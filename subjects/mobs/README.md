@@ -43,7 +43,7 @@ You will also need to create two submodules of mob:
 
 The submodules should be created inside a folder named `mobs`. We advise you to create two files for each submodule, but that is up to you.
 
-You must include `#[derive(Debug, CLone, PartialEq)]` above every struct and enum.
+You must include `#[derive(Debug, Clone, PartialEq)]` above every struct and enum.
 
 ### Expected Function
 > You'll need to work out the function signatures for yourself.
