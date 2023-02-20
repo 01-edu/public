@@ -75,8 +75,9 @@ $ cat logs/backup_manager.log
 ##### Run the following command by order:
 
 ```bash
-mkdir testing; touch testing/file1 testing/file2 testing/file3
+mkdir testing testing2; touch testing/file1 testing/file2 testing/file3
 python3 ./backup_manager.py create "testing;[Current_hour];backup_test".
+python3 ./backup_manager.py create "testing;13:11;backup_test".
 python3 ./backup_manager.py start
 python3 ./backup_manager.py backups
 ```
@@ -87,8 +88,10 @@ Supposing the commands were run at 18:21, here is an example of the commands abo
 $ ls
 backup_manager.py  backup_service.py  testing/
 $ python3 ./backup_manager.py create "testing;18:21;backup_test"
+$ python3 ./backup_manager.py create "testing2;13:11;passed_time_backup"
 $ python3 ./backup_manager.py list
 0: testing;18:21;backup_test
+1: testing;13:11;passed_time_backup
 $ python3 ./backup_manager.py start
 $ python3 ./backup_manager.py backups
 backup_test.tar
@@ -104,7 +107,19 @@ $ cat logs/backup_service.log
 [13/02/2023 18:21] Backup done for testing in backups/backup_test.tar
 ```
 
-##### Can you confirm that the backup was created successfully? Follow the example above.
+###### Can you confirm that the backup was created successfully? Follow the example above.
+
+##### Open the `backup_test.tar` file to ensure that the backup process was successful. Verify that the files are not empty or damaged and that it matches the original directory.
+
+###### Was the backup created successfully?
+
+###### Can you confirm that the `passed_time_backup` was not created successfully because the time has already passed?
+
+##### Run `python3 backup_manager.py stop` and then `rm -dr logs backups backup_schedules.txt`.
+
+##### Create a `.zip` with some folders and files inside it and then replicate the steps you just did above to check if the backup is created successfully.
+
+###### Was the backup created successfully? (open the backup and verify that the files are not empty or damaged and that it matches the original directory.)
 
 ### Error handling
 
