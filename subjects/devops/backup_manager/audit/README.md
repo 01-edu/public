@@ -107,9 +107,7 @@ $ cat logs/backup_service.log
 [13/02/2023 18:21] Backup done for testing in backups/backup_test.tar
 ```
 
-###### Can you confirm that the backup was created successfully? Follow the example above.
-
-##### Open the `backup_test.tar` file to ensure that the backup process was successful. Verify that the files are not empty or damaged and that it matches the original directory.
+##### Follow the example above and then open the `backup_test.tar` file to ensure that the backup process was successful. Verify that the files are not empty or damaged and that it matches the original directory.
 
 ###### Was the backup created successfully?
 
