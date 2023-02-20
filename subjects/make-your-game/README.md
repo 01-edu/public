@@ -25,6 +25,7 @@ Here are some of the features you want to implement in your game:
   - **Countdown clock or Timer** that will indicate the amount of time the player has until the game ends or the time that the game has been running
   - **Score** that will display the current score (XP or points)
   - **Lives** that shows the number of lives that the player has left
+- The use of layers must be minimum but not zero in order to optimize the rendering performance.
 
 You must not use frameworks or canvas, the game must be implemented using plain JS/DOM and HTML only
 
