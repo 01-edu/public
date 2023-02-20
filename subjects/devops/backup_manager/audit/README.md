@@ -1,8 +1,10 @@
 #### Functional
 
+##### Before we start, let's make sure we have a fresh environment by running this command `rm -dr logs backups backup_schedules.txt`.
+
 ###### Can you confirm that the `backup_manager.py` and `backup_service.py` are present?
 
-##### Run the following command `python3 ./backup_manager.py create "test2;18:15;backup_test2"`
+##### Run the following command `python3 ./backup_manager.py create "test2;18:15;backup_test2"`.
 
 ###### Can you confirm that the `backup_schedules.txt` was created?
 
@@ -28,7 +30,7 @@ $ cat logs/backup_manager.log
 
 ###### Can you confirm that the `backup_manager.log` file contains an error like the one above, stating that the service is already stopped?
 
-##### Create a couple more backup schedules using the command `python3 ./backup_manager.py create "file;HH:MM;backup_name"`
+##### Create a couple more backup schedules using the command `python3 ./backup_manager.py create "file;HH:MM;backup_name"`.
 
 ##### Run the command `python3 ./backup_manager.py list`.
 
@@ -49,33 +51,39 @@ $ python3 ./backup_manager.py list
 1: test4;18:17;backup_test4
 ```
 
-###### Was the task with the index `1` removed from the list? Use `python3 ./backup_manager.py list`to.
+###### Was the task with the index `1` removed from the list like in the example above?
+
+###### Did the task with the index `2` became the task with the index `1` after you removed the old one from the list?
 
 ##### Verify that the following command runs without errors: `python3 backup_manager.py start`.
 
-###### Can you confirm that the `backup_service.py` process is running by using the command `ps -ef | grep backup_service`?
+###### Can you confirm that the `backup_service.py` process is running? (For example you could use `ps -ef | grep backup_service`).
 
 ##### Now run the command `python3 backup_manager.py start` again.
 
 ```bash
 $ python3 ./backup_manager.py start
 $ cat logs/backup_manager.log
+...
 [13/02/2023 17:14] Error: service already running
 ```
 
-###### Can you confirm bu running the command `cat logs/backup_manager.log` if the log file contains an error like the one above, stating that the service is already running?
+###### Can you confirm if the last log is stating that the service is already running? (You can use `cat logs/backup_manager.log` to confirm).
 
-##### Run `python3 backup_manager.py stop` and delete everything that was created until now, the `logs` folder and the `backup_schedules.txt`. Lets create the backup manually.
+##### Run `python3 backup_manager.py stop` and then `rm -dr logs backups backup_schedules.txt`. Let's create the backup manually.
 
 ##### Run the following command by order:
 
-    1- mkdir testing; cd testing; touch 1 2 3; cd ../
-    2- python3 ./backup_manager.py create "testing;"Current_hour";backup_test".
-    3- python3 ./backup_manager.py start
-    4- python3 ./backup_manager.py backups
-
 ```bash
-$ mkdir testing; cd testing; touch 1 2 3; cd ../
+mkdir testing; touch testing/file1 testing/file2 testing/file3
+python3 ./backup_manager.py create "testing;[Current_hour];backup_test".
+python3 ./backup_manager.py start
+python3 ./backup_manager.py backups
+```
+
+Supposing the commands were run at 18:21, here is an example of the commands above:
+
+```console
 $ ls
 backup_manager.py  backup_service.py  testing/
 $ python3 ./backup_manager.py create "testing;18:21;backup_test"
@@ -87,8 +95,8 @@ backup_test.tar
 $ ls
 backup_manager.py  backups/  backup_schedules.txt  backup_service.py  logs/ testing/
 $ cat logs/backup_manager.log
-[13/02/2023 18:20] Schedule created
-[13/02/2023 18:20] Show schedule list
+[13/02/2023 18:21] Schedule created
+[13/02/2023 18:21] Show schedule list
 [13/02/2023 18:21] Backup list
 $ cat backup_schedules.txt
 testing;18:21;backup_test
@@ -100,24 +108,28 @@ $ cat logs/backup_service.log
 
 ### Error handling
 
-##### Verify error handling for incorrect commands and incorrect arguments. For example, confirm that an error message is displayed when attempting to run the command `python3 backup_manager.py invalid_command`.
+##### Verify error handling for incorrect commands and incorrect arguments. For example, confirm that an error message is logged when attempting to run the command `python3 backup_manager.py invalid_command`.
 
 ```bash
 $ python3 backup_manager.py invalid_command
-Error: unknown instruction
+$ cat logs/backup_service.log
+...
+[13/02/2023 18:21] Error: unknown instruction
 ```
 
-###### Was the error message displayed?
+###### Was the error message logged correctly?
 
-##### Run `python3 backup_manager.py stop` and delete everything that was created until now, the `logs` folder and the `backup_schedules.txt`. After that run the following commands:
-
-    1- python3 backup_manager.py stop
-    2- python3 ./backup_manager.py create "wrong_format"
-    3- python3 ./backup_manager.py backups
-    4- python3 ./backup_manager.py start
-    5- python3 ./backup_manager.py start
+##### Run `python3 backup_manager.py stop` and then `rm -dr logs backups backup_schedules.txt`. After that run the following commands:
 
 ```bash
+python3 backup_manager.py stop
+python3 ./backup_manager.py create "wrong_format"
+python3 ./backup_manager.py backups
+python3 ./backup_manager.py start
+python3 ./backup_manager.py start
+```
+
+```console
 $ cat logs/backup_manager.log
 [14/02/2023 15:07] Error: cannot kill the service
 [14/02/2023 15:07] Error: invalid schedule format
@@ -125,11 +137,11 @@ $ cat logs/backup_manager.log
 [14/02/2023 15:08] Error: service already running
 $ cat logs/backup_service.log
 [14/02/2023 15:11] Error: cannot open backup_schedules
-
+$
 ```
 
 ###### Can you confirm that all error messages have been saved in the log files like in the example above?
 
-##### Go to the code of the project adn check if the creator used `try` and `catch` to handle the errors.
+##### Go to the code of the project adn check if the creator used `try` and `except` to handle the errors.
 
-###### Did he use `try` and `catch` to handle the errors?
+###### Did he use `try` and `except` to handle the errors?
