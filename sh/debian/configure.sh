@@ -261,11 +261,7 @@ function deployCore() {
 
   # Get the latest release version tag and create latest branch
   tag=$(git describe --tags $(git rev-list --tags --max-count=1))
-  git checkout $tag -b latest
-  git describe --tags
-
-  # Set upstream to latest
-  git branch --set-upstream-to=origin/latest latest
+  git checkout $tag
 
   # Get user auth infor for the runner
   echo -e "Enter the runner Registry password: "
