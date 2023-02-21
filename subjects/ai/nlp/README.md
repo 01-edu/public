@@ -185,7 +185,7 @@ As explained in the ressource, the Bag of word reprensation makes the assumption
 - Wordcount: Each document is a word count vector
 - TFIDF: Each document is a score vector. The score is detailed in the next exercise.
 
-The data `tweets_train.txt` contains tweets labeled with a sentiment. It gives the positivity of a tweet.
+The data file [tweets_train.txt](resources/tweets_train.txt) contains tweets labeled with a sentiment. It gives the positivity of a tweet.
 
 Steps:
 
