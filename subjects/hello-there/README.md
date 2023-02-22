@@ -6,7 +6,7 @@ For each programs, make sure you are downloading a version that works for your s
 
 #### Install Visual Studio Code
 
-- Download the installer https://code.visualstudio.com/download
+- Download the [installer](https://code.visualstudio.com/download)
 
 > If you already have and love a code editor, feel free to use it,
 > but keep in mind that we will use VSCode as reference
@@ -15,7 +15,7 @@ VSCode is a code editor, it will give you an interface to write, test and submit
 
 #### Install Git
 
-- Download the installer https://git-scm.com/downloads
+- Download the [installer](https://git-scm.com/downloads)
 - While installing, Git will ask a bunch of questions, it is recommended to change those:
 	- Choosing the default editor (pick VSCode)
 	- Configuring the line ending conversions (Choose : Checkout as-is, commit Unix-style line endings)
@@ -25,7 +25,7 @@ Git is a versioning tool, we use it to upload your solutions on the school serve
 
 #### Install Node.js
 
-- Download the installer https://nodejs.org/en/download/current/
+- Download the [installer](https://nodejs.org/en/download/current/)
 
 Node.js will allow to execute JavaScript code outside of the browser, useful for testing your code.
 
