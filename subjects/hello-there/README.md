@@ -4,7 +4,7 @@
 
 For each programs, make sure you are downloading a version that works for your system
 
-#### Install `vscode`
+#### Install Visual Studio Code
 
 - Download the installer https://code.visualstudio.com/download
 
@@ -13,7 +13,7 @@ For each programs, make sure you are downloading a version that works for your s
 
 VSCode is a code editor, it will give you an interface to write, test and submit your code.
 
-#### Install `git`
+#### Install Git
 
 - Download the installer https://git-scm.com/downloads
 - While installing, Git will ask a bunch of questions, it is recommended to change those:
@@ -23,7 +23,7 @@ VSCode is a code editor, it will give you an interface to write, test and submit
 
 Git is a versioning tool, we use it to upload your solutions on the school server.
 
-#### Install `nodejs`
+#### Install Node.js
 
 - Download the installer https://nodejs.org/en/download/current/
 
