@@ -27,7 +27,14 @@ Git is a versioning tool, we use it to upload your solutions on the school serve
 
 - Download the installer https://nodejs.org/en/download/current/
 
-NodeJS will allow to execute JavaScript code outside of the browser, useful for testing your code.
+Node.js will allow to execute JavaScript code outside of the browser, useful for testing your code.
+
+You can execute your JavaScript files with `node` like so:
+
+```console
+$ node hello-world.js
+Hello, world!
+```
 
 
 ### Values
