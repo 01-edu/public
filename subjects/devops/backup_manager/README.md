@@ -1,5 +1,18 @@
 ## Backup manager
 
+### Logs and error handling
+
+All scripts will have to use `try` and `except` to handle errors.
+
+The scripts should log (aka write) all actions and errors into a specific file in the `./log` directory.
+
+- The script `backup_manager.py` will log into `./logs/backup_manager.log`.
+- The script `backup_service.py` will log into `./logs/backup_service.log`.
+
+You can choose to phrase your logs as you prefer, however it would be smart to start with a timestamp and try to be as specific as you can.
+
+> Check the examples in the list of arguments for `backup_manager.py` and the usage section to see what the logs should looks like.
+
 ### Instructions
 
 You will create two scripts that will manage and perform scheduled backups.
@@ -10,18 +23,44 @@ The script `backup_manager.py` will orchestrate the backup service and if necess
 
 - `start`: Runs `backup_service.py` in the background.
 
+  - Example of logs:
+  - `[dd/mm/yyyy hh:mm] backup_service started`
+  - `[dd/mm/yyyy hh:mm] Error: can't start backup_service`
+  - `[dd/mm/yyyy hh:mm] Error: backup_service already running`
+
 - `stop`: Kills `backup_service.py` process.
 
-- `create [schedule]`:
+  - Example of logs:
+  - `[dd/mm/yyyy hh:mm] backup_service stopped`
+  - `[dd/mm/yyyy hh:mm] Error: can't stop backup_service`
+  - `[dd/mm/yyyy hh:mm] Error: backup_service not running`
 
-  - Adds a new backup schedule in `backup_schedules.txt`.
+- `create [schedule]`: Adds a new backup schedule in `backup_schedules.txt`.
+
   - This schedule will have a specific format which is `"file_name;hour:minutes;backup_file_name"`.
+
+  - Example of logs:
+    - `[dd/mm/yyyy hh:mm] New schedule added: test2;16:07;office_docs`
+    - `[dd/mm/yyyy hh:mm] Error: malformed schedule: test;`
 
 - `list`: Prints the scheduled backups in `backup_schedules.txt`, adding an index before each schedule.
 
+  - Example of logs:
+    - `[dd/mm/yyyy hh:mm] Show backups list`
+    - `[dd/mm/yyyy hh:mm] Error: can't find backup_schedules.txt`
+
 - `delete [index]`: Delete the backup schedule at line `index` (starting by 0) in `backup_schedules.txt`.
 
+  - Example of logs:
+    - `[dd/mm/yyyy hh:mm] Schedule at index 3 deleted`
+    - `[dd/mm/yyyy hh:mm] Error: can't find schedule at index 3`
+    - `[dd/mm/yyyy hh:mm] Error: can't find backup_schedules.txt`
+
 - `backups`: List the backups files in `./backups`.
+
+  - Example of logs:
+    - `[dd/mm/yyyy hh:mm] Show backups list`
+    - `[dd/mm/yyyy hh:mm] Error: can't find backups directory`
 
 #### Second script: backup_service.py
 
@@ -35,18 +74,6 @@ The script `backup_service.py` will check the schedules in `backup_schedules.txt
 - The backups will be a compressed file (`.tar`) for the `path_to_save` directory.
 
 > At the end of each loop it would be wise to make the service sleep for about 45 seconds to save processor cycles.
-
-### Logs and error handling
-
-Both scripts will have to use `try` and `except` to handle errors.
-All actions and errors should be logged into a specific file in the `./log` directory.
-
-- `backup_manager.py` will log into `./logs/backup_manager.log`.
-- `backup_service.py` will log into `./logs/backup_service.log`.
-
-You can choose to phrase your logs as you prefer, however it would be smart to start with a timestamp and try to be as specific as you can.
-
-> Check the usage section to see an example of good logs.
 
 ### Usage
 
