@@ -1,6 +1,7 @@
 ##### Open the repository of the project and check the submitted files
 
 ###### Can you confirm that the `crosswordSolver.js` file is present and you can run the following command `node crosswordSolver.js` adding the following lines to the original `crosswordSolver.js`?
+
 ```js
 const puzzle = '2001\n0..0\n1000\n0..0'
 const words = ['casa', 'alan', 'ciao', 'anta']
@@ -9,6 +10,7 @@ crosswordSolver(puzzle, words)
 ```
 
 ##### Try running the function with the arguments:
+
 ```js
 const puzzle = '2001\n0..0\n1000\n0..0'
 const words = ['casa', 'alan', 'ciao', 'anta']
@@ -24,9 +26,9 @@ o..n
 ###### Does the function display the value above?
 
 ##### Try running the function with the arguments:
+
 ```js
-const puzzle = 
-`...1...........
+const puzzle = `...1...........
 ..1000001000...
 ...0....0......
 .1......0...1..
@@ -40,18 +42,18 @@ const puzzle =
 ...0......0....
 ..........0....`
 const words = [
-	'sun',
-	'sunglasses',
-	'suncream',
-	'swimming',
-	'bikini',
-	'beach',
-	'icecream',
-	'tan',
-	'deckchair',
-	'sand',
-	'seaside',
-	'sandals'
+  'sun',
+  'sunglasses',
+  'suncream',
+  'swimming',
+  'bikini',
+  'beach',
+  'icecream',
+  'tan',
+  'deckchair',
+  'sand',
+  'seaside',
+  'sandals',
 ]
 ```
 
@@ -74,9 +76,9 @@ bikini..r...n..
 ###### Does the function display the value above?
 
 ##### Try running the function with the arguments:
+
 ```js
-const puzzle = 
-`..1.1..1...
+const puzzle = `..1.1..1...
 10000..1000
 ..0.0..0...
 ..1000000..
@@ -118,10 +120,62 @@ pork..pasta
 ###### Does the function display the value above?
 
 ##### Try running the function with the arguments:
-[comment]: <> Test mismatch between number of input words and puzzle starting cells
+
 ```js
-const puzzle = '2001\n0..0\n1000\n0..0'
-const words = ['casa', 'casa', 'ciao', 'anta']
+const puzzle = `...1...........
+..1000001000...
+...0....0......
+.1......0...1..
+.0....100000000
+100000..0...0..
+.0.....1001000.
+.0.1....0.0....
+.10000000.0....
+.0.0......0....
+.0.0.....100...
+...0......0....
+..........0....`
+const words = [
+  'sun',
+  'sunglasses',
+  'suncream',
+  'swimming',
+  'bikini',
+  'beach',
+  'icecream',
+  'tan',
+  'deckchair',
+  'sand',
+  'seaside',
+  'sandals',
+].reverse()
+```
+
+```
+...s...........
+..sunglasses...
+...n....u......
+.s......n...s..
+.w....deckchair
+bikini..r...n..
+.m.....seaside.
+.m.b....a.a....
+.icecream.n....
+.n.a......d....
+.g.c.....tan...
+...h......l....
+..........s....
+```
+
+###### Does the function display the value above?
+
+##### Try running the function with the arguments:
+
+[comment]: <> Test mismatch between number of input words and puzzle starting cells
+
+```js
+const puzzle = '2001\n0..0\n2000\n0..0'
+const words = ['casa', 'alan', 'ciao', 'anta']
 ```
 
 ```
@@ -131,7 +185,9 @@ Error
 ###### Does the function display the value above?
 
 ##### Try running the function with the arguments:
+
 [comment]: <> Test starting words higher than 2
+
 ```js
 const puzzle = '0001\n0..0\n3000\n0..0'
 const words = ['casa', 'alan', 'ciao', 'anta']
@@ -144,7 +200,9 @@ Error
 ###### Does the function display the value above?
 
 ##### Try running the function with the arguments:
+
 [comment]: <> Test words repetition
+
 ```js
 const puzzle = '2001\n0..0\n1000\n0..0'
 const words = ['casa', 'casa', 'ciao', 'anta']
@@ -157,7 +215,9 @@ Error
 ###### Does the function display the value above?
 
 ##### Try running the function with the arguments:
+
 [comment]: <> Test empty puzzle
+
 ```js
 const puzzle = ''
 const words = ['casa', 'alan', 'ciao', 'anta']
@@ -170,7 +230,9 @@ Error
 ###### Does the function display the value above?
 
 ##### Try running the function with the arguments:
+
 [comment]: <> Test wrong format checks
+
 ```js
 const puzzle = 123
 const words = ['casa', 'alan', 'ciao', 'anta']
@@ -183,7 +245,9 @@ Error
 ###### Does the function display the value above?
 
 ##### Try running the function with the arguments:
+
 [comment]: <> Test wrong format checks
+
 ```js
 const puzzle = ''
 const words = 123
@@ -196,7 +260,24 @@ Error
 ###### Does the function display the value above?
 
 ##### Try running the function with the arguments:
-[comment]: <> Test multiple solutions 
+
+[comment]: <> Test multiple solutions
+
+```js
+const puzzle = '2000\n0...\n0...\n0...'
+const words = ['abba', 'assa']
+```
+
+```
+Error
+```
+
+###### Does the function display the value above?
+
+##### Try running the function with the arguments:
+
+[comment]: <> Test no solution
+
 ```js
 const puzzle = '2001\n0..0\n1000\n0..0'
 const words = ['aaab', 'aaac', 'aaad', 'aaae']
@@ -208,6 +289,14 @@ Error
 
 ###### Does the function display the value above?
 
+###### Does the program execution time for each audit question follow the time frame specified in the [good practices](../../good-practices/README.md)?
+
+###### As an auditor, is this project up to every standard? If not, why are you failing the project? (Empty Work, Incomplete Work, Invalid compilation, Cheating, Crashing, Leaks)
+
 #### Bonus
 
 ###### +Is the project using a backtracking algorithm to solve the problem?
+
+###### +Is there a test file for this code?
+
+###### +Are the tests checking each possible case?
