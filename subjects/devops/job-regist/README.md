@@ -4,7 +4,7 @@
 
 Create a script, `job-regist.sh`, that will be able to monitor a specific background job.
 
-The script needs to track the status of the first jobs spawned by the current terminal and periodically save the status into a `job.log` file. It must append the new update without modifying the previous content.
+The script needs to track the status of the first jobs spawned by the current terminal and save the status into a `job.log` file every second. It must append the new update without modifying the previous content.
 
 Each update needs to be appended to the file with the current format: `YYYY-MM-DD hh:mm:ss - <job status>`
 
