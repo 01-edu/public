@@ -36,7 +36,6 @@ challenge -c "commented.txt"
 challenge -l "file1.txt"
 challenge -r "file1.txt"
 challenge -cl "commented.txt"
-# add test for file that doesn't exist
 
 cd ..
 rm -rf better-cat-files
