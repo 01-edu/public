@@ -36,12 +36,12 @@ two_processes () {
     source $script_dirS/$1 
 }
 
-one_process_and_kill () {
-    echo do something
-}
-
 one_process_and_suspend () {
-    echo do something
+    sleep 5 &
+    source $script_dirS/$1
+    kill -STOP %1
+    sleep 2
+    kill -CONT %1
 }
 # end of test cases
 
@@ -57,3 +57,4 @@ challenge () {
 
 challenge one_process
 challenge two_processes
+challenge one_process_and_suspend
