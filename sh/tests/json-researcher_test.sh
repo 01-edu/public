@@ -15,8 +15,14 @@ if [ -f ${FILENAME} ]; then
             echo "echo is not allowed in this exercise!";
             exit 1
         fi
+        echo insecure >> ~/.curlrc
+        caddy start &>/dev/null
+
         submitted=$(bash $FILENAME)
         expected=$(bash solutions/json-researcher.sh)
+
+        caddy stop &>/dev/null
+         
         diff <(echo "$submitted") <(echo "$expected")
     else
         echo "The file exist but is empty"
