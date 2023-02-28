@@ -17,7 +17,7 @@ So he wants to know what the acceleration of that object is, depending on its pr
 - distance xx
 - time xx
 
-Create a function named `getAcceleration` that calculates the velocity of a given object. For example:
+Create a function named `getAcceleration` that calculates the acceleration of a given object. For example:
 ```js
 {
   f: 10,
@@ -28,7 +28,7 @@ Create a function named `getAcceleration` that calculates the velocity of a give
   d: 10
 }
 ```
-If its not possible to calculate it, it must return the string `"impossible"`.
+If it is not possible to calculate it, it must return the string `"impossible"`.
 
 ### Formulas
 
