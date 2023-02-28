@@ -32,7 +32,7 @@ You only need to create & submit the JS file `fifty-shades-of-cold.js`, we're pr
 
 - the data file [fifty-shades-of-cold.data.js](./fifty-shades-of-cold.data.js) from which you can import `colors`.
 
-- feel free to use the CSS file [fifty-shades-of-cold.css](./fifty-shades-of-cold.css) as it is or you can also modify it.
+- feel free to use the CSS file [fifty-shades-of-cold.data.css](./fifty-shades-of-cold.data.css) as it is or you can also modify it.
 
 ### Expected result
 
