@@ -1,6 +1,6 @@
 ## play-with-containers
 
-![Microservices](pictures/Microservices.jpg)
+![Microservices](pictures/Microservices.png)
 
 ### Objectives
 
