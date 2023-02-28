@@ -20,8 +20,11 @@ This project aims to discover the container concepts and tools, and practice the
 - Read the official documentation of docker.
 
 > Any lack of understanding of the concepts of this project may affect the difficulty of future projects, Take your time to understand all concepts.
+
 > Be curious and never stop searching!
+
 > Each operation in Dockerfile is a layer in the image, You must design it appropriately to avoid duplicate or useless layers in the image.
+
 > It is not recommended to use 'latest' in your Dockerfile, instead of that you can specify the version in the tag,
 
 ### Instructions
@@ -35,7 +38,7 @@ You have to implement this architecture:
 
 You will use the services you developed in the `crud-master` project, otherwise, you can use our services: `crud-master solution`
 
-You are required to create `Dockerfiles` for each service and call them in your `docker-compose.yml` (Each service should have its container for optimal performance.)
+You are required to create `Dockerfiles` for each service and call them in your `docker-compose.yml` (Each service should have its container for optimal performance.).
 To ensure performance, the containers should be created from the penultimate stable version of either `Alpine` or `Debian`, depending on your preference.
 The corresponding service and Docker image must share the same name.
 This implies that you must build your project's Docker images and are not allowed to use pre-built Docker images or services like DockerHub, except for `Alpine` and `Debian`.
