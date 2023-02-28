@@ -48,7 +48,7 @@ You only need to create & submit the JS file `pimp-my-style.js`. Ee're providing
   - the JS script running some code, and which will enable you to run yours.
 - the data file [pimp-my-style.data.js](./pimp-my-style.data.js) from which you can import `styles`.
 
-- feel free to use the CSS file [pimp-my-style.css](./pimp-my-style.css) as it is or you can also modify it.
+- feel free to use the CSS file [pimp-my-style.data.css](./pimp-my-style.data.css) as it is or you can also modify it.
 
 ### Expected result
 
