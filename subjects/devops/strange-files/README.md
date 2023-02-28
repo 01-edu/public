@@ -14,7 +14,7 @@ Create the following files:
 $ ls | cat -e
 "\?$*'Hard_file'*$?\"$
 firstFile$
-"medium_file!"$
+"medium_File!"$
 $
 ```
 
