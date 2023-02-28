@@ -31,7 +31,7 @@ You only need to create & submit the JS file `where-do-we-go.js`; we're providin
 
 - the data file [where-do-we-go.data.js](./where-do-we-go.data.js) from which you can import `places`
 
-- feel free to use the CSS file [where-do-we-go.css](./where-do-we-go.css) as it is or you can also modify it.
+- feel free to use the CSS file [where-do-we-go.data.css](./where-do-we-go.data.css) as it is or you can also modify it.
 
 - you can get the images to be used in this [compressed folder](https://assets.01-edu.org/where-do-we-go_images.zip) or you can get them in the where-do-we-go_images folder from the public URL. Example: `https://public.01-edu.org/subjects/where-do-we-go/where-do-we-go_images/arlit.jpg
 ### Expected result

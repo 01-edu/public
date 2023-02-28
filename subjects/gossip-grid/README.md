@@ -25,7 +25,7 @@ You only need to create & submit the JS file `gossip-grid.js`; we're providing y
 
 - the data file [gossip-grid.data.js](./gossip-grid.data.js) from which you can import `gossips`.
 
-- feel free to use the CSS file [gossip-grid.css](./gossip-grid.css) as it is or you can also modify it.
+- feel free to use the CSS file [gossip-grid.data.css](./gossip-grid.data.css) as it is or you can also modify it.
 
 ### Expected result
 

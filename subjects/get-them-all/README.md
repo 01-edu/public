@@ -52,4 +52,4 @@ You only need to create & submit the JS file `get-them-all.js` ; we're providing
 
 - the data file [get-them-all.data.js](./get-them-all.data.js) used to generate content in the HTML
 
-- feel free to use the CSS file [get-them-all.css](./get-them-all.css) as it is or you can also modify it.
+- feel free to use the CSS file [get-them-all.data.css](./get-them-all.data.css) as it is or you can also modify it.
