@@ -22,7 +22,7 @@ $
 With `curl` you can get the content of the file from the url:
 
 ```console
-$curl https://assets.01-edu.org/devops-branch/HeadTail.txt
+$curl https://adn-training.01-edu.org/assets/superhero/all.json
 <...>
 $
 ```
