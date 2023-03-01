@@ -8,7 +8,7 @@ The script should accept any number of filenames as arguments, and it should pri
 
 The script should also support the following options:
 
-- `-c`: If this option is provided, the script should exclude all lines that begin with the # character. 
+- `-c`: If this option is provided, the script should exclude all lines that begin with the # character.
 - `-l`: If this option is provided, the script should print the length of the line before each line of output.
 - `-r`: If this option is provided, the script should print a summary line at the end of the output, indicating the total number of lines in the file and the count of characters in the lines printed.
 
