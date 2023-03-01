@@ -36,6 +36,7 @@ challenge -c "commented.txt"
 challenge -l "file1.txt"
 challenge -r "file1.txt"
 challenge -cl "commented.txt"
+challenge -clr "commented.txt"
 
 cd ..
 rm -rf better-cat-files
