@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a script `better-cat.sh` that will behave similarly to the cat command, but with additional functionality.
+Create a script `better-cat.sh` that will behave similarly to the `cat` command, but with additional functionality.
 
 The script should accept any number of filenames as arguments, and it should print the content of each file to the standard output. If no arguments are provided, the script should print the content of all files in the current directory.
 
@@ -60,5 +60,4 @@ Here would be line 8 of file3
 Here would be line 9 of file3
 Here would be line 10 of file3
 Total: 10 lines, 301 characters
-
 ```
