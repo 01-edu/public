@@ -64,6 +64,7 @@ This implies that you must build your project's Docker images and are not allowe
 
 - You must have a docker network that establishes the connection between all services inside your docker host.
 - Any outside request must be able to access only the `api-gateway-app` via `HTTPS`.
+- The connection to the api-gateway-app protected by `SSL certification` (self-signed certification is authorized)
 
 > All resources in your infrastructure must be targeted and managed by docker-compose.
 
