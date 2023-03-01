@@ -21,7 +21,7 @@ pub struct Numbers<'a> {
 }
 
 impl Numbers {
-    pub fn new(&[u32]) -> Self {}
+    pub fn new(numbers: &[u32]) -> Self {}
 
     pub fn list(&self) -> &[u32] {}
 
