@@ -10,17 +10,9 @@ But it wasn't until the digital age that chess truly reached its potential. With
 
 So whether you're a seasoned grandmaster or a newcomer to the game, join the ranks of chess enthusiasts and experience the thrill of victory and the agony of defeat. Let the battle of the minds begin!
 
-Your task is to develop a mobile app that allows users to play chess with each other.
+Today, chess continues to be a beloved pastime, played by millions of people worldwide. And with the advent of modern technology, it has become easier than ever to play and learn the game. Mobile apps bring the game of chess to the palm of your hand, allowing you to enjoy this timeless classic anytime, anywhere. Whether you're a seasoned chess player or just starting out, chess offers a fun and engaging way to experience the history and strategy of this beloved game.
 
-Here are the main features that the app should include:
-
-- A board for playing chess
-- The ability for players to invite each other to a game or join a public game
-- A notification system to alert players when it is their turn to make a move
-
-To implement these features, you may need to use various Flutter widgets and packages. You should also consider the user experience and design of the app, as a visually appealing and intuitive interface will be important for its success.
-
-The main objectives of this exercise are to create a functional chess app that allows players to compete against each other and to use Flutter to develop a mobile app. Good luck!
+Your task is to develop a mobile app that allows users to play chess with each other. This is a fullstack app so you will need to implement both backend and frontend. You may use any desired backend technology as long as you're following the [backend routes.](https://github.com/alem-01/chess). Good luck!
 
 Here are some additional considerations to keep in mind as you work on this exercise:
 
