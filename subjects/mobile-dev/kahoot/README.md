@@ -1,26 +1,20 @@
-# Kahoot
+### Introduction:
 
-### Exercise
+The mobile app we are creating is designed to allow users to connect with their friends and track their last known location. Upon logging into the app via email, users will be able to search for their friends by email and send friend requests. Once two users have become friends within the app, they will be able to see each other's last known location when the app was turned on.
 
-Welcome to the world of quiz-filled adventures! In this exercise, you will have the opportunity to build a dynamic mobile app using Flutter and a ready backend with Swagger. With your app, players will be able to compete against each other in a variety of themed quizzes, track their progress, and climb to the top of the leaderboard.
+The app will use location tracking technology to determine the last known location of each user. This technology will be able to determine the user's location within a certain degree of accuracy, depending on the capabilities of the device being used.
 
-Get ready to test your knowledge and challenge your friends in this exciting new app. With the power of Flutter and a robust backend, the possibilities are endless. Are you up for the challenge? Let's get started!
+Overall, the app is designed to be a fun and interactive way for users to stay connected with their friends and see where they've been. Whether you're meeting up for a night out on the town or just keeping tabs on your friends' whereabouts, this app is sure to be a hit with anyone who loves mobile technology.
 
-In this exercise, you will build a mobile quiz game similar to [Kahoot](https://kahoot.it), implementing a backend that has been described by given Swagger. You will be provided with the API documentation for the backend, which includes all of the endpoints and request/response payloads that you will need to use in order to create the mobile app.
+This app is fullstack, therefore you will have to implement both backend and frontend for the project. For the frontend part, make sure to add following functionality:
 
-Your task will be to build a mobile app that allows users to:
+    - Users authenticate via email
+    - Ability to search friends via email
+    - Sending 'friends' request
+    - Denying/accepting 'friends' request
+    - Deleting from 'friends' list
+    - Seeing your friends last location
 
-- Browse a list of available quizzes
-- Select and play a quiz
-- Answer quiz questions
-- View their score and ranking after completing the quiz
+To keep users' location up to date, each time the app is open, current location must be sent to the server every 5 seconds.
 
-To complete this exercise, you will need to:
-
-- Familiarize yourself with the provided Swagger
-- Use the backend to retrieve the list of available quizzes and the questions for each quiz
-- Display the quizzes and questions in the mobile app
-- Allow users to select and play a quiz
-- Track and display the user's score and ranking after they complete the quiz
-
-This exercise will help you develop skills in building mobile apps that consume APIs, as well as testing and debugging your code. It will also help you become familiar with Swagger and the process of working with a ready backend.
+To see more details on the backend part of the project, please look at the provided swagger.
