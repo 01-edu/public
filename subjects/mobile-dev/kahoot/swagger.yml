@@ -1,0 +1,334 @@
+swagger: "2.0"
+info:
+  title: Friend Tracker API
+  description: API for tracking friends' locations and sending invitations
+  version: "1.0.0"
+host: example.com
+basePath: /api
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /auth:
+    post:
+      summary: Authenticate user via Google
+      description: Authenticate the user using their Google account and return an access token
+      parameters:
+        - name: id_token
+          in: body
+          description: The ID token obtained from Google after successful authentication
+          required: true
+          schema:
+            type: object
+            properties:
+              id_token:
+                type: string
+      responses:
+        200:
+          description: Access token for the user
+          schema:
+            type: object
+            properties:
+              access_token:
+                type: string
+        400:
+          description: Invalid ID token
+        500:
+          description: Internal server error
+
+  /users:
+    put:
+      summary: Update user's avatar and name
+      description: Update the user's avatar and name with the specified values
+      parameters:
+        - name: authorization
+          in: header
+          description: Access token to authorize request
+          required: true
+          type: string
+        - name: avatar
+          in: body
+          required: false
+          schema:
+            type: object
+            properties:
+              avatar:
+                type: string
+                description: The new avatar image for the user
+              name:
+                description: The new name for the user
+                type: string
+      responses:
+        200:
+          description: User info
+          schema:
+            type: object
+            properties:
+              id:
+                type: integer
+                description: The ID of the user
+              name:
+                type: string
+                description: The name of the user
+              avatar:
+                type: string
+                description: The URL of the user's avatar image
+              email:
+                type: string
+                description: The email address of the user
+        401:
+          description: Unauthorized request
+        500:
+          description: Internal server error
+
+  /locations:
+    post:
+      summary: Submit user's location
+      description: Submit the user's current location to update their last known location
+      parameters:
+        - name: authorization
+          in: header
+          description: Access token to authorize request
+          required: true
+          type: string
+        - name: latitude
+          in: body
+          description: The user's current location
+          required: true
+          schema:
+            type: object
+            properties:
+              latitude:
+                type: number
+                description: The user's current latitude
+              longitude:
+                type: number
+                description: The user's current latitude
+      responses:
+        200:
+          description: Location updated successfully
+        401:
+          description: Unauthorized request
+        500:
+          description: Internal server error
+
+  /invites/{user_id}:
+    post:
+      summary: Send invite to friend
+      description: Send an invitation to become friends with the specified user
+      parameters:
+        - name: authorization
+          in: header
+          description: Access token to authorize request
+          required: true
+          type: string
+        - name: user_id
+          description: The ID of the user to send an invitation to
+          in: path
+          required: true
+          type: integer
+      responses:
+        200:
+          description: Invitation sent successfully
+        401:
+          description: Unauthorized request
+        404:
+          description: User not found
+        500:
+          description: Internal server error
+
+    get:
+      summary: Get incoming and outgoing invites for user
+      description: Get a list of all incoming and outgoing invites for the user
+      parameters:
+        - name: authorization
+          in: header
+          description: Access token to authorize request
+          required: true
+          type: string
+        - name: user_id
+          in: path
+          description: The ID of the user who sent the invitation
+          required: true
+          type: integer
+      responses:
+        200:
+          description: List of incoming and outgoing invites for user
+          schema:
+            type: object
+            properties:
+              incoming:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                      description: The ID of the invitation
+                    sender:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          description: The ID of the user who sent the invitation
+                        name:
+                          type: string
+                          description: The name of the user who sent the invitation
+                        avatar:
+                          type: string
+                          description: The URL of the avatar image of the user who sent the invitation
+                    created_at:
+                      type: string
+                      format: date-time
+                      description: The date and time the invitation was created
+              outgoing:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                      description: The ID of the invitation
+                    recipient:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          description: The ID of the user who received the invitation
+                        name:
+                          type: string
+                          description: The name of the user who received the invitation
+                        avatar:
+                          type: string
+                          description: The URL of the avatar image of the user who received the invitation
+                    created_at:
+                      type: string
+                      format: date-time
+                      description: The date and time the invitation was created
+        401:
+          description: Unauthorized request
+        500:
+          description: Internal server error
+
+  /invites/{user_id}/decline:
+    post:
+      summary: Decline invite from user
+      description: Decline the invitation from the specified user to become friends
+      parameters:
+      - name: authorization
+        in: header
+        description: Access token to authorize request
+        required: true
+        type: string
+      - name: user_id
+        in: path
+        description: The ID of the user who sent the invitation
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Invitation declined successfully
+        401:
+          description: Unauthorized request
+        404:
+          description: Invitation not found
+        500:
+          description: Internal server error
+
+  /invites/{user_id}/accept:
+    post:
+      summary: Accept invite from user
+      description: Accept the invitation from the specified user to become friends
+      parameters:
+      - name: authorization
+        in: header
+        description: Access token to authorize request
+        required: true
+        type: string
+      - name: user_id
+        in: path
+        description: The ID of the user who sent the invitation
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Invitation accepted successfully
+        401:
+          description: Unauthorized request
+        404:
+          description: Invitation not found
+        500:
+          description: Internal server error
+  /friends/{id}:
+    delete:
+      summary: Delete friend from user's friend list
+      description: Delete the specified user from the current user's friend list
+      parameters:
+      - name: authorization
+        in: header
+        description: Access token to authorize request
+        required: true
+        type: string
+      - name: id
+        in: path
+        description: The ID of the friend to be deleted
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Friend deleted successfully
+        401:
+          description: Unauthorized request
+        404:
+          description: Friend not found
+        500:
+          description: Internal server error
+  /friends:
+    get:
+      summary: Get last locations of all friends
+      description: Get the last known location of all friends for the current user
+      parameters:
+      - name: authorization
+        in: header
+        description: Access token to authorize request
+        required: true
+        type: string
+      responses:
+        200:
+          description: List of friends' last locations
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                id:
+                  type: integer
+                  description: The ID of the friend
+                name:
+                  type: string
+                  description: The name of the friend
+                avatar:
+                  type: string
+                  description: The URL of the avatar image of the friend
+                location:
+                  type: object
+                  properties:
+                    latitude:
+                      type: string
+                      description: The latitude of the friend's last known location
+                    longitude:
+                      type: string
+                      description: The longitude of the friend's last known location
+                    timestamp:
+                      type: string
+                      format: date-time
+                      description: The date and time the friend's last known location was recorded
+        401:
+          description: Unauthorized request
+        500:
+          description: Internal server error
+
+
