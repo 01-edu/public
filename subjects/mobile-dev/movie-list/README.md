@@ -2,7 +2,7 @@
 
 ### Introduction
 
-When developing a fullly functional app, you will most likely use some external files to display on your app. One of the most popular file types is JSON.  
+When developing a fully functional app, you will most likely use some external files to display on your app. One of the most popular file types is JSON.  
 Develop an app to work with JSON. You are given a file with information about different movies.
 You must display top rated movies with descending rating on the first page of the app. By tapping on a movie, a new route with more detailed information regarding the movie must be displayed.  
 Searching for a movie via search bar must be included. Searching must be done by movie name, Entered string must be completely within movie name, i.e. if "vatar" is searched, "Avatar" must be included in the response. Basically, search must work like SQL's **_ilike_** comparision.
@@ -51,7 +51,7 @@ It should have an image of the movie, at least 5 parameters from the film's info
 
 The appbar should have a name of the film and go back button.
 
-Visit [documentaion](https://flutter.dev/docs/cookbook/navigation/named-routes) to see how to implement routing.
+Visit [documentation](https://flutter.dev/docs/cookbook/navigation/named-routes) to see how to implement routing.
 
 ### **Assets**
 
