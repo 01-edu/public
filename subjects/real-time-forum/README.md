@@ -21,6 +21,8 @@ As you already did the first forum you can use part of the code, but not all of 
 
 You will have only one HTML file, so every change of page you want to do, should be handled in the Javascript. This can be called having a [single page application](https://en.wikipedia.org/wiki/Single-page_application).
 
+> You must not use use any frontend libraries or frameworks like React, Angular, Vue etc.
+
 #### Registration and Login
 
 To be able to use the new and upgraded forum users will have to register and login. This is premium stuff. The registration and login process should take in consideration the following features:

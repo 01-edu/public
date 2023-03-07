@@ -2,6 +2,8 @@
 
 ###### Has the requirement for the allowed packages been respected? (Check the [allowed packages](../README.md))
 
+###### Has the frontend part been implemented without the use of any frontend libraries or frameworks like React, Angular, Vue etc?
+
 ###### Do you need to register/login in the forum to use it?
 
 ##### Try registering as a new user.
