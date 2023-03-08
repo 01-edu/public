@@ -4,7 +4,7 @@
 
 Create a script `better-cat.sh` that will behave similarly to the `cat` command, but with additional functionality.
 
-The script should accept any number of filenames as arguments, and it should print the content of each file to the standard output. If no arguments are provided, the script should print the content of all files in the current directory.
+The script should accept any number of filenames as arguments, and it should print the content of each file to the standard output. If no arguments are provided, the script should print the content of all files in the current directory. Before each line it should print the line number followed by a colon(`:`) and a space as in the usage examples.
 
 The script should also support the following options:
 
