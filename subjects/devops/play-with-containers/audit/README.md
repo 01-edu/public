@@ -83,7 +83,7 @@ user:~$
 - "inventory-database container" is a SQL database server that contains the inventory database, it must be accessible via port "3306".
 - "billing-database container" is a SQL database server that contains the billing database, it must be accessible via port "3306".
 - "inventory-app container" is a Node.Js server that contains the inventory-app code running and connected to the inventory database and accessible via port "80".
-- "billing-app container" is a Node.Js server that contains the billing-app code running and connected to the billing database and consuming the messages from the RabbitMQ queue.
+- "billing-app container" is a Node.Js server that contains the billing-app code running and connected to the billing database and consuming the messages from the RabbitMQ queue, and it can be accessible via port `80`.
 - "RabbitMQ container" is a RabbitMQ server that contains the queue
 - "api-gateway-app container" is a Node.Js server that contains the api-gateway-app code running and forwarding the requests to the other services and it's accessible via "HTTPS".
 
