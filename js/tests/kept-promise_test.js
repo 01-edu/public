@@ -1,17 +1,17 @@
 export const tests = []
 
-const testZero = async _ => {
-  return (await processInfo(_ => new Promise(resolve => resolve(0)))) === 'Ok!'
+const testZero = async () => {
+  return (await processInfo(() => new Promise(resolve => resolve(0)))) === 'Ok!'
 }
 
-const testOddNumber = async _ => {
+const testOddNumber = async () => {
   return (
-    (await processInfo(_ => new Promise(resolve => resolve(1)))) === 'Error!'
+    (await processInfo(() => new Promise(resolve => resolve(1)))) === 'Error!'
   )
 }
 
-const testEvenNumber = async _ => {
-  return (await processInfo(_ => new Promise(resolve => resolve(4)))) === 'Ok!'
+const testEvenNumber = async () => {
+  return (await processInfo(() => new Promise(resolve => resolve(4)))) === 'Ok!'
 }
 
 tests.push(testZero, testOddNumber, testEvenNumber)
