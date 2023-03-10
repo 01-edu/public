@@ -1,4 +1,4 @@
-## flexible_function
+## flex_function
 
 ### Instructions
 
