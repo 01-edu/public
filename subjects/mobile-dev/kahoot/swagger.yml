@@ -218,16 +218,16 @@ paths:
       summary: Decline invite from user
       description: Decline the invitation from the specified user to become friends
       parameters:
-      - name: authorization
-        in: header
-        description: Access token to authorize request
-        required: true
-        type: string
-      - name: user_id
-        in: path
-        description: The ID of the user who sent the invitation
-        required: true
-        type: integer
+        - name: authorization
+          in: header
+          description: Access token to authorize request
+          required: true
+          type: string
+        - name: user_id
+          in: path
+          description: The ID of the user who sent the invitation
+          required: true
+          type: integer
       responses:
         200:
           description: Invitation declined successfully
@@ -243,16 +243,16 @@ paths:
       summary: Accept invite from user
       description: Accept the invitation from the specified user to become friends
       parameters:
-      - name: authorization
-        in: header
-        description: Access token to authorize request
-        required: true
-        type: string
-      - name: user_id
-        in: path
-        description: The ID of the user who sent the invitation
-        required: true
-        type: integer
+        - name: authorization
+          in: header
+          description: Access token to authorize request
+          required: true
+          type: string
+        - name: user_id
+          in: path
+          description: The ID of the user who sent the invitation
+          required: true
+          type: integer
       responses:
         200:
           description: Invitation accepted successfully
@@ -267,16 +267,16 @@ paths:
       summary: Delete friend from user's friend list
       description: Delete the specified user from the current user's friend list
       parameters:
-      - name: authorization
-        in: header
-        description: Access token to authorize request
-        required: true
-        type: string
-      - name: id
-        in: path
-        description: The ID of the friend to be deleted
-        required: true
-        type: integer
+        - name: authorization
+          in: header
+          description: Access token to authorize request
+          required: true
+          type: string
+        - name: id
+          in: path
+          description: The ID of the friend to be deleted
+          required: true
+          type: integer
       responses:
         200:
           description: Friend deleted successfully
@@ -291,11 +291,11 @@ paths:
       summary: Get last locations of all friends
       description: Get the last known location of all friends for the current user
       parameters:
-      - name: authorization
-        in: header
-        description: Access token to authorize request
-        required: true
-        type: string
+        - name: authorization
+          in: header
+          description: Access token to authorize request
+          required: true
+          type: string
       responses:
         200:
           description: List of friends' last locations
@@ -330,5 +330,3 @@ paths:
           description: Unauthorized request
         500:
           description: Internal server error
-
-
