@@ -1,4 +1,4 @@
-## String tokenizer
+## String processing
 
 ### Instructions
 
