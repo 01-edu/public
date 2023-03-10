@@ -6,7 +6,6 @@
 
 ###### Does the app run without crashes?
 
-
 ###### Does the game start with a 4x4 table and 3-4 tiles valued at either 2 or 4?
 
 ###### Can players swipe the tiles in any of the four directions, and do they move as far as possible in that direction?
@@ -32,4 +31,3 @@
 ###### +Adding sound effects or music to enhance the gameplay experience.
 
 ###### +Adding support for different devices and screen sizes, such as tablets or smartphones.
-

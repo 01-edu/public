@@ -26,7 +26,6 @@ To complete this exercise, you will need to do the following:
 10. Test the game thoroughly to ensure that it is functioning correctly and all objectives have been met.
 11. Remember to follow best practices for coding and game development, and be sure to document your code and any decisions made during the development process. Good luck!
 
-
 Some additional considerations for this exercise might include:
 
 1. Adding a user interface (UI) to the game, such as buttons for moving the tiles and displaying the current and best scores.
@@ -34,7 +33,6 @@ Some additional considerations for this exercise might include:
 3. Adding sound effects or music to enhance the gameplay experience.
 4. Adding support for different devices and screen sizes, such as tablets or smartphones.
 5. By taking these additional factors into account, you can create a more polished and enjoyable version of the "2048" game.
-
 
 <center>
 

@@ -21,7 +21,6 @@ To complete this exercise, you will need to do the following:
 7. Use either the BLoC or Provider pattern to manage states within the app.
 8. Test the app thoroughly to ensure that it is functioning correctly and all objectives have been met.
 
-
 Remember to follow best practices for coding and app development, and be sure to document your code and any decisions made during the development process. Don't forget to consider user experience and design when creating the app, as a visually appealing and intuitive interface will be important for its success. Good luck!
 
 Possible examples of the app:
