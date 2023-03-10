@@ -1,25 +1,31 @@
-# Hash File
+## hash-file
 
 ### Instructions
 
-Create a function `hashFile(file)` that given the name of a file in the current folder, expected to be a string, returns the hash `sha256` of the content of this file as a string.
+Create a function `hashFile(fpath)` that given the name of a file in the current folder, expected to be a string, returns the hash `sha256` of the content of this file as a string.
 
 ### Usage
 
-_textfile.txt_
-
-```
-Sometimes science is more art than science.
-```
+Here below an example of `main.js` script to test the usage of the `hashFile` function:
 
 ```js
-let hash = hashFile("textfile.txt")
-console.log(hash) 
-// expected result : 575e6ccc6aa3882344d97a8ebae4b7fc4852f9149ad14007d11164450f751eb1
+const hash = await hashFile('textfile.txt')
+console.log(hash)
+```
+
+And its usage:
+
+```console
+$cat textfile.txt
+Sometimes science is more art than science.$
+Sometimes science is more art than science.
+$ node main.js
+bd9ecabfb0c9a310cbca5ef1dd6456486236ba58a1d8a4eaf2b0a40283525cd9
+$
 ```
 
 ### Notions
 
 - [Node.js _crypto_ hash](https://nodejs.org/docs/latest-v14.x/api/crypto.html#crypto_class_hash)
-- [Node.js _fs_ readFileSync](https://nodejs.org/docs/latest-v14.x/api/fs.html#fs_fs_readfilesync_path_options)
+- [Node.js _fs.readFile_](https://nodejs.org/api/fs.html#filehandlereadfileoptions)
 - [Wikipedia: Hash_function](https://en.wikipedia.org/wiki/Hash_function)
