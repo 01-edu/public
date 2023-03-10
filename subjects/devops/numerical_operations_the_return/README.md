@@ -1,4 +1,4 @@
-## Numerical operation: the return!
+## Numerical operations: the return!
 
 ### Instructions
 
