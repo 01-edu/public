@@ -11,12 +11,13 @@ Attributes:
 - `secretKey`: private `string`. Defaults to "01".
 
 Constructor:
-  - `name`: `string`
-  - `cityOfOrigin`: `string`
-  - `age`: `int`
-  - `height`: `int`
-  - `batch`: `int`
-  - `level`: `int`
+
+- `name`: `string`
+- `cityOfOrigin`: `string`
+- `age`: `int`
+- `height`: `int`
+- `batch`: `int`
+- `level`: `int`
 
 ### Inheritance
 

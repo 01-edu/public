@@ -23,6 +23,7 @@ Constructor:
 ### Object Oriented Programming
 
 Dart supports object oriented programming, and it features heavily in Flutter. Classes have 2 main concepts.
+
 - Attributes: store data about the instance of a class.
 - Methods: are func functions, which can use class attributes for various manipulations.
 
@@ -48,7 +49,7 @@ class Point {
   Point(double x, double y) {
     // Sets the attributes to the value of the constructor arguments.
     this.y = y;
-    this.x = x; 
+    this.x = x;
   }
 }
 ```
@@ -62,7 +63,7 @@ class Point {
   double x;
   double y;
 
-  Point(this.x, this.y); 
+  Point(this.x, this.y);
 }
 ```
 
