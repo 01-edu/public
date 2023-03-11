@@ -13,6 +13,7 @@ String strSpongebob = 'Spongebob';
 ```
 
 Declare and initialize the following variables:
+
 - `obj` of type `Object`, containing any value.
 - `planet` of type `String`, containing the name of the planet you live on.
 - `year` of type `int`, containing the current year.
