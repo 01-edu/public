@@ -11,11 +11,13 @@ Attributes:
 - `ranking`: `private int?`
 
 Getters:
+
 - `name`
 - `city`
 - `ranking`
 
 Constructor:
+
 - `name`: `required`
 - `city`: `required`
 - `ranking`: `optional`

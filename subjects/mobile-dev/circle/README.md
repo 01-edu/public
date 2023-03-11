@@ -11,6 +11,7 @@ Attributes:
 - `radius`: `double`
 
 Getters:
+
 - `area`
 - `perimeter`
 - `rightMostCoordinate`: (x axis)
@@ -19,6 +20,7 @@ Getters:
 - `lowestCoordinate`: (y axis)
 
 Constructor:
+
 - `x`: `required`
 - `y`: `required`
 - `radius`: `required`
