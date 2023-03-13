@@ -10,8 +10,15 @@ You will send your first peer-to-peer transaction between two students.
 
 - Send a transaction of 0.00001337 bitcoins to another student.
 
-- Retrieve the main information from the transaction from a public API or a node (using for instance `bitcoin-cli gettransaction`). You might need to convert some fields depending on the API used. - Transaction hash "txid - Transaction fee "fee" (in Bitcoins, negative integer) - Transaction amount "amount" (in Bitcoins, negative integer) - Transaction date "time"
-- Store the
+- Retrieve the main information from the transaction from a public API or a node (using for instance `bitcoin-cli gettransaction`). You might need to convert some fields depending on the API used.
+
+- Store the following values in a variable `tx` in your solution `send-transaction-to-peer.js`:
+  - Transaction hash `txid`.
+  - Transaction fee `fee` (in Bitcoins, negative integer).
+  - Transaction amount `amount` (in Bitcoins, negative integer).
+  - Transaction date `time.
+
+> The submitted transaction information needs to be related to a recent (no more than 48 h) transaction!
 
 ### Expected file
 
@@ -21,9 +28,9 @@ sendTransactionToPeer.js
 exports.tx = {
   amount: -0.00001337,
   fee: -0.00000003,
-  txid: "95952d9bf7542dfa0c98486495f1ae432a8738bbd7da051915d0aca1bec1f9",
+  txid: '95952d9bf7542dfa0c98486495f1ae432a8738bbd7da051915d0aca1bec1f9',
   time: 1789670282,
-};
+}
 ```
 
 Congrats for your first real peer to peer Bitcoin transaction!
