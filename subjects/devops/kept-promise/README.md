@@ -44,8 +44,10 @@ $
 
 ### Hints
 
+- Asynchronous behavior, in the context of server-side JavaScript, refers to the ability of running code in a non-blockingly way, meaning for instance that the server can handle multiple requests simultaneously without waiting for a long-running task to complete, avoiding blocking the server responsiveness. It is essential to achieve scalable and functional back-end Node applications.
+
 - A `Promise` is a special JS object that represent the result (succes or failure) of an asynchronous operation. This special object is usually used to "wrap" asynchronous operations.
-  `Promise`s can have three different states: _pending_ - the asynchronous operation has not finished yet, _fulfilled_/_resolved_ - the asynchronous operation has finished successfully - or _rejected_ - the asynchronous operation has finished, but something went wrong. When defined from scratch, it is possible to define a `resolve` and `reject` callback function for a new `Promise` that will define the results of the success or failure of asynchronous operation happening inside the `Promise`
+  `Promise`s can have three different states: _pending_ - the asynchronous operation has not finished yet, _fulfilled_/_resolved_ - the asynchronous operation has finished successfully - or _rejected_ - the asynchronous operation has finished, but something went wrong. When defined from scratch, it is possible to define a `resolve` and `reject` callback function for a new `Promise` that will define the results of the success or failure of asynchronous operation happening inside the `Promise`.
 
 - It is possible to wait for an asynchronous function with the keyword `await`. Alternatively, it can be clearer to use the method `.then`. Below an example of how to handle promises and, more generally, asynchronous operations.
 
