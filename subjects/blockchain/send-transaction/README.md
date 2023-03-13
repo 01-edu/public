@@ -61,7 +61,11 @@ $ bitcoin-cli -regtest listtransactions
 $
 ```
 
-- Create a JS file `send-transaction.js` with a variable `txid` that will store the hash of your transaction. The variable `txid` needs to be importable from an external file!
+- Create a JS file `send-transaction.js` with a variable `txid` that will store the hash of your transaction. The variable `txid` needs to be importable from an external file! Below an example on how you should export your variable.
+
+```js
+exports.txid = ...
+```
 
 Congrats for your first Bitcoin transaction!
 
