@@ -4,6 +4,12 @@
 
 Create a function `hashFile(fpath)` that given the name of a file in the current folder, expected to be a string, returns the hash `sha256` of the content of this file as a string.
 
+Here an example on how you should make your function used from external scripts:
+
+```js
+exports.hasFile = ...
+```
+
 ### Usage
 
 Here below an example of `main.js` script to test the usage of the `hashFile` function:
