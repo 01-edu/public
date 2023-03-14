@@ -13,10 +13,13 @@ export const tests = []
 tests.push(async ({ page, eq }) => {
   // check that the css is properly generated
 
-  const style = await page.$$eval('style', nodes => nodes[1].innerHTML)
-  const classes = style
-    .split('}')
-    .map(s => s.replace(/(\.|{|:|;|\s+)/g, ''))
+  const style = await page.$$eval('head style', nodes =>
+    nodes.map(n => n.innerText),
+  )
+
+  const classes = style[0]
+    .split('\n')
+    .map(s => s.replace(/(\.|{|:|;|\s+|})/g, ''))
     .filter(Boolean)
     .sort()
 
