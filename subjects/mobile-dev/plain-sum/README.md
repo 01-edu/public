@@ -14,9 +14,19 @@ bool isEven(int num) {
 
 ### Usage
 
+Here is a possible program to test your function :
+
 ```dart
 void main() {
   var result = plainSum(1, 2, 3);
-  print(result); // prints 6
+  print(result);
 }
+```
+
+And its output :
+
+```console
+$ dart test.dart
+6
+$
 ```
