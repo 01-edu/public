@@ -1,64 +1,60 @@
-# Bizz Card
+## BizzCard
 
 ### Introduction
 
 ### What is Flutter?
 
-Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase. (c) [https://flutter.dev/](https://flutter.dev/)
+[Flutter](https://flutter.dev/) is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.
 
 ### How to start?
 
-You can build Flutter apps using any text editor. It is recommended to use editors that have both Dart and Flutter plugins (Android Studio, IntelliJ, VS Code).
+You can build Flutter apps using any text editor. It is recommended to use editors that have both `Dart` and `Flutter` plugins (Android Studio, IntelliJ, VS Code).
 
-You should already have all installed on school computers, but if you want to set up your PC, then follow the official [installation guide](https://flutter.dev/docs/get-started/install).
+You should already have them all installed on school computers, but if you want to set up your PC, then follow the official [installation guide](https://flutter.dev/docs/get-started/install).
 
 Before we start take a look at Flutter's [official documentation](https://flutter.dev/docs)
 
-Hint: You can see some Flutter samples [here](https://flutter.github.io/samples/#?type=cookbook) 👩🏽‍🍳
+You can see some `Flutter` samples [here](https://flutter.github.io/samples/#?type=cookbook) 👩🏽‍🍳
 
-### Objective
-
-### Making your first app
+### Instructions
 
 BizzCard is a simple application which shows a static card with your personal information.
 
-This subject is divided into 3 parts. Overall objective is for you to learn:
+This subject is divided into 3 parts. Overall objective is for you to learn about:
 
-- About and apply the essence of Flutter - widgets.
-- Basic structure of a Flutter app.
-- How to run Flutter app on physical device or Android/iOS emulator.
+- Applying the essence of `Flutter` - `widgets`.
+- Basic structure of a `Flutter` app.
+- How to run `Flutter` on physical devices or Android/iOS emulator.
 
-- Note: only standard Flutter packages and url_launcher (for bonus) are allowed
+> Note: only standard `Flutter` packages and `url_launcher` (for bonus) are allowed.
 
-### First Part
+**_First Part_**
 
-In this part:
-
-- Run Flutter generated counter app
-- Understand structure of the Flutter app
-
-To create your first Flutter application open Android Studio or similar IDE and follow the steps:
+To create your first `Flutter` application open Android Studio or a similar IDE and follow the steps:
 
 1. Open the IDE and select **Start a new Flutter project**.
 2. Select **Flutter Application** as the project type. Then click **Next**.
-3. Specify path to **Flutter SDK’s location**
-   (select **Install SDK…** if the text field is blank).
+3. Specify the path to **Flutter SDK’s location** (select **Install SDK…** if the text field is blank).
 4. Enter the project name (for example, `myapp`). Then click **Next**.
 5. Click **Finish**.
 6. Wait for Android Studio to install the SDK and create the project.
 
-See the Run the app section [here](https://flutter.dev/docs/get-started/test-drive?tab=androidstudio#create-app) to run a sample app.
+See the `Run the app` section [here](https://flutter.dev/docs/get-started/test-drive?tab=androidstudio#create-app) to run a sample app.
 
-The starter point in Flutter app is in lib/main.dart. Change this file to change app's behavior.
+The starter point in Flutter app is in `lib/main.dart`. Change this file to change the app's behavior.
 
-### Second Part:
+**_Second Part:_**
 
-In this part:
+You must display the following information in the BizzCard:
 
-- Build your first app
+- First Name
+- Last Name
+- Age
+- Phone number
+- Email
+- Photo/Image
 
-You should display static information about yourself, i.e. name, surname, age, phone number, email, and image.
-Try to make it as it is shown in the example below:
+Here is an example of what we are asking:
 
 <!-- <center> -->
 <center>
@@ -66,16 +62,27 @@ Try to make it as it is shown in the example below:
 <!-- </center> -->
 </center>
 
-Possible [diagram](https://flutter.dev/docs/development/ui/layout) of widget tree for the app.
+All the following features must be present:
 
-#### Helpful keywords for research:
+- Include an `AppBar` with the `backgroundColor` set to `blueAccent` and with a title "BizzCard"
+- Display a profile `picture` with a circular shape.
+- Show `First Name` and `Last Name` in bold with font size 30.
+- Show `Age`, `email`, and `phone number` with font size 20.
 
-- AppBar
-- Column to align text in a card
-- Stack to place image on Container
-- Padding to add paddings to Container
-- Use DecorationImage inside BoxDecoration to style image
+Possible [diagram](https://flutter.dev/docs/development/ui/layout) of a widget tree for the app.
 
-### **Bonus**
+### Hints
 
-- Add qr code below the image, so anyone can scan it and get your full contact
+Learn about these:
+
+- `AppBar` which is a built-in Flutter widget that provides a Material Design app bar for the top of the screen.
+- `Column` to align text in a card
+- `Stack` to place image on Container
+- `Padding` to add paddings to Container
+- Use `DecorationImage` inside BoxDecoration to style image
+
+### Bonus
+
+- Add a `QR code` below the image, so that anyone can scan it and get your full contact.
+- Use local assets to store the images.
+- Include icons in the `AppBar` and info, i.e., notifications, menu options, phone number and email.
