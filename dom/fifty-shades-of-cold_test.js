@@ -18,8 +18,8 @@ tests.push(async ({ page, eq }) => {
   )
 
   const classes = style[0]
-    .split('\n')
-    .map(s => s.replace(/(\.|{|:|;|\s+|})/g, ''))
+    .split('}')
+    .map(s => s.replace(/(\.|{|:|;|\s+)/g, ''))
     .filter(Boolean)
     .sort()
 
