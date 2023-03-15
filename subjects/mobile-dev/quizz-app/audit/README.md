@@ -1,31 +1,37 @@
 #### Functional
 
-> In order to run and hot reload app either on emulator or device, follow the [instructions](https://docs.flutter.dev/get-started/test-drive?tab=androidstudio#run-the-app)
+> In order to run and hot reload the app either on emulator or device, follow the [instructions](https://docs.flutter.dev/get-started/test-drive?tab=androidstudio#run-the-app)
 
-###### Does the app run without crashes?
+###### Does the app run without crashing?
 
 ###### Does the app change states as it is being used, i.e. is it stateful?
 
-###### Are there at least 5 categories?
+###### Are there a minimum of 5 distinct categories present within the app?
 
-###### Are there at least 10 questions to each category?
+###### Are there at least 10 unique questions associated with each category?
 
-###### Does every category have a name, appropriate image?
+###### Are the categories named appropriately and accompanied by relevant images?
 
-###### Does tapping the category switch from first route?
+###### Does selecting a category switch from the first route to a second route called `DetailedView`?
 
-###### Are there question text, image, and true/false buttons on the page containing questions?
+###### Does the page containing questions display the text of the question, an image related to the selected category, and buttons for selecting either `true/false` as the answer?
 
-###### Does tapping the true/false button let the user know the answer, and contribute to score correctly?
+###### Does selecting one of the `true/false` buttons allow the user to answer the question and proceed to the next question or the score view if all questions have been answered?
 
-###### Does the last page correctly display the score, and button to go to main page?
+###### Is there a feature in the app that provides feedback on whether the user's answer to the question is correct or incorrect after pressing the `true/false` buttons?
 
-###### Does the app behave as it is supposed to?
+###### Does the final page of the quiz correctly display the user's `score` and provide a `button` to return to the main page?
 
 #### Bonus:
 
-###### +Are there images for all the questions?
+###### +Are there specific images for each of the questions?
 
-###### +When question is not answered within given time, is it considered as not answered?
+###### +Is there a time to answer each question?
 
-###### +When question is not answered within given time, is it omitted and next one shown?
+###### +When the question is not answered within the given time, is it omitted, considered as answered incorrectly and we move on to the next question?
+
+###### +Are the questions within each category shuffled so that the order of the questions is different each time the user plays the game?
+
+###### +Are there easy, medium, and hard difficulty levels for each category?
+
+###### +Does the leaderboard display the top scores achieved by different users of the app?
