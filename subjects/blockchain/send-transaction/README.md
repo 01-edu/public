@@ -7,9 +7,10 @@ The purpose of this exercise is to create a simple Bitcoin transaction locally u
 - Install a Bitcoin node. There are two solutions :
 
   - Use a preconfigured image for a virtual machine such as [cryptotux](https://cryptotux.org/)
-  - Install manually by downloading and installing the Bitcoin Core software from [GitHub](https://github.com/bitcoin/bitcoin/releases).
 
-```console
+  - Install manually by downloading and installing the Bitcoin Core software from [GitHub](https://github.com/bitcoin/bitcoin/releases). You can copy and paste the following text in your shell and execute.
+
+```bash
 export bitcoinCoreVersion="24.0.1"
 wget -q "https://bitcoincore.org/bin/bitcoin-core-$bitcoinCoreVersion/bitcoin-$bitcoinCoreVersion-x86_64-linux-gnu.tar.gz"
 tar xzf "bitcoin-$bitcoinCoreVersion-x86_64-linux-gnu.tar.gz"
