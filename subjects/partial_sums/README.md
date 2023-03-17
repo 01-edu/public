@@ -40,7 +40,7 @@ parts_sums(&[1, 2, 3, 4, 5]) // == [15, 10, 6, 3 ,1, 0]
 ### Expected Result
 
 ```rs
-pub fn parts_sums(arr: &[u64]) -> Vec<64>{
+pub fn parts_sums(arr: &[u64]) -> Vec<u64>{
 }
 ```
 
