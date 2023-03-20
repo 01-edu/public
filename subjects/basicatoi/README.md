@@ -2,7 +2,7 @@
 
 ### Instructions
 
-- Write a function that simulates the behaviour of the `Atoi` function in Go. `Atoi` transforms a number defined as a `string` in a number defined as an `int`.
+- Write a function that simulates the behaviour of the `Atoi` function in Go. `Atoi` transforms a number defined as a `string` into a number defined as an `int`.
 
 - `Atoi` returns `0` if the `string` is not considered as a valid number. For this exercise **only valid** `string` will be tested. They will only contain one or several digits as characters.
 
