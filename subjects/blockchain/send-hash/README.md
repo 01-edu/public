@@ -1,4 +1,4 @@
-# Send Hash
+## Send Hash
 
 In this exercise, you will register the hash of a document on the blockchain.
 
@@ -14,7 +14,7 @@ Write a node script that provides a function `sendHash()` that:
 function sendHash(text) {
   //...
 }
-module.exports = sendHash;
+module.exports = sendHash
 ```
 
 ### Notions

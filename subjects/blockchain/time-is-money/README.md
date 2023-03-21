@@ -1,4 +1,4 @@
-# Time is Money
+## Time is Money
 
 We organize a bit of yield management. Tickets are now 0.01 ether if they are bought up to 10 days before the start of the festival and 0.1 afterward.
 

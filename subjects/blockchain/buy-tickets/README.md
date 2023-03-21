@@ -1,4 +1,4 @@
-# Festival Buy Ticket
+## Festival Buy Ticket
 
 A core functionality of your smart contract is the ability to sell tickets. You will sell them for 0.1 Ethers. An Ethereum address could own several tickets.
 

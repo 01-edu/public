@@ -1,4 +1,4 @@
-# Token Sale
+## Token Sale
 
 One way to distribute our token is to sell it. We will set a fixed price for each token. The tokens will have to be send to the Smart Contract by their owner initally.
 

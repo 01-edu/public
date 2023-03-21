@@ -1,4 +1,4 @@
-# Tracking Network
+## Tracking Network
 
 We will create a network to track postal parcels using Hyperledger Fabric. Hyperledger Fabric is a modular blockchain framework. It revolves around a few key concepts. First, the notion of channel, which represents a network with a set of transactions and participants dedicated to the same business objective. Within a channel a transaction is validated by a set of designated peers. On this channel, Smart Contracts can be deployed as "chaincode" to define business logic that will control validation within this network.
 

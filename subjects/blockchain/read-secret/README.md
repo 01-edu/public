@@ -1,4 +1,4 @@
-# Read a Secret (Optional)
+## Read a Secret (Optional)
 
 ### Instructions
 
@@ -9,10 +9,11 @@ The smart contract is available at the address `0x467782A5ab90af6baA6f8af0b4E69A
 You might use the following interface :
 
 ```js
-const abi = ["function getSecret() view returns (string)"];
+const abi = ['function getSecret() view returns (string)']
 ```
 
 ⚠️ As the test does not reach the internet:
+
 - Store in a hardcoded manner the result in an element with `storedSecret` as id.
 - Detect when internet is not available and skip the connection to the provider.
 

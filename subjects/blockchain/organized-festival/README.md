@@ -1,4 +1,4 @@
-# Organised Festival
+## Organised Festival
 
 In order for your festival to be properly managed, you need to define an organizer. The organizer will be the only user to have the right to modify certain properties. By default, you will define the organizer as the contract's deployer.
 

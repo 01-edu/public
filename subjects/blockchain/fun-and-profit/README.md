@@ -1,4 +1,4 @@
-# Fun and Profit
+## Fun and Profit
 
 The Festival is going well. Attendees are entering by redeeming tickets and enjoying it. It is now time for the organizer to cash out the benefits.
 

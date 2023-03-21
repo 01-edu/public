@@ -1,4 +1,4 @@
-# Semi Brute
+## Semi Brute
 
 Hash functions are used to secure information. A piece of data, for instance a password, is hashed and only its hash is stored. While there is no way to compute on the original information, one can try every possible value. This is called a brute force attack.
 
@@ -13,8 +13,8 @@ Create a function `semiBrute()` that takes as argument a target, which is a two 
 ### Usage
 
 ```js
-solution = semiBrute("e2");
-console.log(solution);
+solution = semiBrute('e2')
+console.log(solution)
 // One valid result : 'abcdefghijklmnopqrs'
 // You might find other valid solutions as we only check the first two characters
 ```

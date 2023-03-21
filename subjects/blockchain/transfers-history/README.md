@@ -1,4 +1,4 @@
-# Transfers History
+## Transfers History
 
 ### Instructions
 
@@ -18,12 +18,12 @@ exports.transfersHistory = transfersHistory;
 #### Usage
 
 ```js
-const { transfersHistory } = require("./transfersHistory.js");
+const { transfersHistory } = require('./transfersHistory.js')
 
 transfersHistory(
-  "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
-  "0x70997970c51812dc3a010c7d01b50e0d17dc79c8"
-);
+  '0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc',
+  '0x70997970c51812dc3a010c7d01b50e0d17dc79c8',
+)
 /* expected:
 [50, -25, 200, 30, -230]
 */

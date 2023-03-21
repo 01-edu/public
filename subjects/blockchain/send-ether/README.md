@@ -1,4 +1,4 @@
-# Send Ether
+## Send Ether
 
 In this exercise, you will send ETH using a script.
 
@@ -8,7 +8,7 @@ Write a node script that provides a function `sendEther(amount, address)` which 
 
 ```js
 function sendEther(amount, address) {
-    //...
+  //...
 }
 module.exports = sendEther
 ```

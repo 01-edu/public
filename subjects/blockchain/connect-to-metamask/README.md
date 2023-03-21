@@ -1,4 +1,4 @@
-# Connect To MetaMask
+## Connect To MetaMask
 
 ### Instructions
 

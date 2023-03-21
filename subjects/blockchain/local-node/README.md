@@ -1,4 +1,4 @@
-# Local Node
+## Local Node
 
 An Ethereum node provides different functionalities :
 
@@ -27,7 +27,7 @@ npm i ganache-cli
 npx ganache-cli
 ```
 
-*You can also use ganache ("non cli") that provides a nice graphical interface. For compatibility, change the listening port to 8545 in the settings*
+_You can also use ganache ("non cli") that provides a nice graphical interface. For compatibility, change the listening port to 8545 in the settings_
 
 Noticeably, local javascript nodes are not connected to any network and provide already 10 account populated with test ether.
 

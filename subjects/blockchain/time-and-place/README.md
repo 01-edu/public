@@ -1,4 +1,4 @@
-# Time and Place
+## Time and Place
 
 To be considered a festival, you need to initially specify a time and a place. Everything else can be organized later.
 
