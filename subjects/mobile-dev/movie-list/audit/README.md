@@ -1,23 +1,33 @@
 #### Functional
 
-> In order to run and hot reload app either on emulator or device, follow the [instructions](https://docs.flutter.dev/get-started/test-drive?tab=androidstudio#run-the-app)
+> In order to run and hot reload the app either on emulator or device, follow the [instructions](https://docs.flutter.dev/get-started/test-drive?tab=androidstudio#run-the-app)
 
-###### Was the app committed within the required time period?
+###### Does the app run without crashing?
 
-###### Does the app run without crashes?
+###### Does the app home page contains movie icons?
 
-###### Does the first page contain top rated movies with descending rating?
+###### Does every movie icon contain `name`, `image`, `genre`?
 
-###### Does every movie icon contain name, image, release date, rating, duration?
+###### Can you confirm that the app is displaying the top-rated movies with descending rating on the home page?
 
-###### Is the new route created when the movie icon is tapped?
+###### Can you confirm that by tapping on a movie, a new route with more detailed information regarding the tapped movie is displayed?
 
-###### Does the movie profile page display at least 5 parameters regarding the tapped movie?
+###### Does the `movie page` display at least 5 parameters regarding the tapped movie?
 
-###### Does the search bar look for only the movies by movie name, as does SQL's **_ilike_** comparision?
+###### Does the `appbar` have the name of the movie and a back button?
 
-###### When no search query is supplied, does the app show all items?
+###### Is there a search-bar?
+
+###### Does the search bar only look for movies, by `movie name`, just like SQL's **_ilike_** comparison?
 
 ###### Widgets should not be overflowed. Is it the case in both routes?
 
-###### Does the app behave as it is supposed to?
+### Bonus
+
+###### +Does the program use a database to store movie data instead of a JSON file for better performance and scalability?
+
+###### +Are there any `navigation transitions` implemented when switching routes?
+
+###### +Is there any `back navigation` implemented?
+
+###### +Is there any animated `overscroll behavior`?
