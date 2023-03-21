@@ -1,4 +1,4 @@
-## Days and numbers
+## Custom calendar
 
 ### Instructions
 
