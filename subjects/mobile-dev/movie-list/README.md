@@ -1,30 +1,20 @@
-# Movie List
+## Movie List
 
 ### Introduction
 
-When developing a fully functional app, you will most likely use some external files to display on your app. One of the most popular file types is JSON.  
-Develop an app to work with JSON. You are given a file with information about different movies.
-You must display top rated movies with descending rating on the first page of the app. By tapping on a movie, a new route with more detailed information regarding the movie must be displayed.  
-Searching for a movie via search bar must be included. Searching must be done by movie name, Entered string must be completely within movie name, i.e. if "vatar" is searched, "Avatar" must be included in the response. Basically, search must work like SQL's **_ilike_** comparision.
+When developing a fully functional app, you will most likely use some external files to display on your app. One of the most popular file types is `JSON`.
 
-### Objective
+In this exercise, you will develop a fully functional app that uses `JSON` files to display information about movies. You will be given a [movies](movies.json) file with information about different movies.Your app needs to have the following features:
 
-- Infinite scroll
-- ListView
-- Json Serialization
-- Routes/Push
-- AppBar actions
-- Images
-- Futures, async
-- Provider
+- Display the top rated movies with descending rating on the home page of the app.
+- By tapping on a movie, a new route with more detailed information regarding the movie must be displayed.
+- You need to include a `search bar` to search for movies by name. The search function must return movies whose name includes the entered string. For example, if "vatar" is searched, "Avatar" must be included in the response. The search function must work like **SQL's ilike** comparison.
 
-### Part 1
+### ListView
 
-Create a ListView which will show the image, title and description of movies from JSON file (see **Assets** section);
+Create a `ListView` which will show the `image`, `title`, and `genre` of movies from the given [Movies](movies.json) file. To create the `ListView`, you need to create a `Movie class` with the following properties:
 
-Create a class with properties:
-
-```
+```flutter
 class Movie {
   final String genre;
   final String imdbRating;
@@ -35,30 +25,39 @@ class Movie {
 }
 ```
 
-Add fromJson method to make a json serialization, see more on [here](https://flutter.dev/docs/development/data-and-backend/json).
+You also need to add a `fromJson method` to make a [JSON serialization](https://flutter.dev/docs/development/data-and-backend/json).
 
-Your ListView should use [FutureBuilder](https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html) to wait for data from JSON file and then show it once it is loaded.
+Once you have the `Movie class`, use [FutureBuilder](https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html) to wait for data from the `JSON` file and then show it once it is loaded.
+
+Here's an example of what your `ListView` should look like:
 
 <center>
 <img src="./resources/movieList.01.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
 </center>
 
-### Part 2
+### Movie page
 
 Create a page with detailed information about the movie.
 
-It should have an image of the movie, at least 5 parameters from the film's information, i.e. when it was filmed, main actors, anything else you might consider useful. Use scroll bar if the info doesn't fit in one page.
+The page should have an `image` of the movie and at least five parameters from the movie's information, i.e. the year it was filmed, main actors, and anything else you might consider useful. If the information doesn't fit on one page, use a scroll bar to show all the information.
 
-The appbar should have a name of the film and go back button.
+The `appbar` in this page should have the name of the movie and a back button.
 
-Visit [documentation](https://flutter.dev/docs/cookbook/navigation/named-routes) to see how to implement routing.
+> Note: widgets should not be [overflowed](https://blog.flutterflow.io/preventing-layout-overflows/)!
 
-### **Assets**
+### Bonus
 
-[Movies](movies.json).
-
-### **Bonus**
-
-- Make [navigation transition](https://docs.flutter.dev/resources/platform-adaptations) when switching routes.
+- Make [navigation transitions](https://docs.flutter.dev/resources/platform-adaptations) when switching routes.
 - Make [back navigation](https://docs.flutter.dev/resources/platform-adaptations#back-navigation).
 - Animate [overscroll behaviour](https://docs.flutter.dev/resources/platform-adaptations#overscroll-behavior).
+- Use a database to store movie data instead of a JSON file for better performance and scalability.
+
+### Notions
+
+- [Navigate with named routes](https://flutter.dev/docs/cookbook/navigation/named-routes)
+- [Infinite scroll](https://pub.dev/packages/infinite_scroll_pagination)
+- [ListView](https://api.flutter.dev/flutter/widgets/ListView-class.html)
+- [Json Serialization](https://docs.flutter.dev/development/data-and-backend/json#serialization)
+- [Routes/Push](https://docs.flutter.dev/development/ui/navigation)
+- [AppBar actions](https://docs.flutter.dev/development/ui/widgets/material#AppBar)
+- [Futures, async](https://dart.dev/codelabs/async-await)
