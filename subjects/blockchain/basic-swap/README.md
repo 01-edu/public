@@ -1,4 +1,4 @@
-# Basic Swap
+## Basic Swap
 
 We will create a basic swap smart contract that will allow two users, Alice and Bob, to exchange two minimal tokens safely. The contracts will be specific to the two users and unidirectional.
 

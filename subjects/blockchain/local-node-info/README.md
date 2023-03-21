@@ -1,4 +1,4 @@
-# Local Node Info
+## Local Node Info
 
 To start, we will create a simple page that displays basic information from our local node.
 

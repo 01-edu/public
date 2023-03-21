@@ -1,4 +1,4 @@
-# Retrieve Block Date
+## Retrieve Block Date
 
 ### Instructions
 
@@ -7,7 +7,7 @@ Using Node.js, create and exports a function `retrieveBlockDate()` that takes as
 ### Usage
 
 ```js
-retrieveBlockDate(1881467); // Expected : 2020-11-05T20:18:48.000Z
+retrieveBlockDate(1881467) // Expected : 2020-11-05T20:18:48.000Z
 ```
 
 ### Notions

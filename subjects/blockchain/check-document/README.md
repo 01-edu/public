@@ -1,4 +1,4 @@
-# Check Document
+## Check Document
 
 ### Instructions
 
@@ -12,16 +12,16 @@ Write a node script that exports the function `checkDocument()` that :
 function checkDocument(text, txID) {
   //...
 }
-module.exports = checkDocument;
+module.exports = checkDocument
 ```
 
 ### Usage
 
 ```js
 checkDocument(
-  "Hello world!",
-  "0x49c8803ea126179502d59707dbcd9e9de15f5d441920936e9ec6fd78dd6468d8"
-);
+  'Hello world!',
+  '0x49c8803ea126179502d59707dbcd9e9de15f5d441920936e9ec6fd78dd6468d8',
+)
 // Expected :
 //1611104541
 ```

@@ -1,4 +1,4 @@
-# Send Transaction to Peer
+## Send Transaction to Peer
 
 You will send your first peer-to-peer transaction between two students.
 

@@ -1,4 +1,4 @@
-# Retrieve transaction value
+## Retrieve transaction value
 
 ### Instructions
 
@@ -16,10 +16,10 @@ rpcpassword=multipass
 ### Usage
 
 ```js
-const { retrieveTxValue } = require("./retrieveTransactionValue.js");
+const { retrieveTxValue } = require('./retrieveTransactionValue.js')
 retrieveTxValue(
-  "d030023d96b9170af9ec2fe5d9b62a5eacbcbf144c68f3f45d68bca72d1d3649"
-); // Expected : 50
+  'd030023d96b9170af9ec2fe5d9b62a5eacbcbf144c68f3f45d68bca72d1d3649',
+) // Expected : 50
 ```
 
 ### Hint

@@ -1,4 +1,4 @@
-# Register
+## Register
 
 To conveniently check for a given string or document, you will create a register smart contract.
 

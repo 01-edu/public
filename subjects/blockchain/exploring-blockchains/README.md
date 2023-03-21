@@ -1,4 +1,4 @@
-# Exploring Blockchains
+## Exploring Blockchains
 
 _If you don't believe it or don't get it, I don't have the time to try to convince you, sorry. — Satoshi Nakamoto_
 
@@ -19,7 +19,7 @@ In this course, we will focus on two solutions provided by the Hyperledger proje
 
 ---
 
-# Exercise 1: Private Network
+## Exercise 1: Private Network
 
 Besu in an alternative Ethereum client that is compatible with Ethereum mainnet. It facilitates the deployment of private networks. Will we use the QBFT consensus algorithm, a Proof of Authority Byzantine Fault Tolerant algorithm
 
@@ -64,7 +64,7 @@ Network/
 
 ---
 
-# Exercise 2: Clillet
+## Exercise 2: Clillet
 
 The goal of this raid is to create a fully functional command line wallet for a blockchain of your choice. You can choose any of the major alternative blockchains: Solana, Tezos, Poladot, Cosmos... The executable `clillet` must follow and implement the help description below. Our wallet consists of the following subcommands
 

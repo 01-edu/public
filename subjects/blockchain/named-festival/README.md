@@ -1,4 +1,4 @@
-# Named Festival
+## Named Festival
 
 In this exercise you will create your first smart contract! For a beginner friendly environment, I recommend [remix](https://remix.ethereum.org). It is an online IDE that provides many useful functionalities.
 

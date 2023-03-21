@@ -1,4 +1,4 @@
-# NFT Marketplace
+## NFT Marketplace
 
 In this project, we will create a thematic NFT platform that references a genre of NFTs, displays them and allows NFTs trades. By genre of NFT, it can be a visual or thematic category, for instance all NFTs about mediaeval characters, a subcategory of NFTs, for example Profile Pictures (PFP), or more interestingly NFTs used for a particular usage, for instance software licences.
 

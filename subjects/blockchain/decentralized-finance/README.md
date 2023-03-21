@@ -1,4 +1,4 @@
-# Decentralized Finance
+## Decentralized Finance
 
 _I accidentally killed it - devops199_
 
@@ -20,7 +20,7 @@ First, we will create a simple stablecoin, following the ERC20 standard and an o
 
 ---
 
-# Exercise 1: Stablecoin
+## Exercise 1: Stablecoin
 
 The purpose of this exercise is to create a fully collateralized stablecoin. We will use an oracle smart contract to get the current value of any volatile token.
 
@@ -54,7 +54,7 @@ And, the keystone, we allow any user to punish users that issued more tokens tha
 
 ---
 
-# Exercise 2: Lending Platform
+## Exercise 2: Lending Platform
 
 We will create a platforms that allow borrowers tokens from lenders in a decentralized manner around a volatile and a stable token. Lenders will earn a fixed yield of 5% per year.
 
@@ -92,7 +92,7 @@ _Optional provide a web interface for the lending platform_
 
 ---
 
-# Exercise 3: Tests and Coverage
+## Exercise 3: Tests and Coverage
 
 To produce adequate tests is the first obvious step to start applying good security measures. We will create the tests for the stablecoin smart contract.
 

@@ -1,4 +1,4 @@
-# Send Eth Transaction
+## Send Eth Transaction
 
 You will create your first transaction on Ethereum using one of its testnets. We recommend Goerli as it is the most commonly used testnet, but you can use any other testnet.
 
@@ -16,7 +16,7 @@ You will create your first transaction on Ethereum using one of its testnets. We
 
 ```js
 exports.txid =
-  "0xf02c4a1487aa2e45fc2c77cb5a28713a1474d86d5f4292b264875ccc5da82b67";
+  '0xf02c4a1487aa2e45fc2c77cb5a28713a1474d86d5f4292b264875ccc5da82b67'
 ```
 
 ### Notions

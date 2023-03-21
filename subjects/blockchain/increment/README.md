@@ -1,4 +1,4 @@
-# Increment
+## Increment
 
 Cryptographic algorithms use a `binary` representation of variables internally (`Buffer` in nodejs). `Hexadecimal` representation is used to facilitate human reading. To get more familiar with the hexadecimal form, we will do a simple operation.
 
@@ -9,10 +9,10 @@ Create a function `increment` that takes as argument a number written in hexadec
 ### Usage
 
 ```js
-increment("03"); // expected : <Buffer 04>
-increment("a0"); // expected : <Buffer a1>
-increment("ff"); // expected : <Buffer 01 00>
-increment("d537"); // expected : <Buffer d5 38>
+increment('03') // expected : <Buffer 04>
+increment('a0') // expected : <Buffer a1>
+increment('ff') // expected : <Buffer 01 00>
+increment('d537') // expected : <Buffer d5 38>
 ```
 
 ### Notions

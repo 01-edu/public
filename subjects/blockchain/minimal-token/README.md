@@ -1,4 +1,4 @@
-# Minimal Token
+## Minimal Token
 
 It is now time to create our first token. We will start with a minmal implementation of a token.
 

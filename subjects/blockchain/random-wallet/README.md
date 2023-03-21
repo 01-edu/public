@@ -1,4 +1,4 @@
-# Random Wallet
+## Random Wallet
 
 You will have to create a simple web-based wallet.
 

@@ -1,4 +1,4 @@
-# Artists Do Work
+## Artists Do Work
 
 Artists deserve to be payed too! Along the way, we will learn payments and divisions in Solidity
 

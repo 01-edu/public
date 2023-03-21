@@ -1,4 +1,4 @@
-# Hash160
+## Hash160
 
 ### Instructions
 
@@ -13,8 +13,8 @@ hash160 = sha256(ripemd160(input))
 ### Usage
 
 ```js
-let hash = hash160("Ducks");
-console.log(hash); // expected result : <Buffer de 5b 73 aa 85 84 02 d8 8c 36 d4 ff 85 29 65 d3 76 ac 6d 19>
+let hash = hash160('Ducks')
+console.log(hash) // expected result : <Buffer de 5b 73 aa 85 84 02 d8 8c 36 d4 ff 85 29 65 d3 76 ac 6d 19>
 ```
 
 ### Notions

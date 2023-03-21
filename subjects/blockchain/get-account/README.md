@@ -1,4 +1,4 @@
-# Get Account
+## Get Account
 
 Now you will interact with the node's API
 
@@ -14,7 +14,7 @@ For this exercise you will have to create a node script that :
 function getAccount() {
   //...
 }
-module.exports = getAccount;
+module.exports = getAccount
 ```
 
 ### Notions

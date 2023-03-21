@@ -1,6 +1,6 @@
-# Payment Channel
+## Payment Channel
 
-To overcome the scalability problem, two types of solutions have been devised. On the one hand the state and payment channels (_payment channels _and state channels_) and on the other hand the secondary chains (_sidechains)_ whose units of value are guaranteed by the main network.
+To overcome the scalability problem, two types of solutions have been devised. On the one hand the state and payment channels (_payment channels \_and state channels_) and on the other hand the secondary chains (_sidechains)_ whose units of value are guaranteed by the main network.
 
 Bitcoin offers a network of payment channels, the _lightning network_. On Ethereum there is Raiden, a network of payment channels, µRaiden a micropayments solution, and Counterfactual, a network of state channels. A state channel allows any state to be exchanged, while a payment channel allows only tokens to be exchanged.
 
@@ -32,7 +32,6 @@ As a first stage, we expect the project to work only for one channel between two
     +------------+           +------------+
     | Thunderd A |--connect--| Thunderd B |
     +------------+           +------------+
-
 
 ### Smart contract
 

@@ -1,4 +1,4 @@
-# Register With Events
+## Register With Events
 
 In order to facilitate the use of your Smart Contract, you will add events.
 
