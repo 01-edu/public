@@ -22,7 +22,7 @@ console.log(hash)
 And its usage:
 
 ```console
-$cat textfile.txt
+$ cat textfile.txt
 Sometimes science is more art than science.$
 Sometimes science is more art than science.
 $ node main.js
