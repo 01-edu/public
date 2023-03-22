@@ -10,7 +10,9 @@
 
 ##### Locate the `.env` file in the root of the project, run `cat .env`:
 
-###### Does the output contains the variables listed in the `.env` example given in the subject?
+###### Does the output contains all the necessary credentials for the microservices to run properly?
+
+###### Is the source code free from any credential that could have been added to the `.env` file?
 
 ###### Is the student able to explain the commands included in `/scripts` directory and why they are used?
 
