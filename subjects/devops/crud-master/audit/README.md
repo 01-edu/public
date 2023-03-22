@@ -1,160 +1,91 @@
 #### Functional
 
-##### Before we start, let's make sure we have a fresh environment by running this command `rm -dr logs backups backup_schedules.txt`.
+##### Before we start, let's check we have the necessary tools to perform the tests. You should make sure VirtualBox, Vagrant and Postman are installed, if not you should install them.
 
-###### Can you confirm that the `backup_manager.py` and `backup_service.py` are present?
+#### VM Configuration
 
-##### Run the following command `python3 ./backup_manager.py create "test2;18:15;backup_test2"`.
+##### In the directory of the project run `vagrant up --provider virtualbox` and then run `vagrant status`.
 
-###### Can you confirm that the `backup_schedules.txt` was created?
+###### Can you confirm that the three VMs (`gateway-vm`, `inventory-vm` and `billing-vm`) are up and running?
 
-##### Run the following command `cat backup_schedules.txt`.
+##### Locate the `.env` file in the root of the project, run `cat .env`:
 
-```bash
-$ cat backup_schedules.txt
-test2;18:15;backup_test2
+###### Does the output contains the variables listed in the `.env` example given in the subject?
+
+###### Is the student able to explain the commands included in `/scripts` directory and why they are used?
+
+#### Inventory API Endpoints
+
+##### Open Postman and make a `POST` request to `http://[GATEWAY_IP]:[GATEWAY_PORT]/api/movies/` address with the following body as `Content-Type: application/json`:
+```json
+{
+    "title": "A new movie",
+    "description": "Very short description"
+}
 ```
 
-###### Was the schedule created properly, with the same format as the example above?
+###### Can you confirm the response was the success code `200`?
 
-##### Run the following command `python3 ./backup_manager.py stop`.
+##### In Postman make a `GET` request to `http://[GATEWAY_IP]:[GATEWAY_PORT]/api/movies/` address.
 
-###### Can you confirm that the `logs` folder was created and inside of it is the `backup_manager.log`?
+###### Can you confirm the response was success code `200` and the body of the response is in `json` with the information of the last added movie?
 
-##### Now run the command `cat logs/backup_manager.log`.
+##### Ask to locate the Postman configuration file in the files committed by the student and import this file in Postman.
 
-```bash
-$ cat logs/backup_manager.log
-[13/02/2023 17:14] Error: cannot kill the service
+###### Can you confirm the imported endpoints includes all methods supported by both APIs and that all of those methods are returning the expected response? (use the subject as a reference)
+
+#### PostgreSQL database for Inventory
+
+##### Run `vagrant ssh inventory-vm` to enter into the VM, then run `sudo -i -u postgres`, then `psql` and once in the database enter `\l`.
+
+###### Can you confirm the `movies` database is listed?
+
+##### Still in `psql` run `\c movies` and then `TABLE movies;`.
+
+###### Can you confirm the entries are presents and reflect the calls you made when checking the endpoints for this API?
+
+#### Billing API Endpoints
+
+##### Open Postman and make a `POST` request to `http://[GATEWAY_IP]:[GATEWAY_PORT]/api/billing/` address with the following body as `Content-Type: application/json`:
+```json
+{
+    "user_id": "20",
+    "number_of_items": "99",
+    "total_amount": "250"
+}
 ```
 
-###### Can you confirm that the `backup_manager.log` file contains an error like the one above, stating that the service is already stopped?
+###### Can you confirm the response was success code `200`?
 
-##### Create a couple more backup schedules using the command `python3 ./backup_manager.py create "file;HH:MM;backup_name"`.
+##### Run `vagrant ssh billing-vm` to enter in the proper VM. Run `sudo pm2 stop billing_app` and then `sudo pm2 list`.
 
-##### Run the command `python3 ./backup_manager.py list`.
+###### Can you confirm the `billing_app` API was correctly stopped?
 
-```bash
-$ python3 ./backup_manager.py list
-0: test2;18:15;backup_test2
-1: test3;18:16;backup_test3
-2: test4;18:17;backup_test4
+##### Open Postman and make a `POST` request to `http://[GATEWAY_IP]:[GATEWAY_PORT]/api/billing/` address with the following body as `Content-Type: application/json`:
+```json
+{
+    "user_id": "22",
+    "number_of_items": "10",
+    "total_amount": "50"
+}
 ```
 
-###### Did you get a result like the one above, with the schedule you created attached with an index at the beginning, on your terminal?
+###### Can you confirm the response was success code `200` even if the `billing_app` is not working?
 
-##### Run the command `python3 ./backup_manager.py delete 1`.
+#### PostgreSQL database for Billing
 
-```bash
-$ python3 ./backup_manager.py list
-0: test2;18:15;backup_test2
-1: test4;18:17;backup_test4
-```
+##### Run `vagrant ssh billing-vm` to enter into the VM, then run `sudo -i -u postgres`, then `psql` and once in the database enter `\l`.
 
-###### Was the task with the index `1` removed from the list like in the example above?
+###### Can you confirm the `orders` database is listed?
 
-###### Did the task with the index `2` became the task with the index `1` after you removed the old one from the list?
+##### Still in `psql` run `\c orders` and then `TABLE orders;`.
 
-##### Verify that the following command runs without errors: `python3 backup_manager.py start`.
+###### Can you confirm the order with `user_id = 20` is listed properly?
 
-###### Can you confirm that the `backup_service.py` process is running? (For example you could use `ps -ef | grep backup_service`).
+###### Can you confirm the order with `user_id = 22` is NOT listed?
 
-##### Now run the command `python3 backup_manager.py start` again.
+#### Check resilience of messaging queue
 
-```bash
-$ python3 ./backup_manager.py start
-$ cat logs/backup_manager.log
-...
-[13/02/2023 17:14] Error: service already running
-```
+##### Run `sudo pm2 start billing_app` to start again the Billing API. At this point enter again in the database following the same instructions of the previous section.
 
-###### Can you confirm if the last log is stating that the service is already running? (You can use `cat logs/backup_manager.log` to confirm).
-
-##### Run `python3 backup_manager.py stop` and then `rm -dr logs backups backup_schedules.txt`. Let's create the backup manually.
-
-##### Run the following command by order:
-
-```bash
-mkdir testing testing2; touch testing/file1 testing/file2 testing/file3
-python3 ./backup_manager.py create "testing;[Current_hour];backup_test".
-python3 ./backup_manager.py create "testing;13:11;backup_test".
-python3 ./backup_manager.py start
-python3 ./backup_manager.py backups
-```
-
-Supposing the commands were run at 18:21, here is an example of the commands above:
-
-```console
-$ ls
-backup_manager.py  backup_service.py  testing/
-$ python3 ./backup_manager.py create "testing;18:21;backup_test"
-$ python3 ./backup_manager.py create "testing2;13:11;passed_time_backup"
-$ python3 ./backup_manager.py list
-0: testing;18:21;backup_test
-1: testing;13:11;passed_time_backup
-$ python3 ./backup_manager.py start
-$ python3 ./backup_manager.py backups
-backup_test.tar
-$ ls
-backup_manager.py  backups/  backup_schedules.txt  backup_service.py  logs/ testing/
-$ cat logs/backup_manager.log
-[13/02/2023 18:21] Schedule created
-[13/02/2023 18:21] Show schedule list
-[13/02/2023 18:21] Backup list
-$ cat backup_schedules.txt
-testing;18:21;backup_test
-$ cat logs/backup_service.log
-[13/02/2023 18:21] Backup done for testing in backups/backup_test.tar
-```
-
-##### Follow the example above and then open the `backup_test.tar` file to ensure that the backup process was successful. Verify that the files are not empty or damaged and that it matches the original directory.
-
-###### Was the backup created successfully?
-
-###### Can you confirm that the `passed_time_backup` was not created successfully because the time has already passed?
-
-##### Run `python3 backup_manager.py stop` and then `rm -dr logs backups backup_schedules.txt`.
-
-##### Create a `.zip` with some folders and files inside it and then replicate the steps you just did above to check if the backup is created successfully.
-
-###### Was the backup created successfully? (open the backup and verify that the files are not empty or damaged and that it matches the original directory.)
-
-### Error handling
-
-##### Verify error handling for incorrect commands and incorrect arguments. For example, confirm that an error message is logged when attempting to run the command `python3 backup_manager.py invalid_command`.
-
-```bash
-$ python3 backup_manager.py invalid_command
-$ cat logs/backup_service.log
-...
-[13/02/2023 18:21] Error: unknown instruction
-```
-
-###### Was the error message logged correctly?
-
-##### Run `python3 backup_manager.py stop` and then `rm -dr logs backups backup_schedules.txt`. After that run the following commands:
-
-```bash
-python3 backup_manager.py stop
-python3 ./backup_manager.py create "wrong_format"
-python3 ./backup_manager.py backups
-python3 ./backup_manager.py start
-python3 ./backup_manager.py start
-```
-
-```console
-$ cat logs/backup_manager.log
-[14/02/2023 15:07] Error: cannot kill the service
-[14/02/2023 15:07] Error: invalid schedule format
-[14/02/2023 15:08] Error: [Errno 2] No such file or directory: "./backups"
-[14/02/2023 15:08] Error: service already running
-$ cat logs/backup_service.log
-[14/02/2023 15:11] Error: cannot open backup_schedules
-$
-```
-
-###### Can you confirm that all error messages have been saved in the log files like in the example above?
-
-##### Go to the code of the project adn check if the creator used `try` and `except` to handle the errors.
-
-###### Did he use `try` and `except` to handle the errors?
+###### Can you confirm the order with `user_id = 22` is now listed properly?
