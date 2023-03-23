@@ -72,7 +72,7 @@ This implies that you must build your project's Docker images and are not allowe
 
 ### Documentation
 
-You must push a `README.md` file contains full documonation of your solution (Prerequisites, Configuration, Setup, Usage, ...).
+You must push a `README.md` file contains full documentation of your solution (Prerequisites, Configuration, Setup, Usage, ...).
 
 ### Bonus
 
