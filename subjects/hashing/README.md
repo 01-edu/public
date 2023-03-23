@@ -4,7 +4,7 @@
 
 Given a list of integers (`Vec<i32>`) write three **functions**.
 
--`mean`: that calculates the mean (the average value) of all the values in the list.
+- `mean`: that calculates the mean (the average value) of all the values in the list.
 
 - `median`: that calculates the median (for a sorted list, it is the value in the middle). If there is an even amount of numbers in the list, the middle pair must be determined, added together, and divided by two to find the median value.
 
