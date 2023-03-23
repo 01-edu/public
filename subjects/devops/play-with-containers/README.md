@@ -45,12 +45,12 @@ This implies that you must build your project's Docker images and are not allowe
 
 #### Docker Containers:
 
-- `inventory-database container` is a SQL database server that contains your inventory database, it must be accessible via port `3306`.
-- `billing-database container` is a SQL database server that contains your billing database, it must be accessible via port `3306`.
-- `inventory-app container` is a Node.Js server that contains your inventory-app code running and connected to the inventory database and accessible via port `80`.
-- `billing-app container` is a Node.Js server that contains your billing-app code running and connected to the billing database and consuming the messages from the RabbitMQ queue, and it can be accessible via port `80`.
+- `inventory-database container` is a SQL database server that contains your inventory database, it must be accessible via port `5432`.
+- `billing-database container` is a SQL database server that contains your billing database, it must be accessible via port `5432`.
+- `inventory-app container` is a Node.Js server that contains your inventory-app code running and connected to the inventory database and accessible via port `8080`.
+- `billing-app container` is a Node.Js server that contains your billing-app code running and connected to the billing database and consuming the messages from the RabbitMQ queue, and it can be accessible via port `8080`.
 - `RabbitMQ container` is a RabbitMQ server that contains the queue
-- `api-gateway-app container` is a Node.Js server that contains your api-gateway-app code running and forwarding the requests to the other services and it's accessible via `HTTPS`.
+- `api-gateway-app container` is a Node.Js server that contains your api-gateway-app code running and forwarding the requests to the other services and it's accessible via port `3000`.
 
 > Containers must be restarted in case of failure!
 
@@ -63,13 +63,16 @@ This implies that you must build your project's Docker images and are not allowe
 #### Docker Network:
 
 - You must have a docker network that establishes the connection between all services inside your docker host.
-- Any outside request must be able to access only the `api-gateway-app` via `HTTPS`.
-- The connection to the api-gateway-app protected by `SSL certification` (self-signed certification is authorized)
+- Any outside request must be able to access only the `api-gateway-app` via port `3000`.
 
 > All resources in your infrastructure must be targeted and managed by docker-compose.
 
-> You don't have to push your credentials and passwords to your repo, the credentials and passwords must be in the '.env' file, and this file must be ignored in the '.gitignore' file
+> You don't have to push your credentials and passwords to your repo, the credentials and passwords must be in the `.env` file, and this file must be ignored in the `.gitignore` file
 > Don't push your passwords to Git, unless you want to throw a thief's party with free drinks and no bouncers on duty!
+
+### Documentation
+
+You must push a `README.md` file contains full documonation of your solution (Prerequisites, Configuration, Setup, Usage, ...).
 
 ### Bonus
 
@@ -79,7 +82,7 @@ Challenge yourself!
 
 ### Submission and audit
 
-You must submit all files used to create and delete and manage your infrastructure: docker-compose, Dockerfiles, scripts,...
+You must submit the `README.md` file and all files used to create and delete and manage your infrastructure: docker-compose, Dockerfiles, scripts,...
 
 > The infrastructure must be able to be created, deleted, and managed only by docker-compose.
 > In the audit you will be asked different questions about the concepts and the practice of this project, prepare yourself!
