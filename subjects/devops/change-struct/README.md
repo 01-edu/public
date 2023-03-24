@@ -11,12 +11,12 @@ Use the correct commands to create the following file structure:
     - Move the folder `0, 1, 2 and 3` inside the `0_to_3` folder.
     - Move the folder `6, 7, 8 and 9` inside the `6_to_9` folder.
     - Remove the folder `5`.
-    - Rename the folder `10`, to `new_folder`
+    - Rename the folder `A`, to `new_folder`
     - Copy the folder `1` inside the folder `8`
 
 ```console
-$ tree new-struct/
-new-struct/
+$ tree new_struct/
+new_struct/
 ├── 0_to_3
 │   ├── 0
 │   ├── 1
@@ -29,17 +29,19 @@ new-struct/
 │   ├── 6
 │   ├── 7
 │   ├── 8
+│   │   └── 1
 │   └── 9
-└── A
+└── new_folder
     └── text3.txt
 ```
 
 Once it is done, use the command below to create the file `change-struct.tar` to be submitted.
 
 ```console
+$ cd new_struct/
 $ tar -cf change-struct.tar *
-$ ls new-struct/
-0_to_3  4  6_to_9  A  change-struct.tar
+$ ls
+0_to_3  4  6_to_9  change-struct.tar  new_folder
 ```
 
 **Only `change-struct.tar` should be submitted.**
