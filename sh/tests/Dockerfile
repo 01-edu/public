@@ -2,6 +2,7 @@ FROM docker.01-edu.org/debian:10.9-slim
 
 RUN apt-get update
 RUN apt-get -y install jq curl tree apt-utils
+RUN apt-get -y install bc
 
 WORKDIR /app/assets/superhero
 RUN curl --remote-name --location https://demo.01-edu.org/assets/superhero/all.json
