@@ -15,15 +15,8 @@ challenge() {
         return
     fi
 
-    # Test with one or two arguments
-    if [ $# -eq 1 ]
-    then
-    submitted=$(bash "$script_dirS"/student/division.sh $1)
-    expected=$(bash "$script_dirS"/solutions/division.sh $1)
-    else
-    submitted=$(bash "$script_dirS"/student/division.sh $1 $2)
-    expected=$(bash "$script_dirS"/solutions/division.sh $1 $2)
-    fi
+    submitted=$(bash "$script_dirS"/student/division.sh $@)
+    expected=$(bash "$script_dirS"/solutions/division.sh $@)
     diff <(echo "$submitted") <(echo "$expected")
 }
 
