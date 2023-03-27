@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
 IFS='
 '
 script_dirS=$(cd -P "$(dirname "$BASH_SOURCE")" &>/dev/null && pwd)
@@ -10,16 +9,20 @@ challenge() {
     input="${@: -1}"
 
     submitted=$(
-        ./student/joker-num.sh $args <<EOF
+        bash ./student/joker-num.sh $args <<EOF
 $input
 EOF
     )
     expected=$(
-        ./solutions/joker-num.sh $args <<EOF
+        bash ./solutions/joker-num.sh $args <<EOF
 $input
 EOF
     )
     diff <(echo "$submitted") <(echo "$expected")
+    if [ $? != 0 ]
+	then
+		exit 1
+	fi
 }
 
 # Good input, win
