@@ -22,8 +22,8 @@
 
 #### Bonus
 
-###### Does the app provide image editing features such as cropping, rotating, or adding filters to images?
+###### +Does the app provide image editing features such as cropping, rotating, or adding filters to images?
 
-###### Does the app implement cloud storage to store images on a remote server?
+###### +Does the app implement cloud storage to store images on a remote server?
 
-###### Does the app have sharing options to share images on social media platforms or through email or messaging?
+###### +Does the app have sharing options to share images on social media platforms or through email or messaging?
