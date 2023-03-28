@@ -3,9 +3,9 @@
 ### Instructions
 
 Your very favorite person's birthday is coming soon. So you've decided to
-organise a very special party 🥳🪅🎤
+organize a very special party 🥳🪅🎤
 
-Invitations has been sent for a while...
+Invitations have been sent for a while...
 
 Good news: answers are back! Psst: Sorry buddy, we didn't count it, you've been
 too generous. But we saved every one of them as a file in a special directory for
