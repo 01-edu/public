@@ -14,7 +14,7 @@ challenge() {
 	fi
 }
 
-challenge "0\n3\n2\n5\n7\n1\n4\n9\n8\n6\n10"
+challenge "0\n3\n2\n5\n7\n1\n4\n9\n8\n6\n"
 
 challenge "26\n85\n21\n94\n68\n60\n99\n31\n10\n98\n"
 
