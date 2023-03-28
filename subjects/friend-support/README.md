@@ -31,7 +31,7 @@ curl localhost:5000/Elis_Galindo
 
 - [HTTP protocol](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 - [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
-- [Node http package: createServer](https://nodejs.org/en/knowledge/HTTP/servers/how-to-create-a-HTTP-server/)
+- [Node http package: createServer](https://nodejs.org/docs/latest-v16.x/api/http.html#http_http_createserver_options_requestlistener)
 - [http.setHeader()](https://nodejs.org/api/http.html#requestsetheadername-value)
 
 ### Provided files
