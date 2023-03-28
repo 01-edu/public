@@ -17,7 +17,7 @@ In this project, you will deploy a microservices architecture on Kubernetes, You
 
 ### Architecture
 
-![Architecture](pictures/Architecture.jpg)
+![Architecture](pictures/Architecture.png)
 
 You have to deploy this microservices architecture in a k3s cluster consisting of the following components:
 
