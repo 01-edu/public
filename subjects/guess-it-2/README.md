@@ -68,7 +68,7 @@ node ./student/solution.js
 
 You can choose in which language you want to build your program.
 
-If you fail one of these steps, the test will not work. So we advise you to run the test by downloading [this zip file](https://assets.01-edu.org/guess-it/guess-it.zip) containing the tester. You should place the `student/` folder in the root directory of the items provided and read its instructions. The data sets used to test this exercise will be `Data 5` and `Data 6`.
+If you fail one of these steps, the test will not work. So we advise you to run the test by downloading [this zip file](https://assets.01-edu.org/guess-it/guess-it.zip) containing the tester. You should place the `student/` folder in the root directory of the items provided and read its instructions. The data sets used to test this exercise will be `Data 4` and `Data 5`.
 
 This project will help you learn about:
 
