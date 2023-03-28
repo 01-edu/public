@@ -2,6 +2,8 @@
 
 ###### Has the requirement for the allowed packages been respected? (Check the [allowed packages](../README.md))
 
+##### In order to use the new and upgraded forum, users will have to register and login.
+
 ###### Do you need to register/login in the forum to use it?
 
 ##### Try registering as a new user.

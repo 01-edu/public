@@ -23,7 +23,7 @@ You will have only one HTML file, so every change of page you want to do, should
 
 #### Registration and Login
 
-To be able to use the new and upgraded forum users will have to register and login. This is premium stuff. The registration and login process should take in consideration the following features:
+To be able to use the new and upgraded forum users will have to register and login, otherwise they will only see the registration or login page. This is premium stuff. The registration and login process should take in consideration the following features:
 
 - Users must be able to fill a register form to register into the forum. They will have to provide at least:
   - Nickname
