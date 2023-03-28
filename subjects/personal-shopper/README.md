@@ -33,13 +33,13 @@ Create a `personal-shopper.mjs` script that:
       - If there is no 4rth argument: it remove the entry.
       - If the 4rth argument is `NaN`, nothing is removed and console must print
         this error `Unexpected request: nothing has been removed`.
-      - If the 4rth argument is a number, it will substract this number from the
+      - If the 4rth argument is a number, it will subtract this number from the
         original value (if the new value is <= 0, it will remove the entry).
       - Using a negative number must behave as `add` command.
   - `help`: print all the command lines available, with a description of it
     (specifications in the examples)
   - `ls` or no more arguments: print the list in the console.
-    - Each line is formated like this: `- element (number)`
+    - Each line is formatted like this: `- element (number)`
     - If the list is empty, this message should appear in console:
       `Empty list.`.
 
@@ -120,7 +120,7 @@ If no keyword is passed as second argument, the helper should be printed in the 
 - `node personal-shopper.mjs shopping-list.json ls` would print the list in your
   console like this:
 
-```
+```console
 - tzatziki pot (1)
 ```
 
