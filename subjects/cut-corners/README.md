@@ -10,9 +10,29 @@ Create some functions which behave like JavaScript's `Math` rounding functions:
 - `trunc`: which behaves similar to `Math.trunc()`.
 
 > Some restrictions apply:
+>
 > - You may not use strings conversion to do it
 > - No bitwise operator
 > - No `%` operator
+
+### Usage
+
+```js
+const nums = [3.7, -3.7, 3.1, -3.1]
+console.log(nums.map(round))
+console.log(nums.map(floor))
+console.log(nums.map(trunc))
+console.log(nums.map(ceil))
+```
+
+Output:
+
+```console
+[ 4, -4, 3, -3 ]
+[ 3, -4, 3, -4 ]
+[ 3, -3, 3, -3 ]
+[ 4, -3, 4, -3 ]
+```
 
 ### Notions
 
