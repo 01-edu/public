@@ -16,7 +16,7 @@ The typing in progress engine must work in real time! This meaning that if you s
 
 This engine must have/display:
 
-- A websocket to stablish the connection with both users
+- A websocket to establish the connection with both users
 - An animation so that the user can see that you are typing, this animation should be smooth (no interruptions/janks) and just enough to draw attention for the user to see (user friendly)
 - The name of the user that is typing
 - Whenever the user stops typing or finishes the conversation, it should not display the animation
