@@ -176,6 +176,8 @@ curl --location 'https://content.01-edu.org/api/graphql-engine/v1/graphql' \
 
 In GraphQL, the usage of arguments are specified in the schema. You can see the available query parameters by introspecting the API.
 
+> If you're logged in to the platform, you may access [GraphiQL](https://((DOMAIN))/graphiql), to more easily explore the schema.
+
 Example of nesting, using the result and user table :
 
 ```js
