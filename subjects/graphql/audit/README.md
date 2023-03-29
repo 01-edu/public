@@ -1,5 +1,11 @@
 #### Functionals
 
+##### Try to log in with invalid credentials
+
+###### Is an appropriate error shown?
+
+##### Ask the student to login with valid credentials
+
 ###### Does the profile have three sections?
 
 ##### Try to confirm if the content on the three sections are correct, using the **GraphiQL**.
@@ -17,6 +23,10 @@
 ##### Try to access the profile from the host domain.
 
 ###### Is the profile being hosted (active/live/online)?
+
+##### Log out
+
+###### Was the authenticated user successfully logged out?
 
 #### General
 

@@ -2,11 +2,13 @@
 
 ### Objectives
 
-The objective of this project is to learn the query language [graphQL](https://graphql.org/) by creating your own profile page. It will be provided,\
-by the platform, a graphQL endpoint that is connected to the database. So you can query this endpoint to obtain the information you desire.\
-**Note** that for security reasons some tables are private and some are public, you will only be provided with certain content.
+The objective of this project is to learn the [GraphQL](https://graphql.org/) query language, by creating your own profile page.
 
-Your profile must have at least 3 sections of content at your choice, for example:
+You'll use the GraphQL endpoint which is provided by the platform (`https://((DOMAIN))/api/graphql-engine/v1/graphql`). You'll be able to query your own data to populate your profile page.
+
+So that you can access your data, you'll need to create a login page.
+
+Your profile must display three pieces of information which you may choose. For example:
 
 - Basic user identification
 - XP amount
@@ -19,7 +21,7 @@ Beside those sections it will have a mandatory section for the generation of sta
 
 ### Instructions
 
-You will have to create a profile UI where you can see your own school information. This information/data is present on the graphQL endpoint, where you will have to query it.
+You will have to create a profile UI where you can see your own school information. This information/data is present on the GraphQL endpoint, where you will have to query it.
 
 The UI design is up to you. However, have in mind the principles of a [good UI](../good-practices/README.md).\
 The UI will have a statistic section where you can generate graphs to see more about your journey and achievements on the school. This graphs must be done using [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG). You will have to do at least **two different statistic graphs** for the data given.
@@ -39,18 +41,28 @@ Here are some possible combinations for the creation of the graphs:
 
 Any other information you desire to display is welcome and will be noted.
 
+### Login Page
+You'll need a [JWT](https://jwt.io/introduction) to access the GraphQL API. A JWT can be obtained from the `signin` endpoint (`https://((DOMAIN))/api/auth/signin`).
+
+You may make a `POST` request to the `signin` endpoint, and supply your credentials using `Basic` authentication, with base64 encoding.
+
+Your login page must function with both:
+
+- username:password
+- email:password
+
+If the credentials are invalid, an appropriate error message must be displayed.
+
+You must provide a method to log out.
+
+When making GraphQL queries, you'll supply the JWT using `Bearer` authentication.
+
 ### Hosting
 
-Besides the creation of your own profile you will have to host it! There are several places where you can host your profile,\
+Besides the creation of your own profile you will have to host it. There are several places where you can host your profile,\
 for example: [github-pages](https://pages.github.com/), [netlify](https://www.netlify.com/) and so on. You are free to choose the hosting place.
 
----
-
-### Usage
-
-> To test your queries you can access the GraphQL IDE on _https://((DOMAIN))/graphiql/_ or create your own **GraphiQL Docs**. This will give you a bigger picture of the tables, attributes and all the types of queries that you can do.
-
-Here are the list of tables that you are allowed to query (it will be only provided the columns present on the tables):
+Here are a selection of interesting tables and columns which are exposed via GraphQL:
 
 - **User table**:
 
@@ -128,9 +140,14 @@ you could just add this attribute to the query like so:
 }
 ```
 
-You can try to `curl` the API endpoint to see the result given by the server:
+You can use `curl` query they API:
 
-- `curl "https://((DOMAIN))/api/graphql-engine/v1/graphql" --data '{"query":"{user{id login}}"}'`
+```console
+curl --location 'https://((DOMAIN))/api/graphql-engine/v1/graphql' \
+--header 'Authorization: Bearer <JWT>' \
+--header 'Content-Type: application/json' \
+--data '{"query":"{user {id login}}","variables":{}}'
+```
 
 Here is another example of a query using the table `user`:
 
@@ -150,9 +167,14 @@ so it will return just one user, the user that has the `id` equal to `6`.
 
 You can see the result using `curl`:
 
-- `curl "https://((DOMAIN))/api/graphql-engine/v1/graphql" --data '{"query":"{user(where:{id:{_eq:6}}){id login}}"}'`
+```console
+curl --location 'https://content.01-edu.org/api/graphql-engine/v1/graphql' \
+--header 'Authorization: Bearer <JWT>' \
+--header 'Content-Type: application/json' \
+--data '{"query":"{user(where:{id:{_eq:6}}){id login}}","variables":{}}'
+```
 
-In graphQL the usage of arguments can be specified in the schema of the API. Like said above you can visit the _docs_ for the graphQL endpoint, _https://((DOMAIN))/graphiql_
+In GraphQL, the usage of arguments are specified in the schema. You can see the available query parameters by introspecting the API.
 
 Example of nesting, using the result and user table :
 
@@ -177,5 +199,8 @@ This project will help you learn about:
 - [GraphQL](https://graphql.org/)
 - [GraphiQL](https://github.com/graphql/graphiql)
 - [Hosting](https://en.wikipedia.org/wiki/Web_hosting_service)
+- [JWT](https://jwt.io)
+- Authentication
+- Authorization
 - Basics of human-computer interface
   - UI/UX
