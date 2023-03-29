@@ -20,14 +20,15 @@ Files that must be inside your repository:
 
 ###### Compare the result to that of an online exif metadata viewer, does the result correspond to 32 Latitude, and 34 Longitude?
 
-##### Ask the student to execute his program again, with the argument -steg instead of -map, and a PGP key should be displayed
+##### Ask the student to execute his program again, with the argument -steg instead of -map.
 
-> A PGP key begins with  
-> -----BEGIN PGP PUBLIC KEY BLOCK-----  
-> and ends with  
-> -----END PGP PUBLIC KEY BLOCK-----
+###### Was a PGP key displayed with the following format?
 
-###### Is the PGP key exactly the same as you can see in the topic?
+```
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+[pgp key]
+-----END PGP PUBLIC KEY BLOCK-----
+```
 
 #### Bonus
 
