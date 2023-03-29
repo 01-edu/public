@@ -42,6 +42,7 @@ Here are some possible combinations for the creation of the graphs:
 Any other information you desire to display is welcome and will be noted.
 
 ### Login Page
+
 You'll need a [JWT](https://jwt.io/introduction) to access the GraphQL API. A JWT can be obtained from the `signin` endpoint (`https://((DOMAIN))/api/auth/signin`).
 
 You may make a `POST` request to the `signin` endpoint, and supply your credentials using `Basic` authentication, with base64 encoding.
@@ -176,7 +177,7 @@ curl --location 'https://content.01-edu.org/api/graphql-engine/v1/graphql' \
 
 In GraphQL, the usage of arguments are specified in the schema. You can see the available query parameters by introspecting the API.
 
-> If you're logged in to the platform, you may access [GraphiQL](https://((DOMAIN))/graphiql), to more easily explore the schema.
+> If you're logged in to the platform, you may access [GraphiQL](<https://((DOMAIN))/graphiql/>) to more easily explore the schema.
 
 Example of nesting, using the result and user table :
 
