@@ -6,7 +6,9 @@ cp -r /app .
 cp -a student app
 cd app
 
-chmod +x "./student/${EXERCISE}.sh"
+if test -f "./student/${EXERCISE}.sh"; then
+	chmod +x "./student/${EXERCISE}.sh"
+fi
 
 if ! test -f "${EXERCISE}_test.sh"; then
 	echo "No test file found for the exercise : $EXERCISE"
