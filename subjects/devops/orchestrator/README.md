@@ -1,6 +1,6 @@
 ## Orchestrator
 
-![Orchestrator](pictures/Orchestrator.jpg)
+![Orchestrator](pictures/orchestrator.jpg)
 
 ### Objectives
 
@@ -17,7 +17,7 @@ In this project, you will deploy a microservices architecture on Kubernetes, You
 
 ### Architecture
 
-![Architecture](pictures/Architecture.png)
+![Architecture](pictures/architecture.png)
 
 You have to deploy this microservices architecture in a k3s cluster consisting of the following components:
 
@@ -41,11 +41,24 @@ By using k3s in Vagrant you must create 2 virtual machines:
 You must install `kubectl` on your machine to manage your cluster.
 
 The nodes must be connected and available!
+
 ```console
 $> kubectl get nodes -A
 NAME                                           STATUS   ROLES    AGE    VERSION
 <master-node>   Ready    <none>   XdXh   vX
 <agent1-node>   Ready    <none>   XdXh   vX
+$>
+```
+
+You must provide a `orchestrator.sh` script that run and create and manage the infrastructure
+
+````console
+$> ./orchestrator create
+cluster created
+$> ./orchestrator start
+cluster started
+$> ./orchestrator stop
+cluster stoped
 $>
 ```
 
@@ -72,36 +85,41 @@ You must store your passwords and credentials as a k8s secrets
 Your Node.JS applications must be deployed as a deployment and they must be scaled horizontally automatically, depending on CPU consumption.
 
 - `api-gateway`:
-    max replication: 3
-    min replication: 1
-    cpu percent triger: 60%
+  max replication: 3
+  min replication: 1
+  cpu percent triger: 60%
 
 - `billing-app`:
-    max replication: 3
-    min replication: 1
-    cpu percent triger: 60%
+  max replication: 3
+  min replication: 1
+  cpu percent triger: 60%
 
 - `inventory-app`:
-    max replication: 3
-    min replication: 1
-    cpu percent triger: 60%
+  max replication: 3
+  min replication: 1
+  cpu percent triger: 60%
 
 ### Databases
 
-Your databases must be deployed as Stateful in your k3s cluster, and you must create volumes that enable containers to move across infrastructure without losing the data.
+Your databases must be deployed as Statefulset in your k3s cluster, and you must create volumes that enable containers to move across infrastructure without losing the data.
 
 ### Documentation
+
 You must push a `README.md` file containing full documentation of your solution (Prerequisites, Configuration, Setup, Usage, ...).
 
 ### Bonus
 
-If you complete the mandatory part successfully and you still have free time, you can implement anything that you feel deserves to be a bonus.
+If you complete the mandatory part successfully and you still have free time, you can implement anything that you feel deserves to be a bonus, We can suggest:
 
+- Deploy a Kubernetes Dashboard to monitor the cluster
+
+- Deploy a dashboard for applications logs
+...
 Challenge yourself!
 
 ### Submission and audit
 
-You must submit the `README.md` file and all files used to create and delete and manage your infrastructure: Vagrantfiles, Dockerfiles, Manifests,...
+You must submit the `README.md` file and all files used to create and delete and manage your infrastructure: Vagrantfile, Dockerfiles, Manifests,...
 
 ```console
 .
@@ -112,7 +130,8 @@ You must submit the `README.md` file and all files used to create and delete and
 ├── Dockerfiles
 │   └── [...]
 └── Vagrantfile
-```
+````
 
 If you decide to use a different structure for your project remember you should be able to explain and justify your decision during the audit.
+
 > In the audit you will be asked different questions about the concepts and the practice of this project, prepare yourself!
