@@ -52,7 +52,7 @@ $>
 
 You must provide a `orchestrator.sh` script that run and create and manage the infrastructure
 
-````console
+```console
 $> ./orchestrator create
 cluster created
 $> ./orchestrator start
@@ -114,8 +114,8 @@ If you complete the mandatory part successfully and you still have free time, yo
 - Deploy a Kubernetes Dashboard to monitor the cluster
 
 - Deploy a dashboard for applications logs
-...
-Challenge yourself!
+  ...
+  Challenge yourself!
 
 ### Submission and audit
 
@@ -130,7 +130,7 @@ You must submit the `README.md` file and all files used to create and delete and
 ├── Dockerfiles
 │   └── [...]
 └── Vagrantfile
-````
+```
 
 If you decide to use a different structure for your project remember you should be able to explain and justify your decision during the audit.
 
