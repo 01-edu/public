@@ -7,7 +7,7 @@ Push-Swap is a very simple project that uses a Non-Comparative Sorting Algorithm
 You will have to write 2 programs:
 
 - **push-swap**, which calculates and displays on the standard output the smallest program using push-swap instruction language that sorts integer arguments received.
-- **checker**, which takes integer arguments and reads instructions on the standard output. Once read, checker executes them and displays `OK` if integers are sorted. Otherwise, it will display `KO`.
+- **checker**, which takes integer arguments and reads instructions on the standard input. Once read, checker executes them and displays `OK` if integers are sorted. Otherwise, it will display `KO`.
 
 As said before, you will have two stacks at your disposal. Your goal is to sort the stack `a`, that will contain the `int` values received, in ascending order, using both stacks and a set of instructions.
 
@@ -90,7 +90,7 @@ a b
 - If there are no arguments, the program does not display anything (0 instructions).
 
 ```console
-$ go run . "2 1 3 6 5 8"
+$ ./push-swap "2 1 3 6 5 8"
 pb
 pb
 ra
@@ -98,9 +98,9 @@ sa
 rrr
 pa
 pa
-$ go run . "0 one 2 3"
+$ ./push-swap "0 one 2 3"
 Error
-$ go run .
+$ ./push-swap
 $
 ```
 
@@ -113,12 +113,12 @@ $
 - In case of there are no arguments, the program displays nothing.
 
 ```console
-$ go run ./checker "3 2 1 0"
+$ ./checker "3 2 1 0"
 sa
 rra
 pb
 KO
-$ echo -e "rra\npb\nsa\n" | go run ./checker "3 2 one 0"
+$ echo -e "rra\npb\nsa\n" | ./checker "3 2 one 0"
 Error
 $ echo -e "rra\npb\nsa\nrra\npa"
 rra
@@ -126,9 +126,9 @@ pb
 sa
 rra
 pa
-$ echo -e "rra\npb\nsa\nrra\npa" | go run ./checker "3 2 1 0"
+$ echo -e "rra\npb\nsa\nrra\npa" | ./checker "3 2 1 0"
 OK
-$ go run ./checker
+$ ./checker
 $
 ```
 
@@ -149,7 +149,7 @@ $
 ```console
 $ ARG="4 67 3 87 23"; ./push-swap "$ARG" | wc -l
 6
-$ ARG="4 67 3 87 23"; ./push-swap "$ARG" | go run ./checker "$ARG"
+$ ARG="4 67 3 87 23"; ./push-swap "$ARG" | ./checker "$ARG"
 OK
 $
 ```
