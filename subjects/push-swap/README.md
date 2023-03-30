@@ -90,7 +90,7 @@ a b
 - If there are no arguments, the program does not display anything (0 instructions).
 
 ```console
-$ go run . "2 1 3 6 5 8"
+$ ./push-swap "2 1 3 6 5 8"
 pb
 pb
 ra
@@ -98,9 +98,9 @@ sa
 rrr
 pa
 pa
-$ go run . "0 one 2 3"
+$ ./push-swap "0 one 2 3"
 Error
-$ go run .
+$ ./push-swap
 $
 ```
 
@@ -113,12 +113,12 @@ $
 - In case of there are no arguments, the program displays nothing.
 
 ```console
-$ go run ./checker "3 2 1 0"
+$ ./checker "3 2 1 0"
 sa
 rra
 pb
 KO
-$ echo -e "rra\npb\nsa\n" | go run ./checker "3 2 one 0"
+$ echo -e "rra\npb\nsa\n" | ./checker "3 2 one 0"
 Error
 $ echo -e "rra\npb\nsa\nrra\npa"
 rra
@@ -126,9 +126,9 @@ pb
 sa
 rra
 pa
-$ echo -e "rra\npb\nsa\nrra\npa" | go run ./checker "3 2 1 0"
+$ echo -e "rra\npb\nsa\nrra\npa" | ./checker "3 2 1 0"
 OK
-$ go run ./checker
+$ ./checker
 $
 ```
 
@@ -149,7 +149,7 @@ $
 ```console
 $ ARG="4 67 3 87 23"; ./push-swap "$ARG" | wc -l
 6
-$ ARG="4 67 3 87 23"; ./push-swap "$ARG" | go run ./checker "$ARG"
+$ ARG="4 67 3 87 23"; ./push-swap "$ARG" | ./checker "$ARG"
 OK
 $
 ```
