@@ -4,12 +4,13 @@
 
 ### Objectives
 
-In this project, you will deploy a microservices architecture on Kubernetes, You will gain experience with key technologies and concepts such as Kubernetes deployments, services, ingresses, and API gateways. Additionally, this project will provide you with an opportunity to practice DevOps skills such as containerization, continuous integration, and deployment (CI/CD), and infrastructure as code (IaC) using Kubernetes manifests. By completing this project, you will have a solid understanding of microservices architecture and the tools and techniques used to deploy and manage such systems using Kubernetes.
+In this project, you will deploy a microservices architecture on Kubernetes, You will gain experience with key technologies and concepts such as Kubernetes architecture, deployments, services, ingresses, and API gateways. Additionally, this project will provide you with an opportunity to practice DevOps skills such as containerization, continuous integration, and deployment (CI/CD), and infrastructure as code (IaC) using Kubernetes manifests. By completing this project, you will have a solid understanding of microservices architecture and the tools and techniques used to deploy and manage such systems using Kubernetes.
 
 ### Tips
 
 - Spend time on the theory before rushing into the practice.
 - Read the official documentation.
+- You must understand the k8s components
 
 > Any lack of understanding of the concepts of this project may affect the difficulty of future projects, Take your time to understand all concepts.
 
