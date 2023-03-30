@@ -25,7 +25,7 @@ To provide a simple way to create blood types, implement the trait `FromStr` for
 
 Implement the following Traits:
 - `std::cmp::Ord`: to make possible to sort a vector or array of `BloodType`.
-- `std::Debug`: for `BloodType`, allowing us print a vector such as `[BloodType { antigen: A, rh_factor: Positive}, BloodType{ antigen: B, rh_factor: Negative}]` as `"[ A+, A-]"` when using format strings `{:?}`.
+- `std::Debug`: for `BloodType`, allowing us print a vector such as `[BloodType { antigen: A, rh_factor: Positive}, BloodType{ antigen: B, rh_factor: Negative}]` as `"[ A+, B-]"` when using format strings `{:?}`.
 
 Create three methods for BloodType:
   - `can_receive_from`: which returns `true` if `self` can receive blood from `other` blood type.
