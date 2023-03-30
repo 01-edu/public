@@ -7,7 +7,7 @@ Push-Swap is a very simple project that uses a Non-Comparative Sorting Algorithm
 You will have to write 2 programs:
 
 - **push-swap**, which calculates and displays on the standard output the smallest program using push-swap instruction language that sorts integer arguments received.
-- **checker**, which takes integer arguments and reads instructions on the standard output. Once read, checker executes them and displays `OK` if integers are sorted. Otherwise, it will display `KO`.
+- **checker**, which takes integer arguments and reads instructions on the standard input. Once read, checker executes them and displays `OK` if integers are sorted. Otherwise, it will display `KO`.
 
 As said before, you will have two stacks at your disposal. Your goal is to sort the stack `a`, that will contain the `int` values received, in ascending order, using both stacks and a set of instructions.
 
