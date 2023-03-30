@@ -213,6 +213,18 @@ user:~$
 
 ###### Can you confirm the response was success code `200` even if the `billing_app` is not working?
 
+#### K8s components
+
+![suprise](../pictures/suprise.png)
+
+![components-of-kubernetes](../pictures/components-of-kubernetes.svg)
+
+In less than 15 minutes and with the help of google the student must explain all kubernetes components and the roles of it.
+
+###### Can the learner explain the k8s components in less than 15 minutes?
+
+> If the learner is unable to explain the k8s component, this mean that learner have failed this audit, so he must re-read and spend more time on understanding!
+
 #### Bonus
 
 ###### + Did the student add any optional bonus?
