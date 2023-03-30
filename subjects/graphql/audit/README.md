@@ -1,4 +1,4 @@
-#### Functionals
+#### Functional
 
 ##### Try to log in with invalid credentials
 
@@ -41,11 +41,3 @@
 ###### +Did the student generated their own GraphiQL?
 
 ###### +Does the UI respect the [good practices](../../good-practices/README.md)?
-
-###### +Do you think in general this project is well done?
-
-#### Social
-
-###### +Did you learn anything from this project?
-
-###### +Would you recommend/nominate this program as an example for the rest of the school?
