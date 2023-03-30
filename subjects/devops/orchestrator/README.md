@@ -1,6 +1,6 @@
 ## Orchestrator
 
-![Orchestrator](pictures/orchestrator.jpg)
+![Orchestrator](pictures/Orchestrator.jpg)
 
 ### Objectives
 
@@ -17,7 +17,7 @@ In this project, you will deploy a microservices architecture on Kubernetes, You
 
 ### Architecture
 
-![Architecture](pictures/architecture.png)
+![Architecture](pictures/Architecture.png)
 
 You have to deploy this microservices architecture in a k3s cluster consisting of the following components:
 
@@ -109,13 +109,13 @@ You must push a `README.md` file containing full documentation of your solution 
 
 ### Bonus
 
-If you complete the mandatory part successfully and you still have free time, you can implement anything that you feel deserves to be a bonus, We can suggest:
+If you complete the mandatory part successfully and you still have free time, you can implement anything that you feel deserves to be a bonus, Examples:
 
 - Deploy a Kubernetes Dashboard to monitor the cluster
 
 - Deploy a dashboard for applications logs
-  ...
-  Challenge yourself!
+
+Challenge yourself!
 
 ### Submission and audit
 

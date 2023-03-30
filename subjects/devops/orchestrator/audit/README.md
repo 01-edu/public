@@ -68,7 +68,7 @@ $>
 ##### Check the student infrastructure:
 
 The student must implement this architecture:
-![architecture](../pictures/architecture.png)
+![architecture](../pictures/Architecture.png)
 
 ##### Run the student infrastructure:
 
