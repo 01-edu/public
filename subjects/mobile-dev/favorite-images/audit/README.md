@@ -12,7 +12,7 @@
 
 ###### Do you have an option to `choose an image` from gallery and `take a picture`?
 
-###### Does the camera work both in `iOS` and `Android`?
+###### Does the camera work both on `iOS` and `Android`?
 
 ###### Does the app load chosen image?
 
