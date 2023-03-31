@@ -53,7 +53,9 @@ If the credentials are invalid, an appropriate error message must be displayed.
 
 You must provide a method to log out.
 
-When making GraphQL queries, you'll supply the JWT using `Bearer` authentication.
+When making GraphQL queries, you'll supply the JWT using `Bearer` authentication. It will only allow access to the data belonging to the authenticated user.
+
+> You may inspect the JWT to discover the ID of the authenticated user.
 
 ### Hosting
 
