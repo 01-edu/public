@@ -20,7 +20,7 @@ When the user clicks on the button, they should see two options:
 
 You should use the `image_picker` package to implement this functionality. Additionally, you should show a `"No images selected"` message if no images have been loaded.
 
-> Note: Don't forget to add special keys to Info.plist file under ios folder to access the camera and gallery, see [example](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html).
+> Note: Don't forget to add special keys to Info.plist file under iOS folder to access the camera and gallery, see the [example](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html).
 
 <center>
 <img src="./resources/imageLibrary.01.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
