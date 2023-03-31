@@ -77,3 +77,5 @@ Files that must be inside your repository:
 - a README.md file, Which clearly explains how to use the program.
 
 Don’t hesitate to double check the names of your folders and files to ensure they are correct!
+
+> ⚠️ These methods and tools are for educational purposes only, so that you have a better understanding of how to protect against similar vulnerabilities. You must ensure that you do not attempt any exploit-type activity without the explicit permission of the owner of the machine, system or application. Failure to obtain permission risks breaking the law.
