@@ -19,23 +19,23 @@ A `README.md` and `orchestrator.sh` and `Vagrantfile` files and all files used t
 
 ##### Ask the following questions to the group or student
 
-- What are Container orchestration and what are their benefits of it?
+- What are Container orchestration and what are its benefits?
 
-- What are Kubernetes and what is its main role of it?
+- What is Kubernetes and what is its main role of it?
 
-- What are K3s and what is its main role of it?
+- What are K3s and what is their main role?
 
 ###### Did the student reply correctly to the questions?
 
 ##### Check the Student Documentation
 
-The Documentation must exists in the `README.md` file!
+The Documentation must exist in the `README.md` file!
 
 ###### Did the README.md file contains the all required information about the solution(Prerequisites, Configuration, Setup, Usage, ...)?
 
-##### Check the docker images in dockerhub:
+##### Check the docker images in the docker hub:
 
-###### Does the used docker images in the YAML manifests must be uploaded in the student dockerhub account?
+###### Do the used docker images in the YAML manifest uploaded in the student docker hub account?
 
 ##### Check the cluster:
 
@@ -61,9 +61,9 @@ $>
 
 ###### Does the cluster contains 2 nodes (master and agent)?
 
-###### Does kubectl installed and configured in the learner machine
+###### Does kubectl installed and configured in the learner's machine
 
-###### Does the nodes is connected and ready for usage?
+###### Do the nodes are connected and ready for usage?
 
 ##### Check the student infrastructure:
 
@@ -78,7 +78,7 @@ cluster created
 user:~$
 ```
 
-###### did the student provide a `orchestrator.sh` script that run and create and manage the infrastructure
+###### did the student provide an `orchestrator.sh` script that runs and creates and manages the infrastructure
 
 ###### did the student respect the architecture?
 
@@ -88,15 +88,15 @@ user:~$
 
 ###### Is there a YAML Manifest for each service?
 
-###### Are credentials not exists in the YAML manifests, except the secret manifests?
+###### Are credentials not existing in the YAML manifests, except the secret manifests?
 
 ##### Ask the following questions to the group or student
 
-- Explain What is a K8s manifest
+- What is infrastructure as code and what is the advantages of it?
 
-- Explain the K8s manifests
+- Explain What is a K8s manifest.
 
-- Did the student reply correctly to the questions?
+- Explain the K8s manifests.
 
 ###### Did the student reply correctly to the questions?
 
@@ -108,7 +108,7 @@ $> kubectl get secrets -o json
 $>
 ```
 
-###### Is the all used credentials and passwords presented in the secrets?
+###### Are the all used credentials and passwords presented in the secrets?
 
 ##### Check all deployed resources:
 
@@ -125,7 +125,7 @@ user:~$
 - `RabbitMQ container` is a RabbitMQ server that contains the queue.
 - `api-gateway-app container` is a Node.Js server that contains your api-gateway-app code running and forwarding the requests to the other services and it's accessible via port `3000`.
 
-###### Did the all required applications is deployed?
+###### Did the all required applications are deployed?
 
 - databases must be deployed as Statefulset, and volumes that enable containers to move across infrastructure without losing the data must be created.
 
@@ -146,7 +146,7 @@ user:~$
    min replication: 1
    cpu percent triger: 60%
 
-###### Do all apps deployed with the correct configuration?
+###### Do all apps deploy with the correct configuration?
 
 ##### Ask the following questions to the group or student
 
@@ -154,13 +154,13 @@ user:~$
 
 - What is deployment in k8s?
 
-- What is difference between deployment and statefulset in k8s?
+- What is the difference between deployment and statefulset in k8s?
 
-- What is scaling and why we use it?
+- What is scaling and why do we use it?
 
-- What is a load balancer and what is the role of it?
+- What is a load balancer and what is its role?
 
-- Why we don´t put the database as a deployment?
+- Why we don't put the database as a deployment?
 
 ###### Did the student reply correctly to the questions?
 
@@ -219,11 +219,11 @@ user:~$
 
 ![components-of-kubernetes](../pictures/components-of-kubernetes.svg)
 
-In less than 15 minutes and with the help of google the student must explain all kubernetes components and the roles of it.
+In less than 15 minutes and with the help of google the student must explain all Kubernetes components and their roles.
 
 ###### Can the learner explain the k8s components in less than 15 minutes?
 
-> If the learner is unable to explain the k8s component, this mean that learner have failed this audit, so he must re-read and spend more time on understanding!
+> If the learner is unable to explain the k8s component, this means that the learner has failed this audit, so he must re-read and spend more time on understanding!
 
 #### Bonus
 

@@ -35,9 +35,9 @@ You have to deploy this microservices architecture in a k3s cluster consisting o
 
 By using k3s in Vagrant you must create 2 virtual machines:
 
-1. Master: the master in the k3s cluster.
+1. `Master`: the master in the k3s cluster.
 
-2. Agent: an agent in the k3s cluster.
+2. `Agent`: an agent in the k3s cluster.
 
 You must install `kubectl` on your machine to manage your cluster.
 
@@ -116,6 +116,8 @@ If you complete the mandatory part successfully and you still have free time, yo
 
 - Deploy a dashboard for applications logs
 
+- Kubernetes in cloud ?!
+
 Challenge yourself!
 
 ### Submission and audit
@@ -136,3 +138,8 @@ You must submit the `README.md` file and all files used to create and delete and
 If you decide to use a different structure for your project remember you should be able to explain and justify your decision during the audit.
 
 > In the audit you will be asked different questions about the concepts and the practice of this project, prepare yourself!
+
+#### What next?
+
+In order to develop your knowledge and career as a devops engineer, we highly recommend you to learn and practice more about of kubernetes and even get a certification for kubernetes.
+https://kubernetes.io/training/
