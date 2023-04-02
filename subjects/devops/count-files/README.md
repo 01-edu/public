@@ -45,5 +45,6 @@ $ wc -lwc example.md
 
 ### References
 
+- [Wildcards](https://www.youtube.com/watch?v=DjBg8_ZtSDE)
 - [Find](https://manned.org/find).
 - [wc](https://www.gnu.org/software/coreutils/wc).
