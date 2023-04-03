@@ -29,8 +29,8 @@ A `type` called `Callback` will also be provided. It is a function which is goin
 
 You will have to create the following callback functions:
 
-- `div`: which converts the reference strings to `float`s and returns the `Result`, as the division of the `float`s or the standard (std) error: `ParseFloatError`.
-- `rem`: which converts the reference strings to `float`s and returns the `Result`, as the remainder of the division of the `float`s or the standard (std) error `ParseFloatError`.
+- `div`: which converts the reference strings to `f32`s and returns the `Result`, as the division of the `f32`s or the standard (std) error: `ParseFloatError`.
+- `rem`: which converts the reference strings to `f32`s and returns the `Result`, as the remainder of the division of the `f32`s or the standard (std) error `ParseFloatError`.
 
 ### Expected Function
 
