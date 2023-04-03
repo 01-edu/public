@@ -90,7 +90,7 @@ The following features must be implemented by yourself.
    - If the account is current you must display `You will not get interests because the account is of type current`
 
 4. The **Make transaction** feature, users must be able to create transactions, withdrawing or depositing money to a certain account. All transactions
-   must be updated and saved into the corresponding file.
+   must be updated and saved into the corresponding file. Accounts of type `fixed01`, `fixed02` and `fixed03` are not allowed to make transactions and an error message should be displayed if transactions are attempted with these accounts.
 
 5. The **Remove existing account** feature, users must be able to delete their own account, the same must happen here, updates must be saved into the corresponding file.
 
