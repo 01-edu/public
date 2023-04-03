@@ -59,3 +59,8 @@ This action will run the tests on your submitted `hello-devops.sh` file.
 Videos designed to give **hints** are assigned. It is strongly suggested to watch them as you go.
 
 There are subtitles available in French and English.
+
+### Resources
+
+- [Shell and Terminal](https://www.youtube.com/watch?v=6IFFfRF3ZFo)
+- [Common shell commands](https://www.youtube.com/watch?v=WsqxJu8mBNE)
