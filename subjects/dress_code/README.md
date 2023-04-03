@@ -35,7 +35,7 @@ Remember that all the `enum` and `struct` used must be `pub`.
 ### Expected functions
 
 ```rust
-pub fn choose_outfit(formality_level: Option<u32>, invitation_message: Result<&str>) -> Outfit {}
+pub fn choose_outfit(formality_level: Option<u32>, invitation_message: Result<&str, &str>) -> Outfit {}
 ```
 
 ### Usage
