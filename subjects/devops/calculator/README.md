@@ -8,6 +8,7 @@ In this exercise you will make a script `calculator.sh` that will take 3 argumen
 - The second argument will be the operator.
 
 Each operator should have its own function named as follow:
+
 - `+`: `do_add()`.
 - `-`: `do_sub()`.
 - `*`: `do_mult()`.
@@ -36,6 +37,7 @@ $
 ### Error handling
 
 All errors will print a specific message on **stderr** (ending with a newline) and returns a specific non-zero value:
+
 - Wrong number of arguments: `"Error: expect 3 arguments"`, returns `1`.
 - Division by 0: `"Error: division by 0"`, exit with `2`.
 - Invalid operator: `"Error: invalid operator"`, exit with `3`.
@@ -46,25 +48,26 @@ All errors will print a specific message on **stderr** (ending with a newline) a
 ### Hints
 
 - `case` statement example:
+
 ```sh
 # Check the first argument given to a script
 case $1 in
     "left")
         echo "We will turn left"
         ;;
-    
+
     "right")
         echo "We will turn right"
         ;;
-    
+
     "top")
         echo "We will turn top"
         ;;
-    
+
     "bottom")
         echo "We will turn bottom"
         ;;
-    
+
     # Any other case
     *)
         # This is printed in stderr
@@ -75,7 +78,8 @@ esac
 ```
 
 - Example of a function taking two arguments and returning a value by printing it.
-The behavior of this function is the same than the one expected for the operators functions you will create:
+  The behavior of this function is the same than the one expected for the operators functions you will create:
+
 ```sh
 print_full_name () {
     name=$1
@@ -86,11 +90,11 @@ print_full_name () {
 print_full_name "Gene" "Mallamar"
 ```
 
-> Google and Man will be your friends!  
+> Google and Man will be your friends!
 
 ### References
 
-- [Bash functions](https://linuxize.com/post/bash-functions/)  
-- [Test if a variable is a number](https://stackoverflow.com/questions/806906/how-do-i-test-if-a-variable-is-a-number-in-bash)  
-- [Print on standard error](https://stackoverflow.com/questions/2990414/echo-that-outputs-to-stderr)  
-- [Case statement](https://linuxize.com/post/bash-case-statement/)  
+- [Bash functions](https://linuxize.com/post/bash-functions/)
+- [Test if a variable is a number](https://stackoverflow.com/questions/806906/how-do-i-test-if-a-variable-is-a-number-in-bash)
+- [Print on standard error](https://stackoverflow.com/questions/2990414/echo-that-outputs-to-stderr)
+- [Case statement](https://linuxize.com/post/bash-case-statement/)

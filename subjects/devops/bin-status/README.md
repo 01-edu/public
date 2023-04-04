@@ -7,9 +7,9 @@ Create the script `bin-status.sh` that will return the exit status of last comma
 - Expected output:
 
 ```console
-$ true ; ./bin-status.sh
+$ true ; source ./bin-status.sh
 0
-$ false ; ./bin-status.sh
+$ false ; source ./bin-status.sh
 1
 $
 ```
@@ -26,6 +26,8 @@ $ random-binary ; echo $?
 <the exit status of random-binary>
 $
 ```
+
+The `source` command is used in Unix-like operating systems to execute commands from a specified file in the current shell environment. When the `source` command is used, the specified file is read by the shell and executed in the same environment as the caller, without creating a new subshell.
 
 > You have to use Man or Google to know more about commands flags, in order to solve this exercise!
 > Google and Man will be your friends!
