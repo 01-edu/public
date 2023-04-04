@@ -8,17 +8,17 @@ Expected output:
 
 ```console
 $ ./files-details.sh
-dr-------x 2 user user 4096 dez 13 17:50 0
--r------w- 1 user user    0 dez 13 17:51 1
--rw----r-- 1 user user    0 dez 13 17:51 2
-drwxrwxrwx 2 user user 4096 dez 13 17:51 3
--r-x--x--- 1 user user    0 dez 13 17:51 4
--r--rw---- 1 user user    0 dez 13 17:51 5
--r--rw---- 1 user user    0 dez 13 17:51 6
--r-x--x--- 1 user user    0 dez 13 17:51 7
--rw----r-- 1 user user    0 dez 13 17:51 8
--r------w- 1 user user    0 dez 13 17:51 9
-dr-------x 2 user user 4096 dez 13 17:50 A
+dr-------x 2023-02-07 15:34 0
+-r------w- 2023-01-18 18:24 1
+-rw----r-- 2023-01-18 18:24 2
+drwxrwxrwx 2023-02-07 15:34 3
+-r-x--x--- 2023-01-16 16:34 4
+-r--rw---- 2023-01-18 18:24 5
+-r--rw---- 2023-01-18 18:24 6
+-r-x--x--- 2023-01-16 16:34 7
+-rw----r-- 2023-01-18 18:24 8
+-r------w- 2023-01-18 18:24 9
+dr-------x 2023-02-07 15:34 A
 ```
 
 ### Hints
@@ -49,17 +49,17 @@ $
 You can specify specific column names to display or include in the awk output using the field numbers. For example:
 
 ```console
-$ ls -l | awk '{print $1, $2, $3, $4, $5, $6, $7, $8, $9, $10}' # print all the given fields
+$ ls -l | awk '{print $1, $2, $3, $4, $5, $6, $7, $8, $9}' # print all the given fields
 total 4
 -rw-rw-r-- 1 user user 1989 dez 20 15:19 README.md
-$ ls -l | awk '{print $1, $2, $4, $5, $7, $8, $10}'             # print all the given fields
+$ ls -l | awk '{print $1, $2, $4, $5, $7, $8}'             # print all the given fields
 total 4
 -rw-rw-r-- 1 user 2350 20 15:25
 $
 ```
 
 awk ‘{print $1}’ emp_records.txt
-awk {print $1, $6, $7, $8, $9, $10}'
+awk {print $1, $6, $7, $8, $9}'
 
 > You have to use Man or Google to know more about commands flags, in order to solve this exercise!
 > Google and Man will be your friends!
