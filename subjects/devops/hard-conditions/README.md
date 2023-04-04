@@ -9,7 +9,7 @@ If it exists and it is executable you must print "File is executable" if it is n
 
 ```console
 $ ls -l
--rw-rw-r-- 1 miguel miguel    19 dez 28 14:19  docs
+-rw-rw-r-- 1 user user    19 dez 28 14:19  docs
 -rwxrwxr-x 1 user user    95 dez 29 15:48  example.sh
 $ ./hard-conditions.sh path/to/example.sh
 File is executable
