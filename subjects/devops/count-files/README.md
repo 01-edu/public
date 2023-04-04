@@ -4,6 +4,10 @@
 
 Create a file `count-files.sh`, which will print the number **(and only the number)** of regular files and folders contained in the current directory and its sub-folders (the current directory must be included in the count).
 
+> Watch the videos:
+>
+> - [Wildcards](https://www.youtube.com/watch?v=DjBg8_ZtSDE)
+
 ### Usage
 
 ```console
@@ -45,6 +49,5 @@ $ wc -lwc example.md
 
 ### References
 
-- [Wildcards](https://www.youtube.com/watch?v=DjBg8_ZtSDE)
 - [Find](https://manned.org/find).
 - [wc](https://www.gnu.org/software/coreutils/wc).

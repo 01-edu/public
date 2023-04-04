@@ -8,6 +8,10 @@ Create the following files:
 - `"medium_File!"` which contains `Random text inside!` and **nothing else**
 - `"\?$*'Hard_file'*$?\"` which contains `Random text inside!` and **nothing else**.
 
+> Watch the videos:
+>
+> - [Escape Characters](https://www.youtube.com/watch?v=ZenUrQeHl7c)
+
 ### Usage
 
 ```console
@@ -58,6 +62,5 @@ $ touch foo\!\\.txt
 
 ### References
 
-- [Escape Characters](https://www.youtube.com/watch?v=ZenUrQeHl7c)
 - [ls](https://www.gnu.org/software/coreutils/ls).
 - [touch](https://www.gnu.org/software/coreutils/touch).

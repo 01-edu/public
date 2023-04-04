@@ -17,6 +17,10 @@ $./json-researcher.sh | cat -e
 $
 ```
 
+> Watch the videos:
+>
+> - [Pipes](https://www.youtube.com/watch?v=ou9o20pzxeg)
+
 ### Hints
 
 With `curl` you can get the content of the file from the url:
@@ -59,7 +63,3 @@ You may need to use pipes `(|)` and the logical operator `&&`.
 
 > You have to use Man or Google to know more about commands flags, in order to solve this exercise!
 > Google and Man will be your friends!
-
-### References
-
-- [Pipes](https://www.youtube.com/watch?v=ou9o20pzxeg)
