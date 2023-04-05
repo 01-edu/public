@@ -9,6 +9,10 @@ Usually this technique is used to programmatically generate scripts or configura
 The script will create a file `show-info.sh` that will run the command `cat` with `-e` as argument.
 The input to `cat` will be passed using `heredoc`. Running `show-info.sh` will output some useful information about three common environment variables.
 
+> Watch the videos:
+>
+> - https://www.youtube.com/watch?v=oJwZgefy8nA
+
 > The environment variables are `PWD`, `PATH` and `USERNAME`.
 
 ### Usage
