@@ -3,13 +3,16 @@
 ### Instructions
 
 Define a data structure to represent a matrix of any size and implement some basic operations.
+In other words, create a simple way to represent a table with any number of rows and columns.
 
-We will consider a matrix as a rectangular arrangements of scalars. You can represent this as a 2 dimensional vector`. You will use the definition of scalars from the [lalgebra_scalar](../lalgebra_scalar/README.md) exercise.
+Think of this table as a grid of numbers. You can use a 2D vector to store these numbers.
+
+Make sure to use the definition of numbers (scalars) from the [lalgebra_scalar](../lalgebra_scalar/README.md) exercise.
 
 Implement the following associated functions:
-- `new`: which returns a matrix of size `1 x 1`.
-- `identity`: which returns the identity matrix of size n.
-- `zero`: which returns a matrix of size `row` x `col` with all the positions filled by zeros.
+- `new`: which returns a `1x1` matrix (just 1 row and 1 column).
+- `identity`: Creates a special type of table called an "identity matrix" with n rows and n columns. It has 1s on the diagonal and 0s everywhere else.
+- `zero`: which returns a matrix of specified number of `rows` and `columns`, and fills it with zeros.
  
 ### Expected Functions and Structure
 
