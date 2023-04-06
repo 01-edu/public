@@ -19,9 +19,9 @@ A `README.md` and `orchestrator.sh` and `Vagrantfile` files and all files used t
 
 ##### Ask the following questions to the group or student
 
-- What are Container orchestration and what are its benefits?
+- What is container orchestration and what are its benefits?
 
-- What is Kubernetes and what is its main role of it?
+- What is Kubernetes and what is its main role?
 
 - What are K3s and what is their main role?
 
@@ -31,19 +31,19 @@ A `README.md` and `orchestrator.sh` and `Vagrantfile` files and all files used t
 
 The Documentation must exist in the `README.md` file!
 
-###### Did the README.md file contains the all required information about the solution(Prerequisites, Configuration, Setup, Usage, ...)?
+###### Did the README.md file contains all the required information about the solution (prerequisites, configuration, setup, usage, ...)?
 
-##### Check the docker images in the docker hub:
+##### Check the docker images in the Docker Hub:
 
-###### Do the used docker images in the YAML manifest uploaded in the student docker hub account?
+###### Are the docker images used in the YAML manifest uploaded from the student's Docker Hub account?
 
 ##### Check the cluster:
 
-By using k3s in Vagrant 2 virtual machines must be created:
+By using K3s in Vagrant two virtual machines must be created:
 
-1. Master: the master in the k3s cluster.
+1. Master: the master in the K3s cluster.
 
-2. Agent: an agent in the k3s cluster.
+2. Agent: an agent in the K3s cluster.
 
 `kubectl` must be installed and configured in the learner machine to manage the cluster.
 
@@ -57,13 +57,13 @@ NAME                                           STATUS   ROLES    AGE    VERSION
 $>
 ```
 
-###### Does the cluster created by a Vagrantfile?
+###### Was the cluster created by a Vagrantfile?
 
-###### Does the cluster contains 2 nodes (master and agent)?
+###### Is the cluster contains two nodes (master and agent)?
 
-###### Does kubectl installed and configured in the learner's machine
+###### Is kubectl installed and configured in the learner's machine?
 
-###### Do the nodes are connected and ready for usage?
+###### Are the nodes connected and ready for usage?
 
 ##### Check the student infrastructure:
 
@@ -78,11 +78,11 @@ cluster created
 user:~$
 ```
 
-###### did the student provide an `orchestrator.sh` script that runs and creates and manages the infrastructure
+###### Did the student provide an `orchestrator.sh` script that runs and creates and manages the infrastructure?
 
-###### did the student respect the architecture?
+###### Did the student respect the architecture?
 
-###### did the infrastructure start correctly?
+###### Did the infrastructure start correctly?
 
 ##### Verify the K8s Manifests:
 
@@ -92,7 +92,7 @@ user:~$
 
 ##### Ask the following questions to the group or student
 
-- What is infrastructure as code and what is the advantages of it?
+- What is infrastructure as code and what are the advantages of it?
 
 - Explain What is a K8s manifest.
 
@@ -108,7 +108,7 @@ $> kubectl get secrets -o json
 $>
 ```
 
-###### Are the all used credentials and passwords presented in the secrets?
+###### Are all the used credentials and passwords present in the secrets?
 
 ##### Check all deployed resources:
 
@@ -125,36 +125,36 @@ user:~$
 - `RabbitMQ container` is a RabbitMQ server that contains the queue.
 - `api-gateway-app container` is a Node.Js server that contains your api-gateway-app code running and forwarding the requests to the other services and it's accessible via port `3000`.
 
-###### Did the all required applications are deployed?
+###### Are all the required applications deployed?
 
-- databases must be deployed as Statefulset, and volumes that enable containers to move across infrastructure without losing the data must be created.
+- databases must be deployed as StatefulSet, and volumes that enable containers to move across infrastructure without losing the data must be created.
 
 - Node.JS applications must be deployed as a deployment and they must be scaled horizontally automatically, depending on CPU consumption:
 
 1. `api-gateway`:
    max replication: 3
    min replication: 1
-   cpu percent triger: 60%
+   cpu percent trigger: 60%
 
 2. `billing-app`:
    max replication: 3
    min replication: 1
-   cpu percent triger: 60%
+   cpu percent trigger: 60%
 
 3. `inventory-app`:
    max replication: 3
    min replication: 1
-   cpu percent triger: 60%
+   cpu percent trigger: 60%
 
 ###### Do all apps deploy with the correct configuration?
 
 ##### Ask the following questions to the group or student
 
-- What is statefulset in k8s?
+- What is StatefulSet in K8s?
 
-- What is deployment in k8s?
+- What is deployment in K8s?
 
-- What is the difference between deployment and statefulset in k8s?
+- What is the difference between deployment and StatefulSet in K8s?
 
 - What is scaling and why do we use it?
 
@@ -164,7 +164,7 @@ user:~$
 
 ###### Did the student reply correctly to the questions?
 
-##### Test The solution
+##### Test the solution
 
 #### Inventory API Endpoints
 
@@ -219,14 +219,14 @@ user:~$
 
 ![components-of-kubernetes](../pictures/components-of-kubernetes.svg)
 
-In less than 15 minutes and with the help of google the student must explain all Kubernetes components and their roles.
+In less than 15 minutes and with the help of Google the student must explain all Kubernetes components and their roles.
 
-###### Can the learner explain the k8s components in less than 15 minutes?
+###### Can the learner explain the K8s components in less than 15 minutes?
 
-> If the learner is unable to explain the k8s component, this means that the learner has failed this audit, so he must re-read and spend more time on understanding!
+> If the learner is unable to explain the K8s components, this means that the learner has failed this audit, so he must re-read and spend more time on understanding!
 
 #### Bonus
 
-###### + Did the student add any optional bonus?
+###### +Did the student add any optional bonus?
 
-###### + Is this project an outstanding project?
+###### +Is this project an outstanding project?
