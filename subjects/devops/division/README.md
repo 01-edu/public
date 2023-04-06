@@ -12,7 +12,7 @@ You will need to handle what to do when the inputs are wrong:
 
 - If the arguments are not numbers, the output should be `Error: both arguments must be numeric`.
 
-- In the case where the number of arguments are not enough, the output should be `Error: two numbers should be provided`.
+- In the case where the number of arguments are not enough, the output should be `Error: two numbers must be provided`.
 
 Your script should handle very large numbers as well.
 
