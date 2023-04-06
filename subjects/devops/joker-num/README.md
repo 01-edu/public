@@ -6,12 +6,13 @@ In this exercise you are going to create a guessing game.
 Create the script `joker-num.sh` which will receive the number to guess as argument. The number should be between 1 and 100 (inclusive). The player will then have 5 tries to guess the number.
 To achieve this you will have to use a `for` loop.
 
-When guessing a valid number the output will be:
+When you're trying to guess the secret number with a valid input, your program must output some tips as follow:
 
-- Number bigger than the secret one: `Go down`.
-- Number smaller than the secret one: `Go up`.
-- Number equal than the secret one: `Congratulations, you found the number!`.
-- Ran out of tries: `You lost, the number was <number>`.
+- First you will need to prompt a message so that the player knows what he must do: `"Enter your guess (<tries_left> tries left)`.
+- If the number is bigger than the secret one: `Go down`.
+- If the number si smaller than the secret one: `Go up`.
+- If the number is the correct one: `Congratulations, you found the number in <number_of_tries> moves!`.
+- If you ran out of tries: `You lost, the number was <number>`.
 
 ### Usage
 
@@ -35,8 +36,8 @@ $
 
 ### Error handling
 
-- Wrong number of arguments or number not between `1` and `100`: The program will print `Error: wrong argument` and return `1`.
-- The player writing something that is not a valid number as an answer: The program will ask again to enter a guess and the number of tries won't be decremented.
+- If the player enters the wrong number of arguments or the number is not between `1` and `100`, the program will print `Error: wrong argument` and exit with `1`.
+- If the player is writing something that is not a valid number as an answer, the program will ask again to enter a new a guess and the number of tries won't be decremented.
 
 Here an example for the last scenario:
 

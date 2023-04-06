@@ -54,7 +54,7 @@ All errors will print a specific message on **stderr** (ending with a newline) a
 
 - Wrong number of arguments: `"Error: expect 1 argument only!"`, exit with `1`.
 
-- If the student grade is not a number or is greater than 100: `Error: The grade "grade" is not a valid input. Only numerical grades between 0 and 100 are accepted.`, exit with `1`.
+- If the student grade is not a number or is greater than 100: `Error: The grade <grade> is not a valid input. Only numerical grades between 0 and 100 are accepted.`, exit with `1`.
 
 ```console
 $ ./grades.sh 2

@@ -7,7 +7,7 @@ Create a file `left.sh` that will pass the content of a file `facts` to a comman
 ### Usage
 
 ```console
-$./left.sh
+$ ./left.sh
 21
 ```
 
