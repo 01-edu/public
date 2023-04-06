@@ -4,10 +4,11 @@
 
 Create a script `in-back-ground.sh` which will execute a job in the background that will do the following:
 
-- Run the command `cat` on the file "facts" which will read the contents of the file and print it to `stdout`.
+- Run the command `cat` on the file [facts](../../../sh/tests/left/facts) which will read the contents of the file and print it to `stdout`.
 - The output of the cat command will be piped to the `grep` command, which will search for the string `"moon"` in the file.
-- If the `grep` command succeeds (if it finds the string "moon"), you will print `"The moon fact was found!"` to the `output.txt` file. If it fails the file `output.txt` is not created.
-- If the command finds the string "moon", it will print the matching line to the `stdout`.
+- If the `grep` command succeeds (if it finds the string "moon"):
+  - You will print `"The moon fact was found!"` to the `output.txt` file. If it fails the file `output.txt` is not created.
+  - You will should also print the line which contains the string to the `stdout`.
 - Redirect the `stdout` to a new file `output.txt`.
 
 You must do all these steps running only one job and using the command `nohup`!

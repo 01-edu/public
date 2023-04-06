@@ -9,8 +9,8 @@ If the number of given arguments is not one or if the directory given as argumen
 Below the expected behavior of your script:
 
 ```console
-$  bash remake.sh given-path
-$  ls -ltr given-path
+$ bash remake.sh given-path
+$ ls -ltr given-path
 total 8
 -r--r---w- 1 user user    0 Jan  1 00:01 ciao
 drwxrwxrwx 2 user user 4096 Jan  2 00:01 mamma

@@ -11,7 +11,7 @@ The script will also have to find and take into account hidden files.
 Here is an example of how to use the script:
 
 ```console
-$  tree -ha
+$ tree -ha
 [4.0K]  .
 ├── [4.0K]  d1
 │   ├── [4.0K]  d1-1
