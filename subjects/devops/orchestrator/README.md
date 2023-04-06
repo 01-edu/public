@@ -4,15 +4,15 @@
 
 ### Objectives
 
-In this project, you will deploy a microservices architecture on Kubernetes, You will gain experience with key technologies and concepts such as Kubernetes architecture, deployments, services, ingresses, and API gateways. Additionally, this project will provide you with an opportunity to practice DevOps skills such as containerization, continuous integration, and deployment (CI/CD), and infrastructure as code (IaC) using Kubernetes manifests. By completing this project, you will have a solid understanding of microservices architecture and the tools and techniques used to deploy and manage such systems using Kubernetes.
+In this project, You will deploy a microservices architecture on Kubernetes, You will gain experience with key technologies and concepts such as Kubernetes architecture, deployments, services, ingresses, and API gateways. Additionally, this project will provide you with an opportunity to practice DevOps skills such as containerization, continuous integration, and deployment (CI/CD), and infrastructure as code (IaC) using Kubernetes manifests. By completing this project, You will have a solid understanding of microservices architecture and the tools and techniques used to deploy and manage such systems using Kubernetes.
 
 ### Tips
 
 - Spend time on the theory before rushing into the practice.
 - Read the official documentation.
-- You must understand the k8s components
+- You must understand the K8s components.
 
-> Any lack of understanding of the concepts of this project may affect the difficulty of future projects, Take your time to understand all concepts.
+> Any lack of understanding of the concepts of this project may affect the difficulty of future projects, take your time to understand all concepts.
 
 > Be curious and never stop searching!
 
@@ -20,24 +20,24 @@ In this project, you will deploy a microservices architecture on Kubernetes, You
 
 ![Architecture](pictures/Architecture.png)
 
-You have to deploy this microservices architecture in a k3s cluster consisting of the following components:
+You have to deploy this microservices architecture in a K3s cluster consisting of the following components:
 
 - `inventory-database container` is a PostgreSQL database server that contains your inventory database, it must be accessible via port `5432`.
 - `billing-database container` is a PostgreSQL database server that contains your billing database, it must be accessible via port `5432`.
-- `inventory-app container` is a Node.Js server that contains your inventory-app code running and connected to the inventory database and accessible via port `8080`.
-- `billing-app container` is a Node.Js server that contains your billing-app code running and connected to the billing database and consuming the messages from the RabbitMQ queue, and it can be accessed via port `8080`.
+- `inventory-app container` is a Node.js server that contains your inventory-app code running and connected to the inventory database and accessible via port `8080`.
+- `billing-app container` is a Node.js server that contains your billing-app code running and connected to the billing database and consuming the messages from the RabbitMQ queue, and it can be accessed via port `8080`.
 - `RabbitMQ container` is a RabbitMQ server that contains the queue.
-- `api-gateway-app container` is a Node.Js server that contains your api-gateway-app code running and forwarding the requests to the other services and it's accessible via port `3000`.
+- `api-gateway-app container` is a Node.js server that contains your api-gateway-app code running and forwarding the requests to the other services and it's accessible via port `3000`.
 
 > You can use the Dockerfiles you created in the play-with-containers project!
 
 ### The cluster
 
-By using k3s in Vagrant you must create 2 virtual machines:
+By using K3s in Vagrant you must create two virtual machines:
 
-1. `Master`: the master in the k3s cluster.
+1. `Master`: the master in the K3s cluster.
 
-2. `Agent`: an agent in the k3s cluster.
+2. `Agent`: an agent in the K3s cluster.
 
 You must install `kubectl` on your machine to manage your cluster.
 
@@ -51,7 +51,7 @@ NAME                                           STATUS   ROLES    AGE    VERSION
 $>
 ```
 
-You must provide a `orchestrator.sh` script that run and create and manage the infrastructure
+You must provide a `orchestrator.sh` script that run and create and manage the infrastructure:
 
 ```console
 $> ./orchestrator create
@@ -59,11 +59,11 @@ cluster created
 $> ./orchestrator start
 cluster started
 $> ./orchestrator stop
-cluster stoped
+cluster stopped
 $>
 ```
 
-### Dockerhub
+### Docker Hub
 
 You will need to push the Docker images for each component to Docker Hub.
 
@@ -77,40 +77,40 @@ You should create a YAML Manifest that describes each component or resource of y
 
 ### Secrets
 
-You must store your passwords and credentials as a k8s secrets
+You must store your passwords and credentials as a K8s secrets.
 
-> It's forbidden to put your passwords and credentials, in the YAML manifests, except the secret manifests!
+> It's forbidden to put your passwords and credentials in the YAML manifests, except the secret manifests!
 
-### Node.JS apps
+### Node.js apps
 
-Your Node.JS applications must be deployed as a deployment and they must be scaled horizontally automatically, depending on CPU consumption.
+Your Node.js applications must be deployed as a deployment and they must be scaled horizontally automatically, depending on CPU consumption.
 
 - `api-gateway`:
   max replication: 3
   min replication: 1
-  cpu percent triger: 60%
+  cpu percent trigger: 60%
 
 - `billing-app`:
   max replication: 3
   min replication: 1
-  cpu percent triger: 60%
+  cpu percent trigger: 60%
 
 - `inventory-app`:
   max replication: 3
   min replication: 1
-  cpu percent triger: 60%
+  cpu percent trigger: 60%
 
 ### Databases
 
-Your databases must be deployed as Statefulset in your k3s cluster, and you must create volumes that enable containers to move across infrastructure without losing the data.
+Your databases must be deployed as StatefulSet in your K3s cluster, and you must create volumes that enable containers to move across infrastructure without losing the data.
 
 ### Documentation
 
-You must push a `README.md` file containing full documentation of your solution (Prerequisites, Configuration, Setup, Usage, ...).
+You must push a `README.md` file containing full documentation of your solution (prerequisites, configuration, setup, usage, ...).
 
 ### Bonus
 
-If you complete the mandatory part successfully and you still have free time, you can implement anything that you feel deserves to be a bonus, Examples:
+If you complete the mandatory part successfully and you still have free time, you can implement anything that you feel deserves to be a bonus, for example:
 
 - Deploy a Kubernetes Dashboard to monitor the cluster
 
@@ -139,7 +139,7 @@ If you decide to use a different structure for your project remember you should 
 
 > In the audit you will be asked different questions about the concepts and the practice of this project, prepare yourself!
 
-#### What next?
+#### What's next?
 
-In order to develop your knowledge and career as a devops engineer, we highly recommend you to learn and practice more about of kubernetes and even get a certification for kubernetes.
+In order to develop your knowledge and career as a devops engineer, we highly recommend you to learn and practice more about kubernetes and even get a certification for kubernetes.
 https://kubernetes.io/training/
