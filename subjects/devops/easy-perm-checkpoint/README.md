@@ -27,3 +27,7 @@ total 8
 -rw-r--r-- 1 user user 348 dez 13 16:14 example.txt
 $
 ```
+
+### Hints
+
+- `man chmod`
