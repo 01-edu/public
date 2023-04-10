@@ -54,9 +54,9 @@ Network/
 ├ keys.json
 ```
 
-## Ressources
+## Resources
 
-- [Private network explanation](https://ethereum.org/wiki/private-networks)
+- [Private network explanation](https://ethereum.org/en/developers/docs/networks/#private-networks)
 - [Launch a private network with Besu tutorial](https://besu.hyperledger.org/en/stable/Tutorials/Private-Network/Create-QBFT-Network/)
 - [Overview on industrial usage of private network](https://www.sciencedirect.com/science/article/pii/S209672092200029X)
 
@@ -106,10 +106,11 @@ COMMANDS:
    connect <endpoint>            Connect to a blockchain node
    balance                       Get the balance for the current loaded wallet
    send <destination> <amount>   sends assets to a destination
+```
 
 ## Deliverable
+
 The project must provide an executable file that complies with the specifications
-```
 
 ---
 
