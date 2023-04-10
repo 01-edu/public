@@ -59,7 +59,7 @@ $>
 
 ###### Was the cluster created by a Vagrantfile?
 
-###### Is the cluster contains two nodes (master and agent)?
+###### Does the cluster contains two nodes (master and agent)?
 
 ###### Is kubectl installed and configured in the learner's machine?
 
@@ -120,16 +120,16 @@ user:~$
 
 - `inventory-database container` is a PostgreSQL database server that contains your inventory database, it must be accessible via port `5432`.
 - `billing-database container` is a PostgreSQL database server that contains your billing database, it must be accessible via port `5432`.
-- `inventory-app container` is a Node.Js server that contains your inventory-app code running and connected to the inventory database and accessible via port `8080`.
-- `billing-app container` is a Node.Js server that contains your billing-app code running and connected to the billing database and consuming the messages from the RabbitMQ queue, and it can be accessed via port `8080`.
+- `inventory-app container` is a Node.js server that contains your inventory-app code running and connected to the inventory database and accessible via port `8080`.
+- `billing-app container` is a Node.js server that contains your billing-app code running and connected to the billing database and consuming the messages from the RabbitMQ queue, and it can be accessed via port `8080`.
 - `RabbitMQ container` is a RabbitMQ server that contains the queue.
-- `api-gateway-app container` is a Node.Js server that contains your api-gateway-app code running and forwarding the requests to the other services and it's accessible via port `3000`.
+- `api-gateway-app container` is a Node.js server that contains your api-gateway-app code running and forwarding the requests to the other services and it's accessible via port `3000`.
 
 ###### Are all the required applications deployed?
 
 - databases must be deployed as StatefulSet, and volumes that enable containers to move across infrastructure without losing the data must be created.
 
-- Node.JS applications must be deployed as a deployment and they must be scaled horizontally automatically, depending on CPU consumption:
+- Node.js applications must be deployed as a deployment and they must be scaled horizontally automatically, depending on CPU consumption:
 
 1. `api-gateway`:
    max replication: 3
@@ -222,8 +222,6 @@ user:~$
 In less than 15 minutes and with the help of Google the student must explain all Kubernetes components and their roles.
 
 ###### Can the learner explain the K8s components in less than 15 minutes?
-
-> If the learner is unable to explain the K8s components, this means that the learner has failed this audit, so he must re-read and spend more time on understanding!
 
 #### Bonus
 
