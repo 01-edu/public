@@ -1,6 +1,5 @@
 ## cl-camp6
 
-
 > 🕵️ **Operation Data Centre**
 >
 > [Confidential]
