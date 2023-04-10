@@ -6,11 +6,11 @@ A `README.md` file and all files used to create, delete and manage the student i
 
 ###### Are all the required files present?
 
-###### `.env` file do not exist in the repo?
+###### `.env` file does not exist in the repo?
 
 ###### Are all pushed files in the repo clean of any credentials or passwords?
 
-##### Ask the following questions to the group or student.
+##### Ask the following questions to the group or student:
 
 ##### What are containers and what are their advantages?
 
@@ -22,7 +22,7 @@ A `README.md` file and all files used to create, delete and manage the student i
 
 ##### Open and read the `README.md` file provided by the student.
 
-###### Did the `README.md` file contains all the required information to run and manage the solution (prerequisites, configuration, setup, usage, etc)?
+###### Does the `README.md` file contain all the required information to run and manage the solution (prerequisites, configuration, setup, usage, etc)?
 
 #### Check the student infrastructure:
 
@@ -44,9 +44,9 @@ api-gateway-app      ... done
 user:~$
 ```
 
-###### Did the student architecture reflect the infrastructure enforced by the subject?
+###### Does the student architecture reflect the infrastructure enforced by the subject?
 
-###### Did the infrastructure start correctly?
+###### Does the infrastructure start correctly?
 
 ##### Ask the following questions to the group or student
 
@@ -170,7 +170,7 @@ user:~$
 
 ##### Why do we use Docker images?
 
-##### Where we can find some public Docker images?
+##### Where can we find some public Docker images?
 
 ###### Did the student reply correctly to the questions?
 
