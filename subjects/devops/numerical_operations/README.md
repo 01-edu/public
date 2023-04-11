@@ -8,7 +8,7 @@ Create a file `numerical_operations.py` containing the following functions:
 - `subtract(a, b)`
 - `multiply(a, b)`
 - `power(a, b)`
-- `square(a)`
+- `square_root(a)`
 
 We assume that `a` and `b` are numbers (`int` or `float`).
 
@@ -23,7 +23,7 @@ print(numerical_operations.add(2, 2))
 print(numerical_operations.subtract(10, 5))
 print(numerical_operations.multiply(3, 4))
 print(numerical_operations.power(3, 3))
-print(numerical_operations.square(3)) # What we want is the square root of the number.
+print(numerical_operations.square_root(3))
 ```
 
 ```bash
