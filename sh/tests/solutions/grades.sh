@@ -4,7 +4,7 @@ num_students=$1
 declare -a students
 
 if [ $# -ne 1 ]; then
-    echo "Error: expect 1 argument only!"
+    echo "Error: expect 1 argument only!" >/dev/stderr
     exit 1
 fi
 
@@ -14,7 +14,7 @@ for ((i = 0; i < num_students; i++)); do
     students+=("$name $grade")
 
     if [ $(expr "$grade" \> 100) -eq 1 ] || ! [[ "$grade" =~ ^[0-9]+$ ]]; then
-        echo "Error: The grade '$grade' is not a valid input. Only numerical grades between 0 and 100 are accepted."
+        echo "Error: The grade '$grade' is not a valid input. Only numerical grades between 0 and 100 are accepted." >/dev/stderr
         exit 1
     fi
 done
