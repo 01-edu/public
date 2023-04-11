@@ -23,7 +23,7 @@ print(numerical_operations.add(2, 2))
 print(numerical_operations.subtract(10, 5))
 print(numerical_operations.multiply(3, 4))
 print(numerical_operations.power(3, 3))
-print(numerical_operations.square(3))
+print(numerical_operations.square(3)) # What we want is the square root of the number.
 ```
 
 ```bash
@@ -32,7 +32,7 @@ $ python test.py
 5
 12
 27
-9
+1.73205080757
 $
 ```
 
