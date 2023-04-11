@@ -2,7 +2,7 @@
 
 ### Instructions
 
-The purpose of this exercise is to create an image like the example bellow:
+The purpose of this exercise is to create an image like the example below:
 
 ![example](image.png)
 

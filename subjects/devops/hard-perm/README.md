@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a file `hard-perm.sh`, which will change the default permissions for the files and folders inside the folder `hard-perm`, to the ones bellow:
+Create a file `hard-perm.sh`, which will change the default permissions for the files and folders inside the folder `hard-perm`, to the ones below:
 
 Right now the folder looks like this:
 

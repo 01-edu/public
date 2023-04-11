@@ -8,7 +8,7 @@ Create the script `json-researcher.sh` which will show the "name" and the "power
 
 - What to use : `curl` and `jq` and `grep`
 
-- The output should be exactly like the example bellow but with the expected name
+- The output should be exactly like the example below but with the expected name
 
 ```console
 $./json-researcher.sh | cat -e

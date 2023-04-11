@@ -13,7 +13,7 @@ all Regular files ending with a `z`
 
 - What to use : `find`
 
-- The output should be exactly like the example bellow but with the expected name
+- The output should be exactly like the example below but with the expected name
 
 ```console
 $pwd

@@ -19,7 +19,7 @@ You will also need to make a [todoMVC](http://todomvc.com/) project using your f
 
 You must create documentation for your framework, so that users (auditers) are able to understand and know how to use your framework without experiencing any awkwardness.
 
-Your framework will be tested by using it, like you previously have used one, in the social network project. So the user has to be presented to a folder structure that allows him to run the app from the root of that folder structure. The user testing your framework will have to implement some simple code in order to test the features described bellow.
+Your framework will be tested by using it, like you previously have used one, in the social network project. So the user has to be presented to a folder structure that allows him to run the app from the root of that folder structure. The user testing your framework will have to implement some simple code in order to test the features described below.
 
 #### Documentation
 

@@ -4,7 +4,7 @@
 
 Create a file `right.sh` that will get the output of a file and parse it, and then write it to a file with a specific format using a single command.
 
-Get the output of the `ls` command, parse it with the `grep` command to filter for files without a `.txt` extension, and write the output to a file called `filtered_files.txt`, check the example bellow:
+Get the output of the `ls` command, parse it with the `grep` command to filter for files without a `.txt` extension, and write the output to a file called `filtered_files.txt`, check the example below:
 
 ### Usage
 

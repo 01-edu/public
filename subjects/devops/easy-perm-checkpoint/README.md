@@ -16,7 +16,7 @@
 
 ### Instructions
 
-Create a file `easy-perm.sh`, which will change the default permissions for the `example.txt` and `example2.txt` files inside the folder `easy-perms`, to the ones bellow:
+Create a file `easy-perm.sh`, which will change the default permissions for the `example.txt` and `example2.txt` files inside the folder `easy-perms`, to the ones below:
 
 Expected Output:
 

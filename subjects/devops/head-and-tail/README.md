@@ -8,7 +8,7 @@ Create the script `head-and-tail.sh` which will show the first and last lines of
 
 - What to use : `curl` and `head` and `tail`
 
-- The output should be exactly like the example bellow but with the expected name
+- The output should be exactly like the example below but with the expected name
 
 ```console
 $ ./head-and-tail.sh | cat -e
