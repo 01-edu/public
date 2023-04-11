@@ -6,7 +6,7 @@ A `README.md` file and all files used to create, delete and manage the student i
 
 ###### Are all the required files present?
 
-###### `.env` file does not exist in the repo?
+###### Does the `.env` file not exist in the repo?
 
 ###### Are all pushed files in the repo clean of any credentials or passwords?
 
@@ -65,6 +65,8 @@ user:~$
 ###### Is there a Dockerfile for each service?
 
 ###### Are all Dockerfiles based on `Debian` or `Alpine`?
+
+###### There is no sensitive data in Dockerfiles or other solution files (sensitive data should only exist in `.env` file)?
 
 ##### Ask the following questions to the group or student
 
