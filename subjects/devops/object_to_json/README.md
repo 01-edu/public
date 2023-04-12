@@ -13,7 +13,7 @@ The new registration information comes as string formatted as JSON. You need to 
 ```python
 class User:
     username = 'user'
-    email = 'something@email.com'
+    email = 'something@mail.com'
 ```
 
 2. `user_to_json` that will receive a `User` and will return the object as a string in JSON format. Be aware of the Python types that can be converted to JSON!
