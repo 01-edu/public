@@ -1,38 +1,67 @@
 ## map-markers
 
-### Introduction
+In this project, your team will create an app that uses the `Google Maps API`. The app must allow users to save and display their favorite places on a map.
 
-Create an app where you can save the list of your favorite places and show them in the app.
+### Instructions
 
-In this raid, your team should implement an app which uses google maps.
+The app should have the following functionality:
 
-### Objective
+A `TabBar` with three screens:
 
-Implement following functionality:
+- A `Maps` screen like [google maps](https://codelabs.developers.google.com/codelabs/google-maps-in-flutter#0) where the user can see their favorite places marked on the map with an `info view`.
 
-- Tabbar app with 3 screens:
-  - Google maps screen [example](https://codelabs.developers.google.com/codelabs/google-maps-in-flutter#0)
-  - List of your favorite places.
-  - Info about your app. Names of the authors, their email adresses, and general description of what your application does.
+- A `favorite places` screen which will have a list of the user's favorite places.
 
-On map there must be:
+- An `InfoPage` screen that displays the names and email addresses of the app's authors, along with a general description of the app.
 
-- Your favorite places as markers (with infoView) (places must be saved after reopenig the app)
-- When some place is tapped, open dialog window with title and description textfields
-- A button, which will navigate to current position of device
-- Search bar to search for addresses, places, use google places API. When suggested address is tapped on, navigate map to that place
+**On the Map screen:**
 
-On FavouritesList Screen:
+- The user's favorite places should be displayed as `markers` on the map (with an info view) and saved so that they persist after the app is closed.
+- When a `marker` is tapped, a dialog window should open displaying the place's title/name.
+- A button should be provided to navigate to the user's current location.
+- A search bar needs to be included in order to allow the user to search for addresses and places, you can use the `Google Places API`. When a suggested address is tapped, the map should navigate to that place.
 
-- List of favorite places, which you can delete
+<center>
+<img src="./resources/map.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
+<img src="./resources/favorite-in-map.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
+<img src="./resources/search.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
+</center>
 
-On InfoPage Screen:
+**On the Favorite Places screen:**
 
-- Your names as developers, year, etc
+- The user's list of favorite places should be displayed and the user should be able to delete them.
+<center>
+<img src="./resources/favorites.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
+<img src="./resources/delete.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
 
-- Note: don't forget about info.plist:
+Here when the user slides it to the right it deletes the favorite place.
 
+</center>
+
+**On the Info screen:**
+
+- The names and email addresses of the app's developers should be displayed, along with the year of development and any other relevant information.
+
+<center>
+<img src="./resources/infopage.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
+</center>
+
+### Hints
+
+> Here is how to get your [Google Maps API key](https://blog.logrocket.com/google-maps-flutter/) and use it.
+
+> Note: Don't forget to add the following to your `AndroidManifest.xml` file as well as your API key:
+
+```xml
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 ```
-NSLocationWhenInUseUsageDescription
-NSLocationAlwaysUsageDescription
+
+> Note: Don't forget to add the following to your `info.plist` file as well as your API key in `AppDelegate.swift`:
+
+```xml
+<key>NSLocationWhenInUseUsageDescription</key>
+<key>NSLocationAlwaysUsageDescription</key>
 ```
+
+These entries are required in order to use the device's location services.
