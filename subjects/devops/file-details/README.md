@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a script `file-details.sh`, which will allow you to see the files inside the folder `hard-perms`, this way:
+Create a script `file-details.sh`, which will allow you to see the files inside the folder `hard-perm`, this way:
 
 Expected output:
 
