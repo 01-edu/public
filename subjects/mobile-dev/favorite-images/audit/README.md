@@ -14,11 +14,11 @@
 
 ###### Does the camera work both on `iOS` and `Android`?
 
-###### Does the app load chosen image?
+###### Does the app load the chosen image?
 
-###### Does the image opens in `full-size` once taped?
+###### Does the image open in `full-size` once taped?
 
-###### Can you `zoom in and out` the image?
+###### Can you `zoom in` and `zoom out` the image?
 
 #### Bonus
 
