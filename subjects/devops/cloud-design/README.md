@@ -4,7 +4,7 @@
 
 ### Objective
 
-This subject aims to challenge your understanding of DevOps and cloud technologies by providing a hands-on experience in deploying and managing a microservices-based application on a cloud platform. You will use your `crud-master` project source code, your mission is to:
+This subject aims to challenge your understanding of DevOps and cloud technologies by providing hands-on experience in deploying and managing a microservices-based application on a cloud platform. You will use your `crud-master` project source code, your mission is to:
 
 - Set up and configure a cloud environment for deploying microservices.
 - Deploy the provided microservices application to the cloud environment.
@@ -13,7 +13,7 @@ This subject aims to challenge your understanding of DevOps and cloud technologi
 
 ### Tips
 
-Before starting this project, you should have knowledge of the following:
+Before starting this project, you should know the following:
 
 - Basic DevOps concepts and practices.
 - Familiarity with containerization and orchestration tools, such as Docker and Kubernetes.
@@ -56,7 +56,7 @@ The goal of the roleplay question session is to:
 
 - Assess your understanding of the concepts and technologies used in the project.
 - Test your ability to communicate effectively and explain your decisions.
-- Challenge the you to think critically about your solution and consider alternative approaches.
+- Challenge you to think critically about your solution and consider alternative approaches.
 
 Prepare for a roleplay question session where you will assume the role of a Cloud engineer presenting your solution to your team or a stakeholder. You should be ready to answer questions and provide explanations about your decisions, architecture, and implementation.
 
@@ -70,7 +70,7 @@ Design the architecture for your cloud-based microservices application. You are 
 
 3. `Security`: Incorporate security best practices into your architecture, such as encrypting data at rest and in transit, using private networks, and securing API endpoints.
 
-4. `Cost-effectiveness`: Be mindful of the costs associated with the services and resources you select. Aim to design an architecture that is cost-effective without compromising performance, security, or scalability.
+4. `Cost-effectiveness`: Be mindful of the costs associated with the services and resources you select. Aim to design a cost-effective architecture without compromising performance, security, or scalability.
 
 5. `Simplicity`: Keep your architecture as simple as possible, while still meeting the project requirements. Avoid overcomplicating the design with unnecessary components or services.
 
@@ -82,7 +82,7 @@ Select a cloud provider (AWS, Azure, GCP, or any other provider of your choice) 
 
 > While working on this project, it is essential to be aware of the potential costs associated with using cloud resources. Each cloud provider offers various services with different pricing models, and it can be easy to incur unexpected charges if you don't carefully manage your resources.
 
-#### Cost managment:
+#### Cost management:
 
 1. `Understand the pricing model`: Familiarize yourself with the pricing model of the cloud provider and services you are using. Be aware of any free tiers, usage limits, and pay-as-you-go pricing structures.
 
@@ -134,7 +134,7 @@ If you complete the mandatory part successfully and you still have free time, yo
 
 - Use Function as a Service in your solution.
 
-- Use CDN to optimise your solution.
+- Use CDN to optimize your solution.
 
 Challenge yourself!
 

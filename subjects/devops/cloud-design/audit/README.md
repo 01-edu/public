@@ -45,7 +45,7 @@ You can ask them the following questions:
 
 ###### Did the students have the ability to communicate effectively and explain their decisions?
 
-###### Did the students is capable to think critically about their solution and consider alternative approaches?
+###### Did the students are capable to think critically about their solution and consider alternative approaches?
 
 Provide feedback to the student on their performance in the roleplay question session, highlighting their strengths and areas for improvement. Offer suggestions for further learning and resources to help them continue to develop their DevOps, cloud, and communication skills.
 
@@ -59,7 +59,7 @@ Review the student's architecture design, ensuring that it meets the project req
 
 3. `Security`: Incorporate security best practices into the architecture, such as encrypting data at rest and in transit, using private networks, and securing API endpoints.
 
-4. `Cost-effectiveness`: Be mindful of the costs associated with the services and resources you select. Aim to design an architecture that is cost-effective without compromising performance, security, or scalability.
+4. `Cost-effectiveness`: Be mindful of the costs associated with the services and resources you select. Aim to design a cost-effective architecture without compromising performance, security, or scalability.
 
 5. `Simplicity`: Keep the architecture as simple as possible, while still meeting the project requirements. Avoid overcomplicating the design with unnecessary components or services.
 
@@ -67,7 +67,7 @@ Review the student's architecture design, ensuring that it meets the project req
 
 ###### Did the students have the ability to design a cost-effective architecture that meets the project requirements?
 
-###### Did the choice of services and architectural patterns that align with best practices for scalability, availability, and security?
+###### Did the choice of services and architectural patterns align with best practices for scalability, availability, and security?
 
 Provide feedback on their design choices, highlighting areas where they excelled and areas where improvements can be made.
 
@@ -103,7 +103,7 @@ The Documentation must exist in the `README.md` file!
 
 ###### Do the monitoring and logging dashboards provide useful insights into the application's performance and health?
 
-###### Are alerting mechanisms in place to notify the team of potential issues in a timely manner?
+###### Are alerting mechanisms in place to notify the team of potential issues on time?
 
 ##### Assess optimization efforts
 
