@@ -46,7 +46,7 @@ $
 
 ### Hints
 
-- In order to succeed your script should print **exactly** the same output as the one in the usage section. So `Add a new candidate`, `name: ` and `age: ` should be written in the exact same way and order.
+- In order to succeed your script should print **exactly** the same output as the one in the usage section. So `Add a new candidate:`, `name: ` and `age: ` should be written in the exact same way and order.
 
 - Tough it is not mandatory you could use `if __name__ == '__main__':` to specify the entrypoint of your script.
 
