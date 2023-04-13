@@ -4,7 +4,7 @@
 
 ### Objective
 
-This subject aims to challenge your understanding of DevOps and cloud technologies by providing hands-on experience in deploying and managing a microservices-based application on a cloud platform. You will use your `crud-master` project source code, your mission is to:
+This subject aims to challenge your understanding of DevOps and cloud technologies by providing hands-on experience in deploying and managing a microservices-based application on a cloud platform, your mission is to:
 
 - Set up and configure a cloud environment for deploying microservices.
 - Deploy the provided microservices application to the cloud environment.
@@ -60,7 +60,16 @@ The goal of the roleplay question session is to:
 
 Prepare for a roleplay question session where you will assume the role of a Cloud engineer presenting your solution to your team or a stakeholder. You should be ready to answer questions and provide explanations about your decisions, architecture, and implementation.
 
-### Design the Architecture
+### Architecture
+
+By using your solutions in your previous projects `crud-master`, `play-with-containers`, and `orchestrator` you have to design and deploy infrastructure in a cloud platform of your choice and you must respect the requirements for the project consisting of the following components:
+
+- `inventory-database container` is a PostgreSQL database server that contains your inventory database, it must be accessible via port `5432`.
+- `billing-database container` is a PostgreSQL database server that contains your billing database, it must be accessible via port `5432`.
+- `inventory-app container` is a Node.js server that contains your inventory-app code running and connected to the inventory database and accessible via port `8080`.
+- `billing-app container` is a Node.js server that contains your billing-app code running and connected to the billing database and consuming the messages from the RabbitMQ queue, and it can be accessed via port `8080`.
+- `RabbitMQ container` is a RabbitMQ server that contains the queue.
+- `api-gateway-app container` is a Node.js server that contains your api-gateway-app code running and forwarding the requests to the other services and it's accessible via port `3000`.
 
 Design the architecture for your cloud-based microservices application. You are free to choose the services and architectural patterns that best suit your needs, as long as they meet the project requirements and remain within a reasonable cost range. Consider the following when designing your architecture:
 
@@ -74,15 +83,13 @@ Design the architecture for your cloud-based microservices application. You are 
 
 5. `Simplicity`: Keep your architecture as simple as possible, while still meeting the project requirements. Avoid overcomplicating the design with unnecessary components or services.
 
-### Instructions
-
-#### Choose a cloud platform:
+### Choose a cloud platform:
 
 Select a cloud provider (AWS, Azure, GCP, or any other provider of your choice) and create an account.
 
 > While working on this project, it is essential to be aware of the potential costs associated with using cloud resources. Each cloud provider offers various services with different pricing models, and it can be easy to incur unexpected charges if you don't carefully manage your resources.
 
-#### Cost management:
+### Cost management:
 
 1. `Understand the pricing model`: Familiarize yourself with the pricing model of the cloud provider and services you are using. Be aware of any free tiers, usage limits, and pay-as-you-go pricing structures.
 
@@ -96,31 +103,31 @@ Select a cloud provider (AWS, Azure, GCP, or any other provider of your choice) 
 
 > By being aware of your cloud usage and proactively managing your resources, you can avoid unexpected costs and make the most of your cloud environment. Remember that the responsibility for cost management lies with you, and it is crucial to stay vigilant and proactive throughout the project.
 
-#### Set up the infrastructure:
+### Infrastructure as Code:
 
-Provision the necessary resources for your cloud environment using IaC tools like `Terraform` or `CloudFormation`. This includes setting up virtual machines, networking components, and storage services.
+Provision the necessary resources for your cloud environment using IaC tools like `Terraform` or `CloudFormation`. This includes setting up virtual machines, containers, networking components, and storage services.
 
-#### Containerize the microservices:
+### Containerize the microservices:
 
 Use Docker to build container images for each microservice. Make sure to optimize the Dockerfile for each service to reduce the image size and build time.
 
 > You can use your `play-with-containers` project solution.
 
-#### Deploy the application:
+### Deployment:
 
 Deploy the containerized microservices on your cloud platform using an orchestration tool like Kubernetes or AWS ECS. Ensure that the services are load-balanced and can communicate with each other securely.
 
 > You can use your `orchestrator` project solution.
 
-#### Implement monitoring and logging:
+### Monitoring and logging:
 
 Set up monitoring and logging tools to track the performance and health of your application. Use tools like Prometheus, Grafana, and ELK stack to visualize metrics and logs.
 
-#### Optimize the application:
+### Optimization:
 
 Implement auto-scaling policies to handle varying workloads and ensure high availability. Test the application under different load scenarios and adjust the resources accordingly.
 
-#### Secure the application:
+### Security:
 
 Implement security best practices, such as using HTTPS, securing API endpoints, and regularly scanning for vulnerabilities.
 
