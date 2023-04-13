@@ -142,6 +142,6 @@ Challenge yourself!
 
 Upon completing this project, you should submit the following:
 
-- Your documonation in the `README.md` file.
+- Your documentation in the `README.md` file.
 - Source code for the microservices and any scripts used for deployment.
 - Configuration files for your IaC, containerization, and orchestration tools.
