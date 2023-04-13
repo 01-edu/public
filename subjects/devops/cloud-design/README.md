@@ -105,7 +105,7 @@ Select a cloud provider (AWS, Azure, GCP, or any other provider of your choice) 
 
 ### Infrastructure as Code:
 
-Provision the necessary resources for your cloud environment using IaC tools like `Terraform` or `CloudFormation`. This includes setting up virtual machines, containers, networking components, and storage services.
+Provision the necessary resources for your cloud environment using Infrastructure as Code (IaC) tools like `Terraform` or `CloudFormation`. This includes setting up virtual machines, containers, networking components, and storage services.
 
 ### Containerize the microservices:
 
@@ -143,7 +143,7 @@ If you complete the mandatory part successfully and you still have free time, yo
 
 - Use CDN to optimize your solution.
 
-- Alerts
+- Alerts.
 
 Challenge yourself!
 
@@ -153,4 +153,4 @@ Upon completing this project, you should submit the following:
 
 - Your documentation in the `README.md` file.
 - Source code for the microservices and any scripts used for deployment.
-- Configuration files for your IaC, containerization, and orchestration tools.
+- Configuration files for your Infrastructure as Code (IaC), containerization, and orchestration tools.
