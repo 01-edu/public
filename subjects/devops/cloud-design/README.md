@@ -143,6 +143,8 @@ If you complete the mandatory part successfully and you still have free time, yo
 
 - Use CDN to optimize your solution.
 
+- Alerts
+
 Challenge yourself!
 
 ### Submission and audit
