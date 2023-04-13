@@ -6,7 +6,7 @@ Files that must be inside the repository:
 
 - A documentation in the `README.md` file.
 - Source code for the microservices and any scripts used for deployment.
-- Configuration files for your IaC, containerization, and orchestration tools.
+- Configuration files for the Infrastructure as Code (IaC), containerization, and orchestration tools.
 
 ###### Are all the required files present?
 
@@ -89,7 +89,7 @@ The Documentation must exist in the `README.md` file!
 
 ##### Evaluate the infrastructure setup
 
-###### Are the IaC tools, such as Terraform or CloudFormation, used effectively to provision and manage resources in the cloud environment?
+###### Are the Infrastructure as Code (IaC) tools, such as Terraform or CloudFormation, used effectively to provision and manage resources in the cloud environment?
 
 ###### Does the infrastructure setup follow best practices for security and resource management?
 
