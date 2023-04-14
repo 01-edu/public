@@ -4,7 +4,7 @@
 
 All scripts will have to use `try` and `except` to handle errors.
 
-The scripts should log (aka write) all actions and errors into a specific file in the `./log` directory.
+The scripts should log (aka write) all actions and errors into a specific file in the `./logs` directory.
 
 - The script `backup_manager.py` will log into `./logs/backup_manager.log`.
 - The script `backup_service.py` will log into `./logs/backup_service.log`.
