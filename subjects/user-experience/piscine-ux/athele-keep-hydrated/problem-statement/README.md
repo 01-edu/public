@@ -18,6 +18,7 @@ Based on the insights from the exercises `analytics` and `user interviews`, comm
 - Several problem statements can be possible for each persona and user journey, but for this exercise, we are guiding you towards one.
 
 - Examples of a correct problem statements:
+
   - How might we help Pierre (or your persona) measure and prepare his hydration before a race?
   - How might we make sure Pierre doesn’t get dehydrated?
   - How might we make sure Pierre drinks the cups that are offered during the race?

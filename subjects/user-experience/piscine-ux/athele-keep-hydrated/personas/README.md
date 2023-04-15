@@ -7,6 +7,7 @@
 - Add a title within the document.
 
 Use the material you got from the exercise `User interview` to build the pierre persona. The following must be present in the document:
+
 - Pierre's persona card with a picture.
 - A quote extracted from the interview scripts.
 - A description of Pierre that is a mix of Joe, Nathan, Guillaume, and Anaelle’s stories.

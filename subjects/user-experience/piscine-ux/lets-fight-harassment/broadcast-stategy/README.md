@@ -14,7 +14,7 @@ Don't forget to:
 ### Deliverables
 
 - A PDF document gathering your strategy.
-Please include:
+  Please include:
   - Who you are targeting (remember, you can focus on your hometown as well as the whole planet)
   - A few ideas about how to reach them.
   - The channels you intend to use - be specific and include the links to the groups, forums, pages, account you plan to reach.(at least 8 different channels)

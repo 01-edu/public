@@ -2,7 +2,7 @@
 
 ###### Is there a zip folder labeled as “ProjectTitle_Name_FirstName”?
 
-###### Are the deliverables labeled as  Name_FirstName_DeliverableName_Date_VersionNumber”?
+###### Are the deliverables labeled as Name_FirstName_DeliverableName_Date_VersionNumber”?
 
 ###### Are the deliverables in the correct format?
 
