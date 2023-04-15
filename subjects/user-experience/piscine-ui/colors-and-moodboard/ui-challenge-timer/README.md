@@ -8,10 +8,10 @@ Create this image on Figma:
 
 Please make sure you use:
 
-  - 2 half circles to draw the circle around the timer.
-  - Gradient to fill the main circle.
-  - Groups.
-  - Named layers.
+- 2 half circles to draw the circle around the timer.
+- Gradient to fill the main circle.
+- Groups.
+- Named layers.
 
 **Deliverable:**
 

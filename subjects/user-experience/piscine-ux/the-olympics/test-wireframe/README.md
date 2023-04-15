@@ -14,9 +14,9 @@ Don't forget to:
 ### Deliverables
 
 - A PDF document with the usability test script that includes:
-    - A greeting and onboarding paragraph.
-    - A scenario the user has to complete.
-    - A conclusion to wrap up the test and thank the user.
+  - A greeting and onboarding paragraph.
+  - A scenario the user has to complete.
+  - A conclusion to wrap up the test and thank the user.
 - Pictures of the ongoing tests.
 - A PDF document with a report on what you learnt and a list of the 5 main iterations that you'd like to do on the next version.
 

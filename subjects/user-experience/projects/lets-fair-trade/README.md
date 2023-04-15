@@ -44,7 +44,7 @@ Show a tested high-fidelity prototype.
 
 Don't forget to:
 
-- Upload the documents on Github, in a zip folder named “ProjectTitle_Name_FirstName”, with all project deliverables as follows: “Name_FirstName_DeliverableName_Date_VersionNumber”.  For example, the first deliverable can be named as “Doe_John_MidFiPrototype_05242024_V1”.
+- Upload the documents on Github, in a zip folder named “ProjectTitle_Name_FirstName”, with all project deliverables as follows: “Name_FirstName_DeliverableName_Date_VersionNumber”. For example, the first deliverable can be named as “Doe_John_MidFiPrototype_05242024_V1”.
 - Add a title within all written documents.
 - Timing: 20 minutes for the presentation and 10 minutes for Q&A.
 
@@ -75,6 +75,7 @@ Make sure:
   - The animated high-fidelity prototype (a demo-video).
   - The main feedback from usability and desirability testing.
   - The next steps of the project.
+
 - The presentation does not exceed 20 minutes.
 - Feedback forms have been shared at the beginning of the presentation.
 

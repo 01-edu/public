@@ -16,8 +16,8 @@ Open these 5 images on Figma and draw lines and grids every time you find aligne
 ### Deliverables
 
 - A Figma file including:
-    - The screens with lines on top to show grids.
-    - One page per screen or frame.
+  - The screens with lines on top to show grids.
+  - One page per screen or frame.
 
 Don't forget to:
 

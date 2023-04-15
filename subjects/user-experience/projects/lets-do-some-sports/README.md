@@ -70,14 +70,14 @@ Make sure:
     - The animated mid-fidelity prototype (a demo-video).
     - The main feedback from usability testings.
 
- - For the UI phase:
+- For the UI phase:
 
-    - A project planning, including the UI phases, the tools chosen, the timeline.
-    - A moodboard.
-    - A styleguide (colors, branding, typography, some elements of the library).
-    - The animated high-fidelity prototype (a demo-video).
-    - The main feedback from usability and desirability testing.
-    - The next steps of the project.
+  - A project planning, including the UI phases, the tools chosen, the timeline.
+  - A moodboard.
+  - A styleguide (colors, branding, typography, some elements of the library).
+  - The animated high-fidelity prototype (a demo-video).
+  - The main feedback from usability and desirability testing.
+  - The next steps of the project.
 
 - The presentation does not exceed 30 minutes.
 - Feedback forms have been shared at the beginning of the presentation.
