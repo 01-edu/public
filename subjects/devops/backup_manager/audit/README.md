@@ -99,8 +99,8 @@ $ ls
 backup_manager.py  backups/  backup_schedules.txt  backup_service.py  logs/ testing/
 $ cat logs/backup_manager.log
 [13/02/2023 18:21] Schedule created
-[13/02/2023 18:21] Show schedule list
-[13/02/2023 18:21] Backup list
+[13/02/2023 18:21] Show backups list
+[13/02/2023 18:21] Show backups list
 $ cat backup_schedules.txt
 testing;18:21;backup_test
 $ cat logs/backup_service.log
@@ -144,10 +144,10 @@ python3 ./backup_manager.py start
 
 ```console
 $ cat logs/backup_manager.log
-[14/02/2023 15:07] Error: cannot kill the service
-[14/02/2023 15:07] Error: invalid schedule format
-[14/02/2023 15:08] Error: [Errno 2] No such file or directory: "./backups"
-[14/02/2023 15:08] Error: service already running
+[14/02/2023 15:07] Error: can't stop backup_service
+[14/02/2023 15:07] Error: malformed schedul: wrong_format
+[14/02/2023 15:08] Error: can't find backups directory
+[14/02/2023 15:08] Error: backup_service already running
 $ cat logs/backup_service.log
 [14/02/2023 15:11] Error: cannot open backup_schedules
 $
