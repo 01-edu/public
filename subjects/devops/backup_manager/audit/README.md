@@ -25,7 +25,7 @@ test2;18:15;backup_test2
 
 ```bash
 $ cat logs/backup_manager.log
-[13/02/2023 17:14] Error: can't stop backup_service
+[13/02/2023 17:14] "Error: can't stop backup_service"
 ```
 
 ###### Can you confirm that the `backup_manager.log` file contains an error like the one above, stating that the service is already stopped?
