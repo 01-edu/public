@@ -76,8 +76,8 @@ $ cat logs/backup_manager.log
 
 ```bash
 mkdir testing testing2; touch testing/file1 testing/file2 testing/file3
-python3 ./backup_manager.py create "testing;[Current_hour];backup_test".
-python3 ./backup_manager.py create "testing;13:11;backup_test".
+python3 ./backup_manager.py create "testing;[Current_hour];backup_test"
+python3 ./backup_manager.py create "testing;13:11;backup_test"
 python3 ./backup_manager.py start
 python3 ./backup_manager.py backups
 ```
