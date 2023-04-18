@@ -1,35 +1,36 @@
 #### General
 
-##### Check the Repo content
+##### Check the Repo content.
 
 Files that must be inside the repository:
 
-- A documentation in the `README.md` file.
+- Your documentation in the `README.md` file.
 - Source code for the microservices and any scripts used for deployment.
-- Configuration files for the Infrastructure as Code (IaC), containerization, and orchestration tools.
+- Configuration files for your Infrastructure as Code (IaC), containerization, and orchestration tools.
 
 ###### Are all the required files present?
 
-##### Play the role of a stakeholder
+##### Play the role of a stakeholder.
 
-Conduct a roleplay question session with the students, asking them to explain their solution as if they were presenting it to a team or a stakeholder. Evaluate their understanding of the concepts and technologies used in the project, as well as their ability to communicate effectively and think critically about their solution.
-You can ask them the following questions:
+As part of the evaluation process, conduct a simulated real-world scenario where the students assume the role of a Cloud engineer and explain their solution to a team or stakeholder. Evaluate their understanding of the concepts and technologies used in the project, as well as their ability to communicate effectively and think critically about their solution.
 
-- What is cloud and what are its benefits?
+During the roleplay, ask them the following questions:
 
-- Why we should deploy the solution in the cloud instead of on-premises?
+- What is the cloud, and what are its benefits?
+
+- Why should we deploy the solution in the cloud, instead of on-premises?
 
 - How did you decide on the cloud provider for this project, and what factors did you consider when making that decision?
 
 - Can you explain the architecture of your cloud-based microservices application and how the different components interact with each other?
 
-- Can you explain the cost of the solution and how you control it and make sense of it?
+- How did you manage the cost of your solution, and what strategies did you use to optimize it?
 
-- How did you ensure that the application is secure, and what security best practices did you implement?
+- How did you ensure that the application is secure, and what security best practices did you implement to protect your application?
 
-- What monitoring and logging tools did you use, and how do they help you identify and troubleshoot issues with the application?
+- What monitoring and logging tools did you use, and how did they help you identify and troubleshoot issues with your application?
 
-- Can you describe the auto-scaling policies you implemented and how they help the application handle varying workloads?
+- Can you explain the auto-scaling policies you implemented and how they allow your application to handle varying workloads?
 
 - How did you optimize the Docker images for each microservice, and how did it impact build times and image sizes?
 
@@ -37,7 +38,7 @@ You can ask them the following questions:
 
 - How can your solution be extended or modified to handle future requirements, such as adding new microservices or migrating to a different cloud provider?
 
-- Can you discuss any challenges you faced during the project and how you overcame them?
+- What challenges did you encounter during the project, and how did you overcome them?
 
 - How did you ensure that your documentation is clear and complete, and what steps did you take to make it easy for others to understand and maintain your solution?
 
@@ -45,11 +46,9 @@ You can ask them the following questions:
 
 ###### Did the students have the ability to communicate effectively and explain their decisions?
 
-###### Did the students are capable to think critically about their solution and consider alternative approaches?
+###### Are the students capable to think critically about their solution and consider alternative approaches?
 
-Provide feedback to the student on their performance in the roleplay question session, highlighting their strengths and areas for improvement. Offer suggestions for further learning and resources to help them continue to develop their DevOps, cloud, and communication skills.
-
-##### Review the Architecture Design
+##### Review the Architecture Design.
 
 Review the student's architecture design, ensuring that it meets the project requirements:
 
@@ -69,17 +68,13 @@ Review the student's architecture design, ensuring that it meets the project req
 
 ###### Did the choice of services and architectural patterns align with best practices for scalability, availability, and security?
 
-Provide feedback on their design choices, highlighting areas where they excelled and areas where improvements can be made.
+##### Check the student documentation in the `README.md` file.
 
-##### Check the Student Documentation
-
-The Documentation must exist in the `README.md` file!
-
-###### Did the README.md file contains all the required information about the solution (prerequisites, configuration, setup, usage, ...)?
+###### Does the `README.md` file contain all the necessary information about the solution (prerequisites, setup, configuration, usage, ...)?
 
 ###### Is the documentation provided by the student clear and complete, including well-structured diagrams and thorough descriptions?
 
-##### Verify the deployment
+##### Verify the deployment.
 
 ###### Are all the microservices running as expected in the cloud environment, with no errors or connectivity issues?
 
@@ -87,37 +82,33 @@ The Documentation must exist in the `README.md` file!
 
 ###### Are the microservices communicating with each other securely, using proper authentication and encryption methods?
 
-##### Evaluate the infrastructure setup
+##### Evaluate the infrastructure setup.
 
-###### Are the Infrastructure as Code (IaC) tools, such as Terraform or CloudFormation, used effectively to provision and manage resources in the cloud environment?
+###### Are the `Infrastructure as Code (IaC)` tools, such as `Terraform` or `CloudFormation`, used effectively to provision and manage resources in the cloud environment?
 
-###### Does the infrastructure setup follow best practices for security and resource management?
+###### Does the infrastructure setup follow the best practices for security and resource management?
 
-##### Assess containerization and orchestration
+##### Assess containerization and orchestration.
 
 ###### Are the Dockerfiles optimized for efficient container builds, and do they follow best practices?
 
 ###### Is the orchestration setup (e.g., Kubernetes manifests or AWS ECS task definitions) configured correctly and according to best practices?
 
-##### Evaluate monitoring and logging
+##### Evaluate monitoring and logging.
 
-###### Do the monitoring and logging dashboards provide useful insights into the application's performance and health?
+###### Do monitoring and logging dashboards provide useful insights into the application performance and health?
 
-###### Are alerting mechanisms in place to notify the team of potential issues on time?
-
-##### Assess optimization efforts
+##### Assess optimization efforts.
 
 ###### Are the auto-scaling policies configured correctly to handle varying workloads?
 
-###### Do the application and resource allocation remain efficient under different load scenarios?
+###### Does the application and resource allocation remain efficient under different load scenarios?
 
-##### Check security best practices
+##### Check security best practices.
 
 ###### Has the student implemented security best practices, such as using HTTPS, securing API endpoints, and regularly scanning for vulnerabilities?
 
-##### Give your Feedback
-
-Provide constructive feedback to the student on their solution, highlighting areas where they excelled and areas where improvements can be made. Offer suggestions for further learning and resources to help them continue to develop their DevOps and cloud skills.
+#### Bonus
 
 ##### Review Cloud Certification Preparation Efforts
 
@@ -129,7 +120,7 @@ Verify that the student has chosen a cloud platform certification to pursue and 
 
 ###### +Is the student prepared and confident in taking the certification exam, and can they apply their knowledge to real-world scenarios?
 
-#### Bonus
+###### +Are alerting mechanisms in place to notify the team of potential issues on time?
 
 ###### +Did the student add any optional bonus?
 
