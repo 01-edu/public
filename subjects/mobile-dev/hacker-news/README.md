@@ -1,36 +1,31 @@
-# Hacker news
+## Hacker news
 
-### Introduction
+Hacker News is a social news website that mainly focuses on computer science and entrepreneurship. The objective of this task is to create a client with all the main features of the [HackerNewsAPI](https://github.com/HackerNews/API).
 
-Create your own hackernews [app](https://news.ycombinator.com/)!
+### Instructions
 
-Hacker News is a social news website, which mainly focusses on Computer Science and Entrepreneurship. You will make a client consisting of all the main features of the website.
+Your app should have the following functionalities:
 
-### Objective
+- Login button. Once you tap it a log in page must be displayed.
+- Show a list of all fetched `posts` on the main screen.
+- Each `post` should have an `upvote` option for voting.
+- Each `post` should display the total number of votes and comments they have.
+- Display the `username` of the `post` creator.
+- Display the submission time of the `post`.
+- Open the link in a [Webview](https://codelabs.developers.google.com/codelabs/flutter-webview#0) when a `post` is tapped.
+  - The user must be able to return to the main page once in the `webview`.
 
-Your objective for this raid is to create UI for [HackerNewsAPI](https://github.com/HackerNews/API).
+On the website, users can `Post`, `Comment`, or `Reply` **only when they have an account**.
 
-Your app should have following functionality:
+- You have to register using the [website](https://news.ycombinator.com/). In other words, you must be able to login with your actual login and password from the Hacker News website.
+- Login using your app. Observe how the login is done on the [website](https://news.ycombinator.com/) and emulate it.
 
-- Show list of all fetched posts on main screen:
-  - Login button
-  - Each Post has an Upvote option to vote the post
-  - Each Post displays Total Votes and Total Comments on them
-  - Displays the Username of the Creator
-  - Displays the Submission Time
-  - Open link in a [Webview](https://codelabs.developers.google.com/codelabs/flutter-webview#0) when post is tapped.
+When users are logged in, they should be able to:
 
-On the website, we can Post, Comment, or reply **only when we have an account**.
+- `Create` new posts which will have:
+  - `title`, `URL`, and a `description`.
+- `Delete` their own posts.
+- `Upvote` or hide/remove their votes.
+- `Log out`.
 
-- You have to register using the [website](https://news.ycombinator.com/).
-- Login using your app. Observe how log in is done on the [website](https://news.ycombinator.com/), and emulate it.
-
-When users logged in, they should be able to:
-
-- Create new posts. They should have:
-  - Title, URL and the Description.
-- Delete own post.
-- Make up-vote or hide their vote.
-- Log out.
-
-- Note: if user is not loggen in, but tries to access above mentioned actions, send user to login page of the app.
+> Note: If the user is not logged in but tries to access any of the above-mentioned actions, the user should be sent to the login page of the app.
