@@ -1,33 +1,64 @@
 ## Cloud-Design
 
-![Cloud-Design](pictures/cloud-design.jpg)
+<center>
+<img src="./resources/cloud-design.jpg?raw=true" style = "width: 600px !important; height: 600px !important;"/>
+</center>
 
 ### Objective
 
-This subject aims to challenge your understanding of DevOps and cloud technologies by providing hands-on experience in deploying and managing a microservices-based application on a cloud platform, your mission is to:
+The objective of this project is to challenge your understanding of DevOps and cloud technologies by providing hands-on experience in deploying and managing a microservices-based application on a cloud platform. Your mission is to:
 
 - Set up and configure a cloud environment for deploying microservices.
 - Deploy the provided microservices application to the cloud environment.
-- Implement monitoring, logging, and scaling to ensure the application runs efficiently.
+- Implement monitoring, logging, and scaling to ensure that the application runs efficiently.
 - Optimize the application to handle varying workloads and unexpected events.
 
-### Tips
+### Roleplay
 
-Before starting this project, you should know the following:
+To further enhance the learning experience and assess your knowledge, a roleplay question session will be included as part of the Cloud-Design Project. This section will involve your answering a series of questions in a simulated real-world scenario, where you will assume the role of a Cloud engineer explaining your solution to a team or a stakeholder.
 
-- Basic DevOps concepts and practices.
-- Familiarity with containerization and orchestration tools, such as Docker and Kubernetes.
-- Understanding of cloud platforms, such as AWS, Azure, or GCP.
-- Familiarity with Infrastructure as Code (IaC) tools, such as Terraform or CloudFormation.
-- Knowledge of monitoring and logging tools, such as Prometheus, Grafana, and ELK stack.
+To enhance the learning experience and assess your knowledge, a roleplay question session will be included as part of the Cloud-Design Project. This section will involve answering a series of questions in a simulated real-world scenario where you assume the role of a Cloud engineer explaining your solution to a team or stakeholder.
 
-> Any lack of understanding of the concepts of this project may affect the difficulty of future projects, take your time to understand all concepts.
+The goal of the roleplay question session is to:
 
-> Be curious and never stop searching!
+- Assess your understanding of the concepts and technologies used in the project.
+- Test your ability to communicate effectively and explain your decisions.
+- Challenge you to think critically about your solution and consider alternative approaches.
+
+Prepare for a roleplay question session where you will assume the role of a Cloud engineer presenting your solution to your team or a stakeholder. You should be ready to answer questions and provide explanations about your decisions, architecture, and implementation.
+
+### Architecture
+
+By using your solutions in your previous projects `crud-master`, `play-with-containers`, and `orchestrator` you have to design and deploy the infrastructure in a cloud platform of your choice and you must respect the requirements for the project consisting of the following components:
+
+- `inventory-database container` is a PostgreSQL database server that contains your inventory database, it must be accessible via port `5432`.
+- `billing-database container` is a PostgreSQL database server that contains your billing database, it must be accessible via port `5432`.
+- `inventory-app container` is a Node.js server that contains your inventory-app code running and connected to the inventory database and accessible via port `8080`.
+- `billing-app container` is a Node.js server that contains your billing-app code running and connected to the billing database and consuming the messages from the RabbitMQ queue, and it can be accessed via port `8080`.
+- `RabbitMQ container` is a RabbitMQ server that contains the queue.
+- `api-gateway-app container` is a Node.js server that contains your "api-gateway-app" code running and forwarding the requests to the other services and it's accessible via port `3000`.
+
+Design the architecture for your cloud-based microservices application. You are free to choose the services and architectural patterns that best suit your needs, as long as they meet the project requirements and remain within a reasonable cost range. Consider the following when designing your architecture:
+
+1. `Scalability`: Ensure that your architecture can handle varying workloads and can scale up or down as needed.
+
+2. `Availability`: Design your architecture to be fault-tolerant and maintain high availability, even in the event of component failures.
+
+3. `Security`: Incorporate security best practices into your architecture, such as encrypting data at rest and in transit, using private networks, and securing API endpoints.
+
+4. `Cost-effectiveness`: Be mindful of the costs associated with the services and resources you select. Aim to design a cost-effective architecture without compromising performance, security, or scalability.
+
+5. `Simplicity`: Keep your architecture as simple as possible, while still meeting the project requirements. Avoid overcomplicating the design with unnecessary components or services.
+
+### Choose a cloud platform:
+
+Select a cloud provider (AWS, Azure, GCP, or any other provider of your choice) and create an account.
+
+> While working on this project, it is essential to be aware of the potential costs associated with using cloud resources. Each cloud provider offers various services with different pricing models, and it can be easy to incur unexpected charges if you don't carefully manage your resources.
 
 ### Cloud Certification Preparation (optional)
 
-Choose a popular cloud platform certification to pursue, based on the platform you will for this project or your area of interest. Study the core concepts, services, and best practices for the chosen platform, and use the provided resources to help prepare for the certification exam.
+Choose a popular cloud platform certification to pursue, based on the platform you will use for this project or your area of interest. Study the core concepts, services, and best practices for the chosen platform, and use the provided resources to help prepare for the certification exam.
 
 #### Popular Fundamental Cloud Platform Certifications:
 
@@ -48,46 +79,6 @@ Choose a popular cloud platform certification to pursue, based on the platform y
 - [Google Cloud Associate Cloud Engineer Exam Guide](https://cloud.google.com/certification/cloud-engineer)
 - [Google Cloud Associate Cloud Engineer Learning Path](https://cloud.google.com/training/cloud-engineer)
 - [Google Cloud Architecture Framework](https://cloud.google.com/architecture/framework)
-
-### Roleplay
-
-To further enhance the learning experience and assess your knowledge, a roleplay question session will be included as part of the Cloud-Design Project. This section will involve your answering a series of questions in a simulated real-world scenario, where you will assume the role of a Cloud engineer explaining your solution to a team or a stakeholder.
-The goal of the roleplay question session is to:
-
-- Assess your understanding of the concepts and technologies used in the project.
-- Test your ability to communicate effectively and explain your decisions.
-- Challenge you to think critically about your solution and consider alternative approaches.
-
-Prepare for a roleplay question session where you will assume the role of a Cloud engineer presenting your solution to your team or a stakeholder. You should be ready to answer questions and provide explanations about your decisions, architecture, and implementation.
-
-### Architecture
-
-By using your solutions in your previous projects `crud-master`, `play-with-containers`, and `orchestrator` you have to design and deploy infrastructure in a cloud platform of your choice and you must respect the requirements for the project consisting of the following components:
-
-- `inventory-database container` is a PostgreSQL database server that contains your inventory database, it must be accessible via port `5432`.
-- `billing-database container` is a PostgreSQL database server that contains your billing database, it must be accessible via port `5432`.
-- `inventory-app container` is a Node.js server that contains your inventory-app code running and connected to the inventory database and accessible via port `8080`.
-- `billing-app container` is a Node.js server that contains your billing-app code running and connected to the billing database and consuming the messages from the RabbitMQ queue, and it can be accessed via port `8080`.
-- `RabbitMQ container` is a RabbitMQ server that contains the queue.
-- `api-gateway-app container` is a Node.js server that contains your api-gateway-app code running and forwarding the requests to the other services and it's accessible via port `3000`.
-
-Design the architecture for your cloud-based microservices application. You are free to choose the services and architectural patterns that best suit your needs, as long as they meet the project requirements and remain within a reasonable cost range. Consider the following when designing your architecture:
-
-1. `Scalability`: Ensure that your architecture can handle varying workloads and can scale up or down as needed.
-
-2. `Availability`: Design your architecture to be fault-tolerant and maintain high availability, even in the event of component failures.
-
-3. `Security`: Incorporate security best practices into your architecture, such as encrypting data at rest and in transit, using private networks, and securing API endpoints.
-
-4. `Cost-effectiveness`: Be mindful of the costs associated with the services and resources you select. Aim to design a cost-effective architecture without compromising performance, security, or scalability.
-
-5. `Simplicity`: Keep your architecture as simple as possible, while still meeting the project requirements. Avoid overcomplicating the design with unnecessary components or services.
-
-### Choose a cloud platform:
-
-Select a cloud provider (AWS, Azure, GCP, or any other provider of your choice) and create an account.
-
-> While working on this project, it is essential to be aware of the potential costs associated with using cloud resources. Each cloud provider offers various services with different pricing models, and it can be easy to incur unexpected charges if you don't carefully manage your resources.
 
 ### Cost management:
 
@@ -133,17 +124,31 @@ Implement security best practices, such as using HTTPS, securing API endpoints, 
 
 ### Documentation
 
-In a `README.md` file create clear and concise documentation for your architecture, including diagrams, descriptions of the components, and the rationale behind your design choices.
+Create a `README.md` file that provides comprehensive documentation for your architecture, which must include well-structured diagrams, thorough descriptions of components, and an explanation of your design decisions, presented in a clear and concise manner. Make sure it contains all the necessary information about the solution (prerequisites, setup, configuration, usage, ...). This file must be submitted as part of the solution for the project.
+
+### Hints
+
+Before starting this project, you should know the following:
+
+- Basic DevOps concepts and practices.
+- Familiarity with containerization and orchestration tools, such as Docker and Kubernetes.
+- Understanding of cloud platforms, such as AWS, Azure, or GCP.
+- Familiarity with Infrastructure as Code (IaC) tools, such as Terraform or CloudFormation.
+- Knowledge of monitoring and logging tools, such as Prometheus, Grafana, and ELK stack.
+
+> Any lack of understanding of the concepts of this project may affect the difficulty of future projects, take your time to understand all concepts.
+
+> Be curious and never stop searching!
 
 ### Bonus
 
 If you complete the mandatory part successfully and you still have free time, you can implement anything that you feel deserves to be a bonus, for example:
 
-- Use Function as a Service in your solution.
+- Use `Function as a Service (FaaS)` in your solution.
 
-- Use CDN to optimize your solution.
+- Use `Content Delivery Network (CDN)` to optimize your solution.
 
-- Alerts.
+- Implementing alert systems to ensure your application runs smoothly.
 
 Challenge yourself!
 
