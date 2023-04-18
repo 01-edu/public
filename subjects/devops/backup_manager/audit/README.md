@@ -135,7 +135,7 @@ $ cat logs/backup_service.log
 ##### Run `python3 backup_manager.py stop` and then `rm -dr logs backups backup_schedules.txt`. After that run the following commands:
 
 ```bash
-python3 backup_manager.py stop
+python3 ./backup_manager.py stop
 python3 ./backup_manager.py create "wrong_format"
 python3 ./backup_manager.py backups
 python3 ./backup_manager.py start
