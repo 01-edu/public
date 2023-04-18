@@ -145,7 +145,7 @@ python3 ./backup_manager.py start
 ```console
 $ cat logs/backup_manager.log
 [14/02/2023 15:07] Error: can't stop backup_service
-[14/02/2023 15:07] Error: malformed schedul: wrong_format
+[14/02/2023 15:07] Error: malformed schedule: wrong_format
 [14/02/2023 15:08] Error: can't find backups directory
 [14/02/2023 15:08] Error: backup_service already running
 $ cat logs/backup_service.log
