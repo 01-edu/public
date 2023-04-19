@@ -10,6 +10,8 @@ You will also have to create a second small checker program.
 
 You have to create at least two process file of your own, that is not a copy/paste of the ones provided.
 
+> For this project you may use any compiled language (like C, Rust, Go or other).
+
 ### Introduction
 
 You may have already seen a project in which all tasks are linked, according to their respective dependencies and restrictions.
