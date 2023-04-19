@@ -12,7 +12,7 @@ Create the following functions:
 
 - `filter5Vowels`: accepts an array of strings, and returns only those which contain at least 5 of any vowels (a,e,i,o,u).
 
-- `filter1DistinctVowel`: accepts an array of strings, and returns only those which contain distinct vowels (a,e,i,o,u). For example, `"Alabama"` contains only 1 distinct vowel `"a"`.
+- `filter1DistinctVowel`: accepts an array of strings, and returns only those which contain only one distinct vowel (a,e,i,o,u). For example, `"Alabama"` contains only 1 distinct vowel `"a"`.
 
 - `multiFilter`: accepts an array of objects, and returns only those which:
   - the key `capital` contains at least 8 characters.
