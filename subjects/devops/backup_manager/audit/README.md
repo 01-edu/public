@@ -57,7 +57,13 @@ $ python3 ./backup_manager.py list
 
 ##### Verify that the following command runs without errors: `python3 backup_manager.py start`.
 
-###### Can you confirm that the `backup_service.py` process is running? (For example you could use `ps -ef | grep backup_service`).
+###### Can you confirm that the `backup_service.py` process is running? (For example you could use `ps -ef | grep backup_service`). Check the example bellow:
+
+```bash
+$ python3 ./backup_manager.py start
+$ -ps -ef | grep backup_service
+user   1520028    2736  0 18:30 ?        00:00:00 python3 ./backup_service.py start &
+```
 
 ##### Now run the command `python3 backup_manager.py start` again.
 
@@ -107,7 +113,16 @@ $ cat logs/backup_service.log
 [13/02/2023 18:21] Backup done for testing in backups/backup_test.tar
 ```
 
-##### Follow the example above and then open the `backup_test.tar` file to ensure that the backup process was successful. Verify that the files are not empty or damaged and that it matches the original directory.
+##### Follow the example above and then open the `backup_test.tar` file to ensure that the backup process was successful. Verify that the files are not empty or damaged and that it matches the original directory. The result should be similar to the following example:
+
+```console
+$ ls
+backup_test.tar
+$ tar -tvf backup_test.tar
+drwxrwxr-x user/user     0 2023-04-19 10:23 testing/
+-rw-rw-r-- user/user     0 2023-04-19 10:23 testing/1
+-rw-rw-r-- user/user     0 2023-04-19 10:23 testing/2
+```
 
 ###### Was the backup created successfully?
 

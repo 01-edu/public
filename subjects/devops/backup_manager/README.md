@@ -148,6 +148,23 @@ backup_test.tar  office_docs.tar  personal_data.tar
 
 > There is many ways to run tasks in background and to perform actions on a specific time, the implementation proposed in this exercise is good for learning but should not be your preferred choice for production environments.
 
+**.tar files**
+
+In Linux, tar is a command-line utility used to create, manipulate and extract .tar (tape archive) files. Here are some common operations you can perform with .tar files using the tar command:
+
+- To create a .tar file:
+  `tar -cvf archive.tar file1 file2 directory1/`
+- To extract the contents of a .tar file:
+  `tar -xvf archive.tar`
+- To extract a specific file from a .tar file:
+  `tar -xvf archive.tar file1`
+- To compress a .tar file using gzip:
+  `tar -cvzf archive.tar.gz file1 file2 directory1/`
+- To list the contents of a tar file:
+  `tar tf archive.tar`
+- To list the contents of a tar archive in a long listing format:
+  `tar -tvf archive.tar`
+
 ### References
 
 - [Error handling in Python](https://docs.python.org/3.10/tutorial/errors.html)
