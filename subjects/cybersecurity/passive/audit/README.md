@@ -12,15 +12,15 @@ Files that must be inside your repository:
 
 - Your program source code.
 
-- a README.md file, which clearly explains how to use the program.
+- A README.md file, which clearly explains how to use the program.
 
 ###### Are the required files present?
 
 ##### Ask the student to present his program to you by doing 3 tests
 
-###### Is the information entered as an argument a full name, an IP address, and an username?
+###### Is the information entered as an argument a full name, an IP address, and a username?
 
-##### Try flag "-fn" with the following command `passive -fn Jean Dupont`
+##### Try flag "-fn" with the following command `passive -fn "Jean Dupont"`
 
 ###### Does the program display the address, and the telephone number for the full name entered?
 
