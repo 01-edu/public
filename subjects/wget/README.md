@@ -2,7 +2,7 @@
 
 ### Objectives
 
-This project objective consists on recreating some functionalities of [`wget`](https://www.gnu.org/software/wget/manual/wget.html) using **Go**.
+This project objective consists on recreating some functionalities of [`wget`](https://www.gnu.org/software/wget/manual/wget.html) using a compiled language of your choice (like C, Rust, Go or other).
 
 These functionalities will consist in:
 
