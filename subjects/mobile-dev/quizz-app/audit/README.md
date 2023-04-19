@@ -8,7 +8,9 @@
 
 ###### Are there a minimum of 5 distinct categories present within the app?
 
-###### Are there at least 10 unique questions associated with each category?
+###### Are there at least 10 questions to each category and?
+
+###### Are there at least 10 questions in a quiz?
 
 ###### Are the categories named appropriately and accompanied by relevant images?
 
