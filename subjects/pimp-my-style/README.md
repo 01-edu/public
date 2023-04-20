@@ -41,7 +41,7 @@ Click 6 --> <button class="button"></button>
 
 ### Files
 
-You only need to create & submit the JS file `pimp-my-style.js`. Ee're providing you the following files to download and test locally.:
+You only need to create & submit the JS file `pimp-my-style.js`. We're providing you the following files to download and test locally.:
 
 - the HTML file [pimp-my-style.html](./pimp-my-style.html) to open in the browser, which includes:
 
