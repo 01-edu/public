@@ -52,7 +52,7 @@ Divide
 $
 ```
 
-# Notions
+### Notions
 
 [Primitive Links](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)  
 [Operations](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op1.html)

@@ -27,7 +27,7 @@ public class IntOperation {
 }
 ```
 
-# Usage
+### Usage
 
 Here is a possible ExerciseRunner.java to test your function : 
 ```java
@@ -71,6 +71,6 @@ Divide
 $ 
 ```
 
-# Notions
+### Notions
 [Primitive Links](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)  
 [Operations](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op1.html)
