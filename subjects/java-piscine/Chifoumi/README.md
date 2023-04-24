@@ -2,7 +2,7 @@
 
 ### Prerequisite
 
-Create a file `ChifoumiAction.java` and paste the following content : 
+Create a file `ChifoumiAction.java` and paste the following content :
 
 ```java
 public enum ChifoumiAction {
@@ -14,7 +14,8 @@ public enum ChifoumiAction {
 
 Create a file `Chifoumi.java`.
 
-Write a function `getActionBeatenBy` that returns the action beaten by the action in parameter : 
+Write a function `getActionBeatenBy` that returns the action beaten by the action in parameter :
+
 - `ROCK` will return `SCISSOR`
 - `PAPER` will return `ROCK`
 - `SCISSOR` will return `PAPER`
@@ -22,6 +23,7 @@ Write a function `getActionBeatenBy` that returns the action beaten by the actio
 Use the `switch` operator.
 
 ### Expected Functions
+
 ```java
 public class Chifoumi {
     public static ChifoumiAction getActionBeatenBy(ChifoumiAction chifoumiAction) {
@@ -32,7 +34,8 @@ public class Chifoumi {
 
 ### Usage
 
-Here is a possible ExerciseRunner.java to test your function : 
+Here is a possible ExerciseRunner.java to test your function :
+
 ```java
 public class ExerciseRunner {
     public static void main(String[] args) {
@@ -44,15 +47,17 @@ public class ExerciseRunner {
 ```
 
 and its output :
+
 ```shell
 $ javac *.java -d build
-$ java -cp build ExerciseRunner 
+$ java -cp build ExerciseRunner
 SCISSOR
 ROCK
 PAPER
-$ 
+$
 ```
 
 ### Notions
+
 [Switch statement](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/switch.html)  
 [Enum](https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html)

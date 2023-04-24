@@ -7,6 +7,7 @@ Create a file `StringContain.java`.
 Write a function `isStringContainedIn` that returns true if the first String as parameter is contained in the second String as parameter.
 
 ### Expected Functions
+
 ```java
 public class StringContain {
     public static boolean isStringContainedIn(String subString, String s) {
@@ -17,7 +18,8 @@ public class StringContain {
 
 ### Usage
 
-Here is a possible ExerciseRunner.java to test your function : 
+Here is a possible ExerciseRunner.java to test your function :
+
 ```java
 public class ExerciseRunner {
     public static void main(String[] args) {
@@ -29,15 +31,17 @@ public class ExerciseRunner {
 ```
 
 and its output :
+
 ```shell
 $ javac *.java -d build
-$ java -cp build ExerciseRunner 
+$ java -cp build ExerciseRunner
 true
 true
 false
-$ 
+$
 ```
 
 ### Notions
+
 [String](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html)  
 [Conditional statement](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/if.html)

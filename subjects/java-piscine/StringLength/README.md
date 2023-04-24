@@ -7,6 +7,7 @@ Create a file `StringLength.java`.
 Write a function `getStringLength` that returns the length of the string passed as parameter.
 
 ### Expected Functions
+
 ```java
 public class StringLength {
     public static int getStringLength(String s) {
@@ -17,7 +18,8 @@ public class StringLength {
 
 ### Usage
 
-Here is a possible ExerciseRunner.java to test your function : 
+Here is a possible ExerciseRunner.java to test your function :
+
 ```java
 public class ExerciseRunner {
     public static void main(String[] args) {
@@ -28,13 +30,15 @@ public class ExerciseRunner {
 ```
 
 and its output :
+
 ```shell
 $ javac *.java -d build
-$ java -cp build ExerciseRunner 
+$ java -cp build ExerciseRunner
 13
 0
-$ 
+$
 ```
 
 ### Notions
-[String]( https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html)  
+
+[String](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html)

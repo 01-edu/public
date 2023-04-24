@@ -11,6 +11,7 @@ In particular, for each substring sub in s, you need to extract the portion of t
 Write a function `CleanExtract` to solve this problem.
 
 ### Expected Functions
+
 ```java
 public class CleanExtract {
     public static String extract(String s) {
@@ -21,7 +22,8 @@ public class CleanExtract {
 
 ### Usage
 
-Here is a possible ExerciseRunner.java to test your function : 
+Here is a possible ExerciseRunner.java to test your function :
+
 ```java
 public class ExerciseRunner {
     public static void main(String[] args) {
@@ -32,15 +34,17 @@ public class ExerciseRunner {
 ```
 
 and its output :
+
 ```shell
 $ javac *.java -d build
-$ java -cp build ExerciseRunner 
+$ java -cp build ExerciseRunner
 The quick brown fox Jumps over the lazy dog.
 I love coding, Coding is fun.
-$ 
+$
 ```
 
 ### Notions
+
 [String](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html)
 [Array](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
 [Conditional statement](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/if.html)
