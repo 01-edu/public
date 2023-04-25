@@ -47,7 +47,7 @@ console.log(totalCalories(groceriesCart))
 console.log('Items with low carbs:')
 console.log(lowCarbs(groceriesCart))
 console.log('Total cart nutional facts:')
-console.log(totalCart(groceriesCart))
+console.log(cartTotal(groceriesCart))
 ```
 
 And its output:
