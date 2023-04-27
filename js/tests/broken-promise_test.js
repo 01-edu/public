@@ -1,22 +1,22 @@
 export const tests = []
 
 const testOne = async () => {
-  return (await processInfo(() => new Promise(resolve => resolve(1)))) === 2
+  return (await doubleIt(() => new Promise(resolve => resolve(1)))) === 2
 }
 
 const testFifteen = async () => {
-  return (await processInfo(() => new Promise(resolve => resolve(15)))) === 30
+  return (await doubleIt(() => new Promise(resolve => resolve(15)))) === 30
 }
 
 const testRejectNoNumbers = async () => {
   return (
-    (await processInfo(() => new Promise((resolve, reject) => reject("No numbers")))) === "Error: No numbers"
+    (await doubleIt(() => new Promise((resolve, reject) => reject("No numbers")))) === "Error: No numbers"
   )
 }
 
 const testRejectNumberless = async () => {
   return (
-    (await processInfo(() => new Promise((resolve, reject) => reject("Numberless")))) === "Error: Numberless"
+    (await doubleIt(() => new Promise((resolve, reject) => reject("Numberless")))) === "Error: Numberless"
   )
 }
 
