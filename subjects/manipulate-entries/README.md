@@ -11,8 +11,8 @@ Create 3 functions which work like the `.filter`, `.map` and `.reduce` array met
 Create 3 additional functions that use your previously created functions and take an object as input:
 
 - `totalCalories`: that will return the total calories of a cart.
-- `lowCarbs`: that leaves only those items which are lower than 50 grams.
-- `cartTotal`: that will give you the right amount of calories, proteins... and **all the other** items in your grocery cart.
+- `lowCarbs`: that leaves only those items of the cart which have less than 50 grams of carbs after calculating the total amount.
+- `cartTotal`: that will give you the right amount of calories, proteins and so on for each item in your grocery cart.
 
 > Think about the shape of `Object.entries()`
 
@@ -39,6 +39,8 @@ const nutritionDB = {
 
 Here is a possible script to test your functions:
 
+> The value for each item in `groceriesCart` is the number of grams
+
 ```js
 const groceriesCart = { orange: 500, oil: 20, sugar: 480 }
 
@@ -46,7 +48,7 @@ console.log('Total calories:')
 console.log(totalCalories(groceriesCart))
 console.log('Items with low carbs:')
 console.log(lowCarbs(groceriesCart))
-console.log('Total cart nutional facts:')
+console.log('Total cart nutritional facts:')
 console.log(cartTotal(groceriesCart))
 ```
 
@@ -57,7 +59,7 @@ Total calories:
 2112.2
 Items with low carbs:
 { oil: 20 }
-Total cart nutional facts:
+Total cart nutritional facts:
 {
   orange: {
     calories: 245,
