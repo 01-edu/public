@@ -9,7 +9,7 @@ Create the following functions:
 
 - `moveCircle`: make it fire when the mouse moves, and get the last circle created and makes it move along with the mouse.
 
-- `setBox`: which creates a box with the class `box` in the center of the page. When a circle is inside that box, it has to be purple (use the CSS global variable `var(--purple)` as its `background`). Once a circle enters the box, it is trapped inside and cannot escape.
+- `setBox`: which creates a box with the class `box` in the center of the page. When a circle is entirely inside that box, it has to be purple (use the CSS global variable `var(--purple)` as its `background`). Once a circle enters the box, it is trapped inside and cannot escape.
 
 > Hint: Be careful, a circle cannot overlap the box which has walls of `1px`. It has to be trapped **strictly** inside.
 
