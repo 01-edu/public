@@ -40,7 +40,7 @@ Not all the information is valuable at a glance, so we will only show some of th
 - Height (`.appearance.height`)
 - Weight (`.appearance.weight`)
 - Place Of Birth (`.biography.placeOfBirth`)
-- Alignement (`.biography.alignment`)
+- Alignment (`.biography.alignment`)
 
 The information must be displayed in multiple pages. Use a `<select>` input to chose the page size from `10`, `20`,`50`, `100` or `all results`.
 
