@@ -4,9 +4,9 @@
 
 Create 3 functions which work like the `.filter`, `.map` and `.reduce` array methods, but for the **entries** in the grocery cart.
 
-- `filterEntries`: filters using both key and value.
-- `mapEntries`: changes the key, the value or both.
-- `reduceEntries`: reduces the entries.
+- `filterEntries`: filters using both key and value, passed as an array (`[k, v]`).
+- `mapEntries`: changes the key, the value or both, passed as an array (`[k, v]`).
+- `reduceEntries`: reduces the entries passing keys and values as an array (`[k, v]`).
 
 Create 3 additional functions that use your previously created functions and take an object as input:
 
