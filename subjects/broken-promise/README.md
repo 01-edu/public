@@ -27,7 +27,7 @@ import doubleIt from './broken-promise.js'
 
 const asyncFive = async () => new Promise((resolve) => resolve(5))
 
-const asyncSeven = async () => new Promise((resolve) => resolve(5))
+const asyncSeven = async () => new Promise((resolve) => resolve(7))
 
 const asyncReject = async () => new Promise((_, reject) => reject("There are no numbers available"))
 
