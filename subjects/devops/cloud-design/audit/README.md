@@ -84,7 +84,7 @@ Review the student's architecture design, ensuring that it meets the project req
 
 ##### Evaluate the infrastructure setup.
 
-###### Are the `Infrastructure as Code (IaC)` tools, such as `Terraform` or `CloudFormation`, used effectively to provision and manage resources in the cloud environment?
+###### Are `Terraform` used effectively to provision and manage resources in the cloud environment?
 
 ###### Does the infrastructure setup follow the best practices for security and resource management?
 
