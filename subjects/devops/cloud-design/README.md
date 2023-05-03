@@ -96,7 +96,7 @@ Choose a popular cloud platform certification to pursue, based on the platform y
 
 ### Infrastructure as Code:
 
-Provision the necessary resources for your cloud environment using Infrastructure as Code (IaC) tools like `Terraform` or `CloudFormation`. This includes setting up virtual machines, containers, networking components, and storage services.
+Provision the necessary resources for your cloud environment using `Terraform` as a Infrastructure as Code (IaC) tools. This includes setting up virtual machines, containers, networking components, and storage services.
 
 ### Containerize the microservices:
 
@@ -133,7 +133,7 @@ Before starting this project, you should know the following:
 - Basic DevOps concepts and practices.
 - Familiarity with containerization and orchestration tools, such as Docker and Kubernetes.
 - Understanding of cloud platforms, such as AWS, Azure, or GCP.
-- Familiarity with Infrastructure as Code (IaC) tools, such as Terraform or CloudFormation.
+- Familiarity with Terraform as a Infrastructure as Code (IaC) tools.
 - Knowledge of monitoring and logging tools, such as Prometheus, Grafana, and ELK stack.
 
 > Any lack of understanding of the concepts of this project may affect the difficulty of future projects, take your time to understand all concepts.
