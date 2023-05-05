@@ -137,19 +137,12 @@ Challenge yourself!
 
 ### Submission and audit
 
+You must submit:
 
+- CI/CD pipeline configuration files, scripts, and any other required artifacts.
+- An Ansible playbook and used scripts for deploying and configuring a GitLab instance.
+- A well-documented README file that explains the pipeline design, the tools used, and how to set up and use the pipeline.
 
-
-
-
-
-
-
-
-
-
-
-You must submit the `README.md` file and all files used to create and delete and manage your infrastructure and your source code manager: CI/CD files, Terraform files, Dockerfiles, Manifests,...
-You must be started and your users and applications repository and CI/CD must be configured correctly to audit it.
+Your Solution must be running and your users and applications repository and CI/CD must be configured correctly for the audit session.
 
 > In the audit you will be asked different questions about the concepts and the practice of this project, prepare yourself!
