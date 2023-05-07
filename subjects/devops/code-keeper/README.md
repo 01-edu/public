@@ -1,7 +1,7 @@
 ## Code-Keeper
 
 <center>
-<img src="./resources/cloud-design.jpg?raw=true" style = "width: 600px !important; height: 600px !important;"/>
+<img src="./resources/cloud-design.jpg?raw=true" style = "width: 400px !important; height: 400px !important;"/>
 </center>
 
 ### Objective
