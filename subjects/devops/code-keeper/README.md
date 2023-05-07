@@ -109,7 +109,7 @@ The pipeline should include the following stages:
 
 > Any modification in the application's source code must rebuild and redeploy the new version to the `Staging Environment` and then to the `Production Environment` after manual approval.
 
-### Security
+### Cyber Security
 
 Your pipelines and infrastructure should adhere to the following cybersecurity guidelines:
 
