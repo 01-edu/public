@@ -83,14 +83,9 @@ You must store your passwords and credentials as a K8s secrets.
 
 ### Node.js apps
 
-Your Node.js applications must be deployed as a deployment and they must be scaled horizontally automatically, depending on CPU consumption.
+This Node.js applications must be deployed as a deployment and they must be scaled horizontally automatically, depending on CPU consumption.
 
 - `api-gateway`:
-  max replication: 3
-  min replication: 1
-  cpu percent trigger: 60%
-
-- `billing-app`:
   max replication: 3
   min replication: 1
   cpu percent trigger: 60%
@@ -99,6 +94,10 @@ Your Node.js applications must be deployed as a deployment and they must be scal
   max replication: 3
   min replication: 1
   cpu percent trigger: 60%
+
+This Node.js application must be deployed as StatefulSet:
+
+- `billing-app`
 
 ### Databases
 

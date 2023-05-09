@@ -136,15 +136,14 @@ user:~$
    min replication: 1
    cpu percent trigger: 60%
 
-2. `billing-app`:
+2. `inventory-app`:
    max replication: 3
    min replication: 1
    cpu percent trigger: 60%
 
-3. `inventory-app`:
-   max replication: 3
-   min replication: 1
-   cpu percent trigger: 60%
+This Node.js application must be deployed as StatefulSet:
+
+1. `billing-app`
 
 ###### Do all apps deploy with the correct configuration?
 
