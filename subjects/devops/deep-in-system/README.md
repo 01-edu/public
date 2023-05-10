@@ -79,7 +79,7 @@ You have to create 2 users in your server as follows:
 - SSH authentication Method: Public key-based authentication
 - Home directory: `/home/luffy`
 - Sudoer: yes
-- ssh-key: <Your generated ssh key>
+- ssh-key: Your generated ssh key
 
 > You have to keep your ssh key ready for the audit session!
 
@@ -87,7 +87,7 @@ You have to create 2 users in your server as follows:
 
 - SSH authentication Method: Password authentication
 - Home directory: `/home/zoro`
-- password: <Use your custom password>
+- password: Use your custom password
 - sudoer: no
 
 > You will use your custom password for the audit session!
@@ -95,7 +95,7 @@ You have to create 2 users in your server as follows:
 
 - Install an FTP server and create a user `nami`.
   The user `nami` can access via FTP only to `/backup` with read-only access.
-  `nami` user password: <Use your custom password>
+  `nami` user password: Use your custom password
 
 > You will use your custom password for the audit session!
 > Don't enable anonymous access!

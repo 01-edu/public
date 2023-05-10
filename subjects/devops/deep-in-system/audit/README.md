@@ -205,7 +205,7 @@ Otherwise, the student must show what firewall is used.
 
 The student should connect to the machine with the "luffy" user by using this ssh key:
 
-- Private key: <The student's generated ssh key>
+- Private key: The student's generated ssh key
 
 ###### Is the student able to connect to the machine with the "luffy" user by using the private key and without using any password?
 
