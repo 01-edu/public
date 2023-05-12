@@ -1,23 +1,23 @@
 #### Functional
 
-> In order to run and hot reload app either on emulator or device, follow the [instructions](https://docs.flutter.dev/get-started/test-drive?tab=androidstudio#run-the-app)
-
 ###### Does the app run without any crashes?
 
-###### Can you add a new note?
+###### Does the app include valid biometric authentication, either via fingerprint or camera?
 
-###### Can you delete a note?
+###### Can you confirm that only the app's user are able to access the notes?
 
-###### Can you delete all notes?
+###### Is it possible to add a new note through the app?
 
-###### Can you edit a note?
+###### Can you delete a note from the app?
 
-###### Is the note saved after editing?
+###### Is it possible to delete all the notes?
 
-###### Does the app show error when any field is empty?
+###### Is it possible to edit an existing note in the app?
 
-###### Do you see all notes after closing and opening app back?
+###### Is the note saved and updated properly after editing it in the app?
 
-###### Add a note, save it, close the app, open it, change the same note, close app, open app. Do you see updated value?
+###### Does the app display an error message if any required field is left empty when adding or editing a note?
 
-###### Does app has valid biometrical authentication? It may be either fingerprint or via camera.
+###### Do all notes remain visible after closing and reopening the app?
+
+###### If you add a note, save it, close the app, reopen it, edit the same note, and then close and reopen the app again, does the updated note value persist?

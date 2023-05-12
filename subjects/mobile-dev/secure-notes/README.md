@@ -1,44 +1,35 @@
-# Secure Notes
+## Secure Notes
 
-### Introduction
+Secure Notes is an app that allows you to create, modify, and delete notes, with an emphasis on security. Only the app's user should be able to access the notes, and only after biometric authentication. The app needs to use the `sqflite` package to store notes in a database.
 
-The app where you can add your own notes. It should behave as normal notes app where you can add, modify, remove old notes, but the app should be secure. Being secure means that the notes should only be accessible through the app, and only after biometric authentication.
+### Instructions
 
-Packages: _sqflite_ package.
+The Secure Notes app has several objectives, including:
 
-### Objective
+- Working with text fields and the keyboard
+- Allowing users to edit, delete, and reorder notes
+- Implementing biometric authentication
+- Localizing the application for international use
 
-- Work with textfields
-- Work with keyboard
-- Editing
-- Deleting
-- Reordering
+### Main Screen
 
-### First Part
-
-- Main Screen displayd list of notes with title, and description.
-- Implement ReordableListView to reorder items in list
-- Add ability to delete item by swiping
-- Add "add" button, which opens screen with 3 text fields
+The main screen of the app displays a list of notes, including the note's title and description. Users can reorder notes using the `ReorderableListView` widget, `delete` notes by swiping, and `add` notes using the "add" button which opens a screen with at least 2 text fields.
 
 <img src="./resources/secureNotes.01.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
 
 <img src="./resources/secureNotes.02.png?raw=true" style = "width: 210px !important; height: 420px !important;"/>
 
-### Second Part
+### Add Note
 
-- Screen to add new notes.
-- If any of the fields is empty, show error.
+This screen allows users to create new notes by entering information into the text fields. If any of the fields are empty, an error message is displayed.
 
-### Third Part
+### Edit Note
 
-- Edit Screen.
-- Show text in textfields to edit.
+This screen allows users to modify existing notes by displaying the note's text in the corresponding text fields.
 
-### Fourth Part
+### Data Management
 
-Add sqflite package, so your notes will be saved, even when app reloads.
-When app loads it should get notes from database.
+The Secure Notes app must use the `sqflite` package to store notes in a database. The Database class should also have `CRUD` methods, including `getAllNotes`, `deleteAllNotes`, `addNote`, `deleteNote`, and `updateNote`. Notes are saved in the database and are accessible even if the app is closed and reopened.
 
 ```jsx
 class Database {
@@ -53,20 +44,12 @@ Database _db;
 }
 ```
 
-Database class should also have CRUD methods like getAllNotes, deleteAllNotes, addNote, deleteNote, updateNote.
+### Authentication
 
-- getAllNotes
-- deleteAllNotes
-- addNote
-- deleteNote
-- updateNote
+The app must contain a biometric authentication before users can access their notes. You may use the `local_auth` package to authenticate the user.
 
-### Fifth Part
+### Localization
 
-Make a biometric authentication. Make sure that notes are not accessible without firstly authenticating user.
+The app can be localized for use in multiple countries and languages. Localizing the app allows it to reach a wider audience and make it easier for non-native speakers to use.
 
-- Note: you may use local_auth
-
-### Sixth Part
-
-[Localize](https://flutter.dev/docs/development/accessibility-and-localization/internationalization) your apllication.
+To localize the app, follow the instructions provided by [Flutter](https://docs.flutter.dev/accessibility-and-localization/internationalization).
