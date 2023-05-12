@@ -1,34 +1,25 @@
-# Bloc Counter
+## Bloc Counter
 
-### Introduction
+As projects get bigger and more complex, managing all the widgets, their states, and updating their children's states can become troublesome. To avoid potential complexity, it is recommended to use **Patterns**. Patterns are built to help developers control the hierarchy of widgets more easily, and one popular pattern in Flutter is `BLoC`.
 
-Usually, when projects get bigger and more complex, managing all the widges, their states, and updating their children's states will become troublesome. To avoid possible complexity, we recommend using **Patterns**.
-Patterns are built in a way that lets developers control the hierarchy of widgets much easier, and a popular one in the Flutter is - BLoC.
-
-Implement simple counter app using Bloc Pattern.  
-When you start writing your own application, you will need to structure your app first.
+In this project, you will implement a simple `counter app`,like the example bellow, using the `BLoC` pattern. When you start writing your own application, structuring it correctly is important.
 
 <img src="./resources/blocCounter.02.png?raw=true" width="200"/>
 
-### Objective
+### Instructions
 
 - Observe state changes with `BlocObserver`.
-- `BlocProvider`, Flutter widget which provides a bloc to its children.
-- `BlocBuilder`, Flutter widget that handles building the widget in response to new states.
+- Use `BlocProvider`, a Flutter widget which provides a bloc to its children.
+- Use `BlocBuilder`, a Flutter widget that handles building the widget in response to new states.
 
-In this subject you will implement Bloc pattern, which is created by Google.
-BLoC pattern uses Reactive Programming to handle the flow of data within an app.
+`BLoC` pattern uses reactive programming to handle the flow of data within an app.
 
-Bloc consist of 2 concepts :
-
-- `Streams`
-- `Sinks`
-  , which are provided by `StreamController`.
+A Bloc consists of 2 concepts, `Streams` and `Sinks`, which are provided by `StreamController`.
 
 <pre>
 <code>
 💡 See this article <a href="https://medium.com/flutterpub/architecting-your-flutter-project-bd04e144a8f1"> Architect your Flutter project using BLoC pattern</a>, by Sagar Suri.
-</code> 
+</code>
 </pre>
 
 <img src="./resources/blocCounter.01.png?raw=true"/>
@@ -36,14 +27,15 @@ Bloc consist of 2 concepts :
 <pre>
 <code>
 💡 Documentation <a href="https://bloclibrary.dev/#/gettingstarted">https://bloclibrary.dev/#/gettingstarted</a>.
-</code> 
+</code>
 </pre>
 
-### Part 1
+### Project Setup
 
-- Create new flutter app, so it will generate sample Counter App
-- Add flutter_bloc as a dependecy of your app
-- App structure should be similar to:
+- Create a new Flutter app, so it generates a sample Counter App.
+- Add `flutter_bloc` as a dependency to your app.
+
+Your app structure should be similar to:
 
 ```bash
   —lib
@@ -56,9 +48,9 @@ Bloc consist of 2 concepts :
   —main.dart
 ```
 
-### Part 2
+### Bloc Implementation
 
-- add enum to bloc/couter_event.dart
+- Add an enum to `bloc/couter_event.dart`.
 
 ```jsx
 enum CounterEvent {
@@ -66,15 +58,15 @@ enum CounterEvent {
 }
 ```
 
-- go to bloc/counter_bloc.dart and create `CounterBloc` class which extends from `CounterBloc`
+- Go to `bloc/counter_bloc.dart` and create a `CounterBloc` class that extends `CounterBloc`.
 
-> 💡 note: you can generate bloc files using vscode extension
+> Note: you can generate bloc files using vscode extension.
 
-- implement override of `mapEventToState` function in `CounterBloc` class, so it will be switching between different events, and return value as an int. In our case we only have case with increment state
+- Implement an override of the `mapEventToState` function in the `CounterBloc` class, so it switches between different events and returns the value as an `int`. In our case, we only have a case with an increment state.
 
-### Part 3 (UI and getting data)
+### UI and getting data
 
-- Inside MyApp class wrap your home page with BlocProvider class.
+- Inside the `MyApp` class, wrap your home page with a `BlocProvider` class.
 
 ```jsx
 return MaterialApp(
@@ -85,10 +77,10 @@ return MaterialApp(
 );
 ```
 
-- Inside Home class create instance of CounterBloc class
-- Use BlocBuilder to state from CounterBloc
-- Add "+" button to call CounterEvent.increment
+- Inside the `Home` class, create an instance of the `CounterBloc` class.
+- Use `BlocBuilder` to state from `CounterBloc`.
+- Add a "+" button to call `CounterEvent.increment`.
 
 ### Bonus
 
-- add button and event to handle decrementing counter
+- Add button and event to handle decrementing the counter.
