@@ -44,6 +44,7 @@ tests.push(async ({ eq, ctx, randStr, upperFirst }) => {
 
   const { stdout } = await ctx.run(dirName)
   return eq(
+    stdout.split('\n'),
     [
       `1. Ballard Ubaid`,
       `2. Chan Victoria`,
@@ -51,7 +52,6 @@ tests.push(async ({ eq, ctx, randStr, upperFirst }) => {
       `4. Hamilton ${random}`,
       `5. Mullen Dominika`,
     ],
-    stdout.split('\n'),
   )
 })
 
