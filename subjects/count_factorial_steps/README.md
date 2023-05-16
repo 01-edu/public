@@ -7,7 +7,7 @@ Create a **function** named `count_factorial_steps` that receives a factorial nu
 If the argument is not a factorial, or it is equal 0 or 1, then the function should return 0.
 
 ```rust
-fn count_factorial_steps(factorial: u64) -> u64 {
+pub fn count_factorial_steps(factorial: u64) -> u64 {
 }
 ```
 
