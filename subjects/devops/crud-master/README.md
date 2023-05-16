@@ -48,8 +48,6 @@ Some details about each one of them:
 - `PUT /api/movies/:id` update a single movie by `id`.
 - `DELETE /api/movies/:id` delete a single movie by `id`.
 
-- `GET /api/movies/available` retrieve all available the movies.
-
 The API should work on `http://localhost:8080/`.
 
 ##### Defining the Database
@@ -65,7 +63,7 @@ The `movies` table will contain the following columns:
 
 ##### Testing the Inventory API
 
-In order to test the correctness of your API you should use Postman (TODO add a link?). You could create one or more tests for every endpoint and then export the configuration so you will be able to reproduce the tests on different machines easily.
+In order to test the correctness of your API you should use Postman. You could create one or more tests for every endpoint and then export the configuration so you will be able to reproduce the tests on different machines easily.
 
 #### API 2: Billing
 
