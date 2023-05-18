@@ -6,7 +6,7 @@ Create the following functions with the "currying" process. Those functions shou
 
 - `mult2`: that multiplies two numbers.
 - `add3`: that adds three numbers.
-- `sub4`: that subtracts four numbers.
+- `sub4`: that subtracts four numbers in the given order: first number minus second number etc.
 
 ### Notions
 
