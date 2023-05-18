@@ -1,25 +1,27 @@
 #### Functional
 
-> In order to run and hot reload app either on emulator or device, follow the [instructions](https://docs.flutter.dev/get-started/test-drive?tab=androidstudio#run-the-app)
+> In order to run and hot reload the app either on emulator or device, follow the [instructions](https://docs.flutter.dev/get-started/test-drive?tab=androidstudio#run-the-app)
 
-###### Was the app committed within the required time period?
+###### Does the app run without crashing?
 
-###### Does the app run without crashes?
+###### Does the app display celestial objects on a black canvas?
 
-###### Does the app display celestial objects on black canvas?
+###### Check the current position of the Sun, is it accurate? (use google or a reliable source to know what is the accurate position and compare it to this app)
 
-###### Check with the current position of the sun, is it accurate?
+###### Are the moon, Mars, and Venus visible in the app?
 
-###### Are moon, Mars, and Venus visible in the app?
+##### Ask student about the constellations of their choice, and try find them in the app.
 
-###### Ask student about constellations of their choice, and find them in the app?
+###### Are the constellations visible in the app?
 
-###### Check if the retrieved data is either from API or from a file. If the data comes from file, check its validity?
+###### Check if the retrieved data is either from a public API or from a file. If the data comes from file, check its validity? (ask the student to help you determine if it was an API or a File if necessary)
+
+##### Try tapping on the Sun and Mars.
+
+###### Does the app display a short description about the objects such as mass or name?
 
 ###### Try moving the phone around, does it change the celestial objects shown on the display?
 
-###### Try tapping on the sun, mars. Does the app display basic information about objects, such as mass, name.
+##### Ask student about pattern implementation. If they used BLoC ask them to explain the pattern, and [check](https://pub.dev/packages/flutter_bloc) whether they implemented it correctly. If they used Provider ask them to explain the pattern, and [check](https://pub.dev/packages/provider) whether they implemented it correctly.
 
-###### Ask student about pattern implementation. If they used BLoC ask them to explain the pattern, and [check](https://pub.dev/packages/flutter_bloc) whether they implemented it correctly.
-
-###### Ask student about pattern implementation. If they used Provider ask them to explain the pattern, and [check](https://pub.dev/packages/provider) whether they implemented it correctly.
+###### Was the pattern implemented correctly?
