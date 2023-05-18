@@ -16,7 +16,7 @@
 
 ###### If the favorite place is deleted, does the app remove it from the map?
 
-###### Does the app contain an information page on the `Info` screen?
+###### Does the app contain an information page on the `InfoPage` screen?
 
 ###### Does the map show markers at your favorite places?
 
