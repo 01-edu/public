@@ -4,7 +4,7 @@
 
 ###### Does the app run without crashing?
 
-###### Does the app have `Bottom TabBar`?
+###### Does the app have `TabBar`?
 
 ###### Does the app show google maps on the `Map` screen?
 
