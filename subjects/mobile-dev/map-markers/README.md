@@ -10,7 +10,7 @@ A `TabBar` with three screens:
 
 - A `Maps` screen like [google maps](https://codelabs.developers.google.com/codelabs/google-maps-in-flutter#0) where the user can see their favorite places marked on the map with an `info view`.
 
-- A `favorite places` screen which will have a list of the user's favorite places.
+- A `Favorite Places` screen which will have a list of the user's favorite places.
 
 - An `InfoPage` screen that displays the names and email addresses of the app's authors, along with a general description of the app.
 
