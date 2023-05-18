@@ -1,41 +1,33 @@
 ## twenty-forty-eight
 
-### Introduction:
+It is April 2014, and the popular game "2048" has not yet been released. Your task is to implement the game before the official release. The objective of the game is to slide numbered tiles on a grid to combine them and create a tile with the number 2048.
 
-It is April 2014, and the popular game "2048" has not yet been released. Your task is to implement the game before the official release. To do this, you will need to create a 4x4 table and fill it with tiles valued at either 2 or 4. The game should start with 3-4 tiles placed randomly on the board.
+<center>
+<img src="./resources/2048.01.png?raw=true" style = "width: 500px !important; height: 300px !important;"/>
+</center>
 
-Players should be able to swipe the tiles in any of the four directions, and the tiles will move as far as possible in that direction. If two tiles with the same value collide, they should merge into one tile with twice the value, and the score should be updated accordingly. After each move, a new tile should appear randomly in an empty slot on the board.
-
-Use any [animation](https://docs.flutter.dev/development/ui/widgets/animation) to smoothly move the tiles. You can choose the colors for the tiles, but it is preferred to use the colors from the original "2048" game.
-
-The game should stop when no legal moves are possible and allow the user to restart. When the game is over, the best score should be updated if necessary.
-
-Remember to include functionality to track and display the current and best scores. Good luck!
+### Instructions
 
 To complete this exercise, you will need to do the following:
 
-1. Set up a development environment for the game.
-2. Create the 4x4 table and fill it with tiles valued at either 2 or 4.
-3. Implement the ability for players to swipe the tiles in any of the four directions and have them move as far as possible in that direction.
-4. If two tiles with the same value collide, merge them into one tile with twice the value and update the score.
-5. Add a new tile to the board randomly after each move.
-6. Use animation to smoothly move the tiles.
-7. Stop the game when no legal moves are possible and allow the user to restart.
-8. Update the best score if necessary when the game is over.
-9. Include functionality to track and display the current and best scores.
-10. Test the game thoroughly to ensure that it is functioning correctly and all objectives have been met.
-11. Remember to follow best practices for coding and game development, and be sure to document your code and any decisions made during the development process. Good luck!
+- Create the 4x4 grid and fill it with `tiles` valued at either 2 or 4.
+- The game must start with 3-4 `tiles` randomly placed on the board.
+- Implement the ability for players to swipe the `tiles` in any of the four directions and have them move as far as possible in the chosen direction.
+- Use [animation](https://docs.flutter.dev/development/ui/widgets/animation) to smoothly move the `tiles`. You are free to choose the colors for the `tiles`.
+- If two `tiles` with the same value collide, they should merge into one tile with twice the value, and the score must be updated accordingly.
+- After each move, a new `tile` must appear randomly in an empty slot on the board.
+- The game ends when no legal moves are possible (i.e., the grid is full, and no adjacent `tiles` have the same value).
+- You must add a `restart` button so that the player can restart the game and try to achieve a higher score.
+- Include functionality to track and display the `current` and `best scores` live during gameplay.
+- Update the `best score` if necessary when the game is over.
 
-Some additional considerations for this exercise might include:
+Remember to follow best practices for coding and game development, and be sure to document your code and any decisions made during the development process.
 
-1. Adding a user interface (UI) to the game, such as buttons for moving the tiles and displaying the current and best scores.
-2. Implementing difficulty levels or other gameplay options, such as the ability to choose the value of the tiles (e.g. 2, 4, 8, etc.) or the size of the board (e.g. 4x4, 5x5, 6x6, etc.).
-3. Adding sound effects or music to enhance the gameplay experience.
-4. Adding support for different devices and screen sizes, such as tablets or smartphones.
-5. By taking these additional factors into account, you can create a more polished and enjoyable version of the "2048" game.
+### Bonus
 
-<center>
+To enhance the game, you can consider implementing the following features:
 
-<img src="./resources/2048.01.png?raw=true" style = "width: 840px !important; height: 420px !important;"/>
-
-</center>
+- Design a user interface (UI) for the game, including buttons for moving the `tiles` and displaying scores.
+- Add difficulty levels or additional gameplay options, such as the ability to choose `tile` values (e.g. 2, 4, 8, ...) or customize the grid size (e.g. 4x4, 5x5, 6x6, ...).
+- Incorporate sound effects or background music to improve the gameplay experience.
+- Ensure the game is responsive and supports different devices and screen sizes.
