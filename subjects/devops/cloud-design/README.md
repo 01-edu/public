@@ -6,12 +6,28 @@
 
 ### Objective
 
-The objective of this project is to challenge your understanding of DevOps and cloud technologies by providing hands-on experience in deploying and managing a microservices-based application on a cloud platform. Your mission is to:
+The objective of this project is to challenge your understanding of DevOps and cloud technologies by providing hands-on experience in deploying and managing a microservices-based application on the Amazon Web Services (AWS) cloud platform. Your mission is to:
 
-- Set up and configure a cloud environment for deploying microservices.
-- Deploy the provided microservices application to the cloud environment.
-- Implement monitoring, logging, and scaling to ensure that the application runs efficiently.
-- Optimize the application to handle varying workloads and unexpected events.
+Set up and configure an AWS environment for deploying microservices.
+Deploy the provided microservices application to the AWS environment.
+Implement monitoring, logging, and scaling to ensure that the application runs efficiently.
+Implement security measures, such as securing the databases and making private resources accessible only from the Amazon Virtual Private Cloud (VPC).
+Incorporate managed authentication for publicly accessible applications using AWS Cognito or a similar service.
+Optimize the application to handle varying workloads and unexpected events.
+
+### Hints
+
+Before starting this project, you should know the following:
+
+- Basic DevOps concepts and practices.
+- Familiarity with containerization and orchestration tools, such as Docker and Kubernetes.
+- Understanding of AWS cloud platform.
+- Familiarity with Terraform as a Infrastructure as Code (IaC) tools.
+- Knowledge of monitoring and logging tools, such as Prometheus, Grafana, and ELK stack.
+
+> Any lack of understanding of the concepts of this project may affect the difficulty of future projects, take your time to understand all concepts.
+
+> Be curious and never stop searching!
 
 ### Roleplay
 
@@ -29,7 +45,7 @@ Prepare for a roleplay question session where you will assume the role of a Clou
 
 ### Architecture
 
-By using your solutions in your previous projects `crud-master`, `play-with-containers`, and `orchestrator` you have to design and deploy the infrastructure in a cloud platform of your choice and you must respect the requirements for the project consisting of the following components:
+By using your solutions in your previous projects `crud-master`, `play-with-containers`, and `orchestrator` you have to design and deploy the infrastructure on AWS respecting the project requirements, consisting of the following components:
 
 - `inventory-database container` is a PostgreSQL database server that contains your inventory database, it must be accessible via port `5432`.
 - `billing-database container` is a PostgreSQL database server that contains your billing database, it must be accessible via port `5432`.
@@ -40,45 +56,15 @@ By using your solutions in your previous projects `crud-master`, `play-with-cont
 
 Design the architecture for your cloud-based microservices application. You are free to choose the services and architectural patterns that best suit your needs, as long as they meet the project requirements and remain within a reasonable cost range. Consider the following when designing your architecture:
 
-1. `Scalability`: Ensure that your architecture can handle varying workloads and can scale up or down as needed.
+1. `Scalability`: Ensure that your architecture can handle varying workloads and can scale up or down as needed. AWS offers services like Auto Scaling that can be used to achieve this.
 
 2. `Availability`: Design your architecture to be fault-tolerant and maintain high availability, even in the event of component failures.
 
-3. `Security`: Incorporate security best practices into your architecture, such as encrypting data at rest and in transit, using private networks, and securing API endpoints.
+3. `Security`: Incorporate security best practices into your architecture, such as encrypting data at rest and in transit, using private networks, and securing API endpoints. Also, ensure that the databases and private resources are accessible only from the AWS VPC and use AWS managed authentication for publicly accessible applications.
 
 4. `Cost-effectiveness`: Be mindful of the costs associated with the services and resources you select. Aim to design a cost-effective architecture without compromising performance, security, or scalability.
 
 5. `Simplicity`: Keep your architecture as simple as possible, while still meeting the project requirements. Avoid overcomplicating the design with unnecessary components or services.
-
-### Choose a cloud platform:
-
-Select a cloud provider (AWS, Azure, GCP, or any other provider of your choice) and create an account.
-
-> While working on this project, it is essential to be aware of the potential costs associated with using cloud resources. Each cloud provider offers various services with different pricing models, and it can be easy to incur unexpected charges if you don't carefully manage your resources.
-
-### Cloud Certification Preparation (optional)
-
-Choose a popular cloud platform certification to pursue, based on the platform you will use for this project or your area of interest. Study the core concepts, services, and best practices for the chosen platform, and use the provided resources to help prepare for the certification exam.
-
-#### Popular Fundamental Cloud Platform Certifications:
-
-1. `AWS Certified Cloud Practitioner`: This certification covers the fundamentals of AWS cloud services, architecture, and cost management. It is intended for individuals who want to validate their understanding of the AWS platform.
-
-- [AWS Certified Cloud Practitioner Exam Guide](https://aws.amazon.com/fr/certification/certified-cloud-practitioner/)
-- [AWS Certified Cloud Practitioner Learning Path](https://aws.amazon.com/fr/training/learn-about/cloud-practitioner/)
-- [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
-
-2. `Microsoft Azure Fundamentals (AZ-900)`: This certification covers the basics of Microsoft Azure cloud services, architecture, and security. It is designed for individuals who want to demonstrate their understanding of the Azure platform.
-
-- [Microsoft Azure Fundamentals (AZ-900) Exam Guide](https://docs.microsoft.com/en-us/learn/certifications/exams/az-900)
-- [Microsoft Azure Fundamentals (AZ-900) Learning Path](https://docs.microsoft.com/en-us/learn/paths/azure-fundamentals/)
-- [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/)
-
-3. `Google Cloud Platform Associate Cloud Engineer`: This certification covers the fundamentals of the Google Cloud Platform (GCP) services, architecture, and security. It is intended for individuals who want to validate their understanding of the GCP platform.
-
-- [Google Cloud Associate Cloud Engineer Exam Guide](https://cloud.google.com/certification/cloud-engineer)
-- [Google Cloud Associate Cloud Engineer Learning Path](https://cloud.google.com/training/cloud-engineer)
-- [Google Cloud Architecture Framework](https://cloud.google.com/architecture/framework)
 
 ### Cost management:
 
@@ -96,7 +82,7 @@ Choose a popular cloud platform certification to pursue, based on the platform y
 
 ### Infrastructure as Code:
 
-Provision the necessary resources for your cloud environment using `Terraform` as a Infrastructure as Code (IaC) tools. This includes setting up virtual machines, containers, networking components, and storage services.
+Provision the necessary resources for your AWS environment using Terraform as an Infrastructure as Code (IaC) tools. This includes setting up EC2 instances, containers, networking components, and storage services using AWS S3 or other similar services.
 
 ### Containerize the microservices:
 
@@ -106,13 +92,13 @@ Use Docker to build container images for each microservice. Make sure to optimiz
 
 ### Deployment:
 
-Deploy the containerized microservices on your cloud platform using an orchestration tool like Kubernetes or AWS ECS. Ensure that the services are load-balanced and can communicate with each other securely.
+Deploy the containerized microservices on AWS using an orchestration tool like AWS ECS or EKS. Ensure that the services are load-balanced (consider using AWS Elastic Load Balancer) and can communicate with each other securely.
 
 > You can use your `orchestrator` project solution.
 
 ### Monitoring and logging:
 
-Set up monitoring and logging tools to track the performance and health of your application. Use tools like Prometheus, Grafana, and ELK stack to visualize metrics and logs.
+Set up monitoring and logging tools to track the performance and health of your application. Use tools like CloudWatch, Prometheus, Grafana, and ELK stack to visualize metrics and logs.
 
 ### Optimization:
 
@@ -120,25 +106,11 @@ Implement auto-scaling policies to handle varying workloads and ensure high avai
 
 ### Security:
 
-Implement security best practices, such as using HTTPS, securing API endpoints, and regularly scanning for vulnerabilities.
+Implement security best practices such as using AWS Certificate Manager for HTTPS, securing API endpoints with Amazon API Gateway, regularly scanning for vulnerabilities with AWS Inspector, and implementing managed authentication for publicly accessible applications with AWS Cognito or similar service. Ensure that the databases and private resources are secure and accessible only from the AWS VPC.
 
 ### Documentation
 
 Create a `README.md` file that provides comprehensive documentation for your architecture, which must include well-structured diagrams, thorough descriptions of components, and an explanation of your design decisions, presented in a clear and concise manner. Make sure it contains all the necessary information about the solution (prerequisites, setup, configuration, usage, ...). This file must be submitted as part of the solution for the project.
-
-### Hints
-
-Before starting this project, you should know the following:
-
-- Basic DevOps concepts and practices.
-- Familiarity with containerization and orchestration tools, such as Docker and Kubernetes.
-- Understanding of cloud platforms, such as AWS, Azure, or GCP.
-- Familiarity with Terraform as a Infrastructure as Code (IaC) tools.
-- Knowledge of monitoring and logging tools, such as Prometheus, Grafana, and ELK stack.
-
-> Any lack of understanding of the concepts of this project may affect the difficulty of future projects, take your time to understand all concepts.
-
-> Be curious and never stop searching!
 
 ### Bonus
 
