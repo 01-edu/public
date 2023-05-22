@@ -1,26 +1,44 @@
-# Hole in Bin
+# Hole-In-Bin
+
+<center>
+<img src="./pictures/meme.png?raw=true" style = "width: 600px !important; height: 737px !important;"/>
+</center>
 
 ### Objective
 
-The objective of the project is that you are comfortable in reverse engineering on a windows environment, because many systems (Bank ATMs, SCADA..) can run on windows.
+This exercise is designed to test your skills and understanding of binary exploitation and reverse engineering. You will need to work through a series of binary exploitation challenges using a provided virtual machine.
 
-### Guidelines
+### Setup
 
-You will have the exercise of creating a patch that will bypass the security of the [program](./resources/hole-in-bin.exe) and display "please withdraw your money" in the color green, rather than an error message..
+1. Download the virtual machine image [hole-in-bin.ova](https://assets.01-edu.org/cybersecurity/hole-in-bin/hole-in-bin.ova). This image contains all the binaries you will need to exploit.
 
-### Advice
+SHA1: 7db09b7a8fdfe25c286561dfa7ca5b50718bd60c
 
-https://ghidra-sre.org/  
-http://www.ollydbg.de/  
-https://www.softpedia.com/get/Programming/Packers-Crypters-Protectors/PEiD-updated.shtml  
-https://www.red-gate.com/products/dotnet-development/reflector/
+2. Load the virtual machine image into your virtualization software of choice (e.g., VirtualBox, VMWare).
+
+3. Login using the provided credentials (username: user, password: user).
+
+> You will set up a new VM in the audit session!
+
+### The Challenges
+
+Inside the `/opt/hole-in-bin` directory, you will find a set of binaries (ex00 to ex11) that you need to exploit. Each binary presents a unique challenge and will test different aspects of your knowledge about binary exploitation and reverse engineering.
+You can find more details in a `README.txt` file inside each exercise folder.
+
+Your task is to exploit these binaries, following ethical hacking guidelines.
+
+> Using a decompiler is forbidden, use a disassembler instead of it!
+
+- The compiler is used to convert high-level programming language code into machine language code.
+- The assembler converts assembly-level language code into machine language code.
+
+> ⚠️ These methods and tools are for educational purposes only, so that you have a better understanding of how to protect against similar vulnerabilities. You must ensure that you do not attempt any exploit-type activity without the explicit permission of the owner of the machine, system or application. Failure to obtain permission risks breaking the law.
 
 ### Submission and audit
 
 Files that must be inside your repository:
 
-- a README.md file, Which explains all the steps you went through in order to bypass the program.
+- A `README.md` file, Which explains all the steps you went through to bypass each exercise.
+- All tools you use, and any scripts you write.
 
-Don’t hesitate to double check the names of your folders and files to ensure they are correct!
-
-> ⚠️ These methods and tools are for educational purposes only, so that you have a better understanding of how to protect against similar vulnerabilities. You must ensure that you do not attempt any exploit-type activity without the explicit permission of the owner of the machine, system or application. Failure to obtain permission risks breaking the law.
+> It's forbidden to use external scripts, in the audit you will be asked different questions about the concepts and the practices of this project, prepare yourself!
