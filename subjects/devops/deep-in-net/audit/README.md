@@ -237,7 +237,7 @@ deep-in-net.com > deep-in-net.local
 
 #### Check the Documentation:
 
-###### Is the README.md file contains the clarification of all the knowledge learned and the steps passed by the learner to recreate the network architectures?
+###### Is the README.md file containing the clarification of all the knowledge learned and the steps passed by the learner to recreate the network architectures?
 
 #### Bonus:
 
