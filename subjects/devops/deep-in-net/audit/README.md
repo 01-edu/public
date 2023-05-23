@@ -5,9 +5,10 @@
 Files that must be inside the repository:
 
 ```bash
-$ tree deep-in-system/
-deep-in-system/
+$ tree deep-in-net/
+deep-in-net/
 ├── bonus.pkt
+├── README.md
 ├── ex01.pkt
 ├── ex02.pkt
 ├── ex03.pkt
@@ -233,6 +234,10 @@ deep-in-net.com > deep-in-net.local
 ###### Can all devices in `subnet 1` communicate with all devices in `subnet 3` and vice versa?
 
 ###### Can all devices in `subnet 2` communicate with all devices in `subnet 3` and vice versa?
+
+#### Check the Documentation:
+
+###### Is the README.md file contains the clarification of all the knowledge learned and the steps passed by the learner to recreate the network architectures?
 
 #### Bonus:
 
