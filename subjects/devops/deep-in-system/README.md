@@ -36,10 +36,10 @@ Install a ubuntu server's latest LTS as a virtual machine.
 - The VM disk size must be 30GB.
 
 - You must divide your VM disk into these partitions:
-`swap:` 4G
-`/`: 15G
-`/home`: 5G
-`/backup`: 6G
+  `swap:` 4G
+  `/`: 15G
+  `/home`: 5G
+  `/backup`: 6G
 
 - Your username must be your login name.
 
@@ -91,6 +91,7 @@ You have to create 2 users in your server as follows:
 - sudoer: no
 
 > You will use your custom password for the audit session!
+
 #### Services Part:
 
 - Install an FTP server and create a user `nami`.
@@ -152,6 +153,10 @@ You can add anything you feel deserves to be a bonus, some of the suggested idea
 
 _Challenge yourself!_
 
+### Documentation
+
+Create a `README.md` clarification of all the knowledge you have learned and the steps you passed to set up the server, thorough descriptions of steps, and an explanation of the used commands, presented clearly and concisely. Ensure it contains all the necessary information about the installed and configured services. This file must be submitted as part of the solution for the project.
+
 ### Submission and audit
 
 You must export your VM to a safe place, you will need it in the audit.
@@ -168,6 +173,7 @@ user:~$
 Files that must be inside your repository:
 
 - deep-in-system.sha1
+- README.md
 
 > It's Forbidden to use external scripts!
 > Any use of external scripts or use of commands without understanding their jobs is considered cheating!

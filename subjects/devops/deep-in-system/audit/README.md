@@ -5,6 +5,7 @@
 Files that must be inside the repository:
 
 - DeepInSystem.sha1
+- README.md
 
 ###### Are the required files present?
 
@@ -77,10 +78,10 @@ user:~$
 - The VM disk size must be 30GB.
 
 - VM disk must be divided into these partitions:
-"swap:" 4G
-"/": 15G
-"/home": 5G
-"/backup": 6G
+  "swap:" 4G
+  "/": 15G
+  "/home": 5G
+  "/backup": 6G
 
 ###### Is the VM Disk size correct?
 
@@ -423,6 +424,10 @@ user:~$
 ###### Does the student can explain what is cronjob and what the role of it?
 
 ###### Does the student can explain why backup is important?
+
+#### Check the Documentation:
+
+###### Is the README.md file containing the clarification of all the knowledge learned and the steps passed by the learner to set up the server?
 
 #### Bonus
 
