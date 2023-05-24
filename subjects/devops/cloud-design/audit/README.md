@@ -31,6 +31,8 @@ Suggested roleplay questions include:
 - What challenges did you face during the project and how did you address them?
 - How did you ensure your documentation's clarity and completeness, and what measures did you take to make it easily understandable and maintainable?
 
+###### Were the students able to answer all the questions correctly?
+
 ###### Did the students demonstrate a thorough understanding of the concepts and technologies used in the project?
 
 ###### Were the students able to communicate effectively and justify their decisions?
@@ -47,11 +49,9 @@ Review the student's architecture design, ensuring that it meets the project req
 4. `Cost-effectiveness`: Is the architecture designed to be cost-effective on AWS without compromising performance, security, or scalability?
 5. `Simplicity`: Is the AWS architecture straightforward and free of unnecessary complexity while still fulfilling project requirements?
 
-###### Did the student Architecture design meets the project requirements?
+###### Did the architecture design and choice of services align with the project requirements?
 
 ###### Did the students have the ability to design a cost-effective architecture that meets the project requirements?
-
-###### Did the choice of services and architectural patterns align with best practices for scalability, availability, and security?
 
 ##### Check the student documentation in the `README.md` file.
 
@@ -71,13 +71,13 @@ Review the student's architecture design, ensuring that it meets the project req
 
 ###### Are `Terraform` used effectively to provision and manage resources in the cloud environment?
 
-###### Does the infrastructure setup follow the best practices for security and resource management?
+###### Does the infrastructure setup follow the architecture design and the project requirements?
 
 ##### Assess containerization and orchestration.
 
-###### Are the Dockerfiles optimized for efficient container builds, and do they follow best practices?
+###### Are the Dockerfiles optimized for efficient container builds?
 
-###### Is the orchestration setup (e.g., Kubernetes manifests or AWS ECS task definitions) configured correctly and according to best practices?
+###### Is the orchestration setup (e.g., Kubernetes manifests or AWS ECS task definitions) configured correctly?
 
 ##### Evaluate monitoring and logging.
 
