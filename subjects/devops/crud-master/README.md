@@ -200,12 +200,23 @@ After entering in your VM via SSH you may run the following commands:
 - `sudo pm2 stop <app_name>`: Stop a specific application.
 - `sudo pm2 start <app_name>`: Start a specific application.
 
-#### Overall file structure
+#### Project organization
+
+##### README.md
+
+As a good exercise and an helpful tool it is required for you to deliver a `README.md` describing the project.
+
+The idea of a `README.md` is to give in few lines enough context about a project to understand what is it about and how to run it.
+
+This file should include instructions to run and test the project, it should also give a brief and clear overview of the stack used to build it.
+
+##### Overall file structure
 
 You can organize your internal file structure as you prefer. That said here is a common way to structure this kind of projects that may help you:
 
 ```console
 .
+├── README.md
 ├── config.yaml
 ├── .env
 ├── scripts
