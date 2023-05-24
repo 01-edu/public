@@ -20,7 +20,7 @@
 
 ###### Is the text present in `result.txt` equal to the above?
 
-##### In a file called `sample.txt` place the following text (without the double quotes): "harold wilson (cap, 2) : ' I am a optimist ,but a optimist who carries a raincoat . '". Now run the student program with the arguments: `sample.txt result.txt`.
+##### In a file called `sample.txt` place the following text (without the double quotes): "harold wilson (cap, 2) : ' I am an optimist ,but an optimist who carries a raincoat . '". Now run the student program with the arguments: `sample.txt result.txt`.
 
 `Harold Wilson: 'I am an optimist, but an optimist who carries a raincoat.'`
 
