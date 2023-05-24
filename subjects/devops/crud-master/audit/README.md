@@ -2,6 +2,12 @@
 
 ##### Before we start, let's check we have the necessary tools to perform the tests. You should make sure VirtualBox, Vagrant and Postman are installed, if not you should install them.
 
+#### Documentation
+
+##### Take a look at the `README.md` file provided by the student.
+
+###### Does the file includes enough context and details to understand and run the project?
+
 #### VM Configuration
 
 ##### In the directory of the project run `vagrant up --provider virtualbox` and then run `vagrant status`.
