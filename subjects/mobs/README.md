@@ -35,7 +35,7 @@ You will also need to create two submodules of mob:
     - `name`: `String`
     - `role`: `Role`
     - `age`: `u8`
-    `get_promotion`: an associated function which when invoked should promote the member from:
+    - `get_promotion`: an associated function which when invoked should promote the member from:
       - `Associate` -> `Soldier`
       - `Soldier` -> `Caporegime`
       - `Caporegime` -> `Underboss`
@@ -46,8 +46,8 @@ The submodules should be created inside a folder named `mobs`. We advise you to 
 You must include `#[derive(Debug, Clone, PartialEq)]` above every struct and enum.
 
 ### Expected Function
-> You'll need to work out the function signatures for yourself.
 
+> You'll need to work out the function signatures for yourself.
 
 ### Usage
 
@@ -95,3 +95,7 @@ Mob { name: "Hairy Giants", boss: Boss { name: "Louie HaHa", age: 36 }, members:
 Mob { name: "Red Thorns", boss: Boss { name: "Big Tuna", age: 30 }, members: [Member { name: "Knuckles", role: Soldier, age: 25 }, Member { name: "Baldy Dom", role: Caporegime, age: 36 }, Member { name: "Crazy Joe", role: Underboss, age: 23 }], cities: [("San Jose", 5)], wealth: 70000 }
 $
 ```
+
+### Notions
+
+- [Packages, Crates and Modules](https://doc.rust-lang.org/book/ch07-00-managing-growing-projects-with-packages-crates-and-modules.html)
