@@ -4,11 +4,11 @@
 
 ###### Is the documentation written in a markdown file?
 
-###### Does the documentation contains an explanation of every feature of the framework?
+###### Does the documentation contain a top-level overview of the framework's features?
 
-###### Does the documentation contains an explanation and code examples on how to create an element, add attributes to an element, create an event and nest elements?
+###### Does the documentation contain an explanation and code examples on how to create an element, add attributes to an element, create an event and nest elements?
 
-###### Does the documentation contains an explanation on how the framework works?
+###### Does the documentation contain an explanation on how the framework works?
 
 ##### Open the todoMVC project and compare it to other [todoMVC project](http://todomvc.com/) ([example](http://todomvc.com/examples/vanillajs/)).
 
@@ -58,7 +58,7 @@
 
 ###### +Does the project runs quickly and effectively? (Favoring recursivity, no unnecessary data requests, etc...)
 
-###### +Is the code using synchronicity to increase performance?
+###### +Is the code using asynchronicity to increase performance?
 
 ###### +Do you think this project is well done in general?
 
