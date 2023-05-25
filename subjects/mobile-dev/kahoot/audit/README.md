@@ -1,19 +1,43 @@
 #### Functional
 
-#### In order to run and hot reload app either on emulator or device, follow the [instructions](https://docs.flutter.dev/get-started/test-drive?tab=androidstudio#run-the-app).
+#### In order to run and hot reload the app either on emulator or device, follow the [instructions](https://docs.flutter.dev/get-started/test-drive?tab=androidstudio#run-the-app).
 
-###### Was the app committed within the required time period?
+###### Does the app run without crashing?
 
-###### Does the app run without crashes?
+##### Ask the student to show you the implementation of the `backend` and `frontend` for the project.
 
-###### Try loggin in. Can you authenticate via gmail?
+###### Did the student implement both `backend` and `frontend` for the project?
 
-###### When 2 players are join game session, can a player with white pieces start the game?
+##### Try to `authenticate via email`.
 
-###### Try doing illegal moves, i.e. moving pawn 3 squares up, castling after moving the king, moving rook diagonally, etc. Does the app prevent such illegal moves?
+###### Can users `authenticate via email`?
 
-###### After a move is played, does the other player receive the move?
+##### Try to search for friends using their `email`. You can do this by creating two different accounts.
 
-###### Play the game until one player is mated, does the game stop?
+###### Is it possible to search for friends by `email`?
 
-###### Do chess moves come with appropriate Long algebraic notation?
+##### Try to send a friend request.
+
+###### Can users send friend requests?
+
+##### Try to `Accept` the friend request.
+
+###### Can users `Accept` friend requests?
+
+##### Check if the friend was `Added` to the `friends list`.
+
+###### Was the friend `Added` to the `friends list`?
+
+##### Try to `Delete` the friend form the `friends list`.
+
+###### Is it possible to `Delete` friends from the `friends list`?
+
+##### Try to send a new friend request but this time `Deny` it.
+
+###### Can users `Deny` friend requests?
+
+##### Check if the student successfully implement `location` tracking to determine the last known `location` of each user.
+
+###### Can users see their friends last known `location` in the map?
+
+###### Was the `location` sent to the server `every 5 seconds` each time the app was opened?
