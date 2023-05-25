@@ -2,7 +2,7 @@
 
 ### Instructions
 
-The mobile app You will need to develop is designed to allow users to connect with their friends and track their last known location. Upon logging into the app via email, users need to be able to search for their friends by email and send friend requests. Once two users have become friends within the app, they will be able to see each other's last known location when the app is turned on.
+The mobile app you will need to develop is designed to allow users to connect with their friends and track their last known location. Upon logging into the app via email, users need to be able to search for their friends by email and send friend requests. Once two users have become friends within the app, they will be able to see each other's last known location when the app is turned on.
 
 The app needs to use location tracking technology to determine the last known location of each user. This technology will be able to determine the users location within a certain degree of accuracy, depending on the capabilities of the device being used.
 
