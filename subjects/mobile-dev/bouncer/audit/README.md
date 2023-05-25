@@ -4,7 +4,7 @@
 
 ###### Does the app run without crashing?
 
-###### Does the `ball` collide properly with this `walls`, `blocks` and the `player's tile`, its angle changes according to the [rule](https://www.toppr.com/ask/en-af/question/1865186/): it leaves with the same angle it came?
+###### Does the `ball` collide properly with the `walls`, `blocks` and the `player's tile`, changing its angle according to this [rule](https://www.toppr.com/ask/en-af/question/1865186/): it leaves with the same angle it came?
 
 ###### Does the `player's tile` move in the same direction as phone is tilted?
 
