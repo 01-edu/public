@@ -6,7 +6,7 @@ To type commands in a distant shell, you can use your peripherals (keyboard, mon
 
 It is more comfortable to use SSH because you can use your usual terminal, with the right keymap, theme, etc.
 
-Do to this exercise you will need to add this VM :
+To do this exercise you will need to add this VM :
 
 - [01_remote](https://assets.01-edu.org/sys/01_remote.tar.gz)
 
