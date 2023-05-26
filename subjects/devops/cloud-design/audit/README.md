@@ -31,7 +31,7 @@ Suggested roleplay questions include:
 - What challenges did you face during the project and how did you address them?
 - How did you ensure your documentation's clarity and completeness, and what measures did you take to make it easily understandable and maintainable?
 
-###### Were the students able to answer all the questions correctly?
+###### Was the students able to answer all the questions correctly?
 
 ###### Did the students demonstrate a thorough understanding of the concepts and technologies used in the project?
 
