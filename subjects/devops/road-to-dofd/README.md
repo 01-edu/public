@@ -1,9 +1,5 @@
 ## Road-To-DOFD
 
-<center>
-<img src="./resources/dofd-logo.png?raw=true" style = "width: 400px !important; height: 400px !important;"/>
-</center>
-
 ### Objective
 
 The objective of this subject is to prepare you for the DevOps Foundation Certification exam from the DevOps Institute. The DevOps Foundation Certification is designed for individuals who have a basic understanding of DevOps principles and practices. It validates their knowledge of DevOps concepts, culture, collaboration, and tools.
@@ -27,9 +23,7 @@ The DevOps Foundation Certification exam covers the following domains:
 
 You should refer to the following study materials to prepare for the exam:
 
-- DevOps Institute DevOps Foundation Exam Guide English version: [DOFD-English-Exam-Study-Guide.pdf](./resources/DOFD-English-Exam-Study-Guide.pdf)
-- DevOps Institute DevOps Foundation Exam Guide French version: [DOFD-French-Exam-Study-Guide.pdf](./resources/DOFD-French-Exam-Study-Guide.pdf)
-- DevOps Institute DevOps Foundation Exam Guide Spanish version: [DOFD-Spanish-Exam-Study-Guide.pdf](./resources/DOFD-Spanish-Exam-Study-Guide.pdf)
+- DevOps Institute DevOps Foundation Exam Guide English version: [DOFD-v3.3-English-Exam-Study-Guide_01Mar2021.pdf](https://www.devopsinstitute.com/wp-content/uploads/2021/03/DOFD-v3.3-English-Exam-Study-Guide_01Mar2021.pdf)
 
 This Exam Guide provides an overview of the topics covered in the exam, learning objectives, questions, and recommended study resources.
 

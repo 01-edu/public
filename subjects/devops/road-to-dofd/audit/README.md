@@ -12,7 +12,7 @@
 
 ##### Check learner knowledge:
 
-###### Did the student demonstrate a clear understanding of DevOps principles and concepts?
+###### Does the student demonstrate a clear understanding of DevOps principles and concepts?
 
 ###### Was the student able to explain the benefits of DevOps practices in software development and IT operations?
 
@@ -28,7 +28,7 @@
 
 ###### Was the student able to provide examples of real-world implementations of DevOps practices?
 
-##### Choose questions from the Sample Examination 1 and 2 sections in the Exam guide:
+##### Choose 15 questions from the Sample Examination 1 and 2 sections in the Exam guide:
 
 You can find the answers in the ANSWER KEY after each Sample Examination section.
 
@@ -36,4 +36,4 @@ You can find the answers in the ANSWER KEY after each Sample Examination section
 
 #### Bonus
 
-###### +Did the learner answer more than 20 questions correctly?
+###### +Did the learner answer more than 14 questions correctly?
