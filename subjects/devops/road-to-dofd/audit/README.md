@@ -1,6 +1,6 @@
 #### General
 
-##### Check learner effort:
+##### Ask the student to describe what they have done to prepare for the DevOps Institute Foundation Examination.
 
 ###### Did the student utilize the recommended study materials for the exam?
 
@@ -10,23 +10,23 @@
 
 ###### Did the student show proficiency in the domains covered in the exam guide?
 
-##### Check learner knowledge:
+##### Ask the student to describe what they have learned while preparing for the DevOps Institute Foundation Examination.
 
 ###### Does the student demonstrate a clear understanding of DevOps principles and concepts?
 
-###### Was the student able to explain the benefits of DevOps practices in software development and IT operations?
+###### Is the student able to explain the benefits of DevOps practices in software development and IT operations?
 
-###### Was the student able to explain the importance of DevOps culture and collaboration?
+###### Is the student able to explain the importance of DevOps culture and collaboration?
 
-###### Did the student showcase knowledge of key DevOps processes and practices?
+###### Does the student showcase knowledge of key DevOps processes and practices?
 
-###### Was the student able to identify common automation and tooling used in DevOps?
+###### Is the student able to identify common automation and tooling used in DevOps?
 
-###### Did the student understand the significance of measurement and metrics in DevOps?
+###### Does the student understand the significance of measurement and metrics in DevOps?
 
-###### Was the student able to explain the importance of sharing and communication in a DevOps environment?
+###### Is the student able to explain the importance of sharing and communication in a DevOps environment?
 
-###### Was the student able to provide examples of real-world implementations of DevOps practices?
+###### Is the student able to provide examples of real-world implementations of DevOps practices?
 
 ##### Choose 15 questions from the Sample Examination 1 and 2 sections in the [Exam guide](https://www.devopsinstitute.com/wp-content/uploads/2021/03/DOFD-v3.3-English-Exam-Study-Guide_01Mar2021.pdf).
 
