@@ -6,6 +6,10 @@ Create a file named `CatInFile.java`.
 
 Write a function `cat` that reads from standard input and write to file given as parameter.
 
+> ⚠️ You may read from the input some binary content.
+
+> 💡 Be aware of how much you read at once.
+
 ### Expected Functions
 
 ```java
