@@ -22,7 +22,6 @@ public class SortArgs {
 Here is a possible ExerciseRunner.java to test your function :
 
 ```java
-import java.nio.file.*;
 import java.io.*;
 
 public class ExerciseRunner {
