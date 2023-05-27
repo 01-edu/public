@@ -28,7 +28,7 @@
 
 ###### Was the student able to provide examples of real-world implementations of DevOps practices?
 
-##### Choose 15 questions from the Sample Examination 1 and 2 sections in the Exam guide:
+##### Choose 15 questions from the Sample Examination 1 and 2 sections in the [Exam guide](https://www.devopsinstitute.com/wp-content/uploads/2021/03/DOFD-v3.3-English-Exam-Study-Guide_01Mar2021.pdf).
 
 You can find the answers in the ANSWER KEY after each Sample Examination section.
 
