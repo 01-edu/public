@@ -8,7 +8,7 @@ Write a function `capitalize` that reads the text from a file given as the first
 
 ### Provided files
 
-You can find the input and its result file to use for the test.
+You can find the [input](input.txt) and its [result](result.txt) files to use for the test and to understand more what you have to do.
 
 ### Expected Functions
 
@@ -28,7 +28,6 @@ Here is a possible ExerciseRunner.java to test your function :
 
 ```java
 import java.io.*;
-import java.nio.file.*;
 
 public class ExerciseRunner {
     public static void main(String[] args) throws IOException {
