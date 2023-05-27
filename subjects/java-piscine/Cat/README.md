@@ -4,7 +4,13 @@
 
 Create a file named `Cat.java`.
 
-Write a function `cat` that reads from a file given as parameter and writes to the standard output.
+Write a function `cat` that reads from a file given as a parameter and writes to the standard output.
+
+> ⚠️ The files can have some binary content.
+
+> 💡 Be aware of how much you read at once.
+
+
 
 ### Expected Functions
 
@@ -35,9 +41,14 @@ public class ExerciseRunner {
         String output = outputStream.toString();
         System.out.println(outputStream.toString().equals("test input file\n"));
 
+
+        ByteArrayOutputStream outputStream2 = new ByteArrayOutputStream();
+        PrintStream printStream2 = new PrintStream(outputStream);
+        System.setOut(printStream2);
+
         Cat.cat(new String[]{});
-        String output = outputStream.toString();
-        System.out.println(outputStream.toString().equals(""));
+        String output = outputStream2.toString();
+        System.out.println(outputStream2.toString().equals(""));
     }
 }
 ```
