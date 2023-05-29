@@ -12,8 +12,8 @@ Your app should have the following functionalities:
 - Each `post` should display the total number of votes and comments they have.
 - Display the `username` of the `post` creator.
 - Display the submission time of the `post`.
-- Open the link in a [Webview](https://codelabs.developers.google.com/codelabs/flutter-webview#0) when a `post` is tapped.
-  - The user must be able to return to the main page once in the `webview`.
+- Open the link in a [WebView](https://codelabs.developers.google.com/codelabs/flutter-webview#0) when a `post` is tapped.
+  - The user must be able to return to the main page once in the `WebView`.
 
 On the website, users can `Post`, `Comment`, or `Reply` **only when they have an account**.
 

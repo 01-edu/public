@@ -2,9 +2,9 @@
 
 ###### Does the app show a list of all fetched posts on the main screen?
 
-###### When you tap on a post, does it open the content in a `webview`?
+###### When you tap on a post, does it open the content in a `WebView`?
 
-###### Is it possible to go back to the main page from the `webview`?
+###### Is it possible to go back to the main page from the `WebView`?
 
 ###### When you tap on the login button, does it open the login page?
 
