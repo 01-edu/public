@@ -12,7 +12,7 @@ In this exercise, you will develop a fully functional app that uses `JSON` files
 
 ### ListView
 
-Create a `ListView` which will show the `image`, `title`, and `genre` of movies from the given [Movies](movies.json) file. To create the `ListView`, you need to create a `Movie class` with the following properties:
+Create a `ListView` which will show the `image`, `title`, and `genre` of movies from the given [movies](movies.json) file. To create the `ListView`, you need to create a `Movie class` with the following properties:
 
 ```flutter
 class Movie {
