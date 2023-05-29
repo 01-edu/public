@@ -32,15 +32,15 @@ EX: go run . --color=<color> <letters to be colored> "something"
 
 ###### Does it display the expected result (the corresponding letter with that color)?
 
-##### Try specifying a set of letters to be colored(just two letters).
+##### Try specifying a set of letters to be colored (just two letters).
 
 ###### Does it display the expected result (the corresponding set of letters with that color)?
 
-##### Try passing as arguments `--color=orange "HeY GuYs"`, in order to color `GuYs`.
+##### Try passing as arguments `--color=orange GuYs "HeY GuYs"`, in order to color `GuYs`.
 
 ###### Does it display the expected result?
 
-##### Try passing as arguments `--color=blue 'RGB()'`, in order to color just the `B`.
+##### Try passing as arguments `--color=blue B 'RGB()'`, in order to color just the `B`.
 
 ###### Does it display the expected result?
 
