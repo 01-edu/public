@@ -36,15 +36,15 @@ I suggest to use the most recent one.
 
 # Exercise 0: Environment and libraries
 
-The goal of this exercise is to set up the Python work environment with the required libraries and to learn to launch a `jupyter notebook`. Jupyter notebooks are very convenient as they allow to write and test code within seconds. However, it really easy to implement instable and not reproducible code using notebooks. Keep the notebook and the underlying code clean. An article below detail when the Notebook should be used. Notebook can be used for most of the exercices of the piscine as the goal is to experiment A LOT. But no worries, you'll be asked to build a more robust structure for all the projects.
+The goal of this exercise is to set up the Python work environment with the required libraries and to learn to launch a `jupyter notebook`. Jupyter notebooks are very convenient as they allow to write and test code within seconds. However, it really easy to implement instable and not reproducible code using notebooks. Keep the notebook and the underlying code clean. An article below detail when the Notebook should be used. Notebook can be used for most of the exercises of the piscine as the goal is to experiment A LOT. But no worries, you'll be asked to build a more robust structure for all the projects.
 
-**Note:** For each quest, your first exercice will be to set up the virtual environment with the required libraries.
+**Note:** For each quest, your first exercise will be to set up the virtual environment with the required libraries.
 
 I recommend to use:
 
 - the **last stable versions** of Python. However, for educational purpose you will install a specific version of Python in this exercise.
-- the virtual environment you're the most confortable with. `virtualenv` and `conda` are the most used in Data Science.
-- one of the most recents versions of the libraries required
+- the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
+- one of the most recent versions of the libraries required
 
 1. Create a virtual environment named `ex00`, with Python `3.8`, with the following libraries: `numpy`, `jupyter`. Save the installed packages in `requirements.txt` in the current directory.
 
@@ -233,7 +233,7 @@ How to tell if a given 2D array has null columns?
 The goal of this exercise is to learn to use permutations, complex
 
 A Football tournament is organized in your city. There are 10 teams and the director of the tournaments wants you to create a first round as exciting as possible. To do so, you are allowed to choose the pairs. As a former data scientist, you implemented a model based on teams' current season performance. This models predicts the score difference between two teams. You used this algorithm to predict the score difference for every possible pair.
-The matrix returned is a 2-dimensional array that contains in (i,j) the score difference between team i and j. The matrix is in `model_forecasts.txt`.
+The matrix returned is a 2-dimensional array that contains in (i,j) the score difference between team i and j. The matrix is in [model_forecasts.txt](data/model_forecasts.txt).
 
 Using this output, what are the pairs that will give the most interesting matches ?
 
