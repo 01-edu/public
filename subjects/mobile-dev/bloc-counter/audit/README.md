@@ -8,7 +8,7 @@
 
 ###### Is the BLoC pattern implemented properly? Can you see the `BlocObserver`, `BlocProvider`, and `BlocBuilder` being used explicitly in the code?
 
-###### Are the `increment` and `decrement` operations implemented using the BLoC pattern, with the `CounterBloc` class managing the state of the counter?
+###### Is the `increment` operation implemented using the BLoC pattern, with the `CounterBloc` class managing the state of the counter?
 
 ###### Does the app properly display the current value of the counter, and does it update automatically when the counter's value changes?
 
