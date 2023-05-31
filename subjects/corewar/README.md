@@ -19,7 +19,7 @@ In this project we will recreate the necessary tools to run a more elaborate ver
 
 ### Game dynamics
 
-At its very base the game consists of having two or more programs (written by the contestants) that will be executed by the Virtual Machine in an arena (a sandbox memory space).
+At its very core the game consists of having two or more programs (written by the contestants) that will be executed by the Virtual Machine in an arena (a sandbox memory space).
 
 We will call those programs the "players" from now on since they will be the ones playing. Their creators won't have any possibility to interact with them or the arena during the match.
 
@@ -33,7 +33,7 @@ The winner will be the last player notifying the arena it was alive before the g
 The Virtual Machine is a simplified reproduction of how a CPU works.
 It will execute the binary code (the players) in the arena in cycles.
 
-At the start of the game each player will have one process, and this process will be placed at the start of each player memory space (the current place of a process is called program counter, or PC).
+At the start of the game each player will have one process, and this process will be placed at the start of each player memory space (the current position of a process is called program counter, or PC).
 
 Each process will also have a private memory space (the registers) and a carry.
 A carry is a special flag that may be changed by the result of some instructions, it can be used in many clever ways.
@@ -62,9 +62,9 @@ You should follow those specifications:
 - The assembler takes a `file.s` as input.
 - It return a `file.cor` as output.
 - `file.s` is a regular and boring text file.
-- `file.cor` is a binary file, in order to inspect it we suggest you to use command-tools like `hexdump`.
+- `file.cor` is a binary file, in order to inspect it we suggest you to use command-line tools like `hexdump`.
 - If there is any error in the source file the Assembler should exit with an error code, print a message on `stderr` (the more specific the better) and do not create any `file.cor`.
-- The binary must be written in big-endian.
+- The binary must be written in [big-endian](https://en.wikipedia.org/wiki/Endianness).
 
 ### The Virtual Machine
 
@@ -95,6 +95,29 @@ Those are the cases were a file is considered corrupted:
 - The size of the program is bigger that the maximum allowed size.
 - The total file size is smaller than the minimum size.
 
+### Greeting and end game messages
+
+At the start of each game the VM should print:
+
+```
+For this match the players will be:
+Player 1 ([X] bytes): [NAME] ([DESCRIPTION])
+Player 2 ([X] bytes): [NAME] ([DESCRIPTION])
+...
+```
+
+At the end of the game the vm should print `cycle [X]: The winner is player [X]: [NAME]!`.
+
+> If nobody executed a valid `live` statement the end message should be `cycle [X]: Nobody wins!`.
+
+#### Circular memory space of the arena
+
+The memory where the players will fight is circular, this means if we want to move forward from the last address in memory (for example `4095`) we will arrive at address `0`.
+
+It implies that moving backward of one position from `0` will bring us to the address `4095`.
+
+> Having circular memory guarantees players they will never overflow the memory space they are playing in.
+
 #### Stop player execution
 
 Every `CYCLE_TO_DIE` the VM will check for every player if it signaled it was alive at least once, if it didn't all processes created by this player will be immediately killed.
@@ -122,11 +145,11 @@ The instructions will be of different sizes depending on the number of type of p
 Labels are also called pseudo instructions, in the sense they won't be translated into binary code.
 They are widely used to help programmers creating assembly code without needing to remember and count relative memory positions.
 
-So when looking in the binaries the labels will be replaces in order to match their relative position in bytes from the place they were used.
+So when looking in the binaries the labels will be replaced in order to match their relative position in bytes from the place they were used.
 
 As an example in the `ameba.s` player `zjmp %:hello` is exactly the same of `zjmp %-5` (`-5` being `ff fb` in hexadecimal notation).
 
-Thi is because from the `zjmp` you will need to go back 5 bytes in order to match the label `hello:` declarations.
+This is because from the `zjmp` you will need to go back 5 bytes in order to match the label `hello:` declaration.
 
 > Notice that labels can be declared at the start of an instruction or on their own line.
 
@@ -145,7 +168,7 @@ A direct parameter is a value that represents itself, it is formatted by using `
 
 - Indirect parameter
 
-An indirect parameter will give you the relative position of the address where to look for the value, think of it as an ancestor of the raw pointers.
+An indirect parameter will give you the relative position of the address where to look for the value, think of it as an ancestor of raw pointers.
 
 In this case `10` will say to the VM to look ten bytes forward the current instruction and take the value from there.
 
@@ -204,15 +227,15 @@ Every two bits of this byte will inform the VM about the type of a parameter.
 - `10` will be used for a direct parameter.
 - `11` will be used for an indirect parameter.
 
-Here is an example of a pcode byte `01111000`:
+An example of a pcode byte could be `01111000`:
 
-This means the first parameter is expected to be a register, the second should be an indirect value and the third a direct value.
+Here the first parameter is expected to be a register, the second should be an indirect value and the third a direct value.
 
 > Those numbers are in binary base, for example `10` in binary is `2` in decimal.
 
 #### Has IDX field
 
-Some instruction will sum up direct values and/or use them as addressed to lookup into the arena memory space. For this reason we know that a full 32 bits integer won't be necessary and to save space we do save direct values on only two bytes in those cases.
+Some instruction will sum up direct values and/or use them as addresses to lookup into the arena memory space. For this reason we know that a full 32 bits integer won't be necessary and to save space we do save direct values on only two bytes in those cases.
 
 You have `Had Idx` column in the Instruction Set table, when it is true you must save and read direct parameters on two bytes, when false they will be saved on four bytes as usual.
 
@@ -226,7 +249,7 @@ The following commands will modify the carry of the process executing them: `ld`
 
 Those commands will set the carry to `true` if the result of their respective operations is `0`, and set it back to `false` otherwise.
 
-Only one command reads the carry and it's `zjmp`, if will do the jump if the carry is true and will do nothing otherwise.
+Only one command reads the carry and it's `zjmp`, it will do the jump if the carry is true and will do nothing otherwise.
 
 #### The file signature
 
@@ -268,13 +291,13 @@ Here is how it proceeds in order to do so:
 - The `sti` instruction will copy the value in the first register (which is the opposite of its id, so `-1` if this player is the first one).
 - It is interesting that this number will be copied at the address in memory corresponding to the label `hello` + 1 byte.
 - Said in other words this instruction is changing the argument of the `live` statement.
-- The `and` instruction will copy the result of the logic AND operator into the first register.
+- The `and` instruction will copy the result of the AND logic operator into the first register.
 - This result will be zero since any number AND 0 is zero. This have the side effect of setting the carry of this process to true.
-- The `live` statement notify the VM ameba is alive. Notice the specific value of the argument is irrelevant in this context since the `sti` instruction override it before the `live` is executed.
+- The `live` statement notify the VM the player is alive. Notice the specific value of the argument is irrelevant in this context since the `sti` instruction override it before the `live` is executed.
 - The `zjmp` brings the PC back to the start of the live instruction (creating a loop).
 - Notice `zjmp` only operates the jump if the carry is not equal to zero. This is why we executed the `and` instruction before.
 
-Now let's what this player binary looks like with `hexdump -C ameba.cor`:
+Now let's see what this player binary looks like with `hexdump -C ameba.cor`:
 
 ```
 00000000  00 ea 83 f3 61 6d 65 62  61 00 00 00 00 00 00 00  |....ameba.......|
@@ -300,13 +323,13 @@ Let's read it through:
 
 - The first 4 bytes `00 ea 83 f3` are the program signature (also called the magic), this is a 32 bits integer, represented as four 8 bits slices.
 - Then the next 128 bits are for the name of the program, the first five `61 6d 65 62 61` are the actual name, the others are zeros because we don't actually need it.
-- The we have 4 bytes `00 00 00 17` (so 23) which will be a 32 bits integer with the size in bytes of the program to be executed in the arena of the VM (so only the size of the instructions, without the name, description, signature and so on).
-- Then we have the description which works exactly the same as the name but it will adds a four bytes padding at the end of it.
+- Then we have 4 bytes `00 00 00 17` (so 23) which will be a 32 bits integer with the size in bytes of the program to be executed in the arena of the VM (so only the size of the instructions, without the name, description, signature and so on).
+- Then we have the description which works exactly the same as the name but it will adds four bytes padding at the end of it.
 
 The actual instructions starts from there:
 
 - The instruction `sti` is made by those bytes: `0b 68 01 00 0f 00 01`.
-- `0b` is the opcode, `68` is the pcode, `00 0f`, `01` is the first parameter, is the second parameter and `00 01` is the third parameter.
+- `0b` is the opcode, `68` is the pcode, `01` is the first parameter, `00 0f` is the second parameter and `00 01` is the third parameter.
 - Notice the last two parameters are written on two bytes each because `sti` has `Has Idx` set to true.
 - Next instruction is `and`, and it is `06 64 01 00 00 00 00 01`.
 - `06` is the opcode, `64` is the pcode, the first parameter is `01`, the second one is `00 00 00 00` and the third one is `01`.
@@ -317,7 +340,7 @@ The actual instructions starts from there:
 
 #### Testing environment
 
-You will be provided with a [playground]() containing:
+You will be provided with a [playground](data/playground.zip) containing:
 
 - A VM and an Assembler binaries to use as references.
 - A Dockerfile to run the binaries in a container.
@@ -332,15 +355,12 @@ While the functioning of the VM and the Assembler may seems quite strange and ob
 
 In this project you are indeed creating a Turing Complete machine largely inspired by Von Neumann architecture (which is still how today's processors works).
 
-### How your programs will be tested
+### Bonus
 
-
-
-#### Bonus
-
-Those bonus will be evaluated only if the Assembler and the VM are perfect.
+Those bonuses will be evaluated only if the Assembler and the VM are perfect.
 You can use external libraries (for example graphic libraries) in order to achieve them.
 
 - Create a disassembler that will take binary as input and return a `.s` file as output.
 - Create a visualizer to show what is happening in the VM in real time.
-- 
+- Introduce arithmetic operations support in the Assembly language.
+- Introduce a simple macro system in the Assembly language.
