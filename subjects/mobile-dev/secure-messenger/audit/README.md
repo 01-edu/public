@@ -1,23 +1,69 @@
 #### Functional
 
-> In order to run and hot reload app either on emulator or device, follow the [instructions](https://docs.flutter.dev/get-started/test-drive?tab=androidstudio#run-the-app)
+> In order to run and hot reload the app either on emulator or device, follow the [instructions](https://docs.flutter.dev/get-started/test-drive?tab=androidstudio#run-the-app)
 
-###### Was the app committed within the required time period?
+###### Does the app run without crashing?
 
-###### Does the app run without crashes?
+###### Does the app contain a `login/signup` page?
 
-###### Sign up withing your email. After signing up, try to log in to the messenger, can you authenticate?
+##### Signup as new user, and login to your account.
 
-###### After successful log-in, enable boimetric authentication via either fingerprint or face recognition and try to log in.
+###### Can you successfully authenticate?
 
-###### Search for any other user and try messaging them. Do messages appear on other user's app?
+###### Does the app have a user profile feature?
 
-###### Check whether messages are encrypted using other user's public key.
+###### Can users create a profile with a profile picture, username, and other information?
 
-###### Can you update your profile information including name, picture, username?
+##### Generate a QR code of your profile in the app.
 
-###### Generate QR code of your profile via app, does it contain information about you and your profile?
+###### Does it contain information about the user and his profile?
 
-###### Try sending video, audio, images via chat. Does the recipient get all the files correctly?
+###### Does the app support biometric authentication for user login?
 
-###### Create secret chat. Messages should be encrypted end-to-end, meaning messages must only be visible to users, but not on the backend of the app.
+##### Try to enable biometric authentication via either fingerprint or face recognition and try to login using one of them.
+
+###### Was it possible to login using biometric authentication?
+
+###### Is there a search feature that allows users to search for other users by username or other information?
+
+###### Can users add contacts by searching for their username or scanning a QR code?
+
+##### Search for any other user and try to create a chat and send him a message.
+
+###### Do messages appear in another user's app?
+
+##### Try sending video, audio, images in the chat.
+
+###### Does the app support sending text messages, images, and videos?
+
+###### Does the other user get all the files correctly?
+
+###### Does the app indicate if the message has been read by the recipient? Can you see read receipts for your sent messages?
+
+###### Can you see typing indicators when someone else is composing a message to you?
+
+###### Can users edit the messages they have sent?
+
+###### If a user edits a message, does the updated version replace the original message for all participants?
+
+###### Can users delete the messages they have sent?
+
+###### If a user deletes a message, is it removed from the conversation for all participants?
+
+##### Check if the app include a secret chat feature where messages are encrypted end-to-end, meaning that the messages must only be visible to users, but not on the backend of the app.
+
+###### Can users start encrypted one-on-one chats in secret chats?
+
+###### Are all messages in secret chats encrypted using an end-to-end algorithm? (Ask the student to show you if necessary)
+
+###### Does the app support both iOS and Android platforms?
+
+#### Bonus
+
+###### +Does the app provide appropriate error handling and error messages?
+
+###### +Are there any additional security features implemented in the app to protect user data?
+
+###### +Does the app have proper documentation and user guides available for users?
+
+###### +Is the app responsive and user-friendly, providing a smooth user experience?
