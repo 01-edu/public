@@ -1,6 +1,4 @@
-# Chess
-
-### Exercise
+## Chess
 
 Chess is a game of strategy and wit, played by noble kings and cunning commoners alike for centuries. Its origins are shrouded in mystery, with some saying it originated in ancient India as a war simulation, while others claim it was invented by the wise sages of Persia.
 
@@ -12,12 +10,40 @@ So whether you're a seasoned grandmaster or a newcomer to the game, join the ran
 
 Today, chess continues to be a beloved pastime, played by millions of people worldwide. And with the advent of modern technology, it has become easier than ever to play and learn the game. Mobile apps bring the game of chess to the palm of your hand, allowing you to enjoy this timeless classic anytime, anywhere. Whether you're a seasoned chess player or just starting out, chess offers a fun and engaging way to experience the history and strategy of this beloved game.
 
-Your task is to develop a mobile app that allows users to play chess with each other. This is a fullstack app so you will need to implement both backend and frontend. You may use any desired backend technology as long as you're following the [backend routes.](https://github.com/alem-01/chess). Good luck!
+### Instructions
 
-Here are some additional considerations to keep in mind as you work on this exercise:
+Your task is to develop a mobile app that allows users to play chess with each other. This is a fullstack app so you will need to implement both backend and frontend. You may use any desired backend technology as long as you're following the [backend routes.](https://github.com/alem-01/chess).
 
-1. Research different chess rules and app designs to get ideas for your own app.
-2. Think about how you will handle game state and moves within the app, and how you will ensure that the game is played fairly and accurately.
-3. Implement backend according to the swagger:
+Make sure that your app has the following requirements:
 
-By taking these factors into account, you can create a successful and engaging chess app that meets the objectives of the exercise.
+- Must have UI screens, including at least the following:
+  - A Main menu
+  - A Game board
+  - A waiting room
+- Must implement the logic to validate moves and enforce the rules of chess, disallowing illegal moves.
+- Must Ensure that white pieces always play first in each game.
+- Must have a multiplayer mode which enables players to challenge and play against other users in real-time matches.
+- Must have the ability for players to invite each other to a game or join a public game.
+- Must have a waiting room where players can wait for opponents and initiate game sessions.
+- Must have a notification system to alert players when it is their turn to make a move.
+
+### Hints
+
+- Configure your backend solution for managing the multiplayer functionality and game data storage.
+- Create the initial UI screens, including the main menu, waiting room and game board.
+- Implement the logic for validating and enforcing the rules of chess, disallowing illegal moves, and determining the turn order.
+- Research different chess rules and app designs to get ideas for your own app.
+- Think about how you will handle game state and moves within the app, and how you will ensure that the game is played fairly and accurately.
+
+### Bonus
+
+- **Game Over**, when the game reaches a terminal state (checkmate, stalemate, or draw), we can send a message to both players indicating that the game is over.
+
+- **Player X Won**, after determining the winner of the game, send a message to both players indicating which player has won.
+
+- **Restart**, to allow players to restart the game
+
+- **Board Reseet**, to enable players to reset the board without restarting the entire game
+- **Story Mode**: Design a single-player story mode where players can engage in chess matches against AI opponents, progressing through a series of challenges or levels.
+- **Bots**: Include AI-powered bots that players can play against in offline mode or when waiting for online opponents.
+- **Versus Computer Mode**: Develop a mode where players can play against a computer AI with adjustable difficulty levels.
