@@ -1,56 +1,35 @@
-# Stock Market
+## Stock Market
 
-### Exercise
+### Instructions
 
 Develop an app that will simulate a `real-time` stock market. You may use [Yahoo](https://algotrading101.com/learn/yahoo-finance-api-guide/#:~:text=Why%20should%20I%20use%20the%20Yahoo%20Finance%20API%3F,-Free&text=One%20good%20reason%20is%20because%20it%20can%20be%20completely%20free.) API for data retrieval.
+You should fetch all the data in real-time and choose 20 stocks to monitor. The objectives of this exercise are to practice fetching data in real-time, visualizing custom widgets in real-time, and implementing authentication and authorization services.
 
-Upon signing up, users will be given `1,000,000` fake dollars to use within the app for buying and holding stocks. The app should have the following features:
+Upon signing up, users must be given `1000000` fake dollars to use within the app for buying and holding stocks. The app should have the following features:
 
-- Login/logout functionality
-- Ability to buy and hold stocks
-- Historical charts of stock prices
-- Retrieval of data for a particular stock for the last year or since the company went public
-- Real-time updating of stock data (updating at least 5 times per second)
+- `Login/Signup`: Implement a login/signup page and the necessary functionality for user authentication and account creation.
+- `Wallet`: Develop a wallet page that displays all purchased stocks and the current portfolio of the user. The wallet should show the stocks owned by the user and their respective quantities.
+- `Historical Data`: Create a page that displays historical data for a chosen stock. This feature will allow users to view and analyze the past performance of a particular stock.
+- `Stock Trading`: Implement the ability to buy, sell, and hold stocks. Users should be able to use their simulated funds (starting balance: 1000000 fake dollars) to buy and sell stocks. The app should keep track of the user's stock holdings and balance.
+- `Historical Charts`: Provide historical charts of stock prices to help users visualize the stock performance over time. Implement a page that displays charts for the selected stock's price history.
+- `Real-Time Data`: Ensure that the stock data is updated in real-time. The data should be updated at least 5 times per second, providing users with the latest stock information.
+- Retrieval of data for a particular stock for the last year or since the company went public.
+- Choose 20 stocks to monitor and display their data within the application.
 
-Make sure to manage states via any of the following patterns:
+Make sure to manage states using one of the following patterns:
 
-- BLoC
+- BLoC (Business Logic Component)
 - Provider
-- MVC
+- MVC (Model-View-Controller)
 
-### Todo list
+### Hints
 
-- Route for login/signup page
-- Route with all the purchased stocks
-- Route to display historical data of the chosen stock
-- All the data must be fetched in real-time
-- Choose 20 stocks to monitor
-
-### Objective
-
-- A login/signup page
-- A page displaying all purchased stocks
-- A page displaying historical data for the chosen stock
-
-You should fetch all data in real-time and choose 20 stocks to monitor. The objectives of this exercise are to practice fetching data in real-time, visualizing custom widgets in real-time, and implementing authentication and authorization services.
-
-To complete this exercise, you will need to do the following:
-
-- Research the Yahoo API and determine how to use it to retrieve stock data.
-- Implement the login/logout functionality and user account management.
-- Allow users to buy and hold stocks within the app, using the fake dollars provided to them.
-- Implement the ability to view historical charts of stock prices.
-- Retrieve data for a particular stock for the last year or since the company went public.
-- Update stock data in real-time, at least 5 times per second.
-- Choose 20 stocks to monitor and display their data within the app.
-- Use one of the specified patterns (BLoC, Provider, MVC) to manage state within the app.
-- Implement the specified routes for the login/signup page, purchased stocks page, and historical data page.
-- Test the app thoroughly to ensure that it is functioning correctly and all objectives have been met.
-- Remember to follow best practices for coding and app development, and be sure to document your code and any decisions made during the development process. Good luck!
+- Create a separate route for the login/signup page.
+- Implement a route to display the user's purchased stocks and portfolio.
+- Design a route to display historical data for a selected stock.
+- Ensure all data is fetched and displayed in real-time.
 
 <center>
-
 <img src="./resources/stockMarket.01.jpg?raw=true" style = "width: 210px !important; height: 420px !important;"/>
-
 <img src="./resources/stockMarket.02.jpg?raw=true" style = "width: 210px !important; height: 420px !important;"/>
 </center>
