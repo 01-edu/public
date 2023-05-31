@@ -1,30 +1,68 @@
 #### Functional
 
-> In order to run and hot reload app either on emulator or device, follow the [instructions](https://docs.flutter.dev/get-started/test-drive?tab=androidstudio#run-the-app)
+> In order to run and hot reload the app either on emulator or device, follow the [instructions](https://docs.flutter.dev/get-started/test-drive?tab=androidstudio#run-the-app)
 
-###### Does the app run without crushes?
+###### Does the app run without crushing?
 
-###### Signup as new user, and login to your account. Do you have 1000000$ of fake dollars?
+###### Does the app contain a `login/signup` page?
 
-###### After logging in, buy 100 shares of AAPL stock. Check current price of the stock and see if stock appear in your wallet, and your fake dollars are decrease to the according amount.
+##### Signup as new user, and login to your account.
 
-###### Do similar operations with 4 other stocks of your choice. Does the app behave accordingly?
+###### Was is possible to login?
+
+###### Does the app contain a `Wallet` page?
+
+###### Does the app contain a page where you can see the historical data of a stock?
+
+###### Do you have 1000000$ of fake dollars on your account?
+
+##### Ask the student which where the 20 stocks he chose to monitored and display their data.
+
+###### Are the 20 stocks being monitored and do they display their data within the app?
+
+##### Buy 100 shares of a stock. Check the current stock price and make sure your fake dollar balance has decreased to the correct amount as per the purchase. See also if the stock has appeared in your portfolio, and
+
+###### Were you able to buy the stock?
+
+###### Is the stock appearing in your wallet?
+
+###### Was the fake money adjusted to the correct amount after buying the stock?
+
+##### Do similar operations with 4 other stocks of your choice.
+
+###### Does the app behave accordingly?
+
+###### Does the app display historical charts of the stock prices for the selected stock price history?
 
 ###### Does the app update data about a stock at least 5 times per second?
 
-###### Try to sell everything that you bought, do stock disappear from your wallet and fake dollars increase in the amount accordingly?
+##### Try to sell everything that you bought.
 
-###### Can you see historical data for any stock? You should be able to see the data either since company became public or for the past year.
+###### Was it possible to sell all the stocks?
+
+###### Do the stocks disappear from your wallet?
+
+###### Has the fake money been increased to the correct amount after selling the stocks?
+
+##### Try to see the historical data for any stock. You should be able to see the data either since company became public or for the past year.
+
+###### Were you able to see the historical data of the stocks?
 
 ###### Can you see historical data in days, weeks, and months slice?
 
-###### Ask student about pattern implementation. If they used BLoC ask them to explain the pattern, and [check](https://pub.dev/packages/flutter_bloc) whether they implemented it correctly. Is it the case?
+##### Ask the student which of the patterns, `BLoC`, `Pattern` or `MVC`, did they used? Ask them to explain the pattern that they used, and confirm if they implemented it correctly.
 
-###### Ask student about pattern implementation. If they used Provider ask them to explain the pattern, and [check](https://pub.dev/packages/provider) whether they implemented it correctly. Is it the case?
+[BLoC](https://pub.dev/packages/flutter_bloc)
+[Pattern](https://pub.dev/packages/provider)
+[MVC](https://pub.dev/packages/mvc_pattern)
 
-###### Ask student about pattern implementation. If they used MVC ask them to explain the pattern, and [check](https://pub.dev/packages/mvc_pattern) whether they implemented it correctly. Is it the case?
+###### Was the student able to explain his choice?
 
-###### Logout and try everything you just did with new account. Do you see similar behaviour?
+###### Was the chosen pattern implemented correctly?
+
+##### Logout and try everything you just did with a new account.
+
+###### Do you see a similar behavior?
 
 #### Bonus:
 
