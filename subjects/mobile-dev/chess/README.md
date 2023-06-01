@@ -21,7 +21,7 @@ Make sure that your app has the following requirements:
   - A Game board
   - A waiting room
 - Must implement the logic to validate moves and enforce the rules of chess, disallowing illegal moves.
-- Must Ensure that white pieces always play first in each game.
+- Must ensure that white pieces always play first in each game.
 - Must have a multiplayer mode which enables players to challenge and play against other users in real-time matches.
 - Must have the ability for players to invite each other to a game or join a public game.
 - Must have a waiting room where players can wait for opponents and initiate game sessions.
@@ -38,12 +38,7 @@ Make sure that your app has the following requirements:
 ### Bonus
 
 - **Game Over**, when the game reaches a terminal state (checkmate, stalemate, or draw), we can send a message to both players indicating that the game is over.
-
 - **Player X Won**, after determining the winner of the game, send a message to both players indicating which player has won.
-
 - **Restart**, to allow players to restart the game
-
-- **Board Reseet**, to enable players to reset the board without restarting the entire game
 - **Story Mode**: Design a single-player story mode where players can engage in chess matches against AI opponents, progressing through a series of challenges or levels.
 - **Bots**: Include AI-powered bots that players can play against in offline mode or when waiting for online opponents.
-- **Versus Computer Mode**: Develop a mode where players can play against a computer AI with adjustable difficulty levels.

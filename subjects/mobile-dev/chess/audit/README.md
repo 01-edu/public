@@ -1,6 +1,6 @@
 #### Functional
 
-#### In order to run and hot reload the app either on emulator or device, follow the [instructions](https://docs.flutter.dev/get-started/test-drive?tab=androidstudio#run-the-app).
+> In order to run and hot reload the app either on emulator or device, follow the [instructions](https://docs.flutter.dev/get-started/test-drive?tab=androidstudio#run-the-app).
 
 ###### Does the app run without crashing?
 
@@ -12,7 +12,7 @@
 
 ###### Does the app have all the UI screens requested?
 
-###### Does the app have a multiplayer mode for real-time matches which enables players to challenge and play against other?
+###### Does the app have a multiplayer mode for real-time matches which enables players to challenge and play against each other??
 
 ###### Can players invite each other to a game or join a public game?
 
@@ -30,22 +30,18 @@
 
 ##### Play the game until one player is mated.
 
-###### Does the game ends and the player who mated the other win?
+###### Does the game end and the player who mated the other win?
 
 ###### Does the backend generate a unique identifier (UUID) for each game session when a player joins the waiting room, ensuring proper identification and management of individual game sessions?
 
 #### Bonus
 
-###### +When the game reaches a terminal state (checkmate, stalemate, or draw), does the app send a message to both players indicating that the game is over?
+###### +When the game reaches a terminal state (checkmate, stalemate, or draw), does the app send a message to both players indicating that the game is over and the reason of being over?
 
 ###### +After determining the winner of the game, does the app send a message to both players indicating which player has won?
 
 ###### +Does the app allow players to restart the game?
 
-###### +Can players reset the board without restarting the entire game?
-
 ###### +Is there a single-player story mode where players can engage in chess matches against AI opponents, progressing through a series of challenges or levels?
 
 ###### +Are there AI-powered bots that players can play against in offline mode or when waiting for online opponents?
-
-###### +Does the app have a mode where players can play against a computer AI with adjustable difficulty levels?
