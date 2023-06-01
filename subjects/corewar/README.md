@@ -193,7 +193,7 @@ In this case `10` will say to the VM to look ten bytes forward the current instr
 | lld   | 2         | 13     | 10        | true      | false   | [Indirect, Direct]<br> Register                                            |
 | lldi  | 3         | 14     | 50        | true      | true    | [Register, Indirect, Direct]<br> [Register, Direct]                        |
 | lfork | 1         | 15     | 1000      | false     | true    | Direct                                                                     |
-| aff   | 1         | 16     | 2         | true      | false   | Register                                                                   |
+| nop   | 1         | 16     | 2         | true      | false   | Register                                                                   |
 
 
 - `live`: says to the VM the player with the id matching the opposite of the first parameter is alive. If the first parameter is `-2` it means player 2 is alive.
