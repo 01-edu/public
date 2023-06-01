@@ -1,9 +1,9 @@
-## twenty-forty-eight
+## Twenty-forty-eight
 
 It is April 2014, and the popular game "2048" has not yet been released. Your task is to implement the game before the official release. The objective of the game is to slide numbered tiles on a grid to combine them and create a tile with the number 2048.
 
 <center>
-<img src="./resources/2048.01.png?raw=true" style = "width: 500px !important; height: 300px !important;"/>
+<img src="./resources/2048.01.png?raw=true" style = "width: 228px !important; height: 328px !important;"/>
 </center>
 
 ### Instructions
