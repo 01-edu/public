@@ -1,4 +1,5 @@
 Array.prototype.forEach = undefined
+Array.prototype.map = undefined
 // /*/ // ⚡
 export const tests = []
 const t = f => tests.push(f)
