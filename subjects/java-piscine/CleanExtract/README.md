@@ -4,9 +4,9 @@
 
 Create a file `CleanExtract.java`.
 
-You are given a single string s consisting of several substrings separated by the '|' character. Unfortunately, some of these substrings contain unnecessary characters that need to be removed in order to form a well-structured output string.
+You are given a single string **S** consisting of several substrings separated by the '|' character. Unfortunately, some of these substrings contain unnecessary characters that need to be removed in order to form a well-structured output string.
 
-In particular, for each substring sub in s, you need to extract the portion of the string that is between the first '.' and the last '.' characters, and remove any leading or trailing white space from the extracted string. These extracted substrings should then be concatenated together using the ' ' character as a separator to form the output string.
+In particular, for each substring sub in **S**, you need to extract the portion of the string that is between the first '.' and the last '.' characters, and remove any leading or trailing white space from the extracted string. These extracted substrings should then be concatenated together using the ' ' character as a separator to form the output string.
 
 Write a function `CleanExtract` to solve this problem.
 
