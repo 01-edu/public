@@ -224,7 +224,7 @@ function runHTTPS() {
   echo "Enter the server FQDN $(tput setaf 2)[System: $(hostname)]$(tput sgr0):"
   read httpsFQDN
   # Check if the FQDN is valid
-  if ping -c1 -W1 $httpsFQDN 2>/dev/null; then
+  if dig +short $httpsFQDN >/dev/null 2>&1; then
     cd /root/core/https
     DOMAIN=$httpsFQDN ./run.sh
     echo -e "HTTPS service is up! \n"
