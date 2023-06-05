@@ -24,7 +24,7 @@ Build a secure mobile messaging app using `Flutter` and `Firebase` (or similar t
 
 - **Push notifications**, where users can receive notifications of new messages or friend requests using the `firebase_messaging` package.
 
-- **Error handling**, make the app provide appropriate error handling and error messages?
+- **Error handling**, make the app provide proper error handling and error messages.
 
 - **Additional security features**, make the app more secure.
 
