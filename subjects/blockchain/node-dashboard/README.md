@@ -24,11 +24,12 @@ Using the `infos` command, Benchy should display information on each node, in th
 
 ### Scenario
 
-To analyze our network, we need to simulate some transactions. Benchy should propose the following scenarios available with the command `benchy scenario X`. Each scenario must provide feedback on its execution, including updated balances after transfers. 0. Initialise the network by letting it run for a few minutes. Validating nodes must have Eth available as reward or part of the initial configuration.
+To analyze our network, we need to simulate some transactions. Benchy should propose the following scenarios available with the command `benchy scenario X`. Each scenario must provide feedback on its execution, including updated balances after transfers.
 
-1. Alice sends every 10 seconds 0.1 ETH to Bob
-2. Cassandra deploys an ERC20 smart contract with 3000 tokens BY, and gives 1000 to Driss and 1000 to Elena.
-3. Cassandra tries to send 1 ETH to Driss and immediately tries to cancel it by sending a transaction with a higher fee to send it to Elena.
+- Initialize the network by letting it run for a few minutes. Validating nodes must have Eth available as reward or part of the initial configuration.
+- Alice sends every 10 seconds 0.1 ETH to Bob
+- Cassandra deploys an ERC20 smart contract with 3000 tokens BY, and gives 1000 to Driss and 1000 to Elena.
+- Cassandra tries to send 1 ETH to Driss and immediately tries to cancel it by sending a transaction with a higher fee to send it to Elena.
 
 ### temporary-failure
 
