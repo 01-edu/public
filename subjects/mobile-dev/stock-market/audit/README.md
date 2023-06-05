@@ -8,7 +8,7 @@
 
 ##### Signup as new user, and login to your account.
 
-###### Was is possible to login?
+###### Was it possible to login?
 
 ###### Does the app contain a `Wallet` page?
 
