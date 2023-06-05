@@ -5,12 +5,12 @@
 Develop an app that will simulate a `real-time` stock market. You may use [Yahoo](https://algotrading101.com/learn/yahoo-finance-api-guide/#:~:text=Why%20should%20I%20use%20the%20Yahoo%20Finance%20API%3F,-Free&text=One%20good%20reason%20is%20because%20it%20can%20be%20completely%20free.) API for data retrieval.
 You should fetch all the data in real-time and choose 20 stocks to monitor. The objectives of this exercise are to practice fetching data in real-time, visualizing custom widgets in real-time, and implementing authentication and authorization services.
 
-Upon signing up, users must be given `1000000` fake dollars to use within the app for buying and holding stocks. The app should have the following features:
+Upon signing up, users must be given `1.000.000` fake dollars to use within the app for buying and holding stocks. The app should have the following features:
 
 - `Login/Signup`: Implement a login/signup page and the necessary functionality for user authentication and account creation.
 - `Wallet`: Develop a wallet page that displays all purchased stocks and the current portfolio of the user. The wallet should show the stocks owned by the user and their respective quantities.
 - `Historical Data`: Create a page that displays historical data for a chosen stock. This feature will allow users to view and analyze the past performance of a particular stock.
-- `Stock Trading`: Implement the ability to buy, sell, and hold stocks. Users should be able to use their simulated funds (starting balance: 1000000 fake dollars) to buy and sell stocks. The app should keep track of the user's stock holdings and balance.
+- `Stock Trading`: Implement the ability to buy, sell, and hold stocks. Users should be able to use their simulated funds (starting balance: 1.000.000 fake dollars) to buy and sell stocks. The app should keep track of the user's stock holdings and balance.
 - `Historical Charts`: Provide historical charts of stock prices to help users visualize the stock performance over time. Implement a page that displays charts for the selected stock's price history.
 - `Real-Time Data`: Ensure that the stock data is updated in real-time. The data should be updated at least 5 times per second, providing users with the latest stock information.
 - Retrieval of data for a particular stock for the last year or since the company went public.
