@@ -18,7 +18,7 @@ Three categories of financial instruments can be exchanged on the platform. Func
 
 - **Stablecoins**: It must be a standard fungible token (ERC20 or equivalent). It initially has 1000 units. The creator of the stablecoin can issue or remove units.
 - **Shares**: Shares are a fungible token for each company. Occasionally, its issuer can do a dividend payout. In that case, the issuer sends the stablecoin to the share contract, and each owner can retrieve proportionally to its possessions.
-- **Bonds: **A smart contract represents all the outstanding bonds from an issuer. Each bond has a unique serial number, a current principal, an interest rate, an issuance date, a maturity date, a current owner, and if it has been repaid. For simplicity, we assume each bond to be issued for one year, requiring only one payment.
+- **Bonds**: A smart contract represents all the outstanding bonds from an issuer. Each bond has a unique serial number, a current principal, an interest rate, an issuance date, a maturity date, a current owner, and if it has been repaid. For simplicity, we assume each bond to be issued for one year, requiring only one payment.
 
 ### Populating
 
@@ -139,7 +139,7 @@ A visualization part allows the user to have a sense of his possession in TRG. F
 
 An FAQ page that explains how to use the platform
 
-#### The server
+### The server
 
 The server serves the fronted using the database information, exposes an API for the frontend and interacts with the blockchain. Its API must offer a function to monitor deposits, triggered from the user interface, that verifies on the blockchain the transaction that sent the funds and another one to authorise withdrawals.
 
@@ -149,13 +149,13 @@ The database contains
 - A table of the users of the platform registered after the first connection. They must provide their legal name and upload a “passport” picture. No check is made when login in, but the picture is stored for future reference
 - A table of all ongoing sell and buy offers on the platform
 
-#### The vault smart contract
+### The vault smart contract
 
 The vault smart contract will receive the various financial assets. In a simple form, it includes an `operateWithdrawal(user, asset, amount)` reserved to the platform issuer allows the platform to send assets to the user, after verifying that the funds were theirs and that there are no pending orders.
 
 _Optionally, a more sophisticated security model can be proposed._
 
-#### Trade execution
+### Trade execution
 
 If a user, Aya, wants to sell CLV shares, she will go to the dedicated CLV page. On the panel on the right, she will select a number of shares, for instance 5, among her total number of shares, and a price, for instance, 9. The shares will then be transferred to the smart contract of the platform. Her address however will be approved to retrieve. When a user, Beatriz, wants to buy 3 CLV shares at the current market price, he selects this option on the panel. The platform will select the best offers. In this example, it will retain the 3 shares of Aya as available. Then, the platform will update the balance of both users in its database.
 
