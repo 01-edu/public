@@ -60,6 +60,14 @@
 
 #### Bonus
 
+###### +Can users create or join group chats with multiple users?
+
+###### +Do group chats have at least the same functionality as regular chats?
+
+###### +Do users receive push notifications when they receive new messages?
+
+###### +Are users able to receive push notifications for friend requests?
+
 ###### +Does the app provide appropriate error handling and error messages?
 
 ###### +Are there any additional security features implemented in the app to protect user data?
