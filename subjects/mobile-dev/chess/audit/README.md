@@ -32,13 +32,11 @@
 
 ###### Does the game end and the player who mated the other win?
 
+###### When the game reaches a terminal state (checkmate, stalemate, or draw), does the app send a message to both players indicating that the game is over and the reason of being over?
+
 ###### Does the backend generate a unique identifier (UUID) for each game session when a player joins the waiting room, ensuring proper identification and management of individual game sessions?
 
 #### Bonus
-
-###### +When the game reaches a terminal state (checkmate, stalemate, or draw), does the app send a message to both players indicating that the game is over and the reason of being over?
-
-###### +After determining the winner of the game, does the app send a message to both players indicating which player has won?
 
 ###### +Does the app allow players to restart the game?
 

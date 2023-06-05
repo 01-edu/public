@@ -26,6 +26,7 @@ Make sure that your app has the following requirements:
 - Must have the ability for players to invite each other to a game or join a public game.
 - Must have a waiting room where players can wait for opponents and initiate game sessions.
 - Must have a notification system to alert players when it is their turn to make a move.
+- When the game reaches a terminal state (checkmate, stalemate, or draw), you need to send a message to both players indicating that the game is over and which player has won.
 
 ### Hints
 
@@ -37,8 +38,6 @@ Make sure that your app has the following requirements:
 
 ### Bonus
 
-- **Game Over**, when the game reaches a terminal state (checkmate, stalemate, or draw), we can send a message to both players indicating that the game is over.
-- **Player X Won**, after determining the winner of the game, send a message to both players indicating which player has won.
 - **Restart**, to allow players to restart the game
 - **Story Mode**: Design a single-player story mode where players can engage in chess matches against AI opponents, progressing through a series of challenges or levels.
 - **Bots**: Include AI-powered bots that players can play against in offline mode or when waiting for online opponents.
