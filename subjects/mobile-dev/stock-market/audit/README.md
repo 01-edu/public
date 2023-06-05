@@ -14,7 +14,7 @@
 
 ###### Does the app contain a page where you can see the historical data of a stock?
 
-###### Do you have 1000000$ of fake dollars on your account?
+###### Do you have 1.000.000 fake dollars in your account?
 
 ##### Ask the student which where the 20 stocks he chose to monitored and display their data.
 
@@ -63,7 +63,3 @@
 ##### Logout and try everything you just did with a new account.
 
 ###### Do you see a similar behavior?
-
-#### Bonus:
-
-###### +Did any of your 2 accounts profit from transactions?
