@@ -12,7 +12,7 @@ Today, chess continues to be a beloved pastime, played by millions of people wor
 
 ### Instructions
 
-Your task is to develop a mobile app that allows users to play chess with each other. This is a fullstack app so you will need to implement both backend and frontend. You may use any desired backend technology as long as you're following the [backend routes.](resources/README.md).
+Your task is to develop a mobile app that allows users to play chess with each other. This is a fullstack app so you will need to implement both backend and frontend. You may use any desired backend technology as long as you're following the [backend routes.](https://github.com/alem-01/chess).
 
 Make sure that your app has the following requirements:
 
