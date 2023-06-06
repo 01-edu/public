@@ -9,10 +9,10 @@
 In this project, you will create a complete pipeline to scan and deploy a microservices-based application using Node.js. Your challenge is to design, implement, and optimize a pipeline that incorporates industry best practices for continuous integration, continuous deployment, and security. Your mission is to:
 
 - Set up a source control system for the Node.js microservices source code and the infrastructure configuration.
-- Create a Pipeline to create, update, or delete the infrastructure for the staging and production environment.
-- Create a continuous integration (CI) pipeline to build, test, and scan the source code.
-- Create a continuous deployment (CD) pipeline to deploy the application to a staging and production environment.
-- Ensure the security and reliability of the application throughout the pipeline stages.
+- Create a Pipeline to `create`, `update`, or `delete` the infrastructure for the staging and production environment.
+- Create a `continuous integration (CI)` pipeline to build, test, and scan the source code.
+- Create a `continuous deployment (CD)` pipeline to deploy the application to a staging and production environment.
+- Ensure the `security` and `reliability` of the application throughout the pipeline stages.
 
 ### Prerequisites
 
@@ -48,15 +48,15 @@ Prepare for a roleplay question session where you will assume the role of a DevO
 
 ### Deploy GitLab and Runners for Pipeline Execution
 
-You must deploy a GitLab instance using Ansible. This hands-on exercise will help you gain a deeper understanding of Ansible as a configuration management and automation tool while also giving you experience in deploying and configuring GitLab.
+You must deploy a `GitLab` instance using `Ansible`. This hands-on exercise will help you gain a deeper understanding of `Ansible` as a configuration management and automation tool while also giving you experience in deploying and configuring `GitLab`.
 
-1. Create an Ansible playbook to deploy and configure a GitLab instance. The playbook should automate the installation of GitLab and any required dependencies. It should also configure GitLab settings such as user authentication, project settings, and CI/CD settings.
+1. Create an `Ansible` playbook to deploy and configure a `GitLab` instance. The playbook should automate the installation of `GitLab` and any required dependencies. It should also configure `GitLab` settings such as user authentication, project settings, and CI/CD settings.
 
-2. Deploy a GitLab instance on a cloud platform (e.g., AWS, Azure, or Google Cloud) or in a local environment using the Ansible playbook. Ensure that the instance is accessible to all team members and is configured to support collaboration and code reviews.
+2. Deploy a `GitLab` instance on a cloud platform (e.g., AWS, Azure, or Google Cloud) or in a local environment using the `Ansible` playbook. Ensure that the instance is accessible to all team members and is configured to support collaboration and code reviews.
 
-3. Configure the GitLab instance to support CI/CD pipelines by setting up GitLab Runners and integrating them with your existing pipeline. Update your pipeline configuration to utilize GitLab CI/CD features and execute tasks on the deployed Runners.
+3. Configure the `GitLab` instance to support `CI/CD pipelines` by setting up `GitLab` Runners and integrating them with your existing pipeline. Update your pipeline configuration to utilize `GitLab CI/CD` features and execute tasks on the deployed Runners.
 
-4. Demonstrate the successful deployment and configuration of GitLab using Ansible.
+> You will need to demonstrate the successful deployment and configuration of `GitLab` using `Ansible` in the audit.
 
 ### The pipelines
 
@@ -86,20 +86,20 @@ The pipeline should include the following stages:
 
 - `Plan`: Generate an execution plan that shows the changes to be made to your infrastructure, including the resources that will be created, updated, or deleted. This job provides a preview of the changes and enables you to review them before applying.
 
-- `Apply to Stagging`: Apply the Terraform configuration to create, update, or delete the resources as specified in the execution plan. This job provisions and modifies the infrastructure in the staging environment.
+- `Apply to Stagging`: Apply the Terraform configuration to `create`, `update`, or `delete` the resources as specified in the execution plan. This job provisions and modifies the infrastructure in the staging environment.
 
 - `Approval`: Require manual approval to proceed with deployment to the `production environment`. This step should involve stakeholders and ensure the application is ready for production.
 
-- `Apply to Production`: Apply the Terraform configuration to create, update, or delete the resources as specified in the execution plan. This job provisions and modifies the infrastructure in the production environment.
+- `Apply to Production`: Apply the Terraform configuration to `create`, `update`, or `delete` the resources as specified in the execution plan. This job provisions and modifies the infrastructure in the production environment.
 
-3. Design and implement a CI pipeline for each repository that will be triggered on every code push or pull request. The pipeline should include the following stages:
+3. Design and implement a `CI pipeline` for each repository that will be triggered on every code push or pull request. The pipeline should include the following stages:
 
 - `Build`: Compile and package the application.
 - `Test`: Run unit and integration tests to ensure code quality and functionality.
 - `Scan`: Analyze the source code and dependencies for security vulnerabilities and coding issues. Consider using tools such as `SonarQube`, `Snyk`, or `WhiteSource`.
 - `Containerization`: Package the applications into Docker images using a Dockerfile, and push the images to a container registry (e.g., Docker Hub, Google Container Registry, or AWS ECR).
 
-4. Design and implement a CD pipeline that will be triggered after the CI pipeline has been completed. The pipeline should include the following stages:
+4. Design and implement a `CD pipeline` that will be triggered after the `CI pipeline` has been completed. The pipeline should include the following stages:
 
 - `Deploy to Staging`: Deploy the application to a `staging environment` for further testing and validation.
 - `Approval`: Require manual approval to proceed with deployment to the `production environment`. This step should involve stakeholders and ensure the application is ready for production.
@@ -113,13 +113,13 @@ The pipeline should include the following stages:
 
 Your pipelines and infrastructure should adhere to the following cybersecurity guidelines:
 
-- Restrict triggers to protected branches: Prevent unauthorized users from deploying or tampering by triggering pipelines only on protected branches, controlling access, and minimizing risk.
+- `Restrict triggers to protected branches`: Prevent unauthorized users from deploying or tampering by triggering pipelines only on protected branches, controlling access, and minimizing risk.
 
-- Separate credentials from code: Avoid storing credentials in application code or infrastructure files. Use secure methods like secret management tools or environment variables to prevent exposure or unauthorized access.
+- `Separate credentials from code`: Avoid storing credentials in application code or infrastructure files. Use secure methods like secret management tools or environment variables to prevent exposure or unauthorized access.
 
-- Apply the least privilege principle: Limit user and service access to the minimum required, reducing potential damage in case of breaches or compromised credentials.
+- `Apply the least privilege principle`: Limit user and service access to the minimum required, reducing potential damage in case of breaches or compromised credentials.
 
-- Update dependencies and tools regularly: Minimize security vulnerabilities by keeping dependencies and pipeline tools updated. Automate updates and monitor for security advisories and patches.
+- `Update dependencies and tools regularly`: Minimize security vulnerabilities by keeping dependencies and pipeline tools updated. Automate updates and monitor for security advisories and patches.
 
 ### Documentation
 
