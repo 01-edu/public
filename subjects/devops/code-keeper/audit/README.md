@@ -62,15 +62,13 @@ During the roleplay, ask them the following questions:
 
 ##### Review the Infrastructure Pipeline:
 
-###### Does the student deploy the `cloud-design` project infrastructure for two environments (staging, prod) on a cloud platform (e.g., AWS, Azure, or Google Cloud) using `Terraform`?
+###### Does the student deploy the infrastructure of the `cloud-design` project and the source code of `crud-master` project for two environments (staging, prod) on a cloud platform (e.g., AWS, Azure, or Google Cloud) using `Terraform`?
 
-###### Do the two environments are similar in design, resources, and services used?
+###### Are the two environments similar in design, resources and services used?
 
 ###### Does the student's infrastructure configuration exist in an independent repository with a configured pipeline?
 
-###### Are the Init, Validate, Plan, Apply to Staging, Approval, and Apply to production environment stages implemented correctly in the infrastructure pipeline?
-
-###### Are the Init, Validate, Plan, Apply to Staging, Approval, and Apply to stagging environment stages implemented correctly in the infrastructure pipeline?
+###### Are the "Init", "Validate", "Plan", "Apply to Staging", "Approval", and "Apply to production environment" stages implemented correctly in the infrastructure pipeline?
 
 ##### Review the CI Pipeline:
 
@@ -87,7 +85,7 @@ During the roleplay, ask them the following questions:
 - `Approval`: Require manual approval to proceed with deployment to the `production environment`. This step should involve stakeholders and ensure the application is ready for production.
 - `Deploy to Production`: Deploy the application to the `production environment`, ensuring zero downtime and a smooth rollout.
 
-###### Are the Deploy to Staging, Approval, and Deploy to Production stages implemented correctly in the CD pipeline for each repository?
+###### Are the "Deploy to Staging", "Approval", and "Deploy to Production" stages implemented correctly in the CD pipeline for each repository?
 
 ##### Review the functionality of pipelines:
 
@@ -113,12 +111,12 @@ During the roleplay, ask them the following questions:
 
 ##### Review the Documentation:
 
-###### Does the `README.md file contain all the necessary information about the solution (prerequisites, setup, configuration, usage, ...)?
+###### Does the `README.md` file contain all the necessary information about the solution (prerequisites, setup, configuration, usage, ...)?
 
 ###### Is the documentation provided by the student clear and complete, including well-structured diagrams and thorough descriptions?
 
 #### Bonus
 
-###### +Did the student add any optional bonus?
+###### +Did the student implemented any feature or anything that you would consider a bonus?
 
 ###### +Is this project an outstanding project?
