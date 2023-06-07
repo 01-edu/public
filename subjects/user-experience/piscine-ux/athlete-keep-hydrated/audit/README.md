@@ -106,7 +106,7 @@
 
 ###### Is there one main idea to solve the problem?
 
-### prototyping
+### Prototyping
 
 ###### Is there a zip folder?
 
