@@ -90,7 +90,7 @@
 
 ###### Is there an [affinity diagram](https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q1/affinity-diagram3.png) from the interviews?
 
-#### Second Personas
+#### Personas
 
 ###### Is the deliverable labeled as “Name_FirstName_DeliverableName_Date_VersionNumber”?
 
@@ -112,7 +112,7 @@
 
 ###### Are the persona's behaviors included (hobbies, technology, whatever seems relevant)?
 
-#### Second User Journey
+#### User journey
 
 ###### Is the deliverable labeled as “Name_FirstName_DeliverableName_Date_VersionNumber”?
 
@@ -130,7 +130,7 @@
 
 ###### Are the main pain points highlighted?
 
-#### Third Problem Statement
+#### Problem statement
 
 ###### Is the deliverable labeled as “Name_FirstName_DeliverableName_Date_VersionNumber”?
 
