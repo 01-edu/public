@@ -68,7 +68,7 @@ You should follow those specifications:
 
 ### The Virtual Machine
 
-The Virtual Machine role is to execute the binary programs (players) provided as `.cor` files.
+The Virtual Machine role is to execute the binary programs (players) provided as `.cor` files (for a maximum of 4 players).
 
 The VM must handle a `-d [NB_CYCLES]` flag (stating for "dump").
 If the flag is specified the VM will stop execution at `NB_CYCLES` and dump the memory in the arena in hexadecimal, writing 32 bytes per row.
@@ -79,6 +79,7 @@ You should follow those specifications:
 - If one of the `.cor` file is corrupted the VM should exit with an error code, print a message on `stderr` and do not execute the programs.
 - At the start of the battle the VM will print a welcome message as the one showed in the example.
 - At the end of the battle the VM will write the winner (if any) as the one showed in the example.
+- The players will be loaded into the arena starting by the first byte and they will be evenly spaced from each other.
 - The last program passed will be the first one executed during the cycle.
 - During a cycle the VM will load the instruction at the current PC and wait N cycles before to execute it (N being the cost of the instruction).
 - Only when executing the instruction the VM will check for the parameters it may have and it will execute it only if the parameters are correct, otherwise it will print an error on `stderr` and continue to execute.
