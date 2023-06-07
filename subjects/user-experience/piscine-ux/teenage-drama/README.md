@@ -1,44 +1,3 @@
-## Broadcast strategy
-
-### Instructions
-
-Define and run your broadcast strategy among teenagers (15-18 years old)
-
-Even though a proper survey requires at least 100 answers, for this exercise we request you to get 40.
-
-Don't forget to:
-
-- Upload the documents on Github, in a zip folder named “ProjectTitle_Name_FirstName”, with all project deliverables as follows: “Name_FirstName_DeliverableName_Date_VersionNumber”. For example, the first deliverable can be named as “Doe_John_MidFiPrototype_05242024_V1”.
-- Add a title within all written documents.
-
-### Deliverables
-
-- A PDF document gathering your strategy.
-  Please include:
-  - Who you are targeting (remember, you can focus on your hometown as well as the whole planet)
-  - A few ideas about how to reach them.
-  - The channels you intend to use - be specific and include the links to the groups, forums, pages, account you plan to reach.(at least 8 different channels)
-  - At least 2 different messages.
-  - A plan A, B and C.
-  - the 40 answers or more.
-- A document to express your main feedback after running your broadcast strategy: what worked best? have you encountered any difficulties? What were they? How did you overcome them?
-
-**Tips:**
-
-In order to do so, you need to be creative and strategic!
-
-- Who are you targeting? Teenagers, bullies, persecutor, witnesses, parents, teachers, people in the administration? From where?
-- How can you reach them? Through which channels? On which forums, groups, with which hashtags? Will you try to get them through influencers?
-- What words and what tone will you use?
-- How will you approach them? What message will you write?
-- What have you planned if they don't answer right away?
-- Pay attention to the global aspect of the deliverables. They must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
-
-Once your strategy is prepared, run it!
-
-**Resource:**
-
-- [How to get more survey responses](https://rafflepress.com/how-to-get-more-survey-responses/)
 ## Competitive Analysis
 
 **Context:**
@@ -85,116 +44,7 @@ Don't forget to:
 
 - 'Always design a thing in its larger context: a chair in a room, a room in a house, a house in an environment, an environment in a city plan’ Eero Sarrinen | Knoll
 - Creating a great design isn’t just about understanding what the user wants. It’s also about understanding and delivering on what the business needs.
-## Interviews
 
-### Instructions
-
-- Create an interview guide
-- Conduct 3 interviews with teenagers
-
-Don't forget to:
-
-- Upload the documents on Github, in a zip folder named “ProjectTitle_Name_FirstName”, with all project deliverables as follows: “Name_FirstName_DeliverableName_Date_VersionNumber”. For example, the first deliverable can be named as “Doe_John_MidFiPrototype_05242024_V1”.
-- Add a title within all written documents.
-
-After knowing more about trends and "What" people do thanks to surveys, the main goal is to understand "why".
-
-### Deliverables
-
-- A PDF document with an interview guide.
-- A PDF document with 3 scripts.
-- An affinity diagram from your interviews (PDF or digital, on Miro or Figma for example)
-
-**Tips:**
-
-Here are the recommended steps :
-
-1. Define your objective, what you are looking for when interviewing people. Usually, this has to do with your user's habits, and the most painful problems they have regarding this topic.
-2. Write down 1 to 3 hypotheses you have regarding this topic, that needs to be either confirmed or disproved.
-3. Pick 3 to 5 main topics you need to get information on.
-4. For each topic, write 1 to 3 open-ended questions. Remember, your user cannot answer with “Yes” or “No”! Ex: How, Why, What, When, Tell me about the last time you did... etc. If you really need to introduce a new topic by a close-ended question, ask why right after.
-5. Write some screening questions to have a few pieces of demographics (age, job, location, etc.)
-6. Structure your questions in a funnel: start with broad questions to focus on specific topics or situation. Remember to stay neutral in your tone to let the user tell their own story. Try to focus on 10 main questions.
-7. Write a greeting introduction, describing briefly (1) who you are and (2) what you are looking for. No need to say too much, but enough to provide a framework and the purpose of the interview.
-8. Write a conclusion to thank your user for their time, and prepare the next steps. Ex: ask to be put in touch with someone they know and who could be interested in this topic, etc.
-
-- Pay attention to the global aspect of the deliverables. They must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
-
-**Resources:**
-
-- [Respondent - Tool to find users](https://www.respondent.io)
-- [How to conduct user interviews](https://uxdesign.cc/how-to-conduct-user-interviews-fe4b8c34b0b7?sk=9625632a522a9309a91297191e668565)
-- [How to design better products through user interviews](https://uxdesign.cc/how-to-design-better-products-through-user-interviews-4c5142bb1fc4)
-- [Asking the right questions](https://uxdesign.cc/asking-the-right-questions-on-user-research-interviews-and-testing-427261742a67)
-## Second Personas
-
-### Instructions
-
-Let's create a persona based on your quantitative research and your interviews.
-
-Your persona card should include common trends amongst the people you got data from (habits, verbatims, fears, drivers, frustration, and pain points).
-
-- Upload the PDF document on Github, labeled as follows: “Name_FirstName_DeliverableName_Date_VersionNumber”. For example, it can be labeled as “Doe_John_MidFiPrototype_05242024_V1”.
-- Add a title within the document.
-
-**Reminder:** Your persona is fictional and should not have the exact name or picture as someone you interviewed, but remember a persona is here so you can make decisions as a designer.
-
-### Deliverables
-
-- A PDF persona card extracted from a Figma file.
-
-**Tips:**
-
-- Pay attention to the global aspect of the document. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
-
-**Resources:**
-
-- [Make your persona great again](https://uxdesign.cc/personas-e60c1c06ead1)
-- [Persona, journey maps, user flow, site map, OH MY!](https://uxdesign.cc/personas-journey-maps-site-maps-and-user-flows-oh-my-e71d044b4bcb)
-- [Persona framework](https://miro.medium.com/max/1400/0*RbHfR6BHhhFIENNf)
-
-**Quotes:**
-
-- "If you design for everyone, you delight no one."
-- "A good user persona is the one based on user research, without regard to how many attributes we can describe."
-## Second User Journey
-
-### Instructions
-
-Now you have your persona, it's time to set it in motion.
-
-Design a User Journey to represent your persona in their environment across the time, with key steps or actions related to our current topic (harassment).
-
-The timeline can be of a day, a few hours, or a week. Please include the key moments related to harassment alongside the emotions related to each step. Use the material from your interviews and surveys.
-
-Then, highlight the main pain points that need to be solved.
-
-- Upload the Figma file on Github, labeled as follows: “Name_FirstName_DeliverableName_Date_VersionNumber”. For example, it can be labeled as “Doe_John_MidFiPrototype_05242024_V1”.
-- Add a title within the file.
-
-**Deliverable:**
-
-- A Figma document with your persona's user journey.
-
-**Tips:**
-
-- Pay attention to the global aspect of the file. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
-
-**Resources:**
-
-Most articles you'll find will be about user journeys or customer journeys. Keep in mind that you can adapt this methodology to any persona with any kind of situation or process, even at school, outside the school, in the digital world, etc.
-
-- [A Lean UX Customer Journey Map](https://uxdesign.cc/proto-journey-a-lean-ux-customer-journey-map-30ea3a241edc)
-- [How to create a Customer Journey Map](https://www.youtube.com/watch?v=mSxpVRo3BLg)
-- [Journey Mapping: How to build it](https://www.lucidchart.com/blog/how-to-build-customer-journey-maps)
-- [Journey Mapping template](https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q3/SEO-initiative-customer-journey-mapping/CustomerJourneyMap1.png)
-- [Journey Mapping example on Figma](https://www.figma.com/file/5tittjiznRCWTNR2xI5FIT/Untitled?node-id=0%3A1)
-- [Example](https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q3/SEO-initiative-customer-journey-mapping/CustomerJourneyMap1.png)
-
-**Quotes:**
-
-- “More options = More problems.” Scott Belsky | VP of Product & Community Adobe
-- "A customer journey map is a visualization of the process that a person goes through in order to accomplish a goal. It’s used for understanding and addressing customer needs and pain points’ Norman Nielsen Group
 ## Surveys
 
 ### Instructions
@@ -248,7 +98,163 @@ Here are the recommended steps:
 
 - “Surveys measure and categorize attitudes or collect self-reported data that can help track or discover important issues to address.” Norman Nielsen Group
 - Surveys are not accurate in providing behavioral data because USERS OMIT STEPS IN THE MIDDLE AND MEMORIES ARE FAULTY.
-## Third problem statement
+
+## Broadcast strategy
+
+### Instructions
+
+Define and run your broadcast strategy among teenagers (15-18 years old)
+
+Even though a proper survey requires at least 100 answers, for this exercise we request you to get 40.
+
+Don't forget to:
+
+- Upload the documents on Github, in a zip folder named “ProjectTitle_Name_FirstName”, with all project deliverables as follows: “Name_FirstName_DeliverableName_Date_VersionNumber”. For example, the first deliverable can be named as “Doe_John_MidFiPrototype_05242024_V1”.
+- Add a title within all written documents.
+
+### Deliverables
+
+- A PDF document gathering your strategy.
+  Please include:
+  - Who you are targeting (remember, you can focus on your hometown as well as the whole planet)
+  - A few ideas about how to reach them.
+  - The channels you intend to use - be specific and include the links to the groups, forums, pages, account you plan to reach.(at least 8 different channels)
+  - At least 2 different messages.
+  - A plan A, B and C.
+  - the 40 answers or more.
+- A document to express your main feedback after running your broadcast strategy: what worked best? have you encountered any difficulties? What were they? How did you overcome them?
+
+**Tips:**
+
+In order to do so, you need to be creative and strategic!
+
+- Who are you targeting? Teenagers, bullies, persecutor, witnesses, parents, teachers, people in the administration? From where?
+- How can you reach them? Through which channels? On which forums, groups, with which hashtags? Will you try to get them through influencers?
+- What words and what tone will you use?
+- How will you approach them? What message will you write?
+- What have you planned if they don't answer right away?
+- Pay attention to the global aspect of the deliverables. They must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
+
+Once your strategy is prepared, run it!
+
+**Resource:**
+
+- [How to get more survey responses](https://rafflepress.com/how-to-get-more-survey-responses/)
+
+## Interviews
+
+### Instructions
+
+- Create an interview guide
+- Conduct 3 interviews with teenagers
+
+Don't forget to:
+
+- Upload the documents on Github, in a zip folder named “ProjectTitle_Name_FirstName”, with all project deliverables as follows: “Name_FirstName_DeliverableName_Date_VersionNumber”. For example, the first deliverable can be named as “Doe_John_MidFiPrototype_05242024_V1”.
+- Add a title within all written documents.
+
+After knowing more about trends and "What" people do thanks to surveys, the main goal is to understand "why".
+
+### Deliverables
+
+- A PDF document with an interview guide.
+- A PDF document with 3 scripts.
+- An affinity diagram from your interviews (PDF or digital, on Miro or Figma for example)
+
+**Tips:**
+
+Here are the recommended steps :
+
+1. Define your objective, what you are looking for when interviewing people. Usually, this has to do with your user's habits, and the most painful problems they have regarding this topic.
+2. Write down 1 to 3 hypotheses you have regarding this topic, that needs to be either confirmed or disproved.
+3. Pick 3 to 5 main topics you need to get information on.
+4. For each topic, write 1 to 3 open-ended questions. Remember, your user cannot answer with “Yes” or “No”! Ex: How, Why, What, When, Tell me about the last time you did... etc. If you really need to introduce a new topic by a close-ended question, ask why right after.
+5. Write some screening questions to have a few pieces of demographics (age, job, location, etc.)
+6. Structure your questions in a funnel: start with broad questions to focus on specific topics or situation. Remember to stay neutral in your tone to let the user tell their own story. Try to focus on 10 main questions.
+7. Write a greeting introduction, describing briefly (1) who you are and (2) what you are looking for. No need to say too much, but enough to provide a framework and the purpose of the interview.
+8. Write a conclusion to thank your user for their time, and prepare the next steps. Ex: ask to be put in touch with someone they know and who could be interested in this topic, etc.
+
+- Pay attention to the global aspect of the deliverables. They must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
+
+**Resources:**
+
+- [Respondent - Tool to find users](https://www.respondent.io)
+- [How to conduct user interviews](https://uxdesign.cc/how-to-conduct-user-interviews-fe4b8c34b0b7?sk=9625632a522a9309a91297191e668565)
+- [How to design better products through user interviews](https://uxdesign.cc/how-to-design-better-products-through-user-interviews-4c5142bb1fc4)
+- [Asking the right questions](https://uxdesign.cc/asking-the-right-questions-on-user-research-interviews-and-testing-427261742a67)
+
+## Personas
+
+### Instructions
+
+Let's create a persona based on your quantitative research and your interviews.
+
+Your persona card should include common trends amongst the people you got data from (habits, verbatims, fears, drivers, frustration, and pain points).
+
+- Upload the PDF document on Github, labeled as follows: “Name_FirstName_DeliverableName_Date_VersionNumber”. For example, it can be labeled as “Doe_John_MidFiPrototype_05242024_V1”.
+- Add a title within the document.
+
+**Reminder:** Your persona is fictional and should not have the exact name or picture as someone you interviewed, but remember a persona is here so you can make decisions as a designer.
+
+### Deliverables
+
+- A PDF persona card extracted from a Figma file.
+
+**Tips:**
+
+- Pay attention to the global aspect of the document. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
+
+**Resources:**
+
+- [Make your persona great again](https://uxdesign.cc/personas-e60c1c06ead1)
+- [Persona, journey maps, user flow, site map, OH MY!](https://uxdesign.cc/personas-journey-maps-site-maps-and-user-flows-oh-my-e71d044b4bcb)
+- [Persona framework](https://miro.medium.com/max/1400/0*RbHfR6BHhhFIENNf)
+
+**Quotes:**
+
+- "If you design for everyone, you delight no one."
+- "A good user persona is the one based on user research, without regard to how many attributes we can describe."
+
+## User journey
+
+### Instructions
+
+Now you have your persona, it's time to set it in motion.
+
+Design a User Journey to represent your persona in their environment across the time, with key steps or actions related to our current topic (harassment).
+
+The timeline can be of a day, a few hours, or a week. Please include the key moments related to harassment alongside the emotions related to each step. Use the material from your interviews and surveys.
+
+Then, highlight the main pain points that need to be solved.
+
+- Upload the Figma file on Github, labeled as follows: “Name_FirstName_DeliverableName_Date_VersionNumber”. For example, it can be labeled as “Doe_John_MidFiPrototype_05242024_V1”.
+- Add a title within the file.
+
+**Deliverable:**
+
+- A Figma document with your persona's user journey.
+
+**Tips:**
+
+- Pay attention to the global aspect of the file. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
+
+**Resources:**
+
+Most articles you'll find will be about user journeys or customer journeys. Keep in mind that you can adapt this methodology to any persona with any kind of situation or process, even at school, outside the school, in the digital world, etc.
+
+- [A Lean UX Customer Journey Map](https://uxdesign.cc/proto-journey-a-lean-ux-customer-journey-map-30ea3a241edc)
+- [How to create a Customer Journey Map](https://www.youtube.com/watch?v=mSxpVRo3BLg)
+- [Journey Mapping: How to build it](https://www.lucidchart.com/blog/how-to-build-customer-journey-maps)
+- [Journey Mapping template](https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q3/SEO-initiative-customer-journey-mapping/CustomerJourneyMap1.png)
+- [Journey Mapping example on Figma](https://www.figma.com/file/5tittjiznRCWTNR2xI5FIT/Untitled?node-id=0%3A1)
+- [Example](https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q3/SEO-initiative-customer-journey-mapping/CustomerJourneyMap1.png)
+
+**Quotes:**
+
+- “More options = More problems.” Scott Belsky | VP of Product & Community Adobe
+- "A customer journey map is a visualization of the process that a person goes through in order to accomplish a goal. It’s used for understanding and addressing customer needs and pain points’ Norman Nielsen Group
+
+## Problem statement
 
 ### Instructions
 
