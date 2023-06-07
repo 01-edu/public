@@ -1,4 +1,4 @@
-#### Third user flow
+#### User flow
 
 ###### Is there a zip folder labeled as “ProjectTitle_Name_FirstName”?
 
@@ -8,7 +8,7 @@
 
 ###### Are the documents clear, simple and easy to read?
 
-#### In Flow n1, n2 and n3:
+#### Movie wireframes
 
 ###### Are there 3 user flows?
 
@@ -34,7 +34,7 @@
 
 ###### Are the documents clear, simple and easy to read?
 
-#### In Flow n1, n2 and n3:
+#### Wireframes animation
 
 ###### Are there between 6 and 12 screens per flow?
 
