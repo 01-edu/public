@@ -1,42 +1,3 @@
-## Affinity diagram & Empathy map
-
-### Instructions
-
-Open your written scripts and extract the relevant information.
-
-1. Use paper or digital sticky notes (Post-its or Miro.com) to isolate the pieces of information your interviewees shared with you.
-
-   **1 idea, quote, or piece of information = 1 sticky note.**
-
-2. When all your scripts are written/typed down on sticky notes, gather them in clusters based on themes, opinions, habits, or anything they could have in common.
-3. Label the clusters.
-4. Draw conclusions.
-5. Fill an empathy map ONLY with the content from your affinity diagram.
-
-Don't forget to:
-
-- Upload the documents on Github, in a zip folder named “ProjectTitle_Name_FirstName”, with all project deliverables as follows: “Name_FirstName_DeliverableName_Date_VersionNumber”. For example, the first deliverable can be named as “Doe_John_MidFiPrototype_05242024_V1”.
-- Add a title within all written documents.
-
-### Deliverables
-
-- An Affinity Diagram (pictures of the Affinity Diagram on paper or on digital tools like Miro)
-- An Empathy Map (pictures of the Empathy Map on paper or on digital tools like Miro)
-
-**Tips:**
-
-- Pay attention to the global aspect of the deliverables. They must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
-
-**Resources:**
-
-- [What is an Affinity Diagram and how to use it](https://miro.com/blog/create-affinity-diagrams/)
-- [Affinity Diagram and Relation Examples](https://www.youtube.com/watch?v=VngWHIE4k9s)
-- [Updates Empathy Map Canvas by Dave Gray](https://medium.com/the-xplane-collection/updated-empathy-map-canvas-46df22df3c8a)
-- [Empathy Map by Krisztina Szerovay](https://uxknowledgebase.com/empathy-map-ca037e7686b6)
-
-**Quote:**
-
-Remember, you are not the user, so your opinions are not absolute truth.
 ## Interview guide
 
 **Context:**
@@ -84,6 +45,7 @@ Here are the recommended steps :
 **Quote:**
 
 “To ask open-ended questions is the best approach, but it’s easy to get into the weeds in data analysis when every answer is a paragraph or two of prose. Users quickly tire of answering many open-ended questions, which usually require a lot of typing and explanation.” Norman Nielsen Group
+
 ## Run interviews
 
 ### Instructions
@@ -105,7 +67,77 @@ Then, write down the script on a written document, and give elements of context 
 **Tips:**
 
 - Pay attention to the global aspect of the document. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
-## Second Ideation
+
+## Affinity diagram & Empathy map
+
+### Instructions
+
+Open your written scripts and extract the relevant information.
+
+1. Use paper or digital sticky notes (Post-its or Miro.com) to isolate the pieces of information your interviewees shared with you.
+
+   **1 idea, quote, or piece of information = 1 sticky note.**
+
+2. When all your scripts are written/typed down on sticky notes, gather them in clusters based on themes, opinions, habits, or anything they could have in common.
+3. Label the clusters.
+4. Draw conclusions.
+5. Fill an empathy map ONLY with the content from your affinity diagram.
+
+Don't forget to:
+
+- Upload the documents on Github, in a zip folder named “ProjectTitle_Name_FirstName”, with all project deliverables as follows: “Name_FirstName_DeliverableName_Date_VersionNumber”. For example, the first deliverable can be named as “Doe_John_MidFiPrototype_05242024_V1”.
+- Add a title within all written documents.
+
+### Deliverables
+
+- An Affinity Diagram (pictures of the Affinity Diagram on paper or on digital tools like Miro)
+- An Empathy Map (pictures of the Empathy Map on paper or on digital tools like Miro)
+
+**Tips:**
+
+- Pay attention to the global aspect of the deliverables. They must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
+
+**Resources:**
+
+- [What is an Affinity Diagram and how to use it](https://miro.com/blog/create-affinity-diagrams/)
+- [Affinity Diagram and Relation Examples](https://www.youtube.com/watch?v=VngWHIE4k9s)
+- [Updates Empathy Map Canvas by Dave Gray](https://medium.com/the-xplane-collection/updated-empathy-map-canvas-46df22df3c8a)
+- [Empathy Map by Krisztina Szerovay](https://uxknowledgebase.com/empathy-map-ca037e7686b6)
+
+**Quote:**
+
+Remember, you are not the user, so your opinions are not absolute truth.
+
+## Problem statement
+
+### Instructions
+
+Based on your previous work and your empathy map, define a problem statement that would clarify the main problem you want to tackle.
+
+You may use the "How Might We" exercise in pairs.
+
+- Upload the PDF document on Github, labeled as follows: “Name_FirstName_DeliverableName_Date_VersionNumber”. For example, it can be labeled as “Doe_John_MidFiPrototype_05242024_V1”.
+- Add a title within the document.
+
+**Deliverable:**
+
+- A PDF document with a problem statement starting with a "How Might We"
+
+**Tips:**
+
+- Pay attention to the global aspect of the document. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
+
+**Resources:**
+
+- [Stuck on a problem? Just ask how might we](https://relab.academy/design-thinking/stuck-on-a-problem-just-ask-how-might-we/)
+- [Problem statement](https://www.indeed.com/career-advice/career-development/what-is-a-problem-statement)
+- [Using "How Might We’ Questions to Ideate on the Right Problems](https://www.nngroup.com/articles/how-might-we-questions/)
+
+**Quote:**
+
+"Out of clutter, find simplicity. From discord, find harmony. In the middle of difficulty, lies opportunity.’ Albert Einstein
+
+## Ideation
 
 ### Instructions
 
@@ -147,35 +179,38 @@ Ideation techniques:
 Quote:
 
 - "Brainstorming means using the brain to storm a creative problem. Do so in commando fashion, with each stormer attacking the same objective.’ Alex Faickney Osborn
-## Second problem statement
+
+## User flow
 
 ### Instructions
 
-Based on your previous work and your empathy map, define a problem statement that would clarify the main problem you want to tackle.
+Structure your main ideas into a comprehensive user flow.
+You can include one, two, of the three main ideas from your previous exercise "Second Ideation" process, depending on how consistent it would be for the users.
 
-You may use the "How Might We" exercise in pairs.
+Don't forget to:
 
-- Upload the PDF document on Github, labeled as follows: “Name_FirstName_DeliverableName_Date_VersionNumber”. For example, it can be labeled as “Doe_John_MidFiPrototype_05242024_V1”.
-- Add a title within the document.
+- Upload the documents on Github, in a zip folder named “ProjectTitle_Name_FirstName”, with all project deliverables as follows: “Name_FirstName_DeliverableName_Date_VersionNumber”. For example, the first deliverable can be named as “Doe_John_MidFiPrototype_05242024_V1”.
+- Add a title within all written documents.
 
 **Deliverable:**
 
-- A PDF document with a problem statement starting with a "How Might We"
+- A comprehensive user flow on a board (digital or pictures of a paper version).
 
 **Tips:**
 
-- Pay attention to the global aspect of the document. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
+- Pay attention to the global aspect of the deliverables. They must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
 
 **Resources:**
 
-- [Stuck on a problem? Just ask how might we](https://relab.academy/design-thinking/stuck-on-a-problem-just-ask-how-might-we/)
-- [Problem statement](https://www.indeed.com/career-advice/career-development/what-is-a-problem-statement)
-- [Using "How Might We’ Questions to Ideate on the Right Problems](https://www.nngroup.com/articles/how-might-we-questions/)
+- [User flow glossary](https://www.productplan.com/glossary/user-flow/)
+- [Site flows vs User Flows](https://uxmovement.com/wireframes/site-flows-vs-user-flows-when-to-use-which/)
+- [How to make a User Flow diagram](https://www.lucidchart.com/blog/how-to-make-a-user-flow-diagram)
 
 **Quote:**
 
-"Out of clutter, find simplicity. From discord, find harmony. In the middle of difficulty, lies opportunity.’ Albert Einstein
-## Second prototyping
+"Each use case is represented as a sequence of simple steps, beginning with a user’s goal and ending when that goal is fulfilled.’ Usability.gov
+
+## Prototyping
 
 ### Instructions
 
@@ -209,32 +244,3 @@ Give another dimension to your user flow and turn it into a paper prototype (6 t
 **Quote:**
 
 Any design is like a joke …if you have to explain it, it’s bad.
-## User flow
-
-### Instructions
-
-Structure your main ideas into a comprehensive user flow.
-You can include one, two, of the three main ideas from your previous exercise "Second Ideation" process, depending on how consistent it would be for the users.
-
-Don't forget to:
-
-- Upload the documents on Github, in a zip folder named “ProjectTitle_Name_FirstName”, with all project deliverables as follows: “Name_FirstName_DeliverableName_Date_VersionNumber”. For example, the first deliverable can be named as “Doe_John_MidFiPrototype_05242024_V1”.
-- Add a title within all written documents.
-
-**Deliverable:**
-
-- A comprehensive user flow on a board (digital or pictures of a paper version).
-
-**Tips:**
-
-- Pay attention to the global aspect of the deliverables. They must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
-
-**Resources:**
-
-- [User flow glossary](https://www.productplan.com/glossary/user-flow/)
-- [Site flows vs User Flows](https://uxmovement.com/wireframes/site-flows-vs-user-flows-when-to-use-which/)
-- [How to make a User Flow diagram](https://www.lucidchart.com/blog/how-to-make-a-user-flow-diagram)
-
-**Quote:**
-
-"Each use case is represented as a sequence of simple steps, beginning with a user’s goal and ending when that goal is fulfilled.’ Usability.gov
