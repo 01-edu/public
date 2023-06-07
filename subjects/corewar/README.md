@@ -138,20 +138,7 @@ The instruction name is separated from the optional label and the parameters by 
 
 The parameters are separated from each other by `,`.
 
-The instructions will be of different sizes depending on the number of type of parameters passed.
-
-#### Labels
-
-Labels are also called pseudo instructions, in the sense they won't be translated into binary code.
-They are widely used to help programmers creating assembly code without needing to remember and count relative memory positions.
-
-So when looking in the binaries the labels will be replaced in order to match their relative position in bytes from the place they were used.
-
-As an example in the `ameba.s` player `zjmp %:hello` is exactly the same of `zjmp %-5` (`-5` being `ff fb` in hexadecimal notation).
-
-This is because from the `zjmp` you will need to go back 5 bytes in order to match the label `hello:` declaration.
-
-> Notice that labels can be declared at the start of an instruction or on their own line.
+The instructions will be of different sizes depending on the number and type of parameters passed.
 
 #### Parameters types
 
@@ -161,6 +148,8 @@ Each process has its own registers (from 1 to `REG_NUMBER`).
 Each of those registers can hold 32 bits, but the register number itself is written in only 8 bits (which are enough to go from 1 to 16).
 
 They are formatted as `r1`, `r2`, `...`, `r16`.
+
+The VM will initialize the registers to `0` for each player except for `r1` which will have `- PLAYER_ID`, so for the first player `r1 == -1`.
 
 - Direct parameter
 
@@ -195,7 +184,6 @@ In this case `10` will say to the VM to look ten bytes forward the current instr
 | lfork | 1         | 15     | 1000      | false     | true    | Direct                                                                     |
 | nop   | 1         | 16     | 2         | true      | false   | Register                                                                   |
 
-
 - `live`: says to the VM the player with the id matching the opposite of the first parameter is alive. If the first parameter is `-2` it means player 2 is alive.
 - `ld`: loads the first parameter into the registry passed as second parameter. (If the first parameter is Indirect, the VM will apply `% IDX_MOD` to it)
 - `st`: writes the value in the registry passed as the first parameter into the second parameter. (If the second parameter is Indirect, the VM will apply `% IDX_MOD` to it)
@@ -203,18 +191,29 @@ In this case `10` will say to the VM to look ten bytes forward the current instr
 - `sub`: subtract the first two arguments and writes the result into the third one.
 - `and`, `or`, `xor`: apply the respective bitwise operation to the first two parameters and saves it in the third one. (If the first and/or second parameters are Indirect, the VM will apply `% IDX_MOD` to them)
 - `zjmp`: moves the PC adding the value passed as the first parameter. (The VM will always apply `% IDX_MOD` to the first parameter)
-- `ldi`: writes the value contained at the address obtained by summing the first two arguments into the register in the third argument. (the VM will apply `% IDX_MOD` to the obtained address)
-- `sti`: writes the value of the register passed as the first argument into to address obtained by summing the last two arguments. (the VM will apply `% IDX_MOD` to the obtained address)
-- `fork`: creates a new process which will be an exact (deep) copy of the current one except for the PC which will be at the address specified in the argument. (the VM will apply `% IDX_MOD` to the first argument)
-- `lld`, `lldi`, `lfork`: those instructions are the long versions of `ld`, `ldi` and `fork`, which means the addresses won't be truncated by `IDX_MOD`. (since those instructions are "long" the modulo operation won't be applied on them)
+- `ldi`: writes the value contained at the address obtained by summing the first two arguments into the register in the third argument. (The VM will apply `% IDX_MOD` to the obtained address)
+- `sti`: writes the value of the register passed as the first argument into to address obtained by summing the last two arguments. (The VM will apply `% IDX_MOD` to the obtained address)
+- `fork`: creates a new process which will be an exact (deep) copy of the current one except for the PC which will be at the address specified in the argument. (The VM will apply `% IDX_MOD` to the first argument)
+- `lld`, `lldi`, `lfork`: those instructions are the long versions of `ld`, `ldi` and `fork`, which means the addresses won't be truncated by `IDX_MOD`. (Since those instructions are "long" the modulo operation won't be applied on them)
 - `nop`: this operation do nothing, it can still take one argument and has a pcode so be careful on how you implement it.
 
 > All addresses are relative to the current PC of the process.
 
-#### The `IDX_MOD` constant usage
+> Some instructions have to truncate the addresses they are given by applying modulo `IDX_MOD`.
+> This feature prevent players from reaching spaces in memory that are too far from the current PC, which means processes won't be able to attack each other straight away but will need to move by doing smaller steps, this help having more balanced games.
 
-Some instructions have to truncate the addresses they are given by applying modulo `IDX_MOD`.
-This feature prevent players from reaching spaces in memory that are too far from the current PC, which means processes won't be able to attack each other straight away but will need to move by doing smaller steps, this help having more balanced games.
+#### Labels
+
+Labels are also called pseudo instructions, in the sense they won't be translated into binary code.
+They are widely used to help programmers creating assembly code without needing to remember and count relative memory positions.
+
+So when looking in the binaries the labels will be replaced in order to match their relative position in bytes from the place they were used.
+
+As an example in the `ameba.s` player `zjmp %:hello` is exactly the same of `zjmp %-5` (`-5` being `ff fb` in hexadecimal notation).
+
+This is because from the `zjmp` you will need to go back 5 bytes in order to match the label `hello:` declaration.
+
+> Notice that labels can be declared at the start of an instruction or on their own line.
 
 #### Pcode field
 
@@ -247,7 +246,7 @@ The Carry of the processes in the VM is in that sense a simplified version of th
 
 The following commands will modify the carry of the process executing them: `ld`, `add`, `sub`, `and`, `or`, `xor`.
 
-Those commands will set the carry to `true` if the result of their respective operations is `0`, and set it back to `false` otherwise.
+Those commands will set the carry to `true` if the value written in the register is `0`, and set it to `false` otherwise.
 
 Only one command reads the carry and it's `zjmp`, it will do the jump if the carry is true and will do nothing otherwise.
 
@@ -364,3 +363,8 @@ You can use external libraries (for example graphic libraries) in order to achie
 - Create a visualizer to show what is happening in the VM in real time.
 - Introduce arithmetic operations support in the Assembly language.
 - Introduce a simple macro system in the Assembly language.
+
+### Resources
+
+- [Turing Machine](https://en.wikipedia.org/wiki/Turing_machine)
+- [Von Neumann Architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture)
