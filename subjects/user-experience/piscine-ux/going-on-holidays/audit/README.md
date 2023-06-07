@@ -94,7 +94,7 @@
 
 ###### Is it broad enough?
 
-#### Second Ideation
+#### Ideation
 
 ###### Is there a zip folder labeled as “ProjectTitle_Name_FirstName”?
 
@@ -132,7 +132,7 @@
 
 ###### Are the actions linked with arrows?
 
-#### Second prototyping
+#### Prototyping
 
 ###### Is there a zip folder labeled as “ProjectTitle_Name_FirstName”?
 
