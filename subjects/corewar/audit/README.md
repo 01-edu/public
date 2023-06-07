@@ -48,8 +48,6 @@
 
 ###### Does the VM returns a meaningful error and exit?
 
-###### Does the VM returns a meaningful error and exit?
-
 ##### Run the VM with four valid players and the flag `-d 10`.
 
 ###### Does the VM introduce each player by writing their name and description before to start the game?
