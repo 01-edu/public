@@ -1,49 +1,56 @@
-## Define
+## UX strategy
+
+**Context:**
+
+Elsa is a seamstress. She makes swimsuits on demand through her instagram account. It's going well, her community is growing as well as the amount of requests from customers.
+
+However, she loses a lot of time every time there is a request. To complete an order, she needs to ask for the shape of the swimsuit, the size, the color preferences and the expected delivery time. On top of that, she needs to make sure she has enough time to sew one piece. (every piece requires 6 hours)
+
+For now, she only works with private messages but she wishes she could spend less time on that part.
+
+You offer to help her design a solution to manage her time and workshop better. You have 4 working days.
 
 ### Instructions
 
-Run at least one of the Define tools in the design process.
+Now you have discovered and practiced many tools in the design process, organize a time frame for the next 4 working days.
+
+Select at least one tool for each phase, name it, and take into account the amount of time each phase may require.
+
+- Empathy / User Research
+- Define
+- Problem Statement
+- Ideation
+- Prototype
+- Test
 
 ### Deliverables
 
-- A PDF document with the script of the tool context.
-- Completed tool (scripts from user interviews, results from a quantitative analysis, etc.).
-- A PDF document with the key learnings from this phase.
+- A time frame, on PDF or on Figma, of the project, including:
+
+  - The working days ahead.
+  - Each phase of the process.
+  - The main tools you plan to use for each phase.
+  - The time you plan to spend for each tool.
 
 Don't forget to:
 
-- Upload the documents on Github, in a zip folder named “ProjectTitle_Name_FirstName”, with all project deliverables as follows: “Name_FirstName_DeliverableName_Date_VersionNumber”. For example, the first deliverable can be named as “Doe_John_MidFiPrototype_05242024_V1”.
-- Add a title within all written documents.
+- Upload the PDF or Figma document on Github, labeled as follows: “Name_FirstName_DeliverableName_Date_VersionNumber”. For example, it can be labeled as “Doe_John_MidFiPrototype_05242024_V1”.
+- Add a title within the document.
 
 **Tips:**
 
-- Use as many tools as needed, be make sure you do all the process in 4 working days!
-- Pay attention to the global aspect of the deliverables. They must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
+- Pay attention to the global aspect of the document. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
 
-**Criteria:**
+**Resource:**
 
-- Persona
+- [A sum up of all the tools that have been practiced](https://www.figma.com/file/x0xfoz9TaEDiAfGPFqKJcs/RECAP-UX%2FUI-Program?node-id=0%3A1). Focus on the UX part!
 
-  - The script is the list of insights the students uses to create the persona.
-  - The completed tool is a [Persona board](https://miro.medium.com/max/1400/0*RbHfR6BHhhFIENNf). Make sure the key insights come from the field, from reality, but the persona itself is different from only one user.
+**Quotes:**
 
-- Empathy Map
+- Design needs to fail. Failure is even a necessary step, but ideally it should happen before a product is launched, during the prototype and test phases
+- “UX Strategy lies at the intersection of UX and business. It provides a much better chance of creating successful products. It enables teams to see the “Big Picture” to achieve the business goals under uncertain conditions” Jamie Levy | UX Strategy: How to Devise Innovative Digital Products That People Want
+- UX Strategy is the method by which you validate that your solution solves a problem for real customers in a dynamic marketplace because the market is constantly changing.
 
-  - The script is the list of insights the student uses to create the Empathy map.
-  - The completed tool is an [Empathy Map](https://miro.medium.com/max/700/1*I1ffOWdPWQva3dCMQE-TAQ.png).
-
-- User Journey
-
-  - The script is the list of insights the student uses to create the User Journey.
-  - The completed tool is a [User Journey Map](https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q3/SEO-initiative-customer-journey-mapping/CustomerJourneyMap1.png).
-
-- Jobs-to-be-done (JTBD)
-
-  - The JTBD is tool that goes as a conclusion to another of the previous tools. Make sure:
-    - The sentence is complete.
-    - The "When" part involves a visit on the website.
-    - The "I want to" part involves a practical action.
-    - The "So I can" part involves a psychological or emotional purpose.
 ## Empathy
 
 ### Instructions
@@ -103,7 +110,55 @@ Don't forget to:
     - There is a [competitive table](https://venngage-wordpress.s3.amazonaws.com/uploads/2019/03/product-features-comparison-matrix.png)
     - With 5 to 10 criteria
     - 10 organizations appear on the table
-## Problem Statement
+
+## Define
+
+### Instructions
+
+Run at least one of the Define tools in the design process.
+
+### Deliverables
+
+- A PDF document with the script of the tool context.
+- Completed tool (scripts from user interviews, results from a quantitative analysis, etc.).
+- A PDF document with the key learnings from this phase.
+
+Don't forget to:
+
+- Upload the documents on Github, in a zip folder named “ProjectTitle_Name_FirstName”, with all project deliverables as follows: “Name_FirstName_DeliverableName_Date_VersionNumber”. For example, the first deliverable can be named as “Doe_John_MidFiPrototype_05242024_V1”.
+- Add a title within all written documents.
+
+**Tips:**
+
+- Use as many tools as needed, be make sure you do all the process in 4 working days!
+- Pay attention to the global aspect of the deliverables. They must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
+
+**Criteria:**
+
+- Persona
+
+  - The script is the list of insights the students uses to create the persona.
+  - The completed tool is a [Persona board](https://miro.medium.com/max/1400/0*RbHfR6BHhhFIENNf). Make sure the key insights come from the field, from reality, but the persona itself is different from only one user.
+
+- Empathy Map
+
+  - The script is the list of insights the student uses to create the Empathy map.
+  - The completed tool is an [Empathy Map](https://miro.medium.com/max/700/1*I1ffOWdPWQva3dCMQE-TAQ.png).
+
+- User Journey
+
+  - The script is the list of insights the student uses to create the User Journey.
+  - The completed tool is a [User Journey Map](https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q3/SEO-initiative-customer-journey-mapping/CustomerJourneyMap1.png).
+
+- Jobs-to-be-done (JTBD)
+
+  - The JTBD is tool that goes as a conclusion to another of the previous tools. Make sure:
+    - The sentence is complete.
+    - The "When" part involves a visit on the website.
+    - The "I want to" part involves a practical action.
+    - The "So I can" part involves a psychological or emotional purpose.
+
+## Problem statement
 
 ### Instructions
 
@@ -143,6 +198,29 @@ Design is about solving problems. Fall in Love with the Problem, Not the Solutio
   - Focused on the solution, not the problem —> The problem statement is supposed to rephrase the brief and take into account the insights from the previous phase.
 - How might make sure Pierre doesn’t get drunk the night before the race?
   - Out of scope —> This is not about dehydration, nor about running.
+
+## Ideation
+
+### Instructions
+
+Run at least one of the Ideation techniques in the design process.
+
+### Deliverables
+
+- A PDF document with the script of the tool context.
+- Completed tool: a board with all the ideas - on paper or digitally on Miro or Figma.
+- A PDF document with the key learnings from this phase.
+
+Don't forget to:
+
+- Upload the documents on Github, in a zip folder named “ProjectTitle_Name_FirstName”, with all project deliverables as follows: “Name_FirstName_DeliverableName_Date_VersionNumber”. For example, the first deliverable can be named as “Doe_John_MidFiPrototype_05242024_V1”.
+- Add a title within all written documents.
+
+**Tips:**
+
+- Use as many tools as needed, and make sure you do all the process in 4 working days!
+- Pay attention to the global aspect of the deliverables. They must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
+
 ## Prototype
 
 ### Instructions
@@ -186,7 +264,8 @@ Don't forget to:
   - Mid-Fidelity: Wireframes - black and white, only the main elements, on digital prototype tools - [Example here](https://miro.medium.com/max/1400/1*eGSfaxwYbxUFomYbyO6GWw.png)
   - High-Fidelity: Wireframes with color, styles, graphical details, and micro-interactions - [Example here](https://miro.medium.com/max/1400/1*Xn0HSKAvhr4TZzC9lN5udw.gif)
 - Pay attention to the global aspect of the deliverables. They must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
-## Second test protocol
+
+## Test protocol
 
 ### Instructions
 
@@ -217,76 +296,3 @@ Don't forget to:
 **Tips:**
 
 - Pay attention to the global aspect of the deliverables. They must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
-## Third Ideation
-
-### Instructions
-
-Run at least one of the Ideation techniques in the design process.
-
-### Deliverables
-
-- A PDF document with the script of the tool context.
-- Completed tool: a board with all the ideas - on paper or digitally on Miro or Figma.
-- A PDF document with the key learnings from this phase.
-
-Don't forget to:
-
-- Upload the documents on Github, in a zip folder named “ProjectTitle_Name_FirstName”, with all project deliverables as follows: “Name_FirstName_DeliverableName_Date_VersionNumber”. For example, the first deliverable can be named as “Doe_John_MidFiPrototype_05242024_V1”.
-- Add a title within all written documents.
-
-**Tips:**
-
-- Use as many tools as needed, and make sure you do all the process in 4 working days!
-- Pay attention to the global aspect of the deliverables. They must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
-## UX Strategy
-
-**Context:**
-
-Elsa is a seamstress. She makes swimsuits on demand through her instagram account. It's going well, her community is growing as well as the amount of requests from customers.
-
-However, she loses a lot of time every time there is a request. To complete an order, she needs to ask for the shape of the swimsuit, the size, the color preferences and the expected delivery time. On top of that, she needs to make sure she has enough time to sew one piece. (every piece requires 6 hours)
-
-For now, she only works with private messages but she wishes she could spend less time on that part.
-
-You offer to help her design a solution to manage her time and workshop better. You have 4 working days.
-
-### Instructions
-
-Now you have discovered and practiced many tools in the design process, organize a time frame for the next 4 working days.
-
-Select at least one tool for each phase, name it, and take into account the amount of time each phase may require.
-
-- Empathy / User Research
-- Define
-- Problem Statement
-- Ideation
-- Prototype
-- Test
-
-### Deliverables
-
-- A time frame, on PDF or on Figma, of the project, including:
-
-  - The working days ahead.
-  - Each phase of the process.
-  - The main tools you plan to use for each phase.
-  - The time you plan to spend for each tool.
-
-Don't forget to:
-
-- Upload the PDF or Figma document on Github, labeled as follows: “Name_FirstName_DeliverableName_Date_VersionNumber”. For example, it can be labeled as “Doe_John_MidFiPrototype_05242024_V1”.
-- Add a title within the document.
-
-**Tips:**
-
-- Pay attention to the global aspect of the document. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
-
-**Resource:**
-
-- [A sum up of all the tools that have been practiced](https://www.figma.com/file/x0xfoz9TaEDiAfGPFqKJcs/RECAP-UX%2FUI-Program?node-id=0%3A1). Focus on the UX part!
-
-**Quotes:**
-
-- Design needs to fail. Failure is even a necessary step, but ideally it should happen before a product is launched, during the prototype and test phases
-- “UX Strategy lies at the intersection of UX and business. It provides a much better chance of creating successful products. It enables teams to see the “Big Picture” to achieve the business goals under uncertain conditions” Jamie Levy | UX Strategy: How to Devise Innovative Digital Products That People Want
-- UX Strategy is the method by which you validate that your solution solves a problem for real customers in a dynamic marketplace because the market is constantly changing.
