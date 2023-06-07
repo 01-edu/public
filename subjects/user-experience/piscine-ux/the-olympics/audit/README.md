@@ -86,7 +86,7 @@
 
 ###### Are there multistate buttons that change every time you click somewhere?
 
-#### Test
+#### Test wireframe
 
 ###### Is there a zip folder labeled as “ProjectTitle_Name_FirstName”?
 
