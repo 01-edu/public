@@ -28,7 +28,7 @@
 
 ###### Are all the ideation techniques different?( Ideation A, Ideation B and Ideation C)
 
-#### Second User Flow
+#### User Flow
 
 ###### Is there a zip folder labeled as “ProjectTitle_Name_FirstName”?
 
@@ -48,7 +48,7 @@
 
 ###### Are the actions linked with arrows?
 
-#### Third Prototyping
+#### Prototyping
 
 ###### Is there a zip folder labeled as “ProjectTitle_Name_FirstName”?
 
@@ -86,7 +86,7 @@
 
 ###### Are there multistate buttons that change every time you click somewhere?
 
-#### Test Wireframe
+#### Test
 
 ###### Is there a zip folder labeled as “ProjectTitle_Name_FirstName”?
 
