@@ -32,7 +32,7 @@
 
 ###### Are the layers correctly indicated with numbers?
 
-#### Atomic Design system library
+#### Design system library
 
 ###### Is the deliverable labeled as “Name_FirstName_DeliverableName_Date_VersionNumber”?
 
