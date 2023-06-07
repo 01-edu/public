@@ -1,4 +1,4 @@
-#### UX Strategy
+#### UX strategy
 
 ###### Is the deliverable labeled as “Name_FirstName_DeliverableName_Date_VersionNumber”?
 
@@ -58,7 +58,7 @@
 
 ###### Is there a PDF document with the key learnings the students learnt from this phase?
 
-#### Fourth Problem Statement
+#### Problem statement
 
 ###### Is the deliverable labeled as “Name_FirstName_DeliverableName_Date_VersionNumber”?
 
@@ -74,7 +74,7 @@
 
 ###### Are there the key learnings the students learnt from this phase?
 
-#### Third Ideation
+#### Ideation
 
 ###### Is there a zip folder labeled as “ProjectTitle_Name_FirstName”?
 
@@ -130,7 +130,7 @@
 
 ###### Is there a PDF document with the key learnings the students learnt from this phase?
 
-#### Second test protocol
+#### Test protocol
 
 ###### Is there a zip folder labeled as “ProjectTitle_Name_FirstName”?
 
