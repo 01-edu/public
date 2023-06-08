@@ -26,7 +26,7 @@
 
 ###### Does the command provide feedback?
 
-###### Does the `infos` command show the updated ETH balance? 
+###### Does the `infos` command show the updated ETH balance?
 
 ###### Does the `infos` command displays transactions in the mempool?
 
@@ -50,7 +50,7 @@
 
 ###### Does it appear to be up to date a couple of minutes later?
 
-#### Bonus 
+#### Bonus
 
 ###### +Does the `-u` option allow you to launch each command with a regular update?
 

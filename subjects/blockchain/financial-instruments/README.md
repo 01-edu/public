@@ -8,11 +8,11 @@ In that context, we will build a financial instruments platform. First, we will 
 
 In this project, you are free to use the blockchain, technologies, and tools that you want. However, the project must offer complete documentation.
 
-## Private network
+### Private network
 
 The network must have a minimum of 3 validating nodes. A script must facilitate the deployment of the network. You can reuse prior work.
 
-## Financial instruments
+### Financial instruments
 
 Three categories of financial instruments can be exchanged on the platform. Functionally, each asset is a type of smart contract
 
@@ -20,7 +20,7 @@ Three categories of financial instruments can be exchanged on the platform. Func
 - **Shares**: Shares are a fungible token for each company. Occasionally, its issuer can do a dividend payout. In that case, the issuer sends the stablecoin to the share contract, and each owner can retrieve proportionally to its possessions.
 - **Bonds: **A smart contract represents all the outstanding bonds from an issuer. Each bond has a unique serial number, a current principal, an interest rate, an issuance date, a maturity date, a current owner, and if it has been repaid. For simplicity, we assume each bond to be issued for one year, requiring only one payment.
 
-## Populating
+### Populating
 
 In order to facilitate tests and audits, we will populate those financial instruments. An interactive script is available to create several addresses and deploy smart contracts.
 
@@ -35,7 +35,7 @@ Additionally, the script asks for two Ethereum addresses, Aya and Beatriz.
 - Aya should receive 200 TRG, 10 CLV and 2 GOV.
 - Beatriz should receive 150 TRV, 20 ROO and 5 GOV.
 
-## Marketplace
+### Marketplace
 
 The marketplace consists of
 
@@ -45,7 +45,7 @@ The marketplace consists of
 
 Our model is hybrid, as order execution is centralised, but assets are not in full custody of the platform.
 
-## Web interface
+### Web interface
 
 The interface must consist of a homepage, an asset page, a portfolio page, and an FAQ page.
 
@@ -139,7 +139,7 @@ A visualization part allows the user to have a sense of his possession in TRG. F
 
 An FAQ page that explains how to use the platform
 
-## The server
+#### The server
 
 The server serves the fronted using the database information, exposes an API for the frontend and interacts with the blockchain. Its API must offer a function to monitor deposits, triggered from the user interface, that verifies on the blockchain the transaction that sent the funds and another one to authorise withdrawals.
 
@@ -149,23 +149,23 @@ The database contains
 - A table of the users of the platform registered after the first connection. They must provide their legal name and upload a “passport” picture. No check is made when login in, but the picture is stored for future reference
 - A table of all ongoing sell and buy offers on the platform
 
-## The vault smart contract
+#### The vault smart contract
 
 The vault smart contract will receive the various financial assets. In a simple form, it includes an `operateWithdrawal(user, asset, amount)` reserved to the platform issuer allows the platform to send assets to the user, after verifying that the funds were theirs and that there are no pending orders.
 
 _Optionally, a more sophisticated security model can be proposed._
 
-## Trade execution
+#### Trade execution
 
 If a user, Aya, wants to sell CLV shares, she will go to the dedicated CLV page. On the panel on the right, she will select a number of shares, for instance 5, among her total number of shares, and a price, for instance, 9. The shares will then be transferred to the smart contract of the platform. Her address however will be approved to retrieve. When a user, Beatriz, wants to buy 3 CLV shares at the current market price, he selects this option on the panel. The platform will select the best offers. In this example, it will retain the 3 shares of Aya as available. Then, the platform will update the balance of both users in its database.
 
 The platform must handle all the cases where various offers must be used to fulfil a demand.
 
-## Withdrawal
+### Withdrawal
 
 At any point, the users can ask to withdraw their funds. On their portfolio page, users can click on assets that are on the platform. The platform server verifies that the assets are not part of any pending offer and send an `operateWithdrawal()` to the vault smart contract. Once validated, the frontend updates the user information.
 
-## Documentation
+### Documentation
 
 In addition to the FAQ on the website explaining functionality as mentioned in the interface section, we need a full developer documentation. It must explain
 
