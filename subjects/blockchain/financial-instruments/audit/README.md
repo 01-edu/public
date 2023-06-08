@@ -34,7 +34,7 @@
 
 ##### As the first user, Aya, opens the CLV page and offers to sell 10 CLV at 9 TRG
 
-###### Does the interface reflect the amount of CLV available to Aya? 
+###### Does the interface reflect the amount of CLV available to Aya?
 
 ###### Does the order validation trigger a transfer of funds?
 

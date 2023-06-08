@@ -36,7 +36,7 @@ In addition, each token is linked to an Uniform Resource Identifier (URI) where 
 
 ---
 
-## Exercise 1: Napping Cats
+### Exercise 1: Napping Cats
 
 In this exercise we will create a basic NFT smart contract, and use it to instantiate an NFT collection with some custom functions
 
@@ -76,7 +76,7 @@ _Optionally, the price for new tokens is an auction. It starts at 100x of the in
 
 ---
 
-## Exercise 2: Showcase
+### Exercise 2: Showcase
 
 We will now be able to display our NFT collection on a website and allow user to use the interface to buy and sell tokens.
 
@@ -103,7 +103,7 @@ We will now be able to display our NFT collection on a website and allow user to
 
 ---
 
-## Exercise 3: Automated Reveal (Optional)
+### Exercise 3: Automated Reveal (Optional)
 
 In some auctions, NFT images are only revealed once purchased.
 
