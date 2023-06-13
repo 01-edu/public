@@ -138,15 +138,11 @@ user:~$
 
 ###### Is the connection to the api-gateway-app the only one exposed from outside of the Docker host?
 
-###### Is the connection to the api-gateway-app protected by SSL certification (self-signed certification is authorized)?
-
 ##### Ask the following questions to the group or student
 
 ##### What is the Docker network?
 
 ##### Why do we use the Docker network?
-
-##### What is an SSL certification and why do we use it?
 
 ###### Did the student reply correctly to the questions?
 
