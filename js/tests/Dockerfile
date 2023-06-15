@@ -16,7 +16,7 @@ ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
     PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
 
 RUN yarn add puppeteer@15.3.2
-RUN npm install dotenv
+RUN yarn add dotenv
 
 WORKDIR /app
 COPY . .
