@@ -1,17 +1,17 @@
-## printfirsthalf
+## retainfirsthalf
 
 ### Instructions
 
-Write a function called `PrintFirstHalf()` that takes a `string` as an argument and prints the first half of a `string` followed by a newline `\n`.
+Write a function called `RetainFirstHalf()` that takes a `string` as an argument and returns the first half of this `string`.
 
 - If the length of the `string` is odd, round it down.
-- If the `string` is empty, return `Invalid Output` followed by a newline `\n`.
-- If the `string` length is equal to one, return the `string` followed by a newline `\n`.
+- If the `string` is empty, return an empty string.
+- If the `string` length is equal to one, return the string.
 
 ### Expected function
 
 ```go
-func PrintFirstHalf(str string) string {
+func RetainFirstHalf(str string) string {
 
 }
 ```
@@ -29,9 +29,10 @@ import (
 )
 
 func main() {
-	fmt.Print(piscine.PrintFirstHalf("This is the 1st halfThis is the 2nd half"))
-	fmt.Print(piscine.PrintFirstHalf(""))
-	fmt.Print(piscine.PrintFirstHalf("Hello World"))
+	fmt.Println(solutions.RetainFirstHalf("This is the 1st halfThis is the 2nd half"))
+	fmt.Println(solutions.RetainFirstHalf("A"))
+	fmt.Println(solutions.RetainFirstHalf(""))
+	fmt.Println(solutions.RetainFirstHalf("Hello World"))
 }
 ```
 
@@ -40,6 +41,7 @@ And its output:
 ```console
 $ go run . | cat -e
 This is the 1st half$
-Invalid Output$
+A$
+$
 Hello$
 ```
