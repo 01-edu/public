@@ -1,0 +1,46 @@
+name: 🌳 On Branch - Build and Test Docker Image
+
+on:
+  pull_request:
+    branches: ["master"]
+
+jobs:
+  build-image:
+    name: 🏗️ Build Image
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🐧 Checkout
+        uses: actions/checkout@v3
+
+      - name: 📦 Login to GitHub Container Registry
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 🐳 Login to docker.01-edu.org Registry
+        uses: docker/login-action@v2
+        with:
+          registry: docker.01-edu.org
+          username: ${{ secrets.USER_DOCKER_01EDU_ORG }}
+          password: ${{ secrets.SECRET_DOCKER_01EDU_ORG }}
+
+      - name: 🏗️ Build the 💻 Sh Docker image
+        if: always()
+        run: |
+          docker build sh/tests/ --file sh/tests/Dockerfile --tag ghcr.io/01-edu/test-sh:PR${{ github.event.pull_request.number }}
+          docker push ghcr.io/01-edu/test-sh:PR${{ github.event.pull_request.number }}
+
+      - name: 🏗️ Build the 🚀 JS Docker image
+        if: always()
+        run: |
+          docker build js/tests/ --file js/tests/Dockerfile --tag ghcr.io/01-edu/test-js:PR${{ github.event.pull_request.number }}
+          docker push ghcr.io/01-edu/test-js:PR${{ github.event.pull_request.number }}
+
+      - name: 🏗️ Build the 🧩 DOM Docker image
+        if: always()
+        run: |
+          docker build . --file dom/Dockerfile --tag ghcr.io/01-edu/test-dom:PR${{ github.event.pull_request.number }}
+          docker push ghcr.io/01-edu/test-dom:PR${{ github.event.pull_request.number }}
