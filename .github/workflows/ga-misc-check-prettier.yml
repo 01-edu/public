@@ -1,26 +1,28 @@
-name: 'Prettier check'
+name: 💄 GA-Misc - Check-Prettier
+
 on:
   pull_request:
-    branches:
-      - master
+    paths-ignore:
+      - '.github/**'
+    branches: [master]
+
 jobs:
-  build:
+  GA-Misc-Check-Prettier:
     runs-on: ubuntu-latest
-    name: Run prettier on changed files
+
     steps:
-      - uses: actions/checkout@v3
+      - name: 🐧 Checkout
+        uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # OR "2" -> To retrieve the preceding commit.
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
 
-      - name: Get all changed *.md file(s) 
-        id: changed-md
-        uses: tj-actions/changed-files@v35
+      - name: 💄 Run Prettier
+        uses: creyD/prettier_action@v4.3
         with:
-          files: |
-            **/*.md
-
-      - name: Run step if any *.md file(s) changed 
-        if: steps.changed-md.outputs.any_changed == 'true'
-        run: |
-          npm i -g prettier
-          npx prettier -c ${{steps.changed-md.outputs.all_changed_files}}
+          prettier_options: --write **/*.{js,md,yml,json,sh}
+          prettier_plugins: 'prettier-plugin-sh'
+          commit_message: "chore(codebase): format with prettier"
+          only_changed: True
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
