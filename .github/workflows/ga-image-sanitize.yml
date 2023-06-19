@@ -1,0 +1,76 @@
+name: 🧼 Sanitize – Generated Docker Images
+
+on:
+  pull_request:
+    types: [closed]
+  workflow_dispatch:
+    inputs:
+      keep-last:
+        description: >
+          Delete all untagged images except the last N
+        required: false
+        default: "1"
+
+jobs:
+  delete-pr-tagged-image:
+    name: 🗑️ Delete PR${{github.event.pull_request.number}} Image
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🗑️ Delete 💻 Sh image PR${{github.event.pull_request.number}}
+        uses: bots-house/ghcr-delete-image-action@v1.1.0
+        with:
+          owner: 01-edu
+          name: test-sh
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: PR${{github.event.pull_request.number}}
+        continue-on-error: true
+        
+      - name: 🗑️ Delete 🚀 JS image PR${{github.event.pull_request.number}}
+        uses: bots-house/ghcr-delete-image-action@v1.1.0
+        with:
+          owner: 01-edu
+          name: test-js
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: PR${{github.event.pull_request.number}}
+        continue-on-error: true
+  
+      - name: 🗑️ Delete 🧩 DOM image PR${{github.event.pull_request.number}}
+        uses: bots-house/ghcr-delete-image-action@v1.1.0
+        with:
+          owner: 01-edu
+          name: test-dom
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: PR${{github.event.pull_request.number}}
+        continue-on-error: true
+        
+  delete-untagged-images:
+    name: 🔥 Clear Untagged Images
+    needs: delete-pr-tagged-image
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🔥 Clear all untagged 💻 Sh images
+        uses: bots-house/ghcr-delete-image-action@v1.1.0
+        with:
+          owner: 01-edu
+          name: test-sh
+          token: ${{ secrets.GITHUB_TOKEN }}
+          untagged-keep-latest: ${{ github.event.inputs.keep-last }}
+        continue-on-error: true
+
+      - name: 🔥 Clear all untagged 🚀 JS images
+        uses: bots-house/ghcr-delete-image-action@v1.1.0
+        with:
+          owner: 01-edu
+          name: test-js
+          token: ${{ secrets.GITHUB_TOKEN }}
+          untagged-keep-latest: ${{ github.event.inputs.keep-last }}
+        continue-on-error: true
+
+      - name: 🔥 Clear all untagged 🧩 DOM images
+        uses: bots-house/ghcr-delete-image-action@v1.1.0
+        with:
+          owner: 01-edu
+          name: test-dom
+          token: ${{ secrets.GITHUB_TOKEN }}
+          untagged-keep-latest: ${{ github.event.inputs.keep-last }}
+        continue-on-error: true
