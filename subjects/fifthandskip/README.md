@@ -5,7 +5,7 @@
 Write a function `FifthAndSkip()` that takes a `string` and returns another `string`. The function separates every five characters of the `string` with a space and removes the sixth one.
 
 - If there are spaces in the middle of a word, ignore them and get the first character after the spaces until you reach a length of 5.
-- If the `string` is less than 5 characters returns `Invalid Output` followed by a newline `\n`.
+- If the `string` is less than 5 characters return `Invalid Input` followed by a newline `\n`.
 - If the `string` is empty return a newline `\n`.
 
 ### Expected function
@@ -41,5 +41,5 @@ And its output:
 $ go run . | cat -e
 abcde ghijk mnopq stuwx z$
 Thisi ashor sente ce$
-Invalid Output$
+Invalid Input$
 ```
