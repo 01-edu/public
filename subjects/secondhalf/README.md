@@ -4,7 +4,7 @@
 
 Write a function `SecondHalf()` that receives a slice of `int` and returns another slice of `int` with the second half of the values.
 
-- If the length is odd, round it up.
+> If the length is odd, include the middle value in the result.
 
 ### Expected function
 
