@@ -16,6 +16,7 @@ func IsCapitalized(s string) bool {
 ```
 
 ### Usage
+
 Here is a possible program to test your function:
 
 ```go
