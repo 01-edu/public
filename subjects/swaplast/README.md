@@ -2,9 +2,9 @@
 
 ### Instructions
 
- Write a function that takes as an argument a slice of integers and return another slice of integers with the two last elements swapped.
+ Write a function that takes as an argument a slice of integers and return another slice of integers with the last two elements swapped.
 
-- If the slice contains less than two elements return the same slice.
+> If the slice contains less than two elements return the same slice.
 
 ### Expected function
 
