@@ -4,7 +4,7 @@
 
 Write a function that takes a `string` as an argument and returns a `boolean`.
 
-- If the `string` equals `True` or `T` or `t` return `true` otherwise, return `false`.
+- If the `string` equals `True`, `T` or `t` return `true`, otherwise return `false`.
 
 
 ### Expected function
