@@ -7,7 +7,7 @@ Write a function `ConcatSlice()` that takes two slices of integers as arguments 
 ### Expected function
 
 ```go
-func ConcatSlice(slice1,slice2 []int) []int {
+func ConcatSlice(slice1, slice2 []int) []int {
 
 }
 ```
