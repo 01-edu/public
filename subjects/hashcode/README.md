@@ -4,10 +4,11 @@
 
 Write a function called `HashCode()` that takes a `string` as an argument and returns a new **hashed** `string`.
 
-- Hash equation: (ASCII of current character + size of the string) % 127, so it can be in the limit of the ASCII size '127'.
+- The hash equation is computed as follows:
 
-- If the final number gives an unprintable character, add 33.
+`(ASCII of current character + size of the string) % 127, ensuring the result falls within the ASCII range of 0 to 127.`
 
+- If the resulting character is unprintable add `33` to it.
 
 ### Expected function
 
