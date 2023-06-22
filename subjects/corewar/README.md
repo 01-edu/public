@@ -44,7 +44,8 @@ The players will be able to create new processes using specific instructions, it
 
 There is a special instruction, called `live` that notifies the VM one player is still healthy and doing well.
 
-Every once in a while the VM will check if the players executed such instruction and, if they didn't, all the processes created by this player will be instantly killed.
+Every once in a while the VM will check which processes executed such instruction and kill all the processes that have not.
+After this check, the VM will consider that every remaining process is dead until it successfully executes a `live` instruction.
 
 Once there is no more active processes the VM stops execution and the last player that notified it was alive is the winner of the match.
 
@@ -60,7 +61,7 @@ You should follow those specifications:
 
 - If no parameters are passed it will print a help message.
 - The assembler takes a `file.s` as input.
-- It return a `file.cor` as output.
+- It returns a `file.cor` as output.
 - `file.s` is a regular and boring text file.
 - `file.cor` is a binary file, in order to inspect it we suggest you to use command-line tools like `hexdump`.
 - If there is any error in the source file the Assembler should exit with an error code, print a message on `stderr` (the more specific the better) and do not create any `file.cor`.
@@ -89,7 +90,7 @@ You should follow those specifications:
 - The entire execution is deterministic, so with the same inputs you must always have the same outputs.
 - The VM assumes the binary is in big-endian and read it accordingly.
 
-Those are the cases were a file is considered corrupted:
+Those are the cases where a file is considered corrupted:
 
 - Wrong signature code.
 - Declared size of the program not matching the actual size.
@@ -196,12 +197,12 @@ In this case `10` will say to the VM to look ten bytes forward the current instr
 - `sti`: writes the value of the register passed as the first argument into to address obtained by summing the last two arguments. (The VM will apply `% IDX_MOD` to the obtained address)
 - `fork`: creates a new process which will be an exact (deep) copy of the current one except for the PC which will be at the address specified in the argument. (The VM will apply `% IDX_MOD` to the first argument)
 - `lld`, `lldi`, `lfork`: those instructions are the long versions of `ld`, `ldi` and `fork`, which means the addresses won't be truncated by `IDX_MOD`. (Since those instructions are "long" the modulo operation won't be applied on them)
-- `nop`: this operation do nothing, it can still take one argument and has a pcode so be careful on how you implement it.
+- `nop`: this operation does nothing, it can still take one argument and has a pcode so be careful on how you implement it.
 
 > All addresses are relative to the current PC of the process.
 
 > Some instructions have to truncate the addresses they are given by applying modulo `IDX_MOD`.
-> This feature prevent players from reaching spaces in memory that are too far from the current PC, which means processes won't be able to attack each other straight away but will need to move by doing smaller steps, this help having more balanced games.
+> This feature prevents players from reaching spaces in memory that are too far from the current PC, which means processes won't be able to attack each other straight away but will need to move by doing smaller steps, this help having more balanced games.
 
 #### Labels
 
@@ -271,7 +272,7 @@ For this reason we provide a [config file](data/config.md) which includes all th
 
 #### A basic player
 
-To help understand better how the Asm and the VM works let's deep dive into the assembly code with a very basic player:
+To help understand better how the Asm and the VM works, let's deep dive into the assembly code with a very basic player:
 
 ```
 .name "ameba"
@@ -292,7 +293,7 @@ Here is how it proceeds in order to do so:
 - It is interesting that this number will be copied at the address in memory corresponding to the label `hello` + 1 byte.
 - Said in other words this instruction is changing the argument of the `live` statement.
 - The `and` instruction will copy the result of the AND logic operator into the first register.
-- This result will be zero since any number AND 0 is zero. This have the side effect of setting the carry of this process to true.
+- This result will be zero since any number AND 0 is zero. This has the side effect of setting the carry of this process to true.
 - The `live` statement notify the VM the player is alive. Notice the specific value of the argument is irrelevant in this context since the `sti` instruction override it before the `live` is executed.
 - The `zjmp` brings the PC back to the start of the live instruction (creating a loop).
 - Notice `zjmp` only operates the jump if the carry is not equal to zero. This is why we executed the `and` instruction before.
@@ -324,9 +325,9 @@ Let's read it through:
 - The first 4 bytes `00 ea 83 f3` are the program signature (also called the magic), this is a 32 bits integer, represented as four 8 bits slices.
 - Then the next 128 bits are for the name of the program, the first five `61 6d 65 62 61` are the actual name, the others are zeros because we don't actually need it.
 - Then we have 4 bytes `00 00 00 17` (so 23) which will be a 32 bits integer with the size in bytes of the program to be executed in the arena of the VM (so only the size of the instructions, without the name, description, signature and so on).
-- Then we have the description which works exactly the same as the name but it will adds four bytes padding at the end of it.
+- Then we have the description which works exactly the same as the name but it will add four bytes padding at the end of it.
 
-The actual instructions starts from there:
+The actual instructions start from there:
 
 - The instruction `sti` is made by those bytes: `0b 68 01 00 0f 00 01`.
 - `0b` is the opcode, `68` is the pcode, `01` is the first parameter, `00 0f` is the second parameter and `00 01` is the third parameter.
@@ -351,7 +352,7 @@ You will be provided with a [playground](data/playground.zip) containing:
 
 ### Some advices for the road
 
-While the functioning of the VM and the Assembler may seems quite strange and obscure, it is a perfect scenario to reproduce a CPU and understand what a computer really does at its core.
+While the functioning of the VM and the Assembler may seem quite strange and obscure, it is a perfect scenario to reproduce a CPU and understand what a computer really does at its core.
 
 In this project you are indeed creating a Turing Complete machine largely inspired by Von Neumann architecture (which is still how today's processors works).
 
