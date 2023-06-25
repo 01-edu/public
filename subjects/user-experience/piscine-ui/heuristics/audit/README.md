@@ -1,4 +1,4 @@
-#### Heuristic audit
+#### Audit
 
 ###### Is there a zip folder labeled as “ProjectTitle_Name_FirstName”?
 
