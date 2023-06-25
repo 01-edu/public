@@ -54,7 +54,7 @@
 
 ###### Do style, colors, buttons, text match with the initial wireframes?
 
-#### second Animation
+#### Animation
 
 ###### Is the deliverable labeled as “Name_FirstName_DeliverableName_Date_VersionNumber”?
 
