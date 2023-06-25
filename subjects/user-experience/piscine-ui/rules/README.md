@@ -104,7 +104,7 @@ Don't forget to:
   - Error states.
   - etc.
 
-## Accessibility (App)
+## Accessibility (app)
 
 ### Instructions
 
@@ -142,7 +142,7 @@ Don't forget to:
   - Error states
   - etc.
 
-## Breadbcrumbs
+## Breadcrumbs
 
 ### Instructions
 
@@ -188,7 +188,7 @@ Don't forget to:
 
 - [Toggle Switch - Tips](https://uxplanet.org/toggle-switch-5-simple-design-tips-for-better-design-b4046eff4a2f)
 
-## Radio Buttons
+## Radio buttons
 
 ### Instructions
 
