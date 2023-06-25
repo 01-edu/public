@@ -115,7 +115,7 @@ Don't forget to:
 
 - [Unsplash](https://unsplash.com/) for visuals
 
-## second Animation
+## Animation
 
 ### Instructions
 
