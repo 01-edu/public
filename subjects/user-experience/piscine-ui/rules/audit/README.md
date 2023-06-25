@@ -48,7 +48,7 @@
 
 **Example [here](https://www.convinceandconvert.com/digital-marketing/accessible-website-examples/).**
 
-#### Accessibility (App)
+#### Accessibility (app)
 
 ###### Is the deliverable labeled as “Name_FirstName_DeliverableName_Date_VersionNumber”?
 
@@ -66,7 +66,7 @@
 
 **Example [here](https://www.convinceandconvert.com/digital-marketing/accessible-website-examples/)**
 
-#### Breadbcrumbs
+#### Breadcrumbs
 
 ###### Is the deliverable labeled as “Name_FirstName_DeliverableName_Date_VersionNumber”?
 
@@ -94,7 +94,7 @@
 
 ###### Is the name of each app or website written?
 
-#### Radio Buttons
+#### Radio buttons
 
 ###### Is the deliverable labeled as “Name_FirstName_DeliverableName_Date_VersionNumber”?
 
