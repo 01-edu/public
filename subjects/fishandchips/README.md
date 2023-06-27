@@ -4,11 +4,11 @@
 
 Write a function called `FishAndChips()` that takes an `int` and returns a `string`.
 
-- If the number is divisible by 2, print `fish` followed by a newline `\n`.
-- If the number is divisible by 3, print `chips` followed by a newline `\n`.
-- If the number is divisible by 2 and 3, print `fish and chips` followed by a newline `\n`.
-- If the number is negative return `error: number is negative` followed by a newline `\n`.
-- If the number is non divisible return `error: non divisible` followed by a newline `\n`.
+- If the number is divisible by 2, print `fish`.
+- If the number is divisible by 3, print `chips`.
+- If the number is divisible by 2 and 3, print `fish and chips`.
+- If the number is negative return `error: number is negative`.
+- If the number is non divisible by 2 or 3 return `error: non divisible`.
 
 ### Expected function
 
@@ -40,10 +40,8 @@ func main() {
 And its output:
 
 ```console
+$ go run . | cat -e
 fish$
-$
 chips$
-$
 fish and chips$
-$
 ```
