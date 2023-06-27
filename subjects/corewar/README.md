@@ -45,7 +45,7 @@ The players will be able to create new processes using specific instructions, it
 There is a special instruction, called `live` that notifies the VM one player is still healthy and doing well.
 
 Every once in a while the VM will check which processes executed such instruction and kill all the processes that have not.
-After this check, the VM will consider that every remaining process is dead until it successfully executes a `live` instruction.
+The processes are kept alive only if they execute at least one `live` instruction between the VM checks.
 
 Once there is no more active processes the VM stops execution and the last player that notified it was alive is the winner of the match.
 
