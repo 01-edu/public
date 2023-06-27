@@ -122,7 +122,7 @@ It implies that moving backward of one position from `0` will bring us to the ad
 
 #### Stop process execution
 
-Every `CYCLE_TO_DIE` the VM will check for every process if it signaled it was alive (or in other word, if it has executed a `live` instruction) at least once, if the process will be immediately killed.
+Every `CYCLE_TO_DIE` the VM will check every process and kill all the processes that did not successfully execute any `live` instruction.
 
 To avoid infinite games, `CYCLES_TO_DIE` will be decremented by `CYCLE_DELTA` under certain conditions:
 
