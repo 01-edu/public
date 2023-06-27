@@ -22,6 +22,7 @@ Requirements:
 
 - `golang 1.19`
 - `PORT` environment exported
+- a tool to interact with websockets in your terminal, such as [`websocat`](https://github.com/vi/websocat)
 
 Export `PORT` environmental variable. The port can be any port you would like.
 
@@ -59,11 +60,20 @@ Run the project with `PORT` env set:
 docker run -d -e PORT=8080 -p 8080:8080 chess
 ```
 
-## Interacting with websocket server to play chess
+> The output of this command is already a valid UUID
+
+### Interacting with websocket server to play chess
 
 To play chess, players need to be matched with other player.
 
 Firstly, connect using websocket to the endpoint `ws://localhost:8080/rooms`.
+
+You can use `websocat` or any other CLI tool you like to do so if you are running the server locally.
+
+```bash
+websocat ws://localhost:8080/rooms
+```
+
 After successful connection, client (e.g. player) needs to wait for response from the server.
 The response will be of the following type:
 
