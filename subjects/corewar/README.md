@@ -120,9 +120,9 @@ It implies that moving backward of one position from `0` will bring us to the ad
 
 > Having circular memory guarantees players they will never overflow the memory space they are playing in.
 
-#### Stop player execution
+#### Stop process execution
 
-Every `CYCLE_TO_DIE` the VM will check for every player if it signaled it was alive at least once, if it didn't all processes created by this player will be immediately killed.
+Every `CYCLE_TO_DIE` the VM will check for every process if it signaled it was alive (or in other word, if it has executed a `live` instruction) at least once, if the process will be immediately killed.
 
 To avoid infinite games, `CYCLES_TO_DIE` will be decremented by `CYCLE_DELTA` under certain conditions:
 
