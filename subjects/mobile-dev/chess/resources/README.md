@@ -22,7 +22,6 @@ Requirements:
 
 - `golang 1.19`
 - `PORT` environment exported
-- a tool to interact with websockets in your terminal, such as [`websocat`](https://github.com/vi/websocat)
 
 Export `PORT` environmental variable. The port can be any port you would like.
 
@@ -60,9 +59,9 @@ Run the project with `PORT` env set:
 docker run -d -e PORT=8080 -p 8080:8080 chess
 ```
 
-> The output of this command is already a valid UUID
-
 ### Interacting with websocket server to play chess
+
+> a tool to interact with websockets in your terminal, such as [`websocat`](https://github.com/vi/websocat), might be handy to test the server
 
 To play chess, players need to be matched with other player.
 
@@ -74,7 +73,7 @@ You can use `websocat` or any other CLI tool you like to do so if you are runnin
 websocat ws://localhost:8080/rooms
 ```
 
-After successful connection, client (e.g. player) needs to wait for response from the server.
+After two successful connections, the clients (e.g. player) will receive a response from the server.
 The response will be of the following type:
 
 ```
@@ -86,7 +85,7 @@ This is the UUID of the game session.
 Secondly, when UUID is received connect to the next endpoint - `ws://localhost:8080/rooms/9c954450-ad7b-4dcc-ab2f-6c556c0835ef`.
 The UUID should be placed after `/rooms/` path.
 
-After successful connection, the client will receive its own chess color, either `white` or `black`.
+After the successful connection of 2 clients, the client will receive its own chess color, either `white` or `black`.
 
 From now on, players can exchange moves to play chess.
 
