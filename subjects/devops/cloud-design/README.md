@@ -31,8 +31,6 @@ Before starting this project, you should know the following:
 
 ### Roleplay
 
-To further enhance the learning experience and assess your knowledge, a roleplay question session will be included as part of the Cloud-Design Project. This section will involve your answering a series of questions in a simulated real-world scenario, where you will assume the role of a Cloud engineer explaining your solution to a team or a stakeholder.
-
 To enhance the learning experience and assess your knowledge, a roleplay question session will be included as part of the Cloud-Design Project. This section will involve answering a series of questions in a simulated real-world scenario where you assume the role of a Cloud engineer explaining your solution to a team or stakeholder.
 
 The goal of the roleplay question session is to:
