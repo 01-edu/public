@@ -4,7 +4,7 @@
 
 ##### If at any moment or for any reason the evaluated Assembler or Virtual Machine crashes or have any memory leak the evaluation fails.
 
-##### Before to start the evaluation, download the [Playground](), it will contain a standard Assembler and Virtual Machine.
+##### Before to start the evaluation, download the [Playground](../data/playground.zip), it will contain a standard Assembler and Virtual Machine.
 
 ###### Is the learner able to guide you installing and running the provided binaries?
 
