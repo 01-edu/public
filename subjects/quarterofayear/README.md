@@ -6,7 +6,6 @@ Write a function `QuarterOfAYear()` that takes an `int`, from 1 to 12, as an arg
 
 - If the number is not between 1 and 12 return `-1`.
 
-
 ### Expected function
 
 ```go
@@ -24,17 +23,17 @@ package main
 
 import (
 	"fmt"
-	"piscine"
 )
 
 func main() {
-	fmt.Println(piscine.QuarterOfAYear(2))
-	fmt.Println(piscine.QuarterOfAYear(5))
-	fmt.Println(piscine.QuarterOfAYear(9))
-	fmt.Println(piscine.QuarterOfAYear(11))
-	fmt.Println(piscine.QuarterOfAYear(13))
-	fmt.Println(piscine.QuarterOfAYear(-5))
+	fmt.Println(QuarterOfAYear(2))
+	fmt.Println(QuarterOfAYear(5))
+	fmt.Println(QuarterOfAYear(9))
+	fmt.Println(QuarterOfAYear(11))
+	fmt.Println(QuarterOfAYear(13))
+	fmt.Println(QuarterOfAYear(-5))
 }
+
 ```
 
 And its output:

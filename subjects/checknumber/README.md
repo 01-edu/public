@@ -17,14 +17,16 @@ Here is a possible program to test your function:
 
 ```go
 package main
+
 import (
 	"fmt"
-	"piscine"
 )
+
 func main() {
-	fmt.Println(piscine.CheckNumber("Hello"))
-	fmt.Println(piscine.CheckNumber("Hello1"))
+	fmt.Println(CheckNumber("Hello"))
+	fmt.Println(CheckNumber("Hello1"))
 }
+
 ```
 
 And its output:
