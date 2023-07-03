@@ -27,14 +27,12 @@ package main
 
 import (
 	"fmt"
-
-	"piscine"
 )
 
 func main() {
-	fmt.Println(piscine.MultOrSum([]int{1, 2, 3, 4}, 3))
-	fmt.Println(piscine.MultOrSum([]int{1, 2, 3, 4}, 0))
-	fmt.Println(piscine.MultOrSum([]int{1, -2, 3, 4}, 0))
+	fmt.Println(MultOrSum([]int{1, 2, 3, 4}, 3))
+	fmt.Println(MultOrSum([]int{1, 2, 3, 4}, 0))
+	fmt.Println(MultOrSum([]int{1, -2, 3, 4}, 0))
 }
 
 ```

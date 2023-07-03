@@ -23,15 +23,13 @@ package main
 
 import (
 	"fmt"
-
-	"piscine"
 )
 
 func main() {
-	fmt.Println(piscine.ByeByeFirst([]string{}))
-	fmt.Println(piscine.ByeByeFirst([]string{"one arg"}))
-	fmt.Println(piscine.ByeByeFirst([]string{"first", "second"}))
-	fmt.Println(piscine.ByeByeFirst([]string{"", "abcd", "efg"}))
+	fmt.Println(ByeByeFirst([]string{}))
+	fmt.Println(ByeByeFirst([]string{"one arg"}))
+	fmt.Println(ByeByeFirst([]string{"first", "second"}))
+	fmt.Println(ByeByeFirst([]string{"", "abcd", "efg"}))
 }
 ```
 

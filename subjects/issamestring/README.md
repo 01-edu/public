@@ -23,13 +23,12 @@ package main
 
 import (
 	"fmt"
-	"piscine"
 )
 
 func main() {
-	fmt.Println(piscine.IsSameString("hello world!", "HELLO WORLD!"))
-	fmt.Println(piscine.IsSameString("0101 is awesome", "0101 is AWESOME"))
-	fmt.Println(piscine.IsSameString("foo baz", "foo bar"))
+	fmt.Println(IsSameString("hello world!", "HELLO WORLD!"))
+	fmt.Println(IsSameString("0101 is awesome", "0101 is AWESOME"))
+	fmt.Println(IsSameString("foo baz", "foo bar"))
 }
 ```
 
