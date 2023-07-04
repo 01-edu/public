@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function called `NotDecimal()` that takes as an argument a `string` in forme of a float number with the decimal point and returns a string converted to an `int` without the decimal point (you will have to multiply it by 10^n to remove the `.`).
+Write a function called `NotDecimal()` that takes as an argument a `string` in form of a float number with the decimal point and returns a string converted to `int` without the decimal point (you will have to multiply it by 10^n to remove the `.`).
 
 - If the number doesn't have a decimal point or there is only a zero after the `.` return the number followed by a newline `\n`.
 - If the argument is empty return a newline `\n`.
@@ -15,6 +15,7 @@ func NotDecimal(dec string) string {
 
 }
 ```
+
 ### Usage
 
 Here is a possible program to test your function:
@@ -24,20 +25,20 @@ package main
 
 import (
 	"fmt"
-	"piscine"
 )
 
 func main() {
-	fmt.Print(piscine.NotDecimal("0.1"))
-	fmt.Print(piscine.NotDecimal("174.2"))
-	fmt.Print(piscine.NotDecimal("0.1255"))
-	fmt.Print(piscine.NotDecimal("1.20525856"))
-	fmt.Print(piscine.NotDecimal("-0.0f00d00"))
-	fmt.Print(piscine.NotDecimal(""))
-	fmt.Print(piscine.NotDecimal("-19.525856"))
-	fmt.Print(piscine.NotDecimal("1952"))
+	fmt.Print(NotDecimal("0.1"))
+	fmt.Print(NotDecimal("174.2"))
+	fmt.Print(NotDecimal("0.1255"))
+	fmt.Print(NotDecimal("1.20525856"))
+	fmt.Print(NotDecimal("-0.0f00d00"))
+	fmt.Print(NotDecimal(""))
+	fmt.Print(NotDecimal("-19.525856"))
+	fmt.Print(NotDecimal("1952"))
 }
 ```
+
 And its output:
 
 ```console
