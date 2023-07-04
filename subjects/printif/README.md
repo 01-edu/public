@@ -9,7 +9,7 @@ Write a function that takes a `string` as an argument and returns the letter `G`
 ### Expected function
 
 ```go
-func PrintIfNot(str string) string {
+func PrintIf(str string) string {
 
 }
 ```
@@ -23,16 +23,15 @@ package main
 
 import (
 	"fmt"
-
-	"piscine"
 )
 
 func main() {
-	fmt.Print(piscine.PrintIf("abcdefz"))
-	fmt.Print(piscine.PrintIf("abc"))
-	fmt.Print(piscine.PrintIf(""))
-	fmt.Print(piscine.PrintIf("14"))
+	fmt.Print(PrintIf("abcdefz"))
+	fmt.Print(PrintIf("abc"))
+	fmt.Print(PrintIf(""))
+	fmt.Print(PrintIf("14"))
 }
+
 ```
 
 And its output:
