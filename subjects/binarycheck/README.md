@@ -6,9 +6,11 @@ Write a function that takes an int as an argument and returns 0 if the number is
 
 ### Expected function
 
+```go
 func BinaryCheck(nbr int) int {
 
 }
+```
 
 ### Usage
 
@@ -19,16 +21,14 @@ package main
 
 import (
     "fmt"
-
-    "piscine"
 )
 
 func main() {
-    fmt.Println(piscine.BinaryCheck(5))
-    fmt.Println(piscine.BinaryCheck(0))
-    fmt.Println(piscine.BinaryCheck(8))
-    fmt.Println(piscine.BinaryCheck(-9))
-    fmt.Println(piscine.BinaryCheck(-4))
+    fmt.Println(BinaryCheck(5))
+    fmt.Println(BinaryCheck(0))
+    fmt.Println(BinaryCheck(8))
+    fmt.Println(BinaryCheck(-9))
+    fmt.Println(BinaryCheck(-4))
 }
 ```
 
