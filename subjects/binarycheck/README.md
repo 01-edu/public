@@ -35,10 +35,6 @@ func main() {
 And its output:
 
 ```console
-<<<<<<< HEAD
-=======
-
->>>>>>> c73bdf4f (fix(binarycheck): fix branch)
 $ go run .
 0
 1
