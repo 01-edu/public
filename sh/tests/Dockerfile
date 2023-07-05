@@ -1,4 +1,4 @@
-FROM docker.01-edu.org/debian:10.9-slim
+FROM docker.01-edu.org/debian:10-slim
 
 RUN apt-get update
 RUN apt-get -y install jq curl tree apt-utils
