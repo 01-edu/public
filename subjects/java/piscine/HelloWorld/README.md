@@ -22,8 +22,7 @@ to get the output of your function in your console.
 
 To edit your code, you can use any IDE or text editor, though IDEA IntelliJ or JetBrains are specially dedicated and recommended.
 
-On Gitea, create a repository named `((ROOT))`, and push every java files on the root folder.
-
+On Gitea, create a repository named `((ROOT))`, and push all Java files into a folder with a name matching the respective exercise.
 ### Instructions
 
 Create a file `HelloWorld.java`.
