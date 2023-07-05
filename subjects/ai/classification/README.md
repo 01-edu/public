@@ -293,7 +293,7 @@ Preliminary:
 
 - https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html
 
-- https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/
+- [Database](data/breast-cancer-wisconsin.data) and [database information](data/breast-cancer-wisconsin.names)
 
 ---
 ---
