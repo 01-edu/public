@@ -1,8 +1,8 @@
-## MapEqual
+## MapEquals
 
 ### Instructions
 
-Create a file `MapEqual.java`.
+Create a file `MapEquals.java`.
 
 Write a function `areMapEquals` that returns `true` if the maps as parameters are equal. Returns `false` otherwise.
 
@@ -11,7 +11,7 @@ Write a function `areMapEquals` that returns `true` if the maps as parameters ar
 ```java
 import java.util.Map;
 
-public class MapEqual {
+public class MapEquals {
     public static boolean areMapEquals(Map<String, Integer> map1, Map<String, Integer> map2) {
         // your code here
     }
@@ -29,11 +29,11 @@ public class ExerciseRunner {
     public static void main(String[] args) {
         Map<String, Integer> map1 = Map.of("Alice", 1, "Bob", 2, "Charly", 3);
         Map<String, Integer> map2 = Map.of("Alice", 1, "Bob", 2, "Charly", 3);
-        System.out.println(MapEqual.areMapEquals(map1, map2)); // Expected Output: true
+        System.out.println(MapEquals.areMapEquals(map1, map2)); // Expected Output: true
 
         Map<String, Integer> map3 = Map.of("Alice", 1, "Bob", 2, "Charly", 3);
         Map<String, Integer> map4 = Map.of("Alice", 1, "Bob", 2, "Emily", 3);
-        System.out.println(MapEqual.areMapEquals(map3, map4)); // Expected Output: false
+        System.out.println(MapEquals.areMapEquals(map3, map4)); // Expected Output: false
     }
 }
 ```

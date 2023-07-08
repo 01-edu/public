@@ -1,8 +1,8 @@
-## ListEqual
+## ListEquals
 
 ### Instructions
 
-Create a file `ListEqual.java`.
+Create a file `ListEquals.java`.
 
 Write a function `areListEquals` that returns true if the lists as parameters are equals. Returns false otherwise.
 
@@ -11,7 +11,7 @@ Write a function `areListEquals` that returns true if the lists as parameters ar
 ```java
 import java.util.List;
 
-public class ListEqual {
+public class ListEquals {
     public static boolean areListEquals(List<String> list1, List<String> list2) {
         // your code here
     }
@@ -27,8 +27,8 @@ import java.util.List;
 
 public class ExerciseRunner {
     public static void main(String[] args) {
-        System.out.println(ListEqual.areListEquals(List.of("Alice", "Bob", "Charly", "Emily"), List.of("Alice", "Bob", "Charly", "Emily")));
-        System.out.println(ListEqual.areListEquals(List.of("Alice", "Bob", "Charly", "Emily"), List.of("Alice", "Bob", "Emily", "Charly")));
+        System.out.println(ListEquals.areListEquals(List.of("Alice", "Bob", "Charly", "Emily"), List.of("Alice", "Bob", "Charly", "Emily")));
+        System.out.println(ListEquals.areListEquals(List.of("Alice", "Bob", "Charly", "Emily"), List.of("Alice", "Bob", "Emily", "Charly")));
     }
 }
 ```

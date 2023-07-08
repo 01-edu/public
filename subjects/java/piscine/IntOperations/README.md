@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a file `IntOperation.java`.
+Create a file `IntOperations.java`.
 
 Write a function `addTwoIntegers` that returns the sum of two integers passed as parameter.
 Write a function `substractTwoIntegers` that returns subtraction of two integers passed as parameter.
@@ -12,7 +12,7 @@ Write a function `divideTwoIntegers` that returns the Euclidian division of two 
 ### Expected Functions
 
 ```java
-public class IntOperation {
+public class IntOperations {
     public static int addTwoIntegers(int a, int b) {
         // your code here
     }
@@ -36,20 +36,20 @@ Here is a possible ExerciseRunner.java to test your function :
 public class ExerciseRunner {
     public static void main(String[] args) {
         System.out.println("Add");
-        System.out.println(IntOperation.addTwoIntegers(1, 2));
-        System.out.println(IntOperation.addTwoIntegers(15, 68));
+        System.out.println(IntOperations.addTwoIntegers(1, 2));
+        System.out.println(IntOperations.addTwoIntegers(15, 68));
 
         System.out.println("Subtract");
-        System.out.println(IntOperation.subtractTwoIntegers(4, 1));
-        System.out.println(IntOperation.subtractTwoIntegers(10, 23));
+        System.out.println(IntOperations.subtractTwoIntegers(4, 1));
+        System.out.println(IntOperations.subtractTwoIntegers(10, 23));
 
         System.out.println("Multiply");
-        System.out.println(IntOperation.multiplyTwoIntegers(3, 6));
-        System.out.println(IntOperation.multiplyTwoIntegers(12, 11));
+        System.out.println(IntOperations.multiplyTwoIntegers(3, 6));
+        System.out.println(IntOperations.multiplyTwoIntegers(12, 11));
 
         System.out.println("Divide");
-        System.out.println(IntOperation.divideTwoIntegers(8, 2));
-        System.out.println(IntOperation.divideTwoIntegers(13, 4));
+        System.out.println(IntOperations.divideTwoIntegers(8, 2));
+        System.out.println(IntOperations.divideTwoIntegers(13, 4));
     }
 }
 ```
