@@ -4,7 +4,7 @@
 
 Create a file `SetEquals.java`.
 
-Write a function `areSetEquals` that returns `true` if the sets as parameters are equal. Returns `false` otherwise.
+Write a function `areSetsEquals` that returns `true` if the sets as parameters are equal. Returns `false` otherwise.
 
 ### Expected Functions
 
@@ -12,7 +12,7 @@ Write a function `areSetEquals` that returns `true` if the sets as parameters ar
 import java.util.Set;
 
 public class SetEquals {
-    public static boolean areSetEquals(Set<String> set1, Set<String> set2) {
+    public static boolean areSetsEquals(Set<String> set1, Set<String> set2) {
         // your code here
     }
 }
@@ -40,7 +40,7 @@ public class ExerciseRunner {
         set2.add("Charly");
         set2.add("Alice");
 
-        System.out.println(SetEquals.areSetEquals(set1, set2)); // Expected Output: true
+        System.out.println(SetEquals.areSetsEquals(set1, set2)); // Expected Output: true
 
         Set<String> set3 = new HashSet<>();
         set3.add("Alice");
@@ -52,7 +52,7 @@ public class ExerciseRunner {
         set4.add("Bob");
         set4.add("Emily");
 
-        System.out.println(SetEquals.areSetEquals(set3, set4)); // Expected Output: false
+        System.out.println(SetEquals.areSetsEquals(set3, set4)); // Expected Output: false
     }
 }
 ```
