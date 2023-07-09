@@ -4,7 +4,7 @@
 
 Create a file `MapEquals.java`.
 
-Write a function `areMapsEquals` that returns `true` if the maps as parameters are equal. Returns `false` otherwise.
+Write a function `areMapsEqual` that returns `true` if the maps as parameters are equal. Returns `false` otherwise.
 
 ### Expected Functions
 
@@ -12,7 +12,7 @@ Write a function `areMapsEquals` that returns `true` if the maps as parameters a
 import java.util.Map;
 
 public class MapEquals {
-    public static boolean areMapsEquals(Map<String, Integer> map1, Map<String, Integer> map2) {
+    public static boolean areMapsEqual(Map<String, Integer> map1, Map<String, Integer> map2) {
         // your code here
     }
 }
@@ -29,11 +29,11 @@ public class ExerciseRunner {
     public static void main(String[] args) {
         Map<String, Integer> map1 = Map.of("Alice", 1, "Bob", 2, "Charly", 3);
         Map<String, Integer> map2 = Map.of("Alice", 1, "Bob", 2, "Charly", 3);
-        System.out.println(MapEquals.areMapsEquals(map1, map2)); // Expected Output: true
+        System.out.println(MapEquals.areMapsEqual(map1, map2)); // Expected Output: true
 
         Map<String, Integer> map3 = Map.of("Alice", 1, "Bob", 2, "Charly", 3);
         Map<String, Integer> map4 = Map.of("Alice", 1, "Bob", 2, "Emily", 3);
-        System.out.println(MapEquals.areMapsEquals(map3, map4)); // Expected Output: false
+        System.out.println(MapEquals.areMapsEqual(map3, map4)); // Expected Output: false
     }
 }
 ```
