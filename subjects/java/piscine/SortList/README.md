@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a file `Sort.java`.
+Create a file `SortList.java`.
 
 Write a function `sort` that returns the ascending sorted list as parameter.     
 Write a function `sortReverse` that returns the descending sorted list as parameter.
@@ -12,7 +12,7 @@ Write a function `sortReverse` that returns the descending sorted list as parame
 ```java
 import java.util.List;
 
-public class Sort {
+public class SortList {
 
     public static List<Integer> sort(List<Integer> list) {
         // your code here
@@ -34,8 +34,8 @@ import java.util.List;
 public class ExerciseRunner {
 
     public static void main(String[] args) {
-        System.out.println(Sort.sort(List.of(15, 1, 14, 18, 14, 98, 54, -1, 12)).toString());
-        System.out.println(Sort.sortReverse(List.of(15, 1, 14, 18, 14, 98, 54, -1, 12)).toString());
+        System.out.println(SortList.sort(List.of(15, 1, 14, 18, 14, 98, 54, -1, 12)).toString());
+        System.out.println(SortList.sortReverse(List.of(15, 1, 14, 18, 14, 98, 54, -1, 12)).toString());
     }
 }
 ```
