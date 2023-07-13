@@ -12,7 +12,7 @@ Create a function `getMaxByModulo4` which return a map associating the modulo 4 
 
 ```java
 public class StreamCollect {
-    public static Map<Object, List<String>> mapByFirstLetter(Stream<String> s) {
+    public static Map<Character, List<String>> mapByFirstLetter(Stream<String> s) {
         // your code here
     }
 
