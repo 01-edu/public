@@ -4,7 +4,7 @@
 
 To prepare to compile a technical file, with a view to obtaining the Level 7 RNCP title of Cloud DevOps Expert.
 
-At the end of your training period, you'll have 5 days to compile your **personal** technical file.
+At the end of your training period, you'll have 5 days to compile your **personal** technical file. This will be an individual piece of work.
 
 During your training, each time you validate a project, you will write a project report.
 
@@ -31,7 +31,7 @@ To enable you to do this, your reports should detail:
   - Continuous delivery
   - Quality control
 - The technological choices you made
-- The expected results, and actual results
+- The expected results, and actual results achieved
 - The expected problems, and actual problems faced
 
 You should store your project reports inside the repository of this project. The result will be a series of Markdown files, with one for each project that you validate during your training.
@@ -48,12 +48,12 @@ You will rely on the contents of your project reports in order to trace your ach
 
 Particular care must be given to spelling and presentation.
 
-Your technical file must demonstrate your knowledge in the following core skill blocks:
+Your technical file must demonstrate your knowledge in the following three core skill blocks:
 
 - **Knowledge of cloud infrastructure**
   - Understand and configure security services
   - Be responsible for the choice of hyperscalers
-  - Set up observability systems on the perimeter of infrastructures and apps
+  - Set up observability systems on the perimeter, for infrastructures and applications
   - Manage authentication, cookies and sessions
   - Build, manage and run applications in isolated/containerized environments
   - Install and manage Linux servers
@@ -71,4 +71,3 @@ Your technical file must demonstrate your knowledge in the following core skill 
   - Be responsible for managing code versioning
   - Implement security practices for applications and services deployed in the cloud
   - Be responsible for sharing knowledge and disseminating good Agile DevOps practices
-  
