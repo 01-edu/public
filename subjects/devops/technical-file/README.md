@@ -71,3 +71,5 @@ Your technical file must demonstrate your knowledge in the following three core 
   - Be responsible for managing code versioning
   - Implement security practices for applications and services deployed in the cloud
   - Be responsible for sharing knowledge and disseminating good Agile DevOps practices
+
+> This project will not be audited.
