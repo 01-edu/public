@@ -2,7 +2,7 @@
 
 ### Prerequisite
 
-Create a file `ChifoumiAction.java` and paste the following content :
+Create a file `ChifoumiAction.java` and paste the following code inside it:
 
 ```java
 public enum ChifoumiAction {
@@ -14,7 +14,9 @@ public enum ChifoumiAction {
 
 Create a file `Chifoumi.java`.
 
-Write a function `getActionBeatenBy` that returns the action beaten by the action in parameter :
+Write a function `getActionBeatenBy` which takes an action as a parameter, and returns the action which is beaten by the argument.
+
+The actions:
 
 - `ROCK` will return `SCISSOR`
 - `PAPER` will return `ROCK`
