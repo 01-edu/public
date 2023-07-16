@@ -4,8 +4,10 @@
 
 Create a file `FloatOperations.java`.
 
-Write a function `divideTwoFloats` that returns the float division of two floats passed as parameter.
-Write a function `addTwoFloats` that returns the sum of two floats passed as parameter.
+Write the following functions:
+
+- Write a function `divideTwoFloats` that returns the float division of two floats passed as parameter.
+- Write a function `addTwoFloats` that returns the sum of two floats passed as parameter.
 
 ### Expected Functions
 
