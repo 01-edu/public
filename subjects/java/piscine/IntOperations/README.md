@@ -4,10 +4,12 @@
 
 Create a file `IntOperations.java`.
 
-Write a function `addTwoIntegers` that returns the sum of two integers passed as parameter.
-Write a function `substractTwoIntegers` that returns subtraction of two integers passed as parameter.
-Write a function `multiplyTwoIntegers` that returns the multiplication of two integers passed as parameter.
-Write a function `divideTwoIntegers` that returns the Euclidian division of two integers passed as parameter. We ignore the divide by 0 case.
+Write the following functions:
+
+- `addTwoIntegers` that returns the sum of two integers passed as parameter.
+- `substractTwoIntegers` that subtracts the second parameter from the first parameter, and returns the result.
+- `multiplyTwoIntegers` that returns the multiplication of two integers passed as parameter.
+- `divideTwoIntegers` that returns the Euclidian division of two integers passed as parameter. We ignore the divide by 0 case.
 
 ### Expected Functions
 
