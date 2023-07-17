@@ -4,7 +4,7 @@
 
 Create a file `ComputeArray.java`.
 
-Write a function `computeArray` that returns an array computed using the array of integer as parameter as followed :
+Write a function `computeArray` that returns receives an array, and returns a new array with computed values.
 
 - if the item is a multiple of 3, the item is multiplied by 5
 - if the item is a multiple of 3 + 1 (e.g. 1, 4, 7, ...), the item is incremented by 7
