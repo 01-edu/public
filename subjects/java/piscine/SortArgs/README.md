@@ -4,7 +4,7 @@
 
 Create a file named `SortArgs.java`.
 
-Write a function `sort` that sorts the given array specified in the parameters and print the sorted array into the standard ouput. The elements should be separated by spaces with a new line at the end. All the given elements are correct numbers.
+Write a function `sort` that sorts the given array specified in the parameters and prints it to the standard output. The elements should be separated by spaces followed by a a new line character. All the given elements are valid numbers.
 
 
 ### Expected Functions
