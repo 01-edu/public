@@ -14,7 +14,7 @@ Write a function `operate` that returns the result of the given arithmetic opera
 
 ```java
 public class doOp {
-    public static int operate(String[] args) {
+    public static String operate(String[] args) {
         // your code here
     }
 }
