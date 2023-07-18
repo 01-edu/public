@@ -4,7 +4,7 @@
 
 Create a file named `Cat.java`.
 
-Write a function `cat` that reads from a file given as a parameter and writes to the standard output.
+Write a function `cat` that reads from the file given as the argument, and writes to the standard output.
 
 > ⚠️ The files can have some binary content.
 
