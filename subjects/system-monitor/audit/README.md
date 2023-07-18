@@ -24,7 +24,7 @@
 
 ###### Can you confirm that there is a tabbed section?
 
-###### And if so, does it have the following tabs : "CPU", "Fan", "Thermal" and "Power"?
+###### And if so, does it have the following tabs : "CPU", "Fan", "Thermal"?
 
 ##### Try and run the application and open the "CPU" tab in the system monitor.
 
