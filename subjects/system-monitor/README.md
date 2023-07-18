@@ -97,7 +97,7 @@ For this project you must present the following monitorization:
   - The computer name, this being the **hostname**.
   - The total number of tasks/processes that are currently running, sleeping, uninterruptible, zombie, traced/stopped or interrupted.
   - Type of CPU
-  - A tabbed section containing `CPU`, `Power`, `Fan` and `Thermal` information, this information include a performance graphic for all those topics.
+  - A tabbed section containing `CPU`, `Fan` and `Thermal` information, this information include a performance graphic for all those topics.
     This graph should contain some kind of checkbox or button to be able to stop the animation whenever the user desires to do so.
     Additionally, it should also have two slider bars.
     The first slider bar should be able to control the `FPS` of the graph, and the second slider bar should control the `y` scale of the graph.
