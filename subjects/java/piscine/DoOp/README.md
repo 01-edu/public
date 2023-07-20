@@ -5,9 +5,9 @@
 Create a file named `DoOp.java`.
 
 Write a function `operate` that returns the result of the given arithmetic operation specified in the parameters. The arguments should be passed in the following order:
-- The first argument is the right operand
+- The first argument is the left operand
 - The second argument is the operation sign
-- The third argument is the left operand
+- The third argument is the right operand
 
 
 ### Expected Functions
