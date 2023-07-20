@@ -39,7 +39,7 @@ and its output :
 $ javac *.java -d build
 $ java -cp build ExerciseRunner
 The quick brown fox Jumps over the lazy dog.
-I love coding, Coding is fun.
+I love coding, Coding is fun .
 $
 ```
 
