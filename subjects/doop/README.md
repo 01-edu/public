@@ -19,13 +19,16 @@ The program has to handle the modulo and division operations by 0 as shown on th
 ```console
 $ go run .
 $ go run . 1 + 1 | cat -e
-2$
+2
+$
 $ go run . hello + 1
 $ go run . 1 p 1
 $ go run . 1 / 0 | cat -e
-No division by 0$
+No division by 0
+$
 $ go run . 1 % 0 | cat -e
-No modulo by 0$
+No modulo by 0
+$
 $ go run . 9223372036854775807 + 1
 $ go run . -9223372036854775809 - 3
 $ go run . 9223372036854775807 "*" 3
