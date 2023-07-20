@@ -13,7 +13,7 @@ Write a function `operate` that returns the result of the given arithmetic opera
 ### Expected Functions
 
 ```java
-public class doOp {
+public class DoOp {
     public static String operate(String[] args) {
         // your code here
     }
@@ -27,10 +27,10 @@ Here is a possible ExerciseRunner.java to test your function :
 ```java
 public class ExerciseRunner {
     public static void main(String[] args) {
-        System.out.println(doOp.operate(new String[]{"1","+","2"}));
-        System.out.println(doOp.operate(new String[]{"1","-","1"}));
-        System.out.println(doOp.operate(new String[]{"1","%","0"}));
-        System.out.println(doOp.operate(args));
+        System.out.println(DoOp.operate(new String[]{"1","+","2"}));
+        System.out.println(DoOp.operate(new String[]{"1","-","1"}));
+        System.out.println(DoOp.operate(new String[]{"1","%","0"}));
+        System.out.println(DoOp.operate(args));
     }
 }
 ```
