@@ -8,6 +8,6 @@
 
 ###### Does the virtual machine boot Debian properly (in less than 2 minutes)?
 
-##### After the boot is completed, ask the auditee to shutdown his VM with the ACPI Shutdown.
+##### After the boot is completed, ask the auditee to login in the console and exicute the command to shutdown the VM.
 
-###### Does the system react to the ACPI Shutdown and does the virtual machine stop?
+###### Could the auditee log in and shut down the VM using a command line from the console?
