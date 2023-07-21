@@ -7,7 +7,7 @@ You have to install it locally in VirtualBox And then found a way to go inside i
 There will be no visible IP address, you must find a way to get it.
 You have to become root and get the flag.
 
-- [01-Local1.ova](https://assets.01-edu.org/cybersecurity/localI/01-Local1.ova)
+- [01-Local1.ova](https://assets.01-edu.org/cybersecurity/local/01-Local.ova)
 - SHA1: f3422f3364fd38e8183740f8f57fa951d3f6e0bf
 
 - The modification in GRUB or in the VM to get the root access is forbidden!
