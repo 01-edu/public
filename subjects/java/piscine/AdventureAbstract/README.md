@@ -2,23 +2,23 @@
 
 ### Instructions
 
-Let's change some things : make the `Character` as `abstract`. You can now try to instantiate a Character object, it will fail :)
+Let's change things a bit: make the `Character` as `abstract`. You can now try to instantiate a Character object, it will fail :)
 
-Change the `attack` and `takeDamage` methods : put them as `abstract` too.
+Change `attack` and `takeDamage` methods : make them `abstract` too.
 
-Now, if you try to launch some example, it will fail. Indeed, you need to implement both methods in all subclasses. Do this as follow : 
+Now, if you try to launch an example, it will fail. Indeed, you need to implement both methods in all subclasses. Do this as follows : 
 
-Remember that in all cases, the `currentHealth` should not be lower than 0.
+Remember that in all cases, `currentHealth` should not be lower than 0.
 
 * For Monster class : 
-  * the `attack` method should deal 7 damages to the character as parameter.
-  * the `takeDamage` method should take 80% of all the damages, rounded to the inferior integer.
+  * the method `attack` should make 7 damages to the character in parameter.
+  * the method `takeDamage` should take 80% of all the damages, rounded to the inferior integer.
 * For the `Sorcerer` class : 
-  * the `attack` method should heal itself (using the `heal` method) then deal 10 damages to the character as parameter.
-  * the `takeDamage` method should take all the damages.
+  * the method `attack` should heal itself (using the `heal` method) then make 10 damages to the character in parameter.
+  * the method `takeDamage` should take all the damages.
 * For the `Templar` class : 
-  * the `attack` method should heal itself (using the `heal` method) then deal 6 damages to the character as parameter.
-  * the `takeDamage` method should take the damage as parameter minus the shield value.
+  * the method `attack` should heal itself (using the method `heal`) then make 6 damages to the character in parameter.
+  * the `takeDamage` method should take the damage given in parameter minus the shield value.
 
 ### Usage
 
