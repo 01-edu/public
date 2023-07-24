@@ -6,9 +6,9 @@ Create a new class `Monster` in a new file `Monster.java`.
 
 This class inherits from `Character`.
 
-It has one constructor, with the same 2 parameters (the `name` and the `maxHealth`) as `Character`.
+It has one constructor, with the same parameters as `Character` (`name` and `maxHealth`).
 
-You need to overwrite the `toString` method with the following format : 
+You need to override `toString` method, use the following format : 
 * if the monster is still alive : `<name> is a monster with <currentHealth> HP`.
 * Otherwise : `<name> is a monster and is dead`.
 
