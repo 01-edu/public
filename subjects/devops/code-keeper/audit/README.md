@@ -48,11 +48,11 @@ During the roleplay, ask them the following questions:
 
 - Can you explain the continuous deployment (CD) pipeline you've implemented for each repository?
 
-###### Did the students have a good understanding of the concepts and technologies used in the project?
+###### Do all of the students have a good understanding of the concepts and technologies used in the project?
 
-###### Did the students have the ability to communicate effectively and explain their decisions?
+###### Do all of the students have the ability to communicate effectively and explain their decisions?
 
-###### Are the students capable of thinking critically about their solution and considering alternative approaches?
+###### Are all of the students capable of thinking critically about their solution and considering alternative approaches?
 
 ##### Review the GitLab and Runners Deployment:
 
