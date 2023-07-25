@@ -6,9 +6,9 @@ Create a new class `Galaxy` in a file named `Galaxy.java`.
 
 It has one private property : `celestialObjects` of type `List<CelestialObject>`.
 
-It has one constructor with no parameters, which instantiate an empty list in the `celestialObjects` property.
+It has one constructor with no parameters, which initialises `celestialObjects` property with an empty list.
 
-We add a getter for the `celestialObjects` property (`getCelestialObjects`).
+We add a getter for `celestialObjects` property (`getCelestialObjects`).
 
 We create a new method `addCelestialObject` with a `CelestialObject` argument. This method adds the object in parameter to the `celestialObjects` list.
 
