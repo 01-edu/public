@@ -4,7 +4,7 @@
 
 Create a file `ListEquals.java`.
 
-Write a function `areListsEqual` that returns true if the lists as parameters are equals. Returns false otherwise.
+Write a function `areListsEqual` that returns true if the lists in parameters are equal. Returns false otherwise.
 
 ### Expected Functions
 
