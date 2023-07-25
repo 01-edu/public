@@ -4,7 +4,7 @@
 
 Create a file `StringContains.java`.
 
-Write a function `isStringContainedIn` that returns true if the first String as parameter is contained in the second String as parameter.
+Write a function `isStringContainedIn` that returns true if the string `subString` is contained `s` string.
 
 ### Expected Functions
 
