@@ -10,9 +10,9 @@ In the `Star` class, let's add a new constructor with the following arguments :
 * the `magnitude`  
 It calls the constructor of the superclass `CelestialObject`.
 
-We will override the `hashCode` and `equals`, using the `magnitude` property.
+We will override `hashCode` and `equals` methods, using `magnitude` property.
 
-Finally, we rewrite the `toString` method. The returned String must have the following format : `<name> shines at the <magnitude> magnitude`
+Finally, we override `toString` method. The returned String must have the following format : `<name> shines at the <magnitude> magnitude`
 
 ### Usage
 
