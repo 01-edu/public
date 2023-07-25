@@ -5,7 +5,7 @@
 Create a file `FileSearch.java`.
 
 Write a function `searchFile` that returns the path of the file in parameter. You need to start searching from a folder named `documents` at the root of the current folder.  
-The file to search can contain a subfolder and the file can be in any of them.
+The file to search can be located inside nested subfolders.
 
 ### Expected Functions
 ```java
