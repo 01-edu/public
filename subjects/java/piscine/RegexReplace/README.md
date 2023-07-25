@@ -4,11 +4,11 @@
 
 Create a file `RegexReplace.java`.
 
-Write a function `removeUnits` that returns the string where the units `cm` and `€` is removed if it followed directly a number and followed by a space.  
-Write a function `removeFeminineAndPlural` that returns the string where the mark of feminine and plural is removed from word : 
- - if a word ends a mark of plural (with s or x), remove it.
- - if it ends with an e or if the e is followed by the mark of plural, remove the it
- - if it ends with `le` following `el` (or if `le` is followed by plural), remove it.
+Write a function `removeUnits` that returns the string where the units `cm` and `€` are removed if they follow directly a number and followed by a space.  
+Write a function `removeFeminineAndPlural` that returns the string where the mark of feminine and plural are removed from a word : 
+ - If a word ends with a mark of plural `s or x`, remove it.
+ - If it ends with an `e` or if `e` is followed by a mark of plural `s`, remove both `e and s`.
+ - If it ends with `le` following `el`, remove `le`.
 
 ### Expected Functions
 ```java
