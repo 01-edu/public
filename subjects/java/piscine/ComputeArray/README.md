@@ -4,11 +4,11 @@
 
 Create a file `ComputeArray.java`.
 
-Write a function `computeArray` that returns receives an array, and returns a new array with computed values.
+Write a function `computeArray` that receives an integer array, and returns a new array with computed values.
 
-- if the item is a multiple of 3, the item is multiplied by 5
-- if the item is a multiple of 3 + 1 (e.g. 1, 4, 7, ...), the item is incremented by 7
-- if the item is a multiple of 3 + 2 (e.g. 2, 5, 8, ...), the item stay as it is.
+- If the item is a multiple of 3, it is multiplied by 5
+- If the item is a multiple of 3 + 1 (e.g. 1, 4, 7, ...), it is incremented by 7
+- If the item is a multiple of 3 + 2 (e.g. 2, 5, 8, ...), it stays unchanged.
 
 ### Expected Functions
 
