@@ -4,7 +4,7 @@
 
 Create a file `Palindrome.java`.
 
-Write a function `isPalindrome` that returns true if the String as parameter is a palindrome, i.e. can be read in both direction (e.g. 'kayak').
+Write a function `isPalindrome` that returns true if the String in parameter is a palindrome, i.e. Have same spelling backwards and forwards (e.g. 'kayak').
 
 ### Expected Functions
 
