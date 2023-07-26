@@ -5,23 +5,23 @@
 Create a file `WeddingComplex.java`.
 
 Write a function `createBestCouple` that returns a map of name from the first map associated with a name from the second list.  
-Each argument will be composed as follow : 
-* The name of the member to marry
-* The ordered list of preference of member of the second list.  
+Each map argument will be composed as follows :
+* Key: The name of the member to marry
+* Value: The ordered list of preference containing members (keys) from the other map.
 
 To objective of this function is to determine the best couple possible.  
-The best solution is when for a given member (will be called Alice) : If there is a preferred partner (will be called Bob) than the chosen partner (will be called Charly), Bob is happier with its chosen partner (called Daphnee) than with Alice.
+The optimal solution occurs when, considering a particular member named `Alice`, if there exists a preferred partner `Bob` over the selected partner `Charly`, then `Bob` is happier with his chosen partner `Daphnee` compared to being with `Alice`.
 
 > With an example : 
-> * First list : 
+> * First map : 
 >  * Naruto orders his preferences : Sakura > Hinata
 >  * Sasuke orders his preferences : Sakura > Hinata
-> * Second list : 
+> * Second map : 
 >  * Sakura orders her preferences : Sasuke > Naruto
 >  * Hinata orders her preferences : Naruto > Sasuke
 >
 > A correct solution for this example is : 
-> * Sasuke <-> Sakura (they are both with their first choice)
+> * Sasuke <-> Sakura (they are both with their first preference)
 > * Naruto <-> Hinata (Naruto would prefere Sakura, but Sakura is happier with Sasuke, Hinata has her first choice)
 
 All the test will be chosen to guarantee such a solution exists. More than one solution could exist.
