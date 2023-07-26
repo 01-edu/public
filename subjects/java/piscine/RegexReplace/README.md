@@ -4,11 +4,12 @@
 
 Create a file `RegexReplace.java`.
 
-Write a function `removeUnits` that returns the string where the units `cm` and `€` are removed if they follow directly a number and followed by a space.  
-Write a function `removeFeminineAndPlural` that returns the string where the mark of feminine and plural are removed from a word : 
- - If a word ends with a mark of plural `s or x`, remove it.
- - If it ends with an `e` or if `e` is followed by a mark of plural `s`, remove both `e and s`.
- - If it ends with `le` following `el`, remove `le`.
+Write a function `removeUnits` that returns the string where the units `cm` and `€` are removed if they follow directly a number and followed by a space.
+
+Write a function `obfuscateEmail` that returns a string where parts of email addresses are replaced by '*' if they follow the rules below:
+
+- Hide from the username any character next to `-`,  `.` or `_` if they exist. Otherwise, hide 3 characters from the username if its length > 3
+- If the remaining part after `@` is in the format `@<third level domain>.<second level domain>.<top level domain>`, then hide the third and top level domains, otherwise hide the second level domain and the top level domain if it is not included in `.com`, `.org` and `.net`.
 
 ### Expected Functions
 ```java
@@ -17,7 +18,7 @@ public class RegexReplace {
         // your code here
     }
     
-    public static String removeFeminineAndPlural(String s) {
+    public static String obfuscateEmail(String s) {
         // your code here
     }
 }
@@ -35,7 +36,10 @@ public class ExerciseRunner {
         System.out.println(RegexReplace.removeUnits("32cm et 50€"));
         System.out.println(RegexReplace.removeUnits("32 cm et 50 €"));
         System.out.println(RegexReplace.removeUnits("32cms et 50€!"));
-        System.out.println(RegexReplace.removeFeminineAndPlural("le lapin joue à la belle balle avec des animaux rigolos pour gagner les billes bleues"));
+        
+        System.out.println(RegexReplace.obfuscateEmail("john.doe@example.com"));
+        System.out.println(RegexReplace.obfuscateEmail("jann@example.co.org"));
+        System.out.println(RegexReplace.obfuscateEmail("jackob@example.fr"));
     }
 }
 ```
@@ -48,6 +52,9 @@ $ java -cp build ExerciseRunner
 32 cm et 50 €
 32cms et 50€!
 l lapin jou à la bel ball avec d animau rigolo pour gagner l bill bleu
+joh****@*******.com
+jan*@*******.co.***
+jac***@*******.**
 $ 
 ```
 
