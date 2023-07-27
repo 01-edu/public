@@ -14,7 +14,7 @@ You'll define the logic for creating and working with shapes in the geometrical_
 
 - Drawable which contains the methods draw and getColor.
 
-- Displayable which contains the method display.
+- Displayable which contains the methods display and save.
 
 Define them according to the way they are called in the Main.java function.
 
