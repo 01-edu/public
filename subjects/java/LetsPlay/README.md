@@ -62,7 +62,7 @@ Your project will be extensively tested for the following aspects:
 - The absence of 5XX errors.
 - Implementation of the above-mentioned security measures.
 
-In order for auditors to test your program, you will to run your project using an code editor or provide a script to run
+In order for auditors to test your program, you will have to run your project using a code editor or provide a script to run it.
 
 ### Resources
 [Spring initializer](https://start.spring.io/)
