@@ -23,3 +23,5 @@
 ###### +Can you draw a pentagon?
 
 ###### +Can you draw a cube?
+
+###### +Did the student use default interface methods?
