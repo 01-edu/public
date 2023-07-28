@@ -18,7 +18,7 @@ Remember that in all cases, `currentHealth` should not be lower than 0.
   * the method `takeDamage` should take all the damages.
 * For the `Templar` class : 
   * the method `attack` should heal itself (using the method `heal`) then make 6 damages to the character in parameter.
-  * the `takeDamage` method should take the damage given in parameter minus the shield value.
+  * the method `takeDamage` should take the damage given in parameter minus the shield value.
 
 ### Usage
 
