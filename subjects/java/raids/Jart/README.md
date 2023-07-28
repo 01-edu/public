@@ -50,20 +50,19 @@ interface Drawable {
 
 public class Main {
     public static void main(String[] args) {
-        Image displayable = new Image(1000, 1000);
+        Displayable image = new Image(1000, 1000);
         Rectangle rectangle = new Rectangle(new Point(50, 50), new Point(300, 200));
-        rectangle.draw(displayable);
+        rectangle.draw(image);
         Triangle triangle = new Triangle(new Point(100, 100), new Point(900, 900), new Point(100, 900));
-        triangle.draw(displayable);
+        triangle.draw(image);
 
         for (int i = 0; i < 50; i++) {
-            Circle circle = Circle.random(image.getWidth(), image.getHeight());
-            circle.draw(displayable);
+            Circle circle = Circle.random(((Image) image).getWidth(), ((Image) image).getHeight());
+            circle.draw(image);
         }
-        displayable.save("image.png");
+        image.save("image.png");
     }
 }
-
 ```
 
 
