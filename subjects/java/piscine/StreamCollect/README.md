@@ -6,7 +6,7 @@ Create a file `StreamCollect.java`.
 
 Create a function `mapByFirstLetter` which maps the first letter (to upper case) to a list of Strings begining with the given letter.  
 Create a function `getMaxByModulo4` which groups the integers by modulo 4 and returns a map associating each module 4 value to the max integer in each group.
-##Create a function `orderAndConcatWithSharp` which joins the alphabetically sorted Strings with a ' # ' between each. The resulting String starts with a '{' and ends with a '}'.
+Create a function `orderAndConcatWithSharp` which joins the alphabetically sorted Strings with a ' # ' between each. The resulting String starts with a '{' and ends with a '}'.
 
 ### Expected Functions
 
