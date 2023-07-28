@@ -1,5 +1,16 @@
 #### Functional
 
+***Is the student able to justify his choices and explain the following:***
+***Note:*** Ask the student to show you the implementation in the source code when necessary.
+###### What are the libraries used in the project?
+###### What specific algorithm was implemented in the project?
+###### Ask the student about high traffic congestion management 
+###### Ask the student about the color of cars and their relation to routes.
+###### Ask the student about the limits placed on vehicle generation.
+###### Ask the student about any extra features implemented.
+###### Ask the student about their handling of traffic lights.
+###### Ask the student about their approach to maintaining safe distances between vehicles.
+
 ##### Try to run the application.
 
 ###### Does the application start?
