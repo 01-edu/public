@@ -38,19 +38,29 @@ You may optionally implement the following shapes, including the classes and int
 ### Usage
 
 ```java
+interface Displayable {
+    void display(int x, int y, Color color);
+    void save(String string);
+}
+
+interface Drawable {
+    void draw(Displayable displayable);
+    Color getColor();
+}
+
 public class Main {
     public static void main(String[] args) {
-        Image image = new Image(1000, 1000);
+        Image displayable = new Image(1000, 1000);
         Rectangle rectangle = new Rectangle(new Point(50, 50), new Point(300, 200));
-        rectangle.draw(image);
+        rectangle.draw(displayable);
         Triangle triangle = new Triangle(new Point(100, 100), new Point(900, 900), new Point(100, 900));
-        triangle.draw(image);
+        triangle.draw(displayable);
 
         for (int i = 0; i < 50; i++) {
             Circle circle = Circle.random(image.getWidth(), image.getHeight());
-            circle.draw(image);
+            circle.draw(displayable);
         }
-        image.save("image.png");
+        displayable.save("image.png");
     }
 }
 
