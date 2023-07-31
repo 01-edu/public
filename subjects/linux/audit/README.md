@@ -1,8 +1,8 @@
 #### Functional
 
-##### Ask the auditee to start VirtualBox.
+##### Ask the auditee to start the virtualization software.
 
-###### Is VirtualBox correctly installed on the auditee's machine?
+###### Is the virtualization software correctly installed on the auditee's machine?
 
 ##### Ask the auditee to show you his VM with a version of debian already installed.
 
