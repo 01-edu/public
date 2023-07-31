@@ -36,4 +36,4 @@ Files that must be inside your repository:
 
 ###### Does the program save the result of each command in a result.txt file?
 
-###### If the result.txt file already exists, does the program overwrite the result file, or is a new file created?
+###### If the result.txt file already exists is a new file created?
