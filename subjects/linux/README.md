@@ -24,7 +24,7 @@ It will also allow you to learn some tricks to better control your machine and s
 
 ### Virtualization
 
-To practice in a standardized manner and without the risk of altering your own operating system, you should install a virtualization application that is compatible with your chip architecture.
+To practice in a standardized manner and without the risk of altering your own operating system, you should install a virtualization software that is compatible with your chip architecture.
 
 For X86-64 chips, we recommend using [VirtualBox](https://www.virtualbox.org/wiki/Downloads). For Apple Silicon chips, we recommend using [UTM](https://mac.getutm.app/).
 
