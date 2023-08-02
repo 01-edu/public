@@ -8,30 +8,30 @@ Now let's implement the Decorator Design Pattern
 classDiagram
 class Raclette {
     <<interface>>
-    +getCalories()* String
+    +getCalories()* int
     +getIngredients()* String 
 }
 class BaseRaclette {
-    +getCalories() String
+    +getCalories() int
     +getIngredients() String
 }
 class RacletteDecorator {
     <<abstract>>
     -Raclette raclette
     +RacletteDecorator(Raclette raclette)
-    +getCalories() String
+    +getCalories() int
     +getIngredients() String
 }
 class WithPickles {
     -Raclette raclette
     +RacletteDecorator(Raclette raclette)
-    +getCalories() String
+    +getCalories() int
     +getIngredients() String
 }
 class WithColdMeats {
     -Raclette decoratedRaclette
     +RacletteDecorator(Raclette raclette)
-    +getCalories() String
+    +getCalories() int
     +getIngredients() String
 }
 
