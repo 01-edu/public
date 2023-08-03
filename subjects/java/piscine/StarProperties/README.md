@@ -7,7 +7,7 @@ In the following quest, we will work with the same files and classes. You should
 Create a file `CelestialObject.java`.
 
 Create a public class named `CelestialObject`.  
-The class must contains four properties : 
+The class must contain four properties : 
 * x (double)
 * y (double)
 * z (double)

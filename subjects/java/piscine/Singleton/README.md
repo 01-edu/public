@@ -4,7 +4,7 @@
 
 In this quest, we will implement some design patterns.
 
-For first, we will implement the singleton pattern.
+At first, we will implement the singleton pattern.
 
 ```mermaid
 classDiagram
@@ -20,7 +20,7 @@ Excalibur <-- Excalibur
 
 Here is the matching class diagram. Create the matching class in the matching file.
 
-When calling the getInstance method, an instance of Excalibur with name "Sword"
+When calling `getInstance` method, an instance of Excalibur with name "Sword" should be returned.
 
 ### Usage
 

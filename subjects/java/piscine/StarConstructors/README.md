@@ -4,12 +4,12 @@
 
 We will now add two constructors :
 
-* The default one, with no parameter which inits the properties to the following values :
+* The default one, with no parameters which initialises the properties with following values :
     * `x` : `0.0`
     * `y` : `0.0`
     * `z` : `0.0`
     * `name` : `"Soleil"`
-* The second one take four parameters and sets the values of `name`, `x`, `y` and `z`.
+* The second one takes four parameters and sets the values of `name`, `x`, `y` and `z`.
 
 ### Usage
 

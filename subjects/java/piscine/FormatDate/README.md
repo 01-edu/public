@@ -4,7 +4,7 @@
 
 Create a file `FormatDate.java`.
 
-Write a function `formatToFullText` that returns a formatted string using the date as parameter. The awaited format is `Le 22 aoû. de l'an 2021 à 13h25m et 46s`    
+Write a function `formatToFullText` that returns a formatted string using the date as parameter. The awaited format is `Le 22 août de l'an 2021 à 13h25m et 46s`    
 Write a function `formatSimple` that returns a formatted string using the date as parameter. The awaited format is `febbraio 13 22`  
 Write a function `formatIso` that returns a formatted string using the time as parameter. The awaited format is `16:18:56.8495847`
 

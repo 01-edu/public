@@ -9,8 +9,8 @@ It has one private property : `centerStar` of type `Star`.
 
 There are two constructors :
 
-- one with no parameters, which calls the superclass constructor with no parameters. In this case, the `centerStar` property is initialized with the default Star constructor.
-- one with many parameters :
+- One with no parameters, which calls the superclass constructor with no parameters. In this case, the `centerStar` property is initialised with the default Star constructor.
+- The other with many parameters :
   - `name`
   - `x`
   - `y`
@@ -20,10 +20,10 @@ There are two constructors :
 
 We add a getter and a setter for the centerStar property (`getCenterStar` and `setCenterStar`).
 
-We will override the `hashCode` and `equals`, using the `centerStar` property.
+We override the `hashCode` and `equals`, using the `centerStar` property.
 
-Finally, we rewrite the `toString` method. The returned String must have the following format : `<name> circles around <centerStar.name> at the <distanceWithCenterStar> AU`.
-The `distanceWithCenterStar` is computed using the `distanceBetween` method with the planet and its center star.##
+Finally, we override `toString` method. The returned String must have the following format : `<name> circles around <centerStar.name> at the <distanceWithCenterStar> AU`.
+The `distanceWithCenterStar` is computed with the help of `distanceBetween` method taking as parameter the planet and its center star.##
 
 # Usage
 

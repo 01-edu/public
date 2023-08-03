@@ -2,13 +2,13 @@
 
 ### Instructions
 
-Now, some utils method for our class.
+Now, let's add some useful methods to our class.
 
-First, the `toString` method which will return a literal version of our class. The format is the following : `<name> is positioned at (<x>, <y>, <z>)`. The printed double will be with 3 decimals.
+First, `toString` method which returns a literal version of our class. The format is the following : `<name> is positioned at (<x>, <y>, <z>)`. The printed double will have a precision of 3 decimals.
 
-Then, the `equals(Object object)` method which will return trus if all properties of the object as parameters are equals to the current object.
+Then, `equals(Object object)` method which will return true if all properties of the object in parameter are equal to the current object.
 
-As we have rewritten the `equals` method, we need to rewrite the `hashCode` method. This method returns an integer. If two objects are equals (using the `equals` method), then the results of their hashCode method should be equals.
+As we have overriden `equals` method, we need to override `hashCode` method. This method returns an integer. If two objects are equal (using the `equals` method), then the results of their hashCode method should be equal.
 
 ### Usage
 

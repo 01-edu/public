@@ -5,8 +5,8 @@
 Create a file `StreamMap.java`.
 
 Create a function `sumOfStringLength` which returns the sum of the length of the strings in the stream.  
-Create e function `upperCaseAllString` which returns the list of all the strings in upper case as stream.  
-Create e function `uniqIntValuesGreaterThan42` which keep only double greater than 42, transforms the double in integer and return them as a set.
+Create a function `upperCaseAllString` which returns the list of all the strings in upper case.  
+Create a function `uniqIntValuesGreaterThan42` which keeps only doubles greater than 42, transforms the doubles to integers and returns them as a set.
 
 
 ### Expected Functions

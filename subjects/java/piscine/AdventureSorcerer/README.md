@@ -13,10 +13,10 @@ It has a constructor with three parameters :
 
 From the `Healer` interface : 
 * `getHealCapacity` returns the property `healCapacity`
-* `heal` add `healCapacity` to the currentHealth of the `Character` in parameter. Beware that the `currentHealth` can't be greater the `maxHealth`. You may need to change the accessibility of the `currentHealth` param in the `Character` to be able to update the value.
+* `heal` adds `healCapacity` to the currentHealth of the `Character` in parameter. Beware that `currentHealth` can't be greater the `maxHealth`. You may need to change the accessibility of the `currentHealth` attribute in `Character` class to be able to update the value.
 
-You will override the `toString` method with the following format : `<name> is a sorcerer with <currentHealth> HP. It can heal <healCapacity> HP.`
-If it's `currentHeal` is equal to 0, the format is `<name> is a dead sorcerer. So bad, it could heal <healCapacity> HP.`
+You will override `toString` method with the following format : `<name> is a sorcerer with <currentHealth> HP. It can heal <healCapacity> HP.`
+If its `currentHeal` is equal to 0, the format is `<name> is a dead sorcerer. So bad, it could heal <healCapacity> HP.`
 
 ### Usage
 

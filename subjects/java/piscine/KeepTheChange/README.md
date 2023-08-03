@@ -6,10 +6,10 @@ Create a file `KeepTheChange.java`.
 
 Write a function `computeChange` that returns the list of coins that compose the change.  
 As parameters, we have : 
-* the amount to decompose in different coins
-* the set of existing coins
+* The amount to decompose into different coins
+* The set of existing coins
 
-The awaiting solution is the best solution, so must have the minimum of coins.  
+The awaited solution is the best solution, so must have the minimum number of coins.  
 The tests are choosen to have an unique solution.
 
 ### Expected Functions

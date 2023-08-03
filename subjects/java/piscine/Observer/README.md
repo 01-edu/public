@@ -46,16 +46,16 @@ Here is the matching class diagram. Create the matching classes in the matching 
 Here is the description : 
 * For `ValuePublisher` :
   * `updateState` calls the `updateState` method of all observers.
-  * `subscribe` should add the observer in the list of observers.
-  * `unsubscribe` should remove the observer of the list of observers.
+  * `subscribe` should add the observer to the list of observers.
+  * `unsubscribe` should remove the observer from the list of observers.
 * For `BinaryBaseObserver` :
-  * `updateState` should add the binary String of the value in parameter to the list of events (e.g. for 13, should add "1101")
+  * `updateState` should add the binary String representation of its parameter to the list of events (e.g. for 13, should add "1101")
   * `getEvents` should return the list of events.
 * For `DecimalBaseObserver` :
-  * `updateState` should add the decimal String of the value in parameter to the list of events (e.g. for 13, should add "13")
+  * `updateState` should add the decimal String representation of its parameter to the list of events (e.g. for 13, should add "13")
   * `getEvents` should return the list of events.
 * For `HexaBaseObserver` :
-  * `updateState` should add the hexadecimal String of the value in parameter to the list of events (e.g. for 13, should add "d")
+  * `updateState` should add the hexadecimal String representation of its parameter to the list of events (e.g. for 13, should add "d")
   * `getEvents` should return the list of events.
 
 ### Usage

@@ -4,7 +4,7 @@
 
 Create a file `StringConcat.java`.
 
-Write a function `concat` that returns the concatenation of the two strings passed as parameters.
+Write a function `concat` that returns the concatenation of the two strings passed in parameters.
 
 ### Expected Functions
 

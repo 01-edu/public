@@ -5,18 +5,18 @@
 We create now the weapon for our adventurers. Create a new class `Weapon` in a new file `Weapon.java`.
 
 It has two attributes : 
-* a String called `name` with a getter.
-* an integer called `damage` with a getter.
+* A String called `name` with a getter.
+* An integer called `damage` with a getter.
 
-The constructor has these 2 attributes as parameters.
+The constructor takes in both attributes as parameters.
 
-Let's overwrite the `toString` method for this class : it returns a string under the format `<name> deals <damage> damages`
+Let's override `toString` method for this class : it returns a string under the format `<name> deals <damage> damages`
 
 Now, add a weapon attribute to the `Character` class, in its constructor and in the constructor of all subclasses.
 
-In all subclasses, in the `attack` method, you need to use the `damage` when calling the `takeDamage` method. It the character has no weapon, use the previous defined damage per subclasses.
+In all subclasses, in `attack` method, you need to use `damage` when calling `takeDamage` method. If the character has no weapon, use the previous defined damage per subclasses.
  
-Update the `toString` method of all subclasses by using the concatenation of the current value with the following string : `He has the weapon <weapon.toString>`.
+Update `toString` method of all subclasses by using the concatenation of the current value with the following string : `He has the weapon <weapon.toString>`.
 
 ### Usage
 

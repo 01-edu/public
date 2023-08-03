@@ -8,9 +8,9 @@ Create a file `MapInventory.java`.
 
 Write two functions:
 
-Write a function `getProductPrice` that takes a map of product IDs and their corresponding prices, along with a product ID as parameters, and returns the price of the specified product. If the product ID is not present in the map, the function should return `-1`.
+Write a function `getProductPrice` that takes in parameters a map of product IDs and their corresponding prices, along with a product ID, and returns the price of the specified product. If the product ID is not present in the map, the function should return `-1`.
 
-Write a function `getProductIdsByPrice` that takes a map of product IDs and their corresponding prices, along with a price as a parameter, and returns a list of product IDs that have the given price. If no products are found with the specified price, the function should return an empty list.
+Write a function `getProductIdsByPrice` that takes a map of product IDs and their corresponding prices, along with a price as parameter, and returns a list of product IDs that have the given price. If no products are found for the specified price, the function should return an empty list.
 
 ### Expected Functions
 

@@ -4,8 +4,8 @@
 
 Create a file `Wedding.java`.
 
-Write a function `createCouple` that returns a map of name which associates randomly a name from the first list to a name of the second list.  
-If the lists have different size, some names from the bigger list will not be ignored.
+Write a function `createCouple` that returns a map of names which associates randomly a name from the first list to a name of the second list.  
+If the lists have different sizes, some names from the bigger list will be ignored.
 
 ### Expected Functions
 

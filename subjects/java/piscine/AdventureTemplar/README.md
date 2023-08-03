@@ -4,7 +4,7 @@
 
 We will now implement our second interface through a new class : `Templar` in a file named `Templar.java`.
 
-This class implements the `Healer` and the `Tank` interfaces and inherits from `Character`.  
+This class implements `Healer` and `Tank` interfaces and inherits from `Character`.  
 It has two new attributes :
 
 - a non modifiable integer `healCapacity`,
@@ -19,14 +19,14 @@ It has a constructor with four parameters :
 From the `Healer` interface :
 
 - `getHealCapacity` returns the property `healCapacity`
-- `heal` add `healCapacity` to the currentHealth of the `Character` in parameter. Beware that the `currentHealth` can't be greater the `maxHealth`.
+- `heal` adds `healCapacity` to the currentHealth of the `Character` in parameter. Beware that `currentHealth` can't be greater the `maxHealth`.
 
-From the `Tank` interface :
+From `Tank` interface :
 
-- `getShield` return the property `shield`.
+- `getShield` returns the property `shield`.
 
-You will override the `toString` method with the following format : `<name> is a strong Templar with <currentHealth> HP. It can heal <healCapacity> HP and has a shield of <shield>.`
-If it's `currentHeal` is equal to 0, the format is `<name> has been beaten, even with its <shield> shield. So bad, it could heal <healCapacity> HP.`
+You will override `toString` method with the following format : `<name> is a strong Templar with <currentHealth> HP. It can heal <healCapacity> HP and has a shield of <shield>.`
+If its `currentHeal` is equal to 0, the format is `<name> has been beaten, even with its <shield> shield. So bad, it could heal <healCapacity> HP.`
 
 ### Usage
 

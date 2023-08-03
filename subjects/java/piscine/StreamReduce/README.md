@@ -4,8 +4,8 @@
 
 Create a file `StreamReduce.java`.
 
-Create a function `sumAll` which returns sum of integers in the stream.  
-Create e function `divideAndAddElements` which sum the result of the division between all the integers in the stream and the divider.  
+Create a function `sumAll` which returns the sum of integers in the stream.  
+Create a function `divideAndAddElements` which sums the result of the division, of all the integers in the stream, by the divider.  
 
 
 ### Expected Functions

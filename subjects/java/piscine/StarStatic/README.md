@@ -4,9 +4,9 @@
 
 Let's add some computation.
 
-Our objective is to compute the distance between celestial objects. As you may have guessed, the x, y and z values are the coordinates of the object. Their unit is AU (Astronomical Unit) which is 150 000 000 km.
+Our objective is to compute the distance between celestial objects. As you may have guessed, the values x, y and z are the coordinates of the object. Their unit is AU (Astronomical Unit) which is 150 000 000 km.
 
-We will add two `static` and `public` method :
+We will add two `static` and `public` methods :
 
 - `getDistanceBetween` which takes two CelestialObject as parameters and returns a double corresponding to the distance between the two objects.
 - `getDistanceBetweenInKm` which takes two CelestialObject as parameters and returns a double corresponding to the distance in km between the two objects.
