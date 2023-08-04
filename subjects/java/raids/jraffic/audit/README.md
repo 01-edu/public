@@ -1,15 +1,18 @@
-#### Functional
+#### Comprehension 
 
 ***Is the student able to justify his choices and explain the following:***
 ***Note:*** Ask the student to show you the implementation in the source code when necessary.
-###### What are the libraries used in the project?
-###### What specific algorithm was implemented in the project?
-###### Ask the student about high traffic congestion management 
-###### Ask the student about the color of cars and their relation to routes.
-###### Ask the student about the limits placed on vehicle generation.
-###### Ask the student about any extra features implemented.
-###### Ask the student about their handling of traffic lights.
-###### Ask the student about their approach to maintaining safe distances between vehicles.
+###### Can the student explain why he uses this library?
+
+###### Can the student explain how he manages the High-Traffic congestion
+
+###### Can the student explain he's choices about the color of the cars and their relation to routes
+
+###### Can the student explain how he animates the vehicles and the light traffic
+
+###### Can the student explain how he manages the key hooks?
+
+#### Functional 
 
 ##### Try to run the application.
 
@@ -34,6 +37,10 @@
 ##### Try pressing the `"r"` key.
 
 ###### Was the vehicle generated from a random direction, with a random route?
+
+##### Try press the `"r"` key multiple times.
+
+###### Can you confirm that their no limit to the number of vehicles?
 
 ##### Try pressing the `"r"` key more than 5 times to generate multiple vehicles, from multiple directions.
 
@@ -107,7 +114,7 @@
 
 #### Bonus
 
-###### +Is there any type of image sprite for traffic light? (An image sprite is a collection of images put into a single image.)
+###### +Is there any type of image sprite for a traffic light? (An image sprite is a collection of images put into a single image.)
 
 ###### +Did the student implement some kind of animation and image sprite for the vehicle?
 
