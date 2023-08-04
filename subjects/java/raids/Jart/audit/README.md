@@ -1,6 +1,6 @@
 #### Functional
 
-##### Try to run the program using `java Main`
+##### Try to run the program
 
 ###### Does the program compile and run without any error or warning?
 
