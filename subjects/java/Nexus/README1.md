@@ -1,0 +1,39 @@
+# Nexus Repository Quick Start Project
+
+This hands-on project is designed to provide you with a rapid introduction to Nexus Repository Manager and its core functionalities. By completing this project, you'll gain practical experience in setting up Nexus, publishing and retrieving artifacts, and understanding the basics of artifact management.
+
+## Project Objectives
+
+The main objectives of this project are as follows:
+
+- Install and set up Nexus Repository Manager to create and manage Maven repositories.
+- Develop a simple Java web application using a chosen framework (e.g., Spring Boot).
+- Configure the Maven project to publish built JAR artifacts to Nexus and retrieve artifacts using Maven dependency management.
+- Explore artifact versioning and learn to manage dependencies through Nexus.
+
+## Project Tasks
+
+The project is divided into several tasks to help you progressively build your skills with Nexus:
+
+1. **Nexus Installation and Setup:** Install and configure Nexus Repository Manager on your preferred environment. Create repositories to accommodate different artifact types.
+
+2. **Sample Web Application:** Create a basic Java web application using Sprint Boot. Set up the project structure as a Maven project.
+
+3. **Artifact Publishing and Retrieval:** Configure the Maven project to publish built JAR artifacts to Nexus. Learn to retrieve artifacts using Maven's dependency management.
+
+4. **Versioning and Dependency Management:** Understand artifact versioning in Nexus. Update your web application's version and manage its dependencies through Nexus.
+
+## Getting Started
+
+To begin the project, follow these steps:
+
+1. Follow the instructions provided in the `Task 1` folder to complete the Nexus installation and setup.
+2. Proceed to `Task 2`, `Task 3`, and `Task 4` folders to complete the remaining project tasks.
+
+## Evaluation
+
+Your project completion will be evaluated based on the tasks you've accomplished. Refer to the provided evaluation audit document for the criteria and checklist used by the evaluator.
+
+Enjoy your journey into the world of Nexus and artifact management!
+
+---
