@@ -14,13 +14,13 @@
 
 ###### Does the app contain a page where you can see the historical data of a stock?
 
-###### Do you have 1.000.000 fake dollars in your account?
+###### Do you have 1 000 000 fake dollars in your account?
 
-##### Ask the student which where the 20 stocks he chose to monitored and display their data.
+##### Ask the student which where the stocks he chose to monitored and display their data.
 
-###### Are the 20 stocks being monitored and do they display their data within the app?
+###### Is the amount of stocks defined in the subject being monitored and do they display their data within the app?
 
-##### Buy 100 shares of a stock. Check the current stock price and make sure your fake dollar balance has decreased to the correct amount as per the purchase. See also if the stock has appeared in your portfolio, and
+##### Buy 100 shares of a stock. Check the current stock price and make sure your fake dollar balance has decreased to the correct amount as per the purchase.
 
 ###### Were you able to buy the stock?
 
@@ -34,7 +34,7 @@
 
 ###### Does the app display historical charts of the stock prices for the selected stock price history?
 
-###### Does the app update data about a stock at least 5 times per second?
+###### Does the app update data about a stock with the minimum frequency defined in the subject (_n_ times per second)?
 
 ##### Try to sell everything that you bought.
 
@@ -50,7 +50,7 @@
 
 ###### Can you see historical data in days, weeks, and months slice?
 
-##### Ask the student which of the patterns, `BLoC`, `Pattern` or `MVC`, did they used? Ask them to explain the pattern that they used, and confirm if they implemented it correctly.
+##### Ask the student which of the patterns, `BLoC`, `Pattern` or `MVC`, did they use? Ask them to explain the pattern that they used, and confirm if they implemented it correctly.
 
 [BLoC](https://pub.dev/packages/flutter_bloc)
 [Pattern](https://pub.dev/packages/provider)
