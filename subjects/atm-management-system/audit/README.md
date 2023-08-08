@@ -1,6 +1,6 @@
 #### Functional
 
-##### Open the application and register a new user with the name `"Alice"` and the password `"q1w2e3r4t5y6"`.
+##### Open the application and register a new user with the name `"Marcus"` and the password `"q1w2e3r4t5y6"`.
 
 ###### Is this user saved in the file `"./data/users.txt"`, and if so, are all credentials correct (name and password)?
 
