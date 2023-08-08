@@ -89,6 +89,8 @@ The following features must be implemented by yourself.
    - fixed03(3 year account): interest rate 0.08%
    - If the account is current you must display `You will not get interests because the account is of type current`
 
+   For example: for an account of type `savings` with a deposit date of `10/10/2002` and an amount of `$1023.20` the system will show `"You will get $5.97 as interest on day 10 of every month"`.
+
 4. The **Make transaction** feature, users must be able to create transactions, withdrawing or depositing money to a certain account. All transactions
    must be updated and saved into the corresponding file. Accounts of type `fixed01`, `fixed02` and `fixed03` are not allowed to make transactions and an error message should be displayed if transactions are attempted with these accounts.
 
