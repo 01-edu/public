@@ -2,6 +2,8 @@
 
 ###### Has the requirement for the allowed packages been respected?
 
+###### Can you confirm that the `os/exec` package was not used in this project?
+
 ##### Run both my-ls and the system command `ls` with no arguments.
 
 ###### Does it display the same files and/or folders in the same order?
