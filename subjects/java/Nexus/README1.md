@@ -22,7 +22,7 @@ To begin the project, follow these steps:
 
 ## Evaluation
 
-Your project completion will be evaluated based on the tasks you've accomplished. Refer to the provided evaluation audit document for the criteria and checklist used by the evaluator.
+Your project will be assessed based on the successful completion of all tasks outlined. Please refer to the provided evaluation audit document, which contains the criteria and checklist used by the evaluator.
 
 Enjoy your journey into the world of Nexus and artifact management!
 
