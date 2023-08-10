@@ -17,8 +17,8 @@ The project is divided into several tasks to help you progressively build your s
 
 To begin the project, follow these steps:
 
-1. Follow the instructions provided in the `Task 1` folder to complete the Nexus installation and setup.
-2. Proceed to `Task 2`, `Task 3`, and `Task 4` folders to complete the remaining project tasks.
+1. Follow the instructions provided in the `Task 1` to complete the Nexus installation and setup.
+2. Proceed to `Task 2`, `Task 3`, and `Task 4` to complete the remaining project tasks.
 
 ## Evaluation
 
