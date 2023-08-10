@@ -2,17 +2,7 @@
 
 This hands-on project is designed to provide you with a rapid introduction to Nexus Repository Manager and its core functionalities. By completing this project, you'll gain practical experience in setting up Nexus, publishing and retrieving artifacts, and understanding the basics of artifact management.
 
-## Project Objectives
-
-The main objectives of this project are as follows:
-
-- Install and set up Nexus Repository Manager to create and manage Maven repositories.
-- Develop a simple Java web application using a chosen framework (e.g., Spring Boot).
-- Configure the Maven project to publish built JAR artifacts to Nexus and retrieve artifacts using Maven dependency management.
-- Explore artifact versioning and learn to manage dependencies through Nexus.
-
 ## Project Tasks
-
 The project is divided into several tasks to help you progressively build your skills with Nexus:
 
 1. **Nexus Installation and Setup:** Install and configure Nexus Repository Manager on your preferred environment. Create repositories to accommodate different artifact types.
