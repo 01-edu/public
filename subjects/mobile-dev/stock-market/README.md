@@ -2,8 +2,8 @@
 
 ### Instructions
 
-Develop an app that will simulate a `real-time` stock market. You may use [Yahoo](https://algotrading101.com/learn/yahoo-finance-api-guide/#:~:text=Why%20should%20I%20use%20the%20Yahoo%20Finance%20API%3F,-Free&text=One%20good%20reason%20is%20because%20it%20can%20be%20completely%20free.) API for data retrieval.
-You should fetch all the data in real-time and choose 10 stocks to monitor. The objectives of this exercise are to practice fetching data in real-time, visualizing custom widgets in real-time, and implementing authentication and authorization services.
+Develop an app that will simulate a `real-time` stock market. For developing purpose, we provided you with a server providing you mock stock data in the [resources](resources/mock-stock-data-server/).
+You should fetch all the data in real-time and choose 20 stocks to monitor. The objectives of this exercise are to practice fetching data in real-time, visualizing custom widgets in real-time, and implementing authentication and authorization services.
 
 Upon signing up, users must be given `1 000 000` fake dollars to use within the app for buying and holding stocks. The app should have the following features:
 
@@ -12,9 +12,9 @@ Upon signing up, users must be given `1 000 000` fake dollars to use within the 
 - `Historical Data`: Create a page that displays historical data for a chosen stock. This feature will allow users to view and analyze the past performance of a particular stock.
 - `Stock Trading`: Implement the ability to buy, sell, and hold stocks. Users should be able to use their simulated funds (starting balance: 1 000 000 fake dollars) to buy and sell stocks. The app should keep track of the user's stock holdings and balance.
 - `Historical Charts`: Provide historical charts of stock prices to help users visualize the stock performance over time. Implement a page that displays charts for the selected stock's price history.
-- `Real-Time Data`: Ensure that the stock data is updated in real-time. The data should be updated at least one time per second, providing users with the latest stock information.
+- `Real-Time Data`: Ensure that the stock data is updated in real-time. The data should be updated at least five times per second, providing users with the latest stock information.
 - Retrieval of data for a particular stock for the last year or since the company went public.
-- Choose 10 stocks to monitor and display their data within the application.
+- Choose 20 stocks to monitor and display their data within the application.
 
 Make sure to manage states using one of the following patterns:
 
