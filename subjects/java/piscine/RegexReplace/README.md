@@ -6,7 +6,7 @@ Create a file `RegexReplace.java`.
 
 Write a function `removeUnits` that returns the string where the units `cm` and `€` are removed if they follow directly a number and followed by a space.
 Write a function `obfuscateEmail` that returns a string where parts of email addresses are replaced by '*' if they follow the rules below:
-- Hide from the username any character next to `-`,  `.` or `_` if they exist. Otherwise, hide 3 characters from the username if its length > 3
+- Hide from the username any character next to `-`,  `.` or `_` if they exist. Otherwise, hide 3 characters at most from the username if its length > 3
 - If the remaining part after `@` is in the format `@<third level domain>.<second level domain>.<top level domain>`, then hide the third and top level domains, otherwise hide the second level domain and the top level domain if it is not included in `.com`, `.org` and `.net`.
 
 ### Expected Functions
@@ -50,7 +50,7 @@ $ java -cp build ExerciseRunner
 32 cm et 50 €
 32cms et 50€!
 l lapin jou à la bel ball avec d animau rigolo pour gagner l bill bleu
-joh****@*******.com
+john.***@*******.com
 jan*@*******.co.***
 jac***@*******.**
 $ 
