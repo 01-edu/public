@@ -3,7 +3,7 @@
 set -e
 
 if test "$CODE_EDITOR_RUN_ONLY" = true; then
-	node "./${EXERCISE}.sh" "$@"
+	node "${EXERCISE}.js" "$@"
 	exit
 fi
 
