@@ -6,6 +6,16 @@ cp -r /app .
 cp -a student app
 cd app
 
+if test "$CODE_EDITOR_RUN_ONLY" = true; then
+	if test -f "./${EXERCISE}.sh"; then
+		chmod +x "./${EXERCISE}.sh"
+	fi
+
+	# run shell programs on the code editor
+	bash "./${EXERCISE}.sh" "$@"
+	exit
+fi
+
 if test -f "./student/${EXERCISE}.sh"; then
 	chmod +x "./student/${EXERCISE}.sh"
 fi
