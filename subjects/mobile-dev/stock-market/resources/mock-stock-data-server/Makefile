@@ -1,6 +1,6 @@
 IMAGE_NAME="stock-server"
-SERVER_PORT=5000
-PUBLIC_PORT=5000
+SERVER_PORT=5001
+PUBLIC_PORT=5001
 
 sample-stocks:
 	tar xf sample-stocks.zip 

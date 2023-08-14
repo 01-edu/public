@@ -31,7 +31,7 @@ Below an example on how to use it (remember that the server needs to be running
 locally).
 
 ```shell
-$ curl -s localhost:5000/stocks_list | jq | head
+$ curl -s localhost:5001/stocks_list | jq | head
 [
   "BRID",
   "WRB",
@@ -42,9 +42,9 @@ $ curl -s localhost:5000/stocks_list | jq | head
   "UMBF",
   "MTRN",
   "UNT",
-$ curl localhost:5000/exchange_rate/WRB
+$ curl localhost:5001/exchange_rate/WRB
 {"rate":0.12680993974208832,"symbol":"USD","timestamp":1691667858.912409}
-$ curl localhost:5000/exchange_rate/BRID
+$ curl localhost:5001/exchange_rate/BRID
 {"rate":0.38091352581977844,"symbol":"USD","timestamp":1691667862.3328483}
 $
 ```
