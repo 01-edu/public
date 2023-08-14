@@ -7,14 +7,13 @@ def load_historical_data(directory_path='./sample-stocks/'):
 
     file_list = [filename for filename in os.listdir(directory_path) if filename.endswith(".csv")]
     for filename in file_list:
-        if filename.endswith(".csv"):
-            symbol = filename.replace(".csv", "")
+        symbol = filename.replace(".csv", "")
 
-            historical_data[symbol] = {}
-            file_path = os.path.join(directory_path, filename)
-            with open(file_path, 'r') as csv_file:
-                csv_reader = csv.DictReader(csv_file)
-                historical_data[symbol] = [row['Close'] for row in csv_reader]
+        historical_data[symbol] = {}
+        file_path = os.path.join(directory_path, filename)
+        with open(file_path, 'r') as csv_file:
+            csv_reader = csv.DictReader(csv_file)
+            historical_data[symbol] = [row['Close'] for row in csv_reader]
 
     return historical_data
 

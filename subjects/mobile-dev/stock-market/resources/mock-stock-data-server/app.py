@@ -9,7 +9,7 @@ CORS(app)
 
 start_time = time.time()
 
-historical_data = load_historical_data()  # Dictionary to store historical data
+historical_data = load_historical_data()
 
 @app.route('/exchange_rate/<symbol>')
 def get_stock_data(symbol):
@@ -32,4 +32,4 @@ def list_symbols():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5001)
