@@ -1,8 +1,8 @@
 #### Functional
 
-##### Ask the auditee to start VirtualBox.
+##### Ask the auditee to start the virtualization software (UTM for Apple silicon chips and VirtualBox for X86-64 chips).
 
-###### Is VirtualBox correctly installed on the auditee's machine?
+###### Is the virtualization software correctly installed on the auditee's machine?
 
 ##### Ask the auditee to show you the VM `01_add-vm`.
 

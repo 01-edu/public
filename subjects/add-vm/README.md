@@ -2,13 +2,21 @@
 
 ### Add a virtual machine
 
-We provide virtual machines you need to download & add to VirtualBox.
+We provide virtual machines for both, X86-64 chips and Apple Silicon chips bases systems, you need to download & add to your virtualization software.
 
-Each VM will contain a system in a certain state that you will need to use in order to crack the sysadmin exercises. Their names start with "01\_" in order to avoid conflict with your VM names.
+For X86-64 chips, you have to use [VirtualBox](https://www.virtualbox.org/wiki/Downloads). 
+
+For Apple Silicon chips, you have to use [UTM](https://mac.getutm.app/).
+
+Each VM will contain a system in a certain state that you will need to use in order to crack the sysadmin exercises. Their names start with "01_" in order to avoid conflict with your VM names.
 
 You can download these VM here :
 
 https://assets.01-edu.org/sys
+
+
+### VirtualBox instructions:
+
 
 For this exercise you need to download the archive : [01_add-vm.tar.gz](https://assets.01-edu.org/sys/01_add-vm.tar.gz).
 
@@ -20,6 +28,21 @@ In VirtualBox :
 - Open the file `01_add-vm.vbox`
 
 The VM should appear on the list under the name "01_add-vm".
+
+### UTM instructions:
+
+For this exercise you need to download the archive : [01_add-vm.utm.zip](https://assets.01-edu.org/sys/01_add_vm.utm.zip).
+
+Create UTM_VMs folder in your Desktop and extract **01_add-vm.utm** to it
+
+In UTM:
+
+- Select on the menu bar : Files→ open
+- Navigate to`01_add-vm.utm` and select it
+
+The VM should appear on the list under the name "01_add-vm".
+
+(Note: the **.utm** are not files, they are directories.)
 
 ### Snapshots
 
@@ -43,6 +66,6 @@ If you forgot to do so and want to make a fresh start, you can always delete the
 
 ### Check
 
-Since all VMs are based on this one, check that it is working properly by starting and stopping it gracefully (`poweroff` or ACPI shutdown).
+Since all VMs are based on this one, check that it is working properly by starting and stopping it gracefully.
 
 The password is a single space.
