@@ -57,7 +57,7 @@ Software that makes extensive use of this feature :
 - macOS Time Machine (each backup is a snapshot)
 - Linux LVM (Logical Volume Manager)
 - Filesystems : Btrfs, ZFS
-- Hypervisors like the one you are currently using : VirtualBox
+- Hypervisors like the one you are currently using : VirtualBox or UTM
 
 **We recommend that this be the first thing you do after importing a VM.**
 This way you can break it, go in the wrong direction or want to try another way and at any time you can go back to the original state.
