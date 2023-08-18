@@ -4,20 +4,21 @@
 Welcome to the **Artifact Management System with Nexus** project! This hands-on project is designed to provide you with a comprehensive learning experience in utilizing Nexus by Sonatype as a central repository for storing, managing, and deploying software artifacts. Through a series of tasks and requirements, you'll explore various aspects of artifact management, version control, Docker integration, continuous integration, and security considerations.
 
 ## Project Requirements
+In this project, You will have to be working with, at least, java 11 and a version of Maven that is compatible with it.
+
 1. **Setup Nexus Repository Manager:**
-   - Install and configure the Nexus Repository Manager on a local or remote server.
-   - Set up repositories for different artifact types such as JARs, WARs, and Docker images.
+   - Obtain the most recent release of Nexus Repository Manager, and proceed to install and set it up on either a local or remote server. It is essential to configure Nexus to operate under a "nexus" user rather than the "root" user.
+   - Create repositories and set them up for different artifact types such as JARs, WARs, and Docker images.
 
 2. **Sample Web Application:**
-   - Develop a simple web application using the Spring Boot framework.
-   - Create a Maven or Gradle project structure for the web application.
+   - Clone buy-02 project repository, configure the web application as Maven project.
 
 3. **Artifact Publishing:**
-   - Configure the build tool (Maven or Gradle) to publish the built artifacts (JARs/WARs) to the appropriate repositories in Nexus.
+   - Configure Maven to publish the built artifacts to the appropriate repositories in Nexus.
 
 4. **Dependency Management:**
    - Utilize Nexus as a proxy for fetching external dependencies required for the web application.
-   - Configure your project to resolve dependencies from Nexus repositories.
+   - Configure the project to resolve dependencies from Nexus repositories.
 
 5. **Versioning:**
    - Implement versioning for the web application and its artifacts using Nexus capabilities.
