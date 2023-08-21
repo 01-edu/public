@@ -21,6 +21,8 @@ You must create documentation for your framework, so that users (auditers) are a
 
 Your framework will be tested by using it, like you previously have used one, in the social network project. So the user has to be presented to a folder structure that allows him to run the app from the root of that folder structure. The user testing your framework will have to implement some simple code in order to test the features described below.
 
+> You are not allowed to use any framework/library like `React`, `Angular`, `Vue` and similar to create your own framework.
+
 #### Documentation
 
 By documentation we mean, the explaining of how does the framework works and how to work with it, for example: how to create a div, how to add an event to a button, etc. A new user of your framework, after reading the documentation has to be able to use it without too much guessing work.
@@ -29,10 +31,10 @@ So for this you will have to create a [markdown](https://www.markdownguide.org/g
 
 - Explanation on the features of your framework
 - Code examples and explanations on how to:
-  - create an element
-  - create an event
-  - nest elements
-  - add attributes to an element
+  - Create an element
+  - Create an event
+  - Nest elements
+  - Add attributes to an element
 - Explanation on why things work the way they work
 
 #### Abstracting the DOM
@@ -114,7 +116,7 @@ You will also have to implement a way to handle the events triggered by the user
 
 #### TodoMVC
 
-A todoMVC project consists on creating a [webpage](http://todomvc.com/examples/vanillajs/) (this example is written in VanillaJS) with the same elements present in the example, so we advise you to test it around first. You have to make your todoMVC project, a pretty much perfect copy of the examples given in the links above, but using your framework.\
+A todoMVC project consists of creating a [webpage](http://todomvc.com/examples/vanillajs/) (this example is written in VanillaJS) with the same elements present in the example, so we advise you to test it around first. You have to make your todoMVC project, a pretty much perfect copy of the examples given in the links above, but using your framework.\
 Be aware that every thing that we can't visually see has to be present too (ids, classes, etc.).
 
 This project will help you learn about:

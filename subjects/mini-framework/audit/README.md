@@ -1,5 +1,7 @@
 #### Functional
 
+###### Is the framework implemented without using any other high-level library/framework like `React`, `Angular`, `Vue` and similar?
+
 ##### Open the documentation file.
 
 ###### Is the documentation written in a markdown file?
