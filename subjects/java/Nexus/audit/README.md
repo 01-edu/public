@@ -4,6 +4,8 @@
 
 ###### Has the Nexus Repository Manager been successfully installed and configured on a local or remote server?
 
+###### Is Nexus configured correctly to work under the specified user not 'root' user?
+
 ###### Are repositories set up for different artifact types such as JARs, WARs, and Docker images?
 
 ##### Development and Structure
@@ -29,8 +31,6 @@
 ###### Are different versions of artifacts effectively retrieved and managed?
 
 ##### Docker Integration
-
-###### Has the web application been Dockerized, creating a Docker image?
 
 ###### Is there a Docker repository set up in Nexus, and is the Docker image published to the repository?
 
