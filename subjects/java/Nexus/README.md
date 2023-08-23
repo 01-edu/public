@@ -28,8 +28,7 @@ In this project, You will have to be working with, at least, java 11 and a versi
    - Set up a Docker repository in Nexus and publish the Docker image to the repository.
 
 7. **Continuous Integration (CI):**
-   - Set up a CI/CD pipeline using a tool like Jenkins or GitLab CI.
-   - Configure the pipeline to trigger builds, tests, and artifact publishing whenever changes are pushed to the repository.
+   - Configure the pipeline, in addition to builds and tests, add artifact publishing whenever changes are pushed to the repository.
 
 8. **Documentation:**
    - Create clear and detailed documentation that explains the project setup, configuration steps, and usage instructions.
