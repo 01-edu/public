@@ -1,7 +1,7 @@
 # Artifact Management System with Nexus
 
 ## Project Description
-Welcome to the **Artifact Management System with Nexus** project! This hands-on project is designed to provide you with a comprehensive learning experience in utilizing Nexus by Sonatype as a central repository for storing, managing, and deploying software artifacts. Through a series of tasks and requirements, you'll explore various aspects of artifact management, version control, Docker integration, continuous integration, and security considerations.
+Welcome to the **Nexus** project! This hands-on project is designed to provide you with a comprehensive learning experience in utilizing Nexus by Sonatype as a central repository for storing, managing, and deploying software artifacts. Through a series of tasks and requirements, you'll explore various aspects of artifact management, version control, Docker integration, continuous integration, and security considerations.
 
 ## Project Requirements
 In this project, You will have to be working with, at least, java 11 and a version of Maven that is compatible with it.
@@ -25,7 +25,6 @@ In this project, You will have to be working with, at least, java 11 and a versi
    - Demonstrate how to retrieve and manage different versions of the artifacts.
 
 6. **Docker Integration:**
-   - Dockerize the web application and create a Docker image.
    - Set up a Docker repository in Nexus and publish the Docker image to the repository.
 
 7. **Continuous Integration (CI):**
