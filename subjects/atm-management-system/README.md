@@ -83,10 +83,10 @@ The following features must be implemented by yourself.
    3.2. If the account is either `savings`, `fixed01`, `fixed02` and `fixed03` the system will display
    the information of that account and the interest you will acquire depending on the account:
 
-   - savings: interest rate 0.07%
-   - fixed01(1 year account): interest rate 0.04%
-   - fixed02(2 year account): interest rate 0.05%
-   - fixed03(3 year account): interest rate 0.08%
+   - savings: interest rate 7%
+   - fixed01(1 year account): interest rate 4%
+   - fixed02(2 year account): interest rate 5%
+   - fixed03(3 year account): interest rate 8%
    - If the account is current you must display `You will not get interests because the account is of type current`
 
    For example: for an account of type `savings` with a deposit date of `10/10/2002` and an amount of `$1023.20` the system will show `"You will get $5.97 as interest on day 10 of every month"`.
