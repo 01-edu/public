@@ -1,8 +1,8 @@
 #### Functional
 
-- Execute the program using the command `Java Main`.
+- Try to run the program.
 
-- Verify if it compiles and runs without any warnings.
+- Does the program compile and run without any error or warning?
 
 - Set one or more control points by left-clicking on the canvas.
 
@@ -46,4 +46,4 @@
 
 - Verify if you can clear the screen and add new control points without restarting the program.
 
-- Check if it's possible to drag the control points in real-time and observe the generation of a new curve.
+- Check if it's possible to drag the control points in real time and observe the generation of a new curve.
