@@ -21,7 +21,7 @@ Define:
 
 ### Dependencies
 
-rand = "0.3.14"
+rand = "0.8.5"
 
 ### Expected Functions and Structures
 
