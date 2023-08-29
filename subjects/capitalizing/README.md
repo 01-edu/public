@@ -26,7 +26,7 @@ pub fn change_case(input: &str) -> String {
 Here is a program to test your functions.
 
 ```rust
-use capitalizing::*capitalizing*;
+use capitalizing::*;
 
 fn main() {
     println!("{}", capitalize_first("joe is missing"));
