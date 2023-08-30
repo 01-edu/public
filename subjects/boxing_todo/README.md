@@ -42,6 +42,10 @@ In the **lib** file you will have to implement a **function** called `get_todo` 
 
 Basically it must parse and read the JSON file and return the `TodoList` if everything is fine, otherwise it returns the error.
 
+### Dependencies
+
+[json = "0.12.4"](https://docs.rs/json/0.12.4/json/)
+
 ### Expected Functions
 
 For **err.rs**
