@@ -21,7 +21,7 @@ Define:
 
 ### Dependencies
 
-rand = "0.3.14"
+[rand = "0.3.14"](https://docs.rs/crate/rand/0.3.14)
 
 ### Expected Functions and Structures
 
