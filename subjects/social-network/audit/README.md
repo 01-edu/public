@@ -156,6 +156,10 @@
 
 ###### Did the other user received the message in realtime?
 
+##### Try and open two browsers (ex: Chrome and Firefox), log in with different users that are not following each other at all. Then with one of the users try to send a private message to the other user.
+
+###### Can you confirm that it was not possible to create a chat between these two users?
+
 ##### Using the two browsers with the users start a chat between the two of them.
 
 ###### Did the chat between the users went well? (did not crash the server)
