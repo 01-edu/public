@@ -134,7 +134,7 @@ You can implement your own package for sessions and cookies or you can take a lo
 
 When navigating the social network the user should be able to follow and unfollow other users. Needless to say that to unfollow a user you have to be following him/her.
 
-In order to follow someone the user first needs to send a request to the user he/she wants to follow. Then the other user should be able to accept the request or decline it. If the second user has a public profile (explained in the next topic) this step is skipped and the sending of the request is ignored.
+Regarding following someone, the user must initiate this by sending a follow request to the desired user. The recipient user can then choose to "accept" or "decline" the request. However, if the recipient user has a public profile (as explained in the next section), this request-and-accept process is bypassed and the user who sent the request automatically starts following the user with the pubic profile.
 
 ---
 
@@ -190,9 +190,11 @@ After creating the event every user can choose one of the options for the event.
 
 ### Chat
 
-The user should be able to send private messages to users that he/she is following. It should be able for the users to send emojis to each other.
+Users should be able to send private messages to other users that they are following or being followed, in other words, at least one of the users must be following the other.
 
-The user that the message was sent to, will receive the message instantly, by the usage of Websockets, if he/she is following the user that sent the message or if the user has a public profile.
+When a user sends a message, the recipient will instantly receive it through Websockets if they are following the sender or if the sender has a public profile.
+
+It should be able for the users to send emojis to each other.
 
 Groups should have a common chat room, so if a user is a member of the group he/she should be able to send and receive messages to this group chat.
 
