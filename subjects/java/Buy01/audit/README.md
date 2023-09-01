@@ -1,6 +1,6 @@
 #### Initial Setup & Access
 
-##### Download the project and initiate it. Try accessing the web pages and the API endpoints using a web browser and tools like Postman.
+##### Download the project and initiate it using docker. Try accessing the web pages and the API endpoints using a web browser and tools like Postman.
 
 ###### Does the application run seamlessly, and are you able to interact with its functionalities?
 
