@@ -8,30 +8,31 @@ Develop an end-to-end e-commerce platform with Spring Boot microservices and Ang
 
 #### 1. Microservices Setup
 
-- Set up your microservice architecture. Consider **Spring Cloud Eureka** for service discovery and **Docker** for containerization.
+- Set up your microservice architecture. Consider Kafka for services communications.
 
 #### 2. Enhanced Database Design
 
-```mermaid
-classDiagram
-    User "1" -- "n" Product : Sells
-    Product "1" -- "n" Media : Contains
-    User : +String id
-    User : +String name
-    User : +String email
-    User : +String password
-    User : +String role (client/seller)
-    User : +String avatar
-    Product : +String id
-    Product : +String name
-    Product : +String description
-    Product : +Double price
-    Product : +Int quantity
-    Product : +String userId
-    Media : +String id
-    Media : +String imagePath
-    Media : +String productId
-```
++---------------------------+     1      n     +------------------------+
+|         User              | ---------------> |       Product          |
++---------------------------+                  +------------------------+
+| +String id                |                  | +String id             |
+| +String name              |                  | +String name           |
+| +String email             |                  | +String description    |
+| +String password          |                  | +Double price          |
+| +Enum role (client/seller)|                  | +Int quantity          |
+| +String avatar            |                  | +String userId         |
++---------------------------+                  +------------+-----------+
+                                                            |
+                                                            | 1     n
+                                                            |
+                                                +------------v-----------+
+                                                |         Media          |
+                                                +------------------------+
+                                                | +String id             |
+                                                | +String imagePath      |
+                                                | +String productId      |
+                                                +------------------------+
+
 
 #### 3. API Development Enhancement
 
