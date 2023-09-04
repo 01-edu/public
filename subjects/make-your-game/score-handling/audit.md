@@ -1,1 +1,1 @@
-/home/nprimo/01/public/subjects/make-your-game/score-handling/audit/README.md
+audit/README.md
