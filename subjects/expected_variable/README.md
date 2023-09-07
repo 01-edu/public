@@ -26,7 +26,7 @@ fn main() {
     );
     println!(
         "{} close to it",
-        expected_variable("soClose", "So_Close").unwrap()
+        expected_variable("soClose", "so_close").unwrap()
     );
     println!(
         "{:?}",
