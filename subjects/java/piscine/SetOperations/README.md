@@ -62,7 +62,6 @@ and its output :
 ```shell
 $ javac *.java -d build
 $ java -cp build ExerciseRunner
-Le 22 août de l'an 2021 à 13h25m et 46s
 [1, 2, 3, 4]
 [2, 3]
 $
