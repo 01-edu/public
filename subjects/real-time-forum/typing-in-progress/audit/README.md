@@ -30,7 +30,7 @@
 
 ###### +Does the project run quickly and effectively? (Favoring recursivity, no unnecessary data requests, etc...)
 
-###### +Does the code obey the [good practices](../../good-practices/README.md)?
+###### +Does the code obey the [good practices](../../../good-practices/README.md)?
 
 ###### +Is the code using synchronicity (Promises and Go routines/channels) to increase performance?
 

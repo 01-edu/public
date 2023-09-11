@@ -51,7 +51,7 @@ student$
 
 ###### +Does the server run quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
 
-###### +Does the code obey the [good practices](../../good-practices/README.md)?
+###### +Does the code obey the [good practices](../../../good-practices/README.md)?
 
 ###### +Is there a test file for this code?
 

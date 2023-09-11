@@ -44,7 +44,7 @@
 
 ###### +Does the project runs quickly and effectively? (Favoring recursivity, no unnecessary data requests, etc...)
 
-###### +Does the code obey the [good practices](../../good-practices/README.md)?
+###### +Does the code obey the [good practices](../../../good-practices/README.md)?
 
 ###### +Is the code using asynchronicity to increase performance?
 

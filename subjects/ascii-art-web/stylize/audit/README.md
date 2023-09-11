@@ -22,7 +22,7 @@
 
 ###### +Is the output of the program well structured? Is the output aligned, without any letter out of line?
 
-###### +Does the code obey the [good practices](../../good-practices/README.md)?
+###### +Does the code obey the [good practices](../../../good-practices/README.md)?
 
 #### Social
 
