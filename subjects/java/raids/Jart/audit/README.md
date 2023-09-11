@@ -6,11 +6,11 @@
 
 ###### Does the program produce a png file called image.png?
 
-##### Can you confirm that the interfaces Displayable and Drawable were created?
+###### Can you confirm that the interfaces Displayable and Drawable were created?
 
-##### Can you confirm that the 'Displayable' interface is implemented in the 'Image' class?
+###### Can you confirm that the 'Displayable' interface is implemented in the 'Image' class?
 
-##### Can you confirm that the 'Drawable' interface is implemented in the lines, circles, rectangles, and triangles classes?
+###### Can you confirm that the 'Drawable' interface is implemented in the lines, circles, rectangles, and triangles classes?
 
 ##### Try to open the image.png
 
