@@ -84,7 +84,8 @@ Which corresponds to the following representation :
 - A room will never start with the letter `L` or with `#` and must have no spaces.
 - You join the rooms together with as many tunnels as you need.
 - A tunnel joins only two rooms together never more than that.
-- A room can be linked to an infinite number of rooms and by as many tunnels as deemed necessary.
+- A room can be linked to multiple rooms.
+- Two rooms can't have more than one tunnel connecting them.
 - Each room can only contain one ant at a time (except at `##start` and `##end` which can contain as many ants as necessary).
 - Each tunnel can only be used once per turn.
 - To be the first to arrive, ants will need to take the shortest path or paths. They will also need to avoid traffic jams as well as walking all over their fellow ants.
