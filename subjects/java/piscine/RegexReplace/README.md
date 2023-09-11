@@ -50,7 +50,7 @@ $ java -cp build ExerciseRunner
 32 cm et 50 €
 32cms et 50€!
 l lapin jou à la bel ball avec d animau rigolo pour gagner l bill bleu
-joh****@*******.com
+john.***@*******.com
 jan*@*******.co.***
 jac***@*******.**
 $ 
