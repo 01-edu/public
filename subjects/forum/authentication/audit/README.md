@@ -36,7 +36,7 @@
 
 ###### +Does the project run quickly and effectively (favoring of recursion, no unnecessary data requests, etc.)?
 
-###### +Does the code obey the [good practices](../../good-practices/README.md)?
+###### +Does the code obey the [good practices](../../../good-practices/README.md)?
 
 #### Social
 

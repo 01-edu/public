@@ -48,7 +48,7 @@
 
 #### Basic
 
-###### +Does the code obey the [good practices](../../good-practices/README.md)?
+###### +Does the code obey the [good practices](../../../good-practices/README.md)?
 
 ###### +Are the instructions in the website clear?
 
