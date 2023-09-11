@@ -104,7 +104,7 @@ Routing in this case refers to the synchronization of the state of the app with 
 #### State Management
 
 The state of an app can be seen as the outcome of all of the actions that the user has taken since the page loaded. In other words, if a user clicks on a button to execute an action, the state should then change.\
-What you will need to do is to implement a way to handle this state. Remember that multiple pages can need to interact with the same state, so you need to find a way to let the state be reachable at every time.
+What you will need to do is to implement a way to handle this state. Remember that multiple pages may need to interact with the same state, so you need to find a way to let the state be reachable at every time.
 
 ---
 
