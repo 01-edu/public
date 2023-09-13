@@ -58,3 +58,4 @@ The web app should be tested to ensure that it is working properly. The followin
 ### Resources
 [Build a Cypher recommendation engine](https://neo4j.com/developer/cypher/guide-build-a-recommendation-engine/)
 [Neo4j Documentation](https://neo4j.com/docs/)
+[Neo4j auroradb cloud console](https://neo4j.com/cloud/platform/aura-graph-database/?ref=neo4j-home-hero)
