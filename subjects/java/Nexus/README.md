@@ -39,6 +39,6 @@ In this project, You will have to be working with, at least, java 11 and a versi
    - Configure security settings to restrict access to certain artifacts or repositories.
 
 ## Evaluation
-Your project completion will be evaluated based on the tasks you've accomplished. Refer to the provided evaluation audit document for the criteria and checklist used by the evaluator.
+Your project will be evaluated based on the completion of all required tasks. Refer to the provided evaluation audit document for the criteria and checklist used by the evaluator.
 
 Enjoy your journey into the world of Nexus and artifact management!
