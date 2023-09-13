@@ -36,8 +36,6 @@
 
 ##### Continuous Integration (CI)
 
-###### Is a CI/CD pipeline established using tools like Jenkins or GitLab CI?
-
 ###### Does the pipeline automatically trigger builds, tests, and artifact publishing upon repository changes?
 
 ##### Documentation
