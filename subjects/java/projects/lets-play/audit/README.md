@@ -42,7 +42,7 @@
 
 ##### Check the use of appropriate annotations for authentication and role-based access control.
 
-###### Are the annotations @EnableWebSecurity, @EnableGlobalMethodSecurity, @Secured, @PermitAll and @PreAuthorize used correctly?
+###### Are the annotations @EnableWebSecurity, @EnableMethodSecurity, @PermitAll, @PostAuthorize and @PreAuthorize used correctly?
 
 ##### Check the use of validation annotations in the data classes.
 
