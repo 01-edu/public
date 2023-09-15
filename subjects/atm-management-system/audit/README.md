@@ -1,14 +1,16 @@
 #### Functional
 
+> Note: Confirm the data storage method used in the project (e.g., text files or a relational database like SQLite).
+
 ##### Open the application and register a new user with the name `"Marcus"` and the password `"q1w2e3r4t5y6"`.
 
-###### Is this user saved in the file `"./data/users.txt"`, and if so, are all credentials correct (name and password)?
+###### Is this user saved in the in the data storage (text file `"./data/users.txt"` or database), and if so, are all credentials correct (name and password)?
 
 ##### Open the application and re-register the user `"Alice"`.
 
 ###### Did it display an error message stating that this user already exist?
 
-##### Open the file `"./data/users.txt"`.
+##### Open the data storage (text file `"./data/users.txt"` or database).
 
 ###### Are all the user's names unique? (ex: no repetition on the name Alice)
 
@@ -26,11 +28,11 @@
 
 ##### Resorting to the user Alice, try and select the option `"Update information of account"` and select one of the accounts you created for Alice. Then update the phone number of that account.
 
-###### Was the phone number of that account updated in the application and the file `"records.txt"`?
+###### Was the phone number of that account updated in the application and the data storage (text file `"records.txt"` or database)?
 
 ##### Resorting to the user Alice, try and select the option `"Update information of account"` and select one of the accounts you created for Alice. Then update the country of that account.
 
-###### Was the country of that account updated in the application and the file `"records.txt"`?
+###### Was the country of that account updated in the application and the data storage (text file `"records.txt"` or database)?
 
 ##### Resorting to the user Alice, try to create a new account with: date `"10/10/2012"` account number `"834213"`, country `"UK"`, phone number `"291231392"`, deposit amount $`"1001.20"`, type of account `"saving"`. Then select `"Check accounts"` choose the account you just created.
 
@@ -56,7 +58,7 @@
 
 ###### Are you able to withdraw money?
 
-###### And if so, was the withdrawal updated in the file `"records.txt"`?
+###### And if so, was the withdrawal updated in the data storage (text file `"records.txt"` or database)?
 
 ###### Is it not possible to withdraw an amount superior to your available balance?
 
@@ -64,11 +66,11 @@
 
 ###### Were you able to deposit money into this account?
 
-###### And if so did it update the file `"records.txt"`?
+###### And if so did it update the data storage (text file `"records.txt"` or database)?
 
 ##### Resorting to the user Alice try to select the option `"Remove existing account"` and remove the accounts `"834213"`, `"320421"` and `"3214"`.
 
-###### Can you confirm that those account were deleted, both in the application and file `"records.txt"`?
+###### Can you confirm that those account were deleted, both in the application and data storage (text file `"records.txt"` or database)?
 
 ##### Resorting to the user Alice select the option `"Remove existing account"` and try to remove and non-existing account.
 
@@ -76,7 +78,7 @@
 
 ##### Create another user named `"Michel"`. Then by using Alice select the option `"transfer owner"` and try to transfer ownership of the account `"3212"` to Michel.
 
-###### Were you able to transfer the ownership of this account to Michel? And if so did it update both application and file `"records.txt"`?
+###### Were you able to transfer the ownership of this account to Michel? And if so did it update both application and data storage (text file `"records.txt"` or database)?
 
 #### Bonus
 
@@ -86,7 +88,7 @@
 
 ###### +Did the student update the terminal interface?
 
-###### +Is the password saved in the file `"users.txt"` encrypted?
+###### +Is the password saved in the data storage (text file `"users.txt"` or database) encrypted?
 
 ###### +Did the student create a relational database? • 6
 
@@ -94,4 +96,4 @@
 
 ###### +Did the student add more features to the project?
 
-###### +Did the student optimise the code already given?
+###### +Did the student optimize the code already given?
