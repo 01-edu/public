@@ -4,21 +4,21 @@
 
 ##### Open the application and register a new user with the name `"Marcus"` and the password `"q1w2e3r4t5y6"`.
 
-###### Is this user saved in the in the data storage (text file `"./data/users.txt"` or database), and if so, are all credentials correct (name and password)?
+###### Is this user saved in the data storage (text file `"./data/users.txt"` or database), and if so, are all credentials correct (name and password)?
 
 ##### Open the application and re-register the user `"Alice"`.
 
-###### Did it display an error message stating that this user already exist?
+###### Did the application display an error message stating that this user already exists?
 
 ##### Open the data storage (text file `"./data/users.txt"` or database).
 
-###### Are all the user's names unique? (ex: no repetition on the name Alice)
+###### Are all the user names unique? (ex: no repetition on the name Alice)
 
 ##### Try and login as `"Alice"`.
 
 ###### Was Alice able to enter the main menu?
 
-##### Try to create two accounts using the user Alice, then select the option `"Update information of account"` and select an account number that does not exist for Alice.
+##### Try to create two accounts with the user Alice, then select the option `"Update information of account"` and select an account number that does not exist for Alice.
 
 ###### Did the application display some kind of error message stating that this account does not exist?
 
@@ -38,7 +38,7 @@
 
 ###### Did the application display the account information and the gain of $5.84 of interest on day 10 of every month?
 
-##### Resorting to the user Alice create again an account but with account number "320421" and type of account "fixed01" with the rest of the information as in the last account. Then select `"Check accounts"` and choose the account you just created.
+##### Resorting to the user Alice create again an account but with account number `"320421"` and type of account `"fixed01"` with the rest of the information as in the last account. Then select `"Check accounts"` and choose the account you just created.
 
 ###### Did the application display the account information and the gain of $40.05 of interest on 10/10/2013?
 
@@ -60,7 +60,7 @@
 
 ###### And if so, was the withdrawal updated in the data storage (text file `"records.txt"` or database)?
 
-###### Is it not possible to withdraw an amount superior to your available balance?
+###### Does the system forbid to withdraw an amount superior to your available balance?
 
 ##### Try to deposit money into the account `"834213"`.
 
@@ -72,7 +72,7 @@
 
 ###### Can you confirm that those account were deleted, both in the application and data storage (text file `"records.txt"` or database)?
 
-##### Resorting to the user Alice select the option `"Remove existing account"` and try to remove and non-existing account.
+##### Resorting to the user Alice select the option `"Remove existing account"` and try to remove an account that does not exist.
 
 ###### Did the application prompt some type of error saying that the account does not exist?
 
