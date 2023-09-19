@@ -1,4 +1,4 @@
-## Movies recommendation engine with Neo4j
+## Neo4flix
 
 ### Objectives
 The aim of this project is to develop a movie recommendation engine using Neo4j, Spring Boot, Angular, microservices and Docker. The project will be divided into the following phases:
