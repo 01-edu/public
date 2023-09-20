@@ -8,9 +8,17 @@ Generally, clients (smartphones, laptops, etc...) rely on DHCP servers to have a
 
 For this project you will need to add these 3 VM :
 
+### For VirtualBox 
+
 - [01_connect_box](https://assets.01-edu.org/sys/01_connect_box.tar.gz)
 - [01_connect_machine1](https://assets.01-edu.org/sys/01_connect_machine1.tar.gz)
 - [01_connect_machine2](https://assets.01-edu.org/sys/01_connect_machine2.tar.gz)
+
+### For UTM
+
+- [01_connect_box](https://assets.01-edu.org/sys/01_connect_box.utm.zip)
+- [01_connect_machine1](https://assets.01-edu.org/sys/01_connect_machine1.utm.zip)
+- [01_connect_machine2](https://assets.01-edu.org/sys/01_connect_machine2.utm.zip)
 
 The VM are configured like this :
 
@@ -25,30 +33,30 @@ _______________________________     ________________________
                |
                v
 .-----------------------------.
-|        VirtualBox NAT       |
+|              NAT            |
 |                             |
 |         DHCP server         |     .----------------------.
 |          DNS server         |     |         box          |
 |                             |     |                      |
-|              (10.0.2.2) NIC |<--->| enp0s8 (10.0.2.15)   |
+|              (10.0.2.2) NIC |<--->|  INT_2 (10.0.2.15)   |
 |                             |     |   ^                  |
 '-----------------------------'     |   |                  |
 .-----------------------------.     |   |                  |
-| VirtualBox Internal Network |     |   | DHCP server      |
+|      Internal Network       |     |   | DHCP server      |
 |                             |     |   v                  |
-|                           |<----->| enp0s3 (192.168.0.1) |
+|                           |<----->|  INT_1 (192.168.0.1) |
 |                           | |     |                      |
 |                           | |     '----------------------'
 |                           | |     .----------------------.
 |                           | |     |       machine1       |
 |                           | |     |                      |
-|                           |<----->| enp0s3 (192.168.0.2) |
+|                           |<----->|  INT_1 (192.168.0.2) |
 |                           | |     |                      |
 |                           | |     '----------------------'
 |                           | |     .----------------------.
 |                           | |     |       machine2       |
 |                           | |     |                      |
-|                           |<----->| enp0s3 (192.168.0.2) |
+|                           |<----->|  INT_1 (192.168.0.2) |
 |                             |     |                      |
 '-----------------------------'     '----------------------'
 ```
