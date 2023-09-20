@@ -27,9 +27,9 @@ Frameworks will help you to organize and implement the features you want on your
 
 Some of the most known JS frameworks around are:
 
-- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
 - [Vue.js](https://vuejs.org/)
-- [svelte](https://svelte.dev/)
+- [Svelte](https://svelte.dev/)
 - [Mithril](https://mithril.js.org/)
 
 Caution: Note that JS frameworks are different from JS libraries. JS libraries contain code snippets that are used to perform common JavaScript functions, while frameworks will help you by laying out the groundwork/building the bases for your JS project.
