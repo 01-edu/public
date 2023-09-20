@@ -1,8 +1,8 @@
 #### Functional
 
-###### Is VirtualBox installed?
+###### Is virtualization software installed?
 
-###### Are the 3 VMs, 01_connect_box, 01_connect_machine1, and 01_connect_machine2 properly added to VirtualBox?
+###### Are the 3 VMs, 01_connect_box, 01_connect_machine1, and 01_connect_machine2 properly added to the virtualization software?
 
 #### General
 
