@@ -19,7 +19,7 @@ The goal of this program is to organize a certain chain of project tasks in orde
 
 Example:
 
-Imagine a project with different tasks in witch we have to achieve a final goal. Each of the tasks can have their dependencies and restrictions, lets say you are putting together a new cabinet and you have 7 boards.
+Imagine a project with different tasks in which we have to achieve a final goal. Each of the tasks can have their dependencies and restrictions, lets say you are putting together a new cabinet and you have 7 boards.
 
 | Task          |                Needed                 |    Result     | Cycle |
 | ------------- | :-----------------------------------: | :-----------: | :---: |
