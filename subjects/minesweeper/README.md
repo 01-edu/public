@@ -1,12 +1,12 @@
 ## minesweeper
 
+### Instructions
+
 Create a function that takes a minesweeper board as an array of strings and return the board solved.
 
 Minesweeper is a very old game where some mines are placed in a board and you should calculate how many mines are touching every free field and write the count in the respective place.
 
 > We will only test your function with empty and valid boards.
-
-### Instructions
 
 ### Expected Function
 
