@@ -6,8 +6,8 @@ Create a library that implements a `struct` to calculate the score of a player i
 
 The methods of `BowlingGame` will be:
 
-- `roll`: It will take the number of knocked pins and return `Ok(())` if the roll is valid or an `Err(Error::...)` if the roll is invalid.
-- If the pins knocked out are more than the available ones the error will be `NotEnoughPinsLeft`.
+- `roll`: It will take the number of pins knocked down and return `Ok(())` if the roll is valid or an `Err(Error::...)` if the roll is invalid.
+- If more pins than the ones available are knocked down the error will be `NotEnoughPinsLeft`.
 - If the roll happens after the game is complete the error will be `GameComplete`.
 - `score`: It will calculate the score of the player and return `Some(score)` in case of success or `None` if there is still some rolls missing to complete the game.
 
@@ -26,15 +26,13 @@ Last frame scenario:
 
 #### The scoring system
 
-- Each pin knocked is one point.
-- If you do a strike (10 pins knocked on first roll of a frame) it will count as 10 + pins knocked in the next two rolls.
-- If you do a spare (10 pins knocked in between the two rolls of the frame) it will count as 10 + pins knocked in the next roll.
+- Each pin knocked down is one point.
+- If you do a strike (knocking down all 10 pins with the first roll of a frame) it will count as 10 points + the number of pins knocked sown in the next two rolls.
+- If you do a spare (knocking down 10 pins in total between the two rolls of a frame) it will count as 10 points + the number of pins knocked down in the next roll.
 
 Last frame scenario:
 
-The purpose of the filling balls is only to allow the calculation of the 10th frame, so if you do a strike on the 10th and then two more strikes the score will be `30`, because the last two are fill balls.
-
-> 
+The purpose of the filling balls is solely to allow the calculation of the 10th frame. For example if you score a strike in the 10th frame and then you score two more strikes, your total score will be 30, as the last two rolls are fill balls.
 
 ### Expected Function
 
