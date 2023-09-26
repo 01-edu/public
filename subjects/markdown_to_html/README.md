@@ -4,7 +4,7 @@
 
 Create a function which converts markdown into HTML.
 
-To easier the task you'll only have to account for the first three titles (`#`, `##`, `###`) and for `bold` and `italic` (`**` and `*`).
+To make the task easier you'll only have to account for the first three titles (`#`, `##`, `###`) and for `bold` and `italic` (`**` and `*`).
 
 Parsing and converting markdown can be very tricky and some edge cases can require a lot of time to solve, for this reason we will limit the tests to correct and simple inputs.
 
