@@ -2,16 +2,17 @@
 
 ### Instructions
 
-Write a function called `binary_search` that performs a binary search on a sorted list of integers. The function should take the following arguments:
+Write a function called `binary_search` that performs a binary search on a sorted list of integers. The function should take the following arguments:    
+- `sorted_list: &[i32]`: A reference to a sorted list of integers to search within.
+- `target: i32`: The integer value to search for within the list.
+
+### Expected Function
 
 ```rust
 pub fn binary_search(sorted_list: &[i32], target: i32) -> Option<usize> {
 	// Your code goes here
 }
 ```
-
-- `sorted_list: &[i32]`: A reference to a sorted list of integers to search within.
-- `target: i32`: The integer value to search for within the list.
 
 The function should return an `Option<usize>` representing the index of the `target` in the list if found, or `None` if the `target` is not in the list.
 
@@ -42,4 +43,4 @@ $ cargo run
 
 ### Resources
 
--[Binary search alogrithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+- [Binary search algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)
