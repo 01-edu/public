@@ -41,15 +41,15 @@ Caution: Note that JS frameworks are different from JS libraries. JS libraries c
 The backend is all of the technology required to process the incoming requests and generate and send responses to the client.
 This is typically divided into three major parts:
 
-- **Server**: is the computer that receives requests. Though there are machines made and optimized for this particular purpose, you will use your own computer.
+- **Server**: this is the computer that receives requests. It acts as the entry point for all incoming requests. While there are specialized machines designed for this purpose, you can use your own computer as a server.
 
-- **App**: is the application running on the server that listens for requests, retrieves information from the database and sends responses. The server runs an app that contains all the logic about how to respond to various requests based on the HTTP or other types of protocols. Some of these handlers functions will be middleware. Middleware is any code that executes between the server receiving a request and sending a response.
+- **App**: is the application running on the server that listens for requests, retrieves information from the database and sends responses. This is where the core logic of your social network resides. It contains the logic for handling various requests based on HTTP or other protocols. Some of these functions are known as middleware, which execute between receiving a request and sending a response.
 
-- **Database**: is used, as you already know, to organize and persist data. Many requests sent to the server might require a database query. A client might request information that is stored in the database, or a client might submit data with their request to be added to the database.
+- **Database**: As you may already know, the database is used to organize and store data. Many requests sent to the server involve database queries. Clients may request information stored in the database or submit data to be added to it.
 
 #### App
 
-The backend will consist, like said above, of an **app** containing all the backend logic. This logic will therefore have several middleware, for example:
+The backend may consist, like said above, of an **app** containing all the backend logic. This logic will therefore have several middleware, for example:
 
 - Authentication, since HTTP is a stateless protocol, we can use several ways to overcome and authenticate a client/user. You must use [sessions](https://allaboutcookies.org/cookies/session-cookies-used-for.html) and cookies.
 - Images handling, supporting various types of extensions. In this project you have to handle at least JPEG, PNG and GIF types. You will have to store the images, it can be done by storing the file/path in the database and saving the image in a specific file system.
@@ -101,11 +101,22 @@ This migration system can help you manage your time and testing, by filling your
 
 ### docker
 
-You must create two images where one will serve the backend and the other will serve the frontend.
+**Containerizing the Backend and Frontend**
 
-Both back and front must communicate, for that is the purpose of having them.
+Your project should consist of two Docker images, one for the backend and another for the frontend. Each of these containers serves a specific purpose and communicates with each other to provide a functional social network application.
 
-The communication is done in the browser so you will have to publish the ports for both backend and frontend.
+**Backend Container:**
+
+Create a Docker image for the backend of your social network application. This container will run the server-side logic of your application, handle requests from clients, and interact with the database.
+
+**Frontend Container:**
+
+Create a Docker image for the frontend of your social network application. This container will serve the client-side code, like HTML, CSS, and JavaScript files, to users browsers. It will also communicate with the backend via `HTTP requests`.
+
+**Tips:**
+
+- Name your frontend Docker image appropriately.
+- Make sure that the backend container exposes the necessary ports for communication with the frontend and external clients and the frontend container exposes the appropriate port to serve the frontend content to users' browsers.
 
 ---
 
