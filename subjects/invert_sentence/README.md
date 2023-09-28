@@ -5,8 +5,10 @@
 Write a function called `invert_sentence` that takes a string as input and returns the words in the string in reverse order.
 In other words, the function should take a sentence as input and return a new sentence with the words reversed.
 
+### Expected Function
+
 ```rust
-pub fn invert_string(string: &str) -> String {
+pub fn invert_sentence(string: &str) -> String {
     // Your code goes here
 }
 ```
@@ -30,7 +32,7 @@ And its output:
 ```console
 $ cargo run | cat -e
 Awesome is Rust$
-word2 word1$
+   word2     word1  $
 World! Hello,$
 $
 ```
