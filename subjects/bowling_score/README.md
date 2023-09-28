@@ -27,7 +27,7 @@ Last frame scenario:
 #### The scoring system
 
 - Each pin knocked down is one point.
-- If you do a strike (knocking down all 10 pins with the first roll of a frame) it will count as 10 points + the number of pins knocked sown in the next two rolls.
+- If you do a strike (knocking down all 10 pins with the first roll of a frame) it will count as 10 points + the number of pins knocked down in the next two rolls.
 - If you do a spare (knocking down 10 pins in total between the two rolls of a frame) it will count as 10 points + the number of pins knocked down in the next roll.
 
 Last frame scenario:
