@@ -36,18 +36,18 @@
 
 ##### Multiple Challenge Sets
 
-###### Are there multiple sets of challenges that are randomly assigned to each user session?
+###### +Are there multiple sets of challenges that are randomly assigned to each user session?
 
 ##### Transitions and Responsiveness
 
-###### Are there smooth animations between challenges?
+###### +Are there smooth animations between challenges?
 
-###### Is the application responsive across different devices and screen sizes?
+###### +Is the application responsive across different devices and screen sizes?
 
 ##### Testing (optional)
 
-###### Are there unit tests for the components?
+###### +Are there unit tests for the components?
 
-###### Do the tests cover all the important aspects of the components?
+###### +Do the tests cover all the important aspects of the components?
 
 Remember to use this audit as a guideline to assess the student's work. The student doesn't have to implement all the bonus tasks to pass the project. The main focus should be on understanding and correctly using Angular concepts to build the application.
