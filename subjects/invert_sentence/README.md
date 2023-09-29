@@ -32,7 +32,7 @@ And its output:
 ```console
 $ cargo run | cat -e
 Awesome is Rust$
-   word2     word1  $
+  word2     word1   $
 World! Hello,$
 $
 ```
