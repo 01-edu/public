@@ -48,10 +48,10 @@
 
 ##### Security Exploration
 
-###### Have Nexus security features like user authentication and role-based access control been explored?
+###### +Have Nexus security features like user authentication and role-based access control been explored?
 
-###### Are repository-level permissions effectively configured?
+###### +Are repository-level permissions effectively configured?
 
 ##### Configuration
 
-###### Are security settings configured to restrict access to specific artifacts or repositories in Nexus?
+###### +Are security settings configured to restrict access to specific artifacts or repositories in Nexus?
