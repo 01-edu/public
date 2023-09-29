@@ -4,15 +4,25 @@
 
 ##### Open the project
 
-###### Is the file system for the backend well organized?
-
-##### Open the project
+###### When examining the file system of the backend, did you find a well-organized structure, similar to the example provided in the subject, with a clear separation of packages and migrations folders?
 
 ###### Is the file system for the frontend well organized?
+
+#### Backend
+
+###### Does the backend include a clear separation of responsibilities among its three major parts - Server, App, and Database?
+
+###### Is there a server component that effectively receives incoming requests and serves as the entry point for all requests to the application?
+
+###### Does the application (App) running on the server effectively listen for requests, retrieve information from the database, and send responses?
+
+###### Is the core logic of the social network implemented within the App component, including the logic for handling various types of requests based on HTTP or other protocols?
 
 #### Database
 
 ###### Is SQLite being used in the project as the database?
+
+###### Are clients able to request information stored in the database, and can they submit data to be added to it without encountering errors or issues?
 
 ###### Does the app implement a migration system?
 
@@ -30,15 +40,15 @@
 
 ##### Try to register a user.
 
-###### Did the app saved the registered user without error?
+###### During registration, when attempting to register a user, did the application correctly save the registered user to the database without any errors?
 
 ##### Try to log in with the user you just registered.
 
-###### Did the log in worked without problem?
+###### When attempting to log in with the user you just registered, did the login process work without any problems?
 
 ##### Try to log in with the user you created, but with a wrong password or email.
 
-###### Did the app detect if the email or password was wrong?
+###### Did the application correctly detect and respond to the incorrect login details?
 
 ##### Try to register the same user you already registered.
 
@@ -200,9 +210,13 @@
 
 #### Docker
 
-##### Try and run the application, then use the docker command `"docker ps -a"`
+##### Try to run the application and use the docker command `"docker ps -a"`
 
-###### Can you confirm that there are two containers, one for the backend and the other for the frontend?
+###### Can you confirm that there are two containers (backend and frontend), and both containers have non-zero sizes indicating that they are not empty?
+
+##### Try to access the social network application through your web browser.
+
+###### Were you able to access the social network application through your web browser after running the docker containers, confirming that the containers are running and serving the application as expected?
 
 #### Bonus
 
