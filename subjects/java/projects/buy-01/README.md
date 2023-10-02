@@ -12,27 +12,7 @@ Develop an end-to-end e-commerce platform with Spring Boot microservices and Ang
 
 #### 2. Enhanced Database Design
 
-+---------------------------+     1      n     +------------------------+
-|         User              | ---------------> |       Product          |
-+---------------------------+                  +------------------------+
-| +String id                |                  | +String id             |
-| +String name              |                  | +String name           |
-| +String email             |                  | +String description    |
-| +String password          |                  | +Double price          |
-| +Enum role (client/seller)|                  | +Int quantity          |
-| +String avatar            |                  | +String userId         |
-+---------------------------+                  +------------+-----------+
-                                                            |
-                                                            | 1     n
-                                                            |
-                                                +------------v-----------+
-                                                |         Media          |
-                                                +------------------------+
-                                                | +String id             |
-                                                | +String imagePath      |
-                                                | +String productId      |
-                                                +------------------------+
-
+![DataBase Design](https://github.com/01-edu/public/tree/CON-2194-Fix-Bad-Diagrame-Rendring-related-to-issue-2229/subjects/java/projects/buy-01/Database-Design.png)
 
 #### 3. API Development Enhancement
 
