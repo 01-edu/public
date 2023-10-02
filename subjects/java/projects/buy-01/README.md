@@ -12,7 +12,7 @@ Develop an end-to-end e-commerce platform with Spring Boot microservices and Ang
 
 #### 2. Enhanced Database Design
 
-![DataBase Design](https://github.com/01-edu/public/tree/CON-2194-Fix-Bad-Diagrame-Rendring-related-to-issue-2229/subjects/java/projects/buy-01/Database-Design.png)
+![DataBase Design](./Database-Design.png)
 
 #### 3. API Development Enhancement
 
