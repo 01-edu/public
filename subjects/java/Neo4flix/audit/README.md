@@ -15,6 +15,10 @@
 ##### Rating Microservice
 ###### Is the Rating microservice correctly handling data operations related to movie ratings?
 ##### Recommendation Microservice
+###### Has Spring Data Neo4j ,or any other library, been employed to facilitate the interaction between Spring Boot and the Neo4j database?
+###### Is Neo4j OGM used to map Java objects to Neo4j nodes and relationships?
+###### Has one of the algorithms in Neo4j Graph Algorithms Library (content-based, collaborative filtering...) been employed to implement an efficient and accurate recommendation algorithm?
+###### Does the auditee understand enough the Cypher Query Language used to express complex recommendation logic?
 ###### Is the Recommendation microservice generating accurate movie recommendations based on user ratings and related movies?
 #### Functional
 ##### Search Functionality
@@ -37,7 +41,7 @@
 #### Security measures
 ##### Authentication and authorization
 ###### Is OAuth 2.0 or JWT properly implemented for user authentication?
-Is two-factor authentication (2FA) implemented for enhanced security?
+###### Is two-factor authentication (2FA) implemented for enhanced security?
 ##### Password Security
 ###### Are strong password policies, including complexity requirements, enforced?
 ##### Data encryption
