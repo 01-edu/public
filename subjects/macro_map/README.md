@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Create a macro rule called `hash_map` to initialize and declare an `HashMap` at the same time, very similar to what `vec!` macro does for `Vector`.
+Create a macro rule called `hash_map` to initialize and declare a `HashMap` at the same time, very similar to what `vec!` macro does for `Vector`.
 
-> Your macro should accept both leading commas and non leading commas syntax to be more flexible in terms of coding style and reflect the language general style.
+> Your macro should accept both leading and non leading commas syntax to be more flexible in terms of coding style and reflect the language general style.
 
 ### Expected Macro
 
