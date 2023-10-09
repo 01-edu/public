@@ -43,7 +43,7 @@ The web app should have a user-friendly interface that is easy to use. The follo
 ### 3. Security Measures
 
 The web app should be secure and protect users' data. The following security measures should be implemented:
--   Use HTTPS to secure all communication between the client and the server.
+-   Use HTTPS to secure all communication between the client and the server. Consider using free SSL certificates tools (e.g. Let's Encrypt).
 -   Use `OAuth 2.0` or `JWT` for authentication.
 -   Store user data in a secure database.
 -   Use strong passwords and enforce password complexity requirements.
