@@ -69,5 +69,3 @@
 ##### Check if different payment methods, if implemented, work as intended.
 
 ###### Are the implemented payment methods functioning correctly?
-
-This audit checklist provides a comprehensive assessment of the project, ensuring that best practices, code reviews, and testing are followed. Auditors should thoroughly examine each aspect mentioned in the project instructions to assess compliance and quality.
