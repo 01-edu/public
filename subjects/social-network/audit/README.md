@@ -12,7 +12,7 @@
 
 ###### Does the backend include a clear separation of responsibilities among its three major parts - Server, App, and Database?
 
-###### Is there a server component that effectively receives incoming requests and serves as the entry point for all requests to the application?
+###### Is there a server that effectively receives incoming requests and serves as the entry point for all requests to the application?
 
 ###### Does the application (App) running on the server effectively listen for requests, retrieve information from the database, and send responses?
 
