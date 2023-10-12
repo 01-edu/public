@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-image:
-    name: 🏗️ Build Image
+    name: 🏗️ Build Image - Branch
     runs-on: ubuntu-latest
 
     steps:
