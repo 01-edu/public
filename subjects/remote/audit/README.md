@@ -1,8 +1,8 @@
 #### Functional
 
-###### Is VirtualBox installed?
+###### Is virtualization software installed?
 
-###### Is the VM, 01_remote, added to VirtualBox?
+###### Is the VM, 01_remote, added to the virtualization software?
 
 #### General
 
