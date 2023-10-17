@@ -54,16 +54,6 @@
 
 ###### Does the VM exit at cycle 10 and dump the memory printing 32 bytes per row?
 
-##### Run the VM using four players with the name starting with `strong_*` and the flag `-d 40000`.
-
-##### Run also the same command on the standard VM.
-
-###### Are the two memory dumps identical (they can be formatted in a different way, but the bytes in the arena must match perfectly)?
-
-##### Run such games at least 4 more times mixing and matching the players to create new outputs.
-
-###### Are the two memory dumps identical for every game played?
-
 #### Beating ameba
 
 ##### Use the standard Assembler to compile the player of the learner and the given `ameba.s`.
