@@ -1,8 +1,8 @@
 #### Functional
 
-###### Is VirtualBox installed?
+###### Is the virtualization software installed?
 
-###### Are the 2 VMs, 01_scan_RRF-CONTROL and 01_scan_laptop, properly added to VirtualBox?
+###### Are the 2 VMs, 01_scan_RRF-CONTROL and 01_scan_laptop, properly added?
 
 #### General
 
