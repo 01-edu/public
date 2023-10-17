@@ -1,8 +1,8 @@
 #### Functional
 
-##### Ask the auditee to start VirtualBox.
+##### Ask the auditee to start the virtualization software.
 
-###### Is VirtualBox correctly installed on the auditee's machine?
+###### Is virtualization software correctly installed on the auditee's machine?
 
 #### General
 
