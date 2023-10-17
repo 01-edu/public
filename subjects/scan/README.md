@@ -27,20 +27,29 @@ For the context, when you open a website, here are the protocols involved, from 
 
 For this challenge, you will focus on `IP`, `ARP` & `TCP`, and therefore on IP/MAC addresses and ports.
 
-You will need to add these 2 VM :
+You will need to add these 2 VMs:
+
+### For VirtualBox
 
 - [01_scan_RRF-CONTROL](https://assets.01-edu.org/sys/01_scan_RRF-CONTROL.tar.gz)
 - [01_scan_laptop](https://assets.01-edu.org/sys/01_scan_laptop.tar.gz)
 
-You will only have control over "laptop". A port forwarding is set on 10122 so you can connect through SSH, the password is a single space.
+### For UTM
 
-Your mission, should you choose to accept it, is to scan the network interface `enp0s8` and find a way in the server, you will know you have succeeded when you see :
+- [01_scan_RRF-CONTROL](https://assets.01-edu.org/sys/01_scan_RRF-CONTROL.utm.zip)
+- [01_scan_laptop](https://assets.01-edu.org/sys/01_scan_laptop.utm.zip)
+
+To perform your tasks you only need to use the two VMs.
+
+You will only have control over "01_scan_laptop". A port forwarding is set on 10122 so you can connect through SSH, the password is a single space.
+
+Your mission, should you choose to accept it, is to scan the network interface (`enp0s8` for VirtualBox,  `enp0s1` for UTM) and find a way in the server "01_scan_RRF-CONTROL", you will know you have succeeded when you see :
 
 ```
 RRF-CONTROL> █
 ```
 
-Because the VirtualBox Internal Network is very slow (10 Mbps, Ethernet is usually 1000 Mbps), expect long scan times :
+Because the virtualized Network is very slow (10 Mbps, Ethernet is usually 1000 Mbps), expect long scan times :
 
 - ARP scanning takes up to 5 minutes
 - port scanning takes up to half an one hour with the option `-T4` (even more without).
