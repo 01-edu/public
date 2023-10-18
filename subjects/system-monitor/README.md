@@ -123,7 +123,8 @@ For this project you must present the following monitorization:
     - **State**, current state of the process.
     - **CPU usage**, how much CPU the process is using in percentage.
     - **Memory usage**, how much memory the process is using in percentage.
-  - A text box that lets the user filter the table. Users must be able to select multiple rows of the table.
+  - A text box that lets the user filter the table. 
+    - Users must be able to select multiple rows of the table.
 
     example :
 
