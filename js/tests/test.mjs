@@ -130,10 +130,10 @@ ${provided ? '// Provided setup' : ''}
 ${provided.trim()}
 
 // Your code
-${solution.code.trim()}
+${solution.code.trim()};
 
 // The tests
-${tests.trim()}`.trim()
+${tests.trim()};`.trim()
 
     try {
       eval(fullCode)
