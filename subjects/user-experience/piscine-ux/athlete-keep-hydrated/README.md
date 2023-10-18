@@ -19,7 +19,16 @@ This first project is very special: you are asked to end up with a non-digital s
 
 ### Instructions
 
-- Read all the scripts very carefully.
+- Read all the following scripts very carefully:
+
+  - [interview-script-anaelle](user-interviews/interview-script-anaelle.md)
+  - [interview-script-antoine](user-interviews/interview-script-antoine.md)
+  - [interview-script-guillaume](user-interviews/interview-script-guillaume.md)
+  - [interview-script-guillemette](user-interviews/interview-script-guillemette.md)
+  - [interview-script-joe](user-interviews/interview-script-joe.md)
+  - [interview-script-nathan](user-interviews/interview-script-nathan.md)
+  - [interview-script-william](user-interviews/interview-script-william.md)
+
 - Extract at least 6 insights and write them down on a PDF file.
   - Insights must be either shared by several people or consistent with what other people have already experienced.
   - For each insight, name who said it.
