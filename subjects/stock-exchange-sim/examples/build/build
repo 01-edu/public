@@ -4,7 +4,7 @@
 # stock      name:quantity
 board:7
 #
-# process   name:(need1:qty1;need2:qty2;[...]):(result1:qty1;result2:qty2;[...]):delay
+# process   name:(need1:qty1;need2:qty2;...):(result1:qty1;result2:qty2;...):delay
 #
 do_doorknobs:(board:1):(doorknobs:1):15
 do_background:(board:2):(background:1):20
