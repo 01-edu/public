@@ -4,7 +4,7 @@
 # stock name:quantity
 euro:10
 #
-# process name:(need1:quantity1;need2:quantity2;[...]):(result1:quantity1;result2:quantity2;[...]):delay
+# process name:(need1:quantity1;need2:quantity2;...):(result1:quantity1;result2:quantity2;...):delay
 #
 buy_materiel:(euro:8):(materiel:1):10
 build_product:(materiel:1):(product:1):30

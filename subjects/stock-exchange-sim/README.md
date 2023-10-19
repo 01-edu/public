@@ -28,7 +28,7 @@ Imagine a project with different tasks in witch we have to achieve a final goal.
 | do_shelf      |               board: 1                |   shelf: 1    |  10   |
 | do_cabinet    | doorknobs: 2; background: 1; shelf: 3 |  cabinet: 1   |  30   |
 
-The purpose of this example is to optimise time and cabinet, basically the cabinet is the last product to achieve in the project and time is to be prioritized so that the building of your cabinet is done the fastest way possible.
+The purpose of this example is to optimize time and cabinet, basically the cabinet is the last product to achieve in the project and time is to be prioritized so that the building of your cabinet is done the fastest way possible.
 
 The tasks should be done in this order to achieve a maximum optimization regarding time and cabinet:
 
@@ -68,7 +68,7 @@ First we need a configuration file that contains the processes and must obey the
 
 - A description of the processes:
 
-  `<name>:(<need>:<quantity>;<need>:<quantity>[...]]):(<result>:<quantity>[<result>:<quantity>[...]]):<nb_cycle>`
+  `<name>:(<need>:<quantity>;<need>:<quantity>;...):(<result>:<quantity>;<result>:<quantity>;...):<nb_cycle>`
 
 - A single line to indicate the elements to optimize, possibly containing the `time` keyword :
 
@@ -161,7 +161,7 @@ We can then verify if the schedule is doable with the **checker** program:
 name:quantity
 euro:10
 #
-# process name:(need1:quantity1;need2:quantity2;[...]):(result1:quantity1;result2:quantity2;[...]):delay
+# process name:(need1:quantity1;need2:quantity2;...):(result1:quantity1;result2:quantity2;...):delay
 #
 buy_materiel:(euro:8):(material:1):10
 build_product:(material:1):(product:1):30
