@@ -41,6 +41,17 @@ puts "Hello, #{name}!"
 - Show logs with control over entries displayed: 2 last entries, since 5 minutes ago, until 5 minutes ago.
 - Show logs in a personalized format like: `* e4e3645 2023-06-10 | Added a comment (HEAD -> main) [John Doe]`
 
-#### Gitting old versions
+#### Check it out
+- Restore the first snapshot of your working tree, then print the content of `hello.rb` file.
+- Restore the second recent snapshot and print the content of `hello.rb` file.
+- Return the latest version in the main branch (do not use commit hash)
+
+#### TAG me
+- Refer the current version of the repository as `v1`.
+- Tag the version immediately prior to the current version as `v1-beta`, do not use commit hashes to move through the history.
+- Go back and forth between the two tagged versions.
+- Show the list of tags
+
+
 
 
