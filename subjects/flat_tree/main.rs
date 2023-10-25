@@ -1,3 +1,6 @@
+use flat_tree::*;
+use std::collections::BTreeSet;
+
 fn main() {
     let mut tree = BTreeSet::new();
     tree.insert(34);

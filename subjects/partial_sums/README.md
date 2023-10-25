@@ -49,6 +49,8 @@ pub fn parts_sums(arr: &[u64]) -> Vec<64>{
 Here is a program to test your function:
 
 ```rs
+use partial_sums::*;
+
 fn main() {
     println!(
         "Partial sums of [5, 18, 3, 23] is : {:?}",

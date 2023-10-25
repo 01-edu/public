@@ -4,7 +4,7 @@
 
 Create a **function** which decode a scytale cipher (also known as spartan cipher).
 
-In practice, it is represented by a strip wrapped around a cylinder. The message is written across the loops of the strip (not along the strip). The message becomes *coded* if the radius of the cylinder changes, or the strip is removed from the cylinder.
+In practice, it is represented by a strip wrapped around a cylinder. The message is written across the loops of the strip (not along the strip). The message becomes _coded_ if the radius of the cylinder changes, or the strip is removed from the cylinder.
 
 Your function will receive a `String` representing the ciphered message, and a `u32` representing the number of letters by turn of the strip around the cylinder.
 
@@ -22,7 +22,6 @@ Your function will receive a `String` representing the ciphered message, and a `
 ```
 
 **letters_per_turn 4:** `"scytale Code"` -> `"steoca dylCe"`
-
 
 ```console
 ------------------------------------------
@@ -45,6 +44,8 @@ pub fn scytale_decoder(s: String, letters_per_turn: u32) -> Option<String> {
 Here is a program to test your function
 
 ```rust
+use scytale_decoder::*;
+
 fn main() {
     println!("\"sec yCtoadle\" size=2 -> {:?}",
         scytale_decoder("sec yCtoadle".to_string(), 2));

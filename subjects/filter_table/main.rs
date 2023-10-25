@@ -1,3 +1,5 @@
+use filter_table::*;
+
 fn main() {
     let mut table = Table::new();
     table.headers = vec![

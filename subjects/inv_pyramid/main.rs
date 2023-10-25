@@ -1,3 +1,5 @@
+use inv_pyramid::*;
+
 fn main() {
     let a = inv_pyramid(String::from("#"), 1);
     let b = inv_pyramid(String::from("a"), 2);

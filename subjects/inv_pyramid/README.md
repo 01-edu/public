@@ -34,6 +34,8 @@ fn inv_pyramid(v: String, i: u32) -> Vec<String> {}
 Here is a program to test your function
 
 ```rust
+use inv_pyramid::*;
+
 fn main() {
     let a = inv_pyramid(String::from("#"), 1);
     let b = inv_pyramid(String::from("a"), 2);

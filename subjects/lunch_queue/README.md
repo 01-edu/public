@@ -2,7 +2,7 @@
 
 ### Instructions
 
-You will need to create an *API*, so that a program can organize a queue of people.
+You will need to create an _API_, so that a program can organize a queue of people.
 
 The program requires the following functions. Add them as associated functions to the `Queue` structure:
 
@@ -52,6 +52,8 @@ impl Queue {
 Here is a program to test your function:
 
 ```rust
+use lunch_queue::*;
+
 fn main() {
     let mut list = Queue::new();
     list.add(String::from("Marie"), 20);

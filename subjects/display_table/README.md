@@ -1,6 +1,6 @@
 ## display_table
 
-### Instructions 
+### Instructions
 
 Define the `Table` struct below, and implement the associated functions `new` and `add_row`. You can see how they should work from the usage.
 
@@ -38,35 +38,38 @@ impl Table {
 Here is a possible program to test your function:
 
 ```rust
+use display_table::*;
+
 fn main() {
-	let mut table = Table::new();
-	println!("{}", table);
-	table.headers = vec![
-		String::from("Model"),
-		String::from("Piece N°"),
-		String::from("In Stock"),
-		String::from("Description"),
-	];
-	table.add_row(&[
-		String::from("model 1"),
-		String::from("43-EWQE304"),
-		String::from("30"),
-		String::from("Piece for x"),
-	]);
-	table.add_row(&[
-		String::from("model 2"),
-		String::from("98-QCVX5433"),
-		String::from("100000000"),
-		String::from("-"),
-	]);
-	table.add_row(&[
-		String::from("model y"),
-		String::from("78-NMNH"),
-		String::from("60"),
-		String::from("nothing"),
-	]);
-	println!("{}", table);
+    let mut table = Table::new();
+    println!("{}", table);
+    table.headers = vec![
+        String::from("Model"),
+        String::from("Piece N°"),
+        String::from("In Stock"),
+        String::from("Description"),
+    ];
+    table.add_row(&[
+        String::from("model 1"),
+        String::from("43-EWQE304"),
+        String::from("30"),
+        String::from("Piece for x"),
+    ]);
+    table.add_row(&[
+        String::from("model 2"),
+        String::from("98-QCVX5433"),
+        String::from("100000000"),
+        String::from("-"),
+    ]);
+    table.add_row(&[
+        String::from("model y"),
+        String::from("78-NMNH"),
+        String::from("60"),
+        String::from("nothing"),
+    ]);
+    println!("{}", table);
 }
+
 ```
 
 And its output:
