@@ -88,3 +88,15 @@ puts "Hello, #{name}!"
 ```
 - Oops we forget to the author email, Update the file to include the email. don't make a new commit, but include the change in the last commit. 
 
+#### Move it
+- Move the program `hello.rb` into a `lib/` directory (use git commnad) and commit the move.
+- Add a Rakefile to the root of the repository and commit it.
+```
+#!/usr/bin/ruby -wKU
+
+task :default => :run
+
+task :run do
+  require './lib/hello'
+end
+```
