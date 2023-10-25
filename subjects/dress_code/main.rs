@@ -1,6 +1,8 @@
-use negative_spelling::*;
+use dress_code::*;
 
 fn main() {
-    println!("{}", negative_spell(-1234));
-    println!("{}", negative_spell(100));
+    println!(
+        "My outfit will be: {:?}",
+        choose_outfit(Some(0), Ok("Dear friend, ..."))
+    );
 }

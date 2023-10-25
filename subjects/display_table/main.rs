@@ -1,3 +1,5 @@
+use display_table::*;
+
 fn main() {
     let mut table = Table::new();
     println!("{}", table);

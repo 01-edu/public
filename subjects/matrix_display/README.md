@@ -31,10 +31,13 @@ impl fmt::Display for Matrix {
 Here is a possible program to test your function
 
 ```rust
+use matrix_display::*;
+
 fn main() {
-	let matrix = Matrix::new(&[&[1, 2, 3], &[4, 5, 6], &[7, 8, 9]]);
-	println!("{}", matrix);
+    let matrix = Matrix::new(&[&[1, 2, 3], &[4, 5, 6], &[7, 8, 9]]);
+    println!("{}", matrix);
 }
+
 ```
 
 And it's output:

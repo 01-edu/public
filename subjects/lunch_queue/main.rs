@@ -1,3 +1,5 @@
+use lunch_queue::*;
+
 fn main() {
     let mut list = Queue::new();
     list.add(String::from("Marie"), 20);

@@ -1,3 +1,5 @@
+use scytale_decoder::*;
+
 fn main() {
     println!(
         "\"sec yCtoadle\" size=2 -> {:?}",

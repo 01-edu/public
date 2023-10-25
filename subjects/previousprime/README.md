@@ -19,6 +19,8 @@ pub fn prev_prime(nbr: u64) -> u64  {
 Here is a possible program to test your function :
 
 ```rust
+use previousprime::*;
+
 fn main() {
     println!("The previous prime number before 34 is: {}", prev_prime(34));
 }
