@@ -52,6 +52,39 @@ puts "Hello, #{name}!"
 - Go back and forth between the two tagged versions.
 - Show the list of tags
 
+#### Changed your mind?
+- Make the following changes to the latest version of the file, then revert it before staging (Do not use CTRL+Z)
+```
+# This is a bad comment.  We want to revert it.
+name = ARGV.first || "World"
 
+puts "Hello, #{name}!"
+```
+- Modify the file to have a bad comment, stage it, then clean the staging area.
 
+```
+# This is an unwanted but staged comment
+name = ARGV.first || "World"
+
+puts "Hello, #{name}!"
+```
+- Add the following changes again, stage the file and commit the changes, then revert it.
+```
+# This is an unwanted but committed change
+name = ARGV.first || "World"
+
+puts "Hello, #{name}!"
+````
+- Mark the latest commit with `oops` tag, then remove commits coming after `v1` version (HEAD should be in `v1`)
+- Show the logs with the deleted commits displayed (eg: log for commit tagged `oops` shoud be displayed).
+- Now make sure the unreferenced commits are deleted from the history (no logs for deleted commits).
+- Add an author comment to the file and commit the changes
+```
+# Default is World
+# Author: Jim Weirich
+name = ARGV.first || "World"
+
+puts "Hello, #{name}!"
+```
+- Oops we forget to the author email, Update the file to include the email. don't make a new commit, but include the change in the last commit. 
 
