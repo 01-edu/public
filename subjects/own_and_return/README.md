@@ -22,7 +22,6 @@ pub fn read_film_name(/* to be implemented */) -> String {
 pub fn take_film_name(/* to be implemented */) -> String {
 }
 
-
 ```
 
 ### Usage
@@ -31,7 +30,6 @@ Here is a possible program to test your function:
 
 ```rust
 use own_and_return::*;
-
 
 pub struct Film {
     pub name: String,
@@ -47,6 +45,7 @@ fn main() {
     // you can test this function by commenting out the first print statement,
     // you should see the expected output without errors in this case
 }
+
 ```
 
 And its output:

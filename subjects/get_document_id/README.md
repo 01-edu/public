@@ -86,6 +86,7 @@ fn main() {
         Err(err) => println!("Error: {:?}", err),
     };
 }
+
 ```
 
 And its output:
