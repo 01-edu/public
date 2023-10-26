@@ -86,7 +86,7 @@ name = ARGV.first || "World"
 
 puts "Hello, #{name}!"
 ```
-- Oops we forget to the author email, Update the file to include the email. don't make a new commit, but include the change in the last commit. 
+- Oops we forgot the author email, Update the file to include the email. don't make a new commit, but include the change in the last commit. 
 
 #### Move it
 - Move the program `hello.rb` into a `lib/` directory (use git commnad) and commit the move.
@@ -100,3 +100,8 @@ task :run do
   require './lib/hello'
 end
 ```
+#### blobs, trees and commits
+- Explore .git/ directory and explain its contents: `objects/`, `config`, `refs` and `HEAD`.
+- Grab the latest object hash within ``.git/object`` directory print its type and its content using `git` command.
+- Dump the directory tree referenced in the commit
+- Dump the `lib` directory, then `hello.rb` file.
