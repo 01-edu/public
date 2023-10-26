@@ -105,3 +105,85 @@ end
 - Grab the latest object hash within ``.git/object`` directory print its type and its content using `git` command.
 - Dump the directory tree referenced in the commit
 - Dump the `lib` directory, then `hello.rb` file.
+
+#### Branching
+It’s time to do a major rewrite of the hello world functionality. Since this might take awhile, you’ll want to put these changes into a separate branch to isolate them from changes in main.
+- Create a local branch named `greet` and switch to it.
+- Create `greeter.rb` file in `lib` directory, add the following content to it and commit the changes
+```
+class Greeter
+  def initialize(who)
+    @who = who
+  end
+  def greet
+    "Hello, #{@who}"
+  end
+end
+```
+- Update `lib/hello.rb` file by adding the content below, stage and commit the changes.
+```
+require 'greeter'
+
+# Default is World
+name = ARGV.first || "World"
+
+greeter = Greeter.new(name)
+puts greeter.greet
+```
+- Update `lib/Rakefile` too and commit the changes
+```
+#!/usr/bin/ruby -wKU
+
+task :default => :run
+
+task :run do
+  ruby '-Ilib', 'lib/hello.rb'
+end
+```
+- Switch to `main` branch, show the difference between the versions in `main` and `greeter` branches for the these files: `Rakefile`, `hello.rb` and `greeter.rb`
+- Create `README.md` file with the content below and commit the changes.
+```
+This is the Hello World example from the git project.
+```
+- Draw the commit tree for all the branches to show the diverging changes.
+
+#### Conflicts, merging and rebasing
+- Merge `main` branch into `greeter` branch.
+- Switch to `main` branch and make the changes above to `hello.rb` save and commit.
+```
+puts "What's your name"
+my_name = gets.strip
+
+puts "Hello, #{my_name}!"
+```
+- Now switch to `greeter` branch and try to merge `main` into it (Bingooo! there you have a conflict!).
+- Resolve the conflict (manually or using graphical merge tools), accept changes from `main` branch, then commit the conflict resolution.
+- Go back in time before the very first merge. now rebase the branch `greeter` on top of `main` branch.
+- Now merge changes from `greeter` into `main` branch.
+- Explain fast-forwarding and the difference between merging and rebasing.
+
+#### Local and remote repositories
+- In `work/` directory make a clone of the repository `hello` as `cloned_hello` (do not use `copy` command).
+- Show the logs for the cloned repository, what are `origin/main`, `origin/greet` and `origin/HEAD` ?.
+- Display the name of the remote repository, show more information about it.
+- List all the remote and local branches.
+- Make changes to the original repository, Update `README.md` file and commit the changes.
+```
+This is the Hello World example from the git tutorial.
+(changed in original)
+```
+- Inside the cloned copy fetch the changes from remote and display the logs (commits from `hello` repository should be included in the logs).
+- Merge remote `main` branch into local `main` branch.
+- What is the single git command equivalent to what you did before to bring changes from remote to local `main` branch?
+- Add a `greet` local branch tracking the remote `origin/greet` branch.
+
+#### Bare repositories
+- What is a bare repository and what is it needed for?
+- Create a bare repository from `hello` repository and name it `hello.git`.
+- Add the bare `hello.git` repository as a remote to our original repository `hello`.
+- Change README.md file, commit and push the change to the shared repository.
+```
+This is the Hello World example from the git tutorial.
+(Changed in the original and pushed to shared)
+```
+- Quick hop over to the clone repository `cloned_hello` and pull down the changes just pushed to the shared repository.
