@@ -4,7 +4,7 @@ The Git project is designed to introduce you to the world of version control and
 Git is a powerful and widely used tool for tracking changes in your projects, collaborating with others, 
 and ensuring the integrity of your code.
 
-To aid your learning journey, we provide you with a resource called "git-ready.zip," which you can find in the "resources" folder.
+Put all of your work in a directory `work`, each exercise in a seperate file named after the name of the exercise.
 
 This Git project is structured as a series of exercises. You will progressively build your Git skills,
 starting from the basics and gradually moving towards more advanced topics.
