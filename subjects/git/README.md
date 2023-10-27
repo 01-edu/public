@@ -9,9 +9,11 @@ To aid your learning journey, we provide you with a resource called "git-ready.z
 This Git project is structured as a series of exercises. You will progressively build your Git skills,
 starting from the basics and gradually moving towards more advanced topics.
 
-Let's Git ready for it! 
+Let's Git ready for it!
 
-#### Setting Up Git and Python for Work
+## Instructions
+
+#### Setting Up Git
 - Install Git on your local machine by following the instructions for your operating system on the official Git website.
 - Configure Git with your name and email address.
 
@@ -169,7 +171,7 @@ puts "Hello, #{my_name}!"
 - List all the remote and local branches.
 - Make changes to the original repository, Update `README.md` file and commit the changes.
 ```
-This is the Hello World example from the git tutorial.
+This is the Hello World example from the git project.
 (changed in original)
 ```
 - Inside the cloned copy fetch the changes from remote and display the logs (commits from `hello` repository should be included in the logs).
@@ -183,7 +185,7 @@ This is the Hello World example from the git tutorial.
 - Add the bare `hello.git` repository as a remote to our original repository `hello`.
 - Change README.md file, commit and push the change to the shared repository.
 ```
-This is the Hello World example from the git tutorial.
+This is the Hello World example from the git project.
 (Changed in the original and pushed to shared)
 ```
 - Quick hop over to the clone repository `cloned_hello` and pull down the changes just pushed to the shared repository.
