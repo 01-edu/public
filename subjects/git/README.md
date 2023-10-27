@@ -189,3 +189,8 @@ This is the Hello World example from the git project.
 (Changed in the original and pushed to shared)
 ```
 - Quick hop over to the clone repository `cloned_hello` and pull down the changes just pushed to the shared repository.
+
+## Submission and Evaluation
+Your work will have to be submitted in the `gitea` link provided. the evaluation will be performed based on your submission and in accordance with the following criterias:
++ Correctness of the git commands you are using.
++ Clear understanding of the git commands and concepts.
