@@ -151,7 +151,7 @@ This is the Hello World example from the git project.
 
 #### Conflicts, merging and rebasing
 - Merge `main` branch into `greeter` branch.
-- Switch to `main` branch and make the changes above to `hello.rb` save and commit.
+- Switch to `main` branch and make the changes below to `hello.rb` save and commit.
 ```
 puts "What's your name"
 my_name = gets.strip
