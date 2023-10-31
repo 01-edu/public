@@ -94,7 +94,7 @@ puts "Hello, #{name}!"
 ```
 
 - Mark the latest commit with `oops` tag, then remove commits coming after `v1` version (HEAD should be in `v1`)
-- Show the logs with the deleted commits displayed (eg: log for commit tagged `oops` shoud be displayed).
+- Show the logs with the deleted commits displayed (eg: log for commit tagged `oops` should be displayed).
 - Now make sure the unreferenced commits are deleted from the history (no logs for deleted commits).
 - Add an author comment to the file and commit the changes
 
@@ -110,7 +110,7 @@ puts "Hello, #{name}!"
 
 #### Move it
 
-- Move the program `hello.rb` into a `lib/` directory (use git commnad) and commit the move.
+- Move the program `hello.rb` into a `lib/` directory (use git command) and commit the move.
 - Add a Rakefile to the root of the repository and commit it.
 
 ```
@@ -233,7 +233,7 @@ This is the Hello World example from the git project.
 
 ### Submission and Evaluation
 
-Your work will have to be submitted in the `gitea` link provided. the evaluation will be performed based on your submission and in accordance with the following criterias:
+Your work will have to be submitted in the `gitea` link provided. the evaluation will be performed based on your submission and in accordance with the following criteria:
 
 - Correctness of the git commands you are using.
 - Clear understanding of the git commands and concepts.
