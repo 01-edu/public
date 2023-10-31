@@ -1,10 +1,10 @@
-##### Setup and Installation
+#### Setup and Installation
 
 ###### Has the student installed Git on their local machine?
 
 ###### Has the student properly configured Git with a username and email address?
 
-##### Git commits to commit
+#### Git commits to commit
 
 ###### Has the file `hello.rb` been created in the proper workspace?
 
@@ -14,7 +14,7 @@
 
 ###### Has `hello.rb` file been staged and committed with the appropriate commands `git add` and `git commit`?
 
-##### Git History & Logging
+#### Git History & Logging
 
 ###### Did the student display the Git history of the working directory with `git status` command?
 
@@ -22,7 +22,7 @@
 
 ###### Did the student customize the format of Git logs and display them accordingly with `git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short`?
 
-##### Checking Out & Tagging
+#### Checking Out & Tagging
 
 ###### Did the student make, revert, and stage changes efficiently in response to the provided instructions?
 
@@ -30,7 +30,7 @@
 
 ###### Did the student display logs with the deleted commits or without them as instructed?
 
-##### Branching, Merging & Rebasing
+#### Branching, Merging & Rebasing
 
 ###### Did the student create and switch to a new branch named 'greet'?
 
@@ -42,9 +42,11 @@
 
 ###### Did the student switch branches, update 'hello.rb' in the 'main' branch, and understand the differences between versions?
 
+##### Ask the student about the differences between rebasing and merging
+
 ###### Did the student understand clearly the differences between rebasing and merging?
 
-##### Local & Remote Repositories
+#### Local & Remote Repositories
 
 ###### Did the student complete the cloning process of the 'hello' repository to 'cloned_hello'?
 
@@ -52,7 +54,9 @@
 
 ###### Did the student list both remote and local branches, make changes to the original repository, and synchronize the cloned repository with remote changes?
 
-##### Bare Repositories
+#### Bare Repositories
+
+##### Ask the student about bare repositories
 
 ###### Does the student understand the purpose of a bare repository and why it's used?
 
