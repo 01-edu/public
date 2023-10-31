@@ -1,9 +1,8 @@
-
 ##### Setup and Installation
 
 ###### Has the student installed Git on their local machine?
 
-###### Has the student properly configured Git with a usename and email address?
+###### Has the student properly configured Git with a username and email address?
 
 ##### Git commits to commit
 
