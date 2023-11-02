@@ -6,7 +6,7 @@ A `README.md` file and all files used to create, delete and manage the student i
 
 ###### Are all the required files present?
 
-###### Does the `.env` file not exist in the repo?
+###### Was the `.env` file excluded from the git files?
 
 ###### Are all pushed files in the repo clean of any credentials or passwords?
 
@@ -66,7 +66,7 @@ user:~$
 
 ###### Are all Dockerfiles based on `Debian` or `Alpine`?
 
-###### There is no sensitive data in Dockerfiles or other solution files (sensitive data should only exist in `.env` file)?
+###### Are Dockerfiles or any other solution files free from sensitive data (sensitive data should only exist in `.env` file)?
 
 ##### Ask the following questions to the group or student
 
@@ -167,8 +167,6 @@ user:~$
 ##### What is a Docker image?
 
 ##### Why do we use Docker images?
-
-##### Where can we find some public Docker images?
 
 ###### Did the student reply correctly to the questions?
 
