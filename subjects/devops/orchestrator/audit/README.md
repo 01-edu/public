@@ -2,7 +2,14 @@
 
 ##### Check the Repo content
 
-A `README.md` and `orchestrator.sh` and `Vagrantfile` files and all files used to create and delete and manage the student infrastructure must be submitted in the repo.
+The repo contains a `README.md`, an `orchestrator.sh` script, a `Vagrantfile`
+and all the additional files used to create, delete and manage the submitted
+infrastructure. 
+
+###### Are all the required files present?
+
+
+###### Does the project as a structure similar to the one below? If not, can the student provide a justification for the chosen project structure?
 
 ```console
 .
@@ -15,21 +22,20 @@ A `README.md` and `orchestrator.sh` and `Vagrantfile` files and all files used t
 └── Vagrantfile
 ```
 
-###### Are all the required files present?
 
 ##### Ask the following questions to the group or student
 
-- What is container orchestration and what are its benefits?
+- What is container orchestration, and what are its benefits?
 
-- What is Kubernetes and what is its main role?
+- What is Kubernetes, and what is its main role?
 
-- What are K3s and what is their main role?
+- What is K3s, and what is their main role?
 
 ###### Did the student reply correctly to the questions?
 
 ##### Check the Student Documentation
 
-The Documentation must exist in the `README.md` file!
+> There must be a `README.md` file with the project Documentation
 
 ###### Did the README.md file contains all the required information about the solution (prerequisites, configuration, setup, usage, ...)?
 
@@ -41,9 +47,9 @@ The Documentation must exist in the `README.md` file!
 
 By using K3s in Vagrant two virtual machines must be created:
 
-1. Master: the master in the K3s cluster.
+1. `Master`: the master in the K3s cluster.
 
-2. Agent: an agent in the K3s cluster.
+2. `Agent`: an agent in the K3s cluster.
 
 `kubectl` must be installed and configured in the learner machine to manage the cluster.
 
@@ -51,17 +57,17 @@ The nodes must be connected and available, try:
 
 ```console
 $> kubectl get nodes -A
-NAME                                           STATUS   ROLES    AGE    VERSION
+NAME  STATUS   ROLES    AGE    VERSION
 <master-node>   Ready    <none>   XdXh   vX
 <agent1-node>   Ready    <none>   XdXh   vX
 $>
 ```
 
+###### Is kubectl installed and configured in the learner's machine?
+
 ###### Was the cluster created by a Vagrantfile?
 
-###### Does the cluster contains two nodes (master and agent)?
-
-###### Is kubectl installed and configured in the learner's machine?
+###### Does the cluster contain two nodes (*master* and *agent*)?
 
 ###### Are the nodes connected and ready for usage?
 
@@ -94,9 +100,9 @@ user:~$
 
 - What is infrastructure as code and what are the advantages of it?
 
-- Explain What is a K8s manifest.
+- Explain what is a K8s manifest.
 
-- Explain the K8s manifests.
+- Explain each K8s manifests.
 
 ###### Did the student reply correctly to the questions?
 
@@ -120,44 +126,42 @@ user:~$
 
 - `inventory-database container` is a PostgreSQL database server that contains your inventory database, it must be accessible via port `5432`.
 - `billing-database container` is a PostgreSQL database server that contains your billing database, it must be accessible via port `5432`.
-- `inventory-app container` is a Node.js server that contains your inventory-app code running and connected to the inventory database and accessible via port `8080`.
-- `billing-app container` is a Node.js server that contains your billing-app code running and connected to the billing database and consuming the messages from the RabbitMQ queue, and it can be accessed via port `8080`.
+- `inventory-app container` is a server that contains your inventory-app code running and connected to the inventory database and accessible via port `8080`.
+- `billing-app container` is a server that contains your billing-app code running and connected to the billing database and consuming the messages from the RabbitMQ queue, and it can be accessed via port `8080`.
 - `RabbitMQ container` is a RabbitMQ server that contains the queue.
-- `api-gateway-app container` is a Node.js server that contains your api-gateway-app code running and forwarding the requests to the other services and it's accessible via port `3000`.
+- `api-gateway-app container` is a server that contains your api-gateway-app code running and forwarding the requests to the other services and it's accessible via port `3000`.
 
 ###### Are all the required applications deployed?
 
-- databases must be deployed as StatefulSet, and volumes that enable containers to move across infrastructure without losing the data must be created.
+- Databases must be deployed as *StatefulSet*, and volumes that enable containers to move across infrastructure without losing the data must be created.
 
-- Node.js applications must be deployed as a deployment and they must be scaled horizontally automatically, depending on CPU consumption:
+- The following applications must be deployed as a deployment, and they must be scaled horizontally automatically, depending on CPU consumption:
 
 1. `api-gateway`:
    max replication: 3
    min replication: 1
-   cpu percent trigger: 60%
+   CPU percent trigger: 60%
 
 2. `inventory-app`:
    max replication: 3
    min replication: 1
-   cpu percent trigger: 60%
+   CPU percent trigger: 60%
 
-This Node.js application must be deployed as StatefulSet:
-
-1. `billing-app`
+The `billing-app` must be deployed as *StatefulSet*.
 
 ###### Do all apps deploy with the correct configuration?
 
 ##### Ask the following questions to the group or student
 
-- What is StatefulSet in K8s?
+- What is *StatefulSet* in K8s?
 
-- What is deployment in K8s?
+- What is *deployment* in K8s?
 
-- What is the difference between deployment and StatefulSet in K8s?
+- What is the difference between *deployment* and *StatefulSet* in K8s?
 
-- What is scaling and why do we use it?
+- What is scaling, and why do we use it?
 
-- What is a load balancer and what is its role?
+- What is a load balancer, and what is its role?
 
 - Why we don't put the database as a deployment?
 
