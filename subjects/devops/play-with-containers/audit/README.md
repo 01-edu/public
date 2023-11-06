@@ -6,7 +6,7 @@ A `README.md` file and all files used to create, delete and manage the student i
 
 ###### Are all the required files present?
 
-###### Does the `.env` file not exist in the repo?
+###### Was the `.env` file excluded from the git files?
 
 ###### Are all pushed files in the repo clean of any credentials or passwords?
 
@@ -50,7 +50,7 @@ user:~$
 
 ##### Ask the following questions to the group or student
 
-##### What is a microservices architecture?
+##### What is a microservices' architecture?
 
 ##### Why do we use microservices architecture?
 
@@ -66,7 +66,7 @@ user:~$
 
 ###### Are all Dockerfiles based on `Debian` or `Alpine`?
 
-###### There is no sensitive data in Dockerfiles or other solution files (sensitive data should only exist in `.env` file)?
+###### Are Dockerfiles or any other solution files free from sensitive data (sensitive data should only exist in `.env` file)?
 
 ##### Ask the following questions to the group or student
 
@@ -90,11 +90,11 @@ CONTAINER ID   IMAGE            COMMAND CREATED STATUS         PORTS            
 user:~$
 ```
 
-- `inventory-database container` is a SQL database server that contains your inventory database, it must be accessible via port `5432`.
-- `billing-database container` is a SQL database server that contains your billing database, it must be accessible via port `5432`.
+- `inventory-db container` is a SQL database server that contains your inventory database, it must be accessible via port `5432`.
+- `billing-db container` is a SQL database server that contains your billing database, it must be accessible via port `5432`.
 - `inventory-app container` is a Node.js server that contains your inventory-app. It will be connected to the inventory database and accessible via port `8080`.
 - `billing-app container` is a Node.js server that contains your billing-app. It will be connected to the billing database and consuming the messages from the RabbitMQ queue. It will be accessible via port `8080`.
-- `RabbitMQ container` is a RabbitMQ server that contains the queue.
+- `rabbit-queue` is a RabbitMQ server that contains the queue.
 - `api-gateway-app container` is a Node.js server that contains your api-gateway-app. It will forward the requests to the other services and it's accessible via port `3000`.
 
 ##### Check the Container restart policy:
@@ -122,7 +122,7 @@ user:~$
 
 - `inventory-database volume` contains the inventory database.
 - `billing-database volume` contains the billing database.
-- `api-gateway-app volume` contains the Api gateway logs.
+- `api-gateway-app volume` contains the API gateway logs.
 
 ###### Do all volumes have the correct configuration?
 
@@ -167,8 +167,6 @@ user:~$
 ##### What is a Docker image?
 
 ##### Why do we use Docker images?
-
-##### Where can we find some public Docker images?
 
 ###### Did the student reply correctly to the questions?
 
@@ -217,6 +215,8 @@ user:~$
 ###### Can you confirm the response was success code `200` even if the `billing_app` is not working?
 
 #### Bonus
+
+###### +Did the student use his/her own `crud-master-py` solution?
 
 ###### +Did the student add any optional bonus?
 
