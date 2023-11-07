@@ -50,7 +50,7 @@ You will have to implement a way to handle the DOM. The DOM can be seen as a big
 </html>
 ```
 
-The html above can be written as:
+The HTML above can be written as:
 
 ```json
 {
@@ -97,27 +97,27 @@ You have to take into account the events, children and attributes of each elemen
 
 #### Routing System
 
-Routing in this case refers to the synchronization of the state of the app with the url. In other words you will have to develop a simple way to change the url through actions of the user that will also change the state (explained in the next topic).
+Routing in this case refers to the synchronization of the state of the app with the URL. In other words you will have to develop a simple way to change the URL through actions of the user that will also change the state (explained in the next topic).
 
 ---
 
 #### State Management
 
-The state of an app can be seen as the outcome of all of the actions that the user has taken since the page loaded. In other words, if a user clicks on a button to execute an action, the state should then change.\
+The state of an app can be seen as the outcome of all the actions that the user has taken since the page loaded. In other words, if a user clicks on a button to execute an action, the state should then change.\
 What you will need to do is to implement a way to handle this state. Remember that multiple pages may need to interact with the same state, so you need to find a way to let the state be reachable at every time.
 
 ---
 
 #### Event Handling
 
-You will also have to implement a way to handle the events triggered by the user, like: scrolling, clicking, certain keybindings, etc.... Note that this new way of handling events must different from the `addEventListener()` method that already exists.
+You will also have to implement a way to handle the events triggered by the user, like: scrolling, clicking, certain keybindings, etc.... Note that this new way of handling events must be different from the `addEventListener()` method that already exists.
 
 ---
 
 #### TodoMVC
 
-A todoMVC project consists of creating a [webpage](http://todomvc.com/examples/vanillajs/) (this example is written in VanillaJS) with the same elements present in the example, so we advise you to test it around first. You have to make your todoMVC project, a pretty much perfect copy of the examples given in the links above, but using your framework.\
-Be aware that every thing that we can't visually see has to be present too (ids, classes, etc.).
+A todoMVC project consists of creating a [webpage](http://todomvc.com/examples/vanillajs/) (this example is written in VanillaJS) with the same elements present in the example, so we advise you to test it around first. You have to make your todoMVC project, a functional copy of the examples given in the links above, but using your framework.\
+Be aware that every thing that we can't visually see has to be present too (IDs, classes, etc.).
 
 This project will help you learn about:
 
