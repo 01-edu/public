@@ -216,7 +216,7 @@ user:~$
 
 #### Bonus
 
-###### +Did the student use his/her own `crud-master-py` solution?
+###### +Did the student use his/her own `crud-master` solution?
 
 ###### +Did the student add any optional bonus?
 

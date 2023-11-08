@@ -47,8 +47,8 @@ consisting of the following components:
   API gateway code running and forwarding the requests to the other
   services, and it's accessible via port `3000`.
 
-> You can use the Dockerfiles you created in the `play-with-containers`
-> project!
+<!--TODO: add link to solution-->
+> Use the Dockerfiles provided [here](...)
 
 ### The cluster
 
@@ -128,6 +128,9 @@ You must push a `README.md` file containing full documentation of your solution
 
 If you complete the mandatory part successfully, and you still have free time,
 you can implement anything that you feel deserves to be a bonus, for example:
+
+- Use the `Dockerfile` you have defined in your solution for
+  `play-with-containers`
 
 - Deploy a Kubernetes Dashboard to monitor the cluster
 
