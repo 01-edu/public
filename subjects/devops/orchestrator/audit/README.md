@@ -228,6 +228,8 @@ In less than 15 minutes and with the help of Google the student must explain all
 
 #### Bonus
 
+###### +Did the student used his/her own `play-with-container` solution instead of the provided one? 
+
 ###### +Did the student add any optional bonus?
 
 ###### +Is this project an outstanding project?

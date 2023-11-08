@@ -95,6 +95,8 @@ Review the student's architecture design, ensuring that it meets the project req
 
 #### Bonus
 
+###### +Did the student used his/her own `orchestrator` solution instead of the provided one?
+
 ###### +Did the student add any optional bonus?
 
 ###### +Is this project an outstanding project?

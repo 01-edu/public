@@ -155,15 +155,14 @@ Use Docker to build container images for each microservice. Make sure to
 optimize the Dockerfile for each service to reduce the image size and build
 time.
 
-> You can use your `play-with-containers` project solution.
-
 ### Deployment:
 
 Deploy the containerized microservices on AWS using an orchestration tool like
 AWS ECS or EKS. Ensure that the services are load-balanced (consider using AWS
 Elastic Load Balancer) and can communicate with each other securely.
 
-> You can use your `orchestrator` project solution.
+<!--TODO: add link to solution for orchestrator-->
+> Use [this solution]() to kick start you Kubernetes deployment.
 
 ### Monitoring and logging:
 
@@ -200,6 +199,8 @@ project.
 
 If you complete the mandatory part successfully and you still have free time,
 you can implement anything that you feel deserves to be a bonus, for example:
+
+- Use your own `orchestrator` solution instead of the provided one.
 
 - Use `Function as a Service (FaaS)` in your solution.
 
