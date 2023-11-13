@@ -177,13 +177,13 @@ pipeline` has been completed. The pipeline should include the following stages:
   `production environment`. This step should involve stakeholders and ensure
   the application is ready for production.
 - `Deploy to Production`: Deploy the application to the `production
-  environment`, ensuring zero downtime and a smooth rollout.
+environment`, ensuring zero downtime and a smooth rollout.
 
 > Each repository must have a pipeline!
 
 > Any modification in the application's source code must rebuild and redeploy
 > the new version to the `Staging Environment` and then to the `Production
-> Environment` after manual approval.
+Environment` after manual approval.
 
 ### Cybersecurity
 
