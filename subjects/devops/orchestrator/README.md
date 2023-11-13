@@ -29,7 +29,7 @@ Kubernetes.
 
 ![Architecture](pictures/Architecture.png)
 
-You have to deploy these microservices' architecture in a K3s cluster
+You have to deploy this microservices' architecture in a K3s cluster
 consisting of the following components:
 
 - `inventory-database container` is a PostgreSQL database server that contains
