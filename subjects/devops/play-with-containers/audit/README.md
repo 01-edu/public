@@ -173,10 +173,11 @@ user:~$
 #### Inventory API Endpoints
 
 ##### Open Postman and make a `POST` request to `http://[GATEWAY_IP]:[GATEWAY_PORT]/api/movies/` address with the following body as `Content-Type: application/json`:
+
 ```json
 {
-    "title": "A new movie",
-    "description": "Very short description"
+  "title": "A new movie",
+  "description": "Very short description"
 }
 ```
 
@@ -189,11 +190,12 @@ user:~$
 #### Billing API Endpoints
 
 ##### Open Postman and make a `POST` request to `http://[GATEWAY_IP]:[GATEWAY_PORT]/api/billing/` address with the following body as `Content-Type: application/json`:
+
 ```json
 {
-    "user_id": "20",
-    "number_of_items": "99",
-    "total_amount": "250"
+  "user_id": "20",
+  "number_of_items": "99",
+  "total_amount": "250"
 }
 ```
 
@@ -204,11 +206,12 @@ user:~$
 ###### Can you confirm the `billing-app` container was correctly stopped?
 
 ##### Open Postman and make a `POST` request to `http://[GATEWAY_IP]:[GATEWAY_PORT]/api/billing/` address with the following body as `Content-Type: application/json`:
+
 ```json
 {
-    "user_id": "22",
-    "number_of_items": "10",
-    "total_amount": "50"
+  "user_id": "22",
+  "number_of_items": "10",
+  "total_amount": "50"
 }
 ```
 

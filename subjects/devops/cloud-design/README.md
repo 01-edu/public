@@ -19,7 +19,7 @@ monitoring, logging, and scaling to ensure that the application runs
 efficiently. Implement security measures, such as securing the databases and
 making private resources accessible only from the Amazon Virtual Private Cloud
 (VPC). Incorporate managed authentication for publicly accessible applications
-using *AWS Cognito* or a similar service. Optimize the application to handle
+using _AWS Cognito_ or a similar service. Optimize the application to handle
 varying workloads and unexpected events.
 
 ### Hints
@@ -156,6 +156,7 @@ AWS ECS or EKS. Ensure that the services are load-balanced (consider using AWS
 Elastic Load Balancer) and can communicate with each other securely.
 
 <!--TODO: add link to solution for orchestrator-->
+
 > Use [this solution]() to kick start you Kubernetes deployment.
 
 ### Monitoring and logging:

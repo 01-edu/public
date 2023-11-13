@@ -4,10 +4,9 @@
 
 The repo contains a `README.md`, an `orchestrator.sh` script, a `Vagrantfile`
 and all the additional files used to create, delete and manage the submitted
-infrastructure. 
+infrastructure.
 
 ###### Are all the required files present?
-
 
 ###### Does the project as a structure similar to the one below? If not, can the student provide a justification for the chosen project structure?
 
@@ -21,7 +20,6 @@ infrastructure.
 │   └── [...]
 └── Vagrantfile
 ```
-
 
 ##### Ask the following questions to the group or student
 
@@ -67,7 +65,7 @@ $>
 
 ###### Was the cluster created by a Vagrantfile?
 
-###### Does the cluster contain two nodes (*master* and *agent*)?
+###### Does the cluster contain two nodes (_master_ and _agent_)?
 
 ###### Are the nodes connected and ready for usage?
 
@@ -133,7 +131,7 @@ user:~$
 
 ###### Are all the required applications deployed?
 
-- Databases must be deployed as *StatefulSet*, and volumes that enable containers to move across infrastructure without losing the data must be created.
+- Databases must be deployed as _StatefulSet_, and volumes that enable containers to move across infrastructure without losing the data must be created.
 
 - The following applications must be deployed as a deployment, and they must be scaled horizontally automatically, depending on CPU consumption:
 
@@ -147,17 +145,17 @@ user:~$
    min replication: 1
    CPU percent trigger: 60%
 
-The `billing-app` must be deployed as *StatefulSet*.
+The `billing-app` must be deployed as _StatefulSet_.
 
 ###### Do all apps deploy with the correct configuration?
 
 ##### Ask the following questions to the group or student
 
-- What is *StatefulSet* in K8s?
+- What is _StatefulSet_ in K8s?
 
-- What is *deployment* in K8s?
+- What is _deployment_ in K8s?
 
-- What is the difference between *deployment* and *StatefulSet* in K8s?
+- What is the difference between _deployment_ and _StatefulSet_ in K8s?
 
 - What is scaling, and why do we use it?
 
@@ -228,7 +226,7 @@ In less than 15 minutes and with the help of Google the student must explain all
 
 #### Bonus
 
-###### +Did the student used his/her own `play-with-container` solution instead of the provided one? 
+###### +Did the student used his/her own `play-with-container` solution instead of the provided one?
 
 ###### +Did the student add any optional bonus?
 

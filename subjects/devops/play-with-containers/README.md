@@ -50,6 +50,7 @@ You have to implement this architecture:
 ![architecture](./resources/play-with-containers-py.png)
 
 <!--TODO: add link to solution-->
+
 You will use the services described in the `crud-master` project. [Here](...)
 is a working solution that you can use to solve this project.
 

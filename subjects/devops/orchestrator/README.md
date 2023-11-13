@@ -9,7 +9,7 @@ you will gain experience with key technologies and concepts such as Kubernetes
 architecture, deployments, services, ingresses, and API gateways. Additionally,
 this project will provide you with an opportunity to practice DevOps skills
 such as containerization, continuous integration, and deployment (CI/CD), and
-infrastructure as code (*IaC*) using Kubernetes manifests. By completing this
+infrastructure as code (_IaC_) using Kubernetes manifests. By completing this
 project, you will have a solid understanding of microservices architecture and
 the tools and techniques used to deploy and manage such systems using
 Kubernetes.
@@ -48,6 +48,7 @@ consisting of the following components:
   services, and it's accessible via port `3000`.
 
 <!--TODO: add link to solution-->
+
 > Use the Dockerfiles provided [here](...)
 
 ### The cluster
@@ -62,23 +63,23 @@ You must install `kubectl` on your machine to manage your cluster.
 
 The nodes must be connected and available!
 
-```console 
+```console
 $> kubectl get nodes -A NAME
-STATUS   ROLES    AGE    VERSION 
+STATUS   ROLES    AGE    VERSION
 <master-node>   Ready    <none>   XdXh   vX
-<agent1-node>   Ready    <none>   XdXh   vX 
+<agent1-node>   Ready    <none>   XdXh   vX
 $>
 ```
 
 You must provide a `orchestrator.sh` script that run and create and manage the
 infrastructure:
 
-```console 
-$> ./orchestrator.sh create 
+```console
+$> ./orchestrator.sh create
 cluster created
 $> ./orchestrator.sh start
-cluster started 
-$> ./orchestrator.sh stop cluster stopped $> 
+cluster started
+$> ./orchestrator.sh stop cluster stopped $>
 ```
 
 ### Docker Hub
@@ -111,11 +112,11 @@ must be scaled horizontally automatically, depending on CPU consumption.
 - `inventory-app`: max replication: 3 min replication: 1 CPU percent trigger:
   60%
 
-The `billing-app` must be deployed as *StatefulSet*.
+The `billing-app` must be deployed as _StatefulSet_.
 
 ### Databases
 
-Your databases must be deployed as *StatefulSet* in your K3s cluster, and you
+Your databases must be deployed as _StatefulSet_ in your K3s cluster, and you
 must create volumes that enable containers to move across infrastructure
 without losing the data.
 
@@ -145,15 +146,15 @@ Challenge yourself!
 You must submit the `README.md` file and all files used to create and delete
 and manage your infrastructure: Vagrantfile, Dockerfiles, Manifests, ...
 
-```console 
-. 
-├── Manifests 
-│   └── [...] 
-├── Scripts 
-│   └── [...] 
-├── Dockerfiles 
-│   └── [...] 
-└── Vagrantfile 
+```console
+.
+├── Manifests
+│   └── [...]
+├── Scripts
+│   └── [...]
+├── Dockerfiles
+│   └── [...]
+└── Vagrantfile
 ```
 
 If you decide to use a different structure for your project remember you should
