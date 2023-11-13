@@ -41,12 +41,6 @@ Before starting this project, you should know the following:
 
 ### Role play
 
-To further enhance the learning experience and assess your knowledge, a
-role play question session will be included as part of the Cloud-Design Project.
-This section will involve your answering a series of questions in a simulated
-real-world scenario, where you will assume the role of a Cloud engineer
-explaining your solution to a team or a stakeholder.
-
 To enhance the learning experience and assess your knowledge, a role play
 question session will be included as part of the Cloud-Design Project. This
 section will involve answering a series of questions in a simulated real-world
@@ -200,7 +194,8 @@ project.
 If you complete the mandatory part successfully and you still have free time,
 you can implement anything that you feel deserves to be a bonus, for example:
 
-- Use your own `orchestrator` solution instead of the provided one.
+- Use your own `crud-master`, `play-with-containers`, and `orchestrator`
+  solution instead of the provided ones.
 
 - Use `Function as a Service (FaaS)` in your solution.
 
