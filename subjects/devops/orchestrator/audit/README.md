@@ -29,7 +29,7 @@ infrastructure.
 
 - What is Kubernetes, and what is its main role?
 
-- What is K3s, and what is their main role?
+- What is K3s, and what is its main role?
 
 ###### Did the student reply correctly to the questions?
 
@@ -165,7 +165,7 @@ The `billing-app` must be deployed as *StatefulSet*.
 
 - Why we don't put the database as a deployment?
 
-###### Did the student reply correctly to the questions?
+###### Did the student reply correctly to all the above questions?
 
 ##### Test the solution
 
@@ -218,7 +218,7 @@ The `billing-app` must be deployed as *StatefulSet*.
 
 #### K8s components
 
-![suprise](../pictures/suprise.png)
+![surprise](../pictures/suprise.png)
 
 ![components-of-kubernetes](../pictures/components-of-kubernetes.svg)
 
