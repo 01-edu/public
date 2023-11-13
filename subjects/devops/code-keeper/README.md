@@ -142,7 +142,7 @@ The pipeline should include the following stages:
   deleted. This job provides a preview of the changes and enables you to review
   them before applying.
 
-- `Apply to Stagging`: Apply the Terraform configuration to `create`, `update`,
+- `Apply to Staging`: Apply the Terraform configuration to `create`, `update`,
   or `delete` the resources as specified in the execution plan. This job
   provisions and modifies the infrastructure in the staging environment.
 
