@@ -12,13 +12,13 @@ A `README.md` file and all files used to create, delete and manage the student i
 
 ##### Ask the following questions to the group or student:
 
-##### What are containers and what are their advantages?
+- What are containers and what are their advantages?
 
-##### What is the difference between containers and virtual machines?
+- What is the difference between containers and virtual machines?
 
-##### What is Docker and what is it used for?
+- What is Docker and what is it used for?
 
-###### Did the student reply correctly to the questions?
+###### Did the student reply correctly to all the above questions?
 
 ##### Open and read the `README.md` file provided by the student.
 
@@ -50,15 +50,15 @@ user:~$
 
 ##### Ask the following questions to the group or student
 
-##### What is a microservices' architecture?
+- What is a microservices' architecture?
 
-##### Why do we use microservices architecture?
+- Why do we use microservices architecture?
 
-##### What is a queue and what is it used for?
+- What is a queue and what is it used for?
 
-##### What is RabbitMQ?
+- What is RabbitMQ?
 
-###### Did the student reply correctly to the questions?
+###### Did the student reply correctly to all the above questions?
 
 #### Verify the Dockerfiles:
 
@@ -70,11 +70,11 @@ user:~$
 
 ##### Ask the following questions to the group or student
 
-##### What is a Dockerfile?
+- What is a Dockerfile?
 
-##### Explain the instructions used on the Dockerfile.
+- Explain the instructions used on the Dockerfile.
 
-###### Did the student reply correctly to the questions?
+###### Did the student reply correctly to all the above questions?
 
 #### Check the Containers:
 
@@ -128,11 +128,11 @@ user:~$
 
 ##### Ask the following questions to the group or student
 
-##### What is a Docker volume?
+- What is a Docker volume?
 
-##### Why do we use Docker volumes?
+- Why do we use Docker volumes?
 
-###### Did the student reply correctly to the questions?
+###### Did the student reply correctly to all the above questions?
 
 #### Check the solution network:
 
@@ -140,11 +140,11 @@ user:~$
 
 ##### Ask the following questions to the group or student
 
-##### What is the Docker network?
+- What is the Docker network?
 
-##### Why do we use the Docker network?
+- Why do we use the Docker network?
 
-###### Did the student reply correctly to the questions?
+###### Did the student reply correctly to all the above questions?
 
 #### Check the Docker images:
 
@@ -164,11 +164,11 @@ user:~$
 
 ##### Ask the following questions to the group or student
 
-##### What is a Docker image?
+- What is a Docker image?
 
-##### Why do we use Docker images?
+- Why do we use Docker images?
 
-###### Did the student reply correctly to the questions?
+###### Did the student reply correctly to all the above questions?
 
 #### Inventory API Endpoints
 
