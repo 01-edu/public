@@ -267,7 +267,7 @@ The chosen problem statement is:
 
 Now, let’s find creative solutions!
 
-Find 3 friends outside of the program and run a quick ideation session (20 minutes).
+Find 3 friends and run a quick ideation session (20 minutes).
 
 - What you need for an in-person ideation workshop:
 
