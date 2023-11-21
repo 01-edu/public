@@ -157,7 +157,7 @@ The goal of this exercise is to learn to concatenate and reshape arrays.
 The goal of this exercise is to learn to access values of n-dimensional arrays efficiently.
 
 1. Create an 2-dimensional array size 9,9 of 1s. Each value has to be an `int8`.
-2. Using a combination of **slicing** and **broadcasting**, output this array:
+2. Using **slicing**, output this array:
 
    ```python
    array([[1, 1, 1, 1, 1, 1, 1, 1, 1],
@@ -169,6 +169,20 @@ The goal of this exercise is to learn to access values of n-dimensional arrays e
        [1, 0, 1, 1, 1, 1, 1, 0, 1],
        [1, 0, 0, 0, 0, 0, 0, 0, 1],
        [1, 1, 1, 1, 1, 1, 1, 1, 1]], dtype=int8)
+   ```
+
+3. Using **broadcasting** create the ouptu matrix starting from these two arrays:
+
+   ```python
+   array_1 = np.array([1,2,3,4,5], dtype=int8)
+   array_2 = np.array([1,2,3], dtype=int8)
+   ...
+   # output matrix
+   array([[ 1,  2,  3],
+          [ 2,  4,  6],
+          [ 3,  6,  9],
+          [ 4,  8, 12],
+          [ 5, 10, 15]], dtype=int8)
    ```
 
 https://jakevdp.github.io/PythonDataScienceHandbook/ (section: Computation on Arrays: Broadcasting)
