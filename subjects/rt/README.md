@@ -12,6 +12,8 @@ Below is an example of an image which your ray tracer should be able to produce:
 
 ![image.png](raytrace.png)
 
+> The image generated is including reflection that is one of the required bonus features. More information below.
+
 ### Objectives
 
 In this project, you have to implement the ray tracer method in order to be able to render a computer generated image containing a few objects.
@@ -30,13 +32,13 @@ As your ray tracer will probably be a bit slow to render high resolution scenes,
 - a scene with one of each of all the objects (one cube, one sphere, one cylinder and one flat plane);
 - a scene like the previous one, but with the camera in another position (thus generating the same image from a different perspective).
 
-All of the images should be in the format of 800x600. However, while testing, you should use smaller resolution images in order to reduce your rendering time (a 1200x1000 can take up to 40 mins to create). It would be best to consider the possibility of changing the output image's resolution easily.
+All the images should be in the format of 800x600. However, while testing, you should use smaller resolution images in order to reduce your rendering time (a 1200x1000 can take up to 40 mins to create). It would be best to consider the possibility of changing the output image's resolution easily.
 
 Another aspect you should consider is that the auditor will have to use your ray tracer, so make it as usable and optimized as possible. You should provide the auditor clear documentation.
 
 #### Documentation
 
-By documentation we mean the explaining of how the ray tracer work and how to work with it, for example: how to create an object, how to change brightness in a scene, etc... After reading the documentation, a new user of your ray tracer has to be able to use it without much guessing work.
+By documentation, we mean the explaining of how the ray tracer work and how to work with it, for example: how to create an object, how to change brightness in a scene, etc... After reading the documentation, a new user of your ray tracer has to be able to use it without much guessing work.
 
 You will have to create a [markdown](https://www.markdownguide.org/getting-started/) file, which will have to contain:
 
