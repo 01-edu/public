@@ -73,9 +73,11 @@ The `movies` table will contain the following columns:
 ##### Testing the Inventory API
 
 In order to test the correctness of your API you should use Postman or a
-similar tool. You could create one or more tests for every endpoint and then
+similar tool. You have to create one or more tests for every endpoint and then
 export the configuration, so you will be able to reproduce the tests on
 different machines easily.
+
+> The configuration will be checked during the audit.
 
 #### API 2: Billing
 
@@ -87,11 +89,10 @@ going to be a "stringified" JSON object as in this example:
 
 ```json
 {
-    "user_id": "3",
-    "number_of_items": "5",
-    "total_amount": "180"
+  "user_id": "3",
+  "number_of_items": "5",
+  "total_amount": "180"
 }
-
 ```
 
 It will parse the message and create a new entry in the `orders_db` database.
@@ -154,9 +155,9 @@ An example of POST request to
 
 ```json
 {
-    "user_id": "3",
-    "number_of_items": "5",
-    "total_amount": "180"
+  "user_id": "3",
+  "number_of_items": "5",
+  "total_amount": "180"
 }
 ```
 
@@ -246,7 +247,7 @@ Additionally, PM2 provides a number of features for managing multiple
 applications, such as load balancing and automatic restarts.
 
 In our situation we will use it mainly to test resilience for messages sent to
-the Billing API when the API is not up and running. 
+the Billing API when the API is not up and running.
 
 After entering in your VM via SSH you may run the following commands:
 
@@ -282,21 +283,21 @@ a common way to structure this kind of projects that may help you:
 ├── srcs
 │   ├── api-gateway
 │   │   ├── app
-│   │   │   ├── __init__.py 
+│   │   │   ├── __init__.py
 │   │   │   └── ...             // Other python files
 │   │   ├── requirements.txt
 │   │   └── server.js
 │   ├── billing-app
 │   │   ├── app
-│   │   │   ├── __init__.py 
+│   │   │   ├── __init__.py
 │   │   │   └── ...             // Other python files
 │   │   ├── requirements.txt
 │   │   └── server.js
 │   └── inventory-app
 │   │   ├── app
-│   │   │   ├── __init__.py 
+│   │   │   ├── __init__.py
 │   │   │   └── ...             // Other python files
-│       ├── requirements.txt 
+│       ├── requirements.txt
 │       └── server.py
 └── Vagrantfile
 ```
