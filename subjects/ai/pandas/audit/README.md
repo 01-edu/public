@@ -31,7 +31,7 @@
 ```console
         <class 'str'>
         <class 'list'>
-        <class 'float'>
+        <class 'float64'>
 ```
 
 ---
