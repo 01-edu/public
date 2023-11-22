@@ -217,7 +217,7 @@ How to tell if a given 2D array has null columns?
 
 4. What is the average % of alcohol on all wines in the data set ? If needed, drop `np.nan` values
 
-5. Compute the minimum, the maximum, the 25th percentile, the 50th percentile, the 75th percentile, the median (50th percentile) of the pH
+5. Compute the minimum, the maximum, the 25th percentile, the 50th percentile, the 75th percentile, the mean of the pH
 
 6. Compute the average quality of the wines having the 20% least sulphates
 
