@@ -244,7 +244,7 @@ There are two steps in this exercise:
 
 ##### The exercise is validated if all questions of the exercise are validated
 
-###### Has the text file successfully been loaded in a NumPy array with `genfromtxt('winequality-red.csv', delimiter=',')` and the reduced arrays weights **76800 bytes**?
+###### Has the text file successfully been loaded in a NumPy array with `genfromtxt('winequality-red.csv', delimiter=';')` and the reduced arrays weights **76800 bytes**?
 
 ###### Is the output the following?
 
@@ -275,7 +275,7 @@ This slicing gives the answer `my_data[[1,6,11],:]`.
     max:  4.01
 ```
 
-    > *Note: Using `percentile` or `median` may give different results depending on the duplicate values in the column. If you do not have my results please use `percentile`.*
+> *Note: Using `percentile` or `median` may give different results depending on the duplicate values in the column. If you do not have my results please use `percentile`.*
 
 ###### Is the answer ~`5.2`? The first step is to get the percentile 20% of the column `sulphates`, then create a boolean array that contains `True` of the value is smaller than the percentile 20%, then select this rows with the column quality and compute the `mean`.
 
