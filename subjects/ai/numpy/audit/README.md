@@ -80,7 +80,7 @@
 
 ###### For question 3, is the solution `integers[::-2]`?
 
-###### For question 4, is the array `np.array([0, 1,0,3,4,0,...,0,99,100])`? There are at least two ways to get this results without for loop. The first one uses `integers[1::3] = 0` and the second involves creating a boolean array that indexes the array:
+###### For question 4, is the array `np.array([1,0,3,4,0,...,0,99,100])`? There are at least two ways to get this results without for loop. The first one uses `integers[1::3] = 0` and the second involves creating a boolean array that indexes the array:
 
 ```python
 mask = (integers+1)%3 == 0
