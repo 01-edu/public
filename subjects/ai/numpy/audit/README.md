@@ -99,7 +99,7 @@ integers[mask] = 0
 
 ###### For question 1, is the solution `np.random.seed(888)`?
 
-###### For question 2, is the solution `np.random.randn(100)`? The value of the first element is `0.17620087373662233`.
+###### For question 2, is the output of the solution the same as `np.random.randn(100)`? The value of the first element is `0.17620087373662233`.
 
 ###### For question 3, is the solution `np.random.randint(1,11,(8,8))`?
 
