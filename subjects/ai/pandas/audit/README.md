@@ -206,13 +206,15 @@
     example:
 
 ```python
-    df.fillna({0:df.sepal_length.mean(),
-    2:df.sepal_width.median(),
-    3:0,
-    4:0})
+    df.fillna({
+        0:df.sepal_length.mean(),
+        2:df.sepal_width.median(),
+        3:0,
+        4:0
+    })
 ```
 
-###### For question 2, is the solution `df.loc[:,col].fillna(df[col].median())`?
+###### For question 2, is the solution `df.loc[:,col].fillna(df[col].median())` or any equivalent formula?
 
 ###### +The solution of bonus question is accepted if you find out this answer: Once we filled the missing values as suggested in the first question, `df.describe()` returns this interesting summary. We notice that the mean is way higher than the median. It means that there are maybe some outliers in the data. The quantile 75 and the max confirm that: 75% of the flowers have a sepal length smaller than 6.4 cm, but the max is 6900 cm. If you check on the internet you realise this small flower can't be that big. The outliers have a major impact on the mean which equals to 56.9. Filling this value for the missing value is not correct since it doesn't correspond to the real size of this flower. That is why in that case the best strategy to fill the missing values is the median. The truth is that I modified the data set ! But real data sets ALWAYS contains outliers. Always think about the meaning of the data transformation! If you fill the missing values by zero, it means that you consider that the length or width of some flowers may be 0. It doesn't make sense.
 

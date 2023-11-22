@@ -158,7 +158,7 @@ https://towardsdatascience.com/data-cleaning-with-python-and-pandas-detecting-mi
 
 For this exercise, use [this dataset](./data/iris.csv).
 
-- Preliminary: Drop the `flower` column
+- Preliminary: Drop the `flower` column. Then try to fill missing values with different strategies:
 
 1. Fill the missing values with a different "strategy" for each column:
 
