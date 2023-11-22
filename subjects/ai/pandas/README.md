@@ -125,7 +125,7 @@ The data set used is [**Individual household electric power consumption**](https
 
 The goal of this exercise is to learn to manipulate real data with Pandas. This exercise is less guided since the exercise 2 should have given you a nice introduction.
 
-The data set used is **E-commerce purchases**.
+The data set used is [**E-commerce purchases**](./data/Ecommerce_purchases.txt).
 
 Questions:
 
