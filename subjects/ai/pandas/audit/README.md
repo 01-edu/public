@@ -31,7 +31,7 @@
 ```console
         <class 'str'>
         <class 'list'>
-        <class 'float64'>
+        <class 'numpy.float64'>
 ```
 
 ---
@@ -86,7 +86,7 @@
 
 ```
 
-You may wonder `df.loc[:,'A']` is required and if `df['A'] = ...` works too. **The answer is no**. This is important in Pandas. Depending on the version of Pandas, it may return a warning. The reason is that you are affecting a value to a **copy** of the DataFrame and not in the DataFrame.
+You may wonder why `df.loc[:,'A']` is required and if `df['A'] = ...` works too. **The answer is no**. This is important in Pandas. Depending on the version of Pandas, it may return a warning. The reason is that you are affecting a value to a **copy** of the DataFrame and not in the DataFrame.
 More details: https://stackoverflow.com/questions/20625582/how-to-deal-with-settingwithcopywarning-in-pandas
 
 ###### For question 7, is the output of `print(filtered_df.head().to_markdown())` as below and is the number of rows equal to **449667**?
