@@ -55,13 +55,13 @@ It contains ALL you need to know about Pandas.
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
-**Note:** For each quest, your first exercice will be to set up the virtual environment with the required libraries.
+**Note:** For each quest, your first exercise will be to set up the virtual environment with the required libraries.
 
 I recommend to use:
 
 - the **last stable versions** of Python.
-- the virtual environment you're the most confortable with. `virtualenv` and `conda` are the most used in Data Science.
-- one of the most recents versions of the libraries required
+- the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
+- one of the most recent versions of the libraries required
 
 1. Create a virtual environment named `ex00`, with a version of Python >= `3.8`, with the following libraries: `pandas`, `numpy` and `jupyter`.
 
@@ -86,7 +86,7 @@ The goal of this exercise is to learn to create basic Pandas objects.
    |   7 | Grey  | [7, 8]  |    4.4 |
    |   9 | Black | [9, 10] |    5.5 |
 
-2. Print the types for every columns and the types of the first value of every columns
+2. Print the types for every column and the types of the first value of every column
 
 ---
 
@@ -170,4 +170,4 @@ https://towardsdatascience.com/data-cleaning-with-python-and-pandas-detecting-mi
 
 - Bonus questions:
   - Filling the missing values by 0 or the mean of the associated column is common in Data Science. In that case, explain why filling the missing values with 0 or the mean is a bad idea.
-  - Find a special row ;-) .
+  - Find a special row ;-).
