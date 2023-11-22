@@ -156,6 +156,8 @@ https://towardsdatascience.com/data-cleaning-with-python-and-pandas-detecting-mi
 
 "**It’s important to understand these different types of missing data from a statistics point of view. The type of missing data will influence how you deal with filling in the missing values.**"
 
+For this exercise, use [this dataset](./data/iris.csv).
+
 - Preliminary: Drop the `flower` column
 
 1. Fill the missing values with a different "strategy" for each column:
