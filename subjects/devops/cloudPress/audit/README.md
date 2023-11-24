@@ -18,11 +18,15 @@
 
 ###### Was Nginx configured to serve web content appropriately?
 
+###### Is Nginx service running? Use `systemctl status nginx`.
+
 ###### Were firewall settings adjusted to allow HTTP/HTTPS traffic?
 
 #### MariaDB Installation and Configuration using Ansible
 
 ###### Was MariaDB installed on the EC2 Instance using Ansible?
+
+###### Is MariaDB service active? Use `systemctl status mariadb`.
 
 ###### Was a MariaDB database created specifically for WordPress?
 
@@ -31,6 +35,8 @@
 #### PHP Installation and Configuration using Ansible
 
 ###### Was PHP installed on the EC2 Instance using Ansible?
+
+###### Is PHP-FPM running? Use `systemctl status php-fpm`.
 
 ###### Were PHP settings appropriately configured for the WordPress site?
 
@@ -42,7 +48,11 @@
 
 ###### Was WordPress configured to use the MariaDB database?
 
+###### Is the database connectivity confirmed?
+
 ###### Was the WordPress service successfully started?
+
+###### Using curl or browser: Is WordPress accessible?
 
 #### Documentation
 
