@@ -239,7 +239,7 @@ The plot has to contain:
 
 2. Same question but now using `plotly.graph_objects`. You may need to use `init_notebook_mode` from `plotly.offline`.
 
-https://plotly.com/python/time-series/e
+https://plotly.com/python/time-series/
 
 ---
 
