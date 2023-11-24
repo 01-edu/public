@@ -247,9 +247,10 @@ https://plotly.com/python/time-series/
 
 # Exercise 7: Plotly Box plots
 
-The goal of this exercise is to learn to use Plotly to plot Box Plots. It is t is a method for graphically depicting groups of numerical data through their quartiles and values as min, max. It allows to compare quickly some variables.
+The goal of this exercise is to learn to use Plotly to plot Box Plots. It is a method for graphically depicting groups of numerical data through their quartiles and values as min, max. It allows comparing quickly some variables.
 
-Let us generate 3 random arrays from a normal distribution. And for each array add respectively 1, 2 to the normal distribution.
+Generate 3 random arrays from a normal distribution. Keep one as it is and for
+the other two arrays add respectively 1 and 2 to the normal distribution.
 
 ```python
 y0 = np.random.randn(50)
@@ -257,7 +258,7 @@ y1 = np.random.randn(50) + 1 # shift mean
 y2 = np.random.randn(50) + 2
 ```
 
-1. Plot in the same Figure 2 box plots as shown in the image. In this exercise the style is not important.
+1. In the same figure, plot the 3 distributions as box plots as shown in the image. In this exercise the style is not important.
 
 ![alt text][logo_ex7]
 
