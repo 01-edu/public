@@ -135,7 +135,7 @@ The first way to do it is to compute the return without for loop is to use `pct_
 
 **My results can be reproduced using: `np.random.seed = 2712`. Given the versions of NumPy used I do not guaranty the reproducibility of the results - that is why I also explain the steps to get to the solution.**
 
-###### For question 1, is the return computed as Return(t) = (Price(t+1) - Price(t))/Price(t) and returns the following output? Note that if the index is not ordered in ascending order the future return computed is wrong. The answer is also accepted if the returns is computed as in the exercise 2 and then shifted in the futur using `shift`, but I do not recommend this implementation as it adds missing values!
+###### For question 1, is the return computed as Return(t) = (Price(t+1) - Price(t))/Price(t) and returns the following output? Note that if the index is not ordered in ascending order the future return computed is wrong.
 
 ```console
         Date
