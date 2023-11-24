@@ -21,6 +21,7 @@ Time series a used A LOT in finance. You'll learn to evaluate financial strategi
 - Python 3.x
 - NumPy
 - Pandas
+- Plotly
 - Jupyter or JupyterLab
 
 _Version of Pandas I used to do the exercises: 1.0.1_.
@@ -36,6 +37,8 @@ I suggest to use the most recent one.
 
 - https://towardsdatascience.com/different-ways-to-iterate-over-rows-in-a-pandas-dataframe-performance-comparison-dc0d5dcef8fe
 
+- Datafile [`AAPL.csv`](data/AAPL.csv)
+
 ---
 
 ---
@@ -44,13 +47,13 @@ I suggest to use the most recent one.
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
-**Note:** For each quest, your first exercice will be to set up the virtual environment with the required libraries.
+**Note:** For each quest, your first exercise will be to set up the virtual environment with the required libraries.
 
 I recommend to use:
 
 - the **last stable versions** of Python.
-- the virtual environment you're the most confortable with. `virtualenv` and `conda` are the most used in Data Science.
-- one of the most recents versions of the libraries required
+- the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
+- one of the most recent versions of the libraries required
 
 1. Create a virtual environment named `ex00`, with a version of Python >= `3.8`, with the following libraries: `pandas`, `numpy` and `jupyter`.
 
@@ -72,19 +75,23 @@ The goal of this exercise is to learn to manipulate time series in Pandas.
 
 # Exercise 2: Financial data
 
-The goal of this exercise is to learn to use Pandas on Time Series an on Financial data.
+This exercise aims to familiarize you with handling financial data using Pandas, particularly focusing on time series analysis and computations related to stock prices.
 
 The data we will use is Apple stock.
 
-1. Using `Plotly` plot a Candlestick
+1. Before performing specific tasks, ensure your data is preprocessed adequately. Check for missing values, convert string dates to datetime objects, and set the date column as the index. This step ensures a clean dataset for subsequent operations.
 
-2. Aggregate the data to **last business day of each month**. The aggregation should consider the meaning of the variables. How many months are in the considered period ?
+2. Use `Plotly` to generate a candlestick chart based on the provided Apple stock data. Ensure the plot includes Open, High, Low, and Close prices. The date column should be set as the index (formatted as datetime).
 
-3. When comparing many stocks between them the metric which is frequently used is the return of the price. The price is not a convenient metric as the prices evolve in different ranges. The return at time t is defined as
+3. Aggregate the data to **last business day of each month** using Pandas. The aggregation should consider the meaning of the variables. How many months are in the considered period ?
 
-- (Price(t) - Price(t-1))/ Price(t-1)
+4. When comparing many stocks between them the metric which is frequently used is the return of the price. The price is not a convenient metric as the prices evolve in different ranges. The return at time t is defined as
 
-Using the open price compute the **daily return**. Propose two different ways **without for loop**.
+- `(Price(t) - Price(t-1))/ Price(t-1)`
+
+Compute **daily returns** based on the Open price without using a for loop.
+
+There are two recommended methods: utilizing the `pct_change` function and implementing a vectorized approach using the provided formula.
 
 ---
 
@@ -131,8 +138,8 @@ The goal of this exercise is to learn to perform a backtest in Pandas. A backtes
 
 We will backtest a **long only** strategy on Apple Inc. Long only means that we only consider buying the stock. The input signal at date d says if the close price will increase at d+1. We assume that the input signal is available before the market closes.
 
-1. Drop the rows with missing values and compute the daily futur return on the Apple stock (`AAPL.csv`) on the adjusted close price. The daily futur return means: **Return(t) = (Price(t+1) - Price(t))/Price(t)**.
-   There are some events as splits or dividents that artificially change the price of the stock. That is why the close price is adjusted to avoid to have outliers in the price data.
+1. Drop the rows with missing values and compute the daily future return on the Apple stock [`AAPL.csv`](data/AAPL.csv) on the adjusted close price. The daily future return means: **Return(t) = (Price(t+1) - Price(t))/Price(t)**.
+   There are some events as splits or dividends that artificially change the price of the stock. That is why the close price is adjusted to avoid to have outliers in the price data.
 
 2. Create a Series that contains a random boolean array with **p=0.5**
 

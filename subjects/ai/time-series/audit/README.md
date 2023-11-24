@@ -85,7 +85,9 @@ To get this result there are two ways: `resample` and `groupby`. There are two k
 - Find how to affect the aggregation on the last **business** day of each month. This is already implemented in Pandas and the keyword that should be used either in `resample` parameter or in `Grouper` is `BM`.
 - Choose the right aggregation function for each variable. The prices (Open, Close and Adjusted Close) should be aggregated by taking the `mean`. Low should be aggregated by taking the `minimum` because it represents the lower price of the day, so the lowest price on the month is the lowest price of the lowest prices on the day. The same logic applied to High, leads to use the `maximum` to aggregate the High. Volume should be aggregated using the `sum` because the monthly volume is equal to the sum of daily volume over the month.
 
-###### For question 3, does it not involve a for loop and is the output as below? The first way to do it is to compute the return without for loop is to use `pct_change`. And the second way to do it is to implement the formula given in the exercise in a vectorized way. To get the value at `t-1` the data has to be shifted with `shift`.
+###### For question 3, does it not involve a for loop and is the output as below?
+
+The first way to do it is to compute the return without for loop is to use `pct_change`. And the second way to do it is to implement the formula given in the exercise in a vectorized way. To get the value at `t-1` the data has to be shifted with `shift`.
 
 ```console
     Date
