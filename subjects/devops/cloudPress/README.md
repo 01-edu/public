@@ -4,7 +4,7 @@
 
 ### Objective
 
-CloudPress is a project designed to provide hands-on experience in deploying a WordPress website with MariaDB on the Amazon Web Services (AWS) cloud platform. The goal is to utilize Terraform for infrastructure creation and Ansible for application installation, resulting in a production-ready setup.
+CloudPress is a project designed to provide hands-on experience in deploying a WordPress website with MariaDB and Nginx on the Amazon Web Services (AWS) cloud platform. The goal is to utilize Terraform for infrastructure creation and Ansible for application installation, resulting in a production-ready setup.
 
 Upon completion of this project, you'll achieve:
 
@@ -75,7 +75,7 @@ Prepare a comprehensive `README.md` detailing:
 
 Your CloudPress project will be evaluated based on:
 
-- Successfully setting up WordPress and MariaDB using Terraform to create the infrastructure and Ansible for installing everything.
+- Successfully setting up WordPress, MariaDB and Nginx using Terraform to create the infrastructure and Ansible for installing everything.
 - Secure and effective environment configuration.
 - Quality and clarity of the provided documentation.
 
