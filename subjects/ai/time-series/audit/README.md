@@ -164,17 +164,19 @@ An example of solution is:
 
 ###### For question 3, is the Pnl computed as: signal \* futur_return? Both series should have the same index.
 
+The below result are obtained considering the random strategy with the with `np.random.seed = 2712`
+
 ```console
     Date
     1980-12-12   -0.052170
-    1980-12-15   -0.073403
+    1980-12-15   -0.000000
     1980-12-16    0.024750
     1980-12-17    0.029000
     1980-12-18    0.061024
                     ...
     2021-01-25    0.001679
     2021-01-26   -0.007684
-    2021-01-27   -0.034985
+    2021-01-27   -0.000000
     2021-01-28   -0.037421
     2021-01-29         NaN
     Name: PnL, Length: 10119, dtype: float64
