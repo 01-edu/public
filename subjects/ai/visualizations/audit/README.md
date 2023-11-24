@@ -145,29 +145,14 @@ https://matplotlib.org/gallery/api/two_scales.html
 
 #### Exercise 7: Plotly Box plots
 
-###### For question 1, does the plot reproduce the plot in the image and respect those criteria? The code below shows a solution.
+###### For question 1, does the plot reproduce the plot in the image as asked in the subject?
 
-###### Does it have a title?
+###### Does the figure as 3 box plots?
 
-###### Does it have a legend?
+###### Does the 3 box plots show normal distributions around 0, 1 and 2 respectively?
+
+Due to the random nature of the distributions, the two graphs do not require a perfect match
 
 ![alt text][logo_ex7]
 
 [logo_ex7]: ../w1day03_ex7_plot1.png "Box plot ex7"
-
-```python
-import plotly.graph_objects as go
-import numpy as np
-
-y0 = np.random.randn(50)
-y1 = np.random.randn(50) + 1 # shift mean
-y2 = np.random.randn(50) + 2
-
-fig = go.Figure()
-fig.add_trace(go.Box(y=y0, name='Sample A',
-                marker_color = 'indianred'))
-fig.add_trace(go.Box(y=y1, name = 'Sample B',
-                marker_color = 'lightseagreen'))
-
-fig.show()
-```
