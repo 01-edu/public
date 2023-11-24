@@ -1,6 +1,6 @@
 #### General
 
-##### Check the Repo content
+##### Check the Repo content.
 
 ###### Are all files related to the CloudPress project, including Terraform configuration files, Ansible playbooks, and any additional scripts, included in the repository?
 
@@ -54,6 +54,22 @@
 
 ###### Using curl or browser: Is WordPress accessible?
 
+###### Can users access the WordPress site without encountering errors or downtime?
+
+###### Was the environment configuration secure and effective?
+
+Consider the following examples of secure and effective environment configuration:
+
+- **Sensitive Information Handling:** Ensure sensitive information like passwords, API keys, or access credentials are not hardcoded in configuration files. Utilize specialized tools such as AWS Secrets Manager, HashiCorp Vault, or equivalent solutions to securely manage and access sensitive data.
+
+- **Scalability Measures:** Check for implemented strategies to handle traffic spikes or increased loads, such as auto-scaling mechanisms or load balancing.
+
+- **Fault Tolerance:** Validate the setup's ability to manage various failure scenarios, maintaining high availability of the WordPress site.
+
+###### Are sensitive information such as passwords and access keys securely stored and managed (e.g., using AWS Secrets Manager or similar tools)?
+
+###### Were proper encryption methods implemented for data in transit and at rest?
+
 #### Documentation
 
 ###### Does the README.md file contain an architecture overview?
@@ -62,14 +78,20 @@
 
 ###### Are additional configurations, tips, and potential pitfalls included in the documentation?
 
-#### Evaluation Criteria
+#### Technical Verification
 
-###### Was WordPress and MariaDB set up using Terraform and Ansible?
+##### Try to change Terraform Settings.
 
-###### Was the environment configuration secure and effective?
+Example:
 
-###### Is the provided documentation of high quality and clarity?
+- Modify the count of EC2 instances. For instance, if you initially provisioned two instances, change the count to three or reduce it to one.
+- Alter inbound or outbound rules in the security groups, like opening or closing specific ports.
+- Others that you feel are relevant.
 
-#### Overall Completion
+###### Did altering Terraform settings reflect changes in the deployed infrastructure?
 
-###### Is the CloudPress project ready for production deployment based on the achieved outcomes?
+###### Is WordPress fully functional? (Adding a page, accessing the website, etc.)
+
+##### Nginx Configuration Validation
+
+###### Were changes in Nginx configurations regarding traffic limitation or exposed ports effective in controlling or limiting access?
