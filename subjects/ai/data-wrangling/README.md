@@ -24,6 +24,7 @@ Data wrangling is one of the crucial tasks in data science and analysis which in
 - Python 3.x
 - NumPy
 - Pandas
+- Matplotlib
 - Jupyter or JupyterLab
 - Tabulate
 
