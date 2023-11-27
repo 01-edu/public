@@ -6,27 +6,27 @@
 
 ##### Ask the student to login with valid credentials
 
-###### Does the profile have three sections?
+###### Does the profile page consist of three sections as required?
 
-##### Try to confirm if the content on the three sections are correct, using the **GraphiQL**.
+##### Verify the accuracy of the content/information in the three Sections using **GraphiQL**.
 
-###### Is the content present on the three sections correct?
+###### Are the details presented in these sections accurate and correspond to the expected data?
 
-###### Does the profile present a 4th section with graph statistics?
+###### Does the profile include a fourth section dedicated to graphical statistics?
 
-###### Does this section have at least two different graphs?
+###### Does this section contain at least two different graphs created using SVG as specified in the project requirements?
 
-##### Try to confirm if the content on the graphs are correct.
+##### Try to validate the accuracy of the information presented in the graphs.
 
-###### Is the content on the graphs correct?
+###### Do the graphs display the expected data accurately?
 
 ##### Try to access the profile from the host domain.
 
-###### Is the profile being hosted (active/live/online)?
+###### Is the profile successfully accessible and hosted online?
 
 ##### Log out
 
-###### Was the authenticated user successfully logged out?
+###### Is the logout functionality successful in logging the authenticated user out?
 
 #### General
 
@@ -34,10 +34,10 @@
 
 #### Bonus
 
-###### +Is the profile displaying other information beside the three mandatory sections?
+###### +Does the profile showcase additional information beyond the three mandatory sections?
 
-###### +Is the profile displaying other graphs beside the two mandatory ones?
+###### +Are there additional graphs featured apart from the required two?
 
-###### +Did the student generated their own GraphiQL?
+###### +Has the student created and utilized their own GraphiQL?
 
 ###### +Does the UI respect the [good practices](../../good-practices/README.md)?
