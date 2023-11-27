@@ -91,12 +91,12 @@ _Note: create functions that generate the plots and save them in the images fold
 At this stage the DataFrame should looks like this:
 
 |                                                      |   Price | monthly_past_return | monthly_future_return |
-| :--------------------------------------------------- | ------: | ------------------: | -------------------: |
-| (Timestamp('2000-12-31 00:00:00', freq='M'), 'A')    | 36.7304 |                 nan |          -0.00365297 |
-| (Timestamp('2000-12-31 00:00:00', freq='M'), 'AA')   | 25.9505 |                 nan |             0.101194 |
-| (Timestamp('2000-12-31 00:00:00', freq='M'), 'AAPL') | 1.00646 |                 nan |             0.452957 |
-| (Timestamp('2000-12-31 00:00:00', freq='M'), 'ABC')  | 11.4383 |                 nan |           -0.0528713 |
-| (Timestamp('2000-12-31 00:00:00', freq='M'), 'ABT')  | 38.7945 |                 nan |             -0.07205 |
+| :--------------------------------------------------- | ------: | ------------------: | --------------------: |
+| (Timestamp('2000-12-31 00:00:00', freq='M'), 'A')    | 36.7304 |                 nan |           -0.00365297 |
+| (Timestamp('2000-12-31 00:00:00', freq='M'), 'AA')   | 25.9505 |                 nan |              0.101194 |
+| (Timestamp('2000-12-31 00:00:00', freq='M'), 'AAPL') | 1.00646 |                 nan |              0.452957 |
+| (Timestamp('2000-12-31 00:00:00', freq='M'), 'ABC')  | 11.4383 |                 nan |            -0.0528713 |
+| (Timestamp('2000-12-31 00:00:00', freq='M'), 'ABT')  | 38.7945 |                 nan |              -0.07205 |
 
 - Fill the missing values using the last available value (same company)
 - Drop the missing values that can't be filled
