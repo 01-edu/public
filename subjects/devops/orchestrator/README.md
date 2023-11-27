@@ -47,9 +47,8 @@ consisting of the following components:
   API gateway code running and forwarding the requests to the other
   services, and it's accessible via port `3000`.
 
-<!--TODO: add link to solution-->
-
-> Use the Dockerfiles provided [here](...)
+> You can use the Dockerfiles provided
+> [here](https://github.com/01-edu/play-with-containers)
 
 ### The cluster
 
