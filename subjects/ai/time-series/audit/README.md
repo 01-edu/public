@@ -114,7 +114,7 @@ The first way to do it is to compute the return without for loop is to use `pct_
 ###### Is the outputted DataFrame's shape `(261, 5)` without having used a for loop and the is the output the same as the one returned with this line of code? The DataFrame contains random data. Make sure the output and the one returned by this code is based on the same DataFrame.
 
 ```python
-    market_data.loc[market_data.index.get_level_values('Ticker')=='AAPL'].sort_index().pct_change()
+    market_data.pivot_table(values="Price", index="Date", columns="Ticker").pct_change()
 ```
 
 ---
