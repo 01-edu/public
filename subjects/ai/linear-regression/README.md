@@ -180,7 +180,7 @@ The data set used is described in https://scikit-learn.org/stable/modules/genera
 
 ```python
 from sklearn.datasets import load_diabetes
-diabetes = load_diabetes()
+diabetes = load_diabetes(as_frame=True)
 X, y = diabetes.data, diabetes.target
 ```
 
