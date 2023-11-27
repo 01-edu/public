@@ -2,7 +2,7 @@
 
 ## SP500 data preprocessing
 
-The goal of this project is to perform a Backtest on the SP500 constituents. The SP500 is an index the 500 biggest capitalization in the US.
+The goal of this project is to perform a Backtest on the SP500 constituents, which represents the 500 largest companies by market capitalization in the United States.
 
 ## Data
 
@@ -12,12 +12,12 @@ The input files are:
 
 - [`stock_prices.csv`](./data/stock_prices.csv): contains the close prices for
   all the companies that had been in the SP500. It contains a lot of missing
-  data. 
+  data.
 
   The adjusted close price may be unavailable for three main reasons:
 
   - The company doesn't exist at date `d`
-  - The company is not public
+  - The company is not publicly traded
   - Its close price hasn't been reported
 
 _Note: The quality of this data set is not good: some prices are wrong, there are some prices spikes, there are some prices adjustments (share split, dividend distribution) - the price adjustment is corrected in the adjusted close. This data is not provided for this project to let you understand what is bad quality data and how important it is to detect outliers and missing values. The idea is not to correct the full data set manually, but to correct the main problems._
@@ -73,11 +73,11 @@ There are four parts:
 
 ## 2. Data wrangling and preprocessing
 
-- Create a Jupyter Notebook to analyse the data sets and perform EDA (Exploratory Data Analysis). This notebook should contain at least:
+- Create a Jupyter Notebook to analyze the data sets and perform EDA (Exploratory Data Analysis). This notebook should contain at least:
 
   - Missing values analysis
   - Outliers analysis (there are a lot of outliers)
-  - One of average price for companies for all variables (save the plot with the images).
+  - Visualize and analyze the average price for companies over time or compare the price consistency across different companies within the dataset. Save the plot as an image.
   - Describe at least 5 outliers ('ticker', 'date', 'price'). Put them in `outliers.txt` file with the 3 fields on the folder `results`.
 
 _Note: create functions that generate the plots and save them in the `images` directory. Add a parameter `plot` with a default value `False` which doesn't return the plot. This will be useful for the correction to let people run your code without overriding your plots._
