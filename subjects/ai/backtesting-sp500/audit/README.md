@@ -38,7 +38,9 @@ project
 
 ###### Does the notebook contain a Histogram of average price for companies for all variables (saved the plot with the images)? This is required only for **prices.csv** data.
 
-###### Does the notebook describe at least 5 outliers ('ticker', 'date', price) ? To check the outliers it is simple: Search the historical stock price on Google at the given date and compare. The price may fluctuate a bit. The goal here is not to match the historical price found on Google but to detect a huge difference between the price in our data and the real historical one.
+###### Does the notebook identify and describe at least 5 outliers ('ticker', 'date', 'price') by cross-referencing historical stock prices from an external source such as Google?
+
+> Note: This approach aims not to precisely match the historical price but to detect substantial differences between our dataset and verified historical data.
 
 ##### Notes:
 
@@ -57,7 +59,7 @@ project
 
 ##### 2. preprocessing.py
 
-###### Is the data agregated on a monthly period and only the last element is kept?
+###### Is the data aggregated on a monthly period and only the last element is kept?
 
 ###### Are the outliers filtered out by removing all prices bigger than 10k$ and smaller than 0.1$?
 
@@ -67,7 +69,9 @@ project
 
 ###### Are the outliers in the returns data set to NaN for all returns not in the years 2008 and 2009? The filters are: return > 1 and return < -0.5.
 
-###### Are the missing values filled using the last value available **for the company**. **df.fillna(method='ffill')** is wrong because the previous value can be the return or price of another company.
+###### Are the missing values filled using the last value available for **for the company**?
+
+Note: Simply applying df.fill() might be insufficient if the DataFrame isn't properly grouped or sorted by company/ticker. Ensure that the missing values are filled within each company's data independently to avoid potential mixing of information from different companies.
 
 ###### Are the missing values that can't be filled using a the previous existing value dropped?
 
