@@ -31,7 +31,7 @@ We will also learn progressively the Machine Learning methodology for supervised
 - Scikit Learn
 - Jupyter or JupyterLab
 
-_Version of Scikit Learn I used to do the exercises: 0.22_. I suggest to use the most recent one. Scikit Learn 1.0 is finally available after ... 14 years.
+_Version of Scikit Learn I used to do the exercises: 0.22_. I suggest using the most recent one. Scikit Learn 1.0 is finally available after ... 14 years.
 
 ### **Resources**
 
@@ -45,7 +45,7 @@ _Version of Scikit Learn I used to do the exercises: 0.22_. I suggest to use the
 
 ### Machine learning methodology and algorithms
 
-- This course provides a broad introduction to machine learning, datamining, and statistical pattern recognition. Andrew Ng is a star in the Machine Learning community. I recommend to spend some time during the projects to focus on some algorithms. However, Python is not the language used for the course. https://www.coursera.org/learn/machine-learning
+- This course provides a broad introduction to machine learning, data mining, and statistical pattern recognition. Andrew Ng is a star in the Machine Learning community. I recommend spending some time during the projects to focus on some algorithms. However, Python is not the language used for the course. https://www.coursera.org/learn/machine-learning
 
 - https://docs.microsoft.com/en-us/azure/machine-learning/algorithm-cheat-sheet
 
@@ -71,13 +71,13 @@ _Version of Scikit Learn I used to do the exercises: 0.22_. I suggest to use the
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
-**Note:** For each quest, your first exercice will be to set up the virtual environment with the required libraries.
+**Note:** For each quest, your first excerise will be to set up the virtual environment with the required libraries.
 
 I recommend to use:
 
 - the **last stable versions** of Python.
-- the virtual environment you're the most confortable with. `virtualenv` and `conda` are the most used in Data Science.
-- one of the most recents versions of the libraries required
+- the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
+- one of the most recent versions of the libraries required
 
 1. Create a virtual environment named `ex00`, with a version of Python >= `3.8`, with the following libraries: `pandas`, `numpy`, `jupyter`, `matplotlib` and `scikit-learn`.
 
@@ -123,7 +123,7 @@ X, y, coef = make_regression(n_samples=100,
 
 2. Fit a LinearRegression from Scikit-learn on the generated data and give the equation of the fitted line. The expected output is: `y = coef * x + intercept`
 
-3. Add the fitted line to the plot. the plot should look like this:
+3. Add the fitted line to the plot. The plot should look like this:
 
 ![alt text][q3]
 
@@ -186,7 +186,7 @@ X, y = diabetes.data, diabetes.target
 
 1. Using `train_test_split`, split the data set in a train set, and test set (20%). Use `random_state=43` for results reproducibility.
 
-2. Fit the Linear Regression on all the variables. Give the coefficients and the intercept of the Linear Regression. What is the the equation ?
+2. Fit the Linear Regression on all the variables. Give the coefficients and the intercept of the Linear Regression. What is the equation ?
 
 3. Predict on the test set. Predicting on the test set is like having new patients for who, as a physician, need to forecast the disease progression in one year given the 10 baseline variables.
 
@@ -224,11 +224,11 @@ _Warning: The shape of X is not the same as the shape of y. You may need (for so
 
 [ex5q1]: ./w2_day1_ex5_q1.png "Scatter plot "
 
-As a reminder, fitting a Linear Regression on this data means finding (a,b) that fits well the data points.
+As a reminder, fitting a Linear Regression on this data means finding (a, b) that fits well the data points.
 
 - `y_pred = a*x +b`
 
-Mathematically, it means finding (a,b) that minimizes the MSE, which is the loss used in Linear Regression. If we consider 3 data points:
+Mathematically, it means finding (a, b) that minimizes the MSE, which is the loss used in Linear Regression. If we consider 3 data points:
 
 - `Loss(a,b) = MSE(a,b) = 1/3 *((y_pred1 - y_true1)**2 + (y_pred2 - y_true2)**2) + (y_pred3 - y_true3)**2)`
 
@@ -312,11 +312,11 @@ In this example we computed 160 000 times the MSE. It is frequent to deal with 5
 
 ### Gradient Descent
 
-In a nutshel, Gradient descent is an optimization algorithm used to minimize some function by iteratively moving in the direction of steepest descent as defined by the negative of the gradient. In machine learning, we use gradient descent to update the parameters (a and b) of our model. Parameters refer to the coefficients used in Linear Regression. Before to start implementing the questions, take the time to read the article. https://jairiidriss.medium.com/gradient-descent-algorithm-from-scratch-using-python-2b36c1548917. It explains the gradient descent and how to implement it. The "tricky" part is the computation of the derivative of the mse. You can admit the formulas of the derivatives to implement the gradient descent (`d_theta_0` and `d_theta_1` in the article).
+In a nutshell, Gradient descent is an optimization algorithm used to minimize some function by iteratively moving in the direction of steepest descent as defined by the negative of the gradient. In machine learning, we use gradient descent to update the parameters (a and b) of our model. Parameters refer to the coefficients used in Linear Regression. Before to start implementing the questions, take the time to read the article. https://jairiidriss.medium.com/gradient-descent-algorithm-from-scratch-using-python-2b36c1548917. It explains the gradient descent and how to implement it. The "tricky" part is the computation of the derivative of the mse. You can admit the formulas of the derivatives to implement the gradient descent (`d_theta_0` and `d_theta_1` in the article).
 
 7. Implement the gradient descent to find optimal a and b with `learning rate = 0.1` and `nbr_iterations=100`.
 
-8. Save the a and b through the iterations in a two dimensional numpy array. Add them to the plot of the previous part and observe a and b that converge towards the minimum. The plot should look like this:
+8. Save the a and b through the iterations in a two-dimensional numpy array. Add them to the plot of the previous part and observe a and b that converge towards the minimum. The plot should look like this:
 
 ![alt text][ex5q8]
 
