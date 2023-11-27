@@ -6,11 +6,11 @@ The goal of this project is to perform a Backtest on the SP500 constituents. The
 
 ## Data
 
-The input file are `stock_prices.csv` and:
+The input file are:
 
-- `sp500.csv` contains the SP500 data. The SP500 is a stock market index that measures the stock performance of 500 large companies listed on stock exchanges in the United States.
+- [`sp500.csv`](./data/sp500.csv) contains the SP500 data. The SP500 is a stock market index that measures the stock performance of 500 large companies listed on stock exchanges in the United States.
 
-- `stock_prices.csv`: contains the close prices for all the companies that had been in the SP500. It contains a lot of missing data. The adjusted close price may be unavailable for three main reasons:
+- [`stock_prices.csv`](./data/stock_prices.csv): contains the close prices for all the companies that had been in the SP500. It contains a lot of missing data. The adjusted close price may be unavailable for three main reasons:
 
   - The company doesn't exist at date d
   - The company is not public, pas coté
