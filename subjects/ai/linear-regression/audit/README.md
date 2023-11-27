@@ -109,30 +109,11 @@ y_test:
 
 ###### For question 1, is the output of `y_train.values[:10]` and `y_test.values[:10]` the following?
 
-```console
-    y_train.values[:10]:
-    [[202.]
-    [ 55.]
-    [202.]
-    [ 42.]
-    [214.]
-    [173.]
-    [118.]
-    [ 90.]
-    [129.]
-    [151.]]
-
-    y_test.values[:10]:
-    [[ 71.]
-    [ 72.]
-    [235.]
-    [277.]
-    [109.]
-    [ 61.]
-    [109.]
-    [ 78.]
-    [ 66.]
-    [192.]]
+```python
+    print(y_train.values[:10])
+    [202.  55. 202.  42. 214. 173. 118.  90. 129. 151.]
+    print(y_test.values[:10])
+    [ 71.  72. 235. 277. 109.  61. 109.  78.  66. 192.]
 ```
 
 ###### For question 2, are the coefficients and the intercept the following?
