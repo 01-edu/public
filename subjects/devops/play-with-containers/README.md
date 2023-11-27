@@ -49,9 +49,8 @@ in the audit.
 You have to implement this architecture:
 ![architecture](./resources/play-with-containers-py.png)
 
-<!--TODO: add link to solution-->
-
-You will use the services described in the `crud-master` project. [Here](...)
+You will use the services described in the `crud-master` project.
+[Here](https://github.com/01-edu/crud-master-py)
 is a working solution that you can use to solve this project.
 
 You are required to create a `Dockerfile` for each service and call them in
