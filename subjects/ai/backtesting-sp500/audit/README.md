@@ -36,7 +36,7 @@ project
 
 ###### Does the notebook contain an outliers analysis?
 
-###### Does the notebook contain a Histogram of average price for companies for all variables (saved the plot with the images)? This is required only for **prices.csv** data.
+###### Does the notebook contain a graph that shows the average price for each company in the dataset? (saved the plot with the images).
 
 ###### Does the notebook identify and describe at least 5 outliers ('ticker', 'date', 'price') by cross-referencing historical stock prices from an external source such as Google?
 
