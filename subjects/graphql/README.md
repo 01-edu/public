@@ -59,8 +59,7 @@ When making GraphQL queries, you'll supply the JWT using `Bearer` authentication
 
 ### Hosting
 
-Besides the creation of your own profile you will have to host it. There are several places where you can host your profile,\
-for example: [github-pages](https://pages.github.com/), [netlify](https://www.netlify.com/) and so on. You are free to choose the hosting place.
+Besides the creation of your own profile you will have to host it. There are several places where you can host your profile, for example: [github-pages](https://pages.github.com/), [netlify](https://www.netlify.com/) and so on. You are free to choose the hosting place.
 
 Here are a selection of interesting tables and columns which are exposed via GraphQL:
 
