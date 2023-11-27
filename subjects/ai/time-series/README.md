@@ -118,15 +118,19 @@ market_data = pd.DataFrame(index=index,
 
 1. **Without using a for loop**, compute the daily returns (return(d) = (price(d)-price(d-1))/price(d-1)) for all the companies and returns a DataFrame as:
 
-| Date                | ('Price', 'AAPL') | ('Price', 'AMZN') | ('Price', 'DAI') | ('Price', 'FB') | ('Price', 'GE') |
-| :------------------ | ----------------: | ----------------: | ---------------: | --------------: | --------------: |
-| 2021-01-01 00:00:00 |               nan |               nan |              nan |             nan |             nan |
-| 2021-01-04 00:00:00 |           1.01793 |         0.0512955 |          3.84709 |       -0.503488 |         0.33529 |
-| 2021-01-05 00:00:00 |         -0.222884 |          -1.64623 |         -0.71817 |         -5.5036 |        -4.15882 |
+```console
+Ticker          AAPL      AMZN       DAI        FB        GE
+Date
+2021-01-01       NaN       NaN       NaN       NaN       NaN
+2021-01-04 -2.668008 -4.716002 -1.885721  0.496173  1.862998
+2021-01-05 -2.194111 -2.747143 -0.165338  0.318410  0.085519
+2021-01-06 -1.164307 -1.194895 -2.595224 -0.219974 -0.805512
+2021-01-07  3.428472  3.778445 -0.956788 -1.538637  0.108276
+```
 
-Note: The data is generated randomly, the values you may have a different results. But, this shows the expected DataFrame structure.
+Note: The data is generated randomly, the values you may have lead to a different result. The above example shows the expected DataFrame structure.
 
-`Hint use groupby`
+`Hint use pivot_table`
 
 ---
 
