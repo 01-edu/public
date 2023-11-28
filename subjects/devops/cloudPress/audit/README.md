@@ -2,7 +2,7 @@
 
 ##### Check the Repo content.
 
-###### Are all files related to the CloudPress project, including Terraform configuration files, Ansible playbooks, and any additional scripts, included in the repository?
+###### Are all files related to the CloudPress project, including Terraform configuration files, Ansible playbooks, and any additional scripts, included in the repository for example (Helper Scripts, Configuration Scripts, Utility Scripts, Deployment Control Scripts)?
 
 #### AWS Infrastructure Setup with Terraform
 
@@ -14,7 +14,7 @@
 
 #### Nginx Installation and Configuration using Ansible
 
-###### Was Nginx successfully installed on the EC2 Instance using Ansible?
+###### Was Nginx successfully installed on the EC2 instance using Ansible? Run `nginx -v` on the EC2 instance to validate the installed Nginx version, ensuring the successful installation via Ansible.
 
 ###### Was Nginx configured to serve web content appropriately?
 
@@ -24,19 +24,19 @@
 
 #### MariaDB Installation and Configuration using Ansible
 
-###### Was MariaDB installed on the EC2 Instance using Ansible?
+###### Was MariaDB installed on the EC2 Instance using Ansible? Run` mariadb -V` on the EC2 instance to confirm the MariaDB version, verifying the installation through Ansible.
 
-###### Is MariaDB service active? Use `systemctl status mariadb`.
+###### Is MariaDB service active? Confirm the status of the MariaDB service by using the command `systemctl status mariadb` to ensure its active state, indicating proper functionality post-deployment.
 
-###### Was a MariaDB database created specifically for WordPress?
+###### Was a MariaDB database created specifically for WordPress? Confirm by running the command `SHOW DATABASES` to verify the existence of the WordPress database.
 
 ###### Were the user rights and privileges for the WordPress user correctly configured?
 
 #### PHP Installation and Configuration using Ansible
 
-###### Was PHP installed on the EC2 Instance using Ansible?
+###### Was PHP installed on the EC2 Instance using Ansible? Run `php -v` on the EC2 instance to verify the PHP version, ensuring the installation was successfully carried out by Ansible.
 
-###### Is PHP-FPM running? Use `systemctl status php-fpm`.
+###### Is PHP-FPM running? Run `systemctl status php-fpm`.
 
 ###### Were PHP settings appropriately configured for the WordPress site?
 
@@ -44,7 +44,7 @@
 
 #### WordPress Installation and Configuration using Ansible
 
-###### Was WordPress downloaded and set up on the EC2 Instance using Ansible?
+###### Was WordPress downloaded and set up on the EC2 Instance using Ansible? Execute `wp core version` on the EC2 Instance provisioned by Ansible to confirm the successful download and setup of WordPress.
 
 ###### Was WordPress configured to use the MariaDB database?
 
@@ -80,13 +80,11 @@ Consider the following examples of secure and effective environment configuratio
 
 #### Technical Verification
 
-##### Try to change Terraform Settings.
-
-Example:
+##### Change some Terraform settings as instructed below:
 
 - Modify the count of EC2 instances. For instance, if you initially provisioned two instances, change the count to three or reduce it to one.
 - Alter inbound or outbound rules in the security groups, like opening or closing specific ports.
-- Others that you feel are relevant.
+- Other changes that you consider relevant.
 
 ###### Did altering Terraform settings reflect changes in the deployed infrastructure?
 
