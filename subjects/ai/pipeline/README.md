@@ -208,7 +208,7 @@ The goal of this exercise is to learn how to deal with Categorical variables wit
 
 Preliminary:
 
-- Load the breast-cancer.csv file
+- Load the [breast-cancer.csv](./data/breast-cancer.csv) file
 - Drop `Class` column
 - Drop NaN values
 - Split the data in a train set and test set (test set size = 20% of the total size) with `random_state=43`.
