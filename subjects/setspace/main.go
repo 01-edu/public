@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
+	"piscine"
 )
 
 func main() {
-	fmt.Println(SetSpace("HelloWorld"))
-	fmt.Println(SetSpace("HelloWorld12"))
-	fmt.Println(SetSpace("Hello World"))
-	fmt.Println(SetSpace(""))
-	fmt.Println(SetSpace("LoremIpsumWord"))
+	fmt.Println(piscine.SetSpace("HelloWorld"))
+	fmt.Println(piscine.SetSpace("HelloWorld12"))
+	fmt.Println(piscine.SetSpace("Hello World"))
+	fmt.Println(piscine.SetSpace(""))
+	fmt.Println(piscine.SetSpace("LoremIpsumWord"))
 }

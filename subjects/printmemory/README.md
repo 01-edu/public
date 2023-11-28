@@ -23,8 +23,10 @@ Here is a possible program to test your function :
 ```go
 package main
 
+import "piscine"
+
 func main() {
-	PrintMemory([10]byte{'h', 'e', 'l', 'l', 'o', 16, 21, '*'})
+	piscine.PrintMemory([10]byte{'h', 'e', 'l', 'l', 'o', 16, 21, '*'})
 }
 ```
 
