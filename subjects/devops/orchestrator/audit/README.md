@@ -214,6 +214,27 @@ The `billing-app` must be deployed as _StatefulSet_.
 
 ###### Can you confirm the response was success code `200` even if the `billing_app` is not working?
 
+#### PostgreSQL database for Billing
+
+##### Run `kubectl exec -it pods/billing-db-0 -- sh` to enter into the pod, then run `sudo -i -u postgres`, then `psql` and once in the database enter `\l`.
+> The `billing-db-0` is the ID of the pods running the billing db database - it might be different. To check which is the pods ID run `kubectl get pods | grep billin-db` 
+
+###### Can you confirm the `orders` database is listed?
+
+##### Still in `psql` run `\c orders` and then `TABLE orders;`.
+
+###### Can you confirm the order with `user_id = 20` is listed properly?
+
+###### Can you confirm the order with `user_id = 22` is NOT listed?
+
+#### Check resilience of messaging queue
+
+##### Start the billing-app container
+
+###### Can you confirm the `billing-app` container was correctly stopped?
+
+###### Can you confirm the order with `user_id = 22` is now listed properly?
+
 #### K8s components
 
 ![surprise](../pictures/suprise.png)
