@@ -16,7 +16,7 @@ Today we will focus on the data preprocessing and discover the Pipeline object f
 These steps are sequential. The output of step 1 is used as input for step 2 and so on; and, the output of step 4 is used as input for the Machine Learning model.
 Scikitlearn proposes an object: Pipeline.
 
-As we know, the model evaluation methodology requires to split the data set in a train set and test set. **The preprocessing is learned/fitted on the training set and applied on the test set**.
+As we know, the model evaluation methodology requires splitting the data set in a train set and test set. **The preprocessing is learned/fitted on the training set and applied on the test set**.
 
 This object takes as input the preprocessing transforms and a Machine Learning model. Then this object can be called the same way a Machine Learning model is called. This is pretty practical because we do not need anymore to carry many objects.
 
@@ -39,7 +39,7 @@ This object takes as input the preprocessing transforms and a Machine Learning m
 - Scikit Learn
 - Jupyter or JupyterLab
 
-_Version of Scikit Learn I used to do the exercises: 0.22_. I suggest to use the most recent one. Scikit Learn 1.0 is finally available after ... 14 years.
+_Version of Scikit Learn I used to do the exercises: 0.22_. I suggest using the most recent one. Scikit Learn 1.0 is finally available after ... 14 years.
 
 ### **Resources**
 
@@ -63,13 +63,13 @@ _Version of Scikit Learn I used to do the exercises: 0.22_. I suggest to use the
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
-**Note:** For each quest, your first exercice will be to set up the virtual environment with the required libraries.
+**Note:** For each quest, your first exercise will be to set up the virtual environment with the required libraries.
 
 I recommend to use:
 
 - the **last stable versions** of Python.
-- the virtual environment you're the most confortable with. `virtualenv` and `conda` are the most used in Data Science.
-- one of the most recents versions of the libraries required
+- the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
+- one of the most recent versions of the libraries required
 
 1. Create a virtual environment named `ex00`, with a version of Python >= `3.8`, with the following libraries: `pandas`, `numpy`, `jupyter`, `matplotlib` and `scikit-learn`.
 
@@ -79,7 +79,7 @@ I recommend to use:
 
 # Exercise 1: Imputer 1
 
-The goal of this exercise is to learn how to use an Imputer to fill missing values on basic example.
+The goal of this exercise is to learn how to use an `Imputer` to fill missing values on basic example.
 
 ```python
 train_data = [[7, 6, 5],
@@ -89,9 +89,9 @@ train_data = [[7, 6, 5],
 
 1. Fit the `SimpleImputer` on the data. Print the `statistics_`. Check that the statistics match `np.nanmean(train_data, axis=0)`.
 
-2. Fill the missing values in `train_data` using the fitted imputer and `transform`.
+2. Fill the missing values in `train_data` using the fitted `imputer` and `transform`.
 
-3. Fill the missing values in `test_data` using the fitted imputer and `transform`.
+3. Fill the missing values in `test_data` using the fitted `imputer` and `transform`.
 
 ```python
 test_data = [[np.nan, 1, 2],
@@ -140,7 +140,7 @@ Resources:
 
 # Exercise 3: One hot Encoder
 
-The goal of this exercise is to learn how to deal with Categorical variables using the OneHot Encoder.
+The goal of this exercise is to learn how to deal with Categorical variables using the `OneHot` Encoder.
 
 ```python
 X_train = [['Python'], ['Java'], ['Java'], ['C++']]
@@ -204,7 +204,7 @@ _Note: In the version 0.22 of Scikit-learn, the Ordinal Encoder doesn't handle n
 
 # Exercise 5: Categorical variables
 
-The goal of this exercise is to learn how to deal with Categorical variables with Ordinal Encoder, Label Encoder and One Hot Encoder. For this exercice I strongly suggest to use a recent version of `sklearn >= 0.24.1` to avoid issues with the Ordinal Encoder.
+The goal of this exercise is to learn how to deal with Categorical variables with Ordinal Encoder, Label Encoder and One Hot Encoder. For this exercise I strongly suggest using a recent version of `sklearn >= 0.24.1` to avoid issues with the Ordinal Encoder.
 
 Preliminary:
 
@@ -281,7 +281,7 @@ array(['node-caps_no', 'node-caps_yes', 'breast_left', 'breast_right',
 
 3. Create one Ordinal encoder for all Ordinal features in the following order `["menopause", "age", "tumor-size","inv-nodes", "deg-malig"]` on the test set. The documentation of Scikit-learn is not clear on how to perform this on many columns at the same time. Here's a **hint**:
 
-If the ordinal data set is (subset of two columns but I keep all rows for this example):
+If the ordinal data set is (subset of two columns, but I keep all rows for this example):
 
     |    | menopause     |   deg-malig |
     |---:|:--------------|------------:|
@@ -291,7 +291,7 @@ If the ordinal data set is (subset of two columns but I keep all rows for this e
     |  3 | premeno       |           3 |
     |  4 | premeno       |           2 |
 
-The first step is to create a dictionnary or a list - the most recent version of sklearn take as input lists:
+The first step is to create a dictionary or a list - the most recent version of sklearn take as input lists:
 
 ```console
 dict_ = {0: ['lt40', 'premeno' , 'ge40'], 1:[1,2,3]}
@@ -313,7 +313,7 @@ Now that you have enough information:
 - Fit on the train set
 - Transform the test set
 
-_Hint: Check the first ressource_
+_Hint: Check the first resource_
 
 **Note: The version 0.22 of Scikit-learn can't handle `get_feature_names` on `OrdinalEncoder`. If the column transformer contains an `OrdinalEncoder`, the method returns this error**:
 
@@ -323,7 +323,7 @@ AttributeError: Transformer ordinalencoder (type OrdinalEncoder) does not provid
 
 **It means that if you want to use the Ordinal Encoder, you will have to create a variable that contains the columns name in the right order. This step is not required in that exercise**
 
-Ressources:
+Resources:
 
 - https://towardsdatascience.com/guide-to-encoding-categorical-features-using-scikit-learn-for-machine-learning-5048997a5c79
 
