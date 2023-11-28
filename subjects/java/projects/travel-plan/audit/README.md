@@ -1,7 +1,7 @@
 
 #### Comprehension
 
-##### Describe the microservices architecture implemented.
+##### Ask the student to describe the microservices architecture implemented.
 
 ###### Did the architecture effectively split functionalities into different microservices based on key factors like scalability and domain separation?
 
@@ -11,13 +11,15 @@
 
 ##### Discuss the CI/CD pipeline setup.
 
-###### Was the CI/CD pipeline, integrating Jenkins and SonarQube, effectively used to improve the development process?
+###### is there unit tests for each functionality and are the test run for each PR.
+
+###### is SonarQube report free from any error or warning that can break the CI/CD Process.
 
 ##### Detail the security measures implemented.
 
 ###### Were comprehensive security measures like SSL/TLS, secret management, and principle of least privilege correctly implemented?
 
-##### Explain the database schema for PostgreSQL and Neo4j.
+##### Ask the student to explain the database schema for PostgreSQL and Neo4j.
 
 ###### Did the data structure in PostgreSQL and Neo4j effectively support the application's requirements?
 
@@ -31,7 +33,9 @@
 
 ##### Test each microservice API.
 
-###### Did all microservice APIs function correctly and handle errors effectively?
+###### Are all microservice APIs is role based and doesn't work with a admin role based user authenticated except the login api?
+
+###### Are all microservice APIs function correctly and handle errors effectively?
 
 ##### Verify Admin Dashboard functionality.
 
@@ -41,7 +45,7 @@
 
 ###### Was the authentication service robust and did the role-based access control function correctly?
 
-##### Simulate load on microservices.
+##### Ask the student to Simulate load on microservices.
 
 ###### Did the microservices demonstrate effective load balancing and failover under heavy traffic?
 
@@ -53,13 +57,13 @@
 
 ###### Did the CI/CD pipeline function correctly for build, test, and deployment processes, and were code quality standards maintained?
 
-##### Review project documentation.
-
-###### Does the project documentation accurately describe the system architecture, database schemas, and setup instructions?
-
 ##### Assess code review and best practices.
 
-###### Were coding standards, security best practices, and overall code quality maintained in recent pull requests?
+###### Is the code consistence and well structured, also do they follow naming convention in recent pull requests?
+
+###### Are all the used libraries supported and not deprecated and not having any depracted methods in use, in recent pull requests?
+
+###### Are the security vulnerabilities found by sonar cube resolved in the pull requests ?
 
 #### Bonus
 

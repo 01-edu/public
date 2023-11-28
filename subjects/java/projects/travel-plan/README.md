@@ -6,16 +6,38 @@ The primary goal of this project is to construct a robust and scalable environme
 
 ### Instructions
 
+This is the first part of the last project and for this part the students will be asked to build the working enviroment and impliment the admin part to ease the last part for the project.
+
 #### 1. Environment Configuration
 
-In the initial phase of the Travel Management System, students will configure a microservices architecture following industry best practices to ensure scalability and high availability. This includes implementing multiple replicas of each microservice to support load balancing and failover mechanisms, essential for achieving system resilience and service continuity. The task encompasses the installation and configuration of PostgreSQL and Neo4j databases—both containerized for scalability and replication ease. A Continuous Integration/Continuous Delivery (CI/CD) pipeline, employing Jenkins and SonarQube, will automate code quality checks and testing. Docker, in synergy with Ansible, will facilitate the automated provisioning and deployment of the microservices and allied components. Ansible playbooks must be crafted to deploy every system element, ensuring consistency and scalability. The successful configuration will yield an automated, scalable infrastructure, setting the stage for the Admin Dashboard development and further Travel Management System features.
+##### Configure a Microservices Architecture:
+-    Follow industry best practices for scalability and high availability.
+-    Implement multiple replicas of each microservice for load balancing and failover mechanisms.
+
+##### Database Installation and Configuration:
+-    Set up PostgreSQL and Neo4j databases.
+-    Ensure databases are containerized to facilitate scalability and replication.
+
+##### Continuous Integration/Continuous Delivery (CI/CD) Pipeline:
+-   Employ Jenkins for CI/CD and unit testing.
+-   Employ SonarQube for automating code quality checks
+
+##### Use of Docker and Ansible:
+-    Docker to support automated provisioning and deployment of microservices.
+-    Ansible for creating playbooks to deploy all system elements consistently and scalably.
+
+##### Outcome:
+-    Achieve an automated, scalable infrastructure.
+-    Prepare the groundwork for Admin Dashboard development and additional features of the Travel Management System.*
 
 #### 2. Development and Design
 
 - Craft an Admin Dashboard enabling administrators to oversee users, travels, and payment gateways.
+- the admin should be able to add, edit or delete any user, travel, payment method and all the related part correctly (cascading!!!) 
 - Ensure each travel entry includes a destination or trajectory, dates, duration, activities or itinerary, accommodation, and transportation details.
+- for the payment gatways you can search about it to know what you need to support the most you have to support at least strip and paypal.
 - Develop an authentication and authorization service to safeguard access and operations.
-- Design a responsive and intuitive UI for the Admin Dashboard, ensuring cross-device and browser compatibility.
+- Design a responsive and intuitive UI for the Admin Dashboard that shows well in diffirent screen sizes, ensuring browser compatibility at least for mozila and chrome.
 - Utilize any beneficial packages to enhance development efficiency, with the expectation to justify package selections during project reviews.
 
 #### 3. Best Practices & Ecosystem Familiarity
@@ -37,5 +59,6 @@ In the initial phase of the Travel Management System, students will configure a 
 
 - Compose clear and detailed documentation for the application and database schema.
 - Incorporate Kubernetes alongside Ansible to enhance service management, orchestration, and load balancing capabilities.
+- impliment integration tests and E2E tests one of them or both of them. 
 - any other bonus that add a real value to the project.
 
