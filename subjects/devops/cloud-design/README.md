@@ -155,9 +155,8 @@ Deploy the containerized microservices on AWS using an orchestration tool like
 AWS ECS or EKS. Ensure that the services are load-balanced (consider using AWS
 Elastic Load Balancer) and can communicate with each other securely.
 
-<!--TODO: add link to solution for orchestrator-->
-
-> Use [this solution]() to kick start you Kubernetes deployment.
+> Use [this solution](https://github.com/01-edu/orchestrator) to kick-start
+> your Kubernetes deployment.
 
 ### Monitoring and logging:
 
