@@ -323,6 +323,6 @@ This can be done in three steps: Get the max, create a boolean mask that indicat
 ###### Is the output the following?
 
 ```console
- [[2 9 6 0 8]
-  [1 3 5 7 4]]
+[[0 1 2 3 5]
+[8 7 9 4 6]]
 ```
