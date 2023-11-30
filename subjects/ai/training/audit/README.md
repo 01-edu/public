@@ -16,7 +16,7 @@
 
 #### Exercise 1: MSE Scikit-learn
 
-###### Is the Mean Squared Error (MSE) calculated using `sklearn.metrics` library?
+###### Is the Mean Squared Error (MSE) calculated using the `sklearn.metrics` library?
 
 ###### Is the Mean Squared Error (MSE) correctly computed for the given `y_true` and `y_pred` values, and does the calculated MSE match the expected value?
 
@@ -26,7 +26,7 @@
 
 #### Exercise 2: Accuracy Scikit-learn
 
-###### Is the accuracy computed using `sklearn.metrics` library?
+###### Is the accuracy computed using the `sklearn.metrics` library?
 
 ###### Is the accuracy correctly calculated for the given `y_true` and `y_pred` values, and does the calculated accuracy match the expected value?
 
