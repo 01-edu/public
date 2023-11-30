@@ -16,14 +16,9 @@
 
 #### Exercise 1: MSE Scikit-learn
 
-##### The goal of this exercise is to learn to use `sklearn.metrics` to compute the mean squared error (MSE).
+###### Is the Mean Squared Error (MSE) calculated using `sklearn.metrics` library?
 
-1. Compute the MSE using `sklearn.metrics` on `y_true` and `y_pred` below:
-
-```python
-y_true = [91, 51, 2.5, 2, -5]
-y_pred = [90, 48, 2, 2, -4]
-```
+###### Is the Mean Squared Error (MSE) correctly computed for the given `y_true` and `y_pred` values, and does the calculated MSE match the expected value?
 
 ---
 
@@ -31,14 +26,9 @@ y_pred = [90, 48, 2, 2, -4]
 
 #### Exercise 2: Accuracy Scikit-learn
 
-##### The goal of this exercise is to learn to use `sklearn.metrics` to compute the accuracy.
+###### Is the accuracy computed using `sklearn.metrics` library?
 
-1. Compute the accuracy using `sklearn.metrics` on `y_true` and `y_pred` below:
-
-```python
-y_pred = [0, 1, 0, 1, 0, 1, 0]
-y_true = [0, 0, 1, 1, 1, 1, 0]
-```
+###### Is the accuracy correctly calculated for the given `y_true` and `y_pred` values, and does the calculated accuracy match the expected value?
 
 ---
 
@@ -125,7 +115,7 @@ array([[37,  2],
 
 ![alt text][logo_ex4]
 
-[logo_ex4]: ../w2_day4_ex4_q3.png "ROC AUC "
+[logo_ex4]: ../w2_day4_ex4_q3.png 'ROC AUC '
 
 Having a 99% ROC AUC is not usual. The data set we used is easy to classify. On real data sets, always check if there's any leakage while having such a high ROC AUC score.
 
