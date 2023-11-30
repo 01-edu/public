@@ -1,6 +1,6 @@
 # Training
 
-Today we will learn how to train and evaluate a machine learning model. You'll learn how tochoose the right Machine Learning metric depending on the problem you are solving and to compute it. A metric gives an idea of how good the model performs. Depending on working on a classification problem or a regression problem the metrics considered are different. It is important to understand that all metrics are just metrics, not the truth.
+Today we will learn how to train and evaluate a machine learning model. You'll learn how to choose the right Machine Learning metric depending on the problem you are solving and to compute it. A metric gives an idea of how good the model performs. Depending on working on a classification problem or a regression problem the metrics considered are different. It is important to understand that all metrics are just metrics, not the truth.
 
 We will focus on the most important metrics:
 
@@ -60,13 +60,13 @@ _Version of Scikit Learn I used to do the exercises: 0.22_. I suggest to use the
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
-**Note:** For each quest, your first exercice will be to set up the virtual environment with the required libraries.
+**Note:** For each quest, your first exercise will be to set up the virtual environment with the required libraries.
 
 I recommend to use:
 
 - the **last stable versions** of Python.
-- the virtual environment you're the most confortable with. `virtualenv` and `conda` are the most used in Data Science.
-- one of the most recents versions of the libraries required
+- the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
+- one of the most recent versions of the libraries required
 
 1. Create a virtual environment named `ex00`, with a version of Python >= `3.8`, with the following libraries: `pandas`, `numpy`, `jupyter`, `matplotlib` and `scikit-learn`.
 
@@ -162,7 +162,7 @@ from sklearn.preprocessing import StandardScaler
 
 X , y = load_breast_cancer(return_X_y=True)
 X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.20)
+    X, y, test_size=0.20, random_state=43)
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 classifier = LogisticRegression()
@@ -179,7 +179,7 @@ classifier.fit(X_train_scaled, y_train)
 
 ![alt text][logo_ex4]
 
-[logo_ex4]: ./w2_day4_ex4_q3.png "ROC AUC "
+[logo_ex4]: ./w2_day4_ex4_q3.png 'ROC AUC '
 
 - https://scikit-learn.org/stable/modules/generated/sklearn.metrics.plot_roc_curve.html
 
