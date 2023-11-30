@@ -12,5 +12,4 @@ Below are the estimated time for each part of this project.
 #### WordPress Part: 1 day
 #### Backup Part: 2 days
 
-
 The bonus part time management is up to the student and is not included in this estimate.
