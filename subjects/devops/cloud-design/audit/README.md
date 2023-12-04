@@ -31,7 +31,7 @@ Suggested roleplay questions include:
 - What challenges did you face during the project and how did you address them?
 - How did you ensure your documentation's clarity and completeness, and what measures did you take to make it easily understandable and maintainable?
 
-###### Was the students able to answer all the questions correctly?
+###### Were the students able to answer all the questions correctly?
 
 ###### Did the students demonstrate a thorough understanding of the concepts and technologies used in the project?
 
@@ -44,14 +44,14 @@ Suggested roleplay questions include:
 Review the student's architecture design, ensuring that it meets the project requirements:
 
 1. `Scalability`: Does the architecture utilize AWS services to manage varying workloads and scale as required?
-2. `Availability`: Design the architecture to be fault-tolerant and maintain high availability, even during component failures.
+2. `Availability`: Is the architecture designed to be fault-tolerant and maintain high availability, even during component failures?
 3. `Security`: Does the architecture integrate AWS security best practices, such as data encryption, use of AWS VPC, and secure API endpoints with managed authentication?
 4. `Cost-effectiveness`: Is the architecture designed to be cost-effective on AWS without compromising performance, security, or scalability?
 5. `Simplicity`: Is the AWS architecture straightforward and free of unnecessary complexity while still fulfilling project requirements?
 
-###### Did the architecture design and choice of services align with the project requirements?
+###### Did the architecture design and choice of services align with all the project requirements above?
 
-###### Did the students have the ability to design a cost-effective architecture that meets the project requirements?
+###### Were the students able to design a cost-effective architecture that meets the project requirements?
 
 ##### Check the student documentation in the `README.md` file.
 
@@ -59,7 +59,7 @@ Review the student's architecture design, ensuring that it meets the project req
 
 ###### Is the documentation provided by the student clear and complete, including well-structured diagrams and thorough descriptions?
 
-##### Verify the deployment.
+##### Verify the deployment. Ask the auditee **to show you**, the auditor, the use of the commands `aws cli`, `docker ps`, and/or `kubectl` or any other necessary with the right options to answer the following questions.
 
 ###### Are all the microservices running as expected in the cloud environment, with no errors or connectivity issues?
 
@@ -67,13 +67,13 @@ Review the student's architecture design, ensuring that it meets the project req
 
 ###### Are the microservices communicating with each other securely, using proper authentication and encryption methods?
 
-##### Evaluate the infrastructure setup.
+##### Evaluate the infrastructure setup. Ask the auditee **to show you**, the auditor, the use of the commands `terraform plan` and/or `terraform apply` to answer the following questions.
 
-###### Are `Terraform` used effectively to provision and manage resources in the cloud environment?
+###### Is `Terraform` used effectively to provision and manage resources in the cloud environment?
 
 ###### Does the infrastructure setup follow the architecture design and the project requirements?
 
-##### Assess containerization and orchestration.
+##### Assess containerization and orchestration. Ask the auditee **to show you**, the auditor, the use of the commands `aws cli`, `docker ps`, and/or `kubectl` or any other necessary with the right options to answer the following questions.
 
 ###### Are the Dockerfiles optimized for efficient container builds?
 
@@ -81,7 +81,7 @@ Review the student's architecture design, ensuring that it meets the project req
 
 ##### Evaluate monitoring and logging.
 
-###### Do monitoring and logging dashboards provide useful insights into the application performance and health?
+###### Are monitoring and logging dashboards providing useful insights into the application performance and health?
 
 ##### Assess optimization efforts.
 
@@ -94,8 +94,6 @@ Review the student's architecture design, ensuring that it meets the project req
 ###### Has the student implemented security best practices, such as using HTTPS, securing API endpoints, and regularly scanning for vulnerabilities?
 
 #### Bonus
-
-###### +Did the student used his/her own `orchestrator` solution instead of the provided one?
 
 ###### +Did the student add any optional bonus?
 
