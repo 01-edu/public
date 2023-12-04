@@ -14,7 +14,7 @@ We will set up a movie streaming platform, where one API (`inventory`) will
 have information on the movies available and another one (`billing`) will
 process the payments.
 
-"We'll establish a movie streaming platform. One API (`inventory`) will provide details about available movies, while another (`billing`) will handle payment processing."
+We'll establish a movie streaming platform. One API (`inventory`) will provide details about available movies, while another (`billing`) will handle payment processing.
 
 The API gateway will communicate in HTTP with the `inventory` service and using
 RabbitMQ for `billing` service.
