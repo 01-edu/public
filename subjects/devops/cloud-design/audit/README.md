@@ -59,7 +59,7 @@ Review the student's architecture design, ensuring that it meets the project req
 
 ###### Is the documentation provided by the student clear and complete, including well-structured diagrams and thorough descriptions?
 
-##### Verify the deployment.
+##### Verify the deployment. Ask the auditee **to show you**, the auditor, the use of the commands `aws cli`, `docker ps`, and/or `kubectl` or any other necessary with the right options to answer the following questions.
 
 ###### Are all the microservices running as expected in the cloud environment, with no errors or connectivity issues?
 
@@ -67,13 +67,13 @@ Review the student's architecture design, ensuring that it meets the project req
 
 ###### Are the microservices communicating with each other securely, using proper authentication and encryption methods?
 
-##### Evaluate the infrastructure setup.
+##### Evaluate the infrastructure setup. Ask the auditee **to show you**, the auditor, the use of the commands `terraform plan` and/or `terraform apply` to answer the following questions.
 
 ###### Is `Terraform` used effectively to provision and manage resources in the cloud environment?
 
 ###### Does the infrastructure setup follow the architecture design and the project requirements?
 
-##### Assess containerization and orchestration.
+##### Assess containerization and orchestration. Ask the auditee **to show you**, the auditor, the use of the commands `aws cli`, `docker ps`, and/or `kubectl` or any other necessary with the right options to answer the following questions.
 
 ###### Are the Dockerfiles optimized for efficient container builds?
 

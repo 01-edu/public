@@ -54,7 +54,7 @@ During the roleplay, ask them the following questions:
 
 ###### Are all of the students capable of thinking critically about their solution and considering alternative approaches?
 
-##### Review the GitLab and Runners Deployment:
+##### Review the GitLab and Runners Deployment. Ask the auditee **to show you**, the auditor, the use of the commands `ansible-playbook --list-tasks`, and/or `systemctl status` or any other necessary with the right options to answer the following questions.
 
 ###### Was the GitLab instance deployed and configured successfully using Ansible?
 
@@ -62,7 +62,7 @@ During the roleplay, ask them the following questions:
 
 ##### Review the Infrastructure Pipeline:
 
-###### Does the student deploy the infrastructure of the `cloud-design` project and the source code of `crud-master` project for two environments (staging, prod) on a cloud platform (e.g., AWS, Azure, or Google Cloud) using `Terraform`?
+###### Did the student deploy the infrastructure of the `cloud-design` project and the source code of `crud-master` project for two environments (staging, prod) on a cloud platform (e.g., AWS, Azure, or Google Cloud) using `Terraform`?
 
 ###### Are the two environments similar in design, resources and services used?
 
@@ -87,7 +87,7 @@ During the roleplay, ask them the following questions:
 
 ###### Are the "Deploy to Staging", "Approval", and "Deploy to Production" stages implemented correctly in the CD pipeline for each repository?
 
-##### Review the functionality of pipelines:
+##### Review the functionality of pipelines. Ask the auditee **to show you**, the auditor, that the pipelines are functional by running one or several tests of their choosing.
 
 ###### Are the pipelines working properly and updating the application and infrastructure after each modification in each repository?
 
