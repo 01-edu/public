@@ -4,10 +4,7 @@
 
 APIs are a very common and convenient way to deploy services in a modular way.
 In this exercise we will create a simple microservices infrastructure, having
-an API Gateway connected to two other services. Those two services will in turn
-get data from two distinct databases. The communication between services will
-be done by using HTTP and message queuing systems. All those services will be
-in turn encapsulated in different virtual machines.
+an API Gateway connected to two services. While one service, the inventory API, retrieves data from a PostgreSQL database, the other service, the billing API, exclusively processes messages received through RabbitMQ without direct database interactions. Communication between these services will occur via HTTP and message queuing systems. Each of these services will operate within distinct virtual machines, facilitating a segregated environment for their functionalities.
 
 #### General overview
 
@@ -16,6 +13,8 @@ in turn encapsulated in different virtual machines.
 We will set up a movie streaming platform, where one API (`inventory`) will
 have information on the movies available and another one (`billing`) will
 process the payments.
+
+"We'll establish a movie streaming platform. One API (`inventory`) will provide details about available movies, while another (`billing`) will handle payment processing."
 
 The API gateway will communicate in HTTP with the `inventory` service and using
 RabbitMQ for `billing` service.
@@ -81,7 +80,7 @@ different machines easily.
 
 #### API 2: Billing
 
-##### Definition of the Inventory API
+##### Definition of the billing API
 
 This API will only receive messages through RabbitMQ, specifically it will
 consume messages on the queue `billing_queue`. The message it receives are
@@ -95,7 +94,7 @@ going to be a "stringified" JSON object as in this example:
 }
 ```
 
-It will parse the message and create a new entry in the `orders_db` database.
+It will parse the message and create a new entry in the `billing_db` database.
 It will also acknowledge the RabbitMQ queue that the message has been
 processed. When the API is started it will take and process all messages
 present in the queue.
@@ -106,7 +105,7 @@ present in the queue.
 ##### Defining the Database
 
 For the database we will use PostgreSQL here as well.
-The database will be called `orders_db`.
+The database will be called `billing_db`.
 
 The `orders` table will contain the following columns:
 
@@ -119,13 +118,13 @@ The `orders` table will contain the following columns:
 
 To test this API here are some steps:
 
-- Send POST orders to the API Gateway (you can use Postman for that).
+- Publish a message directly to the `billing_queue` in RabbitMQ using its UI or CLI.
 - When the Billing API is running the orders should appear instantaneously in
-  the `orders` database.
+  the `orders` table in the `billing_db` database.
 - When the Billing API is not running the queries to the API Gateway should
-  still return success but the `orders` database won't be updated.
+  still return success but the `orders` table in the `billing_db` database won't be updated.
 - When the Billing API is started again the unfulfilled messages should be
-  processed and the `orders` database should be updated.
+  processed and the `orders` table in the `billing_db` database should be updated.
 
 #### The API Gateway
 
@@ -160,6 +159,8 @@ An example of POST request to
   "total_amount": "180"
 }
 ```
+
+Upon successful processing, you can expect a response message such as "Message posted" or a similar acknowledgment.
 
 > Remember to set up `Content-Type: application/json` for the body of the
 > request.
@@ -205,25 +206,22 @@ Your VMs will be structured as follows:
 
 ##### Environment variables
 
-To simplify the building process it is a common practice to store useful
-variables in a `.env` file. It will make very easy to modify/update information
-like URLs, passwords, users and so on.
+To simplify the building process, it's recommended to define essential variables in a `.env` file. This approach facilitates the modification or update of critical information such as URLs, passwords, usernames and so on.
 
-Those variables will then be used by Vagrant and passed through the different
-microservices in order to centralize all the credentials.
+For this exercise, consider listing all required environment variables in the README.md file. Once you have these variables identified, create a `.env` file with the necessary credentials.
+
+These variables will be utilized by Vagrant and distributed across the various microservices to centralize the credentials.
 
 Your `.env` file should contain all the necessary credentials and none of the
 microservices should have any credential hard coded in the source code.
 
-> For the purpose of this exercise the `.env` file must be included in your
-> repository, though usually in public and production projects the `.env` file
-> is never included in repos to avoid sensitive data leaks.
+> For the purpose of this exercise, the `.env` file must be included in your repository, in real-world scenarios, it's crucial to avoid including sensitive data in repositories to prevent potential leaks.
 
 ##### Configuration of the VMs
 
 - You will have a `Vagrantfile` which will create and start the three VMs. It
   will import the environment variables and pass them through each API.
-- You will have a `script/` directory which will store all the scripts you may
+- You will have a `scripts/` directory which will store all the scripts you may
   want to run in order to install the necessary tools on each VM. Those scripts
   may also be very useful for setting up the databases.
 
