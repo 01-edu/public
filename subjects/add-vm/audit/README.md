@@ -12,6 +12,6 @@
 
 ###### Was the auditee able to make a "snapshot" of the VM?
 
-##### Ask the auditee to start and stop the VM. (reminder the password is a single space)
+##### Ask the auditee to start and stop the VM. (reminding that the user is root and the password is a single space)
 
 ###### Was the auditee able to start and stop the VM?
