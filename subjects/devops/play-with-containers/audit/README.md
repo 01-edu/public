@@ -6,19 +6,19 @@ A `README.md` file and all files used to create, delete and manage the student i
 
 ###### Are all the required files present?
 
-###### Does the `.env` file not exist in the repo?
+###### Was the `.env` file excluded from the git files?
 
 ###### Are all pushed files in the repo clean of any credentials or passwords?
 
 ##### Ask the following questions to the group or student:
 
-##### What are containers and what are their advantages?
+- What are containers and what are their advantages?
 
-##### What is the difference between containers and virtual machines?
+- What is the difference between containers and virtual machines?
 
-##### What is Docker and what is it used for?
+- What is Docker and what is it used for?
 
-###### Did the student reply correctly to the questions?
+###### Did the student reply correctly to all the above questions?
 
 ##### Open and read the `README.md` file provided by the student.
 
@@ -50,15 +50,15 @@ user:~$
 
 ##### Ask the following questions to the group or student
 
-##### What is a microservices architecture?
+- What is a microservices' architecture?
 
-##### Why do we use microservices architecture?
+- Why do we use microservices architecture?
 
-##### What is a queue and what is it used for?
+- What is a queue and what is it used for?
 
-##### What is RabbitMQ?
+- What is RabbitMQ?
 
-###### Did the student reply correctly to the questions?
+###### Did the student reply correctly to all the above questions?
 
 #### Verify the Dockerfiles:
 
@@ -66,15 +66,15 @@ user:~$
 
 ###### Are all Dockerfiles based on `Debian` or `Alpine`?
 
-###### There is no sensitive data in Dockerfiles or other solution files (sensitive data should only exist in `.env` file)?
+###### Are Dockerfiles or any other solution files free from sensitive data (sensitive data should only exist in `.env` file)?
 
 ##### Ask the following questions to the group or student
 
-##### What is a Dockerfile?
+- What is a Dockerfile?
 
-##### Explain the instructions used on the Dockerfile.
+- Explain the instructions used on the Dockerfile.
 
-###### Did the student reply correctly to the questions?
+###### Did the student reply correctly to all the above questions?
 
 #### Check the Containers:
 
@@ -90,11 +90,11 @@ CONTAINER ID   IMAGE            COMMAND CREATED STATUS         PORTS            
 user:~$
 ```
 
-- `inventory-database container` is a SQL database server that contains your inventory database, it must be accessible via port `5432`.
-- `billing-database container` is a SQL database server that contains your billing database, it must be accessible via port `5432`.
+- `inventory-db container` is a SQL database server that contains your inventory database, it must be accessible via port `5432`.
+- `billing-db container` is a SQL database server that contains your billing database, it must be accessible via port `5432`.
 - `inventory-app container` is a Node.js server that contains your inventory-app. It will be connected to the inventory database and accessible via port `8080`.
 - `billing-app container` is a Node.js server that contains your billing-app. It will be connected to the billing database and consuming the messages from the RabbitMQ queue. It will be accessible via port `8080`.
-- `RabbitMQ container` is a RabbitMQ server that contains the queue.
+- `rabbit-queue` is a RabbitMQ server that contains the queue.
 - `api-gateway-app container` is a Node.js server that contains your api-gateway-app. It will forward the requests to the other services and it's accessible via port `3000`.
 
 ##### Check the Container restart policy:
@@ -122,17 +122,17 @@ user:~$
 
 - `inventory-database volume` contains the inventory database.
 - `billing-database volume` contains the billing database.
-- `api-gateway-app volume` contains the Api gateway logs.
+- `api-gateway-app volume` contains the API gateway logs.
 
 ###### Do all volumes have the correct configuration?
 
 ##### Ask the following questions to the group or student
 
-##### What is a Docker volume?
+- What is a Docker volume?
 
-##### Why do we use Docker volumes?
+- Why do we use Docker volumes?
 
-###### Did the student reply correctly to the questions?
+###### Did the student reply correctly to all the above questions?
 
 #### Check the solution network:
 
@@ -140,11 +140,11 @@ user:~$
 
 ##### Ask the following questions to the group or student
 
-##### What is the Docker network?
+- What is the Docker network?
 
-##### Why do we use the Docker network?
+- Why do we use the Docker network?
 
-###### Did the student reply correctly to the questions?
+###### Did the student reply correctly to all the above questions?
 
 #### Check the Docker images:
 
@@ -164,21 +164,20 @@ user:~$
 
 ##### Ask the following questions to the group or student
 
-##### What is a Docker image?
+- What is a Docker image?
 
-##### Why do we use Docker images?
+- Why do we use Docker images?
 
-##### Where can we find some public Docker images?
-
-###### Did the student reply correctly to the questions?
+###### Did the student reply correctly to all the above questions?
 
 #### Inventory API Endpoints
 
 ##### Open Postman and make a `POST` request to `http://[GATEWAY_IP]:[GATEWAY_PORT]/api/movies/` address with the following body as `Content-Type: application/json`:
+
 ```json
 {
-    "title": "A new movie",
-    "description": "Very short description"
+  "title": "A new movie",
+  "description": "Very short description"
 }
 ```
 
@@ -191,11 +190,12 @@ user:~$
 #### Billing API Endpoints
 
 ##### Open Postman and make a `POST` request to `http://[GATEWAY_IP]:[GATEWAY_PORT]/api/billing/` address with the following body as `Content-Type: application/json`:
+
 ```json
 {
-    "user_id": "20",
-    "number_of_items": "99",
-    "total_amount": "250"
+  "user_id": "20",
+  "number_of_items": "99",
+  "total_amount": "250"
 }
 ```
 
@@ -206,17 +206,20 @@ user:~$
 ###### Can you confirm the `billing-app` container was correctly stopped?
 
 ##### Open Postman and make a `POST` request to `http://[GATEWAY_IP]:[GATEWAY_PORT]/api/billing/` address with the following body as `Content-Type: application/json`:
+
 ```json
 {
-    "user_id": "22",
-    "number_of_items": "10",
-    "total_amount": "50"
+  "user_id": "22",
+  "number_of_items": "10",
+  "total_amount": "50"
 }
 ```
 
 ###### Can you confirm the response was success code `200` even if the `billing_app` is not working?
 
 #### Bonus
+
+###### +Did the student use his/her own `crud-master` solution?
 
 ###### +Did the student add any optional bonus?
 

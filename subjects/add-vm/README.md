@@ -4,7 +4,7 @@
 
 We provide virtual machines for both, X86-64 chips and Apple Silicon chips bases systems, you need to download & add to your virtualization software.
 
-For X86-64 chips, you have to use [VirtualBox](https://www.virtualbox.org/wiki/Downloads). 
+For X86-64 chips, you have to use [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
 
 For Apple Silicon chips, you have to use [UTM](https://mac.getutm.app/).
 
@@ -14,9 +14,7 @@ You can download these VM here :
 
 https://assets.01-edu.org/sys
 
-
 ### VirtualBox instructions:
-
 
 For this exercise you need to download the archive : [01_add-vm.tar.gz](https://assets.01-edu.org/sys/01_add-vm.tar.gz).
 
@@ -68,4 +66,4 @@ If you forgot to do so and want to make a fresh start, you can always delete the
 
 Since all VMs are based on this one, check that it is working properly by starting and stopping it gracefully.
 
-The password is a single space.
+The username is `root` and the password is a single space.

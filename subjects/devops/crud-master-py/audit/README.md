@@ -6,7 +6,7 @@
 
 ##### Take a look at the `README.md` file provided by the student.
 
-###### Does the file includes enough context and details to understand and run the project?
+###### Does the file include enough context and details to understand and run the project?
 
 #### VM Configuration
 
@@ -16,7 +16,7 @@
 
 ##### Locate the `.env` file in the root of the project, run `cat .env`:
 
-###### Does the output contains all the necessary credentials for the microservices to run properly?
+###### Does the output contain all the necessary credentials for the microservices to run properly?
 
 ###### Is the source code free from any credential that could have been added to the `.env` file?
 
@@ -33,7 +33,7 @@
 }
 ```
 
-###### Can you confirm the response was the success code `200`?
+###### Can you confirm the response was the success code `201`?
 
 ##### In Postman make a `GET` request to `http://[GATEWAY_IP]:[GATEWAY_PORT]/api/movies/` address.
 
@@ -67,7 +67,7 @@
 
 ###### Can you confirm the response was success code `200`?
 
-##### Run `vagrant ssh billing-vm` to enter in the proper VM. Run `sudo pm2 stop billing_app` and then `sudo pm2 list`.
+##### Run `vagrant ssh billing-vm` to interact with the proper VM. Run `sudo pm2 stop billing_app` and then `sudo pm2 list`.
 
 ###### Can you confirm the `billing_app` API was correctly stopped?
 

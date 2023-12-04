@@ -74,11 +74,10 @@ The message it receives should be a stringified JSON object as in this example:
 
 ```json
 {
-    "user_id": "3",
-    "number_of_items": "5",
-    "total_amount": "180"
+  "user_id": "3",
+  "number_of_items": "5",
+  "total_amount": "180"
 }
-
 ```
 
 It will parse the message and create a new entry in the `orders` database.
@@ -130,9 +129,9 @@ An example of POST request to `http://[API_GATEWAY_URL]:[API_GATEWAY_PORT]/api/b
 
 ```json
 {
-    "user_id": "3",
-    "number_of_items": "5",
-    "total_amount": "180"
+  "user_id": "3",
+  "number_of_items": "5",
+  "total_amount": "180"
 }
 ```
 
@@ -192,7 +191,7 @@ PM2 can be used to start, stop, and list Node.js applications, as well as monito
 
 Additionally, PM2 provides a number of features for managing multiple applications, such as load balancing and automatic restarts.
 
-In our situation we will use it mainly to test resilience for messages sent to the Billing API when the API is not up and running. 
+In our situation we will use it mainly to test resilience for messages sent to the Billing API when the API is not up and running.
 
 After entering in your VM via SSH you may run the following commands:
 
