@@ -2,9 +2,9 @@
 
 Last week you learnt about some Machine Learning algorithms as Random Forest or Gradient Boosting. Neural Networks are another type of Machine Learning algorithms that are intensively used because of their efficiency. Neural networks are a set of algorithms, modeled loosely after the human brain, that are designed to recognize patterns. They interpret sensory data through a kind of machine perception, labeling or clustering raw input. The patterns they recognize are numerical, contained in vectors, into which all real-world data, be it images, sound, text or time series, must be translated. Different types of neural networks exist and are specific to some use-cases. For example CNN for images, RNN or LSTMs for time-series or text, etc ...
 
-Today we will focus on Artificial Neural Networks. The goal is to understand how do the neural networks work, train them on data and understand the challenges of training a neural network. The ressources below expalin very well the mecanisms behind neural networks, step by step.
+Today we will focus on Artificial Neural Networks. The goal is to understand how do the neural networks work, train them on data and understand the challenges of training a neural network. The resources below explain very well the mechanisms behind neural networks, step by step.
 
-However the exercices won't cover architectures as RNN, LSTM - used on sequences as time series or text, CNN - used a lot on images processing. One of the projects will require to know how to use the special architectures. To do so, I suggest that you go through this lesson: https://fr.coursera.org/specializations/deep-learning.
+However the exercises won't cover architectures as RNN, LSTM - used on sequences as time series or text, CNN - used a lot on images processing. One of the projects will require to know how to use the special architectures. To do so, I suggest that you go through this lesson: https://fr.coursera.org/specializations/deep-learning.
 
 ### Exercises of the day
 
@@ -20,6 +20,7 @@ However the exercices won't cover architectures as RNN, LSTM - used on sequences
 - Python 3.x
 - NumPy
 - Jupyter or JupyterLab
+- scikit-learn
 
 _Version of NumPy I used to do the exercises: 1.18.1_.
 I suggest to use the most recent one.
@@ -40,13 +41,13 @@ I suggest to use the most recent one.
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
-**Note:** For each quest, your first exercice will be to set up the virtual environment with the required libraries.
+**Note:** For each quest, your first exercise will be to set up the virtual environment with the required libraries.
 
 I recommend to use:
 
 - the **last stable versions** of Python.
-- the virtual environment you're the most confortable with. `virtualenv` and `conda` are the most used in Data Science.
-- one of the most recents versions of the libraries required
+- the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
+- one of the most recent versions of the libraries required
 
 1. Create a virtual environment with a version of Python >= `3.8`, with the following libraries: `numpy` and `jupyter`.
 
@@ -60,7 +61,7 @@ The goal of this exercise is to understand the role of a neuron and to implement
 
 An artificial neuron, the basic unit of the neural network, (also referred to as a perceptron) is a mathematical function. It takes one or more inputs that are multiplied by values called “weights” and added together. This value is then passed to a non-linear function, known as an activation function, to become the neuron’s output.
 
-As desbribed in the article, **a neuron takes inputs, does some math with them, and produces one output**.
+As described in the article, **a neuron takes inputs, does some math with them, and produces one output**.
 
 Let us assume there are 2 inputs. Here are the three steps involved in the neuron:
 
@@ -82,7 +83,7 @@ x1 = 2 , x2 = 3 , w1 = 0, w2= 1, b = 4
 1. Step 1: Multiply by a weight
    - x1 -> 2 \* 0 = 0
    - x2 -> 3 \* 1 = 3
-2. Step 2: Add weigthed inputs and bias
+2. Step 2: Add weighted inputs and bias
    - 0 + 3 + 4 = 7
 3. Step 3: Activation function
    - y = f(7) = 0.999
@@ -105,7 +106,7 @@ x1 = 2 , x2 = 3 , w1 = 0, w2= 1, b = 4
 
    ```
 
-Note: if you are confortable with matrix multiplication, feel free to vectorize the operations as done in the article.
+Note: if you are comfortable with matrix multiplication, feel free to vectorize the operations as done in the article.
 
 https://victorzhou.com/blog/intro-to-neural-networks/
 
@@ -113,9 +114,9 @@ https://victorzhou.com/blog/intro-to-neural-networks/
 
 ---
 
-# Exerice 2: Neural network
+# Exercise 2: Neural network
 
-The goal of this exercise is to understand how to combine three neurons to form a neural network. A neural newtwork is nothing else than neurons connected together. As shown in the figure the neural network is composed of **layers**:
+The goal of this exercise is to understand how to combine three neurons to form a neural network. A neural network is nothing else than neurons connected together. As shown in the figure the neural network is composed of **layers**:
 
 - Input layer: it only represents input data. **It doesn't contain neurons**.
 - Output layer: it represents the last layer. It contains a neuron (in some cases more than 1).
@@ -126,7 +127,7 @@ Notice that the neuron **o1** in the output layer takes as input the output of t
 In exercise 1, you implemented this neuron.
 ![alt text][neuron]
 
-[neuron]: ./w3_day1_neuron.png "Plot"
+[neuron]: ./w3_day1_neuron.png 'Plot'
 
 Now, we add two more neurons:
 
@@ -135,7 +136,7 @@ Now, we add two more neurons:
 
 ![alt text][nn]
 
-[nn]: ./w3_day1_neural_network.png "Plot"
+[nn]: ./w3_day1_neural_network.png 'Plot'
 
 1. Implement the function `feedforward` of the class `OurNeuralNetwork` that takes as input the input data and returns the output y. Return the output for these neurons:
 
@@ -166,9 +167,15 @@ Now, we add two more neurons:
 
 # Exercise 3: Log loss
 
-The goal of this exercise is to implement the Log loss function. As mentioned last week, this function is used in classification as a **loss function**. It means that the better the classifier is, the smaller the loss function is. W2D1, you implemented the gradient descent on the MSE loss to update the weights of the linear regression. Similarly, the minimization of the Log loss leads to finding optimal weights.
+The objective of this exercise is to implement the Log Loss function, which serves as a **loss function** in classification problems. This function quantifies the difference between predicted and actual categorical outcomes, producing lower values for accurate predictions.
 
-Log loss: - 1/n * Sum[(y_true*log(y_pred) + (1-y_true)\*log(1-y_pred))]
+Log Loss is a function used in neural networks to help find the best weights for accurate predictions, similar to how we use Mean Squared Error (MSE) to improve predictions in linear regression. While MSE works well for regression (predicting numbers), Log Loss is specifically designed for classification tasks (predicting categories).
+
+Log Loss is computed using the formula:
+
+`Log loss: - 1/n * Sum[(y_true*log(y_pred) + (1-y_true)\*log(1-y_pred))]`
+
+This equation calculates Log Loss across all predictions in a dataset, penalizing the model more for larger discrepancies between predicted and actual class probabilities.
 
 1.  Create a function `log_loss_custom` and compute the loss for the data below:
 
@@ -186,7 +193,7 @@ Log loss: - 1/n * Sum[(y_true*log(y_pred) + (1-y_true)\*log(1-y_pred))]
 
 # Exercise 4: Forward propagation
 
-The goal of this exerice is to compute the log loss on the output of the forward propagation. The data used is the tiny data set below.
+The goal of this exercise is to compute the log loss on the output of the forward propagation. The data used is the tiny data set below.
 
 | name | math | chemistry | exam_success |
 | :--- | ---: | --------: | -----------: |
@@ -195,7 +202,7 @@ The goal of this exerice is to compute the log loss on the output of the forward
 | Tom  |   18 |        18 |            1 |
 | Ryan |   13 |        14 |            1 |
 
-The goal if the network is to predict the success at the exam given math and chemistry grades. The inputs are `math` and `chemistry` and the target is `exam_sucess`.
+The goal if the network is to predict the success at the exam given math and chemistry grades. The inputs are `math` and `chemistry` and the target is `exam_success`.
 
 1. Compute and return the output of the neural network for each of the students. Here are the weights and biases of the neural network:
 
