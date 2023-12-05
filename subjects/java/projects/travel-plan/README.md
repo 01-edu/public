@@ -28,17 +28,19 @@ This is the first part of the last project and for this part the students will b
 
 ##### Outcome:
 -    Achieve an automated, scalable infrastructure.
--    Prepare the groundwork for Admin Dashboard development and additional features of the Travel Management System.*
+-    Prepare the groundwork for Admin Dashboard development and additional features of the Travel Management System.
 
 #### 2. Development and Design
 
 - Craft an Admin Dashboard enabling administrators to oversee users, travels, and payment gateways.
-- the admin should be able to add, edit or delete any user, travel, payment method and all the related part correctly (cascading!!!) 
-- Ensure each travel entry includes a destination or trajectory, dates, duration, activities or itinerary, accommodation, and transportation details.
-- for the payment gatways you can search about it to know what you need to support the most you have to support at least strip and paypal.
-- Develop an authentication and authorization service to safeguard access and operations.
-- Design a responsive and intuitive UI for the Admin Dashboard that shows well in diffirent screen sizes, ensuring browser compatibility at least for mozila and chrome.
+- the admin should be able to add, edit or delete any user, travel, payment method and all the related part correctly (database cascading!!!) 
+- Ensure each travel entry includes a destination or multiple destinations, dates, duration, activities, accommodation, and transportation details.
+- for the payment methods you can search about it to know what you need to support the most you have to support at least strip and paypal.
+- Develop an authentication and authorization service to safeguard access and operations to the Admin Dashboard.
+- Design a responsive and intuitive UI for the Admin Dashboard that shows well in diffirent screen sizes, ensuring browser compatibility at least for Mozilla and Chrome.
 - Utilize any beneficial packages to enhance development efficiency, with the expectation to justify package selections during project reviews.
+- every feature should have it's unit tests to ensure the the new modifications doesn't break the code. 
+
 
 #### 3. Best Practices & Ecosystem Familiarity
 

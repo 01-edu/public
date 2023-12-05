@@ -11,9 +11,9 @@
 
 ##### Discuss the CI/CD pipeline setup.
 
-###### is there unit tests for each functionality and are the test run for each PR.
+###### is there unit tests for each functionality and are the test run for each PR?
 
-###### is SonarQube report free from any error or warning that can break the CI/CD Process.
+###### is SonarQube report free from any error or warning that can break the CI/CD Process?
 
 ##### Detail the security measures implemented.
 
