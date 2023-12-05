@@ -22,6 +22,8 @@ The audit will provide the code and output because it is not straightforward to 
 - Pandas
 - Jupyter or JupyterLab
 - Keras
+- TensorFlow
+- Scikit-learn
 
 _Version of Keras I used to do the exercises: 2.4.3_.
 I suggest to use the most recent one.
