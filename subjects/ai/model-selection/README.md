@@ -16,6 +16,7 @@ We will answer these questions today ! The topics we will cover are the one of t
 - Exercise 4: Validation curve and Learning curve
 
 ### Virtual Environment
+
 - Python 3.x
 - NumPy
 - Pandas
@@ -23,7 +24,7 @@ We will answer these questions today ! The topics we will cover are the one of t
 - Scikit-learn
 - Matplotlib
 
-*Version of Pandas I used to do the exercises: 1.0.1*.
+_Version of Pandas I used to do the exercises: 1.0.1_.
 I suggest to use the most recent one.
 
 ### **Resources**
@@ -31,31 +32,35 @@ I suggest to use the most recent one.
 **Must read before to start the exercises**
 
 ### Biais-Variance trade off, aka Underfitting/Overfitting:
-  - https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/
 
-  - https://jakevdp.github.io/PythonDataScienceHandbook/05.03-hyperparameters-and-model-validation.html
+- https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/
+
+- https://jakevdp.github.io/PythonDataScienceHandbook/05.03-hyperparameters-and-model-validation.html
 
 ### Cross-validation
-  - https://algotrading101.com/learn/train-test-split/
+
+- https://algotrading101.com/learn/train-test-split/
 
 ---
+
 ---
 
 # Exercise 0: Environment and libraries
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
-**Note:** For each quest, your first exercice will be to set up the virtual environment with the required libraries.
+**Note:** For each quest, your first exercise will be to set up the virtual environment with the required libraries.
 
 I recommend to use:
 
 - the **last stable versions** of Python.
-- the virtual environment you're the most confortable with. `virtualenv` and `conda` are the most used in Data Science.
-- one of the most recents versions of the libraries required
+- the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
+- one of the most recent versions of the libraries required
 
 1. Create a virtual environment named `ex00`, with a version of Python >= `3.8`, with the following libraries: `pandas`, `numpy`, `jupyter`, `matplotlib` and `scikit-learn`.
 
 ---
+
 ---
 
 # Exercise 1: K-Fold
@@ -69,24 +74,25 @@ y = np.array(np.arange(1,11))
 
 1. Using `KFold`, perform a 5-fold cross validation. For each fold, print the train index and test index. The expected output is:
 
-    ```console
-    Fold:  1
-    TRAIN: [2 3 4 5 6 7 8 9] TEST: [0 1]
+   ```console
+   Fold:  1
+   TRAIN: [2 3 4 5 6 7 8 9] TEST: [0 1]
 
-    Fold:  2
-    TRAIN: [0 1 4 5 6 7 8 9] TEST: [2 3]
+   Fold:  2
+   TRAIN: [0 1 4 5 6 7 8 9] TEST: [2 3]
 
-    Fold:  3
-    TRAIN: [0 1 2 3 6 7 8 9] TEST: [4 5]
+   Fold:  3
+   TRAIN: [0 1 2 3 6 7 8 9] TEST: [4 5]
 
-    Fold:  4
-    TRAIN: [0 1 2 3 4 5 8 9] TEST: [6 7]
+   Fold:  4
+   TRAIN: [0 1 2 3 4 5 8 9] TEST: [6 7]
 
-    Fold:  5
-    TRAIN: [0 1 2 3 4 5 6 7] TEST: [8 9]
-    ```
+   Fold:  5
+   TRAIN: [0 1 2 3 4 5 6 7] TEST: [8 9]
+   ```
 
 ---
+
 ---
 
 # Exercise 2: Cross validation (k-fold)
@@ -95,7 +101,7 @@ The goal of this exercise is to learn how to use cross validation. After reading
 
 Preliminary:
 
-- Import California Housing data set and split it in a train set and a test set (10%). Fit a linear regression on the data set. *The goal is to focus on the cross validation, that is why the code to fit the Linear Regression is given.*
+- Import California Housing data set and split it in a train set and a test set (10%). Fit a linear regression on the data set. _The goal is to focus on the cross validation, that is why the code to fit the Linear Regression is given._
 
 ```python
 # imports
@@ -135,7 +141,7 @@ Mean of scores on validation sets:
 Standard deviation of scores on validation sets:
  0.0214983822773466
 
- ```
+```
 
 **Note: It may be confusing that the key of the dictionary that returns the results on the validation sets is `test_score`. Sometimes, the validation sets are called test sets. In that case, we run the cross validation on X_train. It means that the scores are computed on sets in the initial train set. The X_test is not used for the cross-validation.**
 
@@ -144,24 +150,21 @@ Standard deviation of scores on validation sets:
 - https://machinelearningmastery.com/how-to-configure-k-fold-cross-validation/
 
 ---
+
 ---
 
 # Exercise 3: GridsearchCV
 
-The goal of this exercise is to learn to use GridSearchCV to run a grid search, predict on the test set and score on the test set.
+The goal here is to utilize GridSearchCV for running a grid search, making predictions, and scoring on a test set.
 
 Preliminary:
 
-- Import California Housing data set and split it in a train set and a test set (10%). Fit a linear regression on the data set. *The goal is to focus on the gridsearch, that is why the code to fit the Linear Regression is given.*
+- Import California Housing dataset, split it into a train and a test set (10%), and fit a linear regression on the dataset.
 
 ```python
 # imports
 from sklearn.datasets import fetch_california_housing
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-from sklearn.preprocessing import StandardScaler
-from sklearn.impute import SimpleImputer
-from sklearn.pipeline import Pipeline
 
 # data
 housing = fetch_california_housing()
@@ -172,36 +175,38 @@ X_train, X_test, y_train, y_test = train_test_split(X,
                                                     test_size=0.1,
                                                     shuffle=True,
                                                     random_state=43)
-# pipeline
-pipeline = [('imputer', SimpleImputer(strategy='median')),
-            ('scaler', StandardScaler()),
-            ('lr', LinearRegression())]
-pipe = Pipeline(pipeline)
 ```
 
-1. Run `GridSearchCV` on all CPUs with 5 folds, MSE as score, Random Forest as model with:
+1. Run `GridSearchCV` with the following settings:
 
-- max_depth between 1 and 20 (at least 3 values)
-- n_estimators between 1 and 100 (at least 3 values)
+   - Using all CPUs, perform 5-fold cross-validation.
+   - Scoring metric: MSE (Mean Squared Error)
+   - Model: Random Forest
 
-This may take few minutes to run.
+   Hyperparameters to search:
 
-*Hint*: The name of the metric to put in the parameter `scoring` is `neg_mean_squared_error`. The smaller the MSE is, the better the model is. At the contrary, The greater the R2 is the better the model is. `GridSearchCV` chooses the best model by selecting the one that maximized the score on the validation sets. And, in mathematic, maximizing a function or minimizing its opposite is equivalent. More details:
+   - `max_depth`: range between 1 and 20 (minimum 3 values)
+   - `n_estimators`: range between 1 and 100 (minimum 3 values)
+
+   This computation might take a few minutes to run.
+
+_Hint_: The name of the metric to put in the parameter `scoring` is `neg_mean_squared_error`. The smaller the MSE is, the better the model is. At the contrary, The greater the R2 is the better the model is. `GridSearchCV` chooses the best model by selecting the one that maximized the score on the validation sets. And, in mathematic, maximizing a function or minimizing its opposite is equivalent. More details:
 
 - https://stackoverflow.com/questions/21443865/scikit-learn-cross-validation-negative-values-with-mean-squared-error
 
-2. Extract the best fitted estimator, print its params, print its score on the validation set and print `cv_results_`.
+2. Extract the best fitted estimator, print its parameters, its score on the validation set, and display `cv_results_`.
 
-3. Compute the score the test set.
+3. Compute the score on the test set.
 
-**WARNING: If the score used in classification is the AUC, there is one rare case where the AUC may return an error or a warning: The fold contains only one class. In that case it can't be computed, by definition.**
+**WARNING: For classification tasks using AUC score, an error or warning might occur if a fold contains only one class, rendering the AUC unable to be computed due to its definition.**
 
 ---
+
 ---
 
 # Exercise 4: Validation curve and Learning curve
 
-The goal of this exercise is to learn to analyse the model's performance with two tools:
+The goal of this exercise is to learn to analyze the model's performance with two tools:
 
 - Validation curve
 - Learning curve
@@ -220,7 +225,7 @@ X, y = make_classification(n_samples=100000,
 ```
 
 1. Plot the validation curve, using all CPUs, with 5 folds. The goal is to focus again on max_depth between 1 and 20.
-You may need to increase the window (example: between 1 and 50 ) if you notice that other values of max_depth could have returned better results. This may take few minutes.
+   You may need to increase the window (example: between 1 and 50 ) if you notice that other values of max_depth could have returned better results. This may take few minutes.
 
 I do not expect that you implement all the plot from scratch, you'd better leverage the code here:
 
@@ -230,7 +235,7 @@ The plot should look like this:
 
 ![alt text][logo_ex5q1]
 
-[logo_ex5q1]: ./w2_day5_ex5_q1.png "Validation curve "
+[logo_ex5q1]: ./w2_day5_ex5_q1.png 'Validation curve '
 
 The interpretation is that from max_depth=10, the train score keeps increasing but the test score (or validation score) reaches a plateau. It means that choosing max_depth = 20 may lead to have an over fitted model.
 
@@ -240,7 +245,7 @@ More details:
 
 - https://chrisalbon.com/machine_learning/model_evaluation/plot_the_validation_curve/
 
-2. Let us assume the gridsearch returned `clf = RandomForestClassifier(max_depth=12)`. Let's check if the models under fits, over fit or fits correctly. Plot the learning curve. These two resources will help you a lot to understand how to analyse the learning curves and how to plot them:
+2. Let us assume the gridsearch returned `clf = RandomForestClassifier(max_depth=12)`. Let's check if the models under fits, over fit or fits correctly. Plot the learning curve. These two resources will help you a lot to understand how to analyze the learning curves and how to plot them:
 
 - https://machinelearningmastery.com/learning-curves-for-diagnosing-machine-learning-model-performance/
 
@@ -250,7 +255,7 @@ More details:
 
 ![alt text][logo_ex5q2]
 
-[logo_ex5q2]: ./w2_day5_ex5_q2.png "Learning curve "
+[logo_ex5q2]: ./w2_day5_ex5_q2.png 'Learning curve '
 
 - **Note Plot Learning Curves**: The learning curves is detailed in the first resource.
 
