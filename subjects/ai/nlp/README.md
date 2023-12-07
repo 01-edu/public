@@ -44,7 +44,7 @@ I suggest to use the most recent libraries.
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
-**Note:** For each quest, your first exercise will be to set up the virtual environment with the required libraries.
+> Note: For each quest, your first exercise will be to set up the virtual environment with the required libraries.
 
 I recommend to use:
 
@@ -71,7 +71,7 @@ series_data = pd.Series(list_, name='text')
 1. Print all texts in lowercase
 2. Print all texts in upper case
 
-Note: Do not change the text manually!
+> Note: Do not change the text manually!
 
 ---
 
@@ -133,7 +133,7 @@ The goal of this exercise is to learn to remove stop words with NLTK.  Stop word
 
 The goal of this exercise is to learn to use stemming using NLTK. As explained in details in the article, stemming is the process of reducing inflection in words to their root forms such as mapping a group of words to the same stem even if the stem itself is not a valid word in the Language.
 
-Note: The output of a stemmer is a word that may not exist in the dictionary.
+> Note: The output of a stemmer is a word that may not exist in the dictionary.
 
 ```
 text = """
