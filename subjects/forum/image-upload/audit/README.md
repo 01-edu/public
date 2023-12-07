@@ -12,7 +12,7 @@
 
 ###### Was the post created successfully?
 
-##### Try to create a post with an [image](https://effigis.com/wp-content/themes/effigis_2014/img/RapidEye_RapidEye_5m_RGB_Altotting_Germany_Agriculture_and_Forestry_2009MAY17_8bits_sub_r_2.jpg) bigger than 20mb.
+##### Try to create a post with an image larger than 20mb at your choice.
 
 ###### Were you warned that this was not possible?
 
