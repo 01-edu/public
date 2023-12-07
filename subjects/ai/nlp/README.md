@@ -106,8 +106,7 @@ text = """Bitcoin is a cryptocurrency invented in 2008 by an unknown person or g
 
 2. Tokenize this text using `word_tokenize` from NLTK.
 
-_Resource_:
-https://www.analyticsvidhya.com/blog/2019/07/how-get-started-nlp-6-unique-ways-perform-tokenization/
+_Resources: [How to Get Started with NLP – 6](https://www.analyticsvidhya.com/blog/2019/07how-get-started-nlp-6-unique-ways-perform-tokenization/)_
 
 ---
 
