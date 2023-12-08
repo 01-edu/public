@@ -63,6 +63,10 @@ _______________________________     ________________________
 
 You will only have control over "machine2". This computer have Internet access through the "box".
 
+Machine Credentials: Use 'root' as the login and a single space (' ') as the password.
+
+Configure the network of the connect_box to use the NAT network, following the diagram provided above.
+
 Start the 3 VM and test on machine2 the connectivity quality with this command :
 
 ```
