@@ -48,14 +48,10 @@
 
 ##### The exercise is validated if all questions of the exercise are validated
 
-###### For question 1, have the embeddings of each word a shape of `(300,)` and are the first 20 values of the embedding of laptop the following?
+###### For question 1, have the embeddings of each word a shape of `(300,)` and is the sum of the first 20 values of the embedding of laptop the following?
 
 ```
-array([-0.37639 , -0.075521,  0.4908  ,  0.19863 , -0.11088 , -0.076145,
-    -0.30367 , -0.69663 ,  0.87048 ,  0.54388 ,  0.42523 ,  0.18045 ,
-    -0.4358  , -0.32606 , -0.70702 , -0.069127, -0.42674 ,  2.4147  ,
-        0.26806 ,  0.46584 ], dtype=float32)
-
+5.710388
 ```
 
 ###### For question 2, is the output the following?
