@@ -84,7 +84,7 @@ The goal of this exercise is to learn to tokenize a document using `spaCy`. We d
 
 The goal of this exercise is to learn to use `spaCy` embedding on a document.
 
-1. Compute the embedding of all the words in this sentence. The language model considered is `en_core_web_md`
+1. Compute the embedding of all the words in this sentence. The language model considered is `en_core_web_md` version 3.4.1.
 
 ```
 "laptop computer coffee tea water liquid dog cat kitty"
