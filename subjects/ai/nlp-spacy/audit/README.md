@@ -18,7 +18,7 @@
 
 ###### For question 1, is the embedding's shape `(96,)`?
 
-###### For question 2, do the 20 first values of the vector sum to `2.9790137708187103`?
+###### Do the 20 first values of the vector sum to `2.9790137708187103`?
 
 ---
 

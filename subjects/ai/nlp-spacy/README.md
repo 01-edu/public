@@ -49,7 +49,7 @@ I recommend to use:
 - the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
 - one of the most recent versions of the libraries required
 
-1. Create a virtual environment named with a version of Python >= `3.8`, with the following libraries: `pandas`, `jupyter`, `spaCy`, `sklearn`, `matplotlib`.
+1. Create a virtual environment named with a version of Python >= `3.8`, with the following libraries: `pandas`, `jupyter`, `spaCy 3.4.0`, `sklearn`, `matplotlib`.
 
 ---
 
@@ -59,7 +59,7 @@ I recommend to use:
 
 The goal of this exercise is to learn to load an embedding on `spaCy`.
 
-1. Install and load `en_core_web_sm` version `3.4.0` [embedding](https://github.com/explosion/spacy-models/releases/tag/en_core_web_sm-3.4.0). Compute the embedding of `car`.
+1. Install and load `en_core_web_sm` version `3.4.1` [embedding](https://github.com/explosion/spacy-models/releases/tag/en_core_web_sm-3.4.1). Compute the embedding of `car`.
 
 ---
 
