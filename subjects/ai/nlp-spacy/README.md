@@ -1,6 +1,6 @@
 # Natural Language processing with Spacy
 
-Spacy is a natural language processing (NLP) library for Python designed to have fast performance, and with word embedding models built in, it’s perfect for a quick and easy start. I don't need to detail what spaCy does, it is perfectly summarized by spaCy in this article: **spaCy 101: Everything you need to know**.
+`spaCy` is a natural language processing (NLP) library for Python designed to have fast performance, and with word embedding models built in, it’s perfect for a quick and easy start. I don't need to detail what spaCy does, it is perfectly summarized by spaCy in this article: **spaCy 101: Everything you need to know**.
 
 Today, we will learn to use a pre-trained embedding to convert a text into a vector to compute similarity between words or sentences. Remember, embeddings translate large sparse vectors into a lower-dimensional space that preserves semantic relationships.
 Word embeddings is a technique where individual words of a domain or language are represented as real-valued vectors in a lower dimensional space. The BoW representation's dimension depends on the size of the vocabulary. But it can easily reach 10k words. We will also learn to use NER and Part-of-speech. NER allows to identify and segment the named entities and classify or categorize them under various predefined classes. Part-of-speech is a special label assigned to each token (word) in a text corpus to indicate the part of speech and often also other grammatical categories such as tense, number (plural/singular), case etc.
@@ -20,11 +20,11 @@ Word embeddings is a technique where individual words of a domain or language ar
 - Python 3.x
 - Jupyter or JupyterLab
 - Pandas
-- Spacy
+- spaCy
 - Scikit-learn
 - Matplotlib
 
-I suggest to use the most recent libraries.
+I suggest using the most recent libraries.
 
 ### **Resources**
 
@@ -41,15 +41,15 @@ I suggest to use the most recent libraries.
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
-**Note:** For each quest, your first exercice will be to set up the virtual environment with the required libraries.
+**Note:** For each quest, your first exercise will be to set up the virtual environment with the required libraries.
 
 I recommend to use:
 
 - the **last stable versions** of Python.
-- the virtual environment you're the most confortable with. `virtualenv` and `conda` are the most used in Data Science.
-- one of the most recents versions of the libraries required
+- the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
+- one of the most recent versions of the libraries required
 
-1. Create a virtual environment named with a version of Python >= `3.8`, with the following libraries: `pandas`, `jupyter`, `spacy`, `sklearn`, `matplotlib`.
+1. Create a virtual environment named with a version of Python >= `3.8`, with the following libraries: `pandas`, `jupyter`, `spaCy`, `sklearn`, `matplotlib`.
 
 ---
 
@@ -57,7 +57,7 @@ I recommend to use:
 
 # Exercise 1: Embedding 1
 
-The goal of this exercise is to learn to load an embedding on SpaCy.
+The goal of this exercise is to learn to load an embedding on `spaCy`.
 
 1. Install and load `en_core_web_sm` version `3.4.0` [embedding](https://github.com/explosion/spacy-models/releases/tag/en_core_web_sm-3.4.0). Compute the embedding of `car`.
 
@@ -67,7 +67,7 @@ The goal of this exercise is to learn to load an embedding on SpaCy.
 
 # Exercise 2: Tokenization
 
-The goal of this exercise is to learn to tokenize a document using Spacy. We did this using NLTK yesterday.
+The goal of this exercise is to learn to tokenize a document using `spaCy`. We did this using NLTK yesterday.
 
 1. Tokenize the text below and print the tokens
 
@@ -82,7 +82,7 @@ The goal of this exercise is to learn to tokenize a document using Spacy. We did
 
 # Exercise 3: Embeddings 2
 
-The goal of this exercise is to learn to use SpaCy embedding on a document.
+The goal of this exercise is to learn to use `spaCy` embedding on a document.
 
 1. Compute the embedding of all the words in this sentence. The language model considered is `en_core_web_md`
 
@@ -130,7 +130,7 @@ Apple was founded by Steve Jobs, Steve Wozniak, and Ronald Wayne in April 1976 t
 
 1. Extract all named entities in the text as well as the label of the named entity.
 
-2. The NER is also useful to remove ambigous entities. From a conceptual standpoint, disambiguation is the process of determining the most probable meaning of a specific phrase. For example in the sentence below, the word `apple` is present twice in the sentence. The first time to mention the fruit and the second to mention a company. Run the NER on this sentence and print the named entity, the `start_char`, the `end_char` and the label of the named entity.
+2. The NER is also useful to remove ambiguous entities. From a conceptual standpoint, disambiguation is the process of determining the most probable meaning of a specific phrase. For example in the sentence below, the word `apple` is present twice in the sentence. The first time to mention the fruit and the second to mention a company. Run the NER on this sentence and print the named entity, the `start_char`, the `end_char` and the label of the named entity.
 
 ```
 Paul eats an apple while watching a movie on his Apple device.
@@ -144,7 +144,7 @@ https://en.wikipedia.org/wiki/Named-entity_recognition
 
 # Exercise 6: Part-of-speech tags
 
-The goal od this exercise is to learn to use the Part-of-speech tags (**POS TAG**) using Spacy. As explained in wikipedia, the POS TAG is the process of marking up a word in a text (corpus) as corresponding to a particular part of speech, based on both its definition and its context.
+The goal of this exercise is to learn to use the Part-of-speech tags (**POS TAG**) using `spaCy`. As explained on Wikipedia, the POS TAG is the process of marking up a word in a text (corpus) as corresponding to a particular part of speech, based on both its definition and its context.
 
 Example
 
@@ -157,6 +157,6 @@ The sentence: **"Heat water in a large vessel"** is tagged this way after the PO
 - large adj (noun)
 - vessel noun
 
-The data `news_amazon.txt` used is a news paper about Amazon.
+The data `news_amazon.txt` used is a newspaper about Amazon.
 
 1. Return all sentences mentioning **Bezos** as a NNP (tag).
