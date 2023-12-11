@@ -2,19 +2,19 @@
 
 ###### Has the requirement for the allowed packages been respected? (Reminder for this project: only [standard packages](https://golang.org/pkg/))
 
-##### Try to run `"./push-swap"`.
+##### Try to run `./push-swap`.
 
 ###### Does it display nothing?
 
-##### Try to run `"./push-swap "2 1 3 6 5 8""`.
+##### Try to run `./push-swap "2 1 3 6 5 8"`.
 
 ###### Does it display a valid solution and less than 9 instructions?
 
-##### Try to run `"./push-swap "0 1 2 3 4 5""`.
+##### Try to run `./push-swap "0 1 2 3 4 5"`.
 
 ###### Does it display nothing?
 
-##### Try to run `"./push-swap "0 one 2 3""`.
+##### Try to run `./push-swap "0 one 2 3"`.
 
 ```console
 Error
@@ -22,7 +22,7 @@ Error
 
 ###### Does it display the correct result as above?
 
-##### Try to run `"./push-swap "1 2 2 3""`.
+##### Try to run `./push-swap "1 2 2 3"`.
 
 ```console
 Error
@@ -30,19 +30,19 @@ Error
 
 ###### Does it display the correct result as above?
 
-##### Try to run `"./push-swap "<5 random numbers>""` with 5 random numbers instead of the tag.
+##### Try to run `./push-swap "<5 random numbers>"` with 5 random numbers instead of the tag.
 
 ###### Does it display a valid solution and less than 12 instructions?
 
-##### Try to run `"./push-swap "<5 random numbers>""` with 5 different random numbers instead of the tag.
+##### Try to run `./push-swap "<5 random numbers>"` with 5 different random numbers instead of the tag.
 
 ###### Does it still displays a valid solution and less than 12 instructions?
 
-##### Try to run `"./checker"` and input nothing.
+##### Try to run `./checker` and input nothing.
 
 ###### Does it display nothing?
 
-##### Try to run `"./checker "0 one 2 3""`.
+##### Try to run `./checker "0 one 2 3"`.
 
 ```console
 Error
@@ -50,7 +50,7 @@ Error
 
 ###### Does it display the correct result as above?
 
-##### Try to run `"echo -e "sa\npb\nrrr\n" | ./checker "0 9 1 8 2 7 3 6 4 5""`.
+##### Try to run `echo -e "sa\npb\nrrr\n" | ./checker "0 9 1 8 2 7 3 6 4 5"`.
 
 ```console
 KO
@@ -58,7 +58,7 @@ KO
 
 ###### Does it display the correct result as above?
 
-##### Try to run `"echo -e "pb\nra\npb\nra\nsa\nra\npa\npa\n" | ./checker "0 9 1 8 2""`.
+##### Try to run `echo -e "pb\nra\npb\nra\nsa\nra\npa\npa\n" | ./checker "0 9 1 8 2"`.
 
 ```console
 OK
@@ -66,7 +66,7 @@ OK
 
 ###### Does it display the correct result as above?
 
-##### Try to run `"ARG=("4 67 3 87 23"); ./push-swap $ARG | ./checker $ARG"`.
+##### Try to run `ARG="4 67 3 87 23"; ./push-swap "$ARG" | ./checker "$ARG"`.
 
 ```console
 OK
@@ -78,11 +78,11 @@ OK
 
 #### General
 
-##### Try to run `"ARG=("<100 random numbers>"); ./push-swap $ARG"` with 100 random different numbers instead of the tag.
+##### Try to run `ARG="<100 random numbers>"; ./push-swap "$ARG"` with 100 random different numbers instead of the tag.
 
 ###### +Does it display less than 700 commands?
 
-##### Try to run `"ARG=("<100 random numbers>"); ./push-swap $ARG | ./checker $ARG"` with the same 100 random different numbers as before instead of the tag.
+##### Try to run `ARG="<100 random numbers>"; ./push-swap "$ARG" | ./checker "$ARG"` with the same 100 random different numbers as before instead of the tag.
 
 ```console
 OK
