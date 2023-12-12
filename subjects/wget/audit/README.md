@@ -1,16 +1,16 @@
 #### Functional
 
-##### Try to run the following command `"./wget https://pbs.twimg.com/media/EMtmPFLWkAA8CIS.jpg"`
+##### Try to run the following command `./wget https://pbs.twimg.com/media/EMtmPFLWkAA8CIS.jpg`
 
-###### Did the program download the file `"EMtmPFLWkAA8CIS.jpg"`?
+###### Did the program download the file `EMtmPFLWkAA8CIS.jpg`?
 
-##### Try to run the following command with a link at your choice `"./wget <https://link_of_your_choice.com>"`
+##### Try to run the following command with a link at your choice `./wget <https://link_of_your_choice.com>`
 
 ###### Did the program download the expected file?
 
-##### Try to run the following command `"./wget https://golang.org/dl/go1.16.3.linux-amd64.tar.gz"`
+##### Try to run the following command `./wget https://golang.org/dl/go1.16.3.linux-amd64.tar.gz`
 
-###### Did the program download the file `"go1.16.3.linux-amd64.tar.gz"`?
+###### Did the program download the file `go1.16.3.linux-amd64.tar.gz`?
 
 ###### Did the program displayed the start time?
 
@@ -24,7 +24,7 @@
 
 ###### Did the program displayed the name and path of the file that was saved?
 
-##### Try to download a big file, for example: `"./wget http://ipv4.download.thinkbroadband.com/100MB.zip"`
+##### Try to download a big file, for example: `./wget http://ipv4.download.thinkbroadband.com/100MB.zip`
 
 ###### Did the program download the expected file?
 
@@ -36,27 +36,27 @@
 
 ###### While downloading, did the progress bar progressed smoothly (kept up with the time that the download took to finish)?
 
-##### Try to run the following command, `"./wget -O=test_20MB.zip http://ipv4.download.thinkbroadband.com/20MB.zip"`
+##### Try to run the following command, `./wget -O=test_20MB.zip http://ipv4.download.thinkbroadband.com/20MB.zip`
 
-###### Did the program downloaded the file with the name `"test_20MB.zip"`?
+###### Did the program downloaded the file with the name `test_20MB.zip`?
 
-##### Try to run the following command, `"./wget -O=test_20MB.zip -P=~/Downloads/ http://ipv4.download.thinkbroadband.com/20MB.zip"`
+##### Try to run the following command, `./wget -O=test_20MB.zip -P=~/Downloads/ http://ipv4.download.thinkbroadband.com/20MB.zip`
 
 ###### Can you see the expected file in the "~/Downloads/" folder?
 
-##### Try to run the following command, `"./wget --rate-limit=300k http://ipv4.download.thinkbroadband.com/20MB.zip"`
+##### Try to run the following command, `./wget --rate-limit=300k http://ipv4.download.thinkbroadband.com/20MB.zip`
 
 ###### Was the download speed always lower than 300KB/s?
 
-##### Try to run the following command, `"./wget --rate-limit=700k http://ipv4.download.thinkbroadband.com/20MB.zip"`
+##### Try to run the following command, `./wget --rate-limit=700k http://ipv4.download.thinkbroadband.com/20MB.zip`
 
 ###### Was the download speed always lower than 700KB/s?
 
-##### Try to run the following command, `"./wget --rate-limit=2M http://ipv4.download.thinkbroadband.com/20MB.zip"`
+##### Try to run the following command, `./wget --rate-limit=2M http://ipv4.download.thinkbroadband.com/20MB.zip`
 
 ###### Was the download speed always lower than 2MB/s?
 
-##### Try to create a text file with the name `"downloads.txt"` and save into it the links below. Then run the command `"./wget -i=downloads.txt"`
+##### Try to create a text file with the name `downloads.txt` and save into it the links below. Then run the command `./wget -i=downloads.txt`
 
 ```
 https://pbs.twimg.com/media/EMtmPFLWkAA8CIS.jpg
@@ -68,7 +68,7 @@ http://ipv4.download.thinkbroadband.com/10MB.zip
 
 ###### Did the downloads occurred in an asynchronous way? (tip: look to the download order)
 
-##### Try to run the following command, `"./wget -B http://ipv4.download.thinkbroadband.com/20MB.zip"`
+##### Try to run the following command, `./wget -B http://ipv4.download.thinkbroadband.com/20MB.zip`
 
 ```
 Output will be written to ‘wget-log’.
@@ -78,7 +78,7 @@ Output will be written to ‘wget-log’.
 
 ###### Was the download made in "silence" (without displaying anything to the terminal)?
 
-##### Try and open the log file `"wget-log"`.
+##### Try and open the log file `wget-log`.
 
 ```
 start at <date that the download started>
@@ -95,19 +95,19 @@ finished at <date that the download finished>
 
 #### Mirror
 
-##### Try to run the following command `"./wget --mirror --convert-links http://corndog.io/"`, then try to open the `"index.html"` with a browser
+##### Try to run the following command `./wget --mirror --convert-links http://corndog.io/`, then try to open the `index.html` with a browser
 
 ###### Is the site working?
 
-##### Try to run the following command `"./wget --mirror https://oct82.com/"`, then try to open the `"index.html"` with a browser
+##### Try to run the following command `./wget --mirror https://oct82.com/`, then try to open the `index.html` with a browser
 
 ###### Is the site working?
 
-##### Try to run the following command `"./wget --mirror --reject=gif https://oct82.com/"`, then try to open the `"index.html"` with a browser
+##### Try to run the following command `./wget --mirror --reject=gif https://oct82.com/`, then try to open the `index.html` with a browser
 
 ###### Did the program download the site without the GIFs?
 
-##### Try to run the following command `"./wget --mirror https://trypap.com/"`, then use the command `"ls"` to see the file system of the created folder.
+##### Try to run the following command `./wget --mirror https://trypap.com/`, then use the command `ls` to see the file system of the created folder.
 
 ```
 css  img  index.html
@@ -115,7 +115,7 @@ css  img  index.html
 
 ###### Does the created folder has the same fs as above?
 
-##### Try to run the following command `"./wget --mirror -X=/img https://trypap.com/"`, then use the command `"ls"` to see the file system of the created folder.
+##### Try to run the following command `./wget --mirror -X=/img https://trypap.com/`, then use the command `ls` to see the file system of the created folder.
 
 ```
 css  index.html
@@ -123,11 +123,11 @@ css  index.html
 
 ###### Does the created folder has the files above?
 
-##### Try to run the following command `"./wget --mirror https://theuselessweb.com/"`
+##### Try to run the following command `./wget --mirror https://theuselessweb.com/`
 
 ###### Is the site working?
 
-##### Try to run the following command to mirror a website at your choice `"./wget --mirror <https://link_of_your_choice.com>"`
+##### Try to run the following command to mirror a website at your choice `./wget --mirror <https://link_of_your_choice.com>`
 
 ###### Did the program mirror the website?
 
