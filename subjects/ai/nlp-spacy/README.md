@@ -59,7 +59,12 @@ I recommend to use:
 
 The goal of this exercise is to learn to load an embedding on `spaCy`.
 
-1. Install and load `en_core_web_sm` version `3.4.1` [embedding](https://github.com/explosion/spacy-models/releases/tag/en_core_web_sm-3.4.1). Compute the embedding of `car`.
+1. Install and load `en_core_web_sm` version `3.4.1` [embedding](https://github.com/explosion/spacy-models/releases/tag/en_core_web_sm-3.4.1).
+   Compute the embedding of `car` and print out its shape.
+
+2. Print out the sum of the first 20 values of the `car` embedding. The result
+   must be printed out using
+   [`float.as_integer_ration()`](https://docs.python.org/3/library/stdtypes.html#float.as_integer_ratio)
 
 ---
 
@@ -94,7 +99,7 @@ The goal of this exercise is to learn to use `spaCy` embedding on a document.
 
 ![alt text][logo]
 
-[logo]: ./w3day05ex1_plot.png "Plot"
+[logo]: ./w3day05ex1_plot.png 'Plot'
 
 https://medium.com/datadriveninvestor/cosine-similarity-cosine-distance-6571387f9bf8
 
