@@ -95,7 +95,7 @@ finished at <date that the download finished>
 
 #### Mirror
 
-##### Try to run the following command `"./wget --mirror http://corndog.io/"`, then try to open the `"index.html"` with a browser
+##### Try to run the following command `"./wget --mirror --convert-links http://corndog.io/"`, then try to open the `"index.html"` with a browser
 
 ###### Is the site working?
 
