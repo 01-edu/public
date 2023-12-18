@@ -35,8 +35,8 @@ curl -X POST localhost:5000/Ronaldinho -H "Content-Type: application/json" -d '{
 
 - [HTTP protocol](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 - [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
-- [Node http package: createServer](https://nodejs.org/en/knowledge/HTTP/servers/how-to-create-a-HTTP-server/)
-- [How to read POST data](https://nodejs.org/en/knowledge/HTTP/servers/how-to-read-POST-data/)
+- [Node http package: createServer](https://nodejs.org/api/http.html#httpcreateserveroptions-requestlistener)
+- [How `fetch` data](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 
 ### Provided files
 
