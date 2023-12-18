@@ -196,7 +196,7 @@ Steps:
 
 > Note: Given that a data set is often described as an m x n matrix in which m is the number of rows and n is the number of columns: features. It is strongly recommended to work with m >> n. The value of the ratio depends on the signal existing in the data set and on the model complexity.
 
-2. Using `from_spmatrix` from Pandas, create a DataFrame with documents in rows and the dictionary in columns.
+2. Using `from_spmatrix` from Pandas, create a DataFrame `count_vecotrized_df` using the output features names as column names. The final results should be similar to the below one.
 
 |     | and | boat | compute |
 | --: | --: | ---: | ------: |
@@ -206,16 +206,23 @@ Steps:
 
 > Note: The sample 3x3 table mentioned is a small representation of the expected output for demonstration purposes. It's not necessary to drop columns in this context.
 
-3. Create a DataFrame with labels where:
+3. Show the token counts (obtained with the above-mentioned steps) of the fourth tweet. 
 
+4. Using the word counter, show the 15 most used tokenized words in the datasets' tweets 
+
+5. Add to your `count_vecotrized_df` a `label` column considering the following:
    - 1: Positive
    - 0: Neutral
    - -1: Negative
 
-|     | Label |
-| --: | ----: |
-|   0 |    -1 |
-|   1 |     0 |
-|   2 |     1 |
+   The final DataFrame should be similar to the below:
+
+
+|    |   ...  |   label |
+|---:|-------:|--------:|
+|  0 |    ... |       1 |
+|  1 |    ... |      -1 |
+|  2 |    ... |      -1 |
+|  3 |    ... |      -1 |
 
 _Resources: [sklearn.feature_extraction.text.CountVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html)_
