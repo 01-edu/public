@@ -6,7 +6,7 @@ The primary goal of this project is to construct a robust and scalable environme
 
 ### Instructions
 
-This is the first part of the last project and for this part the students will be asked to build the working enviroment and impliment the admin part to ease the last part for the project.
+This is the first part of the last project and for this part, the students will be asked to build the working environment and implement the admin part to ease the last part of the project.
 
 #### 1. Environment Configuration
 
@@ -20,7 +20,7 @@ This is the first part of the last project and for this part the students will b
 
 ##### Continuous Integration/Continuous Delivery (CI/CD) Pipeline:
 -   Employ Jenkins for CI/CD and unit testing.
--   Employ SonarQube for automating code quality checks
+-   Employ SonarQube to automate code quality checks
 
 ##### Use of Docker and Ansible:
 -    Docker to support automated provisioning and deployment of microservices.
@@ -33,13 +33,13 @@ This is the first part of the last project and for this part the students will b
 #### 2. Development and Design
 
 - Craft an Admin Dashboard enabling administrators to oversee users, travels, and payment gateways.
-- the admin should be able to add, edit or delete any user, travel, payment method and all the related part correctly (database cascading!!!) 
+- The admin should be able to add, edit or delete any user, travel, payment method and all the related parts correctly (think about database cascading update and delete).
 - Ensure each travel entry includes a destination or multiple destinations, dates, duration, activities, accommodation, and transportation details.
-- for the payment methods you can search about it to know what you need to support the most you have to support at least strip and paypal.
+- For the payment methods you can search about it to know what you need to support the most you have to support at least [Stripe](https://stripe.com/docs/development) and [PayPal](https://developer.paypal.com/home).
 - Develop an authentication and authorization service to safeguard access and operations to the Admin Dashboard.
-- Design a responsive and intuitive UI for the Admin Dashboard that shows well in diffirent screen sizes, ensuring browser compatibility at least for Mozilla and Chrome.
+- Design a responsive and intuitive UI for the Admin Dashboard that shows well in different screen sizes, ensuring browser compatibility at least for Mozilla and Chrome.
 - Utilize any beneficial packages to enhance development efficiency, with the expectation to justify package selections during project reviews.
-- every feature should have it's unit tests to ensure the the new modifications doesn't break the code. 
+- Every feature should have its unit tests to ensure the the new modifications don't break the code. 
 
 
 #### 3. Best Practices & Ecosystem Familiarity
@@ -60,7 +60,7 @@ This is the first part of the last project and for this part the students will b
 ### Bonus
 
 - Compose clear and detailed documentation for the application and database schema.
-- Incorporate Kubernetes alongside Ansible to enhance service management, orchestration, and load balancing capabilities.
-- impliment integration tests and E2E tests one of them or both of them. 
-- any other bonus that add a real value to the project.
+- Incorporate Kubernetes alongside Ansible to enhance service management, orchestration, and load-balancing capabilities.
+- Implement integration tests and E2E tests one of them or both of them. 
+- Any other bonus that adds real value to the project.
 
