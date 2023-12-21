@@ -24,7 +24,10 @@ This is the first part of the last project and for this part, the students will 
 
 ##### Use of Docker and Ansible:
 -    Docker to support automated provisioning and deployment of microservices.
--    Ansible for creating playbooks to deploy all system elements consistently and scalably.
+-    Ansible for creating playbooks to deploy all system elements consistently and in a scalable way.
+
+##### Logging
+-   Implement some sort of logging system to be able to track and trace requests across multiple services.
 
 ##### Outcome:
 -    Achieve an automated, scalable infrastructure.
@@ -35,11 +38,11 @@ This is the first part of the last project and for this part, the students will 
 - Craft an Admin Dashboard enabling administrators to oversee users, travels, and payment gateways.
 - The admin should be able to add, edit or delete any user, travel, payment method and all the related parts correctly (think about database cascading update and delete).
 - Ensure each travel entry includes a destination or multiple destinations, dates, duration, activities, accommodation, and transportation details.
-- For the payment methods you can search about it to know what you need to support the most you have to support at least [Stripe](https://stripe.com/docs/development) and [PayPal](https://developer.paypal.com/home).
+- For the payment methods you can search about it to know what you need to do to support at least [Stripe](https://stripe.com/docs/development) and [PayPal](https://developer.paypal.com/home).
 - Develop an authentication and authorization service to safeguard access and operations to the Admin Dashboard.
 - Design a responsive and intuitive UI for the Admin Dashboard that shows well in different screen sizes, ensuring browser compatibility at least for Mozilla and Chrome.
 - Utilize any beneficial packages to enhance development efficiency, with the expectation to justify package selections during project reviews.
-- Every feature should have its unit tests to ensure the the new modifications don't break the code. 
+- Every feature should have its unit tests to ensure the new modifications don't break the code. 
 
 
 #### 3. Best Practices & Ecosystem Familiarity
@@ -61,6 +64,6 @@ This is the first part of the last project and for this part, the students will 
 
 - Compose clear and detailed documentation for the application and database schema.
 - Incorporate Kubernetes alongside Ansible to enhance service management, orchestration, and load-balancing capabilities.
-- Implement integration tests and E2E tests one of them or both of them. 
+- Implement integration and/or E2E tests 
 - Any other bonus that adds real value to the project.
 

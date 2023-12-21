@@ -27,7 +27,7 @@
 
 ##### Discuss the CI/CD pipeline setup.
 
-###### Are there unit tests for each functionality and are the test runs for each PR?
+###### Are there unit tests for each functionality and are the tests running for each new PR?
 
 ###### Is the SonarQube report free from any error or warning that can break the CI/CD Process?
 
@@ -47,11 +47,13 @@
 
 ###### Were the playbooks able to handle re-running scenarios without causing disruptions or inconsistencies?
 
+##### Verify Docker and Ansible setup.
+
+###### Were Docker containers and Ansible playbooks set up correctly and functionally?
+
 ##### Test each microservice API.
 
 ###### Are all the microservices' APIs only accessible when logged in with an Admin profile?
-
-###### Are all microservice APIs functioning correctly and handling errors effectively?
 
 ##### Admin should be able to perform CRUD operations for users, travelers and payment methods. For each "entity" try to create, read, update and delete.
 
@@ -67,10 +69,6 @@
 
 ###### Did the microservices demonstrate effective load balancing and failover under heavy traffic?
 
-##### Verify Docker and Ansible setup.
-
-###### Were Docker containers and Ansible playbooks set up correctly and functionally?
-
 ##### Validate CI/CD pipeline and code quality.
 
 ###### Did the CI/CD pipeline function correctly for build, test, and deployment processes, and were code quality standards maintained?
@@ -79,7 +77,9 @@
 
 ###### Is the code consistence and well structured, also do they follow naming conventions in recent pull requests?
 
-###### Are all the used libraries supported and not deprecated and not having any deprecated methods in use, in recent pull requests check SonarQube?
+##### Check SonarQube logs in recent pull requests.
+
+###### is the log free of warnings about unsupported or deprecated libraries?
 
 ###### Are the security vulnerabilities found by SonarQube resolved in the pull requests?
 
