@@ -1,7 +1,5 @@
 #### Exercise 0: Environment and libraries
 
-##### The exercise is validated if all questions of the exercise are validated
-
 ##### Install the virtual environment with `requirements.txt`
 
 ##### Activate the virtual environment. If you used `conda`, run `conda activate ex00`
@@ -33,13 +31,13 @@
 
 #### Exercise 1: Your first NumPy array
 
-##### Add cell and run `type(your_numpy_array)`
+##### Add a cell and execute `type(your_numpy_array)`.
 
-###### Is the your_numpy_array an NumPy array? It can be checked with that should be equal to `numpy.ndarray`.
+###### Is `your_numpy_array` identified as a NumPy array? It should display as `numpy.ndarray`.
 
-##### Run all the cells of the notebook or `python main.py`
+##### Execute all the cells within the notebook or use `python main.py`.
 
-###### Are the types printed are as follows?
+###### Can you confirm that the types printed match the following:
 
 ```
 <class 'int'>
@@ -60,11 +58,43 @@
 
 #### Exercise 2: Zeros
 
-##### The exercise is validated if all questions of the exercise are validated
+###### For question 1, does the solution use `np.zeros` and is the shape of the array `(300,)`like bellow?
 
-###### For question 1, does the solution use `np.zeros` and is the shape of the array `(300,)`?
+```console
+[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+```
 
-###### For question 2, does the solution use `reshape` and is the shape of the array `(3, 100)`?
+###### For question 2, does the solution use `reshape` and is the shape of the array `(3, 100)` like bellow?
+
+```console
+[[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+  0. 0. 0. 0.]]
+```
 
 ---
 
@@ -72,19 +102,44 @@
 
 #### Exercise 3: Slicing
 
-##### The exercise is validated if all questions of the exercise are validated
+###### The exercise is validated if the solution doesn't involve a for loop or writing all integers from 1 to 100 and if the array is: `np.array([1,...,100])`. The list from 1 to 100 can be generated with an iterator: `range`. Are the previous requirements fulfilled?
 
-###### For question 1, is validated if the solution doesn't involve a for loop or writing all integers from 1 to 100 and if the array is: `np.array([1,...,100])`. The list from 1 to 100 can be generated with an iterator: `range`. Were the previous requirements fulfilled?
+###### For question 1, does the output look like bellow?
 
-###### For question 2, is the solution `integers[::2]`?
+```console
+[  1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18
+  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36
+  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54
+  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72
+  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90
+  91  92  93  94  95  96  97  98  99 100]
+```
 
-###### For question 3, is the solution `integers[::-2]`?
+###### For question 2, does the output look like bellow?
 
-###### For question 4, is the array `np.array([1,0,3,4,0,...,0,99,100])`? There are at least two ways to get this results without for loop. The first one uses `integers[1::3] = 0` and the second involves creating a boolean array that indexes the array:
+```console
+[ 1  3  5  7  9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47
+ 49 51 53 55 57 59 61 63 65 67 69 71 73 75 77 79 81 83 85 87 89 91 93 95
+ 97 99]
+```
 
-```python
-mask = (integers+1)%3 == 0
-integers[mask] = 0
+###### For question 3, does the output look like bellow?
+
+```console
+[100  98  96  94  92  90  88  86  84  82  80  78  76  74  72  70  68  66
+  64  62  60  58  56  54  52  50  48  46  44  42  40  38  36  34  32  30
+  28  26  24  22  20  18  16  14  12  10   8   6   4   2]
+```
+
+###### For question 4, does the output look like bellow?
+
+```console
+[  1   0   3   4   0   6   7   0   9  10   0  12  13   0  15  16   0  18
+  19   0  21  22   0  24  25   0  27  28   0  30  31   0  33  34   0  36
+  37   0  39  40   0  42  43   0  45  46   0  48  49   0  51  52   0  54
+  55   0  57  58   0  60  61   0  63  64   0  66  67   0  69  70   0  72
+  73   0  75  76   0  78  79   0  81  82   0  84  85   0  87  88   0  90
+  91   0  93  94   0  96  97   0  99 100]
 ```
 
 ---
@@ -93,18 +148,16 @@ integers[mask] = 0
 
 #### Exercise 4: Random
 
-##### The exercise is validated if all questions of the exercise are validated
+> Note: For this exercise, as the results may change depending on the version of the package or the OS, I give the code to correct the exercise. If the code is correct and the output is not the same as mine, it is accepted.
 
-##### For this exercise, as the results may change depending on the version of the package or the OS, I give the code to correct the exercise. If the code is correct and the output is not the same as mine, it is accepted.
+###### For question 1, does the solution contain `np.random.seed(888)`?
 
-###### For question 1, is the solution `np.random.seed(888)`?
+###### For question 2, does the solution contain `np.random.randn(100)`?
 
-###### For question 2, is the output of the solution the same as `np.random.randn(100)`? The value of the first element is `0.17620087373662233`.
-
-###### For question 3, is the solution `np.random.randint(1,11,(8,8))`?
+###### For question 3, does the solution contain `np.random.randint(1,11,(8,8))`?
 
 ```console
-    Given the NumPy version and the seed, you should have this output:
+    Given the NumPy version and the seed, this is my output:
 
     array([[ 7,  4,  8, 10,  2,  1,  1, 10],
         [ 4,  1,  7,  4,  3,  5,  2,  8],
@@ -116,10 +169,10 @@ integers[mask] = 0
         [ 4,  4,  9,  2,  8,  5,  9,  5]])
 ```
 
-###### For question 4, is the solution `np.random.randint(1,18,(4,2,5))`?
+###### For question 4, does the solution contain `np.random.randint(1,18,(4,2,5))`?
 
 ```console
-    Given the NumPy version and the seed, you should have this output:
+    Given the NumPy version and the seed, this is my output:
 
     array([[[14, 16,  8, 15, 14],
             [17, 13,  1,  4, 17]],
@@ -140,25 +193,34 @@ integers[mask] = 0
 
 #### Exercise 5: Split, concatenate, reshape arrays
 
-##### The exercise is validated if all questions of the exercise are validated
-
-###### For question 1, is the generated array based on an iterator as `range` or `np.arange`? Check that 50 is part of the array.
-
-###### For question 2, is the generated array based on an iterator as `range` or `np.arange`? Check that 100 is part of the array.
-
-###### For question 3, is the array concatenated this way `np.concatenate(array1,array2)`?
-
-###### For question 4, is the result the following?
+###### Run the exercise and check if the output is the same as bellow:
 
 ```console
-    array([[  1,  ... ,  10],
-                ...
-        [ 91,  ... , 100]])
+[ 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+ 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48
+ 49 50]
+[ 51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68
+  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86
+  87  88  89  90  91  92  93  94  95  96  97  98  99 100]
+[  1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18
+  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36
+  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54
+  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72
+  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90
+  91  92  93  94  95  96  97  98  99 100]
+[[  1   2   3   4   5   6   7   8   9  10]
+ [ 11  12  13  14  15  16  17  18  19  20]
+ [ 21  22  23  24  25  26  27  28  29  30]
+ [ 31  32  33  34  35  36  37  38  39  40]
+ [ 41  42  43  44  45  46  47  48  49  50]
+ [ 51  52  53  54  55  56  57  58  59  60]
+ [ 61  62  63  64  65  66  67  68  69  70]
+ [ 71  72  73  74  75  76  77  78  79  80]
+ [ 81  82  83  84  85  86  87  88  89  90]
+ [ 91  92  93  94  95  96  97  98  99 100]]
 ```
 
-The easiest way is to use `array.reshape(10,10)`.
-
-https://jakevdp.github.io/PythonDataScienceHandbook/ (section: The Basics of NumPy Arrays)
+###### Can you confirm that the student didn't just printed the actual result?
 
 ---
 
@@ -166,54 +228,44 @@ https://jakevdp.github.io/PythonDataScienceHandbook/ (section: The Basics of Num
 
 #### Exercise 6: Broadcasting and Slicing
 
-##### The exercise is validated if all questions of the exercise are validated
-
-###### For question 1, is the output the same as the following?
-
-`np.ones([9,9], dtype=np.int8)`
-
-###### For question 2, is the output the following?
+###### Run the exercise and check if the output is the same as bellow:
 
 ```console
-    array([[1, 1, 1, 1, 1, 1, 1, 1, 1],
-        [1, 0, 0, 0, 0, 0, 0, 0, 1],
-        [1, 0, 1, 1, 1, 1, 1, 0, 1],
-        [1, 0, 1, 0, 0, 0, 1, 0, 1],
-        [1, 0, 1, 0, 1, 0, 1, 0, 1],
-        [1, 0, 1, 0, 0, 0, 1, 0, 1],
-        [1, 0, 1, 1, 1, 1, 1, 0, 1],
-        [1, 0, 0, 0, 0, 0, 0, 0, 1],
-        [1, 1, 1, 1, 1, 1, 1, 1, 1]], dtype=int8)
+[[1 1 1 1 1 1 1 1 1]
+ [1 1 1 1 1 1 1 1 1]
+ [1 1 1 1 1 1 1 1 1]
+ [1 1 1 1 1 1 1 1 1]
+ [1 1 1 1 1 1 1 1 1]
+ [1 1 1 1 1 1 1 1 1]
+ [1 1 1 1 1 1 1 1 1]
+ [1 1 1 1 1 1 1 1 1]
+ [1 1 1 1 1 1 1 1 1]]
+
+[[1 1 1 1 1 1 1 1 1]
+ [1 0 0 0 0 0 0 0 1]
+ [1 0 1 1 1 1 1 0 1]
+ [1 0 1 0 0 0 1 0 1]
+ [1 0 1 0 1 0 1 0 1]
+ [1 0 1 0 0 0 1 0 1]
+ [1 0 1 1 1 1 1 0 1]
+ [1 0 0 0 0 0 0 0 1]
+ [1 1 1 1 1 1 1 1 1]]
+
+[[ 1  2  3]
+ [ 2  4  6]
+ [ 3  6  9]
+ [ 4  8 12]
+ [ 5 10 15]]
+
 ```
 
-##### The solution of question 2 is not accepted if the values of the array have been changed one by one manually. The usage of the for loop is not allowed neither.
+##### Check the solution for cheating like:
 
-Here is an example of a possible solution:
+- The values of the array have been changed one by one manually.
+- The usage of the for loop, which is not allowed.
+- Printing the full output given in the readme.
 
-```python
-        x[1:8,1:8] = 0
-        x[2:7,2:7] = 1
-        x[3:6,3:6] = 0
-        x[4,4] = 1
-```
-
-###### For question 3, is the output the following?
-
-```console
-   array([[ 1,  2,  3],
-          [ 2,  4,  6],
-          [ 3,  6,  9],
-          [ 4,  8, 12],
-          [ 5, 10, 15]], dtype=int8)
-```
-
-##### The solution of question 3 is not accepted if the values of the array have been changed one by one manually. The usage of the for loop is not allowed neither.
-
-Here is an example of a possible solution:
-
-```python
-    np.reshape(arr_1, (5, 1)) * arr_2
-```
+###### Can you confirm that there was no cheating in the solution?
 
 ---
 
@@ -221,37 +273,19 @@ Here is an example of a possible solution:
 
 #### Exercise 7: NaN
 
-##### The exercise is validated if all questions of the exercise are validated
-
 ###### Without having used a for loop or having filled the array manually, is the output the following?
 
 ```console
 [[ 7.  1.  7.]
-[nan  2.  2.]
-[nan  8.  8.]
-[ 9.  3.  9.]
-[ 8.  9.  8.]
-[nan  2.  2.]
-[ 8.  2.  8.]
-[nan  6.  6.]
-[ 9.  2.  9.]
-[ 8.  5.  8.]]
-```
-
-There are two steps in this exercise:
-
-- Create the vector that contains the grade of the first exam if available or the second. This can be done using `np.where`:
-
-```python
-    np.where(np.isnan(grades[:, 0]), grades[:, 1],     grades[:, 0])
-```
-
-- Add this vector as third column of the array. Here are two ways:
-
-```python
-    np.insert(arr = grades, values = new_vector, axis = 1, obj = 2)
-
-    np.hstack((grades, new_vector[:, None]))
+ [nan  2.  2.]
+ [nan  8.  8.]
+ [ 9.  3.  9.]
+ [ 8.  9.  8.]
+ [nan  2.  2.]
+ [ 8.  2.  8.]
+ [nan  6.  6.]
+ [ 9.  2.  9.]
+ [ 8.  5.  8.]]
 ```
 
 ---
@@ -260,59 +294,90 @@ There are two steps in this exercise:
 
 #### Exercise 8: Wine
 
-##### The exercise is validated if all questions of the exercise are validated
+###### Was the text file successfully loaded into a NumPy array using `genfromtxt('winequality-red.csv', delimiter=';')` and optimized for memory usage, weighing `76800` bytes or less?
 
-###### Has the text file successfully been loaded in a NumPy array with `genfromtxt('winequality-red.csv', delimiter=';')` and the reduced arrays weights **76800 bytes**?
+Use this in the solution to confirm:
+
+```Python
+
+# Check the optimized data size and absolute differences
+optimized_size = optimized_data.nbytes
+abs_diff = np.sum(np.abs(original_data - optimized_data))
+
+# To verify if criteria are met:
+if abs_diff < 1.10**-3 and optimized_size <= 76800:
+    print("Data optimized successfully.")
+else:
+    print("Optimization criteria not met.")
+```
+
+##### For question 2:
 
 ###### Is the output the following?
 
-```python
-array([[ 7.4   ,  0.7   ,  0.    ,  1.9   ,  0.076 , 11.    , 34.    ,
-        0.9978,  3.51  ,  0.56  ,  9.4   ,  5.    ],
-      [ 7.4   ,  0.66  ,  0.    ,  1.8   ,  0.075 , 13.    , 40.    ,
-        0.9978,  3.51  ,  0.56  ,  9.4   ,  5.    ],
-      [ 6.7   ,  0.58  ,  0.08  ,  1.8   ,  0.097 , 15.    , 65.    ,
-        0.9959,  3.28  ,  0.54  ,  9.2   ,  5.    ]])
+```console
+[[ 7.8     0.76    0.04    2.3     0.092  15.     54.      0.997   3.26
+   0.65    9.8     5.    ]
+ [ 7.3     0.65    0.      1.2     0.065  15.     21.      0.9946  3.39
+   0.47   10.      7.    ]
+ [ 5.6     0.615   0.      1.6     0.089  16.     59.      0.9943  3.58
+   0.52    9.9     5.    ]]
 ```
 
-This slicing gives the answer `my_data[[1,6,11],:]`.
+This slicing gives the answer `data[[2,7,12],:]`.
 
-###### Is the answer False? There are many ways to get the answer: find the maximum or check values greater than 20.
+##### For question 3:
 
-###### Is the answer 10.422983114446529?
+"Determine if there is any wine in the dataset with an alcohol percentage greater than 20%. Return True or False."
 
-###### Is the answer the following?
+###### Is the answer `False`?
+
+##### For question 4:
+
+"Calculate the average alcohol percentage across all wines in the dataset. Exclude `np.nan` values if present."
+
+###### Is the answer `10.422984`?
+
+##### For question 5:
+
+"Compute various statistical measures (minimum, maximum, 25th percentile, 50th percentile, 75th percentile and the mean for the pH values)."
+
+###### Check if you have the correct results as bellow?
 
 ```console
-    pH stats
     25 percentile:  3.21
     50 percentile:  3.31
-    75 percentile:  3.4
-    mean:  3.3111131957473416
+    75 percentile:  3.40
+    mean:  3.31
     min:  2.74
     max:  4.01
 ```
 
-> *Note: Using `percentile` or `median` may give different results depending on the duplicate values in the column. If you do not have my results please use `percentile`.*
+> _Note: Using `percentile` or `median` may give different results depending on the duplicate values in the column. If you do not have my results please use `percentile`._
 
-###### Is the answer ~`5.2`? The first step is to get the percentile 20% of the column `sulphates`, then create a boolean array that contains `True` of the value is smaller than the percentile 20%, then select this rows with the column quality and compute the `mean`.
+##### For question 6:
+
+"Find the average quality score of wines with the 20% least sulphate content."
+
+###### Is the answer ~`5.2`?
+
+##### For question 7:
+
+Compute the mean of all variables for wines with the best quality. Also, do the same for wines with the worst quality.
 
 ###### Is the output for the best wines the following?
 
-```python
-array([ 8.56666667,  0.42333333,  0.39111111,  2.57777778,  0.06844444,
-    13.27777778, 33.44444444,  0.99521222,  3.26722222,  0.76777778,
-    12.09444444,  8.        ])
+```console
+[ 8.566666    0.4233333   0.39111114  2.5777776   0.06844445 13.277778
+ 33.444443    0.99521226  3.2672222   0.76777774 12.094444    8.        ]
 ```
 
 ###### Is the output for the bad wines the following?
 
-```python
-array([ 8.36    ,  0.8845  ,  0.171   ,  2.635   ,  0.1225  , 11.      ,
-    24.9     ,  0.997464,  3.398   ,  0.57    ,  9.955   ,  3.      ])
+```console
+[ 8.359999    0.8845      0.17099999  2.6350002   0.12249999 11.
+ 24.9         0.997464    3.398       0.57000005  9.955       3.        ]
 ```
-
-This can be done in three steps: Get the max, create a boolean mask that indicates rows with max quality, use this mask to subset the rows with the best quality and compute the mean on the axis 0.
 
 ---
 
