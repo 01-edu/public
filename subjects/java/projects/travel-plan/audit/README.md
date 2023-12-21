@@ -3,7 +3,23 @@
 
 ##### Ask the student to describe the microservices architecture implemented.
 
-###### Did the architecture effectively split functionalities into different microservices based on key factors like scalability and domain separation?
+###### Have you clearly defined the boundaries for each microservice based on business domains?
+
+###### Do your microservices align directly with specific business functions?
+
+###### Are your microservices designed to operate independently of one another?
+
+###### Can each microservice be deployed, updated, and scaled without affecting others?
+
+###### Is your architecture designed to support the independent scalability of each microservice?
+
+###### Does your system maintain functionality even when one or more services fail?
+
+###### Is there an API Gateway in your architecture to manage incoming requests?
+
+###### Can you track and trace a request across multiple services easily?
+
+###### Are communications between your microservices secured?
 
 ##### Ask the student to explain one of the Ansible playbook
 
@@ -11,7 +27,7 @@
 
 ##### Discuss the CI/CD pipeline setup.
 
-###### Is there unit tests for each functionality and are the test run for each PR?
+###### Are there unit tests for each functionality and are the test runs for each PR?
 
 ###### Is the SonarQube report free from any error or warning that can break the CI/CD Process?
 
@@ -33,13 +49,15 @@
 
 ##### Test each microservice API.
 
-###### Are all microservice APIs role-based and don't work with an admin role-based user authenticated except the login API?
+###### Are all the microservices' APIs only accessible when logged in with an Admin profile?
 
 ###### Are all microservice APIs functioning correctly and handling errors effectively?
 
-##### Verify Admin Dashboard functionality.
+##### Admin should be able to perform CRUD operations for users, travelers and payment methods. For each "entity" try to create, read, update and delete.
 
-###### Did the Admin Dashboard correctly manage users, travels, and payment gateways?
+###### Is everything working as expected?
+
+###### Are errors handled correctly?
 
 ##### Test Authentication and Authorization.
 
@@ -61,7 +79,7 @@
 
 ###### Is the code consistence and well structured, also do they follow naming conventions in recent pull requests?
 
-###### Are all the used libraries supported and not deprecated and not having any deprecated methods in use, in recent pull requests?
+###### Are all the used libraries supported and not deprecated and not having any deprecated methods in use, in recent pull requests check SonarQube?
 
 ###### Are the security vulnerabilities found by SonarQube resolved in the pull requests?
 
