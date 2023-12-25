@@ -19,8 +19,6 @@
 
 ###### Can you track and trace a request across multiple services easily?
 
-###### Are communications between your microservices secured?
-
 ##### Ask the student to explain one of the Ansible playbook
 
 ###### Did he/she clearly explain all the Ansible playbook
@@ -75,11 +73,15 @@
 
 ##### Assess code review and best practices.
 
+###### Is the code consistent and well-structured?
+
+###### Are all pull requests following naming conventions such as (Camel Case, Pascal Case, ...), Consistency, clarity and descriptiveness?
+
 ###### Is the code consistence and well structured, also do they follow naming conventions in recent pull requests?
 
 ##### Check SonarQube logs in recent pull requests.
 
-###### is the log free of warnings about unsupported or deprecated libraries?
+###### Is the log free of warnings about unsupported or deprecated libraries?
 
 ###### Are the security vulnerabilities found by SonarQube resolved in the pull requests?
 
