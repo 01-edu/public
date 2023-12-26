@@ -43,11 +43,11 @@ The student must launch his program by passing the IP address of a website as th
 5900 VNC  
 25565 Minecraft
 
-##### Run `tinyscanner -p 127.0.0.1 -t 80`
+##### Run `tinyscanner -t 127.0.0.1 -p 80`
 
 ###### Does port 80 show as open?
 
-##### Run a local server using udp protocol with the port 8080 and run `tinyscanner -p 127.0.0.1 -u 80`
+##### Run a local server using udp protocol with the port 8080 and run `tinyscanner -u 127.0.0.1 -p 80`
 
 ###### Does port 80 show as open?
 
