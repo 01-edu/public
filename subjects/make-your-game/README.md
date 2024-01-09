@@ -8,7 +8,9 @@ JavaScript to make it.
 
 Your game will be single player only and you will have to create your
 own engine and tools for the game. And as you try to search for all sorts
-of information you start to remember all the [60 FPS memes](https://pics.me.me/60-fps-59-fps-35518800.png).
+of information you start to remember all the 60 FPS memes.
+
+![59fps meme](resources/59fps.jpeg)
 
 ### Objectives
 
