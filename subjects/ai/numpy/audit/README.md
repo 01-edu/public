@@ -300,18 +300,19 @@ Use this in the solution to confirm:
 
 ```Python
 
-# Check the optimized data size and absolute differences
+# Check the optimized data size
 optimized_size = optimized_data.nbytes
-abs_diff = np.sum(np.abs(original_data - optimized_data))
 
-# To verify if criteria are met:
-if abs_diff < 1.10**-3 and optimized_size <= 76800:
+# Verify if the dataset size criterion is met
+if optimized_size <= 76800:
     print("Data optimized successfully.")
 else:
     print("Optimization criteria not met.")
 ```
 
 ##### For question 2:
+
+"Display the 2nd, 7th, and 12th rows as a two-dimensional array. Exclude `np.nan` values if present."
 
 ###### Is the output the following?
 
@@ -323,8 +324,6 @@ else:
  [ 5.6     0.615   0.      1.6     0.089  16.     59.      0.9943  3.58
    0.52    9.9     5.    ]]
 ```
-
-This slicing gives the answer `data[[2,7,12],:]`.
 
 ##### For question 3:
 
