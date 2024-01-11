@@ -14,7 +14,7 @@ Go to the following 7 websites and make the color palettes out of them (3 to 4 m
 - [https://www.jrpass.com/](https://www.jrpass.com/)
 - [https://www.thesiff.com/](https://www.thesiff.com/)
 - [https://brave.com/es/](https://brave.com/es/)
-- [https://www.nhp.gov.in/](https://www.nhp.gov.in/)
+- [https://www.ted.com/](https://www.ted.com/)
 
 **Deliverable:**
 
@@ -70,7 +70,7 @@ Don't forget to :
 - [https://www.jrpass.com/](https://www.jrpass.com/)
 - [https://www.thesiff.com/](https://www.thesiff.com/)
 - [https://brave.com/es/](https://brave.com/es/)
-- [https://www.nhp.gov.in/](https://www.nhp.gov.in/)
+- [https://www.ted.com/](https://www.ted.com/)
 
 ## Color combinations
 
