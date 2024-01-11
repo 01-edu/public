@@ -13,7 +13,7 @@ I suggest to use the most recent one.
 
 ### Resources
 
-- [Why Should We Use NumPy](https://medium.com/fintechexplained/)why-should-we-use-NumPy-c14a4fb03ee9
+- [Why Should We Use NumPy](https://medium.com/fintechexplained/why-should-we-use-NumPy-c14a4fb03ee9)
 - [NumPy Documentation](https://numpy.org/doc/)
 - [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
 
@@ -183,14 +183,14 @@ The goal of this exercise is to learn to access values of n-dimensional arrays e
        [1, 0, 1, 0, 0, 0, 1, 0, 1],
        [1, 0, 1, 1, 1, 1, 1, 0, 1],
        [1, 0, 0, 0, 0, 0, 0, 0, 1],
-       [1, 1, 1, 1, 1, 1, 1, 1, 1]], dtype=int8)
+       [1, 1, 1, 1, 1, 1, 1, 1, 1]], dtype=np.int8)
    ```
 
 3. Using **broadcasting** create an output matrix based on the following two arrays:
 
    ```python
-   array_1 = np.array([1,2,3,4,5], type=int8)
-   array_2 = np.array([1,2,3], dtype=int8)
+   array_1 = np.array([1,2,3,4,5], dytpe=np.int8)
+   array_2 = np.array([1,2,3], dytpe=np.int8)
    ```
 
 Expected output:
@@ -292,9 +292,9 @@ The goal of this exercise is to perform fundamental data analysis on real data u
 
 The dataset chosen for this task is the [red wine dataset](https://archive.ics.uci.edu/ml/datasets/wine+quality)
 
-1. Load the data using `genfromtxt`, specifying the delimiter as ';', and optimize the numpy array size by reducing the data types. Ensure that the sum of absolute differences between the original and the "memory" optimized dataset is less than `1.10**-3`. Use `np.float32` and verify that the resulting numpy array weighs **76800 bytes**.
+1. Load the data using `genfromtxt`, specifying the delimiter as ';', and optimize the numpy array size by reducing the data types. Use `np.float32` and verify that the resulting numpy array weighs **76800 bytes**.
 
-2. Display the 2nd, 7th, and 12th rows as a two-dimensional array.
+2. Display the 2nd, 7th, and 12th rows as a two-dimensional array. Exclude `np.nan` values if present.
 
 3. Determine if there is any wine in the dataset with an alcohol percentage greater than 20%. Return True or False.
 
