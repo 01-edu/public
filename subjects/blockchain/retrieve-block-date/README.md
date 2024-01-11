@@ -2,12 +2,14 @@
 
 ### Instructions
 
-Using Node.js, create and exports a function `retrieveBlockDate()` that takes as input the height of a block and returns the date of this block. The date must be a `date` javascript object. The script must connect to a local node available on `localhost:18443`, with the user `leeloo` and the password `multipass`.
+Using Node.js, create and exports a function `retrieveBlockDate()` that takes as input the height of a block and returns the date of this block. The script must connect to a local node available on `localhost:18443`, with the user `leeloo` and the password
+`multipass`.
 
 ### Usage
 
 ```js
-retrieveBlockDate(1881467) // Expected : 2020-11-05T20:18:48.000Z
+retrieveBlockDate(1881467) // Expected : 1604607528
+
 ```
 
 ### Notions
