@@ -101,9 +101,9 @@ consistent deployments of the microservices.
 
 ![code-keeper](resources/code-keeper.png)
 
-1. You will use your `crud-master` source code and `cloud-design`
-   infrastructure, to create a complete pipeline for the following
-   applications:
+1. Use the provided [`crud-master` source
+   code](https://github.com/01-edu/crud-master-py), to create a complete
+   pipeline for the following applications:
 
 - `Inventory application` is a server that contains your inventory-app code
   running and connected to the inventory database.
@@ -220,6 +220,7 @@ you can implement anything that you feel deserves to be a bonus, for example:
 - Add `Infracost` in your infrastructure pipeline to estimate the
   infrastructure cost.
 - Use `Terragrunt` to create multiple Environments.
+- Use your own `crud-master` source code and `cloud-design` infrastructure.
 
 Challenge yourself!
 
