@@ -119,7 +119,7 @@ X, y, coef = make_regression(n_samples=100,
 
 ![alt text][q1]
 
-[q1]: ./w2_day1_ex2_q1.png "Scatter plot"
+[q1]: ./w2_day1_ex2_q1.png 'Scatter plot'
 
 2. Fit a LinearRegression from Scikit-learn on the generated data and give the equation of the fitted line. The expected output is: `y = coef * x + intercept`
 
@@ -127,7 +127,7 @@ X, y, coef = make_regression(n_samples=100,
 
 ![alt text][q3]
 
-[q3]: ./w2_day1_ex2_q3.png "Scatter plot + fitted line"
+[q3]: ./w2_day1_ex2_q3.png 'Scatter plot + fitted line'
 
 4. Predict on X.
 
@@ -222,7 +222,7 @@ _Warning: The shape of X is not the same as the shape of y. You may need (for so
 
 ![alt text][ex5q1]
 
-[ex5q1]: ./w2_day1_ex5_q1.png "Scatter plot "
+[ex5q1]: ./w2_day1_ex5_q1.png 'Scatter plot '
 
 As a reminder, fitting a Linear Regression on this data means finding (a, b) that fits well the data points.
 
@@ -304,7 +304,7 @@ The expected output is:
 
 ![alt text][ex5q5]
 
-[ex5q5]: ./w2_day1_ex5_q5.png "MSE "
+[ex5q5]: ./w2_day1_ex5_q5.png 'MSE '
 
 6. From the `losses` list, find the optimal value of a and b and plot the line in the scatter point of question 1.
 
@@ -312,7 +312,7 @@ In this example we computed 160 000 times the MSE. It is frequent to deal with 5
 
 ### Gradient Descent
 
-In a nutshell, Gradient descent is an optimization algorithm used to minimize some function by iteratively moving in the direction of steepest descent as defined by the negative of the gradient. In machine learning, we use gradient descent to update the parameters (a and b) of our model. Parameters refer to the coefficients used in Linear Regression. Before to start implementing the questions, take the time to read the article. https://jairiidriss.medium.com/gradient-descent-algorithm-from-scratch-using-python-2b36c1548917. It explains the gradient descent and how to implement it. The "tricky" part is the computation of the derivative of the mse. You can admit the formulas of the derivatives to implement the gradient descent (`d_theta_0` and `d_theta_1` in the article).
+In a nutshell, Gradient descent is an optimization algorithm used to minimize some function by iteratively moving in the direction of steepest descent as defined by the negative of the gradient. In machine learning, we use gradient descent to update the parameters (a and b) of our model. Parameters refer to the coefficients used in Linear Regression. Before to start implementing the questions, take the time to read [this article](https://medium.com/@yennhi95zz/4-a-beginners-guide-to-gradient-descent-in-machine-learning-773ba7cd3dfe). It explains the gradient descent and how to implement it. The "tricky" part is the computation of the derivative of the mse. You can admit the formulas of the derivatives to implement the gradient descent (`d_theta_0` and `d_theta_1` in the article).
 
 7. Implement the gradient descent to find optimal a and b with `learning rate = 0.1` and `nbr_iterations=100`.
 
@@ -320,6 +320,6 @@ In a nutshell, Gradient descent is an optimization algorithm used to minimize so
 
 ![alt text][ex5q8]
 
-[ex5q8]: ./w2_day1_ex5_q8.png "MSE + Gradient descent"
+[ex5q8]: ./w2_day1_ex5_q8.png 'MSE + Gradient descent'
 
 9. Use Linear Regression from Scikit-learn. Compare the results.
