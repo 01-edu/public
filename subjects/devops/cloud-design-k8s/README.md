@@ -62,11 +62,9 @@ decisions, architecture, and implementation.
 
 ### Architecture
 
-By using the provided previous projects' solutusion
-[`crud-master-py`](https://github.com/01-edu/crud-master-py),
-[`play-with-containers`](https://github.com/01-edu/play-with-containers), and
+By using the provided project's solutusion
 [`orchestrator`](https://github.com/01-edu/orchestrator) you have to design and
-deploy the infrastructure on your chose Cloud provider respecting the project
+deploy the infrastructure on your chosen Cloud provider respecting the project
 requirements, consisting of the following components:
 
 - `inventory-database container` is a PostgreSQL database server that contains
@@ -140,21 +138,14 @@ reasonable cost range. Consider the following when designing your architecture:
 
 ### Infrastructure as Code:
 
-Provision the necessary resources for your AWS environment using Terraform as
+Provision the necessary resources for your Cloud environment using Terraform as
 an Infrastructure as Code (IaC) tools. This includes setting up Cloud computing
 instances, containers, networking components, and storage services (e.g. AWS
 S3).
 
-### Containerize the microservices:
-
-Use Docker to build container images for each microservice. Make sure to
-optimize the Dockerfile for each service to reduce the image size and build
-time.
-
 ### Deployment:
 
-Deploy the containerized microservices on your cloud provider using an
-orchestration tool. You must use K8s.  
+Deploy the containerized microservices on your cloud provider using K8s.  
 Ensure that the services are load-balanced (consider using a load
 balancer) and can communicate with each other securely.
 
@@ -194,8 +185,7 @@ project.
 If you complete the mandatory part successfully and you still have free time,
 you can implement anything that you feel deserves to be a bonus, for example:
 
-- Use your own `crud-master`, `play-with-containers`, and `orchestrator`
-  solution instead of the provided ones.
+- Use your own  `orchestrator` solution instead of the provided ones.
 
 - Use `Function as a Service (FaaS)` in your solution.
 

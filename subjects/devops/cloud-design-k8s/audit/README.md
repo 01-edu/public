@@ -60,7 +60,17 @@ Review the student's architecture design, ensuring that it meets the project req
 
 ##### Verify the deployment. Ask the auditee **to show you**, the auditor, the use of the commands `kubectl`, the CLI tool for the chosen cloud provider and any other necessary with the right options to answer the following questions.
 
-###### Are all the microservices running as expected in the cloud environment, with no errors or connectivity issues?
+##### Ask the student to run the command `kubectl get pods -A`. Ensure the `KUBECONFIG` environment variable is correctly set to communicate with the K8s cluster deployed in the cloud.
+
+###### Are all the microservices running as expected in the cloud environment?
+
+##### Test CRUD (create, read, update and delete) operations for the `invenotry app` microservice.
+
+###### Is everything working as expected?
+
+##### Test the `billing app` microservice. Add an order to the queue and ask the student to show the updated database.
+
+###### Is everything working as expected?
 
 ###### Is the load balancing configured correctly, effectively distributing traffic across the services?
 
