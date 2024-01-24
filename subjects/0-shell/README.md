@@ -27,6 +27,9 @@ For this project you will only have to create a simple `Unix shell` where you ca
   - mv
   - mkdir
   - exit
+
+> The commands need to be implemented from scratch. It is not allowed to have a Shell call that execute the required commands.
+
 - You must manage the program interruption `Ctrl + D`.
 - The project has to be written in a compiled language (like C, Rust, Go or other), **interpreted languages (like Perl and others) are not allowed**.
 - The code must respect the [good practices](https://public.01-edu.org/subjects/good-practices/)
