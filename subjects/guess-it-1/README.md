@@ -66,9 +66,9 @@ Here is a following example of the script, assuming that the program is called `
 node ./student/solution.js
 ```
 
-You can choose in which language you want to build your program.
+You can choose one of the following languages to build your program: golang, JS, rust, python.
 
-If you fail one of these steps, the test will not work. So we advise you to run the test by downloading [this zip file](https://assets.01-edu.org/guess-it/guess-it.zip) containing the tester. You should place the `student/` folder in the root directory of the items provided and read its instructions. The data sets used to test this exercise will be `Data 1`, `Data 2` and `Data 3`.
+If you fail one of these steps, the test will not work. So we advise you to run the test by downloading [this zip file](https://assets.01-edu.org/guess-it/guess-it-dockerized.zip) containing the tester. You should place the `student/` folder in the root directory of the items provided and read its instructions. The data sets used to test this exercise will be `Data 1`, `Data 2` and `Data 3`.
 
 This project will help you learn about:
 
