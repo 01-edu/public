@@ -2,7 +2,7 @@
 
 ###### Was the project written in a compiled programming language?
 
-###### Are the commands mentioned in the subject implemented from scratch, without calling any equivalent shell implementation?
+###### Are the commands mentioned in the subject implemented from scratch, without calling any external binaries?
 
 #### Functional
 
