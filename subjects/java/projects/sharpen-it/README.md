@@ -6,7 +6,7 @@ In this project, your task is to finalize the provided environment for your proj
 
 ### Instructions
 
-You have to download this [Environment](./env.zip), then you will find two folders, one for Jenkins and another for SonarQube. Your goals finish up all the messing configurations and make the environment functional
+You have to download this [Environment](./env.zip), then you will find two folders, one for Jenkins and another for SonarQube. Your goal is to finish the given infrastructure and make the environment functional and compliant with the below requirements.
 
 #### Jenkins
 
@@ -16,7 +16,7 @@ You have to download this [Environment](./env.zip), then you will find two folde
 
 - Set up credentials to access your repository.
 
-- Fix and test the build and testing processes for both the back-end and front-end.
+- Fix the provided pipeline to build and test the back-end and front-end
 
 - Complete and rectify the configuration for deployment.
 

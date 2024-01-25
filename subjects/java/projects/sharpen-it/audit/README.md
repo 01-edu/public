@@ -16,7 +16,7 @@
 
 ###### Are tests run automatically during the pipeline execution? Does the pipeline halt on test failure?
 
-##### Make a minor change in the source code, create a new PR and Observe if the pipeline is triggered automatically.
+##### Make a minor change in the source code, create a new PR and observe if the pipeline is triggered automatically.
 
 ###### Does a new PR automatically trigger the Jenkins pipeline?
 
