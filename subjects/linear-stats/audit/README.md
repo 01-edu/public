@@ -1,7 +1,7 @@
 #### Functional
 
-##### After downloading the [file](https://assets.01-edu.org/stats-projects/linear-stats) and giving executable permissions
-##### Run the script with `./linear-stats`, then run the program of the student with the created file (`data.txt`) by the previous command.
+##### After downloading the [file](https://assets.01-edu.org/stats-projects/stat-bin-dockerized.zip) and giving executable permissions
+##### Run the script with `./bin/linear-stats`, then run the program of the student with the created file (`data.txt`) by the previous command.
 
 ###### Are the outputs of both programs (the one provided and the student one) in the same format?
 
