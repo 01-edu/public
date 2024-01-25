@@ -17,16 +17,16 @@ For this project you will only have to create a simple `Unix shell` where you ca
 - The command lines are simple, you will not have pipes, redirection or any other advanced functions.
 - You must manage the errors, by displaying a message adapted to the error output.
 - You must implement the following commands:
-  - echo
-  - cd
-  - ls
-  - pwd
-  - cat
-  - cp
-  - rm
-  - mv
-  - mkdir
-  - exit
+  - `echo`
+  - `cd`
+  - `ls`, including the flags `-l`, `-a` and `-F`
+  - `pwd`
+  - `cat`
+  - `cp`
+  - `rm`, including the flag `-r`
+  - `mv`
+  - `mkdir`
+  - `exit`
 
 > The commands need to be implemented from scratch. It is not allowed to execute external binaries.
 
