@@ -22,15 +22,15 @@ project
 
 ###### Does the structure of the project look like the above?
 
-###### Does the readme file give an introduction of the project, show the username, describe the feature engineering and show the best score on the leaderboard?
+###### Does the README file give an introduction of the project, show the username, describe the feature engineering and show the best score on the leaderboard?
 
 ###### Does the environment contain all libraries used and their versions that are necessary to run the code?
 
-##### Scrapper
+##### Scraper
 
 ##### There are at least 300 news articles stored in the file system or the database.
 
-###### Run the scrapper with `python scrapper_news.py` and fetch 3 documents. The scrapper is not expected to fetch 3 documents and stop by itself, you can stop it manually. does it run without any error and store the 3 files as expected?
+###### Run the scraper with `python scraper_news.py` and fetch 3 documents. The scraper is not expected to fetch 3 documents and stop by itself, you can stop it manually. Does it run without any error and store the 3 files as expected?
 
 ##### Topic classifier
 
@@ -57,7 +57,7 @@ project
 ###### Are the columns of the DataFrame as expected?
 
 ```
-Date scrapped (date)
+Date scraped (date)
 Title (str)
 URL (str)
 Body (str)
@@ -69,13 +69,13 @@ Top_10 (bool)
 
 ```
 
-##### Analyse the DataFrame with 300 articles: relevance of the topics matched, relevance of the sentiment, relevance of the scandal detected and relevance of the companies matched. The algorithms are not 100% accurate so you should expect a few issues in the results.
+##### Analyse the DataFrame with 300 articles: relevance of the topics matched, relevance of the sentiment, relevance of the scandal detected and relevance of the companies matched. The algorithms are not 100% accurate, so you should expect a few issues in the results.
 
 ##### NLP engine on 3 articles
 
 ###### Can you run `python nlp_enriched_news.py` without any error?
 
-###### Does the output of the nlp engine correspond to the output below?
+###### Does the output of the NLP engine correspond to the output below?
 
 ```prompt
 python nlp_enriched_news.py
@@ -107,4 +107,4 @@ Computing embeddings and distance ...
 Environmental scandal detected for <entity>
 ```
 
-##### Analyse the output: relevance of the topic(s) matched, relevance of the sentiment, relevance of the scandal detected (if detected on the three articles) and relevance of the companie(s) matched.
+##### Analyse the output: relevance of the topic(s) matched, relevance of the sentiment, relevance of the scandal detected (if detected on the three articles) and relevance of the company(ies) matched.
