@@ -25,6 +25,9 @@ News data source:
 
 Use data from the last week otherwise the volume may be too high.
 
+There should be at least 300 articles stored in your file system or SQL
+database.
+
 ### NLP engine
 
 In production architectures, the NLP engine delivers a live output based on the
