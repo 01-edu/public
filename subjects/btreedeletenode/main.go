@@ -4,6 +4,11 @@ import (
 	"fmt"
 )
 
+type TreeNode struct {
+	Left, Right, Parent *TreeNode
+	Data                string
+}
+
 func main() {
 	root := &TreeNode{Data: "4"}
 	BTreeInsertData(root, "1")
