@@ -50,7 +50,8 @@ https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a
 ### **2. Topic detection:**
 
 The goal is to detect what the article is dealing with: Tech, Sport, Business,
-Entertainment or Politics. To do so, a labelled dataset is provided. From this
+Entertainment or Politics. To do so, a labelled dataset is provided: [training
+data](bbc_news_train.csv) and [test data](bbc_news_test.csv). From this
 dataset, build a classifier that learns to detect the right topic in the
 article. The trained model should be stored as `topic_classifier.pkl`. Make
 sure the model can be used easily (with the preprocessing pipeline built for
