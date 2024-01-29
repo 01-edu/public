@@ -5,11 +5,6 @@ import (
 	"piscine"
 )
 
-type NodeI struct {
-	Data int
-	Next *NodeI
-}
-
 func PrintList(l *piscine.NodeI) {
 	it := l
 	for it != nil {
