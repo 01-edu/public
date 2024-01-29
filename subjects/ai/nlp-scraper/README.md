@@ -69,16 +69,17 @@ that the model is trained correctly and not overfitted.
 
 ### **3. Sentiment analysis:**
 
-The goal is to detect the sentiment of the news articles. To do so, use a
-pre-trained sentiment model. I suggest to use: `NLTK`. There are 3 reasons for
-which we use a pre-trained model:
+The goal is to detect the sentiment (positive, negative or neutral) of the news
+articles. To do so, use a pre-trained sentiment model. I suggest to use:
+`NLTK`. There are 3 reasons for which we use a pre-trained model:
 
 1. As a Data Scientist, you should learn to use a pre-trained model. There are
    so many models available and trained that sometimes you don't need to train
    one from scratch.
 2. Labelled news data for sentiment analysis are very expensive. Companies as
    [SESAMm](https://www.sesamm.com/) provide this kind of services.
-3. You already know how to train a sentiment analysis classifier ;-)
+
+- [Sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis)
 
 ### **4. Scandal detection **
 
