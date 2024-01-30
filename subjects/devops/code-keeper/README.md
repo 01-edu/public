@@ -102,8 +102,9 @@ consistent deployments of the microservices.
 ![code-keeper](resources/code-keeper.png)
 
 1. Use the provided [`crud-master` source
-   code](https://github.com/01-edu/crud-master-py), to create a complete
-   pipeline for the following applications:
+   code](https://github.com/01-edu/crud-master-py) and your `cloud-design` or
+   `cloud-kube` infrastructure, to create a complete pipeline for the following
+   applications:
 
 - `Inventory application` is a server that contains your inventory-app code
   running and connected to the inventory database.
@@ -114,8 +115,9 @@ consistent deployments of the microservices.
   running and forwarding the requests to the other services.
   > Each application must exist in a single repository.
 
-2. You must provision your `cloud-design` infrastructure for two environments
-   on a cloud platform (e.g., AWS, Azure, or Google Cloud) using `Terraform`.
+2. You must provision your `cloud-design` or `cloud-kube` infrastructure for
+   two environments on a cloud platform (e.g., AWS, Azure, or Google Cloud)
+   using `Terraform`.
 
 - `Production Environment`: The live infrastructure where the software is
   deployed and used by end-users, requires stable and thoroughly tested updates
@@ -123,6 +125,7 @@ consistent deployments of the microservices.
 - `Staging Environment`: A replica of the production environment used for
   testing and validating software updates in a controlled setting before
   deployment to the live system.
+
   > The two environments should be similar in design, resources, and services
   > used! Your infrastructure configuration must exist in an independent
   > repository with a configured pipeline!
@@ -220,7 +223,7 @@ you can implement anything that you feel deserves to be a bonus, for example:
 - Add `Infracost` in your infrastructure pipeline to estimate the
   infrastructure cost.
 - Use `Terragrunt` to create multiple Environments.
-- Use your own `crud-master` source code and `cloud-design` infrastructure.
+- Use your own `crud-master` source code.
 
 Challenge yourself!
 
