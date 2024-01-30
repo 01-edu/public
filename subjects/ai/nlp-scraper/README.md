@@ -91,19 +91,22 @@ The goal is to detect environmental disaster for the detected companies. Here
 is the methodology that should be used:
 
 - Define keywords that correspond to environmental disaster that may be caused
-  by companies: pollution, deforestation etc ... Here is an example of disaster
-  we want to detect: https://en.wikipedia.org/wiki/MV_Erika. Pay attention to
-  not use ambiguous words that make sense in the context of an environmental
-  disaster but also in another context. This would lead to detect a false
-  positive natural disaster.
+  by companies: pollution, deforestation etc ... Here is [an example of
+  disaster we want to detect](https://en.wikipedia.org/wiki/MV_Erika). Pay
+  attention to not use ambiguous words that make sense in the context of an
+  environmental disaster but also in another context. This would lead to detect
+  a false positive natural disaster.
 
-- Compute the embeddings of the keywords.
+- Compute the [embeddings of the
+  keywords](https://en.wikipedia.org/wiki/Word_embedding#Software).
 
-- Compute the distance between the embeddings of the keywords and all sentences
-  that contain an entity. Explain in the `README.md` the embeddings chosen and
-  why. Similarly explain the distance or similarity chosen and why.
+- Compute the distance ([here some
+  examples](https://www.nltk.org/api/nltk.metrics.distance.html#module-nltk.metrics.distance))
+  between the embeddings of the keywords and all sentences that contain an
+  entity. Explain in the `README.md` the embeddings chosen and why. Similarly
+  explain the distance or similarity chosen and why.
 
-- Save the distance
+- Save a metric to unify all the distances calculated per article. 
 
 - Flag the top 10 articles.
 
