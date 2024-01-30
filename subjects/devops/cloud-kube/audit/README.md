@@ -64,7 +64,15 @@ Review the student's architecture design, ensuring that it meets the project req
 
 ###### Are all the microservices running as expected in the cloud environment?
 
-##### Test CRUD (create, read, update and delete) operations for the `invenotry app` microservice.
+##### Ask the student to run the command `kubectl get services`.
+
+###### Are there enough services deployed to allow proper communication between the pods and the internet?
+
+##### Ask the student to run the command `kubectl get pvc` or `kubectl get pv`.
+
+###### Are there enough persistent volumes (or volumes claims) per each database defined in the application?
+
+##### Test CRUD (create, read, update and delete) operations for the `inventory app` microservice.
 
 ###### Is everything working as expected?
 
