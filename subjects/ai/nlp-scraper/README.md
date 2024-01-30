@@ -1,4 +1,4 @@
-# NLP-enriched News Intelligence platform
+## NLP-enriched News Intelligence platform
 
 The goal of this project is to build an NLP-enriched News Intelligence
 platform. News analysis is a trending and important topic. The analysts get
@@ -7,7 +7,8 @@ limitless. Having a platform that helps to detect the relevant information is
 definitely valuable.
 
 The platform connects to a news data source, detects the entities, detects the
-topic of the article, analyse the sentiment and ...
+topic of the article, analyses the sentiment and performs a scandal detection
+analysis.
 
 ### Scraper
 
@@ -40,7 +41,7 @@ the stored data.
 
 Here how the NLP engine should process the news:
 
-### **1. Entities detection:**
+#### **1. Entities detection:**
 
 The goal is to detect all the entities in the document (headline and body). The
 type of entity we focus on is `ORG`. This corresponds to companies and
@@ -51,7 +52,7 @@ organizations. This information should be stored.
 [Named Entity Recognition with NLTK and
 SpaCy](https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da)
 
-### **2. Topic detection:**
+#### **2. Topic detection:**
 
 The goal is to detect what the article is dealing with: Tech, Sport, Business,
 Entertainment or Politics. To do so, a labelled dataset is provided: [training
@@ -71,7 +72,7 @@ that the model is trained correctly and not overfitted.
   [following](https://www.kaggle.com/rmisra/news-category-dataset) which is
   based on 200k news headlines.
 
-### **3. Sentiment analysis:**
+#### **3. Sentiment analysis:**
 
 The goal is to detect the sentiment (positive, negative or neutral) of the news
 articles. To do so, use a pre-trained sentiment model. I suggest to use:
@@ -83,9 +84,7 @@ articles. To do so, use a pre-trained sentiment model. I suggest to use:
 2. Labelled news data for sentiment analysis are very expensive. Companies as
    [SESAMm](https://www.sesamm.com/) provide this kind of services.
 
-- [Sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis)
-
-### **4. Scandal detection**
+#### **4. Scandal detection**
 
 The goal is to detect environmental disaster for the detected companies. Here
 is the methodology that should be used:
@@ -110,7 +109,7 @@ is the methodology that should be used:
 
 - Flag the top 10 articles.
 
-### 5. **Source analysis (optional)**
+#### 5. **Source analysis (optional)**
 
 The goal is to show insights about the news' source you scraped.
 This requires to scrap data on at least 5 days (a week ideally). Save the plots
@@ -218,6 +217,7 @@ python scraper_news.py
 > all the intermediate result. Then, a boolean argument `cache` fetched the
 > intermediate results when they are already computed.
 
-Resources:
+### Notions
 
-- https://www.youtube.com/watch?v=XVv6mJpFOb0
+- [Web Scraping](https://www.youtube.com/watch?v=XVv6mJpFOb0)
+- [Sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis)
