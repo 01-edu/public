@@ -2,7 +2,7 @@
 
 <center>
 <img 
-    src="./resources/cloud-design.jpg?raw=true" style = "width: 600px
+    src="./resources/cloud-kube.png?raw=true" style = "width: 600px
     !important; height: 600px !important;"/>
 </center>
 
@@ -13,7 +13,7 @@ cloud technologies by providing hands-on experience in deploying and managing a
 microservices-based application with a Cloud Provider platform. Your mission is
 to:
 
-Set up and configure an Cloud Provider environment for deploying microservices.
+Set up and configure a Cloud Provider environment for deploying microservices.
 Deploy the provided microservices' application to the defined environment.
 Implement monitoring, logging, and scaling to ensure that the application runs
 efficiently. Implement security measures, such as securing the databases and
@@ -62,7 +62,7 @@ decisions, architecture, and implementation.
 
 ### Architecture
 
-By using the provided project's solutusion
+By using the provided project's solution
 [`orchestrator`](https://github.com/01-edu/orchestrator) you have to design and
 deploy the infrastructure on your chosen Cloud provider respecting the project
 requirements, consisting of the following components:
