@@ -1,4 +1,4 @@
-## Cloud-Design
+## Cloud-Kube
 
 <center>
 <img 
@@ -42,7 +42,7 @@ Before starting this project, you should know the following:
 ### Role play
 
 To enhance the learning experience and assess your knowledge, a role play
-question session will be included as part of the `Cloud-Design-k8s` Project.
+question session will be included as part of the `Cloud-Kube` Project.
 This section will involve answering a series of questions in a simulated
 real-world scenario where you assume the role of a Cloud engineer explaining
 your solution to a team or stakeholder.
