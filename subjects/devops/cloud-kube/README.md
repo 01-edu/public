@@ -67,10 +67,11 @@ decisions, architecture, and implementation.
 
 ### Architecture
 
-By using the provided project's solution
-[`orchestrator`](https://github.com/01-edu/orchestrator) you have to design and
-deploy the infrastructure on your chosen Cloud provider respecting the project
-requirements, consisting of the following components:
+By using the [provided container
+images](https://github.com/01-edu/play-with-containers) you have to define your
+K8s manifests and deploy your infrastructure on your chosen cloud
+provider respecting the project requirements, consisting of the following
+components:
 
 - `inventory-database container` is a PostgreSQL database server that contains
   your inventory database, it must be accessible via port `5432`.
@@ -189,10 +190,10 @@ project.
 
 ### Bonus
 
-If you complete the mandatory part successfully and you still have free time,
+If you complete the mandatory part successfully, and you still have free time,
 you can implement anything that you feel deserves to be a bonus, for example:
 
-- Use your own `orchestrator` solution instead of the provided ones.
+- Use your own container images instead of the provided ones.
 
 - Use `Content Delivery Network (CDN)` to optimize your solution.
 

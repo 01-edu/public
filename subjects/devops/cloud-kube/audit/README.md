@@ -13,7 +13,7 @@ Files that must be inside the repository:
 ##### Play the role of a stakeholder.
 
 Organize a simulated scenario where the students take on the role of Cloud engineers and explain their solution to a team or stakeholder. Evaluate their grasp of the concepts and technologies used in the project, their communication efficacy, and their critical thinking about their solution.
-Suggested roleplay questions include:
+Suggested role play questions include:
 
 - What is the cloud and its associated benefits?
 - Why is deploying the solution in the cloud preferred over on-premises?
