@@ -32,7 +32,7 @@ You have to download this [Environment](./env.zip), then you will find two folde
 
 - Run the provided Docker Compose for SonarQube.
 
-- Complete the configuration to integrate SonarQube with your GitHub repository.
+- Complete the configuration to integrate SonarQube with your repository.
 
 - Ensure SonarQube runs regularly for continuous monitoring of code quality and security.
 

@@ -30,9 +30,9 @@
 
 ###### Is the SonarQube web interface accessible?
 
-##### Integrate SonarQube with your GitHub repository.
+##### Integrate SonarQube with your repository.
 
-###### Is SonarQube integrated with GitHub, and does it trigger code analysis on every PR In the repository?
+###### Is SonarQube integrated with your repo, and does it trigger code analysis on every PR In the repository?
 
 ##### Set up and configure SonarQube for code analysis using Docker.
 
@@ -46,13 +46,13 @@
 
 ###### Can the student explain every piece of the `Jenkinsfile`?
 
-###### Can the student describe the process of integrating Jenkins with the GitHub repository?
+###### Can the student describe the process of integrating Jenkins with the repository?
 
 ##### SonarQube Setup and Integration
 
 ###### Can the student explain the steps required to set up SonarQube within the project environment?
 
-###### Can the student describe the process of integrating SonarQube with the GitHub repository?
+###### Can the student describe the process of integrating SonarQube with the repository?
 
 ##### SonarQube Functionality
 
