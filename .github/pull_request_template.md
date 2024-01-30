@@ -16,8 +16,7 @@ DEV-#### | SUP-#### | CON-####
 
 ### Build Images
 
-> Please check the relevant images
-
-- [ ] Build Sh Docker Image
-- [ ] Build JS Docker Image
-- [ ] Build DOM Docker Image 
+> Please assign the label `📦 build` If you want to re-build the following test images:
+>- `💻 Sh` 
+>- `🚀 JS`
+>- `🧩 DOM`
