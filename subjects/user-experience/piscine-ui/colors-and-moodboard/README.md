@@ -368,7 +368,7 @@ Don't forget to:
 
 Create this image on Figma:
 
-![Spotify](Spotify.jpg)
+![Spotify](ui-challenge-spotify/Spotify.jpg)
 
 - Please make sure you use:
 
