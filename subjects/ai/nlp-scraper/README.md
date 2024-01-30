@@ -85,7 +85,7 @@ articles. To do so, use a pre-trained sentiment model. I suggest to use:
 
 - [Sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis)
 
-### **4. Scandal detection **
+### **4. Scandal detection**
 
 The goal is to detect environmental disaster for the detected companies. Here
 is the methodology that should be used:
@@ -176,7 +176,7 @@ URL (`str`)
 Body (`str`)
 Org (`str`)
 Topics (`list str`)
-Sentiment (`list float1 or `float`)
+Sentiment (`list float` or `float`)
 Scandal_distance (`float`)
 Top_10 (`bool`)
 
@@ -210,7 +210,9 @@ Computing embeddings and distance ...
 Environmental scandal detected for <entity>
 ```
 
-I strongly suggest creating a data structure (dictionary for example) to save all the intermediate result. Then, a boolean argument `cache` fetched the intermediate results when they are already computed.
+I strongly suggest creating a data structure (dictionary for example) to save
+all the intermediate result. Then, a boolean argument `cache` fetched the
+intermediate results when they are already computed.
 
 Resources:
 
