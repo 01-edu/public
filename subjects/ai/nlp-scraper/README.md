@@ -132,24 +132,20 @@ Here are examples of insights:
 
 ### Deliverables
 
-The structure of the project is:
+The expected structure of the project is:
 
 ```
 project
-│   README.md
-│   environment.yml
-│
-└───data
-│   │   topic_classification_data.csv
-│
-└───results
-│   │   topic_classifier.pkl
-│   │   learning_curves.png
-│   │   enhanced_news.csv
-|
-|───nlp_engine
-│
-
+.
+├── data
+│   └── date_scrape_data.csv
+├── nlp_enriched_news.py
+├── README.md
+├── results
+│   ├── topic_classifier.pkl
+│   ├── enhanced_news.csv
+│   └── learning_curves.png
+└── scraper_news.py
 ```
 
 1.  Run the scraper until it fetches at least 300 articles
