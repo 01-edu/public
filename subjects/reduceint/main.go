@@ -1,5 +1,9 @@
 package main
 
+import (
+	"piscine"
+)
+
 func main() {
 	mul := func(acc int, cur int) int {
 		return acc * cur
@@ -11,7 +15,7 @@ func main() {
 		return acc / cur
 	}
 	as := []int{500, 2}
-	ReduceInt(as, mul)
-	ReduceInt(as, sum)
-	ReduceInt(as, div)
+	piscine.ReduceInt(as, mul)
+	piscine.ReduceInt(as, sum)
+	piscine.ReduceInt(as, div)
 }

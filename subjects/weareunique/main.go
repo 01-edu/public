@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
+	"piscine"
 )
 
 func main() {
-	fmt.Println(WeAreUnique("foo", "boo"))
-	fmt.Println(WeAreUnique("", ""))
-	fmt.Println(WeAreUnique("abc", "def"))
+	fmt.Println(piscine.WeAreUnique("foo", "boo"))
+	fmt.Println(piscine.WeAreUnique("", ""))
+	fmt.Println(piscine.WeAreUnique("abc", "def"))
 }

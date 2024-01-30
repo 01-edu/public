@@ -1,9 +1,13 @@
 package main
 
+import (
+	"piscine"
+)
+
 func main() {
-	Chunk([]int{}, 10)
-	Chunk([]int{0, 1, 2, 3, 4, 5, 6, 7}, 0)
-	Chunk([]int{0, 1, 2, 3, 4, 5, 6, 7}, 3)
-	Chunk([]int{0, 1, 2, 3, 4, 5, 6, 7}, 5)
-	Chunk([]int{0, 1, 2, 3, 4, 5, 6, 7}, 4)
+	piscine.Chunk([]int{}, 10)
+	piscine.Chunk([]int{0, 1, 2, 3, 4, 5, 6, 7}, 0)
+	piscine.Chunk([]int{0, 1, 2, 3, 4, 5, 6, 7}, 3)
+	piscine.Chunk([]int{0, 1, 2, 3, 4, 5, 6, 7}, 5)
+	piscine.Chunk([]int{0, 1, 2, 3, 4, 5, 6, 7}, 4)
 }

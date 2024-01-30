@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"piscine"
+)
 
 func PrintList(l *List) {
 	it := l.Head
@@ -19,7 +22,7 @@ func main() {
 	fmt.Println("----normal state----")
 	ListPushBack(link2, 1)
 	PrintList(link2)
-	ListRemoveIf(link2, 1)
+	piscine.ListRemoveIf(link2, 1)
 	fmt.Println("------answer-----")
 	PrintList(link2)
 	fmt.Println()
@@ -38,7 +41,7 @@ func main() {
 	ListPushBack(link, 1)
 	PrintList(link)
 
-	ListRemoveIf(link, 1)
+	piscine.ListRemoveIf(link, 1)
 	fmt.Println("------answer-----")
 	PrintList(link)
 }
