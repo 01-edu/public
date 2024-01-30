@@ -13,6 +13,11 @@ cloud technologies by providing hands-on experience in deploying and managing a
 microservices-based application with a Cloud Provider platform. Your mission is
 to:
 
+You are a Cloud engineer working with a scalable company and your manager want
+you to create an infrastructure based on Kubernetes in a cloud provider of
+you choice, so your team can benefit from the features and scalability of
+Kubernetes.
+
 Set up and configure a Cloud Provider environment for deploying microservices.
 Deploy the provided microservices' application to the defined environment.
 Implement monitoring, logging, and scaling to ensure that the application runs
@@ -145,7 +150,9 @@ S3).
 
 ### Deployment:
 
-Deploy the containerized microservices on your cloud provider using K8s.  
+Deploy the containerized microservices on your cloud provider using K8s. You can
+choose to a cloud provider K8s managed service or deploy your cluster directly
+on a cloud computing instance.
 Ensure that the services are load-balanced (consider using a load
 balancer) and can communicate with each other securely.
 
@@ -163,10 +170,10 @@ the resources accordingly.
 
 ### Security:
 
-Implement security best practices by provisioning and managine SSL/TLS
+Implement security best practices by provisioning and managing SSL/TLS
 certificates for HTTPS, securing API endpoints with an API Gateway, regularly
 scanning for vulnerabilities with a proper service, and implementing managed
-authentication for publicly accessible applications with an authetication
+authentication for publicly accessible applications with an authentication
 management services. Ensure that the databases and private resources are secure
 and accessible only from the VPC.
 
@@ -185,9 +192,7 @@ project.
 If you complete the mandatory part successfully and you still have free time,
 you can implement anything that you feel deserves to be a bonus, for example:
 
-- Use your own  `orchestrator` solution instead of the provided ones.
-
-- Use `Function as a Service (FaaS)` in your solution.
+- Use your own `orchestrator` solution instead of the provided ones.
 
 - Use `Content Delivery Network (CDN)` to optimize your solution.
 
