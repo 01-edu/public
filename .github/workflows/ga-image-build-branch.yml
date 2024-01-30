@@ -28,19 +28,19 @@ jobs:
           password: ${{ secrets.SECRET_DOCKER_01EDU_ORG }}
 
       - name: 🏗️ Build the 💻 Sh Docker image
-        if: always()
+        if: github.event.pull_request.body.contains('[x] Build Sh Docker Image')
         run: |
           docker build sh/tests/ --file sh/tests/Dockerfile --tag ghcr.io/01-edu/test-sh:PR${{ github.event.pull_request.number }}
           docker push ghcr.io/01-edu/test-sh:PR${{ github.event.pull_request.number }}
 
       - name: 🏗️ Build the 🚀 JS Docker image
-        if: always()
+        if: github.event.pull_request.body.contains('[x] Build JS Docker Image')
         run: |
           docker build js/tests/ --file js/tests/Dockerfile --tag ghcr.io/01-edu/test-js:PR${{ github.event.pull_request.number }}
           docker push ghcr.io/01-edu/test-js:PR${{ github.event.pull_request.number }}
 
       - name: 🏗️ Build the 🧩 DOM Docker image
-        if: always()
+        if: github.event.pull_request.body.contains('[x] Build DOM Docker Image')
         run: |
           docker build . --file dom/Dockerfile --tag ghcr.io/01-edu/test-dom:PR${{ github.event.pull_request.number }}
           docker push ghcr.io/01-edu/test-dom:PR${{ github.event.pull_request.number }}
