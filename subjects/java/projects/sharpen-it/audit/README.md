@@ -38,6 +38,10 @@
 
 ###### Is SonarQube configured correctly, and does it analyze code before the CI/CD pipeline?
 
+##### Check how the environment is linked to the repository.
+
+###### Is the project repository free of sensitive information such as API keys or equivalent?
+
 #### Comprehension
 
 ##### Jenkins Setup and Integration
