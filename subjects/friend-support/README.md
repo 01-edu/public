@@ -8,7 +8,7 @@ Create a `friend-support.mjs` program that will open a server to remotely access
 
 Here below the description of the expected behaviors of your program:
 
-- It has to listen on port `5000`, and it will have to print a simple message on the console, specifying the listening port;
+- It has to listen on port `5000`, and it will have to print a simple message on the console as soon as it starts, specifying the listening port;
 - Its HTTP response should always contain a coherent status code depending on the handling of the received HTTP request. More specifically, your server should be able to respond with the following status codes: `200`, `404` and `500`;
 - The responses will always be JSON and this information should be included in the HTTP response;
 - For each HTTP request, your program should try to open the corresponding guest JSON file and provide the content as JSON in the HTTP response, if possible. When the guess specified in the request is not found, the server should return an object with the attribute `error` defined as `guest not found`;
