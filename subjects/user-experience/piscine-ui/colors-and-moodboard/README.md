@@ -195,7 +195,7 @@ Go to these websites and detect the typographies used.
 - [https://www.strongbowcider.com/bug-exterminator-brisbane](https://www.strongbowcider.com/bug-exterminator-brisbane)
 - [http://www.bbqgrillsandfire.com/](http://www.bbqgrillsandfire.com/)
 - [https://pt.wikipedia.org/wiki/Mario_Botta](https://pt.wikipedia.org/wiki/Mario_Botta)
-- [https://texas-private-investigator.com/](https://texas-private-investigator.com/)
+- [https://skyinvestigations.com/](https://skyinvestigations.com/)
 - [https://bumble.com/](https://bumble.com/)
 - [https://adopte1poule.fr/](https://adopte1poule.fr/)
 - [http://slaveryfootprint.org/](http://slaveryfootprint.org/)
