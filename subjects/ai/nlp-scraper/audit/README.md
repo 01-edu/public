@@ -22,8 +22,6 @@ project
 
 ###### Does the structure of the project look like the above?
 
-###### Does the README file give an introduction of the project, show the username, describe the feature engineering and show the best score on the leaderboard?
-
 ###### Does the environment contain all libraries used and their versions that are necessary to run the code?
 
 ##### Scraper
