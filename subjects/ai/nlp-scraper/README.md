@@ -106,7 +106,7 @@ is the methodology that should be used:
   entity. Explain in the `README.md` the embeddings chosen and why. Similarly
   explain the distance or similarity chosen and why.
 
-- Save a metric to unify all the distances calculated per article. 
+- Save a metric to unify all the distances calculated per article.
 
 - Flag the top 10 articles.
 
@@ -169,53 +169,58 @@ python scraper_news.py
 
 ```
 
-2. Run on these 300 articles the NLP engine.
+2. Run on these 300 articles the NLP engine. The script `nlp_eneriched_news.py`
+   should:
 
-Save a `DataFrame`:
+   - Save a `DataFrame` with the following struct:
 
-Date scraped (date)
-Title (`str`)
-URL (`str`)
-Body (`str`)
-Org (`str`)
-Topics (`list str`)
-Sentiment (`list float` or `float`)
-Scandal_distance (`float`)
-Top_10 (`bool`)
+   ```
+   Unique ID (`uuid` or `int`)
+   URL (`str`)
+   Date scraped (`date`)
+   Headline (`str`)
+   Body (`str`)
+   Org (`list str`)
+   Topics (`list str`)
+   Sentiment (`list float` or `float`)
+   Scandal_distance (`float`)
+   Top_10 (`bool`)
+   ```
 
-```prompt
-python nlp_enriched_news.py
+   - Have a similar output while it process the articles
 
-Enriching <URL>:
+   ```prompt
+   python nlp_enriched_news.py
 
-Cleaning document ... (optional)
+   Enriching <URL>:
 
----------- Detect entities ----------
+   Cleaning document ... (optional)
 
-Detected <X> companies which are <company_1> and <company_2>
+   ---------- Detect entities ----------
 
----------- Topic detection ----------
+   Detected <X> companies which are <company_1> and <company_2>
 
-Text preprocessing ...
+   ---------- Topic detection ----------
 
-The topic of the article is: <topic>
+   Text preprocessing ...
 
----------- Sentiment analysis ----------
+   The topic of the article is: <topic>
 
-Text preprocessing ... (optional)
-The title which is <title> is <sentiment>
-The body of the article is <sentiment>
+   ---------- Sentiment analysis ----------
 
----------- Scandal detection ----------
+   Text preprocessing ... (optional)
+   The article <title> has a <sentiment> sentiment
 
-Computing embeddings and distance ...
+   ---------- Scandal detection ----------
 
-Environmental scandal detected for <entity>
-```
+   Computing embeddings and distance ...
 
-I strongly suggest creating a data structure (dictionary for example) to save
-all the intermediate result. Then, a boolean argument `cache` fetched the
-intermediate results when they are already computed.
+   Environmental scandal detected for <entity>
+   ```
+
+> I strongly suggest creating a data structure (dictionary for example) to save
+> all the intermediate result. Then, a boolean argument `cache` fetched the
+> intermediate results when they are already computed.
 
 Resources:
 
