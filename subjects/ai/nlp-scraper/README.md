@@ -48,7 +48,8 @@ organizations. This information should be stored.
 
 - Detect all companies using `SpaCy NER` on the body of the text.
 
-https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da
+[Named Entity Recognition with NLTK and
+SpaCy](https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da)
 
 ### **2. Topic detection:**
 
