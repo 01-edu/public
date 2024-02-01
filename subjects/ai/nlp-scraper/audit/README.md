@@ -28,7 +28,9 @@ project
 
 ##### There are at least 300 news articles stored in the file system or the database.
 
-###### Run the scraper with `python scraper_news.py` and fetch 3 documents. The scraper is not expected to fetch 3 documents and stop by itself, you can stop it manually. Does it run without any error and store the 3 files as expected?
+##### Run the scraper with `python scraper_news.py` and fetch 3 documents. The scraper is not expected to fetch 3 documents and stop by itself, you can stop it manually. 
+
+###### Does it run without any error and store the 3 files as expected?
 
 ##### Topic classifier
 
