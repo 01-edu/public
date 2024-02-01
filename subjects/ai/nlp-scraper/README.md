@@ -13,7 +13,7 @@ topic of the article, analyse the sentiment and ...
 
 News data source:
 
-- Find a news website that is easy to scrap. I could have chosen the website,
+- Find a news website that is easy to scrape. I could have chosen the website,
   but the news' websites change their scraping policy frequently.
 - Store the following information either in one file per day or in a SQL
   database:
@@ -31,10 +31,10 @@ database.
 ### NLP engine
 
 In production architectures, the NLP engine delivers a live output based on the
-news that are delivered in a live stream data by the scrapper. However, it
+news that are delivered in a live stream data by the scraper. However, it
 required advanced Python skills that is not a requisite for the AI branch.
-To simplify this step the scrapper and the NLP engine are used independently in
-the project. The scrapper fetches the news and store them in the data structure
+To simplify this step the scraper and the NLP engine are used independently in
+the project. The scraper fetches the news and store them in the data structure
 (either the file system or the SQL database) and then, the NLP engine runs on
 the stored data.
 
@@ -108,7 +108,7 @@ is the methodology that should be used:
 
 ### 5. **Source analysis (optional)**
 
-The goal is to show insights about the news' source you scrapped.
+The goal is to show insights about the news' source you scraped.
 This requires to scrap data on at least 5 days (a week ideally). Save the plots
 in the `results` folder.
 
@@ -148,17 +148,17 @@ project
 
 ```
 
-1.  Run the scrapper until it fetches at least 300 articles
+1.  Run the scraper until it fetches at least 300 articles
 
 ```
-python scrapper_news.py
+python scraper_news.py
 
-1. scrapping <URL>
+1. scraping <URL>
         requesting ...
         parsing ...
         saved in <path>
 
-2. scrapping <URL>
+2. scraping <URL>
         requesting ...
         parsing ...
         saved in <path>
@@ -169,7 +169,7 @@ python scrapper_news.py
 
 Save a `DataFrame`:
 
-Date scrapped (date)
+Date scraped (date)
 Title (`str`)
 URL (`str`)
 Body (`str`)
