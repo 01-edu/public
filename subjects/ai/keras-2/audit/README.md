@@ -131,19 +131,6 @@ model.compile(loss='categorical_crossentropy',
 
 ---
 
-#### Exercise 4: Multi classification - Optimize
-
-###### For question 1, is the chunk of code the following?
-
-```
-model.compile(loss='categorical_crossentropy',
-              optimizer='adam',
-              metrics=['accuracy'])
-```
-
----
-
----
 
 #### Exercise 5: Multi classification example
 
