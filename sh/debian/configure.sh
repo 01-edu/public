@@ -138,7 +138,7 @@ EOF
   sed -i '/swap/d' /etc/fstab
 
   # Docker
-  curl -fsSL https://get.docker.com -o get-docker.sh | bash
+  curl -fsSL https://get.docker.com -o get-docker.sh && bash get-docker.sh
 
   # NodeJS
   curl -fsSL https://deb.nodesource.com/setup_20.x | bash && apt-get install -y nodejs
