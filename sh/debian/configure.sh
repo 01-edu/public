@@ -150,7 +150,7 @@ EOF
   curl -L https://raw.githubusercontent.com/docker/compose/1.29.1/contrib/completion/bash/docker-compose -o /etc/bash_completion.d/docker-compose
 
   # NodeJS
-  curl -fsSL https://deb.nodesource.com/setup_18.x | bash && apt-get install -y nodejs
+  curl -fsSL https://deb.nodesource.com/setup_20.x | bash && apt-get install -y nodejs
 
   # Git
   echo deb http://deb.debian.org/debian buster-backports main | tee /etc/apt/sources.list.d/buster-backports.list
