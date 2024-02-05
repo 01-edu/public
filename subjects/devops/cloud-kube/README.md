@@ -10,15 +10,14 @@
 
 The objective of this project is to challenge your understanding of DevOps and
 cloud technologies by providing hands-on experience in deploying and managing a
-microservices-based application with a Cloud Provider platform. Your mission is
-to:
+microservices-based application with a Cloud Provider platform. Your mission
+is:
 
 You are a Cloud engineer working with a scalable company and your manager want
 you to create an infrastructure based on Kubernetes in a cloud provider of
 you choice, so your team can benefit from the features and scalability of
 Kubernetes.
 
-Set up and configure a Cloud Provider environment for deploying microservices.
 Deploy the provided microservices' application to the defined environment.
 Implement monitoring, logging, and scaling to ensure that the application runs
 efficiently. Implement security measures, such as securing the databases and
@@ -89,13 +88,13 @@ components:
   services, and it's accessible via port `3000`.
 
 Design the architecture for your cloud-based microservices' application. You
-are free to choose the services and architectural patterns that best suit your
-needs, as long as they meet the project requirements and remain within a
-reasonable cost range. Consider the following when designing your architecture:
+must use K8s. You are free to choose services and architectural patterns that
+best suit your needs, as long as they meet the project requirements and remain
+within a reasonable cost range. Consider the following when designing your
+architecture:
 
 1. `Scalability`: Ensure that your architecture can handle varying workloads
-   and can scale up or down as needed. AWS offers services like Auto Scaling
-   that can be used to achieve this.
+   and can scale up or down as needed.
 
 2. `Availability`: Design your architecture to be fault-tolerant and maintain
    high availability, even in the event of component failures.
