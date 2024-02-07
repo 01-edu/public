@@ -26,7 +26,7 @@
 
 ###### When you move around in the world, does your position update in the mini map?
 
-###### When you move around the maze does the view of the camera update?
+###### When you move around the maze, does the view of the camera update?
 
 ###### Is the frame rate displayed in the interface?
 
@@ -40,7 +40,7 @@
 
 ###### Did the frame rate stayed over 50 fps?
 
-###### Independently of the frame rate displayed in the screen, does the game feel smooth?
+###### Independently of the frame rate displayed on the screen, does the game feel smooth?
 
 #### Bonus
 
@@ -49,3 +49,5 @@
 ###### +Are levels created automatically by an algorithm?
 
 ###### +Can you play against an A.I. player?
+
+###### +Does the game initialization include a history of hosts with aliases for easier reconnection?
