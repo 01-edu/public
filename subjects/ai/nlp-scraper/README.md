@@ -84,6 +84,8 @@ articles. To do so, use a pre-trained sentiment model. I suggest to use:
 2. Labelled news data for sentiment analysis are very expensive. Companies as
    [SESAMm](https://www.sesamm.com/) provide this kind of services.
 
+- [Sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis)
+
 #### **4. Scandal detection**
 
 The goal is to detect environmental disaster for the detected companies. Here

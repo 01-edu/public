@@ -3,11 +3,14 @@ name: 🌳 On Branch - Build and Test Docker Image
 on:
   pull_request:
     branches: ["master"]
+    types: [ labeled, opened, reopened, synchronize ]
 
 jobs:
   build-image:
     name: 🏗️ Build Image - Branch
     runs-on: ubuntu-latest
+
+    if: contains(github.event.pull_request.labels.*.name, '📦 build')
 
     steps:
       - name: 🐧 Checkout

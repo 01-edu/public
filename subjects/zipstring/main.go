@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
+	"piscine"
 )
 
 func main() {
-	fmt.Println(ZipString("YouuungFellllas"))
-	fmt.Println(ZipString("Thee quuick browwn fox juumps over the laaazy dog"))
-	fmt.Println(ZipString("Helloo Therre!"))
+	fmt.Println(piscine.ZipString("YouuungFellllas"))
+	fmt.Println(piscine.ZipString("Thee quuick browwn fox juumps over the laaazy dog"))
+	fmt.Println(piscine.ZipString("Helloo Therre!"))
 }

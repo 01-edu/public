@@ -16,7 +16,7 @@ func ReverseStrings(strs []string) string {
 
 Here is a possible program to test your function:
 
-```go 
+```go
 package main
 
 import "fmt"
@@ -28,7 +28,7 @@ func main(){
 }
 ```
 
-And its output : 
+And its output :
 
 ```console
 $ go run .

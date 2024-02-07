@@ -111,7 +111,7 @@ Don't forget to:
 **Resources:**
 
 - [https://coloursandmaterials.wordpress.com/2014/09/16/colour-system/](https://coloursandmaterials.wordpress.com/2014/09/16/colour-system/)
-- ![Color wheel combinations](Resource.png)
+- ![Color wheel combinations](color-combinations/Resource.png)
 
 **Example:**
 
@@ -195,7 +195,7 @@ Go to these websites and detect the typographies used.
 - [https://www.strongbowcider.com/bug-exterminator-brisbane](https://www.strongbowcider.com/bug-exterminator-brisbane)
 - [http://www.bbqgrillsandfire.com/](http://www.bbqgrillsandfire.com/)
 - [https://pt.wikipedia.org/wiki/Mario_Botta](https://pt.wikipedia.org/wiki/Mario_Botta)
-- [https://texas-private-investigator.com/](https://texas-private-investigator.com/)
+- [https://skyinvestigations.com/](https://skyinvestigations.com/)
 - [https://bumble.com/](https://bumble.com/)
 - [https://adopte1poule.fr/](https://adopte1poule.fr/)
 - [http://slaveryfootprint.org/](http://slaveryfootprint.org/)
@@ -274,7 +274,7 @@ Don't forget to:
 
 Create this image on Figma:
 
-![Timer](Timer.png)
+![Timer](ui-challenge-timer/Timer.png)
 
 Please make sure you use:
 
@@ -304,10 +304,10 @@ Don't forget to:
 
 Copy these images on Figma:
 
-![Screen1](Watch1.png)
-![Screen2](Watch2.png)
-![Screen3](Watch3.png)
-![Screen4](Watch4.png)
+![Screen1](ui-challenge-watches/Watch1.png)
+![Screen2](ui-challenge-watches/Watch2.png)
+![Screen3](ui-challenge-watches/Watch3.png)
+![Screen4](ui-challenge-watches/Watch4.png)
 
 - Make sure:
   - You use symbols and variants (1 page for the Symbols).
@@ -338,7 +338,7 @@ Don't forget to:
 
 Create this image on Figma:
 
-![Flight](Flight.png)
+![Flight](ui-challenge-flight/Flight.png)
 
 - Make sure that:
   - You use symbols and variants (1 page for the Symbols).
@@ -368,7 +368,7 @@ Don't forget to:
 
 Create this image on Figma:
 
-![Spotify](Spotify.jpg)
+![Spotify](ui-challenge-spotify/Spotify.jpg)
 
 - Please make sure you use:
 
@@ -400,7 +400,7 @@ Don't forget to:
 
 Create this image on Figma:
 
-![Dashboard](Dashboard.png)
+![Dashboard](ui-challenge-bitcoin-dashboard/Dashboard.png)
 
 - Make sure:
   - You use symbols and variants (1 page for the Symbols one for the screen).
