@@ -57,7 +57,7 @@ You are a Cloud engineer and you have received a mission from a small company wi
 - Use security groups or similar network security mechanisms to restrict inbound and outbound traffic to only necessary ports and protocols.
 - Email alerts in the event of a problem with one of the services or a skip of the budget, you can define the budget by your self.
 
-> You are not allowed to use kubernetes services or install it in the servers, the client are not familiar with it.
+> You are not allowed to use kubernetes services or install it in the servers, the clients are not familiar.
 
 ### Cost Management
 
