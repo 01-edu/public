@@ -2,25 +2,7 @@
 
 ##### Preliminary
 
-```
-project
-│   README.md
-│   environment.yml
-│
-└───data
-│   │   topic_classification_data.csv
-│
-└───results
-│   │   topic_classifier.pkl
-│   │   learning_curves.png
-│   │   enhanced_news.csv
-|
-|───nlp_engine
-│
-
-```
-
-###### Does the structure of the project look like the above?
+###### Does the structure of the project look like the one described in the subject?
 
 ###### Does the environment contain all libraries used and their versions that are necessary to run the code?
 
@@ -28,7 +10,7 @@ project
 
 ##### There are at least 300 news articles stored in the file system or the database.
 
-##### Run the scraper with `python scraper_news.py` and fetch 3 documents. The scraper is not expected to fetch 3 documents and stop by itself, you can stop it manually. 
+##### Run the scraper with `python scraper_news.py` and fetch 3 documents. The scraper is not expected to fetch 3 documents and stop by itself, you can stop it manually.
 
 ###### Does it run without any error and store the 3 files as expected?
 
@@ -54,20 +36,7 @@ project
 
 ###### Does the DataFrame contain 300 different rows?
 
-###### Are the columns of the DataFrame as expected?
-
-```
-Date scraped (date)
-Title (str)
-URL (str)
-Body (str)
-Org (str)
-Topics (list str)
-Sentiment (list float or float)
-Scandal_distance (float)
-Top_10 (bool)
-
-```
+###### Are the columns of the DataFrame as defined in the subject `Deliverable` section?
 
 ##### Analyse the DataFrame with 300 articles: relevance of the topics matched, relevance of the sentiment, relevance of the scandal detected and relevance of the companies matched. The algorithms are not 100% accurate, so you should expect a few issues in the results.
 
@@ -75,36 +44,6 @@ Top_10 (bool)
 
 ###### Can you run `python nlp_enriched_news.py` without any error?
 
-###### Does the output of the NLP engine correspond to the output below?
-
-```prompt
-python nlp_enriched_news.py
-
-Enriching <URL>:
-
-Cleaning document ... (optional)
-
----------- Detect entities ----------
-
-Detected <X> companies which are <company_1> and <company_2>
-
----------- Topic detection ----------
-
-Text preprocessing ...
-
-The topic of the article is: <topic>
-
----------- Sentiment analysis ----------
-
-Text preprocessing ... (optional)
-The title which is <title> is <sentiment>
-The body of the article is <sentiment>
-
----------- Scandal detection ----------
-
-Computing embeddings and distance ...
-
-Environmental scandal detected for <entity>
-```
+###### Does the output of the NLP engine correspond to the output defined in the subject `Deliverable` section?
 
 ##### Analyse the output: relevance of the topic(s) matched, relevance of the sentiment, relevance of the scandal detected (if detected on the three articles) and relevance of the company(ies) matched.

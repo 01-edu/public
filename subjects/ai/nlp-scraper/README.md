@@ -1,4 +1,4 @@
-# NLP-enriched News Intelligence platform
+## NLP-enriched News Intelligence platform
 
 The goal of this project is to build an NLP-enriched News Intelligence
 platform. News analysis is a trending and important topic. The analysts get
@@ -7,7 +7,8 @@ limitless. Having a platform that helps to detect the relevant information is
 definitely valuable.
 
 The platform connects to a news data source, detects the entities, detects the
-topic of the article, analyse the sentiment and ...
+topic of the article, analyses the sentiment and performs a scandal detection
+analysis.
 
 ### Scraper
 
@@ -40,7 +41,7 @@ the stored data.
 
 Here how the NLP engine should process the news:
 
-### **1. Entities detection:**
+#### **1. Entities detection:**
 
 The goal is to detect all the entities in the document (headline and body). The
 type of entity we focus on is `ORG`. This corresponds to companies and
@@ -51,7 +52,7 @@ organizations. This information should be stored.
 [Named Entity Recognition with NLTK and
 SpaCy](https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da)
 
-### **2. Topic detection:**
+#### **2. Topic detection:**
 
 The goal is to detect what the article is dealing with: Tech, Sport, Business,
 Entertainment or Politics. To do so, a labelled dataset is provided: [training
@@ -71,7 +72,7 @@ that the model is trained correctly and not overfitted.
   [following](https://www.kaggle.com/rmisra/news-category-dataset) which is
   based on 200k news headlines.
 
-### **3. Sentiment analysis:**
+#### **3. Sentiment analysis:**
 
 The goal is to detect the sentiment (positive, negative or neutral) of the news
 articles. To do so, use a pre-trained sentiment model. I suggest to use:
@@ -85,29 +86,32 @@ articles. To do so, use a pre-trained sentiment model. I suggest to use:
 
 - [Sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis)
 
-### **4. Scandal detection **
+#### **4. Scandal detection**
 
 The goal is to detect environmental disaster for the detected companies. Here
 is the methodology that should be used:
 
 - Define keywords that correspond to environmental disaster that may be caused
-  by companies: pollution, deforestation etc ... Here is an example of disaster
-  we want to detect: https://en.wikipedia.org/wiki/MV_Erika. Pay attention to
-  not use ambiguous words that make sense in the context of an environmental
-  disaster but also in another context. This would lead to detect a false
-  positive natural disaster.
+  by companies: pollution, deforestation etc ... Here is [an example of
+  disaster we want to detect](https://en.wikipedia.org/wiki/MV_Erika). Pay
+  attention to not use ambiguous words that make sense in the context of an
+  environmental disaster but also in another context. This would lead to detect
+  a false positive natural disaster.
 
-- Compute the embeddings of the keywords.
+- Compute the [embeddings of the
+  keywords](https://en.wikipedia.org/wiki/Word_embedding#Software).
 
-- Compute the distance between the embeddings of the keywords and all sentences
-  that contain an entity. Explain in the `README.md` the embeddings chosen and
-  why. Similarly explain the distance or similarity chosen and why.
+- Compute the distance ([here some
+  examples](https://www.nltk.org/api/nltk.metrics.distance.html#module-nltk.metrics.distance))
+  between the embeddings of the keywords and all sentences that contain an
+  entity. Explain in the `README.md` the embeddings chosen and why. Similarly
+  explain the distance or similarity chosen and why.
 
-- Save the distance
+- Save a metric to unify all the distances calculated per article.
 
 - Flag the top 10 articles.
 
-### 5. **Source analysis (optional)**
+#### 5. **Source analysis (optional)**
 
 The goal is to show insights about the news' source you scraped.
 This requires to scrap data on at least 5 days (a week ideally). Save the plots
@@ -129,24 +133,20 @@ Here are examples of insights:
 
 ### Deliverables
 
-The structure of the project is:
+The expected structure of the project is:
 
 ```
 project
-│   README.md
-│   environment.yml
-│
-└───data
-│   │   topic_classification_data.csv
-│
-└───results
-│   │   topic_classifier.pkl
-│   │   learning_curves.png
-│   │   enhanced_news.csv
-|
-|───nlp_engine
-│
-
+.
+├── data
+│   └── date_scrape_data.csv
+├── nlp_enriched_news.py
+├── README.md
+├── results
+│   ├── topic_classifier.pkl
+│   ├── enhanced_news.csv
+│   └── learning_curves.png
+└── scraper_news.py
 ```
 
 1.  Run the scraper until it fetches at least 300 articles
@@ -166,52 +166,60 @@ python scraper_news.py
 
 ```
 
-2. Run on these 300 articles the NLP engine.
+2. Run on these 300 articles the NLP engine. The script `nlp_eneriched_news.py`
+   should:
 
-Save a `DataFrame`:
+   - Save a `DataFrame` with the following struct:
 
-Date scraped (date)
-Title (`str`)
-URL (`str`)
-Body (`str`)
-Org (`str`)
-Topics (`list str`)
-Sentiment (`list float1 or `float`)
-Scandal_distance (`float`)
-Top_10 (`bool`)
+   ```
+   Unique ID (`uuid` or `int`)
+   URL (`str`)
+   Date scraped (`date`)
+   Headline (`str`)
+   Body (`str`)
+   Org (`list str`)
+   Topics (`list str`)
+   Sentiment (`list float` or `float`)
+   Scandal_distance (`float`)
+   Top_10 (`bool`)
+   ```
 
-```prompt
-python nlp_enriched_news.py
+   - Have a similar output while it process the articles
 
-Enriching <URL>:
+   ```prompt
+   python nlp_enriched_news.py
 
-Cleaning document ... (optional)
+   Enriching <URL>:
 
----------- Detect entities ----------
+   Cleaning document ... (optional)
 
-Detected <X> companies which are <company_1> and <company_2>
+   ---------- Detect entities ----------
 
----------- Topic detection ----------
+   Detected <X> companies which are <company_1> and <company_2>
 
-Text preprocessing ...
+   ---------- Topic detection ----------
 
-The topic of the article is: <topic>
+   Text preprocessing ...
 
----------- Sentiment analysis ----------
+   The topic of the article is: <topic>
 
-Text preprocessing ... (optional)
-The title which is <title> is <sentiment>
-The body of the article is <sentiment>
+   ---------- Sentiment analysis ----------
 
----------- Scandal detection ----------
+   Text preprocessing ... (optional)
+   The article <title> has a <sentiment> sentiment
 
-Computing embeddings and distance ...
+   ---------- Scandal detection ----------
 
-Environmental scandal detected for <entity>
-```
+   Computing embeddings and distance ...
 
-I strongly suggest creating a data structure (dictionary for example) to save all the intermediate result. Then, a boolean argument `cache` fetched the intermediate results when they are already computed.
+   Environmental scandal detected for <entity>
+   ```
 
-Resources:
+> I strongly suggest creating a data structure (dictionary for example) to save
+> all the intermediate result. Then, a boolean argument `cache` fetched the
+> intermediate results when they are already computed.
 
-- https://www.youtube.com/watch?v=XVv6mJpFOb0
+### Notions
+
+- [Web Scraping](https://www.youtube.com/watch?v=XVv6mJpFOb0)
+- [Sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis)
