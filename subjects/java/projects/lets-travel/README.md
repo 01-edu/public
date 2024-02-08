@@ -10,7 +10,7 @@ Expand the Travel Management System by incorporating essential features and defi
 
 #### 1. Feature Development and Integration by Roles
 
-##### Admin Dashboard:
+##### Admin:
 
 - View top-ranking managers and travels, including reports on income for the last months and the number of organized travels.
 - Access a detailed travel history list and feedbacks to assess user satisfaction.
@@ -27,6 +27,7 @@ Expand the Travel Management System by incorporating essential features and defi
 - Utilize detailed analytics and feedback to inform future travel planning and management strategies.
 
 ##### Traveler:
+
 - Provide a travel search bar using Elasticsearch for dynamic search capabilities, including autocomplete suggestions and efficient search results.
 - Browse available travels and receive personalized suggestions based on previous feedbacks and participations, utilizing Neo4j for customization.
 - Subscribe and unsubscribe from travels with a cutoff period of 3 days before the travel start date for flexibility.
