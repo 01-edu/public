@@ -58,9 +58,10 @@ The goal is to detect what the article is dealing with: Tech, Sport, Business,
 Entertainment or Politics. To do so, a labelled dataset is provided: [training
 data](bbc_news_train.csv) and [test data](bbc_news_test.csv). From this
 dataset, build a classifier that learns to detect the right topic in the
-article. The trained model should be stored as `topic_classifier.pkl`. Make
-sure the model can be used easily (with the preprocessing pipeline built for
-instance) because the audit requires the auditor to test the model.
+article. Save the training process to a python file because the audit requires
+the auditor to test the model.
+To proceed with the following instructions, save the model as
+`topic_classifier.pkl`.
 
 Save the plot of learning curves (`learning_curves.png`) in `results` to prove
 that the model is trained correctly and not overfitted.
@@ -139,10 +140,11 @@ The expected structure of the project is:
 project
 .
 ├── data
-│   └── date_scrape_data.csv
+│   └── ...
 ├── nlp_enriched_news.py
 ├── README.md
 ├── results
+│   ├── training_model.py
 │   ├── enhanced_news.csv
 │   └── learning_curves.png
 └── scraper_news.py
