@@ -15,7 +15,7 @@ Ensure the repository contains all required files:
 
 Conduct a role-play session where students present their solution as Cloud Engineers. Evaluate their understanding of cloud concepts, their solution's architecture, and their ability to communicate effectively. Suggested questions:
 
-- Ask the student to explain the choice of cloud provider and the benefits of using managed services in this project.
+- Explain the choice of cloud provider and the benefits of using managed services in this project.
 - How does your architecture ensure high availability and scalability for the WordPress application?
 - Describe how you've implemented security measures to protect your application and data.
 - Discuss the auto-scaling strategy you've chosen and how it aligns with cost management principles.
