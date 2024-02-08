@@ -14,7 +14,7 @@
 
 ###### Does the client manage to connect to the server?
 
-###### Does the client asks you for an username?
+###### Does the client ask you for an username?
 
 ##### Insert your username.
 
@@ -30,7 +30,7 @@
 
 ###### Is the frame rate displayed in the interface?
 
-###### Is the frame rate of the game higher higher than 50 fps?
+###### Is the frame rate of the game higher than 50 fps?
 
 ##### Try to connect to the server from another computer.
 
@@ -38,7 +38,7 @@
 
 ##### Connect simultaneously with as many people as possible and play the game for at least 3 minutes.
 
-###### Did the frame rate stayed over 50 fps?
+###### Did the frame rate stay over 50 fps?
 
 ###### Independently of the frame rate displayed on the screen, does the game feel smooth?
 

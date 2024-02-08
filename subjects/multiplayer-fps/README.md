@@ -23,7 +23,7 @@ The game should present a specific User Interface, in which the minimum requirem
 
 You will have to develop the game server and also a client application:
 
-- The server must accept as much connections as possible (the minimum should be 10).
+- The server must accept as many connections as possible (the minimum should be 10).
 - When the client is initialized, the game should ask for:
   - The IP address of the server, allowing the client application to connect to any server.
   - A username for identification.
