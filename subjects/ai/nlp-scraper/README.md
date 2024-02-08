@@ -143,7 +143,6 @@ project
 ├── nlp_enriched_news.py
 ├── README.md
 ├── results
-│   ├── topic_classifier.pkl
 │   ├── enhanced_news.csv
 │   └── learning_curves.png
 └── scraper_news.py
@@ -169,7 +168,8 @@ python scraper_news.py
 2. Run on these 300 articles the NLP engine. The script `nlp_eneriched_news.py`
    should:
 
-   - Save a `DataFrame` with the following struct:
+   - Save a `DataFrame` with the following struct and store the result in a
+     `csv` file, `enhancend_news.csv`:
 
    ```
    Unique ID (`uuid` or `int`)
@@ -214,10 +214,6 @@ python scraper_news.py
 
    Environmental scandal detected for <entity>
    ```
-
-> I strongly suggest creating a data structure (dictionary for example) to save
-> all the intermediate result. Then, a boolean argument `cache` fetched the
-> intermediate results when they are already computed.
 
 ### Notions
 

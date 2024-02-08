@@ -18,11 +18,15 @@
 
 ###### Are the learning curves provided?
 
-###### Do the learning curves prove the topics classifier is trained correctly - without overfitting?
+###### Do the learning curves prove the topics classifier is trained correctly - without overfitting? Ask the student to explain what the term "overfitting" means and how he avoided this phenomenon.
+
+> Additionally, you can look for external resources. For example, Wikipedia has a good page on "overfitting".
+
+##### Ask the student to train and store the topic classifier model in a file named `topic_classifier.pkl`.
 
 ###### Can you run the topic classifier model on the test set without any error?
 
-###### Does the topic classifier score an accuracy higher than 95%?
+###### Does the topic classifier score an accuracy higher than 95% on the given datasets?
 
 ##### Scandal detection
 
