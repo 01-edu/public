@@ -8,8 +8,6 @@
 
 ###### Are the documents clear, simple and easy to read?
 
-#### Movie wireframes
-
 ###### Are there 3 user flows?
 
 ###### Are the user flows about the features we gave on the readme?
