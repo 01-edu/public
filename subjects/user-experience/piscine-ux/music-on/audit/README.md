@@ -8,9 +8,9 @@
 
 ###### Is the document clear, simple and easy to read?
 
-###### Is the chart duplicated?
+###### Is the checklist duplicated?
 
-###### Is the chart complete?
+###### Is the checklist complete?
 
 ###### Is the heuristic analysis done to a South American music label? (ask the student to confirm)
 
