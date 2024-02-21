@@ -25,7 +25,7 @@ Conduct a heuristic analysis on **one** of these websites:
 
 **Tips:**
 
-- Pay attention to the global aspect of the document. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
+- Pay attention to the global aspect of the documents. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
 
 **Resources:**
 
