@@ -2,7 +2,7 @@
 
 <center>
 <img 
-    src="./resources/easy-cloud.jpg?raw=true" style="width: 600px !important; height: 600px !important;"/>
+    src="./resources/easy-cloud.png?raw=true" style="width: 600px !important; height: 600px !important;"/>
 </center>
 
 ### Objective
