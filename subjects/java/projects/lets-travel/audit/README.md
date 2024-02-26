@@ -1,112 +1,155 @@
 #### Comprehension
 
-##### Understanding of Integrated Technologies
+##### Ask the students to elaborate on how Elasticsearch contributes to the system's search and autocomplete features.
 
-###### Did the students understand how Elasticsearch contributes to the system's search and autocomplete features?
+###### Are the students able to explain how Elasticsearch contributes to the system's search and autocomplete features?
 
-###### Can they explain the role of Neo4j in delivering personalized travel suggestions?
+##### Inquire about the students' understanding of Neo4j's role in delivering personalized travel suggestions.
 
-###### Are they aware of how each service (Elasticsearch, Neo4j) is scaled and operates independently within the system?
+###### Can the students detail Neo4j's role in personalizing travel suggestions?
 
-###### Did the students comprehend the methods used to ensure data consistency between PostgreSQL, Neo4j, and Elasticsearch?
+##### Question the students on their knowledge of the scalability and operational independence of each service (Elasticsearch, Neo4j).
 
-##### Comprehension of Role-based Functionalities
+###### Do the students comprehend how each service is scaled and operates independently within the system?
 
-###### Did the students understand the specific functionalities and permissions assigned to Admins, Travel Managers, and Travelers?
+##### Aks the students about the methods used to ensure data consistency between PostgreSQL, Neo4j, and Elasticsearch.
+
+###### Are students aware of the techniques employed to maintain data consistency across databases?
+
+##### Ask the students to describe the specific functionalities and permissions assigned to Admins, Travel Managers, and Travelers.
+
+###### Do the students understand the distinct functionalities and permissions for each user role?
 
 #### Functional
 
-##### Search and Recommendation Features
+##### Verify if the Elasticsearch search functionality accurately returns results based on user queries.
 
-###### Does the Elasticsearch search functionality accurately return results based on user queries?
+###### Does the Elasticsearch functionality effectively and accurately return search results?
 
-###### Are autocomplete suggestions relevant and quickly provided to the user?
+##### Check the relevance and speed of autocomplete suggestions provided to the user.
 
-###### Does the Neo4j database provide accurate travel suggestions based on user preferences and past behavior?
+###### Are autocomplete suggestions both relevant and promptly provided?
 
-##### Role-specific Dashboard Functionality
+##### Evaluate the accuracy of travel suggestions provided by the Neo4j database based on user preferences and past behavior.
 
-###### For Admins: Is there a comprehensive overview of system analytics, including income reports and user feedback?
+###### Does Neo4j deliver precise travel suggestions tailored to user preferences?
 
-###### For Travel Managers: Does the dashboard display detailed statistics on travels managed, including income and traveler feedback?
+##### Confirm the presence of a comprehensive overview of system analytics on the Admin dashboard.
 
-###### For Travelers: Are personalized recommendations and travel history easily accessible?
+###### Is there a detailed system analytics overview available for Admins?
 
-##### Subscription and Payment Processing
+##### Assess the detailedness of travel management statistics available on the Travel Manager dashboard.
 
-###### Can Travelers easily navigate and subscribe to available travels?
+###### Are travel management statistics detailed and helpful for Travel Managers?
 
-###### Are subscription cancellations handled correctly, respecting the 3-day cutoff period?
+##### Ensure that personalized recommendations and travel history are easily accessible on the Traveler dashboard.
 
-###### Is the payment process secure and user-friendly, supporting various payment methods?
+###### Can Travelers easily access personalized recommendations and their travel history?
 
-##### Feedback System
+##### Test the ease of navigation and subscription to available travels for Travelers.
 
-###### Can Travelers submit feedback on their travel experiences without issues?
+###### Can Travelers easily subscribe to and navigate available travel options?
 
-###### Is the feedback visible to relevant parties, such as Travel Managers and Admins, for quality assurance?
+##### Check how subscription cancellations are handled, especially regarding the 3-day cutoff period.
 
-##### Travel Manager and Traveler Profiles
+###### Are subscription cancellations processed correctly, adhering to the specified cutoff period?
 
-###### Do Travel Managers have the ability to create and manage travel listings effectively?
+##### Evaluate the security and user-friendliness of the payment process.
 
-###### Can Travel Managers view and interact with subscriber lists for their travels?
+###### Is the payment process secure and accommodating of various payment methods?
 
-###### Are Traveler profiles comprehensive, displaying past participations, feedback given, and reports made?
+##### Test if Travelers can submit feedback on their travel experiences without issues.
 
-##### Authentication and Authorization
+###### Can Travelers submit feedback easily?
+
+##### Verify if the feedback is visible to relevant parties such as Travel Managers and Admins for quality assurance.
+
+###### Is the feedback accessible for quality control by Travel Managers and Admins?
+
+##### Assess the ability of Travel Managers to create and manage travel listings effectively.
+
+###### Do Travel Managers have the ability to manage travel listings effectively?
+
+##### Verify if Travel Managers can view and interact with subscriber lists for their travels.
+
+###### Can Travel Managers interact with subscriber lists effectively?
+
+##### Ensure that Traveler profiles are comprehensive, displaying past participations, feedback given, and reports made.
+
+###### Are Traveler profiles detailed and informative?
+
+### Ensure Authentication and Authorization Security
+
+##### Check the security and straightforwardness of the login process for all user roles.
 
 ###### Is the login process secure and straightforward for all user roles?
 
-###### Are role-based access controls correctly enforced, preventing unauthorized actions across the system?
+##### Confirm that role-based access controls are correctly enforced, preventing unauthorized actions across the system.
 
-##### Security Measures
+###### Are role-based access controls properly enforced?
 
-###### Is data transmitted securely using SSL/TLS encryption?
+##### Verify if data is transmitted securely using SSL/TLS encryption.
 
-###### Are sensitive data and credentials managed securely, adhering to best practices?
+###### Is data transmission secured with SSL/TLS encryption?
 
-##### System Reliability and Performance
+##### Check if sensitive data and credentials are managed securely, adhering to best practices.
 
-###### Does the system handle high traffic volumes effectively without significant performance degradation?
+###### Are sensitive data and credentials handled securely?
 
-###### In case of a service failure, is there a fallback mechanism to ensure continuity of the core functionalities?
+##### Assess if the system handles high traffic volumes effectively without significant performance degradation.
 
-##### Responsive and Intuitive UI
+###### Can the system manage high traffic volumes without performance loss?
 
-###### Is the user interface responsive across different devices and screen sizes?
+##### Check if there is a fallback mechanism to ensure continuity of core functionalities in case of a service failure.
 
-###### Does the UI facilitate easy navigation and access to features for users of all roles?
+###### Is there a fallback mechanism for service failures?
 
-##### Reporting and Analytics
+##### Verify if the user interface is responsive across different devices and screen sizes.
 
-###### Can Admins generate and view reports on system usage, performance, and user feedback?
+###### Is the UI responsive on various devices?
 
-###### Are Travel Managers able to access analytics about their travel listings and subscriber feedback?
+##### Ensure the UI facilitates easy navigation and access to features for users of all roles.
 
-##### Compliance and Best Practices
+###### Does the UI support easy navigation for all user roles?
 
-###### Does the system adhere to data protection regulations and privacy laws?
+##### Confirm that Admins can generate and view reports on system usage, performance, and user feedback.
+
+###### Can Admins generate detailed reports on system usage and feedback?
+
+##### Verify if Travel Managers are able to access analytics about their travel listings and subscriber feedback.
+
+###### Do Travel Managers have access to analytics on their listings?
+
+##### Check if the system adheres to data protection regulations and privacy laws.
+
+###### Does the system comply with data protection
+
+##### Verify if development and deployment practices align with industry standards for security and code quality, such as `OWASP` and `clean code principles`.
 
 ###### Are development and deployment practices in line with industry standards for security and code quality such as `OWASP` and `clean code principles`?
 
 #### Bonus
 
-##### Progressive Web App (PWA)
+##### Review if the system has been implemented as a Progressive Web App (PWA) to enhance the mobile user experience.
 
-###### Has the system been implemented as a Progressive Web App (PWA) to enhance the mobile user experience?
-###### Do PWA features such as offline functionality, background sync, and push notifications work correctly across various mobile devices?
-###### Is the application's load time optimized for mobile use, following PWA best practices?
+###### +Has the system been implemented as a Progressive Web App (PWA) to enhance the mobile user experience?
 
-##### Multilingual Support
+###### +Do PWA features such as offline functionality, background sync, and push notifications work correctly across various mobile devices?
 
-###### Is multilingual support integrated into the system to cater to a global user base effectively?
-###### Can users seamlessly switch between languages, and is the language preference persistently stored for future sessions?
-###### Does multilingual support cover all aspects of the platform, including user interface elements, notifications, and user-generated content?
+###### +Is the application's load time optimized for mobile use, following PWA best practices?
 
-##### Innovative Features for User Engagement and Platform Functionality
+##### Verify if multilingual support is integrated into the system to cater to a global user base effectively.
 
-###### Has the project introduced any innovative features that significantly enhance user engagement or the value of the platform?
-###### Are these innovative features functioning as intended without causing any errors or issues within the system?
-###### Do these features demonstrate a clear understanding and application of current technologies or methodologies to solve user needs or improve the platform?
+###### +Is multilingual support integrated into the system to cater to a global user base effectively?
 
+###### +Can users seamlessly switch between languages, and is the language preference persistently stored for future sessions?
+
+###### +Does multilingual support cover all aspects of the platform, including user interface elements, notifications, and user-generated content?
+
+##### Review if any innovative features have been introduced that significantly enhance user engagement or the value of the platform.
+
+###### +Has the project introduced any innovative features that significantly enhance user engagement or the value of the platform?
+
+###### +Are these innovative features functioning as intended without causing any errors or issues within the system?
+
+###### +Do these features demonstrate a clear understanding and application of current technologies or methodologies to solve user needs or improve the platform?
