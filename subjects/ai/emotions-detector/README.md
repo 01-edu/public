@@ -62,48 +62,40 @@ For that step, I suggest again to use **OpenCV** as much as possible. This link 
 
 ```
 project
-│   README.md
-│   environment.yml
-│
-└───data
-│   │   train.csv
-│   │   test.csv
-│   │   xxx.csv
-│
-└───results
-│   │
-|   |───model (free format)
-│   │   │   my_own_model.pkl
-│   │   │   my_own_model_architecture.txt
-│   │   │   tensorboard.png
-│   │   │   learning_curves.png
-│   │   │   pre_trained_model.pkl (optional)
-│   │   │   pre_trained_model_architecture.txt (optional)
-│   │
-|   |───hack_cnn (free format)
-│   │   │   hacked_image.png   (optional)
-│   │   │   input_image.png
-│   │
-|   |───preprocessing_test
-|   |   |   input_video.mp4  (free format)
-│   │   │   image0.png  (free format)
-│   │   │   image1.png
-│   │   │   imagen.png
-│   │   │   image20.png
-|
-|───scripts
-│   │   train.py
-│   │   predict.py
-│   │   preprocess.py
-│   │   predict_live_stream.py
-│   │   hack_the_cnn.py
+├── data
+│   ├── test.csv
+│   ├── train.csv
+│   └── xxx.csv
+├── environment.yml
+├── README.md
+├── results
+│   ├── hack_cnn
+│   │   ├── hacked_image.png
+│   │   └── input_image.png
+│   ├── model
+│   │   ├── learning_curves.png
+│   │   ├── my_own_model_architecture.txt
+│   │   ├── my_own_model.pkl
+│   │   ├── pre_trained_model_architecture.txt
+│   │   └── pre_trained_model.pkl
+│   └── preprocessing_test
+│       ├── image0.png
+│       ├── image1.png
+│       ├── image_n.png
+│       └── input_video.mp4
+└── scripts
+    ├── hack_the_cnn.py
+    ├── predict_live_stream.py
+    ├── predict.py
+    ├── preprocess.py
+    └── train.py
 
 ```
 
 - Run **predict.py** expected output:
 
 ```prompt
-python predict.py
+python ./scripts/predict.py
 
 Accuracy on test set: 72%
 
@@ -112,7 +104,7 @@ Accuracy on test set: 72%
 - Run **predict_live_stream.py** expected output:
 
 ```prompt
-python predict_live_stream.py
+python ./scripts/predict_live_stream.py
 
 Reading video stream ...
 

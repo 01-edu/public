@@ -2,47 +2,7 @@
 
 ##### Preliminary
 
-```
-project
-│   README.md
-│   environment.yml
-│
-└───data
-│   │   train.csv
-│   │   test.csv
-│   │   xxx.csv
-│
-└───results
-│   │
-|   |───model (free format)
-│   │   │   my_own_model.pkl
-│   │   │   my_own_model_architecture.txt
-│   │   │   tensorboard.png
-│   │   │   learning_curves.png
-│   │   │   pre_trained_model.pkl (optional)
-│   │   │   pre_trained_model_architecture.txt (optional)
-│   │
-|   |───hack_cnn (free format)
-│   │   │   hacked_image.png   (optional)
-│   │   │   input_image.png
-│   │
-|   |───preprocessing_test
-|   |   |   input_video.mp4  (free format)
-│   │   │   image0.png  (free format)
-│   │   │   image1.png
-│   │   │   imagen.png
-│   │   │   image20.png
-|
-|───scripts
-│   │   train.py
-│   │   predict.py
-│   │   preprocess.py
-│   │   predict_live_stream.py
-│   │   hack_the_cnn.py
-
-```
-
-###### Does the structure of the project look as above?
+###### Does the structure of the project is equivalent to the one described in the subject `Delivery` section?
 
 ###### Does the readme file summarize how to run the code and explain the global approach?
 
@@ -64,10 +24,10 @@ project
 
 ###### Does the text document explain why the architecture was chosen and what were the previous iterations?
 
-###### Does the following command `python predict.py ` run without any error and returns an accuracy greater than 70%?
+###### Does the following command `python ./scripts/predict.py` run without any error and returns an accuracy greater than 70%?
 
 ```prompt
-    python predict.py
+    python ./scripts/predict.py
 
     Accuracy on test set: 72%
 
@@ -87,10 +47,10 @@ project
 
 ###### If there's an issue related to the webcam, does the code takes as input a video recorded video stream?
 
-###### Does the following command `predict_live_stream.py` run without any error and return the following?
+###### Does the following command `python ./scripts/predict_live_stream.py` run without any error and return the following?
 
 ```prompt
-    python predict_live_stream.py
+    python ./scripts/predict_live_stream.py
 
     Reading video stream ...
 
