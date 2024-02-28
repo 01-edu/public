@@ -294,7 +294,7 @@ Don't forget to:
 
 **Tips:**
 
-- The font is RAJDANHI.
+- The font is RAJDHANI.
 - The frame is Android 360 x 640px.
 - Pay attention to the global aspect of the file. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
 
