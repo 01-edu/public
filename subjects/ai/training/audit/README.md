@@ -55,14 +55,14 @@ array([ 1.82212706,  1.98357668,  0.80547979, -0.19259114,  1.76072418,
 
 ```
 
-###### For question 2, Do the results match the following output?
+###### For question 2, Do the results match the following output (ensure that at least the first 3 decimal digits match)?
 
 ```console
-r2 on the train set:  0.3552292936915783
+r2 on the train set: 0.6079874818809449
 MAE on the train set:  0.5300159371615256
 MSE on the train set:  0.5210784446797679
 
-r2 on the test set:  0.30265471284464673
+r2 on the test set:  0.5903435927516574
 MAE on the test set:  0.5454023699809112
 MSE on the test set:  0.5537420654727396
 ```
