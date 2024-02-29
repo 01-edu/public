@@ -1,4 +1,4 @@
-name: 💄 GA-Misc - Check-Prettier
+name: 💅 GA-Misc - Check-Prettier
 
 on:
   pull_request:
@@ -8,18 +8,19 @@ on:
 
 jobs:
   GA-Misc-Check-Prettier:
+    name: 💅 Run Prettier
     runs-on: ubuntu-latest
 
     steps:
       - name: 🐧 Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 2 # OR "2" -> To retrieve the preceding commit.
 
-      - name: Get all changed *.md file(s)
+      - name: 🔍 Get all changed *.md file(s)
         id: changed-md
         run: |
-          echo "changed_files=$(git diff --name-only --merge-base master | grep "\.md$" | xargs)" >> $GITHUB_OUTPUT
+          echo "changed_files=$(git diff --name-only --merge-base origin/master | grep "\.md$" | xargs)" >> $GITHUB_OUTPUT
 
       - name: Run step if any *.md file(s) changed
         if: steps.changed-md.outputs.changed_files != ''
