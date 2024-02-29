@@ -118,4 +118,3 @@ donors of O+ [O+, O-]
 donors of O+ can receive from A- false
 $
 ```
-
