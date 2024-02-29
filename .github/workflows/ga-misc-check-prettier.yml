@@ -15,7 +15,7 @@ jobs:
       - name: 🐧 Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2 # OR "2" -> To retrieve the preceding commit.
+          fetch-depth: 0
 
       - name: 🔍 Get all changed *.md file(s)
         id: changed-md
