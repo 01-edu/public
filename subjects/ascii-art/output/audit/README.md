@@ -34,7 +34,7 @@ _|_|_|_|_|                     _|     $
     _|       _|_|_| _|_|_|       _|_| $
                                       $
                                       $
-$
+student$
 ```
 
 ###### Does it save the right output in the right file?
@@ -51,7 +51,7 @@ student$ cat -e test01.txt
 |_| |_|  \___| |_| |_|  \___/  $
                                $
                                $
-$
+student$
 ```
 
 ###### Does it save the right output in the right file?
@@ -68,7 +68,7 @@ student$ cat -e test02.txt
 |_| |_____| |____/                 /_/           |_||_|    |_|   /_/ (_) $
                                                                          $
                                                                          $
-$
+student$
 ```
 
 ###### Does it save the right output in the right file?
@@ -85,7 +85,7 @@ _|_|_|_|   _|_|       _|         _|_|_|_|_|     _|         _|  _|   _|_|       _
     _|   _|_|_|   _|_|_|_|                  _|             _|  _|   _|_|_| _|    _|_|   _|_|  _| _|    _|_|_|_|   $
                                                                       _|                           _|             $
                                                                                                      _|_|_|_|_|_| $
-$
+student$
 ```
 
 ###### Does it save the right output in the right file?
@@ -102,7 +102,7 @@ _|_|_|_|_| _|                                  $
     _|     _|    _|   _|_|_| _|         _|_|_| $
                                                $
                                                $
-$
+student$
 ```
 
 ###### Does it save the right output in the right file?
@@ -119,7 +119,7 @@ o |     /   oo              O            | |   -O-O-    /   o O-o $
 o-o-o o--o o-o            o              | |   -O-O-  O       o-  $
                                                 | |               $
                                                                   $
-$
+student$
 ```
 
 ###### Does it save the right output in the right file?
@@ -136,7 +136,7 @@ o  o                     $
 o--o       o--O o-o o--o $
               |          $
            o--o          $
-$
+student$
 ```
 
 ###### Does it save the right output in the right file?
@@ -153,7 +153,7 @@ student$ cat -e test07.txt
    |_|     \___| |___/  \__| |_| |_| |_|  \__, |       |_|  \___/  |_| |_|  \__, |        \___/   \__,_|  \__| | .__/   \__,_|  \__| (_) $
                                            __/ |                             __/ |                             | |                       $
                                           |___/                             |___/                              |_|                       $
-$
+student$
 ```
 
 ###### Does it save the right output in the right file?
@@ -180,9 +180,9 @@ $
 
 #### Basic
 
-###### +Does the project runs quickly and effectively (Favoring of recursive, no unnecessary data requests, etc.)?
+###### +Does the project run quickly and effectively (Favoring of recursive, no unnecessary data requests, etc.)?
 
-###### +Is the output of the program well structured? Are the characters are correctly in line?
+###### +Is the output of the program well-structured? Are the characters are correctly in line?
 
 ###### +Is there a test file for this code?
 
