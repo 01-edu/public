@@ -17,7 +17,7 @@ Example: go run . --output=<fileName.txt> something standard
 ##### Try passing as arguments `--output=test00.txt "First\nTest" shadow`
 
 ```
-student$ cat test00.txt
+student$ cat -e test00.txt
                                        $
 _|_|_|_| _|                     _|     $
 _|          _|  _|_|   _|_|_| _|_|_|_| $
@@ -42,7 +42,7 @@ $
 ##### Try passing as arguments `--output=test01.txt "hello" standard`
 
 ```
-student$ cat test01.txt
+student$ cat -e test01.txt
  _              _   _          $
 | |            | | | |         $
 | |__     ___  | | | |   ___   $
@@ -59,7 +59,7 @@ $
 ##### Try passing as arguments `--output=test02.txt "123 -> #$%" standard`
 
 ```
-student$ cat test02.txt
+student$ cat -e test02.txt
                                    __             _  _      _     _   __ $
  _   ____    _____                 \ \          _| || |_   | |   (_) / / $
 / | |___ \  |___ /         ______   \ \        |_  __  _| / __)     / /  $
@@ -76,7 +76,7 @@ $
 ##### Try passing as arguments `--output=test03.txt "432 -> #$%&@" shadow`
 
 ```
-student$ cat test03.txt
+student$ cat -e test03.txt
                                                                                                                   $
 _|  _|   _|_|_|     _|_|                    _|             _|  _|     _|   _|_|    _|   _|           _|_|_|_|_|   $
 _|  _|         _| _|    _|                    _|         _|_|_|_|_| _|_|_| _|_|  _|   _|  _|       _|          _| $
@@ -93,7 +93,7 @@ $
 ##### Try passing as arguments `--output=test04.txt "There" shadow`
 
 ```
-student$ cat test04.txt
+student$ cat -e test04.txt
                                                $
 _|_|_|_|_| _|                                  $
     _|     _|_|_|     _|_|   _|  _|_|   _|_|   $
@@ -110,7 +110,7 @@ $
 ##### Try passing as arguments `--output=test05.txt "123 -> \"#$%@" thinkertoy`
 
 ```
-student$ cat test05.txt
+student$ cat -e test05.txt
                                     o o         | |               $
   0    --  o-o            o         | |  | |   -O-O-      O   o   $
  /|   o  o    |            \            -O-O- o | |   o  /   / \  $
@@ -127,7 +127,7 @@ $
 ##### Try passing as arguments `--output=test06.txt "2 you" thinkertoy`
 
 ```
-student$ cat test06.txt
+student$ cat -e test06.txt
                          $
  --                      $
 o  o                     $
@@ -144,7 +144,7 @@ $
 ##### Try passing as arguments `--output=test07.txt 'Testing long output!' standard`
 
 ```
-student$ cat test07.txt
+student$ cat -e test07.txt
  _______                _     _                         _                                                 _                     _     _  $
 |__   __|              | |   (_)                       | |                                               | |                   | |   | | $
    | |      ___   ___  | |_   _   _ __     __ _        | |   ___    _ __     __ _          ___    _   _  | |_   _ __    _   _  | |_  | | $
