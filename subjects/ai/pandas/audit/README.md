@@ -42,7 +42,7 @@
 
 ##### The exercise is validated if all questions of the exercise are validated
 
-###### For the solution of question 1 is `drop`  used with `axis=1`.`inplace=True`? It may be useful to avoid to affect the result to a variable. A solution that could be accepted too (even if it's not a solution I recommend) is `del`.
+###### For the solution of question 1 is `drop` used with `axis=1`.`inplace=True`? It may be useful to avoid to affect the result to a variable. A solution that could be accepted too (even if it's not a solution I recommend) is `del`.
 
 ###### For question 2 does the DataFrame return the output below? If the type of the index is not `dtype='datetime64[ns]'` the solution is not accepted. I recommend to use `set_index` with `inplace=True` to do so.
 
