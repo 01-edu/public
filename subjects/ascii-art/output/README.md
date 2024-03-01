@@ -37,7 +37,7 @@ $ cat -e banner.txt
                                $
                                $
 $
-$ go run . --output=banner.txt "Hello There!" shadow
+$ go run . --output=banner.txt 'Hello There!' shadow
 $ cat -e banner.txt
                                                                                          $
 _|    _|          _| _|                _|_|_|_|_| _|                                  _| $
