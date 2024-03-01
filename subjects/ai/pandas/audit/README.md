@@ -102,13 +102,12 @@ More details: https://stackoverflow.com/questions/20625582/how-to-deal-with-sett
 ###### For question 8, is the output the following?
 
 ```console
-        Global_active_power        0.254
-        Global_reactive_power      0.000
-        Voltage                  238.350
-        Global_intensity           1.200
-        Sub_metering_1             0.000
-        Name: 2007-02-16 00:00:00, dtype: float64
-
+Global_active_power        0.254
+Global_reactive_power      0.000
+Voltage                  238.100
+Global_intensity           1.200
+Sub_metering_1             0.060
+Name: 2007-02-16 00:00:00, dtype: float64
 ```
 
 ###### For question 9, is the output `Timestamp('2009-02-22 00:00:00')`?
@@ -121,7 +120,7 @@ More details: https://stackoverflow.com/questions/20625582/how-to-deal-with-sett
     | 2008-08-28 00:00:00 |                 0.076 |                       0 |    235.18 |
     | 2008-08-28 00:00:00 |                 0.076 |                       0 |    235.4  |
     | 2008-08-28 00:00:00 |                 0.076 |                       0 |    235.64 |
-    | 2008-12-08 00:00:00 |                 0.076 |                       0 |    236.5  |
+    | 2008-08-12 00:00:00 |                 0.076 |                       0 |    236.5  |
 
 ###### For question 11, is the output the following? The solution is based on `groupby` which creates groups based on the index `Date` and aggregates the groups using the `mean`.
 
@@ -133,11 +132,11 @@ More details: https://stackoverflow.com/questions/20625582/how-to-deal-with-sett
     2006-12-19    1.157079
     2006-12-20    1.545658
                     ...
-    2010-12-07    0.770538
-    2010-12-08    0.367846
-    2010-12-09    1.119508
-    2010-12-10    1.097008
-    2010-12-11    1.275571
+    2010-11-22    1.417733
+    2010-11-23    1.095511
+    2010-11-24    1.247394
+    2010-11-25    0.993864
+    2010-11-26    1.178230
     Name: Global_active_power, Length: 1433, dtype: float64
 ```
 
