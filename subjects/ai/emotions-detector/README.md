@@ -80,7 +80,7 @@ contains a person's face and that predicts the emotion of the person.
 **Step 1**: **Fit the emotion classifier**
 
 - Download and unzip the [data
-  here](https://assets.01-edu.org/ai-branch/project3/challenges-in-representation-learning-facial-expression-recognition-challenge.zip).
+  here](https://assets.01-edu.org/ai-branch/project3/emotions-detector.zip).
   This dataset was provided for this past [Kaggle
   challenge](https://www.kaggle.com/competitions/challenges-in-representation-learning-facial-expression-recognition-challenge/overview).
   It is possible to find more information about on the challenge page.
