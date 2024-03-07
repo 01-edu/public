@@ -1,49 +1,53 @@
 #### Functional
 
-- Execute the program using the command `Java Main`.
+##### Execute the program using the command `Java Main`.
 
-- Verify if it compiles and runs without any warnings.
+###### Does the program compile and run without any warnings?
 
-- Set one or more control points by left-clicking on the canvas.
+##### Set one or more control points by left-clicking on the canvas.
 
-- Confirm that the program allows you to mark these control points.
+###### Does the program allow you to mark these control points?
 
-- Check if the program draws a small circle around the control points for identification purposes.
+##### Check if the program draws a small circle around the control points for identification purposes.
 
-- Set three or more control points on the canvas and press `Enter`.
+###### Does the program draw a small circle around the control points?
 
-- Observe whether Chaikin's algorithm starts the animation.
+##### Set three or more control points on the canvas and press `Enter`.
 
-- To exit the program, press the `Escape` key.
+###### Does Chaikin's algorithm start the animation?
 
-- Ensure the program exits without any errors.
+##### To exit the program, press the `Escape` key.
 
-- Start the program and set only one control point by left-clicking on the canvas. Then, press `Enter`.
+###### Does the program exit without any errors?
 
-- Confirm that only the selected control point is visible, and nothing else changes.
+##### Start the program and set only one control point by left-clicking on the canvas. Then, press `Enter`.
 
-- Restart the program, set two control points by left-clicking on the canvas, and press `Enter`.
+###### Is only the selected control point visible, and nothing else changes?
 
-- Check if only a straight line is drawn between the two control points.
+##### Restart the program, set two control points by left-clicking on the canvas, and press `Enter`.
 
-- Restart the program, set three or more control points by left-clicking on the canvas, and press `Enter`.
+###### Is only a straight line drawn between the two control points?
 
-- Confirm that the animation completes 7 steps before restarting.
+##### Restart the program, set three or more control points by left-clicking on the canvas, and press `Enter`.
 
-- Restart the program, set three or more control points by left-clicking on the canvas, and press `Enter`. Then, press `Escape` to exit the program.
+###### Does the animation complete 7 steps before restarting?
 
-- Verify that the program exits without any errors.
+##### Restart the program, set three or more control points by left-clicking on the canvas, and press `Enter`. Then, press `Escape` to exit the program.
 
-- Start the program and press `Enter` without selecting any points.
+###### Does the program exit without any errors?
 
-- Check if the program continues without any errors.
+##### Start the program and press `Enter` without selecting any points.
 
-- After pressing `Enter` without selecting points, try placing points without needing to restart the program.
+###### Does the program continue without any errors?
+
+##### After pressing `Enter` without selecting points, try placing points without needing to restart the program.
+
+###### Does the program allow placement of points without needing to restart?
 
 #### Bonus Features
 
-- Check if a message is displayed when you press `Enter` without drawing any points, reminding you to add points.
+###### +Is a message displayed when you press `Enter` without drawing any points, reminding you to add points?
 
-- Verify if you can clear the screen and add new control points without restarting the program.
+###### +Can you clear the screen and add new control points without restarting the program?
 
-- Check if it's possible to drag the control points in real-time and observe the generation of a new curve.
+###### +Is it possible to drag the control points in real-time and observe the generation of a new curve?
