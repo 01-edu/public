@@ -69,7 +69,7 @@ It is also expected that you explain the iterations and how you end up choosing 
 
 - Predict at least one emotion per second from the video stream. The minimum requirement is printing in the prompt the predicted emotion with its associated probability. If there's any problem related to the webcam use as input the recorded video stream.
 
-For that step, I suggest again to use **OpenCV** as much as possible. This link shows how to work with a video stream with OpenCV. OpenCV documentation may become deprecated in the future. However, OpenCV will always provide tools to work with video streams, so search on the internet for OpenCV documentation and more specifically "OpenCV video streams". 
+For that step, I suggest again to use **OpenCV** as much as possible. This link shows how to work with a video stream with OpenCV. OpenCV documentation may become deprecated in the future. However, OpenCV will always provide tools to work with video streams, so search on the internet for OpenCV documentation and more specifically "OpenCV video streams".
 [Here](https://docs.opencv.org/4.x/dd/d43/tutorial_py_video_display.html) you can find a useful tutorial to get started using OpenCV.
 
 - Optional: **(very cool)** Hack the CNN. Take a picture for which the prediction of your CNN is **Happy**. Now, hack the CNN: using the same image **SLIGHTLY** modified make the CNN predict **Sad**.
