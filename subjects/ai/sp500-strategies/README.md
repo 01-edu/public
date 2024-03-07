@@ -53,11 +53,11 @@ We assume it is day `D`, and we want to take a position on the next n days. The 
 
 ![alt text][blocking]
 
-[blocking]: blocking_time_series_split.png 'Blocking Time Series split'
+[blocking]: blocking_time_series_split.png "Blocking Time Series split"
 
 ![alt text][timeseries]
 
-[timeseries]: Time_series_split.png 'Time Series split'
+[timeseries]: Time_series_split.png "Time Series split"
 
 Once you'll have run the grid search on the cross validation (choose either Blocking or Time Series split), you'll select the best pipeline on the train set and save it as `selected_model.pkl` and `selected_model.txt` (pipeline hyperparameters).
 
@@ -70,7 +70,7 @@ Once you'll have run the grid search on the cross validation (choose either Bloc
 
 ![alt text][barplot]
 
-[barplot]: metric_plot.png 'Metric plot'
+[barplot]: metric_plot.png "Metric plot"
 
 - The signal has to be generated with the chosen cross validation: train the model on the train set of the first fold, then predict on its validation set; train the model on the train set of the second fold, then predict on its validation set, etc ... Then, concatenate the predictions on the validation sets to build the machine learning signal. **The pipeline shouldn't be trained once and predict on all data points!**
 
