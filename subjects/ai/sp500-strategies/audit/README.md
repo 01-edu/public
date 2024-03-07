@@ -34,7 +34,7 @@
 
 ###### Do all train folds have more than 2y history? If you use time series split, checking that the first fold has more than 2y history is enough.
 
-###### Is the last validation set of the train data not overlapping with the test data?
+###### Can you confirm that the last validation set of the train data is not overlapping with the test data?
 
 ###### Are all the data folds split by date? A fold should not contain repeated data from the same date and ticker.
 
