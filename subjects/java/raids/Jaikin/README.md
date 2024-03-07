@@ -1,4 +1,4 @@
-## Implementation of Jaikin's Algorithm with Step-by-Step Animation
+## Jaikin
 
 ### Objective
 
@@ -34,4 +34,4 @@ Optionally, you may implement the following bonus features:
 
 > Note: You are free to choose any library for handling windows, rendering, keyboard, and mouse events.
 
-For more information on Chaikin's algorithm, refer to [this resource](http://graphics.cs.ucdavis.edu/education/CAGDNotes/Chaikins-Algorithm/Chaikins-Algorithm.html). You can also view an example of how the application should work in this [video](https://youtu.be/PbB2eKnA2QI). Remember, the usage of Chaikin's algorithm is mandatory for this implementation.
+For more information on Chaikin's algorithm, refer to [this resource](https://www.cs.unc.edu/~dm/UNC/COMP258/LECTURES/Chaikins-Algorithm.pdf). You can also view an example of how the application should work in this [video](https://youtu.be/PbB2eKnA2QI). Remember, the usage of Chaikin's algorithm is mandatory for this implementation.
