@@ -79,7 +79,7 @@ project
 
 ![alt text][timeseries]
 
-[timeseries]: ../Time_series_split.png "Time Series split"
+[timeseries]: ../Time_series_split.png 'Time Series split'
 
 ##### Model Selection
 
@@ -101,7 +101,7 @@ _Note that, this can be done also on the test set **IF** this hasn't helped to s
 
 ![alt text][barplot]
 
-[barplot]: ../metric_plot.png "Metric plot"
+[barplot]: ../metric_plot.png 'Metric plot'
 
 ##### Machine learning signal
 
