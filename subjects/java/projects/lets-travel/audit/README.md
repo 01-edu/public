@@ -98,7 +98,7 @@
 
 ##### Assess if the system handles high traffic volumes effectively without significant performance degradation.
 
-###### Can the system manage high traffic volumes without performance loss?
+###### Can the system manage high traffic volumes without performance loss (you still can apply any action in the app in less than 5s)?
 
 ##### Check if there is a fallback mechanism to ensure continuity of core functionalities in case of a service failure.
 
@@ -111,10 +111,6 @@
 ##### Ensure the UI facilitates easy navigation and access to features for users of all roles.
 
 ###### Does the UI support easy navigation for all user roles?
-
-##### Confirm that Admins can generate and view reports on system usage, performance, and user feedback.
-
-###### Can Admins generate detailed reports on system usage and feedback?
 
 ##### Verify if Travel Managers are able to access analytics about their travel listings and subscriber feedback.
 
