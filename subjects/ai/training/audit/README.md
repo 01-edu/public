@@ -115,7 +115,7 @@ array([[37,  2],
 
 ![alt text][logo_ex4]
 
-[logo_ex4]: ../w2_day4_ex4_q3.png 'ROC AUC '
+[logo_ex4]: ../w2_day4_ex4_q3.png "ROC AUC "
 
 Having a 99% ROC AUC is not usual. The data set we used is easy to classify. On real data sets, always check if there's any leakage while having such a high ROC AUC score.
 

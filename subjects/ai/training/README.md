@@ -179,7 +179,7 @@ classifier.fit(X_train_scaled, y_train)
 
 ![alt text][logo_ex4]
 
-[logo_ex4]: ./w2_day4_ex4_q3.png 'ROC AUC '
+[logo_ex4]: ./w2_day4_ex4_q3.png "ROC AUC "
 
 - https://scikit-learn.org/stable/modules/generated/sklearn.metrics.plot_roc_curve.html
 
