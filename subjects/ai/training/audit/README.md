@@ -128,70 +128,66 @@ Having a 99% ROC AUC is not usual. The data set we used is easy to classify. On 
 ###### For question 1, are the scores outputted close to the scores below? Some of the algorithms use random steps (random sampling used by the `RandomForest`). I used `random_state = 43` for the Random Forest, the Decision Tree and the Gradient Boosting.
 
 ```console
-# Linear regression
+~~~
+Linear Regression
 
 TRAIN
-r2 on the train set:  0.34823544284172625
-MAE on the train set:  0.533092001261455
-MSE on the train set:  0.5273648371379568
+r2 score:        0.6054131599242079
+MAE:             0.5330920012614552
+MSE:             0.5273648371379568
 
 TEST
-r2 on the test set:  0.3551785428138914
-MAE on the test set:  0.5196420310323713
-MSE on the test set:  0.49761195027083804
-
-
-# SVM
+r2 score:        0.6128959462132963
+MAE:             0.5196420310323714
+MSE:             0.49761195027083804
+~~~
+SVM
 
 TRAIN
-r2 on the train set:  0.6462366150965996
-MAE on the train set:  0.38356451633259875
-MSE on the train set:  0.33464478671339165
+r2 score:        0.749610858293664
+MAE:             0.3835645163325988
+MSE:             0.3346447867133917
 
 TEST
-r2 on the test set:  0.6162644671183826
-MAE on the test set:  0.3897680598426786
-MSE on the test set:  0.3477101776543003
-
-
-# Decision Tree
+r2 score:        0.7295080649899683
+MAE:             0.38976805984267887
+MSE:             0.3477101776543005
+~~~
+Decision Tree
 
 TRAIN
-r2 on the train set:  0.9999999999999488
-MAE on the train set:  1.3685733933909677e-08
-MSE on the train set:  6.842866883530944e-14
+r2 score:        1.0
+MAE:             4.221907539810565e-17
+MSE:             9.24499456646287e-32
 
 TEST
-r2 on the test set:  0.6263651902480918
-MAE on the test set:  0.4383758696244002
-MSE on the test set:  0.4727017198871596
-
-
-# Random Forest
+r2 score:        0.6228217144931267
+MAE:             0.4403051356589147
+MSE:             0.4848526395290697
+~~~
+Random Forest
 
 TRAIN
-r2 on the train set:  0.9705418471542886
-MAE on the train set:  0.11983836612191189
-MSE on the train set:  0.034538356420577995
+r2 score:        0.9741263135396302
+MAE:             0.12000198560508221
+MSE:             0.03458015083247723
 
 TEST
-r2 on the test set:  0.7504673649554309
-MAE on the test set:  0.31889891600404635
-MSE on the test set:  0.24096164834441108
-
-
-# Gradient Boosting
+r2 score:        0.8119778189909694
+MAE:             0.3194169859011629
+MSE:             0.24169750554364758
+~~~
+Gradient Boosting
 
 TRAIN
-r2 on the train set:  0.7395782392433273
-MAE on the train set:  0.35656543036682264
-MSE on the train set:  0.26167490389525294
+r2 score:        0.8042086499063386
+MAE:             0.35656543036682264
+MSE:             0.26167490389525294
 
 TEST
-r2 on the test set:  0.7157456298013534
-MAE on the test set:  0.36455447680396397
-MSE on the test set:  0.27058170064218096
-
+r2 score:        0.7895081234643192
+MAE:             0.36455447680396397
+MSE:             0.27058170064218096
 ```
 
 It is important to notice that the Decision Tree overfits very easily. It learns easily the training data but is not able to extrapolate on the test set. This algorithm is not used a lot because of its overfitting ability.
