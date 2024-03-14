@@ -56,7 +56,7 @@ SpaCy](https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spa
 
 The goal is to detect what the article is dealing with: Tech, Sport, Business,
 Entertainment or Politics. To do so, a labelled dataset is provided: [training
-data](bbc_news_train.csv) and [test data](bbc_news_test.csv). From this
+data](bbc_news_train.csv) and [test data](bbc_news_tests.csv). From this
 dataset, build a classifier that learns to detect the right topic in the
 article. Save the training process to a python file because the audit requires
 the auditor to test the model.
@@ -67,11 +67,6 @@ Save the plot of learning curves (`learning_curves.png`) in `results` to prove
 that the model is trained correctly and not overfitted.
 
 - Learning constraints: **Score on test: > 95%**
-
-- **Optional**: If you want to train a news' topic classifier based on a more
-  challenging dataset, you can use the
-  [following](https://www.kaggle.com/rmisra/news-category-dataset) which is
-  based on 200k news headlines.
 
 #### **3. Sentiment analysis:**
 
