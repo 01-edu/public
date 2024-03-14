@@ -1,4 +1,4 @@
-# Forest Prediction
+## Forest Prediction
 
 The goal of this project is to use cartographic variables to classify forest categories. You will have to analyse the data, create features and to train a machine learning model on the cartographic data to make it as accurate as possible.
 
@@ -47,7 +47,7 @@ project
 
 - Create a Jupyter Notebook to analyse the data sets and perform EDA (Exploratory Data Analysis). This notebook will not be evaluated.
 
-- *Hint: Examples of interesting features*
+- _Hint: Examples of interesting features_
 
   - `Distance to hydrology = sqrt((Horizontal_Distance_To_Hydrology)^2 + (Vertical_Distance_To_Hydrology)^2)`
   - `Horizontal_Distance_To_Fire_Points - Horizontal_Distance_To_Roadways`
@@ -79,15 +79,14 @@ DATA
 - Split train test
 - Cross validation: at least 5 folds
 - Grid search on at least 5 different models:
-  - Gradient Boosting, KNN, Random Forest, SVM, Logistic Regression. *Remember that for some model scaling the data is important and for others it doesn't matter.*
-
+  - Gradient Boosting, KNN, Random Forest, SVM, Logistic Regression. _Remember that for some model scaling the data is important and for others it doesn't matter._
 - Train accuracy score < **0.98**. Train set (0). Write the result in the `README.md`
 - Test (last day) accuracy > **0.65**. Test set (0). Write the result in the `README.md`
 - Display the confusion matrix for the best model in a DataFrame. Precise the index and columns names (True label and Predicted label)
 - Plot the learning curve for the best model
 - Save the trained model as a [pickle](https://docs.python.org/3/library/pickle.html) file
 
-> Advice: As the grid search takes time, I suggest to prepare and test the code. Once you are confident it works, run the gridsearch at night and analyse the results
+> Advice: As the grid search takes time, I suggest preparing and test the code. Once you are confident it works, run the gridsearch at night and analyse the results
 
 **Hint**: The confusion matrix shows the misclassifications class per class. Try to detect if the model misclassifies badly one class with another. Then, do some research on the internet on the two forest cover types, find the differences and create some new features that underline these differences. More generally, the methodology of a models learning is a cycle with several iterations. More details [here](https://serokell.io/blog/machine-learning-testing)
 
