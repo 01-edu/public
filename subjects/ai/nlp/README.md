@@ -204,23 +204,23 @@ Steps:
 
 > Note: The sample 3x3 table mentioned is a small representation of the expected output for demonstration purposes. It's not necessary to drop columns in this context.
 
-3. Show the token counts (obtained with the above-mentioned steps) of the fourth tweet. 
+3. Show the token counts (obtained with the above-mentioned steps) of the fourth tweet.
 
-4. Using the word counter, show the 15 most used tokenized words in the datasets' tweets 
+4. Using the word counter, show the 15 most used tokenized words in the datasets' tweets
 
 5. Add to your `count_vecotrized_df` a `label` column considering the following:
+
    - 1: Positive
    - 0: Neutral
    - -1: Negative
 
    The final DataFrame should be similar to the below:
 
-
-|    |   ...  |   label |
-|---:|-------:|--------:|
-|  0 |    ... |       1 |
-|  1 |    ... |      -1 |
-|  2 |    ... |      -1 |
-|  3 |    ... |      -1 |
+|     | ... | label |
+| --: | --: | ----: |
+|   0 | ... |     1 |
+|   1 | ... |    -1 |
+|   2 | ... |    -1 |
+|   3 | ... |    -1 |
 
 _Resources: [sklearn.feature_extraction.text.CountVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html)_
