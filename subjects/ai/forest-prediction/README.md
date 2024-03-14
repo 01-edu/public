@@ -85,7 +85,7 @@ DATA
 - Test (last day) accuracy > **0.65**. Test set (0). Write the result in the `README.md`
 - Display the confusion matrix for the best model in a DataFrame. Precise the index and columns names (True label and Predicted label)
 - Plot the learning curve for the best model
-- Save the trained model as a [pickle](https://www.datacamp.com/community/tutorials/pickle-python-tutorial) file
+- Save the trained model as a [pickle](https://docs.python.org/3/library/pickle.html) file
 
 > Advice: As the grid search takes time, I suggest to prepare and test the code. Once you are confident it works, run the gridsearch at night and analyse the results
 
