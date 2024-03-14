@@ -21,7 +21,7 @@ Expand the Travel Management System by incorporating essential features and defi
 ##### Travel Manager:
 
 - Create and manage personal travel offerings, with the capability to view feedback specific to their organized travels.
-- Access a dashboard that displays key statistics linked to their travels, such as income, number of trips, and number of travelers. 
+- Access a dashboard that displays key statistics linked to their travels, such as income, number of trips, and number of travelers.
 - Manage subscriber lists for each travel, with options to view profiles or unsubscribe travelers from the travel.
 - Have access to all functionalities available to a Traveler, enhancing their understanding of the user experience.
 - Utilize detailed analytics and feedback to inform future travel planning and management strategies.
