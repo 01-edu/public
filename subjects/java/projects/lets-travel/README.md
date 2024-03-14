@@ -28,8 +28,8 @@ Expand the Travel Management System by incorporating essential features and defi
 
 ##### Traveler:
 
-- Provide a travel search bar using Elasticsearch for dynamic search capabilities, including autocomplete suggestions and efficient search results.
-- Browse available travels and receive personalized suggestions based on previous feedbacks and participations, utilizing Neo4j for customization.
+- Integrate an Elasticsearch-based travel search with autocomplete for smooth, dynamic querying across all travel details, ensuring swift and accurate results.
+- Browse available travels and receive personalized suggestions based on previous feedback and participation (use at least 3 fields of the travel), utilizing Neo4j for customization.
 - Subscribe and unsubscribe from travels with a cutoff period of 3 days before the travel start date for flexibility.
 - Execute payments for subscriptions using various methods, catering to user convenience and security.
 - Provide feedback on participated travels, contributing to the community's overall quality and trustworthiness.
@@ -51,6 +51,7 @@ Ensure seamless user experience from search to booking, with efficient navigatio
 
 - Implement robust security measures to protect traveler data and transaction details, with a focus on authentication, payment processing, and privacy.
 - Adhere to legal standards and industry best practices for data protection and online transactions, ensuring compliance and user trust.
+- Ensure secure data transmission with SSL/TLS protocols.
 
 ### Bonus Features
 

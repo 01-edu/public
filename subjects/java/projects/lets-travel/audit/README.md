@@ -12,7 +12,7 @@
 
 ###### Do the students comprehend how each service is scaled and operates independently within the system?
 
-##### Aks the students about the methods used to ensure data consistency between PostgreSQL, Neo4j, and Elasticsearch.
+##### Ask the students about the methods used to ensure data consistency between PostgreSQL, Neo4j, and Elasticsearch.
 
 ###### Are students aware of the techniques employed to maintain data consistency across databases?
 
@@ -30,15 +30,15 @@
 
 ###### Are autocomplete suggestions both relevant and promptly provided?
 
-##### Evaluate the accuracy of travel suggestions provided by the Neo4j database based on user preferences and past behavior.
+##### Sign in with a user account. Verify the precision of travel recommendations from the Neo4j database by evaluating user feedback and past participation. Afterward, switch to a different account with varying feedback and participation levels to conduct another evaluation.
 
 ###### Does Neo4j deliver precise travel suggestions tailored to user preferences?
 
-##### Confirm the presence of a comprehensive overview of system analytics on the Admin dashboard.
+##### Confirm the presence of a comprehensive overview on the Admin dashboard.
 
-###### Is there a detailed system analytics overview available for Admins?
+###### Is the dashboard complete and showing all the information as defined in the subject [Admin section](../README.md#admin) ?
 
-##### Assess the detailedness of travel management statistics available on the Travel Manager dashboard.
+##### Assess the details of the travel management statistics available on the Travel Manager dashboard.
 
 ###### Are travel management statistics detailed and helpful for Travel Managers?
 
@@ -73,6 +73,10 @@
 ##### Verify if Travel Managers can view and interact with subscriber lists for their travels.
 
 ###### Can Travel Managers interact with subscriber lists effectively?
+
+##### Verify if Travel Managers can access analytics about their travel listings and subscriber feedback.
+
+###### Do Travel Managers have access to analytics on their listings?
 
 ##### Ensure that Traveler profiles are comprehensive, displaying past participations, feedback given, and reports made.
 
@@ -112,17 +116,17 @@
 
 ###### Does the UI support easy navigation for all user roles?
 
-##### Verify if Travel Managers are able to access analytics about their travel listings and subscriber feedback.
-
-###### Do Travel Managers have access to analytics on their listings?
-
 ##### Check if the system adheres to data protection regulations and privacy laws.
 
 ###### Does the system comply with data protection
 
 ##### Verify if development and deployment practices align with industry standards for security and code quality, such as `OWASP` and `clean code principles`.
 
-###### Are development and deployment practices in line with industry standards for security and code quality such as `OWASP` and `clean code principles`?
+###### Is the code readable and simple to understand?
+
+###### Is the code well separated? did the students convince you about that?
+
+###### Can the student approve that the platform is protected against SQL injection and XSS?
 
 #### Bonus
 
