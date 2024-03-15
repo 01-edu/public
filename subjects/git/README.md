@@ -316,3 +316,8 @@ Your work must be submitted at the `gitea` link provided. The evaluation will be
 
 - Correctness of the git commands you are using.
 - Clear understanding of the git commands and concepts.
+
+### Notions
+
+- [Git Branching](https://learngitbranching.js.org/)
+- [Git Gud](https://github.com/benthayer/git-gud)
