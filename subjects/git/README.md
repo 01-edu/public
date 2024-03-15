@@ -2,71 +2,122 @@
 
 ### Introduction
 
-The Git project is designed to introduce you to the world of version control and collaboration with Git.
-Git is a powerful and widely used tool for tracking changes in your projects, collaborating with others,
-and ensuring the integrity of your code.
+This project is designed to introduce you to the world of version control and collaboration using **Git**. Git is a powerful and widely used tool for tracking changes in your projects, collaborating with others, and ensuring the integrity of your code.
 
-This Git project is structured as a series of exercises. You will progressively build your Git skills,
-starting from the basics and gradually moving towards more advanced topics.
+Throughout this project, you will embark on a journey of progressively building your Git skills. Starting from the basics, you'll gradually explore more advanced topics, equipping yourself with the essential knowledge and practices for effective version control and collaboration.
 
 Let's Git ready for it!
 
 ### Instructions
 
-Put all of your work in a directory `work`, each exercise in a separate file named after the name of the exercise.
+To begin, create a `work` directory and organize all your tasks within it. Each exercise should be encapsulated in its own file, named after the corresponding task for clarity and ease of reference.
+
+Accompanying your work, provide documentation or a report detailing the process followed for each exercise. This documentation should include any challenges faced, solutions implemented, and lessons learned. It could be in the form of a README file or a separate document. Make sure to show it to the auditor during evaluation.
+
+> ⚠️ Your completion of tasks will be evaluated based on the commit history reflecting the changes made throughout the exercises and the presence of accompanying documentation detailing the process followed.
+
+Here is an example of a file that you can deliver to your auditor to help with the review process:
+
+```md
+#### Conflicts, merging and rebasing
+
+# Merge Main into Greeter Branch
+
+<Write the command here>
+
+# Switch to main branch and make changes to hello.rb file
+
+<Write the command here>
+
+# Merging Main into Greeter Branch (Conflict)
+
+<Write the command here>
+
+# Resolve the conflict (manually or using merge tools)
+
+<Write the command here>
+
+# After resolving, stage the changes and commit
+
+<Write the command here>
+
+# Rebasing Greeter Branch
+
+<Write the command here>
+
+# Merging Greeter into Main
+
+<Write the command here>
+```
 
 #### Setting Up Git
 
-- Install Git on your local machine by following the instructions for your operating system on the official Git website.
+- Install Git on your local machine by following the instructions for your operating system on the official [Git website](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 - Configure Git with your name and email address.
 
 #### Git commits to commit
 
-- In `work` directory, create a folder named `hello` then a file `hello.rb` with the content below:
-  ```
-  puts "Hello, World"
-  ```
-- Initialize the git repository in `hello` directory, then add `hello.rb` to the repository.
-- Check the status and act accordingly with the output of the executed command.
-- Change the “Hello, World” program. Change the file to be
+- Within the `work` directory, establish a subdirectory named `hello`. Inside this directory, generate a file titled `hello.rb` and input the following content:
 
+```ruby
+puts "Hello, World"
 ```
+
+- Initialize the git repository in the `hello` directory.
+- Check the status and act accordingly with the output of the executed command.
+- Change the `hello.rb` content to the following:
+
+```ruby
 puts "Hello, #{ARGV.first}!"
 ```
 
 - Stage the changed file and commit the changes, the working tree should be clean.
-- Change again `hello.rb` file and add the file to staging area, make two commits one for the comment in line1, the other for lines 3 and 4.
+- Modify the `hello.rb` file to include comments and stage it.
 
-```
+```ruby
 # Default is "World"
 name = ARGV.first || "World"
 
 puts "Hello, #{name}!"
 ```
 
+- Make two separate commits:
+  - The first commit should be for the comment in line 1.
+  - The second commit should include changes made to lines 3 and 4.
+
 #### History
 
 - Show the history of the working directory.
-- Show One line history; only the hashes and commit messages are displayed.
-- Show logs with control over entries displayed: 2 last entries, since 5 minutes ago, until 5 minutes ago.
-- Show logs in a personalized format like: `* e4e3645 2023-06-10 | Added a comment (HEAD -> main) [John Doe]`
+- Show One-Line History for a condensed view showing only commit hashes and messages.
+- **Controlled Entries**:
+  - You need to customize the log output by specifying the number of entries or a time range. Customize it to display the last `2 entries`, to view `commits made within the last 5 minutes` or to see `commits made in the last 5 minutes until now`.
+- **Personalized Format**:
+  - Show logs in a personalized format, including the commit hash, date, message, branch information, and author name, resembling `* e4e3645 2023-06-10 | Added a comment (HEAD -> main) [John Doe]`
 
 #### Check it out
 
-- Restore the first snapshot of your working tree, then print the content of `hello.rb` file.
-- Restore the second recent snapshot and print the content of `hello.rb` file.
-- Return the latest version in the main branch (do not use commit hash)
+- **Restore First Snapshot**:
+  - Revert the working tree to its initial state, as captured in the first snapshot, and then print the content of the `hello.rb` file.
+- **Restore Second Recent Snapshot**:
+  - Revert the working tree to the second most recent snapshot and print the content of the `hello.rb` file.
+- **Return to Latest Version**:
+  - Ensure that the working directory reflects the latest version of the `hello.rb` file present in the main branch, without referring to specific commit hashes.
 
 #### TAG me
 
-- Refer the current version of the repository as `v1`.
-- Tag the version immediately prior to the current version as `v1-beta`, do not use commit hashes to move through the history.
-- Go back and forth between the two tagged versions.
-- Show the list of tags
+- **Referencing Current Version**:
+  - Tag the current version of the repository as `v1`.
+- **Tagging Previous Version**:
+  - Tag the version immediately prior to the current version as `v1-beta`, without relying on commit hashes to navigate through the history.
+- **Navigating Tagged Versions**:
+  - Move back and forth between the two tagged versions, `v1` and `v1-beta`.
+- **Listing Tags**:
+  - Display a list of all tags present in the repository to verify successful tagging.
 
 #### Changed your mind?
 
-- Make the following changes to the latest version of the file, then revert it before staging (Do not use CTRL+Z)
+- **Reverting Changes**:
+  - Modify the latest version of the file with unwanted comments, then revert it back to its original state before staging. (Do not use CTRL+Z)
 
 ```
 # This is a bad comment.  We want to revert it.
@@ -75,7 +126,8 @@ name = ARGV.first || "World"
 puts "Hello, #{name}!"
 ```
 
-- Modify the file to have a bad comment, stage it, then clean the staging area.
+- **Staging and Cleaning**:
+  - Introduce unwanted changes to the file, stage them, then clean the staging area to discard the changes.
 
 ```
 # This is an unwanted but staged comment
@@ -84,7 +136,8 @@ name = ARGV.first || "World"
 puts "Hello, #{name}!"
 ```
 
-- Add the following changes again, stage the file and commit the changes, then revert it.
+- **Committing and Reverting**:
+  - Add the following unwanted changes again, stage the file, commit the changes, then revert them back to their original state.
 
 ```
 # This is an unwanted but committed change
@@ -93,10 +146,14 @@ name = ARGV.first || "World"
 puts "Hello, #{name}!"
 ```
 
-- Mark the latest commit with `oops` tag, then remove commits coming after `v1` version (HEAD should be in `v1`)
-- Show the logs with the deleted commits displayed (eg: log for commit tagged `oops` should be displayed).
-- Now make sure the unreferenced commits are deleted from the history (no logs for deleted commits).
-- Add an author comment to the file and commit the changes
+- **Tagging and Removing Commits**:
+  - Tag the latest commit with `oops`, then remove commits made after the `v1` version. Ensure that the `HEAD` points to `v1`.
+- **Displaying Logs with Deleted Commits**:
+  - Show the logs with the deleted commits displayed, particularly focusing on the commit tagged `oops`.
+- **Cleaning Unreferenced Commits**:
+  - Ensure that unreferenced commits are deleted from the history, meaning there should be no logs for these deleted commits.
+- **Author Information**:
+  - Add an author comment to the file and commit the changes.
 
 ```
 # Default is World
@@ -106,12 +163,13 @@ name = ARGV.first || "World"
 puts "Hello, #{name}!"
 ```
 
-- Oops we forgot the author email, Update the file to include the email. don't make a new commit, but include the change in the last commit.
+- Oops the author email was forgotten, update the file to include the email without making a new commit, but include the change in the last commit.
 
 #### Move it
 
-- Move the program `hello.rb` into a `lib/` directory (use git command) and commit the move.
-- Add a Rakefile to the root of the repository and commit it.
+- **Moving hello.rb**:
+  - Using Git commands, move the program `hello.rb` into a `lib/` directory, and then commit the move.
+  - Create a `Rakefile` in the root directory of the repository with the provided content and commit it to the repository.
 
 ```
 #!/usr/bin/ruby -wKU
@@ -125,19 +183,23 @@ end
 
 #### blobs, trees and commits
 
-- Explore .git/ directory and explain its contents: `objects/`, `config`, `refs` and `HEAD`.
-- Grab the latest object hash within `.git/object` directory print its type and its content using `git` command.
-- Dump the directory tree referenced in the commit
-- Dump the `lib` directory, then `hello.rb` file.
+- **Exploring `.git/` Directory**:
+  - Navigate to the `.git/` directory in your project and examine its contents.You will have to explain the purpose of each subdirectory, including `objects/`, `config`, `refs`, and `HEAD` in the audit.
+- **Latest Object Hash**:
+  - Find the latest object hash within the `.git/objects/` directory using Git commands and print the type and content of this object using Git commands.
+- **Dumping Directory Tree**:
+  - Use Git commands to dump the directory tree referenced by this commit.
+  - Dump the contents of the `lib/` directory and the `hello.rb` file using Git commands.
 
 #### Branching
 
-It’s time to do a major rewrite of the hello world functionality. Since this might take awhile, you’ll want to put these changes into a separate branch to isolate them from changes in main.
+It’s time to do a major rewrite of the hello world functionality. Since this might take a while, you’ll want to put these changes into a separate branch to isolate them from changes in the main branch.
 
-- Create a local branch named `greet` and switch to it.
-- Create `greeter.rb` file in `lib` directory, add the following content to it and commit the changes
+- **Create and Switch to New Branch**:
+  - Create a local branch named `greet` and switch to it.
+  - In the `lib` directory, create a new file named `greeter.rb` and add the provided Ruby code to it. Commit these changes.
 
-```
+```ruby
 class Greeter
   def initialize(who)
     @who = who
@@ -148,9 +210,9 @@ class Greeter
 end
 ```
 
-- Update `lib/hello.rb` file by adding the content below, stage and commit the changes.
+- Update the `lib/hello.rb` file by adding the content below, stage and commit the changes.
 
-```
+```ruby
 require 'greeter'
 
 # Default is World
@@ -160,9 +222,9 @@ greeter = Greeter.new(name)
 puts greeter.greet
 ```
 
-- Update `lib/Rakefile` too and commit the changes
+- Update the `lib/Rakefile` with the following content to ensure it runs the updated `lib/hello.rb` file. Commit these changes.
 
-```
+```ruby
 #!/usr/bin/ruby -wKU
 
 task :default => :run
@@ -172,68 +234,85 @@ task :run do
 end
 ```
 
-- Switch to `main` branch, show the difference between the versions in `main` and `greeter` branches for the these files: `Rakefile`, `hello.rb` and `greeter.rb`
-- Create `README.md` file with the content below and commit the changes.
+- Switch back to the `main` branch, compare and show the differences between the `main` and `greet` branches for `Rakefile`, `hello.rb`, and `greeter.rb` files.
+- Generate a `README.md` file for the project with the provided content. Commit this file.
 
-```
+```console
 This is the Hello World example from the git project.
 ```
 
-- Draw the commit tree for all the branches to show the diverging changes.
+- Draw a commit tree diagram illustrating the diverging changes between all branches to demonstrate the branch history.
 
 #### Conflicts, merging and rebasing
 
-- Merge `main` branch into `greeter` branch.
-- Switch to `main` branch and make the changes below to `hello.rb` save and commit.
+- **Merge Main into Greeter Branch**:
+  - Start by merging the changes from the `main` branch into the `greeter` branch.
+  - Switch to `main` branch and make the changes below to the `hello.rb` file, save and commit the changes.
 
-```
+```ruby
 puts "What's your name"
 my_name = gets.strip
 
 puts "Hello, #{my_name}!"
 ```
 
-- Now switch to `greeter` branch and try to merge `main` into it (Bingooo! there you have a conflict!).
-- Resolve the conflict (manually or using graphical merge tools), accept changes from `main` branch, then commit the conflict resolution.
-- Go back in time before the very first merge. now rebase the branch `greeter` on top of `main` branch.
-- Now merge changes from `greeter` into `main` branch.
-- Explain fast-forwarding and the difference between merging and rebasing.
+- **Merging Main into Greeter Branch (Conflict)**:
+  - Attempt to merge the `main` branch into `greeter`. Bingooo! There you have it, a `conflict`.
+  - Resolve the conflict (manually or using graphical merge tools), accept changes from `main` branch, then commit the conflict resolution.
+- **Rebasing Greeter Branch**:
+  - Go back to the point before the initial merge between `main` and `greeter`.
+  - Rebase the `greeter` branch on top of the latest changes in the `main` branch.
+- **Merging Greeter into Main**:
+  - Merge the changes from the `greeter` branch into the `main` branch.
+- **Understanding Fast-Forwarding and Differences**:
+  - Explain fast-forwarding and the difference between merging and rebasing.
 
 #### Local and remote repositories
 
-- In `work/` directory make a clone of the repository `hello` as `cloned_hello` (do not use `copy` command).
-- Show the logs for the cloned repository, what are `origin/main`, `origin/greet` and `origin/HEAD` ?.
-- Display the name of the remote repository, show more information about it.
-- List all the remote and local branches.
-- Make changes to the original repository, Update `README.md` file and commit the changes.
+- In the `work/` directory, make a clone of the repository `hello` as `cloned_hello`. (Do not use `copy` command)
+
+- Show the logs for the cloned repository.
+
+- Display the name of the remote repository and provide more information about it.
+
+- List all remote and local branches in the `cloned_hello` repository.
+
+- Make changes to the original repository, update the `README.md` file with the provided content, and commit the changes.
 
 ```
 This is the Hello World example from the git project.
-(changed in original)
+(changed in the original)
 ```
 
-- Inside the cloned copy fetch the changes from remote and display the logs (commits from `hello` repository should be included in the logs).
-- Merge remote `main` branch into local `main` branch.
-- What is the single git command equivalent to what you did before to bring changes from remote to local `main` branch?
-- Add a `greet` local branch tracking the remote `origin/greet` branch.
+- Inside the cloned repository (`cloned_hello`), fetch the changes from the remote repository and display the logs. Ensure that commits from the `hello` repository are included in the logs.
+
+- Merge the changes from the remote `main` branch into the local `main` branch.
+
+- Add a local branch named `greet` tracking the remote `origin/greet` branch.
+
+- Be ready for this question in the audit!
+
+**"What is the single git command equivalent to what you did before to bring changes from remote to local `main` branch?"**
 
 #### Bare repositories
 
-- What is a bare repository and what is it needed for?
-- Create a bare repository from `hello` repository and name it `hello.git`.
-- Add the bare `hello.git` repository as a remote to our original repository `hello`.
-- Change README.md file, commit and push the change to the shared repository.
+- What is a bare repository and why is it needed?
+- Create a bare repository named `hello.git` from the existing `hello` repository.
+- Add the bare `hello.git` repository as a remote to the original repository `hello`.
+- Change the `README.md` file in the original repository with the provided content:
 
 ```
 This is the Hello World example from the git project.
 (Changed in the original and pushed to shared)
 ```
 
-- Quick hop over to the clone repository `cloned_hello` and pull down the changes just pushed to the shared repository.
+- Commit the changes and push them to the shared repository.
+
+- Switch to the cloned repository `cloned_hello` and pull down the changes just pushed to the shared repository.
 
 ### Submission and Evaluation
 
-Your work will have to be submitted in the `gitea` link provided. the evaluation will be performed based on your submission and in accordance with the following criteria:
+Your work must be submitted at the `gitea` link provided. The evaluation will be carried out based on your submission and according to the following criteria:
 
 - Correctness of the git commands you are using.
 - Clear understanding of the git commands and concepts.
