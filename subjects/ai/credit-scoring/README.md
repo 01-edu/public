@@ -106,5 +106,4 @@ project
 
 ### Files needed for this project
 
-[File 1](https://assets.01-edu.org/ai-branch/project5/project05-20221024T130417Z-001.zip)
-[File 2](https://assets.01-edu.org/ai-branch/project5/project05-20221024T130417Z-002.zip)
+[Files](https://assets.01-edu.org/ai-branch/project5/home-credit-default-risk.zip)
