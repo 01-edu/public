@@ -82,8 +82,6 @@
 
 ###### Are Traveler profiles detailed and informative?
 
-### Ensure Authentication and Authorization Security
-
 ##### Check the security and straightforwardness of the login process for all user roles.
 
 ###### Is the login process secure and straightforward for all user roles?
@@ -128,9 +126,9 @@
 
 ##### Verify if the platform is protected against SQL injection and XSS.
 
-###### Can the student approve that the platform is protected against SQL injection?
+###### Can the student prove that the platform is protected against SQL injection?
 
-###### Can the student approve that the platform is protected against XSS?
+###### Can the student prove that the platform is protected against XSS?
 
 ##### Verify if Passwords are encrypted.
 
