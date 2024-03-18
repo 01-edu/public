@@ -120,13 +120,21 @@
 
 ###### Does the system comply with data protection
 
-##### Verify if development and deployment practices align with industry standards for security and code quality, such as `OWASP` and `clean code principles`.
+##### Read random parts from the code base.
 
 ###### Is the code readable and simple to understand?
 
-###### Is the code well separated? did the students convince you about that?
+###### Is the code well separated? Did the students convince you about that?
 
-###### Can the student approve that the platform is protected against SQL injection and XSS?
+##### Verify if the platform is protected against SQL injection and XSS.
+
+###### Can the student approve that the platform is protected against SQL injection?
+
+###### Can the student approve that the platform is protected against XSS?
+
+##### Verify if Passwords are encrypted.
+
+###### Are passwords encrypted?
 
 #### Bonus
 
