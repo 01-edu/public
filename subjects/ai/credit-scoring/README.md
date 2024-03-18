@@ -1,40 +1,35 @@
-# Credit scoring
+## Credit scoring
 
 The goal of this project is to implement a scoring model based on various source of data ([check data documentation](./readme_data.md)) that returns the probability of default. In a nutshell, credit scoring represents an evaluation of how well the bank's customer can pay and is willing to pay off debt. It is also required that you provide an explanation of the score. For example, your model returns that the probability that one client doesn't pay back the loan is very high (90%). The reason behind is that variable_xxx which represents the ability to pay back the past loan is low. The output interpretability will appear in a visualization.
 
-The ability to understand the underlying factors of credit scoring is important. Credit scoring is subject to more and more regulation, so transparency is key. And more generaly, more and more companies prefer transparency to black box models.
+The ability to understand the underlying factors of credit scoring is important. Credit scoring is subject to more and more regulation, so transparency is key. And more generally, more and more companies prefer transparency to black box models.
 
 ### Resources
 
 Historical timeline of machine learning techniques applied to credit scoring
 
-- https://hal.archives-ouvertes.fr/hal-02507499v3/document
-- https://www.kaggle.com/c/home-credit-default-risk/data
-
-# Deliverables
+- [Machine Learning or Econometrics for Credit Scoring: Let’s Get the Best of Both Worlds](https://hal.archives-ouvertes.fr/hal-02507499v3/document)
 
 ### Scoring model
 
-The are 3 expected deliverables associated with the scoring model:
+There are 3 expected deliverables associated with the scoring model:
 
 - An exploratory data analysis notebook that describes the insights you find out in the data set.
 - The trained machine learning model with the features engineering pipeline:
 
   - Do not forget: **Coming up with features is difficult, time-consuming, requires expert knowledge. ‘Applied machine learning’ is basically feature engineering.**
   - The model is validated if the **AUC on the test set is higher than 75%**.
-  - The labelled test data is not publicly available. However a Kaggle competition uses the same data. The procedure to evaluate test set submission is the same as the one used for the project 1.
+  - The labelled test data is not publicly available. However, a Kaggle competition uses the same data. The procedure to evaluate test set submission is the same as the one used for the project 1.
 
 ### Kaggle submission
 
-The way the Kaggle platform works is explained in the challenge overview page. If you need more details, I suggest this resource that gives detailed explanations.
-
-- https://towardsdatascience.com/getting-started-with-kaggle-f9138b35ae18
+The way the Kaggle platform works is explained in the challenge overview page. If you need more details, I suggest [this resource](https://towardsdatascience.com/getting-started-with-kaggle-f9138b35ae18) that gives detailed explanations.
 
 - Create a username following that structure: username*01EDU* location_MM_YYYY. Submit the description profile and push it on the Git platform the first day of the week. Do not touch this file anymore.
 
 - A text document that describes the methodology used to train the machine learning model:
   - Algorithm
-  - Why the accuracy shouldn't be used in that case ?
+  - Why the accuracy shouldn't be used in that case?
   - Limit and possible improvements
 
 ### Model interpretability
@@ -50,7 +45,7 @@ There are 2 tools you can use to analyse your model and its predictions: - Featu
 Implement a program that takes as input the trained model, the customer id ... and returns:
 
 - the score and the SHAP force plot associated with it
-- Plotly visualisations that show:
+- Plotly visualization that show:
   - key variables describing the client and its loan(s)
   - comparison between this client and other clients
 
@@ -62,9 +57,7 @@ Choose the 3 clients of your choice, compute the score, run the visualizations o
 
 ### Optional
 
-Implement a dashboard (using Dash) that takes as input the customer id and that returns the score and the required visualizations.
-
-- https://stackoverflow.com/questions/54292226/putting-html-output-from-shap-into-the-dash-output-layout-callback
+Implement a dashboard (using [Dash](https://dash.plotly.com/)) that takes as input the customer id and that returns the score and the required visualizations.
 
 ### Deliverables
 
@@ -103,13 +96,13 @@ project
 - `README.md` introduces the project and shows the username.
 - `environment.yml` contains all libraries required to run the code.
 - `username.txt` contains the username, the last modified date of the file **has to correspond to the first day of the project**.
-- `EDA.ipynb` contains the exploratory data analysis. This file is should contain all steps of data analysis that contributed or not to improve the score of the model. It has to be commented so that the reviewer can understand the analysis and run it without any problem.
+- `EDA.ipynb` contains the exploratory data analysis. This file should contain all steps of data analysis that contributed or not to improve the score of the model. It has to be commented so that the reviewer can understand the analysis and run it without any problem.
 
 - `scripts` contains python file(s) that perform(s) the feature engineering, the model's training and prediction on the test set. It could also be one single Jupyter Notebook. It has to be commented to help the reviewers understand the approach and run the code without any bugs.
 
 ### Useful resources
 
-- https://towardsdatascience.com/interpretability-in-machine-learning-70c30694a05f
+- [Interpreting machine learning models](https://towardsdatascience.com/interpretability-in-machine-learning-70c30694a05f)
 
 ### Files needed for this project
 
