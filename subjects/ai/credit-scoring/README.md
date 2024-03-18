@@ -1,6 +1,6 @@
 # Credit scoring
 
-The goal of this project is to implement a scoring model based on various source of data (check data documentation) that returns the probability of default. In a nutshell, credit scoring represents an evaluation of how well the bank's customer can pay and is willing to pay off debt. It is also required that you provide an explanation of the score. For example, your model returns that the probability that one client doesn't pay back the loan is very high (90%). The reason behind is that variable_xxx which represents the ability to pay back the past loan is low. The output interpretability will appear in a visualization.
+The goal of this project is to implement a scoring model based on various source of data ([check data documentation](./readme_data.md)) that returns the probability of default. In a nutshell, credit scoring represents an evaluation of how well the bank's customer can pay and is willing to pay off debt. It is also required that you provide an explanation of the score. For example, your model returns that the probability that one client doesn't pay back the loan is very high (90%). The reason behind is that variable_xxx which represents the ability to pay back the past loan is low. The output interpretability will appear in a visualization.
 
 The ability to understand the underlying factors of credit scoring is important. Credit scoring is subject to more and more regulation, so transparency is key. And more generaly, more and more companies prefer transparency to black box models.
 
