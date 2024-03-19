@@ -1,6 +1,6 @@
 ### Git
 
-> ⚠️ The student is must provide you with a file containing the solutions for each task. Furthermore, they should showcase their commit history on GitHub, facilitating your review of the evolution of their work and the strategies employed to complete each task. This commit history is crucial to the evaluation process. Please ensure that the submission includes both the solution file and the link to the GitHub repository containing the commit history. In the absence of the link, kindly request the student to provide it.
+> ⚠️ The student must provide you with a file containing the solutions for each task. Furthermore, they should showcase their commit history on GitHub, facilitating your review of the evolution of their work and the strategies employed to complete each task. This commit history is crucial to the evaluation process. Please ensure that the submission includes both the solution file and the link to the GitHub repository containing the commit history. In the absence of the link, kindly request the student to provide it.
 
 #### Setup and Installation
 
@@ -12,23 +12,23 @@
 
 ###### Did the student navigate to the `work` directory and create a subdirectory named `hello`?
 
-###### Did the student generate a file named `hello.rb` with the content `puts "Hello, World"` inside the `hello` directory?
+###### Did the student generate a file named `hello.sh` with the content `puts "Hello, World"` inside the `hello` directory?
 
 ###### Did the student initialize a Git repository in the `hello` directory?
 
 ###### Did the student use the `git status` command to check the status of the repository?
 
-###### Did the student modify the `hello.rb` file content with the provided `puts "Hello, #{ARGV.first}!"`?
+###### Did the student modify the `hello.sh` file content with the provided `puts "Hello, #{ARGV.first}!"`?
 
-###### Did the student stage the modified `hello.rb` file, commit the changes to the repository, and ensure that the working tree is clean afterward?
+###### Did the student stage the modified `hello.sh` file, commit the changes to the repository, and ensure that the working tree is clean afterward?
 
-###### Did the student further modify the `hello.rb` file to include comments, and then make two separate commits as instructed?
+###### Did the student further modify the `hello.sh` file to include comments, and then make two separate commits as instructed?
 
 ###### Did the student make two separate commits, with the first commit for the comment in line 1 and the second commit for the changes made to lines 3 and 4, as instructed?
 
 #### History
 
-###### Did the student display the Git history of the working directory with `git status` command?
+###### Did the student display the Git history of the working directory with the `git log` command?
 
 ###### Did the student successfully display a condensed view of the Git history, showing only commit hashes and messages using the "One-Line History" format?
 
@@ -36,17 +36,15 @@
 
 ###### Did the student successfully demonstrate viewing commits made within the last 5 minutes?
 
-###### Did the student successfully demonstrate viewing commits made in the last 5 minutes until now?
-
 ###### Did the student successfully customize the format of Git logs and display them according to this example `* e4e3645 2023-06-10 | Added a comment (HEAD -> main) [John Doe]`?
 
 #### Check it out
 
-###### Did the student successfully restore the first snapshot of the working tree and print the content of `hello.rb`?
+###### Did the student successfully restore the first snapshot of the working tree and print the content of `hello.sh`?
 
-###### Did the student successfully restore the second recent snapshot and print the content of `hello.rb`?
+###### Did the student successfully restore the second recent snapshot and print the content of `hello.sh`?
 
-###### Did the student ensure that the working directory reflects the latest version of `hello.rb` from the main branch without using commit hashes?
+###### Did the student ensure that the working directory reflects the latest version of `hello.sh` from the main branch without using commit hashes?
 
 #### TAG me
 
@@ -60,7 +58,7 @@
 
 #### Changed your mind?
 
-###### Did the student successfully revert the modifications made to the latest version of the file, restoring it to its original state before staging?
+###### Did the student successfully revert the modifications made to the latest version of the file, restoring it to its original state before staging using a `Git` command?
 
 ###### Did the student introduce unwanted changes to the file, stage them, and then successfully clean the staging area to discard the changes?
 
@@ -78,11 +76,11 @@
 
 #### Move it
 
-###### Did the student successfully move the hello.rb program into a lib/ directory using Git commands?
+###### Did the student successfully move the `hello.sh` program into a `lib/` directory using Git commands?
 
-###### Did the student commit the move of hello.rb?
+###### Did the student commit the move of `hello.sh`?
 
-###### Did the student create and commit a Rakefile in the root directory of the repository with the provided content?
+###### Did the student create and commit a `Rakefile` in the root directory of the repository with the provided content?
 
 #### blobs, trees and commits
 
@@ -96,19 +94,19 @@
 
 ###### Did the student use Git commands to dump the directory tree referenced by a specific commit?
 
-###### Were they able to dump the contents of the `lib/` directory and the `hello.rb` file using Git commands?
+###### Were they able to dump the contents of the `lib/` directory and the `hello.sh` file using Git commands?
 
 #### Branching, Merging & Rebasing
 
-###### Did the student successfully create and switch to a new branch named 'greet'?
+###### Did the student successfully create and switch to a new branch named `greet`?
 
-###### Did the student create and commited a new file named `greeter.rb` in the `lib` directory with the provided Ruby code in it?
+###### Did the student create and commited a new file named `greeter.sh` in the `lib` directory with the provided code in it?
 
-###### Did the student update the `lib/hello.rb` file with the provided content, stage, and commit the changes?
+###### Did the student update the `lib/hello.sh` file with the provided content, stage, and commit the changes?
 
-###### Did the student update the `lib/Rakefile` with the provided content to ensure it runs the updated `lib/hello.rb` file, stage, and commit the changes?
+###### Did the student update the `lib/Rakefile` with the provided content to ensure it runs the updated `lib/hello.sh` file, stage, and commit the changes?
 
-###### Was the student able to compare and show the differences between the `main` and `greet` branches for the `Rakefile`, `hello.rb`, and `greeter.rb` files?
+###### Was the student able to compare and show the differences between the `main` and `greet` branches for the `Rakefile`, `hello.sh`, and `greeter.sh` files?
 
 ###### Did the student generate a `README.md` file with the provided content and commit it?
 
@@ -118,7 +116,7 @@
 
 ###### Did the student successfully merge the changes from the `main` branch into the `greeter` branch?
 
-###### Did the student make the specified changes to the `hello.rb` file in the `main` branch and commit them?
+###### Did the student make the specified changes to the `hello.sh` file in the `main` branch and commit them?
 
 ###### Did the student attempt to merge the `main` branch into the `greeter` branch creating a conflict during the merge?
 
@@ -140,9 +138,9 @@
 
 #### Local & Remote Repositories
 
-###### Did the student complete the cloning process of the 'hello' repository to 'cloned_hello'?
+###### Did the student complete the cloning process of the `hello` repository to `cloned_hello`?
 
-###### Did the student fetch and merge changes from the remote repository into the 'main' branch?
+###### Did the student fetch and merge changes from the remote repository into the `main` branch?
 
 ###### Did the student list both remote and local branches, make changes to the original repository, and synchronize the cloned repository with remote changes?
 
@@ -161,6 +159,10 @@
 ###### Did the student merge the changes from the remote `main` branch into the local `main` branch?
 
 ###### Did the student add a local branch named `greet` tracking the remote `origin/greet` branch?
+
+###### Did the student add a `remote` reference to their Git repository?
+
+###### Did the student push the `main` and `greet` branches to the `remote` repository?
 
 ##### Ask the following question to the student:
 
