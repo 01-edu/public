@@ -4,7 +4,7 @@ In this exercise, you will learn to create a complex player movement from scratc
 
 ### Objectives
 
-For this project you will implement a fully playable character using what we call Animation Blueprint, Aim Offset and PlayerCharacter Blueprint.
+For this project you will implement a fully playable character using what we call Animation Blueprint, Aim Offset and Player Character Blueprint.
 
 ### Instructions
 
@@ -21,7 +21,7 @@ Starting from an empty project, after creating a level with a floor (nothing els
 
 - create an animation blueprint file to animate the character so she can be animated while running, jumping, attacking, etc...
 
-- implement the Aim Offset, so that when the player moves the mouse, the head of Countess follow the direction we’re looking at, in a 180-degree angle.
+- implement the Aim Offset or a Control Rig, so that when the player moves the mouse, the head of Countess follow the direction we’re looking at, in a 180-degree angle.
 
 - separate the upper and lower body part, so that the character is able to walk and attack at the same time without any animation problems.
 
