@@ -12,7 +12,7 @@
 
 ###### Does the Countess head follow the mouse orientation?
 
-###### Is an Aim Offset being used to move the Countess head according to the mouse movement?
+###### Is an Aim Offset or Control Rig being used to move the Countess head according to the mouse movement?
 
 ###### Can the Countess character attack using the blades when clicking on the left mouse button?
 
