@@ -25,7 +25,7 @@ Here is an example of a file that you can deliver to your auditor to help with t
 
 <Write the command here>
 
-# Switch to main branch and make changes to hello.rb file
+# Switch to main branch and make changes to hello.sh file
 
 <Write the command here>
 
@@ -53,32 +53,35 @@ Here is an example of a file that you can deliver to your auditor to help with t
 #### Setting Up Git
 
 - Install Git on your local machine by following the instructions for your operating system on the official [Git website](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-- Configure Git with your name and email address.
+- Configure Git with your username and email address.
 
 #### Git commits to commit
 
-- Within the `work` directory, establish a subdirectory named `hello`. Inside this directory, generate a file titled `hello.rb` and input the following content:
+- Within the `work` directory, establish a subdirectory named `hello`. Inside this directory, generate a file titled `hello.sh` and input the following content:
 
-```ruby
-puts "Hello, World"
+```sh
+echo "Hello, World"
 ```
 
 - Initialize the git repository in the `hello` directory.
 - Check the status and act accordingly with the output of the executed command.
-- Change the `hello.rb` content to the following:
+- Change the `hello.sh` content to the following:
 
-```ruby
-puts "Hello, #{ARGV.first}!"
+```sh
+#!/bin/bash
+
+echo "Hello, $1!"
 ```
 
 - Stage the changed file and commit the changes, the working tree should be clean.
-- Modify the `hello.rb` file to include comments and stage it.
+- Modify the `hello.sh` file to include comments and stage it.
 
-```ruby
+```sh
+#!/bin/bash
+
 # Default is "World"
-name = ARGV.first || "World"
-
-puts "Hello, #{name}!"
+name=${1:-"World"}
+echo "Hello, $name!"
 ```
 
 - Make two separate commits:
@@ -90,18 +93,18 @@ puts "Hello, #{name}!"
 - Show the history of the working directory.
 - Show One-Line History for a condensed view showing only commit hashes and messages.
 - **Controlled Entries**:
-  - You need to customize the log output by specifying the number of entries or a time range. Customize it to display the last `2 entries`, to view `commits made within the last 5 minutes` or to see `commits made in the last 5 minutes until now`.
+  - You need to customize the log output by specifying the number of entries or a time range. Customize it to display the last `2 entries` and to view the `commits made within the last 5 minutes`.
 - **Personalized Format**:
   - Show logs in a personalized format, including the commit hash, date, message, branch information, and author name, resembling `* e4e3645 2023-06-10 | Added a comment (HEAD -> main) [John Doe]`
 
 #### Check it out
 
 - **Restore First Snapshot**:
-  - Revert the working tree to its initial state, as captured in the first snapshot, and then print the content of the `hello.rb` file.
+  - Revert the working tree to its initial state, as captured in the first snapshot, and then print the content of the `hello.sh` file.
 - **Restore Second Recent Snapshot**:
-  - Revert the working tree to the second most recent snapshot and print the content of the `hello.rb` file.
+  - Revert the working tree to the second most recent snapshot and print the content of the `hello.sh` file.
 - **Return to Latest Version**:
-  - Ensure that the working directory reflects the latest version of the `hello.rb` file present in the main branch, without referring to specific commit hashes.
+  - Ensure that the working directory reflects the latest version of the `hello.sh` file present in the main branch, without referring to specific commit hashes.
 
 #### TAG me
 
@@ -117,33 +120,39 @@ puts "Hello, #{name}!"
 #### Changed your mind?
 
 - **Reverting Changes**:
-  - Modify the latest version of the file with unwanted comments, then revert it back to its original state before staging. (Do not use CTRL+Z)
+  - Modify the latest version of the file with unwanted comments, then revert it back to its original state before staging using a `Git` command.
 
-```
-# This is a bad comment.  We want to revert it.
-name = ARGV.first || "World"
+```sh
+#!/bin/bash
 
-puts "Hello, #{name}!"
+# This is a bad comment. We want to revert it.
+name=${1:-"World"}
+
+echo "Hello, $name!"
 ```
 
 - **Staging and Cleaning**:
   - Introduce unwanted changes to the file, stage them, then clean the staging area to discard the changes.
 
-```
-# This is an unwanted but staged comment
-name = ARGV.first || "World"
+```sh
+#!/bin/bash
 
-puts "Hello, #{name}!"
+# This is an unwanted but staged comment
+name=${1:-"World"}
+
+echo "Hello, $name!"
 ```
 
 - **Committing and Reverting**:
   - Add the following unwanted changes again, stage the file, commit the changes, then revert them back to their original state.
 
-```
-# This is an unwanted but committed change
-name = ARGV.first || "World"
+```sh
+#!/bin/bash
 
-puts "Hello, #{name}!"
+# This is an unwanted but committed change
+name=${1:-"World"}
+
+echo "Hello, $name!"
 ```
 
 - **Tagging and Removing Commits**:
@@ -155,29 +164,31 @@ puts "Hello, #{name}!"
 - **Author Information**:
   - Add an author comment to the file and commit the changes.
 
-```
+```sh
+#!/bin/bash
+
 # Default is World
 # Author: Jim Weirich
-name = ARGV.first || "World"
+name=${1:-"World"}
 
-puts "Hello, #{name}!"
+echo "Hello, $name!"
 ```
 
 - Oops the author email was forgotten, update the file to include the email without making a new commit, but include the change in the last commit.
 
 #### Move it
 
-- **Moving hello.rb**:
-  - Using Git commands, move the program `hello.rb` into a `lib/` directory, and then commit the move.
+- **Moving hello.sh**:
+  - Using Git commands, move the program `hello.sh` into a `lib/` directory, and then commit the move.
   - Create a `Rakefile` in the root directory of the repository with the provided content and commit it to the repository.
 
-```
-#!/usr/bin/ruby -wKU
+```sh
+#!/usr/bin/rake
 
 task :default => :run
 
 task :run do
-  require './lib/hello'
+  sh './lib/hello.sh'
 end
 ```
 
@@ -189,7 +200,7 @@ end
   - Find the latest object hash within the `.git/objects/` directory using Git commands and print the type and content of this object using Git commands.
 - **Dumping Directory Tree**:
   - Use Git commands to dump the directory tree referenced by this commit.
-  - Dump the contents of the `lib/` directory and the `hello.rb` file using Git commands.
+  - Dump the contents of the `lib/` directory and the `hello.sh` file using Git commands.
 
 #### Branching
 
@@ -197,44 +208,48 @@ It’s time to do a major rewrite of the hello world functionality. Since this m
 
 - **Create and Switch to New Branch**:
   - Create a local branch named `greet` and switch to it.
-  - In the `lib` directory, create a new file named `greeter.rb` and add the provided Ruby code to it. Commit these changes.
+  - In the `lib` directory, create a new file named `greeter.sh` and add the provided code to it. Commit these changes.
 
-```ruby
-class Greeter
-  def initialize(who)
-    @who = who
-  end
-  def greet
-    "Hello, #{@who}"
-  end
-end
+```sh
+#!/bin/bash
+
+Greeter() {
+    who="$1"
+    echo "Hello, $who"
+}
+
+Greeter "$@"
 ```
 
-- Update the `lib/hello.rb` file by adding the content below, stage and commit the changes.
+- Update the `lib/hello.sh` file by adding the content below, stage and commit the changes.
 
-```ruby
-require 'greeter'
+```sh
+#!/bin/bash
 
-# Default is World
-name = ARGV.first || "World"
+source greeter.sh
 
-greeter = Greeter.new(name)
-puts greeter.greet
+name="$1"
+if [ -z "$name" ]; then
+    name="World"
+fi
+
+Greeter "$name"
 ```
 
-- Update the `lib/Rakefile` with the following content to ensure it runs the updated `lib/hello.rb` file. Commit these changes.
+- Update the `lib/Rakefile` with the following content to ensure it runs the updated `lib/hello.sh` file. Commit these changes.
 
-```ruby
-#!/usr/bin/ruby -wKU
+```sh
+#!/bin/bash
 
+# Ensure it runs the updated lib/hello.sh file
 task :default => :run
 
 task :run do
-  ruby '-Ilib', 'lib/hello.rb'
+  bash 'lib/hello.sh'
 end
 ```
 
-- Switch back to the `main` branch, compare and show the differences between the `main` and `greet` branches for `Rakefile`, `hello.rb`, and `greeter.rb` files.
+- Switch back to the `main` branch, compare and show the differences between the `main` and `greet` branches for `Rakefile`, `hello.sh`, and `greeter.sh` files.
 - Generate a `README.md` file for the project with the provided content. Commit this file.
 
 ```console
@@ -247,13 +262,15 @@ This is the Hello World example from the git project.
 
 - **Merge Main into Greeter Branch**:
   - Start by merging the changes from the `main` branch into the `greeter` branch.
-  - Switch to `main` branch and make the changes below to the `hello.rb` file, save and commit the changes.
+  - Switch to `main` branch and make the changes below to the `hello.sh` file, save and commit the changes.
 
-```ruby
-puts "What's your name"
-my_name = gets.strip
+```sh
+#!/bin/bash
 
-puts "Hello, #{my_name}!"
+echo "What's your name"
+read my_name
+
+echo "Hello, $my_name!"
 ```
 
 - **Merging Main into Greeter Branch (Conflict)**:
@@ -289,6 +306,8 @@ This is the Hello World example from the git project.
 - Merge the changes from the remote `main` branch into the local `main` branch.
 
 - Add a local branch named `greet` tracking the remote `origin/greet` branch.
+
+- Add a `remote` to your Git repository and push the `main` and `greet` branches to the `remote`.
 
 - Be ready for this question in the audit!
 
