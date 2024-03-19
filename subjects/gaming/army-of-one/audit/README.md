@@ -8,7 +8,7 @@
 
 ###### While running, does moving the mouse left and right change the player's leaning angle and direction?
 
-###### Is the animation used for the countess in the animation blueprint stored in a BlendSpace file?
+###### Is the animation used for the countess in the animation blueprint stored in a Blend Space file?
 
 ###### Does the Countess head follow the mouse orientation?
 
@@ -18,7 +18,7 @@
 
 ###### Are the body transitions smooth when starting an attack or jumping, etc…?
 
-###### Can you attack and move around at the same time without damaging the animations performance?
+###### Can you attack and move around at the same time without damaging the animations' performance?
 
 ###### Does the Countess body blends between two animations (are blend nodes being used)?
 
@@ -28,6 +28,6 @@
 
 #### Bonus
 
-###### Can the Countess character execute more than 3 attacks?
+###### +Can the Countess character execute more than 3 attacks?
 
-###### Are they at least two different Countess skins being used?
+###### +Are they at least two different Countess skins being used?
