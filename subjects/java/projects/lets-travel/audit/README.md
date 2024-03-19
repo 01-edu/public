@@ -100,7 +100,7 @@
 
 ##### Assess if the system handles high traffic volumes effectively without significant performance degradation.
 
-###### Can the system manage high traffic volumes without performance loss (you still can apply any action in the app in less than 5s)?
+###### Can the system effectively handle high traffic volumes while ensuring actions within the app can be completed in under 5 seconds without performance degradation?
 
 ##### Check if there is a fallback mechanism to ensure continuity of core functionalities in case of a service failure.
 
