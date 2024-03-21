@@ -314,16 +314,7 @@ else:
 
 "Display the 2nd, 7th, and 12th rows as a two-dimensional array. Exclude `np.nan` values if present."
 
-###### Is the output the following?
-
-```console
-[[ 7.8     0.76    0.04    2.3     0.092  15.     54.      0.997   3.26
-   0.65    9.8     5.    ]
- [ 7.3     0.65    0.      1.2     0.065  15.     21.      0.9946  3.39
-   0.47   10.      7.    ]
- [ 5.6     0.615   0.      1.6     0.089  16.     59.      0.9943  3.58
-   0.52    9.9     5.    ]]
-```
+###### Is the output in line with the data present in the provided dataset in the subject?
 
 ##### For question 3:
 
