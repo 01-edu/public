@@ -80,7 +80,7 @@
 
 ###### Did the student commit the move of `hello.sh`?
 
-###### Did the student create and commit a `Rakefile` in the root directory of the repository with the provided content?
+###### Did the student create and commit a `Makefile` in the root directory of the repository with the provided content?
 
 #### blobs, trees and commits
 
@@ -104,9 +104,9 @@
 
 ###### Did the student update the `lib/hello.sh` file with the provided content, stage, and commit the changes?
 
-###### Did the student update the `lib/Rakefile` with the provided content to ensure it runs the updated `lib/hello.sh` file, stage, and commit the changes?
+###### Did the student update the `Makefile` with the comment, stage, and commit the changes?
 
-###### Was the student able to compare and show the differences between the `main` and `greet` branches for the `Rakefile`, `hello.sh`, and `greeter.sh` files?
+###### Was the student able to compare and show the differences between the `main` and `greet` branches for the `Makefile`, `hello.sh`, and `greeter.sh` files?
 
 ###### Did the student generate a `README.md` file with the provided content and commit it?
 
@@ -114,21 +114,21 @@
 
 #### Conflicts, merging and rebasing
 
-###### Did the student successfully merge the changes from the `main` branch into the `greeter` branch?
+###### Did the student successfully merge the changes from the `main` branch into the `greet` branch?
 
 ###### Did the student make the specified changes to the `hello.sh` file in the `main` branch and commit them?
 
-###### Did the student attempt to merge the `main` branch into the `greeter` branch creating a conflict during the merge?
+###### Did the student attempt to merge the `main` branch into the `greet` branch creating a conflict during the merge?
 
 ###### Did the student successfully resolve the conflict, accepting changes from the `main` branch?
 
 ###### Did the student commit the conflict resolution changes?
 
-###### Did the student return to the point before the initial merge between `main` and `greeter`?
+###### Did the student return to the point before the initial merge between `main` and `greet`?
 
-###### Did the student rebase the `greeter` branch on top of the latest changes in the `main` branch?
+###### Did the student rebase the `greet` branch on top of the latest changes in the `main` branch?
 
-###### Did the student successfully merge the changes from the `greeter` branch into the `main` branch?
+###### Did the student successfully merge the changes from the `greet` branch into the `main` branch?
 
 ##### Ask the student to explain the difference between merging and rebasing and if he understand Fast-Forwarding.
 

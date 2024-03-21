@@ -21,7 +21,7 @@ Here is an example of a file that you can deliver to your auditor to help with t
 ```md
 #### Conflicts, merging and rebasing
 
-# Merge Main into Greeter Branch
+# Merge Main into Greet Branch
 
 <Write the command here>
 
@@ -29,7 +29,7 @@ Here is an example of a file that you can deliver to your auditor to help with t
 
 <Write the command here>
 
-# Merging Main into Greeter Branch (Conflict)
+# Merging Main into Greet Branch (Conflict)
 
 <Write the command here>
 
@@ -41,11 +41,11 @@ Here is an example of a file that you can deliver to your auditor to help with t
 
 <Write the command here>
 
-# Rebasing Greeter Branch
+# Rebasing Greet Branch
 
 <Write the command here>
 
-# Merging Greeter into Main
+# Merging Greet into Main
 
 <Write the command here>
 ```
@@ -70,7 +70,7 @@ echo "Hello, World"
 ```sh
 #!/bin/bash
 
-echo "Hello, $1!"
+echo "Hello, $1"
 ```
 
 - Stage the changed file and commit the changes, the working tree should be clean.
@@ -81,7 +81,7 @@ echo "Hello, $1!"
 
 # Default is "World"
 name=${1:-"World"}
-echo "Hello, $name!"
+echo "Hello, $name"
 ```
 
 - Make two separate commits:
@@ -128,7 +128,7 @@ echo "Hello, $name!"
 # This is a bad comment. We want to revert it.
 name=${1:-"World"}
 
-echo "Hello, $name!"
+echo "Hello, $name"
 ```
 
 - **Staging and Cleaning**:
@@ -140,7 +140,7 @@ echo "Hello, $name!"
 # This is an unwanted but staged comment
 name=${1:-"World"}
 
-echo "Hello, $name!"
+echo "Hello, $name"
 ```
 
 - **Committing and Reverting**:
@@ -152,7 +152,7 @@ echo "Hello, $name!"
 # This is an unwanted but committed change
 name=${1:-"World"}
 
-echo "Hello, $name!"
+echo "Hello, $name"
 ```
 
 - **Tagging and Removing Commits**:
@@ -171,7 +171,7 @@ echo "Hello, $name!"
 # Author: Jim Weirich
 name=${1:-"World"}
 
-echo "Hello, $name!"
+echo "Hello, $name"
 ```
 
 - Oops the author email was forgotten, update the file to include the email without making a new commit, but include the change in the last commit.
@@ -180,16 +180,13 @@ echo "Hello, $name!"
 
 - **Moving hello.sh**:
   - Using Git commands, move the program `hello.sh` into a `lib/` directory, and then commit the move.
-  - Create a `Rakefile` in the root directory of the repository with the provided content and commit it to the repository.
+  - Create a `Makefile` in the root directory of the repository with the provided content and commit it to the repository.
 
 ```sh
-#!/usr/bin/rake
+TARGET="lib/hello.sh"
 
-task :default => :run
-
-task :run do
-  sh './lib/hello.sh'
-end
+run:
+	bash ${TARGET}
 ```
 
 #### blobs, trees and commits
@@ -218,7 +215,6 @@ Greeter() {
     echo "Hello, $who"
 }
 
-Greeter "$@"
 ```
 
 - Update the `lib/hello.sh` file by adding the content below, stage and commit the changes.
@@ -226,7 +222,7 @@ Greeter "$@"
 ```sh
 #!/bin/bash
 
-source greeter.sh
+source lib/greeter.sh
 
 name="$1"
 if [ -z "$name" ]; then
@@ -236,20 +232,17 @@ fi
 Greeter "$name"
 ```
 
-- Update the `lib/Rakefile` with the following content to ensure it runs the updated `lib/hello.sh` file. Commit these changes.
+- Update the `Makefile` with the following comment and commit the changes.
 
 ```sh
-#!/bin/bash
-
 # Ensure it runs the updated lib/hello.sh file
-task :default => :run
+TARGET="lib/hello.sh"
 
-task :run do
-  bash 'lib/hello.sh'
-end
+run:
+	bash ${TARGET}
 ```
 
-- Switch back to the `main` branch, compare and show the differences between the `main` and `greet` branches for `Rakefile`, `hello.sh`, and `greeter.sh` files.
+- Switch back to the `main` branch, compare and show the differences between the `main` and `greet` branches for `Makefile`, `hello.sh`, and `greeter.sh` files.
 - Generate a `README.md` file for the project with the provided content. Commit this file.
 
 ```console
@@ -260,8 +253,8 @@ This is the Hello World example from the git project.
 
 #### Conflicts, merging and rebasing
 
-- **Merge Main into Greeter Branch**:
-  - Start by merging the changes from the `main` branch into the `greeter` branch.
+- **Merge Main into Greet Branch**:
+  - Start by merging the changes from the `main` branch into the `greet` branch.
   - Switch to `main` branch and make the changes below to the `hello.sh` file, save and commit the changes.
 
 ```sh
@@ -273,14 +266,14 @@ read my_name
 echo "Hello, $my_name!"
 ```
 
-- **Merging Main into Greeter Branch (Conflict)**:
-  - Attempt to merge the `main` branch into `greeter`. Bingooo! There you have it, a `conflict`.
+- **Merging Main into Greet Branch (Conflict)**:
+  - Attempt to merge the `main` branch into `greet`. Bingooo! There you have it, a `conflict`.
   - Resolve the conflict (manually or using graphical merge tools), accept changes from `main` branch, then commit the conflict resolution.
-- **Rebasing Greeter Branch**:
-  - Go back to the point before the initial merge between `main` and `greeter`.
-  - Rebase the `greeter` branch on top of the latest changes in the `main` branch.
-- **Merging Greeter into Main**:
-  - Merge the changes from the `greeter` branch into the `main` branch.
+- **Rebasing Greet Branch**:
+  - Go back to the point before the initial merge between `main` and `greet`.
+  - Rebase the `greet` branch on top of the latest changes in the `main` branch.
+- **Merging Greet into Main**:
+  - Merge the changes from the `greet` branch into the `main` branch.
 - **Understanding Fast-Forwarding and Differences**:
   - Explain fast-forwarding and the difference between merging and rebasing.
 
