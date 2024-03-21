@@ -263,7 +263,7 @@ This is the Hello World example from the git project.
 echo "What's your name"
 read my_name
 
-echo "Hello, $my_name!"
+echo "Hello, $my_name"
 ```
 
 - **Merging Main into Greet Branch (Conflict)**:
