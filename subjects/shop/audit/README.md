@@ -10,29 +10,29 @@
 
 ###### Is it impossible to edit and delete products that were not created by your user?
 
-##### Try to sell a product by creating an add with the user created.
+##### Try to sell a product by creating an ad with the user created.
 
-###### Is it possible to create adds and sell a product using your user?
+###### Is it possible to create ads and sell a product using your user?
 
-##### Navigate to the homepage and try to edit the add that you have created.
+##### Navigate to the homepage and try to edit the ad that you have created.
 
-###### Is it possible for you to edit your own add?
+###### Is it possible for you to edit your own ad?
 
-##### Try to create another new user, login and create at least two new adds.
+##### Try to create another new user, login and create at least two new ads.
 
-###### Can you confirm that the new user and the adds were created?
+###### Can you confirm that the new user and the ads were created?
 
-##### Login in with the first user and check if the adds created by the second user are there.
+##### Login in with the first user and check if the ads created by the second user are there.
 
-###### Can you confirm that the adds created by the second user are present?
+###### Can you confirm that the ads created by the second user are present?
 
-##### Navigate to the homepage with a user of your choice and try to delete an add that you have created.
+##### Navigate to the homepage with a user of your choice and try to delete an ad that you have created.
 
-###### Is it possible for you to delete your own add?
+###### Is it possible for you to delete your own ad?
 
 ##### Navigate to the homepage with any user and try to check who is selling each product.
 
-###### Is it possible for you to see who is selling the products without opening the add?
+###### Is it possible for you to see who is selling the products without opening the ad?
 
 ##### Navigate to the homepage and try to find the cart icon.
 
@@ -84,7 +84,7 @@
 
 ###### +Can you confirm that the student created or added something new like a new brand or the category field?
 
-###### +Can you add a product to the cart without opening the add?
+###### +Can you add a product to the cart without opening the ad?
 
 ###### +If you add four products to the cart from the same seller, can you remove just one from the cart and keep the other three?
 
