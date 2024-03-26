@@ -5,7 +5,7 @@ on:
     paths-ignore:
       - ".github/**"
     branches: [master]
-    types: [ labeled, opened, reopened, synchronize ]
+    types: [labeled, opened, reopened, synchronize]
 
 jobs:
   GA-Misc-Check-Links:
@@ -25,8 +25,8 @@ jobs:
         run: |
           echo "changed_files=$(git diff --name-only --merge-base origin/master | grep "\.md$" | xargs)" >> "$GITHUB_OUTPUT"
 
-      - name: Run step if any *.md file(s) changed
+      - name: 🔗 Run Check Links
         if: steps.changed-md.outputs.changed_files != ''
-        uses: nprimo/check-links@v0.1
+        uses: 01-edu/check-links@v0.2
         with:
           filepath: ${{ steps.changed-md.outputs.changed_files }}
