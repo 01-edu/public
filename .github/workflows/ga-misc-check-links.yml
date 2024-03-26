@@ -1,0 +1,32 @@
+name: 🔗 GA-Misc - Check-Links
+
+on:
+  pull_request:
+    paths-ignore:
+      - ".github/**"
+    branches: [master]
+    types: [ labeled, opened, reopened, synchronize ]
+
+jobs:
+  GA-Misc-Check-Links:
+    name: 🔗 Run Check Links
+    runs-on: ubuntu-latest
+
+    if: contains(github.event.pull_request.labels.*.name, '🤸 skip-check-links') == false
+
+    steps:
+      - name: 🐧 Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🔍 Get all changed *.md file(s)
+        id: changed-md
+        run: |
+          echo "changed_files=$(git diff --name-only --merge-base origin/master | grep "\.md$" | xargs)" >> "$GITHUB_OUTPUT"
+
+      - name: Run step if any *.md file(s) changed
+        if: steps.changed-md.outputs.changed_files != ''
+        uses: nprimo/check-links@v0.1
+        with:
+          filepath: ${{ steps.changed-md.outputs.changed_files }}
