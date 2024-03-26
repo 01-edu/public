@@ -7,7 +7,7 @@ Write a function that takes an int as an argument and returns 0 if the number is
 ### Expected function
 
 ```go
-func BinaryCheck(nbr int) int {
+func BinaryCheck(nbr int32) int {
 
 }
 ```
