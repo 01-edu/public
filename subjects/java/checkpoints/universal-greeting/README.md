@@ -4,10 +4,11 @@
 
 In a file named `UniversalGreeting.java` write a function `greeting` that takes a String language as a parameter and returns a greeting message based on the language as follows:
 
-FR : Bonjour comment allez-vous
-EN : Hello, How are you
-ES : Hola, cómo estás
+`FR` : `Bonjour comment allez-vous?`
+`EN`: `Hello, How are you?`
+`ES` : `Hola, cómo estás?`
 
+and return an empty string in any other case.
 ### Expected Functions
 
 ```java
