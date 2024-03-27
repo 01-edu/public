@@ -22,7 +22,7 @@ public class UniversalGreeting {
 
 ### Usage
 
-Here is a possible ExerciseRunner.java to test your function :
+Here is a possible `ExerciseRunner.java` to test your function :
 
 ```java
 public class ExerciseRunner {
