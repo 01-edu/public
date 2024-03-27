@@ -2,7 +2,7 @@
 
 ### Instructions
 
-In a file named `GoodbyeMars.java` write a function `goodbyeMars` that returns the string 'Good bye Mars !'.
+In a file named `GoodbyeMars.java` write a function `goodbyeMars` that returns the string 'Goodbye Mars !'.
 
 ### Expected Functions
 
@@ -31,6 +31,6 @@ and its output :
 ```shell
 $ javac *.java -d build
 $ java -cp build ExerciseRunner
-Good bye Mars !
+Goodbye Mars !
 $
 ```
