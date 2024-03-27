@@ -11,9 +11,9 @@ As mentioned, some of the process is already done. So first of all, let's see wh
 
 ### Instructions
 
-In this website the goal is for you to fix it so that it will be possible to create users. Additionally, those users will be able to create adds to sell products in the website.
+In this website the goal is for you to fix it so that it will be possible to create users. Additionally, those users will be able to create ads to sell products in the website.
 
-To create an add you will have to go to the `Sell` button and create the add. You will be able to give a title to your add, a price, a model and a description. You also must select a brand, a color and a condition for your product. Moreover, you will be able to choose images from your folder in app/assets/images.
+To create an ad you will have to go to the `Sell` button and create the ad. You will be able to give a title to your ad, a price, a model and a description. You also must select a brand, a color and a condition for your product. Moreover, you will be able to choose images from your folder in app/assets/images.
 
 First you will have to implement a controller called `registrations_controller` that can be found incomplete in app/controllers. You will need [Devise](https://github.com/heartcombo/devise) which is a flexible authentication solution for Rails based on Warden.
 
@@ -34,9 +34,9 @@ The second one is`account_update_params` where you will also need to allow the n
         - password_confirmation
         - current_password
 
-- You will also need to complete the `products_helper.rb` located in app/helpers. This helper will be responsible for showing who is selling the products and who is able to edit and delete the adds(in this case the creator of the add). So you will have to find a way to show the name of the seller in each product.
+- You will also need to complete the `products_helper.rb` located in app/helpers. This helper will be responsible for showing who is selling the products and who is able to edit and delete the ads (in this case the creator of the ad). So you will have to find a way to show the name of the seller in each product.
 
-- You have to find a way so that, only the user who creates an add, can edit or also permanently delete it.
+- You have to find a way so that, only the user who creates an ad, can edit or also permanently delete it.
 
 - All e-Commerce apps need some sort of Cart. So you will have to create a shopping cart for your application.
 
@@ -99,7 +99,7 @@ You should do this steps after unzipping:
 As bonus for this project there are a couple things you could do:
 
 - You can add a category to the product so that the user can chose between cars, clothes, computers and many more. Or you can add more fields to describe the products, for example add more brands.
-- You can create a button `add to cart` so that it is possible to add a product to the cart without opening the adds.
+- You can create a button `add to cart` so that it is possible to add a product to the cart without opening the ads.
 - You can find a way to remove items from the cart one by one.
 - You can implement your own display and design.
 - You can add a payment method.
