@@ -1,6 +1,6 @@
 ### Functional
 
-###### Does the starter menu contains an Host, Join, and Quit button?
+###### Does the starter menu contain a Host, Join, and Quit button?
 
 ###### On the Host and Join menu, can the player travel back to the main menu?
 
@@ -20,7 +20,7 @@
 
 ###### Inside the lobby, can players see each other driving around?
 
-###### Is a message present either stating to “Wait for host to launch the game” or to “Click start to launch the game” depending whether you are the session host or a client?
+###### Is a message present either stating to “Wait for host to launch the game” or to “Click start to launch the game” depending on whether you are the session host or a client?
 
 ###### Is the loading screen present on both server and client when the START button is pressed by the host?
 
@@ -34,14 +34,14 @@
 
 ###### Is the Advanced Session plugin being used to create and search a session?
 
-###### Are all widgets navigation handled inside the GameInstance of the player?
+###### Are all widgets navigation handled inside the `GameInstance` of the player?
 
 ###### Does the student used "Has Authority" to know if a custom event is called by the server or the client?
 
 ### Bonus
 
-###### When all players crossed the line, is a restart button available?
+######+ When all players crossed the line, is a restart button available?
 
-###### When crossing the finish line does the name of the winner display on the screen?
+######+ When crossing the finish line does the name of the winner display on the screen?
 
-###### Can the players join a session by inserting an IP?
+######+ Can the players join a session by inserting an IP?
