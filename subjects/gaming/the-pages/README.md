@@ -21,7 +21,7 @@ On startin, the game should ask the player to press a button to enter the game. 
 The map for your game should be a large squared landscape terrain, scaled at 10 by 10 units. The action should be happening at night time in a forest-like environment. Your map should contain:
 
 - trees, some little facilities (like shelters or little buildings), monuments etc... You should use the [Foliage Tool](https://docs.unrealengine.com/en-US/BuildingWorlds/Foliage/index.html) to spread trees, rocks and grass around the landscape and to make them have different sizes, scales and rotations.
-  - To create buildings, you will be using the built in [BSP](https://www.worldofleveldesign.com/categories/ue4/bsp-01-what-is-bsp.php). This method will allow you to create complex meshes and apply textures to it (Useful when you have no 3D modeling skills).
+  - To create buildings, you will be using the built in [BSP](https://dev.epicgames.com/documentation/en-us/unreal-engine/geometry-brush-actors-in-unreal-engine). This method will allow you to create complex meshes and apply textures to it (Useful when you have no 3D modeling skills).
 - the map should also contain 8 pages spread around it in the facilities or monuments you created, but should be placed in different spots of those locations in each game.
 - the map should have at least three different kind of floor surface: dirt, grass and concrete.
 
