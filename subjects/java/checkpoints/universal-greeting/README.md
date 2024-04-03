@@ -27,7 +27,7 @@ Here is a possible `ExerciseRunner.java` to test your function :
 ```java
 public class ExerciseRunner {
     public static void main(String[] args) {
-        System.out.println(UniversalGreeting.greeting('EN'));
+        System.out.println(UniversalGreeting.greeting("EN"));
     }
 }
 ```
