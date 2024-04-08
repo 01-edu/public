@@ -90,7 +90,7 @@ I have a last favor to ask you: is there anyone you know who runs frequently and
 
 ### Instructions
 
-Read these articles and extract at least 5 key figures or insights that may be useful in understanding what athletes or sport practicing people experience related to hydration.
+Read the articles in the resources section and extract at least 5 key figures or insights that may be useful in understanding what athletes or sport practicing people experience related to hydration.
 
 - On a PDF document, write at least 5 key figures or insights you extracted from the articles.
 - Each insight or key figure should be justified by a quote and the title of the article.

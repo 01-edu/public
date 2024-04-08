@@ -22,9 +22,11 @@
 
 ###### Is the document clear, simple and easy to read?
 
-###### Are there at least 6 insights different from the examples given in the readme?
+###### Are there at least 5 key figures or insights extracted from the articles?
 
-###### Does each insight have the name of the person(s) who said it?
+###### Is each key figure or insight justified by a quote and the title of the article?
+
+###### Are the insights different from the ones given in the instructions as an example?
 
 ### Personas
 
