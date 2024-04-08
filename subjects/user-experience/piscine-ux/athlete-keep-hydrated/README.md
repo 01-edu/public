@@ -249,7 +249,7 @@ Based on the insights from the exercises `analytics` and `user interviews`, comm
 
 **Resources:**
 
-- [Stuck on a problem? Just ask how might we](https://relab.academy/design-thinking/stuck-on-a-problem-just-ask-how-might-we/)
+- [Stuck on a problem? Just ask how might we](https://www.interaction-design.org/literature/topics/how-might-we)
 - [Problem statement](https://www.indeed.com/career-advice/career-development/what-is-a-problem-statement)
 - [Using "How Might We’ Questions to Ideative on the Right Problems](https://www.nngroup.com/articles/how-might-we-questions/)
 
@@ -323,7 +323,6 @@ Don't forget to:
 
 - [Tool: Ideation Voting Board Framework on Figma](https://www.figma.com/file/nTAWiacCffXvd8dXsLP3Sb/Ideation-Voting-Framework)
 - [Where Good ideas come from by Steven Johnson](https://www.ted.com/talks/steven_johnson_where_good_ideas_come_from)
-- [Creative Confidence by Tom Keller](https://booksvooks.com/creative-confidence-unleashing-the-creative-potential-within-us-all-pdf.html)
 - [Podcast What is wrong with UX?](https://www.usersknow.com/podcast/2016/10/10/ua1wdsszhx2pemugxc1e0qj0a3l9cs)
 - [Brainwriting #2](https://dux.typepad.com/dux/2011/01/method-2-of-100-brainwriting-brainwriting-is-an-ideation-method-for-quickly-generating-ideas-by-asking-people-to-write-thei.html)
 
