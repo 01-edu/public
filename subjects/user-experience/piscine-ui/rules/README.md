@@ -11,7 +11,9 @@ In this series of exercises, you’ll be asked to open your eyes and collect gra
 
 ### Instructions
 
-Open these 5 images on Figma and draw lines and grids every time you find aligned elements.
+Open the following 5 images on Figma and draw lines and grids every time you find aligned elements.
+
+[Images](https://www.figma.com/file/v4OfthPPGrWq1Ao8ADSRWx/UI-III-Ex-1.1?type=design&node-id=1-2&mode=design&t=LXw6xPb71XSgaz2Y-0)
 
 ### Deliverables
 
@@ -27,13 +29,13 @@ Don't forget to:
 **Tips:**
 
 - Pay attention to the global aspect of the file. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
+- [1st screen example](https://www.figma.com/file/KOzd8yZuJvGLmZLuXjBgDg/UI-III-Ex-1.1)
 
 **Resources:**
 
 - [Video tutorial on Figma](https://www.youtube.com/watch?v=FTFaQWZBqQ8)
 - [Beginning graphic design](https://edu.gcfglobal.org/en/beginning-graphic-design/)
 - [Gareth graphic studio](https://www.youtube.com/c/GarethDavidStudio)
-- [1st screen example](https://www.figma.com/file/KOzd8yZuJvGLmZLuXjBgDg/UI-III-Ex-1.1)
 
 ## Multi state
 
