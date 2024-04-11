@@ -1,6 +1,6 @@
 #### Functional
 
-##### Before we start, let's check we have the necessary tools to perform the tests. You should make sure VirtualBox, Vagrant and Postman are installed, if not you should install them.
+##### Before we start, let's check we have the necessary tools to perform the tests. You should make sure VirtualBox (or an equivalent software), Vagrant and Postman are installed, if not you should install them.
 
 #### Documentation
 
@@ -10,7 +10,7 @@
 
 #### VM Configuration
 
-##### In the directory of the project run `vagrant up --provider virtualbox` and then run `vagrant status`.
+##### In the directory of the project run `vagrant up` and then run `vagrant status`.
 
 ###### Can you confirm that the three VMs (`gateway-vm`, `inventory-vm` and `billing-vm`) are up and running?
 
