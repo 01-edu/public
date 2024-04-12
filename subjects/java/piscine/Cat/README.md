@@ -4,7 +4,7 @@
 
 Create a file named `Cat.java`.
 
-Write a function `cat` that reads from the file given as the argument, and writes to the standard output.
+Write a function `cat` that reads the content of the file given as the argument, and writes it's content to the standard output.
 
 > ⚠️ The files can have some binary content.
 
@@ -33,22 +33,27 @@ import java.io.*;
 
 public class ExerciseRunner {
     public static void main(String[] args) throws IOException {
+        PrintStream stdout = System.out;
+
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         PrintStream printStream = new PrintStream(outputStream);
         System.setOut(printStream);
 
-        Cat.cat(new String[]{"input"});
+        Cat.cat(new String[]{"input.txt"});
         String output = outputStream.toString();
-        System.out.println(outputStream.toString().equals("test input file\n"));
-
+        // Reset out to stdout
+        System.setOut(stdout);
+        System.out.println(output.equals("test input file\n"));
 
         ByteArrayOutputStream outputStream2 = new ByteArrayOutputStream();
-        PrintStream printStream2 = new PrintStream(outputStream);
+        PrintStream printStream2 = new PrintStream(outputStream2);
         System.setOut(printStream2);
 
         Cat.cat(new String[]{});
-        String output = outputStream2.toString();
-        System.out.println(outputStream2.toString().equals(""));
+        String output2 = outputStream2.toString();
+        // Reset out to stdout
+        System.setOut(stdout);
+        System.out.println(output2.equals(""));
     }
 }
 ```
@@ -66,5 +71,6 @@ $
 ### Notions
 
 [Command-Line Arguments](https://docs.oracle.com/javase/tutorial/essential/environment/cmdLineArgs.html)
-[File](https://docs.oracle.com/javase/7/docs/api/java/nio/file/Files.html)
-[Standard Output](https://docs.oracle.com/javase/7/docs/api/java/io/PrintStream.html)
+[File](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Files.html)
+[Standard Output](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/PrintStream.html)
+[IOException](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/IOException.html)
