@@ -1,30 +1,45 @@
-[
+const testCases = [
   {
-    "description": "battleCry is defined and is a function",
-    "code": "equal(typeof battleCry, 'function')"
+    description: "battleCry is defined and is a function",
+    code: "typeof battleCry === 'function'"
   },
   {
-    "description": "secretOrders is defined and is a function",
-    "code": "equal(typeof secretOrders, 'function')"
+    description: "secretOrders is defined and is a function",
+    code: "typeof secretOrders === 'function'"
   },
   {
-    "description": "battleCry has one and only one argument",
-    "code": "equal(battleCry.length, 1)"
+    description: "battleCry has one and only one argument",
+    code: "battleCry.length === 1"
   },
   {
-    "description": "secretOrders has one and only one argument",
-    "code": "equal(secretOrders.length, 1)"
+    description: "secretOrders has one and only one argument",
+    code: "secretOrders.length === 1"
   },
   {
-    "description": "battleCry shouts properly",
-    "code": "const args = saveArguments(console, 'log')\n// Your code\n\nbattleCry('attack')\nbattleCry('you shall not pass!')\n\nequal(args.flat(), ['ATTACK', 'YOU SHALL NOT PASS!'])"
+    description: "battleCry shouts properly",
+    code: `
+      const args = saveArguments(console, 'log');
+      battleCry('attack');
+      battleCry('you shall not pass!');
+      equal(args.flat(), ['ATTACK', 'YOU SHALL NOT PASS!']);
+    `
   },
   {
-    "description": "secretOrders whispers properly",
-    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nsecretOrders('ExEcutE Order 66')\nsecretOrders('SILENCE')\n\nequal(args.flat(), ['execute order 66', 'silence'])"
+    description: "secretOrders whispers properly",
+    code: `
+      const args = saveArguments(console, 'log');
+      secretOrders('ExEcutE Order 66');
+      secretOrders('SILENCE');
+      equal(args.flat(), ['execute order 66', 'silence']);
+    `
   },
   {
-    "description": "We can call both functions",
-    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nsecretOrders('This Is The WAY')\nbattleCry('for the horde !')\n\nequal(args.flat(), ['this is the way', 'FOR THE HORDE !'])"
+    description: "We can call both functions",
+    code: `
+      const args = saveArguments(console, 'log');
+      secretOrders('This Is The WAY');
+      battleCry('for the horde !');
+      equal(args.flat(), ['this is the way', 'FOR THE HORDE !']);
+    `
   }
-]
+];
