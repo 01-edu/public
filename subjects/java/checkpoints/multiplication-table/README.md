@@ -2,7 +2,7 @@
 
 ### Instructions
 
-in a file named `MultiplicationTable.java` Write a function `generate` which takes a number as a parameter, and prints the multiplication table for this number.
+In a file named `MultiplicationTable.java` write a function `generate` which takes a number as a parameter, and prints the multiplication table for this number.
 
 ### Expected Functions
 
