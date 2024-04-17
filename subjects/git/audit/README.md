@@ -12,13 +12,13 @@
 
 ###### Did the student navigate to the `work` directory and create a subdirectory named `hello`?
 
-###### Did the student generate a file named `hello.sh` with the content `puts "Hello, World"` inside the `hello` directory?
+###### Did the student generate a file named `hello.sh` with the content `echo "Hello, World"` inside the `hello` directory?
 
 ###### Did the student initialize a Git repository in the `hello` directory?
 
 ###### Did the student use the `git status` command to check the status of the repository?
 
-###### Did the student modify the `hello.sh` file content with the provided `puts "Hello, #{ARGV.first}!"`?
+###### Did the student modify the `hello.sh` file content with the provided `echo "Hello, $1"`?
 
 ###### Did the student stage the modified `hello.sh` file, commit the changes to the repository, and ensure that the working tree is clean afterward?
 
