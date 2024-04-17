@@ -8,7 +8,7 @@ In a file named `Strlen.java` write a function `strlen` that returns the length 
 
 ```java
 public class Strlen {
-    public static int Strlen(String s) {
+    public static int strlen(String s) {
         // your code here
     }
 }
