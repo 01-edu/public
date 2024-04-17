@@ -2,7 +2,7 @@
 
 ### Instructions
 
-In a file named `SortArray.java` write a function `sort` that sorts ascending the given array specified in the parameters and returns it.
+In a file named `SortArray.java` write a function `sort` that returns the given array, specified in the parameters, sorted in ascending order.
 
 ### Expected Functions
 
