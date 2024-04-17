@@ -2,7 +2,7 @@
 
 ### Instructions
 
-In a file named `Digitlen.java` write a function `digitlen` that returns the length of the number passed as a parameter.
+In a file named `Digitlen.java` write a function `digitlen` that returns the count of digits in the number passed as a parameter.
 
 ### Expected Functions
 
