@@ -2,7 +2,7 @@
 
 ### Instructions
 
-In a file named `ReverseArray.java` write a function `reverse` that reverses the given array specified in the parameters and returns it.
+Create a Java file named `ReverseArray.java` and define a function named `reverse` inside it. This function should take an array as input, reverse the order of its elements, and return the new reversed array.
 
 ### Expected Functions
 
