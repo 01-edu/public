@@ -96,13 +96,11 @@ From now on, players can exchange moves to play chess.
 ## Chess moves
 
 The players exchange with text messages to indicate their chess move.
-As of chess move notation - [Long algebraic notation](long-algebraic-notation) is used.
+As of chess move notation - [Long algebraic notation](<https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Long_algebraic_notation>) is used.
 
 Players need to send chess move messages strictly by the defined notion. If the chess engine fails
 to identify the chess move, then the player will receive an error message - the user will be prompted
 to send a valid move.
-
-[long-algebraic-notation]: https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Long_algebraic_notation
 
 ## Features
 
