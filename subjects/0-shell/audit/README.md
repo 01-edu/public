@@ -2,7 +2,7 @@
 
 ###### Was the project written in a compiled programming language?
 
-###### Are the commands mentioned in the subject implemented from scratch, without calling any external binaries?
+###### Are the commands mentioned in the subject implemented from scratch, without calling any external binaries and exclusively using low-level system calls directly, without relying on built-in functions or libraries that abstract file operations?
 
 #### Functional
 
