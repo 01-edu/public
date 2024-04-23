@@ -6,6 +6,8 @@ In a file named `Factorial.java` write a function `factorial` that calculates th
 
 > The factorial of a non-negative integer n (denoted as n!) is the product of all positive integers less than or equal to n. For example, 5! = 5 × 4 × 3 × 2 × 1 = 120.
 
+> Note: The factorial of 0 is 1, according to the [convention](https://www.chilimath.com/lessons/intermediate-algebra/zero-factorial/)
+
 ### Expected Functions
 
 ```java
