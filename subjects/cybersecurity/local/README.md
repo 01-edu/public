@@ -1,4 +1,4 @@
-# Local
+## Local
 
 ### Guideline
 
@@ -8,7 +8,8 @@ There will be no visible IP address, you must find a way to get it.
 You have to become root and get the flag.
 
 - [01-Local1.ova](https://assets.01-edu.org/cybersecurity/local/01-Local.ova). For machine running with Apple Silicon CPU or ARM architecture (e.g. M1, M2 ...) use the following [01-Local1.utm.zip](https://assets.01-edu.org/cybersecurity/local/01-Local1.utm.zip)
-- SHA1: f3422f3364fd38e8183740f8f57fa951d3f6e0bf
+  SHA1 for `01-Local1.ova`: f3422f3364fd38e8183740f8f57fa951d3f6e0bf
+  SHA1 for `01-Local1.utm.zip`: d4a40ca50044778ddc01a57ac16382e4140000e0
 
 - The modification in GRUB or in the VM to get the root access is forbidden!
 

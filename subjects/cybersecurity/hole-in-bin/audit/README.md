@@ -7,11 +7,21 @@
 
 ###### Are all the required files present?
 
-##### Setup the virtual machine:
+##### Set up the virtual machine:
 
-1. Download the virtual machine image [hole-in-bin.ova](https://assets.01-edu.org/cybersecurity/hole-in-bin/hole-in-bin.ova). This image contains all the binaries you will need for the audit.
+1. Download the virtual machine image [hole-in-bin.ova](https://assets.01-edu.org/cybersecurity/hole-in-bin/hole-in-bin.ova).
+   For machine using Apple Silicon or equivalent get [hole-in-bin.utm.zip](https://assets.01-edu.org/cybersecurity/hole-in-bin/hole-in-bin.utm.zip).
+   This image contains all the binaries you will need for the audit.
 
-SHA1: 7db09b7a8fdfe25c286561dfa7ca5b50718bd60c
+SHA1 for `hole-in-bin.ova`: 7db09b7a8fdfe25c286561dfa7ca5b50718bd60c
+SHA1 for `hole-in-bin.utm.zip`: fc93533b2054d10d03b09d53c223e57bf7ac7b62
+
+> If it's already downloaded in the student machine, please check the SHA1 running the following command
+
+```console
+$ sha1sum <filename>
+<SHA1>
+```
 
 2. Load the virtual machine image into your virtualization software of choice (e.g., VirtualBox, VMWare).
 
