@@ -10,7 +10,7 @@ This exercise is designed to test your skills and understanding of binary exploi
 
 ### Setup
 
-1. Download the virtual machine image [hole-in-bin.ova](https://assets.01-edu.org/cybersecurity/hole-in-bin/hole-in-bin.ova) or [hole-in-bin.utm.zip](https://assets.01-edu.org/cybersecurity/hole-in-bin/hole-in-bin.utm.zip). This image contains all the binaries you will need to exploit.
+1. Download the virtual machine image [hole-in-bin.ova](https://assets.01-edu.org/cybersecurity/hole-in-bin/hole-in-bin.ova). For machine running with Apple Silicon CPU or ARM architecture (e.g. M1, M2 ...) use the following [hole-in-bin.utm.zip](https://assets.01-edu.org/cybersecurity/hole-in-bin/hole-in-bin.utm.zip). This image contains all the binaries you will need to exploit.
 
 SHA1: 7db09b7a8fdfe25c286561dfa7ca5b50718bd60c
 
