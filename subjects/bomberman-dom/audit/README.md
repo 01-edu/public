@@ -1,5 +1,9 @@
 #### Functional
 
+##### Inspect the game source code.
+
+###### Was the `mini-framework` the only technology/framework used to develop the project? Any other framework or technology such as canvas or Web-GL are not allowed.
+
 ##### Try to open the game.
 
 ###### Were you asked for a nickname?
@@ -70,10 +74,14 @@
 
 #### Bonus
 
-###### +Are players' lives displayed?
+###### +Is there a `Solo + Co-Op mode` in the game as described in the subject?
 
-###### +Is the winner shown after the game in any way?
+###### +Are 2 or more extra power ups, as described in the [subject's bonus section](../README.md), implemented?
 
-###### +Is there a way to start another game after a game is over?
+###### +When a player dies, is a random power up release as described in the subject's bonus section?
+
+###### +Is there a team mode implemented?
+
+###### +Can the player interact with the game after death as described in the subject's bonus section?
 
 ###### +Do you think in general this project is well done?
