@@ -1,6 +1,6 @@
 #### Functional
 
-##### After downloading [this zip file](https://assets.01-edu.org/guess-it/guess-it.zip) containing a tester, follow its instructions (present in the README) in order to test the student program against the `big-range` program 3 times using the `Data 1`.
+##### After downloading [this zip file](https://assets.01-edu.org/guess-it/guess-it-dockerized.zip) containing a tester, follow its instructions (present in the README) in order to test the student program against the `big-range` program 3 times using the `Data 1`.
 
 ###### Did the student won against `big-range` most of the times (at least 2 out of 3 times)?
 
