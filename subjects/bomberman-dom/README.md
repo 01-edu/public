@@ -8,11 +8,11 @@ For this project you have to create a bomberman alike game, where multiple playe
 
 ### Instructions
 
-In the beginning there was 4 players, and only one came out alive. Each player will have to start in the different corners of the map and only one will be victorious.
+In the beginning there are 4 players, and only one came out alive. Each player will have to start in the different corners of the map and only one will be victorious.
 
-You will have to follow more a less the same principles has the [make-your-game](../make-your-game/README.md) project. But we will refresh one of the concepts you will have to respect and deal with:
+You will have to follow more or less the same principles of [make-your-game](../make-your-game/README.md) project. But we will refresh one of the concepts you will have to respect and deal with:
 
-- [**Performance**](../good-practices/README.md), is one of the most important aspects while developing a game, so lets respect it.\
+- [**Performance**](../good-practices/README.md), is one of the most important aspects while developing a game, so let's respect it.\
    Just like make-your-game you will have to respect the policy of:
 
   - Running the game at least at **60fps** at all time
