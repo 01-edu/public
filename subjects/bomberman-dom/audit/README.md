@@ -10,9 +10,9 @@
 
 ##### Try to enter with another user (in another browser or in private browser).
 
-###### Did the player counter incremented by 1?
+###### Did the player counter increment by 1?
 
-###### After entering with another user, can all users chat with each other in realtime (using websockets)?
+###### After entering with another user, can all users chat with each other in real time (using websockets)?
 
 ##### Wait 20 seconds with two users in the waiting page.
 
