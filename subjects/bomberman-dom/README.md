@@ -62,8 +62,7 @@ Although this bomberman already is super cool, it can be always better. Here are
   - _Detonator_: Ability to choose when a bomb will explode on a key press;
   - _1 Up_: Gives the player an extra life;
 - **Release power ups after death**: When a player dies it drops one of it's power ups. If the player had no power ups, it drops a random power up.
-- **More than 4 players**: Be able to start a game with more than 4 players
-- **Team mode**: Make games with 2v2 or 3v3 (two/three players versus two/three players).
+- **Team mode**: Make games with 2v2 (two players versus two players).
 - **After death interaction**: When a player dies, they can reappear as a ghost. If a ghost touches another player they come back to life. If a ghost is caught in a bomb explosion, the player controlling the ghost dies permanently.
 
 This project will help you learn about:
