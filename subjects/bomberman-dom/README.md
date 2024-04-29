@@ -70,7 +70,7 @@ This project will help you learn about:
 - [`requestAnimationFrame`](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
 - [Event loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)
 - FPS
-- [Jank/stutter animation](https://murtada.nl/blog/going-jank-free-achieving-60-fps-smooth-websites)
+- [Animation performance and frame rate](https://developer.mozilla.org/en-US/docs/Web/Performance/Animation_performance_and_frame_rate)
 - webSockets
 - Synchronization
 - Developer Tools
