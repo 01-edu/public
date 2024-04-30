@@ -5,7 +5,8 @@ import csv
 def load_historical_data(directory_path='./sample-stocks/'):
     historical_data = {}
 
-    file_list = [filename for filename in os.listdir(directory_path) if filename.endswith(".csv")]
+    file_list = [filename for filename in os.listdir(
+        directory_path) if filename.endswith(".csv")]
     for filename in file_list:
         symbol = filename.replace(".csv", "")
 
@@ -21,4 +22,3 @@ def load_historical_data(directory_path='./sample-stocks/'):
 if __name__ == "__main__":
     result = load_historical_data()
     print(f'keys: {result.keys()}')
-
