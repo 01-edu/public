@@ -2,7 +2,7 @@
 
 ### Instructions
 
-In a file named `UnitConverter.java`, write a function `convert` that returns the result of a unit conversion specified in the parameters. The function should handle different types of unit conversions based on the input parameters which specify the unit from, the unit to, and the value to be converted.
+In a file named `UnitConverter.java`, write a function `convert` that returns the result of a unit conversion specified in the parameters. The function should handle different types of unit conversions based on the input parameters which specify the unit from, the unit to, and the value to be converted. In case of an error print `ERROR`
 
 ##### Request conversions
 
@@ -32,11 +32,7 @@ public class ExerciseRunner {
         System.out.println(UnitConverter.convert(new String[]{"fahrenheit", "celsius", "212"}));
         System.out.println(UnitConverter.convert(new String[]{"kilometers", "miles", "5"}));
         System.out.println(UnitConverter.convert(new String[]{"pounds", "kilograms", "10"}));
-        if (args.length == 3) {
-            System.out.println(UnitConverter.convert(args));
-        } else {
-            System.out.println("Usage: java ExerciseRunner <fromUnit> <toUnit> <value>");
-        }
+        System.out.println(UnitConverter.convert(args));
     }
 }
 ```
