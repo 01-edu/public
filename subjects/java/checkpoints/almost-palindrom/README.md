@@ -5,7 +5,7 @@
 In a file named `AlmostPalindrome.java` write a function `isAlmostPalindrome` that returns true if the String in parameter is almost palindrome.
 A word is considered "almost a palindrome" if removing one letter from the word makes it a palindrome.
 
-> 💡 The String in parametre will contains at least 3 letters.
+> 💡 The input String will contain at least 3 letters.
 
 ### Expected Functions
 
