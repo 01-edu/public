@@ -46,6 +46,6 @@ $ java -cp build ExerciseRunner
 100.00
 3.11
 4.54
-it depends on the input.
+ERROR
 $
 ```
