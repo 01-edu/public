@@ -1,3 +1,5 @@
+> Due to file size reason, the solution might be uploaded on GitHub instead of Gitea!
+
 #### Functional
 
 ###### Does the map contain places for the player to hide from enemies?
@@ -64,4 +66,4 @@
 
 #### Bonus
 
-###### Are there headshots implemented?
+###### +Are there headshots implemented?

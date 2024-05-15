@@ -1,4 +1,6 @@
-### Functional
+> Due to file size reason, the solution might be uploaded on GitHub instead of Gitea!
+
+#### Functional
 
 ###### Does the starter menu contain a Host, Join, and Quit button?
 
@@ -38,10 +40,10 @@
 
 ###### Does the student used "Has Authority" to know if a custom event is called by the server or the client?
 
-### Bonus
+#### Bonus
 
-######+ When all players crossed the line, is a restart button available?
+###### +When all players crossed the line, is a restart button available?
 
-######+ When crossing the finish line does the name of the winner display on the screen?
+###### +When crossing the finish line does the name of the winner display on the screen?
 
-######+ Can the players join a session by inserting an IP?
+###### +Can the players join a session by inserting an IP?

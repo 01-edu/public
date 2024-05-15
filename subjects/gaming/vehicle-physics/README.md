@@ -39,6 +39,7 @@ After downloading and unzipping this [file](https://assets.01-edu.org/Unreal-Eng
 When finished, your project should look like the [“Expected Result” video](https://youtu.be/4dXjFKh_jjY).
 
 > Do not forget to zip up the project compile and save everything for peer correction.
+> If it is not possible to upload files to Gitea due to their size, use GitHub instead and have a look at [Git LSF](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)
 
 #### Bonus
 

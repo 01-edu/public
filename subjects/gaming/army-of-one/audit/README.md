@@ -1,3 +1,5 @@
+> Due to file size reason, the solution might be uploaded on GitHub instead of Gitea!
+
 #### Functional
 
 ###### Can the Countess character move in the four directions (forward, backward, left and right) using the WASD keys?

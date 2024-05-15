@@ -81,3 +81,6 @@ In order to complete this project you are going to need to run your game in Andr
 ### Hints
 
 If you want a good example of how a 2D game is created you can try the [Tappy Chicken](https://assets.01-edu.org/Unreal-Engine-Projects/Jumpo/TappyChicken.zip) game provided. Or you can create an empty project and choose "2D Sidescroller Game" template which contains a lot of info that will be helpful for this project.
+
+> Do not forget to zip up the project compile and save everything for peer correction.
+> If it is not possible to upload files to Gitea due to their size, use GitHub instead and have a look at [Git LSF](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)
