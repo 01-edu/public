@@ -1,3 +1,5 @@
+> Due to file size reason, the solution might be uploaded on GitHub instead of Gitea!
+
 #### Functional
 
 ###### Is a main menu displayed at the game startup offering 5 options?
@@ -68,10 +70,10 @@
 
 #### Bonus
 
-###### Can the player buy an extra life before the start of the game using coins/gems?
+###### +Can the player buy an extra life before the start of the game using coins/gems?
 
-###### Are different sprites being used from the ones provided?
+###### +Are different sprites being used from the ones provided?
 
-###### Are there different map backgrounds?
+###### +Are there different map backgrounds?
 
-###### Can the coins/gems be used in an in-game store to buy skins or perks?
+###### +Can the coins/gems be used in an in-game store to buy skins or perks?

@@ -79,3 +79,4 @@ The following aspects should be fulfilled:
 - A game should not last longer than 6 minutes. After that the same choices should appear as when the player dies.
 
 > Do not forget to zip up the project compile and save everything for peer correction.
+> If it is not possible to upload files to Gitea due to their size, use GitHub instead and have a look at [Git LSF](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)

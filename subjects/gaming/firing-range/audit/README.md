@@ -1,3 +1,5 @@
+> Due to file size reason, the solution might be uploaded on GitHub instead of Gitea!
+
 #### Functional
 
 ###### Are the map size (X = 35, Y = 40, Z = 1) and composition (using cubes) being respected?
@@ -18,8 +20,8 @@
 
 #### Bonus
 
-###### Do different targets have different speeds?
+###### +Do different targets have different speeds?
 
-###### Do the walls and floor have texture?
+###### +Do the walls and floor have texture?
 
-###### Are there obstacles in front of targets?
+###### +Are there obstacles in front of targets?

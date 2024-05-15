@@ -1,3 +1,5 @@
+> Due to file size reason, the solution might be uploaded on GitHub instead of Gitea!
+
 #### Functional
 
 ###### When you move the mouse does the "head" of the player move accordingly?
@@ -24,8 +26,8 @@
 
 #### Bonus
 
-###### Is a circle that indicates when the interaction point will be triggered present?
+###### +Is a circle that indicates when the interaction point will be triggered present?
 
-###### Is the interaction point animated?
+###### +Is the interaction point animated?
 
-###### Is there looping background music during the game?
+###### +Is there looping background music during the game?

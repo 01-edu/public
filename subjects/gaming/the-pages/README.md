@@ -48,3 +48,4 @@ The player should control an FPS (First-Person Shooter) Character that:
 If you want you could try to play the real game [Slender: The Eight Pages](https://pt.wikipedia.org/wiki/Slender:_The_Eight_Pages) to get a feel of what your game should look like.
 
 > Do not forget to zip up the project compile and save everything for peer correction.
+> If it is not possible to upload files to Gitea due to their size, use GitHub instead and have a look at [Git LSF](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)

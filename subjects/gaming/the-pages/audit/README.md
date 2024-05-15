@@ -1,4 +1,6 @@
-### Functional
+> Due to file size reason, the solution might be uploaded on GitHub instead of Gitea!
+
+#### Functional
 
 ###### When you open the game, is there a button to press to start playing?
 
@@ -48,8 +50,8 @@
 
 ###### When finishing the game, do the credits (names of the developers) show up?
 
-### Bonus
+#### Bonus
 
-###### Does the game contain a 3D Main menu?
+###### +Does the game contain a 3D Main menu?
 
-###### Is the creature different from the one provided?
+###### +Is the creature different from the one provided?
