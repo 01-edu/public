@@ -4,10 +4,10 @@
 
 #### Functional
 
-##### Try to run the command `"tar -czf home.tar.gz . &"` then run the command `"jobs"`.
+##### Try to run the command `"ls -lRr / 2>1 >/dev/null &"` then run the command `"jobs"`.
 
 ```
-[1]+  Running                 tar -czf home.tar.gz . &
+[1]+  Running                 ls -lRr / 2>1 >/dev/null &
 ```
 
 ###### Can you confirm that the program displayed a list with the status of all jobs like in the example above?
@@ -15,7 +15,7 @@
 ##### Try to run the command `"jobs -l"`.
 
 ```
-[1]+ 13612 Running                 tar -czf home.tar.gz . &
+[1]+ 13612 Running                 ls -lRr / 2>1 >/dev/null &
 ```
 
 ###### Can you confirm that the program added the process ID to the normal information given in the command `"jobs"` like in the example above?
@@ -31,7 +31,7 @@
 ##### Try to run the command `"sleep 50000 &"` then run `"python &"` and press enter without any input in the last command.
 
 ```
-[1]   Running                 tar -czf home.tar.gz . &
+[1]   Running                 ls -lRr / 2>1 >/dev/null &
 [2]-  Running                 sleep 50000 &
 [3]+  Stopped                 python
 ```
@@ -41,7 +41,7 @@
 ##### Try to run the command `"jobs -r"`.
 
 ```
-[1]   Running                 tar -czf home.tar.gz . &
+[1]   Running                 ls -lRr / 2>1 >/dev/null &
 [2]-  Running                 sleep 50000 &
 ```
 
@@ -66,12 +66,12 @@
 ##### Try to run the command `"kill %1"`.
 
 ```
-[1]   Terminated              tar -czf home.tar.gz
+[1]   Terminated              ls -lRr / 2>1 >/dev/null
 ```
 
 ###### Can you confirm that the program killed and displayed the first process like in the example above?
 
-##### Close the program and run it again. Try to run the commands `"tar -czf home.tar.gz . &"`, `"sleep 50000 &"` and then run `"fg"`.
+##### Close the program and run it again. Try to run the commands `"ls -lRr / 2>1 >/dev/null &"`, `"sleep 50000 &"` and then run `"fg"`.
 
 ```
 sleep 50000
