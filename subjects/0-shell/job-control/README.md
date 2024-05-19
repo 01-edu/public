@@ -31,18 +31,18 @@ This project will help you learn about:
 
 ```
 student$ ./0-shell
-$ tar -czf home.tar.gz . &
+$ ls -lRr / 2>1 >/dev/null  &
 [1] 8287
 $ sleep 50 &
 [2] 8870
 $ jobs
-[1]-  Running                 tar -czf home.tar.gz . &
+[1]-  Running                 ls -lRr / 2>1 >/dev/null  &
 [2]+  Running                 sleep 50 &
 $ jobs -l
-[1]- 8287 Running                 tar -czf home.tar.gz . &
+[1]- 8287 Running                 ls -lRr / 2>1 >/dev/null  &
 [2]+ 8870 Running                 sleep 50 &
 $ kill 8287
-[1]+  Terminated              tar -czf home.tar.gz .
+[1]+  Terminated              ls -lRr / 2>1 >/dev/null 
 $ jobs
 [2]+  Running                 sleep 50 &
 $ exit
