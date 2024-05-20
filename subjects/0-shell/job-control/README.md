@@ -42,7 +42,7 @@ $ jobs -l
 [1]- 8287 Running                 ls -lRr / 2>1 >/dev/null  &
 [2]+ 8870 Running                 sleep 50 &
 $ kill 8287
-[1]+  Terminated              ls -lRr / 2>1 >/dev/null 
+[1]+  Terminated              ls -lRr / 2>1 >/dev/null
 $ jobs
 [2]+  Running                 sleep 50 &
 $ exit
