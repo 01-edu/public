@@ -10,8 +10,6 @@ Write a function `cat` that reads the content of the file given as the argument,
 
 > 💡 Be aware of how much you read at once.
 
-
-
 ### Expected Functions
 
 ```java
