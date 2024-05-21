@@ -2,24 +2,48 @@
 
 ### Instructions
 
-Write a program that takes a `string` and displays its last word, followed by a newline (`'\n'`).
+Write a function `LastWord that takes a `string`and returns its last word followed by a`\n`.
 
 - A word is a section of `string` delimited by spaces or by the start/end of the `string`.
 
-- The output will be followed by a newline (`'\n'`).
+### Expected function
 
-- If the number of arguments is different from 1, or if there are no word, the program displays nothing.
+```go
+func LastWord(s string) string{
+
+}
+```
 
 ### Usage
 
+Here is a possible program to test your function :
+
+```go
+package main
+
+import (
+	"piscine"
+
+	"github.com/01-edu/z01"
+)
+
+func main() {
+	z01.PrintRune(piscine.LastWord("this        ...       is sparta, then again, maybe    not"))
+	z01.PrintRune(piscine.LastWord(" "))
+	z01.PrintRune(piscine.LastWord(" lorem,ipsum "))
+}
+```
+
+And its output :
+
 ```console
-$ go run . "FOR PONY" | cat -e
-PONY$
-$ go run . "this        ...       is sparta, then again, maybe    not" | cat -e
+$ go run . | cat -e
 not$
-$ go run . "  "
-$ go run . "a" "b"
-$ go run . "  lorem,ipsum  " | cat -e
+$
 lorem,ipsum$
 $
 ```
+
+### Notions
+
+- [01-edu/z01](https://github.com/01-edu/z01)
