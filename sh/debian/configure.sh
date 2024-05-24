@@ -138,7 +138,7 @@ EOF
   sed -i '/swap/d' /etc/fstab
 
   # Docker
-  curl -fsSL https://get.docker.com -o get-docker.sh && bash get-docker.sh && apt-get -y install docker-compose
+  curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh
 
   # NodeJS
   curl -fsSL https://deb.nodesource.com/setup_20.x | bash && apt-get install -y nodejs
@@ -175,7 +175,6 @@ function checkConfig() {
 
 # Check configs in the List
 function checkList() {
-  checkConfig docker-compose
   checkConfig docker
   checkConfig node
   checkConfig git
@@ -276,8 +275,7 @@ function deployPlatform() {
   cd /root/$serverFQDN
   # Generate platform environment file automatically
   ./generate_env.sh --auto
-  docker-compose up --build --detach
-  ./redeploy.sh --latest
+  ./redeploy.sh --hard
 }
 
 function clonePlatform() {
