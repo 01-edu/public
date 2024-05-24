@@ -146,9 +146,10 @@ EOF
     # Git
     apt-get update && apt-get -y install git
 
-    #!/bin/bash
+    # Create the config.d directory if it doesn't exist
+    mkdir -p ~/.ssh/config.d
 
-    # Generate SSH key
+    # Generate SSH key and create SSH config
     for key_type in all https runner; do
         ssh-keygen -t ed25519 -f ~/.ssh/ed25519_01edu_$key_type -N ''
 
@@ -159,8 +160,10 @@ EOF
         IdentityFile ~/.ssh/ed25519_01edu_$key_type" >~/.ssh/config.d/01-edu-$key_type.conf
     done
 
-    # Include custom SSH configurations from the config directory
-    echo "Include ~/.ssh/config.d/*.conf" >>~/.ssh/config
+    # Include custom SSH configurations from the config directory if not already included
+    if ! grep -q "Include ~/.ssh/config.d/*.conf" ~/.ssh/config; then
+        echo "Include ~/.ssh/config.d/*.conf" >>~/.ssh/config
+    fi
 
     # Use Cloudflare DNS server
     echo 'supersede domain-name-servers 1.1.1.1;' >>/etc/dhcp/dhclient.conf
@@ -188,9 +191,9 @@ function checkConfig() {
 
 function checkKeys() {
     # Check if SSH key pairs are generated
-    if [ -f ~/.ssh/ed25519_01edu_all ] && [ -f ~/.ssh/ed25519_01edu_all.pub ] &&
-        [ -f ~/.ssh/ed25519_01edu_https ] && [ -f ~/.ssh/ed25519_01edu_https.pub ] &&
-        [ -f ~/.ssh/ed25519_01edu_runner ] && [ -f ~/.ssh/ed25519_01edu_runner.pub ]; then
+    if test -f ~/.ssh/ed25519_01edu_all && test -f ~/.ssh/ed25519_01edu_all.pub &&
+        test -f ~/.ssh/ed25519_01edu_https && test -f ~/.ssh/ed25519_01edu_https.pub &&
+        test -f ~/.ssh/ed25519_01edu_runner && test -f ~/.ssh/ed25519_01edu_runner.pub; then
         echo "✅ SSH private/public key pairs generated"
 
         # Echo public keys
