@@ -75,7 +75,7 @@ fi
 EOF
 
     # Basic packages
-    apt-get -y install man bash-completion git ufw jq curl build-essential wget psmisc lz4 file net-tools brotli unzip zip moreutils dnsutils fail2ban xauth sysfsutils rsync iperf pv tree mc screen ssh iotop htop awscli whois sudo
+    apt-get -y install man bash-completion git ufw jq cron curl build-essential wget psmisc lz4 file net-tools brotli unzip zip moreutils dnsutils fail2ban xauth sysfsutils rsync iperf pv tree mc screen ssh iotop htop awscli whois sudo
 
     # Enable time synchronization
     timedatectl set-ntp true
@@ -197,7 +197,7 @@ function checkKeys() {
         echo "✅ SSH private/public key pairs generated"
 
         # Echo public keys
-        echo "🔑 Public keys:"
+        echo -e "$(tput setaf 2)$(tput bold)\n🔑 Public keys:$(tput sgr0)"
         echo "all"
         cat ~/.ssh/ed25519_01edu_all.pub
         echo "https"
@@ -217,6 +217,7 @@ function checkList() {
     checkConfig man
     checkConfig ufw
     checkConfig jq
+    checkConfig cron
     checkConfig curl
     checkConfig wget
     checkConfig lz4
