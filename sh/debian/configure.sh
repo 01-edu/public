@@ -197,9 +197,12 @@ function checkKeys() {
         echo "✅ SSH private/public key pairs generated"
 
         # Echo public keys
-        echo "Public keys:"
+        echo "🔑 Public keys:"
+        echo "all"
         cat ~/.ssh/ed25519_01edu_all.pub
+        echo "https"
         cat ~/.ssh/ed25519_01edu_https.pub
+        echo "runner"
         cat ~/.ssh/ed25519_01edu_runner.pub
     else
         echo "❌ SSH private/public key pairs not found"
@@ -215,7 +218,6 @@ function checkList() {
     checkConfig ufw
     checkConfig jq
     checkConfig curl
-    checkConfig netcat
     checkConfig wget
     checkConfig lz4
     checkConfig file
