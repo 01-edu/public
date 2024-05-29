@@ -15,6 +15,12 @@ Usage: go run . [OPTION] [STRING]
 
 EX: go run . --color=<color> <substring to be colored> "something"
 ```
+### Example
+```shell
+go run . --color=red "kit" "a king kitten have kit"
+```
+for the above example the substring kit in the word kitten and the word kit at the end should be colored.
+
 
 If there are other `ascii-art` optional projects implemented, the program should accept other correctly formatted `[OPTION]` and/or `[BANNER]`.
 Additionally, the program must still be able to run with a single `[STRING]` argument.
