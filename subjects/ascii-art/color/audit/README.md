@@ -7,7 +7,7 @@
 ```
 Usage: go run . [OPTION] [STRING]
 
-EX: go run . --color=<color> <letters to be colored> "something"
+EX: go run . --color=<color> <substring to be colored> "something"
 ```
 
 ###### Does it display the same result as above?
@@ -24,17 +24,17 @@ EX: go run . --color=<color> <letters to be colored> "something"
 
 ###### Does it display the expected result?
 
-##### Try specifying a set of letters to be colored (the second until the last letter).
+##### Try specifying a substring to be colored  (the second until the last letter).
 
-###### Does it display the expected result (the corresponding set of letters with that color)?
+###### Does it display the expected result (the corresponding substring with that color)?
 
 ##### Try specifying letter to be colored (the second letter).
 
 ###### Does it display the expected result (the corresponding letter with that color)?
 
-##### Try specifying a set of letters to be colored (just two letters).
+##### Try specifying a substring to be colored  (just two letters).
 
-###### Does it display the expected result (the corresponding set of letters with that color)?
+###### Does it display the expected result (the corresponding substring with that color)?
 
 ##### Try passing as arguments `--color=orange GuYs "HeY GuYs"`, in order to color `GuYs`.
 
@@ -56,7 +56,7 @@ EX: go run . --color=<color> <letters to be colored> "something"
 
 ###### Does it display the expected result?
 
-##### Try passing as arguments a random string with lower case letters, upper case letters, spaces and numbers with a random color in the color flag ("--color="), specifying a set of letters to be colored.
+##### Try passing as arguments a random string with lower case letters, upper case letters, spaces and numbers with a random color in the color flag ("--color="), specifying a substring to be colored .
 
 ###### Does it display the expected result?
 
