@@ -24,7 +24,7 @@ EX: go run . --color=<color> <substring to be colored> "something"
 
 ###### Does it display the expected result?
 
-##### Try specifying a substring to be colored  (the second until the last letter).
+##### Try specifying a substring to be colored (the second until the last letter).
 
 ###### Does it display the expected result (the corresponding substring with that color)?
 
@@ -32,7 +32,7 @@ EX: go run . --color=<color> <substring to be colored> "something"
 
 ###### Does it display the expected result (the corresponding letter with that color)?
 
-##### Try specifying a substring to be colored  (just two letters).
+##### Try specifying a substring to be colored (just two letters).
 
 ###### Does it display the expected result (the corresponding substring with that color)?
 
