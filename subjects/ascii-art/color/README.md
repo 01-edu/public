@@ -35,7 +35,7 @@ Additionally, the program must still be able to run with a single `[STRING]` arg
 
 ### Allowed packages
 
-- Only the [standard Go](https://golang.org/pkg/) packages are allowed
+- Only the [standard Go](https://pkg.go.dev/std) packages are allowed
 
 This project will help you learn about :
 
