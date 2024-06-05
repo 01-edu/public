@@ -2,7 +2,9 @@
 
 ###### Was the project written in a compiled programming language?
 
-###### Are the commands mentioned in the subject implemented from scratch, without calling any external binaries and exclusively using low-level system calls directly, without relying on built-in functions or libraries that abstract file operations?
+###### Are the commands mentioned in the subject implemented from scratch, without calling any external binaries?
+
+The use of execution commands (such as exec, system, os/exec, or similar functions) to call **external binaries** or utilities is strictly forbidden, as the project requires implementing all functionality from scratch without relying on external programs.
 
 #### Functional
 
@@ -76,7 +78,9 @@
 
 #### Bonus
 
-###### +Did the student added auto complete when you are writting the commands?
+###### + Did the student implemented the commands exclusively using `low-level system calls` avoiding built-in functions or libraries that abstract file operations?
+
+###### +Did the student added auto complete when you are writing the commands?
 
 ###### +Did the student added piping?
 
