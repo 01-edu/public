@@ -28,7 +28,7 @@ For this project you will only have to create a simple `Unix shell` where you ca
   - `mkdir`
   - `exit`
 
-> The commands need to be implemented from scratch, without calling any external binaries and exclusively using low-level system calls directly, without relying on built-in functions or libraries that abstract file operations?
+> The commands need to be implemented from scratch, without calling any external binaries.
 
 - You must manage the program interruption `Ctrl + D`.
 - The project has to be written in a compiled language (like C, Rust, Go or other), **interpreted languages (like Perl and others) are not allowed**.
@@ -47,6 +47,10 @@ This project will help you learn about:
 ### Bonus
 
 You can also do more bonus features like:
+
+- Implement the commands exclusively using `low-level system calls` avoiding built-in functions or libraries that abstract file operations.
+
+  - Avoid High-Level Abstractions: Instead of using functions like the Go `os.Open, os.Remove, and io.Copy`, you would use system calls directly through the `syscall` package using `syscall.Open, syscall.Close, syscall.Read, syscall.Write, syscall.Unlink`.
 
 - Manage the interruption `Ctrl + C`
 - Auto complete when you are writing
