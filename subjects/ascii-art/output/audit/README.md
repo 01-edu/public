@@ -4,7 +4,7 @@
 
 > For consistency, use bash for the following tests.
 
-##### Try passing as arguments `"--output test00.txt banana standard "`
+##### Try passing as arguments `--output test00.txt banana standard`
 
 ```
 Usage: go run . [OPTION] [STRING] [BANNER]
