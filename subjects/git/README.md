@@ -85,8 +85,8 @@ echo "Hello, $name"
 ```
 
 - Make two separate commits:
-  - The first commit should be for the comment in line 1.
-  - The second commit should include changes made to lines 3 and 4.
+  - The first commit should be for the comment in line 3.
+  - The second commit should include changes made to lines 4 and 5.
 
 #### History
 
