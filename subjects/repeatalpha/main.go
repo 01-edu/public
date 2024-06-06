@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
+	"piscine"
 )
 
 func main() {
-	fmt.Println(RepeatAlpha("abc"))
-	fmt.Println(RepeatAlpha("Choumi."))
-	fmt.Println(RepeatAlpha(""))
-	fmt.Println(RepeatAlpha("abacadaba 01!"))
+	fmt.Println(piscine.RepeatAlpha("abc"))
+	fmt.Println(piscine.RepeatAlpha("Choumi."))
+	fmt.Println(piscine.RepeatAlpha(""))
+	fmt.Println(piscine.RepeatAlpha("abacadaba 01!"))
 }
