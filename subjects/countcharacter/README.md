@@ -41,6 +41,6 @@ And its output :
 $ go run .
 3
 0
-1
+3
 1
 ```
