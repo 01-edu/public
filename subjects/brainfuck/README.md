@@ -10,14 +10,16 @@ The source code will be given as the first parameter, and will always be valid w
 
 Your `Brainfuck` interpreter will consist of an array of 2048 bytes, all initialized to 0, with a pointer to the first byte.
 
-Every operator consists of a single character:
-- `>`: increment the pointer.
-- `<`: decrement the pointer.
-- `+`: increment the pointed byte.
-- `-`: decrement the pointed byte.
-- `.`: print the pointed byte to the standard output.
-- `[`: if the pointed byte is 0, then instead of moving onto the next command, skip to the command after the matching `]`.
-- `]`: if the pointed byte is **not** 0, then instead of moving onto the next command, move back to the command after the matching `[`.
+Every operator consists of a single character :
+
+    '>' increment the pointer
+    '<' decrement the pointer
+    '+' increment the pointed byte
+    '-' decrement the pointed byte
+    '.' print the pointed byte on standard output
+    '[' go to the matching ']' if the pointed byte is 0 (loop start)
+    ']' go to the matching '[' if the pointed byte is not 0 (loop end)
+
 
 Any other character is a comment.
 
