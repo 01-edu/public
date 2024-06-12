@@ -10,34 +10,7 @@
 
 ###### Is there a time frame?
 
-###### In Empathy or User Research, is there at least one tool, selected by the student, among the following list?
-
-    - User interviews
-    - Analytics
-    - Competitive analysis
-
-###### In Define, is there at least one tool, selected by the student, among the following list?
-
-     - Persona
-     - Empathy Map
-     - User Journey
-     - JBTD or Jobs-to-be-done
-
-###### Is there a “Problem Statement” spot? (ask the student to show you)
-
-###### In Ideation, is there at least one ideation technique? (ask the student to show you)
-
-###### Is there a “Prototype” spot that is either paper prototype or wireframe that contains at least one tool among the two following?
-
-    - User Flow
-    - Card Sorting
-
-###### Is there a “Test” spot with at least 5 users?
-
-###### Does each of these five phases have a time frame?
-
-#### Empathy
-
+#### Empathy  
 ###### Is there a zip folder labeled as “ProjectTitle_Name_FirstName”?
 
 ###### Are the deliverables labeled as “Name_FirstName_DeliverableName_Date_VersionNumber”?
@@ -45,8 +18,7 @@
 ###### Are the deliverables in the correct format?
 
 ###### Are the documents clear, simple and easy to read?
-
-###### Is at least one of the following tools used?
+###### Is there at least one tool, selected by the student, among the following list?
 
     - User interviews
     - Analytics
@@ -58,7 +30,16 @@
 
 ###### Is there a PDF document with the key learnings the students learnt from this phase?
 
-#### Problem statement
+#### Define  
+
+###### Is there at least one tool, selected by the student, among the following list?
+
+     - Persona
+     - Empathy Map
+     - User Journey
+     - JBTD or Jobs-to-be-done  
+     
+####  Problem Statement    
 
 ###### Is the deliverable labeled as “Name_FirstName_DeliverableName_Date_VersionNumber”?
 
@@ -74,7 +55,13 @@
 
 ###### Are there the key learnings the students learnt from this phase?
 
-#### Ideation
+####  Ideation    
+
+###### Is there at least one ideation technique? (ask the student to show you)
+
+###### Is there a “Test” spot with at least 5 users?
+
+###### Does each of these five phases have a time frame?
 
 ###### Is there a zip folder labeled as “ProjectTitle_Name_FirstName”?
 
@@ -111,6 +98,11 @@
 ###### Are the deliverables labeled as “Name_FirstName_DeliverableName_Date_VersionNumber”?
 
 ###### Are the documents clear, simple and easy to read?
+
+###### Is there a “Prototype” spot that is either paper prototype or wireframe that contains at least one tool among the two following?
+
+    - User Flow
+    - Card Sorting
 
 ###### Is there a paper prototype with 6 to 12 different screens?
 
