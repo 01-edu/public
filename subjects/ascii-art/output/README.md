@@ -14,7 +14,7 @@ Usage: go run . [OPTION] [STRING] [BANNER]
 EX: go run . --output=<fileName.txt> something standard
 ```
 
-If there are other `ascii-art` optional projects implemented, the program should accept other correctly formatted `[OPTION]` and/or `[BANNER]`.  
+If there are other `ascii-art` optional projects implemented, the program should accept other correctly formatted `[OPTION]` and/or `[BANNER]`.
 Additionally, the program must still be able to run with a single `[STRING]` argument.
 
 ### Instructions
@@ -26,8 +26,8 @@ Additionally, the program must still be able to run with a single `[STRING]` arg
 ### Usage
 
 ```console
-$ go run . --output=banner.txt "hello" standard
-$ cat -e banner.txt
+student$ go run . --output=banner.txt "hello" standard
+student$ cat -e banner.txt
  _              _   _          $
 | |            | | | |         $
 | |__     ___  | | | |   ___   $
@@ -36,9 +36,8 @@ $ cat -e banner.txt
 |_| |_|  \___| |_| |_|  \___/  $
                                $
                                $
-$
-$ go run . --output=banner.txt 'Hello There!' shadow
-$ cat -e banner.txt
+student$ go run . --output=banner.txt 'Hello There!' shadow
+student$ cat -e banner.txt
                                                                                          $
 _|    _|          _| _|                _|_|_|_|_| _|                                  _| $
 _|    _|   _|_|   _| _|   _|_|             _|     _|_|_|     _|_|   _|  _|_|   _|_|   _| $
@@ -47,7 +46,7 @@ _|    _| _|       _| _| _|    _|           _|     _|    _| _|       _|       _| 
 _|    _|   _|_|_| _| _|   _|_|             _|     _|    _|   _|_|_| _|         _|_|_| _| $
                                                                                          $
                                                                                          $
-$
+student$
 ```
 
 ### Allowed packages
