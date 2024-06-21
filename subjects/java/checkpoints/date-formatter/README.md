@@ -60,7 +60,6 @@ public class ExerciseRunner {
 
 ### Expected Output
 ```shell
-Copy code
 $ javac *.java -d build
 $ java -cp build ExerciseRunner
 28/06/2022
