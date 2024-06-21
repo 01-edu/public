@@ -2,25 +2,25 @@
 
 ### Instructions
 
-Write a class `DateFormatter` that has three private attributes: 
-* `date`: the date to be formatted (as a date).
-* `format`: the format to convert the date to.
-* `formattedDate`: contains the date converted into the given format.
+Write a class `DateFormatter` that has three private attributes:
+
+- `date`: the date to be formatted (as a date).
+- `format`: the format to convert the date to.
+- `formattedDate`: contains the date converted into the given format.
 
 Create getters for all the attributes and setters for `date` and `format`. The conversion should happen when you set the `format` or the `date`. If the `format` is not correct, the conversion shouldn't happen. Additionally, create methods to output the date in the specified `format`, and constructors with only the `date`, with `date` and `format`, and a default constructor.
 
 #### The accepted date formats are:
+
 - `DD/MM/YYYY`
 - `DD Month YYYY`
 - `DD.MM.YYYY`
-
 
 #### The accepted date formats are:
+
 - `DD/MM/YYYY`
 - `DD Month YYYY`
 - `DD.MM.YYYY`
-
-
 
 ### Expected Functions
 
@@ -38,6 +38,7 @@ public class DateFormatter {
 ```
 
 ### Usage
+
 Here is a possible ExerciseRunner.java to test your class:
 
 ```java
@@ -59,6 +60,7 @@ public class ExerciseRunner {
 ```
 
 ### Expected Output
+
 ```shell
 $ javac *.java -d build
 $ java -cp build ExerciseRunner
