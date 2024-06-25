@@ -10,6 +10,7 @@ Create a circular single linked list data structure that implements the followin
 - `size()`: to return the size of the list.
 
 Define these methods in an interface called `LinkedList`, and implement this interface in a class that you will create. Additionally, add a private method `next(Node node)` in your class that will be used in the other methods. This method should print the message "Go to next node" each time it is called.
+If the index is over the size then you have to keep going using `next` method to achieve the given index
 
 ### Explanation
 
