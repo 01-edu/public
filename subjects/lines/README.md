@@ -9,35 +9,35 @@ Also the single and double quote delimited strings can't actually have literal
 new lines:
 
 ```js
-let fewlines = '\nHello👏\nThere👏\n'
-// Same string but with litteral new lines:
+let fewlines = "\nHello👏\nThere👏\n";
+// Same string but with literal new lines:
 let usingLiteral = `
 Hello👏
 There👏
-`
+`;
 ```
 
 You can use the literal `\n` character to split text on each lines:
 
 ```js
-let splited = `
+let splitted = `
 Hello👏
 There👏
-`.split('\n')
+`.split("\n");
 
-console.log(splited) // ['','Hello👏','There👏', '']
+console.log(splitted); // ['','Hello👏','There👏', '']
 // Note that empty lines becomes empty strings !
 ```
 
 ### Instructions
 
-You have been recruted to analyse a bunch of poems, your first task is to count
+You have been recruited to analyse a bunch of poems, your first task is to count
 the number of lines.
 
 - Declare a variable `linesCount` of the number of lines from the provided
   `poem` variable.
 
-But you must ignore empty lines in the begining and the end using the `trim`
+However, you must ignore empty lines in the beginning and the end using the `trim`
 string method.
 
 ### Notions
