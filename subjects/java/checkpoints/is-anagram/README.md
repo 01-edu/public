@@ -1,4 +1,4 @@
-## Is Anagram 
+## Is Anagram
 
 ### Instructions
 
@@ -15,6 +15,7 @@ public class AnagramChecker {
 ```
 
 ### Usage
+
 Here is a possible ExerciseRunner.java to test your class:
 
 ```java
@@ -32,6 +33,7 @@ public class ExerciseRunner {
 ```
 
 ### Expected Output
+
 ```shell
 $ javac *.java -d build
 $ java -cp build ExerciseRunner
