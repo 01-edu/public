@@ -1,4 +1,5 @@
 ## Harmonious Fusion
+
 ### Instructions
 
 Create a class `HarmoniousFusion` that provides a method to merge two sorted arrays into one sorted array. The merged array should also be sorted.
@@ -48,4 +49,3 @@ $ java -cp build ExerciseRunner
 [1, 2, 3, 4, 5, 6, 7]
 $
 ```
-
