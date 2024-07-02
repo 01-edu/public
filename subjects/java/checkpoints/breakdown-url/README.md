@@ -50,5 +50,3 @@ Components of URL 1: {protocol=https, domain=www.example.com, port=8080, path=/p
 Components of URL 2: {protocol=http, domain=example.com, path=/}
 $
 ```
-
-This exercise guides the students in creating a method to parse and validate URLs using regex. It includes class definition, method signature, and usage example with expected output.
