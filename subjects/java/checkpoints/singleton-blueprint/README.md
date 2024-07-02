@@ -8,13 +8,13 @@ You are given an incomplete singleton class. Complete the class to demonstrate y
 
 ```java
 public class Singleton {
-    public static Singleton instance;
+    public Singleton instance;
 
     private Singleton() {
         // Initialization code
     }
 
-    public static Singleton get???() {
+    public Singleton get???() {
         // Implementation to return the single instance
     }
 }
@@ -27,11 +27,6 @@ Here is a possible `ExerciseRunner.java` to test your class:
 ```java
 public class ExerciseRunner {
     public static void main(String[] args) {
-        // Get the only object available
-        Singleton singleton = Singleton.getInstance();
-
-        // Show the message
-        singleton.showMessage();
     }
 }
 ```
