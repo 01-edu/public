@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Given a non-empty array of integers, return the k most frequent elements. Use a hash map and a heap for efficient lookup and retrieval.
+Given a non-empty array of integers, return the k most frequent elements. Use a hash map and a heap for efficient lookup and retrieval. The returned array should be ordered by appearance frequency first, and if there is a tie in frequency, the element with the smallest index in the original array will appear first.
 
 ### Expected Class
 
@@ -39,6 +39,11 @@ public class ExerciseRunner {
         int[] nums3 = {4, 1, -1, 2, -1, 2, 3};
         int k3 = 2;
         System.out.println("Top " + k3 + " frequent elements: " + topFrequents.findTopKFrequent(nums3, k3));
+
+        // Test case 4
+        int[] nums4 = {4, 1, -1, 2, -1, 2, 3};
+        int k4 = 10;
+        System.out.println("Top " + k4 + " frequent elements: " + topFrequents.findTopKFrequent(nums4, k4));
     }
 }
 ```
@@ -51,5 +56,6 @@ $ java -cp build ExerciseRunner
 Top 2 frequent elements: [1, 2]
 Top 1 frequent elements: [1]
 Top 2 frequent elements: [-1, 2]
+Top 10 frequent elements: [-1, 2, 4, 1, 3]
 $
 ```
