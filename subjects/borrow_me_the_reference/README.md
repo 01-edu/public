@@ -13,6 +13,7 @@ Create the following functions:
 - `do_operations`: which borrows a Vector of string literals representing simple addition and subtraction equations. The function should replace the operation with the result.
 
 ### Expected Functions
+
 ```rust
 pub fn delete_and_backspace(s: &mut String) {
 }
@@ -30,7 +31,12 @@ use borrow_me_the_reference::{delete_and_backspace, do_operations};
 
 fn main() {
 	let mut a = String::from("bpp--o+er+++sskroi-++lcw");
-	let mut b: Vec<String> = vec!["2+2", "3+2", "10-3", "5+5"];
+    let mut b: Vec<String> = vec![
+        "2+2".to_string(),
+        "3+2".to_string(),
+        "10-3".to_string(),
+        "5+5".to_string(),
+    ];
 
 	delete_and_backspace(&mut a);
 	do_operations(&mut b);
