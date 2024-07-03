@@ -42,7 +42,7 @@ public class RecursiveFactorial extends Factorial {
 
 ### Usage
 
-Here is a possible ExerciseRunner.java to test your classes:
+Here is a possible `ExerciseRunner.java` to test your classes:
 
 ```java
 public class ExerciseRunner {
