@@ -40,7 +40,7 @@ public class TodoList {
 
 ### Usage
 
-Here is a possible TaskManager.java to test your TodoList class:
+Here is a possible `TaskManager.java` to test your `TodoList` class:
 
 ```java
 public class ExerciseRunner {
