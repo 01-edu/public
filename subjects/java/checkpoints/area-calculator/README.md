@@ -19,9 +19,13 @@ Create a class `AreaCalculator` that has an overloaded method `calculate` to cal
 
 - Square: Area = side²
 
+> you can use `Math.PI`
+
 ### Expected Class
 
 ```java
+import java.lang.Math;
+
 public class AreaCalculator {
     public double calculate(double radius) {
         // calculate area of circle
@@ -43,7 +47,7 @@ public class AreaCalculator {
 
 ### Usage
 
-Here is a possible ExerciseRunner.java to test your class:
+Here is a possible `ExerciseRunner.java` to test your class:
 
 ```java
 public class ExerciseRunner {
