@@ -9,8 +9,9 @@ Create a circular single linked list data structure that implements the followin
 - `remove(int index)`: to remove an element by its index.
 - `size()`: to return the size of the list.
 
-Define these methods in an interface called `LinkedList`, and implement this interface in a class that you will create. Additionally, add a private method `next(Node node)` in your class that will be used in the other methods. This method should print the message "Go to next node" each time it is called.
-If the index is over the size then you have to keep going using `next` method to achieve the given index
+Define these methods in an interface called `LinkedList`, and implement this interface in a class called `CircularLinkedList`. Additionally, add a private method `next(Node node)` in this class to use it for travers the list in other methods. This method should print the message "Go to next node\n" each time it is called.
+
+If the index is over the size then you have to keep going using `next` method to achieve the given index.
 
 ### Explanation
 
@@ -75,7 +76,7 @@ public class CircularLinkedList implements LinkedList {
 
 ### Usage
 
-Here is a possible ExerciseRunner.java to test your class:
+Here is a possible `ExerciseRunner.java` to test your class:
 
 ```java
 public class ExerciseRunner {
