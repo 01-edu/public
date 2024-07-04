@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a class named SteadySequence that includes a method to determine the length of the longest consecutive sequence in an unsorted array of integers. The "longest consecutive sequence" refers to the sequence with the longest stretch of elements that increase strictly by 1. The elements of this sequence may appear in any order within the array.
+Create a class named `SteadySequence` that includes a method to determine the length of the longest consecutive sequence in an unsorted array of integers. The "longest consecutive sequence" refers to the sequence with the longest stretch of elements that increase strictly by 1. The elements of this sequence may appear in any order within the array.
 
 ### Expected Class
 
