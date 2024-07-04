@@ -7,9 +7,9 @@ Create a single linked list data structure that implements the following methods
 - `at(int index)`: to access an element by its index, if the index is out of bound return -1.
 - `add(int value)`: to add an element at the end of the list.
 - `remove(int index)`: to remove an element by its index.
-- `size()`: to get theh size of the list.
+- `size()`: to get the size of the list.
 
-Define these methods in an interface called `LinkedList`, and implement this interface in a class that you will create. Additionally, add a private method `next(Node node)` in your class that will be used to traversing the list in the other methods. This method should print the message "Go to next node" each time it is called.
+Define these methods in an interface called `LinkedList`, and implement this interface in a class called `SingleLinkedList`. Additionally, add a private method `next(Node node)` in this class that will be used to traversing the list in the other methods. This method should print the message "Go to next node\n" each time it is called.
 
 ### Explanation
 
@@ -76,7 +76,7 @@ public class SingleLinkedList implements LinkedList {
 
 ### Usage
 
-Here is a possible ExerciseRunner.java to test your class:
+Here is a possible `ExerciseRunner.java` to test your class:
 
 ```java
 public class ExerciseRunner {
