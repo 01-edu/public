@@ -6,6 +6,8 @@ Write a class `Task` that has two attributes: `description` and `status`, with t
 
 Write a class called `TodoList` that represents a to-do list. The class should be able to hold a specified number of tasks, each with a description and a status. Include methods to add tasks, set a task's status, update task descriptions, and display all tasks in a neat format showing their descriptions and statuses.
 
+> The description lenght will be less or equal to 30 Character.
+
 ### Expected Functions
 
 ```java
