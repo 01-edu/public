@@ -4,17 +4,15 @@
 
 Write a class `DateFormatter` that has three private attributes:
 
-- `date`: the date to be formatted (as a date).
+- `date`: the date to be formatted (as a UNIX time in seconds).
 - `format`: the format to convert the date to.
 - `formattedDate`: contains the date converted into the given format.
 
 Create getters for all the attributes and setters for `date` and `format`. The conversion should happen when you set the `format` or the `date`. If the `format` is not correct, the conversion shouldn't happen. Additionally, create methods to output the date in the specified `format`, and constructors with only the `date`, with `date` and `format`, and a default constructor.
 
-#### The accepted date formats are:
+The default date is the current date, and the format as follow `DD/MM/YYYY`.
 
-- `DD/MM/YYYY`
-- `DD Month YYYY`
-- `DD.MM.YYYY`
+> Using standart library to convert UNIX time to date is allowed
 
 #### The accepted date formats are:
 
@@ -29,7 +27,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class DateFormatter {
-    private long timestamp;
+    private long date;
     private String formattedDate;
     private String format;
 
@@ -39,7 +37,7 @@ public class DateFormatter {
 
 ### Usage
 
-Here is a possible ExerciseRunner.java to test your class:
+Here is a possible `ExerciseRunner.java` to test your class:
 
 ```java
 public class ExerciseRunner {
