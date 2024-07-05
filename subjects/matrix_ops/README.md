@@ -11,9 +11,6 @@ You will be reusing your `Matrix` and `Scalar` structures defined in the [matrix
 ### Expected Function
 
 ```rust
-use crate::{Matrix, Scalar};
-use std::ops::{ Add, Sub };
-
 impl Add for Matrix {
 
 }
@@ -28,6 +25,7 @@ impl Sub for Matrix {
 Here is a program to test your function
 
 ```rust
+// Importing Matrix by defining it as a dependency in Cargo.toml
 use matrix_ops::*;
 
 fn main() {
