@@ -4,7 +4,7 @@
 
 Create a circular single linked list data structure that implements the following methods:
 
-- `at(int index)`: to access an element by its index.
+- `at(int index)`: to access an element by its index. if the index is negative or if the list is empty return -1.
 - `add(int value)`: to add an element at the end of the list.
 - `remove(int index)`: to remove an element by its index.
 - `size()`: to return the size of the list.
