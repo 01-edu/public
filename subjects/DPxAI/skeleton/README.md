@@ -1,12 +1,12 @@
 ## Skeleton
 
-> Brainpower mode 
+> Brainpower mode
 
 ### Context
 
 To craft your robot friend, you first need to build its skeleton, and that's where HTML comes in. HTML is the blueprint that sets up the structure of your robot, giving it shape and form. With HTML, you'll create the framework that holds all your amazing ideas together. Ready to start building? Let’s dive in and create the foundation of your robot buddy!
 
-> For the whole quest, the principle is to iterate over your code: when you finish an exercise, copy-paste your code to use it in the next one. 
+> For the whole quest, the principle is to iterate over your code: when you finish an exercise, copy-paste your code to use it in the next one.
 
 > Contrary to what you will see in the videos, you don't have to run a server on your machine to use the html css javascript thanks to the integrated code editor that takes care of all that.  
 > We've left the videos for the other educational content they provide.
@@ -17,7 +17,6 @@ To craft your robot friend, you first need to build its skeleton, and that's whe
 - for the CSS files: when you have to link one, it's named like so: `name-of-the-exercise.css`
 - for the JS files, when you have to link one, it's named like so: `name-of-the-exercise.js`
 
-
 ### Resources
 
 We provide you with some content to get started smoothly, check it out!
@@ -27,15 +26,16 @@ We provide you with some content to get started smoothly, check it out!
 - Video [Different HTML tags overview](https://www.youtube.com/watch?v=Al-Jzpib8VY&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=2)
 
 Those videos are accompanying you step by step in each exercise, but if you want to check right away all the notions covered in the quest, you can watch the whole playlist [Web - HTML, CSS & DOM JS](https://www.youtube.com/playlist?list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF).
+
 > Your working environment may not be exactly the same as what you see in the videos or documentation, just try to adapt your work according to your research and discoveries.  
 > Don't be afraid to try!
-
 
 ### Instructions
 
 Ready? Let's code!
 
->The first step to achieve in your quest is to craft the shape of your robot ; for that, 2 things needs to be done:
+> The first step to achieve in your quest is to craft the shape of your robot ; for that, 2 things needs to be done:
+>
 > - Custumize the( [`<head>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head) tag)
 > - Custumize the ([`<title>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title) tag)
 
@@ -50,7 +50,6 @@ Choose a power that you will give to your robot from the following list and put 
 - super-strength
 - advanced-healing
 - mind-link
-  
 
 #### The `<body>` part:
 
