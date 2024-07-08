@@ -1,15 +1,17 @@
-## URL Parsing
+## Breakdown URL
 
 ### Instructions
 
-Create a class `UrlParser` that provides a method to parse and validate URLs using regex. The method should extract and return url components the `protocol`, `domain`, `port`, `path` and `query` parameters. The URL is always correct.
+Create a class `BreakdownURL` that provides a method to parse and validate URLs using regex.The method should extract and return the following URL components: `protocol`, `domain`, `port`, `path` and `query`
+Assume the URL is always correct.
+The method should extract and return URL components the parameters. The URL is always correct.
 
-> give back in the map just the existing component.
+> Give back in the map just the existing component.
 
 ### Expected Class
 
 ```java
-public class UrlParser {
+public class BreakdownURL {
     public Map<String, String> parseURL(String url) {
         // Implementation to parse and validate URLs using regex
     }
@@ -25,18 +27,17 @@ import java.util.Map;
 
 public class ExerciseRunner {
     public static void main(String[] args) {
-        UrlParser parser = new UrlParser();
+        BreakdownURL parser = new BreakdownURL();
 
         // Test case 1
-        String url1 = "https://www.example.com:8080/path?name=value";
-        Map<String, String> components1 = parser.parseURL(url1);
+        String URL1 = "https://www.example.com:8080/path?name=value";
+        Map<String, String> components1 = parser.parseURL(URL1);
         System.out.println("Components of URL 1: " + components1);
 
         // Test case 2
-        String url2 = "http://example.com/";
-        Map<String, String> components2 = parser.parseURL(url2);
+        String URL2 = "http://example.com/";
+        Map<String, String> components2 = parser.parseURL(URL2);
         System.out.println("Components of URL 2: " + components2);
-
     }
 }
 ```
