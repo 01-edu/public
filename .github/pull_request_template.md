@@ -1,4 +1,7 @@
 > Before starting, please choose the relevant pull request **Labels**, **Reviewers**, and **Assignees**
+>
+> Here is an example tile of the pull request:
+> `CON-1234 Title of The Feature or Fix`
 
 DEV-#### | SUP-#### | CON-####
 
