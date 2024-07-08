@@ -2,7 +2,7 @@
 
 ### Instructions
 
-You are given an incomplete Factory design pattern implementation with some incorrect parts. Complete and fix the class to demonstrate your understanding of how the Factory design pattern works. 
+You are given an incomplete Factory design pattern implementation with some incorrect parts. Complete and fix the class to demonstrate your understanding of how the Factory design pattern works.
 
 ### Expected Classes
 
