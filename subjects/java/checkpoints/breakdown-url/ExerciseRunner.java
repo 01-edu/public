@@ -2,17 +2,16 @@ import java.util.Map;
 
 public class ExerciseRunner {
     public static void main(String[] args) {
-        UrlParser parser = new UrlParser();
+        BreakdownURL parser = new BreakdownURL();
 
         // Test case 1
-        String url1 = "https://www.example.com:8080/path?name=value";
-        Map<String, String> components1 = parser.parseURL(url1);
+        String URL1 = "https://www.example.com:8080/path?name=value";
+        Map<String, String> components1 = parser.parseURL(URL1);
         System.out.println("Components of URL 1: " + components1);
 
         // Test case 2
-        String url2 = "http://example.com/";
-        Map<String, String> components2 = parser.parseURL(url2);
+        String URL2 = "http://example.com/";
+        Map<String, String> components2 = parser.parseURL(URL2);
         System.out.println("Components of URL 2: " + components2);
-
     }
 }
