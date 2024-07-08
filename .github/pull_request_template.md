@@ -1,9 +1,9 @@
-> Before starting, please choose the relevant pull request **Labels**, **Reviewers**, and **Assignees**
->
-> Here is an example tile of the pull request:
-> `CON-1234 Title of The Feature or Fix`
+> Before starting, please choose the relevant pull request **Labels**, **Reviewers**, and **Assignees** </br>
+> Here are a couple of example tiles of a good pull request:
+> - `CON-1234 Title of The Feature or Fix`
+> - `[EXTERNAL] Title of The Feature or Fix`
 
-DEV-#### | SUP-#### | CON-####
+CON-#### | [EXTERNAL]
 
 ### Why?
 
