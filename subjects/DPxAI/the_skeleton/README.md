@@ -1,4 +1,4 @@
-## Skeleton
+## The skeleton
 
 > Brainpower mode
 
