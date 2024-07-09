@@ -6,6 +6,8 @@ Create a class `AgeFinder` that provides a method to calculate the age from a gi
 
 In case of any error the method `calculateAge` should return `-1`
 
+> 💡 Be careful with the future.
+
 ### Expected Class
 
 ```java
@@ -47,6 +49,8 @@ public class ExerciseRunner {
 ### Expected Output
 
 ```shell
+$ date
+Tue Jul  9 03:58:06 PM UTC 2024
 $ javac *.java -d build
 $ java -cp build ExerciseRunner
 Age: 24
