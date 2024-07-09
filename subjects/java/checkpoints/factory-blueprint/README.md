@@ -4,6 +4,8 @@
 
 You are given an incomplete Factory design pattern implementation with some incorrect parts. Complete and fix the class to demonstrate your understanding of how the Factory design pattern works.
 
+The method `showDetails` should print the class name 'ConcreteProductA' for `ConcreteProductA` and so on.
+
 ### Expected Classes
 
 ```java
@@ -24,7 +26,7 @@ public class ConcreteProductB {
 
 // Factory class
 public class Factory {
-    public ConcreteProductB createProduct(String type) { // the type parametre accept two values `A` and `B`
+    public Product createProduct(String type) { // the type parametre accept two values `A` and `B`
 
     }
 }
