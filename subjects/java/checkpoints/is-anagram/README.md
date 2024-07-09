@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a class `AnagramChecker` that provides a method to check if two strings are anagrams. An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+Create a class `AnagramChecker` that provides a method to check if two strings are anagrams. An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.The comparison should be case insensitive.
 
 ### Expected Class
 
@@ -16,7 +16,7 @@ public class AnagramChecker {
 
 ### Usage
 
-Here is a possible ExerciseRunner.java to test your class:
+Here is a possible `ExerciseRunner.java` to test your class:
 
 ```java
 public class ExerciseRunner {
