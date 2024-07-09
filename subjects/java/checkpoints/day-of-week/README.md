@@ -4,6 +4,8 @@
 
 Create a class `DayOfWeekFinder` that provides a method to find the date of the next specified day of the week from a given date. The date will be provided in the format `yyyy-MM-dd`, and the day of the week will be provided as a string (e.g., "Monday", "Tuesday").
 
+You should return 'Error' in case of any error.
+
 ### Expected Class
 
 ```java
