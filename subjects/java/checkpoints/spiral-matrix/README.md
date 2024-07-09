@@ -4,8 +4,6 @@
 
 Create a class `SpiralMatrix` that provides a method to generate a matrix filled with elements from 1 to n\*n in spiral order, given an integer n where n > 0.
 
-
-
 ### Expected Class
 
 ```java
