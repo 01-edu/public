@@ -1,4 +1,4 @@
-# Welcome to the [Public Repository](https://github.com/01-edu/public) of the [01 Edu System](https://github.com/01-edu) 👋
+# Welcome to the [Public](https://github.com/01-edu/public) Repository of the [01 Edu System](https://github.com/01-edu) 👋
 
 ![01 Edu System](https://github.com/01-edu/public/assets/14015057/35560fed-34e6-42c8-a71b-71b0534b7ad7)
 
@@ -8,11 +8,11 @@ All of our courses are meticulously crafted to offer challenging yet enjoyable, 
 
 ### 🎭 **Our Philosophy**
 
-Some of our subjects are **intentionally designed** to be **ambiguous** or **less specific**, reflecting our unique pedagogical approach. Please keep this in mind before reporting any issues or support requests.
+Some of our subjects are **intentionally designed** to be **ambiguous** or **less specific**, reflecting our unique pedagogical approach. Please keep this in mind before reporting any [**⁉️ issues**](https://github.com/01-edu/public/issues) or support requests.
 
 ### 🫶 **Contribute**
 
-We welcome contributions! Feel free to submit a pull request. Due to the high volume of tasks, there may be a delay in reviewing your submission.
+We welcome contributions! Feel free to submit a [**🪢 pull request**](https://github.com/01-edu/public/pulls). Due to the high volume of tasks, there may be a delay in reviewing your submission.
 
 Thank you!<br>
 **📚 The Content Team**
