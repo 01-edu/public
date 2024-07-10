@@ -2,24 +2,24 @@
 
 ### Instructions
 
-Create a doubly linked list data structure that implements the following methods:
+Create a double linked list data structure that implements the following methods:
 
-- `at(int index)`: to access an element by its index.
+- `at(int index)`: to access an element by its index. If the index is out of bound return -1.
 - `add(int value)`: to add an element at the end of the list.
 - `remove(int index)`: to remove an element by its index.
 - `size()`: to get the size of the list.
 
-Define these methods in an interface called `LinkedList`, and implement this interface in a class that you will create. Additionally, add private methods `next(Node node)` and `prev(Node node)` in your class that will be used in the other methods. These methods should print the messages "Go to next node" and "Go to previous node" each time they are called, respectively.
+Define these methods in an interface called `LinkedList`, and implement this interface in a class that you will create. Additionally, add private methods `next(Node node)` and `prev(Node node)` in your class that will be used in the other methods. These methods should print the messages "Go to next node\n" and "Go to previous node\n" each time they are called, respectively.
 
 ### Explanation
 
-A doubly linked list is a linear data structure where each element is a separate object called a node. Each node contains three fields:
+A double linked list is a linear data structure where each element is a separate object called a node. Each node contains three fields:
 
 - `value`: stores the data.
 - `next`: stores a reference to the next node in the list.
 - `prev`: stores a reference to the previous node in the list.
 
-The first node is called the head of the list and the last node is always null. The list allows for efficient insertion and deletion of elements. However, accessing an element by its index requires traversing the list from the head to the desired position.
+The first node is called the head of the list and the last node always has next pointing to null. The list allows for efficient insertion and deletion of elements. However, accessing an element by its index requires traversing the list from the head to the desired position.
 
 ### Given Interface
 
@@ -44,12 +44,7 @@ public class DoubleLinkedList implements LinkedList {
         int value;
         Node next;
         Node prev;
-
-        Node(int value) {
-            this.value = value;
-            this.next = null;
-            this.prev = null;
-        }
+        ...
     }
 
     @Override
@@ -73,22 +68,18 @@ public class DoubleLinkedList implements LinkedList {
     }
 
     private Node next(Node node) {
-        // Print the message "Go to next node"
-        System.out.println("Go to next node");
-        return node.next;
+        // Implementation for going to the next
     }
 
     private Node prev(Node node) {
-        // Print the message "Go to previous node"
-        System.out.println("Go to previous node");
-        return node.prev;
+        // Implementation for going to the prev
     }
 }
 ```
 
 ### Usage
 
-Here is a possible ExerciseRunner.java to test your class:
+Here is a possible `ExerciseRunner.java` to test your class:
 
 ```java
 public class ExerciseRunner {
