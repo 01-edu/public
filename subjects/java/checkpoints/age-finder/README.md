@@ -6,7 +6,7 @@ Create a class `AgeFinder` that provides a method to calculate the age from a gi
 
 In case of any error the method `calculateAge` should return `-1`
 
-> 💡 Be careful with the future.
+> 💡 Have you ever seen someone with a negative age???
 
 ### Expected Class
 
