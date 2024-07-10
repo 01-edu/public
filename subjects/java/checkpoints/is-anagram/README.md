@@ -24,10 +24,10 @@ public class ExerciseRunner {
         AnagramChecker checker = new AnagramChecker();
 
         // Test cases
-        System.out.println(checker.isAnagram("listen", "silent")); // Expected output: true
-        System.out.println(checker.isAnagram("triangle", "integral")); // Expected output: true
-        System.out.println(checker.isAnagram("apple", "pale")); // Expected output: false
-        System.out.println(checker.isAnagram("Astronomer", "Moon starer")); // Expected output: true
+        System.out.println(checker.isAnagram("listen", "silent"));
+        System.out.println(checker.isAnagram("triangle", "integral"));
+        System.out.println(checker.isAnagram("apple", "pale"));
+        System.out.println(checker.isAnagram("Astronomer", "Moon starer"));
     }
 }
 ```
@@ -40,6 +40,6 @@ $ java -cp build ExerciseRunner
 true
 true
 false
-true
+false
 $
 ```
