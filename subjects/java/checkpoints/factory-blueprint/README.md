@@ -26,7 +26,7 @@ public class ConcreteProductB {
 
 // Factory class
 public class Factory {
-    public Product createProduct(String type) { // the type parametre accept two values `A` and `B`
+    public Product createProduct(String type) {
 
     }
 }
@@ -41,7 +41,20 @@ public class ExerciseRunner {
     public static void main(String[] args) {
         Factory factory = new Factory();
 
-        // Handle invalid product type
+        ConcreteProductA productA = factory.createProduct("A");
+        if (productA != null) {
+            productA.showDetails();
+        } else {
+            System.out.println("Invalid product type");
+        }
+
+        ConcreteProductA productB = factory.createProduct("B");
+        if (productB != null) {
+            productB.showDetails();
+        } else {
+            System.out.println("Invalid product type");
+        }
+
         Object invalidProduct = factory.createProduct("C");
         if (invalidProduct != null) {
             invalidProduct.showDetails();
@@ -57,6 +70,8 @@ public class ExerciseRunner {
 ```shell
 $ javac *.java -d build
 $ java -cp build ExerciseRunner
+This is ConcreteProductA
+This is ConcreteProductB
 Invalid product type
 $
 ```
