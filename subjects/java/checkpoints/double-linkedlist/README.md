@@ -6,7 +6,7 @@ Create a double linked list data structure that implements the following methods
 
 - `at(int index)`: to access an element by its index. If the index is out of bound return -1.
 - `add(int value)`: to add an element at the end of the list.
-- `remove(int index)`: to remove an element by its index.
+- `remove(int index)`: to remove an element by its index. If the index is out of bound nothing happen.
 - `size()`: to get the size of the list.
 
 Define these methods in an interface called `LinkedList`, and implement this interface in a class that you will create. Additionally, add private methods `next(Node node)` and `prev(Node node)` in your class that will be used in the other methods. These methods should print the messages "Go to next node\n" and "Go to previous node\n" each time they are called, respectively.
