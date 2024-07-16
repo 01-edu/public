@@ -10,7 +10,7 @@ Write a class `DateFormatter` that has three private attributes:
 
 Create getters for all the attributes and setters for `date` and `format`. The conversion should happen when you set the `format` or the `date`. If the `format` is not correct, the conversion shouldn't happen. Additionally, create methods to output the date in the specified `format`, and constructors with only the `date`, with `date` and `format`, and a default constructor.
 
-The default date is the current date, and the format as follows `DD/MM/YYYY`, The format is case insesitive
+The default date is the current date, and the format as follows `DD/MM/YYYY`. The format is case insensitive
 
 > Using standard library to convert UNIX time to date and to get date component is allowed.
 
