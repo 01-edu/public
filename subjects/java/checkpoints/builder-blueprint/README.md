@@ -5,11 +5,11 @@
 You are given an incomplete Builder design pattern implementation with some incorrect parts. Complete and fix the classes to demonstrate your understanding of how the Builder design pattern works.
 
 Regex component required:
+
 - Any Character: `.`
 - Digit: `\d`
 - Whitespace : `\s`
 - Word Character: `\w`
-
 
 ### Expected Classes
 
@@ -77,10 +77,10 @@ public class ExerciseRunner {
     public static void main(String[] args) {
         RegexDirector director = new RegexDirector();
         RegexBuilder builder = new ConcreteRegexBuilder();
-        
+
         director.setBuilder(builder);
         Regex regex = director.construct();
-        
+
         System.out.println(regex);
     }
 }
