@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a class `ConfigProtector` that provides a method to hide sensitive data in a configuration file using regex. The method should replace sensitive values with asterisks. The configuration file will be provided as a string, and the keys for the sensitive data will be given in a list.
+Create a class `ConfigProtector` that provides a method to hide sensitive data in a configuration file using `Regex`. The method should replace sensitive values with asterisks. The configuration file will be provided as a string, and the keys for the sensitive data will be given in a list.
 
 ### Expected Class
 
@@ -21,6 +21,7 @@ public class ConfigProtector {
 Here is a possible `ExerciseRunner.java` to test your class:
 
 ```java
+import java.util.List;
 import java.util.Arrays;
 
 public class ExerciseRunner {
