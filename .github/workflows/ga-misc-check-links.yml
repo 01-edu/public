@@ -23,7 +23,7 @@ jobs:
       - name: 🔍 Get all changed *.md file(s)
         id: changed-md
         run: |
-          echo "changed_files=$(git diff --name-only --merge-base origin/master | grep "\.md$" | xargs)" >> "$GITHUB_OUTPUT"
+          echo "changed_files=$(git diff --name-only --diff-filter=ACMRT --merge-base origin/master | grep "\.md$" | xargs)" >> "$GITHUB_OUTPUT"
 
       - name: 🔗 Run Check Links
         if: steps.changed-md.outputs.changed_files != ''
