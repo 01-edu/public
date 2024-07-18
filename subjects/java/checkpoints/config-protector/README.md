@@ -4,10 +4,19 @@
 
 Create a class `ConfigProtector` that provides a method to hide sensitive data in a configuration file using `Regex`. The method should replace sensitive values with asterisks. The configuration file will be provided as a string, and the keys for the sensitive data will be given in a list.
 
+The config file format will always be as follows:
+```
+username=admin
+npassword=secret
+...
+```
+
 ### Expected Class
 
 ```java
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class ConfigProtector {
     public String hideSensitiveData(String configFile, List<String> sensitiveKeys) {
@@ -29,7 +38,7 @@ public class ExerciseRunner {
         ConfigProtector protector = new ConfigProtector();
 
         // Test case 1
-        String configFile1 = "username=admin\npassword=secret\nhost=localhost\n";
+        String configFile1 = "username=admin\n=localhost\n";
         List<String> sensitiveKeys1 = Arrays.asList("password");
         System.out.println("Protected Config 1:\n" + protector.hideSensitiveData(configFile1, sensitiveKeys1));
 
