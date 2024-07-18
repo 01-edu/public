@@ -2,7 +2,7 @@
 
 ### Instructions
 
-You are given an incomplete singleton class. Complete the class to demonstrate your understanding of how the Singleton design pattern works. The Singleton pattern ensures that a class has only one instance and provides a global point of access to that instance.
+You are given an incomplete `Singleton` class. Complete the class to demonstrate your understanding of how the `Singleton` design pattern works. The `Singleton` pattern ensures that a class has only one instance and provides a global point of access to that instance.
 
 ### Expected Class
 
@@ -11,11 +11,13 @@ public class Singleton {
     public Singleton instance;
 
     private Singleton() {
-        // Initialization code
     }
 
     public Singleton get???() {
-        // Implementation to return the single instance
+    }
+
+    public String whoAreYou() {
+        return "Hello, I am a singleton!"
     }
 }
 ```
@@ -27,6 +29,7 @@ Here is a possible `ExerciseRunner.java` to test your class:
 ```java
 public class ExerciseRunner {
     public static void main(String[] args) {
+        System.out.println(Singleton.get???().whoAreYou());
     }
 }
 ```
