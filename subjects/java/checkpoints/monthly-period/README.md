@@ -36,16 +36,20 @@ public class ExerciseRunner {
         System.out.println("Period: " + MonthlyPeriod.calculatePeriod(startDate1, endDate1));
 
         String startDate2 = "2015-05-20";
-        String endDate2 = "2015-10-20";
+        String endDate2 = "2015-10-19";
         System.out.println("Period: " + MonthlyPeriod.calculatePeriod(startDate2, endDate2));
 
-        String startDate3 = "2018-12-25";
-        String endDate3 = "2021-12-25";
+        String startDate3 = "2015-05-20";
+        String endDate3 = "2015-10-19";
         System.out.println("Period: " + MonthlyPeriod.calculatePeriod(startDate3, endDate3));
 
-        String startDate3 = "2018-10-25";
-        String endDate3 = "2019-11-30";
-        System.out.println("Period: " + MonthlyPeriod.calculatePeriod(startDate3, endDate3));
+        String startDate4 = "2018-12-25";
+        String endDate4 = "2021-12-25";
+        System.out.println("Period: " + MonthlyPeriod.calculatePeriod(startDate4, endDate4));
+
+        String startDate5 = "2018-10-25";
+        String endDate5 = "2019-11-30";
+        System.out.println("Period: " + MonthlyPeriod.calculatePeriod(startDate5, endDate5));
     }
 }
 ```
@@ -56,6 +60,7 @@ public class ExerciseRunner {
 $ javac *.java -d build
 $ java -cp build ExerciseRunner
 Period: 3 years and 5 months
+Period: 4 months
 Period: 5 months
 Period: 3 years
 Period: 1 year and 1 month
