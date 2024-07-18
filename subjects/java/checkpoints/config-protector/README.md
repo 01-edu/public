@@ -5,6 +5,7 @@
 Create a class `ConfigProtector` that provides a method to hide sensitive data in a configuration file using `Regex`. The method should replace sensitive values with asterisks. The configuration file will be provided as a string, and the keys for the sensitive data will be given in a list.
 
 The config file format will always be as follows:
+
 ```
 username=admin
 npassword=secret
