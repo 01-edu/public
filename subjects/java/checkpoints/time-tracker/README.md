@@ -40,7 +40,7 @@ Here is a possible `ExerciseRunner.java` to test your function :
 ```java
 public class ExerciseRunner {
     public static void main(String[] args) {
-        
+
         ProjectTime shortProject = new ProjectTime("2023-05-14 09:00", "2023-05-14 09:30");
         System.out.println("Short Project Total Logged Time: " + shortProject.getHoursLogged());
 
