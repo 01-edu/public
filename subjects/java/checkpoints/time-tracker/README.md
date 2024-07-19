@@ -4,10 +4,10 @@
 
 Write a `ProjectTime` class to track the duration of a project using start and end times. You will be asked to add getter and setter methods for the `startTime` and `endTime` attributes. When you set one of them, you must update the `hoursLogged` attribute. The `hoursLogged` getter should output the hours in the following format:
 
-- Less than 120 minutes: `hoursLogged` minutes
-- Less than 120 hours: `hoursLogged` hours
-- Less than 120 days: `hoursLogged` days
-- More than 120 days: `hoursLogged` months
+- Less than 120 minutes: `hoursLogged` m
+- Less than 120 hours: `hoursLogged` h
+- Less than 120 days: `hoursLogged` d
+- More than 120 days: `hoursLogged` mo
 
 If there is any error, the number of `hoursLogged` should be handled accordingly.
 
@@ -40,21 +40,18 @@ Here is a possible `ExerciseRunner.java` to test your function :
 ```java
 public class ExerciseRunner {
     public static void main(String[] args) {
-        // Example of a very short project
+        
         ProjectTime shortProject = new ProjectTime("2023-05-14 09:00", "2023-05-14 09:30");
-        System.out.println("Short Project Total Logged Time: " + shortProject.getHoursLogged());  // Should be "30 m"
+        System.out.println("Short Project Total Logged Time: " + shortProject.getHoursLogged());
 
-        // Example of an overnight project
         ProjectTime overnightProject = new ProjectTime("2023-05-14 20:00", "2023-05-15 08:00");
-        System.out.println("Overnight Project Total Logged Time: " + overnightProject.getHoursLogged());  // Should be "12 h"
+        System.out.println("Overnight Project Total Logged Time: " + overnightProject.getHoursLogged());
 
-        // Example of a full day project
         ProjectTime fullDayProject = new ProjectTime("2023-05-14 00:00", "2023-05-15 00:00");
-        System.out.println("Full Day Project Total Logged Time: " + fullDayProject.getHoursLogged());  // Should be "24 h"
+        System.out.println("Full Day Project Total Logged Time: " + fullDayProject.getHoursLogged());
 
-        // Example with incorrect format
         ProjectTime errorProject = new ProjectTime("2023-05-14", "2023-05-15 08:00");
-        System.out.println("Error Project Total Logged Time: " + errorProject.getHoursLogged());  // Should handle error or indicate incorrect format
+        System.out.println("Error Project Total Logged Time: " + errorProject.getHoursLogged());
     }
 }
 ```
