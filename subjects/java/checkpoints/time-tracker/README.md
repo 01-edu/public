@@ -16,6 +16,10 @@ If there is any error, the number of `hoursLogged` should be handled accordingly
 ### Expected Functions
 
 ```java
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class ProjectTime {
     private String startTime;
     private String endTime;
