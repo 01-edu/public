@@ -16,7 +16,7 @@ We provide you with some content to get started smoothly, check it out!
 
 ### Instructions
 
-Now that you have created and properly identified the different sections of your being, it's time to make it look more lifelike! To achieve that, you're going to style it with [CSS][0]. Create a CSS file, [link it][1] to your `select-and-style.html`, and:
+Now that you have created and properly identified the different sections of your being, it's time to make it look more lifelike! To achieve that, you're going to style it with [CSS][0]. Create a CSS file, [link it][1] to your `select-then-style.html`, and:
 
 - Target all the elements with the [universal selector][2] and style them with:
 
