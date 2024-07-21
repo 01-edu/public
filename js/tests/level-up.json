@@ -8,16 +8,16 @@
     "code": "equal(shaker.length, 3)"
   },
   {
-    "description": "shaker can make a cocktail.",
-    "code": "equal(shaker(1, 'strawberry', true), '1 strawberry cocktail')"
+    "description": "shaker can make a skinny milkshake.",
+    "code": "equal(shaker(1, 'strawberry', true), '1 skinny strawberry milkshake')"
   },
   {
     "description": "shaker can make a milkshake.",
     "code": "equal(shaker(1, 'strawberry', false), '1 strawberry milkshake')"
   },
   {
-    "description": "shaker can make multiple cocktails.",
-    "code": "equal(shaker(7, 'banana', true), '7 banana cocktails')"
+    "description": "shaker can make multiple skinny milkshakes.",
+    "code": "equal(shaker(7, 'banana', true), '7 skinny banana milkshakes')"
   },
   {
     "description": "shaker can make multiple milkshakes.",
@@ -25,6 +25,6 @@
   },
   {
     "description": "shaker is shakin it right.",
-    "code": "equal(shaker(1, 'vanilla', true), '1 vanilla cocktail')\nequal(shaker(1, 'mango', true), '1 mango cocktail')\nequal(shaker(2, 'banana', true), '2 banana cocktails')\nequal(shaker(2, 'chocolate', false), '2 chocolate milkshakes')\nequal(shaker(2, 'vanilla', false), '2 vanilla milkshakes')\nequal(shaker(2, 'strawberry', false), '2 strawberry milkshakes')"
+    "code": "equal(shaker(1, 'vanilla', true), '1 skinny vanilla milkshake')\nequal(shaker(1, 'mango', true), '1 skinny mango milkshake')\nequal(shaker(2, 'banana', true), '2 skinny banana milkshakes')\nequal(shaker(2, 'chocolate', false), '2 chocolate milkshakes')\nequal(shaker(2, 'vanilla', false), '2 vanilla milkshakes')\nequal(shaker(2, 'strawberry', false), '2 strawberry milkshakes')"
   }
 ]
