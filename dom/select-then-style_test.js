@@ -6,7 +6,7 @@ tests.push(async ({ eq }) => {
 
   await eq.$('head link', {
     rel: 'stylesheet',
-    href: 'http://localhost:9898/select-and-style/select-and-style.css',
+    href: 'http://localhost:9898/select-then-style/select-then-style.css',
   })
 })
 
