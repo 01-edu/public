@@ -14,8 +14,6 @@ This is more of a puzzle to use your brain to follow hints and make things work,
 
 > Follow the instructions, ask your peers if you are stuck and stay motivated because you are close to the Quest 00 goal!
 > Follow every hint you have in the subject!
-
-
 ### Instructions
 
 - for the JavaScript (JS) files, when you have to link one, it's named like so: `name-of-the-exercise.js`
@@ -34,17 +32,15 @@ First, define this new class in `your CSS file`:
 
 #### Task 1
 
-Second, [`Link a JS script`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) to your HTML file. 
+Second, [`Link a JS script`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) to your HTML file.
 
 #### Task 2
 
-Then in your Javascript file, you're going to close the left eye of your entity. To do so, you have to target the `eye-left` HTML element by its `id` using the [`getElementById`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) method. 
+Then in your Javascript file, you're going to close the left eye of your entity. To do so, you have to target the `eye-left` HTML element by its `id` using the [`getElementById`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) method.
 
 #### Task 3
 
 Then, [set the `style`](https://developer.mozilla.org/en-US/docs/Web/API/ElementCSSInlineStyle/style#setting_styles) of your `eye-left` to change its background color to "black". We also need to modify its shape; for that, we are going to add a new class to it.
-
-
 ### Code examples
 
 #### Example 1
@@ -61,8 +57,7 @@ In HTML file:
 In the JS file:
 
 ```js
-const nose = document.getElementById('nose');
-
+const nose = document.getElementById("nose");
 ```
 
 #### Example 2
@@ -77,8 +72,9 @@ To change the color of the nose to red:
   border-radius: 50%;
 }
 ```
+
 ```js
-nose.classList.add('nose-red');
+nose.classList.add("nose-red");
 ```
 
 #### Example 3
@@ -93,10 +89,10 @@ nose.style.backgroundColor = 'yellow'
 
 > By the way, do you like your new background color chosen earlier? Me too.  
 > To personalize your robot even more, don't hesitate to change the inclination of its arms in a direction that reflects the personality you have chosen!  
-> I think [adding a rotation](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate) to the `arm class` is a good solution.  
+> I think [adding a rotation](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate) to the `arm class` is a good solution.
 
 This is what you should see in the browser:  
-[![personalize-bring-it-to-life-dom-example.png](https://i.postimg.cc/Df5pcWN1/personalize-bring-it-to-life-dom-example.png)](https://postimg.cc/pyhBWdRd)  
+[![personalize-bring-it-to-life-dom-example.png](https://i.postimg.cc/Df5pcWN1/personalize-bring-it-to-life-dom-example.png)](https://postimg.cc/pyhBWdRd)
 
 ### Resources
 
