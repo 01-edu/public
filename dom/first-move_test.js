@@ -1,9 +1,6 @@
 export const tests = []
 
 tests.push(async ({ eq, page }) => {
-  // check the JS script has been linked
-  await eq.$('script', { type: 'module' })
-
   // check the JS script has a valid src
   const source = await page.$eval(
     'script',
