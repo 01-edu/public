@@ -14,6 +14,7 @@ This is more of a puzzle to use your brain to follow hints and make things work,
 
 > Follow the instructions, ask your peers if you are stuck and stay motivated because you are close to the Quest 00 goal!
 > Follow every hint you have in the subject!
+
 ### Instructions
 
 - for the JavaScript (JS) files, when you have to link one, it's named like so: `name-of-the-exercise.js`
@@ -41,6 +42,7 @@ Then in your Javascript file, you're going to close the left eye of your entity.
 #### Task 3
 
 Then, [set the `style`](https://developer.mozilla.org/en-US/docs/Web/API/ElementCSSInlineStyle/style#setting_styles) of your `eye-left` to change its background color to "black". We also need to modify its shape; for that, we are going to add a new class to it.
+
 ### Code examples
 
 #### Example 1
