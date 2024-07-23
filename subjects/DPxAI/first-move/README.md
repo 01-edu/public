@@ -12,7 +12,7 @@ In these instructions, you will execute the steps to change your robot's eyes fr
 
 This is more of a puzzle to use your brain to follow hints and make things work, even if it seems complex (it is not!). Isn't that your brain's superpower?
 
-> Follow the instructions, ask your peers if you are stuck and stay motivated because you are close to the Quest 00 goal!
+> Follow the instructions, ask your peers if you are stuck and stay motivated because you are close to the Shape Crafting goal!
 > Follow every hint you have in the subject!
 
 ### Instructions
