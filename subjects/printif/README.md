@@ -39,7 +39,7 @@ And its output:
 ```console
 $ go run . | cat -e
 G$
-Invalid Output$
+Invalid Input$
 G$
-Invalid Output$
+Invalid Input$
 ```
