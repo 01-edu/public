@@ -7,6 +7,7 @@ Implement the struct `Color` with the associated function `swap`. This function 
 ### Expected functions
 
 ```rust
+#[derive(Debug, Clone, Copy, PartialEq)]
 pub struct Color {
     pub r: u8,
     pub g: u8,
