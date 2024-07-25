@@ -14,7 +14,10 @@ You will implement some **CRUD** functionality for a game session. You will need
 
 - `delete`: which takes ownership of the boxed game session and returns a string: `"game deleted: id -> 0"`, where `0` is the id of the `GameSession`.
 
-> If `nb_games` is 5, then it is "best out of 5", and no more than 5 games can be played. If some player has a score of 3, then the game session is also finished. This is because there is an insufficient number of remaining games for the trailing player to catch up.
+> Examples for `nb_games`:
+>
+> `nb_games` = **5** --> the maximum of games will be **5** and if some player has a score of 3, the game is finished (not enough games for the other player to win).\
+> `nb_games` = **11** --> the maximum of games will be **11** and if some player has a score of 6, the game is finished (not enough games for the other player to win).
 
 ### Expected Functions
 
