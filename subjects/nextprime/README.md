@@ -6,6 +6,9 @@ Create a **function** which returns the first prime number which is greater than
 
 The function must be optimized, so as to avoid time-outs.
 
+> [!TIP]
+> As a reminder, a `prime number` is a whole number greater than 1 that cannot be exactly divided by any whole number other than itself and 1.
+
 > We consider that only positive numbers can be prime numbers.
 
 ### Expected function
