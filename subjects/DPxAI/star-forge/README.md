@@ -22,10 +22,7 @@ You must understand these few easy concepts first:
 - [Phind](https://www.phind.com/)
 - [Gemini](https://gemini.google.com/)
 
-
-
-
-### Example:
+For example:
 
 ### Metaphor Explanation Technique
 
