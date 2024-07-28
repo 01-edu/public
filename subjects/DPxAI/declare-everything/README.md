@@ -11,7 +11,8 @@ In this second quest of our adventure, you are going to power up with JavaScript
 **Exploratory Questions Technique:**
 
 This type of prompt encourages the AI to provide various explanations and examples, helping you explore different aspects of a concept.
->Find the examples across the subject ;)
+
+> Find the examples across the subject ;)
 
 ### Directions
 
@@ -30,7 +31,7 @@ _Now that's a lot of parts!_
 An `identifier` is used to define what it is, using this syntax:
 
 ```js
-let robotParts = 20
+let robotParts = 20;
 ```
 
 > 😱 Woa, what's all this?!
@@ -67,30 +68,30 @@ let robot parts = 20 // invalid because of spaces
 let robotParts = 20 // Just right
 ```
 
-#### **Prompt example**: 
->"Explain how to use `let` to declare variables in JavaScript."
+#### **Prompt example**:
+
+> "Explain how to use `let` to declare variables in JavaScript."
 
 ### Operator: `=`
 
 The special character `=` is an **operator**, like in math, they are used to define specific operations. In this case, `=` defines the `assignment` operation. It means assigning a value to our variable. This is what **links** the chosen `identifier` with our `value`.
 
-#### ```Prompt example```:
+#### `Prompt example`:
+
 "Why do we use camelCase for variable names in JavaScript?"
 
 ### Value
 
-Lastly, a value, like the one you already know: `string`, `number`, and `boolean`.
-
-
-Full example with descriptive comments:
+Lastly, a value, like the one you already know: `string`, `number`, and `boolean`.Full example with descriptive comments:
 
 ```js
 // ↙ keyword        ↙ assignation operator
-let comicBookTitle = 'Tintin in Tibet'
+let comicBookTitle = "Tintin in Tibet";
 //       ↖ identifier       ↖ the value (here a string)
 ```
 
 #### **Prompt example**:
+
 "As a beginner, what types of values can I assign to a variable in JavaScript?"
 
 ### Instructions
@@ -101,10 +102,9 @@ Declare two variables:
 - Use the identifier `seventySeven` with the value being a string of the number 77
 
 ```js
-let seven = "7"
-let seventySeven = "77"
+let seven = "7";
+let seventySeven = "77";
 ```
 
 ---
->"When we first begin fighting for our dreams, we have no experience and make many mistakes. The secret of life, though, is to fall seven times and get up eight times." ― Paulo Coelho
-
+> "When we first begin fighting for our dreams, we have no experience and make many mistakes. The secret of life, though, is to fall seven times and get up eight times." ― Paulo Coelho
