@@ -23,6 +23,8 @@ You must understand these few easy concepts first:
 - [Gemini](https://gemini.google.com/)
 
 
+
+
 ### Example:
 
 ### Metaphor Explanation Technique
@@ -35,7 +37,7 @@ This type of prompt encourages the AI to explain complex concepts using simple m
 
 **How to Use It with ChatGPT:**
 
-1. **Open your favorite Generative AI (ChatGPT as an example)**: Go to [ChatGPT](https://chatgpt.com/) and start a new chat session.
+1. **Open your favorite Generative AI (ChatGPT as acfdn example)**: Go to [ChatGPT](https://chatgpt.com/) and start a new chat session.
 2. **Enter the Prompt**: Type or paste your prompt into the chat. For example, "Explain what a variable is in JavaScript using a metaphor."
 3. **Review the Response**: ChatGPT will provide a metaphorical explanation. For instance:
 
