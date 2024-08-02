@@ -1,0 +1,14 @@
+[
+  {
+    "description": "As a number, seven value is 7",
+    "code": "equal(Number(seven), 7)"
+  },
+  {
+    "description": "As a number, seventySeven value is 77",
+    "code": "equal(Number(seventySeven), 77)"
+  },
+  {
+    "description": "Somehow, the type of seven and seventySeven value must be strings",
+    "code": "equal(typeof seven, 'string')\nequal(typeof seventySeven, 'string')"
+  }
+]
