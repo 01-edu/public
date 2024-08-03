@@ -8,7 +8,7 @@
 Open-source intelligence (OSINT) is a key component of cybersecurity, providing valuable insights into potential vulnerabilities and security risks. This project involves creating a tool that performs comprehensive passive reconnaissance using publicly available data.
 
 ### Objective:
-The goal is to build a multi-functional tool capable of retrieving detailed information based on user inputs such as `Full names`, `IP addresses`, `usernames`, and `domains`. This project will enhance your skills in data analysis, ethical considerations, and the use of various cybersecurity tools and APIs.
+The goal is to build a multi-functional using a programming language of your choice, The tool is capable of retrieving detailed information based on user inputs such as `Full names`, `IP addresses`, `usernames`, and `domains`. This project will enhance your skills in data analysis, ethical considerations, and the use of various cybersecurity tools and APIs.
 
 By completing this project, You will:
 - Develop an understanding of OSINT techniques and their applications.
