@@ -8,7 +8,7 @@
 Open-source intelligence (OSINT) is a key component of cybersecurity, providing valuable insights into potential vulnerabilities and security risks. This project involves creating a tool that performs comprehensive passive reconnaissance using publicly available data.
 
 ### Objective:
-The goal is to build a multi-functions tool capable of retrieving detailed information based on user inputs such as `Full names`, `IP addresses`, `usernames`, and `domains`. This project will enhance your skills in data analysis, ethical considerations, and the use of various cybersecurity tools and APIs.
+The goal is to build a multi-functional tool capable of retrieving detailed information based on user inputs such as `Full names`, `IP addresses`, `usernames`, and `domains`. This project will enhance your skills in data analysis, ethical considerations, and the use of various cybersecurity tools and APIs.
 
 By completing this project, You will:
 - Develop an understanding of OSINT techniques and their applications.
@@ -18,19 +18,18 @@ By completing this project, You will:
 
 ### Resources
 Some useful resources:
-[Open-source intelligence](https://en.wikipedia.org/wiki/Open-source_intelligence)
-[Doxing](https://en.wikipedia.org/wiki/Doxing)
-[Kali Tools - Recon](https://en.kali.tools/all/?category=recon)
-[OSINT Tools on GitHub](https://github.com/topics/osint-tools)
+- [Open-source intelligence](https://en.wikipedia.org/wiki/Open-source_intelligence)
+- [Doxing](https://en.wikipedia.org/wiki/Doxing)
+- [Kali Tools - Recon](https://en.kali.tools/all/?category=recon)
+- [OSINT Tools on GitHub](https://github.com/topics/osint-tools)
 
-Before asking help, ask yourself if you have really thought about all the possibilities.
+Before asking for help, ask yourself if you have really thought about all the possibilities.
 
 ### Role play
 To enhance the learning experience and assess your knowledge, a role play question session will be included as part of this project.
 This section will involve answering a series of questions in a simulated real-world scenario where you assume the role of a Cyber Security Expert explaining how to protect information from OSINT techniques to a team or stakeholder.
 
 The goal of the role play question session is to:
-
 - Assess your understanding of OSINT risks and mitigation strategies.
 - Test your ability to communicate effectively and explain security measures related to this project.
 - Challenge you to think critically about the importance of information security and consider alternative approaches.
