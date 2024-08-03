@@ -145,6 +145,7 @@ Challenge yourself!
 
 ### Documentation
 Create a `README.md` file that provides comprehensive documentation for your tool (prerequisites, setup, configuration, usage, ...). This file must be submitted as part of the solution for the project.
+Add clear guidelines and warnings about the ethical and legal use of the tool to your documentation.
 
 ### Ethical and Legal Considerations
 - Get Permission: Always obtain explicit permission before gathering information.
