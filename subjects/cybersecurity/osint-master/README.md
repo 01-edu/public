@@ -1,4 +1,4 @@
-## OSINTMaster
+## OSINT-Master
 
 <center>
 <img src="./resources/osint-meme.png?raw=true" style = "width: 673px !important; height: 439px !important;"/>

@@ -72,5 +72,5 @@ $> osintmaster -d "Domain" -o filename
 ###### Were the students able to implement a functional and reliable tool that meets the project requirements?
 
 #### Bonus
-###### + Did the student implement additional features, such as a graphical user interface (GUI) or PDF generation for the OSINT results?
+###### + Did the student implement additional valuable features?
 ###### + Is this project an outstanding project that exceeds the basic requirements?
