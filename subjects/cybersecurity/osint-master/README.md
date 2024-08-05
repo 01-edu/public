@@ -5,19 +5,24 @@
 </center>
 
 ### Introduction:
+
 Open-source intelligence (OSINT) is a key component of cybersecurity, providing valuable insights into potential vulnerabilities and security risks. This project involves creating a tool that performs comprehensive passive reconnaissance using publicly available data.
 
 ### Objective:
-The goal is to build a multi-functional using a programming language of your choice, The tool is capable of retrieving detailed information based on user inputs such as `Full names`, `IP addresses`, `usernames`, and `domains`. This project will enhance your skills in data analysis, ethical considerations, and the use of various cybersecurity tools and APIs.
+
+The goal is to build a multi-functional tool using a programming language of your choice, The tool is capable of retrieving detailed information based on user inputs such as `Full names`, `IP addresses`, `usernames`, and `domains`. This project will enhance your skills in data analysis, ethical considerations, and the use of various cybersecurity tools and APIs.
 
 By completing this project, You will:
+
 - Develop an understanding of OSINT techniques and their applications.
 - Gain practical experience in programming, API integration, and data handling.
 - Learn to identify and mitigate security risks, including subdomain takeovers.
 - Understand the ethical and legal implications of cybersecurity practices.
 
 ### Resources
+
 Some useful resources:
+
 - [Open-source intelligence](https://en.wikipedia.org/wiki/Open-source_intelligence)
 - [Doxing](https://en.wikipedia.org/wiki/Doxing)
 - [Kali Tools - Recon](https://en.kali.tools/all/?category=recon)
@@ -26,10 +31,12 @@ Some useful resources:
 Before asking for help, ask yourself if you have really thought about all the possibilities.
 
 ### Role play
+
 To enhance the learning experience and assess your knowledge, a role play question session will be included as part of this project.
 This section will involve answering a series of questions in a simulated real-world scenario where you assume the role of a Cyber Security Expert explaining how to protect information from OSINT techniques to a team or stakeholder.
 
 The goal of the role play question session is to:
+
 - Assess your understanding of OSINT risks and mitigation strategies.
 - Test your ability to communicate effectively and explain security measures related to this project.
 - Challenge you to think critically about the importance of information security and consider alternative approaches.
@@ -38,34 +45,36 @@ The goal of the role play question session is to:
 Prepare for a role play question session in the audit.
 
 ### Project Requirements
+
 #### Input Handling:
+
 The tool should accept the following inputs: `Full Name`, `IP Address`, `Username`, and `Domain`.
 
 #### Information Retrieval:
+
 - Full Name:
-Parse the input to extract "First Name" and "Last Name".
-Look up associated information such as phone numbers, addresses, and social media profiles using directory APIs or web scraping.
+  Parse the input to extract "First Name" and "Last Name".
+  Look up associated information such as phone numbers, addresses, and social media profiles using directory APIs or web scraping.
 
 - IP Address:
-Retrieve geolocation data, ISP details, and check for any historical data associated with the IP (e.g., from abuse databases).
+  Retrieve geolocation data, ISP details, and check for any historical data associated with the IP (e.g., from abuse databases).
 
 - Username:
-Check for the presence of the username on at least five known social networks and public repositories.
-Retrieve public profile information, such as profile bio, activity status, and follower count.
+  Check for the presence of the username on at least five known social networks and public repositories.
+  Retrieve public profile information, such as profile bio, activity status, and follower count.
 
 - Domain and Subdomain Enumeration:
-Enumerate subdomains and gather information including IP addresses, SSL certificate details, and potential vulnerabilities.
-Identify potential subdomain takeover risks by analyzing DNS records and associated resources.
-
-#### Subdomain Takeover Detection:
-Detect and report any subdomains pointing to potentially unclaimed or deprecated resources, indicating a risk of takeover.
+  Enumerate subdomains and gather information including IP addresses, SSL certificate details, and potential vulnerabilities.
+  Identify potential subdomain takeover risks by analyzing DNS records and associated resources.
 
 #### Output Management:
+
 Store the results in a well-organized file format.
 
 ### Usage Examples
 
 #### Command Line Interface:
+
 ```sh
 $> osintmaster --help
 
@@ -80,6 +89,7 @@ OPTIONS:
 ```
 
 #### Example Outputs:
+
 ```sh
 $> osintmaster -n "FNAME LNAME" -o result1.txt
 First name: FNAME
@@ -92,6 +102,7 @@ Data Saved in result1.txt
 ```
 
 #### IP Address:
+
 ```sh
 $> osintmaster -i 8.8.8.8 -o result2.txt
 ISP: Google LLC
@@ -103,6 +114,7 @@ Data Saved in result2.txt
 ```
 
 #### Username:
+
 ```sh
 $> osintmaster -u "@username" -o result3.txt
 Facebook: Found
@@ -115,6 +127,7 @@ Data Saved in result3.txt
 ```
 
 #### Domain and Subdomain Enumeration:
+
 ```sh
 $> osintmaster -d "example.com" -o result4.txt
 Main Domain: example.com
@@ -136,6 +149,7 @@ Data saved in result4.txt
 ```
 
 ### Bonus
+
 If you complete the mandatory part successfully, and you still have free time, you can implement anything that you feel deserves to be a bonus, for example:
 
 - User Interface: Develop a graphical user interface (GUI) for better user accessibility.
@@ -144,10 +158,12 @@ If you complete the mandatory part successfully, and you still have free time, y
 Challenge yourself!
 
 ### Documentation
+
 Create a `README.md` file that provides comprehensive documentation for your tool (prerequisites, setup, configuration, usage, ...). This file must be submitted as part of the solution for the project.
 Add clear guidelines and warnings about the ethical and legal use of the tool to your documentation.
 
 ### Ethical and Legal Considerations
+
 - Get Permission: Always obtain explicit permission before gathering information.
 - Respect Privacy: Collect only necessary data and store it securely.
 - Follow Laws: Adhere to relevant laws such as GDPR and CFAA.
@@ -157,6 +173,7 @@ Add clear guidelines and warnings about the ethical and legal use of the tool to
 > ⚠️ Disclaimer: This project is for educational purposes only. Ensure all activities comply with legal and ethical standards. The institution is not responsible for misuse of the techniques and tools demonstrated.
 
 ### Submission and audit
+
 Upon completing this project, you should submit the following:
 
 - Your documentation in the `README.md` file.
