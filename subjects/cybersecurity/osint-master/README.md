@@ -67,7 +67,7 @@ The tool should accept the following inputs: `Full Name`, `IP Address`, `Usernam
   Enumerate subdomains and gather information including IP addresses, SSL certificate details, and potential vulnerabilities.
   Identify potential subdomain takeover risks by analyzing DNS records and associated resources.
 
-> You are responsible for choosing the way you want to find the data and you are responsible for using the API's. be aware of the API's `Terms of Use` and `Cost` before use!
+> You are responsible for choosing the way you want to find the data and for using the API's. be aware of the API's `Terms of Use` and `Cost` before use!
 
 #### Output Management:
 
