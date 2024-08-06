@@ -46,7 +46,7 @@ console.log("I keep trying , I can't give up! ");
 // Output: I keep trying, I can't give up!
 ```
 
-#### `Prompt Example`:
+#### **`Prompt Example`**:
 
 "As a beginner, how do I include special characters in a string in JavaScript? Give me simple examples too."
 
@@ -66,7 +66,7 @@ But it is still possible to use the = (assignment operator) to change its value 
 
 > Also you may find online old code using var. We are trying to get rid of var's since 2015. It's ancient syntax and it was pretty problematic. Never use it! If you see code using it, try to find a more recent example. That one is outdated.
 
-#### `Prompt Example`:
+#### **`Prompt Example`**:
 
 - "As a beginner, what is the difference between let and const in JavaScript?"
 - "As a beginner, how do I reassign a value to an already declared variable in JavaScript?"
