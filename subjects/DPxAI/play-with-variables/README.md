@@ -1,5 +1,7 @@
 ## Play with variables
 
+>Mindful AI mode
+
 ### Context
 
 If things get a little hectic at times, take the time to get closer to your peers so that you can think, share and move forward together.
@@ -82,7 +84,7 @@ But it is still possible to use the = (assignment operator) to change its value 
 
 - The variable `power` has been declared and will be used during the tests.
 
-- You must try to re-assign the love variable to the string value `levelMax` !! but without re-declaring it !
+- You must try to re-assign the power variable to the string value `levelMax` !! but without re-declaring it !
 
 ---
 
