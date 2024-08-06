@@ -1,5 +1,7 @@
 ## Declare Everything
 
+>Mindful AI mode
+
 ### Context
 
 In this second quest of our adventure, you are going to power up with JavaScript. And in this exercise you'll use variables to control and manage robots in various scenarios. Let's dive in and get started with the basics of variables in JavaScript!
@@ -76,7 +78,7 @@ let robotParts = 20 // Just right
 
 The special character `=` is an **operator**, like in math, they are used to define specific operations. In this case, `=` defines the `assignment` operation. It means assigning a value to our variable. This is what **links** the chosen `identifier` with our `value`.
 
-#### `Prompt example`:
+#### **`Prompt example`**:
 
 "Why do we use camelCase for variable names in JavaScript?"
 
@@ -90,7 +92,7 @@ let comicBookTitle = "Tintin in Tibet";
 //       ↖ identifier       ↖ the value (here a string)
 ```
 
-#### **Prompt example**:
+#### **`Prompt example`**:
 
 "As a beginner, what types of values can I assign to a variable in JavaScript?"
 
