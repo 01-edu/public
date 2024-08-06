@@ -1,6 +1,6 @@
 ## The Smooth Operator
 
->Mindful AI mode
+> Mindful AI mode
 
 Unlike the song, smooth operators in JavaScript help you perform various calculations and manipulations with ease.
 
@@ -86,9 +86,9 @@ Your code must use the given variable `smooth` as our initial value
 > You'll then see the result in the code editor console output, as this variable is not available in `Run` button mode, but only in `Submit` button mode.
 
 ```js
-console.log("smooth = ", smooth)
-let lessSmooth = smooth - 5
-console.log("lessSmooth = ", lessSmooth)
+console.log("smooth = ", smooth);
+let lessSmooth = smooth - 5;
+console.log("lessSmooth = ", lessSmooth);
 ```
 
 You will declare a few variables:
