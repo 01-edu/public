@@ -1,6 +1,6 @@
 ## Play with variables
 
->Mindful AI mode
+> Mindful AI mode
 
 ### Context
 
