@@ -54,7 +54,7 @@ let halfMyAge = 33 / 2;
 let twiceMyAge = 33 * 2;
 ```
 
-#### `Prompt example`:
+#### **`Prompt example`**:
 
 "Can you provide step-by-step examples of basic math operations in JavaScript?"
 
@@ -71,7 +71,7 @@ console.log(`5 + 10 = ${5 + 10} = 15`); // -> 5 + 10 = 15 = 15
 **Note that it only works using:** the `` ` `` backtick, not the `"` or `'`
 quotes.
 
-#### `Prompt example`:
+#### **`Prompt example`**:
 
 "Can you provide a step-by-step guide on how to use template literals to create a string that includes variable values in JavaScript?"
 
