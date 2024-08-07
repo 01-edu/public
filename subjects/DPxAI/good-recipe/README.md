@@ -4,7 +4,7 @@
 
 ### Context
 
-Welcome to this quest! I bet you are hungry after getting more and more Javascript power.
+Welcome to this quest! I bet you are hungry after this long way gaining power!
 
 Are you ready to cook? But instead of cooking food, we'll be applying recipes to data through methods! In JavaScript, methods are special functions called from another value, allowing you to perform various operations.
 
