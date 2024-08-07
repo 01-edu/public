@@ -87,17 +87,17 @@ let lines = text.split("\n"); // ['Add flour', 'Mix well', 'Bake at 350°F']
 
 You need to find the oldest robot in the kitchen to determine the most experienced helper.
 
-We provide you with three robot objects assigned to their respective variables `martin`, `kevin`, and `stephanie`. Use the `Math.max` function on their age properties to find the oldest robot.
+We provide you with three robot objects assigned to their respective variables `martin`, `kevin`, and `stephanie`. Use the `Math.max` function on their `age` properties to find the oldest robot.
 
-Declare an `oldestAge` variable that uses `Math.max` on the age properties of `martin`, `kevin`, and `stephanie`.
+Declare an `oldestAge` variable that uses `Math.max` on the `age` properties of `martin`, `kevin`, and `stephanie`.
 
 #### Task 2:
 
 You need to slice some virtual vegetables. Using the `.slice` method and the provided alphabet variable, which is a string of all the characters in the alphabet:
 
-- Declare a `cutFirst` variable that removes the first 10 characters of alphabet, simulating the removal of the first few slices.
-- Declare a `cutLast` variable that removes the last 3 characters of alphabet, simulating the trimming of the last few slices.
-- Declare a `cutFirstLast` variable that removes the first 5 characters and the last 6 characters of alphabet, simulating a precise cut in the middle.
+- Declare a `cutFirst` variable that removes the first `10` characters of alphabet, simulating the removal of the first few slices.
+- Declare a `cutLast` variable that removes the last `3` characters of alphabet, simulating the trimming of the last few slices.
+- Declare a `cutFirstLast` variable that removes the first `5` characters and the last 6 characters of alphabet, simulating a precise cut in the middle.
 
 #### Task 3:
 
