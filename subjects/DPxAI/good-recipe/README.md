@@ -79,13 +79,13 @@ let lines = text.split("\n"); // ['Add flour', 'Mix well', 'Bake at 350°F']
 
 - "Show me how to use the `.toUpperCase` method to convert the string 'hello' to uppercase."
 
-- "Show me how to use ``Math.max`` to find the biggest number in an array."
+- "Show me how to use `Math.max` to find the biggest number in an array."
 
 ### Instructions
 
 #### Task 1:
 
-You need to find the oldest robot in the kitchen to determine the most experienced helper. 
+You need to find the oldest robot in the kitchen to determine the most experienced helper.
 
 We provide you with three robot objects assigned to their respective variables `martin`, `kevin`, and `stephanie`. Use the `Math.max` function on their age properties to find the oldest robot.
 
@@ -101,7 +101,7 @@ You need to slice some virtual vegetables. Using the `.slice` method and the pro
 
 #### Task 3:
 
-You needs to prepare ingredients for a recipe, and part of the preparation involves transforming text. 
+You needs to prepare ingredients for a recipe, and part of the preparation involves transforming text.
 
 For this task, you will use the `toUpperCase` and `toLowerCase` methods on the provided variable message.
 
