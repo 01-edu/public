@@ -1,0 +1,26 @@
+[
+  {
+    "description": "values of the variable are a result of the operations on the variable smooth ( 10 )",
+    "code": "let name = 'blank'\nlet age = 0\nlet smooth = 10\n\n// Your code\n\nequal(lessSmooth, 9)\nequal(semiSmooth, 5)\nequal(plus11, 21)"
+  },
+  {
+    "description": "values of the variable are a result of the operations on the variable smooth ( 27 )",
+    "code": "let name = 'blank'\nlet age = 0\nlet smooth = 27\n\n// Your code\nequal(lessSmooth, 26)\nequal(semiSmooth, 13.5)\nequal(plus11, 38)"
+  },
+  {
+    "description": "ultraSmooth should be the square of the value of smooth ( 10 )",
+    "code": "let name = 'blank'\nlet age = 0\nlet smooth = 10\n\n// Your code\n\nequal(ultraSmooth, 100)"
+  },
+  {
+    "description": "ultraSmooth should be the square of the value of smooth ( 27 )",
+    "code": "let name = 'blank'\nlet age = 0\nlet smooth = 27\n\n// Your code\n\nequal(ultraSmooth, 729)"
+  },
+  {
+    "description": "presentation value includes age and name .",
+    "code": "let name = 'Patrick'\nlet age = 48\nlet smooth = 0\n\n// Your code\nequal(presentation, `Hello, my name is Patrick and I'm 48 years old`)"
+  },
+  {
+    "description": "presentation value still includes age and name .",
+    "code": "let smooth = 0\nlet name = 'Jeremy'\nlet age = 27\n\n// Your code\nequal(presentation, `Hello, my name is Jeremy and I'm 27 years old`)"
+  }
+]
