@@ -70,7 +70,7 @@ let robot parts = 20 // invalid because of spaces
 let robotParts = 20 // Just right
 ```
 
-#### **Prompt example**:
+#### **`Prompt example`**:
 
 > "Explain how to use `let` to declare variables in JavaScript."
 
