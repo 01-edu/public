@@ -30,7 +30,7 @@ delimiters:
 
 ```js
 console.log('I keep trying , I can't give up! ')
-// too bad a single quote, ruined the quote, get it ? XD
+// too bad a single quote, ruined the quote, get it ?
 ```
 
 The `\` _(backslash)_ is used for that:
@@ -38,7 +38,7 @@ The `\` _(backslash)_ is used for that:
 Every time there is an _extra special_ character into your string, putting a `\`
 in front of it will **escape** it and doing so will let JS understand you meant
 the **literal** following character and not the delimiter, _or whatever else
-the character normaly means for a string_
+the character normally means for a string_
 
 ```js
 console.log("I keep trying , I can't give up! ");
@@ -52,7 +52,7 @@ console.log("I keep trying , I can't give up! ");
 
 ### Assign re-assign
 
-Remember the let keyword used to declare new variables.
+Remember the ``let`` keyword used to declare new variables.
 
 > Note that we can't have multiple variables with the same identifier otherwise JS wouldn't know which one is which.
 
@@ -60,15 +60,15 @@ Redeclaring a variable will crash !
 
 But it is still possible to use the = (assignment operator) to change its value !
 
-> Note that sometimes you may find variable declared with const. This means that the assignation is constant and can never be re-assigned !
+> Note that sometimes you may find variable declared with   ``const``. This means that the assignation is constant and can never be re-assigned !
 
 > It is used to protect your code against errors, but you can always use `let` in its place..
 
-> Also you may find online old code using var. We are trying to get rid of var's since 2015. It's ancient syntax and it was pretty problematic. Never use it! If you see code using it, try to find a more recent example. That one is outdated.
+> Also you may find online old code using var. We are trying to get rid of `var`s since 2015. It's ancient syntax and it was pretty problematic. Never use it! If you see code using it, try to find a more recent example. That one is outdated.
 
 #### **`Prompt Example`**:
 
-- "As a beginner, what is the difference between let and const in JavaScript?"
+- "As a beginner, what is the difference between let and ``const`` in JavaScript?"
 - "As a beginner, how do I reassign a value to an already declared variable in JavaScript?"
 
 ### Instructions
@@ -84,7 +84,7 @@ But it is still possible to use the = (assignment operator) to change its value 
 
 - The variable `power` has been declared and will be used during the tests.
 
-- You must try to re-assign the power variable to the string value `levelMax` !! but without re-declaring it !
+- You must try to re-assign the power variable to the string value `levelMax`. But without re-declaring it !
 
 ---
 
