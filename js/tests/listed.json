@@ -1,0 +1,58 @@
+[
+  {
+    "description": "components variable must be an Array",
+    "code": "\n\nconst replaceComponents = ['sensor', 'battery', 'motor', 'brain']\nlet swapComponents = ['motor', 'battery']\nlet robotParts = [\n  'motor',\n  'sensor',\n  'camera',\n  'battery',\n  // 'memory', ??\n]\n\n// Your code\nif (!Array.isArray(components)) {\n  throw Error('Season must be an Array')\n}"
+  },
+  {
+    "description": "components first element must be motor",
+    "code": "\n\nconst replaceComponents = ['sensor', 'battery', 'motor', 'brain']\nlet swapComponents = ['motor', 'battery']\nlet robotParts = [\n  'motor',\n  'sensor',\n  'camera',\n  'battery',\n  // 'memory', ??\n]\n// Your code\nequal(components[0].toLowerCase(), 'motor')\n"
+  },
+  {
+    "description": "components second element sensor",
+    "code": "\n\nconst replaceComponents = ['sensor', 'battery', 'motor', 'brain']\nlet swapComponents = ['motor', 'battery']\nlet robotParts = [\n  'motor',\n  'sensor',\n  'camera',\n  'battery',\n  // 'memory', ??\n]\n// Your code\nequal(components[1].toLowerCase(), 'sensor')\n"
+  },
+  {
+    "description": "components third element battery",
+    "code": "\n\nconst replaceComponents = ['sensor', 'battery', 'motor', 'brain']\nlet swapComponents = ['motor', 'battery']\nlet robotParts = [\n  'motor',\n  'sensor',\n  'camera',\n  'battery',\n  // 'memory', ??\n]\n// Your code\nequal(components[2].toLowerCase(), 'battery')\n"
+  },
+  {
+    "description": "components fourth element camera",
+    "code": "\n\nconst replaceComponents = ['sensor', 'battery', 'motor', 'brain']\nlet swapComponents = ['motor', 'battery']\nlet robotParts = [\n  'motor',\n  'sensor',\n  'camera',\n  'battery',\n  // 'memory', ??\n]\n// Your code\nequal(components[3].toLowerCase(), 'camera')\n"
+  },
+  {
+    "description": "components we must not have a fifth element",
+    "code": "\n\nconst replaceComponents = ['sensor', 'battery', 'motor', 'brain']\nlet swapComponents = ['motor', 'battery']\nlet robotParts = [\n  'motor',\n  'sensor',\n  'camera',\n  'battery',\n  // 'memory', ??\n]\n// Your code\nequal(components[4], undefined)\n"
+  },
+  {
+    "description": "firstPart is the value of the first element",
+    "code": "\n\nconst replaceComponents = ['sensor', 'battery', 'motor', 'brain']\nlet robotParts = [\n  'motor',\n  'sensor',\n  'battery',\n  'camera',\n  // 'memory', ??\n]\nconst swapComponents = ['sensor', 'battery', 'motor']\n\n// Your code\n\nequal(firstPart, 'motor')\n"
+  },
+  {
+    "description": "firstPart is the value of the first element even if we change the list",
+    "code": "\n\nconst replaceComponents = ['sensor', 'battery', 'motor', 'brain']\nlet robotParts = [\n  'sensor',\n  'motor',\n  'camera',\n  'battery',\n  // 'memory', ??\n]\nconst swapComponents = ['sensor', 'battery', 'motor']\n\n// Your code\n\nequal(firstPart, 'sensor')\n"
+  },
+  {
+    "description": "lastPart is the value of the last element",
+    "code": "\n\nconst replaceComponents = ['sensor', 'battery', 'motor', 'brain']\nlet robotParts = [\n  'motor',\n  'sensor',\n  'battery',\n  'camera',\n  // 'memory', ??\n]\nconst swapComponents = ['sensor', 'battery', 'motor']\n\n// Your code\n\nequal(lastPart, 'camera')\n"
+  },
+  {
+    "description": "lastPart is the value of the last element even if we change the list",
+    "code": "\n\nconst replaceComponents = ['sensor', 'battery', 'motor', 'brain']\nlet robotParts = [\n  'sensor',\n  'motor',\n  'camera',\n  'battery',\n  // 'memory', ??\n]\nconst swapComponents = ['sensor', 'battery', 'motor']\n\n// Your code\n\nequal(lastPart, 'battery')\n"
+  },
+  {
+    "description": "comboParts is an array of lastPart and firstPart",
+    "code": "\n\nconst replaceComponents = ['sensor', 'battery', 'motor', 'brain']\nlet robotParts = [\n  'motor',\n  'sensor',\n  'battery',\n  'camera',\n  // 'memory', ??\n]\nconst swapComponents = ['sensor', 'battery', 'motor']\n\n// Your code\n\nequal(comboParts, ['camera', 'motor'])\n"
+  },
+  {
+    "description": "comboParts is an array of lastPart and firstPart even if we change the list",
+    "code": "\n\nconst replaceComponents = ['sensor', 'battery', 'motor', 'brain']\nlet robotParts = [\n  'sensor',\n  'motor',\n  'camera',\n  'battery',\n  // 'memory', ??\n]\nconst swapComponents = ['sensor', 'battery', 'motor']\n\n// Your code\n\nequal(comboParts, ['battery', 'sensor'])\n"
+  },
+  {
+    "description": "replaceComponents third element is 'enhanced'",
+    "code": "\n\nlet robotParts = [\n  'motor',\n  'sensor',\n  'camera',\n  'battery',\n  // 'memory', ??\n]\nconst swapComponents = ['sensor', 'battery', 'motor']\nconst replaceComponents = ['sensor', 'battery', 'motor', 'brain']\n\n// Your code\n\nequal(replaceComponents, ['sensor', 'battery', 'enhanced', 'brain'])\n"
+  },
+  {
+    "description": "1st and 2nd elements of swapComponents are swapped pif,paf,pom",
+    "code": "\n\nconst replaceComponents = ['sensor', 'battery', 'motor', 'brain']\nlet robotParts = [\n  'motor',\n  'sensor',\n  'camera',\n  'battery',\n  // 'memory', ??\n]\nlet swapComponents = ['sensor', 'battery', 'motor']\n\n// Your code\n\nequal(swapComponents, ['battery', 'sensor', 'motor'])\n"
+  }
+]
