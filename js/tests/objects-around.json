@@ -1,0 +1,26 @@
+[
+  {
+    "description": "variable myRobot is declared and of type object",
+    "code": "let robot = {\n  name: 'Freddy',\n  age: 27,\n  hasEnergy: false,\n}\n\n// Your code\n\nequal(typeof myRobot, 'object')"
+  },
+  {
+    "description": "property name from myRobot is of type string",
+    "code": "let robot = {\n  name: 'Freddy',\n  age: 27,\n  hasEnergy: false,\n}\n\n// Your code\n\nequal(typeof myRobot.name, 'string')"
+  },
+  {
+    "description": "property age from myRobot is of type number",
+    "code": "let robot = {\n  name: 'Freddy',\n  age: 27,\n  hasEnergy: false,\n}\n\n// Your code\n\nequal(typeof myRobot.age, 'number')"
+  },
+  {
+    "description": "property hasEnergy from myRobot is of type boolean",
+    "code": "let robot = {\n  name: 'Freddy',\n  age: 27,\n  hasEnergy: false,\n}\n\n// Your code\n\nequal(typeof myRobot.hasEnergy, 'boolean')"
+  },
+  {
+    "description": "all 3 variable should be defined and have the right values",
+    "code": "let robot = {\n  name: 'Freddy',\n  age: 27,\n  hasEnergy: false,\n}\n\n// Your code\n\nequal({ name, age, hasEnergy }, robot)"
+  },
+  {
+    "description": "value should also work for Jean-Pierre",
+    "code": "let robot = {\n  name: 'Jean-Pierre',\n  age: 65,\n  hasEnergy: true,\n}\n\n// Your code\n\nequal({ name, age, hasEnergy }, robot)"
+  }
+]
