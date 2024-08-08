@@ -1,19 +1,19 @@
 [
   {
-    "description": "variable robot is declared and of type object",
-    "code": "equal(typeof robot, 'object')"
+    "description": "variable myRobot is declared and of type object",
+    "code": "let robot = {\n  name: 'Freddy',\n  age: 27,\n  hasEnergy: false,\n}\n\n// Your code\n\nequal(typeof myRobot, 'object')"
   },
   {
-    "description": "property name from robot is of type string",
-    "code": "equal(typeof robot.name, 'string')"
+    "description": "property name from myRobot is of type string",
+    "code": "let robot = {\n  name: 'Freddy',\n  age: 27,\n  hasEnergy: false,\n}\n\n// Your code\n\nequal(typeof myRobot.name, 'string')"
   },
   {
-    "description": "property age from robot is of type number",
-    "code": "equal(typeof robot.age, 'number')"
+    "description": "property age from myRobot is of type number",
+    "code": "let robot = {\n  name: 'Freddy',\n  age: 27,\n  hasEnergy: false,\n}\n\n// Your code\n\nequal(typeof myRobot.age, 'number')"
   },
   {
-    "description": "property hasEnergy from robot is of type boolean",
-    "code": "equal(typeof robot.hasEnergy, 'boolean')"
+    "description": "property hasEnergy from myRobot is of type boolean",
+    "code": "let robot = {\n  name: 'Freddy',\n  age: 27,\n  hasEnergy: false,\n}\n\n// Your code\n\nequal(typeof myRobot.hasEnergy, 'boolean')"
   },
   {
     "description": "all 3 variable should be defined and have the right values",
