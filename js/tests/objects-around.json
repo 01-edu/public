@@ -1,0 +1,26 @@
+[
+  {
+    "description": "variable robot is declared and of type object",
+    "code": "equal(typeof robot, 'object')"
+  },
+  {
+    "description": "property name from robot is of type string",
+    "code": "equal(typeof robot.name, 'string')"
+  },
+  {
+    "description": "property age from robot is of type number",
+    "code": "equal(typeof robot.age, 'number')"
+  },
+  {
+    "description": "property hasEnergy from robot is of type boolean",
+    "code": "equal(typeof robot.hasEnergy, 'boolean')"
+  },
+  {
+    "description": "all 3 variable should be defined and have the right values",
+    "code": "let robot = {\n  name: 'Freddy',\n  age: 27,\n  hasEnergy: false,\n}\n\n// Your code\n\nequal({ name, age, hasEnergy }, robot)"
+  },
+  {
+    "description": "value should also work for Jean-Pierre",
+    "code": "let robot = {\n  name: 'Jean-Pierre',\n  age: 65,\n  hasEnergy: true,\n}\n\n// Your code\n\nequal({ name, age, hasEnergy }, robot)"
+  }
+]
