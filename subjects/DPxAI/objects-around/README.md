@@ -101,7 +101,7 @@ console.log(adjustedWeight); // Logs the adjusted weight
 
 #### Task 1:
 
-Let's declare a variable `robot` which has an object as its value with 3 properties:
+Let's declare a variable `MyRobot` which has an object as its value with 3 properties:
 
 1. A `name` property of the robot's name as a String
 2. An `age` property of the robot's age as a Number
