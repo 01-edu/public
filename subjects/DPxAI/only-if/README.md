@@ -43,7 +43,7 @@ if (batteryLevel > 50) {
 
 ### Truthy and Falsy
 
-In JavaScript, all values are either `truthy` or `falsy`. Truthy values validate conditions, while falsy values do not.
+In JavaScript, all the values are either `truthy` or `falsy`. Truthy values validate conditions, while falsy values do not.
 
 #### Falsy Values:
 
