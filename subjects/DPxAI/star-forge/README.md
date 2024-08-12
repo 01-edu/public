@@ -45,6 +45,7 @@ This type of prompt encourages the AI to explain complex concepts using simple m
 4. **Ask Follow-Up Questions and compare results with your peers**: If you need further clarification or more metaphors, you can ask follow-up questions!
 
 ---
+
 Similar to this technique , we will discover in each incoming exercise, a new way to learn with AI , helping you achieve your goals with your peers
 
 > Remember that we use AI as a tool to understand deeply the notions, and not to get ready answers! So collaborate with your peers ;)
