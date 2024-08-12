@@ -42,7 +42,7 @@ let batteryLevels = [80, 60, 90, 50];
 
 ### Indexes in Arrays
 
-The position of an element in an array is called its index, starting from 0. So, our batteryLevels array is roughly equivalent to writing this object:
+The position of an element in an array is called its index, starting from 0. So, our `batteryLevels` array is roughly equivalent to writing this object:
 
 ```js
 let batteryLevelsObject = {
@@ -115,9 +115,9 @@ You must declare a variable `components` that contains 4 strings, one for each r
 
 We provide you a variable `robotParts` that contains some elements. You will have to access them and assign their values to variables:
 
-- A variable `firstPart` for the first element of the robotParts list
-- A variable `lastPart` for the last element of the robotParts list
-- A variable `comboParts` as an array of 2 elements, the last and the first element of the robotParts list, in that order.
+- A variable `firstPart` for the first element of the `robotParts` list
+- A variable `lastPart` for the last element of the `robotParts` list
+- A variable `comboParts` as an array of 2 elements, the last and the first element of the `robotParts` list, in that order.
   Example: if robotParts is `[1, 2, 3]`
 
 -`firstPart` would be `1`
