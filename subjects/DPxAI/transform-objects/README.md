@@ -62,7 +62,7 @@ robot.code = undefined;
 
 #### Task 1:
 
-Modify the provided robot variable:
+Modify the provided `robot` variable:
 
 - Add a `model` property with the string value 'RX-78'.
 - Add a `fullName` property that is the joined value of the brand and the model with a space in between.
@@ -72,8 +72,8 @@ Modify the provided robot variable:
 
 Let's move away from objects a bit, and discover a notion we will use later. `Duplicating a String with Placeholders`!
 
-Declare a variable `duplicate` that repeats the provided variable sentence, separated by a comma, and adds an exclamation mark at the end.
+Declare a variable `duplicate` that repeats the provided variable `sentence`, separated by a comma, and adds an exclamation mark at the end.
 
-> For example, if sentence is "Hello there", we expect "Hello there, Hello there!".
+> For example, if `sentence` is "Hello there", we expect "Hello there, Hello there!".
 
 **What a good occasion to apply what you learned in using generative AI and documentations to understand duplicating a string with placeholders! Now you are capable to find the information everywhere;)**
