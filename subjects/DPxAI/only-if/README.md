@@ -11,7 +11,7 @@ Let's have some fun with it!
 ### AI-Powered Learning Techniques
 
 ` Interactive Learning Technique:`
-This type of prompt engages you in active problem-solving by providing challenges or tasks that require applying concepts, this can work to compare your results with your peers!
+This type of prompt engages you in active problem-solving by providing challenges or tasks that require applying concepts. This can work to compare your results with your peers!
 
 Find the examples across the subject ;)
 
