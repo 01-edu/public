@@ -1,6 +1,6 @@
 ## Declare Everything
 
->Mindful AI mode
+> Mindful AI mode
 
 ### Context
 
