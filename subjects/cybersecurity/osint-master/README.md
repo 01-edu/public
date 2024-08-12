@@ -25,7 +25,6 @@ Some useful resources:
 
 - [Open-source intelligence](https://en.wikipedia.org/wiki/Open-source_intelligence)
 - [Doxing](https://en.wikipedia.org/wiki/Doxing)
-- [Kali Tools - Recon](https://en.kali.tools/all/?category=recon)
 - [OSINT Tools on GitHub](https://github.com/topics/osint-tools)
 
 Before asking for help, ask yourself if you have really thought about all the possibilities.
@@ -67,7 +66,7 @@ The tool should accept the following inputs: `Full Name`, `IP Address`, `Usernam
   Enumerate subdomains and gather information including IP addresses, SSL certificate details, and potential vulnerabilities.
   Identify potential subdomain takeover risks by analyzing DNS records and associated resources.
 
-> You are responsible for choosing the way you want to find the data and for using the API's. be aware of the API's `Terms of Use` and `Cost` before use!
+> You are responsible for choosing the way you want to find the data and for using the APIs. Be aware of the API's `Terms of Use` and `Cost` before use!
 
 #### Output Management:
 
