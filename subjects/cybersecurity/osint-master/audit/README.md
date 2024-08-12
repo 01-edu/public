@@ -20,7 +20,7 @@ Suggested role play questions include:
 - Explain what subdomain takeovers are, and how to protect against it?
 - How does the OSINT-Master tool help identify sensitive information?
 - What challenges did you face while developing the OSINT-Master tool and how did you address them?
-- How can we protect our crytical information from OSINT techniques?
+- How can we protect our critical information from OSINT techniques?
 - How can this tool help in a defensive approach?
 
 ###### Were the student able to answer all the questions?
@@ -59,7 +59,7 @@ $> osintmaster -n "Full Name" -o filename
 
 ###### Does the output stored to the file specified in the output parameter?
 
-3. **IP Adress Option:**
+3. **IP Address Option:**
 
 ```sh
 $> osintmaster -i "IP Address" -o filename
