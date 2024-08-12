@@ -8,7 +8,7 @@ Just as the Star Forge is a legendary source of power and innovation in the Star
 
 ### AI-Powered Learning Techniques
 
-As you dive into this hackathon, using AI tools can significantly boost your learning.
+As you dive into this quest, using AI tools can significantly boost your learning.
 
 A key skill is mastering how to `Speak AI`, which means knowing how to ask AI the right questions to get the answers you need while learning.
 
@@ -36,7 +36,7 @@ This type of prompt encourages the AI to explain complex concepts using simple m
 
 **How to Use It with ChatGPT:**
 
-1. **Open your favorite Generative AI (ChatGPT as acfdn example)**: Go to [ChatGPT](https://chatgpt.com/) and start a new chat session.
+1. **Open your favorite Generative AI (ChatGPT as an example)**: Go to [ChatGPT](https://chatgpt.com/) and start a new chat session.
 2. **Enter the Prompt**: Type or paste your prompt into the chat. For example, "Explain what a variable is in JavaScript using a metaphor."
 3. **Review the Response**: ChatGPT will provide a metaphorical explanation. For instance:
 
@@ -45,9 +45,17 @@ This type of prompt encourages the AI to explain complex concepts using simple m
 4. **Ask Follow-Up Questions and compare results with your peers**: If you need further clarification or more metaphors, you can ask follow-up questions!
 
 ---
-
 Similar to this technique , we will discover in each incoming exercise, a new way to learn with AI , helping you achieve your goals with your peers
 
 > Remember that we use AI as a tool to understand deeply the notions, and not to get ready answers! So collaborate with your peers ;)
 
-Ready to use this power? Let's start!
+### task
+
+Paste the following code in the code editor, and submit it :
+
+```js
+let beginning =
+  "I am ready to start using AI and peer learning to learn JavaScript!";
+```
+
+Curious about what it means? Let's discover it in the next exercise!
