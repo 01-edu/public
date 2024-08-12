@@ -62,7 +62,7 @@ let robot = {
 };
 ```
 
-Each property is separated by a comma ,. It's good practice to add a trailing comma to every property, though it's not required for the last one.
+Each property is separated by a comma ",". It's good practice to add a trailing comma to every property, though it's not required for the last one.
 
 ### Accessing Values
 
@@ -95,17 +95,17 @@ console.log(adjustedWeight); // Logs the adjusted weight
 
 #### **`Prompt Example`**:
 
-- Can you help me visualize a JavaScript object with the following properties: name, type, weight, isOperational, location, and features?
+- Can you help me visualize a JavaScript object with the following properties: `name`, `age`, `hasEnergy``?
 
 ### Instructions
 
 #### Task 1:
 
-Let's declare a variable `myRobot` which has an object as its value with 3 properties:
+Let's declare a variable `myRobot` which has an object as its value with 3 properties.
 
-1. A `name` property of ``myRobot``'s name as a String
-2. An `age` property of ``myRobot``'s age as a Number
-3. A `hasEnergy` property as a Boolean indicating if ``myRobot`` has dangerous features
+1. A `name` property of `myRobot`'s name as a String
+2. An `age` property of `myRobot`'s age as a Number
+3. A `hasEnergy` property as a Boolean indicating if `myRobot` has dangerous features
 
 #### Task 2:
 
