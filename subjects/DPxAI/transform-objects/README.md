@@ -65,7 +65,7 @@ robot.code = undefined;
 Modify the provided `robot` variable:
 
 - Add a `model` property with the string value 'RX-78'.
-- Add a `fullName` property that is the joined value of the brand and the model with a space in between.
+- Add a `fullName` property that is the joined value of the `brand` and the `model` with a space in between.
 - Add `10` to its `batteryLevel` property.
 
 #### Task 2:
