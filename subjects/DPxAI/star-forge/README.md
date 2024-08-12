@@ -50,13 +50,13 @@ Similar to this technique , we will discover in each incoming exercise, a new wa
 
 > Remember that we use AI as a tool to understand deeply the notions, and not to get ready answers! So collaborate with your peers ;)
 
-### task
+### task:
 
-Paste the following code in the code editor, and submit it :
+Write the following line of code in the code editor. Put `Yes` in between the quotes, then submit it:
 
 ```js
-let beginning =
-  "I am ready to start using AI and peer learning to learn JavaScript!";
+let ready = "";
 ```
 
-Curious about what it means? Let's discover it in the next exercise!
+You just declared a variable ! What does that mean ? Well, let's move to the next exercise where you will discover
+to `declare everything`!
