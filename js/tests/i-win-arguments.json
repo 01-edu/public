@@ -1,0 +1,54 @@
+[
+  {
+    "description": "battleCry is defined and is a function",
+    "code": "equal(typeof battleCry, 'function')"
+  },
+  {
+    "description": "secretOrders is defined and is a function",
+    "code": "equal(typeof secretOrders, 'function')"
+  },
+  {
+    "description": "battleCry has one and only one argument",
+    "code": "equal(battleCry.length, 1)"
+  },
+  {
+    "description": "secretOrders has one and only one argument",
+    "code": "equal(secretOrders.length, 1)"
+  },
+  {
+    "description": "battleCry shouts properly",
+    "code": "const args = saveArguments(console, 'log')\n// Your code\n\nbattleCry('attack')\nbattleCry('you shall not pass!')\n\nequal(args.flat(), ['ATTACK', 'YOU SHALL NOT PASS!'])"
+  },
+  {
+    "description": "secretOrders whispers properly",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nsecretOrders('ExEcutE Order 66')\nsecretOrders('SILENCE')\n\nequal(args.flat(), ['execute order 66', 'silence'])"
+  },
+  {
+    "description": "We can call both functions",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nsecretOrders('This Is The WAY')\nbattleCry('for the horde !')\n\nequal(args.flat(), ['this is the way', 'FOR THE HORDE !'])"
+  },
+  {
+    "description": "duos is defined and is a function",
+    "code": "equal(typeof duos, 'function')"
+  },
+  {
+    "description": "duos takes two arguments",
+    "code": "equal(duos.length, 2)"
+  },
+  {
+    "description": "duos logs the expected result",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nduos('Batman', 'Robin')\nduos('Pinky', 'The Brain')\nduos('Bonnie', 'Clyde')\nduos('Mr.', 'Mrs.Smith')\n\nequal(\n  args.map((arg) => arg.join(' ')),\n  [\n    'Batman and Robin!',\n    'Pinky and The Brain!',\n    'Bonnie and Clyde!',\n    'Mr. and Mrs.Smith!',\n  ],\n)"
+  },
+  {
+    "description": "duosWork is defined and is a function",
+    "code": "equal(typeof duosWork, 'function')"
+  },
+  {
+    "description": "duosWork takes three arguments",
+    "code": "equal(duosWork.length, 3)"
+  },
+  {
+    "description": "duosWork logs the expected result",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nduosWork('Batman', 'Robin', 'protect Gotham')\nduosWork('Pinky', 'The Brain', 'want to conquer the world')\nduosWork('Bonnie', 'Clyde', 'escape the Police')\nduosWork('Mr.', 'Mrs.Smith', 'are the greatest spy couple')\n\nequal(\n  args.map((arg) => arg.join(' ')),\n  [\n    'Batman and Robin protect Gotham!',\n    'Pinky and The Brain want to conquer the world!',\n    'Bonnie and Clyde escape the Police!',\n    'Mr. and Mrs.Smith are the greatest spy couple!',\n  ],\n)"
+  }
+]
