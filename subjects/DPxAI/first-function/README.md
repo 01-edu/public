@@ -74,7 +74,7 @@ myFirstFunction(); // Output: "RoboGuard is now active!"
 
 #### **`Video Ressource`**:
 
-- [Functions in depth.](https://www.youtube.com/watch?v=0lp0d-Uxy4o&t=2s)
+- [Functions in depth.](https://www.youtube.com/watch?v=0lp0d-Uxy4o)
 
 ### Instructions
 
