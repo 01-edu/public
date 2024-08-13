@@ -50,5 +50,17 @@
   {
     "description": "duosWork logs the expected result",
     "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nduosWork('Batman', 'Robin', 'protect Gotham')\nduosWork('Pinky', 'The Brain', 'want to conquer the world')\nduosWork('Bonnie', 'Clyde', 'escape the Police')\nduosWork('Mr.', 'Mrs.Smith', 'are the greatest spy couple')\n\nequal(\n  args.map((arg) => arg.join(' ')),\n  [\n    'Batman and Robin protect Gotham!',\n    'Pinky and The Brain want to conquer the world!',\n    'Bonnie and Clyde escape the Police!',\n    'Mr. and Mrs.Smith are the greatest spy couple!',\n  ],\n)"
+  },
+  {
+    "description": "passButter is defined and is a function",
+    "code": "equal(typeof passButter, 'function')"
+  },
+  {
+    "description": "passButter returns The butter properly",
+    "code": "equal(passButter(), 'The butter')"
+  },
+  {
+    "description": "calling passButter mulitple time should always return the butter",
+    "code": "equal(\n  [passButter(), passButter(), passButter()],\n  ['The butter', 'The butter', 'The butter'],\n)"
   }
 ]
