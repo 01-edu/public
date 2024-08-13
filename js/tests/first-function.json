@@ -1,0 +1,22 @@
+[
+  {
+    "description": "ask is defined and is a function",
+    "code": "equal(typeof ask, 'function')"
+  },
+  {
+    "description": "reply is defined and is a function",
+    "code": "equal(typeof reply, 'function')"
+  },
+  {
+    "description": "ask works and is called",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nequal(args[0], ['What is my purpose ?'])"
+  },
+  {
+    "description": "reply works and is called too",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nequal(args, [['What is my purpose ?'], ['You pass butter.']])"
+  },
+  {
+    "description": "calling reply and ask again relog the text.",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nequal(args[1], ['You pass butter.'])"
+  }
+]
