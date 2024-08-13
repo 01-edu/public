@@ -72,6 +72,10 @@ myFirstFunction(); // Output: "RoboGuard is now active!"
 
 - "How do you call a function in JavaScript, and what happens if the function contains no instructions?"
 
+#### **`Video Ressource`**:
+
+- [Functions in depth.](https://www.youtube.com/watch?v=0lp0d-Uxy4o&t=2s)
+
 ### Instructions
 
 #### Task 1:
