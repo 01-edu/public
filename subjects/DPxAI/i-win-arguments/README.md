@@ -24,7 +24,7 @@ Find the examples across the subject ;)
 
 ### One Argument
 
-We mentioned it before with methods, functions can take arguments. They are always in between parens `()`.
+We mentioned it before with methods, functions can take arguments. They are always in between parenthesis `()`.
 
 Let's use the same examples that we used for function calls:
 
@@ -41,7 +41,7 @@ We are now going to adapt `myFirstFuntion` so that it takes one argument : `arg1
 
 ```js
 let myFirstFunction = (arg1) => {
-  //<-arg1 is inputed in between the parens
+  //<-arg1 is inputed in between the parenthesis
   console.log(arg1); // arg1 can be use inside the scope of the function
   //            ↖   arg1 is "transfered" to be the arg of console.log()
 }; //<-end of the scope of the function
@@ -69,7 +69,7 @@ All we need to do to add a second argument `arg2` is to add a comma `,` after `a
 
 ```js
 let myFirstFunction = (arg1, arg2) => {
-  //<-arg1 and arg2 are inputed in between the parens
+  //<-arg1 and arg2 are inputed in between the parenthesis
   console.log(arg1, arg2);
   //            ↖   arg1 and arg2 are "transfered" to be the args of console.log()
 };
@@ -119,7 +119,7 @@ console.log(anotherResult); // "another return"
 
 #### Task 1:
 
-You are the general's aide responsible for transmitting communications to the other RoboGuards.
+You are the general's aide responsible for transmitting communications to the other `RoboGuards`.
 
 1- Create the `battleCry` Function:
 
@@ -132,7 +132,7 @@ You are the general's aide responsible for transmitting communications to the ot
 
 - This function will do the `same` as `battleCry`, except `it will lowercase` the argument before sending it.
 
-> hint: you remmeber methods?
+> hint: you remember methods?
 
 #### Task 2:
 
@@ -143,11 +143,15 @@ As the leader of the RoboGuard forces, you're not just preparing for battle—yo
 - This function will take `two arguments`, representing the **names** of **two robots**.
 - It will `log them` together with an **and** and an **exclamation mark**.
 
+> Output's example: "robotOne and robotTwo!"
+
 2- Create the `duosWork` Function:
 
 - This function will take `three arguments`: the **names** of two robots and the **task** they will perform together.
 
 - It will `log them` together in a sentence describing their task.
+
+> Output's example: "robotOne and robotTwo are saying hi!
 
 #### Task 3:
 
@@ -155,4 +159,4 @@ Rick's robot, knows his purpose. (Remember ? 'He passes butter.')
 
 - Define the function `passButter` that returns the string 'The butter'.
 
-> "Your hard work is paying off. The only limit to your impact is your imagination and commitment." – Tony Robbins
+** "Your hard work is paying off. The only limit to your impact is your imagination and commitment." – Tony Robbins**
