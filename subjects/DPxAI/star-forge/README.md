@@ -50,7 +50,7 @@ Similar to this technique , we will discover in each incoming exercise, a new wa
 
 > Remember that we use AI as a tool to understand deeply the notions, and not to get ready answers! So collaborate with your peers ;)
 
-### task:
+### Task:
 
 Write the following line of code in the code editor. Put `Yes` in between the quotes, then submit it:
 
