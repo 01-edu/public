@@ -11,7 +11,7 @@ You can create your own functions to give your robot unique abilities and make i
 ### AI-Powered Learning Techniques
 
 `Reflective Practice Technique:`
-This type of prompt encourages learners to reflect on the concepts they’ve just learned, reinforcing their understanding by applying the concepts in different contexts or scenarios.
+This type of prompt encourages you to reflect on the concepts you’ve just learned, reinforcing your understanding by applying the concepts in different contexts or scenarios.
 
 Find the examples across the subject ;)
 
@@ -63,7 +63,7 @@ let myFirstFunction = () => {
 Now, when you call `myFirstFunction()`, Robot will log a message in the console:
 
 ```js
-myFirstFunction(); // Output: "RoboGuard is now active!"
+myFirstFunction(); // Output: "Robot is now active!"
 ```
 
 > We actually declared, then called the function and gave it this single instruction, `console.log('Robot is now active!')`.
@@ -72,7 +72,7 @@ myFirstFunction(); // Output: "RoboGuard is now active!"
 
 - "How do you call a function in JavaScript, and what happens if the function contains no instructions?"
 
-#### **`Video Ressource`**:
+#### **`Video Resource`**:
 
 - [Functions in depth.](https://www.youtube.com/watch?v=0lp0d-Uxy4o)
 
