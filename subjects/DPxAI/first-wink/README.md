@@ -12,9 +12,11 @@ Don't worry if things feel a bit challenging—that's part of the process! Just 
 
 #### Reminder:
 
-Before you start coding, it's okay to take a moment to think about what you want to do. You can even write out a rough plan or "PseudoCode" to help organize your thoughts. It makes the coding part much easier!
+- Before you start coding, it's okay to take a moment to think about what you want to do. You can even write out a rough plan or "PseudoCode" to help organize your thoughts. It makes the coding part much easier!
 
 > We can mention thing you do not know; but by this time, you know what to do! Search for it, ask your peers and use clever prompts ;)
+
+- **You need to continue on the HTML, CSS, JS code you submitted for the exercise `first-move`, but with an empty JavaScript file and do not forget to change the name of the linked files to the name of this exercise!**
 
 ### Resources
 
