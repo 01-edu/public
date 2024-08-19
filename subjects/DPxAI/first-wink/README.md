@@ -93,13 +93,14 @@ const handleClick = (event) => {
 
   } else {
     // If the eye is open, close it and update the button text
-}
+  }
+    // Toggle the 'eye-closed' class on the 'eye-left' div
+};
+
 // register the event:
 button.addEventListener('click', handleClick)
 // here we ask the button to call our `handleClick` function
 // on the 'click' event, so every time it's clicked
-};
-
 ```
 
 **`Prompt Examples:`**
