@@ -53,14 +53,13 @@ button {
 
 #### Task 2:
 
-Select the button with id `button` in your JavaScript file that will allow the user to control the robot’s left eye.
+Select the button in your JavaScript file that will allow the user to control the robot’s left eye.
 
 ```js
 // Select the button element using its ID so we can interact with it in our JavaScript
 
-//Example of selecting a button with "small" as an id
-
-const myButton = document.querySelector("#small");
+//Example of selecting a button called myButton
+const myButton = document.querySelector("button");
 ```
 
 **`Prompt Example:`**
