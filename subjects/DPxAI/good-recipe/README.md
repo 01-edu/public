@@ -39,7 +39,7 @@ console.log("flour", 200); // both arguments will appear in your console
 
 ### Methods
 
-Methods are functions called from another value. For example, ``toFixed`` is a method that formats numbers:
+Methods are functions called from another value. For example, `toFixed` is a method that formats numbers:
 
 ```js
 let num = 10 / 3;
@@ -48,7 +48,7 @@ console.log(num.toFixed(2)); // -> '3.33'
 
 ### String Manipulation with Methods
 
-Using the ``.slice`` method to cut parts of a string:
+Using the `.slice` method to cut parts of a string:
 
 ```js
 let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
