@@ -29,7 +29,7 @@ Add the button style in the CSS file:
 ```css
 #leg-color {
   position: fixed;
-  top: 305px;
+  top: 240px;
   right: 30px;
   padding: 10px;
   margin-bottom: 20px;
