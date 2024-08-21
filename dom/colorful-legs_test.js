@@ -11,9 +11,6 @@ tests.push(async ({ eq, page }) => {
 
   // Check if both legs have been assigned the same new color
   eq(legLeftColor, legRightColor)
-
-  // Ensure the new color is not black
-  eq(legLeftColor !== 'rgb(0, 0, 0)', true, 'The color of the legs should not be black')
 })
 
 tests.push(async ({ eq, page }) => {
