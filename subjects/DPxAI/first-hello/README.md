@@ -6,7 +6,7 @@
 
 Your robot winked, but you can make it talk too! or at least, make it say his first hello to the world!
 
-> Follow the instructions, ask your peers if you are stuck and stay motivated because you are close to the Shape Crafting goal!
+> Follow the instructions, ask your peers if you are stuck and stay motivated because you are close to your goal!
 > Follow every hint you have in the subject!
 > Continue on the code from last exercise, and change the file names!
 
@@ -83,3 +83,7 @@ const handleSpeakClick = (event) => {
 // Attach the handleSpeakClick function to the 'speak-button' button
 //...Here
 ```
+
+**`Prompt Example:`**
+
+- "How can I add and remove text in an element with a button click in JavaScript?"
