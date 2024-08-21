@@ -4,7 +4,7 @@
 
 ### Context
 
-Your robot winked, but you can make it talk too! or at least, make it say his first hello to the world!
+Your robot winked, but you can make it talk too! Or at least, make it say his first hello to the world!
 
 > Follow the instructions, ask your peers if you are stuck and stay motivated because you are close to your goal!
 > Follow every hint you have in the subject!
