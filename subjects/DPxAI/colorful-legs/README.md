@@ -4,7 +4,7 @@
 
 ### Context
 
-Your robot is cool! but you can make it even more striking! Or at least, make it show off its colorful legs to everyone!
+Your robot is cool! But you can make it even more striking! Or at least, make it show off its colorful legs to everyone!
 
 > Follow the instructions, ask your peers if you are stuck and stay motivated because you are close to the goal!
 > Follow every hint you have in the subject!
