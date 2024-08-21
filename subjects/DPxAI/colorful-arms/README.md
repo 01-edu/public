@@ -34,7 +34,7 @@ Add the button style in the CSS file:
 }
 ```
 
-Also replace the styles tto your HTML ``button` element with this block:
+Also replace the ``button` element styles with this block:
 
 ```css
 button {
