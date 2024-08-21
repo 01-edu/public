@@ -22,11 +22,11 @@ Don't worry if things feel a bit challenging—that's part of the process! Just 
 
 We provide you with some content to get started smoothly, check it out!
 
-- [Video](https://www.youtube.com/watch?v=m34qd7aGMBo&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=13) on querySelector
-- [Video](https://www.youtube.com/watch?v=ydRv338Fl8Y) DOM JS - Add an event listener to an element
-- [Video](https://www.youtube.com/watch?v=4O6zSVR0ufw&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=15) DOM JS - Set an element's properties
-- [Video](https://www.youtube.com/watch?v=amEBcoTYw0s&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=21) DOM JS - classList: toggle, replace & contains
-- [Video](https://www.youtube.com/watch?v=pxlYKvju1z8&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=16) DOM JS - Set an element's inline style
+- [Video](https://www.youtube.com/watch?v=m34qd7aGMBo&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=13) on ``querySelector``
+- [Video](https://www.youtube.com/watch?v=ydRv338Fl8Y) DOM JS - Add an ``event listener`` to an element
+- [Video](https://www.youtube.com/watch?v=4O6zSVR0ufw&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=15) DOM JS - Set an ``element's properties``
+- [Video](https://www.youtube.com/watch?v=amEBcoTYw0s&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=21) DOM JS - ``classList``: toggle, replace & contains
+- [Video](https://www.youtube.com/watch?v=pxlYKvju1z8&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=16) DOM JS - Set an element's ``inline style``
 - [Memo DOM JS](https://github.com/nan-academy/js-training/blob/gh-pages/examples/dom.js)
 
 ### Instructions
@@ -66,7 +66,7 @@ const myButton = document.querySelector("button");
 
 **`Prompt Example:`**
 
-- "How do I use querySelector to select an HTML element by its ID?"
+- "How do I use ``querySelector`` to select an HTML element by its ID?"
 
 #### Task 3:
 
@@ -76,7 +76,7 @@ This function will make the robot "wink" by toggling the `eye-closed` class on t
 
 - It changes the text content of the button: if the eye is open, write "Click to close the left eye", if the eye is closed, write "Click to open the left eye".
 
-- It toggles the class eye-closed in the classList of the eye-left HTML element.
+- It toggles the class eye-closed in the ``classList`` of the eye-left HTML element.
 
 It changes the background color of the eye-left: if the eye is open, to "red", if the eye is closed, to "black"
 
@@ -106,11 +106,11 @@ button.addEventListener('click', handleClick)
 
 **`Prompt Examples:`**
 
-- "As a beginner, explain to me what is querySelector in JavaScript, and how do I use it to select an HTML element by its ID or class?"
+- "As a beginner, explain to me what is ``querySelector`` in JavaScript, and how do I use it to select an HTML element by its ID or class?"
 
-- "As a beginner, explain to me how can I change the text content of an HTML element using JavaScript?"
+- "As a beginner, explain to me how can I change the text content of an ``HTML element`` using JavaScript?"
 
-- "As a beginner, explain to me how do I use addEventListener to make a button respond to a click event in JavaScript?"
+- "As a beginner, explain to me how do I use ``addEventListener`` to make a button respond to a click event in JavaScript?"
 
 ### Expected output
 
