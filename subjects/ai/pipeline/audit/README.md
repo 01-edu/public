@@ -4,7 +4,7 @@
 
 ##### Activate the virtual environment. If you used `conda` run `conda activate your_env`.
 
-##### Run ``python --version``.
+##### Run `python --version`.
 
 ###### Does it print `Python 3.x`? x >= 8
 

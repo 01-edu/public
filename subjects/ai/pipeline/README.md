@@ -357,7 +357,7 @@ Preliminary:
   X[[40,135], 3] = np.nan
   ```
 
-- Split the data set in a train set and test set (33%), fit the Pipeline on the train set and predict on the test set. Use ``random_state=43``.
+- Split the data set in a train set and test set (33%), fit the Pipeline on the train set and predict on the test set. Use `random_state=43`.
 
 The pipeline you will implement has to contain 3 steps:
 
