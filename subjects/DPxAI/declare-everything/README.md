@@ -20,7 +20,7 @@ This type of prompt encourages the AI to provide various explanations and exampl
 
 Values need a way to be identified, that's why we use variables. They add meaning to a value by pointing to it. It's like a **label**, a way to name things.
 
-If we say ``20``, it doesn't carry much meaning, _`20` what?_
+If we say `20`, it doesn't carry much meaning, _`20` what?_
 
 Imagine we are talking about robots. You have 20 robot parts.
 
