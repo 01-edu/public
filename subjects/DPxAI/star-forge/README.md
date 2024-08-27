@@ -4,7 +4,7 @@
 
 Just as the Star Forge is a legendary source of power and innovation in the Star Wars universe, Artificial Intelligence tools are the cutting-edge instruments for modern learners. Imagine harnessing AI in your learning journey, forging new paths of understanding and creating knowledge with precision.
 
-> Let's discover the new subject section you will find from now on in the next subjects:
+> Let's discover together the new subject section you will find from now on in the next subjects:
 
 ### AI-Powered Learning Techniques
 
