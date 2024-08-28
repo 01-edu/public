@@ -67,7 +67,7 @@ This div will serve as the container for all the robot portraits.
 - Inside your gallery `<div>`, create an `<h1>` tag inside a `<div>` with an `id` of `title`. Then put the name of your gallery inside it !
 
 ```HTML
-    <div id="idname">
+    <div id="title">
         <h1>your favorite gallery name</h1>
     </div>
 ```
@@ -178,6 +178,14 @@ p {
 
 h3 {
   margin-bottom: 10px;
+}
+
+#title
+{
+    text-align: center;
+    margin: 1rem;
+    background-color: #383086;
+    color: rgb(158, 235, 223);;
 }
 ```
 
