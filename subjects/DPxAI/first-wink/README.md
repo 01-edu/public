@@ -104,6 +104,10 @@ button.addEventListener('click', handleClick)
 // on the 'click' event, so every time it's clicked
 ```
 
+### Expected result
+
+You can see an example of the expected result [here](https://youtu.be/wuYTorfBViE)
+
 **`Prompt Examples:`**
 
 - "As a beginner, explain to me what is `querySelector` in JavaScript, and how do I use it to select an HTML element by its ID or class?"
@@ -111,7 +115,3 @@ button.addEventListener('click', handleClick)
 - "As a beginner, explain to me how can I change the text content of an `HTML element` using JavaScript?"
 
 - "As a beginner, explain to me how do I use `addEventListener` to make a button respond to a click event in JavaScript?"
-
-### Expected output
-
-[This](https://www.youtube.com/watch?v=Wkar5SmswDo) is what you should see in the browser.
