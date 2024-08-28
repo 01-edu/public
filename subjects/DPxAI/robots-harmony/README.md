@@ -368,8 +368,8 @@ document.addEventListener("keydown", function (event) {
 
 **`Prompt Example:`**
 
-- "What is event.key in JavaScript and how can it be used to detect keyboard inputs?"
-- "How can I use document.querySelector to select multiple elements in JavaScript?"
+- "What is `event.key` in JavaScript and how can it be used to detect keyboard inputs?"
+- "How can I use `document.querySelector` to select multiple elements in JavaScript?"
 
 #### 4- Task 5: Final Touches and Presentation
 
