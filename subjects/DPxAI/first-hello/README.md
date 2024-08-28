@@ -54,6 +54,10 @@ In the JS file, like in the previous exercise, get the HTML `button` element wit
   - Set its class name to words, as defined in the CSS.
   - Use the append method to add the new div inside the torso element.
 
+### Expected result
+
+You can see an example of the expected result [here](https://youtu.be/At4BhyzMxzw)
+
 ### Code Example:
 
 ```js
