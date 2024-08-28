@@ -373,8 +373,6 @@ document.addEventListener("keydown", function (event) {
 
 #### 4- Task 5: Final Touches and Presentation
 
-- Test Everything:
-
 Ensure that all robots are displayed correctly in the gallery.
 
 Make sure all files (robot-gallery.html, robots-harmony.css, gallery-script.js, and any media files) are in the same folder.
