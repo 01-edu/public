@@ -180,12 +180,11 @@ h3 {
   margin-bottom: 10px;
 }
 
-#title
-{
-    text-align: center;
-    margin: 1rem;
-    background-color: #383086;
-    color: rgb(158, 235, 223);;
+#title {
+  text-align: center;
+  margin: 1rem;
+  background-color: #383086;
+  color: rgb(158, 235, 223);
 }
 ```
 
@@ -366,6 +365,11 @@ document.addEventListener("keydown", function (event) {
   //...Here
 });
 ```
+
+**`Prompt Example:`**
+
+- "What is event.key in JavaScript and how can it be used to detect keyboard inputs?"
+- "How can I use document.querySelector to select multiple elements in JavaScript?"
 
 #### 4- Task 5: Final Touches and Presentation
 
