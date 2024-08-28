@@ -45,6 +45,10 @@ In the JS file, like in the previous exercise, get the following elements:
 - The left and right leg elements with the IDs `leg-left` and `leg-right`.
 - Apply the random color to both legs by changing their `backgroundColor`.
 
+### Expected result
+
+You can see an example of the expected result [here](https://youtu.be/QQ0GKGuXgBw)
+
 **`Prompt Example:`**
 
 - "What mistakes should I prevent while changing the background color of multiple elements in JavaScript?"
