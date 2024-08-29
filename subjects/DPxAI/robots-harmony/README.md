@@ -48,9 +48,7 @@ Theses tasks are representing the mandatory part for this raid to be passed succ
 
 #### 1- Create a New HTML File:
 
-Start by creating a new HTML file called `robot-harmony.html`.
-
-Set up the basic structure of the HTML document with a `<head>` and `<body>` inside an `<html>` tag.
+Inside your HTML file, set up the basic structure of the HTML document with a `<head>` and `<body>` inside an `<html>` tag.
 
 #### 2- Give a gallery title:
 
@@ -101,7 +99,7 @@ Under each robot's `</section>`, add an `<h3>` element for the robot's name and 
 
 #### 1- Update the CSS File:
 
-- In your `robots-harmony.css` file, add these styles:
+- In your CSS file, add these styles:
 
 ```css
 * {
@@ -289,17 +287,12 @@ _For Example:_
 
 ### Task 3: Add Interactivity with JavaScript:
 
-#### 1- Create a New JavaScript File:
 
-Create a new JavaScript file called `robots-harmony.js`.
+#### 1- Add Color Change on Key Press:
 
-Link this file to your `robots-harmony.html` file.
+Inside your JavaScript file, write functions that change the colors of different parts of your robots when specific keys are pressed.
 
-#### 2- Add Color Change on Key Press:
-
-You will write JavaScript functions to change the colors of different parts of your robots when specific keys are pressed.
-
-In your `robots-harmony.js`, follow the following steps:
+Follow the following steps:
 
 - **Function to Change Arm Colors**:
 
@@ -375,7 +368,7 @@ document.addEventListener("keydown", function (event) {
 
 Ensure that all robots are displayed correctly in the gallery.
 
-Make sure all files (robot-gallery.html, robots-harmony.css, gallery-script.js, and any media files) are in the same folder.
+Make sure all files (robot-gallery.html, robots-harmony.css, gallery-script.js) are in the same folder submitted to your `Gitea`.
 
 Double-check the code to ensure everything is clean and well-organized.
 
