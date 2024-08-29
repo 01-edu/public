@@ -26,11 +26,24 @@ Go ahead, and let the world see the amazing robots you've created together!
 
 First , remember that you will not be using the platform's code editor. Instead, you can use this online [tool](https://jsfiddle.net/) to create and modify your code.
 
-> Feel free to play with the settings and familiarize yourself with the environment!
+> Feel free to play with the settings and familiarize yourself with the environment!  
 
 **2- How to submit your code:**
 
-------->Louis
+Your project must be handed in by the group captain before the time runs out. This is done by publishing the code on the platform.  
+
+To do so, go to **gitea** by clicking on the logo at the top right of your platform dashboard. (on the captain's account)  
+[![Capture-d-e-cran-2024-08-29-a-19-51-15.png](https://i.postimg.cc/zBRM6BMv/Capture-d-e-cran-2024-08-29-a-19-51-15.png)](https://postimg.cc/N9BprgQv)  
+
+Sign in if you are not already logged in.  
+
+You must create a repository to submit your work.  
+[![Capture-d-e-cran-2024-08-29-a-19-57-32.png](https://i.postimg.cc/59Bt8f3q/Capture-d-e-cran-2024-08-29-a-19-57-32.png)](https://postimg.cc/vDmMsFCc)  
+
+Name it **robots-harmony** and check the box that says **Initialize Repository (Adds .gitignore, License and README).**  
+
+You can now create all your project files to this repository, using the button New file and finalize this step by clicking Commit changes  
+[![Capture-d-e-cran-2024-08-29-a-20-00-08.png](https://i.postimg.cc/G2kqcB15/Capture-d-e-cran-2024-08-29-a-20-00-08.png)](https://postimg.cc/vgZWhZTr)  
 
 **3- Expected files:**
 
