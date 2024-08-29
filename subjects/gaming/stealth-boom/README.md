@@ -6,7 +6,7 @@ In this project, you will have to create a stealth game using Unreal Engine.
 
 The goal of this project is to create a playable gameplay loop around stealth mechanics.
 
-The basics assets you will need for this project can be found in the [StealthBoomAssets.zip](https://assets.01-edu.org/Unreal-Engine-Projects/StealthBoomAssets.zip) file. It contains the basic animations, character, enemies and props you will need for this project.
+The basics assets you will need for this project can be found in the [StealthBoomAssets.zip](https://assets.01-edu.org/gamedev/stealth-boom-assets.zip) file. It contains the basic animations, character, enemies and props you will need for this project.
 
 > NOTE: The assets in the file are intended to help streamline the process of locating assets, not to eliminate it.
 > TIP: Use [itch.io](https://www.itch.io) to get sound effects (not included in the assets file) or to find extra assets
