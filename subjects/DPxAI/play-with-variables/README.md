@@ -52,7 +52,7 @@ console.log("I keep trying , I can't give up! ");
 
 ### Assign re-assign
 
-Remember the ``let`` keyword used to declare new variables.
+Remember the `let` keyword used to declare new variables.
 
 > Note that we can't have multiple variables with the same identifier otherwise JS wouldn't know which one is which.
 
@@ -60,7 +60,7 @@ Redeclaring a variable will crash !
 
 But it is still possible to use the = (assignment operator) to change its value !
 
-> Note that sometimes you may find variable declared with   ``const``. This means that the assignation is constant and can never be re-assigned !
+> Note that sometimes you may find variable declared with `const`. This means that the assignation is constant and can never be re-assigned !
 
 > It is used to protect your code against errors, but you can always use `let` in its place..
 
@@ -68,7 +68,7 @@ But it is still possible to use the = (assignment operator) to change its value 
 
 #### **`Prompt Example`**:
 
-- "As a beginner, what is the difference between let and ``const`` in JavaScript?"
+- "As a beginner, what is the difference between let and `const` in JavaScript?"
 - "As a beginner, how do I reassign a value to an already declared variable in JavaScript?"
 
 ### Instructions
