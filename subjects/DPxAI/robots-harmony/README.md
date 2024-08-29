@@ -52,19 +52,9 @@ Start by creating a new HTML file called `robot-harmony.html`.
 
 Set up the basic structure of the HTML document with a `<head>` and `<body>` inside an `<html>` tag.
 
-#### 2- Create a Container for the Robots:
+#### 2- Give a gallery title:
 
-Inside the `<body>`, create a div element with the ID gallery.
-
-This div will serve as the container for all the robot portraits.
-
-```html
-<div id="gallery"></div>
-```
-
-#### 3- Include a title and each Robot:
-
-- Inside your gallery `<div>`, create an `<h1>` tag inside a `<div>` with an `id` of `title`. Then put the name of your gallery inside it !
+- Inside your `<body>` , create an `<h1>` tag inside a `<div>` with an `id` of `title`. Then put the name of your gallery inside it !
 
 ```HTML
     <div id="title">
@@ -72,7 +62,17 @@ This div will serve as the container for all the robot portraits.
     </div>
 ```
 
-- Each team member should copy their robot's HTML structure (the one you provided in the `first-move.html` exercise) and paste it inside the `gallery` div.
+#### 3- Put your robots inside the gallery:
+
+- Inside the `<body>`, create a div element with the `id` `gallery`.
+
+- This div will serve as the container for all the robot portraits.
+
+```html
+<div id="gallery"></div>
+```
+
+- Each team member should copy their robot's HTML structure (the one you provided in the `first-move.html` exercise) and paste it inside this `gallery` div.
 
 - Ensure each robot is placed inside its own div with the class `name-portrait`, for example:
 
@@ -202,7 +202,7 @@ h3 {
 }
 ```
 
-- Add the following block of style to all you class's of `name-robot`. To do so, we follow the rule:
+- Add the following block of style to all your class's of `name-robot`. To do so, we follow the rule:
 
 ```css
 .class-one,
@@ -333,7 +333,7 @@ In your `robots-harmony.js`, follow the following steps:
 - **Function to Change Face Colors**:
 
   - Create a function named `changeFaceColor`.
-  - Follow the same steps as the `changeArmColor` function but target the `face`.
+  - Follow the same steps as the `changeArmColor` function but target the `eyes`. (Yes, pay attention, the `id` that changes the face color is called `eyes`!)
 
 #### 3- Adding Event Listeners for Keyboard Input:
 
