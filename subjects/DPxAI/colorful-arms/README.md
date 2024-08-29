@@ -62,10 +62,6 @@ We provide you with the variable `randomColor`, that stores a random color in ea
 
 - Apply the random color to both arms by changing their `backgroundColor`.
 
-### Expected result
-
-You can see an example of the expected result [here](https://youtu.be/KjTBuAmUnk4)
-
 ### Code Example:
 
 ```js
@@ -88,6 +84,10 @@ const handleChangeArmColor = (event) => {
 // Attach the handleChangeArmColor function to the 'arm-color' button
 armColorButton.addEventListener("click", handleChangeArmColor);
 ```
+
+### Expected result
+
+You can see an example of the expected result [here](https://youtu.be/KjTBuAmUnk4)
 
 **`Prompt Example:`**
 
