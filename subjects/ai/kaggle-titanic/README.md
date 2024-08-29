@@ -46,10 +46,8 @@ project
 |   |   gender_submission.csv
 │
 └───notebook
-│   │   EDA.ipynb
-|
-|───scripts
-│
+│   │   main.ipynb
+
 
 ```
 
@@ -59,21 +57,19 @@ project
 
 - `username.txt` contains the username, the last modified date of the file **has to correspond to the first day of the project**.
 
-- `EDA.ipynb` contains the exploratory data analysis. This file should contain all steps of data analysis that contributed or not to improve the accuracy. It has to be commented so that the reviewer can understand the analysis and run it without any problem.
-
-- `scripts` contains python file(s) that perform(s) the feature engineering, the model's training and prediction on the test set. It could also be one single Jupyter Notebook. It has to be commented to help the reviewers understand the approach and run the code without any bugs.
+- `main.ipynb` This file (single Jupyter Notebook) should contain all steps of data analysis that contributed or not to improve the accuracy, the feature engineering, the model's training and prediction on the test set. It has to be commented to help the reviewers understand the approach and run the code without any bugs.
 - **Submit your predictions on the Kaggle's competition platform**. Check your ranking and score in the leaderboard.
 
 ### Scores
 
 In order to validate the project you will have to score at least **79% accuracy on the Leaderboard**:
 
-- 79% accuracy is the minimum score to validate the project.
+- 78.9% accuracy is the minimum score to validate the project.
 
 Scores indication:
 
-- 79% difficult - minimum required
-- 81% very difficult: smart feature engineering needed
+- 78.9% difficult - minimum required
+- 80% very difficult: smart feature engineering needed
 - More than 83%: excellent that corresponds to the top 2% on Kaggle
 - More than 85%: cheating
 
@@ -107,8 +103,6 @@ Iteration 2
 Iteration 3:
 
 - Perform an EDA. Make assumptions and check them. Example: What if first class passengers survived more. Check the assumption through EDA and create relevant features to help the model capture the information.
-
-- Run a gridsearch
 
 Iteration 4:
 
