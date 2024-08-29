@@ -7,11 +7,14 @@ In this project, you will have to create a stealth game using Unreal Engine.
 The goal of this project is to create a playable gameplay loop around stealth mechanics.
 
 The basics assets you will need for this project can be found in the [StealthBoomAssets.zip](https://assets.01-edu.org/Unreal-Engine-Projects/StealthBoomAssets.zip) file. It contains the basic animations, character, enemies and props you will need for this project.
->NOTE: The assets in the file are intended to help streamline the process of locating assets, not to eliminate it.
->TIP: Use [itch.io](https://www.itch.io) to get sound effects (not included in the assets file) or to find extra assets
+
+> NOTE: The assets in the file are intended to help streamline the process of locating assets, not to eliminate it.
+> TIP: Use [itch.io](https://www.itch.io) to get sound effects (not included in the assets file) or to find extra assets
 
 ### Resources
+
 Here are some resources to help you tackle potential project challenges:
+
 - [behavior-tree-in-unreal-engine](https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-tree-in-unreal-engine---quick-start-guide)
 - [decal materials and decal actors](https://dev.epicgames.com/documentation/en-us/unreal-engine/decal-materials-in-unreal-engine?application_version=5.4)
 - for inspiration look at games like metal gear solid 1/2/3.
@@ -47,11 +50,11 @@ The following aspects should be fulfilled:
   - When the player successfully completes his mission, a pop up should appear saying that the mission is completed.
 
 - Gun mechanics:
+
   - a widget displaying the number of bullets
   - when the number of bullets is 0 the player is unable to shoot
   - shooting should have a sound effect and visual effect
   - Bullets visual impact on walls
-
 
   - Enemy AI:
     - Your game should contain atleast 2 enemy types `Melee` and `Ranged`
@@ -75,6 +78,7 @@ The following aspects should be fulfilled:
 - A game should not last longer than 6 minutes. After that the same choices should appear as when the player dies.
 
 ### Bonus
+
 - use your own assets to create a game in your own style by either searching online or creating them yourself
 
 - have more enemy types e.g a turret that is stationary but deals great damage, etc...

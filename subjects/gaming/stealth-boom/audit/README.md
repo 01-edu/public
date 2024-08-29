@@ -44,7 +44,6 @@
 
 ###### When the goal of the player is successfully completed, does a pop up appear saying that the mission is completed?
 
-
 ##### Enemies
 
 ###### Does the game contain at least 2 enemy types (ranged and melee)
