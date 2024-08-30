@@ -60,7 +60,7 @@ let twiceMyAge = 33 * 2;
 
 ### Placeholders
 
-JavaScript allows you to include expressions within strings using template literals. This is done using backticks ``(`)`` and the `${}` syntax to include expressions.
+JavaScript allows you to include expressions within strings using template literals. This is done using backticks ``(`)`` and the ``${}`` syntax to include expressions.
 
 #### Example
 
