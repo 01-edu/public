@@ -118,7 +118,7 @@ We provide you a variable `robotParts` that contains some elements. You will hav
 - A variable `firstPart` for the first element of the `robotParts` list
 - A variable `lastPart` for the last element of the `robotParts` list
 - A variable `comboParts` as an array of 2 elements, the last and the first element of the `robotParts` list, in that order.
-  Example: if robotParts is `[1, 2, 3]`
+  Example: if `robotParts` is `[1, 2, 3]`
 
 -`firstPart` would be `1`
 
