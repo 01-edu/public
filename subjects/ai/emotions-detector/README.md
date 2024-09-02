@@ -1,18 +1,22 @@
 ## Emotions detection with Deep Learning
 
 Cameras are everywhere. Videos and images have become one of the most interesting data sets for artificial intelligence.
-Image processing is a quite broad research area, not just filtering, compression, and enhancement. Besides, we are even interested in the question, “what is in images?”, i.e., content analysis of visual inputs, which is part of the main task of computer vision.
+Image processing is a quite broad research area, not just filtering, compression, and enhancement.
+
+Besides, we are even interested in the question, “what is in images?”, i.e., content analysis of visual inputs, which is part of the main task of computer vision.
+
 The study of computer vision could make possible such tasks as 3D reconstruction of scenes, motion capturing, and object recognition, which are crucial for even higher-level intelligence such as image and video understanding, and motion understanding.
-For this 2 months project we will
-focus on two tasks:
+
+For this project we will focus on two tasks:
 
 - emotion classification
 - face tracking
 
 With the computing power exponentially increasing the computer vision field has been developing exponentially. This is a key element because the computer power allows using more easily a type of neural networks very powerful on images:
-CNN's (Convolutional Neural Networks). Before the CNNs were democratized, the algorithms used relied a lot on human analysis to extract features which obviously time-consuming and not reliable. If you're interested in the "old
-school methodology" [this article](https://towardsdatascience.com/classifying-facial-emotions-via-machine-learning-5aac111932d3) explains it.
-The history behind this field is fascinating! [Here](https://kapernikov.com/basic-introduction-to-computer-vision/) is a short summary of its history.
+
+- CNN's (Convolutional Neural Networks). Before the CNNs were democratized, the algorithms used relied a lot on human analysis to extract features which obviously time-consuming and not reliable. If you're interested in the "old
+  school methodology" [this article](https://towardsdatascience.com/classifying-facial-emotions-via-machine-learning-5aac111932d3) explains it.
+  The history behind this field is fascinating! [Here](https://kapernikov.com/basic-introduction-to-computer-vision/) is a short summary of its history.
 
 ### Project goal and suggested timeline
 
@@ -39,7 +43,9 @@ The two steps are detailed below.
 ### Face emotions classification
 
 Emotion detection is one of the most researched topics in the modern-day machine learning arena. The ability to accurately detect and identify an emotion opens up numerous doors for Advanced Human Computer Interaction.
-The aim of this project is to detect up to seven distinct facial emotions in real time. This project runs on top of a Convolutional Neural Network (CNN) that is built with the help of Keras whose backend is TensorFlow in Python.
+The aim of this project is to detect up to seven distinct facial emotions in real time.
+
+This project runs on top of a Convolutional Neural Network (CNN) that is built with the help of Keras whose backend is TensorFlow in Python.
 The facial emotions that can be detected and classified by this system are Happy, Sad, Angry, Surprise, Fear, Disgust and Neutral.
 
 Your goal is to implement a program that takes as input a video stream that contains a person's face and that predicts the emotion of the person.
@@ -49,10 +55,10 @@ Your goal is to implement a program that takes as input a video stream that cont
 - Download and unzip the [data here](https://assets.01-edu.org/ai-branch/project3/emotions-detector.zip).
   This dataset was provided for this past [Kaggle challenge](https://www.kaggle.com/competitions/challenges-in-representation-learning-facial-expression-recognition-challenge/overview).
   It is possible to find more information about on the challenge page. Train a CNN on the dataset `train.csv`. Here is an [example of architecture](https://www.quora.com/What-is-the-VGG-neural-network) you can implement.
-  **The CNN has to perform more than 70% on the test set**. You can use the `test_with_emotions.csv` file for this. You will see that the CNNs take a lot of time to train.
+  **The CNN has to perform more than 60% on the test set**. You can use the `test_with_emotions.csv` file for this. You will see that the CNNs take a lot of time to train.
   You don't want to overfit the neural network. I strongly suggest to use early stopping, callbacks and to monitor the training using the `TensorBoard`.
 
-You have to save the trained model in `my_own_model.pkl` and to explain the chosen architecture in `my_own_model_architecture.txt`. Use `model.summary())` to print the architecture.
+You have to save the trained model in `final_emotion_model.keras` and to explain the chosen architecture in `final_emotion_model_arch.txt`. Use `model.summary())` to print the architecture.
 It is also expected that you explain the iterations and how you end up choosing your final architecture. Save a screenshot of the `TensorBoard` while the model's training in `tensorboard.png` and save a plot with the learning curves showing the model training and stopping BEFORE the model starts overfitting in `learning_curves.png`.
 
 - Optional: Use a pre-trained CNN to improve the accuracy. You will find some huge CNN's architecture that perform well. The issue is that it is expensive to train them from scratch.
@@ -86,13 +92,10 @@ project
 ├── environment.yml
 ├── README.md
 ├── results
-│   ├── hack_cnn
-│   │   ├── hacked_image.png
-│   │   └── input_image.png
 │   ├── model
 │   │   ├── learning_curves.png
-│   │   ├── my_own_model_architecture.txt
-│   │   ├── my_own_model.pkl
+│   │   ├── final_emotion_model_arch.txt
+│   │   ├── final_emotion_model.keras
 │   │   ├── pre_trained_model_architecture.txt
 │   │   └── pre_trained_model.pkl
 │   └── preprocessing_test
@@ -101,7 +104,7 @@ project
 │       ├── image_n.png
 │       └── input_video.mp4
 └── scripts
-    ├── hack_the_cnn.py
+    |__ validation_loss_accuracy.py
     ├── predict_live_stream.py
     ├── predict.py
     ├── preprocess.py
@@ -114,7 +117,7 @@ project
 ```prompt
 python ./scripts/predict.py
 
-Accuracy on test set: 72%
+Accuracy on test set: 60%
 
 ```
 
