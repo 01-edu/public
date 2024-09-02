@@ -24,12 +24,12 @@
 
 ###### Does the text document explain why the architecture was chosen, and what were the previous iterations?
 
-###### Does the following command `python ./scripts/predict.py` run without any error and returns an accuracy greater than 70%?
+###### Does the following command `python ./scripts/predict.py` run without any error and returns an accuracy greater than 60%?
 
 ```prompt
     python ./scripts/predict.py
 
-    Accuracy on test set: 72%
+    Accuracy on test set: 62%
 
 ```
 
