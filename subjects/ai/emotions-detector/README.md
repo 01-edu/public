@@ -117,7 +117,7 @@ project
 ```prompt
 python ./scripts/predict.py
 
-Accuracy on test set: 60%
+Accuracy on test set: 62%
 
 ```
 
