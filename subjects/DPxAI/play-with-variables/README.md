@@ -4,7 +4,7 @@
 
 ### Context
 
-If things get a little hectic at times, take the time to get closer to your peers so that you can think, share and move forward together.
+Remember that if things get a little hectic at times, take the time to get closer to your peers so that you can think, share and move forward together.
 
 > Keep Going!
 
