@@ -76,6 +76,6 @@ Don't forget to test your code before submitting it, using the `Run` button.
 
 Videos designed to give **hints** are assigned to each quest. It is strongly suggested to watch them as you go.
 
-### Ressources
+### Resources
 
 - [Introduction to JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps)
