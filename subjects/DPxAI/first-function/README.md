@@ -10,7 +10,7 @@ You can create your own functions to give your robot unique abilities and make i
 
 ### AI-Powered Learning Techniques
 
-`Reflective Practice Technique:`
+**Reflective Practice Technique:**
 This type of prompt encourages you to reflect on the concepts you’ve just learned, reinforcing your understanding by applying the concepts in different contexts or scenarios.
 
 Find the examples across the subject ;)

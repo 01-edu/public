@@ -8,7 +8,7 @@ Think about all the objects around you: like your book or robot friend. Each of 
 
 ### AI-Powered Learning Techniques
 
-`Visualization Technique:`
+**Visualization Technique:**
 This type of prompt encourages the AI to explain a concept using diagrams or visual representations to illustrate concepts.
 
 Find the examples across the subject ;)

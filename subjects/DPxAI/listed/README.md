@@ -12,7 +12,7 @@ Let's discover them together!
 
 ### AI-Powered Learning Techniques
 
-`Example-Based Learning Technique:`
+**Example-Based Learning Technique:**
 This type of prompt encourages the AI to provide concrete examples to illustrate concepts, making it easier to understand and apply them.
 
 Find the examples across the subject ;)
