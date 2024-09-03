@@ -12,7 +12,7 @@
     "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nconst typeOfLoggedValues = args.flat().map((v) => typeof v)\nif (!typeOfLoggedValues.includes('string')) {\n  throw Error('you must log a string')\n}"
   },
   {
-    "description": "Log the string Hello There ! in the console",
-    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nconst loggedValues = args.flat().join(' ')\nif (!loggedValues.includes('Hello There !')) {\n  throw Error('you must log the text Hello There !')\n}"
+    "description": "Log the string Hello There! in the console",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nconst loggedValues = args.flat().join(' ')\nif (!loggedValues.includes('Hello There!')) {\n  throw Error('you must log the text Hello There!')\n}"
   }
 ]
