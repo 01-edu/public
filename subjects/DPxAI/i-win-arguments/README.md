@@ -12,7 +12,7 @@ Let's find out more!
 
 ### AI-Powered Learning Techniques
 
-`Code Chunking Technique:`
+**Code Chunking Technique:**
 
 This type of prompt encourages you to break down larger pieces of code into smaller, digestible chunks.
 

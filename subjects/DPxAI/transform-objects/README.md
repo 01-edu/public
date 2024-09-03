@@ -10,7 +10,7 @@ In JavaScript, we use objects to group these properties together, making it easy
 
 ### AI-Powered Learning Techniques
 
-`Reflective Technique:`
+**Reflective Technique:**
 This type of prompt encourages the AI to help learners reflect on their understanding by asking questions and prompting them to think critically about the concepts.
 
 Find the examples across the subject ;)

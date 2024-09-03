@@ -12,7 +12,7 @@ Let's find out more!
 
 ### AI-Powered Learning Techniques
 
-`Guided Practice Technique:`
+**Guided Practice Technique:**
 This type of prompt encourages the AI to guide learners through hands-on practice exercises, providing immediate feedback and helping them build confidence in their skills.
 
 Find the examples across the subject ;)
