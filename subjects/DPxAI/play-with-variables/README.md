@@ -46,7 +46,7 @@ console.log("I keep trying , I can't give up! ");
 // Output: I keep trying, I can't give up!
 ```
 
-#### **`Prompt Example`**:
+#### `**Prompt Example**:`
 
 "As a beginner, how do I include special characters in a string in JavaScript? Give me simple examples too."
 
@@ -56,17 +56,17 @@ Remember the `let` keyword used to declare new variables.
 
 > Note that we can't have multiple variables with the same identifier otherwise JS wouldn't know which one is which.
 
-Redeclaring a variable will crash !
+If you redeclare a variable, it will crash!
 
-But it is still possible to use the = (assignment operator) to change its value !
+But it is still possible to use the = (assignment operator) to change its value!
 
-> Note that sometimes you may find variable declared with `const`. This means that the assignation is constant and can never be re-assigned !
+> Note that sometimes you may find variable declared with `const`. This means that the assignation is constant and can never be re-assigned!
 
 > It is used to protect your code against errors, but you can always use `let` in its place..
 
 > Also you may find online old code using var. We are trying to get rid of `var`s since 2015. It's ancient syntax and it was pretty problematic. Never use it! If you see code using it, try to find a more recent example. That one is outdated.
 
-#### **`Prompt Example`**:
+#### `**Prompt Example**:`
 
 - "As a beginner, what is the difference between let and `const` in JavaScript?"
 - "As a beginner, how do I reassign a value to an already declared variable in JavaScript?"
@@ -84,7 +84,7 @@ But it is still possible to use the = (assignment operator) to change its value 
 
 - The variable `power` has been declared and will be used during the tests.
 
-- You must try to re-assign the power variable to the string value `levelMax`. But without re-declaring it !
+- You must try to re-assign the power variable to the string value `levelMax`. But without re-declaring it!
 
 ---
 
