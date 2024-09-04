@@ -33,66 +33,67 @@ Here are some resources to help you tackle potential project challenges:
 
 The following aspects should be fulfilled:
 
-- Main Menu:
+#### Main Menu:
 
-  - Start the game.
-  - Adjust the general sound of the game.
-  - Change the graphics settings.
-    - When changing the resolution, a pop-up should appear in the middle of the screen asking if the player wants to keep the graphics setting he/she just applied. If `Yes` is clicked within 10 seconds, the settings are set, otherwise, if the 10 seconds delay is over or if the player clicks `No`, the settings go back to the old ones.
-  - Change the mouse sensitivity.
-  - Invert the mouse vertical axis.
+- Option to start the game.
+- Adjust the general sound of the game.
+- Change graphics settings:
+  - When changing the resolution, a pop-up should appear in the middle of the screen, asking if the player wants to keep the newly applied graphics settings. If the player clicks "Yes" within 10 seconds, the settings are confirmed. If the 10 seconds pass or the player clicks "No," the settings revert to the previous ones.
+- Change the mouse sensitivity.
+- Option to invert the mouse vertical axis.
 
-- Map/Level.
+#### Map/Level.
 
-  - This map should contain places for the player to hide from enemies by `Ducking`, `Hiding behind walls and props`.
-  - Pickable ammunition around the map.
-  - Pickable Health around the map.
+- The map should include areas where the player can hide from enemies by `ducking` or taking cover `behind walls and props`.
+- There should be pickable ammunition scattered throughout the map.
+- Health packs should be placed around the map for the player to collect.
 
-- Player:
+#### Player:
 
-  - Walk and run animations.
-  - Shoot animation.
-  - Duck animation.
-  - Melee attack animation.
-  - Blood particles when hit.
-  - A health bar that should go down whenever the player gets damaged. When the player dies, he has the choice to either quit the game, go back to the main menu or start over.
-  - The player mission is up to you, it can be some task to fix, kill all enemies without getting caught or collect documents... Whatever you choose, the player should have enemies on his way to divert him away from his objective.
-  - When the player successfully completes his mission, a pop up should appear saying that the mission is completed.
+- The player should have animations for `walking`, `running`, `shooting`, `ducking`, and performing `melee attacks`.
+- Blood particles should appear when the player is hit.
+- A health bar should decrease whenever the player takes damage.
+- Upon death, the player should have the option to quit the game, return to the main menu, or start over.
+- The player's mission is flexible and can be any of the following: completing a task, eliminating all enemies without being detected, or collecting documents. Regardless of the mission, the player will encounter enemies that attempt to hinder their progress.
+- When the player successfully completes his mission, a pop up should appear saying that the mission is completed.
 
-- Gun mechanics:
+#### Gun mechanics:
 
-  - a widget displaying the number of bullets.
-  - when the number of bullets is 0 the player is unable to shoot.
-  - shooting should have a sound effect and visual effect.
-  - Bullets visual impact on walls.
+- The player should be able to shoot.
+- A widget should display the current number of bullets available to the player.
+- wWhen the bullet count reaches 0, the player should be unable to shoot.
+- Shooting should trigger both a sound effect and a visual effect.
+- Bullets should have a visual impact on walls.
 
-- Enemy:
+#### Enemy:
 
-  - Your game should contain atleast 2 enemy types `Melee` and `Ranged`.
-  - enemy AI should be made with behavior trees.
-  - enemy should be able to patrol around the map in a predefined path.
-  - enemy detects the player, if the player crosses its field of view.
-  - When the player enters the field of view of an enemy, the enemy enters into chasing mode and must start running after the player.
-    - `Ranged` enemies should take cover and shoot at the player.
-    - `melee` enemies should run close to the player and perform melee attacks.
-  - Enemies in chase mode alert nearby enemies making them enter chase mode as well.
-  - If the player leaves the field of view of all enemies for a certain time, the enemies go back to patrol mode.
-  - Enemies should have sounds effect whenever they change from chase to patrol mode, as well as the other way around.
-  - Enemies should have a visual indicator showing whether they are in patrol or chase mode
+- The game should feature at least two types of enemies: `Melee` and `Ranged`.
+- Behavior trees should be used to implement enemy AI.
+- Enemies should be able to patrol predefined paths around the map.
+- Enemies should detect the player if the player enters their field of view.
+- When the player enters the field of view of an enemy, the enemy enters into chasing mode and must start running after the player.
+  - `Ranged` enemies should take cover and shoot at the player.
+  - `melee` enemies should run close to the player and perform melee attacks.
+- Enemies in chase mode alert nearby enemies making them enter chase mode as well.
+- If the player leaves the field of view of all enemies for a certain time, the enemies go back to patrol mode.
+- Enemies should have sounds effect whenever they change from chase to patrol mode, as well as the other way around.
+- Enemies should have a visual indicator showing whether they are in patrol or chase mode
 
-- When pressing `Esc` the game is set on paused and a widget similar to the main menu widget pops up.
-- The player should be able to change the game graphics setting exactly like in the main menu.
-- A game should not last longer than 6 minutes. After that the same choices should appear as when the player dies.
+#### Game loop
+
+- Pressing `Esc` pauses the game, bringing up a widget similar to the main menu.
+- The player should be able to change the game graphics settings exactly as they can in the main menu.
+- The game should last no longer than 6 minutes. After this time, the player is presented with the same choices as when they die: quit the game, return to the main menu, or start over.
 
 ### Bonus
 
-- use your own assets to create a game in your own style by either searching online or creating them yourself
+- Use your own assets to create a game in your own style by either searching online or creating them yourself
 
-- have more enemy types e.g a turret that is stationary but deals great damage, etc...
+- Have more enemy types e.g a turret that is stationary but deals great damage, etc...
 
-- have areas in the game that are locked behind doors that require keys which you can obtain from specific enemies
+- Have areas in the game that are locked behind doors that require keys which you can obtain from specific enemies
 
-- have multiple different weapon types that you can pickup around the map and use to finish the mission
+- Have multiple different weapon types that you can pickup around the map and use to finish the mission
 
 > Do not forget to zip up the project compile and save everything for peer correction.
 > If it is not possible to upload files to Gitea due to their size, use GitHub instead and have a look at [Git LSF](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)

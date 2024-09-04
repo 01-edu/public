@@ -1,16 +1,16 @@
 > Due to file size reason, the solution might be uploaded on GitHub instead of Gitea!
 
-#### Mandatory
+#### Functional
 
 ##### Main Menu
 
-###### Is the main menu with the five options displayed on the screen?
+###### Is the main menu displayed on the screen with all five options visible?
 
-###### Can the general sound of the game be managed directly on the settings menu?
+###### Can the general game sound be adjusted directly from the settings menu?
 
-###### When changing the resolution, does a pop-up get displayed on the screen to confirm the changes we just set?
+###### When changing the resolution, does a confirmation pop-up appear in the center of the screen asking if the player wants to keep the new graphics settings?
 
-###### Does pressing “No” on the graphics confirmation pop-up, resets the settings to the old ones?
+###### If the player presses 'No' on the graphics confirmation pop-up, or if the pop-up is not confirmed within 10 seconds, do the settings revert to the previous ones?
 
 ###### Are the mouse settings (mouse sensitivity, invert mouse vertical axis) functioning according to their descriptions?
 
@@ -24,53 +24,61 @@
 
 ###### Does the player have all the minimal animation required (walking, running, melee attacking, shooting, ducking)?
 
-###### Is there a sound for the guns shooting?
-
-###### Is there a widget displaying the amount of bullets the player has?
-
-###### Is the player unable to shoot when he has no bullets?
-
-###### Are there bullets impacts present when shooting at a wall?
+###### Does the player have a health bar?
 
 ###### Does the player health decreases when he gets damaged?
 
 ###### When the player is hit, are there any blood particles?
 
-###### Does the player have a health bar?
-
 ###### When the player loses all his health (dies), does he get to choose whether to quit the game, go back to the main menu, or to start over?
 
-###### Does the player have a goal?
+###### Does the player have a defined goal or mission?
 
-###### When the goal of the player is successfully completed, does a pop up appear saying that the mission is completed?
+###### Whatever the goal or mission, can you confirm that the player had enemies on his way to divert him away from his objective?
+
+###### When the player successfully completes the goal or mission, does a pop-up appear indicating `mission completion`?
+
+#### Gun Mechanics
+
+###### Is the player able to shoot?
+
+###### Is there a sound for the guns shooting?
+
+###### Is a widget showing the remaining bullet count displayed?
+
+###### Is the player unable to shoot when he has no bullets?
+
+###### Are there bullets impacts present when shooting at a wall?
 
 ##### Enemies
 
-###### Does the game contain at least 2 enemy types (ranged and melee)
+###### Does the game include at least two types of enemies: `Melee` and `Ranged`?
 
-###### Are Behavior Trees used to implement the AI of the enemies?
+###### Is enemy AI implemented using Behavior Trees?
 
 ###### Do the enemies wander around the map?
 
-###### When a player enters the field of view of an enemy, does it switch to chasing mode
+###### When a player enters an enemy's field of view, does the enemy switch to a chasing mode?
 
 ###### Do melee enemies approach the player to perform melee attacks?
 
 ###### Do ranged enemies take cover and shoot at the player?
 
-###### do the enemies go back to patrol mode when the player is hidden from all field of views for a set amount of time?
+###### Do the enemies go back to patrol mode when the player is hidden from all field of views for a set amount of time?
 
-###### do the enemies have a sound effect and visual effect when entering and exiting chase mode?
+###### Do the enemies have a sound effect and visual effect when entering and exiting chase mode?
 
-###### are enemies in chase mode alerting nearby enemies ?
+###### Are enemies in chase mode alerting nearby enemies ?
 
 ##### Game loop
 
-###### When 'esc' is pressed does the game pause and a widget similar to the main menu is displayed?
+###### When 'Esc' is pressed does the game pause and a widget similar to the main menu is displayed?
 
-###### can the player perform all the actions that appear in the menu when the game is paused?
+###### Can the player perform all the actions that appear in the menu when the game is paused?
 
-###### Is the lifespan of the game at least 6 minutes long from launch to mission completed?
+###### Does the game loop last no more than 6 minutes from start to finish?
+
+###### Is a widget that shows the player's remaining time displayed?
 
 #### Bonus
 
@@ -78,6 +86,6 @@
 
 ###### +Are there more enemy types than the basic melee and ranged enemies?
 
-###### +Are there areas in the game that require an item to access ?
+###### +Are there areas in the game that require an item to access?
 
 ###### +Are there different weapon types that you can pick up and use?
