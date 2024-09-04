@@ -52,7 +52,7 @@ console.log("I keep trying , I can't give up! ");
 
 ### Assign re-assign
 
-Remember the `let` keyword used to declare new variables.
+Remember the `let` keyword is used to declare new variables.
 
 > Note that we can't have multiple variables with the same identifier otherwise JS wouldn't know which one is which.
 
