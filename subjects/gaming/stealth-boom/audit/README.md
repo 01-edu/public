@@ -1,8 +1,6 @@
 > Due to file size reason, the solution might be uploaded on GitHub instead of Gitea!
 
-#### Functional
-
-##### Main Menu
+#### Main Menu
 
 ###### Is the main menu displayed on the screen with all five options visible?
 
@@ -14,13 +12,13 @@
 
 ###### Are the mouse settings (mouse sensitivity, invert mouse vertical axis) functioning according to their descriptions?
 
-##### Map / Level
+#### Map / Level
 
 ###### Does the map contain props/walls for the player to hide from enemies?
 
 ###### Does the map contain pickable ammunition and health placed around?
 
-##### Player Mechanics
+#### Player Mechanics
 
 ###### Does the player have all the minimal animation required (walking, running, melee attacking, shooting, ducking)?
 
@@ -38,7 +36,7 @@
 
 ###### When the player successfully completes the goal or mission, does a pop-up appear indicating `mission completion`?
 
-##### Gun Mechanics
+#### Gun Mechanics
 
 ###### Is the player able to shoot?
 
@@ -50,7 +48,7 @@
 
 ###### Are there bullets impacts present when shooting at a wall?
 
-##### Enemies
+#### Enemies
 
 ###### Does the game include at least two types of enemies: `Melee` and `Ranged`?
 
@@ -70,7 +68,7 @@
 
 ###### Are enemies in chase mode alerting nearby enemies ?
 
-##### Game loop
+#### Game loop
 
 ###### When 'Esc' is pressed does the game pause and a widget similar to the main menu is displayed?
 
