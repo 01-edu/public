@@ -38,7 +38,7 @@
 
 ###### When the player successfully completes the goal or mission, does a pop-up appear indicating `mission completion`?
 
-#### Gun Mechanics
+##### Gun Mechanics
 
 ###### Is the player able to shoot?
 
