@@ -11,7 +11,6 @@ In JavaScript, we use objects to group these properties together, making it easy
 ### AI-Powered Learning Techniques
 
 **Contextual Learning Technique:**
-
 This strategy places learning within a real-world or practical context by having the AI relate concepts to scenarios you might encounter in everyday life or your work. It helps you understand the relevance of what you’re learning and how to apply it.
 
 Find the examples across the subject ;)
