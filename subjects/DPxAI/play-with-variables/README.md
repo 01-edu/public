@@ -58,7 +58,7 @@ Remember the `let` keyword is used to declare new variables.
 
 If you redeclare a variable, it will crash!
 
-But it is still possible to use the = (assignment operator) to change its value!
+But it is still possible to use the `=` (assignment operator) to change its value!
 
 > Note that sometimes you may find variable declared with `const`. This means that the assignation is constant and can never be re-assigned!
 
