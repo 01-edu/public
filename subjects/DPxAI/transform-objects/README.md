@@ -10,8 +10,9 @@ In JavaScript, we use objects to group these properties together, making it easy
 
 ### AI-Powered Learning Techniques
 
-**Reflective Technique:**
-This type of prompt encourages the AI to help learners reflect on their understanding by asking questions and prompting them to think critically about the concepts.
+**Contextual Learning Technique:**
+
+This strategy places learning within a real-world or practical context by having the AI relate concepts to scenarios you might encounter in everyday life or your work. It helps you understand the relevance of what you’re learning and how to apply it.
 
 Find the examples across the subject ;)
 
@@ -54,9 +55,9 @@ robot.code = undefined;
 
 #### **`Prompt Example`**:
 
-- "How does modifying an object's property differ from adding a new property or removing an existing one?"
+- "Think about your pet. How would you use an object to keep track of its name, age, and favorite food?"
 
-- "Can you think of a scenario where using an object to group related properties would be more beneficial than using separate variables?"
+- "You have a collection of books. How could you use an object to remember the title, author, and how many pages each book has?"
 
 ### Instructions
 
