@@ -9,8 +9,8 @@ The study of computer vision could make possible such tasks as 3D reconstruction
 
 For this project we will focus on two tasks:
 
-- emotion classification
-- face tracking
+- Emotion classification
+- Face tracking
 
 With the computing power exponentially increasing the computer vision field has been developing exponentially. This is a key element because the computer power allows using more easily a type of neural networks very powerful on images:
 
@@ -38,7 +38,8 @@ The two steps are detailed below.
   I suggest to focus on Week 1 and 2 and to spend less time on Week 3 and 4. Don't worry the time scoping of such MOOCs are conservative. You can attend the lessons for free!
 
 - Participate in [this challenge](https://www.kaggle.com/c/digit-recognizer/code). The MNIST dataset is a reference in computer vision. Researchers use it as a benchmark to compare their models.
-  Start first with a logistic regression to understand how to handle images in Python. And then train your first CNN on this data set.
+
+- Start first with a logistic regression to understand how to handle images in Python. And then train your first CNN on this data set.
 
 ### Face emotions classification
 
