@@ -35,7 +35,7 @@ The two steps are detailed below.
 ### Preliminary:
 
 - Take [this course](https://www.coursera.org/learn/convolutional-neural-networks). This course is a reference for many reasons and one of them is the creator: **Andrew Ng**. He explains the basics of CNNs but also some more advanced topics as transfer learning, siamese networks etc ...
-  I suggest to focus on Week 1 and 2 and to spend less time on Week 3 and 4. Don't worry the time scoping of such MOOCs are conservative. You can attend the lessons for free!
+- I suggest to focus on Week 1 and 2 and to spend less time on Week 3 and 4. Don't worry the time scoping of such MOOCs are conservative. You can attend the lessons for free!
 
 - Participate in [this challenge](https://www.kaggle.com/c/digit-recognizer/code). The MNIST dataset is a reference in computer vision. Researchers use it as a benchmark to compare their models.
 
