@@ -14,9 +14,8 @@ For this project we will focus on two tasks:
 
 With the computing power exponentially increasing the computer vision field has been developing exponentially. This is a key element because the computer power allows using more easily a type of neural networks very powerful on images:
 
-- CNN's (Convolutional Neural Networks). Before the CNNs were democratized, the algorithms used relied a lot on human analysis to extract features which obviously time-consuming and not reliable. If you're interested in the "old
-  school methodology" [this article](https://towardsdatascience.com/classifying-facial-emotions-via-machine-learning-5aac111932d3) explains it.
-  The history behind this field is fascinating! [Here](https://kapernikov.com/basic-introduction-to-computer-vision/) is a short summary of its history.
+- CNN's (Convolutional Neural Networks). Before the CNNs were democratized, the algorithms used relied a lot on human analysis to extract features which obviously time-consuming and not reliable. If you're interested in the "old school methodology" [this article](https://towardsdatascience.com/classifying-facial-emotions-via-machine-learning-5aac111932d3) explains it.
+The history behind this field is fascinating! [Here](https://kapernikov.com/basic-introduction-to-computer-vision/) is a short summary of its history.
 
 ### Project goal and suggested timeline
 
