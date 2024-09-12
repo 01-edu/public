@@ -1,16 +1,20 @@
 ## Credit scoring
 
+### 1. Introduction :
+
+Hey there, future credit scoring expert! Ready to dive into the exciting world of predicting loan defaults? You're in for a treat! This project is all about building a nifty model that can help figure out how likely someone is to pay back their loan. Cool, right?
+
 The goal of this project is to implement a scoring model based on various source of data ([check data documentation](./readme_data.md)) that returns the probability of default. In a nutshell, credit scoring represents an evaluation of how well the bank's customer can pay and is willing to pay off debt. It is also required that you provide an explanation of the score. For example, your model returns that the probability that one client doesn't pay back the loan is very high (90%). The reason behind is that variable_xxx which represents the ability to pay back the past loan is low. The output interpretability will appear in a visualization.
 
-The ability to understand the underlying factors of credit scoring is important. Credit scoring is subject to more and more regulation, so transparency is key. And more generally, more and more companies prefer transparency to black box models.
+### 2. Learning objective :
 
-### Resources
+The ability to understand the underlying factors of credit scoring is important. Credit scoring is subject to more and more regulation, so transparency is key. And more generally, more and more companies prefer transparency to black box models.
 
 Historical timeline of machine learning techniques applied to credit scoring
 
 - [Machine Learning or Econometrics for Credit Scoring: Let’s Get the Best of Both Worlds](https://hal.archives-ouvertes.fr/hal-02507499v3/document)
 
-### Scoring model
+#### a - Scoring model
 
 There are 3 expected deliverables associated with the scoring model:
 
@@ -21,7 +25,7 @@ There are 3 expected deliverables associated with the scoring model:
   - The model is validated if the **AUC on the test set is higher than 75%**.
   - The labelled test data is not publicly available. However, a Kaggle competition uses the same data. The procedure to evaluate test set submission is the same as the one used for the project 1.
 
-### Kaggle submission
+#### b - Kaggle submission
 
 The way the Kaggle platform works is explained in the challenge overview page. If you need more details, I suggest [this resource](https://towardsdatascience.com/getting-started-with-kaggle-f9138b35ae18) that gives detailed explanations.
 
@@ -32,7 +36,7 @@ The way the Kaggle platform works is explained in the challenge overview page. I
   - Why the accuracy shouldn't be used in that case?
   - Limit and possible improvements
 
-### Model interpretability
+#### c - Model interpretability
 
 This part hasn't been covered during the piscine. Take the time to understand this key concept.
 There are different level of transparency:
@@ -55,16 +59,16 @@ Choose the 3 clients of your choice, compute the score, run the visualizations o
   - 1 on which the model is correct and the other on which the model is wrong. Try to understand why the model got wrong on this client.
 - Take 1 client from the test set
 
-### Optional
+#### d - Optional
 
 Implement a dashboard (using [Dash](https://dash.plotly.com/)) that takes as input the customer id and that returns the score and the required visualizations.
 
-### Deliverables
+### 3. Project repository structure:
 
 ```
 project
 │   README.md
-│   environment.yml
+│   requirements.txt
 │
 └───data
 │   │   ...
@@ -94,16 +98,16 @@ project
 ```
 
 - `README.md` introduces the project and shows the username.
-- `environment.yml` contains all libraries required to run the code.
+- `requirements.txt` contains all libraries required to run the code.
 - `username.txt` contains the username, the last modified date of the file **has to correspond to the first day of the project**.
 - `EDA.ipynb` contains the exploratory data analysis. This file should contain all steps of data analysis that contributed or not to improve the score of the model. It has to be commented so that the reviewer can understand the analysis and run it without any problem.
 
 - `scripts` contains python file(s) that perform(s) the feature engineering, the model's training and prediction on the test set. It could also be one single Jupyter Notebook. It has to be commented to help the reviewers understand the approach and run the code without any bugs.
 
-### Useful resources
+### 4. Advice
+
+Remember, creating a great credit scoring model is like baking a perfect cake - it takes the right ingredients, careful preparation, and a dash of creativity. You've got this!
 
 - [Interpreting machine learning models](https://towardsdatascience.com/interpretability-in-machine-learning-70c30694a05f)
-
-### Files needed for this project
 
 [Files](https://assets.01-edu.org/ai-branch/project5/home-credit-default-risk.zip)
