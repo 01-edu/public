@@ -19,7 +19,6 @@ Suggested role play questions include:
 - What is metadata in the context of digital images, and why is it important?
 - How does steganography work, and what are its potential uses and risks?
 - What challenges did you face while developing the Image Inspector tool, and how did you address them?
-- How does the Image Inspector tool help in identifying hidden information within images?
 - How can this tool be used in real-life digital forensics or cybersecurity scenarios?
 - What ethical considerations should be taken into account when analyzing images for hidden data?
 
@@ -52,7 +51,7 @@ $> image-inspector --help
 2. **Metadata Extraction Option:**
 
 ```sh
-$> image-inspector -m image-example.jpeg -o metadata.txt
+$> image-inspector -m -o metadata.txt image-example1.jpeg
 ```
 
 ###### Does the output correctly extract and display metadata such as geolocation, device information, and date/time?
@@ -62,7 +61,7 @@ $> image-inspector -m image-example.jpeg -o metadata.txt
 3. **Steganography Detection Option:**
 
 ```sh
-$> image-inspector -s image-example.jpeg -o hidden_data.txt
+$> image-inspector -s -o hidden_data.txt image-example1.jpeg
 ```
 
 ###### Does the output correctly detect and extract any hidden PGP keys or other concealed information within the image?
@@ -72,7 +71,11 @@ $> image-inspector -s image-example.jpeg -o hidden_data.txt
 ##### Testing with Images
 
 **You will be provided with an example image to test the students tool. Feel free to test with other images.**
-The example image attached: [image-example.jpeg](../resources/image-example.jpeg)
+The example image attached: 
+[image-example1.jpeg](resources/image-example1.jpeg)
+[image-example2.jpeg](resources/image-example2.jpeg)
+[image-example3.jpeg](resources/image-example3.jpeg)
+[image-example4.jpeg](resources/image-example4.jpeg)
 
 ###### Test the tool with the provided example image and at least one other image to ensure the tool's robustness.
 
