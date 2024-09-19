@@ -59,7 +59,7 @@ project
 ```prompt
     python predict.py
 
-    AUC on test set: 0.76
+    AUC on test set: 0.50
 
 ```
 

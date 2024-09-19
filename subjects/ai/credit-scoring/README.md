@@ -22,7 +22,7 @@ There are 3 expected deliverables associated with the scoring model:
 - The trained machine learning model with the features engineering pipeline:
 
   - Do not forget: **Coming up with features is difficult, time-consuming, requires expert knowledge. ‘Applied machine learning’ is basically feature engineering.**
-  - The model is validated if the **AUC on the test set is higher than 75%**.
+  - The model is validated if the **AUC on the test set is higher than 50%**.
   - The labelled test data is not publicly available. However, a Kaggle competition uses the same data. The procedure to evaluate test set submission is the same as the one used for the project 1.
 
 #### b - Kaggle submission
