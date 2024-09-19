@@ -31,6 +31,7 @@ The tool you are about to build will receive as arguments the name of a file con
 - The punctuation mark `'` will always be found with another instance of it and they should be placed to the right and left of the word in the middle of them, without any spaces. (Ex: "I am exactly how they describe me: ' awesome '" -> "I am exactly how they describe me: 'awesome'")
   - If there are more than one word between the two `' '` marks, the program should place the marks next to the corresponding words (Ex: "As Elton John said: ' I am the most well-known homosexual in the world '" -> "As Elton John said: 'I am the most well-known homosexual in the world'")
 - Every instance of `a` should be turned into `an` if the next word begins with a vowel (`a`, `e`, `i`, `o`, `u`) or a `h`. (Ex: "There it was. A amazing rock!" -> "There it was. An amazing rock!").
+
 ### Allowed packages
 
 - [Standard Go](https://golang.org/pkg/) packages are allowed.
@@ -54,10 +55,10 @@ $ go run . sample.txt result.txt
 $ cat result.txt
 There is no greater agony than bearing an untold story inside you.
 $ cat sample.txt
-Punctuation tests are ... kinda boring ,don't you think !?
+Punctuation tests are ... kinda boring ,what do you think ?
 $ go run . sample.txt result.txt
 $ cat result.txt
-Punctuation tests are... kinda boring, don't you think!?
+Punctuation tests are... kinda boring, what do you think?
 ```
 
 This project will help you learn about :
