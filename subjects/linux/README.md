@@ -24,11 +24,13 @@ It will also allow you to learn some tricks to better control your machine and s
 
 ### Virtualization
 
-To practice in a standardized way and without the risk of altering your own operating system, install the hypervisor [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
+To practice in a standardized manner and without the risk of altering your own operating system, you should install a virtualization software that is compatible with your chip architecture.
 
-This will allow you to run virtual machines (virtual computers accessible through a window).
+For X86-64 chips, we recommend using [VirtualBox](https://www.virtualbox.org/wiki/Downloads). For Apple Silicon chips, we recommend using [UTM](https://mac.getutm.app/).
 
-This way, whatever your operating system, you can, for example, run Linux, Windows & macOS in 3 separate windows at the same time.
+This allows you to run virtual machines - virtual computers accessible through a window. This way, you can run Linux, Windows, and macOS in separate windows at the same time, regardless of your operating system.
+
+### Installation
 
 ### Installation
 
@@ -42,4 +44,4 @@ Install Debian (ISO installer "netinst" is recommended) in a VM (Virtual Machine
 
 ### Shut down
 
-Gracefully close the VM using "ACPI Shutdown". It's like pressing the power button of a real computer.
+close the VM using the command line after login in the console
