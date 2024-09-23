@@ -110,4 +110,4 @@ Remember, creating a great credit scoring model is like baking a perfect cake - 
 
 - [Interpreting machine learning models](https://towardsdatascience.com/interpretability-in-machine-learning-70c30694a05f)
 
-[Files](https://assets.01-edu.org/ai-branch/project5/home-credit-default-risk.zip)
+- [Data folder content](https://assets.01-edu.org/ai-branch/project5/home-credit-default-risk.zip)
