@@ -84,7 +84,7 @@ OPTIONS:
 #### Example Outputs:
 
 ```sh
-$> image-inspector -m -o metadata.txt image-example1.jpeg
+$> image-inspector -m image-example.jpeg -o metadata.txt
 Lat/Lon: (13.731) / (-1.1373)
 Device: Canon EOS 5D Mark III
 Date: 2023-07-20 14:32:10
@@ -92,7 +92,7 @@ Data saved in metadata.txt
 ```
 
 ```sh
-$> image-inspector -s -o hidden_data.txt image-example1.jpeg
+$> image-inspector -s image-example.jpeg -o hidden_data.txt
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: 01
 ...
@@ -101,15 +101,7 @@ Data saved in hidden_data.txt
 ```
 
 **You will be provided with an example image to test your tool. Make sure your tool can successfully analyze this image and produce the expected outputs.**
-The example image attached: 
-[image-example1.jpeg](resources/image-example1.jpeg)
-[image-example2.jpeg](resources/image-example2.jpeg)
-[image-example3.jpeg](resources/image-example3.jpeg)
-[image-example4.jpeg](resources/image-example4.jpeg)
-
-#### Documentation
-
-Create a `README.md` file that provides comprehensive documentation for your tool (prerequisites, setup, configuration, usage, ...). Ensure the documentation includes clear guidelines on the ethical use of the tool and warnings about the legal implications of analyzing images without permission.
+The example image attached: [image-example.jpeg](resources/image-example.jpeg)
 
 ### Bonus
 
@@ -117,8 +109,13 @@ If you complete the mandatory part successfully and still have time, consider ad
 
 - **Additional Steganography Methods**: Implement detection for other steganography techniques beyond PGP keys.
 - **Graphical User Interface (GUI)**: Create a user-friendly GUI using libraries like Tkinter or PyQT.
+- **Facial Recognition**: Implement basic facial recognition features using OpenCV.
 
 Challenge yourself!
+
+### Documentation
+
+Create a `README.md` file that provides comprehensive documentation for your tool (prerequisites, setup, configuration, usage, ...). Ensure the documentation includes clear guidelines on the ethical use of the tool and warnings about the legal implications of analyzing images without permission.
 
 ### Ethical and Legal Considerations
 
