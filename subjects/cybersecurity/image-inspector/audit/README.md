@@ -22,8 +22,6 @@ Suggested role play questions include:
 - How can this tool be used in real-life digital forensics or cybersecurity scenarios?
 - What ethical considerations should be taken into account when analyzing images for hidden data?
 
-###### Were the students able to answer all the questions?
-
 ###### Did the students demonstrate a thorough understanding of the concepts and technologies used in the project?
 
 ###### Were the students able to communicate effectively and justify their decisions and explain the knowledge behind this project?
@@ -64,14 +62,14 @@ $> image-inspector -m -o metadata.txt image-example1.jpeg
 $> image-inspector -s -o hidden_data.txt image-example1.jpeg
 ```
 
-###### Does the output correctly detect and extract any hidden PGP keys or other concealed information within the image?
+###### Does the output correctly detect and extract any hidden PGP keys within the image?
 
 ###### Is the output stored in the file specified in the output parameter?
 
 ##### Testing with Images
 
 **You will be provided with an example image to test the students tool. Feel free to test with other images.**
-The example image attached: 
+The example image attached:
 [image-example1.jpeg](resources/image-example1.jpeg)
 [image-example2.jpeg](resources/image-example2.jpeg)
 [image-example3.jpeg](resources/image-example3.jpeg)
@@ -79,18 +77,47 @@ The example image attached:
 
 ###### Test the tool with the provided example image and at least one other image to ensure the tool's robustness.
 
+```sh
+$> image-inspector -s -o hidden_data1.txt image-example1.jpeg
+Enter   -----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: 01
+
+mQENBGIwpy4BC<...>
+=N8hc
+-----END PGP PUBLIC KEY BLOCK-----
+$>
+```
+
+```sh
+$> image-inspector -s -o hidden_data2.txt image-example2.jpeg
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+xo0EZuV9/AEEANRklh3<...>
+=BhsK
+-----END PGP PUBLIC KEY BLOCK-----
+$>
+```
+
+```sh
+$> image-inspector -s -o hidden_data3.txt image-example3.jpeg
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+xo0EZuWBWQEEALrj<...>
+=SXXm
+-----END PGP PUBLIC KEY BLOCK-----
+$>
+```
+
+```sh
+$> image-inspector -s -o hidden_data4.txt image-example4.jpeg
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+xo0EZuWA9AE<...>
+=/1dE
+-----END PGP PUBLIC KEY BLOCK-----
+$>
+```
+
+> The results are cut. you can compare the beginning and the end of the results!
+
 ###### Does the tool produce accurate and expected results for different images?
-
-##### Ensure that the student submission meets the project requirements:
-
-1. **Functionality:** Does the tool perform its intended functions accurately (metadata extraction and steganography detection)?
-2. **Data Accuracy:** Is the retrieved information accurate and relevant?
-3. **Ethical Considerations:** Are there clear guidelines and warnings about the ethical and legal use of the tool?
-4. **Usability:** Is the tool user-friendly and well-documented?
-
-###### Did the tool design and implementation align with all the project requirements above?
-
-###### Were the students able to implement a functional and reliable tool that meets the project requirements?
 
 #### Bonus
 

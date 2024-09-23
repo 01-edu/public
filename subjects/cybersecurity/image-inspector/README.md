@@ -13,7 +13,7 @@ Images can contain more than just visual information, they often carry hidden da
 The goal is to develop a tool using a programming language of your choice (Python is recommended) that can analyze images to extract hidden information. Specifically, your tool should:
 
 1. **Extract Metadata**: Identify and display metadata from images, such as geolocation (latitude and longitude) where the photo was taken, the device used, and other relevant information.
-2. **Detect Steganography**: Discover and extract any hidden PGP keys or other data concealed within the image using steganography techniques.
+2. **Detect Steganography**: Discover and extract any hidden PGP keys within the image using steganography techniques.
 
 By completing this project, you will:
 
@@ -101,7 +101,7 @@ Data saved in hidden_data.txt
 ```
 
 **You will be provided with an example image to test your tool. Make sure your tool can successfully analyze this image and produce the expected outputs.**
-The example image attached: 
+The example image attached:
 [image-example1.jpeg](resources/image-example1.jpeg)
 [image-example2.jpeg](resources/image-example2.jpeg)
 [image-example3.jpeg](resources/image-example3.jpeg)
