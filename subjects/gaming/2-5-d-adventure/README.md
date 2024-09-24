@@ -101,6 +101,7 @@ The enemy `character` should:
 - Be killed if the player lands on top of it.
 - Play a sound when killed.
 - create an instance of `Collectible` at the place of death.
+> Note: Make sure the instance of collectible spawned from killing an enemy also updates the HUD.
 <center>
   <div style="display: flex; justify-content: center;">
     <img src="./resources/enemywalk.gif?raw=true" style="width: 500px !important; height: 350px !important;" />

@@ -74,7 +74,7 @@
 
 ###### Does the level design avoid being just a long, empty run to the finish point?
 
-###### Does the level include elements like moving platforms or skill-based platforming challenges?
+###### Does the level include mechanics chosen by the student? `(e.g. moving platforms skill-based platforming)`
 
 ###### Does the level provide a fun and challenging experience for the player?
 
