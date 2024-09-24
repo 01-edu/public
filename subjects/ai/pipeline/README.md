@@ -241,8 +241,10 @@ breast: One Hot
 breast-quad: One Hot
 ['right_low' 'left_low' 'left_up' 'central' 'right_up']
 
-
 irradiat: One Hot
+['yes' 'no']
+
+Class: Target (One Hot)
 ['recurrence-events' 'no-recurrence-events']
 ```
 
@@ -259,16 +261,16 @@ input: ohe.transform(X_test[ohe_cols])[:10]
 output:
 array([[1., 0., 1., 0., 0., 1., 0., 0., 0., 1., 0.],
        [1., 0., 1., 0., 0., 1., 0., 0., 0., 1., 0.],
+       [0., 1., 1., 0., 0., 1., 0., 0., 0., 0., 1.],
+       [0., 1., 1., 0., 0., 1., 0., 0., 0., 0., 1.],
+       [1., 0., 1., 0., 0., 0., 1., 0., 0., 1., 0.],
        [1., 0., 1., 0., 0., 0., 0., 1., 0., 1., 0.],
+       [1., 0., 0., 1., 0., 0., 0., 0., 1., 1., 0.],
        [1., 0., 0., 1., 0., 1., 0., 0., 0., 1., 0.],
-       [1., 0., 0., 1., 0., 0., 0., 1., 0., 1., 0.],
-       [1., 0., 0., 1., 0., 0., 1., 0., 0., 1., 0.],
-       [1., 0., 0., 1., 0., 0., 1., 0., 0., 1., 0.],
-       [1., 0., 0., 1., 0., 1., 0., 0., 0., 1., 0.],
-       [1., 0., 0., 1., 0., 0., 1., 0., 0., 1., 0.],
-       [0., 1., 1., 0., 0., 0., 1., 0., 0., 0., 1.]])
+       [1., 0., 1., 0., 0., 0., 0., 1., 0., 0., 1.],
+       [1., 0., 0., 1., 0., 1., 0., 0., 0., 1., 0.]])
 
-input: ohe.get_feature_names(ohe_cols)
+input: ohe.get_feature_names_out(ohe_cols)
 output:
 array(['node-caps_no', 'node-caps_yes', 'breast_left', 'breast_right',
        'breast-quad_central', 'breast-quad_left_low',

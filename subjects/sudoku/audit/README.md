@@ -1,6 +1,6 @@
 #### Sudoku
 
-> ***NOTE: If you are an admin and you want to test this project, follow the instructions [in the this subject](https://github.com/01-edu/go-tests/blob/master/raid-testing.md) before you proceed to the questions.***
+> **_NOTE: If you are an admin and you want to test this project, follow the instructions [in the this subject](https://github.com/01-edu/go-tests/blob/master/raid-testing.md) before you proceed to the questions._**
 
 ##### Open the repository of the project and check the submitted files
 
@@ -38,7 +38,7 @@
 
 ###### Does the program returns the value above?
 
-##### Try running the program with the arguments: `""..5.3..81" "9.285..6." "6....4.5." "..74.283." "34976...5" "..83..49." "15..87..2" ".9....6.." ".26.495.3""`
+##### Try running the program with the arguments: `"..5.3..81" "9.285..6." "6....4.5." "..74.283." "34976...5" "..83..49." "15..87..2" ".9....6.." ".26.495.3"`
 
 ```
 4 7 5 9 3 6 2 8 1

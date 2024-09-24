@@ -1,82 +1,101 @@
 ## stealth-boom
 
-In this project, you will have to create an entire stealth game using Unreal Engine.
+A stealth game.
+
+<center>
+<img src="./resources/mgsmeme.png?raw=true" style = "width: 700px !important; height: 464px !important;"/>
+</center>
 
 ### Objectives
 
-The idea of this project is to create a little 10 minutes gameplay game with missions, with stealth based gameplay and with an AI patrolling NPC.
+The goal of this project is to create a playable gameplay loop around stealth mechanics.
 
-The basics assets you will need for this project can be found in the [Stealth-Boom.zip](https://assets.01-edu.org/Unreal-Engine-Projects/StealthBoom.zip) file. It contains the basic animations, character, enemies and props you will need for this project.
+### Scenario
+
+You are an Unreal Engine developer tasked with creating a complete stealth game from scratch. You need to implement everything, including AI behavior trees, player animations, and gun mechanics. As you progress, you realize balancing these elements—ensuring the AI responds accurately to player movements while maintaining smooth gameplay—is more challenging than expected. Every feature, from the main menu to mission completion, must work seamlessly to deliver a polished and playable game within the given constraints.
+
+Good luck. and remember to have fun while making the game!
 
 ### Instructions
 
-The following aspects should be fulfilled:
+The following requirements should be fulfilled:
 
-- Create a map where the player can walk around.
+#### Main Menu:
 
-  - This map should contain places for the player to hide from enemies by crouching, hide behind walls, and all other props you may use to help it make a stealth game.
-  - Buildings with at least 2 floors.
-  - Pickable ammunition and weapons around the map.
+- Option to start the game.
+- Adjust the general sound of the game.
+- Change graphics settings:
+  - When changing the resolution, a pop-up should appear in the middle of the screen, asking if the player wants to keep the newly applied graphics settings. If the player clicks "Yes" within 10 seconds, the settings are confirmed. If the 10 seconds pass or the player clicks "No," the settings revert to the previous ones.
+- Change the mouse sensitivity.
+- Option to invert the mouse vertical axis.
 
-- For the player you should add:
+#### Map/Level.
 
-  - Walk and run animations
-  - Reload animation
-  - Aim animation
-  - Shoot animation
-  - Crouch animation
-    - the player should be able to do the above six actions while crouching
-  - Melee attack animation
-  - Gun sound when firing
-  - Bullets visual impact on walls (see decals documentation)
-  - Blood particles when hit
+- The map should include areas where the player can hide from enemies by `ducking` or taking cover `behind walls and props`.
+- There should be pickable ammunition scattered throughout the map.
+- Health packs should be placed around the map for the player to collect.
 
-- The game should contain a main menu where the player can:
+#### Player:
 
-  - Start the game
-  - Adjust the general sound of the game
-  - Change the graphics settings
-    - When changing the resolution, a pop-up should appear in the middle of the screen asking if the player wants to keep the graphics setting he/she just applied. If `Yes` is clicked within 10 seconds, the settings are set, otherwise, if the 10 seconds delay is over or if the player clicks `No`, the settings go back to the old ones.
-  - Change the mouse sensitivity
-  - Invert the mouse vertical axis
+- The player should have animations for `walking`, `running`, `shooting`, `ducking`, and performing `melee attacks`.
+- Blood particles should appear when the player is hit.
+- A health bar should decrease whenever the player takes damage.
+- Upon death, the player should have the option to quit the game, return to the main menu, or start over.
+- The player's mission is flexible and can be any of the following: completing a task, eliminating all enemies without being detected, or collecting documents. Regardless of the mission, the player will encounter enemies that attempt to hinder their progress.
+- When the player successfully completes their mission, a pop-up should appear stating that the mission is complete.
 
-- You should have at least 3 types of enemies: `Guards` (who patrol around and are lookig for intruders), `Drones` (same as Guards but which can fly), and `Cameras` (stationary and looking for intruders). More enemies can be added if you want to.
+#### Gun mechanics:
 
-  - Guards AI:
-    - Guards should be able to patrol around the map;
-    - A Guard is able to see the player, if the player crosses his field of view;
-    - When the player enters the field of view of a Guard, the Guard enters into chasing mode and must start running after the player, takes cover and shoots at the player.
-    - If the player leaves the field of view for a certain time, the Guard goes back to patrol mode.
-  - Drones AI:
-    - Drones should be able to patrol around the map;
-    - A light color should determine the state of the drone (Blue for patrolling, Red for chasing the player);
-    - Once the player crosses the drone camera, the drone light turns red and the drone enters chasing mode;
-    - When a drone is in chasing mode, all the guards on the area are alerted, and should enter chasing mode as well;
-    - When the player is out of the drone sight, the drone turns back to patrol mode;
-    - The sight radius should be inferior on the drones that on the guards.
-  - Camera AI:
-    - Cameras should be placed on walls;
-    - Cameras should have the same light sign as the drone, so when the player is in the camera sight, the camera light turns red and all Guards enter in chasing mode;
-    - Like the Drones, Cameras warn guards, whenever the player passes through the camera field of view;
-    - Some Cameras should lock access of certain areas of the map (for example, close doors) when the player is detected by that camera.
+- The player should be able to shoot.
+- A widget should display the current number of bullets available to the player.
+- When the bullet count reaches 0, the player should be unable to shoot.
+- Shooting should trigger both a sound effect and a visual effect.
+- Bullets should have a visual impact on walls.
 
-- Drones, Guards and Cameras should have sounds effect whenever they change from chase to patrol mode, as well as the other way around.
+#### Enemy:
 
-- All AI should be implemented using Behavior Trees except for the Camera.
+- The game should feature at least two types of enemies: `Melee` and `Ranged`.
+- Behavior trees should be used to implement enemy AI.
+- Enemies should be able to patrol pre-defined paths around the map.
+- Enemies should detect the player if the player enters their field of view.
+- When the player enters the field of view of an enemy, the enemy enters into chasing mode and must start running after the player.
+  - `Ranged` enemies should take cover and shoot at the player.
+  - `melee` enemies should run close to the player and perform melee attacks.
+- Enemies in chase mode alert nearby enemies making them enter chase mode as well.
+- If the player leaves the field of view of all enemies for a specified duration, the enemies go back to patrol mode.
+- Enemies should have sound effects whenever they change from chase to patrol mode,and vice versa.
+- Enemies should have a visual indicator showing whether they are in patrol or chase mode
 
-- The player mission is up to you, either it can be some task to fix, kill all guards without getting caught or collect documents... Whatever you choose, the player should have enemies on his way to divert him away from his objective.
+#### Game loop
 
-  - When the player successfully completes his mission, a pop up should appear saying that the mission is completed.
+- Pressing `Esc` pauses the game, bringing up a widget similar to the main menu.
+- The player should be able to change the game graphics settings the same way as in the main menu.
+- The game should last no longer than 6 minutes. After this time, the player is presented with the same choices as when they die: quit the game, return to the main menu, or start over.
 
-- The player has a health bar that should go down whenever the player gets shot. When the player dies, he has the choice to either quit the game, go back to the main menu or start over.
+### Bonus
 
-  - If the player starts over, the level should not be reloaded. The player should spawn back to the starting point.
+- Use your own assets to create a game in your own style by either searching online or creating them on your own.
 
-- When pressing `Esc` the game is set on paused and the main menu widget pops up.
+- Have more enemy types e.g. a turret that is stationary but inflicts significant damage, etc.
 
-  - The player should be able to change the game graphics setting exactly like in the main menu.
+- Have areas in the game that are locked behind doors that require keys. which you can obtain from specific enemies.
 
-- A game should not last longer than 6 minutes. After that the same choices should appear as when the player dies.
+- Have multiple different weapon types that you can pick up around the map and use to finish the mission.
+
+### Resources
+
+Here are some resources to help you tackle potential project challenges:
+
+- [behavior-tree-in-unreal-engine](https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-tree-in-unreal-engine---quick-start-guide)
+- [decal materials and decal actors](https://dev.epicgames.com/documentation/en-us/unreal-engine/decal-materials-in-unreal-engine?application_version=5.4)
+- for inspiration look at games like metal gear solid 1/2/3.
+
+- The basics assets you will need for this project can be found in the [StealthBoomAssets.zip](https://assets.01-edu.org/gamedev/stealth-boom-assets.zip) file. It contains the basic animations, character, enemies and props you will need for this project.
+
+> NOTE: The assets in the file are intended to help streamline the process of locating assets, not to eliminate it.
+> TIP: Use [itch.io](https://www.itch.io) to get sound effects (not included in the assets file) or to find extra assets
+
+### Submission
 
 > Do not forget to zip up the project compile and save everything for peer correction.
 > If it is not possible to upload files to Gitea due to their size, use GitHub instead and have a look at [Git LSF](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)

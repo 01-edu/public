@@ -1,0 +1,22 @@
+[
+  {
+    "description": "escapeFromDelimiters is declared and includes a double-quote",
+    "code": "let power = 'under 9000'\n\n// Your code\nif (typeof escapeFromDelimiters === 'undefined') {\n  throw Error(\n    `You didn't even define the variable... we've been through this already !`,\n  )\n}\n\nif (!escapeFromDelimiters.includes('\"')) {\n  throw Error('escapeFromDelimiters must include a double-quote\"')\n}"
+  },
+  {
+    "description": "escapeFromDelimiters includes a single-quote",
+    "code": "let power = 'under 9000'\n\n// Your code\nif (!escapeFromDelimiters.includes(\"'\")) {\n  throw Error(\"escapeFromDelimiters must include a single-quote'\")\n}"
+  },
+  {
+    "description": "escapeFromDelimiters includes a backtick",
+    "code": "let power = 'under 9000'\n\n// Your code\nif (!escapeFromDelimiters.includes('`')) {\n  throw Error('escapeFromDelimiters must include a backtick `')\n}"
+  },
+  {
+    "description": "escapeTheEscape includes a backslash",
+    "code": "let power = 'under 9000'\n\n// Your code\nif (!new TextEncoder().encode(escapeTheEscape).includes(92)) {\n  throw Error('escapeTheEscape must includes a backslash')\n}"
+  },
+  {
+    "description": "The value of power must have changed",
+    "code": "let power = 'under 9000'\n\n// Your code\n\nequal(power, 'levelMax')"
+  }
+]
