@@ -51,10 +51,10 @@ console.log(num.toFixed(2)); // -> '3.33'
 Using the `.slice` method to cut parts of a string:
 
 ```js
-let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-let cutFirst = alphabet.slice(10); // 'KLMNOPQRSTUVWXYZ'
-let cutLast = alphabet.slice(0, -3); // 'ABCDEFGHIJKLMNOPQRSTU'
-let cutFirstLast = alphabet.slice(5, -6); // 'FGHIJKLMNOPQRS
+let numbers = "0123456789";
+let firstNumbers = numbers.slice(5); // '6789'
+let lastNumbers = numbers.slice(0, -3); // '0123456'
+let cutBothSides= numbers.slice(2, -3); // '23456'
 ```
 
 ### Splitting Strings
@@ -93,11 +93,11 @@ Declare an `oldestAge` variable that uses `Math.max` on the `age` properties of 
 
 #### Task 2:
 
-You need to slice some virtual vegetables. Using the `.slice` method and the provided alphabet variable, which is a string of all the characters in the alphabet:
+You need to slice some virtual vegetables. Using the `.slice` method and the provided `alphabet` variable, which is a string of all the characters in the alphabet:
 
-- Declare a `cutFirst` variable that removes the first `10` characters of alphabet, simulating the removal of the first few slices.
-- Declare a `cutLast` variable that removes the last `3` characters of alphabet, simulating the trimming of the last few slices.
-- Declare a `cutFirstLast` variable that removes the first `5` characters and the last 6 characters of alphabet, simulating a precise cut in the middle.
+- Declare a `cutFirst` variable that removes the first `10` characters of `alphabet`, simulating the removal of the first few slices.
+- Declare a `cutLast` variable that removes the last `3` characters of `alphabet`, simulating the trimming of the last few slices.
+- Declare a `cutFirstLast` variable that removes the first `5` characters and the last 6 characters of `alphabet`, simulating a precise cut in the middle.
 
 #### Task 3:
 

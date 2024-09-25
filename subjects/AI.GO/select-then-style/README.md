@@ -32,7 +32,7 @@ Now that you have created and properly identified the different sections of your
   - `width` of `100%`
   - `height` of `calc(100% / 3)` _(one third of the `body` height)_
 
-- Target each of the following elements with the [`id` selector][4], using the `id` you defined earlier for each section, and style them:
+- Target each of the following elements with the [id selector][4], using the `id` you defined earlier for each section, and style them:
   - `face` with a "cyan" `background-color`
   - `upper-body` with a "blueviolet" `background-color`
   - `lower-body` with a "lightsalmon" `background-color`

@@ -52,7 +52,7 @@ Choose a power that you will give to your robot from the following list and put 
 
 #### The `<body>` part:
 
-This section contains the content of your webpage , in our case the lower body of your buddy. Define the skeleton of your robot by organizing it into three main sections: the face, the upper body, and the lower body. Inside the <body> tag of your HTML file, create three divisions using <section> tags, and place the following text content inside each one: face, upper-body, lower-body.
+This section contains the content of your webpage , in our case the lower body of your buddy. Define the skeleton of your robot by organizing it into three main sections: the face, the upper body, and the lower body. Inside the `<body>` tag of your HTML file, create three divisions using `<section>` tags, and place the following text content inside each one: face, upper-body, lower-body.
 
 > Don't forget to press Render again to refresh the display page when you modify your code.
 

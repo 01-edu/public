@@ -108,14 +108,14 @@ if (temperature < 8) {
 
 Your Robot must always seek the truth.
 
-- Check if the value of the provided variable `truth` is truthy, log '`The truth was spoken.`'
-- Otherwise, log '`Lies !!!!`' because the value of the provided variable truth is falsy.
+- Check if the value of the provided variable `truth` is truthy, log the string: `The truth was spoken.`
+- Otherwise, log the string: `Lies !!!!` because the value of the provided variable truth is falsy.
 
 #### Task 2:
 
-Your `RoboGuard's traveling company` has a special promotion for robot members aged between 18 and 25. Write the if condition that will check if the robot user can benefit from the promotion:
+Your `RoboGuard's traveling company` has a special promotion for robot members aged between 18 (included) and 25 (included). Write the if condition that will check if the robot user can benefit from the promotion:
 
-- `user.age` must be at least `18`.
+- `user.age` must be more than `17`.
 - `user.age` must be less than or equal to `25`.
 - `user.activeMembership` must be `true`.
 

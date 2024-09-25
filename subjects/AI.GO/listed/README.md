@@ -109,7 +109,7 @@ Now, the array looks like this:
 
 #### Task 1:
 
-You must declare a variable `components` that contains 4 strings, one for each robot component.
+You must declare a variable `components` that contains 4 strings, one for each robot component "motor", "sensor", "battery" and "camera" (respect that order).
 
 #### Task 2:
 
