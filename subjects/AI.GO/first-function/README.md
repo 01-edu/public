@@ -84,4 +84,4 @@ You are a robot made by a scientist called Rick and you want to know your purpos
 
 - Declare a function named `ask` that `log` 'What is my purpose ?' in the console
 - Declare a function named `reply` that `log` 'You pass butter.' in the console
-  Then first `call the ask` then `the reply` once, in that order.
+  Then call the `ask` and the `reply` each once, in that order.

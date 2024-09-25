@@ -6,9 +6,9 @@
 
 Glad to see you here! It's impressive how far you've come today, and you are just one step away from seeing a simple yet impressive thing we can do with JavaScript. This will give you a glimpse of how JavaScript works with HTML and CSS to make your robot interesting! By using JavaScript, you will control and interact with your creation, adding dynamic abilities that make it come alive.
 
-So far, you haven't learned much about JavaScript (but you will soon, don't worry!), but we want you to see an example of how powerful JavaScript can be in modifying the robot.
+So far, you haven't learned much about JavaScript (but you will soon, don't worry!), now we want you to see an example of how powerful JavaScript can be in modifying the robot.
 
-In these instructions, you will execute the steps to change your robot's eyes from open to closed using JavaScript! Does it seem simple? Yes, but you will later make your robot more dynamic by pushing a button to open and close that eye! Of course, that's for when you learn more about JavaScript (Again, a secret for you because you made it until here).
+In these instructions, you will execute the steps to change your robot's eyes from open to closed using JavaScript! Does it seem simple? Yes, but you will later make your robot more dynamic by pushing a button to open and close that eye! Of course, that's for when you will learn more about JavaScript.
 
 This is more of a puzzle to use your brain to follow hints and make things work, even if it seems complex (it is not!). Isn't that your brain's superpower?
 
@@ -33,15 +33,15 @@ First, define this new class in `your CSS file`:
 
 #### Task 1
 
-Second, [`Link a JS script`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) to your HTML file.
+Second, [Link a JS script](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) to your HTML file.
 
 #### Task 2
 
-Then in your Javascript file, you're going to close the left eye of your entity. To do so, you have to target the `eye-left` HTML element by its `id` using the [`getElementById`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) method.
+Then in your Javascript file, you're going to close the left eye of your entity. To do so, you have to first target the `eye-left` HTML element by its `id` using the [getElementById](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) method. 
 
 #### Task 3
 
-Then, [set the `style`](https://developer.mozilla.org/en-US/docs/Web/API/ElementCSSInlineStyle/style#setting_styles) of your `eye-left` to change its background color to "black". We also need to modify its shape; for that, we are going to add a new class to it.
+Then, after your eye is targetted, [set the style](https://developer.mozilla.org/en-US/docs/Web/API/ElementCSSInlineStyle/style#setting_styles) of your `eye-left` to change its background color to "black". Finally, we also need to modify its shape; for that, we are going to add a new class to it. To do so, you need to you use the [classList.add()](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList).
 
 ### Code examples
 

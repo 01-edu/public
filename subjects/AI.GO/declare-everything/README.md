@@ -103,11 +103,6 @@ Declare two variables:
 - Use the identifier `seven` with the value being a string of the number 7
 - Use the identifier `seventySeven` with the value being a string of the number 77
 
-```js
-let seven = "7";
-let seventySeven = "77";
-```
-
 ---
 
 > "When we first begin fighting for our dreams, we have no experience and make many mistakes. The secret of life, though, is to fall seven times and get up eight times."

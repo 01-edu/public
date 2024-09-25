@@ -65,14 +65,14 @@ robot.code = undefined;
 Modify the provided `robot` variable:
 
 - Add a `model` property with the string value 'RX-78'.
-- Add a `fullName` property that is the joined value of the `brand` and the `model` with a space in between.
+- Add a `fullName` property that is the joined value of the `brand` and the `model` with a space in between. (`brand` and `model`are already defined in the provided `robot`)
 - Add `10` to its `batteryLevel` property.
 
 #### Task 2:
 
 Let's move away from objects a bit, and discover a notion we will use later. `Duplicating a String with Placeholders`!
 
-Declare a variable `duplicate` that repeats the provided variable `sentence`, separated by a comma, and adds an exclamation mark at the end.
+Declare a variable `duplicate` that repeats the provided variable `sentence`, separated by a comma and a space, and then adds an exclamation mark at the end.
 
 > For example, if `sentence` is "Hello there", we expect "Hello there, Hello there!".
 

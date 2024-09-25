@@ -4,7 +4,7 @@
 
 ### Context
 
-You made it to the last mission in getting your full power, to make your robot alive and fully functional!
+You made it to the last mission for getting your full power which will make your robot alive and fully functional!
 
 The final step involves mastering the use of `arguments` in functions. By learning how to use and manage these `arguments` effectively, you can unlock the full potential of your robot and make it later truly come alive.
 
@@ -141,7 +141,7 @@ As the leader of the RoboGuard forces, you're not just preparing for battle—yo
 1- Create the `duos` Function:
 
 - This function will take `two arguments`, representing the **names** of **two robots**.
-- It will `log them` together with an **and** and an **exclamation mark**.
+- It will `log them` together with a space, the word **and**, another space and end the sentence with an **exclamation mark**.
 
 > Output's example: "robotOne and robotTwo!"
 
@@ -149,7 +149,7 @@ As the leader of the RoboGuard forces, you're not just preparing for battle—yo
 
 - This function will take `three arguments`: the **names** of two robots and the **task** they will perform together.
 
-- It will `log them` together in a sentence describing their task.
+- It will `log them` together in a sentence describing their task with the same formatting than below. 
 
 > Output's example: "robotOne and robotTwo are saying hi!
 

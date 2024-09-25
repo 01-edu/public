@@ -12,7 +12,7 @@ there's still a bit of work to do.
 
 First of all, instead of writing down what things are _(you're not writing down on your hand the word 'hand',
 are you?)_, we're going to identify them semantically with the very practical [id
-attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attri butes/id). This `id` has to be a **unique**
+attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id). This `id` has to be a **unique**
 identifier on your webpage, allowing you to target your element when needed. You can compare it to your name and
 surname; this is what identifies you to other people, and if someone's calling you by your name, you answer.
 
