@@ -54,7 +54,7 @@ Using the `.slice` method to cut parts of a string:
 let numbers = "0123456789";
 let firstNumbers = numbers.slice(5); // '6789'
 let lastNumbers = numbers.slice(0, -3); // '0123456'
-let cutBothSides= numbers.slice(2, -3); // '23456'
+let cutBothSides = numbers.slice(2, -3); // '23456'
 ```
 
 ### Splitting Strings
