@@ -113,13 +113,19 @@ Your Robot must always seek the truth.
 
 #### Task 2:
 
-Your `RoboGuard's traveling company` has a special promotion for robot members aged between 18 (included) and 25 (included). Write the if condition that will check if the robot user can benefit from the promotion:
+Your `RoboGuard's traveling company` has a special promotion for robot members aged between 18 (included) and 25 (included).
 
-- `user.age` must be more than `17`.
+**NB: The ticket variable has already been declared, so do not declare it again.**
+
+1- Assign the message "You cannot benefit from our special promotion" to the ticket variable.
+
+2- Use an if statement to check that all these conditions are true:
+
+- `user.age` must be greater than or equal to `18`.
 - `user.age` must be less than or equal to `25`.
 - `user.activeMembership` must be `true`.
 
-If `all` of these conditions are `true`, log the message '`You can benefit from our special promotion`'.
+3- If all conditions are true, update the ticket variable with the message: "You can benefit from our special promotion".
 
 > Hint : use AND Operator in your condition!
 
