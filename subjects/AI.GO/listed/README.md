@@ -139,7 +139,7 @@ let replaceComponents = ["motor", "sensor", "battery"];
 
 - You must `swap` the first and second element of the provided `swapComponents` array using a variable `temp`.
 
-_Hint: Use a `temp` variable to store the first element, assign the second element to the first, and then assign `temp` to the second element to complete the swap._
+_Hint: Use a `temp` variable to store the first element, you must modify the array swapComponents, not create a new one !_
 
 Example:
 
