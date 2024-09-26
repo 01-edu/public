@@ -149,7 +149,7 @@ As the leader of the RoboGuard forces, you're not just preparing for battle—yo
 
 - This function will take `three arguments`: the **names** of two robots and the **task** they will perform together.
 
-- It will `log them` together in a sentence describing their task with the same formatting than below. 
+- It will `log them` together in a sentence describing their task with the same formatting than below.
 
 > Output's example: "robotOne and robotTwo are saying hi!
 

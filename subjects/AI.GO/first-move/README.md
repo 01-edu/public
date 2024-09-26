@@ -37,7 +37,7 @@ Second, [Link a JS script](https://developer.mozilla.org/en-US/docs/Web/HTML/Ele
 
 #### Task 2
 
-Then in your Javascript file, you're going to close the left eye of your entity. To do so, you have to first target the `eye-left` HTML element by its `id` using the [getElementById](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) method. 
+Then in your Javascript file, you're going to close the left eye of your entity. To do so, you have to first target the `eye-left` HTML element by its `id` using the [getElementById](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) method.
 
 #### Task 3
 
