@@ -58,9 +58,10 @@ In the JS file, like in the previous exercise, get the following elements:
 
 #### Task 3:
 
-We provide you with the variable `randomColor`, that stores a random color in each different time we use it.
+In the code example below, we show you the variable `randomColor` which stores a random color each time we use it.
 
-- Apply the random color to both arms by changing their `backgroundColor`.
+- Create a function that applies the random color to both arms by changing their `backgroundColor`every time the function is called.
+- Then add an `event listener` on `click event` for the button with ID `arm-color`.
 
 ### Code Example:
 
