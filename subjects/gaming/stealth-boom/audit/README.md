@@ -1,69 +1,89 @@
 > Due to file size reason, the solution might be uploaded on GitHub instead of Gitea!
 
-#### Functional
+#### Main Menu
 
-###### Does the map contain places for the player to hide from enemies?
+###### Is the main menu displayed on the screen with all five options visible?
 
-###### Does the map contain buildings, pickable ammunition and weapons placed around the map?
+###### Can the general game sound be adjusted directly from the settings menu?
 
-###### Does the player have all the minimal animation required (walking, running, melee attacking, aiming, reloading, shooting, crouching, crouch walking, crouch aiming, crouch reloading, crouch shooting)?
+###### When changing the resolution, does a confirmation pop-up appear in the center of the screen asking if the player wants to keep the new graphics settings?
 
-###### Is there a sound for the player shooting?
-
-###### Are there bullets impacts present when shooting at a wall?
-
-###### When the player is hit, are there any blood particles?
-
-###### Is a main menu with the five options displayed on the screen?
-
-###### Can the general sound of the game be managed directly on the settings menu?
-
-###### When changing the resolution, does a pop-up get displayed on the screen to confirm the changes we just set?
-
-###### Does pressing “No” on the graphics confirmation pop-up, resets the settings to the old ones?
+###### If the player presses 'No' on the graphics confirmation pop-up, or if the pop-up is not confirmed within 10 seconds, do the settings revert to the previous ones?
 
 ###### Are the mouse settings (mouse sensitivity, invert mouse vertical axis) functioning according to their descriptions?
 
-###### Do the guards and drones wander around the map?
+#### Map / Level
 
-###### When a player enters the field of view of a guard, does he switches to chasing mode, running and shooting towards the player while also taking cover?
+###### Does the map contain props/walls for the player to hide from enemies?
 
-###### Does the drone light switches between each state? Blue for patrolling and red for chase mode (when a player crosses its sight)?
+###### Does the map contain pickable ammunition and health placed around?
 
-###### Whenever a drone turns to chasing mode, do all the guards in the area get alerted and switch to chasing mode as well?
+#### Player Mechanics
 
-###### Does the drone come back to patrol mode when the player is out of the drone sight?
-
-###### Is the sight radius of the drones smaller than the guards?
-
-###### Are cameras attached to walls?
-
-###### Do cameras have similar light sign as the drones (red for alert mode and blue for patrol)?
-
-###### As the drones, do the cameras alert guards on the area, switching them to chasing mode?
-
-###### Do Guards, Drones and Cameras play an alert sound when a player gets detected?
-
-###### Do some cameras lock access to certain areas of the map, when they detect a player?
-
-###### Can the camera close some part of the map (thru closed doors, open traps and tries to kill the player etc…) to the player when the player is being detected?
-
-###### Are Behavior Trees used to implement the AI of the Guards and Drones?
-
-###### Does the player have a goal?
-
-###### When the goal of the player is successfully completed, does a pop up appear saying that the mission is completed?
+###### Does the player have all the minimal animation required (walking, running, melee attacking, shooting, ducking)?
 
 ###### Does the player have a health bar?
 
-###### Does the player health decreases when he gets shot by the guards?
+###### Does the player health decreases when he gets damaged?
+
+###### When the player is hit, are there any blood particles?
 
 ###### When the player loses all his health (dies), does he get to choose whether to quit the game, go back to the main menu, or to start over?
 
-###### If the player starts over does he spawn back at the starting point?
+###### Does the player have a defined goal or mission?
 
-###### Is the lifespan of the game at least 6 minutes long from launch to mission completed?
+###### Whatever the goal or mission, can you confirm that the player had enemies on his way to divert him away from his objective?
+
+###### When the player successfully completes the goal or mission, does a pop-up appear indicating `mission completion`?
+
+#### Gun Mechanics
+
+###### Is the player able to shoot?
+
+###### Is there a sound for the guns shooting?
+
+###### Is a widget showing the remaining bullet count displayed?
+
+###### Is the player unable to shoot when he has no bullets?
+
+###### Are there bullets impacts present when shooting at a wall?
+
+#### Enemies
+
+###### Does the game include at least two types of enemies: `Melee` and `Ranged`?
+
+###### Is enemy AI implemented using Behavior Trees?
+
+###### Do the enemies wander around the map?
+
+###### When a player enters an enemy's field of view, does the enemy switch to a chasing mode?
+
+###### Do melee enemies approach the player to perform melee attacks?
+
+###### Do ranged enemies take cover and shoot at the player?
+
+###### Do the enemies go back to patrol mode when the player is hidden from all field of views for a set amount of time?
+
+###### Do the enemies have a sound effect and visual effect when entering and exiting chase mode?
+
+###### Are enemies in chase mode alerting nearby enemies ?
+
+#### Game loop
+
+###### When 'Esc' is pressed does the game pause and a widget similar to the main menu is displayed?
+
+###### Can the player perform all the actions that appear in the menu when the game is paused?
+
+###### Does the game loop last no more than 6 minutes from start to finish?
+
+###### Is a widget that shows the player's remaining time displayed?
 
 #### Bonus
 
-###### +Are there headshots implemented?
+###### +Did the student use different assets than the ones provided in the subject?
+
+###### +Are there more enemy types than the basic melee and ranged enemies?
+
+###### +Are there areas in the game that require an item to access?
+
+###### +Are there different weapon types that you can pick up and use?
