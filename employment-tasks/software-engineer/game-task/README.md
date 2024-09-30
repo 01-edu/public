@@ -1,8 +1,4 @@
-# Entain 
-
-Entain is one of the biggest companies, which hosts casinos like Olybet, Optibet etc. They are looking for a software engineer to join their team. 
-
-## Task
+## Software Engineer - Game Task
 
 ### Tools and technologies used:
 
