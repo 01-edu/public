@@ -1,4 +1,4 @@
-# Luminor Test Task
+# Site Reliability Engineer - Basic API Hosting Task
 
 ## Part 1 – The Web Service
 
@@ -35,5 +35,3 @@ Deploy this application to your favourite cloud provider using Terraform.
 ## Part 3 – NewRelic
 
 Implement NewRelic monitoring for this application using Terraform.
-
-Please send finished code, testing and results through mail.
