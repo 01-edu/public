@@ -5,6 +5,7 @@
 For this exercise, you will have to implement an **error type** for a form validator. This must validate the password and the first name.
 
 The first name must not be empty and the password must have **at least 8 characters**, and a combination of **alphabetic**, **numeric** and **none-alphanumeric** (`<`, `&`,  `/` ...).
+Additionally, you need to create a helper function create_date that converts a string like "2015-09-05" into a NaiveDate format.
 
 Examples:
 - `"asDd123=%"`: **good**.
@@ -15,7 +16,7 @@ Examples:
 Create a structure named `Form` that will have the following fields:
 - `first_name`: `String`
 - `last_name`: `String`
-- `birth`: `NaiveDate` that will convert a string `"2015-09-05"` to a date of that format.
+- `birth`: `NaiveDate` (converted from a string using the create_date function).
 - `birth_location`: `String`
 - `password`: `String`
 
