@@ -4,19 +4,19 @@
 
 ## Context
 
-Welcome to your final milestone! After each of you has brought a robot to friend to life, it's time to reunite them together.
+Welcome to your final milestone! After each of you has brought a robot friend to life, it's time to bring them together.
 
-Now, all those incredible robots need to be displayed in perfect harmony in our interactive and visually stunning Robots `Gallery`.
+Now, all these incredible robots need to be displayed in perfect harmony in our interactive and visually stunning Robots `Gallery`.
 
 As a team, your task is to combine your individual creations into a cohesive display.
 
-This gallery won't just be functional, it will be a fun and visually appealing experience that highlights the creativity and collaboration behind your robots.
+This gallery won't be functional yet; it will be a fun and visually appealing experience that highlights the creativity and collaboration behind your robots.
 
-> You'll be working on this mission as a team, so effective communication and mutual support are key to bringing your robots together.
+> You'll be working on this mission as a team, so effective communication and mutual support are key to bring your robots together.
 
-> Separate tasks equally, it will make the results better!
+> Divide tasks equally, it will make the results better!
 
-> Remember what you learned in asking AI for the precise explanation of concepts, while your team apply those concepts and do the actual fun work!
+> Remember what you learned when asking AI for precise concepts' explanations. Make use of them to do the actual fun work!
 
 Go ahead, and let the world see the amazing robots you've created together!
 
@@ -57,7 +57,7 @@ You need to submit the following files:
 
 ## Instructions
 
-Theses tasks are representing the mandatory part for this raid to be passed successfully. Bonus part is optional but highly encouraged for more fun!
+These following tasks are mandatory for this raid to be passed successfully. The bonus part is optional but highly encouraged for more fun!
 
 ### Task 1: Set Up the Gallery Structure
 
@@ -67,7 +67,7 @@ Inside your HTML file, set up the basic structure of the HTML document with a `<
 
 #### 2- Give a gallery title:
 
-- Inside your `<body>` , create an `<h1>` tag inside a `<div>` with an `id` of `title`. Then put the name of your gallery inside it !
+- Inside your `<body>` , create an `<h1>` tag inside a `<div>` with the `id` **title**. Then put the name of your gallery inside the `<h1>` section !
 
 ```HTML
     <div id="title">
@@ -77,7 +77,7 @@ Inside your HTML file, set up the basic structure of the HTML document with a `<
 
 #### 3- Put your robots inside the gallery:
 
-- Under the `title` div, create a div element with the `id` `gallery`.
+- Under the `title` div, create a div element with the `id` **gallery**.
 
 - This div will serve as the container for all the robot portraits.
 
@@ -209,7 +209,7 @@ h3 {
 
 > Trust the process!
 
-- Then add this gallery style block, and change the `background-color` of it based on your team's favorite color:
+- Then add this gallery style block, and change its `background-color` based on your team's favorite color:
 
 ```css
 #gallery {
@@ -223,17 +223,17 @@ h3 {
 }
 ```
 
-- Add the following block of style to all your class's of `name-robot`. To do so, we follow the rule:
+- Add the following style block to all your `name-robot` classes. To do so, we follow the rule:
 
 ```css
 .class-one,
 .class-two,
 .class-three {
-  /* block of style */
+  /* style block */
 }
 ```
 
-- Name it with your `name-robot` for each member of the team, and put inside the block the following styles:
+- Name it with the `name-robot` of each teammember, and add inside the block the following styles:
 
 ```css
 {
@@ -266,9 +266,9 @@ h3 {
 
 > Experiment by changing the colors of the box-shadow and the scale value! Be creative.
 
-- In your `#gallery` CSS rule, add some animated gradient color to the background! You can achieve it by combining CSS properties: `background`, `background-size`, `animation`, `box-shadow`.
+- In your `#gallery` CSS rule, add some animated gradient color to the background! You can achieve it by combining CSS properties: `background`, `background-size`, `animation` and `box-shadow`.
 
-> Hint : Do not forget to replace the background property with the new value bellow!
+> Hint : Do not forget to replace the background property with the new value below!
 
 _For Example:_
 
@@ -284,9 +284,9 @@ animation: gradientBackground 2s ease infinite; /* Animates the background to cr
 box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow around the element. Adjust the offsets, blur radius, and opacity as needed */
 ```
 
-> You saw no change? well we did not specify yet what to do with all those colors, angles and timing yet!
+> You didn't see any change? Well we didn't specify what to do with all those colors, angles and timing yet!
 
-- Let's make it more exciting, by actually making the colors move! We can do that with `keyframes`! Under the `#gallery` css rule, put the `keyframes`` block and see the magic !
+- Let's make it more exciting by actually making the colors move! We can do that with `keyframes`! Under the `#gallery` css rule, put the `keyframes` block and see the magic !
 
 _For Example:_
 
@@ -310,7 +310,7 @@ _For Example:_
 
 - "How do I create a smooth gradient background with multiple colors in CSS?"
 
-- "Explain to me as a beginner these CSS properties: `background`, `background-size`, `animation`, `box-shadow`."
+- "Explain to me as a beginner these CSS properties: `background`, `background-size`, `animation` and `box-shadow`."
 
 ### Task 3: Add Interactivity with JavaScript:
 
@@ -324,15 +324,15 @@ Follow the following steps:
 
   - Create a function named `changeArmColor`.
   - This function should accept a parameter `robotClass` to identify which robot to modify.
-  - Inside the function, generate a random color using JavaScript, to both `left` and `right` arms.
+  - Inside the function, generate a random color using JavaScript, to apply to both `left` and `right` arms.
 
   ```js
   const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
   ```
 
   - Use `document.querySelector` to select the `left` and `right` arm elements of the robot.
-  - Apply the random color to both arm elements using `style.backgroundColor`.
-  - Here is an example, do the same for right arm:
+  - Apply the random color to both arm' elements using `style.backgroundColor`.
+  - Below is an example, do the same for the right arm:
 
   ```js
   const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
@@ -340,30 +340,30 @@ Follow the following steps:
   document.querySelector(`.${robotClass} #arm-left`).style.backgroundColor =
     randomColor;
 
-  //do the same to right arm
+  //do the same to the right arm
   ```
 
 - **Function to Change Legs Colors**:
 
   - Create a function named `changeLegColor`.
-  - Follow the same steps as the `changeArmColor` function but target the `legs`.
+  - Follow the same steps as the `changeArmColor` function but have it target the `legs`.
 
 - **Function to Change Eye Colors**:
 
   - Create a function named `changeEyeColor`.
-  - Follow the same steps as the `changeArmColor` function but target the `eye`.
+  - Follow the same steps as the `changeArmColor` function but have it target the `eye`.
 
 - **Function to Change Face Colors**:
 
   - Create a function named `changeFaceColor`.
-  - Follow the same steps as the `changeArmColor` function but target the `eyes` `id`. (Yes, pay attention, the `id` that changes the face color is called `eyes`!)
+  - Follow the same steps as the `changeArmColor` function but target the `eyes` **id**. (Yes, pay attention, the `id` that changes the face color is called `eyes`!)
 
 #### 3- Adding Event Listeners for Keyboard Input:
 
 Next, you need to detect when specific keys are pressed and trigger the corresponding function.
 
 - Use `document.addEventListener` to listen for `keydown` events.
-- Inside the event listener, use multiple `if` statements to check which `key` was `pressed`.
+- Inside the event listener, use multiple `if` statements to check which `key` is `pressed`.
 - Depending on the `key` pressed, call the appropriate `function` and pass the `robot's class` as an `argument`.
 
 _Code example:_
@@ -389,7 +389,7 @@ document.addEventListener("keydown", function (event) {
 });
 ```
 
-- You should decide with your team mates the keys that will trigger each robot of yours!
+- You should decide with your teammates the keys that will trigger each of your robots!
 
 **`Prompt Example:`**
 
@@ -400,7 +400,7 @@ document.addEventListener("keydown", function (event) {
 
 - Ensure that all robots are displayed correctly in the gallery.
 
-- Make sure all files (robots-harmony.html, robots-harmony.css, robots-harmony.js) are in the same folder submitted to your `Gitea`.
+- Make sure all files (robots-harmony.html, robots-harmony.css, robots-harmony.js) are in the same folder submitted in the repository of your `Gitea` account.
 
 - Double-check the code to ensure everything is clean and well-organized.
 
