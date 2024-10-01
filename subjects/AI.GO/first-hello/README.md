@@ -86,7 +86,7 @@ const handleSpeakClick = (event) => {
 
 ### Expected result
 
-You can see an example of the expected result [here](https://youtu.be/At4BhyzMxzw)
+You can see an example of the expected result [here](https://youtu.be/PuyEdAA0wy4)
 
 **`Prompt Example:`**
 
