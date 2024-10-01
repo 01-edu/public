@@ -43,7 +43,7 @@ The way the Kaggle platform works is explained in the challenge overview page. I
 
 #### Scores
 
-In order to validate the project you will have to score at least **79% accuracy on the Leaderboard**:
+In order to validate the project you will have to score at least **78.9% accuracy on the Leaderboard**:
 
 - 78.9% accuracy is the minimum score to validate the project.
 

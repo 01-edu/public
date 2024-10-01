@@ -43,7 +43,7 @@ project
 
 #### Final score
 
-###### Is the accuracy associated with the username in `username.txt` higher than 79%? The best submission score can be accessed from the user profile.
+###### Is the accuracy associated with the username in `username.txt` higher than 78.9%? The best submission score can be accessed from the user profile.
 
 #### Examples
 
