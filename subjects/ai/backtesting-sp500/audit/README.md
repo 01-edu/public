@@ -5,7 +5,7 @@
 ```
 project
 │   README.md
-│   environment.yml
+│   requirements.txt
 │
 └───data
 │   │   sp500.csv
@@ -30,7 +30,7 @@ project
 
 ###### Does the readme file contain a description of the project, explain how to run the code from an empty environment, give a summary of the implementation of each python file and contain a conclusion that gives the performance of the strategy?
 
-###### Does the environment contain all libraries used and their versions that are necessary to run the code?
+###### Does the requirements contain all libraries used and their versions that are necessary to run the code?
 
 ###### Does the notebook contain a missing values analysis? **Example**: number of missing values per variables or per year
 
@@ -107,7 +107,7 @@ Best practice:
 
 ![alt text][performance]
 
-[performance]: ../images/w1_weekend_plot_pnl.png 'Cumulative Performance'
+[performance]: ../images/w1_weekend_plot_pnl.png "Cumulative Performance"
 
 ##### 5. main.py
 
