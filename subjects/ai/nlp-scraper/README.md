@@ -1,4 +1,4 @@
-## NLP-enriched News Intelligence platform
+## NLP Scraper
 
 The goal of this project is to build an NLP-enriched News Intelligence
 platform. News analysis is a trending and important topic. The analysts get
@@ -10,7 +10,25 @@ The platform connects to a news data source, detects the entities, detects the
 topic of the article, analyses the sentiment and performs a scandal detection
 analysis.
 
-### Scraper
+### Role Play
+
+You're a Natural Language Processing (NLP) specialist at a tech startup developing a sentiment analysis tool for social media posts. Your task is to build the preprocessing pipeline and create a bag-of-words representation for tweet analysis.
+
+### Learning Objectives
+
+1. Set up an NLP-focused Python environment
+2. Implement basic text preprocessing techniques (lowercase, punctuation removal)
+3. Perform text tokenization at sentence and word levels
+4. Remove stop words from text data
+5. Apply stemming to reduce words to their root forms
+6. Create a complete text preprocessing pipeline
+7. Implement a bag-of-words model using CountVectorizer
+8. Analyze word frequency in a corpus of tweets
+9. Prepare a labeled dataset for sentiment analysis
+
+### Instructions
+
+#### Scraper
 
 News data source:
 
@@ -29,7 +47,7 @@ Use data from the last week otherwise the volume may be too high.
 There should be at least 300 articles stored in your file system or SQL
 database.
 
-### NLP engine
+#### NLP engine
 
 In production architectures, the NLP engine delivers a live output based on the
 news that are delivered in a live stream data by the scraper. However, it
@@ -41,7 +59,7 @@ the stored data.
 
 Here how the NLP engine should process the news:
 
-#### **1. Entities detection:**
+##### **1. Entities detection:**
 
 The goal is to detect all the entities in the document (headline and body). The
 type of entity we focus on is `ORG`. This corresponds to companies and
@@ -52,7 +70,7 @@ organizations. This information should be stored.
 [Named Entity Recognition with NLTK and
 SpaCy](https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da)
 
-#### **2. Topic detection:**
+##### **2. Topic detection:**
 
 The goal is to detect what the article is dealing with: Tech, Sport, Business,
 Entertainment or Politics. To do so, a labelled dataset is provided: [training
@@ -68,7 +86,7 @@ that the model is trained correctly and not overfitted.
 
 - Learning constraints: **Score on test: > 95%**
 
-#### **3. Sentiment analysis:**
+##### **3. Sentiment analysis:**
 
 The goal is to detect the sentiment (positive, negative or neutral) of the news
 articles. To do so, use a pre-trained sentiment model. I suggest to use:
@@ -82,7 +100,7 @@ articles. To do so, use a pre-trained sentiment model. I suggest to use:
 
 - [Sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis)
 
-#### **4. Scandal detection**
+##### **4. Scandal detection**
 
 The goal is to detect environmental disaster for the detected companies. Here
 is the methodology that should be used:
@@ -107,7 +125,7 @@ is the methodology that should be used:
 
 - Flag the top 10 articles.
 
-#### 5. **Source analysis (optional)**
+##### 5. **Source analysis (optional)**
 
 The goal is to show insights about the news' source you scraped.
 This requires to scrap data on at least 5 days (a week ideally). Save the plots
@@ -127,7 +145,7 @@ Here are examples of insights:
   - Companies mentioned the most
   - Sentiment per companies
 
-### Deliverables
+### Project repository structure:
 
 The expected structure of the project is:
 
@@ -212,7 +230,7 @@ python scraper_news.py
    Environmental scandal detected for <entity>
    ```
 
-### Notions
+### Resources
 
 - [Web Scraping](https://www.youtube.com/watch?v=XVv6mJpFOb0)
 - [Sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis)

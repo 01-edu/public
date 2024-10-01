@@ -1,9 +1,17 @@
-## Emotions detection with Deep Learning
+## Emotion detector
+
+### Overview
 
 Cameras are everywhere. Videos and images have become one of the most interesting data sets for artificial intelligence.
 Image processing is a quite broad research area, not just filtering, compression, and enhancement.
 
 Besides, we are even interested in the question, “what is in images?”, i.e., content analysis of visual inputs, which is part of the main task of computer vision.
+
+### Role play
+
+you're going to train a computer to be like a mind reader, but instead of reading thoughts, it's reading emotions! You'll be working with a bunch of pictures of faces, teaching your AI to tell the difference between a big grin and a grumpy frown, or a surprised gasp and a fearful wide-eyed look.
+
+### Learning Objective
 
 The study of computer vision could make possible such tasks as 3D reconstruction of scenes, motion capturing, and object recognition, which are crucial for even higher-level intelligence such as image and video understanding, and motion understanding.
 
@@ -18,7 +26,9 @@ With the computing power exponentially increasing the computer vision field has 
 
 - The history behind this field is fascinating! [Here](https://kapernikov.com/basic-introduction-to-computer-vision/) is a short summary of its history.
 
-### Project goal and suggested timeline
+### Instructions
+
+#### Project goal:
 
 The goal of the project is to implement a **system that detects the emotion on a face from a webcam video stream**. To achieve this exciting task you'll have to understand how to:
 
@@ -32,7 +42,7 @@ Then starts the emotion detection in a webcam video stream step that will last u
 
 The two steps are detailed below.
 
-### Preliminary:
+#### Preliminary:
 
 - Take [this course](https://www.coursera.org/learn/convolutional-neural-networks). This course is a reference for many reasons and one of them is the creator: **Andrew Ng**. He explains the basics of CNNs but also some more advanced topics as transfer learning, siamese networks etc ...
 - I suggest to focus on Week 1 and 2 and to spend less time on Week 3 and 4. Don't worry the time scoping of such MOOCs are conservative. You can attend the lessons for free!
@@ -41,7 +51,7 @@ The two steps are detailed below.
 
 - Start first with a logistic regression to understand how to handle images in Python. And then train your first CNN on this data set.
 
-### Face emotions classification
+#### Face emotions classification
 
 Emotion detection is one of the most researched topics in the modern-day machine learning arena. The ability to accurately detect and identify an emotion opens up numerous doors for Advanced Human Computer Interaction.
 The aim of this project is to detect up to seven distinct facial emotions in real time.
@@ -57,7 +67,7 @@ Your goal is to implement a program that takes as input a video stream that cont
   This dataset was provided for this past [Kaggle challenge](https://www.kaggle.com/competitions/challenges-in-representation-learning-facial-expression-recognition-challenge/overview).
   It is possible to find more information about on the challenge page. Train a CNN on the dataset `train.csv`. Here is an [example of architecture](https://www.quora.com/What-is-the-VGG-neural-network) you can implement.
   **The CNN has to perform more than 60% on the test set**. You can use the `test_with_emotions.csv` file for this. You will see that the CNNs take a lot of time to train.
-  You don't want to overfit the neural network. I strongly suggest to use early stopping, callbacks and to monitor the training using the `TensorBoard`.
+  You don't want to overfit the neural network. I strongly suggest to use early stopping, callbacks and to monitor the training using the `TensorBoard` 'note: Integrating TensorBoard is not optional'.
 
 You have to save the trained model in `final_emotion_model.keras` and to explain the chosen architecture in `final_emotion_model_arch.txt`. Use `model.summary())` to print the architecture.
 It is also expected that you explain the iterations and how you end up choosing your final architecture. Save a screenshot of the `TensorBoard` while the model's training in `tensorboard.png` and save a plot with the learning curves showing the model training and stopping BEFORE the model starts overfitting in `learning_curves.png`.
@@ -82,7 +92,7 @@ For that step, I suggest again to use **OpenCV** as much as possible. This link 
 - Optional: **(very cool)** Hack the CNN. Take a picture for which the prediction of your CNN is **Happy**. Now, hack the CNN: using the same image **SLIGHTLY** modified make the CNN predict **Sad**.
   You can find an example on how to achieve this in [this article](https://medium.com/@ageitgey/machine-learning-is-fun-part-8-how-to-intentionally-trick-neural-networks-b55da32b7196)
 
-### Deliverable
+### Project repository structure:
 
 ```
 project
@@ -90,7 +100,7 @@ project
 │   ├── test.csv
 │   ├── train.csv
 │   └── xxx.csv
-├── environment.yml
+├── requirements.txt
 ├── README.md
 ├── results
 │   ├── model
@@ -148,14 +158,16 @@ Preprocessing ...
 
 ```
 
-### Useful resources:
+### Tips
+
+Balance technical prowess with psychological insight: as you fine-tune your CNN and optimize your video processing, remember that understanding the nuances of human facial expressions is key to creating a truly effective emotion detection system.
+
+### Resources
 
 - https://machinelearningmastery.com/what-is-computer-vision/
 
 - Use a pre-trained CNN: https://arxiv.org/pdf/1812.06387.pdf
 
 - Hack the CNN https://medium.com/@ageitgey/machine-learning-is-fun-part-8-how-to-intentionally-trick-neural-networks-b55da32b7196
-
-- http://ice.dlut.edu.cn/valse2018/ppt/WeihongDeng_VALSE2018.pdf
 
 - https://arxiv.org/pdf/1812.06387.pdf

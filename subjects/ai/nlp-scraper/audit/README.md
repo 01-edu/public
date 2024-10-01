@@ -1,4 +1,4 @@
-#### NLP-enriched News Intelligence platform
+#### NLP Scraper
 
 ##### Preliminary
 

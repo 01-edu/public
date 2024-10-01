@@ -1,4 +1,4 @@
-#### First Kaggle: Titanic
+#### Kaggle Titanic
 
 ##### Preliminary
 
