@@ -406,7 +406,7 @@ document.addEventListener("keydown", function (event) {
 
 ### Expected Output
 
-Your project needs to check all the previous tasks, it will look something close to (and maybe better than) [this](https://youtu.be/pWD0tbyTyiI).
+Your project needs to check all the previous tasks, it will look something close to (and maybe better than) [this](https://youtu.be/drQsUzPeoAQ).
 
 ### Bonus part
 
