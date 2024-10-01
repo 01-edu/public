@@ -100,7 +100,7 @@ const handleClick = (event) => {
   } else {
     /*
     If the eye is open:
-    - Add to 'button' element the text: "Click to open the left eye"
+    - Add to the 'button' element the text: "Click to open the left eye"
     - Change the 'eyeLeft' element background color to black
     */
   }
