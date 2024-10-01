@@ -106,7 +106,7 @@ button.addEventListener('click', handleClick)
 
 ### Expected result
 
-You can see an example of the expected result [here](https://youtu.be/wuYTorfBViE)
+You can see an example of the expected result [here](https://youtu.be/IQ6-3X3JBss)
 
 **`Prompt Examples:`**
 
