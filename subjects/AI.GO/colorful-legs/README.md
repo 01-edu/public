@@ -47,7 +47,7 @@ In the JS file, like in the previous exercise, get the following elements:
 
 ### Expected result
 
-You can see an example of the expected result [here](https://youtu.be/QQ0GKGuXgBw)
+You can see an example of the expected result [here](https://youtu.be/vnzQ0R-Ixl0)
 
 **`Prompt Example:`**
 
