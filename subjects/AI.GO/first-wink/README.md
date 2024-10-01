@@ -16,7 +16,7 @@ Don't worry if things feel a bit challenging—that's part of the process! Just 
 
 > We can mention thing you do not know; but by this time, you know what to do! Search for it, ask your peers and use clever prompts ;)
 
-- **You need to continue on the HTML, CSS, JS code you submitted for the exercise `first-move`, but with an empty JavaScript file and do not forget to change the name of the linked files to the name of this exercise as well as following the new instructions!**
+- **You need to continue on the HTML, CSS, JS code you submitted for the exercise `first-move`, but with an empty JavaScript file. Do not forget to change the name of the linked files to the name of this exercise as well as following the new instructions!**
 
 ### Resources
 
@@ -33,7 +33,7 @@ We provide you with some content to get started smoothly, check it out!
 
 #### Task 1:
 
-Let's put a button on the top right corner of the page with the `id` of "eye-btn", that will toggle (close or open) the left eye when clicked.
+Let's put a button on the top right corner of the page with the `id` set to "eye-btn", that will toggle (close or open) the left eye when clicked.
 
 Add it in the HTML structure:
 
@@ -60,7 +60,7 @@ Select the button in your JavaScript file by its `id`. That will allow the user 
 ```js
 // Select the button element using its ID so we can interact with it in our JavaScript
 
-//Example of selecting a button called myButton
+//Example of selecting a button called btn-example
 const myButton = document.getElementById("btn-example");
 ```
 
