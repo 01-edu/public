@@ -1,4 +1,14 @@
-# Model selection
+## Model selection
+
+### Overview
+
+This exercise set focuses on advanced model selection techniques in machine learning. You'll work with cross-validation, grid search, and performance evaluation tools. 
+
+### Role Play
+
+You're a machine learning engineer at a tech company. Your team is working on improving model selection and evaluation processes for various projects. Your task is to implement and analyze different model selection techniques to ensure the most robust and reliable models are chosen for production.
+
+### Learning Objectives
 
 If you finished yesterday's exercises you should be able to train several Machine Learning algorithms and to choose one returned by GridSearchCV.
 GridSearchCV returns the model that gives the best score on the test set. Yesterday, as I told you, I changed the **cv** parameter to compute the GridSearch with a train set and a test set.
@@ -27,17 +37,17 @@ We will answer these questions today ! The topics we will cover are the one of t
 _Version of Pandas I used to do the exercises: 1.0.1_.
 I suggest to use the most recent one.
 
-### **Resources**
+### Resources
 
 **Must read before to start the exercises**
 
-### Biais-Variance trade off, aka Underfitting/Overfitting:
+#### Biais-Variance trade off, aka Underfitting/Overfitting:
 
 - [Bias-Variance Trade-Off in Machine Learning](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/)
 
 - [Hyperparameters and Model Validation](https://jakevdp.github.io/PythonDataScienceHandbook/05.03-hyperparameters-and-model-validation.html)
 
-### Cross-validation
+#### Cross-validation
 
 - [Train/Test Split and Cross Validation](https://algotrading101.com/learn/train-test-split/)
 
@@ -45,7 +55,7 @@ I suggest to use the most recent one.
 
 ---
 
-# Exercise 0: Environment and libraries
+### Exercise 0: Environment and libraries
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
@@ -57,13 +67,13 @@ I recommend to use:
 - the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
 - one of the most recent versions of the libraries required
 
-1. Create a virtual environment named `ex00`, with a version of Python >= `3.8`, with the following libraries: `pandas`, `numpy`, `jupyter`, `matplotlib` and `scikit-learn`.
+1. Create a virtual environment named `ex00`, with a version of Python >= `3.9`, with the following libraries: `pandas`, `numpy`, `jupyter`, `matplotlib` and `scikit-learn`.
 
 ---
 
 ---
 
-# Exercise 1: K-Fold
+### Exercise 1: K-Fold
 
 The goal of this exercise is to learn to use `KFold` to split the data set in a k-fold cross validation. Most of the time you won't use this function to split your data because this function is used by others as `cross_val_score` or `cross_validate` or `GridSearchCV` ... . But, this allows to understand the splitting and to create a custom one if needed.
 
@@ -95,7 +105,7 @@ y = np.array(np.arange(1,11))
 
 ---
 
-# Exercise 2: Cross validation (k-fold)
+### Exercise 2: Cross validation (k-fold)
 
 The goal of this exercise is to learn how to use cross validation. After reading the articles you should be able to explain why we need to cross-validate the models. We will firstly focus on Linear Regression to reduce the computation time. We will be using `cross_validate` to run the cross validation. Note that `cross_val_score` is similar but the `cross_validate` calculates one or more scores and timings for each CV split.
 
@@ -153,7 +163,7 @@ Standard deviation of scores on validation sets:
 
 ---
 
-# Exercise 3: GridsearchCV
+### Exercise 3: GridsearchCV
 
 The goal here is to utilize GridSearchCV for running a grid search, making predictions, and scoring on a test set.
 
@@ -204,7 +214,7 @@ _Hint_: The name of the metric to put in the parameter `scoring` is `neg_mean_sq
 
 ---
 
-# Exercise 4: Validation curve and Learning curve
+### Exercise 4: Validation curve and Learning curve
 
 The goal of this exercise is to learn how to analyze the model's performance with two tools:
 

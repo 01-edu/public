@@ -1,4 +1,15 @@
-# Keras 2
+## Keras 2
+
+### Overview
+
+This exercise set focuses on advanced applications of Keras for building and training neural networks. You'll work on both regression and multi-class classification problems, using real-world datasets like the Auto MPG and Iris datasets.
+
+
+### Role Play
+
+You're a data scientist at a biotech company developing AI-powered systems for various applications. Your current project involves creating neural networks for both regression and multi-class classification tasks. You'll be working on predicting car fuel efficiency and classifying flower species, showcasing the versatility of neural networks in different domains.
+
+### Learning Objectives
 
 The goal of this day is to learn to use Keras to build Neural Networks and train them on small data sets. This helps to understand the specifics of networks for classification and regression.
 
@@ -28,7 +39,7 @@ The audit will provide the code and output because it is not straightforward to 
 _Version of Keras I used to do the exercises: 2.4.3_.
 I suggest to use the most recent one.
 
-### **Resources**
+### Resources
 
 - https://machinelearningmastery.com/tutorial-first-neural-network-python-keras/
 
@@ -36,7 +47,7 @@ I suggest to use the most recent one.
 
 ---
 
-# Exercise 0: Environment and libraries
+### Exercise 0: Environment and libraries
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
@@ -48,13 +59,13 @@ I recommend to use:
 - the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
 - one of the most recent versions of the libraries required
 
-1. Create a virtual environment named with a version of Python >= `3.8`, with the following libraries: `pandas`, `numpy`, `jupyter` and `keras`.
+1. Create a virtual environment named with a version of Python >= `3.9`, with the following libraries: `pandas`, `numpy`, `jupyter` and `keras`.
 
 ---
 
 ---
 
-# Exercise 1: Regression - Optimize
+### Exercise 1: Regression - Optimize
 
 The goal of this exercise is to learn to set up the optimization for a regression neural network. There's no code to run in that exercise. In W2D2E3, we implemented a neural network designed for regression. We will be using this neural network:
 
@@ -88,7 +99,7 @@ https://keras.io/api/metrics/regression_metrics/
 
 ---
 
-# Exercise 2: Regression example
+### Exercise 2: Regression example
 
 The goal of this exercise is to learn to train a neural network to perform a regression on a data set.
 The data set is [Auto MPG Dataset](auto-mpg.csv) and the go is to build a model to predict the fuel efficiency of late-1970s and early 1980s automobiles. To do this, provide the model with a description of many automobiles from that time period. This description includes attributes like: cylinders, displacement, horsepower, and weight.
@@ -109,7 +120,7 @@ https://www.tensorflow.org/tutorials/keras/regression
 
 ---
 
-# Exercise 3: Multi classification - Softmax
+### Exercise 3: Multi classification - Softmax
 
 The goal of this exercise is to learn to a neural network architecture for multi-class data. This is an important type of problem on which to practice with neural networks because the three class values require specialized handling. A multi-classification neural network uses as output layer a **softmax** layer. The **softmax** activation function is an extension of the sigmoid as it is designed to output the probabilities to belong to each class in a multi-class problem. This output layer has to contain as much neurons as classes in the multi-classification problem. This article explains in detail how it works. https://developers.google.com/machine-learning/crash-course/multi-class-neural-networks/softmax
 
@@ -126,7 +137,7 @@ Let us assume we want to classify images and we know they contain either apples,
 
 ---
 
-# Exercise 4: Multi classification - Optimize
+### Exercise 4: Multi classification - Optimize
 
 The goal of this exercise is to learn to optimize a multi-classification neural network. As learnt previously, the loss function used in binary classification is the log loss - also called in Keras `binary_crossentropy`. This function is defined for binary classification and can be extended to multi-classification. In Keras, the extended loss that supports multi-classification is `binary_crossentropy`. There's no code to run in that exercise.
 
@@ -142,7 +153,7 @@ model.compile(loss='',#TODO1
 
 ---
 
-# Exercise 5 Multi classification example
+### Exercise 5 Multi classification example
 
 The goal of this exercise is to learn to use a neural network to classify a multiclass data set. The data set used is the Iris data set which allows to classify flower given basic features as flower's measurement.
 

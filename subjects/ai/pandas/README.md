@@ -1,4 +1,16 @@
-# Pandas
+## Pandas
+
+### Overview
+
+This set of exercises focuses on using Pandas, a powerful library for data manipulation and analysis in Python. You'll learn to create and manipulate DataFrames, work with real-world datasets, handle missing values, and perform various data operations. The exercises cover key Pandas functionalities including data loading, cleaning, transformation, and basic analysis.
+
+### Role Play
+
+You are a data analyst at a multinational energy company. Your team has been tasked with analyzing various datasets to improve operational efficiency and customer service. 
+
+Your manager emphasizes the importance of clean, efficient code and clear explanations of your methods and findings. You'll need to present your results to both technical team members and non-technical executives, so focus on creating clear visualizations and concise summaries of your insights.
+
+### Learning Objectives
 
 The goal of this day is to understand practical usage of **Pandas**.
 As **Pandas** in intensively used in Data Science, other days of the piscine will be dedicated to it.
@@ -51,7 +63,7 @@ It contains ALL you need to know about Pandas.
 
 ---
 
-# Exercise 0: Environment and libraries
+### Exercise 0: Environment and libraries
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
@@ -63,13 +75,13 @@ I recommend to use:
 - the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
 - one of the most recent versions of the libraries required
 
-1. Create a virtual environment named `ex00`, with a version of Python >= `3.8`, with the following libraries: `pandas`, `numpy` and `jupyter`.
+1. Create a virtual environment named `ex00`, with a version of Python >= `3.9`, with the following libraries: `pandas`, `numpy` and `jupyter`.
 
 ---
 
 ---
 
-# Exercise 1: Your first DataFrame
+### Exercise 1: Your first DataFrame
 
 The goal of this exercise is to learn to create basic Pandas objects.
 
@@ -92,7 +104,7 @@ The goal of this exercise is to learn to create basic Pandas objects.
 
 ---
 
-# Exercise 2: Electric power consumption
+### Exercise 2: Electric power consumption
 
 The goal of this exercise is to learn to manipulate real data with Pandas.
 
@@ -121,7 +133,7 @@ The data set used is [**Individual household electric power consumption**](https
 
 ---
 
-# Exercise 3: E-commerce purchases
+### Exercise 3: E-commerce purchases
 
 The goal of this exercise is to learn to manipulate real data with Pandas. This exercise is less guided since the exercise 2 should have given you a nice introduction.
 
@@ -146,7 +158,7 @@ Questions:
 
 ---
 
-# Exercise 4: Handling missing values
+### Exercise 4: Handling missing values
 
 The goal of this exercise is to learn to handle missing values. In the previous exercise we used the first techniques: filter out the missing values. We were lucky because the proportion of missing values was low. But in some cases, dropping the missing values is not possible because the filtered data set would be too small.
 

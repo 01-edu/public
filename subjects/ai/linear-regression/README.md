@@ -1,6 +1,8 @@
 ![Alt Text](w2_day01_linear_regression_video.gif)
 
-# Linear regression
+## Linear regression
+
+### Overview
 
 The goal of this day is to understand practical Linear regression and supervised learning with Scikit Learn.
 
@@ -8,6 +10,13 @@ The word "regression" was introduced by Sir Francis Galton (a cousin of C. Darwi
 studied the size of individuals within a progeny. He was trying to understand why
 large individuals in a population appeared to have smaller children, more
 close to the average population size; hence the introduction of the term "regression".
+
+### Role play
+
+Hey there, future data detective! Ready to crack the case of predicting outcomes? You're in for a treat! This module is all about mastering the art of Linear Regression - your trusty magnifying glass in the world of data analysis.
+Imagine being able to draw the perfect line through a cloud of data points, revealing hidden patterns and making predictions that'll make your colleagues go "Wow!" That's the power of Linear Regression, and you're about to become an expert!
+
+### Learning Objective
 
 Today we will learn a basic algorithm used in **supervised learning** : **The Linear Regression**. We will be using **Scikit-learn** which is a machine learning library. It is designed to interoperate with the Python libraries NumPy and Pandas.
 
@@ -33,31 +42,29 @@ We will also learn progressively the Machine Learning methodology for supervised
 
 _Version of Scikit Learn I used to do the exercises: 0.22_. I suggest using the most recent one. Scikit Learn 1.0 is finally available after ... 14 years.
 
-### **Resources**
+### Resources
 
-### To start with Scikit-learn
+#### To start with Scikit-learn
 
-- https://scikit-learn.org/stable/tutorial/basic/tutorial.html
+- https://scikit-learn.org/stable/getting_started.html
 
 - https://jakevdp.github.io/PythonDataScienceHandbook/05.02-introducing-scikit-learn.html
 
 - https://scikit-learn.org/stable/modules/linear_model.html
 
-### Machine learning methodology and algorithms
+#### Machine learning methodology and algorithms
 
-- This course provides a broad introduction to machine learning, data mining, and statistical pattern recognition. Andrew Ng is a star in the Machine Learning community. I recommend spending some time during the projects to focus on some algorithms. However, Python is not the language used for the course. https://www.coursera.org/learn/machine-learning
+- This course provides a broad introduction to machine learning, data mining, and statistical pattern recognition. Andrew Ng is a star in the Machine Learning community. I recommend spending some time during the projects to focus on some algorithms. However, Python is not the language used for the course. https://www.youtube.com/playlist?list=PLWD7QtH5pagQevEwjEOCQi1Cgqe3zKf2s
 
 - https://docs.microsoft.com/en-us/azure/machine-learning/algorithm-cheat-sheet
 
-- https://scikit-learn.org/stable/tutorial/index.html
+#### Linear Regression
 
-### Linear Regression
+- https://onlinestatbook.com/2/regression/intro.html
 
-- https://towardsdatascience.com/laymans-introduction-to-linear-regression-8b334a3dab09
+- https://www.analyticsvidhya.com/blog/2021/10/everything-you-need-to-know-about-linear-regression/
 
-- https://towardsdatascience.com/linear-regression-the-actually-complete-introduction-67152323fcf2
-
-### Train test split
+#### Train test split
 
 - https://machinelearningmastery.com/train-test-split-for-evaluating-machine-learning-algorithms/
 
@@ -67,7 +74,7 @@ _Version of Scikit Learn I used to do the exercises: 0.22_. I suggest using the 
 
 ---
 
-# Exercise 0: Environment and libraries
+### Exercise 0: Environment and libraries
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
@@ -79,13 +86,13 @@ I recommend to use:
 - the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
 - one of the most recent versions of the libraries required
 
-1. Create a virtual environment named `ex00`, with a version of Python >= `3.8`, with the following libraries: `pandas`, `numpy`, `jupyter`, `matplotlib` and `scikit-learn`.
+1. Create a virtual environment named `ex00`, with a version of Python >= `3.9`, with the following libraries: `pandas`, `numpy`, `jupyter`, `matplotlib` and `scikit-learn`.
 
 ---
 
 ---
 
-# Exercise 1: Scikit-learn estimator
+### Exercise 1: Scikit-learn estimator
 
 The goal of this exercise is to learn to fit a Scikit-learn estimator and use it to predict.
 
@@ -101,7 +108,7 @@ X, y = [[1],[2.1],[3]], [[1],[2],[3]]
 
 ---
 
-# Exercise 2: Linear regression in 1D
+### Exercise 2: Linear regression in 1D
 
 The goal of this exercise is to understand how the linear regression works in one dimension. To do so, we will generate a data in one dimension. Using `make regression` from Scikit-learn, generate a data set with 100 observations:
 
@@ -149,7 +156,7 @@ https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_e
 
 ---
 
-# Exercise 3: Train test split
+### Exercise 3: Train test split
 
 The goal of this exercise is to learn to split a data set. It is important to understand why we split the data in two sets. To put it in a nutshell: the Machine Learning model learns on the training data and evaluates on the data the model hasn't seen before: the testing data.
 
@@ -170,11 +177,11 @@ https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_
 
 ---
 
-# Exercise 4: Forecast diabetes progression
+### Exercise 4: Forecast diabetes progression
 
 The goal of this exercise is to use Linear Regression to forecast the progression of diabetes. It will not always be precised, you should **ALWAYS** start doing an exploratory data analysis in order to have a good understanding of the data you model. As a reminder here an introduction to EDA:
 
-- https://towardsdatascience.com/exploratory-data-analysis-eda-a-practical-guide-and-template-for-structured-data-abfbf3ee3bd9
+- https://medium.com/octave-john-keells-group/a-complete-guide-to-exploratory-data-analysis-on-structured-data-112c082892
 
 The data set used is described in https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.
 
@@ -200,7 +207,7 @@ https://scikit-learn.org/stable/datasets/toy_dataset.html#diabetes-dataset
 
 ---
 
-# Exercise 5: Gradient Descent (Optional)
+### Exercise 5: Gradient Descent (Optional)
 
 The goal of this exercise is to understand how the Linear Regression algorithm finds the optimal coefficients.
 
@@ -238,7 +245,7 @@ y_pred1 = a*x1 + b\
 y_pred2 = a*x2 + b\
 y_pred3 = a\*x3 + b
 
-### Greedy approach
+#### Greedy approach
 
 2. Create a function `compute_mse`. Compute mse for `a = 1` and `b = 2`.
    **Warning**: `X.shape` is `(100, 1)` and `y.shape` is `(100, )`. Make sure that `y_preds` and `y` have the same shape before to compute `y_preds-y`.
@@ -310,7 +317,7 @@ The expected output is:
 
 In this example we computed 160 000 times the MSE. It is frequent to deal with 50 features, which requires 51 parameters to fit the Linear Regression. If we try this approach with 50 features we would need to compute **5.07e+132** MSE. Even if we reduce the scope and try only 5 values per coefficients we would have to compute the MSE **4.4409e+35** times. This approach is not scalable and that is why is not used to find optimal coefficients for Linear Regression.
 
-### Gradient Descent
+#### Gradient Descent
 
 In a nutshell, Gradient descent is an optimization algorithm used to minimize some function by iteratively moving in the direction of steepest descent as defined by the negative of the gradient. In machine learning, we use gradient descent to update the parameters (a and b) of our model. Parameters refer to the coefficients used in Linear Regression. Before to start implementing the questions, take the time to read [this article](https://medium.com/@yennhi95zz/4-a-beginners-guide-to-gradient-descent-in-machine-learning-773ba7cd3dfe). It explains the gradient descent and how to implement it. The "tricky" part is the computation of the derivative of the mse. You can admit the formulas of the derivatives to implement the gradient descent (`d_theta_0` and `d_theta_1` in the article).
 

@@ -6,7 +6,7 @@
 
 ##### Run `python --version`
 
-###### Does it print `Python 3.x`? x >= 8
+###### Does it print `Python 3.x`? x >= 9
 
 ###### Do `import jupyter`, `import numpy`, `import pandas`, `matplotlib` and `plotly` run without any errors?
 

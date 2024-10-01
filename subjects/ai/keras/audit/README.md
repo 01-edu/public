@@ -6,7 +6,7 @@
 
 ##### Run `python --version`
 
-###### Does it print `Python 3.x`? x >= 8
+###### Does it print `Python 3.x`? x >= 9
 
 ###### Does `import jupyter`, `import numpy`, `import pandas`, and `import keras` run without any error?
 

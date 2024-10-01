@@ -1,6 +1,14 @@
-# Classification
+## Classification
+
+### Overview
 
 The goal of this day is to understand practical classification with Scikit Learn.
+
+### Role play
+
+Imagine you're a data scientist working for a cutting-edge medical research company. Your team has been tasked with developing a machine learning model to assist doctors in diagnosing breast cancer. You'll be using logistic regression to classify tumors as benign or malignant based on various features.
+
+### Learning Objectives
 
 Today we will learn a different approach in Machine Learning: the classification which is a large domain in the field of statistics and machine learning. Generally, it can be broken down in two areas:
 
@@ -45,15 +53,15 @@ The **logloss** or **cross entropy** is the loss used for classification. Simila
 
 _Version of Scikit Learn I used to do the exercises: 0.22_. I suggest to use the most recent one. Scikit Learn 1.0 is finally available after ... 14 years.
 
-### **Resources**
+### Resources
 
-### Logistic regression
+#### Logistic regression
 
 - https://towardsdatascience.com/understanding-logistic-regression-9b02c2aec102
 
-### Logloss
+#### Logloss
 
-- https://towardsdatascience.com/cross-entropy-for-classification-d98e7f974451
+- https://www.datacamp.com/tutorial/the-cross-entropy-loss-function-in-machine-learning
 
 - https://medium.com/swlh/what-is-logistic-regression-62807de62efa
 
@@ -61,7 +69,7 @@ _Version of Scikit Learn I used to do the exercises: 0.22_. I suggest to use the
 
 ---
 
-# Exercise 0: Environment and libraries
+### Exercise 0: Environment and libraries
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
@@ -73,13 +81,13 @@ I recommend to use:
 - the virtual environment you're the most confortable with. `virtualenv` and `conda` are the most used in Data Science.
 - one of the most recents versions of the libraries required
 
-1. Create a virtual environment named `ex00`, with a version of Python >= `3.8`, with the following libraries: `pandas`, `numpy`, `jupyter`, `matplotlib` and `scikit-learn`.
+1. Create a virtual environment named `ex00`, with a version of Python >= `3.9`, with the following libraries: `pandas`, `numpy`, `jupyter`, `matplotlib` and `scikit-learn`.
 
 ---
 
 ---
 
-# Exercise 1: Logistic regression in Scikit-learn
+### Exercise 1: Logistic regression in Scikit-learn
 
 The goal of this exercise is to learn to use Scikit-learn to classify data.
 
@@ -98,7 +106,7 @@ y = [0,0,0,1,1,1,0]
 
 ---
 
-# Exercise 2: Sigmoid
+### Exercise 2: Sigmoid
 
 The goal of this exercise is to learn to compute and plot the sigmoid function.
 
@@ -120,11 +128,11 @@ The plot should look like this:
 
 ---
 
-# Exercise 3: Decision boundary
+### Exercise 3: Decision boundary
 
 The goal of this exercise is to learn to fit a logistic regression on simple examples and to understand how the algorithm separated the data from the different classes.
 
-## 1 dimension
+#### 1 dimension
 
 First, we will start as usual with features data in 1 dimension. Use `make classification` from Scikit-learn to generate 100 data points:
 
@@ -191,7 +199,7 @@ def predict_probability(coefs, X):
 
 [ex3q6]: ./w2_day2_ex3_q5.png "Scatter plot + Logistic regression + predictions"
 
-## 2 dimensions
+#### 2 dimensions
 
 Now, let us repeat this process on 2-dimensional data. The goal is to focus on the decision boundary and to understand how the Logistic Regression create a line that separates the data. The code to plot the decision boundary is provided, however it is important to understand the way it works.
 
@@ -247,7 +255,7 @@ The plot should look like this:
 
 ---
 
-# Exercise 4: Train test split
+### Exercise 4: Train test split
 
 The goal of this exercise is to learn to split a classification data set. The idea is the same as splitting a regression data set but there's one important detail specific to the classification: the proportion of each class in the train set and test set.
 
@@ -271,7 +279,7 @@ y[70:] = 1
 
 ---
 
-# Exercise 5: Breast Cancer prediction
+### Exercise 5: Breast Cancer prediction
 
 The goal of this exercise is to use Logistic Regression
 to predict breast cancer. It is always important to understand the data before training any Machine Learning algorithm. The data is described in **breast-cancer-wisconsin.names**. I suggest to add manually the column names in the DataFrame.
@@ -299,7 +307,7 @@ Preliminary:
 ---
 
 
-# Exercise 6: Multi-class (Optional)
+### Exercise 6: Multi-class (Optional)
 
 The goal of this exercise is to learn to train a classification algorithm on a multi-class labelled data.
 Some algorithms as SVM or Logistic Regression do not natively support multi-class (more than 2 classes). There are some approaches that allow to use these algorithms on multi-class data.
@@ -310,7 +318,7 @@ Let's assume we work with 3 classes: A, B and C.
 
 More details:
 
-- https://machinelearningmastery.com/one-vs-rest-and-one-vs-one-for-multi-class-classification/
+- https://medium.com/@agrawalsam1997/multiclass-classification-onevsrest-and-onevsone-classification-strategy-2c293a91571a
 
 Let's implement the One-vs-Rest approach from `LogisticRegression`.
 
@@ -353,7 +361,8 @@ def predict_one_vs_all(X, clf0, clf1, clf2 ):
        #TODO
        return classes
 ```
+Resources :
 
-- https://randerson112358.medium.com/python-logistic-regression-program-5e1b32f964db
+- https://www.kaggle.com/code/rahulrajpandey31/logistic-regression-from-scratch-iris-data-set
 
 - https://towardsdatascience.com/logistic-regression-using-python-sklearn-numpy-mnist-handwriting-recognition-matplotlib-a6b31e2b166a

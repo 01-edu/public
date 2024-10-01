@@ -1,6 +1,14 @@
-# Natural Language processing with Spacy
+## NLP with Spacy
+
+### Overview
 
 `spaCy` is a natural language processing (NLP) library for Python designed to have fast performance, and with word embedding models built in, it’s perfect for a quick and easy start. I don't need to detail what spaCy does, it is perfectly summarized by spaCy in this article: **spaCy 101: Everything you need to know**.
+
+### Role Play
+
+You are a senior NLP engineer at a leading e-commerce company. Your team has been tasked with developing an advanced language understanding system to improve various aspects of the company's operations, including product recommendations, customer service automation, and market analysis.
+
+### Learning Objectives
 
 Today, we will learn to use a pre-trained embedding to convert a text into a vector to compute similarity between words or sentences. Remember, embeddings translate large sparse vectors into a lower-dimensional space that preserves semantic relationships.
 Word embeddings is a technique where individual words of a domain or language are represented as real-valued vectors in a lower dimensional space. The BoW representation's dimension depends on the size of the vocabulary. But it can easily reach 10k words. We will also learn to use NER and Part-of-speech. NER allows to identify and segment the named entities and classify or categorize them under various predefined classes. Part-of-speech is a special label assigned to each token (word) in a text corpus to indicate the part of speech and often also other grammatical categories such as tense, number (plural/singular), case etc.
@@ -26,7 +34,7 @@ Word embeddings is a technique where individual words of a domain or language ar
 
 I suggest using the most recent libraries.
 
-### **Resources**
+### Resources
 
 - https://spacy.io/usage/spacy-101
 - https://spacy.io/api/doc
@@ -37,7 +45,7 @@ I suggest using the most recent libraries.
 
 ---
 
-# Exercise 0: Environment and libraries
+### Exercise 0: Environment and libraries
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
@@ -49,13 +57,13 @@ I recommend to use:
 - the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
 - one of the most recent versions of the libraries required
 
-1. Create a virtual environment named with a version of Python >= `3.8`, with the following libraries: `pandas`, `jupyter`, `spaCy 3.4.0`, `sklearn`, `matplotlib`.
+1. Create a virtual environment named with a version of Python >= `3.9`, with the following libraries: `pandas`, `jupyter`, `spaCy 3.4.0`, `sklearn`, `matplotlib`.
 
 ---
 
 ---
 
-# Exercise 1: Embedding 1
+### Exercise 1: Embedding 1
 
 The goal of this exercise is to learn to load an embedding on `spaCy`.
 
@@ -70,7 +78,7 @@ The goal of this exercise is to learn to load an embedding on `spaCy`.
 
 ---
 
-# Exercise 2: Tokenization
+### Exercise 2: Tokenization
 
 The goal of this exercise is to learn to tokenize a document using `spaCy`. We did this using NLTK yesterday.
 
@@ -85,7 +93,7 @@ The goal of this exercise is to learn to tokenize a document using `spaCy`. We d
 
 ---
 
-# Exercise 3: Embeddings 2
+### Exercise 3: Embeddings 2
 
 The goal of this exercise is to learn to use `spaCy` embedding on a document.
 
@@ -107,7 +115,7 @@ https://medium.com/datadriveninvestor/cosine-similarity-cosine-distance-6571387f
 
 ---
 
-# Exercise 4: Sentences' similarity
+### Exercise 4: Sentences' similarity
 
 The goal of this exerice is to learn to compute the similarity between two sentences. As explained in the documentation: **The word embedding of a full sentence is simply the average over all different words**. This is how `similarity` works in SpaCy. This small use case is very interesting because if we build a corpus of sentences that express an intention as **buy shoes**, then we can detect this intention and use it to propose shoes advertisement for customers. The language model used in this exercise is `en_core_web_sm`.
 
@@ -124,7 +132,7 @@ The goal of this exerice is to learn to compute the similarity between two sente
 
 ---
 
-# Exercise 5: NER
+### Exercise 5: NER
 
 The goal of this exercise is to learn to use a Named entity recognition algorithm to detect entities.
 
@@ -147,7 +155,7 @@ https://en.wikipedia.org/wiki/Named-entity_recognition
 
 ---
 
-# Exercise 6: Part-of-speech tags
+### Exercise 6: Part-of-speech tags
 
 The goal of this exercise is to learn to use the Part-of-speech tags (**POS TAG**) using `spaCy`. As explained on Wikipedia, the POS TAG is the process of marking up a word in a text (corpus) as corresponding to a particular part of speech, based on both its definition and its context.
 

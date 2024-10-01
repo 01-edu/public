@@ -1,6 +1,14 @@
-# Pipeline
+## Pipeline
+
+### Overview
 
 Today we will focus on the data preprocessing and discover the Pipeline object from scikit learn.
+
+### Role play
+
+You are a data scientist working for a large e-commerce company. The marketing team has provided you with a dataset containing customer information and purchase history. However, the data is messy - it contains categorical variables, missing values, and features on different scales. Your task is to preprocess this data and prepare it for a machine learning model that will predict customer lifetime value.
+
+### Learning Objective
 
 1. Manage categorical variables with Integer encoding and One Hot Encoding
 2. Impute the missing values
@@ -42,15 +50,15 @@ _Version of Scikit Learn I used to do the exercises: 0.22_. I suggest using the 
 
 ### **Resources**
 
-### Step 3
+#### Step 3
 
 - https://towardsdatascience.com/dimensionality-reduction-for-machine-learning-80a46c2ebb7e
 
-### Step 4
+#### Step 4
 
 - https://medium.com/@societyofai/simplest-way-for-feature-scaling-in-gradient-descent-ae0aaa383039#:~:text=Feature%20scaling%20is%20an%20idea,of%20convergence%20of%20gradient%20descent.
 
-### Pipeline
+#### Pipeline
 
 - https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html
 
@@ -58,7 +66,7 @@ _Version of Scikit Learn I used to do the exercises: 0.22_. I suggest using the 
 
 ---
 
-# Exercise 0: Environment and libraries
+### Exercise 0: Environment and libraries
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
@@ -70,13 +78,13 @@ I recommend to use:
 - the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
 - one of the most recent versions of the libraries required
 
-1. Create a virtual environment named `ex00`, with a version of Python >= `3.8`, with the following libraries: `pandas`, `numpy`, `jupyter`, `matplotlib` and `scikit-learn`.
+1. Create a virtual environment named `ex00`, with a version of Python >= `3.9`, with the following libraries: `pandas`, `numpy`, `jupyter`, `matplotlib` and `scikit-learn`.
 
 ---
 
 ---
 
-# Exercise 1: Imputer 1
+### Exercise 1: Imputer 1
 
 The goal of this exercise is to learn how to use an `Imputer` to fill missing values on basic example.
 
@@ -102,7 +110,7 @@ test_data = [[np.nan, 1, 2],
 
 ---
 
-# Exercise 2: Scaler
+### Exercise 2: Scaler
 
 The goal of this exercise is to learn to scale a data set. There are various scaling techniques, we will focus on `StandardScaler` from scikit learn.
 
@@ -137,7 +145,7 @@ Resources:
 
 ---
 
-# Exercise 3: One hot Encoder
+### Exercise 3: One hot Encoder
 
 The goal of this exercise is to learn how to deal with Categorical variables using the `OneHot` Encoder.
 
@@ -177,7 +185,7 @@ The expected output is:
 
 ---
 
-# Exercise 4: Ordinal Encoder
+### Exercise 4: Ordinal Encoder
 
 The goal of this exercise is to learn how to deal with Categorical variables using the Ordinal Encoder.
 
@@ -201,7 +209,7 @@ _Note: In the version 0.22 of Scikit-learn, the Ordinal Encoder doesn't handle n
 
 ---
 
-# Exercise 5: Categorical variables
+### Exercise 5: Categorical variables
 
 The goal of this exercise is to learn how to deal with Categorical variables with Ordinal Encoder, Label Encoder and One Hot Encoder. For this exercise I strongly suggest using a recent version of `sklearn >= 0.24.1` to avoid issues with the Ordinal Encoder.
 
@@ -334,7 +342,7 @@ Resources:
 
 ---
 
-# Exercise 6: Pipeline
+### Exercise 6: Pipeline
 
 The goal of this exercise is to learn to use the Scikit-learn object: Pipeline. The data set: used for this exercise is the `iris` data set.
 

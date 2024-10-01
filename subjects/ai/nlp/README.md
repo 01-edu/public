@@ -1,6 +1,13 @@
-# NLP
+## NLP
+
+### Overview
 
 “NLP makes it possible for humans to talk to machines:” This branch of AI enables computers to understand, interpret, and manipulate human language. This technology is one of the most broadly applied areas of machine learning and is critical in effectively analyzing massive quantities of unstructured, text-heavy data.
+
+### Role Play
+You're a Natural Language Processing (NLP) specialist at a tech startup developing a sentiment analysis tool for social media posts. Your task is to build the preprocessing pipeline and create a bag-of-words representation for tweet analysis.
+
+### Learning Objectives
 
 Machine learning algorithms cannot work with raw text directly. Rather, the text must be converted into vectors of numbers. In natural language processing, a common technique for extracting features from text is to place all of the words that occur in the text in an unordered bucket. This approach is called a bag of words model or BoW for short. It’s referred to as a “bag” of words because any information about the structure of the sentence is lost. This is useful to train usual machine learning models on text data. Other types of models as RNNs or LSTMs take as input a complete and ordered sequence.
 
@@ -30,7 +37,7 @@ Today, we we will learn to preprocess text data and to create a bag of word repr
 
 I suggest to use the most recent libraries.
 
-### **Resources**
+### Resources
 
 - https://towardsdatascience.com/your-guide-to-natural-language-processing-nlp-48ea2511f6e1
 
@@ -40,7 +47,7 @@ I suggest to use the most recent libraries.
 
 ---
 
-# Exercise 0: Environment and libraries
+### Exercise 0: Environment and libraries
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
@@ -52,13 +59,13 @@ I recommend to use:
 - the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
 - one of the most recent versions of the libraries required
 
-1. Create a virtual environment named with a version of Python >= `3.8`, with the following libraries: `pandas`, `jupyter`, `nltk` and `scikit-learn`.
+1. Create a virtual environment named with a version of Python >= `3.9`, with the following libraries: `pandas`, `jupyter`, `nltk` and `scikit-learn`.
 
 ---
 
 ---
 
-# Exercise 1: Lowercase
+### Exercise 1: Lowercase
 
 The goal of this exercise is to learn to lowercase text data in Python. Note that if the volume of data is low the text data can be stored in a Pandas DataFrame or Series. But, when dealing with high volumes (high but not huge), using a Pandas DataFrame or Series is not efficient. Data structures as dictionaries or list are more adapted.
 
@@ -77,7 +84,7 @@ series_data = pd.Series(list_, name='text')
 
 ---
 
-# Exercise 2: Punctuation
+### Exercise 2: Punctuation
 
 The goal of this exercise is to learn to deal with punctuation. In Natural Language Processing, some basic approaches as Bag of Words model the text as an unordered combination of words. In that case the punctuation is not always useful as it doesn't add information to the model. That is why is removed.
 
@@ -93,7 +100,7 @@ The goal of this exercise is to learn to deal with punctuation. In Natural Langu
 
 ---
 
-# Exercise 3: Tokenization
+### Exercise 3: Tokenization
 
 The goal of this exercise is to learn [to tokenize](https://en.wikipedia.org/wiki/Lexical_analysis#Tokenization) as text. This step is important because it splits the text into token. A token could be a sentence or a word.
 
@@ -110,7 +117,7 @@ text = """Bitcoin is a cryptocurrency invented in 2008 by an unknown person or g
 
 ---
 
-# Exercise 4: Stop words
+### Exercise 4: Stop words
 
 The goal of this exercise is to learn to remove stop words with NLTK. Stop words usually refers to the most common words in a language. For example: "and", "is", "a" are stop words and do not add information to a sentence.
 
@@ -126,7 +133,7 @@ The goal of this exercise is to learn to remove stop words with NLTK.  Stop word
 
 ---
 
-# Exercise 5: Stemming
+### Exercise 5: Stemming
 
 The goal of this exercise is to learn to use stemming using NLTK. As explained in details in the article, stemming is the process of reducing inflection in words to their root forms such as mapping a group of words to the same stem even if the stem itself is not a valid word in the Language.
 
@@ -144,7 +151,7 @@ The interviewer interviews the president in an interview
 
 ---
 
-# Exercise 6: Text preprocessing
+### Exercise 6: Text preprocessing
 
 The goal of this exercise is to learn to create a function to prepocess and clean a text using NLTK.
 
@@ -171,7 +178,7 @@ _Ressources: https://towardsdatascience.com/nlp-preprocessing-with-nltk-3c04ee00
 
 ---
 
-# Exercise 7: Bag of Word representation
+### Exercise 7: Bag of Word representation
 
 The goal of this exercise is to understand the creation of a Bag of Word (BoW) model for a corpus of texts and create a labeled dataset from textual data using a word count matrix.
 

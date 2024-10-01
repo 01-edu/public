@@ -1,4 +1,14 @@
-# Keras
+## Keras
+
+### Overview
+
+This exercise focuses on using Keras to build and train neural networks. Keras is a high-level deep learning API that runs on top of TensorFlow, designed for fast experimentation with deep neural networks. You'll learn to create sequential models, add dense layers, design network architectures, and optimize your models. 
+
+### Role Play
+
+You are a machine learning engineer at a cutting-edge AI startup. Your team has been tasked with developing a neural network model to predict breast cancer diagnoses. The company wants to leverage the power of deep learning to improve early detection rates. Your job is to build, train, and optimize a neural network using Keras and TensorFlow. You'll need to demonstrate your understanding of neural network architectures, the Keras API, and best practices in deep learning model development.
+
+### Learning Objectives
 
 The goal of this day is to learn to use Keras to build Neural Networks. As explained on Keras website, Keras is a deep learning API written in Python, running on top of the machine learning platform TensorFlow. It was developed with a focus on enabling fast experimentation. Being able to go from idea to result as fast as possible is key to doing good research.
 And, TensorFlow was created by the Google Brain team, TensorFlow is an open source library for numerical computation and large-scale machine learning. TensorFlow bundles together a slew of machine learning and deep learning (aka neural networking) models and algorithms and makes them useful by way of a common metaphor. It uses Python to provide a convenient front-end API for building applications with the framework, while executing those applications in high-performance C++.
@@ -28,7 +38,7 @@ The audit will provide the code and output because it is not straightforward to 
 _Version of Keras I used to do the exercises: 2.4.3_.
 I suggest to use the most recent one.
 
-### **Resources**
+### Resources
 
 - https://machinelearningmastery.com/tutorial-first-neural-network-python-keras/
 
@@ -36,7 +46,7 @@ I suggest to use the most recent one.
 
 ---
 
-# Exercise 0: Environment and libraries
+### Exercise 0: Environment and libraries
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
@@ -48,13 +58,13 @@ I recommend to use:
 - the virtual environment you're the most confortable with. `virtualenv` and `conda` are the most used in Data Science.
 - one of the most recents versions of the libraries required
 
-1. Create a virtual environment named with a version of Python >= `3.8`, with the following libraries: `pandas`, `numpy`, `jupyter`, and `keras`.
+1. Create a virtual environment named with a version of Python >= `3.9`, with the following libraries: `pandas`, `numpy`, `jupyter`, and `keras`.
 
 ---
 
 ---
 
-# Exercise 1: Sequential
+### Exercise 1: Sequential
 
 The goal of this exercise is to learn to call the object `Sequential`.
 
@@ -64,7 +74,7 @@ The goal of this exercise is to learn to call the object `Sequential`.
 
 ---
 
-# Exercise 2: Dense
+### Exercise 2: Dense
 
 The goal of this exercise is to learn to create layers of neurons. Keras proposes options to create custom layers. The neural networks build in these exercises do not require custom layers. `Dense` layers do the job. A dense layer is simply a layer where each unit or neuron is connected to each neuron in the next layer. As seen yesterday, there are three main types of layers: input, hidden and output. The **input layer** that specifies the number of inputs (features) is not represented as a layer in Keras. However, `Dense` has a parameter `input_dim` that gives the number of inputs in the previous layer. The output layer as any hidden layer can be created using `Dense`, the only difference is that the output layer contains one single neuron.
 
@@ -90,7 +100,7 @@ The goal of this exercise is to learn to create layers of neurons. Keras propose
 
 ---
 
-# Exercise 3: Architecture
+### Exercise 3: Architecture
 
 The goal of this exercise is to combine the layers and to create a neural network.
 
@@ -105,7 +115,7 @@ The goal of this exercise is to combine the layers and to create a neural networ
 
 ---
 
-# Exercise 4: Optimize
+### Exercise 4: Optimize
 
 The goal of this exercise is to learn to train the neural network. Once the architecture of the neural network is set there are two steps to train the neural network:
 

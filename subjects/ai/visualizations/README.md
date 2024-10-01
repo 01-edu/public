@@ -1,4 +1,6 @@
-# Visualizations
+## Visualizations
+
+### Overview
 
 While working on a dataset it is important to check the distribution of the data. Obviously, for most of humans it is difficult to visualize the data in more than 3 dimensions
 
@@ -7,6 +9,12 @@ While working on a dataset it is important to check the distribution of the data
 - Pandas visualization module
 - Matplotlib
 - Plotly
+
+### Role play
+
+You are a data visualization specialist at a leading tech company. Your team has been tasked with creating an interactive dashboard to present key insights from various company datasets. Your manager has emphasized the importance of using a variety of visualization techniques to effectively communicate complex data to both technical and non-technical stakeholders.
+
+### Learning Objectives
 
 The goal is to understand the basics of those libraries. You'll have time during the project to master one (or the three) of them.
 You may wonder why using one library is not enough. The reason is simple: it depends on the usage.
@@ -48,7 +56,7 @@ I suggest to use the most recent version of the packages.
 
 ---
 
-# Exercise 0: Environment and libraries
+### Exercise 0: Environment and libraries
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
@@ -60,13 +68,13 @@ I recommend to use:
 - the virtual environment you're the most confortable with. `virtualenv` and `conda` are the most used in Data Science.
 - one of the most recents versions of the libraries required
 
-1. Create a virtual environment named `ex00`, with a version of Python >= `3.8`, with the following libraries: `pandas`, `numpy`, `jupyter`, `matplotlib` and `plotly`.
+1. Create a virtual environment named `ex00`, with a version of Python >= `3.9`, with the following libraries: `pandas`, `numpy`, `jupyter`, `matplotlib` and `plotly`.
 
 ---
 
 ---
 
-# Exercise 1: Pandas plot 1
+### Exercise 1: Pandas plot 1
 
 The goal of this exercise is to learn to create plots with use Pandas. Panda's `.plot()` is a wrapper for `matplotlib.pyplot.plot()`.
 
@@ -99,7 +107,7 @@ The plot has to contain:
 
 ---
 
-# Exercise 2: Pandas plot 2
+### Exercise 2: Pandas plot 2
 
 The goal of this exercise is to learn to create plots with use Pandas. Panda's `.plot()` is a wrapper for `matplotlib.pyplot.plot()`.
 
@@ -130,7 +138,7 @@ The plot has to contain:
 
 ---
 
-# Exercise 3: Matplotlib 1
+### Exercise 3: Matplotlib 1
 
 The goal of this plot is to learn to use Matplotlib to plot data. As you know, Matplotlib is the underlying library used by Pandas. It provides more options to plot custom visualizations. Howerver, most of the plots we will create with Matplotlib can be reproduced with Pandas' `.plot()`.
 
@@ -153,7 +161,7 @@ The plot has to contain:
 
 ---
 
-# Exercise 4: Matplotlib 2
+### Exercise 4: Matplotlib 2
 
 The goal of this plot is to learn to use Matplotlib to plot different lines in the same plot on different axis using `twinx`. This very useful to compare variables in different ranges.
 
@@ -183,7 +191,7 @@ The plot has to contain:
 
 ---
 
-# Exercise 5: Matplotlib subplots
+### Exercise 5: Matplotlib subplots
 
 The goal of this exercise is to learn to use Matplotlib to create subplots.
 
@@ -206,7 +214,7 @@ The plot has to contain:
 
 ---
 
-# Exercise 6: Plotly 1
+### Exercise 6: Plotly 1
 
 Plotly has evolved a lot in the previous years. It is important to **always check the documentation**.
 
@@ -245,7 +253,7 @@ https://plotly.com/python/time-series/
 
 ---
 
-# Exercise 7: Plotly Box plots
+### Exercise 7: Plotly Box plots
 
 The goal of this exercise is to learn to use Plotly to plot Box Plots. It is a method for graphically depicting groups of numerical data through their quartiles and values as min, max. It allows comparing quickly some variables.
 
