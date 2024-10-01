@@ -4,7 +4,6 @@
 
 This exercise set focuses on advanced applications of Keras for building and training neural networks. You'll work on both regression and multi-class classification problems, using real-world datasets like the Auto MPG and Iris datasets.
 
-
 ### Role Play
 
 You're a data scientist at a biotech company developing AI-powered systems for various applications. Your current project involves creating neural networks for both regression and multi-class classification tasks. You'll be working on predicting car fuel efficiency and classifying flower species, showcasing the versatility of neural networks in different domains.

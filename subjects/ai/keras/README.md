@@ -2,7 +2,7 @@
 
 ### Overview
 
-This exercise focuses on using Keras to build and train neural networks. Keras is a high-level deep learning API that runs on top of TensorFlow, designed for fast experimentation with deep neural networks. You'll learn to create sequential models, add dense layers, design network architectures, and optimize your models. 
+This exercise focuses on using Keras to build and train neural networks. Keras is a high-level deep learning API that runs on top of TensorFlow, designed for fast experimentation with deep neural networks. You'll learn to create sequential models, add dense layers, design network architectures, and optimize your models.
 
 ### Role Play
 

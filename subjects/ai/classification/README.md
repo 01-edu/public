@@ -304,8 +304,8 @@ Preliminary:
 - [Database](data/breast-cancer-wisconsin.data) and [database information](data/breast-cancer-wisconsin.names)
 
 ---
----
 
+---
 
 ### Exercise 6: Multi-class (Optional)
 
@@ -361,6 +361,7 @@ def predict_one_vs_all(X, clf0, clf1, clf2 ):
        #TODO
        return classes
 ```
+
 Resources :
 
 - https://www.kaggle.com/code/rahulrajpandey31/logistic-regression-from-scratch-iris-data-set

@@ -147,7 +147,7 @@ Notice that the neuron **o1** in the output layer takes as input the output of t
 In exercise 1, you implemented this neuron.
 ![alt text][neuron]
 
-[neuron]: ./w3_day1_neuron.png 'Plot'
+[neuron]: ./w3_day1_neuron.png "Plot"
 
 Now, we add two more neurons:
 
@@ -156,7 +156,7 @@ Now, we add two more neurons:
 
 ![alt text][nn]
 
-[nn]: ./w3_day1_neural_network.png 'Plot'
+[nn]: ./w3_day1_neural_network.png "Plot"
 
 1. Implement the function `feedforward` of the class `OurNeuralNetwork` that takes as input the input data and returns the output y. Return the output for these neurons:
 

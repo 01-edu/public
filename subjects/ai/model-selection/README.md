@@ -2,7 +2,7 @@
 
 ### Overview
 
-This exercise set focuses on advanced model selection techniques in machine learning. You'll work with cross-validation, grid search, and performance evaluation tools. 
+This exercise set focuses on advanced model selection techniques in machine learning. You'll work with cross-validation, grid search, and performance evaluation tools.
 
 ### Role Play
 
@@ -245,7 +245,7 @@ The plot should look like this:
 
 ![alt text][logo_ex5q1]
 
-[logo_ex5q1]: ./w2_day5_ex5_q1.png 'Validation curve '
+[logo_ex5q1]: ./w2_day5_ex5_q1.png "Validation curve "
 
 The interpretation is that from max_depth=10, the train score keeps increasing but the test score (or validation score) reaches a plateau. It means that choosing max_depth = 20 may lead to have an over fitted model.
 
@@ -261,7 +261,7 @@ The interpretation is that from max_depth=10, the train score keeps increasing b
 
 ![alt text][logo_ex5q2]
 
-[logo_ex5q2]: ./w2_day5_ex5_q2.png 'Learning curve '
+[logo_ex5q2]: ./w2_day5_ex5_q2.png "Learning curve "
 
 - **Note Plot Learning Curves**: The learning curves is detailed in the first resource.
 

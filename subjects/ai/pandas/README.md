@@ -6,7 +6,7 @@ This set of exercises focuses on using Pandas, a powerful library for data manip
 
 ### Role Play
 
-You are a data analyst at a multinational energy company. Your team has been tasked with analyzing various datasets to improve operational efficiency and customer service. 
+You are a data analyst at a multinational energy company. Your team has been tasked with analyzing various datasets to improve operational efficiency and customer service.
 
 Your manager emphasizes the importance of clean, efficient code and clear explanations of your methods and findings. You'll need to present your results to both technical team members and non-technical executives, so focus on creating clear visualizations and concise summaries of your insights.
 

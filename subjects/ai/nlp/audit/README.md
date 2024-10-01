@@ -40,7 +40,7 @@ Name: text, dtype: object
 
 #### Exercise 2: Punctuation
 
-###### For question 1, is validated if the ouptut doesn't contain punctuation `` !"#$%&'()*+,-./:;<=>?@[]^_`{|}~ ``. Is the previous statement true? Do not take into account the spaces in the output. The output should be as:
+###### For question 1, is validated if the ouptut doesn't contain punctuation ``!"#$%&'()*+,-./:;<=>?@[]^_`{|}~``. Is the previous statement true? Do not take into account the spaces in the output. The output should be as:
 
 ```
 Remove this from  the sentence

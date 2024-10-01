@@ -126,7 +126,7 @@ X, y, coef = make_regression(n_samples=100,
 
 ![alt text][q1]
 
-[q1]: ./w2_day1_ex2_q1.png 'Scatter plot'
+[q1]: ./w2_day1_ex2_q1.png "Scatter plot"
 
 2. Fit a LinearRegression from Scikit-learn on the generated data and give the equation of the fitted line. The expected output is: `y = coef * x + intercept`
 
@@ -134,7 +134,7 @@ X, y, coef = make_regression(n_samples=100,
 
 ![alt text][q3]
 
-[q3]: ./w2_day1_ex2_q3.png 'Scatter plot + fitted line'
+[q3]: ./w2_day1_ex2_q3.png "Scatter plot + fitted line"
 
 4. Predict on X.
 
@@ -229,7 +229,7 @@ _Warning: The shape of X is not the same as the shape of y. You may need (for so
 
 ![alt text][ex5q1]
 
-[ex5q1]: ./w2_day1_ex5_q1.png 'Scatter plot '
+[ex5q1]: ./w2_day1_ex5_q1.png "Scatter plot "
 
 As a reminder, fitting a Linear Regression on this data means finding (a, b) that fits well the data points.
 
@@ -311,7 +311,7 @@ The expected output is:
 
 ![alt text][ex5q5]
 
-[ex5q5]: ./w2_day1_ex5_q5.png 'MSE '
+[ex5q5]: ./w2_day1_ex5_q5.png "MSE "
 
 6. From the `losses` list, find the optimal value of a and b and plot the line in the scatter point of question 1.
 
@@ -327,6 +327,6 @@ In a nutshell, Gradient descent is an optimization algorithm used to minimize so
 
 ![alt text][ex5q8]
 
-[ex5q8]: ./w2_day1_ex5_q8.png 'MSE + Gradient descent'
+[ex5q8]: ./w2_day1_ex5_q8.png "MSE + Gradient descent"
 
 9. Use Linear Regression from Scikit-learn. Compare the results.

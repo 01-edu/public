@@ -131,7 +131,6 @@ model.compile(loss='categorical_crossentropy',
 
 ---
 
-
 #### Exercise 5: Multi classification example
 
 ##### The exercise is validated if all questions of the exercise are validated
