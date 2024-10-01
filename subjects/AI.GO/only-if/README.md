@@ -109,15 +109,15 @@ if (temperature < 8) {
 Your Robot must always seek the truth.
 
 - Check if the value of the provided variable `truth` is truthy, log the string: `The truth was spoken.`
-- Otherwise, log the string: `Lies !!!!` because the value of the provided variable truth is falsy.
+- Otherwise, log the string: `Lies !!!!` because the value of the provided variable `truth` is falsy.
 
 #### Task 2:
 
 Your `RoboGuard's traveling company` has a special promotion for robot members aged between 18 (included) and 25 (included).
 
-**NB: The ticket variable has already been declared, so do not declare it again.**
+**NB: The variable ticket has already been declared, so do not declare it again.**
 
-1- Assign the message "You cannot benefit from our special promotion" to the ticket variable.
+1- Assign the message "You cannot benefit from our special promotion" to the variable `ticket`.
 
 2- Use an if statement to check that all these conditions are true:
 
@@ -125,20 +125,20 @@ Your `RoboGuard's traveling company` has a special promotion for robot members a
 - `user.age` must be less than or equal to `25`.
 - `user.activeMembership` must be `true`.
 
-3- If all conditions are true, update the ticket variable with the message: "You can benefit from our special promotion".
+3- If all conditions are true, update the variable `ticket` with the message: "You can benefit from our special promotion".
 
-> Hint : use AND Operator in your condition!
+> Hint : use an AND Operator in your condition!
 
 #### Task 3:
 
 Your RoboGuard is selling plane tickets, each costing `9.99$`. The RoboGuard must confirm that the customer robot has the means to buy this ticket.
 
-The customer robot may have enough cash `or` a voucher.
+The customer robot may have enough cash **or** be in possesion of a voucher.
 
 Check if the provided variable customer can afford the ticket:
 
 If the customer has enough `cash` (`customer.cash` property)
-`or` If the customer has a `voucher` (`customer.hasVoucher` property is true)
+**OR** If the customer has a `voucher` (`customer.hasVoucher` property is true)
 
 If so, `increment` the provided variable `ticketSold` value by `1`.
 
