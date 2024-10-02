@@ -135,7 +135,7 @@ A data point (x-axis: date, y-axis: cumulated_return) is: the **cumulated return
 
 ![alt text][performance]
 
-[performance]: images/w1_weekend_plot_pnl.png 'Cumulative Performance'
+[performance]: images/w1_weekend_plot_pnl.png "Cumulative Performance"
 
 ## 5. Main
 

@@ -150,12 +150,10 @@ Preprocessing ...
 
 ### Useful resources:
 
-- https://machinelearningmastery.com/what-is-computer-vision/
+- [Computer vision](https://machinelearningmastery.com/what-is-computer-vision/)
 
-- Use a pre-trained CNN: https://arxiv.org/pdf/1812.06387.pdf
+- [Use a pre-trained CNN](https://arxiv.org/pdf/1812.06387.pdf)
 
-- Hack the CNN https://medium.com/@ageitgey/machine-learning-is-fun-part-8-how-to-intentionally-trick-neural-networks-b55da32b7196
+-[Hack the CNN](https://medium.com/@ageitgey/machine-learning-is-fun-part-8-how-to-intentionally-trick-neural-networks-b55da32b7196)
 
-- http://ice.dlut.edu.cn/valse2018/ppt/WeihongDeng_VALSE2018.pdf
-
-- https://arxiv.org/pdf/1812.06387.pdf
+- [Pre-Trained Convolutional Neural Network Features for Facial Expression Recognition](https://arxiv.org/pdf/1812.06387.pdf)
