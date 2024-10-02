@@ -5,7 +5,7 @@
 ```
 project
 │   README.md
-│   environment.yml
+│   requirements.txt
 │
 └───data
 │   │   ...
@@ -38,7 +38,7 @@ project
 
 ###### Does the readme file introduce the project, summarize how to run the code and show the username?
 
-###### Does the environment contain all libraries used and the versions that are necessary to run the code?
+###### Does the requirements contain all libraries used and the versions that are necessary to run the code?
 
 ###### Does the `EDA.ipynb` explain in details the exploratory data analysis?
 
@@ -46,7 +46,7 @@ project
 
 ###### Is the model trained only the training set?
 
-###### Is the AUC on the test set higher than 75%?
+###### Is the AUC on the test set is between 55% (included) to 62%(included) or higher than 62%?
 
 ###### Does the model learning curves prove that the model is not overfitting?
 
@@ -59,7 +59,7 @@ project
 ```prompt
     python predict.py
 
-    AUC on test set: 0.76
+    AUC on test set: 0.62
 
 ```
 
@@ -75,10 +75,12 @@ This [article](https://medium.com/thecyphy/home-credit-default-risk-part-2-84b58
 
 ### Descriptive variables:
 
-###### These are important to understand for example the age of the client. If the data could be scaled or modified in the preprocessing pipeline but the data visualised here should be "raw". Are the visualisations computed for the 3 clients?
+##### These are important to understand for example the age of the client. If the data could be scaled or modified in the preprocessing pipeline but the data visualized here should be "raw".
 
     - Visualisations that show at least 10 variables describing the client and its loan(s).
     - Visualisations that show the comparison between this client and other clients.
+
+###### Are the visualisations computed for the 3 clients?
 
 ##### SHAP values on the model are displayed through a summary plot that shows the important features and their impact on the target. This is optional if you have already computed the features importance.
 
