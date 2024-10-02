@@ -74,7 +74,7 @@ All people having 100% of accuracy on the Leaderboard cheated, there's no point 
 ```console
 project
 │   README.md
-│   environment.yml
+│   requirements.txt
 │   username.txt
 │
 └───data
@@ -90,7 +90,7 @@ project
 
 - `README.md` introduction of the project, shows the username, describes the features engineering and the best score on the **leaderboard**. Note the score on the test set using the exact same pipeline that led to the best score on the leaderboard.
 
-- `environment.yml` contains all libraries required to run the code.
+- 'requirements.txt` contains all libraries required to run the code.
 
 - `username.txt` contains the username, the last modified date of the file **has to correspond to the first day of the project**.
 

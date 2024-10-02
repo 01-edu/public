@@ -155,6 +155,7 @@ project
 ├── data
 │   └── ...
 ├── nlp_enriched_news.py
+├── requirements.txt
 ├── README.md
 ├── results
 │   ├── training_model.py
