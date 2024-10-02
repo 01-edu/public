@@ -46,7 +46,7 @@ project
 
 ###### Is the model trained only the training set?
 
-###### Is the AUC on the test set higher than 50%?
+###### Is the AUC on the test set is between 55% (included) to 62%(included) or higher than 62%?
 
 ###### Does the model learning curves prove that the model is not overfitting?
 
@@ -59,7 +59,7 @@ project
 ```prompt
     python predict.py
 
-    AUC on test set: 0.50
+    AUC on test set: 0.62
 
 ```
 
