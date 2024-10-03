@@ -1,4 +1,4 @@
-## User Interviews
+### User Interviews
 
 **Context:**
 
@@ -86,7 +86,7 @@ Thank you so much for your time!
 
 I have a last favor to ask you: is there anyone you know who runs frequently and would be available for a talk?
 
-## Analytics
+### Analytics
 
 ### Instructions
 
@@ -125,7 +125,7 @@ Examples of insights you can extract from the articles:
 
 Always base your decisions on the data, not on your biases.
 
-## Personas
+### Personas
 
 ### Instructions
 
@@ -165,7 +165,7 @@ Use the material you got from the exercise `User interview` to build the pierre 
 
 "Focus unswervingly, on the customer’ Jesse Hertzberg | Former COO of Squarespace
 
-## User Journey
+### User Journey
 
 ### Instructions
 
@@ -209,7 +209,7 @@ Most articles you'll find will be about user journeys or customer journeys. Keep
 
 'It’s about catching customers in the act, and providing highly relevant and highly contextual information’ Paul Maritz | CEO Pivotal
 
-## Problem Statement
+### Problem Statement
 
 ### Instructions
 
@@ -257,7 +257,7 @@ Based on the insights from the exercises `analytics` and `user interviews`, comm
 
 “If I had an hour to solve a problem, I’d spend 55 minutes thinking about the problem and 5 minutes thinking about solutions.” Albert Einstein
 
-## Ideation
+### Ideation
 
 _You can replace Pierre with your own persona._
 
@@ -330,7 +330,7 @@ Don't forget to:
 
 Chances are that... If you have gone through all possible solutions, you’ve found the good one.
 
-## Prototyping
+### Prototyping
 
 ### Instructions
 

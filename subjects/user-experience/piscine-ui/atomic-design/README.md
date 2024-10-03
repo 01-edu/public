@@ -1,4 +1,4 @@
-## Browsing
+### Browsing
 
 **Context:**
 
@@ -48,7 +48,7 @@ Don't forget to:
 
 - User Interface Design is a hybrid role and can bring together concepts from interaction design, visual design, information architecture and even Front End Development.
 
-## Material Design
+### Material Design
 
 ### Instructions
 
@@ -74,7 +74,7 @@ Don't forget to:
 - [Material Design Awards 2019](https://design.google/library/material-design-awards-2019/)
 - [What is Material Design - Wikipedia](https://en.wikipedia.org/wiki/Material_Design)
 
-## Design system library
+### Design system library
 
 ### Instructions
 
@@ -103,7 +103,7 @@ Don't forget to:
 
 - [Atomic Design Methodology](https://atomicdesign.bradfrost.com/chapter-2/)
 
-## Library for climbing addicts
+### Library for climbing addicts
 
 ### Instructions
 
@@ -145,7 +145,7 @@ Don't forget to:
 - [Building a design system library - Lyft](https://medium.com/tap-to-dismiss/building-a-design-system-library-532ef2492811)
 - [Examples of UI Buttons library](https://www.pinterest.co.kr/pin/663014376380850291/)
 
-## Library for a dating app
+### Library for a dating app
 
 ### Instructions
 

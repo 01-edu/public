@@ -1,4 +1,4 @@
-## Styleguide
+### Styleguide
 
 **Context:**
 
@@ -47,7 +47,7 @@ Don't forget to:
 - [Gareth graphic studio](https://www.youtube.com/c/GarethDavidStudio)
 - [Example of a Style Guide in UI](https://www.pinterest.pt/pin/454019206175050454/)
 
-## Design system library
+### Design system library
 
 ### Instructions
 
@@ -82,7 +82,7 @@ Don't forget to:
 - [Building a design system library - Lyft](https://medium.com/tap-to-dismiss/building-a-design-system-library-532ef2492811)
 - [Examples of UI Buttons library](https://www.pinterest.co.kr/pin/663014376380850291/)
 
-## Design screens
+### Design screens
 
 ### Instructions
 
@@ -115,7 +115,7 @@ Don't forget to:
 
 - [Unsplash](https://unsplash.com/) for visuals
 
-## Animation
+### Animation
 
 ### Instructions
 
@@ -141,9 +141,10 @@ Don't forget to:
 **Quote:**
 
 "Speak human: Use the words your users use.’ Dan Saffer | Microinteractions.
+
 - [From low-fidelity to high-fidelity](https://mockitt.wondershare.com/prototyping/low-fidelity-vs-high-fidelity.html)
 
-## Desirability testing
+### Desirability testing
 
 ### Instructions
 

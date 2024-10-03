@@ -1,4 +1,4 @@
-## Ideation A
+### Ideation A
 
 **Context:**
 
@@ -51,7 +51,7 @@ Don't forget to:
 - [3 proven methods to organize a brainstorming session](https://uxdesign.cc/brainstorm-79e51f20f313)
 - [Effective brainstorming (without feeling lost)](https://uxdesign.cc/effective-brainstorming-without-being-lost-b68750bbfac5?sk=5d5a332f7e3f2a43364c031b01b13229)
 - [The myth of brainstorming](https://uxdesign.cc/the-myth-of-brainstorming-8517e02facc0?sk=995d601cbf988d574e86dd71364cb92f)
-- [Ideation method: Worst possible idea](https://www.interaction-design.org/literature/article/learn-how-to-use-the-best-ideation-methods-worst-possible-idea)
+- [Ideation method: Worst possible idea](https://www.interaction-design.org/literature/article/learn-how-to#-use-the-best-ideation-methods-worst-possible-idea)
 
 ## Ideation B
 
@@ -102,7 +102,7 @@ Pay attention not to use the same ideation technique as in Ex 1!
 - [The myth of brainstorming](https://uxdesign.cc/the-myth-of-brainstorming-8517e02facc0?sk=995d601cbf988d574e86dd71364cb92f)
 - [Ideation method: Worst possible idea](https://www.interaction-design.org/literature/article/learn-how-to-use-the-best-ideation-methods-worst-possible-idea)
 
-## Ideation C
+### Ideation C
 
 ### Instructions
 
@@ -151,7 +151,7 @@ Pay attention not to use the same ideation technique as in Ex 2!
 - [The myth of brainstorming](https://uxdesign.cc/the-myth-of-brainstorming-8517e02facc0?sk=995d601cbf988d574e86dd71364cb92f)
 - [Ideation method: Worst possible idea](https://www.interaction-design.org/literature/article/learn-how-to-use-the-best-ideation-methods-worst-possible-idea)
 
-## User flow
+### User flow
 
 ### Instructions
 
@@ -178,7 +178,7 @@ Don't forget to:
 - [Site flows vs User Flows](https://uxmovement.com/wireframes/site-flows-vs-user-flows-when-to-use-which/)
 - [How to make a User Flow diagram](https://www.lucidchart.com/blog/how-to-make-a-user-flow-diagram)
 
-## Prototyping
+### Prototyping
 
 ### Instructions
 
@@ -219,7 +219,7 @@ Don't forget to:
 - "To prototype your solution, you’ll need a temporary change of philosophy: from perfect to just enough, from long-term quality to temporary simulation."
 - "The prototype is meant to answer questions, so keep it focused. You just need a real-looking facade to which customers can react."
 
-## Animation
+### Animation
 
 ### Instructions
 
@@ -244,7 +244,7 @@ This exercise is to be made individually.
 
 - [Efficiently Manage Your Designs - How Mockplus State Page Helps To View & Manage Multiple State](https://help.mockplus.com/p/372)
 
-## Test wireframe
+### Test wireframe
 
 ### Instructions
 

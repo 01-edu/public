@@ -1,4 +1,4 @@
-## User flow
+### User flow
 
 **Context:**
 
@@ -39,7 +39,7 @@ Don't forget to:
 **Recommended tools:**
 
 - Figma.
-- Whimsical.
+- Whimsical.#
 
 ## Movie wireframes
 
@@ -79,7 +79,7 @@ Don't forget to:
 
 - "77% of users return to content and information sites because of ease-of-use. Only 22% return because the site belongs to a favorite brand." Forrester
 
-## Wireframes animation
+### Wireframes animation
 
 ### Instructions
 
@@ -106,7 +106,7 @@ Don't forget to:
 
 - [Efficiently Manage Your Designs - How Mockplus State Page Helps To View & Manage Multiple State](https://help.mockplus.com/p/372)
 
-## Test on features
+### Test on features
 
 ### Instructions
 
@@ -140,7 +140,7 @@ Don't forget to:
 - [The art of guerrilla usability testing](http://www.uxbooth.com/articles/the-art-of-guerrilla-usability-testing/)
 - [How to write a user testing report that people will actually read](https://uxdesign.cc/how-to-write-a-user-testing-report-that-people-will-actually-read-652d15d2f92e)
 
-## Iteration
+### Iteration
 
 ### Instructions
 
