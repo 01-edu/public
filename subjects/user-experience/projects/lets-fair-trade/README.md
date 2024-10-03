@@ -4,7 +4,7 @@ Creation of an ecommerce platform for second-hand clothes on desktop and mobile
 
 Bruno loves fashion. He loves buying clothes! As he is cautious with the environment, he prefers buying second-hand clothing. However, the existing platforms are not very user-friendly.
 
-"I need to know more about the environmental impact of the pieces I buy. I’d like to know how old they are, where they are coming from, to measure their life and the amount of kilometres they have traveled. When a new pair of jeans arrive at the ready-to-wear store in Europe, they consumed approximately 11,000 litres of water and travelled 65,000 kilometres. I’d like to monitor that kind of data.’
+"I need to know more about the environmental impact of the pieces I buy. I’d like to know how old they are, where they are coming from, to measure their life and the amount of kilometers they have traveled. When a new pair of jeans arrive at the ready-to-wear store in Europe, they consumed approximately 11,000 litres of water and traveled 65,000 kilometers. I’d like to monitor that kind of data.’
 
 You gather a team of 3 to think and design a website and an app for second-hand products.
 

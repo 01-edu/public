@@ -1,4 +1,4 @@
-## Find the colors
+### Find the colors
 
 **Context:**
 
@@ -38,7 +38,7 @@ Don't forget to:
 - [Beginning graphic design](https://edu.gcfglobal.org/en/beginning-graphic-design/)
 - [Gareth graphic studio](https://www.youtube.com/c/GarethDavidStudio)
 
-## Color codes
+### Color codes
 
 ### Instructions
 
@@ -72,7 +72,7 @@ Don't forget to :
 - [https://brave.com/es/](https://brave.com/es/)
 - [https://www.ted.com/](https://www.ted.com/)
 
-## Color combinations
+### Color combinations
 
 ### Instructions
 
@@ -151,7 +151,7 @@ Don't forget to:
 - [https://calendar.google.com/](https://calendar.google.com/)
 - [https://www.ebay.com/](https://www.ebay.com/)
 
-## Moodboard
+### Moodboard
 
 ### Instructions
 
@@ -185,7 +185,7 @@ Don't forget to:
   - [Example3](https://i.pinimg.com/564x/ee/9d/d6/ee9dd6fbb82b0e5b4dd2924580b765dd.jpg)
 - Pay attention to the global aspect of the deliverables. They must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
 
-## Typography
+### Typography
 
 ### Instructions
 
@@ -226,7 +226,7 @@ Don't forget to:
 - [Beginning graphic design](https://edu.gcfglobal.org/en/beginning-graphic-design/)
 - [Gareth graphic studio](https://www.youtube.com/c/GarethDavidStudio)
 
-## Typography moodboard
+### Typography moodboard
 
 ### Instructions
 
@@ -268,7 +268,7 @@ Don't forget to:
 - [Beginning graphic design](https://edu.gcfglobal.org/en/beginning-graphic-design/)
 - [Gareth graphic studio](https://www.youtube.com/c/GarethDavidStudio)
 
-## UI Challenge - Timer
+### UI Challenge - Timer
 
 ### Instructions
 
@@ -298,7 +298,7 @@ Don't forget to:
 - The frame is Android 360 x 640px.
 - Pay attention to the global aspect of the file. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
 
-## UI Challenge - Watches
+### UI Challenge - Watches
 
 ### Instructions
 
@@ -332,7 +332,7 @@ Don't forget to:
 - You can use existing Libraries by browsing the Figma community resources.
 - Pay attention to the global aspect of the file. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
 
-## UI Challenge - Flight
+### UI Challenge - Flight
 
 ### Instructions
 
@@ -362,7 +362,7 @@ Don't forget to:
 - [Figma article about Symbols and Variants](https://help.figma.com/hc/en-us/articles/360056440594-Create-and-use-variants).
 - Pay attention to the global aspect of the file. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
 
-## UI Challenge - Spotify
+### UI Challenge - Spotify
 
 ### Instructions
 
@@ -394,7 +394,7 @@ Don't forget to:
 - [Figma article about Symbols and Variants](https://help.figma.com/hc/en-us/articles/360056440594-Create-and-use-variants).
 - Pay attention to the global aspect of the file. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
 
-## UI Challenge - Bitcoin Dashboard
+### UI Challenge - Bitcoin Dashboard
 
 ### Instructions
 

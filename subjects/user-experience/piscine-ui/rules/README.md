@@ -1,4 +1,4 @@
-## Grids
+### Grids
 
 **Context:**
 
@@ -37,7 +37,7 @@ Don't forget to:
 - [Beginning graphic design](https://edu.gcfglobal.org/en/beginning-graphic-design/)
 - [Gareth graphic studio](https://www.youtube.com/c/GarethDavidStudio)
 
-## Multi state
+### Multi state
 
 ### Instructions
 
@@ -67,7 +67,7 @@ Don't forget to:
 - [Gareth graphic studio](https://www.youtube.com/c/GarethDavidStudio)
 - [Example here with Nintendo.com](https://www.figma.com/file/ahSnWRZeKBO62oJDiXltxY/UI-III---Ex-2) (The screenshots date back to nov 2021. They may differ from the current version of [Nintendo.com](http://Nintendo.com) but the rules are the same).
 
-## Accessibility (website)
+### Accessibility (website)
 
 ### Instructions
 
@@ -106,7 +106,7 @@ Don't forget to:
   - Error states.
   - etc.
 
-## Accessibility (app)
+### Accessibility (app)
 
 ### Instructions
 
@@ -144,7 +144,7 @@ Don't forget to:
   - Error states
   - etc.
 
-## Breadcrumbs
+### Breadcrumbs
 
 ### Instructions
 
@@ -167,7 +167,7 @@ Don't forget to:
 
 - [What are breadcrumbs?](https://www.seoptimer.com/blog/breadcrumbs-website/)
 
-## Toggle buttons
+### Toggle buttons
 
 ### Instructions
 
@@ -190,7 +190,7 @@ Don't forget to:
 
 - [Toggle Switch - Tips](https://uxplanet.org/toggle-switch-5-simple-design-tips-for-better-design-b4046eff4a2f)
 
-## Radio buttons
+### Radio buttons
 
 ### Instructions
 
@@ -213,7 +213,7 @@ Don't forget to:
 
 - [What is a radio button?](https://www.justinmind.com/blog/radio-button-design-examples/)
 
-## Calendars
+### Calendars
 
 ### Instructions
 
@@ -232,7 +232,7 @@ Don't forget to:
 
 - Pay attention to the global aspect of the file. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
 
-## Time pickers
+### Time pickers
 
 ### Instructions
 
@@ -251,7 +251,7 @@ Don't forget to:
 
 - Pay attention to the global aspect of the file. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
 
-## Micro-interactions
+### Micro-interactions
 
 ### Instructions
 
@@ -282,7 +282,7 @@ Don't forget to:
 - [Why use micro-interactions in your design](https://hike.one/update/why-use-micro-animations-in-your-design)
 - [Micro-interactions: why, when, and how to use them to boost the UX](https://uxdesign.cc/micro-interactions-why-when-and-how-to-use-them-to-boost-the-ux-17094b3baaa0)
 
-## Consistency
+### Consistency
 
 ### Instructions
 
