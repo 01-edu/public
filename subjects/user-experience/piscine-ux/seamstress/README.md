@@ -1,4 +1,4 @@
-## UX strategy
+### UX strategy
 
 **Context:**
 
@@ -49,7 +49,7 @@ Don't forget to:
 
 - Design needs to fail. Failure is even a necessary step, but ideally it should happen before a product is launched, during the prototype and test phases
 - “UX Strategy lies at the intersection of UX and business. It provides a much better chance of creating successful products. It enables teams to see the “Big Picture” to achieve the business goals under uncertain conditions” Jamie Levy | UX Strategy: How to Devise Innovative Digital Products That People Want
-- UX Strategy is the method by which you validate that your solution solves a problem for real customers in a dynamic marketplace because the market is constantly changing.
+- UX Strategy is the method by which you validate that your solution solves a problem for real customers in a dynamic marketplace because the market i#s constantly changing.
 
 ## Empathy
 
@@ -111,7 +111,7 @@ Don't forget to:
     - With 5 to 10 criteria
     - 10 organizations appear on the table
 
-## Define
+### Define
 
 ### Instructions
 
@@ -158,7 +158,7 @@ Don't forget to:
     - The "I want to" part involves a practical action.
     - The "So I can" part involves a psychological or emotional purpose.
 
-## Problem statement
+### Problem statement
 
 ### Instructions
 
@@ -199,7 +199,7 @@ Design is about solving problems. Fall in Love with the Problem, Not the Solutio
 - How might make sure Pierre doesn’t get drunk the night before the race?
   - Out of scope —> This is not about dehydration, nor about running.
 
-## Ideation
+### Ideation
 
 ### Instructions
 
@@ -221,7 +221,7 @@ Don't forget to:
 - Use as many tools as needed, and make sure you do all the process in 4 working days!
 - Pay attention to the global aspect of the deliverables. They must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
 
-## Prototype
+### Prototype
 
 ### Instructions
 
@@ -265,7 +265,7 @@ Don't forget to:
   - High-Fidelity: Wireframes with color, styles, graphical details, and micro-interactions - [Example here](https://miro.medium.com/max/1400/1*Xn0HSKAvhr4TZzC9lN5udw.gif)
 - Pay attention to the global aspect of the deliverables. They must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
 
-## Test protocol
+### Test protocol
 
 ### Instructions
 
