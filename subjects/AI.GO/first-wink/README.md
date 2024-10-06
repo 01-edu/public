@@ -16,7 +16,7 @@ Don't worry if things feel a bit challenging—that's part of the process! Just 
 
 > We can mention thing you do not know; but by this time, you know what to do! Search for it, ask your peers and use clever prompts ;)
 
-- **You need to continue on the HTML, CSS, JS code you submitted for the exercise `first-move`, but with an empty JavaScript file and do not forget to change the name of the linked files to the name of this exercise!**
+- **You need to continue on the HTML, CSS, JS code you submitted for the exercise `first-move`, but with an empty JavaScript file. Do not forget to change the name of the linked files to the name of this exercise as well as following the new instructions!**
 
 ### Resources
 
@@ -33,12 +33,12 @@ We provide you with some content to get started smoothly, check it out!
 
 #### Task 1:
 
-Let's put a button on the top right corner of the page, that will toggle (close or open) the left eye when clicked.
+Let's put a button on the top right corner of the page with the `id` set to "eye-btn", that will toggle (close or open) the left eye when clicked.
 
 Add it in the HTML structure:
 
 ```js
-<button>Click to close the left eye</button>
+<button id="eye-btn">Click to close the left eye</button>
 ```
 
 And add the style in the CSS file:
@@ -55,18 +55,18 @@ button {
 
 #### Task 2:
 
-Select the button in your JavaScript file that will allow the user to control the robot’s left eye.
+Select the button in your JavaScript file by its `id`. That will allow the user to control the robot’s left eye.
 
 ```js
 // Select the button element using its ID so we can interact with it in our JavaScript
 
-//Example of selecting a button called myButton
-const myButton = document.querySelector("button");
+//Example of selecting a button called btn-example
+const myButton = document.getElementById("btn-example");
 ```
 
 **`Prompt Example:`**
 
-- "How do I use `querySelector` to select an HTML element by its ID?"
+- "How do I use `getElementById` to select an HTML element by its ID?"
 
 #### Task 3:
 
@@ -74,44 +74,53 @@ Write a function that will be triggered when the button is clicked.
 
 This function will make the robot "wink" by toggling the `eye-closed` class on the left eye and change the `button` text based on the current state of the eye.
 
-- It changes the text content of the button: if the eye is open, write "Click to close the left eye", if the eye is closed, write "Click to open the left eye".
+1- It changes the text content of the button: if the eye is open, write "Click to close the left eye", if the eye is closed, write "Click to open the left eye".
 
-- It toggles the class eye-closed in the `classList` of the eye-left HTML element.
+2- It toggles the class `eye-closed` in the `classList` of the `eye-left` HTML element.
 
-It changes the background color of the eye-left: if the eye is open, to "red", if the eye is closed, to "black"
+3- It changes the background color of the `eye-left`: if the eye is open, to "red", if the eye is closed, to "black"
+
+**Code Example:**
 
 ```js
-const button = document.querySelector('button')
+const button = document.getElementById('eye-btn')
 
 const handleClick = (event) => {
 
-  // Select the left eye element by its ID
-    const myDiv = ...
+   // Select left eye by its ID and assign it to the variable eyeLeft
+    const eyeLeft = ...
 
-  // Check if the eye is currently closed by looking at its background color
+  // Check if the eye is currently closed by looking at the eyeLeft background color, if it's 'black', that means it's closed.
   if (...) {
-    // If the eye is closed, open it and update the button text
+    /*
+     - Add to the 'button' element the text: "Click to close the left eye"
+     - Change the 'eyeLeft' element background color to red
+    */
 
   } else {
-    // If the eye is open, close it and update the button text
+    /*
+    If the eye is open:
+    - Add to the 'button' element the text: "Click to open the left eye"
+    - Change the 'eyeLeft' element background color to black
+    */
   }
     // Toggle the 'eye-closed' class on the 'eye-left' div
+    eyeLeft.classList.toggle("eye-closed")
 };
 
-// register the event:
+/* Register the event:
+ here we ask the button to call our `handleClick` function
+on the 'click' event, so every time it's clicked
+*/
 button.addEventListener('click', handleClick)
-// here we ask the button to call our `handleClick` function
-// on the 'click' event, so every time it's clicked
 ```
 
 ### Expected result
 
-You can see an example of the expected result [here](https://youtu.be/wuYTorfBViE)
+You can see an example of the expected result [here](https://youtu.be/IQ6-3X3JBss)
 
 **`Prompt Examples:`**
 
-- "As a beginner, explain to me what is `querySelector` in JavaScript, and how do I use it to select an HTML element by its ID or class?"
-
-- "As a beginner, explain to me how can I change the text content of an `HTML element` using JavaScript?"
+- "As a beginner, explain to me how can I change the text content and the background color of an `HTML element` using JavaScript?"
 
 - "As a beginner, explain to me how do I use `addEventListener` to make a button respond to a click event in JavaScript?"

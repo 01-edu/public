@@ -1,4 +1,4 @@
-#### Financial strategies on the SP500
+#### SP500 strategies
 
 ###### Is the structure of the project like the one presented in the `Project repository structure` in the subject?
 
