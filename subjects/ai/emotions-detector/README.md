@@ -1,4 +1,4 @@
-## Emotion detector
+## Emotions detector
 
 ### Overview
 
