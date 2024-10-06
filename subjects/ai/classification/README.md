@@ -55,15 +55,11 @@ _Version of Scikit Learn I used to do the exercises: 0.22_. I suggest to use the
 
 ### Resources
 
-#### Logistic regression
+- [Logistic regression](https://towardsdatascience.com/understanding-logistic-regression-9b02c2aec102)
 
-- https://towardsdatascience.com/understanding-logistic-regression-9b02c2aec102
+- [Logloss](https://www.datacamp.com/tutorial/the-cross-entropy-loss-function-in-machine-learning)
 
-#### Logloss
-
-- https://www.datacamp.com/tutorial/the-cross-entropy-loss-function-in-machine-learning
-
-- https://medium.com/swlh/what-is-logistic-regression-62807de62efa
+- [More on logistic regression](https://medium.com/swlh/what-is-logistic-regression-62807de62efa)
 
 ---
 
