@@ -67,7 +67,9 @@ Your goal is to implement a program that takes as input a video stream that cont
   This dataset was provided for this past [Kaggle challenge](https://www.kaggle.com/competitions/challenges-in-representation-learning-facial-expression-recognition-challenge/overview).
   It is possible to find more information about on the challenge page. Train a CNN on the dataset `train.csv`. Here is an [example of architecture](https://www.quora.com/What-is-the-VGG-neural-network) you can implement.
   **The CNN has to perform more than 60% on the test set**. You can use the `test_with_emotions.csv` file for this. You will see that the CNNs take a lot of time to train.
-  You don't want to overfit the neural network. I strongly suggest to use early stopping, callbacks and to monitor the training using the `TensorBoard` 'note: Integrating TensorBoard is not optional'.
+  You don't want to overfit the neural network. I strongly suggest to use early stopping, callbacks and to monitor the training using the `TensorBoard`.
+  
+  > Note: Integrating TensorBoard is mandatory.
 
 You have to save the trained model in `final_emotion_model.keras` and to explain the chosen architecture in `final_emotion_model_arch.txt`. Use `model.summary())` to print the architecture.
 It is also expected that you explain the iterations and how you end up choosing your final architecture. Save a screenshot of the `TensorBoard` while the model's training in `tensorboard.png` and save a plot with the learning curves showing the model training and stopping BEFORE the model starts overfitting in `learning_curves.png`.
