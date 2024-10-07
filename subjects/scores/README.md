@@ -4,7 +4,7 @@
 
 Lets play a little.
 
-Create a function named `score` that given a string, computes the score for that given string as a `u64`.
+Create a function named `score` that given a `&str`, computes the score for that given string as a `u64`.
 
 Each letter has a value, you just have to sum the values of the letters in the given string.
 
@@ -21,6 +21,7 @@ You will need these:
 | Q, Z                         |  10   |
 
 ### Expected functions
+
 > You'll need to work out the function signature for yourself.
 
 ### Usage
