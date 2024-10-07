@@ -14,4 +14,5 @@ Create 3 functions which each take `(a, b)` as arguments:
 
 ```js
 Math.imul = undefined
+eval = undefined
 ```
