@@ -43,3 +43,4 @@ Files that must be inside your repository:
 - All tools you use, and any scripts you write.
 
 > It's forbidden to use external scripts, in the audit you will be asked different questions about the concepts and the practices of this project, prepare yourself!
+> It's is forbidden to use `strings` command.
