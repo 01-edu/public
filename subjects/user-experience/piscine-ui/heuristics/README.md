@@ -1,4 +1,4 @@
-## Audit
+### Audit
 
 **Context:**
 
@@ -49,7 +49,7 @@ Don't forget to:
 - [A new usability heuristic evaluation checklist](https://uxplanet.org/a-new-usability-heuristic-evaluation-checklist-259f588da308)
 - [Tool : Heuristic evaluation checklist](https://drive.google.com/file/d/10KbfbNZA1oVS1sXbjjXLPPmdZ6nqVkdc/view)
 
-## Recommendations
+### Recommendations
 
 ### Instructions
 

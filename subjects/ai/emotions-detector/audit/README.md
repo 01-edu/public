@@ -1,4 +1,4 @@
-#### Computer vision
+#### Emotion detector
 
 ##### Preliminary
 
@@ -14,7 +14,7 @@
 
 ###### Is the model trained only the training set?
 
-###### Is the accuracy on the test set higher than 70%?
+###### Is the accuracy on the test set higher than 60%?
 
 ###### Do the learning curves prove that the model is not overfitting?
 

@@ -1,6 +1,6 @@
 #### quadA
 
-> ***NOTE: If you are an admin and you want to test this project, follow the instructions [in the this subject](https://github.com/01-edu/go-tests/blob/master/raid-testing.md) before you proceed to the questions.***
+> **_NOTE: If you are an admin and you want to test this project, follow the instructions [in the this subject](https://github.com/01-edu/go-tests/blob/master/raid-testing.md) before you proceed to the questions._**
 
 ##### Open the repository of the project and check the submitted files
 
@@ -14,7 +14,7 @@ o---o
 o---o
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=5 and y=1"`
 
@@ -22,7 +22,7 @@ o---o
 o---o
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=1 and y=1"`
 
@@ -30,7 +30,7 @@ o---o
 o
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=1 and y=5"`
 
@@ -42,19 +42,19 @@ o
 o
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=0 and y=0"`
 
-###### Does the function returns nothing?
+###### Does the function return nothing?
 
 ##### Try running the function with the arguments: `"x=-1 and y=6"`
 
-###### Does the function returns nothing?
+###### Does the function return nothing?
 
 ##### Try running the function with the arguments: `"x=6 and y=-1"`
 
-###### Does the function returns nothing?
+###### Does the function return nothing?
 
 ##### Try running the function with the arguments: `"x=20 and y=1"`
 
@@ -62,7 +62,7 @@ o
 o------------------o
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=10 and y=8"`
 
@@ -77,7 +77,7 @@ o--------o
 o--------o
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 #### quadB
 
@@ -89,7 +89,7 @@ o--------o
 \***/
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=5 and y=1"`
 
@@ -97,7 +97,7 @@ o--------o
 /***\
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=1 and y=1"`
 
@@ -105,7 +105,7 @@ o--------o
 /
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=1 and y=5"`
 
@@ -117,19 +117,19 @@ o--------o
 \
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=0 and y=0"`
 
-###### Does the function returns nothing?
+###### Does the function return nothing?
 
 ##### Try running the function with the arguments: `"x=-1 and y=6"`
 
-###### Does the function returns nothing?
+###### Does the function return nothing?
 
 ##### Try running the function with the arguments: `"x=6 and y=-1"`
 
-###### Does the function returns nothing?
+###### Does the function return nothing?
 
 ##### Try running the function with the arguments: `"x=18 and y=6"`
 
@@ -142,7 +142,7 @@ o--------o
 \****************/
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=9 and y=3"`
 
@@ -152,7 +152,7 @@ o--------o
 \*******/
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 #### quadC
 
@@ -164,7 +164,7 @@ B   B
 CBBBC
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=5 and y=1"`
 
@@ -172,7 +172,7 @@ CBBBC
 ABBBA
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=1 and y=1"`
 
@@ -180,7 +180,7 @@ ABBBA
 A
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=1 and y=5"`
 
@@ -192,19 +192,19 @@ B
 C
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=0 and y=0"`
 
-###### Does the function returns nothing?
+###### Does the function return nothing?
 
 ##### Try running the function with the arguments: `"x=-1 and y=6"`
 
-###### Does the function returns nothing?
+###### Does the function return nothing?
 
 ##### Try running the function with the arguments: `"x=6 and y=-1"`
 
-###### Does the function returns nothing?
+###### Does the function return nothing?
 
 ##### Try running the function with the arguments: `"x=13 and y=7"`
 
@@ -218,7 +218,7 @@ B           B
 CBBBBBBBBBBBC
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=10 and y=15"`
 
@@ -240,7 +240,7 @@ B        B
 CBBBBBBBBC
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 #### quadD
 
@@ -252,7 +252,7 @@ B   B
 ABBBC
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=5 and y=1"`
 
@@ -260,7 +260,7 @@ ABBBC
 ABBBC
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=1 and y=1"`
 
@@ -268,7 +268,7 @@ ABBBC
 A
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=1 and y=5"`
 
@@ -280,19 +280,19 @@ B
 A
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=0 and y=0"`
 
-###### Does the function returns nothing?
+###### Does the function return nothing?
 
 ##### Try running the function with the arguments: `"x=-1 and y=6"`
 
-###### Does the function returns nothing?
+###### Does the function return nothing?
 
 ##### Try running the function with the arguments: `"x=6 and y=-1"`
 
-###### Does the function returns nothing?
+###### Does the function return nothing?
 
 ##### Try running the function with the arguments: `"x=3 and y=16"`
 
@@ -315,7 +315,7 @@ B B
 ABC
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=7 and y=16"`
 
@@ -338,7 +338,7 @@ B     B
 ABBBBBC
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 #### quadE
 
@@ -350,7 +350,7 @@ B   B
 CBBBA
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=5 and y=1"`
 
@@ -358,7 +358,7 @@ CBBBA
 ABBBC
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=1 and y=1"`
 
@@ -366,7 +366,7 @@ ABBBC
 A
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=1 and y=5"`
 
@@ -378,19 +378,19 @@ B
 C
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=0 and y=0"`
 
-###### Does the function returns nothing?
+###### Does the function return nothing?
 
 ##### Try running the function with the arguments: `"x=-1 and y=6"`
 
-###### Does the function returns nothing?
+###### Does the function return nothing?
 
 ##### Try running the function with the arguments: `"x=6 and y=-1"`
 
-###### Does the function returns nothing?
+###### Does the function return nothing?
 
 ##### Try running the function with the arguments: `"x=21 and y=24"`
 
@@ -422,7 +422,7 @@ CBBBBBBBBBBBBBBBBBBBA
 
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
 
 ##### Try running the function with the arguments: `"x=18 and y=8"`
 
@@ -438,4 +438,4 @@ CBBBBBBBBBBBBBBBBA
 
 ```
 
-###### Does the function returns the value above?
+###### Does the function return the output shown above?
