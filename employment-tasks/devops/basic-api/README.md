@@ -7,15 +7,16 @@ some basic validation against an expected message format and content,
 and then puts that payload into a queue of your choice or a file.
 
 Example valid payload:
+
 ```json
 {
-    "ts": "1530228282",
-    "sender": "curler-user",
-    "message": {
-        "foo": "bar",
-        "hash": "bash"
-    },
-    "sent-from-ip": "1.2.3.4"
+  "ts": "1530228282",
+  "sender": "curler-user",
+  "message": {
+    "foo": "bar",
+    "hash": "bash"
+  },
+  "sent-from-ip": "1.2.3.4"
 }
 ```
 
