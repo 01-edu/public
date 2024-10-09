@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Have you been pondering over the etymology of `grep`?
+Have you ever been pondering over the etymology of `grep`?
 
 Create 4 regular expression variables:
 
