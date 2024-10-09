@@ -118,8 +118,8 @@ You must design a firing range that includes:
 
 ### Resources
 
-- [Unreal Engine's AI Documentation](https://docs.unrealengine.com/en-US/InteractiveExperiences/AI/index.html)
-- [Projectile Movement Component](https://docs.unrealengine.com/en-US/Gameplay/Movement/ProjectileMovement/index.html)
+- [Unreal Engine's AI Documentation](https://dev.epicgames.com/documentation/en-us/unreal-engine/ai-system-settings-in-the-unreal-engine-project-settings?application_version=5.5)
+- [Projectile Movement Component](https://dev.epicgames.com/documentation/en-us/unreal-engine/BlueprintAPI/Game/Components/ProjectileMovement?application_version=5.5)
 - [Mixamo for character animations and models](https://www.mixamo.com/)
 - [SketchFab for 3D models](https://sketchfab.com/)
 - [itch.io for additional assets](https://itch.io/)
