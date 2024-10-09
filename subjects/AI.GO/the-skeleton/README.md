@@ -24,7 +24,7 @@ We provide you with some content to get started smoothly, check it out!
 - Video [Basic set up of an HTML page](https://www.youtube.com/watch?v=QtKoO7tT-Gg&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=1)
 - Video [Different HTML tags overview](https://www.youtube.com/watch?v=Al-Jzpib8VY&list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF&index=2)
 
-Those videos are accompanying you step by step in each exercise, but if you want to check right away all the notions covered in the quest, you can watch the whole playlist throughout your next exercices[Web - HTML, CSS & DOM JavaScript](https://www.youtube.com/playlist?list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF).
+Those videos are accompanying you step by step in each exercise, but if you want to check right away all the notions covered in the quest, you can watch the whole playlist throughout your next exercises[Web - HTML, CSS & DOM JavaScript](https://www.youtube.com/playlist?list=PLHyAJ_GrRtf979iZZ1N3qYMfsPj9PCCrF).
 
 > Your working environment may not be exactly the same as what you see in the videos or documentation, just try to adapt your work according to your research and discoveries.  
 > Don't be afraid to try!

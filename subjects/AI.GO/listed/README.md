@@ -42,7 +42,7 @@ let batteryLevels = [80, 60, 90, 50];
 
 ### Indexes in Arrays
 
-The position of an element in an array is called its index, starting from 0. So, our `batteryLevels` array is roughly equivalent to writing this object:
+The position of an element in an array is called its `index`, starting from `0`. So, our `batteryLevels` array is roughly equivalent to writing this object:
 
 ```js
 let batteryLevelsObject = {
@@ -109,7 +109,7 @@ Now, the array looks like this:
 
 #### Task 1:
 
-You must declare a variable `components` that contains 4 strings, one for each robot component "motor", "sensor", "battery" and "camera" (respect that order).
+You must declare a variable `components` that contains 4 strings, one for each robot component : `"motor"`, `"sensor"`, `"battery"` and `"camera"` (respect that order).
 
 #### Task 2:
 
@@ -128,7 +128,7 @@ We provide you a variable `robotParts` that contains some elements. You will hav
 
 #### Task 3:
 
-You must replace the third element of the provided `replaceComponents` array with the string 'enhanced'.
+- You must replace the third element of the provided `replaceComponents` array with the string 'enhanced'.
 
 Example:
 
@@ -137,7 +137,9 @@ let replaceComponents = ["motor", "sensor", "battery"];
 // expect -> ['motor', 'sensor', 'enhanced']
 ```
 
-You must swap the first and second element of the provided `swapComponents` array.
+- You must `swap` the first and second element of the provided `swapComponents` array using a variable `temp`.
+
+_Hint: Use a `temp` variable to store the first element, you must modify the array swapComponents, not create a new one !_
 
 Example:
 

@@ -1,4 +1,4 @@
-## Competitive Analysis
+### Competitive Analysis
 
 **Context:**
 
@@ -43,7 +43,7 @@ Don't forget to:
 **Quote:**
 
 - 'Always design a thing in its larger context: a chair in a room, a room in a house, a house in an environment, an environment in a city plan’ Eero Sarrinen | Knoll
-- Creating a great design isn’t just about understanding what the user wants. It’s also about understanding and delivering on what the business needs.
+- Creating a great design isn’t just about understanding what the user wants. It’s also about understanding and delivering on what the business needs.#
 
 ## Surveys
 
@@ -99,7 +99,7 @@ Here are the recommended steps:
 - “Surveys measure and categorize attitudes or collect self-reported data that can help track or discover important issues to address.” Norman Nielsen Group
 - Surveys are not accurate in providing behavioral data because USERS OMIT STEPS IN THE MIDDLE AND MEMORIES ARE FAULTY.
 
-## Broadcast strategy
+### Broadcast strategy
 
 ### Instructions
 
@@ -141,7 +141,7 @@ Once your strategy is prepared, run it!
 
 - [How to get more survey responses](https://rafflepress.com/how-to-get-more-survey-responses/)
 
-## Interviews
+### Interviews
 
 ### Instructions
 
@@ -183,7 +183,7 @@ Here are the recommended steps :
 - [How to design better products through user interviews](https://uxdesign.cc/how-to-design-better-products-through-user-interviews-4c5142bb1fc4)
 - [Asking the right questions](https://uxdesign.cc/asking-the-right-questions-on-user-research-interviews-and-testing-427261742a67)
 
-## Personas
+### Personas
 
 ### Instructions
 
@@ -215,7 +215,7 @@ Your persona card should include common trends amongst the people you got data f
 - "If you design for everyone, you delight no one."
 - "A good user persona is the one based on user research, without regard to how many attributes we can describe."
 
-## User journey
+### User journey
 
 ### Instructions
 
@@ -254,7 +254,7 @@ Most articles you'll find will be about user journeys or customer journeys. Keep
 - “More options = More problems.” Scott Belsky | VP of Product & Community Adobe
 - "A customer journey map is a visualization of the process that a person goes through in order to accomplish a goal. It’s used for understanding and addressing customer needs and pain points’ Norman Nielsen Group
 
-## Problem statement
+### Problem statement
 
 ### Instructions
 

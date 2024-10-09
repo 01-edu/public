@@ -88,7 +88,7 @@ armColorButton.addEventListener("click", handleChangeArmColor);
 
 ### Expected result
 
-You can see an example of the expected result [here](https://youtu.be/KjTBuAmUnk4)
+You can see an example of the expected result [here](https://youtu.be/viQymmWw6wo)
 
 **`Prompt Example:`**
 
