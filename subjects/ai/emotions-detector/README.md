@@ -162,7 +162,7 @@ Preprocessing ...
 
 ### Tips
 
-Balance technical prowess with psychological insight: as you fine-tune your CNN and optimize your video processing, remember that understanding the nuances of human facial expressions is key to creating a truly effective emotion detection system.
+Balance technical prowess with psychological insight: as you fine-tune your CNN and optimize your video processing, remember that understanding the nuances of human facial expressions is key to creating a truly effective emotion detection system. Good luck!
 
 ### Resources
 
