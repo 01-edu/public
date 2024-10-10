@@ -68,9 +68,9 @@ Cloudformation is Infrastructure As Code (IaC) tool used to automate the provisi
 
 **2.1 Hosting the Lambda function**
 
-Write cloudformation template with parameters (variables) `SlackWebhookUrl`, `Amount`, `IbanNumber`. The template should automatically provision the Slackbot based on architecture mentioned in [Level 0](#level-0-basic-lambda-function-hosted-via-serverless) step 3.
+Write cloudformation template with parameters (variables) `SlackWebhookUrl`, `Amount`, `IbanNumber`. The template should automatically provision the Slackbot based on architecture mentioned in Level 0 step 3.
 
-## Level 2: Basic Lambda Function automation via Basic Terraform with Local State\*\*
+## Level 2: Basic Lambda Function automation via Basic Terraform with Local State
 
 Terraform is an Infrastructure As Code (IaC) tool used to automate the provisioning of resources inside different SaaS solutions and Cloud providers. It uses HCL syntax, which is easy maintainable. The main problem of terraform is that you need to know, how everything works under the hood (e.g. IAM roles, policies, serverless platforms etc).
 
@@ -94,13 +94,13 @@ Create a slack bot, that sends a reminder to slack channel. Write integration te
 
 At this level you can use local state for terraform, no modules needed to write.
 
-## Level 3: Basic Lambda Function automation via Terraform Module with Remote S3 State (advanced)\*\*
+## Level 3: Basic Lambda Function automation via Terraform Module with Remote S3 State (advanced)
 
 In a DevOps world, mostly we use remote state for terraform. The main reason is that we can share the state with other team members and we can easily manage the state of the infrastructure. Although it is a bit more complex to set up, it allows you to avoid issues when someone even removes the state file, cause S3 has versioning turned on.
 
 This level is more advanced, but more near to the real-world scenario. As a DevOps Engineer / SRE mostly all the terraform code is written in modules (or using community pre-built modules). Modules help us to maintain the codebase and reuse the code in different projects, so you don't need to write the same code again and again.
 
-**1. Repeat the steps from [Level 2](#level-2-basic-lambda-function-automation-via-basic-terraform-with-local-state)**
+**1. Repeat the steps from Level 2**
 
 Repeat all the steps from Level 2, but now you need to write a terraform module for the lambda function and EventBridge. Which means that instead of writing values directly into main.tf file, everything should be written using variables. For example:
 
