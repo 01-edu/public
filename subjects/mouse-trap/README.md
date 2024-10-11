@@ -1,4 +1,4 @@
-****## Mouse trap
+## Mouse trap
 
 ### Instructions
 
@@ -17,7 +17,7 @@ Create the following functions:
 
 ### Files
 
-You only need to create & submit the JS file `mouse-trap.js`; we're providing you the following file to download and test locally:
+You only need to create & submit the JS file `mouse-trap.js`, we're providing you the following files to download and test locally:
 
 - the HTML file [mouse-trap.html](./mouse-trap.html) to open in the browser, which includes:
 
