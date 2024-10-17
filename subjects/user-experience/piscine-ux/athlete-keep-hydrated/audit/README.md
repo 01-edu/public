@@ -1,4 +1,4 @@
-### User interview
+#### User interview
 
 ###### Is the deliverable labeled as “Name_FirstName_DeliverableName_Date_VersionNumber”?
 
@@ -12,7 +12,7 @@
 
 ###### Does each insight have the name of the person(s) who said it?
 
-### Analytics
+#### Analytics
 
 ###### Is the deliverable labeled as “Name_FirstName_DeliverableName_Date_VersionNumber”?
 
@@ -28,7 +28,7 @@
 
 ###### Are the insights different from the ones given in the instructions as an example?
 
-### Personas
+#### Personas
 
 ###### Is the deliverable labeled as “Name_FirstName_DeliverableName_Date_VersionNumber”?
 
@@ -54,7 +54,7 @@
 
 ###### Are the insights from ex 1 included in Pierre's persona card?
 
-### User Journey
+#### User Journey
 
 ###### Is the deliverable labeled as “Name_FirstName_DeliverableName_Date_VersionNumber”?
 
@@ -76,7 +76,7 @@
 
 ###### For every thought, is there a main emotion?
 
-### Problem Statement
+#### Problem Statement
 
 ###### Is the deliverable labeled as “Name_FirstName_DeliverableName_Date_VersionNumber”?
 
@@ -92,7 +92,7 @@
 
 ##### Is the problem statement broad enough (check the readme tips to understand broad)?
 
-### Ideation
+#### Ideation
 
 ###### Is there a zip folder?
 
@@ -108,7 +108,7 @@
 
 ###### Is there one main idea to solve the problem?
 
-### Prototyping
+#### Prototyping
 
 ###### Is there a zip folder?
 
