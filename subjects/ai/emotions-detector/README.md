@@ -171,4 +171,3 @@ Balance technical prowess with psychological insight: as you fine-tune your CNN 
 - [Hack the CNN](https://medium.com/@ageitgey/machine-learning-is-fun-part-8-how-to-intentionally-trick-neural-networks-b55da32b7196)
 
 - [Convolutional Neural Network](https://arxiv.org/pdf/1812.06387.pdf)
-

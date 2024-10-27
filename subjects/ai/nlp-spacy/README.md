@@ -36,10 +36,10 @@ I suggest using the most recent libraries.
 
 ### Resources
 
-- https://spacy.io/usage/spacy-101
-- https://spacy.io/api/doc
-- https://www.analyticsvidhya.com/blog/2021/06/nlp-application-named-entity-recognition-ner-in-python-with-spacy/
-- https://medium.com/mlearning-ai/nlp-04-part-of-speech-tagging-in-spacy-dc3e239c2726
+- [Spacy](https://spacy.io/usage/spacy-101)
+- [NLP](https://spacy.io/api/doc
+- https://www.analyticsvidhya.com/blog/2021/06/nlp-application-named-entity-recognition-ner-in-python-with-spacy/)
+- [NLP 2](https://medium.com/mlearning-ai/nlp-04-part-of-speech-tagging-in-spacy-dc3e239c2726)
 
 ---
 

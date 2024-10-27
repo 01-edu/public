@@ -46,11 +46,11 @@ _Version of Scikit Learn I used to do the exercises: 0.22_. I suggest using the 
 
 #### To start with Scikit-learn
 
-- https://scikit-learn.org/stable/getting_started.html
+- [Scikit](https://scikit-learn.org/stable/getting_started.html)
 
-- https://jakevdp.github.io/PythonDataScienceHandbook/05.02-introducing-scikit-learn.html
+- [Introducing Scikit](https://jakevdp.github.io/PythonDataScienceHandbook/05.02-introducing-scikit-learn.html)
 
-- https://scikit-learn.org/stable/modules/linear_model.html
+- [Linear Model](https://scikit-learn.org/stable/modules/linear_model.html)
 
 #### Machine learning methodology and algorithms
 

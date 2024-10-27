@@ -47,11 +47,11 @@ I suggest to use the most recent one.
 
 ### Resources
 
-- https://victorzhou.com/blog/intro-to-neural-networks/
+- [Neural networks](https://victorzhou.com/blog/intro-to-neural-networks/)
 
-- https://srnghn.medium.com/deep-learning-overview-of-neurons-and-activation-functions-1d98286cf1e4
+- [Deep Learning](https://srnghn.medium.com/deep-learning-overview-of-neurons-and-activation-functions-1d98286cf1e4)
 
-- https://towardsdatascience.com/machine-learning-for-beginners-an-introduction-to-neural-networks-d49f22d238f9
+- [Machine Learning](https://towardsdatascience.com/machine-learning-for-beginners-an-introduction-to-neural-networks-d49f22d238f9)
 
 ---
 

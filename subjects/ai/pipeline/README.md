@@ -137,9 +137,9 @@ If the data is split in train and test set, it is extremely important to apply t
 
 Resources:
 
-- https://medium.com/technofunnel/what-when-why-feature-scaling-for-machine-learning-standard-minmax-scaler-49e64c510422
+- [Machine Learning](https://medium.com/technofunnel/what-when-why-feature-scaling-for-machine-learning-standard-minmax-scaler-49e64c510422)
 
-- https://scikit-learn.org/stable/modules/preprocessing.html
+- [Preprocessing](https://scikit-learn.org/stable/modules/preprocessing.html)
 
 ---
 

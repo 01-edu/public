@@ -40,7 +40,7 @@ I suggest to use the most recent one.
 
 ### Resources
 
-- https://machinelearningmastery.com/tutorial-first-neural-network-python-keras/
+- [Neural network](https://machinelearningmastery.com/tutorial-first-neural-network-python-keras/)
 
 ---
 
