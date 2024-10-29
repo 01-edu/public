@@ -23,7 +23,7 @@ Create a function named `explore`, which creates a page displaying the list of `
 
 ### Files
 
-You only need to create & submit the JS file `where-do-we-go.js`; we're providing you the following files to download and test test locally:
+You only need to create & submit the JS file `where-do-we-go.js`; we're providing you the following files to download and test locally:
 
 - the HTML file [where-do-we-go.html](./where-do-we-go.html) to open in the browser, which includes:
 
