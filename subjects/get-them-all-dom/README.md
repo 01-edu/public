@@ -5,7 +5,7 @@
 You've been attributed the task to find the main architect of the Tower of Pisa before he achieves his plans, avoiding us nowadays all those lame pictures of people pretending to stop it from falling.
 
 You arrive at the architects' chamber to find him, but all you have in front of you is a bunch of unknown people.
-Step by step, with the little information you have, gather information and figure out by elimination who he is.
+Step by step, with the limited details you have, gather information and figure out by elimination who he is.
 
 Launch the provided HTML file in the browser to begin your investigation.<br/>
 On top of the webpage, each of the four buttons fires a function:
