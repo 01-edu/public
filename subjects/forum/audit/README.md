@@ -44,11 +44,11 @@
 
 ###### Does it present the user you created?
 
-##### Try creating a post in the forum, open the database with `sqlite3 <database_name.db>` and perform a query to select all the users (Example: SELECT \* FROM post;).
+##### Try creating a post in the forum, open the database with `sqlite3 <database_name.db>` and perform a query to select all the posts (Example: SELECT \* FROM posts;).
 
 ###### Does it present the post you created?
 
-##### Try creating a comment in the forum, open the database with `sqlite3 <database_name.db>` and perform a query to select all the users (Example: SELECT \* FROM comment;).
+##### Try creating a comment in the forum, open the database with `sqlite3 <database_name.db>` and perform a query to select all the comments (Example: SELECT \* FROM comments;).
 
 ###### Does it present the comment you created?
 
