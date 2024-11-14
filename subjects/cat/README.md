@@ -21,7 +21,7 @@ $ go run . quest8.txt
 $ go run . quest8.txt abc
 "Programming is a skill best acquired by pratice and example rather than from books" by Alan Turing
 ERROR: open abc: No such file or directory
-$ cat quest8.txt | ./cat
+$ cat quest8.txt | go run .
 "Programming is a skill best acquired by pratice and example rather than from books" by Alan Turing
 $ go run .
 Hello
