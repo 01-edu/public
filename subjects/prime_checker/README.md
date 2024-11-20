@@ -9,7 +9,7 @@ If the `u32` is prime, the function will return an`Ok(u32)`. For any other case 
 The `enum` `PrimeErr` will be `Even` if the number is a multiple of two or `Divider(u32)` where the `u32` is the smallest divider of the number.
 
 > A prime number is a natural number greater than 1 that is a not a product of two smaller natural numbers.
-> 4 is not a prime number (so it's called a composite number) because it can be represented as 2 * 2. 5 is a prime number as it can only be represented by 5 * 1 or 1 * 5.
+> 4 is not a prime number (so it's called a composite number) because it can be represented as 2 _ 2. 5 is a prime number as it can only be represented by 5 _ 1 or 1 \* 5.
 
 > Your solution should be optimized to a certain degree.
 
