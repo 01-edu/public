@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Lets play a little.
+Let's play a little.
 
 Create a function named `score` that given a `&str`, computes the score for that given string as a `u64`.
 

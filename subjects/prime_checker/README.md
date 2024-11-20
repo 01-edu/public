@@ -8,10 +8,8 @@ The result will be `None` if the argument is less or equal one, otherwise it wil
 If the `u32` is prime, the function will return an`Ok(u32)`. For any other case it will return an `enum` `PrimeErr`.
 The `enum` `PrimeErr` will be `Even` if the number is a multiple of two or `Divider(u32)` where the `u32` is the smallest divider of the number.
 
-> [!TIP]
-> As a reminder, a `prime number` is a whole number greater than 1 that cannot be exactly divided by any whole number other than itself and 1.
-
-> We consider that only positive numbers can be prime numbers.
+> A prime number is a natural number greater than 1 that is a not a product of two smaller natural numbers.
+> 4 is not a prime number (so it's called a composite number) because it can be represented as 2 * 2. 5 is a prime number as it can only be represented by 5 * 1 or 1 * 5.
 
 > Your solution should be optimized to a certain degree.
 

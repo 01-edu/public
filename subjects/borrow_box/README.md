@@ -16,8 +16,8 @@ You will implement some **CRUD** functionality for a game session. You will need
 
 > Examples for `nb_games`:
 >
-> `nb_games` = **5** --> the maximum of games will be **5** and if some player has a score of 3, the game is finished (not enough games for the other player to win).\
-> `nb_games` = **11** --> the maximum of games will be **11** and if some player has a score of 6, the game is finished (not enough games for the other player to win).
+> When `nb_games` is 5, the game is best out of 5, and if some player has a score of 3, the game is finished (there aren't enough games for the other player to draw).
+> When `nb_games` is 11, the game is best out of 11, and if some player has a score of 6, the game is finished (there aren't enough games for the other player to draw).
 
 ### Expected Functions
 

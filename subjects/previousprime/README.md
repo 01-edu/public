@@ -6,10 +6,8 @@ Create a **function** which returns the first prime number which is less than or
 
 If there are no smaller primes, the function should return `0`.
 
-> [!TIP]
-> As a reminder, a `prime number` is a whole number greater than 1 that cannot be exactly divided by any whole number other than itself and 1.
-
-> We consider that only positive numbers can be prime numbers.
+> A prime number is a natural number greater than 1 that is a not a product of two smaller natural numbers.
+> 4 is not a prime number (so it's called a composite number) because it can be represented as 2 * 2. 5 is a prime number as it can only be represented by 5 * 1 or 1 * 5.
 
 ### Expected function
 
