@@ -12,19 +12,20 @@ We've found _confidential_ information about those superheroes.
 You must write all of the code from scratch. You are not allowed to rely on any frameworks or libraries like React, Vue, Svelte etc.
 
 #### Fetching the data
+
 In order to get the information, you should use `fetch`.
-When you use `fetch` in JS, it always returns a `Promise`. We will look more deeply into that later on. For now, tak a look at this:
+When you use `fetch` in JS, it always returns a `Promise`. We will look more deeply into that later on. For now, take a look at this:
 
 ```js
 // This function is called only after the data has been fetched, and parsed.
-const loadData = heroes => {
-  console.log(heroes)
-}
+const loadData = (heroes) => {
+  console.log(heroes);
+};
 
-// Request the file with fetch, the data will downloaded to your browser cache.
-fetch('https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json')
+// Request the file with fetch, and the data will be downloaded to your browser cache.
+fetch("https://rawcdn.githack.com/akabab/superhero-api/0.2.0/api/all.json")
   .then((response) => response.json()) // parse the response from JSON
-  .then(loadData) // .then will call the `loadData` function with the JSON value.
+  .then(loadData); // .then will call the `loadData` function with the JSON value.
 ```
 
 #### Display
@@ -73,7 +74,7 @@ Additional features will be critical to your success. Here's a few which will gi
   - `include`
   - `exclude`
   - `fuzzy`
-  - `equal`, `not equal`, `greater than` and  `lesser than` for numbers (including weight and height).
+  - `equal`, `not equal`, `greater than` and `lesser than` for numbers (including weight and height).
 - Detail view. Clicking a hero from the list will show all the details and large image.
 - A slick design. Spend some time improving the look and feel by playing around with CSS. Have fun with it.
 - Modify the URL with the search term, so that if you copy and paste the URL in a different tab, it will display the same column filters. If you have implemented detail view, the state of which hero is displayed should also form part of the URL.

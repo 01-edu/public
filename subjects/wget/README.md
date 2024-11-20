@@ -126,14 +126,14 @@ This flag should accept different value types, example: k and M. So you can put 
 $ ls
 download.txt   main.go
 $ cat download.txt
-http://ipv4.download.thinkbroadband.com/20MB.zip
-http://ipv4.download.thinkbroadband.com/10MB.zip
+https://assets.01-edu.org/wgetDataSamples/20MB.zip
+https://assets.01-edu.org/wgetDataSamples/Image_10MB.zip
 $ go run . -i=download.txt
 content size: [10485760, 20971520]
 finished 10MB.zip
 finished 20MB.zip
 
-Download finished:  [http://ipv4.download.thinkbroadband.com/20MB.zip http://ipv4.download.thinkbroadband.com/10MB.zip]
+Download finished:  [https://assets.01-edu.org/wgetDataSamples/20MB.zip https://assets.01-edu.org/wgetDataSamples/Image_10MB.zip]
 
 ```
 

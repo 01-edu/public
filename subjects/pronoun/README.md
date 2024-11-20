@@ -5,9 +5,10 @@
 Create a function named `pronoun` that accepts a string parameter.
 This function returns an object that will have all the personal pronouns, present in the string, as keys. Each key will have a sub object with the first word after each of the personal pronouns found in the string.
 
-You must also a `count` property to the sub object, with the amount of occurrences of the pronoun.
+You must also add a `count` property to the sub object, with the amount of occurrences of the pronoun.
 
 Pronouns:
+
 - i
 - you
 - he

@@ -1,0 +1,74 @@
+name: 📋 Check PR Compliance
+
+on:
+  pull_request:
+    types:
+      [
+        opened,
+        edited,
+        synchronize,
+        reopened,
+        labeled,
+        unlabeled,
+        assigned,
+        unassigned,
+      ]
+
+jobs:
+  check-pr-compliance:
+    name: ✅ Check PR for Compliance
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🐧 Check out repository code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🏷️ Show PR Labels and Assignees
+        run: |
+          echo "PR Labels: ${{ toJson(github.event.pull_request.labels) }}"
+          echo "PR Assignees: ${{ toJson(github.event.pull_request.assignees) }}"
+
+      - name: 🙋 Verify PR Assignee
+        run: |
+          if [ "${{ toJson(github.event.pull_request.assignees) }}" == "[]" ]; then
+            echo "👮 This PR does not have any assignees. Please assign at least one assignee."
+            exit 1
+          fi
+
+      - name: 🏷️ Verify PR Label
+        run: |
+          if [ "${{ toJson(github.event.pull_request.labels) }}" == "[]" ]; then
+            echo "👮 This PR does not have any labels. Please assign at least one label."
+            exit 1
+          fi
+
+      - name: 📝 Check Commit Messages
+        id: check_commits
+        run: |
+          #!/bin/bash
+          set -e
+
+          BASE_SHA=$(git merge-base ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }})
+          COMMITS=$(git log --pretty=format:"%s" $BASE_SHA..${{ github.event.pull_request.head.sha }})
+
+          INVALID_COMMITS=()
+
+          while IFS= read -r commit; do
+            if ! [[ $commit =~ ^(add|delete|update|fix|bump|security|refactor|style|test|docs|chore|perf|ci|build|revert)(\([a-z]+\))?:\ .+ ]]; then
+              INVALID_COMMITS+=("$commit")
+            fi
+          done <<< "$COMMITS"
+
+          if [ ${#INVALID_COMMITS[@]} -ne 0 ]; then
+            echo "👮 Warning: The following commits do not follow the 01-edu commit message convention:"
+            for commit in "${INVALID_COMMITS[@]}"; do
+              echo "  - $commit"
+            done
+            echo " 📢 Please consider updating your commit messages to follow the standard: https://github.com/01-edu/conventions/"
+            exit 1
+          else
+            echo "✅ All commit messages follow the 01-edu convention."
+          fi
+        continue-on-error: true
