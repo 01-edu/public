@@ -1,10 +1,18 @@
-# Time Series
+## Time Series
+
+### Overview
 
 Time series data are data that are indexed by a sequence of dates or times. Today, you'll learn how to use methods built into Pandas to work with this index. You'll also learn for instance:
 
 - to resample time series to change the frequency
 - to calculate rolling and cumulative values for times series
 - to build a backtest
+
+### Role Play
+
+You are a quantitative analyst at a prominent hedge fund. Your team is responsible for developing and testing trading strategies using historical financial data. Your manager has assigned you a project to analyze time series data, particularly focusing on Apple stock, and to backtest a simple trading strategy.
+
+### Learning Objectives
 
 Time series a used A LOT in finance. You'll learn to evaluate financial strategies using Pandas. It is important to keep in mind that Python is vectorized. That's why some questions constraint you to not use a for loop ;-).
 
@@ -43,7 +51,7 @@ I suggest to use the most recent one.
 
 ---
 
-# Exercise 0: Environment and libraries
+### Exercise 0: Environment and libraries
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
@@ -55,13 +63,13 @@ I recommend to use:
 - the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
 - one of the most recent versions of the libraries required
 
-1. Create a virtual environment named `ex00`, with a version of Python >= `3.8`, with the following libraries: `pandas`, `numpy` and `jupyter`.
+1. Create a virtual environment named `ex00`, with a version of Python >= `3.9`, with the following libraries: `pandas`, `numpy` and `jupyter`.
 
 ---
 
 ---
 
-# Exercise 1: Series
+### Exercise 1: Series
 
 The goal of this exercise is to learn to manipulate time series in Pandas.
 
@@ -73,7 +81,7 @@ The goal of this exercise is to learn to manipulate time series in Pandas.
 
 ---
 
-# Exercise 2: Financial data
+### Exercise 2: Financial data
 
 This exercise aims to familiarize you with handling financial data using Pandas, particularly focusing on time series analysis and computations related to stock prices.
 
@@ -97,7 +105,7 @@ There are two recommended methods: utilizing the `pct_change` function and imple
 
 ---
 
-# Exercise 3: Multi asset returns
+### Exercise 3: Multi asset returns
 
 The goal of this exercise is to learn to compute daily returns on a DataFrame that contains many assets (multi-assets).
 
@@ -136,7 +144,7 @@ Note: The data is generated randomly, the values you may have lead to a differen
 
 ---
 
-# Exercise 4: Backtest
+### Exercise 4: Backtest
 
 The goal of this exercise is to learn to perform a backtest in Pandas. A backtest is a tool that allows you to know how a strategy would have performed retrospectively using historical data. In this exercise we will focus on the backtesting tool and not on how to build the best strategy.
 
