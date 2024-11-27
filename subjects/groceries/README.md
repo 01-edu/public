@@ -6,7 +6,6 @@ Create a **function** named `insert`, that inserts a new element at the end of t
 
 Create another **function** named `at_index` that returns the value found at the index passed as an argument.
 
-
 ```rust
 pub fn insert(vec: &mut Vec<String>, val: String) {
 }
