@@ -15,7 +15,7 @@ pub fn rev_str(input: &str) -> String {
 Here is a possible program to test your function :
 
 ```rust
-use reverse_string::rev_str;
+use reverse_string::*;
 
 fn main() {
     println!("{}", rev_str("Hello, world!"));
