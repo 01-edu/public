@@ -11,7 +11,7 @@ Create another **function** named `at_index` that returns the value found at the
 pub fn insert(vec: &mut Vec<String>, val: String) {
 }
 
-pub fn at_index(vec: &Vec<String>, index: usize) -> String {
+pub fn at_index(slice: &[String], index: usize) -> &str {
 }
 ```
 
@@ -20,21 +20,18 @@ pub fn at_index(vec: &Vec<String>, index: usize) -> String {
 Here is a possible program to test your function:
 
 ```rust
-use groceries::{insert, at_index};
+use groceries::*;
 
 fn main() {
-	let mut groceries = vec![
-		"yogurt".to_string(),
-		"panettone".to_string(),
-		"bread".to_string(),
-		"cheese".to_string(),
-	];
-	insert(&mut groceries, String::from("nuts"));
-	println!("The groceries list contains {:?}", &groceries);
-	println!(
-		"The second element of the grocery  list is {:?}",
-		at_index(&groceries, 1)
-	);
+    let mut groceries = vec![
+        "yogurt".to_string(),
+        "panettone".to_string(),
+        "bread".to_string(),
+        "cheese".to_string(),
+    ];
+    insert(&mut groceries, String::from("nuts"));
+    println!("groceries = {:?}", &groceries);
+    println!("groceries[1] = {:?}", at_index(&groceries, 1));
 }
 ```
 
