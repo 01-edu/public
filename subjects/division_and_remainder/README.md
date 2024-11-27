@@ -14,7 +14,7 @@ pub fn divide(x: i32, y: i32) -> (i32, i32) {
 Here is a program to test your function
 
 ```rust
-use division_and_remainder::divide;
+use division_and_remainder::*;
 
 fn main() {
     let x = 9;
