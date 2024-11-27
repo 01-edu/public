@@ -11,8 +11,7 @@ Create the following **functions**, which each accept two parameters:
 - `rem`, which returns the remainder of the division between two 32bit values
 
 > You will need to figure out the exact data types for the parameters **and** the return values.
-  There are some hints in the example.
-
+> There are some hints in the example.
 
 ```rust
 pub fn sum(a: X, b: X) -> X {
