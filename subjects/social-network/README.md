@@ -171,8 +171,8 @@ After a user is logged in he/she can create posts and comments on already create
 The user must be able to specify the privacy of the post:
 
 - public (all users in the social network will be able to see the post)
-- private (only followers of the creator of the post will be able to see the post)
-- almost private (only the followers chosen by the creator of the post will be able to see it)
+- almost private (only followers of the creator of the post will be able to see the post)
+- private (only the followers chosen by the creator of the post will be able to see it)
 
 ---
 
