@@ -27,8 +27,7 @@ The transposition of a matrix, switches the columns to rows, and the rows to col
 Here is a possible program to test your function
 
 ```rust
-use matrix_transposition::transpose;
-use matrix_transposition::Matrix;
+use matrix_transposition::*;
 
 fn main() {
     let matrix = Matrix((1, 3), (4, 5));

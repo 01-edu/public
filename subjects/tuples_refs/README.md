@@ -10,10 +10,10 @@
 pub fn id(student: &Student) -> u32 {
 }
 
-pub fn first_name(student: &Student) -> String {
+pub fn first_name(student: &Student) -> &str {
 }
 
-pub fn last_name(student: &Student) -> String {
+pub fn last_name(student: &Student) -> &str {
 }
 ```
 
@@ -25,11 +25,10 @@ Here is a program to test your functions
 use tuples_refs::*;
 
 fn main() {
-	let student = Student(20, "Pedro".to_string(), "Domingos".to_string());
-	println!("Student: {:?}", student);
-	println!("Student first name: {}", first_name(&student));
-	println!("Student last name: {}", last_name(&student));
-	println!("Student Id: {}", id(&student));
+    let student = Student(20, "Pedro".to_string(), "Domingos".to_string());
+    println!("Student's first name: {}", first_name(&student));
+    println!("Student's last name: {}", last_name(&student));
+    println!("Student's id: {}", id(&student));
 }
 ```
 
