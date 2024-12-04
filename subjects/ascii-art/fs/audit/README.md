@@ -173,7 +173,7 @@ o-O-o  o    o-o         o   o   o-o o   o  o | o  o o--O $
 
 #### Basic
 
-###### +Does the project runs quickly and effectively (Favoring of recursive, no unnecessary data requests, etc.)?
+###### +Does the project run quickly and effectively (Favoring of recursive, no unnecessary data requests, etc.)?
 
 ###### +Is the output of the program well structured? Are the characters are correctly in line?
 

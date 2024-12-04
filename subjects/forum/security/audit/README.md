@@ -36,7 +36,7 @@
 
 #### Basic
 
-###### +Does the project runs quickly and effectively? (no unnecessary data requests, etc)
+###### +Does the project run quickly and effectively? (no unnecessary data requests, etc)
 
 ###### +Does the code obey the [good practices](../../../good-practices/README.md)?
 

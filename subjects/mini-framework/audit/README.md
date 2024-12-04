@@ -58,7 +58,7 @@
 
 ###### +Is it easier to handle the routing in JS using the framework?
 
-###### +Does the project runs quickly and effectively? (Favoring recursivity, no unnecessary data requests, etc...)
+###### +Does the project run quickly and effectively? (Favoring recursivity, no unnecessary data requests, etc...)
 
 ###### +Is the code using asynchronicity to increase performance?
 
