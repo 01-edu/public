@@ -80,7 +80,7 @@ EX: go run . --reverse=<fileName>
 
 #### Basic
 
-###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
+###### +Does the project run quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
 
 ###### +Does the code obey the [good practices](../../../good-practices/README.md)?
 
