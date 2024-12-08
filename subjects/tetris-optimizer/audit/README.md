@@ -6,37 +6,37 @@
 
 `ERROR`
 
-###### Does the program prints the value above?
+###### Does the program print the value above?
 
 ##### Try [bad example 01](../badexample01/README.md).
 
 `ERROR`
 
-###### Does the program prints the value above?
+###### Does the program print the value above?
 
 ##### Try [bad example 02](../badexample02/README.md).
 
 `ERROR`
 
-###### Does the program prints the value above?
+###### Does the program print the value above?
 
 ##### Try [bad example 03](../badexample03/README.md).
 
 `ERROR`
 
-###### Does the program prints the value above?
+###### Does the program print the value above?
 
 ##### Try [bad example 04](../badexample04/README.md).
 
 `ERROR`
 
-###### Does the program prints the value above?
+###### Does the program print the value above?
 
 ##### Try [bad format](../badformat/README.md).
 
 `ERROR`
 
-###### Does the program prints the value above?
+###### Does the program print the value above?
 
 ##### Try [good example 00](../goodexample00/README.md).
 
@@ -68,7 +68,7 @@
 
 #### Basic
 
-###### +Does the project runs quickly and effectively (Favoring of recursive, no unnecessary data requests, etc.)?
+###### +Does the project run quickly and effectively (Favoring of recursive, no unnecessary data requests, etc.)?
 
 ###### +Is there a test file for this code?
 

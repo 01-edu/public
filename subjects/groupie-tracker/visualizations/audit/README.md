@@ -22,7 +22,7 @@
 
 #### Basic
 
-###### +Does the project runs quickly and effectively (Favoring of recursive, no unnecessary data requests, etc.)?
+###### +Does the project run quickly and effectively (Favoring of recursive, no unnecessary data requests, etc.)?
 
 ###### +Is there a test file for this code?
 

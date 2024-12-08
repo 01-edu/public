@@ -174,7 +174,7 @@ cc8f5dcf760f        <name of the image>    "./server"               6 seconds ag
 
 #### Basic
 
-###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
+###### +Does the project run quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
 
 ###### +Does the code obey the [good practices](../../good-practices/README.md)?
 

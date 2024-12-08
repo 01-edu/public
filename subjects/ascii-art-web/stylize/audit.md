@@ -18,7 +18,7 @@
 
 #### Basic
 
-###### +Does the project runs quickly and effectively (Favoring of recursive, no unnecessary data requests, etc.)?
+###### +Does the project run quickly and effectively (Favoring of recursive, no unnecessary data requests, etc.)?
 
 ###### +Is the output of the program well structured? Is the output aligned, without any letter out of line?
 
