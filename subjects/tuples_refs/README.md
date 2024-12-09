@@ -36,10 +36,9 @@ And its output:
 
 ```console
 $ cargo run
-Student: Student(20, "Pedro", "Domingos")
-Student first name: Pedro
-Student last name: Domingos
-Student Id: 20
+Student's first name: Pedro
+Student's last name: Domingos
+Student's id: 20
 $
 ```
 
