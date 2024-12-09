@@ -4,7 +4,6 @@
 
 Create a **function** named `rev_str` that takes a `&str` as a parameter, and returns a `String` with its letters reversed.
 
-
 ```rust
 pub fn rev_str(input: &str) -> String {
 }
@@ -15,7 +14,7 @@ pub fn rev_str(input: &str) -> String {
 Here is a possible program to test your function :
 
 ```rust
-use reverse_string::rev_str;
+use reverse_string::*;
 
 fn main() {
     println!("{}", rev_str("Hello, world!"));
