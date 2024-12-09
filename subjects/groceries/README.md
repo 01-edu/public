@@ -38,8 +38,8 @@ And its output:
 
 ```console
 $ cargo run
-The groceries list contains ["yogurt", "panettone", "bread", "cheese", "nuts"]
-The second element of the grocery  list is "panettone"
+groceries = ["yogurt", "panettone", "bread", "cheese", "nuts"]
+groceries[1] = "panettone"
 $
 ```
 
