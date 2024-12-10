@@ -17,14 +17,16 @@ You'll need to complete the function signature, so that it works properly with t
 Here is a program to test your function
 
 ```rust
+use doubtful::*;
+
 fn main() {
-	let mut s = String::from("Hello");
+    let mut s = "Hello".to_owned();
 
-	println!("Before changing the string: {}", s);
+    println!("Before changing the string: {}", s);
 
-	doubtful(/*add your code here*/);
+    doubtful(&mut s);
 
-	println!("After changing the string: {}", s);
+    println!("After changing the string: {}", s);
 }
 ```
 
