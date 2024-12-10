@@ -2,7 +2,7 @@
 
 ### Instruction
 
-Create a **function** named `first_subword`, that takes ownership of a string and returns the first sub-word in it. It should work for `camelCase`, `PascalCase`, and `snake_case`.
+Create a **function** named `first_subword`, that **moves** a string (takes ownership of it) and returns the first sub-word in it. You can mutate the original string. It should work for `camelCase`, `PascalCase`, and `snake_case`.
 
 ### Expected functions
 ```rust
@@ -18,15 +18,15 @@ Here is a program to test your function:
 use ownership::first_subword;
 
 fn main() {
-	let s1 = String::from("helloWorld");
-	let s2 = String::from("snake_case");
-	let s3 = String::from("CamelCase");
-	let s4 = String::from("just");
+    let s1 = "helloWorld";
+    let s2 = "snake_case";
+    let s3 = "CamelCase";
+    let s4 = "just";
 
-	println!("first_subword({}) = {}", s1.clone(), first_subword(s1));
-	println!("first_subword({}) = {}", s2.clone(), first_subword(s2));
-	println!("first_subword({}) = {}", s3.clone(), first_subword(s3));
-	println!("first_subword({}) = {}", s4.clone(), first_subword(s4));
+    println!("first_subword({}) = {}", s1, first_subword(s1.to_owned()));
+    println!("first_subword({}) = {}", s2, first_subword(s2.to_owned()));
+    println!("first_subword({}) = {}", s3, first_subword(s3.to_owned()));
+    println!("first_subword({}) = {}", s4, first_subword(s4.to_owned()));
 }
 ```
 
