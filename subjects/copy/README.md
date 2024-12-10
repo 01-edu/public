@@ -29,19 +29,19 @@ pub fn vec_function(b: Vec<i32>) -> (Vec<i32>, Vec<f64>) {
 
 ### Usage
 
-Here is a possible program to test your function :
+Here is a possible program to test your function:
 
 ```rust
 use copy::*;
 
 fn main() {
-    let a: i32 = 0;
-    let b = String::from("1 2 4 5 6");
-    let c = vec![1, 2, 4, 5];
+    let a = "1 2 4 5 6".to_owned();
+    let b = vec![1, 2, 4, 5];
+    let c = 0;
 
-    println!("{:?}", nbr_function(a));
-    println!("{:?}", str_function(b));
-    println!("{:?}", vec_function(c));
+    println!("{:?}", nbr_function(c));
+    println!("{:?}", vec_function(b));
+    println!("{:?}", str_function(a));
 }
 ```
 
