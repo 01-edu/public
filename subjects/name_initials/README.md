@@ -18,7 +18,7 @@ pub fn initials(names: Vec<&str>) -> Vec<String> {
 Here is a program to test your function:
 
 ```rust
-use name_initials::initials;
+use name_initials::*;
 
 fn main() {
     let names = vec!["Harry Potter", "Someone Else", "J. L.", "Barack Obama"];
