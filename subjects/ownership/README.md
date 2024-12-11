@@ -5,6 +5,7 @@
 Create a **function** named `first_subword`, that **moves** a string (takes ownership of it) and returns the first sub-word in it. You can mutate the original string. It should work for `camelCase`, `PascalCase`, and `snake_case`.
 
 ### Expected functions
+
 ```rust
 pub fn first_subword(mut s: String) -> String {
 }

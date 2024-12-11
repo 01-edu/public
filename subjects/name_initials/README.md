@@ -5,13 +5,13 @@
 Create a **function** named `initials`. This function will receive a vector of string literals with names, and return a vector of Strings with the initials of each name.
 
 ### Expected Functions
+
 ```rust
 pub fn initials(names: Vec<&str>) -> Vec<String> {
 }
 ```
 
 > Your heap allocations will be monitored to ensure that you do not make too many allocations, and that your allocations are reasonably sized.
-
 
 ### Usage
 
