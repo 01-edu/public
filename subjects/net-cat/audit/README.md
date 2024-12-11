@@ -1,10 +1,10 @@
 #### Functional
 
-##### Try running `"./TCPChat"`.
+##### Try running `./TCPChat`.
 
 ###### Is the server listening for connections on the default port?
 
-##### Try running `"./TCPChat" 2525 localhost`.
+##### Try running `./TCPChat 2525 localhost`.
 
 ```
 [USAGE]: ./TCPChat $port
@@ -12,11 +12,11 @@
 
 ###### Did the server respond with usage, as above?
 
-##### Try running `"./TCPChat 2525"`.
+##### Try running `./TCPChat 2525`.
 
 ###### Is the server listening for connections on the port 2525?
 
-##### Try opening 3 terminals, run on the first terminal the command `"./TCPChat <port>"` and on the second and third terminal run the command `"nc <host ip> <port>"`.
+##### Try opening 3 terminals, run on the first terminal the command `./TCPChat <port>` and on the second and third terminal run the command `nc <host ip> <port>`.
 
 ###### Do both clients connect to the server with success?
 
