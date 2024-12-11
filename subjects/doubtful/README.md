@@ -5,6 +5,7 @@
 Create a function named `doubtful` which appends a question mark to every string passed to it. It must not return a value.
 
 ### Expected functions
+
 ```rust
 pub fn doubtful(s: /*give the correct type*/ ) {
 }
