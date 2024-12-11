@@ -11,6 +11,7 @@ Create the following functions:
 - `find`: that returns the index of the first character of a given string that matches the pattern.
 
 ### Expected functions
+
 ```rust
 pub fn is_empty(v: &str) -> bool {
 }

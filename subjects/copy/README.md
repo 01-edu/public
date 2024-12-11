@@ -16,6 +16,7 @@ Create the following **functions**. The objective is to know how ownership works
   - and the `natural logarithm` of each `absolute` value.
 
 ### Expected functions
+
 ```rust
 pub fn nbr_function(c: i32) -> (i32, f64, f64) {
 }
