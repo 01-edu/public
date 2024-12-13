@@ -7,17 +7,17 @@ is an example:
 
 ```js
 let happy = (mood) => {
-  if (mood === 'happy') {
-    return true
+  if (mood === "happy") {
+    return true;
   }
-  return false
-}
+  return false;
+};
 
-let result1 = happy('happy')
-let result2 = happy('sad')
+let result1 = happy("happy");
+let result2 = happy("sad");
 
-console.log(result1) // true
-console.log(result2) // false
+console.log(result1); // true
+console.log(result2); // false
 ```
 
 Here we used the `if` statement, and two `return` keywords to alternate between
@@ -39,13 +39,13 @@ Define the function `shaker` which will take as arguments:
 `shaker` must mix its ingredients:
 
 ```js
-console.log(shaker(1, 'strawberry', true))
+console.log(shaker(1, "strawberry", true));
 //'1 skinny strawberry milkshake'
-console.log(shaker(2, 'chocolate', false))
+console.log(shaker(2, "chocolate", false));
 //'2 chocolate milkshakes'
-console.log(shaker(2, 'strawberry', true))
+console.log(shaker(2, "strawberry", true));
 //'2 skinny strawberry milkshakes'
-console.log(shaker(1, 'chocolate', false))
+console.log(shaker(1, "chocolate", false));
 //'1 chocolate milkshake'
 ```
 
