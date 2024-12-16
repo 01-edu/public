@@ -26,11 +26,20 @@ tests.push(async ({ page, eq }) => {
 })
 
 tests.push(async ({ page, eq }) => {
-  // check that the targetted elements have the correct class names
-  await eq.$('p#eye-left', { className: 'eye' })
-  await eq.$('p#eye-right', { className: 'eye' })
-  await eq.$('div#arm-left', { className: 'arm body-member' })
-  await eq.$('div#arm-right', { className: 'arm body-member' })
-  await eq.$('div#leg-left', { className: 'leg body-member' })
-  await eq.$('div#leg-right', { className: 'leg body-member' })
-})
+  // Helper function to check if an element has the expected classes
+  async function hasClasses(selector, expectedClasses) {
+    const element = await page.$(selector);
+    const className = await element.evaluate(el => el.className);
+    const classList = className.split(' ').sort();
+    const expectedClassList = expectedClasses.split(' ').sort();
+    return JSON.stringify(classList) === JSON.stringify(expectedClassList);
+  }
+
+  // Check that the target elements have the correct classes
+  eq(await hasClasses('p#eye-left', 'eye'), true);
+  eq(await hasClasses('p#eye-right', 'eye'), true);
+  eq(await hasClasses('div#arm-left', 'arm body-member'), true);
+  eq(await hasClasses('div#arm-right', 'arm body-member'), true);
+  eq(await hasClasses('div#leg-left', 'leg body-member'), true);
+  eq(await hasClasses('div#leg-right', 'leg body-member'), true);
+});
