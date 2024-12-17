@@ -164,6 +164,7 @@ You will use your exported VM to run a new VM for each audit.
 Push the shasum of your exported VM, you can get it this way:
 
 Example:
+
 ```console
 user:~$ sha1sum {exported deep-in-system} > deep-in-system.sha1
 user:~$ cat deep-in-system.sha1 | cat -e
