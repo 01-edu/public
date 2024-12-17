@@ -11,8 +11,9 @@ Files that must be inside the repository:
 
 ##### Verify that the virtual machine that will be audited is the one that is submitted:
 
+Example:
 ```console
-user:~$ sha1sum deep-in-system.ova > deep-in-system-toaudit.sha1
+user:~$ sha1sum {exported deep-in-system} > deep-in-system-toaudit.sha1
 user:~$ diff deep-in-system.sha1  deep-in-system-toaudit.sha1 ; echo $?
 0
 user:~$
@@ -64,16 +65,18 @@ You can check the versions of the ubuntu server from here: [Get Ubuntu Server](h
 Check the VM disk and partitions with this command:
 
 ```console
-user:~$ lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT /dev/sda
+user:~$ lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT /dev/{device_name}
 NAME   FSTYPE SIZE MOUNTPOINT
-sda            30G
-├─sda<...>          1M
-├─sda<...> swap     4G [SWAP]
-├─sda<...> ext4    15G /
-├─sda<...> ext4     5G /home
-└─sda<...> ext4     6G /backup
+{device_name}            30G
+├─{device_name}<...>          1M
+├─{device_name}<...> swap     4G [SWAP]
+├─{device_name}<...> ext4    15G /
+├─{device_name}<...> ext4     5G /home
+└─{device_name}<...> ext4     6G /backup
 user:~$
 ```
+
+> It's fine if the output format is different, but the values should be the same.
 
 - The VM disk size must be 30GB.
 
