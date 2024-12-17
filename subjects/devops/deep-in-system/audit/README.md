@@ -12,6 +12,7 @@ Files that must be inside the repository:
 ##### Verify that the virtual machine that will be audited is the one that is submitted:
 
 Example:
+
 ```console
 user:~$ sha1sum {exported deep-in-system} > deep-in-system-toaudit.sha1
 user:~$ diff deep-in-system.sha1  deep-in-system-toaudit.sha1 ; echo $?
