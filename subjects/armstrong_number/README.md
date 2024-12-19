@@ -18,9 +18,11 @@ pub fn is_armstrong_number(nb: u32) -> Option<u32> {
 
 ### Usage
 
-Here is a possible program to test your function,
+Here is a possible program to test your function:
 
 ```rust
+use armstrong_number::*;
+
 fn main() {
     println!("{:?}", is_armstrong_number(0));
     println!("{:?}", is_armstrong_number(1));

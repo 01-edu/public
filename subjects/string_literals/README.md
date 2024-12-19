@@ -11,6 +11,7 @@ Create the following functions:
 - `find`: that returns the index of the first character of a given string that matches the pattern.
 
 ### Expected functions
+
 ```rust
 pub fn is_empty(v: &str) -> bool {
 }
@@ -28,7 +29,7 @@ pub fn find(v: &str, pat: char) -> usize {
 }
 ```
 
-> Your heap allocations will be monitored to ensure that you do not make too many allocations, and that your allocations are reasonably sized.
+> You mustn't allocate to the heap in any of these functions.
 
 ### Usage
 
