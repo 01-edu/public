@@ -1,13 +1,21 @@
-# Data wrangling
+## Data wrangling
 
-Data wrangling is one of the crucial tasks in data science and analysis which includes operations like:
+### Overview
+
+Data wrangling is one of the crucial tasks in data science and analysis
+
+### Role Play
+
+You are a newly hired data analyst at a major e-commerce company. Your first assignment is to clean and prepare various datasets for analysis. The company's data comes from multiple sources and in different formats. Your manager has tasked you with combining these datasets, dealing with missing or inconsistent data, and preparing summary reports. You'll need to use your data wrangling skills to transform raw data into a format suitable for analysis and visualization.
+
+### Learning Objectives
 
 - Data Sorting: To rearrange values in ascending or descending order.
 - Data Filtration: To create a subset of available data.
 - Data Reduction: To eliminate or replace unwanted values.
 - Data Access: To read or write data files.
 - Data Processing: To perform aggregation, statistical, and similar operations on specific values.
-  Ax explained before, Pandas is an open source library, specifically developed for data science and analysis. It is built upon the Numpy (to handle numeric data in tabular form) package and has inbuilt data structures to ease-up the process of data manipulation, aka data munging/wrangling.
+  As explained before, Pandas is an open source library, specifically developed for data science and analysis. It is built upon the Numpy (to handle numeric data in tabular form) package and has inbuilt data structures to ease-up the process of data manipulation, aka data munging/wrangling.
 
 ### Exercises of the day
 
@@ -45,7 +53,7 @@ I suggest to use the most recent one.
 
 ---
 
-# Exercise 0: Environment and libraries
+### Exercise 0: Environment and libraries
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
@@ -57,13 +65,13 @@ I recommend to use:
 - the virtual environment you're the most confortable with. `virtualenv` and `conda` are the most used in Data Science.
 - one of the most recents versions of the libraries required
 
-1. Create a virtual environment named `ex00`, with a version of Python >= `3.8`, with the following libraries: `pandas`, `numpy` ,`tabulate` and `jupyter`.
+1. Create a virtual environment named `ex00`, with a version of Python >= `3.9`, with the following libraries: `pandas`, `numpy` ,`tabulate` and `jupyter`.
 
 ---
 
 ---
 
-# Exercise 1: Concatenate
+### Exercise 1: Concatenate
 
 The goal of this exercise is to learn to concatenate DataFrames. The logic is the same for the Series.
 
@@ -82,7 +90,7 @@ df2 = pd.DataFrame([['c', 1], ['d', 2]],
 
 ---
 
-# Exercise 2: Merge
+### Exercise 2: Merge
 
 The goal of this exercise is to learn to merge DataFrames
 The logic of merging DataFrames in Pandas is quite similar as the one used in SQL.
@@ -132,7 +140,7 @@ df2 = pd.DataFrame(df2_dict, columns = ['id', 'Feature1', 'Feature2'])
 
 ---
 
-# Exercise 3: Merge MultiIndex
+### Exercise 3: Merge MultiIndex
 
 The goal of this exercise is to learn to merge DataFrames with MultiIndex.
 Use the code below to generate the DataFrames. `market_data` contains fake market data. In finance, the market is available during the trading days (business days). `alternative_data` contains fake alternative data from social media. This data is available every day. But, for some reasons the Data Engineer lost the last 15 days of alternative data.
@@ -171,7 +179,7 @@ Use the code below to generate the DataFrames. `market_data` contains fake marke
 
 ---
 
-# Exercise 4: Groupby Apply
+### Exercise 4: Groupby Apply
 
 The goal of this exercise is to learn to group the data and apply a function on the groups.
 The use case we will work on is computing
@@ -241,7 +249,7 @@ Here is what the function should output:
 
 ---
 
-# Exercise 5: Groupby Agg
+### Exercise 5: Groupby Agg
 
 The goal of this exercise is to learn to compute different type of aggregations on the groups. This small DataFrame contains products and prices.
 
@@ -269,7 +277,7 @@ Note: The columns don't have to be MultiIndex
 
 ---
 
-# Exercise 6: Unstack
+### Exercise 6: Unstack
 
 The goal of this exercise is to learn to unstack a MultiIndex
 Let's assume we trained a machine learning model that predicts a daily score on the companies (tickers) below. It may be very useful to unstack the MultiIndex: plot the time series, vectorize the backtest, ...

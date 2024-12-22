@@ -6,7 +6,7 @@
 
 ##### Run `python --version`
 
-###### Does it print `Python 3.x`? x >= 8?
+###### Does it print `Python 3.x`? x >= 9?
 
 ###### Does `import jupyter`, `import numpy`, `import pandas`, `import matplotlib` and `import sklearn` run without any error?
 
@@ -30,7 +30,6 @@ Intercept:
 Score:
  0.7142857142857143
 ```
-
 
 ---
 
@@ -73,9 +72,9 @@ Coefficient:  [[1.18866075]]
 
 ###### For question 4, does `predict_probability` output the same probabilities as `predict_proba`? Note that the values have to match one of the class probabilities, not both. To do so, compare the output with: `clf.predict_proba(X)[:,1]`. The shape of the arrays is not important.
 
-###### Does `predict_class` output the same classes as `cfl.predict(X)` for  question 5? The shape of the arrays is not important.
+###### Does `predict_class` output the same classes as `cfl.predict(X)` for question 5? The shape of the arrays is not important.
 
-######  Does the plot for question 6 look like the plot below? As mentioned, it is not required to shift the class prediction to make the plot easier to understand.
+###### Does the plot for question 6 look like the plot below? As mentioned, it is not required to shift the class prediction to make the plot easier to understand.
 
 ![alt text][ex3q6]
 
@@ -193,6 +192,7 @@ As said, for some reasons, the results may be slightly different from mine becau
 ---
 
 #### Bonus
+
 #### Exercise 6: Multi-class (Optional)
 
 ##### The exercise is validated if all questions of the exercise are validated
