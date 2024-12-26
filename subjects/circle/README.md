@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create the structures `Circle` and `Point`. You'll need to create the necessary methods for the code in the [usage](#usage) to compile, and give the expected output.
+Create the structures `Circle` and `Point`. You'll need to create the necessary methods for the code to compile correctly.
 
 #### Methods:
 
@@ -20,7 +20,7 @@ Create the structures `Circle` and `Point`. You'll need to create the necessary 
 
 ### Expected Functions and Structures
 
-This snippets are incomplete, you'll need to complete them. You'll find some useful information in the [usage](#usage).
+This snippet is incomplete, you'll need to complete it. Base yourself from the usage section below.
 
 ```rust
 #[derive(Debug, Clone, Copy)]
