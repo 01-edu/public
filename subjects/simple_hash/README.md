@@ -22,15 +22,13 @@ Here is a program to test your function.
 
 ```rust
 use simple_hash::*;
-use std::collections::HashMap;
+
+const SENTENCE: &str = "this is a very basic sentence with only a few repetitions. once again this is very basic but it should be enough for basic tests";
 
 fn main() {
-    let sentence = "this is a very basic sentence with only few \
-                repetitions. once again this is very basic and \
-                but it should be enough for basic tests".to_string();
-    let words = sentence.split(" ").collect::<Vec<&str>>();
+    let words = SENTENCE.split_ascii_whitespace().collect::<Vec<_>>();
+    let frequency_count = word_frequency_counter(&words);
 
-    let frequency_count = word_frequency_counter(words);
     println!("{:?}", frequency_count);
     println!("{}", nb_distinct_words(&frequency_count));
 }
