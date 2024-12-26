@@ -4,7 +4,7 @@
 
 Define a **function** named `thirtytwo_tens` that returns an array with 32 positions filled with only the value `10`, so that `[10, 10, 10, ... 10].len()` is equal to 32.
 
-Write a **function** that takes an array of `i32` and returns the sum of the elements (make it work with the main).
+Write a **function** that takes an array of `i32` and returns the sum of the elements.
 
 ### Expected functions
 
