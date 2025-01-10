@@ -141,7 +141,7 @@ EOF
     curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh
 
     # NodeJS
-    curl -fsSL https://deb.nodesource.com/setup_20.x | bash && apt-get install -y nodejs
+    curl -fsSL https://deb.nodesource.com/setup_22.x | bash && apt-get install -y nodejs
 
     # Git
     apt-get update && apt-get -y install git
