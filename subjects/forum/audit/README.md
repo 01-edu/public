@@ -1,6 +1,6 @@
 #### Authentication
 
-###### Are an email and a password asked for in the resgistration?
+###### Are an email and a password asked for in the registration?
 
 ###### Does the project detect if the email or password are wrong?
 
