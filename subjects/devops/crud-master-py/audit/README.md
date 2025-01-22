@@ -33,7 +33,7 @@
 }
 ```
 
-###### Can you confirm the response was the success code `201`?
+###### Can you confirm the response was the success code `200`?
 
 ##### In Postman make a `GET` request to `http://[GATEWAY_IP]:[GATEWAY_PORT]/api/movies/` address.
 
