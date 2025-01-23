@@ -1,8 +1,17 @@
-# Training
+## Training
+
+### Overview
 
 Today we will learn how to train and evaluate a machine learning model. You'll learn how to choose the right Machine Learning metric depending on the problem you are solving and to compute it. A metric gives an idea of how good the model performs. Depending on working on a classification problem or a regression problem the metrics considered are different. It is important to understand that all metrics are just metrics, not the truth.
 
-We will focus on the most important metrics:
+### Role Play
+
+You are a machine learning engineer at a tech startup that specializes in predictive analytics for various industries. Your team has been tasked with developing and evaluating machine learning models for two key projects:
+
+1. A real estate price prediction tool for the California housing market.
+2. A medical diagnostics system for breast cancer detection.
+
+### Learning Objectives
 
 - Regression:
   - **R2**, **Mean Square Error**, **Mean Absolute Error**
@@ -40,23 +49,23 @@ _Version of Scikit Learn I used to do the exercises: 0.22_. I suggest to use the
 
 ### Resources
 
-### Metrics
+#### Metrics
 
-- https://www.kdnuggets.com/2018/06/right-metric-evaluating-machine-learning-models-2.html
+- https://medium.com/analytics-vidhya/different-metrics-to-evaluate-the-performance-of-a-machine-learning-model-90acec9e8726
 
-### Imbalance datasets
+#### Imbalance datasets
 
 - https://stats.stackexchange.com/questions/260164/auc-and-class-imbalance-in-training-test-dataset
 
-### Gridsearch
+#### Gridsearch
 
-- https://medium.com/fintechexplained/what-is-grid-search-c01fe886ef0a
-
----
+- https://www.dremio.com/wiki/grid-search/
 
 ---
 
-# Exercise 0: Environment and libraries
+---
+
+### Exercise 0: Environment and libraries
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
@@ -68,13 +77,13 @@ I recommend to use:
 - the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
 - one of the most recent versions of the libraries required
 
-1. Create a virtual environment named `ex00`, with a version of Python >= `3.8`, with the following libraries: `pandas`, `numpy`, `jupyter`, `matplotlib` and `scikit-learn`.
+1. Create a virtual environment named `ex00`, with a version of Python >= `3.9`, with the following libraries: `pandas`, `numpy`, `jupyter`, `matplotlib` and `scikit-learn`.
 
 ---
 
 ---
 
-# Exercise 1: MSE Scikit-learn
+### Exercise 1: MSE Scikit-learn
 
 The goal of this exercise is to learn to use `sklearn.metrics` to compute the mean squared error (MSE).
 
@@ -89,7 +98,7 @@ y_pred = [90, 48, 2, 2, -4]
 
 ---
 
-# Exercise 2: Accuracy Scikit-learn
+### Exercise 2: Accuracy Scikit-learn
 
 The goal of this exercise is to learn to use `sklearn.metrics` to compute the accuracy.
 
@@ -104,7 +113,7 @@ y_true = [0, 0, 1, 1, 1, 1, 0]
 
 ---
 
-# Exercise 3: Regression
+### Exercise 3: Regression
 
 The goal of this exercise is to learn to evaluate a machine learning model using many regression metrics.
 
@@ -146,7 +155,7 @@ pipe.fit(X_train, y_train)
 
 ---
 
-# Exercise 4: Classification
+### Exercise 4: Classification
 
 The goal of this exercise is to learn to evaluate a machine learning model using many classification metrics.
 
@@ -181,13 +190,13 @@ classifier.fit(X_train_scaled, y_train)
 
 [logo_ex4]: ./w2_day4_ex4_q3.png "ROC AUC "
 
-- https://scikit-learn.org/stable/modules/generated/sklearn.metrics.plot_roc_curve.html
+- https://scikit-learn.org/1.1/modules/generated/sklearn.metrics.plot_roc_curve.html
 
 ---
 
 ---
 
-# Exercise 5: Machine Learning models
+### Exercise 5: Machine Learning models
 
 The goal of this exercise is to have an overview of the existing Machine Learning models and to learn to call them from scikit learn.
 We will focus on:
@@ -199,7 +208,7 @@ We will focus on:
 
 All these algorithms exist in two versions: regression and classification. Even if the logic is similar in both classification and regression, the loss function is specific to each case.
 
-It is really easy to get lost among all the existing algorithms. This article is very useful to have a clear overview of the models and to understand which algorithm use and when. https://towardsdatascience.com/how-to-choose-the-right-machine-learning-algorithm-for-your-application-1e36c32400b9
+It is really easy to get lost among all the existing algorithms. This article is very useful to have a clear overview of the models and to understand which algorithm use and when. https://www.geeksforgeeks.org/choosing-a-suitable-machine-learning-algorithm/
 
 Preliminary:
 
@@ -247,7 +256,7 @@ Take time to have basic understanding of the role of the basic hyperparameter an
 
 ---
 
-# Exercise 6: Grid Search
+### Exercise 6: Grid Search
 
 The goal of this exercise is to learn how to make an exhaustive search over specified parameter values for an estimator. This is very useful because the hyperparameter which are the parameters of the model impact the performance of the model.
 
@@ -293,7 +302,7 @@ Ressources:
 
 - https://stackoverflow.com/questions/38555650/try-multiple-estimator-in-one-grid-search
 
-- https://medium.com/fintechexplained/what-is-grid-search-c01fe886ef0a
+- https://www.dremio.com/wiki/grid-search/
 
 - https://elutins.medium.com/grid-searching-in-machine-learning-quick-explanation-and-python-implementation-550552200596
 

@@ -6,7 +6,7 @@
 
 ##### Run `python --version`.
 
-###### Does it print `Python 3.x`? x >= 8
+###### Does it print `Python 3.x`? x >= 9
 
 ##### Do `import jupyter`, `import pandas` and `import spacy` run without any error?
 
@@ -58,7 +58,7 @@
 
 ![alt text][logo]
 
-[logo]: ../w3day05ex1_plot.png 'Plot'
+[logo]: ../w3day05ex1_plot.png "Plot"
 
 ---
 
