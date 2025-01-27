@@ -75,7 +75,8 @@ This project will help you learn about:
 - [Event loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)
 - FPS
 - DOM
-- [Jank/stutter animation](https://murtada.nl/blog/going-jank-free-achieving-60-fps-smooth-websites)
+- [Jank/stutter animation](https://addyosmani.com/blog/making-a-site-jank-free/)
+  - [Example](https://googlechrome.github.io/devtools-samples/jank/)
 - [Transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)/ [opacity](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
 - Tasks
   - JavaScript
