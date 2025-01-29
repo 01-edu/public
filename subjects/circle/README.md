@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create the structures `Circle` and `Point`. You'll need to create the necessary methods for the code in the [usage](#usage) to compile, and give the expected output.
+Create the structures `Circle` and `Point`. You'll need to create the necessary methods for the code to compile correctly.
 
 #### Methods:
 
@@ -11,19 +11,19 @@ Create the structures `Circle` and `Point`. You'll need to create the necessary 
 - `Circle`:
   - `diameter()` -> returns the diameter of the circle.
   - `area()` -> returns the area of the circle.
-  - `intersect()` -> which returns `true`, if 2 circles intersect.
+  - `intersect()` -> returns if two circles intersect.
 
 #### Associated Functions
 
 - `Circle`:
-  - `new()` -> receives three 64bit floating point numbers in the following order: x, y and radius (x and y are the coordinates of the center of the new circle). The function returns a new circle.
+  - `new()` -> receives three 64-bit floating point numbers in the following order: x, y and radius (x and y are the coordinates of the center of the new circle). The function returns a new circle.
 
 ### Expected Functions and Structures
 
-This snippets are incomplete, you'll need to complete them. You'll find some useful information in the [usage](#usage).
+This snippet is incomplete, you'll need to complete it. Base yourself from the usage section below.
 
 ```rust
-#[derive(Debug)]
+#[derive(Debug, Clone, Copy)]
 pub struct Circle {
 	pub center //..
 	pub radius //..
@@ -33,10 +33,8 @@ impl Circle {
     // ...
 }
 
-#[derive(Debug)]
-pub struct Point {
-    // ...
-}
+#[derive(Debug, Clone, Copy)]
+pub struct Point(/* */);
 
 impl Point {
     // ...
@@ -48,32 +46,30 @@ impl Point {
 Here is a program to test your function
 
 ```rust
-use std::f64::consts;
-use circle::{Circle, Point};
+use circle::*;
 
 fn main() {
-	let circle = Circle::new(500.0, 500.0, 150.0);
-	let circle1 = Circle {
-		center: Point { x: 80.0, y: 115.0 },
-		radius: 30.0,
-	};
-	let point_a = Point { x: 1.0, y: 1.0 };
-	let point_b = Point { x: 0.0, y: 0.0 };
-	println!("circle = {:?} area = {}", circle, circle.area());
-	println!("circle = {:?} diameter = {}", circle, circle.diameter());
-	println!("circle1 = {:?} diameter = {}", circle1, circle1.diameter());
-	println!(
-		"circle and circle1 intersect = {}",
-		circle.intersect(&circle1)
-	);
+    let circle = Circle::new(500.0, 500.0, 150.0);
+    let circle1 = Circle {
+        center: Point(80.0, 115.0),
+        radius: 30.0,
+    };
+    let point_a = Point(1.0, 1.0);
+    let point_b = Point(0.0, 0.0);
+    println!("circle = {:?} area = {}", circle, circle.area());
+    println!("circle = {:?} diameter = {}", circle, circle.diameter());
+    println!("circle1 = {:?} diameter = {}", circle1, circle1.diameter());
+    println!(
+        "circle and circle1 intersect = {}",
+        circle.intersect(circle1)
+    );
 
-	println!(
-		"distance between {:?} and {:?} is {}",
-		point_a,
-		point_b,
-		point_a.distance(&point_b)
-	);
-
+    println!(
+        "distance between {:?} and {:?} is {}",
+        point_a,
+        point_b,
+        point_a.distance(point_b)
+    );
 }
 ```
 
@@ -81,11 +77,11 @@ And its output
 
 ```console
 $ cargo run
-circle = Circle { center: Point { x: 500.0, y: 500.0 }, radius: 150.0 } area = 70685.83470577035
-circle = Circle { center: Point { x: 500.0, y: 500.0 }, radius: 150.0 } diameter = 300
-circle1 = Circle { center: Point { x: 80.0, y: 115.0 }, radius: 30.0 } diameter = 60
+circle = Circle { center: Point(500.0, 500.0), radius: 150.0 } area = 70685.83470577035
+circle = Circle { center: Point(500.0, 500.0), radius: 150.0 } diameter = 300
+circle1 = Circle { center: Point(80.0, 115.0), radius: 30.0 } diameter = 60
 circle and circle1 intersect = false
-distance between Point { x: 1.0, y: 1.0 } and Point { x: 0.0, y: 0.0 } is 1.4142135623730951
+distance between Point(1.0, 1.0) and Point(0.0, 0.0) is 1.4142135623730951
 $
 ```
 
