@@ -1,19 +1,39 @@
-# Neural Networks
+## Neural Networks
 
-Last week you learnt about some Machine Learning algorithms as Random Forest or Gradient Boosting. Neural Networks are another type of Machine Learning algorithms that are intensively used because of their efficiency. Neural networks are a set of algorithms, modeled loosely after the human brain, that are designed to recognize patterns. They interpret sensory data through a kind of machine perception, labeling or clustering raw input. The patterns they recognize are numerical, contained in vectors, into which all real-world data, be it images, sound, text or time series, must be translated. Different types of neural networks exist and are specific to some use-cases. For example CNN for images, RNN or LSTMs for time-series or text, etc ...
+### Overview
 
-Today we will focus on Artificial Neural Networks. The goal is to understand how do the neural networks work, train them on data and understand the challenges of training a neural network. The resources below explain very well the mechanisms behind neural networks, step by step.
+Last week you learned about some Machine Learning algorithms such as Random Forest or Gradient Boosting. Neural Networks are another type of Machine Learning algorithm that is intensively used because of their efficiency. Neural networks are a set of algorithms, modeled loosely after the human brain, that are designed to recognize patterns. They interpret sensory data through a kind of machine perception, labeling, or clustering raw input. The patterns they recognize are numerical, contained in vectors, ...
 
-However the exercises won't cover architectures as RNN, LSTM - used on sequences as time series or text, CNN - used a lot on images processing. One of the projects will require to know how to use the special architectures. To do so, I suggest that you go through this lesson: https://fr.coursera.org/specializations/deep-learning.
+Today we will focus on Artificial Neural Networks. The goal is to understand how neural networks work, train them on data, and understand the challenges of training a neural network. The resources below explain the mechanisms behind neural networks step by step.
 
-### Exercises of the day
+However, the exercises won't cover architectures such as RNNs, LSTMs—used on sequences such as time series or text—or CNNs—used extensively in image processing. One of the projects will require knowledge of these specialized architectures. To prepare, we suggest you search for and deepen your understanding of these concepts.
 
-- Exercise 0: Environment and libraries
-- Exercise 1: The neuron
-- Exercise 2: Neural network
-- Exercise 3: Log loss
-- Exercise 4: Forward propagation
-- Exercise 5: Regression
+### Role Play
+
+Imagine you're a newly hired AI researcher at "NeuroTech Innovations," a cutting-edge startup developing AI solutions for healthcare. Your first major project is to create a neural network that can predict patient outcomes based on various medical parameters.
+
+Your team lead has tasked you with building the foundational components of this AI system. You'll start by implementing a single neuron, then combine multiple neurons into a small network, and finally adapt this network for both classification and regression tasks.
+
+### Learning Objectives
+
+By the end of this quest, you will be able to:
+
+- Implement a single artificial neuron and understand its components (weights, bias, activation function).
+- Combine multiple neurons to create a simple neural network.
+- Implement and understand the importance of loss functions, particularly log loss for classification tasks.
+- Perform forward propagation in a neural network.
+- Adapt a neural network for regression tasks by modifying the output layer.
+- Evaluate the performance of your neural network using appropriate metrics (log loss for classification, MSE for regression).
+- Gain intuition about how neural networks learn from data and make predictions.
+
+### Exercises of the Day
+
+- **Exercise 0:** Environment and libraries
+- **Exercise 1:** The neuron
+- **Exercise 2:** Neural network
+- **Exercise 3:** Log loss
+- **Exercise 4:** Forward propagation
+- **Exercise 5:** Regression
 
 ### Virtual Environment
 
@@ -22,40 +42,32 @@ However the exercises won't cover architectures as RNN, LSTM - used on sequences
 - Jupyter or JupyterLab
 - scikit-learn
 
-_Version of NumPy I used to do the exercises: 1.18.1_.
-I suggest to use the most recent one.
-
-### **Resources**
-
-- https://victorzhou.com/blog/intro-to-neural-networks/
-
-- https://srnghn.medium.com/deep-learning-overview-of-neurons-and-activation-functions-1d98286cf1e4
-
-- https://towardsdatascience.com/machine-learning-for-beginners-an-introduction-to-neural-networks-d49f22d238f9
+_Version of NumPy used for these exercises: 1.18.1_.
+We suggest using the most recent one.
 
 ---
 
 ---
 
-# Exercise 0: Environment and libraries
+### Exercise 0: Environment and libraries
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
 **Note:** For each quest, your first exercise will be to set up the virtual environment with the required libraries.
 
-I recommend to use:
+We recommend to use:
 
-- the **last stable versions** of Python.
-- the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
-- one of the most recent versions of the libraries required
+- The **last stable versions** of Python.
+- The virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
+- One of the most recent versions of the libraries required.
 
-1. Create a virtual environment with a version of Python >= `3.8`, with the following libraries: `numpy` and `jupyter`.
-
----
+1. Create a virtual environment with a version of Python >= `3.9`, with the following libraries: `numpy` and `jupyter`.
 
 ---
 
-# Exercise 1: The neuron
+---
+
+### Exercise 1: The neuron
 
 The goal of this exercise is to understand the role of a neuron and to implement a neuron.
 
@@ -108,13 +120,13 @@ x1 = 2 , x2 = 3 , w1 = 0, w2= 1, b = 4
 
 Note: if you are comfortable with matrix multiplication, feel free to vectorize the operations as done in the article.
 
-https://victorzhou.com/blog/intro-to-neural-networks/
+- [Resource 1](https://victorzhou.com/blog/intro-to-neural-networks/)
 
 ---
 
 ---
 
-# Exercise 2: Neural network
+### Exercise 2: Neural network
 
 The goal of this exercise is to understand how to combine three neurons to form a neural network. A neural network is nothing else than neurons connected together. As shown in the figure the neural network is composed of **layers**:
 
@@ -127,7 +139,7 @@ Notice that the neuron **o1** in the output layer takes as input the output of t
 In exercise 1, you implemented this neuron.
 ![alt text][neuron]
 
-[neuron]: ./w3_day1_neuron.png 'Plot'
+[neuron]: ./w3_day1_neuron.png "Plot"
 
 Now, we add two more neurons:
 
@@ -136,7 +148,7 @@ Now, we add two more neurons:
 
 ![alt text][nn]
 
-[nn]: ./w3_day1_neural_network.png 'Plot'
+[nn]: ./w3_day1_neural_network.png "Plot"
 
 1. Implement the function `feedforward` of the class `OurNeuralNetwork` that takes as input the input data and returns the output y. Return the output for these neurons:
 
@@ -165,7 +177,7 @@ Now, we add two more neurons:
 
 ---
 
-# Exercise 3: Log loss
+### Exercise 3: Log loss
 
 The objective of this exercise is to implement the Log Loss function, which serves as a **loss function** in classification problems. This function quantifies the difference between predicted and actual categorical outcomes, producing lower values for accurate predictions.
 
@@ -185,13 +197,13 @@ This equation calculates Log Loss across all predictions in a dataset, penalizin
         ```
         Check that `log_loss` from `sklearn.metrics` returns the same result
 
-    https://scikit-learn.org/stable/modules/generated/sklearn.metrics.log_loss.html
+- [Resource 2](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.log_loss.html)
 
 ---
 
 ---
 
-# Exercise 4: Forward propagation
+### Exercise 4: Forward propagation
 
 The goal of this exercise is to compute the log loss on the output of the forward propagation. The data used is the tiny data set below.
 
@@ -218,7 +230,7 @@ The goal if the network is to predict the success at the exam given math and che
 
 ---
 
-# Exercise 5: Regression
+### Exercise 5: Regression
 
 The goal of this exercise is to learn to adapt the output layer to regression.
 As a reminder, one of reasons for which the sigmoid is used in classification is because it contracts the output between 0 and 1 which is the expected output range for a probability (W2D2: Logistic regression). However, the output of the regression is not a probability.
@@ -279,3 +291,11 @@ Compute and return the output of the neural network for each of the students. He
 ```
 
 3. Compute the MSE for the 4 students.
+
+### Resources
+
+- [Neural networks](https://victorzhou.com/blog/intro-to-neural-networks/)
+
+- [Deep Learning](https://srnghn.medium.com/deep-learning-overview-of-neurons-and-activation-functions-1d98286cf1e4)
+
+- [Machine Learning](https://towardsdatascience.com/machine-learning-for-beginners-an-introduction-to-neural-networks-d49f22d238f9)

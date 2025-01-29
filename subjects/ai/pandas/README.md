@@ -1,4 +1,16 @@
-# Pandas
+## Pandas
+
+### Overview
+
+This set of exercises focuses on using Pandas, a powerful library for data manipulation and analysis in Python. You'll learn to create and manipulate DataFrames, work with real-world datasets, handle missing values, and perform various data operations. The exercises cover key Pandas functionalities including data loading, cleaning, transformation, and basic analysis.
+
+### Role Play
+
+You are a data analyst at a multinational energy company. Your team has been tasked with analyzing various datasets to improve operational efficiency and customer service.
+
+Your manager emphasizes the importance of clean, efficient code and clear explanations of your methods and findings. You'll need to present your results to both technical team members and non-technical executives, so focus on creating clear visualizations and concise summaries of your insights.
+
+### Learning Objectives
 
 The goal of this day is to understand practical usage of **Pandas**.
 As **Pandas** in intensively used in Data Science, other days of the piscine will be dedicated to it.
@@ -11,11 +23,11 @@ Most of the topics we will cover today are explained and describes with examples
 
 ### Exercises of the day
 
-- Exercice 0: Environment and libraries
-- Exercise 1: Your first DataFrame
-- Exercise 2: Electric power consumption
-- Exercise 3: E-commerce purchases
-- Exercise 4: Handling missing values
+- **Exercise 0:** Environment and libraries
+- **Exercise 1:** Your first DataFrame
+- **Exercise 2:** Electric power consumption
+- **Exercise 3:** E-commerce purchases
+- **Exercise 4:** Handling missing values
 
 ### Virtual Environment
 
@@ -24,34 +36,14 @@ Most of the topics we will cover today are explained and describes with examples
 - Pandas
 - Jupyter or JupyterLab
 
-_Version of Pandas I used to do the exercises: 1.0.1_.
-I suggest to use the most recent one.
-
-### Resources
-
-- If I had to give you one resource it would be this one:
-
-https://bedford-computing.co.uk/learning/wp-content/uploads/2015/10/Python-for-Data-Analysis.pdf
-
-It contains ALL you need to know about Pandas.
-
-- Pandas documentation:
-
-  - https://pandas.pydata.org/docs/
-
-  - https://jakevdp.github.io/PythonDataScienceHandbook/
-
-  - https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
-
-  - https://www.learndatasci.com/tutorials/python-pandas-tutorial-complete-introduction-for-beginners/
-
-  - https://jakevdp.github.io/PythonDataScienceHandbook/03.04-missing-values.html
+_Version of Pandas we used to do the exercises: 1.0.1_.
+We suggest using the most recent one.
 
 ---
 
 ---
 
-# Exercise 0: Environment and libraries
+### Exercise 0: Environment and libraries
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
@@ -63,13 +55,13 @@ I recommend to use:
 - the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
 - one of the most recent versions of the libraries required
 
-1. Create a virtual environment named `ex00`, with a version of Python >= `3.8`, with the following libraries: `pandas`, `numpy` and `jupyter`.
+1. Create a virtual environment named `ex00`, with a version of Python >= `3.9`, with the following libraries: `pandas`, `numpy` and `jupyter`.
 
 ---
 
 ---
 
-# Exercise 1: Your first DataFrame
+### Exercise 1: Your first DataFrame
 
 The goal of this exercise is to learn to create basic Pandas objects.
 
@@ -92,7 +84,7 @@ The goal of this exercise is to learn to create basic Pandas objects.
 
 ---
 
-# Exercise 2: Electric power consumption
+### Exercise 2: Electric power consumption
 
 The goal of this exercise is to learn to manipulate real data with Pandas.
 
@@ -121,7 +113,7 @@ The data set used is [**Individual household electric power consumption**](https
 
 ---
 
-# Exercise 3: E-commerce purchases
+### Exercise 3: E-commerce purchases
 
 The goal of this exercise is to learn to manipulate real data with Pandas. This exercise is less guided since the exercise 2 should have given you a nice introduction.
 
@@ -146,13 +138,13 @@ Questions:
 
 ---
 
-# Exercise 4: Handling missing values
+### Exercise 4: Handling missing values
 
 The goal of this exercise is to learn to handle missing values. In the previous exercise we used the first techniques: filter out the missing values. We were lucky because the proportion of missing values was low. But in some cases, dropping the missing values is not possible because the filtered data set would be too small.
 
 This article explains the different types of missing data and how they should be handled.
 
-https://towardsdatascience.com/data-cleaning-with-python-and-pandas-detecting-missing-values-3e9c6ebcf78b
+- [Resource 1](https://towardsdatascience.com/data-cleaning-with-python-and-pandas-detecting-missing-values-3e9c6ebcf78b)
 
 "**It’s important to understand these different types of missing data from a statistics point of view. The type of missing data will influence how you deal with filling in the missing values.**"
 
@@ -173,3 +165,17 @@ For this exercise, use [this dataset](./data/iris.csv).
 - Bonus questions:
   - Filling the missing values by 0 or the mean of the associated column is common in Data Science. In that case, explain why filling the missing values with 0 or the mean is a bad idea.
   - Find a special row ;-).
+
+### Resources
+
+- [The ultimate Pandas resource](https://bedford-computing.co.uk/learning/wp-content/uploads/2015/10/Python-for-Data-Analysis.pdf)
+
+- [Pandas documentation](https://pandas.pydata.org/docs/)
+
+- [Pandas resource 1](https://jakevdp.github.io/PythonDataScienceHandbook/)
+
+- [Pandas resource 2](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
+
+- [Pandas resource 3](https://www.learndatasci.com/tutorials/python-pandas-tutorial-complete-introduction-for-beginners/)
+
+- [Pandas resource 4](https://jakevdp.github.io/PythonDataScienceHandbook/03.04-missing-values.html)

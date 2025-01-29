@@ -1,38 +1,45 @@
-# Classification
+## Classification
 
-The goal of this day is to understand practical classification with Scikit Learn.
+### Overview
 
-Today we will learn a different approach in Machine Learning: the classification which is a large domain in the field of statistics and machine learning. Generally, it can be broken down in two areas:
+Today's goal is to understand practical classification with Scikit Learn.
 
-- **Binary classification**, where we wish to group an outcome into one of two groups.
-- **Multi-class classification**, where we wish to group an outcome into one of multiple (more than two) groups.
+### Role Play
 
-You may wonder why the approach is different from regression and why we don't use regression and define a threshold from where the class would 1 else 0 - in binary classification.
-The main reason is that the linear regression is sensitive to outliers, hence the treshold would vary depending on the outliers in the data. The article mentioned explains this reason with plots. To keep things simple, we can say that the output needed in classification is a probability to belong to one of the classes. So, by definition the value output by the classification model has to be between 0 and 1. The linear regression can't satisfy this constraint.
+Imagine you're a data scientist working for a cutting-edge medical research company. Your team has been tasked with developing a machine learning model to assist doctors in diagnosing breast cancer. You'll be using logistic regression to classify tumors as benign or malignant based on various features.
 
-In mathematics, there are functions with nice properties that take as input a real (-inf, inf) and output a value between 0 and 1, the most popular of them is the **sigmoid** - which is the inverse function of the logit, hence the name logistic regression.
+### Learning Objectives
 
-Let's take a small example to have a better understanding of the steps needed to perform a logistic regression on a binary data. Let's assume that we want to predict the gender given the people' size (height).
+Today we will learn a different approach in Machine Learning: classification, which is a large domain in the field of statistics and machine learning. Generally, it can be broken down into two areas:
+
+- **Binary classification**, where we group an outcome into one of two categories.
+- **Multi-class classification**, where we group an outcome into one of multiple (more than two) categories.
+
+You may wonder why the approach is different from regression and why we don't use regression and define a threshold where the class would be 1 if the threshold is met, or 0 otherwise—in binary classification. The main reason is that linear regression is sensitive to outliers, causing the threshold to vary depending on the outliers in the data. An article explains this concept using plots. To keep things simple, we can say that the output needed in classification is a probability of belonging to one of the classes. By definition, the value output by the classification model must be between 0 and 1. Linear regression cannot satisfy this constraint.
+
+In mathematics, there are functions with nice properties that take as input a real number (-∞, ∞) and output a value between 0 and 1. The most popular of these is the **sigmoid function**, which is the inverse function of the logit—hence the name logistic regression.
+
+Let's take a small example to better understand the steps needed to perform logistic regression on binary data. Let's assume that we want to predict gender based on people's size (height).
 
 Logistic regression steps:
 
-- Fit a sigmoid on the training data
-- Compute sigmoid(size)=0.7 because the sigmoid returns values between 0 and 1
-- Return the class: 0.7 > 0.5 => class 1. Thus, the gender is male
+- Fit a sigmoid function on the training data.
+- Compute sigmoid(size)=0.7 because the sigmoid returns values between 0 and 1.
+- Return the class: 0.7 > 0.5 => class 1. Thus, the gender is male.
 
-For the linear regression exercises, the loss (Mean Square Error - MSE) is minimized with an algorithm called **gradient descent**. In the classification, the loss MSE can't be used because the output of the model is 0 or 1 (for binary classification).
+For linear regression exercises, the loss (Mean Squared Error - MSE) is minimized using an algorithm called **gradient descent**. In classification, MSE loss cannot be used because the model's output is 0 or 1 (for binary classification).
 
-The **logloss** or **cross entropy** is the loss used for classification. Similarly, it has some nice mathematical properties. The minimization of the **logloss** is not covered in the exercises. However, since it is used in most machine learning models for classification, I recommend to spend some time reading the related article.
+The **log-loss** or **cross-entropy** is the loss used for classification. Similarly, it has some nice mathematical properties. Minimizing the **log-loss** is not covered in these exercises. However, since it is used in most machine learning models for classification, I recommend spending some time reading the related article.
 
-### Exercises of the day
+### Exercises of the Day
 
-- Exercise 0: Environment and libraries
-- Exercise 1: Logistic regression with Scikit-learn
-- Exercise 2: Sigmoid
-- Exercise 3: Decision boundary
-- Exercise 4: Train test split
-- Exercise 5: Breast Cancer prediction
-- Exercise 6 Multi-class (**Optional**)
+- **Exercise 0:** Environment and libraries
+- **Exercise 1:** Logistic regression with Scikit-learn
+- **Exercise 2:** Sigmoid
+- **Exercise 3:** Decision boundary
+- **Exercise 4:** Train-test split
+- **Exercise 5:** Breast cancer prediction
+- **Exercise 6:** Multi-class (**Optional**)
 
 ### Virtual Environment
 
@@ -43,43 +50,31 @@ The **logloss** or **cross entropy** is the loss used for classification. Simila
 - Scikit Learn
 - Jupyter or JupyterLab
 
-_Version of Scikit Learn I used to do the exercises: 0.22_. I suggest to use the most recent one. Scikit Learn 1.0 is finally available after ... 14 years.
-
-### **Resources**
-
-### Logistic regression
-
-- https://towardsdatascience.com/understanding-logistic-regression-9b02c2aec102
-
-### Logloss
-
-- https://towardsdatascience.com/cross-entropy-for-classification-d98e7f974451
-
-- https://medium.com/swlh/what-is-logistic-regression-62807de62efa
+_Version of Scikit Learn used for these exercises: 0.22. We suggest using the most recent version. Scikit Learn 1.0 is finally available after 14 years._
 
 ---
 
 ---
 
-# Exercise 0: Environment and libraries
+### Exercise 0: Environment and libraries
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
-**Note:** For each quest, your first exercice will be to set up the virtual environment with the required libraries.
+**Note:** For each quest, your first exercise will be to set up the virtual environment with the required libraries.
 
-I recommend to use:
+We recommend using:
 
-- the **last stable versions** of Python.
-- the virtual environment you're the most confortable with. `virtualenv` and `conda` are the most used in Data Science.
-- one of the most recents versions of the libraries required
+- The **last stable versions** of Python.
+- The virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
+- One of the most recent versions of the libraries required.
 
-1. Create a virtual environment named `ex00`, with a version of Python >= `3.8`, with the following libraries: `pandas`, `numpy`, `jupyter`, `matplotlib` and `scikit-learn`.
-
----
+1. Create a virtual environment named `ex00`, with a version of Python >= `3.9`, with the following libraries: `pandas`, `numpy`, `jupyter`, `matplotlib` and `scikit-learn`.
 
 ---
 
-# Exercise 1: Logistic regression in Scikit-learn
+---
+
+### Exercise 1: Logistic regression in Scikit-learn
 
 The goal of this exercise is to learn to use Scikit-learn to classify data.
 
@@ -98,7 +93,7 @@ y = [0,0,0,1,1,1,0]
 
 ---
 
-# Exercise 2: Sigmoid
+### Exercise 2: Sigmoid
 
 The goal of this exercise is to learn to compute and plot the sigmoid function.
 
@@ -120,11 +115,11 @@ The plot should look like this:
 
 ---
 
-# Exercise 3: Decision boundary
+### Exercise 3: Decision boundary
 
 The goal of this exercise is to learn to fit a logistic regression on simple examples and to understand how the algorithm separated the data from the different classes.
 
-## 1 dimension
+#### 1 dimension
 
 First, we will start as usual with features data in 1 dimension. Use `make classification` from Scikit-learn to generate 100 data points:
 
@@ -191,7 +186,7 @@ def predict_probability(coefs, X):
 
 [ex3q6]: ./w2_day2_ex3_q5.png "Scatter plot + Logistic regression + predictions"
 
-## 2 dimensions
+#### 2 dimensions
 
 Now, let us repeat this process on 2-dimensional data. The goal is to focus on the decision boundary and to understand how the Logistic Regression create a line that separates the data. The code to plot the decision boundary is provided, however it is important to understand the way it works.
 
@@ -241,13 +236,13 @@ ax.set(aspect="equal",
 
 The plot should look like this:
 
-- https://stackoverflow.com/questions/28256058/plotting-decision-boundary-of-logistic-regression
+- [Plot](https://stackoverflow.com/questions/28256058/plotting-decision-boundary-of-logistic-regression)
 
 ---
 
 ---
 
-# Exercise 4: Train test split
+### Exercise 4: Train test split
 
 The goal of this exercise is to learn to split a classification data set. The idea is the same as splitting a regression data set but there's one important detail specific to the classification: the proportion of each class in the train set and test set.
 
@@ -271,7 +266,7 @@ y[70:] = 1
 
 ---
 
-# Exercise 5: Breast Cancer prediction
+### Exercise 5: Breast Cancer prediction
 
 The goal of this exercise is to use Logistic Regression
 to predict breast cancer. It is always important to understand the data before training any Machine Learning algorithm. The data is described in **breast-cancer-wisconsin.names**. I suggest to add manually the column names in the DataFrame.
@@ -291,15 +286,15 @@ Preliminary:
 
 4. Compute the confusion matrix on both tests. Analyse the number of false negative and false positive.
 
-- https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html
+- [confusion_matrix](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html)
 
 - [Database](data/breast-cancer-wisconsin.data) and [database information](data/breast-cancer-wisconsin.names)
 
 ---
+
 ---
 
-
-# Exercise 6: Multi-class (Optional)
+### Exercise 6: Multi-class (Optional)
 
 The goal of this exercise is to learn to train a classification algorithm on a multi-class labelled data.
 Some algorithms as SVM or Logistic Regression do not natively support multi-class (more than 2 classes). There are some approaches that allow to use these algorithms on multi-class data.
@@ -310,7 +305,7 @@ Let's assume we work with 3 classes: A, B and C.
 
 More details:
 
-- https://machinelearningmastery.com/one-vs-rest-and-one-vs-one-for-multi-class-classification/
+- [Multiclass classification](https://medium.com/@agrawalsam1997/multiclass-classification-onevsrest-and-onevsone-classification-strategy-2c293a91571a)
 
 Let's implement the One-vs-Rest approach from `LogisticRegression`.
 
@@ -354,6 +349,14 @@ def predict_one_vs_all(X, clf0, clf1, clf2 ):
        return classes
 ```
 
-- https://randerson112358.medium.com/python-logistic-regression-program-5e1b32f964db
+### Resources
 
-- https://towardsdatascience.com/logistic-regression-using-python-sklearn-numpy-mnist-handwriting-recognition-matplotlib-a6b31e2b166a
+- [Logistic regression](https://towardsdatascience.com/understanding-logistic-regression-9b02c2aec102)
+
+- [Logloss](https://www.datacamp.com/tutorial/the-cross-entropy-loss-function-in-machine-learning)
+
+- [More on logistic regression](https://medium.com/swlh/what-is-logistic-regression-62807de62efa)
+
+- [Logistic regression 1](https://www.kaggle.com/code/rahulrajpandey31/logistic-regression-from-scratch-iris-data-set)
+
+- [Logistic regression 2](https://towardsdatascience.com/logistic-regression-using-python-sklearn-numpy-mnist-handwriting-recognition-matplotlib-a6b31e2b166a)
