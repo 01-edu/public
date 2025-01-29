@@ -6,7 +6,7 @@
 
 ##### Run `python --version`.
 
-###### Does it print `Python 3.x`? x >= 8
+###### Does it print `Python 3.x`? x >= 9
 
 ###### Do `import jupyter`, `import numpy`, `import pandas` and `import keras` run without any error?
 
@@ -130,7 +130,6 @@ model.compile(loss='categorical_crossentropy',
 ---
 
 ---
-
 
 #### Exercise 5: Multi classification example
 
