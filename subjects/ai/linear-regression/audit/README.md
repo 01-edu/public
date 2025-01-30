@@ -1,4 +1,4 @@
-#### Linear regression with Scikit Learn
+#### Linear regression
 
 #### Exercise 0: Environment and libraries
 
@@ -8,7 +8,7 @@
 
 ##### Run `python --version`
 
-###### Does it print `Python 3.x`? x >= 8
+###### Does it print `Python 3.x`? x >= 9
 
 ###### Do `import jupyter`, `import numpy`, `import pandas`, `import matplotlib` and `import sklearn` run without any error?
 

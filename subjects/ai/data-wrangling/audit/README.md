@@ -6,7 +6,7 @@
 
 ##### Run `python --version`.
 
-###### Does it print `Python 3.x`? x >= 8
+###### Does it print `Python 3.x`? x >= 9
 
 ###### Does `import jupyter`, `import numpy` and `import pandas` run without any error?
 
@@ -52,7 +52,7 @@
     |  5 |    6 | nan            | nan            | O              | P              |
     |  6 |    7 | nan            | nan            | Q              | R              |
     |  7 |    8 | nan            | nan            | S              | T              |
- 
+
     Note: Check that the suffixes are set using the suffix parameters rather than manually changing the columns' name.
 
 ---
