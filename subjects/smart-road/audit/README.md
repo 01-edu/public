@@ -26,7 +26,7 @@
 
 ###### Are vehicles generated randomly(random lane and route)?
 
-##### Try to generate tree vehicles in the same lane (do this for all lanes).
+##### Try to generate three vehicles in the same lane (do this for all lanes).
 
 ###### Did all vehicles pass the intersection without any collision?
 
@@ -56,21 +56,21 @@
 
 ##### Try to generate three vehicles that are supposed to collide (vehicles in the collision lane) fo this at least 3 times.
 
-###### Did one of the vehicles tried to avoid the collision, by reducing their velocity?
+###### Did one of the vehicles try to avoid the collision, by reducing their velocity?
 
 ##### Try to generate vehicles randomly using the `"R"` key. Then wait for at least 1 min.
 
 ###### Did all vehicles pass the intersection without any collision?
 
-###### Did the traffic congestion remained low while running the application? (ex: high traffic congestion can be 8 or more vehicles stuck in the same lane)?
+###### Did the traffic congestion remain low while running the application? (ex: high traffic congestion can be 8 or more vehicles stuck in the same lane)?
 
 ##### Try to generate four vehicles using the `"UP"` key to generate two and the `"Right"` key to generate the other two. Then when the vehicles finish passing the intersection, exit the application by using the `"Esc"` key.
+
+###### Did all vehicles pass the intersection without any collision?
 
 ###### Did the application display a window with statistics of the simulation?
 
 ###### And if so, did it display the "Max number of vehicles that passed the intersection" as 4?
-
-###### Did it also display the "Collisions" as 0?
 
 ###### Did it also display the "Max velocity" and the "Min velocity"?
 
@@ -84,7 +84,7 @@
 
 ###### Is the max time equal to the min time?
 
-###### And if so, is the time correct compared from the time you counted?
+###### And if so, is the time correct compared to the time you counted?
 
 #### General
 
