@@ -303,7 +303,7 @@ function deployPlatform() {
     git clone git@github.com-01-edu-all:01-edu/all.git /root/"$serverFQDN"
     cd /root/"$serverFQDN"
     # Generate platform environment file automatically
-    ./gene_env.sh --gen
+    ./gen-env.sh.sh --gen
     ./redeploy.sh --hard
 }
 
