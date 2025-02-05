@@ -106,12 +106,6 @@ EOF
     ufw allow in 8080/tcp
     ufw allow in 8082/tcp
     ufw logging off
-    ufw --force enable
-    ufw --force delete 6
-    ufw --force delete 6
-    ufw --force delete 6
-    ufw --force delete 6
-    ufw --force delete 6
 
     # Optimize
     systemctl disable apt-daily.timer apt-daily-upgrade.timer remote-fs.target man-db.timer
