@@ -21,21 +21,8 @@ You will also need to create a **function** named `check_ms` which accepts a ref
 ##### Expected Function
 
 ```rust
-pub struct Message {
-
-}
-
-impl Message {
-  pub fn new(ms: String, u: String) -> Message {
-
-  }
-  pub fn send_ms(&self) -> Option<&str> {
-
-  }
-}
-
-pub fn check_ms(ms: &Message) -> (bool, &str) {
-
+pub fn check_ms(message: &str) -> Result<&str, &str> {
+    todo!()
 }
 ```
 
@@ -47,28 +34,19 @@ Here is a program to test your function
 use profanity_filter::*;
 
 fn main() {
-  let m0 = Message::new("hello there".to_string(), "toby".to_string());
-  println!("{:?}", check_ms(&m0));
-
-  let m1 = Message::new("".to_string(), "toby".to_string());
-  println!("{:?}", check_ms(&m1));
-
-  let m2 = Message::new("you are stupid".to_string(), "toby".to_string());
-  println!("{:?}", check_ms(&m2));
-
-  let m3 = Message::new("stupid".to_string(), "toby".to_string());
-  println!("{:?}", check_ms(&m3));
-}
+    ["hello there", "", "you are stupid", "stupid"]
+        .into_iter()
+        .for_each(|m| println!("{:?}", profanity_filter::check_ms(m)));}
 ```
 
 And its output:
 
 ```console
 $ cargo run
-(true, "hello there")
-(false, "ERROR: illegal")
-(false, "ERROR: illegal")
-(false, "ERROR: illegal")
+Ok("hello there")
+Err("ERROR: illegal")
+Err("ERROR: illegal")
+Err("ERROR: illegal")
 $
 ```
 
