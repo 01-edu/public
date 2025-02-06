@@ -2,18 +2,22 @@
 
 ### Instructions
 
-Create a **function** named `open_or_create` which has two arguments:
+Create a **function** `open_or_create` with two arguments:
 
-- `file : &str`: which represents a file path.
-- `content: &str` which will be the content to be written to the file.
+- `file`, which represents a file path.
+- `content`, which represents the content to be written to the file.
 
-This function should try to open a file. If it does not exist, the file should be created.
-In case something goes wrong, it should panic, with the error.
+This function should try to open the file. If it does not exist, the file should be created.
+The content should be appended to the file. This means it shouldn't replace whatever content is inside, but append to it.
+Should anything go wrong, the function should panic.
 
 ### Expected Function
 
 ```rust
-pub fn open_or_create(file: &str, content: &str) {
+use std::path::Path;
+
+pub fn open_or_create<P: AsRef<Path>>(path: &P, content: &str) {
+    todo!()
 }
 ```
 
@@ -22,20 +26,15 @@ pub fn open_or_create(file: &str, content: &str) {
 Here is a program to test your function
 
 ```rust
-use std::fs::File;
-use std::io::Read;
-use handling::*;
+use std::fs;
 
 fn main() {
     let path = "a.txt";
-    File::create(path).unwrap();
-    open_or_create(path, "content to be written");
 
-    let mut file = File::open(path).unwrap();
+    handling::open_or_create(&path, "content to be written\n");
 
-    let mut s = String::new();
-    file.read_to_string(&mut s).unwrap();
-    println!("{}", s);
+    let contents = fs::read_to_string(path).unwrap();
+    println!("{}", contents);
 }
 ```
 
@@ -49,6 +48,6 @@ $
 
 ### Notions
 
-- [Error kind](https://doc.rust-lang.org/std/io/enum.ErrorKind.html)
-- [struct file](https://doc.rust-lang.org/std/fs/struct.File.html)
-- [OPenOptions](https://doc.rust-lang.org/std/fs/struct.OpenOptions.html)
+- [ErrorKind](https://doc.rust-lang.org/std/io/enum.ErrorKind.html)
+- [File](https://doc.rust-lang.org/std/fs/struct.File.html)
+- [OpenOptions](https://doc.rust-lang.org/std/fs/struct.OpenOptions.html)
