@@ -36,10 +36,10 @@ Sessions and cookies were implemented in the [previous project](../README.md) bu
 ### Allowed packages
 
 - All [standard Go](https://golang.org/pkg/) packages are allowed.
+- [autocert](https://pkg.go.dev/golang.org/x/crypto/acme/autocert)
 - [sqlite3](https://github.com/mattn/go-sqlite3)
 - [bcrypt](https://pkg.go.dev/golang.org/x/crypto/bcrypt)
-- [UUID](https://github.com/gofrs/uuid)
-- [autocert](https://pkg.go.dev/golang.org/x/crypto/acme/autocert)
+- [gofrs/uuid](https://github.com/gofrs/uuid) or [google/uuid](https://github.com/google/uuid)
 
 This project will help you learn about :
 
