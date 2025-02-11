@@ -26,10 +26,10 @@ To help with the display of the typing in progress you can take a look on the js
 ### Allowed Packages
 
 - All [standard go](https://golang.org/pkg/) packages are allowed.
-- [Gorilla](https://pkg.go.dev/github.com/gorilla/websocket) websocket
+- [Gorilla websocket](https://pkg.go.dev/github.com/gorilla/websocket)
 - [sqlite3](https://github.com/mattn/go-sqlite3)
 - [bcrypt](https://pkg.go.dev/golang.org/x/crypto/bcrypt)
-- [UUID](https://github.com/gofrs/uuid)
+- [gofrs/uuid](https://github.com/gofrs/uuid) or [google/uuid](https://github.com/google/uuid)
 
 This project will help you learn about:
 

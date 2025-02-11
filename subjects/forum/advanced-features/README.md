@@ -32,4 +32,4 @@ We encourage you to add any other additional features that you find relevant.
 - All [standard go](https://golang.org/pkg/) packages are allowed.
 - [sqlite3](https://github.com/mattn/go-sqlite3)
 - [bcrypt](https://pkg.go.dev/golang.org/x/crypto/bcrypt)
-- [UUID](https://github.com/gofrs/uuid)
+- [gofrs/uuid](https://github.com/gofrs/uuid) or [google/uuid](https://github.com/google/uuid)
