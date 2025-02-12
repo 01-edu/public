@@ -36,5 +36,5 @@ We encourage you to add any other additional features that you find relevant.
 
 This project will help you learn about:
 
-- Real-time Notifications
-- Activity Tracking
+- Real-time notifications
+- Users activity tracking
