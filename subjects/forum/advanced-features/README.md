@@ -33,3 +33,8 @@ We encourage you to add any other additional features that you find relevant.
 - [sqlite3](https://github.com/mattn/go-sqlite3)
 - [bcrypt](https://pkg.go.dev/golang.org/x/crypto/bcrypt)
 - [UUID](https://github.com/gofrs/uuid)
+
+This project will help you learn about:
+
+- Real-time Notifications
+- Activity Tracking
