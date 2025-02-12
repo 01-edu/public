@@ -17,13 +17,13 @@ You will have to create a Facebook-like social network that will contain the fol
 
 Frontend development is the art of creating sites and web applications that render on the "client-side". It includes everything that users experience directly: text colors and styles, images, graphs and tables, buttons, colors, and navigation menus. It focuses on making requests to the backend in order to get specific chunks of data to be used or send data to be stored on the backend.
 
-HTML, CSS, and Javascript are the languages used for frontend development. Responsiveness and performance are two main objectives of the frontend. Frontend frameworks may be used to simplify a developers work.
+HTML, CSS, and Javascript are the languages used for frontend development. Responsiveness and performance are two main objectives of the frontend. Frontend frameworks may be used to simplify a developer's work.
 
 #### Framework
 
 You will have to use a JS framework. It is up to you to choose which one you are going to use.
 
-Frameworks will help you to organize and implement the features you want on your project, so that you can get more work done in a easier and faster way.
+Frameworks will help you to organize and implement the features you want on your project, so that you can get more work done in an easier and faster way.
 
 Some of the most known JS frameworks around are:
 
