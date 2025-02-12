@@ -25,5 +25,5 @@ Some examples of authentication means are:
 
 This project will help you learn about:
 
-- Sessions and cookies.
-- Protecting routes.
+- Sessions and cookies
+- Protecting routes
