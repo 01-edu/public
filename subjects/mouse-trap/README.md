@@ -1,10 +1,11 @@
-****## Mouse trap
+## Mouse trap
 
 ### Instructions
 
 Develop a trap to capture the elements when the mouse is getting too close to the center of the page.
 
 Create the following functions:
+
 - `createCircle`: make it fire on every click on the page, and create a `div` at the position of the mouse on the screen, setting its `background` to `white` and its class to `circle`.
 
 - `moveCircle`: make it fire when the mouse moves, and get the last circle created and makes it move along with the mouse.
@@ -17,7 +18,7 @@ Create the following functions:
 
 ### Files
 
-You only need to create & submit the JS file `mouse-trap.js`; we're providing you the following file to download and test locally:
+You only need to create & submit the JS file `mouse-trap.js`, we're providing you the following files to download and test locally:
 
 - the HTML file [mouse-trap.html](./mouse-trap.html) to open in the browser, which includes:
 

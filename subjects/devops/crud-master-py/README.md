@@ -284,13 +284,13 @@ a common way to structure this kind of projects that may help you:
 │   │   │   ├── __init__.py
 │   │   │   └── ...             // Other python files
 │   │   ├── requirements.txt
-│   │   └── server.js
+│   │   └── server.py
 │   ├── billing-app
 │   │   ├── app
 │   │   │   ├── __init__.py
 │   │   │   └── ...             // Other python files
 │   │   ├── requirements.txt
-│   │   └── server.js
+│   │   └── server.py
 │   └── inventory-app
 │   │   ├── app
 │   │   │   ├── __init__.py
@@ -302,7 +302,7 @@ a common way to structure this kind of projects that may help you:
 
 When testing and before automating it through the VM build you should be able
 to start the API Gateway and the two APIs by using the command `python
-server.js` inside their respective directories.
+server.py` inside their respective directories.
 
 As a best practice, you should develop your APIs using separates python virtual
 environments to isolate the requirements needed for each API. You can use

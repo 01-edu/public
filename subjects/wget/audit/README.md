@@ -24,7 +24,7 @@
 
 ###### Did the program displayed the name and path of the file that was saved?
 
-##### Try to download a big file, for example: `./wget http://ipv4.download.thinkbroadband.com/100MB.zip`
+##### Try to download a big file, for example: `./wget https://assets.01-edu.org/wgetDataSamples/Sample.zip`
 
 ###### Did the program download the expected file?
 
@@ -36,39 +36,39 @@
 
 ###### While downloading, did the progress bar progressed smoothly (kept up with the time that the download took to finish)?
 
-##### Try to run the following command, `./wget -O=test_20MB.zip http://ipv4.download.thinkbroadband.com/20MB.zip`
+##### Try to run the following command, `./wget -O=test_20MB.zip https://assets.01-edu.org/wgetDataSamples/20MB.zip`
 
 ###### Did the program downloaded the file with the name `test_20MB.zip`?
 
-##### Try to run the following command, `./wget -O=test_20MB.zip -P=~/Downloads/ http://ipv4.download.thinkbroadband.com/20MB.zip`
+##### Try to run the following command, `./wget -O=test_20MB.zip -P=~/Downloads/ https://assets.01-edu.org/wgetDataSamples/20MB.zip`
 
 ###### Can you see the expected file in the "~/Downloads/" folder?
 
-##### Try to run the following command, `./wget --rate-limit=300k http://ipv4.download.thinkbroadband.com/20MB.zip`
+##### Try to run the following command, `./wget --rate-limit=300k https://assets.01-edu.org/wgetDataSamples/20MB.zip`
 
 ###### Was the download speed always lower than 300KB/s?
 
-##### Try to run the following command, `./wget --rate-limit=700k http://ipv4.download.thinkbroadband.com/20MB.zip`
+##### Try to run the following command, `./wget --rate-limit=700k https://assets.01-edu.org/wgetDataSamples/20MB.zip`
 
 ###### Was the download speed always lower than 700KB/s?
 
-##### Try to run the following command, `./wget --rate-limit=2M http://ipv4.download.thinkbroadband.com/20MB.zip`
+##### Try to run the following command, `./wget --rate-limit=2M https://assets.01-edu.org/wgetDataSamples/20MB.zip`
 
 ###### Was the download speed always lower than 2MB/s?
 
 ##### Try to create a text file with the name `downloads.txt` and save into it the links below. Then run the command `./wget -i=downloads.txt`
 
 ```
-https://pbs.twimg.com/media/EMtmPFLWkAA8CIS.jpg
-http://ipv4.download.thinkbroadband.com/20MB.zip
-http://ipv4.download.thinkbroadband.com/10MB.zip
+https://assets.01-edu.org/wgetDataSamples/Image_20MB.zip
+https://assets.01-edu.org/wgetDataSamples/20MB.zip
+https://assets.01-edu.org/wgetDataSamples/Image_10MB.zip
 ```
 
 ###### Did the program download all the files from the downloads.txt file? (EMtmPFLWkAA8CIS.jpg, 20MB.zip, 10MB.zip)
 
 ###### Did the downloads occurred in an asynchronous way? (tip: look to the download order)
 
-##### Try to run the following command, `./wget -B http://ipv4.download.thinkbroadband.com/20MB.zip`
+##### Try to run the following command, `./wget -B https://assets.01-edu.org/wgetDataSamples/20MB.zip`
 
 ```
 Output will be written to ‘wget-log’.
@@ -133,6 +133,6 @@ css  index.html
 
 #### Bonus
 
-###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
+###### +Does the project run quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
 
 ###### +Does the code obey the [good practices](https://public.01-edu.org/subjects/good-practices/README.md)?

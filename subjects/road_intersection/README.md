@@ -19,6 +19,7 @@ You must create an environment which contains all the objects described in this 
 You will create two roads which cross each other to create an intersection. Each road will have **one lane** in each direction.
 
 Traffic entering the intersection will be able to select a route by:
+
 - turning left
 - turning right
 - continuing on straight
@@ -107,7 +108,6 @@ You can implement the following optional features:
 
   - [limezu](https://limezu.itch.io/)
   - [finalbossblue](http://finalbossblues.com/timefantasy/free-graphics/).
-  - [mobilegamegraphics](https://mobilegamegraphics.com/product-category/all_products/freestuff/).
   - [spriters-resource](https://www.spriters-resource.com/).
 
 ### Notions

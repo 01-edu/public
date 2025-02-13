@@ -8,7 +8,7 @@
 
 ##### Run `python --version`
 
-###### Does it print `Python 3.8.x`? x could be any number from 0 to 9
+###### Does it print `Python 3.x`? x >= 9
 
 ###### Does `import jupyter` and `import numpy` run without any error?
 

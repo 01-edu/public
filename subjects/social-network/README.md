@@ -171,8 +171,8 @@ After a user is logged in he/she can create posts and comments on already create
 The user must be able to specify the privacy of the post:
 
 - public (all users in the social network will be able to see the post)
-- private (only followers of the creator of the post will be able to see the post)
-- almost private (only the followers chosen by the creator of the post will be able to see it)
+- almost private (only followers of the creator of the post will be able to see the post)
+- private (only the followers chosen by the creator of the post will be able to see it)
 
 ---
 
@@ -203,7 +203,7 @@ After creating the event every user can choose one of the options for the event.
 
 Users should be able to send private messages to other users that they are following or being followed, in other words, at least one of the users must be following the other.
 
-When a user sends a message, the recipient will instantly receive it through Websockets if they are following the sender or if the sender has a public profile.
+When a user sends a message, the recipient will instantly receive it through Websockets if they are following the sender or if the recipient has a public profile.
 
 It should be able for the users to send emojis to each other.
 

@@ -1,4 +1,4 @@
-#### Emotion detector
+#### Emotions detector
 
 ##### Preliminary
 
@@ -12,7 +12,7 @@
 
 #### CNN emotion classifier
 
-###### Is the model trained only the training set?
+###### Is the model trained only with the training set?
 
 ###### Is the accuracy on the test set higher than 60%?
 
@@ -85,6 +85,6 @@ This part is validated if:
 
 Here are three resources that detail similar approaches:
 
-- https://github.com/XC-Li/Facial_Expression_Recognition/tree/master/Code/RAFDB
-- https://github.com/karansjc1/emotion-detection/tree/master/with%20flask
-- https://www.kaggle.com/drbeanesp21/aliaj-final-facial-expression-recognition (simplified)
+- [Resource 1](https://github.com/XC-Li/Facial_Expression_Recognition/tree/master/Code/RAFDB)
+- [Resource 2](https://github.com/karansjc1/emotion-detection/tree/master/with%20flask)
+- [Resource 3](https://www.kaggle.com/drbeanesp21/aliaj-final-facial-expression-recognition) (simplified)

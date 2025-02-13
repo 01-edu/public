@@ -1,20 +1,28 @@
-# Time Series
+## Time Series
+
+### Overview
 
 Time series data are data that are indexed by a sequence of dates or times. Today, you'll learn how to use methods built into Pandas to work with this index. You'll also learn for instance:
 
-- to resample time series to change the frequency
-- to calculate rolling and cumulative values for times series
-- to build a backtest
+- To resample time series to change the frequency.
+- To calculate rolling and cumulative values for times series.
+- To build a backtest.
+
+### Role Play
+
+You are a quantitative analyst at a prominent hedge fund. Your team is responsible for developing and testing trading strategies using historical financial data. Your manager has assigned you a project to analyze time series data, particularly focusing on Apple stock, and to backtest a simple trading strategy.
+
+### Learning Objectives
 
 Time series a used A LOT in finance. You'll learn to evaluate financial strategies using Pandas. It is important to keep in mind that Python is vectorized. That's why some questions constraint you to not use a for loop ;-).
 
 ### Exercises of the day
 
-- Exercise 0: Environment and libraries
-- Exercise 1: Series
-- Exercise 2: Financial data
-- Exercise 3: Multi asset returns
-- Exercise 4: Backtest
+- **Exercise 0:** Environment and libraries
+- **Exercise 1:** Series
+- **Exercise 2:** Financial data
+- **Exercise 3:** Multi asset returns
+- **Exercise 4:** Backtest
 
 ### Virtual Environment
 
@@ -24,26 +32,14 @@ Time series a used A LOT in finance. You'll learn to evaluate financial strategi
 - Plotly
 - Jupyter or JupyterLab
 
-_Version of Pandas I used to do the exercises: 1.0.1_.
-I suggest to use the most recent one.
-
-### Resources
-
-- https://jakevdp.github.io/PythonDataScienceHandbook/
-
-- https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
-
-- https://www.learndatasci.com/tutorials/python-pandas-tutorial-complete-introduction-for-beginners/
-
-- https://towardsdatascience.com/different-ways-to-iterate-over-rows-in-a-pandas-dataframe-performance-comparison-dc0d5dcef8fe
-
-- Datafile [`AAPL.csv`](data/AAPL.csv)
+_Version of Pandas used to do the exercises: 1.0.1_.
+We suggest to use the most recent one.
 
 ---
 
 ---
 
-# Exercise 0: Environment and libraries
+### Exercise 0: Environment and libraries
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
@@ -55,13 +51,13 @@ I recommend to use:
 - the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
 - one of the most recent versions of the libraries required
 
-1. Create a virtual environment named `ex00`, with a version of Python >= `3.8`, with the following libraries: `pandas`, `numpy` and `jupyter`.
+1. Create a virtual environment named `ex00`, with a version of Python >= `3.9`, with the following libraries: `pandas`, `numpy` and `jupyter`.
 
 ---
 
 ---
 
-# Exercise 1: Series
+### Exercise 1: Series
 
 The goal of this exercise is to learn to manipulate time series in Pandas.
 
@@ -73,7 +69,7 @@ The goal of this exercise is to learn to manipulate time series in Pandas.
 
 ---
 
-# Exercise 2: Financial data
+### Exercise 2: Financial data
 
 This exercise aims to familiarize you with handling financial data using Pandas, particularly focusing on time series analysis and computations related to stock prices.
 
@@ -97,7 +93,7 @@ There are two recommended methods: utilizing the `pct_change` function and imple
 
 ---
 
-# Exercise 3: Multi asset returns
+### Exercise 3: Multi asset returns
 
 The goal of this exercise is to learn to compute daily returns on a DataFrame that contains many assets (multi-assets).
 
@@ -136,7 +132,7 @@ Note: The data is generated randomly, the values you may have lead to a differen
 
 ---
 
-# Exercise 4: Backtest
+### Exercise 4: Backtest
 
 The goal of this exercise is to learn to perform a backtest in Pandas. A backtest is a tool that allows you to know how a strategy would have performed retrospectively using historical data. In this exercise we will focus on the backtesting tool and not on how to build the best strategy.
 
@@ -180,4 +176,16 @@ We will backtest a **long only** strategy on Apple Inc. Long only means that we 
 
 5. Now the input signal is: **always buy**. Compute the daily PnL and the total PnL. Plot the daily PnL of Q5 and of Q3 on the same plot
 
-- https://www.investopedia.com/terms/b/backtesting.asp
+### Resources
+
+- [Resource 1](https://jakevdp.github.io/PythonDataScienceHandbook/)
+
+- [Resource 2](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
+
+- [Resource 3](https://www.learndatasci.com/tutorials/python-pandas-tutorial-complete-introduction-for-beginners/)
+
+- [Resource 4](https://towardsdatascience.com/different-ways-to-iterate-over-rows-in-a-pandas-dataframe-performance-comparison-dc0d5dcef8fe)
+
+- [Resource 5](https://www.investopedia.com/terms/b/backtesting.asp)
+
+- Datafile [`AAPL.csv`](data/AAPL.csv)

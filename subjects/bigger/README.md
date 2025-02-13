@@ -16,18 +16,21 @@ pub fn bigger(h: HashMap<&str, i32>) -> i32 {
 Here is a program to test your function.
 
 ```rust
+use bigger::*;
 use std::collections::HashMap;
-use bigger::bigger;
 
 fn main() {
+    let hash = HashMap::from_iter([
+        ("Daniel", 122),
+        ("Ashley", 333),
+        ("Katie", 334),
+        ("Robert", 14),
+    ]);
 
-    let mut hash = HashMap::new();
-    hash.insert("Daniel", 122);
-    hash.insert("Ashley", 333);
-    hash.insert("Katie", 334);
-    hash.insert("Robert", 14);
-
-    println!("The biggest of the elements in the HashMap is {}", bigger(hash));
+    println!(
+        "The biggest of the elements in the HashMap is {}",
+        bigger(hash)
+    );
 }
 ```
 

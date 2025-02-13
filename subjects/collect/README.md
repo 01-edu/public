@@ -2,12 +2,12 @@
 
 ### Instructions
 
-Implement the **function** `bubble_sort`, which receives a `Vec<i32>` and returns the same vector but in increasing order using the bubble sort algorithm.
+Implement the **function** `bubble_sort`, which receives a list of integers and sorts it in increasing order using the bubble sort algorithm.
 
 ### Expected Function
 
 ```rust
-pub fn bubble_sort(vec: &mut Vec<i32>) {
+pub fn bubble_sort(arr: &mut [i32]) {
 }
 ```
 
@@ -19,13 +19,14 @@ Here is a program to test your function.
 use collect::*;
 
 fn main() {
-	let ref mut v = vec![3, 2, 4, 5, 1, 7];
-	let mut b = v.clone();
-	bubble_sort(v);
-	println!("{:?}", v);
+    let mut v = [3, 2, 4, 5, 1, 7];
+    let mut v_clone = v;
 
-	b.sort();
-	println!("{:?}", b);
+    bubble_sort(&mut v);
+    println!("{:?}", v);
+
+    v_clone.sort_unstable();
+    println!("{:?}", v_clone);
 }
 ```
 

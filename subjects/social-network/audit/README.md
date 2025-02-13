@@ -128,9 +128,9 @@
 
 ##### Try creating a post.
 
-###### Can you specify the type of privacy of the post (private, public, almost private)?
+###### Can you specify the type of privacy of the post (public, almost private, private)?
 
-###### If you choose the almost private privacy option, can you specify the users that are allowed to see the post?
+###### If you choose the private privacy option, can you specify the users that are allowed to see the post?
 
 ##### Groups
 

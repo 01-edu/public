@@ -84,7 +84,7 @@ For the forum project you must use Docker. You can read about docker basics in t
 - [bcrypt](https://pkg.go.dev/golang.org/x/crypto/bcrypt)
 - [UUID](https://github.com/gofrs/uuid)
 
-> You must not use use any frontend libraries or frameworks like React, Angular, Vue etc.
+> You must not use any frontend libraries or frameworks like React, Angular, Vue etc.
 
 This project will help you learn about:
 
