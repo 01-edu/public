@@ -25,7 +25,7 @@ An associated **type** called `Callback` will also be provided. It should repres
 A second structure named `FlagsHandler` will be given which just has one element: `flags: HashMap<(String, String), Callback>`. You'll also need to implement the following associated **functions**:
 
 - `add_flag`, which adds the flag and callback function to the HashMap.
-- `exec_func`, which executes the function using the flag provided and returns the result. Return either the result from the callback or the error stringified.
+- `exec_func`, which executes the function using the flag provided and returns the result. The callback should be executed with the first two arguments of the supplied `argv` argument. Return either the successful result from the callback or the error stringified.
 
 You will have to create the following callback functions:
 - `div`: which converts the reference strings to `f64`s and returns the `Result`, as the division of these floats or the error `ParseFloatError`.
