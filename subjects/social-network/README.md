@@ -224,7 +224,9 @@ A user should be notified if he/she:
 
 Every other notification created by you that isn't on the list is welcomed too.
 
-#### Allowed Packages
+---
+
+### Allowed Packages
 
 - The [standard Go](https://golang.org/pkg/) packages are allowed
 - [Gorilla](https://pkg.go.dev/github.com/gorilla/websocket) websocket
@@ -233,7 +235,7 @@ Every other notification created by you that isn't on the list is welcomed too.
 - [migration](https://pkg.go.dev/github.com/Boostport/migration)
 - [sqlite3](https://github.com/mattn/go-sqlite3)
 - [bcrypt](https://pkg.go.dev/golang.org/x/crypto/bcrypt)
-- [UUID](https://github.com/gofrs/uuid)
+- [gofrs/uuid](https://github.com/gofrs/uuid) or [google/uuid](https://github.com/google/uuid)
 
 This project will help you learn about:
 
