@@ -12,7 +12,6 @@ For this project you must take into account the security of your forum.
 
   - We recommend you to take a look into [cipher suites](https://en.wikipedia.org/wiki/Cipher_suite).
 
-
 - The implementation of [Rate Limiting](https://en.wikipedia.org/wiki/Rate_limiting) must be present on this project
 
 - You should encrypt at least the clients passwords. As a Bonus you can also encrypt the database, for this you will have to create a password for your database.
