@@ -51,7 +51,7 @@ This is typically divided into three major parts:
 
 The backend may consist, like said above, of an **app** containing all the backend logic. This logic will therefore have several middleware, for example:
 
-- Authentication, since HTTP is a stateless protocol, we can use several ways to overcome and authenticate a client/user. You must use [sessions](https://allaboutcookies.org/cookies/session-cookies-used-for.html) and cookies.
+- Authentication, since HTTP is a stateless protocol, we can use several ways to overcome and authenticate a client/user. You must use [sessions](https://allaboutcookies.org/what-are-session-cookies) and cookies.
 - Images handling, supporting various types of extensions. In this project you have to handle at least JPEG, PNG and GIF types. You will have to store the images, it can be done by storing the file/path in the database and saving the image in a specific file system.
 - Websocket, handling the connections in real time, between clients. This will help with the private chats.
 
