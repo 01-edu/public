@@ -1,6 +1,7 @@
 # Rest API Users Management CRUD Application
 
 The **Rest API Users Management CRUD Application** is a full-stack project that includes:
+
 - A REST API for managing users.
 - Integration with AWS SQS for message handling.
 - A React-based frontend for managing users.
@@ -11,6 +12,7 @@ This README provides the requirements, setup instructions, and details for the t
 ## Requirements
 
 ### 1. Backend API
+
 - Build a REST API for managing users with the following features:
   - CRUD operations:
     - `GET /users`: Retrieve a list of users.
@@ -26,6 +28,7 @@ This README provides the requirements, setup instructions, and details for the t
 - Generate **Swagger/OpenAPI documentation** accessible at `/docs`.
 
 ### 2. Messaging
+
 - Add the following endpoints for messaging:
   - `GET /message`: Retrieve messages.
   - `POST /message`: Send a message to **AWS SQS**.
@@ -36,6 +39,7 @@ This README provides the requirements, setup instructions, and details for the t
 - Use AWS SDK for SQS integration with environment-based credentials.
 
 ### 3. Frontend
+
 - Develop a React application using **Vite** with the following features:
   - A table displaying all users with options to:
     - Edit users.
@@ -43,6 +47,7 @@ This README provides the requirements, setup instructions, and details for the t
   - A form for adding a new user with basic validation (e.g., email format validation).
 
 ### 4. Functional Tests
+
 - Write **functional tests** for the API using the **GIVEN-WHEN-THEN** principle:
   - Example:
     - GIVEN a valid user payload.
@@ -51,6 +56,7 @@ This README provides the requirements, setup instructions, and details for the t
 - Use testing frameworks like Jest or Mocha.
 
 ### 5. Hosting
+
 - Host the application locally using **Docker**:
   - A container for the backend (Node.js, Python, or a language of your choice).
   - A container for the frontend (React + Vite).
@@ -62,6 +68,7 @@ This README provides the requirements, setup instructions, and details for the t
   - Use any kind of IaC tool like Terraform, CloudFormation, or Pulumi for deployment.
 
 ### 6. Version Control
+
 - Follow the **Conventional Commits** standard for all commits in the repository.
 
 ## Deliverables
@@ -105,6 +112,7 @@ Read the [Coding Principles and Guidelines for clean code](https://principles.wi
 ### Commit Messages
 
 Follow the Conventional Commits format:
+
 - feat: Introduce a new feature.
 - fix: Fix a bug.
 - docs: Update documentation.
@@ -115,4 +123,3 @@ Follow the Conventional Commits format:
 ## Testing Guidelines
 
 Write tests using the GIVEN-WHEN-THEN principle for functional clarity.
-
