@@ -6,12 +6,11 @@ You must follow the same [principles](../README.md) as the first subject.
 
 For this project you must take into account the security of your forum.
 
-- You should implement a Hypertext Transfer Protocol Secure ([HTTPS](https://developer.mozilla.org/pt-BR/docs/Glossary/https)) protocol :
+- You should implement a Hypertext Transfer Protocol Secure ([HTTPS](https://developer.mozilla.org/en-US/docs/Glossary/HTTPS)) protocol :
 
   - Encrypted connection : for this you will have to generate an SSL certificate, you can think of this like a identity card for your website. You can create your certificates or use "Certificate Authorities"(CA's)
 
   - We recommend you to take a look into [cipher suites](https://en.wikipedia.org/wiki/Cipher_suite).
-
 
 - The implementation of [Rate Limiting](https://en.wikipedia.org/wiki/Rate_limiting) must be present on this project
 
@@ -36,10 +35,10 @@ Sessions and cookies were implemented in the [previous project](../README.md) bu
 ### Allowed packages
 
 - All [standard Go](https://golang.org/pkg/) packages are allowed.
+- [autocert](https://pkg.go.dev/golang.org/x/crypto/acme/autocert)
 - [sqlite3](https://github.com/mattn/go-sqlite3)
 - [bcrypt](https://pkg.go.dev/golang.org/x/crypto/bcrypt)
-- [UUID](https://github.com/gofrs/uuid)
-- [autocert](https://pkg.go.dev/golang.org/x/crypto/acme/autocert)
+- [gofrs/uuid](https://github.com/gofrs/uuid) or [google/uuid](https://github.com/google/uuid)
 
 This project will help you learn about :
 
