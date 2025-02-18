@@ -17,13 +17,13 @@ You will have to create a Facebook-like social network that will contain the fol
 
 Frontend development is the art of creating sites and web applications that render on the "client-side". It includes everything that users experience directly: text colors and styles, images, graphs and tables, buttons, colors, and navigation menus. It focuses on making requests to the backend in order to get specific chunks of data to be used or send data to be stored on the backend.
 
-HTML, CSS, and Javascript are the languages used for frontend development. Responsiveness and performance are two main objectives of the frontend. Frontend frameworks may be used to simplify a developers work.
+HTML, CSS, and Javascript are the languages used for frontend development. Responsiveness and performance are two main objectives of the frontend. Frontend frameworks may be used to simplify a developer's work.
 
 #### Framework
 
 You will have to use a JS framework. It is up to you to choose which one you are going to use.
 
-Frameworks will help you to organize and implement the features you want on your project, so that you can get more work done in a easier and faster way.
+Frameworks will help you to organize and implement the features you want on your project, so that you can get more work done in an easier and faster way.
 
 Some of the most known JS frameworks around are:
 
@@ -51,7 +51,7 @@ This is typically divided into three major parts:
 
 The backend may consist, like said above, of an **app** containing all the backend logic. This logic will therefore have several middleware, for example:
 
-- Authentication, since HTTP is a stateless protocol, we can use several ways to overcome and authenticate a client/user. You must use [sessions](https://allaboutcookies.org/cookies/session-cookies-used-for.html) and cookies.
+- Authentication, since HTTP is a stateless protocol, we can use several ways to overcome and authenticate a client/user. You must use [sessions](https://allaboutcookies.org/what-are-session-cookies) and cookies.
 - Images handling, supporting various types of extensions. In this project you have to handle at least JPEG, PNG and GIF types. You will have to store the images, it can be done by storing the file/path in the database and saving the image in a specific file system.
 - Websocket, handling the connections in real time, between clients. This will help with the private chats.
 
@@ -135,7 +135,7 @@ In order for the users to use the social network they will have to make an accou
 
 Note that the **Avatar/Image**, **Nickname** and **About Me** should be present in the form but the user can skip the filling of those fields.
 
-When the user logins, he/she should stay logged in until he/she chooses a logout option that should be available at all times. For this you will have to implement [sessions](https://allaboutcookies.org/cookies/session-cookies-used-for.html) and [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies).
+When the user logins, he/she should stay logged in until he/she chooses a logout option that should be available at all times. For this you will have to implement [sessions](https://allaboutcookies.org/what-are-session-cookies) and [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies).
 
 You can implement your own package for sessions and cookies or you can take a look at some packages to help you.
 
