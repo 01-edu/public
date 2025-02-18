@@ -6,7 +6,7 @@ You must follow the same [principles](../README.md) as the first subject.
 
 For this project you must take into account the security of your forum.
 
-- You should implement a Hypertext Transfer Protocol Secure ([HTTPS](https://developer.mozilla.org/pt-BR/docs/Glossary/https)) protocol :
+- You should implement a Hypertext Transfer Protocol Secure ([HTTPS](https://developer.mozilla.org/en-US/docs/Glossary/HTTPS)) protocol :
 
   - Encrypted connection : for this you will have to generate an SSL certificate, you can think of this like a identity card for your website. You can create your certificates or use "Certificate Authorities"(CA's)
 
