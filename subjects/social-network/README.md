@@ -135,7 +135,7 @@ In order for the users to use the social network they will have to make an accou
 
 Note that the **Avatar/Image**, **Nickname** and **About Me** should be present in the form but the user can skip the filling of those fields.
 
-When the user logins, he/she should stay logged in until he/she chooses a logout option that should be available at all times. For this you will have to implement [sessions](https://allaboutcookies.org/cookies/session-cookies-used-for.html) and [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies).
+When the user logins, he/she should stay logged in until he/she chooses a logout option that should be available at all times. For this you will have to implement [sessions](https://allaboutcookies.org/what-are-session-cookies) and [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies).
 
 You can implement your own package for sessions and cookies or you can take a look at some packages to help you.
 
