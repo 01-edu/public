@@ -51,7 +51,7 @@ This is typically divided into three major parts:
 
 The backend may consist, like said above, of an **app** containing all the backend logic. This logic will therefore have several middleware, for example:
 
-- Authentication, since HTTP is a stateless protocol, we can use several ways to overcome and authenticate a client/user. You must use [sessions](https://allaboutcookies.org/what-are-session-cookies) and cookies.
+- Authentication, since HTTP is a stateless protocol, we can use several ways to overcome and authenticate a client/user. You must use [sessions](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#session-management-waf-protections) and [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies).
 - Images handling, supporting various types of extensions. In this project you have to handle at least JPEG, PNG and GIF types. You will have to store the images, it can be done by storing the file/path in the database and saving the image in a specific file system.
 - Websocket, handling the connections in real time, between clients. This will help with the private chats.
 
@@ -135,7 +135,7 @@ In order for the users to use the social network they will have to make an accou
 
 Note that the **Avatar/Image**, **Nickname** and **About Me** should be present in the form but the user can skip the filling of those fields.
 
-When the user logins, he/she should stay logged in until he/she chooses a logout option that should be available at all times. For this you will have to implement [sessions](https://allaboutcookies.org/what-are-session-cookies) and [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies).
+When the user logins, he/she should stay logged in until he/she chooses a logout option that should be available at all times. For this you will have to implement [sessions](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#session-management-waf-protections) and [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies).
 
 You can implement your own package for sessions and cookies or you can take a look at some packages to help you.
 
@@ -229,7 +229,7 @@ Every other notification created by you that isn't on the list is welcomed too.
 ### Allowed Packages
 
 - The [standard Go](https://golang.org/pkg/) packages are allowed
-- [Gorilla](https://pkg.go.dev/github.com/gorilla/websocket) websocket
+- [Gorilla websocket](https://pkg.go.dev/github.com/gorilla/websocket)
 - [golang-migrate](https://github.com/golang-migrate/migrate/)
 - [sql-migration](https://pkg.go.dev/github.com/rubenv/sql-migrate)
 - [migration](https://pkg.go.dev/github.com/Boostport/migration)

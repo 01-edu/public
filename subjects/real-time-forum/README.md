@@ -82,7 +82,7 @@ This project will help you learn about:
 - The basics of web :
   - HTML
   - HTTP
-  - Sessions and cookies
+  - [Sessions](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#session-management-waf-protections) and [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
   - CSS
   - Backend and Frontend
   - DOM

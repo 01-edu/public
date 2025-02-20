@@ -16,7 +16,7 @@ For this project you must take into account the security of your forum.
 
 - You should encrypt at least the clients passwords. As a Bonus you can also encrypt the database, for this you will have to create a password for your database.
 
-Sessions and cookies were implemented in the [previous project](../README.md) but not under-pressure (tested in an attack environment). So this time you must take this into account.
+[Sessions](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#session-management-waf-protections) and [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies) were implemented in the [previous project](../README.md) but not under-pressure (tested in an attack environment). So this time you must take this into account.
 
 - Clients session cookies should be unique. For instance, the session state is stored on the server and the session should present an unique identifier. This way the client has no direct access to it. Therefore, there is no way for attackers to read or tamper with session state.
 
