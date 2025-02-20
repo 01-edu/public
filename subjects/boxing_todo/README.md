@@ -28,10 +28,12 @@ This file must:
 These structures must implement the `Display` trait. They should write `"Failed to parse todo file"` and `"Failed to read todo file"`, depending on the respective error case.
 
 These structures should also naturally implement the `Error` trait. We will override its method `source` to manipulate the error source output.
-  - For the `ReadErr` structure, `child_err` should be returned, wrapped in `Some()`.
-  - For the `ParseErr` structure, `None` should be returned if we have no tasks, otherwise, with a parsing malformation, we should just return `self` wrapped in `Some()`.
+
+- For the `ReadErr` structure, `child_err` should be returned, wrapped in `Some()`.
+- For the `ParseErr` structure, `None` should be returned if we have no tasks, otherwise, with a parsing malformation, we should just return `self` wrapped in `Some()`.
 
 In the `lib.rs` file you will have to declare and implement a `TodoList` and a `Task` structure.
+
 - The `Task` structure serves merely to represent and encapsulate the fields of the tasks in the JSON file.
 - The `TodoList` structure will have two fields called `title` and `tasks` as shown below, and an associated **function** called `get_todo` which receives a `&str` and returns a `Result` which will represent either the deserialized and parsed content in a `Self` instance on success, or any error type on failure.
 

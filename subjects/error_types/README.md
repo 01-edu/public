@@ -4,28 +4,30 @@
 
 For this exercise, you will have to implement an **error type** for a form validator. We will validate the password and the first name.
 
-The first name must not be empty and the password must have **at least 8 characters**, and a combination of ASCII **alphanumeric characters** and **symbols** (`<`, `&`,  `/` ...).
+The first name must not be empty and the password must have **at least 8 characters**, and a combination of ASCII **alphanumeric characters** and **symbols** (`<`, `&`, `/` ...).
 
 Examples:
+
 - `"asDd123=%"`: **good**.
 - `"asgfD"`: **error** as it only contains alphabetic characters.
 - `"asdsdf2"`: **error** as it is missing symbols.
 - `"sad\_#$"`: **error** as it is missing numeric characters.
 
 Create a structure named `Form` that will have the following fields:
+
 - `first_name`: `String`
 - `password`: `String`
 
 You must implement the **associated functions** `new` and `validate` that will validate the form.
 
 For the error type you must create a `struct` named `FormError`. It must have the fields:
+
 - `form_values`: represents the invalid input in a key-value pair. For example: `("password", "asdaSD\_")` or `("first_name", "someone")`
 - `date`: represents when the error occurred in the format `"YYYY-MM-DD HH:MM:SS"`
 - `err`: the error description, which should be either of the following values:
   - `"Username is empty"`
   - `"Password should be at least 8 characters long"`
   - `"Password should be a combination of ASCII numbers, letters and symbols"`
-
 
 ### Expected Function
 

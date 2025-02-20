@@ -28,6 +28,7 @@ A second structure named `FlagsHandler` will be given which just has one element
 - `exec_func`, which executes the function using the flag provided and returns the result. The callback should be executed with the first two arguments of the supplied `argv` argument. Return either the successful result from the callback or the error stringified.
 
 You will have to create the following callback functions:
+
 - `div`: which converts the reference strings to `f64`s and returns the `Result`, as the division of these floats or the error `ParseFloatError`.
 - `rem`: which converts the reference strings to `f64`s and returns the `Result`, as the remainder of the division of these floats or the error `ParseFloatError`.
 
