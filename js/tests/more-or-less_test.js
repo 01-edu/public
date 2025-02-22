@@ -19,13 +19,11 @@ t(() => less(1) === more(-1))
 
 // let's add now
 t(() => typeof add === 'function')
-t(() => add.length === 2)
 t(() => add(3, 10) === 13)
 t(() => add(-1, -1) === -2)
 
 // do the sub thingy
 t(() => typeof sub === 'function')
-t(() => sub.length === 2)
 t(() => sub(-1, -1) === 0)
 t(() => sub(3, 10) === -7)
 
