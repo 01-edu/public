@@ -16,3 +16,11 @@ We welcome contributions! Feel free to submit a [**🪢 pull request**](https://
 
 Thank you!<br>
 **📚 The Content Team**
+
+---
+
+### 🙌 Contributors
+
+We extend our sincere gratitude to all the contributors.
+
+[![Contributors](https://contrib.rocks/image?repo=01-edu/public)](https://github.com/01-edu/public/graphs/contributors)
