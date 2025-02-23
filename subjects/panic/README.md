@@ -8,7 +8,7 @@ Create a **function** that tries to open a file and panics if the file does not 
 
 ```rust
 pub fn open_file(s: &str) -> File {
-
+    todo!()
 }
 ```
 
@@ -17,21 +17,19 @@ pub fn open_file(s: &str) -> File {
 Here is a program to test your function:
 
 ```rust
-use std::fs::File;
-use std::fs;
 use panic::*;
+use std::fs::{self, File};
 
 fn main() {
     let filename = "created.txt";
     File::create(filename).unwrap();
 
-    let a = open_file(filename);
-    println!("{:?}", a);
-    
+    println!("{:?}", open_file(filename));
+
     fs::remove_file(filename).unwrap();
 
-    //It must panic
-    let b = open_file(filename);
+    // this should panic!
+    open_file(filename);
 }
 ```
 
