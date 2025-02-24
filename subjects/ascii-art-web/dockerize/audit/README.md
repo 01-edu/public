@@ -4,8 +4,10 @@
 
 ###### Does the project have a DockerFile?
 
-##### Try running the [command](https://docs.docker.com/engine/reference/commandline/image_build/) `"docker image build [OPTIONS] PATH | URL | -"` to build the image using the project Dockerfile. 
-##### Example : 
+##### Try running the [command](https://docs.docker.com/engine/reference/commandline/image_build/) `"docker image build [OPTIONS] PATH | URL | -"` to build the image using the project Dockerfile.
+
+##### Example :
+
 `"docker image build -f Dockerfile -t <name_of_the_image> ."`
 
 ```
@@ -38,6 +40,8 @@ I have no name!@51c2efe2d366:/$ exit
 exit
 student$
 ```
+
+###### Does the container's file system contain the expected files and directories?
 
 ###### Does the DockerFile contain some [metadata](https://docs.docker.com/config/labels-custom-metadata/) applied to the docker object?
 
