@@ -28,9 +28,7 @@
 
 #### General
 
-###### +Does the project implement their own certificates for the HTTPS protocol?
-
-###### +Does the project implement UUID(Universal Unique Identifier) for the user session?
+###### +Does the project implement its own certificates for the HTTPS protocol?
 
 ###### +Does the database present a password for protection?
 
