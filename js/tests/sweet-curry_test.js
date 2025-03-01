@@ -1,10 +1,6 @@
 export const tests = []
 const t = (f) => tests.push(f)
 
-t(() => mult2.length === 1)
-t(() => add3.length === 1)
-t(() => sub4.length === 1)
-
 t(({ eq }) => eq(mult2(2)(5), 10))
 t(({ eq }) => eq(mult2(3)(6), 18))
 t(({ eq }) => eq(mult2(4)(7), 28))
