@@ -12,8 +12,8 @@
 
 ```
 student$ docker images
-REPOSITORY              TAG                             IMAGE ID            CREATED             SIZE
-<name of the image>     latest                          85a65d66ca39        7 seconds ago       795MB
+REPOSITORY               TAG                             IMAGE ID            CREATED             SIZE
+ascii-art-web-docker     latest                          85a65d66ca39        7 seconds ago       795MB
 ```
 
 ###### Run the command `"docker images"` to see all images. Is the docker image built as above?
@@ -23,7 +23,7 @@ REPOSITORY              TAG                             IMAGE ID            CREA
 ```
 student$ docker ps -a
 CONTAINER ID        IMAGE                  COMMAND                  CREATED             STATUS              PORTS                    NAMES
-cc8f5dcf760f        ascii-art-web-docker   "./server"               6 seconds ago       Up 6 seconds        0.0.0.0:8080->8080/tcp   ascii-art-web
+51c2efe2d366        ascii-art-web-docker   "./server"               6 seconds ago       Up 6 seconds        0.0.0.0:8080->8080/tcp   dockerize
 ```
 
 ###### Run the command `"docker ps -a"` to see all containers. Is the docker container running as above?
@@ -31,12 +31,12 @@ cc8f5dcf760f        ascii-art-web-docker   "./server"               6 seconds ag
 ##### Try running the [command](https://docs.docker.com/engine/reference/commandline/exec/) `"docker exec [OPTIONS] CONTAINER COMMAND [ARG...]"`. (example : `"docker exec -it <container_name> /bin/bash"`) and do a `"ls -l"` to see the file system.
 
 ```
-student$ docker exec -it postgres /bin/bash
-I have no name!@51c2efe2d366:/$ ls -l
-drwxr-xr-x   1 root root 4096 Dec 28 15:31 bin
--rwxr-xr-x   2 root root 4096 Sep  8 10:51 server.go
-drwxr-xr-x   2 root root 4096 Sep  8 10:51 templates
-I have no name!@51c2efe2d366:/$ exit
+student$ docker exec -it dockerize /bin/bash
+51c2efe2d366:/app$ ls -l
+-rwxr-xr-x   1 root root 10833387 Sep  8 10:31 server
+drwxr-xr-x   2 root root     4096 Sep  8 10:51 static
+drwxr-xr-x   2 root root     4096 Sep  8 10:51 templates
+51c2efe2d366:/app$ exit
 exit
 student$
 ```
