@@ -16,7 +16,7 @@ of information you start to remember all the 60 FPS memes.
 
 Here are some of the features you want to implement in your game:
 
-- Game runs at at least **60 FPS** at all times
+- Game runs at at least **[60 FPS](https://www.freecodecamp.org/news/web-animation-performance-fundamentals/)** at all times
 - No frame drops!
 - Proper use of **RequestAnimationFrame**
 - It is very hard to predict performances in JS. So measure performances to see if your code is fast. This will be tested!
@@ -33,7 +33,7 @@ You must not use frameworks or canvas, the game must be implemented using plain 
 
 ### Instructions
 
-Animation must have consistent motion, so in order to have a smooth animation (without interruptions or so called jank animation) you must achieve the special number, [**60 FPS**](https://www.algolia.com/developers-tech-blog/code-and-deep-dives/performant-web-animations/). You can see more about performance [here](../good-practices/README.md)
+Animation must have consistent motion, so in order to have a smooth animation (without interruptions or so called jank animation) you must achieve the special number, **[60 FPS](https://www.freecodecamp.org/news/web-animation-performance-fundamentals/)**. You can see more about performance [here](../good-practices/README.md)
 
 In order to play the game the player must only use the keyboard. The controls must be smooth, in other words you should not need to spam a key to take actions in the game. Instead, for example, if a key is kept pressed, the player must continue to do the relevant action. If the key is released the player should stop doing the action.
 
