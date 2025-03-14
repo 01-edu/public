@@ -2,14 +2,14 @@
 
 ### Instructions
 
-Create the following structures. Each has one element:
+Create the following structures. Each has one field:
 
-- `One`: `first_layer` as type `Option<Two>`.
-- `Two`: `second_layer` as type `Option<Three>`
-- `Three`: `third_layer` as type `Option<Four>`
-- `Four`: `fourth_layer` as type `Option<u16>`.
+- `One`: `first_layer` with type `Option<Two>`.
+- `Two`: `second_layer` with type `Option<Three>`
+- `Three`: `third_layer` with type `Option<Four>`
+- `Four`: `fourth_layer` with type `Option<u16>`.
 
-Beside the structures, you must create a **function** named `get_fourth_layer`, and associate it to the `One` structure. This **function** should return the `Option` value in the `Four` structure.
+You must also create a **function** associated to the structure `One` called `get_fourth_layer`, which should return the `fourth_layer` value in the `Four` structure.
 
 ### Expected Function and structures
 
@@ -28,7 +28,9 @@ pub struct Four {
 }
 
 impl One {
-    pub fn get_fourth_layer(&self) -> Option<u16> {}
+    pub fn get_fourth_layer(self) -> Option<u16> {
+        todo!()
+    }
 }
 ```
 
@@ -41,7 +43,7 @@ use question_mark::*;
 
 fn main() {
     let a = One {
-        first_layer : Some(Two {
+        first_layer: Some(Two {
             second_layer: Some(Three {
                 third_layer: Some(Four {
                     fourth_layer: Some(1000)
@@ -50,11 +52,7 @@ fn main() {
         })
     };
 
-    // output: 1000
-    println!("{:?}", match a.get_fourth_layer() {
-        Some(e) => e,
-        None => 0
-    })
+    println!("{:?}", a.get_fourth_layer());
 }
 ```
 
@@ -62,7 +60,7 @@ And its output:
 
 ```console
 $ cargo run
-1000
+Some(1000)
 $
 ```
 
