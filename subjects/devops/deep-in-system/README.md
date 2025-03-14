@@ -163,10 +163,12 @@ You must export your VM to a safe place, you will need it in the audit.
 You will use your exported VM to run a new VM for each audit.
 Push the shasum of your exported VM, you can get it this way:
 
+Example:
+
 ```console
-user:~$ sha1sum deep-in-system.ova > deep-in-system.sha1
+user:~$ sha1sum {exported deep-in-system} > deep-in-system.sha1
 user:~$ cat deep-in-system.sha1 | cat -e
-<...>255bfef9560<...>  deep-in-system.ova$
+<...>255bfef9560<...> {exported deep-in-system}$
 user:~$
 ```
 

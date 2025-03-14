@@ -21,9 +21,9 @@ Some examples of authentication means are:
 - All [standard go](https://golang.org/pkg/) packages are allowed.
 - [sqlite3](https://github.com/mattn/go-sqlite3)
 - [bcrypt](https://pkg.go.dev/golang.org/x/crypto/bcrypt)
-- [UUID](https://github.com/gofrs/uuid)
+- [gofrs/uuid](https://github.com/gofrs/uuid) or [google/uuid](https://github.com/google/uuid)
 
 This project will help you learn about:
 
-- Sessions and cookies.
-- Protecting routes.
+- [Sessions](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#session-management-waf-protections) and [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
+- Protecting routes

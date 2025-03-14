@@ -28,7 +28,7 @@ The max size of the images to load should be 20 mb. If there is an attempt to lo
 - All [standard go](https://golang.org/pkg/) packages are allowed.
 - [sqlite3](https://github.com/mattn/go-sqlite3)
 - [bcrypt](https://pkg.go.dev/golang.org/x/crypto/bcrypt)
-- [UUID](https://github.com/gofrs/uuid)
+- [gofrs/uuid](https://github.com/gofrs/uuid) or [google/uuid](https://github.com/google/uuid)
 
 This project will help you learn about:
 
