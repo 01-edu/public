@@ -52,6 +52,6 @@ Err("ERROR: illegal")
 $
 ```
 
-# Notions
+### Notions
 
 - [Enum Definition](https://doc.rust-lang.org/stable/book/ch06-01-defining-an-enum.html?highlight=option#the-option-enum-and-its-advantages-over-null-values)
