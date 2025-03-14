@@ -15,7 +15,7 @@ Examples:
 
 Create a structure named `Form` that will have the following fields:
 
-- `first_name`: `String`
+- `name`: `String`
 - `password`: `String`
 
 You must implement the **associated functions** `new` and `validate` that will validate the form.
