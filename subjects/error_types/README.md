@@ -95,8 +95,8 @@ Form { name: "Lee", password: "qwqwsa1dty_" }
 Ok(())
 Err(FormError { form_values: ("name", ""), date: "2022-10-17 12:09:25", err: "Username is empty" })
 Err(FormError { form_values: ("password", "dty_1"), date: "2022-10-17 12:09:25", err: "Password should be at least 8 characters long" })
-Err(FormError { form_values: ("password", "asdasASd(_"), date: "2022-10-17 12:09:25", err: "Combination of different ASCII character types (numbers, letters and none alphanumeric characters)" })
-Err(FormError { form_values: ("password", "asdasASd123SA"), date: "2022-10-17 12:09:25", err: "Combination of different ASCII character types (numbers, letters and none alphanumeric characters)" })
+Err(FormError { form_values: ("password", "asdasASd(_"), date: "2022-10-17 12:09:25", err: "Password should be a combination of ASCII numbers, letters and symbols" })
+Err(FormError { form_values: ("password", "asdasASd123SA"), date: "2022-10-17 12:09:25", err: "Password should be a combination of ASCII numbers, letters and symbols" })
 $
 ```
 
