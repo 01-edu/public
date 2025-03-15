@@ -6,8 +6,8 @@ You must follow the same [principles](../README.md) as the first subject.
 
 For this project you must implement:
 
-- **scoreboards**
-- **go API service** that allows saving the data from the game in JSON format
+- **Scoreboard**
+- **Go API service** that allows saving the data from the game in JSON format
   - The API should accept POST and GET requests from the client side for the scoreboard data
 
 ### Instructions
@@ -63,8 +63,7 @@ Here is an example:
 
 ### Allowed Packages
 
-- Only [standard Go](https://golang.org/pkg/) packages are allowed.
-- [Gorilla](https://pkg.go.dev/github.com/gorilla/websocket) websocket
+- Only the [standard Go](https://golang.org/pkg/) packages are allowed.
 
 This project will help you learn about:
 
