@@ -26,7 +26,7 @@ The arguments of the function will be:
 - `kind`: the kind of geometric volume.
 - `times`: the number of times the shape should fit inside the box.
 - `a`: represents the:
-    -  `side` in case of a `Cube`
+    - `side` in case of a `Cube`
     - `radius` in case of a `Sphere`
     - `base_area` in case of a `TriangularPyramid`
     - `side_a` in case of a `Parallelepiped`
