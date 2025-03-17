@@ -4,30 +4,34 @@
 
 Create a **function** named `calculate_macros` which receives a vector of `Food` structures and returns a `json::JsonValue`.
 
+The `Food` structure has the following fields:
+
 ```rust
 Food {
     name: <name>,
-    calories: [<value_in_kJ>, <value_in_kcal>],
-    fats: <fats_in_g>,
-    carbs: <carbs_in_g>,
-    proteins: <proteins_in_g>,
+    calories: (<calories_in_kJ>kJ, <calories_in_kcal>kcal),
+    fats: <fats_in_grams>,
+    carbs: <carbs_in_grams>,
+    proteins: <proteins_in_grams>,
     nbr_of_portions: <portions>
 }
 ```
 
-The values in the calories array will be of type `string`, all other values will be `f64`.
+The `name` and the values in the `calories` tuple should be of type `String`. All other values should be represented as `f64`.
 
 The json returned by `calculate_macros` will have the following format:
 
 ```json
-"cals": <calories>,
-"carbs": <carbs>,
-"proteins": <proteins>,
-"fats": <fats>,
+{
+    "cals": <calories_in_kcal>,
+    "carbs": <carbs_in_grams>,
+    "proteins": <proteins_in_grams>,
+    "fats": <fats_in_grams>,
+}
 ```
 
-Consider the number of portions, as the values of the macros refer to one portion. Each value should represent the sum of each micro-nutrient in the array. E.g. `cals` is the sum of all `calories`.
-Every value should be `f64` and be rounded rounded to two decimal places, or one decimal place if it ends in a zero. E.g:
+Consider the number of portions, as the values of the macros refer to one portion. Each value should represent the sum of each micro-nutrient in the array. E.g. `cals` is the sum of all calories of all the foods combined.
+Every `f64` should be rounded to two decimal points or one decimal point if it ends in a zero. E.g:
 - `12.294` -> `12.29`
 - `12.295` -> `12.30` -> `12.3`
 
@@ -35,11 +39,11 @@ Every value should be `f64` and be rounded rounded to two decimal places, or one
 
 ```rust
 pub struct Food {
-    //expected public fields
+    // expected public fields
 }
 
-pub fn calculate_macros(foods: Vec<Food>) -> json::JsonValue {
-
+pub fn calculate_macros(foods: &[Food]) -> json::JsonValue {
+    todo!()
 }
 ```
 
@@ -50,19 +54,19 @@ Here is a program to test your function:
 ```rust
 use macro_calculator::*;
 
-fn main(){
-    let a = vec![
+fn main() {
+    let foods = [
         Food {
-            name: String::from("big mac"),
-            calories: ["2133.84kJ".to_string(), "510kcal".to_string()],
-            proteins: 27.0,
-            fats: 26.0,
-            carbs: 41.0,
-            nbr_of_portions: 2.0,
+            name: "big mac".to_owned(),
+            calories: ("2133.84kJ", "510kcal"),
+            proteins: 27.,
+            fats: 26.,
+            carbs: 41.,
+            nbr_of_portions: 2.,
         },
         Food {
-            name: "pizza margherita".to_string(),
-            calories: ["1500.59kJ".to_string(), "358.65kcal".to_string()],
+            name: "pizza margherita".to_owned(),
+            calories: ("1500.59kJ", "358.65kcal"),
             proteins: 13.89,
             fats: 11.21,
             carbs: 49.07,
@@ -70,7 +74,7 @@ fn main(){
         },
     ];
 
-    println!("{:#}", calculate_macros(a));
+    println!("{:#}", calculate_macros(foods));
 }
 ```
 
@@ -89,4 +93,4 @@ $
 
 ### Notions
 
-- [json](https://docs.rs/json/0.12.4/json/) crate
+- [json-0.12.4](https://docs.rs/json/0.12.4/json/)
