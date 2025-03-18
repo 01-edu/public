@@ -2,7 +2,7 @@
 
 <center>
 <img 
-    src="./resources/cloud-design.jpg?raw=true" style = "width: 600px
+    src="./resources/cloud-design.jpeg?raw=true" style = "width: 600px
     !important; height: 600px !important;"/>
 </center>
 
