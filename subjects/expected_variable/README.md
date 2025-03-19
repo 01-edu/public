@@ -52,5 +52,6 @@ $
 
 ### Notions
 
-- [Crate case](https://crates.io/crates/case)
+- [Crate convert_case](https://crates.io/crates/convert_case)
+- [Crate heck](https://crates.io/crates/heck)
 - [Specifying Dependencies](https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html)
