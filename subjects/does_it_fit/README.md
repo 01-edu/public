@@ -7,36 +7,38 @@ Use the `areas_volumes` module provided below to create the two following **func
 Create `area_fit`. It should return whether the geometric shape can fit inside the rectangular area as many times as indicated by `times`.
 
 The arguments of the function will be:
+
 - `x` and `y`: length and width of the rectangular area.
 - `kind`: the kind of geometric shape.
 - `times`: the number of times the shape should fit inside the rectangular area.
 - `a`: represents the:
-    - `side` in case of a `Square`
-    - `base` in case of a `Triangle`
-    - `radius` in case of a `Circle`
-    - `side_a` in case of a `Rectangle`
+  - `side` in case of a `Square`
+  - `base` in case of a `Triangle`
+  - `radius` in case of a `Circle`
+  - `side_a` in case of a `Rectangle`
 - `b`: represents the:
-    - `height` in case of a `Triangle`
-    - `side_b` in case of a `Rectangle`
+  - `height` in case of a `Triangle`
+  - `side_b` in case of a `Rectangle`
 
 Create `volume_fit`. It should return whether the geometric volume can fit inside the box as many times as indicated by `times`.
 
 The arguments of the function will be:
+
 - `x`, `y` and `z`: length, width and depth of the box.
 - `kind`: the kind of geometric volume.
 - `times`: the number of times the shape should fit inside the box.
 - `a`: represents the:
-    - `side` in case of a `Cube`
-    - `radius` in case of a `Sphere`
-    - `base_area` in case of a `TriangularPyramid`
-    - `side_a` in case of a `Parallelepiped`
-    - `base_radius` in case of a `Cone`
+  - `side` in case of a `Cube`
+  - `radius` in case of a `Sphere`
+  - `base_area` in case of a `TriangularPyramid`
+  - `side_a` in case of a `Parallelepiped`
+  - `base_radius` in case of a `Cone`
 - `b`: represents the:
-    - `height` in case of a `TriangularPyramid`
-    - `side_b` in case of a `Parallelepiped`
-    - `height` in case of a `Cone`
- - `c`: represents the:
-    - `side_c` in case of a `Parallelepiped`
+  - `height` in case of a `TriangularPyramid`
+  - `side_b` in case of a `Parallelepiped`
+  - `height` in case of a `Cone`
+- `c`: represents the:
+  - `side_c` in case of a `Parallelepiped`
 
 ### Expected Functions
 

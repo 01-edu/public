@@ -27,12 +27,14 @@ You will also need to create two submodules:
   - `age`: `u32`
   - `new`: an associated function which accepts a `name: &str` and `age: u32`, and returns a `Boss`.
 - `member` submodule which consists of:
+
   - `Role`: an enum with the variants:
     - `Underboss`
     - `Caporegime`
     - `Soldier`
     - `Associate`
   - `Member`: a struct which consists of:
+
     - `role`: `Role`
     - `age`: `u32`
 

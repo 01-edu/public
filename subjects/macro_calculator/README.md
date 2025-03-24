@@ -32,6 +32,7 @@ The json returned by `calculate_macros` will have the following format:
 
 Consider the number of portions, as the values of the macros refer to one portion. Each value should represent the sum of each micro-nutrient in the array. E.g. `cals` is the sum of all calories of all the foods combined.
 Every `f64` should be rounded to two decimal points or one decimal point if it ends in a zero. E.g:
+
 - `12.294` -> `12.29`
 - `12.295` -> `12.30` -> `12.3`
 
