@@ -42,7 +42,7 @@ Download the provided VM image and set it up in VirtualBox or UTM:
 
 - **SHA1 Checksums**:
 
-  - SHA1 for `hole-in-bin.ova`: 7db09b7a8fdfe25c286561dfa7ca5b50718bd60c
+  - SHA1 for `hole-in-bin.ova`: 00fda7d71361240d4d32499eb7fc5b156bbd53fc
   - SHA1 for `hole-in-bin.utm.zip`: fc93533b2054d10d03b09d53c223e57bf7ac7b62
 
 This VM contains all the binaries you will need to exploit.
