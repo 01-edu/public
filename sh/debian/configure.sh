@@ -388,12 +388,16 @@ elif [[ "--run" = "$1" ]]; then
 elif [[ "--deploy" = "$1" ]]; then
     deployCore
     deployPlatform
-    echo -e "$(tput setaf 6)\nRepositories cloned  and platform has been deployed successfully! $(tput sgr0)"
+    echo -e "$(tput setaf 6)\nRepositories cloned and platform has been deployed successfully! $(tput sgr0)"
     exit 0
 elif [[ "--ssh-keys" = "$1" ]]; then
     sshKeyGen
     echo -e "$(tput setaf 5)\nSSH keys have been generated successfully! $(tput sgr0)"
     checkKeys
+    exit 0
+elif [[ "--deploy-core" = "$1" ]]; then
+    deployCore
+    echo -e "$(tput setaf 5)\nRepositories cloned and core has been deployed successfully! $(tput sgr0)"
     exit 0
 elif [[ "--platform" = "$1" ]]; then
     clonePlatform
