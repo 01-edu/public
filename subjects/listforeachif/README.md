@@ -57,8 +57,8 @@ Here is a possible program to test your function :
 package main
 
 import (
-	"piscine"
 	"fmt"
+	"piscine"
 )
 
 func PrintElem(node *piscine.NodeL) {
@@ -75,7 +75,7 @@ func PrintList(l *piscine.List) {
 		fmt.Print(it.Data, "->")
 		it = it.Next
 	}
-	fmt.Print("nil","\n")
+	fmt.Print("nil", "\n")
 }
 
 func main() {
