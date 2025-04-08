@@ -19,7 +19,7 @@ This engine must have/display:
 - A websocket to establish the connection with both users
 - An animation so that the user can see that you are typing, this animation should be smooth (no interruptions/janks) and just enough to draw attention for the user to see (user friendly)
 - The name of the user that is typing
-- Whenever the user stops typing or finishes the conversation, it should not display the animation
+- Whenever the user stops typing or finishes the conversation, it should not display the animation, a short delay may optionally be added for better UX
 
 To help with the display of the typing in progress you can take a look on the js [event](https://developer.mozilla.org/en-US/docs/Web/Events) list, mainly the **Keyboard events** and the **Focus events**
 
