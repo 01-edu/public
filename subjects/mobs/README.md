@@ -6,12 +6,12 @@ Create a structure `Mob` which has:
 
 - `name`: `String`
 - `boss`: `Boss`
-- `members`: a HashMap of `Member`s keyed by `String`s
+- `members`: a `HashMap` of `Member`s keyed by `String`s
 - `cities`: a `HashSet` of city names
 - `wealth`: `u64`
 
-- `recruit`: a method which adds a `Member` to the `members` vector. It should accept a tuple with the member's information, `name` and `age` (`(&str, u32)`). The member's role should be set to the lowest one, `Associate`.
-- `attack`: a method which receives another `Mob` as reference. It will remove the youngest member(s) from the vector of `Member` from whichever mob has the least power combat score. In the case of a draw, the attacker loses. Furthermore, if the loser is left with zero members, the victorious mob will **also** take the cities and wealth from the losing mob. The power combat score is calculated from the sum of the `role` of each mob `member`:
+- `recruit`: a method which adds a `Member` to the `members` map. It should accept a tuple with the member's information, `name` and `age` (`(&str, u32)`). The member's role should be set to the lowest one, `Associate`.
+- `attack`: a method which receives another `Mob` as reference. It will remove the youngest member(s) from the `members` from whichever mob has the least power combat score. In the case of a draw, the attacker loses. Furthermore, if the loser is left with zero members, the victorious mob will **also** take the cities and wealth from the losing mob. The power combat score is calculated from the sum of the `role` of each mob `member`:
   - `Underboss`: 4
   - `Caporegime`: 3
   - `Soldier`: 2

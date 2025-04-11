@@ -7,7 +7,7 @@ Using the `mall` module provided, create the following **functions** to help run
 - `biggest_store`: receives a `Mall` and returns the `Store` with the most `square_meters`.
 - `highest_paid_employee`: receives a `Mall` and returns a vector containing the `Employee`(s) with the highest salary.
 - `nbr_of_employees`: receives a `Mall` and returns the number of employees and guards as a `usize`.
-- `check_for_securities`: receives a `Mall` and a vector of `Guard`. If there is not at least 1 guard for every 200 square meters of total floor size, a guard should be added to the `Mall.guards`.
+- `check_for_securities`: receives a `Mall` and a map of `Guard`s keyed by their names as a `String`. If there is not at least 1 guard for every 200 square meters of total floor size, a guard should be added to the `Mall.guards`.
 - `cut_or_raise`: receives a `Mall`. For each employee, the salary will be raised by 10% if they work for 10 hours or more, else their salary will be decreased by 10%. You can consider that guards are not employees of the mall.
 
 ### Expected Function
@@ -364,7 +364,7 @@ fn main() {
                 },
             ),
             (
-                "Chritopher Smith",
+                "Christopher Smith",
                 Guard {
                     age: 35,
                     years_experience: 9,
@@ -410,7 +410,7 @@ fn main() {
 }
 ```
 
-And its ouput:
+And its output:
 
 ```rs
 $ cargo run
@@ -507,7 +507,7 @@ Mall {
             age: 34,
             years_experience: 7,
         },
-        "Chritopher Smith": Guard {
+        "Christopher Smith": Guard {
             age: 35,
             years_experience: 9,
         },
