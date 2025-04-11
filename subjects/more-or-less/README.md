@@ -11,6 +11,8 @@ Create 4 functions:
 
 All the functions must return the result of the operations specified above.
 
+Each function should be defined with the exact number of parameters needed.
+
 ### Notions
 
 - [Functions](https://nan-academy.github.io/js-training/examples/functions.js)

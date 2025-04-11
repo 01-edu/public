@@ -13,6 +13,61 @@ export DEBIAN_PRIORITY=critical
 # Fix Debian 10 bug (https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=905409)
 PATH=/sbin:/usr/sbin:$PATH
 
+function sshKeyGen() {
+    # Check if any of the keys already exist
+    local existing_keys=()
+    for key_type in all https runner; do
+        if [[ -f ~/.ssh/ed25519_01edu_$key_type ]]; then
+            existing_keys+=(~/".ssh/ed25519_01edu_$key_type")
+        fi
+    done
+
+    # If any keys exist, warn the user and offer backup option
+    if [[ ${#existing_keys[@]} -gt 0 ]]; then
+        echo "Warning: The following SSH keys already exist:"
+        printf "  %s\n" "${existing_keys[@]}"
+        echo ""
+        read -rp "Would you like to backup these keys and continue? (y/n): " choice
+
+        if [[ $choice =~ ^[Yy]$ ]]; then
+            # Create backup directory with timestamp
+            backup_dir=~/.ssh/backup_$(date +%Y%m%d_%H%M%S)
+            mkdir -p "$backup_dir"
+
+            # Backup existing keys
+            for key in "${existing_keys[@]}"; do
+                key_name=$(basename "$key")
+                cp "$key" "$backup_dir/"
+                cp "$key.pub" "$backup_dir/" 2>/dev/null || true
+                echo "Backed up $key to $backup_dir/$key_name"
+            done
+            echo "Keys backed up to $backup_dir"
+        else
+            echo "Operation cancelled. Existing keys were not modified."
+            return 1
+        fi
+    fi
+
+    # Create config directory if it doesn't exist
+    mkdir -p ~/.ssh/config.d
+
+    # Generate SSH key and create SSH config
+    for key_type in all https runner; do
+        ssh-keygen -t ed25519 -f ~/.ssh/ed25519_01edu_$key_type -N ''
+
+        # Create SSH config for each key
+        echo "Host github.com-01-edu-$key_type
+        HostName github.com
+        User git
+        IdentityFile ~/.ssh/ed25519_01edu_$key_type" >~/.ssh/config.d/01-edu-$key_type.conf
+    done
+
+    # Include custom SSH configurations from the config directory if not already included
+    if ! grep -q "Include ~/.ssh/config.d/*.conf" ~/.ssh/config; then
+        echo "Include ~/.ssh/config.d/*.conf" >>~/.ssh/config
+    fi
+}
+
 function sysConfig() {
     echo "Enter the server FQDN $(tput setaf 2)[System: $(hostname)]$(tput sgr0):"
     read -r serverFQDN
@@ -143,21 +198,7 @@ EOF
     # Create the config.d directory if it doesn't exist
     mkdir -p ~/.ssh/config.d
 
-    # Generate SSH key and create SSH config
-    for key_type in all https runner; do
-        ssh-keygen -t ed25519 -f ~/.ssh/ed25519_01edu_$key_type -N ''
-
-        # Create SSH config for each key
-        echo "Host github.com-01-edu-$key_type
-        HostName github.com
-        User git
-        IdentityFile ~/.ssh/ed25519_01edu_$key_type" >~/.ssh/config.d/01-edu-$key_type.conf
-    done
-
-    # Include custom SSH configurations from the config directory if not already included
-    if ! grep -q "Include ~/.ssh/config.d/*.conf" ~/.ssh/config; then
-        echo "Include ~/.ssh/config.d/*.conf" >>~/.ssh/config
-    fi
+    sshKeyGen
 
     # Use Cloudflare DNS server
     echo 'supersede domain-name-servers 1.1.1.1;' >>/etc/dhcp/dhclient.conf
@@ -331,6 +372,7 @@ elif [[ "--help" = "$1" ]]; then
     echo "$(tput setaf 3) --run : to configure the system. $(tput sgr0)"
     echo "$(tput setaf 1) --reboot : to configure the system and reboot. $(tput sgr0)"
     echo "$(tput setaf 6) --deploy : to deploy and spin-up platform components. $(tput sgr0)"
+    echo "$(tput setaf 5) --ssh-keys : to generate ssh-key pairs. $(tput sgr0)"
     echo "$(tput setaf 5) --platform : to clone platform. $(tput sgr0)"
     echo "$(tput setaf 7) --help : to display this message. $(tput sgr0)"
 elif [[ "--reboot" = "$1" ]]; then
@@ -346,7 +388,16 @@ elif [[ "--run" = "$1" ]]; then
 elif [[ "--deploy" = "$1" ]]; then
     deployCore
     deployPlatform
-    echo -e "$(tput setaf 6)\nRepositories cloned  and platform has been deployed successfully! $(tput sgr0)"
+    echo -e "$(tput setaf 6)\nRepositories cloned and platform has been deployed successfully! $(tput sgr0)"
+    exit 0
+elif [[ "--ssh-keys" = "$1" ]]; then
+    sshKeyGen
+    echo -e "$(tput setaf 5)\nSSH keys have been generated successfully! $(tput sgr0)"
+    checkKeys
+    exit 0
+elif [[ "--deploy-core" = "$1" ]]; then
+    deployCore
+    echo -e "$(tput setaf 5)\nRepositories cloned and core has been deployed successfully! $(tput sgr0)"
     exit 0
 elif [[ "--platform" = "$1" ]]; then
     clonePlatform
