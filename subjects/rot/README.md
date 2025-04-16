@@ -21,7 +21,7 @@ Only letters should be rotated. Numbers and punctuation should be left unchanged
 
 ```rust
 pub fn rotate(input: &str, key: i8) -> String {
-
+    todo!()
 }
 ```
 

@@ -2,14 +2,13 @@
 
 ### Instructions
 
-Complete the function `search`. It should return the index of the element which matches `key` in the array.
-> Only arrays with unique elements will be tested.
+Complete the function `search`. It should return the index of the **last** element which matches `key` in the array.
 
 ### Expected functions
 
 ```rust
 pub fn search(array: &[i32], key: i32) -> Option<usize> {
-
+    todo!()
 }
 ```
 
@@ -21,10 +20,10 @@ Here is a program to test your function.
 use searching::*;
 
 fn main() {
-    let ar = [1, 3, 4, 6, 8, 9, 11];
-    let f = search(&ar, 6);
+    let ar = [1, 3, 4, 6, 8, 9, 11, 8];
+    let f = search(&ar, 8);
     println!(
-        "the element 6 is in the position {:?} in the array {:?}",
+        "the element 8 is last in the position {:?} in the array {:?}",
         f, ar
     );
 }
@@ -34,7 +33,7 @@ And its output:
 
 ```console
 $ cargo run
-the element 6 is in the position Some(3) in the array [1, 3, 4, 6, 8, 9, 11]
+the element 8 is in the position Some(7) in the array [1, 3, 4, 6, 8, 9, 11, 8]
 $
 ```
 

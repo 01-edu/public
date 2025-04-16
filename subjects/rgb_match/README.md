@@ -17,7 +17,7 @@ pub struct Color {
 
 impl Color {
     pub fn swap(mut self, first: u8, second: u8) -> Color {
-
+        todo!()
     }
 }
 ```
