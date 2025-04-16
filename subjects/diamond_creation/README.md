@@ -3,6 +3,7 @@
 ### Instructions
 
 Build the **function** `make_diamond` which takes a letter as an input, and returns a diamond.
+
 > Assume the input is always a valid uppercase letter.
 
 Rules:
