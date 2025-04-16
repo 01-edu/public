@@ -12,7 +12,7 @@ Example: "The quick brown fox jumps over the lazy dog."
 
 ```rust
 pub fn is_pangram(s: &str) -> bool {
-
+    todo!()
 }
 ```
 
