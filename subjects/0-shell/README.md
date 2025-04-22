@@ -27,6 +27,7 @@ Your minimalist shell must:
 - Handle `Ctrl+D` (EOF) gracefully to exit the shell
 
 You must implement the following commands **from scratch**, using system-level Rust abstractions:
+
 - `echo`
 - `cd`
 - `ls` (supporting `-l`, `-a`, `-F`)
