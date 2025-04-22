@@ -1,84 +1,85 @@
-## 0-shell
+## 0-Shell
 
-### Objective
+### Overview
 
-The objective of this project is for you to create a simple [shell](https://en.wikipedia.org/wiki/Unix_shell).
+In this project, you'll build **0-shell**, a minimalist Unix-like shell implemented in **Rust**, designed to run core Unix commands using system calls—without relying on external binaries or built-in shells like `bash` or `sh`.
 
-Through the `0-shell` you will get to the core of the `Unix` system and explore an important part of this system’s API which is the process creation and synchronization.
-Executing a command inside a shell implies creating a new process, which execution and final state will be monitored by its parents processes. This set of functions will be the key to success for your project.
+Inspired by tools like [BusyBox](https://en.wikipedia.org/wiki/BusyBox), this project introduces you to key concepts in **Unix system programming**, including **process creation**, **command execution**, and **file system interaction**, all while leveraging Rust's safety and abstraction features to avoid manual memory management.
 
-For this project you will only have to create a simple `Unix shell` where you can run some of the most known commands. For this part of the project, no advanced functions, pipes or redirection will be asked, but you can add them if you like.
+### Role Play
 
-### Instructions
+You are a **system-level developer** assigned to build a lightweight, standalone Unix shell for an embedded Linux environment. Your task is to create a shell that handles basic navigation, file manipulation, and process control—faithfully mimicking essential shell behaviors without relying on existing shell utilities.
 
-- You must program a mini `Unix shell`, try to focus on something simple like [BusyBox](https://en.wikipedia.org/wiki/BusyBox).
-- This interpreter must display at least a simple `$` and wait until you type a command line which will be validated by pressing enter.
-- The `$` will be shown again only once the command has been completely executed.
-- The command lines are simple, you will not have pipes, redirection or any other advanced functions.
-- You must manage the errors, by displaying a message adapted to the error output.
-- You must implement the following commands:
-  - `echo`
-  - `cd`
-  - `ls`, including the flags `-l`, `-a` and `-F`
-  - `pwd`
-  - `cat`
-  - `cp`
-  - `rm`, including the flag `-r`
-  - `mv`
-  - `mkdir`
-  - `exit`
+### Learning Objectives
 
-> The commands need to be implemented from scratch, without calling any external binaries.
+- Work with **file and directory operations**
+- Manage **user input and output** within a shell loop
+- Implement **robust error handling**
+- Gain experience in **Unix process and system call APIs**
 
-- You must manage the program interruption `Ctrl + D`.
-- The project has to be written in a compiled language (like C, Rust, Go or other), **interpreted languages (like Perl and others) are not allowed**.
-- The code must respect the [good practices](https://public.01-edu.org/subjects/good-practices/)
+### Core Requirements
 
-This project will help you learn about:
+Your minimalist shell must:
 
-- Shell
-- Operating systems services
-- Command-line interfaces
-- Unix system
-- Process creation and synchronization
-- Commands syntax
-- Scripting language
+- Display a prompt (`$ `) and wait for user input
+- Parse and execute user commands
+- Return to the prompt only after command execution completes
+- Handle `Ctrl+D` (EOF) gracefully to exit the shell
 
-### Bonus
+You must implement the following commands **from scratch**, using system-level Rust abstractions:
+- `echo`
+- `cd`
+- `ls` (supporting `-l`, `-a`, `-F`)
+- `pwd`
+- `cat`
+- `cp`
+- `rm` (supporting `-r`)
+- `mv`
+- `mkdir`
+- `exit`
 
-You can also do more bonus features like:
+Additional constraints:
 
-- Implement the commands exclusively using `low-level system calls` avoiding built-in functions or libraries that abstract file operations.
+- Do **not** use any external binaries or system calls that spawn them
+- If a command is unrecognized, print:  
+  `Command '<name>' not found`
 
-  - Avoid High-Level Abstractions: Instead of using functions like the Go `os.Open, os.Remove, and io.Copy`, you would use system calls directly through the `syscall` package using `syscall.Open, syscall.Close, syscall.Read, syscall.Write, syscall.Unlink`.
+### Constraints
 
-- Manage the interruption `Ctrl + C`
-- Auto complete when you are writing
-- Add piping
-- Add redirection
-- Have your path behind the `$` like (~/Desktop/0-shell $)
-- Add colors for the directories or errors
-- Other advanced commands you may like.
+- Only basic command syntax is required  
+  (No piping `|`, no redirection `>`, no globbing `*`, etc.)
+- Shell behavior should align with Unix conventions
+- Code must follow [good coding practices](https://public.01-edu.org/subjects/good-practices/)
 
-### Usage
+### Bonus Features
 
-```
+Implementing any of the following will be considered bonus:
+
+- Handle `Ctrl+C` (SIGINT) without crashing the shell
+- Shell usability enhancements:
+  - **Auto-completion**
+  - **Command history**
+  - **Prompt with current directory** (e.g., `~/projects/0-shell $`)
+  - **Colorized output** for commands, directories, and errors
+  - **Command chaining** with `;`
+  - **Pipes** (`|`)
+  - **I/O redirection** (`>`, `<`)
+- Support for environment variables (e.g. `$HOME`, `$PATH`)
+- A custom `help` command documenting built-in functionality
+
+### Example Usage
+
+```shell
 student$ ./0-shell
 $ cd dev
 $ pwd
-dev
+/dev
 $ ls -l
 total 0
-crw-------  1 root   root     10,    58 fev  5 09:21 acpi_thermal_rel
-crw-r--r--  1 root   root     10,   235 fev  5 09:21 autofs
-drwxr-xr-x  2 root   root           540 fev  5 09:21 block
-crw-------  1 root   root     10,   234 fev  5 09:21 btrfs-control
-drwxr-xr-x  3 root   root            60 fev  5 09:20 bus
-drwxr-xr-x  2 root   root          4400 fev  5 09:21 char
-crw-------  1 root   root      5,     1 fev  5 09:21 console
-lrwxrwxrwx  1 root   root            11 fev  5 09:20 core -> /proc/kcore
-drwxr-xr-x  2 root   root            60 fev  5 09:20 cpu
-crw-------  1 root   root     10,    59 fev  5 09:21 cpu_dma_latency
+crw-------  1 root   root     10,    58 Feb  5 09:21 acpi_thermal_rel
+crw-r--r--  1 root   root     10,   235 Feb  5 09:21 autofs
+drwxr-xr-x  2 root   root           540 Feb  5 09:21 block
+...
 $ something
 Command 'something' not found
 $ echo "Hello There"
@@ -86,3 +87,17 @@ Hello There
 $ exit
 student$
 ```
+
+### Evaluation Criteria
+
+This project will be reviewed and graded based on the following:
+
+- **Functionality**: Commands perform correctly and emulate standard Unix behavior
+- **Stability**: Shell handles user errors, invalid input, and edge cases without crashing
+
+### Resources
+
+- [man pages](https://man7.org/linux/man-pages/) (e.g., `man 2 open`, `man 2 execve`)
+- [Unix Shell - Wikipedia](https://en.wikipedia.org/wiki/Unix_shell)
+- [BusyBox](https://busybox.net/)
+- [Rust std::fs and std::process Docs](https://doc.rust-lang.org/std/)
