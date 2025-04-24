@@ -6,17 +6,17 @@ Build the function `talking` which will allow you to talk with your computer.
 
 Its answers will be created by you following the rules below.
 
-- It answers `"There is no need to yell, calm down!"` if you yell at it. For example `"LEAVE ME ALONE!"`. Yelling is when all the letters are capital letters.
+- It answers `"There is no need to yell, calm down!"` if you yell at it. For example `"LEAVE ME ALONE!"`. It considers yelling when all the letters are uppercase.
 - It answers `"Sure."` if you ask it something without yelling. For example `"Is everything ok with you?"`.
-- It answers `"Quiet, I am thinking!"` if you yell a question at it. FOr example: `"HOW ARE YOU?"`.
-- It says `"Just say something!"` if you address it without actually saying anything.
+- It answers `"Quiet, I am thinking!"` if you yell a question at it. For example: `"HOW ARE YOU?"`.
+- It says `"Just say something!"` if you don't say anything.
 - It answers `"Interesting"` to anything else.
 
 ### Expected functions
 
 ```rust
 pub fn talking(text: &str) -> &str {
-
+    todo!()
 }
 ```
 
