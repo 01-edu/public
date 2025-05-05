@@ -9,6 +9,7 @@ In this exercise, you will create a Drop Checker API.
 Define the following structures:
 
 - `ThreadPool` containing:
+
   - `drops`: will save the number of dropped threads.
   - `states`: will save the state of multiple threads. If the thread is not dropped, the state will be `false`, and will be `true` otherwise.
 
@@ -20,6 +21,7 @@ Define the following structures:
 You'll also need to add the following associated functions to the structures:
 
 - `ThreadPool` :
+
   - `new`: initializes the structure with default values.
   - `new_thread`: creates a new thread and mutates own state accordingly. Returns a tuple with the `pid` and a new `Thread`.
   - `is_dropped`: that receives a `pid` and returns whether the thread was already dropped.
@@ -27,6 +29,7 @@ You'll also need to add the following associated functions to the structures:
   - `drop_thread`: this **should be called when dropping a `Thread`**. It will receive a `pid` that will be used to change the state of the thread. If the thread was already dropped then it will panic with the message `"X is already dropped"`, where `X` represents the `pid`. Otherwise it should change the state to `true` and increment the `drops` field by 1.
 
 - `Thread`:
+
   - `new`: initializes a new thread.
   - `skill`: function that drops the thread.
 
