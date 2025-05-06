@@ -21,8 +21,6 @@ pub fn check_ms(message: &str) -> Result<&str, &str> {
 Here is a program to test your function
 
 ```rust
-use profanity_filter::*;
-
 fn main() {
     ["hello there", "", "you are stupid", "stupid"]
         .into_iter()

@@ -32,7 +32,8 @@ Your function should recreate the scytale cipher, so that the `String` represent
 ### Expected Functions
 
 ```rust
-fn scytale_cipher(message: String, i: u32) -> String {
+pub fn scytale_cipher(message: String, i: u32) -> String {
+    todo!()
 }
 ```
 
@@ -41,6 +42,8 @@ fn scytale_cipher(message: String, i: u32) -> String {
 Here is a program to test your function
 
 ```rust
+use scytale_cipher::scytale_cipher;
+
 fn main() {
     println!("\"scytale Code\" size=6 -> {:?}", scytale_cipher(String::from("scytale Code"), 6)));
     println!("\"scytale Code\" size=8 -> {:?}", scytale_cipher(String::from("scytale Code"), 8)));
