@@ -4,7 +4,7 @@
 
 Create a **function** which creates a scytale cipher (also known as spartan cipher).
 
-In practice, it is represented by a strip wrapped around a cylinder. The message is written across the loops of the strip (not along the strip). The message becomes *coded* if the radius of the cylinder changes, or the strip is removed from the cylinder.
+In practice, it is represented by a strip wrapped around a cylinder. The message is written across the loops of the strip (not along the strip). The message becomes _coded_ if the radius of the cylinder changes, or the strip is removed from the cylinder.
 
 Your function should recreate the scytale cipher, so that the `String` represents the message, and the `u32` represents the number of times the strip is wrapped around the cylinder.
 
@@ -20,7 +20,6 @@ Your function should recreate the scytale cipher, so that the `String` represent
 ```
 
 **size 8:** `"scytale Code"` -> `"sCcoydtea l e"`
-
 
 ```console
 ------------------------------------------
