@@ -57,6 +57,9 @@ Additional constraints:
 Implementing any of the following will be considered bonus:
 
 - Handle `Ctrl+C` (SIGINT) without crashing the shell
+- Implement the commands exclusively using `low-level system calls` avoiding built-in functions or libraries that abstract file operations.
+
+  - Instead of using functions like the Go `os.Open, os.Remove, and io.Copy`, you would use system calls directly through the `syscall` package using `syscall.Open, syscall.Close, syscall.Read, syscall.Write, syscall.Unlink`.
 - Shell usability enhancements:
   - **Auto-completion**
   - **Command history**
