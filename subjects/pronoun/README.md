@@ -2,10 +2,13 @@
 
 ### Instructions
 
-Create a function named `pronoun` that accepts a string parameter.
-This function returns an object that will have all the personal pronouns, present in the string, as keys. Each key will have a sub object with the first word after each of the personal pronouns found in the string.
+Create a function named `pronoun` that accepts a string as its parameter.
+This function should return an object where each key is a personal pronoun found in the string. The value of each key should be a sub-object containing:
 
-You must also add a `count` property to the sub object, with the amount of occurrences of the pronoun.
+- a `word` array, which includes the first word that follows each occurrence of the pronoun (excluding other pronouns)
+- a `count` property, indicating how many times the pronoun appears in the string.
+
+> Note: If the word that follows a pronoun is also a pronoun, it should be ignored and not included in the word array.
 
 Pronouns:
 

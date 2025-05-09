@@ -70,32 +70,22 @@
 
 ###### As an auditor, is this project up to every standard? If not, why are you failing the project?(Empty Work, Incomplete Work, Invalid compilation, Cheating, Crashing, Leaks)
 
-#### General
+#### Bonus
 
 ###### +Can the Clients change their names?
 
 ###### +Is the chat group informed if a Client changes his name?
 
+###### +Is the server capable of handling multiple separate group chats simultaneously?
+
+###### +Is there more NetCat flags implemented?
+
 ###### +Does the server produce logs about Clients activities?
 
 ###### +Are the server logs saved into a file?
 
-###### +Is there more NetCat flags implemented?
-
 ###### +Does the project present a Terminal UI using JUST this package : https://github.com/jroimartin/gocui?
-
-#### Basic
-
-###### +Does the project run quickly and effectively? (Favoring recursive, no unnecessary data requests, etc...)
 
 ###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
 ###### +Is there a test file for this code?
-
-#### Social
-
-###### +Did you learn anything from this project?
-
-###### +Can it be open-sourced / be used for other sources?
-
-###### +Would you recommend/nominate this program as an example for the rest of the school?
