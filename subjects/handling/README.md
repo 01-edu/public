@@ -4,7 +4,7 @@
 
 Create a **function** `open_or_create` with two arguments:
 
-- `file`, which represents a file path.
+- `path`, which represents a file path.
 - `content`, which represents the content to be written to the file.
 
 This function should try to open the file. If it does not exist, the file should be created.
