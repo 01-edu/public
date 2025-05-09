@@ -10,6 +10,7 @@ If the result of `edit_distance` has more than 50% alikeness to the expected str
 Otherwise `expected_value` should return `None`.
 
 ### Expected Function
+
 > You'll need to work out the function signature for yourself.
 
 ### Usage
@@ -52,5 +53,6 @@ $
 
 ### Notions
 
-- [Crate case](https://crates.io/crates/case)
+- [Crate convert_case](https://crates.io/crates/convert_case)
+- [Crate heck](https://crates.io/crates/heck)
 - [Specifying Dependencies](https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html)

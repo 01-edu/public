@@ -11,7 +11,7 @@ Also create a function named `nb_distinct_words` which will take a reference to 
 ### Expected functions
 
 ```rust
-pub fn word_frequency_counter(words: Vec<&str>) -> HashMap<&str, usize> {}
+pub fn word_frequency_counter<'a>(words: &[&'a str]) -> HashMap<&'a str, usize> {}
 
 pub fn nb_distinct_words(frequency_count: &HashMap<&str, usize>) -> usize {}
 ```
@@ -39,7 +39,7 @@ And its output
 ```console
 $ cargo run
 {"tests": 1, "with": 1, "this": 2, "it": 1, "enough": 1, "is": 2, "but": 1, "sentence": 1, "only": 1, "basic": 3, "again": 1, "for": 1, "be": 1, "once": 1, "very": 2, "should": 1, "few": 1, "a": 2, "repetitions.": 1}
-20
+19
 $
 ```
 
