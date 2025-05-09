@@ -1,4 +1,4 @@
-### User interview
+#### User interview
 
 ###### Is the deliverable labeled as “Name_FirstName_DeliverableName_Date_VersionNumber”?
 
@@ -12,7 +12,7 @@
 
 ###### Does each insight have the name of the person(s) who said it?
 
-### Analytics
+#### Analytics
 
 ###### Is the deliverable labeled as “Name_FirstName_DeliverableName_Date_VersionNumber”?
 
@@ -22,11 +22,13 @@
 
 ###### Is the document clear, simple and easy to read?
 
-###### Are there at least 6 insights different from the examples given in the readme?
+###### Are there at least 5 key figures or insights extracted from the articles?
 
-###### Does each insight have the name of the person(s) who said it?
+###### Is each key figure or insight justified by a quote and the title of the article?
 
-### Personas
+###### Are the insights different from the ones given in the instructions as an example?
+
+#### Personas
 
 ###### Is the deliverable labeled as “Name_FirstName_DeliverableName_Date_VersionNumber”?
 
@@ -52,7 +54,7 @@
 
 ###### Are the insights from ex 1 included in Pierre's persona card?
 
-### User Journey
+#### User Journey
 
 ###### Is the deliverable labeled as “Name_FirstName_DeliverableName_Date_VersionNumber”?
 
@@ -74,7 +76,7 @@
 
 ###### For every thought, is there a main emotion?
 
-### Problem Statement
+#### Problem Statement
 
 ###### Is the deliverable labeled as “Name_FirstName_DeliverableName_Date_VersionNumber”?
 
@@ -90,7 +92,7 @@
 
 ##### Is the problem statement broad enough (check the readme tips to understand broad)?
 
-### Ideation
+#### Ideation
 
 ###### Is there a zip folder?
 
@@ -106,7 +108,7 @@
 
 ###### Is there one main idea to solve the problem?
 
-### Prototyping
+#### Prototyping
 
 ###### Is there a zip folder?
 

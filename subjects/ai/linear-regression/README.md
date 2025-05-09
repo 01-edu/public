@@ -1,6 +1,8 @@
 ![Alt Text](w2_day01_linear_regression_video.gif)
 
-# Linear regression
+## Linear regression
+
+### Overview
 
 The goal of this day is to understand practical Linear regression and supervised learning with Scikit Learn.
 
@@ -9,18 +11,24 @@ studied the size of individuals within a progeny. He was trying to understand wh
 large individuals in a population appeared to have smaller children, more
 close to the average population size; hence the introduction of the term "regression".
 
+### Role play
+
+Imagine being able to draw the perfect line through a cloud of data points, revealing hidden patterns and making predictions that'll make your colleagues go "Wow!" That's the power of Linear Regression, and you're about to become an expert!
+
+### Learning Objective
+
 Today we will learn a basic algorithm used in **supervised learning** : **The Linear Regression**. We will be using **Scikit-learn** which is a machine learning library. It is designed to interoperate with the Python libraries NumPy and Pandas.
 
 We will also learn progressively the Machine Learning methodology for supervised learning - today we will focus on evaluating a machine learning model by splitting the data set in a train set and a test set.
 
 ### Exercises of the day
 
-- Exercise 0: Environment and libraries
-- Exercise 1: Scikit-learn estimator
-- Exercise 2: Linear regression in 1D
-- Exercise 3: Train test split
-- Exercise 4: Forecast diabetes progression
-- Exercise 5: Gradient Descent (**Optional**)
+- **Exercise 0:** Environment and libraries
+- **Exercise 1:** Scikit-learn estimator
+- **Exercise 2:** Linear regression in 1D
+- **Exercise 3:** Train test split
+- **Exercise 4:** Forecast diabetes progression
+- **Exercise 5:** Gradient Descent (**Optional**)
 
 ### Virtual Environment
 
@@ -31,61 +39,36 @@ We will also learn progressively the Machine Learning methodology for supervised
 - Scikit Learn
 - Jupyter or JupyterLab
 
-_Version of Scikit Learn I used to do the exercises: 0.22_. I suggest using the most recent one. Scikit Learn 1.0 is finally available after ... 14 years.
+_Version of Scikit Learn used to do the exercises: 0.22_. We suggest using the most recent one. Scikit Learn 1.0 is finally available after ... 14 years.
 
-### **Resources**
+#### Machine learning methodology and algorithms
 
-### To start with Scikit-learn
+- This course provides a broad introduction to machine learning, data mining, and statistical pattern recognition. Andrew Ng is a star in the Machine Learning community. I recommend spending some time during the projects to focus on some algorithms. However, Python is not the language used for the course:
 
-- https://scikit-learn.org/stable/tutorial/basic/tutorial.html
-
-- https://jakevdp.github.io/PythonDataScienceHandbook/05.02-introducing-scikit-learn.html
-
-- https://scikit-learn.org/stable/modules/linear_model.html
-
-### Machine learning methodology and algorithms
-
-- This course provides a broad introduction to machine learning, data mining, and statistical pattern recognition. Andrew Ng is a star in the Machine Learning community. I recommend spending some time during the projects to focus on some algorithms. However, Python is not the language used for the course. https://www.coursera.org/learn/machine-learning
-
-- https://docs.microsoft.com/en-us/azure/machine-learning/algorithm-cheat-sheet
-
-- https://scikit-learn.org/stable/tutorial/index.html
-
-### Linear Regression
-
-- https://towardsdatascience.com/laymans-introduction-to-linear-regression-8b334a3dab09
-
-- https://towardsdatascience.com/linear-regression-the-actually-complete-introduction-67152323fcf2
-
-### Train test split
-
-- https://machinelearningmastery.com/train-test-split-for-evaluating-machine-learning-algorithms/
-
-- https://developers.google.com/machine-learning/crash-course/training-and-test-sets/video-lecture?hl=en
+- [Resource 1](https://www.youtube.com/playlist?list=PLWD7QtH5pagQevEwjEOCQi1Cgqe3zKf2s),
+- [Resource 2](https://docs.microsoft.com/en-us/azure/machine-learning/algorithm-cheat-sheet).
 
 ---
 
 ---
 
-# Exercise 0: Environment and libraries
+### Exercise 0: Environment and libraries
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
 **Note:** For each quest, your first excerise will be to set up the virtual environment with the required libraries.
 
-I recommend to use:
+We recommend to use:
 
-- the **last stable versions** of Python.
-- the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
-- one of the most recent versions of the libraries required
+- The **last stable versions** of Python.
+- The virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
+- One of the most recent versions of the libraries required
 
-1. Create a virtual environment named `ex00`, with a version of Python >= `3.8`, with the following libraries: `pandas`, `numpy`, `jupyter`, `matplotlib` and `scikit-learn`.
-
----
+1. Create a virtual environment named `ex00`, with a version of Python >= `3.9`, with the following libraries: `pandas`, `numpy`, `jupyter`, `matplotlib` and `scikit-learn`.
 
 ---
 
-# Exercise 1: Scikit-learn estimator
+### Exercise 1: Scikit-learn estimator
 
 The goal of this exercise is to learn to fit a Scikit-learn estimator and use it to predict.
 
@@ -101,7 +84,7 @@ X, y = [[1],[2.1],[3]], [[1],[2],[3]]
 
 ---
 
-# Exercise 2: Linear regression in 1D
+### Exercise 2: Linear regression in 1D
 
 The goal of this exercise is to understand how the linear regression works in one dimension. To do so, we will generate a data in one dimension. Using `make regression` from Scikit-learn, generate a data set with 100 observations:
 
@@ -143,19 +126,23 @@ X, y, coef = make_regression(n_samples=100,
 
 6. Repeat question 2, 4 and compute the MSE on the new data.
 
-https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html
+- [Sklearn](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html)
 
 ---
 
 ---
 
-# Exercise 3: Train test split
+### Exercise 3: Train test split
 
 The goal of this exercise is to learn to split a data set. It is important to understand why we split the data in two sets. To put it in a nutshell: the Machine Learning model learns on the training data and evaluates on the data the model hasn't seen before: the testing data.
 
-This video gives a basic and nice explanation: https://www.youtube.com/watch?v=_vdMKioCXqQ
+This video gives a basic and nice explanation:
 
-This article explains the conditions to split the data and how to split it: https://machinelearningmastery.com/train-test-split-for-evaluating-machine-learning-algorithms/
+- [Resource 1](https://www.youtube.com/watch?v=_vdMKioCXqQ)
+
+This article explains the conditions to split the data and how to split it:
+
+- [Resource 2](https://machinelearningmastery.com/train-test-split-for-evaluating-machine-learning-algorithms/)
 
 ```python
 X = np.arange(1,21).reshape(10,-1)
@@ -164,19 +151,19 @@ y = np.arange(1,11)
 
 1. Split the data using `train_test_split` with `shuffle=False`. The test set represents 20% of the total size of the data set. Print X_train, y_train, X_test, y_test.
 
-https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html
+- [Resource 3](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)
 
 ---
 
 ---
 
-# Exercise 4: Forecast diabetes progression
+### Exercise 4: Forecast diabetes progression
 
 The goal of this exercise is to use Linear Regression to forecast the progression of diabetes. It will not always be precised, you should **ALWAYS** start doing an exploratory data analysis in order to have a good understanding of the data you model. As a reminder here an introduction to EDA:
 
-- https://towardsdatascience.com/exploratory-data-analysis-eda-a-practical-guide-and-template-for-structured-data-abfbf3ee3bd9
+- [Resource 4](https://medium.com/octave-john-keells-group/a-complete-guide-to-exploratory-data-analysis-on-structured-data-112c082892)
 
-The data set used is described in https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.
+The data set used is described in [Resource 5](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes).
 
 ```python
 from sklearn.datasets import load_diabetes
@@ -194,13 +181,13 @@ X, y = diabetes.data, diabetes.target
 
 **WARNING**: This will be explained later this week. But here, we are doing something "dangerous". As you may have read in the data documentation the data is scaled using the whole dataset whereas we should first scale the data on the training set and then use this scaling on the test set. This is a toy example, so let's ignore this detail for now.
 
-https://scikit-learn.org/stable/datasets/toy_dataset.html#diabetes-dataset
+- [Resource 6](https://scikit-learn.org/stable/datasets/toy_dataset.html#diabetes-dataset)
 
 ---
 
 ---
 
-# Exercise 5: Gradient Descent (Optional)
+### Exercise 5: Gradient Descent (Optional)
 
 The goal of this exercise is to understand how the Linear Regression algorithm finds the optimal coefficients.
 
@@ -238,7 +225,7 @@ y_pred1 = a*x1 + b\
 y_pred2 = a*x2 + b\
 y_pred3 = a\*x3 + b
 
-### Greedy approach
+#### Greedy approach
 
 2. Create a function `compute_mse`. Compute mse for `a = 1` and `b = 2`.
    **Warning**: `X.shape` is `(100, 1)` and `y.shape` is `(100, )`. Make sure that `y_preds` and `y` have the same shape before to compute `y_preds-y`.
@@ -310,9 +297,9 @@ The expected output is:
 
 In this example we computed 160 000 times the MSE. It is frequent to deal with 50 features, which requires 51 parameters to fit the Linear Regression. If we try this approach with 50 features we would need to compute **5.07e+132** MSE. Even if we reduce the scope and try only 5 values per coefficients we would have to compute the MSE **4.4409e+35** times. This approach is not scalable and that is why is not used to find optimal coefficients for Linear Regression.
 
-### Gradient Descent
+#### Gradient Descent
 
-In a nutshell, Gradient descent is an optimization algorithm used to minimize some function by iteratively moving in the direction of steepest descent as defined by the negative of the gradient. In machine learning, we use gradient descent to update the parameters (a and b) of our model. Parameters refer to the coefficients used in Linear Regression. Before to start implementing the questions, take the time to read the article. https://jairiidriss.medium.com/gradient-descent-algorithm-from-scratch-using-python-2b36c1548917. It explains the gradient descent and how to implement it. The "tricky" part is the computation of the derivative of the mse. You can admit the formulas of the derivatives to implement the gradient descent (`d_theta_0` and `d_theta_1` in the article).
+In a nutshell, Gradient descent is an optimization algorithm used to minimize some function by iteratively moving in the direction of steepest descent as defined by the negative of the gradient. In machine learning, we use gradient descent to update the parameters (a and b) of our model. Parameters refer to the coefficients used in Linear Regression. Before to start implementing the questions, take the time to read [this article](https://medium.com/@yennhi95zz/4-a-beginners-guide-to-gradient-descent-in-machine-learning-773ba7cd3dfe). It explains the gradient descent and how to implement it. The "tricky" part is the computation of the derivative of the mse. You can admit the formulas of the derivatives to implement the gradient descent (`d_theta_0` and `d_theta_1` in the article).
 
 7. Implement the gradient descent to find optimal a and b with `learning rate = 0.1` and `nbr_iterations=100`.
 
@@ -323,3 +310,25 @@ In a nutshell, Gradient descent is an optimization algorithm used to minimize so
 [ex5q8]: ./w2_day1_ex5_q8.png "MSE + Gradient descent"
 
 9. Use Linear Regression from Scikit-learn. Compare the results.
+
+### Resources
+
+#### To start with Scikit-learn
+
+- [Scikit](https://scikit-learn.org/stable/getting_started.html)
+
+- [Introducing Scikit](https://jakevdp.github.io/PythonDataScienceHandbook/05.02-introducing-scikit-learn.html)
+
+- [Linear Model](https://scikit-learn.org/stable/modules/linear_model.html)
+
+#### Linear Regression
+
+- [Resource 1](https://onlinestatbook.com/2/regression/intro.html)
+
+- [Resource 2](https://www.analyticsvidhya.com/blog/2021/10/everything-you-need-to-know-about-linear-regression/)
+
+#### Train test split
+
+- [Resource 1](https://machinelearningmastery.com/train-test-split-for-evaluating-machine-learning-algorithms/)
+
+- [Resource 2](https://developers.google.com/machine-learning/crash-course/training-and-test-sets/video-lecture?hl=en)

@@ -1,0 +1,30 @@
+name: 🐚 GA-Misc - ShellCheck
+
+on:
+  pull_request:
+    paths-ignore:
+      - '.github/**'
+
+    types: [opened, reopened, synchronize]
+
+jobs:
+  GA-Misc-Check-ShellCheck:
+    name: 🐚 Run ShellCheck
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🐧 Check out repository code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🔍 Get all changed SHELL files
+        id: changed-file-list
+        run: |
+          echo "changed_files=$(git diff --name-only --diff-filter=ACMRT --merge-base origin/master | grep -E "\.sh$" | xargs)" >> $GITHUB_OUTPUT
+
+      - name: 🧙‍♂️ Run Format checks
+        if: steps.changed-file-list.outputs.changed_files != ''
+        run: |
+          npm i -g shellcheck
+          npx shellcheck ${{ steps.changed-file-list.outputs.changed_files }}

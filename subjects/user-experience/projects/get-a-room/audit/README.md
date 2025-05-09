@@ -1,6 +1,6 @@
 #### Get a room
 
-###### At least 5 people are attending the presentation
+###### Are there at least 5 people attending the presentation?
 
 ###### Have the feedback forms been shared at the beginning of the presentation?
 

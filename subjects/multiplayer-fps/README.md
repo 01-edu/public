@@ -16,19 +16,19 @@ The game should present a specific User Interface, in which the minimum requirem
 
 #### Architecture
 
-- A peer-to-peer network that will allow other players to join your server and play against each other.
-- Your implementation should allow one client and the server to run in the same machine and all the other clients to connect from different computers.
+- Implement a client-server architecture where clients connect to a central server to play the game.
+- Your implementation should allow one client and the server to run on the same machine, with other clients connecting from different machines.
 - Use the UDP protocol to enable the communication between the clients and the server.
 - The game should have at least 3 levels with increasing difficulty (with difficulty we mean, making the maze harder, with more dead ends).
 
 You will have to develop the game server and also a client application:
 
-- The server must accept as much connections as possible (the minimum should be 10).
+- The server must accept as many connections as possible (the minimum should be 10).
 - When the client is initialized, the game should ask for:
   - The IP address of the server, allowing the client application to connect to any server.
-  - A username in order to distinguish users.
+  - A username for identification.
 
-After providing the above information, the game should start and open the graphical interface, in which the player should join and start playing the game.
+After providing the above information, the game should start and open the graphical interface, allowing the player to join and start playing the game.
 
 Example:
 Assuming that you can connect to a server in the same computer.
@@ -49,7 +49,7 @@ The game should always have a frame rate above 50 fps (frames per second).
 
 As bonus for this project here are some ideas:
 
-- Implement a level editor to allow player to create their own mazes.
+- Implement a level editor to allow players to create their own mazes.
 - Implement an algorithm that generates automatically new mazes.
 - Implement A.I. players to allow playing the game without having to wait for more people to join to the server.
 - For the basic implementation you can initialize the game from the command line. As a bonus you can implement the initialization of the game as part of the graphical interface and save a history of the hosts with an alias so it's easier to reconnect to known servers.

@@ -30,7 +30,6 @@ There must be three models of cars on the map the character can choose from. All
 - an Audi A8 year 2011 car.
 - a Tesla Model 3 car.
 - The Mass, Acceleration, Number of gears, Max speed, Torque Curve, etc. needs to be really close of the selected vehicle.
-- This [website](https://www.automobile-catalog.com) could help you find what you are looking for.
 
 To create the map you should use the Landscape tool. Also add a track using spline roads.
 
@@ -39,6 +38,7 @@ After downloading and unzipping this [file](https://assets.01-edu.org/Unreal-Eng
 When finished, your project should look like the [“Expected Result” video](https://youtu.be/4dXjFKh_jjY).
 
 > Do not forget to zip up the project compile and save everything for peer correction.
+> If it is not possible to upload files to Gitea due to their size, use GitHub instead and have a look at [Git LSF](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)
 
 #### Bonus
 

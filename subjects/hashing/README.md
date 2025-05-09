@@ -2,25 +2,24 @@
 
 ### Instructions
 
-Given a list of integers (`Vec<i32>`) write three **functions**.
+Given a list of integers write three **functions**.
 
--`mean`: that calculates the mean (the average value) of all the values in the list.
+- `mean`: that calculates the mean (the average value) of all the values in the list.
 
 - `median`: that calculates the median (for a sorted list, it is the value in the middle). If there is an even amount of numbers in the list, the middle pair must be determined, added together, and divided by two to find the median value.
 
-- `mode` that calculates the mode (the value
-that appears more often).
+- `mode` that calculates the mode (the value that appears more often).
 
 ### Expected Functions
 
 ```rust
-pub fn mean(list: &Vec<i32>) -> f64 {
+pub fn mean(list: &[i32]) -> f64 {
 }
 
-pub fn median(list: &Vec<i32>) -> i32 {
+pub fn median(list: &[i32]) -> i32 {
 }
 
-pub fn mode(list: &Vec<i32>) -> i32 {
+pub fn mode(list: &[i32]) -> i32 {
 }
 ```
 
@@ -32,12 +31,13 @@ Here is a program to test your function.
 use hashing::*;
 
 fn main() {
-	println!("Hello, world!");
-	let v = vec![4, 7, 5, 2, 5, 1, 3];
-	println!("mean {}", hashing::mean(&v));
-	println!("median {}", hashing::median(&v));
-	println!("mode {}", hashing::mode(&v));
+    let v = [4, 7, 5, 2, 5, 1, 3];
+
+    println!("mean {}", mean(&v));
+    println!("median {}", median(&v));
+    println!("mode {}", mode(&v));
 }
+
 ```
 
 And its output;

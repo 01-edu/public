@@ -24,7 +24,7 @@ Additionally, the program must still be able to run with a single `[STRING]` arg
 ### Usage
 
 ```console
-$ go run . "hello" standard | cat -e
+student$ go run . "hello" standard | cat -e
  _              _   _          $
 | |            | | | |         $
 | |__     ___  | | | |   ___   $
@@ -33,7 +33,7 @@ $ go run . "hello" standard | cat -e
 |_| |_|  \___| |_| |_|  \___/  $
                                $
                                $
-$ go run . "Hello There!" shadow | cat -e
+student$ go run . "Hello There!" shadow | cat -e
                                                                                          $
 _|    _|          _| _|                _|_|_|_|_| _|                                  _| $
 _|    _|   _|_|   _| _|   _|_|             _|     _|_|_|     _|_|   _|  _|_|   _|_|   _| $
@@ -42,7 +42,7 @@ _|    _| _|       _| _| _|    _|           _|     _|    _| _|       _|       _| 
 _|    _|   _|_|_| _| _|   _|_|             _|     _|    _|   _|_|_| _|         _|_|_| _| $
                                                                                          $
                                                                                          $
-$ go run . "Hello There!" thinkertoy | cat -e
+student$ go run . "Hello There!" thinkertoy | cat -e
                                                 $
 o  o     o o           o-O-o o                o $
 |  |     | |             |   |                | $

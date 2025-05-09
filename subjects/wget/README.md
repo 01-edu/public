@@ -126,14 +126,14 @@ This flag should accept different value types, example: k and M. So you can put 
 $ ls
 download.txt   main.go
 $ cat download.txt
-http://ipv4.download.thinkbroadband.com/20MB.zip
-http://ipv4.download.thinkbroadband.com/10MB.zip
+https://assets.01-edu.org/wgetDataSamples/20MB.zip
+https://assets.01-edu.org/wgetDataSamples/Image_10MB.zip
 $ go run . -i=download.txt
 content size: [10485760, 20971520]
 finished 10MB.zip
 finished 20MB.zip
 
-Download finished:  [http://ipv4.download.thinkbroadband.com/20MB.zip http://ipv4.download.thinkbroadband.com/10MB.zip]
+Download finished:  [https://assets.01-edu.org/wgetDataSamples/20MB.zip https://assets.01-edu.org/wgetDataSamples/Image_10MB.zip]
 
 ```
 
@@ -167,6 +167,16 @@ example:
 
 ```console
 $ go run . --mirror -X=/assets,/css https://example.com
+```
+
+- [Convert Links for Offline Viewing](https://www.gnu.org/software/wget/manual/wget.html#The-%60--convert_002dlinks%60-Option) (`--convert-links`)
+
+> this flag will convert the links in the downloaded files so that they can be viewed offline, changing them to point to the locally downloaded resources instead of the original URLs.
+
+example:
+
+```console
+$ go run . --mirror --convert-links https://example.com
 ```
 
 ### Hint

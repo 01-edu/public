@@ -119,4 +119,6 @@ During the roleplay, ask them the following questions:
 
 ###### +Did the student implemented any feature or anything that you would consider a bonus?
 
+###### +Did the student used his/her own `crud-master` source code for this project?
+
 ###### +Is this project an outstanding project?

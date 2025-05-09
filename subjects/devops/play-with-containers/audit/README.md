@@ -24,10 +24,9 @@ A `README.md` file and all files used to create, delete and manage the student i
 
 ###### Does the `README.md` file contain all the required information to run and manage the solution (prerequisites, configuration, setup, usage, etc)?
 
-#### Check the student infrastructure:
+##### Check the student infrastructure.
 
-The student must implement this architecture:
-![architecture](../pictures/architecture.png)
+###### Does the student architecture reflect the infrastructure enforced by the subject?
 
 ##### Run the student infrastructure:
 
@@ -43,8 +42,6 @@ api-gateway-app      ... done
 <...>
 user:~$
 ```
-
-###### Does the student architecture reflect the infrastructure enforced by the subject?
 
 ###### Does the infrastructure start correctly?
 

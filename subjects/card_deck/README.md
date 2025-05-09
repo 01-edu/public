@@ -19,10 +19,6 @@ Define:
 - The associated **function** `random` for `Rank` and `Suit` returns a random `Rank` and `Suit` respectively.
 - Finally define the **function** `winner_card` which returns `true` if the card passed as an argument is an ace of spades.
 
-### Dependencies
-
-[rand = "0.3.14"](https://docs.rs/crate/rand/0.3.14)
-
 ### Expected Functions and Structures
 
 ```rust
@@ -33,24 +29,24 @@ pub enum Rank {
 }
 
 impl Suit {
-	pub fn random() -> Suit {
-	}
+    pub fn random() -> Suit {
+    }
 
-	pub fn translate(value: u8) -> Suit {
-	}
+    pub fn translate(value: u8) -> Suit {
+    }
 }
 
 impl Rank {
-	pub fn random() -> Rank {
-	}
+    pub fn random() -> Rank {
+    }
 
-	pub fn translate(value: u8) -> Rank {
-	}
+    pub fn translate(value: u8) -> Rank {
+    }
 }
 
 pub struct Card {
-	pub suit: Suit,
-	pub rank: Rank,
+    pub suit: Suit,
+    pub rank: Rank,
 }
 
 pub fn winner_card(card: &Card) -> bool {
@@ -62,18 +58,19 @@ pub fn winner_card(card: &Card) -> bool {
 Here is a program to test your function
 
 ```rust
+use card_deck::*;
+
 fn main() {
-	let your_card = Card {
-		rank: Rank::random(),
-		suit: Suit::random(),
-	};
+    let your_card = Card {
+        rank: Rank::random(),
+        suit: Suit::random(),
+    };
 
-	println!("Your card is {:?}", your_card);
+    println!("Your card is {:?}", &your_card);
 
-	// Now if the card is an Ace of Spades print "You are the winner"
-	if card_deck::winner_card(&your_card) {
-		println!("You are the winner!");
-	}
+    if card_deck::winner_card(&your_card) {
+        println!("You are the winner!");
+    }
 }
 ```
 
@@ -87,5 +84,5 @@ $
 
 ### Notions
 
-- [Crate rand](https://docs.rs/rand/0.3.14/rand/)
+- [Crate rand](https://docs.rs/rand/latest/rand/)
 - [Enums](https://doc.rust-lang.org/book/ch06-00-enums.html)

@@ -1,0 +1,22 @@
+[
+  {
+    "description": "duplicate value should repeat 'I told you so'",
+    "code": "let robot = {}\nlet sentence = 'I told you so'\n// Your code\nequal(duplicate, 'I told you so, I told you so!')"
+  },
+  {
+    "description": "duplicate value should repeat 'Not again'",
+    "code": "let robot = {}\nlet sentence = 'Not again'\n// Your code\nequal(duplicate, 'Not again, Not again!')"
+  },
+  {
+    "description": "duplicate value should repeat 'I knew it'",
+    "code": "let robot = {}\nlet sentence = 'I knew it'\n// Your code\nequal(duplicate, 'I knew it, I knew it!')"
+  },
+  {
+    "description": "Altered object must match the expected result Nova",
+    "code": "let sentence = ''\nlet robot = {\n  brand: 'Nova',\n  batteryLevel: 247,\n}\n\n// Your code\n\nequal(robot, {\n  brand: 'Nova',\n  model: 'RX-78',\n  batteryLevel: 257,\n  fullName: 'Nova RX-78',\n})"
+  },
+  {
+    "description": "Altered object must match the expected result Ignite",
+    "code": "let sentence = ''\nlet robot = {\n  brand: 'Ignite',\n  batteryLevel: 123,\n}\n\n// Your code\n\nequal(robot, {\n  brand: 'Ignite',\n  model: 'RX-78',\n  batteryLevel: 133,\n  fullName: 'Ignite RX-78',\n})"
+  }
+]

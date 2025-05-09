@@ -1,5 +1,9 @@
 #### Functional
 
+##### Inspect the game source code.
+
+###### Was the `mini-framework` the only technology/framework used to develop the project? Any other framework or technology such as canvas or Web-GL are not allowed.
+
 ##### Try to open the game.
 
 ###### Were you asked for a nickname?
@@ -10,9 +14,9 @@
 
 ##### Try to enter with another user (in another browser or in private browser).
 
-###### Did the player counter incremented by 1?
+###### Did the player counter increment by 1?
 
-###### After entering with another user, can all users chat with each other in realtime (using websockets)?
+###### After entering with another user, can all users chat with each other in real time (using websockets)?
 
 ##### Wait 20 seconds with two users in the waiting page.
 
@@ -70,10 +74,14 @@
 
 #### Bonus
 
-###### +Are players' lives displayed?
+###### +Is there a `Solo + Co-Op mode` in the game as described in the subject?
 
-###### +Is the winner shown after the game in any way?
+###### +Are 2 or more extra power ups, as described in the [subject's bonus section](../README.md), implemented?
 
-###### +Is there a way to start another game after a game is over?
+###### +When a player dies, is a random power up release as described in the subject's bonus section?
+
+###### +Is there a team mode implemented?
+
+###### +Can the player interact with the game after death as described in the subject's bonus section?
 
 ###### +Do you think in general this project is well done?

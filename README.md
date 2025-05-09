@@ -1,13 +1,26 @@
-### Welcome to the Public Repository of the 01 Edu System
+# Welcome to the [Public](https://github.com/01-edu/public) Repository of the [01 Edu System](https://github.com/01-edu) 👋
 
-Our courses are meticulously studied in order to provide you with quality projects.
-Please take into account our approach before making **Issues**
+![01-Edu](https://github.com/user-attachments/assets/addd2e35-d07c-4201-98b7-521443ad38e6)
 
-Some feedback relates to the **ambiguity of the subject**-**lack of precision**, and this is **voluntary on our part**.
+### 🍎 Our Courses
 
-Do not hesitate to contribute by making a PR in the **content-update branch**.
+All of our courses are meticulously crafted to offer challenging yet enjoyable, high-quality subjects and projects.
 
-Thank You :smile:
-# Content Team
+### 🎭 **Our Philosophy**
 
-![](https://www.01talent.com/wp-content/uploads/2021/10/01Talent-Vert-Blanc.png.webp)
+Some of our subjects are **intentionally designed** to be **ambiguous** or **less specific**, reflecting our unique pedagogical approach. Please keep this in mind before reporting any [**⁉️ issues**](https://github.com/01-edu/public/issues) or support requests.
+
+### 🫶 **Contribute**
+
+We welcome contributions! Feel free to submit a [**🪢 pull request**](https://github.com/01-edu/public/pulls). Due to the high volume of tasks, there may be a delay in reviewing your submission.
+
+Thank you!<br>
+**📚 The Content Team**
+
+---
+
+### 🙌 Contributors
+
+We extend our sincere gratitude to all the contributors.
+
+[![Contributors](https://contrib.rocks/image?repo=01-edu/public)](https://github.com/01-edu/public/graphs/contributors)

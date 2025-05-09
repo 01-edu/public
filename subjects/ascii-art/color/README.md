@@ -4,17 +4,25 @@
 
 You must follow the same [instructions](../README.md) as in the first subject but this time with colors.
 
-The output should manipulate colors using the **flag** `--color=<color> <letters to be colored>`, in which `--color` is the flag and `<color>` is the color desired by the user and `<letters to be colored>` is the letter or letters that you can chose to be colored. These colors can be achieved using different notations (color code systems, like `RGB`, `hsl`, `ANSI`...), it is up to you to choose which one you want to use.
+The output should manipulate colors using the **flag** `--color=<color> <substring to be colored>`, in which `--color` is the flag and `<color>` is the color desired by the user and `<substring to be colored>` is the substring that you can chose to be colored. These colors can be achieved using different notations (color code systems, like `RGB`, `hsl`, `ANSI`...), it is up to you to choose which one you want to use.
 
-- You should be able to choose between coloring a single letter or a set of letters.
-- If the letter is not specified, the whole `string` should be colored.
+- The substring to be colored can be a single letter or more
+- If the substring is not specified, the whole `string` should be colored.
 - The flag must have exactly the same format as above, any other formats must return the following usage message:
 
 ```console
 Usage: go run . [OPTION] [STRING]
 
-EX: go run . --color=<color> <letters to be colored> "something"
+EX: go run . --color=<color> <substring to be colored> "something"
 ```
+
+### Usage
+
+```shell
+$ go run . --color=red kit "a king kitten have kit"
+```
+
+For the example above, the substring `kit` in the word `kitten` and the word `kit` at the end should be colored.
 
 If there are other `ascii-art` optional projects implemented, the program should accept other correctly formatted `[OPTION]` and/or `[BANNER]`.
 Additionally, the program must still be able to run with a single `[STRING]` argument.
@@ -27,7 +35,7 @@ Additionally, the program must still be able to run with a single `[STRING]` arg
 
 ### Allowed packages
 
-- Only the [standard Go](https://golang.org/pkg/) packages are allowed
+- Only the [standard Go](https://golang.org/pkg) packages are allowed
 
 This project will help you learn about :
 

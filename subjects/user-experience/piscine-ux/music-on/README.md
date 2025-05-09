@@ -1,4 +1,4 @@
-## Heuristics
+### Heuristics
 
 **Context:**
 
@@ -25,7 +25,7 @@ Conduct a heuristic analysis on **one** of these websites:
 
 **Tips:**
 
-- Pay attention to the global aspect of the document. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
+- Pay attention to the global aspect of the documents. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
 
 **Resources:**
 
@@ -41,7 +41,7 @@ Conduct a heuristic analysis on **one** of these websites:
 
 'If you think design is expensive, you should look at the cost of bad design’ Ralf Speth | Former CEO Jaguar Land Rover
 
-## Site map
+### Site map
 
 ### Instructions
 
@@ -81,7 +81,7 @@ Stick to the website you have chosen in the previous exercise "heuristics" and d
 
 "The organization, search, and navigation systems that help people to complete tasks, find what they need, and understand what they’ve found’ Peter Morville | Information Architecture for the WWW.
 
-## JTBD
+### JTBD
 
 ### Instructions
 
@@ -121,7 +121,7 @@ And remember: You are not your user!
 - "Documenting the what and why of each element promotes organization and makes the handoff to the development team much smoother." UX Booth
 - "When we buy a product, we essentially "hire" something to get a job done. If it does the job well, when we are confronted with the same job, we hire that same product again. And if the product does a crummy job, we "fire" it and look around for something else we might hire to solve the problem." Clayton M Christensen
 
-## Card sorting
+### Card sorting
 
 ### Instructions
 
@@ -168,7 +168,7 @@ Don't forget to:
 - [10 things to know about card sorting](http://www.measuringu.com/blog/card-sorting.php)
 - [Card sorting: a definitive guide](http://boxesandarrows.com/card-sorting-a-definitive-guide/)
 
-## Music label wireframes
+### Music label wireframes
 
 ### Instructions
 
@@ -218,7 +218,7 @@ Vocabulary:
 
 - Figma.
 
-## Test protocol
+### Test protocol
 
 ### Instructions
 
@@ -257,7 +257,7 @@ Don't forget to:
 
 - You need to detect: How many errors do users make? How severe are these errors? How easily can they recover from the errors?
 
-## Run 5 tests
+### Run 5 tests
 
 ### Instructions
 

@@ -6,7 +6,7 @@
 
 ##### Run `python --version`.
 
-###### Does it print `Python 3.x`? x >= 8
+###### Does it print `Python 3.x`? x >= 9
 
 ###### Do `import jupyter`, `import numpy`, `import pandas` and `import keras` run without any error?
 
@@ -111,20 +111,6 @@ model = keras.Sequential()
 model.add(Dense(16, input_shape=(5,), activation= 'sigmoid'))
 model.add(Dense(8, activation= 'sigmoid'))
 model.add(Dense(5, activation= 'softmax'))
-```
-
----
-
----
-
-#### Exercise 4: Multi classification - Optimize
-
-###### For question 1, is the chunk of code the following?
-
-```
-model.compile(loss='categorical_crossentropy',
-              optimizer='adam',
-              metrics=['accuracy'])
 ```
 
 ---

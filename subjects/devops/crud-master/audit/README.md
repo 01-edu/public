@@ -1,22 +1,22 @@
 #### Functional
 
-##### Before we start, let's check we have the necessary tools to perform the tests. You should make sure VirtualBox, Vagrant and Postman are installed, if not you should install them.
+##### Before we start, let's check we have the necessary tools to perform the tests. You should make sure VirtualBox (or an equivalent software), Vagrant and Postman are installed, if not you should install them.
 
 #### Documentation
 
 ##### Take a look at the `README.md` file provided by the student.
 
-###### Does the file includes enough context and details to understand and run the project?
+###### Does the file include enough context and details to understand and run the project?
 
 #### VM Configuration
 
-##### In the directory of the project run `vagrant up --provider virtualbox` and then run `vagrant status`.
+##### In the directory of the project run `vagrant up` and then run `vagrant status`.
 
 ###### Can you confirm that the three VMs (`gateway-vm`, `inventory-vm` and `billing-vm`) are up and running?
 
 ##### Locate the `.env` file in the root of the project, run `cat .env`:
 
-###### Does the output contains all the necessary credentials for the microservices to run properly?
+###### Does the output contain all the necessary credentials for the microservices to run properly?
 
 ###### Is the source code free from any credential that could have been added to the `.env` file?
 

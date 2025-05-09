@@ -1,46 +1,44 @@
-#### NLP-enriched News Intelligence platform
+#### NLP Scraper
 
 ##### Preliminary
 
-```
-project
-│   README.md
-│   environment.yml
-│
-└───data
-│   │   topic_classification_data.csv
-│
-└───results
-│   │   topic_classifier.pkl
-│   │   learning_curves.png
-│   │   enhanced_news.csv
-|
-|───nlp_engine
-│
-
-```
-
-###### Does the structure of the project look like the above?
-
-###### Does the readme file give an introduction of the project, show the username, describe the feature engineering and show the best score on the leaderboard?
+###### Does the structure of the project look like the one described in the subject?
 
 ###### Does the environment contain all libraries used and their versions that are necessary to run the code?
 
-##### Scrapper
+##### Scraper
 
-##### There are at least 300 news articles stored in the file system or the database.
+##### Run the scraper with `python scraper_news.py` and fetch 300 articles. If needed, stop the program manually when enough data has been retrieved.
 
-###### Run the scrapper with `python scrapper_news.py` and fetch 3 documents. The scrapper is not expected to fetch 3 documents and stop by itself, you can stop it manually. does it run without any error and store the 3 files as expected?
+###### Does it run without any error and store the articles as described in the subject?
 
 ##### Topic classifier
 
 ###### Are the learning curves provided?
 
-###### Do the learning curves prove the topics classifier is trained correctly - without overfitting?
+###### Do the learning curves prove the topics classifier is trained correctly - without overfitting? Ask the student to explain what the term "overfitting" means and how he avoided this phenomenon.
+
+> Additionally, you can look for external resources. For example, Wikipedia has a good page on "overfitting".
+
+##### Ask the student to train and store the topic classifier model in a file named `topic_classifier.pkl`.
 
 ###### Can you run the topic classifier model on the test set without any error?
 
-###### Does the topic classifier score an accuracy higher than 95%?
+###### Does the topic classifier score an accuracy higher than 95% on the given datasets?
+
+##### NLP engine output on 300 articles
+
+###### Can you run `python nlp_enriched_news.py` without any error?
+
+###### Does the DataFrame saved in the `csv` file contain 300 different rows?
+
+###### Are the columns of the DataFrame as defined in the subject `Deliverable` section?
+
+###### Does the output of the NLP engine correspond to the output defined in the subject `Deliverable` section?
+
+##### Analyse the output: relevance of the topic(s) matched, relevance of the sentiment, relevance of the scandal detected (if detected on the three articles) and relevance of the company(ies) matched.
+
+###### Is the information presented consistent and accurate?
 
 ##### Scandal detection
 
@@ -49,62 +47,3 @@ project
 ###### Does the DataFrame flag the top 10 articles with the highest likelihood of environmental scandal?
 
 ###### Is the distance or similarity saved in the DataFrame?
-
-##### NLP engine output on 300 articles
-
-###### Does the DataFrame contain 300 different rows?
-
-###### Are the columns of the DataFrame as expected?
-
-```
-Date scrapped (date)
-Title (str)
-URL (str)
-Body (str)
-Org (str)
-Topics (list str)
-Sentiment (list float or float)
-Scandal_distance (float)
-Top_10 (bool)
-
-```
-
-##### Analyse the DataFrame with 300 articles: relevance of the topics matched, relevance of the sentiment, relevance of the scandal detected and relevance of the companies matched. The algorithms are not 100% accurate so you should expect a few issues in the results.
-
-##### NLP engine on 3 articles
-
-###### Can you run `python nlp_enriched_news.py` without any error?
-
-###### Does the output of the nlp engine correspond to the output below?
-
-```prompt
-python nlp_enriched_news.py
-
-Enriching <URL>:
-
-Cleaning document ... (optional)
-
----------- Detect entities ----------
-
-Detected <X> companies which are <company_1> and <company_2>
-
----------- Topic detection ----------
-
-Text preprocessing ...
-
-The topic of the article is: <topic>
-
----------- Sentiment analysis ----------
-
-Text preprocessing ... (optional)
-The title which is <title> is <sentiment>
-The body of the article is <sentiment>
-
----------- Scandal detection ----------
-
-Computing embeddings and distance ...
-
-Environmental scandal detected for <entity>
-```
-
-##### Analyse the output: relevance of the topic(s) matched, relevance of the sentiment, relevance of the scandal detected (if detected on the three articles) and relevance of the companie(s) matched.

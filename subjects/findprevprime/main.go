@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"piscine"
+)
 
 func main() {
-	fmt.Println(FindPrevPrime(5))
-	fmt.Println(FindPrevPrime(4))
+	fmt.Println(piscine.FindPrevPrime(5))
+	fmt.Println(piscine.FindPrevPrime(4))
 }

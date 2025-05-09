@@ -1,45 +1,8 @@
-#### Financial strategies on the SP500
+#### SP500 strategies
 
-This documents is the correction of the project 4. Some steps are detailed in W1D5E4.
+###### Is the structure of the project like the one presented in the `Project repository structure` in the subject?
 
-```
-project
-│   README.md
-│   environment.yml
-│
-└───data
-│   │   sp500.csv
-│
-└───results
-│   │
-|   |───cross-validation
-│   │   │   ml_metrics_train.csv
-│   │   │   metric_train.csv
-│   │   │   top_10_feature_importance.csv
-│   │   │   metric_train.png
-│   │
-|   |───selected model
-│   │   │   selected_model.pkl
-│   │   │   selected_model.txt
-│   │   │   ml_signal.csv
-│   │
-|   |───strategy
-|   |   |   strategy.png
-│   │   │   results.csv
-│   │   │   report.md
-|
-|───scripts (free format)
-│   │   features_engineering.py
-│   │   gridsearch.py
-│   │   model_selection.py
-│   │   create_signal.py
-│   │   strategy.py
-
-```
-
-###### Is the structure of the project like above?
-
-###### Does the readme file summarize how to run the code and explain the global approach?
+###### Does the README file summarize how to run the code and explain the global approach?
 
 ###### Does the environment contain all libraries used and their versions that are necessary to run the code?
 
@@ -47,11 +10,11 @@ project
 
 ##### **Data processing and feature engineering**
 
-###### Is the data splitted in a train set and test set?
+###### Is the data split in a train set and test set?
 
 ###### Is the last day of the train set D and the first day of the test set D+n with n>0? Splitting without considering the time series structure is wrong.
 
-###### Is there no leakage? unfortunately there's no automated way to check if the dataset is leaked. This step is validated if the features of date d are built as follow:
+###### Is there no leakage? Unfortunately, there's no automated way to check if the dataset is leaked. This step is validated if the features of date d are built as follows:
 
 | Index   |          Features          |           Target |
 | ------- | :------------------------: | ---------------: |
@@ -71,9 +34,9 @@ project
 
 ###### Do all train folds have more than 2y history? If you use time series split, checking that the first fold has more than 2y history is enough.
 
-###### Does the last validation set of the train set not overlap on the test set?
+###### Can you confirm that the last validation set of the train data is not overlapping with the test data?
 
-###### Do all of the folds not contain data from the same day? The split should be done on the dates.
+###### Are all the data folds split by date? A fold should not contain repeated data from the same date and ticker.
 
 ###### Is There a plot showing your cross-validation? As usual, all plots should have named axis and a title. If you chose a Time Series Split the plot should look like this:
 
@@ -85,13 +48,13 @@ project
 
 ###### Has the test set not been used to train the model and select the model?
 
-###### Is the selected model saved in the pkl file and described in a txt file?
+###### Is the selected model saved in a `pkl` file and described in a `txt` file?
 
 ##### Selected model
 
-###### Are the ml metrics computed on the train set agregated? sum or median.
+###### Are the ML metrics computed on the train set aggregated (sum or median)?
 
-###### Are the ml metrics saved in a csv file?
+###### Are the ML metrics saved in a `csv` file?
 
 ###### Are the top 10 important features per fold saved in `top_10_feature_importance.csv`?
 
@@ -119,7 +82,7 @@ _Note that, this can be done also on the test set **IF** this hasn't helped to s
 
 ###### Is the Pnl computed as: strategy \* futur_return?
 
-###### Does the strategy give the amount invested at time t on asset i?
+###### Does the strategy give the amount invested at time `t` on asset `i`?
 
 ###### Does the plot `strategy.png` contain an x axis: date?
 
@@ -135,7 +98,7 @@ _Note that, this can be done also on the test set **IF** this hasn't helped to s
 
 ###### Does the report detail the features used?
 
-###### Does the report detail the pipeline used (imputer, scaler, dimension reduction and model)?
+###### Does the report detail the pipeline used (`Imputer`, `Scaler`, dimension reduction and model)?
 
 ###### Does the report detail the cross-validation used (length of train sets and validation sets and if possible the cross-validation plot)?
 

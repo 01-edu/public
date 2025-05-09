@@ -1,8 +1,18 @@
-# NLP
+## NLP
+
+### Overview
 
 “NLP makes it possible for humans to talk to machines:” This branch of AI enables computers to understand, interpret, and manipulate human language. This technology is one of the most broadly applied areas of machine learning and is critical in effectively analyzing massive quantities of unstructured, text-heavy data.
 
-Machine learning algorithms cannot work with raw text directly. Rather, the text must be converted into vectors of numbers. In natural language processing, a common technique for extracting features from text is to place all of the words that occur in the text in an unordered bucket. This approach is called a bag of words model or BoW for short. It’s referred to as a “bag” of words because any information about the structure of the sentence is lost. This is useful to train usual machine learning models on text data. Other types of models as RNNs or LSTMs take as input a complete and ordered sequence.
+### Role Play
+
+You're a Natural Language Processing (NLP) specialist at a tech startup developing a sentiment analysis tool for social media posts. Your task is to build the preprocessing pipeline and create a bag-of-words representation for tweet analysis.
+
+### Learning Objectives
+
+Machine learning algorithms cannot work with raw text directly. Rather, the text must be converted into vectors of numbers. In natural language processing, a common technique for extracting features from text is to place all of the words that occur in the text in an unordered bucket. This approach is called a bag of words model or BoW for short.
+
+It’s referred to as a “bag” of words because any information about the structure of the sentence is lost. This is useful to train usual machine learning models on text data. Other types of models as RNNs or LSTMs take as input a complete and ordered sequence.
 
 Almost every Natural Language Processing (NLP) task requires text to be preprocessed before training a model. The article **Your Guide to Natural Language Processing (NLP)** gives a very good introduction to NLP.
 
@@ -10,14 +20,14 @@ Today, we we will learn to preprocess text data and to create a bag of word repr
 
 ### Exercises of the day
 
-- Exercise 0: Environment and libraries
-- Exercise 1: Lower case
-- Exercise 2: Punctuation
-- Exercise 3: Tokenization
-- Exercise 4: Stop words
-- Exercise 5: Stemming
-- Exercise 6: Text preprocessing
-- Exercise 7: Bag of Word representation
+- **Exercise 0:** Environment and libraries
+- **Exercise 1:** Lower case
+- **Exercise 2:** Punctuation
+- **Exercise 3:** Tokenization
+- **Exercise 4:** Stop words
+- **Exercise 5:** Stemming
+- **Exercise 6:** Text preprocessing
+- **Exercise 7:** Bag of Word representation
 
 ### Virtual Environment
 
@@ -28,37 +38,31 @@ Today, we we will learn to preprocess text data and to create a bag of word repr
 - NLTK
 - Tabulate
 
-I suggest to use the most recent libraries.
-
-### **Resources**
-
-- https://towardsdatascience.com/your-guide-to-natural-language-processing-nlp-48ea2511f6e1
-
-- https://towardsdatascience.com/word-embeddings-for-nlp-5b72991e01d4
+> We suggest to use the most recent libraries.
 
 ---
 
 ---
 
-# Exercise 0: Environment and libraries
+### Exercise 0: Environment and libraries
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
 > Note: For each quest, your first exercise will be to set up the virtual environment with the required libraries.
 
-I recommend to use:
+We recommend using:
 
-- the **last stable versions** of Python.
-- the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
-- one of the most recent versions of the libraries required
+- The **last stable versions** of Python.
+- The virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
+- one of the most recent versions of the libraries required.
 
-1. Create a virtual environment named with a version of Python >= `3.8`, with the following libraries: `pandas`, `jupyter`, `nltk` and `scikit-learn`.
-
----
+1. Create a virtual environment named with a version of Python >= `3.9`, with the following libraries: `pandas`, `jupyter`, `nltk` and `scikit-learn`.
 
 ---
 
-# Exercise 1: Lowercase
+---
+
+### Exercise 1: Lowercase
 
 The goal of this exercise is to learn to lowercase text data in Python. Note that if the volume of data is low the text data can be stored in a Pandas DataFrame or Series. But, when dealing with high volumes (high but not huge), using a Pandas DataFrame or Series is not efficient. Data structures as dictionaries or list are more adapted.
 
@@ -77,7 +81,7 @@ series_data = pd.Series(list_, name='text')
 
 ---
 
-# Exercise 2: Punctuation
+### Exercise 2: Punctuation
 
 The goal of this exercise is to learn to deal with punctuation. In Natural Language Processing, some basic approaches as Bag of Words model the text as an unordered combination of words. In that case the punctuation is not always useful as it doesn't add information to the model. That is why is removed.
 
@@ -93,9 +97,9 @@ The goal of this exercise is to learn to deal with punctuation. In Natural Langu
 
 ---
 
-# Exercise 3: Tokenization
+### Exercise 3: Tokenization
 
-The goal of this exercise is to learn to tokenize as text. This step is important because it splits the text into token. A token could be a sentence or a word.
+The goal of this exercise is to learn [to tokenize](https://en.wikipedia.org/wiki/Lexical_analysis#Tokenization) as text. This step is important because it splits the text into token. A token could be a sentence or a word.
 
 ```
 text = """Bitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto. The currency began use in 2009 when its implementation was released as open-source software."""
@@ -106,13 +110,11 @@ text = """Bitcoin is a cryptocurrency invented in 2008 by an unknown person or g
 
 2. Tokenize this text using `word_tokenize` from NLTK.
 
-_Resources: [How to Get Started with NLP – 6](https://www.analyticsvidhya.com/blog/2019/07how-get-started-nlp-6-unique-ways-perform-tokenization/)_
-
 ---
 
 ---
 
-# Exercise 4: Stop words
+### Exercise 4: Stop words
 
 The goal of this exercise is to learn to remove stop words with NLTK. Stop words usually refers to the most common words in a language. For example: "and", "is", "a" are stop words and do not add information to a sentence.
 
@@ -128,7 +130,7 @@ The goal of this exercise is to learn to remove stop words with NLTK.  Stop word
 
 ---
 
-# Exercise 5: Stemming
+### Exercise 5: Stemming
 
 The goal of this exercise is to learn to use stemming using NLTK. As explained in details in the article, stemming is the process of reducing inflection in words to their root forms such as mapping a group of words to the same stem even if the stem itself is not a valid word in the Language.
 
@@ -146,7 +148,7 @@ The interviewer interviews the president in an interview
 
 ---
 
-# Exercise 6: Text preprocessing
+### Exercise 6: Text preprocessing
 
 The goal of this exercise is to learn to create a function to prepocess and clean a text using NLTK.
 
@@ -167,13 +169,13 @@ The preprocessing is composed of:
     4. Stopword Filtering
     5. Stemming
 
-_Ressources: https://towardsdatascience.com/nlp-preprocessing-with-nltk-3c04ee00edc0_
+_ [Resources](https://towardsdatascience.com/nlp-preprocessing-with-nltk-3c04ee00edc0_)
 
 ---
 
 ---
 
-# Exercise 7: Bag of Word representation
+### Exercise 7: Bag of Word representation
 
 The goal of this exercise is to understand the creation of a Bag of Word (BoW) model for a corpus of texts and create a labeled dataset from textual data using a word count matrix.
 
@@ -206,23 +208,29 @@ Steps:
 
 > Note: The sample 3x3 table mentioned is a small representation of the expected output for demonstration purposes. It's not necessary to drop columns in this context.
 
-3. Show the token counts (obtained with the above-mentioned steps) of the fourth tweet. 
+3. Show the token counts (obtained with the above-mentioned steps) of the fourth tweet.
 
-4. Using the word counter, show the 15 most used tokenized words in the datasets' tweets 
+4. Using the word counter, show the 15 most used tokenized words in the datasets' tweets
 
 5. Add to your `count_vecotrized_df` a `label` column considering the following:
+
    - 1: Positive
    - 0: Neutral
    - -1: Negative
 
    The final DataFrame should be similar to the below:
 
+|     | ... | label |
+| --: | --: | ----: |
+|   0 | ... |     1 |
+|   1 | ... |    -1 |
+|   2 | ... |    -1 |
+|   3 | ... |    -1 |
 
-|    |   ...  |   label |
-|---:|-------:|--------:|
-|  0 |    ... |       1 |
-|  1 |    ... |      -1 |
-|  2 |    ... |      -1 |
-|  3 |    ... |      -1 |
+### Resources
 
-_Resources: [sklearn.feature_extraction.text.CountVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html)_
+- [Nlp 1](https://towardsdatascience.com/your-guide-to-natural-language-processing-nlp-48ea2511f6e1)
+
+- [Nlp 2](https://towardsdatascience.com/word-embeddings-for-nlp-5b72991e01d4)
+
+- [Sklearn.feature_extraction.text.CountVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html)

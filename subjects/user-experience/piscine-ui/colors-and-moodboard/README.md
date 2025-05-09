@@ -1,4 +1,4 @@
-## Find the colors
+### Find the colors
 
 **Context:**
 
@@ -14,7 +14,7 @@ Go to the following 7 websites and make the color palettes out of them (3 to 4 m
 - [https://www.jrpass.com/](https://www.jrpass.com/)
 - [https://www.thesiff.com/](https://www.thesiff.com/)
 - [https://brave.com/es/](https://brave.com/es/)
-- [https://www.nhp.gov.in/](https://www.nhp.gov.in/)
+- [https://www.ted.com/](https://www.ted.com/)
 
 **Deliverable:**
 
@@ -38,7 +38,7 @@ Don't forget to:
 - [Beginning graphic design](https://edu.gcfglobal.org/en/beginning-graphic-design/)
 - [Gareth graphic studio](https://www.youtube.com/c/GarethDavidStudio)
 
-## Color codes
+### Color codes
 
 ### Instructions
 
@@ -70,9 +70,9 @@ Don't forget to :
 - [https://www.jrpass.com/](https://www.jrpass.com/)
 - [https://www.thesiff.com/](https://www.thesiff.com/)
 - [https://brave.com/es/](https://brave.com/es/)
-- [https://www.nhp.gov.in/](https://www.nhp.gov.in/)
+- [https://www.ted.com/](https://www.ted.com/)
 
-## Color combinations
+### Color combinations
 
 ### Instructions
 
@@ -111,7 +111,7 @@ Don't forget to:
 **Resources:**
 
 - [https://coloursandmaterials.wordpress.com/2014/09/16/colour-system/](https://coloursandmaterials.wordpress.com/2014/09/16/colour-system/)
-- ![Color wheel combinations](Resource.png)
+- ![Color wheel combinations](color-combinations/Resource.png)
 
 **Example:**
 
@@ -151,7 +151,7 @@ Don't forget to:
 - [https://calendar.google.com/](https://calendar.google.com/)
 - [https://www.ebay.com/](https://www.ebay.com/)
 
-## Moodboard
+### Moodboard
 
 ### Instructions
 
@@ -185,7 +185,7 @@ Don't forget to:
   - [Example3](https://i.pinimg.com/564x/ee/9d/d6/ee9dd6fbb82b0e5b4dd2924580b765dd.jpg)
 - Pay attention to the global aspect of the deliverables. They must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
 
-## Typography
+### Typography
 
 ### Instructions
 
@@ -195,7 +195,7 @@ Go to these websites and detect the typographies used.
 - [https://www.strongbowcider.com/bug-exterminator-brisbane](https://www.strongbowcider.com/bug-exterminator-brisbane)
 - [http://www.bbqgrillsandfire.com/](http://www.bbqgrillsandfire.com/)
 - [https://pt.wikipedia.org/wiki/Mario_Botta](https://pt.wikipedia.org/wiki/Mario_Botta)
-- [https://texas-private-investigator.com/](https://texas-private-investigator.com/)
+- [https://skyinvestigations.com/](https://skyinvestigations.com/)
 - [https://bumble.com/](https://bumble.com/)
 - [https://adopte1poule.fr/](https://adopte1poule.fr/)
 - [http://slaveryfootprint.org/](http://slaveryfootprint.org/)
@@ -226,7 +226,7 @@ Don't forget to:
 - [Beginning graphic design](https://edu.gcfglobal.org/en/beginning-graphic-design/)
 - [Gareth graphic studio](https://www.youtube.com/c/GarethDavidStudio)
 
-## Typography moodboard
+### Typography moodboard
 
 ### Instructions
 
@@ -268,13 +268,13 @@ Don't forget to:
 - [Beginning graphic design](https://edu.gcfglobal.org/en/beginning-graphic-design/)
 - [Gareth graphic studio](https://www.youtube.com/c/GarethDavidStudio)
 
-## UI Challenge - Timer
+### UI Challenge - Timer
 
 ### Instructions
 
 Create this image on Figma:
 
-![Timer](Timer.png)
+![Timer](ui-challenge-timer/Timer.png)
 
 Please make sure you use:
 
@@ -294,20 +294,20 @@ Don't forget to:
 
 **Tips:**
 
-- The font is RAJDANHI.
+- The font is RAJDHANI.
 - The frame is Android 360 x 640px.
 - Pay attention to the global aspect of the file. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
 
-## UI Challenge - Watches
+### UI Challenge - Watches
 
 ### Instructions
 
 Copy these images on Figma:
 
-![Screen1](Watch1.png)
-![Screen2](Watch2.png)
-![Screen3](Watch3.png)
-![Screen4](Watch4.png)
+![Screen1](ui-challenge-watches/Watch1.png)
+![Screen2](ui-challenge-watches/Watch2.png)
+![Screen3](ui-challenge-watches/Watch3.png)
+![Screen4](ui-challenge-watches/Watch4.png)
 
 - Make sure:
   - You use symbols and variants (1 page for the Symbols).
@@ -332,13 +332,13 @@ Don't forget to:
 - You can use existing Libraries by browsing the Figma community resources.
 - Pay attention to the global aspect of the file. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
 
-## UI Challenge - Flight
+### UI Challenge - Flight
 
 ### Instructions
 
 Create this image on Figma:
 
-![Flight](Flight.png)
+![Flight](ui-challenge-flight/Flight.png)
 
 - Make sure that:
   - You use symbols and variants (1 page for the Symbols).
@@ -362,13 +362,13 @@ Don't forget to:
 - [Figma article about Symbols and Variants](https://help.figma.com/hc/en-us/articles/360056440594-Create-and-use-variants).
 - Pay attention to the global aspect of the file. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
 
-## UI Challenge - Spotify
+### UI Challenge - Spotify
 
 ### Instructions
 
 Create this image on Figma:
 
-![Spotify](Spotify.jpg)
+![Spotify](ui-challenge-spotify/Spotify.jpg)
 
 - Please make sure you use:
 
@@ -394,13 +394,13 @@ Don't forget to:
 - [Figma article about Symbols and Variants](https://help.figma.com/hc/en-us/articles/360056440594-Create-and-use-variants).
 - Pay attention to the global aspect of the file. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
 
-## UI Challenge - Bitcoin Dashboard
+### UI Challenge - Bitcoin Dashboard
 
 ### Instructions
 
 Create this image on Figma:
 
-![Dashboard](Dashboard.png)
+![Dashboard](ui-challenge-bitcoin-dashboard/Dashboard.png)
 
 - Make sure:
   - You use symbols and variants (1 page for the Symbols one for the screen).

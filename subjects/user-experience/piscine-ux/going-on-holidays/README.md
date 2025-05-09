@@ -1,4 +1,4 @@
-## Interview guide
+### Interview guide
 
 **Context:**
 
@@ -46,7 +46,7 @@ Here are the recommended steps :
 
 “To ask open-ended questions is the best approach, but it’s easy to get into the weeds in data analysis when every answer is a paragraph or two of prose. Users quickly tire of answering many open-ended questions, which usually require a lot of typing and explanation.” Norman Nielsen Group
 
-## Run interviews
+### Run interviews
 
 ### Instructions
 
@@ -68,7 +68,7 @@ Then, write down the script on a written document, and give elements of context 
 
 - Pay attention to the global aspect of the document. It must be clear, simple and easy to read. You can get inspiration [canva](https://www.canva.com/) but don’t overload your design with too much details!
 
-## Affinity diagram & Empathy map
+### Affinity diagram & Empathy map
 
 ### Instructions
 
@@ -108,7 +108,7 @@ Don't forget to:
 
 Remember, you are not the user, so your opinions are not absolute truth.
 
-## Problem statement
+### Problem statement
 
 ### Instructions
 
@@ -137,7 +137,7 @@ You may use the "How Might We" exercise in pairs.
 
 "Out of clutter, find simplicity. From discord, find harmony. In the middle of difficulty, lies opportunity.’ Albert Einstein
 
-## Ideation
+### Ideation
 
 ### Instructions
 
@@ -180,7 +180,7 @@ Quote:
 
 - "Brainstorming means using the brain to storm a creative problem. Do so in commando fashion, with each stormer attacking the same objective.’ Alex Faickney Osborn
 
-## User flow
+### User flow
 
 ### Instructions
 
@@ -210,7 +210,7 @@ Don't forget to:
 
 "Each use case is represented as a sequence of simple steps, beginning with a user’s goal and ending when that goal is fulfilled.’ Usability.gov
 
-## Prototyping
+### Prototyping
 
 ### Instructions
 

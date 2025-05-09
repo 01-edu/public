@@ -85,7 +85,7 @@ $
 
 ###### Can you confirm that all `servers` have static IP addresses?
 
-###### ###### Do all servers only provide the service specified for them?
+###### Do all servers only provide the service specified for them?
 
 ###### Is the `DHCP server` responsible for assigning the IP addresses to all PCs?
 

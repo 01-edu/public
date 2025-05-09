@@ -1,0 +1,50 @@
+[
+  {
+    "description": "Should work on mixed case",
+    "code": "let message = 'YoU cAn CaLl Me YoUr MaJeStY!'\nlet kevin = { age: 14 }\nlet stephanie = { age: 25 }\nlet martin = { age: 32 }\nlet alphabet = 'abcdefghijklmnopqrstuvwxyz'\n\n// Your code\n\nequal(noCaps, 'you can call me your majesty!')\nequal(allCaps, 'YOU CAN CALL ME YOUR MAJESTY!')"
+  },
+  {
+    "description": "Should work on mixed case",
+    "code": "let message = `DoN'T tAlK aBoUt My MoMs, Yo`\nlet kevin = { age: 14 }\nlet stephanie = { age: 25 }\nlet martin = { age: 32 }\nlet alphabet = 'abcdefghijklmnopqrstuvwxyz'\n\n// Your code\n\nequal(noCaps, `don't talk about my moms, yo`)\nequal(allCaps, `DON'T TALK ABOUT MY MOMS, YO`)"
+  },
+  {
+    "description": "oldestAge is a number",
+    "code": "let kevin = { age: 14 }\nlet stephanie = { age: 25 }\nlet martin = { age: 32 }\nlet alphabet = 'abcdefghijklmnopqrstuvwxyz'\nlet message = 'YoU cAn CaLl Me YoUr MaJeStY!'\n\n// Your code\n\nequal(typeof oldestAge, 'number')"
+  },
+  {
+    "description": "oldestAge is the maximum value of the age property (martin)",
+    "code": "let kevin = { age: 14 }\nlet stephanie = { age: 25 }\nlet martin = { age: 32 }\nlet alphabet = 'abcdefghijklmnopqrstuvwxyz'\nlet message = 'YoU cAn CaLl Me YoUr MaJeStY!'\n\n// Your code\n\nequal(oldestAge, 32)"
+  },
+  {
+    "description": "oldestAge is still the maximum value of the age property (kevin)",
+    "code": "let kevin = { age: 67 }\nlet stephanie = { age: 25 }\nlet martin = { age: 32 }\nlet alphabet = 'abcdefghijklmnopqrstuvwxyz'\nlet message = 'YoU cAn CaLl Me YoUr MaJeStY!'\n\n// Your code\n\nequal(oldestAge, 67)"
+  },
+  {
+    "description": "oldestAge is still the maximum value of the age property (stephanie)",
+    "code": "let kevin = { age: 29 }\nlet stephanie = { age: 45 }\nlet martin = { age: 32 }\nlet alphabet = 'abcdefghijklmnopqrstuvwxyz'\nlet message = 'YoU cAn CaLl Me YoUr MaJeStY!'\n\n// Your code\n\nequal(oldestAge, 45)"
+  },
+  {
+    "description": "cutFirst from the latin alphabet",
+    "code": "let alphabet = 'abcdefghijklmnopqrstuvwxyz'\nlet kevin = { age: 14 }\nlet stephanie = { age: 25 }\nlet martin = { age: 32 }\nlet message = 'YoU cAn CaLl Me YoUr MaJeStY!'\n\n// Your code\n\nequal(cutFirst, 'klmnopqrstuvwxyz')"
+  },
+  {
+    "description": "cutFirst from the georgian alphabet",
+    "code": "let alphabet = 'აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ'\nlet kevin = { age: 14 }\nlet stephanie = { age: 25 }\nlet martin = { age: 32 }\nlet message = 'YoU cAn CaLl Me YoUr MaJeStY!'\n\n// Your code\n\nequal(cutFirst, 'ლმნოპჟრსტუფქღყშჩცძწჭხჯჰ')"
+  },
+  {
+    "description": "cutLast from the latin alphabet",
+    "code": "let alphabet = 'abcdefghijklmnopqrstuvwxyz'\nlet kevin = { age: 14 }\nlet stephanie = { age: 25 }\nlet martin = { age: 32 }\nlet message = 'YoU cAn CaLl Me YoUr MaJeStY!'\n\n// Your code\n\nequal(cutLast, 'abcdefghijklmnopqrstuvw')"
+  },
+  {
+    "description": "cutLast from the greek alphabet",
+    "code": "let alphabet = 'αβγδεζηθικλμνξοπρστυφχψω'\nlet kevin = { age: 14 }\nlet stephanie = { age: 25 }\nlet martin = { age: 32 }\nlet message = 'YoU cAn CaLl Me YoUr MaJeStY!'\n\n// Your code\n\nequal(cutLast, 'αβγδεζηθικλμνξοπρστυφ')"
+  },
+  {
+    "description": "cutFirstLast from the latin alphabet",
+    "code": "let alphabet = 'abcdefghijklmnopqrstuvwxyz'\nlet kevin = { age: 14 }\nlet stephanie = { age: 25 }\nlet martin = { age: 32 }\nlet message = 'YoU cAn CaLl Me YoUr MaJeStY!'\n\n// Your code\n\nequal(cutFirstLast, 'fghijklmnopqrst')"
+  },
+  {
+    "description": "cutFirstLast from the armenian alphabet",
+    "code": "let alphabet = 'աբգդեզէըթժիլխծկհձղճմյնշոչպջռսվտրցւփքօֆուև'\nlet kevin = { age: 14 }\nlet stephanie = { age: 25 }\nlet martin = { age: 32 }\nlet message = 'YoU cAn CaLl Me YoUr MaJeStY!'\n\n// Your code\n\nequal(cutFirstLast, 'զէըթժիլխծկհձղճմյնշոչպջռսվտրցւփ')"
+  }
+]

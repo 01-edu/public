@@ -8,11 +8,9 @@
 
 ###### Are the documents clear, simple and easy to read?
 
-#### Movie wireframes
-
 ###### Are there 3 user flows?
 
-###### Are the user flows about the features we gave on the readme?
+###### Are the user flows about the features we gave on the README?
 
 ###### Does the user have a specific goal?
 
@@ -24,7 +22,7 @@
 
 ###### Are the actions linked with arrows?
 
-### Movie wireframes
+#### Movie wireframes
 
 ###### Is there a zip folder labeled as “ProjectTitle_Name_FirstName”?
 

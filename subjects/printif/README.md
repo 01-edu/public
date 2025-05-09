@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a function that takes a `string` as an argument and returns the letter `G` followed by a newline `\n` if the argument length is more than 3, otherwise returns `Invalid Input` followed by a newline `\n`.
+Write a function that takes a `string` as an argument and returns the letter `G` followed by a newline `\n` if the argument length is more or equal than 3, otherwise returns `Invalid Input` followed by a newline `\n`.
 
 - If it's an empty string return `G` followed by a newline `\n`.
 
@@ -39,7 +39,7 @@ And its output:
 ```console
 $ go run . | cat -e
 G$
-Invalid Output$
 G$
-Invalid Output$
+G$
+Invalid Input$
 ```

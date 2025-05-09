@@ -1,3 +1,5 @@
+> Due to file size reason, the solution might be uploaded on GitHub instead of Gitea!
+
 #### Functional
 
 ###### Does the project start with a menu where you can select between "Start game", "Settings" and "Quit Game"?
@@ -28,14 +30,14 @@
 
 #### Bonus
 
-###### Does the player receives any power-ups/benefits when a zombie dies?
+###### +Does the player receives any power-ups/benefits when a zombie dies?
 
-###### Is the main menu a 3D main menu?
+###### +Is the main menu a 3D main menu?
 
-###### Does the game have a points system? (in which every time we kill a zombie, pass wave, etc... , the points gets higher?)
+###### +Does the game have a points system? (in which every time we kill a zombie, pass wave, etc... , the points gets higher?)
 
-###### Does the game has creepy music?
+###### +Does the game has creepy music?
 
-###### Is a sound played each time you move to the next wave?
+###### +Is a sound played each time you move to the next wave?
 
-###### Does the gun run out of ammo?
+###### +Does the gun run out of ammo?

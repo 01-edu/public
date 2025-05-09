@@ -6,7 +6,7 @@ Dart is the programming language of the [Flutter](https://flutter.dev) framework
 
 ### Instructions
 
-Let's start with the standard tradition for learning a new programming language; you're first `"Hello, world!"` with dart.
+Let's start with the standard tradition for learning a new programming language; your first `"Hello, world!"` with dart.
 
 Create a `main` function which prints `"Hello, world!"`, followed by a new-line character.
 

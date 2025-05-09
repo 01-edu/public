@@ -16,7 +16,7 @@ We will setup a movie streaming platform, where one API (`inventory`) will have 
 
 The API gateway will communicate in HTTP with `inventory` and using RabbitMQ for `billing`.
 
-In this exercise you will need to install Node.js (with Express, Sequelize and other packages), PostgreSQL, RabbitMQ, Postman, VirtualBox and Vagrant.
+In this exercise you will need to install Node.js (with Express, Sequelize and other packages), PostgreSQL, RabbitMQ, Postman, VirtualBox (or any equivalent software such as VMWare) and Vagrant.
 
 While it may seems overwhelming at first there is a lot of resources available both on official website and on community blogs about setting up those tools.
 Also the specific configuration details may change from platform to platform so don't hesitate to play around with it and be sure everything is installed correctly before to move on.
@@ -149,7 +149,7 @@ As an introduction to the art of great documentation you must create an OpenAPI 
 
 ##### General overview
 
-You will use VirtualBox and Vagrant to setup three different VMs in order to test the interactions and correctness of responses between your APIs infrastructure.
+You will use Vagrant to setup three different VMs in order to test the interactions and correctness of responses between your APIs infrastructure.
 
 Vagrant is an open-source software that helps you create and manage virtual machines. With Vagrant, you can create a development environment that is identical to your production environment, which makes it easier to develop, test, and deploy your applications.
 
@@ -178,7 +178,7 @@ Your `.env` file should contain all the necessary credentials and none of the mi
 
 Your configuration will work properly for the following commands (executed from the root of the project):
 
-- `vagrant up --provider virtualbox`: Starts all the VMs.
+- `vagrant up`: Starts all the VMs.
 - `vagrant status`: Shows the status for all the VMs.
 - `vagrant ssh <vm-name>`: Will let you access the VM through SSH.
 

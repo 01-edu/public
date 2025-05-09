@@ -1,3 +1,5 @@
+> Due to file size reason, the solution might be uploaded on GitHub instead of Gitea!
+
 #### Functional
 
 ###### Are there at least three different car models?
@@ -36,8 +38,8 @@
 
 #### Bonus
 
-###### When hitting the throttle does steam/flames particles come out from car exhaust?
+###### +When hitting the throttle does steam/flames particles come out from car exhaust?
 
-###### Is the character animated while entering the car?
+###### +Is the character animated while entering the car?
 
-###### Can you open the doors while inside the car without exiting it?
+###### +Can you open the doors while inside the car without exiting it?

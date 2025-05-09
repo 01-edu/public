@@ -1,4 +1,4 @@
-## User Interviews
+### User Interviews
 
 **Context:**
 
@@ -86,11 +86,11 @@ Thank you so much for your time!
 
 I have a last favor to ask you: is there anyone you know who runs frequently and would be available for a talk?
 
-## Analytics
+### Analytics
 
 ### Instructions
 
-Read these articles and extract at least 5 key figures or insights that may be useful in understanding what athletes or sport practicing people experience related to hydration.
+Read the articles in the resources section and extract at least 5 key figures or insights that may be useful in understanding what athletes or sport practicing people experience related to hydration.
 
 - On a PDF document, write at least 5 key figures or insights you extracted from the articles.
 - Each insight or key figure should be justified by a quote and the title of the article.
@@ -125,7 +125,7 @@ Examples of insights you can extract from the articles:
 
 Always base your decisions on the data, not on your biases.
 
-## Personas
+### Personas
 
 ### Instructions
 
@@ -165,7 +165,7 @@ Use the material you got from the exercise `User interview` to build the pierre 
 
 "Focus unswervingly, on the customer’ Jesse Hertzberg | Former COO of Squarespace
 
-## User Journey
+### User Journey
 
 ### Instructions
 
@@ -209,7 +209,7 @@ Most articles you'll find will be about user journeys or customer journeys. Keep
 
 'It’s about catching customers in the act, and providing highly relevant and highly contextual information’ Paul Maritz | CEO Pivotal
 
-## Problem Statement
+### Problem Statement
 
 ### Instructions
 
@@ -249,7 +249,7 @@ Based on the insights from the exercises `analytics` and `user interviews`, comm
 
 **Resources:**
 
-- [Stuck on a problem? Just ask how might we](https://relab.academy/design-thinking/stuck-on-a-problem-just-ask-how-might-we/)
+- [Stuck on a problem? Just ask how might we](https://www.interaction-design.org/literature/topics/how-might-we)
 - [Problem statement](https://www.indeed.com/career-advice/career-development/what-is-a-problem-statement)
 - [Using "How Might We’ Questions to Ideative on the Right Problems](https://www.nngroup.com/articles/how-might-we-questions/)
 
@@ -257,7 +257,7 @@ Based on the insights from the exercises `analytics` and `user interviews`, comm
 
 “If I had an hour to solve a problem, I’d spend 55 minutes thinking about the problem and 5 minutes thinking about solutions.” Albert Einstein
 
-## Ideation
+### Ideation
 
 _You can replace Pierre with your own persona._
 
@@ -323,7 +323,6 @@ Don't forget to:
 
 - [Tool: Ideation Voting Board Framework on Figma](https://www.figma.com/file/nTAWiacCffXvd8dXsLP3Sb/Ideation-Voting-Framework)
 - [Where Good ideas come from by Steven Johnson](https://www.ted.com/talks/steven_johnson_where_good_ideas_come_from)
-- [Creative Confidence by Tom Keller](https://booksvooks.com/creative-confidence-unleashing-the-creative-potential-within-us-all-pdf.html)
 - [Podcast What is wrong with UX?](https://www.usersknow.com/podcast/2016/10/10/ua1wdsszhx2pemugxc1e0qj0a3l9cs)
 - [Brainwriting #2](https://dux.typepad.com/dux/2011/01/method-2-of-100-brainwriting-brainwriting-is-an-ideation-method-for-quickly-generating-ideas-by-asking-people-to-write-thei.html)
 
@@ -331,7 +330,7 @@ Don't forget to:
 
 Chances are that... If you have gone through all possible solutions, you’ve found the good one.
 
-## Prototyping
+### Prototyping
 
 ### Instructions
 

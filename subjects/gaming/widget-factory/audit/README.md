@@ -1,3 +1,5 @@
+> Due to file size reason, the solution might be uploaded on GitHub instead of Gitea!
+
 #### Functional
 
 ###### Does the player move correctly forward, backward, left and right?

@@ -20,7 +20,7 @@ The API gateway will communicate in HTTP with the `inventory` service and using
 RabbitMQ for `billing` service.
 
 In this exercise you will need to install Python3 (with Flask, SQLAlchemy and
-other packages), PostgreSQL, RabbitMQ, Postman, VirtualBox and Vagrant.
+other packages), PostgreSQL, RabbitMQ, Postman, VirtualBox (or an equivalent software such as VMware) and Vagrant.
 
 While it may seem overwhelming at first, there are a lot of resources available
 both on official website and on community blogs about setting up those tools.
@@ -184,7 +184,7 @@ for each endpoint. Feel free to implement any extra feature as you see fit.
 
 ##### General overview
 
-You will use VirtualBox and Vagrant to set up three different VMs in order to
+You will Vagrant to set up three different VMs in order to
 test the interactions and correctness of responses between your APIs
 infrastructure.
 
@@ -228,7 +228,7 @@ microservices should have any credential hard coded in the source code.
 Your configuration will work properly for the following commands (executed from
 the root of the project):
 
-- `vagrant up --provider virtualbox`: Starts all the VMs.
+- `vagrant up`: Starts all the VMs.
 - `vagrant status`: Shows the status for all the VMs.
 - `vagrant ssh <vm-name>`: Will let you access the VM through SSH.
 
@@ -284,13 +284,13 @@ a common way to structure this kind of projects that may help you:
 │   │   │   ├── __init__.py
 │   │   │   └── ...             // Other python files
 │   │   ├── requirements.txt
-│   │   └── server.js
+│   │   └── server.py
 │   ├── billing-app
 │   │   ├── app
 │   │   │   ├── __init__.py
 │   │   │   └── ...             // Other python files
 │   │   ├── requirements.txt
-│   │   └── server.js
+│   │   └── server.py
 │   └── inventory-app
 │   │   ├── app
 │   │   │   ├── __init__.py
@@ -302,7 +302,7 @@ a common way to structure this kind of projects that may help you:
 
 When testing and before automating it through the VM build you should be able
 to start the API Gateway and the two APIs by using the command `python
-server.js` inside their respective directories.
+server.py` inside their respective directories.
 
 As a best practice, you should develop your APIs using separates python virtual
 environments to isolate the requirements needed for each API. You can use

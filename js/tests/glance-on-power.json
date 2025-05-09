@@ -1,0 +1,18 @@
+[
+  {
+    "description": "Log a number in the console",
+    "code": "// If you see this code, it means that you failed the first tests.\n// each tests have it's own code to be tested that will appear if\n// your solution doesn't pass it, it is not here to help you.\n// While sometimes it may clarify the instructions\n// this specific test is complex and will most likely confuse you.\n\n// This is to save all the values that you console.log'd\nconst args = saveArguments(console, 'log')\n\n// This comment below will be replaced by your code\n// Your code\n\n// This is where we check that the value are expected.\n// It's pretty advanced code, you don't have to understand it\n// Do not try to use it for the solution, it will not help you.\nconst typeOfLoggedValues = args.flat().map((v) => typeof v)\nif (!typeOfLoggedValues.includes('number')) {\n  // this is where we create the error message you see:\n  throw Error('you must log a number')\n  // that's what you should focus on trying to understand\n  // the message, not `throw` or `Error` don't worry about\n  // that, worry about showing a number in the console !\n}"
+  },
+  {
+    "description": "Log a boolean in the console",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nconst typeOfLoggedValues = args.flat().map((v) => typeof v)\nif (!typeOfLoggedValues.includes('boolean')) {\n  throw Error('you must log a boolean')\n}"
+  },
+  {
+    "description": "Log a string in the console",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nconst typeOfLoggedValues = args.flat().map((v) => typeof v)\nif (!typeOfLoggedValues.includes('string')) {\n  throw Error('you must log a string')\n}"
+  },
+  {
+    "description": "Log the string Hello There! in the console",
+    "code": "const args = saveArguments(console, 'log')\n\n// Your code\n\nconst loggedValues = args.flat().join(' ')\nif (!loggedValues.includes('Hello There!')) {\n  throw Error('you must log the text Hello There!')\n}"
+  }
+]

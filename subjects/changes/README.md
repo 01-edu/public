@@ -6,7 +6,7 @@ Imagine you are working on some software to control smart lights in a house. You
 
 Define the associated **function** `new`, and add it to the data structure `Light`. It should create a new light with the alias passed as an argument, with a brightness of 0.
 
-Define the **function** `change_brightness`, which receives a `Vec` of lights, an `alias` and a `u8`value. It should find the light in the `Vec` by its alias, and set the value of the brightness.
+Define the **function** `change_brightness`, which receives a slice of lights, an `alias` and a `u8`value. It should attempt to find the correct light by its alias, and change the value of the brightness if found.
 
 ### Expected Functions and Structure
 
@@ -22,7 +22,7 @@ impl Light {
 	}
 }
 
-pub fn change_brightness(lights: &mut Vec<Light>, alias: &str, value: u8) {
+pub fn change_brightness(lights: &mut [Light], alias: &str, value: u8) {
 }
 ```
 
@@ -34,15 +34,13 @@ Here is an incomplete program to test your function
 use changes::*;
 
 fn main() {
-	// bedroom
-	let mut lights = vec![
-		Light::new("living_room"),
-		Light::new("bedroom"),
-		Light::new("rest_room"),
-	];
-	println!("brightness = {}", lights[0].brightness);
-	change_brightness(&mut lights, "living_room", 200);
-	println!("new brightness = {}", lights[0].brightness);
+    let mut lights = ["living_room", "bedroom", "rest_room"].map(Light::new);
+
+    println!("brightness = {}", lights[0].brightness);
+
+    change_brightness(&mut lights, "living_room", 200);
+
+    println!("new brightness = {}", lights[0].brightness);
 }
 ```
 

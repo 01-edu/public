@@ -8,11 +8,11 @@ For this project you have to create a bomberman alike game, where multiple playe
 
 ### Instructions
 
-In the beginning there was 4 players, and only one came out alive. Each player will have to start in the different corners of the map and only one will be victorious.
+In the beginning there are 4 players, and only one came out alive. Each player will have to start in the different corners of the map and only one will be victorious.
 
-You will have to follow more a less the same principles has the [make-your-game](../make-your-game/README.md) project. But we will refresh one of the concepts you will have to respect and deal with:
+You will have to follow more or less the same principles of [make-your-game](../make-your-game/README.md) project. But we will refresh one of the concepts you will have to respect and deal with:
 
-- [**Performance**](../good-practices/README.md), is one of the most important aspects while developing a game, so lets respect it.\
+- [**Performance**](../good-practices/README.md), is one of the most important aspects while developing a game, so let's respect it.\
    Just like make-your-game you will have to respect the policy of:
 
   - Running the game at least at **60fps** at all time
@@ -62,8 +62,7 @@ Although this bomberman already is super cool, it can be always better. Here are
   - _Detonator_: Ability to choose when a bomb will explode on a key press;
   - _1 Up_: Gives the player an extra life;
 - **Release power ups after death**: When a player dies it drops one of it's power ups. If the player had no power ups, it drops a random power up.
-- **More than 4 players**: Be able to start a game with more than 4 players
-- **Team mode**: Make games with 2v2 or 3v3 (two/three players versus two/three players).
+- **Team mode**: Make games with 2v2 (two players versus two players).
 - **After death interaction**: When a player dies, they can reappear as a ghost. If a ghost touches another player they come back to life. If a ghost is caught in a bomb explosion, the player controlling the ghost dies permanently.
 
 This project will help you learn about:
@@ -71,7 +70,7 @@ This project will help you learn about:
 - [`requestAnimationFrame`](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
 - [Event loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)
 - FPS
-- [Jank/stutter animation](https://murtada.nl/blog/going-jank-free-achieving-60-fps-smooth-websites)
+- [Animation performance and frame rate](https://developer.mozilla.org/en-US/docs/Web/Performance/Animation_performance_and_frame_rate)
 - webSockets
 - Synchronization
 - Developer Tools
