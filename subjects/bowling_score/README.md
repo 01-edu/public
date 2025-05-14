@@ -43,21 +43,19 @@ pub enum Error {
     GameComplete,
 }
 
-pub struct BowlingGame {
-    ...
-}
+pub struct BowlingGame {}
 
 impl BowlingGame {
     pub fn new() -> Self {
-        unimplemented!();
+        todo!();
     }
 
-    pub fn roll(&mut self, pins: u16) -> Result<(), Error> {
-        unimplemented!();
+    pub fn roll(&mut self, pins: u32) -> Result<(), Error> {
+        todo!();
     }
 
-    pub fn score(&mut self) -> Some(u16) {
-        unimplemented!();
+    pub fn score(&self) -> Option<u32> {
+        todo!();
     }
 }
 ```
