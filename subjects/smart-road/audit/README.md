@@ -54,7 +54,7 @@
 
 ###### Did all vehicles pass the intersection without any collision?
 
-##### Try to generate three vehicles that are supposed to collide (vehicles in the collision lane) fo this at least 3 times.
+##### Try to generate three vehicles that are supposed to collide (vehicles in the collision lane) for this at least 3 times.
 
 ###### Did one of the vehicles try to avoid the collision, by reducing their velocity?
 
