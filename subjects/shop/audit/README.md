@@ -1,4 +1,4 @@
-### Functional
+#### Functional
 
 ##### Try to create a new user and login.
 
@@ -80,7 +80,7 @@
 
 ###### After the confirmation were you redirected to the homepage?
 
-### Bonus
+#### Bonus
 
 ###### +Can you confirm that the student created or added something new like a new brand or the category field?
 
