@@ -4,9 +4,7 @@
 
 ###### Can you confirm that the user was created?
 
-##### Navigate to the homepage using the user you created. Try to erase products that were
-
-##### not created by the user.
+##### Navigate to the homepage using the user you created. Try to erase products that were not created by the user.
 
 ###### Is it impossible to edit and delete products that were not created by your user?
 
