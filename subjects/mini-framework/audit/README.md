@@ -12,7 +12,7 @@
 
 ###### Does the documentation contain an explanation on how the framework works?
 
-##### Open the todoMVC project and compare it to other [todoMVC project](http://todomvc.com/) ([example](http://todomvc.com/examples/vanillajs/)).
+##### Open the todoMVC project and compare it to other [todoMVC project](http://todomvc.com/) ([example](https://todomvc.com/examples/javascript-es6/dist/)).
 
 ###### Does it contain every element as the other todoMVCs examples?
 
