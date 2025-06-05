@@ -2,30 +2,40 @@
 
 ### Instructions
 
-Create the following **functions**:
+Create a structure `Node` which will contain a vector of `Rc`s with the following **methods**:
 
-- `add_element`: which adds an element to the list in the `Node`.
-- `how_many_references`: which returns how many times the value is referenced in the code.
+- `new`: which creates a new `Node` with the given initial state.
+- `add_element`: which adds an element to the `ref_list`.
 - `rm_all_ref`: which accepts an `Rc<String>` and removes all elements from the vector that are equal to that value. This should only happen if the two `Rc`s point to the same allocation.
+
+Additionally, create the **function** `how_many_references`, which returns how many clones of the same `Rc` passed as argument exist.
 
 ### Expected Functions and structures
 
 ```rust
-pub use std::rc::Rc;
+use std::rc::Rc;
 
 pub struct Node {
     pub ref_list: Vec<Rc<String>>,
 }
 
 impl Node {
-    pub fn new(ref_list: Vec<Rc<String>>) -> Node {
-        Node { ref_list: ref_list }
+    pub fn new(ref_list: Vec<Rc<String>>) -> Self {
+        todo!()
     }
-    pub fn add_element(&mut self, element: Rc<String>) {}
-    pub fn rm_all_ref(&mut self, element: Rc<String>) {}
+
+    pub fn add_element(&mut self, element: Rc<String>) {
+        todo!()
+    }
+
+    pub fn rm_all_ref(&mut self, element: Rc<String>) {
+        todo!()
+    }
 }
 
-pub fn how_many_references(ref_list: &Rc<String>) -> usize {}
+pub fn how_many_references(ref_list: &Rc<String>) -> usize {
+    todo!()
+}
 ```
 
 ### Usage
@@ -36,11 +46,11 @@ Here is a program to test your functions,
 use how_many_references::*;
 
 fn main() {
-    let a = Rc::new(String::from("a"));
-    let b = Rc::new(String::from("b"));
-    let c = Rc::new(String::from("c"));
+    let a = Rc::new("a".to_owned());
+    let b = Rc::new("b".to_owned());
+    let c = Rc::new("c".to_owned());
 
-    let a1 = Rc::new(String::from("a"));
+    let a1 = Rc::new("a".to_owned());
 
     let mut new_node = Node::new(vec![a.clone()]);
     new_node.add_element(b.clone());
