@@ -149,16 +149,26 @@ ${tests.trim()};`.trim()
 }
 
 const loadAndSanitizeSolution = async () => {
-  const path = `${solutionPath}/${name}.js`
-  const rawCode = await read(path, "student solution")
+    try {
+        const path = `${solutionPath}/${name}.js`
+        const rawCode = await read(path, "student solution")
+        const sanitizedCode = removeComments(rawCode)
 
-  // this is a very crude and basic removal of comments
-  // since checking code is only use to prevent cheating
-  // it's not that important if it doesn't work 100% of the time.
-  const code = rawCode.replace(/\/\*[\s\S]*?\*\/|\/\/.*/g, "").trim()
-  if (code.includes("import")) fatal("import keyword not allowed")
-  return { code, rawCode, path }
+        if (sanitizedCode.includes("import ")) { // space is important as it prevents "imported" or "importance" or other words containing "import"
+            throw new Error("The use of the 'import' keyword is not allowed.")
+        }
+        return { code: sanitizedCode, rawCode, path }
+    } catch (error) {
+        console.error(error)
+    }
 }
+
+const removeComments = (code) => {
+    // removes JS single line and multi-line comments only. Not for bash files etc.
+    // for use with multiple file-types, I suggest writing a removeComments function with language-type as input and then handling accordingly
+    return code.replace(/\/\*[\s\S]*?\*\/|\/\/.*/g, "").trim()
+}
+
 
 const runTests = async ({ url, path, code }) => {
   const { setup, tests } = await import(url).catch(err =>
