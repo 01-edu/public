@@ -2,7 +2,7 @@ Localhost is about creating your own HTTP server and test it with an actual brow
 
 ##### Take the necessary time to understand the project and to test it, looking into the source code will help a lot.
 
-### Functional
+#### Functional
 
 **_Is the student able to justify his choices and explain the following:_**
 **_Note:_** Ask the student to show you the implementation in the source code when necessary.
@@ -23,7 +23,7 @@ Localhost is about creating your own HTTP server and test it with an actual brow
 
 ###### Is writing and reading ALWAYS done through a select (or equivalent)?
 
-### Configuration file
+#### Configuration file
 
 Check the configuration file and modify it if necessary.
 **_Are the following configurations working properly:_**
@@ -44,7 +44,7 @@ Check the configuration file and modify it if necessary.
 
 ###### Setup a list of accepted methods for a route (for example: try to DELETE something with and without permission).
 
-### Methods and cookies
+#### Methods and cookies
 
 **_For each method be sure to check the status code (200, 404 etc):_**
 
@@ -60,7 +60,7 @@ Check the configuration file and modify it if necessary.
 
 ###### A working session and cookies system is present on the server?
 
-### Interaction with the browser
+#### Interaction with the browser
 
 Open the browser used by the team during tests and its developer tools panel to help you with tests.
 
@@ -76,7 +76,7 @@ Open the browser used by the team during tests and its developer tools panel to 
 
 ###### Check the implemented CGI, does it works properly with chunked and unchunked data?
 
-### Port issues
+#### Port issues
 
 ###### Configure multiple ports and websites and ensure it is working as expected.
 
@@ -89,7 +89,7 @@ What we mean to check is how your server handles configuration errors or conflic
 This aims to validate your server's configuration handling.
 You'll configure multiple servers simultaneously, each with different configurations but with shared ports. If one of these configurations isn't valid or encounters an issue, your server should continue to function for the other configurations without being entirely disrupted. The purpose is to ensure that an error in one server's configuration doesn't bring down the entire server if other configurations are correctly set up.
 
-### Siege & stress test
+#### Siege & stress test
 
 ###### Use siege with a GET method on an empty page, availability should be at least 99.5% with the command `siege -b [IP]:[PORT]`.
 

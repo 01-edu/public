@@ -67,13 +67,13 @@ This [article](https://medium.com/thecyphy/home-credit-default-risk-part-2-84b58
 
 #### Model's interpretability
 
-### Feature importance:
+#### Feature importance:
 
 ###### Are the importance of all features used by the model computed and showed in a visualisation?
 
 ###### Is the mapping between the importance of the features and the features' name correct? You should be careful here to associate the right variables to the their feature importance. Sometimes, the preprocessing pipeline can remove some features during the features selection step for instance.
 
-### Descriptive variables:
+#### Descriptive variables:
 
 ##### These are important to understand for example the age of the client. If the data could be scaled or modified in the preprocessing pipeline but the data visualized here should be "raw".
 

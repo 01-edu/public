@@ -1,4 +1,4 @@
-use modify_letter::*modify_letter*;
+use modify_letter::*;
 
 fn main() {
     println!("{}", remove_letter_sensitive("Jojhn jis sljeepjjing", 'j'));

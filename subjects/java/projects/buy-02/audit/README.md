@@ -38,7 +38,7 @@
 
 ###### Are security measures consistently applied throughout the application?
 
-### Collaboration and Development Process
+#### Collaboration and Development Process
 
 ##### Check the repository's PR history and comments to ensure code reviews are conducted.
 

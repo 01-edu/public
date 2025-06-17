@@ -134,7 +134,7 @@ drwxrwxr-x user/user     0 2023-04-19 10:23 testing/
 
 ###### Was the backup created successfully? (open the backup and verify that the files are not empty or damaged and that it matches the original directory.)
 
-### Error handling
+#### Error handling
 
 ##### Verify error handling for incorrect commands and incorrect arguments. For example, confirm that an error message is logged when attempting to run the command `python3 backup_manager.py invalid_command`.
 

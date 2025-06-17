@@ -66,7 +66,7 @@
 
 ###### +Does the code obey the [good practices](../../good-practices/README.md)?
 
-### Bonus
+#### Bonus
 
 ###### +Is a system implemented where Customers can rate the services they have requested?
 

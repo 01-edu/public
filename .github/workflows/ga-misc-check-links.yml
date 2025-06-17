@@ -27,6 +27,6 @@ jobs:
 
       - name: 🔗 Run Check Links
         if: steps.changed-md.outputs.changed_files != ''
-        uses: 01-edu/check-links@v0.2
+        uses: harryvasanth/markdown-link-checker@v1.2
         with:
-          filepath: ${{ steps.changed-md.outputs.changed_files }}
+          files: ${{ steps.changed-md.outputs.changed_files }}
