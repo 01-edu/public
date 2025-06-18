@@ -14,7 +14,7 @@
 
 ##### Try to log in the desktop app with the user you just registered.
 
-###### Did the login worked without problem?
+###### Did the login work without problem?
 
 ##### Try to log in with the user you created, but with a wrong password or email.
 
@@ -34,15 +34,15 @@
 
 ##### Using the same browser and desktop app, try to have a chat between the users.
 
-###### Did the chat between the users went well?
+###### Did the chat between the users go well?
 
 ##### Using the same browser and desktop app, try to logout the browser user.
 
-###### Did the user went automatically offline (in real time) on the desktop app?
+###### Did the user go automatically offline (in real time) on the desktop app?
 
 ##### Using the same browser and desktop app, try to log into the browser as a follower of the desktop user (so that the desktop user can see him/her).
 
-###### Did the user went automatically online (in real time) on the desktop app?
+###### Did the user go automatically online (in real time) on the desktop app?
 
 ##### Try to lose the internet connection while being in the app.
 
@@ -62,7 +62,7 @@
 
 ##### Try to run a [VM](https://www.virtualbox.org/) (virtual machine) with Windows, then install the social network desktop application.
 
-###### Did the app installed without any problems?
+###### Did the app install without any problems?
 
 ##### Using this VM, open the app and and repeat all the previous questions.
 
@@ -70,7 +70,7 @@
 
 ##### Try to run a [VM](https://www.virtualbox.org/) (virtual machine) with macOS, then install the social network desktop application.
 
-###### Did the app installed with out any problems?
+###### Did the app install without any problems?
 
 ##### Using this VM, open the app and and repeat all the previous questions.
 
