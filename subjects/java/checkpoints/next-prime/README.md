@@ -8,7 +8,7 @@ In a file named `NextPrime.java` write a function `nextPrime` that finds the nex
 
 ```java
 public class NextPrime {
-    public static boolean nextPrime(Integer n) {
+    public static Integer nextPrime(Integer n) {
         // your code here
     }
 }

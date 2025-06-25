@@ -12,7 +12,7 @@ Below is an example of an image which your ray tracer should be able to produce:
 
 ![image.png](raytrace.png)
 
-> The image generated is including reflection that is one of the required bonus features. More information below.
+> The image generated includes reflection that is one of the required bonus features. More information below.
 
 ### Objectives
 
@@ -27,10 +27,10 @@ When building your ray tracer, you have to take some points into consideration:
 
 As your ray tracer will probably be a bit slow to render high resolution scenes, you should make 4 .ppm images for the auditors to evaluate. The scenarios of these 4 images that you have to create consist of:
 
-- a scene with a sphere;
-- a scene with a flat plane and a cube with lower brightness than in the sphere image;
-- a scene with one of each of all the objects (one cube, one sphere, one cylinder and one flat plane);
-- a scene like the previous one, but with the camera in another position (thus generating the same image from a different perspective).
+- A scene with a sphere;
+- A scene with a flat plane and a cube with lower brightness than in the sphere image;
+- A scene with one of each of all the objects (one cube, one sphere, one cylinder and one flat plane);
+- A scene like the previous one, but with the camera in another position (thus generating the same image from a different perspective).
 
 All the images should be in the format of 800x600. However, while testing, you should use smaller resolution images in order to reduce your rendering time (a 1200x1000 can take up to 40 mins to create). It would be best to consider the possibility of changing the output image's resolution easily.
 
@@ -38,7 +38,7 @@ Another aspect you should consider is that the auditor will have to use your ray
 
 #### Documentation
 
-By documentation, we mean the explaining of how the ray tracer work and how to work with it, for example: how to create an object, how to change brightness in a scene, etc... After reading the documentation, a new user of your ray tracer has to be able to use it without much guessing work.
+By documentation, we mean the explanation of how the ray tracer works and how to work with it, for example: how to create an object, how to change brightness in a scene, etc... After reading the documentation, a new user of your ray tracer has to be able to use it without much guessing work.
 
 You will have to create a [markdown](https://www.markdownguide.org/getting-started/) file, which will have to contain:
 
@@ -76,11 +76,11 @@ P3              \
 
 The image header consists of three lines:
 
-- the first one is the image format: what type of PPM (full color, ASCII encoding) image it is. P3 stands for the Portable PixMap type, so you will be using this one.
-- the following stands for how many columns and rows of pixels the image will contain.
-- and the third line is the maximum color value, 255 is the most common value since the rgb color code is very well known.
+- The first one is the image format: what type of PPM (full color, ASCII encoding) image it is. P3 stands for the Portable PixMap type, so you will be using this one.
+- The following stands for how many columns and rows of pixels the image will contain.
+- The third line is the maximum color value, 255 is the most common value since the rgb color code is very well known.
 
-All the other lines below, are the rgb values for each pixel, for example the first line of the image body represents a black pixel (rgb(0,0,0) -> black). Each line represents one pixel, starting on the top left corner transitioning to the right and, in this case, the fifth line is the pixel in the first row on the second column.
+All the other lines below are the rgb values for each pixel, for example the first line of the image body represents a black pixel (rgb(0,0,0) -> black). Each line represents one pixel, starting on the top left corner transitioning to the right and, in this case, the fifth line is the pixel in the first row on the second column.
 
 So with this in mind, you will have to make an algorithm that fills a file by printing each line. You can use the cargo command this way: `cargo run > output.ppm`. This will print the standard output to the file `output.ppm`.
 
