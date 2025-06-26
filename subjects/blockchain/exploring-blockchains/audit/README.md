@@ -26,7 +26,7 @@
 
 #### Exercise 2: Clillet
 
-### Preliminary
+#### Preliminary
 
 ###### Does the readme file contains a description of the project ?
 
@@ -38,7 +38,7 @@
 
 ###### Does the display describes the command and 6 subcommands (at least)?
 
-### Functionalities
+#### Functionalities
 
 ##### Use the generate subcommand to create a wallet
 

@@ -1,7 +1,7 @@
 blinker==1.6.2
 click==8.1.6
 Flask==2.3.2
-Flask-Cors==5.0.0
+Flask-Cors==6.0.0
 itsdangerous==2.1.2
 Jinja2==3.1.6
 MarkupSafe==2.1.3

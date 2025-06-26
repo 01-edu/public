@@ -8,7 +8,7 @@ This project consists on recreating the **NetCat in a Server-Client Architecture
 
 - To see more information about NetCat inspect the manual `man nc`.
 
-Your project must work in a similar way that the original  NetCat works, in other words, you must create a group chat. The project must have the following features :
+Your project must work in a similar way that the original NetCat works, in other words, you must create a group chat. The project must have the following features :
 
 - TCP connection between server and multiple clients (relation of 1 to many).
 - A name requirement to the client.
@@ -180,9 +180,12 @@ _)      \.___.,|     .'
 
 ### Bonus
 
-- Terminal UI (you are allowed to use only this package : https://github.com/jroimartin/gocui).
-- Find a way to save all the logs into a file.
+- Clients can change their names.
+- The chat group is informed when a Client changes their name.
 - Creating more than 1 group chat.
+- Implement more `NetCat` flags.
+- Terminal UI (you are allowed to use only this package : https://github.com/jroimartin/gocui).
+- Find a way to create and save all the logs into a file.
 
 This project will help you learn about :
 

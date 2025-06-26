@@ -31,7 +31,11 @@ Your function should recreate the scytale cipher, so that the `&str` represents 
 ### Expected Functions
 
 ```rust
+<<<<<<< CON-3320-quest-06
 fn scytale_cipher(message: &str, i: usize) -> String {
+=======
+pub fn scytale_cipher(message: String, i: u32) -> String {
+>>>>>>> master
     todo!()
 }
 ```
@@ -41,6 +45,8 @@ fn scytale_cipher(message: &str, i: usize) -> String {
 Here is a program to test your function
 
 ```rust
+use scytale_cipher::scytale_cipher;
+
 fn main() {
     println!("\"scytale Code\" size=6 -> {:?}", scytale_cipher("scytale Code", 6)));
     println!("\"scytale Code\" size=8 -> {:?}", scytale_cipher("scytale Code", 8)));
