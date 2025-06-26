@@ -1,6 +1,6 @@
 #### Authentication
 
-###### Are an email and a password asked for in the resgistration?
+###### Are an email and a password asked for in the registration?
 
 ###### Does the project detect if the email or password are wrong?
 
@@ -44,11 +44,11 @@
 
 ###### Does it present the user you created?
 
-##### Try creating a post in the forum, open the database with `sqlite3 <database_name.db>` and perform a query to select all the users (Example: SELECT \* FROM post;).
+##### Try creating a post in the forum, open the database with `sqlite3 <database_name.db>` and perform a query to select all the posts (Example: SELECT \* FROM posts;).
 
 ###### Does it present the post you created?
 
-##### Try creating a comment in the forum, open the database with `sqlite3 <database_name.db>` and perform a query to select all the users (Example: SELECT \* FROM comment;).
+##### Try creating a comment in the forum, open the database with `sqlite3 <database_name.db>` and perform a query to select all the comments (Example: SELECT \* FROM comments;).
 
 ###### Does it present the comment you created?
 
@@ -56,7 +56,7 @@
 
 ###### Does the project have Dockerfiles?
 
-##### Try to run the command `"docker image build [OPTINS] PATH | URL | -"` to build the image using using the project Dockerfiles and run the command `"docker images"` to see images.
+##### Try to run the command `"docker image build [OPTINS] PATH | URL | -"` to build the image using the project Dockerfiles and run the command `"docker images"` to see images.
 
 ```
 student$ docker images
@@ -64,19 +64,19 @@ REPOSITORY              TAG                             IMAGE ID            CREA
 <name of the image>     latest                          85a65d66ca39        7 seconds ago       795MB
 ```
 
-###### Does all images build as above?
+###### Did all images build as above?
 
 ##### Try running the command `"docker container run [OPTIONS] IMAGE [COMMAND] [ARG...]"` to start the containers using the images just created and run the command `"docker ps -a"` to see containers.
 
 ```
 student$ docker ps -a
 CONTAINER ID        IMAGE                  COMMAND                  CREATED             STATUS              PORTS                    NAMES
-cc8f5dcf760f        <name of the image>    "./server"               6 seconds ago       Up 6 seconds        0.0.0.0:8080->8080/tcp   ascii-art-web
+cc8f5dcf760f        <name of the image>    "./server"               6 seconds ago       Up 6 seconds        0.0.0.0:8080->8080/tcp   forum
 ```
 
-###### Is the docker containers running as above?
+###### Are the Docker containers running as above?
 
-###### Does the project present no [unused object](https://docs.docker.com/config/pruning/)?
+###### Does the project have no [unused objects](https://docs.docker.com/config/pruning/)?
 
 #### Functional
 
@@ -174,7 +174,7 @@ cc8f5dcf760f        <name of the image>    "./server"               6 seconds ag
 
 #### Basic
 
-###### +Does the project runs quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
+###### +Does the project run quickly and effectively? (Favoring recursive, no unnecessary data requests, etc)
 
 ###### +Does the code obey the [good practices](../../good-practices/README.md)?
 

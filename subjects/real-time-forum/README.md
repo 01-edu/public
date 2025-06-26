@@ -70,19 +70,19 @@ As it is expected, the messages should work in real time, in other words, if a u
 ### Allowed Packages
 
 - All [standard go](https://golang.org/pkg/) packages are allowed.
-- [Gorilla](https://pkg.go.dev/github.com/gorilla/websocket) websocket
+- [Gorilla websocket](https://pkg.go.dev/github.com/gorilla/websocket)
 - [sqlite3](https://github.com/mattn/go-sqlite3)
 - [bcrypt](https://pkg.go.dev/golang.org/x/crypto/bcrypt)
-- [UUID](https://github.com/gofrs/uuid)
+- [gofrs/uuid](https://github.com/gofrs/uuid) or [google/uuid](https://github.com/google/uuid)
 
-> You must not use use any frontend libraries or frameworks like React, Angular, Vue etc.
+> You must not use any frontend libraries or frameworks like React, Angular, Vue etc.
 
 This project will help you learn about:
 
 - The basics of web :
   - HTML
   - HTTP
-  - Sessions and cookies
+  - [Sessions](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#session-management-waf-protections) and [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
   - CSS
   - Backend and Frontend
   - DOM

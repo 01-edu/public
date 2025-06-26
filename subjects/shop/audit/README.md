@@ -1,12 +1,10 @@
-### Functional
+#### Functional
 
 ##### Try to create a new user and login.
 
 ###### Can you confirm that the user was created?
 
-##### Navigate to the homepage using the user you created. Try to erase products that were
-
-##### not created by the user.
+##### Navigate to the homepage using the user you created. Try to erase products that were not created by the user.
 
 ###### Is it impossible to edit and delete products that were not created by your user?
 
@@ -80,7 +78,7 @@
 
 ###### After the confirmation were you redirected to the homepage?
 
-### Bonus
+#### Bonus
 
 ###### +Can you confirm that the student created or added something new like a new brand or the category field?
 

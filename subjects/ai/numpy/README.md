@@ -1,6 +1,16 @@
 ## NumPy
 
+### Overview
+
 The goal of this day is to understand practical usage of **NumPy**. **NumPy** is a commonly used Python data analysis package. By using **NumPy**, you can speed up your workflow, and interface with other packages in the Python ecosystem, like scikit-learn, that use **NumPy** under the hood. **NumPy** was originally developed in the mid 2000s, and arose from an even older package called Numeric. This longevity means that almost every data analysis or machine learning package for Python leverages **NumPy** in some way.
+
+### Role Play
+
+You’re standing in the NumPy Training Room, a sleek, tech-filled lab where aspiring data scientists sharpen their skills. Here, you’re ready to get hands-on with Python’s powerful NumPy library, learning the basics of creating, slicing, and manipulating data arrays.
+
+### Learning Objectives
+
+Master fundamental NumPy operations and techniques to efficiently manipulate, analyze, and extract insights from numerical data in Python.
 
 ### Virtual Environment
 
@@ -8,26 +18,20 @@ The goal of this day is to understand practical usage of **NumPy**. **NumPy** is
 - NumPy
 - Jupyter or JupyterLab
 
-_Version of NumPy I used to do the exercises: 1.18.1_.
-I suggest to use the most recent one.
-
-### Resources
-
-- [Why Should We Use NumPy](https://medium.com/fintechexplained/why-should-we-use-NumPy-c14a4fb03ee9)
-- [NumPy Documentation](https://numpy.org/doc/)
-- [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
+_Version of NumPy we used to do the exercises: 1.18.1_.
+We suggest using the most recent one.
 
 ---
 
 ---
 
-## Exercise 0: Environment and libraries
+### Exercise 0: Environment and libraries
 
 The goal of this exercise is to set up the Python work environment with the required libraries and to learn to launch a `jupyter notebook`. Jupyter notebooks are very convenient as they allow to write and test code within seconds. However, it really easy to implement instable and not reproducible code using notebooks. Keep the notebook and the underlying code clean. Notebook can be used for most of the exercises of the piscine as the goal is to experiment a lot. But no worries, you'll be asked to build a more robust structure for all the projects.
 
 **Note:** For each quest, your first exercise will be to set up the virtual environment with the required libraries.
 
-I suggest utilizing:
+We suggest utilizing:
 
 - The **latest stable version** of Python for your work. However, in this exercise, you'll install and use a specific Python version for educational purposes.
 - Choose a virtual environment that aligns with your familiarity. Common choices among Data Science practitioners are `virtualenv` and `conda`.
@@ -41,7 +45,7 @@ I suggest utilizing:
 
 4. Execute `print("Buy the dip ?")` in the second cell to display the message.
 
-### Resources:
+### Resources :
 
 - [python](https://www.python.org/)
 - [Conda Documentation](https://docs.conda.io/)
@@ -54,7 +58,7 @@ I suggest utilizing:
 
 ---
 
-## Exercise 1: Your first NumPy array
+### Exercise 1: Your first NumPy array
 
 The objective of this exercise is to familiarize yourself with incorporating various Python data types into **NumPy** arrays. **NumPy** arrays play a vital role in both **NumPy** and **Pandas**, offering flexibility and optimized functionalities.
 
@@ -69,7 +73,7 @@ for i in your_np_array:
 
 ---
 
-## Exercise 2: Zeros
+### Exercise 2: Zeros
 
 The goal of this exercise is to learn to create a NumPy array with 0s.
 
@@ -80,7 +84,7 @@ The goal of this exercise is to learn to create a NumPy array with 0s.
 
 ---
 
-## Exercise 3: Slicing
+### Exercise 3: Slicing
 
 The goal of this exercise is to learn NumPy indexing/slicing. It allows to access values of the NumPy array efficiently and without a for loop.
 
@@ -117,7 +121,7 @@ The goal of this exercise is to learn NumPy indexing/slicing. It allows to acces
 
 ---
 
-## Exercise 4: Random
+### Exercise 4: Random
 
 The goal of this exercise is to learn to generate random data.
 In Data Science it is extremely useful to generate random data for many reasons:
@@ -139,7 +143,7 @@ NumPy proposes a lot of options to generate random data. In statistics, assumpti
 
 ---
 
-## Exercise 5: Split, concatenate, reshape arrays
+### Exercise 5: Split, concatenate, reshape arrays
 
 The goal of this exercise is to learn to concatenate and reshape arrays.
 
@@ -165,7 +169,7 @@ Print what you've created in the previous steps.
 
 ---
 
-## Exercise 6: Broadcasting and Slicing
+### Exercise 6: Broadcasting and Slicing
 
 The goal of this exercise is to learn to access values of n-dimensional arrays efficiently.
 
@@ -223,15 +227,15 @@ Expected output:
  [ 5 10 15]]
 ```
 
-### Resources
+### Resources :
 
-[Computation on Arrays: Broadcasting](https://jakevdp.github.io/PythonDataScienceHandbook/)
-
----
+- [Computation on Arrays: Broadcasting](https://jakevdp.github.io/PythonDataScienceHandbook/)
 
 ---
 
-## Exercise 7: NaN
+---
+
+### Exercise 7: NaN
 
 The goal of this exercise is to handle missing data in NumPy and manipulate arrays effectively.
 
@@ -286,7 +290,7 @@ Expected output:
 
 ---
 
-## Exercise 8: Wine
+### Exercise 8: Wine
 
 The goal of this exercise is to perform fundamental data analysis on real data using NumPy.
 
@@ -314,7 +318,7 @@ The dataset chosen for this task was the [red wine dataset](./data/winequality-r
 
 ---
 
-## Exercise 9: Football tournament
+### Exercise 9: Football tournament
 
 This exercise focuses on utilizing permutations and complex computations.
 
@@ -340,3 +344,9 @@ The expected output is:
 - m1_t1 plays against m1_t2 ...
 
 **Usage of for loop is not allowed, you may need to use the library [itertools](https://docs.python.org/3.9/library/itertools.html) to create permutations.**
+
+### Resources
+
+- [What Is It and Why Does It Matter?](https://www.nvidia.com/en-us/glossary/numpy/)
+- [NumPy Documentation](https://numpy.org/doc/)
+- [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)

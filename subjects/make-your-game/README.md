@@ -33,7 +33,7 @@ You must not use frameworks or canvas, the game must be implemented using plain 
 
 ### Instructions
 
-Animation must have consistent motion, so in order to have a smooth animation (without interruptions or so called jank animation) you must achieve the special number, [**60 FPS**](https://www.algolia.com/developers-tech-blog/code-and-deep-dives/performant-web-animations/). You can see more about performance [here](../good-practices/README.md)
+Animation must have consistent motion, so in order to have a smooth animation (without interruptions or so-called jank animation) you must achieve the special number, [**60 FPS**](https://www.freecodecamp.org/news/web-animation-performance-fundamentals/). You can see more about performance [here](../good-practices/README.md#game-performance)
 
 In order to play the game the player must only use the keyboard. The controls must be smooth, in other words you should not need to spam a key to take actions in the game. Instead, for example, if a key is kept pressed, the player must continue to do the relevant action. If the key is released the player should stop doing the action.
 
@@ -75,7 +75,8 @@ This project will help you learn about:
 - [Event loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)
 - FPS
 - DOM
-- [Jank/stutter animation](https://murtada.nl/blog/going-jank-free-achieving-60-fps-smooth-websites)
+- [Jank/stutter animation](https://addyosmani.com/blog/making-a-site-jank-free/)
+  - [Example](https://googlechrome.github.io/devtools-samples/jank/)
 - [Transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)/ [opacity](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
 - Tasks
   - JavaScript

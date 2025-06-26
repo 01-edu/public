@@ -1,4 +1,4 @@
-## merge
+## merge-it
 
 ### Instructions
 

@@ -82,16 +82,16 @@ For the forum project you must use Docker. You can read about docker basics in t
 - All [standard Go](https://golang.org/pkg/) packages are allowed.
 - [sqlite3](https://github.com/mattn/go-sqlite3)
 - [bcrypt](https://pkg.go.dev/golang.org/x/crypto/bcrypt)
-- [UUID](https://github.com/gofrs/uuid)
+- [gofrs/uuid](https://github.com/gofrs/uuid) or [google/uuid](https://github.com/google/uuid)
 
-> You must not use use any frontend libraries or frameworks like React, Angular, Vue etc.
+> You must not use any frontend libraries or frameworks like React, Angular, Vue etc.
 
 This project will help you learn about:
 
 - The basics of web :
   - HTML
   - HTTP
-  - Sessions and cookies
+  - [Sessions](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#session-management-waf-protections) and [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
 - Using and [setting up Docker](https://docs.docker.com/get-started/)
   - Containerizing an application
   - Compatibility/Dependency

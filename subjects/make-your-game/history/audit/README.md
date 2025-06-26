@@ -36,7 +36,7 @@
 
 ###### +Is the story appealing and interesting?
 
-###### +Does the project runs quickly and effectively? (Favoring recursivity, no unnecessary data requests, etc...)
+###### +Does the project run quickly and effectively? (Favoring recursivity, no unnecessary data requests, etc...)
 
 ###### +Does the code obey the [good practices](../../../good-practices/README.md)?
 

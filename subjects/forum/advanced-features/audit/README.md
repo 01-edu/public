@@ -1,4 +1,4 @@
-### Functional
+#### Functional
 
 ##### Try to like any post of your choice.
 
@@ -44,7 +44,7 @@
 
 #### Basic
 
-###### +Does the project runs quickly and effectively (Favoring of recursion, no unnecessary data requests, etc.)?
+###### +Does the project run quickly and effectively (Favoring of recursion, no unnecessary data requests, etc.)?
 
 ###### +Does the code obey the [good practices](../../../good-practices/README.md)?
 

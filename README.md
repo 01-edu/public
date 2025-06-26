@@ -1,6 +1,6 @@
 # Welcome to the [Public](https://github.com/01-edu/public) Repository of the [01 Edu System](https://github.com/01-edu) 👋
 
-![01 Edu System](https://github.com/01-edu/public/assets/14015057/35560fed-34e6-42c8-a71b-71b0534b7ad7)
+![01-Edu](https://github.com/user-attachments/assets/addd2e35-d07c-4201-98b7-521443ad38e6)
 
 ### 🍎 Our Courses
 
@@ -16,3 +16,11 @@ We welcome contributions! Feel free to submit a [**🪢 pull request**](https://
 
 Thank you!<br>
 **📚 The Content Team**
+
+---
+
+### 🙌 Contributors
+
+We extend our sincere gratitude to all the contributors.
+
+[![Contributors](https://contrib.rocks/image?repo=01-edu/public)](https://github.com/01-edu/public/graphs/contributors)

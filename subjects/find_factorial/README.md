@@ -17,10 +17,10 @@ Example: the factorial of 6 (written 6!) is 1 \* 2 \* 3 \* 4 \* 5 \* 6 = 720.
 
 ### Usage
 
-Here is a possible program to test your function :
+Here is a possible program to test your function:
 
 ```rust
-use find_factorial::factorial;
+use find_factorial::*;
 
 fn main() {
     println!("The factorial of 0 = {}", factorial(0));

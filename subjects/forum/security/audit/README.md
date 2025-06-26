@@ -28,15 +28,13 @@
 
 #### General
 
-###### +Does the project implement their own certificates for the HTTPS protocol?
-
-###### +Does the project implement UUID(Universal Unique Identifier) for the user session?
+###### +Does the project implement its own certificates for the HTTPS protocol?
 
 ###### +Does the database present a password for protection?
 
 #### Basic
 
-###### +Does the project runs quickly and effectively? (no unnecessary data requests, etc)
+###### +Does the project run quickly and effectively? (no unnecessary data requests, etc)
 
 ###### +Does the code obey the [good practices](../../../good-practices/README.md)?
 

@@ -100,7 +100,7 @@
 
 #### General
 
-###### +Does the program runs with colors as in the ls command?
+###### +Does the program run with colors as in the ls command?
 
 ###### +Does the program has other flags except for the mandatory ones?
 
