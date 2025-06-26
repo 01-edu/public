@@ -84,15 +84,15 @@
 
 ##### Try opening your own profile.
 
-###### Does the profile displays every information requested in the register form, apart from the password?
+###### Does the profile display every information requested in the register form, apart from the password?
 
 ##### Try opening your own profile.
 
-###### Does the profile displays every post created by the user?
+###### Does the profile display every post created by the user?
 
 ##### Try opening your own profile.
 
-###### Does the profile displays the users that you follow and the ones who are following you?
+###### Does the profile display the users that you follow and the ones who are following you?
 
 ##### Try opening your own profile.
 
@@ -140,11 +140,11 @@
 
 ##### Open two browsers, log in with different users on each browser, follow each other and with one of the users create a group and invite the other user.
 
-###### Did the other user received a group invitation that he/she can refuse/accept?
+###### Did the other user receive a group invitation that he/she can refuse/accept?
 
 ##### Using the same browsers and the same users, with one of the users create a group and with the other try to make a group entering request.
 
-###### Did the owner of the group received a request that he/she can refuse/accept?
+###### Did the owner of the group receive a request that he/she can refuse/accept?
 
 ###### Can a user make group invitations, after being part of the group (being the user different from the creator of the group)?
 
@@ -164,7 +164,7 @@
 
 ##### Try and open two browsers (ex: Chrome and Firefox), log in with different users in each one. Then with one of the users try to send a private message to the other user.
 
-###### Did the other user received the message in realtime?
+###### Did the other user receive the message in realtime?
 
 ##### Try and open two browsers (ex: Chrome and Firefox), log in with different users that are not following each other at all. Then with one of the users try to send a private message to the other user.
 
@@ -172,11 +172,11 @@
 
 ##### Using the two browsers with the users start a chat between the two of them.
 
-###### Did the chat between the users went well? (did not crash the server)
+###### Did the chat between the users go well? (did not crash the server)
 
 ##### Try and open three browsers (ex: Chrome and Firefox or a private browser), log in with different users in each one. Then with one of the users try to send a private message to one of the other users.
 
-###### Did only the targeted user received the message?
+###### Did only the targeted user receive the message?
 
 ##### Using the three browsers with the users, enter with each user a common group. Then start sending messages to the common chat room using one of the users.
 
@@ -184,7 +184,7 @@
 
 ##### Using the three browsers with the users, continue chatting between the users in the group.
 
-###### Did the chat between the users went well? (did not crash the server)
+###### Did the chat between the users go well? (did not crash the server)
 
 ###### Can you confirm that it is possible to send emojis via chat to other users?
 
@@ -194,19 +194,19 @@
 
 ##### Open two browsers, log in as two different private users and with one of them try to follow the other.
 
-###### Did the other user received a notification regarding the following request?
+###### Did the other user receive a notification regarding the following request?
 
 ##### Open two browsers, log in with different users on each browser, follow each other and with one of the users create a group and invite the other user.
 
-###### Did the invited user received a notification regarding the group invitation request?
+###### Did the invited user receive a notification regarding the group invitation request?
 
 ##### Open two browsers, log in with different users on each browser, create a group with one of them and with the other send a group entering request.
 
-###### Did the other user received a notification regarding the group entering request?
+###### Did the other user receive a notification regarding the group entering request?
 
 ##### Open two browsers, log in with different users on each browser, become part of the same group with both users and with one of the users create an event.
 
-###### Did the other user received a notification regarding the creation of the event?
+###### Did the other user receive a notification regarding the creation of the event?
 
 #### Docker
 
@@ -222,7 +222,7 @@
 
 ###### +Can you log in using Github or other type of external OAuthenticator (open standard for access delegation)?
 
-###### +Did the student created a migration to fill the database?
+###### +Did the student create a migration to fill the database?
 
 ###### +If you unfollow a user, do you get a confirmation pop-up?
 
