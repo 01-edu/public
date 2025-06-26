@@ -33,7 +33,7 @@ And its output:
 
 ```console
 $ cargo run
-the element 8 is in the position Some(7) in the array [1, 3, 4, 6, 8, 9, 11, 8]
+the element 8 is last in the position Some(7) in the array [1, 3, 4, 6, 8, 9, 11, 8]
 $
 ```
 
