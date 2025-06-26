@@ -47,11 +47,11 @@ And its output:
 $ cargo run
 ["A"]
 ["  A  ", " B B ", "C   C", " B B ", "  A  "]
-  A
- B B
+  A  
+ B B 
 C   C
- B B
-  A
+ B B 
+  A  
 $
 ```
 
