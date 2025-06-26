@@ -82,6 +82,10 @@ The use of external binaries or system calls that spawn them is strictly forbidd
 
 ###### +Did the student add auto-completion when writing a command?
 
+###### +Did the student implement command history?
+
+###### +Did the student implement commaing chaining with `;`?
+
 ###### +Did the student implement piping?
 
 ###### +Did the student add colors to the errors or directories?
@@ -91,3 +95,7 @@ The use of external binaries or system calls that spawn them is strictly forbidd
 ###### +Did the student display the current directory in the prompt?
 
 ###### +Did the student add any other features or commands to the project?
+
+###### +Did the student implement a custom `help` command documenting functionality?
+
+###### +Did the student implement support for environment variables?
