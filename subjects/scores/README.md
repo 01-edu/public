@@ -6,9 +6,9 @@ Let's play a little.
 
 Create a function named `score` that given a `&str`, computes the score for that given string as a `u64`.
 
-Each letter has a value, you just have to sum the values of the letters in the given string.
+Each letter has a value, you just have to sum the values of the letters in the given string. Each letter has its own assigned value, independently of being uppercase or lowercase.
 
-You will need these:
+This table showcases the assigned value for each letter:
 
 | Letter                       | Value |
 | ---------------------------- | :---: |
