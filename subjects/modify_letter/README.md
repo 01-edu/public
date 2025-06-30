@@ -26,7 +26,8 @@ pub fn swap_letter_case(s: &str, letter: char) -> String {
 Here is a program to test your functions.
 
 ```rust
-use modify_letter::*modify_letter*;
+use modify_letter::*;
+
 
 fn main() {
     println!("{}", remove_letter_sensitive("Jojhn jis sljeepjjing", 'j'));
