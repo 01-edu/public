@@ -11,7 +11,7 @@ Create the structures `Circle` and `Point`. You'll need to create the necessary 
 - `Circle`:
   - `diameter()` -> returns the diameter of the circle.
   - `area()` -> returns the area of the circle.
-  - `intersect()` -> returns if two circles intersect.
+  - `intersect()` -> returns `true` if two circles intersect.
 
 #### Associated Functions
 
