@@ -33,6 +33,7 @@ So we will get:
 
 ```rust
 pub fn is_luhn_formula(code: &str) -> bool {
+    todo!()
 }
 ```
 
@@ -41,6 +42,8 @@ pub fn is_luhn_formula(code: &str) -> bool {
 Here is a possible program to test your function,
 
 ```rust
+use luhn_algorithm::is_luhn_formula;
+
 fn main() {
     println!("{}", is_luhn_formula(""));
     println!("{}", is_luhn_formula("1"));
