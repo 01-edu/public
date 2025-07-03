@@ -4,18 +4,19 @@
 
 Create the following **functions**:
 
-- `transform_and_save_on_heap`: which accepts a string of numbers separated by spaces. If a number has a `'k'` as a suffix it should be multiplied by 1000. The function transforms those numbers into a vector of `u32`, and saves them in the heap using `Box`.
+- `parse_into_boxed`: which accepts a string of numbers separated by spaces. If a number has a `k` as a suffix it should be multiplied by 1000. The function parses these numbers and boxes them into a vector of `Box<u32>`.
 
-- `take_value_ownership`: which accepts the return value from `transform_and_save_on_heap`, unboxes the value, and returns it.
+- `into_unboxed`: which accepts the value returned from `parse_into_boxed` and unboxes each element into another vector.
 
 ### Expected Functions
 
 ```rust
-pub fn transform_and_save_on_heap(s: String) -> Box<Vec<u32>> {
-
+pub fn parse_into_boxed(s: String) -> Vec<Box<u32>> {
+    todo!()
 }
-pub fn take_value_ownership(a: Box<Vec<u32>>) -> Vec<u32> {
 
+pub fn into_unboxed(a: Vec<Box<u32>>) -> Vec<u32> {
+    todo!()
 }
 ```
 
@@ -24,20 +25,22 @@ pub fn take_value_ownership(a: Box<Vec<u32>>) -> Vec<u32> {
 Here is a program to test your functions
 
 ```rust
+use std::mem;
+
 use box_it::*;
 
 fn main() {
-    let new_str = String::from("5.5k 8.9k 32");
+    let s = "5.5k 8.9k 32".to_owned();
 
-    // creating a variable and we save it in the Heap
-    let a_h = transform_and_save_on_heap(new_str);
-    println!("Box value : {:?}", &a_h);
-    println!("size occupied in the stack : {:?} bytes", (std::mem::size_of_val(&a_h)));
+    let boxed = parse_into_boxed(s);
+    println!("Element value: {:?}", boxed[0]);
+    println!("Element size: {:?} bytes", mem::size_of_val(&boxed[0]));
 
-    let a_b_v = take_value_ownership(a_h);
-    println!("value : {:?}", &a_b_v);
-    println!("size occupied in the stack : {:?} bytes", (std::mem::size_of_val(&a_b_v)));
-    // whenever the box, in this case "a_h", goes out of scope it will be deallocated, freed
+    let unboxed = into_unboxed(boxed);
+    println!("Element value: {:?}", unboxed[0]);
+    println!("Element size: {:?} bytes", mem::size_of_val(&unboxed[0]));
+
+    // As with everything related to regular Rust memory management, both the `Vec` and the `Box`es will be properly dropped when out of scope and freed, ensuring no leaks
 }
 ```
 
@@ -45,10 +48,10 @@ And its output:
 
 ```console
 $ cargo run
-Box value : [5500, 8900, 32]
-size occupied in the stack : 8 bytes
-value : [5500, 8900, 32]
-size occupied in the stack : 24 bytes
+Element value: 5500
+Element size: 8 bytes
+Element value: 5500
+Element size: 4 bytes
 $
 ```
 
