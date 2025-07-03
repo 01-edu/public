@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a function named `stars` that takes a `u32` as an argument and returns a `String` of stars (asterisks). The number of stars returned is 2^n (2 to the nth power).
+Create a function named `stars` that takes a `u32` as an argument and returns a `String` of stars (asterisks). The number of stars returned is 2^n (2 to the `n`th power).
 
 ### Expected functions
 
