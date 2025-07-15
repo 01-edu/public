@@ -30,7 +30,7 @@ myfunc() {
 
 - You have to create your own script.
 - The `0-shell` must be able to read and execute scripts.
-- The project has to be written in a compiled language like (C, Rust Go or other), **interpreted languages like (Perl and others) are not allowed**.
+- The project has to be written in **Rust**.
 - The code must respect the [good practices](https://public.01-edu.org/subjects/good-practices/)
 
 This project will help you learn about:
