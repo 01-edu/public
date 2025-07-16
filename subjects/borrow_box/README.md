@@ -66,9 +66,9 @@ fn main() {
     game.update_score("Susana");
     println!("{:?}", game.read_winner());
 
-    game.update_score(String::from("Joao"));
+    game.update_score("Joao");
     // This one will not count because it already 5 games played, the `nb_games`
-    game.update_score(String::from("Susana"));
+    game.update_score("Susana");
 
     println!("{:?}", game.read_winner());
 
