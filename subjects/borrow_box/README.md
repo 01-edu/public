@@ -83,9 +83,9 @@ And its output:
 
 ```console
 $ cargo run
-("Same score! tied", 0)
-("Same score! tied", 2)
-("Joao", 3)
+None
+None
+Some(("Joao", 3))
 "game deleted: id -> 0"
 $
 ```
