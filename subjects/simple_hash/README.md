@@ -39,7 +39,7 @@ And its output
 ```console
 $ cargo run
 {"tests": 1, "with": 1, "this": 2, "it": 1, "enough": 1, "is": 2, "but": 1, "sentence": 1, "only": 1, "basic": 3, "again": 1, "for": 1, "be": 1, "once": 1, "very": 2, "should": 1, "few": 1, "a": 2, "repetitions.": 1}
-20
+19
 $
 ```
 

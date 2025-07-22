@@ -5,6 +5,7 @@
 In this exercise, if you do not know about it already, you will learn about the rotational cipher "ROT13".
 
 A ROT13 applied the Latin alphabet:
+
 ```
 - Plain:  abcdefghijklmnopqrstuvwxyz
           ||||||||||||||||||||||||||
@@ -21,7 +22,7 @@ Only letters should be rotated. Numbers and punctuation should be left unchanged
 
 ```rust
 pub fn rotate(input: &str, key: i8) -> String {
-
+    todo!()
 }
 ```
 
