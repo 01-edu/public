@@ -15,8 +15,8 @@ Implement the following HTTP endpoints:
 1. GET `/`: Sends HTML response, the main page.\
    1.1. GET Tip: [go templates](https://golang.org/pkg/html/template/) to receive and display data from the server.
 
-2. POST `/ascii-art`: that sends data to Go server (text and a banner)\
-   2.1. POST Tip: use form and other types of [tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) to make the post request.\
+2. POST `/ascii-art`: that sends data (text and specified banner) to the Go server.\
+   2.1. POST Tip: use form and other types of [tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) to make the post request.
 
 The way you display the result from the POST is up to you. What we recommend are one of the following :
 
@@ -25,18 +25,18 @@ The way you display the result from the POST is up to you. What we recommend are
 
 The main page must have:
 
-- text input
-- radio buttons, select object or anything else to switch between banners
-- button, which sends a POST request to '/ascii-art' and outputs the result on the page.
+- a text input field
+- radio buttons, select object or another method to switch between banners
+- a button that sends a POST request to '/ascii-art' and displays the result on the page.
 
 ### HTTP status code
 
 Your endpoints must return appropriate HTTP status codes.
 
-- OK (200), if everything went without errors.
-- Not Found, if nothing is found, for example templates or banners.
-- Bad Request, for incorrect requests.
-- Internal Server Error, for unhandled errors.
+- 200 OK, if everything went without errors.
+- 404 Not Found, if nothing is found, for example templates or banners.
+- 400 Bad Request, for incorrect requests.
+- 500 Internal Server Error, for unhandled errors.
 
 ## Markdown
 
