@@ -22,7 +22,7 @@ Beside those sections it will have a mandatory section for the generation of sta
 
 You will have to create a profile UI where you can see your own school information. This information/data is present on the GraphQL endpoint, where you will have to query it.
 
-The UI design is up to you. However, it must have a statistic section where you can generate graphs to see more about your journey and achievements on the school. This graphs must be done using [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG). You need to do at least **two different statistic graphs** for the data given. Bare in mind the principles of a [good UI](../good-practices/README.md).
+The UI design is up to you. However, it must have a statistic section where you can generate graphs to see more about your journey and achievements on the school. This graph must be done using [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG). You need to do at least **two different statistic graphs** for the data given. Bear in mind the principles of a [good UI](../good-practices/README.md).
 
 Using SVG you can create several [types of graphs](https://www.tutorialspoint.com/svg/graph.htm) including interactive graphs and animated graph. It will be up to you to decide what type of graphs you are going to do.
 
