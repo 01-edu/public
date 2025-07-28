@@ -11,22 +11,24 @@ There are two types of food for now:
 
 Define the `Food` trait for `Fruit` and `Meat`. The required method `gives` returns the amount of strength that the food provides.
 
-Implement the `std::fmt::Display` trait for the `Player` structure, so that when `{}` corresponds to a `Player` insider a `println!` macro, it will print 3 lines:
+Implement the `std::fmt::Display` trait for the `Player` structure, so that when `Player` is printed, it will print information according to this example:
 
-- First: the name of the player.
-- Second: strength, score and the money.
-- Third: The player's list of weapons.
+- player_name
+- Strength: 4, Score: 10, Money: 400
+- Weapons: ["toy knife", "tough glove"]
 
 ### Expected Functions and Structures
 
 ```rust
+use std::fmt;
+
 #[derive(Debug)]
-pub struct Player {
-	pub name: String,
+pub struct Player<'a> {
+	pub name: &'a str,
 	pub strength: f64,
-	pub score: i32,
-	pub money: i32,
-	pub weapons: Vec<String>,
+	pub score: u32,
+	pub money: u32,
+	pub weapons: Vec<&'a str>,
 }
 
 pub struct Fruit {
@@ -38,10 +40,16 @@ pub struct Meat {
 	pub fat_content: f64,
 }
 
-impl Player {
-	fn eat(&mut self, food: T) {
+impl Player<'_> {
+	pub fn eat(&mut self, food: impl Food) {
 		self.strength += food.gives();
 	}
+}
+
+impl fmt::Display for Player<'_> {
+	fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+		todo!()
+    }
 }
 
 pub trait Food {
@@ -49,9 +57,15 @@ pub trait Food {
 }
 
 impl Food for Fruit {
+	fn gives(&self) -> f64 {
+		todo!()
+	}
 }
 
 impl Food for Meat {
+	fn gives(&self) -> f64 {
+		todo!()
+	}
 }
 ```
 
@@ -74,15 +88,18 @@ fn main() {
 	};
 
 	let mut player1 = Player {
-		name: String::from("player1"),
+		name: "player1",
 		strength: 1.0,
 		score: 0,
 		money: 0,
-		weapons: vec![String::from("knife")],
+		weapons: vec!["knife"],
 	};
+
 	println!("Before eating {:?}", player1);
+
 	player1.eat(apple);
 	println!("After eating an apple\n{}", player1);
+
 	player1.eat(steak);
 	println!("After eating a steak\n{}", player1);
 }

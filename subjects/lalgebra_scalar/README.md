@@ -15,6 +15,7 @@ After finishing completing the declaration of the trait, implement the `Scalar` 
 ```rust
 pub trait Scalar: _ {
 	type Item;
+
 	fn zero() -> Self::Item;
 	fn one() -> Self::Item;
 }

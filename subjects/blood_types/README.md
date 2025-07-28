@@ -20,24 +20,25 @@ Take a look at the `BloodType` struct below. It contains two enums which enable 
 To provide a simple way to create blood types, implement the trait `FromStr` for `BloodType`. This will allow us to use the `parse` method and `from_str`, so we can do:
 
 ```rust
-   let a_neg: BloodType = "A-".parse();
+let a_neg: BloodType = "A-".parse();
 ```
 
 Implement the following Traits:
 
-- `std::cmp::Ord`: to make possible to sort a vector or array of `BloodType`.
-- `std::Debug`: for `BloodType`, allowing us print a vector such as `[BloodType { antigen: A, rh_factor: Positive}, BloodType{ antigen: B, rh_factor: Negative}]` as `"[ A+, B-]"` when using format strings `{:?}`.
+- `std::fmt::Debug`: for `BloodType`, allowing us print a vector such as `[BloodType { antigen: A, rh_factor: Positive}, BloodType{ antigen: B, rh_factor: Negative}]` as `"[A+, B-]"` when using format strings `{:?}`.
 
 Create three methods for BloodType:
 
-- `can_receive_from`: which returns `true` if `self` can receive blood from `other` blood type.
+- `can_receive_from`: which returns whether `self` can receive blood from `other` blood type.
 - `donors`: which returns all the blood types that can give blood to `self`.
 - `recipients`: which returns all the blood types that can receive blood from `self`.
 
 ### Expected Functions and Structures
 
 ```rust
-#[derive(Debug, PartialEq, Eq, Clone, PartialOrd, Ord)]
+use std::{fmt, str::FromStr};
+
+#[derive(PartialEq, Eq, Hash, Clone, Copy)]
 pub enum Antigen {
 	A,
 	AB,
@@ -45,47 +46,44 @@ pub enum Antigen {
 	O,
 }
 
-#[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone)]
+#[derive(PartialEq, Eq, Hash, Clone, Copy)]
 enum RhFactor {
 	Positive,
 	Negative,
 }
 
-#[derive(PartialEq, Eq, PartialOrd)]
+#[derive(PartialEq, Eq, Hash, Clone, Copy)]
 pub struct BloodType {
 	pub antigen: Antigen,
 	pub rh_factor: RhFactor,
 }
 
-use std::cmp::{Ord, Ordering};
-
-use std::str::FromStr;
-
-impl FromStr for Antigen {
-}
-
-impl FromStr for RhFactor {
-}
-
-impl Ord for BloodType {
-}
-
 impl FromStr for BloodType {
+	type Err = ();
+
+    fn from_str(s: &str) -> Result<Self, Self::Err> {
+		todo!()
+    }
 }
 
-use std::fmt::{self, Debug};
-
-impl Debug for BloodType {
+impl fmt::Debug for BloodType {
+	fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+		todo!()
+    }
 }
 
 impl BloodType {
-	pub fn can_receive_from(&self, other: &Self) -> bool {
+	pub fn can_receive_from(self, other: Self) -> bool {
+		todo!()
 	}
 
-	pub fn donors(&self) -> Vec<Self> {
+	pub fn donors(self) -> Vec<Self> {
+		todo!()
 	}
 
-	pub fn recipients(&self) -> Vec<BloodType> {
+	pub fn recipients(self) -> Vec<Self> {
+		todo!()
+	}
 }
 ```
 
@@ -97,14 +95,15 @@ Here is a program to test your function.
 use blood_types::*;
 
 fn main() {
-	let blood_type: BloodType = "O+".parse().unwrap();
+	let blood_type = "O+".parse::<BloodType>().unwrap();
 	println!("recipients of O+ {:?}", blood_type.recipients());
 	println!("donors of O+ {:?}", blood_type.donors());
-	let another_blood_type: BloodType = "A-".parse().unwrap();
+
+	let another_blood_type = "A-".parse::<BloodType>().unwrap();
 	println!(
 		"donors of O+ can receive from {:?} {:?}",
-		&another_blood_type,
-		blood_type.can_receive_from(&another_blood_type)
+		another_blood_type,
+		blood_type.can_receive_from(another_blood_type)
 	);
 }
 ```

@@ -10,13 +10,17 @@ Create two functions:
 
 > A week is represented by the year followed by the number of the week. For example, January 1, 2020 is in week 1 of 2020 and will be represented by a `String` with the form `"2020-W1"`.
 
+Note: You must use the `json` crate `v0.12.4` for the functions' respective arguments.
+
 ### Expected functions
 
 ```rust
 pub fn commits_per_week(data: &json::JsonValue) -> HashMap<String, u32> {
+	todo!()
 }
 
 pub fn commits_per_author(data: &json::JsonValue) -> HashMap<String, u32> {
+	todo!()
 }
 ```
 
@@ -28,7 +32,7 @@ Here is a possible test for your function:
 use commits_stats::{commits_per_week, commits_per_author};
 
 fn main() {
-	let contents = fs::read_to_string("commits.json").unwrap();
+	let contents = include_str!("commits.json").unwrap();
 	let serialized = json::parse(&contents).unwrap();
 	println!("{:?}", commits_per_week(&serialized));
 	println!("{:?}", commits_per_author(&serialized));
@@ -46,5 +50,5 @@ $
 
 ### Notions:
 
-- [chrono](https://docs.rs/chrono/0.4.19/chrono)
+- [chrono](https://docs.rs/chrono/0.4.41/chrono)
 - [json](https://docs.rs/json/0.12.4/json/index.html)
