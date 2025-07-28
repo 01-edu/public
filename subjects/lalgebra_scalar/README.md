@@ -50,4 +50,4 @@ $
 ### Notions
 
 - [Module std::ops](https://doc.rust-lang.org/std/ops/index.html)
-[Module std::marker::Sized](https://doc.rust-lang.org/std/marker/trait.Sized.html)
+  [Module std::marker::Sized](https://doc.rust-lang.org/std/marker/trait.Sized.html)
