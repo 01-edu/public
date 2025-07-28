@@ -31,12 +31,8 @@ Here is a possible program to test your function:
 ```rust
 use own_and_return::*;
 
-pub struct Film {
-    pub name: String,
-}
-
 fn main() {
-    let my_film = Film { name: "Terminator".toString() };
+    let my_film = Film { name: "Terminator".to_string() };
     println!("{}", take_film_name(/* to be implemented */));
     // the order of the print statements is intentional, if your implementation is correct,
     // you should have a compile error because my_film was consumed
