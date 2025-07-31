@@ -40,7 +40,7 @@ And its output
 
 ```console
 $ cargo run
-Joe is sleeping
+John is sleeping
 Jim is swimming
 bye byE
 $

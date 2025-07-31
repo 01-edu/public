@@ -26,7 +26,7 @@ i = 5
 ### Expected Functions
 
 ```rust
-fn inv_pyramid(v: String, i: u32) -> Vec<String> {}
+pub fn inv_pyramid(v: String, i: u32) -> Vec<String> {}
 ```
 
 ### Usage
