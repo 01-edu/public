@@ -2,14 +2,13 @@
 
 ### Instructions
 
-Create a **function** named `identity` which calculates the identity of a value (receives any data type and returns the same value).
-
-
+Create a **function** named `identity` which receives an argument of any type and returns it.
 
 ### Expected Function (signature to be completed)
 
 ```rust
 pub fn identity(v: _) -> _ {
+	todo!()
 }
 ```
 
