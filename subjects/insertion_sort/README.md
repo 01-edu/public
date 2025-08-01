@@ -4,7 +4,7 @@
 
 Implement the insertion-sort algorithm by creating a function named `insertion_sort`. It should execute the iterations of the algorithm **up to** the number indicated by `steps`. See the **Usage** for more information.
 
-The insertion-sort algorithm sorts an array of size `n` in ascending order. 
+The insertion-sort algorithm sorts an array of size `n` in ascending order.
 
 1. Iterates over the slice from `slice[1]` to `slice[n]`.
 
@@ -32,6 +32,8 @@ pub fn insertion_sort(slice: &mut [i32], steps: usize) {
 Here is a possible program to test your function,
 
 ```rust
+use insertion_sort::insertion_sort;
+
 fn main() {
     let mut target = [5, 3, 7, 2, 1, 6, 8, 4];
     // executes the first iteration of the algorithm
