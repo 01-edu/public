@@ -41,4 +41,4 @@ $
 
 ### Notions
 
-- [Result Definition](https://doc.rust-lang.org/stable/book/ch09-02-recoverable-errors-with-result.html?highlight=result#recoverable-errors-with-result)
+- [Result Definition](https://doc.rust-lang.org/stable/book/ch09-02-recoverable-errors-with-result.html)
