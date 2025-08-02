@@ -22,7 +22,7 @@ println!("short hand: {}, long hand: {}, description: {}", d.short_hand, d.long_
 
 An associated **type** called `Callback` will also be provided. It should represent a function pointer which is going to be used in the structure and functions below. This function will represent the callback for the flag associated to it.
 
-A second structure named `FlagsHandler` will be given which just has one element: `flags: HashMap<(String, String), Callback>`. You'll also need to implement the following associated **functions**:
+A second structure named `FlagsHandler` will be given which just has one element: `flags: HashMap<String, Callback>`. You'll also need to implement the following associated **functions**:
 
 - `add_flag`, which adds the flag and callback function to the HashMap.
 - `exec_func`, which executes the function using the flag provided and returns the result. The callback should be executed with the first two arguments of the supplied `argv` argument. Return either the successful result from the callback or the error stringified.
