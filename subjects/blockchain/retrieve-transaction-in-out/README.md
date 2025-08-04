@@ -29,8 +29,8 @@ rpcpassword=multipass
 ### Usage
 
 ```js
-txHash = 'd030023d96b9170af9ec2fe5d9b62a5eacbcbf144c68f3f45d68bca72d1d3649'
-retrieveTxData(txHash)
+txHash = "d030023d96b9170af9ec2fe5d9b62a5eacbcbf144c68f3f45d68bca72d1d3649";
+retrieveTxData(txHash);
 /* Expected : 
     { 
       in: [ 0.18075094 ], 
