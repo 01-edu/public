@@ -6,23 +6,22 @@ A vector in linear algebra is defined as "anything that can be added, and that c
 
 Define the associated function `dot`, that calculates the dot product between two vectors. If the vectors are of different lengths, return `None`.
 
-Note: `Vector` must implement `Debug`, `Clone`, `Eq` and `PartialEq`.
+Note: `Vector` must implement at least `Debug` and `PartialEq`.
 
 ### Expected Functions and Structure
 
 ```rust
-pub struct Vector<T: Scalar>(pub Vec<T>);
-
 use std::ops::Add;
 
-impl Add for Vector<T> {
+#[derive(Debug, PartialEq)]
+pub struct Vector<T: Scalar>(pub Vec<T>);
+
+impl Add<_> for Vector<_> {
 }
 
-impl Vector<T> {
-	pub fn new() -> Self {
-	}
-
-	pub fn dot(&self, other: &Self) -> Option<T> {
+impl Vector<_> {
+	pub fn dot(self, rhs: Self) -> Option<T> {
+		todo!()
 	}
 }
 ```
@@ -35,10 +34,8 @@ Here is a program to test your function.
 use lalgebra_vector::*;
 
 fn main() {
-	let vector_1: Vector<i64> = Vector(vec![1, 3, -5]);
-	let vector_2: Vector<i64> = Vector(vec![4, -2, -1]);
-	println!("{:?}", vector_1.dot(&vector_2));
-	println!("{:?}", vector_1 + vector_2);
+	println!("{:?}", Vector(vec![1, 3, -5]).dot(Vector(vec![4, -2, -1])));
+	println!("{:?}", Vector(vec![1, 3, -5]) + Vector(vec![4, -2, -1]));
 }
 ```
 
