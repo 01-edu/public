@@ -53,9 +53,24 @@ Traffic lights are signaling devices positioned at road intersections that follo
 
 You will position those traffic lights at the point where each lane enters the intersection.
 
-You can implement any algorithm you choose to control the traffic lights system, but bare in mind that traffic congestion should not be too high (8 or more vehicles).
+You can implement any algorithm you choose to control the traffic lights system, but bear in mind that **traffic congestion should remain below the lane’s maximum capacity**.
 
-The primary function of **your** traffic light system, is to avoid collisions between vehicles passing through the intersection.
+> **Dynamic Congestion Rule:**
+> The maximum allowed queue length for each lane is calculated based on the lane’s physical length, vehicle length, and safety gap between vehicles:
+>
+> ```
+> capacity = floor(lane_length / (vehicle_length + safety_gap))
+> ```
+>
+> Where:
+>
+> - `lane_length`: Distance from the stop line to the vehicle spawn point
+> - `vehicle_length`: Approximate car length in simulation units (e.g., pixels or meters)
+> - `safety_gap`: Minimum safe distance between vehicles
+>
+> If the number of vehicles in a lane reaches this capacity, the traffic light logic should adjust (e.g., extend green time for that lane) to prevent overflow.
+
+The primary function of your traffic light system is to avoid collisions between vehicles passing through the intersection, while dynamically adapting to congestion.
 
 **3. Vehicles**
 
@@ -105,7 +120,6 @@ You can see an example for road_intersection [here](https://www.youtube.com/watc
 You can implement the following optional features:
 
 - Vehicle and traffic light animations, and image rendering. You can find some cool assets here:
-
   - [limezu](https://limezu.itch.io/)
   - [finalbossblue](http://finalbossblues.com/timefantasy/free-graphics/).
   - [spriters-resource](https://www.spriters-resource.com/).
@@ -113,3 +127,21 @@ You can implement the following optional features:
 ### Notions
 
 - https://docs.rs/sdl2/0.34.3/sdl2/
+
+Perfect! Let’s update your **subject** so the congestion rule is no longer fixed at “8 cars” but adapts to **lane geometry**.
+
+Here’s how we can modify it so it fits naturally into the instructions:
+
+---
+
+## **Updated Subject – Congestion Rule Fix**
+
+### **Traffic Lights (Updated Congestion Rule)**
+
+Traffic lights are signaling devices positioned at road intersections that follow a universal color code. We all know the normal colors for traffic lights, but for this exercise, your traffic lights will only have **red** and **green**.
+
+You will position those traffic lights at the point where each lane enters the intersection.
+
+---
+
+Would you like me to **integrate this into your full subject text** so that it reads seamlessly (with the congestion rule fixed and everything styled the same way as the original)? That way you can just replace the old one.
