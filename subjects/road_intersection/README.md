@@ -127,21 +127,3 @@ You can implement the following optional features:
 ### Notions
 
 - https://docs.rs/sdl2/0.34.3/sdl2/
-
-Perfect! Let’s update your **subject** so the congestion rule is no longer fixed at “8 cars” but adapts to **lane geometry**.
-
-Here’s how we can modify it so it fits naturally into the instructions:
-
----
-
-## **Updated Subject – Congestion Rule Fix**
-
-### **Traffic Lights (Updated Congestion Rule)**
-
-Traffic lights are signaling devices positioned at road intersections that follow a universal color code. We all know the normal colors for traffic lights, but for this exercise, your traffic lights will only have **red** and **green**.
-
-You will position those traffic lights at the point where each lane enters the intersection.
-
----
-
-Would you like me to **integrate this into your full subject text** so that it reads seamlessly (with the congestion rule fixed and everything styled the same way as the original)? That way you can just replace the old one.
