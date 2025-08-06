@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Implement [Chaikin's](http://graphics.cs.ucdavis.edu/education/CAGDNotes/Chaikins-Algorithm/Chaikins-Algorithm.html) algorithm as a step by step animation.
+Implement [Chaikin's](https://www.cs.unc.edu/~dm/UNC/COMP258/LECTURES/Chaikins-Algorithm.pdf) algorithm as a step by step animation.
 
 You will create a canvas to enable the user to draw 1 or more points. The screen will then animate each step that is taken to obtain the final result of a drawn curve. The animation must play for 7 steps and then it must restart.
 
@@ -20,7 +20,7 @@ You can see how the application should work [here](https://youtu.be/PbB2eKnA2QI)
 
 - If the user presses `Enter` before any points have been drawn, then nothing should happen. It should still be possible to draw points. You may optionally choose to display a message to inform the user that they forgot to draw points.
 
-- If the canvas only has only one control point, the program must only present that point and not cycle through the steps.
+- If the canvas has only one control point, the program must only present that point and not cycle through the steps.
 
 - If the canvas has only two control points, the program must draw a straight line.
 
