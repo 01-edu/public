@@ -1,6 +1,6 @@
 #### General
 
-###### Was the project written in a compiled programming language?
+###### Was the project written in Rust?
 
 ###### Was the student shell script created?
 
