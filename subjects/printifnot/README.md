@@ -2,9 +2,11 @@
 
 ### Instructions
 
-Write a function that takes a `string` as an argument and returns the letter `G` if the argument length is less than 3, otherwise returns `Invalid Input` followed by a newline `\n`.
+Write a function that takes a string and returns:
 
-- If it's an empty string return `G` followed by a newline `\n`.
+- `"G\n"` if the string's length is less than 3 (including empty string).
+
+- `"Invalid Input\n"` otherwise.
 
 ### Expected function
 
