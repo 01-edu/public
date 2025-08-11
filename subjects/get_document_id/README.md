@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create the following structures which will help you get the `document_id` of the document you need.
+Consider the following structures which will help you get the `document_id` of the target document.
 
 - `OfficeOne`: `next_office` as type `Result<OfficeTwo, ErrorOffice>`.
 - `OfficeTwo`: `next_office` as type `Result<OfficeThree, ErrorOffice>`.
@@ -13,7 +13,7 @@ Create the following structures which will help you get the `document_id` of the
 
 The `u32` is the `id` of the office generating the error.
 
-Beside the structures, you must create a **function** named `get_document_id`, and associate it to the `OfficeOne` structure.
+**Task:** Implement a **function** named `get_document_id`, and associate it to the `OfficeOne` structure.
 
 This **function** should return the `Result` value in the `OfficeFour` structure or the first `Err` it finds in the chain.
 
