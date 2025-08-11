@@ -12,12 +12,12 @@ You will also have to create a `User` struct which has:
 
 - Fields:
   - `name`: `String`
-  - `acessLevel`: `enum`
+  - `access_level`: `AccessLevel`
 - Associated functions:
   - `new`: which initializes the struct.
   - `send_name`: which takes only `self` as argument and returns an `Option<&str>` with `None` if the user is a `Guest` or the `name` if the `AccessLevel` has any of the other options.
 - Other functions:
-  - `check_user_name`: which takes a `User`, calls `send_name` and returns a `tuple` with `true` and the user `name` if `send_name` returns the name or `false` and `"Error: User is guest"` if not.
+  - `check_user_name`: which takes a reference to `User`, calls `send_name` and returns a `tuple` with `true` and the user `name` if `send_name` returns the name or `false` and `"ERROR: User is guest"` if not.
 
 ### Expected Functions and Data Structures
 

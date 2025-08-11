@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a **function** which returns the first prime number which is less than or equal to the `u64` passed as an argument.
+Create a **function** which returns the first prime number which is less than the `u64` passed as an argument.
 
 If there are no smaller primes, the function should return `0`.
 
