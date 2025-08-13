@@ -99,7 +99,7 @@ Hint:
 ### Exercise 2: Regression example
 
 The goal of this exercise is to learn to train a neural network to perform a regression on a data set.
-The data set is [Auto MPG Dataset](auto-mpg.csv) and the go is to build a model to predict the fuel efficiency of late-1970s and early 1980s automobiles. To do this, provide the model with a description of many automobiles from that time period. This description includes attributes like: cylinders, displacement, horsepower, and weight.
+The data set is [Auto MPG Dataset](auto-mpg.csv) and the goal is to build a model to predict the fuel efficiency of late-1970s and early 1980s automobiles. To do this, provide the model with a description of many automobiles from that time period. This description includes attributes like: cylinders, displacement, horsepower, and weight.
 
 - [Keras](https://www.tensorflow.org/tutorials/keras/regression)
 
