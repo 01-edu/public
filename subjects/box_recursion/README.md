@@ -30,11 +30,11 @@ pub struct WorkEnvironment {
     pub grade: Link,
 }
 
-pub type Link;
+pub type Link = _; // Complete type alias
 
 #[derive(Debug)]
 pub struct Worker {
-    pub role: String,
+    pub role: Role,
     pub name: String,
     pub next: Link,
 }
