@@ -111,7 +111,7 @@ The data set is [Auto MPG Dataset](auto-mpg.csv) and the go is to build a model 
 
 2. Train a neural network on the train set and predict on the test set. The neural network should have 2 hidden layers and the loss should be **mean_squared_error**. The expected **mean absolute error** on the test set is maximum 10.
    _Hint_: increase the number of epochs
-   **Warning**: Do no forget to evaluate the neural network on the **SCALED** test set.
+   **Warning**: Do not forget to evaluate the neural network on the **SCALED** test set.
 
 ---
 
@@ -166,7 +166,7 @@ Preliminary:
 
 2. Train a neural network on the train set and predict on the test set. The neural network should have 1 hidden layers. The expected **accuracy** on the test set is minimum 90%.
    _Hint_: increase the number of epochs
-   **Warning**: Do no forget to evaluate the neural network on the **SCALED** test set.
+   **Warning**: Do not forget to evaluate the neural network on the **SCALED** test set.
 
 ### Resources
 
