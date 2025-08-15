@@ -11,7 +11,7 @@ With the following structure:
 ### Expected Functions and Structures
 
 ```rust
-#[allow(dead_code)]
+
 pub struct Car<'a> {
 	pub plate_nbr: &'a str,
 	pub model: &'a str,
@@ -19,7 +19,7 @@ pub struct Car<'a> {
 	pub year: u32,
 }
 
-#[allow(dead_code)]
+
 pub struct Truck<'a> {
 	pub plate_nbr: &'a str,
 	pub model: &'a str,
