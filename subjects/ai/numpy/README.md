@@ -296,7 +296,7 @@ The goal of this exercise is to perform fundamental data analysis on real data u
 
 The dataset chosen for this task was the [red wine dataset](./data/winequality-red.csv). You can find more info [HERE](./data/)
 
-1. Load the data using `genfromtxt`, specifying the delimiter as ';', and optimize the numpy array size by reducing the data types. Use `np.float32` and verify that the resulting numpy array weighs **76800 bytes**.
+1. Load the data using `genfromtxt`, specifying the delimiter as ';' with excluding the headers, and optimize the numpy array size by reducing the data types. Use `np.float32` and verify that the resulting numpy array weighs **76800 bytes**.
 
 2. Display the 2nd, 7th, and 12th rows as a two-dimensional array. Exclude `np.nan` values if present.
 
