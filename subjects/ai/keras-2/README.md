@@ -104,7 +104,6 @@ The data set is [Auto MPG Dataset](auto-mpg.csv) and the go is to build a model 
 - [Keras](https://www.tensorflow.org/tutorials/keras/regression)
 
 1. Preprocess the data set as follow:
-
    - Drop the columns: **model year**, **origin**, **car name**
    - Split train test without shuffling the data. Keep 20% for the test set.
    - Scale the data using Standard Scaler
@@ -126,7 +125,6 @@ The goal of this exercise is to learn to a neural network architecture for multi
 Let us assume we want to classify images and we know they contain either apples, bears, candies, eggs or dogs (extension of the example in the link above).
 
 1. Create the architecture for a multi-class neural network with the following architecture and return `print(model.summary())`:
-
    - Five inputs variables.
    - Hidden layer 1: 16 neurons and sigmoid as activation function.
    - Hidden layer 2: 8 neurons and sigmoid as activation function.
