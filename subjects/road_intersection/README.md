@@ -53,9 +53,24 @@ Traffic lights are signaling devices positioned at road intersections that follo
 
 You will position those traffic lights at the point where each lane enters the intersection.
 
-You can implement any algorithm you choose to control the traffic lights system, but bare in mind that traffic congestion should not be too high (8 or more vehicles).
+You can implement any algorithm you choose to control the traffic lights system, but bear in mind that **traffic congestion should remain below the lane’s maximum capacity**.
 
-The primary function of **your** traffic light system, is to avoid collisions between vehicles passing through the intersection.
+> **Dynamic Congestion Rule:**
+> The maximum allowed queue length for each lane is calculated based on the lane’s physical length, vehicle length, and safety gap between vehicles:
+>
+> ```
+> capacity = floor(lane_length / (vehicle_length + safety_gap))
+> ```
+>
+> Where:
+>
+> - `lane_length`: Distance from the stop line to the vehicle spawn point
+> - `vehicle_length`: Approximate car length in simulation units (e.g., pixels or meters)
+> - `safety_gap`: Minimum safe distance between vehicles
+>
+> If the number of vehicles in a lane reaches this capacity, the traffic light logic should adjust (e.g., extend green time for that lane) to prevent overflow.
+
+The primary function of your traffic light system is to avoid collisions between vehicles passing through the intersection, while dynamically adapting to congestion.
 
 **3. Vehicles**
 
@@ -105,7 +120,6 @@ You can see an example for road_intersection [here](https://www.youtube.com/watc
 You can implement the following optional features:
 
 - Vehicle and traffic light animations, and image rendering. You can find some cool assets here:
-
   - [limezu](https://limezu.itch.io/)
   - [finalbossblue](http://finalbossblues.com/timefantasy/free-graphics/).
   - [spriters-resource](https://www.spriters-resource.com/).

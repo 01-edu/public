@@ -15,7 +15,7 @@ _+ 0.01 fee_
 
 ### Instructions
 
-Using a local Bitcoin node RPC API, create a function `retrieveTxValue()` that takes as input a hash of a simple transaction, and returns an object with an array of inputs values and an array outputs values in this transaction.
+Using a local Bitcoin node RPC API, create a function `retrieveTransactionInOut()` that takes as input a hash of a simple transaction, and returns an object with an array of inputs values and an array outputs values in this transaction.
 
 The Bitcoin node RPC interface is expected to be running with the following parameters:
 
@@ -29,8 +29,8 @@ rpcpassword=multipass
 ### Usage
 
 ```js
-txHash = 'd030023d96b9170af9ec2fe5d9b62a5eacbcbf144c68f3f45d68bca72d1d3649'
-retrieveTxData(txHash)
+txHash = "d030023d96b9170af9ec2fe5d9b62a5eacbcbf144c68f3f45d68bca72d1d3649";
+retrieveTxData(txHash);
 /* Expected : 
     { 
       in: [ 0.18075094 ], 
