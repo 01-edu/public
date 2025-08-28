@@ -53,8 +53,8 @@ $ date
 Tue Jul  9 03:58:06 PM UTC 2024
 $ javac *.java -d build
 $ java -cp build ExerciseRunner
-Age: 24
-Age: 34
-Age: 13
+Age: 25
+Age: 35
+Age: 14
 $
 ```
