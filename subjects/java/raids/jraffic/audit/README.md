@@ -1,7 +1,8 @@
-#### Comprehension 
+#### Comprehension
 
-***Is the student able to justify his choices and explain the following:***
-***Note:*** Ask the student to show you the implementation in the source code when necessary.
+**_Is the student able to justify his choices and explain the following:_**
+**_Note:_** Ask the student to show you the implementation in the source code when necessary.
+
 ###### Can the student explain why he uses this library?
 
 ###### Can the student explain how he manages the High-Traffic congestion
@@ -12,7 +13,7 @@
 
 ###### Can the student explain how he manages the key hooks?
 
-#### Functional 
+#### Functional
 
 ##### Try to run the application.
 
@@ -94,7 +95,7 @@
 
 ###### Was the simulation ended?
 
-###### High traffic congestion is when there are 8 or more vehicles in the same lane without proceeding. Was there low traffic congestion while running the simulation?
+###### High traffic congestion is when there are **Max Capacity** in the same lane without proceeding. Was there low traffic congestion while running the simulation?
 
 #### General
 
