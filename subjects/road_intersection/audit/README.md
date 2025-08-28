@@ -76,7 +76,7 @@
 
 ###### Was the simulation ended?
 
-###### High traffic congestion is when there are 8 or more vehicles in the same lane without proceeding. Was there low traffic congestion while running the simulation?
+###### High traffic congestion is when there are **Max Capacity** in the same lane without proceeding. Was there low traffic congestion while running the simulation?
 
 #### General
 
