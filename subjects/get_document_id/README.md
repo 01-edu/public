@@ -13,7 +13,7 @@ Create the following structures which will help you get the `document_id` of the
 
 The `u32` is the `id` of the office generating the error.
 
-Beside the structures, you must create a **function** named `get_document_id`, and associate it to the `OfficeOne` structure.
+Besides the structures, you must create a **function** named `get_document_id`, and associate it to the `OfficeOne` structure.
 
 This **function** should return the `Result` value in the `OfficeFour` structure or the first `Err` it finds in the chain.
 
