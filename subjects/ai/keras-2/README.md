@@ -104,7 +104,6 @@ The data set is [Auto MPG Dataset](auto-mpg.csv) and the go is to build a model 
 - [Keras](https://www.tensorflow.org/tutorials/keras/regression)
 
 1. Preprocess the data set as follow:
-
    - Drop the columns: **model year**, **origin**, **car name**
    - Split train test without shuffling the data. Keep 20% for the test set.
    - Scale the data using Standard Scaler
@@ -126,7 +125,6 @@ The goal of this exercise is to learn to a neural network architecture for multi
 Let us assume we want to classify images and we know they contain either apples, bears, candies, eggs or dogs (extension of the example in the link above).
 
 1. Create the architecture for a multi-class neural network with the following architecture and return `print(model.summary())`:
-
    - Five inputs variables.
    - Hidden layer 1: 16 neurons and sigmoid as activation function.
    - Hidden layer 2: 8 neurons and sigmoid as activation function.
@@ -138,7 +136,7 @@ Let us assume we want to classify images and we know they contain either apples,
 
 ### Exercise 4: Multi classification - Optimize
 
-The goal of this exercise is to learn to optimize a multi-classification neural network. As learnt previously, the loss function used in binary classification is the log loss - also called in Keras `binary_crossentropy`. This function is defined for binary classification and can be extended to multi-classification. In Keras, the extended loss that supports multi-classification is `binary_crossentropy`. There's no code to run in that exercise.
+The goal of this exercise is to learn to optimize a multi-classification neural network. As learnt previously, the loss function used in binary classification is the log loss - also called in Keras `binary_crossentropy`. This function is defined for binary classification and can be extended to multi-classification. In Keras, the extended loss that supports multi-classification is `categorical_crossentropy`. There's no code to run in that exercise.
 
 1. Fill the chunk of code below in order to optimize the neural network defined in the previous exercise. Choose the adapted loss, adam as optimizer and the accuracy as metric.
 
