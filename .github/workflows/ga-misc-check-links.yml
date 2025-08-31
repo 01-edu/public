@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: 🐧 Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
@@ -27,6 +27,6 @@ jobs:
 
       - name: 🔗 Run Check Links
         if: steps.changed-md.outputs.changed_files != ''
-        uses: harryvasanth/markdown-link-checker@v1.2
+        uses: harryvasanth/markdown-link-checker@v1.3
         with:
           files: ${{ steps.changed-md.outputs.changed_files }}
