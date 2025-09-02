@@ -14,17 +14,17 @@ jobs:
 
     steps:
       - name: 🐧 Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
 
       - name: 📦 Login to GitHub Container Registry
-        uses: docker/login-action@v2
+        uses: docker/login-action@v3
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 🐳 Login to docker.01-edu.org Registry
-        uses: docker/login-action@v2
+        uses: docker/login-action@v3
         with:
           registry: docker.01-edu.org
           username: ${{ secrets.USER_DOCKER_01EDU_ORG }}
