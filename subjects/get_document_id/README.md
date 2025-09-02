@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Consider the following structures which will help you get the `document_id` of the target document.
+Create the following structures which will help you get the `document_id` of the document you need.
 
 - `OfficeOne`: `next_office` as type `Result<OfficeTwo, ErrorOffice>`.
 - `OfficeTwo`: `next_office` as type `Result<OfficeThree, ErrorOffice>`.
