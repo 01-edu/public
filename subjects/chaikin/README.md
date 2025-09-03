@@ -13,7 +13,7 @@ You can see how the application should work [here](https://youtu.be/PbB2eKnA2QI)
 #### Functionality
 
 - The canvas must receive input from the mouse. The user must be able to use the left button to place control points for Chaikin's algorithm.
-  
+
 - The selected points must be visible on the canvas. You will need to draw a **small** circle surrounding each point.
 
 - If the canvas has control points drawn on it, then pressing `Enter` should start the animation. It should cycle through the steps until reaching the 7th step of `Chaikin's` algorithm. The animation should then restart.
