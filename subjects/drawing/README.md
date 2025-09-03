@@ -30,11 +30,14 @@ In order to compile and run `main.rs`, you'll need to define some structures. Yo
 
 You'll also need to create the associated function `random` for `Line`, `Point` and `Circle`. You should derive their signatures from the usage.
 
+Each shape must be drawn in a different color.
+
 > Don't forget to add the dependencies in your Cargo.toml.
 
 ### Bonus
 
 You may optionally implement the following shapes, including the structures and traits needed to draw them:
+
 - `Pentagon`
 - `Cube`
 
@@ -54,13 +57,13 @@ fn main() {
 
     gs::Point::random(image.width, image.height).draw(&mut image);
 
-    let rectangle = gs::Rectangle::new(&gs::Point::new(150, 150), &gs::Point::new(50, 50));
+    let rectangle = gs::Rectangle::new(&gs::Point::new(150, 300), &gs::Point::new(50, 60));
     rectangle.draw(&mut image);
 
-    let triangle = gs::Triangle::new (
-            &gs::Point::new(500, 500),
-            &gs::Point::new(250, 700),
-            &gs::Point::new(700, 800),
+    let triangle = gs::Triangle::new(
+        &gs::Point::new(500, 500),
+        &gs::Point::new(250, 700),
+        &gs::Point::new(700, 800),
     );
     triangle.draw(&mut image);
 
