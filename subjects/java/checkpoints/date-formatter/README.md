@@ -64,7 +64,7 @@ $ javac *.java -d build
 $ java -cp build ExerciseRunner
 28/06/2022
 28.06.2022
-31.12.2022
-31 December 2022
+01.01.2023
+01 January 2023
 $
 ```
