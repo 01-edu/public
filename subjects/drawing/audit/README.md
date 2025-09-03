@@ -10,7 +10,7 @@
 
 ##### Open the module `geometrical_shapes`.
 
-###### Can you confirm that the traits `Displayable` and `Drawable` where created?
+###### Can you confirm that the traits `Displayable` and `Drawable` were created?
 
 ##### Try to open the `image.png`.
 
