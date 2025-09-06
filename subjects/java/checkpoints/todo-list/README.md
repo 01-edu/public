@@ -29,6 +29,7 @@ public class Task {
 public class TodoList {
     private Task[] tasks;
     private int capacity;
+    private int count;
 
     public TodoList(int capacity);
 
