@@ -25,7 +25,7 @@ let a_neg: BloodType = "A-".parse();
 
 Implement the following Traits:
 
-- `std::fmt::Debug`: for `BloodType`, allowing us print a vector such as `[BloodType { antigen: A, rh_factor: Positive}, BloodType{ antigen: B, rh_factor: Negative}]` as `"[A+, B-]"` when using format strings `{:?}`.
+- `std::fmt::Debug`: for `BloodType`, allowing us to print a vector such as `[BloodType { antigen: A, rh_factor: Positive }, BloodType { antigen: B, rh_factor: Negative }]` as `"[A+, B-]"` when using format strings `{:?}`.
 
 Create three methods for BloodType:
 
