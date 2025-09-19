@@ -8,7 +8,9 @@ The trait `AppendStrExt` has the following functions:
 
 - `append_str`: that appends `str_to_append` to `self` and returns it.
 - `append_number`: that appends `nb_to_append` to `self` and returns it.
-- `remove_punctuation_marks`: that removes all punctuation from `self`. **Note: For the sake of this exercise, we only consider `.`, `,`, `?` and `!` as punctuation.**
+- `remove_punctuation_marks`: that removes all punctuation from `self`.
+
+> **Note: For the sake of this exercise, we only consider `.`, `,`, `?` and `!` as punctuation.**
 
 ### Expected Function
 
