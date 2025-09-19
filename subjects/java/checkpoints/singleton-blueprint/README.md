@@ -16,7 +16,7 @@ public class Singleton {
     public Singleton get???() {
     }
 
-    public String ShowMessage() {
+    public String showMessage() {
         return "Hello, I am a singleton!"
     }
 }
@@ -29,7 +29,7 @@ Here is a possible `ExerciseRunner.java` to test your class:
 ```java
 public class ExerciseRunner {
     public static void main(String[] args) {
-        System.out.println(Singleton.get???().ShowMessage());
+        System.out.println(Singleton.get???().showMessage());
     }
 }
 ```

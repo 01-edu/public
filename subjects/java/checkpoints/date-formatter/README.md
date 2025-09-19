@@ -68,3 +68,22 @@ $ java -cp build ExerciseRunner
 31 December 2022
 $
 ```
+
+### Tip — How to Extract Day, Month, and Year from a Date
+
+```java
+// Get the current time in seconds since the epoch (UTC)
+long currentDateInSeconds = System.currentTimeMillis() / 1000L;
+
+// Create a Date from the UTC timestamp (convert seconds to milliseconds)
+Date dateObj = new Date(currentDateInSeconds * 1000);
+
+// Create a Calendar in the UTC time zone and set the date
+Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("UTC"));
+calendar.setTime(dateObj);
+
+// Extract the date components
+int day = calendar.get(Calendar.DAY_OF_MONTH);
+String month = getMonth(calendar.get(Calendar.MONTH));
+int year = calendar.get(Calendar.YEAR);
+```
