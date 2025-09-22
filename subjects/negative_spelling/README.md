@@ -18,7 +18,7 @@ Here are some examples of what your function should return:
 
 ```rust
 pub fn negative_spell(n: i64) -> String {
-
+    todo!()
 }
 ```
 

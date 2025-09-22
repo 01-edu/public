@@ -8,15 +8,16 @@ Create a function named `reverse_it`, that takes a number. It should return a st
 
 ```rust
 pub fn reverse_it(v: i32) -> String {
+    todo!()
 }
 ```
 
 ### Usage
 
-Here is a program to test your function,
+Here is a program to test your function:
 
 ```rust
-use reverse_it::reverse_it;
+use reverse_it::*;
 
 fn main() {
     println!("{}", reverse_it(123));

@@ -25,9 +25,9 @@ To calculate a 3x3 matrix determinant you have to take 'a' and multiply it by th
 
 ### Expected Function
 
-```rs
+```rust
 pub fn matrix_determinant(matrix: [[isize; 3]; 3]) -> isize {
-
+    todo!()
 }
 ```
 
@@ -35,7 +35,7 @@ pub fn matrix_determinant(matrix: [[isize; 3]; 3]) -> isize {
 
 Here is a program to test your function:
 
-```rs
+```rust
 use matrix_determinant::*;
 
 fn main() {
