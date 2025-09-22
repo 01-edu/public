@@ -10,10 +10,10 @@ You are given an incomplete `Singleton` class. Complete the class to demonstrate
 public class Singleton {
     public Singleton instance;
 
-    private Singleton() {
+    ??? Singleton() {
     }
 
-    public Singleton get???() {
+    public ??? Singleton get???() {
     }
 
     public String showMessage() {
