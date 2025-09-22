@@ -2,11 +2,15 @@
 
 ### Instructions
 
-Create a class `BreakdownURL` that provides a method to parse and validate URLs using regex.The method should extract and return the following URL components: `protocol`, `domain`, `port`, `path` and `query`
-Assume the URL is always correct.
-The method should extract and return URL components the parameters. The URL is always correct.
+Create a class `BreakdownURL` with a method that uses a regular expression to parse a URL and return its components.
 
-> Give back in the map just the existing component.
+**Requirements**
+
+- Extract the following components when present: `protocol`, `domain`, `port`, `path`, `query`.
+- Assume the input URL is valid (well-formed).
+- Return only the components that actually exist in the given URL (omit absent ones).
+
+> 💡 Have you ever seen a URL without Path ???
 
 ### Expected Class
 

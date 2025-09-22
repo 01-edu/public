@@ -48,6 +48,8 @@ public class ExerciseRunner {
 
 ### Expected Output
 
+> **Note:** The displayed ages depend on when the subject was created. Your solution should calculate and show the current age.
+
 ```shell
 $ date
 Tue Jul  9 03:58:06 PM UTC 2024

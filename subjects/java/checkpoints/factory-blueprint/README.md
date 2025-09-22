@@ -24,7 +24,7 @@ public class ConcreteProductB {
 
 // Factory class
 public class Factory {
-    public Product createProduct(String type) {
+    public ???? createProduct(String type) {
 
     }
 }

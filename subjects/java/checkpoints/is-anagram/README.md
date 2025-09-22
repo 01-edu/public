@@ -1,4 +1,4 @@
-## Is Anagram
+## Check Anagram
 
 ### Instructions
 
