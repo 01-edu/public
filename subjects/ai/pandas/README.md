@@ -168,7 +168,7 @@ For this exercise, use [this dataset](./data/iris.csv).
 
 ### Resources
 
-- [The ultimate Pandas resource](https://bedford-computing.co.uk/learning/wp-content/uploads/2015/10/Python-for-Data-Analysis.pdf)
+- [Awesome pandas](https://github.com/tommyod/awesome-pandas)
 
 - [Pandas documentation](https://pandas.pydata.org/docs/)
 
