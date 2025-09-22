@@ -11,24 +11,27 @@ You will also need to implement the `std::fmt::Display` trait, so that it prints
 ### Expected Functions and Struct
 
 ```rust
+use std::fmt;
+
+#[derive(Debug, Clone)]
 pub struct Matrix(pub Vec<Vec<i32>>);
 
 impl Matrix {
     pub fn new(slice: &[&[i32]]) -> Self {
-
+        todo!()
     }
 }
 
-use std::fmt;
-
 impl fmt::Display for Matrix {
-
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        todo!()
+    }
 }
 ```
 
 ### Usage
 
-Here is a possible program to test your function
+Here is a possible program to test your function:
 
 ```rust
 use matrix_display::*;
@@ -37,10 +40,9 @@ fn main() {
     let matrix = Matrix::new(&[&[1, 2, 3], &[4, 5, 6], &[7, 8, 9]]);
     println!("{}", matrix);
 }
-
 ```
 
-And it's output:
+And its output:
 
 ```console
 $ cargo run

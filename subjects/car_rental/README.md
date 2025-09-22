@@ -6,14 +6,12 @@ Create a struct named `Car` and another one named `RentalBusiness`.
 
 The scope of the exercise will be to modify and operate on the `Car` in the `RentalBusiness` even if this element is not declared as mutable, introducing the concept of interior mutability.
 
-To accomplish that you will create some associated methods of `RentalBusiness` that will return the field `car` in many different ways.
+To accomplish that, you will create some methods for `RentalBusiness` that will return the field `car` in many different ways.
 
 ### Expected Functions and Structures
 
 ```rust
-use std::cell::Ref;
-use std::cell::RefCell;
-use std::cell::RefMut;
+use std::cell::{Ref, RefCell, RefMut};
 
 #[derive(Debug, Default, PartialEq, Eq)]
 pub struct Car {
@@ -27,10 +25,21 @@ pub struct RentalBusiness {
 }
 
 impl RentalBusiness {
-    pub fn rent_car(&self) -> Ref<Car> {}
-    pub fn sell_car(&self) -> Car {}
-    pub fn repair_car(&self) -> RefMut<Car> {}
-    pub fn change_car(&self, new_car: Car) {}
+    pub fn rent_car(&self) -> Ref<'_, Car> {
+        todo!()
+    }
+
+    pub fn sell_car(&self) -> Car {
+        todo!()
+    }
+
+    pub fn repair_car(&self) -> RefMut<'_, Car> {
+        todo!()
+    }
+
+    pub fn change_car(&self, new_car: Car) {
+        todo!()
+    }
 }
 ```
 

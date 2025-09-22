@@ -1,4 +1,4 @@
-use count_factorial_steps::count_factorial_steps;
+use count_factorial_steps::*;
 
 fn main() {
     println!(

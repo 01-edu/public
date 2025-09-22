@@ -24,35 +24,38 @@ Implement three methods for `BloodType`:
 ### Expected Functions and Structures
 
 ```rust
-#[derive(Debug, PartialEq, Eq, Clone, PartialOrd, Ord)]
+#[derive(Debug, PartialEq, Eq, Hash, Clone, Copy)]
 pub enum Antigen {
-	A,
-	AB,
-	B,
-	O,
+    A,
+    AB,
+    B,
+    O,
 }
 
-#[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone)]
+#[derive(Debug, PartialEq, Eq, Hash, Clone, Copy)]
 pub enum RhFactor {
-	Positive,
-	Negative,
+    Positive,
+    Negative,
 }
 
-#[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone)]
+#[derive(Debug, PartialEq, Eq, Hash, Clone, Copy)]
 pub struct BloodType {
-	pub antigen: Antigen,
-	pub rh_factor: RhFactor,
+    pub antigen: Antigen,
+    pub rh_factor: RhFactor,
 }
 
 impl BloodType {
-	pub fn can_receive_from(&self, other: &Self) -> bool {
-	}
+    pub fn can_receive_from(self, other: Self) -> bool {
+        todo!()
+    }
 
-	pub fn donors(&self) -> Vec<Self> {
-	}
+    pub fn donors(self) -> Vec<Self> {
+        todo!()
+    }
 
-	pub fn recipients(&self) -> Vec<Self> {
-	}
+    pub fn recipients(self) -> Vec<Self> {
+        todo!()
+    }
 }
 ```
 
@@ -61,24 +64,27 @@ impl BloodType {
 Here is a program to test your function.
 
 ```rust
-use blood_types_s::{Antigen, BloodType, RhFactor};
+use blood_types_s::*;
 
 fn main() {
-	let blood_type = BloodType {
-		antigen: Antigen::O,
-		rh_factor: RhFactor::Positive,
-	};
-	println!("recipients of O+ {:?}", blood_type.recipients());
-	println!("donors of O+ {:?}", blood_type.donors());
-	let another_blood_type = BloodType {
-		antigen: Antigen::O,
-		rh_factor: RhFactor::Positive,
-	};
-	println!(
-		"donors of O+ can receive from {:?} {:?}",
-		&another_blood_type,
-		blood_type.can_receive_from(&another_blood_type)
-	);
+    let blood_type = BloodType {
+        antigen: Antigen::O,
+        rh_factor: RhFactor::Positive,
+    };
+
+    println!("recipients of O+ {:?}", blood_type.recipients());
+    println!("donors of O+ {:?}", blood_type.donors());
+
+    let another_blood_type = BloodType {
+        antigen: Antigen::O,
+        rh_factor: RhFactor::Positive,
+    };
+
+    println!(
+        "donors of O+ can receive from {:?} {}",
+        another_blood_type,
+        blood_type.can_receive_from(another_blood_type)
+    );
 }
 ```
 
@@ -86,8 +92,8 @@ And its output
 
 ```console
 $ cargo run
-recipients of O+ [BloodType { antigen: AB, rh_factor: Positive }, BloodType { antigen: O, rh_factor: Positive }, BloodType { antigen: A, rh_factor: Positive }, BloodType { antigen: B, rh_factor: Positive }]
-donors of O+ [BloodType { antigen: O, rh_factor: Positive }, BloodType { antigen: O, rh_factor: Negative }]
-donors of O+ can receive from BloodType { antigen: O, rh_factor: Positive } true
+recipients of O+ [BloodType { rh_factor: Positive, antigen: A }, BloodType { rh_factor: Positive, antigen: AB }, BloodType { rh_factor: Positive, antigen: B }, BloodType { rh_factor: Positive, antigen: O }]
+donors of O+ [BloodType { rh_factor: Positive, antigen: O }, BloodType { rh_factor: Negative, antigen: O }]
+donors of O+ can receive from BloodType { rh_factor: Positive, antigen: O } true
 $
 ```

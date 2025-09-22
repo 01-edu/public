@@ -2,47 +2,54 @@
 
 ### Instructions
 
-You will need to create an _API_, so that a program can organize a queue of people.
+You will need to create an API, so that a program can organize a queue of people.
 
 The program requires the following functions. Add them as associated functions to the `Queue` structure:
 
 - `new`: which will initialize the `Queue`.
 - `add`: which adds a person to the queue.
 - `invert_queue`: which reverses the queue.
-- `rm`: which removes the person who finished ordering their food. The removal should respect the FIFO method (first in first out). It should return the person's details.
-- `search`: which returns the details for a given person's `name`.
+- `rm`: which removes the person who finished ordering their food. The removal should respect the FIFO method (first in first out). It should return the person's details (as `(name, discount)`).
+- `search`: which returns the details for a given person's `name` (as `(name, discount)`).
 
 You must also create a type named `Link`. This will be the connection of the structures `Queue` and `Person`. This will be a recursion type, and must point to `None` if there is no `Person` to point to.
 
 ### Expected Function and Structures
 
 ```rust
+#[derive(Debug, Clone)]
 pub struct Queue {
     pub node: Link,
 }
 
 pub type Link =
 
+#[derive(Debug, Clone)]
 pub struct Person {
-    pub discount: i32,
     pub name: String,
+    pub discount: i32,
+    pub next_person: Link,
 }
 
 impl Queue {
     pub fn new() -> Queue {
-
+        todo!()
     }
+
     pub fn add(&mut self, name: String, discount: i32) {
-
+        todo!()
     }
+
     pub fn invert_queue(&mut self) {
-
+        todo!()
     }
+
     pub fn rm(&mut self) -> Option<(String, i32)> {
-
+        todo!()
     }
-    pub fn search(&self, name: &str) -> Option<(String, i32)> {
 
+    pub fn search(&self, name: &str) -> Option<(&String, &i32)> {
+        todo!()
     }
 }
 ```
