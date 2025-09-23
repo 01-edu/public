@@ -1,8 +1,8 @@
-## generics_list 
+## generics_list
 
 ### Instructions
 
-Create a linked list of generic values with the following methods.
+Create a generic linked list with the following methods:
 
 - `new`: returns a new empty list.
 - `push`: adds an element to the beginning of the list.
@@ -23,17 +23,21 @@ pub struct Node<T> {
     pub next: Option<Box<Node<T>>>,
 }
 
-impl<T> List<T> {
-    pub fn new() -> List<T> {
+impl List {
+    pub fn new() -> Self {
+        todo!()
     }
 
-    pub fn push(&mut self, value: T) {
+    pub fn push(&mut self, value: _) { // fill in `value`'s type!
+        todo!()
     }
 
     pub fn pop(&mut self) {
+        todo!()
     }
 
     pub fn len(&self) -> usize {
+        todo!()
     }
 }
 ```
