@@ -1,5 +1,4 @@
-use counting_words::counting_words;
-use std::collections::HashMap;
+use counting_words::*;
 
 fn main() {
     println!("{:?}", counting_words("Hello, world!"));

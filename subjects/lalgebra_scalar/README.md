@@ -15,6 +15,7 @@ After finishing completing the declaration of the trait, implement the `Scalar` 
 ```rust
 pub trait Scalar: _ {
 	type Item;
+
 	fn zero() -> Self::Item;
 	fn one() -> Self::Item;
 }
@@ -49,4 +50,4 @@ $
 ### Notions
 
 - [Module std::ops](https://doc.rust-lang.org/std/ops/index.html)
-[Module std::marker::Sized](https://doc.rust-lang.org/std/marker/trait.Sized.html)
+  [Module std::marker::Sized](https://doc.rust-lang.org/std/marker/trait.Sized.html)

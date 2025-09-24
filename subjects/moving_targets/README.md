@@ -9,14 +9,20 @@ You will handle recursive types and ownership and implement the following **asso
 - `new`: which will initialize the `Field` with `head` set to `None`.
 - `push`: which receives a `Target` and add it as a `Node` at the head of the list.
 - `pop`: which returns the last added `Target` wrapped in an `Option` and removes it from the list.
-- `peek`: which returns the last added `Target` as a reference wrapped in an `Option` but do not removes it from the list.
-- `peek_mut`: which returns the last added `Target` as a mutable reference wrapped in an `Option` and also do not removes it from the list.
+- `peek`: which returns the last added `Target` as a reference wrapped in an `Option` but does not remove it from the list.
+- `peek_mut`: which returns the last added `Target` as a mutable reference wrapped in an `Option` and also does not remove it from the list.
 
 You must also implement a type named `Link`. This will be the connection between the `Field` and `Target` structures. This will be a recursion type, and it must point to `None` if there is no `Target` to point to.
 
 ### Expected Functions and structures
 
 ```rust
+#[derive(Debug, PartialEq, Eq)]
+pub struct Target {
+    pub size: u32,
+    pub xp: u32,
+}
+
 pub struct Field {
     head: Link,
 }
@@ -28,17 +34,26 @@ struct Node {
     next: Link,
 }
 
-#[derive(Debug, PartialEq, Eq)]
-pub struct Target {
-    pub size: u32,
-    pub xp: u32,
-}
 impl Field {
-    pub fn new() -> Self {}
-    pub fn push(&mut self, target: Target) {}
-    pub fn pop(&mut self) -> Option<Target> {}
-    pub fn peek(&self) -> Option<&Target> {}
-    pub fn peek_mut(&mut self) -> Option<&mut Target> {}
+    pub fn new() -> Self {
+        todo!()
+    }
+
+    pub fn push(&mut self, target: Target) {
+        todo!()
+    }
+
+    pub fn pop(&mut self) -> Option<Target> {
+        todo!()
+    }
+
+    pub fn peek(&self) -> Option<&Target> {
+        todo!()
+    }
+
+    pub fn peek_mut(&mut self) -> Option<&mut Target> {
+        todo!()
+    }
 }
 ```
 

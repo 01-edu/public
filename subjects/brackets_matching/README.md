@@ -2,9 +2,10 @@
 
 ### Instructions
 
-Create a **program** that takes an undefined number of command-line arguments. For each argument, if the expression is correctly bracketed, the program prints `OK` to the standard output followed by a newline (`'\n'`), otherwise it prints `Error` followed by a newline.
+Create a **program** that takes an undefined number of command-line arguments. For each argument, if the expression is correctly bracketed, the program prints `OK` to the standard output, otherwise it prints `Error` followed by a newline.
 
 All characters are ignored except for the following brackets:
+
 - parentheses `(` and `)`.
 - square brackets `[` and `]`.
 - curly braces `{` and `}`.
@@ -19,7 +20,7 @@ You'll need to get the command line arguments somehow, and this will get you sta
 
 ```rust
 fn main() {
-    let args: Vec<String> = std::env::args().collect();
+    let args = std::env::args().collect::<Vec<_>>();
 
     //...
 }
@@ -34,7 +35,6 @@ OK
 $ cargo run '([)]' | cat -e
 Error
 $ cargo run
-
 $ cargo run '' '{[(0 + 0)(1 + 1)](3*(-1)){()}}' | cat -e
 OK
 OK

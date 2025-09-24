@@ -6,11 +6,13 @@ Define the structure `ThreeDVector`, that represents a 3 dimensional vector.
 
 In physics, these vectors are represented as `ai`, `bj` and `ck`. `a`, `b` and `c` are real numbers. `i`, `j` and `k` represent the direction in the Cartesian plane, along the axises `x`, `y` and `z` respectively. Therefore, we use the fields `i`, `j` and `k` in the structure.
 
-Take a look how the operations `Addition` and `Subtraction` work for a 3 dimensional vector, and implement them by creating the `std::ops::Add` and `std::ops::Sub` traits.
+Take a look how the operations `Addition` and `Subtraction` work for a 3 dimensional vector, and implement them by using the `std::ops::Add` and `std::ops::Sub` traits.
 
 ### Expected Functions and Structures
 
 ```rust
+use std::ops::{Add, Sub};
+
 #[derive(Debug, Copy, Clone, PartialEq)]
 pub struct ThreeDVector<T> {
 	pub i: T,
@@ -18,12 +20,10 @@ pub struct ThreeDVector<T> {
 	pub k: T,
 }
 
-use std::ops::{Add, Sub};
-
-impl Add for ThreeDVector<T> {
+impl Add for ThreeDVector {
 }
 
-impl Sub for ThreeDVector<T> {
+impl Sub for ThreeDVector {
 }
 ```
 

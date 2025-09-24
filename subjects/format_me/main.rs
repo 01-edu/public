@@ -4,21 +4,21 @@ fn main() {
     println!(
         "{}",
         Park {
-            name: "Les Tuileries".to_string(),
+            name: Some("Les Tuileries".to_owned()),
             park_type: ParkType::Garden,
-            address: "Pl. de la Concorde".to_string(),
-            cap: "75001".to_string(),
-            state: "France".to_string()
+            address: Some("Pl. de la Concorde".to_owned()),
+            cap: Some("75001".to_owned()),
+            state: Some("France".to_owned())
         }
     );
     println!(
         "{}",
         Park {
-            name: "".to_string(),
+            name: None,
             park_type: ParkType::Playground,
-            address: "".to_string(),
-            cap: "".to_string(),
-            state: "".to_string()
+            address: None,
+            cap: None,
+            state: None
         }
     );
 }

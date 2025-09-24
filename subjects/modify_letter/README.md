@@ -8,16 +8,21 @@ Create a **function** `remove_letter_insensitive` that returns a string without 
 
 Create a **function** `swap_letter_case` that returns a string swapping the case for the chosen letter.
 
+> Our tests will only use ASCII characters.
+
 ### Expected Functions
 
 ```rust
 pub fn remove_letter_sensitive(s: &str, letter: char) -> String {
+    todo!()
 }
 
 pub fn remove_letter_insensitive(s: &str, letter: char) -> String {
+    todo!()
 }
 
 pub fn swap_letter_case(s: &str, letter: char) -> String {
+    todo!()
 }
 ```
 
@@ -28,10 +33,12 @@ Here is a program to test your functions.
 ```rust
 use modify_letter::*;
 
-
 fn main() {
     println!("{}", remove_letter_sensitive("Jojhn jis sljeepjjing", 'j'));
-    println!("{}", remove_letter_insensitive("JaimA ais swiaAmmingA", 'A'));
+    println!(
+        "{}",
+        remove_letter_insensitive("JaimA ais swiaAmmingA", 'A')
+    );
     println!("{}", swap_letter_case("byE bye", 'e'));
 }
 ```

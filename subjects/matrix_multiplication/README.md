@@ -4,10 +4,11 @@
 
 - Define a `struct` named `Matrix` as a tuple of two tuples. The nested tuple will contain two `i32`.
 
-- Create a **function** named `multiply` that receives a `Matrix` and an `i32` and returns the `Matrix` with each number multiplied by the second argument. 
+- Create a **function** named `multiply` that receives a `Matrix` and an `i32` and returns the `Matrix` with each number multiplied by the second argument.
 
 ```rust
 pub fn multiply(m: Matrix, multiplier: i32) -> Matrix {
+    todo!()
 }
 ```
 
@@ -33,8 +34,8 @@ And its output:
 
 ```console
 $ cargo run
-Original matrix Matrix ((1, 3), (4, 5))
-Matrix after multiply ((3, 9), (12, 15))
+Original matrix Matrix((1, 3), (4, 5))
+Matrix after multiply Matrix((3, 9), (12, 15))
 $
 ```
 
