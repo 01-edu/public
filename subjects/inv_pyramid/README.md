@@ -2,12 +2,12 @@
 
 ### Instructions
 
-Create a function named `inv_pyramid` that takes a `string` as an `integer` and returns a vector of `string`s.
-This function should create a pyramid structure. Each element of the vector must be a combination of spaces and the string given
+Create a function named `inv_pyramid` that takes a string and an integer as input and returns a vector of strings.
+This function should create a pyramid structure. Each element of the vector must be the given string after indentation represented as spaces.
 
 ### Example
 
-i = 5
+For i = 5,
 
 ```console
 [
@@ -26,7 +26,9 @@ i = 5
 ### Expected Functions
 
 ```rust
-pub fn inv_pyramid(v: String, i: u32) -> Vec<String> {}
+pub fn inv_pyramid(v: String, i: usize) -> Vec<String> {
+    todo!()
+}
 ```
 
 ### Usage
@@ -37,23 +39,10 @@ Here is a program to test your function
 use inv_pyramid::*;
 
 fn main() {
-    let a = inv_pyramid(String::from("#"), 1);
-    let b = inv_pyramid(String::from("a"), 2);
-    let c = inv_pyramid(String::from(">"), 5);
-    let d = inv_pyramid(String::from("&"), 8);
-
-    for v in a.iter() {
-        println!("{:?}", v);
-    }
-    for v in b.iter() {
-        println!("{:?}", v);
-    }
-    for v in c.iter() {
-        println!("{:?}", v);
-    }
-    for v in d.iter() {
-        println!("{:?}", v);
-    }
+    println!("{:#?}", inv_pyramid(String::from("#"), 1));
+    println!("{:#?}", inv_pyramid(String::from("a"), 2));
+    println!("{:#?}", inv_pyramid(String::from(">"), 5));
+    println!("{:#?}", inv_pyramid(String::from("&"), 8));
 }
 ```
 
@@ -61,33 +50,41 @@ And its output
 
 ```console
 $ cargo run
-" #"
-" a"
-"  aa"
-" a"
-" >"
-"  >>"
-"   >>>"
-"    >>>>"
-"     >>>>>"
-"    >>>>"
-"   >>>"
-"  >>"
-" >"
-" &"
-"  &&"
-"   &&&"
-"    &&&&"
-"     &&&&&"
-"      &&&&&&"
-"       &&&&&&&"
-"        &&&&&&&&"
-"       &&&&&&&"
-"      &&&&&&"
-"     &&&&&"
-"    &&&&"
-"   &&&"
-"  &&"
-" &"
+[
+    " #",
+]
+[
+    " a",
+    "  aa",
+    " a",
+]
+[
+    " >",
+    "  >>",
+    "   >>>",
+    "    >>>>",
+    "     >>>>>",
+    "    >>>>",
+    "   >>>",
+    "  >>",
+    " >",
+]
+[
+    " &",
+    "  &&",
+    "   &&&",
+    "    &&&&",
+    "     &&&&&",
+    "      &&&&&&",
+    "       &&&&&&&",
+    "        &&&&&&&&",
+    "       &&&&&&&",
+    "      &&&&&&",
+    "     &&&&&",
+    "    &&&&",
+    "   &&&",
+    "  &&",
+    " &",
+]
 $
 ```
