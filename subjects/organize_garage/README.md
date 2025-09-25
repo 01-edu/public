@@ -1,16 +1,18 @@
-## organize_garage 
+## organize_garage
 
 ### Instructions
 
-Create a structure `Garage` with generic values. It will have the following public fields:
+Create a structure `Garage` with generic values. It must derive at least `Debug`, `PartialEq`, and `Eq`, and will have the following public fields:
+
 - `left` as `Option<T>`.
 - `right` as `Option<T>`.
 
 It will implement the following public methods:
+
 - `move_to_right`: Moves the values from left to right.
 - `move_to_left`: Moves the values from right to left.
 
-> The generic type will need to have `Add` and `Copy` traits implemented. It will also need to derive `Debug`.
+> The generic type will need to have `Add` and `Copy` traits implemented.
 
 ### Usage
 

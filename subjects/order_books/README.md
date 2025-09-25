@@ -12,9 +12,9 @@ Build a module named `library` which contains two sub-modules:
 - `books`: which contains:
   - `Book`: a structure with:
     - `title`: `String`
-    - `year`: `u64` as its year of publication
+    - `year`: `u32` as its year of publication
 
-A function `order_books` should be created (outside of the previous modules which receives a `Writer`, and orders the set of books alphabetically.
+A function `order_books` should be created outside of the previous modules which receives a `Writer`, and orders the set of books alphabetically (case insensitive!).
 
 ### Expected Functions and Structs
 
@@ -34,7 +34,7 @@ pub struct Book {
 
 ```rs
 pub fn order_books(writer: &mut Writer) {
-
+    todo!()
 }
 ```
 
@@ -43,28 +43,30 @@ pub fn order_books(writer: &mut Writer) {
 Here is a program to test your function and structs:
 
 ```rs
-pub use library::writers::Writer;
-pub use library::books::Book;
+pub use order_books::{
+    library::{books::Book, writers::Writer},
+    order_books,
+};
 
 fn main() {
     let mut writer_a = Writer {
-        first_name: "William".to_string(),
-        last_name: "Shakespeare".to_string(),
+        first_name: "William".to_owned(),
+        last_name: "Shakespeare".to_owned(),
         books: vec![
             Book {
-                title: "Hamlet".to_string(),
+                title: "Hamlet".to_owned(),
                 year: 1600,
             },
             Book {
-                title: "Othelo".to_string(),
+                title: "Othelo".to_owned(),
                 year: 1603,
             },
             Book {
-                title: "Romeo and Juliet".to_string(),
+                title: "Romeo and Juliet".to_owned(),
                 year: 1593,
             },
             Book {
-                title: "MacBeth".to_string(),
+                title: "MacBeth".to_owned(),
                 year: 1605,
             },
         ],

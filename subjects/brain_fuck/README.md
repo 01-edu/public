@@ -3,9 +3,9 @@
 ### Instructions
 
 Write a `Brainfuck` interpreter program.
-The source code will be given as first parameter.
-The code will always be valid, with less than 4096 operations.
-`Brainfuck` is a minimalist language. It consists of an array of bytes (in this exercise 2048 bytes) all initialized with zero, and with a pointer to its first byte.
+The source code will be given as the first argument.
+The code will always be valid.
+`Brainfuck` is a minimalist language. It consists of an array of bytes (in this exercise as many as 2048 bytes) all initialized with zero, and with a pointer to its first byte.
 
 Every operator consists of a single character :
 
@@ -19,16 +19,7 @@ Every operator consists of a single character :
 
 Any other character is a comment.
 
-For receiving arguments from the command line you should use something like:
-
-```rust
-fn main() {
-    let args: Vec<String> = std::env::args().collect();
-
-    brain_fuck(&args[1]);
-}
-
-```
+> Use `std::env::args()` to get the program's arguments.
 
 ### Usage
 

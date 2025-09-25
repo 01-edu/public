@@ -1,25 +1,27 @@
-pub use library::books::Book;
-pub use library::writers::Writer;
+pub use order_books::{
+    library::{books::Book, writers::Writer},
+    order_books,
+};
 
 fn main() {
     let mut writer_a = Writer {
-        first_name: "William".to_string(),
-        last_name: "Shakespeare".to_string(),
+        first_name: "William".to_owned(),
+        last_name: "Shakespeare".to_owned(),
         books: vec![
             Book {
-                title: "Hamlet".to_string(),
+                title: "Hamlet".to_owned(),
                 year: 1600,
             },
             Book {
-                title: "Othelo".to_string(),
+                title: "Othelo".to_owned(),
                 year: 1603,
             },
             Book {
-                title: "Romeo and Juliet".to_string(),
+                title: "Romeo and Juliet".to_owned(),
                 year: 1593,
             },
             Book {
-                title: "MacBeth".to_string(),
+                title: "MacBeth".to_owned(),
                 year: 1605,
             },
         ],

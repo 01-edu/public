@@ -17,9 +17,11 @@ pub struct Film {
 }
 
 pub fn read_film_name(/* to be implemented */) -> String {
+    todo!()
 }
 
 pub fn take_film_name(/* to be implemented */) -> String {
+    todo!()
 }
 
 ```
@@ -32,16 +34,19 @@ Here is a possible program to test your function:
 use own_and_return::*;
 
 fn main() {
-    let my_film = Film { name: "Terminator".to_string() };
-    println!("{}", take_film_name(/* to be implemented */));
-    // the order of the print statements is intentional, if your implementation is correct,
-    // you should have a compile error because my_film was consumed
-    println!("{}", read_film_name(/* to be implemented */));
-    println!("{}", take_film_name(/*to be implemented*/))
-    // you can test this function by commenting out the first print statement,
-    // you should see the expected output without errors in this case
-}
+    let my_film = Film {
+        name: "Terminator".to_owned(),
+    };
 
+    // println!("{}", take_film_name(/* to be implemented */));
+
+    println!("{}", read_film_name(/* to be implemented */));
+    println!("{}", take_film_name(/* to be implemented */));
+
+    // the order of the print statements is intentional.
+    // you can test this exercise properly by uncommenting out the first print statement,
+    // you should get a compilation error then if your implementation is correct.
+}
 ```
 
 And its output:
