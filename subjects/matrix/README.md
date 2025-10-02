@@ -4,7 +4,7 @@
 
 Define a data structure to represent a matrix of any size **known at compile-time**.
 
-We will consider a matrix as a rectangular arrangement of scalars. It can be represented as a 2 dimensional array. You will use the definition of `Scalar` from the [lalgebra-scalar](../lalgebra-scalar/README.md) exercise.
+We will consider a matrix as a rectangular arrangement of scalars. It can be represented as a 2 dimensional array. You will use the definition of `Scalar` from the [lalgebra-scalar](../lalgebra_scalar/README.md) exercise.
 
 Implement the following associated functions:
 

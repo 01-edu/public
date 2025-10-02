@@ -4,7 +4,7 @@
 
 In this exercise, you will implement some matrix operations: `Add`, `Sub` and `Mul`.
 
-You will be reusing your `Matrix` and `Scalar` structures defined in the [matrix](../matrix/README.md) and [lalgebra-scalar](../lalgebra-scalar/README.md) exercises.
+You will be reusing your `Matrix` and `Scalar` structures defined in the [matrix](../matrix/README.md) and [lalgebra-scalar](../lalgebra_scalar/README.md) exercises.
 
 Additionally, as it isn't possible to implement foreign traits on foreign types, we will write a `Wrapper` struct that will simply wrap our `Matrix` struct and implement these traits on `Wrapper` instead.
 
