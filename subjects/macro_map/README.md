@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a macro rule called `hash_map!` to initialize and optionally populate `std::collections::HashMap` at the same time, akin to what `vec!` does for `Vec`.
+Create a macro rule called `hash_map!` to initialize and optionally populate `std::collections::HashMap`, similarly to what `vec!` does for `Vec`.
 
 > Your macro should work with or without a leading comma as do the language's list standard macros work.
 
