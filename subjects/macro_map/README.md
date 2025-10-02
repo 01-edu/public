@@ -2,9 +2,11 @@
 
 ### Instructions
 
-Create a macro rule called `hash_map` to initialize and declare a `HashMap` at the same time, very similar to what `vec!` macro does for `Vector`.
+Create a macro rule called `hash_map!` to initialize and optionally populate `std::collections::HashMap` at the same time, akin to what `vec!` does for `Vec`.
 
-> Your macro should accept both leading and non leading commas syntax to be more flexible in terms of coding style and reflect the language general style.
+> Your macro should work with or without a leading comma as do the language's list standard macros work.
+
+> Your macro should also be able to work without the need to explicitly import `std::collections::HashMap` outside of its definition.
 
 ### Expected Macro
 
@@ -22,19 +24,20 @@ use macro_map::hash_map;
 use std::collections::HashMap;
 
 fn main() {
-    let empty: HashMap<u32, u32> = hash_map!();
-    let new = hash_map!('a' => 22, 'b' => 1, 'c' => 10);
-    let nested = hash_map!(
-        "first" => hash_map!(
-            "Rob" => 32.2,
-            "Gen" => 44.1,
-            "Chris" => 10.,
-        ),
-        "second" => hash_map!()
-    );
+    let empty: HashMap<u32, u32> = hash_map![];
     println!("{:?}", empty);
-    println!("{:?}", new);
-    println!("{:?}", nested);
+    println!("{:?}", hash_map!['a' => 22, 'b' => 1, 'c' => 10]);
+    println!(
+        "{:?}",
+        hash_map![
+            "first" => hash_map![
+                "Rob" => 32.2,
+                "Gen" => 44.1,
+                "Chris" => 10.,
+            ],
+            "second" => hash_map![]
+        ]
+    );
 }
 ```
 
@@ -47,4 +50,3 @@ $ cargo run
 {"first": {"Rob": 32.2, "Gen": 44.1, "Chris": 10.0}, "second": {}}
 $
 ```
-
