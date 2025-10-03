@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a function named `parts_sums`, that receives a reference of an array of `u64`, and returns a vector with the partial sums of the received array.
+Create a function named `parts_sums`, that receives a slice of `u64`, and returns a vector with the partial sums of the received array.
 
 This is how partial sums work:
 
@@ -37,10 +37,11 @@ This is how partial sums work:
 parts_sums(&[1, 2, 3, 4, 5]) // == [15, 10, 6, 3 ,1, 0]
 ```
 
-### Expected Result
+### Expected Functions
 
 ```rs
-pub fn parts_sums(arr: &[u64]) -> Vec<u64>{
+pub fn parts_sums(arr: &[u64]) -> Vec<u64> {
+    todo!()
 }
 ```
 
@@ -53,7 +54,7 @@ use partial_sums::*;
 
 fn main() {
     println!(
-        "Partial sums of [5, 18, 3, 23] is : {:?}",
+        "Partial sums of [5, 18, 3, 23] is: {:?}",
         parts_sums(&[5, 18, 3, 23])
     );
 }
@@ -63,6 +64,6 @@ And its output:
 
 ```sh
 $ cargo run
-Partial sums of [5, 18, 3, 23] is : [49, 26, 23, 5, 0]
+Partial sums of [5, 18, 3, 23] is: [49, 26, 23, 5, 0]
 $
 ```

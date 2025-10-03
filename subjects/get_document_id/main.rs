@@ -10,6 +10,7 @@ fn main() {
             }),
         }),
     };
+
     let office_closed = {
         OfficeOne {
             next_office: Ok(OfficeTwo {
@@ -22,6 +23,7 @@ fn main() {
         Ok(id) => println!("Found a document with id {}", id),
         Err(err) => println!("Error: {:?}", err),
     };
+
     match office_closed.get_document_id() {
         Ok(id) => println!("Found a document with id {}", id),
         Err(err) => println!("Error: {:?}", err),

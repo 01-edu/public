@@ -10,6 +10,7 @@ If the `HashMap` is empty, return the maximum `i32`.
 
 ```rust
 pub fn smallest(h: HashMap<&str, i32>) -> i32 {
+    todo!()
 }
 ```
 
@@ -18,19 +19,23 @@ pub fn smallest(h: HashMap<&str, i32>) -> i32 {
 Here is a program to test your function.
 
 ```rust
-use std::collections::HashMap;
 use smallest::smallest;
+use std::collections::HashMap;
 
 fn main() {
+    let hash = HashMap::from([
+        ("Cat", 122),
+        ("Dog", 333),
+        ("Elephant", 334),
+        ("Gorilla", 14),
+    ]);
 
-    let mut hash = HashMap::new();
-    hash.insert("Cat", 122);
-    hash.insert("Dog", 333);
-    hash.insert("Elephant", 334);
-    hash.insert("Gorilla", 14);
-
-    println!("The smallest of the elements in the HashMap is {}", smallest(hash));
+    println!(
+        "The smallest of the elements in the HashMap is {}",
+        smallest(hash)
+    );
 }
+
 ```
 
 And its output

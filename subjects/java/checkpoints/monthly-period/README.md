@@ -40,7 +40,7 @@ public class ExerciseRunner {
         System.out.println("Period: " + MonthlyPeriod.calculatePeriod(startDate2, endDate2));
 
         String startDate3 = "2015-05-20";
-        String endDate3 = "2015-10-19";
+        String endDate3 = "2015-10-20";
         System.out.println("Period: " + MonthlyPeriod.calculatePeriod(startDate3, endDate3));
 
         String startDate4 = "2018-12-25";

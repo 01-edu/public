@@ -1,6 +1,6 @@
 public class ExerciseRunner {
     public static void main(String[] args) {
-        DayOfWeekFinder finder = new DayOfWeek();
+        DayOfWeekFinder finder = new DayOfWeekFinder();
 
         // Test case 1
         String startDate1 = "2023-06-22";

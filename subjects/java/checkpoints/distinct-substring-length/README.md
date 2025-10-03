@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Create a class `DistinctSubstringLength` that provides a method to find the length of the longest substring without repeating characters in a given string.
+Create a class named `DistinctSubstringLength` that provides a method to determine the length of the longest substring in a given string that contains no repeating characters.
 
-The distinction between characters should be case-sensitive.
+Character comparison must be case-sensitive.
 
 ### Expected Class
 

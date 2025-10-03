@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a **function** which returns the first prime number which is less than or equal to the `u64` passed as an argument.
+Create a **function** which returns the biggest prime number which is smaller than the `u64` passed as an argument.
 
 If there are no smaller primes, the function should return `0`.
 
@@ -13,13 +13,13 @@ If there are no smaller primes, the function should return `0`.
 
 ```rust
 pub fn prev_prime(nbr: u64) -> u64  {
-
+    todo!()
 }
 ```
 
 ### Usage
 
-Here is a possible program to test your function :
+Here is a possible program to test your function:
 
 ```rust
 use previousprime::*;
@@ -29,7 +29,7 @@ fn main() {
 }
 ```
 
-And its output :
+And its output:
 
 ```console
 $ cargo run

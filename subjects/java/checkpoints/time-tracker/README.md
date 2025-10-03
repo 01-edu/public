@@ -71,3 +71,16 @@ Full Day Project Total Logged Time: 24 h
 Error Project Total Logged Time: -1
 $
 ```
+
+### Tip — How To Use SimpleDateFormat
+
+```java
+// Creation of the date parser
+SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+
+// parse and get the date
+Date date = DATE_FORMAT.parse(startTime);
+
+// getTime in milisecond
+Long timeInMilisecond = date.getTime();
+```

@@ -39,7 +39,6 @@ public ... RegexBuilder {
 
 // ConcreteRegexBuilder class
 public class ConcreteRegexBuilder {
-    private Regex regex = new Regex();
     List<String> component;
 
     ...

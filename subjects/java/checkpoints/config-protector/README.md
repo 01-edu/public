@@ -2,9 +2,11 @@
 
 ### Instructions
 
-Create a class `ConfigProtector` that provides a method to hide sensitive data in a configuration file using `Regex`. The method should replace sensitive values with asterisks. The configuration file will be provided as a `String`, and the keys for the sensitive data will be given in a `List`.
+Create a class named `ConfigProtector` that provides functionality to mask sensitive data in a configuration file using regular expressions (`Regex`). This class should expose a method that replaces sensitive values with asterisks.
 
-The config file format will always be as follows:
+The configuration file will be supplied as a `String`, while the sensitive keys will be provided as a `List`.
+
+The format of the configuration file will always follow this structure:
 
 ```
 username=admin

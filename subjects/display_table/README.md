@@ -4,32 +4,35 @@
 
 Define the `Table` struct below, and implement the associated functions `new` and `add_row`. You can see how they should work from the usage.
 
-Implement the `std::fmt::Display` trait for the `Table` structure so that the table is printed like in the usage. The length of each column must adjust to the longest element of the column, and the element must be centered in the "cell" when possible. If the element cannot be centred exactly, it must be positioned slightly to the left.
+Implement the `std::fmt::Display` trait for the `Table` structure so that the table is printed like in the usage. The length of each column must adjust to the longest element of the column, and the element must be centered in the "cell" when possible. If the element cannot be exactly centered, it must be offset one byte to the left of the center, as can be seen in the example output.
 
 If the table is empty `println!` must not print anything.
+
+> Our tests will always assume that, when calling `add_row`, the row has the same correct size as the headers.
 
 ### Expected functions and Structures
 
 ```rust
 #[derive(Clone, Debug, PartialEq)]
 pub struct Table {
-	pub headers: Vec<String>,
-	pub body: Vec<Vec<String>>,
+    pub headers: Vec<String>,
+    pub body: Vec<Vec<String>>,
 }
 
 impl fmt::Display for Table {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-
+        todo!()
     }
 }
 
 impl Table {
-	pub fn new() -> Table {
+    pub fn new() -> Table {
+        todo!()
+    }
 
-	}
-	pub fn add_row(&mut self, row: &[String]) {
-
-	}
+    pub fn add_row(&mut self, row: &[String]) {
+        todo!()
+    }
 }
 ```
 
@@ -69,7 +72,6 @@ fn main() {
     ]);
     println!("{}", table);
 }
-
 ```
 
 And its output:

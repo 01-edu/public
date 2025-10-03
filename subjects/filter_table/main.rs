@@ -22,9 +22,10 @@ fn main() {
         "Philips".to_string(),
         "123456789".to_string(),
     ]);
-    let filter_names = |col: &str| col == "Name";
-    println!("{:?}", table.filter_col(filter_names));
 
-    let filter_philips = |lastname: &str| lastname == "Philips";
-    println!("{:?}", table.filter_row("Last Name", filter_philips));
+    println!("{:?}", table.filter_col(|col| col == "Name"));
+    println!(
+        "{:?}",
+        table.filter_row("Last Name", |lastname| lastname == "Philips")
+    );
 }

@@ -9,7 +9,7 @@ Create the following structures which will help you get the `document_id` of the
 - `OfficeThree`: `next_office` as type `Result<OfficeFour, ErrorOffice>`.
 - `OfficeFour`: `document_id` as type `Result<u32, ErrorOffice>`.
 
-`ErrorOffice` is an `enum` with `OfficeClosed(u32)`, `OfficeNotFound(u32)` or `OfficeFull(u32)`.
+`ErrorOffice` is an `enum` with `OfficeClose(u32)`, `OfficeNotFound(u32)` or `OfficeFull(u32)`.
 
 The `u32` is the `id` of the office generating the error.
 
@@ -48,7 +48,9 @@ pub struct OfficeFour {
 }
 
 impl OfficeOne {
-    pub fn get_document_id(&self) -> Result<u32, ErrorOffice> {}
+    pub fn get_document_id(&self) -> Result<u32, ErrorOffice> {
+        todo!()
+    }
 }
 ```
 
@@ -69,6 +71,7 @@ fn main() {
             }),
         }),
     };
+
     let office_closed = {
         OfficeOne {
             next_office: Ok(OfficeTwo {
@@ -81,6 +84,7 @@ fn main() {
         Ok(id) => println!("Found a document with id {}", id),
         Err(err) => println!("Error: {:?}", err),
     };
+
     match office_closed.get_document_id() {
         Ok(id) => println!("Found a document with id {}", id),
         Err(err) => println!("Error: {:?}", err),

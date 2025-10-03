@@ -1,4 +1,4 @@
-FROM docker.01-edu.org/alpine:3.17.0
+FROM alpine:3
 
 # Installs latest Chromium package.
 RUN apk add --no-cache \

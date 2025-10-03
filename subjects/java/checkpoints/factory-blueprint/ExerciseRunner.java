@@ -9,7 +9,7 @@ public class ExerciseRunner {
             System.out.println("Invalid product type");
         }
 
-        ConcreteProductA productB = factory.createProduct("B");
+        ConcreteProductB productB = factory.createProduct("B");
         if (productB != null) {
             productB.showDetails();
         } else {
@@ -18,7 +18,7 @@ public class ExerciseRunner {
 
         Object invalidProduct = factory.createProduct("C");
         if (invalidProduct != null) {
-            invalidProduct.showDetails();
+            System.out.println("Invalid product type should return null");
         } else {
             System.out.println("Invalid product type");
         }

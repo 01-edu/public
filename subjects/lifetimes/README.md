@@ -7,15 +7,16 @@ Complete the `Person` struct with the fields and associated function described b
 ### Expected Functions and Data Structures (Both need to be completed)
 
 ```rust
-#[derive(Debug)]
-pub struct Person{
-	pub name: &str,
-	pub age: u8,
+#[derive(Debug, Clone, Copy, PartialEq)]
+pub struct Person {
+    pub name: &str,
+    pub age: u32,
 }
 
 impl Person {
-	pub fn new(name: &str) -> Person {
-	}
+    pub fn new(name: &str) -> Self {
+        todo!()
+    }
 }
 ```
 
@@ -27,9 +28,9 @@ Here is a program to test your function.
 use lifetimes::*;
 
 fn main() {
-	let person = Person::new("Leo");
+    let person = Person::new("Leo");
 
-	println!("Person = {:?}", person);
+    println!("Person = {:?}", person);
 }
 ```
 
