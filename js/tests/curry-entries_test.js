@@ -85,6 +85,7 @@ Object.freeze(tests)
 export const setup = () => ({
   filter: {
     calebDume:     { id: 11, isForceUser: true,  pilotingScore: 71, shootingScore: 85 },
+    sabineWren:    { id: 82, pilotingScore: 73, shootingScore: 99, isForceUser: false },
   },
   total: {
     sabineWren:    { id: 82, pilotingScore: 73, shootingScore: 99, isForceUser: false, averageScore: 86 },
