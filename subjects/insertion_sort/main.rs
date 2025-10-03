@@ -1,4 +1,4 @@
-use insertion_sort::insertion_sort;
+use insertion_sort::*;
 
 fn main() {
     let mut target = [5, 3, 7, 2, 1, 6, 8, 4];
@@ -7,9 +7,8 @@ fn main() {
     println!("{:?}", target);
 
     let mut target = [5, 3, 7, 2, 1, 6, 8, 4];
-    let len = target.len();
-    // executes len - 1 iterations of the algorithm
-    // i.e. sorts the slice
-    insertion_sort(&mut target, len - 1);
+    // executes len - 1 iterations of the algorithm (sorts the slice)
+    let len = target.len() - 1;
+    insertion_sort(&mut target, len);
     println!("{:?}", target);
 }
