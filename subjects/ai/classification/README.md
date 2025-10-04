@@ -351,12 +351,10 @@ def predict_one_vs_all(X, clf0, clf1, clf2 ):
 
 ### Resources
 
-- [Logistic regression](https://towardsdatascience.com/understanding-logistic-regression-9b02c2aec102)
+- [Logistic regression](https://www.ibm.com/think/topics/logistic-regression)
 
 - [Logloss](https://www.datacamp.com/tutorial/the-cross-entropy-loss-function-in-machine-learning)
 
-- [More on logistic regression](https://medium.com/swlh/what-is-logistic-regression-62807de62efa)
+- [More on logistic regression](https://www.stat.cmu.edu/~cshalizi/uADA/12/lectures/ch12.pdf)
 
 - [Logistic regression 1](https://www.kaggle.com/code/rahulrajpandey31/logistic-regression-from-scratch-iris-data-set)
-
-- [Logistic regression 2](https://towardsdatascience.com/logistic-regression-using-python-sklearn-numpy-mnist-handwriting-recognition-matplotlib-a6b31e2b166a)
