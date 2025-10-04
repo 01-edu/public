@@ -309,4 +309,4 @@ The first 3 rows of the DataFrame should like this:
 
 - [Pandas tutorial](https://www.learndatasci.com/tutorials/python-pandas-tutorial-complete-introduction-for-beginners/)
 
-- [Pandas iteration](https://www.datacamp.com/de/tutorial/pandas-iterate-over-rows)
+- [Pandas iteration](https://www.geeksforgeeks.org/pandas/different-ways-to-iterate-over-rows-in-pandas-dataframe/)
