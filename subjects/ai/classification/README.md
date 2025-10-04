@@ -353,7 +353,7 @@ def predict_one_vs_all(X, clf0, clf1, clf2 ):
 
 - [Logistic regression](https://www.ibm.com/think/topics/logistic-regression)
 
-- [Logloss](https://www.datacamp.com/tutorial/the-cross-entropy-loss-function-in-machine-learning)
+- [Logloss](https://www.geeksforgeeks.org/machine-learning/what-is-cross-entropy-loss-function/)
 
 - [More on logistic regression](https://www.stat.cmu.edu/~cshalizi/uADA/12/lectures/ch12.pdf)
 
