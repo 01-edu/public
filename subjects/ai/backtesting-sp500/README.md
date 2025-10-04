@@ -232,3 +232,26 @@ project
     - Be prepared to explain any anomalies or unexpected results in your strategy's performance.
 
 Remember, the goal is not just to create a strategy that looks good on paper, but to develop a robust process for analyzing financial data and testing investment ideas.
+
+### Resources
+
+* **Python & Data Analysis**
+
+  * [pandas Documentation](https://pandas.pydata.org/docs/) – handling time series, resampling, returns.
+  * [NumPy Documentation](https://numpy.org/doc/) – vectorized operations and memory optimization.
+  * [Matplotlib Documentation](https://matplotlib.org/stable/index.html) – plotting cumulative returns and EDA visuals.
+
+* **Finance & Backtesting**
+
+  * [Investopedia – Backtesting](https://www.investopedia.com/terms/b/backtesting.asp) – introduction to strategy testing.
+  * [QuantStart – What is Backtesting?](https://corporatefinanceinstitute.com/resources/data-science/backtesting/#:~:text=Backtesting%20involves%20applying%20a%20strategy,employ%20and%20tweak%20successful%20strategies.) – practical overview of backtesting logic.
+  * [S&P 500 Index (Wikipedia)](https://en.wikipedia.org/wiki/S%26P_500) – background on the index and its historical changes.
+
+* **Data Cleaning & Outliers**
+
+  * [Handling Missing Data in Pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/missing_data.html).
+
+* **Quantitative Strategies**
+
+  * [Momentum Investing (Investopedia)](https://www.investopedia.com/terms/m/momentum_investing.asp) – theory behind using past returns as a signal.
+  * [Risk and Return Basics (CFA Institute)](https://www.investopedia.com/terms/r/riskadjustedreturn.asp) – risk-adjusted performance understanding.
