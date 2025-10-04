@@ -107,22 +107,47 @@ document-categorization-tagging/
 └── requirements.txt
 ```
 
-### Timeline (2-3 weeks)
+### Tips
 
-**Week 1**:
+1. **Data Quality & Preprocessing**
+   * Pay attention to encoding, text cleaning, and normalization, especially with multi-language data.
+   * Always remove unwanted characters, duplicated text, or formatting artifacts before training.
 
-- **Days 1-3**: Dataset loading, EDA, and project structure setup.
-- **Days 4-7**: Implement baseline text classification and tagging models with transfer learning.
+2. **Multi-Language Handling**
+   * Use automatic language detection to route documents to the right SpaCy or Hugging Face model.
+   * Keep tokenization language-specific to avoid poor segmentation.
 
-**Week 2**:
+3. **Model Training**
+   * Start with a small pre-trained model (e.g., DistilBERT) before moving to larger models like BERT.
+   * Regularly save checkpoints during fine-tuning to avoid losing progress.
 
-- **Days 1-3**: Develop context-aware tagging and real-time processing pipeline.
-- **Days 4-7**: Add multi-language support and optimize for high-volume document processing.
+4. **Context-Aware Tagging**
+   * Use **Named Entity Recognition (NER)** results to enrich tag generation.
+   * Combine rule-based and machine learning approaches for higher tagging precision.
 
-**Week 3**:
+5. **Real-Time Performance**
+   * Batch incoming documents to improve processing speed.
+   * Consider using asynchronous calls if you implement real-time tagging with Flask or Streamlit.
 
-- **Days 1-4**: Develop the Streamlit/Flask app and integrate visualization and monitoring tools.
-- **Days 5-7**: Document the project and prepare the README with usage instructions.
+6. **Evaluation**
+   * Evaluate your model using precision, recall, and F1-score.
+   * Test the tagging accuracy separately from classification accuracy.
+
+7. **Visualization**
+   * Display model performance metrics in the dashboard (accuracy, latency, language stats).
+   * Visualize the frequency of categories and tags over time.
+
+8. **Code Quality**
+   * Keep your scripts modular and well-documented.
+   * Use functions for data loading, preprocessing, and inference to simplify debugging and reusability.
+
+9. **Scalability**
+   * Plan for deployment — ensure the pipeline can handle large volumes of documents.
+   * Optimize models with pruning or quantization to reduce latency.
+
+10. **Interpretability**
+   * Log top keywords or entities that influence categorization decisions.
+   * Make your dashboard explain how and why each document was categorized.
 
 ### Resources
 
