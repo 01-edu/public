@@ -36,7 +36,6 @@ The input files are:
   data.
 
   The adjusted close price may be unavailable for three main reasons:
-
   - The company doesn't exist at date `d`
   - The company is not publicly traded
   - Its close price hasn't been reported
@@ -68,7 +67,6 @@ There are four parts:
 #### 2. Data wrangling and preprocessing
 
 - Create a Jupyter Notebook to analyze the data sets and perform EDA (Exploratory Data Analysis). This notebook should contain at least:
-
   - Missing values analysis
   - Outliers analysis (there are a lot of outliers)
   - Visualize and analyze the average price for companies over time or compare the price consistency across different companies within the dataset. Save the plot as an image.
@@ -77,11 +75,9 @@ There are four parts:
 _Note: create functions that generate the plots and save them in the `images` directory. Add a parameter `plot` with a default value `False` which doesn't return the plot. This will be useful for the correction to let people run your code without overriding your plots._
 
 - Here is how the `prices` data should be preprocessed:
-
   - Resample data on month and keep the last value
   - Filter prices outliers: Remove prices outside the range 0.1$, 10k$
   - Compute monthly returns:
-
     - Historical returns. **returns(current month) = price(current month) - price(previous month) / price(previous month)**
     - Future returns. **returns(current month) = price(next month) - price(current month) / price(current month)**
 
@@ -102,7 +98,6 @@ At this stage the DataFrame should look like this:
 - Print `prices.isna().sum()`
 
 - Here is how the `sp500.csv` data should be preprocessed:
-
   - Resample data on month and keep the last value
   - Compute historical monthly returns on the adjusted close
 
@@ -183,47 +178,38 @@ project
 ### Tips:
 
 1. Data Quality Management:
-
    - Be prepared to encounter messy data. Financial datasets often contain errors, outliers, and missing values.
    - Develop a systematic approach to identify and handle data quality issues.
 
 2. Memory Optimization:
-
    - When working with large datasets, optimize memory usage by selecting appropriate data types for each column.
    - Consider using smaller data types like np.float32 for floating-point numbers when precision allows.
 
 3. Exploratory Data Analysis:
-
    - Spend time understanding the data through visualization and statistical analysis before diving into strategy development.
    - Pay special attention to outliers and their potential impact on your strategy.
 
 4. Preprocessing Financial Data:
-
    - When resampling time series data, be mindful of which value to keep (e.g., last value for month-end prices).
    - Calculate both historical and future returns to avoid look-ahead bias in your strategy.
 
 5. Handling Outliers:
-
    - Develop a method to identify and handle outliers that is specific to each company's historical data.
    - Be cautious about removing outliers during periods of high market volatility (e.g., 2008-2009 financial crisis).
 
 6. Signal Creation:
-
    - Start with a simple signal (like past 12-month average returns) before exploring more complex strategies.
    - Ensure your signal doesn't use future information that wouldn't have been available at the time of decision.
 
 7. Backtesting:
-
    - Implement your backtesting logic without using loops for better performance.
    - Compare your strategy's performance against a relevant benchmark (in this case, the S&P 500).
 
 8. Visualization:
-
    - Create clear, informative visualizations to communicate your strategy's performance.
    - Include cumulative return plots to show how your strategy performs over time compared to the benchmark.
 
 9. Code Structure:
-
    - Organize your code into modular functions for better readability and reusability.
    - Use a main script to orchestrate the entire process from data loading to results visualization.
 
@@ -235,23 +221,19 @@ Remember, the goal is not just to create a strategy that looks good on paper, bu
 
 ### Resources
 
-* **Python & Data Analysis**
+- **Python & Data Analysis**
+  - [pandas Documentation](https://pandas.pydata.org/docs/) – handling time series, resampling, returns.
+  - [NumPy Documentation](https://numpy.org/doc/) – vectorized operations and memory optimization.
+  - [Matplotlib Documentation](https://matplotlib.org/stable/index.html) – plotting cumulative returns and EDA visuals.
 
-  * [pandas Documentation](https://pandas.pydata.org/docs/) – handling time series, resampling, returns.
-  * [NumPy Documentation](https://numpy.org/doc/) – vectorized operations and memory optimization.
-  * [Matplotlib Documentation](https://matplotlib.org/stable/index.html) – plotting cumulative returns and EDA visuals.
+- **Finance & Backtesting**
+  - [Investopedia – Backtesting](https://www.investopedia.com/terms/b/backtesting.asp) – introduction to strategy testing.
+  - [QuantStart – What is Backtesting?](https://corporatefinanceinstitute.com/resources/data-science/backtesting/#:~:text=Backtesting%20involves%20applying%20a%20strategy,employ%20and%20tweak%20successful%20strategies.) – practical overview of backtesting logic.
+  - [S&P 500 Index (Wikipedia)](https://en.wikipedia.org/wiki/S%26P_500) – background on the index and its historical changes.
 
-* **Finance & Backtesting**
+- **Data Cleaning & Outliers**
+  - [Handling Missing Data in Pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/missing_data.html).
 
-  * [Investopedia – Backtesting](https://www.investopedia.com/terms/b/backtesting.asp) – introduction to strategy testing.
-  * [QuantStart – What is Backtesting?](https://corporatefinanceinstitute.com/resources/data-science/backtesting/#:~:text=Backtesting%20involves%20applying%20a%20strategy,employ%20and%20tweak%20successful%20strategies.) – practical overview of backtesting logic.
-  * [S&P 500 Index (Wikipedia)](https://en.wikipedia.org/wiki/S%26P_500) – background on the index and its historical changes.
-
-* **Data Cleaning & Outliers**
-
-  * [Handling Missing Data in Pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/missing_data.html).
-
-* **Quantitative Strategies**
-
-  * [Momentum Investing (Investopedia)](https://www.investopedia.com/terms/m/momentum_investing.asp) – theory behind using past returns as a signal.
-  * [Risk and Return Basics (CFA Institute)](https://www.investopedia.com/terms/r/riskadjustedreturn.asp) – risk-adjusted performance understanding.
+- **Quantitative Strategies**
+  - [Momentum Investing (Investopedia)](https://www.investopedia.com/terms/m/momentum_investing.asp) – theory behind using past returns as a signal.
+  - [Risk and Return Basics (CFA Institute)](https://www.investopedia.com/terms/r/riskadjustedreturn.asp) – risk-adjusted performance understanding.
