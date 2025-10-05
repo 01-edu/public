@@ -169,7 +169,7 @@ The preprocessing is composed of:
     4. Stopword Filtering
     5. Stemming
 
-_ [Resources](https://towardsdatascience.com/nlp-preprocessing-with-nltk-3c04ee00edc0_)
+_ [Resources](https://codefinity.com/blog/A-Comprehensive-Guide-to-Text-Preprocessing-with-NLTK)
 
 ---
 
@@ -231,6 +231,6 @@ Steps:
 
 - [Nlp 1](https://towardsdatascience.com/your-guide-to-natural-language-processing-nlp-48ea2511f6e1)
 
-- [Nlp 2](https://towardsdatascience.com/word-embeddings-for-nlp-5b72991e01d4)
+- [Nlp 2](hhttps://www.geeksforgeeks.org/nlp/word-embeddings-in-nlp/)
 
 - [Sklearn.feature_extraction.text.CountVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html)
