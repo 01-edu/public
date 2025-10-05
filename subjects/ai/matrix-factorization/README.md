@@ -111,7 +111,7 @@ Remember, a great recommender system needs to understand both the users and the 
 
 ### Resources
 
-- [Matrix Factorization Techniques for Recommender Systems](https://datajobs.com/data-science-repo/Recommender-Systems-[Netflix].pdf) - A comprehensive overview of matrix factorization methods.
+- [Matrix Factorization Techniques for Recommender Systems](https://www.diva-portal.org/smash/get/diva2:633561/FULLTEXT01.pdf) - A comprehensive overview of matrix factorization methods.
 - [Singular Value Decomposition and Its Applications in Recommender Systems](https://www.cs.uic.edu/~liub/KDD-cup-2007/proceedings/Regular-Paterek.pdf) - Detailed explanation of SVD.
 - [Probabilistic Matrix Factorization](https://www.cs.toronto.edu/~amnih/papers/bpmf.pdf) - Original paper on PMF by Salakhutdinov and Mnih.
 - [MovieLens Dataset](https://grouplens.org/datasets/movielens/1m/) - Official page for the MovieLens 1M dataset.
