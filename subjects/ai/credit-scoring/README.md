@@ -24,14 +24,12 @@ There are 3 expected deliverables associated with the scoring model:
 
 - An exploratory data analysis notebook that describes the insights you find out in the data set.
 - The trained machine learning model with the features engineering pipeline:
-
   - Do not forget: **Coming up with features is difficult, time-consuming, requires expert knowledge. ‘Applied machine learning’ is basically feature engineering.**
   - The model is validated if the **AUC on the test set is at minimum 55%, ideally to 62% included (or in best cases higher than 62% if you can !)**.
   - The labelled test data is not publicly available. However, a Kaggle competition uses the same data. The procedure to evaluate test set submission is the same as the one used for the project 1.
   - Here are the [DataSets](https://assets.01-edu.org/ai-branch/project5/home-credit-default-risk.zip).
 
 - A report on model training and evaluation:
-
   - Include learning curves (training and validation scores vs. training set size or epochs) to demonstrate that the model is not overfitting.
   - Explain the measures taken to prevent overfitting, such as early stopping or regularization techniques.
   - Justify your choice of when to stop training based on the learning curves.
