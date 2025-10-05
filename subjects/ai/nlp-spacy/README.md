@@ -102,8 +102,6 @@ The goal of this exercise is to learn to use `spaCy` embedding on a document.
 
 [logo]: ./w3day05ex1_plot.png "Plot"
 
-https://medium.com/datadriveninvestor/cosine-similarity-cosine-distance-6571387f9bf8
-
 ---
 
 ---
@@ -172,4 +170,3 @@ The data `news_amazon.txt` used is a newspaper about Amazon.
 - [Spacy](https://spacy.io/usage/spacy-101)
 - [NLP 1](https://spacy.io/api/doc)
 - [NLP 2](https://www.analyticsvidhya.com/blog/2021/06/nlp-application-named-entity-recognition-ner-in-python-with-spacy/)
-- [NLP 3](https://medium.com/mlearning-ai/nlp-04-part-of-speech-tagging-in-spacy-dc3e239c2726)
