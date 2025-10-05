@@ -81,7 +81,6 @@ It is also expected that you explain the iterations and how you end up choosing 
 
 - Use the video stream outputted by your computer's webcam and preprocess it to make it compatible with the CNN you trained. One of the preprocessing steps is: face detection. As you may have seen the training samples are imaged centered on a face.
   To do so, I suggest using a pre-trained model to detect faces. OpenCV for image processing tasks where we identify a face from a live webcam feed which is then processed and fed into the trained neural network for emotion detection. The preprocessing pipeline will be corrected with a functional test in `preprocessing_test`:
-
   - **Input**: Video stream of 20 sec with a face on it
   - **Output**: 20 (or 21) images cropped and centered on the face with 48 x 48
     grayscale pixels
