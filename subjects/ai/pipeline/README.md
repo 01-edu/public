@@ -366,7 +366,7 @@ The pipeline you will implement has to contain 3 steps:
 
 #### Step 3
 
-- [Dimensionality reduction](https://towardsdatascience.com/dimensionality-reduction-for-machine-learning-80a46c2ebb7e)
+- [Dimensionality reduction](https://www.geeksforgeeks.org/machine-learning/dimensionality-reduction/)
 
 #### Step 4
 
