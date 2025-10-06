@@ -184,7 +184,7 @@ We will backtest a **long only** strategy on Apple Inc. Long only means that we 
 
 - [Resource 3](https://www.learndatasci.com/tutorials/python-pandas-tutorial-complete-introduction-for-beginners/)
 
-- [Resource 4](https://towardsdatascience.com/different-ways-to-iterate-over-rows-in-a-pandas-dataframe-performance-comparison-dc0d5dcef8fe)
+- [Resource 4](https://medium.com/data-science/different-ways-to-iterate-over-rows-in-a-pandas-dataframe-performance-comparison-dc0d5dcef8fe)
 
 - [Resource 5](https://www.investopedia.com/terms/b/backtesting.asp)
 
