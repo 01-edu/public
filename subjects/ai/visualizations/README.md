@@ -198,7 +198,6 @@ The plot has to contain:
 - 6 subplots: 2 rows, 3 columns
 - Keep space between plots: `hspace=0.5` and `wspace=0.5`
 - Each plot contains
-
   - Text (2,3,i) centered at 0.5, 0.5. _Hint_: check the parameter `ha` of `text`
   - a title: Title i
 
@@ -273,7 +272,6 @@ The plot has to contain:
 
 - [Resource 1](https://matplotlib.org/3.3.3/tutorials/index.html)
 - [Resource 2](https://towardsdatascience.com/matplotlib-tutorial-learn-basics-of-pythons-powerful-plotting-library-b5d1b8f67596)
-
 - [Resource 3](https://github.com/rougier/matplotlib-tutorial)
 - [Resource 4](https://jakevdp.github.io/PythonDataScienceHandbook/05.13-kernel-density-estimation.html)
 - [Resource 5](https://plotly.com/python/box-plots/)
