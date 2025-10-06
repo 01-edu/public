@@ -122,7 +122,6 @@ Once you'll have run the grid search on the cross validation (choose either Bloc
   - Weights proportional to the machine learning signals
     - invest x on asset `i` for on day
 - Long and short: For those who search long short strategy on Google, don't get wrong, this has nothing to do with pair trading.
-
   - Binary signal:
     - -1: take a short position on asset `i` for 1 day
     - 1: take a long position on asset `i` for 1 day
@@ -132,7 +131,6 @@ Once you'll have run the grid search on the cross validation (choose either Bloc
     - 1: take a long position on asset `i` for 1 day
 
   Notes:
-
   - Warning! When you don't invest on all stock as in the binary signal or the ternary signal, make sure that you are still investing $1 per day!
 
   - In order to simplify the **short position** we consider that this is the opposite of a long position. Example: I take a short one AAPL stock and the price decreases by $20 on one day. I earn $20.
