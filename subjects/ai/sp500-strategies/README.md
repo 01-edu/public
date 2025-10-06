@@ -84,7 +84,7 @@ Once you'll have run the grid search on the cross validation (choose either Bloc
 
 **The output is a DataFrame or Series with a double index ordered with the probability the stock price for asset `i` increases between d+1 and d+2.**
 
-- (optional): [Train an RNN/LSTM](https://towardsdatascience.com/predicting-stock-price-with-lstm-13af86a74944). This is a nice way to discover and learn about recurrent neural networks. But keep in mind that there are some new neural network architectures that seem to outperform recurrent neural networks. Here is an [interesting article](https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0) about the topic.
+- (optional): [Train an RNN/LSTM](https://medium.com/@aditib259/predicting-stock-prices-using-lstms-time-series-forecasting-a-step-by-step-guide-a70ebb04bbb8). This is a nice way to discover and learn about recurrent neural networks. But keep in mind that there are some new neural network architectures that seem to outperform recurrent neural networks. Here is an [interesting article](https://medium.com/data-science/the-fall-of-rnn-lstm-2d1594c74ce0) about the topic.
 
 #### Strategy backtesting
 
