@@ -66,7 +66,6 @@ I recommend to use:
 The goal of this exercise is to learn to create basic Pandas objects.
 
 1. Create a DataFrame as below this using two ways:
-
    - From a NumPy array
    - From a Pandas Series
 
