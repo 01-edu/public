@@ -323,8 +323,6 @@ Resources:
 
 - [Resource 2](https://towardsdatascience.com/guide-to-encoding-categorical-features-using-scikit-learn-for-machine-learning-5048997a5c79)
 
-- [Resource 3](https://machinelearningmastery.com/one-hot-encoding-for-categorical-data/)
-
 ---
 
 ---
