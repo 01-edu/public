@@ -19,7 +19,6 @@ The primary goal of **VisionTrack** is to develop practical skills in building a
 #### Data Loading and Preprocessing
 
 1. **Video/Image Dataset Preparation**:
-
    - Select or capture video streams or images featuring people.
    - Preprocess the data (e.g., resizing, normalization) to ensure it is ready for model input.
 
@@ -30,7 +29,6 @@ The primary goal of **VisionTrack** is to develop practical skills in building a
 #### Model Implementation
 
 1. **Person Detection with YOLO**:
-
    - Use a **pre-trained YOLO model** (e.g., YOLOv5 or YOLOv8) tailored for person detection.
    - Fine-tune the model using **transfer learning** to adapt to specific dataset variations with **PyTorch** or **TensorFlow/Keras**.
 
@@ -41,7 +39,6 @@ The primary goal of **VisionTrack** is to develop practical skills in building a
 #### Multi-Stream Object Tracking and Counting
 
 1. **Multi-Stream Tracking Pipeline**:
-
    - Extend the **supervision** library integration to support multiple video streams, enabling simultaneous tracking and analysis.
    - Develop logic to ensure accurate tracking and distinct object IDs for each stream.
 
@@ -52,7 +49,6 @@ The primary goal of **VisionTrack** is to develop practical skills in building a
 #### Streamlit App Development
 
 1. **App Layout**:
-
    - Create a **Streamlit** app (`app.py`) to display real-time video feeds with overlaid detection, tracking, and counting for multiple streams.
    - Design an intuitive interface that allows users to:
      - Upload or connect multiple video feeds.
@@ -60,7 +56,6 @@ The primary goal of **VisionTrack** is to develop practical skills in building a
      - View detection, tracking, and counting results with overlaid bounding boxes and counts.
 
 2. **Interactive Controls**:
-
    - Include controls for configuring detection thresholds and switching between video streams.
    - Allow toggling of detection, tracking, and counting features for each stream independently.
 
@@ -71,11 +66,9 @@ The primary goal of **VisionTrack** is to develop practical skills in building a
 #### Performance Optimization
 
 1. **Hardware Utilization**:
-
    - Implement **GPU acceleration** using **CUDA** with **OpenCV** and **PyTorch** to support real-time multi-stream processing.
 
 2. **Model Optimization**:
-
    - Apply **model pruning** and **quantization** techniques to enhance inference speed and reduce latency, essential for multi-stream performance.
 
 3. **Streamlit App Efficiency**:
@@ -84,7 +77,6 @@ The primary goal of **VisionTrack** is to develop practical skills in building a
 #### Visualization and Analysis
 
 1. **Real-Time Results**:
-
    - Display detection, tracking, and counting results across all active video streams with clear overlays.
    - Present real-time metrics such as FPS and latency for each stream within the app interface.
 
@@ -118,31 +110,12 @@ vision-track/
 └── requirements.txt         # List of dependencies
 ```
 
-### Timeline (2-3 weeks)
-
-**Week 1**:
-
-- **Days 1-3**: Prepare datasets, conduct EDA, and set up the initial project structure.
-- **Days 4-7**: Implement and test YOLO-based person detection with transfer learning.
-
-**Week 2**:
-
-- **Days 1-3**: Integrate the **supervision** library for multi-stream tracking and counting.
-- **Days 4-7**: Develop and test the **Streamlit** app for real-time, multi-stream visualization.
-
-**Week 3**:
-
-- **Days 1-4**: Optimize app performance, ensure GPU utilization, and refine user interaction for multi-stream functionality.
-- **Days 5-7**: Finalize documentation, complete README, and create comprehensive usage instructions.
-
 ### Tips
 
 1. **Pre-Trained Model Advantage**:
-
    - Start with a pre-trained YOLO model to save time and ensure strong baseline performance for person detection.
 
 2. **Optimize for Multi-Stream Processing**:
-
    - Ensure the app handles multiple video feeds efficiently by testing on different video sources and resolutions.
 
 3. **User Experience**:
@@ -151,7 +124,7 @@ vision-track/
 ### Resources
 
 - [YOLOv5 Documentation](https://github.com/ultralytics/yolov5)
-- [Supervision Library Documentation](https://supervisionlib.docs)
+- [Supervision Library Documentation](https://github.com/roboflow/supervision)
 - [Streamlit Documentation](https://docs.streamlit.io/)
 - [PyTorch Documentation](https://pytorch.org/docs/stable/index.html)
 - [OpenCV Documentation](https://docs.opencv.org/)
