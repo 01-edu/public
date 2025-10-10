@@ -23,7 +23,6 @@ The default date is the current date, and the format as follows `DD/MM/YYYY`. Th
 ### Expected Functions
 
 ```java
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class DateFormatter {
