@@ -72,7 +72,7 @@ There are four parts:
   - Visualize and analyze the average price for companies over time or compare the price consistency across different companies within the dataset. Save the plot as an image.
   - Describe at least 5 outliers ('ticker', 'date', 'price'). Put them in `outliers.txt` file with the 3 fields on the folder `results`.
 
-_Note: create functions that generate the plots and save them in the `results/plots/` directory. Add a parameter `plot` with a default value `False` which doesn't return the plot. This will be useful for the correction to let people run your code without overriding your plots. Plots with titles/labels._
+_Note: create functions that generate the plots and save them in the `images` directory. Add a parameter `plot` with a default value `False` which doesn't return the plot. This will be useful for the correction to let people run your code without overriding your plots._
 
 - Here is how the `prices` data should be preprocessed:
   - Resample data on month and keep the last value
@@ -124,7 +124,7 @@ A data point (x-axis: date, y-axis: cumulated_return) is: the **cumulated return
 
 ![alt text][performance]
 
-[performance]: results/plots/w1_weekend_plot_pnl.png "Cumulative Performance"
+[performance]: images/w1_weekend_plot_pnl.png "Cumulative Performance"
 
 #### 5. Main
 
@@ -157,7 +157,7 @@ project
 │
 └───data
 │   │   sp500.csv
-│   |   stock_prices.csv
+│   |   prices.csv
 │
 └───notebook
 │   │   analysis.ipynb
