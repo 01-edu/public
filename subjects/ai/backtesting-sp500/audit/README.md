@@ -9,7 +9,7 @@ project
 │
 └───data
 │   │   sp500.csv
-│   |   prices.csv
+│   |   stock_prices.csv
 │
 └───notebook
 │   │   analysis.ipynb
