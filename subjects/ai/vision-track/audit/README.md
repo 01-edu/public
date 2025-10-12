@@ -17,8 +17,9 @@
 ###### Is the dataset loaded and preprocessed to remove anomalies, handle missing values, and prepare video/image frames for object detection and tracking?
 
 ###### Does data preprocessing include resizing and normalization, ensuring compatibility with YOLO model input formats?
-* Validation of YOLO-compatible annotations (.txt files with class, x, y, w, h).
-* Confirm frames are resized and normalized properly before inference.
+
+- Validation of YOLO-compatible annotations (.txt files with class, x, y, w, h).
+- Confirm frames are resized and normalized properly before inference.
 
 ##### Model Implementation
 
@@ -64,35 +65,35 @@
 
 ###### Check:
 
-* Require metrics file:
+- Require metrics file:
 
-    ```
-    reports/performance_metrics.json
-    ```
+  ```
+  reports/performance_metrics.json
+  ```
 
-* Validate JSON includes:
+- Validate JSON includes:
 
-    ```json
-    {
-    "detection_precision": ...,
-    "detection_recall": ...,
-    "f1_score": ...,
-    "average_fps_per_stream": ...,
-    "average_latency_ms": ...
-    }
-    ```
+  ```json
+  {
+  "detection_precision": ...,
+  "detection_recall": ...,
+  "f1_score": ...,
+  "average_fps_per_stream": ...,
+  "average_latency_ms": ...
+  }
+  ```
 
-* Add minimum thresholds:
+- Add minimum thresholds:
 
-    Precision ≥ 0.85
+  Precision ≥ 0.85
 
-    Recall ≥ 0.80
+  Recall ≥ 0.80
 
-    F1 ≥ 0.85
+  F1 ≥ 0.85
 
-    FPS ≥ 15 (720p)
+  FPS ≥ 15 (720p)
 
-* Add check that metrics are visible in Streamlit dashboard (FPS + latency shown live).
+- Add check that metrics are visible in Streamlit dashboard (FPS + latency shown live).
 
 ##### Additional Considerations
 

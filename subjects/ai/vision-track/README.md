@@ -90,68 +90,67 @@ To ensure project completeness and audit validation, include the following:
 
 1. **Model Artifacts**:
    - Save all trained and optimized YOLO model weights in:
-       ```
-       models/checkpoints/
-      ├── best.pt
-      ├── best_quantized.onnx
-      └── config.yaml
-       ```
+     ```
+     models/checkpoints/
+     ├── best.pt
+     ├── best_quantized.onnx
+     └── config.yaml
+     ```
    - Include logs or configuration files documenting training and optimization steps.
 
 2. **Evaluation Metrics**:
    - Generate and save a report file:
-      reports/performance_metrics.json
+     reports/performance_metrics.json
    - Example format:
-      ```json
-      {
-        "detection_precision": 0.92,
-        "detection_recall": 0.90,
-        "f1_score": 0.91,
-        "average_fps_per_stream": 18.5,
-        "average_latency_ms": 85.0
-      }
-      ```
+     ```json
+     {
+       "detection_precision": 0.92,
+       "detection_recall": 0.9,
+       "f1_score": 0.91,
+       "average_fps_per_stream": 18.5,
+       "average_latency_ms": 85.0
+     }
+     ```
    - Minimum passing thresholds:
-      Precision ≥ 0.85
-      Recall ≥ 0.80
-      F1-score ≥ 0.85
-      Average FPS ≥ 15 (for 720p video)
+     Precision ≥ 0.85
+     Recall ≥ 0.80
+     F1-score ≥ 0.85
+     Average FPS ≥ 15 (for 720p video)
 
 3. **Real-Time App Test**
    - The app must run using:
-      ```
-      streamlit run app.py
-      ```
+     ```
+     streamlit run app.py
+     ```
    - The app should:
-      Display real-time detection overlays and FPS/latency counters.
-      Allow toggling of detection and tracking features per stream.
-      Handle missing or broken video sources gracefully.
+     Display real-time detection overlays and FPS/latency counters.
+     Allow toggling of detection and tracking features per stream.
+     Handle missing or broken video sources gracefully.
 
 4. **ROI Counting Validation**
    - Demonstrate ROI-based counting of people entering/exiting the region.
    - Save examples in:
-      ```
-      reports/demo_results/
-      ├── roi_counting_example.png
-      └── multi_stream_demo.mp4
-      ```
+     ```
+     reports/demo_results/
+     ├── roi_counting_example.png
+     └── multi_stream_demo.mp4
+     ```
 
 5. **GPU and Fallback Test**
    - Check for CUDA availability in your code:
-      ```
-      import torch
-      print("Using CUDA:", torch.cuda.is_available())
-      ```
+     ```
+     import torch
+     print("Using CUDA:", torch.cuda.is_available())
+     ```
    - The app must still run on CPU if CUDA is unavailable (with lower FPS
 
 6. **Error Handling**
-
    - The app must not crash on missing files or failed streams.
 
    - Log errors to:
-      ```
-      logs/app_errors.log
-      ```
+     ```
+     logs/app_errors.log
+     ```
 
 ### Project Repository Structure
 
