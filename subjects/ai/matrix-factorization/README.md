@@ -43,33 +43,36 @@ The goal of this project is to understand and apply advanced matrix factorizatio
 2. Provide visual comparisons between the models using **matplotlib** to plot predicted vs. actual ratings.
 3. Save consolidated evaluation results as JSON:
    `reports/model_metrics.json`
-   
+
    Example format:
-    ```json
-    {
-      "SVD_RMSE": 0.91,
-      "PMF_RMSE": 0.85,
-      "PMF_vs_SVD_improvement_%": 6.6
-    }
-    ```
-    * Generate and save comparison plots:
-        * Predicted vs Actual ratings: `reports/predicted_vs_actual.png`
-        * RMSE comparison (bar chart): `reports/rmse_comparison.png`
-    
-    * Minimum expected performance:
-        * SVD RMSE ≤ 0.90
-        * PMF RMSE ≤ 0.85
-        * PMF improvement ≥ 5% over SVD
+
+   ```json
+   {
+     "SVD_RMSE": 0.91,
+     "PMF_RMSE": 0.85,
+     "PMF_vs_SVD_improvement_%": 6.6
+   }
+   ```
+
+   - Generate and save comparison plots:
+     - Predicted vs Actual ratings: `reports/predicted_vs_actual.png`
+     - RMSE comparison (bar chart): `reports/rmse_comparison.png`
+   - Minimum expected performance:
+     - SVD RMSE ≤ 0.90
+     - PMF RMSE ≤ 0.85
+     - PMF improvement ≥ 5% over SVD
 
 #### Recommendation Generation
 
 1. Implement a function that generates movie recommendations for a user based on the predicted ratings from both the SVD and PMF models.
 2. Display top-rated movies for users and compare recommendations from both models.
 3. Implement in `utils/recommendation.py`:
-  ```python
-  def generate_recommendations(user_id, model, top_n=10):
-      ...
-  ```
+
+```python
+def generate_recommendations(user_id, model, top_n=10):
+    ...
+```
+
 4. Save the top-10 recommendations for each evaluated user in `reports/user_<id>_recommendations.csv`
 
 #### Analysis and Visualization
@@ -77,8 +80,8 @@ The goal of this project is to understand and apply advanced matrix factorizatio
 1. Provide visualizations comparing SVD and PMF predictions for the same user.
 2. Offer insights into how the models differ in recommending movies for specific users based on their ratings history.
 3. Save the following plots under `reports/`:
-   * `user_comparison.png` — SVD vs PMF predictions for a selected user
-   * `top_recommendations.png` — Histogram (or bar chart) of top recommended movies
+   - `user_comparison.png` — SVD vs PMF predictions for a selected user
+   - `top_recommendations.png` — Histogram (or bar chart) of top recommended movies
 
 #### Streamlit Dashboard
 
