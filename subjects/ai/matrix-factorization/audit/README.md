@@ -11,6 +11,7 @@
 ###### Do the core files exist: `app.py`, `models/svd_model.py`, `models/pmf_model.py`, and `utils/recommendation.py`?
 
 ###### Do the main dependencies import without error?
+
 ```bash
 python -c "import numpy, pandas, scipy, streamlit, matplotlib"
 ```
@@ -54,19 +55,21 @@ python -c "import numpy, pandas, scipy, streamlit, matplotlib"
 ###### Is there a justification for when to stop training based on the learning curves?
 
 ###### Does `reports/model_metrics.json` exist with fields:
-  ```json
-  {
-    "SVD_RMSE": ...,
-    "PMF_RMSE": ...,
-    "PMF_vs_SVD_improvement_%": ...
-  }
-  ```
+
+```json
+{
+  "SVD_RMSE": ...,
+  "PMF_RMSE": ...,
+  "PMF_vs_SVD_improvement_%": ...
+}
+```
 
 ###### Are the following thresholds met?
-  * SVD RMSE ≤ 0.90
-  * PMF RMSE ≤ 0.85
-  * PMF improvement ≥ 5%
-  * Are the plots saved? `reports/rmse_comparison.png` and `reports/predicted_vs_actual.png`.
+
+- SVD RMSE ≤ 0.90
+- PMF RMSE ≤ 0.85
+- PMF improvement ≥ 5%
+- Are the plots saved? `reports/rmse_comparison.png` and `reports/predicted_vs_actual.png`.
 
 ##### Recommendation Generation
 
@@ -75,6 +78,7 @@ python -c "import numpy, pandas, scipy, streamlit, matplotlib"
 ###### Does the recommendation system return the top 10 movie recommendations for a given user?
 
 ###### Does `utils/recommendation.py` expose:
+
 ```python
 def generate_recommendations(user_id, model, top_n=10):
     ...
@@ -99,10 +103,11 @@ def generate_recommendations(user_id, model, top_n=10):
 ###### For the 2 users from the training set, is there an analysis of why the recommendations were accurate for one and less accurate for the other?
 
 ###### Are required visuals present in `reports/` with proper titles and labeled axes?
-  * `pmf_convergence.png`
-  * `rmse_comparison.png`
-  * `predicted_vs_actual.png`
-  * `user_comparison.png`
+
+- `pmf_convergence.png`
+- `rmse_comparison.png`
+- `predicted_vs_actual.png`
+- `user_comparison.png`
 
 ##### Streamlit Dashboard
 
