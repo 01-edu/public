@@ -2,10 +2,31 @@
 
 ### Instructions
 
-Create a script `greatest-of-all.sh` which will ask you to input 10 numbers and then it will check what was the biggest number given. You must ask for the number using the string "Enter a number: " and then use the string "The largest number is: " to print the output like in the example below.
+Create a script named `greatest-of-all.sh` that prompts the user to enter **10 numbers** and determines the largest among them.
 
-- Only positive numbers up to "10000" will be tested.
-- If the given number is greater than "10000" you must print the error message "ERROR: The number entered is too large" and if its not a number or it is a negative number, print the error "ERROR: Invalid input only positive numerical characters are allowed". When either of these errors occurs, the script will print the error message, exit with an exit code of `1`, and will not continue to execute the next line.
+- Each input must be requested using the prompt:
+  `"Enter a number: "`
+
+- Once all inputs are collected, display the result using:
+  `"The largest number is: "`
+
+#### Constraints
+
+- Only positive numbers up to **10000** will be tested.
+
+- If a number greater than **10000** is entered, the script must display:
+  `"ERROR: The number entered is too large"`
+
+- If the input is not a valid number, or if it is negative, the script must display:
+  `"ERROR: Invalid input only positive numerical characters are allowed"`
+
+#### Behavior on Error
+
+When an error occurs:
+
+1. Print the corresponding error message.
+2. Exit immediately with an exit code of `1`.
+3. Do not continue executing subsequent lines of the script.
 
 ### Usage
 

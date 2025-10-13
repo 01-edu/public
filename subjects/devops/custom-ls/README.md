@@ -17,7 +17,7 @@ Expected behavior:
 ```console
 $ custom-ls
 error: command not found: custom-ls
-$ ./custom-ls.sh
+$ source ./custom-ls.sh
 $ custom-ls .
 total ...
 7784 -rw-r--r--  1 <user>  3983261 Dec 17 22:02 .file1 # just an example

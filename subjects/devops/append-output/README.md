@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Create a file `append-output.sh` that will get the output of a file and parse it, and then write it to a file with a specific format using a single command.
+Create a shell script named `append-output.sh` that processes the content of an existing file and writes the result into another file using a single command.
 
-Get the content of the file `songs.txt`, parse it with the `grep` command to filter the file in order to get all the songs from the artist whose names start with `J`, and write the output to the existing file `results.txt`, check the example below:
+Specifically, read the contents of the file `songs.txt`, filter them with the `grep` command to select only the songs by artists whose names begin with the letter **J**, and append the filtered output to the file `results.txt`.
 
 ### Usage
 

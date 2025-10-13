@@ -4,7 +4,7 @@
 
 Often in schools we are asked to copy hundreds of sentences in order to better remember not to do something, this punishment is very old and quite boring!
 
-Hopefully we now have Python that can do the job for us.
+Thankfully we now have Python that can do the job for us.
 In order to do so create a file `punishment.py` which will contain a function `do_punishment` having 3 arguments:
 
 - `first_part`: which will be a string.

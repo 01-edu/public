@@ -4,18 +4,15 @@
 
 In this exercise, you will make a script `division.sh` that will take two arguments from the command line, and divide the first one by the second one.
 
-If there is a remainder after doing the division, it should be ignored.
+The division should return only the integer quotient (whole number part), ignoring any decimal remainder.
 
 You will need to handle what to do when the inputs are wrong:
 
 - If the divisor is `0` you will need to output `Error: division by zero is not allowed`.
-
-- If the arguments are not numbers, the output should be `Error: both arguments must be numeric`.
-
+- If the arguments are not integers, the output should be `Error: both arguments must be integers`.
 - In the case where the number of arguments are not enough, the output should be `Error: two numbers must be provided`.
 
-Your script should handle very large numbers as well.
-
+Your script should handle very large integers as well.
 For this exercise the use of the `test` command is not allowed.
 
 ### Usage
@@ -23,6 +20,10 @@ For this exercise the use of the `test` command is not allowed.
 ```console
 $ ./divide.sh 4 1
 4
+$ ./divide.sh 7 3
+2
+$ ./divide.sh 100 7
+14
 $
 ```
 
@@ -35,9 +36,9 @@ You can use the following to help you solve this exercise:
 ```bash
 #!/usr/bin/env bash
 if [[ 1 > 2 ]]; then
-    echo "true"
+echo "true"
 else
-    echo "false"
+echo "false"
 fi
 ```
 
@@ -52,14 +53,14 @@ It is possible to combine several conditions with the **AND** (`&&`) and **OR** 
 
 ```bash
 if [[ 1 > 2 ]] || [[ 1 == 1 ]]; then
-    echo "true"
+echo "true"
 else
-    echo "false"
+echo "false"
 fi
 if [[ 1 > 2 ]] && [[ 1 == 1 ]]; then
-    echo "true"
+echo "true"
 else
-    echo "false"
+echo "false"
 fi
 ```
 
