@@ -2,16 +2,16 @@
 
 ### Instructions
 
-In this exercise you will make a script `check-user.sh` that will take 2 arguments and return information about the selected user, always ended by a new line.
+In this exercise, you will create a script called `check-user.sh` that accepts two arguments and returns information about a specified user. Each output should end with a newline.
 
-The first argument will be a flag defining the behavior of the script:
+The **first argument** is a flag that defines the script’s behavior:
 
-- `-e`: check if the user exists, returns `yes` or `no` appropriately.
-- `-i`: returns information about the user.
+- `-e`: Check if the user exists, returning `yes` or `no` accordingly.
+- `-i`: Display information about the user.
 
-The second argument will be the name of the checked user.
+The **second argument** is the username to be checked.
 
-> The information about the user will be formatted in the same way it appears in `/etc/passwd`.
+The user information must be displayed in the same format as it appears in `/etc/passwd`.
 
 ### Usage
 

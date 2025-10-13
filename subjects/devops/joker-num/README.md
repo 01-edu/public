@@ -8,7 +8,7 @@ To achieve this you will have to use a `for` loop.
 
 When you're trying to guess the secret number with a valid input, your program must output some tips as follow:
 
-- First you will need to prompt a message so that the player knows what he must do: `"Enter your guess (<tries_left> tries left)`.
+- First you will need to prompt a message so that the player knows what he must do: `"Enter your guess (<tries_left> tries left)"`.
 - If the number is bigger than the secret one: `Go down`.
 - If the number si smaller than the secret one: `Go up`.
 - If the number is the correct one: `Congratulations, you found the number in <number_of_tries> moves!`.
@@ -37,9 +37,9 @@ $
 ### Error handling
 
 - If the player enters the wrong number of arguments or the number is not between `1` and `100`, the program will print `Error: wrong argument` and exit with `1`.
-- If the player is writing something that is not a valid number as an answer, the program will ask again to enter a new a guess and the number of tries won't be decremented.
+- If the player is writing something that is not a valid number as an answer, the program will ask again to enter a new guess and the number of tries won't be decremented.
 
-Here an example for the last scenario:
+Here's an example for the last scenario:
 
 ```console
 $ ./joker-num.sh 100

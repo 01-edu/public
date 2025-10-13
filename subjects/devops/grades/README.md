@@ -2,11 +2,11 @@
 
 ### Instructions
 
-Create a script `grades.sh` which will ask, as an argument, for the user to give a specific number of students in order to evaluate them. After the number is set, the script will ask you to introduce the "names" and "grades" of the persons you wish to evaluate.
+Create a script called `grades.sh` that takes, as an argument, the number of students to be evaluated. Once the number is specified, the script should prompt you to enter each student’s **name** and **grade**.
 
-The grades will have a range between 0 and 100 and will be numeric values only.
+Grades must be numeric values only, within the range of 0 to 100.
 
-According to each student grade you will have to return the following:
+For each student, the script should return an evaluation based on their grade as follows:
 
 - If the student grade is anything equal or greater than 90 you will return the string `"<name>: You did an excellent job!"`:
 

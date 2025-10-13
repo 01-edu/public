@@ -15,7 +15,6 @@ Create a script `master-the-ls.sh`, that will do the following:
 Here are some Commands that can help you:
 
 - `tr`. Translate characters: run replacements based on single characters and character sets.
-
   - Replace all occurrences of a character in a file, and print the result:
     `tr {{find_character}} {{replace_character}} < {{filename}}`
 

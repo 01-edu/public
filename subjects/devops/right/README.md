@@ -2,9 +2,7 @@
 
 ### Instructions
 
-Create a file `right.sh` that will get the output of a file and parse it, and then write it to a file with a specific format using a single command.
-
-Get the output of the `ls` command, parse it with the `grep` command to filter for files without a `.txt` extension, and write the output to a file called `filtered_files.txt`, check the example below:
+Create a file `right.sh` where you write a shell command that lists all the files in the current directory except those with the `.txt` extension, and save the resulting list into a file named `filtered_files.txt`. Check the example below:
 
 ### Usage
 

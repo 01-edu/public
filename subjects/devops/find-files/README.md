@@ -6,8 +6,7 @@
 
 Create a file `find-files.sh`, which will look for and show, in the current directory and its sub-folders:
 
-everything (Regular file, Directory file, Link file,...) that starts with an `a` and,
-all Regular files ending with a `z`
+Any entry that starts with an `a` and regular files ending with a `z`
 
 - You can use this for testing: https://assets.01-edu.org/devops-branch/find-files-example.zip
 

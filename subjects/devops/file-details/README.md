@@ -24,13 +24,10 @@ dr-------x 2023-02-07 15:34 A
 ### Hints
 
 - `ls -l --time-style=TIME_STYLE`
-
   - Time conversion specifiers you need to know:
-
     - `%R`, 24-hour hour and minute. Same as ‘%H:%M’.
 
   - Date conversion specifiers you need to know:
-
     - `%F`, full date in ISO 8601 format; like ‘%+4Y-%m-%d’ except that any flags or field width override the ‘+’ and (after subtracting 6) the ‘4’. This is a good choice for a date format, as it is standard and is easy to sort in the usual case where years are in the range 0000…9999.
 
 - You can use `sed` to remove the first line of the output.

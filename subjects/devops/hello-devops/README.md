@@ -9,7 +9,7 @@
 
 #### 1- get-ready
 
-Create in your [Gitea](<https://((DOMAIN))/git>) account the repository named `((ROOT))`.
+Create in your [Gitea](<https://((DOMAIN))/git/user/login>) account the repository named `((ROOT))`.
 
 This repository will be the folder where all the exercises must be uploaded.
 

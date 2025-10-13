@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Write a command line in a `skip-lines.sh` file that prints the result of a `ls -l` skipping 1 line out of 2, starting with the **first** one.
+Write a command line in a `skip-lines.sh` file that prints the result of a `ls -l` skipping every even line, starting with the **first** one.
 
 Example:
 
@@ -29,7 +29,6 @@ drwxr-xr-x  2 User User      4096 set 29 10:34 Pictures
 Here are some Commands that can help you:
 
 - `sed`. Edit text in a scriptable manner.
-
   - Print just a first line to stdout:
     `{{command}} | sed -n '1p'`
 
