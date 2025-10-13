@@ -15,7 +15,7 @@ $ ls -l ~/myBins # the binary
 01exec
 $ 01exec
 error: command not found: 01exec
-$ ./auto-exec-bin.sh
+$ source ./auto-exec-bin.sh
 $ 01exec
 Hello 01 Scripting Pool
 $ cd /{random-path} && 01exec

@@ -4,9 +4,7 @@
 
 Create a file `find-files-extension.sh`, which will look, from the current directory and its sub-folders for:
 
-all the files with `.txt` extension.
-
-That command will only show the name of the files without the extension `.txt`.
+Every file with a `.txt` extension and display only the file names.
 
 - You can use this for testing: https://assets.01-edu.org/devops-branch/find-files-extension-example.zip
 

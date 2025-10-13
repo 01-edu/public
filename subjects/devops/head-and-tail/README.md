@@ -4,7 +4,7 @@
 
 Create the script `head-and-tail.sh` which will show the first and last lines of the file `HeadTail.txt`
 
-- Where to look : https://assets.01-edu.org/devops-branch/HeadTail.txt
+- Where to look : https://((DOMAIN))/assets/devops-branch/HeadTail.txt
 
 - What to use : `curl` and `head` and `tail`
 
@@ -22,7 +22,7 @@ $
 With `curl` you can get the content of the file from the url:
 
 ```console
-$ curl https://assets.01-edu.org/devops-branch/HeadTail.txt
+$ curl https://((DOMAIN))/assets/devops-branch/HeadTail.txt
 <...>
 $
 ```

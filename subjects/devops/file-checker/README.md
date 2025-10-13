@@ -28,6 +28,8 @@ File is not writable
 File is not executable
 $ ls -l file.txt
 -r--r--r-- 1 user user 0 Jan 12 08:26 file.txt
+$ ./file-checker.sh notExistingFile
+File does not exist
 $ ./file-checker.sh
 Error: No file provided
 $
