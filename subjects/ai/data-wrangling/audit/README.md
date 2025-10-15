@@ -8,7 +8,7 @@
 
 ###### Does it print `Python 3.x`? x >= 9
 
-###### Does `import jupyter`, `import numpy` and `import pandas` run without any error?
+###### ###### Does `import jupyter`, `import numpy` and `import pandas`, `matplotlib`, `tabulate` run without any error?
 
 ---
 
@@ -24,6 +24,8 @@
     |  1 | b        |        2 |
     |  2 | c        |        1 |
     |  3 | d        |        2 |
+
+###### Check that the index is RangeIndex(start=0, stop=4, step=1) and no manual index assignment
 
 ---
 
@@ -74,6 +76,8 @@
 | (Timestamp('2021-01-01 00:00:00', freq='B'), 'DAI')  | -0.603453 | -2.06141 |      -0.969064 |     1.49817 |  0.730055 |
 
 ###### For question 2, are the numbers that are missing in the DataFrame equal to 0 and `filled_df.sum().sum() == merged_df.sum().sum()` gives: `True`?
+
+###### Check that the resulting index is still MultiIndex and no reset_index was used.
 
 ---
 
