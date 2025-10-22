@@ -20,10 +20,10 @@ In this project, you have to implement the ray tracer method in order to be able
 
 When building your ray tracer, you have to take some points into consideration:
 
-- you need to be able to create at least 4 simple objects: a sphere, a cube, a flat plane and a cylinder.
-- your program must be able to change an object's location before creating the image. (Example: render a sphere with its center on the point (1,1,1)).
-- you have to be able to look at the same scene from different angles by moving the camera/point of view.
-- you also have to implement simple light management, which includes: different brightness and shadows.
+- You need to be able to create at least 4 simple objects: a sphere, a cube, a flat plane and a cylinder.
+- Your program must be able to change an object's location before creating the image. (Example: render a sphere with its center on the point (1,1,1)).
+- You have to be able to look at the same scene from different angles by moving the camera/point of view.
+- You also have to implement simple light management, which includes: different brightness and shadows.
 
 As your ray tracer will probably be a bit slow to render high resolution scenes, you should make 4 .ppm images for the auditors to evaluate. The scenarios of these 4 images that you have to create consist of:
 
@@ -44,9 +44,9 @@ You will have to create a [markdown](https://www.markdownguide.org/getting-start
 
 - Explanation on the features of your ray tracer
 - Code examples and explanations on how to:
-  - create an instance of each object (a sphere, a cube, a flat plane and a cylinder)
-  - change the brightness
-  - change the camera position and angle
+  - Create an instance of each object (a sphere, a cube, a flat plane and a cylinder)
+  - Change the brightness
+  - Change the camera position and angle
 
 ### Instructions
 
