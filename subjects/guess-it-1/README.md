@@ -26,7 +26,7 @@ Each of the numbers will be your standard input and the purpose of your program 
 This range should have a space separating the lower limit from the upper one like in the example:
 
 ```console
->$ ./your_program
+$ ./your_program
 189 --> the standard input
 120 200    --> the range for the next input, in this case for the number 113
 113 --> the standard input
