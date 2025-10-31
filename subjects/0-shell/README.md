@@ -32,7 +32,7 @@ You must implement the following commands **from scratch**, using system-level R
 - `cd`
 - `ls` (supporting `-l`, `-a`, `-F`)
 - `pwd`
-- `cat`
+- `cat` (including no-argument mode)
 - `cp`
 - `rm` (supporting `-r`)
 - `mv`
