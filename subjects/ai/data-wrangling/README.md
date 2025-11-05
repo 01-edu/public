@@ -48,13 +48,13 @@ We suggest using the most recent one.
 
 The goal of this exercise is to set up the Python work environment with the required libraries.
 
-**Note:** For each quest, your first exercice will be to set up the virtual environment with the required libraries.
+**Note:** For each quest, your first exercise will be to set up the virtual environment with the required libraries.
 
 I recommend to use:
 
 - the **last stable versions** of Python.
-- the virtual environment you're the most confortable with. `virtualenv` and `conda` are the most used in Data Science.
-- one of the most recents versions of the libraries required
+- the virtual environment you're the most comfortable with. `virtualenv` and `conda` are the most used in Data Science.
+- one of the most recent versions of the libraries required
 
 1. Create a virtual environment named `ex00`, with a version of Python >= `3.9`, with the following libraries: `pandas`, `numpy` ,`tabulate` and `jupyter`.
 
@@ -146,7 +146,7 @@ Use the code below to generate the DataFrames. `market_data` contains fake marke
    #generate tickers
    tickers = ['AAPL', 'FB', 'GE', 'AMZN', 'DAI']
 
-   #create indexs
+   # create indexes
    index_alt = pd.MultiIndex.from_product([all_dates, tickers], names=['Date', 'Ticker'])
    index = pd.MultiIndex.from_product([business_dates, tickers], names=['Date', 'Ticker'])
 
