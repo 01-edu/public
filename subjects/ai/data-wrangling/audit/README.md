@@ -8,7 +8,7 @@
 
 ###### Does it print `Python 3.x`? x >= 9
 
-###### ###### Does `import jupyter`, `import numpy` and `import pandas`, `matplotlib`, `tabulate` run without any error?
+###### Does `import jupyter`, `import numpy` and `import pandas`, `matplotlib`, `tabulate` run without any error?
 
 ---
 
