@@ -49,7 +49,7 @@ $ javac *.java -d build
 $ java -cp build ExerciseRunner
 {B=[Bonjour, bonsoir], L=[le], M=[monde !]}
 {0=Optional[424], 1=Optional[97], 2=Optional[48354], 3=Optional[5843]}
-##{Bordeaux # Hello # how are you ? # where do you live ?}
+{Bordeaux # Hello # how are you ? # where do you live ?}
 $
 ```
 
