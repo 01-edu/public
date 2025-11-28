@@ -23,14 +23,14 @@ class RacletteDecorator {
     +getIngredients() String
 }
 class WithPickles {
-    -Raclette raclette
-    +RacletteDecorator(Raclette raclette)
+    -Raclette decoratedRaclette
+    +WithPickles(Raclette raclette)
     +getCalories() int
     +getIngredients() String
 }
 class WithColdMeats {
     -Raclette decoratedRaclette
-    +RacletteDecorator(Raclette raclette)
+    +WithColdMeats(Raclette raclette)
     +getCalories() int
     +getIngredients() String
 }
