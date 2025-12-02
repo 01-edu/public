@@ -8,9 +8,10 @@ In a file named `UnitConverter.java`, write a function `convert` that returns th
 
 - Fahrenheit to Celsius: (F - 32) \* 5/9
 - Celsius to Fahrenheit: C \* 9/5 + 32
-- Kilometers to Miles: K \* 0.621371
+- Kilometers to Miles: Km \* 0.621371
 - Miles to Kilometers: M \* 1.60934
 - Pounds to Kilograms: P \* 0.45359237
+- Kilograms to Pounds: Kg \* 2.204622622
 
 ### Expected Functions
 
