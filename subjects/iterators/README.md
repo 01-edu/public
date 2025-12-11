@@ -11,8 +11,6 @@ Take any positive integer `n`.
 
 Repeat the process indefinitely. The conjecture states that no matter which number you start with, you will always reach 1 eventually.
 
-But sometimes the number grow significantly before it reaches 1. This can lead to an integer overflow and makes the algorithm unsolvable within the range of a number in u64. You will not have to worry about that in this exercise.
-
 Given a number `n`, return the number of steps required to reach 1.
 
 Examples:
@@ -27,6 +25,8 @@ Starting with n = 16, the steps would be as follows:
 
 Resulting in 4 steps. So for input n = 16, the return value would be 4.
 
+Depending on the input, the number can grow significantly before it reaches 1. This can lead to an integer overflow and makes the algorithm potentially unsolvable within the range of a u64. We should handle overflow by returning `None`. If the input is invalid, we will also return `None`. We will only consider valid input any positive, non-zero integer.
+
 ### Notions
 
 - [Trait Iterator](https://doc.rust-lang.org/std/iter/trait.Iterator.html)
@@ -35,18 +35,9 @@ Resulting in 4 steps. So for input n = 16, the return value would be 4.
 ### Expected functions
 
 ```rust
-#[derive(Copy, Clone)]
-pub struct Collatz {
-    pub v: u64,
+pub fn collatz(n: u64) -> Option<usize> {
+    todo!()
 }
-
-impl Iterator for Collatz {}
-
-impl Collatz {
-	pub fn new(n: u64) -> Self {}
-}
-
-pub fn collatz(n: u64) -> usize {}
 ```
 
 ### Usage
@@ -71,12 +62,12 @@ And its output:
 
 ```console
 $ cargo run
-0
-0
-2
-5
-8
-16
-9
+None
+Some(0)
+Some(2)
+Some(5)
+Some(8)
+Some(16)
+Some(9)
 $
 ```
