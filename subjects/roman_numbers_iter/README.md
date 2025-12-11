@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Implement the `Iterator` trait for the `RomanNumber` type. You should use the code from the previous exercise roman_numbers.
+Implement the `Iterator` trait for the `RomanNumber` type. You should use the code from the previous exercise `roman_numbers`.
 
 ### Notions
 
@@ -21,13 +21,13 @@ impl Iterator for RomanNumber {}
 Here is a program to test your function.
 
 ```rust
-use roman_numbers_iterator::RomanNumber;
+use roman_numbers_iter::RomanNumber;
 
 fn main() {
-	let mut number = RomanNumber::from(15);
+    let mut number = RomanNumber::from(15);
 
-	println!("{:?}", number);
-	println!("{:?}", number.next());
+    println!("{:?}", number);
+    println!("{:?}", number.next());
 }
 ```
 
