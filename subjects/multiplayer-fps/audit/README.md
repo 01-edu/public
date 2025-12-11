@@ -34,9 +34,9 @@
 
 ##### Try to connect to the server from another computer.
 
-###### Are you able to connect to the server?
+###### Are you able to connect to the server? If you're forbidden from communicating between machines, this requirement may be fulfilled by demonstrating that the server accepts arbitrary IPs and that multiple clients can connect via `localhost`.
 
-##### Connect simultaneously with as many people as possible and play the game for at least 3 minutes.
+##### Connect simultaneously with as many people as possible and play the game for at least 3 minutes. Once again, if connecting multiple machines is not possible, running multiple local clients is also accepted.
 
 ###### Did the frame rate stay over 50 fps?
 
