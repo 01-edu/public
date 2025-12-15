@@ -193,8 +193,8 @@ The goal of this exercise is to learn to access values of n-dimensional arrays e
 3. Using **broadcasting** create an output matrix based on the following two arrays:
 
    ```python
-   array_1 = np.array([1,2,3,4,5], dytpe=np.int8)
-   array_2 = np.array([1,2,3], dytpe=np.int8)
+   array_1 = np.array([1,2,3,4,5], dtype=np.int8)
+   array_2 = np.array([1,2,3], dtype=np.int8)
    ```
 
 Expected output:
