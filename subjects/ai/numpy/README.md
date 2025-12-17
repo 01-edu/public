@@ -52,7 +52,6 @@ We suggest utilizing:
 - [jupyter](https://jupyter.org/)
 - [numpy](https://numpy.org/)
 - [Jupyter Notebook Shortcuts](https://towardsdatascience.com/jypyter-notebook-shortcuts-bf0101a98330)
-- [Why You Should be Using Jupyter Notebooks](https://odsc.medium.com/why-you-should-be-using-jupyter-notebooks-ea2e568c59f2)
 
 ---
 
