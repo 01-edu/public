@@ -22,7 +22,7 @@
 
 ##### Try opening two different browsers and login into one of them. Refresh the other browser.
 
-###### Can you confirm that the browser non logged remains unregistered?
+###### Can you confirm that the refreshed browser remained logged out?
 
 ##### Try opening two different browsers and login into both of them. Refresh both browsers.
 
@@ -90,7 +90,7 @@ cc8f5dcf760f        <name of the image>    "./server"               6 seconds ag
 
 ##### Enter the forum as a non-registered user and try to like a comment.
 
-###### Are you forbidden from liking a post?
+###### Are you forbidden from liking a comment?
 
 ##### Enter the forum as a non-registered user and try to dislike a comment.
 
