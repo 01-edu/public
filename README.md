@@ -7,7 +7,7 @@ Some feedback relates to the **ambiguity of the subject**-**lack of precision**,
 
 Do not hesitate to contribute by making a PR in the **content-update branch**.
 
-Thank You :smile:
+Thank You :smile:.
 # Content Team
 
 ![](https://www.01talent.com/wp-content/uploads/2021/10/01Talent-Vert-Blanc.png.webp)
