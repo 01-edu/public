@@ -64,7 +64,7 @@ We recommend to use:
 
 ### Exercise 1: Regression - Optimize
 
-The goal of this exercise is to learn to set up the optimization for a regression neural network. There's no code to run in that exercise. In W2D2E3, we implemented a neural network designed for regression. We will be using this neural network:
+The goal of this exercise is to learn to set up the optimization for a regression neural network. There's no code to run in that exercise. In W3D2E3 (keras), we implemented a neural network designed for regression. We will be using this neural network:
 
     ```
     model = keras.Sequential()
