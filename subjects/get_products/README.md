@@ -2,22 +2,24 @@
 
 ### Instructions
 
-Create a function named `get_products` that takes a vector of integers, and returns a vector of the products of each index.
+Create a function named `get_products` that takes an array of integers, and returns an array of the products of each other index.
 
-You'll need to return the product of every index
-except the current one.
+For each element, you'll need to return the product of every other index.
+
+If an array of one element is given, the same element should always become `1`.
 
 ### Example:
+
 For `[1,2,3,4]`, we get:
 
-- for the number `1` we get `2*3*4 = 24`.
-- for the number `3` we get `1*2*4 = 8`.
+- The element `1` becomes `2*3*4 = 24`.
+- The element `3` becomes `1*2*4 = 8`.
 
 ### Expected functions
 
 ```rust
-pub fn get_products(arr: Vec<usize>) -> Vec<usize> {
-
+pub fn get_products(arr: [usize; _]) -> [usize; _] {
+    todo!()
 }
 ```
 
@@ -29,8 +31,7 @@ Here is a program to test your function.
 use get_products::get_products;
 
 fn main() {
-    let arr: Vec<usize> = vec![1, 7, 3, 4];
-    let output = get_products(arr);
+    let output = get_products([1, 7, 3, 4]);
     println!("{:?}", output);
 }
 ```

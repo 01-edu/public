@@ -14,7 +14,7 @@ The type of the arguments are missing. Use the example `main` function to determ
 
 ```rust
 pub fn twice<T>(F: _) -> _{
-
+    todo!()
 }
 ```
 
