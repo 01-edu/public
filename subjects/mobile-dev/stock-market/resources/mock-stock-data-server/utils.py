@@ -4,11 +4,12 @@ from datetime import datetime
 import pandas as pd
 
 
-def load_data(directory_path='./sample-stocks/'):
+def load_data(directory_path="./sample-stocks/"):
     historical_data = {}
 
-    file_list = [filename for filename in os.listdir(
-        directory_path) if filename.endswith(".csv")]
+    file_list = [
+        filename for filename in os.listdir(directory_path) if filename.endswith(".csv")
+    ]
     for filename in file_list:
         symbol = filename.replace(".csv", "")
         file_path = os.path.join(directory_path, filename)
@@ -29,10 +30,8 @@ def get_historical_data(df, start, end, start_time):
         if query_end_dt.date() > today:
             query_end_dt = datetime.fromtimestamp(start_time)
 
-        df['datetime'] = df.Date + delta_today_last_entry
-        return (df.loc[
-              (df.datetime >= query_start_dt) &
-              (df.datetime <= query_end_dt)])
+        df["datetime"] = df.Date + delta_today_last_entry
+        return df.loc[(df.datetime >= query_start_dt) & (df.datetime <= query_end_dt)]
     except Exception as e:
         raise Exception(str(e))
 
@@ -40,7 +39,7 @@ def get_historical_data(df, start, end, start_time):
 if __name__ == "__main__":
 
     result = load_data()
-    print(f'keys: {result.keys()}')
+    print(f"keys: {result.keys()}")
     now = datetime.now()
 
     df = result["AE"]
