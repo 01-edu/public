@@ -25,6 +25,6 @@ gsettings set org.gnome.desktop.session idle-delay 0
 gsettings set org.gnome.desktop.screensaver lock-enabled false
 
 sudo -E ./configure.sh
-dconf load / < dconfig.txt
+dconf load / <dconfig.txt
 rm -rf "$repo_dir"
 reboot

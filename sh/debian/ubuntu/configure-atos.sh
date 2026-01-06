@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#Modified version for atos learners machines in the DevOps Cloud Branch 
+#Modified version for atos learners machines in the DevOps Cloud Branch
 
 # The value of this parameter is expanded like PS1 and the expanded value is the
 # prompt printed before the command line is echoed when the -x option is set
@@ -54,14 +54,14 @@ apt-get -yf install
 # Configure Terminal
 
 # Makes bash case-insensitive
-cat <<EOF >> /etc/inputrc
+cat <<EOF >>/etc/inputrc
 set completion-ignore-case
 set show-all-if-ambiguous On
 set show-all-if-unmodified On
 EOF
 
 # Enhance Linux prompt
-cat <<EOF > /etc/issue
+cat <<EOF >/etc/issue
 Kernel build: \v
 Kernel package: \r
 Date: \d \t
@@ -72,7 +72,7 @@ EOF
 # Enable Bash completion
 apt-get --no-install-recommends -y install bash-completion
 
-cat <<EOF >> /etc/bash.bashrc
+cat <<EOF >>/etc/bash.bashrc
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
@@ -83,8 +83,8 @@ fi
 EOF
 
 # shellcheck disable=2016
-sudo -i echo 'export PATH=$PATH:/usr/local/go/bin' >> /etc/profile
-echo 'export PATH=\$PATH:/usr/local/go/bin:\$HOME/go/bin:$PATH' >> ~/.bashrc
+sudo -i echo 'export PATH=$PATH:/usr/local/go/bin' >>/etc/profile
+echo 'export PATH=\$PATH:/usr/local/go/bin:\$HOME/go/bin:$PATH' >>~/.bashrc
 
 # Install Node.js
 
@@ -100,7 +100,7 @@ npm install -g fx
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add -
 apt-get --no-install-recommends install -y apt-transport-https
 
-cat <<EOF > /etc/apt/sources.list.d/sublime-text.list
+cat <<EOF >/etc/apt/sources.list.d/sublime-text.list
 deb https://download.sublimetext.com/ apt/stable/
 EOF
 
@@ -116,39 +116,38 @@ rm vscode.deb
 # Install VSCodium
 
 wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | apt-key add -
-echo 'deb https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs/ vscodium main' >> /etc/apt/sources.list.d/vscodium.list
+echo 'deb https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs/ vscodium main' >>/etc/apt/sources.list.d/vscodium.list
 
 apt-get --no-install-recommends update
 apt-get --no-install-recommends install -y codium
 
 # Set-up all users
-for dir in $(ls -1d /home/* 2>/dev/null ||:)
-do
+for dir in $(ls -1d /home/* 2>/dev/null || :); do
 	# Disable most of the telemetry and auto-updates
 	mkdir -p "$dir/.config/Code/User"
 	mkdir -p "$dir/.config/VSCodium/User"
 	cat <<-'EOF' | tee \
 		"$dir/.config/Code/User/settings.json" \
 		"$dir/.config/VSCodium/User/settings.json"
-	{
-	    "extensions.autoCheckUpdates": false,
-	    "extensions.autoUpdate": false,
-	    "json.schemaDownload.enable": false,
-	    "npm.fetchOnlinePackageInfo": false,
-	    "settingsSync.keybindingsPerPlatform": false,
-	    "telemetry.enableCrashReporter": false,
-	    "telemetry.enableTelemetry": false,
-	    "update.enableWindowsBackgroundUpdates": false,
-	    "update.mode": "none",
-	    "update.showReleaseNotes": false,
-	    "workbench.enableExperiments": false,
-	    "workbench.settings.enableNaturalLanguageSearch": false
-	}
-	EOF
+			{
+			    "extensions.autoCheckUpdates": false,
+			    "extensions.autoUpdate": false,
+			    "json.schemaDownload.enable": false,
+			    "npm.fetchOnlinePackageInfo": false,
+			    "settingsSync.keybindingsPerPlatform": false,
+			    "telemetry.enableCrashReporter": false,
+			    "telemetry.enableTelemetry": false,
+			    "update.enableWindowsBackgroundUpdates": false,
+			    "update.mode": "none",
+			    "update.showReleaseNotes": false,
+			    "workbench.enableExperiments": false,
+			    "workbench.settings.enableNaturalLanguageSearch": false
+			}
+		EOF
 
 	# Fix rights
 	usr=$(echo "$dir" | rev | cut -d/ -f1 | rev)
-	chown -R "$usr:$usr" "$dir" ||:
+	chown -R "$usr:$usr" "$dir" || :
 done
 
 # Install LibreOffice

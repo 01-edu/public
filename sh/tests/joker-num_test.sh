@@ -5,22 +5,21 @@ IFS='
 script_dirS=$(cd -P "$(dirname "$BASH_SOURCE")" &>/dev/null && pwd)
 
 challenge() {
-    args=${@:1:$#-1}
-    input="${@: -1}"
+	args=${@:1:$#-1}
+	input="${@: -1}"
 
-    submitted=$(
-        bash ./student/joker-num.sh $args <<EOF
+	submitted=$(
+		bash ./student/joker-num.sh $args <<EOF
 $input
 EOF
-    )
-    expected=$(
-        bash ./solutions/joker-num.sh $args <<EOF
+	)
+	expected=$(
+		bash ./solutions/joker-num.sh $args <<EOF
 $input
 EOF
-    )
-    diff <(echo "$submitted") <(echo "$expected")
-    if [ $? != 0 ]
-	then
+	)
+	diff <(echo "$submitted") <(echo "$expected")
+	if [ $? != 0 ]; then
 		exit 1
 	fi
 }

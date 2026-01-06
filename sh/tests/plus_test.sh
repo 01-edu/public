@@ -7,10 +7,10 @@ IFS='
 script_dirS=$(cd -P "$(dirname "$BASH_SOURCE")" &>/dev/null && pwd)
 
 challenge() {
-    submitted=$(bash "$script_dirS"/student/plus.sh $1 $2)
-    expected=$(bash "$script_dirS"/solutions/plus.sh $1 $2)
+	submitted=$(bash "$script_dirS"/student/plus.sh $1 $2)
+	expected=$(bash "$script_dirS"/solutions/plus.sh $1 $2)
 
-    diff <(echo "$submitted") <(echo "$expected")
+	diff <(echo "$submitted") <(echo "$expected")
 }
 
 challenge "1" "2"

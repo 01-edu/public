@@ -11,11 +11,11 @@ check() {
 	echo " $@"
 }
 
-check go        '(see : https://golang.org/dl & https://golang.org/doc/install)'
-check gofmt     '(see : https://golang.org/dl & https://golang.org/doc/install)'
+check go '(see : https://golang.org/dl & https://golang.org/doc/install)'
+check gofmt '(see : https://golang.org/dl & https://golang.org/doc/install)'
 check goimports '(run : go get golang.org/x/tools/cmd/goimports)'
-check git       '(see : https://git-scm.com/downloads)'
-check jq        '(see : https://stedolan.github.io/jq/download)'
+check git '(see : https://git-scm.com/downloads)'
+check jq '(see : https://stedolan.github.io/jq/download)'
 check sed
 check tar
 check find

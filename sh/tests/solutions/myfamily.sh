@@ -6,4 +6,4 @@ IFS='
 '
 
 curl --compressed --silent --show-error --max-time 10 https://$DOMAIN/assets/superhero/all.json |
-    jq ".[] | select(.id == $HERO_ID)" | grep relatives | cut -d'"' -f4
+	jq ".[] | select(.id == $HERO_ID)" | grep relatives | cut -d'"' -f4

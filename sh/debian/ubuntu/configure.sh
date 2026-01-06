@@ -54,14 +54,14 @@ apt-get -yf install
 # Configure Terminal
 
 # Makes bash case-insensitive
-cat <<EOF >> /etc/inputrc
+cat <<EOF >>/etc/inputrc
 set completion-ignore-case
 set show-all-if-ambiguous On
 set show-all-if-unmodified On
 EOF
 
 # Enhance Linux prompt
-cat <<EOF > /etc/issue
+cat <<EOF >/etc/issue
 Kernel build: \v
 Kernel package: \r
 Date: \d \t
@@ -73,7 +73,7 @@ EOF
 # Enable Bash completion
 apt-get --no-install-recommends -y install bash-completion
 
-cat <<EOF >> /etc/bash.bashrc
+cat <<EOF >>/etc/bash.bashrc
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
@@ -84,33 +84,32 @@ fi
 EOF
 
 # Set-up all users
-for dir in $(ls -1d /root /home/* 2>/dev/null ||:)
-do
+for dir in $(ls -1d /root /home/* 2>/dev/null || :); do
 	# Hide login informations
 	touch "$dir/.hushlogin"
 
 	# Add convenient aliases & behaviors
-	cat <<-'EOF'>> "$dir/.bashrc"
-	export LS_OPTIONS="--color=auto"
-	eval "`dircolors`"
+	cat <<-'EOF' >>"$dir/.bashrc"
+		export LS_OPTIONS="--color=auto"
+		eval "`dircolors`"
 
-	alias df="df --si"
-	alias du="du --si"
-	alias free="free -h --si"
-	alias l="ls $LS_OPTIONS -al --si --group-directories-first"
-	alias less="less -i"
-	alias nano="nano -clDOST4"
-	alias pstree="pstree -palU"
+		alias df="df --si"
+		alias du="du --si"
+		alias free="free -h --si"
+		alias l="ls $LS_OPTIONS -al --si --group-directories-first"
+		alias less="less -i"
+		alias nano="nano -clDOST4"
+		alias pstree="pstree -palU"
 
-	HISTCONTROL=ignoreboth
-	HISTFILESIZE=
-	HISTSIZE=
-	HISTTIMEFORMAT="%F %T "
+		HISTCONTROL=ignoreboth
+		HISTFILESIZE=
+		HISTSIZE=
+		HISTTIMEFORMAT="%F %T "
 	EOF
 
 	# Fix rights
 	usr=$(echo "$dir" | rev | cut -d/ -f1 | rev)
-	chown -R "$usr:$usr" "$dir" ||:
+	chown -R "$usr:$usr" "$dir" || :
 done
 
 # Install OpenSSH
@@ -120,7 +119,7 @@ ssh_port=512
 # Install dependencies
 apt-get --no-install-recommends -y install ssh
 
-cat <<EOF >> /etc/ssh/sshd_config
+cat <<EOF >>/etc/ssh/sshd_config
 Port $ssh_port
 PasswordAuthentication no
 AllowUsers root
@@ -140,11 +139,11 @@ ufw --force enable
 
 sed -i -e 's/message=/message_null=/g' /etc/grub.d/10_linux
 
-cat <<EOF >> /etc/default/grub
+cat <<EOF >>/etc/default/grub
 GRUB_TIMEOUT=0
 GRUB_RECORDFAIL_TIMEOUT=0
 GRUB_TERMINAL=console
-GRUB_DISTRIBUTOR=``
+GRUB_DISTRIBUTOR=$()
 GRUB_DISABLE_OS_PROBER=true
 GRUB_DISABLE_SUBMENU=y
 EOF
@@ -158,23 +157,22 @@ wget https://dl.google.com/go/go1.16.3.linux-amd64.tar.gz
 tar -C /usr/local -xzf go1.16.3.linux-amd64.tar.gz
 rm go1.16.3.linux-amd64.tar.gz
 # shellcheck disable=2016
-echo 'export PATH=$PATH:/usr/local/go/bin' >> /etc/profile
+echo 'export PATH=$PATH:/usr/local/go/bin' >>/etc/profile
 
 # Set-up all users
-for dir in $(ls -1d /root /home/* 2>/dev/null ||:)
-do
+for dir in $(ls -1d /root /home/* 2>/dev/null || :); do
 	# Add convenient aliases & behaviors
-	cat <<-'EOF'>> "$dir/.bashrc"
-	GOPATH=$HOME/go
-	PATH=$PATH:$GOPATH/bin
-	alias gobuild='CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -trimpath -ldflags="-s -w"'
+	cat <<-'EOF' >>"$dir/.bashrc"
+		GOPATH=$HOME/go
+		PATH=$PATH:$GOPATH/bin
+		alias gobuild='CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -trimpath -ldflags="-s -w"'
 	EOF
 	# shellcheck disable=2016
-	echo 'GOPATH=$HOME/go' >> "$dir/.profile"
+	echo 'GOPATH=$HOME/go' >>"$dir/.profile"
 
 	# Fix rights
 	usr=$(echo "$dir" | rev | cut -d/ -f1 | rev)
-	chown -R "$usr:$usr" "$dir" ||:
+	chown -R "$usr:$usr" "$dir" || :
 done
 
 # Install Node.js
@@ -191,7 +189,7 @@ npm install -g fx
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add -
 apt-get --no-install-recommends install -y apt-transport-https
 
-cat <<EOF > /etc/apt/sources.list.d/sublime-text.list
+cat <<EOF >/etc/apt/sources.list.d/sublime-text.list
 deb https://download.sublimetext.com/ apt/stable/
 EOF
 
@@ -207,42 +205,41 @@ rm vscode.deb
 # Install VSCodium
 
 wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | apt-key add -
-echo 'deb https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs/ vscodium main' >> /etc/apt/sources.list.d/vscodium.list
+echo 'deb https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs/ vscodium main' >>/etc/apt/sources.list.d/vscodium.list
 
 apt-get --no-install-recommends update
 apt-get --no-install-recommends install -y codium
 
 # Set-up all users
-for dir in $(ls -1d /home/* 2>/dev/null ||:)
-do
+for dir in $(ls -1d /home/* 2>/dev/null || :); do
 	# Disable most of the telemetry and auto-updates
 	mkdir -p "$dir/.config/Code/User"
 	mkdir -p "$dir/.config/VSCodium/User"
 	cat <<-'EOF' | tee \
 		"$dir/.config/Code/User/settings.json" \
 		"$dir/.config/VSCodium/User/settings.json"
-	{
-	    "gopls": {
-	        "formatting.gofumpt": true
-	    },
-	    "extensions.autoCheckUpdates": false,
-	    "extensions.autoUpdate": false,
-	    "json.schemaDownload.enable": false,
-	    "npm.fetchOnlinePackageInfo": false,
-	    "settingsSync.keybindingsPerPlatform": false,
-	    "telemetry.enableCrashReporter": false,
-	    "telemetry.enableTelemetry": false,
-	    "update.enableWindowsBackgroundUpdates": false,
-	    "update.mode": "none",
-	    "update.showReleaseNotes": false,
-	    "workbench.enableExperiments": false,
-	    "workbench.settings.enableNaturalLanguageSearch": false
-	}
-	EOF
+			{
+			    "gopls": {
+			        "formatting.gofumpt": true
+			    },
+			    "extensions.autoCheckUpdates": false,
+			    "extensions.autoUpdate": false,
+			    "json.schemaDownload.enable": false,
+			    "npm.fetchOnlinePackageInfo": false,
+			    "settingsSync.keybindingsPerPlatform": false,
+			    "telemetry.enableCrashReporter": false,
+			    "telemetry.enableTelemetry": false,
+			    "update.enableWindowsBackgroundUpdates": false,
+			    "update.mode": "none",
+			    "update.showReleaseNotes": false,
+			    "workbench.enableExperiments": false,
+			    "workbench.settings.enableNaturalLanguageSearch": false
+			}
+		EOF
 
 	# Fix rights
 	usr=$(echo "$dir" | rev | cut -d/ -f1 | rev)
-	chown -R "$usr:$usr" "$dir" ||:
+	chown -R "$usr:$usr" "$dir" || :
 done
 
 # Install Go extension and tools
@@ -367,7 +364,7 @@ UserStopDelaySec=0
 EOF
 
 # Disable GTK hidden scroll bars
-echo GTK_OVERLAY_SCROLLING=0 >> /etc/environment
+echo GTK_OVERLAY_SCROLLING=0 >>/etc/environment
 
 # Reveal boot messages
 sed -i -e 's/TTYVTDisallocate=yes/TTYVTDisallocate=no/g' /etc/systemd/system/getty.target.wants/getty@tty1.service
@@ -392,15 +389,15 @@ update-grub
 sed -i -e 's/ errors=remount-ro/ noatime,nodelalloc,errors=remount-ro/g' /etc/fstab
 
 # Disable swapfile
-swapoff /swapfile ||:
+swapoff /swapfile || :
 rm -f /swapfile
 sed -i '/swapfile/d' /etc/fstab
 
 # Put temporary and cache folders as tmpfs
-echo 'tmpfs /tmp tmpfs defaults,noatime,rw,nosuid,nodev,mode=1777,size=1G 0 0' >> /etc/fstab
+echo 'tmpfs /tmp tmpfs defaults,noatime,rw,nosuid,nodev,mode=1777,size=1G 0 0' >>/etc/fstab
 
 # Install additional drivers
-ubuntu-drivers install ||:
+ubuntu-drivers install || :
 
 # Copy system files
 
@@ -456,7 +453,7 @@ if ! test -v PERSISTENT; then
 	# Add Docker persistent partition
 	partprobe
 	mkfs.ext4 -E lazy_journal_init,lazy_itable_init=0 /dev/disk/by-partlabel/01-docker
-	echo 'PARTLABEL=01-docker /var/lib/docker ext4 noatime,errors=remount-ro 0 2' >> /etc/fstab
+	echo 'PARTLABEL=01-docker /var/lib/docker ext4 noatime,errors=remount-ro 0 2' >>/etc/fstab
 	systemctl stop docker.service containerd.service
 	mv /var/lib/docker /tmp
 	mkdir /var/lib/docker
@@ -468,7 +465,7 @@ if ! test -v PERSISTENT; then
 	rm /usr/share/initramfs-tools/hooks/fsck
 
 	apt-get --no-install-recommends -y install overlayroot
-	echo 'overlayroot="device:dev=/dev/disk/by-partlabel/01-tmp-system,recurse=0"' >> /etc/overlayroot.conf
+	echo 'overlayroot="device:dev=/dev/disk/by-partlabel/01-tmp-system,recurse=0"' >>/etc/overlayroot.conf
 
 	update-initramfs -u
 
@@ -479,9 +476,9 @@ if ! test -v PERSISTENT; then
 	passwd -d student
 
 	# Remove tty
-	cat <<-"EOF">> /etc/systemd/logind.conf
-	NAutoVTs=0
-	ReserveVT=N
+	cat <<-"EOF" >>/etc/systemd/logind.conf
+		NAutoVTs=0
+		ReserveVT=N
 	EOF
 
 	# Remove user abilities
@@ -491,13 +488,13 @@ if ! test -v PERSISTENT; then
 	gpasswd -d student sambashare
 
 	# Give to rights to use format tool
-	echo 'student ALL = (root) NOPASSWD: /usr/local/bin/format' >> /etc/sudoers
+	echo 'student ALL = (root) NOPASSWD: /usr/local/bin/format' >>/etc/sudoers
 
 	cp /etc/shadow /etc/shadow-
 fi
 
 # Use Cloudflare DNS server
-echo 'supersede domain-name-servers 1.1.1.1;' >> /etc/dhcp/dhclient.conf
+echo 'supersede domain-name-servers 1.1.1.1;' >>/etc/dhcp/dhclient.conf
 
 # Clean system
 
@@ -510,12 +507,12 @@ apt-get install
 rm -rf /root/.local
 
 # Remove connection logs
-echo > /var/log/lastlog
-echo > /var/log/wtmp
-echo > /var/log/btmp
+echo >/var/log/lastlog
+echo >/var/log/wtmp
+echo >/var/log/btmp
 
 # Remove machine ID
-echo > /etc/machine-id
+echo >/etc/machine-id
 
 # Remove logs
 cd /var/log
@@ -547,4 +544,4 @@ rm -rf /home/student/.cache
 rm -rf /home/student/.sudo_as_admin_successful /home/student/.bash_logout
 
 rm -rf /tmp/*
-rm -rf /tmp/.* ||:
+rm -rf /tmp/.* || :

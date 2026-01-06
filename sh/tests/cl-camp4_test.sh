@@ -5,7 +5,7 @@ set -euo pipefail
 IFS='
 '
 
-echo insecure >> ~/.curlrc
+echo insecure >>~/.curlrc
 caddy start &>/dev/null
 
 challenge() {

@@ -55,14 +55,14 @@ apt-get -yf install
 # Configure Terminal
 
 # Makes bash case-insensitive
-cat <<EOF >> /etc/inputrc
+cat <<EOF >>/etc/inputrc
 set completion-ignore-case
 set show-all-if-ambiguous On
 set show-all-if-unmodified On
 EOF
 
 # Enhance Linux prompt
-cat <<EOF > /etc/issue
+cat <<EOF >/etc/issue
 Kernel build: \v
 Kernel package: \r
 Date: \d \t
@@ -73,7 +73,7 @@ EOF
 # Enable Bash completion
 apt-get --no-install-recommends -y install bash-completion
 
-cat <<EOF >> /etc/bash.bashrc
+cat <<EOF >>/etc/bash.bashrc
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
@@ -89,23 +89,22 @@ wget https://dl.google.com/go/go1.17.6.linux-amd64.tar.gz
 tar -C /usr/local -xzf go1.17.6.linux-amd64.tar.gz
 rm go1.17.6.linux-amd64.tar.gz
 # shellcheck disable=2016
-echo 'export PATH=$PATH:/usr/local/go/bin' >> /etc/profile
+echo 'export PATH=$PATH:/usr/local/go/bin' >>/etc/profile
 
 # Set-up all users
-for dir in $(ls -1d /root /home/* 2>/dev/null ||:)
-do
+for dir in $(ls -1d /root /home/* 2>/dev/null || :); do
 	# Add convenient aliases & behaviors
-	cat <<-'EOF'>> "$dir/.bashrc"
-	GOPATH=$HOME/go
-	PATH=$PATH:$GOPATH/bin
-	alias gobuild='CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -trimpath -ldflags="-s -w"'
+	cat <<-'EOF' >>"$dir/.bashrc"
+		GOPATH=$HOME/go
+		PATH=$PATH:$GOPATH/bin
+		alias gobuild='CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -trimpath -ldflags="-s -w"'
 	EOF
 	# shellcheck disable=2016
-	echo 'GOPATH=$HOME/go' >> "$dir/.profile"
+	echo 'GOPATH=$HOME/go' >>"$dir/.profile"
 
 	# Fix rights
 	usr=$(echo "$dir" | rev | cut -d/ -f1 | rev)
-	chown -R "$usr:$usr" "$dir" ||:
+	chown -R "$usr:$usr" "$dir" || :
 done
 
 # Install Node.js
@@ -122,7 +121,7 @@ npm install -g fx
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add -
 apt-get --no-install-recommends install -y apt-transport-https
 
-cat <<EOF > /etc/apt/sources.list.d/sublime-text.list
+cat <<EOF >/etc/apt/sources.list.d/sublime-text.list
 deb https://download.sublimetext.com/ apt/stable/
 EOF
 
@@ -138,42 +137,41 @@ rm vscode.deb
 # Install VSCodium
 
 wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | apt-key add -
-echo 'deb https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs/ vscodium main' >> /etc/apt/sources.list.d/vscodium.list
+echo 'deb https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs/ vscodium main' >>/etc/apt/sources.list.d/vscodium.list
 
 apt-get --no-install-recommends update
 apt-get --no-install-recommends install -y codium
 
 # Set-up all users
-for dir in $(ls -1d /home/* 2>/dev/null ||:)
-do
+for dir in $(ls -1d /home/* 2>/dev/null || :); do
 	# Disable most of the telemetry and auto-updates
 	mkdir -p "$dir/.config/Code/User"
 	mkdir -p "$dir/.config/VSCodium/User"
 	cat <<-'EOF' | tee \
 		"$dir/.config/Code/User/settings.json" \
 		"$dir/.config/VSCodium/User/settings.json"
-	{
-	    "gopls": {
-	        "formatting.gofumpt": true
-	    },
-	    "extensions.autoCheckUpdates": false,
-	    "extensions.autoUpdate": false,
-	    "json.schemaDownload.enable": false,
-	    "npm.fetchOnlinePackageInfo": false,
-	    "settingsSync.keybindingsPerPlatform": false,
-	    "telemetry.enableCrashReporter": false,
-	    "telemetry.enableTelemetry": false,
-	    "update.enableWindowsBackgroundUpdates": false,
-	    "update.mode": "none",
-	    "update.showReleaseNotes": false,
-	    "workbench.enableExperiments": false,
-	    "workbench.settings.enableNaturalLanguageSearch": false
-	}
-	EOF
+			{
+			    "gopls": {
+			        "formatting.gofumpt": true
+			    },
+			    "extensions.autoCheckUpdates": false,
+			    "extensions.autoUpdate": false,
+			    "json.schemaDownload.enable": false,
+			    "npm.fetchOnlinePackageInfo": false,
+			    "settingsSync.keybindingsPerPlatform": false,
+			    "telemetry.enableCrashReporter": false,
+			    "telemetry.enableTelemetry": false,
+			    "update.enableWindowsBackgroundUpdates": false,
+			    "update.mode": "none",
+			    "update.showReleaseNotes": false,
+			    "workbench.enableExperiments": false,
+			    "workbench.settings.enableNaturalLanguageSearch": false
+			}
+		EOF
 
 	# Fix rights
 	usr=$(echo "$dir" | rev | cut -d/ -f1 | rev)
-	chown -R "$usr:$usr" "$dir" ||:
+	chown -R "$usr:$usr" "$dir" || :
 done
 
 # Install Go extension and tools

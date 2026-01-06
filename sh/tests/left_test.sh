@@ -10,13 +10,13 @@ FILENAME="../student/left.sh"
 cd left
 
 if [[ $(cat $FILENAME | grep echo | wc -l) -ne 0 ]]; then
-    echo "echo is not allowed in this exercise!"
-    exit 1
+	echo "echo is not allowed in this exercise!"
+	exit 1
 fi
 
 if [[ $(cat $FILENAME | grep '<' | wc -l) -lt 1 ]]; then
-    echo "The file does not contain the required redirection"
-    exit 1
+	echo "The file does not contain the required redirection"
+	exit 1
 fi
 
 submitted=$(bash $FILENAME)

@@ -11,10 +11,9 @@ print_content() {
 	cat -e uncompressed/$1
 }
 
-for i in 1 2 3 4
-do
-    submitted=$(cd student && print_content task$i)
-    expected=$(cd solutions && print_content task$i)
+for i in 1 2 3 4; do
+	submitted=$(cd student && print_content task$i)
+	expected=$(cd solutions && print_content task$i)
 
-    diff <(echo "$submitted") <(echo "$expected")
+	diff <(echo "$submitted") <(echo "$expected")
 done

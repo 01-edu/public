@@ -4,39 +4,38 @@ IFS='
 '
 script_dirS=$(cd -P "$(dirname "$BASH_SOURCE")" &>/dev/null && pwd)
 
-
 challenge() {
 
-    input="${@: -1}"
-    args=${@:1:$#-1}
+	input="${@: -1}"
+	args=${@:1:$#-1}
 
-bash -c ""$script_dirS"/student/grades.sh $args" 2> grades_submitted_errors 1>grades_submitted_output <<EOF
+	bash -c ""$script_dirS"/student/grades.sh $args" 2>grades_submitted_errors 1>grades_submitted_output <<EOF
 $input
 EOF
-    grades_submitted_status=$?
+	grades_submitted_status=$?
 
-bash -c ""$script_dirS"/solutions/grades.sh $args" 2> grades_expected_errors 1>grades_expected_output <<EOF
+	bash -c ""$script_dirS"/solutions/grades.sh $args" 2>grades_expected_errors 1>grades_expected_output <<EOF
 $input
 EOF
-    grades_expected_status=$?
+	grades_expected_status=$?
 
-    diff <(cat grades_submitted_output) <(cat grades_expected_output)
+	diff <(cat grades_submitted_output) <(cat grades_expected_output)
 
-    if [ $? != 0 ]; then
-        exit 1
-    fi
+	if [ $? != 0 ]; then
+		exit 1
+	fi
 
-    diff <(cat grades_submitted_errors) <(cat grades_expected_errors)
+	diff <(cat grades_submitted_errors) <(cat grades_expected_errors)
 
-    if [ $? != 0 ]; then
-        exit 1
-    fi
+	if [ $? != 0 ]; then
+		exit 1
+	fi
 
-    diff <(echo $grades_expected_status) <(echo $grades_submitted_status)
+	diff <(echo $grades_expected_status) <(echo $grades_submitted_status)
 
-    if [ $? != 0 ]; then
-        exit 1
-    fi
+	if [ $? != 0 ]; then
+		exit 1
+	fi
 }
 
 challenge 1 "Student1

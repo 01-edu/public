@@ -7,14 +7,14 @@ IFS='
 script_dirS=$(cd -P "$(dirname "$BASH_SOURCE")" &>/dev/null && pwd)
 
 challenge() {
-    submitted="./check-user.sh $@
+	submitted="./check-user.sh $@
     "
-    expected="./check-user.sh $@
+	expected="./check-user.sh $@
     "
-    submitted+=$(bash 2>&1 "$script_dirS"/student/check-user.sh "$@")
-    expected+=$(bash 2>&1 "$script_dirS"/solutions/check-user.sh "$@")
+	submitted+=$(bash 2>&1 "$script_dirS"/student/check-user.sh "$@")
+	expected+=$(bash 2>&1 "$script_dirS"/solutions/check-user.sh "$@")
 
-    diff -U 1 <(echo "$submitted") <(echo "$expected")
+	diff -U 1 <(echo "$submitted") <(echo "$expected")
 }
 
 challenge "-i" "root"

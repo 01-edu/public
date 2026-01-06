@@ -6,9 +6,9 @@ IFS='
 '
 
 print_content() {
-    mkdir -p uncompressed
-    tar -xpf change-struct.tar -C uncompressed
-    tree uncompressed
+	mkdir -p uncompressed
+	tar -xpf change-struct.tar -C uncompressed
+	tree uncompressed
 }
 
 submitted=$(cd student && print_content)

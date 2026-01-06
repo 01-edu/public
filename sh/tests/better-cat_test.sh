@@ -11,21 +11,21 @@ mkdir better-cat-files
 cd better-cat-files
 
 for i in {1..3}; do
-    echo "This is line $i of file2" >> "file2.txt"
+	echo "This is line $i of file2" >>"file2.txt"
 done
 
 for i in {1..10}; do
-    echo "This is line $i of file3" >> "file3.txt"
-    echo "This is line $i of commented" >> "commented.txt"
+	echo "This is line $i of file3" >>"file3.txt"
+	echo "This is line $i of commented" >>"commented.txt"
 done
 
-echo "This is the content of file1" > "file1.txt"
-echo "# commented" > "commented.txt"
+echo "This is the content of file1" >"file1.txt"
+echo "# commented" >"commented.txt"
 
 challenge() {
-    submitted=$(bash "$script_dir"/student/better-cat.sh "$@")
-    expected=$(bash "$script_dir"/solutions/better-cat.sh "$@")
-    diff <(echo "$submitted") <(echo "$expected") 
+	submitted=$(bash "$script_dir"/student/better-cat.sh "$@")
+	expected=$(bash "$script_dir"/solutions/better-cat.sh "$@")
+	diff <(echo "$submitted") <(echo "$expected")
 }
 
 challenge "file1.txt"

@@ -8,15 +8,15 @@ FILENAME="student/append-output.sh"
 script_dirS=$(cd -P "$(dirname "$BASH_SOURCE")" &>/dev/null && pwd)
 
 if test ! -e append-output; then
-    mkdir append-output
-    cat <<EOF >append-output/results.txt
+	mkdir append-output
+	cat <<EOF >append-output/results.txt
 "In the End" - Linkin Park
 "Crawling" - Linkin Park
 "Elevation" - U2
 "Get the Party Started" - Pink
 "Lady Marmalade" - Christina Aguilera, Lil' Kim, Mya, Pink
 EOF
-    cat <<EOF >append-output/songs.txt
+	cat <<EOF >append-output/songs.txt
 "Breathe" - Faith Hill
 "It Wasn't Me" - Shaggy featuring Ricardo "RikRok" Ducent
 "Hanging by a Moment" - Lifehouse
@@ -75,24 +75,24 @@ EOF
 EOF
 fi
 challenge() {
-    $(cd "$1" && bash "$script_dirS"/$FILENAME)
-    submitted=$(cat $1/results.txt)
-    rm $1"/results.txt"
-    $(cd "$1" && bash "$script_dirS"/solutions/append-output.sh)
-    expected=$(cat $1/results.txt)
-    diff <(echo "$submitted") <(echo "$expected")
+	$(cd "$1" && bash "$script_dirS"/$FILENAME)
+	submitted=$(cat $1/results.txt)
+	rm $1"/results.txt"
+	$(cd "$1" && bash "$script_dirS"/solutions/append-output.sh)
+	expected=$(cat $1/results.txt)
+	diff <(echo "$submitted") <(echo "$expected")
 }
 
 if [ -s ${FILENAME} ]; then
-    if [[ $(cat $FILENAME | grep "cat <<EOF >results.txt" | wc -l) -ne 0 ]]; then
-        echo "cheating is not allowed in this exercise!"
-        exit 1
-    elif
-        [[ $(cat $FILENAME | grep echo | wc -l) -ne 0 ]]
-    then
-        echo "cheating is not allowed in this exercise!"
-        exit 1
-    fi
+	if [[ $(cat $FILENAME | grep "cat <<EOF >results.txt" | wc -l) -ne 0 ]]; then
+		echo "cheating is not allowed in this exercise!"
+		exit 1
+	elif
+		[[ $(cat $FILENAME | grep echo | wc -l) -ne 0 ]]
+	then
+		echo "cheating is not allowed in this exercise!"
+		exit 1
+	fi
 fi
 
 challenge append-output

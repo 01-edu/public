@@ -5,11 +5,10 @@ IFS='
 script_dirS=$(cd -P "$(dirname "$BASH_SOURCE")" &>/dev/null && pwd)
 
 challenge() {
-    submitted=$(echo -e $1 | bash "./student/greatest-of-all.sh")
-    expected=$(echo -e $1 | bash "./solutions/greatest-of-all.sh")
-    diff <(echo "$submitted") <(echo "$expected")
-    if [ $? != 0 ]
-	then
+	submitted=$(echo -e $1 | bash "./student/greatest-of-all.sh")
+	expected=$(echo -e $1 | bash "./solutions/greatest-of-all.sh")
+	diff <(echo "$submitted") <(echo "$expected")
+	if [ $? != 0 ]; then
 		exit 1
 	fi
 }

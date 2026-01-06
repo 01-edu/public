@@ -11,7 +11,7 @@ sudo apt -y install man bash-completion git jq curl build-essential netcat wget 
 wget https://golang.org/dl/go1.16.6.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.16.6.linux-amd64.tar.gz
 rm go1.16.6.linux-amd64.tar.gz
-cat <<'EOF'>> ~/.bashrc
+cat <<'EOF' >>~/.bashrc
 GOPATH=$HOME/go
 PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 EOF
