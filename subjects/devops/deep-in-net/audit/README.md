@@ -95,7 +95,7 @@ $
 
 ###### Can you connect to the `HTTPS Server` from any PC in the network?
 
-###### Does the `HTTPS Server` shows a "hell" message and is the `HTTP` disabled?
+###### Does the `HTTPS Server` shows a "hello" message and is the `HTTP` disabled?
 
 ##### Check the `FTP server`.
 
