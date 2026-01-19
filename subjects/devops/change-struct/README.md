@@ -61,7 +61,6 @@ cp -r `repo to copy` `path of destination`
 
 ```console
 $ mv `file to move` `path of destination`
-$ mv -r `repo to move` `path of destination`
 $ ls
 text.txt old_repo
 $ mv text.txt new_text.txt
