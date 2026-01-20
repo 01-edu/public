@@ -49,15 +49,15 @@ You can specify specific column names to display or include in the awk output us
 $ ls -l | awk '{print $1, $2, $3, $4, $5, $6, $7, $8, $9}' # print all the given fields
 total 4
 -rw-rw-r-- 1 user user 1989 dez 20 15:19 README.md
-$ ls -l | awk '{print $1, $2, $4, $5, $7, $8}'             # print all the given fields
+$ ls -l | awk '{print $1, $2, $4, $5, $7, $8}'             # print selected fields: perms, links, group, size, day, time
 total 4
 -rw-rw-r-- 1 user 2350 20 15:25
 $
 ```
-
-awk ‘{print $1}’ emp_records.txt
-awk {print $1, $6, $7, $8, $9}'
-
+```console
+awk '{print $1}' emp_records.txt
+awk '{print $1, $6, $7, $8, $9}'
+```
 > You have to use Man or Google to know more about commands flags, in order to solve this exercise!
 > Google and Man will be your friends!
 
