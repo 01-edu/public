@@ -142,6 +142,17 @@ You can see an example [here](https://youtu.be/_z8WDX_YS9k).
 
 ---
 
+### Unit Tests
+
+You must implement unit tests within your `smart_road` project to ensure your autonomous vehicle (AV) physics and intersection logic are robust. Specifically, your tests should:
+
+- Verify the **Physics Engine** by ensuring the `velocity = distance / time` calculations are accurate for various vehicle speeds.
+- Verify **Safety Distance Detection** by testing that a vehicle correctly identifies a "close call" or a "stop" condition when the gap between it and another AV is equal to or less than your defined safety distance.
+- Test the **Smart Intersection Algorithm** by simulating conflicting routes (e.g., a left turn crossing a straight path) and verifying that at least one vehicle adjusts its velocity to prevent a collision.
+- Verify **Statistics Accumulation** by ensuring that variables like max/min velocity and vehicle count are correctly updated in the internal state after each simulated pass.
+
+---
+
 ### Bonus
 
 You can implement the following optional features:
