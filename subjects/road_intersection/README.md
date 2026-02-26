@@ -111,6 +111,14 @@ You will use your keyboard to spawn vehicles for your simulation. You will use t
 
 > A safe distance is any distance which enables the vehicles to avoid crashing into each other.
 
+### Unit Tests
+
+You must implement unit tests within your `road_intersection` project to ensure your traffic logic and vehicle physics are sound. Specifically, your tests should:
+- Verify the **Dynamic Congestion Rule** by ensuring the `capacity` calculation correctly uses the `lane_length`, `vehicle_length`, and `safety_gap` variables.
+- Verify that a vehicle correctly identifies a "stop" condition when the distance to the vehicle in front is less than or equal to the `safety_gap`.
+- Test the **Traffic Light Controller** to ensure that the algorithm never allows green lights for conflicting paths (e.g., North-South and East-West) simultaneously.
+- Verify **Route Persistence** by testing that once a vehicle is assigned a route (Left, Right, or Straight), its internal state remains consistent and does not change during the simulation.
+
 ### Example
 
 You can see an example for road_intersection [here](https://www.youtube.com/watch?v=6B0-ZBET6mo).
