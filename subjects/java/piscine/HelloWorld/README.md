@@ -18,8 +18,6 @@ Then run the following command :
 java -cp build ExerciseRunner
 ```
 
-You can use any IDE or text editor, though IDEA IntelliJ or JetBrains are specially dedicated and recommended.
-
 To edit your code, you can use any IDE or text editor, though IDEA IntelliJ or JetBrains are specially dedicated and recommended.
 
 ### Instructions
