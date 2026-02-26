@@ -163,6 +163,15 @@ And his response:
 7 2\n
 ```
 
+### Unit Tests
+
+You must implement unit tests within your `filler` project to ensure your robot's parsing logic and placement strategy are reliable. Specifically, your tests should:
+
+- Verify **Input Parsing** by ensuring the Anfield grid and the incoming pieces are correctly converted into internal data structures from the standard input string.
+- Verify **Valid Placement Logic** by testing that a potential coordinate correctly identifies if it has exactly one overlapping cell with existing territory and zero overlaps with the opponent.
+- Test **Boundary Conditions** to ensure the robot never attempts to place a piece that extends beyond the rows or columns of the Anfield.
+- Verify **Coordinate Output** by ensuring the final calculation is formatted exactly as `X Y\n` as required by the `game_engine`.
+
 ### Bonus
 
 - Create a graphic visualizer for this project.
