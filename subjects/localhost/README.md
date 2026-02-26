@@ -78,6 +78,15 @@ In the file you should be able to specify the following:
 
 > Attention: `siege` is a stressing tool, use it ONLY to test your own server. Do **NEVER** use it on any server/website without the owner's permission. If you do so you would have illegally DDoSed a server and could face serious troubles.
 
+### Unit Tests
+
+You must implement unit tests within your `Localhost` project to ensure your protocol parsing and configuration logic are robust. Specifically, your tests should:
+
+- Verify **HTTP Request Parsing** by ensuring headers, methods (GET, POST, DELETE), and body content (including chunked encoding) are correctly extracted from raw byte streams.
+- Verify **Configuration Validation** by ensuring the server correctly identifies conflicting ports, invalid paths, and out-of-bounds body size limits during startup.
+- Test **Route Matching** logic to confirm that requests are mapped to the correct directory roots, CGI scripts, or redirections based on the configuration file.
+- Verify **Status Code Generation** by ensuring the internal logic returns the correct `4xx` or `5xx` codes for malformed requests or missing files before the response is sent.
+
 ### Bonus
 - Handle at least one more `CGI`.
 - Rewrite the project in another programming language (can be `C++` or `C`).
