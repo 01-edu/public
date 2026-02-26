@@ -16,7 +16,7 @@ $ ./set-internal-vars.sh
 Hello World
 100
 3.142
-one, two, three, four, five
+one two three four five
 $
 ```
 
