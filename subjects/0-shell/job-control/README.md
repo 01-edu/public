@@ -1,31 +1,18 @@
-## job control
+# Job Control
 
 ### Objectives
-
-You must follow the same [principles](https://public.01-edu.org/subjects/0-shell/) as the first subject.
-
-Job control refers to the ability to selectively stop (suspend) the execution of processes and continue (resume) their execution at a later point.
-
-In `job control`, you will have to implement the following [builtins](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Job-Control-Builtins):
-
-- jobs
-- bg
-- fg
-- kill
-
-You must also be able to stop jobs with the `Ctrl + Z`.
+In this project, you'll extend the `0-shell` project by adding `job control`. Job control refers to the ability to selectively stop (suspend) the execution of processes and continue (resume) their execution at a later point. With job control, your shell will let users run processes both in the foreground and background.
 
 ### Instructions
-
-- The project has to be written in a compiled language like (C, Rust Go or other), **interpreted languages like (Perl and others) are not allowed**.
-- The code must respect the [good practices](https://public.01-edu.org/subjects/good-practices/)
-
-This project will help you learn about:
-
-- Job control
-- Process creation and synchronization
-- Commands syntax
-- Scripting language
+- The project has to be written in a Rust.
+- The project must follow the same [principles](https://public.01-edu.org/subjects/0-shell/) as the first subject.
+- The code must respect the [good practices](https://public.01-edu.org/subjects/good-practices/).
+- You must implement the following commands:
+	- The `&` operator to run processes in the background.
+	- `jobs` (supporting `-r`, `-l`, `-p`, `-s`)
+	- `bg`
+	- `fg`
+	- `kill` (including handling for job specifiers like `%1`)
 
 ### Usage
 
@@ -48,3 +35,10 @@ $ jobs
 $ exit
 student$
 ```
+
+### Learning objectives
+This project will help you learn about:
+- Job control
+- Process creation and synchronization
+- Commands syntax    
+- Scripting language
