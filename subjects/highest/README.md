@@ -2,34 +2,44 @@
 
 ### Instructions
 
-In this exercise, a `Numbers` struct will be given.
+In this exercise, a `Numbers` struct will be given. This struct will contain an array of `u32` numbers.
 
 These methods have to be written for it:
 
 - `new`: create a new instance of `Numbers`.
-- `List`: which returns an `array` with every number in the struct.
-- `Latest`: which returns an `Option<u32>` with the last added number.
-- `Highest`: which returns an `Option<u32>` with the highest number from the list.
-- `Highest_Three`: which returns a `Vec<u32>` with the three highest numbers.
+- `inner`: which returns the inner array as a slice.
+- `last`: which returns an `Option<u32>` with the last added number.
+- `highest`: which returns an `Option<u32>` with the biggest number from the list.
+- `highest_three`: which returns an `Option<[u32; 3]>` with the three biggest numbers. These numbers should be ordered. If there aren't three numbers in the array, return `None`.
 
 ### Expected functions
 
 ```rust
 #[derive(Debug)]
-pub struct Numbers<'a> {
-    numbers: &'a [u32],
+pub struct Numbers {
+    numbers: [u32; _],
 }
 
 impl Numbers {
-    pub fn new(numbers: &[u32]) -> Self {}
+    pub fn new(numbers: [u32; _]) -> Self {
+        todo!()
+    }
 
-    pub fn list(&self) -> &[u32] {}
+    pub fn inner(&self) -> &[u32] {
+        todo!()
+    }
 
-    pub fn latest(&self) -> Option<u32> {}
+    pub fn latest(&self) -> Option<u32> {
+        todo!()
+    }
 
-    pub fn highest(&self) -> Option<u32> {}
+    pub fn highest(&self) -> Option<u32> {
+        todo!()
+    }
 
-    pub fn highest_three(&self) -> Vec<u32> {}
+    pub fn highest_three(&self) -> Option<[u32; 3]> {
+        todo!()
+    }
 }
 ```
 
@@ -42,8 +52,8 @@ use highest::*;
 
 fn main() {
     let expected = [30, 500, 20, 70];
-    let n = Numbers::new(&expected);
-    println!("{:?}", n.list());
+    let n = Numbers::new(expected);
+    println!("{:?}", n.inner());
     println!("{:?}", n.highest());
     println!("{:?}", n.latest());
     println!("{:?}", n.highest_three());
@@ -57,7 +67,7 @@ $ cargo run
 [30, 500, 20, 70]
 Some(500)
 Some(70)
-[500, 70, 30]
+Some([500, 70, 30])
 $
 ```
 

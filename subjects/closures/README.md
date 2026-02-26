@@ -8,7 +8,7 @@ Using closures and iterators create a **function**, that returns the first 50 ev
 
 ```rust
 fn first_fifty_even_square() -> Vec<i32> {
-
+    todo!()
 }
 ```
 
