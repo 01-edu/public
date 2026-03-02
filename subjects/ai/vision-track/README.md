@@ -182,6 +182,7 @@ vision-track/
 │    ├── roi_counting_example.png
 │    └── multi_stream_demo.mp4
 │
+├── logs/app_errors.log
 ├── app.py
 ├── README.md                # Project overview and setup instructions
 └── requirements.txt         # List of dependencies
