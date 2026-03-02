@@ -18,6 +18,16 @@
 
 ###### Are the shapes drawn with different colors?
 
+#### Unit Tests
+
+##### Run the command `cargo test`.
+
+###### Do all tests pass without errors?
+
+###### Are there specific tests for the `random` function bounds (e.g., checking that points stay within the image width/height)?
+
+###### Are there tests for shape initialization, such as checking if a `Rectangle` handles inverted coordinates correctly?
+
 #### Bonus
 
 ###### +Can you draw a pentagon?
