@@ -114,6 +114,7 @@ You will use your keyboard to spawn vehicles for your simulation. You will use t
 ### Unit Tests
 
 You must implement unit tests within your `road_intersection` project to ensure your traffic logic and vehicle physics are sound. Specifically, your tests should:
+
 - Verify the **Dynamic Congestion Rule** by ensuring the `capacity` calculation correctly uses the `lane_length`, `vehicle_length`, and `safety_gap` variables.
 - Verify that a vehicle correctly identifies a "stop" condition when the distance to the vehicle in front is less than or equal to the `safety_gap`.
 - Test the **Traffic Light Controller** to ensure that the algorithm never allows green lights for conflicting paths (e.g., North-South and East-West) simultaneously.
