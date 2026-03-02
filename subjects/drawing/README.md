@@ -37,6 +37,7 @@ Each shape must be drawn in a different color.
 ### Unit Tests
 
 You must implement unit tests within your `geometrical_shapes` module to ensure your logic is sound. Specifically, your tests should:
+
 - Verify that `random` functions never produce points outside the specified image dimensions.
 - Verify that shapes (like `Rectangle`) are correctly initialized even if the points are provided in reverse order.
 - Test edge cases, such as a line where both points are at the same coordinate.
