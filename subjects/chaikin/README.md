@@ -31,6 +31,7 @@ You can see how the application should work [here](https://youtu.be/PbB2eKnA2QI)
 ### Unit Tests
 
 You must implement unit tests to verify your implementation of the Chaikin algorithm. Your tests should:
+
 - Verify the coordinates of the new points generated after one iteration of the algorithm (cutting the corners at 25% and 75%).
 - Verify that the number of points increases correctly per iteration (e.g., for an open curve, $N$ points should result in $2N - 2$ points in the next step).
 - Ensure the algorithm handles edge cases, such as an input list of 0, 1, or 2 points, without crashing.
