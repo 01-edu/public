@@ -14,9 +14,9 @@
 
 ###### Is the text present in `result.txt` equal to the above?
 
-##### In a file called `sample.txt` place the following text: `Don not be sad ,because sad backwards is das . And das not good`. Now run the student program with the arguments: `sample.txt result.txt`.
+##### In a file called `sample.txt` place the following text: `Do not be sad ,because sad backwards is das . And das not good`. Now run the student program with the arguments: `sample.txt result.txt`.
 
-`Don not be sad, because sad backwards is das. And das not good`
+`Do not be sad, because sad backwards is das. And das not good`
 
 ###### Is the text present in `result.txt` equal to the above?
 
