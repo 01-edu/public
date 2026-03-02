@@ -87,9 +87,8 @@ You will have to implement the physics for this type of vehicles by taking into 
 Animation is required for this project. You will have to find some assets for the vehicles and roads. Here are some assets for this:
 
 - [limezu](https://limezu.itch.io/)
-- [finalbossblue](http://finalbossblues.com/timefantasy/free-graphics/).
-- [mobilegamegraphics](https://mobilegamegraphics.com/product-category/all_products/freestuff/).
-- [spriters-resource](https://www.spriters-resource.com/).
+- [finalbossblue](http://finalbossblues.com/timefantasy/free-graphics/)
+- [spriters-resource](https://www.spriters-resource.com/)
 
 Animation is not just rendering an image into the canvas. By using assets, you get to decide your "world coordinate system" for the rendered image and therefore you create your own animation. But this is not enough. Basically, you must animate while moving.
 
@@ -139,6 +138,17 @@ The statistics must include:
 ### Example
 
 You can see an example [here](https://youtu.be/_z8WDX_YS9k).
+
+---
+
+### Unit Tests
+
+You must implement unit tests within your `smart_road` project to ensure your autonomous vehicle (AV) physics and intersection logic are robust. Specifically, your tests should:
+
+- Verify the **Physics Engine** by ensuring the `velocity = distance / time` calculations are accurate for various vehicle speeds.
+- Verify **Safety Distance Detection** by testing that a vehicle correctly identifies a "close call" or a "stop" condition when the gap between it and another AV is equal to or less than your defined safety distance.
+- Test the **Smart Intersection Algorithm** by simulating conflicting routes (e.g., a left turn crossing a straight path) and verifying that at least one vehicle adjusts its velocity to prevent a collision.
+- Verify **Statistics Accumulation** by ensuring that variables like max/min velocity and vehicle count are correctly updated in the internal state after each simulated pass.
 
 ---
 
