@@ -6,7 +6,6 @@ This protocol is used by servers and clients (usually browsers) to serve content
 
 Here you will learn the basics of the protocol and a good place to start could be the [HTTP/1.1 RFC](https://www.rfc-editor.org/rfc/rfc9112.html).
 
-
 ### Instructions
 
 - The project must be written in `Rust`.
@@ -20,6 +19,7 @@ Here you will learn the basics of the protocol and a good place to start could b
 You goal is to write your very own server, which will use `HTTP` protocol to serve static web pages to browsers.
 
 For your server you must guarantee the following behavior:
+
 - It **never** crashes.
 - All requests timeout if they are taking too long.
 - It can listen on multiple ports and instantiate multiple servers at the same time.
@@ -39,13 +39,14 @@ For your server you must guarantee the following behavior:
 - You should set the right status for each response.
 
 #### The CGI
+
 - Based on the file extension the server will execute the corresponding `CGI` (for example `.php` or `.py`).
 - You need to implement only one `CGI` of your choice.
 - You are allowed to fork a new process to run the `CGI`.
 - `CGI` expects the file to process as first argument and `EOF` as end of the body.
 - Pay attention to the directory where the `CGI` will run for correct relative paths handling.
 - The `CGI` will check `PATH_INFO` environment variable to define the full path.
-	
+
 #### Configuration File
 
 In the file you should be able to specify the following:
@@ -69,6 +70,7 @@ In the file you should be able to specify the following:
 > There is no need to pass through `epoll` when reading the configuration file.
 
 #### Testing your server
+
 - Do stress tests with `siege -b [IP]:[PORT]`, it must stay available at all costs (availability should be up to 99.5, it will be tested during audits).
 - Create tests for as many cases as you can (redirections, bad configuration files, static and dynamic pages, default error pages and so on).
 - You will be requested to provide and explain your tests during the audits.
@@ -78,6 +80,16 @@ In the file you should be able to specify the following:
 
 > Attention: `siege` is a stressing tool, use it ONLY to test your own server. Do **NEVER** use it on any server/website without the owner's permission. If you do so you would have illegally DDoSed a server and could face serious troubles.
 
+### Unit Tests
+
+You must implement unit tests within your `Localhost` project to ensure your protocol parsing and configuration logic are robust. Specifically, your tests should:
+
+- Verify **HTTP Request Parsing** by ensuring headers, methods (GET, POST, DELETE), and body content (including chunked encoding) are correctly extracted from raw byte streams.
+- Verify **Configuration Validation** by ensuring the server correctly identifies conflicting ports, invalid paths, and out-of-bounds body size limits during startup.
+- Test **Route Matching** logic to confirm that requests are mapped to the correct directory roots, CGI scripts, or redirections based on the configuration file.
+- Verify **Status Code Generation** by ensuring the internal logic returns the correct `4xx` or `5xx` codes for malformed requests or missing files before the response is sent.
+
 ### Bonus
+
 - Handle at least one more `CGI`.
 - Rewrite the project in another programming language (can be `C++` or `C`).
