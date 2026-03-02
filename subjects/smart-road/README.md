@@ -87,9 +87,8 @@ You will have to implement the physics for this type of vehicles by taking into 
 Animation is required for this project. You will have to find some assets for the vehicles and roads. Here are some assets for this:
 
 - [limezu](https://limezu.itch.io/)
-- [finalbossblue](http://finalbossblues.com/timefantasy/free-graphics/).
-- [mobilegamegraphics](https://mobilegamegraphics.com/product-category/all_products/freestuff/).
-- [spriters-resource](https://www.spriters-resource.com/).
+- [finalbossblue](http://finalbossblues.com/timefantasy/free-graphics/)
+- [spriters-resource](https://www.spriters-resource.com/)
 
 Animation is not just rendering an image into the canvas. By using assets, you get to decide your "world coordinate system" for the rendered image and therefore you create your own animation. But this is not enough. Basically, you must animate while moving.
 
