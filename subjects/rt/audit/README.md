@@ -24,6 +24,16 @@
 
 ###### Did the student provide clear documentation for the ray tracer on how to use it (create elements, change brightness and move the camera)?
 
+#### Unit Tests
+
+###### Do all tests pass without errors?
+
+###### Are there specific tests for **Ray-Object Intersections** (e.g., verifying that a ray correctly detects hitting a sphere or a cylinder)?
+
+###### Are there tests for **Vector Math** (e.g., ensuring dot products and normalization are calculated correctly)?
+
+###### Are there tests for **Light and Color** logic, such as ensuring brightness changes don't cause overflow in the RGB values?
+
 #### Bonus
 
 ###### +Is it possible to add textures to the surface of the objects?
