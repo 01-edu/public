@@ -40,6 +40,18 @@
 
 ###### After you pressed `Enter` before selecting points, is it possible to place points without needing to kill the program?
 
+##### Unit Tests
+
+##### Run the command `cargo test`.
+
+###### Do all tests pass without errors?
+
+###### Is there a test that verifies the math of a single Chaikin iteration (calculating the 1/4 and 3/4 points)?
+
+###### Is there a test checking that the point count grows correctly according to the algorithm?
+
+###### Are there tests ensuring the algorithm handles empty or single-point inputs safely?
+
 ##### Bonus
 
 ###### +When you pressed `Enter` without drawing any points, was a message displayed to inform you that you forgot to draw any points?
