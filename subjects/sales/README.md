@@ -45,7 +45,7 @@ impl Cart {
         todo!()
     }
 
-    pub fn generate_prices(&self) -> Vec<f64> {
+    pub fn generate_receipt(&self) -> Vec<f64> {
         todo!()
     }
 }
