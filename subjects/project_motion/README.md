@@ -23,11 +23,6 @@ and velocity (v) in the instant s of an object is given by:
 
 ![Speed Formula](speed_formula.png)
 
-### Notions
-
-- [trait Iterator](https://doc.rust-lang.org/std/iter/trait.Iterator.html)
-- [iter](https://doc.rust-lang.org/rust-by-example/trait/iter.html)
-
 ### Expected Function
 
 ```rust
@@ -82,3 +77,8 @@ Some((Vec2 { x: 50.0, y: 5.899999999999999 }, Vec2 { x: 0.0, y: -29.400000000000
 None
 $
 ```
+
+### Notions
+
+- [trait Iterator](https://doc.rust-lang.org/std/iter/trait.Iterator.html)
+- [iter](https://doc.rust-lang.org/rust-by-example/trait/iter.html)
