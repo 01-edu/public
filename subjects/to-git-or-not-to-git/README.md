@@ -4,7 +4,7 @@
 
 Write in a file `to-git-or-not-to-git.sh` the command that will show the `name`, `power` and `gender` of the superhero with the `id: 170`.
 
-- Where to look : [superhero](<https://((DOMAIN))/assets/superhero/all.json>)
+- Where to look : [superhero](<https://assets.01-edu.org/superhero/all.json>)
 
 The output should be exactly like the example below:
 
