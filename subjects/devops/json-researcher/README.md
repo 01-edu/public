@@ -4,7 +4,7 @@
 
 Create the script `json-researcher.sh` which will show the "name" and the "power" of the superhero with `id: 1`
 
-- Where to look : https://assets.01-edu.org/superhero/all.json
+- Where to look : https://((DOMAIN))/assets/superhero/all.json
 
 - What to use : `curl` and `jq` and `grep`
 
@@ -26,7 +26,7 @@ $
 With `curl` you can get the content of the file from the url:
 
 ```console
-$ curl https://assets.01-edu.org/superhero/all.json
+$ curl https://((DOMAIN))/assets/superhero/all.json
 <...>
 $
 ```
