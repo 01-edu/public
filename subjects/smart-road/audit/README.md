@@ -98,6 +98,16 @@
 
 ###### Do vehicles have at least 3 different velocities?
 
+#### Unit Tests
+
+###### Do all tests pass without errors?
+
+###### Are there specific tests for the **Physics Engine** (e.g., checking if time and distance correctly calculate the current velocity)?
+
+###### Are there tests for **Collision Avoidance** logic (e.g., verifying that a vehicle reduces speed when the intersection algorithm detects a potential conflict)?
+
+###### Are there tests for the **Statistics Module** to ensure the final report correctly reflects the events of the simulation?
+
 #### Bonus
 
 ###### +Does the application present more statistics besides the ones stated in the subject?
