@@ -94,6 +94,16 @@
 
 ###### Do vehicles proceed whenever there is a green light?
 
+#### Unit Tests
+
+###### Do all tests pass without errors?
+
+###### Are there specific tests for the **Dynamic Congestion Rule** (e.g., verifying capacity calculation and green light extension)?
+
+###### Are there tests for **Vehicle Physics**, such as checking if a car stops correctly when a `safety_gap` is breached?
+
+###### Are there tests for the **Traffic Light Controller** to ensure no two perpendicular lanes have a green light at the same time?
+
 #### Bonus
 
 ###### +Is there any type of image sprite for traffic light? (An image sprite is a collection of images put into a single image.)
