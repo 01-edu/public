@@ -97,6 +97,16 @@ You'll configure multiple servers simultaneously, each with different configurat
 
 ###### Check if there is no hanging connection.
 
+#### Unit Tests
+
+###### Do all tests pass without errors?
+
+###### Are there specific tests for **HTTP Request Parsing** (e.g., verifying that headers and chunked bodies are correctly parsed)?
+
+###### Are there tests for **Configuration Validation** (e.g., checking that the server detects duplicate ports or invalid routes)?
+
+###### Are there tests for **Route Matching** to ensure requests are directed to the correct handlers or CGI scripts?
+
 #### General
 
 ###### +There's more than one CGI system such as [Python,C++,Perl].
