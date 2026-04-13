@@ -34,7 +34,7 @@ class DriverFactory {
 }
 
 class TransportFactory {
-  + getTransport(Type: String) int
+  + getTransport(Type: String) Transport
 }
 
 Driver <|-- CarDriver
