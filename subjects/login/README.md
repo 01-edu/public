@@ -42,7 +42,7 @@ Behind every name in a computer system there is a number (ID, index, address, et
 
 Names exist because they are human readable, but behind the scenes they are converted into numbers, unique in their namespace :
 
-- A domain name can have several IP addresses, but an IP address can only identify one domain name
+- A domain name can map to several IP addresses (for load balancing), and a single IP address can host many different domain names (via Virtual Hosting).
 - Several processes may have the same name, but a PID identifies a single process
 
 Find the commands to get :
