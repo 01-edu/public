@@ -1,6 +1,6 @@
 #### Authentication
 
-###### Are an email and a password asked for in the registration?
+###### Is an email and a password asked for in the registration?
 
 ###### Does the project detect if the email or password are wrong?
 
@@ -152,7 +152,7 @@ cc8f5dcf760f        <name of the image>    "./server"               6 seconds ag
 
 ###### Are all posts displayed from that category?
 
-###### Did the server behaved as expected?(did not crashed)
+###### Did the server behave as expected?(did not crash)
 
 ###### Does the server use the right [HTTP method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)?
 
