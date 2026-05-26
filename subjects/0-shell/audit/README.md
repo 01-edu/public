@@ -64,6 +64,12 @@ The use of external binaries or system calls that spawn them is strictly forbidd
 
 ###### Can you confirm that the document `new_doc.txt` is inside the `new_folder2`?
 
+##### Try to run the command `cat` with no arguments.
+
+###### Can you confirm that you can type some text and see it displayed back?
+
+###### Can you confirm that you can stop with `Ctrl+D`?  
+
 ##### Try to run the command `cat new_folder1/new_doc`. Do the same in your computer terminal.
 
 ###### Can you confirm that the output is the same in the project and in your computer terminal?
