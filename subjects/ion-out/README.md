@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a function named `ionOut`, that receives a `string` and returns an array with every word containing `'ion'` following a `'t'`. The words should be returned without the `'ion'` part.
+Create a function named `ionOut`, that receives a `string` and returns an array containing every word that ends in `'tion'`. Each returned word should have its trailing `'ion'` removed.
 
 ### Notions
 
