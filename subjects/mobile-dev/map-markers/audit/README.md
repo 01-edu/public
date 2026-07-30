@@ -34,4 +34,4 @@
 
 ###### Does the map navigates to the tapped place?
 
-###### Does the app work both on android and ios?
+###### Does the app work both on android or ios?
