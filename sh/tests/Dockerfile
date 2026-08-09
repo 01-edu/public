@@ -5,7 +5,7 @@ RUN apt-get -y install jq curl tree apt-utils
 RUN apt-get -y install bc
 
 WORKDIR /app/assets/superhero
-RUN curl --remote-name --location https://demo.01-edu.org/assets/superhero/all.json
+RUN curl --remote-name --location https://assets.01-edu.org/superhero/all.json
 
 WORKDIR /tmp/installation
 

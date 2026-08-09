@@ -24,6 +24,16 @@
 
 ###### Can you confirm that the student player won at least 4 out of 5 times?
 
+#### Unit Tests
+
+###### Do all tests pass without errors?
+
+###### Are there specific tests for **Input Parsing** (e.g., verifying the robot correctly reads the Anfield dimensions and the piece shape from stdin)?
+
+###### Are there tests for **Placement Validation** (e.g., checking that a move is rejected if it overlaps two of your own cells or one of the opponent's)?
+
+###### Are there tests for **Boundary Detection** to ensure pieces are never placed partially outside the grid?
+
 #### Basic
 
 ###### +Does the code obey the [good practices](../../good-practices/README.md)?
