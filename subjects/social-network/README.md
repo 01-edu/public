@@ -145,7 +145,7 @@ You can implement your own package for sessions and cookies or you can take a lo
 
 When navigating the social network the user should be able to follow and unfollow other users. Needless to say that to unfollow a user you have to be following him/her.
 
-Regarding following someone, the user must initiate this by sending a follow request to the desired user. The recipient user can then choose to "accept" or "decline" the request. However, if the recipient user has a public profile (as explained in the next section), this request-and-accept process is bypassed and the user who sent the request automatically starts following the user with the pubic profile.
+Regarding following someone, the user must initiate this by sending a follow request to the desired user. The recipient user can then choose to "accept" or "decline" the request. However, if the recipient user has a public profile (as explained in the next section), this request-and-accept process is bypassed and the user who sent the request automatically starts following the user with the public profile.
 
 ---
 
