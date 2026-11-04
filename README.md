@@ -1,3 +1,13 @@
+> [!WARNING]
+> # This repository is deprecated and no longer supported
+>
+> ### 👋 Hello there! 
+> The content here is not updated anymore. We keep the repository online for archival purposes and for backward compatibility, so existing legacy content, links and references stay consistent.
+>
+> - Do not use this repository as the source of truth for your curriculum. 
+> - This repository is archived and read-only, so we cannot take issues or pull requests here.
+> - If you have a question or find a problem, talk to your learning centre team.
+
 # Welcome to the [Public](https://github.com/01-edu/public) Repository of the [01 Edu System](https://github.com/01-edu) 👋
 
 ![01-Edu](https://github.com/user-attachments/assets/addd2e35-d07c-4201-98b7-521443ad38e6)
@@ -8,11 +18,11 @@ All of our courses are meticulously crafted to offer challenging yet enjoyable, 
 
 ### 🎭 **Our Philosophy**
 
-Some of our subjects are **intentionally designed** to be **ambiguous** or **less specific**, reflecting our unique pedagogical approach. Please keep this in mind before reporting any [**⁉️ issues**](https://github.com/01-edu/public/issues) or support requests.
+Some of our subjects are **intentionally designed** to be **ambiguous** or **less specific**, reflecting our unique pedagogical approach. Keep this in mind when you read the content.
 
-### 🫶 **Contribute**
+### 🫶 **Support**
 
-We welcome contributions! Feel free to submit a [**🪢 pull request**](https://github.com/01-edu/public/pulls). Due to the high volume of tasks, there may be a delay in reviewing your submission.
+This repository is read-only and does not take reports. If something looks wrong, or you just have a question, your learning centre team is the best place to start.
 
 Thank you!<br>
 **📚 The Content Team**
